@@ -1,0 +1,789 @@
+From sstoline at gmail.com  Sat Oct  8 18:50:39 2016
+From: sstoline at gmail.com (Steven Stoline)
+Date: Sat, 8 Oct 2016 12:50:39 -0400
+Subject: [R-sig-teaching] Log-Rank Test
+Message-ID: <CAHDp66ADm5jHL1pwMm4EaCk1AJjBxvRHkH2qHdgGaxyb8Ls-nA@mail.gmail.com>
+
+Dear All:
+
+
+I do need your help with Log-Rank Test to compare the average score for the
+two groups (1 and 2). Any help will be appreciated.
+
+score    groups
+4    1
+1    1
+4    1
+2    1
+0    1
+2    1
+4    1
+1    1
+2    1
+3    1
+1    1
+1    1
+3    1
+1    1
+1    1
+2    1
+0    1
+2    1
+2    1
+1    2
+3    2
+4    2
+2    2
+2    2
+3    2
+1    2
+3    2
+2    2
+1    2
+4    2
+2    2
+2    2
+1    2
+3    2
+
+
+
+with many thanks
+steve
+---------------------------
+Steven M. Stoline
+sstoline at gmail.com
+
+	[[alternative HTML version deleted]]
+
+
+From jefflaux at gmail.com  Sat Oct  8 19:08:22 2016
+From: jefflaux at gmail.com (Jeff laux)
+Date: Sat, 8 Oct 2016 13:08:22 -0400
+Subject: [R-sig-teaching] Log-Rank Test
+In-Reply-To: <CAHDp66ADm5jHL1pwMm4EaCk1AJjBxvRHkH2qHdgGaxyb8Ls-nA@mail.gmail.com>
+References: <CAHDp66ADm5jHL1pwMm4EaCk1AJjBxvRHkH2qHdgGaxyb8Ls-nA@mail.gmail.com>
+Message-ID: <783ca163-41b1-36ec-3d5b-f00ee0183a53@gmail.com>
+
+This isn't about discussing the use of R in teaching statistics. It 
+doesn't belong in this SIG; it should go to the main r-help listserv.
+
+
+On 10/8/2016 12:50 PM, Steven Stoline wrote:
+> Dear All:
+>
+>
+> I do need your help with Log-Rank Test to compare the average score for the
+> two groups (1 and 2). Any help will be appreciated.
+>
+> score    groups
+> 4    1
+> 1    1
+> 4    1
+> 2    1
+> 0    1
+> 2    1
+> 4    1
+> 1    1
+> 2    1
+> 3    1
+> 1    1
+> 1    1
+> 3    1
+> 1    1
+> 1    1
+> 2    1
+> 0    1
+> 2    1
+> 2    1
+> 1    2
+> 3    2
+> 4    2
+> 2    2
+> 2    2
+> 3    2
+> 1    2
+> 3    2
+> 2    2
+> 1    2
+> 4    2
+> 2    2
+> 2    2
+> 1    2
+> 3    2
+>
+>
+>
+> with many thanks
+> steve
+> ---------------------------
+> Steven M. Stoline
+> sstoline at gmail.com
+>
+> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From jeffrey.stratford at wilkes.edu  Tue Nov 29 15:56:55 2016
+From: jeffrey.stratford at wilkes.edu (Stratford, Jeff)
+Date: Tue, 29 Nov 2016 09:56:55 -0500
+Subject: [R-sig-teaching] population models for undergraduates
+Message-ID: <CAP5kizQsZYn2G+-2ApGWK1mH1hLivsigar61SumEae=T4BGEJw@mail.gmail.com>
+
+Hi everyone,
+
+I'm using R to make graphs for lecture notes and I hope to get to the point
+where students are reproducing graphs in lab.
+
+I can do very simple logistic growth models (example below) but can anyone
+share more complicated models with lags etc?
+
+Very much appreciated,
+
+Jeff
+
+
+#### pop size over time  ###
+
+r <- 0.033
+K <- 100
+t <- 1:250
+N0 <- 10
+N0
+poplog <- (K-N0)/N0
+Nt  <- K/(1+(poplog)*exp(-r*t))
+Nt
+plot(t, Nt, type="l", lwd=3, cex.lab=1.5, cex.axis=1.5)
+
+
+********************************************************
+Jeffrey A. Stratford, PhD
+Department of Biology and Health Sciences &
+Director of Study Abroad
+Office: Cohen Science Center 210
+Address: 84 W South Street
+Wilkes University, PA 18766 USA
+570-332-2942
+https://sites.google.com/a/wilkes.edu/stratford/home
+Blog http://concreteornithology.blogspot.com/
+********************************************************
+
+	[[alternative HTML version deleted]]
+
+
+From jefflaux at gmail.com  Tue Nov 29 16:08:49 2016
+From: jefflaux at gmail.com (Jeff Laux)
+Date: Tue, 29 Nov 2016 10:08:49 -0500
+Subject: [R-sig-teaching] population models for undergraduates
+In-Reply-To: <CAP5kizQsZYn2G+-2ApGWK1mH1hLivsigar61SumEae=T4BGEJw@mail.gmail.com>
+References: <CAP5kizQsZYn2G+-2ApGWK1mH1hLivsigar61SumEae=T4BGEJw@mail.gmail.com>
+Message-ID: <CANV9buRjSfmhJOaLHQyK=hcW=hXhZ-iQitwxUe2ipN52BxJMHQ@mail.gmail.com>
+
+Can you describe the "more complicated model with lags" that you are
+interested in?  Can you write it out mathematically?
+
+
+On Tue, Nov 29, 2016 at 9:56 AM, Stratford, Jeff <
+jeffrey.stratford at wilkes.edu> wrote:
+
+> Hi everyone,
+>
+> I'm using R to make graphs for lecture notes and I hope to get to the point
+> where students are reproducing graphs in lab.
+>
+> I can do very simple logistic growth models (example below) but can anyone
+> share more complicated models with lags etc?
+>
+> Very much appreciated,
+>
+> Jeff
+>
+>
+> #### pop size over time  ###
+>
+> r <- 0.033
+> K <- 100
+> t <- 1:250
+> N0 <- 10
+> N0
+> poplog <- (K-N0)/N0
+> Nt  <- K/(1+(poplog)*exp(-r*t))
+> Nt
+> plot(t, Nt, type="l", lwd=3, cex.lab=1.5, cex.axis=1.5)
+>
+>
+> ********************************************************
+> Jeffrey A. Stratford, PhD
+> Department of Biology and Health Sciences &
+> Director of Study Abroad
+> Office: Cohen Science Center 210
+> Address: 84 W South Street
+> Wilkes University, PA 18766 USA
+> 570-332-2942
+> https://sites.google.com/a/wilkes.edu/stratford/home
+> Blog http://concreteornithology.blogspot.com/
+> ********************************************************
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+	[[alternative HTML version deleted]]
+
+
+From mrca at bgs.ac.uk  Tue Dec 13 10:56:44 2016
+From: mrca at bgs.ac.uk (Cave, Mark R.)
+Date: Tue, 13 Dec 2016 09:56:44 +0000
+Subject: [R-sig-teaching] R example applications
+Message-ID: <AM3PR06MB1156C534D894D76BDAFB6FB78D9B0@AM3PR06MB1156.eurprd06.prod.outlook.com>
+
+I am going to be teaching an R course for beginners (for geoscience professionals)  and I would like to start with some really interesting  and visual applications to get their attention and show them the power of R before getting down to the some R basics. Any good ideas?
+
+Mark Cave
+
+
+Dr Mark Cave
+Medical Geology
+Land, Soil and Coast
+British Geological Survey
+Keyworth
+Nottingham
+NG12 5GG
+UK
+E-mail: mrca at bgs.ac.uk<mailto:mrca at bgs.ac.uk>
+Tel direct: 0115 9363526
+Tel switchboard: 0115 9363100
+
+
+
+
+  ________________________________
+This message (and any attachments) is for the recipient ...{{dropped:10}}
+
+
+From cgenolin at u-paris10.fr  Tue Dec 13 11:20:12 2016
+From: cgenolin at u-paris10.fr (Christophe Genolini)
+Date: Tue, 13 Dec 2016 11:20:12 +0100
+Subject: [R-sig-teaching] R example applications
+In-Reply-To: <AM3PR06MB1156C534D894D76BDAFB6FB78D9B0@AM3PR06MB1156.eurprd06.prod.outlook.com>
+References: <AM3PR06MB1156C534D894D76BDAFB6FB78D9B0@AM3PR06MB1156.eurprd06.prod.outlook.com>
+Message-ID: <1a5cdd36-9d28-7492-efff-16613b36595f@u-paris10.fr>
+
+The package misc3d gives an example of a 3D representation of a volcano, then it includes it as a 
+dynamic graph in a pdf file. "Dynamic graph" means that you can "turn" the graphe in the pdf and 
+change the point of view. It exists for several years now, but since nobody knows it, it is still  
+quite impressive.
+
+Christophe
+
+
+Le 13/12/2016 ? 10:56, Cave, Mark R. a ?crit :
+> I am going to be teaching an R course for beginners (for geoscience professionals)  and I would like to start with some really interesting  and visual applications to get their attention and show them the power of R before getting down to the some R basics. Any good ideas?
+>
+> Mark Cave
+>
+>
+> Dr Mark Cave
+> Medical Geology
+> Land, Soil and Coast
+> British Geological Survey
+> Keyworth
+> Nottingham
+> NG12 5GG
+> UK
+> E-mail: mrca at bgs.ac.uk<mailto:mrca at bgs.ac.uk>
+> Tel direct: 0115 9363526
+> Tel switchboard: 0115 9363100
+>
+>
+>
+>
+>    ________________________________
+> This message (and any attachments) is for the recipien...{{dropped:8}}
+
+
+From nick at datacamp.com  Wed Dec 14 00:32:52 2016
+From: nick at datacamp.com (Nick Carchedi)
+Date: Tue, 13 Dec 2016 18:32:52 -0500
+Subject: [R-sig-teaching] R example applications
+In-Reply-To: <AM3PR06MB1156C534D894D76BDAFB6FB78D9B0@AM3PR06MB1156.eurprd06.prod.outlook.com>
+References: <AM3PR06MB1156C534D894D76BDAFB6FB78D9B0@AM3PR06MB1156.eurprd06.prod.outlook.com>
+Message-ID: <CAGSSkmi7AF4wyq=T+r1j+D0Z1swawuDUfDeZCu3FHfOPAALaWQ@mail.gmail.com>
+
+Hi Mark, Charlotte Wickham recently built a course with us on Working with
+Geospatial Data in R. It contains tons of cool examples/visualizations that
+may appeal to this crowd. Happy to get you and your students set up with a
+free subscription if helpful.
+
+She's also created a data (R) package containing all of the datasets used
+in the course: https://github.com/cwickham/geospatial
+
+Cheers,
+Nick
+
+-- 
+Nick Carchedi
+Director of Course Development | DataCamp
+
+
+On Tue, Dec 13, 2016 at 4:56 AM, Cave, Mark R. <mrca at bgs.ac.uk> wrote:
+
+> I am going to be teaching an R course for beginners (for geoscience
+> professionals)  and I would like to start with some really interesting  and
+> visual applications to get their attention and show them the power of R
+> before getting down to the some R basics. Any good ideas?
+>
+> Mark Cave
+>
+>
+> Dr Mark Cave
+> Medical Geology
+> Land, Soil and Coast
+> British Geological Survey
+> Keyworth
+> Nottingham
+> NG12 5GG
+> UK
+> E-mail: mrca at bgs.ac.uk<mailto:mrca at bgs.ac.uk>
+> Tel direct: 0115 9363526
+> Tel switchboard: 0115 9363100
+>
+>
+>
+>
+>   ________________________________
+> This message (and any attachments) is for the recipien...{{dropped:10}}
+
+
+From abouelmakarim1962 at gmail.com  Wed Dec 14 17:18:02 2016
+From: abouelmakarim1962 at gmail.com (AbouEl-Makarim Aboueissa)
+Date: Wed, 14 Dec 2016 11:18:02 -0500
+Subject: [R-sig-teaching] Waiting to confirm page change...
+Message-ID: <CAE9stmfdgZsX0hhyGqKfkTyq5KacE-NRYsNsAbrqJQMYxJQUOQ@mail.gmail.com>
+
+Dear All:
+
+I am trying to create a histogram for the variable "sr" in the R data
+set LifeCycleSavings$sr. But after I submit the hist code, it took long
+time. I had to stop R session. It says "Waiting to confirm page change...".
+
+I have no idea what is this about?
+
+any ideas will help.
+
+with thanks
+abou
+_____________________
+AbouEl-Makarim Aboueissa, PhD
+University of Southern Maine
+Department of Mathematics and Statistics
+
+	[[alternative HTML version deleted]]
+
+
+From jefflaux at gmail.com  Wed Dec 14 17:54:55 2016
+From: jefflaux at gmail.com (Jeff Laux)
+Date: Wed, 14 Dec 2016 11:54:55 -0500
+Subject: [R-sig-teaching] Waiting to confirm page change...
+In-Reply-To: <CAE9stmfdgZsX0hhyGqKfkTyq5KacE-NRYsNsAbrqJQMYxJQUOQ@mail.gmail.com>
+References: <CAE9stmfdgZsX0hhyGqKfkTyq5KacE-NRYsNsAbrqJQMYxJQUOQ@mail.gmail.com>
+Message-ID: <CANV9buQ3Ux-d9XzPULbM26psfAbkmKTe3MV1C6t-ATFRX9OqNg@mail.gmail.com>
+
+This doesn't have anything to do with how to use R to teach statistics, so
+it should go to the main r-help mailing list, not the special interest
+group for teaching.  In addition, it will be hard for people to diagnose
+without a reproducible example.  When you email the main list, include code
+that will make this happen reliably so people can work with it and figure
+out what the problem is.
+
+
+On Wed, Dec 14, 2016 at 11:18 AM, AbouEl-Makarim Aboueissa <
+abouelmakarim1962 at gmail.com> wrote:
+
+> Dear All:
+>
+> I am trying to create a histogram for the variable "sr" in the R data
+> set LifeCycleSavings$sr. But after I submit the hist code, it took long
+> time. I had to stop R session. It says "Waiting to confirm page change...".
+>
+> I have no idea what is this about?
+>
+> any ideas will help.
+>
+> with thanks
+> abou
+> _____________________
+> AbouEl-Makarim Aboueissa, PhD
+> University of Southern Maine
+> Department of Mathematics and Statistics
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+	[[alternative HTML version deleted]]
+
+
+From abouelmakarim1962 at gmail.com  Wed Dec 14 18:02:56 2016
+From: abouelmakarim1962 at gmail.com (AbouEl-Makarim Aboueissa)
+Date: Wed, 14 Dec 2016 12:02:56 -0500
+Subject: [R-sig-teaching] Waiting to confirm page change...
+In-Reply-To: <CANV9buQ3Ux-d9XzPULbM26psfAbkmKTe3MV1C6t-ATFRX9OqNg@mail.gmail.com>
+References: <CAE9stmfdgZsX0hhyGqKfkTyq5KacE-NRYsNsAbrqJQMYxJQUOQ@mail.gmail.com>
+	<CANV9buQ3Ux-d9XzPULbM26psfAbkmKTe3MV1C6t-ATFRX9OqNg@mail.gmail.com>
+Message-ID: <CAE9stmcwkYkqz2x7mzeD4i3Ms0qUtiRD+2vAePMGoEMHxSSbDQ@mail.gmail.com>
+
+Dear Jeff:
+
+Thank you very much.
+
+Could you please let me know what kind of questions should someone uses R
+to teach statistics ask and post in the r-sig-teaching list? This would be
+very helpful in the future.
+
+I am using this list all the times long time ago.
+
+Once again, thank you very much for your help.
+
+with thanks
+abou
+
+
+On Wed, Dec 14, 2016 at 11:54 AM, Jeff Laux <jefflaux at gmail.com> wrote:
+
+> This doesn't have anything to do with how to use R to teach statistics, so
+> it should go to the main r-help mailing list, not the special interest
+> group for teaching.  In addition, it will be hard for people to diagnose
+> without a reproducible example.  When you email the main list, include code
+> that will make this happen reliably so people can work with it and figure
+> out what the problem is.
+>
+>
+> On Wed, Dec 14, 2016 at 11:18 AM, AbouEl-Makarim Aboueissa <
+> abouelmakarim1962 at gmail.com> wrote:
+>
+>> Dear All:
+>>
+>> I am trying to create a histogram for the variable "sr" in the R data
+>> set LifeCycleSavings$sr. But after I submit the hist code, it took long
+>> time. I had to stop R session. It says "Waiting to confirm page
+>> change...".
+>>
+>> I have no idea what is this about?
+>>
+>> any ideas will help.
+>>
+>> with thanks
+>> abou
+>> _____________________
+>> AbouEl-Makarim Aboueissa, PhD
+>> University of Southern Maine
+>> Department of Mathematics and Statistics
+>>
+>>         [[alternative HTML version deleted]]
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>
+>
+
+
+-- 
+______________________
+AbouEl-Makarim Aboueissa, PhD
+University of Southern Maine
+Department of Mathematics and Statistics
+
+	[[alternative HTML version deleted]]
+
+
+From jefflaux at gmail.com  Wed Dec 14 18:26:12 2016
+From: jefflaux at gmail.com (Jeff Laux)
+Date: Wed, 14 Dec 2016 12:26:12 -0500
+Subject: [R-sig-teaching] Waiting to confirm page change...
+In-Reply-To: <CAE9stmcwkYkqz2x7mzeD4i3Ms0qUtiRD+2vAePMGoEMHxSSbDQ@mail.gmail.com>
+References: <CAE9stmfdgZsX0hhyGqKfkTyq5KacE-NRYsNsAbrqJQMYxJQUOQ@mail.gmail.com>
+	<CANV9buQ3Ux-d9XzPULbM26psfAbkmKTe3MV1C6t-ATFRX9OqNg@mail.gmail.com>
+	<CAE9stmcwkYkqz2x7mzeD4i3Ms0qUtiRD+2vAePMGoEMHxSSbDQ@mail.gmail.com>
+Message-ID: <CANV9buTvv7v9MRwzuurbXWUFsd8hEvdRYo2tZe_mT2_tKjZFvQ@mail.gmail.com>
+
+I would think the recent email to the list "R example applications" would
+be a great example of what this list is for.
+
+On Wed, Dec 14, 2016 at 12:02 PM, AbouEl-Makarim Aboueissa <
+abouelmakarim1962 at gmail.com> wrote:
+
+> Dear Jeff:
+>
+> Thank you very much.
+>
+> Could you please let me know what kind of questions should someone uses R
+> to teach statistics ask and post in the r-sig-teaching list? This would be
+> very helpful in the future.
+>
+> I am using this list all the times long time ago.
+>
+> Once again, thank you very much for your help.
+>
+> with thanks
+> abou
+>
+>
+> On Wed, Dec 14, 2016 at 11:54 AM, Jeff Laux <jefflaux at gmail.com> wrote:
+>
+>> This doesn't have anything to do with how to use R to teach statistics,
+>> so it should go to the main r-help mailing list, not the special interest
+>> group for teaching.  In addition, it will be hard for people to diagnose
+>> without a reproducible example.  When you email the main list, include code
+>> that will make this happen reliably so people can work with it and figure
+>> out what the problem is.
+>>
+>>
+>> On Wed, Dec 14, 2016 at 11:18 AM, AbouEl-Makarim Aboueissa <
+>> abouelmakarim1962 at gmail.com> wrote:
+>>
+>>> Dear All:
+>>>
+>>> I am trying to create a histogram for the variable "sr" in the R data
+>>> set LifeCycleSavings$sr. But after I submit the hist code, it took long
+>>> time. I had to stop R session. It says "Waiting to confirm page
+>>> change...".
+>>>
+>>> I have no idea what is this about?
+>>>
+>>> any ideas will help.
+>>>
+>>> with thanks
+>>> abou
+>>> _____________________
+>>> AbouEl-Makarim Aboueissa, PhD
+>>> University of Southern Maine
+>>> Department of Mathematics and Statistics
+>>>
+>>>         [[alternative HTML version deleted]]
+>>>
+>>> _______________________________________________
+>>> R-sig-teaching at r-project.org mailing list
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>>
+>>
+>>
+>
+>
+> --
+> ______________________
+> AbouEl-Makarim Aboueissa, PhD
+> University of Southern Maine
+> Department of Mathematics and Statistics
+>
+>
+
+	[[alternative HTML version deleted]]
+
+
+From jones at reed.edu  Wed Dec 14 18:27:22 2016
+From: jones at reed.edu (Albyn Jones)
+Date: Wed, 14 Dec 2016 09:27:22 -0800
+Subject: [R-sig-teaching] Waiting to confirm page change...
+In-Reply-To: <CAE9stmcwkYkqz2x7mzeD4i3Ms0qUtiRD+2vAePMGoEMHxSSbDQ@mail.gmail.com>
+References: <CAE9stmfdgZsX0hhyGqKfkTyq5KacE-NRYsNsAbrqJQMYxJQUOQ@mail.gmail.com>
+	<CANV9buQ3Ux-d9XzPULbM26psfAbkmKTe3MV1C6t-ATFRX9OqNg@mail.gmail.com>
+	<CAE9stmcwkYkqz2x7mzeD4i3Ms0qUtiRD+2vAePMGoEMHxSSbDQ@mail.gmail.com>
+Message-ID: <CA+3jU8HXYxEXaA0=DSi20ZhbsM5fg5xOME5yB3pXajgBaNw_dw@mail.gmail.com>
+
+Dear Abou
+
+questions like yours are suitable for the R-help list.  For this list,
+questions about teaching, like "what experiences have people had teaching
+with the mosaic package"?  or a recent one asking for suggestions about
+teaching geoscientists to use R, good datasets and examples to use, etc.
+
+regards,
+
+albyn
+
+On Wed, Dec 14, 2016 at 9:02 AM, AbouEl-Makarim Aboueissa <
+abouelmakarim1962 at gmail.com> wrote:
+
+> Dear Jeff:
+>
+> Thank you very much.
+>
+> Could you please let me know what kind of questions should someone uses R
+> to teach statistics ask and post in the r-sig-teaching list? This would be
+> very helpful in the future.
+>
+> I am using this list all the times long time ago.
+>
+> Once again, thank you very much for your help.
+>
+> with thanks
+> abou
+>
+>
+> On Wed, Dec 14, 2016 at 11:54 AM, Jeff Laux <jefflaux at gmail.com> wrote:
+>
+> > This doesn't have anything to do with how to use R to teach statistics,
+> so
+> > it should go to the main r-help mailing list, not the special interest
+> > group for teaching.  In addition, it will be hard for people to diagnose
+> > without a reproducible example.  When you email the main list, include
+> code
+> > that will make this happen reliably so people can work with it and figure
+> > out what the problem is.
+> >
+> >
+> > On Wed, Dec 14, 2016 at 11:18 AM, AbouEl-Makarim Aboueissa <
+> > abouelmakarim1962 at gmail.com> wrote:
+> >
+> >> Dear All:
+> >>
+> >> I am trying to create a histogram for the variable "sr" in the R data
+> >> set LifeCycleSavings$sr. But after I submit the hist code, it took long
+> >> time. I had to stop R session. It says "Waiting to confirm page
+> >> change...".
+> >>
+> >> I have no idea what is this about?
+> >>
+> >> any ideas will help.
+> >>
+> >> with thanks
+> >> abou
+> >> _____________________
+> >> AbouEl-Makarim Aboueissa, PhD
+> >> University of Southern Maine
+> >> Department of Mathematics and Statistics
+> >>
+> >>         [[alternative HTML version deleted]]
+> >>
+> >> _______________________________________________
+> >> R-sig-teaching at r-project.org mailing list
+> >> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >>
+> >
+> >
+>
+>
+> --
+> ______________________
+> AbouEl-Makarim Aboueissa, PhD
+> University of Southern Maine
+> Department of Mathematics and Statistics
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+	[[alternative HTML version deleted]]
+
+
+From rmh at temple.edu  Wed Dec 14 19:07:57 2016
+From: rmh at temple.edu (RICHARD M. HEIBERGER)
+Date: Wed, 14 Dec 2016 13:07:57 -0500
+Subject: [R-sig-teaching] Waiting to confirm page change...
+In-Reply-To: <CAE9stmfdgZsX0hhyGqKfkTyq5KacE-NRYsNsAbrqJQMYxJQUOQ@mail.gmail.com>
+References: <CAE9stmfdgZsX0hhyGqKfkTyq5KacE-NRYsNsAbrqJQMYxJQUOQ@mail.gmail.com>
+Message-ID: <7E097D20-512E-4B4D-A980-11E6ED6651E7@temple.edu>
+
+It means you have inadvertently told R to check with you before clearing the previous graph.  See
+?devAskNewPage
+
+Click the graph window or enter return in the console.
+
+Sent from my iPhone
+
+> On Dec 14, 2016, at 11:18, AbouEl-Makarim Aboueissa <abouelmakarim1962 at gmail.com> wrote:
+> 
+> Dear All:
+> 
+> I am trying to create a histogram for the variable "sr" in the R data
+> set LifeCycleSavings$sr. But after I submit the hist code, it took long
+> time. I had to stop R session. It says "Waiting to confirm page change...".
+> 
+> I have no idea what is this about?
+> 
+> any ideas will help.
+> 
+> with thanks
+> abou
+> _____________________
+> AbouEl-Makarim Aboueissa, PhD
+> University of Southern Maine
+> Department of Mathematics and Statistics
+> 
+>    [[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From Rudy.Pante at metrovancouver.org  Wed Dec 14 23:55:11 2016
+From: Rudy.Pante at metrovancouver.org (Rudy Pante)
+Date: Wed, 14 Dec 2016 22:55:11 +0000
+Subject: [R-sig-teaching] Waiting to confirm page change...
+In-Reply-To: <7E097D20-512E-4B4D-A980-11E6ED6651E7@temple.edu>
+References: <CAE9stmfdgZsX0hhyGqKfkTyq5KacE-NRYsNsAbrqJQMYxJQUOQ@mail.gmail.com>
+	<7E097D20-512E-4B4D-A980-11E6ED6651E7@temple.edu>
+Message-ID: <ea90d25d497e4af785b9f7962e89ba7a@PRDMAIL02.gvrd.bc.ca>
+
+Please unsubscribe me from this group
+
+-----Original Message-----
+From: R-sig-teaching [mailto:r-sig-teaching-bounces at r-project.org] On Behalf Of RICHARD M. HEIBERGER
+Sent: Wednesday, December 14, 2016 10:08 AM
+To: AbouEl-Makarim Aboueissa
+Cc: r-sig-teaching at r-project.org
+Subject: Re: [R-sig-teaching] Waiting to confirm page change...
+
+It means you have inadvertently told R to check with you before clearing the previous graph.  See
+?devAskNewPage
+
+Click the graph window or enter return in the console.
+
+Sent from my iPhone
+
+> On Dec 14, 2016, at 11:18, AbouEl-Makarim Aboueissa <abouelmakarim1962 at gmail.com> wrote:
+> 
+> Dear All:
+> 
+> I am trying to create a histogram for the variable "sr" in the R data
+> set LifeCycleSavings$sr. But after I submit the hist code, it took long
+> time. I had to stop R session. It says "Waiting to confirm page change...".
+> 
+> I have no idea what is this about?
+> 
+> any ideas will help.
+> 
+> with thanks
+> abou
+> _____________________
+> AbouEl-Makarim Aboueissa, PhD
+> University of Southern Maine
+> Department of Mathematics and Statistics
+> 
+>    [[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+

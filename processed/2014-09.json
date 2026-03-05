@@ -1,0 +1,74 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2014-09",
+  "messages": [
+    {
+      "id": "msg-6cc56c4fc794",
+      "message_id": "<CAHDp66AS9PE8t1pSWW2ihwchPuj0wh8usajNbKZv3qLOok8WhQ@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2014-09-09T23:12:21-04:00",
+      "subject": "[R-sig-teaching] length of vectors with tapply",
+      "subject_clean": "length of vectors with tapply",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\n\nI was trying to get the lengths of vectors using \"length\" in tapply as\nfollows:\n\nni<-tapply(data[,2], data[,2], length, na.rm=TRUE)\n\nbut it did not work for me. I am not sure what I am doing wrong.\n\nI am not sure if I should use different function.\n\nHere is the data:\n============\ndata<-matrix(c(8,24,0,0,16,32,6,0,16,7,4,4,9,5,8,18,2,0,4,0,8,3,1,5,24,12,2,8,1,8,\n1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3),30,2)\n\n\n\nThe answer should be:\n\nni: 18  ,  10  ,  2\n\n\nthank you very much\nSteven\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\nI was trying to get the lengths of vectors using \"length\" in tapply as\nfollows:\n\nni<-tapply(data[,2], data[,2], length, na.rm=TRUE)\n\nbut it did not work for me. I am not sure what I am doin",
+      "thread_id": "thread-6cc56c4fc794",
+      "thread_depth": 0,
+      "month": "2014-09"
+    },
+    {
+      "id": "msg-75800d000e8c",
+      "message_id": "<540FC287.8040203@purdue.edu>",
+      "from_name": "Mark Daniel Ward",
+      "from_email_hash": "9660c15b92052c1ae502524414654a6571d365b2d3e5844d0a72a5172a130df6",
+      "date": "2014-09-09T23:16:23-04:00",
+      "subject": "[R-sig-teaching] length of vectors with tapply",
+      "subject_clean": "length of vectors with tapply",
+      "in_reply_to": "<CAHDp66AS9PE8t1pSWW2ihwchPuj0wh8usajNbKZv3qLOok8WhQ@mail.gmail.com>",
+      "references": [
+        "<CAHDp66AS9PE8t1pSWW2ihwchPuj0wh8usajNbKZv3qLOok8WhQ@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Steven,\n\nIf you remove the parameter:\nna.rm=TRUE\nthen your example seems to work fine for me.  Good luck!\n\nBest wishes,\nMark\n\nMark Daniel Ward, Ph.D.\nAssociate Professor and Undergraduate Chair\nDepartment of Statistics\nPurdue University\n150 North University Street\nWest Lafayette, IN 47907-2067\nmdw at purdue.edu\nphone: (765) 496-9563\n\n\n\nOn 9/9/14, 11:12 PM, Steven Stoline wrote:\n> Dear All:\n>\n> I was trying to get the lengths of vectors using \"length\" in tapply as\n> follows:\n>\n> ni<-tapply(data[,2], data[,2], length, na.rm=TRUE)\n>\n> but it did not work for me. I am not sure what I am doing wrong.\n>\n> I am not sure if I should use different function.\n>\n> Here is the data:\n> ============\n> data<-matrix(c(8,24,0,0,16,32,6,0,16,7,4,4,9,5,8,18,2,0,4,0,8,3,1,5,24,12,2,8,1,8,\n> 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3),30,2)\n>\n>\n>\n> The answer should be:\n>\n> ni: 18  ,  10  ,  2\n>\n>\n> thank you very much\n> Steven\n>",
+      "body_snippet": "Dear Steven,\n\nIf you remove the parameter:\nna.rm=TRUE\nthen your example seems to work fine for me.  Good luck!\n\nBest wishes,\nMark\n\nMark Daniel Ward, Ph.D.\nAssociate Professor and Undergraduate Chair\nD",
+      "thread_id": "thread-6cc56c4fc794",
+      "thread_depth": 1,
+      "month": "2014-09"
+    },
+    {
+      "id": "msg-45eb3451b924",
+      "message_id": "<CAHDp66CaU3GSKDK4o2o3Y+tjEK5Jt19vKfieVfdJsBFfHPSq6g@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2014-09-09T23:24:15-04:00",
+      "subject": "[R-sig-teaching] length of vectors with tapply",
+      "subject_clean": "length of vectors with tapply",
+      "in_reply_to": "<540FC287.8040203@purdue.edu>",
+      "references": [
+        "<CAHDp66AS9PE8t1pSWW2ihwchPuj0wh8usajNbKZv3qLOok8WhQ@mail.gmail.com>",
+        "<540FC287.8040203@purdue.edu>"
+      ],
+      "body_plain": "got it\n\nmany thanks\n\nSteven\n\nOn Tue, Sep 9, 2014 at 11:16 PM, Mark Daniel Ward <mdw at purdue.edu> wrote:\n\n> Dear Steven,\n>\n> If you remove the parameter:\n> na.rm=TRUE\n> then your example seems to work fine for me.  Good luck!\n>\n> Best wishes,\n> Mark\n>\n> Mark Daniel Ward, Ph.D.\n> Associate Professor and Undergraduate Chair\n> Department of Statistics\n> Purdue University\n> 150 North University Street\n> West Lafayette, IN 47907-2067\n> mdw at purdue.edu\n> phone: (765) 496-9563\n>\n>\n>\n>\n> On 9/9/14, 11:12 PM, Steven Stoline wrote:\n>\n>> Dear All:\n>>\n>> I was trying to get the lengths of vectors using \"length\" in tapply as\n>> follows:\n>>\n>> ni<-tapply(data[,2], data[,2], length, na.rm=TRUE)\n>>\n>> but it did not work for me. I am not sure what I am doing wrong.\n>>\n>> I am not sure if I should use different function.\n>>\n>> Here is the data:\n>> ============\n>> data<-matrix(c(8,24,0,0,16,32,6,0,16,7,4,4,9,5,8,18,2,0,4,0,\n>> 8,3,1,5,24,12,2,8,1,8,\n>> 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3),30,2)\n>>\n>>\n>>\n>> The answer should be:\n>>\n>> ni: 18  ,  10  ,  2\n>>\n>>\n>> thank you very much\n>> Steven\n>>\n>>\n>\n\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "got it\n\nmany thanks\n\nSteven\n\nOn Tue, Sep 9, 2014 at 11:16 PM, Mark Daniel Ward <mdw at purdue.edu> wrote:\n\n> Dear Steven,\n>\n> If you remove the parameter:\n> na.rm=TRUE\n> then your example seems to wor",
+      "thread_id": "thread-6cc56c4fc794",
+      "thread_depth": 2,
+      "month": "2014-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-6cc56c4fc794",
+      "subject": "length of vectors with tapply",
+      "message_count": 3,
+      "participants": [
+        "Mark Daniel Ward",
+        "Steven Stoline"
+      ],
+      "started": "2014-09-09T23:12:21-04:00",
+      "last_reply": "2014-09-09T23:24:15-04:00",
+      "root_message_id": "msg-6cc56c4fc794"
+    }
+  ]
+}

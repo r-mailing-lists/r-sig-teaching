@@ -1,0 +1,509 @@
+From alfredo.negri at unimi.it  Tue Jul  3 17:18:22 2007
+From: alfredo.negri at unimi.it (Simone Negri)
+Date: Tue, 03 Jul 2007 17:18:22 +0200
+Subject: [R-sig-teaching] what test?
+Message-ID: <468A68BE.7090207@unimi.it>
+
+I have to compare several proteomic expression data of four different 
+cultivar collected in two different year (4 x 2). what sort of 
+statistical analysis have I to perform in your opinion?
+
+
+
+From jones at reed.edu  Tue Jul  3 18:58:43 2007
+From: jones at reed.edu (Albyn Jones)
+Date: Tue, 3 Jul 2007 09:58:43 -0700
+Subject: [R-sig-teaching] what test?
+In-Reply-To: <468A68BE.7090207@unimi.it>
+References: <468A68BE.7090207@unimi.it>
+Message-ID: <20070703165843.GA14850@laplace.reed.edu>
+
+On Tue, Jul 03, 2007 at 05:18:22PM +0200, Simone Negri wrote:
+> I have to compare several proteomic expression data of four different 
+> cultivar collected in two different year (4 x 2). what sort of 
+> statistical analysis have I to perform in your opinion?
+
+This is a list for questions about R and teaching.  You would be
+more likely to get an informative response from a more appropriate list.
+
+Also, you should also describe your experiment in more detail.  What is the
+scientific hypothesis you are interested in testing? 
+
+For people who don't work on proteomic expression data, there would be
+lots of basic questions (what's a cultivar?  are measurements from the
+same cultivar in diffeent years independent, or correlated?  gaussian,
+or counts, etc etc)
+
+regards
+
+albyn
+
+
+
+From georges at aerg.canberra.edu.au  Fri Aug 10 22:40:36 2007
+From: georges at aerg.canberra.edu.au (Arthur Georges)
+Date: Sat, 11 Aug 2007 06:40:36 +1000
+Subject: [R-sig-teaching] Teaching R to Environmental Scientists
+Message-ID: <61fg7n$4ud9a6@ipmail02.adl2.internode.on.net>
+
+Hi,
+
+Great to discover this mailing list. I have been running a course in 
+environmental statistics using SAS for some years now, but have 
+recently moved to delivering the material online or in mixed mode 
+delivery. It would not come as a surprise to you as R users that the 
+SAS licencing is getting in the way of this, as the students know no 
+national boundaries, and distributing SAS across the globe is problematic.
+
+I am therefore exploring switching to R. I do so with some 
+trepidation, as I chose SAS in part because the code is intelligible 
+to novice programmers (I use the command line approach for 
+pedagogical reasons) whereas R syntax is likely to present a greater 
+obstacle to learning for budding environmental scientists. Can anyone 
+comment on their experiences with this? Are SAS and SPSS more 
+suitable for undergraduate levels, and R better introduced at 
+graduate level? Should I not go there for the undergrads? Any tricks 
+of the trade?
+
+My course is on http://ecology.lamsinternational.com/ and you will 
+note that there is an Introductory R module there that I have not yet 
+trialed on a class -- plan to in February. If you want to poke around 
+in there, the enrolment key is Fisher.
+
+All the best,
+
+Arthur
+
+
+
+From georges at aerg.canberra.edu.au  Sat Aug 11 01:03:02 2007
+From: georges at aerg.canberra.edu.au (Arthur Georges)
+Date: Sat, 11 Aug 2007 09:03:02 +1000
+Subject: [R-sig-teaching] Teaching R to Environmental Scientists
+In-Reply-To: <20070810215139.42194.qmail@mv.mv.com>
+References: <61fg7n$4ud9a6@ipmail02.adl2.internode.on.net>
+	<20070810215139.42194.qmail@mv.mv.com>
+Message-ID: <61fg7n$4ue8cp@ipmail02.adl2.internode.on.net>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20070811/fe0e1a95/attachment.asc>
+
+From georges at aerg.canberra.edu.au  Sat Aug 11 01:08:15 2007
+From: georges at aerg.canberra.edu.au (Arthur Georges)
+Date: Sat, 11 Aug 2007 09:08:15 +1000
+Subject: [R-sig-teaching] Teaching R to Environmental Scientists
+In-Reply-To: <20070810225617.GN18793@laplace.reed.edu>
+References: <61fg7n$4ud9a6@ipmail02.adl2.internode.on.net>
+	<20070810225617.GN18793@laplace.reed.edu>
+Message-ID: <61fg7n$4ue9c2@ipmail02.adl2.internode.on.net>
+
+Albyn,
+
+Yeah, I did have a good look at that before I went to the trouble of 
+the online R primer. I have no concerns about the comprehensiveness 
+of R -- it would certainly provide an open ended learning 
+environment. It is good to hear that you have been teaching R at 
+undergraduate level for years, and with some success no doubt. I will 
+probably run them in parallel and see how I go.
+
+Thanks for your advice,
+
+Arthur
+
+
+At 08:56 AM 11/08/2007, you wrote:
+>Hi Arthur
+>
+>I (and others) have been using R at the undergraduate level for years.
+>I don't think SPSS is suitable for much of anything; maybe SAS is
+>useful for managing databases.  R does require some investment of
+>time and effort.
+>
+>Have you looked at the CRAN website "taskviews" Environmetrics
+>(Analysis of ecological and environmental data) section?  The packages
+>discussed there may be a bit advanced for intro courses, but it
+>does give an overview of packages useful in the domain.
+>
+>albyn
+>
+>On Sat, Aug 11, 2007 at 06:40:36AM +1000, Arthur Georges wrote:
+> > Hi,
+> >
+> > Great to discover this mailing list. I have been running a course in
+> > environmental statistics using SAS for some years now, but have
+> > recently moved to delivering the material online or in mixed mode
+> > delivery. It would not come as a surprise to you as R users that the
+> > SAS licencing is getting in the way of this, as the students know no
+> > national boundaries, and distributing SAS across the globe is problematic.
+> >
+> > I am therefore exploring switching to R. I do so with some
+> > trepidation, as I chose SAS in part because the code is intelligible
+> > to novice programmers (I use the command line approach for
+> > pedagogical reasons) whereas R syntax is likely to present a greater
+> > obstacle to learning for budding environmental scientists. Can anyone
+> > comment on their experiences with this? Are SAS and SPSS more
+> > suitable for undergraduate levels, and R better introduced at
+> > graduate level? Should I not go there for the undergrads? Any tricks
+> > of the trade?
+> >
+> > My course is on http://ecology.lamsinternational.com/ and you will
+> > note that there is an Introductory R module there that I have not yet
+> > trialed on a class -- plan to in February. If you want to poke around
+> > in there, the enrolment key is Fisher.
+> >
+> > All the best,
+> >
+> > Arthur
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >
+
+
+
+From georges at aerg.canberra.edu.au  Sat Aug 11 07:58:17 2007
+From: georges at aerg.canberra.edu.au (Arthur Georges)
+Date: Sat, 11 Aug 2007 15:58:17 +1000
+Subject: [R-sig-teaching] Teaching R to Environmental Scientists
+In-Reply-To: <20070810232341.79550.qmail@mv.mv.com>
+References: <61fg7n$4ue8cp@ipmail02.adl2.internode.on.net>
+	<20070810232341.79550.qmail@mv.mv.com>
+Message-ID: <61fg7n$4uhjhq@ipmail02.adl2.internode.on.net>
+
+Bob,
+
+Minitab has come a long way. I was pleasantly surprised by the table 
+you referred to. I would still like to see a table comparing it with 
+SAS or R though. I probably would not stand up that well. Also the 
+Fisheries people that have funded me use R or SAS, and the public 
+service over here is pretty much wedded to SAS. I do not know of any 
+graduate employer here that uses Minitab in the workplace -- it is 
+pretty important to have graduates with competency in something that 
+will have them up and running when they enter the workplace.
+
+So really the choice for me is (a) Stick with SAS and fight out the 
+licencing arrangements with a large and immovable bureaucracy, or (b) 
+Run with R or (c) a mixture of both.
+
+As for the command line side of things, I like to have the students 
+learn the programming first, then move to the menu driven system 
+second if they choose to. I am not a big fan of menu driven stuff, as 
+it can lead to a bit of a black-box mentality. I suppose that is just 
+a matter of choice.
+
+Thanks for your comments,
+
+Arthur
+
+
+
+At 09:23 AM 11/08/2007, you wrote:
+
+>Minitab has come a long way since it was just for teaching an
+>intro. course.  Check
+>
+>       http://www.minitab.com/products/Minitab/compare.aspx
+>
+>But I realize this may not be the exact mix of features you need.
+>(There are at least two macro languages for extending it but activity
+>seems to have died down on the old one (simple scripting) and the new
+>one never seems to have caught on.  But it's there.)
+>
+>I am not exactly sure what your issues are with a GUI.  There are GUI
+>interfaces for R and a free student version of S-Plus (a commercial
+>inplementation of the same language as R) that keep a command history
+>so you can use the GUI as a way to get students started quickly and
+>then gradually move them to the command line.  (Most of my students in
+>my last years in the classroom had never SEEN a command line;-)  With
+>Minitab I never cared whether they used the command line or the menus
+>though I used the command line 90% of the time.  It WAS a big
+>advantage that even if the student uses the menus you can set Minitab
+>so that corresponding commands appear in the output.  That was a big
+>help to me in debugging where students went wrong.
+>
+>Stata has been growing gradually and quietly.  It's pretty powerful
+>and has a command line.
+>
+> > Bob,
+> >
+> > I looked at Minitab a ways back, and it sort of stops dead in terms
+> > of students developing beyond what I teach when they move into the
+> > subjects that follow. I was hoping not to have them swapping and
+> > changing software, but maybe that would be a good thing?
+> >
+> > Thanks for the advice,
+> >
+> > Arthur
+> >
+> > At 07:51 AM 11/08/2007, you wrote:
+> >
+> > >It certainly does not look like you would need SAS or R for the topics
+> > >covered, which could easily be done with Minitab, which has a command
+> > >line available -- one far simpler than R's.  And it's a lot cheaper
+> > >than SAS!
+> > >
+> > > > Hi,
+> > > >
+> > > > Great to discover this mailing list. I have been running a course in
+> > > > environmental statistics using SAS for some years now, but have
+> > > > recently moved to delivering the material online or in mixed mode
+> > > > delivery. It would not come as a surprise to you as R users that the
+> > > > SAS licencing is getting in the way of this, as the students know no
+> > > > national boundaries, and distributing SAS across the globe is 
+> problematic.
+> > > >
+> > > > I am therefore exploring switching to R. I do so with some
+> > > > trepidation, as I chose SAS in part because the code is intelligible
+> > > > to novice programmers (I use the command line approach for
+> > > > pedagogical reasons) whereas R syntax is likely to present a greater
+> > > > obstacle to learning for budding environmental scientists. Can anyone
+> > > > comment on their experiences with this? Are SAS and SPSS more
+> > > > suitable for undergraduate levels, and R better introduced at
+> > > > graduate level? Should I not go there for the undergrads? Any tricks
+> > > > of the trade?
+> > > >
+> > > > My course is on http://ecology.lamsinternational.com/ and you will
+> > > > note that there is an Introductory R module there that I have not yet
+> > > > trialed on a class -- plan to in February. If you want to poke around
+> > > > in there, the enrolment key is Fisher.
+> > > >
+> > > > All the best,
+> > > >
+> > > > Arthur
+> > > >
+> > > > _______________________________________________
+> > > > R-sig-teaching at r-project.org mailing list
+> > > > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> > > >
+> > >
+> > >
+> > >
+> > >  _______
+> > >|   ^  |
+> > >|     /                     Robert W. Hayden
+> > >|    |                      in the old library
+> > >|    |                      212 Main Street
+> > >|   /                       P. O. Box 450
+> > >|  |                      ^ North Troy, VT 05859
+> > >L__L                        (802) 988-2587
+> > >                             http://statland.org/
+> > >Map of VT                   bob at statland.org
+> > >
+> > >Communications sent to Plymouth State will not reach me.
+> >
+> > ==========================================================
+> > Arthur  Georges, Professor in Applied Ecology
+> > Institute for Applied Ecology and
+> > School of Resource, Environmental and Heritage Sciences
+> > Building 3, University of Canberra ACT 2601 AUSTRALIA
+> > Tel : (02)6201 5786  Fax: (02)62015305  Mobile: 0418 866741
+> > Email: georges at aerg.canberra.edu.au
+> > WWW: http://aerg.canberra.edu.au/staff/georges/
+> > Reprints: http://aerg.canberra.edu.au/cgi-bin/pubs.cgi?target=G1
+> > ==========================================================
+> > Australian Government Higher Education Registered Provider CRICOS: #00212K
+> >
+> >       [[alternative HTML version deleted]]
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >
+>
+>
+>
+>  _______
+>|   ^  |
+>|     /                     Robert W. Hayden
+>|    |                      in the old library
+>|    |                      212 Main Street
+>|   /                       P. O. Box 450
+>|  |                      ^ North Troy, VT 05859
+>L__L                        (802) 988-2587
+>                             http://statland.org/
+>Map of VT                   bob at statland.org
+>
+>Communications sent to Plymouth State will not reach me.
+
+
+
+From georges at aerg.canberra.edu.au  Sat Aug 11 22:59:48 2007
+From: georges at aerg.canberra.edu.au (Arthur Georges)
+Date: Sun, 12 Aug 2007 06:59:48 +1000
+Subject: [R-sig-teaching] Teaching R to Environmental Scientists
+In-Reply-To: <20070811141635.74164.qmail@mv.mv.com>
+References: <61fg7n$4uhjhq@ipmail02.adl2.internode.on.net>
+	<20070811141635.74164.qmail@mv.mv.com>
+Message-ID: <61fg7n$4uoo5d@ipmail02.adl2.internode.on.net>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20070812/854fcaf8/attachment.ksh>
+
+From georges at aerg.canberra.edu.au  Sat Aug 11 22:56:12 2007
+From: georges at aerg.canberra.edu.au (Arthur Georges)
+Date: Sun, 12 Aug 2007 06:56:12 +1000
+Subject: [R-sig-teaching] Teaching R to Environmental Scientists
+In-Reply-To: <p06240800c2e3b742cf27@[192.168.0.2]>
+References: <61fg7n$4ud9a6@ipmail02.adl2.internode.on.net>
+	<p06240800c2e3b742cf27@[192.168.0.2]>
+Message-ID: <61fg7n$4uonai@ipmail02.adl2.internode.on.net>
+
+Thanks for that encouraging advice Keith. I will check those books out.
+
+Best wishes,
+
+Arthur
+
+
+
+From robert-glass at gmx.de  Wed Sep 19 11:34:28 2007
+From: robert-glass at gmx.de (=?ISO-8859-15?Q?Robert_Gla=DF?=)
+Date: Wed, 19 Sep 2007 11:34:28 +0200
+Subject: [R-sig-teaching] multinomial logit models
+Message-ID: <46F0ED24.9040408@gmx.de>
+
+Dear R community,
+
+Is anybody aware of how to do diagnostics for multinomial logit models?
+In the binomial case (for GLM's), I have already used the functions 
+provided by J. Fox in his car package.
+I estimate my model with multinom (nnet).
+Now I would like to do an analysis of the residuals, influence measures, 
+nonlinearity and collinearity among the predictors.
+How is generally controlled for the results in MNL using R?
+Thank you very much in advance
+
+Best regards,
+
+Robert Glass
+
+
+
+From hayden at mv.mv.com  Wed Sep 19 17:04:55 2007
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Wed, 19 Sep 2007 11:04:55 -0400 (EDT)
+Subject: [R-sig-teaching]  multinomial logit models (fwd)
+Message-ID: <20070919150455.31200.qmail@mv.mv.com>
+
+
+Dunno but this list is for people using R to teach INTRODUCTORY
+statistics courses.  There are other lists more appropraite for a
+question at this level.
+
+(Sorry for a second irrelevant message to the list.  I tried
+unsuccessfully to respond privately.)  
+
+Forwarded message:
+> 
+> Dear R community,
+> 
+> Is anybody aware of how to do diagnostics for multinomial logit models?
+> In the binomial case (for GLM's), I have already used the functions 
+> provided by J. Fox in his car package.
+> I estimate my model with multinom (nnet).
+> Now I would like to do an analysis of the residuals, influence measures, 
+> nonlinearity and collinearity among the predictors.
+> How is generally controlled for the results in MNL using R?
+> Thank you very much in advance
+> 
+> Best regards,
+> 
+> Robert Glass
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+
+
+
+ _______
+|   ^  | 		    
+|     /  		    Robert W. Hayden
+|    |   		    in the old library
+|    |   		    212 Main Street
+|   /    	            P. O. Box 450
+|  |     		  ^ North Troy, VT 05859
+L__L			    (802) 988-2587
+                            http://statland.org/      
+Map of VT                   bob at statland.org
+
+Communications sent to Plymouth State will not reach me.
+
+
+
+From hayden at mv.mv.com  Wed Sep 19 17:08:40 2007
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Wed, 19 Sep 2007 11:08:40 -0400 (EDT)
+Subject: [R-sig-teaching] S-Plus?
+Message-ID: <20070919150840.33177.qmail@mv.mv.com>
+
+Not meaning to start a religious war but what are people's feelings
+about using S-Plus with beginners?  I see it as a possible alternative
+to one of the GUI interfaces for R.  It might be easy for beginners,
+but helps one learn the S language.  After the class is over they
+could buy S-Plus or use R.  (Yes, I know the student version of S-Plus
+is not as easy to access as the free R GUIs.)
+
+ _______
+|   ^  | 		    
+|     /  		    Robert W. Hayden
+|    |   		    in the old library
+|    |   		    212 Main Street
+|   /    	            P. O. Box 450
+|  |     		  ^ North Troy, VT 05859
+L__L			    (802) 988-2587
+                            http://statland.org/      
+Map of VT                   bob at statland.org
+
+Communications sent to Plymouth State will not reach me.
+
+
+
+From jones at reed.edu  Wed Sep 19 18:40:57 2007
+From: jones at reed.edu (Albyn Jones)
+Date: Wed, 19 Sep 2007 09:40:57 -0700
+Subject: [R-sig-teaching] S-Plus?
+In-Reply-To: <20070919150840.33177.qmail@mv.mv.com>
+References: <20070919150840.33177.qmail@mv.mv.com>
+Message-ID: <20070919164057.GC17838@laplace.reed.edu>
+
+I am not familiar with any user interfaces for S-Plus.  I looked at the
+insightful website and noted the existence of a student version, but
+it appears to be limited to Windows.  That would rule it out for me.
+
+I use R in intro courses, without any GUI.
+
+albyn
+
+On Wed, Sep 19, 2007 at 11:08:40AM -0400, Robert W. Hayden wrote:
+> Not meaning to start a religious war but what are people's feelings
+> about using S-Plus with beginners?  I see it as a possible alternative
+> to one of the GUI interfaces for R.  It might be easy for beginners,
+> but helps one learn the S language.  After the class is over they
+> could buy S-Plus or use R.  (Yes, I know the student version of S-Plus
+> is not as easy to access as the free R GUIs.)
+> 
+>  _______
+> |   ^  | 		    
+> |     /  		    Robert W. Hayden
+> |    |   		    in the old library
+> |    |   		    212 Main Street
+> |   /    	            P. O. Box 450
+> |  |     		  ^ North Troy, VT 05859
+> L__L			    (802) 988-2587
+>                             http://statland.org/      
+> Map of VT                   bob at statland.org
+> 
+> Communications sent to Plymouth State will not reach me.
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+

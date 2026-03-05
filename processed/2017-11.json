@@ -1,0 +1,87 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2017-11",
+  "messages": [
+    {
+      "id": "msg-6d630c57b354",
+      "message_id": "<CAEZOd2A8bScipPBpmBoTD6po-dojx-c_r-Q51-YQuVZvp7=svA@mail.gmail.com>",
+      "from_name": "Brian Dennis",
+      "from_email_hash": "701fff3e21682d3a2a0e00efd4388e8490784b003ba99bbdf245d085ed1f529d",
+      "date": "2017-11-14T12:49:15-08:00",
+      "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 97, Issue 1",
+      "subject_clean": "R-sig-teaching Digest, Vol 97, Issue 1",
+      "in_reply_to": "<mailman.27.1507024802.28956.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.27.1507024802.28956.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": "My book, \"The R Student Companion\" (CRC Press), has a number of financial\nexamples throughout (such as exponential growth, monthly loan payment,\nsimulation of stochastic investment return).  It is one of the more\nelementary books on R available and is designed for high school or college\nscience and math classes. Its premise is that R is way more than a\nstatistics package; it is a comprehensive tool for scientific calculations,\nmodeling, and graphing.\n\nOne R to rule them all!\n\nBrian Dennis\nUniversity of Idaho\n\nOn Tue, Oct 3, 2017 at 3:00 AM, <r-sig-teaching-request at r-project.org>\nwrote:\n\n> Send R-sig-teaching mailing list submissions to\n>         r-sig-teaching at r-project.org\n>\n> To subscribe or unsubscribe via the World Wide Web, visit\n>         https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> or, via email, send a message with subject or body 'help' to\n>         r-sig-teaching-request at r-project.org\n>\n> You can reach the person managing the list at\n>         r-sig-teaching-owner at r-project.org\n>\n> When replying, please edit your Subject line so it is more specific\n> than \"Re: Contents of R-sig-teaching digest...\"\n>\n>\n> Today's Topics:\n>\n>    1. Undergraduate finance (Geoffrey Smith)\n>\n>\n> ----------------------------------------------------------------------\n>\n> Message: 1\n> Date: Mon, 2 Oct 2017 18:03:33 +0000\n> From: Geoffrey Smith <gps at asu.edu>\n> To: \"r-sig-teaching at r-project.org\" <r-sig-teaching at r-project.org>\n> Subject: [R-sig-teaching] Undergraduate finance\n> Message-ID:\n>         <BN6PR06MB2610FD0E1208A60CD1EF116FA37E0 at BN6PR06MB2610.\n> namprd06.prod.outlook.com>\n>\n> Content-Type: text/plain; charset=\"UTF-8\"\n>\n> Hello,\n>\n>\n> I am teaching an undergraduate course in Investments next semester and I\n> would like to incorporate a little R programming into it. Does anyone have\n> any teaching tips or textbook suggestions?\n>\n>\n> Thank you.\n>\n>\n> Geoff\n>\n>\n> Geoffrey Smith\n>\n> Clinical Associate Professor of Finance\n>\n> WP Carey School of Business\n>\n> Arizona State University\n>\n>         [[alternative HTML version deleted]]\n>\n>\n>\n> ------------------------------\n>\n> Subject: Digest Footer\n>\n> _______________________________________________\n> R-sig-teaching mailing list\n> R-sig-teaching at r-project.org\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n> ------------------------------\n>\n> End of R-sig-teaching Digest, Vol 97, Issue 1\n> *********************************************\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "My book, \"The R Student Companion\" (CRC Press), has a number of financial\nexamples throughout (such as exponential growth, monthly loan payment,\nsimulation of stochastic investment return).  It is one",
+      "thread_id": "thread-6d630c57b354",
+      "thread_depth": 0,
+      "month": "2017-11"
+    },
+    {
+      "id": "msg-40afc11b8c25",
+      "message_id": "<337E460F-FCE7-4291-AC5A-9E3A4C5AE834@calvin.edu>",
+      "from_name": "Randall Pruim",
+      "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
+      "date": "2017-11-15T01:19:05Z",
+      "subject": "[R-sig-teaching] Undergraduate finance",
+      "subject_clean": "Undergraduate finance",
+      "in_reply_to": "<BN6PR06MB2610FD0E1208A60CD1EF116FA37E0@BN6PR06MB2610.namprd06.prod.outlook.com>",
+      "references": [
+        "<BN6PR06MB2610FD0E1208A60CD1EF116FA37E0@BN6PR06MB2610.namprd06.prod.outlook.com>"
+      ],
+      "body_plain": "Here are my main suggestions:\n\n  1. Less Volume, More Creativity!\n  2. Use RStudio Server if you can.\n  3. Take advantage of (or create) learnr tutorials\n\nHere?s a bit more detail.\n\nThere are lot of packages/authors/functions/etc out there.  You need to be selective in what you choose.  It is not enough to get R to do what you want done, you need the suite of tools you introduce to students to play well together.  The less you use R in the course, the more important this is.  The particular suite you choose will depend on the goals you have for your course and your students, the availability of functions/packages to support those goals, and your personal preferences (regarding things like style of API).\n\nI?ve given numerous presentations with the Less Volume, More Creativity theme (example: http://cvc.mosaic-web.org/Summer2017/Learn/LessVolume/LessVolume.html) ? but not always with the same underlying set of commands.  Here are some suites that I think work well together.\n\n* mosaic package + lattice graphics  (I now prefer ggformula graphics)\n* mosaic package + ggformula graphics\n* tidyverse (dplyr, readr, tidyr, etc.)\n\nIf you make it your goal to keep the set of R commands you teach as lean and consistent as possible, while still capable of doing what you need, then are heading in the right direction.  I would start with the things you are quite sure you will need/want to use (For me this was formulas, since I knew I would need them for models.  That moved me to lattice graphics originally, and ggformula graphics now and led us to include many things in the mosaic package to make numerical summaries follow that same basic template.)  Work your way out from there ? always asking ?do I really need this? and does this play well with the other things on my list?\n\nUsing an RStudio server means that (a) your students don?t have to install anything and (b) you can ensure everyone has the same working environment (installed packages, etc.)  It also safeguards against things like computer failure.  (If you have enough students, someone will fall asleep in the top bunk sending their laptop crashing to the floor?)\n\nlearnr tutorials are very easy to write and provide a great way to demonstrate to your students how the things you have chosen work.  Interactive R sessions, and quizzes can be embedded in the tutorials.  Here?s an example:  http://rsconnect.calvin.edu/ggformula/introduction/.  I expect more of these will become available as more people see how easy they are to construct and how helpful they can be.\n\n?rjp\n\n\n\n\n\nOn Oct 2, 2017, at 2:03 PM, Geoffrey Smith <gps at asu.edu<mailto:gps at asu.edu>> wrote:\n\nHello,\n\n\nI am teaching an undergraduate course in Investments next semester and I would like to incorporate a little R programming into it. Does anyone have any teaching tips or textbook suggestions?\n\n\nThank you.\n\n\nGeoff\n\n\nGeoffrey Smith\n\nClinical Associate Professor of Finance\n\nWP Carey School of Business\n\nArizona State University\n\n[[alternative HTML version deleted]]\n\n_______________________________________________\nR-sig-teaching at r-project.org<mailto:R-sig-teaching at r-project.org> mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Here are my main suggestions:\n\n  1. Less Volume, More Creativity!\n  2. Use RStudio Server if you can.\n  3. Take advantage of (or create) learnr tutorials\n\nHere?s a bit more detail.\n\nThere are lot of p",
+      "thread_id": "thread-40afc11b8c25",
+      "thread_depth": 0,
+      "month": "2017-11"
+    },
+    {
+      "id": "msg-9159a2479449",
+      "message_id": "<CAGSSkmhikf_Av50S2riX6TsScLmS+kh2LfX-e_bB2B7RfUnNDg@mail.gmail.com>",
+      "from_name": "Nick Carchedi",
+      "from_email_hash": "ea4b840fddb83aa5f0c581d1a1ef33a753cf350acc1601834035a8171815900c",
+      "date": "2017-11-15T21:01:24+01:00",
+      "subject": "[R-sig-teaching] Undergraduate finance",
+      "subject_clean": "Undergraduate finance",
+      "in_reply_to": "<337E460F-FCE7-4291-AC5A-9E3A4C5AE834@calvin.edu>",
+      "references": [
+        "<BN6PR06MB2610FD0E1208A60CD1EF116FA37E0@BN6PR06MB2610.namprd06.prod.outlook.com>",
+        "<337E460F-FCE7-4291-AC5A-9E3A4C5AE834@calvin.edu>"
+      ],
+      "body_plain": "Hi Geoff, we've got a number of finance and time series related R courses\non DataCamp, taught by some great people like Jeff Ryan and Rob Hyndman.\nWe've made DataCamp free for use in classrooms, so it won't cost you or\nyour students anything. More info if you're interested:\n\n* https://www.datacamp.com/groups/education\n* https://www.datacamp.com/tracks/quantitative-analyst-with-r\n\nFeel free to shoot me an email if you have any questions. Hope this helps!\n\n-- \nNick Carchedi\nDirector of Content\nnick at datacamp.com\n617-775-9373\n\nOn November 14, 2017 at 8:19:18 PM, Randall Pruim (rpruim at calvin.edu) wrote:\n\n\nHere are my main suggestions:\n\n1. Less Volume, More Creativity!\n2. Use RStudio Server if you can.\n3. Take advantage of (or create) learnr tutorials\n\nHere?s a bit more detail.\n\nThere are lot of packages/authors/functions/etc out there. You need to be\nselective in what you choose. It is not enough to get R to do what you want\ndone, you need the suite of tools you introduce to students to play well\ntogether. The less you use R in the course, the more important this is. The\nparticular suite you choose will depend on the goals you have for your\ncourse and your students, the availability of functions/packages to support\nthose goals, and your personal preferences (regarding things like style of\nAPI).\n\nI?ve given numerous presentations with the Less Volume, More Creativity\ntheme (example:\nhttp://cvc.mosaic-web.org/Summer2017/Learn/LessVolume/LessVolume.html) ?\nbut not always with the same underlying set of commands. Here are some\nsuites that I think work well together.\n\n* mosaic package + lattice graphics (I now prefer ggformula graphics)\n* mosaic package + ggformula graphics\n* tidyverse (dplyr, readr, tidyr, etc.)\n\nIf you make it your goal to keep the set of R commands you teach as lean\nand consistent as possible, while still capable of doing what you need,\nthen are heading in the right direction. I would start with the things you\nare quite sure you will need/want to use (For me this was formulas, since I\nknew I would need them for models. That moved me to lattice graphics\noriginally, and ggformula graphics now and led us to include many things in\nthe mosaic package to make numerical summaries follow that same basic\ntemplate.) Work your way out from there ? always asking ?do I really need\nthis? and does this play well with the other things on my list?\n\nUsing an RStudio server means that (a) your students don?t have to install\nanything and (b) you can ensure everyone has the same working environment\n(installed packages, etc.) It also safeguards against things like computer\nfailure. (If you have enough students, someone will fall asleep in the top\nbunk sending their laptop crashing to the floor?)\n\nlearnr tutorials are very easy to write and provide a great way to\ndemonstrate to your students how the things you have chosen work.\nInteractive R sessions, and quizzes can be embedded in the tutorials.\nHere?s an example: http://rsconnect.calvin.edu/ggformula/introduction/. I\nexpect more of these will become available as more people see how easy they\nare to construct and how helpful they can be.\n\n?rjp\n\n\n\n\n\nOn Oct 2, 2017, at 2:03 PM, Geoffrey Smith <gps at asu.edu<mailto:gps at asu.edu>>\nwrote:\n\nHello,\n\n\nI am teaching an undergraduate course in Investments next semester and I\nwould like to incorporate a little R programming into it. Does anyone have\nany teaching tips or textbook suggestions?\n\n\nThank you.\n\n\nGeoff\n\n\nGeoffrey Smith\n\nClinical Associate Professor of Finance\n\nWP Carey School of Business\n\nArizona State University\n\n[[alternative HTML version deleted]]\n\n_______________________________________________\nR-sig-teaching at r-project.org<mailto:R-sig-teaching at r-project.org> mailing\nlist\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\n[[alternative HTML version deleted]]\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi Geoff, we've got a number of finance and time series related R courses\non DataCamp, taught by some great people like Jeff Ryan and Rob Hyndman.\nWe've made DataCamp free for use in classrooms, so it",
+      "thread_id": "thread-40afc11b8c25",
+      "thread_depth": 1,
+      "month": "2017-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-6d630c57b354",
+      "subject": "R-sig-teaching Digest, Vol 97, Issue 1",
+      "message_count": 1,
+      "participants": [
+        "Brian Dennis"
+      ],
+      "started": "2017-11-14T12:49:15-08:00",
+      "last_reply": "2017-11-14T12:49:15-08:00",
+      "root_message_id": "msg-6d630c57b354"
+    },
+    {
+      "id": "thread-40afc11b8c25",
+      "subject": "Undergraduate finance",
+      "message_count": 2,
+      "participants": [
+        "Nick Carchedi",
+        "Randall Pruim"
+      ],
+      "started": "2017-11-15T01:19:05+00:00",
+      "last_reply": "2017-11-15T21:01:24+01:00",
+      "root_message_id": "msg-40afc11b8c25"
+    }
+  ]
+}

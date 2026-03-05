@@ -1,0 +1,55 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2012-12",
+  "messages": [
+    {
+      "id": "msg-c79bb4eda6e1",
+      "message_id": "<27FF0C39AF481348BDC4A4767452D15D8055128B@EX2.ad.gvc>",
+      "from_name": "Doug Wiig",
+      "from_email_hash": "a6fc011fa57323180bb77631c531acf2a5468d143a2ece9d90245e2163f163ab",
+      "date": "2012-12-02T04:49:54Z",
+      "subject": "[R-sig-teaching] Help for Beginners",
+      "subject_clean": "Help for Beginners",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121202/79c5c883/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121202/79c5c883/attachment.pl>",
+      "thread_id": "thread-c79bb4eda6e1",
+      "thread_depth": 0,
+      "month": "2012-12"
+    },
+    {
+      "id": "msg-b053ba8d1c60",
+      "message_id": "<CABvvk7X3s1HVnNMcin_ypqwCCtV+gC6V=au_EDAwKjFXxD+UXg@mail.gmail.com>",
+      "from_name": "Nguyen C.",
+      "from_email_hash": "0b9c2dbe22f7b38ecd8096e7f002f66f867bc7c415b18294d5c9b6db7f43a084",
+      "date": "2012-12-03T08:46:47+07:00",
+      "subject": "[R-sig-teaching] Help for Beginners",
+      "subject_clean": "Help for Beginners",
+      "in_reply_to": "<27FF0C39AF481348BDC4A4767452D15D8055128B@EX2.ad.gvc>",
+      "references": [
+        "<27FF0C39AF481348BDC4A4767452D15D8055128B@EX2.ad.gvc>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121203/284c218b/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121203/284c218b/attachment.pl>",
+      "thread_id": "thread-c79bb4eda6e1",
+      "thread_depth": 1,
+      "month": "2012-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-c79bb4eda6e1",
+      "subject": "Help for Beginners",
+      "message_count": 2,
+      "participants": [
+        "Doug Wiig",
+        "Nguyen C."
+      ],
+      "started": "2012-12-02T04:49:54+00:00",
+      "last_reply": "2012-12-03T08:46:47+07:00",
+      "root_message_id": "msg-c79bb4eda6e1"
+    }
+  ]
+}

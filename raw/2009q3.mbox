@@ -1,0 +1,1284 @@
+From hayden at mv.mv.com  Thu Jul  2 16:03:58 2009
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Thu, 2 Jul 2009 10:03:58 -0400 (EDT)
+Subject: [R-sig-teaching] purpose of list
+Message-ID: <20090702140358.65223.qmail@mv.mv.com>
+
+Forwarded message:
+> From: hadley wickham <h.wickham at gmail.com>
+> >
+> > In all three years, unprompted by me, I have had between five and
+> > seven students come to me after the R sessions asking why we hadn't
+> > used R in first year. They find the command line more direct and
+> > immediate than Mintab, which, it seems, they had found confusing. This
+> > year I asked the whole =A02nd year class to vote on whether they would
+> > have preferred R to Mintab in 1st year. Everyone voted for R.
+> 
+> This matches my experience in a course which I taught both Excel and
+> R.  Most students preferred R because it was much harder to follow
+> what I was doing in the GUI - where exactly was I clicking, was it a
+> right or left click, etc.  With R you see everything I type and it's
+> very easier to reproduce.  It's also much faster and easier to produce
+> a page of commented R code that allows students to reproduce all the
+> important steps, compared to recording a screencast to show the steps
+> in Excel.
+
+This matches my experience with the command line vs. a GUI.  However,
+I used Minitab!-)  Is the CLI gone in Version 15?  I used it through
+14.  It seems to be deprecated by Minitab, Inc., though.  Around
+Version 13 they abolished inline comments and also around that time
+they started shipping Minitab with the command line turned off as
+default, but last I knew you could turn it on again.  I vaguely recall
+you might also have had to install command line help as a separate
+step (or installation option).  Certainly for an intro. stats. course
+the Minitab CLI seems much more intuitive than the R CLI.  The data are in
+columns C1, C2, etc.  Sample commands:
+
+boxplot C1
+histogram C2
+describe C3 
+regress data in C3 on 1 independent variable in C2
+
+The last is an example of inline commenting.  In Version 13 it would
+have to be
+
+regress C3 1 C2
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+
+ http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+	    
+  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)
+  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      
+  email  bob statland.org  (add your own "@" and save me some spam)
+
+
+
+From hayden at mv.mv.com  Thu Jul  2 16:19:57 2009
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Thu, 2 Jul 2009 10:19:57 -0400 (EDT)
+Subject: [R-sig-teaching]  Teaching with R website
+Message-ID: <20090702141957.69578.qmail@mv.mv.com>
+
+
+I think such a website would be a real asset.  It would be most useful
+if it either were restricted to intro. stats. OR organized so that
+materials for real beginners were easy to extract from all the
+materials for programmers and Ph.D. statisticians.  As a relative
+beginner myself, I find the usual resources useless.  In self defense,
+I created materials for my own beginning students:
+
+  http://courses.statistics.com/software/R/Rhome.htm
+
+Likewise, 13000 data sets would not be of much help unless there were
+some way to find the one you need.  For example, recently I was
+teaching transformations of a single variable and found several nice
+sets of data.  Unfortunately, logs seemed to be the best
+transformation in every case!-(  I needed examples where square roots
+for example worked better.  There are already a bazillion data sets
+out there for R but they are scattered among dozens of packages with
+cryptic names to ensure that no one can find them.  
+
+I think John's idea has great potential but must be inplemented in a
+manner much less off-putting than 99% of the existing R materials.
+You would almost think that R was a secret society whose main goal was
+to fend off new users;-)
+
+Forwarded message:
+> From: jverzani <jverzani at gmail.com>
+> 
+> I was at the USCOTS conference in Ohio and found myself attending a
+> demonstration on the statcrunch software, which I hadn't seen until then. As far
+> as it goes the software is fine, but what was very interesting to me was the
+> statcrunch.com website. As described there, this is set up to allow easy sharing
+> of data sets, code and reports along with surveys etc. There were an enormous
+> number of data sets (13000, reports etc. that were posted by instructors and
+> students). The site is so successful a publisher now runs it.
+> 
+> I currently put such files on my personal web site for my students to download.
+> I have also enjoyed using materials from many other websites, such as those
+> discussed in a recent thread. However, I think it might be extremely beneficial
+> from a student perspective to have an one spot where they can find the work of
+> many people oriented around teaching and learning R. Some site with good search
+> abilities, some well chosen organization and a relatively modern look.
+> 
+> I know there are a bunch of interesting web sites for R beyond the main one:
+> CRANtastic, the R-Wiki, the graph gallery, ... but none seem oriented towards
+> the exchange of data and techniques that are used to teach with R.
+> 
+> Does anyone else think such a resource might be useful to the point where it was
+> actually used? Are there other ideas where a common place for such information
+> is value added?
+> 
+> If this seems like a good idea, does anyone know if there is some off-the-shelf
+> content management system that is well suited towards such?
+> 
+> --John
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+
+ http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+	    
+  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)
+  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      
+  email  bob statland.org  (add your own "@" and save me some spam)
+
+
+
+From nelson.ana at gmail.com  Thu Jul  2 16:58:43 2009
+From: nelson.ana at gmail.com (Ana Nelson)
+Date: Thu, 2 Jul 2009 15:58:43 +0100
+Subject: [R-sig-teaching] Teaching with R website
+In-Reply-To: <20090702141957.69578.qmail@mv.mv.com>
+References: <20090702141957.69578.qmail@mv.mv.com>
+Message-ID: <a7d6d2740907020758o5942d8ceq2a5c921fac06e946@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090702/b8e11068/attachment.pl>
+
+From cgenolin at u-paris10.fr  Thu Jul  2 18:07:55 2009
+From: cgenolin at u-paris10.fr (Christophe Genolini)
+Date: Thu, 02 Jul 2009 18:07:55 +0200
+Subject: [R-sig-teaching] purpose of list
+In-Reply-To: <B37C0A15B8FB3C468B5BC7EBC7DA14CC62126E9E3F@LP-EXMBVS10.CO.IHC.COM>
+References: <68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>	from	"Liviu
+	Andronic" at Jun 30,
+	2009 08:51:35 AM	<20090630113249.90610.qmail@mv.mv.com>
+	<B37C0A15B8FB3C468B5BC7EBC7DA14CC62126E9E3F@LP-EXMBVS10.CO.IHC.COM>
+Message-ID: <4A4CDB5B.7090004@u-paris10.fr>
+
+Hi all
+
+I am teaching statistics to Students in Physical Activity. They do not 
+care that much about the math formula, they are focused... well, they 
+are not that much focused, but the few that are focused want to know how 
+to do the stats. One of the main problem with this kind of student 
+(student that do not know computing at all) are the "R inconsistency" : 
+since there is "as.numeric" and "as.factor", they want to use 
+"as.ordered(variable,levels=c(...))". But it does not work that way... 
+Or sometime, we should use "x,y", sometime "x~y"... quantile works for 
+numeric, but not for ordered (whereas I teach them that quartiles are 
+computable for ordered variables...)
+
+It is very hard to deal with all the "rules but many exception". So I 
+started to write a package, some kind of "simplified R" in which all the 
+syntax will be simplified. But it takes time...
+
+Christophe
+
+> My teaching situation is a bit different from the others who have responded so far.  I do teach an occasional class at the university, but my main job is with a group of hospitals and doctors doing their statistics.  As part of that I teach some classes within the hospital system to doctors/nurses/whoever.  These tend to be very different students from the undergrads at the university (anyone else ever had a student use the excuse "I was performing surgery" for missing class?).
+>
+> These classes are less focused on how to do the stats (they will have me do them for them), but more on the concepts so that they can understand the literature that they read, work with me better in designing studies, and do better at writing/presenting the results.
+>
+> The university where I teach occasionally uses some web based stats program for the intro class (even simpler than minitab in what it can do).  I keep trying to talk them into using R (through the Excel interface or RCmdr), but so far have made little progress.
+>
+> In both situations I am not teaching the students how to use R, but I still use it to demonstrate various concepts.  I mostly use simple examples (plots, quick numbers) or those from the TeachingDemos package (that is what it was written for (disclosure of possible conflict of interest in promoting the package: I believe that the package author/maintainer raids my fridge more often than he should)).  Even though the students are not learning R itself, they appreciate the concepts illustrated.  The mainly GUI based illustrations could be written in any language (but using R means that I can customize them and more advanced students can look at the code themselves and learn more).
+>
+> The R-based code usually does not phase the students even though they have not leaned R themselves yet.  Those that do not understand it just look at the results, but many do understand the main ideas.  For example, at the university, the standard course materials use the 1970 draft lottery as an example for showing scatterplots, correlation, relationships and other concepts.  As a bit of a teaser there is a slide that asks if the relationship could be due to chance (this is before we get into the inference part of the course).  We don't come back and answer that teaser until the last week of class (when we have done hypothesis testing an regression).  But I like to show the students a simple simulation at the time of the teaser with simple code such as:
+>
+>   
+>> out <- replicate(10000, cor( sample(1:366), 1:366 ) )
+>> hist(out)
+>> sum( abs(out) > 0.18 )
+>>     
+> [1] 5
+>   
+>> sum( abs(out) > 0.1 )
+>>     
+> [1] 533
+>   
+>> quantile( out, c(0.025, 0.975) )
+>>     
+>       2.5%      97.5% 
+> -0.1021715  0.1003527
+>
+> It takes less than a minute to explain that 1:366 is the numbers from 1 to 366 and that the sample function randomizes the order.  The replicate function and the rest of the code is fairly self explanatory even for people who don't know any programming, but this example clearly shows that the amount of correlation in the 1970 draft lottery was unlikely due to random chance as well as what values we would expect to see by chance.  Some of the students will stay after class and ask about R, I explain that it is not part of the official class, but that if they are interested here is the website and additional info ...
+>
+> So, I think that R is a great tool for teaching statistical concepts even when R is not the statistical package being used for the course itself.
+>
+>
+>
+
+
+
+From hayden at mv.mv.com  Thu Jul  2 23:27:51 2009
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Thu, 2 Jul 2009 17:27:51 -0400 (EDT)
+Subject: [R-sig-teaching] purpose of list
+Message-ID: <20090702212751.1653.qmail@mv.mv.com>
+
+
+Right now I am trying to remember how to get a scatterplot with
+boxplots of x and y separately in the margin.  I think I need one of
+the packages but I don't know which.
+
+The above is a real call for help but also an example of the kind of
+thing that is hard in R.  In the summer of 2007 I created a web page
+for AP Statistics teachers (see sig file below).  There were lots of
+resources out there, but it was hard for teachers to find them when
+they needed them.  So I tried to organize them in the order in which
+the topics might come up in the course.  It might be nice to have such
+a page of R resources that told you, for example, of some R tools for
+teaching scatterplots.  (Actually, I was teaching transformations, and
+wanted the plot described above as a tool for deciding which variable
+to transform.)
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+
+ http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+	    
+  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)
+  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      
+  email  bob statland.org  (add your own "@" and save me some spam)
+
+
+
+From ramos.grad.student at gmail.com  Fri Jul  3 00:07:33 2009
+From: ramos.grad.student at gmail.com (Antonio P. Ramos)
+Date: Thu, 2 Jul 2009 15:07:33 -0700
+Subject: [R-sig-teaching] purpose of list
+In-Reply-To: <20090702212751.1653.qmail@mv.mv.com>
+References: <20090702212751.1653.qmail@mv.mv.com>
+Message-ID: <191577b80907021507j63e0d4b1x32da985e261e582e@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090702/05cd88a0/attachment.pl>
+
+From landronimirc at gmail.com  Fri Jul  3 02:26:40 2009
+From: landronimirc at gmail.com (Liviu Andronic)
+Date: Fri, 3 Jul 2009 02:26:40 +0200
+Subject: [R-sig-teaching] purpose of list
+In-Reply-To: <191577b80907021507j63e0d4b1x32da985e261e582e@mail.gmail.com>
+References: <20090702212751.1653.qmail@mv.mv.com>
+	<191577b80907021507j63e0d4b1x32da985e261e582e@mail.gmail.com>
+Message-ID: <68b1e2610907021726t54e75ae5v42af41e02d9e9495@mail.gmail.com>
+
+On Fri, Jul 3, 2009 at 12:07 AM, Antonio P.
+Ramos<ramos.grad.student at gmail.com> wrote:
+> On Thu, Jul 2, 2009 at 2:27 PM, Robert W. Hayden <hayden at mv.mv.com> wrote:
+>> Right now I am trying to remember how to get a scatterplot with
+>> boxplots of x and y separately in the margin. ?I think I need one of
+>> the packages but I don't know which.
+>>
+> car library by John Fox has a function that does that: I guess is
+> scatterplot() or something like that
+>
+Easiest to find it (in my understanding) is to load Rcmdr, load some dummy data
+> data(Angell, package="car") ,
+
+and then choose "Graph > Scatterplot" which will issue smth similar
+> scatterplot(mobility~hetero, reg.line=lm, smooth=TRUE, labels=FALSE,
++  boxplots='xy', span=0.5, data=Angell) ,
+
+which I suspect would do what you need.
+Liviu
+
+
+
+From aaboueissa at usm.maine.edu  Mon Jul 13 18:28:14 2009
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Mon, 13 Jul 2009 12:28:14 -0400
+Subject: [R-sig-teaching] X-Y charts with gridlines in R
+Message-ID: <4A5B285E.01BB.00A6.1@usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090713/2d9e20b8/attachment.pl>
+
+From aaboueissa at usm.maine.edu  Tue Jul 14 00:55:03 2009
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Mon, 13 Jul 2009 18:55:03 -0400
+Subject: [R-sig-teaching] X-Y charts with gridlines in R
+In-Reply-To: <644e1f320907131540g53af39feq8e43f62e0aab682b@mail.gmail.com>
+References: <4A5B285E.01BB.00A6.1@usm.maine.edu>
+	<644e1f320907131540g53af39feq8e43f62e0aab682b@mail.gmail.com>
+Message-ID: <4A5B8306.01BB.00A6.1@usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090713/c35a37a4/attachment.pl>
+
+From lobry at biomserv.univ-lyon1.fr  Tue Jul 14 14:03:39 2009
+From: lobry at biomserv.univ-lyon1.fr (Jean lobry)
+Date: Tue, 14 Jul 2009 14:03:39 +0200
+Subject: [R-sig-teaching] X-Y charts with gridlines in R
+In-Reply-To: <mailman.5.1247565603.18918.r-sig-teaching@r-project.org>
+References: <mailman.5.1247565603.18918.r-sig-teaching@r-project.org>
+Message-ID: <p06002017c68223f2e36e@[192.168.1.11]>
+
+>Could you please help me out how to get such graphs in R.
+
+Try:
+
+par(mar = rep(1.5, 4))
+plot(-7:7, -7:7, type = "n", xaxt = "n", yaxs = "i", xaxs = "i", yaxt = "n",
+bty = "n", xlab = "", ylab = "")
+segments(-7,-6:6,+7,-6:6, col = "orange", lty = 2)
+segments(-6:6,-7,-6:6,+7, col = "orange", lty = 2)
+segments(-7,0,7,0)
+segments(0,-7,0,7)
+text(7, 0, "x", pos = 4, xpd = NA)
+text(0, 7, "y", pos = 3, xpd = NA)
+abline(c(0,1.5), lwd = 3, col = "darkblue")
+
+and:
+
+par(mar = rep(2, 4))
+plot(-7:7, -7:7, type = "n", xaxt = "n", yaxs = "i", xaxs = "i", yaxt 
+= "n", xlab = "", ylab = "")
+segments(-7,-6:6,+7,-6:6, col = "orange", lty = 2)
+segments(-6:6,-7,-6:6,+7, col = "orange", lty = 2)
+segments(-7,0,7,0)
+segments(0,-7,0,7)
+text(7, 0, "x", pos = 4, xpd = NA)
+text(0, 7, "y", pos = 3, xpd = NA)
+abline(c(2, -3), lwd = 3, lty = 3)
+axis(1, line = -1, lwd = 0)
+axis(2, las = 1, line = -1, xaxt = "n", lwd = 0)
+for(x in c(-7,7)){
+   segments(x, seq(-7,7,by=0.5), ifelse(x>0, x-0.1, x+0.1), seq(-7,7,by=0.5))
+   segments(x, seq(-6,6,by=2),ifelse(x>0, x-0.2, x+0.2), seq(-6,6,by=2))
+}
+for(y in c(-7,7)){
+   segments(seq(-7,7,by=0.5), y, seq(-7,7,by=0.5), ifelse(y>0, y-0.1, y+0.1))
+   segments(seq(-6,6,by=2), y, seq(-6,6,by=2), ifelse(y>0, y-0.2, y+0.2))
+}
+polygon(c(4, -2, 10, 10), c(-3*4+2, -3*-2+2, 10, -10),
+col = rgb(0,0,1,0.2), border = grey(0.8))
+abline(c(2, -3), lwd = 3, lty = 3)
+text(2,3, expression(y > 2-3*x), cex = 2)
+
+Best,
+
+Jean
+
+-- 
+Jean R. Lobry            (lobry at biomserv.univ-lyon1.fr)
+Laboratoire BBE-CNRS-UMR-5558, Univ. C. Bernard - LYON I,
+43 Bd 11/11/1918, F-69622 VILLEURBANNE CEDEX, FRANCE
+allo  : +33 472 43 27 56     fax    : +33 472 43 13 88
+http://pbil.univ-lyon1.fr/members/lobry/
+
+
+
+From workshop at inseed.org  Thu Jul 30 09:13:42 2009
+From: workshop at inseed.org (INSEED workshops)
+Date: Thu, 30 Jul 2009 10:13:42 +0300
+Subject: [R-sig-teaching] Workshop on Statistical methods in Epidemiology -
+	November 2009
+Message-ID: <4A714826.1010409@inseed.org>
+
+
+INSEED is happy to announce an international workshop with three
+modules, viz.
+
+* 16-18 November, 2009: Statistical methods in Epidemiology
+* 19-21 November, 2009: Sample size consideration in Epidemiology
+* 22-24 November, 2009: Longitudinal data analysis
+
+The course aims to give hands-on experience in analysing epidemiologic
+data sets, and model building, using R. The details of the workshop are
+available at http://www.inseed.org/workshops/stat-epi09.html
+
+Bijoy Joseph
+Course coordinator
+_______________________________________________________
+
+Indic Society for Education and Development (INSEED),
+1, Swami Enterprises Complex,
+Tigrania road, Tapovan Bridge,
+Nashik - 422 011, Maharashtra, INDIA
+
+Tel: +91-253-2503969
+http://www.inseed.org/
+
+
+
+From ifellows at ucsd.edu  Mon Aug  3 20:21:23 2009
+From: ifellows at ucsd.edu (Ian Fellows)
+Date: Mon, 3 Aug 2009 11:21:23 -0700
+Subject: [R-sig-teaching] FW: Deducer 0.1 Released
+Message-ID: <508E815F27CD4EF5B7D61A82AB78AD74@gpbdmx>
+
+Hi All,
+
+   I am seeking comments, suggestions, bugs, and users for a data analysis
+GUI that has just been released to CRAN. One of the first areas that I think
+that this GUI could be of use is in the classroom, so your comments would be
+very valuable to me. An online manual is available (though under
+construction) here:
+
+http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual
+
+   I'd appreciate any feedback or bugs. I'm particularly interested in
+experiences using it from within non-JGR GUI's, and under Linux. If any of
+you teach introductory/intermediate statistics, I'd like to know how you
+would feel about using it in the classroom. 
+
+TIA,
+Ian
+
+
+p.s. Installation instructions: 
+install.packages("Deducer",,"http://cran.r-project.org")
+
+
+
+
+---------------------------------------------------------------------------
+
+
+Deducer 0.1 has been released to CRAN
+
+Deducer is designed to be a free, easy to use, alternative to proprietary
+software such as SPSS, JMP, and Minitab. It has a menu system to do common
+data manipulation and data analysis tasks, and an excel-like spreadsheet in
+which to view and edit data frames. The goal of the project is to two fold. 
+
+	1. Provide an intuitive interface so that non-technical users 
+	   can learn and perform analyses without programming getting 
+	   in their way. 
+	2. Increase the efficiency of expert R users when performing 
+         common tasks by replacing hundreds of keystrokes with a few 
+         mouse clicks. Also, as much as possible the GUI should not 
+         get in their way if they just want to do some programming. 
+
+Deducer is integrated into the Windows RGui, and the cross-platform Java
+console JGR, and is also usable and accessible from the command line.
+Screen shots and examples can be viewed in the online wiki manual:
+
+http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual
+
+Comments and questions are more than welcome. A discussion group has been
+created for any questions or recommendations.
+
+http://groups.google.com/group/deducer
+
+Deducer Features:
+
+Data manipulation:
+	1. Factor editor
+	2. Variable recoding
+	3. data sorting
+	4. data frame merging
+	5. transposing a data frame
+	6. subseting
+
+Analysis:
+	1. Frequencies
+	2. Descriptives
+	3. Contingency tables
+		a. Nicely formatted tables with optional
+			i. Percentages
+			ii. Expected counts
+			iii. Residuals
+		b. Statistical tests
+			i. chi-squared 
+			ii. likelihood ratio
+			iii. fisher's exact
+			iv. mantel haenszel
+			v. kendall's tau
+			vi. spearman's rho
+			vii. kruskal-wallis
+			viii. mid-p values for all exact/monte carlo tests
+	4. One sample tests
+		a. T-test
+		b. Shapiro-wilk
+		c. Histogram/box-plot summaries
+	5. Two sample tests
+		a. T-test (student and welch)
+		b. Permutation test
+		c. Wilcoxon
+		d. Brunner-munzel
+		e. Kolmogorov-smirnov
+		f. Jitter/box-plot group comparison
+	6. K-sample tests
+		a. Anova (usual and welch)
+		b. Kruskal-wallis
+		c. Jitter/boxplot comparison
+	7. Correlation
+		a. Nicely formatted correlation matrices
+		b. Pearson's
+		c. Kendall's
+		d. Spearman's
+		e. Scatterplot paneled array
+		f. Circle plot
+		g. Full correlation matrix plot
+        8.Generalized Linear Models
+		a. Model preview
+		b. Intuitive model builder
+		c. diagnostic plots 
+		d. Component residual and added variable plots
+		e. Anova (type II and III implementing LR, Wald and F tests)
+		f. Parameter summary tables and parameter correlations
+		g. Influence and colinearity diagnostics
+		h. Post-hoc tests and confidence intervals 
+		   with (or without) adjustments for multiple testing.
+		i. Custom linear hypothesis tests
+		j. Effect mean summaries (with confidence intervals), and
+plots
+		k. Exports: Residuals, Standardized residuals, Studentized
+ 		   residuals, Predicted Values (linear and link), Cooks 
+		   distance, DFBETA, DFFITS, hat values, and Cov Ratio
+		l. Observation weights and subseting
+	9. Logistic Regression
+		a. All GLM features
+		b. ROC Plot
+	10. Linear Model
+		a. All GLM features
+       	b. Heteroskedastic robust tests
+
+
+
+From gkerns at ysu.edu  Fri Aug  7 14:40:11 2009
+From: gkerns at ysu.edu (G. Jay Kerns)
+Date: Fri, 7 Aug 2009 08:40:11 -0400
+Subject: [R-sig-teaching] FW: Deducer 0.1 Released
+In-Reply-To: <508E815F27CD4EF5B7D61A82AB78AD74@gpbdmx>
+References: <508E815F27CD4EF5B7D61A82AB78AD74@gpbdmx>
+Message-ID: <a695148b0908070540j3c850991kd4c43622b2ae6224@mail.gmail.com>
+
+Hello,
+
+I tried Deducer earlier in the week (on Ubuntu Linux) and encountered
+some hiccups, but I suspected that it had something to do with the
+idiosyncrasies of my machine rather than the Deducer package proper.
+So last night I did a *clean* install of Ubuntu 9.04 and all of my
+other software.  Today, everything runs perfectly, without a hitch,
+first time.
+
+Some things I am doing which may be relevant (or, not):
+
+1) using the latest version of R (session info below), installed from
+CRAN according to the Ubuntu README
+http://cran.r-project.org/bin/linux/ubuntu/
+
+2) only using package binaries from cran2deb, namely, r-cran-deducer,
+r-cran-jgr, etc; did not build *anything* from scratch
+
+3) am using sun-java-6, as opposed to some of the other Java
+implementations (iced-tea, etc)
+
+4) *must* do sudo R CMD javareconf
+
+
+Furthermore, not only is JGR/Deducer working fine, but also rgl works
+too (something that has caused me trouble in the past). Note, however,
+that this does not address the 100% CPU issue with JGR reported
+elsewhere earlier.
+
+I have tried Deducer without JGR, and everything seems to be operating
+according to plan.  The JGR console isn't there (obviously), but there
+are command line selections to navigate through the menus, and they
+seem to be functioning properly.  It is a little bit strange to use
+the command line menus, though, because once you've made a selection
+in a submenu, you can't go back one step if you change your mind; you
+can only enter 0 to exit deducer() completely and start over from the
+beginning.  The JGR console is much more convenient with its GUI and
+'cancel' options.
+
+In fact, JGR is already loaded as a dependency of Deducer... it would
+appear to be easier overall for a person to just run JGR() at the
+beginning to operate Deducer through the JGR console and sidestep the
+command line entirely.  There are apparently other reasons why using
+command line Deducer is desirable, from other discussions that I have
+not read.
+
+
+The other question was whether Deducer would be a good thing for
+introductory statistics, and in my opinion the answer is "yes".  The
+layout of the menus seems reminiscent of something like SPSS, and in
+particular, many of the plots are integrated into the "Analysis" menu
+items, rather than having a top menu of their own as in Rcmdr.  There
+are advantages and disadvantages to both approaches.
+
+I really like the "Data Viewer".  This is great.  It makes it much
+easier to handle factors, factor levels, ordered factors, and
+contrasts.
+
+The main goal in my view is to get the students started, and I think
+Deducer would accomplish that goal very well.
+
+Cheers,
+Jay
+
+
+
+
+
+sessionInfo()
+R version 2.9.1 (2009-06-26)
+x86_64-pc-linux-gnu
+
+locale:
+LC_CTYPE=en_US.UTF-8;LC_NUMERIC=C;LC_TIME=en_US.UTF-8;LC_COLLATE=en_US.UTF-8;LC_MONETARY=C;LC_MESSAGES=en_US.UTF-8;LC_PAPER=en_US.UTF-8;LC_NAME=C;LC_ADDRESS=C;LC_TELEPHONE=C;LC_MEASUREMENT=en_US.UTF-8;LC_IDENTIFICATION=C
+
+attached base packages:
+ [1] stats4    splines   grid      stats     graphics  grDevices utils
+ [8] datasets  methods   base
+
+other attached packages:
+ [1] Deducer_0.1-0   lawstat_2.3     VGAM_0.7-9      foreign_0.8-36
+ [5] effects_2.0-3   nnet_7.2-47     MASS_7.2-47     lattice_0.17-25
+ [9] multcomp_1.1-1  survival_2.35-4 mvtnorm_0.9-7   car_1.2-14
+[13] JGR_1.6-7       iplots_1.1-3    ggplot2_0.8.3   reshape_0.8.3
+[17] plyr_0.1.9      proto_0.3-8     JavaGD_0.5-2    rJava_0.6-3
+
+loaded via a namespace (and not attached):
+[1] tools_2.9.1
+>
+
+
+
+
+
+-- 
+***************************************************
+G. Jay Kerns, Ph.D.
+Associate Professor
+Department of Mathematics & Statistics
+Youngstown State University
+Youngstown, OH 44555-0002 USA
+Office: 1035 Cushwa Hall
+Phone: (330) 941-3310 Office (voice mail)
+-3302 Department
+-3170 FAX
+VoIP: gjkerns at ekiga.net
+E-mail: gkerns at ysu.edu
+http://www.cc.ysu.edu/~gjkerns/
+
+
+
+From nordicgnome at gmail.com  Fri Aug  7 19:57:07 2009
+From: nordicgnome at gmail.com (Jan Vandermeer)
+Date: Fri, 7 Aug 2009 13:57:07 -0400
+Subject: [R-sig-teaching] FW: Deducer 0.1 Released
+In-Reply-To: <508E815F27CD4EF5B7D61A82AB78AD74@gpbdmx>
+References: <AcoUXv+v/zyGlH+LRdy5BFwn1OKxIAAB090g>
+	<508E815F27CD4EF5B7D61A82AB78AD74@gpbdmx>
+Message-ID: <e64efa440908071057g6114ae0fofca1d8771790ac@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090807/6c7fa4a1/attachment.pl>
+
+From ifellows at ucsd.edu  Fri Aug  7 20:21:32 2009
+From: ifellows at ucsd.edu (Ian Fellows)
+Date: Fri, 7 Aug 2009 11:21:32 -0700
+Subject: [R-sig-teaching] FW: Deducer 0.1 Released
+In-Reply-To: <e64efa440908071057g6114ae0fofca1d8771790ac@mail.gmail.com>
+Message-ID: <A7D126D5B50C46D3934ECCB3E973AB2D@gpbdmx>
+
+Hi Jan,
+
+It looks like you have the unstable version of JGR installed. you will
+need version 1.6-7 available on CRAN. simply run
+
+install.packages("JGR")
+
+
+
+Ian
+
+________________________________________
+From: Jan Vandermeer [mailto:nordicgnome at gmail.com] 
+Sent: Friday, August 07, 2009 10:57 AM
+To: Fellows, Ian
+Cc: r-sig-teaching at r-project.org; deducer at googlegroups.com
+Subject: Re: [R-sig-teaching] FW: Deducer 0.1 Released
+
+Hi,
+
+I tried to install Deducer on an Gentoo Linux AMD64 and received the
+following error messages:
+install.packages("Deducer",,"http://cran.r-project.org")
+trying URL 'http://cran.r-project.org/src/contrib/Deducer_0.1-0.tar.gz'
+Content type 'application/x-gzip' length 2123646 bytes (2.0 Mb)
+opened URL
+==================================================
+downloaded 2.0 Mb
+
+* Installing *source* package 'Deducer' ...
+** R
+** inst
+** preparing package for lazy loading
+Loading required package: proto
+Loading required package: grid
+Loading required package: reshape
+Loading required package: plyr
+
+Attaching package: 'ggplot2'
+
+
+?? ? ? ?The following object(s) are masked from package:grid :
+
+?? ? ? ? nullGrob
+
+Error : package 'JGR' 1.7-0 was found, but < 1.7 is required by 'Deducer'
+ERROR: lazy loading failed for package 'Deducer'
+* Removing '/usr/lib64/R/library/Deducer'
+
+The downloaded packages are in
+?? ? ? ?'/tmp/RtmpWnRZ0y/downloaded_packages'
+Updating HTML index of packages in '.Library'
+Warning message:
+In install.packages("Deducer", , "http://cran.r-project.org") :
+??installation of package 'Deducer' had non-zero exit status
+
+Jan Vandermeer
+
+
+On Mon, Aug 3, 2009 at 2:21 PM, Ian Fellows <ifellows at ucsd.edu> wrote:
+Hi All,
+
+? I am seeking comments, suggestions, bugs, and users for a data analysis
+GUI that has just been released to CRAN. One of the first areas that I think
+that this GUI could be of use is in the classroom, so your comments would be
+very valuable to me. An online manual is available (though under
+construction) here:
+
+http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual
+
+? I'd appreciate any feedback or bugs. I'm particularly interested in
+experiences using it from within non-JGR GUI's, and under Linux. If any of
+you teach introductory/intermediate statistics, I'd like to know how you
+would feel about using it in the classroom.
+
+TIA,
+Ian
+
+
+p.s. Installation instructions:
+install.packages("Deducer",,"http://cran.r-project.org")
+
+
+
+
+---------------------------------------------------------------------------
+
+
+Deducer 0.1 has been released to CRAN
+
+Deducer is designed to be a free, easy to use, alternative to proprietary
+software such as SPSS, JMP, and Minitab. It has a menu system to do common
+data manipulation and data analysis tasks, and an excel-like spreadsheet in
+which to view and edit data frames. The goal of the project is to two fold.
+
+? ? ? ?1. Provide an intuitive interface so that non-technical users
+? ? ? ? ? can learn and perform analyses without programming getting
+? ? ? ? ? in their way.
+? ? ? ?2. Increase the efficiency of expert R users when performing
+? ? ? ? common tasks by replacing hundreds of keystrokes with a few
+? ? ? ? mouse clicks. Also, as much as possible the GUI should not
+? ? ? ? get in their way if they just want to do some programming.
+
+Deducer is integrated into the Windows RGui, and the cross-platform Java
+console JGR, and is also usable and accessible from the command line.
+Screen shots and examples can be viewed in the online wiki manual:
+
+http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual
+
+Comments and questions are more than welcome. A discussion group has been
+created for any questions or recommendations.
+
+http://groups.google.com/group/deducer
+
+Deducer Features:
+
+Data manipulation:
+? ? ? ?1. Factor editor
+? ? ? ?2. Variable recoding
+? ? ? ?3. data sorting
+? ? ? ?4. data frame merging
+? ? ? ?5. transposing a data frame
+? ? ? ?6. subseting
+
+Analysis:
+? ? ? ?1. Frequencies
+? ? ? ?2. Descriptives
+? ? ? ?3. Contingency tables
+? ? ? ? ? ? ? ?a. Nicely formatted tables with optional
+? ? ? ? ? ? ? ? ? ? ? ?i. Percentages
+? ? ? ? ? ? ? ? ? ? ? ?ii. Expected counts
+? ? ? ? ? ? ? ? ? ? ? ?iii. Residuals
+? ? ? ? ? ? ? ?b. Statistical tests
+? ? ? ? ? ? ? ? ? ? ? ?i. chi-squared
+? ? ? ? ? ? ? ? ? ? ? ?ii. likelihood ratio
+? ? ? ? ? ? ? ? ? ? ? ?iii. fisher's exact
+? ? ? ? ? ? ? ? ? ? ? ?iv. mantel haenszel
+? ? ? ? ? ? ? ? ? ? ? ?v. kendall's tau
+? ? ? ? ? ? ? ? ? ? ? ?vi. spearman's rho
+? ? ? ? ? ? ? ? ? ? ? ?vii. kruskal-wallis
+? ? ? ? ? ? ? ? ? ? ? ?viii. mid-p values for all exact/monte carlo tests
+? ? ? ?4. One sample tests
+? ? ? ? ? ? ? ?a. T-test
+? ? ? ? ? ? ? ?b. Shapiro-wilk
+? ? ? ? ? ? ? ?c. Histogram/box-plot summaries
+? ? ? ?5. Two sample tests
+? ? ? ? ? ? ? ?a. T-test (student and welch)
+? ? ? ? ? ? ? ?b. Permutation test
+? ? ? ? ? ? ? ?c. Wilcoxon
+? ? ? ? ? ? ? ?d. Brunner-munzel
+? ? ? ? ? ? ? ?e. Kolmogorov-smirnov
+? ? ? ? ? ? ? ?f. Jitter/box-plot group comparison
+? ? ? ?6. K-sample tests
+? ? ? ? ? ? ? ?a. Anova (usual and welch)
+? ? ? ? ? ? ? ?b. Kruskal-wallis
+? ? ? ? ? ? ? ?c. Jitter/boxplot comparison
+? ? ? ?7. Correlation
+? ? ? ? ? ? ? ?a. Nicely formatted correlation matrices
+? ? ? ? ? ? ? ?b. Pearson's
+? ? ? ? ? ? ? ?c. Kendall's
+? ? ? ? ? ? ? ?d. Spearman's
+? ? ? ? ? ? ? ?e. Scatterplot paneled array
+? ? ? ? ? ? ? ?f. Circle plot
+? ? ? ? ? ? ? ?g. Full correlation matrix plot
+? ? ? ?8.Generalized Linear Models
+? ? ? ? ? ? ? ?a. Model preview
+? ? ? ? ? ? ? ?b. Intuitive model builder
+? ? ? ? ? ? ? ?c. diagnostic plots
+? ? ? ? ? ? ? ?d. Component residual and added variable plots
+? ? ? ? ? ? ? ?e. Anova (type II and III implementing LR, Wald and F tests)
+? ? ? ? ? ? ? ?f. Parameter summary tables and parameter correlations
+? ? ? ? ? ? ? ?g. Influence and colinearity diagnostics
+? ? ? ? ? ? ? ?h. Post-hoc tests and confidence intervals
+? ? ? ? ? ? ? ? ? with (or without) adjustments for multiple testing.
+? ? ? ? ? ? ? ?i. Custom linear hypothesis tests
+? ? ? ? ? ? ? ?j. Effect mean summaries (with confidence intervals), and
+plots
+? ? ? ? ? ? ? ?k. Exports: Residuals, Standardized residuals, Studentized
+? ? ? ? ? ? ? ? ? residuals, Predicted Values (linear and link), Cooks
+? ? ? ? ? ? ? ? ? distance, DFBETA, DFFITS, hat values, and Cov Ratio
+? ? ? ? ? ? ? ?l. Observation weights and subseting
+? ? ? ?9. Logistic Regression
+? ? ? ? ? ? ? ?a. All GLM features
+? ? ? ? ? ? ? ?b. ROC Plot
+? ? ? ?10. Linear Model
+? ? ? ? ? ? ? ?a. All GLM features
+? ? ? ?b. Heteroskedastic robust tests
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+From mdw at purdue.edu  Thu Aug 20 10:55:27 2009
+From: mdw at purdue.edu (Mark Daniel Ward)
+Date: Thu, 20 Aug 2009 04:55:27 -0400
+Subject: [R-sig-teaching] cartograms in R
+Message-ID: <4A8D0F7F.5060300@purdue.edu>
+
+I posted a question about cartograms in R on the R-sig-Geo list 10 days 
+ago and didn't get any responses....  but it is also relevant to 
+teaching with R, so I'll post it here now.
+
+I installed libfftw3, and also Rcartogram from Omegahat, and I am able 
+to run
+Duncan's example successfully:
+
+http://www.omegahat.org/Rcartogram/demo/synthetic.R
+
+In fact, the example runs surprisingly fast, even on the humble Mac G4 I 
+have at
+home.  Very cool!
+
+So now let's reach for the stars.  I would like to be able to assign a 
+project
+for my students to make some cartograms in R.  Has anyone tried this in
+practice?  I see that Duncan gave this as a bonus project in fall 2008:
+
+http://eeyore.ucdavis.edu/stat141/Homeworks/hw4.html
+
+My students won't be wizards with R, in fact, they will be first-semester
+students in R, but they are in the Honors program (top 1 percent of Purdue
+students).  I think it is an excellent opportunity to get them making some
+cartograms with R.  What I would like to have are some start-to-finish 
+examples
+to give to the students.  Duncan's synthetic.R example is really cool, 
+but it
+doesn't produce a cartogram, for instance, of the whole USA or the whole 
+globe.
+
+Maybe it sounds crazy, but I would love to have the students be able to make
+some maps of the caliber seen on Worldmapper:
+http://www.worldmapper.org/
+
+Is this feasible?  Crazy?  Hints?  Suggestions?  I always like to have some
+nice, concrete examples to give to the students before starting (rather than
+letting the students jump into water over their heads and sink).
+
+Any advice that you have would be greatly appreciated.
+
+
+
+From aaboueissa at usm.maine.edu  Thu Aug 20 16:15:37 2009
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Thu, 20 Aug 2009 10:15:37 -0400
+Subject: [R-sig-teaching] Standardized canonical discriminant functions
+Message-ID: <4A8D2249020000A600056988@uct5.uct.usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090820/c83d4183/attachment.pl>
+
+From aaboueissa at usm.maine.edu  Thu Aug 20 17:43:39 2009
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Thu, 20 Aug 2009 11:43:39 -0400
+Subject: [R-sig-teaching] Standardized canonical discriminant functions
+Message-ID: <4A8D36EB020000A6000569C6@uct5.uct.usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090820/a1f5a9f1/attachment.pl>
+
+From luna.laurent.ucb at gmail.com  Tue Aug 25 17:42:55 2009
+From: luna.laurent.ucb at gmail.com (Luna Laurent)
+Date: Tue, 25 Aug 2009 08:42:55 -0700
+Subject: [R-sig-teaching] seeking tutor on statistical learning and
+	data-mining
+Message-ID: <213fc0be0908250842u57fa3a68p1ebca92f380fdab1@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090825/eec386ba/attachment.pl>
+
+From luna.laurent.ucb at gmail.com  Mon Aug 31 07:50:08 2009
+From: luna.laurent.ucb at gmail.com (Luna Laurent)
+Date: Sun, 30 Aug 2009 22:50:08 -0700
+Subject: [R-sig-teaching] online classes or online eduction in statistics?
+	esp. time series analysis and cointegration?
+Message-ID: <213fc0be0908302250r5ef94475ic50a25913587972c@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090830/4cdca55b/attachment.pl>
+
+From luna.laurent.ucb at gmail.com  Mon Aug 31 08:13:41 2009
+From: luna.laurent.ucb at gmail.com (Luna Laurent)
+Date: Sun, 30 Aug 2009 23:13:41 -0700
+Subject: [R-sig-teaching] [R] online classes or online eduction in
+	statistics? esp. time series analysis and cointegration?
+In-Reply-To: <0KP8007UC91DYJJ1@vms173017.mailsrvcs.net>
+References: <213fc0be0908302250r5ef94475ic50a25913587972c@mail.gmail.com>
+	<0KP8007UC91DYJJ1@vms173017.mailsrvcs.net>
+Message-ID: <213fc0be0908302313w580d65e5g41281dde416ad346@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090830/3cf04a32/attachment.pl>
+
+From sanketrdeshmukh at gmail.com  Mon Aug 31 13:32:28 2009
+From: sanketrdeshmukh at gmail.com (sanket deshmukh)
+Date: Mon, 31 Aug 2009 17:02:28 +0530
+Subject: [R-sig-teaching] R-sig-teaching Digest, Vol 24, Issue 6
+In-Reply-To: <mailman.7.1251712803.5605.r-sig-teaching@r-project.org>
+References: <mailman.7.1251712803.5605.r-sig-teaching@r-project.org>
+Message-ID: <896718040908310432y36d19fbbmc6829dc66d9e9e53@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090831/d1bdb534/attachment.pl>
+
+From hayden at mv.mv.com  Mon Aug 31 19:53:18 2009
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Mon, 31 Aug 2009 13:53:18 -0400 (EDT)
+Subject: [R-sig-teaching] [R] online classes or online eduction in
+Message-ID: <20090831175318.61444.qmail@mv.mv.com>
+
+Forwarded message:
+> From: Luna Laurent <luna.laurent.ucb at gmail.com>
+> 
+> What's their fee structures?
+
+For the forecasting course
+
+Register Online - $469
+Register Online (academic) - $369 (you must be affiliated with a
+college, university or high school)
+
+Add $50 service fee if you require a prior invoice, or if you need to
+submit a purchase order or voucher, pay by wire transfer or EFT, or
+refund and reprocess a prior payment. Please use this printed
+registration form, for these and other special orders. 
+
+which covers about half of Hanke and Wichern's 9th Edition of Business
+Forecasting. 
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+
+http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+         
+Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)
+North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      
+email  bob statland.org  (add your own "@" and save me some spam)
+
+
+
+From S.J.Eglen at damtp.cam.ac.uk  Tue Sep  1 12:39:35 2009
+From: S.J.Eglen at damtp.cam.ac.uk (Stephen Eglen)
+Date: Tue, 01 Sep 2009 11:39:35 +0100
+Subject: [R-sig-teaching] Article on teaching R
+Message-ID: <31932.1251801575@maps>
+
+I've written a short article on my experiences with teaching R to
+computational biology graduate students:
+
+http://www.ploscompbiol.org/doi/pcbi.1000482
+
+My lecture notes are available as supplementary material, along with the
+beamer/latex sources (from my web page: 
+http://www.damtp.cam.ac.uk/user/sje30/downloads.html)
+
+Stephen
+-- 
+Stephen Eglen, DAMTP, Centre for Mathematical Sciences
+Wilberforce Road, Cambridge CB3 0WA, U.K.
+Tel +44 (0)1223 765 761               S.J.Eglen at damtp.cam.ac.uk
+Fax +44 (0)1223 760 419   http://www.damtp.cam.ac.uk/user/eglen
+
+
+
+From chimingyau at gmail.com  Wed Sep  2 20:52:08 2009
+From: chimingyau at gmail.com (Chi Ming Yau)
+Date: Wed, 2 Sep 2009 11:52:08 -0700
+Subject: [R-sig-teaching] R website for college students (Chi Yau)
+Message-ID: <19BF51D76F8B489E827B60AD18784058@NEUTRINO>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090902/8ff5dd60/attachment.pl>
+
+From john.maindonald at anu.edu.au  Fri Sep 11 08:47:01 2009
+From: john.maindonald at anu.edu.au (John Maindonald)
+Date: Fri, 11 Sep 2009 16:47:01 +1000
+Subject: [R-sig-teaching] R-sig-teaching Digest, Vol 17, Issue 7
+In-Reply-To: <mailman.3.1227438001.10657.r-sig-teaching@r-project.org>
+References: <mailman.3.1227438001.10657.r-sig-teaching@r-project.org>
+Message-ID: <95B5CF39-2F85-4015-82EE-FF9602DB2F2B@anu.edu.au>
+
+I am looking for information on experimentation with the use
+of R in the teaching of statistics and science in schools.  Any
+leads would be very welcome.
+John.
+
+John Maindonald             email: john.maindonald at anu.edu.au
+phone : +61 2 (6125)3473    fax  : +61 2(6125)5549
+Centre for Mathematics & Its Applications, Room 1194,
+John Dedman Mathematical Sciences Building (Building 27)
+Australian National University, Canberra ACT 0200.
+
+
+
+From john.maindonald at anu.edu.au  Sat Sep 19 09:50:16 2009
+From: john.maindonald at anu.edu.au (John Maindonald)
+Date: Sat, 19 Sep 2009 17:50:16 +1000
+Subject: [R-sig-teaching] Use of R in Schools
+Message-ID: <C949C220-9301-4399-91DB-4F90C91A16FE@anu.edu.au>
+
+I am looking for information on experimentation with the use
+of R in the teaching of statistics and science in schools.  Any
+leads would be very welcome.  I am certain that there is such
+experimentation.
+
+I sent this to the list a few days ago with, as I now discover,
+an unfortunate subject line!
+
+John.
+
+John Maindonald             email: john.maindonald at anu.edu.au
+phone : +61 2 (6125)3473    fax  : +61 2(6125)5549
+Centre for Mathematics & Its Applications, Room 1194,
+John Dedman Mathematical Sciences Building (Building 27)
+Australian National University, Canberra ACT 0200.
+
+
+
+From sanketrdeshmukh at gmail.com  Sat Sep 19 14:54:04 2009
+From: sanketrdeshmukh at gmail.com (sanket deshmukh)
+Date: Sat, 19 Sep 2009 18:24:04 +0530
+Subject: [R-sig-teaching] R-sig-teaching Digest, Vol 25, Issue 5
+In-Reply-To: <mailman.9.1253354403.17640.r-sig-teaching@r-project.org>
+References: <mailman.9.1253354403.17640.r-sig-teaching@r-project.org>
+Message-ID: <896718040909190554s62151c76ge3411f100697de62@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090919/c4bb1407/attachment.pl>
+
+From lobry at biomserv.univ-lyon1.fr  Sat Sep 19 20:51:56 2009
+From: lobry at biomserv.univ-lyon1.fr (Jean lobry)
+Date: Sat, 19 Sep 2009 20:51:56 +0200
+Subject: [R-sig-teaching] Use of R in Schools (John Maindonald)
+In-Reply-To: <mailman.9.1253354403.17640.r-sig-teaching@r-project.org>
+References: <mailman.9.1253354403.17640.r-sig-teaching@r-project.org>
+Message-ID: <p06002020c6dad71db12b@[192.168.1.18]>
+
+John,
+
+>I am looking for information on experimentation with the use
+>of R in the teaching of statistics and science in schools.  Any
+>leads would be very welcome.  I am certain that there is such
+>experimentation.
+
+What do you mean exactly by "schools", this is a rather polysemic
+word all around the world. How old are the students in the schools
+you are interested in? I'm asking just to make your question more
+clear.
+
+Best,
+
+Jean
+
+-- 
+Jean R. Lobry            (lobry at biomserv.univ-lyon1.fr)
+Laboratoire BBE-CNRS-UMR-5558, Univ. C. Bernard - LYON I,
+43 Bd 11/11/1918, F-69622 VILLEURBANNE CEDEX, FRANCE
+allo  : +33 472 43 27 56     fax    : +33 472 43 13 88
+http://pbil.univ-lyon1.fr/members/lobry/
+
+
+
+From john.maindonald at anu.edu.au  Sun Sep 20 12:43:17 2009
+From: john.maindonald at anu.edu.au (John Maindonald)
+Date: Sun, 20 Sep 2009 20:43:17 +1000
+Subject: [R-sig-teaching] R-sig-teaching Digest, Vol 25, Issue 6
+In-Reply-To: <mailman.5.1253440802.11141.r-sig-teaching@r-project.org>
+References: <mailman.5.1253440802.11141.r-sig-teaching@r-project.org>
+Message-ID: <1B8F956C-9D23-49AC-BE39-11E9248F580C@anu.edu.au>
+
+By "school", I mean pre-University.  Here in Australia, maybe
+years 11 and 12, perhaps age 10.  Most pupils start at age 5.
+John.
+
+John Maindonald             email: john.maindonald at anu.edu.au
+phone : +61 2 (6125)3473    fax  : +61 2(6125)5549
+Centre for Mathematics & Its Applications, Room 1194,
+John Dedman Mathematical Sciences Building (Building 27)
+Australian National University, Canberra ACT 0200.
+
+
+On 20/09/2009, at 8:00 PM, r-sig-teaching-request at r-project.org wrote:
+
+> Send R-sig-teaching mailing list submissions to
+> 	r-sig-teaching at r-project.org
+>
+> To subscribe or unsubscribe via the World Wide Web, visit
+> 	https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> or, via email, send a message with subject or body 'help' to
+> 	r-sig-teaching-request at r-project.org
+>
+> You can reach the person managing the list at
+> 	r-sig-teaching-owner at r-project.org
+>
+> When replying, please edit your Subject line so it is more specific
+> than "Re: Contents of R-sig-teaching digest..."
+>
+>
+> Today's Topics:
+>
+>  1. Re: R-sig-teaching Digest, Vol 25, Issue 5 (sanket deshmukh)
+>  2. Re: Use of R in Schools (John Maindonald) (Jean lobry)
+>
+>
+> ----------------------------------------------------------------------
+>
+> Message: 1
+> Date: Sat, 19 Sep 2009 18:24:04 +0530
+> From: sanket deshmukh <sanketrdeshmukh at gmail.com>
+> Subject: Re: [R-sig-teaching] R-sig-teaching Digest, Vol 25, Issue 5
+> To: r-sig-teaching at r-project.org
+> Message-ID:
+> 	<896718040909190554s62151c76ge3411f100697de62 at mail.gmail.com>
+> Content-Type: text/plain
+>
+> pls give me a project to do plssssssssssss
+>
+> 	[[alternative HTML version deleted]]
+>
+>
+>
+> ------------------------------
+>
+> Message: 2
+> Date: Sat, 19 Sep 2009 20:51:56 +0200
+> From: Jean lobry <lobry at biomserv.univ-lyon1.fr>
+> Subject: Re: [R-sig-teaching] Use of R in Schools (John Maindonald)
+> To: r-sig-teaching at r-project.org
+> Cc: John Maindonald <john.maindonald at anu.edu.au>
+> Message-ID: <p06002020c6dad71db12b@[192.168.1.18]>
+> Content-Type: text/plain; charset="us-ascii" ; format="flowed"
+>
+> John,
+>
+>> I am looking for information on experimentation with the use
+>> of R in the teaching of statistics and science in schools.  Any
+>> leads would be very welcome.  I am certain that there is such
+>> experimentation.
+>
+> What do you mean exactly by "schools", this is a rather polysemic
+> word all around the world. How old are the students in the schools
+> you are interested in? I'm asking just to make your question more
+> clear.
+>
+> Best,
+>
+> Jean
+>
+> -- 
+> Jean R. Lobry            (lobry at biomserv.univ-lyon1.fr)
+> Laboratoire BBE-CNRS-UMR-5558, Univ. C. Bernard - LYON I,
+> 43 Bd 11/11/1918, F-69622 VILLEURBANNE CEDEX, FRANCE
+> allo  : +33 472 43 27 56     fax    : +33 472 43 13 88
+> http://pbil.univ-lyon1.fr/members/lobry/
+>
+>
+>
+> ------------------------------
+>
+> _______________________________________________
+> R-sig-teaching mailing list
+> R-sig-teaching at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+> End of R-sig-teaching Digest, Vol 25, Issue 6
+> *********************************************
+
+
+
+From lobry at biomserv.univ-lyon1.fr  Tue Sep 22 15:43:47 2009
+From: lobry at biomserv.univ-lyon1.fr (Jean lobry)
+Date: Tue, 22 Sep 2009 15:43:47 +0200
+Subject: [R-sig-teaching] Use of R in Schools (John Maindonald)
+In-Reply-To: <mailman.5.1253527202.27834.r-sig-teaching@r-project.org>
+References: <mailman.5.1253527202.27834.r-sig-teaching@r-project.org>
+Message-ID: <p06002000c6de8494954b@[134.214.233.12]>
+
+>By "school", I mean pre-University.  Here in Australia, maybe
+>years 11 and 12, perhaps age 10.  Most pupils start at age 5.
+>John.
+
+OK, so I'm of no help there. The only pre-University level
+exemple I was aware of in France was for 15-18 years old kids.
+
+Best,
+
+Jean
+-- 
+Jean R. Lobry            (lobry at biomserv.univ-lyon1.fr)
+Laboratoire BBE-CNRS-UMR-5558, Univ. C. Bernard - LYON I,
+43 Bd 11/11/1918, F-69622 VILLEURBANNE CEDEX, FRANCE
+allo  : +33 472 43 27 56     fax    : +33 472 43 13 88
+http://pbil.univ-lyon1.fr/members/lobry/
+
+
+

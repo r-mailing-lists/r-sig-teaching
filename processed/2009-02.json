@@ -1,0 +1,437 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2009-02",
+  "messages": [
+    {
+      "id": "msg-99c7b4f4f6ce",
+      "message_id": "<68b1e2610902010050k63e92abdhcea4f95445951453@mail.gmail.com>",
+      "from_name": "Liviu Andronic",
+      "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
+      "date": "2009-02-01T09:50:39+01:00",
+      "subject": "[R-sig-teaching] issues with importing",
+      "subject_clean": "issues with importing",
+      "in_reply_to": "<20090131221738.95319.qmail@mv.mv.com>",
+      "references": [
+        "<a17f8fd00901311155p7923794dp14dec34724b0f43@mail.gmail.com>",
+        "<20090131221738.95319.qmail@mv.mv.com>"
+      ],
+      "body_plain": "On 1/31/09, Robert W. Hayden <hayden at mv.mv.com> wrote:\n>  where you can look at R-(D)COM Server or\n>\nYes, a good idea is to use RExcel, or a GUI such as Rcmdr.\n\n\n> R Gnumeric which turn the\n>  problem upside down and run R from within a spreadsheet program.\n>\nConcerning Gnumeric, is there anything newer than the quite old\nRGnumeric_0.3-5. I am looking for something in the style of RExcel or\nROOo [1] [2].\nRegards,\nLiviu\n\n[1] http://sunsite.univie.ac.at/rcom/\n[2] http://sunsite.univie.ac.at/rcom/download/\n\n\n-- \nDo you know how to read?\nhttp://www.alienetworks.com/srtest.cfm\nDo you know how to write?\nhttp://garbl.home.comcast.net/~garbl/stylemanual/e.htm#e-mail",
+      "body_snippet": "On 1/31/09, Robert W. Hayden <hayden at mv.mv.com> wrote:\n>  where you can look at R-(D)COM Server or\n>\nYes, a good idea is to use RExcel, or a GUI such as Rcmdr.\n\n\n> R Gnumeric which turn the\n>  prob",
+      "thread_id": "thread-99c7b4f4f6ce",
+      "thread_depth": 0,
+      "month": "2009-02"
+    },
+    {
+      "id": "msg-711d565b1825",
+      "message_id": "<18831.60164.66667.730827@stat.math.ethz.ch>",
+      "from_name": "Martin Maechler",
+      "from_email_hash": "c2c86f22f78a4ecfe6d0e6b4e2be505a3f5beb0470ea88c903688ac536018a98",
+      "date": "2009-02-09T09:36:20+01:00",
+      "subject": "[R-sig-teaching] Who is the list for?",
+      "subject_clean": "Who is the list for?",
+      "in_reply_to": "<20090131224727.1924.qmail@mv.mv.com>",
+      "references": [
+        "<20090131224727.1924.qmail@mv.mv.com>"
+      ],
+      "body_plain": ">>>>> \"RWH\" == Robert W Hayden <hayden at mv.mv.com>\n>>>>>     on Sat, 31 Jan 2009 17:47:27 -0500 (EST) writes:\n\n    RWH> Forwarded message:\n    >> From: Albyn Jones <jones at reed.edu>\n    >> \n    >> You should post basic R questions to the R-help list;\n    >> this list is intended for discussion of the use of R in\n    >> teaching.\n\n    RWH> Albyn, could you tell us more about what is on that\n    RWH> list?\n\n    RWH> Some time ago I raised the possibility of an email list\n    RWH> for those who want to use R in teaching introductory\n    RWH> courses.  The idea was passed on and within a couple\n    RWH> days this list was born.  (I assumed causality, but it\n    RWH> may have been coincidence;-) \n\nboth, I'd say (as the mailing list creator).\n\n    RWH> I would have made the list open to any question from\n    RWH> anyone using R in an introductory course.\n\nWell, I haven't been too active on this list; but in my perception,\nthat hand't been the idea of R-sig-teaching.\nRather it's a list for (potential) *teachers* of R or of\n\"<your-science> using R\".\n\n    RWH> Perhaps there is a problem due to\n    RWH> bimodality in the potential audience.  \n\nyes, if you (and others) want a \"R-newbies questions mailing list\",\nyou should make a case for it ... on R-help (!) ... *the*\nprincipal R list.  But be aware that the issue is brought up\nabout every two years, and after some discussion is buried, once\npeople \"see\" that current situation with R-help (and its\nsomewhat strict posting guidelines, and its gatewaying into\nGmane and Nabble \"forums\") is not easy to improve as long as its\nbased on volunteers running everything.\n\nRegards,\nMartin Maechler, ETH Zurich\n\n    RWH> Some are old hands at R and now want to use it in the classroom.\n    RWH> Others may have never used it before and are now trying\n    RWH> to teach with it.  I am not on the R-help list but\n    RWH> wonder how much of the content there overlaps an\n    RWH> introductory statistics course?  Or how much would be\n    RWH> over the head of a beginner?  (I think most of the R\n    RWH> documentation is well beyond the level of an\n    RWH> introductory course, and pretty overwhelming and\n    RWH> incomprehensible to a beginner, so I am hoping there is\n    RWH> SOME place where beginners can get simple answers to\n    RWH> simple questions without becoming Unix gurus or\n    RWH> programmers first.)\n\n    RWH> For anyone wondering why a non-R-guru such as myself\n    RWH> might be on this list (or have suggested its\n    RWH> creation)...  I teach online in a context where we\n    RWH> cannot buy a site license to provide each student with\n    RWH> software.  They have to either use whatever their\n    RWH> employer provides (if anything), or pay for software\n    RWH> out of their own pocket, normally at full single-copy\n    RWH> prices.  R is attractive because it is free.  It also\n    RWH> makes sense because our introductory courses (at least\n    RWH> originally) only exist to prepare students for more\n    RWH> advanced courses where R is preferred for its power or\n    RWH> programmability.  So, having created the introductory\n    RWH> courses themselves, I then created student manuals for\n    RWH> Minitab (because I already knew it), Data Desk (because\n    RWH> it comes with the textbook), and R (for reasons already\n    RWH> given).  In creating the R materials, I encountered\n    RWH> others trying to get started with R while using it in\n    RWH> an introductory course, and hence this list.\n\n    -------> First-time AP Stats. teacher?  Help is on the way!\n    -------> See\n\n    RWH>  http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n\t    \n    RWH>   Robert W. Hayden in the old library at 212 Main\n    RWH> Street (P. O. Box 450) North Troy, VT 05859 phone (802)\n    RWH> 988-2587 web site http://statland.org/ email bob\n    RWH> statland.org (add your own \"@\" and save me some spam)\n\n    RWH> _______________________________________________\n    RWH> R-sig-teaching at r-project.org mailing list\n    RWH> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": ">>>>> \"RWH\" == Robert W Hayden <hayden at mv.mv.com>\n>>>>>     on Sat, 31 Jan 2009 17:47:27 -0500 (EST) writes:\n\n    RWH> Forwarded message:\n    >> From: Albyn Jones <jones at reed.edu>\n    >> \n    >>",
+      "thread_id": "thread-711d565b1825",
+      "thread_depth": 0,
+      "month": "2009-02"
+    },
+    {
+      "id": "msg-dd0e09ea8971",
+      "message_id": "<20090215022415.92847.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2009-02-14T21:24:15-05:00",
+      "subject": "[R-sig-teaching] installing Rcmdr",
+      "subject_clean": "installing Rcmdr",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Last weekend I visited my sister and her husband and installed R on\ntheir Ubuntu 8.04 machine and tried to add Rcmdr.  I had endless\ntrouble most of which seemed to be because R (or Rcmdr) seemed to want\na Fortran compiler (or a Fortran-to-C translator).  A smaller number\nof error mesages (out of many pages thereof) were removed by\ninstalling what appeared to be a library of Fortran linear algebra\nroutines (lblas?).  Even then Rcmdr complained about missing packages\nwhen I ran it, and though it offered to install them, the installation\nfailed in every case, with no useful error messages.  \n\nI have installed R and Rcmdr many times before to Windows and various\nLinux distributions (it's on this Debian right now)  and never had so\nmuch trouble.  Did I do something wrong?  Is there a problem with R on\nUbuntu?  I have programmed in Fortran so I don't mind adding a\ncompiler and I've taught linear algebra so I don't mind adding linear\nalgebra routines, but there is no way my students would ever figure\nout that was needed.  I also noted that Rcmdr had a MUCH longer list\nof dependencies than I remember.  All of this has me worried about\nusing R in an introductory course for folks who are not computer\nscience majors.  \n\nHas anyone encountered a similar problem?  I used whatever version of\nR is in the Ubuntu repository.  I seem to remember 2.4 though that\nseems a bit old.\n\n------->  First-time AP Stats. teacher?  Help is on the way! See\n\n http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n\t    \n  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)\n  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      \n  email  bob statland.org  (add your own \"@\" and save me some spam)",
+      "body_snippet": "Last weekend I visited my sister and her husband and installed R on\ntheir Ubuntu 8.04 machine and tried to add Rcmdr.  I had endless\ntrouble most of which seemed to be because R (or Rcmdr) seemed to w",
+      "thread_id": "thread-dd0e09ea8971",
+      "thread_depth": 0,
+      "month": "2009-02"
+    },
+    {
+      "id": "msg-2fa169d4933e",
+      "message_id": "<a695148b0902141854r78c33b35vf2d1207ec71f02e7@mail.gmail.com>",
+      "from_name": "G. Jay Kerns",
+      "from_email_hash": "50e93b09ae5eba7f3237d0e4291e3a6b8825a6fb21853bb3678551306330b319",
+      "date": "2009-02-14T21:54:32-05:00",
+      "subject": "[R-sig-teaching] installing Rcmdr",
+      "subject_clean": "installing Rcmdr",
+      "in_reply_to": "<20090215022415.92847.qmail@mv.mv.com>",
+      "references": [
+        "<20090215022415.92847.qmail@mv.mv.com>"
+      ],
+      "body_plain": "Dear Robert,\n\n\nOn Sat, Feb 14, 2009 at 9:24 PM, Robert W. Hayden <hayden at mv.mv.com> wrote:\n>\n> Last weekend I visited my sister and her husband and installed R on\n> their Ubuntu 8.04 machine and tried to add Rcmdr.  I had endless\n> trouble most of which seemed to be because R (or Rcmdr) seemed to want\n> a Fortran compiler (or a Fortran-to-C translator).  A smaller number\n> of error mesages (out of many pages thereof) were removed by\n> installing what appeared to be a library of Fortran linear algebra\n> routines (lblas?).  Even then Rcmdr complained about missing packages\n> when I ran it, and though it offered to install them, the installation\n> failed in every case, with no useful error messages.\n>\n> I have installed R and Rcmdr many times before to Windows and various\n> Linux distributions (it's on this Debian right now)  and never had so\n> much trouble.  Did I do something wrong?  Is there a problem with R on\n> Ubuntu?  I have programmed in Fortran so I don't mind adding a\n> compiler and I've taught linear algebra so I don't mind adding linear\n> algebra routines, but there is no way my students would ever figure\n> out that was needed.  I also noted that Rcmdr had a MUCH longer list\n> of dependencies than I remember.  All of this has me worried about\n> using R in an introductory course for folks who are not computer\n> science majors.\n>\n> Has anyone encountered a similar problem?  I used whatever version of\n> R is in the Ubuntu repository.  I seem to remember 2.4 though that\n> seems a bit old.\n>\n> ------->  First-time AP Stats. teacher?  Help is on the way! See\n>\n>  http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n>\n>  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)\n>  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/\n>  email  bob statland.org  (add your own \"@\" and save me some spam)\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\nI am and have been using Rcmdr on Ubuntu 7.10, 8.04, and currently on\n8.10.  I used 32 bit Ubuntu for 7.10 and 8.04, but on 8.10 I am using\nboth 32 and 64 bit versions. For the record, I have had no problems\nwhatsoever installing Rcmdr.\n\nFirst thought (and you didn't mention): are you sure that you have the\nr-base-dev Ubuntu package installed?  If you do not have that\ninstalled, then you won't be able to build _anything_.\n\nIf you already have r-base-dev....? it is good practice to install the\npackages from the repository with Synaptic (which it sounds like is\nwhat you did), since in those cases, dependencies are marked\nautomatically for installation most of the time.    Another thing that\nyou could try is to right-click on packages in Synaptic - it gives\nother packages \"suggested\" for installation.  In some cases,\ninstalling these extra packages helped me with installation problems\nelsewhere, too.\n\nAnd you could consider contacting John Fox directly.  He's great about\nresponding quickly, thoughtfully, and accurately.\n\nGood luck.\nJay\n\n\n\n\n\n\n\n\n\n***************************************************\nG. Jay Kerns, Ph.D.\nAssociate Professor\nDepartment of Mathematics & Statistics\nYoungstown State University\nYoungstown, OH 44555-0002 USA\nOffice: 1035 Cushwa Hall\nPhone: (330) 941-3310 Office (voice mail)\n-3302 Department\n-3170 FAX\nE-mail: gkerns at ysu.edu\nhttp://www.cc.ysu.edu/~gjkerns/",
+      "body_snippet": "Dear Robert,\n\n\nOn Sat, Feb 14, 2009 at 9:24 PM, Robert W. Hayden <hayden at mv.mv.com> wrote:\n>\n> Last weekend I visited my sister and her husband and installed R on\n> their Ubuntu 8.04 machine and tr",
+      "thread_id": "thread-dd0e09ea8971",
+      "thread_depth": 1,
+      "month": "2009-02"
+    },
+    {
+      "id": "msg-bab59d79e2a0",
+      "message_id": "<f55e7cf50902142011h45090480v1c6ac5b8f2380bf3@mail.gmail.com>",
+      "from_name": "Ista Zahn",
+      "from_email_hash": "098a31f0cc45d6b90198bf3b75e03deed7c570292be352a10b98aeee4bf7012e",
+      "date": "2009-02-14T23:11:45-05:00",
+      "subject": "[R-sig-teaching] installing Rcmdr",
+      "subject_clean": "installing Rcmdr",
+      "in_reply_to": "<20090215022415.92847.qmail@mv.mv.com>",
+      "references": [
+        "<20090215022415.92847.qmail@mv.mv.com>"
+      ],
+      "body_plain": "I've found the version of R in the Ubuntu repository is almost always\nout of date. Here is the process I follow:\n\n1) Add the R repository (see http://cran.r-project.org/bin/linux/ubuntu/).\n2) Install R and the dev package: sudo apt-get install r-base r-base-dev\n3) Install any packages needed to build a particular package. In this\ncase something like sudo apt-get build-dep r-cran-rcmdr (I'm not on my\nubuntu machine at the moment so I'm not sure the package name is\ncorrect).\n4) Start R from the command line as root so I can install packages\nsystem-wide: sudo R\n5) From the R command prompt, install Rcmdr: >\ninstall.packages(\"Rcmdr\", dep=TRUE)\n6) Start Rcmdr and install additional packages when prompted.\n\nI've never had this procedure fail to produce a working installation.\n\nHope it helps,\nIsta\n\n\nOn Sat, Feb 14, 2009 at 9:24 PM, Robert W. Hayden <hayden at mv.mv.com> wrote:\n>\n> Last weekend I visited my sister and her husband and installed R on\n> their Ubuntu 8.04 machine and tried to add Rcmdr.  I had endless\n> trouble most of which seemed to be because R (or Rcmdr) seemed to want\n> a Fortran compiler (or a Fortran-to-C translator).  A smaller number\n> of error mesages (out of many pages thereof) were removed by\n> installing what appeared to be a library of Fortran linear algebra\n> routines (lblas?).  Even then Rcmdr complained about missing packages\n> when I ran it, and though it offered to install them, the installation\n> failed in every case, with no useful error messages.\n>\n> I have installed R and Rcmdr many times before to Windows and various\n> Linux distributions (it's on this Debian right now)  and never had so\n> much trouble.  Did I do something wrong?  Is there a problem with R on\n> Ubuntu?  I have programmed in Fortran so I don't mind adding a\n> compiler and I've taught linear algebra so I don't mind adding linear\n> algebra routines, but there is no way my students would ever figure\n> out that was needed.  I also noted that Rcmdr had a MUCH longer list\n> of dependencies than I remember.  All of this has me worried about\n> using R in an introductory course for folks who are not computer\n> science majors.\n>\n> Has anyone encountered a similar problem?  I used whatever version of\n> R is in the Ubuntu repository.  I seem to remember 2.4 though that\n> seems a bit old.\n>\n> ------->  First-time AP Stats. teacher?  Help is on the way! See\n>\n>  http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n>\n>  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)\n>  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/\n>  email  bob statland.org  (add your own \"@\" and save me some spam)\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_snippet": "I've found the version of R in the Ubuntu repository is almost always\nout of date. Here is the process I follow:\n\n1) Add the R repository (see http://cran.r-project.org/bin/linux/ubuntu/).\n2) Install ",
+      "thread_id": "thread-dd0e09ea8971",
+      "thread_depth": 1,
+      "month": "2009-02"
+    },
+    {
+      "id": "msg-4273695e0872",
+      "message_id": "<001b01c98f7e$58cbc3d0$0a634b70$@ca>",
+      "from_name": "John Fox",
+      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
+      "date": "2009-02-15T10:01:57-05:00",
+      "subject": "[R-sig-teaching] installing Rcmdr",
+      "subject_clean": "installing Rcmdr",
+      "in_reply_to": "<a695148b0902141854r78c33b35vf2d1207ec71f02e7@mail.gmail.com>",
+      "references": [
+        "<20090215022415.92847.qmail@mv.mv.com>",
+        "<a695148b0902141854r78c33b35vf2d1207ec71f02e7@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Jay, Bob, Ista,\n\nI, too, have installed Rcmdr on Ubuntu systems several times with no\nproblems. I suspect that r-base-dev wasn't installed and that Ista's\nprocedure will produce the desired result.\n\nIsta: Do you mind if I add your procedure, slightly edited and with credit,\nto the Rcmdr installation page? Step 6, however, shouldn't be necessary\nafter installing with dep=TRUE, nor, I think, should step 3, since there's\nonly R code in the Rcmdr package.\n\nRegards,\n John\n\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org\n[mailto:r-sig-teaching-bounces at r-\n> project.org] On Behalf Of Ista Zahn\n> Sent: February-14-09 11:12 PM\n> To: bob at statland.org\n> Cc: R-sig-teaching\n> Subject: Re: [R-sig-teaching] installing Rcmdr\n> \n> I've found the version of R in the Ubuntu repository is almost always\n> out of date. Here is the process I follow:\n> \n> 1) Add the R repository (see http://cran.r-project.org/bin/linux/ubuntu/).\n> 2) Install R and the dev package: sudo apt-get install r-base r-base-dev\n> 3) Install any packages needed to build a particular package. In this\n> case something like sudo apt-get build-dep r-cran-rcmdr (I'm not on my\n> ubuntu machine at the moment so I'm not sure the package name is\n> correct).\n> 4) Start R from the command line as root so I can install packages\n> system-wide: sudo R\n> 5) From the R command prompt, install Rcmdr: >\n> install.packages(\"Rcmdr\", dep=TRUE)\n> 6) Start Rcmdr and install additional packages when prompted.\n> \n> I've never had this procedure fail to produce a working installation.\n> \n> Hope it helps,\n> Ista\n\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org\n[mailto:r-sig-teaching-bounces at r-\n> project.org] On Behalf Of G. Jay Kerns\n> Sent: February-14-09 9:55 PM\n> To: bob at statland.org\n> Cc: R-sig-teaching\n> Subject: Re: [R-sig-teaching] installing Rcmdr\n> \n> Dear Robert,\n> \n> \n> On Sat, Feb 14, 2009 at 9:24 PM, Robert W. Hayden <hayden at mv.mv.com>\nwrote:\n> >\n> > Last weekend I visited my sister and her husband and installed R on\n> > their Ubuntu 8.04 machine and tried to add Rcmdr.  I had endless\n> > trouble most of which seemed to be because R (or Rcmdr) seemed to want\n> > a Fortran compiler (or a Fortran-to-C translator).  A smaller number\n> > of error mesages (out of many pages thereof) were removed by\n> > installing what appeared to be a library of Fortran linear algebra\n> > routines (lblas?).  Even then Rcmdr complained about missing packages\n> > when I ran it, and though it offered to install them, the installation\n> > failed in every case, with no useful error messages.\n> >\n> > I have installed R and Rcmdr many times before to Windows and various\n> > Linux distributions (it's on this Debian right now)  and never had so\n> > much trouble.  Did I do something wrong?  Is there a problem with R on\n> > Ubuntu?  I have programmed in Fortran so I don't mind adding a\n> > compiler and I've taught linear algebra so I don't mind adding linear\n> > algebra routines, but there is no way my students would ever figure\n> > out that was needed.  I also noted that Rcmdr had a MUCH longer list\n> > of dependencies than I remember.  All of this has me worried about\n> > using R in an introductory course for folks who are not computer\n> > science majors.\n> >\n> > Has anyone encountered a similar problem?  I used whatever version of\n> > R is in the Ubuntu repository.  I seem to remember 2.4 though that\n> > seems a bit old.\n> >\n> > ------->  First-time AP Stats. teacher?  Help is on the way! See\n> >\n> >\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n> >\n> >  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)\n> >  North Troy, VT 05859  phone (802) 988-2587  web site\nhttp://statland.org/\n> >  email  bob statland.org  (add your own \"@\" and save me some spam)\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >\n> \n> \n> I am and have been using Rcmdr on Ubuntu 7.10, 8.04, and currently on\n> 8.10.  I used 32 bit Ubuntu for 7.10 and 8.04, but on 8.10 I am using\n> both 32 and 64 bit versions. For the record, I have had no problems\n> whatsoever installing Rcmdr.\n> \n> First thought (and you didn't mention): are you sure that you have the\n> r-base-dev Ubuntu package installed?  If you do not have that\n> installed, then you won't be able to build _anything_.\n> \n> If you already have r-base-dev....? it is good practice to install the\n> packages from the repository with Synaptic (which it sounds like is\n> what you did), since in those cases, dependencies are marked\n> automatically for installation most of the time.    Another thing that\n> you could try is to right-click on packages in Synaptic - it gives\n> other packages \"suggested\" for installation.  In some cases,\n> installing these extra packages helped me with installation problems\n> elsewhere, too.\n> \n> And you could consider contacting John Fox directly.  He's great about\n> responding quickly, thoughtfully, and accurately.\n> \n> Good luck.\n> Jay\n> \n> \n> \n> \n> \n> \n> \n> \n> \n> ***************************************************\n> G. Jay Kerns, Ph.D.\n> Associate Professor\n> Department of Mathematics & Statistics\n> Youngstown State University\n> Youngstown, OH 44555-0002 USA\n> Office: 1035 Cushwa Hall\n> Phone: (330) 941-3310 Office (voice mail)\n> -3302 Department\n> -3170 FAX\n> E-mail: gkerns at ysu.edu\n> http://www.cc.ysu.edu/~gjkerns/\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Dear Jay, Bob, Ista,\n\nI, too, have installed Rcmdr on Ubuntu systems several times with no\nproblems. I suspect that r-base-dev wasn't installed and that Ista's\nprocedure will produce the desired resul",
+      "thread_id": "thread-dd0e09ea8971",
+      "thread_depth": 2,
+      "month": "2009-02"
+    },
+    {
+      "id": "msg-eaf3f6e5614e",
+      "message_id": "<f55e7cf50902150803n59416b23y2cbe01b797588beb@mail.gmail.com>",
+      "from_name": "Ista Zahn",
+      "from_email_hash": "098a31f0cc45d6b90198bf3b75e03deed7c570292be352a10b98aeee4bf7012e",
+      "date": "2009-02-15T11:03:10-05:00",
+      "subject": "[R-sig-teaching] installing Rcmdr",
+      "subject_clean": "installing Rcmdr",
+      "in_reply_to": "<001b01c98f7e$58cbc3d0$0a634b70$@ca>",
+      "references": [
+        "<20090215022415.92847.qmail@mv.mv.com>",
+        "<a695148b0902141854r78c33b35vf2d1207ec71f02e7@mail.gmail.com>",
+        "<001b01c98f7e$58cbc3d0$0a634b70$@ca>"
+      ],
+      "body_plain": "Hi John,\nYes, please feel free to use my suggestions in any way you wish, with\nany modifications you want. The procedure is designed to be sufficient\nrather than necessary, and you are correct that some of the steps can\nbe omitted.\n\n-Ista\nOn Sun, Feb 15, 2009 at 10:01 AM, John Fox <jfox at mcmaster.ca> wrote:\n> Dear Jay, Bob, Ista,\n>\n> I, too, have installed Rcmdr on Ubuntu systems several times with no\n> problems. I suspect that r-base-dev wasn't installed and that Ista's\n> procedure will produce the desired result.\n>\n> Ista: Do you mind if I add your procedure, slightly edited and with credit,\n> to the Rcmdr installation page? Step 6, however, shouldn't be necessary\n> after installing with dep=TRUE, nor, I think, should step 3, since there's\n> only R code in the Rcmdr package.\n>\n> Regards,\n>  John\n>\n>> -----Original Message-----\n>> From: r-sig-teaching-bounces at r-project.org\n> [mailto:r-sig-teaching-bounces at r-\n>> project.org] On Behalf Of Ista Zahn\n>> Sent: February-14-09 11:12 PM\n>> To: bob at statland.org\n>> Cc: R-sig-teaching\n>> Subject: Re: [R-sig-teaching] installing Rcmdr\n>>\n>> I've found the version of R in the Ubuntu repository is almost always\n>> out of date. Here is the process I follow:\n>>\n>> 1) Add the R repository (see http://cran.r-project.org/bin/linux/ubuntu/).\n>> 2) Install R and the dev package: sudo apt-get install r-base r-base-dev\n>> 3) Install any packages needed to build a particular package. In this\n>> case something like sudo apt-get build-dep r-cran-rcmdr (I'm not on my\n>> ubuntu machine at the moment so I'm not sure the package name is\n>> correct).\n>> 4) Start R from the command line as root so I can install packages\n>> system-wide: sudo R\n>> 5) From the R command prompt, install Rcmdr: >\n>> install.packages(\"Rcmdr\", dep=TRUE)\n>> 6) Start Rcmdr and install additional packages when prompted.\n>>\n>> I've never had this procedure fail to produce a working installation.\n>>\n>> Hope it helps,\n>> Ista\n>\n>> -----Original Message-----\n>> From: r-sig-teaching-bounces at r-project.org\n> [mailto:r-sig-teaching-bounces at r-\n>> project.org] On Behalf Of G. Jay Kerns\n>> Sent: February-14-09 9:55 PM\n>> To: bob at statland.org\n>> Cc: R-sig-teaching\n>> Subject: Re: [R-sig-teaching] installing Rcmdr\n>>\n>> Dear Robert,\n>>\n>>\n>> On Sat, Feb 14, 2009 at 9:24 PM, Robert W. Hayden <hayden at mv.mv.com>\n> wrote:\n>> >\n>> > Last weekend I visited my sister and her husband and installed R on\n>> > their Ubuntu 8.04 machine and tried to add Rcmdr.  I had endless\n>> > trouble most of which seemed to be because R (or Rcmdr) seemed to want\n>> > a Fortran compiler (or a Fortran-to-C translator).  A smaller number\n>> > of error mesages (out of many pages thereof) were removed by\n>> > installing what appeared to be a library of Fortran linear algebra\n>> > routines (lblas?).  Even then Rcmdr complained about missing packages\n>> > when I ran it, and though it offered to install them, the installation\n>> > failed in every case, with no useful error messages.\n>> >\n>> > I have installed R and Rcmdr many times before to Windows and various\n>> > Linux distributions (it's on this Debian right now)  and never had so\n>> > much trouble.  Did I do something wrong?  Is there a problem with R on\n>> > Ubuntu?  I have programmed in Fortran so I don't mind adding a\n>> > compiler and I've taught linear algebra so I don't mind adding linear\n>> > algebra routines, but there is no way my students would ever figure\n>> > out that was needed.  I also noted that Rcmdr had a MUCH longer list\n>> > of dependencies than I remember.  All of this has me worried about\n>> > using R in an introductory course for folks who are not computer\n>> > science majors.\n>> >\n>> > Has anyone encountered a similar problem?  I used whatever version of\n>> > R is in the Ubuntu repository.  I seem to remember 2.4 though that\n>> > seems a bit old.\n>> >\n>> > ------->  First-time AP Stats. teacher?  Help is on the way! See\n>> >\n>> >\n> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n>> >\n>> >  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)\n>> >  North Troy, VT 05859  phone (802) 988-2587  web site\n> http://statland.org/\n>> >  email  bob statland.org  (add your own \"@\" and save me some spam)\n>> >\n>> > _______________________________________________\n>> > R-sig-teaching at r-project.org mailing list\n>> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>> >\n>>\n>>\n>> I am and have been using Rcmdr on Ubuntu 7.10, 8.04, and currently on\n>> 8.10.  I used 32 bit Ubuntu for 7.10 and 8.04, but on 8.10 I am using\n>> both 32 and 64 bit versions. For the record, I have had no problems\n>> whatsoever installing Rcmdr.\n>>\n>> First thought (and you didn't mention): are you sure that you have the\n>> r-base-dev Ubuntu package installed?  If you do not have that\n>> installed, then you won't be able to build _anything_.\n>>\n>> If you already have r-base-dev....? it is good practice to install the\n>> packages from the repository with Synaptic (which it sounds like is\n>> what you did), since in those cases, dependencies are marked\n>> automatically for installation most of the time.    Another thing that\n>> you could try is to right-click on packages in Synaptic - it gives\n>> other packages \"suggested\" for installation.  In some cases,\n>> installing these extra packages helped me with installation problems\n>> elsewhere, too.\n>>\n>> And you could consider contacting John Fox directly.  He's great about\n>> responding quickly, thoughtfully, and accurately.\n>>\n>> Good luck.\n>> Jay\n>>\n>>\n>>\n>>\n>>\n>>\n>>\n>>\n>>\n>> ***************************************************\n>> G. Jay Kerns, Ph.D.\n>> Associate Professor\n>> Department of Mathematics & Statistics\n>> Youngstown State University\n>> Youngstown, OH 44555-0002 USA\n>> Office: 1035 Cushwa Hall\n>> Phone: (330) 941-3310 Office (voice mail)\n>> -3302 Department\n>> -3170 FAX\n>> E-mail: gkerns at ysu.edu\n>> http://www.cc.ysu.edu/~gjkerns/\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n>",
+      "body_snippet": "Hi John,\nYes, please feel free to use my suggestions in any way you wish, with\nany modifications you want. The procedure is designed to be sufficient\nrather than necessary, and you are correct that so",
+      "thread_id": "thread-dd0e09ea8971",
+      "thread_depth": 3,
+      "month": "2009-02"
+    },
+    {
+      "id": "msg-db3fe2d3d8bd",
+      "message_id": "<87zlgnbsbk.fsf@blackbart.sedgenet>",
+      "from_name": "tyler",
+      "from_email_hash": "5175000895736522a94b46846e1b695cdc12921b61083ab626f75efaaf595f24",
+      "date": "2009-02-15T12:03:43-04:00",
+      "subject": "[R-sig-teaching] installing Rcmdr",
+      "subject_clean": "installing Rcmdr",
+      "in_reply_to": null,
+      "references": [
+        "<20090215022415.92847.qmail@mv.mv.com>",
+        "<f55e7cf50902142011h45090480v1c6ac5b8f2380bf3@mail.gmail.com>"
+      ],
+      "body_plain": "Ista Zahn <istazahn at gmail.com> writes:\n\n> I've found the version of R in the Ubuntu repository is almost always\n> out of date. Here is the process I follow:\n>\n> 4) Start R from the command line as root so I can install packages\n> system-wide: sudo R\n\nAs an alternative, if you set the permissions on\n/usr/local/lib/R/site-library to allow universal write access, you can\ncall install.packages() from R without having root privileges:\n\nsudo chmod o+w /usr/local/lib/R/site-library\n\nThis way you don't need to start a second R as root when installing new\npackages.\n\nCheers,\n\nTyler\n\n> 5) From the R command prompt, install Rcmdr: >\n> install.packages(\"Rcmdr\", dep=TRUE)\n> 6) Start Rcmdr and install additional packages when prompted.\n>\n> I've never had this procedure fail to produce a working installation.\n>\n> Hope it helps,\n> Ista\n>\n>\n> On Sat, Feb 14, 2009 at 9:24 PM, Robert W. Hayden <hayden at mv.mv.com> wrote:\n>>\n>> Last weekend I visited my sister and her husband and installed R on\n>> their Ubuntu 8.04 machine and tried to add Rcmdr.  I had endless\n>> trouble most of which seemed to be because R (or Rcmdr) seemed to want\n>> a Fortran compiler (or a Fortran-to-C translator).  A smaller number\n>> of error mesages (out of many pages thereof) were removed by\n>> installing what appeared to be a library of Fortran linear algebra\n>> routines (lblas?).  Even then Rcmdr complained about missing packages\n>> when I ran it, and though it offered to install them, the installation\n>> failed in every case, with no useful error messages.\n>>\n>> I have installed R and Rcmdr many times before to Windows and various\n>> Linux distributions (it's on this Debian right now)  and never had so\n>> much trouble.  Did I do something wrong?  Is there a problem with R on\n>> Ubuntu?  I have programmed in Fortran so I don't mind adding a\n>> compiler and I've taught linear algebra so I don't mind adding linear\n>> algebra routines, but there is no way my students would ever figure\n>> out that was needed.  I also noted that Rcmdr had a MUCH longer list\n>> of dependencies than I remember.  All of this has me worried about\n>> using R in an introductory course for folks who are not computer\n>> science majors.\n>>\n>> Has anyone encountered a similar problem?  I used whatever version of\n>> R is in the Ubuntu repository.  I seem to remember 2.4 though that\n>> seems a bit old.\n>>\n>> ------->  First-time AP Stats. teacher?  Help is on the way! See\n>>\n>>  http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n>>\n>>  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)\n>>  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/\n>>  email  bob statland.org  (add your own \"@\" and save me some spam)\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>\n\n-- \nThere is no theory of evolution. \nJust a list of animals Chuck Norris allows to live.\n\nhttp://www.chucknorrisfacts.com/",
+      "body_snippet": "Ista Zahn <istazahn at gmail.com> writes:\n\n> I've found the version of R in the Ubuntu repository is almost always\n> out of date. Here is the process I follow:\n>\n> 4) Start R from the command line as ",
+      "thread_id": "thread-dd0e09ea8971",
+      "thread_depth": 2,
+      "month": "2009-02"
+    },
+    {
+      "id": "msg-abfc0bb026c3",
+      "message_id": "<de8c7cb40902150840s74803be7w6634611bdd3ffdd8@mail.gmail.com>",
+      "from_name": "Prasenjit Kapat",
+      "from_email_hash": "1aaabed538e5f2d629b33e919b31b5e2c9c13b131ce8e84f1b00776b280c06e6",
+      "date": "2009-02-15T11:40:56-05:00",
+      "subject": "[R-sig-teaching] installing Rcmdr",
+      "subject_clean": "installing Rcmdr",
+      "in_reply_to": "<87zlgnbsbk.fsf@blackbart.sedgenet>",
+      "references": [
+        "<20090215022415.92847.qmail@mv.mv.com>",
+        "<f55e7cf50902142011h45090480v1c6ac5b8f2380bf3@mail.gmail.com>",
+        "<87zlgnbsbk.fsf@blackbart.sedgenet>"
+      ],
+      "body_plain": "On Sun, Feb 15, 2009 at 11:03 AM, tyler <tyler.smith at mail.mcgill.ca> wrote:\n> Ista Zahn <istazahn at gmail.com> writes:\n>\n>> I've found the version of R in the Ubuntu repository is almost always\n>> out of date. Here is the process I follow:\n>>\n>> 4) Start R from the command line as root so I can install packages\n>> system-wide: sudo R\n>\n> As an alternative, if you set the permissions on\n> /usr/local/lib/R/site-library to allow universal write access, you can\n> call install.packages() from R without having root privileges:\n>\n> sudo chmod o+w /usr/local/lib/R/site-library\n\nIs that a safe / secure? BTW what are the permissions on\n/usr/local/lib/R? Mine's already set to 755 for the \"user\"!!! I though\nit used to be owned by root!\n\n-- \nPrasenjit",
+      "body_snippet": "On Sun, Feb 15, 2009 at 11:03 AM, tyler <tyler.smith at mail.mcgill.ca> wrote:\n> Ista Zahn <istazahn at gmail.com> writes:\n>\n>> I've found the version of R in the Ubuntu repository is almost always\n>>",
+      "thread_id": "thread-dd0e09ea8971",
+      "thread_depth": 3,
+      "month": "2009-02"
+    },
+    {
+      "id": "msg-b24654aa7667",
+      "message_id": "<002101c98f8f$edf32500$c9d96f00$@ca>",
+      "from_name": "John Fox",
+      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
+      "date": "2009-02-15T12:07:48-05:00",
+      "subject": "[R-sig-teaching] installing Rcmdr",
+      "subject_clean": "installing Rcmdr",
+      "in_reply_to": "<f55e7cf50902150803n59416b23y2cbe01b797588beb@mail.gmail.com>",
+      "references": [
+        "<20090215022415.92847.qmail@mv.mv.com>",
+        "<a695148b0902141854r78c33b35vf2d1207ec71f02e7@mail.gmail.com>",
+        "<001b01c98f7e$58cbc3d0$0a634b70$@ca>",
+        "<f55e7cf50902150803n59416b23y2cbe01b797588beb@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Ista,\n\nI've updated the Rcmdr installation notes at\n<http://socserv.mcmaster.ca/jfox/Misc/Rcmdr/installation-notes.html> with\nspecific instructions for Ubuntu.\n\nThanks,\n John\n\n> -----Original Message-----\n> From: Ista Zahn [mailto:istazahn at gmail.com]\n> Sent: February-15-09 11:03 AM\n> To: John Fox\n> Cc: G. Jay Kerns; bob at statland.org; R-sig-teaching\n> Subject: Re: [R-sig-teaching] installing Rcmdr\n> \n> Hi John,\n> Yes, please feel free to use my suggestions in any way you wish, with\n> any modifications you want. The procedure is designed to be sufficient\n> rather than necessary, and you are correct that some of the steps can\n> be omitted.\n> \n> -Ista\n> On Sun, Feb 15, 2009 at 10:01 AM, John Fox <jfox at mcmaster.ca> wrote:\n> > Dear Jay, Bob, Ista,\n> >\n> > I, too, have installed Rcmdr on Ubuntu systems several times with no\n> > problems. I suspect that r-base-dev wasn't installed and that Ista's\n> > procedure will produce the desired result.\n> >\n> > Ista: Do you mind if I add your procedure, slightly edited and with\ncredit,\n> > to the Rcmdr installation page? Step 6, however, shouldn't be necessary\n> > after installing with dep=TRUE, nor, I think, should step 3, since\nthere's\n> > only R code in the Rcmdr package.\n> >\n> > Regards,\n> >  John\n> >\n> >> -----Original Message-----\n> >> From: r-sig-teaching-bounces at r-project.org\n> > [mailto:r-sig-teaching-bounces at r-\n> >> project.org] On Behalf Of Ista Zahn\n> >> Sent: February-14-09 11:12 PM\n> >> To: bob at statland.org\n> >> Cc: R-sig-teaching\n> >> Subject: Re: [R-sig-teaching] installing Rcmdr\n> >>\n> >> I've found the version of R in the Ubuntu repository is almost always\n> >> out of date. Here is the process I follow:\n> >>\n> >> 1) Add the R repository (see\nhttp://cran.r-project.org/bin/linux/ubuntu/).\n> >> 2) Install R and the dev package: sudo apt-get install r-base\nr-base-dev\n> >> 3) Install any packages needed to build a particular package. In this\n> >> case something like sudo apt-get build-dep r-cran-rcmdr (I'm not on my\n> >> ubuntu machine at the moment so I'm not sure the package name is\n> >> correct).\n> >> 4) Start R from the command line as root so I can install packages\n> >> system-wide: sudo R\n> >> 5) From the R command prompt, install Rcmdr: >\n> >> install.packages(\"Rcmdr\", dep=TRUE)\n> >> 6) Start Rcmdr and install additional packages when prompted.\n> >>\n> >> I've never had this procedure fail to produce a working installation.\n> >>\n> >> Hope it helps,\n> >> Ista\n> >\n> >> -----Original Message-----\n> >> From: r-sig-teaching-bounces at r-project.org\n> > [mailto:r-sig-teaching-bounces at r-\n> >> project.org] On Behalf Of G. Jay Kerns\n> >> Sent: February-14-09 9:55 PM\n> >> To: bob at statland.org\n> >> Cc: R-sig-teaching\n> >> Subject: Re: [R-sig-teaching] installing Rcmdr\n> >>\n> >> Dear Robert,\n> >>\n> >>\n> >> On Sat, Feb 14, 2009 at 9:24 PM, Robert W. Hayden <hayden at mv.mv.com>\n> > wrote:\n> >> >\n> >> > Last weekend I visited my sister and her husband and installed R on\n> >> > their Ubuntu 8.04 machine and tried to add Rcmdr.  I had endless\n> >> > trouble most of which seemed to be because R (or Rcmdr) seemed to\nwant\n> >> > a Fortran compiler (or a Fortran-to-C translator).  A smaller number\n> >> > of error mesages (out of many pages thereof) were removed by\n> >> > installing what appeared to be a library of Fortran linear algebra\n> >> > routines (lblas?).  Even then Rcmdr complained about missing packages\n> >> > when I ran it, and though it offered to install them, the\ninstallation\n> >> > failed in every case, with no useful error messages.\n> >> >\n> >> > I have installed R and Rcmdr many times before to Windows and various\n> >> > Linux distributions (it's on this Debian right now)  and never had so\n> >> > much trouble.  Did I do something wrong?  Is there a problem with R\non\n> >> > Ubuntu?  I have programmed in Fortran so I don't mind adding a\n> >> > compiler and I've taught linear algebra so I don't mind adding linear\n> >> > algebra routines, but there is no way my students would ever figure\n> >> > out that was needed.  I also noted that Rcmdr had a MUCH longer list\n> >> > of dependencies than I remember.  All of this has me worried about\n> >> > using R in an introductory course for folks who are not computer\n> >> > science majors.\n> >> >\n> >> > Has anyone encountered a similar problem?  I used whatever version of\n> >> > R is in the Ubuntu repository.  I seem to remember 2.4 though that\n> >> > seems a bit old.\n> >> >\n> >> > ------->  First-time AP Stats. teacher?  Help is on the way! See\n> >> >\n> >> >\n> >\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n> >> >\n> >> >  Robert W. Hayden in the old library at  212 Main Street (P. O. Box\n450)\n> >> >  North Troy, VT 05859  phone (802) 988-2587  web site\n> > http://statland.org/\n> >> >  email  bob statland.org  (add your own \"@\" and save me some spam)\n> >> >\n> >> > _______________________________________________\n> >> > R-sig-teaching at r-project.org mailing list\n> >> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >> >\n> >>\n> >>\n> >> I am and have been using Rcmdr on Ubuntu 7.10, 8.04, and currently on\n> >> 8.10.  I used 32 bit Ubuntu for 7.10 and 8.04, but on 8.10 I am using\n> >> both 32 and 64 bit versions. For the record, I have had no problems\n> >> whatsoever installing Rcmdr.\n> >>\n> >> First thought (and you didn't mention): are you sure that you have the\n> >> r-base-dev Ubuntu package installed?  If you do not have that\n> >> installed, then you won't be able to build _anything_.\n> >>\n> >> If you already have r-base-dev....? it is good practice to install the\n> >> packages from the repository with Synaptic (which it sounds like is\n> >> what you did), since in those cases, dependencies are marked\n> >> automatically for installation most of the time.    Another thing that\n> >> you could try is to right-click on packages in Synaptic - it gives\n> >> other packages \"suggested\" for installation.  In some cases,\n> >> installing these extra packages helped me with installation problems\n> >> elsewhere, too.\n> >>\n> >> And you could consider contacting John Fox directly.  He's great about\n> >> responding quickly, thoughtfully, and accurately.\n> >>\n> >> Good luck.\n> >> Jay\n> >>\n> >>\n> >>\n> >>\n> >>\n> >>\n> >>\n> >>\n> >>\n> >> ***************************************************\n> >> G. Jay Kerns, Ph.D.\n> >> Associate Professor\n> >> Department of Mathematics & Statistics\n> >> Youngstown State University\n> >> Youngstown, OH 44555-0002 USA\n> >> Office: 1035 Cushwa Hall\n> >> Phone: (330) 941-3310 Office (voice mail)\n> >> -3302 Department\n> >> -3170 FAX\n> >> E-mail: gkerns at ysu.edu\n> >> http://www.cc.ysu.edu/~gjkerns/\n> >>\n> >> _______________________________________________\n> >> R-sig-teaching at r-project.org mailing list\n> >> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >\n> >\n> >",
+      "body_snippet": "Dear Ista,\n\nI've updated the Rcmdr installation notes at\n<http://socserv.mcmaster.ca/jfox/Misc/Rcmdr/installation-notes.html> with\nspecific instructions for Ubuntu.\n\nThanks,\n John\n\n> -----Original Mes",
+      "thread_id": "thread-dd0e09ea8971",
+      "thread_depth": 4,
+      "month": "2009-02"
+    },
+    {
+      "id": "msg-2eae1e9add8f",
+      "message_id": "<20090215173013.70223.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2009-02-15T12:30:13-05:00",
+      "subject": "[R-sig-teaching] installing Rcmdr",
+      "subject_clean": "installing Rcmdr",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Forwarded message:\n> From jfox at mcmaster.ca Sun Feb 15 17:08:45 2009 +0000\n\nThis (from John's web site)\n\n\"Linux/Unix systems typically have all of the software required for\nbuilding packages already installed. The easiest way to install the\nRcmdr package and its dependencies if you have an active Internet\nconnection is to run R as root and issue the command\ninstall.packages(\"Rcmdr\", dependencies=TRUE) at the R prompt.\"\n\nis what I did.  After I got home (and after I posted my initial\nquestion to this list) I found that I have one computer here with\nKubuntu installed -- and R.  So given that and the feedback I have\nreceived from this list I have to conclude there was something odd\nabout the situation at my sister's.  Since I no longer have access to\nthat machine (it's a five-hour drive away) I cannot check or reproduce\nanything.  Still the feedback has been useful -- it appears there is\nno need to track down what was wrong on that aberrant machine;-)  \n \n> I've updated the Rcmdr installation notes at\n> <http://socserv.mcmaster.ca/jfox/Misc/Rcmdr/installation-notes.html> with\n> specific instructions for Ubuntu.\n> \n> Thanks,\n>  John\n> \n> > -----Original Message-----\n> > From: Ista Zahn [mailto:istazahn at gmail.com]\n> > Sent: February-15-09 11:03 AM\n> > To: John Fox\n> > Cc: G. Jay Kerns; bob at statland.org; R-sig-teaching\n> > Subject: Re: [R-sig-teaching] installing Rcmdr\n> > \n> > Hi John,\n> > Yes, please feel free to use my suggestions in any way you wish, with\n> > any modifications you want. The procedure is designed to be sufficient\n> > rather than necessary, and you are correct that some of the steps can\n> > be omitted.\n> > \n> > -Ista\n> > On Sun, Feb 15, 2009 at 10:01 AM, John Fox <jfox at mcmaster.ca> wrote:\n> > > Dear Jay, Bob, Ista,\n> > >\n> > > I, too, have installed Rcmdr on Ubuntu systems several times with no\n> > > problems. I suspect that r-base-dev wasn't installed and that Ista's\n> > > procedure will produce the desired result.\n> > >\n> > > Ista: Do you mind if I add your procedure, slightly edited and with\n> credit,\n> > > to the Rcmdr installation page? Step 6, however, shouldn't be necessary\n> > > after installing with dep=TRUE, nor, I think, should step 3, since\n> there's\n> > > only R code in the Rcmdr package.\n> > >\n> > > Regards,\n> > >  John\n> > >\n> > >> -----Original Message-----\n> > >> From: r-sig-teaching-bounces at r-project.org\n> > > [mailto:r-sig-teaching-bounces at r-\n> > >> project.org] On Behalf Of Ista Zahn\n> > >> Sent: February-14-09 11:12 PM\n> > >> To: bob at statland.org\n> > >> Cc: R-sig-teaching\n> > >> Subject: Re: [R-sig-teaching] installing Rcmdr\n> > >>\n> > >> I've found the version of R in the Ubuntu repository is almost always\n> > >> out of date. Here is the process I follow:\n> > >>\n> > >> 1) Add the R repository (see\n> http://cran.r-project.org/bin/linux/ubuntu/).\n> > >> 2) Install R and the dev package: sudo apt-get install r-base\n> r-base-dev\n> > >> 3) Install any packages needed to build a particular package. In this\n> > >> case something like sudo apt-get build-dep r-cran-rcmdr (I'm not on my\n> > >> ubuntu machine at the moment so I'm not sure the package name is\n> > >> correct).\n> > >> 4) Start R from the command line as root so I can install packages\n> > >> system-wide: sudo R\n> > >> 5) From the R command prompt, install Rcmdr: >\n> > >> install.packages(\"Rcmdr\", dep=TRUE)\n> > >> 6) Start Rcmdr and install additional packages when prompted.\n> > >>\n> > >> I've never had this procedure fail to produce a working installation.\n> > >>\n> > >> Hope it helps,\n> > >> Ista\n> > >\n> > >> -----Original Message-----\n> > >> From: r-sig-teaching-bounces at r-project.org\n> > > [mailto:r-sig-teaching-bounces at r-\n> > >> project.org] On Behalf Of G. Jay Kerns\n> > >> Sent: February-14-09 9:55 PM\n> > >> To: bob at statland.org\n> > >> Cc: R-sig-teaching\n> > >> Subject: Re: [R-sig-teaching] installing Rcmdr\n> > >>\n> > >> Dear Robert,\n> > >>\n> > >>\n> > >> On Sat, Feb 14, 2009 at 9:24 PM, Robert W. Hayden <hayden at mv.mv.com>\n> > > wrote:\n> > >> >\n> > >> > Last weekend I visited my sister and her husband and installed R on\n> > >> > their Ubuntu 8.04 machine and tried to add Rcmdr.  I had endless\n> > >> > trouble most of which seemed to be because R (or Rcmdr) seemed to\n> want\n> > >> > a Fortran compiler (or a Fortran-to-C translator).  A smaller number\n> > >> > of error mesages (out of many pages thereof) were removed by\n> > >> > installing what appeared to be a library of Fortran linear algebra\n> > >> > routines (lblas?).  Even then Rcmdr complained about missing packages\n> > >> > when I ran it, and though it offered to install them, the\n> installation\n> > >> > failed in every case, with no useful error messages.\n> > >> >\n> > >> > I have installed R and Rcmdr many times before to Windows and various\n> > >> > Linux distributions (it's on this Debian right now)  and never had so\n> > >> > much trouble.  Did I do something wrong?  Is there a problem with R\n> on\n> > >> > Ubuntu?  I have programmed in Fortran so I don't mind adding a\n> > >> > compiler and I've taught linear algebra so I don't mind adding linear\n> > >> > algebra routines, but there is no way my students would ever figure\n> > >> > out that was needed.  I also noted that Rcmdr had a MUCH longer list\n> > >> > of dependencies than I remember.  All of this has me worried about\n> > >> > using R in an introductory course for folks who are not computer\n> > >> > science majors.\n> > >> >\n> > >> > Has anyone encountered a similar problem?  I used whatever version of\n> > >> > R is in the Ubuntu repository.  I seem to remember 2.4 though that\n> > >> > seems a bit old.\n> > >> >\n> > >> > ------->  First-time AP Stats. teacher?  Help is on the way! See\n> > >> >\n> > >> >\n> > >\n> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n> > >> >\n> > >> >  Robert W. Hayden in the old library at  212 Main Street (P. O. Box\n> 450)\n> > >> >  North Troy, VT 05859  phone (802) 988-2587  web site\n> > > http://statland.org/\n> > >> >  email  bob statland.org  (add your own \"@\" and save me some spam)\n> > >> >\n> > >> > _______________________________________________\n> > >> > R-sig-teaching at r-project.org mailing list\n> > >> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> > >> >\n> > >>\n> > >>\n> > >> I am and have been using Rcmdr on Ubuntu 7.10, 8.04, and currently on\n> > >> 8.10.  I used 32 bit Ubuntu for 7.10 and 8.04, but on 8.10 I am using\n> > >> both 32 and 64 bit versions. For the record, I have had no problems\n> > >> whatsoever installing Rcmdr.\n> > >>\n> > >> First thought (and you didn't mention): are you sure that you have the\n> > >> r-base-dev Ubuntu package installed?  If you do not have that\n> > >> installed, then you won't be able to build _anything_.\n> > >>\n> > >> If you already have r-base-dev....? it is good practice to install the\n> > >> packages from the repository with Synaptic (which it sounds like is\n> > >> what you did), since in those cases, dependencies are marked\n> > >> automatically for installation most of the time.    Another thing that\n> > >> you could try is to right-click on packages in Synaptic - it gives\n> > >> other packages \"suggested\" for installation.  In some cases,\n> > >> installing these extra packages helped me with installation problems\n> > >> elsewhere, too.\n> > >>\n> > >> And you could consider contacting John Fox directly.  He's great about\n> > >> responding quickly, thoughtfully, and accurately.\n> > >>\n> > >> Good luck.\n> > >> Jay\n> > >>\n> > >>\n> > >>\n> > >>\n> > >>\n> > >>\n> > >>\n> > >>\n> > >>\n> > >> ***************************************************\n> > >> G. Jay Kerns, Ph.D.\n> > >> Associate Professor\n> > >> Department of Mathematics & Statistics\n> > >> Youngstown State University\n> > >> Youngstown, OH 44555-0002 USA\n> > >> Office: 1035 Cushwa Hall\n> > >> Phone: (330) 941-3310 Office (voice mail)\n> > >> -3302 Department\n> > >> -3170 FAX\n> > >> E-mail: gkerns at ysu.edu\n> > >> http://www.cc.ysu.edu/~gjkerns/\n> > >>\n> > >> _______________________________________________\n> > >> R-sig-teaching at r-project.org mailing list\n> > >> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> > >\n> > >\n> > >\n> \n> \n> \n\n\n------->  First-time AP Stats. teacher?  Help is on the way! See\n\n http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n\t    \n  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)\n  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      \n  email  bob statland.org  (add your own \"@\" and save me some spam)",
+      "body_snippet": "Forwarded message:\n> From jfox at mcmaster.ca Sun Feb 15 17:08:45 2009 +0000\n\nThis (from John's web site)\n\n\"Linux/Unix systems typically have all of the software required for\nbuilding packages already",
+      "thread_id": "thread-2eae1e9add8f",
+      "thread_depth": 0,
+      "month": "2009-02"
+    },
+    {
+      "id": "msg-326b10ead259",
+      "message_id": "<40e66e0b0902150949j3459c003u206e4aea82ba9583@mail.gmail.com>",
+      "from_name": "Douglas Bates",
+      "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
+      "date": "2009-02-15T11:49:26-06:00",
+      "subject": "[R-sig-teaching] installing Rcmdr",
+      "subject_clean": "installing Rcmdr",
+      "in_reply_to": "<87zlgnbsbk.fsf@blackbart.sedgenet>",
+      "references": [
+        "<20090215022415.92847.qmail@mv.mv.com>",
+        "<f55e7cf50902142011h45090480v1c6ac5b8f2380bf3@mail.gmail.com>",
+        "<87zlgnbsbk.fsf@blackbart.sedgenet>"
+      ],
+      "body_plain": "On Sun, Feb 15, 2009 at 10:03 AM, tyler <tyler.smith at mail.mcgill.ca> wrote:\n> Ista Zahn <istazahn at gmail.com> writes:\n>\n>> I've found the version of R in the Ubuntu repository is almost always\n>> out of date. Here is the process I follow:\n>>\n>> 4) Start R from the command line as root so I can install packages\n>> system-wide: sudo R\n>\n> As an alternative, if you set the permissions on\n> /usr/local/lib/R/site-library to allow universal write access, you can\n> call install.packages() from R without having root privileges:\n>\n> sudo chmod o+w /usr/local/lib/R/site-library\n>\n> This way you don't need to start a second R as root when installing new\n> packages.\n\nAn alternative to changing permissions like this is to establish a\npersonal library in addition to the local site library.  First start R\nand use sessionInfo() to find the major version of R and the system\ntype.  In my case the first two lines printed are\n\n> sessionInfo()\nR version 2.8.1 (2008-12-22)\ni486-pc-linux-gnu\n\nso the major version is 2.8 and the system type is i486-pc-linux-gnu.\nNow create the directory\n\n~/R/<systemType>-library/<majorVersion>/\n\nThat is, I would create\n\n~/R/i486-pc-linux-gnu-library/2.8/\n\nThis directory will be the first element of the default .libPaths\n\n> .libPaths()\n[1] \"/home/bates/R/i486-pc-linux-gnu-library/2.8\"\n[2] \"/usr/local/lib/R/site-library\"\n[3] \"/usr/lib/R/site-library\"\n[4] \"/usr/lib/R/library\"\n\nand any packages I install will, by default, be installed there.  I\nprefer this scheme to using system directories. Because I am\nmore-or-less the sole user of my computers running Ubuntu, it doesn't\nresult in redundancy.  Also, I can work with multiple versions of R\nwithout conflict in my personal library and I can avoid conflicting\nversions of code compiled for different architectures on our\ndepartmental computers where home directories are on AFS, a network\nfile system.\n\n>\n> Cheers,\n>\n> Tyler\n>\n>> 5) From the R command prompt, install Rcmdr: >\n>> install.packages(\"Rcmdr\", dep=TRUE)\n>> 6) Start Rcmdr and install additional packages when prompted.\n>>\n>> I've never had this procedure fail to produce a working installation.\n>>\n>> Hope it helps,\n>> Ista\n>>\n>>\n>> On Sat, Feb 14, 2009 at 9:24 PM, Robert W. Hayden <hayden at mv.mv.com> wrote:\n>>>\n>>> Last weekend I visited my sister and her husband and installed R on\n>>> their Ubuntu 8.04 machine and tried to add Rcmdr.  I had endless\n>>> trouble most of which seemed to be because R (or Rcmdr) seemed to want\n>>> a Fortran compiler (or a Fortran-to-C translator).  A smaller number\n>>> of error mesages (out of many pages thereof) were removed by\n>>> installing what appeared to be a library of Fortran linear algebra\n>>> routines (lblas?).  Even then Rcmdr complained about missing packages\n>>> when I ran it, and though it offered to install them, the installation\n>>> failed in every case, with no useful error messages.\n>>>\n>>> I have installed R and Rcmdr many times before to Windows and various\n>>> Linux distributions (it's on this Debian right now)  and never had so\n>>> much trouble.  Did I do something wrong?  Is there a problem with R on\n>>> Ubuntu?  I have programmed in Fortran so I don't mind adding a\n>>> compiler and I've taught linear algebra so I don't mind adding linear\n>>> algebra routines, but there is no way my students would ever figure\n>>> out that was needed.  I also noted that Rcmdr had a MUCH longer list\n>>> of dependencies than I remember.  All of this has me worried about\n>>> using R in an introductory course for folks who are not computer\n>>> science majors.\n>>>\n>>> Has anyone encountered a similar problem?  I used whatever version of\n>>> R is in the Ubuntu repository.  I seem to remember 2.4 though that\n>>> seems a bit old.\n>>>\n>>> ------->  First-time AP Stats. teacher?  Help is on the way! See\n>>>\n>>>  http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n>>>\n>>>  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)\n>>>  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/\n>>>  email  bob statland.org  (add your own \"@\" and save me some spam)\n>>>\n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>>\n>>\n>\n> --\n> There is no theory of evolution.\n> Just a list of animals Chuck Norris allows to live.\n>\n> http://www.chucknorrisfacts.com/\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_snippet": "On Sun, Feb 15, 2009 at 10:03 AM, tyler <tyler.smith at mail.mcgill.ca> wrote:\n> Ista Zahn <istazahn at gmail.com> writes:\n>\n>> I've found the version of R in the Ubuntu repository is almost always\n>>",
+      "thread_id": "thread-dd0e09ea8971",
+      "thread_depth": 3,
+      "month": "2009-02"
+    },
+    {
+      "id": "msg-1b4fc4bf06c9",
+      "message_id": "<878wo7inx2.fsf@blackbart.sedgenet>",
+      "from_name": "tyler",
+      "from_email_hash": "5175000895736522a94b46846e1b695cdc12921b61083ab626f75efaaf595f24",
+      "date": "2009-02-15T13:56:57-04:00",
+      "subject": "[R-sig-teaching] installing Rcmdr",
+      "subject_clean": "installing Rcmdr",
+      "in_reply_to": null,
+      "references": [
+        "<20090215022415.92847.qmail@mv.mv.com>",
+        "<f55e7cf50902142011h45090480v1c6ac5b8f2380bf3@mail.gmail.com>",
+        "<87zlgnbsbk.fsf@blackbart.sedgenet>",
+        "<de8c7cb40902150840s74803be7w6634611bdd3ffdd8@mail.gmail.com>"
+      ],
+      "body_plain": "Prasenjit Kapat <kapatp at gmail.com> writes:\n\n> On Sun, Feb 15, 2009 at 11:03 AM, tyler <tyler.smith at mail.mcgill.ca> wrote:\n>> Ista Zahn <istazahn at gmail.com> writes:\n>>\n>>> I've found the version of R in the Ubuntu repository is almost always\n>>> out of date. Here is the process I follow:\n>>>\n>>> 4) Start R from the command line as root so I can install packages\n>>> system-wide: sudo R\n>>\n>> As an alternative, if you set the permissions on\n>> /usr/local/lib/R/site-library to allow universal write access, you can\n>> call install.packages() from R without having root privileges:\n>>\n>> sudo chmod o+w /usr/local/lib/R/site-library\n>\n> Is that a safe / secure? \n\nI think the primary safety provided by granting only root access to\n/usr/local/lib/R/site-library is that it prevents random users from\ninstalling R packages. This is important if multiple users are depending\non the correct libraries being properly installed, but I think it's a\nnon-issue on single-user laptops. I don't think the security of my\nsystem is any less than if I was installing my packages to ~/mylibs/,\nwhich is what I do on my university's cluster. \n\nIn either case, an attack would require someone compromised my machine,\n(or the R repositories) and the impact would be limited to the installed\nR libraries (and everything else in ~/, of course, but that's the same\neither way). Which makes it even more important not to run R as root.\n\nI would welcome any corrections!\n\n> BTW what are the permissions on /usr/local/lib/R? Mine's already set\n> to 755 for the \"user\"!!! I though it used to be owned by root!\n\nOn my Debian machine, it's:\n\ndrwxrwsr-x 3 root staff   4096 2007-12-01 23:32 R\n\nCheers,\n\nTyler\n\n-- \nOnly YOU can stop forest fires.",
+      "body_snippet": "Prasenjit Kapat <kapatp at gmail.com> writes:\n\n> On Sun, Feb 15, 2009 at 11:03 AM, tyler <tyler.smith at mail.mcgill.ca> wrote:\n>> Ista Zahn <istazahn at gmail.com> writes:\n>>\n>>> I've found the versi",
+      "thread_id": "thread-dd0e09ea8971",
+      "thread_depth": 4,
+      "month": "2009-02"
+    },
+    {
+      "id": "msg-e2f70d9723be",
+      "message_id": "<f55e7cf50902271701m1912b0a8obd0edb0c268466d5@mail.gmail.com>",
+      "from_name": "Ista Zahn",
+      "from_email_hash": "2e4c8f48786fb76b910812e6407745b24d3e39c79018966c1f928657fc9989f2",
+      "date": "2009-02-27T20:01:43-05:00",
+      "subject": "[R-sig-teaching] Unbalanced factorial designs",
+      "subject_clean": "Unbalanced factorial designs",
+      "in_reply_to": "<f55e7cf50902271653l78534df0lf08f3e0254cdfc40@mail.gmail.com>",
+      "references": [
+        "<f55e7cf50902271653l78534df0lf08f3e0254cdfc40@mail.gmail.com>"
+      ],
+      "body_plain": "I see that the email has not gone through because of the attachment.\nThe file can be downloaded from\nhttp://prometheus.scp.rochester.edu/zlab/sites/default/files/InteractionsAndTypesOfSS.pdf\n\n-Ista\n\nOn Fri, Feb 27, 2009 at 7:53 PM, Ista Zahn <izahn at psych.rochester.edu> wrote:\n> Hi everyone,\n> This is not a very R-specific question, I hope that will be forgiven.\n> I am the teaching assistant for the graduate level regression course\n> in the department of clinical and social psychology at my university.\n> Many of the students are very confused about the issues that arise\n> when analyzing factorial designs with unequal cell sizes.\n>\n> I wrote the attached paper in an attempt to clarify these issues for\n> them. I'm concerned that my attempt to help them understand the issues\n> may just confuse them more, and I'm also concerned that I have be\n> mistaken about some of the claims I make in this paper.\n>\n> If you have time to look it over at let me know if you spot any\n> problems I would greatly appreciate it.\n>\n> Thank you,\n> Ista\n>",
+      "body_snippet": "I see that the email has not gone through because of the attachment.\nThe file can be downloaded from\nhttp://prometheus.scp.rochester.edu/zlab/sites/default/files/InteractionsAndTypesOfSS.pdf\n\n-Ista\n\nO",
+      "thread_id": "thread-e2f70d9723be",
+      "thread_depth": 0,
+      "month": "2009-02"
+    },
+    {
+      "id": "msg-1191a2a662ff",
+      "message_id": "<p06240828c5ce5fa20333@[192.168.1.108]>",
+      "from_name": "William Revelle",
+      "from_email_hash": "17775642d38a89586519cdb4da8b9881c3da6cb4b5abf51dc2b37a23be377688",
+      "date": "2009-02-27T21:29:44-06:00",
+      "subject": "[R-sig-teaching] Unbalanced factorial designs",
+      "subject_clean": "Unbalanced factorial designs",
+      "in_reply_to": "<f55e7cf50902271701m1912b0a8obd0edb0c268466d5@mail.gmail.com>",
+      "references": [
+        "<f55e7cf50902271653l78534df0lf08f3e0254cdfc40@mail.gmail.com>",
+        "<f55e7cf50902271701m1912b0a8obd0edb0c268466d5@mail.gmail.com>"
+      ],
+      "body_plain": "Ista,\n\n\nAt 8:01 PM -0500 2/27/09, Ista Zahn wrote:\n>I see that the email has not gone through because of the attachment.\n>The file can be downloaded from\n>http://prometheus.scp.rochester.edu/zlab/sites/default/files/InteractionsAndTypesOfSS.pdf\n>\n>-Ista\n>\n>On Fri, Feb 27, 2009 at 7:53 PM, Ista Zahn <izahn at psych.rochester.edu> wrote:\n>>  Hi everyone,\n>>  This is not a very R-specific question, I hope that will be forgiven.\n>>  I am the teaching assistant for the graduate level regression course\n>>  in the department of clinical and social psychology at my university.\n>>  Many of the students are very confused about the issues that arise\n>>  when analyzing factorial designs with unequal cell sizes.\n>>\n>>  I wrote the attached paper in an attempt to clarify these issues for\n>>  them. I'm concerned that my attempt to help them understand the issues\n>>  may just confuse them more, and I'm also concerned that I have be\n>>  mistaken about some of the claims I make in this paper.\n>>\n>>  If you have time to look it over at let me know if you spot any\n>>  problems I would greatly appreciate it.\n\n\n  From the point view of teaching ANOVA, this is great.  But from the \npoint of view of teaching how to use R to do the anova, it would be \nhelpful to include the R commands for the doing the various analyses. \n(As well as creating those  lovely tables.)  Nice job.\n\nBill\n\n\n>  >\n>>  Thank you,\n>>  Ista\n>>\n>\n>_______________________________________________\n>R-sig-teaching at r-project.org mailing list\n>https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\n-- \nWilliam Revelle\t\thttp://personality-project.org/revelle.html\nProfessor\t\t\thttp://personality-project.org/personality.html\nDepartment of Psychology             http://www.wcas.northwestern.edu/psych/\nNorthwestern University\thttp://www.northwestern.edu/\nUse R for psychology                       http://personality-project.org/r",
+      "body_snippet": "Ista,\n\n\nAt 8:01 PM -0500 2/27/09, Ista Zahn wrote:\n>I see that the email has not gone through because of the attachment.\n>The file can be downloaded from\n>http://prometheus.scp.rochester.edu/zlab/site",
+      "thread_id": "thread-e2f70d9723be",
+      "thread_depth": 1,
+      "month": "2009-02"
+    },
+    {
+      "id": "msg-504b44428580",
+      "message_id": "<a695148b0902272134v40d38579r1bd97a89cf197c3d@mail.gmail.com>",
+      "from_name": "G. Jay Kerns",
+      "from_email_hash": "50e93b09ae5eba7f3237d0e4291e3a6b8825a6fb21853bb3678551306330b319",
+      "date": "2009-02-28T00:34:27-05:00",
+      "subject": "[R-sig-teaching] Unbalanced factorial designs",
+      "subject_clean": "Unbalanced factorial designs",
+      "in_reply_to": "<p06240828c5ce5fa20333@192.168.1.108>",
+      "references": [
+        "<f55e7cf50902271653l78534df0lf08f3e0254cdfc40@mail.gmail.com>",
+        "<f55e7cf50902271701m1912b0a8obd0edb0c268466d5@mail.gmail.com>",
+        "<p06240828c5ce5fa20333@192.168.1.108>"
+      ],
+      "body_plain": "Dear Ista,\n\n> creating those ?lovely tables.) ?Nice job.\n>\n> Bill\n>\n\nI agree, nice job.  :-)  It is great that you are writing about these\nissues, and even better that you are sharing it.\n\nIn my classes, I discuss correlated contrasts using the geometric\napproach which is in many of the classical texts.  I am not sure how\nyour audience would respond to this.\n\nI didn't notice any glaring errors in your interpretation, but I\ndidn't study it thoroughly, either.  I trust that some of the masters\non this list will catch mistakes much more efficiently than I do.\n\nA few thoughts that in my view may improve your document:\n\n1) Page 6, paragraph 2, line 5:  \"The problem is that it is pretty\nobvious...\".  When I first read this, it was not obvious.  After\nglancing at the table, it was plausible.  But after looking at a\n*graph*, yes, it was obvious.  A visual display here might be a good\nidea.  One option would be a two-way interaction plot.  There is one\nin the HH package, and you can even get one in Rcmdr with\nRcmdrPlugin.HH:\n\nlibrary(HH)\ninteraction2wt(salary ~ education + gender, data = D)\n\n(the dataframe D is dumped at the bottom of this email).\n\n2)  I got the same Type III and Type II tables as you did, but the\nType II table was different...?\n\nlibrary(car)\noptions(contrasts=c(\"contr.Sum\", \"contr.poly\"))\n\nsalary.lm <- lm(salary ~ gender + education + gender:education, data = D)\nsummary(salary.lm)\n\nAnova(salary.lm)  #  Type II tests\nanova(salary.lm)  #  Type I tests\nAnova(salary.lm, type = \"III\")  #  Type III tests\n\n\n3)  I typically refrain from using the language that you have used\nconcerning \"ignoring\" and \"controlling\", etc.   I stick to the\nparametric jargon of column, row, and grand means.  This makes for\nprecise statements without any fear of misunderstanding, but again,\ninstructors should always keep the background of the audience in mind.\n\n\nRegardless of whether you like the ideas or not, the fact that you are\ngoing to the trouble of preparing a document like this for the class\nis admirable in its own right.  Keep it up.  :-)\n\nCheers,\nJay\n\nP.S. a once-over with a spell check would be good (it's going to\nstudents, right?).\n\n\n\n# the data\n\nD <-\nstructure(list(ID = 1:22, salary = c(24L, 26L, 25L, 24L, 27L,\n24L, 27L, 23L, 15L, 17L, 20L, 16L, 25L, 29L, 27L, 19L, 18L, 21L,\n20L, 21L, 22L, 19L), gender = structure(c(1L, 1L, 1L, 1L, 1L,\n1L, 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L,\n2L), .Label = c(\"Female\", \"Male\"), class = \"factor\"), education =\nstructure(c(1L,\n1L, 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 1L, 1L, 1L, 2L, 2L,\n2L, 2L, 2L, 2L, 2L), .Label = c(\"Collegeeducation\", \"Nocollegeeducation\"\n), class = \"factor\"), congend = structure(c(1L, 1L, 1L, 1L, 1L,\n1L, 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L,\n2L), .Label = c(\"1\", \"?1\"), class = \"factor\"), coneduc = structure(c(1L,\n1L, 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 1L, 1L, 1L, 2L, 2L,\n2L, 2L, 2L, 2L, 2L), .Label = c(\"1\", \"?1\"), class = \"factor\"),\n    congendeduc = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L,\n    2L, 2L, 2L, 2L, 2L, 2L, 2L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), .Label = c(\"1\",\n    \"?1\"), class = \"factor\")), .Names = c(\"ID\", \"salary\", \"gender\",\n\"education\", \"congend\", \"coneduc\", \"congendeduc\"), class =\n\"data.frame\", row.names = c(NA, -22L))\n\n\n\n\n\n***************************************************\nG. Jay Kerns, Ph.D.\nAssociate Professor\nDepartment of Mathematics & Statistics\nYoungstown State University\nYoungstown, OH 44555-0002 USA\nOffice: 1035 Cushwa Hall\nPhone: (330) 941-3310 Office (voice mail)\n-3302 Department\n-3170 FAX\nE-mail: gkerns at ysu.edu\nhttp://www.cc.ysu.edu/~gjkerns/",
+      "body_snippet": "Dear Ista,\n\n> creating those ?lovely tables.) ?Nice job.\n>\n> Bill\n>\n\nI agree, nice job.  :-)  It is great that you are writing about these\nissues, and even better that you are sharing it.\n\nIn my class",
+      "thread_id": "thread-504b44428580",
+      "thread_depth": 0,
+      "month": "2009-02"
+    },
+    {
+      "id": "msg-1f9b684e1d80",
+      "message_id": "<f55e7cf50902280653x58035fb5u31439be332295995@mail.gmail.com>",
+      "from_name": "Ista Zahn",
+      "from_email_hash": "2e4c8f48786fb76b910812e6407745b24d3e39c79018966c1f928657fc9989f2",
+      "date": "2009-02-28T09:53:47-05:00",
+      "subject": "[R-sig-teaching] Unbalanced factorial designs",
+      "subject_clean": "Unbalanced factorial designs",
+      "in_reply_to": "<p06240828c5ce5fa20333@192.168.1.108>",
+      "references": [
+        "<f55e7cf50902271653l78534df0lf08f3e0254cdfc40@mail.gmail.com>",
+        "<f55e7cf50902271701m1912b0a8obd0edb0c268466d5@mail.gmail.com>",
+        "<p06240828c5ce5fa20333@192.168.1.108>"
+      ],
+      "body_plain": "On Fri, Feb 27, 2009 at 10:29 PM, William Revelle <lists at revelle.net> wrote:\n> Ista,\n>\n>\n> At 8:01 PM -0500 2/27/09, Ista Zahn wrote:\n>>\n>> I see that the email has not gone through because of the attachment.\n>> The file can be downloaded from\n>>\n>> http://prometheus.scp.rochester.edu/zlab/sites/default/files/InteractionsAndTypesOfSS.pdf\n>>\n>> -Ista\n>>\n>> On Fri, Feb 27, 2009 at 7:53 PM, Ista Zahn <izahn at psych.rochester.edu>\n>> wrote:\n>>>\n>>> ?Hi everyone,\n>>> ?This is not a very R-specific question, I hope that will be forgiven.\n>>> ?I am the teaching assistant for the graduate level regression course\n>>> ?in the department of clinical and social psychology at my university.\n>>> ?Many of the students are very confused about the issues that arise\n>>> ?when analyzing factorial designs with unequal cell sizes.\n>>>\n>>> ?I wrote the attached paper in an attempt to clarify these issues for\n>>> ?them. I'm concerned that my attempt to help them understand the issues\n>>> ?may just confuse them more, and I'm also concerned that I have be\n>>> ?mistaken about some of the claims I make in this paper.\n>>>\n>>> ?If you have time to look it over at let me know if you spot any\n>>> ?problems I would greatly appreciate it.\n>\n>\n> ?From the point view of teaching ANOVA, this is great. ?But from the point\n> of view of teaching how to use R to do the anova, it would be helpful to\n> include the R commands for the doing the various analyses. (As well as\n> creating those ?lovely tables.) ?Nice job.\n\nThanks for the encouragement, and the suggestions. I will definitely\nuse your suggestion to include the R code in an appendix, but I will\nprobably remove the table-making commands because few of the student's\nuse LaTeX and I think it would just confuse them.\n\nThanks again,\nIsta\n\n>\n> Bill\n>\n>\n>> ?>\n>>>\n>>> ?Thank you,\n>>> ?Ista\n>>>\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n> --\n> William Revelle ? ? ? ? http://personality-project.org/revelle.html\n> Professor\n> http://personality-project.org/personality.html\n> Department of Psychology ? ? ? ? ? ? http://www.wcas.northwestern.edu/psych/\n> Northwestern University http://www.northwestern.edu/\n> Use R for psychology ? ? ? ? ? ? ? ? ? ? ? http://personality-project.org/r\n>",
+      "body_snippet": "On Fri, Feb 27, 2009 at 10:29 PM, William Revelle <lists at revelle.net> wrote:\n> Ista,\n>\n>\n> At 8:01 PM -0500 2/27/09, Ista Zahn wrote:\n>>\n>> I see that the email has not gone through because of the ",
+      "thread_id": "thread-1f9b684e1d80",
+      "thread_depth": 0,
+      "month": "2009-02"
+    },
+    {
+      "id": "msg-0f84f4db59cf",
+      "message_id": "<f55e7cf50902280658y463179fj1786b835717b6690@mail.gmail.com>",
+      "from_name": "Ista Zahn",
+      "from_email_hash": "2e4c8f48786fb76b910812e6407745b24d3e39c79018966c1f928657fc9989f2",
+      "date": "2009-02-28T09:58:57-05:00",
+      "subject": "[R-sig-teaching] Unbalanced factorial designs",
+      "subject_clean": "Unbalanced factorial designs",
+      "in_reply_to": "<a695148b0902272134v40d38579r1bd97a89cf197c3d@mail.gmail.com>",
+      "references": [
+        "<f55e7cf50902271653l78534df0lf08f3e0254cdfc40@mail.gmail.com>",
+        "<f55e7cf50902271701m1912b0a8obd0edb0c268466d5@mail.gmail.com>",
+        "<p06240828c5ce5fa20333@192.168.1.108>",
+        "<a695148b0902272134v40d38579r1bd97a89cf197c3d@mail.gmail.com>"
+      ],
+      "body_plain": "On Sat, Feb 28, 2009 at 12:34 AM, G. Jay Kerns <gkerns at ysu.edu> wrote:\n> Dear Ista,\n>\n>> creating those  lovely tables.)  Nice job.\n>>\n>> Bill\n>>\n>\n> I agree, nice job.  :-)  It is great that you are writing about these\n> issues, and even better that you are sharing it.\n>\n> In my classes, I discuss correlated contrasts using the geometric\n> approach which is in many of the classical texts.  I am not sure how\n> your audience would respond to this.\n>\n> I didn't notice any glaring errors in your interpretation, but I\n> didn't study it thoroughly, either.  I trust that some of the masters\n> on this list will catch mistakes much more efficiently than I do.\n>\n> A few thoughts that in my view may improve your document:\n>\n> 1) Page 6, paragraph 2, line 5:  \"The problem is that it is pretty\n> obvious...\".  When I first read this, it was not obvious.  After\n> glancing at the table, it was plausible.  But after looking at a\n> *graph*, yes, it was obvious.  A visual display here might be a good\n> idea.  One option would be a two-way interaction plot.  There is one\n> in the HH package, and you can even get one in Rcmdr with\n> RcmdrPlugin.HH:\n>\n> library(HH)\n> interaction2wt(salary ~ education + gender, data = D)\n>\n> (the dataframe D is dumped at the bottom of this email).\n>\n\nThanks, this is an excellent suggestion. You're right that it's much\nclearer when you plot the data.\n\n> 2)  I got the same Type III and Type II tables as you did, but the\n> Type II table was different...?\n>\n> library(car)\n> options(contrasts=c(\"contr.Sum\", \"contr.poly\"))\n>\n> salary.lm <- lm(salary ~ gender + education + gender:education, data = D)\n> summary(salary.lm)\n>\n> Anova(salary.lm)  #  Type II tests\n> anova(salary.lm)  #  Type I tests\n> Anova(salary.lm, type = \"III\")  #  Type III tests\n>\n\nI'll investigate and try to figure out why we got different results, thanks.\n>\n> 3)  I typically refrain from using the language that you have used\n> concerning \"ignoring\" and \"controlling\", etc.   I stick to the\n> parametric jargon of column, row, and grand means.  This makes for\n> precise statements without any fear of misunderstanding, but again,\n> instructors should always keep the background of the audience in mind.\n>\nI'll probably stick with the current terms, simply because they are\nconsistent with the textbook we are using.\n>\n> Regardless of whether you like the ideas or not, the fact that you are\n> going to the trouble of preparing a document like this for the class\n> is admirable in its own right.  Keep it up.  :-)\n>\nThanks for the encouragement!\n\n-Ista\n\n\n> Cheers,\n> Jay\n>\n> P.S. a once-over with a spell check would be good (it's going to\n> students, right?).\n>\n>\n>\n> # the data\n>\n> D <-\n> structure(list(ID = 1:22, salary = c(24L, 26L, 25L, 24L, 27L,\n> 24L, 27L, 23L, 15L, 17L, 20L, 16L, 25L, 29L, 27L, 19L, 18L, 21L,\n> 20L, 21L, 22L, 19L), gender = structure(c(1L, 1L, 1L, 1L, 1L,\n> 1L, 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L,\n> 2L), .Label = c(\"Female\", \"Male\"), class = \"factor\"), education =\n> structure(c(1L,\n> 1L, 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 1L, 1L, 1L, 2L, 2L,\n> 2L, 2L, 2L, 2L, 2L), .Label = c(\"Collegeeducation\", \"Nocollegeeducation\"\n> ), class = \"factor\"), congend = structure(c(1L, 1L, 1L, 1L, 1L,\n> 1L, 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L,\n> 2L), .Label = c(\"1\", \"-1\"), class = \"factor\"), coneduc = structure(c(1L,\n> 1L, 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 1L, 1L, 1L, 2L, 2L,\n> 2L, 2L, 2L, 2L, 2L), .Label = c(\"1\", \"-1\"), class = \"factor\"),\n>    congendeduc = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L,\n>    2L, 2L, 2L, 2L, 2L, 2L, 2L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), .Label = c(\"1\",\n>    \"-1\"), class = \"factor\")), .Names = c(\"ID\", \"salary\", \"gender\",\n> \"education\", \"congend\", \"coneduc\", \"congendeduc\"), class =\n> \"data.frame\", row.names = c(NA, -22L))\n>\n>\n>\n>\n>\n> ***************************************************\n> G. Jay Kerns, Ph.D.\n> Associate Professor\n> Department of Mathematics & Statistics\n> Youngstown State University\n> Youngstown, OH 44555-0002 USA\n> Office: 1035 Cushwa Hall\n> Phone: (330) 941-3310 Office (voice mail)\n> -3302 Department\n> -3170 FAX\n> E-mail: gkerns at ysu.edu\n> http://www.cc.ysu.edu/~gjkerns/\n>",
+      "body_snippet": "On Sat, Feb 28, 2009 at 12:34 AM, G. Jay Kerns <gkerns at ysu.edu> wrote:\n> Dear Ista,\n>\n>> creating those  lovely tables.)  Nice job.\n>>\n>> Bill\n>>\n>\n> I agree, nice job.  :-)  It is great that you a",
+      "thread_id": "thread-504b44428580",
+      "thread_depth": 1,
+      "month": "2009-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-99c7b4f4f6ce",
+      "subject": "issues with importing",
+      "message_count": 1,
+      "participants": [
+        "Liviu Andronic"
+      ],
+      "started": "2009-02-01T09:50:39+01:00",
+      "last_reply": "2009-02-01T09:50:39+01:00",
+      "root_message_id": "msg-99c7b4f4f6ce"
+    },
+    {
+      "id": "thread-711d565b1825",
+      "subject": "Who is the list for?",
+      "message_count": 1,
+      "participants": [
+        "Martin Maechler"
+      ],
+      "started": "2009-02-09T09:36:20+01:00",
+      "last_reply": "2009-02-09T09:36:20+01:00",
+      "root_message_id": "msg-711d565b1825"
+    },
+    {
+      "id": "thread-dd0e09ea8971",
+      "subject": "installing Rcmdr",
+      "message_count": 10,
+      "participants": [
+        "Douglas Bates",
+        "G. Jay Kerns",
+        "Ista Zahn",
+        "John Fox",
+        "Prasenjit Kapat",
+        "Robert W. Hayden",
+        "tyler"
+      ],
+      "started": "2009-02-14T21:24:15-05:00",
+      "last_reply": "2009-02-15T13:56:57-04:00",
+      "root_message_id": "msg-dd0e09ea8971"
+    },
+    {
+      "id": "thread-2eae1e9add8f",
+      "subject": "installing Rcmdr",
+      "message_count": 1,
+      "participants": [
+        "Robert W. Hayden"
+      ],
+      "started": "2009-02-15T12:30:13-05:00",
+      "last_reply": "2009-02-15T12:30:13-05:00",
+      "root_message_id": "msg-2eae1e9add8f"
+    },
+    {
+      "id": "thread-e2f70d9723be",
+      "subject": "Unbalanced factorial designs",
+      "message_count": 2,
+      "participants": [
+        "Ista Zahn",
+        "William Revelle"
+      ],
+      "started": "2009-02-27T20:01:43-05:00",
+      "last_reply": "2009-02-27T21:29:44-06:00",
+      "root_message_id": "msg-e2f70d9723be"
+    },
+    {
+      "id": "thread-504b44428580",
+      "subject": "Unbalanced factorial designs",
+      "message_count": 2,
+      "participants": [
+        "G. Jay Kerns",
+        "Ista Zahn"
+      ],
+      "started": "2009-02-28T00:34:27-05:00",
+      "last_reply": "2009-02-28T09:58:57-05:00",
+      "root_message_id": "msg-504b44428580"
+    },
+    {
+      "id": "thread-1f9b684e1d80",
+      "subject": "Unbalanced factorial designs",
+      "message_count": 1,
+      "participants": [
+        "Ista Zahn"
+      ],
+      "started": "2009-02-28T09:53:47-05:00",
+      "last_reply": "2009-02-28T09:53:47-05:00",
+      "root_message_id": "msg-1f9b684e1d80"
+    }
+  ]
+}

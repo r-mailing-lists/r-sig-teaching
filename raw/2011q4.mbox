@@ -1,0 +1,164 @@
+From zanaty2005 at yahoo.com  Sun Oct 30 13:28:10 2011
+From: zanaty2005 at yahoo.com (Ali Zanaty)
+Date: Sun, 30 Oct 2011 05:28:10 -0700 (PDT)
+Subject: [R-sig-teaching] Comparing two regression lines
+Message-ID: <1319977690.47335.YahooMailClassic@web162203.mail.bf1.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20111030/56c3d880/attachment.pl>
+
+From zanaty2005 at yahoo.com  Sun Oct 30 14:31:17 2011
+From: zanaty2005 at yahoo.com (Ali Zanaty)
+Date: Sun, 30 Oct 2011 06:31:17 -0700 (PDT)
+Subject: [R-sig-teaching] Comparing two Regression Lines (Clarify)
+Message-ID: <1319981477.54624.YahooMailClassic@web162218.mail.bf1.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20111030/106c253f/attachment.pl>
+
+From nnagle at utk.edu  Mon Oct 31 13:43:30 2011
+From: nnagle at utk.edu (Nagle, Nicholas)
+Date: Mon, 31 Oct 2011 12:43:30 +0000
+Subject: [R-sig-teaching] Comparing two Regression Lines
+Message-ID: <6F81A23F-BB1D-4DA3-8747-73BB3DC3EB41@utk.edu>
+
+Try this for starters:
+
+X1<-c(25, 50, 100, 200, 400)
+Y1<-c(77.7, 78, 64.3, 59.7, 51.2)
+
+X2<-c(25, 50, 100, 200)
+Y2<-c(77.7, 52.3, 23.7, 6)
+
+dat1 <- data.frame(X=X1,Y=Y1,f='D1')
+dat2 <- data.frame(X=X2,Y=Y2,f='D2')
+
+dat <- rbind(dat1,dat2)
+
+model <- lm(Y~X*f,data=dat)
+summary(model)
+# Test H_0: fD2=0 for difference in intercept
+# Test H_0: X:fD2=0 for difference in slopes.
+
+# Don't forget this test!
+anova(lm(Y~X,data=dat),lm(Y~X*f,data=dat))
+
+library(ggplot2)
+ggplot(data=dat,aes(x=X,y=Y,group=f))+geom_point(aes(colour=f))+xlim(0,400)+geom_abline(intercept=77.175,slope=-0.07094)+geom_abline(intercept=(77.175-1.54022), slope=(-.07094-.30997))
+
+
+
+Nicholas
+
+From pauljohn32 at gmail.com  Tue Nov 22 21:19:54 2011
+From: pauljohn32 at gmail.com (Paul Johnson)
+Date: Tue, 22 Nov 2011 14:19:54 -0600
+Subject: [R-sig-teaching] Regression textbooks
+Message-ID: <CAErODj9JtdzR=_OfxqkM3Ui4vkjEdVhGr0=EpdF48W8Mc5AF0w@mail.gmail.com>
+
+What regression textbooks are you using in stat courses that introduce
+regression?  I'm looking for something with approximately the same
+intended scope as Cohen, Cohen, West and Aiken, Applied Multiple
+Regression.  That presents OLS, interactions, categorical variables,
+and elementary GLM (logit, poisson).    In our second regression
+course, we work in more detail with John Fox's Applied Regression and
+the Companion book.  Leading up to that, I need some book that is a
+bit more applied in nature, with examples from various fields of
+study. Something about 200 pages long that ends with a chapter on
+logistic regression would be fine.  There was a book called Regression
+Analysis By Example, by Samprit Chatterjee, Ali S. Hadi and Bertram
+Price, was headed in the right direction, but it seems not to be in
+development any more.
+
+If it has R example code for certain basic analysis, it would be perfect.
+
+Suggestions?
+
+-- 
+Paul E. Johnson
+Professor, Political Science
+1541 Lilac Lane, Room 504
+University of Kansas
+
+
+From rmh at temple.edu  Tue Nov 22 21:38:06 2011
+From: rmh at temple.edu (Richard M. Heiberger)
+Date: Tue, 22 Nov 2011 15:38:06 -0500
+Subject: [R-sig-teaching] Regression textbooks
+In-Reply-To: <CAErODj9JtdzR=_OfxqkM3Ui4vkjEdVhGr0=EpdF48W8Mc5AF0w@mail.gmail.com>
+References: <CAErODj9JtdzR=_OfxqkM3Ui4vkjEdVhGr0=EpdF48W8Mc5AF0w@mail.gmail.com>
+Message-ID: <CAGx1TMCVMuT62ZvEZEhAEzOAA1jQq=B_k-LGcfuNJcQp=2NtTA@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20111122/fe97609c/attachment.pl>
+
+From ramos.grad.student at gmail.com  Tue Nov 22 22:07:51 2011
+From: ramos.grad.student at gmail.com (Antonio P. Ramos)
+Date: Tue, 22 Nov 2011 13:07:51 -0800
+Subject: [R-sig-teaching] Regression textbooks
+In-Reply-To: <CAGx1TMCVMuT62ZvEZEhAEzOAA1jQq=B_k-LGcfuNJcQp=2NtTA@mail.gmail.com>
+References: <CAErODj9JtdzR=_OfxqkM3Ui4vkjEdVhGr0=EpdF48W8Mc5AF0w@mail.gmail.com>
+	<CAGx1TMCVMuT62ZvEZEhAEzOAA1jQq=B_k-LGcfuNJcQp=2NtTA@mail.gmail.com>
+Message-ID: <CAHawB9srNu_f28OsFghF+ryHUf2CaXD058zUOKOQuXOKYWZjwg@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20111122/6e2e7c22/attachment.pl>
+
+From Zeno.Adams at ebs.edu  Wed Nov 23 09:56:01 2011
+From: Zeno.Adams at ebs.edu (Adams, Zeno)
+Date: Wed, 23 Nov 2011 09:56:01 +0100
+Subject: [R-sig-teaching] Regression textbooks
+In-Reply-To: <CAErODj9JtdzR=_OfxqkM3Ui4vkjEdVhGr0=EpdF48W8Mc5AF0w@mail.gmail.com>
+References: <CAErODj9JtdzR=_OfxqkM3Ui4vkjEdVhGr0=EpdF48W8Mc5AF0w@mail.gmail.com>
+Message-ID: <9064522880125945B98983BBAECBA1CC02C9CC2E@exchsrv001.ebs.local>
+
+In my view there is no better book for regression (including
+interactions, categorical variables, and elementary GLMs) than Jeffrey
+Wooldridge (2008), Introductory Econometrics: A Modern Approach, 4th ed.
+
+Where I work this book is sort of the bible for Econometrics.
+
+Zeno
+
+-----Original Message-----
+From: r-sig-teaching-bounces at r-project.org
+[mailto:r-sig-teaching-bounces at r-project.org] On Behalf Of Paul Johnson
+Sent: Dienstag, 22. November 2011 21:20
+To: r-sig-teaching at r-project.org
+Subject: [R-sig-teaching] Regression textbooks
+
+What regression textbooks are you using in stat courses that introduce
+regression?  I'm looking for something with approximately the same
+intended scope as Cohen, Cohen, West and Aiken, Applied Multiple
+Regression.  That presents OLS, interactions, categorical variables,
+and elementary GLM (logit, poisson).    In our second regression
+course, we work in more detail with John Fox's Applied Regression and
+the Companion book.  Leading up to that, I need some book that is a
+bit more applied in nature, with examples from various fields of
+study. Something about 200 pages long that ends with a chapter on
+logistic regression would be fine.  There was a book called Regression
+Analysis By Example, by Samprit Chatterjee, Ali S. Hadi and Bertram
+Price, was headed in the right direction, but it seems not to be in
+development any more.
+
+If it has R example code for certain basic analysis, it would be
+perfect.
+
+Suggestions?
+
+-- 
+Paul E. Johnson
+Professor, Political Science
+1541 Lilac Lane, Room 504
+University of Kansas
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+-------------- next part --------------
+EBS European Business School gemeinnuetzige GmbH, Amtsgericht Wiesbaden HRB 19951; Universitaet fuer Wirtschaft und Recht, Umsatzsteuer-ID DE 113891213; Aufsichtsrat: Dr. Hellmut K. Albrecht, Vorsitzender; Geschaeftsfuehrung: Professor Dr. Rolf D. Cremer, Pr?sident; Professor Dr. Rolf Tilmes, Dekan EBS Business School; Professor Dr. Dr. Gerrick Frhr. v. Hoyningen-Huene, Dekan EBS Law School; Georg Nikolaus Garlichs, Kanzler
+

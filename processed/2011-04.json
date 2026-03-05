@@ -1,0 +1,205 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2011-04",
+  "messages": [
+    {
+      "id": "msg-0fc81b0c2843",
+      "message_id": "<940519.9371.qm@web59511.mail.ac4.yahoo.com>",
+      "from_name": "Ali Zanaty",
+      "from_email_hash": "65acd645f9ed74fc7721f9ea58469b32335ac44f193ffbf59b7c89913407d9ac",
+      "date": "2011-04-02T14:12:05-07:00",
+      "subject": "[R-sig-teaching] Plotting the P value",
+      "subject_clean": "Plotting the P value",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110402/1c46020e/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110402/1c46020e/attachment.pl>",
+      "thread_id": "thread-0fc81b0c2843",
+      "thread_depth": 0,
+      "month": "2011-04"
+    },
+    {
+      "id": "msg-fa4626f6a0ca",
+      "message_id": "<BANLkTi=mB9n8W2tAiTxeDratHzWRBQzZBg@mail.gmail.com>",
+      "from_name": "Paul Johnson",
+      "from_email_hash": "b96b8a38c7fef12892ac8cae395028a3b39f3acce423d9c564ab27dc864c47b3",
+      "date": "2011-04-02T16:55:15-05:00",
+      "subject": "[R-sig-teaching] Plotting the P value",
+      "subject_clean": "Plotting the P value",
+      "in_reply_to": "<940519.9371.qm@web59511.mail.ac4.yahoo.com>",
+      "references": [
+        "<940519.9371.qm@web59511.mail.ac4.yahoo.com>"
+      ],
+      "body_plain": "Run this:\n\nhttp://pj.freefaculty.org/R/WorkingExamples/Normal1_2009_plotmathExample.R\n\nYour eyes will dance with joy! As I demonstrate:\n\nhttp://pj.freefaculty.org/R/WorkingExamples/Normal-2009.pdf\n\nI've got a few handy examples in that same folder, browse all you want.\n\npj\n\nOn Sat, Apr 2, 2011 at 4:12 PM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:\n> Dear? All R users:\n>\n>\n>\n> Can someone help me with the plotting the p-values under the normal curve (say).\n>\n>\n>\n> Thank you so much.\n>\n>\n>\n> Ali\n>\n>\n>\n>\n>\n>\n> ? ? ? ?[[alternative HTML version deleted]]\n>\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n\n\n\n-- \nPaul E. Johnson\nProfessor, Political Science\n1541 Lilac Lane, Room 504\nUniversity of Kansas",
+      "body_snippet": "Run this:\n\nhttp://pj.freefaculty.org/R/WorkingExamples/Normal1_2009_plotmathExample.R\n\nYour eyes will dance with joy! As I demonstrate:\n\nhttp://pj.freefaculty.org/R/WorkingExamples/Normal-2009.pdf\n\nI'",
+      "thread_id": "thread-0fc81b0c2843",
+      "thread_depth": 1,
+      "month": "2011-04"
+    },
+    {
+      "id": "msg-eaff38470497",
+      "message_id": "<42367154246C08458DDA1F9A7AD483468B71AB35@nc-mail.northland.edu>",
+      "from_name": "Derek Ogle",
+      "from_email_hash": "d8ab15f0ac0477824b0baa65b33adead59b0eceb86ebb5176308d5f8cceaa2ec",
+      "date": "2011-04-02T17:05:55-05:00",
+      "subject": "[R-sig-teaching] Plotting the P value",
+      "subject_clean": "Plotting the P value",
+      "in_reply_to": "<940519.9371.qm@web59511.mail.ac4.yahoo.com>",
+      "references": [
+        "<940519.9371.qm@web59511.mail.ac4.yahoo.com>"
+      ],
+      "body_plain": "Ali,\n\nI'm not completely sure of your purpose but I have my students use plot.htest() in my NCStats package (available at rforge.net/NCStats) to plot the p-value following the results of z.test() (from TeachingDemos package), t.test(), or chisq.test().  You might also consider distrib() in NCStats (it is more general and is simply a wrapper to pnorm(), qnorm(), etc. and won't, for example, show a two-tailed alternative).  Examples of both are in the help pages -- ?plot.htest or ?distrib.\n\n\n\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-\n> bounces at r-project.org] On Behalf Of Ali Zanaty\n> Sent: Saturday, April 02, 2011 4:12 PM\n> To: r-sig-teaching at r-project.org\n> Subject: [R-sig-teaching] Plotting the P value\n> \n> Dear? All R users:\n> \n> \n> \n> Can someone help me with the plotting the p-values under the normal curve\n> (say).\n> \n> \n> \n> Thank you so much.\n> \n> \n> \n> Ali\n> \n> \n> \n> \n> \n> \n> \t[[alternative HTML version deleted]]",
+      "body_snippet": "Ali,\n\nI'm not completely sure of your purpose but I have my students use plot.htest() in my NCStats package (available at rforge.net/NCStats) to plot the p-value following the results of z.test() (fro",
+      "thread_id": "thread-0fc81b0c2843",
+      "thread_depth": 1,
+      "month": "2011-04"
+    },
+    {
+      "id": "msg-e2eb413a99e4",
+      "message_id": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC63456B7B28@LP-EXMBVS10.CO.IHC.COM>",
+      "from_name": "Greg Snow",
+      "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
+      "date": "2011-04-02T20:47:59-06:00",
+      "subject": "[R-sig-teaching] Plotting the P value",
+      "subject_clean": "Plotting the P value",
+      "in_reply_to": "<940519.9371.qm@web59511.mail.ac4.yahoo.com>",
+      "references": [
+        "<940519.9371.qm@web59511.mail.ac4.yahoo.com>"
+      ],
+      "body_plain": "Look at the power.examp function in the TeachingDemos function.  It may be what you want, or you could take some of the code from it to do what you want.\n\nThe function Pvalue.norm.sim (also in TeachingDemos) may also be of interest.\n\n-- \nGregory (Greg) L. Snow Ph.D.\nStatistical Data Center\nIntermountain Healthcare\ngreg.snow at imail.org\n801.408.8111\n\n\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-\n> bounces at r-project.org] On Behalf Of Ali Zanaty\n> Sent: Saturday, April 02, 2011 3:12 PM\n> To: r-sig-teaching at r-project.org\n> Subject: [R-sig-teaching] Plotting the P value\n> \n> Dear? All R users:\n> \n> \n> \n> Can someone help me with the plotting the p-values under the normal\n> curve (say).\n> \n> \n> \n> Thank you so much.\n> \n> \n> \n> Ali\n> \n> \n> \n> \n> \n> \n> \t[[alternative HTML version deleted]]",
+      "body_snippet": "Look at the power.examp function in the TeachingDemos function.  It may be what you want, or you could take some of the code from it to do what you want.\n\nThe function Pvalue.norm.sim (also in Teachin",
+      "thread_id": "thread-0fc81b0c2843",
+      "thread_depth": 1,
+      "month": "2011-04"
+    },
+    {
+      "id": "msg-992cbae6ef1b",
+      "message_id": "<BANLkTikCZktSXmjCumuGX4QVEyO5Veh8eQ@mail.gmail.com>",
+      "from_name": "Joshua Wiley",
+      "from_email_hash": "c7f07c588294f110fffa28fa75e197f5a9d40a76afe0853fbdeb1992dab12a4a",
+      "date": "2011-04-02T20:09:05-07:00",
+      "subject": "[R-sig-teaching] Plotting the P value",
+      "subject_clean": "Plotting the P value",
+      "in_reply_to": "<BANLkTi=mB9n8W2tAiTxeDratHzWRBQzZBg@mail.gmail.com>",
+      "references": [
+        "<940519.9371.qm@web59511.mail.ac4.yahoo.com>",
+        "<BANLkTi=mB9n8W2tAiTxeDratHzWRBQzZBg@mail.gmail.com>"
+      ],
+      "body_plain": "Hi Ali,\n\nThis is along the lines of Paul Johnson's plot, but more functiony and\nsans fancy labels.  I just wrote this to speed up including some\nexamples of the shapes of different distributions and the effects on\n\"critical\" regions in the tails for introductory psychology students\nso it does not cover too many distributions.  But it is easy to use\nand quickly outputs to PDF for easy inclusion in TeX documents.  With\na bit of tweaking, you could make the fill transparent and plot\nseveral overlapping distributions on the same graph (e.g., for power\nor ....)\n\nHTH,\n\nJosh\n\nPlotDist <- function (alpha, from = -5, to = 5, n = 1000, filename = NULL,\n    alternative = c(\"two.tailed\", \"greater\", \"lesser\"), distribution =\nc(\"normal\",\n        \"t\", \"F\", \"chisq\", \"binomial\"), colour = \"black\", fill = \"skyblue2\",\n    ...)\n{\n    alternative <- match.arg(alternative)\n    alt.alpha <- switch(alternative, two.tailed = alpha/2, greater = alpha,\n        lesser = alpha)\n    MyDen <- switch(distribution, normal = dnorm, t = dt, F = df,\n        chisq = dchisq, binomial = dbinom)\n    MyDist <- switch(distribution, normal = qnorm, t = qt, F = qf,\n        chisq = qchisq, binomial = qbinom)\n    crit.lower <- MyDist(p = alt.alpha, lower.tail = TRUE, ...)\n    crit.upper <- MyDist(p = alt.alpha, lower.tail = FALSE, ...)\n    cord.x1 <- c(from, seq(from = from, to = crit.lower, length.out = 100),\n        crit.lower)\n    cord.y1 <- c(0, MyDen(x = seq(from = from, to = crit.lower,\n        length.out = 100), ...), 0)\n    cord.x2 <- c(crit.upper, seq(from = crit.upper, to = to,\n        length.out = 100), to)\n    cord.y2 <- c(0, MyDen(x = seq(from = crit.upper, to = to,\n        length.out = 100), ...), 0)\n    if (!is.null(filename)) pdf(file = filename)\n    curve(MyDen(x, ...), from = from, to = to, n = n, col = colour,\n        lty = 1, lwd = 2, ylab = \"Density\", xlab = \"Values\")\n    if (!identical(alternative, \"greater\")) {\n        polygon(x = cord.x1, y = cord.y1, col = fill)\n    }\n    if (!identical(alternative, \"lesser\")) {\n        polygon(x = cord.x2, y = cord.y2, col = fill)\n    }\n    if (!is.null(filename)) dev.off()\n}\n\nOn Sat, Apr 2, 2011 at 2:55 PM, Paul Johnson <pauljohn32 at gmail.com> wrote:\n> Run this:\n>\n> http://pj.freefaculty.org/R/WorkingExamples/Normal1_2009_plotmathExample.R\n>\n> Your eyes will dance with joy! As I demonstrate:\n>\n> http://pj.freefaculty.org/R/WorkingExamples/Normal-2009.pdf\n>\n> I've got a few handy examples in that same folder, browse all you want.\n>\n> pj\n>\n> On Sat, Apr 2, 2011 at 4:12 PM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:\n>> Dear? All R users:\n>>\n>>\n>>\n>> Can someone help me with the plotting the p-values under the normal curve (say).\n>>\n>>\n>>\n>> Thank you so much.\n>>\n>>\n>>\n>> Ali\n>>\n>>\n>>\n>>\n>>\n>>\n>> ? ? ? ?[[alternative HTML version deleted]]\n>>\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>>\n>\n>\n>\n> --\n> Paul E. Johnson\n> Professor, Political Science\n> 1541 Lilac Lane, Room 504\n> University of Kansas\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \nJoshua Wiley\nPh.D. Student, Health Psychology\nUniversity of California, Los Angeles\nhttp://www.joshuawiley.com/",
+      "body_snippet": "Hi Ali,\n\nThis is along the lines of Paul Johnson's plot, but more functiony and\nsans fancy labels.  I just wrote this to speed up including some\nexamples of the shapes of different distributions and t",
+      "thread_id": "thread-0fc81b0c2843",
+      "thread_depth": 2,
+      "month": "2011-04"
+    },
+    {
+      "id": "msg-01b5bb33133a",
+      "message_id": "<BANLkTi=ywLx-5DJeti=zTBeoj-iBU_E=-A@mail.gmail.com>",
+      "from_name": "Liviu Andronic",
+      "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
+      "date": "2011-04-04T16:43:23+02:00",
+      "subject": "[R-sig-teaching] Plotting the P value",
+      "subject_clean": "Plotting the P value",
+      "in_reply_to": "<940519.9371.qm@web59511.mail.ac4.yahoo.com>",
+      "references": [
+        "<940519.9371.qm@web59511.mail.ac4.yahoo.com>"
+      ],
+      "body_plain": "On Sat, Apr 2, 2011 at 11:12 PM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:\n> Can someone help me with the plotting the p-values under the normal curve (say).\n>\nSee this thread [1] for additional pointers on doing this. Regards\nLiviu\n\n[1] http://www.mail-archive.com/r-sig-teaching at r-project.org/msg00278.html",
+      "body_snippet": "On Sat, Apr 2, 2011 at 11:12 PM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:\n> Can someone help me with the plotting the p-values under the normal curve (say).\n>\nSee this thread [1] for additional poi",
+      "thread_id": "thread-0fc81b0c2843",
+      "thread_depth": 1,
+      "month": "2011-04"
+    },
+    {
+      "id": "msg-8ecb16a4c9d2",
+      "message_id": "<480810.35423.qm@web30601.mail.mud.yahoo.com>",
+      "from_name": "jose romero",
+      "from_email_hash": "a239d2abfd6000b3143932058ce49c6bcae353eae79bc898cb147e87d639754c",
+      "date": "2011-04-05T06:12:08-07:00",
+      "subject": "[R-sig-teaching] load an image file using an Rweb server",
+      "subject_clean": "load an image file using an Rweb server",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110405/eacfccc7/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110405/eacfccc7/attachment.pl>",
+      "thread_id": "thread-8ecb16a4c9d2",
+      "thread_depth": 0,
+      "month": "2011-04"
+    },
+    {
+      "id": "msg-8c7d57fe6d15",
+      "message_id": "<687457.72545.qm@web59516.mail.ac4.yahoo.com>",
+      "from_name": "Ali Zanaty",
+      "from_email_hash": "65acd645f9ed74fc7721f9ea58469b32335ac44f193ffbf59b7c89913407d9ac",
+      "date": "2011-04-18T10:12:24-07:00",
+      "subject": "[R-sig-teaching] Rejection region for F test",
+      "subject_clean": "Rejection region for F test",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110418/f4df140c/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110418/f4df140c/attachment.pl>",
+      "thread_id": "thread-8c7d57fe6d15",
+      "thread_depth": 0,
+      "month": "2011-04"
+    },
+    {
+      "id": "msg-25b05feb43f5",
+      "message_id": "<BANLkTi=6TdRL-Lc_knaJuJby2BupnyM47g@mail.gmail.com>",
+      "from_name": "Joshua Wiley",
+      "from_email_hash": "c7f07c588294f110fffa28fa75e197f5a9d40a76afe0853fbdeb1992dab12a4a",
+      "date": "2011-04-18T10:21:12-07:00",
+      "subject": "[R-sig-teaching] Rejection region for F test",
+      "subject_clean": "Rejection region for F test",
+      "in_reply_to": "<687457.72545.qm@web59516.mail.ac4.yahoo.com>",
+      "references": [
+        "<687457.72545.qm@web59516.mail.ac4.yahoo.com>"
+      ],
+      "body_plain": "Hi Ali,\n\nThe same mechanisms that shade the area of a distribution for\ndifferent p-values will also work for the rejection region, so see the\nsuggestions from your previous email.  If you need to find the values,\nlook at ?qf\n\nCheers,\n\nJosh\n\nOn Mon, Apr 18, 2011 at 10:12 AM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:\n> Dear R users:\n>\n> I need some helps with graphing and shading the rejection region for the F test\n> (say ANOVA test).\n>\n> With many thanks\n> Ali\n> ? ? ? ?[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \nJoshua Wiley\nPh.D. Student, Health Psychology\nUniversity of California, Los Angeles\nhttp://www.joshuawiley.com/",
+      "body_snippet": "Hi Ali,\n\nThe same mechanisms that shade the area of a distribution for\ndifferent p-values will also work for the rejection region, so see the\nsuggestions from your previous email.  If you need to find",
+      "thread_id": "thread-8c7d57fe6d15",
+      "thread_depth": 1,
+      "month": "2011-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-0fc81b0c2843",
+      "subject": "Plotting the P value",
+      "message_count": 6,
+      "participants": [
+        "Ali Zanaty",
+        "Derek Ogle",
+        "Greg Snow",
+        "Joshua Wiley",
+        "Liviu Andronic",
+        "Paul Johnson"
+      ],
+      "started": "2011-04-02T14:12:05-07:00",
+      "last_reply": "2011-04-04T16:43:23+02:00",
+      "root_message_id": "msg-0fc81b0c2843"
+    },
+    {
+      "id": "thread-8ecb16a4c9d2",
+      "subject": "load an image file using an Rweb server",
+      "message_count": 1,
+      "participants": [
+        "jose romero"
+      ],
+      "started": "2011-04-05T06:12:08-07:00",
+      "last_reply": "2011-04-05T06:12:08-07:00",
+      "root_message_id": "msg-8ecb16a4c9d2"
+    },
+    {
+      "id": "thread-8c7d57fe6d15",
+      "subject": "Rejection region for F test",
+      "message_count": 2,
+      "participants": [
+        "Ali Zanaty",
+        "Joshua Wiley"
+      ],
+      "started": "2011-04-18T10:12:24-07:00",
+      "last_reply": "2011-04-18T10:21:12-07:00",
+      "root_message_id": "msg-8c7d57fe6d15"
+    }
+  ]
+}

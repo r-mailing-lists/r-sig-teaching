@@ -1,0 +1,199 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2009-01",
+  "messages": [
+    {
+      "id": "msg-5e71eca11e15",
+      "message_id": "<a17f8fd00901311155p7923794dp14dec34724b0f43@mail.gmail.com>",
+      "from_name": "Anna Supady",
+      "from_email_hash": "57520d684ebd1473e30ddc0ca310dae58807500071ecdd96d6983dd9df24b818",
+      "date": "2009-01-31T13:55:43-06:00",
+      "subject": "[R-sig-teaching] issues with importing",
+      "subject_clean": "issues with importing",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090131/e821f116/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090131/e821f116/attachment.pl>",
+      "thread_id": "thread-5e71eca11e15",
+      "thread_depth": 0,
+      "month": "2009-01"
+    },
+    {
+      "id": "msg-e7c91d31768c",
+      "message_id": "<644e1f320901311158u7b94ff3br67c2d582827b635f@mail.gmail.com>",
+      "from_name": "jim holtman",
+      "from_email_hash": "46f979d1a5bf6fa8b5559d3a049add9a0eb45fffc6a219e7401d97ba07ef9a0f",
+      "date": "2009-01-31T14:58:56-05:00",
+      "subject": "[R-sig-teaching] issues with importing",
+      "subject_clean": "issues with importing",
+      "in_reply_to": "<a17f8fd00901311155p7923794dp14dec34724b0f43@mail.gmail.com>",
+      "references": [
+        "<a17f8fd00901311155p7923794dp14dec34724b0f43@mail.gmail.com>"
+      ],
+      "body_plain": "What exactly are you trying to do with Excel?  Have you tried\nexporting as CSV and then using 'read.csv' in R?  Exactly what error\nmessage are you getting and what statements were you executing.\n\nTo create your matrix, use 'matrix',\n\nOn Sat, Jan 31, 2009 at 2:55 PM, Anna Supady <statistics2020 at gmail.com> wrote:\n> Hello Everyone,\n> I am a new R user. Not everything goes so easy. I have many questions. I\n> believe that this is the place where one can discuss issue in R programing.\n> I cannot get excel file open using file location. Only note pad works but\n> some data is in excel. How can I do that? Also, I need to create MATRIX OF\n> DIMENSIONS nxn. I am not sure how to do that.\n>\n> Thanks for help,\n> Ania\n>\n>        [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \nJim Holtman\nCincinnati, OH\n+1 513 646 9390\n\nWhat is the problem that you are trying to solve?",
+      "body_snippet": "What exactly are you trying to do with Excel?  Have you tried\nexporting as CSV and then using 'read.csv' in R?  Exactly what error\nmessage are you getting and what statements were you executing.\n\nTo c",
+      "thread_id": "thread-5e71eca11e15",
+      "thread_depth": 1,
+      "month": "2009-01"
+    },
+    {
+      "id": "msg-7ed038d58c4a",
+      "message_id": "<p23osgex4ohjx0d0g0iu3bur.1233432518075@email.android.com>",
+      "from_name": "Christopher Desjardins",
+      "from_email_hash": "5e9cf370aebe8caaff5b6676dd20b7212df81a6db7d85f7227f201abf7ba409f",
+      "date": "2009-01-31T14:08:37-06:00",
+      "subject": "[R-sig-teaching] issues with importing",
+      "subject_clean": "issues with importing",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I believe you can import excel files via the foreign package. As was suggested saving the file as .csv would allow you to import directly via read.csv. If you're new to R you should read the docs on cran. They are very good.\n\njim holtman <jholtman at gmail.com> wrote:\n\n>What exactly are you trying to do with Excel?  Have you tried\n>exporting as CSV and then using 'read.csv' in R?  Exactly what error\n>message are you getting and what statements were you executing.\n>\n>To create your matrix, use 'matrix',\n>\n>On Sat, Jan 31, 2009 at 2:55 PM, Anna Supady <statistics2020 at gmail.com> wrote:\n>> Hello Everyone,\n>> I am a new R user. Not everything goes so easy. I have many questions. I\n>> believe that this is the place where one can discuss issue in R programing.\n>> I cannot get excel file open using file location. Only note pad works but\n>> some data is in excel. How can I do that? Also, I need to create MATRIX OF\n>> DIMENSIONS nxn. I am not sure how to do that.\n>>\n>> Thanks for help,\n>> Ania\n>>\n>>        [[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>\n>\n>\n>-- \n>Jim Holtman\n>Cincinnati, OH\n>+1 513 646 9390\n>\n>What is the problem that you are trying to solve?\n>\n>_______________________________________________\n>R-sig-teaching at r-project.org mailing list\n>https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "I believe you can import excel files via the foreign package. As was suggested saving the file as .csv would allow you to import directly via read.csv. If you're new to R you should read the docs on c",
+      "thread_id": "thread-7ed038d58c4a",
+      "thread_depth": 0,
+      "month": "2009-01"
+    },
+    {
+      "id": "msg-c075ec3265cb",
+      "message_id": "<20090131220859.GA16884@laplace.reed.edu>",
+      "from_name": "Albyn Jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2009-01-31T14:08:59-08:00",
+      "subject": "[R-sig-teaching] issues with importing",
+      "subject_clean": "issues with importing",
+      "in_reply_to": "<a17f8fd00901311155p7923794dp14dec34724b0f43@mail.gmail.com>",
+      "references": [
+        "<a17f8fd00901311155p7923794dp14dec34724b0f43@mail.gmail.com>"
+      ],
+      "body_plain": "You should post basic R questions to the R-help list;\nthis list is intended for discussion of the use of R in\nteaching.\n\nalbyn\n\nOn Sat, Jan 31, 2009 at 01:55:43PM -0600, Anna Supady wrote:\n> Hello Everyone,\n> I am a new R user. Not everything goes so easy. I have many questions. I\n> believe that this is the place where one can discuss issue in R programing.\n> I cannot get excel file open using file location. Only note pad works but\n> some data is in excel. How can I do that? Also, I need to create MATRIX OF\n> DIMENSIONS nxn. I am not sure how to do that.\n> \n> Thanks for help,\n> Ania\n> \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_snippet": "You should post basic R questions to the R-help list;\nthis list is intended for discussion of the use of R in\nteaching.\n\nalbyn\n\nOn Sat, Jan 31, 2009 at 01:55:43PM -0600, Anna Supady wrote:\n> Hello Eve",
+      "thread_id": "thread-5e71eca11e15",
+      "thread_depth": 1,
+      "month": "2009-01"
+    },
+    {
+      "id": "msg-e9daad097c73",
+      "message_id": "<20090131221738.95319.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2009-01-31T17:17:38-05:00",
+      "subject": "[R-sig-teaching] issues with importing",
+      "subject_clean": "issues with importing",
+      "in_reply_to": "<a17f8fd00901311155p7923794dp14dec34724b0f43@mail.gmail.com> from \"Anna Supady\" at Jan 31, 2009 01:55:43 PM",
+      "references": [],
+      "body_plain": "> \n> Hello Everyone,\n> I am a new R user. Not everything goes so easy. I have many questions. I\n> believe that this is the place where one can discuss issue in R programing.\n> I cannot get excel file open using file location. Only note pad works but\n> some data is in excel. How can I do that? Also, I need to create MATRIX OF\n> DIMENSIONS nxn. I am not sure how to do that.\n> \n> Thanks for help,\n> Ania\n\nLook at\n\n     http://cran.r-project.org/doc/manuals/R-data.html#Reading-Excel-spreadsheets\n\nand the other suggestion posted before mine.  Also\n\n    http://www.sciviews.org/_rgui/\n\nwhere you can look at R-(D)COM Server or R Gnumeric which turn the\nproblem upside down and run R from within a spreadsheet program.\n \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n\n\n------->  First-time AP Stats. teacher?  Help is on the way! See\n\n http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n\t    \n  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)\n  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      \n  email  bob statland.org  (add your own \"@\" and save me some spam)",
+      "body_snippet": "> \n> Hello Everyone,\n> I am a new R user. Not everything goes so easy. I have many questions. I\n> believe that this is the place where one can discuss issue in R programing.\n> I cannot get excel file ",
+      "thread_id": "thread-e9daad097c73",
+      "thread_depth": 0,
+      "month": "2009-01"
+    },
+    {
+      "id": "msg-f7980245f260",
+      "message_id": "<20090131224727.1924.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2009-01-31T17:47:27-05:00",
+      "subject": "[R-sig-teaching] Who is the list for?",
+      "subject_clean": "Who is the list for?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Forwarded message:\n> From: Albyn Jones <jones at reed.edu>\n> \n> You should post basic R questions to the R-help list;\n> this list is intended for discussion of the use of R in\n> teaching.\n\nAlbyn, could you tell us more about what is on that list?\n\nSome time ago I raised the possibility of an email list for those who\nwant to use R in teaching introductory courses.  The idea was passed\non and within a couple days this list was born.  (I assumed causality,\nbut it may have been coincidence;-)  I would have made the list open to\nany question from anyone using R in an introductory course.  Perhaps\nthere is a problem due to bimodality in the potential audience.  Some\nare old hands at R and now want to use it in the classroom.  Others\nmay have never used it before and are now trying to teach with it.  I\nam not on the R-help list but wonder how much of the content there\noverlaps an introductory statistics course?  Or how much would be over\nthe head of a beginner?  (I think most of the R documentation is well\nbeyond the level of an introductory course, and pretty overwhelming\nand incomprehensible to a beginner, so I am hoping there is SOME place\nwhere beginners can get simple answers to simple questions without\nbecoming Unix gurus or programmers first.)\n\nFor anyone wondering why a non-R-guru such as myself might be on this\nlist (or have suggested its creation)...  I teach online in a context\nwhere we cannot buy a site license to provide each student with\nsoftware.  They have to either use whatever their employer provides\n(if anything), or pay for software out of their own pocket, normally\nat full single-copy prices.  R is attractive because it is free.  It\nalso makes sense because our introductory courses (at least\noriginally) only exist to prepare students for more advanced courses\nwhere R is preferred for its power or programmability.  So, having\ncreated the introductory courses themselves, I then created student\nmanuals for Minitab (because I already knew it), Data Desk (because it\ncomes with the textbook), and R (for reasons already given).  In\ncreating the R materials, I encountered others trying to get started\nwith R while using it in an introductory course, and hence this list.\n\n------->  First-time AP Stats. teacher?  Help is on the way! See\n\n http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n\t    \n  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)\n  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      \n  email  bob statland.org  (add your own \"@\" and save me some spam)",
+      "body_snippet": "Forwarded message:\n> From: Albyn Jones <jones at reed.edu>\n> \n> You should post basic R questions to the R-help list;\n> this list is intended for discussion of the use of R in\n> teaching.\n\nAlbyn, coul",
+      "thread_id": "thread-f7980245f260",
+      "thread_depth": 0,
+      "month": "2009-01"
+    },
+    {
+      "id": "msg-b7bb25460029",
+      "message_id": "<20090131234616.GA18179@laplace.reed.edu>",
+      "from_name": "Albyn Jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2009-01-31T15:46:16-08:00",
+      "subject": "[R-sig-teaching] [jones@reed.edu: Re:  Who is the list for?]",
+      "subject_clean": "[jones@reed.edu: Re:  Who is the list for?]",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Ooops, I failed to respond to the list.  Here it is...\n\nalbyn\n\n----- Forwarded message from Albyn Jones <jones at reed.edu> -----\n\nHi Robert\n\nThat's a good question, and clearly the boundary is fuzzy.  \n\nI was inferring from the form of the question that the poster was a\nrandom person learning R, rather than someone using R to teach\ncourses.  I may have been in error, in which case I apologize to all\nfor jumping to a conclusion.\n\nI don't have a list of topics that are appropriate or inappropriate,\nrather a notion that this list is not the same as the R-help list,\nbut is for discussion of issues related to teaching R or with R.\n\nIn any case, anyone teaching with R should be aware of the R-help list.\n\nalbyn\n\n\n\nOn Sat, Jan 31, 2009 at 05:47:27PM -0500, Robert W. Hayden wrote:\n> Forwarded message:\n> > From: Albyn Jones <jones at reed.edu>\n> > \n> > You should post basic R questions to the R-help list;\n> > this list is intended for discussion of the use of R in\n> > teaching.\n> \n> Albyn, could you tell us more about what is on that list?\n> \n> Some time ago I raised the possibility of an email list for those who\n> want to use R in teaching introductory courses.  The idea was passed\n> on and within a couple days this list was born.  (I assumed causality,\n> but it may have been coincidence;-)  I would have made the list open to\n> any question from anyone using R in an introductory course.  Perhaps\n> there is a problem due to bimodality in the potential audience.  Some\n> are old hands at R and now want to use it in the classroom.  Others\n> may have never used it before and are now trying to teach with it.  I\n> am not on the R-help list but wonder how much of the content there\n> overlaps an introductory statistics course?  Or how much would be over\n> the head of a beginner?  (I think most of the R documentation is well\n> beyond the level of an introductory course, and pretty overwhelming\n> and incomprehensible to a beginner, so I am hoping there is SOME place\n> where beginners can get simple answers to simple questions without\n> becoming Unix gurus or programmers first.)\n> \n> For anyone wondering why a non-R-guru such as myself might be on this\n> list (or have suggested its creation)...  I teach online in a context\n> where we cannot buy a site license to provide each student with\n> software.  They have to either use whatever their employer provides\n> (if anything), or pay for software out of their own pocket, normally\n> at full single-copy prices.  R is attractive because it is free.  It\n> also makes sense because our introductory courses (at least\n> originally) only exist to prepare students for more advanced courses\n> where R is preferred for its power or programmability.  So, having\n> created the introductory courses themselves, I then created student\n> manuals for Minitab (because I already knew it), Data Desk (because it\n> comes with the textbook), and R (for reasons already given).  In\n> creating the R materials, I encountered others trying to get started\n> with R while using it in an introductory course, and hence this list.\n> \n> ------->  First-time AP Stats. teacher?  Help is on the way! See\n> \n>  http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n> \t    \n>   Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)\n>   North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      \n>   email  bob statland.org  (add your own \"@\" and save me some spam)\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n\n----- End forwarded message -----",
+      "body_snippet": "Ooops, I failed to respond to the list.  Here it is...\n\nalbyn\n\n----- Forwarded message from Albyn Jones <jones at reed.edu> -----\n\nHi Robert\n\nThat's a good question, and clearly the boundary is fuzzy.",
+      "thread_id": "thread-b7bb25460029",
+      "thread_depth": 0,
+      "month": "2009-01"
+    },
+    {
+      "id": "msg-81aa004e8c44",
+      "message_id": "<986176.94759.qm@web34807.mail.mud.yahoo.com>",
+      "from_name": "Rebecca Le",
+      "from_email_hash": "b5a6837a30cb1cf4e318d6cd6e0de2b9f56802d70e9746e2663111fb793e527f",
+      "date": "2009-01-31T16:38:03-08:00",
+      "subject": "[R-sig-teaching] [Re:  Who is the list for?]",
+      "subject_clean": "[Re:  Who is the list for?]",
+      "in_reply_to": "<20090131234616.GA18179@laplace.reed.edu>",
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090131/16db7fb7/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090131/16db7fb7/attachment.pl>",
+      "thread_id": "thread-b7bb25460029",
+      "thread_depth": 1,
+      "month": "2009-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-5e71eca11e15",
+      "subject": "issues with importing",
+      "message_count": 3,
+      "participants": [
+        "Albyn Jones",
+        "Anna Supady",
+        "jim holtman"
+      ],
+      "started": "2009-01-31T13:55:43-06:00",
+      "last_reply": "2009-01-31T14:08:59-08:00",
+      "root_message_id": "msg-5e71eca11e15"
+    },
+    {
+      "id": "thread-7ed038d58c4a",
+      "subject": "issues with importing",
+      "message_count": 1,
+      "participants": [
+        "Christopher Desjardins"
+      ],
+      "started": "2009-01-31T14:08:37-06:00",
+      "last_reply": "2009-01-31T14:08:37-06:00",
+      "root_message_id": "msg-7ed038d58c4a"
+    },
+    {
+      "id": "thread-b7bb25460029",
+      "subject": "[jones@reed.edu: Re:  Who is the list for?]",
+      "message_count": 2,
+      "participants": [
+        "Albyn Jones",
+        "Rebecca Le"
+      ],
+      "started": "2009-01-31T15:46:16-08:00",
+      "last_reply": "2009-01-31T16:38:03-08:00",
+      "root_message_id": "msg-b7bb25460029"
+    },
+    {
+      "id": "thread-e9daad097c73",
+      "subject": "issues with importing",
+      "message_count": 1,
+      "participants": [
+        "Robert W. Hayden"
+      ],
+      "started": "2009-01-31T17:17:38-05:00",
+      "last_reply": "2009-01-31T17:17:38-05:00",
+      "root_message_id": "msg-e9daad097c73"
+    },
+    {
+      "id": "thread-f7980245f260",
+      "subject": "Who is the list for?",
+      "message_count": 1,
+      "participants": [
+        "Robert W. Hayden"
+      ],
+      "started": "2009-01-31T17:47:27-05:00",
+      "last_reply": "2009-01-31T17:47:27-05:00",
+      "root_message_id": "msg-f7980245f260"
+    }
+  ]
+}

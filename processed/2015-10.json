@@ -1,0 +1,195 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2015-10",
+  "messages": [
+    {
+      "id": "msg-cdb636ae6795",
+      "message_id": "<CAHDp66CC+cGbZj=5szY-vKRvbyeb94Wmk0LS4J5SDmeKUNve7w@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2015-10-20T15:45:37-04:00",
+      "subject": "[R-sig-teaching] count the number of argument of a function",
+      "subject_clean": "count the number of argument of a function",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\n\nI am wondering whether there is a way to read and assign the number of\narguments of a function inside this function.\n\n\n### For example\n\nfun<-function(x1,x2,x3,...){\n\nm<- number of arguments\n\n}\n\n### e.g.\n\nfun<-function(x1,x2,x3){\n\nm<- number of arguments\n\n### m =3 in this case\n\n}\n\n### e.g.\n\nfun<-function(x1,x2,x3,y1,z1,z2){\n\nm<- number of arguments\n\n### m =6 in this case\n\n}\n\n\n\n\nwith thanks\nSteve\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\nI am wondering whether there is a way to read and assign the number of\narguments of a function inside this function.\n\n\n### For example\n\nfun<-function(x1,x2,x3,...){\n\nm<- number of arguments",
+      "thread_id": "thread-cdb636ae6795",
+      "thread_depth": 0,
+      "month": "2015-10"
+    },
+    {
+      "id": "msg-4b6413bde19f",
+      "message_id": "<CAAmySGNqWFpU=HkEmB1Vn6HJiud23xBKZH3e89-AHm6a-Mb=eQ@mail.gmail.com>",
+      "from_name": "Michael Weylandt",
+      "from_email_hash": "44e8775a589b9ef81880469e200f3cce307c7180b4289ca1696a578afb772b3a",
+      "date": "2015-10-20T14:51:56-05:00",
+      "subject": "[R-sig-teaching] count the number of argument of a function",
+      "subject_clean": "count the number of argument of a function",
+      "in_reply_to": "<CAHDp66CC+cGbZj=5szY-vKRvbyeb94Wmk0LS4J5SDmeKUNve7w@mail.gmail.com>",
+      "references": [
+        "<CAHDp66CC+cGbZj=5szY-vKRvbyeb94Wmk0LS4J5SDmeKUNve7w@mail.gmail.com>"
+      ],
+      "body_plain": "On Tue, Oct 20, 2015 at 2:45 PM, Steven Stoline <sstoline at gmail.com> wrote:\n\n> Dear All:\n>\n> I am wondering whether there is a way to read and assign the number of\n> arguments of a function inside this function.\n>\n>\n> ### For example\n>\n> fun<-function(x1,x2,x3,...){\n>\n> m<- number of arguments\n>\n> }\n>\n> ### e.g.\n>\n> fun<-function(x1,x2,x3){\n>\n> m<- number of arguments\n>\n> ### m =3 in this case\n>\n> }\n>\n> ### e.g.\n>\n> fun<-function(x1,x2,x3,y1,z1,z2){\n>\n> m<- number of arguments\n>\n> ### m =6 in this case\n>\n> }\n>\n\n\nIt's not entirely kosher, but\n\nlength(formals(sys.function()))\n\nwill work.\n\nf <- function(a, b,c, d, e, f){\n    length(formals(sys.function()))\n}\n\nf() ## 6\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "On Tue, Oct 20, 2015 at 2:45 PM, Steven Stoline <sstoline at gmail.com> wrote:\n\n> Dear All:\n>\n> I am wondering whether there is a way to read and assign the number of\n> arguments of a function inside ",
+      "thread_id": "thread-cdb636ae6795",
+      "thread_depth": 1,
+      "month": "2015-10"
+    },
+    {
+      "id": "msg-31107e6c0fdf",
+      "message_id": "<CAHDp66B9kzs5QwkiWHueJEnWssFN0GD1wfFAfmGqWCQ-X7-tXQ@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2015-10-20T16:17:22-04:00",
+      "subject": "[R-sig-teaching] count the number of argument of a function",
+      "subject_clean": "count the number of argument of a function",
+      "in_reply_to": "<CAAmySGNqWFpU=HkEmB1Vn6HJiud23xBKZH3e89-AHm6a-Mb=eQ@mail.gmail.com>",
+      "references": [
+        "<CAHDp66CC+cGbZj=5szY-vKRvbyeb94Wmk0LS4J5SDmeKUNve7w@mail.gmail.com>",
+        "<CAAmySGNqWFpU=HkEmB1Vn6HJiud23xBKZH3e89-AHm6a-Mb=eQ@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Michael:\n\nThank you very much for your quick reply.\n\nJust one more thing. Assume we have these three data sets (vectors), but\ncould be 4, 5  or more data sets.\n\nx1<-c(1,2,3,4,5)\nx2<-c(11,22,33,44,55)\nx3<-c(111,222,333,444,555)\n\n\nInside the same fumction I do need to use the cbind() function to cbind\nthese m (m could be 2, 3, 4, or any numbers) data sets. This what I trired,\nbut it did not work.\n\nf <- function(x1,x2,x3){\n        m<-length(formals(sys.function()))\n\nprint(m)\n\n    data<-cbind(x1,x2,...,xm)                                   #### I need\nsome help with this part\n\nprint(data)\n\n}\n\nf(x1,x2,x3)\n\n\n\nwith thanks\nsteve\n\n\n\nOn Tue, Oct 20, 2015 at 3:51 PM, Michael Weylandt <\nmichael.weylandt at gmail.com> wrote:\n\n> On Tue, Oct 20, 2015 at 2:45 PM, Steven Stoline <sstoline at gmail.com>\n> wrote:\n>\n>> Dear All:\n>>\n>> I am wondering whether there is a way to read and assign the number of\n>> arguments of a function inside this function.\n>>\n>>\n>> ### For example\n>>\n>> fun<-function(x1,x2,x3,...){\n>>\n>> m<- number of arguments\n>>\n>> }\n>>\n>> ### e.g.\n>>\n>> fun<-function(x1,x2,x3){\n>>\n>> m<- number of arguments\n>>\n>> ### m =3 in this case\n>>\n>> }\n>>\n>> ### e.g.\n>>\n>> fun<-function(x1,x2,x3,y1,z1,z2){\n>>\n>> m<- number of arguments\n>>\n>> ### m =6 in this case\n>>\n>> }\n>>\n>\n>\n> It's not entirely kosher, but\n>\n> length(formals(sys.function()))\n>\n> will work.\n>\n> f <- function(a, b,c, d, e, f){\n>     length(formals(sys.function()))\n> }\n>\n> f() ## 6\n>\n\n\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear Michael:\n\nThank you very much for your quick reply.\n\nJust one more thing. Assume we have these three data sets (vectors), but\ncould be 4, 5  or more data sets.\n\nx1<-c(1,2,3,4,5)\nx2<-c(11,22,33,44",
+      "thread_id": "thread-cdb636ae6795",
+      "thread_depth": 2,
+      "month": "2015-10"
+    },
+    {
+      "id": "msg-abb9f1a0ed65",
+      "message_id": "<20151020203203.EBB79E23F428@lilly.csoft.net>",
+      "from_name": "Bob",
+      "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
+      "date": "2015-10-20T16:32:03-04:00",
+      "subject": "[R-sig-teaching] count the number of argument of a functionr",
+      "subject_clean": "count the number of argument of a functionr",
+      "in_reply_to": "<CAHDp66CC+cGbZj=5szY-vKRvbyeb94Wmk0LS4J5SDmeKUNve7w@mail.gmail.com>",
+      "references": [],
+      "body_plain": "> \n> Dear All:\n> \n> I am wondering whether there is a way to read and assign the number of\n> arguments of a function inside this function.\n> \n> \n> ### For example\n> \n> fun<-function(x1,x2,x3,...){\n> \n> m<- number of arguments\n> \n> }\n> \n> ### e.g.\n> \n> fun<-function(x1,x2,x3){\n> \n> m<- number of arguments\n> \n> ### m =3 in this case\n> \n> }\n> \n> ### e.g.\n> \n> fun<-function(x1,x2,x3,y1,z1,z2){\n> \n> m<- number of arguments\n> \n> ### m =6 in this case\n> \n> }\n> \n> \n> \n> \n> with thanks\n> Steve\n> \n> -- \n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com\n> \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n> \n\n\n------->  First-time AP Stats. teacher?  Help is on the way! See\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n      _\n     | |          Robert W. Hayden\n     | |          614 Nashua Street #119\n    /  |          Milford, New Hampshire 03055  USA\n   |   |          \n   |   |          email: bob@ the site below\n  /  x |          website: http://statland.org\n |     /          \n ''''''",
+      "body_snippet": "> \n> Dear All:\n> \n> I am wondering whether there is a way to read and assign the number of\n> arguments of a function inside this function.\n> \n> \n> ### For example\n> \n> fun<-function(x1,x2,x3,...){\n> \n",
+      "thread_id": "thread-cdb636ae6795",
+      "thread_depth": 1,
+      "month": "2015-10"
+    },
+    {
+      "id": "msg-d61b2cfb4e22",
+      "message_id": "<CAH7sKSPKFgCeP5K+-jgPiWreZyPyiP_-BMesJM_91jutSw9y0Q@mail.gmail.com>",
+      "from_name": "Kenn Konstabel",
+      "from_email_hash": "4367d6fc39ba53e70ea484f984561a98934fe9281202be0725fb246aa50a244a",
+      "date": "2015-10-20T23:37:46+03:00",
+      "subject": "[R-sig-teaching] count the number of argument of a function",
+      "subject_clean": "count the number of argument of a function",
+      "in_reply_to": "<CAHDp66B9kzs5QwkiWHueJEnWssFN0GD1wfFAfmGqWCQ-X7-tXQ@mail.gmail.com>",
+      "references": [
+        "<CAHDp66CC+cGbZj=5szY-vKRvbyeb94Wmk0LS4J5SDmeKUNve7w@mail.gmail.com>",
+        "<CAAmySGNqWFpU=HkEmB1Vn6HJiud23xBKZH3e89-AHm6a-Mb=eQ@mail.gmail.com>",
+        "<CAHDp66B9kzs5QwkiWHueJEnWssFN0GD1wfFAfmGqWCQ-X7-tXQ@mail.gmail.com>"
+      ],
+      "body_plain": "Hi Steve\n\nlength(formals()) will give you the number of formal arguments which is\nalways the same within a function. So this will not help if you plan to\nhave a variable number of args, as it seems. The following will work for\nany number of arguments -- provided you feed it vectors of equal length! -\nwithout the need of counting the length of args list\n\nblah <- function(...) do.call(cbind, list(...))\n\nBest regards\n\nKenn\nOn Oct 20, 2015 23:17, \"Steven Stoline\" <sstoline at gmail.com> wrote:\n\n> Dear Michael:\n>\n> Thank you very much for your quick reply.\n>\n> Just one more thing. Assume we have these three data sets (vectors), but\n> could be 4, 5  or more data sets.\n>\n> x1<-c(1,2,3,4,5)\n> x2<-c(11,22,33,44,55)\n> x3<-c(111,222,333,444,555)\n>\n>\n> Inside the same fumction I do need to use the cbind() function to cbind\n> these m (m could be 2, 3, 4, or any numbers) data sets. This what I trired,\n> but it did not work.\n>\n> f <- function(x1,x2,x3){\n>         m<-length(formals(sys.function()))\n>\n> print(m)\n>\n>     data<-cbind(x1,x2,...,xm)                                   #### I need\n> some help with this part\n>\n> print(data)\n>\n> }\n>\n> f(x1,x2,x3)\n>\n>\n>\n> with thanks\n> steve\n>\n>\n>\n> On Tue, Oct 20, 2015 at 3:51 PM, Michael Weylandt <\n> michael.weylandt at gmail.com> wrote:\n>\n> > On Tue, Oct 20, 2015 at 2:45 PM, Steven Stoline <sstoline at gmail.com>\n> > wrote:\n> >\n> >> Dear All:\n> >>\n> >> I am wondering whether there is a way to read and assign the number of\n> >> arguments of a function inside this function.\n> >>\n> >>\n> >> ### For example\n> >>\n> >> fun<-function(x1,x2,x3,...){\n> >>\n> >> m<- number of arguments\n> >>\n> >> }\n> >>\n> >> ### e.g.\n> >>\n> >> fun<-function(x1,x2,x3){\n> >>\n> >> m<- number of arguments\n> >>\n> >> ### m =3 in this case\n> >>\n> >> }\n> >>\n> >> ### e.g.\n> >>\n> >> fun<-function(x1,x2,x3,y1,z1,z2){\n> >>\n> >> m<- number of arguments\n> >>\n> >> ### m =6 in this case\n> >>\n> >> }\n> >>\n> >\n> >\n> > It's not entirely kosher, but\n> >\n> > length(formals(sys.function()))\n> >\n> > will work.\n> >\n> > f <- function(a, b,c, d, e, f){\n> >     length(formals(sys.function()))\n> > }\n> >\n> > f() ## 6\n> >\n>\n>\n>\n> --\n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi Steve\n\nlength(formals()) will give you the number of formal arguments which is\nalways the same within a function. So this will not help if you plan to\nhave a variable number of args, as it seems. T",
+      "thread_id": "thread-cdb636ae6795",
+      "thread_depth": 3,
+      "month": "2015-10"
+    },
+    {
+      "id": "msg-82649a9c118e",
+      "message_id": "<E44D914D-7B4F-4938-8F2D-CA9AFFB7CB42@calvin.edu>",
+      "from_name": "Randall Pruim",
+      "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
+      "date": "2015-10-20T21:06:16Z",
+      "subject": "[R-sig-teaching] count the number of argument of a function",
+      "subject_clean": "count the number of argument of a function",
+      "in_reply_to": "<CAHDp66CC+cGbZj=5szY-vKRvbyeb94Wmk0LS4J5SDmeKUNve7w@mail.gmail.com>",
+      "references": [
+        "<CAHDp66CC+cGbZj=5szY-vKRvbyeb94Wmk0LS4J5SDmeKUNve7w@mail.gmail.com>"
+      ],
+      "body_plain": "I think perhaps it would be useful if you tipped your hand a bit more about what you are actually trying to do with your function, but I think that this does the immediate task for functions that have ? in the argument list.\n\n\nfoo <- function(x=1, y=2, z=3, ...) {\n  m <- length(formals()) + length(list(...)) - 1\n  m\n}\n\nThe -1 is because ? gets counted in the formal arguments, but we don?t want that in m.\n\nOf course, for a particular function, you could replace length(formals()) with the number of formals you actually have, since this won?t change.\n\nBut perhaps I?m misunderstanding the overall goal.\n\n?rjp\n\nOn Oct 20, 2015, at 3:45 PM, Steven Stoline <sstoline at gmail.com<mailto:sstoline at gmail.com>> wrote:\n\nDear All:\n\nI am wondering whether there is a way to read and assign the number of\narguments of a function inside this function.\n\n\n### For example\n\nfun<-function(x1,x2,x3,...){\n\nm<- number of arguments\n\n}\n\n### e.g.\n\nfun<-function(x1,x2,x3){\n\nm<- number of arguments\n\n### m =3 in this case\n\n}\n\n### e.g.\n\nfun<-function(x1,x2,x3,y1,z1,z2){\n\nm<- number of arguments\n\n### m =6 in this case\n\n}\n\n\n\n\nwith thanks\nSteve\n\n--\nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com<mailto:sstoline at gmail.com>\n\n[[alternative HTML version deleted]]\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I think perhaps it would be useful if you tipped your hand a bit more about what you are actually trying to do with your function, but I think that this does the immediate task for functions that have",
+      "thread_id": "thread-cdb636ae6795",
+      "thread_depth": 1,
+      "month": "2015-10"
+    },
+    {
+      "id": "msg-b88af540e007",
+      "message_id": "<F3B77574-55E5-4C61-8234-C3A719C6C947@calvin.edu>",
+      "from_name": "Randall Pruim",
+      "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
+      "date": "2015-10-20T21:15:14Z",
+      "subject": "[R-sig-teaching] count the number of argument of a function",
+      "subject_clean": "count the number of argument of a function",
+      "in_reply_to": "<CAHDp66B9kzs5QwkiWHueJEnWssFN0GD1wfFAfmGqWCQ-X7-tXQ@mail.gmail.com>",
+      "references": [
+        "<CAHDp66CC+cGbZj=5szY-vKRvbyeb94Wmk0LS4J5SDmeKUNve7w@mail.gmail.com>",
+        "<CAAmySGNqWFpU=HkEmB1Vn6HJiud23xBKZH3e89-AHm6a-Mb=eQ@mail.gmail.com>",
+        "<CAHDp66B9kzs5QwkiWHueJEnWssFN0GD1wfFAfmGqWCQ-X7-tXQ@mail.gmail.com>"
+      ],
+      "body_plain": "A couple more questions for you:\n\n  * what type of object do you want created?  (A matrix? data frame? something else?)\n\n  * is there a reason to have 3 named arguments and then ? if you are treating them all the same in the end anyway?  Seems like that just makes your function less flexible and harder to code.  But I don?t know your use case.\n\nAs the previously sent example shows, you can easily apply cbind to all of the items in ? (without needing to know how many there were).  I?m now guessing that your attempt to calculate m was not needed.  You can always recover it from the number of columns in the object produced by cbind() if you need it later.\n\nGood luck with what I hope is the more interesting part of your programming project that comes after this.\n\n?rjp\n\n\n> On Oct 20, 2015, at 4:17 PM, Steven Stoline <sstoline at gmail.com> wrote:\n> \n> Dear Michael:\n> \n> Thank you very much for your quick reply.\n> \n> Just one more thing. Assume we have these three data sets (vectors), but\n> could be 4, 5  or more data sets.\n> \n> x1<-c(1,2,3,4,5)\n> x2<-c(11,22,33,44,55)\n> x3<-c(111,222,333,444,555)\n> \n> \n> Inside the same fumction I do need to use the cbind() function to cbind\n> these m (m could be 2, 3, 4, or any numbers) data sets. This what I trired,\n> but it did not work.\n> \n> f <- function(x1,x2,x3){\n>        m<-length(formals(sys.function()))\n> \n> print(m)\n> \n>    data<-cbind(x1,x2,...,xm)                                   #### I need\n> some help with this part\n> \n> print(data)\n> \n> }\n> \n> f(x1,x2,x3)\n> \n> \n> \n> with thanks\n> steve\n> \n> \n> \n> On Tue, Oct 20, 2015 at 3:51 PM, Michael Weylandt <\n> michael.weylandt at gmail.com> wrote:\n> \n>> On Tue, Oct 20, 2015 at 2:45 PM, Steven Stoline <sstoline at gmail.com>\n>> wrote:\n>> \n>>> Dear All:\n>>> \n>>> I am wondering whether there is a way to read and assign the number of\n>>> arguments of a function inside this function.\n>>> \n>>> \n>>> ### For example\n>>> \n>>> fun<-function(x1,x2,x3,...){\n>>> \n>>> m<- number of arguments\n>>> \n>>> }\n>>> \n>>> ### e.g.\n>>> \n>>> fun<-function(x1,x2,x3){\n>>> \n>>> m<- number of arguments\n>>> \n>>> ### m =3 in this case\n>>> \n>>> }\n>>> \n>>> ### e.g.\n>>> \n>>> fun<-function(x1,x2,x3,y1,z1,z2){\n>>> \n>>> m<- number of arguments\n>>> \n>>> ### m =6 in this case\n>>> \n>>> }\n>>> \n>> \n>> \n>> It's not entirely kosher, but\n>> \n>> length(formals(sys.function()))\n>> \n>> will work.\n>> \n>> f <- function(a, b,c, d, e, f){\n>>    length(formals(sys.function()))\n>> }\n>> \n>> f() ## 6\n>> \n> \n> \n> \n> -- \n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com\n> \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "A couple more questions for you:\n\n  * what type of object do you want created?  (A matrix? data frame? something else?)\n\n  * is there a reason to have 3 named arguments and then ? if you are treating ",
+      "thread_id": "thread-cdb636ae6795",
+      "thread_depth": 3,
+      "month": "2015-10"
+    },
+    {
+      "id": "msg-6f20bedaf1ea",
+      "message_id": "<22055.19920.607264.525472@stat.math.ethz.ch>",
+      "from_name": "Martin Maechler",
+      "from_email_hash": "c2c86f22f78a4ecfe6d0e6b4e2be505a3f5beb0470ea88c903688ac536018a98",
+      "date": "2015-10-21T10:33:20+02:00",
+      "subject": "[R-sig-teaching] count the number of argument of a function",
+      "subject_clean": "count the number of argument of a function",
+      "in_reply_to": "<F3B77574-55E5-4C61-8234-C3A719C6C947@calvin.edu>",
+      "references": [
+        "<CAHDp66CC+cGbZj=5szY-vKRvbyeb94Wmk0LS4J5SDmeKUNve7w@mail.gmail.com>",
+        "<CAAmySGNqWFpU=HkEmB1Vn6HJiud23xBKZH3e89-AHm6a-Mb=eQ@mail.gmail.com>",
+        "<CAHDp66B9kzs5QwkiWHueJEnWssFN0GD1wfFAfmGqWCQ-X7-tXQ@mail.gmail.com>",
+        "<F3B77574-55E5-4C61-8234-C3A719C6C947@calvin.edu>"
+      ],
+      "body_plain": ">>>>> Randall Pruim <rpruim at calvin.edu>\n>>>>>     on Tue, 20 Oct 2015 21:15:14 +0000 writes:\n\n    > A couple more questions for you:\n    > * what type of object do you want created?  (A matrix? data frame? something else?)\n\n    > * is there a reason to have 3 named arguments and then ? if you are treating them all the same in the end anyway?  Seems like that just makes your function less flexible and harder to code.  But I don?t know your use case.\n\n    > As the previously sent example shows, you can easily apply cbind to all of the items in ? (without needing to know how many there were).  I?m now guessing that your attempt to calculate m was not needed.  You can always recover it from the number of columns in the object produced by cbind() if you need it later.\n\n    > Good luck with what I hope is the more interesting part of your programming project that comes after this.\n\n    > ?rjp\n\nSorry to be a bit sarcastic, but if you had not *mis*used\nR-SIG-teaching  and rather used  R-help  for asking a somewhat\nbasic question about R, you would have gotten better answers\nmore quickly than all the preceding answers: \n\nThe answer is to use  nargs()\n[which even in its name suggests  to give what you ask in the\n e-mail subject of this thread]\n\nMartin Maechler\n\n    >> On Oct 20, 2015, at 4:17 PM, Steven Stoline <sstoline at gmail.com> wrote:\n    >> \n    >> Dear Michael:\n    >> \n    >> Thank you very much for your quick reply.\n    >> \n    >> Just one more thing. Assume we have these three data sets (vectors), but\n    >> could be 4, 5  or more data sets.\n    >> \n    >> x1<-c(1,2,3,4,5)\n    >> x2<-c(11,22,33,44,55)\n    >> x3<-c(111,222,333,444,555)\n    >> \n    >> \n    >> Inside the same fumction I do need to use the cbind() function to cbind\n    >> these m (m could be 2, 3, 4, or any numbers) data sets. This what I trired,\n    >> but it did not work.\n    >> \n    >> f <- function(x1,x2,x3){\n    >> m<-length(formals(sys.function()))\n    >> \n    >> print(m)\n    >> \n    >> data<-cbind(x1,x2,...,xm)                                   #### I need\n    >> some help with this part\n    >> \n    >> print(data)\n    >> \n    >> }\n    >> \n    >> f(x1,x2,x3)\n    >> \n    >> \n    >> \n    >> with thanks\n    >> steve\n    >> \n    >> \n    >> \n    >> On Tue, Oct 20, 2015 at 3:51 PM, Michael Weylandt <\n    >> michael.weylandt at gmail.com> wrote:\n    >> \n    >>> On Tue, Oct 20, 2015 at 2:45 PM, Steven Stoline <sstoline at gmail.com>\n    >>> wrote:\n    >>> \n    >>>> Dear All:\n    >>>> \n    >>>> I am wondering whether there is a way to read and assign the number of\n    >>>> arguments of a function inside this function.\n    >>>> \n    >>>> \n    >>>> ### For example\n    >>>> \n    >>>> fun<-function(x1,x2,x3,...){\n    >>>> \n    >>>> m<- number of arguments\n    >>>> \n    >>>> }\n    >>>> \n    >>>> ### e.g.\n    >>>> \n    >>>> fun<-function(x1,x2,x3){\n    >>>> \n    >>>> m<- number of arguments\n    >>>> \n    >>>> ### m =3 in this case\n    >>>> \n    >>>> }\n    >>>> \n    >>>> ### e.g.\n    >>>> \n    >>>> fun<-function(x1,x2,x3,y1,z1,z2){\n    >>>> \n    >>>> m<- number of arguments\n    >>>> \n    >>>> ### m =6 in this case\n    >>>> \n    >>>> }\n    >>>> \n    >>> \n    >>> \n    >>> It's not entirely kosher, but\n    >>> \n    >>> length(formals(sys.function()))\n    >>> \n    >>> will work.\n    >>> \n    >>> f <- function(a, b,c, d, e, f){\n    >>> length(formals(sys.function()))\n    >>> }\n    >>> \n    >>> f() ## 6\n    >>> \n    >> \n    >> \n    >> \n    >> -- \n    >> Steven M. Stoline\n    >> 1123 Forest Avenue\n    >> Portland, ME 04112\n    >> sstoline at gmail.com\n    >>",
+      "body_snippet": ">>>>> Randall Pruim <rpruim at calvin.edu>\n>>>>>     on Tue, 20 Oct 2015 21:15:14 +0000 writes:\n\n    > A couple more questions for you:\n    > * what type of object do you want created?  (A matrix? dat",
+      "thread_id": "thread-cdb636ae6795",
+      "thread_depth": 4,
+      "month": "2015-10"
+    },
+    {
+      "id": "msg-91a360a7e3b9",
+      "message_id": "<324FD033-4975-4577-9380-C04714DA648A@calvin.edu>",
+      "from_name": "Randall Pruim",
+      "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
+      "date": "2015-10-21T11:30:27Z",
+      "subject": "[R-sig-teaching] count the number of argument of a function",
+      "subject_clean": "count the number of argument of a function",
+      "in_reply_to": "<22055.19920.607264.525472@stat.math.ethz.ch>",
+      "references": [
+        "<CAHDp66CC+cGbZj=5szY-vKRvbyeb94Wmk0LS4J5SDmeKUNve7w@mail.gmail.com>",
+        "<CAAmySGNqWFpU=HkEmB1Vn6HJiud23xBKZH3e89-AHm6a-Mb=eQ@mail.gmail.com>",
+        "<CAHDp66B9kzs5QwkiWHueJEnWssFN0GD1wfFAfmGqWCQ-X7-tXQ@mail.gmail.com>",
+        "<F3B77574-55E5-4C61-8234-C3A719C6C947@calvin.edu>",
+        "<22055.19920.607264.525472@stat.math.ethz.ch>"
+      ],
+      "body_plain": "Maybe.  Maybe not.  It depends on the (missing) specification of exactly what is wanted.  nargs() will count the arguments supplied by the user directly, but will not count arguments that are provided via defaults.\n\nThis may or may not be what one wants.  Example:\n\nfoo <- function(x = 5, ...) {\n  c( nargs = nargs(), custom = 1 + length(list(...)))\n}\nfoo()\n##  nargs custom\n##      0      1\nfoo(a = 5)\n##  nargs custom\n##      1      2\nfoo(x = 5)\n##  nargs custom\n##      1      1\n\nSee the help for nargs() for additional information about what nargs() does/doesn?t count.\n\nAnd yes, R-help is probably a better place for this sort of technical question ? especially when no connection to teaching has been made in the query.\n\n?rjp\n\n\nSorry to be a bit sarcastic, but if you had not *mis*used\nR-SIG-teaching  and rather used  R-help  for asking a somewhat\nbasic question about R, you would have gotten better answers\nmore quickly than all the preceding answers:\n\nThe answer is to use  nargs()\n[which even in its name suggests  to give what you ask in the\ne-mail subject of this thread]\n\nMartin Maechler\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Maybe.  Maybe not.  It depends on the (missing) specification of exactly what is wanted.  nargs() will count the arguments supplied by the user directly, but will not count arguments that are provided",
+      "thread_id": "thread-cdb636ae6795",
+      "thread_depth": 5,
+      "month": "2015-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-cdb636ae6795",
+      "subject": "count the number of argument of a function",
+      "message_count": 9,
+      "participants": [
+        "Bob",
+        "Kenn Konstabel",
+        "Martin Maechler",
+        "Michael Weylandt",
+        "Randall Pruim",
+        "Steven Stoline"
+      ],
+      "started": "2015-10-20T15:45:37-04:00",
+      "last_reply": "2015-10-21T11:30:27+00:00",
+      "root_message_id": "msg-cdb636ae6795"
+    }
+  ]
+}

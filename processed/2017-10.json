@@ -1,0 +1,36 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2017-10",
+  "messages": [
+    {
+      "id": "msg-2789b635f2be",
+      "message_id": "<BN6PR06MB2610FD0E1208A60CD1EF116FA37E0@BN6PR06MB2610.namprd06.prod.outlook.com>",
+      "from_name": "Geoffrey Smith",
+      "from_email_hash": "6c829f2d25848af1d52a90e4b27006b9ac3763c053bf3aaf885fb0f7ceb0b753",
+      "date": "2017-10-02T18:03:33Z",
+      "subject": "[R-sig-teaching] Undergraduate finance",
+      "subject_clean": "Undergraduate finance",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello,\n\n\nI am teaching an undergraduate course in Investments next semester and I would like to incorporate a little R programming into it. Does anyone have any teaching tips or textbook suggestions?\n\n\nThank you.\n\n\nGeoff\n\n\nGeoffrey Smith\n\nClinical Associate Professor of Finance\n\nWP Carey School of Business\n\nArizona State University\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello,\n\n\nI am teaching an undergraduate course in Investments next semester and I would like to incorporate a little R programming into it. Does anyone have any teaching tips or textbook suggestions?\n",
+      "thread_id": "thread-2789b635f2be",
+      "thread_depth": 0,
+      "month": "2017-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-2789b635f2be",
+      "subject": "Undergraduate finance",
+      "message_count": 1,
+      "participants": [
+        "Geoffrey Smith"
+      ],
+      "started": "2017-10-02T18:03:33+00:00",
+      "last_reply": "2017-10-02T18:03:33+00:00",
+      "root_message_id": "msg-2789b635f2be"
+    }
+  ]
+}

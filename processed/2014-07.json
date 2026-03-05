@@ -1,0 +1,36 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2014-07",
+  "messages": [
+    {
+      "id": "msg-1d6af8ed98f3",
+      "message_id": "<271848898.4848057.1405387171458.JavaMail.app@ela4-app7973.prod>",
+      "from_name": "Antonio Pedro Ramos",
+      "from_email_hash": "e95bafded85d24babdc99d611a276bf89a00bac76499acc1f1f445f966b0e617",
+      "date": "2014-07-15T01:19:31Z",
+      "subject": "[R-sig-teaching] Stay in touch with me on LinkedIn",
+      "subject_clean": "Stay in touch with me on LinkedIn",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20140715/a59f9abc/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20140715/a59f9abc/attachment.pl>",
+      "thread_id": "thread-1d6af8ed98f3",
+      "thread_depth": 0,
+      "month": "2014-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-1d6af8ed98f3",
+      "subject": "Stay in touch with me on LinkedIn",
+      "message_count": 1,
+      "participants": [
+        "Antonio Pedro Ramos"
+      ],
+      "started": "2014-07-15T01:19:31+00:00",
+      "last_reply": "2014-07-15T01:19:31+00:00",
+      "root_message_id": "msg-1d6af8ed98f3"
+    }
+  ]
+}

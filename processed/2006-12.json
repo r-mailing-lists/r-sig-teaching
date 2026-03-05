@@ -1,0 +1,133 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2006-12",
+  "messages": [
+    {
+      "id": "msg-4457f4ace56a",
+      "message_id": "<4573764A.7000005@buseco.monash.edu.au>",
+      "from_name": "Yeasmin Khandakar",
+      "from_email_hash": "8850046ca1f500c4ed987e720b81fe3c714ea5cade90a6d9fb1e8bf0374fa987",
+      "date": "2006-12-04T12:13:46+11:00",
+      "subject": "[R-sig-teaching] checking even/odd in R",
+      "subject_clean": "checking even/odd in R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI'm in search for a function which can be used to check whether a \nnumeriacl value (say, x) is even/odd.\nAny help is highly appreciated.\n\nThanks\nYeasmin",
+      "body_snippet": "Dear all,\n\nI'm in search for a function which can be used to check whether a \nnumeriacl value (say, x) is even/odd.\nAny help is highly appreciated.\n\nThanks\nYeasmin",
+      "thread_id": "thread-4457f4ace56a",
+      "thread_depth": 0,
+      "month": "2006-12"
+    },
+    {
+      "id": "msg-f43f9278448e",
+      "message_id": "<20061204012413.59973.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2006-12-03T20:24:13-05:00",
+      "subject": "[R-sig-teaching] checking even/odd in R",
+      "subject_clean": "checking even/odd in R",
+      "in_reply_to": "<4573764A.7000005@buseco.monash.edu.au> from \"Yeasmin Khandakar\" at Dec 04, 2006 12:13:46 PM",
+      "references": [],
+      "body_plain": "I do not know of anything specific to r but standard programming\ntricks may do it.  For example, if the number is x, compute y=x/2,\nlet z be y rounded to the nearest whole number, and check if y=z.  If\nit does, x is even.  There may be rounding issues; I doubt R stores\ndata as integers.  You might have to do this in an environment that\nsees the numbers as integers -- or text.  AWK comes to mind.\n\nYou may also want code to check for x values like 23.456. \n\n> \n> Dear all,\n> \n> I'm in search for a function which can be used to check whether a \n> numeriacl value (say, x) is even/odd.\n> Any help is highly appreciated.\n> \n> Thanks\n> Yeasmin\n> \n> --Boundary_(ID_5eoWS9sJoAbqcSKM1OUsmg)\n> Content-Type: text/plain; charset=\"us-ascii\"\n> MIME-Version: 1.0\n> Content-Transfer-Encoding: 7bit\n> Content-Disposition: inline\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n> --Boundary_(ID_5eoWS9sJoAbqcSKM1OUsmg)--\n> \n> \n\n\n\n _______\n|   ^  | \t\t    \n|     /  \t\t    Robert W. Hayden\n|    |   \t\t    in the old library\n|    |   \t\t    212 Main Street\n|   /    \t            P. O. Box 450\n|  |     \t\t  ^ North Troy, VT 05859\nL__L\t\t\t    (802) 988-2587\n                            http://statland.org/      \nMap of VT                   bob at statland.org\n\nCommunications sent to Plymouth State will not reach me.",
+      "body_snippet": "I do not know of anything specific to r but standard programming\ntricks may do it.  For example, if the number is x, compute y=x/2,\nlet z be y rounded to the nearest whole number, and check if y=z.  I",
+      "thread_id": "thread-f43f9278448e",
+      "thread_depth": 0,
+      "month": "2006-12"
+    },
+    {
+      "id": "msg-38e7b1c6a23c",
+      "message_id": "<20061204021604.HTZA8030.tomts22-srv.bellnexxia.net@JohnDesktop8300>",
+      "from_name": "John Fox",
+      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
+      "date": "2006-12-03T21:16:06-05:00",
+      "subject": "[R-sig-teaching] checking even/odd in R",
+      "subject_clean": "checking even/odd in R",
+      "in_reply_to": "<20061204012413.59973.qmail@mv.mv.com>",
+      "references": [],
+      "body_plain": "Dear Robert and Yeasmin,\n\nYou could test that the number mod 2 is 0; e.g.,\n\n> (1:10 %% 2) == 0\n [1] FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE\n\nA potential problem is that testing exact equality is risky, so you're\nprobably better off checking that abs(x) %% 2 is less than some very small\nnumber such as sqrt(.Machine$double.eps).\n\nI hope this helps,\n John\n\n--------------------------------\nJohn Fox\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario\nCanada L8S 4M4\n905-525-9140x23604\nhttp://socserv.mcmaster.ca/jfox \n-------------------------------- \n\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org \n> [mailto:r-sig-teaching-bounces at r-project.org] On Behalf Of \n> Robert W. Hayden\n> Sent: Sunday, December 03, 2006 8:24 PM\n> To: Yeasmin Khandakar\n> Cc: R-sig-teaching\n> Subject: Re: [R-sig-teaching] checking even/odd in R\n> \n> \n> I do not know of anything specific to r but standard \n> programming tricks may do it.  For example, if the number is \n> x, compute y=x/2, let z be y rounded to the nearest whole \n> number, and check if y=z.  If it does, x is even.  There may \n> be rounding issues; I doubt R stores data as integers.  You \n> might have to do this in an environment that sees the numbers \n> as integers -- or text.  AWK comes to mind.\n> \n> You may also want code to check for x values like 23.456. \n> \n> > \n> > Dear all,\n> > \n> > I'm in search for a function which can be used to check whether a \n> > numeriacl value (say, x) is even/odd.\n> > Any help is highly appreciated.\n> > \n> > Thanks\n> > Yeasmin\n> > \n> > --Boundary_(ID_5eoWS9sJoAbqcSKM1OUsmg)\n> > Content-Type: text/plain; charset=\"us-ascii\"\n> > MIME-Version: 1.0\n> > Content-Transfer-Encoding: 7bit\n> > Content-Disposition: inline\n> > \n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list \n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> > \n> > --Boundary_(ID_5eoWS9sJoAbqcSKM1OUsmg)--\n> > \n> > \n> \n> \n> \n>  _______\n> |   ^  | \t\t    \n> |     /  \t\t    Robert W. Hayden\n> |    |   \t\t    in the old library\n> |    |   \t\t    212 Main Street\n> |   /    \t            P. O. Box 450\n> |  |     \t\t  ^ North Troy, VT 05859\n> L__L\t\t\t    (802) 988-2587\n>                             http://statland.org/      \n> Map of VT                   bob at statland.org\n> \n> Communications sent to Plymouth State will not reach me.\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list \n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Dear Robert and Yeasmin,\n\nYou could test that the number mod 2 is 0; e.g.,\n\n> (1:10 %% 2) == 0\n [1] FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE\n\nA potential problem is that testing exa",
+      "thread_id": "thread-f43f9278448e",
+      "thread_depth": 1,
+      "month": "2006-12"
+    },
+    {
+      "id": "msg-a4c514518f53",
+      "message_id": "<20061203184201.q34sk1smn8ckkscs@webmail.reed.edu>",
+      "from_name": "Albyn Jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2006-12-03T18:42:01-08:00",
+      "subject": "[R-sig-teaching] checking even/odd in R",
+      "subject_clean": "checking even/odd in R",
+      "in_reply_to": "<20061204021604.HTZA8030.tomts22-srv.bellnexxia.net@JohnDesktop8300>",
+      "references": [
+        "<20061204021604.HTZA8030.tomts22-srv.bellnexxia.net@JohnDesktop8300>"
+      ],
+      "body_plain": "One solution for the exact equality problem is to start by rounding or\ntruncating to an integer, depending of course on what the origin of the \ndataset\nwas, and the point of the operation.  The sign doesn't matter;\n\n> -3 %% 2\n[1] 1\n\n\nfloor(x) rounds down to an integer\nceiling(x) rounds up\nround(x) rounds to the nearest integer, rounding to an even integer\n         in case of ties\n\nalbyn\n\nQuoting John Fox <jfox at mcmaster.ca>:\n\n> Dear Robert and Yeasmin,\n>\n> You could test that the number mod 2 is 0; e.g.,\n>\n>> (1:10 %% 2) == 0\n> [1] FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE\n>\n> A potential problem is that testing exact equality is risky, so you're\n> probably better off checking that abs(x) %% 2 is less than some very small\n> number such as sqrt(.Machine$double.eps).\n>\n> I hope this helps,\n> John\n>\n> --------------------------------\n> John Fox\n> Department of Sociology\n> McMaster University\n> Hamilton, Ontario\n> Canada L8S 4M4\n> 905-525-9140x23604\n> http://socserv.mcmaster.ca/jfox\n> --------------------------------\n>\n>> -----Original Message-----\n>> From: r-sig-teaching-bounces at r-project.org\n>> [mailto:r-sig-teaching-bounces at r-project.org] On Behalf Of\n>> Robert W. Hayden\n>> Sent: Sunday, December 03, 2006 8:24 PM\n>> To: Yeasmin Khandakar\n>> Cc: R-sig-teaching\n>> Subject: Re: [R-sig-teaching] checking even/odd in R\n>>\n>>\n>> I do not know of anything specific to r but standard\n>> programming tricks may do it.  For example, if the number is\n>> x, compute y=x/2, let z be y rounded to the nearest whole\n>> number, and check if y=z.  If it does, x is even.  There may\n>> be rounding issues; I doubt R stores data as integers.  You\n>> might have to do this in an environment that sees the numbers\n>> as integers -- or text.  AWK comes to mind.\n>>\n>> You may also want code to check for x values like 23.456.\n>>\n>> >\n>> > Dear all,\n>> >\n>> > I'm in search for a function which can be used to check whether a\n>> > numeriacl value (say, x) is even/odd.\n>> > Any help is highly appreciated.\n>> >\n>> > Thanks\n>> > Yeasmin\n>> >\n>> > --Boundary_(ID_5eoWS9sJoAbqcSKM1OUsmg)\n>> > Content-Type: text/plain; charset=\"us-ascii\"\n>> > MIME-Version: 1.0\n>> > Content-Transfer-Encoding: 7bit\n>> > Content-Disposition: inline\n>> >\n>> > _______________________________________________\n>> > R-sig-teaching at r-project.org mailing list\n>> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>> >\n>> > --Boundary_(ID_5eoWS9sJoAbqcSKM1OUsmg)--\n>> >\n>> >\n>>\n>>\n>>\n>>  _______\n>> |   ^  |\n>> |     /  \t\t    Robert W. Hayden\n>> |    |   \t\t    in the old library\n>> |    |   \t\t    212 Main Street\n>> |   /    \t            P. O. Box 450\n>> |  |     \t\t  ^ North Troy, VT 05859\n>> L__L\t\t\t    (802) 988-2587\n>>                             http://statland.org/\n>> Map of VT                   bob at statland.org\n>>\n>> Communications sent to Plymouth State will not reach me.\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_snippet": "One solution for the exact equality problem is to start by rounding or\ntruncating to an integer, depending of course on what the origin of the \ndataset\nwas, and the point of the operation.  The sign d",
+      "thread_id": "thread-f43f9278448e",
+      "thread_depth": 2,
+      "month": "2006-12"
+    },
+    {
+      "id": "msg-f7117c0b041c",
+      "message_id": "<20061204132930.KCYG8030.tomts22-srv.bellnexxia.net@JohnDesktop8300>",
+      "from_name": "John Fox",
+      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
+      "date": "2006-12-04T08:29:33-05:00",
+      "subject": "[R-sig-teaching] checking even/odd in R",
+      "subject_clean": "checking even/odd in R",
+      "in_reply_to": "<20061203184201.q34sk1smn8ckkscs@webmail.reed.edu>",
+      "references": [],
+      "body_plain": "Dear Albyn,\n\nI thought about rounding but was concerned that the arithmetic would still\nbe performed on real numbers. This is true even if the left argument to %%\nis coerced to an integer. (round itself produces a double-precision floating\npoint number, not an integer.) I'm not sure whether this is a realistic\nworry.\n\nRegards,\n John\n\n--------------------------------\nJohn Fox\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario\nCanada L8S 4M4\n905-525-9140x23604\nhttp://socserv.mcmaster.ca/jfox \n-------------------------------- \n\n> -----Original Message-----\n> From: Albyn Jones [mailto:jones at reed.edu] \n> Sent: Sunday, December 03, 2006 9:42 PM\n> To: John Fox\n> Cc: bob at statland.org; 'Yeasmin Khandakar'; 'R-sig-teaching'\n> Subject: Re: [R-sig-teaching] checking even/odd in R\n> \n> One solution for the exact equality problem is to start by \n> rounding or truncating to an integer, depending of course on \n> what the origin of the dataset was, and the point of the \n> operation.  The sign doesn't matter;\n> \n> > -3 %% 2\n> [1] 1\n> \n> \n> floor(x) rounds down to an integer\n> ceiling(x) rounds up\n> round(x) rounds to the nearest integer, rounding to an even integer\n>          in case of ties\n> \n> albyn\n> \n> Quoting John Fox <jfox at mcmaster.ca>:\n> \n> > Dear Robert and Yeasmin,\n> >\n> > You could test that the number mod 2 is 0; e.g.,\n> >\n> >> (1:10 %% 2) == 0\n> > [1] FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE\n> >\n> > A potential problem is that testing exact equality is \n> risky, so you're \n> > probably better off checking that abs(x) %% 2 is less than \n> some very \n> > small number such as sqrt(.Machine$double.eps).\n> >\n> > I hope this helps,\n> > John\n> >\n> > --------------------------------\n> > John Fox\n> > Department of Sociology\n> > McMaster University\n> > Hamilton, Ontario\n> > Canada L8S 4M4\n> > 905-525-9140x23604\n> > http://socserv.mcmaster.ca/jfox\n> > --------------------------------\n> >\n> >> -----Original Message-----\n> >> From: r-sig-teaching-bounces at r-project.org\n> >> [mailto:r-sig-teaching-bounces at r-project.org] On Behalf Of \n> Robert W. \n> >> Hayden\n> >> Sent: Sunday, December 03, 2006 8:24 PM\n> >> To: Yeasmin Khandakar\n> >> Cc: R-sig-teaching\n> >> Subject: Re: [R-sig-teaching] checking even/odd in R\n> >>\n> >>\n> >> I do not know of anything specific to r but standard programming \n> >> tricks may do it.  For example, if the number is x, compute y=x/2, \n> >> let z be y rounded to the nearest whole number, and check \n> if y=z.  If \n> >> it does, x is even.  There may be rounding issues; I doubt \n> R stores \n> >> data as integers.  You might have to do this in an \n> environment that \n> >> sees the numbers as integers -- or text.  AWK comes to mind.\n> >>\n> >> You may also want code to check for x values like 23.456.\n> >>\n> >> >\n> >> > Dear all,\n> >> >\n> >> > I'm in search for a function which can be used to check \n> whether a \n> >> > numeriacl value (say, x) is even/odd.\n> >> > Any help is highly appreciated.\n> >> >\n> >> > Thanks\n> >> > Yeasmin\n> >> >\n> >> > --Boundary_(ID_5eoWS9sJoAbqcSKM1OUsmg)\n> >> > Content-Type: text/plain; charset=\"us-ascii\"\n> >> > MIME-Version: 1.0\n> >> > Content-Transfer-Encoding: 7bit\n> >> > Content-Disposition: inline\n> >> >\n> >> > _______________________________________________\n> >> > R-sig-teaching at r-project.org mailing list \n> >> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >> >\n> >> > --Boundary_(ID_5eoWS9sJoAbqcSKM1OUsmg)--\n> >> >\n> >> >\n> >>\n> >>\n> >>\n> >>  _______\n> >> |   ^  |\n> >> |     /  \t\t    Robert W. Hayden\n> >> |    |   \t\t    in the old library\n> >> |    |   \t\t    212 Main Street\n> >> |   /    \t            P. O. Box 450\n> >> |  |     \t\t  ^ North Troy, VT 05859\n> >> L__L\t\t\t    (802) 988-2587\n> >>                             http://statland.org/\n> >> Map of VT                   bob at statland.org\n> >>\n> >> Communications sent to Plymouth State will not reach me.\n> >>\n> >> _______________________________________________\n> >> R-sig-teaching at r-project.org mailing list \n> >> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list \n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >\n> \n> \n> \n>",
+      "body_snippet": "Dear Albyn,\n\nI thought about rounding but was concerned that the arithmetic would still\nbe performed on real numbers. This is true even if the left argument to %%\nis coerced to an integer. (round itse",
+      "thread_id": "thread-f43f9278448e",
+      "thread_depth": 3,
+      "month": "2006-12"
+    },
+    {
+      "id": "msg-d4c00c44bc35",
+      "message_id": "<20061204094330.1sr7lfoonv8cw8o8@webmail.reed.edu>",
+      "from_name": "Albyn Jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2006-12-04T09:43:30-08:00",
+      "subject": "[R-sig-teaching] checking even/odd in R",
+      "subject_clean": "checking even/odd in R",
+      "in_reply_to": "<20061204132930.KCYG8030.tomts22-srv.bellnexxia.net@JohnDesktop8300>",
+      "references": [
+        "<20061204132930.KCYG8030.tomts22-srv.bellnexxia.net@JohnDesktop8300>"
+      ],
+      "body_plain": "Quoting John Fox <jfox at mcmaster.ca>:\n\n> Dear Albyn,\n>\n> I thought about rounding but was concerned that the arithmetic would still\n> be performed on real numbers. This is true even if the left argument to %%\n> is coerced to an integer. (round itself produces a double-precision floating\n> point number, not an integer.) I'm not sure whether this is a realistic\n> worry.\n>\n> Regards,\n> John\n\nIt is easy to test.\n\n> pi\n[1] 3.141593\n> pi %% 2\n[1] 1.141593\n> trunc(pi) %% 2\n[1] 1\n> round(pi) %% 2\n[1] 1\n> is.integer(round(pi) %% 2)\n[1] FALSE\n> round(pi) %% 2 == 1\n[1] TRUE\n\nYou are indeed correct; round() yields a double rather than an integer.\nHowever, %% seems to do the right thing anyway, and the equality test \nworks....\n\nI expect that for a sufficiently large double, finite precision will \neventually\nforce it to be even even :-)  but that's pretty big.\n\n> (2^65-1) %% 2\n[1] 0\nWarning message:\nprobable complete loss of accuracy in modulus\n\nit loooks like somebody thought of this problem already!\n\nalbyn",
+      "body_snippet": "Quoting John Fox <jfox at mcmaster.ca>:\n\n> Dear Albyn,\n>\n> I thought about rounding but was concerned that the arithmetic would still\n> be performed on real numbers. This is true even if the left argu",
+      "thread_id": "thread-f43f9278448e",
+      "thread_depth": 4,
+      "month": "2006-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-f43f9278448e",
+      "subject": "checking even/odd in R",
+      "message_count": 5,
+      "participants": [
+        "Albyn Jones",
+        "John Fox",
+        "Robert W. Hayden"
+      ],
+      "started": "2006-12-03T20:24:13-05:00",
+      "last_reply": "2006-12-04T09:43:30-08:00",
+      "root_message_id": "msg-f43f9278448e"
+    },
+    {
+      "id": "thread-4457f4ace56a",
+      "subject": "checking even/odd in R",
+      "message_count": 1,
+      "participants": [
+        "Yeasmin Khandakar"
+      ],
+      "started": "2006-12-04T12:13:46+11:00",
+      "last_reply": "2006-12-04T12:13:46+11:00",
+      "root_message_id": "msg-4457f4ace56a"
+    }
+  ]
+}

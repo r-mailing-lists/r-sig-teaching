@@ -1,0 +1,694 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2012-04",
+  "messages": [
+    {
+      "id": "msg-94707c34085c",
+      "message_id": "<4F77E592.70208@kvasaheim.com>",
+      "from_name": "Ole J. Forsberg, Ph.D.",
+      "from_email_hash": "974024acdc1f74bfddc51d4ecbe234395cc01fff7155ed241362db52302b556d",
+      "date": "2012-04-01T00:20:18-05:00",
+      "subject": "[R-sig-teaching] Comparing Points on Two Regression Lines",
+      "subject_clean": "Comparing Points on Two Regression Lines",
+      "in_reply_to": "<4F777EA5020000A6000C06DF@uct5.uct.usm.maine.edu>",
+      "references": [
+        "<4F776335020000A6000C06CD@uct5.uct.usm.maine.edu>",
+        "<CAAmySGO2bqx0hfRU2WCnUe6kA1RWzRdHmqJxN7sk4OAJeXuqeA@mail.gmail.com>",
+        "<4F7766DA020000A6000C06D3@uct5.uct.usm.maine.edu>",
+        "<CAAmySGP12Ao3zghdFrF5swPV6JSsg_5CVautqzYLWZUJxQbv_w@mail.gmail.com>",
+        "<4F777EA5020000A6000C06DF@uct5.uct.usm.maine.edu>"
+      ],
+      "body_plain": "Thread,\n\nWhen discussing statistical tests with my students, I emphasize clarity. \nI have noticed that once they clearly define what they mean by \n\"compare,\" the method becomes obvious to them.\n\nIn this question, it is very easy to compare 84.42477 and 76.86037 -- \nthe first is larger than the second -- however, this is really not the \nquestion being asked. What is the question being asked? Is the first \n(statistically) significantly larger than the second? Well, what is the \nstandard error at those points? Is the first (practically) significantly \nlarger than the second? That depends on the goals of the research. Both \nquestions are important. Neither question can be answered by the \nquestion posed.\n\n  ~ Ole\n\n\n\nOn 3/31/2012 9:01 PM, AbouEl-Makarim Aboueissa wrote:\n> What I need is to compare these predicted values on both lines:\n>\n>> predict(m1, newdata = data.frame(x = x))\n>         1        2        3        4        5\n> 84.42477 84.26280 81.34729 60.29085 27.89632\n>\n>\n>> predict(m2, newdata = data.frame(x = x))\n>         1        2        3        4        5\n> 76.86037 76.69170 73.65554 51.72772 17.99261\n>\n> for example: compare 84.42477  versus 76.86037 , and   84.26280  versus  76.69170  and so on.\n>\n>\n>\n>\n> with many thanks\n> abou\n>\n>\n>\n>\n> ==========================\n> AbouEl-Makarim Aboueissa, Ph.D.\n> Associate Professor of Statistics\n> Graduate Program Coordinator\n> Department of Mathematics&  Statistics\n> University of Southern Maine\n> 96 Falmouth Street\n> P.O. Box 9300\n> Portland, ME 04104-9300\n> USA\n>\n>\n> Tel: (207) 228-8389\n> Fax: (207) 780-5607\n> Email: aaboueissa at usm.maine.edu\n>            aboueiss at yahoo.com\n>\n> Office: 301C Payson Smith\n>\n>>>> \"R. Michael Weylandt\"<michael.weylandt at gmail.com>  3/31/2012 9:13 PM>>>\n> Again, you need to clarify what you mean by compare, but here's a\n> better way to do predict from a linear model -- my first guess was\n> simple interpolation (not very good):\n>\n> m1<- lm(y ~ x, data = data.frame(y = y1, x = x1))\n> m2<- lm(y ~ x, data = data.frame(y = y2, x = x2))\n>\n> predict(m1, newdata = data.frame(x = x))\n> predict(m2, newdata = data.frame(x = x))\n>\n> Perhaps you want an ANOVA (?anova) test to compare the models: if you\n> want to compare the predicted values at x directly, you could use\n> interval=\"predict\" for the different models and see if they overlap at\n> a given confidence level.\n>\n> Michael\n>\n> PS -- Please do cc the list: I'm not a statistics expert by any means\n> and I'd hate for what I say to go unreviewed by actual experts.\n>\n> On Sat, Mar 31, 2012 at 8:19 PM, AbouEl-Makarim Aboueissa\n> <aaboueissa at usm.maine.edu>  wrote:\n>> I need to compare the value of y1-hat versus y2-hat corresponding to these\n>> values of x<-c(0.10,0.20,2.0,15.0,35.0)\n>> e.g. for x=0.10 compare y1-hat(x=0.10) versus y2-hat(x=0.10) and so on.\n>>\n>> thanks\n>> abou\n>>\n>>\n>>>>> \"R. Michael Weylandt\"<michael.weylandt at gmail.com>  3/31/2012 8:10 PM>>>\n>> ? approxfun\n>>\n>> f1<- approxfun(x1,y1)\n>> f2<- approxfun(x2,y2)\n>>\n>> f1(x) - f2(x)\n>>\n>> But I'm not sure what you mean be compare...do you have a particular\n>> test in mind?\n>>\n>> Michael\n>>\n>> On Sat, Mar 31, 2012 at 8:04 PM, AbouEl-Makarim Aboueissa\n>> <aaboueissa at usm.maine.edu>  wrote:\n>>> Dear All:\n>>>\n>>> I am trying to compare points on two regression lines given some specific\n>>> values of X. I am not sure how to do it in R and/or in SAS. Can someone help\n>>> me, and show me how to conduct such test in R.\n>>>\n>>>\n>>> You can use the following data for both lines.\n>>>\n>>> ### data for line 1:\n>>> ### =========\n>>>\n>>> x1<-c(0.0,0.25,2.5,25.0,50.0)\n>>> y1<-c(100.0,79.0,74.0,36.0,8.0)\n>>>\n>>>\n>>>\n>>> ### data for line 2:\n>>> ### =========\n>>>\n>>> x2<-c(0.0,0.25,2.5,25.0,50.0)\n>>> y2<-c(100.0,79.0,55.0,18.0,2.0)\n>>>\n>>>\n>>> ### these are the given values of X:\n>>> ###  ===================\n>>>\n>>> x<-c(0.10,0.20,2.0,15.0,35.0)\n>>>\n>>>\n>>> thank you very much in advance\n>>> abou\n>>>\n>>>\n>>>\n>>>\n>>>\n>>>\n>>>\n>>>\n>>> ==========================\n>>> AbouEl-Makarim Aboueissa, Ph.D.\n>>> Associate Professor of Statistics\n>>> Graduate Program Coordinator\n>>> Department of Mathematics&  Statistics\n>>> University of Southern Maine\n>>> 96 Falmouth Street\n>>> P.O. Box 9300\n>>> Portland, ME 04104-9300\n>>> USA\n>>>\n>>>\n>>> Tel: (207) 228-8389\n>>> Fax: (207) 780-5607\n>>> Email: aaboueissa at usm.maine.edu\n>>>           aboueiss at yahoo.com\n>>>\n>>> Office: 301C Payson Smith\n>>>\n>>>\n>>>         [[alternative HTML version deleted]]\n>>>\n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_snippet": "Thread,\n\nWhen discussing statistical tests with my students, I emphasize clarity. \nI have noticed that once they clearly define what they mean by \n\"compare,\" the method becomes obvious to them.\n\nIn th",
+      "thread_id": "thread-94707c34085c",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-15bc7ea31ac2",
+      "message_id": "<4F78059E020000A6000C06F5@uct5.uct.usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2012-04-01T07:37:02-04:00",
+      "subject": "[R-sig-teaching] Comparing Points on Two Regression Lines",
+      "subject_clean": "Comparing Points on Two Regression Lines",
+      "in_reply_to": "<CAAmySGP12Ao3zghdFrF5swPV6JSsg_5CVautqzYLWZUJxQbv_w@mail.gmail.com>",
+      "references": [
+        "<4F776335020000A6000C06CD@uct5.uct.usm.maine.edu>",
+        "<CAAmySGO2bqx0hfRU2WCnUe6kA1RWzRdHmqJxN7sk4OAJeXuqeA@mail.gmail.com>",
+        "<4F7766DA020000A6000C06D3@uct5.uct.usm.maine.edu>",
+        "<CAAmySGP12Ao3zghdFrF5swPV6JSsg_5CVautqzYLWZUJxQbv_w@mail.gmail.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120401/f274d4ed/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120401/f274d4ed/attachment.pl>",
+      "thread_id": "thread-15bc7ea31ac2",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-a9e96f782f64",
+      "message_id": "<4F7B501D020000A6000C0B75@uct5.uct.usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2012-04-03T19:31:41-04:00",
+      "subject": "[R-sig-teaching] Computing correlations",
+      "subject_clean": "Computing correlations",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120403/89481ab3/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120403/89481ab3/attachment.pl>",
+      "thread_id": "thread-a9e96f782f64",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-195d7b379ee7",
+      "message_id": "<4F7B541D020000A6000C0B7B@uct5.uct.usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2012-04-03T19:48:45-04:00",
+      "subject": "[R-sig-teaching] Computing correlations including the p values",
+      "subject_clean": "Computing correlations including the p values",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120403/3053af47/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120403/3053af47/attachment.pl>",
+      "thread_id": "thread-195d7b379ee7",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-1c2f2d0bcffe",
+      "message_id": "<CA+vqiLEDK_F5SVKr4an4VmNc6mW8nQPv=vXy42-pex6PNauTKg@mail.gmail.com>",
+      "from_name": "Ista Zahn",
+      "from_email_hash": "098a31f0cc45d6b90198bf3b75e03deed7c570292be352a10b98aeee4bf7012e",
+      "date": "2012-04-03T20:05:57-04:00",
+      "subject": "[R-sig-teaching] Computing correlations including the p values",
+      "subject_clean": "Computing correlations including the p values",
+      "in_reply_to": "<4F7B541D020000A6000C0B7B@uct5.uct.usm.maine.edu>",
+      "references": [
+        "<4F7B541D020000A6000C0B7B@uct5.uct.usm.maine.edu>"
+      ],
+      "body_plain": "Hi,\n\nFor the correlations you just need to understand how matrix indecies work in R:\n\ncor(cbind(x1, x2, x3, y1, y2, y3))[4:6, 1:3]\n\nI'll leave it to you to figure out the p values part.\n\nBest,\nIsta\n\nOn Tue, Apr 3, 2012 at 7:48 PM, AbouEl-Makarim Aboueissa\n<aaboueissa at usm.maine.edu> wrote:\n> Dear All: (revise of the previous message)\n>\n> I have another silly question. How I can compute the correlations of two groups of variables including the p values. For example how to compute the correlations of the X's with Y's only of these two groups of variables\n>\n> x1<-c(12,3,45,32,34,56,7,89)\n> x2<-c(6,8,9,6,7,44,33,22)\n> x3<-c(45,7,6,89,23,45,67,22)\n>\n> y1<-c(21,43,77,32,23,45,78,90)\n> y2<-c(32,56,78,90,34,23,11,23)\n> y3<-c(8,90,34,68,72,17,27,35)\n>\n>\n> This what I need to get:\n>\n> ? ? ? ? ? ? ? ? ? ? y1 ? ? ? ? ? ? ? ? ?y2 ? ? ? ? ? ? ? ? ?y3\n>\n> x1 ? ? ? ?corr(x1,y1) ? ? ? corr(x1,y2) ? ? ? ? corr(x1,y3)\n> ? ? ? ? ? ?p value ? ? ? ? ? ? ?p value ? ? ? ? ? ? p value\n>\n> x2 ? ? ? ?corr(x2,y1) ? ? ? corr(x2,y2) ? ? ? ? corr(x2,y3)\n> ? ? ? ? ? ? p value ? ? ? ? ? p value ? ? ? ? ? ? ? ?p value\n>\n> x3 ? ? ? ?corr(x3,y1) ? ? ? corr(x3,y2) ? ? ? ? corr(x3,y3)\n> ? ? ? ? ? ? ?p value ? ? ? ? ? p value ? ? ? ? ? ? ? p value\n>\n>\n>\n> Thank you very much\n> abou\n>\n>\n> ==========================\n> AbouEl-Makarim Aboueissa, Ph.D.\n> Associate Professor of Statistics\n> Graduate Program Coordinator\n> Department of Mathematics & Statistics\n> University of Southern Maine\n> 96 Falmouth Street\n> P.O. Box 9300\n> Portland, ME 04104-9300\n> USA\n>\n>\n> Tel: (207) 228-8389\n> Fax: (207) 780-5607\n> Email: aaboueissa at usm.maine.edu\n> ? ? ? ? ?aboueiss at yahoo.com\n>\n> Office: 301C Payson Smith\n>\n>\n> ? ? ? ?[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Hi,\n\nFor the correlations you just need to understand how matrix indecies work in R:\n\ncor(cbind(x1, x2, x3, y1, y2, y3))[4:6, 1:3]\n\nI'll leave it to you to figure out the p values part.\n\nBest,\nIsta\n\nO",
+      "thread_id": "thread-195d7b379ee7",
+      "thread_depth": 1,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-968cb5ad0baf",
+      "message_id": "<4F7B78B4020000A6000C0B91@uct5.uct.usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2012-04-03T22:24:52-04:00",
+      "subject": "[R-sig-teaching] Computing correlations including the p values",
+      "subject_clean": "Computing correlations including the p values",
+      "in_reply_to": "<CA+vqiLEDK_F5SVKr4an4VmNc6mW8nQPv=vXy42-pex6PNauTKg@mail.gmail.com>",
+      "references": [
+        "<4F7B541D020000A6000C0B7B@uct5.uct.usm.maine.edu>",
+        "<CA+vqiLEDK_F5SVKr4an4VmNc6mW8nQPv=vXy42-pex6PNauTKg@mail.gmail.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120403/e4ee1435/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120403/e4ee1435/attachment.pl>",
+      "thread_id": "thread-195d7b379ee7",
+      "thread_depth": 2,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-bb336acaca79",
+      "message_id": "<CA+vqiLHaj0=jNPvZg_YYyAPgjS9GakN6vdR5RrEPL25Kq3X4ng@mail.gmail.com>",
+      "from_name": "Ista Zahn",
+      "from_email_hash": "098a31f0cc45d6b90198bf3b75e03deed7c570292be352a10b98aeee4bf7012e",
+      "date": "2012-04-03T22:32:33-04:00",
+      "subject": "[R-sig-teaching] Computing correlations including the p values",
+      "subject_clean": "Computing correlations including the p values",
+      "in_reply_to": "<4F7B78B4020000A6000C0B91@uct5.uct.usm.maine.edu>",
+      "references": [
+        "<4F7B541D020000A6000C0B7B@uct5.uct.usm.maine.edu>",
+        "<CA+vqiLEDK_F5SVKr4an4VmNc6mW8nQPv=vXy42-pex6PNauTKg@mail.gmail.com>",
+        "<4F7B78B4020000A6000C0B91@uct5.uct.usm.maine.edu>"
+      ],
+      "body_plain": "On Tue, Apr 3, 2012 at 10:24 PM, AbouEl-Makarim Aboueissa\n<aaboueissa at usm.maine.edu> wrote:\n> Hi,\n>\n> I am able to get the correlations as:\n>\n> xxx<-cbind(x1,x2,x3)\n> yyy<-cbind(y1,y2,y3)\n> cor(xxx,yyy)\n> This yields same results as yours.\n>\n> But I could not get the p values yet.\n\nWhat have you tried? What went wrong? Getting the p.values is not a\nstraightforward extension of the approach I illustrated earlier, but\nit is something you can figure out with a few google searches. If you\nrun into problems I'll be glad to help, but please do make an effort\nto figure it out on your own.\n\nBest,\nIsta\n\n>\n> thanks\n> abou\n>\n>\n>>>> Ista Zahn <istazahn at gmail.com> 4/3/2012 8:05 PM >>>\n>\n> Hi,\n>\n> For the correlations you just need to understand how matrix indecies work in\n> R:\n>\n> cor(cbind(x1, x2, x3, y1, y2, y3))[4:6, 1:3]\n>\n> I'll leave it to you to figure out the p values part.\n>\n> Best,\n> Ista\n>\n> On Tue, Apr 3, 2012 at 7:48 PM, AbouEl-Makarim Aboueissa\n> <aaboueissa at usm.maine.edu> wrote:\n>> Dear All: (revise of the previous message)\n>>\n>> I have another silly question. How I can compute the correlations of two\n>> groups of variables including the p values. For example how to compute the\n>> correlations of the X's with Y's only of these two groups of variables\n>>\n>> x1<-c(12,3,45,32,34,56,7,89)\n>> x2<-c(6,8,9,6,7,44,33,22)\n>> x3<-c(45,7,6,89,23,45,67,22)\n>>\n>> y1<-c(21,43,77,32,23,45,78,90)\n>> y2<-c(32,56,78,90,34,23,11,23)\n>> y3<-c(8,90,34,68,72,17,27,35)\n>>\n>>\n>> This what I need to get:\n>>\n>>???????????????????? y1????????????????? y2????????????????? y3\n>>\n>> x1??????? corr(x1,y1)?????? corr(x1,y2)???????? corr(x1,y3)\n>>??????????? p value????????????? p value???????????? p value\n>>\n>> x2??????? corr(x2,y1)?????? corr(x2,y2)???????? corr(x2,y3)\n>>???????????? p value?????????? p value??????????????? p value\n>>\n>> x3??????? corr(x3,y1)?????? corr(x3,y2)???????? corr(x3,y3)\n>>????????????? p value?????????? p value?????????????? p value\n>>\n>>\n>>\n>> Thank you very much\n>> abou\n>>\n>>\n>> ==========================\n>> AbouEl-Makarim Aboueissa, Ph.D.\n>> Associate Professor of Statistics\n>> Graduate Program Coordinator\n>> Department of Mathematics & Statistics\n>> University of Southern Maine\n>> 96 Falmouth Street\n>> P.O. Box 9300\n>> Portland, ME 04104-9300\n>> USA\n>>\n>>\n>> Tel: (207) 228-8389\n>> Fax: (207) 780-5607\n>> Email: aaboueissa at usm.maine.edu\n>>????????? aboueiss at yahoo.com\n>>\n>> Office: 301C Payson Smith\n>>\n>>\n>>??????? [[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "On Tue, Apr 3, 2012 at 10:24 PM, AbouEl-Makarim Aboueissa\n<aaboueissa at usm.maine.edu> wrote:\n> Hi,\n>\n> I am able to get the correlations as:\n>\n> xxx<-cbind(x1,x2,x3)\n> yyy<-cbind(y1,y2,y3)\n> cor(xxx",
+      "thread_id": "thread-195d7b379ee7",
+      "thread_depth": 3,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-06f3fa5c61bd",
+      "message_id": "<73FE1A0A-8A2A-469F-BFFF-D508840CE8DD@revelle.net>",
+      "from_name": "William Revelle",
+      "from_email_hash": "17775642d38a89586519cdb4da8b9881c3da6cb4b5abf51dc2b37a23be377688",
+      "date": "2012-04-03T22:00:37-05:00",
+      "subject": "[R-sig-teaching] Computing correlations including the p values",
+      "subject_clean": "Computing correlations including the p values",
+      "in_reply_to": "<CA+vqiLHaj0=jNPvZg_YYyAPgjS9GakN6vdR5RrEPL25Kq3X4ng@mail.gmail.com>",
+      "references": [
+        "<4F7B541D020000A6000C0B7B@uct5.uct.usm.maine.edu>",
+        "<CA+vqiLEDK_F5SVKr4an4VmNc6mW8nQPv=vXy42-pex6PNauTKg@mail.gmail.com>",
+        "<4F7B78B4020000A6000C0B91@uct5.uct.usm.maine.edu>",
+        "<CA+vqiLHaj0=jNPvZg_YYyAPgjS9GakN6vdR5RrEPL25Kq3X4ng@mail.gmail.com>"
+      ],
+      "body_plain": "Dear AbouEl-Makarim Aboueissa,\n\nAs people have pointed out before, if you are interested in how to use R to teach statistics, this is the appropriate mailing list, if you want to learn how to use R, the appropriate mailing list is the r-help mailing list.\n\nHowever, to answer your question:\n\nTo get the p-values of a group of correlations, you might try the corr.test function in psych.\n\nUnfortunately, although this will give you the correct correlations, it will not give the correct p values for different sets of x and y.\nSo you need to work a little harder \n\n> x1<-c(12,3,45,32,34,56,7,89)\n> x2<-c(6,8,9,6,7,44,33,22)\n> x3<-c(45,7,6,89,23,45,67,22)\n> \n> y1<-c(21,43,77,32,23,45,78,90)\n> y2<-c(32,56,78,90,34,23,11,23)\n> y3<-c(8,90,34,68,72,17,27,35)\n> df <- data.frame(x1,x2,x3,y1,y2,y3)\n> c <- corr.test(df)\nrs <- c$r[4:6,1:3]\nps <- c$p[4:6,1:3]\n\nBill\n\n\nOn Apr 3, 2012, at 9:32 PM, Ista Zahn wrote:\n\n> On Tue, Apr 3, 2012 at 10:24 PM, AbouEl-Makarim Aboueissa\n> <aaboueissa at usm.maine.edu> wrote:\n>> Hi,\n>> \n>> I am able to get the correlations as:\n>> \n>> xxx<-cbind(x1,x2,x3)\n>> yyy<-cbind(y1,y2,y3)\n>> cor(xxx,yyy)\n>> This yields same results as yours.\n>> \n>> But I could not get the p values yet.\n> \n> What have you tried? What went wrong? Getting the p.values is not a\n> straightforward extension of the approach I illustrated earlier, but\n> it is something you can figure out with a few google searches. If you\n> run into problems I'll be glad to help, but please do make an effort\n> to figure it out on your own.\n> \n> Best,\n> Ista\n> \n>> \n>> thanks\n>> abou\n>> \n>> \n>>>>> Ista Zahn <istazahn at gmail.com> 4/3/2012 8:05 PM >>>\n>> \n>> Hi,\n>> \n>> For the correlations you just need to understand how matrix indecies work in\n>> R:\n>> \n>> cor(cbind(x1, x2, x3, y1, y2, y3))[4:6, 1:3]\n>> \n>> I'll leave it to you to figure out the p values part.\n>> \n>> Best,\n>> Ista\n>> \n>> On Tue, Apr 3, 2012 at 7:48 PM, AbouEl-Makarim Aboueissa\n>> <aaboueissa at usm.maine.edu> wrote:\n>>> Dear All: (revise of the previous message)\n>>> \n>>> I have another silly question. How I can compute the correlations of two\n>>> groups of variables including the p values. For example how to compute the\n>>> correlations of the X's with Y's only of these two groups of variables\n>>> \n>>> x1<-c(12,3,45,32,34,56,7,89)\n>>> x2<-c(6,8,9,6,7,44,33,22)\n>>> x3<-c(45,7,6,89,23,45,67,22)\n>>> \n>>> y1<-c(21,43,77,32,23,45,78,90)\n>>> y2<-c(32,56,78,90,34,23,11,23)\n>>> y3<-c(8,90,34,68,72,17,27,35)\n>>> \n>>> \n>>> This what I need to get:\n>>> \n>>>                      y1                  y2                  y3\n>>> \n>>> x1        corr(x1,y1)       corr(x1,y2)         corr(x1,y3)\n>>>             p value              p value             p value\n>>> \n>>> x2        corr(x2,y1)       corr(x2,y2)         corr(x2,y3)\n>>>              p value           p value                p value\n>>> \n>>> x3        corr(x3,y1)       corr(x3,y2)         corr(x3,y3)\n>>>               p value           p value               p value\n>>> \n>>> \n>>> \n>>> Thank you very much\n>>> abou\n>>> \n>>> \n>>> ==========================\n>>> AbouEl-Makarim Aboueissa, Ph.D.\n>>> Associate Professor of Statistics\n>>> Graduate Program Coordinator\n>>> Department of Mathematics & Statistics\n>>> University of Southern Maine\n>>> 96 Falmouth Street\n>>> P.O. Box 9300\n>>> Portland, ME 04104-9300\n>>> USA\n>>> \n>>> \n>>> Tel: (207) 228-8389\n>>> Fax: (207) 780-5607\n>>> Email: aaboueissa at usm.maine.edu\n>>>           aboueiss at yahoo.com\n>>> \n>>> Office: 301C Payson Smith\n>>> \n>>> \n>>>         [[alternative HTML version deleted]]\n>>> \n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n\nWilliam Revelle\t\t           http://personality-project.org/revelle.html\nProfessor\t\t\t           http://personality-project.org\nDepartment of Psychology   http://www.wcas.northwestern.edu/psych/\nNorthwestern University\t   http://www.northwestern.edu/\nUse R for psychology             http://personality-project.org/r\nIt is 5 minutes to midnight\t   http://www.thebulletin.org",
+      "body_snippet": "Dear AbouEl-Makarim Aboueissa,\n\nAs people have pointed out before, if you are interested in how to use R to teach statistics, this is the appropriate mailing list, if you want to learn how to use R, t",
+      "thread_id": "thread-195d7b379ee7",
+      "thread_depth": 4,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-c198829df56e",
+      "message_id": "<1a605e35474424ecb6cda953f158c9e6@reed.edu>",
+      "from_name": "jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2012-04-03T22:38:46-07:00",
+      "subject": "[R-sig-teaching] Computing correlations",
+      "subject_clean": "Computing correlations",
+      "in_reply_to": "<4F7B501D020000A6000C0B75@uct5.uct.usm.maine.edu>",
+      "references": [
+        "<4F7B501D020000A6000C0B75@uct5.uct.usm.maine.edu>"
+      ],
+      "body_plain": "That is really an r-help question, but easy, and I'm busy not\nwriting the lecture I should be writing:\n\nX <- cbind(x1,x2,x3,y1,y2,y3)\ncor(X)[1:3,4:6]\n\nalbyn\n\nOn 4/3/12 4:31 PM, AbouEl-Makarim Aboueissa wrote:\n> Dear All:\n>\n> I have another silly question. How I can compute the correlations of\n> two groups of variables. For example how to compute the correlations\n> of the X's with Y's only of these two groups of variables\n>\n> x1<-c(12,3,45,32,34,56,7,89)\n> x2<-c(6,8,9,6,7,44,33,22)\n> x2<-c(45,7,6,89,23,45,67,22)\n>\n> y1<-c(21,43,77,32,23,45,78,90)\n> y2<-c(32,56,78,90,34,23,11,23)\n> y3<-c(8,90,34,68,72,17,27,35)\n>\n>\n> This what I need to get:\n>\n>                      y1                  y2                  y3\n>\n> x1        corr(x1,y1)       corr(x1,y2)         corr(x1,y3)\n>\n>\n> x2        corr(x2,y1)       corr(x2,y2)         corr(x2,y3)\n>\n>\n> x3        corr(x3,y1)       corr(x3,y2)         corr(x3,y3)\n>\n>\n>\n>\n> Thank you very much\n> abou\n>\n>\n>\n>\n>\n>\n>\n>\n>\n> ==========================\n> AbouEl-Makarim Aboueissa, Ph.D.\n> Associate Professor of Statistics\n> Graduate Program Coordinator\n> Department of Mathematics & Statistics\n> University of Southern Maine\n> 96 Falmouth Street\n> P.O. Box 9300\n> Portland, ME 04104-9300\n> USA\n>\n>\n> Tel: (207) 228-8389\n> Fax: (207) 780-5607\n> Email: aaboueissa at usm.maine.edu\n>           aboueiss at yahoo.com\n>\n> Office: 301C Payson Smith\n>\n>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "That is really an r-help question, but easy, and I'm busy not\nwriting the lecture I should be writing:\n\nX <- cbind(x1,x2,x3,y1,y2,y3)\ncor(X)[1:3,4:6]\n\nalbyn\n\nOn 4/3/12 4:31 PM, AbouEl-Makarim Aboueiss",
+      "thread_id": "thread-a9e96f782f64",
+      "thread_depth": 1,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-eb8d70c510f7",
+      "message_id": "<CABxs9VkF6Lkbaa90RumN4+7C6uagYY=AhjC7L5CzXZpWBipwCQ@mail.gmail.com>",
+      "from_name": "Liviu Andronic",
+      "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
+      "date": "2012-04-04T13:59:49+02:00",
+      "subject": "[R-sig-teaching] Computing correlations",
+      "subject_clean": "Computing correlations",
+      "in_reply_to": "<4F7B501D020000A6000C0B75@uct5.uct.usm.maine.edu>",
+      "references": [
+        "<4F7B501D020000A6000C0B75@uct5.uct.usm.maine.edu>"
+      ],
+      "body_plain": "On Wed, Apr 4, 2012 at 1:31 AM, AbouEl-Makarim Aboueissa\n<aaboueissa at usm.maine.edu> wrote:\n> I have another silly question. How I can compute the correlations of two groups of variables. For example how to compute the correlations of the X's with Y's only of these two groups of variables\n>\nAs Albyn suggested, such questions should really be posted on r-help.\nTo get started with basic statistics procedures I would recommend\nRcmdr. It allows to easily compute correlations (and display the code\nused for that) and much more.\n\nRegards\nLiviu",
+      "body_snippet": "On Wed, Apr 4, 2012 at 1:31 AM, AbouEl-Makarim Aboueissa\n<aaboueissa at usm.maine.edu> wrote:\n> I have another silly question. How I can compute the correlations of two groups of variables. For exampl",
+      "thread_id": "thread-a9e96f782f64",
+      "thread_depth": 1,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-e215f7b57678",
+      "message_id": "<C9FF1CAA-28B5-443F-BCE4-3C1365629435@calvin.edu>",
+      "from_name": "Randall Pruim",
+      "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
+      "date": "2012-04-10T14:59:26-04:00",
+      "subject": "[R-sig-teaching] New version of mosaic on CRAN",
+      "subject_clean": "New version of mosaic on CRAN",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120410/6f70ef31/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120410/6f70ef31/attachment.pl>",
+      "thread_id": "thread-e215f7b57678",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-23dd97332913",
+      "message_id": "<1334502850.76732.YahooMailClassic@web162203.mail.bf1.yahoo.com>",
+      "from_name": "Ali Zanaty",
+      "from_email_hash": "65acd645f9ed74fc7721f9ea58469b32335ac44f193ffbf59b7c89913407d9ac",
+      "date": "2012-04-15T08:14:10-07:00",
+      "subject": "[R-sig-teaching] Distribution of the T test statistic under H0 and Ha",
+      "subject_clean": "Distribution of the T test statistic under H0 and Ha",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120415/4e9a4b4d/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120415/4e9a4b4d/attachment.pl>",
+      "thread_id": "thread-23dd97332913",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-f3eab08be5e2",
+      "message_id": "<4F8ABE85020000D5000D919C@poplar.cedarville.edu>",
+      "from_name": "Bob Schumacher",
+      "from_email_hash": "d4cc8f3a8ae054e9fdd26f446199220cef3a48653a5eaf1a53991ef1bbd81c9a",
+      "date": "2012-04-15T12:26:43-04:00",
+      "subject": "[R-sig-teaching] Distribution of the T test statistic under H0 and Ha",
+      "subject_clean": "Distribution of the T test statistic under H0 and Ha",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I use the package HH function norm.curve for this. \n\nBob Schumacher\n\n\n>>> Ali Zanaty  04/15/12 11:14 AM >>>\nDear All: \n\n  \n\n\n\nI need a quick help in R. How I can plot plot the distribution of the T test \nstatistic under Ho and Ha with shading areas. Plot overlapping two T distributions and shading overlapping areas under both curves. You choose any values just\n for example. I could not upload any graph for example.\n\n  \n\n\n\nOnce I know how to create this one, I think I will be able to create the one for normal case.\n\n\n\nThank you very much and sorry for bothering.\n\n\n\nAli\n\n\n    [[alternative HTML version deleted]]\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "I use the package HH function norm.curve for this. \n\nBob Schumacher\n\n\n>>> Ali Zanaty  04/15/12 11:14 AM >>>\nDear All: \n\n  \n\n\n\nI need a quick help in R. How I can plot plot the distribution of the T te",
+      "thread_id": "thread-f3eab08be5e2",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-2b73fbc52e4b",
+      "message_id": "<CABxs9VkQ8D1JYACF4SGN6pnJVB92VJp0BGP39ELY9TQ0kX=R2A@mail.gmail.com>",
+      "from_name": "Liviu Andronic",
+      "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
+      "date": "2012-04-16T08:23:10+02:00",
+      "subject": "[R-sig-teaching] Distribution of the T test statistic under H0 and Ha",
+      "subject_clean": "Distribution of the T test statistic under H0 and Ha",
+      "in_reply_to": "<4F8ABE85020000D5000D919C@poplar.cedarville.edu>",
+      "references": [
+        "<4F8ABE85020000D5000D919C@poplar.cedarville.edu>"
+      ],
+      "body_plain": "On Sun, Apr 15, 2012 at 6:26 PM, Bob Schumacher <schumacr at cedarville.edu> wrote:\n> I use the package HH function norm.curve for this.\n>\nSee also the Rcmdr 'Distributions' menu.\n\nLiviu",
+      "body_snippet": "On Sun, Apr 15, 2012 at 6:26 PM, Bob Schumacher <schumacr at cedarville.edu> wrote:\n> I use the package HH function norm.curve for this.\n>\nSee also the Rcmdr 'Distributions' menu.\n\nLiviu",
+      "thread_id": "thread-f3eab08be5e2",
+      "thread_depth": 1,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-b297363df7e7",
+      "message_id": "<4F8BECBB020000A6000C24C8@uct5.uct.usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2012-04-16T09:56:11-04:00",
+      "subject": "[R-sig-teaching] Distribution of the T test statistic under H0 and Ha",
+      "subject_clean": "Distribution of the T test statistic under H0 and Ha",
+      "in_reply_to": "<1334502850.76732.YahooMailClassic@web162203.mail.bf1.yahoo.com>",
+      "references": [
+        "<1334502850.76732.YahooMailClassic@web162203.mail.bf1.yahoo.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120416/d73671eb/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120416/d73671eb/attachment.pl>",
+      "thread_id": "thread-23dd97332913",
+      "thread_depth": 1,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-b15678701b1f",
+      "message_id": "<CAFEqCdzmyRNANDZgLfAbGyrMgfrm3T5HS4Srn=fuu5JM=GO4_g@mail.gmail.com>",
+      "from_name": "Greg Snow",
+      "from_email_hash": "7e8b90198d8dda6d8bbc636598f3105b18d65713fa78fc3e88cbec77163d50cf",
+      "date": "2012-04-16T09:44:33-06:00",
+      "subject": "[R-sig-teaching] Distribution of the T test statistic under H0 and Ha",
+      "subject_clean": "Distribution of the T test statistic under H0 and Ha",
+      "in_reply_to": "<1334502850.76732.YahooMailClassic@web162203.mail.bf1.yahoo.com>",
+      "references": [
+        "<1334502850.76732.YahooMailClassic@web162203.mail.bf1.yahoo.com>"
+      ],
+      "body_plain": "The power.examp function in the TeachingDemos package compares normal\ndistributions from a null and alternative hypothesis (the\nrun.power.examp function provides a GUI for the function).  The\nnormals could be replaced with a T and non-central T distribution (on\nmy to do list, I actually have contributed code for this, just have\nnot incorporated it yet).\n\nOn Sun, Apr 15, 2012 at 9:14 AM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:\n> Dear All:\n>\n>\n>\n>\n>\n> I need a quick help in R. How I can plot plot the distribution of the T test\n> statistic under Ho and Ha with shading areas. Plot overlapping two T distributions and shading overlapping areas under both curves. You choose any values just\n> ?for example. I could not upload any graph for example.\n>\n>\n>\n>\n>\n> Once I know how to create this one, I think I will be able to create the one for normal case.\n>\n>\n>\n> Thank you very much and sorry for bothering.\n>\n>\n>\n> Ali\n>\n>\n> ? ? ? ?[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\n\n-- \nGregory (Greg) L. Snow Ph.D.\n538280 at gmail.com",
+      "body_snippet": "The power.examp function in the TeachingDemos package compares normal\ndistributions from a null and alternative hypothesis (the\nrun.power.examp function provides a GUI for the function).  The\nnormals ",
+      "thread_id": "thread-23dd97332913",
+      "thread_depth": 1,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-3d0b976e6bcc",
+      "message_id": "<CAM+rpYkV1R=TCMz_tMhp0qg1uU6O9A2ModvxoAa2D-njbyJUbw@mail.gmail.com>",
+      "from_name": "Christopher W Ryan",
+      "from_email_hash": "1b29f9cec300eaee17dfd69d1f61fa0ef3e03d1c3e99be2390ec65184340c413",
+      "date": "2012-04-18T22:47:56-04:00",
+      "subject": "[R-sig-teaching] introducing R to high school students",
+      "subject_clean": "introducing R to high school students",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "After some interesting discussions on r-help list, the suggestion was\nmade that I could also probably gain some useful insights on this\nteaching listserve, a resource that I didn't know about previously.\n\nI participate peripherally on a listserve for middle- and high-school\nscience teachers. Sometimes questions about graphing or data analysis\ncome up. I never miss an opportunity to advocate for R. However, the\nteachers are often skeptical that the students would be able to issue\ncommands or write a little code; they think it would be too difficult.\nPerhaps this stems from the Microsoft- and spreadsheet-centered,\npointy-clicky culture prevalent in most US public schools. Then again,\nI have little experience teaching this age group, besides my own kids\nand my Science Olympiad team, so I respect their concerns.\n\nNow I have to put my money where my mouth is. I've offered to visit a\nhigh school and introduce R to some fairly advanced students\nparticipating in a longitudinal 3-year science research class.  To be\nclear, they are already, for good or for ill, doing data analysis and\ngraphics for their projects using software.  Mostly they are using\nExcel and SPSS.  My goal would be to introduce them to R as another\n(and better) tool for what they are currently doing. I would have to\nwork hard to keep it at a very introductory level, but I don't see why\nplot(force, acceleration) should be any more conceptually difficult\nfor high schoolers than clicking through a whole series of dialog\nboxes. The latter merely has the advantage of familiarity. But I can't\nhelp but wonder whether it would be better to give kids good\nscientific tools upfront, rather than have them spend many\nimpressionable years using sub-optimal tools and then in graduate\nschool try to entice them to switch.\n\nThey all will have datasets of their own.  I imagine they will mostly\nbe single, \"rectangular\" datasets, ie  data frames.\n\nI tentatively anticipate a lot of graphics, of course, which I'm\nhoping they would find pretty cool and useful. I'd also like to\nintroduce the concept of an object, just to the level of \"there are\ndifferent kinds, here's what some of the kinds are called, there's\nstuff inside them, and you can explore them with str(), head(),\ntail(), class()\" and the like. Some simple descriptive statistics.\nThey are already doing t-tests, Chi-squared tests, and linear\nregression (again, for good or for ill.)  I don't know whether I'd\nhave time to get to those topics in R, probably not.\n\nThere was a diversity of opinions on R-help about how to do this, and\nespecially, whether to do it at all.\n\nHas anyone done anything with R in high schools?\n\nThanks.\n\n--Chris Ryan\nSUNY Upstate Medical University\nBinghamton Clinical Campus",
+      "body_snippet": "After some interesting discussions on r-help list, the suggestion was\nmade that I could also probably gain some useful insights on this\nteaching listserve, a resource that I didn't know about previous",
+      "thread_id": "thread-3d0b976e6bcc",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-e613f541fac4",
+      "message_id": "<9A0B26D4-FD7A-4F48-972A-89D959674DA6@calvin.edu>",
+      "from_name": "Randall Pruim",
+      "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
+      "date": "2012-04-19T01:02:36-04:00",
+      "subject": "[R-sig-teaching] introducing R to high school students",
+      "subject_clean": "introducing R to high school students",
+      "in_reply_to": "<CAM+rpYkV1R=TCMz_tMhp0qg1uU6O9A2ModvxoAa2D-njbyJUbw@mail.gmail.com>",
+      "references": [
+        "<CAM+rpYkV1R=TCMz_tMhp0qg1uU6O9A2ModvxoAa2D-njbyJUbw@mail.gmail.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120419/5d1d092a/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120419/5d1d092a/attachment.pl>",
+      "thread_id": "thread-3d0b976e6bcc",
+      "thread_depth": 1,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-c72c36c49e8d",
+      "message_id": "<8470FED1FC4ED845A512093F3E4F8ABF013D2B2AFABF@KUMBX.kuds.kingston.ac.uk>",
+      "from_name": "Grant, Robert",
+      "from_email_hash": "e5805a95b92cd98900200f8be7d1a074994d52b594203fd7dbfbf6c0f7521b98",
+      "date": "2012-04-19T10:27:31+01:00",
+      "subject": "[R-sig-teaching] introducing R to high school students",
+      "subject_clean": "introducing R to high school students",
+      "in_reply_to": "<9A0B26D4-FD7A-4F48-972A-89D959674DA6@calvin.edu>",
+      "references": [
+        "<CAM+rpYkV1R=TCMz_tMhp0qg1uU6O9A2ModvxoAa2D-njbyJUbw@mail.gmail.com>",
+        "<9A0B26D4-FD7A-4F48-972A-89D959674DA6@calvin.edu>"
+      ],
+      "body_plain": "Dear Chris et al\n\nI would strictly control how much of the session looks at their own datasets. This is incredibly demanding on a teacher and your time will vanish before you know it! First, you need to get them typing some basic code and getting nice graphs out. I would focus on things they can't do in Excel/SPSS, such as controlling options like cex and col with variables. But you could get them to work through some good datasets first and then set them loose on their own stuff, maybe in small groups so they can try to stretch beyond what you show them.\n\nI think the Titanic passenger list would be ideal for some binary variables. How topical can you get? (http://lib.stat.cmu.edu/S/Harrell/data/descriptions/titanic.html)\n\nDisclaimer: I'm a university lecturer and probably have typically unrealistic views of high school teaching!\n\nRobert\n\n-----Original Message-----\nFrom: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-bounces at r-project.org] On Behalf Of Randall Pruim\nSent: 19 April 2012 06:03\nTo: Christopher W Ryan\nCc: R-sig-teaching at r-project.org\nSubject: Re: [R-sig-teaching] introducing R to high school students\n\n\nA few thoughts.  You can do what you want with them.\n\n1) Use R formulas.\n\nIf you lattice graphics, then lm() and plots have essentially the same  \nsyntax and you can make nice connections between the graphs and the  \nanalyses.  For example,\n\nbwplot( weightLoss ~ diet ) or xyplot (weightLoss ~ diet) if the data  \nset is small\nlm( weightLoss ~ diet )\n\nThis approach should give you the \"time to get to those topics\" since  \nthe formula interface can be learned through graphical explorations  \nfirst.\n\nIf you add the mosaic package to your arsenal, then you can also do  \nnumerical summaries this way\n\nmean( weightLoss ~ diet )\n\n1a) Some quirks in R you might want to just avoid.\n\nOut of the box, not all of the statistical test functions take a  \nformula interface.  binom.test() and chisq.test() require summarized  \ndata.  t.test() uses a formula for 2-sample tests, but not for 1- \nsample tests.  If time is short, dealing with this might be more  \nhassle than it's worth.  You might want to limit yourself to lm() --  \nperhaps augmented by glm().  You can do some fun examples in that  \ncontext and see how well they are able to construct models and  \ninterpret their parameters.\n\nIf the students left your session(s) knowing how to make a handful of  \nlattice plots, to create and fit models with lm(), and to interpret  \nthe resulting model fits, I would call that highly successful.\n\n2) You may or may not find \"rectangular data\"\n\nPeople storing data in Excel do all manner of things.  If the students  \ndo something other than \"rectangular data\", take some time to talk  \nabout R's convention and why it is important to know about  \nobservational units and variables.\n\n3) If you have access to and RStudio server, then you can avoid all  \ninstallation and set up issues and students can work in a browser.\n\nIn my experience, you never know just what state high school  \ntechnology will be in.\n\n4) Find some good data sets for your examples.\n\nWhat qualifies is a matter of taste, I suppose, but don't skimp on the  \ndata. If you have time, and if it is easy to get their data, you could  \ndo some examples with the students' data.\n\n5) I don't know how much time you will be given, but it will go by too  \nquickly.\n\nPrepare lots of cool stuff, but don't rush to use it all.  Better to  \ndo less and do it well.  Leave them begging for more.\n\n6) Teach a little bit about function syntax.\n\nIf your time is limited, you likely won't have much time to get into  \nprogramming, control structures, classes of objects, method dispatch,  \nlazy evaluation, ...  But you can do a lot with R in a one-line-of- \ncode-at-a-time sort of way.  One thing you do need to say a bit about  \nis functions, since nearly every one of these lines will include one  \nor more of an arithmetic computation, an assignment, or function  \ncall.  When I teach new functions to beginners, I ask them what things  \nthe computer would need to know to produce the result we are hoping to  \nget.  Once they have identified the inputs and outputs, then I tell  \nthem the syntax used to provide the inputs to R and look at the output  \nR returns.  I emphasize too the common pattern of functions syntax --  \nname, open paren, comma-separated list of arguments, close paren.\n\n7) If the students are good and you can react quickly on your feet,  \nask them what they want to learn about and show it to them.\n\nYou'll probably have a good sense for their level after the first  \n15-20 minutes.\n\n8) Almost forgot... You could do some resampling stuff.\n\nR is well suited for this.  You can simplify it a bit by using do()  \nfrom the mosaic package, or you can use replicate()\n\n > lm( age ~ sex, HELPrct )\n\nCall:\nlm(formula = age ~ sex, data = HELPrct)\n\nCoefficients:\n(Intercept)      sexmale\n     36.2523      -0.7841\n\n > do(5) * lm( age ~ shuffle(sex), HELPrct )\n   Intercept     sexmale    sigma    r-squared\n1  35.83178 -0.23350980 7.718169 1.658421e-04\n2  35.34579  0.40276052 7.716905 4.933763e-04\n3  35.69159 -0.04997029 7.718780 7.594658e-06\n4  34.62617  1.34493004 7.697547 5.501535e-03\n5  35.04673  0.79431149 7.711400 1.918961e-03\n\nHave fun.  Hope it goes well for you.\n\n---rjp\n\n\n\n\n\nOn Apr 18, 2012, at 10:47 PM, Christopher W Ryan wrote:\n\n> After some interesting discussions on r-help list, the suggestion was\n> made that I could also probably gain some useful insights on this\n> teaching listserve, a resource that I didn't know about previously.\n>\n> I participate peripherally on a listserve for middle- and high-school\n> science teachers. Sometimes questions about graphing or data analysis\n> come up. I never miss an opportunity to advocate for R. However, the\n> teachers are often skeptical that the students would be able to issue\n> commands or write a little code; they think it would be too difficult.\n> Perhaps this stems from the Microsoft- and spreadsheet-centered,\n> pointy-clicky culture prevalent in most US public schools. Then again,\n> I have little experience teaching this age group, besides my own kids\n> and my Science Olympiad team, so I respect their concerns.\n>\n> Now I have to put my money where my mouth is. I've offered to visit a\n> high school and introduce R to some fairly advanced students\n> participating in a longitudinal 3-year science research class.  To be\n> clear, they are already, for good or for ill, doing data analysis and\n> graphics for their projects using software.  Mostly they are using\n> Excel and SPSS.  My goal would be to introduce them to R as another\n> (and better) tool for what they are currently doing. I would have to\n> work hard to keep it at a very introductory level, but I don't see why\n> plot(force, acceleration) should be any more conceptually difficult\n> for high schoolers than clicking through a whole series of dialog\n> boxes. The latter merely has the advantage of familiarity. But I can't\n> help but wonder whether it would be better to give kids good\n> scientific tools upfront, rather than have them spend many\n> impressionable years using sub-optimal tools and then in graduate\n> school try to entice them to switch.\n>\n> They all will have datasets of their own.  I imagine they will mostly\n> be single, \"rectangular\" datasets, ie  data frames.\n>\n> I tentatively anticipate a lot of graphics, of course, which I'm\n> hoping they would find pretty cool and useful. I'd also like to\n> introduce the concept of an object, just to the level of \"there are\n> different kinds, here's what some of the kinds are called, there's\n> stuff inside them, and you can explore them with str(), head(),\n> tail(), class()\" and the like. Some simple descriptive statistics.\n> They are already doing t-tests, Chi-squared tests, and linear\n> regression (again, for good or for ill.)  I don't know whether I'd\n> have time to get to those topics in R, probably not.\n>\n> There was a diversity of opinions on R-help about how to do this, and\n> especially, whether to do it at all.\n>\n> Has anyone done anything with R in high schools?\n>\n> Thanks.\n>\n> --Chris Ryan\n> SUNY Upstate Medical University\n> Binghamton Clinical Campus\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\n\t[[alternative HTML version deleted]]\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\nThis email has been scanned for all viruses by the MessageLabs Email\nSecurity System.\n\nThis email has been scanned for all viruses by the MessageLabs Email\nSecurity System.",
+      "body_snippet": "Dear Chris et al\n\nI would strictly control how much of the session looks at their own datasets. This is incredibly demanding on a teacher and your time will vanish before you know it! First, you need ",
+      "thread_id": "thread-3d0b976e6bcc",
+      "thread_depth": 2,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-64de7a859f0e",
+      "message_id": "<20120419133455.6096328824@mail89.csoft.net>",
+      "from_name": "Bob",
+      "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
+      "date": "2012-04-19T08:34:55-05:00",
+      "subject": "[R-sig-teaching]  introducing R to high school students",
+      "subject_clean": "introducing R to high school students",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I know one high school teacher who used R in her AP Statistics\nclass.  I just dropped her a note to see if she is willing to provide\nany links to her work or an email address.  I have also used R as one\nsoftware option in online courses over the past few years, and plan to\nuse it a bit next summer in a workshop for high school AP Statistics\nteachers. \n\nInstallation and data file format can grind a demo to a halt in no\ntime.  I suggest you run stuff on your own machine or use something\nlike RWEB (Google it).  To use student data maybe you can either send\nthem info on the file format you need or even better ask them to\nsubmit data beforehand with documentation so you can see if you can\nfind anything you can use.  My experience is that anyting you ask a\nhost to get working in advance will not work the day of the demo;-(\n\nR can do some spectacular graphics -- certainly compared to Excel!\nEven a simple histogram, which also has the advantage the R is much\nEASIER than Excel for such basic graphics.  \n\nIf I knew the students had access to PCs I would download the latest R\nand burn it to CDs to hand out.  I would not spend demo time on\ninstallation but they could all take this home to play with.\nActually, I would probably give out a live Linux Cd with R\npreinstalled.  (Often the problem is that the teachers cannot figure\nout R but the students can, which creates problems for teachers who\nneed to give the appearance of having all the answers.)  If they use\nMacs I would give up;-)\n\nIt is much easier to modify code than to write it from scratch.  You\nmight do a simple lm(y~x) with a dataset with several variables and\nthen try lm(z~x) or lm(y~z). Should be easy in RWEB.  \n\nMy experience with learning R is that those who teach it presnt things\nthat are way too complicate4d for beginners. The goal is to anlyze\ndata, not to show of how much you know about R, or every feature it\nhas.  Beginners will not see the need for or usefulness of objects\nuntil they have gained some experience. The goal should be to maximize\nthe analysis of data and minimize time spent on the peculiarities of\nR.  You are welcome to offer students this link to materials that try\nto do this.\n\n   http://statland.org/Software_Help/R/Rhome.htm\n\n \n\nForwarded message:\n> From: Christopher W Ryan <cryan at binghamton.edu>\n> I participate peripherally on a listserve for middle- and high-school\n> science teachers. Sometimes questions about graphing or data analysis\n> come up. I never miss an opportunity to advocate for R. However, the\n> teachers are often skeptical that the students would be able to issue\n> commands or write a little code; they think it would be too difficult.\n> Perhaps this stems from the Microsoft- and spreadsheet-centered,\n> pointy-clicky culture prevalent in most US public schools. Then again,\n> I have little experience teaching this age group, besides my own kids\n> and my Science Olympiad team, so I respect their concerns.\n> \n> Now I have to put my money where my mouth is. I've offered to visit a\n> high school and introduce R to some fairly advanced students\n> participating in a longitudinal 3-year science research class.  To be\n> clear, they are already, for good or for ill, doing data analysis and\n> graphics for their projects using software.  Mostly they are using\n> Excel and SPSS.  My goal would be to introduce them to R as another\n> (and better) tool for what they are currently doing. I would have to\n> work hard to keep it at a very introductory level, but I don't see why\n> plot(force, acceleration) should be any more conceptually difficult\n> for high schoolers than clicking through a whole series of dialog\n> boxes. The latter merely has the advantage of familiarity. But I can't\n> help but wonder whether it would be better to give kids good\n> scientific tools upfront, rather than have them spend many\n> impressionable years using sub-optimal tools and then in graduate\n> school try to entice them to switch.\n> \n> They all will have datasets of their own.  I imagine they will mostly\n> be single, \"rectangular\" datasets, ie  data frames.\n> \n> I tentatively anticipate a lot of graphics, of course, which I'm\n> hoping they would find pretty cool and useful. I'd also like to\n> introduce the concept of an object, just to the level of \"there are\n> different kinds, here's what some of the kinds are called, there's\n> stuff inside them, and you can explore them with str(), head(),\n> tail(), class()\" and the like. Some simple descriptive statistics.\n> They are already doing t-tests, Chi-squared tests, and linear\n> regression (again, for good or for ill.)  I don't know whether I'd\n> have time to get to those topics in R, probably not.\n> \n> There was a diversity of opinions on R-help about how to do this, and\n> especially, whether to do it at all.\n> \n> Has anyone done anything with R in high schools?\n> \n> Thanks.\n> \n> --Chris Ryan\n> SUNY Upstate Medical University\n> Binghamton Clinical Campus\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n> \n\nSent from my nine-year-old Dell GX-260 running Mepis Linux 8.0\n------->  First-time AP Stats. teacher?  Help is on the way! See\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n      _\n     | |          Robert W. Hayden\n     | |          142 Main Street\n    /  |          Apartment 104\n   |   |          Jaffrey, New Hampshire 03452  USA\n   |   |          email: bob@ the site below\n  /    |          website: http://statland.org\n | .   y          phone: (603) 532-7224 (home)\n ''''''",
+      "body_snippet": "I know one high school teacher who used R in her AP Statistics\nclass.  I just dropped her a note to see if she is willing to provide\nany links to her work or an email address.  I have also used R as o",
+      "thread_id": "thread-64de7a859f0e",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-ef7d9a397037",
+      "message_id": "<71e092791844e7056ce97accc764e1a4@u-paris10.fr>",
+      "from_name": "cgenolin",
+      "from_email_hash": "188243ef6b743b8d3cdd972d5ac76d36899f18656fb52ce7f6a8f452409f5017",
+      "date": "2012-04-20T13:41:20+02:00",
+      "subject": "[R-sig-teaching] R exercices",
+      "subject_clean": "R exercices",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120420/44cc2840/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120420/44cc2840/attachment.pl>",
+      "thread_id": "thread-ef7d9a397037",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-465535696058",
+      "message_id": "<4F91650F.1090705@gmail.com>",
+      "from_name": "Jeff Laux",
+      "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
+      "date": "2012-04-20T09:30:55-04:00",
+      "subject": "[R-sig-teaching] R exercices",
+      "subject_clean": "R exercices",
+      "in_reply_to": "<71e092791844e7056ce97accc764e1a4@u-paris10.fr>",
+      "references": [
+        "<71e092791844e7056ce97accc764e1a4@u-paris10.fr>"
+      ],
+      "body_plain": "Are you familiar with R Inferno?  This is a programming-oriented \ntutorial for R by the statistician Patric Burns.  He has generously \nplaced it as a pdf online for free \n(http://www.burns-stat.com/pages/Tutor/R_inferno.pdf); you could also \npurchase a copy.  Of course this will be more than just a few practice \nexercises (a lot more, and actually, I'm not sure there are any \nexercises but you can certainly follow along with the examples).  \nNonetheless, it may still be right up your alley.  There are other \nresources for learning the programming side of R, but only a few that \nare as good, and none other free, so far as I know.  If this is really \ndifferent from what you're looking for, you may want to reply with more \ndetail.\n\nHope that helps.  -Jeff\n\n\nOn 4/20/2012 7:41 AM, cgenolin wrote:\n>\n>\n> Hi the list,\n>\n> I am looking for some exercices for a PhD student\n> that start to learn R. He already \"read\" some tutorial, but now he needs\n> some practice.\n>\n> He does *not* need to learn any statistical tools ; he\n> just needs to work on programmation concept. So I am looking for some\n> exercice sheet that will, for example, focus on :\n>\n>   - structuring the\n> data (data.frame / list / matrix / ...)\n>\n>   - using controle syntax (for\n> / if / while / function)\n>\n>   - reading data\n>\n>   - ...\n>\n> Any link for this\n> kind of material?\n>\n> Sincerely\n>\n> Christophe\n>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n> -----\n> No virus found in this message.\n> Checked by AVG - www.avg.com\n> Version: 2012.0.1913 / Virus Database: 2411/4948 - Release Date: 04/20/12\n>\n>",
+      "body_snippet": "Are you familiar with R Inferno?  This is a programming-oriented \ntutorial for R by the statistician Patric Burns.  He has generously \nplaced it as a pdf online for free \n(http://www.burns-stat.com/pa",
+      "thread_id": "thread-ef7d9a397037",
+      "thread_depth": 1,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-51fd2567d5d4",
+      "message_id": "<CA+srNj6m1ryCeGLRJzx-F+1P0FB_S=_zCyCLWuLvpgNPGtnG4w@mail.gmail.com>",
+      "from_name": "Paula Young",
+      "from_email_hash": "57a4fb9a604414e5df5b5d7d1cb70d0b433edcc8c45b386950fd1ca7926d8a28",
+      "date": "2012-04-20T09:55:47-04:00",
+      "subject": "[R-sig-teaching] R exercices",
+      "subject_clean": "R exercices",
+      "in_reply_to": "<4F91650F.1090705@gmail.com>",
+      "references": [
+        "<71e092791844e7056ce97accc764e1a4@u-paris10.fr>",
+        "<4F91650F.1090705@gmail.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120420/0e38f2bd/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120420/0e38f2bd/attachment.pl>",
+      "thread_id": "thread-ef7d9a397037",
+      "thread_depth": 2,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-7e19cbf51389",
+      "message_id": "<5f74a8e369f23cffe6562dc37d9c3a3e@u-paris10.fr>",
+      "from_name": "cgenolin",
+      "from_email_hash": "188243ef6b743b8d3cdd972d5ac76d36899f18656fb52ce7f6a8f452409f5017",
+      "date": "2012-04-20T16:05:32+02:00",
+      "subject": "[R-sig-teaching] R exercices",
+      "subject_clean": "R exercices",
+      "in_reply_to": "<4F91650F.1090705@gmail.com>",
+      "references": [
+        "<71e092791844e7056ce97accc764e1a4@u-paris10.fr>",
+        "<4F91650F.1090705@gmail.com>"
+      ],
+      "body_plain": "Thanks for your answer.\n\nYes, it is quite different from what I am looking for which will be \nmore\nsomething like :\n\n--- 8< -----\n\nExercice 1: wrote a function that compute the surface of a rectangle\n\nExercice 2: wrote a function that compute factorial n (whithout using \nthe\nfunction factorial)\n\nExercice 3: wrote a function, that given a n, will draw a triangle of \n\"*\".\nExample with n=5\n\n*\n**\n***\n****\n*****\n\n--- 8< -----\n\nThe first exemple is about writing a (very) simple function and \nreturning the result ; the second\nneed the use of a loop. The third will need two loops (for a beginer).\n\nAnd so on, on various topic.\n\nChristophe\n\n> Are you familiar with R Inferno? This is a programming-oriented\n> tutorial for R by the statistician Patric Burns. He has generously\n> placed it as a pdf online for free\n> (http://www.burns-stat.com/pages/Tutor/R_inferno.pdf [4]); you could\n> also\n> purchase a copy. Of course this will be more than just a few practice\n> exercises (a lot more, and actually, I'm not sure there are any\n> exercises but you can certainly follow along with the examples).\n> Nonetheless, it may still be right up your alley. There are other\n> resources for learning the programming side of R, but only a few that\n> are as good, and none other free, so far as I know. If this is really\n> different from what you're looking for, you may want to reply with \n> more\n> detail.\n>\n> Hope that helps. -Jeff\n>\n> On 4/20/2012 7:41 AM, cgenolin wrote:\n>\n>> Hi the list, I am looking for some exercices for a PhD student that\n>> start to learn R. He already \"read\" some tutorial, but now he needs\n>> some practice. He does *not* need to learn any statistical tools ; \n>> he\n>> just needs to work on programmation concept. So I am looking for \n>> some\n>> exercice sheet that will, for example, focus on : - structuring the\n>> data (data.frame / list / matrix / ...) - using controle syntax (for \n>> /\n>> if / while / function) - reading data - ... Any link for this kind \n>> of\n>> material? Sincerely Christophe [[alternative HTML version deleted]]\n>> _______________________________________________\n>> R-sig-teaching at r-project.org [1] mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching [2] ----- No\n> virus\n>> found in this message. Checked by AVG - www.avg.com [3] Version:\n>> 2012.0.1913 / Virus Database: 2411/4948 - Release Date: 04/20/12\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org [5] mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching [6]\n\n\n\nLinks:\n------\n[1] mailto:R-sig-teaching at r-project.org\n[2] https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n[3] http://www.avg.com\n[4] http://www.burns-stat.com/pages/Tutor/R_inferno.pdf\n[5] mailto:R-sig-teaching at r-project.org\n[6] https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Thanks for your answer.\n\nYes, it is quite different from what I am looking for which will be \nmore\nsomething like :\n\n--- 8< -----\n\nExercice 1: wrote a function that compute the surface of a rectangle\n",
+      "thread_id": "thread-ef7d9a397037",
+      "thread_depth": 2,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-a6d9507ddfcf",
+      "message_id": "<CAAmySGN8vejLmkO1OTyCbB1wNOyjX_dYCD7V8YARMaXNkTC59A@mail.gmail.com>",
+      "from_name": "R. Michael Weylandt",
+      "from_email_hash": "44e8775a589b9ef81880469e200f3cce307c7180b4289ca1696a578afb772b3a",
+      "date": "2012-04-20T10:45:55-04:00",
+      "subject": "[R-sig-teaching] R exercices",
+      "subject_clean": "R exercices",
+      "in_reply_to": "<5f74a8e369f23cffe6562dc37d9c3a3e@u-paris10.fr>",
+      "references": [
+        "<71e092791844e7056ce97accc764e1a4@u-paris10.fr>",
+        "<4F91650F.1090705@gmail.com>",
+        "<5f74a8e369f23cffe6562dc37d9c3a3e@u-paris10.fr>"
+      ],
+      "body_plain": "R is in the broad family of functional languages -- if your student is\non board with the statistical capabilities of R, he might benefit from\nlooking at one of the classic tutorials for those while doing the\nexercises in R. SICP is a classic, but the syntax doesn't match: maybe\nthe python version works\nhttp://www-inst.eecs.berkeley.edu/~cs61a/sp12/book/index.html :\nalternatively, think Python or think Complexity (both online) provide\nanother (less difficult) exposition. However, take these options with\na grain of salt: if your student learns R this way, he'll get some bad\nR habits that will take a long time to break: I'd highly advise\nagainst any solution that suggests he do the\n\n*\n**\n***\n\npuzzle with nested loops: performance in later programming assignments\nwill be terrible. Better to learn good habits now: lapply(1:n,\nfunction(x) cat(rep(\"*\", n), \"\\n\")\n\nAlternatively, working through something like Project Euler in R will\nrequire a little more self-starting, but might be more rewarding after\nhe masters the basics of syntax. (just what's given in a first read\nthrough the standard intro to R document)\n\nFinally, Matloff's Art of R programming is probably exactly what\nyou're looking for, but isn't free.\n\nHope this helps, (and my strong advice is options 2 or 3)\n\nMichael\n\nOn Fri, Apr 20, 2012 at 10:05 AM, cgenolin <cgenolin at u-paris10.fr> wrote:\n> Thanks for your answer.\n>\n> Yes, it is quite different from what I am looking for which will be more\n> something like :\n>\n> --- 8< -----\n>\n> Exercice 1: wrote a function that compute the surface of a rectangle\n>\n> Exercice 2: wrote a function that compute factorial n (whithout using the\n> function factorial)\n>\n> Exercice 3: wrote a function, that given a n, will draw a triangle of \"*\".\n> Example with n=5\n>\n> *\n> **\n> ***\n> ****\n> *****\n>\n> --- 8< -----\n>\n> The first exemple is about writing a (very) simple function and returning\n> the result ; the second\n> need the use of a loop. The third will need two loops (for a beginer).\n>\n> And so on, on various topic.\n>\n> Christophe\n>\n>> Are you familiar with R Inferno? This is a programming-oriented\n>> tutorial for R by the statistician Patric Burns. He has generously\n>> placed it as a pdf online for free\n>> (http://www.burns-stat.com/pages/Tutor/R_inferno.pdf [4]); you could\n>>\n>> also\n>> purchase a copy. Of course this will be more than just a few practice\n>> exercises (a lot more, and actually, I'm not sure there are any\n>> exercises but you can certainly follow along with the examples).\n>> Nonetheless, it may still be right up your alley. There are other\n>> resources for learning the programming side of R, but only a few that\n>> are as good, and none other free, so far as I know. If this is really\n>> different from what you're looking for, you may want to reply with more\n>> detail.\n>>\n>> Hope that helps. -Jeff\n>>\n>> On 4/20/2012 7:41 AM, cgenolin wrote:\n>>\n>>> Hi the list, I am looking for some exercices for a PhD student that\n>>> start to learn R. He already \"read\" some tutorial, but now he needs\n>>> some practice. He does *not* need to learn any statistical tools ; he\n>>> just needs to work on programmation concept. So I am looking for some\n>>> exercice sheet that will, for example, focus on : - structuring the\n>>> data (data.frame / list / matrix / ...) - using controle syntax (for /\n>>> if / while / function) - reading data - ... Any link for this kind of\n>>> material? Sincerely Christophe [[alternative HTML version deleted]]\n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org [1] mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching [2] ----- No\n>>\n>> virus\n>>>\n>>> found in this message. Checked by AVG - www.avg.com [3] Version:\n>>>\n>>> 2012.0.1913 / Virus Database: 2411/4948 - Release Date: 04/20/12\n>>\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org [5] mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching [6]\n>\n>\n>\n>\n> Links:\n> ------\n> [1] mailto:R-sig-teaching at r-project.org\n> [2] https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> [3] http://www.avg.com\n> [4] http://www.burns-stat.com/pages/Tutor/R_inferno.pdf\n> [5] mailto:R-sig-teaching at r-project.org\n> [6] https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "R is in the broad family of functional languages -- if your student is\non board with the statistical capabilities of R, he might benefit from\nlooking at one of the classic tutorials for those while do",
+      "thread_id": "thread-ef7d9a397037",
+      "thread_depth": 3,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-b034bae86c55",
+      "message_id": "<CAAmySGOW79NRhTZbbNYTLFNK2HnEzYzAbnu5xJTC5VE2XWQCww@mail.gmail.com>",
+      "from_name": "R. Michael Weylandt",
+      "from_email_hash": "44e8775a589b9ef81880469e200f3cce307c7180b4289ca1696a578afb772b3a",
+      "date": "2012-04-20T10:46:56-04:00",
+      "subject": "[R-sig-teaching] R exercices",
+      "subject_clean": "R exercices",
+      "in_reply_to": "<CAAmySGN8vejLmkO1OTyCbB1wNOyjX_dYCD7V8YARMaXNkTC59A@mail.gmail.com>",
+      "references": [
+        "<71e092791844e7056ce97accc764e1a4@u-paris10.fr>",
+        "<4F91650F.1090705@gmail.com>",
+        "<5f74a8e369f23cffe6562dc37d9c3a3e@u-paris10.fr>",
+        "<CAAmySGN8vejLmkO1OTyCbB1wNOyjX_dYCD7V8YARMaXNkTC59A@mail.gmail.com>"
+      ],
+      "body_plain": "Sorry typo -- lapply(1:n, function(x) cat(rep(\"*\",x),\"\\n\"))\n\n\nM\n\n\nOn Fri, Apr 20, 2012 at 10:45 AM, R. Michael Weylandt\n<michael.weylandt at gmail.com> wrote:\n> R is in the broad family of functional languages -- if your student is\n> on board with the statistical capabilities of R, he might benefit from\n> looking at one of the classic tutorials for those while doing the\n> exercises in R. SICP is a classic, but the syntax doesn't match: maybe\n> the python version works\n> http://www-inst.eecs.berkeley.edu/~cs61a/sp12/book/index.html :\n> alternatively, think Python or think Complexity (both online) provide\n> another (less difficult) exposition. However, take these options with\n> a grain of salt: if your student learns R this way, he'll get some bad\n> R habits that will take a long time to break: I'd highly advise\n> against any solution that suggests he do the\n>\n> *\n> **\n> ***\n>\n> puzzle with nested loops: performance in later programming assignments\n> will be terrible. Better to learn good habits now: lapply(1:n,\n> function(x) cat(rep(\"*\", n), \"\\n\")\n>\n> Alternatively, working through something like Project Euler in R will\n> require a little more self-starting, but might be more rewarding after\n> he masters the basics of syntax. (just what's given in a first read\n> through the standard intro to R document)\n>\n> Finally, Matloff's Art of R programming is probably exactly what\n> you're looking for, but isn't free.\n>\n> Hope this helps, (and my strong advice is options 2 or 3)\n>\n> Michael\n>\n> On Fri, Apr 20, 2012 at 10:05 AM, cgenolin <cgenolin at u-paris10.fr> wrote:\n>> Thanks for your answer.\n>>\n>> Yes, it is quite different from what I am looking for which will be more\n>> something like :\n>>\n>> --- 8< -----\n>>\n>> Exercice 1: wrote a function that compute the surface of a rectangle\n>>\n>> Exercice 2: wrote a function that compute factorial n (whithout using the\n>> function factorial)\n>>\n>> Exercice 3: wrote a function, that given a n, will draw a triangle of \"*\".\n>> Example with n=5\n>>\n>> *\n>> **\n>> ***\n>> ****\n>> *****\n>>\n>> --- 8< -----\n>>\n>> The first exemple is about writing a (very) simple function and returning\n>> the result ; the second\n>> need the use of a loop. The third will need two loops (for a beginer).\n>>\n>> And so on, on various topic.\n>>\n>> Christophe\n>>\n>>> Are you familiar with R Inferno? This is a programming-oriented\n>>> tutorial for R by the statistician Patric Burns. He has generously\n>>> placed it as a pdf online for free\n>>> (http://www.burns-stat.com/pages/Tutor/R_inferno.pdf [4]); you could\n>>>\n>>> also\n>>> purchase a copy. Of course this will be more than just a few practice\n>>> exercises (a lot more, and actually, I'm not sure there are any\n>>> exercises but you can certainly follow along with the examples).\n>>> Nonetheless, it may still be right up your alley. There are other\n>>> resources for learning the programming side of R, but only a few that\n>>> are as good, and none other free, so far as I know. If this is really\n>>> different from what you're looking for, you may want to reply with more\n>>> detail.\n>>>\n>>> Hope that helps. -Jeff\n>>>\n>>> On 4/20/2012 7:41 AM, cgenolin wrote:\n>>>\n>>>> Hi the list, I am looking for some exercices for a PhD student that\n>>>> start to learn R. He already \"read\" some tutorial, but now he needs\n>>>> some practice. He does *not* need to learn any statistical tools ; he\n>>>> just needs to work on programmation concept. So I am looking for some\n>>>> exercice sheet that will, for example, focus on : - structuring the\n>>>> data (data.frame / list / matrix / ...) - using controle syntax (for /\n>>>> if / while / function) - reading data - ... Any link for this kind of\n>>>> material? Sincerely Christophe [[alternative HTML version deleted]]\n>>>> _______________________________________________\n>>>> R-sig-teaching at r-project.org [1] mailing list\n>>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching [2] ----- No\n>>>\n>>> virus\n>>>>\n>>>> found in this message. Checked by AVG - www.avg.com [3] Version:\n>>>>\n>>>> 2012.0.1913 / Virus Database: 2411/4948 - Release Date: 04/20/12\n>>>\n>>>\n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org [5] mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching [6]\n>>\n>>\n>>\n>>\n>> Links:\n>> ------\n>> [1] mailto:R-sig-teaching at r-project.org\n>> [2] https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>> [3] http://www.avg.com\n>> [4] http://www.burns-stat.com/pages/Tutor/R_inferno.pdf\n>> [5] mailto:R-sig-teaching at r-project.org\n>> [6] https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Sorry typo -- lapply(1:n, function(x) cat(rep(\"*\",x),\"\\n\"))\n\n\nM\n\n\nOn Fri, Apr 20, 2012 at 10:45 AM, R. Michael Weylandt\n<michael.weylandt at gmail.com> wrote:\n> R is in the broad family of functional ",
+      "thread_id": "thread-ef7d9a397037",
+      "thread_depth": 4,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-2e0f0d4002fd",
+      "message_id": "<095723DD-24BF-42A6-A833-1AE6E5C8C89B@gmail.com>",
+      "from_name": "Randy Johnson",
+      "from_email_hash": "32c41942879553ba35339ece6a033361c1fc6a544b10d7a33755efd0e28cfc54",
+      "date": "2012-04-20T13:08:37-04:00",
+      "subject": "[R-sig-teaching] introducing R to high school students",
+      "subject_clean": "introducing R to high school students",
+      "in_reply_to": "<8470FED1FC4ED845A512093F3E4F8ABF013D2B2AFABF@KUMBX.kuds.kingston.ac.uk>",
+      "references": [
+        "<CAM+rpYkV1R=TCMz_tMhp0qg1uU6O9A2ModvxoAa2D-njbyJUbw@mail.gmail.com>",
+        "<9A0B26D4-FD7A-4F48-972A-89D959674DA6@calvin.edu>",
+        "<8470FED1FC4ED845A512093F3E4F8ABF013D2B2AFABF@KUMBX.kuds.kingston.ac.uk>"
+      ],
+      "body_plain": "I work with High School students, and while they are certainly capable, your time constraints and the class size may be the hardest thing to work around. I would second Robert's advice on starting with a clean dataset and a short introductory tutorial.\n\nIt would also help a lot to have an additional assistant or two who are familiar enough with R to answer their questions as they begin to play on their own.\n\nBest,\nRandy\n\nOn Apr 19, 2012, at 5:27 AM, Grant, Robert wrote:\n\n> Dear Chris et al\n> \n> I would strictly control how much of the session looks at their own datasets. This is incredibly demanding on a teacher and your time will vanish before you know it! First, you need to get them typing some basic code and getting nice graphs out. I would focus on things they can't do in Excel/SPSS, such as controlling options like cex and col with variables. But you could get them to work through some good datasets first and then set them loose on their own stuff, maybe in small groups so they can try to stretch beyond what you show them.\n> \n> I think the Titanic passenger list would be ideal for some binary variables. How topical can you get? (http://lib.stat.cmu.edu/S/Harrell/data/descriptions/titanic.html)\n> \n> Disclaimer: I'm a university lecturer and probably have typically unrealistic views of high school teaching!\n> \n> Robert\n> \n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-bounces at r-project.org] On Behalf Of Randall Pruim\n> Sent: 19 April 2012 06:03\n> To: Christopher W Ryan\n> Cc: R-sig-teaching at r-project.org\n> Subject: Re: [R-sig-teaching] introducing R to high school students\n> \n> \n> A few thoughts.  You can do what you want with them.\n> \n> 1) Use R formulas.\n> \n> If you lattice graphics, then lm() and plots have essentially the same  \n> syntax and you can make nice connections between the graphs and the  \n> analyses.  For example,\n> \n> bwplot( weightLoss ~ diet ) or xyplot (weightLoss ~ diet) if the data  \n> set is small\n> lm( weightLoss ~ diet )\n> \n> This approach should give you the \"time to get to those topics\" since  \n> the formula interface can be learned through graphical explorations  \n> first.\n> \n> If you add the mosaic package to your arsenal, then you can also do  \n> numerical summaries this way\n> \n> mean( weightLoss ~ diet )\n> \n> 1a) Some quirks in R you might want to just avoid.\n> \n> Out of the box, not all of the statistical test functions take a  \n> formula interface.  binom.test() and chisq.test() require summarized  \n> data.  t.test() uses a formula for 2-sample tests, but not for 1- \n> sample tests.  If time is short, dealing with this might be more  \n> hassle than it's worth.  You might want to limit yourself to lm() --  \n> perhaps augmented by glm().  You can do some fun examples in that  \n> context and see how well they are able to construct models and  \n> interpret their parameters.\n> \n> If the students left your session(s) knowing how to make a handful of  \n> lattice plots, to create and fit models with lm(), and to interpret  \n> the resulting model fits, I would call that highly successful.\n> \n> 2) You may or may not find \"rectangular data\"\n> \n> People storing data in Excel do all manner of things.  If the students  \n> do something other than \"rectangular data\", take some time to talk  \n> about R's convention and why it is important to know about  \n> observational units and variables.\n> \n> 3) If you have access to and RStudio server, then you can avoid all  \n> installation and set up issues and students can work in a browser.\n> \n> In my experience, you never know just what state high school  \n> technology will be in.\n> \n> 4) Find some good data sets for your examples.\n> \n> What qualifies is a matter of taste, I suppose, but don't skimp on the  \n> data. If you have time, and if it is easy to get their data, you could  \n> do some examples with the students' data.\n> \n> 5) I don't know how much time you will be given, but it will go by too  \n> quickly.\n> \n> Prepare lots of cool stuff, but don't rush to use it all.  Better to  \n> do less and do it well.  Leave them begging for more.\n> \n> 6) Teach a little bit about function syntax.\n> \n> If your time is limited, you likely won't have much time to get into  \n> programming, control structures, classes of objects, method dispatch,  \n> lazy evaluation, ...  But you can do a lot with R in a one-line-of- \n> code-at-a-time sort of way.  One thing you do need to say a bit about  \n> is functions, since nearly every one of these lines will include one  \n> or more of an arithmetic computation, an assignment, or function  \n> call.  When I teach new functions to beginners, I ask them what things  \n> the computer would need to know to produce the result we are hoping to  \n> get.  Once they have identified the inputs and outputs, then I tell  \n> them the syntax used to provide the inputs to R and look at the output  \n> R returns.  I emphasize too the common pattern of functions syntax --  \n> name, open paren, comma-separated list of arguments, close paren.\n> \n> 7) If the students are good and you can react quickly on your feet,  \n> ask them what they want to learn about and show it to them.\n> \n> You'll probably have a good sense for their level after the first  \n> 15-20 minutes.\n> \n> 8) Almost forgot... You could do some resampling stuff.\n> \n> R is well suited for this.  You can simplify it a bit by using do()  \n> from the mosaic package, or you can use replicate()\n> \n>> lm( age ~ sex, HELPrct )\n> \n> Call:\n> lm(formula = age ~ sex, data = HELPrct)\n> \n> Coefficients:\n> (Intercept)      sexmale\n>     36.2523      -0.7841\n> \n>> do(5) * lm( age ~ shuffle(sex), HELPrct )\n>   Intercept     sexmale    sigma    r-squared\n> 1  35.83178 -0.23350980 7.718169 1.658421e-04\n> 2  35.34579  0.40276052 7.716905 4.933763e-04\n> 3  35.69159 -0.04997029 7.718780 7.594658e-06\n> 4  34.62617  1.34493004 7.697547 5.501535e-03\n> 5  35.04673  0.79431149 7.711400 1.918961e-03\n> \n> Have fun.  Hope it goes well for you.\n> \n> ---rjp\n> \n> \n> \n> \n> \n> On Apr 18, 2012, at 10:47 PM, Christopher W Ryan wrote:\n> \n>> After some interesting discussions on r-help list, the suggestion was\n>> made that I could also probably gain some useful insights on this\n>> teaching listserve, a resource that I didn't know about previously.\n>> \n>> I participate peripherally on a listserve for middle- and high-school\n>> science teachers. Sometimes questions about graphing or data analysis\n>> come up. I never miss an opportunity to advocate for R. However, the\n>> teachers are often skeptical that the students would be able to issue\n>> commands or write a little code; they think it would be too difficult.\n>> Perhaps this stems from the Microsoft- and spreadsheet-centered,\n>> pointy-clicky culture prevalent in most US public schools. Then again,\n>> I have little experience teaching this age group, besides my own kids\n>> and my Science Olympiad team, so I respect their concerns.\n>> \n>> Now I have to put my money where my mouth is. I've offered to visit a\n>> high school and introduce R to some fairly advanced students\n>> participating in a longitudinal 3-year science research class.  To be\n>> clear, they are already, for good or for ill, doing data analysis and\n>> graphics for their projects using software.  Mostly they are using\n>> Excel and SPSS.  My goal would be to introduce them to R as another\n>> (and better) tool for what they are currently doing. I would have to\n>> work hard to keep it at a very introductory level, but I don't see why\n>> plot(force, acceleration) should be any more conceptually difficult\n>> for high schoolers than clicking through a whole series of dialog\n>> boxes. The latter merely has the advantage of familiarity. But I can't\n>> help but wonder whether it would be better to give kids good\n>> scientific tools upfront, rather than have them spend many\n>> impressionable years using sub-optimal tools and then in graduate\n>> school try to entice them to switch.\n>> \n>> They all will have datasets of their own.  I imagine they will mostly\n>> be single, \"rectangular\" datasets, ie  data frames.\n>> \n>> I tentatively anticipate a lot of graphics, of course, which I'm\n>> hoping they would find pretty cool and useful. I'd also like to\n>> introduce the concept of an object, just to the level of \"there are\n>> different kinds, here's what some of the kinds are called, there's\n>> stuff inside them, and you can explore them with str(), head(),\n>> tail(), class()\" and the like. Some simple descriptive statistics.\n>> They are already doing t-tests, Chi-squared tests, and linear\n>> regression (again, for good or for ill.)  I don't know whether I'd\n>> have time to get to those topics in R, probably not.\n>> \n>> There was a diversity of opinions on R-help about how to do this, and\n>> especially, whether to do it at all.\n>> \n>> Has anyone done anything with R in high schools?\n>> \n>> Thanks.\n>> \n>> --Chris Ryan\n>> SUNY Upstate Medical University\n>> Binghamton Clinical Campus\n>> \n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n> \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n> This email has been scanned for all viruses by the MessageLabs Email\n> Security System.\n> \n> This email has been scanned for all viruses by the MessageLabs Email\n> Security System.\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\nCGTGCTAACGACTACTAG",
+      "body_snippet": "I work with High School students, and while they are certainly capable, your time constraints and the class size may be the hardest thing to work around. I would second Robert's advice on starting wit",
+      "thread_id": "thread-3d0b976e6bcc",
+      "thread_depth": 3,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-e828a1958eeb",
+      "message_id": "<CADYnpWEGBrrFT9+o0V8=YZipE47y8VjQLBzqcsR0NOWmH8Jmxg@mail.gmail.com>",
+      "from_name": "Nilesh Gupta",
+      "from_email_hash": "697bc6bfe0a63719b170e32b39d127cdd8b4fd75949b8b44d008174cdd336cb1",
+      "date": "2012-04-22T09:13:29+05:30",
+      "subject": "[R-sig-teaching] R exercices",
+      "subject_clean": "R exercices",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120422/06cb802d/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120422/06cb802d/attachment.pl>",
+      "thread_id": "thread-e828a1958eeb",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-33138e92e067",
+      "message_id": "<CAGx1TMCmcTssjHpETOD4s+aPFEHsm+Mr4FphA=_2N-qa8DYdQA@mail.gmail.com>",
+      "from_name": "Richard M. Heiberger",
+      "from_email_hash": "4ce810eab8587777db353ea9d997b9e94d9e73af018121f9a3424238038952df",
+      "date": "2012-04-22T00:15:31-04:00",
+      "subject": "[R-sig-teaching] R exercices",
+      "subject_clean": "R exercices",
+      "in_reply_to": "<5f74a8e369f23cffe6562dc37d9c3a3e@u-paris10.fr>",
+      "references": [
+        "<71e092791844e7056ce97accc764e1a4@u-paris10.fr>",
+        "<4F91650F.1090705@gmail.com>",
+        "<5f74a8e369f23cffe6562dc37d9c3a3e@u-paris10.fr>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120422/ef8054c7/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120422/ef8054c7/attachment.pl>",
+      "thread_id": "thread-ef7d9a397037",
+      "thread_depth": 3,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-4cac51d1dcf7",
+      "message_id": "<2395b1d7298b536099485e8a12aaf14f@u-paris10.fr>",
+      "from_name": "cgenolin",
+      "from_email_hash": "188243ef6b743b8d3cdd972d5ac76d36899f18656fb52ce7f6a8f452409f5017",
+      "date": "2012-04-22T11:39:56+02:00",
+      "subject": "[R-sig-teaching] R exercices",
+      "subject_clean": "R exercices",
+      "in_reply_to": "<CAGx1TMCmcTssjHpETOD4s+aPFEHsm+Mr4FphA=_2N-qa8DYdQA@mail.gmail.com>",
+      "references": [
+        "<71e092791844e7056ce97accc764e1a4@u-paris10.fr>",
+        "<4F91650F.1090705@gmail.com>",
+        "<5f74a8e369f23cffe6562dc37d9c3a3e@u-paris10.fr>",
+        "<CAGx1TMCmcTssjHpETOD4s+aPFEHsm+Mr4FphA=_2N-qa8DYdQA@mail.gmail.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120422/ddcf84f6/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120422/ddcf84f6/attachment.pl>",
+      "thread_id": "thread-ef7d9a397037",
+      "thread_depth": 4,
+      "month": "2012-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-94707c34085c",
+      "subject": "Comparing Points on Two Regression Lines",
+      "message_count": 1,
+      "participants": [
+        "Ole J. Forsberg, Ph.D."
+      ],
+      "started": "2012-04-01T00:20:18-05:00",
+      "last_reply": "2012-04-01T00:20:18-05:00",
+      "root_message_id": "msg-94707c34085c"
+    },
+    {
+      "id": "thread-15bc7ea31ac2",
+      "subject": "Comparing Points on Two Regression Lines",
+      "message_count": 1,
+      "participants": [
+        "AbouEl-Makarim Aboueissa"
+      ],
+      "started": "2012-04-01T07:37:02-04:00",
+      "last_reply": "2012-04-01T07:37:02-04:00",
+      "root_message_id": "msg-15bc7ea31ac2"
+    },
+    {
+      "id": "thread-a9e96f782f64",
+      "subject": "Computing correlations",
+      "message_count": 3,
+      "participants": [
+        "AbouEl-Makarim Aboueissa",
+        "Liviu Andronic",
+        "jones"
+      ],
+      "started": "2012-04-03T19:31:41-04:00",
+      "last_reply": "2012-04-04T13:59:49+02:00",
+      "root_message_id": "msg-a9e96f782f64"
+    },
+    {
+      "id": "thread-195d7b379ee7",
+      "subject": "Computing correlations including the p values",
+      "message_count": 5,
+      "participants": [
+        "AbouEl-Makarim Aboueissa",
+        "Ista Zahn",
+        "William Revelle"
+      ],
+      "started": "2012-04-03T19:48:45-04:00",
+      "last_reply": "2012-04-03T22:00:37-05:00",
+      "root_message_id": "msg-195d7b379ee7"
+    },
+    {
+      "id": "thread-e215f7b57678",
+      "subject": "New version of mosaic on CRAN",
+      "message_count": 1,
+      "participants": [
+        "Randall Pruim"
+      ],
+      "started": "2012-04-10T14:59:26-04:00",
+      "last_reply": "2012-04-10T14:59:26-04:00",
+      "root_message_id": "msg-e215f7b57678"
+    },
+    {
+      "id": "thread-23dd97332913",
+      "subject": "Distribution of the T test statistic under H0 and Ha",
+      "message_count": 3,
+      "participants": [
+        "AbouEl-Makarim Aboueissa",
+        "Ali Zanaty",
+        "Greg Snow"
+      ],
+      "started": "2012-04-15T08:14:10-07:00",
+      "last_reply": "2012-04-16T09:44:33-06:00",
+      "root_message_id": "msg-23dd97332913"
+    },
+    {
+      "id": "thread-f3eab08be5e2",
+      "subject": "Distribution of the T test statistic under H0 and Ha",
+      "message_count": 2,
+      "participants": [
+        "Bob Schumacher",
+        "Liviu Andronic"
+      ],
+      "started": "2012-04-15T12:26:43-04:00",
+      "last_reply": "2012-04-16T08:23:10+02:00",
+      "root_message_id": "msg-f3eab08be5e2"
+    },
+    {
+      "id": "thread-3d0b976e6bcc",
+      "subject": "introducing R to high school students",
+      "message_count": 4,
+      "participants": [
+        "Christopher W Ryan",
+        "Grant, Robert",
+        "Randall Pruim",
+        "Randy Johnson"
+      ],
+      "started": "2012-04-18T22:47:56-04:00",
+      "last_reply": "2012-04-20T13:08:37-04:00",
+      "root_message_id": "msg-3d0b976e6bcc"
+    },
+    {
+      "id": "thread-64de7a859f0e",
+      "subject": "introducing R to high school students",
+      "message_count": 1,
+      "participants": [
+        "Bob"
+      ],
+      "started": "2012-04-19T08:34:55-05:00",
+      "last_reply": "2012-04-19T08:34:55-05:00",
+      "root_message_id": "msg-64de7a859f0e"
+    },
+    {
+      "id": "thread-ef7d9a397037",
+      "subject": "R exercices",
+      "message_count": 8,
+      "participants": [
+        "Jeff Laux",
+        "Paula Young",
+        "R. Michael Weylandt",
+        "Richard M. Heiberger",
+        "cgenolin"
+      ],
+      "started": "2012-04-20T13:41:20+02:00",
+      "last_reply": "2012-04-22T11:39:56+02:00",
+      "root_message_id": "msg-ef7d9a397037"
+    },
+    {
+      "id": "thread-e828a1958eeb",
+      "subject": "R exercices",
+      "message_count": 1,
+      "participants": [
+        "Nilesh Gupta"
+      ],
+      "started": "2012-04-22T09:13:29+05:30",
+      "last_reply": "2012-04-22T09:13:29+05:30",
+      "root_message_id": "msg-e828a1958eeb"
+    }
+  ]
+}

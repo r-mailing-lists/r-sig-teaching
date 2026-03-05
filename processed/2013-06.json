@@ -1,0 +1,107 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2013-06",
+  "messages": [
+    {
+      "id": "msg-1bc8d0435f29",
+      "message_id": "<51B3160D020000A6000E96D3@uct5.uct.usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2013-06-08T11:31:25-04:00",
+      "subject": "[R-sig-teaching] Help with Complex Survey Analysis -- with strata and weight",
+      "subject_clean": "Help with Complex Survey Analysis -- with strata and weight",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130608/7ff3b25c/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130608/7ff3b25c/attachment.pl>",
+      "thread_id": "thread-1bc8d0435f29",
+      "thread_depth": 0,
+      "month": "2013-06"
+    },
+    {
+      "id": "msg-8c3eed41247b",
+      "message_id": "<CAHDp66Am0Mb_g7mvcGgO84-5yrQQbsy5Fd0PBv3NwNNnVcxU_Q@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2013-06-15T15:13:08-04:00",
+      "subject": "[R-sig-teaching] Papers on consistency results of MLE under fixed left-censoring",
+      "subject_clean": "Papers on consistency results of MLE under fixed left-censoring",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130615/4fe21011/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130615/4fe21011/attachment.pl>",
+      "thread_id": "thread-8c3eed41247b",
+      "thread_depth": 0,
+      "month": "2013-06"
+    },
+    {
+      "id": "msg-68316cbb9586",
+      "message_id": "<1371324560.42007.YahooMailClassic@web120602.mail.ne1.yahoo.com>",
+      "from_name": "Yahoo!",
+      "from_email_hash": "22385bbcf078dc17ff188e29e3a1eaf01aad381796219c59b64e7bb0baec2847",
+      "date": "2013-06-15T12:29:20-07:00",
+      "subject": "[R-sig-teaching] Papers on consistency results of MLE under fixed left-censoring",
+      "subject_clean": "Papers on consistency results of MLE under fixed left-censoring",
+      "in_reply_to": "<CAHDp66Am0Mb_g7mvcGgO84-5yrQQbsy5Fd0PBv3NwNNnVcxU_Q@mail.gmail.com>",
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130615/7514928b/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130615/7514928b/attachment.pl>",
+      "thread_id": "thread-8c3eed41247b",
+      "thread_depth": 1,
+      "month": "2013-06"
+    },
+    {
+      "id": "msg-d7e47e78f0e9",
+      "message_id": "<CAHDp66A22CFdeLTKO3AK5HTFUct=rj4LMmBsQo4=WFKMme58gQ@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2013-06-26T09:52:22-04:00",
+      "subject": "[R-sig-teaching] Consistency of asymptotic variances of MLEs under fixed left-censoring",
+      "subject_clean": "Consistency of asymptotic variances of MLEs under fixed left-censoring",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130626/3501c847/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130626/3501c847/attachment.pl>",
+      "thread_id": "thread-d7e47e78f0e9",
+      "thread_depth": 0,
+      "month": "2013-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-1bc8d0435f29",
+      "subject": "Help with Complex Survey Analysis -- with strata and weight",
+      "message_count": 1,
+      "participants": [
+        "AbouEl-Makarim Aboueissa"
+      ],
+      "started": "2013-06-08T11:31:25-04:00",
+      "last_reply": "2013-06-08T11:31:25-04:00",
+      "root_message_id": "msg-1bc8d0435f29"
+    },
+    {
+      "id": "thread-8c3eed41247b",
+      "subject": "Papers on consistency results of MLE under fixed left-censoring",
+      "message_count": 2,
+      "participants": [
+        "Steven Stoline",
+        "Yahoo!"
+      ],
+      "started": "2013-06-15T15:13:08-04:00",
+      "last_reply": "2013-06-15T12:29:20-07:00",
+      "root_message_id": "msg-8c3eed41247b"
+    },
+    {
+      "id": "thread-d7e47e78f0e9",
+      "subject": "Consistency of asymptotic variances of MLEs under fixed left-censoring",
+      "message_count": 1,
+      "participants": [
+        "Steven Stoline"
+      ],
+      "started": "2013-06-26T09:52:22-04:00",
+      "last_reply": "2013-06-26T09:52:22-04:00",
+      "root_message_id": "msg-d7e47e78f0e9"
+    }
+  ]
+}

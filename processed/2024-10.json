@@ -1,0 +1,150 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2024-10",
+  "messages": [
+    {
+      "id": "msg-66adbf497b49",
+      "message_id": "<LsZr3EW_T-WnH6ZEJoTFqg@geopod-ismtpd-10>",
+      "from_name": "mzyphur m@iii@g oii i@st@ts@org",
+      "from_email_hash": "252b54e096b1cc2b7cae76e00ed703f3596525227cfc47687b655cf5c7e64f69",
+      "date": "2024-10-03T08:20:00Z",
+      "subject": "[R-sig-teaching] Statistics in R with Tidyverse - livestream seminar",
+      "subject_clean": "Statistics in R with Tidyverse - livestream seminar",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi everyone\n\nInstats is offering a 4-day workshop on Statistics in R with Tidyverse <https://instats.org/seminar/statistics-using-the-tidyverse-in-r2?utm_source=r-sig-ecology> with professor Chester Ismay, running October 15, 17, 22, and 24. This comprehensive seminar introduces participants to key concepts and practices in statistical inference and data science using R, covering topics such as data wrangling, exploratory data analysis, regression analysis, resampling, empirical confidence intervals, hypothesis testing, and more. Attendees will gain hands-on experience, enhancing their ability to manage and analyze complex datasets and effectively communicate their research findings. Starting with an introduction to R and the tidyverse, the workshop will incrementally introduce statistical concepts and practical hands-on techniques for efficiently using the tidyverse to manipulate and analyze data, as well as present results with data visualizations. The workshop will also cover more advanced topics such as resampling methods for hypothesis tests with regression analysis, providing robust tools for data analysis and interpretation. Moreover, learning to communicate statistical findings effectively will enable researchers to present their work compellingly for academic journals, conferences, and policy papers.\n\nFor anyone wanting a deep dive into Quarto to automatically create reproducible research using R, we also have a 1-day workshop Quarto in RStudio: Writing Reproducible & Dynamic Research Papers <https://instats.org/seminar/quarto-in-r-studio-writing-reproducible2?utm_source=r-sig-ecology>, running Oct 7, by professor Seraphine Maerz.\n\nSign up today <https://instats.org/seminar/statistics-using-the-tidyverse-in-r2?utm_source=r-sig-ecology> for to secure your spot in these unique workshops and please feel free to tell your friends and colleagues!\n\n\nBest wishes\n\n?Michael Zyphur\nDirector\nInstitute for Statistical and Data Science\ninstats.org <http://instats.org?utm_source=r-sig-ecology>\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi everyone\n\nInstats is offering a 4-day workshop on Statistics in R with Tidyverse <https://instats.org/seminar/statistics-using-the-tidyverse-in-r2?utm_source=r-sig-ecology> with professor Chester I",
+      "thread_id": "thread-66adbf497b49",
+      "thread_depth": 0,
+      "month": "2024-10"
+    },
+    {
+      "id": "msg-bea66349eb7a",
+      "message_id": "<arHnHQgvQyGnlF8yV0vZtg@geopod-ismtpd-5>",
+      "from_name": "mzyphur m@iii@g oii i@st@ts@org",
+      "from_email_hash": "252b54e096b1cc2b7cae76e00ed703f3596525227cfc47687b655cf5c7e64f69",
+      "date": "2024-10-12T07:20:00Z",
+      "subject": "[R-sig-teaching] Network Analysis in R - livestream seminar",
+      "subject_clean": "Network Analysis in R - livestream seminar",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi everyone\n\nInstats is offering a 2-day seminar From Basic to Advanced Network Analysis in R <https://instats.org/seminar/from-basic-to-advanced-network-analysis-6>, running Oct 17 - 18 by professor Antonio Zinilli. This seminar offers a comprehensive understanding of network analysis and its application in R. Tailored for PhD students, academics, and professional researchers, the workshop provides a strong theoretical foundation and hands-on experience in analyzing and?visualizing complex networks in socio-economic and health contexts, equipping participants with practical skills needed to apply network analysis in their own research. Professor Zinilli has extensive experience and expertise in network analysis, and will lead participants through the underlying theory of networks coupled with a large variety of hands-on applications, demonstrating the value of network analysis for academic research across multiple fields. The workshop comes with 30 days of access to the recordings and Q&A forum access with professor Zinilli.\n\nWe also have a new 5-day Computational Network Science Using Python <https://instats.org/seminar/computational-network-science-using-pyth2>, running Nov 18 - 22 by professor Moses Boudourides, for those who prefer a computational approach using Python.\n\nSign up today <https://instats.org/seminar/from-basic-to-advanced-network-analysis-6> to secure your spot, and please feel free to tell your friends and colleagues about this unique opportunity.\n\n\nBest wishes\n\nMichael Zyphur\nDirector\nInstitute for Statistical and Data Science\ninstats.org <http://instats.org>\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi everyone\n\nInstats is offering a 2-day seminar From Basic to Advanced Network Analysis in R <https://instats.org/seminar/from-basic-to-advanced-network-analysis-6>, running Oct 17 - 18 by professor ",
+      "thread_id": "thread-bea66349eb7a",
+      "thread_depth": 0,
+      "month": "2024-10"
+    },
+    {
+      "id": "msg-aa896aad68a8",
+      "message_id": "<1JLRRP_BSH6oFQQ0MNgpWg@geopod-ismtpd-9>",
+      "from_name": "mzyphur m@iii@g oii i@st@ts@org",
+      "from_email_hash": "252b54e096b1cc2b7cae76e00ed703f3596525227cfc47687b655cf5c7e64f69",
+      "date": "2024-10-14T10:29:57Z",
+      "subject": "[R-sig-teaching] Last chance: Using ChatGPT for Advanced Data Analysis - livestream seminar",
+      "subject_clean": "Last chance: Using ChatGPT for Advanced Data Analysis - livestream seminar",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi everyone\n\nLast chance to register for our 2-day workshops on Using ChatGPT for Advanced Data Analysis 3.0 <https://instats.org/seminar/using-chatgpt-for-advanced-data-analysis10-2> on October 19 and 22. Imagine performing an entire statistical analysis without writing a single line of code or even knowing how to use a specific statistics program. In today's world of AI based language models such as ChatGPT, plain English is sufficient. In this workshop, professor Peter Gruber will show how to use ChatGPT and its Advanced Data Analysis tool for data wrangling and statistical analysis, without needing to use any statistics programs or programming languages - and with the newest version of ChatGPT, it's even faster and more intuitive. The seminar covers a range of topics from data preparation and descriptive statistics to regression analysis, advanced statistical tests, and data visualisations. Emphasis is placed on understanding the workings and limits of this and similar AI models, while using them as extremely capable research assistants to drastically speed up and improve your research workflows.\n\nSign up today <https://instats.org/seminar/using-chatgpt-for-advanced-data-analysis10-2> for this unique workshop, and please feel?free to tell your friends and colleagues!\n\n\nBest wishes\n\nMichael Zyphur\nDirector\nInstitute for Statistical and Data Science\ninstats.org <http://instats.org?utm_source=GEO-TECTONICS>\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi everyone\n\nLast chance to register for our 2-day workshops on Using ChatGPT for Advanced Data Analysis 3.0 <https://instats.org/seminar/using-chatgpt-for-advanced-data-analysis10-2> on October 19 an",
+      "thread_id": "thread-aa896aad68a8",
+      "thread_depth": 0,
+      "month": "2024-10"
+    },
+    {
+      "id": "msg-5156dc5650df",
+      "message_id": "<CANV9buTbHF6w0aMN-Lp8JcUv=jx3n_66W9t5EDJ45UgpwZJQgw@mail.gmail.com>",
+      "from_name": "Jeff Laux",
+      "from_email_hash": "99d9cc6aa59169825cbb38f392641cc09c45119381b1e7c1a01245f518510b4c",
+      "date": "2024-10-14T07:27:29-04:00",
+      "subject": "[R-sig-teaching] Last chance: Using ChatGPT for Advanced Data Analysis - livestream seminar",
+      "subject_clean": "Last chance: Using ChatGPT for Advanced Data Analysis - livestream seminar",
+      "in_reply_to": "<1JLRRP_BSH6oFQQ0MNgpWg@geopod-ismtpd-9>",
+      "references": [
+        "<1JLRRP_BSH6oFQQ0MNgpWg@geopod-ismtpd-9>"
+      ],
+      "body_plain": "This SIG is supposed to be for people discussing the use of R in teaching\nstatistics, not for advertising your business.\n\n\nOn Mon, Oct 14, 2024 at 6:30?AM Michael Zyphur via R-sig-teaching <\nr-sig-teaching at r-project.org> wrote:\n\n> Hi everyone\n>\n> Last chance to register for our 2-day workshops on Using ChatGPT for\n> Advanced Data Analysis 3.0 <\n> https://instats.org/seminar/using-chatgpt-for-advanced-data-analysis10-2>\n> on October 19 and 22. Imagine performing an entire statistical analysis\n> without writing a single line of code or even knowing how to use a specific\n> statistics program. In today's world of AI based language models such as\n> ChatGPT, plain English is sufficient. In this workshop, professor Peter\n> Gruber will show how to use ChatGPT and its Advanced Data Analysis tool for\n> data wrangling and statistical analysis, without needing to use any\n> statistics programs or programming languages - and with the newest version\n> of ChatGPT, it's even faster and more intuitive. The seminar covers a range\n> of topics from data preparation and descriptive statistics to regression\n> analysis, advanced statistical tests, and data visualisations. Emphasis is\n> placed on understanding the workings and limits of this and similar AI\n> models, while using them as extremely capable research assistants to\n> drastically speed up and improve your research workflows.\n>\n> Sign up today <\n> https://instats.org/seminar/using-chatgpt-for-advanced-data-analysis10-2>\n> for this unique workshop, and please feel free to tell your friends and\n> colleagues!\n>\n>\n> Best wishes\n>\n> Michael Zyphur\n> Director\n> Institute for Statistical and Data Science\n> instats.org <http://instats.org?utm_source=GEO-TECTONICS>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "This SIG is supposed to be for people discussing the use of R in teaching\nstatistics, not for advertising your business.\n\n\nOn Mon, Oct 14, 2024 at 6:30?AM Michael Zyphur via R-sig-teaching <\nr-sig-tea",
+      "thread_id": "thread-aa896aad68a8",
+      "thread_depth": 1,
+      "month": "2024-10"
+    },
+    {
+      "id": "msg-bfa005133330",
+      "message_id": "<CAFEsyOy-q1yZr2axJdVMriPXDvJoaxDh2ZHoZ_LeakCi_G8DWQ@mail.gmail.com>",
+      "from_name": "Michael Zyphur",
+      "from_email_hash": "4dc29dcc548743fbd3ded062200e46898609bf4c30557092653ca3be7f834901",
+      "date": "2024-10-14T22:41:43+11:00",
+      "subject": "[R-sig-teaching] Last chance: Using ChatGPT for Advanced Data Analysis - livestream seminar",
+      "subject_clean": "Last chance: Using ChatGPT for Advanced Data Analysis - livestream seminar",
+      "in_reply_to": "<CANV9buTbHF6w0aMN-Lp8JcUv=jx3n_66W9t5EDJ45UgpwZJQgw@mail.gmail.com>",
+      "references": [
+        "<1JLRRP_BSH6oFQQ0MNgpWg@geopod-ismtpd-9>",
+        "<CANV9buTbHF6w0aMN-Lp8JcUv=jx3n_66W9t5EDJ45UgpwZJQgw@mail.gmail.com>"
+      ],
+      "body_plain": "Hi Jeff\n\nThanks for getting in touch. As academics ourselves, we're hosting this\nseminar as part of our efforts to reduce barriers to stats education. By\nallowing participants to focus on statistical principles rather than coding\nformalities, we've found ChatGPT (and Copilot) to be incredible tools for\ndecreasing the workloads of folks who are new to stats in particular - but\nreally anyone wanting to increase their efficiency can benefit.\n\nTypically when teaching we usually have to teach statistics +\ncoding/software. By using ChatGPT the purpose of the seminar is to show how\nthis latter component can be drastically streamlined. This leads to people\nbeing more interested in learning statistics rather than overwhelmed.\n\nI hope this puts it in some context and thanks again.\n\n\nBest wishes\n\nMichael Zyphur\nDirector\nInstitute for Statistical and Data Science\n*instats.org* <http://instats.org>\n\n\nOn Mon, 14 Oct 2024 at 22:27, Jeff Laux <jefflaux at gmail.com> wrote:\n\n> This SIG is supposed to be for people discussing the use of R in teaching\n> statistics, not for advertising your business.\n>\n>\n> On Mon, Oct 14, 2024 at 6:30?AM Michael Zyphur via R-sig-teaching <\n> r-sig-teaching at r-project.org> wrote:\n>\n>> Hi everyone\n>>\n>> Last chance to register for our 2-day workshops on Using ChatGPT for\n>> Advanced Data Analysis 3.0 <\n>> https://instats.org/seminar/using-chatgpt-for-advanced-data-analysis10-2>\n>> on October 19 and 22. Imagine performing an entire statistical analysis\n>> without writing a single line of code or even knowing how to use a specific\n>> statistics program. In today's world of AI based language models such as\n>> ChatGPT, plain English is sufficient. In this workshop, professor Peter\n>> Gruber will show how to use ChatGPT and its Advanced Data Analysis tool for\n>> data wrangling and statistical analysis, without needing to use any\n>> statistics programs or programming languages - and with the newest version\n>> of ChatGPT, it's even faster and more intuitive. The seminar covers a range\n>> of topics from data preparation and descriptive statistics to regression\n>> analysis, advanced statistical tests, and data visualisations. Emphasis is\n>> placed on understanding the workings and limits of this and similar AI\n>> models, while using them as extremely capable research assistants to\n>> drastically speed up and improve your research workflows.\n>>\n>> Sign up today <\n>> https://instats.org/seminar/using-chatgpt-for-advanced-data-analysis10-2>\n>> for this unique workshop, and please feel free to tell your friends and\n>> colleagues!\n>>\n>>\n>> Best wishes\n>>\n>> Michael Zyphur\n>> Director\n>> Institute for Statistical and Data Science\n>> instats.org <http://instats.org?utm_source=GEO-TECTONICS>\n>>         [[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi Jeff\n\nThanks for getting in touch. As academics ourselves, we're hosting this\nseminar as part of our efforts to reduce barriers to stats education. By\nallowing participants to focus on statistical ",
+      "thread_id": "thread-aa896aad68a8",
+      "thread_depth": 2,
+      "month": "2024-10"
+    },
+    {
+      "id": "msg-5c094cdd4862",
+      "message_id": "<26381.5015.624095.859744@stat.math.ethz.ch>",
+      "from_name": "Martin Maechler",
+      "from_email_hash": "a92f4a07d4e3cad5fba985e30db2b0fff598d5ddfbadbb2e91ffe91636400c62",
+      "date": "2024-10-14T14:50:31+02:00",
+      "subject": "[R-sig-teaching] Last chance: Using ChatGPT ......",
+      "subject_clean": "Last chance: Using ChatGPT ......",
+      "in_reply_to": "<CAFEsyOy-q1yZr2axJdVMriPXDvJoaxDh2ZHoZ_LeakCi_G8DWQ@mail.gmail.com>",
+      "references": [
+        "<1JLRRP_BSH6oFQQ0MNgpWg@geopod-ismtpd-9>",
+        "<CANV9buTbHF6w0aMN-Lp8JcUv=jx3n_66W9t5EDJ45UgpwZJQgw@mail.gmail.com>",
+        "<CAFEsyOy-q1yZr2axJdVMriPXDvJoaxDh2ZHoZ_LeakCi_G8DWQ@mail.gmail.com>"
+      ],
+      "body_plain": ">>>>> Michael Zyphur via R-sig-teaching \n>>>>>     on Mon, 14 Oct 2024 22:41:43 +1100 writes:\n\n    > Hi Jeff Thanks for getting in touch. As academics\n    > ourselves, we're hosting this seminar as part of our\n    > efforts to reduce barriers to stats education.\n\n    ..................\n    ..................\n\n    > On Mon, 14 Oct 2024 at 22:27, Jeff Laux\n    > <jefflaux at gmail.com> wrote:\n\n    >> This SIG is supposed to be for people discussing the use\n    >> of R in teaching statistics, not for advertising your\n    >> business.\n\nIndeed.\nThe posting by Michael Zyphur advertizing their courses to\n*several* R-SIG-* mailing lists *has* been inappropriate\nand he has been told so several times in the past.\n\nI have now started to disallow / ban such posts.\n\nOne _single_ posting to the general  R list, R-help may be\nappropriate if it happens only every few months.\n\nEverything else has been inappropriate.\n\nMartin Maechler\n- R Core team\n- admin of current R-*@r-project.org mailing lists.\n\n\n    >> On Mon, Oct 14, 2024 at 6:30?AM Michael Zyphur via\n    >> R-sig-teaching < r-sig-teaching at r-project.org> wrote:\n    >> \n    >>> Hi everyone\n    >>> \n    >>> Last chance to register for our 2-day workshops on Using\n    .....................\n    .....................",
+      "body_snippet": ">>>>> Michael Zyphur via R-sig-teaching \n>>>>>     on Mon, 14 Oct 2024 22:41:43 +1100 writes:\n\n    > Hi Jeff Thanks for getting in touch. As academics\n    > ourselves, we're hosting this seminar as pa",
+      "thread_id": "thread-aa896aad68a8",
+      "thread_depth": 3,
+      "month": "2024-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-66adbf497b49",
+      "subject": "Statistics in R with Tidyverse - livestream seminar",
+      "message_count": 1,
+      "participants": [
+        "mzyphur m@iii@g oii i@st@ts@org"
+      ],
+      "started": "2024-10-03T08:20:00+00:00",
+      "last_reply": "2024-10-03T08:20:00+00:00",
+      "root_message_id": "msg-66adbf497b49"
+    },
+    {
+      "id": "thread-bea66349eb7a",
+      "subject": "Network Analysis in R - livestream seminar",
+      "message_count": 1,
+      "participants": [
+        "mzyphur m@iii@g oii i@st@ts@org"
+      ],
+      "started": "2024-10-12T07:20:00+00:00",
+      "last_reply": "2024-10-12T07:20:00+00:00",
+      "root_message_id": "msg-bea66349eb7a"
+    },
+    {
+      "id": "thread-aa896aad68a8",
+      "subject": "Last chance: Using ChatGPT for Advanced Data Analysis - livestream seminar",
+      "message_count": 4,
+      "participants": [
+        "Jeff Laux",
+        "Martin Maechler",
+        "Michael Zyphur",
+        "mzyphur m@iii@g oii i@st@ts@org"
+      ],
+      "started": "2024-10-14T10:29:57+00:00",
+      "last_reply": "2024-10-14T14:50:31+02:00",
+      "root_message_id": "msg-aa896aad68a8"
+    }
+  ]
+}

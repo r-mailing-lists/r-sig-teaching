@@ -1,0 +1,202 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2012-01",
+  "messages": [
+    {
+      "id": "msg-6ec86f53c58f",
+      "message_id": "<20120107171818.8A31728490@mail89.csoft.net>",
+      "from_name": "Bob",
+      "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
+      "date": "2012-01-07T12:18:18-05:00",
+      "subject": "[R-sig-teaching] R for absolute beginners",
+      "subject_clean": "R for absolute beginners",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": ">From time to time I have posted a link to the materials on R that I\ndeveloped for my online courses.  Their only claim to fame is that\nthey are way below the level of all the R documentation I have seen\nand so suited for very non-technical beginners (I hope). There have\nbeen a variety of problems with that link, including things being\ninvisible so you do not even know they are (not) there.  So I have put\na cosmetically challenged version on my own website.  There may still\nbe problems, but at least now I have access and can fix them!  Let me\nknow if you find any.  There should be several pages on R Commander\nand several on plain R.  I think several more are still missing and I\nwill continue to hunt for them.\n\n     http://statland.org/R/Rstart.html\n\n\n\n------->  First-time AP Stats. teacher?  Help is on the way! See\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n      _\n     | |          Robert W. Hayden\n     | |          142 Main Street\n    /  |          Apartment 104\n   |   |          Jaffrey, New Hampshire 03452  USA\n   |   |          email: bob@ the site below\n  /    |          website: http://statland.org\n | .   y          phone: (603) 532-7224 (home)\n ''''''",
+      "body_snippet": ">From time to time I have posted a link to the materials on R that I\ndeveloped for my online courses.  Their only claim to fame is that\nthey are way below the level of all the R documentation I have s",
+      "thread_id": "thread-6ec86f53c58f",
+      "thread_depth": 0,
+      "month": "2012-01"
+    },
+    {
+      "id": "msg-d10c89ee287c",
+      "message_id": "<4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2012-01-15T14:41:29-05:00",
+      "subject": "[R-sig-teaching] Example(s) of Biomodal distributions",
+      "subject_clean": "Example(s) of Biomodal distributions",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120115/b715d489/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120115/b715d489/attachment.pl>",
+      "thread_id": "thread-d10c89ee287c",
+      "thread_depth": 0,
+      "month": "2012-01"
+    },
+    {
+      "id": "msg-ea253ab57e6d",
+      "message_id": "<4F13367A.2040800@gmail.com>",
+      "from_name": "Jeff Laux",
+      "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
+      "date": "2012-01-15T15:26:34-05:00",
+      "subject": "[R-sig-teaching] Example(s) of Biomodal distributions",
+      "subject_clean": "Example(s) of Biomodal distributions",
+      "in_reply_to": "<4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>",
+      "references": [
+        "<4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>"
+      ],
+      "body_plain": "Would this work?\n\nm1 <- 3.5\nm2 <- 6.5\ns1 <- 0.8\ns2 <- 0.8\ndist1 <- dnorm(x, mean=m1, sd=s1)\ndist2 <- dnorm(x, mean=m2, sd=s2)\nbiModalDist <- dist1 + dist2\n\nq <- qnorm(.9,0,1)\nz1 <- q*s1\nz2 <- q*s2\nzLow <- m1 - z1\nzUp <- m2 + z\n\nxShade <- seq(zLow, zUp, 0.1)\nd1Shade <- dnorm(xShade, mean=m1, sd=s1)\nd2Shade <- dnorm(xShade, mean=m2, sd=s1)\nyShade <- d1Shade + d2Shade\n\nwindows()\nplot(x, biModalDist, type=\"l\")\npolygon(x=c(zUp, zLow, xShade), y=c(0,0,yShade), col=\"gray\")\n\n\nOn 1/15/2012 2:41 PM, AbouEl-Makarim Aboueissa wrote:\n> Dear R users:\n>\n> I am currently teaching a course in Statistics. Can someone give an R code(s) to create a biomodal curve(s) with shaded area of 90% and with 5% in each tail\n>\n> With many thanks\n> abou\n>\n>\n>\n> ==========================\n> AbouEl-Makarim Aboueissa, Ph.D.\n> Associate Professor of Statistics\n> Graduate Program Coordinator\n> Department of Mathematics&  Statistics\n> University of Southern Maine\n> 96 Falmouth Street\n> P.O. Box 9300\n> Portland, ME 04104-9300\n> USA\n>\n>\n> Tel: (207) 228-8389\n> Fax: (207) 780-5607\n> Email: aaboueissa at usm.maine.edu\n>            aboueiss at yahoo.com\n>\n> Office: 301C Payson Smith\n>\n>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n> -----\n> No virus found in this message.\n> Checked by AVG - www.avg.com\n> Version: 2012.0.1901 / Virus Database: 2109/4744 - Release Date: 01/15/12\n>\n>",
+      "body_snippet": "Would this work?\n\nm1 <- 3.5\nm2 <- 6.5\ns1 <- 0.8\ns2 <- 0.8\ndist1 <- dnorm(x, mean=m1, sd=s1)\ndist2 <- dnorm(x, mean=m2, sd=s2)\nbiModalDist <- dist1 + dist2\n\nq <- qnorm(.9,0,1)\nz1 <- q*s1\nz2 <- q*s2\nzLo",
+      "thread_id": "thread-d10c89ee287c",
+      "thread_depth": 1,
+      "month": "2012-01"
+    },
+    {
+      "id": "msg-2c2d937f00aa",
+      "message_id": "<4F133DE6.30709@gmail.com>",
+      "from_name": "Jeff Laux",
+      "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
+      "date": "2012-01-15T15:58:14-05:00",
+      "subject": "[R-sig-teaching] Example(s) of Biomodal distributions",
+      "subject_clean": "Example(s) of Biomodal distributions",
+      "in_reply_to": "<4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>",
+      "references": [
+        "<4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>"
+      ],
+      "body_plain": "x didn't make it through the cut-and-paste, it should be:\n\nx <- seq(0, 10, 0.1)\n\nalso zUp has a typo, it should be:\n\nzUp <- m2 + z2\n\nThat should work now.\n\n\nOn 1/15/2012 2:41 PM, AbouEl-Makarim Aboueissa wrote:\n> Dear R users:\n>\n> I am currently teaching a course in Statistics. Can someone give an R code(s) to create a biomodal curve(s) with shaded area of 90% and with 5% in each tail\n>\n> With many thanks\n> abou\n>\n>\n>\n> ==========================\n> AbouEl-Makarim Aboueissa, Ph.D.\n> Associate Professor of Statistics\n> Graduate Program Coordinator\n> Department of Mathematics&  Statistics\n> University of Southern Maine\n> 96 Falmouth Street\n> P.O. Box 9300\n> Portland, ME 04104-9300\n> USA\n>\n>\n> Tel: (207) 228-8389\n> Fax: (207) 780-5607\n> Email: aaboueissa at usm.maine.edu\n>            aboueiss at yahoo.com\n>\n> Office: 301C Payson Smith\n>\n>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n> -----\n> No virus found in this message.\n> Checked by AVG - www.avg.com\n> Version: 2012.0.1901 / Virus Database: 2109/4744 - Release Date: 01/15/12\n>\n>",
+      "body_snippet": "x didn't make it through the cut-and-paste, it should be:\n\nx <- seq(0, 10, 0.1)\n\nalso zUp has a typo, it should be:\n\nzUp <- m2 + z2\n\nThat should work now.\n\n\nOn 1/15/2012 2:41 PM, AbouEl-Makarim Abouei",
+      "thread_id": "thread-d10c89ee287c",
+      "thread_depth": 1,
+      "month": "2012-01"
+    },
+    {
+      "id": "msg-72fc9e59dd4e",
+      "message_id": "<7B7A6A17-610D-4FFC-8834-7D9175AF2CDD@calvin.edu>",
+      "from_name": "Randall Pruim",
+      "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
+      "date": "2012-01-15T23:31:57-05:00",
+      "subject": "[R-sig-teaching] Example(s) of Biomodal distributions",
+      "subject_clean": "Example(s) of Biomodal distributions",
+      "in_reply_to": "<4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>",
+      "references": [
+        "<4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>"
+      ],
+      "body_plain": "I recently wrote a function for the mosaic package that makes it easy  \nto generate various kinds of plots of distributions.  For example, to  \nplot a Binom(30,.35) distribution, you just use:\n\ndistPlot(\"binom\",params=list(size=30, prob=.35))\n\nand get the attached plot (if it makes it through to the list).\n-------------- next part --------------\n\n\n\nAdditional arguments let you choose between different kinds of plots  \n(density, histogram, qq, cdf), and there is a heuristic to guess  \nwhether the distribution is discrete or continuous and to the right  \nthing.\n\nI didn't set these up to make it easy to add the shading, but I think  \nI could modify things to make that possible too.   Stay tuned.\n\n---rjp\n\n\n\n\n\n\n\n\nOn Jan 15, 2012, at 2:41 PM, AbouEl-Makarim Aboueissa wrote:\n\n> Dear R users:\n>\n> I am currently teaching a course in Statistics. Can someone give an  \n> R code(s) to create a biomodal curve(s) with shaded area of 90% and  \n> with 5% in each tail\n>\n> With many thanks\n> abou\n>\n>\n>\n> ==========================\n> AbouEl-Makarim Aboueissa, Ph.D.\n> Associate Professor of Statistics\n> Graduate Program Coordinator\n> Department of Mathematics & Statistics\n> University of Southern Maine\n> 96 Falmouth Street\n> P.O. Box 9300\n> Portland, ME 04104-9300\n> USA\n>\n>\n> Tel: (207) 228-8389\n> Fax: (207) 780-5607\n> Email: aaboueissa at usm.maine.edu\n>          aboueiss at yahoo.com\n>\n> Office: 301C Payson Smith\n>\n>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "I recently wrote a function for the mosaic package that makes it easy  \nto generate various kinds of plots of distributions.  For example, to  \nplot a Binom(30,.35) distribution, you just use:\n\ndistPl",
+      "thread_id": "thread-d10c89ee287c",
+      "thread_depth": 1,
+      "month": "2012-01"
+    },
+    {
+      "id": "msg-8b1344024fc0",
+      "message_id": "<10ABF549-2647-400F-8C98-C42E77697BF7@calvin.edu>",
+      "from_name": "Randall Pruim",
+      "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
+      "date": "2012-01-16T01:57:00-05:00",
+      "subject": "[R-sig-teaching] Example(s) of Biomodal distributions",
+      "subject_clean": "Example(s) of Biomodal distributions",
+      "in_reply_to": "<4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>",
+      "references": [
+        "<4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120116/dd6642da/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120116/dd6642da/attachment.pl>",
+      "thread_id": "thread-d10c89ee287c",
+      "thread_depth": 1,
+      "month": "2012-01"
+    },
+    {
+      "id": "msg-b725d4528b93",
+      "message_id": "<366F5EA7-FB17-4894-B795-614986C1EBB6@calvin.edu>",
+      "from_name": "Randall Pruim",
+      "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
+      "date": "2012-01-16T08:58:58-05:00",
+      "subject": "[R-sig-teaching] Example(s) of Biomodal distributions",
+      "subject_clean": "Example(s) of Biomodal distributions",
+      "in_reply_to": "<4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>",
+      "references": [
+        "<4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>"
+      ],
+      "body_plain": "Just noticing that I read the post below too quickly and thought it  \nsaid \"binomial\" rather than \"bimodal\".  But my solution works all the  \nsame, you just need to provide a bimodal distribution as the first  \nargument.  The only requirement is that if the name of your  \ndistribution is \"foo\", then dfoo, pfoo, and qfoo need to exist and do  \nthe correct things.  They may be user defined functions.\n\nYou can of course, use the groups argument however you like to define  \nthe tails of the distribution.  For example, something like\n\n\tgroups = ( x < qfoo(0.05, ....) | x > qfoo(0.95) )\n\nshould shade the tails differently from the center.\n\nIn view of the email from Jeff Laux, I might consider adding some  \nutilities to build new dfoo, pfoo, and qfoo functions from existing  \nones, at least for a few easy cases, like linear combinations.  That  \nwould make it really easy to generate various bimodal distributions.\n\n---rjp\n\n\n\n\nOn Jan 15, 2012, at 2:41 PM, AbouEl-Makarim Aboueissa wrote:\n\n> Dear R users:\n>\n> I am currently teaching a course in Statistics. Can someone give an  \n> R code(s) to create a biomodal curve(s) with shaded area of 90% and  \n> with 5% in each tail\n>\n> With many thanks\n> abou\n>\n>\n>\n> ==========================\n> AbouEl-Makarim Aboueissa, Ph.D.\n> Associate Professor of Statistics\n> Graduate Program Coordinator\n> Department of Mathematics & Statistics\n> University of Southern Maine\n> 96 Falmouth Street\n> P.O. Box 9300\n> Portland, ME 04104-9300\n> USA\n>\n>\n> Tel: (207) 228-8389\n> Fax: (207) 780-5607\n> Email: aaboueissa at usm.maine.edu\n>          aboueiss at yahoo.com\n>\n> Office: 301C Payson Smith\n>\n>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Just noticing that I read the post below too quickly and thought it  \nsaid \"binomial\" rather than \"bimodal\".  But my solution works all the  \nsame, you just need to provide a bimodal distribution as t",
+      "thread_id": "thread-d10c89ee287c",
+      "thread_depth": 1,
+      "month": "2012-01"
+    },
+    {
+      "id": "msg-ec2d130c0874",
+      "message_id": "<8f5557c8888cd6710c49e772f4cb2e91@patfiza.net>",
+      "from_name": "chubukou at patfiza.net",
+      "from_email_hash": "fe21b0d73e7511a47e2419992184449f8a86e0ff7a70241ff6bf72c7db5ae9a9",
+      "date": "2012-01-16T14:10:14Z",
+      "subject": "[R-sig-teaching] Example(s) of Biomodal distributions",
+      "subject_clean": "Example(s) of Biomodal distributions",
+      "in_reply_to": "<366F5EA7-FB17-4894-B795-614986C1EBB6@calvin.edu>",
+      "references": [
+        "<4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>",
+        "<366F5EA7-FB17-4894-B795-614986C1EBB6@calvin.edu>"
+      ],
+      "body_plain": "I think AbouEl-Makarim means \"bimodal distribution\" here is my solve \n(sorry for primitive example)\n\nm1<-0;\nsd1<-1;\nm2<-4;\nsd2<-1;\nbimodal<-curve(dnorm(x,m1,sd1)+dnorm(x,m2,sd2), \nfrom=min(c(m1,m2))-3*max(c(sd1,sd2)), \nto=max(c(m1,m2))+3*max(c(sd1,sd2)));\nql_1<-quantile(rnorm(1000,m1,sd1),0.05);\nqh_1<-quantile(rnorm(1000,m1,sd1),0.95);\nql_2<-quantile(rnorm(1000,m2,sd2),0.05);\nqh_2<-quantile(rnorm(1000,m2,sd2),0.95);\nplot(bimodal$x, bimodal$y, type=\"l\");\nabline(v=ql_1, col=\"red\",lwd=2);\nabline(v=qh_1, col=\"red\",lwd=2);\nabline(v=ql_2, col=\"green\", lwd=2);\nabline(v=qh_2, col=\"green\", lwd=2);\npolygon(x=c(ql_1,qh_1, bimodal$x[bimodal$x<=qh_1 && bimodal$x>=ql_1]), \ny=c(0,0,bimodal$y[bimodal$x<=qh_1 && bimodal$x>=ql_1]), col=\"gray\");\npolygon(x=c(ql_2,qh_2, bimodal$x[bimodal$x<=qh_2 && bimodal$x>=ql_2]), \ny=c(0,0,bimodal$y[bimodal$x<=qh_2 && bimodal$x>=ql_2]), col=\"gray\");\n\n--\nZhan Chubukou\nChair of Pathological Physiology magistrant\nGomel State Medical University\nBelarus\n\n> Just noticing that I read the post below too quickly and thought it\n> said \"binomial\" rather than \"bimodal\".  But my solution works all the\n> same, you just need to provide a bimodal distribution as the first\n> argument.  The only requirement is that if the name of your\n> distribution is \"foo\", then dfoo, pfoo, and qfoo need to exist and do\n> the correct things.  They may be user defined functions.\n>\n> You can of course, use the groups argument however you like to define\n> the tails of the distribution.  For example, something like\n>\n> groups = ( x < qfoo(0.05, ....) | x > qfoo(0.95) )\n>\n> should shade the tails differently from the center.\n>\n> In view of the email from Jeff Laux, I might consider adding some\n> utilities to build new dfoo, pfoo, and qfoo functions from existing\n> ones, at least for a few easy cases, like linear combinations.  That\n> would make it really easy to generate various bimodal distributions.\n>\n> ---rjp\n>\n>\n>\n>\n> On Jan 15, 2012, at 2:41 PM, AbouEl-Makarim Aboueissa wrote:\n>\n>> Dear R users:\n>>\n>> I am currently teaching a course in Statistics. Can someone give an  \n>> R code(s) to create a biomodal curve(s) with shaded area of 90% and  \n>> with 5% in each tail\n>>\n>> With many thanks\n>> abou\n>>\n>>\n>>\n>> ==========================\n>> AbouEl-Makarim Aboueissa, Ph.D.\n>> Associate Professor of Statistics\n>> Graduate Program Coordinator\n>> Department of Mathematics & Statistics\n>> University of Southern Maine\n>> 96 Falmouth Street\n>> P.O. Box 9300\n>> Portland, ME 04104-9300\n>> USA\n>>\n>>\n>> Tel: (207) 228-8389\n>> Fax: (207) 780-5607\n>> Email: aaboueissa at usm.maine.edu\n>>          aboueiss at yahoo.com\n>>\n>> Office: 301C Payson Smith\n>>\n>>\n>> \t[[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "I think AbouEl-Makarim means \"bimodal distribution\" here is my solve \n(sorry for primitive example)\n\nm1<-0;\nsd1<-1;\nm2<-4;\nsd2<-1;\nbimodal<-curve(dnorm(x,m1,sd1)+dnorm(x,m2,sd2), \nfrom=min(c(m1,m2))-3",
+      "thread_id": "thread-d10c89ee287c",
+      "thread_depth": 2,
+      "month": "2012-01"
+    },
+    {
+      "id": "msg-24671ce38396",
+      "message_id": "<82ece389bdbbb336cb71dbe9cfb8fca0@patfiza.net>",
+      "from_name": "chubukou at patfiza.net",
+      "from_email_hash": "fe21b0d73e7511a47e2419992184449f8a86e0ff7a70241ff6bf72c7db5ae9a9",
+      "date": "2012-01-16T14:47:36Z",
+      "subject": "[R-sig-teaching] Example(s) of Biomodal distributions",
+      "subject_clean": "Example(s) of Biomodal distributions",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear Abou,\nI think Your trouble can be solved like there \nhttp://www.talkstats.com/showthread.php/11746-Problem-with-plotting-in-R\n\n---\nZhan Chubukou\nChair of Pathological Physiology magistrant\nGomel State Medical University\nBelarus",
+      "body_snippet": "Dear Abou,\nI think Your trouble can be solved like there \nhttp://www.talkstats.com/showthread.php/11746-Problem-with-plotting-in-R\n\n---\nZhan Chubukou\nChair of Pathological Physiology magistrant\nGomel ",
+      "thread_id": "thread-24671ce38396",
+      "thread_depth": 0,
+      "month": "2012-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-6ec86f53c58f",
+      "subject": "R for absolute beginners",
+      "message_count": 1,
+      "participants": [
+        "Bob"
+      ],
+      "started": "2012-01-07T12:18:18-05:00",
+      "last_reply": "2012-01-07T12:18:18-05:00",
+      "root_message_id": "msg-6ec86f53c58f"
+    },
+    {
+      "id": "thread-d10c89ee287c",
+      "subject": "Example(s) of Biomodal distributions",
+      "message_count": 7,
+      "participants": [
+        "AbouEl-Makarim Aboueissa",
+        "Jeff Laux",
+        "Randall Pruim",
+        "chubukou at patfiza.net"
+      ],
+      "started": "2012-01-15T14:41:29-05:00",
+      "last_reply": "2012-01-16T14:10:14+00:00",
+      "root_message_id": "msg-d10c89ee287c"
+    },
+    {
+      "id": "thread-24671ce38396",
+      "subject": "Example(s) of Biomodal distributions",
+      "message_count": 1,
+      "participants": [
+        "chubukou at patfiza.net"
+      ],
+      "started": "2012-01-16T14:47:36+00:00",
+      "last_reply": "2012-01-16T14:47:36+00:00",
+      "root_message_id": "msg-24671ce38396"
+    }
+  ]
+}

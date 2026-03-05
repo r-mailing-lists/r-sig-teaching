@@ -1,0 +1,294 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2009-05",
+  "messages": [
+    {
+      "id": "msg-00abdfb31692",
+      "message_id": "<4A01C815.01BB.00A6.1@usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2009-05-06T17:25:42-04:00",
+      "subject": "[R-sig-teaching] Help wanted with R",
+      "subject_clean": "Help wanted with R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090506/2f953794/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090506/2f953794/attachment.pl>",
+      "thread_id": "thread-00abdfb31692",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-514a6afed6ec",
+      "message_id": "<644e1f320905061820w4df08f5ax8c10bb697138c6c4@mail.gmail.com>",
+      "from_name": "jim holtman",
+      "from_email_hash": "46f979d1a5bf6fa8b5559d3a049add9a0eb45fffc6a219e7401d97ba07ef9a0f",
+      "date": "2009-05-06T21:20:12-04:00",
+      "subject": "[R-sig-teaching] Help wanted with R",
+      "subject_clean": "Help wanted with R",
+      "in_reply_to": "<4A01C815.01BB.00A6.1@usm.maine.edu>",
+      "references": [
+        "<4A01C815.01BB.00A6.1@usm.maine.edu>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090506/1800f24d/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090506/1800f24d/attachment.pl>",
+      "thread_id": "thread-00abdfb31692",
+      "thread_depth": 1,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-dc6fb1da9e31",
+      "message_id": "<AE48B961-35D1-4F47-B77D-EF20103B51DF@gmail.com>",
+      "from_name": "Retzer Joe",
+      "from_email_hash": "47cd75b41ef1b93378f05491d80f087673d347400d01afcb82657e6104ab4e40",
+      "date": "2009-05-07T19:41:32-05:00",
+      "subject": "[R-sig-teaching] Simple practice problems for R tutorial",
+      "subject_clean": "Simple practice problems for R tutorial",
+      "in_reply_to": "<f8e6ff050903310724j623763bdt3e3d9933e1954d42@mail.gmail.com>",
+      "references": [
+        "<49B15D49.8030107@umn.edu>",
+        "<20090309210908.GG14522@laplace.reed.edu>",
+        "<D86C9EFF6AA3734193923FFA1EE4308B07D7DC65@nc-mail2.northland.edu>",
+        "<40e66e0b0903301412i275524d1g4df1e9925f2b3915@mail.gmail.com>",
+        "<f8e6ff050903301529u20c2e480n4bce9d83c429a1ab@mail.gmail.com>",
+        "<40e66e0b0903301602h7268dd02y82e1e7c454e9170b@mail.gmail.com>",
+        "<f8e6ff050903301754x34fa26earb7fd9f5d2506add7@mail.gmail.com>",
+        "<40e66e0b0903310641x7a1b29afo2cd31825191641b2@mail.gmail.com>",
+        "<f8e6ff050903310724j623763bdt3e3d9933e1954d42@mail.gmail.com>"
+      ],
+      "body_plain": "I'm putting together an R tutorial and wanted to give a few, in class,  \npractice problems to the students. I'd like to have some very basic  \nones (since they will be done in class) on things like:\n\n- read a data file\n- do some simple manipulations / calculations\n- do some sorting\n- create a list\n- load a library and run something from it\n- draw some easy graphs (and make simple par changes)\n- simple matrix manipulations\n\netc.\n\nI was wondering if anyone had some of these or knew where I might find  \nsome (url, text, etc.). I've been looking w/o success. Any help or  \nadvice would really be appreciated.\n\nMany thanks,\nJoe Retzer",
+      "body_snippet": "I'm putting together an R tutorial and wanted to give a few, in class,  \npractice problems to the students. I'd like to have some very basic  \nones (since they will be done in class) on things like:\n\n",
+      "thread_id": "thread-dc6fb1da9e31",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-c2857a74c16f",
+      "message_id": "<9410b37b0905071937o7cec6febw628f75446f413c03@mail.gmail.com>",
+      "from_name": "Richard Graham",
+      "from_email_hash": "923996662858e617d8ccbd12c8967d63056d77c466dc1b261afcc2cf40e9b55e",
+      "date": "2009-05-07T22:37:30-04:00",
+      "subject": "[R-sig-teaching] Simple practice problems for R tutorial",
+      "subject_clean": "Simple practice problems for R tutorial",
+      "in_reply_to": "<AE48B961-35D1-4F47-B77D-EF20103B51DF@gmail.com>",
+      "references": [
+        "<49B15D49.8030107@umn.edu>",
+        "<20090309210908.GG14522@laplace.reed.edu>",
+        "<D86C9EFF6AA3734193923FFA1EE4308B07D7DC65@nc-mail2.northland.edu>",
+        "<40e66e0b0903301412i275524d1g4df1e9925f2b3915@mail.gmail.com>",
+        "<f8e6ff050903301529u20c2e480n4bce9d83c429a1ab@mail.gmail.com>",
+        "<40e66e0b0903301602h7268dd02y82e1e7c454e9170b@mail.gmail.com>",
+        "<f8e6ff050903301754x34fa26earb7fd9f5d2506add7@mail.gmail.com>",
+        "<40e66e0b0903310641x7a1b29afo2cd31825191641b2@mail.gmail.com>",
+        "<f8e6ff050903310724j623763bdt3e3d9933e1954d42@mail.gmail.com>",
+        "<AE48B961-35D1-4F47-B77D-EF20103B51DF@gmail.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090507/e9f70d74/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090507/e9f70d74/attachment.pl>",
+      "thread_id": "thread-dc6fb1da9e31",
+      "thread_depth": 1,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-668ac7483a46",
+      "message_id": "<f8e6ff050905072023t6fdb85b1k2811e0b9efaa55fc@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2009-05-07T22:23:44-05:00",
+      "subject": "[R-sig-teaching] Simple practice problems for R tutorial",
+      "subject_clean": "Simple practice problems for R tutorial",
+      "in_reply_to": "<AE48B961-35D1-4F47-B77D-EF20103B51DF@gmail.com>",
+      "references": [
+        "<49B15D49.8030107@umn.edu>",
+        "<20090309210908.GG14522@laplace.reed.edu>",
+        "<D86C9EFF6AA3734193923FFA1EE4308B07D7DC65@nc-mail2.northland.edu>",
+        "<40e66e0b0903301412i275524d1g4df1e9925f2b3915@mail.gmail.com>",
+        "<f8e6ff050903301529u20c2e480n4bce9d83c429a1ab@mail.gmail.com>",
+        "<40e66e0b0903301602h7268dd02y82e1e7c454e9170b@mail.gmail.com>",
+        "<f8e6ff050903301754x34fa26earb7fd9f5d2506add7@mail.gmail.com>",
+        "<40e66e0b0903310641x7a1b29afo2cd31825191641b2@mail.gmail.com>",
+        "<f8e6ff050903310724j623763bdt3e3d9933e1954d42@mail.gmail.com>",
+        "<AE48B961-35D1-4F47-B77D-EF20103B51DF@gmail.com>"
+      ],
+      "body_plain": "You might want to have a look at the slides from my stat computing and\ngraphics class - http://had.co.nz/stat405.  They are plenty of small\nexercises interleaved throughout the content.\n\nHadley\n\nOn Thu, May 7, 2009 at 7:41 PM, Retzer Joe <retzerjj at gmail.com> wrote:\n> I'm putting together an R tutorial and wanted to give a few, in class,\n> practice problems to the students. I'd like to have some very basic ones\n> (since they will be done in class) on things like:\n>\n> - read a data file\n> - do some simple manipulations / calculations\n> - do some sorting\n> - create a list\n> - load a library and run something from it\n> - draw some easy graphs (and make simple par changes)\n> - simple matrix manipulations\n>\n> etc.\n>\n> I was wondering if anyone had some of these or knew where I might find some\n> (url, text, etc.). I've been looking w/o success. Any help or advice would\n> really be appreciated.\n>\n> Many thanks,\n> Joe Retzer\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \nhttp://had.co.nz/",
+      "body_snippet": "You might want to have a look at the slides from my stat computing and\ngraphics class - http://had.co.nz/stat405.  They are plenty of small\nexercises interleaved throughout the content.\n\nHadley\n\nOn Th",
+      "thread_id": "thread-dc6fb1da9e31",
+      "thread_depth": 1,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-d8521e9a6064",
+      "message_id": "<877i0rrbss.fsf@jonasstein.de>",
+      "from_name": "Jonas Stein",
+      "from_email_hash": "0a6644a809a2f4383b1421fe4dfc123bfeeef567ae971f9ac65a0526e993e49a",
+      "date": "2009-05-08T14:58:43+02:00",
+      "subject": "[R-sig-teaching] R in physics",
+      "subject_clean": "R in physics",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\ni am looking for literature (ebook, howto, websites..) that explains how\nto make best effort out of R in physics.\n\nI found a lot of documentation about R in finance, and biology but the\ncommands one needs in these subjects are very different.\n\nIn physics the focus is on plot, fit, calculation of errbars, writing TeX\nin the plots, using sweave, and so on.\n\nThank you for hints.\n\n-- \nJonas Stein <news at jonasstein.de>",
+      "body_snippet": "Hi,\ni am looking for literature (ebook, howto, websites..) that explains how\nto make best effort out of R in physics.\n\nI found a lot of documentation about R in finance, and biology but the\ncommands o",
+      "thread_id": "thread-d8521e9a6064",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-140eb31057e5",
+      "message_id": "<68b1e2610905080653j63cd2c02j475cb301b3fa882b@mail.gmail.com>",
+      "from_name": "Liviu Andronic",
+      "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
+      "date": "2009-05-08T15:53:08+02:00",
+      "subject": "[R-sig-teaching] R in physics",
+      "subject_clean": "R in physics",
+      "in_reply_to": "<877i0rrbss.fsf@jonasstein.de>",
+      "references": [
+        "<877i0rrbss.fsf@jonasstein.de>"
+      ],
+      "body_plain": "Hello,\n\nOn Fri, May 8, 2009 at 2:58 PM, Jonas Stein <news at jonasstein.de> wrote:\n> i am looking for literature (ebook, howto, websites..) that explains how\n> to make best effort out of R in physics.\n>\nDid you check the CRAN Task Views [1]? There are some (ChemPhys,\nGraphics) that may prove of interest.\nLiviu\n\n[1] http://cran.r-project.org/web/views/index.html",
+      "body_snippet": "Hello,\n\nOn Fri, May 8, 2009 at 2:58 PM, Jonas Stein <news at jonasstein.de> wrote:\n> i am looking for literature (ebook, howto, websites..) that explains how\n> to make best effort out of R in physics.",
+      "thread_id": "thread-d8521e9a6064",
+      "thread_depth": 1,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-61464efcde3e",
+      "message_id": "<4A086BAF.01BB.00A6.1@usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2009-05-11T18:17:20-04:00",
+      "subject": "[R-sig-teaching] Comparing points on the same regression line",
+      "subject_clean": "Comparing points on the same regression line",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090511/36d4f9a1/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090511/36d4f9a1/attachment.pl>",
+      "thread_id": "thread-61464efcde3e",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-84efdaf387be",
+      "message_id": "<4A101355.8020508@ulb.ac.be>",
+      "from_name": "mboutsen",
+      "from_email_hash": "5e9d5daff9e5b6beeb2a5e32a204eaab396ef28931b9f5dd2321f3594ee6d801",
+      "date": "2009-05-17T15:38:29+02:00",
+      "subject": "[R-sig-teaching] discrepancies between R and stata",
+      "subject_clean": "discrepancies between R and stata",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi\n\n\nI am trying R and more particulary the cox model\nWith the same data base, I get a hazard ratio (5.82) that is not the \nsame obtained with stata\n\nAttached the file leukemia.dta\n\nHere are the codes\n\nfor R\nlibrary(foreign)\nleukemia<-read.dta(\"leukemia.dta\")\nlibrary(survival)\nres <- coxph(Surv(TIME, STATUS)~TREAT, data=leukemia)\nsummary(res)\n\n\nfor stata\nuse \"leukemia.dta\",clear\nstset TIME, failure(STATUS==1)\nstcox TREAT\n\nSPSS and EPIinfo give the same HR than Stata\n\nI tried with an other database without any problem\n\nWhat is the problem???\n\nI saw a few posts with discrepancies but with no explanations\n\nThanks in advance\n\nMichel Boutsen\nBrussel's University\nDepartment of Biostatistics",
+      "body_snippet": "Hi\n\n\nI am trying R and more particulary the cox model\nWith the same data base, I get a hazard ratio (5.82) that is not the \nsame obtained with stata\n\nAttached the file leukemia.dta\n\nHere are the codes",
+      "thread_id": "thread-84efdaf387be",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-9df94153f03b",
+      "message_id": "<a473abdb0905212233l687a3861w26cfc5f428f191b1@mail.gmail.com>",
+      "from_name": "prasun kumar",
+      "from_email_hash": "d4f754369fbdd57e7ee8afa2f24fcdee4e6fb6e7e82dd078bc816ecdcf4545c0",
+      "date": "2009-05-21T22:33:22-07:00",
+      "subject": "[R-sig-teaching] regarding PCA",
+      "subject_clean": "regarding PCA",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090521/ab2a5d01/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090521/ab2a5d01/attachment.pl>",
+      "thread_id": "thread-9df94153f03b",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-2373612ce1a6",
+      "message_id": "<f55e7cf50905220638t17f5930cqd462fe8f211d95ef@mail.gmail.com>",
+      "from_name": "Ista Zahn",
+      "from_email_hash": "098a31f0cc45d6b90198bf3b75e03deed7c570292be352a10b98aeee4bf7012e",
+      "date": "2009-05-22T09:38:03-04:00",
+      "subject": "[R-sig-teaching] regarding PCA",
+      "subject_clean": "regarding PCA",
+      "in_reply_to": "<a473abdb0905212233l687a3861w26cfc5f428f191b1@mail.gmail.com>",
+      "references": [
+        "<a473abdb0905212233l687a3861w26cfc5f428f191b1@mail.gmail.com>"
+      ],
+      "body_plain": "Hi Prasun,\nI wrote a short guide for my students that you can download from my\nwebsite at http://www.realpsychresearch.org/sites/default/files/PCwithR.pdf\n\nIt's a very rudimentary introduction, but it should get you started.\n\nAll the best,\nIsta\n\nOn Fri, May 22, 2009 at 1:33 AM, prasun kumar <prasun30 at gmail.com> wrote:\n> Dear all\n>\n> I am prasun kumar from SASTRA university ?studying in final year\n> bioinformatcis.\n> I am new to R and want to do the PCA for my data. Idont know how to start.\n>\n> Can some one help me please in this.If any one is having any tutorial please\n> send me via mail my id is prasun30 at gmail.com\n> waitting for positive reply\n> yours truly\n> prasun\n> PRASUN (ASHOKA)\n>\n> ? ? ? ?[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_snippet": "Hi Prasun,\nI wrote a short guide for my students that you can download from my\nwebsite at http://www.realpsychresearch.org/sites/default/files/PCwithR.pdf\n\nIt's a very rudimentary introduction, but it",
+      "thread_id": "thread-9df94153f03b",
+      "thread_depth": 1,
+      "month": "2009-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-00abdfb31692",
+      "subject": "Help wanted with R",
+      "message_count": 2,
+      "participants": [
+        "AbouEl-Makarim Aboueissa",
+        "jim holtman"
+      ],
+      "started": "2009-05-06T17:25:42-04:00",
+      "last_reply": "2009-05-06T21:20:12-04:00",
+      "root_message_id": "msg-00abdfb31692"
+    },
+    {
+      "id": "thread-dc6fb1da9e31",
+      "subject": "Simple practice problems for R tutorial",
+      "message_count": 3,
+      "participants": [
+        "Retzer Joe",
+        "Richard Graham",
+        "hadley wickham"
+      ],
+      "started": "2009-05-07T19:41:32-05:00",
+      "last_reply": "2009-05-07T22:23:44-05:00",
+      "root_message_id": "msg-dc6fb1da9e31"
+    },
+    {
+      "id": "thread-d8521e9a6064",
+      "subject": "R in physics",
+      "message_count": 2,
+      "participants": [
+        "Jonas Stein",
+        "Liviu Andronic"
+      ],
+      "started": "2009-05-08T14:58:43+02:00",
+      "last_reply": "2009-05-08T15:53:08+02:00",
+      "root_message_id": "msg-d8521e9a6064"
+    },
+    {
+      "id": "thread-61464efcde3e",
+      "subject": "Comparing points on the same regression line",
+      "message_count": 1,
+      "participants": [
+        "AbouEl-Makarim Aboueissa"
+      ],
+      "started": "2009-05-11T18:17:20-04:00",
+      "last_reply": "2009-05-11T18:17:20-04:00",
+      "root_message_id": "msg-61464efcde3e"
+    },
+    {
+      "id": "thread-84efdaf387be",
+      "subject": "discrepancies between R and stata",
+      "message_count": 1,
+      "participants": [
+        "mboutsen"
+      ],
+      "started": "2009-05-17T15:38:29+02:00",
+      "last_reply": "2009-05-17T15:38:29+02:00",
+      "root_message_id": "msg-84efdaf387be"
+    },
+    {
+      "id": "thread-9df94153f03b",
+      "subject": "regarding PCA",
+      "message_count": 2,
+      "participants": [
+        "Ista Zahn",
+        "prasun kumar"
+      ],
+      "started": "2009-05-21T22:33:22-07:00",
+      "last_reply": "2009-05-22T09:38:03-04:00",
+      "root_message_id": "msg-9df94153f03b"
+    }
+  ]
+}

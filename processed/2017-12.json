@@ -1,0 +1,207 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2017-12",
+  "messages": [
+    {
+      "id": "msg-61229027d666",
+      "message_id": "<CAE9stmff4jfSQECFW2L4+NSs8V9PX08TLUtqmN5rX=GTy9hQOw@mail.gmail.com>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "57ed60c71c38f5aa7111618f7d433e719fa232f0704722ddb27973d2f4c216c5",
+      "date": "2017-12-06T08:57:00-05:00",
+      "subject": "[R-sig-teaching] Data Science Materials",
+      "subject_clean": "Data Science Materials",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All: good morning\n\n\nI am planning to teach a course in practical data science using R, may be\nin Fall 2018. I am wondering if someone have some materials on data science\nsuch as notes, R codes, and etc.\n\nIt will be highly appreciated if they are willing to share such materials\nwith others.\n\n\nwith many thanks\nabou\n______________________\n\n\n*AbouEl-Makarim Aboueissa, PhD*\n\n*Professor of Statistics*\n\n*Department of Mathematics and Statistics*\n*University of Southern Maine*\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All: good morning\n\n\nI am planning to teach a course in practical data science using R, may be\nin Fall 2018. I am wondering if someone have some materials on data science\nsuch as notes, R codes, a",
+      "thread_id": "thread-61229027d666",
+      "thread_depth": 0,
+      "month": "2017-12"
+    },
+    {
+      "id": "msg-2ed415c1d6be",
+      "message_id": "<CAHtLaM92U+MGgH6R-eVwZXdpEhYoMb13Pvq4uLMeHw-WUP35dw@mail.gmail.com>",
+      "from_name": "Sander",
+      "from_email_hash": "996aeb7e730335223e65c8b3fd324eecc35df22e9b832cc70d926d5307233b54",
+      "date": "2017-12-06T15:33:21+01:00",
+      "subject": "[R-sig-teaching] Data Science Materials",
+      "subject_clean": "Data Science Materials",
+      "in_reply_to": "<CAE9stmff4jfSQECFW2L4+NSs8V9PX08TLUtqmN5rX=GTy9hQOw@mail.gmail.com>",
+      "references": [
+        "<CAE9stmff4jfSQECFW2L4+NSs8V9PX08TLUtqmN5rX=GTy9hQOw@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Abou,\n\nDo you have a list of topics you'd like to discuss?\n\nKind regards,\nSander\n\nOn Wed, Dec 6, 2017 at 2:57 PM, AbouEl-Makarim Aboueissa <\nabouelmakarim1962 at gmail.com> wrote:\n\n> Dear All: good morning\n>\n>\n> I am planning to teach a course in practical data science using R, may be\n> in Fall 2018. I am wondering if someone have some materials on data science\n> such as notes, R codes, and etc.\n>\n> It will be highly appreciated if they are willing to share such materials\n> with others.\n>\n>\n> with many thanks\n> abou\n> ______________________\n>\n>\n> *AbouEl-Makarim Aboueissa, PhD*\n>\n> *Professor of Statistics*\n>\n> *Department of Mathematics and Statistics*\n> *University of Southern Maine*\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear Abou,\n\nDo you have a list of topics you'd like to discuss?\n\nKind regards,\nSander\n\nOn Wed, Dec 6, 2017 at 2:57 PM, AbouEl-Makarim Aboueissa <\nabouelmakarim1962 at gmail.com> wrote:\n\n> Dear All: go",
+      "thread_id": "thread-61229027d666",
+      "thread_depth": 1,
+      "month": "2017-12"
+    },
+    {
+      "id": "msg-b734f7c22099",
+      "message_id": "<CABre-Aq_ivG0Tewd-GZmKEOkyJKyiz4NssLa7S+1N8b89p3mYg@mail.gmail.com>",
+      "from_name": "Justin Leinaweaver",
+      "from_email_hash": "756597e06dc9de421b35a8f9ae316363755f70de84a375f8036df64d65d210b2",
+      "date": "2017-12-06T08:36:34-06:00",
+      "subject": "[R-sig-teaching] Data Science Materials",
+      "subject_clean": "Data Science Materials",
+      "in_reply_to": "<CAHtLaM92U+MGgH6R-eVwZXdpEhYoMb13Pvq4uLMeHw-WUP35dw@mail.gmail.com>",
+      "references": [
+        "<CAE9stmff4jfSQECFW2L4+NSs8V9PX08TLUtqmN5rX=GTy9hQOw@mail.gmail.com>",
+        "<CAHtLaM92U+MGgH6R-eVwZXdpEhYoMb13Pvq4uLMeHw-WUP35dw@mail.gmail.com>"
+      ],
+      "body_plain": "You may also find the similar discussions on the R Studio community forum\nhelpful.\n\nhttps://community.rstudio.com/tags/teaching\n\nJustin\n\n\n\nOn Dec 6, 2017 8:33 AM, \"Sander\" <sander1981 at gmail.com> wrote:\n\n> Dear Abou,\n>\n> Do you have a list of topics you'd like to discuss?\n>\n> Kind regards,\n> Sander\n>\n> On Wed, Dec 6, 2017 at 2:57 PM, AbouEl-Makarim Aboueissa <\n> abouelmakarim1962 at gmail.com> wrote:\n>\n> > Dear All: good morning\n> >\n> >\n> > I am planning to teach a course in practical data science using R, may be\n> > in Fall 2018. I am wondering if someone have some materials on data\n> science\n> > such as notes, R codes, and etc.\n> >\n> > It will be highly appreciated if they are willing to share such materials\n> > with others.\n> >\n> >\n> > with many thanks\n> > abou\n> > ______________________\n> >\n> >\n> > *AbouEl-Makarim Aboueissa, PhD*\n> >\n> > *Professor of Statistics*\n> >\n> > *Department of Mathematics and Statistics*\n> > *University of Southern Maine*\n> >\n> >         [[alternative HTML version deleted]]\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "You may also find the similar discussions on the R Studio community forum\nhelpful.\n\nhttps://community.rstudio.com/tags/teaching\n\nJustin\n\n\n\nOn Dec 6, 2017 8:33 AM, \"Sander\" <sander1981 at gmail.com> wr",
+      "thread_id": "thread-61229027d666",
+      "thread_depth": 2,
+      "month": "2017-12"
+    },
+    {
+      "id": "msg-b611f25023bc",
+      "message_id": "<CAO1zAVbt0-wt3w4EhsbHXgE3UaLpGha4v-itKGBUxQr8BbB+xw@mail.gmail.com>",
+      "from_name": "Joris Meys",
+      "from_email_hash": "2ae053aae1b18d0dc4c7426e097ece939c7ea0f1b1106347ba0f5de841edd357",
+      "date": "2017-12-06T15:53:14+01:00",
+      "subject": "[R-sig-teaching] Data Science Materials",
+      "subject_clean": "Data Science Materials",
+      "in_reply_to": "<CABre-Aq_ivG0Tewd-GZmKEOkyJKyiz4NssLa7S+1N8b89p3mYg@mail.gmail.com>",
+      "references": [
+        "<CAE9stmff4jfSQECFW2L4+NSs8V9PX08TLUtqmN5rX=GTy9hQOw@mail.gmail.com>",
+        "<CAHtLaM92U+MGgH6R-eVwZXdpEhYoMb13Pvq4uLMeHw-WUP35dw@mail.gmail.com>",
+        "<CABre-Aq_ivG0Tewd-GZmKEOkyJKyiz4NssLa7S+1N8b89p3mYg@mail.gmail.com>"
+      ],
+      "body_plain": "For the practical side, you have the book of Hadley Wickham : R for Data\nScience. You can read this online here : http://r4ds.had.co.nz/\n\nThis however doesn't cover the theoretical aspects, so much depends on what\nyou want to teach. Also keep in mind that you might want to consider first\nwhether you want to use R just for data preparation and exploration, or\nwhether you want to teach programming in R. Both require a different\napproach. The book of Hadley Wickham is especially suited for the former. I\ncan recommend the book Andrie and I wrote for the programming aspect. It's\ncalled \"R for Dummies\". But you can find that information also in different\nonline sources for free.\n\nCheers\nJoris\n\nOn Wed, Dec 6, 2017 at 3:36 PM, Justin Leinaweaver <jleinaweaver at gmail.com>\nwrote:\n\n> You may also find the similar discussions on the R Studio community forum\n> helpful.\n>\n> https://community.rstudio.com/tags/teaching\n>\n> Justin\n>\n>\n>\n> On Dec 6, 2017 8:33 AM, \"Sander\" <sander1981 at gmail.com> wrote:\n>\n> > Dear Abou,\n> >\n> > Do you have a list of topics you'd like to discuss?\n> >\n> > Kind regards,\n> > Sander\n> >\n> > On Wed, Dec 6, 2017 at 2:57 PM, AbouEl-Makarim Aboueissa <\n> > abouelmakarim1962 at gmail.com> wrote:\n> >\n> > > Dear All: good morning\n> > >\n> > >\n> > > I am planning to teach a course in practical data science using R, may\n> be\n> > > in Fall 2018. I am wondering if someone have some materials on data\n> > science\n> > > such as notes, R codes, and etc.\n> > >\n> > > It will be highly appreciated if they are willing to share such\n> materials\n> > > with others.\n> > >\n> > >\n> > > with many thanks\n> > > abou\n> > > ______________________\n> > >\n> > >\n> > > *AbouEl-Makarim Aboueissa, PhD*\n> > >\n> > > *Professor of Statistics*\n> > >\n> > > *Department of Mathematics and Statistics*\n> > > *University of Southern Maine*\n> > >\n> > >         [[alternative HTML version deleted]]\n> > >\n> > > _______________________________________________\n> > > R-sig-teaching at r-project.org mailing list\n> > > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> > >\n> >\n> >         [[alternative HTML version deleted]]\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \n-----------\n\nBiowiskundedagen 2017-2018\nhttp://www.biowiskundedagen.ugent.be/\n\n-----------\n\nJoris Meys\nStatistical consultant\n\nGhent University\nFaculty of Bioscience Engineering\nDepartment of Mathematical Modelling, Statistics and Bio-Informatics\n\ntel :  +32 (0)9 264 61 79\nJoris.Meys at Ugent.be\n-------------------------------\nDisclaimer : http://helpdesk.ugent.be/e-maildisclaimer.php\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "For the practical side, you have the book of Hadley Wickham : R for Data\nScience. You can read this online here : http://r4ds.had.co.nz/\n\nThis however doesn't cover the theoretical aspects, so much de",
+      "thread_id": "thread-61229027d666",
+      "thread_depth": 3,
+      "month": "2017-12"
+    },
+    {
+      "id": "msg-13f27c6eba26",
+      "message_id": "<CAE9stmcFzi-5uA0hX0fPcdHa4CV8y12tKAAX-Ti1F8NtgPqOJA@mail.gmail.com>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "57ed60c71c38f5aa7111618f7d433e719fa232f0704722ddb27973d2f4c216c5",
+      "date": "2017-12-06T10:55:23-05:00",
+      "subject": "[R-sig-teaching] Data Science Materials",
+      "subject_clean": "Data Science Materials",
+      "in_reply_to": "<CAHtLaM92U+MGgH6R-eVwZXdpEhYoMb13Pvq4uLMeHw-WUP35dw@mail.gmail.com>",
+      "references": [
+        "<CAE9stmff4jfSQECFW2L4+NSs8V9PX08TLUtqmN5rX=GTy9hQOw@mail.gmail.com>",
+        "<CAHtLaM92U+MGgH6R-eVwZXdpEhYoMb13Pvq4uLMeHw-WUP35dw@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Sander:\n\n\nThis course will be a mixed of introduction to data science and introduction\nto statistical machine learning.\n\n\n\n*Topics to be covered (tentative)*\n\n\n-Data preparation\n\n-Exploratory data analysis and visualization\n\n-Cluster and classification (Supervised and unsupervised learning algorithms\n)\n\n-Principal component\n\n-Factor analysis\n\n-Logistic regression\n\n-Decision trees\n\n-Association rules\n\n-Model assessment\n\n-Classification\n\n-Bootstrap aggregation\n\n-Shrinkage regression\n\n\n\nwith many thanks\nabou\n\n______________________\n\n\n*AbouEl-Makarim Aboueissa, PhD*\n\n*Professor of Statistics*\n\n*Department of Mathematics and Statistics*\n*University of Southern Maine*\n\n\nOn Wed, Dec 6, 2017 at 9:33 AM, Sander <sander1981 at gmail.com> wrote:\n\n> Dear Abou,\n>\n> Do you have a list of topics you'd like to discuss?\n>\n> Kind regards,\n> Sander\n>\n> On Wed, Dec 6, 2017 at 2:57 PM, AbouEl-Makarim Aboueissa <\n> abouelmakarim1962 at gmail.com> wrote:\n>\n>> Dear All: good morning\n>>\n>>\n>> I am planning to teach a course in practical data science using R, may be\n>> in Fall 2018. I am wondering if someone have some materials on data\n>> science\n>> such as notes, R codes, and etc.\n>>\n>> It will be highly appreciated if they are willing to share such materials\n>> with others.\n>>\n>>\n>> with many thanks\n>> abou\n>> ______________________\n>>\n>>\n>> *AbouEl-Makarim Aboueissa, PhD*\n>>\n>> *Professor of Statistics*\n>>\n>> *Department of Mathematics and Statistics*\n>> *University of Southern Maine*\n>>\n>>         [[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear Sander:\n\n\nThis course will be a mixed of introduction to data science and introduction\nto statistical machine learning.\n\n\n\n*Topics to be covered (tentative)*\n\n\n-Data preparation\n\n-Exploratory dat",
+      "thread_id": "thread-61229027d666",
+      "thread_depth": 2,
+      "month": "2017-12"
+    },
+    {
+      "id": "msg-26eb61a05a98",
+      "message_id": "<20171206185837.GA6778@lilly.csoft.net>",
+      "from_name": "User Hayden",
+      "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
+      "date": "2017-12-06T13:58:37-05:00",
+      "subject": "[R-sig-teaching] Data Science Materials]",
+      "subject_clean": "Data Science Materials]",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Joris is much too modest.  His book is well worth buying.\n\n\n----- Forwarded message from Joris Meys <jorismeys at gmail.com> -----\n\nDate: Wed, 6 Dec 2017 15:53:14 +0100\nFrom: Joris Meys <jorismeys at gmail.com>\nTo: R-sig-teaching <r-sig-teaching at r-project.org>\nSubject: Re: [R-sig-teaching] Data Science Materials\n\nFor the practical side, you have the book of Hadley Wickham : R for Data\nScience. You can read this online here : http://r4ds.had.co.nz/\n\nThis however doesn't cover the theoretical aspects, so much depends on what\nyou want to teach. Also keep in mind that you might want to consider first\nwhether you want to use R just for data preparation and exploration, or\nwhether you want to teach programming in R. Both require a different\napproach. The book of Hadley Wickham is especially suited for the former. I\ncan recommend the book Andrie and I wrote for the programming aspect. It's\ncalled \"R for Dummies\". But you can find that information also in different\nonline sources for free.\n\nCheers\nJoris\n\nOn Wed, Dec 6, 2017 at 3:36 PM, Justin Leinaweaver <jleinaweaver at gmail.com>\nwrote:\n\n> You may also find the similar discussions on the R Studio community forum\n> helpful.\n>\n> https://community.rstudio.com/tags/teaching\n>\n> Justin\n>\n>\n>\n> On Dec 6, 2017 8:33 AM, \"Sander\" <sander1981 at gmail.com> wrote:\n>\n> > Dear Abou,\n> >\n> > Do you have a list of topics you'd like to discuss?\n> >\n> > Kind regards,\n> > Sander\n> >\n> > On Wed, Dec 6, 2017 at 2:57 PM, AbouEl-Makarim Aboueissa <\n> > abouelmakarim1962 at gmail.com> wrote:\n> >\n> > > Dear All: good morning\n> > >\n> > >\n> > > I am planning to teach a course in practical data science using R, may\n> be\n> > > in Fall 2018. I am wondering if someone have some materials on data\n> > science\n> > > such as notes, R codes, and etc.\n> > >\n> > > It will be highly appreciated if they are willing to share such\n> materials\n> > > with others.\n> > >\n> > >\n> > > with many thanks\n> > > abou\n> > > ______________________\n> > >\n> > >\n> > > *AbouEl-Makarim Aboueissa, PhD*\n> > >\n> > > *Professor of Statistics*\n> > >\n> > > *Department of Mathematics and Statistics*\n> > > *University of Southern Maine*\n> > >\n> > >         [[alternative HTML version deleted]]\n> > >\n> > > _______________________________________________\n> > > R-sig-teaching at r-project.org mailing list\n> > > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> > >\n> >\n> >         [[alternative HTML version deleted]]\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \n-----------\n\nBiowiskundedagen 2017-2018\nhttp://www.biowiskundedagen.ugent.be/\n\n-----------\n\nJoris Meys\nStatistical consultant\n\nGhent University\nFaculty of Bioscience Engineering\nDepartment of Mathematical Modelling, Statistics and Bio-Informatics\n\ntel :  +32 (0)9 264 61 79\nJoris.Meys at Ugent.be\n-------------------------------\nDisclaimer : http://helpdesk.ugent.be/e-maildisclaimer.php\n\n\t[[alternative HTML version deleted]]\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n----- End forwarded message -----\n\n-- \n\n      _\n     | |          Robert W. Hayden\n     | |          5 Howard Street, Apartment 206\n    /  |          Wilton, New Hampshire 03086  USA\n   |   |          \n   |   |          email: bob@ the site below\n  /    |          website: http://statland.org\n |   x /          \n ''''''",
+      "body_snippet": "Joris is much too modest.  His book is well worth buying.\n\n\n----- Forwarded message from Joris Meys <jorismeys at gmail.com> -----\n\nDate: Wed, 6 Dec 2017 15:53:14 +0100\nFrom: Joris Meys <jorismeys at ",
+      "thread_id": "thread-26eb61a05a98",
+      "thread_depth": 0,
+      "month": "2017-12"
+    },
+    {
+      "id": "msg-50a7eb36b910",
+      "message_id": "<CABkCotQbrSOXPA51=VbXJ7fAaiTOaFkmeb2V2gQqKg-PvK5yNg@mail.gmail.com>",
+      "from_name": "Manuel Spínola",
+      "from_email_hash": "c67b4a8f4e027cf75cc3544d4e04791324bee3c4417f2f5edf4561a1da2f995b",
+      "date": "2017-12-09T09:59:53-06:00",
+      "subject": "[R-sig-teaching] learnr o similar package to make questions",
+      "subject_clean": "learnr o similar package to make questions",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear list members,\n\nI would like to use learnr o a similar package to make questions but\nwithout to set the correct answer.  Apparently, in learnr you need to set a\ncorrect answer, but the downside is that the user can see the right answer\nto the question.\n\nIs there any alternative to this problem?\n\nManuel\n\n-- \n*Manuel Sp?nola, Ph.D.*\nInstituto Internacional en Conservaci?n y Manejo de Vida Silvestre\nUniversidad Nacional\nApartado 1350-3000\nHeredia\nCOSTA RICA\nmspinola at una.cr <mspinola at una.ac.cr>\nmspinola10 at gmail.com\nTel?fono: (506) 8706 - 4662\nPersonal website: Lobito de r?o <https://sites.google.com/site/lobitoderio/>\nInstitutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear list members,\n\nI would like to use learnr o a similar package to make questions but\nwithout to set the correct answer.  Apparently, in learnr you need to set a\ncorrect answer, but the downside is",
+      "thread_id": "thread-50a7eb36b910",
+      "thread_depth": 0,
+      "month": "2017-12"
+    },
+    {
+      "id": "msg-5d2fb9c5c7b1",
+      "message_id": "<7a0cc765-4851-9496-ab83-4c9ebfd68055@carleton.edu>",
+      "from_name": "Laura Chihara",
+      "from_email_hash": "bf38fe4d1a78c3a1e5a1c7942e55291ae947a968d4544d52590d5c796db45253",
+      "date": "2017-12-12T09:30:12-06:00",
+      "subject": "[R-sig-teaching] Data Science Materials",
+      "subject_clean": "Data Science Materials",
+      "in_reply_to": "<CAE9stmff4jfSQECFW2L4+NSs8V9PX08TLUtqmN5rX=GTy9hQOw@mail.gmail.com>",
+      "references": [
+        "<CAE9stmff4jfSQECFW2L4+NSs8V9PX08TLUtqmN5rX=GTy9hQOw@mail.gmail.com>"
+      ],
+      "body_plain": "There are some R Tutorials in Data Science that were developed by Adam \nLoy (Carleton), Shonda Kuiper (Grinnell) and me (Laura Chihara, Carleton \nCollege) for an ACM grant.\n\nhttp://web.grinnell.edu/individuals/kuipers/stat2labs/RTutorials.html\n\n-Laura\n\nOn 12/6/2017 7:57 AM, AbouEl-Makarim Aboueissa wrote:\n> Dear All: good morning\n>\n>\n> I am planning to teach a course in practical data science using R, may be\n> in Fall 2018. I am wondering if someone have some materials on data science\n> such as notes, R codes, and etc.\n>\n> It will be highly appreciated if they are willing to share such materials\n> with others.\n>\n>\n> with many thanks\n> abou\n> ______________________\n>\n>\n> *AbouEl-Makarim Aboueissa, PhD*\n>\n> *Professor of Statistics*\n>\n> *Department of Mathematics and Statistics*\n> *University of Southern Maine*\n>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n**************************************\nLaura Chihara\nProfessor of Mathematics and Statistics\nDepartment of Mathematics and Statistics\nCarleton College\nNorthfield MN 55057\n507-222-4065",
+      "body_snippet": "There are some R Tutorials in Data Science that were developed by Adam \nLoy (Carleton), Shonda Kuiper (Grinnell) and me (Laura Chihara, Carleton \nCollege) for an ACM grant.\n\nhttp://web.grinnell.edu/in",
+      "thread_id": "thread-61229027d666",
+      "thread_depth": 1,
+      "month": "2017-12"
+    },
+    {
+      "id": "msg-280c2a10a084",
+      "message_id": "<CAE9stmc_yQh+zjhGPP-1HML2g83-EXzDO2jUuAqyz+VJ2arMSQ@mail.gmail.com>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "57ed60c71c38f5aa7111618f7d433e719fa232f0704722ddb27973d2f4c216c5",
+      "date": "2017-12-12T10:42:12-05:00",
+      "subject": "[R-sig-teaching] Data Science Materials",
+      "subject_clean": "Data Science Materials",
+      "in_reply_to": "<7a0cc765-4851-9496-ab83-4c9ebfd68055@carleton.edu>",
+      "references": [
+        "<CAE9stmff4jfSQECFW2L4+NSs8V9PX08TLUtqmN5rX=GTy9hQOw@mail.gmail.com>",
+        "<7a0cc765-4851-9496-ab83-4c9ebfd68055@carleton.edu>"
+      ],
+      "body_plain": "Dear Laura:\n\nThank you very much. It will help a lot.\n\nwith thanks\nabou\n\n______________________\n\n\n*AbouEl-Makarim Aboueissa, PhD*\n\n*Professor of Statistics*\n\n*Department of Mathematics and Statistics*\n*University of Southern Maine*\n\n\nOn Tue, Dec 12, 2017 at 10:30 AM, Laura Chihara <lchihara at carleton.edu>\nwrote:\n\n> There are some R Tutorials in Data Science that were developed by Adam Loy\n> (Carleton), Shonda Kuiper (Grinnell) and me (Laura Chihara, Carleton\n> College) for an ACM grant.\n>\n> http://web.grinnell.edu/individuals/kuipers/stat2labs/RTutorials.html\n>\n> -Laura\n>\n> On 12/6/2017 7:57 AM, AbouEl-Makarim Aboueissa wrote:\n>\n>> Dear All: good morning\n>>\n>>\n>> I am planning to teach a course in practical data science using R, may be\n>> in Fall 2018. I am wondering if someone have some materials on data\n>> science\n>> such as notes, R codes, and etc.\n>>\n>> It will be highly appreciated if they are willing to share such materials\n>> with others.\n>>\n>>\n>> with many thanks\n>> abou\n>> ______________________\n>>\n>>\n>> *AbouEl-Makarim Aboueissa, PhD*\n>>\n>> *Professor of Statistics*\n>>\n>> *Department of Mathematics and Statistics*\n>> *University of Southern Maine*\n>>\n>>         [[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>\n> **************************************\n> Laura Chihara\n> Professor of Mathematics and Statistics\n> Department of Mathematics and Statistics\n> Carleton College\n> Northfield MN 55057\n> 507-222-4065\n>\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear Laura:\n\nThank you very much. It will help a lot.\n\nwith thanks\nabou\n\n______________________\n\n\n*AbouEl-Makarim Aboueissa, PhD*\n\n*Professor of Statistics*\n\n*Department of Mathematics and Statistics*",
+      "thread_id": "thread-61229027d666",
+      "thread_depth": 2,
+      "month": "2017-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-61229027d666",
+      "subject": "Data Science Materials",
+      "message_count": 7,
+      "participants": [
+        "AbouEl-Makarim Aboueissa",
+        "Joris Meys",
+        "Justin Leinaweaver",
+        "Laura Chihara",
+        "Sander"
+      ],
+      "started": "2017-12-06T08:57:00-05:00",
+      "last_reply": "2017-12-12T10:42:12-05:00",
+      "root_message_id": "msg-61229027d666"
+    },
+    {
+      "id": "thread-26eb61a05a98",
+      "subject": "Data Science Materials]",
+      "message_count": 1,
+      "participants": [
+        "User Hayden"
+      ],
+      "started": "2017-12-06T13:58:37-05:00",
+      "last_reply": "2017-12-06T13:58:37-05:00",
+      "root_message_id": "msg-26eb61a05a98"
+    },
+    {
+      "id": "thread-50a7eb36b910",
+      "subject": "learnr o similar package to make questions",
+      "message_count": 1,
+      "participants": [
+        "Manuel Spínola"
+      ],
+      "started": "2017-12-09T09:59:53-06:00",
+      "last_reply": "2017-12-09T09:59:53-06:00",
+      "root_message_id": "msg-50a7eb36b910"
+    }
+  ]
+}

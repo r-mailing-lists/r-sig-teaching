@@ -1,0 +1,121 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2010-07",
+  "messages": [
+    {
+      "id": "msg-f6d421e4a9f6",
+      "message_id": "<105397.40095.qm@web30602.mail.mud.yahoo.com>",
+      "from_name": "jose romero",
+      "from_email_hash": "a239d2abfd6000b3143932058ce49c6bcae353eae79bc898cb147e87d639754c",
+      "date": "2010-07-13T06:21:50-07:00",
+      "subject": "[R-sig-teaching] a statistic-teaching question",
+      "subject_clean": "a statistic-teaching question",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100713/0217d57a/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100713/0217d57a/attachment.pl>",
+      "thread_id": "thread-f6d421e4a9f6",
+      "thread_depth": 0,
+      "month": "2010-07"
+    },
+    {
+      "id": "msg-dd81cb5d0cc5",
+      "message_id": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC633A25898D@LP-EXMBVS10.CO.IHC.COM>",
+      "from_name": "Greg Snow",
+      "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
+      "date": "2010-07-13T12:52:49-06:00",
+      "subject": "[R-sig-teaching] a statistic-teaching question",
+      "subject_clean": "a statistic-teaching question",
+      "in_reply_to": "<105397.40095.qm@web30602.mail.mud.yahoo.com>",
+      "references": [
+        "<105397.40095.qm@web30602.mail.mud.yahoo.com>"
+      ],
+      "body_plain": "Well the correct answer from a frequentist perspective is that the probability is either 0 or 1, but there is not enough information to tell which one (actually for question 2 it is possible that the answer is both 0 and 1 (but not anything in between)).  So any student who expresses the idea of \"I don't know\" coherently should get full credit.  If we interpret mean or average to be sample rather than population, then the answer is still 0 or 1, but they can compute it.  Whether students who give the p-value for the t test should get full, partial, or no credit depends on what you (or other teachers) have stressed.  If you have stressed that p-values are definitely not probabilities on the population parameters, then the p-value is not the answer and should not get credit.  If the book and lecture were sufficiently vague on the point then they could get some credit.\n\nEither way both questions are clearly poorly worded (from a Bayesian perspective as well).\n\n-- \nGregory (Greg) L. Snow Ph.D.\nStatistical Data Center\nIntermountain Healthcare\ngreg.snow at imail.org\n801.408.8111\n\n\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-\n> bounces at r-project.org] On Behalf Of jose romero\n> Sent: Tuesday, July 13, 2010 7:22 AM\n> To: r-sig-teaching at r-project.org\n> Subject: [R-sig-teaching] a statistic-teaching question\n> \n> Dear R-teaching list:\n> \n> I would like to put forward for your consideration an issue which is\n> not R related, but statistics-teaching related.? Although i know full\n> well that this list is intended for discussion of the use of R in\n> teaching statistics, I also know that most (if not all) of you out\n> there are highly qualified statistics teachers, and as such, I'd like\n> to know your opinion on this issue:\n> \n> As a statistics instructor in a open university (distance education),\n> part of my job functions consist in grading exams written at the\n> central level in my institution and presented by students nationwide.\n> Recently, i had to grade an exam of which the first two questions ran\n> like this (again, i did not write this exam):\n> \n> 1) The following is a sample of the duration (in minutes) of time\n> intervals between queries to a data base:\n> \n> ??? 91??? 86??? 71??? 79??? 51??? 51??? 67??? 60??? 79??? 85\n> ??? 68??? 86??? 53??? 45??? 86??? 71??? 82??? 88??? 72??? 67\n> ??? 51??? 51??? 75??? 81??? 76??? 80??? 75??? 76??? 82??? 49\n> ??? 66??? 83??? 84??? 82??? 84??? 76??? 53??? 75??? 70??? 55\n> \n> What is the probability that the mean time between queries is more than\n> 72.5 minutes?\n> \n> 2) For a certain region of the country, the rainfall measurements (in\n> mm) during the last 15 years are the following:\n> \n> ??? 580??? 575??? 400??? 750??? 428??? 636??? 825??? 360\n> ??? 850??? 590??? 875??? 735??? 920??? 950??? 550\n> \n> What is the probability that the average rainfall during the last 15\n> years is less than 625 mm?\n> \n> \n> Considering that these are exam questions for an introductory\n> statistical inference course (non bayesian), what are your objections,\n> as a teacher, to the way these questions are posed?? If you had to\n> grade exams with such questions, and it is not in your power to cancel\n> this exam and re-schedule for another one, how would you grade your\n> pupils?\n> \n> Once again, please excuse me for posting these non-R related and very\n> absurd questions for your consideration.? However, i'd really like to\n> know the experts' opinion on this.\n> \n> Thanks in advance,\n> \n> jos? romero\n> \n> \n> \n> \t[[alternative HTML version deleted]]",
+      "body_snippet": "Well the correct answer from a frequentist perspective is that the probability is either 0 or 1, but there is not enough information to tell which one (actually for question 2 it is possible that the ",
+      "thread_id": "thread-f6d421e4a9f6",
+      "thread_depth": 1,
+      "month": "2010-07"
+    },
+    {
+      "id": "msg-f71eb502dd71",
+      "message_id": "<A4582342-052E-44E4-966C-0056E4701A58@stat.ucla.edu>",
+      "from_name": "ian fellows",
+      "from_email_hash": "aa2c780fbe5343d29316529dbad2b61e2a8735d64e323f572a06de636ac36465",
+      "date": "2010-07-13T12:59:35-07:00",
+      "subject": "[R-sig-teaching] a statistic-teaching question",
+      "subject_clean": "a statistic-teaching question",
+      "in_reply_to": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC633A25898D@LP-EXMBVS10.CO.IHC.COM>",
+      "references": [
+        "<105397.40095.qm@web30602.mail.mud.yahoo.com>",
+        "<B37C0A15B8FB3C468B5BC7EBC7DA14CC633A25898D@LP-EXMBVS10.CO.IHC.COM>"
+      ],
+      "body_plain": "I would go further and hypothesize that the exam writer (and  \ninstructor?) does not understand the interpretation of a p-value.  \nBoth questions are misleading and impossible to answer without  \nrejecting the premise of the question itself. I would simply drop  \nthem and use only the valid questions to determine a grade. The  \ndanger is that the students have been taught this incorrect (but  \ncommon) interpretation throughout the course, and there may be  \nnothing that you can do to rectify that.\n\nIan\n\n\nOn Jul 13, 2010, at 11:52 AM, Greg Snow wrote:\n\n> Well the correct answer from a frequentist perspective is that the  \n> probability is either 0 or 1, but there is not enough information  \n> to tell which one (actually for question 2 it is possible that the  \n> answer is both 0 and 1 (but not anything in between)).  So any  \n> student who expresses the idea of \"I don't know\" coherently should  \n> get full credit.  If we interpret mean or average to be sample  \n> rather than population, then the answer is still 0 or 1, but they  \n> can compute it.  Whether students who give the p-value for the t  \n> test should get full, partial, or no credit depends on what you (or  \n> other teachers) have stressed.  If you have stressed that p-values  \n> are definitely not probabilities on the population parameters, then  \n> the p-value is not the answer and should not get credit.  If the  \n> book and lecture were sufficiently vague on the point then they  \n> could get some credit.\n>\n> Either way both questions are clearly poorly worded (from a  \n> Bayesian perspective as well).\n>\n> -- \n> Gregory (Greg) L. Snow Ph.D.\n> Statistical Data Center\n> Intermountain Healthcare\n> greg.snow at imail.org\n> 801.408.8111\n>\n>\n>> -----Original Message-----\n>> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-\n>> bounces at r-project.org] On Behalf Of jose romero\n>> Sent: Tuesday, July 13, 2010 7:22 AM\n>> To: r-sig-teaching at r-project.org\n>> Subject: [R-sig-teaching] a statistic-teaching question\n>>\n>> Dear R-teaching list:\n>>\n>> I would like to put forward for your consideration an issue which is\n>> not R related, but statistics-teaching related.  Although i know full\n>> well that this list is intended for discussion of the use of R in\n>> teaching statistics, I also know that most (if not all) of you out\n>> there are highly qualified statistics teachers, and as such, I'd like\n>> to know your opinion on this issue:\n>>\n>> As a statistics instructor in a open university (distance education),\n>> part of my job functions consist in grading exams written at the\n>> central level in my institution and presented by students nationwide.\n>> Recently, i had to grade an exam of which the first two questions ran\n>> like this (again, i did not write this exam):\n>>\n>> 1) The following is a sample of the duration (in minutes) of time\n>> intervals between queries to a data base:\n>>\n>>     91    86    71    79    51    51    67    60    79    85\n>>     68    86    53    45    86    71    82    88    72    67\n>>     51    51    75    81    76    80    75    76    82    49\n>>     66    83    84    82    84    76    53    75    70    55\n>>\n>> What is the probability that the mean time between queries is more  \n>> than\n>> 72.5 minutes?\n>>\n>> 2) For a certain region of the country, the rainfall measurements (in\n>> mm) during the last 15 years are the following:\n>>\n>>     580    575    400    750    428    636    825    360\n>>     850    590    875    735    920    950    550\n>>\n>> What is the probability that the average rainfall during the last 15\n>> years is less than 625 mm?\n>>\n>>\n>> Considering that these are exam questions for an introductory\n>> statistical inference course (non bayesian), what are your  \n>> objections,\n>> as a teacher, to the way these questions are posed?  If you had to\n>> grade exams with such questions, and it is not in your power to  \n>> cancel\n>> this exam and re-schedule for another one, how would you grade your\n>> pupils?\n>>\n>> Once again, please excuse me for posting these non-R related and very\n>> absurd questions for your consideration.  However, i'd really like to\n>> know the experts' opinion on this.\n>>\n>> Thanks in advance,\n>>\n>> jos? romero\n>>\n>>\n>>\n>> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_snippet": "I would go further and hypothesize that the exam writer (and  \ninstructor?) does not understand the interpretation of a p-value.  \nBoth questions are misleading and impossible to answer without  \nreje",
+      "thread_id": "thread-f6d421e4a9f6",
+      "thread_depth": 2,
+      "month": "2010-07"
+    },
+    {
+      "id": "msg-1755d1e57f19",
+      "message_id": "<20100713210129.GF12798@reed.edu>",
+      "from_name": "Albyn Jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2010-07-13T14:01:29-07:00",
+      "subject": "[R-sig-teaching] a statistic-teaching question",
+      "subject_clean": "a statistic-teaching question",
+      "in_reply_to": "<105397.40095.qm@web30602.mail.mud.yahoo.com>",
+      "references": [
+        "<105397.40095.qm@web30602.mail.mud.yahoo.com>"
+      ],
+      "body_plain": "I hypothesize that the person who wrote question (1) expects the\nstudent to compute the sample mean (71.55) and se (2.06), assume that\nthe sample mean is normally distributed with that mean and sd, and\ncompute Pr(X >72.5|mu=71.5,sigma=2.06), ie about .32.  Since frequentists\ndon't have probability distributions for parameters, that would be nonsense,\nor as some already stated, the answer is 0 or 1, and we don't know which.\nThe question clearly does not assume a prior, so a Bayesian interpretation\nwould presumably be out of order.\n\nquestion (2) exhibits the same confusion.\n\nalbyn\n\n\nOn Tue, Jul 13, 2010 at 06:21:50AM -0700, jose romero wrote:\n> Dear R-teaching list:\n> \n> I would like to put forward for your consideration an issue which is not R related, but statistics-teaching related.? Although i know full well that this list is intended for discussion of the use of R in teaching statistics, I also know that most (if not all) of you out there are highly qualified statistics teachers, and as such, I'd like to know your opinion on this issue:\n> \n> As a statistics instructor in a open university (distance education), part of my job functions consist in grading exams written at the central level in my institution and presented by students nationwide.? Recently, i had to grade an exam of which the first two questions ran like this (again, i did not write this exam):\n> \n> 1) The following is a sample of the duration (in minutes) of time intervals between queries to a data base:\n> \n> ??? 91??? 86??? 71??? 79??? 51??? 51??? 67??? 60??? 79??? 85\n> ??? 68??? 86??? 53??? 45??? 86??? 71??? 82??? 88??? 72??? 67\n> ??? 51??? 51??? 75??? 81??? 76??? 80??? 75??? 76??? 82??? 49\n> ??? 66??? 83??? 84??? 82??? 84??? 76??? 53??? 75??? 70??? 55\n> \n> What is the probability that the mean time between queries is more than 72.5 minutes?\n> \n> 2) For a certain region of the country, the rainfall measurements (in mm) during the last 15 years are the following:\n> \n> ??? 580??? 575??? 400??? 750??? 428??? 636??? 825??? 360\n> ??? 850??? 590??? 875??? 735??? 920??? 950??? 550\n> \n> What is the probability that the average rainfall during the last 15 years is less than 625 mm?\n> \n> \n> Considering that these are exam questions for an introductory statistical inference course (non bayesian), what are your objections, as a teacher, to the way these questions are posed?? If you had to grade exams with such questions, and it is not in your power to cancel this exam and re-schedule for another one, how would you grade your pupils?? \n> \n> Once again, please excuse me for posting these non-R related and very absurd questions for your consideration.? However, i'd really like to know the experts' opinion on this.\n> \n> Thanks in advance,\n> \n> jos? romero \n> \n> \n> \n> \t[[alternative HTML version deleted]]\n> \n\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\n-- \nAlbyn Jones\nReed College\njones at reed.edu",
+      "body_snippet": "I hypothesize that the person who wrote question (1) expects the\nstudent to compute the sample mean (71.55) and se (2.06), assume that\nthe sample mean is normally distributed with that mean and sd, an",
+      "thread_id": "thread-f6d421e4a9f6",
+      "thread_depth": 1,
+      "month": "2010-07"
+    },
+    {
+      "id": "msg-97552b198aee",
+      "message_id": "<473501.11124.qm@web30602.mail.mud.yahoo.com>",
+      "from_name": "jose romero",
+      "from_email_hash": "a239d2abfd6000b3143932058ce49c6bcae353eae79bc898cb147e87d639754c",
+      "date": "2010-07-16T08:50:02-07:00",
+      "subject": "[R-sig-teaching] a statistic-teaching question",
+      "subject_clean": "a statistic-teaching question",
+      "in_reply_to": "<AANLkTilsc2rtgxfhg8KDUvd6WWsgwvuFDrt6Y1iLJpYR@mail.gmail.com>",
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100716/060d0f9a/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100716/060d0f9a/attachment.pl>",
+      "thread_id": "thread-97552b198aee",
+      "thread_depth": 0,
+      "month": "2010-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-f6d421e4a9f6",
+      "subject": "a statistic-teaching question",
+      "message_count": 4,
+      "participants": [
+        "Albyn Jones",
+        "Greg Snow",
+        "ian fellows",
+        "jose romero"
+      ],
+      "started": "2010-07-13T06:21:50-07:00",
+      "last_reply": "2010-07-13T14:01:29-07:00",
+      "root_message_id": "msg-f6d421e4a9f6"
+    },
+    {
+      "id": "thread-97552b198aee",
+      "subject": "a statistic-teaching question",
+      "message_count": 1,
+      "participants": [
+        "jose romero"
+      ],
+      "started": "2010-07-16T08:50:02-07:00",
+      "last_reply": "2010-07-16T08:50:02-07:00",
+      "root_message_id": "msg-97552b198aee"
+    }
+  ]
+}

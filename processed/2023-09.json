@@ -1,0 +1,36 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2023-09",
+  "messages": [
+    {
+      "id": "msg-a53999f32b8a",
+      "message_id": "<SN6PR03MB35520CEEF32B550531E2026B88FCA@SN6PR03MB3552.namprd03.prod.outlook.com>",
+      "from_name": "Girouard, Lauren",
+      "from_email_hash": "d0143e9cb720e3533a433707b0f402df2982b38a9d3206dc78797f12c08699a9",
+      "date": "2023-09-25T20:45:33Z",
+      "subject": "[R-sig-teaching] Upcoming FREE Virtual Workshop: An Introduction to Multiple Regression and Multilevel Modeling in R",
+      "subject_clean": "Upcoming FREE Virtual Workshop: An Introduction to Multiple Regression and Multilevel Modeling in R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\n\n\nThe Louisville Chapter of R-Ladies would like to invite you to a free virtual workshop hosted on Zoom titled ?An Introduction to Multiple Regression and Multilevel Modeling in R?! This panel will take place on Monday 2 October 2023 from 9:00 ? 11:00 AM ET and will be led by Claire Cusack, MS, and Lauren Girouard-Hallam, MA, MS, University of Louisville Clinical and Experimental Psychology doctoral candidates. The workshop will be a great chance to review concepts related to OLS regression in R and receive an introduction to multilevel modeling concepts in R. Multilevel modeling will make up the bulk of the two-hour workshop.\n\n\nWe request that you already have R and R Studio and the provided workshop materials (to be sent 24 hours in advance) downloaded prior to the workshop. We also recommend that you have some experience with linear regression or related concepts in R. Prior multilevel modeling experience is not expected!\n\nWhen: October 2nd, 2023 at 9:00 AM ET\nHow to Sign Up: https://forms.gle/LLM8FZ6aCmJ3h8ue8<https://forms.gle/LLM8FZ6aCmJ3h8ue8>\n[https://lh6.googleusercontent.com/EdM3DP_J7vQEvlXRPKQv8KrRM_WTLSWmdJMhuEzzkCTg7onTiK0BxAnmVM1-MElgIo8r8djiINI=w1200-h630-p]<https://forms.gle/LLM8FZ6aCmJ3h8ue8>\nContact Information: R Ladies Regression WS<https://forms.gle/LLM8FZ6aCmJ3h8ue8>\nPlease provide an email to be sent the Zoom link for R Ladies- Louisville's workshop \"Regression and Multilevel Modeling in R\" to be held on Monday October 2nd at 9:00 AM ET. The materials for the workshop will be sent 24 hours before the workshop. A recording will be available 24 hours after the workshop. DON'T FORGET TO DOUBLE CHECK YOUR EMAIL ADDRESS\nforms.gle\n\nIf you cannot attend but would like to receive a recording and folder with related resources, please still sign up using your email at the link above! Please reach out with any questions.\n\n\n\n\nBest,\n\nLauren Girouard-Hallam & Ann Holmes\n\n\nlauren.girouard at louisville.edu\nann.holmes at louisville.edu\n\n\n\nLauren N. Girouard-Hallam, M.A., M.S.\n\nshe, her, hers \\ What is this?<https://www.glsen.org/article/pronouns-resource-educators>\n\nExperimental Psychology Doctoral Candidate\n\nKnowledge in Development Research Lab\n\nAPA Society for Teaching Psychology GTA Steering Committee\n\nDepartment of Psychological and Brain Sciences\n\nUniversity of Louisville\n\nTwitter: @LaurenGirouard1\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\n\n\n\nThe Louisville Chapter of R-Ladies would like to invite you to a free virtual workshop hosted on Zoom titled ?An Introduction to Multiple Regression and Multilevel Modeling in R?! This pa",
+      "thread_id": "thread-a53999f32b8a",
+      "thread_depth": 0,
+      "month": "2023-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-a53999f32b8a",
+      "subject": "Upcoming FREE Virtual Workshop: An Introduction to Multiple Regression and Multilevel Modeling in R",
+      "message_count": 1,
+      "participants": [
+        "Girouard, Lauren"
+      ],
+      "started": "2023-09-25T20:45:33+00:00",
+      "last_reply": "2023-09-25T20:45:33+00:00",
+      "root_message_id": "msg-a53999f32b8a"
+    }
+  ]
+}

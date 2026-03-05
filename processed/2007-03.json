@@ -1,0 +1,36 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2007-03",
+  "messages": [
+    {
+      "id": "msg-e44d342a5ebf",
+      "message_id": "<4260.82.123.187.151.1174683813.squirrel@keo.limsi.fr>",
+      "from_name": "sloiseau at limsi.fr",
+      "from_email_hash": "3c3f3197df21193c63bebac058810ddd5b98576b1cb9dc719d4bf60a8a120aed",
+      "date": "2007-03-23T22:03:33+01:00",
+      "subject": "[R-sig-teaching] Graphical of vector, matrice, list, etc.",
+      "subject_clean": "Graphical of vector, matrice, list, etc.",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nTeaching the data structure of R, I often use graphical representation of\nstructure such as vector or matrice, with the index and the names along\nthe dimension, etc., in order to show graphically selection such as:\n\n    matrice[c(1, 2), c(\"col1\", \"col2\")]\n\nIn order to beautify my graphical representation, I'm wondering if someone\nas developped a function in order to draw a structure according to the\nstructure received as input.\n\nBest,\nSylvain Loiseau",
+      "body_snippet": "Hi,\n\nTeaching the data structure of R, I often use graphical representation of\nstructure such as vector or matrice, with the index and the names along\nthe dimension, etc., in order to show graphically",
+      "thread_id": "thread-e44d342a5ebf",
+      "thread_depth": 0,
+      "month": "2007-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-e44d342a5ebf",
+      "subject": "Graphical of vector, matrice, list, etc.",
+      "message_count": 1,
+      "participants": [
+        "sloiseau at limsi.fr"
+      ],
+      "started": "2007-03-23T22:03:33+01:00",
+      "last_reply": "2007-03-23T22:03:33+01:00",
+      "root_message_id": "msg-e44d342a5ebf"
+    }
+  ]
+}

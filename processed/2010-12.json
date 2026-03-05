@@ -1,0 +1,213 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2010-12",
+  "messages": [
+    {
+      "id": "msg-d562510cbd11",
+      "message_id": "<AD65F17C-37EC-412B-82B7-AD8CED3CEC52@me.com>",
+      "from_name": "david monterde",
+      "from_email_hash": "565d148f4db44410d5ccd479b1716d59d4c142f8f4e572e587770e78f70686ba",
+      "date": "2010-12-06T12:27:31+01:00",
+      "subject": "[R-sig-teaching] workspace management",
+      "subject_clean": "workspace management",
+      "in_reply_to": "<AANLkTimDDAKHyc-O0A7NfMQ9G_zvY9uLgbDqmzkARmh=@mail.gmail.com>",
+      "references": [
+        "<4CCF31DE.7010306@carleton.edu>",
+        "<4CCF64E2.6050107@waikato.ac.nz>",
+        "<AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>",
+        "<AANLkTing0GXPDMkQTStmTAaV=VP8Q5O6nvZxfa=Y3zx5@mail.gmail.com>",
+        "<4CD08B29.6060101@waikato.ac.nz>",
+        "<AANLkTimDDAKHyc-O0A7NfMQ9G_zvY9uLgbDqmzkARmh=@mail.gmail.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101206/546d0b45/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101206/546d0b45/attachment.pl>",
+      "thread_id": "thread-d562510cbd11",
+      "thread_depth": 0,
+      "month": "2010-12"
+    },
+    {
+      "id": "msg-3fc533ebb87d",
+      "message_id": "<AANLkTik7uO3+=_8Zs-FCYmYQcLwoGAs1-E32eyERZ1-t@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2010-12-06T06:38:16-05:00",
+      "subject": "[R-sig-teaching] workspace management",
+      "subject_clean": "workspace management",
+      "in_reply_to": "<AD65F17C-37EC-412B-82B7-AD8CED3CEC52@me.com>",
+      "references": [
+        "<4CCF31DE.7010306@carleton.edu>",
+        "<4CCF64E2.6050107@waikato.ac.nz>",
+        "<AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>",
+        "<AANLkTing0GXPDMkQTStmTAaV=VP8Q5O6nvZxfa=Y3zx5@mail.gmail.com>",
+        "<4CD08B29.6060101@waikato.ac.nz>",
+        "<AANLkTimDDAKHyc-O0A7NfMQ9G_zvY9uLgbDqmzkARmh=@mail.gmail.com>",
+        "<AD65F17C-37EC-412B-82B7-AD8CED3CEC52@me.com>"
+      ],
+      "body_plain": "On Mon, Dec 6, 2010 at 6:27 AM, david monterde <dmonterde at me.com> wrote:\n> I use the select.list when I have welldefined the paths and the fix function when not\n> I start idetifyind the unit, and then the rest of the path:\n>\n> ? unit ? <- select.list(paste(letters,\":/\",sep=\"\"))\n> ? paths <- c(\"Projects/Data/\", \"MyPenDrive/Projects/Data\")\n> ? path ?<- select.list(paths)\n> ? path ?<- paste(unit,path,sep=\"\")\n>\n> So I can work with the same program in any computer using my pendrive, or in my computer using my own path.\n>\n> If there is not a fixed path:\n>\n> ? path <- \"c:/new path/\"\n> ? fix(path)\n>\n> You can use the select-list function to choose between different platforms, (Linux, Mac, Windows):\n>\n> ? OS ? <- select.list(\"Lunix,\"Mac\",\"Windows\")\n> ? if (OS==\"Linux\") then { # use the select.list function with paths in Linux format (//users//) }\n> ? if (OS==\"Windows\") then { # use the select.list function with paths in Linux format (c:/) }\n>\n\nYou can detect windows vs. unix using .Platform$OS eliminating a\nquestion to the user.  See ?.Platform\n\n-- \nStatistics & Software Consulting\nGKX Group, GKX Associates Inc.\ntel: 1-877-GKX-GROUP\nemail: ggrothendieck at gmail.com",
+      "body_snippet": "On Mon, Dec 6, 2010 at 6:27 AM, david monterde <dmonterde at me.com> wrote:\n> I use the select.list when I have welldefined the paths and the fix function when not\n> I start idetifyind the unit, and t",
+      "thread_id": "thread-d562510cbd11",
+      "thread_depth": 1,
+      "month": "2010-12"
+    },
+    {
+      "id": "msg-55406f52a4ee",
+      "message_id": "<323228.98484.qm@web59516.mail.ac4.yahoo.com>",
+      "from_name": "Ali Zanaty",
+      "from_email_hash": "65acd645f9ed74fc7721f9ea58469b32335ac44f193ffbf59b7c89913407d9ac",
+      "date": "2010-12-11T06:43:03-08:00",
+      "subject": "[R-sig-teaching] adding plus/minus 1 standard devaition into each bar in cluster bar chart",
+      "subject_clean": "adding plus/minus 1 standard devaition into each bar in cluster bar chart",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101211/75436d6e/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101211/75436d6e/attachment.pl>",
+      "thread_id": "thread-55406f52a4ee",
+      "thread_depth": 0,
+      "month": "2010-12"
+    },
+    {
+      "id": "msg-fae0e90614e1",
+      "message_id": "<9064522880125945B98983BBAECBA1CC0101BD8F@exchsrv001.ebs.local>",
+      "from_name": "Adams, Zeno",
+      "from_email_hash": "048089c8b19ceb4b811b8f1dce71539c6059bef3abd322b112c05f02d424e2a0",
+      "date": "2010-12-13T10:20:38+01:00",
+      "subject": "[R-sig-teaching] adding plus/minus 1 standard devaition into eachbar in cluster bar chart",
+      "subject_clean": "adding plus/minus 1 standard devaition into eachbar in cluster bar chart",
+      "in_reply_to": null,
+      "references": [
+        "<323228.98484.qm@web59516.mail.ac4.yahoo.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101213/62d87d9a/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101213/62d87d9a/attachment.pl>",
+      "thread_id": "thread-55406f52a4ee",
+      "thread_depth": 1,
+      "month": "2010-12"
+    },
+    {
+      "id": "msg-c3b1dc4db1e1",
+      "message_id": "<p0624085cc92c2cdf9ff2@[165.124.162.15]>",
+      "from_name": "William Revelle",
+      "from_email_hash": "17775642d38a89586519cdb4da8b9881c3da6cb4b5abf51dc2b37a23be377688",
+      "date": "2010-12-13T14:20:05-06:00",
+      "subject": "[R-sig-teaching] adding plus/minus 1 standard devaition into eachbar in cluster bar chart",
+      "subject_clean": "adding plus/minus 1 standard devaition into eachbar in cluster bar chart",
+      "in_reply_to": "<9064522880125945B98983BBAECBA1CC0101BD8F@exchsrv001.ebs.local>",
+      "references": [
+        "<323228.98484.qm@web59516.mail.ac4.yahoo.com>",
+        "<9064522880125945B98983BBAECBA1CC0101BD8F@exchsrv001.ebs.local>"
+      ],
+      "body_plain": "Another error.bars function is found in the psych package.\n\nFor zanaty's data, a log transform makes more sense:\n\npackage(psych)\nerror.bars.by(my.data$data,my.data$cat2,by.var=TRUE,bars=TRUE,sd=TRUE) \n#original data\nerror.bars.by(log(my.data$data),my.data$cat2,by.var=TRUE,bars=TRUE,sd=TRUE) \n#log transformed data\nerror.bars.by(log(my.data$data),my.data$cat1*(my.data$cat2+3),by.var=TRUE,bars=TRUE,sd=TRUE) \n#to group by cat1 and cat2\n?error.bars.by\n\n\nBill\n\n\n\nAt 10:20 AM +0100 12/13/10, Adams, Zeno wrote:\n>In Michael Crawley's \"The R Book\" (which I can highly recommend for \n>teaching undergraduate statistics) the author proposes a function \n>that adds the standard errors with the line function. The function \n>has three arguments: The means, the standard errors, and the bar \n>labels. For a reproducible dataset such as:\n>\n>dat1 <- data.frame(income = c((2000 + 500*rnorm(10)),(2500 + \n>500*rnorm(10))), gender = rep(c(\"m\",\"f\"),c(10,10)))\n>\n>with\n>\n>ybar <- tapply(dat1$income, dat1$gender, mean)\n>se <- tapply(dat1$income, dat1$gender, sd)/10\n>labels <- as.character(levels(dat1$gender))\n>\n>as the means, se, and labels, respectively\n>\n>the function is:\n>\n>error.bars<-function(yv,z,nn) {\n>xv<-\n>barplot(yv,ylim=c(0,(max(yv)+max(z))),names=nn,ylab=deparse(substitute(yv)\n>))\n>g=(max(xv)-min(xv))/50\n>for (i in 1:length(xv)) {\n>lines(c(xv[i],xv[i]),c(yv[i]+z[i],yv[i]-z[i]))\n>lines(c(xv[i]-g,xv[i]+g),c(yv[i]+z[i], yv[i]+z[i]))\n>lines(c(xv[i]-g,xv[i]+g),c(yv[i]-z[i], yv[i]-z[i]))\n>}}\n>\n>which can be used after plotting the data:\n>\n>barplot(ybar)\n>error.bars(ybar, se, labels)\n>\n>\n>Zeno\n>\n>\n>-----Original Message-----\n>From: r-sig-teaching-bounces at r-project.org on behalf of Ali Zanaty\n>Sent: Sat 12/11/2010 3:43 PM\n>To: r-sig-teaching at r-project.org\n>Subject: [R-sig-teaching] adding plus/minus 1 standard devaition \n>into eachbar in cluster bar chart\n>\n>Dear All R users:\n>\n>I hope that this message finds all of you well.\n>\n>Currently, I am teaching an undergraduate course in statistics.\n>\n>If possible, Could you please help me out how to add plus/minus 1 standard\n>deviation added to each bar into R cluster bar chart.\n>\n>You can use the following artificial data.\n>\n>data cat 1 cat 2\n>23     1      1\n>45     1      1\n>34     1      1\n>5      1      1\n>32     1      1\n>44     1      1\n>3      2      1\n>1      2      1\n>2      2      1\n>3      2      1\n>4      2      1\n>5      1      2\n>6      1      2\n>7      1      2\n>8      1      2\n>544    2      2\n>78     2      2\n>543    2      2\n>34     2      2\n>89     2      2\n>9      1      3\n>43     1      3\n>23     1      3\n>45     1      3\n>7      1      3\n>5      1      3\n>7      1      3\n>6      2      3\n>867    2      3\n>3      2      3\n>4      2      3\n>5      2      3\n>6      2      3\n>7      2      3\n>8      2      3\n>9      2      3\n>\n>I need to create a bar chart for the mean of data column for each category. I\n>know how to create the cluster bar chart. But I need your help with how to add\n>plus/minus 1 standard deviation into each bar.\n>\n>Thank you so much for your helps and for your attention to this matter, and I\n>look forward to hearing from you.\n>\n>\n>Regards,\n>\n>zanaty\n>\n>\n>      \n>\t[[alternative HTML version deleted]]\n>\n>_______________________________________________\n>R-sig-teaching at r-project.org mailing list\n>https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n>\n>EBS European Business School gemeinnuetzige GmbH, Universitaet fuer \n>Wirtschaft und Recht i.Gr. - Amtsgericht Wiesbaden HRB 19951 - \n>Umsatzsteuer-ID DE 113891213 Geschaeftsfuehrung: Prof. Dr. \n>Christopher Jahns,  President; Prof. Dr. Rolf Tilmes, Dean Business \n>School; Sabine Fuchs, CMO; Prof. Dr. Dr. Gerrick Frhr. v. \n>Hoyningen-Huene, Dean Law School; Aufsichtsrat: Dr. Hellmut K. \n>Albrecht, Vorsitzender\n>\t[[alternative HTML version deleted]]\n>\n>_______________________________________________\n>R-sig-teaching at r-project.org mailing list\n>https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Another error.bars function is found in the psych package.\n\nFor zanaty's data, a log transform makes more sense:\n\npackage(psych)\nerror.bars.by(my.data$data,my.data$cat2,by.var=TRUE,bars=TRUE,sd=TRUE) ",
+      "thread_id": "thread-55406f52a4ee",
+      "thread_depth": 2,
+      "month": "2010-12"
+    },
+    {
+      "id": "msg-0388bc035beb",
+      "message_id": "<AANLkTi=6xrTwqt8vZPvwcK6VG3DufxteY59m+xYAf=Dw@mail.gmail.com>",
+      "from_name": "Joshua Wiley",
+      "from_email_hash": "c7f07c588294f110fffa28fa75e197f5a9d40a76afe0853fbdeb1992dab12a4a",
+      "date": "2010-12-13T13:17:15-08:00",
+      "subject": "[R-sig-teaching] adding plus/minus 1 standard devaition into each bar in cluster bar chart",
+      "subject_clean": "adding plus/minus 1 standard devaition into each bar in cluster bar chart",
+      "in_reply_to": "<323228.98484.qm@web59516.mail.ac4.yahoo.com>",
+      "references": [
+        "<323228.98484.qm@web59516.mail.ac4.yahoo.com>"
+      ],
+      "body_plain": "Hi Ali,\n\nHere is another suggestion.  What I really like about using ggplot2 is\nthe graphs are elegant (at least to my eye), and extremely flexible.\nFor instance, using the method I show below, suppose you decided you\nwanted +/- 1 standard error instead of standard deviation, no problem,\njust change the summary function \"myfun\" and you're done.  ggplot2\ntakes care of applying your function to every level of cat2, you do\nnot have to do this yourself with tapply() or by().  What if you\nwanted a point +/- 1 sd instead of using a lot of ink to create bars?\nAll you need to do is ask for geom = c(\"point\", \"errorbar\").  In other\nwords, it becomes very easy to ask for different types of graphical\nobjects (bars, errorbars, points, lines, etc.) and use different\nsummary functions, without a lot of effort or change on your part.\nNow if only someone would do the same for cooking...\n\nCheers,\n\nJosh (code follows)\n\n## Your data in copy-and-pastable format\nzdat <- structure(list(data = c(23L, 45L, 34L, 5L, 32L, 44L, 3L, 1L,\n2L, 3L, 4L, 5L, 6L, 7L, 8L, 544L, 78L, 543L, 34L, 89L, 9L, 43L,\n23L, 45L, 7L, 5L, 7L, 6L, 867L, 3L, 4L, 5L, 6L, 7L, 8L, 9L),\n    cat1 = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L,\n    2L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 1L, 1L, 1L, 1L, 1L,\n    1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L), .Label = c(\"1\",\n    \"2\"), class = \"factor\"), cat2 = structure(c(1L, 1L, 1L, 1L,\n    1L, 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L,\n    2L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L,\n    3L, 3L), .Label = c(\"1\", \"2\", \"3\"), class = \"factor\")), .Names = c(\"data\",\n\"cat1\", \"cat2\"), row.names = c(NA, -36L), class = \"data.frame\")\n\n## summary function, calculates, the mean, mean - sd, and mean + sd\nmyfun <- function(x) {\n  mx <- mean(x, na.rm = TRUE)\n  sx <- sd(x, na.rm = TRUE)\n  out <- data.frame(y = mx, ymin = mx - sx, ymax = mx + sx)\n  return(out)\n}\n\n## ggplot2 package, great for graphing\nlibrary(ggplot2)\n\nqplot(x = cat2, y = data, data = zdat,\n  fill = cat2, geom = c(\"bar\", \"errorbar\"),\n  stat = \"summary\", fun.data = myfun)\n## basic info: what is on x, y, and where is data\n## aesthetics: fill colour, and ask for bars and errorbars\n## tell it to calculate summaries using \"myfun\" defined earlier\n\n\nOn Sat, Dec 11, 2010 at 6:43 AM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:\n> Dear All R users:\n>\n> I hope that this message finds all of you well.\n>\n> Currently, I am teaching an undergraduate course in statistics.\n>\n> If possible, Could you please help me out how to add plus/minus 1 standard\n> deviation added to each bar into R cluster bar chart.\n>\n> You can use the following artificial data.\n>\n> data cat 1 cat 2\n> 23 ? ? 1 ? ? ?1\n> 45 ? ? 1 ? ? ?1\n> 34 ? ? 1 ? ? ?1\n> 5 ? ? ?1 ? ? ?1\n> 32 ? ? 1 ? ? ?1\n> 44 ? ? 1 ? ? ?1\n> 3 ? ? ?2 ? ? ?1\n> 1 ? ? ?2 ? ? ?1\n> 2 ? ? ?2 ? ? ?1\n> 3 ? ? ?2 ? ? ?1\n> 4 ? ? ?2 ? ? ?1\n> 5 ? ? ?1 ? ? ?2\n> 6 ? ? ?1 ? ? ?2\n> 7 ? ? ?1 ? ? ?2\n> 8 ? ? ?1 ? ? ?2\n> 544 ? ?2 ? ? ?2\n> 78 ? ? 2 ? ? ?2\n> 543 ? ?2 ? ? ?2\n> 34 ? ? 2 ? ? ?2\n> 89 ? ? 2 ? ? ?2\n> 9 ? ? ?1 ? ? ?3\n> 43 ? ? 1 ? ? ?3\n> 23 ? ? 1 ? ? ?3\n> 45 ? ? 1 ? ? ?3\n> 7 ? ? ?1 ? ? ?3\n> 5 ? ? ?1 ? ? ?3\n> 7 ? ? ?1 ? ? ?3\n> 6 ? ? ?2 ? ? ?3\n> 867 ? ?2 ? ? ?3\n> 3 ? ? ?2 ? ? ?3\n> 4 ? ? ?2 ? ? ?3\n> 5 ? ? ?2 ? ? ?3\n> 6 ? ? ?2 ? ? ?3\n> 7 ? ? ?2 ? ? ?3\n> 8 ? ? ?2 ? ? ?3\n> 9 ? ? ?2 ? ? ?3\n>\n> I need to create a bar chart for the mean of data column for each category. I\n> know how to create the cluster bar chart. But I need your help with how to add\n> plus/minus 1 standard deviation into each bar.\n>\n> Thank you so much for your helps and for your attention to this matter, and I\n> look forward to hearing from you.\n>\n>\n> Regards,\n>\n> zanaty\n>\n>\n>\n> ? ? ? ?[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \nJoshua Wiley\nPh.D. Student, Health Psychology\nUniversity of California, Los Angeles\nhttp://www.joshuawiley.com/",
+      "body_snippet": "Hi Ali,\n\nHere is another suggestion.  What I really like about using ggplot2 is\nthe graphs are elegant (at least to my eye), and extremely flexible.\nFor instance, using the method I show below, suppos",
+      "thread_id": "thread-55406f52a4ee",
+      "thread_depth": 1,
+      "month": "2010-12"
+    },
+    {
+      "id": "msg-0f76c1fc2676",
+      "message_id": "<AANLkTimzC4=7Uw6+aZXBcvEWYZPETBoswyf=LnHhe=VM@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2010-12-13T17:22:09-06:00",
+      "subject": "[R-sig-teaching] adding plus/minus 1 standard devaition into each bar in cluster bar chart",
+      "subject_clean": "adding plus/minus 1 standard devaition into each bar in cluster bar chart",
+      "in_reply_to": "<323228.98484.qm@web59516.mail.ac4.yahoo.com>",
+      "references": [
+        "<323228.98484.qm@web59516.mail.ac4.yahoo.com>"
+      ],
+      "body_plain": "Before doing that, I'd highly recommend reading\nhttp://biostat.mc.vanderbilt.edu/twiki/pub/Main/TatsukiRcode/Poster3.pdf\n\nHadley\n\nOn Sat, Dec 11, 2010 at 8:43 AM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:\n> Dear All R users:\n>\n> I hope that this message finds all of you well.\n>\n> Currently, I am teaching an undergraduate course in statistics.\n>\n> If possible, Could you please help me out how to add plus/minus 1 standard\n> deviation added to each bar into R cluster bar chart.\n>\n> You can use the following artificial data.\n>\n> data cat 1 cat 2\n> 23 ? ? 1 ? ? ?1\n> 45 ? ? 1 ? ? ?1\n> 34 ? ? 1 ? ? ?1\n> 5 ? ? ?1 ? ? ?1\n> 32 ? ? 1 ? ? ?1\n> 44 ? ? 1 ? ? ?1\n> 3 ? ? ?2 ? ? ?1\n> 1 ? ? ?2 ? ? ?1\n> 2 ? ? ?2 ? ? ?1\n> 3 ? ? ?2 ? ? ?1\n> 4 ? ? ?2 ? ? ?1\n> 5 ? ? ?1 ? ? ?2\n> 6 ? ? ?1 ? ? ?2\n> 7 ? ? ?1 ? ? ?2\n> 8 ? ? ?1 ? ? ?2\n> 544 ? ?2 ? ? ?2\n> 78 ? ? 2 ? ? ?2\n> 543 ? ?2 ? ? ?2\n> 34 ? ? 2 ? ? ?2\n> 89 ? ? 2 ? ? ?2\n> 9 ? ? ?1 ? ? ?3\n> 43 ? ? 1 ? ? ?3\n> 23 ? ? 1 ? ? ?3\n> 45 ? ? 1 ? ? ?3\n> 7 ? ? ?1 ? ? ?3\n> 5 ? ? ?1 ? ? ?3\n> 7 ? ? ?1 ? ? ?3\n> 6 ? ? ?2 ? ? ?3\n> 867 ? ?2 ? ? ?3\n> 3 ? ? ?2 ? ? ?3\n> 4 ? ? ?2 ? ? ?3\n> 5 ? ? ?2 ? ? ?3\n> 6 ? ? ?2 ? ? ?3\n> 7 ? ? ?2 ? ? ?3\n> 8 ? ? ?2 ? ? ?3\n> 9 ? ? ?2 ? ? ?3\n>\n> I need to create a bar chart for the mean of data column for each category. I\n> know how to create the cluster bar chart. But I need your help with how to add\n> plus/minus 1 standard deviation into each bar.\n>\n> Thank you so much for your helps and for your attention to this matter, and I\n> look forward to hearing from you.\n>\n>\n> Regards,\n>\n> zanaty\n>\n>\n>\n> ? ? ? ?[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "Before doing that, I'd highly recommend reading\nhttp://biostat.mc.vanderbilt.edu/twiki/pub/Main/TatsukiRcode/Poster3.pdf\n\nHadley\n\nOn Sat, Dec 11, 2010 at 8:43 AM, Ali Zanaty <zanaty2005 at yahoo.com> ",
+      "thread_id": "thread-55406f52a4ee",
+      "thread_depth": 1,
+      "month": "2010-12"
+    },
+    {
+      "id": "msg-a7d83b858ac9",
+      "message_id": "<AANLkTikfCWPq5ZDPABAXMun7qHGeGJjtjM-KYPKem8vi@mail.gmail.com>",
+      "from_name": "Stuart Wagenius",
+      "from_email_hash": "9e390402f6105330e7db0565b33d7f6d40e396385267e4e2afc6d946a367105f",
+      "date": "2010-12-14T08:43:32-06:00",
+      "subject": "[R-sig-teaching] adding plus/minus 1 standard devaition into each bar in cluster bar chart",
+      "subject_clean": "adding plus/minus 1 standard devaition into each bar in cluster bar chart",
+      "in_reply_to": "<AANLkTimzC4=7Uw6+aZXBcvEWYZPETBoswyf=LnHhe=VM@mail.gmail.com>",
+      "references": [
+        "<323228.98484.qm@web59516.mail.ac4.yahoo.com>",
+        "<AANLkTimzC4=7Uw6+aZXBcvEWYZPETBoswyf=LnHhe=VM@mail.gmail.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101214/181887bf/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101214/181887bf/attachment.pl>",
+      "thread_id": "thread-55406f52a4ee",
+      "thread_depth": 2,
+      "month": "2010-12"
+    },
+    {
+      "id": "msg-83c719abccd7",
+      "message_id": "<09957D09-DECB-49BC-B995-AD023C62D057@stat.ucla.edu>",
+      "from_name": "Ian Fellows",
+      "from_email_hash": "aa2c780fbe5343d29316529dbad2b61e2a8735d64e323f572a06de636ac36465",
+      "date": "2010-12-14T08:37:17-08:00",
+      "subject": "[R-sig-teaching] adding plus/minus 1 standard devaition into each bar in cluster bar chart",
+      "subject_clean": "adding plus/minus 1 standard devaition into each bar in cluster bar chart",
+      "in_reply_to": "<AANLkTikfCWPq5ZDPABAXMun7qHGeGJjtjM-KYPKem8vi@mail.gmail.com>",
+      "references": [
+        "<323228.98484.qm@web59516.mail.ac4.yahoo.com>",
+        "<AANLkTimzC4=7Uw6+aZXBcvEWYZPETBoswyf=LnHhe=VM@mail.gmail.com>",
+        "<AANLkTikfCWPq5ZDPABAXMun7qHGeGJjtjM-KYPKem8vi@mail.gmail.com>"
+      ],
+      "body_plain": "Superior plots can be made pretty easily in ggplot2\nlibrary(ggplot2)\nggplot() +\n\tstat_boxplot(aes(y = mpg,x = factor(gear)),data=mtcars,width = 0.5) +\n\tgeom_point(aes(x = factor(gear),y = mpg),data=mtcars,position = position_jitter(height = 0.0,width = 0.1))\n\nThere is also a convinience function in Deducer that does much the same thing:\n\nlibrary(Deducer)\ndata(mtcars)\noneway.plot(formula=mpg~gear,data=mtcars,alpha=1) #with one variable\noneway.plot(formula=d(mpg,disp,hp,drat)~gear,data=mtcars, alpha=1) #with multiple variables\n\n\n\nOn Dec 14, 2010, at 6:43 AM, Stuart Wagenius wrote:\n\n> Hadley, Thanks for the recommended reading. Is there R code to make\n> recommended plots?\n> \n> Stuart\n> \n> On Mon, Dec 13, 2010 at 5:22 PM, Hadley Wickham <hadley at rice.edu> wrote:\n> \n>> Before doing that, I'd highly recommend reading\n>> http://biostat.mc.vanderbilt.edu/twiki/pub/Main/TatsukiRcode/Poster3.pdf\n>> \n>> Hadley\n>> \n>> On Sat, Dec 11, 2010 at 8:43 AM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:\n>>> Dear All R users:\n>>> \n>>> I hope that this message finds all of you well.\n>>> \n>>> Currently, I am teaching an undergraduate course in statistics.\n>>> \n>>> If possible, Could you please help me out how to add plus/minus 1\n>> standard\n>>> deviation added to each bar into R cluster bar chart.\n>>> \n>>> You can use the following artificial data.\n>>> \n>>> data cat 1 cat 2\n>>> 23     1      1\n>>> 45     1      1\n>>> 34     1      1\n>>> 5      1      1\n>>> 32     1      1\n>>> 44     1      1\n>>> 3      2      1\n>>> 1      2      1\n>>> 2      2      1\n>>> 3      2      1\n>>> 4      2      1\n>>> 5      1      2\n>>> 6      1      2\n>>> 7      1      2\n>>> 8      1      2\n>>> 544    2      2\n>>> 78     2      2\n>>> 543    2      2\n>>> 34     2      2\n>>> 89     2      2\n>>> 9      1      3\n>>> 43     1      3\n>>> 23     1      3\n>>> 45     1      3\n>>> 7      1      3\n>>> 5      1      3\n>>> 7      1      3\n>>> 6      2      3\n>>> 867    2      3\n>>> 3      2      3\n>>> 4      2      3\n>>> 5      2      3\n>>> 6      2      3\n>>> 7      2      3\n>>> 8      2      3\n>>> 9      2      3\n>>> \n>>> I need to create a bar chart for the mean of data column for each\n>> category. I\n>>> know how to create the cluster bar chart. But I need your help with how\n>> to add\n>>> plus/minus 1 standard deviation into each bar.\n>>> \n>>> Thank you so much for your helps and for your attention to this matter,\n>> and I\n>>> look forward to hearing from you.\n>>> \n>>> \n>>> Regards,\n>>> \n>>> zanaty\n>>> \n>>> \n>>> \n>>>       [[alternative HTML version deleted]]\n>>> \n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>> \n>> \n>> \n>> \n>> --\n>> Assistant Professor / Dobelman Family Junior Chair\n>> Department of Statistics / Rice University\n>> http://had.co.nz/\n>> \n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>> \n> \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_snippet": "Superior plots can be made pretty easily in ggplot2\nlibrary(ggplot2)\nggplot() +\n\tstat_boxplot(aes(y = mpg,x = factor(gear)),data=mtcars,width = 0.5) +\n\tgeom_point(aes(x = factor(gear),y = mpg),data=mt",
+      "thread_id": "thread-55406f52a4ee",
+      "thread_depth": 3,
+      "month": "2010-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-d562510cbd11",
+      "subject": "workspace management",
+      "message_count": 2,
+      "participants": [
+        "Gabor Grothendieck",
+        "david monterde"
+      ],
+      "started": "2010-12-06T12:27:31+01:00",
+      "last_reply": "2010-12-06T06:38:16-05:00",
+      "root_message_id": "msg-d562510cbd11"
+    },
+    {
+      "id": "thread-55406f52a4ee",
+      "subject": "adding plus/minus 1 standard devaition into each bar in cluster bar chart",
+      "message_count": 7,
+      "participants": [
+        "Adams, Zeno",
+        "Ali Zanaty",
+        "Hadley Wickham",
+        "Ian Fellows",
+        "Joshua Wiley",
+        "Stuart Wagenius",
+        "William Revelle"
+      ],
+      "started": "2010-12-11T06:43:03-08:00",
+      "last_reply": "2010-12-14T08:37:17-08:00",
+      "root_message_id": "msg-55406f52a4ee"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2015-07",
+  "messages": [
+    {
+      "id": "msg-b3764d1647e9",
+      "message_id": "<CAHDp66DmKXYCx0QTxsvi-VKM6xSGQwcsqygrD8NKC0vbxpk0bQ@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2015-07-12T19:40:16-04:00",
+      "subject": "[R-sig-teaching] Sample from Log-Normal Distribution",
+      "subject_clean": "Sample from Log-Normal Distribution",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\n\nI need someone to clarify the value of the *meanlog* and *stlog* used in\nthe function *rlnorm* when you sample from log-normal distribution.\n\nrlnorm(n, meanlog = 0, sdlog = 1)\n\n\n\n*For example: *y<- rlnorm(25, meanlog = 5, sdlog = 1)\n\n\nIs the value of the meanlog, *5*, the mean of the log-normal distribution.\nSimilarly, is the value of the *sdlog*, *1*, the standard deviation of the\nlog-normal distribution.\n\nor 5 and 1 are the mean and standard deviation of the normal distribution\nof x = log(y) ~N(mean =5, var = 1)\n\nwith many thanks\n\nsteve\n\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\nI need someone to clarify the value of the *meanlog* and *stlog* used in\nthe function *rlnorm* when you sample from log-normal distribution.\n\nrlnorm(n, meanlog = 0, sdlog = 1)\n\n\n\n*For examp",
+      "thread_id": "thread-b3764d1647e9",
+      "thread_depth": 0,
+      "month": "2015-07"
+    },
+    {
+      "id": "msg-549afd7762fb",
+      "message_id": "<D8E8362F-D630-477F-8AAA-62B54E34BED6@gmail.com>",
+      "from_name": "Michael Weylandt",
+      "from_email_hash": "44e8775a589b9ef81880469e200f3cce307c7180b4289ca1696a578afb772b3a",
+      "date": "2015-07-12T23:15:07-04:00",
+      "subject": "[R-sig-teaching] Sample from Log-Normal Distribution",
+      "subject_clean": "Sample from Log-Normal Distribution",
+      "in_reply_to": "<CAHDp66DmKXYCx0QTxsvi-VKM6xSGQwcsqygrD8NKC0vbxpk0bQ@mail.gmail.com>",
+      "references": [
+        "<CAHDp66DmKXYCx0QTxsvi-VKM6xSGQwcsqygrD8NKC0vbxpk0bQ@mail.gmail.com>"
+      ],
+      "body_plain": "You can test this yourself quite easily:\n\nx <- rlnorm(1e6, meanlog=4)\nmean(x)\nmean(log(x))\n\nCheers,\nMichael\n\n> On Jul 12, 2015, at 7:40 PM, Steven Stoline <sstoline at gmail.com> wrote:\n> \n> Dear All:\n> \n> I need someone to clarify the value of the *meanlog* and *stlog* used in\n> the function *rlnorm* when you sample from log-normal distribution.\n> \n> rlnorm(n, meanlog = 0, sdlog = 1)\n> \n> \n> \n> *For example: *y<- rlnorm(25, meanlog = 5, sdlog = 1)\n> \n> \n> Is the value of the meanlog, *5*, the mean of the log-normal distribution.\n> Similarly, is the value of the *sdlog*, *1*, the standard deviation of the\n> log-normal distribution.\n> \n> or 5 and 1 are the mean and standard deviation of the normal distribution\n> of x = log(y) ~N(mean =5, var = 1)\n> \n> with many thanks\n> \n> steve\n> \n> \n> -- \n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com\n> \n>    [[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "You can test this yourself quite easily:\n\nx <- rlnorm(1e6, meanlog=4)\nmean(x)\nmean(log(x))\n\nCheers,\nMichael\n\n> On Jul 12, 2015, at 7:40 PM, Steven Stoline <sstoline at gmail.com> wrote:\n> \n> Dear All:",
+      "thread_id": "thread-b3764d1647e9",
+      "thread_depth": 1,
+      "month": "2015-07"
+    },
+    {
+      "id": "msg-a79ec9349aea",
+      "message_id": "<CAHDp66DKj+Lnzx-dn4fxRePOSbnw48udamiQ+2Mh3YmN-eNAsQ@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2015-07-13T13:11:28-04:00",
+      "subject": "[R-sig-teaching] Sample from Log-Normal Distribution",
+      "subject_clean": "Sample from Log-Normal Distribution",
+      "in_reply_to": "<D8E8362F-D630-477F-8AAA-62B54E34BED6@gmail.com>",
+      "references": [
+        "<CAHDp66DmKXYCx0QTxsvi-VKM6xSGQwcsqygrD8NKC0vbxpk0bQ@mail.gmail.com>",
+        "<D8E8362F-D630-477F-8AAA-62B54E34BED6@gmail.com>"
+      ],
+      "body_plain": "Dear Michael:\n\nThank you very much for your help.\n\nNow it it is clear, meanlog and sdlog in the rlnorm are the mean and\nstandard deviation of the normal distribution.\n\nonce again many thanks\nsteve\n\n\nOn Sun, Jul 12, 2015 at 11:15 PM, Michael Weylandt <\nmichael.weylandt at gmail.com> wrote:\n\n> You can test this yourself quite easily:\n>\n> x <- rlnorm(1e6, meanlog=4)\n> mean(x)\n> mean(log(x))\n>\n> Cheers,\n> Michael\n>\n> > On Jul 12, 2015, at 7:40 PM, Steven Stoline <sstoline at gmail.com> wrote:\n> >\n> > Dear All:\n> >\n> > I need someone to clarify the value of the *meanlog* and *stlog* used in\n> > the function *rlnorm* when you sample from log-normal distribution.\n> >\n> > rlnorm(n, meanlog = 0, sdlog = 1)\n> >\n> >\n> >\n> > *For example: *y<- rlnorm(25, meanlog = 5, sdlog = 1)\n> >\n> >\n> > Is the value of the meanlog, *5*, the mean of the log-normal\n> distribution.\n> > Similarly, is the value of the *sdlog*, *1*, the standard deviation of\n> the\n> > log-normal distribution.\n> >\n> > or 5 and 1 are the mean and standard deviation of the normal distribution\n> > of x = log(y) ~N(mean =5, var = 1)\n> >\n> > with many thanks\n> >\n> > steve\n> >\n> >\n> > --\n> > Steven M. Stoline\n> > 1123 Forest Avenue\n> > Portland, ME 04112\n> > sstoline at gmail.com\n> >\n> >    [[alternative HTML version deleted]]\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear Michael:\n\nThank you very much for your help.\n\nNow it it is clear, meanlog and sdlog in the rlnorm are the mean and\nstandard deviation of the normal distribution.\n\nonce again many thanks\nsteve\n\n\nO",
+      "thread_id": "thread-b3764d1647e9",
+      "thread_depth": 2,
+      "month": "2015-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-b3764d1647e9",
+      "subject": "Sample from Log-Normal Distribution",
+      "message_count": 3,
+      "participants": [
+        "Michael Weylandt",
+        "Steven Stoline"
+      ],
+      "started": "2015-07-12T19:40:16-04:00",
+      "last_reply": "2015-07-13T13:11:28-04:00",
+      "root_message_id": "msg-b3764d1647e9"
+    }
+  ]
+}

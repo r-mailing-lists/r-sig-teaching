@@ -1,0 +1,452 @@
+From kgarrett at ksu.edu  Wed Jan  9 04:59:04 2008
+From: kgarrett at ksu.edu (Karen A. Garrett)
+Date: Tue,  8 Jan 2008 21:59:04 -0600
+Subject: [R-sig-teaching] Open-access teaching modules for using R in
+	ecology/epidemiology
+Message-ID: <1199851144.47844688c03a1@webmail.ksu.edu>
+
+
+A new set of teaching modules for using the R programming environment in
+ecology and epidemiology is available through the open-access on-line
+peer-reviewed journal The Plant Health Instructor (PHI).
+
+K. A. Garrett, P. D. Esker, and A. H. Sparks. 2007. An introduction to
+the R programming environment. The Plant Health Instructor.
+DOI:10.1094/PHI-A-2007-1226-02. Available at
+http://www.apsnet.org/education/AdvancedPlantPath/Topics/RModules/doc0
+
+P. D. Esker, A. H. Sparks, M. Bates, W. Dall'Acqua, E. E. Frank, L.
+Huebel, V. Segovia, and K. A. Garrett. 2007. Ecology and epidemiology
+in R: Modeling dispersal gradients. The Plant Health Instructor.
+DOI:10.1094/PHI-A-2007-1226-03. Available at
+http://www.apsnet.org/education/AdvancedPlantPath/Topics/RModules/doc2
+
+Other modules are currently in the process of being published in PHI,
+with the most recent link for each module available at
+http://www.ksu.edu/pdecology/RModules.html
+
+Disease progress over time
+Spatial analysis
+Disease forecasting
+
+We hope you will find these modules useful!  PHI allows revision of
+publications, so we welcome your feedback for improving the modules.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+K. A. Garrett
+Associate Professor
+Department of Plant Pathology
+Kansas State University
+Manhattan, KS 66506-5502  USA
+http://www.ksu.edu/pdecology
+Phone: 785-532-1370
+Fax: 785-532-5692
+
+
+
+From gkerns at ysu.edu  Thu Jan 10 13:40:46 2008
+From: gkerns at ysu.edu (G. Jay Kerns)
+Date: Thu, 10 Jan 2008 07:40:46 -0500
+Subject: [R-sig-teaching] prob package: elementary probability on finite
+	sample spaces
+Message-ID: <a695148b0801100440o4b4d8166y8c5a0fb03fa52587@mail.gmail.com>
+
+Dear R Community,
+
+I am pleased to announce the beta-release of the prob package.  The
+source code is now on CRAN, and binaries should be generated there
+before long. In the meantime, you can get it with
+
+install.packages("prob", repos = "http://r-forge.r-project.org")
+
+The prob package gives a framework for doing elementary probability on
+finite sample spaces in R.  The primary notion of "probability space"
+has been built around the data frame structure, both for simplicity
+and to maximize compatibility with the R Commander by John Fox.
+
+The package addresses an ample proportion of material in a typical
+undergraduate course in elementary probability, or the probability
+material in an introductory statistics course. For details, see
+vignette("prob").
+
+Since the focus is on sample/probability spaces, the prob package
+could be used as a precursor to the more sophisticated distrxxx-family
+of packages.
+
+Topics:
+
+* construction of sample spaces (in the sense of 'prob' ) of various
+kinds.  Some standard sample spaces are included (toss a coin, roll a
+die, sample from an urn, draw cards, roulette, etc.)
+* counting and the Multiplication Principle,
+* subsets and events including methods for intersect, union, and
+setdiff extending those in the base package,
+* the prob function for finding probability and conditional
+probability of events,
+* simulation and relative frequencies,
+* random variables, marginal distributions,
+* extensions for more general sample spaces,
+* discrete multivariate distributions with finite support,
+* more...
+
+Some discussion and examples can be found at the R-Forge prob project web page:
+
+http://prob.r-forge.r-project.org/
+
+There are many avenues for future development/improvement;  all
+suggestions and comments are welcomed.  I would appreciate hearing
+about your experiences with it in the classroom and elsewhere.
+
+The audience for this package would include teachers and students of
+elementary probability, or simply anyone wanting to dabble with
+probability on a finite sample space.
+
+Regards,
+Jay
+
+
+
+
+***************************************************
+G. Jay Kerns, Ph.D.
+Assistant Professor / Statistics Coordinator
+Department of Mathematics & Statistics
+Youngstown State University
+Youngstown, OH 44555-0002 USA
+Office: 1035 Cushwa Hall
+Phone: (330) 941-3310 Office (voice mail)
+-3302 Department
+-3170 FAX
+E-mail: gkerns at ysu.edu
+http://www.cc.ysu.edu/~gjkerns/
+
+
+
+From kasturibardhan at yahoo.co.in  Sat Jan 26 12:10:07 2008
+From: kasturibardhan at yahoo.co.in (kasturi bardhan)
+Date: Sat, 26 Jan 2008 16:40:07 +0530 (IST)
+Subject: [R-sig-teaching] How to import a minitab data file into R
+Message-ID: <79610.19780.qm@web94404.mail.in2.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080126/c534b15d/attachment.pl>
+
+From cparker at pdx.edu  Sat Jan 26 17:06:23 2008
+From: cparker at pdx.edu (Christian A. Parker)
+Date: Sat, 26 Jan 2008 08:06:23 -0800
+Subject: [R-sig-teaching] How to import a minitab data file into R
+In-Reply-To: <79610.19780.qm@web94404.mail.in2.yahoo.com>
+References: <79610.19780.qm@web94404.mail.in2.yahoo.com>
+Message-ID: <479B5A7F.60904@pdx.edu>
+
+Without seeing all of your code its difficult to diagnose but based on 
+what you sent and the error message I am going to guess that you forgot 
+to load the foreign package. Also it looks like you dont have the file 
+extension in the path, but thats not where your error is from. Your code 
+should look like this (potentially):
+
+library(foreign)
+tbl<-read.mtp(file='central.mtp')
+
+-Chris
+
+kasturi bardhan wrote:
+> Hello everyone,
+> I am a new member of this gorup & have started learning R from a couple of days ago.
+> I am facing a problem in importing a minitab data file to R.
+> .
+> I used the command read.mtp(file="central").But it returned with the error message could not find function "read.mtp"
+> Please help me in this regard mentioning the proper code to be used & with your valuable comments.
+>
+> Thanks in advance
+>
+>
+>       Forgot the famous last words? Access your message archive online at http://in.messenger.yahoo.com/webmessengerpromo.php
+> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+
+
+
+From kasturibardhan at yahoo.co.in  Sat Jan 26 21:18:01 2008
+From: kasturibardhan at yahoo.co.in (kasturi bardhan)
+Date: Sun, 27 Jan 2008 01:48:01 +0530 (IST)
+Subject: [R-sig-teaching] How to import a minitab data file into R
+Message-ID: <326401.32883.qm@web94405.mail.in2.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080127/37cdfb15/attachment.pl>
+
+From amir.sadoddin at gmail.com  Mon Feb 11 09:19:16 2008
+From: amir.sadoddin at gmail.com (Amir Sadoddin)
+Date: Mon, 11 Feb 2008 11:49:16 +0330
+Subject: [R-sig-teaching] help!
+Message-ID: <db544d280802110019p10a53762ofd37d0c945761a@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080211/be3bbdf0/attachment.pl>
+
+From hayden at mv.mv.com  Mon Feb 11 17:18:37 2008
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Mon, 11 Feb 2008 11:18:37 -0500 (EST)
+Subject: [R-sig-teaching]  help!
+Message-ID: <20080211161837.59107.qmail@mv.mv.com>
+
+Forwarded message: From: "Amir Sadoddin" <amir.sadoddin at gmail.com>
+> 
+> Hello, I was wondering how I can have outlier detection for hydrologic data
+> in particular peak flow data in R.
+ 
+
+Dear Dr. Sadoddin,
+
+This list is for people using R in introductory statistics courses so
+your question is a bit off-topic.  You may well get some useful
+response, but you might get even MORE useful response from a more
+technical list.  Here you you will find many people like myself who are
+not expert in R (nor hydrology).  
+
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+
+ http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+	    
+  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)
+  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      
+  email  bob statland.org  (add your own "@" and save me some spam)
+
+
+
+From tony.n.brown at vanderbilt.edu  Tue Feb 12 14:30:08 2008
+From: tony.n.brown at vanderbilt.edu (Tony N. Brown)
+Date: Tue, 12 Feb 2008 07:30:08 -0600
+Subject: [R-sig-teaching] R-sig-teaching Digest, Vol 13, Issue 2
+In-Reply-To: <mailman.5.1202814001.27804.r-sig-teaching@r-project.org>
+References: <mailman.5.1202814001.27804.r-sig-teaching@r-project.org
+ >
+Message-ID: <636F02E33D0C03321E2C53F5@[192.168.0.102]>
+
+Amir,
+
+Although I am unfamiliar with "hydrologic data in particular peak 
+flow", generally outliers can be visualized using ?boxplot(). Also 
+take a look at help(outlier.test, package=car).
+
+Best regards,
+Tony
+
+
+--On Tuesday, February 12, 2008 12:00 PM +0100 
+r-sig-teaching-request at r-project.org wrote:
+
+> Send R-sig-teaching mailing list submissions to
+> 	r-sig-teaching at r-project.org
+>
+> To subscribe or unsubscribe via the World Wide Web, visit
+> 	https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> or, via email, send a message with subject or body 'help' to
+> 	r-sig-teaching-request at r-project.org
+>
+> You can reach the person managing the list at
+> 	r-sig-teaching-owner at r-project.org
+>
+> When replying, please edit your Subject line so it is more
+> specific than "Re: Contents of R-sig-teaching digest..."
+>
+>
+> Today's Topics:
+>
+>    1.  help! (Robert W. Hayden)
+>
+>
+> -----------------------------------------------------------------
+> -----
+>
+> Message: 1
+> Date: Mon, 11 Feb 2008 11:18:37 -0500 (EST)
+> From: "Robert W. Hayden" <hayden at mv.mv.com>
+> Subject: [R-sig-teaching]  help!
+> To: r-sig-teaching at r-project.org (R-sig-teaching)
+> Message-ID: <20080211161837.59107.qmail at mv.mv.com>
+> Content-Type: text/plain; charset=us-ascii
+>
+> Forwarded message: From: "Amir Sadoddin" <amir.sadoddin at gmail.com>
+>>
+>> Hello, I was wondering how I can have outlier detection for
+>> hydrologic data in particular peak flow data in R.
+>
+>
+> Dear Dr. Sadoddin,
+>
+> This list is for people using R in introductory statistics
+> courses so your question is a bit off-topic.  You may well get
+> some useful response, but you might get even MORE useful response
+> from a more technical list.  Here you you will find many people
+> like myself who are not expert in R (nor hydrology).
+>
+>
+> ------->  First-time AP Stats. teacher?  Help is on the way! See
+>
+>  http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/R
+> elief.html 	
+>   Robert W. Hayden in the old library at  212 Main Street (P. O.
+> Box 450)   North Troy, VT 05859  phone (802) 988-2587  web site
+> http://statland.org/         email  bob statland.org  (add your
+> own "@" and save me some spam)
+>
+>
+>
+> ------------------------------
+>
+> _______________________________________________
+> R-sig-teaching mailing list
+> R-sig-teaching at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+> End of R-sig-teaching Digest, Vol 13, Issue 2
+> *********************************************
+
+
+
+--------------------------------------------------
+Tony N. Brown, Ph.D.
+Associate Professor of Sociology
+Faculty Head of Hank Ingram House, The Commons
+Vanderbilt University
+(615) 322-7518
+(615) 322-7505 fax
+tony.n.brown at vanderbilt.edu
+
+
+
+From lhanser at gmail.com  Sun Mar  9 21:10:33 2008
+From: lhanser at gmail.com (Lawrence Hanser)
+Date: Sun, 9 Mar 2008 13:10:33 -0700
+Subject: [R-sig-teaching] student guide developed for installation?
+Message-ID: <f95c22480803091310y15e904e2l446f6d42df4403c3@mail.gmail.com>
+
+Dear Colleagues:
+
+I am going to be teaching a graduate statistics course as part of a
+masters degree program in psychology beginning in April using the
+Agresti and Finlay text, "Statistical Methods for the Social
+Sciences."  I was wondering two things.
+
+1)  Does anyone have a step-by-step R installation guide that was
+prepared as a handout for students that can be shared?
+
+2)  Anyone else using the Agresti and Finlay text?
+
+Thanks,
+
+Larry
+
+
+
+From tony.n.brown at vanderbilt.edu  Mon Mar 10 22:07:05 2008
+From: tony.n.brown at vanderbilt.edu (Tony N. Brown)
+Date: Mon, 10 Mar 2008 16:07:05 -0500
+Subject: [R-sig-teaching] student guide developed for installation?
+In-Reply-To: <mailman.5.1205146801.22205.r-sig-teaching@r-project.org>
+References: <mailman.5.1205146801.22205.r-sig-teaching@r-project.org
+ >
+Message-ID: <6B9725F27A9E9C652EF01FB4@cas-browntn.vanderbilt.edu>
+
+Larry,
+
+There are several step-by-step installation guides posted on the 
+CRAN, under contributed documentation. Most documents there begin 
+by describing how to download and install R.
+
+And yes, I use Agresti and Finlay (1997) "Statistical Methods for 
+the Social Sciences" paired with Verzani's (2005) "Using R for 
+Introductory Statistics". I teach a graduate sequence in statistics 
+for sociology students. By the way, I heard the new Agresti and 
+Finlay edition was coming out soon.
+
+Cheers,
+Tony
+
+--On Monday, March 10, 2008 12:00 PM +0100 
+r-sig-teaching-request at r-project.org wrote:
+
+> Send R-sig-teaching mailing list submissions to
+> 	r-sig-teaching at r-project.org
+>
+> To subscribe or unsubscribe via the World Wide Web, visit
+> 	https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> or, via email, send a message with subject or body 'help' to
+> 	r-sig-teaching-request at r-project.org
+>
+> You can reach the person managing the list at
+> 	r-sig-teaching-owner at r-project.org
+>
+> When replying, please edit your Subject line so it is more
+> specific than "Re: Contents of R-sig-teaching digest..."
+>
+>
+> Today's Topics:
+>
+>    1. student guide developed for installation? (Lawrence Hanser)
+>
+>
+> -----------------------------------------------------------------
+> -----
+>
+> Message: 1
+> Date: Sun, 9 Mar 2008 13:10:33 -0700
+> From: "Lawrence Hanser" <lhanser at gmail.com>
+> Subject: [R-sig-teaching] student guide developed for
+> installation? To: r-sig-teaching at r-project.org
+> Message-ID:
+> 	<f95c22480803091310y15e904e2l446f6d42df4403c3 at mail.gmail.com>
+> Content-Type: text/plain; charset=ISO-8859-1
+>
+> Dear Colleagues:
+>
+> I am going to be teaching a graduate statistics course as part of
+> a masters degree program in psychology beginning in April using
+> the Agresti and Finlay text, "Statistical Methods for the Social
+> Sciences."  I was wondering two things.
+>
+> 1)  Does anyone have a step-by-step R installation guide that was
+> prepared as a handout for students that can be shared?
+>
+> 2)  Anyone else using the Agresti and Finlay text?
+>
+> Thanks,
+>
+> Larry
+>
+>
+>
+> ------------------------------
+>
+> _______________________________________________
+> R-sig-teaching mailing list
+> R-sig-teaching at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+> End of R-sig-teaching Digest, Vol 14, Issue 1
+> *********************************************
+
+
+Tony N. Brown, Ph.D.
+Associate Professor of Sociology
+Faculty Head of Hank Ingram House, The Commons
+Vanderbilt University
+(615) 322-7518
+(615) 322-7505 fax
+tony.n.brown at vanderbilt.edu
+
+
+

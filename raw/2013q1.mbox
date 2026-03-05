@@ -1,0 +1,3246 @@
+From cryan at binghamton.edu  Tue Jan  1 08:09:24 2013
+From: cryan at binghamton.edu (Christopher W. Ryan)
+Date: Tue, 01 Jan 2013 02:09:24 -0500
+Subject: [R-sig-teaching] follow-up on teaching R to high school students
+Message-ID: <50E28BA4.1050901@binghamton.edu>
+
+Some of you may recall that a few months ago I solicited advice and
+opinions on both R-help and R-sig-teaching about an "introduction to R"
+workshop I intended to present to a class of high school students
+enrolled in a 3-year longitudinal science research class.  Well, I did
+it on 8 October, and thought I'd give some follow-up as to how it went,
+in case anyone was interested.
+
+The class consisted of about 20 kids, grades 10-12. Each was at a
+computer with R installed. It wasn't clear that the students would be
+able to install packages, given the school's network setup, so I
+confined my plans to base R. We ran for 5 hours, with about a 40-minute
+break for lunch. Their science teacher was present for the entire time,
+and the school's IT person attended about half of it.  They were both
+very helpful, both in preparation and in execution.
+
+I conducted an (utterly arbitrary and unvalidated) online survey among
+the students a couple weeks in advance, to gauge their familiarity with
+what I called "technical computing," i.e. anything beyond commonplace
+word-processing, spreadsheets, web surfing, and social media. The
+questions were:
+
+1. What operating systems do you know how to work in? Check all that apply.
+   Windows 19
+   Mac OS X 12
+   Linux 2
+   others 0
+
+2. Do you have a favorite text editor?
+   Yes 5
+   No 7
+   I don't know what a text editor is 7
+
+3. Do you use a two-pane file manager?
+   Yes 1
+   No 6
+   I don't know what a two-pane file manager is 12
+
+4. Have you written programs in any computer language?
+   Yes 4
+   No 11
+   I don't know 4
+   (the specific languages cited included Basic, Java, Javascript, Ruby,
+ C++, Python, MS-DOS command prompt batch files.)
+
+I had my "lesson plan" all laid out in an org-mode file, from which I
+typed code into an R console projected on the screen. The students
+followed my steps initially, and then broadened out to some
+experimentation as the day went on. A couple students were quite skilled
+at working ahead, while others struggled a bit, but everyone was
+eventually able to get the desired results.  They were generally very
+engaged, interactive, and enthusiastic. No one left, except for the odd
+music lesson here and there.  Overall, we had a lot of fun.
+
+I tried to go pretty slowly. I prepared much more that we had time to
+cover. I emphasized graphics. I did not get into inferential statistics
+or hypothesis testing at all, despite their eagerness to "do a t-test"
+and such. Maybe that will come at a future session, if we do one.
+
+In general, topics we covered included:
+
+vectorized mathematics (what I called "bulk math")
+generating sequences
+(meant to do logical conditions here, but skipped it inadvertantly)
+drawing random samples
+different kinds of objects (we limited ourselves to scalars, vectors,
+dataframes; character, numeric, and factor)
+levels of measurement: nominal, ordinal, interval/ratio
+exploring objects: str(), head(), tail(), class(), summary()
+using in-built data sets provided with R
+general principles of good data entry and storage, and the virtues of
+plain text. Went over read.table (I meant to do more with reading data
+into R, but ran out of time. I sent simple instructions for the foreign
+package and read.spss() to their teacher after the fact, since up until
+now they had been using SPSS a lot, and several of their data sets were
+in that format.)
+graphs: boxplots, scatterplots, stripcharts, scatterplot matrices, and
+coplots (they liked that last one a lot).  Also some graphical
+parameters: type=, main=, sub=, col=, xlim=, ylim=, and pch=
+
+Comments to teacher over the subsequent couple of days included:
+"This should be taught in high school." "I got to see data for the first
+time in a different way." "I had the most fun when I realized I could
+play around with the program." (Of course, any less-than-positive
+comments, the students (or their teacher) may have kept to themselves!)
+
+--Chris Ryan
+SUNY Upstate Medical University
+Binghamton Clinical Campus
+
+
+From rbaer at atsu.edu  Tue Jan  1 22:12:00 2013
+From: rbaer at atsu.edu (Robert Baer)
+Date: Tue, 01 Jan 2013 15:12:00 -0600
+Subject: [R-sig-teaching] follow-up on teaching R to high school students
+In-Reply-To: <50E28BA4.1050901@binghamton.edu>
+References: <50E28BA4.1050901@binghamton.edu>
+Message-ID: <50E35120.9050605@atsu.edu>
+
+On 1/1/2013 1:09 AM, Christopher W. Ryan wrote:
+>                  -- snip --
+> I conducted an (utterly arbitrary and unvalidated) online survey among
+> the students a couple weeks in advance, to gauge their familiarity with
+> what I called "technical computing," i.e. anything beyond commonplace
+> word-processing, spreadsheets, web surfing, and social media. The
+> questions were:
+>
+> 1. What operating systems do you know how to work in? Check all that apply.
+>     Windows 19
+>     Mac OS X 12
+>     Linux 2
+>     others 0
+>
+> 2. Do you have a favorite text editor?
+>     Yes 5
+>     No 7
+>     I don't know what a text editor is 7
+>
+> 3. Do you use a two-pane file manager?
+>     Yes 1
+>     No 6
+>     I don't know what a two-pane file manager is 12
+>
+> 4. Have you written programs in any computer language?
+>     Yes 4
+>     No 11
+>     I don't know 4
+>     (the specific languages cited included Basic, Java, Javascript, Ruby,
+>   C++, Python, MS-DOS command prompt batch files.)
+Very interesting. You say "science teacher" and not "math teacher".  
+Were these advanced students, and what "science" were they taking that 
+they had been using SPSS?  Were they doing things with their own data?
+
+> In general, topics we covered included:
+>
+> vectorized mathematics (what I called "bulk math")
+> generating sequences
+> (meant to do logical conditions here, but skipped it inadvertantly)
+> drawing random samples
+> different kinds of objects (we limited ourselves to scalars, vectors,
+> dataframes; character, numeric, and factor)
+> levels of measurement: nominal, ordinal, interval/ratio
+> exploring objects: str(), head(), tail(), class(), summary()
+> using in-built data sets provided with R
+> general principles of good data entry and storage, and the virtues of
+> plain text. Went over read.table (I meant to do more with reading data
+> into R, but ran out of time. I sent simple instructions for the foreign
+> package and read.spss() to their teacher after the fact, since up until
+> now they had been using SPSS a lot, and several of their data sets were
+> in that format.)
+> graphs: boxplots, scatterplots, stripcharts, scatterplot matrices, and
+> coplots (they liked that last one a lot).  Also some graphical
+> parameters: type=, main=, sub=, col=, xlim=, ylim=, and pch=
+>
+> Comments to teacher over the subsequent couple of days included:
+> "This should be taught in high school." "I got to see data for the first
+> time in a different way." "I had the most fun when I realized I could
+> play around with the program." (Of course, any less-than-positive
+> comments, the students (or their teacher) may have kept to themselves!)
+>
+I applaud you for trying this.  Inspires me to think I should check if 
+there is a similar desire at the local high school here.  Pretty 
+intimidating notion, though, when I think of the initial push-back I get 
+from the GUI-raised Masters degree students that I currently work with 
+<G>.   I think you had a nice agenda and were quite smart to feature 
+graphics.  Probably made their graphing calculators look pre-historic 
+(or maybe they are by now ;-)!
+
+
+
+Rob
+
+
+From phillclarke at gmail.com  Mon Jan  7 23:03:14 2013
+From: phillclarke at gmail.com (Phill Clarke)
+Date: Mon, 7 Jan 2013 22:03:14 +0000
+Subject: [R-sig-teaching] Looking for an R Mentor
+Message-ID: <CAK=hvMXgF1mjcSFikBgWGMgpmv9j4WDa0maSu8aN8Ktvnmg6NA@mail.gmail.com>
+
+Hello,
+
+My first post to the list, and I hope I am not asking for something too cheeky!
+
+I am reasonably new to R, although do have some basic programming
+experience from years past.
+
+Currently I am using R, as a general scripting language to download
+CSVs, extract data from databases and generally manipulate said data.
+I chose R, as moving forward, I would like to perform various
+statistical anlyses on this data.
+
+At the moment, while I am making some good progress, being new to the
+language I'm really looking for some type of mentor who can review my
+code and make improvement suggestions. I'm sure I am doing some things
+the long way around! I'm hoping my questions won't too much along the
+lines of "How do I do this?" but more like "Am I doing this the best
+way?" I know there are a lot of forums and websites where I could just
+post questions, but I was aiming for more one to one interaction via
+email.
+
+Perhaps the response will be that I should just go and pay for some
+training. Fair enough too I suppose. However, my intention is to open
+source the output of my efforts, so I was hoping someone in the
+community would be kind enough on the input side to provide me with
+guidance under a similar ethos.
+
+Regards,
+Phill
+
+
+From phillclarke at gmail.com  Tue Jan  8 01:55:51 2013
+From: phillclarke at gmail.com (Phill Clarke)
+Date: Tue, 8 Jan 2013 00:55:51 +0000
+Subject: [R-sig-teaching] Looking for an R Mentor
+In-Reply-To: <CANBiExVjSTswHbZ6ZmnhqHqS_agfqr6aOni9h4bStsMnU6hZMg@mail.gmail.com>
+References: <CAK=hvMXgF1mjcSFikBgWGMgpmv9j4WDa0maSu8aN8Ktvnmg6NA@mail.gmail.com>
+	<CANBiExVjSTswHbZ6ZmnhqHqS_agfqr6aOni9h4bStsMnU6hZMg@mail.gmail.com>
+Message-ID: <CAK=hvMW1kb0dRmayaVKW-z7rEJ9DXmeQJi5LBPxkoM40XbnogA@mail.gmail.com>
+
+Thank you for the responses, and apologies for posting to the wrong
+list. I will reply individualy to those who have offered assistance.
+
+Regards,
+Phill
+
+
+On 7 January 2013 23:04, James Howard <jh at jameshoward.us> wrote:
+> Looks like fun, I'm in!  But stackoverflow.com is probably a better place to
+> pose random questions.
+>
+>
+> On Mon, Jan 7, 2013 at 5:03 PM, Phill Clarke <phillclarke at gmail.com> wrote:
+>>
+>> Hello,
+>>
+>> My first post to the list, and I hope I am not asking for something too
+>> cheeky!
+>>
+>> I am reasonably new to R, although do have some basic programming
+>> experience from years past.
+>>
+>> Currently I am using R, as a general scripting language to download
+>> CSVs, extract data from databases and generally manipulate said data.
+>> I chose R, as moving forward, I would like to perform various
+>> statistical anlyses on this data.
+>>
+>> At the moment, while I am making some good progress, being new to the
+>> language I'm really looking for some type of mentor who can review my
+>> code and make improvement suggestions. I'm sure I am doing some things
+>> the long way around! I'm hoping my questions won't too much along the
+>> lines of "How do I do this?" but more like "Am I doing this the best
+>> way?" I know there are a lot of forums and websites where I could just
+>> post questions, but I was aiming for more one to one interaction via
+>> email.
+>>
+>> Perhaps the response will be that I should just go and pay for some
+>> training. Fair enough too I suppose. However, my intention is to open
+>> source the output of my efforts, so I was hoping someone in the
+>> community would be kind enough on the input side to provide me with
+>> guidance under a similar ethos.
+>>
+>> Regards,
+>> Phill
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+>
+>
+> --
+> James Howard
+
+
+From rdiaz02 at gmail.com  Tue Jan  8 11:17:27 2013
+From: rdiaz02 at gmail.com (Ramon Diaz-Uriarte)
+Date: Tue, 08 Jan 2013 11:17:27 +0100
+Subject: [R-sig-teaching] follow-up on teaching R to high school students
+In-Reply-To: <50E28BA4.1050901@binghamton.edu>
+References: <50E28BA4.1050901@binghamton.edu>
+Message-ID: <8738ycasi0.wl%rdiaz02@gmail.com>
+
+
+Dear Chris,
+
+Thanks a lot for the detailed report, which I'll keep for reference, and
+forward to a few colleagues. 
+
+Just a question/request, for those of us from other countries: what were
+the ages of the kids? (grades 10-12 does not mean a lot to me, though,
+yes, I could google for it).
+
+
+Best,
+
+
+R.
+
+
+
+On Tue, 01 Jan 2013 02:09:24 -0500,"Christopher W. Ryan" <cryan at binghamton.edu> wrote:
+> Some of you may recall that a few months ago I solicited advice and
+> opinions on both R-help and R-sig-teaching about an "introduction to R"
+> workshop I intended to present to a class of high school students
+> enrolled in a 3-year longitudinal science research class.  Well, I did
+> it on 8 October, and thought I'd give some follow-up as to how it went,
+> in case anyone was interested.
+
+> The class consisted of about 20 kids, grades 10-12. Each was at a
+> computer with R installed. It wasn't clear that the students would be
+> able to install packages, given the school's network setup, so I
+> confined my plans to base R. We ran for 5 hours, with about a 40-minute
+> break for lunch. Their science teacher was present for the entire time,
+> and the school's IT person attended about half of it.  They were both
+> very helpful, both in preparation and in execution.
+
+> I conducted an (utterly arbitrary and unvalidated) online survey among
+> the students a couple weeks in advance, to gauge their familiarity with
+> what I called "technical computing," i.e. anything beyond commonplace
+> word-processing, spreadsheets, web surfing, and social media. The
+> questions were:
+
+> 1. What operating systems do you know how to work in? Check all that apply.
+>    Windows 19
+>    Mac OS X 12
+>    Linux 2
+>    others 0
+
+> 2. Do you have a favorite text editor?
+>    Yes 5
+>    No 7
+>    I don't know what a text editor is 7
+
+> 3. Do you use a two-pane file manager?
+>    Yes 1
+>    No 6
+>    I don't know what a two-pane file manager is 12
+
+> 4. Have you written programs in any computer language?
+>    Yes 4
+>    No 11
+>    I don't know 4
+>    (the specific languages cited included Basic, Java, Javascript, Ruby,
+>  C++, Python, MS-DOS command prompt batch files.)
+
+> I had my "lesson plan" all laid out in an org-mode file, from which I
+> typed code into an R console projected on the screen. The students
+> followed my steps initially, and then broadened out to some
+> experimentation as the day went on. A couple students were quite skilled
+> at working ahead, while others struggled a bit, but everyone was
+> eventually able to get the desired results.  They were generally very
+> engaged, interactive, and enthusiastic. No one left, except for the odd
+> music lesson here and there.  Overall, we had a lot of fun.
+
+> I tried to go pretty slowly. I prepared much more that we had time to
+> cover. I emphasized graphics. I did not get into inferential statistics
+> or hypothesis testing at all, despite their eagerness to "do a t-test"
+> and such. Maybe that will come at a future session, if we do one.
+
+> In general, topics we covered included:
+
+> vectorized mathematics (what I called "bulk math")
+> generating sequences
+> (meant to do logical conditions here, but skipped it inadvertantly)
+> drawing random samples
+> different kinds of objects (we limited ourselves to scalars, vectors,
+> dataframes; character, numeric, and factor)
+> levels of measurement: nominal, ordinal, interval/ratio
+> exploring objects: str(), head(), tail(), class(), summary()
+> using in-built data sets provided with R
+> general principles of good data entry and storage, and the virtues of
+> plain text. Went over read.table (I meant to do more with reading data
+> into R, but ran out of time. I sent simple instructions for the foreign
+> package and read.spss() to their teacher after the fact, since up until
+> now they had been using SPSS a lot, and several of their data sets were
+> in that format.)
+> graphs: boxplots, scatterplots, stripcharts, scatterplot matrices, and
+> coplots (they liked that last one a lot).  Also some graphical
+> parameters: type=, main=, sub=, col=, xlim=, ylim=, and pch=
+
+> Comments to teacher over the subsequent couple of days included:
+> "This should be taught in high school." "I got to see data for the first
+> time in a different way." "I had the most fun when I realized I could
+> play around with the program." (Of course, any less-than-positive
+> comments, the students (or their teacher) may have kept to themselves!)
+
+> --Chris Ryan
+> SUNY Upstate Medical University
+> Binghamton Clinical Campus
+
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+-- 
+Ramon Diaz-Uriarte
+Department of Biochemistry
+Universidad Aut?noma de Madrid	
+Instituto de Investigaciones Biom?dicas ?Alberto Sols? (UAM-CSIC)
+Madrid
+Spain
+
+
+
+Direcci?n - Address:
+
+  Laboratorio B-25
+  Departamento de Bioqu?mica
+  Facultad de Medicina 
+  Universidad Aut?noma de Madrid 
+  Arzobispo Morcillo, 4
+  28029 Madrid
+  Spain
+
+  Phone: +34-91-497-2412
+
+  Email: ramon.diaz at iib.uam.es
+         rdiaz02 at gmail.com
+  	 
+  http://ligarto.org/rdiaz
+
+
+From uma at sophie.unam.mx  Tue Jan  8 14:52:58 2013
+From: uma at sophie.unam.mx (Ulises M. Alvarez)
+Date: Tue, 08 Jan 2013 07:52:58 -0600
+Subject: [R-sig-teaching] follow-up on teaching R to high school students
+In-Reply-To: <8738ycasi0.wl%rdiaz02@gmail.com>
+References: <50E28BA4.1050901@binghamton.edu> <8738ycasi0.wl%rdiaz02@gmail.com>
+Message-ID: <50EC24BA.1040200@sophie.unam.mx>
+
+On 01/08/2013 04:17 AM, Ramon Diaz-Uriarte wrote:
+> Just a question/request, for those of us from other countries: what
+> were the ages of the kids? (grades 10-12 does not mean a lot to me,
+> though, yes, I could google for it).
+
+Usually, 15 to 19 years old kids.
+-- 
+Ulises M. Alvarez
+http://sophie.unam.mx/
+
+
+From cryan at binghamton.edu  Tue Jan  8 15:35:06 2013
+From: cryan at binghamton.edu (Christopher W Ryan)
+Date: Tue, 8 Jan 2013 09:35:06 -0500
+Subject: [R-sig-teaching] follow-up on teaching R to high school students
+In-Reply-To: <50EC24BA.1040200@sophie.unam.mx>
+References: <50E28BA4.1050901@binghamton.edu> <8738ycasi0.wl%rdiaz02@gmail.com>
+	<50EC24BA.1040200@sophie.unam.mx>
+Message-ID: <CAM+rpYmvtsqwSY0FX31eyqW10-0y2g+crcPGgRbxpc-U3+q8KQ@mail.gmail.com>
+
+Ramon--
+
+good point, thanks for bringing it up.  And yes, Ulises's range would
+be about right.
+
+By the way, about 10 of the students have so far responded to my
+post-workshop survey. Again a very informal and ad-hoc instrument.
+Four have installed R on a computer of their own. None have installed
+any additional packages. Three have used R for something so far: 2 for
+their research project as part of this longitudinal class, 1 for
+calculations and graphing in another science class, and 1 for a
+non-school-related activity.
+
+--Chris Ryan
+
+On Tue, Jan 8, 2013 at 8:52 AM, Ulises M. Alvarez <uma at sophie.unam.mx> wrote:
+> On 01/08/2013 04:17 AM, Ramon Diaz-Uriarte wrote:
+>>
+>> Just a question/request, for those of us from other countries: what
+>> were the ages of the kids? (grades 10-12 does not mean a lot to me,
+>> though, yes, I could google for it).
+>
+>
+> Usually, 15 to 19 years old kids.
+> --
+> Ulises M. Alvarez
+> http://sophie.unam.mx/
+>
+
+
+From gauravonline20 at gmail.com  Fri Jan 18 15:53:18 2013
+From: gauravonline20 at gmail.com (gaurav singh)
+Date: Fri, 18 Jan 2013 15:53:18 +0100
+Subject: [R-sig-teaching] importing and processing large datasets in R
+In-Reply-To: <CAEM0C4zoxrTwY1TOS8N_F8JGexmCgF0oU80Eu1qmYHZ1XTek6g@mail.gmail.com>
+References: <CAEM0C4zoxrTwY1TOS8N_F8JGexmCgF0oU80Eu1qmYHZ1XTek6g@mail.gmail.com>
+Message-ID: <CAEM0C4ys58ANTDcCAHxQmQoXU=0zpng1PXedJKuqvwWVf-ynMQ@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130118/2163532c/attachment.pl>
+
+From rpruim at calvin.edu  Fri Jan 18 16:11:09 2013
+From: rpruim at calvin.edu (Randall Pruim)
+Date: Fri, 18 Jan 2013 10:11:09 -0500
+Subject: [R-sig-teaching] importing and processing large datasets in R
+In-Reply-To: <CAEM0C4ys58ANTDcCAHxQmQoXU=0zpng1PXedJKuqvwWVf-ynMQ@mail.gmail.com>
+References: <CAEM0C4zoxrTwY1TOS8N_F8JGexmCgF0oU80Eu1qmYHZ1XTek6g@mail.gmail.com>
+	<CAEM0C4ys58ANTDcCAHxQmQoXU=0zpng1PXedJKuqvwWVf-ynMQ@mail.gmail.com>
+Message-ID: <71FAD2C9-B7E0-4664-A243-8DBE11B4B6AB@calvin.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130118/41ff9f6d/attachment.pl>
+
+From bob at statland.org  Fri Jan 18 16:12:15 2013
+From: bob at statland.org (Bob)
+Date: Fri, 18 Jan 2013 10:12:15 -0500 (EST)
+Subject: [R-sig-teaching] importing and processing large datasets in R
+	(fwd)
+Message-ID: <20130118151215.506DC71989A5@mail89.csoft.net>
+
+
+I am one of the people who lobbied for the creation of this list long
+ago.  I am not sure R is a great choice for a first course in
+statistics, but I thought that if someone chose to use it, then they
+and their students might need all the help they could get to make it
+easier for the class.  But right from the beginning, the bulk of the
+posts to the list were like this latest one quoted below -- questions
+about how to do something with R that has no obvious connection to
+pedagogy or to using R in a first course.  This means that those of us
+interested in the actual topic of this list get lots of off-topic
+messages, while those who post the messages reach only a small
+audience that may not be interested in their question.  Some off topic
+posts are answered, some ingnored, and some posters get redirected
+(even scolded) toward a more appropriate list.  I see only losers in
+this process.
+
+So my question is whether this list really serves any useful purpose,
+or does it just siphon off queries that should have gone elsewhere?
+Those who post those queries would be likely to get an answer, and get
+it sooner, if they posted to an appropriate list in the first place.
+My own answer is that this list is not useful at the present time.
+Possibly in the future more people will be interested in R for an
+introductory course and then they might be glad if this list were
+still alive, but so far...
+
+So I am wondering what others on the list think.
+
+Here's the official description of this list.
+
+Special Interest Group (SIG) on teaching statistics with R. The
+primary purpose of the group is to provide a forum where instructors
+using R in their statistics courses can share ideas, teaching
+materials, and experiences. One particular focus of the SIG is to
+provide helpful support to instructors new to R who are teaching
+introductory statistics courses populated with students with little
+experience in statistics, statistical software, and command line
+interfaces. 
+
+Here is where most posts to this list really should have gone.
+
+R-help
+
+    The ?main? R mailing list, for discussion about problems and
+    solutions using R, announcements (not covered by ?R-announce? or
+    ?R-packages?, see above), about the availability of new
+    functionality for R and documentation of R, comparison and
+    compatibility with S-plus, and for the posting of nice examples
+    and benchmarks.
+
+Forwarded message:
+> 
+> Hi Everyone,
+> 
+> I am a little new to R and the first problem I am facing is the dilemma
+> whether R is suitable for files of size 2 GB's and slightly more then 2
+> Million rows. When I try importing the data using read.table, it seems to
+> take forever and I have to cancel the command. Are there any special
+> techniques or methods which i can use or some tricks of the game that I
+> should keep in mind in order to be able to do data analysis on such large
+> files using R?
+
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+      _
+     | |          Robert W. Hayden
+     | |          142 Main Street
+    /  |          Apartment 104
+   |   |          Jaffrey, New Hampshire 03452  USA
+   |   |          email: bob@ the site below
+  /    |          website: http://statland.org
+ | x   /          phone: (603) 532-7224 (home)
+ ''''''
+
+
+From gauravonline20 at gmail.com  Fri Jan 18 16:20:24 2013
+From: gauravonline20 at gmail.com (gaurav singh)
+Date: Fri, 18 Jan 2013 16:20:24 +0100
+Subject: [R-sig-teaching] importing and processing large datasets in R
+	(fwd)
+In-Reply-To: <20130118151215.506DC71989A5@mail89.csoft.net>
+References: <20130118151215.506DC71989A5@mail89.csoft.net>
+Message-ID: <CAEM0C4yW_ycvtK4PMqUnf1nPfCoVjWUSZ=11KefwG=DGmw==dA@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130118/bc5a23a4/attachment.pl>
+
+From amul.badjatya at axtria.com  Fri Jan 18 16:31:42 2013
+From: amul.badjatya at axtria.com (Amul Badjatya)
+Date: Fri, 18 Jan 2013 15:31:42 +0000
+Subject: [R-sig-teaching] importing and processing large datasets in R
+In-Reply-To: <71FAD2C9-B7E0-4664-A243-8DBE11B4B6AB@calvin.edu>
+References: <CAEM0C4zoxrTwY1TOS8N_F8JGexmCgF0oU80Eu1qmYHZ1XTek6g@mail.gmail.com>
+	<CAEM0C4ys58ANTDcCAHxQmQoXU=0zpng1PXedJKuqvwWVf-ynMQ@mail.gmail.com>,
+	<71FAD2C9-B7E0-4664-A243-8DBE11B4B6AB@calvin.edu>
+Message-ID: <4D49A3BA2EEE044DB1C144114637D73B485230D7@ORD2MBX01B.mex05.mlsrvr.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130118/ef21dd9a/attachment.pl>
+
+From memilanuk at gmail.com  Fri Jan 18 16:32:59 2013
+From: memilanuk at gmail.com (Monte Milanuk)
+Date: Fri, 18 Jan 2013 07:32:59 -0800
+Subject: [R-sig-teaching] importing and processing large datasets in R
+	(fwd)
+In-Reply-To: <20130118151215.506DC71989A5@mail89.csoft.net>
+References: <20130118151215.506DC71989A5@mail89.csoft.net>
+Message-ID: <CAC6CacjZX=krOTcdi16EVwDD-uCvy3jqr5aN-YucGnj7f+2k_Q@mail.gmail.com>
+
+Hello Bob,
+
+I'm one of those who follow the list mainly out of curiosity, not
+because I have any connection with teaching stats.  My goal was to
+keep an eye out for some of the occasional posts where people post
+useful links or material that they use in teaching... but I understand
+the frustration with the frequent off-topic requests for help learning
+R.
+
+I don't know if yet another mailing list would be worth considering...
+but for comparison, in the Python world there is a SIG for Education,
+very similar to this one... and there is a SIG/mailing list called
+'python-tutor', specifically for people asking beginner type
+questions, or who maybe don't want to brave the 'main' list and its
+denizens just yet because they still need/want some hand-holding.
+There is very little off-topic discussion on the Edu list, and
+neophytes have a kiddie pool that they feel welcome in.
+
+I know the R community seems to kind of enjoy the occasional
+snarkiness on the main list by certain posters, and I've certainly
+been around the 'Net long enough to have developed a thick enough skin
+myself, but for new users it may be a bit intimidating.  Maybe an
+'R-Novice' or 'R-Tutor' list would open up an intermediate ground for
+beginners and reduce the 'pollution' of the R-Teaching list?
+
+Monte
+
+
+From paula.young at salem.edu  Fri Jan 18 16:44:22 2013
+From: paula.young at salem.edu (Paula Grafton Young)
+Date: Fri, 18 Jan 2013 10:44:22 -0500
+Subject: [R-sig-teaching] Convincing other colleagues to use R in the
+	classroom
+Message-ID: <CA+srNj7rq9xppAENm6+nEfKRJ91cFtx_TJQP_xZ-KwbtDGnmRw@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130118/37e0fcd8/attachment.pl>
+
+From michael.weylandt at gmail.com  Fri Jan 18 16:58:14 2013
+From: michael.weylandt at gmail.com (R. Michael Weylandt)
+Date: Fri, 18 Jan 2013 15:58:14 +0000
+Subject: [R-sig-teaching] importing and processing large datasets in R
+	(fwd)
+In-Reply-To: <CAC6CacjZX=krOTcdi16EVwDD-uCvy3jqr5aN-YucGnj7f+2k_Q@mail.gmail.com>
+References: <20130118151215.506DC71989A5@mail89.csoft.net>
+	<CAC6CacjZX=krOTcdi16EVwDD-uCvy3jqr5aN-YucGnj7f+2k_Q@mail.gmail.com>
+Message-ID: <CAAmySGNxJ0sv0Brw0t1V__qs97tQ8uCiB-PSSuA5MGwka4vxng@mail.gmail.com>
+
+On Fri, Jan 18, 2013 at 3:32 PM, Monte Milanuk <memilanuk at gmail.com> wrote:
+> Hello Bob,
+>
+> I'm one of those who follow the list mainly out of curiosity, not
+> because I have any connection with teaching stats.  My goal was to
+> keep an eye out for some of the occasional posts where people post
+> useful links or material that they use in teaching... but I understand
+> the frustration with the frequent off-topic requests for help learning
+> R.
+>
+> I don't know if yet another mailing list would be worth considering...
+> but for comparison, in the Python world there is a SIG for Education,
+> very similar to this one... and there is a SIG/mailing list called
+> 'python-tutor', specifically for people asking beginner type
+> questions, or who maybe don't want to brave the 'main' list and its
+> denizens just yet because they still need/want some hand-holding.
+> There is very little off-topic discussion on the Edu list, and
+> neophytes have a kiddie pool that they feel welcome in.
+>
+> I know the R community seems to kind of enjoy the occasional
+> snarkiness on the main list by certain posters, and I've certainly
+> been around the 'Net long enough to have developed a thick enough skin
+> myself, but for new users it may be a bit intimidating.  Maybe an
+> 'R-Novice' or 'R-Tutor' list would open up an intermediate ground for
+> beginners and reduce the 'pollution' of the R-Teaching list?
+>
+
+It's a topic that's been discussed many times before on R-help, with
+the usual outcome being some feeling that it would lower the quality
+of responses that newbies get. I'm not sure it's an argument I buy,
+but if you want to raise the topic again, I can certainly promise to
+be active (enough) on R-Tutor.
+
+There might also be some value in thinking of an R-Statistics list
+(though under a much better name) where statistical questions are fair
+game -- it's always seemed odd to me that data munging is a fair topic
+on the various R lists, while data analysis isn't.
+
+Just throwing it out there,
+
+MW
+
+
+From amul.badjatya at axtria.com  Fri Jan 18 17:01:08 2013
+From: amul.badjatya at axtria.com (Amul Badjatya)
+Date: Fri, 18 Jan 2013 16:01:08 +0000
+Subject: [R-sig-teaching] Convincing other colleagues to use R in
+	the	classroom
+In-Reply-To: <CA+srNj7rq9xppAENm6+nEfKRJ91cFtx_TJQP_xZ-KwbtDGnmRw@mail.gmail.com>
+References: <CA+srNj7rq9xppAENm6+nEfKRJ91cFtx_TJQP_xZ-KwbtDGnmRw@mail.gmail.com>
+Message-ID: <4D49A3BA2EEE044DB1C144114637D73B48523182@ORD2MBX01B.mex05.mlsrvr.com>
+
+Hi Paula,
+
+I havent used R in any research, but I am currently using it in an analytics firm.
+
+The way I perceive our analysis goes is:
+
+Step 1:Data Standardization:
+[Approx. 70% time invested]
+-Data Cleaning
+-Data Manipulation
+-Data standardization to make it immediately consumable for statistical analysis
+
+Step 2: Exploratory Data Analysis & Statistical Analysis:
+[Approx. 20% time invested]
+
+-Data Sanity Check [Business Meaning Validation]
+	-Identification of Outliers/Missing Values/ Inappropriate values
+-Statistical Analysis [Modeling/Hypothesis testing etc.]
+On the basis of feedback from Step 2- we re-massage, re-standardize the data (Step 1 again).
+
+Step 3: Assimilation of results and presentation to the  end client
+[Approx. 10% time invested]
+
+The methodology we are now looking up to is
+1-Use SQL (MySQL/MS SQL)  for Step 1
+2-Use R GUIs - like Rcmdr-for EDA & Statistical Analysis
+
+Rcmdr is wonderful to get started with R because it produces codes of the operation it performed-[and you can edit and run the same there itself]  which in turn increases the grasping of syntax.
+
+Once an individual gets started with a small case study- hands on Rcmdr (Button click)- they are more inclined to get more involved with it.
+A vital element here is the DATA MANIPULATION concept in R- which is difficult to grasp- and shoos away beginners. I got round it by using the SQLdf package- which lets you do simple manipulations in R using SQL language.
+
+Once sufficient interaction happens- the learner automatically starts dealing with the tougher (slightly unpalatable) parts of R.
+
+Please use a small hands on 15 minute GUI based analysis case study in your one hour session.
+And let people not worry about the data standardization techniques of R.
+
+These are my humble opinion based on the limited experience I have.
+
+Regards,
+Amul Badjatya.
+www(dot)amulbadjatya(dot)com
+
+
+
+-----Original Message-----
+From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-bounces at r-project.org] On Behalf Of Paula Grafton Young
+Sent: Friday, January 18, 2013 9:14 PM
+To: bob at statland.org
+Cc: R-sig-teaching
+Subject: [R-sig-teaching] Convincing other colleagues to use R in the classroom
+
+Re: the post from bob at statland.org: As one of those people who uses R in introductory statistics courses, I hope that this list does not go away. I agree that most of the posts I see are off-topic but the ones that are on-topic have been helpful to me in the classroom. Perhaps a name change would be in order to avoid the confusion relayed by the previous post on reading large data sets--maybe R-sig-ClassroomTeaching or something like that to make it clearer.
+
+I do actually have a question that I hope is relevant. I chose to adopt R for all the reasons most people adopt it--open source, accurate, extensible, platform independent. I thought that I would be able to convince my colleagues in other departments to at least consider using R (with something like RKWard or another GUI). I have failed miserably in doing so. I've offered workshops, invited colleagues to attend the R labs for my classes, and have had minimal response (one political scientist, one ecologist).
+Even having students from my classes do demonstrations of phenomenal graphical representations of data sets didn't convince colleagues to even download R (except for again, the political scientist; the ecologist already had it).
+
+I teach at a very small college with a very small IT budget and no departmental budgets for software. The sociologists, economists and business administration faculty won't let go of SPSS n the classroom; the biology faculty use Excel and SPSS, with the exception of the ecologist mentioned previously; the psychology faculty will only use calculators and tables.
+
+So, what I would like to hear from some of you at other institutions is what can I do to convince/encourage my colleagues in other departments to adopt R and save our institution a significant amount of money in licensing?
+
+Thank you in advance for your insights and advice.
+
+---
+Dr. Paula Grafton Young
+Associate Professor of Mathematics
+Chair, Curriculum Committee, 2011 - 2013 Chair, Strategic Planning Steering Committee, 2012 - 2013 paula.young at salem.edu
+336.721.2747 (O)
+336.721.2653 (F)
+
+ <http://www.facebook.com/SalemCollege><http://www.twitter.com/SalemCollege>
+
+
+
+On Fri, Jan 18, 2013 at 10:12 AM, Bob <bob at statland.org> wrote:
+
+>
+> I am one of the people who lobbied for the creation of this list long 
+> ago.  I am not sure R is a great choice for a first course in 
+> statistics, but I thought that if someone chose to use it, then they 
+> and their students might need all the help they could get to make it 
+> easier for the class.  But right from the beginning, the bulk of the 
+> posts to the list were like this latest one quoted below -- questions 
+> about how to do something with R that has no obvious connection to 
+> pedagogy or to using R in a first course.  This means that those of us 
+> interested in the actual topic of this list get lots of off-topic 
+> messages, while those who post the messages reach only a small 
+> audience that may not be interested in their question.  Some off topic 
+> posts are answered, some ingnored, and some posters get redirected 
+> (even scolded) toward a more appropriate list.  I see only losers in 
+> this process.
+>
+> So my question is whether this list really serves any useful purpose, 
+> or does it just siphon off queries that should have gone elsewhere?
+> Those who post those queries would be likely to get an answer, and get 
+> it sooner, if they posted to an appropriate list in the first place.
+> My own answer is that this list is not useful at the present time.
+> Possibly in the future more people will be interested in R for an 
+> introductory course and then they might be glad if this list were 
+> still alive, but so far...
+>
+> So I am wondering what others on the list think.
+>
+> Here's the official description of this list.
+>
+> Special Interest Group (SIG) on teaching statistics with R. The 
+> primary purpose of the group is to provide a forum where instructors 
+> using R in their statistics courses can share ideas, teaching 
+> materials, and experiences. One particular focus of the SIG is to 
+> provide helpful support to instructors new to R who are teaching 
+> introductory statistics courses populated with students with little 
+> experience in statistics, statistical software, and command line 
+> interfaces.
+>
+> Here is where most posts to this list really should have gone.
+>
+> R-help
+>
+>     The ?main? R mailing list, for discussion about problems and
+>     solutions using R, announcements (not covered by ?R-announce? or
+>     ?R-packages?, see above), about the availability of new
+>     functionality for R and documentation of R, comparison and
+>     compatibility with S-plus, and for the posting of nice examples
+>     and benchmarks.
+>
+> Forwarded message:
+> >
+> > Hi Everyone,
+> >
+> > I am a little new to R and the first problem I am facing is the 
+> > dilemma whether R is suitable for files of size 2 GB's and slightly 
+> > more then 2 Million rows. When I try importing the data using 
+> > read.table, it seems to take forever and I have to cancel the 
+> > command. Are there any special techniques or methods which i can use 
+> > or some tricks of the game that I should keep in mind in order to be 
+> > able to do data analysis on such large files using R?
+>
+>
+> ------->  First-time AP Stats. teacher?  Help is on the way! See
+> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+>       _
+>      | |          Robert W. Hayden
+>      | |          142 Main Street
+>     /  |          Apartment 104
+>    |   |          Jaffrey, New Hampshire 03452  USA
+>    |   |          email: bob@ the site below
+>   /    |          website: http://statland.org
+>  | x   /          phone: (603) 532-7224 (home)
+>  ''''''
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list 
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+	[[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+This e-mail and any files transmitted with it are for the sole use of the intended recipient(s) and may contain confidential and privileged information. If you are not the intended recipient, please contact the sender by reply e-mail and destroy all copies of the original message. Any unauthorized review, use, disclosure, dissemination, forwarding, printing or copying of this email or any action taken in reliance on this e-mail is strictly prohibited and may be unlawful.
+
+
+From cryan at binghamton.edu  Fri Jan 18 17:02:08 2013
+From: cryan at binghamton.edu (Christopher W. Ryan)
+Date: Fri, 18 Jan 2013 11:02:08 -0500
+Subject: [R-sig-teaching] Convincing other colleagues to use R in the
+ classroom
+In-Reply-To: <CA+srNj7rq9xppAENm6+nEfKRJ91cFtx_TJQP_xZ-KwbtDGnmRw@mail.gmail.com>
+References: <CA+srNj7rq9xppAENm6+nEfKRJ91cFtx_TJQP_xZ-KwbtDGnmRw@mail.gmail.com>
+Message-ID: <50F97200.4000907@binghamton.edu>
+
+Great questions. There is a lot of inertia in switching software. And
+rightfully so, if you feel your current software is doing the job for you.
+
+I think what intimidates many people is writing code. Despite all the
+hubub in the popular press about this great wave of "tech-savvy" people,
+most folks don't really know what goes on behind the monitor screen.
+They are trained up in a point-and-click culture, and the prospect of
+writing code makes their head spin.
+
+Perhaps you could identify ways in which their point-and-click software
+of choice is *not* doing the job for them. If their sense of "getting
+the job done" means "analyzing these data right now, and finishing the
+paper," then SPSS is working for them. You will have to expand their
+definition of "doing the job," to include the key difference between
+point-click and writing code: reproducibility. If I ask you 3 years from
+now how you did this analysis, could you reproduce it for me, from
+square one?
+
+Maybe have someone bring a fairly complicated graph, or fairly
+complicated analysis, that they did with SPSS or whatever, and have them
+walk you through it in the sofware they used. They tell you what to do,
+and you do it, following their instructions exactly. Do exactly what
+they say, nothing more and nothing less. See what happens. See how long
+it takes. I suspect there is a lot of tacit, unspoken knowledge,  many
+assumptions at play, when we use GUI software. Exposing those
+assumptions might be interesting.
+
+Caveat: I haven't tried this myself. But I've always thought it sounded
+interesting.
+
+At the end of the day, it make take the sharp edge of the budget axe to
+really make a difference.
+
+Christopher W. Ryan, MD, MS
+SUNY Upstate Medical University Clinical Campus at Binghamton
+425 Robinson Street, Binghamton, NY  13904
+cryanatbinghamtondotedu
+
+"Once we recognize that we do not err out of laziness, stupidity, or
+evil intent, we can liberate ourselves from the impossible burden of
+trying to be permanently right. We can take seriously the proposition
+that we could be in error, without deeming ourselves idiotic or
+unworthy." [Karen Schulz, in Being Wrong: Adventures in the Margin of Error]
+
+
+Paula Grafton Young wrote:
+> Re: the post from bob at statland.org: As one of those people who uses R in
+> introductory statistics courses, I hope that this list does not go away. I
+> agree that most of the posts I see are off-topic but the ones that are
+> on-topic have been helpful to me in the classroom. Perhaps a name change
+> would be in order to avoid the confusion relayed by the previous post
+> on reading
+> large data sets--maybe R-sig-ClassroomTeaching or something like that to
+> make it clearer.
+> 
+> I do actually have a question that I hope is relevant. I chose to adopt R
+> for all the reasons most people adopt it--open source, accurate,
+> extensible, platform independent. I thought that I would be able to convince
+> my colleagues in other departments to at least consider using R (with
+> something like RKWard or another GUI). I have failed miserably in
+> doing so. I've
+> offered workshops, invited colleagues to attend the R labs for my classes,
+> and have had minimal response (one political scientist, one ecologist).
+> Even having students from my classes do demonstrations of phenomenal graphical
+> representations of data sets didn't convince colleagues to even download R
+> (except for again, the political scientist; the ecologist already had it).
+> 
+> I teach at a very small college with a very small IT budget and no
+> departmental budgets for software. The sociologists, economists and
+> business administration faculty won't let go of SPSS n the classroom;
+> the biology
+> faculty use Excel and SPSS, with the exception of the ecologist mentioned
+> previously; the psychology faculty will only use calculators and tables.
+> 
+> So, what I would like to hear from some of you at other institutions is what
+> can I do to convince/encourage my colleagues in other departments to adopt
+> R and save our institution a significant amount of money in licensing?
+> 
+> Thank you in advance for your insights and advice.
+> 
+> ---
+> Dr. Paula Grafton Young
+> Associate Professor of Mathematics
+> Chair, Curriculum Committee, 2011 - 2013
+> Chair, Strategic Planning Steering Committee, 2012 - 2013
+> paula.young at salem.edu
+> 336.721.2747 (O)
+> 336.721.2653 (F)
+> 
+>  <http://www.facebook.com/SalemCollege><http://www.twitter.com/SalemCollege>
+> 
+> 
+> 
+> On Fri, Jan 18, 2013 at 10:12 AM, Bob <bob at statland.org> wrote:
+> 
+>>
+>> I am one of the people who lobbied for the creation of this list long
+>> ago.  I am not sure R is a great choice for a first course in
+>> statistics, but I thought that if someone chose to use it, then they
+>> and their students might need all the help they could get to make it
+>> easier for the class.  But right from the beginning, the bulk of the
+>> posts to the list were like this latest one quoted below -- questions
+>> about how to do something with R that has no obvious connection to
+>> pedagogy or to using R in a first course.  This means that those of us
+>> interested in the actual topic of this list get lots of off-topic
+>> messages, while those who post the messages reach only a small
+>> audience that may not be interested in their question.  Some off topic
+>> posts are answered, some ingnored, and some posters get redirected
+>> (even scolded) toward a more appropriate list.  I see only losers in
+>> this process.
+>>
+>> So my question is whether this list really serves any useful purpose,
+>> or does it just siphon off queries that should have gone elsewhere?
+>> Those who post those queries would be likely to get an answer, and get
+>> it sooner, if they posted to an appropriate list in the first place.
+>> My own answer is that this list is not useful at the present time.
+>> Possibly in the future more people will be interested in R for an
+>> introductory course and then they might be glad if this list were
+>> still alive, but so far...
+>>
+>> So I am wondering what others on the list think.
+>>
+>> Here's the official description of this list.
+>>
+>> Special Interest Group (SIG) on teaching statistics with R. The
+>> primary purpose of the group is to provide a forum where instructors
+>> using R in their statistics courses can share ideas, teaching
+>> materials, and experiences. One particular focus of the SIG is to
+>> provide helpful support to instructors new to R who are teaching
+>> introductory statistics courses populated with students with little
+>> experience in statistics, statistical software, and command line
+>> interfaces.
+>>
+>> Here is where most posts to this list really should have gone.
+>>
+>> R-help
+>>
+>>     The ?main? R mailing list, for discussion about problems and
+>>     solutions using R, announcements (not covered by ?R-announce? or
+>>     ?R-packages?, see above), about the availability of new
+>>     functionality for R and documentation of R, comparison and
+>>     compatibility with S-plus, and for the posting of nice examples
+>>     and benchmarks.
+>>
+>> Forwarded message:
+>>>
+>>> Hi Everyone,
+>>>
+>>> I am a little new to R and the first problem I am facing is the dilemma
+>>> whether R is suitable for files of size 2 GB's and slightly more then 2
+>>> Million rows. When I try importing the data using read.table, it seems to
+>>> take forever and I have to cancel the command. Are there any special
+>>> techniques or methods which i can use or some tricks of the game that I
+>>> should keep in mind in order to be able to do data analysis on such large
+>>> files using R?
+>>
+>>
+>> ------->  First-time AP Stats. teacher?  Help is on the way! See
+>> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+>>       _
+>>      | |          Robert W. Hayden
+>>      | |          142 Main Street
+>>     /  |          Apartment 104
+>>    |   |          Jaffrey, New Hampshire 03452  USA
+>>    |   |          email: bob@ the site below
+>>   /    |          website: http://statland.org
+>>  | x   /          phone: (603) 532-7224 (home)
+>>  ''''''
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+> 
+> 	[[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From jones at reed.edu  Fri Jan 18 17:03:13 2013
+From: jones at reed.edu (Albyn Jones)
+Date: Fri, 18 Jan 2013 08:03:13 -0800
+Subject: [R-sig-teaching] Convincing other colleagues to use R in the
+ classroom
+In-Reply-To: <CA+srNj7rq9xppAENm6+nEfKRJ91cFtx_TJQP_xZ-KwbtDGnmRw@mail.gmail.com>
+References: <CA+srNj7rq9xppAENm6+nEfKRJ91cFtx_TJQP_xZ-KwbtDGnmRw@mail.gmail.com>
+Message-ID: <411cee45bf4f8d06b248d7665878c3c6@reed.edu>
+
+My experience has been that young faculty come in knowing about, and
+often using R.  Graduate programs in many disciplines (Poli Sci, 
+Linguistics,
+Biology,...) are exposing their students to R.  Older faculty are 
+loathe
+to drop the software that they know well, and around which have 
+developed
+course materials.  I expect that retirements will lead to change :-)
+
+albyn
+
+On 2013-01-18 7:44, Paula Grafton Young wrote:
+> Re: the post from bob at statland.org: As one of those people who uses R 
+> in
+> introductory statistics courses, I hope that this list does not go 
+> away. I
+> agree that most of the posts I see are off-topic but the ones that 
+> are
+> on-topic have been helpful to me in the classroom. Perhaps a name 
+> change
+> would be in order to avoid the confusion relayed by the previous post
+> on reading
+> large data sets--maybe R-sig-ClassroomTeaching or something like that 
+> to
+> make it clearer.
+>
+> I do actually have a question that I hope is relevant. I chose to 
+> adopt R
+> for all the reasons most people adopt it--open source, accurate,
+> extensible, platform independent. I thought that I would be able to 
+> convince
+> my colleagues in other departments to at least consider using R (with
+> something like RKWard or another GUI). I have failed miserably in
+> doing so. I've
+> offered workshops, invited colleagues to attend the R labs for my 
+> classes,
+> and have had minimal response (one political scientist, one 
+> ecologist).
+> Even having students from my classes do demonstrations of phenomenal
+> graphical
+> representations of data sets didn't convince colleagues to even 
+> download R
+> (except for again, the political scientist; the ecologist already had 
+> it).
+>
+> I teach at a very small college with a very small IT budget and no
+> departmental budgets for software. The sociologists, economists and
+> business administration faculty won't let go of SPSS n the classroom;
+> the biology
+> faculty use Excel and SPSS, with the exception of the ecologist 
+> mentioned
+> previously; the psychology faculty will only use calculators and 
+> tables.
+>
+> So, what I would like to hear from some of you at other institutions 
+> is what
+> can I do to convince/encourage my colleagues in other departments to 
+> adopt
+> R and save our institution a significant amount of money in 
+> licensing?
+>
+> Thank you in advance for your insights and advice.
+>
+> ---
+> Dr. Paula Grafton Young
+> Associate Professor of Mathematics
+> Chair, Curriculum Committee, 2011 - 2013
+> Chair, Strategic Planning Steering Committee, 2012 - 2013
+> paula.young at salem.edu
+> 336.721.2747 (O)
+> 336.721.2653 (F)
+>
+>  
+> <http://www.facebook.com/SalemCollege><http://www.twitter.com/SalemCollege>
+>
+>
+>
+> On Fri, Jan 18, 2013 at 10:12 AM, Bob <bob at statland.org> wrote:
+>
+>>
+>> I am one of the people who lobbied for the creation of this list 
+>> long
+>> ago.  I am not sure R is a great choice for a first course in
+>> statistics, but I thought that if someone chose to use it, then they
+>> and their students might need all the help they could get to make it
+>> easier for the class.  But right from the beginning, the bulk of the
+>> posts to the list were like this latest one quoted below -- 
+>> questions
+>> about how to do something with R that has no obvious connection to
+>> pedagogy or to using R in a first course.  This means that those of 
+>> us
+>> interested in the actual topic of this list get lots of off-topic
+>> messages, while those who post the messages reach only a small
+>> audience that may not be interested in their question.  Some off 
+>> topic
+>> posts are answered, some ingnored, and some posters get redirected
+>> (even scolded) toward a more appropriate list.  I see only losers in
+>> this process.
+>>
+>> So my question is whether this list really serves any useful 
+>> purpose,
+>> or does it just siphon off queries that should have gone elsewhere?
+>> Those who post those queries would be likely to get an answer, and 
+>> get
+>> it sooner, if they posted to an appropriate list in the first place.
+>> My own answer is that this list is not useful at the present time.
+>> Possibly in the future more people will be interested in R for an
+>> introductory course and then they might be glad if this list were
+>> still alive, but so far...
+>>
+>> So I am wondering what others on the list think.
+>>
+>> Here's the official description of this list.
+>>
+>> Special Interest Group (SIG) on teaching statistics with R. The
+>> primary purpose of the group is to provide a forum where instructors
+>> using R in their statistics courses can share ideas, teaching
+>> materials, and experiences. One particular focus of the SIG is to
+>> provide helpful support to instructors new to R who are teaching
+>> introductory statistics courses populated with students with little
+>> experience in statistics, statistical software, and command line
+>> interfaces.
+>>
+>> Here is where most posts to this list really should have gone.
+>>
+>> R-help
+>>
+>>     The ?main? R mailing list, for discussion about problems and
+>>     solutions using R, announcements (not covered by ?R-announce? or
+>>     ?R-packages?, see above), about the availability of new
+>>     functionality for R and documentation of R, comparison and
+>>     compatibility with S-plus, and for the posting of nice examples
+>>     and benchmarks.
+>>
+>> Forwarded message:
+>> >
+>> > Hi Everyone,
+>> >
+>> > I am a little new to R and the first problem I am facing is the 
+>> dilemma
+>> > whether R is suitable for files of size 2 GB's and slightly more 
+>> then 2
+>> > Million rows. When I try importing the data using read.table, it 
+>> seems to
+>> > take forever and I have to cancel the command. Are there any 
+>> special
+>> > techniques or methods which i can use or some tricks of the game 
+>> that I
+>> > should keep in mind in order to be able to do data analysis on 
+>> such large
+>> > files using R?
+>>
+>>
+>> ------->  First-time AP Stats. teacher?  Help is on the way! See
+>> 
+>> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+>>       _
+>>      | |          Robert W. Hayden
+>>      | |          142 Main Street
+>>     /  |          Apartment 104
+>>    |   |          Jaffrey, New Hampshire 03452  USA
+>>    |   |          email: bob@ the site below
+>>   /    |          website: http://statland.org
+>>  | x   /          phone: (603) 532-7224 (home)
+>>  ''''''
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>
+> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From amul.badjatya at axtria.com  Fri Jan 18 17:05:09 2013
+From: amul.badjatya at axtria.com (Amul Badjatya)
+Date: Fri, 18 Jan 2013 16:05:09 +0000
+Subject: [R-sig-teaching] importing and processing large datasets in R
+In-Reply-To: <4D49A3BA2EEE044DB1C144114637D73B485230D7@ORD2MBX01B.mex05.mlsrvr.com>
+References: <CAEM0C4zoxrTwY1TOS8N_F8JGexmCgF0oU80Eu1qmYHZ1XTek6g@mail.gmail.com>
+	<CAEM0C4ys58ANTDcCAHxQmQoXU=0zpng1PXedJKuqvwWVf-ynMQ@mail.gmail.com>,
+	<71FAD2C9-B7E0-4664-A243-8DBE11B4B6AB@calvin.edu>
+	<4D49A3BA2EEE044DB1C144114637D73B485230D7@ORD2MBX01B.mex05.mlsrvr.com>
+Message-ID: <4D49A3BA2EEE044DB1C144114637D73B485231C3@ORD2MBX01B.mex05.mlsrvr.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130118/7e8db71c/attachment.pl>
+
+From cryan at binghamton.edu  Fri Jan 18 17:08:17 2013
+From: cryan at binghamton.edu (Christopher W. Ryan)
+Date: Fri, 18 Jan 2013 11:08:17 -0500
+Subject: [R-sig-teaching] importing and processing large datasets in R
+ (fwd)
+In-Reply-To: <CAAmySGNxJ0sv0Brw0t1V__qs97tQ8uCiB-PSSuA5MGwka4vxng@mail.gmail.com>
+References: <20130118151215.506DC71989A5@mail89.csoft.net>
+	<CAC6CacjZX=krOTcdi16EVwDD-uCvy3jqr5aN-YucGnj7f+2k_Q@mail.gmail.com>
+	<CAAmySGNxJ0sv0Brw0t1V__qs97tQ8uCiB-PSSuA5MGwka4vxng@mail.gmail.com>
+Message-ID: <50F97371.6030005@binghamton.edu>
+
+I'd participate actively in an "R-tutor" mailing list.
+
+--Chris
+
+Christopher W. Ryan, MD, MS
+SUNY Upstate Medical University Clinical Campus at Binghamton
+425 Robinson Street, Binghamton, NY  13904
+cryanatbinghamtondotedu
+
+"Once we recognize that we do not err out of laziness, stupidity, or
+evil intent, we can liberate ourselves from the impossible burden of
+trying to be permanently right. We can take seriously the proposition
+that we could be in error, without deeming ourselves idiotic or
+unworthy." [Karen Schulz, in Being Wrong: Adventures in the Margin of Error]
+
+
+R. Michael Weylandt wrote:
+> On Fri, Jan 18, 2013 at 3:32 PM, Monte Milanuk <memilanuk at gmail.com> wrote:
+>> Hello Bob,
+>>
+>> I'm one of those who follow the list mainly out of curiosity, not
+>> because I have any connection with teaching stats.  My goal was to
+>> keep an eye out for some of the occasional posts where people post
+>> useful links or material that they use in teaching... but I understand
+>> the frustration with the frequent off-topic requests for help learning
+>> R.
+>>
+>> I don't know if yet another mailing list would be worth considering...
+>> but for comparison, in the Python world there is a SIG for Education,
+>> very similar to this one... and there is a SIG/mailing list called
+>> 'python-tutor', specifically for people asking beginner type
+>> questions, or who maybe don't want to brave the 'main' list and its
+>> denizens just yet because they still need/want some hand-holding.
+>> There is very little off-topic discussion on the Edu list, and
+>> neophytes have a kiddie pool that they feel welcome in.
+>>
+>> I know the R community seems to kind of enjoy the occasional
+>> snarkiness on the main list by certain posters, and I've certainly
+>> been around the 'Net long enough to have developed a thick enough skin
+>> myself, but for new users it may be a bit intimidating.  Maybe an
+>> 'R-Novice' or 'R-Tutor' list would open up an intermediate ground for
+>> beginners and reduce the 'pollution' of the R-Teaching list?
+>>
+> 
+> It's a topic that's been discussed many times before on R-help, with
+> the usual outcome being some feeling that it would lower the quality
+> of responses that newbies get. I'm not sure it's an argument I buy,
+> but if you want to raise the topic again, I can certainly promise to
+> be active (enough) on R-Tutor.
+> 
+> There might also be some value in thinking of an R-Statistics list
+> (though under a much better name) where statistical questions are fair
+> game -- it's always seemed odd to me that data munging is a fair topic
+> on the various R lists, while data analysis isn't.
+> 
+> Just throwing it out there,
+> 
+> MW
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From jefflaux at gmail.com  Fri Jan 18 17:22:41 2013
+From: jefflaux at gmail.com (Jeff Laux)
+Date: Fri, 18 Jan 2013 11:22:41 -0500
+Subject: [R-sig-teaching] importing and processing large datasets in R
+ (fwd)
+In-Reply-To: <50F97371.6030005@binghamton.edu>
+References: <20130118151215.506DC71989A5@mail89.csoft.net>
+	<CAC6CacjZX=krOTcdi16EVwDD-uCvy3jqr5aN-YucGnj7f+2k_Q@mail.gmail.com>
+	<CAAmySGNxJ0sv0Brw0t1V__qs97tQ8uCiB-PSSuA5MGwka4vxng@mail.gmail.com>
+	<50F97371.6030005@binghamton.edu>
+Message-ID: <50F976D1.2090907@gmail.com>
+
+I think the kinds of confusions that prompted this discussion are 
+normal, and may not be something to fret over.  That said, I support the 
+idea of another appropriate SIG.  However, r-sig-teaching & r-sig-tutor 
+are going to elicit more of these same kinds of confusions.  We should 
+use r-sig-forstatisticseducation and r-sig-fornovices, instead.
+
+
+On 1/18/2013 11:08 AM, Christopher W. Ryan wrote:
+> I'd participate actively in an "R-tutor" mailing list.
+>
+> --Chris
+>
+> Christopher W. Ryan, MD, MS
+> SUNY Upstate Medical University Clinical Campus at Binghamton
+> 425 Robinson Street, Binghamton, NY  13904
+> cryanatbinghamtondotedu
+>
+> "Once we recognize that we do not err out of laziness, stupidity, or
+> evil intent, we can liberate ourselves from the impossible burden of
+> trying to be permanently right. We can take seriously the proposition
+> that we could be in error, without deeming ourselves idiotic or
+> unworthy." [Karen Schulz, in Being Wrong: Adventures in the Margin of Error]
+>
+>
+> R. Michael Weylandt wrote:
+>> On Fri, Jan 18, 2013 at 3:32 PM, Monte Milanuk <memilanuk at gmail.com> wrote:
+>>> Hello Bob,
+>>>
+>>> I'm one of those who follow the list mainly out of curiosity, not
+>>> because I have any connection with teaching stats.  My goal was to
+>>> keep an eye out for some of the occasional posts where people post
+>>> useful links or material that they use in teaching... but I understand
+>>> the frustration with the frequent off-topic requests for help learning
+>>> R.
+>>>
+>>> I don't know if yet another mailing list would be worth considering...
+>>> but for comparison, in the Python world there is a SIG for Education,
+>>> very similar to this one... and there is a SIG/mailing list called
+>>> 'python-tutor', specifically for people asking beginner type
+>>> questions, or who maybe don't want to brave the 'main' list and its
+>>> denizens just yet because they still need/want some hand-holding.
+>>> There is very little off-topic discussion on the Edu list, and
+>>> neophytes have a kiddie pool that they feel welcome in.
+>>>
+>>> I know the R community seems to kind of enjoy the occasional
+>>> snarkiness on the main list by certain posters, and I've certainly
+>>> been around the 'Net long enough to have developed a thick enough skin
+>>> myself, but for new users it may be a bit intimidating.  Maybe an
+>>> 'R-Novice' or 'R-Tutor' list would open up an intermediate ground for
+>>> beginners and reduce the 'pollution' of the R-Teaching list?
+>>>
+>> It's a topic that's been discussed many times before on R-help, with
+>> the usual outcome being some feeling that it would lower the quality
+>> of responses that newbies get. I'm not sure it's an argument I buy,
+>> but if you want to raise the topic again, I can certainly promise to
+>> be active (enough) on R-Tutor.
+>>
+>> There might also be some value in thinking of an R-Statistics list
+>> (though under a much better name) where statistical questions are fair
+>> game -- it's always seemed odd to me that data munging is a fair topic
+>> on the various R lists, while data analysis isn't.
+>>
+>> Just throwing it out there,
+>>
+>> MW
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+From Robert.Grant at sgul.kingston.ac.uk  Fri Jan 18 17:27:50 2013
+From: Robert.Grant at sgul.kingston.ac.uk (Grant, Robert)
+Date: Fri, 18 Jan 2013 16:27:50 +0000
+Subject: [R-sig-teaching] Convincing other colleagues to use R in
+	the	classroom
+Message-ID: <hi1gkqcu2jnxl0epyw9ttxva.1358526463712@email.android.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130118/e59b527f/attachment.pl>
+
+From kilburnw at mail.gvsu.edu  Fri Jan 18 17:29:04 2013
+From: kilburnw at mail.gvsu.edu (Whitt Kilburn)
+Date: Fri, 18 Jan 2013 11:29:04 -0500
+Subject: [R-sig-teaching] Convincing other colleagues to use R in the
+	classroom
+In-Reply-To: <411cee45bf4f8d06b248d7665878c3c6@reed.edu>
+References: <CA+srNj7rq9xppAENm6+nEfKRJ91cFtx_TJQP_xZ-KwbtDGnmRw@mail.gmail.com>
+	<411cee45bf4f8d06b248d7665878c3c6@reed.edu>
+Message-ID: <CAOnqpJiDTr4AtDKd+xGjLJ+dduNH9DfiJJexV8rYo+GRiJTZeg@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130118/159f036c/attachment.pl>
+
+From rpruim at calvin.edu  Fri Jan 18 17:42:05 2013
+From: rpruim at calvin.edu (Randall Pruim)
+Date: Fri, 18 Jan 2013 11:42:05 -0500
+Subject: [R-sig-teaching] large data, purpose of the SIG, teaching with R
+In-Reply-To: <CAEM0C4yW_ycvtK4PMqUnf1nPfCoVjWUSZ=11KefwG=DGmw==dA@mail.gmail.com>
+References: <20130118151215.506DC71989A5@mail89.csoft.net>
+	<CAEM0C4yW_ycvtK4PMqUnf1nPfCoVjWUSZ=11KefwG=DGmw==dA@mail.gmail.com>
+Message-ID: <9CC4C303-839F-409D-A79E-AF9BF7B1F4A6@calvin.edu>
+
+I'm not sure I would call the list completely unsuitable for your question, but it is borderline.  My main point (also expressed in Bob's reply) is that you might get better answers elsewhere because there may be more people with more expertise in this area on other lists.
+
+As a side note, I think that we are heading into an era where using more large data sets in lower level courses may become more common.  So this may come back around to become very appropriate for this list (although this list may still be shorter on the expertise to answer your questions fully than some other lists).
+
+In any case, good luck solving your large data problems.
+
+As for the usefulness and (intended) scope of the SIG as it currently exists, I'd have to think more about that.  It seems to me that the trend is toward more use of R in undergraduate courses, especially in second courses and in courses for majors and minors, but also in intro courses.  But my view of the world may be distorted by the fact that I have been heavily involved in that the last few years.
+
+Finally, I'll mention one outcome of the work described in the preceding paragraph is an R package (co-developed with Danny Kaplan and Nick Horton) that we think makes it much easier to teach statistics using R. The package is called mosaic and is available on CRAN.  We are getting closer and closer to something we are willing to call version 1.0.  Perhaps in a separate message I can say a bit more about what is in that package while there may still be time to adjust things for second semester courses that are about to begin or have just begun.
+
+---rjp
+
+
+On Jan 18, 2013, at 10:20 AM, gaurav singh wrote:
+
+> Thank you Randall very much for your help. I didn't know that this list was
+> completely unsuitable for this type of a question. I assumed this list
+> would be with reference to both teaching as well for students who need and
+> use R in their university courses. In any case, thanks for informing me
+> that this is a wrong list and I will post my other questions to some more
+> relevant list.
+> 
+> 
+> On Fri, Jan 18, 2013 at 4:12 PM, Bob <bob at statland.org> wrote:
+> 
+>> 
+>> I am one of the people who lobbied for the creation of this list long
+>> ago.  I am not sure R is a great choice for a first course in
+>> statistics, but I thought that if someone chose to use it, then they
+>> and their students might need all the help they could get to make it
+>> easier for the class.  But right from the beginning, the bulk of the
+>> posts to the list were like this latest one quoted below -- questions
+>> about how to do something with R that has no obvious connection to
+>> pedagogy or to using R in a first course.  This means that those of us
+>> interested in the actual topic of this list get lots of off-topic
+>> messages, while those who post the messages reach only a small
+>> audience that may not be interested in their question.  Some off topic
+>> posts are answered, some ingnored, and some posters get redirected
+>> (even scolded) toward a more appropriate list.  I see only losers in
+>> this process.
+>> 
+>> So my question is whether this list really serves any useful purpose,
+>> or does it just siphon off queries that should have gone elsewhere?
+>> Those who post those queries would be likely to get an answer, and get
+>> it sooner, if they posted to an appropriate list in the first place.
+>> My own answer is that this list is not useful at the present time.
+>> Possibly in the future more people will be interested in R for an
+>> introductory course and then they might be glad if this list were
+>> still alive, but so far...
+>> 
+>> So I am wondering what others on the list think.
+>> 
+>> Here's the official description of this list.
+>> 
+>> Special Interest Group (SIG) on teaching statistics with R. The
+>> primary purpose of the group is to provide a forum where instructors
+>> using R in their statistics courses can share ideas, teaching
+>> materials, and experiences. One particular focus of the SIG is to
+>> provide helpful support to instructors new to R who are teaching
+>> introductory statistics courses populated with students with little
+>> experience in statistics, statistical software, and command line
+>> interfaces.
+>> 
+>> Here is where most posts to this list really should have gone.
+>> 
+>> R-help
+>> 
+>>    The ?main? R mailing list, for discussion about problems and
+>>    solutions using R, announcements (not covered by ?R-announce? or
+>>    ?R-packages?, see above), about the availability of new
+>>    functionality for R and documentation of R, comparison and
+>>    compatibility with S-plus, and for the posting of nice examples
+>>    and benchmarks.
+>> 
+>> Forwarded message:
+>>> 
+>>> Hi Everyone,
+>>> 
+>>> I am a little new to R and the first problem I am facing is the dilemma
+>>> whether R is suitable for files of size 2 GB's and slightly more then 2
+>>> Million rows. When I try importing the data using read.table, it seems to
+>>> take forever and I have to cancel the command. Are there any special
+>>> techniques or methods which i can use or some tricks of the game that I
+>>> should keep in mind in order to be able to do data analysis on such large
+>>> files using R?
+>> 
+>> 
+>> ------->  First-time AP Stats. teacher?  Help is on the way! See
+>> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+>>      _
+>>     | |          Robert W. Hayden
+>>     | |          142 Main Street
+>>    /  |          Apartment 104
+>>   |   |          Jaffrey, New Hampshire 03452  USA
+>>   |   |          email: bob@ the site below
+>>  /    |          website: http://statland.org
+>> | x   /          phone: (603) 532-7224 (home)
+>> ''''''
+>> 
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>> 
+> 
+> 
+> 
+> -- 
+> Regards
+> Gaurav Singh
+> 
+> 	[[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From memilanuk at gmail.com  Fri Jan 18 17:47:50 2013
+From: memilanuk at gmail.com (Monte Milanuk)
+Date: Fri, 18 Jan 2013 08:47:50 -0800
+Subject: [R-sig-teaching] importing and processing large datasets in R
+	(fwd)
+In-Reply-To: <50F976D1.2090907@gmail.com>
+References: <20130118151215.506DC71989A5@mail89.csoft.net>
+	<CAC6CacjZX=krOTcdi16EVwDD-uCvy3jqr5aN-YucGnj7f+2k_Q@mail.gmail.com>
+	<CAAmySGNxJ0sv0Brw0t1V__qs97tQ8uCiB-PSSuA5MGwka4vxng@mail.gmail.com>
+	<50F97371.6030005@binghamton.edu> <50F976D1.2090907@gmail.com>
+Message-ID: <CAC6Caci=XNvLmUMOtF-nUWahRAyQ==5zKO+ZM+=sxW+RRAE+OQ@mail.gmail.com>
+
+How about 'r-sig-edu' for Education - should be obvious enough to
+faculty, teaching staff, etc., and 'r-sig-novice' (or -tutor) which
+would probably 'jump out' as the obvious choice to a new user trying
+to choose which list to subscribe and post to...
+
+Monte
+
+On Fri, Jan 18, 2013 at 8:22 AM, Jeff Laux <jefflaux at gmail.com> wrote:
+> I think the kinds of confusions that prompted this discussion are normal,
+> and may not be something to fret over.  That said, I support the idea of
+> another appropriate SIG.  However, r-sig-teaching & r-sig-tutor are going to
+> elicit more of these same kinds of confusions.  We should use
+> r-sig-forstatisticseducation and r-sig-fornovices, instead.
+>
+>
+>
+> On 1/18/2013 11:08 AM, Christopher W. Ryan wrote:
+>>
+>> I'd participate actively in an "R-tutor" mailing list.
+>>
+>> --Chris
+>>
+>> Christopher W. Ryan, MD, MS
+>> SUNY Upstate Medical University Clinical Campus at Binghamton
+>> 425 Robinson Street, Binghamton, NY  13904
+>> cryanatbinghamtondotedu
+>>
+>> "Once we recognize that we do not err out of laziness, stupidity, or
+>> evil intent, we can liberate ourselves from the impossible burden of
+>> trying to be permanently right. We can take seriously the proposition
+>> that we could be in error, without deeming ourselves idiotic or
+>> unworthy." [Karen Schulz, in Being Wrong: Adventures in the Margin of
+>> Error]
+>>
+>>
+>> R. Michael Weylandt wrote:
+>>>
+>>> On Fri, Jan 18, 2013 at 3:32 PM, Monte Milanuk <memilanuk at gmail.com>
+>>> wrote:
+>>>>
+>>>> Hello Bob,
+>>>>
+>>>> I'm one of those who follow the list mainly out of curiosity, not
+>>>> because I have any connection with teaching stats.  My goal was to
+>>>> keep an eye out for some of the occasional posts where people post
+>>>> useful links or material that they use in teaching... but I understand
+>>>> the frustration with the frequent off-topic requests for help learning
+>>>> R.
+>>>>
+>>>> I don't know if yet another mailing list would be worth considering...
+>>>> but for comparison, in the Python world there is a SIG for Education,
+>>>> very similar to this one... and there is a SIG/mailing list called
+>>>> 'python-tutor', specifically for people asking beginner type
+>>>> questions, or who maybe don't want to brave the 'main' list and its
+>>>> denizens just yet because they still need/want some hand-holding.
+>>>> There is very little off-topic discussion on the Edu list, and
+>>>> neophytes have a kiddie pool that they feel welcome in.
+>>>>
+>>>> I know the R community seems to kind of enjoy the occasional
+>>>> snarkiness on the main list by certain posters, and I've certainly
+>>>> been around the 'Net long enough to have developed a thick enough skin
+>>>> myself, but for new users it may be a bit intimidating.  Maybe an
+>>>> 'R-Novice' or 'R-Tutor' list would open up an intermediate ground for
+>>>> beginners and reduce the 'pollution' of the R-Teaching list?
+>>>>
+>>> It's a topic that's been discussed many times before on R-help, with
+>>> the usual outcome being some feeling that it would lower the quality
+>>> of responses that newbies get. I'm not sure it's an argument I buy,
+>>> but if you want to raise the topic again, I can certainly promise to
+>>> be active (enough) on R-Tutor.
+>>>
+>>> There might also be some value in thinking of an R-Statistics list
+>>> (though under a much better name) where statistical questions are fair
+>>> game -- it's always seemed odd to me that data munging is a fair topic
+>>> on the various R lists, while data analysis isn't.
+>>>
+>>> Just throwing it out there,
+>>>
+>>> MW
+>>>
+>>> _______________________________________________
+>>> R-sig-teaching at r-project.org mailing list
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From rpruim at calvin.edu  Fri Jan 18 18:01:59 2013
+From: rpruim at calvin.edu (Randall Pruim)
+Date: Fri, 18 Jan 2013 12:01:59 -0500
+Subject: [R-sig-teaching] Convincing other colleagues to use R in
+	the	classroom
+In-Reply-To: <hi1gkqcu2jnxl0epyw9ttxva.1358526463712@email.android.com>
+References: <hi1gkqcu2jnxl0epyw9ttxva.1358526463712@email.android.com>
+Message-ID: <4A755E84-FE97-477D-9F0F-44A2C09B20BD@calvin.edu>
+
+
+Robert's message provides a nice segue to my previously advertised post regarding the mosaic package.
+
+Here are three things that I think are important in getting R to have wider usage:
+
+1) Having a perceived advantage because R can do something other systems in use cannot
+
+2) Making R look as simple/clear as possible when it is first introduced.
+
+3) PATIENCE
+
+I've spent several hours with a colleague in engineering this week.  He was already using R, but his R skills were weak, he lacked a strong understanding of the methods he wanted to use, and he had never seen RStudio and the extras it provides.  I think his impression of R and his future use of R will be much better for our recent interaction.  This is the "low hanging fruit" -- improving the experience for those already attracted to R.  It has side effects of making R more attractive to others as well.  It is really easy to write really bad R code that will do more harm than good at winning the hearts and minds of those not yet using R.  So any time invested in improving how others use R is time well spent if your goal is to grow the R user base.  [One immediate outcome of this is that he has abandoned the Word document he was preparing for an article submission and moved over to using knitr -- he's thrilled.  His previous method was to use cat() and trap lots of ASCII output in a file which was then copied and pasted into Word, and I don't know if he had been using any plots.  For those who don't know LaTeX and don't want to learn it, the RMarkdown tools in RStudio are a first step in this direction and really easy to use.]
+
+Regarding (2), I think the guiding principle at the start needs to be "Less Volume, More Creativity" (from a poster hung in the war room of the Green Bay Packers by head coach Mike McCarthy).  While there are many ways to skin cats in R, newbies need to have someone teach them a systematic cat-skinning approach that generalizes to dog-skinning, mouse-skinning, etc, etc.  The mosaic package provides some utilities to make this possible in one particular way.  One of our goals was to simplify the high level view of R commands so that most things can be done with one paradigm:
+
+	functionname( y ~ x | z, data = ..., other options )
+
+If you are familiar with lattice graphics, you can guess that we use only lattice graphics.  We have written additional functions so that things like mean( age ~ sex, data=HELPrct ) gives the mean ages for each sex.  And, of course, linear models work in this same way.  Tables can be created using our tally() function and similar formulas.  Depending on your intended topics, you can probably teach an entire intro course without mentioning the $ operator if you want to.  Further more if you can get students to think of y ~ x | z as y depends on x (perhaps differently for each z), that is a useful thinking habit that works for graphics, numerical summaries, and linear models.
+
+The package contains a vignette with one minimal set of R commands sufficient for an intro course and a sampler of their usage.
+
+For more information, you might check out the slides available at 
+
+	http://www.calvin.edu/~rpruim/talks/
+
+several of which were used for presentations either at the Joint Mathematics Meetings last week or at a workshop I did at George Washington University in November.
+
+---rjp
+
+
+
+On Jan 18, 2013, at 11:27 AM, Grant, Robert wrote:
+
+> Dear all
+> 
+> This is a really interesting issue and one taxing a lot of faculty right now. I am this year introducing a little R into computer stats workshops alongside mostly SPSS. I saw Andy Field (author of Discovering Statistics Using R) give a talk on this last year, and he identified the problem of being the only person in the institution who can advise students on R: you're going to get swamped with requests for help. Also, your colleagues have carved out little territories for themselves and changing away from their beloved SPSS is scary. I think it will happen, top-down, because of the money saving and demand from students, but it needs a small group of faculty to work together in the institution to make it possible (the R Team?). Once  that is in place, some of the SPSS fans will join you because they don't want to be left behind, but until we each have an R team, the SPSS fans remain a safe majority; why should they change?
+> 
+> One more thing- we need to constantly challenge the dominant narrative that SPSS (or SAS or Stata) is easy to learn. It isn't,  it just has comforting menus and icons.
+> 
+> Best wishes
+> Robert
+> 
+> Sent from Samsung Mobile
+> 
+> Robert Grant, Senior Research Fellow
+> St George's University of London & Kingston University
+> --
+> tinyurl.com/helpwithstats
+> robertgrantstats.wordpress.com
+> www.animatedgraphs.co.uk
+> --
+> 
+> 
+> 
+> -------- Original message --------
+> From: Paula Grafton Young <paula.young at salem.edu>
+> Date:
+> To: bob at statland.org
+> Cc: R-sig-teaching <r-sig-teaching at r-project.org>
+> Subject: [R-sig-teaching] Convincing other colleagues to use R in the classroom
+> 
+> 
+> Re: the post from bob at statland.org: As one of those people who uses R in
+> introductory statistics courses, I hope that this list does not go away. I
+> agree that most of the posts I see are off-topic but the ones that are
+> on-topic have been helpful to me in the classroom. Perhaps a name change
+> would be in order to avoid the confusion relayed by the previous post
+> on reading
+> large data sets--maybe R-sig-ClassroomTeaching or something like that to
+> make it clearer.
+> 
+> I do actually have a question that I hope is relevant. I chose to adopt R
+> for all the reasons most people adopt it--open source, accurate,
+> extensible, platform independent. I thought that I would be able to convince
+> my colleagues in other departments to at least consider using R (with
+> something like RKWard or another GUI). I have failed miserably in
+> doing so. I've
+> offered workshops, invited colleagues to attend the R labs for my classes,
+> and have had minimal response (one political scientist, one ecologist).
+> Even having students from my classes do demonstrations of phenomenal graphical
+> representations of data sets didn't convince colleagues to even download R
+> (except for again, the political scientist; the ecologist already had it).
+> 
+> I teach at a very small college with a very small IT budget and no
+> departmental budgets for software. The sociologists, economists and
+> business administration faculty won't let go of SPSS n the classroom;
+> the biology
+> faculty use Excel and SPSS, with the exception of the ecologist mentioned
+> previously; the psychology faculty will only use calculators and tables.
+> 
+> So, what I would like to hear from some of you at other institutions is what
+> can I do to convince/encourage my colleagues in other departments to adopt
+> R and save our institution a significant amount of money in licensing?
+> 
+> Thank you in advance for your insights and advice.
+> 
+> ---
+> Dr. Paula Grafton Young
+> Associate Professor of Mathematics
+> Chair, Curriculum Committee, 2011 - 2013
+> Chair, Strategic Planning Steering Committee, 2012 - 2013
+> paula.young at salem.edu
+> 336.721.2747 (O)
+> 336.721.2653 (F)
+> 
+> <http://www.facebook.com/SalemCollege><http://www.twitter.com/SalemCollege>
+> 
+> 
+> 
+> On Fri, Jan 18, 2013 at 10:12 AM, Bob <bob at statland.org> wrote:
+> 
+>> 
+>> I am one of the people who lobbied for the creation of this list long
+>> ago.  I am not sure R is a great choice for a first course in
+>> statistics, but I thought that if someone chose to use it, then they
+>> and their students might need all the help they could get to make it
+>> easier for the class.  But right from the beginning, the bulk of the
+>> posts to the list were like this latest one quoted below -- questions
+>> about how to do something with R that has no obvious connection to
+>> pedagogy or to using R in a first course.  This means that those of us
+>> interested in the actual topic of this list get lots of off-topic
+>> messages, while those who post the messages reach only a small
+>> audience that may not be interested in their question.  Some off topic
+>> posts are answered, some ingnored, and some posters get redirected
+>> (even scolded) toward a more appropriate list.  I see only losers in
+>> this process.
+>> 
+>> So my question is whether this list really serves any useful purpose,
+>> or does it just siphon off queries that should have gone elsewhere?
+>> Those who post those queries would be likely to get an answer, and get
+>> it sooner, if they posted to an appropriate list in the first place.
+>> My own answer is that this list is not useful at the present time.
+>> Possibly in the future more people will be interested in R for an
+>> introductory course and then they might be glad if this list were
+>> still alive, but so far...
+>> 
+>> So I am wondering what others on the list think.
+>> 
+>> Here's the official description of this list.
+>> 
+>> Special Interest Group (SIG) on teaching statistics with R. The
+>> primary purpose of the group is to provide a forum where instructors
+>> using R in their statistics courses can share ideas, teaching
+>> materials, and experiences. One particular focus of the SIG is to
+>> provide helpful support to instructors new to R who are teaching
+>> introductory statistics courses populated with students with little
+>> experience in statistics, statistical software, and command line
+>> interfaces.
+>> 
+>> Here is where most posts to this list really should have gone.
+>> 
+>> R-help
+>> 
+>>    The ?main? R mailing list, for discussion about problems and
+>>    solutions using R, announcements (not covered by ?R-announce? or
+>>    ?R-packages?, see above), about the availability of new
+>>    functionality for R and documentation of R, comparison and
+>>    compatibility with S-plus, and for the posting of nice examples
+>>    and benchmarks.
+>> 
+>> Forwarded message:
+>>> 
+>>> Hi Everyone,
+>>> 
+>>> I am a little new to R and the first problem I am facing is the dilemma
+>>> whether R is suitable for files of size 2 GB's and slightly more then 2
+>>> Million rows. When I try importing the data using read.table, it seems to
+>>> take forever and I have to cancel the command. Are there any special
+>>> techniques or methods which i can use or some tricks of the game that I
+>>> should keep in mind in order to be able to do data analysis on such large
+>>> files using R?
+>> 
+>> 
+>> ------->  First-time AP Stats. teacher?  Help is on the way! See
+>> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+>>      _
+>>     | |          Robert W. Hayden
+>>     | |          142 Main Street
+>>    /  |          Apartment 104
+>>   |   |          Jaffrey, New Hampshire 03452  USA
+>>   |   |          email: bob@ the site below
+>>  /    |          website: http://statland.org
+>> | x   /          phone: (603) 532-7224 (home)
+>> ''''''
+>> 
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>> 
+> 
+>        [[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+> This email has been scanned for all viruses by the MessageLabs Email
+> Security System.
+> 
+> This email has been scanned for all viruses by the MessageLabs Email
+> Security System.
+> 	[[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From bob at statland.org  Fri Jan 18 18:34:52 2013
+From: bob at statland.org (Bob)
+Date: Fri, 18 Jan 2013 12:34:52 -0500 (EST)
+Subject: [R-sig-teaching] Convincing other colleagues to use R
+Message-ID: <20130118173452.24B577198947@mail89.csoft.net>
+
+
+I would not expect direct attempts at persuasion to do much but there
+are indirect routes that might work.  If any of these folks are doing
+research, they might learn of R if it is recommended by internal
+statistical consultants or ITS people.  Administrators might be
+interested in supporting this if it reduces costs.  Last I knew SPSS
+was expensive.  Some years ago I was in a place that had a campus-wide
+Minitab license and SPSS in a single department lab.  That department
+started lobbying to "save money on wasteful duplication" by ditching
+Minitab in favor of a campus-wide SPSS license.  Turned out the
+existing Minitab licesne for the whole campus cost less than SPSS in
+one lab, and going to ALL SPSS would vastly INCREASE costs.  This
+could be especially relevant if faculty want to add the various
+extra-cost capabilites to SPSS.  If I were a really hard-nosed finance
+administrator I would require documentation that R cannot do whatever
+they want to do, and then follow up by asking ITS and stats. faculty
+if anyone had checked to see if R COULD do it.  (I thnk we all know the
+answer to that;-) I was also in a situation where Macs were squeezed
+out by ITS dropping support.  (I have nothing against Macs, but they
+were expensive to buy, and supporting two platforms was expensive as
+well.) If you have folks on the fringe of research, sooner or later
+people will want access to recent techniques for which R code is
+freely downloadable but integration into commercial packages years
+down the road.  
+
+For teaching I would really prefer Minitab to R FOR BEGINNERS and that
+too would be much cheaper though not free.  But if you are using R in
+an intro. course now then down the road your students may be doing
+very impressive projects in their own discipline using R.  I have to
+say I have been in places where the relevant faculty would be very
+impressed and want to know more, and also in places where the relevant
+faculty would be threatened and outlaw the use of R in student work;-(  
+
+Forwarded message:
+> 
+> I do actually have a question that I hope is relevant. I chose to adopt R f=
+> or all the reasons most people adopt it--open source, accurate, extensible,=
+>  platform independent. I thought that I would be able to convince my collea=
+> gues in other departments to at least consider using R (with something like=
+>  RKWard or another GUI). I have failed miserably in doing so. I've offered =
+> workshops, invited colleagues to attend the R labs for my classes, and have=
+>  had minimal response (one political scientist, one ecologist).
+> Even having students from my classes do demonstrations of phenomenal graphi=
+> cal representations of data sets didn't convince colleagues to even downloa=
+> d R (except for again, the political scientist; the ecologist already had i=
+> t).
+> 
+> I teach at a very small college with a very small IT budget and no departme=
+> ntal budgets for software. The sociologists, economists and business admini=
+> stration faculty won't let go of SPSS n the classroom; the biology faculty =
+> use Excel and SPSS, with the exception of the ecologist mentioned previousl=
+> y; the psychology faculty will only use calculators and tables.
+> 
+> So, what I would like to hear from some of you at other institutions is wha=
+> t can I do to convince/encourage my colleagues in other departments to adop=
+> t R and save our institution a significant amount of money in licensing?
+> 
+> Thank you in advance for your insights and advice.
+> 
+> ---
+> Dr. Paula Grafton Young
+> Associate Professor of Mathematics
+> Chair, Curriculum Committee, 2011 - 2013 Chair, Strategic Planning Steering=
+>  Committee, 2012 - 2013 paula.young at salem.edu
+> 336.721.2747 (O)
+> 336.721.2653 (F)
+> 
+>  <http://www.facebook.com/SalemCollege><http://www.twitter.com/SalemCollege=
+> >
+> 
+> 
+> 
+> On Fri, Jan 18, 2013 at 10:12 AM, Bob <bob at statland.org> wrote:
+> 
+> >
+> > I am one of the people who lobbied for the creation of this list long 
+> > ago.  I am not sure R is a great choice for a first course in 
+> > statistics, but I thought that if someone chose to use it, then they 
+> > and their students might need all the help they could get to make it 
+> > easier for the class.  But right from the beginning, the bulk of the 
+> > posts to the list were like this latest one quoted below -- questions 
+> > about how to do something with R that has no obvious connection to 
+> > pedagogy or to using R in a first course.  This means that those of us 
+> > interested in the actual topic of this list get lots of off-topic 
+> > messages, while those who post the messages reach only a small 
+> > audience that may not be interested in their question.  Some off topic 
+> > posts are answered, some ingnored, and some posters get redirected 
+> > (even scolded) toward a more appropriate list.  I see only losers in 
+> > this process.
+> >
+> > So my question is whether this list really serves any useful purpose, 
+> > or does it just siphon off queries that should have gone elsewhere?
+> > Those who post those queries would be likely to get an answer, and get 
+> > it sooner, if they posted to an appropriate list in the first place.
+> > My own answer is that this list is not useful at the present time.
+> > Possibly in the future more people will be interested in R for an 
+> > introductory course and then they might be glad if this list were 
+> > still alive, but so far...
+> >
+> > So I am wondering what others on the list think.
+> >
+> > Here's the official description of this list.
+> >
+> > Special Interest Group (SIG) on teaching statistics with R. The 
+> > primary purpose of the group is to provide a forum where instructors 
+> > using R in their statistics courses can share ideas, teaching 
+> > materials, and experiences. One particular focus of the SIG is to 
+> > provide helpful support to instructors new to R who are teaching 
+> > introductory statistics courses populated with students with little 
+> > experience in statistics, statistical software, and command line 
+> > interfaces.
+> >
+> > Here is where most posts to this list really should have gone.
+> >
+> > R-help
+> >
+> >     The ?main? R mailing list, for discussion about problems and
+> >     solutions using R, announcements (not covered by ?R-announce? or
+> >     ?R-packages?, see above), about the availability of new
+> >     functionality for R and documentation of R, comparison and
+> >     compatibility with S-plus, and for the posting of nice examples
+> >     and benchmarks.
+> >
+> > Forwarded message:
+> > >
+> > > Hi Everyone,
+> > >
+> > > I am a little new to R and the first problem I am facing is the 
+> > > dilemma whether R is suitable for files of size 2 GB's and slightly 
+> > > more then 2 Million rows. When I try importing the data using 
+> > > read.table, it seems to take forever and I have to cancel the 
+> > > command. Are there any special techniques or methods which i can use 
+> > > or some tricks of the game that I should keep in mind in order to be 
+> > > able to do data analysis on such large files using R?
+> >
+> >
+> > ------->  First-time AP Stats. teacher?  Help is on the way! See
+> > http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.htm=
+> l
+> >       _
+> >      | |          Robert W. Hayden
+> >      | |          142 Main Street
+> >     /  |          Apartment 104
+> >    |   |          Jaffrey, New Hampshire 03452  USA
+> >    |   |          email: bob@ the site below
+> >   /    |          website: http://statland.org
+> >  | x   /          phone: (603) 532-7224 (home)
+> >  ''''''
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list 
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >
+> 
+> 	[[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list https://stat.ethz.ch/mailman/list=
+> info/r-sig-teaching
+> This e-mail and any files transmitted with it are for the sole use of the i=
+> ntended recipient(s) and may contain confidential and privileged informatio=
+> n. If you are not the intended recipient, please contact the sender by repl=
+> y e-mail and destroy all copies of the original message. Any unauthorized r=
+> eview, use, disclosure, dissemination, forwarding, printing or copying of t=
+> his email or any action taken in reliance on this e-mail is strictly prohib=
+> ited and may be unlawful.
+> 
+> 
+> 
+
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+      _
+     | |          Robert W. Hayden
+     | |          142 Main Street
+    /  |          Apartment 104
+   |   |          Jaffrey, New Hampshire 03452  USA
+   |   |          email: bob@ the site below
+  /    |          website: http://statland.org
+ | x   /          phone: (603) 532-7224 (home)
+ ''''''
+
+
+From i.e.holliday at aston.ac.uk  Sat Jan 19 17:37:24 2013
+From: i.e.holliday at aston.ac.uk (Holliday, Ian E)
+Date: Sat, 19 Jan 2013 16:37:24 +0000
+Subject: [R-sig-teaching] Convincing other colleagues to use R in the
+ classroom
+Message-ID: <C980075AFDDA964F9EE8981FE721663B50636CAD@exch-mb-l4-02.campus.aston.ac.uk>
+
+Hello Everyone,
+
+Paula Grafton Young wrote:
+> So, what I would like to hear from some of you at other institutions is what
+> can I do to convince/encourage my colleagues in other departments to adopt
+> R and save our institution a significant amount of money in licensing?
+
+And 
+Christopher W. Ryan noted:
+> "the key difference between point-click and writing code: reproducibility."
+
+You may be interested in R software I have been using for 4 years now to support my second level undergraduate statistics for psychologists course. This allows instructors to develop R modules that permit interactive investigations of statistical methods online. Students' computations (including R code, data, results tables, figures...etc) are archived using a 'blogging' system, providing URLs they can embed in reproducible documents ('compendiums') written for their assignments. My course also uses an associated peer reviewing system enabling a socially constructive statistical learning environment. The same platform supports reproducible scientific writing and statistical analysis, and the developers of the platform now have a series of papers (I am a co-author on a few) you can consult about details at www.freestatistics.org . The latter hosts the reproducible computing platform and the statistical learning platform is at www.wessa.net/rfc Further details are available from the main developer Patrick Wessa who can be contacted via either route. There are scores of R modules already developed and freely available, and I believe course materials such as mine could be shared with instructors interested in developing their own online courses using the RFC platform too.
+
+Patrick has talked at previous R-user conferences about this software, and I also gave a talk at the Warwick conference in 2011 on my experiences using it  - I think the podcast may still be available. Yes, they are here:
+Teaching Statistics to Psychology Students using Reproducible Computing package RC and supporting Peer Review Framework
+Abstract: http://web.warwick.ac.uk/statsdept/useR-2011/abstracts/310311-hollidayian.pdf
+Slides :  http://web.warwick.ac.uk/statsdept/user-2011/TalkSlides/Contributed/16Aug_1115_FocusI_5-Teaching_1-Holliday.pdf
+
+>From the students' perspective they don't have to install (or pay for!) software, or learn GUI navigation or R programming and instead concentrate on learning about the statistical methods, and applying their understanding directly in writing their reports. From the instructor's perspective I have found it requires a little more support than a traditional course, but it is not very demanding. To develop your own R modules you need only be a standard R programmer like me - I'm not particularly adept with R. But as there are so many modules available - from t-tests and histograms to time series decomposition  and partial least squares path modelling I imagine most instructors will find their needs are covered.
+
+There remains however a demand from my students (and colleagues) that students are exposed to SPSS as this is perceived as 'the gold standard' for statistical analysis, in psychology at least, and students want to be able to put 'proficient in SPSS' on their CVs. Note: not 'proficient in statistics'! Colleagues who have used SPSS for years (almost exclusively for anova and regression, tasks for which SPSS is, to my mind, a needlessly expensive solution) are unwilling to use other software and some even seem to find it difficult to recognize the same information when presented in an unfamiliar format. One even scribbled 'what's this nonsense?' on a student's work when sh/e chose to use QQplot and density plots from an R module in their research project! 
+
+I also strongly support Christopher's comment about reproducibility potentially being a key driver for the uptake of R, but most scientific authors will not make their research reproducible until journal requirements or institutional directives force them to do so. These have both been tried and have failed, as papers still get published without meeting these requirements even when they have been in place. The one other potential driver for the uptake of R more widely would be powerful new statistical tools not available elsewhere that offer scientific writers increased publication success and ease of production. Here's where a platform like http://rfc.wessa.net/ possibly has a USP. Given an exemplar analysis one simply has to paste in new data into the data panel on an R module online and recompute the analysis allowing one to communicate new results within seconds without any local software or computation at all - you can even do this from your mobile device, as a lot of my students do.
+
+Regards
+
+Ian
+
+
+Professor Ian E. Holliday PhD
+The Wellcome Trust Laboratory for MEG Studies
+Aston Brain Centre
+The School of Life and Health Sciences
+Aston University
+Aston Triangle 
+Birmingham B4 7ET
+United Kingdom
+
+
+From bob at statland.org  Mon Jan 21 03:10:06 2013
+From: bob at statland.org (Bob)
+Date: Sun, 20 Jan 2013 21:10:06 -0500 (EST)
+Subject: [R-sig-teaching] importing and processing large datasets in R
+Message-ID: <20130121021006.0C74471989AE@mail89.csoft.net>
+
+
+I did not choose the current name but I am not sure any of the
+alternatives would be any clearer.  I am also not sure how stray folks
+land here.  To me the page of SIG lists at CRAN seems pretty clear.
+R-help starts off as though it is the usual help channel though as the
+description goes on it does begin to sound like a place for experts.
+I am not sure they would be interested in changing the description of
+their list for us, but we might be able to get our own changed to
+explicitly EXclude how-to questions.  Still, the current description
+seems pretty clear.  
+
+But then we don't know people get here by looking at that list.
+Looking back, it does seem to me that most of the strays have appeared
+to have something other than English as their native tongue.  In that
+case, R-teaching might translate as R-learning or R-teach-me-how.
+It sounds to me like the suggested alternatives could suffer the same
+fate.  
+
+Forwarded message:
+> From r-sig-teaching-bounces at r-project.org Fri Jan 18 11:48:41 2013
+> X-Original-To: bob at statland.org
+> X-Csoft-Rule: spam<=5.0
+> X-Spam-Checker-Version: SpamAssassin 3.3.2-csoft38 (2011-06-06) on
+> 	ubar.csoft.net
+> X-Spam-Level: 
+> X-Spam-Status: No, score=-5.8 required=6.0 tests=BAYES_00,DKIM_ADSP_CUSTOM_MED,
+> 	DKIM_SIGNED,MISSING_HEADERS,RCVD_IN_DNSWL_HI,T_DKIM_INVALID autolearn=ham
+> 	version=3.3.2-csoft38
+> DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113;
+> 	h=mime-version:x-received:in-reply-to:references:date:message-id
+> 	:subject:from:cc:content-type;
+> 	bh=DiN7fl6+MGWfa44FNidN2SOWcZ+FlwUfhXBAE/lu7Ow=;
+> 	b=TC4ZLjr9a+s/p4nBdxqPRIlqlV5FIUF0UuTvBRtItEDvRx4m3u1H1GnFANh6YIl215
+> 	3wPSB3eNgGkxnn/UHKr1W7WJUuInBjfixZPEnpT5KGjYl/FDwD+6yVjxdVsRgyCfXs9p
+> 	UzqDvH7aj1cDGQIXtG0jO/znpKQqyX4sii5uDfRzm3NBlsXDqiKaiThoTcMby3R7HqXB
+> 	8CShVF8illpYyCDiYK/cwG3oVXzo5uElf3HtyuhNTaswVMWMoNJK7Q9MixoFguZ4LfGS
+> 	w/4Be+/o/sEuJRl5UsHXVrouiM1C1Zx/qgqJaT6iQF+Dnp3+pIpHmG3GB9K4MVkPqUwy
+> 	OE4A==
+> MIME-Version: 1.0
+> X-Received: by 10.112.8.129 with SMTP id r1mr3997441lba.127.1358527670836;
+> 	Fri, 18 Jan 2013 08:47:50 -0800 (PST)
+> In-Reply-To: <50F976D1.2090907 at gmail.com>
+> References: <20130118151215.506DC71989A5 at mail89.csoft.net>
+> 	<CAC6CacjZX=krOTcdi16EVwDD-uCvy3jqr5aN-YucGnj7f+2k_Q at mail.gmail.com>
+> 	<CAAmySGNxJ0sv0Brw0t1V__qs97tQ8uCiB-PSSuA5MGwka4vxng at mail.gmail.com>
+> 	<50F97371.6030005 at binghamton.edu> <50F976D1.2090907 at gmail.com>
+> Date: Fri, 18 Jan 2013 08:47:50 -0800
+> Message-ID: <CAC6Caci=XNvLmUMOtF-nUWahRAyQ==5zKO+ZM+=sxW+RRAE+OQ at mail.gmail.com>
+> From: Monte Milanuk <memilanuk at gmail.com>
+> Cc: R-sig-teaching <r-sig-teaching at r-project.org>
+> X-Tag-Only: YES
+> X-Filter-Node: phil1.ethz.ch
+> X-USF-Spam-Level: 
+> X-USF-Spam-Status: hits=0.3 tests=FREEMAIL_FROM, MISSING_HEADERS,
+> 	RCVD_IN_DNSWL_LOW, SPF_PASS, T_DKIM_INVALID
+> X-USF-Spam-Flag: NO
+> X-Virus-Scanned: by amavisd-new at stat.math.ethz.ch
+> Subject: Re: [R-sig-teaching] importing and processing large datasets in R
+> 	(fwd)
+> X-BeenThere: r-sig-teaching at r-project.org
+> X-Mailman-Version: 2.1.14
+> Precedence: list
+> List-Id: SIG on Teaching Statistics using R <r-sig-teaching.r-project.org>
+> List-Unsubscribe: <https://stat.ethz.ch/mailman/options/r-sig-teaching>,
+> 	<mailto:r-sig-teaching-request at r-project.org?subject=unsubscribe>
+> List-Archive: <https://stat.ethz.ch/pipermail/r-sig-teaching>
+> List-Post: <mailto:r-sig-teaching at r-project.org>
+> List-Help: <mailto:r-sig-teaching-request at r-project.org?subject=help>
+> List-Subscribe: <https://stat.ethz.ch/mailman/listinfo/r-sig-teaching>,
+> 	<mailto:r-sig-teaching-request at r-project.org?subject=subscribe>
+> Content-Type: text/plain; charset="us-ascii"
+> Content-Transfer-Encoding: 7bit
+> Errors-To: r-sig-teaching-bounces at r-project.org
+> Sender: r-sig-teaching-bounces at r-project.org
+> 
+> How about 'r-sig-edu' for Education - should be obvious enough to
+> faculty, teaching staff, etc., and 'r-sig-novice' (or -tutor) which
+> would probably 'jump out' as the obvious choice to a new user trying
+> to choose which list to subscribe and post to...
+> 
+> Monte
+> 
+> On Fri, Jan 18, 2013 at 8:22 AM, Jeff Laux <jefflaux at gmail.com> wrote:
+> > I think the kinds of confusions that prompted this discussion are normal,
+> > and may not be something to fret over.  That said, I support the idea of
+> > another appropriate SIG.  However, r-sig-teaching & r-sig-tutor are going to
+> > elicit more of these same kinds of confusions.  We should use
+> > r-sig-forstatisticseducation and r-sig-fornovices, instead.
+> >
+> >
+> >
+> > On 1/18/2013 11:08 AM, Christopher W. Ryan wrote:
+> >>
+> >> I'd participate actively in an "R-tutor" mailing list.
+> >>
+> >> --Chris
+> >>
+> >> Christopher W. Ryan, MD, MS
+> >> SUNY Upstate Medical University Clinical Campus at Binghamton
+> >> 425 Robinson Street, Binghamton, NY  13904
+> >> cryanatbinghamtondotedu
+> >>
+> >> "Once we recognize that we do not err out of laziness, stupidity, or
+> >> evil intent, we can liberate ourselves from the impossible burden of
+> >> trying to be permanently right. We can take seriously the proposition
+> >> that we could be in error, without deeming ourselves idiotic or
+> >> unworthy." [Karen Schulz, in Being Wrong: Adventures in the Margin of
+> >> Error]
+> >>
+> >>
+> >> R. Michael Weylandt wrote:
+> >>>
+> >>> On Fri, Jan 18, 2013 at 3:32 PM, Monte Milanuk <memilanuk at gmail.com>
+> >>> wrote:
+> >>>>
+> >>>> Hello Bob,
+> >>>>
+> >>>> I'm one of those who follow the list mainly out of curiosity, not
+> >>>> because I have any connection with teaching stats.  My goal was to
+> >>>> keep an eye out for some of the occasional posts where people post
+> >>>> useful links or material that they use in teaching... but I understand
+> >>>> the frustration with the frequent off-topic requests for help learning
+> >>>> R.
+> >>>>
+> >>>> I don't know if yet another mailing list would be worth considering...
+> >>>> but for comparison, in the Python world there is a SIG for Education,
+> >>>> very similar to this one... and there is a SIG/mailing list called
+> >>>> 'python-tutor', specifically for people asking beginner type
+> >>>> questions, or who maybe don't want to brave the 'main' list and its
+> >>>> denizens just yet because they still need/want some hand-holding.
+> >>>> There is very little off-topic discussion on the Edu list, and
+> >>>> neophytes have a kiddie pool that they feel welcome in.
+> >>>>
+> >>>> I know the R community seems to kind of enjoy the occasional
+> >>>> snarkiness on the main list by certain posters, and I've certainly
+> >>>> been around the 'Net long enough to have developed a thick enough skin
+> >>>> myself, but for new users it may be a bit intimidating.  Maybe an
+> >>>> 'R-Novice' or 'R-Tutor' list would open up an intermediate ground for
+> >>>> beginners and reduce the 'pollution' of the R-Teaching list?
+> >>>>
+> >>> It's a topic that's been discussed many times before on R-help, with
+> >>> the usual outcome being some feeling that it would lower the quality
+> >>> of responses that newbies get. I'm not sure it's an argument I buy,
+> >>> but if you want to raise the topic again, I can certainly promise to
+> >>> be active (enough) on R-Tutor.
+> >>>
+> >>> There might also be some value in thinking of an R-Statistics list
+> >>> (though under a much better name) where statistical questions are fair
+> >>> game -- it's always seemed odd to me that data munging is a fair topic
+> >>> on the various R lists, while data analysis isn't.
+> >>>
+> >>> Just throwing it out there,
+> >>>
+> >>> MW
+> >>>
+> >>> _______________________________________________
+> >>> R-sig-teaching at r-project.org mailing list
+> >>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >>
+> >> _______________________________________________
+> >> R-sig-teaching at r-project.org mailing list
+> >> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >>
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+> 
+
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+      _
+     | |          Robert W. Hayden
+     | |          142 Main Street
+    /  |          Apartment 104
+   |   |          Jaffrey, New Hampshire 03452  USA
+   |   |          email: bob@ the site below
+  /    |          website: http://statland.org
+ | x   /          phone: (603) 532-7224 (home)
+ ''''''
+
+
+From yvonnick.noel at uhb.fr  Thu Jan 24 06:47:40 2013
+From: yvonnick.noel at uhb.fr (Yvonnick Noel)
+Date: Thu, 24 Jan 2013 06:47:40 +0100
+Subject: [R-sig-teaching] New book: Statistical Psychology with R [in French]
+Message-ID: <5100CAFC.1020908@uhb.fr>
+
+Dear members,
+
+French reading people among you might be interested by the following book:
+
+Noel, Y. (2013). Psychologie statistique avec R [Statistical psychology 
+with R, in French], coll. PratiqueR, Paris: Springer. 
+http://www.springer.com/psychology/book/978-2-8178-0424-8
+
+This book provides a detailed presentation of all basics of statistical 
+inference for psychologists, both in a fisherian and a bayesian 
+approach. Although many authors have recently advocated for the use of 
+bayesian statistics in psychology (Wagenmaker et al., 2010, 2011 ; 
+Kruschke, 2010 ; Rouder et al., 2009) statistical manuals for 
+psychologists barely mention them. This manual provides a full bayesian 
+toolbox for commonly encountered problems in psychology and social 
+sciences, for comparing proportions, variances and means, and discusses 
+the advantages. But all foundations of the frequentist approach are also 
+provided, from data description to probability and density, through 
+combinatorics and set algebra.
+
+A special emphasis has been put on the analysis of categorical data and 
+contingency tables. Binomial and multinomial models with beta and 
+Dirichlet priors are presented, and their use for making (between rows 
+or between cells) contrasts in contingency tables is detailed on real 
+data. An automatic search of the best model for all problem types is 
+implemented in the AtelieR package, available on CRAN.
+
+Bayesian ANOVA is also presented, and illustrated on real data with the 
+help of the AtelieR and R2STATS packages (a GUI for GLM and GLMM in R). 
+In addition to classical and Bayesian inference on means, direct and 
+Bayesian inference on effect size and standardized effects are presented.
+
+I hope you might find this book useful,
+
+Best regards,
+
+Yvonnick Noel
+University of Brittany, Rennes
+France
+
+
+From allencornelius at gmail.com  Tue Jan 29 21:38:28 2013
+From: allencornelius at gmail.com (Allen Cornelius)
+Date: Tue, 29 Jan 2013 13:38:28 -0700
+Subject: [R-sig-teaching] Data sets for teaching advanced stats with R
+Message-ID: <605A9F6F-466F-46CA-8104-3D094B4206C6@gmail.com>
+
+Knowledgable group,
+
+I am in the process of designing an advanced statistics class for doctoral level clinical psychology students. Their background in basic statistical concepts is OK, but they have little exposure to statistical software. I am looking for pre existing data sets that they can explore fairly easily, probably using R and R Commander (though some coding would be OK), to illustrate some multivariate analyses (e.g., advanced regression, MANOVA, factor analysis). I don't expect proficiency with the software, but enough exposure to the output of results of analyses to understand what things mean. I am looking for multiple examples of the same analyses, so they get exposure and practice with lots of stuff. 
+
+Any suggestions for data sets included in packages or other good sources of sample multivariate data sets?
+
+Thanks. This list is always informative. 
+
+Allen
+
+
+From maj at waikato.ac.nz  Tue Jan 29 22:02:53 2013
+From: maj at waikato.ac.nz (Murray Jorgensen)
+Date: Wed, 30 Jan 2013 10:02:53 +1300
+Subject: [R-sig-teaching] Data sets for teaching advanced stats with R
+In-Reply-To: <605A9F6F-466F-46CA-8104-3D094B4206C6@gmail.com>
+References: <605A9F6F-466F-46CA-8104-3D094B4206C6@gmail.com>
+Message-ID: <510838FD.1050000@waikato.ac.nz>
+
+Brian Everitt's book
+
+An R and S-Plus Companion to Multivariate Analysis
+http://www.springer.com/statistics/social+sciences+%26+law/book/978-1-85233-882-4
+
+has a number of useful data sets.
+
+Murray
+
+On 30/01/2013 9:38 a.m., Allen Cornelius wrote:
+> Knowledgable group,
+>
+> I am in the process of designing an advanced statistics class for doctoral level clinical psychology students. Their background in basic statistical concepts is OK, but they have little exposure to statistical software. I am looking for pre existing data sets that they can explore fairly easily, probably using R and R Commander (though some coding would be OK), to illustrate some multivariate analyses (e.g., advanced regression, MANOVA, factor analysis). I don't expect proficiency with the software, but enough exposure to the output of results of analyses to understand what things mean. I am looking for multiple examples of the same analyses, so they get exposure and practice with lots of stuff.
+>
+> Any suggestions for data sets included in packages or other good sources of sample multivariate data sets?
+>
+> Thanks. This list is always informative.
+>
+> Allen
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+-- 
+Dr Murray Jorgensen      http://www.stats.waikato.ac.nz/Staff/maj.html
+Department of Statistics, University of Waikato, Hamilton, New Zealand
+Email: maj at waikato.ac.nz      majmurr at gmail.com         Fax 7 838 4155
+Phone  +64 7 838 4773 wk    Home +64 7 825 0441   Mobile 021 0200 8350
+
+
+From 538280 at gmail.com  Tue Jan 29 23:30:49 2013
+From: 538280 at gmail.com (Greg Snow)
+Date: Tue, 29 Jan 2013 15:30:49 -0700
+Subject: [R-sig-teaching] Data sets for teaching advanced stats with R
+In-Reply-To: <605A9F6F-466F-46CA-8104-3D094B4206C6@gmail.com>
+References: <605A9F6F-466F-46CA-8104-3D094B4206C6@gmail.com>
+Message-ID: <CAFEqCdwdmKF-04pphAwXVr_RBk=x0ZNam8FygMSXvRsHgUyNOw@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130129/4076bb13/attachment.pl>
+
+From 538280 at gmail.com  Wed Jan 30 22:44:26 2013
+From: 538280 at gmail.com (Greg Snow)
+Date: Wed, 30 Jan 2013 14:44:26 -0700
+Subject: [R-sig-teaching] Data sets for teaching advanced stats with R
+In-Reply-To: <CAFEqCdwdmKF-04pphAwXVr_RBk=x0ZNam8FygMSXvRsHgUyNOw@mail.gmail.com>
+References: <605A9F6F-466F-46CA-8104-3D094B4206C6@gmail.com>
+	<CAFEqCdwdmKF-04pphAwXVr_RBk=x0ZNam8FygMSXvRsHgUyNOw@mail.gmail.com>
+Message-ID: <CAFEqCdwJdNQ2Agnvr+JxOWd79GKdHb60P6Jr33gwV=qgW-Sycw@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130130/b9ee567a/attachment.pl>
+
+From vincent.nijs at gmail.com  Wed Jan 30 23:26:52 2013
+From: vincent.nijs at gmail.com (Vincent Nijs)
+Date: Wed, 30 Jan 2013 14:26:52 -0800
+Subject: [R-sig-teaching] using R for a stats or marketing research class
+	with a 'Shiny' gui
+Message-ID: <CAHu4znCUzp-nuvaNG3vQ+S4D1q9WOgUmcf0BLPwTY37cn5qvvQ@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130130/de31fe62/attachment.pl>
+
+From bob at statland.org  Thu Jan 31 00:48:01 2013
+From: bob at statland.org (Bob)
+Date: Wed, 30 Jan 2013 18:48:01 -0500 (EST)
+Subject: [R-sig-teaching] Handbook of Small Datasets
+Message-ID: <20130130234801.9BAF471989D5@mail89.csoft.net>
+
+
+Just saw a mention of _Handbook of Small Datasets_.  Does anyone know
+if the data files ever got cleaned up and posted on the Internet?  I
+bought this when I came out and the disk included files that seemed to
+be created by cut and paste from the manuscript.  This meant that the
+"shape" of the data matched a typesetter's needs rather than a
+statistician's.  Most of the datasets needed considerable manual work
+before one could hand them off to students.  (I DID find what appeared
+to be the original disfunctional versions online.)  It's really sad
+that a collection that was such a good idea on paper was so poorly
+implemented.  
+
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+      _
+     | |          Robert W. Hayden
+     | |          142 Main Street
+    /  |          Apartment 104
+   |   |          Jaffrey, New Hampshire 03452  USA
+   |   |          email: bob@ the site below
+  /    |          website: http://statland.org
+ | x   /          phone: (603) 532-7224 (home)
+ ''''''
+
+
+From jefflaux at gmail.com  Thu Jan 31 04:54:06 2013
+From: jefflaux at gmail.com (Jeff Laux)
+Date: Wed, 30 Jan 2013 22:54:06 -0500
+Subject: [R-sig-teaching] Handbook of Small Datasets
+In-Reply-To: <20130130234801.9BAF471989D5@mail89.csoft.net>
+References: <20130130234801.9BAF471989D5@mail89.csoft.net>
+Message-ID: <5109EADE.7080205@gmail.com>
+
+Yes.  They can be found on NC State's Statistics department's website:
+
+      http://www.stat.ncsu.edu/working_groups/sas/sicl/data/
+
+However, the accompanying stories don't exist.  What is posted is just 
+tab delimited text files with numeric data.  Someone else will have to 
+say what the numbers are supposed to mean.
+
+
+On 1/30/2013 6:48 PM, Bob wrote:
+> Just saw a mention of _Handbook of Small Datasets_.  Does anyone know
+> if the data files ever got cleaned up and posted on the Internet?  I
+> bought this when I came out and the disk included files that seemed to
+> be created by cut and paste from the manuscript.  This meant that the
+> "shape" of the data matched a typesetter's needs rather than a
+> statistician's.  Most of the datasets needed considerable manual work
+> before one could hand them off to students.  (I DID find what appeared
+> to be the original disfunctional versions online.)  It's really sad
+> that a collection that was such a good idea on paper was so poorly
+> implemented.
+>
+>
+> ------->  First-time AP Stats. teacher?  Help is on the way! See
+> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+>        _
+>       | |          Robert W. Hayden
+>       | |          142 Main Street
+>      /  |          Apartment 104
+>     |   |          Jaffrey, New Hampshire 03452  USA
+>     |   |          email: bob@ the site below
+>    /    |          website: http://statland.org
+>   | x   /          phone: (603) 532-7224 (home)
+>   ''''''
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+From djmuser at gmail.com  Thu Jan 31 10:58:54 2013
+From: djmuser at gmail.com (Dennis Murphy)
+Date: Thu, 31 Jan 2013 01:58:54 -0800
+Subject: [R-sig-teaching] Handbook of Small Datasets
+In-Reply-To: <5109EADE.7080205@gmail.com>
+References: <20130130234801.9BAF471989D5@mail89.csoft.net>
+	<5109EADE.7080205@gmail.com>
+Message-ID: <CADv2QyGSqGVrJSET-Qah2AdagLWiOpy3h5=r_OWKeSPu-Ft6_A@mail.gmail.com>
+
+That's what the book is for: its purpose is to describe the variables
+and context of each data set. The book 'Data' by Andrews and Herzberg
+(1985) is similar in that respect. As I mentioned to Bob privately, I
+thought about making a R package of the data sets in HDLMO several
+years ago because I used a number of them in teaching, but then
+realized that if I wrote the help pages, I'd essentially be violating
+the copyright of the book...so that project died. But I do have a
+collection of R objects for the data sets which I'm editing and hope
+to finish before the weekend is out. Bob prefers a zipped csv archive,
+but I can make an R binary available (or a zipped version of .Rdata
+files) if anyone is interested.
+
+Dennis
+
+On Wed, Jan 30, 2013 at 7:54 PM, Jeff Laux <jefflaux at gmail.com> wrote:
+> Yes.  They can be found on NC State's Statistics department's website:
+>
+>      http://www.stat.ncsu.edu/working_groups/sas/sicl/data/
+>
+> However, the accompanying stories don't exist.  What is posted is just tab
+> delimited text files with numeric data.  Someone else will have to say what
+> the numbers are supposed to mean.
+>
+>
+>
+> On 1/30/2013 6:48 PM, Bob wrote:
+>>
+>> Just saw a mention of _Handbook of Small Datasets_.  Does anyone know
+>> if the data files ever got cleaned up and posted on the Internet?  I
+>> bought this when I came out and the disk included files that seemed to
+>> be created by cut and paste from the manuscript.  This meant that the
+>> "shape" of the data matched a typesetter's needs rather than a
+>> statistician's.  Most of the datasets needed considerable manual work
+>> before one could hand them off to students.  (I DID find what appeared
+>> to be the original disfunctional versions online.)  It's really sad
+>> that a collection that was such a good idea on paper was so poorly
+>> implemented.
+>>
+>>
+>> ------->  First-time AP Stats. teacher?  Help is on the way! See
+>> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+>>        _
+>>       | |          Robert W. Hayden
+>>       | |          142 Main Street
+>>      /  |          Apartment 104
+>>     |   |          Jaffrey, New Hampshire 03452  USA
+>>     |   |          email: bob@ the site below
+>>    /    |          website: http://statland.org
+>>   | x   /          phone: (603) 532-7224 (home)
+>>   ''''''
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From bob at statland.org  Thu Jan 31 12:26:02 2013
+From: bob at statland.org (Bob)
+Date: Thu, 31 Jan 2013 06:26:02 -0500 (EST)
+Subject: [R-sig-teaching] Handbook of Small Datasets
+Message-ID: <20130131112602.A470671989A5@mail89.csoft.net>
+
+
+I just looked at a couple of files at NCSU and they looked like the
+original files on the disk supplied with the book.  Has anyone found
+ones there that are NOT as originally supplied?  Here is an example
+(made up) of the kind of problems in the original files.  You might
+have a data set with three variables, x and y quantitative, and z
+categorical with three groups.  The data file looks just like the
+table in the book: six columns, x,y,x,y,x,y with the pairs matching
+z=a,b,c.  So the given data have to be stacked and the categorical
+variable created.  Not too horrendous if you just want to use that one
+datsaset but virtually all the files have similar (often worse)
+problems, i.e., you cannot read them into an R dataframe as-is.  You
+can find other actual examples in my review
+
+  Review of Two Collections of Data for Use in a First Course in
+  Statistics, The American Statistician, Vol.50, No.2 (May 1996), 
+  pp. 168-169.
+  
+I cleaned up and used about 20 datasets myself.  At the time I wrote
+the review I had fantasies of finding 25 others who would each
+volunteer to clean another 20 each.  I had long given up on that when
+Dennis surprised me by offering far more than 20.  So I will be
+working with him and will also look at the NCSU versions again. I have
+also had others volunteer bits and pieces so I hope we will soon have
+all or most in useable form.
+
+PS
+
+While R gurus may feel the problem is minor FOR THEM, I had hoped
+to use the book in the following way.  After teaching topic X in a
+gen. ed. intro. course, ask students to pick a data set of interest to
+them and analyze it using X.  Beginners will not even notice the data
+are not in standard format, and will spend lots of time wrestling with
+the software to get usable output rather than focussing on the
+statistical concepts.  I work a lot with high school teachers of
+AP Statistics who themselves have usually taken 1 plus/minus 1
+statistics courses and have NO experience with real data.  I would
+LOVE to recommend this book to them but they would circle my home and
+burn it to the ground after a few hours wrestling with the form the
+data are in now.   
+
+Forwarded message:
+> From r-sig-teaching-bounces at r-project.org Thu Jan 31 05:01:43 2013
+> X-Original-To: bob at statland.org
+> X-Csoft-Rule: spam<=5.0
+> X-Spam-Checker-Version: SpamAssassin 3.3.2-csoft38 (2011-06-06) on
+> 	ubar.csoft.net
+> X-Spam-Level: 
+> X-Spam-Status: No, score=-6.8 required=6.0 tests=BAYES_00,DKIM_ADSP_CUSTOM_MED,
+> 	DKIM_SIGNED,RCVD_IN_DNSWL_HI,T_DKIM_INVALID autolearn=ham
+> 	version=3.3.2-csoft38
+> DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113;
+> 	h=mime-version:x-received:in-reply-to:references:date:message-id
+> 	:subject:from:to:cc:content-type;
+> 	bh=qO6E7XG6EOx1anYr8Vdu9ic3wJ3HlmmVmsDdeDp8lS8=;
+> 	b=Siev/NyEGz+FX4xqHlcgysciCyl9YjsiaYSwPNHuemdWdz5Zl3OuZ08lADtFz5HGrD
+> 	8y5r8YLyym+jdkq6zQAEMK7Bfb227z+iwCxfc3qru720Ql1gdodEHShfDuOJtgAN/ujQ
+> 	LzF8tI2wvWRmrqAih3Pjh+BhbEEnF3SWVaXkzFl4P1t0QxFIWiJeC9QDalCHyDovO0RA
+> 	Ks8pKKNJb/dJOerBXhYD4aihb9xuBNBX7UVo2o6Eg/wxBvKLtbuU9XqBQz8074vsDa4U
+> 	UNbxGiXVGa0DpdZKoFlRPgNgkszzfzt12G3e9TGZiAxg4AoPDUWYpqdK24u7UURPsNSn
+> 	85hQ==
+> MIME-Version: 1.0
+> X-Received: by 10.42.58.67 with SMTP id g3mr6504459ich.56.1359626335114; Thu,
+> 	31 Jan 2013 01:58:55 -0800 (PST)
+> In-Reply-To: <5109EADE.7080205 at gmail.com>
+> References: <20130130234801.9BAF471989D5 at mail89.csoft.net>
+> 	<5109EADE.7080205 at gmail.com>
+> Date: Thu, 31 Jan 2013 01:58:54 -0800
+> Message-ID: <CADv2QyGSqGVrJSET-Qah2AdagLWiOpy3h5=r_OWKeSPu-Ft6_A at mail.gmail.com>
+> From: Dennis Murphy <djmuser at gmail.com>
+> To: Jeff Laux <jefflaux at gmail.com>
+> X-Tag-Only: YES
+> X-Filter-Node: phil2.ethz.ch
+> X-USF-Spam-Level: 
+> X-USF-Spam-Status: hits=-0.7 tests=FREEMAIL_FROM, RCVD_IN_DNSWL_LOW, SPF_PASS,
+> 	T_DKIM_INVALID
+> X-USF-Spam-Flag: NO
+> X-Virus-Scanned: by amavisd-new at stat.math.ethz.ch
+> Cc: r-sig-teaching at r-project.org
+> Subject: Re: [R-sig-teaching] Handbook of Small Datasets
+> X-BeenThere: r-sig-teaching at r-project.org
+> X-Mailman-Version: 2.1.14
+> Precedence: list
+> List-Id: SIG on Teaching Statistics using R <r-sig-teaching.r-project.org>
+> List-Unsubscribe: <https://stat.ethz.ch/mailman/options/r-sig-teaching>,
+> 	<mailto:r-sig-teaching-request at r-project.org?subject=unsubscribe>
+> List-Archive: <https://stat.ethz.ch/pipermail/r-sig-teaching>
+> List-Post: <mailto:r-sig-teaching at r-project.org>
+> List-Help: <mailto:r-sig-teaching-request at r-project.org?subject=help>
+> List-Subscribe: <https://stat.ethz.ch/mailman/listinfo/r-sig-teaching>,
+> 	<mailto:r-sig-teaching-request at r-project.org?subject=subscribe>
+> Content-Type: text/plain; charset="us-ascii"
+> Content-Transfer-Encoding: 7bit
+> Errors-To: r-sig-teaching-bounces at r-project.org
+> Sender: r-sig-teaching-bounces at r-project.org
+> 
+> That's what the book is for: its purpose is to describe the variables
+> and context of each data set. The book 'Data' by Andrews and Herzberg
+> (1985) is similar in that respect. As I mentioned to Bob privately, I
+> thought about making a R package of the data sets in HDLMO several
+> years ago because I used a number of them in teaching, but then
+> realized that if I wrote the help pages, I'd essentially be violating
+> the copyright of the book...so that project died. But I do have a
+> collection of R objects for the data sets which I'm editing and hope
+> to finish before the weekend is out. Bob prefers a zipped csv archive,
+> but I can make an R binary available (or a zipped version of .Rdata
+> files) if anyone is interested.
+> 
+> Dennis
+> 
+> On Wed, Jan 30, 2013 at 7:54 PM, Jeff Laux <jefflaux at gmail.com> wrote:
+> > Yes.  They can be found on NC State's Statistics department's website:
+> >
+> >      http://www.stat.ncsu.edu/working_groups/sas/sicl/data/
+> >
+> > However, the accompanying stories don't exist.  What is posted is just tab
+> > delimited text files with numeric data.  Someone else will have to say what
+> > the numbers are supposed to mean.
+> >
+> >
+> >
+> > On 1/30/2013 6:48 PM, Bob wrote:
+> >>
+> >> Just saw a mention of _Handbook of Small Datasets_.  Does anyone know
+> >> if the data files ever got cleaned up and posted on the Internet?  I
+> >> bought this when I came out and the disk included files that seemed to
+> >> be created by cut and paste from the manuscript.  This meant that the
+> >> "shape" of the data matched a typesetter's needs rather than a
+> >> statistician's.  Most of the datasets needed considerable manual work
+> >> before one could hand them off to students.  (I DID find what appeared
+> >> to be the original disfunctional versions online.)  It's really sad
+> >> that a collection that was such a good idea on paper was so poorly
+> >> implemented.
+> >>
+> >>
+> >> ------->  First-time AP Stats. teacher?  Help is on the way! See
+> >> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+> >>        _
+> >>       | |          Robert W. Hayden
+> >>       | |          142 Main Street
+> >>      /  |          Apartment 104
+> >>     |   |          Jaffrey, New Hampshire 03452  USA
+> >>     |   |          email: bob@ the site below
+> >>    /    |          website: http://statland.org
+> >>   | x   /          phone: (603) 532-7224 (home)
+> >>   ''''''
+> >>
+> >> _______________________________________________
+> >> R-sig-teaching at r-project.org mailing list
+> >> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >>
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+> 
+
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+      _
+     | |          Robert W. Hayden
+     | |          142 Main Street
+    /  |          Apartment 104
+   |   |          Jaffrey, New Hampshire 03452  USA
+   |   |          email: bob@ the site below
+  /    |          website: http://statland.org
+ | x   /          phone: (603) 532-7224 (home)
+ ''''''
+
+
+From bob at statland.org  Thu Jan 31 13:57:49 2013
+From: bob at statland.org (Bob)
+Date: Thu, 31 Jan 2013 07:57:49 -0500 (EST)
+Subject: [R-sig-teaching] Handbook of Small Datasets
+Message-ID: <20130131125750.0035B7198838@mail89.csoft.net>
+
+
+The datsets are also available on the publisher's website.  I just
+compared several files among those, the versions at NCSU, and the
+version that came on a floppy with the book when it first came out.
+File sizes are exactly the same and for the files I looked inside the
+layout is sheer madness in all three versions.
+
+Forwarded message:
+> 
+> 
+> I just looked at a couple of files at NCSU and they looked like the
+> original files on the disk supplied with the book.  Has anyone found
+> ones there that are NOT as originally supplied?  Here is an example
+> (made up) of the kind of problems in the original files.  You might
+> have a data set with three variables, x and y quantitative, and z
+> categorical with three groups.  The data file looks just like the
+> table in the book: six columns, x,y,x,y,x,y with the pairs matching
+> z=a,b,c.  So the given data have to be stacked and the categorical
+> variable created.  Not too horrendous if you just want to use that one
+> datsaset but virtually all the files have similar (often worse)
+> problems, i.e., you cannot read them into an R dataframe as-is.  You
+> can find other actual examples in my review
+> 
+>   Review of Two Collections of Data for Use in a First Course in
+>   Statistics, The American Statistician, Vol.50, No.2 (May 1996), 
+>   pp. 168-169.
+>   
+> I cleaned up and used about 20 datasets myself.  At the time I wrote
+> the review I had fantasies of finding 25 others who would each
+> volunteer to clean another 20 each.  I had long given up on that when
+> Dennis surprised me by offering far more than 20.  So I will be
+> working with him and will also look at the NCSU versions again. I have
+> also had others volunteer bits and pieces so I hope we will soon have
+> all or most in useable form.
+> 
+> PS
+> 
+> While R gurus may feel the problem is minor FOR THEM, I had hoped
+> to use the book in the following way.  After teaching topic X in a
+> gen. ed. intro. course, ask students to pick a data set of interest to
+> them and analyze it using X.  Beginners will not even notice the data
+> are not in standard format, and will spend lots of time wrestling with
+> the software to get usable output rather than focussing on the
+> statistical concepts.  I work a lot with high school teachers of
+> AP Statistics who themselves have usually taken 1 plus/minus 1
+> statistics courses and have NO experience with real data.  I would
+> LOVE to recommend this book to them but they would circle my home and
+> burn it to the ground after a few hours wrestling with the form the
+> data are in now.   
+> 
+> Forwarded message:
+> > From r-sig-teaching-bounces at r-project.org Thu Jan 31 05:01:43 2013
+> > X-Original-To: bob at statland.org
+> > X-Csoft-Rule: spam<=5.0
+> > X-Spam-Checker-Version: SpamAssassin 3.3.2-csoft38 (2011-06-06) on
+> > 	ubar.csoft.net
+> > X-Spam-Level: 
+> > X-Spam-Status: No, score=-6.8 required=6.0 tests=BAYES_00,DKIM_ADSP_CUSTOM_MED,
+> > 	DKIM_SIGNED,RCVD_IN_DNSWL_HI,T_DKIM_INVALID autolearn=ham
+> > 	version=3.3.2-csoft38
+> > DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113;
+> > 	h=mime-version:x-received:in-reply-to:references:date:message-id
+> > 	:subject:from:to:cc:content-type;
+> > 	bh=qO6E7XG6EOx1anYr8Vdu9ic3wJ3HlmmVmsDdeDp8lS8=;
+> > 	b=Siev/NyEGz+FX4xqHlcgysciCyl9YjsiaYSwPNHuemdWdz5Zl3OuZ08lADtFz5HGrD
+> > 	8y5r8YLyym+jdkq6zQAEMK7Bfb227z+iwCxfc3qru720Ql1gdodEHShfDuOJtgAN/ujQ
+> > 	LzF8tI2wvWRmrqAih3Pjh+BhbEEnF3SWVaXkzFl4P1t0QxFIWiJeC9QDalCHyDovO0RA
+> > 	Ks8pKKNJb/dJOerBXhYD4aihb9xuBNBX7UVo2o6Eg/wxBvKLtbuU9XqBQz8074vsDa4U
+> > 	UNbxGiXVGa0DpdZKoFlRPgNgkszzfzt12G3e9TGZiAxg4AoPDUWYpqdK24u7UURPsNSn
+> > 	85hQ==
+> > MIME-Version: 1.0
+> > X-Received: by 10.42.58.67 with SMTP id g3mr6504459ich.56.1359626335114; Thu,
+> > 	31 Jan 2013 01:58:55 -0800 (PST)
+> > In-Reply-To: <5109EADE.7080205 at gmail.com>
+> > References: <20130130234801.9BAF471989D5 at mail89.csoft.net>
+> > 	<5109EADE.7080205 at gmail.com>
+> > Date: Thu, 31 Jan 2013 01:58:54 -0800
+> > Message-ID: <CADv2QyGSqGVrJSET-Qah2AdagLWiOpy3h5=r_OWKeSPu-Ft6_A at mail.gmail.com>
+> > From: Dennis Murphy <djmuser at gmail.com>
+> > To: Jeff Laux <jefflaux at gmail.com>
+> > X-Tag-Only: YES
+> > X-Filter-Node: phil2.ethz.ch
+> > X-USF-Spam-Level: 
+> > X-USF-Spam-Status: hits=-0.7 tests=FREEMAIL_FROM, RCVD_IN_DNSWL_LOW, SPF_PASS,
+> > 	T_DKIM_INVALID
+> > X-USF-Spam-Flag: NO
+> > X-Virus-Scanned: by amavisd-new at stat.math.ethz.ch
+> > Cc: r-sig-teaching at r-project.org
+> > Subject: Re: [R-sig-teaching] Handbook of Small Datasets
+> > X-BeenThere: r-sig-teaching at r-project.org
+> > X-Mailman-Version: 2.1.14
+> > Precedence: list
+> > List-Id: SIG on Teaching Statistics using R <r-sig-teaching.r-project.org>
+> > List-Unsubscribe: <https://stat.ethz.ch/mailman/options/r-sig-teaching>,
+> > 	<mailto:r-sig-teaching-request at r-project.org?subject=unsubscribe>
+> > List-Archive: <https://stat.ethz.ch/pipermail/r-sig-teaching>
+> > List-Post: <mailto:r-sig-teaching at r-project.org>
+> > List-Help: <mailto:r-sig-teaching-request at r-project.org?subject=help>
+> > List-Subscribe: <https://stat.ethz.ch/mailman/listinfo/r-sig-teaching>,
+> > 	<mailto:r-sig-teaching-request at r-project.org?subject=subscribe>
+> > Content-Type: text/plain; charset="us-ascii"
+> > Content-Transfer-Encoding: 7bit
+> > Errors-To: r-sig-teaching-bounces at r-project.org
+> > Sender: r-sig-teaching-bounces at r-project.org
+> > 
+> > That's what the book is for: its purpose is to describe the variables
+> > and context of each data set. The book 'Data' by Andrews and Herzberg
+> > (1985) is similar in that respect. As I mentioned to Bob privately, I
+> > thought about making a R package of the data sets in HDLMO several
+> > years ago because I used a number of them in teaching, but then
+> > realized that if I wrote the help pages, I'd essentially be violating
+> > the copyright of the book...so that project died. But I do have a
+> > collection of R objects for the data sets which I'm editing and hope
+> > to finish before the weekend is out. Bob prefers a zipped csv archive,
+> > but I can make an R binary available (or a zipped version of .Rdata
+> > files) if anyone is interested.
+> > 
+> > Dennis
+> > 
+> > On Wed, Jan 30, 2013 at 7:54 PM, Jeff Laux <jefflaux at gmail.com> wrote:
+> > > Yes.  They can be found on NC State's Statistics department's website:
+> > >
+> > >      http://www.stat.ncsu.edu/working_groups/sas/sicl/data/
+> > >
+> > > However, the accompanying stories don't exist.  What is posted is just tab
+> > > delimited text files with numeric data.  Someone else will have to say what
+> > > the numbers are supposed to mean.
+> > >
+> > >
+> > >
+> > > On 1/30/2013 6:48 PM, Bob wrote:
+> > >>
+> > >> Just saw a mention of _Handbook of Small Datasets_.  Does anyone know
+> > >> if the data files ever got cleaned up and posted on the Internet?  I
+> > >> bought this when I came out and the disk included files that seemed to
+> > >> be created by cut and paste from the manuscript.  This meant that the
+> > >> "shape" of the data matched a typesetter's needs rather than a
+> > >> statistician's.  Most of the datasets needed considerable manual work
+> > >> before one could hand them off to students.  (I DID find what appeared
+> > >> to be the original disfunctional versions online.)  It's really sad
+> > >> that a collection that was such a good idea on paper was so poorly
+> > >> implemented.
+> > >>
+> > >>
+> > >> ------->  First-time AP Stats. teacher?  Help is on the way! See
+> > >> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+> > >>        _
+> > >>       | |          Robert W. Hayden
+> > >>       | |          142 Main Street
+> > >>      /  |          Apartment 104
+> > >>     |   |          Jaffrey, New Hampshire 03452  USA
+> > >>     |   |          email: bob@ the site below
+> > >>    /    |          website: http://statland.org
+> > >>   | x   /          phone: (603) 532-7224 (home)
+> > >>   ''''''
+> > >>
+> > >> _______________________________________________
+> > >> R-sig-teaching at r-project.org mailing list
+> > >> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> > >>
+> > >
+> > > _______________________________________________
+> > > R-sig-teaching at r-project.org mailing list
+> > > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> > 
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> > 
+> > 
+> 
+> 
+> ------->  First-time AP Stats. teacher?  Help is on the way! See
+> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+>       _
+>      | |          Robert W. Hayden
+>      | |          142 Main Street
+>     /  |          Apartment 104
+>    |   |          Jaffrey, New Hampshire 03452  USA
+>    |   |          email: bob@ the site below
+>   /    |          website: http://statland.org
+>  | x   /          phone: (603) 532-7224 (home)
+>  ''''''
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+> 
+
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+      _
+     | |          Robert W. Hayden
+     | |          142 Main Street
+    /  |          Apartment 104
+   |   |          Jaffrey, New Hampshire 03452  USA
+   |   |          email: bob@ the site below
+  /    |          website: http://statland.org
+ | x   /          phone: (603) 532-7224 (home)
+ ''''''
+
+
+From djmuser at gmail.com  Thu Feb  7 02:27:08 2013
+From: djmuser at gmail.com (Dennis Murphy)
+Date: Wed, 6 Feb 2013 17:27:08 -0800
+Subject: [R-sig-teaching] Handbook of Small Datasets
+In-Reply-To: <CADv2QyGSqGVrJSET-Qah2AdagLWiOpy3h5=r_OWKeSPu-Ft6_A@mail.gmail.com>
+References: <20130130234801.9BAF471989D5@mail89.csoft.net>
+	<5109EADE.7080205@gmail.com>
+	<CADv2QyGSqGVrJSET-Qah2AdagLWiOpy3h5=r_OWKeSPu-Ft6_A@mail.gmail.com>
+Message-ID: <CADv2QyHcpaONnd9kdLKxcDf+CJnxXsGhqs63deUidgpKWi=dWQ@mail.gmail.com>
+
+Hi:
+
+As promised, I have rolled up a few versions of the files in HDLMO and
+put them in my Dropbox.
+
+(1) Zipped csv form:
+https://dl.dropbox.com/u/57587928/csv.zip
+
+(2) Individual R binary objects in zip form:
+https://dl.dropbox.com/u/57587928/Rdata.zip
+
+(3) All of the R objects in one .Rdata file:
+https://dl.dropbox.com/u/57587928/hdlmo.Rdata
+
+Should you choose to access one or more of these archives, I
+******strongly******* encourage you to read the index.txt and
+README.txt files that come with the zipped archives. I took more than
+a few liberties with renaming R objects relative to the names of the
+original datasets (originally, this was meant for my own use), and
+many data sets contain more than one R object (and hence more than one
+corresponding .Rdata or .csv file). The file index.txt provides the
+roadmap that connects the numbers and descriptions of the original
+data sets to the names of the corresponding R objects, their
+class/type and the name of the csv file to which the R object was
+written. The README file explains a few things about the contents of
+the archive and the process by which it was generated.
+
+The R versions are, of course, for R aficionados (after all, this is
+R-sig-teaching :), while the csv versions are for more general
+applications.
+
+The R binary (3) contains neither index.txt nor README.txt, so grab
+one of the zip archives to access these files.
+
+I hope you find these useful in some aspect of your work.
+Dennis
+
+On Thu, Jan 31, 2013 at 1:58 AM, Dennis Murphy <djmuser at gmail.com> wrote:
+> That's what the book is for: its purpose is to describe the variables
+> and context of each data set. The book 'Data' by Andrews and Herzberg
+> (1985) is similar in that respect. As I mentioned to Bob privately, I
+> thought about making a R package of the data sets in HDLMO several
+> years ago because I used a number of them in teaching, but then
+> realized that if I wrote the help pages, I'd essentially be violating
+> the copyright of the book...so that project died. But I do have a
+> collection of R objects for the data sets which I'm editing and hope
+> to finish before the weekend is out. Bob prefers a zipped csv archive,
+> but I can make an R binary available (or a zipped version of .Rdata
+> files) if anyone is interested.
+>
+> Dennis
+>
+> On Wed, Jan 30, 2013 at 7:54 PM, Jeff Laux <jefflaux at gmail.com> wrote:
+>> Yes.  They can be found on NC State's Statistics department's website:
+>>
+>>      http://www.stat.ncsu.edu/working_groups/sas/sicl/data/
+>>
+>> However, the accompanying stories don't exist.  What is posted is just tab
+>> delimited text files with numeric data.  Someone else will have to say what
+>> the numbers are supposed to mean.
+>>
+>>
+>>
+>> On 1/30/2013 6:48 PM, Bob wrote:
+>>>
+>>> Just saw a mention of _Handbook of Small Datasets_.  Does anyone know
+>>> if the data files ever got cleaned up and posted on the Internet?  I
+>>> bought this when I came out and the disk included files that seemed to
+>>> be created by cut and paste from the manuscript.  This meant that the
+>>> "shape" of the data matched a typesetter's needs rather than a
+>>> statistician's.  Most of the datasets needed considerable manual work
+>>> before one could hand them off to students.  (I DID find what appeared
+>>> to be the original disfunctional versions online.)  It's really sad
+>>> that a collection that was such a good idea on paper was so poorly
+>>> implemented.
+>>>
+>>>
+>>> ------->  First-time AP Stats. teacher?  Help is on the way! See
+>>> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+>>>        _
+>>>       | |          Robert W. Hayden
+>>>       | |          142 Main Street
+>>>      /  |          Apartment 104
+>>>     |   |          Jaffrey, New Hampshire 03452  USA
+>>>     |   |          email: bob@ the site below
+>>>    /    |          website: http://statland.org
+>>>   | x   /          phone: (603) 532-7224 (home)
+>>>   ''''''
+>>>
+>>> _______________________________________________
+>>> R-sig-teaching at r-project.org mailing list
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>>
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From nicholas_horton at yahoo.com  Thu Feb  7 14:43:26 2013
+From: nicholas_horton at yahoo.com (Nicholas Horton)
+Date: Thu, 7 Feb 2013 08:43:26 -0500
+Subject: [R-sig-teaching] R-sig-teaching Digest, Vol 59, Issue 9
+In-Reply-To: <mailman.7.1359543603.2231.r-sig-teaching@r-project.org>
+References: <mailman.7.1359543603.2231.r-sig-teaching@r-project.org>
+Message-ID: <73262E30-3677-40A0-A0DF-403323D9A030@yahoo.com>
+
+
+> Date: Tue, 29 Jan 2013 13:38:28 -0700
+> From: Allen Cornelius <allencornelius at gmail.com>
+> To: "r-sig-teaching at r-project.org" <r-sig-teaching at r-project.org>
+> Subject: [R-sig-teaching] Data sets for teaching advanced stats with R
+> 
+> Knowledgable group,
+> 
+> I am in the process of designing an advanced statistics class for doctoral level clinical psychology students. Their background in basic statistical concepts is OK, but they have little exposure to statistical software. I am looking for pre existing data sets that they can explore fairly easily, probably using R and R Commander (though some coding would be OK), to illustrate some multivariate analyses (e.g., advanced regression, MANOVA, factor analysis). I don't expect proficiency with the software, but enough exposure to the output of results of analyses to understand what things mean. I am looking for multiple examples of the same analyses, so they get exposure and practice with lots of stuff. 
+> 
+> Allen
+> 
+
+Allen,
+
+You might be interested in checking out the HELP study dataset, which is included as part of the "mosaic" package in R as well as in a variety of formats from the book "SAS and R: Data Management, Statistical Analysis and Graphics" book website at http://www.math.smith.edu/sasr/datasets.php.
+
+This includes deidentified data from a randomized trial of n=470 subjects recruited from a detox center in Boston who were randomized to usual care or an intervention to link them to primary care.  Approximately 200 variables are measured at each of baseline, 6 months, 12 month, 18 month and 24 month follow up.  There are a variety of sociobehavioral, health, and health services questions which can be addressed.
+
+The complete set of instruments can be downloaded from http://www.math.smith.edu/help.
+
+Nick
+
+Nicholas Horton 
+Department of Mathematics and Statistics, Smith College
+Clark Science Center, Northampton, MA 01063-0001
+http://www.math.smith.edu/~nhorton
+
+
+From zanaty2005 at yahoo.com  Fri Feb  8 14:20:22 2013
+From: zanaty2005 at yahoo.com (Ali Zanaty)
+Date: Fri, 8 Feb 2013 05:20:22 -0800 (PST)
+Subject: [R-sig-teaching] R for Numercal Analysis
+Message-ID: <1360329622.33358.YahooMailNeo@web125806.mail.ne1.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130208/c4e59564/attachment.pl>
+
+From nhorton at smith.edu  Sun Mar 10 13:53:39 2013
+From: nhorton at smith.edu (Nicholas Horton)
+Date: Sun, 10 Mar 2013 08:53:39 -0400
+Subject: [R-sig-teaching] Updates on "How to Do it in R" for the
+	"Statistical Sleuth" and "Introduction to the Practice of
+	Statistics"
+Message-ID: <9D1E512A-C1B7-4C61-8ADE-A40FC09DF693@smith.edu>
+
+A group of students and faculty at Smith College have created a series of files to help describe how to undertake analyses using R that are introduced as examples in two excellent textbooks: the Second and Third editions of the Statistical Sleuth: A Course in Methods of Data Analysis (2002, Fred Ramsey and Dan Schafer) and the Sixth edition of Introduction to the Practice of Statistics (2009, David S. Moore, George P. McCabe and Bruce A. Craig).  If you are using either of these books, or would like to see straightforward ways to undertake analyses in R for ue in intro and intermediate statistics courses, these may be of interest.
+
+The files can be found at http://www.math.smith.edu/~nhorton/sleuth and http://www.math.smith.edu/~nhorton/ips6e, respectively. We have include both formatted pdf files as well as the original knitr files which were used to generate the output. Knitr is an elegant, flexible and fast means to undertake reproducible analysis and dynamic report generation within R and RStudio.  
+
+This work leverages efforts undertaken by Project MOSAIC, an NSF-funded initiative to improve the teaching of statistics, calculus, science and computing in the undergraduate curriculum. In particular, we utilize the mosaic package, which was written to simplify the use of R for introductory statistics courses. More information can be found at http://www.mosaic-web.org.
+
+We've generated these illustrated analyses for Sleuth chapters 1-13, and IPS chapters 1-6 plus 11, with more chapters to come. Comments, suggestions and corrections welcomed.
+
+Best wishes for the balance of the semester,
+
+Nick
+
+Nicholas Horton 
+Department of Mathematics and Statistics, Smith College
+Clark Science Center, Northampton, MA 01063-0001
+http://www.math.smith.edu/~nhorton
+
+
+From wayne.smith at csun.edu  Mon Mar 11 17:43:22 2013
+From: wayne.smith at csun.edu (Wayne Smith)
+Date: Mon, 11 Mar 2013 09:43:22 -0700
+Subject: [R-sig-teaching] R-sig-teaching Digest, Vol 61, Issue 1
+In-Reply-To: <mailman.9.1362999603.23330.r-sig-teaching@r-project.org>
+References: <mailman.9.1362999603.23330.r-sig-teaching@r-project.org>
+Message-ID: <513E09AA.6090306@csun.edu>
+
+
+
+On 3/11/2013 4:00 AM, r-sig-teaching-request at r-project.org wrote:
+> From: Nicholas Horton <nhorton at smith.edu>
+> To: "r-sig-teaching at r-project.org" <r-sig-teaching at r-project.org>
+> Cc: Nicholas Horton <nhorton at smith.edu>
+> Subject: [R-sig-teaching] Updates on "How to Do it in R" for the
+> 	"Statistical Sleuth" and "Introduction to the Practice of	Statistics"
+> Message-ID: <9D1E512A-C1B7-4C61-8ADE-A40FC09DF693 at smith.edu>
+> Content-Type: text/plain; charset=us-ascii
+>
+> A group of students and faculty at Smith College have created a series of files to help describe how to undertake analyses using R that are introduced as examples in two excellent textbooks: the Second and Third editions of the Statistical Sleuth: A Course in Methods of Data Analysis (2002, Fred Ramsey and Dan Schafer) and the Sixth edition of Introduction to the Practice of Statistics (2009, David S. Moore, George P. McCabe and Bruce A. Craig).  If you are using either of these books, or would like to see straightforward ways to undertake analyses in R for ue in intro and intermediate statistics courses, these may be of interest.
+
+	...[snip]...
+
+	Excellent, excellent work.  Professor Horton, please extend
+	my best to your students.
+
+	Wayne Smith, Ph.D.
+	Department of Management
+	California State University, Northridge
+
+	...[snip]...
+
+

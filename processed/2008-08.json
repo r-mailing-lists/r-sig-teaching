@@ -1,0 +1,202 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2008-08",
+  "messages": [
+    {
+      "id": "msg-b90642d9c8de",
+      "message_id": "<E2F90CBA72FB2C43B422CC59388C23EB028B2F40@US-EXBE01.NA.CorpLAN.net>",
+      "from_name": "Thomas, Judy",
+      "from_email_hash": "0aaf62aedcd3990e1035cabc6cdb8d5d3b6150bbf592a0210b95eb6c8a5e3c61",
+      "date": "2008-08-12T10:27:42-04:00",
+      "subject": "[R-sig-teaching] ANNOUNCEMENT: COMPLIMENTARY REVIEW COPIES OF NEW R BOOKS FROM CHAPMAN & HALL/CRC!",
+      "subject_clean": "ANNOUNCEMENT: COMPLIMENTARY REVIEW COPIES OF NEW R BOOKS FROM CHAPMAN & HALL/CRC!",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080812/5b9d8ba4/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080812/5b9d8ba4/attachment.pl>",
+      "thread_id": "thread-b90642d9c8de",
+      "thread_depth": 0,
+      "month": "2008-08"
+    },
+    {
+      "id": "msg-62e73cb26f87",
+      "message_id": "<897634.42294.qm@web32506.mail.mud.yahoo.com>",
+      "from_name": "Vanesa Maribel Fernández",
+      "from_email_hash": "9e78df991c3b6bedd3bf8dcef2b5333e8235fc97ef2ddd28f4d132a3177d93cc",
+      "date": "2008-08-20T06:08:35-07:00",
+      "subject": "[R-sig-teaching] ANNOUNCEMENT: COMPLIMENTARY REVIEW COPIES OF NEW R BOOKS FROM CHAPMAN & HALL/CRC!",
+      "subject_clean": "ANNOUNCEMENT: COMPLIMENTARY REVIEW COPIES OF NEW R BOOKS FROM CHAPMAN & HALL/CRC!",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080820/c69fe086/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080820/c69fe086/attachment.pl>",
+      "thread_id": "thread-62e73cb26f87",
+      "thread_depth": 0,
+      "month": "2008-08"
+    },
+    {
+      "id": "msg-187fe535e621",
+      "message_id": "<20080820155246.GA1730@laplace.reed.edu>",
+      "from_name": "Albyn Jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2008-08-20T08:52:46-07:00",
+      "subject": "[R-sig-teaching] R texts",
+      "subject_clean": "R texts",
+      "in_reply_to": "<897634.42294.qm@web32506.mail.mud.yahoo.com>",
+      "references": [
+        "<897634.42294.qm@web32506.mail.mud.yahoo.com>"
+      ],
+      "body_plain": "Hi Vanesa\n\nI'd start with free documentation, available on the CRAN websites.\nUnder the Documentation links, take a look at Manuals: An Introduction\nto R.  In the Contributed section there are several documents that you\nmay find useful.\n\nalbyn\n\nOn Wed, Aug 20, 2008 at 06:08:35AM -0700, Vanesa Maribel Fern?ndez wrote:\n> Hallo! My\n> name is Vanesa; I am a biology PhD student from Argentina. I am used to carry out\n> statistical analysis of data from our experiments. And I would like to have a\n> book to learn how to use ???R??? for statistical. I need one which contains for\n> example: analysis of categorical data, regression, ANOVA (fixed, mixed,\n> repeated measures nestled), etc.\n> Can you\n> help me to choose a book? \n> Thank you\n> very much.\n> Vanesa",
+      "body_snippet": "Hi Vanesa\n\nI'd start with free documentation, available on the CRAN websites.\nUnder the Documentation links, take a look at Manuals: An Introduction\nto R.  In the Contributed section there are several",
+      "thread_id": "thread-62e73cb26f87",
+      "thread_depth": 1,
+      "month": "2008-08"
+    },
+    {
+      "id": "msg-3052f1c2df4a",
+      "message_id": "<154d1a660808200958x727bd479qa241b64658f81ba9@mail.gmail.com>",
+      "from_name": "A.G. WARRACK",
+      "from_email_hash": "d3ced12ca0596e65b21bbdf8a1efa9ee54c6709e7744ba0a55b3cadb364a0562",
+      "date": "2008-08-20T12:58:45-04:00",
+      "subject": "[R-sig-teaching] R texts",
+      "subject_clean": "R texts",
+      "in_reply_to": "<20080820155246.GA1730@laplace.reed.edu>",
+      "references": [
+        "<897634.42294.qm@web32506.mail.mud.yahoo.com>",
+        "<20080820155246.GA1730@laplace.reed.edu>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080820/5a0b9e2d/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080820/5a0b9e2d/attachment.pl>",
+      "thread_id": "thread-62e73cb26f87",
+      "thread_depth": 2,
+      "month": "2008-08"
+    },
+    {
+      "id": "msg-6694caefe0c7",
+      "message_id": "<48AC51BF.6030509@carleton.edu>",
+      "from_name": "Laura Chihara",
+      "from_email_hash": "bf38fe4d1a78c3a1e5a1c7942e55291ae947a968d4544d52590d5c796db45253",
+      "date": "2008-08-20T12:17:51-05:00",
+      "subject": "[R-sig-teaching] R texts",
+      "subject_clean": "R texts",
+      "in_reply_to": "<897634.42294.qm@web32506.mail.mud.yahoo.com>",
+      "references": [
+        "<897634.42294.qm@web32506.mail.mud.yahoo.com>"
+      ],
+      "body_plain": "\"The R Book\" by Crawley (Wiley) is comprehensive and very useful.\nIt got a nice review in the latest issue of \"The American\nStatistician\"\n\n-Laura\n\nVanesa Maribel Fern?ndez wrote:\n> Hallo! My\n> name is Vanesa; I am a biology PhD student from Argentina. I am used to carry out\n> statistical analysis of data from our experiments. And I would like to have a\n> book to learn how to use ???R??? for statistical. I need one which contains for\n> example: analysis of categorical data, regression, ANOVA (fixed, mixed,\n> repeated measures nestled), etc.\n> Can you\n> help me to choose a book? \n> Thank you\n> very much.\n> Vanesa\n>  \n>  \n> \n> \n> \n> \n> ----- Original Message ----\n> From: \"Thomas, Judy\" <judy.thomas at taylorandfrancis.com>\n> To: r-sig-teaching at r-project.org\n> Sent: Tuesday, August 12, 2008 11:27:42 AM\n> Subject: [R-sig-teaching] ANNOUNCEMENT: COMPLIMENTARY REVIEW COPIES OF NEW R BOOKS FROM CHAPMAN & HALL/CRC!\n> \n> ANNOUNCEMENT:  COMPLIMENTARY REVIEW COPIES OF NEW R BOOKS FROM CHAPMAN & HALL/CRC!\n> \n> \n> It's back to school season, and the academic world is buzzing about new textbooks. We know you will be making your course adoption selections for the spring over the next couple of week, and want to make sure you get a sneak peek at our latest offerings.  \n> \n> \n> With this in mind, Chapman & Hall/CRC is pleased to provide complimentary review copies of our latest R titles to qualified instructors. Please contact Academic Sales Manager Susie Carlisle (susie.carlisle at taylorandfrancis.com), and mention promotion code #966HW, to take advantage of this special offer. \n> \n> \n> Secure your review copy today!\n> \n> \n> ****NEW TITLES****\n> \n> Probability and Statistics with R (http://www.crcpress.com/shopping_cart/products/product_detail.asp?sku=C8911)\n> \n> Maria Dolores Ugarte, Public University of Navarre, Pamplona, Spain\n> Ana F. Militino, Public University of Navarre, Pamplona, Spain\n> Alan Arnholt, Appalachian State University, Boone, North Carolina, U.S.A.\n> \n> Publication Date: April 2008\n> Number of Pages: 728\n> \n> With numerous real-world examples, carefully explained proofs, end-of-chapter problems, and illuminating graphs, this text shows how to solve various statistical problems using both parametric and nonparametric techniques via R. The authors offer data sets, functions, and other ancillary material on a supporting website. A solutions manual is available for qualifying instructors.\n> \n> \n> List Prices: $89.95 / ???46.99  \n> \n> \n> Introduction to Probability with R\n> \n> Kenneth P. Baclawski, Northeastern University, Boston, Massachusetts, U.S.A.\n> (http://www.crcpress.com/shopping_cart/products/product_detail.asp?sku=C6521)\n> \n> Publication Date: January 2008\n> Number of Pages: 384\n> \n> This text presents R programs and animations to provide an understanding of how to model natural phenomena from a probabilistic point of view. It covers stochastic processes, the Poisson process, transforms, Bayesian networks, entropy and information, and Markov chains. It includes exercises, selected answers, and ancillary material online.\n> \n> \n> List Prices: $89.95 / ???46.99  \n> \n> Contact Academic Sales Manager Susie Carlisle (susie.carlisle at taylorandfrancis.com) to take advantage of this special offer. \n> \n> \n> \n> \n>     [[alternative HTML version deleted]]\n> \n> \n>       \n> \t[[alternative HTML version deleted]]\n> \n> \n> \n> ------------------------------------------------------------------------\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n-- \n*******************************************\nLaura Chihara\nProfessor of Mathematics   507-222-4065 (office)\nDept of Mathematics        507-222-4312 (fax)\nCarleton College\n1 North College Street\nNorthfield MN 55057",
+      "body_snippet": "\"The R Book\" by Crawley (Wiley) is comprehensive and very useful.\nIt got a nice review in the latest issue of \"The American\nStatistician\"\n\n-Laura\n\nVanesa Maribel Fern?ndez wrote:\n> Hallo! My\n> name is",
+      "thread_id": "thread-62e73cb26f87",
+      "thread_depth": 1,
+      "month": "2008-08"
+    },
+    {
+      "id": "msg-20675cf7db6d",
+      "message_id": "<154d1a660808201059i450353e9r35e697b0236875e0@mail.gmail.com>",
+      "from_name": "A.G. WARRACK",
+      "from_email_hash": "d3ced12ca0596e65b21bbdf8a1efa9ee54c6709e7744ba0a55b3cadb364a0562",
+      "date": "2008-08-20T13:59:44-04:00",
+      "subject": "[R-sig-teaching] R texts",
+      "subject_clean": "R texts",
+      "in_reply_to": "<48AC51BF.6030509@carleton.edu>",
+      "references": [
+        "<897634.42294.qm@web32506.mail.mud.yahoo.com>",
+        "<48AC51BF.6030509@carleton.edu>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080820/a426096c/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080820/a426096c/attachment.pl>",
+      "thread_id": "thread-62e73cb26f87",
+      "thread_depth": 2,
+      "month": "2008-08"
+    },
+    {
+      "id": "msg-632437c95187",
+      "message_id": "<Pine.LNX.4.63+UNC.0808221623360.6828@login01.its.unc.edu>",
+      "from_name": "William B. Ware",
+      "from_email_hash": "74d153f01ed46881f288a62d743d05fcb6fe1ab2a5c933336196292ce2fb3928",
+      "date": "2008-08-22T16:28:22-04:00",
+      "subject": "[R-sig-teaching] R texts",
+      "subject_clean": "R texts",
+      "in_reply_to": "<154d1a660808201059i450353e9r35e697b0236875e0@mail.gmail.com>",
+      "references": [
+        "<897634.42294.qm@web32506.mail.mud.yahoo.com>",
+        "<48AC51BF.6030509@carleton.edu>",
+        "<154d1a660808201059i450353e9r35e697b0236875e0@mail.gmail.com>"
+      ],
+      "body_plain": "I'm new to R, but there are two books that I have found very helpful... \nMost of the students that I teach are \"social science\" graduate \nstudents... I think that John Verzani's book \"Using R for Introductory \nStatistics\" is extremely well suited for that audience.  I also like \nMichael Crawley's \"Statistics: An Introduction using R\" and Phil Good's \n\"Introduction to Statistics through Resampling Methods and R/S-Plus.\n\nAlso very helpful has been Ugarte, Militino, and Arnholt's \"Probability \nand Statistics with R.\"\n\nwbw\n\n__________________________________________________________________________\nWilliam B. Ware, Professor       \t           Educational Psychology,\nCB# 3500\t\t                       Measurement, and Evaluation\nUniversity of North Carolina\t  \t             PHONE  (919)-962-7848\nChapel Hill, NC      27599-3500\t\t             FAX:   (919)-962-1533\nOffice:  118 Peabody Hall                            EMAIL: wbware at unc.edu\nAdjunct Professor \t\t                     School of Social Work\n__________________________________________________________________________\n\n\nOn Wed, 20 Aug 2008, A.G. WARRACK wrote:\n\n> but I think also it's very expensive, and as I recall the review in the R\n> newsletter wasn't that good.\n>\n> Also Venables and Ripley cover a lot of the material that Vanesa mentioned.\n> GW\n>\n> On 8/20/08, Laura Chihara <lchihara at carleton.edu> wrote:\n>>\n>>\n>> \"The R Book\" by Crawley (Wiley) is comprehensive and very useful.\n>> It got a nice review in the latest issue of \"The American\n>> Statistician\"\n>>\n>> -Laura\n>>\n>> Vanesa Maribel Fern?ndez wrote:\n>>\n>>> Hallo! My\n>>> name is Vanesa; I am a biology PhD student from Argentina. I am used to\n>>> carry out\n>>> statistical analysis of data from our experiments. And I would like to\n>>> have a\n>>> book to learn how to use ???R??  for statistical. I need one which\n>>> contains for\n>>> example: analysis of categorical data, regression, ANOVA (fixed, mixed,\n>>> repeated measures nestled), etc.\n>>> Can you\n>>> help me to choose a book? Thank you\n>>> very much.\n>>> Vanesa\n>>>\n>>>\n>>>\n>>>\n>>> ----- Original Message ----\n>>> From: \"Thomas, Judy\" <judy.thomas at taylorandfrancis.com>\n>>> To: r-sig-teaching at r-project.org\n>>> Sent: Tuesday, August 12, 2008 11:27:42 AM\n>>> Subject: [R-sig-teaching] ANNOUNCEMENT: COMPLIMENTARY REVIEW COPIES OF NEW\n>>> R BOOKS FROM CHAPMAN & HALL/CRC!\n>>>\n>>> ANNOUNCEMENT:  COMPLIMENTARY REVIEW COPIES OF NEW R BOOKS FROM CHAPMAN &\n>>> HALL/CRC!\n>>>\n>>>\n>>> It's back to school season, and the academic world is buzzing about new\n>>> textbooks. We know you will be making your course adoption selections for\n>>> the spring over the next couple of week, and want to make sure you get a\n>>> sneak peek at our latest offerings.\n>>>\n>>> With this in mind, Chapman & Hall/CRC is pleased to provide complimentary\n>>> review copies of our latest R titles to qualified instructors. Please\n>>> contact Academic Sales Manager Susie Carlisle (\n>>> susie.carlisle at taylorandfrancis.com), and mention promotion code #966HW,\n>>> to take advantage of this special offer.\n>>>\n>>> Secure your review copy today!\n>>>\n>>>\n>>> ****NEW TITLES****\n>>>\n>>> Probability and Statistics with R (\n>>> http://www.crcpress.com/shopping_cart/products/product_detail.asp?sku=C8911\n>>> )\n>>>\n>>> Maria Dolores Ugarte, Public University of Navarre, Pamplona, Spain\n>>> Ana F. Militino, Public University of Navarre, Pamplona, Spain\n>>> Alan Arnholt, Appalachian State University, Boone, North Carolina, U.S.A.\n>>>\n>>> Publication Date: April 2008\n>>> Number of Pages: 728\n>>>\n>>> With numerous real-world examples, carefully explained proofs,\n>>> end-of-chapter problems, and illuminating graphs, this text shows how to\n>>> solve various statistical problems using both parametric and nonparametric\n>>> techniques via R. The authors offer data sets, functions, and other\n>>> ancillary material on a supporting website. A solutions manual is available\n>>> for qualifying instructors.\n>>>\n>>>\n>>> List Prices: $89.95 / ???46.99\n>>>\n>>> Introduction to Probability with R\n>>>\n>>> Kenneth P. Baclawski, Northeastern University, Boston, Massachusetts,\n>>> U.S.A.\n>>> (\n>>> http://www.crcpress.com/shopping_cart/products/product_detail.asp?sku=C6521\n>>> )\n>>>\n>>> Publication Date: January 2008\n>>> Number of Pages: 384\n>>>\n>>> This text presents R programs and animations to provide an understanding\n>>> of how to model natural phenomena from a probabilistic point of view. It\n>>> covers stochastic processes, the Poisson process, transforms, Bayesian\n>>> networks, entropy and information, and Markov chains. It includes exercises,\n>>> selected answers, and ancillary material online.\n>>>\n>>>\n>>> List Prices: $89.95 / ???46.99\n>>> Contact Academic Sales Manager Susie Carlisle (\n>>> susie.carlisle at taylorandfrancis.com) to take advantage of this special\n>>> offer.\n>>>\n>>>\n>>>\n>>>    [[alternative HTML version deleted]]\n>>>\n>>>\n>>>              [[alternative HTML version deleted]]\n>>>\n>>>\n>>>\n>>> ------------------------------------------------------------------------\n>>>\n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>>\n>>\n>> --\n>> *******************************************\n>> Laura Chihara\n>> Professor of Mathematics   507-222-4065 (office)\n>> Dept of Mathematics        507-222-4312 (fax)\n>> Carleton College\n>> 1 North College Street\n>> Northfield MN 55057\n>>\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>>\n>\n>\n> -- \n> Giles Warrack\n> 2412 Springwood Drive\n> Greensboro, NC 27403-2030\n> (336) 292-9272 (home)\n> (336) 686-5330 (cell)\n>\n> \t[[alternative HTML version deleted]]\n>\n>",
+      "body_snippet": "I'm new to R, but there are two books that I have found very helpful... \nMost of the students that I teach are \"social science\" graduate \nstudents... I think that John Verzani's book \"Using R for Intr",
+      "thread_id": "thread-62e73cb26f87",
+      "thread_depth": 3,
+      "month": "2008-08"
+    },
+    {
+      "id": "msg-f2d0479ce87c",
+      "message_id": "<18608.22485.940159.84447@cmath-5.math.ethz.ch>",
+      "from_name": "Martin Maechler",
+      "from_email_hash": "c2c86f22f78a4ecfe6d0e6b4e2be505a3f5beb0470ea88c903688ac536018a98",
+      "date": "2008-08-23T20:32:53+02:00",
+      "subject": "[R-sig-teaching] R texts",
+      "subject_clean": "R texts",
+      "in_reply_to": "<154d1a660808201059i450353e9r35e697b0236875e0@mail.gmail.com>",
+      "references": [
+        "<897634.42294.qm@web32506.mail.mud.yahoo.com>",
+        "<48AC51BF.6030509@carleton.edu>",
+        "<154d1a660808201059i450353e9r35e697b0236875e0@mail.gmail.com>"
+      ],
+      "body_plain": ">>>>> \"AGW\" == A G WARRACK <warrack at earthlink.net>\n>>>>>     on Wed, 20 Aug 2008 13:59:44 -0400 writes:\n\n    AGW> but I think also it's very expensive, and as I recall\n    AGW> the review in the R newsletter wasn't that good.\n\nyes, and I've also found it bit astonishing that someone who has\nnot ever been close to the development R dares to write \n\"*THE* R book\" ..\n\n    AGW> Also Venables and Ripley cover a lot of the material\n    AGW> that Vanesa mentioned.  GW\n\nyes, and boht have been close to the development of S and R for\nmany years.\n\nMartin\n\n    AGW> On 8/20/08, Laura Chihara <lchihara at carleton.edu>\n    AGW> wrote:\n    >> \n    >> \n    >> \"The R Book\" by Crawley (Wiley) is comprehensive and very\n    >> useful.  It got a nice review in the latest issue of \"The\n    >> American Statistician\"\n    >> \n    >> -Laura\n    >> \n    >> Vanesa Maribel Fern?ndez wrote:\n    >> \n    >>> Hallo! My name is Vanesa; I am a biology PhD student\n    >>> from Argentina. I am used to carry out statistical\n    >>> analysis of data from our experiments. And I would like\n    >>> to have a book to learn how to use ???R??\n    >>> for statistical. I need one which contains for example:\n    >>> analysis of categorical data, regression, ANOVA (fixed,\n    >>> mixed, repeated measures nestled), etc.  Can you help me\n    >>> to choose a book? Thank you very much.  Vanesa\n    >>> \n    >>> \n    >>> \n    >>> \n    >>> ----- Original Message ---- From: \"Thomas, Judy\"\n    >>> <judy.thomas at taylorandfrancis.com> To:\n    >>> r-sig-teaching at r-project.org Sent: Tuesday, August 12,\n    >>> 2008 11:27:42 AM Subject: [R-sig-teaching] ANNOUNCEMENT:\n    >>> COMPLIMENTARY REVIEW COPIES OF NEW R BOOKS FROM CHAPMAN\n    >>> & HALL/CRC!\n    >>> \n    >>> ANNOUNCEMENT: COMPLIMENTARY REVIEW COPIES OF NEW R BOOKS\n    >>> FROM CHAPMAN & HALL/CRC!\n    >>> \n    >>> \n    >>> It's back to school season, and the academic world is\n    >>> buzzing about new textbooks. We know you will be making\n    >>> your course adoption selections for the spring over the\n    >>> next couple of week, and want to make sure you get a\n    >>> sneak peek at our latest offerings.\n    >>> \n    >>> With this in mind, Chapman & Hall/CRC is pleased to\n    >>> provide complimentary review copies of our latest R\n    >>> titles to qualified instructors. Please contact Academic\n    >>> Sales Manager Susie Carlisle (\n    >>> susie.carlisle at taylorandfrancis.com), and mention\n    >>> promotion code #966HW, to take advantage of this special\n    >>> offer.\n    >>> \n    >>> Secure your review copy today!\n    >>> \n    >>> \n    >>> ****NEW TITLES****\n    >>> \n    >>> Probability and Statistics with R (\n    >>> http://www.crcpress.com/shopping_cart/products/product_detail.asp?sku=C8911\n    >>> )\n    >>> \n    >>> Maria Dolores Ugarte, Public University of Navarre,\n    >>> Pamplona, Spain Ana F. Militino, Public University of\n    >>> Navarre, Pamplona, Spain Alan Arnholt, Appalachian State\n    >>> University, Boone, North Carolina, U.S.A.\n    >>> \n    >>> Publication Date: April 2008 Number of Pages: 728\n    >>> \n    >>> With numerous real-world examples, carefully explained\n    >>> proofs, end-of-chapter problems, and illuminating\n    >>> graphs, this text shows how to solve various statistical\n    >>> problems using both parametric and nonparametric\n    >>> techniques via R. The authors offer data sets,\n    >>> functions, and other ancillary material on a supporting\n    >>> website. A solutions manual is available for qualifying\n    >>> instructors.\n    >>> \n    >>> \n    >>> List Prices: $89.95 / ???46.99\n    >>> \n    >>> Introduction to Probability with R\n    >>> \n    >>> Kenneth P. Baclawski, Northeastern University, Boston,\n    >>> Massachusetts, U.S.A.  (\n    >>> http://www.crcpress.com/shopping_cart/products/product_detail.asp?sku=C6521\n    >>> )\n    >>> \n    >>> Publication Date: January 2008 Number of Pages: 384\n    >>> \n    >>> This text presents R programs and animations to provide\n    >>> an understanding of how to model natural phenomena from\n    >>> a probabilistic point of view. It covers stochastic\n    >>> processes, the Poisson process, transforms, Bayesian\n    >>> networks, entropy and information, and Markov chains. It\n    >>> includes exercises, selected answers, and ancillary\n    >>> material online.\n    >>> \n    >>> \n    >>> List Prices: $89.95 / ???46.99 Contact Academic\n    >>> Sales Manager Susie Carlisle (\n    >>> susie.carlisle at taylorandfrancis.com) to take advantage\n    >>> of this special offer.\n    >>> \n    >>> \n    >>> \n    >>> [[alternative HTML version deleted]]\n    >>> \n    >>> \n    >>> [[alternative HTML version deleted]]\n    >>> \n    >>> \n    >>> \n    >>> ------------------------------------------------------------------------\n    >>> \n    >>> _______________________________________________\n    >>> R-sig-teaching at r-project.org mailing list\n    >>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n    >>> \n    >> \n> --\n> *******************************************\n> Laura Chihara Professor of Mathematics 507-222-4065 (office)\n    >> Dept of Mathematics 507-222-4312 (fax) Carleton College 1\n    >> North College Street Northfield MN 55057\n    >> \n    >> \n    >> _______________________________________________\n    >> R-sig-teaching at r-project.org mailing list\n    >> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n    >> \n    >> \n\n\n-- \nGiles Warrack\n    AGW> 2412 Springwood Drive Greensboro, NC 27403-2030 (336)\n    AGW> 292-9272 (home) (336) 686-5330 (cell)\n\n    AGW> \t[[alternative HTML version deleted]]\n\n    AGW> _______________________________________________\n    AGW> R-sig-teaching at r-project.org mailing list\n    AGW> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": ">>>>> \"AGW\" == A G WARRACK <warrack at earthlink.net>\n>>>>>     on Wed, 20 Aug 2008 13:59:44 -0400 writes:\n\n    AGW> but I think also it's very expensive, and as I recall\n    AGW> the review in the R ",
+      "thread_id": "thread-62e73cb26f87",
+      "thread_depth": 3,
+      "month": "2008-08"
+    },
+    {
+      "id": "msg-5c7d9dca02a2",
+      "message_id": "<1220191195.3082.9.camel@localhost.localdomain>",
+      "from_name": "Luis Orlindo Tedeschi",
+      "from_email_hash": "296b63d8d68ef48e764356b5b69e2d8a792eb7a7fd76664e274b4ec61d813fb1",
+      "date": "2008-08-31T08:59:55-05:00",
+      "subject": "[R-sig-teaching] R texts",
+      "subject_clean": "R texts",
+      "in_reply_to": "<48AC51BF.6030509@carleton.edu>",
+      "references": [
+        "<897634.42294.qm@web32506.mail.mud.yahoo.com>",
+        "<48AC51BF.6030509@carleton.edu>"
+      ],
+      "body_plain": "Vanesa, I concur with \"The R Book\". I probably have 90% of the R free\nliterature printed in hard copy and I've read them twice at least. I\nfind \"The R Book\" excellent; and I anxiously waiting for the next\nedition (hopefully with corrections and additions). Today, it is my\nfirst choice to find for something in R. If I do not find it there\n(which is not usual), then I look into other resources including R lists\nand publications. Hope this helps.\n\nOn Wed, 2008-08-20 at 12:17 -0500, Laura Chihara wrote:\n> \"The R Book\" by Crawley (Wiley) is comprehensive and very useful.\n> It got a nice review in the latest issue of \"The American\n> Statistician\"\n> \n> -Laura\n> \n> Vanesa Maribel Fern?ndez wrote:\n> > Hallo! My\n> > name is Vanesa; I am a biology PhD student from Argentina. I am used to carry out\n> > statistical analysis of data from our experiments. And I would like to have a\n> > book to learn how to use ???R?? for statistical. I need one which contains for\n> > example: analysis of categorical data, regression, ANOVA (fixed, mixed,\n> > repeated measures nestled), etc.\n> > Can you\n> > help me to choose a book? \n> > Thank you\n> > very much.\n> > Vanesa\n> >  \n> >  \n> > \n> > \n> > \n> > \n> > ----- Original Message ----\n> > From: \"Thomas, Judy\" <judy.thomas at taylorandfrancis.com>\n> > To: r-sig-teaching at r-project.org\n> > Sent: Tuesday, August 12, 2008 11:27:42 AM\n> > Subject: [R-sig-teaching] ANNOUNCEMENT: COMPLIMENTARY REVIEW COPIES OF NEW R BOOKS FROM CHAPMAN & HALL/CRC!\n> > \n> > ANNOUNCEMENT:  COMPLIMENTARY REVIEW COPIES OF NEW R BOOKS FROM CHAPMAN & HALL/CRC!\n> > \n> > \n> > It's back to school season, and the academic world is buzzing about new textbooks. We know you will be making your course adoption selections for the spring over the next couple of week, and want to make sure you get a sneak peek at our latest offerings.  \n> > \n> > \n> > With this in mind, Chapman & Hall/CRC is pleased to provide complimentary review copies of our latest R titles to qualified instructors. Please contact Academic Sales Manager Susie Carlisle (susie.carlisle at taylorandfrancis.com), and mention promotion code #966HW, to take advantage of this special offer. \n> > \n> > \n> > Secure your review copy today!\n> > \n> > \n> > ****NEW TITLES****\n> > \n> > Probability and Statistics with R (http://www.crcpress.com/shopping_cart/products/product_detail.asp?sku=C8911)\n> > \n> > Maria Dolores Ugarte, Public University of Navarre, Pamplona, Spain\n> > Ana F. Militino, Public University of Navarre, Pamplona, Spain\n> > Alan Arnholt, Appalachian State University, Boone, North Carolina, U.S.A.\n> > \n> > Publication Date: April 2008\n> > Number of Pages: 728\n> > \n> > With numerous real-world examples, carefully explained proofs, end-of-chapter problems, and illuminating graphs, this text shows how to solve various statistical problems using both parametric and nonparametric techniques via R. The authors offer data sets, functions, and other ancillary material on a supporting website. A solutions manual is available for qualifying instructors.\n> > \n> > \n> > List Prices: $89.95 / ???46.99  \n> > \n> > \n> > Introduction to Probability with R\n> > \n> > Kenneth P. Baclawski, Northeastern University, Boston, Massachusetts, U.S.A.\n> > (http://www.crcpress.com/shopping_cart/products/product_detail.asp?sku=C6521)\n> > \n> > Publication Date: January 2008\n> > Number of Pages: 384\n> > \n> > This text presents R programs and animations to provide an understanding of how to model natural phenomena from a probabilistic point of view. It covers stochastic processes, the Poisson process, transforms, Bayesian networks, entropy and information, and Markov chains. It includes exercises, selected answers, and ancillary material online.\n> > \n> > \n> > List Prices: $89.95 / ???46.99  \n> > \n> > Contact Academic Sales Manager Susie Carlisle (susie.carlisle at taylorandfrancis.com) to take advantage of this special offer. \n> > \n> > \n> > \n> > \n> >     [[alternative HTML version deleted]]\n> > \n> > \n> >       \n> > \t[[alternative HTML version deleted]]\n> > \n> > \n> > \n> > ------------------------------------------------------------------------\n> > \n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n-- \n\n??+----------------------------------------------------+\n              ?Luis O. Tedeschi, PhD, PAS\n                 Assistant Professor\n                 Texas A&M University\n\n230 Kleberg Center               p. (+1) 979-845-5065\n2471 TAMU                        f. (+1) 979-845-5292\nCollege Station, TX 77843-2471\n\n?http://nutritionmodels.tamu.edu\nhttp://nutr.tamu.edu\nhttp://people.tamu.edu/~luis.tedeschi\n+----------------------------------------------------+",
+      "body_snippet": "Vanesa, I concur with \"The R Book\". I probably have 90% of the R free\nliterature printed in hard copy and I've read them twice at least. I\nfind \"The R Book\" excellent; and I anxiously waiting for the ",
+      "thread_id": "thread-62e73cb26f87",
+      "thread_depth": 2,
+      "month": "2008-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-b90642d9c8de",
+      "subject": "ANNOUNCEMENT: COMPLIMENTARY REVIEW COPIES OF NEW R BOOKS FROM CHAPMAN & HALL/CRC!",
+      "message_count": 1,
+      "participants": [
+        "Thomas, Judy"
+      ],
+      "started": "2008-08-12T10:27:42-04:00",
+      "last_reply": "2008-08-12T10:27:42-04:00",
+      "root_message_id": "msg-b90642d9c8de"
+    },
+    {
+      "id": "thread-62e73cb26f87",
+      "subject": "ANNOUNCEMENT: COMPLIMENTARY REVIEW COPIES OF NEW R BOOKS FROM CHAPMAN & HALL/CRC!",
+      "message_count": 8,
+      "participants": [
+        "A.G. WARRACK",
+        "Albyn Jones",
+        "Laura Chihara",
+        "Luis Orlindo Tedeschi",
+        "Martin Maechler",
+        "Vanesa Maribel Fernández",
+        "William B. Ware"
+      ],
+      "started": "2008-08-20T06:08:35-07:00",
+      "last_reply": "2008-08-31T08:59:55-05:00",
+      "root_message_id": "msg-62e73cb26f87"
+    }
+  ]
+}

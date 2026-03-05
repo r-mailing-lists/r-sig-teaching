@@ -1,0 +1,231 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2009-12",
+  "messages": [
+    {
+      "id": "msg-1e08af39fd59",
+      "message_id": "<206a64110912021246q12e82811u7b65f71f6de23e14@mail.gmail.com>",
+      "from_name": "Stuart Wagenius",
+      "from_email_hash": "9e390402f6105330e7db0565b33d7f6d40e396385267e4e2afc6d946a367105f",
+      "date": "2009-12-02T14:46:44-06:00",
+      "subject": "[R-sig-teaching] text editor for teaching R",
+      "subject_clean": "text editor for teaching R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nI teach statistics using R in a classroom with Windows machines. For\nclass, I use Notepad and cut and paste to the console. For my own\nwork, I use a Mac or I use a PC with Tinn-R. The send-to-R feature is\ngreat. I would like to have the students use Tinn-R because the\nsend-to-R feature is so nice, but recent versions of Tinn-R are too\ncomplicated and quirky. I feel that trying to set-up Tinn-R on the\nclass computers would be a hassle and using it in class may be too\ndistracting.\n\nCan anyone recommend a text editor for teaching R on machines running\nWindows Vista? Is there something simple to set up, stable to run, and\neasy to use?\n\nThanks,\nStuart",
+      "body_snippet": "Hi,\n\nI teach statistics using R in a classroom with Windows machines. For\nclass, I use Notepad and cut and paste to the console. For my own\nwork, I use a Mac or I use a PC with Tinn-R. The send-to-R f",
+      "thread_id": "thread-1e08af39fd59",
+      "thread_depth": 0,
+      "month": "2009-12"
+    },
+    {
+      "id": "msg-3a3d39f72dbd",
+      "message_id": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC62F710A278@LP-EXMBVS10.CO.IHC.COM>",
+      "from_name": "Greg Snow",
+      "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
+      "date": "2009-12-02T14:10:03-07:00",
+      "subject": "[R-sig-teaching] text editor for teaching R",
+      "subject_clean": "text editor for teaching R",
+      "in_reply_to": "<206a64110912021246q12e82811u7b65f71f6de23e14@mail.gmail.com>",
+      "references": [
+        "<206a64110912021246q12e82811u7b65f71f6de23e14@mail.gmail.com>"
+      ],
+      "body_plain": "In windows, the simplest editor to use is the built in one in the R gui.  Just click on file, then New Script and it will open a blank editor (or use open script to read in a file).  This is a pretty basic editor, it does not do syntax highlighting, paren matching an several other things that are nice in Tinn-R, ESS/emacs and others.  \n\nBut one really nice thing is that you can highlight a section of code and just click a single button on the toolbar and the highlighted code will be copied to the command line and run.  Or without a selection, the same button will run the current line and advance to the next line (so clicking the button several times runs the next several lines of code).\n\nAnd you don't have to install anything besides R.\n\nHope this helps,\n\n-- \nGregory (Greg) L. Snow Ph.D.\nStatistical Data Center\nIntermountain Healthcare\ngreg.snow at imail.org\n801.408.8111\n\n\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-\n> bounces at r-project.org] On Behalf Of Stuart Wagenius\n> Sent: Wednesday, December 02, 2009 1:47 PM\n> To: r-sig-teaching at r-project.org\n> Subject: [R-sig-teaching] text editor for teaching R\n> \n> Hi,\n> \n> I teach statistics using R in a classroom with Windows machines. For\n> class, I use Notepad and cut and paste to the console. For my own\n> work, I use a Mac or I use a PC with Tinn-R. The send-to-R feature is\n> great. I would like to have the students use Tinn-R because the\n> send-to-R feature is so nice, but recent versions of Tinn-R are too\n> complicated and quirky. I feel that trying to set-up Tinn-R on the\n> class computers would be a hassle and using it in class may be too\n> distracting.\n> \n> Can anyone recommend a text editor for teaching R on machines running\n> Windows Vista? Is there something simple to set up, stable to run, and\n> easy to use?\n> \n> Thanks,\n> Stuart\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "In windows, the simplest editor to use is the built in one in the R gui.  Just click on file, then New Script and it will open a blank editor (or use open script to read in a file).  This is a pretty ",
+      "thread_id": "thread-1e08af39fd59",
+      "thread_depth": 1,
+      "month": "2009-12"
+    },
+    {
+      "id": "msg-bc57e67da7e5",
+      "message_id": "<a695148b0912021322i447db340qa227d519bfc275b5@mail.gmail.com>",
+      "from_name": "G. Jay Kerns",
+      "from_email_hash": "50e93b09ae5eba7f3237d0e4291e3a6b8825a6fb21853bb3678551306330b319",
+      "date": "2009-12-02T16:22:10-05:00",
+      "subject": "[R-sig-teaching] text editor for teaching R",
+      "subject_clean": "text editor for teaching R",
+      "in_reply_to": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC62F710A278@LP-EXMBVS10.CO.IHC.COM>",
+      "references": [
+        "<206a64110912021246q12e82811u7b65f71f6de23e14@mail.gmail.com>",
+        "<B37C0A15B8FB3C468B5BC7EBC7DA14CC62F710A278@LP-EXMBVS10.CO.IHC.COM>"
+      ],
+      "body_plain": "Dear Stuart,\n\nOn Wed, Dec 2, 2009 at 4:10 PM, Greg Snow <Greg.Snow at imail.org> wrote:\n> In windows, the simplest editor to use is the built in one in the R gui. ?Just click on file, then New Script and it will open a blank editor (or use open script to read in a file). ?This is a pretty basic editor, it does not do syntax highlighting, paren matching an several other things that are nice in Tinn-R, ESS/emacs and others.\n>\n> But one really nice thing is that you can highlight a section of code and just click a single button on the toolbar and the highlighted code will be copied to the command line and run. ?Or without a selection, the same button will run the current line and advance to the next line (so clicking the button several times runs the next several lines of code).\n>\n> And you don't have to install anything besides R.\n>\n> Hope this helps,\n>\n\n\nI had to delete most of my reply because Greg Snow said it better than me.  :-)\n\nI have also used Emacs/ESS for upper-division students; you didn't\nmention the level of your classes.  If your students are introductory\nand have grown up clicking buttons then it will be painful for them.\nBut Emacs/ESS is very stable, easy to install and setup via Vincent\nGoulet,  has syntax highlighting, automatic spacing, code completion,\ncan handle R transcripts... the list goes on and on...\n\nI would not recommend Emacs/ESS for freshmen who have mice for right\nhands, but anything over the introductory level has been fine for me\n(or even introductory if your students are sharp).\n\nGood luck,\nJay\n\n\n\n\n\n***************************************************\nG. Jay Kerns, Ph.D.\nAssociate Professor\nDepartment of Mathematics & Statistics\nYoungstown State University\nYoungstown, OH 44555-0002 USA\nOffice: 1035 Cushwa Hall\nPhone: (330) 941-3310 Office (voice mail)\n-3302 Department\n-3170 FAX\nVoIP: gjkerns at ekiga.net\nE-mail: gkerns at ysu.edu\nhttp://people.ysu.edu/~gkerns/",
+      "body_snippet": "Dear Stuart,\n\nOn Wed, Dec 2, 2009 at 4:10 PM, Greg Snow <Greg.Snow at imail.org> wrote:\n> In windows, the simplest editor to use is the built in one in the R gui. ?Just click on file, then New Script ",
+      "thread_id": "thread-1e08af39fd59",
+      "thread_depth": 2,
+      "month": "2009-12"
+    },
+    {
+      "id": "msg-b0c379f594e1",
+      "message_id": "<206a64110912021347m54606956u67037f2d7fe76bc7@mail.gmail.com>",
+      "from_name": "Stuart Wagenius",
+      "from_email_hash": "9e390402f6105330e7db0565b33d7f6d40e396385267e4e2afc6d946a367105f",
+      "date": "2009-12-02T15:47:53-06:00",
+      "subject": "[R-sig-teaching] text editor for teaching R",
+      "subject_clean": "text editor for teaching R",
+      "in_reply_to": "<a695148b0912021322i447db340qa227d519bfc275b5@mail.gmail.com>",
+      "references": [
+        "<206a64110912021246q12e82811u7b65f71f6de23e14@mail.gmail.com>",
+        "<B37C0A15B8FB3C468B5BC7EBC7DA14CC62F710A278@LP-EXMBVS10.CO.IHC.COM>",
+        "<a695148b0912021322i447db340qa227d519bfc275b5@mail.gmail.com>"
+      ],
+      "body_plain": "Oh yes. Very nice. Thank you for your help!\n\nStuart\n\nOn Wed, Dec 2, 2009 at 3:22 PM, G. Jay Kerns <gkerns at ysu.edu> wrote:\n> Dear Stuart,\n>\n> On Wed, Dec 2, 2009 at 4:10 PM, Greg Snow <Greg.Snow at imail.org> wrote:\n>> In windows, the simplest editor to use is the built in one in the R gui. ?Just click on file, then New Script and it will open a blank editor (or use open script to read in a file). ?This is a pretty basic editor, it does not do syntax highlighting, paren matching an several other things that are nice in Tinn-R, ESS/emacs and others.\n>>\n>> But one really nice thing is that you can highlight a section of code and just click a single button on the toolbar and the highlighted code will be copied to the command line and run. ?Or without a selection, the same button will run the current line and advance to the next line (so clicking the button several times runs the next several lines of code).\n>>\n>> And you don't have to install anything besides R.\n>>\n>> Hope this helps,\n>>\n>\n>\n> I had to delete most of my reply because Greg Snow said it better than me. ?:-)\n>\n> I have also used Emacs/ESS for upper-division students; you didn't\n> mention the level of your classes. ?If your students are introductory\n> and have grown up clicking buttons then it will be painful for them.\n> But Emacs/ESS is very stable, easy to install and setup via Vincent\n> Goulet, ?has syntax highlighting, automatic spacing, code completion,\n> can handle R transcripts... the list goes on and on...\n>\n> I would not recommend Emacs/ESS for freshmen who have mice for right\n> hands, but anything over the introductory level has been fine for me\n> (or even introductory if your students are sharp).\n>\n> Good luck,\n> Jay\n>\n>\n>\n>\n>\n> ***************************************************\n> G. Jay Kerns, Ph.D.\n> Associate Professor\n> Department of Mathematics & Statistics\n> Youngstown State University\n> Youngstown, OH 44555-0002 USA\n> Office: 1035 Cushwa Hall\n> Phone: (330) 941-3310 Office (voice mail)\n> -3302 Department\n> -3170 FAX\n> VoIP: gjkerns at ekiga.net\n> E-mail: gkerns at ysu.edu\n> http://people.ysu.edu/~gkerns/\n>",
+      "body_snippet": "Oh yes. Very nice. Thank you for your help!\n\nStuart\n\nOn Wed, Dec 2, 2009 at 3:22 PM, G. Jay Kerns <gkerns at ysu.edu> wrote:\n> Dear Stuart,\n>\n> On Wed, Dec 2, 2009 at 4:10 PM, Greg Snow <Greg.Snow at ",
+      "thread_id": "thread-1e08af39fd59",
+      "thread_depth": 3,
+      "month": "2009-12"
+    },
+    {
+      "id": "msg-20d7f99eaf90",
+      "message_id": "<C8F304C52E72EF4EBD6CBEF0A2DE1BAA08DC4B9C7B@MBX2.AD.UCSD.EDU>",
+      "from_name": "Fellows, Ian",
+      "from_email_hash": "d12bb521d01a14c5c9364007086c61200d7898178507ef5d276c14223c822c6b",
+      "date": "2009-12-02T14:13:37-08:00",
+      "subject": "[R-sig-teaching] text editor for teaching R",
+      "subject_clean": "text editor for teaching R",
+      "in_reply_to": "<206a64110912021347m54606956u67037f2d7fe76bc7@mail.gmail.com>",
+      "references": [
+        "<206a64110912021246q12e82811u7b65f71f6de23e14@mail.gmail.com>",
+        "<B37C0A15B8FB3C468B5BC7EBC7DA14CC62F710A278@LP-EXMBVS10.CO.IHC.COM>",
+        "<a695148b0912021322i447db340qa227d519bfc275b5@mail.gmail.com>",
+        "<206a64110912021347m54606956u67037f2d7fe76bc7@mail.gmail.com>"
+      ],
+      "body_plain": "Also of note is JGR, which has syntax highlighting, paren matching. You  can also send to R via command-return. And if your students have mice for right hands as Jay put it, Deducer (shameless plug) has integrated dialogs for most basic statistical tasks.\n\n\nIan\n________________________________________\nFrom: r-sig-teaching-bounces at r-project.org [r-sig-teaching-bounces at r-project.org] On Behalf Of Stuart Wagenius [s-wagenius at northwestern.edu]\nSent: Wednesday, December 02, 2009 1:47 PM\nTo: r-sig-teaching at r-project.org\nSubject: Re: [R-sig-teaching] text editor for teaching R\n\nOh yes. Very nice. Thank you for your help!\n\nStuart\n\nOn Wed, Dec 2, 2009 at 3:22 PM, G. Jay Kerns <gkerns at ysu.edu> wrote:\n> Dear Stuart,\n>\n> On Wed, Dec 2, 2009 at 4:10 PM, Greg Snow <Greg.Snow at imail.org> wrote:\n>> In windows, the simplest editor to use is the built in one in the R gui.  Just click on file, then New Script and it will open a blank editor (or use open script to read in a file).  This is a pretty basic editor, it does not do syntax highlighting, paren matching an several other things that are nice in Tinn-R, ESS/emacs and others.\n>>\n>> But one really nice thing is that you can highlight a section of code and just click a single button on the toolbar and the highlighted code will be copied to the command line and run.  Or without a selection, the same button will run the current line and advance to the next line (so clicking the button several times runs the next several lines of code).\n>>\n>> And you don't have to install anything besides R.\n>>\n>> Hope this helps,\n>>\n>\n>\n> I had to delete most of my reply because Greg Snow said it better than me.  :-)\n>\n> I have also used Emacs/ESS for upper-division students; you didn't\n> mention the level of your classes.  If your students are introductory\n> and have grown up clicking buttons then it will be painful for them.\n> But Emacs/ESS is very stable, easy to install and setup via Vincent\n> Goulet,  has syntax highlighting, automatic spacing, code completion,\n> can handle R transcripts... the list goes on and on...\n>\n> I would not recommend Emacs/ESS for freshmen who have mice for right\n> hands, but anything over the introductory level has been fine for me\n> (or even introductory if your students are sharp).\n>\n> Good luck,\n> Jay\n>\n>\n>\n>\n>\n> ***************************************************\n> G. Jay Kerns, Ph.D.\n> Associate Professor\n> Department of Mathematics & Statistics\n> Youngstown State University\n> Youngstown, OH 44555-0002 USA\n> Office: 1035 Cushwa Hall\n> Phone: (330) 941-3310 Office (voice mail)\n> -3302 Department\n> -3170 FAX\n> VoIP: gjkerns at ekiga.net\n> E-mail: gkerns at ysu.edu\n> http://people.ysu.edu/~gkerns/\n>\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Also of note is JGR, which has syntax highlighting, paren matching. You  can also send to R via command-return. And if your students have mice for right hands as Jay put it, Deducer (shameless plug) h",
+      "thread_id": "thread-1e08af39fd59",
+      "thread_depth": 4,
+      "month": "2009-12"
+    },
+    {
+      "id": "msg-d0d70a9eb0ac",
+      "message_id": "<e38ad0b30912021425m7c6ebb8eyaca258f55ce95604@mail.gmail.com>",
+      "from_name": "Ralph O'Brien, PhD",
+      "from_email_hash": "b130a5a0d521b68ae30b5e6f64ca799ce8345d72ca13a6628f755e22cc52c169",
+      "date": "2009-12-02T17:25:53-05:00",
+      "subject": "[R-sig-teaching] text editor for teaching R",
+      "subject_clean": "text editor for teaching R",
+      "in_reply_to": "<206a64110912021246q12e82811u7b65f71f6de23e14@mail.gmail.com>",
+      "references": [
+        "<206a64110912021246q12e82811u7b65f71f6de23e14@mail.gmail.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091202/ceba7394/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091202/ceba7394/attachment.pl>",
+      "thread_id": "thread-1e08af39fd59",
+      "thread_depth": 1,
+      "month": "2009-12"
+    },
+    {
+      "id": "msg-660416ef7818",
+      "message_id": "<20091202233948.59705.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2009-12-02T18:39:48-05:00",
+      "subject": "[R-sig-teaching]  text editor for teaching R",
+      "subject_clean": "text editor for teaching R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Forwarded message:\n> From: Stuart Wagenius <s-wagenius at northwestern.edu>\n \n> I teach statistics using R in a classroom with Windows machines. For\n> class, I use Notepad and cut and paste to the console. For my own\n> work, I use a Mac or I use a PC with Tinn-R. The send-to-R feature\n> is great. I would like to have the students use Tinn-R because the\n> send-to-R feature is so nice, but recent versions of Tinn-R are too\n> complicated and quirky. I feel that trying to set-up Tinn-R on the\n> class computers would be a hassle and using it in class may be too\n> distracting.  Can anyone recommend a text editor for teaching R on\n> machines running Windows Vista? Is there something simple to set up,\n> stable to run, and easy to use?\n\nYou do nto say why Notepad is not good enough but a step up is the\nfree EditPad Lite\n\n     http://www.editpadpro.com/editpadlite.html\n\nwhich should look \"normal\" to Windows users.  The main thing missing\nfor me is a spellchecker but who wants to spellcheck R code?-)  What I\ndo is edit my R program in an EditPad (Pro for me actually) window and\nclick on the Save button when I have made my changes.  Then click on\nthe R window and press the up-arrow to rerun the code.  After about\n128 cycles the program does what I want;-)  I have used this program\nfor years with no problems to speak of.  Installation is easy and\nmakes minimal changes to the computer (I think you can avoid writing\nanything to the registry, for example) and your students can install\nit on their own machines.  There is no need to set up any kind of\nconnection between the editor and R.  Runs on Windows 98 through 7.\n\n------->  First-time AP Stats. teacher?  Help is on the way! See\n\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n         \nRobert W. Hayden in the old library at  212 Main Street (P. O. Box 450)\nNorth Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      \nemail  bob statland.org  (add your own \"@\" and save me some spam)",
+      "body_snippet": "Forwarded message:\n> From: Stuart Wagenius <s-wagenius at northwestern.edu>\n \n> I teach statistics using R in a classroom with Windows machines. For\n> class, I use Notepad and cut and paste to the con",
+      "thread_id": "thread-660416ef7818",
+      "thread_depth": 0,
+      "month": "2009-12"
+    },
+    {
+      "id": "msg-bb8b09f95cca",
+      "message_id": "<68b1e2610912030158g3cbb74wb627fa9006de49f@mail.gmail.com>",
+      "from_name": "Liviu Andronic",
+      "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
+      "date": "2009-12-03T09:58:37Z",
+      "subject": "[R-sig-teaching] text editor for teaching R",
+      "subject_clean": "text editor for teaching R",
+      "in_reply_to": "<206a64110912021246q12e82811u7b65f71f6de23e14@mail.gmail.com>",
+      "references": [
+        "<206a64110912021246q12e82811u7b65f71f6de23e14@mail.gmail.com>"
+      ],
+      "body_plain": "Hello\n\nOn 12/2/09, Stuart Wagenius <s-wagenius at northwestern.edu> wrote:\n>  Can anyone recommend a text editor for teaching R on machines running\n>  Windows Vista? Is there something simple to set up, stable to run, and\n>  easy to use?\n>\nI am also a JGR user, resorting to Rcmdr&Plug-ins and Deducer for\ncertain tasks. Recently I discovered that Geany can also be used\nrelatively easily for R. Compared to JGR, Geany is a more comfortable\ntext editor, has tabs, and integrates a console in its interface. With\na small gotcha, it is easy to select text in the editor and send it\nfor execution to R. (The gotcha: the current Geany release requires\nthat, after select&send to R terminal, the user manually hit enter to\nevaluate the code. The SVN version contains a hidden option,\nsend_selection_unsafe=false, which can be set to 'true' in the config\nfile; at that point select&send will automatically execute the R\ncode.)\nOtherwise, Both JGR and Geany (as well Deducer and Rcmdr) are cross-platform.\n\nRegards\nLiviu",
+      "body_snippet": "Hello\n\nOn 12/2/09, Stuart Wagenius <s-wagenius at northwestern.edu> wrote:\n>  Can anyone recommend a text editor for teaching R on machines running\n>  Windows Vista? Is there something simple to set u",
+      "thread_id": "thread-1e08af39fd59",
+      "thread_depth": 1,
+      "month": "2009-12"
+    },
+    {
+      "id": "msg-7e00dba47faa",
+      "message_id": "<4B17B637.1000908@sciviews.org>",
+      "from_name": "Philippe Grosjean",
+      "from_email_hash": "71b9dd5d435dd797c88b6e8e80adcc63b4c2764c443f0ceca36f80f3ecda8d9a",
+      "date": "2009-12-03T13:59:35+01:00",
+      "subject": "[R-sig-teaching] text editor for teaching R",
+      "subject_clean": "text editor for teaching R",
+      "in_reply_to": "<206a64110912021347m54606956u67037f2d7fe76bc7@mail.gmail.com>",
+      "references": [
+        "<206a64110912021246q12e82811u7b65f71f6de23e14@mail.gmail.com>",
+        "<B37C0A15B8FB3C468B5BC7EBC7DA14CC62F710A278@LP-EXMBVS10.CO.IHC.COM>",
+        "<a695148b0912021322i447db340qa227d519bfc275b5@mail.gmail.com>",
+        "<206a64110912021347m54606956u67037f2d7fe76bc7@mail.gmail.com>"
+      ],
+      "body_plain": "Hello,\n\nYou mention you want something simple, thus a lightweight text editor \nwith just the \"submit to R\" function (and perhaps, a little bit of \nsyntax highlighting). However, there are many more complex features that \none would appreciate when teaching R. There are, I think, three software \nthat were developed with teaching in mind, specifically: JGR + Deducer \n(already mentioned), R Commander, and SciViews/Komodo Edit \n(http://www.sciviews.org/SciViews-K). I can speak a little bit about the \nlater one.\n\n- It runs the same way on Windows, Mac OS X and Linux,\n\n- Of course, you have code submission + syntax highlighting (much richer \nsyntax highlighting than many other lightweight solutions, including \nindication in red of wrong number formatting, or wrong escaped sequence \nin strings), plus:\n\n- A complete object explorer where you can drill in complex objects to \ndiscover their content. Objects explorers are very important because \nthey help \"visualize\" what's in memory... often a difficult task for \nstudents in sections where abstraction level is lower (psychology, \nsocial sciences, biology, versus math, stat or physic, to cite just a few).\n\n- A R reference toolbox that provides easy point&click access to pieces \nof R code through a more familiar paradigm of dialog box (more familiar, \nagain, to some categories of students). This is important, I think, and \nis also covered by both R commander and Deducer menus. However, in \nSciViews/Komodo, new items are created easily by selecting a piece of R \ncode, right clicking, and choosing (\"create snippet\") in the contextual \nmenu (well, for creating the dialog box, you have to tag parts of that R \ncode with something looking like [[%ask:X:default value]], but really \nmuch, much simpler than programming a plugin in R Commander and \nDecducer. Example: a code for creating a dialog box asking for two \nvariables and a color and plotting a scatterplot would look like:\n\nplot([[%ask:x:<x>]] [[%ask:y:<y>]], col = [[%ask:col:1]])\n\nSelect that code, right-click, \"create snippet\",... and you got a dialog \nbox prompting for x, y, and col.\n\n- Many other nice features, like completion lists, function calltips, \ncontextual help and contextual search R help (place the cursor anywhere \non a word, and hit Shift-F1, or Ctrl-Shift-F1, and the corresponding R \nhelp pops up), etc...\n\nAccording to my experience in teaching to biologists, or biomed \nstudents, those features are really much more than gadgets to help them \nmastering R and statistical methods.\n\nFinal word: I admit that a simpler installer and complete documentation \nof all these features are still lacking for SciViews... but it is \nplanned (no sorry, no date yet).\n\nBest,\n\nPhilippe Grosjean\n..............................................<?}))><........\n  ) ) ) ) )\n( ( ( ( (    Prof. Philippe Grosjean\n  ) ) ) ) )\n( ( ( ( (    Numerical Ecology of Aquatic Systems\n  ) ) ) ) )   Mons University, Belgium\n( ( ( ( (\n..............................................................\n\nStuart Wagenius wrote:\n> Oh yes. Very nice. Thank you for your help!\n> \n> Stuart\n> \n> On Wed, Dec 2, 2009 at 3:22 PM, G. Jay Kerns <gkerns at ysu.edu> wrote:\n>> Dear Stuart,\n>>\n>> On Wed, Dec 2, 2009 at 4:10 PM, Greg Snow <Greg.Snow at imail.org> wrote:\n>>> In windows, the simplest editor to use is the built in one in the R gui.  Just click on file, then New Script and it will open a blank editor (or use open script to read in a file).  This is a pretty basic editor, it does not do syntax highlighting, paren matching an several other things that are nice in Tinn-R, ESS/emacs and others.\n>>>\n>>> But one really nice thing is that you can highlight a section of code and just click a single button on the toolbar and the highlighted code will be copied to the command line and run.  Or without a selection, the same button will run the current line and advance to the next line (so clicking the button several times runs the next several lines of code).\n>>>\n>>> And you don't have to install anything besides R.\n>>>\n>>> Hope this helps,\n>>>\n>>\n>> I had to delete most of my reply because Greg Snow said it better than me.  :-)\n>>\n>> I have also used Emacs/ESS for upper-division students; you didn't\n>> mention the level of your classes.  If your students are introductory\n>> and have grown up clicking buttons then it will be painful for them.\n>> But Emacs/ESS is very stable, easy to install and setup via Vincent\n>> Goulet,  has syntax highlighting, automatic spacing, code completion,\n>> can handle R transcripts... the list goes on and on...\n>>\n>> I would not recommend Emacs/ESS for freshmen who have mice for right\n>> hands, but anything over the introductory level has been fine for me\n>> (or even introductory if your students are sharp).\n>>\n>> Good luck,\n>> Jay\n>>\n>>\n>>\n>>\n>>\n>> ***************************************************\n>> G. Jay Kerns, Ph.D.\n>> Associate Professor\n>> Department of Mathematics & Statistics\n>> Youngstown State University\n>> Youngstown, OH 44555-0002 USA\n>> Office: 1035 Cushwa Hall\n>> Phone: (330) 941-3310 Office (voice mail)\n>> -3302 Department\n>> -3170 FAX\n>> VoIP: gjkerns at ekiga.net\n>> E-mail: gkerns at ysu.edu\n>> http://people.ysu.edu/~gkerns/\n>>\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n>",
+      "body_snippet": "Hello,\n\nYou mention you want something simple, thus a lightweight text editor \nwith just the \"submit to R\" function (and perhaps, a little bit of \nsyntax highlighting). However, there are many more co",
+      "thread_id": "thread-1e08af39fd59",
+      "thread_depth": 4,
+      "month": "2009-12"
+    },
+    {
+      "id": "msg-3967ec4df9d5",
+      "message_id": "<a695148b0912100643j6f80ff4at326828e687f5a546@mail.gmail.com>",
+      "from_name": "G. Jay Kerns",
+      "from_email_hash": "50e93b09ae5eba7f3237d0e4291e3a6b8825a6fb21853bb3678551306330b319",
+      "date": "2009-12-10T09:43:28-05:00",
+      "subject": "[R-sig-teaching] flowchart for reporting R bugs",
+      "subject_clean": "flowchart for reporting R bugs",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "All in good fun.  I should have taken this closer to heart on a couple\nof occasions.\n\nJay\n\nP.S. You may need to resize the plot window.\n\n\n\n#############\nrequire(diagram)\n\nopenplotmat(main=\"Flowchart for R Bug Reporting\")\n\ncurvedarrow(from = c(0.5,0.85),\n            to = c(0.8,0.725),\n            curve = -0.2,\n            arr.pos = 0.6)\ncurvedarrow(from = c(0.8,0.725),\n            to = c(0.85,0.5),\n            curve = -0.2,\n            arr.pos = 0.5)\ncurvedarrow(from = c(0.85,0.5),\n            to = c(0.8,0.26),\n            curve = -0.2,\n            arr.pos = 0.5)\ncurvedarrow(from = c(0.8,0.26),\n            to = c(0.5,0.15),\n            curve = -0.2,\n            arr.pos = 0.53)\ncurvedarrow(from = c(0.5,0.15),\n            to = c(0.2,0.3),\n            curve = -0.2,\n            arr.pos = 0.4)\ncurvedarrow(from = c(0.2,0.3),\n            to = c(0.15,0.5),\n            curve = -0.2,\n            arr.pos = 0.5)\ncurvedarrow(from = c(0.15,0.5),\n            to = c(0.2,0.7),\n            curve = -0.2,\n            arr.pos = 0.45)\n\nstraightarrow(from = c(0.8,0.725),\n              to = c(0.5,0.5),\n              arr.pos = 0.5)\nstraightarrow(from = c(0.8,0.26),\n              to = c(0.5,0.5),\n              arr.pos = 0.45)\nstraightarrow(from = c(0.21,0.26),\n              to = c(0.5,0.5),\n              arr.pos = 0.52)\nstraightarrow(from = c(0.2,0.7),\n              to = c(0.5,0.5),\n              arr.pos = 0.55)\n\ntextellipse(mid = c(0.5,0.85),\n            box.col = grey(0.95),\n            radx = 0.15,\n            rady = 0.05,\n            lab = \"Found a BUG?\",\n            cex = 1.5\n            )\ntextrect(mid = c(0.8, 0.725),\n            radx = 0.115,\n            rady = 0.065,\n            lab = c(\"You are wrong.\",\n              \"Read the documentation again,\",\n              \"more carefully this time.\"),\n            cex = 0.8\n            )\ntextellipse(mid = c(0.85,0.5),\n            box.col = grey(0.95),\n            radx = 0.06,\n            rady = 0.05,\n            lab = \"Not wrong?\",\n            cex = 0.8\n            )\ntextrect(mid = c(0.8,0.26),\n            radx = 0.1,\n            rady = 0.05,\n            lab = c(\"It's a feature, not a bug.\",\n              \"Read 'R Internals'\",\n              \"to learn why.\"),\n            cex = 0.8\n            )\ntextellipse(mid = c(0.5,0.15),\n            box.col = grey(0.95),\n            radx = 0.07,\n            rady = 0.05,\n            lab = \"Not a feature?\",\n            cex = 0.8\n            )\ntextrect(mid = c(0.21,0.26),\n         radx = 0.12,\n         rady = 0.08,\n         lab = c(\"Should have downloaded\",\n           \"R-patched. This question was\",\n           \"asked two days ago and the\",\n           \"problem was solved\",\n           \"in 7 minutes.\"),\n            cex = 0.8\n            )\ntextellipse(mid = c(0.15,0.5),\n            box.col = grey(0.95),\n            radx = 0.1,\n            rady = 0.05,\n            lab = \"R-patched didn't fix it?\",\n            cex = 0.8\n            )\ntextrect(mid = c(0.2,0.7),\n         radx = 0.13,\n         rady = 0.07,\n         lab = c(\"You are using a contributed package\",\n           \"which is outside the purview of\",\n           \"R-core. Pester the package\",\n           \"maintainer instead.\"),\n         cex = 0.7\n         )\n\n# the punchline\ntexthexa(mid = c(0.5,0.5),\n         col = 1,\n         radx = 0.15,\n         lab = \"Base R\\ndoes not have\\nany bugs.\",\n         cex = 1.5\n         )\n\n##############\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n***************************************************\nG. Jay Kerns, Ph.D.\nAssociate Professor\nDepartment of Mathematics & Statistics\nYoungstown State University\nYoungstown, OH 44555-0002 USA\nOffice: 1035 Cushwa Hall\nPhone: (330) 941-3310 Office (voice mail)\n-3302 Department\n-3170 FAX\nVoIP: gjkerns at ekiga.net\nE-mail: gkerns at ysu.edu\nhttp://people.ysu.edu/~gkerns/",
+      "body_snippet": "All in good fun.  I should have taken this closer to heart on a couple\nof occasions.\n\nJay\n\nP.S. You may need to resize the plot window.\n\n\n\n#############\nrequire(diagram)\n\nopenplotmat(main=\"Flowchart f",
+      "thread_id": "thread-3967ec4df9d5",
+      "thread_depth": 0,
+      "month": "2009-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-1e08af39fd59",
+      "subject": "text editor for teaching R",
+      "message_count": 8,
+      "participants": [
+        "Fellows, Ian",
+        "G. Jay Kerns",
+        "Greg Snow",
+        "Liviu Andronic",
+        "Philippe Grosjean",
+        "Ralph O'Brien, PhD",
+        "Stuart Wagenius"
+      ],
+      "started": "2009-12-02T14:46:44-06:00",
+      "last_reply": "2009-12-03T13:59:35+01:00",
+      "root_message_id": "msg-1e08af39fd59"
+    },
+    {
+      "id": "thread-660416ef7818",
+      "subject": "text editor for teaching R",
+      "message_count": 1,
+      "participants": [
+        "Robert W. Hayden"
+      ],
+      "started": "2009-12-02T18:39:48-05:00",
+      "last_reply": "2009-12-02T18:39:48-05:00",
+      "root_message_id": "msg-660416ef7818"
+    },
+    {
+      "id": "thread-3967ec4df9d5",
+      "subject": "flowchart for reporting R bugs",
+      "message_count": 1,
+      "participants": [
+        "G. Jay Kerns"
+      ],
+      "started": "2009-12-10T09:43:28-05:00",
+      "last_reply": "2009-12-10T09:43:28-05:00",
+      "root_message_id": "msg-3967ec4df9d5"
+    }
+  ]
+}

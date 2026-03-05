@@ -1,0 +1,63 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2012-07",
+  "messages": [
+    {
+      "id": "msg-3699702ffc5f",
+      "message_id": "<5557EBEB-97A1-4026-8E3B-04FF206C8C85@smith.edu>",
+      "from_name": "Nicholas Horton",
+      "from_email_hash": "cf176a29de4abfc7da13c6fc418c20e19771b5741537f75c9aee351ac098ab29",
+      "date": "2012-07-18T13:12:49-04:00",
+      "subject": "[R-sig-teaching] request for computing tasks you use (or avoid) in intro stats",
+      "subject_clean": "request for computing tasks you use (or avoid) in intro stats",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Colleagues,\n\nFor the last year, I've been working with Randy Pruim and Danny Kaplan on the \"mosaic\" package for R and RStudio to provide a more concise and expressive way for introductory students to undertake statistical computing in a less painful manner.  You'll have to judge for yourself, of course, whether the result will work for you and your students.  \n\nAs the project moves into its final stages, we're looking for examples --- from you! --- of computing tasks in your introductory statistics course that you have your students carry out, or things you want your students to do but don't because they are hard to express in the computer system you use (whether that be R or something else).  Specific examples of things that you as an instructor or your students found difficult in R are particularly welcomed.\n\nI'll summarize the findings (and possible solutions) if this elicits responses.\n\nThanks in advance,\n\nNick\n\nNicholas Horton \nDepartment of Mathematics and Statistics, Smith College\nClark Science Center, Northampton, MA 01063-0001\nhttp://www.math.smith.edu/~nhorton",
+      "body_snippet": "Colleagues,\n\nFor the last year, I've been working with Randy Pruim and Danny Kaplan on the \"mosaic\" package for R and RStudio to provide a more concise and expressive way for introductory students to ",
+      "thread_id": "thread-3699702ffc5f",
+      "thread_depth": 0,
+      "month": "2012-07"
+    },
+    {
+      "id": "msg-d1168067ffe0",
+      "message_id": "<5006C20F020000A6000CC08A@uct5.uct.usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2012-07-18T14:02:55-04:00",
+      "subject": "[R-sig-teaching] Applied Linear Regression",
+      "subject_clean": "Applied Linear Regression",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120718/ba6ceab9/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120718/ba6ceab9/attachment.pl>",
+      "thread_id": "thread-d1168067ffe0",
+      "thread_depth": 0,
+      "month": "2012-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-3699702ffc5f",
+      "subject": "request for computing tasks you use (or avoid) in intro stats",
+      "message_count": 1,
+      "participants": [
+        "Nicholas Horton"
+      ],
+      "started": "2012-07-18T13:12:49-04:00",
+      "last_reply": "2012-07-18T13:12:49-04:00",
+      "root_message_id": "msg-3699702ffc5f"
+    },
+    {
+      "id": "thread-d1168067ffe0",
+      "subject": "Applied Linear Regression",
+      "message_count": 1,
+      "participants": [
+        "AbouEl-Makarim Aboueissa"
+      ],
+      "started": "2012-07-18T14:02:55-04:00",
+      "last_reply": "2012-07-18T14:02:55-04:00",
+      "root_message_id": "msg-d1168067ffe0"
+    }
+  ]
+}

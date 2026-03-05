@@ -1,0 +1,30 @@
+From bob @end|ng |rom @t@t|@nd@org  Mon Sep 16 20:32:28 2019
+From: bob @end|ng |rom @t@t|@nd@org (User Hayden)
+Date: Mon, 16 Sep 2019 14:32:28 -0400
+Subject: [R-sig-teaching] R teaching task view
+Message-ID: <20190916183228.GA90517@lilly.csoft.net>
+
+>From Nick Horton on another list
+
+Kudos to Paul Northrop for the excellent CRAN Task View focused on Teaching Statistics with R.  This is long overdue and a great resource:
+
+https://cran.r-project.org/web/views/TeachingStatistics.html
+
+Paul writes: This CRAN task view gives information about packages with features that are designed to assist with the teaching of Statistics. It is not concerned with the teaching of R itself. A few of these packages are listed in other task views, but only the Bayesian task view has a section devoted explicitly to teaching (Bayesian) Statistics.
+
+The packages are grouped into three broad topics: teaching, examination and packages associated with Statistics books. The latter is for books that are general enough to be of potential interest to a wide audience of teachers of Statistics. They should concern models and methods with wide applicability and not be tied closely to a particular application.
+
+If you think that a package is missing from the list, or have any other comments or suggestions, then please contact the maintainer.
+-- 
+
+      _
+     | |          Robert W. Hayden
+     | |          5 Howard Street, Apartment 206
+    /  |          Wilton, New Hampshire 03086  USA
+   |   |          
+   |   |          email: bob@ the site below
+  /    |          website: http://statland.org
+ |   x /          
+ ''''''
+
+

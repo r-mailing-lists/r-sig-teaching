@@ -1,0 +1,167 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2011-06",
+  "messages": [
+    {
+      "id": "msg-9e77040dd45f",
+      "message_id": "<483594.44936.qm@web59502.mail.ac4.yahoo.com>",
+      "from_name": "Ali Zanaty",
+      "from_email_hash": "65acd645f9ed74fc7721f9ea58469b32335ac44f193ffbf59b7c89913407d9ac",
+      "date": "2011-06-05T06:23:29-07:00",
+      "subject": "[R-sig-teaching] help is needed",
+      "subject_clean": "help is needed",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All R users:\n\nI am teaching a statistical class. Can someone help me to create the attached \ngraph in R. I have other graphs, but once I know how to create this one, I will \nbe able to do other ones.\n\nWith many thanks\nAli",
+      "body_snippet": "Dear All R users:\n\nI am teaching a statistical class. Can someone help me to create the attached \ngraph in R. I have other graphs, but once I know how to create this one, I will \nbe able to do other o",
+      "thread_id": "thread-9e77040dd45f",
+      "thread_depth": 0,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-85c4dc7f766f",
+      "message_id": "<BANLkTindt7fuR66W-wbYnQ=9Mb7NuCHzCQ@mail.gmail.com>",
+      "from_name": "Ista Zahn",
+      "from_email_hash": "2e4c8f48786fb76b910812e6407745b24d3e39c79018966c1f928657fc9989f2",
+      "date": "2011-06-05T11:55:52-04:00",
+      "subject": "[R-sig-teaching] help is needed",
+      "subject_clean": "help is needed",
+      "in_reply_to": "<483594.44936.qm@web59502.mail.ac4.yahoo.com>",
+      "references": [
+        "<483594.44936.qm@web59502.mail.ac4.yahoo.com>"
+      ],
+      "body_plain": "The link did not make it through the mailing list. Can you post it on\nthe web and give us the link?\n\nBest,\nIsta\n\nOn Sun, Jun 5, 2011 at 9:23 AM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:\n> Dear All R users:\n>\n> I am teaching a statistical class. Can someone help me to create the attached\n> graph in R. I have other graphs, but once I know how to create this one, I will\n> be able to do other ones.\n>\n> With many thanks\n> Ali\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n\n\n\n-- \nIsta Zahn\nGraduate student\nUniversity of Rochester\nDepartment of Clinical and Social Psychology\nhttp://yourpsyche.org",
+      "body_snippet": "The link did not make it through the mailing list. Can you post it on\nthe web and give us the link?\n\nBest,\nIsta\n\nOn Sun, Jun 5, 2011 at 9:23 AM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:\n> Dear All ",
+      "thread_id": "thread-9e77040dd45f",
+      "thread_depth": 1,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-cee098ad3f70",
+      "message_id": "<BANLkTik84NAx51P7Jbz85boookq1y9h3sA@mail.gmail.com>",
+      "from_name": "Francis Smart",
+      "from_email_hash": "5a2da553b30e8ef1821e6c30b7216e643d3c97437776f69600c8ef061eb8f1a4",
+      "date": "2011-06-25T23:00:52-04:00",
+      "subject": "[R-sig-teaching] Message displayed when opening RData file",
+      "subject_clean": "Message displayed when opening RData file",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110625/66df0377/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110625/66df0377/attachment.pl>",
+      "thread_id": "thread-cee098ad3f70",
+      "thread_depth": 0,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-a32dd2e4f91b",
+      "message_id": "<BANLkTikXuVRG9Jtisu1BhZdtjP1voKTucQ@mail.gmail.com>",
+      "from_name": "Joshua Wiley",
+      "from_email_hash": "c7f07c588294f110fffa28fa75e197f5a9d40a76afe0853fbdeb1992dab12a4a",
+      "date": "2011-06-25T22:16:46-07:00",
+      "subject": "[R-sig-teaching] Message displayed when opening RData file",
+      "subject_clean": "Message displayed when opening RData file",
+      "in_reply_to": "<BANLkTik84NAx51P7Jbz85boookq1y9h3sA@mail.gmail.com>",
+      "references": [
+        "<BANLkTik84NAx51P7Jbz85boookq1y9h3sA@mail.gmail.com>"
+      ],
+      "body_plain": "Hi Francis,\n\nIf you are able to edit the previous workspace, what about adding a\nlocal .Rprofile file?  In that file you could put something like:\n\ncat(\"To see data, input: \\n  > data \\nin the console. \\nTo see data\nvariable descriptions, input:\\n  >desc \\nin the console.\\n\")\n\nin the .Rprofile file\n\nCheers,\n\nJosh\n\nOn Sat, Jun 25, 2011 at 8:00 PM, Francis Smart <smartfra at msu.edu> wrote:\n> Hello,\n>\n> I am wondering if there is any way to display a message automatically when a\n> workspace is restored and to have that message saved as part of the\n> workspace.\n>\n> I would like R to say after\n> [Previously saved workspace restored]\n>\n> To see data input >data in the console\n> To see data variable descriptions input >desc in the console\n>\n> Thank you for your help,\n> Francis\n>\n> --\n> Francis Smart\n> --------------------\n> PhD Student - Michigan State University\n> Agricultural, Food, and Resource Economics (AFRE)\n> Measurement and Quantitative Methods (MQM)\n>\n> Cell: (406) 223-8108\n>\n> ? ? ? ?[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \nJoshua Wiley\nPh.D. Student, Health Psychology\nUniversity of California, Los Angeles\nhttp://www.joshuawiley.com/",
+      "body_snippet": "Hi Francis,\n\nIf you are able to edit the previous workspace, what about adding a\nlocal .Rprofile file?  In that file you could put something like:\n\ncat(\"To see data, input: \\n  > data \\nin the console",
+      "thread_id": "thread-cee098ad3f70",
+      "thread_depth": 1,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-d12d2a0415ef",
+      "message_id": "<BANLkTim7BLKUaYpwcsDaupK50b0X63HfGA@mail.gmail.com>",
+      "from_name": "Matt Curcio",
+      "from_email_hash": "895b5f26d539c8af4778c1b9571c09008b44ca7aebdfef086ac7b9b295fdefc3",
+      "date": "2011-06-29T13:48:29-04:00",
+      "subject": "[R-sig-teaching] Lists of R packages",
+      "subject_clean": "Lists of R packages",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Greetings All,\nI would like to find out which R packages I have on my machine and\ntransfer that set of packages to a new machine.  I have investigated\nthe command 'installed.packages' and got a partial list but this is\nnot comprehensive. (!?!)  The partial list does not include the\nlibraries that I do not normally load on start-up.\nAny suggestions?\n\nConversely, once I have found the complete list can I use\n'install.package' to batch install all the packages to another\ncomputer?\nCheers,\nM\n\n-- \n\n\nMatt Curcio\nM: 401-316-5358\nE: matt.curcio.ri at gmail.com",
+      "body_snippet": "Greetings All,\nI would like to find out which R packages I have on my machine and\ntransfer that set of packages to a new machine.  I have investigated\nthe command 'installed.packages' and got a partia",
+      "thread_id": "thread-d12d2a0415ef",
+      "thread_depth": 0,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-4f0a20f4f821",
+      "message_id": "<4E0B696D.50809@univ-lille3.fr>",
+      "from_name": "philippe preux",
+      "from_email_hash": "66354c570a95f779f047493a7e0330a91f22d9ffe5ba7aa6ceb257a40d74b575",
+      "date": "2011-06-29T20:05:33+02:00",
+      "subject": "[R-sig-teaching] Lists of R packages",
+      "subject_clean": "Lists of R packages",
+      "in_reply_to": "<BANLkTim7BLKUaYpwcsDaupK50b0X63HfGA@mail.gmail.com>",
+      "references": [
+        "<BANLkTim7BLKUaYpwcsDaupK50b0X63HfGA@mail.gmail.com>"
+      ],
+      "body_plain": "Hi Matt,\nmaybe the library() command would solve your problem.\n\nHowever, I take this opportunity to ask an other question related to \ninstalled packages:\nsome packages are installed because I install.package'd them; however, I \nusually add the dep = TRUE option, so that some other packages are \ninstalled because of the dependencies. Once installed, I do not know of \nany way to distinguish the former from the latter; is there one?\nNow, moving my R installation to a new machine, I would like to \nre-install only those packages I installed by install.package(), with \nthe dep = TRUE option. I feel, and fear, that if I install all the \npackages returned by library() with dep =TRUE option, packages that \ndepend on those installed because they depend on those I installed by \ngiving their name to install.package() will also be installed.\n\nNow, my workaround is to keep the history of the install.package() \ncommand I invoked. Defining a function that does the same thing as \ninstall.packages(), while logging the information in some file does the \nthing.\n\nHope that helps,\n\nPhilippe\n\nOn 29/06/2011 19:48, Matt Curcio wrote:\n> Greetings All,\n> I would like to find out which R packages I have on my machine and\n> transfer that set of packages to a new machine.  I have investigated\n> the command 'installed.packages' and got a partial list but this is\n> not comprehensive. (!?!)  The partial list does not include the\n> libraries that I do not normally load on start-up.\n> Any suggestions?\n>\n> Conversely, once I have found the complete list can I use\n> 'install.package' to batch install all the packages to another\n> computer?\n> Cheers,\n> M\n>\n>",
+      "body_snippet": "Hi Matt,\nmaybe the library() command would solve your problem.\n\nHowever, I take this opportunity to ask an other question related to \ninstalled packages:\nsome packages are installed because I install.",
+      "thread_id": "thread-d12d2a0415ef",
+      "thread_depth": 1,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-cccaec18b2c5",
+      "message_id": "<BANLkTincgZ+6GM+GokN1VEx8yNunew_V+QXddsoV-GjVAcZ7cw@mail.gmail.com>",
+      "from_name": "Rainer M Krug",
+      "from_email_hash": "e11b90edace280d0de30dfc4fa9de87a9a079d3f2c2f179123fa9e4ae628223d",
+      "date": "2011-06-30T07:59:46+02:00",
+      "subject": "[R-sig-teaching] Lists of R packages",
+      "subject_clean": "Lists of R packages",
+      "in_reply_to": "<4E0B696D.50809@univ-lille3.fr>",
+      "references": [
+        "<BANLkTim7BLKUaYpwcsDaupK50b0X63HfGA@mail.gmail.com>",
+        "<4E0B696D.50809@univ-lille3.fr>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110630/5b6a5a05/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110630/5b6a5a05/attachment.pl>",
+      "thread_id": "thread-d12d2a0415ef",
+      "thread_depth": 2,
+      "month": "2011-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-9e77040dd45f",
+      "subject": "help is needed",
+      "message_count": 2,
+      "participants": [
+        "Ali Zanaty",
+        "Ista Zahn"
+      ],
+      "started": "2011-06-05T06:23:29-07:00",
+      "last_reply": "2011-06-05T11:55:52-04:00",
+      "root_message_id": "msg-9e77040dd45f"
+    },
+    {
+      "id": "thread-cee098ad3f70",
+      "subject": "Message displayed when opening RData file",
+      "message_count": 2,
+      "participants": [
+        "Francis Smart",
+        "Joshua Wiley"
+      ],
+      "started": "2011-06-25T23:00:52-04:00",
+      "last_reply": "2011-06-25T22:16:46-07:00",
+      "root_message_id": "msg-cee098ad3f70"
+    },
+    {
+      "id": "thread-d12d2a0415ef",
+      "subject": "Lists of R packages",
+      "message_count": 3,
+      "participants": [
+        "Matt Curcio",
+        "Rainer M Krug",
+        "philippe preux"
+      ],
+      "started": "2011-06-29T13:48:29-04:00",
+      "last_reply": "2011-06-30T07:59:46+02:00",
+      "root_message_id": "msg-d12d2a0415ef"
+    }
+  ]
+}

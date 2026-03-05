@@ -1,0 +1,111 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2011-07",
+  "messages": [
+    {
+      "id": "msg-8ddbc1bd7b27",
+      "message_id": "<83D9E3C5-899E-4C88-9D38-DDA64D6704FA@rpi.edu>",
+      "from_name": "Wayne Gray",
+      "from_email_hash": "c502d0239ab5838aba32a65811a6cab97a5cb80d1236067ff61a6f750d569e9b",
+      "date": "2011-07-02T15:12:20-04:00",
+      "subject": "[R-sig-teaching] ANOVA questions",
+      "subject_clean": "ANOVA questions",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Greetings.\n\nI am not totally sure where to post this query so forgive me if this is the wrong SIG. However, I do teach stats in conjunction with experimental design and the question is one that is of considerable interest right now to several of my grad students and myself - hence this presents a weak rationale for sending the query to this listserv.\n\nAs background, I am very familiar with Type III marginal SS for ANOVAs. However, we have a situation where a reviewer is insisting on an analysis that requires thin slicing our data so that we do not have observations in some of the cells for some of our Ss. I think I understand what R is telling me, but I am not positive that I do. Even worse, I don't know how to explain the analysis (assuming I have interpreted it correctly) to the editor or to the readers of the journal who, like me, are familiar with Type III ANOVAs. \n\nI have tried to attach the R file plus the data file to this email. I am not sure whether the listserv will allow attachments. If not these files can be found here:\n\nRcode:  files.me.com/graywayne/7z7db3\ndata:     files.me.com/graywayne/688878\n\nWhat I think is the \"takeaway\" point is that there is no evidence in our data that the factor \"dens.targ\" is significant or that any of its interactions are significant. Given that the other analyses strongly support our interpretation of the results, I would like to conclude that any effect of density of the target stimuli on response time is very weak at best. This is a very satisfactory conclusion to me, however, I want to go the extra mile to show the editor that we tested this as best we could. Although it might appear in the paper, it is not clear that it would. It may be the sort of thing you do to present to the Editor but leave out of the final version of the paper.\n\nAny help, comments, pointers, etc will be much appreciated.\n\nBTW: This is a visual search paradigm where the factor of interest is the density of distractors in the quadrant in which the target is found. The data are limited to those cases in which the initial visual saccade is to a \"dense quadrant\" or a \"nondense quadrant\" for those cases in which the initially saccaded-to-quadrant also contained the \"target.\" The DV, TRIAL.TIME, is the time from the beginning of the trial to the point where the subject indicates they have found the target by clicking a key.\n\nYours,\n\nWayne Gray\n\n> anova.e1sq <- with(e1sq, summary(aov(TRIAL.TIME ~ BLOCK.NUMBER*dens.targ + Error(SUBJECT/(BLOCK.NUMBER*dens.targ)))))\n> anova.e1sq\n\nError: SUBJECT\n                       Df  Sum Sq Mean Sq F value Pr(>F)\nBLOCK.NUMBER            3 9237318 3079106  0.9906 0.5030\ndens.targ               1    8661    8661  0.0028 0.9612\nBLOCK.NUMBER:dens.targ  3  254237   84746  0.0273 0.9927\nResiduals               3 9324782 3108261               \n\nError: SUBJECT:BLOCK.NUMBER\n                       Df   Sum Sq Mean Sq F value Pr(>F)\nBLOCK.NUMBER            3  2516104  838701  1.4333 0.2557\ndens.targ               1   166064  166064  0.2838 0.5987\nBLOCK.NUMBER:dens.targ  3   362702  120901  0.2066 0.8909\nResiduals              26 15213849  585148               \n\nError: SUBJECT:dens.targ\n                       Df Sum Sq Mean Sq F value Pr(>F)\ndens.targ               1 272316  272316  2.4674 0.1602\nBLOCK.NUMBER:dens.targ  3 404184  134728  1.2207 0.3710\nResiduals               7 772557  110365               \n\nError: SUBJECT:BLOCK.NUMBER:dens.targ\n                       Df  Sum Sq Mean Sq F value Pr(>F)\nBLOCK.NUMBER:dens.targ  3  367036  122345  0.9171 0.4444\nResiduals              30 4002169  133406               \n\nError: Within\n           Df   Sum Sq Mean Sq F value Pr(>F)\nResiduals 418 59572437  142518",
+      "body_snippet": "Greetings.\n\nI am not totally sure where to post this query so forgive me if this is the wrong SIG. However, I do teach stats in conjunction with experimental design and the question is one that is of ",
+      "thread_id": "thread-8ddbc1bd7b27",
+      "thread_depth": 0,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-e234644040f8",
+      "message_id": "<BFE5F5F2-F2C9-4259-86B0-F45DA58B5ED9@virginia.edu>",
+      "from_name": "Michael Kubovy",
+      "from_email_hash": "0b15dcc4e4b904d416328a67647d112f774ed7d978d8a8b1619fc1530daca2f6",
+      "date": "2011-07-03T12:34:07-04:00",
+      "subject": "[R-sig-teaching] ANOVA questions",
+      "subject_clean": "ANOVA questions",
+      "in_reply_to": "<83D9E3C5-899E-4C88-9D38-DDA64D6704FA@rpi.edu>",
+      "references": [
+        "<83D9E3C5-899E-4C88-9D38-DDA64D6704FA@rpi.edu>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110703/acaf3d09/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110703/acaf3d09/attachment.pl>",
+      "thread_id": "thread-8ddbc1bd7b27",
+      "thread_depth": 1,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-6af72857aba5",
+      "message_id": "<CAKuPk6DUN_aR7o2OiJaXdWNDYZxv5rRR5GkTyB8U6-K9Dzwuxg@mail.gmail.com>",
+      "from_name": "Manoj Aravind",
+      "from_email_hash": "4a14117e0fc3efdb60249fc758beee7fb1417a2747ae8248229e943fbc41b5a8",
+      "date": "2011-07-06T12:49:50+05:30",
+      "subject": "[R-sig-teaching] Odds Ratio for evaluating Diagnostic tests",
+      "subject_clean": "Odds Ratio for evaluating Diagnostic tests",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110706/40e2339c/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110706/40e2339c/attachment.pl>",
+      "thread_id": "thread-6af72857aba5",
+      "thread_depth": 0,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-20a8f59e8c1a",
+      "message_id": "<489E61E6-361E-43C8-B578-83B453DD5267@calvin.edu>",
+      "from_name": "Randall Pruim",
+      "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
+      "date": "2011-07-09T15:26:45-04:00",
+      "subject": "[R-sig-teaching] Plotting the p-value",
+      "subject_clean": "Plotting the p-value",
+      "in_reply_to": null,
+      "references": [
+        "<9B97ECF2-A574-46D5-93D2-0849664D13CF@smith.edu>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110709/407d96e2/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110709/407d96e2/attachment.pl>",
+      "thread_id": "thread-20a8f59e8c1a",
+      "thread_depth": 0,
+      "month": "2011-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-8ddbc1bd7b27",
+      "subject": "ANOVA questions",
+      "message_count": 2,
+      "participants": [
+        "Michael Kubovy",
+        "Wayne Gray"
+      ],
+      "started": "2011-07-02T15:12:20-04:00",
+      "last_reply": "2011-07-03T12:34:07-04:00",
+      "root_message_id": "msg-8ddbc1bd7b27"
+    },
+    {
+      "id": "thread-6af72857aba5",
+      "subject": "Odds Ratio for evaluating Diagnostic tests",
+      "message_count": 1,
+      "participants": [
+        "Manoj Aravind"
+      ],
+      "started": "2011-07-06T12:49:50+05:30",
+      "last_reply": "2011-07-06T12:49:50+05:30",
+      "root_message_id": "msg-6af72857aba5"
+    },
+    {
+      "id": "thread-20a8f59e8c1a",
+      "subject": "Plotting the p-value",
+      "message_count": 1,
+      "participants": [
+        "Randall Pruim"
+      ],
+      "started": "2011-07-09T15:26:45-04:00",
+      "last_reply": "2011-07-09T15:26:45-04:00",
+      "root_message_id": "msg-20a8f59e8c1a"
+    }
+  ]
+}

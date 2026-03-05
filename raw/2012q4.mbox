@@ -1,0 +1,836 @@
+From zanaty2005 at yahoo.com  Wed Oct  3 22:57:48 2012
+From: zanaty2005 at yahoo.com (Ali Zanaty)
+Date: Wed, 3 Oct 2012 13:57:48 -0700 (PDT)
+Subject: [R-sig-teaching] Interpreting the results
+Message-ID: <1349297868.27844.YahooMailNeo@web125804.mail.ne1.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121003/ae97dfe0/attachment.pl>
+
+From jefflaux at gmail.com  Wed Oct  3 23:36:52 2012
+From: jefflaux at gmail.com (Jeff Laux)
+Date: Wed, 3 Oct 2012 17:36:52 -0400
+Subject: [R-sig-teaching] Interpreting the results
+In-Reply-To: <1349297868.27844.YahooMailNeo@web125804.mail.ne1.yahoo.com>
+References: <1349297868.27844.YahooMailNeo@web125804.mail.ne1.yahoo.com>
+Message-ID: <CANV9buQymauEb6FYukcFemDXWpuyi-8PEqTxFdkn1rhyJA8o6g@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121003/66daece1/attachment.pl>
+
+From pauljohn32 at gmail.com  Thu Oct  4 04:44:48 2012
+From: pauljohn32 at gmail.com (Paul Johnson)
+Date: Wed, 3 Oct 2012 21:44:48 -0500
+Subject: [R-sig-teaching] Interpreting the results
+In-Reply-To: <1349297868.27844.YahooMailNeo@web125804.mail.ne1.yahoo.com>
+References: <1349297868.27844.YahooMailNeo@web125804.mail.ne1.yahoo.com>
+Message-ID: <CAErODj-rnHDHBXOmRKOb6_SA1G8AQzj2GFijkRrm9nyfB6Ys1Q@mail.gmail.com>
+
+There appears to be a little mistake in your code
+
+On Wed, Oct 3, 2012 at 3:57 PM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:
+> Dear All:
+> I have two variables:
+> X (nominal categorical) has 9 categories.
+> Y(ordinal categorical) has 4 categories.
+>
+> 1-I fit a logistic regression using Y as
+> the response variable and X as the independent variable. The P VALUE was
+> 0.2373. This tells me that the independent variable X is NOT significant
+> predictor.
+>
+
+if X is nominal with 9 categories, the fitted regression should
+include an intercept and 8 categories.  If it is only fitting one
+predictor, that means  your X is not properly understood as a factor
+variable.
+
+If y is ordinal, then fitting the model requires use of some addon
+package, not something provided with R. You'd need polr, ordinal, or
+lrm from the rms package.
+
+So I think you don't have what you think you have, and you'd better
+double check and then post the full code for the model along with the
+output of str() on your data frame.
+
+pj
+
+>
+> 2- I run a
+> chi-square test to test if there is a relationship (association ship) between
+> both X and Y variables. The P VALUE was 0.0013. That is there is statistical
+> evidence of association between the two variables.
+>
+> 3- I collapsed the 4 categories of the Y-variable into 2 categories. I run a
+> chi-square test to test if there is a difference(s) among proportions of the X-variable (the equality of the 9 proportions). The P VALUE was 0.0037. That is there is statistical
+> evidence of differences among the 9 proportions.
+>
+> How
+> I can explain results of one versustwo, and one versus three. I am not sure if there is a contradiction among these results.
+>  many
+> thanks
+> Ali
+>         [[alternative HTML version deleted]]
+>
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+-- 
+Paul E. Johnson
+Professor, Political Science    Assoc. Director
+1541 Lilac Lane, Room 504     Center for Research Methods
+University of Kansas               University of Kansas
+http://pj.freefaculty.org            http://quant.ku.edu
+
+
+From zanaty2005 at yahoo.com  Thu Oct  4 11:21:00 2012
+From: zanaty2005 at yahoo.com (Ali Zanaty)
+Date: Thu, 4 Oct 2012 02:21:00 -0700 (PDT)
+Subject: [R-sig-teaching] Fw: Interpreting the results
+In-Reply-To: <1349297868.27844.YahooMailNeo@web125804.mail.ne1.yahoo.com>
+References: <1349297868.27844.YahooMailNeo@web125804.mail.ne1.yahoo.com>
+Message-ID: <1349342460.35324.YahooMailNeo@web125806.mail.ne1.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121004/aae1f1aa/attachment.pl>
+
+From timothy.c.bates at gmail.com  Thu Oct  4 17:54:35 2012
+From: timothy.c.bates at gmail.com (Timothy Bates)
+Date: Thu, 4 Oct 2012 16:54:35 +0100
+Subject: [R-sig-teaching] Fw: Interpreting the results
+In-Reply-To: <1349342460.35324.YahooMailNeo@web125806.mail.ne1.yahoo.com>
+References: <1349297868.27844.YahooMailNeo@web125804.mail.ne1.yahoo.com>
+	<1349342460.35324.YahooMailNeo@web125806.mail.ne1.yahoo.com>
+Message-ID: <07851CEA-E1E9-4A30-83EC-DFBAEE39454C@gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121004/ea5184a6/attachment.pl>
+
+From gps at asu.edu  Tue Oct  9 18:54:40 2012
+From: gps at asu.edu (Geoffrey Smith)
+Date: Tue, 9 Oct 2012 11:54:40 -0500
+Subject: [R-sig-teaching] teaching corp risk management
+Message-ID: <CAGRravawKsAZ7EZTAVJE4VE2A3M7ziUvRMSnAzm3HdWrMahokA@mail.gmail.com>
+
+Hello, I am teaching a course called "Corporate Risk Management" next
+semester for masters-level students (possibly executives).  It meets
+for fours hours on Friday evenings and Saturday mornings...so I would
+like to build some R programming into the class.  The topics include
+value at risk, interest rate swaps, futures, currency swaps, credit
+default swaps, catastrophic risk markets, weather derivatives, and so
+on.  The suggested textbook is Risk Management & Derivatives by Rene
+Stulz.
+
+Does anybody have any problem sets I could use that would involve R
+programming in these areas?  Can anyone suggest a textbook that would
+build in some R programming?  Any other suggestions for me?  Thank you
+very much.
+
+
+From aboueiss at yahoo.com  Thu Oct 25 18:32:09 2012
+From: aboueiss at yahoo.com (Yahoo! Mail Classic)
+Date: Thu, 25 Oct 2012 09:32:09 -0700 (PDT)
+Subject: [R-sig-teaching] season package for time series plots
+Message-ID: <1351182729.48217.YahooMailClassic@web120606.mail.ne1.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121025/dc9900bd/attachment.pl>
+
+From gcendoya at balcarce.inta.gov.ar  Thu Oct 25 18:46:57 2012
+From: gcendoya at balcarce.inta.gov.ar (Gabriela Cendoya)
+Date: Thu, 25 Oct 2012 13:46:57 -0300
+Subject: [R-sig-teaching] season package for time series plots
+In-Reply-To: <1351182729.48217.YahooMailClassic@web120606.mail.ne1.yahoo.com>
+References: <1351182729.48217.YahooMailClassic@web120606.mail.ne1.yahoo.com>
+Message-ID: <50896D01.8090508@balcarce.inta.gov.ar>
+
+did you load the package?
+library(season)
+?season
+works for me,
+
+
+_________________________________
+Lic. Mar?a Gabriela Cendoya
+Mg. Sc. Biometr?a
+Prof. Adjunto
+C?tedra de Estad?stica y Dise?o
+Facultad de Ciencias Agrarias
+UNMdP - Argentina
+_________________________________
+
+El 25/10/2012 01:32 p.m., Yahoo! Mail Classic escribi?:
+> Dear R Users:
+>
+>
+>
+>
+> I am teaching regression and forecasting class. I installed the season
+> package, and I am trying to use it to get a graph of some data, but it
+> says could not find function season
+>
+>
+> Any helps that make it work will be appreciated.
+>
+> many thanks
+> abou
+>
+>
+>
+> ========================
+>
+> AbouEl-Makarim Aboueissa
+>
+> Sozan Elsalakawy
+>
+> Mohamed Agamia
+>
+>
+>
+> 246 Auburn Street, #158
+>
+> Portland, ME 04103
+>
+> USA
+>
+>
+>
+> Tel: (207) 797-2724
+>
+> Email: aboueiss at yahoo.com
+> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+___________________________________________________________________________
+
+Aviso:
+=====
+
+El contenido del presente e-mail y sus posibles adjuntos pertenecen al INTA y pueden contener informaci?n confidencial. Si usted no es el destinatario original de este mensaje y por este medio pudo acceder a dicha informaci?n, por favor solicitamos contactar al remitente y eliminar el mensaje de inmediato. Se encuentra prohibida la divulgaci?n, copia, distribuci?n o cualquier otro uso de la informaci?n contenida en el presente e-mail por parte de personas distintas al destinatario. 
+
+
+This e-mail contents and its possible attachments belong to INTA and may contain confidential information. If this message was not originally addressed to you, but you have accessed to such information by this means, please contact the sender and eliminate this message immediately. Circulation, copy, distribution, or any other use of the information contained in this e-mail is not allowed on part of those different from the addressee.
+
+
+Antes de imprimir este mensaje, aseg?rese de que sea necesario. Proteger el medio ambiente est? tambi?n en su mano.
+
+
+From nctu2006 at gmail.com  Mon Nov 19 03:09:25 2012
+From: nctu2006 at gmail.com (Nguyen Chanh Tu)
+Date: Mon, 19 Nov 2012 09:09:25 +0700
+Subject: [R-sig-teaching] help for beginner
+Message-ID: <CABvvk7WYLAn9iQs69-EyaWksXTvdnv-u1Sta5vvQxKUpdB_tYw@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121119/8a25e3d5/attachment.pl>
+
+From jones at reed.edu  Mon Nov 19 05:23:33 2012
+From: jones at reed.edu (Albyn Jones)
+Date: Sun, 18 Nov 2012 20:23:33 -0800
+Subject: [R-sig-teaching] help for beginner
+In-Reply-To: <CABvvk7WYLAn9iQs69-EyaWksXTvdnv-u1Sta5vvQxKUpdB_tYw@mail.gmail.com>
+References: <CABvvk7WYLAn9iQs69-EyaWksXTvdnv-u1Sta5vvQxKUpdB_tYw@mail.gmail.com>
+Message-ID: <0d3467c93bdbdbdd5159a644294595b2@reed.edu>
+
+Have you looked at the teaching resources on the CRAN website?
+If not, take a look at the "Contributed" link under Documentation.
+There are also numerous published texts that you might find helpful,
+eg as sources of examples.  Many of the help files for specific 
+functions
+have examples, and R has numerous datasets, both in the base package 
+and in
+other packages.
+
+albyn
+
+
+On 2012-11-18 18:09, Nguyen Chanh Tu wrote:
+> Dear all,
+> I am going to teach Probability and Statistics for engineering 
+> students. I
+> probably use the book "Probability and Statistics for engineeriing 
+> and the
+> sciences" by J. L. Devore. And I am going to use R for the course.
+> This is the first time for me to try to use R. (Before I just use 
+> Excel).
+> Could you please be so kind to help me for anything concerning to a
+> beginner, especially:
+> 1) Which packages should I install with the standard  R?
+> 2) Can I find some where demo files of teaching or  script files 
+> concerning
+> to the course.
+> 3) If there is any help already had in the forum about these starting
+> steps, please point out to me such that I can read more.
+> 4) Is there anyone using the same textbook or similar one of mine 
+> such that
+> we can exchange teaching experients on the course.
+>
+> Thank you very much in advances. Looking forward to hearing from you.
+> Sincerely,
+> Nguyen
+>
+> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From fer at anadolu.edu.tr  Mon Nov 19 08:14:25 2012
+From: fer at anadolu.edu.tr (Fikret ER)
+Date: Mon, 19 Nov 2012 07:14:25 +0000
+Subject: [R-sig-teaching] help for beginner
+In-Reply-To: <0d3467c93bdbdbdd5159a644294595b2@reed.edu>
+Message-ID: <CCCFA504.46F4%fer@anadolu.edu.tr>
+
+Hi
+There are few things that you can do,
+
+
+1. Install the package "TeachingDemos" by Greg Snow,
+
+2. Visit the Rwiki page, http://rwiki.sciviews.org/doku.php
+
+3. May visit the page http://www.cyclismo.org/tutorial/R/probability.html
+
+4. I also find R Journal very useful, http://journal.r-project.org
+
+5. For Introductory Statistics, the book "Introductory Statistics with R"
+by Peter Dalgaard is excellent choice,
+
+6. May read the slides of S. Weisberg,
+http://www.r-project.org/user-2006/Slides/Fox+Weisberg.pdf
+
+7. Visit the page here,
+http://www.r-bloggers.com/teaching-with-r-the-tools/
+
+
+I hope these will help,
+
+Fikret ER
+Anadolu University
+Eskisehir
+Turkey
+
+Fer at anadolu.edu.tr
+
+
+
+
+
+On 11/19/12 6:23 AM, "Albyn Jones" <jones at reed.edu> wrote:
+
+>Have you looked at the teaching resources on the CRAN website?
+>If not, take a look at the "Contributed" link under Documentation.
+>There are also numerous published texts that you might find helpful,
+>eg as sources of examples.  Many of the help files for specific
+>functions
+>have examples, and R has numerous datasets, both in the base package
+>and in
+>other packages.
+>
+>albyn
+>
+>
+>On 2012-11-18 18:09, Nguyen Chanh Tu wrote:
+>> Dear all,
+>> I am going to teach Probability and Statistics for engineering
+>> students. I
+>> probably use the book "Probability and Statistics for engineeriing
+>> and the
+>> sciences" by J. L. Devore. And I am going to use R for the course.
+>> This is the first time for me to try to use R. (Before I just use
+>> Excel).
+>> Could you please be so kind to help me for anything concerning to a
+>> beginner, especially:
+>> 1) Which packages should I install with the standard  R?
+>> 2) Can I find some where demo files of teaching or  script files
+>> concerning
+>> to the course.
+>> 3) If there is any help already had in the forum about these starting
+>> steps, please point out to me such that I can read more.
+>> 4) Is there anyone using the same textbook or similar one of mine
+>> such that
+>> we can exchange teaching experients on the course.
+>>
+>> Thank you very much in advances. Looking forward to hearing from you.
+>> Sincerely,
+>> Nguyen
+>>
+>> 	[[alternative HTML version deleted]]
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>_______________________________________________
+>R-sig-teaching at r-project.org mailing list
+>https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From rpruim at calvin.edu  Mon Nov 19 14:40:59 2012
+From: rpruim at calvin.edu (Randall Pruim)
+Date: Mon, 19 Nov 2012 08:40:59 -0500
+Subject: [R-sig-teaching] help for beginner
+In-Reply-To: <CABvvk7WYLAn9iQs69-EyaWksXTvdnv-u1Sta5vvQxKUpdB_tYw@mail.gmail.com>
+References: <CABvvk7WYLAn9iQs69-EyaWksXTvdnv-u1Sta5vvQxKUpdB_tYw@mail.gmail.com>
+Message-ID: <7400AD12-326F-4C51-A212-EF869E852371@calvin.edu>
+
+I haven't taught from that book in a while, but here are some tips:
+
+1) If the 7th edition is still current, grab the Devore7 package which contains many of the data sets (sometimes awkwardly formatted and poorly labeled, but at least they are there.)
+
+2) Choose a graphics system.  I recommend lattice, but I really recommend that you don't mix and match.  One advantage of lattice is that it teaches the formula interface you will want to use for linear models, so students will be a step ahead when you get there.
+
+3) If you go with lattice, I suggest you also give the mosaic package a try.  It adds other functionality via a formula interface (e.g. mean(age ~ sex, data=foo) gives mean ages broken down by sex) and simplifies some important tasks, like adding a linear model fit to a plot or evaluating the fit at specific values of the explanatory variables.
+
+4) You might also take a look at the minimalR vignette in the mosaic package.  It was designed for a slightly different course, but tries to give a small but sufficient set of commands for teaching introductory statistics using lattice and mosaic.  I'd encourage you to find or create something like this for your students.  (The target audience for the current vignette is really faculty.)
+
+5) Less volume, more creativity.
+
+Try to keep the number of different R commands you teach to a minimum.  Choose them wisely and choose tools that play well together.  That makes it easier for the students to master the skills they really need.  R often provides several ways to skin a cat, but your students only need one way.
+
+Have fun.
+
+---rjp
+
+
+
+
+On Nov 18, 2012, at 9:09 PM, Nguyen Chanh Tu wrote:
+
+> Dear all,
+> I am going to teach Probability and Statistics for engineering students. I
+> probably use the book "Probability and Statistics for engineeriing and the
+> sciences" by J. L. Devore. And I am going to use R for the course.
+> This is the first time for me to try to use R. (Before I just use Excel).
+> Could you please be so kind to help me for anything concerning to a
+> beginner, especially:
+> 1) Which packages should I install with the standard  R?
+> 2) Can I find some where demo files of teaching or  script files concerning
+> to the course.
+> 3) If there is any help already had in the forum about these starting
+> steps, please point out to me such that I can read more.
+> 4) Is there anyone using the same textbook or similar one of mine such that
+> we can exchange teaching experients on the course.
+> 
+> Thank you very much in advances. Looking forward to hearing from you.
+> Sincerely,
+> Nguyen
+> 
+> 	[[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From pnsinha68 at gmail.com  Mon Nov 19 15:43:11 2012
+From: pnsinha68 at gmail.com (Partha Sinha)
+Date: Mon, 19 Nov 2012 20:13:11 +0530
+Subject: [R-sig-teaching] Pl Suggest
+Message-ID: <CADcgpJfB=0pRp5wjF3uD_DVTvT_PbzuuXiCr59=YXzz2wvcAdQ@mail.gmail.com>
+
+Dear All
+I am a stats newbie and have a basic stats question;
+i have y as dependent variable and x1 to x5 as dependent variable.
+I need to know which variables x1 to x5 are actually affecting y. How
+do I find out?
+can an example be given which makes things clear (if possible)?
+Thanks
+Parth
+
+
+From jones at reed.edu  Mon Nov 19 17:40:03 2012
+From: jones at reed.edu (Albyn Jones)
+Date: Mon, 19 Nov 2012 08:40:03 -0800
+Subject: [R-sig-teaching] Pl Suggest
+In-Reply-To: <CADcgpJfB=0pRp5wjF3uD_DVTvT_PbzuuXiCr59=YXzz2wvcAdQ@mail.gmail.com>
+References: <CADcgpJfB=0pRp5wjF3uD_DVTvT_PbzuuXiCr59=YXzz2wvcAdQ@mail.gmail.com>
+Message-ID: <20121119164003.GB7117@reed.edu>
+
+Dear Parth
+
+This is a forum for the discussion of the use of R in teaching
+statistics, not for giving statistical advice.  
+
+It sounds like you need to take a statistics course.
+
+albyn
+
+On Mon, Nov 19, 2012 at 08:13:11PM +0530, Partha Sinha wrote:
+> Dear All
+> I am a stats newbie and have a basic stats question;
+> i have y as dependent variable and x1 to x5 as dependent variable.
+> I need to know which variables x1 to x5 are actually affecting y. How
+> do I find out?
+> can an example be given which makes things clear (if possible)?
+> Thanks
+> Parth
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+
+-- 
+Albyn Jones
+Reed College
+jones at reed.edu
+
+
+From bob at statland.org  Mon Nov 19 19:17:09 2012
+From: bob at statland.org (Bob)
+Date: Mon, 19 Nov 2012 13:17:09 -0500 (EST)
+Subject: [R-sig-teaching]  help for beginner
+Message-ID: <20121119181709.44D6E7198A06@mail89.csoft.net>
+
+
+Almost all the R documentation seems to me to be written for
+statistician/programmers and is way over the heads of most students.
+For that reason I made my own materials for my online classes and they
+are at
+
+http://statland.org/Software_Help/R/Rhome.htm
+
+For the teacher, the book by John Verzani gives detailed coverage
+relevant to the topics in a first course.  There is a free, older and
+shorter version at CRAN last I knew which might be a useful reference
+for students.  I have found these the most readable for beginners
+though they tend to tell you every possible thing you can do and every
+way you can do it which can be overwhelming.  
+
+You might also look at some of the alternative interfaces to R.  R
+Commander is a GUI interface that might make life easier, but last
+time I tried it the installation was a nightmare taking hours as
+dependencies of dependencies of dependencies downlaoded.  I made (but
+did not get to test before I retired) a bootable Linux distribution
+with R and all the depnedencies I wanted preinstalled.  I don't know
+if it is possible to copy an entire Windows R installation to a CD and
+hand out copies.  Does R get entangled with the Windows registry or
+put files in the Windows directory?  It's not that the install is all
+that bad but I find it way too bad to be a student's first experience
+with R.  It may end with R having 2.99999 strikes against it;-(  It's
+a far cry from most Windows installs.
+
+Forwarded message:
+> From r-sig-teaching-bounces at r-project.org Sun Nov 18 21:10:26 2012
+> From: Nguyen Chanh Tu <nctu2006 at gmail.com>
+> 
+> Dear all,
+> I am going to teach Probability and Statistics for engineering students. I
+> probably use the book "Probability and Statistics for engineeriing and the
+> sciences" by J. L. Devore. And I am going to use R for the course.
+> This is the first time for me to try to use R. (Before I just use Excel).
+> Could you please be so kind to help me for anything concerning to a
+> beginner, especially:
+> 1) Which packages should I install with the standard  R?
+> 2) Can I find some where demo files of teaching or  script files concerning
+> to the course.
+> 3) If there is any help already had in the forum about these starting
+> steps, please point out to me such that I can read more.
+> 4) Is there anyone using the same textbook or similar one of mine such that
+> we can exchange teaching experients on the course.
+> 
+> Thank you very much in advances. Looking forward to hearing from you.
+> Sincerely,
+> Nguyen
+> 
+> 	[[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+> 
+
+Sent from my nine-year-old Dell GX-260 running Mepis Linux 8.0
+------->  First-time AP Stats. teacher?  Help is on the way! See
+http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+      _
+     | |          Robert W. Hayden
+     | |          142 Main Street
+    /  |          Apartment 104
+   |   |          Jaffrey, New Hampshire 03452  USA
+   |   |          email: bob@ the site below
+  /    |          website: http://statland.org
+ | x   /          phone: (603) 532-7224 (home)
+ ''''''
+
+
+From arturlfm at yahoo.com.br  Mon Nov 19 20:11:11 2012
+From: arturlfm at yahoo.com.br (Artur L F Machado)
+Date: Mon, 19 Nov 2012 11:11:11 -0800 (PST)
+Subject: [R-sig-teaching] R-sig-teaching Digest, Vol 57, Issue 1 - HSAUR2
+In-Reply-To: <mailman.7.1353322803.9000.r-sig-teaching@r-project.org>
+References: <mailman.7.1353322803.9000.r-sig-teaching@r-project.org>
+Message-ID: <1353352271.93008.YahooMailNeo@web140604.mail.bf1.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121119/01702534/attachment.pl>
+
+From paula.young at salem.edu  Mon Nov 19 22:15:49 2012
+From: paula.young at salem.edu (Paula Young)
+Date: Mon, 19 Nov 2012 16:15:49 -0500
+Subject: [R-sig-teaching] help for beginner (#Bob@statland's reply)
+Message-ID: <CA+srNj5BMLEhfqt8BMEBLknzQix76pVq+wXmGD3OaSeJeAVgQQ@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121119/aa5da117/attachment.pl>
+
+From rpruim at calvin.edu  Mon Nov 19 22:22:58 2012
+From: rpruim at calvin.edu (Randall Pruim)
+Date: Mon, 19 Nov 2012 16:22:58 -0500
+Subject: [R-sig-teaching] help for beginner (#Bob@statland's reply)
+In-Reply-To: <CA+srNj5BMLEhfqt8BMEBLknzQix76pVq+wXmGD3OaSeJeAVgQQ@mail.gmail.com>
+References: <CA+srNj5BMLEhfqt8BMEBLknzQix76pVq+wXmGD3OaSeJeAVgQQ@mail.gmail.com>
+Message-ID: <74F4AF77-25B8-4E7D-982B-F640928C6975@calvin.edu>
+
+
+If you want to get students up and running in R with zero install headaches (on their end), set up an RStudio server.  Students simply log in like they do with facebook and have their R session resume where they left off.  With a little R savvy on your end you can pre-install and pre-load any packages you like, so students don't need to mess with any of that either.  Students who want, can also install the desktop/laptop version if they want to be independent of the internet, but most of my students like having R in a web setting.
+
+---rjp
+
+
+On Nov 19, 2012, at 4:15 PM, Paula Young wrote:
+
+> I can answer one of your questions, Bob.
+> 
+> R does *not* get entangled with  Windows. I've run it from the same flash
+> drive on a Windows, a MacOS and a Linux-based machine.
+> 
+> PGY
+> 
+> ---
+> Dr. Paula Grafton Young
+> Associate Professor of Mathematics
+> Chair, Curriculum Committee, 2011 - 2013
+> Chair, Strategic Planning Steering Committee, 2012 - 2013
+> paula.young at salem.edu
+> 336.721.2747 (O)
+> 336.721.2653 (F)
+> 
+> <http://www.facebook.com/SalemCollege><http://www.twitter.com/SalemCollege>
+> 
+> 
+> 
+> 
+> On Mon, Nov 19, 2012 at 1:17 PM, Bob <bob at statland.org> wrote:
+> 
+>> 
+>> Almost all the R documentation seems to me to be written for
+>> statistician/programmers and is way over the heads of most students.
+>> For that reason I made my own materials for my online classes and they
+>> are at
+>> 
+>> http://statland.org/Software_Help/R/Rhome.htm
+>> 
+>> For the teacher, the book by John Verzani gives detailed coverage
+>> relevant to the topics in a first course.  There is a free, older and
+>> shorter version at CRAN last I knew which might be a useful reference
+>> for students.  I have found these the most readable for beginners
+>> though they tend to tell you every possible thing you can do and every
+>> way you can do it which can be overwhelming.
+>> 
+>> You might also look at some of the alternative interfaces to R.  R
+>> Commander is a GUI interface that might make life easier, but last
+>> time I tried it the installation was a nightmare taking hours as
+>> dependencies of dependencies of dependencies downlaoded.  I made (but
+>> did not get to test before I retired) a bootable Linux distribution
+>> with R and all the depnedencies I wanted preinstalled.  I don't know
+>> if it is possible to copy an entire Windows R installation to a CD and
+>> hand out copies.  Does R get entangled with the Windows registry or
+>> put files in the Windows directory?  It's not that the install is all
+>> that bad but I find it way too bad to be a student's first experience
+>> with R.  It may end with R having 2.99999 strikes against it;-(  It's
+>> a far cry from most Windows installs.
+>> 
+>> Forwarded message:
+>>> From r-sig-teaching-bounces at r-project.org Sun Nov 18 21:10:26 2012
+>>> From: Nguyen Chanh Tu <nctu2006 at gmail.com>
+>>> 
+>>> Dear all,
+>>> I am going to teach Probability and Statistics for engineering students.
+>> I
+>>> probably use the book "Probability and Statistics for engineeriing and
+>> the
+>>> sciences" by J. L. Devore. And I am going to use R for the course.
+>>> This is the first time for me to try to use R. (Before I just use Excel).
+>>> Could you please be so kind to help me for anything concerning to a
+>>> beginner, especially:
+>>> 1) Which packages should I install with the standard  R?
+>>> 2) Can I find some where demo files of teaching or  script files
+>> concerning
+>>> to the course.
+>>> 3) If there is any help already had in the forum about these starting
+>>> steps, please point out to me such that I can read more.
+>>> 4) Is there anyone using the same textbook or similar one of mine such
+>> that
+>>> we can exchange teaching experients on the course.
+>>> 
+>>> Thank you very much in advances. Looking forward to hearing from you.
+>>> Sincerely,
+>>> Nguyen
+>>> 
+>>>      [[alternative HTML version deleted]]
+>>> 
+>>> _______________________________________________
+>>> R-sig-teaching at r-project.org mailing list
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>> 
+>>> 
+>> 
+>> Sent from my nine-year-old Dell GX-260 running Mepis Linux 8.0
+>> ------->  First-time AP Stats. teacher?  Help is on the way! See
+>> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+>>      _
+>>     | |          Robert W. Hayden
+>>     | |          142 Main Street
+>>    /  |          Apartment 104
+>>   |   |          Jaffrey, New Hampshire 03452  USA
+>>   |   |          email: bob@ the site below
+>>  /    |          website: http://statland.org
+>> | x   /          phone: (603) 532-7224 (home)
+>> ''''''
+>> 
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>> 
+> 
+> 	[[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From rbaer at atsu.edu  Wed Nov 28 20:07:32 2012
+From: rbaer at atsu.edu (Robert Baer)
+Date: Wed, 28 Nov 2012 13:07:32 -0600
+Subject: [R-sig-teaching] help for beginner
+In-Reply-To: <CABvvk7WYLAn9iQs69-EyaWksXTvdnv-u1Sta5vvQxKUpdB_tYw@mail.gmail.com>
+References: <CABvvk7WYLAn9iQs69-EyaWksXTvdnv-u1Sta5vvQxKUpdB_tYw@mail.gmail.com>
+Message-ID: <50B660F4.3080209@atsu.edu>
+
+On 11/18/2012 8:09 PM, Nguyen Chanh Tu wrote:
+> Dear all,
+> I am going to teach Probability and Statistics for engineering students. I
+> probably use the book "Probability and Statistics for engineeriing and the
+> sciences" by J. L. Devore. And I am going to use R for the course.
+> This is the first time for me to try to use R. (Before I just use Excel).
+> Could you please be so kind to help me for anything concerning to a
+> beginner, especially:
+> 1) Which packages should I install with the standard  R?
+> 2) Can I find some where demo files of teaching or  script files concerning
+> to the course.
+> 3) If there is any help already had in the forum about these starting
+> steps, please point out to me such that I can read more.
+> 4) Is there anyone using the same textbook or similar one of mine such that
+> we can exchange teaching experients on the course.
+>
+> Thank you very much in advances. Looking forward to hearing from you.
+> Sincerely,
+> Nguyen
+>
+> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+I have used R to teach biomedical science students for several years, 
+and although not without some frustrations, students catch on fairly 
+quickly.  I don't have experience with engineering students, so their 
+needs may differ.
+
+My approach is to spend a couple of class periods at the beginning 
+making sure that the students can enter a data set in one of several 
+ways, for example, using read.table(), scan(), and using the c() with 
+assignment.  We spend time with the concept of a vector and a dataframe 
+and the difference in how a one column dataframe and a vector are 
+printed at the command prompt.  We talk about how to move back and forth 
+between vectors and dataframes.  We talk about how to change one value 
+in a mistyped vector value and how to change one value in a dataframe 
+column and row.  I do this despite the fact that virtually all the REAL 
+datasets we use are available electronically because it puts the student 
+in control of sometimes "assumed" ideas of R users.  I also provide 
+students with a two-sided cheat-sheet of the most common commands that I 
+think we will use.  I invite them to help me keep it current.  I 
+regularly devote class time to doing live demonstrations on "sample 
+problems" similar to those I want them to be able to use R for.  My 
+students have computers and can work along when we do this.  Time spent 
+in these endeavors seems far more important than it would using an Excel 
+interface.
+
+We also talk about the difference between the so-called "long" and 
+"wide" formats of dataframes and introduce them to working with factors 
+and the very strange (to the newcomer) as.numeric(as.character(factvar)) 
+construction.  I am frequently surprised at how much more difficult 
+these ideas of data layout are than the statistics or R commands 
+themselves are for the students. Yet, this skill-set is highly 
+transferable across programs they might encounter in the future.  I 
+unashamedly look at the help files for commands we are using (I do this 
+during class) even when we are not doing anything too tricky.  This role 
+models the most basic R support for the students, right from the start.
+
+Someone already mentioned R Commander which I only introduce to the 
+students when we get to ANOVA and linear regression.  By then they have 
+a couple of weeks getting used to the feel of a command line interface.  
+Most of my students rarely look back from here, but for engineering 
+students R is often a useful free substitute for Matlab capabilities, 
+and so the more fundamental skills you can convey to the students, the 
+better off they will be (in my opinion).
+
+Another very nice GUI interface for R is Deducer, particularly when used 
+in conjunction with JGR.  If all you want to do is to teach "basic 
+probability and statistics", this might be another way to go.
+
+Rob Baer
+
+-- 
+__________________
+Robert W. Baer, Ph.D.
+Professor of Physiology
+Kirksille College of Osteopathic Medicine
+A. T. Still University of Health Sciences
+Kirksville, MO 63501 USA
+
+
+From dwiig at grandview.edu  Sun Dec  2 05:49:54 2012
+From: dwiig at grandview.edu (Doug Wiig)
+Date: Sun, 2 Dec 2012 04:49:54 +0000
+Subject: [R-sig-teaching] Help for Beginners
+Message-ID: <27FF0C39AF481348BDC4A4767452D15D8055128B@EX2.ad.gvc>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121202/79c5c883/attachment.pl>
+
+From nctu2006 at gmail.com  Mon Dec  3 02:46:47 2012
+From: nctu2006 at gmail.com (Nguyen C.)
+Date: Mon, 3 Dec 2012 08:46:47 +0700
+Subject: [R-sig-teaching] Help for Beginners
+In-Reply-To: <27FF0C39AF481348BDC4A4767452D15D8055128B@EX2.ad.gvc>
+References: <27FF0C39AF481348BDC4A4767452D15D8055128B@EX2.ad.gvc>
+Message-ID: <CABvvk7X3s1HVnNMcin_ypqwCCtV+gC6V=au_EDAwKjFXxD+UXg@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121203/284c218b/attachment.pl>
+

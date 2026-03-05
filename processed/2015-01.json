@@ -1,0 +1,210 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2015-01",
+  "messages": [
+    {
+      "id": "msg-d4efbfcb10dd",
+      "message_id": "<CABvvk7UZMGjcFWh7rMydUdswrNUqbEU=a_OXSsFGxCJmyUr7Cw@mail.gmail.com>",
+      "from_name": "Nguyen C.",
+      "from_email_hash": "0b9c2dbe22f7b38ecd8096e7f002f66f867bc7c415b18294d5c9b6db7f43a084",
+      "date": "2015-01-05T22:48:45+07:00",
+      "subject": "[R-sig-teaching] Could not load mosaic package",
+      "subject_clean": "Could not load mosaic package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\nI have installed the latest version of R (64) and mosaic  package\nsucessfully in my laptop (windown 7).\nBut when I try to load mosaic with comand >library(mosaic), I got the\nfollowing message:\n###\n>library(mosaic)\nLoading required package: car\nLoading required package: dplyr\nError in get(\".packageName\", where) :\n  cannot open file 'C:/Users/Nguyen\nTu/Documents/R/win-library/3.1/DBI/R/DBI.rdb': No such file or directory\nError: package ?dplyr? could not be loaded\n>\n###\nI look at the win-library as mentioned above, then the folder\n'C:/Users/Nguyen Tu/Documents/R/win-library/3.1/DBI/' is empty.\nI do not know what is wrong and how to correct the problem.\n\nPlease help me.\nThank you in advance.\nTu\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\nI have installed the latest version of R (64) and mosaic  package\nsucessfully in my laptop (windown 7).\nBut when I try to load mosaic with comand >library(mosaic), I got the\nfollowing messag",
+      "thread_id": "thread-d4efbfcb10dd",
+      "thread_depth": 0,
+      "month": "2015-01"
+    },
+    {
+      "id": "msg-d665dcc5b44f",
+      "message_id": "<E9BBC7E9-9E53-444E-9E8A-02E4E54CEFE3@calvin.edu>",
+      "from_name": "Randall Pruim",
+      "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
+      "date": "2015-01-05T16:47:56Z",
+      "subject": "[R-sig-teaching] Could not load mosaic package",
+      "subject_clean": "Could not load mosaic package",
+      "in_reply_to": "<CABvvk7UZMGjcFWh7rMydUdswrNUqbEU=a_OXSsFGxCJmyUr7Cw@mail.gmail.com>",
+      "references": [
+        "<CABvvk7UZMGjcFWh7rMydUdswrNUqbEU=a_OXSsFGxCJmyUr7Cw@mail.gmail.com>"
+      ],
+      "body_plain": "I?m glad you are giving the mosaic package a try, but the issue below is not with mosaic itself but with loading the dplyr package that mosaic depends on.  I?m not exactly sure what the problem is, but I would start by doing this:\n\ninstall.packages(?DBI?)\ninstall.packages(?dplyr?)\n\nto make sure you have the newest version of dplyr and DBI on your machine.  Depending on the state of your R System, you might also update all of your packages\n\n\tupdate.packages()\n\nIf you are in RStudio or one of the other environments, you can do some or all of these from the menu system instead of from the command line.\n\nIf after all this, you still cannot load the mosaic package, give us a updated report and we?ll see what we can do.  But my first guess is that DBI is simply not installed on your machine.\n\n?rjp\n\n\nOn Jan 5, 2015, at 10:48 AM, Nguyen C. <nctu2006 at gmail.com> wrote:\n\n> Dear all,\n> I have installed the latest version of R (64) and mosaic  package\n> sucessfully in my laptop (windown 7).\n> But when I try to load mosaic with comand >library(mosaic), I got the\n> following message:\n> ###\n>> library(mosaic)\n> Loading required package: car\n> Loading required package: dplyr\n> Error in get(\".packageName\", where) :\n>  cannot open file 'C:/Users/Nguyen\n> Tu/Documents/R/win-library/3.1/DBI/R/DBI.rdb': No such file or directory\n> Error: package ?dplyr? could not be loaded\n>> \n> ###\n> I look at the win-library as mentioned above, then the folder\n> 'C:/Users/Nguyen Tu/Documents/R/win-library/3.1/DBI/' is empty.\n> I do not know what is wrong and how to correct the problem.\n> \n> Please help me.\n> Thank you in advance.\n> Tu\n> \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "I?m glad you are giving the mosaic package a try, but the issue below is not with mosaic itself but with loading the dplyr package that mosaic depends on.  I?m not exactly sure what the problem is, bu",
+      "thread_id": "thread-d4efbfcb10dd",
+      "thread_depth": 1,
+      "month": "2015-01"
+    },
+    {
+      "id": "msg-c6197e456bcd",
+      "message_id": "<CABvvk7UG2B-KEhW26Sgt5199WL1G7u25-HMUjCas9HyV+v-7tA@mail.gmail.com>",
+      "from_name": "Nguyen C.",
+      "from_email_hash": "0b9c2dbe22f7b38ecd8096e7f002f66f867bc7c415b18294d5c9b6db7f43a084",
+      "date": "2015-01-06T17:35:26+07:00",
+      "subject": "[R-sig-teaching] Could not load mosaic package",
+      "subject_clean": "Could not load mosaic package",
+      "in_reply_to": "<E9BBC7E9-9E53-444E-9E8A-02E4E54CEFE3@calvin.edu>",
+      "references": [
+        "<CABvvk7UZMGjcFWh7rMydUdswrNUqbEU=a_OXSsFGxCJmyUr7Cw@mail.gmail.com>",
+        "<E9BBC7E9-9E53-444E-9E8A-02E4E54CEFE3@calvin.edu>"
+      ],
+      "body_plain": "Dear all,\nI did as Randall said and it worked.\nThank Randall and all.\nT\n\nOn Mon, Jan 5, 2015 at 11:47 PM, Randall Pruim <rpruim at calvin.edu> wrote:\n\n>\n> I?m glad you are giving the mosaic package a try, but the issue below is\n> not with mosaic itself but with loading the dplyr package that mosaic\n> depends on.  I?m not exactly sure what the problem is, but I would start by\n> doing this:\n>\n> install.packages(?DBI?)\n> install.packages(?dplyr?)\n>\n> to make sure you have the newest version of dplyr and DBI on your\n> machine.  Depending on the state of your R System, you might also update\n> all of your packages\n>\n>         update.packages()\n>\n> If you are in RStudio or one of the other environments, you can do some or\n> all of these from the menu system instead of from the command line.\n>\n> If after all this, you still cannot load the mosaic package, give us a\n> updated report and we?ll see what we can do.  But my first guess is that\n> DBI is simply not installed on your machine.\n>\n> ?rjp\n>\n>\n> On Jan 5, 2015, at 10:48 AM, Nguyen C. <nctu2006 at gmail.com> wrote:\n>\n> > Dear all,\n> > I have installed the latest version of R (64) and mosaic  package\n> > sucessfully in my laptop (windown 7).\n> > But when I try to load mosaic with comand >library(mosaic), I got the\n> > following message:\n> > ###\n> >> library(mosaic)\n> > Loading required package: car\n> > Loading required package: dplyr\n> > Error in get(\".packageName\", where) :\n> >  cannot open file 'C:/Users/Nguyen\n> > Tu/Documents/R/win-library/3.1/DBI/R/DBI.rdb': No such file or directory\n> > Error: package ?dplyr? could not be loaded\n> >>\n> > ###\n> > I look at the win-library as mentioned above, then the folder\n> > 'C:/Users/Nguyen Tu/Documents/R/win-library/3.1/DBI/' is empty.\n> > I do not know what is wrong and how to correct the problem.\n> >\n> > Please help me.\n> > Thank you in advance.\n> > Tu\n> >\n> >       [[alternative HTML version deleted]]\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\nI did as Randall said and it worked.\nThank Randall and all.\nT\n\nOn Mon, Jan 5, 2015 at 11:47 PM, Randall Pruim <rpruim at calvin.edu> wrote:\n\n>\n> I?m glad you are giving the mosaic package a ",
+      "thread_id": "thread-d4efbfcb10dd",
+      "thread_depth": 2,
+      "month": "2015-01"
+    },
+    {
+      "id": "msg-18fc11cc9b13",
+      "message_id": "<54AE96E6.3090808@u-paris10.fr>",
+      "from_name": "Christophe Genolini",
+      "from_email_hash": "188243ef6b743b8d3cdd972d5ac76d36899f18656fb52ce7f6a8f452409f5017",
+      "date": "2015-01-08T15:40:38+01:00",
+      "subject": "[R-sig-teaching] Random effet ANOVA, presentation like the classic one.",
+      "subject_clean": "Random effet ANOVA, presentation like the classic one.",
+      "in_reply_to": "<1465014430.128236.1419205551395.JavaMail.yahoo@jws10034.mail.ne1.yahoo.com>",
+      "references": [
+        "<1465014430.128236.1419205551395.JavaMail.yahoo@jws10034.mail.ne1.yahoo.com>"
+      ],
+      "body_plain": "Hi the list,\n\nI am teaching ANOVA with R. The classic case is quite easy:\n\n#--- 8< ---------------\nn <- 8        # number of individual in each group.\nkSport <- 3   # kA number of sport groups\nkSchool <- 2  # kB Number of possible school\n\nset.seed(1)\nsize <- rep(c(-10+15,+20+15,-10+15,-10-15,+30-15,-20-15),each=n)+rnorm(n*kSport,170,10)\nsport <- factor(rep(rep(paste(\"a\",1:kSport,sep=\"\"),each=n),kSchool))\nschool <- factor(rep(paste(\"b\",1:kSchool,sep=\"\"),each=n*kSport))\n\nsummary(aov(size~sport+school+sport:school))\n\n\n              Df Sum Sq Mean Sq F value   Pr(>F)\nsport         2  13955    6978   68.91 5.46e-14 ***\nschool        1  10800   10800  106.65 4.25e-13 ***\nsport:school  2    800     400    3.95   0.0268 *\nResiduals    42   4253     101\n---\nSignif. codes:  0 ?***? 0.001 ?**? 0.01 ?*? 0.05 ?.? 0.1 ? ? 1\n\n#--- 8< --------------\n\nThe model with some random effect is :\n\n#--- 8< --------------\nsummary(aov(size~Error(sport+school+sport:school)))\n#--- 8< --------------\n\nBut I did not get the computation of the f (fSportSchool=400/101.3=3.960 ; fsport=6978/400=17.445 \nand fSchool=10800/400=27).\nSo is there a way to get them?\n\nI would like to get:\n\n#--- 8< --------------\n              Df Sum Sq Mean Sq F value   Pr(>F)\nsport         2  13955    6978   17.445       ?\nschool        1  10800   10800   27.000       ?\nsport:school  2    800     400    3.960       ?\nResiduals    42   4253     101\n#--- 8< --------------\n\nThanks for you help.\nChristophe",
+      "body_snippet": "Hi the list,\n\nI am teaching ANOVA with R. The classic case is quite easy:\n\n#--- 8< ---------------\nn <- 8        # number of individual in each group.\nkSport <- 3   # kA number of sport groups\nkSchool",
+      "thread_id": "thread-18fc11cc9b13",
+      "thread_depth": 0,
+      "month": "2015-01"
+    },
+    {
+      "id": "msg-7f4df9e66530",
+      "message_id": "<CAHDp66CyU9NUd-XVGgUdXMP51vzDMd7EzFT_DrcON0oBRkYzQg@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2015-01-08T13:06:04-05:00",
+      "subject": "[R-sig-teaching] Analyze Nested and Split-Plot Designs with R",
+      "subject_clean": "Analyze Nested and Split-Plot Designs with R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\n\nexample 14.1, Montgomery, chapter 14. *Supplier* is a *fixed factor*,\n*Batches* is a *random factor* nested within the fixed factor Supplier.\n\nHow to analyze these data in R in two ways:\n\n1- Nested Design\n\nfit <- aov(purity~Supplier/Batch)\n\n\nit did not give me the expected output.\n\n\n2- as a factorial (suppliers Fixed, Batches Random)\n\nfit.out <- aov(Purity~Supplier*Batch, data=have)\n\nit did not give me the expected output.\n\n\nHere is the data set:\n===============\n\n> data\n  Supplier Batch  Purity\n1     1  1\n1     1 -1\n1     1  0\n1     2 -2\n1     2 -3\n1     2 -4\n1     3 -2\n1     3  0\n1     3  1\n1     4  1\n1     4  4\n1     4  0\n2     1  1\n2     1 -2\n2     1 -3\n2     2  0\n2     2  4\n2     2  2\n2     3 -1\n2     3  0\n2     3 -2\n2     4  0\n2     4  3\n2     4  2\n3     1  2\n3     1  4\n3     1  0\n3     2 -2\n3     2  0\n3     2  2\n3     3  1\n3     3 -1\n3     3  2\n3     4  3\n3     4  2\n3     4  1\n\n\nmany thanks\nSteven\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\nexample 14.1, Montgomery, chapter 14. *Supplier* is a *fixed factor*,\n*Batches* is a *random factor* nested within the fixed factor Supplier.\n\nHow to analyze these data in R in two ways:\n\n1",
+      "thread_id": "thread-7f4df9e66530",
+      "thread_depth": 0,
+      "month": "2015-01"
+    },
+    {
+      "id": "msg-a6cfda472adf",
+      "message_id": "<CAGx1TMAGaug9ut9SOkQFapFsBCuHTscARKHydu2Nf_z9fQC_YQ@mail.gmail.com>",
+      "from_name": "Richard M. Heiberger",
+      "from_email_hash": "4ce810eab8587777db353ea9d997b9e94d9e73af018121f9a3424238038952df",
+      "date": "2015-01-08T13:58:54-05:00",
+      "subject": "[R-sig-teaching] Analyze Nested and Split-Plot Designs with R",
+      "subject_clean": "Analyze Nested and Split-Plot Designs with R",
+      "in_reply_to": "<CAHDp66CyU9NUd-XVGgUdXMP51vzDMd7EzFT_DrcON0oBRkYzQg@mail.gmail.com>",
+      "references": [
+        "<CAHDp66CyU9NUd-XVGgUdXMP51vzDMd7EzFT_DrcON0oBRkYzQg@mail.gmail.com>"
+      ],
+      "body_plain": "Steven,\n\nI assume you mean Montgomery 8th edition (he changed chapter numbers recently).\n\nPlease state what you expect as output.\n\nFor your first attempt, you have the case wrong (purity instead of Purity).\n\nAre you reading Supplier and Batch as factors.  It can't be determined from the\nprinted table in your email.  Use dump (or dput) next time.   dput is\ndesigned for R.\n\nWith the above corrections, your first model formula gives Table 14.4\nand your second\nformula gives Table 14.5.\n\nTo get Table 14.6 you need to use the Error() function in the model formula.\nHere are statements for all three tables.\n\nRich\n\n## dump(\"MontEx14.1\",\"\")\nMontEx14.1 <-\nstructure(list(Supplier = structure(c(1L, 1L, 1L, 1L, 1L, 1L,\n1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L,\n2L, 2L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L), .Label = c(\"1\",\n\"2\", \"3\"), class = \"factor\"), Batch = structure(c(1L, 1L, 1L,\n2L, 2L, 2L, 3L, 3L, 3L, 4L, 4L, 4L, 1L, 1L, 1L, 2L, 2L, 2L, 3L,\n3L, 3L, 4L, 4L, 4L, 1L, 1L, 1L, 2L, 2L, 2L, 3L, 3L, 3L, 4L, 4L,\n4L), .Label = c(\"1\", \"2\", \"3\", \"4\"), class = \"factor\"), Purity = c(1L,\n-1L, 0L, -2L, -3L, -4L, -2L, 0L, 1L, 1L, 4L, 0L, 1L, -2L, -3L,\n0L, 4L, 2L, -1L, 0L, -2L, 0L, 3L, 2L, 2L, 4L, 0L, -2L, 0L, 2L,\n1L, -1L, 2L, 3L, 2L, 1L)), .Names = c(\"Supplier\", \"Batch\", \"Purity\"\n), row.names = c(NA, -36L), class = \"data.frame\")\n\n\n\nMontEx14.1$Supplier <- factor(MontEx14.1$Supplier)\nMontEx14.1$Batch <- factor(MontEx14.1$Batch)\n\nMontEx14.1.aov1 <- aov(Purity ~ Supplier/Batch, data=MontEx14.1)\nsummary(MontEx14.1.aov1)\n\nMontEx14.1.aov2 <- aov(Purity ~ Supplier*Batch, data=MontEx14.1)\nsummary(MontEx14.1.aov2)\n\nMontEx14.1.aov3 <- aov(Purity ~ Supplier + Error(Supplier:Batch),\ndata=MontEx14.1)\nsummary(MontEx14.1.aov3)\n\n\nOn Thu, Jan 8, 2015 at 1:06 PM, Steven Stoline <sstoline at gmail.com> wrote:\n> Dear All:\n>\n> example 14.1, Montgomery, chapter 14. *Supplier* is a *fixed factor*,\n> *Batches* is a *random factor* nested within the fixed factor Supplier.\n>\n> How to analyze these data in R in two ways:\n>\n> 1- Nested Design\n>\n> fit <- aov(purity~Supplier/Batch)\n>\n>\n> it did not give me the expected output.\n>\n>\n> 2- as a factorial (suppliers Fixed, Batches Random)\n>\n> fit.out <- aov(Purity~Supplier*Batch, data=have)\n>\n> it did not give me the expected output.\n>\n>\n> Here is the data set:\n> ===============\n>\n>> data\n>   Supplier Batch  Purity\n> 1     1  1\n> 1     1 -1\n> 1     1  0\n> 1     2 -2\n> 1     2 -3\n> 1     2 -4\n> 1     3 -2\n> 1     3  0\n> 1     3  1\n> 1     4  1\n> 1     4  4\n> 1     4  0\n> 2     1  1\n> 2     1 -2\n> 2     1 -3\n> 2     2  0\n> 2     2  4\n> 2     2  2\n> 2     3 -1\n> 2     3  0\n> 2     3 -2\n> 2     4  0\n> 2     4  3\n> 2     4  2\n> 3     1  2\n> 3     1  4\n> 3     1  0\n> 3     2 -2\n> 3     2  0\n> 3     2  2\n> 3     3  1\n> 3     3 -1\n> 3     3  2\n> 3     4  3\n> 3     4  2\n> 3     4  1\n>\n>\n> many thanks\n> Steven\n>\n> --\n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Steven,\n\nI assume you mean Montgomery 8th edition (he changed chapter numbers recently).\n\nPlease state what you expect as output.\n\nFor your first attempt, you have the case wrong (purity instead of Pu",
+      "thread_id": "thread-7f4df9e66530",
+      "thread_depth": 1,
+      "month": "2015-01"
+    },
+    {
+      "id": "msg-37ff8826b46e",
+      "message_id": "<CAHDp66CkSoigifSPZQUD2Jp3q0A7jf8L-u5Yxzmq2J1hS8i59A@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2015-01-08T15:04:55-05:00",
+      "subject": "[R-sig-teaching] Analyze Nested and Split-Plot Designs with R",
+      "subject_clean": "Analyze Nested and Split-Plot Designs with R",
+      "in_reply_to": "<CAGx1TMAGaug9ut9SOkQFapFsBCuHTscARKHydu2Nf_z9fQC_YQ@mail.gmail.com>",
+      "references": [
+        "<CAHDp66CyU9NUd-XVGgUdXMP51vzDMd7EzFT_DrcON0oBRkYzQg@mail.gmail.com>",
+        "<CAGx1TMAGaug9ut9SOkQFapFsBCuHTscARKHydu2Nf_z9fQC_YQ@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Rich:\n\nFirst thank you very much. it helped a lot.\n\nThe F value and its p-values corresponding to the factor \"Supplier\"are\ndifferent from the ones in the textbook, Montgomery 8th ed. But conclusion\nstay same (Pvalue > 0.05)\n\n\n\nIn the last model (the third one) used for Table 14.6 , I am not sure what\nis wrong.\n\n\n> MontEx14.1.aov3 <- aov(Purity ~ Supplier + Error(Supplier:Batch),\ndata=MontEx14.1)\n\nWarning message:\n\nIn aov(Purity ~ Supplier + Error(Supplier:Batch), data = MontEx14.1) :\n  Error() model is singular\n\n\n\n\nmany thanks\nSteven\n\nOn Thu, Jan 8, 2015 at 1:58 PM, Richard M. Heiberger <rmh at temple.edu> wrote:\n\n> Steven,\n>\n> I assume you mean Montgomery 8th edition (he changed chapter numbers\n> recently).\n>\n> Please state what you expect as output.\n>\n> For your first attempt, you have the case wrong (purity instead of Purity).\n>\n> Are you reading Supplier and Batch as factors.  It can't be determined\n> from the\n> printed table in your email.  Use dump (or dput) next time.   dput is\n> designed for R.\n>\n> With the above corrections, your first model formula gives Table 14.4\n> and your second\n> formula gives Table 14.5.\n>\n> To get Table 14.6 you need to use the Error() function in the model\n> formula.\n> Here are statements for all three tables.\n>\n> Rich\n>\n> ## dump(\"MontEx14.1\",\"\")\n> MontEx14.1 <-\n> structure(list(Supplier = structure(c(1L, 1L, 1L, 1L, 1L, 1L,\n> 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L,\n> 2L, 2L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L), .Label = c(\"1\",\n> \"2\", \"3\"), class = \"factor\"), Batch = structure(c(1L, 1L, 1L,\n> 2L, 2L, 2L, 3L, 3L, 3L, 4L, 4L, 4L, 1L, 1L, 1L, 2L, 2L, 2L, 3L,\n> 3L, 3L, 4L, 4L, 4L, 1L, 1L, 1L, 2L, 2L, 2L, 3L, 3L, 3L, 4L, 4L,\n> 4L), .Label = c(\"1\", \"2\", \"3\", \"4\"), class = \"factor\"), Purity = c(1L,\n> -1L, 0L, -2L, -3L, -4L, -2L, 0L, 1L, 1L, 4L, 0L, 1L, -2L, -3L,\n> 0L, 4L, 2L, -1L, 0L, -2L, 0L, 3L, 2L, 2L, 4L, 0L, -2L, 0L, 2L,\n> 1L, -1L, 2L, 3L, 2L, 1L)), .Names = c(\"Supplier\", \"Batch\", \"Purity\"\n> ), row.names = c(NA, -36L), class = \"data.frame\")\n>\n>\n>\n> MontEx14.1$Supplier <- factor(MontEx14.1$Supplier)\n> MontEx14.1$Batch <- factor(MontEx14.1$Batch)\n>\n> MontEx14.1.aov1 <- aov(Purity ~ Supplier/Batch, data=MontEx14.1)\n> summary(MontEx14.1.aov1)\n>\n> MontEx14.1.aov2 <- aov(Purity ~ Supplier*Batch, data=MontEx14.1)\n> summary(MontEx14.1.aov2)\n>\n> MontEx14.1.aov3 <- aov(Purity ~ Supplier + Error(Supplier:Batch),\n> data=MontEx14.1)\n> summary(MontEx14.1.aov3)\n>\n>\n> On Thu, Jan 8, 2015 at 1:06 PM, Steven Stoline <sstoline at gmail.com> wrote:\n> > Dear All:\n> >\n> > example 14.1, Montgomery, chapter 14. *Supplier* is a *fixed factor*,\n> > *Batches* is a *random factor* nested within the fixed factor Supplier.\n> >\n> > How to analyze these data in R in two ways:\n> >\n> > 1- Nested Design\n> >\n> > fit <- aov(purity~Supplier/Batch)\n> >\n> >\n> > it did not give me the expected output.\n> >\n> >\n> > 2- as a factorial (suppliers Fixed, Batches Random)\n> >\n> > fit.out <- aov(Purity~Supplier*Batch, data=have)\n> >\n> > it did not give me the expected output.\n> >\n> >\n> > Here is the data set:\n> > ===============\n> >\n> >> data\n> >   Supplier Batch  Purity\n> > 1     1  1\n> > 1     1 -1\n> > 1     1  0\n> > 1     2 -2\n> > 1     2 -3\n> > 1     2 -4\n> > 1     3 -2\n> > 1     3  0\n> > 1     3  1\n> > 1     4  1\n> > 1     4  4\n> > 1     4  0\n> > 2     1  1\n> > 2     1 -2\n> > 2     1 -3\n> > 2     2  0\n> > 2     2  4\n> > 2     2  2\n> > 2     3 -1\n> > 2     3  0\n> > 2     3 -2\n> > 2     4  0\n> > 2     4  3\n> > 2     4  2\n> > 3     1  2\n> > 3     1  4\n> > 3     1  0\n> > 3     2 -2\n> > 3     2  0\n> > 3     2  2\n> > 3     3  1\n> > 3     3 -1\n> > 3     3  2\n> > 3     4  3\n> > 3     4  2\n> > 3     4  1\n> >\n> >\n> > many thanks\n> > Steven\n> >\n> > --\n> > Steven M. Stoline\n> > 1123 Forest Avenue\n> > Portland, ME 04112\n> > sstoline at gmail.com\n> >\n> >         [[alternative HTML version deleted]]\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear Rich:\n\nFirst thank you very much. it helped a lot.\n\nThe F value and its p-values corresponding to the factor \"Supplier\"are\ndifferent from the ones in the textbook, Montgomery 8th ed. But conclusi",
+      "thread_id": "thread-7f4df9e66530",
+      "thread_depth": 2,
+      "month": "2015-01"
+    },
+    {
+      "id": "msg-e8cd63d0dbcc",
+      "message_id": "<CAGx1TMDNT7VnzQ_z8tC=+5LqKmj1unrm+1Qhb+gmTGNgaN4trg@mail.gmail.com>",
+      "from_name": "Richard M. Heiberger",
+      "from_email_hash": "4ce810eab8587777db353ea9d997b9e94d9e73af018121f9a3424238038952df",
+      "date": "2015-01-08T15:15:47-05:00",
+      "subject": "[R-sig-teaching] Analyze Nested and Split-Plot Designs with R",
+      "subject_clean": "Analyze Nested and Split-Plot Designs with R",
+      "in_reply_to": "<CAHDp66CkSoigifSPZQUD2Jp3q0A7jf8L-u5Yxzmq2J1hS8i59A@mail.gmail.com>",
+      "references": [
+        "<CAHDp66CyU9NUd-XVGgUdXMP51vzDMd7EzFT_DrcON0oBRkYzQg@mail.gmail.com>",
+        "<CAGx1TMAGaug9ut9SOkQFapFsBCuHTscARKHydu2Nf_z9fQC_YQ@mail.gmail.com>",
+        "<CAHDp66CkSoigifSPZQUD2Jp3q0A7jf8L-u5Yxzmq2J1hS8i59A@mail.gmail.com>"
+      ],
+      "body_plain": "Nothing is wrong.  The \"Warning\" makes sure you know that there is no\nnumerator term in\nthe \"Within\" stratum.  Since that is intended by this design, all is well.\n\nAny differences in numerical values are most likely an artifact of rounding.\n\nPlease be specific about what you typed and what you received when\nasking questions on this\nlist.  In this case, there are three models and three tables in\nMontgomery.  Your question doesn't\nsay which you are asking about, nor what you differences you are\nseeing.  The general comment\nfrom the R-help list applies here:\n\nPLEASE do read the posting guide http://www.R-project.org/posting-guide.html\nand provide commented, minimal, self-contained, reproducible code.\n\nRich\n\nOn Thu, Jan 8, 2015 at 3:04 PM, Steven Stoline <sstoline at gmail.com> wrote:\n> Dear Rich:\n>\n> First thank you very much. it helped a lot.\n>\n> The F value and its p-values corresponding to the factor \"Supplier\"are\n> different from the ones in the textbook, Montgomery 8th ed. But conclusion\n> stay same (Pvalue > 0.05)\n>\n>\n>\n> In the last model (the third one) used for Table 14.6 , I am not sure what\n> is wrong.\n>\n>\n>> MontEx14.1.aov3 <- aov(Purity ~ Supplier + Error(Supplier:Batch),\n>> data=MontEx14.1)\n>\n> Warning message:\n>\n> In aov(Purity ~ Supplier + Error(Supplier:Batch), data = MontEx14.1) :\n>   Error() model is singular\n>\n>\n>\n>\n> many thanks\n> Steven\n>\n> On Thu, Jan 8, 2015 at 1:58 PM, Richard M. Heiberger <rmh at temple.edu> wrote:\n>>\n>> Steven,\n>>\n>> I assume you mean Montgomery 8th edition (he changed chapter numbers\n>> recently).\n>>\n>> Please state what you expect as output.\n>>\n>> For your first attempt, you have the case wrong (purity instead of\n>> Purity).\n>>\n>> Are you reading Supplier and Batch as factors.  It can't be determined\n>> from the\n>> printed table in your email.  Use dump (or dput) next time.   dput is\n>> designed for R.\n>>\n>> With the above corrections, your first model formula gives Table 14.4\n>> and your second\n>> formula gives Table 14.5.\n>>\n>> To get Table 14.6 you need to use the Error() function in the model\n>> formula.\n>> Here are statements for all three tables.\n>>\n>> Rich\n>>\n>> ## dump(\"MontEx14.1\",\"\")\n>> MontEx14.1 <-\n>> structure(list(Supplier = structure(c(1L, 1L, 1L, 1L, 1L, 1L,\n>> 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L,\n>> 2L, 2L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L), .Label = c(\"1\",\n>> \"2\", \"3\"), class = \"factor\"), Batch = structure(c(1L, 1L, 1L,\n>> 2L, 2L, 2L, 3L, 3L, 3L, 4L, 4L, 4L, 1L, 1L, 1L, 2L, 2L, 2L, 3L,\n>> 3L, 3L, 4L, 4L, 4L, 1L, 1L, 1L, 2L, 2L, 2L, 3L, 3L, 3L, 4L, 4L,\n>> 4L), .Label = c(\"1\", \"2\", \"3\", \"4\"), class = \"factor\"), Purity = c(1L,\n>> -1L, 0L, -2L, -3L, -4L, -2L, 0L, 1L, 1L, 4L, 0L, 1L, -2L, -3L,\n>> 0L, 4L, 2L, -1L, 0L, -2L, 0L, 3L, 2L, 2L, 4L, 0L, -2L, 0L, 2L,\n>> 1L, -1L, 2L, 3L, 2L, 1L)), .Names = c(\"Supplier\", \"Batch\", \"Purity\"\n>> ), row.names = c(NA, -36L), class = \"data.frame\")\n>>\n>>\n>>\n>> MontEx14.1$Supplier <- factor(MontEx14.1$Supplier)\n>> MontEx14.1$Batch <- factor(MontEx14.1$Batch)\n>>\n>> MontEx14.1.aov1 <- aov(Purity ~ Supplier/Batch, data=MontEx14.1)\n>> summary(MontEx14.1.aov1)\n>>\n>> MontEx14.1.aov2 <- aov(Purity ~ Supplier*Batch, data=MontEx14.1)\n>> summary(MontEx14.1.aov2)\n>>\n>> MontEx14.1.aov3 <- aov(Purity ~ Supplier + Error(Supplier:Batch),\n>> data=MontEx14.1)\n>> summary(MontEx14.1.aov3)\n>>\n>>\n>> On Thu, Jan 8, 2015 at 1:06 PM, Steven Stoline <sstoline at gmail.com> wrote:\n>> > Dear All:\n>> >\n>> > example 14.1, Montgomery, chapter 14. *Supplier* is a *fixed factor*,\n>> > *Batches* is a *random factor* nested within the fixed factor Supplier.\n>> >\n>> > How to analyze these data in R in two ways:\n>> >\n>> > 1- Nested Design\n>> >\n>> > fit <- aov(purity~Supplier/Batch)\n>> >\n>> >\n>> > it did not give me the expected output.\n>> >\n>> >\n>> > 2- as a factorial (suppliers Fixed, Batches Random)\n>> >\n>> > fit.out <- aov(Purity~Supplier*Batch, data=have)\n>> >\n>> > it did not give me the expected output.\n>> >\n>> >\n>> > Here is the data set:\n>> > ===============\n>> >\n>> >> data\n>> >   Supplier Batch  Purity\n>> > 1     1  1\n>> > 1     1 -1\n>> > 1     1  0\n>> > 1     2 -2\n>> > 1     2 -3\n>> > 1     2 -4\n>> > 1     3 -2\n>> > 1     3  0\n>> > 1     3  1\n>> > 1     4  1\n>> > 1     4  4\n>> > 1     4  0\n>> > 2     1  1\n>> > 2     1 -2\n>> > 2     1 -3\n>> > 2     2  0\n>> > 2     2  4\n>> > 2     2  2\n>> > 2     3 -1\n>> > 2     3  0\n>> > 2     3 -2\n>> > 2     4  0\n>> > 2     4  3\n>> > 2     4  2\n>> > 3     1  2\n>> > 3     1  4\n>> > 3     1  0\n>> > 3     2 -2\n>> > 3     2  0\n>> > 3     2  2\n>> > 3     3  1\n>> > 3     3 -1\n>> > 3     3  2\n>> > 3     4  3\n>> > 3     4  2\n>> > 3     4  1\n>> >\n>> >\n>> > many thanks\n>> > Steven\n>> >\n>> > --\n>> > Steven M. Stoline\n>> > 1123 Forest Avenue\n>> > Portland, ME 04112\n>> > sstoline at gmail.com\n>> >\n>> >         [[alternative HTML version deleted]]\n>> >\n>> > _______________________________________________\n>> > R-sig-teaching at r-project.org mailing list\n>> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n>\n>\n> --\n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com",
+      "body_snippet": "Nothing is wrong.  The \"Warning\" makes sure you know that there is no\nnumerator term in\nthe \"Within\" stratum.  Since that is intended by this design, all is well.\n\nAny differences in numerical values ",
+      "thread_id": "thread-7f4df9e66530",
+      "thread_depth": 3,
+      "month": "2015-01"
+    },
+    {
+      "id": "msg-ba5988bde995",
+      "message_id": "<87bnm8dsv2.fsf@gmail.com>",
+      "from_name": "Ramon Diaz-Uriarte",
+      "from_email_hash": "633eb05920d53e5a830a8910e9d03c82c5ec23dabba76361dd72a360253a993b",
+      "date": "2015-01-09T13:46:25+01:00",
+      "subject": "[R-sig-teaching] Analyze Nested and Split-Plot Designs with R",
+      "subject_clean": "Analyze Nested and Split-Plot Designs with R",
+      "in_reply_to": "<CAGx1TMDNT7VnzQ_z8tC=+5LqKmj1unrm+1Qhb+gmTGNgaN4trg@mail.gmail.com>",
+      "references": [
+        "<CAHDp66CyU9NUd-XVGgUdXMP51vzDMd7EzFT_DrcON0oBRkYzQg@mail.gmail.com>",
+        "<CAGx1TMAGaug9ut9SOkQFapFsBCuHTscARKHydu2Nf_z9fQC_YQ@mail.gmail.com>",
+        "<CAHDp66CkSoigifSPZQUD2Jp3q0A7jf8L-u5Yxzmq2J1hS8i59A@mail.gmail.com>",
+        "<CAGx1TMDNT7VnzQ_z8tC=+5LqKmj1unrm+1Qhb+gmTGNgaN4trg@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Rich and Steven,\n\nI think Steven's comment about differences refer to the F statistics and\np-values for the Suppliers term. In particular,\n\nsummary(MontEx14.1.aov1)\n\ndoes not give the same F statistic for Suppliers as that shown in Table\n14.4 of Montgomery (F = 0.97 in Table 14.4, F = 2.85 in the output from\nR). But that is because the R output is computing the F statistic as the\nratio of Suppliers Mean Squares over the Error Mean Squares. In contrast,\nin Table 14-4 of Montgomery[1] the F-ratio is from the ratio of Suppliers\nto Batches Mean Squares. This can be seen from the column labeled \"Expected\nMean Squares\" (where we see we need this ratio to test the \\tau), and this\nin turn corresponds to the middle column of Table 14.1, where A is Fixed\nand B is Fixed.\n\n\nSo the F-ratio and p-value differences for Suppliers are not an artifact of\nrounding, but of using different denominator Mean Squares (the rationale\nfor which is explained in the previous pages in Montgomery, those where he\ngoes over the entries in Table 14.1). Thus even if, as Steven says,\n\"(Pvalue 0.05)\", they are larger than 0.05 in very different ways :-)\n\n\n\nOf course, the third model that Rich provided:\n\nMontEx14.1.aov3 <- aov(Purity ~ Supplier + Error(Supplier:Batch),\n                       data=MontEx14.1)\nsummary(MontEx14.1.aov3)\n\n\ndoes give identical F statistics and p-values for Supplier (F = 0.97, p =\n0.42) as those in Table 14.4 and table 14.6 of Montgomery.\n\n\n\n\nIn addition, and to try to make this analysis more clear (though this is\nnot in Montgomery), I often find that in cases such as this it is\ninstructive to average the batches: this way, we are forced to assess\nvariation among Suppliers relative to the among-Batch-within-Supplier\nvariation (i.e., given the perfect balance, etc, etc, here by decree we use\nthe right denominator in the ratio to find the F statistic for Supplier)\n\n\nMontAverage <- aggregate(Purity ~ Supplier + Batch,\n                         data = MontEx14.1, mean)\n\n## F is same as Table 14.4 for Supplier. One can also check that the Sums of\n## Squares here are 1/3 of those in Table 14.4 for Supplier, and that the\n## Residuals SS here are 1/3 of the SS for Batches in Table 14.4.\n\nsummary(aov(Purity ~ Supplier, data = MontAverage))\n\n\n\n\nBest,\n\n\nR.\n\n\n\n[1] I only have access right now to the 5th edition, so I am looking at\nTable 13-4 in p. 561, but I think this is exactly the same as Table 14-4 in\nthe 8th edition.\n\n\nOn Thu, 08-01-2015, at 21:15, Richard M. Heiberger <rmh at temple.edu> wrote:\n> Nothing is wrong.  The \"Warning\" makes sure you know that there is no\n> numerator term in\n> the \"Within\" stratum.  Since that is intended by this design, all is well.\n>\n> Any differences in numerical values are most likely an artifact of rounding.\n>\n> Please be specific about what you typed and what you received when\n> asking questions on this\n> list.  In this case, there are three models and three tables in\n> Montgomery.  Your question doesn't\n> say which you are asking about, nor what you differences you are\n> seeing.  The general comment\n> from the R-help list applies here:\n>\n> PLEASE do read the posting guide http://www.R-project.org/posting-guide.html\n> and provide commented, minimal, self-contained, reproducible code.\n>\n> Rich\n>\n> On Thu, Jan 8, 2015 at 3:04 PM, Steven Stoline <sstoline at gmail.com> wrote:\n>> Dear Rich:\n>>\n>> First thank you very much. it helped a lot.\n>>\n>> The F value and its p-values corresponding to the factor \"Supplier\"are\n>> different from the ones in the textbook, Montgomery 8th ed. But conclusion\n>> stay same (Pvalue > 0.05)\n>>\n>>\n>>\n>> In the last model (the third one) used for Table 14.6 , I am not sure what\n>> is wrong.\n>>\n>>\n>>> MontEx14.1.aov3 <- aov(Purity ~ Supplier + Error(Supplier:Batch),\n>>> data=MontEx14.1)\n>>\n>> Warning message:\n>>\n>> In aov(Purity ~ Supplier + Error(Supplier:Batch), data = MontEx14.1) :\n>>   Error() model is singular\n>>\n>>\n>>\n>>\n>> many thanks\n>> Steven\n>>\n>> On Thu, Jan 8, 2015 at 1:58 PM, Richard M. Heiberger <rmh at temple.edu> wrote:\n>>>\n>>> Steven,\n>>>\n>>> I assume you mean Montgomery 8th edition (he changed chapter numbers\n>>> recently).\n>>>\n>>> Please state what you expect as output.\n>>>\n>>> For your first attempt, you have the case wrong (purity instead of\n>>> Purity).\n>>>\n>>> Are you reading Supplier and Batch as factors.  It can't be determined\n>>> from the\n>>> printed table in your email.  Use dump (or dput) next time.   dput is\n>>> designed for R.\n>>>\n>>> With the above corrections, your first model formula gives Table 14.4\n>>> and your second\n>>> formula gives Table 14.5.\n>>>\n>>> To get Table 14.6 you need to use the Error() function in the model\n>>> formula.\n>>> Here are statements for all three tables.\n>>>\n>>> Rich\n>>>\n>>> ## dump(\"MontEx14.1\",\"\")\n>>> MontEx14.1 <-\n>>> structure(list(Supplier = structure(c(1L, 1L, 1L, 1L, 1L, 1L,\n>>> 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L,\n>>> 2L, 2L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L), .Label = c(\"1\",\n>>> \"2\", \"3\"), class = \"factor\"), Batch = structure(c(1L, 1L, 1L,\n>>> 2L, 2L, 2L, 3L, 3L, 3L, 4L, 4L, 4L, 1L, 1L, 1L, 2L, 2L, 2L, 3L,\n>>> 3L, 3L, 4L, 4L, 4L, 1L, 1L, 1L, 2L, 2L, 2L, 3L, 3L, 3L, 4L, 4L,\n>>> 4L), .Label = c(\"1\", \"2\", \"3\", \"4\"), class = \"factor\"), Purity = c(1L,\n>>> -1L, 0L, -2L, -3L, -4L, -2L, 0L, 1L, 1L, 4L, 0L, 1L, -2L, -3L,\n>>> 0L, 4L, 2L, -1L, 0L, -2L, 0L, 3L, 2L, 2L, 4L, 0L, -2L, 0L, 2L,\n>>> 1L, -1L, 2L, 3L, 2L, 1L)), .Names = c(\"Supplier\", \"Batch\", \"Purity\"\n>>> ), row.names = c(NA, -36L), class = \"data.frame\")\n>>>\n>>>\n>>>\n>>> MontEx14.1$Supplier <- factor(MontEx14.1$Supplier)\n>>> MontEx14.1$Batch <- factor(MontEx14.1$Batch)\n>>>\n>>> MontEx14.1.aov1 <- aov(Purity ~ Supplier/Batch, data=MontEx14.1)\n>>> summary(MontEx14.1.aov1)\n>>>\n>>> MontEx14.1.aov2 <- aov(Purity ~ Supplier*Batch, data=MontEx14.1)\n>>> summary(MontEx14.1.aov2)\n>>>\n>>> MontEx14.1.aov3 <- aov(Purity ~ Supplier + Error(Supplier:Batch),\n>>> data=MontEx14.1)\n>>> summary(MontEx14.1.aov3)\n>>>\n>>>\n>>> On Thu, Jan 8, 2015 at 1:06 PM, Steven Stoline <sstoline at gmail.com> wrote:\n>>> > Dear All:\n>>> >\n>>> > example 14.1, Montgomery, chapter 14. *Supplier* is a *fixed factor*,\n>>> > *Batches* is a *random factor* nested within the fixed factor Supplier.\n>>> >\n>>> > How to analyze these data in R in two ways:\n>>> >\n>>> > 1- Nested Design\n>>> >\n>>> > fit <- aov(purity~Supplier/Batch)\n>>> >\n>>> >\n>>> > it did not give me the expected output.\n>>> >\n>>> >\n>>> > 2- as a factorial (suppliers Fixed, Batches Random)\n>>> >\n>>> > fit.out <- aov(Purity~Supplier*Batch, data=have)\n>>> >\n>>> > it did not give me the expected output.\n>>> >\n>>> >\n>>> > Here is the data set:\n>>> > ===============\n>>> >\n>>> >> data\n>>> >   Supplier Batch  Purity\n>>> > 1     1  1\n>>> > 1     1 -1\n>>> > 1     1  0\n>>> > 1     2 -2\n>>> > 1     2 -3\n>>> > 1     2 -4\n>>> > 1     3 -2\n>>> > 1     3  0\n>>> > 1     3  1\n>>> > 1     4  1\n>>> > 1     4  4\n>>> > 1     4  0\n>>> > 2     1  1\n>>> > 2     1 -2\n>>> > 2     1 -3\n>>> > 2     2  0\n>>> > 2     2  4\n>>> > 2     2  2\n>>> > 2     3 -1\n>>> > 2     3  0\n>>> > 2     3 -2\n>>> > 2     4  0\n>>> > 2     4  3\n>>> > 2     4  2\n>>> > 3     1  2\n>>> > 3     1  4\n>>> > 3     1  0\n>>> > 3     2 -2\n>>> > 3     2  0\n>>> > 3     2  2\n>>> > 3     3  1\n>>> > 3     3 -1\n>>> > 3     3  2\n>>> > 3     4  3\n>>> > 3     4  2\n>>> > 3     4  1\n>>> >\n>>> >\n>>> > many thanks\n>>> > Steven\n>>> >\n>>> > --\n>>> > Steven M. Stoline\n>>> > 1123 Forest Avenue\n>>> > Portland, ME 04112\n>>> > sstoline at gmail.com\n>>> >\n>>> >         [[alternative HTML version deleted]]\n>>> >\n>>> > _______________________________________________\n>>> > R-sig-teaching at r-project.org mailing list\n>>> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>>\n>>\n>>\n>> --\n>> Steven M. Stoline\n>> 1123 Forest Avenue\n>> Portland, ME 04112\n>> sstoline at gmail.com\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n-- \nRamon Diaz-Uriarte\nDepartment of Biochemistry, Lab B-25\nFacultad de Medicina\nUniversidad Aut?noma de Madrid \nArzobispo Morcillo, 4\n28029 Madrid\nSpain\n\nPhone: +34-91-497-2412\n\nEmail: rdiaz02 at gmail.com\n       ramon.diaz at iib.uam.es\n\nhttp://ligarto.org/rdiaz",
+      "body_snippet": "Dear Rich and Steven,\n\nI think Steven's comment about differences refer to the F statistics and\np-values for the Suppliers term. In particular,\n\nsummary(MontEx14.1.aov1)\n\ndoes not give the same F stat",
+      "thread_id": "thread-7f4df9e66530",
+      "thread_depth": 4,
+      "month": "2015-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-d4efbfcb10dd",
+      "subject": "Could not load mosaic package",
+      "message_count": 3,
+      "participants": [
+        "Nguyen C.",
+        "Randall Pruim"
+      ],
+      "started": "2015-01-05T22:48:45+07:00",
+      "last_reply": "2015-01-06T17:35:26+07:00",
+      "root_message_id": "msg-d4efbfcb10dd"
+    },
+    {
+      "id": "thread-7f4df9e66530",
+      "subject": "Analyze Nested and Split-Plot Designs with R",
+      "message_count": 5,
+      "participants": [
+        "Ramon Diaz-Uriarte",
+        "Richard M. Heiberger",
+        "Steven Stoline"
+      ],
+      "started": "2015-01-08T13:06:04-05:00",
+      "last_reply": "2015-01-09T13:46:25+01:00",
+      "root_message_id": "msg-7f4df9e66530"
+    },
+    {
+      "id": "thread-18fc11cc9b13",
+      "subject": "Random effet ANOVA, presentation like the classic one.",
+      "message_count": 1,
+      "participants": [
+        "Christophe Genolini"
+      ],
+      "started": "2015-01-08T15:40:38+01:00",
+      "last_reply": "2015-01-08T15:40:38+01:00",
+      "root_message_id": "msg-18fc11cc9b13"
+    }
+  ]
+}

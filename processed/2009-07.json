@@ -1,0 +1,292 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2009-07",
+  "messages": [
+    {
+      "id": "msg-6f6abc9b8d14",
+      "message_id": "<20090702140358.65223.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2009-07-02T10:03:58-04:00",
+      "subject": "[R-sig-teaching] purpose of list",
+      "subject_clean": "purpose of list",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Forwarded message:\n> From: hadley wickham <h.wickham at gmail.com>\n> >\n> > In all three years, unprompted by me, I have had between five and\n> > seven students come to me after the R sessions asking why we hadn't\n> > used R in first year. They find the command line more direct and\n> > immediate than Mintab, which, it seems, they had found confusing. This\n> > year I asked the whole =A02nd year class to vote on whether they would\n> > have preferred R to Mintab in 1st year. Everyone voted for R.\n> \n> This matches my experience in a course which I taught both Excel and\n> R.  Most students preferred R because it was much harder to follow\n> what I was doing in the GUI - where exactly was I clicking, was it a\n> right or left click, etc.  With R you see everything I type and it's\n> very easier to reproduce.  It's also much faster and easier to produce\n> a page of commented R code that allows students to reproduce all the\n> important steps, compared to recording a screencast to show the steps\n> in Excel.\n\nThis matches my experience with the command line vs. a GUI.  However,\nI used Minitab!-)  Is the CLI gone in Version 15?  I used it through\n14.  It seems to be deprecated by Minitab, Inc., though.  Around\nVersion 13 they abolished inline comments and also around that time\nthey started shipping Minitab with the command line turned off as\ndefault, but last I knew you could turn it on again.  I vaguely recall\nyou might also have had to install command line help as a separate\nstep (or installation option).  Certainly for an intro. stats. course\nthe Minitab CLI seems much more intuitive than the R CLI.  The data are in\ncolumns C1, C2, etc.  Sample commands:\n\nboxplot C1\nhistogram C2\ndescribe C3 \nregress data in C3 on 1 independent variable in C2\n\nThe last is an example of inline commenting.  In Version 13 it would\nhave to be\n\nregress C3 1 C2\n\n------->  First-time AP Stats. teacher?  Help is on the way! See\n\n http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n\t    \n  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)\n  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      \n  email  bob statland.org  (add your own \"@\" and save me some spam)",
+      "body_snippet": "Forwarded message:\n> From: hadley wickham <h.wickham at gmail.com>\n> >\n> > In all three years, unprompted by me, I have had between five and\n> > seven students come to me after the R sessions asking w",
+      "thread_id": "thread-6f6abc9b8d14",
+      "thread_depth": 0,
+      "month": "2009-07"
+    },
+    {
+      "id": "msg-014ee8e5bf2e",
+      "message_id": "<20090702141957.69578.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2009-07-02T10:19:57-04:00",
+      "subject": "[R-sig-teaching]  Teaching with R website",
+      "subject_clean": "Teaching with R website",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I think such a website would be a real asset.  It would be most useful\nif it either were restricted to intro. stats. OR organized so that\nmaterials for real beginners were easy to extract from all the\nmaterials for programmers and Ph.D. statisticians.  As a relative\nbeginner myself, I find the usual resources useless.  In self defense,\nI created materials for my own beginning students:\n\n  http://courses.statistics.com/software/R/Rhome.htm\n\nLikewise, 13000 data sets would not be of much help unless there were\nsome way to find the one you need.  For example, recently I was\nteaching transformations of a single variable and found several nice\nsets of data.  Unfortunately, logs seemed to be the best\ntransformation in every case!-(  I needed examples where square roots\nfor example worked better.  There are already a bazillion data sets\nout there for R but they are scattered among dozens of packages with\ncryptic names to ensure that no one can find them.  \n\nI think John's idea has great potential but must be inplemented in a\nmanner much less off-putting than 99% of the existing R materials.\nYou would almost think that R was a secret society whose main goal was\nto fend off new users;-)\n\nForwarded message:\n> From: jverzani <jverzani at gmail.com>\n> \n> I was at the USCOTS conference in Ohio and found myself attending a\n> demonstration on the statcrunch software, which I hadn't seen until then. As far\n> as it goes the software is fine, but what was very interesting to me was the\n> statcrunch.com website. As described there, this is set up to allow easy sharing\n> of data sets, code and reports along with surveys etc. There were an enormous\n> number of data sets (13000, reports etc. that were posted by instructors and\n> students). The site is so successful a publisher now runs it.\n> \n> I currently put such files on my personal web site for my students to download.\n> I have also enjoyed using materials from many other websites, such as those\n> discussed in a recent thread. However, I think it might be extremely beneficial\n> from a student perspective to have an one spot where they can find the work of\n> many people oriented around teaching and learning R. Some site with good search\n> abilities, some well chosen organization and a relatively modern look.\n> \n> I know there are a bunch of interesting web sites for R beyond the main one:\n> CRANtastic, the R-Wiki, the graph gallery, ... but none seem oriented towards\n> the exchange of data and techniques that are used to teach with R.\n> \n> Does anyone else think such a resource might be useful to the point where it was\n> actually used? Are there other ideas where a common place for such information\n> is value added?\n> \n> If this seems like a good idea, does anyone know if there is some off-the-shelf\n> content management system that is well suited towards such?\n> \n> --John\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n\n\n------->  First-time AP Stats. teacher?  Help is on the way! See\n\n http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n\t    \n  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)\n  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      \n  email  bob statland.org  (add your own \"@\" and save me some spam)",
+      "body_snippet": "I think such a website would be a real asset.  It would be most useful\nif it either were restricted to intro. stats. OR organized so that\nmaterials for real beginners were easy to extract from all the",
+      "thread_id": "thread-014ee8e5bf2e",
+      "thread_depth": 0,
+      "month": "2009-07"
+    },
+    {
+      "id": "msg-5c54f61d5a02",
+      "message_id": "<a7d6d2740907020758o5942d8ceq2a5c921fac06e946@mail.gmail.com>",
+      "from_name": "Ana Nelson",
+      "from_email_hash": "26d41e673f79acb5a7e073c372f90688d1db0b51caa7b275134b04d105980dd4",
+      "date": "2009-07-02T15:58:43+01:00",
+      "subject": "[R-sig-teaching] Teaching with R website",
+      "subject_clean": "Teaching with R website",
+      "in_reply_to": "<20090702141957.69578.qmail@mv.mv.com>",
+      "references": [
+        "<20090702141957.69578.qmail@mv.mv.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090702/b8e11068/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090702/b8e11068/attachment.pl>",
+      "thread_id": "thread-014ee8e5bf2e",
+      "thread_depth": 1,
+      "month": "2009-07"
+    },
+    {
+      "id": "msg-180d06cb8d14",
+      "message_id": "<4A4CDB5B.7090004@u-paris10.fr>",
+      "from_name": "Christophe Genolini",
+      "from_email_hash": "188243ef6b743b8d3cdd972d5ac76d36899f18656fb52ce7f6a8f452409f5017",
+      "date": "2009-07-02T18:07:55+02:00",
+      "subject": "[R-sig-teaching] purpose of list",
+      "subject_clean": "purpose of list",
+      "in_reply_to": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC62126E9E3F@LP-EXMBVS10.CO.IHC.COM>",
+      "references": [
+        "<68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>",
+        "<20090630113249.90610.qmail@mv.mv.com>",
+        "<B37C0A15B8FB3C468B5BC7EBC7DA14CC62126E9E3F@LP-EXMBVS10.CO.IHC.COM>"
+      ],
+      "body_plain": "Hi all\n\nI am teaching statistics to Students in Physical Activity. They do not \ncare that much about the math formula, they are focused... well, they \nare not that much focused, but the few that are focused want to know how \nto do the stats. One of the main problem with this kind of student \n(student that do not know computing at all) are the \"R inconsistency\" : \nsince there is \"as.numeric\" and \"as.factor\", they want to use \n\"as.ordered(variable,levels=c(...))\". But it does not work that way... \nOr sometime, we should use \"x,y\", sometime \"x~y\"... quantile works for \nnumeric, but not for ordered (whereas I teach them that quartiles are \ncomputable for ordered variables...)\n\nIt is very hard to deal with all the \"rules but many exception\". So I \nstarted to write a package, some kind of \"simplified R\" in which all the \nsyntax will be simplified. But it takes time...\n\nChristophe\n\n> My teaching situation is a bit different from the others who have responded so far.  I do teach an occasional class at the university, but my main job is with a group of hospitals and doctors doing their statistics.  As part of that I teach some classes within the hospital system to doctors/nurses/whoever.  These tend to be very different students from the undergrads at the university (anyone else ever had a student use the excuse \"I was performing surgery\" for missing class?).\n>\n> These classes are less focused on how to do the stats (they will have me do them for them), but more on the concepts so that they can understand the literature that they read, work with me better in designing studies, and do better at writing/presenting the results.\n>\n> The university where I teach occasionally uses some web based stats program for the intro class (even simpler than minitab in what it can do).  I keep trying to talk them into using R (through the Excel interface or RCmdr), but so far have made little progress.\n>\n> In both situations I am not teaching the students how to use R, but I still use it to demonstrate various concepts.  I mostly use simple examples (plots, quick numbers) or those from the TeachingDemos package (that is what it was written for (disclosure of possible conflict of interest in promoting the package: I believe that the package author/maintainer raids my fridge more often than he should)).  Even though the students are not learning R itself, they appreciate the concepts illustrated.  The mainly GUI based illustrations could be written in any language (but using R means that I can customize them and more advanced students can look at the code themselves and learn more).\n>\n> The R-based code usually does not phase the students even though they have not leaned R themselves yet.  Those that do not understand it just look at the results, but many do understand the main ideas.  For example, at the university, the standard course materials use the 1970 draft lottery as an example for showing scatterplots, correlation, relationships and other concepts.  As a bit of a teaser there is a slide that asks if the relationship could be due to chance (this is before we get into the inference part of the course).  We don't come back and answer that teaser until the last week of class (when we have done hypothesis testing an regression).  But I like to show the students a simple simulation at the time of the teaser with simple code such as:\n>\n>   \n>> out <- replicate(10000, cor( sample(1:366), 1:366 ) )\n>> hist(out)\n>> sum( abs(out) > 0.18 )\n>>     \n> [1] 5\n>   \n>> sum( abs(out) > 0.1 )\n>>     \n> [1] 533\n>   \n>> quantile( out, c(0.025, 0.975) )\n>>     \n>       2.5%      97.5% \n> -0.1021715  0.1003527\n>\n> It takes less than a minute to explain that 1:366 is the numbers from 1 to 366 and that the sample function randomizes the order.  The replicate function and the rest of the code is fairly self explanatory even for people who don't know any programming, but this example clearly shows that the amount of correlation in the 1970 draft lottery was unlikely due to random chance as well as what values we would expect to see by chance.  Some of the students will stay after class and ask about R, I explain that it is not part of the official class, but that if they are interested here is the website and additional info ...\n>\n> So, I think that R is a great tool for teaching statistical concepts even when R is not the statistical package being used for the course itself.\n>\n>\n>",
+      "body_snippet": "Hi all\n\nI am teaching statistics to Students in Physical Activity. They do not \ncare that much about the math formula, they are focused... well, they \nare not that much focused, but the few that are f",
+      "thread_id": "thread-180d06cb8d14",
+      "thread_depth": 0,
+      "month": "2009-07"
+    },
+    {
+      "id": "msg-a2ee9366604a",
+      "message_id": "<20090702212751.1653.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2009-07-02T17:27:51-04:00",
+      "subject": "[R-sig-teaching] purpose of list",
+      "subject_clean": "purpose of list",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Right now I am trying to remember how to get a scatterplot with\nboxplots of x and y separately in the margin.  I think I need one of\nthe packages but I don't know which.\n\nThe above is a real call for help but also an example of the kind of\nthing that is hard in R.  In the summer of 2007 I created a web page\nfor AP Statistics teachers (see sig file below).  There were lots of\nresources out there, but it was hard for teachers to find them when\nthey needed them.  So I tried to organize them in the order in which\nthe topics might come up in the course.  It might be nice to have such\na page of R resources that told you, for example, of some R tools for\nteaching scatterplots.  (Actually, I was teaching transformations, and\nwanted the plot described above as a tool for deciding which variable\nto transform.)\n\n------->  First-time AP Stats. teacher?  Help is on the way! See\n\n http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n\t    \n  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)\n  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      \n  email  bob statland.org  (add your own \"@\" and save me some spam)",
+      "body_snippet": "Right now I am trying to remember how to get a scatterplot with\nboxplots of x and y separately in the margin.  I think I need one of\nthe packages but I don't know which.\n\nThe above is a real call for ",
+      "thread_id": "thread-a2ee9366604a",
+      "thread_depth": 0,
+      "month": "2009-07"
+    },
+    {
+      "id": "msg-5b00399a2c2d",
+      "message_id": "<191577b80907021507j63e0d4b1x32da985e261e582e@mail.gmail.com>",
+      "from_name": "Antonio P. Ramos",
+      "from_email_hash": "e95bafded85d24babdc99d611a276bf89a00bac76499acc1f1f445f966b0e617",
+      "date": "2009-07-02T15:07:33-07:00",
+      "subject": "[R-sig-teaching] purpose of list",
+      "subject_clean": "purpose of list",
+      "in_reply_to": "<20090702212751.1653.qmail@mv.mv.com>",
+      "references": [
+        "<20090702212751.1653.qmail@mv.mv.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090702/05cd88a0/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090702/05cd88a0/attachment.pl>",
+      "thread_id": "thread-a2ee9366604a",
+      "thread_depth": 1,
+      "month": "2009-07"
+    },
+    {
+      "id": "msg-31c0e519dfa2",
+      "message_id": "<68b1e2610907021726t54e75ae5v42af41e02d9e9495@mail.gmail.com>",
+      "from_name": "Liviu Andronic",
+      "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
+      "date": "2009-07-03T02:26:40+02:00",
+      "subject": "[R-sig-teaching] purpose of list",
+      "subject_clean": "purpose of list",
+      "in_reply_to": "<191577b80907021507j63e0d4b1x32da985e261e582e@mail.gmail.com>",
+      "references": [
+        "<20090702212751.1653.qmail@mv.mv.com>",
+        "<191577b80907021507j63e0d4b1x32da985e261e582e@mail.gmail.com>"
+      ],
+      "body_plain": "On Fri, Jul 3, 2009 at 12:07 AM, Antonio P.\nRamos<ramos.grad.student at gmail.com> wrote:\n> On Thu, Jul 2, 2009 at 2:27 PM, Robert W. Hayden <hayden at mv.mv.com> wrote:\n>> Right now I am trying to remember how to get a scatterplot with\n>> boxplots of x and y separately in the margin. ?I think I need one of\n>> the packages but I don't know which.\n>>\n> car library by John Fox has a function that does that: I guess is\n> scatterplot() or something like that\n>\nEasiest to find it (in my understanding) is to load Rcmdr, load some dummy data\n> data(Angell, package=\"car\") ,\n\nand then choose \"Graph > Scatterplot\" which will issue smth similar\n> scatterplot(mobility~hetero, reg.line=lm, smooth=TRUE, labels=FALSE,\n+  boxplots='xy', span=0.5, data=Angell) ,\n\nwhich I suspect would do what you need.\nLiviu",
+      "body_snippet": "On Fri, Jul 3, 2009 at 12:07 AM, Antonio P.\nRamos<ramos.grad.student at gmail.com> wrote:\n> On Thu, Jul 2, 2009 at 2:27 PM, Robert W. Hayden <hayden at mv.mv.com> wrote:\n>> Right now I am trying to re",
+      "thread_id": "thread-a2ee9366604a",
+      "thread_depth": 2,
+      "month": "2009-07"
+    },
+    {
+      "id": "msg-bb6c6df39bbc",
+      "message_id": "<4A5B285E.01BB.00A6.1@usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2009-07-13T12:28:14-04:00",
+      "subject": "[R-sig-teaching] X-Y charts with gridlines in R",
+      "subject_clean": "X-Y charts with gridlines in R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090713/2d9e20b8/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090713/2d9e20b8/attachment.pl>",
+      "thread_id": "thread-bb6c6df39bbc",
+      "thread_depth": 0,
+      "month": "2009-07"
+    },
+    {
+      "id": "msg-651530a4cfc4",
+      "message_id": "<4A5B8306.01BB.00A6.1@usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2009-07-13T18:55:03-04:00",
+      "subject": "[R-sig-teaching] X-Y charts with gridlines in R",
+      "subject_clean": "X-Y charts with gridlines in R",
+      "in_reply_to": "<644e1f320907131540g53af39feq8e43f62e0aab682b@mail.gmail.com>",
+      "references": [
+        "<4A5B285E.01BB.00A6.1@usm.maine.edu>",
+        "<644e1f320907131540g53af39feq8e43f62e0aab682b@mail.gmail.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090713/c35a37a4/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090713/c35a37a4/attachment.pl>",
+      "thread_id": "thread-651530a4cfc4",
+      "thread_depth": 0,
+      "month": "2009-07"
+    },
+    {
+      "id": "msg-67281139f7ad",
+      "message_id": "<p06002017c68223f2e36e@[192.168.1.11]>",
+      "from_name": "Jean lobry",
+      "from_email_hash": "92f00cec5507fc339b350dc5deec32274bd68ad5ea0338971fee7b289106e82d",
+      "date": "2009-07-14T14:03:39+02:00",
+      "subject": "[R-sig-teaching] X-Y charts with gridlines in R",
+      "subject_clean": "X-Y charts with gridlines in R",
+      "in_reply_to": "<mailman.5.1247565603.18918.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.5.1247565603.18918.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": ">Could you please help me out how to get such graphs in R.\n\nTry:\n\npar(mar = rep(1.5, 4))\nplot(-7:7, -7:7, type = \"n\", xaxt = \"n\", yaxs = \"i\", xaxs = \"i\", yaxt = \"n\",\nbty = \"n\", xlab = \"\", ylab = \"\")\nsegments(-7,-6:6,+7,-6:6, col = \"orange\", lty = 2)\nsegments(-6:6,-7,-6:6,+7, col = \"orange\", lty = 2)\nsegments(-7,0,7,0)\nsegments(0,-7,0,7)\ntext(7, 0, \"x\", pos = 4, xpd = NA)\ntext(0, 7, \"y\", pos = 3, xpd = NA)\nabline(c(0,1.5), lwd = 3, col = \"darkblue\")\n\nand:\n\npar(mar = rep(2, 4))\nplot(-7:7, -7:7, type = \"n\", xaxt = \"n\", yaxs = \"i\", xaxs = \"i\", yaxt \n= \"n\", xlab = \"\", ylab = \"\")\nsegments(-7,-6:6,+7,-6:6, col = \"orange\", lty = 2)\nsegments(-6:6,-7,-6:6,+7, col = \"orange\", lty = 2)\nsegments(-7,0,7,0)\nsegments(0,-7,0,7)\ntext(7, 0, \"x\", pos = 4, xpd = NA)\ntext(0, 7, \"y\", pos = 3, xpd = NA)\nabline(c(2, -3), lwd = 3, lty = 3)\naxis(1, line = -1, lwd = 0)\naxis(2, las = 1, line = -1, xaxt = \"n\", lwd = 0)\nfor(x in c(-7,7)){\n   segments(x, seq(-7,7,by=0.5), ifelse(x>0, x-0.1, x+0.1), seq(-7,7,by=0.5))\n   segments(x, seq(-6,6,by=2),ifelse(x>0, x-0.2, x+0.2), seq(-6,6,by=2))\n}\nfor(y in c(-7,7)){\n   segments(seq(-7,7,by=0.5), y, seq(-7,7,by=0.5), ifelse(y>0, y-0.1, y+0.1))\n   segments(seq(-6,6,by=2), y, seq(-6,6,by=2), ifelse(y>0, y-0.2, y+0.2))\n}\npolygon(c(4, -2, 10, 10), c(-3*4+2, -3*-2+2, 10, -10),\ncol = rgb(0,0,1,0.2), border = grey(0.8))\nabline(c(2, -3), lwd = 3, lty = 3)\ntext(2,3, expression(y > 2-3*x), cex = 2)\n\nBest,\n\nJean\n\n-- \nJean R. Lobry            (lobry at biomserv.univ-lyon1.fr)\nLaboratoire BBE-CNRS-UMR-5558, Univ. C. Bernard - LYON I,\n43 Bd 11/11/1918, F-69622 VILLEURBANNE CEDEX, FRANCE\nallo  : +33 472 43 27 56     fax    : +33 472 43 13 88\nhttp://pbil.univ-lyon1.fr/members/lobry/",
+      "body_snippet": ">Could you please help me out how to get such graphs in R.\n\nTry:\n\npar(mar = rep(1.5, 4))\nplot(-7:7, -7:7, type = \"n\", xaxt = \"n\", yaxs = \"i\", xaxs = \"i\", yaxt = \"n\",\nbty = \"n\", xlab = \"\", ylab = \"\")\ns",
+      "thread_id": "thread-67281139f7ad",
+      "thread_depth": 0,
+      "month": "2009-07"
+    },
+    {
+      "id": "msg-db74b95c807a",
+      "message_id": "<4A714826.1010409@inseed.org>",
+      "from_name": "INSEED workshops",
+      "from_email_hash": "a7199273dd9d48639fb9926dfb7ace8f1fdde3ae8f2ab9e4951be717f732a325",
+      "date": "2009-07-30T10:13:42+03:00",
+      "subject": "[R-sig-teaching] Workshop on Statistical methods in Epidemiology - November 2009",
+      "subject_clean": "Workshop on Statistical methods in Epidemiology - November 2009",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "INSEED is happy to announce an international workshop with three\nmodules, viz.\n\n* 16-18 November, 2009: Statistical methods in Epidemiology\n* 19-21 November, 2009: Sample size consideration in Epidemiology\n* 22-24 November, 2009: Longitudinal data analysis\n\nThe course aims to give hands-on experience in analysing epidemiologic\ndata sets, and model building, using R. The details of the workshop are\navailable at http://www.inseed.org/workshops/stat-epi09.html\n\nBijoy Joseph\nCourse coordinator\n_______________________________________________________\n\nIndic Society for Education and Development (INSEED),\n1, Swami Enterprises Complex,\nTigrania road, Tapovan Bridge,\nNashik - 422 011, Maharashtra, INDIA\n\nTel: +91-253-2503969\nhttp://www.inseed.org/",
+      "body_snippet": "INSEED is happy to announce an international workshop with three\nmodules, viz.\n\n* 16-18 November, 2009: Statistical methods in Epidemiology\n* 19-21 November, 2009: Sample size consideration in Epidemi",
+      "thread_id": "thread-db74b95c807a",
+      "thread_depth": 0,
+      "month": "2009-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-6f6abc9b8d14",
+      "subject": "purpose of list",
+      "message_count": 1,
+      "participants": [
+        "Robert W. Hayden"
+      ],
+      "started": "2009-07-02T10:03:58-04:00",
+      "last_reply": "2009-07-02T10:03:58-04:00",
+      "root_message_id": "msg-6f6abc9b8d14"
+    },
+    {
+      "id": "thread-014ee8e5bf2e",
+      "subject": "Teaching with R website",
+      "message_count": 2,
+      "participants": [
+        "Ana Nelson",
+        "Robert W. Hayden"
+      ],
+      "started": "2009-07-02T10:19:57-04:00",
+      "last_reply": "2009-07-02T15:58:43+01:00",
+      "root_message_id": "msg-014ee8e5bf2e"
+    },
+    {
+      "id": "thread-a2ee9366604a",
+      "subject": "purpose of list",
+      "message_count": 3,
+      "participants": [
+        "Antonio P. Ramos",
+        "Liviu Andronic",
+        "Robert W. Hayden"
+      ],
+      "started": "2009-07-02T17:27:51-04:00",
+      "last_reply": "2009-07-03T02:26:40+02:00",
+      "root_message_id": "msg-a2ee9366604a"
+    },
+    {
+      "id": "thread-180d06cb8d14",
+      "subject": "purpose of list",
+      "message_count": 1,
+      "participants": [
+        "Christophe Genolini"
+      ],
+      "started": "2009-07-02T18:07:55+02:00",
+      "last_reply": "2009-07-02T18:07:55+02:00",
+      "root_message_id": "msg-180d06cb8d14"
+    },
+    {
+      "id": "thread-bb6c6df39bbc",
+      "subject": "X-Y charts with gridlines in R",
+      "message_count": 1,
+      "participants": [
+        "AbouEl-Makarim Aboueissa"
+      ],
+      "started": "2009-07-13T12:28:14-04:00",
+      "last_reply": "2009-07-13T12:28:14-04:00",
+      "root_message_id": "msg-bb6c6df39bbc"
+    },
+    {
+      "id": "thread-651530a4cfc4",
+      "subject": "X-Y charts with gridlines in R",
+      "message_count": 1,
+      "participants": [
+        "AbouEl-Makarim Aboueissa"
+      ],
+      "started": "2009-07-13T18:55:03-04:00",
+      "last_reply": "2009-07-13T18:55:03-04:00",
+      "root_message_id": "msg-651530a4cfc4"
+    },
+    {
+      "id": "thread-67281139f7ad",
+      "subject": "X-Y charts with gridlines in R",
+      "message_count": 1,
+      "participants": [
+        "Jean lobry"
+      ],
+      "started": "2009-07-14T14:03:39+02:00",
+      "last_reply": "2009-07-14T14:03:39+02:00",
+      "root_message_id": "msg-67281139f7ad"
+    },
+    {
+      "id": "thread-db74b95c807a",
+      "subject": "Workshop on Statistical methods in Epidemiology - November 2009",
+      "message_count": 1,
+      "participants": [
+        "INSEED workshops"
+      ],
+      "started": "2009-07-30T10:13:42+03:00",
+      "last_reply": "2009-07-30T10:13:42+03:00",
+      "root_message_id": "msg-db74b95c807a"
+    }
+  ]
+}

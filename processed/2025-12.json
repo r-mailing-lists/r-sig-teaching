@@ -1,0 +1,116 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2025-12",
+  "messages": [
+    {
+      "id": "msg-57a193ff8bc3",
+      "message_id": "<b87ebf7c674cb04c8dbfed8b1a7bb8e2@transmittingscience.com>",
+      "from_name": "Soledad De Esteban-Trivigno",
+      "from_email_hash": "8f86d344535c2d752798833f8aa7b9b289c3f06b2847533734edeade3b9f0d42",
+      "date": "2025-12-01T10:07:16Z",
+      "subject": "[R-sig-teaching] Online course: Host and manage your R projects with Git & GitHub",
+      "subject_clean": "Online course: Host and manage your R projects with Git & GitHub",
+      "in_reply_to": "<2e2d108dd26585893425354f95c062b8@transmittingscience.com>",
+      "references": [
+        "<5861c3ea11854f9bef9369297762940e@transmittingscience.com>",
+        "<e4390af39ae79fa26000b73c185aaf67@transmittingscience.com>",
+        "<ec99d342c71b3e75828c7a49e5ea808d@transmittingscience.com>",
+        "<0c3f5f15bc62ae230ef0d526d3a46c89@transmittingscience.com>",
+        "<c94bb0e973e603e4358493a2a567663e@transmittingscience.com>",
+        "<78a88a8c2b538843ba44337093e4a221@transmittingscience.com>",
+        "<cc01b1ab0a5320f54f7306af619b56a2@transmittingscience.com>",
+        "<97d9c68e6d12d90f8b33d7cd959a1cef@transmittingscience.com>",
+        "<81d36d91f9a991c7c0b011e4f07a29ce@transmittingscience.com>",
+        "<418ab38ab1496d3bb8c3bd3d29624f5a@transmittingscience.com>",
+        "<2e2d108dd26585893425354f95c062b8@transmittingscience.com>"
+      ],
+      "body_plain": "Dear colleagues,\n\nTransmitting Science is offering a new edition of the course \"Host and \nmanage your R projects with Git & GitHub\"\n\nCourse webpage: \nhttps://www.transmittingscience.com/courses/statistics-and-bioinformatics/host-and-manage-your-r-projects-with-git-on-github/\n\nDates and schedule: online live sessions on December 9th, 11th and 12th, \n2025.\n\nThe aim of this course is to introduce participants to version control \nwith Git and GitHub tailored for R-based projects. The course will cover \nboth the theoretical background and practical workflow of initializing a \nGit repository, branching, collaboration on GitHub, continuous \nintegration, and best practices for reproducible R projects.\n\nBy the end of the course, students will be able to:\n* Understand the principles of version control and collaboration in Git.\n* Setup and manage R projects in Git / GitHub.\n* Use branching, pull requests and merge workflows.\n* Implement continuous integration and reproducible workflows for R.\n\nInstruction will combine lectures, guided examples, and practical \nexercises.\n\nFor any question, please write to courses at transmittingscience.com\n\nBest wishes\n\nSole\n\n-- \nSoledad De Esteban-Trivigno, PhD\nDirector\nTransmitting Science\nwww.transmittingscience.com/courses\n\nBluesky @soledeesteban.bsky.social\nX @SoleDeEsteban\nOrcid: https://orcid.org/0000-0002-2049-0890\n\nUnder the provisions of current regulations on the protection of \npersonal data, Regulation (EU) 2016/679 of 27 April 2016 (GDPR), we \ninform you that personal data and email address, collected from the data \nsubject will be used by TRANSMITTING SCIENCE SL to manage communications \nthrough email and properly manage the professional relationship with \nyou. The data are obtained based on a contractual relationship or the \nlegitimate interest of the Responsible, likewise the data will be kept \nas long as there is a mutual interest for it. The data will not be \ncommunicated to third parties, except for legal obligations. We inform \nyou that you can request detailed information on the processing as well \nas exercise your rights of access, rectification, portability and \ndeletion of your data and those of limitation and opposition to its \ntreatment by contacting Calle Gardenia, 2 Urb. Can Claramunt de Piera \nCP: 08784 (Barcelona) or sending an email to \ninfo at transmittingscience.com or \nhttp://transmittingscience.com/additional-terms. If you consider that \nthe processing does not comply with current legislation, you can \ncomplain with the supervisory authority at www. aepd.es .\nConfidentiality. - The content of this communication, as well as that of \nall the attached documentation, is confidential and is addressed to the \naddressee. If you are not the recipient, we request that you indicate \nthis to us and do not communicate its contents to third parties, \nproceeding to its destruction.\n  Disclaimer of liability. - The sending of this communication does not \nimply any obligation on the part of the sender to control the absence of \nviruses, worms, Trojan horses and/or any other harmful computer program, \nand it corresponds to the recipient to have the necessary hardware and \nsoftware tools to guarantee both the security of its information system \nand the detection and elimination of harmful computer programs. \nTRANSMITTING SCIENCE SL shall not be liable.\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear colleagues,\n\nTransmitting Science is offering a new edition of the course \"Host and \nmanage your R projects with Git & GitHub\"\n\nCourse webpage: \nhttps://www.transmittingscience.com/courses/statis",
+      "thread_id": "thread-57a193ff8bc3",
+      "thread_depth": 0,
+      "month": "2025-12"
+    },
+    {
+      "id": "msg-919aa7725331",
+      "message_id": "<d2ded7381baef840f8010c8c7fcd6313@transmittingscience.com>",
+      "from_name": "Soledad De Esteban-Trivigno",
+      "from_email_hash": "8f86d344535c2d752798833f8aa7b9b289c3f06b2847533734edeade3b9f0d42",
+      "date": "2025-12-09T21:42:21Z",
+      "subject": "[R-sig-teaching] Online course: Introduction to Machine Learning in R - January 2026",
+      "subject_clean": "Online course: Introduction to Machine Learning in R - January 2026",
+      "in_reply_to": "<6eeaaa536af959accd5018f9db9c27dc@transmittingscience.com>",
+      "references": [
+        "<faa03e71816cdef3138fe282e2f79cd0@transmittingscience.com>",
+        "<e489b11e319fc8773f8c59bca73f1a97@transmittingscience.com>",
+        "<358d907ff666ea30406ebbcbef1678e4@transmittingscience.com>",
+        "<e4399e2fce76b987eb5cf60f0286036a@transmittingscience.com>",
+        "<b08abaffa1cd1c59e9ad2a3893f1d725@transmittingscience.com>",
+        "<c87f5f7707edabf2294416195d5f32d4@transmittingscience.com>",
+        "<4cc7f480fce71ee9897f090f4bba2761@transmittingscience.com>",
+        "<03277c560a6977e3e200a69912d5bcc2@transmittingscience.com>",
+        "<6eeaaa536af959accd5018f9db9c27dc@transmittingscience.com>"
+      ],
+      "body_plain": "Dear colleagues,\n\nTransmitting Science is offering a new edition of the course \n\"Introduction to Machine Learning in R\".\n\nCourse webpage: \nhttps://www.transmittingscience.com/courses/statistics-and-bioinformatics/introduction-to-machine-learning-in-r/\n\nThe aim of this course is to introduce participants to the main \ncomponents for implementing machine learning in R using the {tidymodels} \nand {tidyverse} framework packages. The course will cover both the \ntheoretical background and practical workflow of defining the problem, \ndata preparation, applying algorithms such as Extreme Gradient Boosting \nand Random Forests, and evaluating model performance.\n\nInstruction will combine lectures, guided examples, live-coding \nsessions, and practical exercises.\n\nFor any questions, please write to courses at transmittingscience.com\n\nBest regards\n\nSole\n\n-- \nSoledad De Esteban-Trivigno, PhD\nDirector\nTransmitting Science\nwww.transmittingscience.com/courses\n\nBluesky @soledeesteban.bsky.social\nX @SoleDeEsteban\nOrcid: https://orcid.org/0000-0002-2049-0890\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear colleagues,\n\nTransmitting Science is offering a new edition of the course \n\"Introduction to Machine Learning in R\".\n\nCourse webpage: \nhttps://www.transmittingscience.com/courses/statistics-and-bi",
+      "thread_id": "thread-919aa7725331",
+      "thread_depth": 0,
+      "month": "2025-12"
+    },
+    {
+      "id": "msg-5749b9f67f32",
+      "message_id": "<699815ddae0e26c2630bd99ec992853d@transmittingscience.com>",
+      "from_name": "Soledad De Esteban-Trivigno",
+      "from_email_hash": "8f86d344535c2d752798833f8aa7b9b289c3f06b2847533734edeade3b9f0d42",
+      "date": "2025-12-15T07:43:39Z",
+      "subject": "[R-sig-teaching] Online live course: Statistical Analyses with R – February 2026",
+      "subject_clean": "Online live course: Statistical Analyses with R – February 2026",
+      "in_reply_to": "<5a455b3b478d4a31f9dbb0f50248ba2f@transmittingscience.com>",
+      "references": [
+        "<982b6c76abf5bc0cc0c1cc7385c71ace@transmittingscience.com>",
+        "<57ca573486e1d9aca62e9268b7d0ba5e@transmittingscience.com>",
+        "<5a455b3b478d4a31f9dbb0f50248ba2f@transmittingscience.com>"
+      ],
+      "body_plain": "Dear colleagues,\n\nTransmitting Science is happy to announce a new edition of the course \n\"Statistical Analyses with R\".\n\nCourse webpage: \nhttps://www.transmittingscience.com/courses/statistics-and-bioinformatics/statistical-computing-for-environmental-science-with-r-and-rstudio/\n\nThe course is given in four modules covering exploratory data analysis, \nunivariate and multivariate statistical techniques and a final \ndiscussion session where students will work and discuss their projects:\n\n  \t* Module I. Programming in R and Rstudio\n  \t* Module II. Exploratory Data Analysis (EDA)\n  \t* Module III. Univariate Statistical Analysis (UniStat)\n  \t* Module IV. Multivariate Statistical Analysis (MultiStat)\n\nThis course will cover some advanced issues in most statistical \ncomputing workflows for the Life Sciences. Together with the statistical \nanalyses, we will cover several aspects of data structure and workspace \nmanagement, as well as visualisation techniques, using R and RStudio.\n\nFor any questions, please write to courses at transmittingscience.com\n\nBest wishes\n\nSole\n\n-- \nSole De Esteban-Trivigno, PhD\nDirector\nTransmitting Science\nwww.transmittingscience.com/courses\n\nBluesky @soledeesteban.bsky.social\nX @SoleDeEsteban\nOrcid: https://orcid.org/0000-0002-2049-0890\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear colleagues,\n\nTransmitting Science is happy to announce a new edition of the course \n\"Statistical Analyses with R\".\n\nCourse webpage: \nhttps://www.transmittingscience.com/courses/statistics-and-bio",
+      "thread_id": "thread-5749b9f67f32",
+      "thread_depth": 0,
+      "month": "2025-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-57a193ff8bc3",
+      "subject": "Online course: Host and manage your R projects with Git & GitHub",
+      "message_count": 1,
+      "participants": [
+        "Soledad De Esteban-Trivigno"
+      ],
+      "started": "2025-12-01T10:07:16+00:00",
+      "last_reply": "2025-12-01T10:07:16+00:00",
+      "root_message_id": "msg-57a193ff8bc3"
+    },
+    {
+      "id": "thread-919aa7725331",
+      "subject": "Online course: Introduction to Machine Learning in R - January 2026",
+      "message_count": 1,
+      "participants": [
+        "Soledad De Esteban-Trivigno"
+      ],
+      "started": "2025-12-09T21:42:21+00:00",
+      "last_reply": "2025-12-09T21:42:21+00:00",
+      "root_message_id": "msg-919aa7725331"
+    },
+    {
+      "id": "thread-5749b9f67f32",
+      "subject": "Online live course: Statistical Analyses with R – February 2026",
+      "message_count": 1,
+      "participants": [
+        "Soledad De Esteban-Trivigno"
+      ],
+      "started": "2025-12-15T07:43:39+00:00",
+      "last_reply": "2025-12-15T07:43:39+00:00",
+      "root_message_id": "msg-5749b9f67f32"
+    }
+  ]
+}

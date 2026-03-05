@@ -1,0 +1,231 @@
+From hayden at mv.mv.com  Fri Feb  9 18:50:16 2007
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Fri, 9 Feb 2007 12:50:16 -0500 (EST)
+Subject: [R-sig-teaching] Rcmdr
+Message-ID: <20070209175016.46275.qmail@mv.mv.com>
+
+I am finding many but not all menu choices greyed out in Rcmdr --
+two-sample t-test for independent samples, for example.  I can do the
+test from the command line but do not understand why I can't do it
+from the menu.
+
+ _______
+|   ^  | 		    
+|     /  		    Robert W. Hayden
+|    |   		    in the old library
+|    |   		    212 Main Street
+|   /    	            P. O. Box 450
+|  |     		  ^ North Troy, VT 05859
+L__L			    (802) 988-2587
+                            http://statland.org/      
+Map of VT                   bob at statland.org
+
+Communications sent to Plymouth State will not reach me.
+
+
+
+From jfox at mcmaster.ca  Sat Feb 10 02:27:01 2007
+From: jfox at mcmaster.ca (John Fox)
+Date: Fri, 09 Feb 2007 20:27:01 -0500
+Subject: [R-sig-teaching] Rcmdr
+In-Reply-To: <20070209175016.46275.qmail@mv.mv.com>
+Message-ID: <web-161573863@cgpsrv2.cis.mcmaster.ca>
+
+Dear Robert,
+
+The Rcmdr only activates menu items that are applicable to the current
+data set. In the case of a two-sample t-test, the data set must include
+at least one two-level factor and one numeric variable. Does that
+explain the behaviour you noted?
+
+I hope this helps,
+ John
+
+On Fri, 9 Feb 2007 12:50:16 -0500 (EST)
+ "Robert W. Hayden" <hayden at mv.mv.com> wrote:
+> I am finding many but not all menu choices greyed out in Rcmdr --
+> two-sample t-test for independent samples, for example.  I can do the
+> test from the command line but do not understand why I can't do it
+> from the menu.
+> 
+>  _______
+> |   ^  | 		    
+> |     /  		    Robert W. Hayden
+> |    |   		    in the old library
+> |    |   		    212 Main Street
+> |   /    	            P. O. Box 450
+> |  |     		  ^ North Troy, VT 05859
+> L__L			    (802) 988-2587
+>                             http://statland.org/      
+> Map of VT                   bob at statland.org
+> 
+> Communications sent to Plymouth State will not reach me.
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+--------------------------------
+John Fox
+Department of Sociology
+McMaster University
+Hamilton, Ontario, Canada
+http://socserv.mcmaster.ca/jfox/
+
+
+
+From hayden at mv.mv.com  Sat Feb 10 02:49:49 2007
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Fri, 9 Feb 2007 20:49:49 -0500 (EST)
+Subject: [R-sig-teaching] Rcmdr
+Message-ID: <20070210014949.3096.qmail@mv.mv.com>
+
+
+Thanks.  I guess what was missing was an indication of how Rcmdr
+wanted the data laid out.  Mine was in two columns, and R is perfectly
+happy with this if I do "t.test(col1,col2)" so the test is certainly
+"applicable to the...data".  The catch in Rcmdr is that, because the
+menu item is greyed out, you can't get to the dialog box that asks for
+data in the format you mentioned, so you can't tell that Rcmdr is
+fussier than R.  This should not be a problem as long as I include it
+in the documentation for my students.
+
+PS
+
+I share your preference for how the data SHOULD be laid out, but that
+was not how the data I had was laid out, and I had no trouble with it
+in R and was curious that I could not reproduce my analysis in Rcmdr.
+Thanks again for your explanation.
+
+Forwarded message:  From: "John Fox" <jfox at mcmaster.ca>
+> 
+> Dear Robert,
+> 
+> The Rcmdr only activates menu items that are applicable to the current
+> data set. In the case of a two-sample t-test, the data set must include
+> at least one two-level factor and one numeric variable. Does that
+> explain the behaviour you noted?
+> 
+> I hope this helps,
+>  John
+
+
+
+ _______
+|   ^  | 		    
+|     /  		    Robert W. Hayden
+|    |   		    in the old library
+|    |   		    212 Main Street
+|   /    	            P. O. Box 450
+|  |     		  ^ North Troy, VT 05859
+L__L			    (802) 988-2587
+                            http://statland.org/      
+Map of VT                   bob at statland.org
+
+Communications sent to Plymouth State will not reach me.
+
+
+
+From jfox at mcmaster.ca  Sat Feb 10 03:08:47 2007
+From: jfox at mcmaster.ca (John Fox)
+Date: Fri, 09 Feb 2007 21:08:47 -0500
+Subject: [R-sig-teaching] Rcmdr
+In-Reply-To: <20070210014949.3096.qmail@mv.mv.com>
+Message-ID: <web-161576872@cgpsrv2.cis.mcmaster.ca>
+
+Dear Robert,
+
+OK -- I see the problem. As a general matter, the Rcmdr is structured
+around rectangular data sets. This format of the input for t.test()
+only works with a rectangular data set if both groups have the same
+number of observations.
+
+Regards,
+ John
+
+On Fri, 9 Feb 2007 20:49:49 -0500 (EST)
+ "Robert W. Hayden" <hayden at mv.mv.com> wrote:
+> 
+> Thanks.  I guess what was missing was an indication of how Rcmdr
+> wanted the data laid out.  Mine was in two columns, and R is
+> perfectly
+> happy with this if I do "t.test(col1,col2)" so the test is certainly
+> "applicable to the...data".  The catch in Rcmdr is that, because the
+> menu item is greyed out, you can't get to the dialog box that asks
+> for
+> data in the format you mentioned, so you can't tell that Rcmdr is
+> fussier than R.  This should not be a problem as long as I include it
+> in the documentation for my students.
+> 
+> PS
+> 
+> I share your preference for how the data SHOULD be laid out, but that
+> was not how the data I had was laid out, and I had no trouble with it
+> in R and was curious that I could not reproduce my analysis in Rcmdr.
+> Thanks again for your explanation.
+> 
+> Forwarded message:  From: "John Fox" <jfox at mcmaster.ca>
+> > 
+> > Dear Robert,
+> > 
+> > The Rcmdr only activates menu items that are applicable to the
+> current
+> > data set. In the case of a two-sample t-test, the data set must
+> include
+> > at least one two-level factor and one numeric variable. Does that
+> > explain the behaviour you noted?
+> > 
+> > I hope this helps,
+> >  John
+> 
+> 
+> 
+>  _______
+> |   ^  | 		    
+> |     /  		    Robert W. Hayden
+> |    |   		    in the old library
+> |    |   		    212 Main Street
+> |   /    	            P. O. Box 450
+> |  |     		  ^ North Troy, VT 05859
+> L__L			    (802) 988-2587
+>                             http://statland.org/      
+> Map of VT                   bob at statland.org
+> 
+> Communications sent to Plymouth State will not reach me.
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+--------------------------------
+John Fox
+Department of Sociology
+McMaster University
+Hamilton, Ontario, Canada
+http://socserv.mcmaster.ca/jfox/
+
+
+
+From sloiseau at limsi.fr  Fri Mar 23 22:03:33 2007
+From: sloiseau at limsi.fr (sloiseau at limsi.fr)
+Date: Fri, 23 Mar 2007 22:03:33 +0100 (CET)
+Subject: [R-sig-teaching] Graphical of vector, matrice, list, etc.
+Message-ID: <4260.82.123.187.151.1174683813.squirrel@keo.limsi.fr>
+
+Hi,
+
+Teaching the data structure of R, I often use graphical representation of
+structure such as vector or matrice, with the index and the names along
+the dimension, etc., in order to show graphically selection such as:
+
+    matrice[c(1, 2), c("col1", "col2")]
+
+In order to beautify my graphical representation, I'm wondering if someone
+as developped a function in order to draw a structure according to the
+structure received as input.
+
+Best,
+Sylvain Loiseau
+
+
+

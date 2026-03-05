@@ -1,0 +1,258 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2012-11",
+  "messages": [
+    {
+      "id": "msg-77744d7ea066",
+      "message_id": "<CABvvk7WYLAn9iQs69-EyaWksXTvdnv-u1Sta5vvQxKUpdB_tYw@mail.gmail.com>",
+      "from_name": "Nguyen Chanh Tu",
+      "from_email_hash": "0b9c2dbe22f7b38ecd8096e7f002f66f867bc7c415b18294d5c9b6db7f43a084",
+      "date": "2012-11-19T09:09:25+07:00",
+      "subject": "[R-sig-teaching] help for beginner",
+      "subject_clean": "help for beginner",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121119/8a25e3d5/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121119/8a25e3d5/attachment.pl>",
+      "thread_id": "thread-77744d7ea066",
+      "thread_depth": 0,
+      "month": "2012-11"
+    },
+    {
+      "id": "msg-80a203f8133b",
+      "message_id": "<0d3467c93bdbdbdd5159a644294595b2@reed.edu>",
+      "from_name": "Albyn Jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2012-11-18T20:23:33-08:00",
+      "subject": "[R-sig-teaching] help for beginner",
+      "subject_clean": "help for beginner",
+      "in_reply_to": "<CABvvk7WYLAn9iQs69-EyaWksXTvdnv-u1Sta5vvQxKUpdB_tYw@mail.gmail.com>",
+      "references": [
+        "<CABvvk7WYLAn9iQs69-EyaWksXTvdnv-u1Sta5vvQxKUpdB_tYw@mail.gmail.com>"
+      ],
+      "body_plain": "Have you looked at the teaching resources on the CRAN website?\nIf not, take a look at the \"Contributed\" link under Documentation.\nThere are also numerous published texts that you might find helpful,\neg as sources of examples.  Many of the help files for specific \nfunctions\nhave examples, and R has numerous datasets, both in the base package \nand in\nother packages.\n\nalbyn\n\n\nOn 2012-11-18 18:09, Nguyen Chanh Tu wrote:\n> Dear all,\n> I am going to teach Probability and Statistics for engineering \n> students. I\n> probably use the book \"Probability and Statistics for engineeriing \n> and the\n> sciences\" by J. L. Devore. And I am going to use R for the course.\n> This is the first time for me to try to use R. (Before I just use \n> Excel).\n> Could you please be so kind to help me for anything concerning to a\n> beginner, especially:\n> 1) Which packages should I install with the standard  R?\n> 2) Can I find some where demo files of teaching or  script files \n> concerning\n> to the course.\n> 3) If there is any help already had in the forum about these starting\n> steps, please point out to me such that I can read more.\n> 4) Is there anyone using the same textbook or similar one of mine \n> such that\n> we can exchange teaching experients on the course.\n>\n> Thank you very much in advances. Looking forward to hearing from you.\n> Sincerely,\n> Nguyen\n>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Have you looked at the teaching resources on the CRAN website?\nIf not, take a look at the \"Contributed\" link under Documentation.\nThere are also numerous published texts that you might find helpful,\ne",
+      "thread_id": "thread-77744d7ea066",
+      "thread_depth": 1,
+      "month": "2012-11"
+    },
+    {
+      "id": "msg-bf277527fad5",
+      "message_id": "<CCCFA504.46F4%fer@anadolu.edu.tr>",
+      "from_name": "Fikret ER",
+      "from_email_hash": "dae6c2d63b89060b4684c19173642b3c90fc16395e6afc09edc0460f2a2ebb05",
+      "date": "2012-11-19T07:14:25Z",
+      "subject": "[R-sig-teaching] help for beginner",
+      "subject_clean": "help for beginner",
+      "in_reply_to": "<0d3467c93bdbdbdd5159a644294595b2@reed.edu>",
+      "references": [],
+      "body_plain": "Hi\nThere are few things that you can do,\n\n\n1. Install the package \"TeachingDemos\" by Greg Snow,\n\n2. Visit the Rwiki page, http://rwiki.sciviews.org/doku.php\n\n3. May visit the page http://www.cyclismo.org/tutorial/R/probability.html\n\n4. I also find R Journal very useful, http://journal.r-project.org\n\n5. For Introductory Statistics, the book \"Introductory Statistics with R\"\nby Peter Dalgaard is excellent choice,\n\n6. May read the slides of S. Weisberg,\nhttp://www.r-project.org/user-2006/Slides/Fox+Weisberg.pdf\n\n7. Visit the page here,\nhttp://www.r-bloggers.com/teaching-with-r-the-tools/\n\n\nI hope these will help,\n\nFikret ER\nAnadolu University\nEskisehir\nTurkey\n\nFer at anadolu.edu.tr\n\n\n\n\n\nOn 11/19/12 6:23 AM, \"Albyn Jones\" <jones at reed.edu> wrote:\n\n>Have you looked at the teaching resources on the CRAN website?\n>If not, take a look at the \"Contributed\" link under Documentation.\n>There are also numerous published texts that you might find helpful,\n>eg as sources of examples.  Many of the help files for specific\n>functions\n>have examples, and R has numerous datasets, both in the base package\n>and in\n>other packages.\n>\n>albyn\n>\n>\n>On 2012-11-18 18:09, Nguyen Chanh Tu wrote:\n>> Dear all,\n>> I am going to teach Probability and Statistics for engineering\n>> students. I\n>> probably use the book \"Probability and Statistics for engineeriing\n>> and the\n>> sciences\" by J. L. Devore. And I am going to use R for the course.\n>> This is the first time for me to try to use R. (Before I just use\n>> Excel).\n>> Could you please be so kind to help me for anything concerning to a\n>> beginner, especially:\n>> 1) Which packages should I install with the standard  R?\n>> 2) Can I find some where demo files of teaching or  script files\n>> concerning\n>> to the course.\n>> 3) If there is any help already had in the forum about these starting\n>> steps, please point out to me such that I can read more.\n>> 4) Is there anyone using the same textbook or similar one of mine\n>> such that\n>> we can exchange teaching experients on the course.\n>>\n>> Thank you very much in advances. Looking forward to hearing from you.\n>> Sincerely,\n>> Nguyen\n>>\n>> \t[[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>_______________________________________________\n>R-sig-teaching at r-project.org mailing list\n>https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Hi\nThere are few things that you can do,\n\n\n1. Install the package \"TeachingDemos\" by Greg Snow,\n\n2. Visit the Rwiki page, http://rwiki.sciviews.org/doku.php\n\n3. May visit the page http://www.cyclismo.",
+      "thread_id": "thread-77744d7ea066",
+      "thread_depth": 2,
+      "month": "2012-11"
+    },
+    {
+      "id": "msg-ace8caf4102e",
+      "message_id": "<7400AD12-326F-4C51-A212-EF869E852371@calvin.edu>",
+      "from_name": "Randall Pruim",
+      "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
+      "date": "2012-11-19T08:40:59-05:00",
+      "subject": "[R-sig-teaching] help for beginner",
+      "subject_clean": "help for beginner",
+      "in_reply_to": "<CABvvk7WYLAn9iQs69-EyaWksXTvdnv-u1Sta5vvQxKUpdB_tYw@mail.gmail.com>",
+      "references": [
+        "<CABvvk7WYLAn9iQs69-EyaWksXTvdnv-u1Sta5vvQxKUpdB_tYw@mail.gmail.com>"
+      ],
+      "body_plain": "I haven't taught from that book in a while, but here are some tips:\n\n1) If the 7th edition is still current, grab the Devore7 package which contains many of the data sets (sometimes awkwardly formatted and poorly labeled, but at least they are there.)\n\n2) Choose a graphics system.  I recommend lattice, but I really recommend that you don't mix and match.  One advantage of lattice is that it teaches the formula interface you will want to use for linear models, so students will be a step ahead when you get there.\n\n3) If you go with lattice, I suggest you also give the mosaic package a try.  It adds other functionality via a formula interface (e.g. mean(age ~ sex, data=foo) gives mean ages broken down by sex) and simplifies some important tasks, like adding a linear model fit to a plot or evaluating the fit at specific values of the explanatory variables.\n\n4) You might also take a look at the minimalR vignette in the mosaic package.  It was designed for a slightly different course, but tries to give a small but sufficient set of commands for teaching introductory statistics using lattice and mosaic.  I'd encourage you to find or create something like this for your students.  (The target audience for the current vignette is really faculty.)\n\n5) Less volume, more creativity.\n\nTry to keep the number of different R commands you teach to a minimum.  Choose them wisely and choose tools that play well together.  That makes it easier for the students to master the skills they really need.  R often provides several ways to skin a cat, but your students only need one way.\n\nHave fun.\n\n---rjp\n\n\n\n\nOn Nov 18, 2012, at 9:09 PM, Nguyen Chanh Tu wrote:\n\n> Dear all,\n> I am going to teach Probability and Statistics for engineering students. I\n> probably use the book \"Probability and Statistics for engineeriing and the\n> sciences\" by J. L. Devore. And I am going to use R for the course.\n> This is the first time for me to try to use R. (Before I just use Excel).\n> Could you please be so kind to help me for anything concerning to a\n> beginner, especially:\n> 1) Which packages should I install with the standard  R?\n> 2) Can I find some where demo files of teaching or  script files concerning\n> to the course.\n> 3) If there is any help already had in the forum about these starting\n> steps, please point out to me such that I can read more.\n> 4) Is there anyone using the same textbook or similar one of mine such that\n> we can exchange teaching experients on the course.\n> \n> Thank you very much in advances. Looking forward to hearing from you.\n> Sincerely,\n> Nguyen\n> \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "I haven't taught from that book in a while, but here are some tips:\n\n1) If the 7th edition is still current, grab the Devore7 package which contains many of the data sets (sometimes awkwardly formatte",
+      "thread_id": "thread-77744d7ea066",
+      "thread_depth": 1,
+      "month": "2012-11"
+    },
+    {
+      "id": "msg-2ccd78d666f4",
+      "message_id": "<CADcgpJfB=0pRp5wjF3uD_DVTvT_PbzuuXiCr59=YXzz2wvcAdQ@mail.gmail.com>",
+      "from_name": "Partha Sinha",
+      "from_email_hash": "1e66b8d65130c17ca4566beaf97f637adbf5b2295567eef7f689b1e6ded6f4e9",
+      "date": "2012-11-19T20:13:11+05:30",
+      "subject": "[R-sig-teaching] Pl Suggest",
+      "subject_clean": "Pl Suggest",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All\nI am a stats newbie and have a basic stats question;\ni have y as dependent variable and x1 to x5 as dependent variable.\nI need to know which variables x1 to x5 are actually affecting y. How\ndo I find out?\ncan an example be given which makes things clear (if possible)?\nThanks\nParth",
+      "body_snippet": "Dear All\nI am a stats newbie and have a basic stats question;\ni have y as dependent variable and x1 to x5 as dependent variable.\nI need to know which variables x1 to x5 are actually affecting y. How\nd",
+      "thread_id": "thread-2ccd78d666f4",
+      "thread_depth": 0,
+      "month": "2012-11"
+    },
+    {
+      "id": "msg-73ccbf88899a",
+      "message_id": "<20121119164003.GB7117@reed.edu>",
+      "from_name": "Albyn Jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2012-11-19T08:40:03-08:00",
+      "subject": "[R-sig-teaching] Pl Suggest",
+      "subject_clean": "Pl Suggest",
+      "in_reply_to": "<CADcgpJfB=0pRp5wjF3uD_DVTvT_PbzuuXiCr59=YXzz2wvcAdQ@mail.gmail.com>",
+      "references": [
+        "<CADcgpJfB=0pRp5wjF3uD_DVTvT_PbzuuXiCr59=YXzz2wvcAdQ@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Parth\n\nThis is a forum for the discussion of the use of R in teaching\nstatistics, not for giving statistical advice.  \n\nIt sounds like you need to take a statistics course.\n\nalbyn\n\nOn Mon, Nov 19, 2012 at 08:13:11PM +0530, Partha Sinha wrote:\n> Dear All\n> I am a stats newbie and have a basic stats question;\n> i have y as dependent variable and x1 to x5 as dependent variable.\n> I need to know which variables x1 to x5 are actually affecting y. How\n> do I find out?\n> can an example be given which makes things clear (if possible)?\n> Thanks\n> Parth\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n\n-- \nAlbyn Jones\nReed College\njones at reed.edu",
+      "body_snippet": "Dear Parth\n\nThis is a forum for the discussion of the use of R in teaching\nstatistics, not for giving statistical advice.  \n\nIt sounds like you need to take a statistics course.\n\nalbyn\n\nOn Mon, Nov 19",
+      "thread_id": "thread-2ccd78d666f4",
+      "thread_depth": 1,
+      "month": "2012-11"
+    },
+    {
+      "id": "msg-de94be80346b",
+      "message_id": "<20121119181709.44D6E7198A06@mail89.csoft.net>",
+      "from_name": "Bob",
+      "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
+      "date": "2012-11-19T13:17:09-05:00",
+      "subject": "[R-sig-teaching]  help for beginner",
+      "subject_clean": "help for beginner",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Almost all the R documentation seems to me to be written for\nstatistician/programmers and is way over the heads of most students.\nFor that reason I made my own materials for my online classes and they\nare at\n\nhttp://statland.org/Software_Help/R/Rhome.htm\n\nFor the teacher, the book by John Verzani gives detailed coverage\nrelevant to the topics in a first course.  There is a free, older and\nshorter version at CRAN last I knew which might be a useful reference\nfor students.  I have found these the most readable for beginners\nthough they tend to tell you every possible thing you can do and every\nway you can do it which can be overwhelming.  \n\nYou might also look at some of the alternative interfaces to R.  R\nCommander is a GUI interface that might make life easier, but last\ntime I tried it the installation was a nightmare taking hours as\ndependencies of dependencies of dependencies downlaoded.  I made (but\ndid not get to test before I retired) a bootable Linux distribution\nwith R and all the depnedencies I wanted preinstalled.  I don't know\nif it is possible to copy an entire Windows R installation to a CD and\nhand out copies.  Does R get entangled with the Windows registry or\nput files in the Windows directory?  It's not that the install is all\nthat bad but I find it way too bad to be a student's first experience\nwith R.  It may end with R having 2.99999 strikes against it;-(  It's\na far cry from most Windows installs.\n\nForwarded message:\n> From r-sig-teaching-bounces at r-project.org Sun Nov 18 21:10:26 2012\n> From: Nguyen Chanh Tu <nctu2006 at gmail.com>\n> \n> Dear all,\n> I am going to teach Probability and Statistics for engineering students. I\n> probably use the book \"Probability and Statistics for engineeriing and the\n> sciences\" by J. L. Devore. And I am going to use R for the course.\n> This is the first time for me to try to use R. (Before I just use Excel).\n> Could you please be so kind to help me for anything concerning to a\n> beginner, especially:\n> 1) Which packages should I install with the standard  R?\n> 2) Can I find some where demo files of teaching or  script files concerning\n> to the course.\n> 3) If there is any help already had in the forum about these starting\n> steps, please point out to me such that I can read more.\n> 4) Is there anyone using the same textbook or similar one of mine such that\n> we can exchange teaching experients on the course.\n> \n> Thank you very much in advances. Looking forward to hearing from you.\n> Sincerely,\n> Nguyen\n> \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n> \n\nSent from my nine-year-old Dell GX-260 running Mepis Linux 8.0\n------->  First-time AP Stats. teacher?  Help is on the way! See\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n      _\n     | |          Robert W. Hayden\n     | |          142 Main Street\n    /  |          Apartment 104\n   |   |          Jaffrey, New Hampshire 03452  USA\n   |   |          email: bob@ the site below\n  /    |          website: http://statland.org\n | x   /          phone: (603) 532-7224 (home)\n ''''''",
+      "body_snippet": "Almost all the R documentation seems to me to be written for\nstatistician/programmers and is way over the heads of most students.\nFor that reason I made my own materials for my online classes and they",
+      "thread_id": "thread-de94be80346b",
+      "thread_depth": 0,
+      "month": "2012-11"
+    },
+    {
+      "id": "msg-ab32319b6bf8",
+      "message_id": "<1353352271.93008.YahooMailNeo@web140604.mail.bf1.yahoo.com>",
+      "from_name": "Artur L F Machado",
+      "from_email_hash": "be22de5269a89fe2201cb08b7482545ce0f8eed76eeb4c30e10df1e96bd70eea",
+      "date": "2012-11-19T11:11:11-08:00",
+      "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 57, Issue 1 - HSAUR2",
+      "subject_clean": "R-sig-teaching Digest, Vol 57, Issue 1 - HSAUR2",
+      "in_reply_to": "<mailman.7.1353322803.9000.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.7.1353322803.9000.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121119/01702534/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121119/01702534/attachment.pl>",
+      "thread_id": "thread-ab32319b6bf8",
+      "thread_depth": 0,
+      "month": "2012-11"
+    },
+    {
+      "id": "msg-fc0d49f6aafb",
+      "message_id": "<CA+srNj5BMLEhfqt8BMEBLknzQix76pVq+wXmGD3OaSeJeAVgQQ@mail.gmail.com>",
+      "from_name": "Paula Young",
+      "from_email_hash": "57a4fb9a604414e5df5b5d7d1cb70d0b433edcc8c45b386950fd1ca7926d8a28",
+      "date": "2012-11-19T16:15:49-05:00",
+      "subject": "[R-sig-teaching] help for beginner (#Bob@statland's reply)",
+      "subject_clean": "help for beginner (#Bob@statland's reply)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121119/aa5da117/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121119/aa5da117/attachment.pl>",
+      "thread_id": "thread-fc0d49f6aafb",
+      "thread_depth": 0,
+      "month": "2012-11"
+    },
+    {
+      "id": "msg-6d95487a9568",
+      "message_id": "<74F4AF77-25B8-4E7D-982B-F640928C6975@calvin.edu>",
+      "from_name": "Randall Pruim",
+      "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
+      "date": "2012-11-19T16:22:58-05:00",
+      "subject": "[R-sig-teaching] help for beginner (#Bob@statland's reply)",
+      "subject_clean": "help for beginner (#Bob@statland's reply)",
+      "in_reply_to": "<CA+srNj5BMLEhfqt8BMEBLknzQix76pVq+wXmGD3OaSeJeAVgQQ@mail.gmail.com>",
+      "references": [
+        "<CA+srNj5BMLEhfqt8BMEBLknzQix76pVq+wXmGD3OaSeJeAVgQQ@mail.gmail.com>"
+      ],
+      "body_plain": "If you want to get students up and running in R with zero install headaches (on their end), set up an RStudio server.  Students simply log in like they do with facebook and have their R session resume where they left off.  With a little R savvy on your end you can pre-install and pre-load any packages you like, so students don't need to mess with any of that either.  Students who want, can also install the desktop/laptop version if they want to be independent of the internet, but most of my students like having R in a web setting.\n\n---rjp\n\n\nOn Nov 19, 2012, at 4:15 PM, Paula Young wrote:\n\n> I can answer one of your questions, Bob.\n> \n> R does *not* get entangled with  Windows. I've run it from the same flash\n> drive on a Windows, a MacOS and a Linux-based machine.\n> \n> PGY\n> \n> ---\n> Dr. Paula Grafton Young\n> Associate Professor of Mathematics\n> Chair, Curriculum Committee, 2011 - 2013\n> Chair, Strategic Planning Steering Committee, 2012 - 2013\n> paula.young at salem.edu\n> 336.721.2747 (O)\n> 336.721.2653 (F)\n> \n> <http://www.facebook.com/SalemCollege><http://www.twitter.com/SalemCollege>\n> \n> \n> \n> \n> On Mon, Nov 19, 2012 at 1:17 PM, Bob <bob at statland.org> wrote:\n> \n>> \n>> Almost all the R documentation seems to me to be written for\n>> statistician/programmers and is way over the heads of most students.\n>> For that reason I made my own materials for my online classes and they\n>> are at\n>> \n>> http://statland.org/Software_Help/R/Rhome.htm\n>> \n>> For the teacher, the book by John Verzani gives detailed coverage\n>> relevant to the topics in a first course.  There is a free, older and\n>> shorter version at CRAN last I knew which might be a useful reference\n>> for students.  I have found these the most readable for beginners\n>> though they tend to tell you every possible thing you can do and every\n>> way you can do it which can be overwhelming.\n>> \n>> You might also look at some of the alternative interfaces to R.  R\n>> Commander is a GUI interface that might make life easier, but last\n>> time I tried it the installation was a nightmare taking hours as\n>> dependencies of dependencies of dependencies downlaoded.  I made (but\n>> did not get to test before I retired) a bootable Linux distribution\n>> with R and all the depnedencies I wanted preinstalled.  I don't know\n>> if it is possible to copy an entire Windows R installation to a CD and\n>> hand out copies.  Does R get entangled with the Windows registry or\n>> put files in the Windows directory?  It's not that the install is all\n>> that bad but I find it way too bad to be a student's first experience\n>> with R.  It may end with R having 2.99999 strikes against it;-(  It's\n>> a far cry from most Windows installs.\n>> \n>> Forwarded message:\n>>> From r-sig-teaching-bounces at r-project.org Sun Nov 18 21:10:26 2012\n>>> From: Nguyen Chanh Tu <nctu2006 at gmail.com>\n>>> \n>>> Dear all,\n>>> I am going to teach Probability and Statistics for engineering students.\n>> I\n>>> probably use the book \"Probability and Statistics for engineeriing and\n>> the\n>>> sciences\" by J. L. Devore. And I am going to use R for the course.\n>>> This is the first time for me to try to use R. (Before I just use Excel).\n>>> Could you please be so kind to help me for anything concerning to a\n>>> beginner, especially:\n>>> 1) Which packages should I install with the standard  R?\n>>> 2) Can I find some where demo files of teaching or  script files\n>> concerning\n>>> to the course.\n>>> 3) If there is any help already had in the forum about these starting\n>>> steps, please point out to me such that I can read more.\n>>> 4) Is there anyone using the same textbook or similar one of mine such\n>> that\n>>> we can exchange teaching experients on the course.\n>>> \n>>> Thank you very much in advances. Looking forward to hearing from you.\n>>> Sincerely,\n>>> Nguyen\n>>> \n>>>      [[alternative HTML version deleted]]\n>>> \n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>> \n>>> \n>> \n>> Sent from my nine-year-old Dell GX-260 running Mepis Linux 8.0\n>> ------->  First-time AP Stats. teacher?  Help is on the way! See\n>> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n>>      _\n>>     | |          Robert W. Hayden\n>>     | |          142 Main Street\n>>    /  |          Apartment 104\n>>   |   |          Jaffrey, New Hampshire 03452  USA\n>>   |   |          email: bob@ the site below\n>>  /    |          website: http://statland.org\n>> | x   /          phone: (603) 532-7224 (home)\n>> ''''''\n>> \n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>> \n> \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "If you want to get students up and running in R with zero install headaches (on their end), set up an RStudio server.  Students simply log in like they do with facebook and have their R session resume",
+      "thread_id": "thread-fc0d49f6aafb",
+      "thread_depth": 1,
+      "month": "2012-11"
+    },
+    {
+      "id": "msg-7a0859798838",
+      "message_id": "<50B660F4.3080209@atsu.edu>",
+      "from_name": "Robert Baer",
+      "from_email_hash": "ddd5677bd41ce9ccb8239fe4a8cc1ce533091d0e3a66b906fbf82801b2b76509",
+      "date": "2012-11-28T13:07:32-06:00",
+      "subject": "[R-sig-teaching] help for beginner",
+      "subject_clean": "help for beginner",
+      "in_reply_to": "<CABvvk7WYLAn9iQs69-EyaWksXTvdnv-u1Sta5vvQxKUpdB_tYw@mail.gmail.com>",
+      "references": [
+        "<CABvvk7WYLAn9iQs69-EyaWksXTvdnv-u1Sta5vvQxKUpdB_tYw@mail.gmail.com>"
+      ],
+      "body_plain": "On 11/18/2012 8:09 PM, Nguyen Chanh Tu wrote:\n> Dear all,\n> I am going to teach Probability and Statistics for engineering students. I\n> probably use the book \"Probability and Statistics for engineeriing and the\n> sciences\" by J. L. Devore. And I am going to use R for the course.\n> This is the first time for me to try to use R. (Before I just use Excel).\n> Could you please be so kind to help me for anything concerning to a\n> beginner, especially:\n> 1) Which packages should I install with the standard  R?\n> 2) Can I find some where demo files of teaching or  script files concerning\n> to the course.\n> 3) If there is any help already had in the forum about these starting\n> steps, please point out to me such that I can read more.\n> 4) Is there anyone using the same textbook or similar one of mine such that\n> we can exchange teaching experients on the course.\n>\n> Thank you very much in advances. Looking forward to hearing from you.\n> Sincerely,\n> Nguyen\n>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\nI have used R to teach biomedical science students for several years, \nand although not without some frustrations, students catch on fairly \nquickly.  I don't have experience with engineering students, so their \nneeds may differ.\n\nMy approach is to spend a couple of class periods at the beginning \nmaking sure that the students can enter a data set in one of several \nways, for example, using read.table(), scan(), and using the c() with \nassignment.  We spend time with the concept of a vector and a dataframe \nand the difference in how a one column dataframe and a vector are \nprinted at the command prompt.  We talk about how to move back and forth \nbetween vectors and dataframes.  We talk about how to change one value \nin a mistyped vector value and how to change one value in a dataframe \ncolumn and row.  I do this despite the fact that virtually all the REAL \ndatasets we use are available electronically because it puts the student \nin control of sometimes \"assumed\" ideas of R users.  I also provide \nstudents with a two-sided cheat-sheet of the most common commands that I \nthink we will use.  I invite them to help me keep it current.  I \nregularly devote class time to doing live demonstrations on \"sample \nproblems\" similar to those I want them to be able to use R for.  My \nstudents have computers and can work along when we do this.  Time spent \nin these endeavors seems far more important than it would using an Excel \ninterface.\n\nWe also talk about the difference between the so-called \"long\" and \n\"wide\" formats of dataframes and introduce them to working with factors \nand the very strange (to the newcomer) as.numeric(as.character(factvar)) \nconstruction.  I am frequently surprised at how much more difficult \nthese ideas of data layout are than the statistics or R commands \nthemselves are for the students. Yet, this skill-set is highly \ntransferable across programs they might encounter in the future.  I \nunashamedly look at the help files for commands we are using (I do this \nduring class) even when we are not doing anything too tricky.  This role \nmodels the most basic R support for the students, right from the start.\n\nSomeone already mentioned R Commander which I only introduce to the \nstudents when we get to ANOVA and linear regression.  By then they have \na couple of weeks getting used to the feel of a command line interface.  \nMost of my students rarely look back from here, but for engineering \nstudents R is often a useful free substitute for Matlab capabilities, \nand so the more fundamental skills you can convey to the students, the \nbetter off they will be (in my opinion).\n\nAnother very nice GUI interface for R is Deducer, particularly when used \nin conjunction with JGR.  If all you want to do is to teach \"basic \nprobability and statistics\", this might be another way to go.\n\nRob Baer\n\n-- \n__________________\nRobert W. Baer, Ph.D.\nProfessor of Physiology\nKirksille College of Osteopathic Medicine\nA. T. Still University of Health Sciences\nKirksville, MO 63501 USA",
+      "body_snippet": "On 11/18/2012 8:09 PM, Nguyen Chanh Tu wrote:\n> Dear all,\n> I am going to teach Probability and Statistics for engineering students. I\n> probably use the book \"Probability and Statistics for engineeri",
+      "thread_id": "thread-77744d7ea066",
+      "thread_depth": 1,
+      "month": "2012-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-77744d7ea066",
+      "subject": "help for beginner",
+      "message_count": 5,
+      "participants": [
+        "Albyn Jones",
+        "Fikret ER",
+        "Nguyen Chanh Tu",
+        "Randall Pruim",
+        "Robert Baer"
+      ],
+      "started": "2012-11-19T09:09:25+07:00",
+      "last_reply": "2012-11-28T13:07:32-06:00",
+      "root_message_id": "msg-77744d7ea066"
+    },
+    {
+      "id": "thread-ab32319b6bf8",
+      "subject": "R-sig-teaching Digest, Vol 57, Issue 1 - HSAUR2",
+      "message_count": 1,
+      "participants": [
+        "Artur L F Machado"
+      ],
+      "started": "2012-11-19T11:11:11-08:00",
+      "last_reply": "2012-11-19T11:11:11-08:00",
+      "root_message_id": "msg-ab32319b6bf8"
+    },
+    {
+      "id": "thread-de94be80346b",
+      "subject": "help for beginner",
+      "message_count": 1,
+      "participants": [
+        "Bob"
+      ],
+      "started": "2012-11-19T13:17:09-05:00",
+      "last_reply": "2012-11-19T13:17:09-05:00",
+      "root_message_id": "msg-de94be80346b"
+    },
+    {
+      "id": "thread-fc0d49f6aafb",
+      "subject": "help for beginner (#Bob@statland's reply)",
+      "message_count": 2,
+      "participants": [
+        "Paula Young",
+        "Randall Pruim"
+      ],
+      "started": "2012-11-19T16:15:49-05:00",
+      "last_reply": "2012-11-19T16:22:58-05:00",
+      "root_message_id": "msg-fc0d49f6aafb"
+    },
+    {
+      "id": "thread-2ccd78d666f4",
+      "subject": "Pl Suggest",
+      "message_count": 2,
+      "participants": [
+        "Albyn Jones",
+        "Partha Sinha"
+      ],
+      "started": "2012-11-19T20:13:11+05:30",
+      "last_reply": "2012-11-19T08:40:03-08:00",
+      "root_message_id": "msg-2ccd78d666f4"
+    }
+  ]
+}

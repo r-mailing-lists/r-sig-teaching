@@ -1,0 +1,65 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2008-03",
+  "messages": [
+    {
+      "id": "msg-105f0cbf6d75",
+      "message_id": "<f95c22480803091310y15e904e2l446f6d42df4403c3@mail.gmail.com>",
+      "from_name": "Lawrence Hanser",
+      "from_email_hash": "0c534bf7bc2a896ef7c11746db5f69efd714e80ff5ba3d8f6b89033973e380fd",
+      "date": "2008-03-09T13:10:33-07:00",
+      "subject": "[R-sig-teaching] student guide developed for installation?",
+      "subject_clean": "student guide developed for installation?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear Colleagues:\n\nI am going to be teaching a graduate statistics course as part of a\nmasters degree program in psychology beginning in April using the\nAgresti and Finlay text, \"Statistical Methods for the Social\nSciences.\"  I was wondering two things.\n\n1)  Does anyone have a step-by-step R installation guide that was\nprepared as a handout for students that can be shared?\n\n2)  Anyone else using the Agresti and Finlay text?\n\nThanks,\n\nLarry",
+      "body_snippet": "Dear Colleagues:\n\nI am going to be teaching a graduate statistics course as part of a\nmasters degree program in psychology beginning in April using the\nAgresti and Finlay text, \"Statistical Methods fo",
+      "thread_id": "thread-105f0cbf6d75",
+      "thread_depth": 0,
+      "month": "2008-03"
+    },
+    {
+      "id": "msg-96060c787b8c",
+      "message_id": "<6B9725F27A9E9C652EF01FB4@cas-browntn.vanderbilt.edu>",
+      "from_name": "Tony N. Brown",
+      "from_email_hash": "c3ccb62a1d917975463c21e5854ee1571423db961aa1965220b34226ec09cc6e",
+      "date": "2008-03-10T16:07:05-05:00",
+      "subject": "[R-sig-teaching] student guide developed for installation?",
+      "subject_clean": "student guide developed for installation?",
+      "in_reply_to": "<mailman.5.1205146801.22205.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.5.1205146801.22205.r-sig-teaching@r-project.org >"
+      ],
+      "body_plain": "Larry,\n\nThere are several step-by-step installation guides posted on the \nCRAN, under contributed documentation. Most documents there begin \nby describing how to download and install R.\n\nAnd yes, I use Agresti and Finlay (1997) \"Statistical Methods for \nthe Social Sciences\" paired with Verzani's (2005) \"Using R for \nIntroductory Statistics\". I teach a graduate sequence in statistics \nfor sociology students. By the way, I heard the new Agresti and \nFinlay edition was coming out soon.\n\nCheers,\nTony\n\n--On Monday, March 10, 2008 12:00 PM +0100 \nr-sig-teaching-request at r-project.org wrote:\n\n> Send R-sig-teaching mailing list submissions to\n> \tr-sig-teaching at r-project.org\n>\n> To subscribe or unsubscribe via the World Wide Web, visit\n> \thttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> or, via email, send a message with subject or body 'help' to\n> \tr-sig-teaching-request at r-project.org\n>\n> You can reach the person managing the list at\n> \tr-sig-teaching-owner at r-project.org\n>\n> When replying, please edit your Subject line so it is more\n> specific than \"Re: Contents of R-sig-teaching digest...\"\n>\n>\n> Today's Topics:\n>\n>    1. student guide developed for installation? (Lawrence Hanser)\n>\n>\n> -----------------------------------------------------------------\n> -----\n>\n> Message: 1\n> Date: Sun, 9 Mar 2008 13:10:33 -0700\n> From: \"Lawrence Hanser\" <lhanser at gmail.com>\n> Subject: [R-sig-teaching] student guide developed for\n> installation? To: r-sig-teaching at r-project.org\n> Message-ID:\n> \t<f95c22480803091310y15e904e2l446f6d42df4403c3 at mail.gmail.com>\n> Content-Type: text/plain; charset=ISO-8859-1\n>\n> Dear Colleagues:\n>\n> I am going to be teaching a graduate statistics course as part of\n> a masters degree program in psychology beginning in April using\n> the Agresti and Finlay text, \"Statistical Methods for the Social\n> Sciences.\"  I was wondering two things.\n>\n> 1)  Does anyone have a step-by-step R installation guide that was\n> prepared as a handout for students that can be shared?\n>\n> 2)  Anyone else using the Agresti and Finlay text?\n>\n> Thanks,\n>\n> Larry\n>\n>\n>\n> ------------------------------\n>\n> _______________________________________________\n> R-sig-teaching mailing list\n> R-sig-teaching at r-project.org\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n> End of R-sig-teaching Digest, Vol 14, Issue 1\n> *********************************************\n\n\nTony N. Brown, Ph.D.\nAssociate Professor of Sociology\nFaculty Head of Hank Ingram House, The Commons\nVanderbilt University\n(615) 322-7518\n(615) 322-7505 fax\ntony.n.brown at vanderbilt.edu",
+      "body_snippet": "Larry,\n\nThere are several step-by-step installation guides posted on the \nCRAN, under contributed documentation. Most documents there begin \nby describing how to download and install R.\n\nAnd yes, I us",
+      "thread_id": "thread-96060c787b8c",
+      "thread_depth": 0,
+      "month": "2008-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-105f0cbf6d75",
+      "subject": "student guide developed for installation?",
+      "message_count": 1,
+      "participants": [
+        "Lawrence Hanser"
+      ],
+      "started": "2008-03-09T13:10:33-07:00",
+      "last_reply": "2008-03-09T13:10:33-07:00",
+      "root_message_id": "msg-105f0cbf6d75"
+    },
+    {
+      "id": "thread-96060c787b8c",
+      "subject": "student guide developed for installation?",
+      "message_count": 1,
+      "participants": [
+        "Tony N. Brown"
+      ],
+      "started": "2008-03-10T16:07:05-05:00",
+      "last_reply": "2008-03-10T16:07:05-05:00",
+      "root_message_id": "msg-96060c787b8c"
+    }
+  ]
+}

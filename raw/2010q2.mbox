@@ -1,0 +1,1207 @@
+From dmsilv at gmail.com  Fri Apr 23 06:23:26 2010
+From: dmsilv at gmail.com (Daniel)
+Date: Fri, 23 Apr 2010 01:23:26 -0300
+Subject: [R-sig-teaching] Vote concentration Equation
+Message-ID: <l2u4358fd1a1004222123r98f91258o925175b000e89855@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100423/5587875c/attachment.pl>
+
+From emilia.olofsson at hotmail.com  Fri Apr 23 21:25:24 2010
+From: emilia.olofsson at hotmail.com (Emilia Olofsson)
+Date: Fri, 23 Apr 2010 21:25:24 +0200
+Subject: [R-sig-teaching] Hi there!
+Message-ID: <COL114-W3F6E17D1728DC02823802EF070@phx.gbl>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100423/0a5d1d6d/attachment.pl>
+
+From aaboueissa at usm.maine.edu  Wed Apr 28 22:23:40 2010
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Wed, 28 Apr 2010 16:23:40 -0400
+Subject: [R-sig-teaching] Help with Goodness of Fit Test
+Message-ID: <4BD8610C020000A600072017@uct5.uct.usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100428/97fc4adf/attachment.pl>
+
+From chimingyau at gmail.com  Thu Apr 29 17:10:04 2010
+From: chimingyau at gmail.com (Chi Ming Yau)
+Date: Thu, 29 Apr 2010 08:10:04 -0700
+Subject: [R-sig-teaching] R-sig-teaching Digest, Vol 30, Issue 3
+In-Reply-To: <mailman.9.1272535203.4095.r-sig-teaching@r-project.org>
+References: <mailman.9.1272535203.4095.r-sig-teaching@r-project.org>
+Message-ID: <4BD9A14C.80006@gmail.com>
+
+Here's a good exposition on the topics:
+
+http://cran.r-project.org/doc/contrib/Ricci-distributions-en.pdf
+
+Hope it helps.
+
+Regards,
+
+Chi Yau
+http://r-tutor.com
+
+
+
+r-sig-teaching-request at r-project.org wrote:
+> Send R-sig-teaching mailing list submissions to
+> 	r-sig-teaching at r-project.org
+>
+> To subscribe or unsubscribe via the World Wide Web, visit
+> 	https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> or, via email, send a message with subject or body 'help' to
+> 	r-sig-teaching-request at r-project.org
+>
+> You can reach the person managing the list at
+> 	r-sig-teaching-owner at r-project.org
+>
+> When replying, please edit your Subject line so it is more specific
+> than "Re: Contents of R-sig-teaching digest..."
+>
+>
+> Today's Topics:
+>
+>    1. Help with Goodness of Fit Test (AbouEl-Makarim Aboueissa)
+>
+>
+> ----------------------------------------------------------------------
+>
+> Message: 1
+> Date: Wed, 28 Apr 2010 16:23:40 -0400
+> From: "AbouEl-Makarim Aboueissa" <aaboueissa at usm.maine.edu>
+> To: <R-sig-teaching at r-project.org>
+> Subject: [R-sig-teaching] Help with Goodness of Fit Test
+> Message-ID: <4BD8610C020000A600072017 at uct5.uct.usm.maine.edu>
+> Content-Type: text/plain
+>
+> Dear All:
+>  
+> Can someone help me how to conduct a Chi-square goodness of fit test in R. Also how to use for both discrete and continuous data.
+>  
+> For examples: how to test that the underlying distribution is Weibull or Poisson or Binomial, etc...
+>  
+> Whoever willing to help, please use any artificial data sets.
+>  
+> With many thanks
+> Abou
+>  
+>  
+>  
+> ==========================
+> AbouEl-Makarim Aboueissa, Ph.D.
+> Assistant Professor of Statistics
+> Department of Mathematics & Statistics
+> University of Southern Maine
+> 96 Falmouth Street
+> P.O. Box 9300
+> Portland, ME 04104-9300
+> USA
+>  
+>
+> Tel: (207) 228-8389
+> Fax: (207) 780-5607
+> Email: aaboueissa at usm.maine.edu
+>           aboueiss at yahoo.com
+>  
+> Web address:  http://www.usm.maine.edu/~aaboueissa/
+>  
+> Office: 301C Payson Smith
+>  
+>
+> 	[[alternative HTML version deleted]]
+>
+>
+>
+> ------------------------------
+>
+> _______________________________________________
+> R-sig-teaching mailing list
+> R-sig-teaching at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+> End of R-sig-teaching Digest, Vol 30, Issue 3
+> *********************************************
+>
+
+
+
+From cha at muhlenberg.edu  Wed May  5 17:30:43 2010
+From: cha at muhlenberg.edu (Byungchul Cha)
+Date: Wed, 05 May 2010 11:30:43 -0400
+Subject: [R-sig-teaching] Creating table from data.frame
+Message-ID: <4BE156E1.B080.00B1.0@gw.muhlenberg.edu>
+
+
+I am a relatively novice in R and I need some help. 
+
+I want to create a two-way table from a data given as a data.frame, which looks like this:
+
+> x
+   group status gender count
+1      1     s1     g1   890
+2      2     s1     g2   969
+3      3     s2     g1   340
+4      4     s2     g2   403
+5      5     s3     g1  2897
+6      6     s3     g2  3321
+7      7     s4     g1   249
+8      8     s4     g2   383
+9      9     s5     g1   306
+10    10     s5     g2   366
+11    11     s6     g1   160
+12    12     s6     g2   137
+
+I would like a two way table, which would look like
+
+status    men    women
+s1    890    969
+s2    340    403
+s3    2897    3321
+...
+
+How do I do this in a relatively efficient way? Thanks.
+
+Byungchul
+
+
+
+From bates at stat.wisc.edu  Wed May  5 18:12:14 2010
+From: bates at stat.wisc.edu (Douglas Bates)
+Date: Wed, 5 May 2010 11:12:14 -0500
+Subject: [R-sig-teaching] Creating table from data.frame
+In-Reply-To: <4BE156E1.B080.00B1.0@gw.muhlenberg.edu>
+References: <4BE156E1.B080.00B1.0@gw.muhlenberg.edu>
+Message-ID: <x2m40e66e0b1005050912o56caf28fp1e6608635d7c6ca2@mail.gmail.com>
+
+On Wed, May 5, 2010 at 10:30 AM, Byungchul Cha <cha at muhlenberg.edu> wrote:
+
+> I am a relatively novice in R and I need some help.
+
+> I want to create a two-way table from a data given as a data.frame, which looks like this:
+
+>> x
+> ? group status gender count
+> 1 ? ? ?1 ? ? s1 ? ? g1 ? 890
+> 2 ? ? ?2 ? ? s1 ? ? g2 ? 969
+> 3 ? ? ?3 ? ? s2 ? ? g1 ? 340
+> 4 ? ? ?4 ? ? s2 ? ? g2 ? 403
+> 5 ? ? ?5 ? ? s3 ? ? g1 ?2897
+> 6 ? ? ?6 ? ? s3 ? ? g2 ?3321
+> 7 ? ? ?7 ? ? s4 ? ? g1 ? 249
+> 8 ? ? ?8 ? ? s4 ? ? g2 ? 383
+> 9 ? ? ?9 ? ? s5 ? ? g1 ? 306
+> 10 ? ?10 ? ? s5 ? ? g2 ? 366
+> 11 ? ?11 ? ? s6 ? ? g1 ? 160
+> 12 ? ?12 ? ? s6 ? ? g2 ? 137
+>
+> I would like a two way table, which would look like
+>
+> status ? ?men ? ?women
+> s1 ? ?890 ? ?969
+> s2 ? ?340 ? ?403
+> s3 ? ?2897 ? ?3321
+> ...
+>
+> How do I do this in a relatively efficient way? Thanks.
+
+Look up the documentation for xtabs, say by typing
+
+?xtabs
+
+in R.  What you want is
+
+xtabs(count ~ status + gender, x)
+
+
+
+From gps at asu.edu  Wed May  5 19:27:10 2010
+From: gps at asu.edu (Geoffrey Smith)
+Date: Wed, 5 May 2010 10:27:10 -0700
+Subject: [R-sig-teaching] Creating table from data.frame
+In-Reply-To: <x2m40e66e0b1005050912o56caf28fp1e6608635d7c6ca2@mail.gmail.com>
+References: <4BE156E1.B080.00B1.0@gw.muhlenberg.edu>
+	<x2m40e66e0b1005050912o56caf28fp1e6608635d7c6ca2@mail.gmail.com>
+Message-ID: <q2j4b5c27441005051027x571972f3je100a2e76fed5047@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100505/62b128f8/attachment.pl>
+
+From phgrosjean at sciviews.org  Wed May  5 21:37:03 2010
+From: phgrosjean at sciviews.org (Philippe Grosjean)
+Date: Wed, 05 May 2010 21:37:03 +0200
+Subject: [R-sig-teaching] Creating table from data.frame
+In-Reply-To: <4BE156E1.B080.00B1.0@gw.muhlenberg.edu>
+References: <4BE156E1.B080.00B1.0@gw.muhlenberg.edu>
+Message-ID: <4BE1C8DF.9030401@sciviews.org>
+
+This is easy:
+
+# Recode gender
+levels(x$gender) <- c("men", "women")
+# Build the two-way table (and print it)
+(x.Table <- xtabs(count ~ status + gender, data = x))
+
+Best,
+
+PhG
+
+..............................................<?}))><........
+  ) ) ) ) )
+( ( ( ( (    Prof. Philippe Grosjean
+  ) ) ) ) )
+( ( ( ( (    Numerical Ecology of Aquatic Systems
+  ) ) ) ) )   Mons University, Belgium
+( ( ( ( (
+..............................................................
+
+On 05/05/10 17:30, Byungchul Cha wrote:
+>
+> I am a relatively novice in R and I need some help.
+>
+> I want to create a two-way table from a data given as a data.frame, which looks like this:
+>
+>> x
+>     group status gender count
+> 1      1     s1     g1   890
+> 2      2     s1     g2   969
+> 3      3     s2     g1   340
+> 4      4     s2     g2   403
+> 5      5     s3     g1  2897
+> 6      6     s3     g2  3321
+> 7      7     s4     g1   249
+> 8      8     s4     g2   383
+> 9      9     s5     g1   306
+> 10    10     s5     g2   366
+> 11    11     s6     g1   160
+> 12    12     s6     g2   137
+>
+> I would like a two way table, which would look like
+>
+> status    men    women
+> s1    890    969
+> s2    340    403
+> s3    2897    3321
+> ...
+>
+> How do I do this in a relatively efficient way? Thanks.
+>
+> Byungchul
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+
+
+
+From jorismeys at gmail.com  Tue Jun  8 13:45:35 2010
+From: jorismeys at gmail.com (Joris Meys)
+Date: Tue, 8 Jun 2010 13:45:35 +0200
+Subject: [R-sig-teaching] Programming in R : information from the help list
+Message-ID: <AANLkTimvtHk4uomHJZTAp8mW4ZKj7lrvq2VsJa6ZRqXK@mail.gmail.com>
+
+Hi all,
+
+I'm busy writing a general introduction into programming with R, and I
+use a lot of examples and tricks that are given in the help list. I
+have a selection of threads in the help list to use as information for
+this course. The threads I select must fulfill certain requirements :
+- they must contain runnable example code that is not too long
+- the solution must be nice and easy, without being obvious or making
+use of long apply and eval constructs
+- the solution should not depend too much on the use of a specific package.
+- the solution should make optimal use of vectorization in R
+
+Off course I cannot check all messages, so if you run into examples
+that would make a nice contribution to the course, please feel free to
+forwa
+
+
+Currently, I am working around following topics, from most likely to
+be finished to maybe not included :
+Certainly:
+- Vectors
+- matrices
+- dataframes
+- lists and other objects
+- functions
+- regular expressions
+
+- conversion of objects
+- selecting and replacing of values in objects
+- merging / splitting objects
+
+most likely :
+- reading in data
+- working with dates and times
+
+likely :
+- basic statistics applied to vectors/matrices/dataframes/subsets (eg.
+functions colSums, ave, ...)
+- models : data selection and input, extraction of output
+
+possibly :
+- generation of output reports in text, latex, html
+- connections
+- S3/S4 programming
+
+If you have the feeling I'm missing a certain important topic, feel
+free to let me know.
+-- 
+Joris Meys
+Statistical consultant
+
+Ghent University
+Faculty of Bioscience Engineering
+Department of Applied mathematics, biometrics and process control
+
+tel : +32 9 264 59 87
+Joris.Meys at Ugent.be
+-------------------------------
+Disclaimer : http://helpdesk.ugent.be/e-maildisclaimer.php
+
+
+
+From jorismeys at gmail.com  Tue Jun  8 13:47:57 2010
+From: jorismeys at gmail.com (Joris Meys)
+Date: Tue, 8 Jun 2010 13:47:57 +0200
+Subject: [R-sig-teaching] Programming in R - information of the help list
+	(complete mail)
+Message-ID: <AANLkTilWV4M1qjxnOsuP2Q4mWT7xLaLqou1C_Ln34PkN@mail.gmail.com>
+
+Hi all,
+
+finger slipped on the tab button, so gmail decided to send an
+incomplete mail... This is the complete one, sorry for the
+inconvenience
+
+I'm busy writing a general introduction into programming with R, and I
+use a lot of examples and tricks that are given in the help list. I
+have a selection of threads in the help list to use as information for
+this course. The threads I select must fulfill certain requirements :
+- they must contain runnable example code that is not too long
+- the solution must be nice and easy, without being obvious or making
+use of long apply and eval constructs
+- the solution should not depend too much on the use of a specific package.
+- the solution should make optimal use of vectorization in R
+
+Off course I cannot check all messages, so if you run into examples
+that would make a nice contribution to the course, please feel free to
+forward the message or the Nabble link to me.
+
+Currently, I am working around following topics, from most likely to
+be finished to maybe not included :
+Certainly:
+- Vectors
+- matrices
+- dataframes
+- lists and other objects
+- functions
+- regular expressions
+
+- conversion of objects
+- selecting and replacing of values in objects
+- merging / splitting objects
+
+most likely :
+- reading in data
+- working with dates and times
+
+likely :
+- basic statistics applied to vectors/matrices/dataframes/subsets (eg.
+functions colSums, ave, ...)
+- models : data selection and input, extraction of output
+
+possibly :
+- generation of output reports in text, latex, html
+- connections
+- S3/S4 programming
+
+If you have the feeling I'm missing a certain important topic, feel
+free to let me know. Any other suggestions are always welcome too. The
+course will be freely available on the net for all to use.
+
+Cheers
+
+-- 
+Joris Meys
+Statistical consultant
+
+Ghent University
+Faculty of Bioscience Engineering
+Department of Applied mathematics, biometrics and process control
+
+tel : +32 9 264 59 87
+Joris.Meys at Ugent.be
+-------------------------------
+Disclaimer : http://helpdesk.ugent.be/e-maildisclaimer.php
+
+
+
+From zanaty2005 at yahoo.com  Tue Jun  8 18:20:32 2010
+From: zanaty2005 at yahoo.com (Ali Zanaty)
+Date: Tue, 8 Jun 2010 09:20:32 -0700 (PDT)
+Subject: [R-sig-teaching] Picture of two elipse
+Message-ID: <366716.2892.qm@web59510.mail.ac4.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100608/da2e050a/attachment.pl>
+
+From zanaty2005 at yahoo.com  Mon Jun 14 19:19:32 2010
+From: zanaty2005 at yahoo.com (Ali Zanaty)
+Date: Mon, 14 Jun 2010 10:19:32 -0700 (PDT)
+Subject: [R-sig-teaching] Plotting two elipses in the
+Message-ID: <160685.94740.qm@web59504.mail.ac4.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100614/ff8eb3ce/attachment.pl>
+
+From gavin.simpson at ucl.ac.uk  Mon Jun 14 19:33:46 2010
+From: gavin.simpson at ucl.ac.uk (Gavin Simpson)
+Date: Mon, 14 Jun 2010 18:33:46 +0100
+Subject: [R-sig-teaching] Plotting two elipses in the
+In-Reply-To: <160685.94740.qm@web59504.mail.ac4.yahoo.com>
+References: <160685.94740.qm@web59504.mail.ac4.yahoo.com>
+Message-ID: <1276536826.19297.62.camel@localhost>
+
+You are posting to the *wrong* list! Your question has nothing to do
+with Teaching and R?
+
+Please post on the main R-Help mailing list.
+
+G
+
+On Mon, 2010-06-14 at 10:19 -0700, Ali Zanaty wrote:
+> Dear All R Users: 
+> 
+> 
+> 
+> 
+> 
+> What I need to do is to plot two elipses in the same graph (one for
+> each group). You can use either X1 or X2 as the X-axis and the other
+> variable as the Y-axis.
+> 
+> 
+> 
+> Also I need to show the 95% C.I. or P.I. of the overlapping part of the two elipses.
+> 
+> 
+> 
+> With many thanks. 
+> 
+> 
+> 
+> Data can be found at 
+> 
+> 
+> 
+> http://www.usm.maine.edu/~aaboueissa/Rhelps/dataelipse.txt
+> 
+> 
+> 
+> 
+> 
+> Thank you so much for your helps.
+> 
+> 
+> 
+> Ali
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+>       
+> 	[[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+-- 
+%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%
+ Dr. Gavin Simpson             [t] +44 (0)20 7679 0522
+ ECRC, UCL Geography,          [f] +44 (0)20 7679 0565
+ Pearson Building,             [e] gavin.simpsonATNOSPAMucl.ac.uk
+ Gower Street, London          [w] http://www.ucl.ac.uk/~ucfagls/
+ UK. WC1E 6BT.                 [w] http://www.freshwaters.org.uk
+%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%
+
+
+
+From zanaty2005 at yahoo.com  Mon Jun 14 20:11:41 2010
+From: zanaty2005 at yahoo.com (Ali Zanaty)
+Date: Mon, 14 Jun 2010 11:11:41 -0700 (PDT)
+Subject: [R-sig-teaching] Plotting two elipses in the
+In-Reply-To: <1276536826.19297.62.camel@localhost>
+Message-ID: <407462.2053.qm@web59512.mail.ac4.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100614/b7a81c7a/attachment.pl>
+
+From gavin.simpson at ucl.ac.uk  Mon Jun 14 20:31:48 2010
+From: gavin.simpson at ucl.ac.uk (Gavin Simpson)
+Date: Mon, 14 Jun 2010 19:31:48 +0100
+Subject: [R-sig-teaching] Plotting two elipses in the
+In-Reply-To: <407462.2053.qm@web59512.mail.ac4.yahoo.com>
+References: <407462.2053.qm@web59512.mail.ac4.yahoo.com>
+Message-ID: <1276540308.19297.82.camel@localhost>
+
+Again, your question is OT for this forum! Regardless of *why* you want
+to know how to plot two ellipses, your question is not about teaching
+and R.
+
+"Special Interest Group (SIG) on teaching statistics with R. The primary
+purpose of the group is to provide a forum where instructors using R in
+their statistics courses can share ideas, teaching materials, and
+experiences. One particular focus of the SIG is to provide helpful
+support to instructors new to R who are teaching introductory statistics
+courses populated with students with little experience in statistics,
+statistical software, and command line interfaces."
+
+The fact that you didn't get a response to your original post is perhaps
+indicative of 2 things: i) this list has a much smaller user-base than
+R-Help, and ii) the current user-base of this list considered your post
+OT or didn't want (for whatever reason) to answer your post.
+
+So, please don't post such "Help" questions here, that is what the main
+list is for. Anyway, having said that:
+
+...Check out
+
+http://cran.r-project.org/web/packages/ellipse/index.html
+
+And, at this point, if you are going to teach people how to use R, make
+sure you include tips on how to help yourself get help on R, for
+example:
+
+> RSiteSearch("ellipse", restrict = "functions")
+
+returns the above package information as the first hit. There is a lot
+you can do without having to wait for responses from the R-xxx lists.
+
+HTH and good luck with your introductory course!
+
+G
+
+On Mon, 2010-06-14 at 11:11 -0700, Ali Zanaty wrote:
+> Dear Gavin:
+> 
+> I am preparing class notes for an introduction course in R
+> (undergraduate level).
+> 
+> I have this data and I want to know how to plotting two ellipses (one
+> for each group) in the same graph.
+> 
+> With many thanks
+> 
+> 
+> Ali
+> 
+> 
+> --- On Mon, 6/14/10, Gavin Simpson <gavin.simpson at ucl.ac.uk> wrote:
+>         
+>         From: Gavin Simpson <gavin.simpson at ucl.ac.uk>
+>         Subject: Re: [R-sig-teaching] Plotting two elipses in the
+>         To: "Ali Zanaty" <zanaty2005 at yahoo.com>
+>         Cc: r-sig-teaching at r-project.org
+>         Date: Monday, June 14, 2010, 5:33 PM
+>         
+>         You are posting to the *wrong* list! Your question has nothing
+>         to do
+>         with Teaching and R?
+>         
+>         Please post on the main R-Help mailing list.
+>         
+>         G
+>         
+>         On Mon, 2010-06-14 at 10:19 -0700, Ali Zanaty wrote:
+>         > Dear All R Users: 
+>         > 
+>         > 
+>         > 
+>         > 
+>         > 
+>         > What I need to do is to plot two elipses in the same graph
+>         (one for
+>         > each group). You can use either X1 or X2 as the X-axis and
+>         the other
+>         > variable as the Y-axis.
+>         > 
+>         > 
+>         > 
+>         > Also I need to show the 95% C.I. or P.I. of the overlapping
+>         part of the two elipses.
+>         > 
+>         > 
+>         > 
+>         > With many thanks. 
+>         > 
+>         > 
+>         > 
+>         > Data can be found at 
+>         > 
+>         > 
+>         > 
+>         > http://www.usm.maine.edu/~aaboueissa/Rhelps/dataelipse.txt
+>         > 
+>         > 
+>         > 
+>         > 
+>         > 
+>         > Thank you so much for your helps.
+>         > 
+>         > 
+>         > 
+>         > Ali
+>         > 
+>         > 
+>         > 
+>         > 
+>         > 
+>         > 
+>         > 
+>         > 
+>         > 
+>         > 
+>         > 
+>         > 
+>         > 
+>         > 
+>         > 
+>         > 
+>         >       
+>         >     [[alternative HTML version deleted]]
+>         > 
+>         > _______________________________________________
+>         > R-sig-teaching at r-project.org mailing list
+>         > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>         
+>         -- 
+>         %~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~
+>         %~%~%~%
+>         Dr. Gavin Simpson             [t] +44 (0)20 7679 0522
+>         ECRC, UCL Geography,          [f] +44 (0)20 7679 0565
+>         Pearson Building,             [e]
+>         gavin.simpsonATNOSPAMucl.ac.uk
+>         Gower Street, London          [w]
+>         http://www.ucl.ac.uk/~ucfagls/
+>         UK. WC1E 6BT.                 [w]
+>         http://www.freshwaters.org.uk
+>         %~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~
+>         %~%~%~%
+>         
+>         
+> 
+
+-- 
+%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%
+ Dr. Gavin Simpson             [t] +44 (0)20 7679 0522
+ ECRC, UCL Geography,          [f] +44 (0)20 7679 0565
+ Pearson Building,             [e] gavin.simpsonATNOSPAMucl.ac.uk
+ Gower Street, London          [w] http://www.ucl.ac.uk/~ucfagls/
+ UK. WC1E 6BT.                 [w] http://www.freshwaters.org.uk
+%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%
+
+
+
+From desja004 at umn.edu  Mon Jun 14 20:31:47 2010
+From: desja004 at umn.edu (Christopher David Desjardins)
+Date: Mon, 14 Jun 2010 13:31:47 -0500
+Subject: [R-sig-teaching] Plotting two elipses in the
+In-Reply-To: <407462.2053.qm@web59512.mail.ac4.yahoo.com>
+References: <407462.2053.qm@web59512.mail.ac4.yahoo.com>
+Message-ID: <4C167593.7080101@umn.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100614/1c339127/attachment.pl>
+
+From cgenolin at u-paris10.fr  Wed Jun 23 20:09:22 2010
+From: cgenolin at u-paris10.fr (Christophe Genolini)
+Date: Wed, 23 Jun 2010 20:09:22 +0200
+Subject: [R-sig-teaching] Statistics are SO boring...
+Message-ID: <4C224DD2.60507@u-paris10.fr>
+
+Hi the list,
+
+As a statistics teacher, I teach to NOT-scientists student, public that 
+it is permanently necessary to motivate. I am thus in search of examples 
+both scientific and playful to illustrate my courses. It is not always 
+easy to find. As other teacher might be in the same case, I say to 
+myself that we could maybe share our 'best' examples?
+
+So I start: a social psychologist (Nicolas Gueguen, article here 
+http://nicolas.gueguen.free.fr/index.html) has establishes that if we 
+approach a perfect unknown lady on a beach and we ask for its phone 
+number, we have 9 % of chance to obtain it. If we call her by touching 
+her slightly on the front arm, we have 19 % (!!!) of chances to obtain 
+it (test of chi2, p < 0.01). Surprising, isn't it?
+
+So what are your 'best examples' ?
+
+Christophe Genolini
+
+-- 
+-----------------------------------------
+Christophe Genolini
+Maitre de conf?rences
+INSERM U669, Equipe Biostatistiques
+UFR STAPS, Universit? de Paris Ouest-Nanterre-La D?fense
+Web: http:\\christophe.genolini.free.fr
+
+
+
+From gps at asu.edu  Wed Jun 23 20:59:04 2010
+From: gps at asu.edu (Geoffrey Smith)
+Date: Wed, 23 Jun 2010 11:59:04 -0700
+Subject: [R-sig-teaching] Statistics are SO boring...
+In-Reply-To: <4C224DD2.60507@u-paris10.fr>
+References: <4C224DD2.60507@u-paris10.fr>
+Message-ID: <AANLkTimDMKJ9HE7TjpVThDVeEtvXTlSAdQJpqyWWjcvx@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100623/292926a7/attachment.pl>
+
+From jorismeys at gmail.com  Wed Jun 23 22:13:34 2010
+From: jorismeys at gmail.com (Joris Meys)
+Date: Wed, 23 Jun 2010 22:13:34 +0200
+Subject: [R-sig-teaching] Statistics are SO boring...
+In-Reply-To: <AANLkTimDMKJ9HE7TjpVThDVeEtvXTlSAdQJpqyWWjcvx@mail.gmail.com>
+References: <4C224DD2.60507@u-paris10.fr>
+	<AANLkTimDMKJ9HE7TjpVThDVeEtvXTlSAdQJpqyWWjcvx@mail.gmail.com>
+Message-ID: <AANLkTin52hCxS7T51rFSgTaVk_hsQ3yhu02btAHMc8Hf@mail.gmail.com>
+
+On Wed, Jun 23, 2010 at 8:59 PM, Geoffrey Smith <gps at asu.edu> wrote:
+> You might think about looking at stock returns and asking questions about
+> the probability of doubling your money or of getting a rate of return that
+> exceeds the historical mean. ?Geoff
+
+Doesn't always work though. Bio-engineers for example are typically
+less interested in gambling on the stockmarket... ;-)
+
+Now serious, one of the finest examples I met is the example about the
+death penalty in Florida, to be found in Agresti's book "Categorical
+Data Analysis" on page 48 and further. It gives a very nice
+illustration of Simpson's paradox, applied to real data about a topic
+that leaves few untouched. Basically Agresti shows there how one came
+to the conclusion that whites got more often the death penalty than
+blacks in Florida. If one didn't take the victim into account, that
+is. When looking at the victims, it was clear that the death penalty
+was more often declared when the victim was white. It turned out that
+blacks mostly kill blacks, and whites mostly killed whites.
+Conditional on the victim, the story turned around and blacks clearly
+got the death penalty more often. The data goes from 1971 to 1987, so
+is fairly safe to use for educational purposes
+
+Cheers
+Joris
+
+>
+> On Wed, Jun 23, 2010 at 11:09 AM, Christophe Genolini <cgenolin at u-paris10.fr
+>> wrote:
+>
+>> Hi the list,
+>>
+>> As a statistics teacher, I teach to NOT-scientists student, public that it
+>> is permanently necessary to motivate. I am thus in search of examples both
+>> scientific and playful to illustrate my courses. It is not always easy to
+>> find. As other teacher might be in the same case, I say to myself that we
+>> could maybe share our 'best' examples?
+>>
+>> So I start: a social psychologist (Nicolas Gueguen, article here
+>> http://nicolas.gueguen.free.fr/index.html) has establishes that if we
+>> approach a perfect unknown lady on a beach and we ask for its phone number,
+>> we have 9 % of chance to obtain it. If we call her by touching her slightly
+>> on the front arm, we have 19 % (!!!) of chances to obtain it (test of chi2,
+>> p < 0.01). Surprising, isn't it?
+>>
+>> So what are your 'best examples' ?
+>>
+>> Christophe Genolini
+>>
+>> --
+>> -----------------------------------------
+>> Christophe Genolini
+>> Maitre de conf?rences
+>> INSERM U669, Equipe Biostatistiques
+>> UFR STAPS, Universit? de Paris Ouest-Nanterre-La D?fense
+>> Web: http:\\christophe.genolini.free.fr
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>
+>
+>
+> --
+> Geoffrey Smith
+> Visiting Assistant Professor
+> Department of Finance
+> W. P. Carey School of Business
+> Arizona State University
+>
+> ? ? ? ?[[alternative HTML version deleted]]
+>
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+
+
+
+-- 
+Joris Meys
+Statistical consultant
+
+Ghent University
+Faculty of Bioscience Engineering
+Department of Applied mathematics, biometrics and process control
+
+tel : +32 9 264 59 87
+Joris.Meys at Ugent.be
+-------------------------------
+Disclaimer : http://helpdesk.ugent.be/e-maildisclaimer.php
+
+
+
+From ian.fellows at stat.ucla.edu  Thu Jun 24 00:47:16 2010
+From: ian.fellows at stat.ucla.edu (ian fellows)
+Date: Wed, 23 Jun 2010 15:47:16 -0700
+Subject: [R-sig-teaching] Statistics are SO boring...
+In-Reply-To: <AANLkTin52hCxS7T51rFSgTaVk_hsQ3yhu02btAHMc8Hf@mail.gmail.com>
+References: <4C224DD2.60507@u-paris10.fr>
+	<AANLkTimDMKJ9HE7TjpVThDVeEtvXTlSAdQJpqyWWjcvx@mail.gmail.com>
+	<AANLkTin52hCxS7T51rFSgTaVk_hsQ3yhu02btAHMc8Hf@mail.gmail.com>
+Message-ID: <B0F61691-F3C4-416C-812B-3C991DAB2EE5@stat.ucla.edu>
+
+I'm in no way affiliated with the author, but this blog post struck  
+me as interesting and accessible:
+
+http://perfdynamics.blogspot.com/2010/06/linear-modeling-in-r-and- 
+hubble-bubble.html
+
+
+On Jun 23, 2010, at 1:13 PM, Joris Meys wrote:
+
+> On Wed, Jun 23, 2010 at 8:59 PM, Geoffrey Smith <gps at asu.edu> wrote:
+>> You might think about looking at stock returns and asking  
+>> questions about
+>> the probability of doubling your money or of getting a rate of  
+>> return that
+>> exceeds the historical mean.  Geoff
+>
+> Doesn't always work though. Bio-engineers for example are typically
+> less interested in gambling on the stockmarket... ;-)
+>
+> Now serious, one of the finest examples I met is the example about the
+> death penalty in Florida, to be found in Agresti's book "Categorical
+> Data Analysis" on page 48 and further. It gives a very nice
+> illustration of Simpson's paradox, applied to real data about a topic
+> that leaves few untouched. Basically Agresti shows there how one came
+> to the conclusion that whites got more often the death penalty than
+> blacks in Florida. If one didn't take the victim into account, that
+> is. When looking at the victims, it was clear that the death penalty
+> was more often declared when the victim was white. It turned out that
+> blacks mostly kill blacks, and whites mostly killed whites.
+> Conditional on the victim, the story turned around and blacks clearly
+> got the death penalty more often. The data goes from 1971 to 1987, so
+> is fairly safe to use for educational purposes
+>
+> Cheers
+> Joris
+>
+>>
+>> On Wed, Jun 23, 2010 at 11:09 AM, Christophe Genolini <cgenolin at u- 
+>> paris10.fr
+>>> wrote:
+>>
+>>> Hi the list,
+>>>
+>>> As a statistics teacher, I teach to NOT-scientists student,  
+>>> public that it
+>>> is permanently necessary to motivate. I am thus in search of  
+>>> examples both
+>>> scientific and playful to illustrate my courses. It is not always  
+>>> easy to
+>>> find. As other teacher might be in the same case, I say to myself  
+>>> that we
+>>> could maybe share our 'best' examples?
+>>>
+>>> So I start: a social psychologist (Nicolas Gueguen, article here
+>>> http://nicolas.gueguen.free.fr/index.html) has establishes that  
+>>> if we
+>>> approach a perfect unknown lady on a beach and we ask for its  
+>>> phone number,
+>>> we have 9 % of chance to obtain it. If we call her by touching  
+>>> her slightly
+>>> on the front arm, we have 19 % (!!!) of chances to obtain it  
+>>> (test of chi2,
+>>> p < 0.01). Surprising, isn't it?
+>>>
+>>> So what are your 'best examples' ?
+>>>
+>>> Christophe Genolini
+>>>
+>>> --
+>>> -----------------------------------------
+>>> Christophe Genolini
+>>> Maitre de conf?rences
+>>> INSERM U669, Equipe Biostatistiques
+>>> UFR STAPS, Universit? de Paris Ouest-Nanterre-La D?fense
+>>> Web: http:\\christophe.genolini.free.fr
+>>>
+>>> _______________________________________________
+>>> R-sig-teaching at r-project.org mailing list
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>>
+>>
+>>
+>>
+>> --
+>> Geoffrey Smith
+>> Visiting Assistant Professor
+>> Department of Finance
+>> W. P. Carey School of Business
+>> Arizona State University
+>>
+>>        [[alternative HTML version deleted]]
+>>
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>>
+>
+>
+>
+> -- 
+> Joris Meys
+> Statistical consultant
+>
+> Ghent University
+> Faculty of Bioscience Engineering
+> Department of Applied mathematics, biometrics and process control
+>
+> tel : +32 9 264 59 87
+> Joris.Meys at Ugent.be
+> -------------------------------
+> Disclaimer : http://helpdesk.ugent.be/e-maildisclaimer.php
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+From edgar.merkle at wichita.edu  Thu Jun 24 19:13:22 2010
+From: edgar.merkle at wichita.edu (Ed Merkle)
+Date: Thu, 24 Jun 2010 12:13:22 -0500
+Subject: [R-sig-teaching] Statistics are SO boring...
+In-Reply-To: <mailman.13.1277373603.30625.r-sig-teaching@r-project.org>
+References: <mailman.13.1277373603.30625.r-sig-teaching@r-project.org>
+Message-ID: <4C239232.3050205@wichita.edu>
+
+Christophe,
+
+You may already know it, but Gelman has a book on teaching statistics 
+that contains many good examples.  One that comes to mind (I think I 
+found it there, at least) involves conditional probabilities involving 
+being drunk and having a car accident at night.  The upshot is that 
+P(accident at night | drunk) is low, but P(drunk | accident at night) is 
+high (above .5, if I recall).
+
+There is also a contingency table example from the tv show Mythbusters, 
+where they study whether yawning is contagious.  They do not use 
+statistics in the tv show and end up drawing the wrong conclusion.  See, 
+for example,
+
+http://www.statisticool.com/mythbusters.htm
+
+
+Ed
+
+-- 
+Ed Merkle, PhD
+Assistant Professor
+Dept. of Psychology
+Wichita State University
+Wichita, KS 67260
+
+
+> Message: 1
+> Date: Wed, 23 Jun 2010 20:09:22 +0200
+> From: Christophe Genolini <cgenolin at u-paris10.fr>
+> To: r-sig-teaching at r-project.org
+> Subject: [R-sig-teaching] Statistics are SO boring...
+> Message-ID: <4C224DD2.60507 at u-paris10.fr>
+> Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+> 
+> Hi the list,
+> 
+> As a statistics teacher, I teach to NOT-scientists student, public that
+> it is permanently necessary to motivate. I am thus in search of examples
+> both scientific and playful to illustrate my courses. It is not always
+> easy to find. As other teacher might be in the same case, I say to
+> myself that we could maybe share our 'best' examples?
+> 
+> So I start: a social psychologist (Nicolas Gueguen, article here
+> http://nicolas.gueguen.free.fr/index.html) has establishes that if we
+> approach a perfect unknown lady on a beach and we ask for its phone
+> number, we have 9 % of chance to obtain it. If we call her by touching
+> her slightly on the front arm, we have 19 % (!!!) of chances to obtain
+> it (test of chi2, p < 0.01). Surprising, isn't it?
+> 
+> So what are your 'best examples' ?
+> 
+> Christophe Genolini
+> 
+> --
+> -----------------------------------------
+> Christophe Genolini
+> Maitre de conf?rences
+> INSERM U669, Equipe Biostatistiques
+> UFR STAPS, Universit? de Paris Ouest-Nanterre-La D?fense
+> Web: http:\\christophe.genolini.free.fr
+> 
+> 
+> 
+> ------------------------------
+
+
+
+From cparker at pdx.edu  Thu Jun 24 19:22:35 2010
+From: cparker at pdx.edu (Christian Parker)
+Date: Thu, 24 Jun 2010 10:22:35 -0700
+Subject: [R-sig-teaching] Statistics are SO boring...
+In-Reply-To: <4C239232.3050205@wichita.edu>
+References: <mailman.13.1277373603.30625.r-sig-teaching@r-project.org>
+	<4C239232.3050205@wichita.edu>
+Message-ID: <4C23945B.50109@pdx.edu>
+
+This is a great article about probability theory written by Steven 
+Strogatz. His whole blog is good for non-mathematicians but this one has 
+a nice example about conditional probability.
+
+http://opinionator.blogs.nytimes.com/2010/04/25/chances-are/
+
+
+
+On 6/24/2010 10:13 AM, Ed Merkle wrote:
+> Christophe,
+>
+> You may already know it, but Gelman has a book on teaching statistics 
+> that contains many good examples.  One that comes to mind (I think I 
+> found it there, at least) involves conditional probabilities involving 
+> being drunk and having a car accident at night.  The upshot is that 
+> P(accident at night | drunk) is low, but P(drunk | accident at night) 
+> is high (above .5, if I recall).
+>
+> There is also a contingency table example from the tv show 
+> Mythbusters, where they study whether yawning is contagious.  They do 
+> not use statistics in the tv show and end up drawing the wrong 
+> conclusion.  See, for example,
+>
+> http://www.statisticool.com/mythbusters.htm
+>
+>
+> Ed
+>
+
+
+
+From Greg.Snow at imail.org  Thu Jun 24 21:38:07 2010
+From: Greg.Snow at imail.org (Greg Snow)
+Date: Thu, 24 Jun 2010 13:38:07 -0600
+Subject: [R-sig-teaching] Statistics are SO boring...
+In-Reply-To: <4C224DD2.60507@u-paris10.fr>
+References: <4C224DD2.60507@u-paris10.fr>
+Message-ID: <B37C0A15B8FB3C468B5BC7EBC7DA14CC6339CD8C33@LP-EXMBVS10.CO.IHC.COM>
+
+I use a card trick to teach hypothesis testing, I have 3 students each come and do a "random" draw from my deck of CArdboard Randomization Devices (CARDs) and they tend to be a little surprised when each draws the 6 of clubs (the deck is from a magic shop, I am not that good a magician).  I then ask if anyone believes that they just witnessed 3 completely random draws from a regular deck, generally nobody does (at least not the ones that were awake), then I ask why or why not, it usually takes a minute for someone to put their thoughts into words (but it is worth the awkward silence to force them to say it).  The response is usually something like "that wouldn't happen by chance", then I talk about the idea of chance vs. something else explaining what they see, build it into the whole hypothesis testing vocab etc.
+
+For confidence intervals I often have students count the colors of M&M's candies and get proportions. The M&M website a while ago had the official proportions of the colors, so I tell them what the true proportion is for one of the colors and show how their counted percentages are close but not exactly the same, then show a computer simulation based on that truth and show how close/far the estimates are on average, then we choose a different color, look at one of the observed percentages and ask what the truth could be (with the 1st color most of the simulated values were within 15% of the truth, so we should expect the truth for this color to be within 15% of the observed), then once we have the basics for the confidence interval I tell them the true value and see if the interval contains that value (and show other simulated CIs).
+
+Look at the TeachingDemos package for simulations and interactive graphics to show various concepts (and let me know if you have additional ideas).
+
+The chance news wiki (http://www.causeweb.org/wiki/chance/index.php/Main_Page) has many examples in the real world of statistics being used (correctly and incorrectly) or places where it should have been used.  Great place to find interesting examples.
+
+-- 
+Gregory (Greg) L. Snow Ph.D.
+Statistical Data Center
+Intermountain Healthcare
+greg.snow at imail.org
+801.408.8111
+
+
+> -----Original Message-----
+> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-
+> bounces at r-project.org] On Behalf Of Christophe Genolini
+> Sent: Wednesday, June 23, 2010 12:09 PM
+> To: r-sig-teaching at r-project.org
+> Subject: [R-sig-teaching] Statistics are SO boring...
+> 
+> Hi the list,
+> 
+> As a statistics teacher, I teach to NOT-scientists student, public that
+> it is permanently necessary to motivate. I am thus in search of
+> examples
+> both scientific and playful to illustrate my courses. It is not always
+> easy to find. As other teacher might be in the same case, I say to
+> myself that we could maybe share our 'best' examples?
+> 
+> So I start: a social psychologist (Nicolas Gueguen, article here
+> http://nicolas.gueguen.free.fr/index.html) has establishes that if we
+> approach a perfect unknown lady on a beach and we ask for its phone
+> number, we have 9 % of chance to obtain it. If we call her by touching
+> her slightly on the front arm, we have 19 % (!!!) of chances to obtain
+> it (test of chi2, p < 0.01). Surprising, isn't it?
+> 
+> So what are your 'best examples' ?
+> 
+> Christophe Genolini
+> 
+> --
+> -----------------------------------------
+> Christophe Genolini
+> Maitre de conf?rences
+> INSERM U669, Equipe Biostatistiques
+> UFR STAPS, Universit? de Paris Ouest-Nanterre-La D?fense
+> Web: http:\\christophe.genolini.free.fr
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+

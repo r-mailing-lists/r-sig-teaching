@@ -1,0 +1,440 @@
+From m@p|no|@10 @end|ng |rom gm@||@com  Thu Apr  9 23:32:24 2020
+From: m@p|no|@10 @end|ng |rom gm@||@com (=?UTF-8?Q?Manuel_Sp=C3=ADnola?=)
+Date: Thu, 9 Apr 2020 15:32:24 -0600
+Subject: [R-sig-teaching] Text to speech resources in R for Rstudio Notebooks
+Message-ID: <CABkCotQw=LzvERshM+OXr=MTO2zWdWf7w6EX_qd5mmcP28X9fg@mail.gmail.com>
+
+Dear list members,
+
+I am looking for text to speech resources in R to use in RStudio Notebooks
+for teaching.
+
+Any help will be appreciated.
+
+Manuel
+
+
+
+-- 
+*Manuel Sp?nola, Ph.D.*
+Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre
+Universidad Nacional
+Apartado 1350-3000
+Heredia
+COSTA RICA
+mspinola at una.cr <mspinola at una.ac.cr>
+mspinola10 at gmail.com
+Tel?fono: (506) 8706 - 4662
+Personal website: Lobito de r?o <https://sites.google.com/site/lobitoderio/>
+Institutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>
+
+	[[alternative HTML version deleted]]
+
+
+From jte||er|@@rproject @end|ng |rom gm@||@com  Sun Apr 12 16:56:09 2020
+From: jte||er|@@rproject @end|ng |rom gm@||@com (Juan Telleria Ruiz de Aguirre)
+Date: Sun, 12 Apr 2020 16:56:09 +0200
+Subject: [R-sig-teaching] Text to speech resources in R for Rstudio
+ Notebooks
+In-Reply-To: <CABkCotQw=LzvERshM+OXr=MTO2zWdWf7w6EX_qd5mmcP28X9fg@mail.gmail.com>
+References: <CABkCotQw=LzvERshM+OXr=MTO2zWdWf7w6EX_qd5mmcP28X9fg@mail.gmail.com>
+Message-ID: <CAJXDcw1X0q_M+6Xu5SXQ=bMi4tDgGRGgOz0EA4sCSKWV4emyHQ@mail.gmail.com>
+
+You can find at GitHub some DeepMind's WaveNet neural network topologies
+implemented with Python's keras:
+
+https://github.com/basveeling/wavenet
+
+You could translate it to R's keras with some work... It shall not be so
+difficult at all! :)
+
+https://cran.r-project.org/web/packages/keras/index.html
+
+An additional resource for Text Mining (Not Text to Speech, but for
+preprocessing), and which seems great for academics is the following one:
+
+https://www.tidytextmining.com/
+
+Kind regards,
+Juan Telleria
+
+El jueves, 9 de abril de 2020, Manuel Sp?nola <mspinola10 at gmail.com>
+escribi?:
+
+> Dear list members,
+>
+> I am looking for text to speech resources in R to use in RStudio Notebooks
+> for teaching.
+>
+> Any help will be appreciated.
+>
+> Manuel
+>
+>
+>
+> --
+> *Manuel Sp?nola, Ph.D.*
+> Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre
+> Universidad Nacional
+> Apartado 1350-3000
+> Heredia
+> COSTA RICA
+> mspinola at una.cr <mspinola at una.ac.cr>
+> mspinola10 at gmail.com
+> Tel?fono: (506) 8706 - 4662
+> Personal website: Lobito de r?o <https://sites.google.com/
+> site/lobitoderio/>
+> Institutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+	[[alternative HTML version deleted]]
+
+
+From cet|nk@y@@m|ne @end|ng |rom gm@||@com  Sun Apr 12 20:47:08 2020
+From: cet|nk@y@@m|ne @end|ng |rom gm@||@com (=?utf-8?Q?Mine_=C3=87etinkaya-Rundel?=)
+Date: Sun, 12 Apr 2020 19:47:08 +0100
+Subject: [R-sig-teaching] Text to speech resources in R for Rstudio
+ Notebooks
+In-Reply-To: <CAJXDcw1X0q_M+6Xu5SXQ=bMi4tDgGRGgOz0EA4sCSKWV4emyHQ@mail.gmail.com>
+References: <CABkCotQw=LzvERshM+OXr=MTO2zWdWf7w6EX_qd5mmcP28X9fg@mail.gmail.com>
+ <CAJXDcw1X0q_M+6Xu5SXQ=bMi4tDgGRGgOz0EA4sCSKWV4emyHQ@mail.gmail.com>
+Message-ID: <d424cc9f-60f7-4046-a046-4a9de28b55bd@Spark>
+
+There is also an R package called ari that might be of interest:?https://cran.r-project.org/web/packages/ari/index.html.
+
+Best,
+Mine
+
+On 12 Apr 2020, 15:56 +0100, Juan Telleria Ruiz de Aguirre <jtelleria.rproject at gmail.com>, wrote:
+> You can find at GitHub some DeepMind's WaveNet neural network topologies
+> implemented with Python's keras:
+>
+> https://github.com/basveeling/wavenet
+>
+> You could translate it to R's keras with some work... It shall not be so
+> difficult at all! :)
+>
+> https://cran.r-project.org/web/packages/keras/index.html
+>
+> An additional resource for Text Mining (Not Text to Speech, but for
+> preprocessing), and which seems great for academics is the following one:
+>
+> https://www.tidytextmining.com/
+>
+> Kind regards,
+> Juan Telleria
+>
+> El jueves, 9 de abril de 2020, Manuel Sp?nola <mspinola10 at gmail.com>
+> escribi?:
+>
+> > Dear list members,
+> >
+> > I am looking for text to speech resources in R to use in RStudio Notebooks
+> > for teaching.
+> >
+> > Any help will be appreciated.
+> >
+> > Manuel
+> >
+> >
+> >
+> > --
+> > *Manuel Sp?nola, Ph.D.*
+> > Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre
+> > Universidad Nacional
+> > Apartado 1350-3000
+> > Heredia
+> > COSTA RICA
+> > mspinola at una.cr <mspinola at una.ac.cr>
+> > mspinola10 at gmail.com
+> > Tel?fono: (506) 8706 - 4662
+> > Personal website: Lobito de r?o <https://sites.google.com/
+> > site/lobitoderio/>
+> > Institutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>
+> >
+> > [[alternative HTML version deleted]]
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >
+>
+> [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+	[[alternative HTML version deleted]]
+
+
+From jte||er|@@rproject @end|ng |rom gm@||@com  Sun Apr 12 23:57:16 2020
+From: jte||er|@@rproject @end|ng |rom gm@||@com (Juan Telleria Ruiz de Aguirre)
+Date: Sun, 12 Apr 2020 23:57:16 +0200
+Subject: [R-sig-teaching] Text to speech resources in R for Rstudio
+ Notebooks
+In-Reply-To: <d424cc9f-60f7-4046-a046-4a9de28b55bd@Spark>
+References: <CABkCotQw=LzvERshM+OXr=MTO2zWdWf7w6EX_qd5mmcP28X9fg@mail.gmail.com>
+ <CAJXDcw1X0q_M+6Xu5SXQ=bMi4tDgGRGgOz0EA4sCSKWV4emyHQ@mail.gmail.com>
+ <d424cc9f-60f7-4046-a046-4a9de28b55bd@Spark>
+Message-ID: <CAJXDcw1Vn31iuA+JCMW6FPRLhZKaRgseB+YzE1U77g05+cAdSw@mail.gmail.com>
+
+Also see:
+
+https://cran.r-project.org/web/views/NaturalLanguageProcessing.html
+
+El domingo, 12 de abril de 2020, Mine ?etinkaya-Rundel <
+cetinkaya.mine at gmail.com> escribi?:
+
+> There is also an R package called ari that might be of interest:
+> https://cran.r-project.org/web/packages/ari/index.html.
+>
+> Best,
+> Mine
+>
+> On 12 Apr 2020, 15:56 +0100, Juan Telleria Ruiz de Aguirre <
+> jtelleria.rproject at gmail.com>, wrote:
+>
+> You can find at GitHub some DeepMind's WaveNet neural network topologies
+> implemented with Python's keras:
+>
+> https://github.com/basveeling/wavenet
+>
+> You could translate it to R's keras with some work... It shall not be so
+> difficult at all! :)
+>
+> https://cran.r-project.org/web/packages/keras/index.html
+>
+> An additional resource for Text Mining (Not Text to Speech, but for
+> preprocessing), and which seems great for academics is the following one:
+>
+> https://www.tidytextmining.com/
+>
+> Kind regards,
+> Juan Telleria
+>
+> El jueves, 9 de abril de 2020, Manuel Sp?nola <mspinola10 at gmail.com>
+> escribi?:
+>
+> Dear list members,
+>
+> I am looking for text to speech resources in R to use in RStudio Notebooks
+> for teaching.
+>
+> Any help will be appreciated.
+>
+> Manuel
+>
+>
+>
+> --
+> *Manuel Sp?nola, Ph.D.*
+> Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre
+> Universidad Nacional
+> Apartado 1350-3000
+> Heredia
+> COSTA RICA
+> mspinola at una.cr <mspinola at una.ac.cr>
+> mspinola10 at gmail.com
+> Tel?fono: (506) 8706 - 4662
+> Personal website: Lobito de r?o <https://sites.google.com/
+> site/lobitoderio/>
+> Institutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>
+>
+> [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+> [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+
+	[[alternative HTML version deleted]]
+
+
+From m@p|no|@10 @end|ng |rom gm@||@com  Mon Apr 13 17:29:30 2020
+From: m@p|no|@10 @end|ng |rom gm@||@com (=?UTF-8?Q?Manuel_Sp=C3=ADnola?=)
+Date: Mon, 13 Apr 2020 09:29:30 -0600
+Subject: [R-sig-teaching] Text to speech resources in R for Rstudio
+ Notebooks
+In-Reply-To: <BL0PR0102MB339496EF3EDD9C7469E8AFB8F3DD0@BL0PR0102MB3394.prod.exchangelabs.com>
+References: <CABkCotQw=LzvERshM+OXr=MTO2zWdWf7w6EX_qd5mmcP28X9fg@mail.gmail.com>
+ <CAJXDcw1X0q_M+6Xu5SXQ=bMi4tDgGRGgOz0EA4sCSKWV4emyHQ@mail.gmail.com>
+ <d424cc9f-60f7-4046-a046-4a9de28b55bd@Spark>
+ <BL0PR0102MB339496EF3EDD9C7469E8AFB8F3DD0@BL0PR0102MB3394.prod.exchangelabs.com>
+Message-ID: <CABkCotR3nmxXnesgmGKgQ2E7_3QGpWxDoE4NhXwSWOjxveuOwA@mail.gmail.com>
+
+Thank you all for the responses.
+
+Terence, is there a cost for using the Amazon API?
+
+Manuel
+
+El lun., 13 abr. 2020 a las 8:44, Kwok Chuen T Teo (<kwokchuen.teo at shu.edu>)
+escribi?:
+
+> I second Mine's suggestion. I've been using the {ari} package in my
+> courses since we went online. You'll need the {aws.polly} package as well (
+> https://github.com/cloudyr/aws.polly). There is some setup involved to
+> authenticate with AWS but it works well with R Markdown.
+>
+> Best,
+> Terence
+>
+> Terence K. Teo, Ph.D.
+> Assistant Professor ? Political Science
+> tteo.github.io
+>
+> ________________________________________
+> From: R-sig-teaching <r-sig-teaching-bounces at r-project.org> on behalf of
+> Mine ?etinkaya-Rundel <cetinkaya.mine at gmail.com>
+> Sent: Sunday, April 12, 2020 2:47 PM
+> To: Manuel Sp?nola; Juan Telleria Ruiz de Aguirre
+> Cc: R-sig-teaching
+> Subject: Re: [R-sig-teaching] Text to speech resources in R for Rstudio
+> Notebooks
+>
+> There is also an R package called ari that might be of interest:
+> https://nam05.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcran.r-project.org%2Fweb%2Fpackages%2Fari%2Findex.html&amp;data=02%7C01%7Ckwokchuen.teo%40shu.edu%7Cec47dcd6326c4647823c08d7df11f6a4%7C51f07c2253b744dfb97ca13261d71075%7C1%7C0%7C637223140576415952&amp;sdata=HYWA0Gmdl8omUuCaLwTAySvfYKqgUIs25f1vatG%2FgCs%3D&amp;reserved=0
+> .
+>
+> Best,
+> Mine
+>
+> On 12 Apr 2020, 15:56 +0100, Juan Telleria Ruiz de Aguirre <
+> jtelleria.rproject at gmail.com>, wrote:
+> > You can find at GitHub some DeepMind's WaveNet neural network topologies
+> > implemented with Python's keras:
+> >
+> >
+> https://nam05.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2Fbasveeling%2Fwavenet&amp;data=02%7C01%7Ckwokchuen.teo%40shu.edu%7Cec47dcd6326c4647823c08d7df11f6a4%7C51f07c2253b744dfb97ca13261d71075%7C1%7C0%7C637223140576415952&amp;sdata=P%2FdAGfcXGazFHeUPBAirz5CHDBqrI6Kpdphc6CMRtOo%3D&amp;reserved=0
+> >
+> > You could translate it to R's keras with some work... It shall not be so
+> > difficult at all! :)
+> >
+> >
+> https://nam05.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcran.r-project.org%2Fweb%2Fpackages%2Fkeras%2Findex.html&amp;data=02%7C01%7Ckwokchuen.teo%40shu.edu%7Cec47dcd6326c4647823c08d7df11f6a4%7C51f07c2253b744dfb97ca13261d71075%7C1%7C0%7C637223140576415952&amp;sdata=dbXPYsLFSnHXYbZ2IpAmJyET%2FGa4H5Mfkonrh9rhH0Q%3D&amp;reserved=0
+> >
+> > An additional resource for Text Mining (Not Text to Speech, but for
+> > preprocessing), and which seems great for academics is the following one:
+> >
+> >
+> https://nam05.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.tidytextmining.com%2F&amp;data=02%7C01%7Ckwokchuen.teo%40shu.edu%7Cec47dcd6326c4647823c08d7df11f6a4%7C51f07c2253b744dfb97ca13261d71075%7C1%7C0%7C637223140576415952&amp;sdata=%2B1LfZeAa41umEHJVm7ElAV78cXQHLwXnNn3j8tDrE%2B4%3D&amp;reserved=0
+> >
+> > Kind regards,
+> > Juan Telleria
+> >
+> > El jueves, 9 de abril de 2020, Manuel Sp?nola <mspinola10 at gmail.com>
+> > escribi?:
+> >
+> > > Dear list members,
+> > >
+> > > I am looking for text to speech resources in R to use in RStudio
+> Notebooks
+> > > for teaching.
+> > >
+> > > Any help will be appreciated.
+> > >
+> > > Manuel
+> > >
+> > >
+> > >
+> > > --
+> > > *Manuel Sp?nola, Ph.D.*
+> > > Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre
+> > > Universidad Nacional
+> > > Apartado 1350-3000
+> > > Heredia
+> > > COSTA RICA
+> > > mspinola at una.cr <mspinola at una.ac.cr>
+> > > mspinola10 at gmail.com
+> > > Tel?fono: (506) 8706 - 4662
+> > > Personal website: Lobito de r?o <
+> https://nam05.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsites.google.com%2F&amp;data=02%7C01%7Ckwokchuen.teo%40shu.edu%7Cec47dcd6326c4647823c08d7df11f6a4%7C51f07c2253b744dfb97ca13261d71075%7C1%7C0%7C637223140576415952&amp;sdata=sup1u3ZbXsGhxmFqbxSOdhrQQtBsWHPZaRFtnjFXo28%3D&amp;reserved=0
+> > > site/lobitoderio/>
+> > > Institutional website: ICOMVIS <
+> https://nam05.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.icomvis.una.ac.cr%2F&amp;data=02%7C01%7Ckwokchuen.teo%40shu.edu%7Cec47dcd6326c4647823c08d7df11f6a4%7C51f07c2253b744dfb97ca13261d71075%7C1%7C0%7C637223140576415952&amp;sdata=6aNFrws9Uxwq9%2F4o%2FuE9ifzmFqqaOlx%2FR8ow0KPVWV4%3D&amp;reserved=0
+> >
+> > >
+> > > [[alternative HTML version deleted]]
+> > >
+> > > _______________________________________________
+> > > R-sig-teaching at r-project.org mailing list
+> > >
+> https://nam05.safelinks.protection.outlook.com/?url=https%3A%2F%2Fstat.ethz.ch%2Fmailman%2Flistinfo%2Fr-sig-teaching&amp;data=02%7C01%7Ckwokchuen.teo%40shu.edu%7Cec47dcd6326c4647823c08d7df11f6a4%7C51f07c2253b744dfb97ca13261d71075%7C1%7C0%7C637223140576415952&amp;sdata=vAE8CdwkSMBPg%2BNBha%2BnlBPbFgHFbB5DWI%2BXKR7GkpM%3D&amp;reserved=0
+> > >
+> >
+> > [[alternative HTML version deleted]]
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> >
+> https://nam05.safelinks.protection.outlook.com/?url=https%3A%2F%2Fstat.ethz.ch%2Fmailman%2Flistinfo%2Fr-sig-teaching&amp;data=02%7C01%7Ckwokchuen.teo%40shu.edu%7Cec47dcd6326c4647823c08d7df11f6a4%7C51f07c2253b744dfb97ca13261d71075%7C1%7C0%7C637223140576415952&amp;sdata=vAE8CdwkSMBPg%2BNBha%2BnlBPbFgHFbB5DWI%2BXKR7GkpM%3D&amp;reserved=0
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+>
+> https://nam05.safelinks.protection.outlook.com/?url=https%3A%2F%2Fstat.ethz.ch%2Fmailman%2Flistinfo%2Fr-sig-teaching&amp;data=02%7C01%7Ckwokchuen.teo%40shu.edu%7Cec47dcd6326c4647823c08d7df11f6a4%7C51f07c2253b744dfb97ca13261d71075%7C1%7C0%7C637223140576415952&amp;sdata=vAE8CdwkSMBPg%2BNBha%2BnlBPbFgHFbB5DWI%2BXKR7GkpM%3D&amp;reserved=0
+> ** WARNING: This email originated from outside of Seton Hall University.
+> Do not click links or open attachments unless you recognize the sender and
+> know the content is safe. **
+>
+>
+
+-- 
+*Manuel Sp?nola, Ph.D.*
+Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre
+Universidad Nacional
+Apartado 1350-3000
+Heredia
+COSTA RICA
+mspinola at una.cr <mspinola at una.ac.cr>
+mspinola10 at gmail.com
+Tel?fono: (506) 8706 - 4662
+Personal website: Lobito de r?o <https://sites.google.com/site/lobitoderio/>
+Institutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>
+
+	[[alternative HTML version deleted]]
+
+
+From @gy@@|@ @end|ng |rom hotm@||@com  Fri Apr 24 06:50:19 2020
+From: @gy@@|@ @end|ng |rom hotm@||@com (Amoakoh Gyasi-Agyei)
+Date: Fri, 24 Apr 2020 04:50:19 +0000
+Subject: [R-sig-teaching] Formula for  Std. Error of model parameters in R
+Message-ID: <SC1PR80MB20633D5B52F46FB0E7F31EF1AAD00@SC1PR80MB2063.lamprd80.prod.outlook.com>
+
+Dear All:
+I'm very sorry to bother you. Please could anyone point me to the formula for the  Std. Error output on R's console in nonlinear regression modelling? Assume that we use the R function nls() to fit the model f onto a dataset. If we execute
+
+summary(f)
+
+then one of the summary stats is the  Std. Error. Please how does R compute the standard error for each model parameter (or coefficient)? Thanks.
+
+
+
+
+Best regards
+
+Amoakoh
+
+
+
+
+	[[alternative HTML version deleted]]
+
+

@@ -1,0 +1,74 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2020-03",
+  "messages": [
+    {
+      "id": "msg-72e0c16ad673",
+      "message_id": "<CABkCotS=4Zo3MU2GTV6wFFQyDK0=B6safsserTD-0XaDJGW-xA@mail.gmail.com>",
+      "from_name": "Manuel Spínola",
+      "from_email_hash": "bd9f95c558444b18cc0bdb5b953c6863ec4a10dad5e1f84321cbae40474081ca",
+      "date": "2020-03-29T07:42:33-06:00",
+      "subject": "[R-sig-teaching] R packages to make interactive homeworks or exams that you can grade",
+      "subject_clean": "R packages to make interactive homeworks or exams that you can grade",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear list members,\n\nI am looking for a way to make interactive homeworks o exams when teaching\nstatistics in R.\n\nI have been looking on the package gradethis but I do not see how this\npackage works in the way that I am looking for.\n\nI am looking for something that you can send to the students and the\nstudent send it back to you and you can grade the homework or exam in a an\ninteractive way.\n\nManuel\n\n-- \n*Manuel Sp?nola, Ph.D.*\nInstituto Internacional en Conservaci?n y Manejo de Vida Silvestre\nUniversidad Nacional\nApartado 1350-3000\nHeredia\nCOSTA RICA\nmspinola at una.cr <mspinola at una.ac.cr>\nmspinola10 at gmail.com\nTel?fono: (506) 8706 - 4662\nPersonal website: Lobito de r?o <https://sites.google.com/site/lobitoderio/>\nInstitutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear list members,\n\nI am looking for a way to make interactive homeworks o exams when teaching\nstatistics in R.\n\nI have been looking on the package gradethis but I do not see how this\npackage works in",
+      "thread_id": "thread-72e0c16ad673",
+      "thread_depth": 0,
+      "month": "2020-03"
+    },
+    {
+      "id": "msg-6a585fca7103",
+      "message_id": "<CADcAK00aWjTAj1W6x8WCT0FUFdgeVxOCkPX9N8B5ZJ-0nnm_QA@mail.gmail.com>",
+      "from_name": "Arthur Charpentier",
+      "from_email_hash": "ded1a4f360b8097023ab5cf9226b490cfb0153dbd17373860fd5bd5ffd534156",
+      "date": "2020-03-29T09:57:09-04:00",
+      "subject": "[R-sig-teaching]  R packages to make interactive homeworks or exams that you can grade",
+      "subject_clean": "R packages to make interactive homeworks or exams that you can grade",
+      "in_reply_to": "<CABkCotS=4Zo3MU2GTV6wFFQyDK0=B6safsserTD-0XaDJGW-xA@mail.gmail.com>",
+      "references": [
+        "<CABkCotS=4Zo3MU2GTV6wFFQyDK0=B6safsserTD-0XaDJGW-xA@mail.gmail.com>"
+      ],
+      "body_plain": "Hi Manuel\nAchim Zeilis gave a great talk two years ago\nhttps://eeecon.uibk.ac.at/~zeileis/papers/eRum-2018.pdf (and\nhttps://www.youtube.com/watch?v=NMIzbrklBEE) about http://www.r-exams.org/\nArthur\n\nLe dim. 29 mars 2020 ? 09:42, Manuel Sp?nola <mspinola10 at gmail.com> a\n?crit :\n\n> Dear list members,\n>\n> I am looking for a way to make interactive homeworks o exams when teaching\n> statistics in R.\n>\n> I have been looking on the package gradethis but I do not see how this\n> package works in the way that I am looking for.\n>\n> I am looking for something that you can send to the students and the\n> student send it back to you and you can grade the homework or exam in a an\n> interactive way.\n>\n> Manuel\n>\n> --\n> *Manuel Sp?nola, Ph.D.*\n> Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre\n> Universidad Nacional\n> Apartado 1350-3000\n> Heredia\n> COSTA RICA\n> mspinola at una.cr <mspinola at una.ac.cr>\n> mspinola10 at gmail.com\n> Tel?fono: (506) 8706 - 4662\n> Personal website: Lobito de r?o <\n> https://sites.google.com/site/lobitoderio/>\n> Institutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n-- \nArthur Charpentier\nUniversit? du Qu?bec ? Montr?al\nemail: charpentier.arthur at uqam.ca\nurl: http://freakonometrics.github.io\ntwitter: @freakonometrics <https://twitter.com/freakonometrics>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi Manuel\nAchim Zeilis gave a great talk two years ago\nhttps://eeecon.uibk.ac.at/~zeileis/papers/eRum-2018.pdf (and\nhttps://www.youtube.com/watch?v=NMIzbrklBEE) about http://www.r-exams.org/\nArthur\n\nL",
+      "thread_id": "thread-72e0c16ad673",
+      "thread_depth": 1,
+      "month": "2020-03"
+    },
+    {
+      "id": "msg-467c5074d56a",
+      "message_id": "<CABkCotSoOLGQTKUiu7-hrkFXEtk26axwfUy8cT3MZ_oMDBXZFA@mail.gmail.com>",
+      "from_name": "Manuel Spínola",
+      "from_email_hash": "bd9f95c558444b18cc0bdb5b953c6863ec4a10dad5e1f84321cbae40474081ca",
+      "date": "2020-03-29T08:04:12-06:00",
+      "subject": "[R-sig-teaching]  R packages to make interactive homeworks or exams that you can grade",
+      "subject_clean": "R packages to make interactive homeworks or exams that you can grade",
+      "in_reply_to": "<CADcAK00aWjTAj1W6x8WCT0FUFdgeVxOCkPX9N8B5ZJ-0nnm_QA@mail.gmail.com>",
+      "references": [
+        "<CABkCotS=4Zo3MU2GTV6wFFQyDK0=B6safsserTD-0XaDJGW-xA@mail.gmail.com>",
+        "<CADcAK00aWjTAj1W6x8WCT0FUFdgeVxOCkPX9N8B5ZJ-0nnm_QA@mail.gmail.com>"
+      ],
+      "body_plain": "Thank you very much Arthur.\n\nI am going to take a look.\n\nManuel\n\nEl dom., 29 mar. 2020 a las 7:57, Arthur Charpentier (<\narthur.charpentier at gmail.com>) escribi?:\n\n> Hi Manuel\n> Achim Zeilis gave a great talk two years ago\n> https://eeecon.uibk.ac.at/~zeileis/papers/eRum-2018.pdf (and\n> https://www.youtube.com/watch?v=NMIzbrklBEE) about http://www.r-exams.org/\n> Arthur\n>\n> Le dim. 29 mars 2020 ? 09:42, Manuel Sp?nola <mspinola10 at gmail.com> a\n> ?crit :\n>\n>> Dear list members,\n>>\n>> I am looking for a way to make interactive homeworks o exams when teaching\n>> statistics in R.\n>>\n>> I have been looking on the package gradethis but I do not see how this\n>> package works in the way that I am looking for.\n>>\n>> I am looking for something that you can send to the students and the\n>> student send it back to you and you can grade the homework or exam in a an\n>> interactive way.\n>>\n>> Manuel\n>>\n>> --\n>> *Manuel Sp?nola, Ph.D.*\n>> Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre\n>> Universidad Nacional\n>> Apartado 1350-3000\n>> Heredia\n>> COSTA RICA\n>> mspinola at una.cr <mspinola at una.ac.cr>\n>> mspinola10 at gmail.com\n>> Tel?fono: (506) 8706 - 4662\n>> Personal website: Lobito de r?o <\n>> https://sites.google.com/site/lobitoderio/>\n>> Institutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>\n>>\n>>         [[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>\n>\n> --\n> Arthur Charpentier\n> Universit? du Qu?bec ? Montr?al\n> email: charpentier.arthur at uqam.ca\n> url: http://freakonometrics.github.io\n> twitter: @freakonometrics <https://twitter.com/freakonometrics>\n>\n\n\n-- \n*Manuel Sp?nola, Ph.D.*\nInstituto Internacional en Conservaci?n y Manejo de Vida Silvestre\nUniversidad Nacional\nApartado 1350-3000\nHeredia\nCOSTA RICA\nmspinola at una.cr <mspinola at una.ac.cr>\nmspinola10 at gmail.com\nTel?fono: (506) 8706 - 4662\nPersonal website: Lobito de r?o <https://sites.google.com/site/lobitoderio/>\nInstitutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Thank you very much Arthur.\n\nI am going to take a look.\n\nManuel\n\nEl dom., 29 mar. 2020 a las 7:57, Arthur Charpentier (<\narthur.charpentier at gmail.com>) escribi?:\n\n> Hi Manuel\n> Achim Zeilis gave a ",
+      "thread_id": "thread-72e0c16ad673",
+      "thread_depth": 2,
+      "month": "2020-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-72e0c16ad673",
+      "subject": "R packages to make interactive homeworks or exams that you can grade",
+      "message_count": 3,
+      "participants": [
+        "Arthur Charpentier",
+        "Manuel Spínola"
+      ],
+      "started": "2020-03-29T07:42:33-06:00",
+      "last_reply": "2020-03-29T08:04:12-06:00",
+      "root_message_id": "msg-72e0c16ad673"
+    }
+  ]
+}

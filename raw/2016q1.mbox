@@ -1,0 +1,82 @@
+From sstoline at gmail.com  Thu Jan  7 13:23:02 2016
+From: sstoline at gmail.com (Steven Stoline)
+Date: Thu, 7 Jan 2016 07:23:02 -0500
+Subject: [R-sig-teaching] Solve an Equation Including Integral
+Message-ID: <CAHDp66Cpnu_SVaN5uPRQ=ULRb3ZGYAaJm8pA1=UiWWA2xbLOxA@mail.gmail.com>
+
+Dear All:
+
+I am trying to solve an equation including an integral for unknown
+parameter.
+
+
+Is this can be done in R? if so, any helps will be highly appreciated
+
+
+
+### The following function is a function of t, given exi, nu, and alpha.
+
+
+fun<-function(exi,nu,alpha)
+(nu+t^2)^(-(nu+1)/2)*exp(((nu+1)*exi*t)/((nu+t^2)^0.5))
+
+
+### I want to solve "[Integral(-Inf,100) fun(exi,nu,alpha)]-(1-alpha)=0"
+for t.
+
+### That is, find the value of t which satisfy the equation:
+
+             [Integral(-Inf,100) fun(exi,nu,alpha)]-(1-alpha)=0
+
+
+### for example given: alpha = 0.05, nu = 20 , exi = 0.5, Solve for t.
+
+
+with many thanks
+steve
+
+-------------------------
+Steven M. Stoline
+1123 Forest Avenue
+Portland, ME 04112
+sstoline at gmail.com
+
+	[[alternative HTML version deleted]]
+
+
+From kilburnw at mail.gvsu.edu  Mon Feb 15 16:23:02 2016
+From: kilburnw at mail.gvsu.edu (Whitt Kilburn)
+Date: Mon, 15 Feb 2016 10:23:02 -0500
+Subject: [R-sig-teaching] accessible introductions to ggplot2 for non
+	stats/cs undergraduates?
+Message-ID: <CAOnqpJhSysAY+aEfRsw5cSviDqGQWLp9YD0rs3tb7_EG0WuXQg@mail.gmail.com>
+
+Hello all,
+
+Could anyone please refer me to your preferred introduction to the
+components of ggplot()?
+
+If you have notes online or handouts you provide your students, I would
+sincerely appreciate seeing how you all introduce students to the syntax
+and broader theory.
+
+My students are primarily social science majors, but they have all
+completed an introductory applied statistics course.
+
+Really any thoughts on strategies or resources would be appreciated.
+
+Thank you all very much for your time.
+
+best,
+Whitt
+**************************************************
+H. Whitt Kilburn
+Associate Professor
+Political Science Department
+Grand Valley State University
+Allendale, Michigan
+***************************************************
+
+	[[alternative HTML version deleted]]
+
+

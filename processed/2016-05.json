@@ -1,0 +1,761 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2016-05",
+  "messages": [
+    {
+      "id": "msg-293499da636e",
+      "message_id": "<068e102d-b913-35cd-12e2-21cde61b6cf7@effectivedefense.org>",
+      "from_name": "Spencer Graves",
+      "from_email_hash": "6f4fcfd993c553672fdb3851315d4aa66695050817dc265276b19803a73bd0ef",
+      "date": "2016-05-02T08:07:26-05:00",
+      "subject": "[R-sig-teaching] Uses of Normal Probability Plots",
+      "subject_clean": "Uses of Normal Probability Plots",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello:\n\n\n\n       Does anyone have a good reference on the uses of normal \nprobability plots?\n\n\n\n       The Wikipedia article on \"Normal probability plot\" includes \nhistograms with normal plots of normal, right skewed, and uniformly \ndistributed data.  I'd like to expand it to include examples with \noutliers, kurtosis, a need for transformations -- especially to \nlog-normal -- and mixtures.  In addition, I'd like to include \ndiscussions of plotting, e.g., 15 effects from a 16-run 2-level \nfractional factorial identifying the significant effects as well as \noutliers.  I think the article should also discuss plotting multiple \nlines on the same plot to compare different samples and to search for \nheteroscedasticity.  And I'd like to show plots with datax = both TRUE \nand FALSE:  The default is FALSE.  However, that creates problems with \nvisual processing with plots that are wider than they are tall, because \nresearch on cognitive processing of graphics indicates that human \njudgements about slope are more accurate with lines near 45 degrees that \nwith other angles except for horizontal and vertical.  (I can find a \nreference;  I don't have it at my fingertips.)\n\n\n       If I can't find such a paper on normal plots, I'd be happy to \ntake the lead in writing one, but I'd like to have collaborators -- and \npreferably some confirmation from an R Journal editor that such an \narticle would likely be favorably considered;  it may also need to \ninclude discussions of normal probability plotting with traditional \ngraphics, lattice and ggplot2.\n\n\n       Thanks,\n\n       Spencer Graves\n\n\np.s.  I plan to change the qqnorm labeling from \"Sample Quantiles\" and \n\"Theoretical Quantiles\" to something more commonly understood like \n\"data\" and \"normal theory\".  \"Sample Quantiles\" and \"Theoretical \nQuantiles\" are fine with an audience who know what quantiles are -- or \nfor a class where that's one thing you want them to know.  However, they \nare an obstacle to communications with a general audience -- which I \nrecently learned from a group of non-statisticians with whom I'm working.\n\n\n\n\n\n\nAs noted above, normal probability plots can detect substantive \ndepartures from normality including outliers, skewness, kurtosis, a need \nfor transformations, and mixtures.  They can also be used to identify \nsignificant effects in plots of coefficients, e.g., from designed \nexperiments and outliers in such plots and look for heterscedasticity \nbetween levels of explanatory variables in regression and analysis of \nvariance.  This section gives examples of each using simulated data.\n\n\n       I was recently challenged by non-statistical collaborators, who \nraved about what I think was a histogram suggestive of Zipf's law, when \na log-normal QQ plot of similar data suggested",
+      "body_snippet": "Hello:\n\n\n\n       Does anyone have a good reference on the uses of normal \nprobability plots?\n\n\n\n       The Wikipedia article on \"Normal probability plot\" includes \nhistograms with normal plots of norm",
+      "thread_id": "thread-293499da636e",
+      "thread_depth": 0,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-b2c583c04eb4",
+      "message_id": "<CAHDp66DzBWQpwjFrg01KuN-xgckjb9_=j+pwh8bbJXCZ-Mw7zg@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2016-05-17T08:44:33-04:00",
+      "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
+      "subject_clean": "Plot f(x) = x^(1/5)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\n\n\nI am trying to plot the function f(x) = x^(1/5) for x=seq(-2,2,0.01). It\ngive me only the plot of f(x) for the positive part of x. I checked the\nvalues of f(x), it is NaN for all negative values of x.\n\n*this is my code:*\n\n\nx<-seq(-2,2,0.01)\ny<- (x)^(1/5)\nplot(x,y, type=\"l\", lwd=3, xlab = \" \", ylab = \" \", col=\"blue\")\nabline(v=0, col=\"gray\", lty=2, lwd=3)\nabline(h=0, col=\"gray\", lty=2, lwd=3)\n\n\n\nany help will be appreciated.\n\n\nwith many thanks\nsteve\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\n\nI am trying to plot the function f(x) = x^(1/5) for x=seq(-2,2,0.01). It\ngive me only the plot of f(x) for the positive part of x. I checked the\nvalues of f(x), it is NaN for all negative ",
+      "thread_id": "thread-b2c583c04eb4",
+      "thread_depth": 0,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-f35fe12d8664",
+      "message_id": "<327a5b07-46d9-9b0c-5627-388434e64db0@purdue.edu>",
+      "from_name": "Mark Daniel Ward",
+      "from_email_hash": "9660c15b92052c1ae502524414654a6571d365b2d3e5844d0a72a5172a130df6",
+      "date": "2016-05-17T08:51:50-04:00",
+      "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
+      "subject_clean": "Plot f(x) = x^(1/5)",
+      "in_reply_to": "<CAHDp66DzBWQpwjFrg01KuN-xgckjb9_=j+pwh8bbJXCZ-Mw7zg@mail.gmail.com>",
+      "references": [
+        "<CAHDp66DzBWQpwjFrg01KuN-xgckjb9_=j+pwh8bbJXCZ-Mw7zg@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Steven,\n\nWell, the values x^(1/5) are complex-valued (not real-valued) when x is \nnegative.\n\nDid you want to plot the absolute value of x^(1/5) instead?\n\nMark\n\nMark Daniel Ward, Ph.D.\nAssociate Professor and Undergraduate Chair\nDepartment of Statistics\nPurdue University\n150 North University Street\nWest Lafayette, IN 47907-2067\nmdw at purdue.edu\nphone: (765) 496-9563\n\n\nOn 5/17/16 8:44 AM, Steven Stoline wrote:\n> Dear All:\n>\n>\n> I am trying to plot the function f(x) = x^(1/5) for x=seq(-2,2,0.01). It\n> give me only the plot of f(x) for the positive part of x. I checked the\n> values of f(x), it is NaN for all negative values of x.\n>\n> *this is my code:*\n>\n>\n> x<-seq(-2,2,0.01)\n> y<- (x)^(1/5)\n> plot(x,y, type=\"l\", lwd=3, xlab = \" \", ylab = \" \", col=\"blue\")\n> abline(v=0, col=\"gray\", lty=2, lwd=3)\n> abline(h=0, col=\"gray\", lty=2, lwd=3)\n>\n>\n>\n> any help will be appreciated.\n>\n>\n> with many thanks\n> steve",
+      "body_snippet": "Dear Steven,\n\nWell, the values x^(1/5) are complex-valued (not real-valued) when x is \nnegative.\n\nDid you want to plot the absolute value of x^(1/5) instead?\n\nMark\n\nMark Daniel Ward, Ph.D.\nAssociate P",
+      "thread_id": "thread-b2c583c04eb4",
+      "thread_depth": 1,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-2fdf3fabb044",
+      "message_id": "<CAAxdm-6h74YAyffQG3snjbDfv1fBDDzxrJYb0cX59S8A8eDKsQ@mail.gmail.com>",
+      "from_name": "jim holtman",
+      "from_email_hash": "46f979d1a5bf6fa8b5559d3a049add9a0eb45fffc6a219e7401d97ba07ef9a0f",
+      "date": "2016-05-17T08:52:35-04:00",
+      "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
+      "subject_clean": "Plot f(x) = x^(1/5)",
+      "in_reply_to": "<CAHDp66DzBWQpwjFrg01KuN-xgckjb9_=j+pwh8bbJXCZ-Mw7zg@mail.gmail.com>",
+      "references": [
+        "<CAHDp66DzBWQpwjFrg01KuN-xgckjb9_=j+pwh8bbJXCZ-Mw7zg@mail.gmail.com>"
+      ],
+      "body_plain": "System is working correctly.  A negative number cannot be raised to a\nfractional power:\n\n> (-2)^(1/5)\n[1] NaN\n\n\n\n\nJim Holtman\nData Munger Guru\n\nWhat is the problem that you are trying to solve?\nTell me what you want to do, not how you want to do it.\n\nOn Tue, May 17, 2016 at 8:44 AM, Steven Stoline <sstoline at gmail.com> wrote:\n\n> Dear All:\n>\n>\n> I am trying to plot the function f(x) = x^(1/5) for x=seq(-2,2,0.01). It\n> give me only the plot of f(x) for the positive part of x. I checked the\n> values of f(x), it is NaN for all negative values of x.\n>\n> *this is my code:*\n>\n>\n> x<-seq(-2,2,0.01)\n> y<- (x)^(1/5)\n> plot(x,y, type=\"l\", lwd=3, xlab = \" \", ylab = \" \", col=\"blue\")\n> abline(v=0, col=\"gray\", lty=2, lwd=3)\n> abline(h=0, col=\"gray\", lty=2, lwd=3)\n>\n>\n>\n> any help will be appreciated.\n>\n>\n> with many thanks\n> steve\n> --\n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "System is working correctly.  A negative number cannot be raised to a\nfractional power:\n\n> (-2)^(1/5)\n[1] NaN\n\n\n\n\nJim Holtman\nData Munger Guru\n\nWhat is the problem that you are trying to solve?\nTell m",
+      "thread_id": "thread-b2c583c04eb4",
+      "thread_depth": 1,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-6351eeed6f53",
+      "message_id": "<CAHDp66CnLBuse-CXMz1esrkHMm_KgfuJQhXeoFU=3uY7HHKzPw@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2016-05-17T09:06:45-04:00",
+      "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
+      "subject_clean": "Plot f(x) = x^(1/5)",
+      "in_reply_to": "<CAAxdm-6h74YAyffQG3snjbDfv1fBDDzxrJYb0cX59S8A8eDKsQ@mail.gmail.com>",
+      "references": [
+        "<CAHDp66DzBWQpwjFrg01KuN-xgckjb9_=j+pwh8bbJXCZ-Mw7zg@mail.gmail.com>",
+        "<CAAxdm-6h74YAyffQG3snjbDfv1fBDDzxrJYb0cX59S8A8eDKsQ@mail.gmail.com>"
+      ],
+      "body_plain": "Dear All:\n\nin my TI-Calculator (-0.5)^(1/5) = -0.8705, but in R  (-0.5)^(1/5) = NaN.\n\n\nwith thanks\nsteve\n\nOn Tue, May 17, 2016 at 8:52 AM, jim holtman <jholtman at gmail.com> wrote:\n\n> System is working correctly.  A negative number cannot be raised to a\n> fractional power:\n>\n> > (-2)^(1/5)\n> [1] NaN\n>\n>\n>\n>\n> Jim Holtman\n> Data Munger Guru\n>\n> What is the problem that you are trying to solve?\n> Tell me what you want to do, not how you want to do it.\n>\n> On Tue, May 17, 2016 at 8:44 AM, Steven Stoline <sstoline at gmail.com>\n> wrote:\n>\n>> Dear All:\n>>\n>>\n>> I am trying to plot the function f(x) = x^(1/5) for x=seq(-2,2,0.01). It\n>> give me only the plot of f(x) for the positive part of x. I checked the\n>> values of f(x), it is NaN for all negative values of x.\n>>\n>> *this is my code:*\n>>\n>>\n>> x<-seq(-2,2,0.01)\n>> y<- (x)^(1/5)\n>> plot(x,y, type=\"l\", lwd=3, xlab = \" \", ylab = \" \", col=\"blue\")\n>> abline(v=0, col=\"gray\", lty=2, lwd=3)\n>> abline(h=0, col=\"gray\", lty=2, lwd=3)\n>>\n>>\n>>\n>> any help will be appreciated.\n>>\n>>\n>> with many thanks\n>> steve\n>> --\n>> Steven M. Stoline\n>> 1123 Forest Avenue\n>> Portland, ME 04112\n>> sstoline at gmail.com\n>>\n>>         [[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>\n>\n\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\nin my TI-Calculator (-0.5)^(1/5) = -0.8705, but in R  (-0.5)^(1/5) = NaN.\n\n\nwith thanks\nsteve\n\nOn Tue, May 17, 2016 at 8:52 AM, jim holtman <jholtman at gmail.com> wrote:\n\n> System is worki",
+      "thread_id": "thread-b2c583c04eb4",
+      "thread_depth": 2,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-6d0fd18e86f2",
+      "message_id": "<CAP01uRnZ7gX_m8EtsguxfK9qRX=x2x_Rb4wHm60ye=rAXSrPBQ@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2016-05-17T09:07:38-04:00",
+      "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
+      "subject_clean": "Plot f(x) = x^(1/5)",
+      "in_reply_to": "<CAHDp66DzBWQpwjFrg01KuN-xgckjb9_=j+pwh8bbJXCZ-Mw7zg@mail.gmail.com>",
+      "references": [
+        "<CAHDp66DzBWQpwjFrg01KuN-xgckjb9_=j+pwh8bbJXCZ-Mw7zg@mail.gmail.com>"
+      ],
+      "body_plain": "Try this:\n\n y <- sign(x) * abs(x)^(1/5)\n\nOn Tue, May 17, 2016 at 8:44 AM, Steven Stoline <sstoline at gmail.com> wrote:\n> Dear All:\n>\n>\n> I am trying to plot the function f(x) = x^(1/5) for x=seq(-2,2,0.01). It\n> give me only the plot of f(x) for the positive part of x. I checked the\n> values of f(x), it is NaN for all negative values of x.\n>\n> *this is my code:*\n>\n>\n> x<-seq(-2,2,0.01)\n> y<- (x)^(1/5)\n> plot(x,y, type=\"l\", lwd=3, xlab = \" \", ylab = \" \", col=\"blue\")\n> abline(v=0, col=\"gray\", lty=2, lwd=3)\n> abline(h=0, col=\"gray\", lty=2, lwd=3)\n>\n>\n>\n> any help will be appreciated.\n>\n>\n> with many thanks\n> steve\n> --\n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\n\n-- \nStatistics & Software Consulting\nGKX Group, GKX Associates Inc.\ntel: 1-877-GKX-GROUP\nemail: ggrothendieck at gmail.com",
+      "body_snippet": "Try this:\n\n y <- sign(x) * abs(x)^(1/5)\n\nOn Tue, May 17, 2016 at 8:44 AM, Steven Stoline <sstoline at gmail.com> wrote:\n> Dear All:\n>\n>\n> I am trying to plot the function f(x) = x^(1/5) for x=seq(-2,2",
+      "thread_id": "thread-b2c583c04eb4",
+      "thread_depth": 1,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-973740cbe5f8",
+      "message_id": "<a5a7d3b74fc147e0b0a5be55d1cc8c1b@WSR-MAILBOX-104.mrc-hnr.cam.ac.local>",
+      "from_name": "David Pell",
+      "from_email_hash": "bb944e6ba6f137343f9616b17be73ac385bbd4d1e8b74b618c141d58f0fae6d5",
+      "date": "2016-05-17T13:09:03Z",
+      "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
+      "subject_clean": "Plot f(x) = x^(1/5)",
+      "in_reply_to": "<CAHDp66CnLBuse-CXMz1esrkHMm_KgfuJQhXeoFU=3uY7HHKzPw@mail.gmail.com>",
+      "references": [
+        "<CAHDp66DzBWQpwjFrg01KuN-xgckjb9_=j+pwh8bbJXCZ-Mw7zg@mail.gmail.com>",
+        "<CAAxdm-6h74YAyffQG3snjbDfv1fBDDzxrJYb0cX59S8A8eDKsQ@mail.gmail.com>",
+        "<CAHDp66CnLBuse-CXMz1esrkHMm_KgfuJQhXeoFU=3uY7HHKzPw@mail.gmail.com>"
+      ],
+      "body_plain": "Try :\n\n-0.5^(1/5)\n[1] -0.8705506\n\nDavid\n\n-----Original Message-----\nFrom: R-sig-teaching [mailto:r-sig-teaching-bounces at r-project.org] On Behalf Of Steven Stoline\nSent: 17 May 2016 14:07\nTo: jim holtman <jholtman at gmail.com>\nCc: R-sig-teaching <r-sig-teaching at r-project.org>\nSubject: Re: [R-sig-teaching] Plot f(x) = x^(1/5)\n\nDear All:\n\nin my TI-Calculator (-0.5)^(1/5) = -0.8705, but in R  (-0.5)^(1/5) = NaN.\n\n\nwith thanks\nsteve\n\nOn Tue, May 17, 2016 at 8:52 AM, jim holtman <jholtman at gmail.com> wrote:\n\n> System is working correctly.  A negative number cannot be raised to a\n> fractional power:\n>\n> > (-2)^(1/5)\n> [1] NaN\n>\n>\n>\n>\n> Jim Holtman\n> Data Munger Guru\n>\n> What is the problem that you are trying to solve?\n> Tell me what you want to do, not how you want to do it.\n>\n> On Tue, May 17, 2016 at 8:44 AM, Steven Stoline <sstoline at gmail.com>\n> wrote:\n>\n>> Dear All:\n>>\n>>\n>> I am trying to plot the function f(x) = x^(1/5) for x=seq(-2,2,0.01).\n>> It give me only the plot of f(x) for the positive part of x. I\n>> checked the values of f(x), it is NaN for all negative values of x.\n>>\n>> *this is my code:*\n>>\n>>\n>> x<-seq(-2,2,0.01)\n>> y<- (x)^(1/5)\n>> plot(x,y, type=\"l\", lwd=3, xlab = \" \", ylab = \" \", col=\"blue\")\n>> abline(v=0, col=\"gray\", lty=2, lwd=3) abline(h=0, col=\"gray\", lty=2,\n>> lwd=3)\n>>\n>>\n>>\n>> any help will be appreciated.\n>>\n>>\n>> with many thanks\n>> steve\n>> --\n>> Steven M. Stoline\n>> 1123 Forest Avenue\n>> Portland, ME 04112\n>> sstoline at gmail.com\n>>\n>>         [[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>\n>\n\n\n--\nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n[[alternative HTML version deleted]]\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n________________________________\n\n\nThis email may have a protective marking please see http://www.mrc.ac.uk/about/information-standards/document-marking-policy/ <http://www.mrc.ac.uk/about/information-standards/document-marking-policy/>\n\nThis email and any attachments are intended for the name...{{dropped:21}}",
+      "body_snippet": "Try :\n\n-0.5^(1/5)\n[1] -0.8705506\n\nDavid\n\n-----Original Message-----\nFrom: R-sig-teaching [mailto:r-sig-teaching-bounces at r-project.org] On Behalf Of Steven Stoline\nSent: 17 May 2016 14:07\nTo: jim ho",
+      "thread_id": "thread-b2c583c04eb4",
+      "thread_depth": 3,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-6dd266ce6257",
+      "message_id": "<CAHDp66AV6HXf=v-mZq5h9V=V5Ktn1cAjeiBcRJs4eHB2TmZabQ@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2016-05-17T09:12:25-04:00",
+      "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
+      "subject_clean": "Plot f(x) = x^(1/5)",
+      "in_reply_to": "<CAP01uRnZ7gX_m8EtsguxfK9qRX=x2x_Rb4wHm60ye=rAXSrPBQ@mail.gmail.com>",
+      "references": [
+        "<CAHDp66DzBWQpwjFrg01KuN-xgckjb9_=j+pwh8bbJXCZ-Mw7zg@mail.gmail.com>",
+        "<CAP01uRnZ7gX_m8EtsguxfK9qRX=x2x_Rb4wHm60ye=rAXSrPBQ@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Gabor:\n\nmany thanks,makes it.\n\nsteve\n\nOn Tue, May 17, 2016 at 9:07 AM, Gabor Grothendieck <ggrothendieck at gmail.com\n> wrote:\n\n> Try this:\n>\n>  y <- sign(x) * abs(x)^(1/5)\n>\n> On Tue, May 17, 2016 at 8:44 AM, Steven Stoline <sstoline at gmail.com>\n> wrote:\n> > Dear All:\n> >\n> >\n> > I am trying to plot the function f(x) = x^(1/5) for x=seq(-2,2,0.01). It\n> > give me only the plot of f(x) for the positive part of x. I checked the\n> > values of f(x), it is NaN for all negative values of x.\n> >\n> > *this is my code:*\n> >\n> >\n> > x<-seq(-2,2,0.01)\n> > y<- (x)^(1/5)\n> > plot(x,y, type=\"l\", lwd=3, xlab = \" \", ylab = \" \", col=\"blue\")\n> > abline(v=0, col=\"gray\", lty=2, lwd=3)\n> > abline(h=0, col=\"gray\", lty=2, lwd=3)\n> >\n> >\n> >\n> > any help will be appreciated.\n> >\n> >\n> > with many thanks\n> > steve\n> > --\n> > Steven M. Stoline\n> > 1123 Forest Avenue\n> > Portland, ME 04112\n> > sstoline at gmail.com\n> >\n> >         [[alternative HTML version deleted]]\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n>\n> --\n> Statistics & Software Consulting\n> GKX Group, GKX Associates Inc.\n> tel: 1-877-GKX-GROUP\n> email: ggrothendieck at gmail.com\n>\n\n\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear Gabor:\n\nmany thanks,makes it.\n\nsteve\n\nOn Tue, May 17, 2016 at 9:07 AM, Gabor Grothendieck <ggrothendieck at gmail.com\n> wrote:\n\n> Try this:\n>\n>  y <- sign(x) * abs(x)^(1/5)\n>\n> On Tue, May 17, 20",
+      "thread_id": "thread-b2c583c04eb4",
+      "thread_depth": 2,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-d3e2dd311add",
+      "message_id": "<CAAxdm-7jdNN_eubS7AE78-0FOVYc6V-ZTs5DkU7OsxT_rtd0EQ@mail.gmail.com>",
+      "from_name": "jim holtman",
+      "from_email_hash": "46f979d1a5bf6fa8b5559d3a049add9a0eb45fffc6a219e7401d97ba07ef9a0f",
+      "date": "2016-05-17T09:51:26-04:00",
+      "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
+      "subject_clean": "Plot f(x) = x^(1/5)",
+      "in_reply_to": "<a5a7d3b74fc147e0b0a5be55d1cc8c1b@WSR-MAILBOX-104.mrc-hnr.cam.ac.local>",
+      "references": [
+        "<CAHDp66DzBWQpwjFrg01KuN-xgckjb9_=j+pwh8bbJXCZ-Mw7zg@mail.gmail.com>",
+        "<CAAxdm-6h74YAyffQG3snjbDfv1fBDDzxrJYb0cX59S8A8eDKsQ@mail.gmail.com>",
+        "<CAHDp66CnLBuse-CXMz1esrkHMm_KgfuJQhXeoFU=3uY7HHKzPw@mail.gmail.com>",
+        "<a5a7d3b74fc147e0b0a5be55d1cc8c1b@WSR-MAILBOX-104.mrc-hnr.cam.ac.local>"
+      ],
+      "body_plain": "this is where you should be using parenthesis to make sure you have the\ncorrect precedence of operations:\n\n> -0.5^(1/5)\n[1] -0.8705506\n> (-0.5)^(1/5)\n[1] NaN\n>\n> x <- -0.5\n> x^(1/5)\n[1] NaN\n>\n\n\n\nJim Holtman\nData Munger Guru\n\nWhat is the problem that you are trying to solve?\nTell me what you want to do, not how you want to do it.\n\nOn Tue, May 17, 2016 at 9:09 AM, David Pell <David.Pell at mrc-hnr.cam.ac.uk>\nwrote:\n\n> Try :\n>\n> -0.5^(1/5)\n> [1] -0.8705506\n>\n> David\n>\n>\n> -----Original Message-----\n> From: R-sig-teaching [mailto:r-sig-teaching-bounces at r-project.org] On\n> Behalf Of Steven Stoline\n> Sent: 17 May 2016 14:07\n> To: jim holtman <jholtman at gmail.com>\n> Cc: R-sig-teaching <r-sig-teaching at r-project.org>\n> Subject: Re: [R-sig-teaching] Plot f(x) = x^(1/5)\n>\n> Dear All:\n>\n> in my TI-Calculator (-0.5)^(1/5) = -0.8705, but in R (-0.5)^(1/5) = NaN.\n>\n>\n> with thanks\n> steve\n>\n> On Tue, May 17, 2016 at 8:52 AM, jim holtman <jholtman at gmail.com> wrote:\n>\n> > System is working correctly. A negative number cannot be raised to a\n> > fractional power:\n> >\n> > > (-2)^(1/5)\n> > [1] NaN\n> >\n> >\n> >\n> >\n> > Jim Holtman\n> > Data Munger Guru\n> >\n> > What is the problem that you are trying to solve?\n> > Tell me what you want to do, not how you want to do it.\n> >\n> > On Tue, May 17, 2016 at 8:44 AM, Steven Stoline <sstoline at gmail.com>\n> > wrote:\n> >\n> >> Dear All:\n> >>\n> >>\n> >> I am trying to plot the function f(x) = x^(1/5) for x=seq(-2,2,0.01).\n> >> It give me only the plot of f(x) for the positive part of x. I\n> >> checked the values of f(x), it is NaN for all negative values of x.\n> >>\n> >> *this is my code:*\n> >>\n> >>\n> >> x<-seq(-2,2,0.01)\n> >> y<- (x)^(1/5)\n> >> plot(x,y, type=\"l\", lwd=3, xlab = \" \", ylab = \" \", col=\"blue\")\n> >> abline(v=0, col=\"gray\", lty=2, lwd=3) abline(h=0, col=\"gray\", lty=2,\n> >> lwd=3)\n> >>\n> >>\n> >>\n> >> any help will be appreciated.\n> >>\n> >>\n> >> with many thanks\n> >> steve\n> >> --\n> >> Steven M. Stoline\n> >> 1123 Forest Avenue\n> >> Portland, ME 04112\n> >> sstoline at gmail.com\n> >>\n> >> [[alternative HTML version deleted]]\n> >>\n> >> _______________________________________________\n> >> R-sig-teaching at r-project.org mailing list\n> >> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >>\n> >\n> >\n>\n>\n> --\n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com\n>\n> [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n> ________________________________\n>\n>\n> This email may have a protective marking please see\n> http://www.mrc.ac.uk/about/information-standards/document-marking-policy/\n> <http://www.mrc.ac.uk/about/information-standards/document-marking-policy/\n> >\n>\n> This email and any attachments are intended for the na...{{dropped:22}}",
+      "body_snippet": "this is where you should be using parenthesis to make sure you have the\ncorrect precedence of operations:\n\n> -0.5^(1/5)\n[1] -0.8705506\n> (-0.5)^(1/5)\n[1] NaN\n>\n> x <- -0.5\n> x^(1/5)\n[1] NaN\n>\n\n\n\nJim H",
+      "thread_id": "thread-b2c583c04eb4",
+      "thread_depth": 4,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-d9717cb13c11",
+      "message_id": "<20160517142338.73677E23F30B@lilly.csoft.net>",
+      "from_name": "bob at statland.org",
+      "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
+      "date": "2016-05-17T10:23:38-04:00",
+      "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
+      "subject_clean": "Plot f(x) = x^(1/5)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Forwarded message:\n> >\n> > > System is working correctly. A negative number cannot be raised to a\n> > > fractional power:\n> > >\n> > > > (-2)^(1/5)\n> > > [1] NaN\n\nWell, maybe we should say that _R_ can't raise a negative number to a\nfractional power.  Neither I nor the TI calculators have any trouble\ndoing it;-) I'd say R is funtioning as designed, but it was designed\nto respond INcorrectly;-)\n\nThis R exchange\n\n> (-2)^5\n[1] -32\n\nshows that -2 is a fifth root of -32 while this exchange\n\n> (-32)^(1/5)\n[1] NaN\n\nshows that R cannot find that root.  The various suggestions for\ndealing with this amount to asking R a different question which we\nknow has the same answer as the intended question (which R won't\nanswer).\n\nOn one level you could view this as a coding/implementation issue.  I\nhave not looked at R's code, but the usual computer way to handle\nexponents involves taking the log of the argument.  This does not\nreturn the correct answer when the argument is negative.  That's\nannoying.  The TI graphing calculators were developed with an\nincredible amount of input from secondary math. teachers.  They\ncomplained loudly about calculators returning wrong answers or\nnon-answers to problems to which students knew the right answers.  TI\ndid a LOT of work on this.  I wish R (and lots of scientific software)\nwould do likewise.\n\nOn another level, involving exponentiation is not entirely avoidable.\nFor rational numbers like 1/5 we can (and usually do) interpret\n(-32)^(1/5) as a name for a real number that when raised to the fifth\npower gives -32.  Another name for one such number is -2.  But if we want\nto use an irrational exponent, say (-32)^pi we can't interpret it that\nway.  (How do we multiply pi numbers together?)  So eventually we have\nto either exponentiate or have a funciton that is undefined at many\npoints.  At lesat in theory.  As far as computers and calculators are\nconcerned, they cannot represent irrational numbers anyway --\neveything is a rational approximation.  \n\nSo I think the defect is in R, not in the original posted question. \n\n------->  First-time AP Stats. teacher?  Help is on the way! See\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n      _\n     | |          Robert W. Hayden\n     | |          614 Nashua Street #119\n    /  |          Milford, New Hampshire 03055  USA\n   |   |          \n   |   |          email: bob@ the site below\n  /  x |          website: http://statland.org\n |     /          \n ''''''",
+      "body_snippet": "Forwarded message:\n> >\n> > > System is working correctly. A negative number cannot be raised to a\n> > > fractional power:\n> > >\n> > > > (-2)^(1/5)\n> > > [1] NaN\n\nWell, maybe we should say that _R_ can",
+      "thread_id": "thread-d9717cb13c11",
+      "thread_depth": 0,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-36451ac59e66",
+      "message_id": "<CAGx1TMDfNu6THF60iTQExd7yMHky5Wn_9MOMn4pB-jkNZJGiGA@mail.gmail.com>",
+      "from_name": "Richard M. Heiberger",
+      "from_email_hash": "4ce810eab8587777db353ea9d997b9e94d9e73af018121f9a3424238038952df",
+      "date": "2016-05-17T11:10:21-04:00",
+      "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
+      "subject_clean": "Plot f(x) = x^(1/5)",
+      "in_reply_to": "<20160517142338.73677E23F30B@lilly.csoft.net>",
+      "references": [
+        "<20160517142338.73677E23F30B@lilly.csoft.net>"
+      ],
+      "body_plain": "This problem is an example of FAQ 7.31.  Floating point numbers\ninside the computer can not represent odd fractions exactly.\n\n> seq(1, 15, 2)\n[1]  1  3  5  7  9 11 13 15\n> 1/seq(1, 15, 2)\n[1] 1.00000000 0.33333333 0.20000000 0.14285714 0.11111111 0.09090909 0.07692308\n[8] 0.06666667\n> print(1/seq(1, 15, 2), digits=18)\n[1] 1.0000000000000000000 0.3333333333333333148 0.2000000000000000111\n[4] 0.1428571428571428492 0.1111111111111111049 0.0909090909090909116\n[7] 0.0769230769230769273 0.0666666666666666657\n> ## except for 1, none of these odd fractions is exactly represented inside the computer.\n> ## therefore the power requested is not the exact fraction, and the result is not capable of calculation\n> (-2)^(1/seq(1, 15, 2))\n[1]  -2 NaN NaN NaN NaN NaN NaN NaN\n>\n\nRich\n\nOn Tue, May 17, 2016 at 10:23 AM, bob at statland.org <bob at statland.org> wrote:\n> Forwarded message:\n>> >\n>> > > System is working correctly. A negative number cannot be raised to a\n>> > > fractional power:\n>> > >\n>> > > > (-2)^(1/5)\n>> > > [1] NaN\n>\n> Well, maybe we should say that _R_ can't raise a negative number to a\n> fractional power.  Neither I nor the TI calculators have any trouble\n> doing it;-) I'd say R is funtioning as designed, but it was designed\n> to respond INcorrectly;-)\n>\n> This R exchange\n>\n>> (-2)^5\n> [1] -32\n>\n> shows that -2 is a fifth root of -32 while this exchange\n>\n>> (-32)^(1/5)\n> [1] NaN\n>\n> shows that R cannot find that root.  The various suggestions for\n> dealing with this amount to asking R a different question which we\n> know has the same answer as the intended question (which R won't\n> answer).\n>\n> On one level you could view this as a coding/implementation issue.  I\n> have not looked at R's code, but the usual computer way to handle\n> exponents involves taking the log of the argument.  This does not\n> return the correct answer when the argument is negative.  That's\n> annoying.  The TI graphing calculators were developed with an\n> incredible amount of input from secondary math. teachers.  They\n> complained loudly about calculators returning wrong answers or\n> non-answers to problems to which students knew the right answers.  TI\n> did a LOT of work on this.  I wish R (and lots of scientific software)\n> would do likewise.\n>\n> On another level, involving exponentiation is not entirely avoidable.\n> For rational numbers like 1/5 we can (and usually do) interpret\n> (-32)^(1/5) as a name for a real number that when raised to the fifth\n> power gives -32.  Another name for one such number is -2.  But if we want\n> to use an irrational exponent, say (-32)^pi we can't interpret it that\n> way.  (How do we multiply pi numbers together?)  So eventually we have\n> to either exponentiate or have a funciton that is undefined at many\n> points.  At lesat in theory.  As far as computers and calculators are\n> concerned, they cannot represent irrational numbers anyway --\n> eveything is a rational approximation.\n>\n> So I think the defect is in R, not in the original posted question.\n>\n> ------->  First-time AP Stats. teacher?  Help is on the way! See\n> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n>       _\n>      | |          Robert W. Hayden\n>      | |          614 Nashua Street #119\n>     /  |          Milford, New Hampshire 03055  USA\n>    |   |\n>    |   |          email: bob@ the site below\n>   /  x |          website: http://statland.org\n>  |     /\n>  ''''''\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "This problem is an example of FAQ 7.31.  Floating point numbers\ninside the computer can not represent odd fractions exactly.\n\n> seq(1, 15, 2)\n[1]  1  3  5  7  9 11 13 15\n> 1/seq(1, 15, 2)\n[1] 1.000000",
+      "thread_id": "thread-d9717cb13c11",
+      "thread_depth": 1,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-232beac1e24f",
+      "message_id": "<CA+3jU8EKbVUORNG2GRHKVbz1eDopSYEbF1ievZUAtxxYT-wzBw@mail.gmail.com>",
+      "from_name": "Albyn Jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2016-05-17T08:55:45-07:00",
+      "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
+      "subject_clean": "Plot f(x) = x^(1/5)",
+      "in_reply_to": "<CAGx1TMDfNu6THF60iTQExd7yMHky5Wn_9MOMn4pB-jkNZJGiGA@mail.gmail.com>",
+      "references": [
+        "<20160517142338.73677E23F30B@lilly.csoft.net>",
+        "<CAGx1TMDfNu6THF60iTQExd7yMHky5Wn_9MOMn4pB-jkNZJGiGA@mail.gmail.com>"
+      ],
+      "body_plain": "I think R is doing just what it should do, and the TI has been hacked to\nmake HS teachers happy :-)\n\n> log(as.complex(-2))/5\n[1] 0.1386294+0.6283185i\n> a <- log(as.complex(-2))/5\n> exp(a)^5\n[1] -2-0i\n\n> exp(a)\n[1] 0.9293165+0.675188i\n> (as.complex(-2))^(1/5)\n[1] 0.9293165+0.675188i\n> 2^(1/5)*cos(pi/5)\n[1] 0.9293165\n> 2^(1/5)*sin(pi/5)\n[1] 0.675188\n\nalbyn\n\n\nOn Tue, May 17, 2016 at 8:10 AM, Richard M. Heiberger <rmh at temple.edu>\nwrote:\n\n> This problem is an example of FAQ 7.31.  Floating point numbers\n> inside the computer can not represent odd fractions exactly.\n>\n> > seq(1, 15, 2)\n> [1]  1  3  5  7  9 11 13 15\n> > 1/seq(1, 15, 2)\n> [1] 1.00000000 0.33333333 0.20000000 0.14285714 0.11111111 0.09090909\n> 0.07692308\n> [8] 0.06666667\n> > print(1/seq(1, 15, 2), digits=18)\n> [1] 1.0000000000000000000 0.3333333333333333148 0.2000000000000000111\n> [4] 0.1428571428571428492 0.1111111111111111049 0.0909090909090909116\n> [7] 0.0769230769230769273 0.0666666666666666657\n> > ## except for 1, none of these odd fractions is exactly represented\n> inside the computer.\n> > ## therefore the power requested is not the exact fraction, and the\n> result is not capable of calculation\n> > (-2)^(1/seq(1, 15, 2))\n> [1]  -2 NaN NaN NaN NaN NaN NaN NaN\n> >\n>\n> Rich\n>\n> On Tue, May 17, 2016 at 10:23 AM, bob at statland.org <bob at statland.org>\n> wrote:\n> > Forwarded message:\n> >> >\n> >> > > System is working correctly. A negative number cannot be raised to a\n> >> > > fractional power:\n> >> > >\n> >> > > > (-2)^(1/5)\n> >> > > [1] NaN\n> >\n> > Well, maybe we should say that _R_ can't raise a negative number to a\n> > fractional power.  Neither I nor the TI calculators have any trouble\n> > doing it;-) I'd say R is funtioning as designed, but it was designed\n> > to respond INcorrectly;-)\n> >\n> > This R exchange\n> >\n> >> (-2)^5\n> > [1] -32\n> >\n> > shows that -2 is a fifth root of -32 while this exchange\n> >\n> >> (-32)^(1/5)\n> > [1] NaN\n> >\n> > shows that R cannot find that root.  The various suggestions for\n> > dealing with this amount to asking R a different question which we\n> > know has the same answer as the intended question (which R won't\n> > answer).\n> >\n> > On one level you could view this as a coding/implementation issue.  I\n> > have not looked at R's code, but the usual computer way to handle\n> > exponents involves taking the log of the argument.  This does not\n> > return the correct answer when the argument is negative.  That's\n> > annoying.  The TI graphing calculators were developed with an\n> > incredible amount of input from secondary math. teachers.  They\n> > complained loudly about calculators returning wrong answers or\n> > non-answers to problems to which students knew the right answers.  TI\n> > did a LOT of work on this.  I wish R (and lots of scientific software)\n> > would do likewise.\n> >\n> > On another level, involving exponentiation is not entirely avoidable.\n> > For rational numbers like 1/5 we can (and usually do) interpret\n> > (-32)^(1/5) as a name for a real number that when raised to the fifth\n> > power gives -32.  Another name for one such number is -2.  But if we want\n> > to use an irrational exponent, say (-32)^pi we can't interpret it that\n> > way.  (How do we multiply pi numbers together?)  So eventually we have\n> > to either exponentiate or have a funciton that is undefined at many\n> > points.  At lesat in theory.  As far as computers and calculators are\n> > concerned, they cannot represent irrational numbers anyway --\n> > eveything is a rational approximation.\n> >\n> > So I think the defect is in R, not in the original posted question.\n> >\n> > ------->  First-time AP Stats. teacher?  Help is on the way! See\n> >\n> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n> >       _\n> >      | |          Robert W. Hayden\n> >      | |          614 Nashua Street #119\n> >     /  |          Milford, New Hampshire 03055  USA\n> >    |   |\n> >    |   |          email: bob@ the site below\n> >   /  x |          website: http://statland.org\n> >  |     /\n> >  ''''''\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I think R is doing just what it should do, and the TI has been hacked to\nmake HS teachers happy :-)\n\n> log(as.complex(-2))/5\n[1] 0.1386294+0.6283185i\n> a <- log(as.complex(-2))/5\n> exp(a)^5\n[1] -2-0i\n",
+      "thread_id": "thread-d9717cb13c11",
+      "thread_depth": 2,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-061cae2cfc1f",
+      "message_id": "<2eb95916-7b10-d306-e356-069b110bfcc6@upc.edu>",
+      "from_name": "Klaus Langohr",
+      "from_email_hash": "d0a96138bee0f24f9821aef18f3d6a95f030b4b945a242a15936d947cb301fd1",
+      "date": "2016-05-17T18:10:13+02:00",
+      "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
+      "subject_clean": "Plot f(x) = x^(1/5)",
+      "in_reply_to": "<CA+3jU8EKbVUORNG2GRHKVbz1eDopSYEbF1ievZUAtxxYT-wzBw@mail.gmail.com>",
+      "references": [
+        "<20160517142338.73677E23F30B@lilly.csoft.net>",
+        "<CAGx1TMDfNu6THF60iTQExd7yMHky5Wn_9MOMn4pB-jkNZJGiGA@mail.gmail.com>",
+        "<CA+3jU8EKbVUORNG2GRHKVbz1eDopSYEbF1ievZUAtxxYT-wzBw@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nThe powerplus package does raise a negative number to a fractional \npower. Try:\n\nlibrary(powerplus)\nexplus(-.5, 1/5)\n\nKlaus.\n\n\nOn 17/05/2016 17:55, Albyn Jones wrote:\n> I think R is doing just what it should do, and the TI has been hacked to\n> make HS teachers happy :-)\n>\n>> log(as.complex(-2))/5\n> [1] 0.1386294+0.6283185i\n>> a <- log(as.complex(-2))/5\n>> exp(a)^5\n> [1] -2-0i\n>\n>> exp(a)\n> [1] 0.9293165+0.675188i\n>> (as.complex(-2))^(1/5)\n> [1] 0.9293165+0.675188i\n>> 2^(1/5)*cos(pi/5)\n> [1] 0.9293165\n>> 2^(1/5)*sin(pi/5)\n> [1] 0.675188\n>\n> albyn\n>\n>\n> On Tue, May 17, 2016 at 8:10 AM, Richard M. Heiberger <rmh at temple.edu>\n> wrote:\n>\n>> This problem is an example of FAQ 7.31.  Floating point numbers\n>> inside the computer can not represent odd fractions exactly.\n>>\n>>> seq(1, 15, 2)\n>> [1]  1  3  5  7  9 11 13 15\n>>> 1/seq(1, 15, 2)\n>> [1] 1.00000000 0.33333333 0.20000000 0.14285714 0.11111111 0.09090909\n>> 0.07692308\n>> [8] 0.06666667\n>>> print(1/seq(1, 15, 2), digits=18)\n>> [1] 1.0000000000000000000 0.3333333333333333148 0.2000000000000000111\n>> [4] 0.1428571428571428492 0.1111111111111111049 0.0909090909090909116\n>> [7] 0.0769230769230769273 0.0666666666666666657\n>>> ## except for 1, none of these odd fractions is exactly represented\n>> inside the computer.\n>>> ## therefore the power requested is not the exact fraction, and the\n>> result is not capable of calculation\n>>> (-2)^(1/seq(1, 15, 2))\n>> [1]  -2 NaN NaN NaN NaN NaN NaN NaN\n>> Rich\n>>\n>> On Tue, May 17, 2016 at 10:23 AM, bob at statland.org <bob at statland.org>\n>> wrote:\n>>> Forwarded message:\n>>>>>> System is working correctly. A negative number cannot be raised to a\n>>>>>> fractional power:\n>>>>>>\n>>>>>>> (-2)^(1/5)\n>>>>>> [1] NaN\n>>> Well, maybe we should say that _R_ can't raise a negative number to a\n>>> fractional power.  Neither I nor the TI calculators have any trouble\n>>> doing it;-) I'd say R is funtioning as designed, but it was designed\n>>> to respond INcorrectly;-)\n>>>\n>>> This R exchange\n>>>\n>>>> (-2)^5\n>>> [1] -32\n>>>\n>>> shows that -2 is a fifth root of -32 while this exchange\n>>>\n>>>> (-32)^(1/5)\n>>> [1] NaN\n>>>\n>>> shows that R cannot find that root.  The various suggestions for\n>>> dealing with this amount to asking R a different question which we\n>>> know has the same answer as the intended question (which R won't\n>>> answer).\n>>>\n>>> On one level you could view this as a coding/implementation issue.  I\n>>> have not looked at R's code, but the usual computer way to handle\n>>> exponents involves taking the log of the argument.  This does not\n>>> return the correct answer when the argument is negative.  That's\n>>> annoying.  The TI graphing calculators were developed with an\n>>> incredible amount of input from secondary math. teachers.  They\n>>> complained loudly about calculators returning wrong answers or\n>>> non-answers to problems to which students knew the right answers.  TI\n>>> did a LOT of work on this.  I wish R (and lots of scientific software)\n>>> would do likewise.\n>>>\n>>> On another level, involving exponentiation is not entirely avoidable.\n>>> For rational numbers like 1/5 we can (and usually do) interpret\n>>> (-32)^(1/5) as a name for a real number that when raised to the fifth\n>>> power gives -32.  Another name for one such number is -2.  But if we want\n>>> to use an irrational exponent, say (-32)^pi we can't interpret it that\n>>> way.  (How do we multiply pi numbers together?)  So eventually we have\n>>> to either exponentiate or have a funciton that is undefined at many\n>>> points.  At lesat in theory.  As far as computers and calculators are\n>>> concerned, they cannot represent irrational numbers anyway --\n>>> eveything is a rational approximation.\n>>>\n>>> So I think the defect is in R, not in the original posted question.\n>>>\n>>> ------->  First-time AP Stats. teacher?  Help is on the way! See\n>>>\n>> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n>>>        _\n>>>       | |          Robert W. Hayden\n>>>       | |          614 Nashua Street #119\n>>>      /  |          Milford, New Hampshire 03055  USA\n>>>     |   |\n>>>     |   |          email: bob@ the site below\n>>>    /  x |          website: http://statland.org\n>>>   |     /\n>>>   ''''''\n>>>\n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n-- \n----------------------------------------------------\n  Klaus Langohr\n  Departament d'Estad?stica i Investigaci? Operativa\n  Universitat Polit?cnica de Catalunya\n  Edifici C5 (Campus Nord)\n  C/ Jordi Girona, 1-3\n  E-08034 Barcelona\n  Tel: (+34) 934 017 034\n  Fax: (+34) 934 015 855\n----------------------------------------------------\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi,\n\nThe powerplus package does raise a negative number to a fractional \npower. Try:\n\nlibrary(powerplus)\nexplus(-.5, 1/5)\n\nKlaus.\n\n\nOn 17/05/2016 17:55, Albyn Jones wrote:\n> I think R is doing just wh",
+      "thread_id": "thread-d9717cb13c11",
+      "thread_depth": 3,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-688559af7602",
+      "message_id": "<CAEZOd2A_eDsCS5Aio=FPpqWVSb6ErU=yzV9nbdmcxQXkNueheg@mail.gmail.com>",
+      "from_name": "Brian Dennis",
+      "from_email_hash": "701fff3e21682d3a2a0e00efd4388e8490784b003ba99bbdf245d085ed1f529d",
+      "date": "2016-05-17T14:45:30-07:00",
+      "subject": "[R-sig-teaching] Teaching R in high school and college science and math courses",
+      "subject_clean": "Teaching R in high school and college science and math courses",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi fellow R-philes,\n\nMy contention is that R is not just for statistics.  Rather, R can be used\nin math and science classes in colleges, community colleges, and even high\nschools, to replace most uses of graphing calculators and proprietary\nspreadsheets.\n\nVarious aspects of R seem to have immense potential for helping STEM\n(science, technology, engineering, math) education:\n\n(1) With R, scientific calculations and graphs are fun and easy to produce.\nA student using R can focus on the scientific and mathematical concepts\nwithout having to pore through a manual of daunting calculator keystroke\ninstructions. The students would be analyzing data and depicting equations\njust as scientists are doing in labs all over the world.\n\n(2) R could be learned once and used across a wide variety of STEM courses,\npromoting the integration of STEM subjects that has been much discussed in\nprinciple but elusive in practice.\n\n(3) R is now probably the most universally available computational tool\n(aside from counting on fingers). Many students access a computer to use\nsocial media, and most schools and colleges have institutional machines (of\nvarying quality) available to the students. Versions of R exist for most\nplatforms (going back 10 years or more), so R could be made instantly\navailable to every student in every course.\n\n(4) R invites collaboration. Students can work in groups to conduct\nprojects in R, build R scripts, and improve each others? work. Results on a\ncomputer screen are easier to view in groups than on a calculator. At home,\nstudents can work cooperatively online with R. Every new class can build\nnew accomplishments upon those of previous classes. R builds on itself.\n\n(5) R skills follow a student to college and professional life. College\nstatistics and advanced science courses are increasingly teaching R. R\nskills are a becoming a valuable professional credential in sci-tech, data\nanalytic, and finance firms.\n\n(6) R tutorial websites and videos for beginners are now widespread and\nfree.\n\nI have taught R as a guest teacher in 6th, 7th, 8th, 9th, and 10th grades\n(& am a university statistician/scientist by profession).  The kids love it\nand take to it with gusto.  R seems to them like a real important thing\nwhen they produce, all by themselves, beautiful graphs of important\nconcepts.\n\nToward the goal of popularizing R as a general product for scientific\ngraphs and calculations, I wrote a book, \"The R Student Companion\".  It is\nan inexpensive paperback modeled in a \"lab manual\" format.  Naturally, so\nmany free instructional resources are available for R that instructors can\nbring R into courses without needing extra books.  However, my book is\ntargeted at a high school level audience, having just a little algebra, and\nit contains real, compelling scientific examples and computational\nexercises and projects.  The value-added convenience, and the fact that the\nbook ports across many courses, seem to me to make the book a bargain.\n\nPublisher website here:\nhttps://www.crcpress.com/The-R-Student-Companion/Dennis/p/book/9781439875407\n\nAmazon here:\nhttp://www.amazon.com/The-Student-Companion-Brian-Dennis/dp/1439875405\n\nRead reviews here:\nhttp://webpages.uidaho.edu/~brian/reviews_of_RSC.pdf\n\nReadin', Rritin', Rithmetic, and R!\n\nEnjoy!\n\nBrian Dennis\nProfessor of Wildlife and Statistics\nUniversity of Idaho\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi fellow R-philes,\n\nMy contention is that R is not just for statistics.  Rather, R can be used\nin math and science classes in colleges, community colleges, and even high\nschools, to replace most uses",
+      "thread_id": "thread-688559af7602",
+      "thread_depth": 0,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-237cbf55c5dc",
+      "message_id": "<2c26d5ad-b393-e5f3-c80e-d37e3cf1a8ef@purdue.edu>",
+      "from_name": "Mark Daniel Ward",
+      "from_email_hash": "9660c15b92052c1ae502524414654a6571d365b2d3e5844d0a72a5172a130df6",
+      "date": "2016-05-17T18:01:57-04:00",
+      "subject": "[R-sig-teaching] Teaching R in high school and college science and math courses",
+      "subject_clean": "Teaching R in high school and college science and math courses",
+      "in_reply_to": "<CAEZOd2A_eDsCS5Aio=FPpqWVSb6ErU=yzV9nbdmcxQXkNueheg@mail.gmail.com>",
+      "references": [
+        "<CAEZOd2A_eDsCS5Aio=FPpqWVSb6ErU=yzV9nbdmcxQXkNueheg@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Brian,\n\nI firmly agree with you.  Indeed, I'm working with some colleagues at \nthe ASA (American Statistical Association) on trying to really broaden \nthe groups that are impacted by the use of R and data science, far \nbeyond the usually K-12 contact with statistics.\n\nPerhaps we don't have to bother everyone with such discussions. I wonder \nif interested parties would like to have a sub-discussion about this \nwith my colleagues at the ASA?  I'm actually trying to build some \nmomentum in these very areas.  Would you like to (directly) discuss \nfurther?  I've been working on an initiative in this vein lately.\n\nP.S.  I see that you are a professor of wildlife and statistics. \nAlthough I'm in a statistics department, we have several students \nworking on projects related to forestry and natural resources at Purdue.\n\nMark\n\nMark Daniel Ward, Ph.D.\nAssociate Professor and Undergraduate Chair\nDepartment of Statistics\nPurdue University\n150 North University Street\nWest Lafayette, IN 47907-2067\nmdw at purdue.edu\nphone: (765) 496-9563\n\n\nOn 5/17/16 5:45 PM, Brian Dennis wrote:\n> Hi fellow R-philes,\n>\n> My contention is that R is not just for statistics.  Rather, R can be used\n> in math and science classes in colleges, community colleges, and even high\n> schools, to replace most uses of graphing calculators and proprietary\n> spreadsheets.\n>\n> Various aspects of R seem to have immense potential for helping STEM\n> (science, technology, engineering, math) education:\n>\n> (1) With R, scientific calculations and graphs are fun and easy to produce.\n> A student using R can focus on the scientific and mathematical concepts\n> without having to pore through a manual of daunting calculator keystroke\n> instructions. The students would be analyzing data and depicting equations\n> just as scientists are doing in labs all over the world.\n>\n> (2) R could be learned once and used across a wide variety of STEM courses,\n> promoting the integration of STEM subjects that has been much discussed in\n> principle but elusive in practice.\n>\n> (3) R is now probably the most universally available computational tool\n> (aside from counting on fingers). Many students access a computer to use\n> social media, and most schools and colleges have institutional machines (of\n> varying quality) available to the students. Versions of R exist for most\n> platforms (going back 10 years or more), so R could be made instantly\n> available to every student in every course.\n>\n> (4) R invites collaboration. Students can work in groups to conduct\n> projects in R, build R scripts, and improve each others? work. Results on a\n> computer screen are easier to view in groups than on a calculator. At home,\n> students can work cooperatively online with R. Every new class can build\n> new accomplishments upon those of previous classes. R builds on itself.\n>\n> (5) R skills follow a student to college and professional life. College\n> statistics and advanced science courses are increasingly teaching R. R\n> skills are a becoming a valuable professional credential in sci-tech, data\n> analytic, and finance firms.\n>\n> (6) R tutorial websites and videos for beginners are now widespread and\n> free.\n>\n> I have taught R as a guest teacher in 6th, 7th, 8th, 9th, and 10th grades\n> (& am a university statistician/scientist by profession).  The kids love it\n> and take to it with gusto.  R seems to them like a real important thing\n> when they produce, all by themselves, beautiful graphs of important\n> concepts.\n>\n> Toward the goal of popularizing R as a general product for scientific\n> graphs and calculations, I wrote a book, \"The R Student Companion\".  It is\n> an inexpensive paperback modeled in a \"lab manual\" format.  Naturally, so\n> many free instructional resources are available for R that instructors can\n> bring R into courses without needing extra books.  However, my book is\n> targeted at a high school level audience, having just a little algebra, and\n> it contains real, compelling scientific examples and computational\n> exercises and projects.  The value-added convenience, and the fact that the\n> book ports across many courses, seem to me to make the book a bargain.\n>\n> Publisher website here:\n> https://www.crcpress.com/The-R-Student-Companion/Dennis/p/book/9781439875407\n>\n> Amazon here:\n> http://www.amazon.com/The-Student-Companion-Brian-Dennis/dp/1439875405\n>\n> Read reviews here:\n> http://webpages.uidaho.edu/~brian/reviews_of_RSC.pdf\n>\n> Readin', Rritin', Rithmetic, and R!\n>\n> Enjoy!\n>\n> Brian Dennis\n> Professor of Wildlife and Statistics\n> University of Idaho\n>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Dear Brian,\n\nI firmly agree with you.  Indeed, I'm working with some colleagues at \nthe ASA (American Statistical Association) on trying to really broaden \nthe groups that are impacted by the use of R",
+      "thread_id": "thread-688559af7602",
+      "thread_depth": 1,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-d79844a864cd",
+      "message_id": "<20160517221750.GA50218@lilly.csoft.net>",
+      "from_name": "User Hayden",
+      "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
+      "date": "2016-05-17T18:17:50-04:00",
+      "subject": "[R-sig-teaching] [dr.of.chaos@gmail.com: Teaching R in high school and college science and math courses]",
+      "subject_clean": "[dr.of.chaos@gmail.com: Teaching R in high school and college science and math courses]",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I applaud your goals and what I can see on Amazon looks good.  In\naddition to inertia and addiction to graphing calculators, high shcool\nteachers (I've worked with them in AP Stats. for 20 years or so) are\nconcerned about access and equity.  Students can take the TIs\nanywhere.  There is no guarantee that students will have a suitable\ncomputer or Internet access at home.  Many high schools have very\nlimited computer labs but the TIs can be used in a regular classroom.\nMy counter to all that is that you can run R on computers people are\npaying the recycling center to haul away.  But there is no organized\neffort to make use of that resource.  In addition to gathering up the\ncomputers, one needs to find spaces to put them in.  \n\nYears ago I made a scientific version of Puppy Linux that included R\nand lots of other math. software.  That meant your recycling center\ncomputer did not have to have a working/legal OS.  Or even a working\nhard drive!\n\nI posted a link to your book on Amazon in the AP Statistics\nCommunity.  There is a small but growing number of R users there. \n\n\n----- Forwarded message from Brian Dennis <dr.of.chaos at gmail.com> -----\n\nDate: Tue, 17 May 2016 14:45:30 -0700\nFrom: Brian Dennis <dr.of.chaos at gmail.com>\nTo: r-sig-teaching at r-project.org\nSubject: [R-sig-teaching] Teaching R in high school and college science and\n\tmath courses\n\nHi fellow R-philes,\n\nMy contention is that R is not just for statistics.  Rather, R can be used\nin math and science classes in colleges, community colleges, and even high\nschools, to replace most uses of graphing calculators and proprietary\nspreadsheets.\n\nVarious aspects of R seem to have immense potential for helping STEM\n(science, technology, engineering, math) education:\n\n(1) With R, scientific calculations and graphs are fun and easy to produce.\nA student using R can focus on the scientific and mathematical concepts\nwithout having to pore through a manual of daunting calculator keystroke\ninstructions. The students would be analyzing data and depicting equations\njust as scientists are doing in labs all over the world.\n\n(2) R could be learned once and used across a wide variety of STEM courses,\npromoting the integration of STEM subjects that has been much discussed in\nprinciple but elusive in practice.\n\n(3) R is now probably the most universally available computational tool\n(aside from counting on fingers). Many students access a computer to use\nsocial media, and most schools and colleges have institutional machines (of\nvarying quality) available to the students. Versions of R exist for most\nplatforms (going back 10 years or more), so R could be made instantly\navailable to every student in every course.\n\n(4) R invites collaboration. Students can work in groups to conduct\nprojects in R, build R scripts, and improve each others??? work. Results on a\ncomputer screen are easier to view in groups than on a calculator. At home,\nstudents can work cooperatively online with R. Every new class can build\nnew accomplishments upon those of previous classes. R builds on itself.\n\n(5) R skills follow a student to college and professional life. College\nstatistics and advanced science courses are increasingly teaching R. R\nskills are a becoming a valuable professional credential in sci-tech, data\nanalytic, and finance firms.\n\n(6) R tutorial websites and videos for beginners are now widespread and\nfree.\n\nI have taught R as a guest teacher in 6th, 7th, 8th, 9th, and 10th grades\n(& am a university statistician/scientist by profession).  The kids love it\nand take to it with gusto.  R seems to them like a real important thing\nwhen they produce, all by themselves, beautiful graphs of important\nconcepts.\n\nToward the goal of popularizing R as a general product for scientific\ngraphs and calculations, I wrote a book, \"The R Student Companion\".  It is\nan inexpensive paperback modeled in a \"lab manual\" format.  Naturally, so\nmany free instructional resources are available for R that instructors can\nbring R into courses without needing extra books.  However, my book is\ntargeted at a high school level audience, having just a little algebra, and\nit contains real, compelling scientific examples and computational\nexercises and projects.  The value-added convenience, and the fact that the\nbook ports across many courses, seem to me to make the book a bargain.\n\nPublisher website here:\nhttps://www.crcpress.com/The-R-Student-Companion/Dennis/p/book/9781439875407\n\nAmazon here:\nhttp://www.amazon.com/The-Student-Companion-Brian-Dennis/dp/1439875405\n\nRead reviews here:\nhttp://webpages.uidaho.edu/~brian/reviews_of_RSC.pdf\n\nReadin', Rritin', Rithmetic, and R!\n\nEnjoy!\n\nBrian Dennis\nProfessor of Wildlife and Statistics\nUniversity of Idaho\n\n\t[[alternative HTML version deleted]]\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n----- End forwarded message -----\n\n-- \n\n------->  First-time AP Stats. teacher?  Help is on the way! See\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n      _\n     | |          Robert W. Hayden\n     | |          614 Nashua Street #119\n    /  |          Milford, New Hampshire 03055  USA\n   |   |          \n   |   |          email: bob@ the site below\n  /  x |          website: http://statland.org\n |     /          \n ''''''",
+      "body_snippet": "I applaud your goals and what I can see on Amazon looks good.  In\naddition to inertia and addiction to graphing calculators, high shcool\nteachers (I've worked with them in AP Stats. for 20 years or so",
+      "thread_id": "thread-d79844a864cd",
+      "thread_depth": 0,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-472c6827cd5f",
+      "message_id": "<20160517222313.GB50218@lilly.csoft.net>",
+      "from_name": "User Hayden",
+      "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
+      "date": "2016-05-17T18:23:13-04:00",
+      "subject": "[R-sig-teaching] [mdw@purdue.edu: Re: Teaching R in high school and college science and math courses]",
+      "subject_clean": "[mdw@purdue.edu: Re: Teaching R in high school and college science and math courses]",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I would be very interested in being involved.  I am an ASA member.  I\nthink the AP Stats. teachers already using R would be terrific\nresources.  I am not sure we need to start a new list -- there is\nlittle traffic on this one, and most of it is off-topic.  This is\nactually about using R to teach statistics!\n\n\n----- Forwarded message from Mark Daniel Ward <mdw at purdue.edu> -----\n\nDate: Tue, 17 May 2016 18:01:57 -0400\nFrom: Mark Daniel Ward <mdw at purdue.edu>\nTo: Brian Dennis <dr.of.chaos at gmail.com>, r-sig-teaching at r-project.org\nSubject: Re: [R-sig-teaching] Teaching R in high school and college science and\n\tmath courses\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:45.0)\n\tGecko/20100101 Thunderbird/45.0\n\nDear Brian,\n\nI firmly agree with you.  Indeed, I'm working with some colleagues at the ASA\n(American Statistical Association) on trying to really broaden the groups that\nare impacted by the use of R and data science, far beyond the usually K-12\ncontact with statistics.\n\nPerhaps we don't have to bother everyone with such discussions. I wonder if\ninterested parties would like to have a sub-discussion about this with my\ncolleagues at the ASA?  I'm actually trying to build some momentum in these\nvery areas.  Would you like to (directly) discuss further?  I've been working\non an initiative in this vein lately.\n\nP.S.  I see that you are a professor of wildlife and statistics. Although I'm\nin a statistics department, we have several students working on projects\nrelated to forestry and natural resources at Purdue.\n\nMark\n\nMark Daniel Ward, Ph.D.\nAssociate Professor and Undergraduate Chair\nDepartment of Statistics\nPurdue University\n150 North University Street\nWest Lafayette, IN 47907-2067\nmdw at purdue.edu\nphone: (765) 496-9563\n\n\nOn 5/17/16 5:45 PM, Brian Dennis wrote:\n> Hi fellow R-philes,\n> \n> My contention is that R is not just for statistics.  Rather, R can be used\n> in math and science classes in colleges, community colleges, and even high\n> schools, to replace most uses of graphing calculators and proprietary\n> spreadsheets.\n> \n> Various aspects of R seem to have immense potential for helping STEM\n> (science, technology, engineering, math) education:\n> \n> (1) With R, scientific calculations and graphs are fun and easy to produce.\n> A student using R can focus on the scientific and mathematical concepts\n> without having to pore through a manual of daunting calculator keystroke\n> instructions. The students would be analyzing data and depicting equations\n> just as scientists are doing in labs all over the world.\n> \n> (2) R could be learned once and used across a wide variety of STEM courses,\n> promoting the integration of STEM subjects that has been much discussed in\n> principle but elusive in practice.\n> \n> (3) R is now probably the most universally available computational tool\n> (aside from counting on fingers). Many students access a computer to use\n> social media, and most schools and colleges have institutional machines (of\n> varying quality) available to the students. Versions of R exist for most\n> platforms (going back 10 years or more), so R could be made instantly\n> available to every student in every course.\n> \n> (4) R invites collaboration. Students can work in groups to conduct\n> projects in R, build R scripts, and improve each others??? work. Results on a\n> computer screen are easier to view in groups than on a calculator. At home,\n> students can work cooperatively online with R. Every new class can build\n> new accomplishments upon those of previous classes. R builds on itself.\n> \n> (5) R skills follow a student to college and professional life. College\n> statistics and advanced science courses are increasingly teaching R. R\n> skills are a becoming a valuable professional credential in sci-tech, data\n> analytic, and finance firms.\n> \n> (6) R tutorial websites and videos for beginners are now widespread and\n> free.\n> \n> I have taught R as a guest teacher in 6th, 7th, 8th, 9th, and 10th grades\n> (& am a university statistician/scientist by profession).  The kids love it\n> and take to it with gusto.  R seems to them like a real important thing\n> when they produce, all by themselves, beautiful graphs of important\n> concepts.\n> \n> Toward the goal of popularizing R as a general product for scientific\n> graphs and calculations, I wrote a book, \"The R Student Companion\".  It is\n> an inexpensive paperback modeled in a \"lab manual\" format.  Naturally, so\n> many free instructional resources are available for R that instructors can\n> bring R into courses without needing extra books.  However, my book is\n> targeted at a high school level audience, having just a little algebra, and\n> it contains real, compelling scientific examples and computational\n> exercises and projects.  The value-added convenience, and the fact that the\n> book ports across many courses, seem to me to make the book a bargain.\n> \n> Publisher website here:\n> https://www.crcpress.com/The-R-Student-Companion/Dennis/p/book/9781439875407\n> \n> Amazon here:\n> http://www.amazon.com/The-Student-Companion-Brian-Dennis/dp/1439875405\n> \n> Read reviews here:\n> http://webpages.uidaho.edu/~brian/reviews_of_RSC.pdf\n> \n> Readin', Rritin', Rithmetic, and R!\n> \n> Enjoy!\n> \n> Brian Dennis\n> Professor of Wildlife and Statistics\n> University of Idaho\n> \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n----- End forwarded message -----\n\n-- \n\n------->  First-time AP Stats. teacher?  Help is on the way! See\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n      _\n     | |          Robert W. Hayden\n     | |          614 Nashua Street #119\n    /  |          Milford, New Hampshire 03055  USA\n   |   |          \n   |   |          email: bob@ the site below\n  /  x |          website: http://statland.org\n |     /          \n ''''''",
+      "body_snippet": "I would be very interested in being involved.  I am an ASA member.  I\nthink the AP Stats. teachers already using R would be terrific\nresources.  I am not sure we need to start a new list -- there is\nl",
+      "thread_id": "thread-472c6827cd5f",
+      "thread_depth": 0,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-e93d7d2e1fa6",
+      "message_id": "<CAM+rpYkW+frze61KjvUO7MO9=OuAG2rnST+f10j0cjm7kC5hYA@mail.gmail.com>",
+      "from_name": "Christopher W Ryan",
+      "from_email_hash": "1b29f9cec300eaee17dfd69d1f61fa0ef3e03d1c3e99be2390ec65184340c413",
+      "date": "2016-05-17T23:13:07-04:00",
+      "subject": "[R-sig-teaching] Teaching R in high school and college science and math courses",
+      "subject_clean": "Teaching R in high school and college science and math courses",
+      "in_reply_to": "<2c26d5ad-b393-e5f3-c80e-d37e3cf1a8ef@purdue.edu>",
+      "references": [
+        "<CAEZOd2A_eDsCS5Aio=FPpqWVSb6ErU=yzV9nbdmcxQXkNueheg@mail.gmail.com>",
+        "<2c26d5ad-b393-e5f3-c80e-d37e3cf1a8ef@purdue.edu>"
+      ],
+      "body_plain": "I think R is an outstanding tool for high schoolers.  Might as well\nteach good data habits from the get-go, rather than spend the first\ntwo (or more) years of college un-teaching bad ones.\n\nBack around 2013, I taught two 5-hour R workshops to students in a\nlongitudinal science research class at Rondout Valley High Shool in\nNew York State. R-help and R-sig-teaching archives contain the\npreliminary conversations leading up to my workshops, my experiences\ndoing them, and some post-workshop feedback from the students and\ntheir teacher. [search archives for \"teaching R high school\" or\nsimilar.]  Or by my email address. All in all, I'd say it was very\nsuccessful. The students started a computer programming club\nafterward, and several have gone on to college in various STEM and\nprogramming fields.\n\nIf there is going to be more discussion about this, I'm in.\n\n--Chris Ryan\nSUNY Upstate Medical University\nBinghamton University\nBroome County Health Department\n\nOn Tue, May 17, 2016 at 6:01 PM, Mark Daniel Ward <mdw at purdue.edu> wrote:\n> Dear Brian,\n>\n> I firmly agree with you.  Indeed, I'm working with some colleagues at the\n> ASA (American Statistical Association) on trying to really broaden the\n> groups that are impacted by the use of R and data science, far beyond the\n> usually K-12 contact with statistics.\n>\n> Perhaps we don't have to bother everyone with such discussions. I wonder if\n> interested parties would like to have a sub-discussion about this with my\n> colleagues at the ASA?  I'm actually trying to build some momentum in these\n> very areas.  Would you like to (directly) discuss further?  I've been\n> working on an initiative in this vein lately.\n>\n> P.S.  I see that you are a professor of wildlife and statistics. Although\n> I'm in a statistics department, we have several students working on projects\n> related to forestry and natural resources at Purdue.\n>\n> Mark\n>\n> Mark Daniel Ward, Ph.D.\n> Associate Professor and Undergraduate Chair\n> Department of Statistics\n> Purdue University\n> 150 North University Street\n> West Lafayette, IN 47907-2067\n> mdw at purdue.edu\n> phone: (765) 496-9563\n>\n>\n>\n> On 5/17/16 5:45 PM, Brian Dennis wrote:\n>>\n>> Hi fellow R-philes,\n>>\n>> My contention is that R is not just for statistics.  Rather, R can be used\n>> in math and science classes in colleges, community colleges, and even high\n>> schools, to replace most uses of graphing calculators and proprietary\n>> spreadsheets.\n>>\n>> Various aspects of R seem to have immense potential for helping STEM\n>> (science, technology, engineering, math) education:\n>>\n>> (1) With R, scientific calculations and graphs are fun and easy to\n>> produce.\n>> A student using R can focus on the scientific and mathematical concepts\n>> without having to pore through a manual of daunting calculator keystroke\n>> instructions. The students would be analyzing data and depicting equations\n>> just as scientists are doing in labs all over the world.\n>>\n>> (2) R could be learned once and used across a wide variety of STEM\n>> courses,\n>> promoting the integration of STEM subjects that has been much discussed in\n>> principle but elusive in practice.\n>>\n>> (3) R is now probably the most universally available computational tool\n>> (aside from counting on fingers). Many students access a computer to use\n>> social media, and most schools and colleges have institutional machines\n>> (of\n>> varying quality) available to the students. Versions of R exist for most\n>> platforms (going back 10 years or more), so R could be made instantly\n>> available to every student in every course.\n>>\n>> (4) R invites collaboration. Students can work in groups to conduct\n>> projects in R, build R scripts, and improve each others? work. Results on\n>> a\n>> computer screen are easier to view in groups than on a calculator. At\n>> home,\n>> students can work cooperatively online with R. Every new class can build\n>> new accomplishments upon those of previous classes. R builds on itself.\n>>\n>> (5) R skills follow a student to college and professional life. College\n>> statistics and advanced science courses are increasingly teaching R. R\n>> skills are a becoming a valuable professional credential in sci-tech, data\n>> analytic, and finance firms.\n>>\n>> (6) R tutorial websites and videos for beginners are now widespread and\n>> free.\n>>\n>> I have taught R as a guest teacher in 6th, 7th, 8th, 9th, and 10th grades\n>> (& am a university statistician/scientist by profession).  The kids love\n>> it\n>> and take to it with gusto.  R seems to them like a real important thing\n>> when they produce, all by themselves, beautiful graphs of important\n>> concepts.\n>>\n>> Toward the goal of popularizing R as a general product for scientific\n>> graphs and calculations, I wrote a book, \"The R Student Companion\".  It is\n>> an inexpensive paperback modeled in a \"lab manual\" format.  Naturally, so\n>> many free instructional resources are available for R that instructors can\n>> bring R into courses without needing extra books.  However, my book is\n>> targeted at a high school level audience, having just a little algebra,\n>> and\n>> it contains real, compelling scientific examples and computational\n>> exercises and projects.  The value-added convenience, and the fact that\n>> the\n>> book ports across many courses, seem to me to make the book a bargain.\n>>\n>> Publisher website here:\n>>\n>> https://www.crcpress.com/The-R-Student-Companion/Dennis/p/book/9781439875407\n>>\n>> Amazon here:\n>> http://www.amazon.com/The-Student-Companion-Brian-Dennis/dp/1439875405\n>>\n>> Read reviews here:\n>> http://webpages.uidaho.edu/~brian/reviews_of_RSC.pdf\n>>\n>> Readin', Rritin', Rithmetic, and R!\n>>\n>> Enjoy!\n>>\n>> Brian Dennis\n>> Professor of Wildlife and Statistics\n>> University of Idaho\n>>\n>>         [[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "I think R is an outstanding tool for high schoolers.  Might as well\nteach good data habits from the get-go, rather than spend the first\ntwo (or more) years of college un-teaching bad ones.\n\nBack aroun",
+      "thread_id": "thread-688559af7602",
+      "thread_depth": 2,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-c91e699e37ca",
+      "message_id": "<22332.4586.814782.827451@stat.math.ethz.ch>",
+      "from_name": "Martin Maechler",
+      "from_email_hash": "c2c86f22f78a4ecfe6d0e6b4e2be505a3f5beb0470ea88c903688ac536018a98",
+      "date": "2016-05-18T08:55:38+02:00",
+      "subject": "[R-sig-teaching] Teaching R in high school and college science and math courses",
+      "subject_clean": "Teaching R in high school and college science and math courses",
+      "in_reply_to": "<20160517221750.GA50218@lilly.csoft.net>",
+      "references": [
+        "<20160517221750.GA50218@lilly.csoft.net>"
+      ],
+      "body_plain": ">>>>> User Hayden <bob at statland.org>\n>>>>>     on Tue, 17 May 2016 18:17:50 -0400 writes:\n\n    > I applaud your goals and what I can see on Amazon looks\n    > good.  In addition to inertia and addiction to graphing\n    > calculators, high shcool teachers (I've worked with them\n    > in AP Stats. for 20 years or so) are concerned about\n    > access and equity.  Students can take the TIs anywhere.\n    > There is no guarantee that students will have a suitable\n    > computer or Internet access at home.  Many high schools\n    > have very limited computer labs but the TIs can be used in\n    > a regular classroom.  My counter to all that is that you\n    > can run R on computers people are paying the recycling\n    > center to haul away.  But there is no organized effort to\n    > make use of that resource.  In addition to gathering up\n    > the computers, one needs to find spaces to put them in.\n\n    > Years ago I made a scientific version of Puppy Linux that\n    > included R and lots of other math. software.  That meant\n    > your recycling center computer did not have to have a\n    > working/legal OS.  Or even a working hard drive!\n\n    > I posted a link to your book on Amazon in the AP\n    > Statistics Community.  There is a small but growing number\n    > of R users there.\n\nDear colleagues,\n\nAs an R Core member  (who does a little of volunteering for\nschool childern - mostly below high-school though)\nI've always dreamed of R entering the (upper) high-school level.\n\nI agree that R-SIG-Teaching is an appropriate place to keep this\ntopic going.  To us non-Americans, can you explain \"AP\nStatistics\" to us and possibly use URLs when you mention\nwebsites?\n\nOne remark about TI's:  They are still the thing now, but in\nsome places, including some here in Switzerland, schools now\nstart using tablets in the class room. I'm sure that something\nclose to tablets / smartphones / (their successor)  will be what\nfuture school kids will be using. \n\nBest regards,\n\nMartin Maechler\nETH Zurich  (and R Core Team)\n\n\n\n    > ----- Forwarded message from Brian Dennis\n    > <dr.of.chaos at gmail.com> -----\n\n    > Date: Tue, 17 May 2016 14:45:30 -0700 From: Brian Dennis\n    > <dr.of.chaos at gmail.com> To: r-sig-teaching at r-project.org\n    > Subject: [R-sig-teaching] Teaching R in high school and\n    > college science and math courses\n\n    > Hi fellow R-philes,\n\n    > My contention is that R is not just for statistics.\n    > Rather, R can be used in math and science classes in\n    > colleges, community colleges, and even high schools, to\n    > replace most uses of graphing calculators and proprietary\n    > spreadsheets.\n\n    > Various aspects of R seem to have immense potential for\n    > helping STEM (science, technology, engineering, math)\n    > education:\n\n    > (1) With R, scientific calculations and graphs are fun and\n    > easy to produce.  A student using R can focus on the\n    > scientific and mathematical concepts without having to\n    > pore through a manual of daunting calculator keystroke\n    > instructions. The students would be analyzing data and\n    > depicting equations just as scientists are doing in labs\n    > all over the world.\n\n    > (2) R could be learned once and used across a wide variety\n    > of STEM courses, promoting the integration of STEM\n    > subjects that has been much discussed in principle but\n    > elusive in practice.\n\n    > (3) R is now probably the most universally available\n    > computational tool (aside from counting on fingers). Many\n    > students access a computer to use social media, and most\n    > schools and colleges have institutional machines (of\n    > varying quality) available to the students. Versions of R\n    > exist for most platforms (going back 10 years or more), so\n    > R could be made instantly available to every student in\n    > every course.\n\n    > (4) R invites collaboration. Students can work in groups\n    > to conduct projects in R, build R scripts, and improve\n    > each others??? work. Results on a computer screen are\n    > easier to view in groups than on a calculator. At home,\n    > students can work cooperatively online with R. Every new\n    > class can build new accomplishments upon those of previous\n    > classes. R builds on itself.\n\n    > (5) R skills follow a student to college and professional\n    > life. College statistics and advanced science courses are\n    > increasingly teaching R. R skills are a becoming a\n    > valuable professional credential in sci-tech, data\n    > analytic, and finance firms.\n\n    > (6) R tutorial websites and videos for beginners are now\n    > widespread and free.\n\n    > I have taught R as a guest teacher in 6th, 7th, 8th, 9th,\n    > and 10th grades (& am a university statistician/scientist\n    > by profession).  The kids love it and take to it with\n    > gusto.  R seems to them like a real important thing when\n    > they produce, all by themselves, beautiful graphs of\n    > important concepts.\n\n    > Toward the goal of popularizing R as a general product for\n    > scientific graphs and calculations, I wrote a book, \"The R\n    > Student Companion\".  It is an inexpensive paperback\n    > modeled in a \"lab manual\" format.  Naturally, so many free\n    > instructional resources are available for R that\n    > instructors can bring R into courses without needing extra\n    > books.  However, my book is targeted at a high school\n    > level audience, having just a little algebra, and it\n    > contains real, compelling scientific examples and\n    > computational exercises and projects.  The value-added\n    > convenience, and the fact that the book ports across many\n    > courses, seem to me to make the book a bargain.\n\n    > Publisher website here:\n    > https://www.crcpress.com/The-R-Student-Companion/Dennis/p/book/9781439875407\n\n    > Amazon here:\n    > http://www.amazon.com/The-Student-Companion-Brian-Dennis/dp/1439875405\n\n    > Read reviews here:\n    > http://webpages.uidaho.edu/~brian/reviews_of_RSC.pdf\n\n    > Readin', Rritin', Rithmetic, and R!\n\n    > Enjoy!\n\n    > Brian Dennis Professor of Wildlife and Statistics\n    > University of Idaho\n\n    > -- \n\n    -------> First-time AP Stats. teacher?  Help is on the way!\n    -------> See\n    > http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n    > _ | | Robert W. Hayden | | 614 Nashua Street #119 / |\n    > Milford, New Hampshire 03055 USA\n    >    |   |          \n    >    | | email: bob@ the site below / x | website:\n    > http://statland.org | / ''''''",
+      "body_snippet": ">>>>> User Hayden <bob at statland.org>\n>>>>>     on Tue, 17 May 2016 18:17:50 -0400 writes:\n\n    > I applaud your goals and what I can see on Amazon looks\n    > good.  In addition to inertia and addi",
+      "thread_id": "thread-d79844a864cd",
+      "thread_depth": 1,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-a3d2e3bfd89a",
+      "message_id": "<CABdHhvG9ZpxW3ObKXJ=HfWC846RzTHTJHF5LsD1wqLmoc0H1Mw@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2016-05-18T12:41:15+02:00",
+      "subject": "[R-sig-teaching] Teaching R in high school and college science and math courses",
+      "subject_clean": "Teaching R in high school and college science and math courses",
+      "in_reply_to": "<22332.4586.814782.827451@stat.math.ethz.ch>",
+      "references": [
+        "<20160517221750.GA50218@lilly.csoft.net>",
+        "<22332.4586.814782.827451@stat.math.ethz.ch>"
+      ],
+      "body_plain": "> I agree that R-SIG-Teaching is an appropriate place to keep this\n> topic going.  To us non-Americans, can you explain \"AP\n> Statistics\" to us and possibly use URLs when you mention\n> websites?\n\nAP = advanced placement. It's an advanced high-school class that\nstudents can elect to take (typically in their final year) and that\noften counts for university credit (i.e. in many universities a good\nscore in an AP class allows you to skip one of the intro level\nclasses).\n\nHadley\n\n-- \nhttp://hadley.nz",
+      "body_snippet": "> I agree that R-SIG-Teaching is an appropriate place to keep this\n> topic going.  To us non-Americans, can you explain \"AP\n> Statistics\" to us and possibly use URLs when you mention\n> websites?\n\nAP =",
+      "thread_id": "thread-d79844a864cd",
+      "thread_depth": 2,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-2639fadc403f",
+      "message_id": "<20160518115737.GA508@lilly.csoft.net>",
+      "from_name": "User Hayden",
+      "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
+      "date": "2016-05-18T07:57:37-04:00",
+      "subject": "[R-sig-teaching] [h.wickham@gmail.com: Re: Teaching R in high school and college science and math courses]",
+      "subject_clean": "[h.wickham@gmail.com: Re: Teaching R in high school and college science and math courses]",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Martin, I'm not sure what URL was missing.  Here is a list of AP\ncourses.\n\nhttps://apstudent.collegeboard.org/apcourse\n\nThe program is not just for the US.  Discussion of the current exam is\nbanned until everyone has taken it and that covers many time zones\noutside the US.\n\nThe curricula are created by expert teams in each field.  If a high\nschool teacher wants to offer an AP course they have to get their plan\napproved by AP.  This is fairly recent and partly in response to\nschools putting the \"AP\" label on courses and transcripts to make\ntheir school look good even though said courses did not match AP\nstandards.\n\nThe 2016 exam just took place last week.  It's (inter)national and\nstudents get a score of 1, 2, 3, 4 or 5.  It is then entirely up to\ncolleges whether to offer credit and what score will be required as\nwell as what particular college course they get credit for.  (It can\nhappen that students get credit for no particular course, just\nelective credits toward graduation.)\n\nThere are AP Stats. teachers using R though they are a small\nminority.  I think some use R in one of the computer science courses.\nA major obstacle is that students are \"expected\" to bring a graphing\ncalculator to the exam.  That pretty much means students have to learn\nto do eveything with the calculators so using R would have to be in \naddition to using the calculators, not instead of them.  There have\nbeen complains about that for years.  Here is one from me published\nlast year.\n\nhttp://chance.amstat.org/2015/11/college-to-pre-college/\n\n----- Forwarded message from Hadley Wickham <h.wickham at gmail.com> -----\n\nDate: Wed, 18 May 2016 12:41:15 +0200\nFrom: Hadley Wickham <h.wickham at gmail.com>\nTo: Martin Maechler <maechler at stat.math.ethz.ch>\nCc: User Hayden <bob at statland.org>, R-sig-teaching\n\t<r-sig-teaching at r-project.org>\nSubject: Re: [R-sig-teaching] Teaching R in high school and college science and\n\tmath courses\n\n> I agree that R-SIG-Teaching is an appropriate place to keep this\n> topic going.  To us non-Americans, can you explain \"AP\n> Statistics\" to us and possibly use URLs when you mention\n> websites?\n\nAP = advanced placement. It's an advanced high-school class that\nstudents can elect to take (typically in their final year) and that\noften counts for university credit (i.e. in many universities a good\nscore in an AP class allows you to skip one of the intro level\nclasses).\n\nHadley\n\n-- \nhttp://hadley.nz\n\n\n----- End forwarded message -----\n\n-- \n\n------->  First-time AP Stats. teacher?  Help is on the way! See\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n      _\n     | |          Robert W. Hayden\n     | |          614 Nashua Street #119\n    /  |          Milford, New Hampshire 03055  USA\n   |   |          \n   |   |          email: bob@ the site below\n  /  x |          website: http://statland.org\n |     /          \n ''''''",
+      "body_snippet": "Martin, I'm not sure what URL was missing.  Here is a list of AP\ncourses.\n\nhttps://apstudent.collegeboard.org/apcourse\n\nThe program is not just for the US.  Discussion of the current exam is\nbanned un",
+      "thread_id": "thread-2639fadc403f",
+      "thread_depth": 0,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-203cbc0341de",
+      "message_id": "<CACHJnQDeusfjJgwHfDADhX_dBOsXxN4o25TOe9sDaqy0dKYR+Q@mail.gmail.com>",
+      "from_name": "Stas Kolenikov",
+      "from_email_hash": "fec250298b598169001d8be1d8803c49c95d5d639526133ee765175f46ff5d8a",
+      "date": "2016-05-18T10:33:49-05:00",
+      "subject": "[R-sig-teaching] Teaching R in high school and college science and math courses",
+      "subject_clean": "Teaching R in high school and college science and math courses",
+      "in_reply_to": "<CABdHhvG9ZpxW3ObKXJ=HfWC846RzTHTJHF5LsD1wqLmoc0H1Mw@mail.gmail.com>",
+      "references": [
+        "<20160517221750.GA50218@lilly.csoft.net>",
+        "<22332.4586.814782.827451@stat.math.ethz.ch>",
+        "<CABdHhvG9ZpxW3ObKXJ=HfWC846RzTHTJHF5LsD1wqLmoc0H1Mw@mail.gmail.com>"
+      ],
+      "body_plain": "AP Statistics course URL :\nhttp://apcentral.collegeboard.com/apstatistics. AP courses will rarely\nprovide a credit (i.e., the grade that the university will put on\ntheir transcript), but they can be used as a certifying prerequisite\n(i.e., you can jump on to the next course in the college sequence if\nyou demonstrated good performance in the AP class in high school).\n\nHerein lies the catch: a student who may have taken AP Statistics in\nhigh school may not see a statistics class in college whatsoever. That\ncould be really unfortunate. There is an astonishing number of\napproximately 200K high school students taking an AP class this year,\nyet we can only convert them to less than 2,000 undergrads coming out\nwith Bachelor degrees in statistics.\n\nHaving my kid going through AP Calculus now as a high school student,\nand knowing who is going to teach AP Statistics, I have very mixed\nfeelings about these courses. The reality is that AP Statistics will\nbe taught by somebody who, at best, has a degree in math education\n(i.e., is a proper math degree dropout), and zero experience (95% CI:\n[0,0]) in statistics. As a statistics professional, I advised my son\nto skip AP Stat, with the hopes that he would be able to take\nstatistics from somebody with a degree in it when he goes to college.\nThe uptake of the American Statistical Association resources for AP\nStat instructors appears to have been dismal; I was not able to\nconvince the teachers of AP Stat in our local schools to use these\nresources, and they instead rely on the pre-canned solutions by the\ncommercial publishers. Learning R would be truly terrifying for them,\nway out of the comfort zone of standardized high school instruction.\nThe current course materials advocate the use of Minitab and graphing\ncalculators that high school teachers swear by. What it would take to\nhave the College Board (the developer of AP Stat tests) to move to the\nXXI century and suggest R is beyond me; in some ways, they are bound\nto continue relying on calculators as that's the portable non-Internet\ntechnology you can allow on a test, unlike a computer with R installed\non it.\n\nI don't have any solutions, I am just reporting the symptoms. And I am\nsure I am just scratching the surface of what many ASA educators have\nalready been addressing for the past 20 or so years of the AP\nStatistics existence.\n\n\n-- Stas Kolenikov, PhD, PStat (ASA, SSC)\n-- Principal Survey Scientist, Abt SRBI\n-- Education Officer, Survey Research Methods Section of the American\nStatistical Association\n-- Opinions stated in this email are mine only, and do not reflect the\nposition of my employer\n-- http://stas.kolenikov.name\n\n\n\nOn Wed, May 18, 2016 at 5:41 AM, Hadley Wickham <h.wickham at gmail.com> wrote:\n>> I agree that R-SIG-Teaching is an appropriate place to keep this\n>> topic going.  To us non-Americans, can you explain \"AP\n>> Statistics\" to us and possibly use URLs when you mention\n>> websites?\n>\n> AP = advanced placement. It's an advanced high-school class that\n> students can elect to take (typically in their final year) and that\n> often counts for university credit (i.e. in many universities a good\n> score in an AP class allows you to skip one of the intro level\n> classes).\n>\n> Hadley\n>\n> --\n> http://hadley.nz\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "AP Statistics course URL :\nhttp://apcentral.collegeboard.com/apstatistics. AP courses will rarely\nprovide a credit (i.e., the grade that the university will put on\ntheir transcript), but they can be u",
+      "thread_id": "thread-d79844a864cd",
+      "thread_depth": 3,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-cabd7ab28cd6",
+      "message_id": "<20160518183132.BD868E23F30B@lilly.csoft.net>",
+      "from_name": "bob at statland.org",
+      "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
+      "date": "2016-05-18T14:31:32-04:00",
+      "subject": "[R-sig-teaching] Teaching R in high school and college science (fwd)",
+      "subject_clean": "Teaching R in high school and college science (fwd)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I often agree with the identification of issues below, and sometimes\nwith the opinions, but I think there are some factual errors and\nomissions.  Details within...\n\n\n\nForwarded message:\n> From: Stas Kolenikov <skolenik at gmail.com>\n> \n> AP Statistics course URL :\n> http://apcentral.collegeboard.com/apstatistics. AP courses will rarely\n> provide a credit (i.e., the grade that the university will put on\n> their transcript), but they can be used as a certifying prerequisite\n> (i.e., you can jump on to the next course in the college sequence if\n> you demonstrated good performance in the AP class in high school).\n\nI am not sure what this means or if it is meant as a quote from the AP\nsite, but the usual situation is that students get credit for a\nspecific course at the college of their choice, and that satisfies any\nprerequisites asking for that course.  The one thing they do not get\nis a grade.  Or, it's not A, B, C etc., just a pass.    \n\n> Herein lies the catch: a student who may have taken AP Statistics in\n> high school may not see a statistics class in college whatsoever. That\n> could be really unfortunate. There is an astonishing number of\n> approximately 200K high school students taking an AP class this year,\n> yet we can only convert them to less than 2,000 undergrads coming out\n> with Bachelor degrees in statistics.\n\nI think we need data to draw a conclusion here.  Some of the kids in\nAP Stats. would not have taken stats. in college anyway.  Many take it\nanyway because not everyone gets a great score on the AP exam.  Those\nstudents often report the college course is much easier, and they do\nwell in it.  I know that some kids take more stats. and even major in\nstats. as a result of taking the AP course.  I do not have numbers for\nany of these but I don't think we should jump to conclusions without\nthem.\n\n> Having my kid going through AP Calculus now as a high school student,\n> and knowing who is going to teach AP Statistics, I have very mixed\n> feelings about these courses. The reality is that AP Statistics will\n> be taught by somebody who, at best, has a degree in math education\n> (i.e., is a proper math degree dropout), and zero experience (95% CI:\n> [0,0]) in statistics. As a statistics professional, I advised my son\n> to skip AP Stat, with the hopes that he would be able to take\n> statistics from somebody with a degree in it when he goes to college.\n\nActually the people with math. degrees are the ones who lacked the\npeople skills to become good teachers;-)  (Disclaimer: I have a BS in\nmathematics from MIT.)  Seriously, there are people who WANT to teach\nbut have no interest in research.  We have little chance of\ncooperating with those people if we begin by insulting them.\n\nThe target course for AP Statistics is typically taught in a\nmathematics department by a mathematician with 1 plus or minus one\ncourse in statistics in their background, i.e., the same\nstats. training as the typical AP teacher.  That professor typically\nchooses a cookbook textbook and focusses on hand calculations with\ntoy data (actually, batches of made up numbers).  AP uses quality\ntextbooks by highly qualified authors.  The exam is written by simialr\npeople.  I challenge any college stats. instructor to administer an\nold AP exam to one of their own classes and compare the results to\nthose of the AP students.\n\n> The uptake of the American Statistical Association resources for AP\n> Stat instructors appears to have been dismal; I was not able to\n> convince the teachers of AP Stat in our local schools to use these\n> resources, and they instead rely on the pre-canned solutions by the\n> commercial publishers.\n\nGenerally high school math. teachers are EXTEMELY tired of college\nfolks looking down their noses at them and telling them what to do.\nWe will have to bend over backwards to avoid that if we want to\ninfluence them.  The master of that skill in my opinion was Dick\nSheaffer, past president of ASA and (IMHO) the father of AP Stats.\nAND coauthor of many resources teachers DO use.\n\nThat said, I am disappointed at how little interest high school\nteachers show in learning content beyond what they have to teach\ntomorrow.  This does lead to shallow understanding.  OTOH, I spent\nmost of my working career in college mathematics departments, and I\nfind high school teachers MUCH more open to learning more about\ncontent and pedagogy than college mathematicians teaching statistics.    \n\nLearning R would be truly terrifying for them,\n> way out of the comfort zone of standardized high school instruction.\n> The current course materials advocate the use of Minitab and graphing\n> calculators that high school teachers swear by. What it would take to\n> have the College Board (the developer of AP Stat tests) to move to the\n> XXI century and suggest R is beyond me; in some ways, they are bound\n> to continue relying on calculators as that's the portable non-Internet\n> technology you can allow on a test, unlike a computer with R installed\n> on it.\n\nI agree with most of this except that the CB does nothing I know of to\npromote Minitab and from what I can see in the online AP\nStats. community more folks are using R than Minitab.  Generally the\nteachers prefer EDUCATIONAL software over anything used by\nprofessionals.  So StatCrunch is very popular as are online applets,\nand a significant number use Fathom.\n\nIn my own career I have been in and out of contact with k-12\nteachers.  Early on the math. teachers were the ones using and\nteaching BASIC.  When I returned years later computers were being used\nmainly for business courses and writing term papers and many\nmath. teachers were quite computer-phobic.  The future teachers in my\nstats. classes wanted to do everything on their TI and many resisted\nusing Minitab.  But not all.\n\nI do not think there is any hope of converting ALL AP teachers to R.\nBut a significant number are already using it, and those folks are\noften leaders in the AP community.  What I think we can do is to make\nit as easy as possible for any AP teachers who would LIKE to explore R\nto do so.\n\n> I don't have any solutions, I am just reporting the symptoms. And I am\n> sure I am just scratching the surface of what many ASA educators have\n> already been addressing for the past 20 or so years of the AP\n> Statistics existence.\n> \n> \n> -- Stas Kolenikov, PhD, PStat (ASA, SSC)\n> -- Principal Survey Scientist, Abt SRBI\n> -- Education Officer, Survey Research Methods Section of the American\n> Statistical Association\n> -- Opinions stated in this email are mine only, and do not reflect the\n> position of my employer\n> -- http://stas.kolenikov.name\n> \n> \n> \n> On Wed, May 18, 2016 at 5:41 AM, Hadley Wickham <h.wickham at gmail.com> wrote:\n> >> I agree that R-SIG-Teaching is an appropriate place to keep this\n> >> topic going.  To us non-Americans, can you explain \"AP\n> >> Statistics\" to us and possibly use URLs when you mention\n> >> websites?\n> >\n> > AP = advanced placement. It's an advanced high-school class that\n> > students can elect to take (typically in their final year) and that\n> > often counts for university credit (i.e. in many universities a good\n> > score in an AP class allows you to skip one of the intro level\n> > classes).\n> >\n> > Hadley\n> >\n> > --\n> > http://hadley.nz\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n> \n\n\n------->  First-time AP Stats. teacher?  Help is on the way! See\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n      _\n     | |          Robert W. Hayden\n     | |          614 Nashua Street #119\n    /  |          Milford, New Hampshire 03055  USA\n   |   |          \n   |   |          email: bob@ the site below\n  /  x |          website: http://statland.org\n |     /          \n ''''''",
+      "body_snippet": "I often agree with the identification of issues below, and sometimes\nwith the opinions, but I think there are some factual errors and\nomissions.  Details within...\n\n\n\nForwarded message:\n> From: Stas K",
+      "thread_id": "thread-cabd7ab28cd6",
+      "thread_depth": 0,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-b210461a69e2",
+      "message_id": "<CAHDp66BbhQ8_v0hkzkvjkn19UKQPxzXtjZFqdBhqL=jDv4Z_jA@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2016-05-18T14:58:14-04:00",
+      "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
+      "subject_clean": "Plot f(x) = x^(1/5)",
+      "in_reply_to": "<CAP01uRnZ7gX_m8EtsguxfK9qRX=x2x_Rb4wHm60ye=rAXSrPBQ@mail.gmail.com>",
+      "references": [
+        "<CAHDp66DzBWQpwjFrg01KuN-xgckjb9_=j+pwh8bbJXCZ-Mw7zg@mail.gmail.com>",
+        "<CAP01uRnZ7gX_m8EtsguxfK9qRX=x2x_Rb4wHm60ye=rAXSrPBQ@mail.gmail.com>"
+      ],
+      "body_plain": "Dear All:\n\n\ncan someone please help me to plot the *Folium of Descrates:**  x^3+y^3=3xy\nfor x<-seq(-5,5,0.010) and **y<-seq(-5,5,0.010) *\n<https://www.google.com/search?biw=1155&bih=597&q=R:+Folium+of+Descartes&spell=1&sa=X&ved=0ahUKEwiBrsnWpeTMAhUFKB4KHU5TD0EQvwUIGSgA>\n\n\nwith thanks\nsteve\n\nOn Tue, May 17, 2016 at 9:07 AM, Gabor Grothendieck <ggrothendieck at gmail.com\n> wrote:\n\n> Try this:\n>\n>  y <- sign(x) * abs(x)^(1/5)\n>\n> On Tue, May 17, 2016 at 8:44 AM, Steven Stoline <sstoline at gmail.com>\n> wrote:\n> > Dear All:\n> >\n> >\n> > I am trying to plot the function f(x) = x^(1/5) for x=seq(-2,2,0.01). It\n> > give me only the plot of f(x) for the positive part of x. I checked the\n> > values of f(x), it is NaN for all negative values of x.\n> >\n> > *this is my code:*\n> >\n> >\n> > x<-seq(-2,2,0.01)\n> > y<- (x)^(1/5)\n> > plot(x,y, type=\"l\", lwd=3, xlab = \" \", ylab = \" \", col=\"blue\")\n> > abline(v=0, col=\"gray\", lty=2, lwd=3)\n> > abline(h=0, col=\"gray\", lty=2, lwd=3)\n> >\n> >\n> >\n> > any help will be appreciated.\n> >\n> >\n> > with many thanks\n> > steve\n> > --\n> > Steven M. Stoline\n> > 1123 Forest Avenue\n> > Portland, ME 04112\n> > sstoline at gmail.com\n> >\n> >         [[alternative HTML version deleted]]\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n>\n> --\n> Statistics & Software Consulting\n> GKX Group, GKX Associates Inc.\n> tel: 1-877-GKX-GROUP\n> email: ggrothendieck at gmail.com\n>\n\n\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\n\ncan someone please help me to plot the *Folium of Descrates:**  x^3+y^3=3xy\nfor x<-seq(-5,5,0.010) and **y<-seq(-5,5,0.010) *\n<https://www.google.com/search?biw=1155&bih=597&q=R:+Folium+of",
+      "thread_id": "thread-b2c583c04eb4",
+      "thread_depth": 2,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-f92cd852bf3c",
+      "message_id": "<CAHDp66AHhJ+L42p8+ogMxAQqgNQC1_HJh5m1JAxekonPgPajBQ@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2016-05-18T15:00:21-04:00",
+      "subject": "[R-sig-teaching] Folium of Descrates",
+      "subject_clean": "Folium of Descrates",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\n\n\ncan someone please help me to plot the *Folium of Descrates:**  x^3+y^3=3xy\nfor x<-seq(-5,5,0.010) and **y<-seq(-5,5,0.010) *\n\n\nwith thanks\nsteve\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\n\ncan someone please help me to plot the *Folium of Descrates:**  x^3+y^3=3xy\nfor x<-seq(-5,5,0.010) and **y<-seq(-5,5,0.010) *\n\n\nwith thanks\nsteve\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\n",
+      "thread_id": "thread-f92cd852bf3c",
+      "thread_depth": 0,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-bc47a10e711d",
+      "message_id": "<CAAmySGPDqPdYr9T8vHO6L_=+SbEqMT4tuMfHNC-AsS2yKxoiMA@mail.gmail.com>",
+      "from_name": "Michael Weylandt",
+      "from_email_hash": "44e8775a589b9ef81880469e200f3cce307c7180b4289ca1696a578afb772b3a",
+      "date": "2016-05-18T14:12:13-05:00",
+      "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
+      "subject_clean": "Plot f(x) = x^(1/5)",
+      "in_reply_to": "<CAHDp66BbhQ8_v0hkzkvjkn19UKQPxzXtjZFqdBhqL=jDv4Z_jA@mail.gmail.com>",
+      "references": [
+        "<CAHDp66DzBWQpwjFrg01KuN-xgckjb9_=j+pwh8bbJXCZ-Mw7zg@mail.gmail.com>",
+        "<CAP01uRnZ7gX_m8EtsguxfK9qRX=x2x_Rb4wHm60ye=rAXSrPBQ@mail.gmail.com>",
+        "<CAHDp66BbhQ8_v0hkzkvjkn19UKQPxzXtjZFqdBhqL=jDv4Z_jA@mail.gmail.com>"
+      ],
+      "body_plain": "Use the t-parametrized form from e.g.,\nhttp://mathworld.wolfram.com/FoliumofDescartes.html\n\nt <- seq(-50, 50, by=0.01)\nx <- 3*t/(1+t^3)\ny <- 3*t^2/(1+t^3)\nplot(x, y, xlim=c(-5, 5), ylim=c(-5, 5), type=\"l\")\n\n(I'm limiting the plot to avoid the huge values that occur near t=-1)\n\nMW\n\nOn Wed, May 18, 2016 at 1:58 PM, Steven Stoline <sstoline at gmail.com> wrote:\n> Dear All:\n>\n>\n> can someone please help me to plot the *Folium of Descrates:**  x^3+y^3=3xy\n> for x<-seq(-5,5,0.010) and **y<-seq(-5,5,0.010) *\n> <https://www.google.com/search?biw=1155&bih=597&q=R:+Folium+of+Descartes&spell=1&sa=X&ved=0ahUKEwiBrsnWpeTMAhUFKB4KHU5TD0EQvwUIGSgA>\n>\n>\n> with thanks\n> steve\n>\n> On Tue, May 17, 2016 at 9:07 AM, Gabor Grothendieck <ggrothendieck at gmail.com\n>> wrote:\n>\n>> Try this:\n>>\n>>  y <- sign(x) * abs(x)^(1/5)\n>>\n>> On Tue, May 17, 2016 at 8:44 AM, Steven Stoline <sstoline at gmail.com>\n>> wrote:\n>> > Dear All:\n>> >\n>> >\n>> > I am trying to plot the function f(x) = x^(1/5) for x=seq(-2,2,0.01). It\n>> > give me only the plot of f(x) for the positive part of x. I checked the\n>> > values of f(x), it is NaN for all negative values of x.\n>> >\n>> > *this is my code:*\n>> >\n>> >\n>> > x<-seq(-2,2,0.01)\n>> > y<- (x)^(1/5)\n>> > plot(x,y, type=\"l\", lwd=3, xlab = \" \", ylab = \" \", col=\"blue\")\n>> > abline(v=0, col=\"gray\", lty=2, lwd=3)\n>> > abline(h=0, col=\"gray\", lty=2, lwd=3)\n>> >\n>> >\n>> >\n>> > any help will be appreciated.\n>> >\n>> >\n>> > with many thanks\n>> > steve\n>> > --\n>> > Steven M. Stoline\n>> > 1123 Forest Avenue\n>> > Portland, ME 04112\n>> > sstoline at gmail.com\n>> >\n>> >         [[alternative HTML version deleted]]\n>> >\n>> > _______________________________________________\n>> > R-sig-teaching at r-project.org mailing list\n>> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>>\n>>\n>> --\n>> Statistics & Software Consulting\n>> GKX Group, GKX Associates Inc.\n>> tel: 1-877-GKX-GROUP\n>> email: ggrothendieck at gmail.com\n>>\n>\n>\n>\n> --\n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Use the t-parametrized form from e.g.,\nhttp://mathworld.wolfram.com/FoliumofDescartes.html\n\nt <- seq(-50, 50, by=0.01)\nx <- 3*t/(1+t^3)\ny <- 3*t^2/(1+t^3)\nplot(x, y, xlim=c(-5, 5), ylim=c(-5, 5), type",
+      "thread_id": "thread-b2c583c04eb4",
+      "thread_depth": 3,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-2de2da106fa7",
+      "message_id": "<CAAmySGOmJCmEpRuwstNTNs1J=_OcfiMyi+dK1uxnnUzoYM-hqQ@mail.gmail.com>",
+      "from_name": "Michael Weylandt",
+      "from_email_hash": "44e8775a589b9ef81880469e200f3cce307c7180b4289ca1696a578afb772b3a",
+      "date": "2016-05-18T14:13:26-05:00",
+      "subject": "[R-sig-teaching] Folium of Descrates",
+      "subject_clean": "Folium of Descrates",
+      "in_reply_to": "<CAHDp66AHhJ+L42p8+ogMxAQqgNQC1_HJh5m1JAxekonPgPajBQ@mail.gmail.com>",
+      "references": [
+        "<CAHDp66AHhJ+L42p8+ogMxAQqgNQC1_HJh5m1JAxekonPgPajBQ@mail.gmail.com>"
+      ],
+      "body_plain": "Use the t-parametrized form from e.g.,\nhttp://mathworld.wolfram.com/FoliumofDescartes.html\n\nt <- seq(-50, 50, by=0.01)\nx <- 3*t/(1+t^3)\ny <- 3*t^2/(1+t^3)\nplot(x, y, xlim=c(-5, 5), ylim=c(-5, 5), type=\"l\")\n\n(I'm limiting the plot to avoid the huge values that occur near t=-1)\n\nMichael\n\nOn Wed, May 18, 2016 at 2:00 PM, Steven Stoline <sstoline at gmail.com> wrote:\n> Dear All:\n>\n>\n> can someone please help me to plot the *Folium of Descrates:**  x^3+y^3=3xy\n> for x<-seq(-5,5,0.010) and **y<-seq(-5,5,0.010) *\n>\n>\n> with thanks\n> steve\n>\n> --\n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Use the t-parametrized form from e.g.,\nhttp://mathworld.wolfram.com/FoliumofDescartes.html\n\nt <- seq(-50, 50, by=0.01)\nx <- 3*t/(1+t^3)\ny <- 3*t^2/(1+t^3)\nplot(x, y, xlim=c(-5, 5), ylim=c(-5, 5), type",
+      "thread_id": "thread-f92cd852bf3c",
+      "thread_depth": 1,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-71786e02711a",
+      "message_id": "<20160518191358.31012E23F30B@lilly.csoft.net>",
+      "from_name": "bob at statland.org",
+      "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
+      "date": "2016-05-18T15:13:58-04:00",
+      "subject": "[R-sig-teaching] Plot f(x) = x^(1/5) (fwd)",
+      "subject_clean": "Plot f(x) = x^(1/5) (fwd)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Is this a STATISTICAL problem?  In this and the earleir post I think\nyou may be using R for a purpose for which it was not intended.  \n\nThat said, you might find something useful here:\n\nhttp://stackoverflow.com/questions/12702248/plotting-implicit-function\n\nForwarded message:\n> From r-sig-teaching-bounces at r-project.org Wed May 18 14:59:01 2016\n> X-Original-To: bob at statland.org\n> X-Csoft-Rule: spam<=5.0\n> X-Spam-Checker-Version: SpamAssassin 3.4.1-csoft45 (2015-04-28) on\n> \tlilly2.csoft.net\n> X-Spam-Level: \n> X-Spam-Status: No, score=-2.0 required=5.0 tests=BAYES_00,FREEMAIL_FROM,\n> \tNULL_IN_BODY,PP_MIME_FAKE_ASCII_TEXT,RCVD_IN_DNSWL_MED,RCVD_IN_MSPIKE_H3,\n> \tRCVD_IN_MSPIKE_WL,TXREP autolearn=ham autolearn_force=no version=3.4.1-csoft45\n> DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113;\n> \th=mime-version:in-reply-to:references:date:message-id:subject:from:to\n> \t:cc; bh=V3RPDIath7PWn8fO+vM6b0AiFAYAwPqfJGzuPvoDVKI=;\n> \tb=o8WqXkM+OWZQvUgq1pKpZqPs5qb+XVxuezMAk4ivB9ituZPpCgQXJaCP4m2QU17Zsk\n> \tlN0Hsu78iFC8ClqsnR5BD3i7C4FLjBzv6BJy1Hq1b+bLjmEIQU3lmn6K+XRXCrERbQCd\n> \tH1eHaXZUlXCcy07hjIjNwrkD+9jP4KEEtniePf2QabNBwwjVCYFDux03P7T26V1ZuQVS\n> \tKKXp+NDxE9xY5OZfURl8gOCZ/6UocXkmkeWGZ9IXdYt9J3f1BKDBXHA1eqwOPXwh/9NU\n> \tPt7LwUSslK/YtcZvkpTZyOvpGoIqptL5V3F9T8mkY8E4k300swL7cYYksq0/IyqnsnPV\n> \th9/w==\n> X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\n> \td=1e100.net; s=20130820;\n> \th=x-gm-message-state:mime-version:in-reply-to:references:date\n> \t:message-id:subject:from:to:cc;\n> \tbh=V3RPDIath7PWn8fO+vM6b0AiFAYAwPqfJGzuPvoDVKI=;\n> \tb=W7NVY93U+L7LRb/cvCvG5hTQkmg1jz/Sa4obJYUDwXvIZo+4pS1B6sJKPLKBr6XfcE\n> \tQmJazX/1AoxIj6WCHBXFvGkI+Qb2659i97m/oEf/XgcAFAqsjyVUi6be1Jjti0firgLp\n> \ts9Pi83GypjZ7SQTBvJu8wadDjNm9uboNDETxD1CU50S7orGALh/tHKLnXR0G6HYdklKQ\n> \tF7XU9+O3INFyUGb+NpZLnWAjoACCf3V4nokHuZIbdEa+8R526Ijqfkxf1/gcitQDuLhr\n> \t/oWo/qVLYGSJ/lmPN9a5vuVIhr98+xQ6f7nQEzN9cdB6sBAy2NnzZIU7vVJNKzm1ktUG\n> \tt2Fw==\n> X-Gm-Message-State: AOPr4FWb+aJU98U2EFrVhGIoxp3BUo2f5oibU/EF1JyWq/gDDy96HszazqRq3kV/YCPRBYOpGkpjloNX2lKXLA==\n> MIME-Version: 1.0\n> X-Received: by 10.55.27.98 with SMTP id b95mr9904280qkb.18.1463597895058; Wed,\n> \t18 May 2016 11:58:15 -0700 (PDT)\n> In-Reply-To: <CAP01uRnZ7gX_m8EtsguxfK9qRX=x2x_Rb4wHm60ye=rAXSrPBQ at mail.gmail.com>\n> References: <CAHDp66DzBWQpwjFrg01KuN-xgckjb9_=j+pwh8bbJXCZ-Mw7zg at mail.gmail.com>\n> \t<CAP01uRnZ7gX_m8EtsguxfK9qRX=x2x_Rb4wHm60ye=rAXSrPBQ at mail.gmail.com>\n> Date: Wed, 18 May 2016 14:58:14 -0400\n> Message-ID: <CAHDp66BbhQ8_v0hkzkvjkn19UKQPxzXtjZFqdBhqL=jDv4Z_jA at mail.gmail.com>\n> From: Steven Stoline <sstoline at gmail.com>\n> To: Gabor Grothendieck <ggrothendieck at gmail.com>\n> X-Tag-Only: YES\n> X-Filter-Node: phil3.ethz.ch\n> X-USF-Spam-Level: \n> X-USF-Spam-Status: hits=0.3 tests=EZ_HAS_URI, FREEMAIL_FROM, FREEMAIL_REPLY,\n> \tHTML_MESSAGE, RCVD_IN_DNSWL_LOW, SPF_PASS, T_DKIM_INVALID\n> X-USF-Spam-Flag: NO\n> X-Virus-Scanned: by amavisd-new at stat.math.ethz.ch\n> Content-Disposition: inline\n> Cc: R-sig-teaching <r-sig-teaching at r-project.org>\n> Subject: Re: [R-sig-teaching] Plot f(x) = x^(1/5)\n> X-BeenThere: r-sig-teaching at r-project.org\n> X-Mailman-Version: 2.1.18-1\n> Precedence: list\n> List-Id: SIG on Teaching Statistics using R <r-sig-teaching.r-project.org>\n> List-Unsubscribe: <https://stat.ethz.ch/mailman/options/r-sig-teaching>,\n> \t<mailto:r-sig-teaching-request at r-project.org?subject=unsubscribe>\n> List-Archive: <https://stat.ethz.ch/pipermail/r-sig-teaching/>\n> List-Post: <mailto:r-sig-teaching at r-project.org>\n> List-Help: <mailto:r-sig-teaching-request at r-project.org?subject=help>\n> List-Subscribe: <https://stat.ethz.ch/mailman/listinfo/r-sig-teaching>,\n> \t<mailto:r-sig-teaching-request at r-project.org?subject=subscribe>\n> Content-Type: text/plain; charset=\"us-ascii\"\n> Content-Transfer-Encoding: 7bit\n> Errors-To: r-sig-teaching-bounces at r-project.org\n> Sender: \"R-sig-teaching\" <r-sig-teaching-bounces at r-project.org>\n> \n> Dear All:\n> \n> \n> can someone please help me to plot the *Folium of Descrates:**  x^3+y^3=3xy\n> for x<-seq(-5,5,0.010) and **y<-seq(-5,5,0.010) *\n> <https://www.google.com/search?biw=1155&bih=597&q=R:+Folium+of+Descartes&spell=1&sa=X&ved=0ahUKEwiBrsnWpeTMAhUFKB4KHU5TD0EQvwUIGSgA>\n> \n> \n> with thanks\n> steve\n> \n> On Tue, May 17, 2016 at 9:07 AM, Gabor Grothendieck <ggrothendieck at gmail.com\n> > wrote:\n> \n> > Try this:\n> >\n> >  y <- sign(x) * abs(x)^(1/5)\n> >\n> > On Tue, May 17, 2016 at 8:44 AM, Steven Stoline <sstoline at gmail.com>\n> > wrote:\n> > > Dear All:\n> > >\n> > >\n> > > I am trying to plot the function f(x) = x^(1/5) for x=seq(-2,2,0.01). It\n> > > give me only the plot of f(x) for the positive part of x. I checked the\n> > > values of f(x), it is NaN for all negative values of x.\n> > >\n> > > *this is my code:*\n> > >\n> > >\n> > > x<-seq(-2,2,0.01)\n> > > y<- (x)^(1/5)\n> > > plot(x,y, type=\"l\", lwd=3, xlab = \" \", ylab = \" \", col=\"blue\")\n> > > abline(v=0, col=\"gray\", lty=2, lwd=3)\n> > > abline(h=0, col=\"gray\", lty=2, lwd=3)\n> > >\n> > >\n> > >\n> > > any help will be appreciated.\n> > >\n> > >\n> > > with many thanks\n> > > steve\n> > > --\n> > > Steven M. Stoline\n> > > 1123 Forest Avenue\n> > > Portland, ME 04112\n> > > sstoline at gmail.com\n> > >\n> > >         [[alternative HTML version deleted]]\n> > >\n> > > _______________________________________________\n> > > R-sig-teaching at r-project.org mailing list\n> > > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >\n> >\n> >\n> > --\n> > Statistics & Software Consulting\n> > GKX Group, GKX Associates Inc.\n> > tel: 1-877-GKX-GROUP\n> > email: ggrothendieck at gmail.com\n> >\n> \n> \n> \n> -- \n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com\n> \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n> \n\n\n------->  First-time AP Stats. teacher?  Help is on the way! See\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n      _\n     | |          Robert W. Hayden\n     | |          614 Nashua Street #119\n    /  |          Milford, New Hampshire 03055  USA\n   |   |          \n   |   |          email: bob@ the site below\n  /  x |          website: http://statland.org\n |     /          \n ''''''",
+      "body_snippet": "Is this a STATISTICAL problem?  In this and the earleir post I think\nyou may be using R for a purpose for which it was not intended.  \n\nThat said, you might find something useful here:\n\nhttp://stackov",
+      "thread_id": "thread-71786e02711a",
+      "thread_depth": 0,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-f401ee01eeb6",
+      "message_id": "<22333.26077.910778.214732@stat.math.ethz.ch>",
+      "from_name": "Martin Maechler",
+      "from_email_hash": "c2c86f22f78a4ecfe6d0e6b4e2be505a3f5beb0470ea88c903688ac536018a98",
+      "date": "2016-05-19T09:06:05+02:00",
+      "subject": "[R-sig-teaching] [h.wickham@gmail.com: Re: Teaching R in high school and college science and math courses]",
+      "subject_clean": "[h.wickham@gmail.com: Re: Teaching R in high school and college science and math courses]",
+      "in_reply_to": "<20160518115737.GA508@lilly.csoft.net>",
+      "references": [
+        "<20160518115737.GA508@lilly.csoft.net>"
+      ],
+      "body_plain": ">>>>> User Hayden <bob at statland.org>\n>>>>>     on Wed, 18 May 2016 07:57:37 -0400 writes:\n\n    > Martin, I'm not sure what URL was missing.  \n\nnever mind.. others have provided more context, including the\ndefinition of \"AP\".\n\n    > Here is a list of AP courses.\n\n    > https://apstudent.collegeboard.org/apcourse\n\n    > The program is not just for the US.  Discussion of the\n    > current exam is banned until everyone has taken it and\n    > that covers many time zones outside the US.\n\n(sure.. but people from the rest of the globe must first\n understand what you are talking about; why should they *know*\n anything at all about 'AP Stats' ... etc..)\n\nThanks again for bringing up / contributing to this topic.\nI hope this thread gets back to *how* entice pre-university\nprofessors/teachers to introduce and use R for applied\nmathematics, \"graphing\", statistics, \"data science\" or\nwhatever..\n\nThanks to all the constructive contributors.\nMartin",
+      "body_snippet": ">>>>> User Hayden <bob at statland.org>\n>>>>>     on Wed, 18 May 2016 07:57:37 -0400 writes:\n\n    > Martin, I'm not sure what URL was missing.  \n\nnever mind.. others have provided more context, includ",
+      "thread_id": "thread-2639fadc403f",
+      "thread_depth": 1,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-e620dc2eff27",
+      "message_id": "<CAGSSkmjNeioSM9NoaBZ0_6Wr4n462wmagv601PX8NuLF-o4S+w@mail.gmail.com>",
+      "from_name": "Nick Carchedi",
+      "from_email_hash": "ea4b840fddb83aa5f0c581d1a1ef33a753cf350acc1601834035a8171815900c",
+      "date": "2016-05-19T11:27:40-04:00",
+      "subject": "[R-sig-teaching] Teaching R in high school and college science and math courses",
+      "subject_clean": "Teaching R in high school and college science and math courses",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear fellow R fanatics:\n\nThanks to all of you for posting on this topic, especially to Brian\nDennis for kicking things off. Teaching R and stats to young people is\nsomething that is near and dear to my heart and I've been giving it a\ngreat deal of thought over the past 6 months. My company (DataCamp)\nand I are very interested in being part of the discussion and part of\nthe solution.\n\nI'll focus on AP Statistics for a moment, since for young people in\nthe US, it's often the first (and unfortunately for many, their last)\nencounter with a traditional intro stats curriculum. From talking with\npeople closer to the matter than I am, I've gathered that there are\ntwo primary constraints on the current AP Statistics curriculum:\n\n1. Lack of (uniform) access to modern computational tools (e.g. R)\n2. Lack of sufficient knowledge/training among high school teachers\n\nThe practical reality is that, given these constraints, the AP\nStatistics curriculum cannot not optimized purely for its didactic\nvalue to students, but rather to be 1) compatible with the\ncapabilities of a graphing calculator and 2) teachable by someone\nwithout any formal training in statistics or programming.\n\nThis is not in any way intended to be a knock on the folks who have\ntaken on the challenge of designing the curriculum or the amazing\nteachers on the front lines of public school education in the US. They\nare doing the best they can given the circumstances. But it does seem\nto me that both of the constraints above are solvable given the right\nstrategy, resources, and time.\n\nLet's please keep this discussion going. If anyone disagrees with my\nassessment, I'd love to hear your thoughts. Even better, I hope we can\nbegin discussing potential solutions. I have a few in mind :)\n\nSincerely,\nNick\n\n-- \nNick Carchedi\nDirector of Course Development | DataCamp\nSkype: ncarchedi | Mobile: 617-775-9373\n\n\n> Message: 14\n> Date: Tue, 17 May 2016 18:01:57 -0400\n> From: Mark Daniel Ward <mdw at purdue.edu>\n> To: Brian Dennis <dr.of.chaos at gmail.com>, r-sig-teaching at r-project.org\n> Subject: Re: [R-sig-teaching] Teaching R in high school and college\n>         science and math courses\n> Message-ID: <2c26d5ad-b393-e5f3-c80e-d37e3cf1a8ef at purdue.edu>\n> Content-Type: text/plain; charset=utf-8; format=flowed\n>\n> Dear Brian,\n>\n> I firmly agree with you.  Indeed, I'm working with some colleagues at\n> the ASA (American Statistical Association) on trying to really broaden\n> the groups that are impacted by the use of R and data science, far\n> beyond the usually K-12 contact with statistics.\n>\n> Perhaps we don't have to bother everyone with such discussions. I wonder\n> if interested parties would like to have a sub-discussion about this\n> with my colleagues at the ASA?  I'm actually trying to build some\n> momentum in these very areas.  Would you like to (directly) discuss\n> further?  I've been working on an initiative in this vein lately.\n>\n> P.S.  I see that you are a professor of wildlife and statistics.\n> Although I'm in a statistics department, we have several students\n> working on projects related to forestry and natural resources at Purdue.\n>\n> Mark\n>\n> Mark Daniel Ward, Ph.D.\n> Associate Professor and Undergraduate Chair\n> Department of Statistics\n> Purdue University\n> 150 North University Street\n> West Lafayette, IN 47907-2067\n> mdw at purdue.edu\n> phone: (765) 496-9563\n>\n> ------------------------------\n>\n> Message: 15\n> Date: Tue, 17 May 2016 18:17:50 -0400\n> From: User Hayden <bob at statland.org>\n> To: R-sig-teaching <r-sig-teaching at r-project.org>\n> Subject: [R-sig-teaching] [dr.of.chaos at gmail.com: Teaching R in high\n>         school and college science and math courses]\n> Message-ID: <20160517221750.GA50218 at lilly.csoft.net>\n> Content-Type: text/plain; charset=us-ascii\n>\n>\n>\n> I applaud your goals and what I can see on Amazon looks good.  In\n> addition to inertia and addiction to graphing calculators, high shcool\n> teachers (I've worked with them in AP Stats. for 20 years or so) are\n> concerned about access and equity.  Students can take the TIs\n> anywhere.  There is no guarantee that students will have a suitable\n> computer or Internet access at home.  Many high schools have very\n> limited computer labs but the TIs can be used in a regular classroom.\n> My counter to all that is that you can run R on computers people are\n> paying the recycling center to haul away.  But there is no organized\n> effort to make use of that resource.  In addition to gathering up the\n> computers, one needs to find spaces to put them in.\n>\n> Years ago I made a scientific version of Puppy Linux that included R\n> and lots of other math. software.  That meant your recycling center\n> computer did not have to have a working/legal OS.  Or even a working\n> hard drive!\n>\n> I posted a link to your book on Amazon in the AP Statistics\n> Community.  There is a small but growing number of R users there.\n>\n>\n> ----- Forwarded message from Brian Dennis <dr.of.chaos at gmail.com> -----\n>\n> Date: Tue, 17 May 2016 14:45:30 -0700\n> From: Brian Dennis <dr.of.chaos at gmail.com>\n> To: r-sig-teaching at r-project.org\n> Subject: [R-sig-teaching] Teaching R in high school and college science and\n>         math courses\n>\n> Hi fellow R-philes,\n>\n> My contention is that R is not just for statistics.  Rather, R can be used\n> in math and science classes in colleges, community colleges, and even high\n> schools, to replace most uses of graphing calculators and proprietary\n> spreadsheets.\n>\n> Various aspects of R seem to have immense potential for helping STEM\n> (science, technology, engineering, math) education:\n>\n> (1) With R, scientific calculations and graphs are fun and easy to produce.\n> A student using R can focus on the scientific and mathematical concepts\n> without having to pore through a manual of daunting calculator keystroke\n> instructions. The students would be analyzing data and depicting equations\n> just as scientists are doing in labs all over the world.\n>\n> (2) R could be learned once and used across a wide variety of STEM courses,\n> promoting the integration of STEM subjects that has been much discussed in\n> principle but elusive in practice.\n>\n> (3) R is now probably the most universally available computational tool\n> (aside from counting on fingers). Many students access a computer to use\n> social media, and most schools and colleges have institutional machines (of\n> varying quality) available to the students. Versions of R exist for most\n> platforms (going back 10 years or more), so R could be made instantly\n> available to every student in every course.\n>\n> (4) R invites collaboration. Students can work in groups to conduct\n> projects in R, build R scripts, and improve each others??? work. Results on\n> a\n> computer screen are easier to view in groups than on a calculator. At home,\n> students can work cooperatively online with R. Every new class can build\n> new accomplishments upon those of previous classes. R builds on itself.\n>\n> (5) R skills follow a student to college and professional life. College\n> statistics and advanced science courses are increasingly teaching R. R\n> skills are a becoming a valuable professional credential in sci-tech, data\n> analytic, and finance firms.\n>\n> (6) R tutorial websites and videos for beginners are now widespread and\n> free.\n>\n> I have taught R as a guest teacher in 6th, 7th, 8th, 9th, and 10th grades\n> (& am a university statistician/scientist by profession).  The kids love it\n> and take to it with gusto.  R seems to them like a real important thing\n> when they produce, all by themselves, beautiful graphs of important\n> concepts.\n>\n> Toward the goal of popularizing R as a general product for scientific\n> graphs and calculations, I wrote a book, \"The R Student Companion\".  It is\n> an inexpensive paperback modeled in a \"lab manual\" format.  Naturally, so\n> many free instructional resources are available for R that instructors can\n> bring R into courses without needing extra books.  However, my book is\n> targeted at a high school level audience, having just a little algebra, and\n> it contains real, compelling scientific examples and computational\n> exercises and projects.  The value-added convenience, and the fact that the\n> book ports across many courses, seem to me to make the book a bargain.\n>\n> Publisher website here:\n> https://www.crcpress.com/The-R-Student-Companion/Dennis/p/book/9781439875407\n>\n> Amazon here:\n> http://www.amazon.com/The-Student-Companion-Brian-Dennis/dp/1439875405\n>\n> Read reviews here:\n> http://webpages.uidaho.edu/~brian/reviews_of_RSC.pdf\n>\n> Readin', Rritin', Rithmetic, and R!\n>\n> Enjoy!\n>\n> Brian Dennis\n> Professor of Wildlife and Statistics\n> University of Idaho\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n> ----- End forwarded message -----\n>\n> --\n>\n> ------->  First-time AP Stats. teacher?  Help is on the way! See\n> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n>       _\n>      | |          Robert W. Hayden\n>      | |          614 Nashua Street #119\n>     /  |          Milford, New Hampshire 03055  USA\n>    |   |\n>    |   |          email: bob@ the site below\n>   /  x |          website: http://statland.org\n>  |     /\n>  ''''''\n>\n>\n>\n> ------------------------------\n>\n> Message: 16\n> Date: Tue, 17 May 2016 18:23:13 -0400\n> From: User Hayden <bob at statland.org>\n> To: R-sig-teaching <r-sig-teaching at r-project.org>\n> Subject: [R-sig-teaching] [mdw at purdue.edu: Re: Teaching R in high\n>         school and college science and math courses]\n> Message-ID: <20160517222313.GB50218 at lilly.csoft.net>\n> Content-Type: text/plain; charset=us-ascii\n>\n>\n> I would be very interested in being involved.  I am an ASA member.  I\n> think the AP Stats. teachers already using R would be terrific\n> resources.  I am not sure we need to start a new list -- there is\n> little traffic on this one, and most of it is off-topic.  This is\n> actually about using R to teach statistics!\n>\n>\n> ----- Forwarded message from Mark Daniel Ward <mdw at purdue.edu> -----\n>\n> Date: Tue, 17 May 2016 18:01:57 -0400\n> From: Mark Daniel Ward <mdw at purdue.edu>\n> To: Brian Dennis <dr.of.chaos at gmail.com>, r-sig-teaching at r-project.org\n> Subject: Re: [R-sig-teaching] Teaching R in high school and college science\n> and\n>         math courses\n> User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:45.0)\n>         Gecko/20100101 Thunderbird/45.0\n>\n> Dear Brian,\n>\n> I firmly agree with you.  Indeed, I'm working with some colleagues at the\n> ASA\n> (American Statistical Association) on trying to really broaden the groups\n> that\n> are impacted by the use of R and data science, far beyond the usually K-12\n> contact with statistics.\n>\n> Perhaps we don't have to bother everyone with such discussions. I wonder if\n> interested parties would like to have a sub-discussion about this with my\n> colleagues at the ASA?  I'm actually trying to build some momentum in these\n> very areas.  Would you like to (directly) discuss further?  I've been\n> working\n> on an initiative in this vein lately.\n>\n> P.S.  I see that you are a professor of wildlife and statistics. Although\n> I'm\n> in a statistics department, we have several students working on projects\n> related to forestry and natural resources at Purdue.\n>\n> Mark\n>\n> Mark Daniel Ward, Ph.D.\n> Associate Professor and Undergraduate Chair\n> Department of Statistics\n> Purdue University\n> 150 North University Street\n> West Lafayette, IN 47907-2067\n> mdw at purdue.edu\n> phone: (765) 496-9563\n>\n>\n>\n> Message: 17\n> Date: Wed, 18 May 2016 08:55:38 +0200\n> From: Martin Maechler <maechler at stat.math.ethz.ch>\n> To: User Hayden <bob at statland.org>\n> Cc: R-sig-teaching <r-sig-teaching at r-project.org>\n> Subject: Re: [R-sig-teaching] Teaching R in high school and college\n>         science and math courses\n> Message-ID: <22332.4586.814782.827451 at stat.math.ethz.ch>\n> Content-Type: text/plain; charset=\"us-ascii\"\n>\n>\n> Dear colleagues,\n>\n> As an R Core member  (who does a little of volunteering for\n> school childern - mostly below high-school though)\n> I've always dreamed of R entering the (upper) high-school level.\n>\n> I agree that R-SIG-Teaching is an appropriate place to keep this\n> topic going.  To us non-Americans, can you explain \"AP\n> Statistics\" to us and possibly use URLs when you mention\n> websites?\n>\n> One remark about TI's:  They are still the thing now, but in\n> some places, including some here in Switzerland, schools now\n> start using tablets in the class room. I'm sure that something\n> close to tablets / smartphones / (their successor)  will be what\n> future school kids will be using.\n>\n> Best regards,\n>\n> Martin Maechler\n> ETH Zurich  (and R Core Team)\n>\n> ------------------------------\n>\n> Message: 18\n> Date: Tue, 17 May 2016 23:13:07 -0400\n> From: Christopher W Ryan <cryan at binghamton.edu>\n> To: R-sig-teaching at r-project.org\n> Subject: Re: [R-sig-teaching] Teaching R in high school and college\n>         science and math courses\n> Message-ID:\n>         <CAM+rpYkW+frze61KjvUO7MO9=OuAG2rnST+f10j0cjm7kC5hYA at mail.gmail.com>\n> Content-Type: text/plain; charset=UTF-8\n>\n>  I think R is an outstanding tool for high schoolers.  Might as well\n> teach good data habits from the get-go, rather than spend the first\n> two (or more) years of college un-teaching bad ones.\n>\n> Back around 2013, I taught two 5-hour R workshops to students in a\n> longitudinal science research class at Rondout Valley High Shool in\n> New York State. R-help and R-sig-teaching archives contain the\n> preliminary conversations leading up to my workshops, my experiences\n> doing them, and some post-workshop feedback from the students and\n> their teacher. [search archives for \"teaching R high school\" or\n> similar.]  Or by my email address. All in all, I'd say it was very\n> successful. The students started a computer programming club\n> afterward, and several have gone on to college in various STEM and\n> programming fields.\n>\n> If there is going to be more discussion about this, I'm in.\n>\n> --Chris Ryan\n> SUNY Upstate Medical University\n> Binghamton University\n> Broome County Health Department",
+      "body_snippet": "Dear fellow R fanatics:\n\nThanks to all of you for posting on this topic, especially to Brian\nDennis for kicking things off. Teaching R and stats to young people is\nsomething that is near and dear to m",
+      "thread_id": "thread-e620dc2eff27",
+      "thread_depth": 0,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-04fed9a5c9e8",
+      "message_id": "<20160519195901.B42D6E23F30B@lilly.csoft.net>",
+      "from_name": "bob at statland.org",
+      "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
+      "date": "2016-05-19T15:59:01-04:00",
+      "subject": "[R-sig-teaching] Teaching R in high school and college science (fwd)",
+      "subject_clean": "Teaching R in high school and college science (fwd)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Forwarded message:\n> From: Nick Carchedi <nick at datacamp.com>\n \n> I'll focus on AP Statistics for a moment, since for young people in\n> the US, it's often the first (and unfortunately for many, their last)\n> encounter with a traditional intro stats curriculum. From talking with\n> people closer to the matter than I am, I've gathered that there are\n> two primary constraints on the current AP Statistics curriculum:\n> \n> 1. Lack of (uniform) access to modern computational tools (e.g. R)\n> 2. Lack of sufficient knowledge/training among high school teachers\n\nYes, but...;-)\n\nI am not sure how much of the \"access\" issue is reality and how much\nis an excuse.  For sure, the teachers and students already have\ngraphing calculators and are familiar with them, and such calculators\nare \"expected\" on the exam.  In additon, learning R (or any other\nsoftware) is not on the syllabus nor the exam.  So I think most\nteachers feel no need for R or machines to run it on.  Hence I don't\nthink they even try to get access.\n\nWe got a tiny crack in the wall with the requirement that every AP\nteacher submit to an audit to verify that their course matched AP\ngoals.  One requirement is:\n\n\"The school provides access to a computer to aid in investigating and\nanalyzing data and in exploring statistical models.\"\n\nNote the use of the singular here -- it sounds like the teacher could\nbe the only one with \"a computer\" but 1>0;-)  For now, I think this\nmight be the place to start -- show teachers how to prepare handouts\nor demos with R that illustrate statistical concepts.  There is\nalready a Teaching Demos package from Greg Snow.\n\nAnother pathway comes from the fact that once in a while an AP exam\nquestion includes a computer printout -- essentially always for\nregression.  For that reason there is interest in students learning to\nread such output (though not necessarily create it).  R could do this,\nthough R output is pretty idiosyncratic.  It might help to have a\nlearners package that produces something more like they expect.  (I am\na long time UNIX user and understand the value of output that can be\ninput to another process but the teachers will want pretty output\ninstead.)  John Fox's RCommander could help here.  There are also the\nvery basic help pages I creeated to get a beginner through Stats101\nusing R as their software:\n\nhttp://statland.org/Software_Help/R/Rhome.htm\n\n(It does NOT make full use of R.  It was created where most of the\nstudents were using another package but a few wanted to see how to do\nthe same stuff with R.)  \n\nAnother useful resource might be a site hosting RWeb with a library of\ndemos that can be run online.  Users could tweak the code to fit their\nneeds -- much easier than starting from scratch, and a good way to\nlearn how to start from scratch.  It could also intereact directly\nwith students, who are often much more interested in R than are their\nteachers;-)  \n\nI also think lack of interest is the main limitation on teacher\ntraining.  One post in this discussion cited lack of use of ASA\nresources and their own volunteer efforts.  I designed an online\ncourse covering the AP syllabus for high school teachers and staffed\nit with an outstanding high school teacher highly regarded in the AP\ncommunity.  It ran for a while but eventually died for lack of\nenrollment.  And our audience was worldwide.  I did summer advanced AP\nwrokshops on content that were a week long.  Same deal, cancelled\nafter three summers due to low enrollment.  Generally the teachers are\nnot interested in anything they can't see how to IMMEDIATELY put into\nuse in the classroom.  You have to remember that these folks have\nroughly 3 to 4 times the teaching load of college faculty and too\noften are just limited to skimming the textbook and trying to\ncommunicate what it says to the students.  It's also my opinion that\ngetting the students interested is much more important than course\ncontent.\n\nThe teachers DO attend the normal AP workshops that cover the program,\nthe exam, and pedagogy and are very tightly connected to what they\nwill be doing in class.  \n\n------->  First-time AP Stats. teacher?  Help is on the way! See\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n      _\n     | |          Robert W. Hayden\n     | |          614 Nashua Street #119\n    /  |          Milford, New Hampshire 03055  USA\n   |   |          \n   |   |          email: bob@ the site below\n  /  x |          website: http://statland.org\n |     /          \n ''''''",
+      "body_snippet": "Forwarded message:\n> From: Nick Carchedi <nick at datacamp.com>\n \n> I'll focus on AP Statistics for a moment, since for young people in\n> the US, it's often the first (and unfortunately for many, thei",
+      "thread_id": "thread-04fed9a5c9e8",
+      "thread_depth": 0,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-26b744367a55",
+      "message_id": "<20160519231148.1CD79E23F30B@lilly.csoft.net>",
+      "from_name": "bob at statland.org",
+      "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
+      "date": "2016-05-19T19:11:48-04:00",
+      "subject": "[R-sig-teaching] sample AP Statistics exams",
+      "subject_clean": "sample AP Statistics exams",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "http://apcentral.collegeboard.com/apc/members/exam/exam_information/8357.html\n\n------->  First-time AP Stats. teacher?  Help is on the way! See\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n      _\n     | |          Robert W. Hayden\n     | |          614 Nashua Street #119\n    /  |          Milford, New Hampshire 03055  USA\n   |   |          \n   |   |          email: bob@ the site below\n  /  x |          website: http://statland.org\n |     /          \n ''''''",
+      "body_snippet": "http://apcentral.collegeboard.com/apc/members/exam/exam_information/8357.html\n\n------->  First-time AP Stats. teacher?  Help is on the way! See\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20",
+      "thread_id": "thread-26b744367a55",
+      "thread_depth": 0,
+      "month": "2016-05"
+    },
+    {
+      "id": "msg-9d84bf3d8389",
+      "message_id": "<87iny1m9m4.fsf@cam.ac.uk>",
+      "from_name": "Laurent Gatto",
+      "from_email_hash": "7c62b970736166c1100da366a34679b3dd2d7d4e29899058dafa5b78b60c2d3a",
+      "date": "2016-05-26T10:50:11+01:00",
+      "subject": "[R-sig-teaching] R Software Carpentry Instructor training",
+      "subject_clean": "R Software Carpentry Instructor training",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI hope it is fine to advertise this event here.\n\nThanks to generous sponsorship from the R Consortium, Software Carpentry\nis running a two-day R instructor training class in Cambridge, UK, on\nSeptember 19-20, 2016. If you are interested in participating, please\ncheck out the annoucement post [1]. More details about the initiative\nare available here [2].\n\nFeel free to forward this event to your local useR groups/communities or\nget in touch with me if you have any questions.\n\nBest wishes,\n\nLaurent\n\n\n[1] http://software-carpentry.org/blog/2016/05/r-instructor-training.html\n[2] https://github.com/lgatto/SC-ICS-Proposal\n\n\n-- \nLaurent Gatto | @lgatt0\nhttp://cpu.sysbiol.cam.ac.uk/\nhttp://lgatto.github.io/",
+      "body_snippet": "Dear all,\n\nI hope it is fine to advertise this event here.\n\nThanks to generous sponsorship from the R Consortium, Software Carpentry\nis running a two-day R instructor training class in Cambridge, UK, ",
+      "thread_id": "thread-9d84bf3d8389",
+      "thread_depth": 0,
+      "month": "2016-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-293499da636e",
+      "subject": "Uses of Normal Probability Plots",
+      "message_count": 1,
+      "participants": [
+        "Spencer Graves"
+      ],
+      "started": "2016-05-02T08:07:26-05:00",
+      "last_reply": "2016-05-02T08:07:26-05:00",
+      "root_message_id": "msg-293499da636e"
+    },
+    {
+      "id": "thread-b2c583c04eb4",
+      "subject": "Plot f(x) = x^(1/5)",
+      "message_count": 10,
+      "participants": [
+        "David Pell",
+        "Gabor Grothendieck",
+        "Mark Daniel Ward",
+        "Michael Weylandt",
+        "Steven Stoline",
+        "jim holtman"
+      ],
+      "started": "2016-05-17T08:44:33-04:00",
+      "last_reply": "2016-05-18T14:12:13-05:00",
+      "root_message_id": "msg-b2c583c04eb4"
+    },
+    {
+      "id": "thread-d9717cb13c11",
+      "subject": "Plot f(x) = x^(1/5)",
+      "message_count": 4,
+      "participants": [
+        "Albyn Jones",
+        "Klaus Langohr",
+        "Richard M. Heiberger",
+        "bob at statland.org"
+      ],
+      "started": "2016-05-17T10:23:38-04:00",
+      "last_reply": "2016-05-17T18:10:13+02:00",
+      "root_message_id": "msg-d9717cb13c11"
+    },
+    {
+      "id": "thread-688559af7602",
+      "subject": "Teaching R in high school and college science and math courses",
+      "message_count": 3,
+      "participants": [
+        "Brian Dennis",
+        "Christopher W Ryan",
+        "Mark Daniel Ward"
+      ],
+      "started": "2016-05-17T14:45:30-07:00",
+      "last_reply": "2016-05-17T23:13:07-04:00",
+      "root_message_id": "msg-688559af7602"
+    },
+    {
+      "id": "thread-d79844a864cd",
+      "subject": "[dr.of.chaos@gmail.com: Teaching R in high school and college science and math courses]",
+      "message_count": 4,
+      "participants": [
+        "Hadley Wickham",
+        "Martin Maechler",
+        "Stas Kolenikov",
+        "User Hayden"
+      ],
+      "started": "2016-05-17T18:17:50-04:00",
+      "last_reply": "2016-05-18T10:33:49-05:00",
+      "root_message_id": "msg-d79844a864cd"
+    },
+    {
+      "id": "thread-472c6827cd5f",
+      "subject": "[mdw@purdue.edu: Re: Teaching R in high school and college science and math courses]",
+      "message_count": 1,
+      "participants": [
+        "User Hayden"
+      ],
+      "started": "2016-05-17T18:23:13-04:00",
+      "last_reply": "2016-05-17T18:23:13-04:00",
+      "root_message_id": "msg-472c6827cd5f"
+    },
+    {
+      "id": "thread-2639fadc403f",
+      "subject": "[h.wickham@gmail.com: Re: Teaching R in high school and college science and math courses]",
+      "message_count": 2,
+      "participants": [
+        "Martin Maechler",
+        "User Hayden"
+      ],
+      "started": "2016-05-18T07:57:37-04:00",
+      "last_reply": "2016-05-19T09:06:05+02:00",
+      "root_message_id": "msg-2639fadc403f"
+    },
+    {
+      "id": "thread-cabd7ab28cd6",
+      "subject": "Teaching R in high school and college science (fwd)",
+      "message_count": 1,
+      "participants": [
+        "bob at statland.org"
+      ],
+      "started": "2016-05-18T14:31:32-04:00",
+      "last_reply": "2016-05-18T14:31:32-04:00",
+      "root_message_id": "msg-cabd7ab28cd6"
+    },
+    {
+      "id": "thread-f92cd852bf3c",
+      "subject": "Folium of Descrates",
+      "message_count": 2,
+      "participants": [
+        "Michael Weylandt",
+        "Steven Stoline"
+      ],
+      "started": "2016-05-18T15:00:21-04:00",
+      "last_reply": "2016-05-18T14:13:26-05:00",
+      "root_message_id": "msg-f92cd852bf3c"
+    },
+    {
+      "id": "thread-71786e02711a",
+      "subject": "Plot f(x) = x^(1/5) (fwd)",
+      "message_count": 1,
+      "participants": [
+        "bob at statland.org"
+      ],
+      "started": "2016-05-18T15:13:58-04:00",
+      "last_reply": "2016-05-18T15:13:58-04:00",
+      "root_message_id": "msg-71786e02711a"
+    },
+    {
+      "id": "thread-e620dc2eff27",
+      "subject": "Teaching R in high school and college science and math courses",
+      "message_count": 1,
+      "participants": [
+        "Nick Carchedi"
+      ],
+      "started": "2016-05-19T11:27:40-04:00",
+      "last_reply": "2016-05-19T11:27:40-04:00",
+      "root_message_id": "msg-e620dc2eff27"
+    },
+    {
+      "id": "thread-04fed9a5c9e8",
+      "subject": "Teaching R in high school and college science (fwd)",
+      "message_count": 1,
+      "participants": [
+        "bob at statland.org"
+      ],
+      "started": "2016-05-19T15:59:01-04:00",
+      "last_reply": "2016-05-19T15:59:01-04:00",
+      "root_message_id": "msg-04fed9a5c9e8"
+    },
+    {
+      "id": "thread-26b744367a55",
+      "subject": "sample AP Statistics exams",
+      "message_count": 1,
+      "participants": [
+        "bob at statland.org"
+      ],
+      "started": "2016-05-19T19:11:48-04:00",
+      "last_reply": "2016-05-19T19:11:48-04:00",
+      "root_message_id": "msg-26b744367a55"
+    },
+    {
+      "id": "thread-9d84bf3d8389",
+      "subject": "R Software Carpentry Instructor training",
+      "message_count": 1,
+      "participants": [
+        "Laurent Gatto"
+      ],
+      "started": "2016-05-26T10:50:11+01:00",
+      "last_reply": "2016-05-26T10:50:11+01:00",
+      "root_message_id": "msg-9d84bf3d8389"
+    }
+  ]
+}

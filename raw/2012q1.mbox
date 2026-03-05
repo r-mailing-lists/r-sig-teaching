@@ -1,0 +1,1676 @@
+From bob at statland.org  Sat Jan  7 18:18:18 2012
+From: bob at statland.org (Bob)
+Date: Sat, 7 Jan 2012 12:18:18 -0500 (EST)
+Subject: [R-sig-teaching] R for absolute beginners
+Message-ID: <20120107171818.8A31728490@mail89.csoft.net>
+
+
+
+>From time to time I have posted a link to the materials on R that I
+developed for my online courses.  Their only claim to fame is that
+they are way below the level of all the R documentation I have seen
+and so suited for very non-technical beginners (I hope). There have
+been a variety of problems with that link, including things being
+invisible so you do not even know they are (not) there.  So I have put
+a cosmetically challenged version on my own website.  There may still
+be problems, but at least now I have access and can fix them!  Let me
+know if you find any.  There should be several pages on R Commander
+and several on plain R.  I think several more are still missing and I
+will continue to hunt for them.
+
+     http://statland.org/R/Rstart.html
+
+
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+      _
+     | |          Robert W. Hayden
+     | |          142 Main Street
+    /  |          Apartment 104
+   |   |          Jaffrey, New Hampshire 03452  USA
+   |   |          email: bob@ the site below
+  /    |          website: http://statland.org
+ | .   y          phone: (603) 532-7224 (home)
+ ''''''
+
+
+From aaboueissa at usm.maine.edu  Sun Jan 15 20:41:29 2012
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Sun, 15 Jan 2012 14:41:29 -0500
+Subject: [R-sig-teaching] Example(s) of Biomodal distributions
+Message-ID: <4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120115/b715d489/attachment.pl>
+
+From jefflaux at gmail.com  Sun Jan 15 21:26:34 2012
+From: jefflaux at gmail.com (Jeff Laux)
+Date: Sun, 15 Jan 2012 15:26:34 -0500
+Subject: [R-sig-teaching] Example(s) of Biomodal distributions
+In-Reply-To: <4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>
+References: <4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>
+Message-ID: <4F13367A.2040800@gmail.com>
+
+Would this work?
+
+m1 <- 3.5
+m2 <- 6.5
+s1 <- 0.8
+s2 <- 0.8
+dist1 <- dnorm(x, mean=m1, sd=s1)
+dist2 <- dnorm(x, mean=m2, sd=s2)
+biModalDist <- dist1 + dist2
+
+q <- qnorm(.9,0,1)
+z1 <- q*s1
+z2 <- q*s2
+zLow <- m1 - z1
+zUp <- m2 + z
+
+xShade <- seq(zLow, zUp, 0.1)
+d1Shade <- dnorm(xShade, mean=m1, sd=s1)
+d2Shade <- dnorm(xShade, mean=m2, sd=s1)
+yShade <- d1Shade + d2Shade
+
+windows()
+plot(x, biModalDist, type="l")
+polygon(x=c(zUp, zLow, xShade), y=c(0,0,yShade), col="gray")
+
+
+On 1/15/2012 2:41 PM, AbouEl-Makarim Aboueissa wrote:
+> Dear R users:
+>
+> I am currently teaching a course in Statistics. Can someone give an R code(s) to create a biomodal curve(s) with shaded area of 90% and with 5% in each tail
+>
+> With many thanks
+> abou
+>
+>
+>
+> ==========================
+> AbouEl-Makarim Aboueissa, Ph.D.
+> Associate Professor of Statistics
+> Graduate Program Coordinator
+> Department of Mathematics&  Statistics
+> University of Southern Maine
+> 96 Falmouth Street
+> P.O. Box 9300
+> Portland, ME 04104-9300
+> USA
+>
+>
+> Tel: (207) 228-8389
+> Fax: (207) 780-5607
+> Email: aaboueissa at usm.maine.edu
+>            aboueiss at yahoo.com
+>
+> Office: 301C Payson Smith
+>
+>
+> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+> -----
+> No virus found in this message.
+> Checked by AVG - www.avg.com
+> Version: 2012.0.1901 / Virus Database: 2109/4744 - Release Date: 01/15/12
+>
+>
+
+
+From jefflaux at gmail.com  Sun Jan 15 21:58:14 2012
+From: jefflaux at gmail.com (Jeff Laux)
+Date: Sun, 15 Jan 2012 15:58:14 -0500
+Subject: [R-sig-teaching] Example(s) of Biomodal distributions
+In-Reply-To: <4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>
+References: <4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>
+Message-ID: <4F133DE6.30709@gmail.com>
+
+x didn't make it through the cut-and-paste, it should be:
+
+x <- seq(0, 10, 0.1)
+
+also zUp has a typo, it should be:
+
+zUp <- m2 + z2
+
+That should work now.
+
+
+On 1/15/2012 2:41 PM, AbouEl-Makarim Aboueissa wrote:
+> Dear R users:
+>
+> I am currently teaching a course in Statistics. Can someone give an R code(s) to create a biomodal curve(s) with shaded area of 90% and with 5% in each tail
+>
+> With many thanks
+> abou
+>
+>
+>
+> ==========================
+> AbouEl-Makarim Aboueissa, Ph.D.
+> Associate Professor of Statistics
+> Graduate Program Coordinator
+> Department of Mathematics&  Statistics
+> University of Southern Maine
+> 96 Falmouth Street
+> P.O. Box 9300
+> Portland, ME 04104-9300
+> USA
+>
+>
+> Tel: (207) 228-8389
+> Fax: (207) 780-5607
+> Email: aaboueissa at usm.maine.edu
+>            aboueiss at yahoo.com
+>
+> Office: 301C Payson Smith
+>
+>
+> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+> -----
+> No virus found in this message.
+> Checked by AVG - www.avg.com
+> Version: 2012.0.1901 / Virus Database: 2109/4744 - Release Date: 01/15/12
+>
+>
+
+
+From rpruim at calvin.edu  Mon Jan 16 05:31:57 2012
+From: rpruim at calvin.edu (Randall Pruim)
+Date: Sun, 15 Jan 2012 23:31:57 -0500
+Subject: [R-sig-teaching] Example(s) of Biomodal distributions
+In-Reply-To: <4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>
+References: <4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>
+Message-ID: <7B7A6A17-610D-4FFC-8834-7D9175AF2CDD@calvin.edu>
+
+I recently wrote a function for the mosaic package that makes it easy  
+to generate various kinds of plots of distributions.  For example, to  
+plot a Binom(30,.35) distribution, you just use:
+
+distPlot("binom",params=list(size=30, prob=.35))
+
+and get the attached plot (if it makes it through to the list).
+-------------- next part --------------
+
+
+
+Additional arguments let you choose between different kinds of plots  
+(density, histogram, qq, cdf), and there is a heuristic to guess  
+whether the distribution is discrete or continuous and to the right  
+thing.
+
+I didn't set these up to make it easy to add the shading, but I think  
+I could modify things to make that possible too.   Stay tuned.
+
+---rjp
+
+
+
+
+
+
+
+
+On Jan 15, 2012, at 2:41 PM, AbouEl-Makarim Aboueissa wrote:
+
+> Dear R users:
+>
+> I am currently teaching a course in Statistics. Can someone give an  
+> R code(s) to create a biomodal curve(s) with shaded area of 90% and  
+> with 5% in each tail
+>
+> With many thanks
+> abou
+>
+>
+>
+> ==========================
+> AbouEl-Makarim Aboueissa, Ph.D.
+> Associate Professor of Statistics
+> Graduate Program Coordinator
+> Department of Mathematics & Statistics
+> University of Southern Maine
+> 96 Falmouth Street
+> P.O. Box 9300
+> Portland, ME 04104-9300
+> USA
+>
+>
+> Tel: (207) 228-8389
+> Fax: (207) 780-5607
+> Email: aaboueissa at usm.maine.edu
+>          aboueiss at yahoo.com
+>
+> Office: 301C Payson Smith
+>
+>
+> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From rpruim at calvin.edu  Mon Jan 16 07:57:00 2012
+From: rpruim at calvin.edu (Randall Pruim)
+Date: Mon, 16 Jan 2012 01:57:00 -0500
+Subject: [R-sig-teaching] Example(s) of Biomodal distributions
+In-Reply-To: <4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>
+References: <4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>
+Message-ID: <10ABF549-2647-400F-8C98-C42E77697BF7@calvin.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120116/dd6642da/attachment.pl>
+
+From rpruim at calvin.edu  Mon Jan 16 14:58:58 2012
+From: rpruim at calvin.edu (Randall Pruim)
+Date: Mon, 16 Jan 2012 08:58:58 -0500
+Subject: [R-sig-teaching] Example(s) of Biomodal distributions
+In-Reply-To: <4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>
+References: <4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>
+Message-ID: <366F5EA7-FB17-4894-B795-614986C1EBB6@calvin.edu>
+
+
+Just noticing that I read the post below too quickly and thought it  
+said "binomial" rather than "bimodal".  But my solution works all the  
+same, you just need to provide a bimodal distribution as the first  
+argument.  The only requirement is that if the name of your  
+distribution is "foo", then dfoo, pfoo, and qfoo need to exist and do  
+the correct things.  They may be user defined functions.
+
+You can of course, use the groups argument however you like to define  
+the tails of the distribution.  For example, something like
+
+	groups = ( x < qfoo(0.05, ....) | x > qfoo(0.95) )
+
+should shade the tails differently from the center.
+
+In view of the email from Jeff Laux, I might consider adding some  
+utilities to build new dfoo, pfoo, and qfoo functions from existing  
+ones, at least for a few easy cases, like linear combinations.  That  
+would make it really easy to generate various bimodal distributions.
+
+---rjp
+
+
+
+
+On Jan 15, 2012, at 2:41 PM, AbouEl-Makarim Aboueissa wrote:
+
+> Dear R users:
+>
+> I am currently teaching a course in Statistics. Can someone give an  
+> R code(s) to create a biomodal curve(s) with shaded area of 90% and  
+> with 5% in each tail
+>
+> With many thanks
+> abou
+>
+>
+>
+> ==========================
+> AbouEl-Makarim Aboueissa, Ph.D.
+> Associate Professor of Statistics
+> Graduate Program Coordinator
+> Department of Mathematics & Statistics
+> University of Southern Maine
+> 96 Falmouth Street
+> P.O. Box 9300
+> Portland, ME 04104-9300
+> USA
+>
+>
+> Tel: (207) 228-8389
+> Fax: (207) 780-5607
+> Email: aaboueissa at usm.maine.edu
+>          aboueiss at yahoo.com
+>
+> Office: 301C Payson Smith
+>
+>
+> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From chubukou at patfiza.net  Mon Jan 16 15:10:14 2012
+From: chubukou at patfiza.net (chubukou at patfiza.net)
+Date: Mon, 16 Jan 2012 14:10:14 +0000
+Subject: [R-sig-teaching] Example(s) of Biomodal distributions
+In-Reply-To: <366F5EA7-FB17-4894-B795-614986C1EBB6@calvin.edu>
+References: <4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>
+	<366F5EA7-FB17-4894-B795-614986C1EBB6@calvin.edu>
+Message-ID: <8f5557c8888cd6710c49e772f4cb2e91@patfiza.net>
+
+I think AbouEl-Makarim means "bimodal distribution" here is my solve 
+(sorry for primitive example)
+
+m1<-0;
+sd1<-1;
+m2<-4;
+sd2<-1;
+bimodal<-curve(dnorm(x,m1,sd1)+dnorm(x,m2,sd2), 
+from=min(c(m1,m2))-3*max(c(sd1,sd2)), 
+to=max(c(m1,m2))+3*max(c(sd1,sd2)));
+ql_1<-quantile(rnorm(1000,m1,sd1),0.05);
+qh_1<-quantile(rnorm(1000,m1,sd1),0.95);
+ql_2<-quantile(rnorm(1000,m2,sd2),0.05);
+qh_2<-quantile(rnorm(1000,m2,sd2),0.95);
+plot(bimodal$x, bimodal$y, type="l");
+abline(v=ql_1, col="red",lwd=2);
+abline(v=qh_1, col="red",lwd=2);
+abline(v=ql_2, col="green", lwd=2);
+abline(v=qh_2, col="green", lwd=2);
+polygon(x=c(ql_1,qh_1, bimodal$x[bimodal$x<=qh_1 && bimodal$x>=ql_1]), 
+y=c(0,0,bimodal$y[bimodal$x<=qh_1 && bimodal$x>=ql_1]), col="gray");
+polygon(x=c(ql_2,qh_2, bimodal$x[bimodal$x<=qh_2 && bimodal$x>=ql_2]), 
+y=c(0,0,bimodal$y[bimodal$x<=qh_2 && bimodal$x>=ql_2]), col="gray");
+
+--
+Zhan Chubukou
+Chair of Pathological Physiology magistrant
+Gomel State Medical University
+Belarus
+
+> Just noticing that I read the post below too quickly and thought it
+> said "binomial" rather than "bimodal".  But my solution works all the
+> same, you just need to provide a bimodal distribution as the first
+> argument.  The only requirement is that if the name of your
+> distribution is "foo", then dfoo, pfoo, and qfoo need to exist and do
+> the correct things.  They may be user defined functions.
+>
+> You can of course, use the groups argument however you like to define
+> the tails of the distribution.  For example, something like
+>
+> groups = ( x < qfoo(0.05, ....) | x > qfoo(0.95) )
+>
+> should shade the tails differently from the center.
+>
+> In view of the email from Jeff Laux, I might consider adding some
+> utilities to build new dfoo, pfoo, and qfoo functions from existing
+> ones, at least for a few easy cases, like linear combinations.  That
+> would make it really easy to generate various bimodal distributions.
+>
+> ---rjp
+>
+>
+>
+>
+> On Jan 15, 2012, at 2:41 PM, AbouEl-Makarim Aboueissa wrote:
+>
+>> Dear R users:
+>>
+>> I am currently teaching a course in Statistics. Can someone give an  
+>> R code(s) to create a biomodal curve(s) with shaded area of 90% and  
+>> with 5% in each tail
+>>
+>> With many thanks
+>> abou
+>>
+>>
+>>
+>> ==========================
+>> AbouEl-Makarim Aboueissa, Ph.D.
+>> Associate Professor of Statistics
+>> Graduate Program Coordinator
+>> Department of Mathematics & Statistics
+>> University of Southern Maine
+>> 96 Falmouth Street
+>> P.O. Box 9300
+>> Portland, ME 04104-9300
+>> USA
+>>
+>>
+>> Tel: (207) 228-8389
+>> Fax: (207) 780-5607
+>> Email: aaboueissa at usm.maine.edu
+>>          aboueiss at yahoo.com
+>>
+>> Office: 301C Payson Smith
+>>
+>>
+>> 	[[alternative HTML version deleted]]
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From chubukou at patfiza.net  Mon Jan 16 15:47:36 2012
+From: chubukou at patfiza.net (chubukou at patfiza.net)
+Date: Mon, 16 Jan 2012 14:47:36 +0000
+Subject: [R-sig-teaching] Example(s) of Biomodal distributions
+Message-ID: <82ece389bdbbb336cb71dbe9cfb8fca0@patfiza.net>
+
+Dear Abou,
+I think Your trouble can be solved like there 
+http://www.talkstats.com/showthread.php/11746-Problem-with-plotting-in-R
+
+---
+Zhan Chubukou
+Chair of Pathological Physiology magistrant
+Gomel State Medical University
+Belarus
+
+
+From aaboueissa at usm.maine.edu  Thu Feb 16 04:14:12 2012
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Wed, 15 Feb 2012 22:14:12 -0500
+Subject: [R-sig-teaching] Shading the solution of quadratic inequality
+Message-ID: <4F3C2E34020000A6000BB68A@uct5.uct.usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120215/881f3fd5/attachment.pl>
+
+From aaboueissa at usm.maine.edu  Thu Feb 16 15:13:07 2012
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Thu, 16 Feb 2012 09:13:07 -0500
+Subject: [R-sig-teaching] Shading the solution of quadratic inequality
+Message-ID: <4F3CC8A3020000A6000BB722@uct5.uct.usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120216/1845e1e2/attachment.pl>
+
+From michael.weylandt at gmail.com  Thu Feb 16 15:42:18 2012
+From: michael.weylandt at gmail.com (R. Michael Weylandt)
+Date: Thu, 16 Feb 2012 09:42:18 -0500
+Subject: [R-sig-teaching] Shading the solution of quadratic inequality
+In-Reply-To: <4F3CC8A3020000A6000BB722@uct5.uct.usm.maine.edu>
+References: <4F3CC8A3020000A6000BB722@uct5.uct.usm.maine.edu>
+Message-ID: <CAAmySGP--RSpRoXkUKGXJ4bK3_uPz8FJHC6CbU_op4XsWP45pg@mail.gmail.com>
+
+You should probably say more about which graphics engine you are
+using, but here's a start:
+
+curve(x^2-4, from = -3, to = 3)
+x <- seq(-3, 3, length.out = 200)
+polygon(c(x, rev(x)), c(x^2-4, rep(Inf, length(x))), col = 2)
+
+The red is a little "oppressive" so I'd try to add transparency if
+your device supports it. Adding a shade above/below argument to curve
+based on the same principles might be a fun exercise too...
+
+Michael
+
+On Thu, Feb 16, 2012 at 9:13 AM, AbouEl-Makarim Aboueissa
+<aaboueissa at usm.maine.edu> wrote:
+> Dear all R Users:
+>
+> How can I shade the solution (-Inf,-2) or (2,Inf) of the inequality -x^2+4<0 within the curve of f(x)=-x^2+4.
+>
+> and
+>
+> the solution (-Inf,-2)or(2,Inf) of the inequality x^2-4>0 within the curve of
+> f(x)=x^2-4.
+>
+>
+> with many thanks
+>
+> abou
+>
+>
+> ==========================
+> AbouEl-Makarim Aboueissa, Ph.D.
+> Associate Professor of Statistics
+> Graduate Program Coordinator
+> Department of Mathematics & Statistics
+> University of Southern Maine
+> 96 Falmouth Street
+> P.O. Box 9300
+> Portland, ME 04104-9300
+> USA
+>
+>
+> Tel: (207) 228-8389
+> Fax: (207) 780-5607
+> Email: aaboueissa at usm.maine.edu
+> ? ? ? ? ?aboueiss at yahoo.com
+>
+> Office: 301C Payson Smith
+>
+>
+> ? ? ? ?[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From rpruim at calvin.edu  Thu Feb 16 16:07:33 2012
+From: rpruim at calvin.edu (Randall Pruim)
+Date: Thu, 16 Feb 2012 10:07:33 -0500
+Subject: [R-sig-teaching] Shading the solution of quadratic inequality
+In-Reply-To: <CAAmySGP--RSpRoXkUKGXJ4bK3_uPz8FJHC6CbU_op4XsWP45pg@mail.gmail.com>
+References: <4F3CC8A3020000A6000BB722@uct5.uct.usm.maine.edu>
+	<CAAmySGP--RSpRoXkUKGXJ4bK3_uPz8FJHC6CbU_op4XsWP45pg@mail.gmail.com>
+Message-ID: <050AD3B5-A863-4951-B83C-6077F5A246A3@calvin.edu>
+
+I'm not sure exactly what sort of plot was desired, but I'll offer 1.5  
+possibilities.
+
+Currently you can do something like this:
+
+require(mosaic)
+plotFun( x^2 - 4 ~ x , xlim=c(-6,6), col='blue' )
+plotFun( (x^2 - 4)/as.numeric(x^2 -4 > 0) ~ x , xlim=c(-6,-2),  
+add=TRUE, col='blue', lwd=4 )
+
+It is a bit of kludge since I'm using division by 0 to hide part of  
+the function.  You can adjust colors, line thickness, and alpha to  
+your particular sensitivities.  And you can use type='h' if you want a  
+"filled in version".
+
+Soon, you should be able to do
+
+plofFun( x^2 - 4 ~ x, groups=(x^2-4>0) )
+
+If you find yourself wanting to plot "mathematical" functions like  
+this, I encourage you to give plotFun() a try and let us know how you  
+like it.
+
+---rjp
+
+
+On Feb 16, 2012, at 9:42 AM, R. Michael Weylandt wrote:
+
+> You should probably say more about which graphics engine you are
+> using, but here's a start:
+>
+> curve(x^2-4, from = -3, to = 3)
+> x <- seq(-3, 3, length.out = 200)
+> polygon(c(x, rev(x)), c(x^2-4, rep(Inf, length(x))), col = 2)
+>
+> The red is a little "oppressive" so I'd try to add transparency if
+> your device supports it. Adding a shade above/below argument to curve
+> based on the same principles might be a fun exercise too...
+>
+> Michael
+>
+> On Thu, Feb 16, 2012 at 9:13 AM, AbouEl-Makarim Aboueissa
+> <aaboueissa at usm.maine.edu> wrote:
+>> Dear all R Users:
+>>
+>> How can I shade the solution (-Inf,-2) or (2,Inf) of the inequality  
+>> -x^2+4<0 within the curve of f(x)=-x^2+4.
+>>
+>> and
+>>
+>> the solution (-Inf,-2)or(2,Inf) of the inequality x^2-4>0 within  
+>> the curve of
+>> f(x)=x^2-4.
+>>
+>>
+>> with many thanks
+>>
+>> abou
+>>
+>>
+>> ==========================
+>> AbouEl-Makarim Aboueissa, Ph.D.
+>> Associate Professor of Statistics
+>> Graduate Program Coordinator
+>> Department of Mathematics & Statistics
+>> University of Southern Maine
+>> 96 Falmouth Street
+>> P.O. Box 9300
+>> Portland, ME 04104-9300
+>> USA
+>>
+>>
+>> Tel: (207) 228-8389
+>> Fax: (207) 780-5607
+>> Email: aaboueissa at usm.maine.edu
+>>          aboueiss at yahoo.com
+>>
+>> Office: 301C Payson Smith
+>>
+>>
+>>        [[alternative HTML version deleted]]
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From rpruim at calvin.edu  Thu Feb 16 16:11:12 2012
+From: rpruim at calvin.edu (Randall Pruim)
+Date: Thu, 16 Feb 2012 10:11:12 -0500
+Subject: [R-sig-teaching] Shading the solution of quadratic inequality
+In-Reply-To: <050AD3B5-A863-4951-B83C-6077F5A246A3@calvin.edu>
+References: <4F3CC8A3020000A6000BB722@uct5.uct.usm.maine.edu>
+	<CAAmySGP--RSpRoXkUKGXJ4bK3_uPz8FJHC6CbU_op4XsWP45pg@mail.gmail.com>
+	<050AD3B5-A863-4951-B83C-6077F5A246A3@calvin.edu>
+Message-ID: <6E34E3C2-5AAA-44CD-BEE0-9C5BA95BB6AB@calvin.edu>
+
+
+The xlim=c(-6,-2) is extraneous in the code below.  It snuck in from  
+something else I was doing.  It doesn't hurt any, but it doesn't do  
+anything either since the plotting limits are inferred from the  
+surrounding plot when add=TRUE is used.
+
+
+On Feb 16, 2012, at 10:07 AM, Randall Pruim wrote:
+
+> I'm not sure exactly what sort of plot was desired, but I'll offer  
+> 1.5 possibilities.
+>
+> Currently you can do something like this:
+>
+> require(mosaic)
+> plotFun( x^2 - 4 ~ x , xlim=c(-6,6), col='blue' )
+> plotFun( (x^2 - 4)/as.numeric(x^2 -4 > 0) ~ x , xlim=c(-6,-2),  
+> add=TRUE, col='blue', lwd=4 )
+>
+> It is a bit of kludge since I'm using division by 0 to hide part of  
+> the function.  You can adjust colors, line thickness, and alpha to  
+> your particular sensitivities.  And you can use type='h' if you want  
+> a "filled in version".
+>
+> Soon, you should be able to do
+>
+> plofFun( x^2 - 4 ~ x, groups=(x^2-4>0) )
+>
+> If you find yourself wanting to plot "mathematical" functions like  
+> this, I encourage you to give plotFun() a try and let us know how  
+> you like it.
+>
+> ---rjp
+>
+>
+> On Feb 16, 2012, at 9:42 AM, R. Michael Weylandt wrote:
+>
+>> You should probably say more about which graphics engine you are
+>> using, but here's a start:
+>>
+>> curve(x^2-4, from = -3, to = 3)
+>> x <- seq(-3, 3, length.out = 200)
+>> polygon(c(x, rev(x)), c(x^2-4, rep(Inf, length(x))), col = 2)
+>>
+>> The red is a little "oppressive" so I'd try to add transparency if
+>> your device supports it. Adding a shade above/below argument to curve
+>> based on the same principles might be a fun exercise too...
+>>
+>> Michael
+>>
+>> On Thu, Feb 16, 2012 at 9:13 AM, AbouEl-Makarim Aboueissa
+>> <aaboueissa at usm.maine.edu> wrote:
+>>> Dear all R Users:
+>>>
+>>> How can I shade the solution (-Inf,-2) or (2,Inf) of the  
+>>> inequality -x^2+4<0 within the curve of f(x)=-x^2+4.
+>>>
+>>> and
+>>>
+>>> the solution (-Inf,-2)or(2,Inf) of the inequality x^2-4>0 within  
+>>> the curve of
+>>> f(x)=x^2-4.
+>>>
+>>>
+>>> with many thanks
+>>>
+>>> abou
+>>>
+>>>
+>>> ==========================
+>>> AbouEl-Makarim Aboueissa, Ph.D.
+>>> Associate Professor of Statistics
+>>> Graduate Program Coordinator
+>>> Department of Mathematics & Statistics
+>>> University of Southern Maine
+>>> 96 Falmouth Street
+>>> P.O. Box 9300
+>>> Portland, ME 04104-9300
+>>> USA
+>>>
+>>>
+>>> Tel: (207) 228-8389
+>>> Fax: (207) 780-5607
+>>> Email: aaboueissa at usm.maine.edu
+>>>         aboueiss at yahoo.com
+>>>
+>>> Office: 301C Payson Smith
+>>>
+>>>
+>>>       [[alternative HTML version deleted]]
+>>>
+>>> _______________________________________________
+>>> R-sig-teaching at r-project.org mailing list
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From dagfinn.rime at gmail.com  Thu Mar 15 14:13:13 2012
+From: dagfinn.rime at gmail.com (Dagfinn Rime)
+Date: Thu, 15 Mar 2012 14:13:13 +0100
+Subject: [R-sig-teaching] Books on R-programming for newbies
+Message-ID: <CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>
+
+Dear all,
+
+I'm new to R and need to learn how to program R, and would appreciate
+suggestions for e.g. two books in order to get going.
+
+What type of books? Well, if I were to suggest books for a newcomer to
+LaTeX I would say that "all" you need is Lamport's book and "The LaTeX
+Companion" (2nd ed). Is there something similar for R? A not-too long
+introductory book and one more comprehensive "reference"-like book?
+
+My level?
+* Statistics? I have a PhD in finance and know "applied statistics/econometrics"
+* Programming? I currently do all my analysis via programming
+("scripting") in SAS or Eviews.
+
+The R-project page mention 115 books? I made notice of the following:
+1. Paul Teetor. R Cookbook. O'Reilly, first edition, 2011
+2. Rob Kabacoff. R in Action. Manning, 2010.
+3. David Ruppert. Statistics and Data Analysis for Financial
+Engineering. Use R! Springer, 2010
+4. Alain F. Zuur, Elena N. Ieno, and Erik Meesters. A Beginner's Guide
+to R. Use R. Springer, 2009
+
+>From Amazon the following caught my attention:
+1. R in a Nutshell (In a Nutshell (O'Reilly))
+2. The R Book by Michael J. Crawley
+
+I have probably missed some (many), and there are probably lots of
+different views. But I would appreciate any guidance and views.
+
+Thanks in advance,
+Dagfinn Rime
+Research department, Norges Bank
+www.norges-bank.no/research/rime/
+
+
+From mspinola10 at gmail.com  Thu Mar 15 14:24:26 2012
+From: mspinola10 at gmail.com (=?ISO-8859-1?Q?Manuel_Sp=EDnola?=)
+Date: Thu, 15 Mar 2012 07:24:26 -0600
+Subject: [R-sig-teaching] Books on R-programming for newbies
+In-Reply-To: <CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>
+References: <CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>
+Message-ID: <CABkCotTrL-3-LNTOU9FJnfsqAPxXqqVvmyVf0BeqVx+UjhHJRA@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120315/9b901772/attachment.pl>
+
+From michael.weylandt at gmail.com  Thu Mar 15 14:26:36 2012
+From: michael.weylandt at gmail.com (R. Michael Weylandt)
+Date: Thu, 15 Mar 2012 09:26:36 -0400
+Subject: [R-sig-teaching] Books on R-programming for newbies
+In-Reply-To: <CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>
+References: <CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>
+Message-ID: <CAAmySGPkYsK33MU36-QZLxHY+QjGipm-4Lptddcd6WZ7XmNhBA@mail.gmail.com>
+
+Hmmm, others will have their own suggestions, but here are three of
+the big ones as far as I'm concerned:
+
+Burns -- R Inferno (free online), Intermediate Level that has an
+(almost comprehensive) review of little tricks and quirks
+Chambers -- Software for Data Analysis (real book), more high-level by
+the father of S/R but definitely gets you over the hump to "true
+enlightenment"
+Venables & Ripley -- S Programming [S is more or less R, but don't
+worry about that for now] (real book), by two of the "big dogs" of the
+S/R world, though a little old at this point, really gets you to the
+details of things
+
+An intro book is a little harder to find: I've heard good things about
+Matloff's Art of R programming for someone who wants to understand R
+as a language (rather than a statistical tool if that makes sense) --
+I think most of the other intro books will spend more time teaching
+basic stats than you'd be interested in. "R in action" is also pretty
+well received and I think it's in the same vein as Matloff. No
+promises about either of these: I've only seen them in their
+proto-forms (both were web presences made into books) and haven't used
+them myself.
+
+Of the other books you note,  O'Reily books are pretty uniformly good.
+Some people like Crawley but the "official" review on Crawley was
+pretty scathing; it is big though...
+
+There's also copious free documentation online (including the
+prepackaged intro material, but that's a hair terse) so don't feel
+pressure to buy a "real" book -- GNU and all that jazz. You'll get a
+lot from reading the R-Help and R-SIG-*** [Finance I'd guess] groups
+(both actively and in archive) but sometimes they can be a little
+obscure: just note things that catch your interest.
+
+Hope that helps,
+
+Michael
+
+On Thu, Mar 15, 2012 at 9:13 AM, Dagfinn Rime <dagfinn.rime at gmail.com> wrote:
+> Dear all,
+>
+> I'm new to R and need to learn how to program R, and would appreciate
+> suggestions for e.g. two books in order to get going.
+>
+> What type of books? Well, if I were to suggest books for a newcomer to
+> LaTeX I would say that "all" you need is Lamport's book and "The LaTeX
+> Companion" (2nd ed). Is there something similar for R? A not-too long
+> introductory book and one more comprehensive "reference"-like book?
+>
+> My level?
+> * Statistics? I have a PhD in finance and know "applied statistics/econometrics"
+> * Programming? I currently do all my analysis via programming
+> ("scripting") in SAS or Eviews.
+>
+> The R-project page mention 115 books? I made notice of the following:
+> 1. Paul Teetor. R Cookbook. O'Reilly, first edition, 2011
+> 2. Rob Kabacoff. R in Action. Manning, 2010.
+> 3. David Ruppert. Statistics and Data Analysis for Financial
+> Engineering. Use R! Springer, 2010
+> 4. Alain F. Zuur, Elena N. Ieno, and Erik Meesters. A Beginner's Guide
+> to R. Use R. Springer, 2009
+>
+> >From Amazon the following caught my attention:
+> 1. R in a Nutshell (In a Nutshell (O'Reilly))
+> 2. The R Book by Michael J. Crawley
+>
+> I have probably missed some (many), and there are probably lots of
+> different views. But I would appreciate any guidance and views.
+>
+> Thanks in advance,
+> Dagfinn Rime
+> Research department, Norges Bank
+> www.norges-bank.no/research/rime/
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From axel.klenk at actelion.com  Thu Mar 15 14:34:28 2012
+From: axel.klenk at actelion.com (axel.klenk at actelion.com)
+Date: Thu, 15 Mar 2012 14:34:28 +0100
+Subject: [R-sig-teaching] Books on R-programming for newbies
+In-Reply-To: <CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>
+References: <CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>
+Message-ID: <6144_1331818522_4F61F01A_6144_11338_4_OF725DF196.AB9FA47D-ONC12579C2.004A4DAF-C12579C2.004AA5B7@actelion.com>
+
+Dear Dagfinn, 
+
+since you know SAS, Bob Munchen's "R for SAS and SPSS Users" may be 
+useful.
+
+Cheers, 
+
+ - axel
+
+
+Axel Klenk
+Research Informatician
+Actelion Pharmaceuticals Ltd / Gewerbestrasse 16 / CH-4123 Allschwil / 
+Switzerland
+
+
+
+
+From:
+Dagfinn Rime <dagfinn.rime at gmail.com>
+To:
+r-sig-teaching at r-project.org
+Date:
+15.03.2012 14:12
+Subject:
+[R-sig-teaching] Books on R-programming for newbies
+Sent by:
+r-sig-teaching-bounces at r-project.org
+
+
+
+Dear all,
+
+I'm new to R and need to learn how to program R, and would appreciate
+suggestions for e.g. two books in order to get going.
+
+What type of books? Well, if I were to suggest books for a newcomer to
+LaTeX I would say that "all" you need is Lamport's book and "The LaTeX
+Companion" (2nd ed). Is there something similar for R? A not-too long
+introductory book and one more comprehensive "reference"-like book?
+
+My level?
+* Statistics? I have a PhD in finance and know "applied 
+statistics/econometrics"
+* Programming? I currently do all my analysis via programming
+("scripting") in SAS or Eviews.
+
+The R-project page mention 115 books? I made notice of the following:
+1. Paul Teetor. R Cookbook. O'Reilly, first edition, 2011
+2. Rob Kabacoff. R in Action. Manning, 2010.
+3. David Ruppert. Statistics and Data Analysis for Financial
+Engineering. Use R! Springer, 2010
+4. Alain F. Zuur, Elena N. Ieno, and Erik Meesters. A Beginner's Guide
+to R. Use R. Springer, 2009
+
+>From Amazon the following caught my attention:
+1. R in a Nutshell (In a Nutshell (O'Reilly))
+2. The R Book by Michael J. Crawley
+
+I have probably missed some (many), and there are probably lots of
+different views. But I would appreciate any guidance and views.
+
+Thanks in advance,
+Dagfinn Rime
+Research department, Norges Bank
+www.norges-bank.no/research/rime/
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+
+The information of this email and in any file transmitted with it is strictly confidential and may be legally privileged.
+It is intended solely for the addressee. If you are not the intended recipient, any copying, distribution or any other use of this email is prohibited and may be unlawful. In such case, you should please notify the sender immediately and destroy this email.
+The content of this email is not legally binding unless confirmed by letter.
+Any views expressed in this message are those of the individual sender, except where the message states otherwise and the sender is authorised to state them to be the views of the sender's company. For further information about Actelion please see our website at http://www.actelion.com
+
+
+From tim.appelhans at gmail.com  Thu Mar 15 15:14:26 2012
+From: tim.appelhans at gmail.com (Tim Appelhans)
+Date: Thu, 15 Mar 2012 15:14:26 +0100
+Subject: [R-sig-teaching] Books on R-programming for newbies
+In-Reply-To: <CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>
+References: <CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>
+Message-ID: <4F61F942.5020206@gmail.com>
+
+Hello Dagfinn,
+I am teaching R for porgramming purposes to Geography bachelor students. 
+In our course we use Norman Matloff's 'The art of R programming'.
+Both myself and the students (as far as I know) rate it very highly as 
+it really is an easy read and best of all, it does not confuse the not 
+so statistically inclined as it really focusses on software design 
+rather than statistical scripting.
+
+Hope that helps,
+
+Tim
+
+On 15/3/2012 14:13, Dagfinn Rime wrote:
+> Dear all,
+>
+> I'm new to R and need to learn how to program R, and would appreciate
+> suggestions for e.g. two books in order to get going.
+>
+> What type of books? Well, if I were to suggest books for a newcomer to
+> LaTeX I would say that "all" you need is Lamport's book and "The LaTeX
+> Companion" (2nd ed). Is there something similar for R? A not-too long
+> introductory book and one more comprehensive "reference"-like book?
+>
+> My level?
+> * Statistics? I have a PhD in finance and know "applied statistics/econometrics"
+> * Programming? I currently do all my analysis via programming
+> ("scripting") in SAS or Eviews.
+>
+> The R-project page mention 115 books? I made notice of the following:
+> 1. Paul Teetor. R Cookbook. O'Reilly, first edition, 2011
+> 2. Rob Kabacoff. R in Action. Manning, 2010.
+> 3. David Ruppert. Statistics and Data Analysis for Financial
+> Engineering. Use R! Springer, 2010
+> 4. Alain F. Zuur, Elena N. Ieno, and Erik Meesters. A Beginner's Guide
+> to R. Use R. Springer, 2009
+>
+> > From Amazon the following caught my attention:
+> 1. R in a Nutshell (In a Nutshell (O'Reilly))
+> 2. The R Book by Michael J. Crawley
+>
+> I have probably missed some (many), and there are probably lots of
+> different views. But I would appreciate any guidance and views.
+>
+> Thanks in advance,
+> Dagfinn Rime
+> Research department, Norges Bank
+> www.norges-bank.no/research/rime/
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+-- 
+#####################################
+Tim Appelhans
+Department of Geography
+Environmental Computer Sciences
+Philipps Universit?t Marburg
+Deutschhausstra?e 12
+35032 Marburg (Paketpost: 35037 Marburg)
+Germany
+
+Tel +49 (0) 6421 28-25957
+
+
+From joel at joelschwartz.com  Thu Mar 15 16:42:19 2012
+From: joel at joelschwartz.com (Joel Schwartz)
+Date: Thu, 15 Mar 2012 08:42:19 -0700
+Subject: [R-sig-teaching] Books on R-programming for newbies
+In-Reply-To: <CABkCotTrL-3-LNTOU9FJnfsqAPxXqqVvmyVf0BeqVx+UjhHJRA@mail.gmail.com>
+References: <CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>
+	<CABkCotTrL-3-LNTOU9FJnfsqAPxXqqVvmyVf0BeqVx+UjhHJRA@mail.gmail.com>
+Message-ID: <93F3D6B7-8B77-4A67-8101-AB311D37492B@joelschwartz.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120315/e1527352/attachment.pl>
+
+From joel at joelschwartz.com  Thu Mar 15 16:42:16 2012
+From: joel at joelschwartz.com (Joel Schwartz)
+Date: Thu, 15 Mar 2012 08:42:16 -0700
+Subject: [R-sig-teaching] Books on R-programming for newbies
+In-Reply-To: <CABkCotTrL-3-LNTOU9FJnfsqAPxXqqVvmyVf0BeqVx+UjhHJRA@mail.gmail.com>
+References: <CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>
+	<CABkCotTrL-3-LNTOU9FJnfsqAPxXqqVvmyVf0BeqVx+UjhHJRA@mail.gmail.com>
+Message-ID: <946A1D96-B39C-4145-B14A-DC572851D8DE@joelschwartz.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120315/ece939ec/attachment.pl>
+
+From aaboueissa at usm.maine.edu  Mon Mar 19 01:10:44 2012
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Sun, 18 Mar 2012 20:10:44 -0400
+Subject: [R-sig-teaching] Raw Data used in Biostatistical Analysis by Zar
+Message-ID: <4F664144020000A6000BEE9E@uct5.uct.usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120318/7d9a3061/attachment.pl>
+
+From aaboueissa at usm.maine.edu  Tue Mar 20 00:52:23 2012
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Mon, 19 Mar 2012 19:52:23 -0400
+Subject: [R-sig-teaching] scatter plot of grouping data
+Message-ID: <4F678E77020000A6000BF0BB@uct5.uct.usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120319/5f359401/attachment.pl>
+
+From aaboueissa at usm.maine.edu  Tue Mar 20 05:24:39 2012
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Tue, 20 Mar 2012 00:24:39 -0400
+Subject: [R-sig-teaching] Create new variables
+Message-ID: <4F67CE47020000A6000BF0CD@uct5.uct.usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120320/a188f1fd/attachment.pl>
+
+From Gerrit.Eichner at math.uni-giessen.de  Tue Mar 20 08:34:38 2012
+From: Gerrit.Eichner at math.uni-giessen.de (Gerrit Eichner)
+Date: Tue, 20 Mar 2012 08:34:38 +0100 (MET)
+Subject: [R-sig-teaching] Create new variables
+In-Reply-To: <4F67CE47020000A6000BF0CD@uct5.uct.usm.maine.edu>
+References: <4F67CE47020000A6000BF0CD@uct5.uct.usm.maine.edu>
+Message-ID: <Pine.SOC.4.64.1203200831350.11497@solcom.hrz.uni-giessen.de>
+
+Hello, Abou,
+
+try
+
+datatest1$z <- 1- datatest1$type
+datatest1$xz <- datatest1$x * datatest$z
+
+and try reading an introductory manual/book on R.
+
+  Hth  --  Gerrit
+
+---------------------------------------------------------------------
+Dr. Gerrit Eichner                   Mathematical Institute, Room 212
+gerrit.eichner at math.uni-giessen.de   Justus-Liebig-University Giessen
+Tel: +49-(0)641-99-32104          Arndtstr. 2, 35392 Giessen, Germany
+Fax: +49-(0)641-99-32109        http://www.uni-giessen.de/cms/eichner
+---------------------------------------------------------------------
+
+On Tue, 20 Mar 2012, AbouEl-Makarim Aboueissa wrote:
+
+> Dear All:
+>
+> I need to create new variables based on the old data set:
+>
+>
+> old data:
+> ===================
+>
+> type      x     y
+> 0          3     4
+> 0          2     2
+> 0          4     55
+> 0          3     4
+> 1          2     3
+> 1         11    22
+> 1         2      33
+> 0         34     11
+> 1         2       6
+> 0         35     77
+> 1         64     8
+> 0         32     12
+> 0         12     40
+> 0         67     30
+> 0         3       43
+> 1         4       23
+> 1         2       15
+> 1         5       51
+> 0         8       6
+> 0         9       23
+> 1         56     16
+> 1         43     27
+> 1         21     17
+> 0         12     27
+> 0         34     47
+>
+>
+>
+>
+> datatest<-read.table(file="F:\\00 - Spring 2012\\STA 591\\notes\\Module 2 - Linear Regression and Correlation\\Zar chapters 17-20\\olddata.txt",head=TRUE)
+>
+> ##### datatest
+>
+> datatest1<-data.frame(type =datatest[,1], x = datatest[,2], y = datatest[,3])
+>
+> ##### datatest1
+>
+>
+> I want to get:
+> ===============
+>
+> Create a new variable z as follows:
+>
+> if type =0 then z=1   and if type = 1 then z=0
+>
+> then create one more variable called xz = x*z
+>
+>
+> new data should look like this one
+> ===============================
+>
+>
+> type     x     y      z      xz
+> 0         3     4      1      3
+> 0         2     2      1      2
+> 0         4     55    1      4
+> 0         3     4      1      3
+> 1         2     3      0      0
+> 1        11    22     0      0
+> 1         2     33     0      0
+> 0        34    11     1      34
+> 1        2      6       0      0
+> 0        35     77    1      35
+> 1        64     8      0      0
+> 0        32     12    1      32
+> 0        12     40    1      12
+> 0        67     30    1      67
+> 0        3       43    1      3
+> 1        4       23    0      0
+> 1        2       15    0      0
+> 1        5       51    0      0
+> 0        8       6      1      8
+> 0        9       23    1      9
+> 1        56     16    0      0
+> 1        43     27    0      0
+> 1        21     17    0      0
+> 0        12     27    1      12
+> 0        34     47    1      34
+>
+>
+>
+> Thank you very much
+> abou
+>
+>
+>
+>
+>
+> ==========================
+> AbouEl-Makarim Aboueissa, Ph.D.
+> Associate Professor of Statistics
+> Graduate Program Coordinator
+> Department of Mathematics & Statistics
+> University of Southern Maine
+> 96 Falmouth Street
+> P.O. Box 9300
+> Portland, ME 04104-9300
+> USA
+>
+>
+> Tel: (207) 228-8389
+> Fax: (207) 780-5607
+> Email: aaboueissa at usm.maine.edu
+>          aboueiss at yahoo.com
+>
+> Office: 301C Payson Smith
+>
+>
+> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+From gergely at snowl.net  Tue Mar 20 10:27:35 2012
+From: gergely at snowl.net (=?ISO-8859-1?Q?Dar=F3czi_Gergely?=)
+Date: Tue, 20 Mar 2012 10:27:35 +0100
+Subject: [R-sig-teaching] scatter plot of grouping data
+In-Reply-To: <4F678E77020000A6000BF0BB@uct5.uct.usm.maine.edu>
+References: <4F678E77020000A6000BF0BB@uct5.uct.usm.maine.edu>
+Message-ID: <CAPvvxJWjZN-Ee-ULugLLZhApH_e6JAgcqbDVt8_SjbCUUyFiuw@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120320/18450460/attachment.pl>
+
+From lamprianou at yahoo.com  Wed Mar 21 09:59:52 2012
+From: lamprianou at yahoo.com (Iasonas Lamprianou)
+Date: Wed, 21 Mar 2012 01:59:52 -0700 (PDT)
+Subject: [R-sig-teaching] regerssion issues
+In-Reply-To: <mailman.7.1331895602.13961.r-sig-teaching@r-project.org>
+References: <mailman.7.1331895602.13961.r-sig-teaching@r-project.org>
+Message-ID: <1332320392.26075.YahooMailNeo@web120603.mail.ne1.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120321/33d34d4c/attachment.pl>
+
+From dpianto at gmail.com  Wed Mar 21 15:50:49 2012
+From: dpianto at gmail.com (Donald Pianto)
+Date: Wed, 21 Mar 2012 11:50:49 -0300
+Subject: [R-sig-teaching] regerssion issues
+In-Reply-To: <1332320392.26075.YahooMailNeo@web120603.mail.ne1.yahoo.com>
+References: <mailman.7.1331895602.13961.r-sig-teaching@r-project.org>
+	<1332320392.26075.YahooMailNeo@web120603.mail.ne1.yahoo.com>
+Message-ID: <CAHhr5TWEQaLOi1On8Cc47DdUZVFa4f0zTd=6K136bMcUQvxoig@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120321/d90b0ce3/attachment.pl>
+
+From jefflaux at gmail.com  Wed Mar 21 16:03:31 2012
+From: jefflaux at gmail.com (Jeff Laux)
+Date: Wed, 21 Mar 2012 11:03:31 -0400
+Subject: [R-sig-teaching] regerssion issues
+In-Reply-To: <1332320392.26075.YahooMailNeo@web120603.mail.ne1.yahoo.com>
+References: <mailman.7.1331895602.13961.r-sig-teaching@r-project.org>
+	<1332320392.26075.YahooMailNeo@web120603.mail.ne1.yahoo.com>
+Message-ID: <4F69EDC3.8040607@gmail.com>
+
+Q1:  Using many independent variables does not *cause* 
+multicollinearity.  These are simply different issues.  It would lead to 
+the problem of multiple comparisons, however, with 50k cases, it's hard 
+to see that as a likely issue here.  Given the number of cases, this 
+must be observational research with archival data.  That can lead to a 
+number of issues if the researcher is trying to make causal claims.  
+Some good background books for addressing such issues would be:
+     - Shadish, Cook & Campbell, "Experimental & Quasi-experimental Designs"
+     - Rosenbaum, "Observational Studies"
+     - Pearl, "Causality"
+     - Rothman, et al., "Modern Epidemiology"
+
+Q2:  It is quite reasonable to imagine that variables are often, in 
+reality, related to each other in some way, and all significance tests 
+do is assess the power of your study.  With 2k cases, I would suspect 
+that the estimate of the association may be fairly accurate (although 
+this could depend of various factors regarding how the data were 
+handled).  The question of practical significance is an important one.  
+An easy first step is to look at Kirk's famous paper, Kirk, "Practical 
+significance; An idea whose time has come", a google scholar search 
+could tell you about subsequent papers that cited that, and give you a 
+start through the related literature.
+
+Best,
+Jeff
+
+
+On 3/21/2012 4:59 AM, Iasonas Lamprianou wrote:
+> Dear all,
+> I have a question which can be expanded to the geeneral context of regression
+> modelling in general. If you feel that this question is beyond the scope of this list, please say so and I will apologize. However, this has to do with teaching.
+>
+>
+> Question 1:  I am revieweing a paper and the author uses a sample size of around 50,000 cases to run a logistic regression. He is using 22 independent
+> variables. Using too many independent variables may cause collinearity
+> problems. Beyond this, however, I am not aware of any other problems caused by
+> using too many variables in a model. However, this is also related to the problem of massively throwing tens of variables in amodel and then waiting for statistically significant results. Can anyone suggest relevant literature to give to my students to read?
+>
+>
+> Question 2: Some coefficients of a diffrent logistic model in the same paper are marginally significant e.g. b=-0.18 and se=0.08. The only reason this is signficant is because the researcher used in this model a large sample size (around two thousand cases N=2000). The lower bound of the confidence interval is almost zero. Can anyone suggest a good reference to say that in such a case we should also check the "practical significance" and since the lower bound is so close to zero, we should be careful on what we claim about the effect?
+>
+> Thank you for your time
+> Jason 
+>
+>
+>   
+> Dr. Iasonas Lamprianou
+> Department of Social and Political Sciences
+> University of Cyprus
+>
+>
+>
+>
+>    
+>>      
+> 	[[alternative HTML version deleted]]
+>
+>
+> -----
+> No virus found in this message.
+> Checked by AVG - www.avg.com
+> Version: 2012.0.1913 / Virus Database: 2114/4882 - Release Date: 03/20/12
+>    
+>
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+> -----
+> No virus found in this message.
+> Checked by AVG - www.avg.com
+> Version: 2012.0.1913 / Virus Database: 2114/4882 - Release Date: 03/20/12
+
+
+From lamprianou at yahoo.com  Thu Mar 22 07:53:15 2012
+From: lamprianou at yahoo.com (Iasonas Lamprianou)
+Date: Wed, 21 Mar 2012 23:53:15 -0700 (PDT)
+Subject: [R-sig-teaching] regerssion issues
+In-Reply-To: <CAHhr5TWEQaLOi1On8Cc47DdUZVFa4f0zTd=6K136bMcUQvxoig@mail.gmail.com>
+References: <mailman.7.1331895602.13961.r-sig-teaching@r-project.org>
+	<1332320392.26075.YahooMailNeo@web120603.mail.ne1.yahoo.com>
+	<CAHhr5TWEQaLOi1On8Cc47DdUZVFa4f0zTd=6K136bMcUQvxoig@mail.gmail.com>
+Message-ID: <1332399195.44770.YahooMailNeo@web120601.mail.ne1.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120321/e1c022b5/attachment.pl>
+
+From aaboueissa at usm.maine.edu  Sun Mar 25 14:59:46 2012
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Sun, 25 Mar 2012 08:59:46 -0400
+Subject: [R-sig-teaching] graphing circles
+Message-ID: <4F6EDE82020000A6000BFAB1@uct5.uct.usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120325/3547488a/attachment.pl>
+
+From jefflaux at gmail.com  Sun Mar 25 15:29:57 2012
+From: jefflaux at gmail.com (Jeff Laux)
+Date: Sun, 25 Mar 2012 09:29:57 -0400
+Subject: [R-sig-teaching] graphing circles
+In-Reply-To: <4F6EDE82020000A6000BFAB1@uct5.uct.usm.maine.edu>
+References: <4F6EDE82020000A6000BFAB1@uct5.uct.usm.maine.edu>
+Message-ID: <4F6F1DD5.7070406@gmail.com>
+
+It doesn't seem silly to me; this is a standard figure/metaphor for 
+teaching reliability & validity.  You could make such a figure in R, but 
+I would probably just use a drawing program (e.g., Serif, which can be 
+downloaded for free).  Alternatively, you could just search the internet 
+for one, as I've seen several versions of this before.  -Jeff
+
+
+On 3/25/2012 8:59 AM, AbouEl-Makarim Aboueissa wrote:
+> Dear R users:
+>
+> It may be a silly question. I am trying to create a target diagram of 4 circles inside each other and adding some dots to describe different situations of validity and reliability. I need three of them.
+>
+> one with all dots around the target.
+> one with all dots in about one place, but far from the target.
+> one with randomly scattered dots.
+>
+>   I tried my best, but could not succeed. Can someone help me with creating such graph.
+>
+> Thank you very much
+> abou
+>
+>
+>
+> ==========================
+> AbouEl-Makarim Aboueissa, Ph.D.
+> Associate Professor of Statistics
+> Graduate Program Coordinator
+> Department of Mathematics&  Statistics
+> University of Southern Maine
+> 96 Falmouth Street
+> P.O. Box 9300
+> Portland, ME 04104-9300
+> USA
+>
+>
+> Tel: (207) 228-8389
+> Fax: (207) 780-5607
+> Email: aaboueissa at usm.maine.edu
+>            aboueiss at yahoo.com
+>
+> Office: 301C Payson Smith
+>
+>
+> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+> -----
+> No virus found in this message.
+> Checked by AVG - www.avg.com
+> Version: 2012.0.1913 / Virus Database: 2114/4891 - Release Date: 03/24/12
+>
+>
+
+
+From lists at revelle.net  Mon Mar 26 05:55:58 2012
+From: lists at revelle.net (William Revelle)
+Date: Sun, 25 Mar 2012 22:55:58 -0500
+Subject: [R-sig-teaching] graphing circles
+In-Reply-To: <4F6F1DD5.7070406@gmail.com>
+References: <4F6EDE82020000A6000BFAB1@uct5.uct.usm.maine.edu>
+	<4F6F1DD5.7070406@gmail.com>
+Message-ID: <BA1F4E74-C4E6-4F64-9CCB-A4A8C3E6465D@revelle.net>
+
+Perhaps I have too much time on my hands as I try to not think about my psychometrics course tomorrow:
+
+library(psych)    #needed for the dia.ellipse function
+#create a new function
+
+"bullseye" <- function(x,y,n) {
+for(i in 1:n) {dia.ellipse(x,y,e.size=i)}}
+
+plot(NA,xlim=c(0,10),ylim=c(0,10),axes=FALSE,xlab="",ylab="")   #make a frame for the pictures
+
+#Reliable and vallid
+x=3
+y=3
+n=5
+lim<-c(-.2,.2)
+bullseye(x,y,4)
+points(x+runif(n,lim[1],lim[2]),y+runif(n,lim[1],lim[2]),pch=16)
+
+#reliable and invalid
+x=7
+y=3
+bullseye(x,y,4)
+points(x+1+runif(n,lim[1],lim[2]),y+1+runif(n,lim[1],lim[2]),pch=16)
+
+#unreliable, but valid
+x=5
+y=8
+n=5
+lim<-c(-1,1)
+bullseye(x,y,4)
+points(x+runif(n,lim[1],lim[2]),y+runif(n,lim[1],lim[2]),pch=16)
+
+
+Bill
+
+
+
+On Mar 25, 2012, at 8:29 AM, Jeff Laux wrote:
+
+> It doesn't seem silly to me; this is a standard figure/metaphor for teaching reliability & validity.  You could make such a figure in R, but I would probably just use a drawing program (e.g., Serif, which can be downloaded for free).  Alternatively, you could just search the internet for one, as I've seen several versions of this before.  -Jeff
+> 
+> 
+> On 3/25/2012 8:59 AM, AbouEl-Makarim Aboueissa wrote:
+>> Dear R users:
+>> 
+>> It may be a silly question. I am trying to create a target diagram of 4 circles inside each other and adding some dots to describe different situations of validity and reliability. I need three of them.
+>> 
+>> one with all dots around the target.
+>> one with all dots in about one place, but far from the target.
+>> one with randomly scattered dots.
+>> 
+>>  I tried my best, but could not succeed. Can someone help me with creating such graph.
+>> 
+>> Thank you very much
+>> abou
+>> 
+>> 
+>> 
+>> ==========================
+>> AbouEl-Makarim Aboueissa, Ph.D.
+>> Associate Professor of Statistics
+>> Graduate Program Coordinator
+>> Department of Mathematics&  Statistics
+>> University of Southern Maine
+>> 96 Falmouth Street
+>> P.O. Box 9300
+>> Portland, ME 04104-9300
+>> USA
+>> 
+>> 
+>> Tel: (207) 228-8389
+>> Fax: (207) 780-5607
+>> Email: aaboueissa at usm.maine.edu
+>>           aboueiss at yahoo.com
+>> 
+>> Office: 301C Payson Smith
+>> 
+>> 
+>> 	[[alternative HTML version deleted]]
+>> 
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>> 
+>> -----
+>> No virus found in this message.
+>> Checked by AVG - www.avg.com
+>> Version: 2012.0.1913 / Virus Database: 2114/4891 - Release Date: 03/24/12
+>> 
+>> 
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+
+William Revelle		           http://personality-project.org/revelle.html
+Professor			           http://personality-project.org
+Department of Psychology   http://www.wcas.northwestern.edu/psych/
+Northwestern University	   http://www.northwestern.edu/
+Use R for psychology             http://personality-project.org/r
+It is 5 minutes to midnight	   http://www.thebulletin.org
+
+
+From gavin.simpson at ucl.ac.uk  Mon Mar 26 15:02:35 2012
+From: gavin.simpson at ucl.ac.uk (Gavin Simpson)
+Date: Mon, 26 Mar 2012 14:02:35 +0100
+Subject: [R-sig-teaching] graphing circles
+In-Reply-To: <4F6EDE82020000A6000BFAB1@uct5.uct.usm.maine.edu>
+References: <4F6EDE82020000A6000BFAB1@uct5.uct.usm.maine.edu>
+Message-ID: <1332766955.4988.12.camel@prometheus.geog.ucl.ac.uk>
+
+Please can you use the **correct** list for your questions regarding R!?
+This is a list for a "Special Interest Group (SIG) on teaching
+statistics with R". Your questions are suitable for the general R-Help
+mailing list or the [r] tag on StackOverflow:
+
+http://stackoverflow.com/questions/tagged/r
+
+G
+
+On Sun, 2012-03-25 at 08:59 -0400, AbouEl-Makarim Aboueissa wrote:
+> Dear R users:
+>  
+> It may be a silly question. I am trying to create a target diagram of 4 circles inside each other and adding some dots to describe different situations of validity and reliability. I need three of them.
+>  
+> one with all dots around the target.
+> one with all dots in about one place, but far from the target.
+> one with randomly scattered dots.
+>  
+>  I tried my best, but could not succeed. Can someone help me with creating such graph.
+>  
+> Thank you very much
+> abou
+>  
+> 
+> 
+> ==========================
+> AbouEl-Makarim Aboueissa, Ph.D.
+> Associate Professor of Statistics
+> Graduate Program Coordinator
+> Department of Mathematics & Statistics
+> University of Southern Maine
+> 96 Falmouth Street
+> P.O. Box 9300
+> Portland, ME 04104-9300
+> USA
+>  
+> 
+> Tel: (207) 228-8389
+> Fax: (207) 780-5607
+> Email: aaboueissa at usm.maine.edu
+>           aboueiss at yahoo.com
+>  
+> Office: 301C Payson Smith
+>  
+> 
+> 	[[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+
+-- 
+%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%
+ Dr. Gavin Simpson             [t] +44 (0)20 7679 0522
+ ECRC, UCL Geography,          [f] +44 (0)20 7679 0565
+ Pearson Building,             [e] gavin.simpsonATNOSPAMucl.ac.uk
+ Gower Street, London          [w] http://www.ucl.ac.uk/~ucfagls/
+ UK. WC1E 6BT.                 [w] http://www.freshwaters.org.uk
+%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%
+
+

@@ -1,0 +1,36 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2019-09",
+  "messages": [
+    {
+      "id": "msg-5ca0149b9062",
+      "message_id": "<20190916183228.GA90517@lilly.csoft.net>",
+      "from_name": "User Hayden",
+      "from_email_hash": "22fa6821856532bb7d9c9c13cdaaf0d35038a9d7b8e0daf14cf332c3a081f6c6",
+      "date": "2019-09-16T14:32:28-04:00",
+      "subject": "[R-sig-teaching] R teaching task view",
+      "subject_clean": "R teaching task view",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": ">From Nick Horton on another list\n\nKudos to Paul Northrop for the excellent CRAN Task View focused on Teaching Statistics with R.  This is long overdue and a great resource:\n\nhttps://cran.r-project.org/web/views/TeachingStatistics.html\n\nPaul writes: This CRAN task view gives information about packages with features that are designed to assist with the teaching of Statistics. It is not concerned with the teaching of R itself. A few of these packages are listed in other task views, but only the Bayesian task view has a section devoted explicitly to teaching (Bayesian) Statistics.\n\nThe packages are grouped into three broad topics: teaching, examination and packages associated with Statistics books. The latter is for books that are general enough to be of potential interest to a wide audience of teachers of Statistics. They should concern models and methods with wide applicability and not be tied closely to a particular application.\n\nIf you think that a package is missing from the list, or have any other comments or suggestions, then please contact the maintainer.\n-- \n\n      _\n     | |          Robert W. Hayden\n     | |          5 Howard Street, Apartment 206\n    /  |          Wilton, New Hampshire 03086  USA\n   |   |          \n   |   |          email: bob@ the site below\n  /    |          website: http://statland.org\n |   x /          \n ''''''",
+      "body_snippet": ">From Nick Horton on another list\n\nKudos to Paul Northrop for the excellent CRAN Task View focused on Teaching Statistics with R.  This is long overdue and a great resource:\n\nhttps://cran.r-project.or",
+      "thread_id": "thread-5ca0149b9062",
+      "thread_depth": 0,
+      "month": "2019-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-5ca0149b9062",
+      "subject": "R teaching task view",
+      "message_count": 1,
+      "participants": [
+        "User Hayden"
+      ],
+      "started": "2019-09-16T14:32:28-04:00",
+      "last_reply": "2019-09-16T14:32:28-04:00",
+      "root_message_id": "msg-5ca0149b9062"
+    }
+  ]
+}

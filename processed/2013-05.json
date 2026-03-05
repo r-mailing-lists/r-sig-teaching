@@ -1,0 +1,147 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2013-05",
+  "messages": [
+    {
+      "id": "msg-65cf4ad64b5b",
+      "message_id": "<1368011401.24632.YahooMailClassic@web120606.mail.ne1.yahoo.com>",
+      "from_name": "Yahoo!",
+      "from_email_hash": "22385bbcf078dc17ff188e29e3a1eaf01aad381796219c59b64e7bb0baec2847",
+      "date": "2013-05-08T04:10:01-07:00",
+      "subject": "[R-sig-teaching] graphing inequalities (intervals) in one varible",
+      "subject_clean": "graphing inequalities (intervals) in one varible",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130508/6bf8dc07/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130508/6bf8dc07/attachment.pl>",
+      "thread_id": "thread-65cf4ad64b5b",
+      "thread_depth": 0,
+      "month": "2013-05"
+    },
+    {
+      "id": "msg-3840d2fae4b0",
+      "message_id": "<F4F0E3042449A2418E09F73B2C28AFB7410B26@CH1PRD0510MB368.namprd05.prod.outlook.com>",
+      "from_name": "Mattson, Todd",
+      "from_email_hash": "91b0a3029a87f55f0c8c98682cc35ae5bcebd7e74662c290146e26847c09cdda",
+      "date": "2013-05-08T18:53:32Z",
+      "subject": "[R-sig-teaching] graphing inequalities (intervals) in one varible",
+      "subject_clean": "graphing inequalities (intervals) in one varible",
+      "in_reply_to": "<1368011401.24632.YahooMailClassic@web120606.mail.ne1.yahoo.com>",
+      "references": [
+        "<1368011401.24632.YahooMailClassic@web120606.mail.ne1.yahoo.com>"
+      ],
+      "body_plain": "You may want to try the curve function.  For example:\n\ncurve(x^2,-1,1,xlim=c(-3,5),ylim=c(0,9))\n curve(x^2,2,3,add=TRUE)\n\nTodd Mattson\nDeVry University\n\n-----Original Message-----\nFrom: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-bounces at r-project.org] On Behalf Of Yahoo!\nSent: Wednesday, May 08, 2013 6:10 AM\nTo: r-sig-teaching at r-project.org\nSubject: [R-sig-teaching] graphing inequalities (intervals) in one varible\n\nDear All:\n\nIt seems a very silly question. But I never tried it before. I am teaching a college algebra class this summer. \n\nI need some help with graphing intervals on the real line. For examples:\n\n{x | -7<= x < 5 and x > 7}\n\n{x | x > 3}\n\netc...\n\n\nthank you very much\nabou\n\n========================\n\nAbouEl-Makarim Aboueissa\n\nSozan Elsalakawy\n\nMohamed Agamia\n\n\n\n246 Auburn Street, #158\n\nPortland, ME 04103\n\nUSA\n\n\n\nTel: (207) 797-2724\n\nEmail: aboueiss at yahoo.com\n\t[[alternative HTML version deleted]]\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "You may want to try the curve function.  For example:\n\ncurve(x^2,-1,1,xlim=c(-3,5),ylim=c(0,9))\n curve(x^2,2,3,add=TRUE)\n\nTodd Mattson\nDeVry University\n\n-----Original Message-----\nFrom: r-sig-teaching",
+      "thread_id": "thread-65cf4ad64b5b",
+      "thread_depth": 1,
+      "month": "2013-05"
+    },
+    {
+      "id": "msg-f1cdfbe74d8f",
+      "message_id": "<CAAmySGN_gjugskBKvEQJePKm+W02UXreYUZ34_Oxx-aFngL74w@mail.gmail.com>",
+      "from_name": "R. Michael Weylandt",
+      "from_email_hash": "44e8775a589b9ef81880469e200f3cce307c7180b4289ca1696a578afb772b3a",
+      "date": "2013-05-09T11:49:19+01:00",
+      "subject": "[R-sig-teaching] graphing inequalities (intervals) in one varible",
+      "subject_clean": "graphing inequalities (intervals) in one varible",
+      "in_reply_to": "<1368011401.24632.YahooMailClassic@web120606.mail.ne1.yahoo.com>",
+      "references": [
+        "<1368011401.24632.YahooMailClassic@web120606.mail.ne1.yahoo.com>"
+      ],
+      "body_plain": "Here's the start of a function. I'll leave it to you to do it better\n(it should probably also use S4 methods, but that's another project):\n\ninterval <- function(lower = -Inf, upper = Inf, lower_closed = FALSE,\nupper_closed = FALSE){\n  structure(.Data = NULL, lower = lower, upper = upper, lower_closed =\nlower_closed, upper_closed = upper_closed, class = 'interval')\n}\n\nplot.interval <- function(x){\n l <- attr(x, \"lower\")\n u <- attr(x, \"upper\")\n\n r <- c(l, u) * c(if(l > 0) 0.7 else 1.2, if(u > 0) 1.2 else 0.7)\n plot(r, c(0,1), main = '', bty = 'n', xlab = '', ylab = '', yaxt =\n'n', type = 'n', xaxt = 'n')\n\n axis(1, at = seq(r[1], r[2], length.out = 10))\n\n lines(c(l, u), c(0.5, 0.5), col = 2, lwd = 2)\n\n lc <- attr(x, 'lower_closed')\n uc <- attr(x, 'upper_closed')\n\n\n points(c(l, u), c(0.5, 0.5), pch = c(1, 19)[c(lc, uc) + 1], col = 2, cex = 2)\n\n}\n\nOn Wed, May 8, 2013 at 12:10 PM, Yahoo! <aboueiss at yahoo.com> wrote:\n> Dear All:\n>\n> It seems a very silly question. But I never tried it before. I am teaching a college algebra class this summer.\n>\n> I need some help with graphing intervals on the real line. For examples:\n>\n> {x | -7<= x < 5 and x > 7}\n>\n> {x | x > 3}\n>\n> etc...\n>\n>\n> thank you very much\n> abou\n>\n> ========================\n>\n> AbouEl-Makarim Aboueissa\n>\n> Sozan Elsalakawy\n>\n> Mohamed Agamia\n>\n>\n>\n> 246 Auburn Street, #158\n>\n> Portland, ME 04103\n>\n> USA\n>\n>\n>\n> Tel: (207) 797-2724\n>\n> Email: aboueiss at yahoo.com\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Here's the start of a function. I'll leave it to you to do it better\n(it should probably also use S4 methods, but that's another project):\n\ninterval <- function(lower = -Inf, upper = Inf, lower_closed",
+      "thread_id": "thread-65cf4ad64b5b",
+      "thread_depth": 1,
+      "month": "2013-05"
+    },
+    {
+      "id": "msg-50e0abd63340",
+      "message_id": "<1368099202.83784.YahooMailClassic@web120604.mail.ne1.yahoo.com>",
+      "from_name": "Yahoo!",
+      "from_email_hash": "22385bbcf078dc17ff188e29e3a1eaf01aad381796219c59b64e7bb0baec2847",
+      "date": "2013-05-09T04:33:22-07:00",
+      "subject": "[R-sig-teaching] graphing inequalities (intervals) in one varible",
+      "subject_clean": "graphing inequalities (intervals) in one varible",
+      "in_reply_to": "<CAAmySGN_gjugskBKvEQJePKm+W02UXreYUZ34_Oxx-aFngL74w@mail.gmail.com>",
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130509/de9fae0e/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130509/de9fae0e/attachment.pl>",
+      "thread_id": "thread-65cf4ad64b5b",
+      "thread_depth": 2,
+      "month": "2013-05"
+    },
+    {
+      "id": "msg-e12146cdd2c1",
+      "message_id": "<EA53E9D3-23FA-4420-94C2-CBD5155D45FC@joelschwartz.com>",
+      "from_name": "Joel Schwartz",
+      "from_email_hash": "c0ae5a3e9c619e01102404769ffc380b8804be776bffd93f2f71cf012d12b506",
+      "date": "2013-05-09T05:32:24-07:00",
+      "subject": "[R-sig-teaching] graphing inequalities (intervals) in one varible",
+      "subject_clean": "graphing inequalities (intervals) in one varible",
+      "in_reply_to": "<1368099202.83784.YahooMailClassic@web120604.mail.ne1.yahoo.com>",
+      "references": [
+        "<1368099202.83784.YahooMailClassic@web120604.mail.ne1.yahoo.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130509/500e8748/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130509/500e8748/attachment.pl>",
+      "thread_id": "thread-65cf4ad64b5b",
+      "thread_depth": 3,
+      "month": "2013-05"
+    },
+    {
+      "id": "msg-35d6299a7c6c",
+      "message_id": "<CAP01uRmBV2Sp0aLDtqfwDLRJbKPGGHvOpqKJE9bYgV-sP-zJUA@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2013-05-09T08:38:07-04:00",
+      "subject": "[R-sig-teaching] graphing inequalities (intervals) in one varible",
+      "subject_clean": "graphing inequalities (intervals) in one varible",
+      "in_reply_to": "<1368011401.24632.YahooMailClassic@web120606.mail.ne1.yahoo.com>",
+      "references": [
+        "<1368011401.24632.YahooMailClassic@web120606.mail.ne1.yahoo.com>"
+      ],
+      "body_plain": "On Wed, May 8, 2013 at 7:10 AM, Yahoo! <aboueiss at yahoo.com> wrote:\n> Dear All:\n>\n> It seems a very silly question. But I never tried it before. I am teaching a college algebra class this summer.\n>\n> I need some help with graphing intervals on the real line. For examples:\n>\n> {x | -7<= x < 5 and x > 7}\n>\n> {x | x > 3}\n>\n> etc...\n>\n>\n\nCheck out the intervals packages:\n\nlibrary(intervals)\nexample(plot.Intervals)\n\n--\nStatistics & Software Consulting\nGKX Group, GKX Associates Inc.\ntel: 1-877-GKX-GROUP\nemail: ggrothendieck at gmail.com",
+      "body_snippet": "On Wed, May 8, 2013 at 7:10 AM, Yahoo! <aboueiss at yahoo.com> wrote:\n> Dear All:\n>\n> It seems a very silly question. But I never tried it before. I am teaching a college algebra class this summer.\n>\n",
+      "thread_id": "thread-65cf4ad64b5b",
+      "thread_depth": 1,
+      "month": "2013-05"
+    },
+    {
+      "id": "msg-047c667fa82b",
+      "message_id": "<6F016BEC-C204-4462-8988-0253CBC7D661@gmail.com>",
+      "from_name": "Michael Weylandt",
+      "from_email_hash": "44e8775a589b9ef81880469e200f3cce307c7180b4289ca1696a578afb772b3a",
+      "date": "2013-05-09T14:07:23+01:00",
+      "subject": "[R-sig-teaching] graphing inequalities (intervals) in one varible",
+      "subject_clean": "graphing inequalities (intervals) in one varible",
+      "in_reply_to": "<1368099202.83784.YahooMailClassic@web120604.mail.ne1.yahoo.com>",
+      "references": [
+        "<1368099202.83784.YahooMailClassic@web120604.mail.ne1.yahoo.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130509/b44c9097/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130509/b44c9097/attachment.pl>",
+      "thread_id": "thread-65cf4ad64b5b",
+      "thread_depth": 3,
+      "month": "2013-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-65cf4ad64b5b",
+      "subject": "graphing inequalities (intervals) in one varible",
+      "message_count": 7,
+      "participants": [
+        "Gabor Grothendieck",
+        "Joel Schwartz",
+        "Mattson, Todd",
+        "Michael Weylandt",
+        "R. Michael Weylandt",
+        "Yahoo!"
+      ],
+      "started": "2013-05-08T04:10:01-07:00",
+      "last_reply": "2013-05-09T14:07:23+01:00",
+      "root_message_id": "msg-65cf4ad64b5b"
+    }
+  ]
+}

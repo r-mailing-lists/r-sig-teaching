@@ -1,0 +1,65 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2010-03",
+  "messages": [
+    {
+      "id": "msg-7e771a50b0f4",
+      "message_id": "<20100301143918.72091.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2010-03-01T09:39:18-05:00",
+      "subject": "[R-sig-teaching] exchangeability",
+      "subject_clean": "exchangeability",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I am trying to understand the assumptions for a permutation test and\nfigure out how to explain those to beginning students.  (I am working\non a project to integrate resampling methods into the first course in\nstatistics.)  I have received some help from Tim Hesterberg who gave\nme the first definition of exchangeability I've seen.  One question is\nwhether assumptions apply to randomized experiments or to using\npermutation tests for survey sampling applications.  In addition it\nwould be helpful to have some counterexamples where the assumptions\nare NOT satisfied (and why). \n\n------->  First-time AP Stats. teacher?  Help is on the way! See\n\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n         \nRobert W. Hayden   phone (802) 334-1789  web site http://statland.org/      \nemail  bob statland.org  (add your own \"@\" and save me some spam)",
+      "body_snippet": "I am trying to understand the assumptions for a permutation test and\nfigure out how to explain those to beginning students.  (I am working\non a project to integrate resampling methods into the first c",
+      "thread_id": "thread-7e771a50b0f4",
+      "thread_depth": 0,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-7dea43c07682",
+      "message_id": "<A0D6F13E-9E11-437A-92E9-E1189FAF3B52@uleth.ca>",
+      "from_name": "Vokey, John",
+      "from_email_hash": "b33fe2fe95945f809a0749233e11ef931cc55b2e1123ada702af3b2c487bf692",
+      "date": "2010-03-02T19:11:29-07:00",
+      "subject": "[R-sig-teaching] exchangeability",
+      "subject_clean": "exchangeability",
+      "in_reply_to": "<mailman.7.1267527603.26924.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.7.1267527603.26924.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": "On 2010-03-02, at 4:00 AM, r-sig-teaching-request at r-project.org wrote:\n\n> I am trying to understand the assumptions for a permutation test and\n> figure out how to explain those to beginning students.  (I am working\n> on a project to integrate resampling methods into the first course in\n> statistics.)  I have received some help from Tim Hesterberg who gave\n> me the first definition of exchangeability I've seen.  One question is\n> whether assumptions apply to randomized experiments or to using\n> permutation tests for survey sampling applications.  In addition it\n> would be helpful to have some counterexamples where the assumptions\n> are NOT satisfied (and why). \n\nOne perspective is that it makes NO assumptions.  It depends what you intend the resulting p-values to mean.  If they are to be interpreted as probabilities, then, yes, exchangeability can be seen as an enabling assumption.  On the other hand, seen only as a scale of typicality, the randomization/permutation p-values do not *assume* exchangeability so much as provide a test of it.\n\n--\nPlease avoid sending me Word or PowerPoint attachments.\nSee <http://www.gnu.org/philosophy/no-word-attachments.html>",
+      "body_snippet": "On 2010-03-02, at 4:00 AM, r-sig-teaching-request at r-project.org wrote:\n\n> I am trying to understand the assumptions for a permutation test and\n> figure out how to explain those to beginning student",
+      "thread_id": "thread-7dea43c07682",
+      "thread_depth": 0,
+      "month": "2010-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-7e771a50b0f4",
+      "subject": "exchangeability",
+      "message_count": 1,
+      "participants": [
+        "Robert W. Hayden"
+      ],
+      "started": "2010-03-01T09:39:18-05:00",
+      "last_reply": "2010-03-01T09:39:18-05:00",
+      "root_message_id": "msg-7e771a50b0f4"
+    },
+    {
+      "id": "thread-7dea43c07682",
+      "subject": "exchangeability",
+      "message_count": 1,
+      "participants": [
+        "Vokey, John"
+      ],
+      "started": "2010-03-02T19:11:29-07:00",
+      "last_reply": "2010-03-02T19:11:29-07:00",
+      "root_message_id": "msg-7dea43c07682"
+    }
+  ]
+}

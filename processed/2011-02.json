@@ -1,0 +1,120 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2011-02",
+  "messages": [
+    {
+      "id": "msg-eff0465d3a47",
+      "message_id": "<870991.42661.qm@web30603.mail.mud.yahoo.com>",
+      "from_name": "jose romero",
+      "from_email_hash": "a239d2abfd6000b3143932058ce49c6bcae353eae79bc898cb147e87d639754c",
+      "date": "2011-02-22T10:17:21-08:00",
+      "subject": "[R-sig-teaching] embed an R console into a web-page?",
+      "subject_clean": "embed an R console into a web-page?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110222/e0413589/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110222/e0413589/attachment.pl>",
+      "thread_id": "thread-eff0465d3a47",
+      "thread_depth": 0,
+      "month": "2011-02"
+    },
+    {
+      "id": "msg-bad180ad9a30",
+      "message_id": "<AANLkTim7E_9V5dDb68eBMqGbC5+F2SxEh=-BKJbebT7y@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2011-02-22T13:36:37-05:00",
+      "subject": "[R-sig-teaching] embed an R console into a web-page?",
+      "subject_clean": "embed an R console into a web-page?",
+      "in_reply_to": "<870991.42661.qm@web30603.mail.mud.yahoo.com>",
+      "references": [
+        "<870991.42661.qm@web30603.mail.mud.yahoo.com>"
+      ],
+      "body_plain": "On Tue, Feb 22, 2011 at 1:17 PM, jose romero <jlaurentum at yahoo.com> wrote:\n> Hello list:\n>\n> Perhaps this is not the appropriate mailing list for this question...\n> I would like to encourage the use R in my statistic courses in an open university (distance learning).? In my webpage, I have written instructions on how to download and install R, how to download the semester's project data file, some basic commands on the console to get certain things done (descriptive statistics, linear regression, anova, etc.).? However, I find that some of my students get all tangled up in the process of setting up R and reading in the data files.? So my question is:\n>\n> Is there a way to \"embed\" an R console into a webpage, where the user can type in the commands and get instant results?\n>\n\nThis is actually a frequently asked question (FAQ):\n\nhttp://cran.r-project.org/doc/FAQ/R-FAQ.html#R-Web-Interfaces\n\n-- \nStatistics & Software Consulting\nGKX Group, GKX Associates Inc.\ntel: 1-877-GKX-GROUP\nemail: ggrothendieck at gmail.com",
+      "body_snippet": "On Tue, Feb 22, 2011 at 1:17 PM, jose romero <jlaurentum at yahoo.com> wrote:\n> Hello list:\n>\n> Perhaps this is not the appropriate mailing list for this question...\n> I would like to encourage the us",
+      "thread_id": "thread-eff0465d3a47",
+      "thread_depth": 1,
+      "month": "2011-02"
+    },
+    {
+      "id": "msg-d1f7c453b39c",
+      "message_id": "<20110223141853.27463.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2011-02-23T09:18:53-05:00",
+      "subject": "[R-sig-teaching] embed an R console into a web-page?",
+      "subject_clean": "embed an R console into a web-page?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "OK, I went there and found links that were broken or timed out.  So\nlet me reformulate the question.  Does anyone on the list have actual\nexperience with anything that might solve Jose's problem and is\ncurrently supported with an accessible web site?\n\nForwarded message:\n \n> On Tue, Feb 22, 2011 at 1:17 PM, jose romero <jlaurentum at yahoo.com> wrote:\n> > Hello list:\n> >\n> > Perhaps this is not the appropriate mailing list for this question...\n> > I would like to encourage the use R in my statistic courses in an open un=\n> iversity (distance learning).=A0 In my webpage, I have written instructions=\n>  on how to download and install R, how to download the semester's project d=\n> ata file, some basic commands on the console to get certain things done (de=\n> scriptive statistics, linear regression, anova, etc.).=A0 However, I find t=\n> hat some of my students get all tangled up in the process of setting up R a=\n> nd reading in the data files.=A0 So my question is:\n> >\n> > Is there a way to \"embed\" an R console into a webpage, where the user can=\n>  type in the commands and get instant results?\n> >\n> \n> This is actually a frequently asked question (FAQ):\n> \n> http://cran.r-project.org/doc/FAQ/R-FAQ.html#R-Web-Interfaces\n> \n> -- =\n> \n> Statistics & Software Consulting\n> GKX Group, GKX Associates Inc.\n> tel: 1-877-GKX-GROUP\n> email: ggrothendieck at gmail.com\n\n\n------->  First-time AP Stats. teacher?  Help is on the way! See\n\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n         \nRobert W. Hayden, P.O Box 450, North Troy, VT 05859 \nphone (802) 988-2587  web site http://statland.org/      \nemail  bob statland.org  (add your own \"@\" and save me some spam)",
+      "body_snippet": "OK, I went there and found links that were broken or timed out.  So\nlet me reformulate the question.  Does anyone on the list have actual\nexperience with anything that might solve Jose's problem and i",
+      "thread_id": "thread-d1f7c453b39c",
+      "thread_depth": 0,
+      "month": "2011-02"
+    },
+    {
+      "id": "msg-1f7d6971ef8c",
+      "message_id": "<AANLkTi=JX06AibP2REYj72xqTYAaScSDY0nO_7o0nc9v@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2011-02-23T09:38:51-05:00",
+      "subject": "[R-sig-teaching] embed an R console into a web-page?",
+      "subject_clean": "embed an R console into a web-page?",
+      "in_reply_to": "<20110223141853.27463.qmail@mv.mv.com>",
+      "references": [
+        "<20110223141853.27463.qmail@mv.mv.com>"
+      ],
+      "body_plain": "On Wed, Feb 23, 2011 at 9:18 AM, Robert W. Hayden <hayden at mv.mv.com> wrote:\n>\n> OK, I went there and found links that were broken or timed out. ?So\n> let me reformulate the question. ?Does anyone on the list have actual\n> experience with anything that might solve Jose's problem and is\n> currently supported with an accessible web site?\n>\n\nThen the next step is to google to find out what they have changed to.\n\nDoing that we find the links on Jeff Banfield's Rweb server site,\nlisted in the R FAQ, that have bayes in the URL work if you change the\nURL by replacing bayes with www.  Also the site name suggests that we\ngoogle for Rweb Servers and indeed that gives us serveral  such\nservers.\n\n-- \nStatistics & Software Consulting\nGKX Group, GKX Associates Inc.\ntel: 1-877-GKX-GROUP\nemail: ggrothendieck at gmail.com",
+      "body_snippet": "On Wed, Feb 23, 2011 at 9:18 AM, Robert W. Hayden <hayden at mv.mv.com> wrote:\n>\n> OK, I went there and found links that were broken or timed out. ?So\n> let me reformulate the question. ?Does anyone o",
+      "thread_id": "thread-d1f7c453b39c",
+      "thread_depth": 1,
+      "month": "2011-02"
+    },
+    {
+      "id": "msg-9ae52ade1e9a",
+      "message_id": "<4D65249D.9080604@patfiza.net>",
+      "from_name": "Zhan Chubukou",
+      "from_email_hash": "fe21b0d73e7511a47e2419992184449f8a86e0ff7a70241ff6bf72c7db5ae9a9",
+      "date": "2011-02-23T17:15:41+02:00",
+      "subject": "[R-sig-teaching] embed an R console into a web-page?",
+      "subject_clean": "embed an R console into a web-page?",
+      "in_reply_to": "<870991.42661.qm@web30603.mail.mud.yahoo.com>",
+      "references": [
+        "<870991.42661.qm@web30603.mail.mud.yahoo.com>"
+      ],
+      "body_plain": "Maybe try something like this \nhttp://www.askapache.com/ajax/php-and-ajax-shell-console.html ?\nBut there will some security questions...\nThe simplest way I see is OpenSSH + R + Putty (for Windows Users), but \nin this case you get some troubles with instant graphical output.\n\n-- \nBest regards,\nZhan A Chubukou\n-----\nGomel State Medical University\nDepartment of Pathological Physiology\n246000 Belarus, Gomel, Lange str. 5",
+      "body_snippet": "Maybe try something like this \nhttp://www.askapache.com/ajax/php-and-ajax-shell-console.html ?\nBut there will some security questions...\nThe simplest way I see is OpenSSH + R + Putty (for Windows User",
+      "thread_id": "thread-eff0465d3a47",
+      "thread_depth": 1,
+      "month": "2011-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-eff0465d3a47",
+      "subject": "embed an R console into a web-page?",
+      "message_count": 3,
+      "participants": [
+        "Gabor Grothendieck",
+        "Zhan Chubukou",
+        "jose romero"
+      ],
+      "started": "2011-02-22T10:17:21-08:00",
+      "last_reply": "2011-02-23T17:15:41+02:00",
+      "root_message_id": "msg-eff0465d3a47"
+    },
+    {
+      "id": "thread-d1f7c453b39c",
+      "subject": "embed an R console into a web-page?",
+      "message_count": 2,
+      "participants": [
+        "Gabor Grothendieck",
+        "Robert W. Hayden"
+      ],
+      "started": "2011-02-23T09:18:53-05:00",
+      "last_reply": "2011-02-23T09:38:51-05:00",
+      "root_message_id": "msg-d1f7c453b39c"
+    }
+  ]
+}

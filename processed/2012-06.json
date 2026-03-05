@@ -1,0 +1,36 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2012-06",
+  "messages": [
+    {
+      "id": "msg-2b80c024cf8a",
+      "message_id": "<b1318902542f7fec2a21a32affcdc88d@mail.gmail.com>",
+      "from_name": "Scott Siddall",
+      "from_email_hash": "29758c726430f13fa68338e758fb6bd310af3d1b3e5eceb1983731596a2e6666",
+      "date": "2012-06-07T15:21:01-04:00",
+      "subject": "[R-sig-teaching] Open access to R",
+      "subject_clean": "Open access to R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120607/a44f1e6b/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120607/a44f1e6b/attachment.pl>",
+      "thread_id": "thread-2b80c024cf8a",
+      "thread_depth": 0,
+      "month": "2012-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-2b80c024cf8a",
+      "subject": "Open access to R",
+      "message_count": 1,
+      "participants": [
+        "Scott Siddall"
+      ],
+      "started": "2012-06-07T15:21:01-04:00",
+      "last_reply": "2012-06-07T15:21:01-04:00",
+      "root_message_id": "msg-2b80c024cf8a"
+    }
+  ]
+}

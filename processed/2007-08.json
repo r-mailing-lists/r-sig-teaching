@@ -1,0 +1,186 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2007-08",
+  "messages": [
+    {
+      "id": "msg-23056deb66ec",
+      "message_id": "<61fg7n$4ud9a6@ipmail02.adl2.internode.on.net>",
+      "from_name": "Arthur Georges",
+      "from_email_hash": "caa4ba070ee3472271df668ecfd84c225319436b6abd000a5bd4b2fac0fd6988",
+      "date": "2007-08-11T06:40:36+10:00",
+      "subject": "[R-sig-teaching] Teaching R to Environmental Scientists",
+      "subject_clean": "Teaching R to Environmental Scientists",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nGreat to discover this mailing list. I have been running a course in \nenvironmental statistics using SAS for some years now, but have \nrecently moved to delivering the material online or in mixed mode \ndelivery. It would not come as a surprise to you as R users that the \nSAS licencing is getting in the way of this, as the students know no \nnational boundaries, and distributing SAS across the globe is problematic.\n\nI am therefore exploring switching to R. I do so with some \ntrepidation, as I chose SAS in part because the code is intelligible \nto novice programmers (I use the command line approach for \npedagogical reasons) whereas R syntax is likely to present a greater \nobstacle to learning for budding environmental scientists. Can anyone \ncomment on their experiences with this? Are SAS and SPSS more \nsuitable for undergraduate levels, and R better introduced at \ngraduate level? Should I not go there for the undergrads? Any tricks \nof the trade?\n\nMy course is on http://ecology.lamsinternational.com/ and you will \nnote that there is an Introductory R module there that I have not yet \ntrialed on a class -- plan to in February. If you want to poke around \nin there, the enrolment key is Fisher.\n\nAll the best,\n\nArthur",
+      "body_snippet": "Hi,\n\nGreat to discover this mailing list. I have been running a course in \nenvironmental statistics using SAS for some years now, but have \nrecently moved to delivering the material online or in mixed",
+      "thread_id": "thread-23056deb66ec",
+      "thread_depth": 0,
+      "month": "2007-08"
+    },
+    {
+      "id": "msg-e6a5b13efcbc",
+      "message_id": "<61fg7n$4ue8cp@ipmail02.adl2.internode.on.net>",
+      "from_name": "Arthur Georges",
+      "from_email_hash": "caa4ba070ee3472271df668ecfd84c225319436b6abd000a5bd4b2fac0fd6988",
+      "date": "2007-08-11T09:03:02+10:00",
+      "subject": "[R-sig-teaching] Teaching R to Environmental Scientists",
+      "subject_clean": "Teaching R to Environmental Scientists",
+      "in_reply_to": "<20070810215139.42194.qmail@mv.mv.com>",
+      "references": [
+        "<61fg7n$4ud9a6@ipmail02.adl2.internode.on.net>",
+        "<20070810215139.42194.qmail@mv.mv.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20070811/fe0e1a95/attachment.asc>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20070811/fe0e1a95/attachment.asc>",
+      "thread_id": "thread-e6a5b13efcbc",
+      "thread_depth": 0,
+      "month": "2007-08"
+    },
+    {
+      "id": "msg-8be0a37cc5f0",
+      "message_id": "<61fg7n$4ue9c2@ipmail02.adl2.internode.on.net>",
+      "from_name": "Arthur Georges",
+      "from_email_hash": "caa4ba070ee3472271df668ecfd84c225319436b6abd000a5bd4b2fac0fd6988",
+      "date": "2007-08-11T09:08:15+10:00",
+      "subject": "[R-sig-teaching] Teaching R to Environmental Scientists",
+      "subject_clean": "Teaching R to Environmental Scientists",
+      "in_reply_to": "<20070810225617.GN18793@laplace.reed.edu>",
+      "references": [
+        "<61fg7n$4ud9a6@ipmail02.adl2.internode.on.net>",
+        "<20070810225617.GN18793@laplace.reed.edu>"
+      ],
+      "body_plain": "Albyn,\n\nYeah, I did have a good look at that before I went to the trouble of \nthe online R primer. I have no concerns about the comprehensiveness \nof R -- it would certainly provide an open ended learning \nenvironment. It is good to hear that you have been teaching R at \nundergraduate level for years, and with some success no doubt. I will \nprobably run them in parallel and see how I go.\n\nThanks for your advice,\n\nArthur\n\n\nAt 08:56 AM 11/08/2007, you wrote:\n>Hi Arthur\n>\n>I (and others) have been using R at the undergraduate level for years.\n>I don't think SPSS is suitable for much of anything; maybe SAS is\n>useful for managing databases.  R does require some investment of\n>time and effort.\n>\n>Have you looked at the CRAN website \"taskviews\" Environmetrics\n>(Analysis of ecological and environmental data) section?  The packages\n>discussed there may be a bit advanced for intro courses, but it\n>does give an overview of packages useful in the domain.\n>\n>albyn\n>\n>On Sat, Aug 11, 2007 at 06:40:36AM +1000, Arthur Georges wrote:\n> > Hi,\n> >\n> > Great to discover this mailing list. I have been running a course in\n> > environmental statistics using SAS for some years now, but have\n> > recently moved to delivering the material online or in mixed mode\n> > delivery. It would not come as a surprise to you as R users that the\n> > SAS licencing is getting in the way of this, as the students know no\n> > national boundaries, and distributing SAS across the globe is problematic.\n> >\n> > I am therefore exploring switching to R. I do so with some\n> > trepidation, as I chose SAS in part because the code is intelligible\n> > to novice programmers (I use the command line approach for\n> > pedagogical reasons) whereas R syntax is likely to present a greater\n> > obstacle to learning for budding environmental scientists. Can anyone\n> > comment on their experiences with this? Are SAS and SPSS more\n> > suitable for undergraduate levels, and R better introduced at\n> > graduate level? Should I not go there for the undergrads? Any tricks\n> > of the trade?\n> >\n> > My course is on http://ecology.lamsinternational.com/ and you will\n> > note that there is an Introductory R module there that I have not yet\n> > trialed on a class -- plan to in February. If you want to poke around\n> > in there, the enrolment key is Fisher.\n> >\n> > All the best,\n> >\n> > Arthur\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >",
+      "body_snippet": "Albyn,\n\nYeah, I did have a good look at that before I went to the trouble of \nthe online R primer. I have no concerns about the comprehensiveness \nof R -- it would certainly provide an open ended lear",
+      "thread_id": "thread-8be0a37cc5f0",
+      "thread_depth": 0,
+      "month": "2007-08"
+    },
+    {
+      "id": "msg-1ca109e4deba",
+      "message_id": "<61fg7n$4uhjhq@ipmail02.adl2.internode.on.net>",
+      "from_name": "Arthur Georges",
+      "from_email_hash": "caa4ba070ee3472271df668ecfd84c225319436b6abd000a5bd4b2fac0fd6988",
+      "date": "2007-08-11T15:58:17+10:00",
+      "subject": "[R-sig-teaching] Teaching R to Environmental Scientists",
+      "subject_clean": "Teaching R to Environmental Scientists",
+      "in_reply_to": "<20070810232341.79550.qmail@mv.mv.com>",
+      "references": [
+        "<61fg7n$4ue8cp@ipmail02.adl2.internode.on.net>",
+        "<20070810232341.79550.qmail@mv.mv.com>"
+      ],
+      "body_plain": "Bob,\n\nMinitab has come a long way. I was pleasantly surprised by the table \nyou referred to. I would still like to see a table comparing it with \nSAS or R though. I probably would not stand up that well. Also the \nFisheries people that have funded me use R or SAS, and the public \nservice over here is pretty much wedded to SAS. I do not know of any \ngraduate employer here that uses Minitab in the workplace -- it is \npretty important to have graduates with competency in something that \nwill have them up and running when they enter the workplace.\n\nSo really the choice for me is (a) Stick with SAS and fight out the \nlicencing arrangements with a large and immovable bureaucracy, or (b) \nRun with R or (c) a mixture of both.\n\nAs for the command line side of things, I like to have the students \nlearn the programming first, then move to the menu driven system \nsecond if they choose to. I am not a big fan of menu driven stuff, as \nit can lead to a bit of a black-box mentality. I suppose that is just \na matter of choice.\n\nThanks for your comments,\n\nArthur\n\n\n\nAt 09:23 AM 11/08/2007, you wrote:\n\n>Minitab has come a long way since it was just for teaching an\n>intro. course.  Check\n>\n>       http://www.minitab.com/products/Minitab/compare.aspx\n>\n>But I realize this may not be the exact mix of features you need.\n>(There are at least two macro languages for extending it but activity\n>seems to have died down on the old one (simple scripting) and the new\n>one never seems to have caught on.  But it's there.)\n>\n>I am not exactly sure what your issues are with a GUI.  There are GUI\n>interfaces for R and a free student version of S-Plus (a commercial\n>inplementation of the same language as R) that keep a command history\n>so you can use the GUI as a way to get students started quickly and\n>then gradually move them to the command line.  (Most of my students in\n>my last years in the classroom had never SEEN a command line;-)  With\n>Minitab I never cared whether they used the command line or the menus\n>though I used the command line 90% of the time.  It WAS a big\n>advantage that even if the student uses the menus you can set Minitab\n>so that corresponding commands appear in the output.  That was a big\n>help to me in debugging where students went wrong.\n>\n>Stata has been growing gradually and quietly.  It's pretty powerful\n>and has a command line.\n>\n> > Bob,\n> >\n> > I looked at Minitab a ways back, and it sort of stops dead in terms\n> > of students developing beyond what I teach when they move into the\n> > subjects that follow. I was hoping not to have them swapping and\n> > changing software, but maybe that would be a good thing?\n> >\n> > Thanks for the advice,\n> >\n> > Arthur\n> >\n> > At 07:51 AM 11/08/2007, you wrote:\n> >\n> > >It certainly does not look like you would need SAS or R for the topics\n> > >covered, which could easily be done with Minitab, which has a command\n> > >line available -- one far simpler than R's.  And it's a lot cheaper\n> > >than SAS!\n> > >\n> > > > Hi,\n> > > >\n> > > > Great to discover this mailing list. I have been running a course in\n> > > > environmental statistics using SAS for some years now, but have\n> > > > recently moved to delivering the material online or in mixed mode\n> > > > delivery. It would not come as a surprise to you as R users that the\n> > > > SAS licencing is getting in the way of this, as the students know no\n> > > > national boundaries, and distributing SAS across the globe is \n> problematic.\n> > > >\n> > > > I am therefore exploring switching to R. I do so with some\n> > > > trepidation, as I chose SAS in part because the code is intelligible\n> > > > to novice programmers (I use the command line approach for\n> > > > pedagogical reasons) whereas R syntax is likely to present a greater\n> > > > obstacle to learning for budding environmental scientists. Can anyone\n> > > > comment on their experiences with this? Are SAS and SPSS more\n> > > > suitable for undergraduate levels, and R better introduced at\n> > > > graduate level? Should I not go there for the undergrads? Any tricks\n> > > > of the trade?\n> > > >\n> > > > My course is on http://ecology.lamsinternational.com/ and you will\n> > > > note that there is an Introductory R module there that I have not yet\n> > > > trialed on a class -- plan to in February. If you want to poke around\n> > > > in there, the enrolment key is Fisher.\n> > > >\n> > > > All the best,\n> > > >\n> > > > Arthur\n> > > >\n> > > > _______________________________________________\n> > > > R-sig-teaching at r-project.org mailing list\n> > > > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> > > >\n> > >\n> > >\n> > >\n> > >  _______\n> > >|   ^  |\n> > >|     /                     Robert W. Hayden\n> > >|    |                      in the old library\n> > >|    |                      212 Main Street\n> > >|   /                       P. O. Box 450\n> > >|  |                      ^ North Troy, VT 05859\n> > >L__L                        (802) 988-2587\n> > >                             http://statland.org/\n> > >Map of VT                   bob at statland.org\n> > >\n> > >Communications sent to Plymouth State will not reach me.\n> >\n> > ==========================================================\n> > Arthur  Georges, Professor in Applied Ecology\n> > Institute for Applied Ecology and\n> > School of Resource, Environmental and Heritage Sciences\n> > Building 3, University of Canberra ACT 2601 AUSTRALIA\n> > Tel : (02)6201 5786  Fax: (02)62015305  Mobile: 0418 866741\n> > Email: georges at aerg.canberra.edu.au\n> > WWW: http://aerg.canberra.edu.au/staff/georges/\n> > Reprints: http://aerg.canberra.edu.au/cgi-bin/pubs.cgi?target=G1\n> > ==========================================================\n> > Australian Government Higher Education Registered Provider CRICOS: #00212K\n> >\n> >       [[alternative HTML version deleted]]\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >\n>\n>\n>\n>  _______\n>|   ^  |\n>|     /                     Robert W. Hayden\n>|    |                      in the old library\n>|    |                      212 Main Street\n>|   /                       P. O. Box 450\n>|  |                      ^ North Troy, VT 05859\n>L__L                        (802) 988-2587\n>                             http://statland.org/\n>Map of VT                   bob at statland.org\n>\n>Communications sent to Plymouth State will not reach me.",
+      "body_snippet": "Bob,\n\nMinitab has come a long way. I was pleasantly surprised by the table \nyou referred to. I would still like to see a table comparing it with \nSAS or R though. I probably would not stand up that we",
+      "thread_id": "thread-1ca109e4deba",
+      "thread_depth": 0,
+      "month": "2007-08"
+    },
+    {
+      "id": "msg-18239948e0bc",
+      "message_id": "<61fg7n$4uonai@ipmail02.adl2.internode.on.net>",
+      "from_name": "Arthur Georges",
+      "from_email_hash": "caa4ba070ee3472271df668ecfd84c225319436b6abd000a5bd4b2fac0fd6988",
+      "date": "2007-08-12T06:56:12+10:00",
+      "subject": "[R-sig-teaching] Teaching R to Environmental Scientists",
+      "subject_clean": "Teaching R to Environmental Scientists",
+      "in_reply_to": "<p06240800c2e3b742cf27@[192.168.0.2]>",
+      "references": [
+        "<61fg7n$4ud9a6@ipmail02.adl2.internode.on.net>",
+        "<p06240800c2e3b742cf27@[192.168.0.2]>"
+      ],
+      "body_plain": "Thanks for that encouraging advice Keith. I will check those books out.\n\nBest wishes,\n\nArthur",
+      "body_snippet": "Thanks for that encouraging advice Keith. I will check those books out.\n\nBest wishes,\n\nArthur",
+      "thread_id": "thread-18239948e0bc",
+      "thread_depth": 0,
+      "month": "2007-08"
+    },
+    {
+      "id": "msg-fa2cf0707327",
+      "message_id": "<61fg7n$4uoo5d@ipmail02.adl2.internode.on.net>",
+      "from_name": "Arthur Georges",
+      "from_email_hash": "caa4ba070ee3472271df668ecfd84c225319436b6abd000a5bd4b2fac0fd6988",
+      "date": "2007-08-12T06:59:48+10:00",
+      "subject": "[R-sig-teaching] Teaching R to Environmental Scientists",
+      "subject_clean": "Teaching R to Environmental Scientists",
+      "in_reply_to": "<20070811141635.74164.qmail@mv.mv.com>",
+      "references": [
+        "<61fg7n$4uhjhq@ipmail02.adl2.internode.on.net>",
+        "<20070811141635.74164.qmail@mv.mv.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20070812/854fcaf8/attachment.ksh>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20070812/854fcaf8/attachment.ksh>",
+      "thread_id": "thread-fa2cf0707327",
+      "thread_depth": 0,
+      "month": "2007-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-23056deb66ec",
+      "subject": "Teaching R to Environmental Scientists",
+      "message_count": 1,
+      "participants": [
+        "Arthur Georges"
+      ],
+      "started": "2007-08-11T06:40:36+10:00",
+      "last_reply": "2007-08-11T06:40:36+10:00",
+      "root_message_id": "msg-23056deb66ec"
+    },
+    {
+      "id": "thread-e6a5b13efcbc",
+      "subject": "Teaching R to Environmental Scientists",
+      "message_count": 1,
+      "participants": [
+        "Arthur Georges"
+      ],
+      "started": "2007-08-11T09:03:02+10:00",
+      "last_reply": "2007-08-11T09:03:02+10:00",
+      "root_message_id": "msg-e6a5b13efcbc"
+    },
+    {
+      "id": "thread-8be0a37cc5f0",
+      "subject": "Teaching R to Environmental Scientists",
+      "message_count": 1,
+      "participants": [
+        "Arthur Georges"
+      ],
+      "started": "2007-08-11T09:08:15+10:00",
+      "last_reply": "2007-08-11T09:08:15+10:00",
+      "root_message_id": "msg-8be0a37cc5f0"
+    },
+    {
+      "id": "thread-1ca109e4deba",
+      "subject": "Teaching R to Environmental Scientists",
+      "message_count": 1,
+      "participants": [
+        "Arthur Georges"
+      ],
+      "started": "2007-08-11T15:58:17+10:00",
+      "last_reply": "2007-08-11T15:58:17+10:00",
+      "root_message_id": "msg-1ca109e4deba"
+    },
+    {
+      "id": "thread-18239948e0bc",
+      "subject": "Teaching R to Environmental Scientists",
+      "message_count": 1,
+      "participants": [
+        "Arthur Georges"
+      ],
+      "started": "2007-08-12T06:56:12+10:00",
+      "last_reply": "2007-08-12T06:56:12+10:00",
+      "root_message_id": "msg-18239948e0bc"
+    },
+    {
+      "id": "thread-fa2cf0707327",
+      "subject": "Teaching R to Environmental Scientists",
+      "message_count": 1,
+      "participants": [
+        "Arthur Georges"
+      ],
+      "started": "2007-08-12T06:59:48+10:00",
+      "last_reply": "2007-08-12T06:59:48+10:00",
+      "root_message_id": "msg-fa2cf0707327"
+    }
+  ]
+}

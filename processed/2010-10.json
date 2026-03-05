@@ -1,0 +1,747 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2010-10",
+  "messages": [
+    {
+      "id": "msg-3568678adab6",
+      "message_id": "<AANLkTinyNqfWZt7BDGOmeAmGHQXUmiKrc6+kMMtygjy9@mail.gmail.com>",
+      "from_name": "Liviu Andronic",
+      "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
+      "date": "2010-10-01T01:10:34+03:00",
+      "subject": "[R-sig-teaching] plotting hypothesis of correlation t-test",
+      "subject_clean": "plotting hypothesis of correlation t-test",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all\nI'm not sure that this is an r-sig-teaching per se, but I need it for\nteaching so here I go.\n\nI need to plot the hypothesis of a correlation test. The only\nsemi-automated way I know to do this is RcmdrPlugin.HH. For example,\n> cor.test(mtcars$am, mtcars$drat, alternative=\"two.sided\", method=\"pearson\")\n\n\tPearson's product-moment correlation\n\ndata:  mtcars$am and mtcars$drat\nt = 5.5651, df = 30, p-value = 4.727e-06\nalternative hypothesis: true correlation is not equal to 0\n95 percent confidence interval:\n 0.4843991 0.8501319\nsample estimates:\n      cor\n0.7127111\n> qt(c(0.025), df=30, lower.tail=F)\n[1] 2.042272\n\n\nThen I supply these data to the 'Plot Hypotheses (HH)' in Rcmdr >\nCont. Distributions > t distro.\nrequire(RcmdrPlugin.HH)\nnormal.and.t.dist.result <- normal.and.t.dist(std.dev=NA, n=32,\n  deg.freedom=30, mu.H0=0, xmin=NA, xmax=NA, gxbar.min=NA, gxbar.max=NA,\n  Use.alpha.right=TRUE, alpha.right=0.025, Use.alpha.left=TRUE,\n  alpha.left=0.025, Use.mu.H1=FALSE, mu.H1=NA, Use.obs.mean=TRUE,\n  obs.mean=5.5651, hypoth.or.conf=\"Hypoth\", col.mean=\"lime green\",\n  col.alpha=\"blue\", col.beta=\"red\", col.conf=\"pale green\",\n  col.conf.arrow=\"dark green\", col.mean.label=\"lime green\",\n  col.alpha.label=\"blue\", col.beta.label=\"red\", col.conf.label=\"dark green\",\n  cex.crit=1.2)\n\n\nThere are several elements that I do not quite understand in the\nresulting graph [1]:\n- what does '0.361' correspond to? If this is the mean (x bar), why\nwould I be interested in this for this particular hypothesis testing?\n- what does '31.481' correspond to? From the colors I understand that\nit's related to the observed t statistic, but I cannot figure what\nexactly it represents.\n\nI'd be grateful for any insights. Regards\nLiviu\n\n[1] http://s000.tinyupload.com/index.php?file_id=02099991814244792735\n\n\n\n-- \nDo you know how to read?\nhttp://www.alienetworks.com/srtest.cfm\nhttp://goodies.xfce.org/projects/applications/xfce4-dict#speed-reader\nDo you know how to write?\nhttp://garbl.home.comcast.net/~garbl/stylemanual/e.htm#e-mail",
+      "body_snippet": "Dear all\nI'm not sure that this is an r-sig-teaching per se, but I need it for\nteaching so here I go.\n\nI need to plot the hypothesis of a correlation test. The only\nsemi-automated way I know to do thi",
+      "thread_id": "thread-3568678adab6",
+      "thread_depth": 0,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-e95a975367a8",
+      "message_id": "<AANLkTinuVdfNRGC29+q0B1N3zh6rt8TqbFFWv4tYJgP4@mail.gmail.com>",
+      "from_name": "Liviu Andronic",
+      "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
+      "date": "2010-10-01T09:33:49+03:00",
+      "subject": "[R-sig-teaching] plotting hypothesis of correlation t-test",
+      "subject_clean": "plotting hypothesis of correlation t-test",
+      "in_reply_to": "<AANLkTikxuDv88SKygrNYeLj5rxHp6Zp-pVQN7_LAt5ve@mail.gmail.com>",
+      "references": [
+        "<AANLkTinyNqfWZt7BDGOmeAmGHQXUmiKrc6+kMMtygjy9@mail.gmail.com>",
+        "<B37C0A15B8FB3C468B5BC7EBC7DA14CC633E40FA23@LP-EXMBVS10.CO.IHC.COM>",
+        "<AANLkTikxuDv88SKygrNYeLj5rxHp6Zp-pVQN7_LAt5ve@mail.gmail.com>"
+      ],
+      "body_plain": "Hello\nThanks all for your input!\n\n\nOn Fri, Oct 1, 2010 at 3:55 AM, RICHARD M. HEIBERGER <rmh at temple.edu> wrote:\n> The t-value in the cor.test is already scaled for 30 df by the time it\n> is printed.? Giving an n-value scales it again, by dividing the\n> standard deviation by sqrt(n).? Since you are already in the standard\n> t-scaling, n=1 is the correct value for your example.\n> This is the graph you are looking for:\n>\n> ??? normal.and.t.dist(obs.mean=5.5651, deg.freedom=30, alpha.right=.025,\n> ????????????????????? Use.alpha.left=TRUE, Use.obs.mean=TRUE, xmin=-6)\n>\nThis is indeed the graph that I was looking for. I was assuming that,\nsince I knew both df and t, I should specify both, but I was obviously\nwrong. Also, I prefer this graph to the below because it's cleaner and\nshould raise less questions.\n\nThanks a lot for the helpful functions. Best regards\nLiviu\n\n\n> The above graph does not specifiy n, and therefore shows\n> \"Standard t Density\", and only the t axis.? The green 5.565 is the observed\n> t-value, and the -5.565 is the boundary of the p-value region on the other\n> side.\n> We need both sides because the cor.test said the alternative hypothesis is\n> two-sided.\n>\n> Here is almost the same graph, this time with n=1.? Now it shows \"t density\"\n> with\n> standard error of x.bar and the x.bar axis as well as the t axis.\n> ??? normal.and.t.dist(obs.mean=5.5651, deg.freedom=30, alpha.right=.025,\n> ????????????????????? Use.alpha.left=TRUE, Use.obs.mean=TRUE, xmin=-6, n=1)\n> In this example with n=1, the x.bar scale and the t scale are identical.\n> The blue +/- 2.042 are the boundaries of the rejection region in x.bar\n> units.\n> On your original graph, simplified here\n>\n> normal.and.t.dist(obs.mean=5.5651, deg.freedom=30, alpha.right=0.025,\n> ????????????????? Use.alpha.left=TRUE, Use.obs.mean=TRUE, n=32)\n>\n> the blue values are in the x.bar scale (as indicated on the graph),\n> asssuming that the observed mean x.bar=5.5651 comes from a\n> distribution of x.bar with standard deviation 1/sqrt(32).\n> Scale that to the t-scale with 5.5651/(1/sqrt(32)) = 31.48096 and that\n> is the number you were querying.\n>\n> Expand the graph to fill the screen and you will see that the right boundary\n> of the rejection region is suppressed by R to avoid overprinting.\n> If you extend the graph to the left, with xmin=-6,\n>\n> normal.and.t.dist(obs.mean=5.5651, deg.freedom=30, alpha.right=0.025,\n> ????????????????? Use.alpha.left=TRUE, Use.obs.mean=TRUE, n=32, xmin=-6)\n>\n> then you will see that the left boundary of the p-value region -31.481\n> is also displayed.\n> Rich\n>\n\n\n\n-- \nDo you know how to read?\nhttp://www.alienetworks.com/srtest.cfm\nhttp://goodies.xfce.org/projects/applications/xfce4-dict#speed-reader\nDo you know how to write?\nhttp://garbl.home.comcast.net/~garbl/stylemanual/e.htm#e-mail",
+      "body_snippet": "Hello\nThanks all for your input!\n\n\nOn Fri, Oct 1, 2010 at 3:55 AM, RICHARD M. HEIBERGER <rmh at temple.edu> wrote:\n> The t-value in the cor.test is already scaled for 30 df by the time it\n> is printed",
+      "thread_id": "thread-e95a975367a8",
+      "thread_depth": 0,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-8fdfe37b4f1e",
+      "message_id": "<AANLkTin5gMXMKuQDHwaQtkF4KmrmnXnb3Y86L=_9i27n@mail.gmail.com>",
+      "from_name": "Partha Sinha",
+      "from_email_hash": "1e66b8d65130c17ca4566beaf97f637adbf5b2295567eef7f689b1e6ded6f4e9",
+      "date": "2010-10-01T14:22:00+05:30",
+      "subject": "[R-sig-teaching] Download all package",
+      "subject_clean": "Download all package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101001/61d87e52/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101001/61d87e52/attachment.pl>",
+      "thread_id": "thread-8fdfe37b4f1e",
+      "thread_depth": 0,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-ea739482e8a8",
+      "message_id": "<AANLkTimuxF_j+fjTrC7LQ_Bd=A1Tp_kPyf9FLs72Yeu6@mail.gmail.com>",
+      "from_name": "Liviu Andronic",
+      "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
+      "date": "2010-10-01T11:59:44+03:00",
+      "subject": "[R-sig-teaching] Download all package",
+      "subject_clean": "Download all package",
+      "in_reply_to": "<AANLkTin5gMXMKuQDHwaQtkF4KmrmnXnb3Y86L=_9i27n@mail.gmail.com>",
+      "references": [
+        "<AANLkTin5gMXMKuQDHwaQtkF4KmrmnXnb3Y86L=_9i27n@mail.gmail.com>"
+      ],
+      "body_plain": "Hello\n\nOn Fri, Oct 1, 2010 at 11:52 AM, Partha Sinha <pnsinha68 at gmail.com> wrote:\n> Dear Sir\n> Is there a way I can download all the packages in one shot or I need to\n> download one by one and use them?\n>\nThis question doesn't seem relevant to teaching with R, so r-help may\nbe more appropriate.\n\nGenerally you need to decide on the package that you intend to use, and\ninstall.package('your_package', dep=T)\n\nto install it and all its dependencies. This would avoid you the\ntrouble of individually installing each dependency.\n\nRegards\nLiviu\n\n\n> Regards\n> Partha\n>\n> ? ? ? ?[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \nDo you know how to read?\nhttp://www.alienetworks.com/srtest.cfm\nhttp://goodies.xfce.org/projects/applications/xfce4-dict#speed-reader\nDo you know how to write?\nhttp://garbl.home.comcast.net/~garbl/stylemanual/e.htm#e-mail",
+      "body_snippet": "Hello\n\nOn Fri, Oct 1, 2010 at 11:52 AM, Partha Sinha <pnsinha68 at gmail.com> wrote:\n> Dear Sir\n> Is there a way I can download all the packages in one shot or I need to\n> download one by one and use ",
+      "thread_id": "thread-8fdfe37b4f1e",
+      "thread_depth": 1,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-266067d8b6a2",
+      "message_id": "<4CA63FCF.9010402@eku.edu>",
+      "from_name": "Tyler Smith",
+      "from_email_hash": "12de33670560962de9c025736c2ea1be1a4bdfe43bafdadf790e6d51a3ca32df",
+      "date": "2010-10-01T16:08:47-04:00",
+      "subject": "[R-sig-teaching] data preprocessing resources",
+      "subject_clean": "data preprocessing resources",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nI'll be teaching a grad course in multivariate stats for ecologists \n(ordination et al.) for the first time this coming spring. One thing \nI've discovered in my interactions with grad students is that they each \ndevelop their own rather idiosyncratic approaches to data processing. \nI've seen some really odd and weirdly illogical use of spreadsheets \nsince I started teaching last year.\n\nDo any of you know of good online or in-print resources to either use in \nmy teaching or direct students to? I've come across bits and pieces \nscattered in various online lecture slides and notes, but nothing really \nfocused on this particular issue.\n\nI know this is not really an R issue per se, but it's much easier to get \ndata into R if it is originally entered into a spreadsheet in a sensible \nfashion.\n\nThanks for any suggestions!\n\nTyler",
+      "body_snippet": "Hi,\n\nI'll be teaching a grad course in multivariate stats for ecologists \n(ordination et al.) for the first time this coming spring. One thing \nI've discovered in my interactions with grad students is",
+      "thread_id": "thread-266067d8b6a2",
+      "thread_depth": 0,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-7d0f53e95000",
+      "message_id": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC633E40FD3E@LP-EXMBVS10.CO.IHC.COM>",
+      "from_name": "Greg Snow",
+      "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
+      "date": "2010-10-01T15:05:20-06:00",
+      "subject": "[R-sig-teaching] data preprocessing resources",
+      "subject_clean": "data preprocessing resources",
+      "in_reply_to": "<4CA63FCF.9010402@eku.edu>",
+      "references": [
+        "<4CA63FCF.9010402@eku.edu>"
+      ],
+      "body_plain": "I would start here:\n\nhttp://www.burns-stat.com/pages/Tutor/spreadsheet_addiction.html\n\nThen point the students to a basic tutorial about databases (or at least MSaccess).\n\nOr you can have them enter the data directly into R without using outside products.  Some of the GUI front ends for R have spreadsheet like interfaces, or you can create an empty data frame with the correct column types, then use edit/fix to enter the data in a way that feels familiar to spreadsheet users, but prevents some of the major problems that come from abuse of spreadsheets.\n\n-- \nGregory (Greg) L. Snow Ph.D.\nStatistical Data Center\nIntermountain Healthcare\ngreg.snow at imail.org\n801.408.8111\n\n\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-\n> bounces at r-project.org] On Behalf Of Tyler Smith\n> Sent: Friday, October 01, 2010 2:09 PM\n> To: r-sig-teaching at r-project.org\n> Subject: [R-sig-teaching] data preprocessing resources\n> \n>   Hi,\n> \n> I'll be teaching a grad course in multivariate stats for ecologists\n> (ordination et al.) for the first time this coming spring. One thing\n> I've discovered in my interactions with grad students is that they each\n> develop their own rather idiosyncratic approaches to data processing.\n> I've seen some really odd and weirdly illogical use of spreadsheets\n> since I started teaching last year.\n> \n> Do any of you know of good online or in-print resources to either use\n> in\n> my teaching or direct students to? I've come across bits and pieces\n> scattered in various online lecture slides and notes, but nothing\n> really\n> focused on this particular issue.\n> \n> I know this is not really an R issue per se, but it's much easier to\n> get\n> data into R if it is originally entered into a spreadsheet in a\n> sensible\n> fashion.\n> \n> Thanks for any suggestions!\n> \n> Tyler\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "I would start here:\n\nhttp://www.burns-stat.com/pages/Tutor/spreadsheet_addiction.html\n\nThen point the students to a basic tutorial about databases (or at least MSaccess).\n\nOr you can have them enter t",
+      "thread_id": "thread-266067d8b6a2",
+      "thread_depth": 1,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-c32ec23d958c",
+      "message_id": "<AANLkTi=KuUCNxXCQXHUNRD2vj0DwbEKAJtjQspyxArWb@mail.gmail.com>",
+      "from_name": "Ista Zahn",
+      "from_email_hash": "2e4c8f48786fb76b910812e6407745b24d3e39c79018966c1f928657fc9989f2",
+      "date": "2010-10-01T17:51:17-04:00",
+      "subject": "[R-sig-teaching] data preprocessing resources",
+      "subject_clean": "data preprocessing resources",
+      "in_reply_to": "<4CA63FCF.9010402@eku.edu>",
+      "references": [
+        "<4CA63FCF.9010402@eku.edu>"
+      ],
+      "body_plain": "You might find Paul Murrell's text helpful:\nhttp://www.stat.auckland.ac.nz/~paul/ItDT/\n\n-Ista\n\nOn Fri, Oct 1, 2010 at 4:08 PM, Tyler Smith <tyler.smith at eku.edu> wrote:\n> ?Hi,\n>\n> I'll be teaching a grad course in multivariate stats for ecologists\n> (ordination et al.) for the first time this coming spring. One thing I've\n> discovered in my interactions with grad students is that they each develop\n> their own rather idiosyncratic approaches to data processing. I've seen some\n> really odd and weirdly illogical use of spreadsheets since I started\n> teaching last year.\n>\n> Do any of you know of good online or in-print resources to either use in my\n> teaching or direct students to? I've come across bits and pieces scattered\n> in various online lecture slides and notes, but nothing really focused on\n> this particular issue.\n>\n> I know this is not really an R issue per se, but it's much easier to get\n> data into R if it is originally entered into a spreadsheet in a sensible\n> fashion.\n>\n> Thanks for any suggestions!\n>\n> Tyler\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \nIsta Zahn\nGraduate student\nUniversity of Rochester\nDepartment of Clinical and Social Psychology\nhttp://yourpsyche.org",
+      "body_snippet": "You might find Paul Murrell's text helpful:\nhttp://www.stat.auckland.ac.nz/~paul/ItDT/\n\n-Ista\n\nOn Fri, Oct 1, 2010 at 4:08 PM, Tyler Smith <tyler.smith at eku.edu> wrote:\n> ?Hi,\n>\n> I'll be teaching a",
+      "thread_id": "thread-266067d8b6a2",
+      "thread_depth": 1,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-9e0fd685e204",
+      "message_id": "<AANLkTinbzZPhc_pRvg83dDoaXHoiCZ19-Lky43Cso89g@mail.gmail.com>",
+      "from_name": "RICHARD M. HEIBERGER",
+      "from_email_hash": "4ce810eab8587777db353ea9d997b9e94d9e73af018121f9a3424238038952df",
+      "date": "2010-10-01T20:07:42-04:00",
+      "subject": "[R-sig-teaching] plotting hypothesis of correlation t-test",
+      "subject_clean": "plotting hypothesis of correlation t-test",
+      "in_reply_to": "<AANLkTinyNqfWZt7BDGOmeAmGHQXUmiKrc6+kMMtygjy9@mail.gmail.com>",
+      "references": [
+        "<AANLkTinyNqfWZt7BDGOmeAmGHQXUmiKrc6+kMMtygjy9@mail.gmail.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101001/4b210904/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101001/4b210904/attachment.pl>",
+      "thread_id": "thread-3568678adab6",
+      "thread_depth": 1,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-1977d2a594cf",
+      "message_id": "<4CA928B8.3020301@eku.edu>",
+      "from_name": "Tyler Smith",
+      "from_email_hash": "38523fc837da77df351acf8d801c517b3acb5656610a8e13281cbf74b8e92b7c",
+      "date": "2010-10-03T21:07:04-04:00",
+      "subject": "[R-sig-teaching] data preprocessing resources",
+      "subject_clean": "data preprocessing resources",
+      "in_reply_to": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC633E40FD3E@LP-EXMBVS10.CO.IHC.COM>",
+      "references": [
+        "<4CA63FCF.9010402@eku.edu>",
+        "<B37C0A15B8FB3C468B5BC7EBC7DA14CC633E40FD3E@LP-EXMBVS10.CO.IHC.COM>"
+      ],
+      "body_plain": "On 10/01/2010 05:05 PM, Greg Snow wrote:\n> I would start here:\n>\n> http://www.burns-stat.com/pages/Tutor/spreadsheet_addiction.html\n>\n> Then point the students to a basic tutorial about databases (or at least MSaccess).\n>\n> Or you can have them enter the data directly into R without using outside products.  Some of the GUI front ends for R have spreadsheet like interfaces, or you can create an empty data frame with the correct column types, then use edit/fix to enter the data in a way that feels familiar to spreadsheet users, but prevents some of the major problems that come from abuse of spreadsheets.\n>\nThanks! I'd forgotten about that essay. That's a nice opener. I have \nnever really considered R as a tool for data entry, but I'll have to \ntake another look at the GUIs.\n\nCheers,\n\nTyler",
+      "body_snippet": "On 10/01/2010 05:05 PM, Greg Snow wrote:\n> I would start here:\n>\n> http://www.burns-stat.com/pages/Tutor/spreadsheet_addiction.html\n>\n> Then point the students to a basic tutorial about databases (or ",
+      "thread_id": "thread-266067d8b6a2",
+      "thread_depth": 2,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-de487b808536",
+      "message_id": "<4CA9296F.5060807@eku.edu>",
+      "from_name": "Tyler Smith",
+      "from_email_hash": "38523fc837da77df351acf8d801c517b3acb5656610a8e13281cbf74b8e92b7c",
+      "date": "2010-10-03T21:10:07-04:00",
+      "subject": "[R-sig-teaching] data preprocessing resources",
+      "subject_clean": "data preprocessing resources",
+      "in_reply_to": "<AANLkTi=KuUCNxXCQXHUNRD2vj0DwbEKAJtjQspyxArWb@mail.gmail.com>",
+      "references": [
+        "<4CA63FCF.9010402@eku.edu>",
+        "<AANLkTi=KuUCNxXCQXHUNRD2vj0DwbEKAJtjQspyxArWb@mail.gmail.com>"
+      ],
+      "body_plain": "On 10/01/2010 05:51 PM, Ista Zahn wrote:\n> You might find Paul Murrell's text helpful:\n> http://www.stat.auckland.ac.nz/~paul/ItDT/\n>\nThanks! That looks fantastic. It'll be a handy secondary resource for my \ngrad course, and could be a great primary text for an undergrad course \non its own.\n\nCheers,\n\nTyler",
+      "body_snippet": "On 10/01/2010 05:51 PM, Ista Zahn wrote:\n> You might find Paul Murrell's text helpful:\n> http://www.stat.auckland.ac.nz/~paul/ItDT/\n>\nThanks! That looks fantastic. It'll be a handy secondary resource ",
+      "thread_id": "thread-266067d8b6a2",
+      "thread_depth": 2,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-7d689980bb88",
+      "message_id": "<20101007204212.80948.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2010-10-07T16:42:12-04:00",
+      "subject": "[R-sig-teaching]  Download all package",
+      "subject_clean": "Download all package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Forwarded message:\n> From: Partha Sinha <pnsinha68 at gmail.com>\n> \n> Dear Sir\n> Is there a way I can download all the packages in one shot or I need to\n> download one by one and use them?\n\nThat sounds more like a browser question than an R teaching question\nbut I have done it using the Down Them All plug-in for Firefox. \n\n------->  First-time AP Stats. teacher?  Help is on the way! See\n\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n         \nRobert W. Hayden   phone (802) 334-1789  web site http://statland.org/      \nemail  bob statland.org  (add your own \"@\" and save me some spam)",
+      "body_snippet": "Forwarded message:\n> From: Partha Sinha <pnsinha68 at gmail.com>\n> \n> Dear Sir\n> Is there a way I can download all the packages in one shot or I need to\n> download one by one and use them?\n\nThat sound",
+      "thread_id": "thread-7d689980bb88",
+      "thread_depth": 0,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-6d4fd7f5d2b6",
+      "message_id": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC633E6AB00C@LP-EXMBVS10.CO.IHC.COM>",
+      "from_name": "Greg Snow",
+      "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
+      "date": "2010-10-07T14:46:57-06:00",
+      "subject": "[R-sig-teaching] Download all package",
+      "subject_clean": "Download all package",
+      "in_reply_to": "<20101007204212.80948.qmail@mv.mv.com>",
+      "references": [
+        "<20101007204212.80948.qmail@mv.mv.com>"
+      ],
+      "body_plain": "Within R you can set your mirror and your repositories then do:\n\n> install.packages(new.packages())\n\nThen go home for the weekend because it is going to take quite a while to download and install everything.\n\n-- \nGregory (Greg) L. Snow Ph.D.\nStatistical Data Center\nIntermountain Healthcare\ngreg.snow at imail.org\n801.408.8111\n\n\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-\n> bounces at r-project.org] On Behalf Of Robert W. Hayden\n> Sent: Thursday, October 07, 2010 2:42 PM\n> To: R-sig-teaching\n> Subject: [R-sig-teaching] Download all package\n> \n> Forwarded message:\n> > From: Partha Sinha <pnsinha68 at gmail.com>\n> >\n> > Dear Sir\n> > Is there a way I can download all the packages in one shot or I need\n> to\n> > download one by one and use them?\n> \n> That sounds more like a browser question than an R teaching question\n> but I have done it using the Down Them All plug-in for Firefox.\n> \n> ------->  First-time AP Stats. teacher?  Help is on the way! See\n> \n> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.h\n> tml\n> \n> Robert W. Hayden   phone (802) 334-1789  web site http://statland.org/\n> email  bob statland.org  (add your own \"@\" and save me some spam)\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Within R you can set your mirror and your repositories then do:\n\n> install.packages(new.packages())\n\nThen go home for the weekend because it is going to take quite a while to download and install ever",
+      "thread_id": "thread-7d689980bb88",
+      "thread_depth": 1,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-061c6ce078a0",
+      "message_id": "<20101008171409.75034.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2010-10-08T13:14:09-04:00",
+      "subject": "[R-sig-teaching] Download all package",
+      "subject_clean": "Download all package",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Forwarded message:\n> From: Greg Snow <Greg.Snow at imail.org>\n> \n> Within R you can set your mirror and your repositories then do:\n> \n> > install.packages(new.packages())\n> \n> Then go home for the weekend because it is going to take quite a while to d=\n> ownload and install everything.\n\nThat's more elegant than using Firefox with Down Them All but it seems\nto me which way to go depends on the situation.  (The original post\ndid not specify.) If you have R running on a machine connected to\nthe Internet and you want to INSTALL all packages for THAT version of\nR then Greg's solution does the trick.  My situation has been making\nthe packages available to machines running older versions of R and NOT\nconnected to the Internet.  (One reason for that situation is some\nWindows 98 machines that can't run the current version of R and are\nnot allowed on the Internet for security reasons.) \n\n------->  First-time AP Stats. teacher?  Help is on the way! See\n\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n         \nRobert W. Hayden   phone (802) 334-1789  web site http://statland.org/      \nemail  bob statland.org  (add your own \"@\" and save me some spam)",
+      "body_snippet": "Forwarded message:\n> From: Greg Snow <Greg.Snow at imail.org>\n> \n> Within R you can set your mirror and your repositories then do:\n> \n> > install.packages(new.packages())\n> \n> Then go home for the wee",
+      "thread_id": "thread-061c6ce078a0",
+      "thread_depth": 0,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-cb4eff3efe80",
+      "message_id": "<AANLkTinHck+HVQBya07V8wxYNt9gQD93D=10fjhy6B3Z@mail.gmail.com>",
+      "from_name": "G. Jay Kerns",
+      "from_email_hash": "ad83289c1ea8001776b4a92be9b5d571c4a1a4d9f964cc52380fe565be90da90",
+      "date": "2010-10-09T01:32:09-04:00",
+      "subject": "[R-sig-teaching] videos, lecture notes, etc.",
+      "subject_clean": "videos, lecture notes, etc.",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-SIG-teaching,\n\nI have opened up guest access to the Moodle course for STAT 3743:\nProbability and Statistics.  The URL is\n\nhttp://www.moodle.ysumathstat.org/\n\nThere a person will (cumulatively) find lecture notes, selected\nquizzes, exams, and video/screencasts of the daily recorded lectures.\n(And yes, it's all FREE.)  I mention it here because R is used\nliberally throughout and maybe some portion of it would be useful to\none of you or your students.  The textbook is IPSUR, so a person can\nreally get a front row seat to the whole thing in action.\n\nThe direct link to the videos, etc. is\n\nhttp://www.ysumathstat.org/faculty/kerns/video/\n\nThis is certainly work in progress and I haven't had time for things\nlike video polishing;  please overlook any embarrassing roughness\naround the edges.\n\nJay\n\nP.S.  Instructors would probably get the most mileage out of the\nRESOURCES subdirectory:\n\nhttp://www.ysumathstat.org/faculty/kerns/video/STAT3743/02-RESOURCES/\n\nP.P.S. There is another course shown on Moodle but it doesn't use R very much.\n\n\n\n***************************************************\nG. Jay Kerns, Ph.D.\nAssociate Professor\nDepartment of Mathematics & Statistics\nYoungstown State University\nYoungstown, OH 44555-0002 USA\nOffice: 1035 Cushwa Hall\nPhone: (330) 941-3310 Office (voice mail)\n-3302 Department\n-3170 FAX\nVoIP: gjkerns at ekiga.net\nE-mail: gkerns at ysu.edu\nhttp://people.ysu.edu/~gkerns/",
+      "body_snippet": "Dear R-SIG-teaching,\n\nI have opened up guest access to the Moodle course for STAT 3743:\nProbability and Statistics.  The URL is\n\nhttp://www.moodle.ysumathstat.org/\n\nThere a person will (cumulatively) ",
+      "thread_id": "thread-cb4eff3efe80",
+      "thread_depth": 0,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-51f211742aba",
+      "message_id": "<4CC5EABC.4080404@carleton.edu>",
+      "from_name": "Laura Chihara",
+      "from_email_hash": "bf38fe4d1a78c3a1e5a1c7942e55291ae947a968d4544d52590d5c796db45253",
+      "date": "2010-10-25T15:38:20-05:00",
+      "subject": "[R-sig-teaching] prop.test in R",
+      "subject_clean": "prop.test in R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nI have a question about prop.test in R:\n\nI teach students the score confidence\ninterval for proportions (also called\nWilson or Wilson score interval).\n\nprop.test(,..., correct=FALSE) gives this\ninterval.\n\nThe default uses a continuity correction.\nWhen should we use one over the other?\nIs it worth going over this in class? Why\nis correct=TRUE the default?\n\nThanks for any pedagogical guidance here!\n\n-- Laura\n\n*******************************************\nLaura Chihara\nProfessor of Mathematics   507-222-4065 (office)\nDept of Mathematics        507-222-4312 (fax)\nCarleton College\n1 North College Street\nNorthfield MN 55057",
+      "body_snippet": "Hi,\n\nI have a question about prop.test in R:\n\nI teach students the score confidence\ninterval for proportions (also called\nWilson or Wilson score interval).\n\nprop.test(,..., correct=FALSE) gives this\ni",
+      "thread_id": "thread-51f211742aba",
+      "thread_depth": 0,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-ab2add047eeb",
+      "message_id": "<AANLkTik6EzJQrDuafWKGOPAwk7eyqHrrLKfgaicRaSK1@mail.gmail.com>",
+      "from_name": "Ralph O'Brien, PhD",
+      "from_email_hash": "b130a5a0d521b68ae30b5e6f64ca799ce8345d72ca13a6628f755e22cc52c169",
+      "date": "2010-10-25T17:02:02-04:00",
+      "subject": "[R-sig-teaching] prop.test in R",
+      "subject_clean": "prop.test in R",
+      "in_reply_to": "<4CC5EABC.4080404@carleton.edu>",
+      "references": [
+        "<4CC5EABC.4080404@carleton.edu>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101025/082cebc8/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101025/082cebc8/attachment.pl>",
+      "thread_id": "thread-51f211742aba",
+      "thread_depth": 1,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-6a899f97f5c8",
+      "message_id": "<4CC5F368.8090102@carleton.edu>",
+      "from_name": "Laura Chihara",
+      "from_email_hash": "bf38fe4d1a78c3a1e5a1c7942e55291ae947a968d4544d52590d5c796db45253",
+      "date": "2010-10-25T16:15:20-05:00",
+      "subject": "[R-sig-teaching] prop.test in R",
+      "subject_clean": "prop.test in R",
+      "in_reply_to": "<AANLkTik6EzJQrDuafWKGOPAwk7eyqHrrLKfgaicRaSK1@mail.gmail.com>",
+      "references": [
+        "<4CC5EABC.4080404@carleton.edu>",
+        "<AANLkTik6EzJQrDuafWKGOPAwk7eyqHrrLKfgaicRaSK1@mail.gmail.com>"
+      ],
+      "body_plain": "Yes, thank you for this reference. But according to\nthis article, the score is better than continuity\ncorrection, so why is continuity correction the default\nwith prop.test?\n\n-Laura\n\nOn 10/25/2010 4:02 PM, Ralph O'Brien, PhD wrote:\n> I suggest:\n>\n> A. Agresti and B. A. Coull. Approximate is better than ?exact? for\n> interval estimation of binomial proportions. The American Statistician,\n> 52(2):119?126, 1998.\n>\n>\n>\n>\n>\n>\n>\n> On Mon, Oct 25, 2010 at 4:38 PM, Laura Chihara <lchihara at carleton.edu\n> <mailto:lchihara at carleton.edu>> wrote:\n>\n>     Hi,\n>\n>     I have a question about prop.test in R:\n>\n>     I teach students the score confidence\n>     interval for proportions (also called\n>     Wilson or Wilson score interval).\n>\n>     prop.test(,..., correct=FALSE) gives this\n>     interval.\n>\n>     The default uses a continuity correction.\n>     When should we use one over the other?\n>     Is it worth going over this in class? Why\n>     is correct=TRUE the default?\n>\n>     Thanks for any pedagogical guidance here!\n>\n>     -- Laura\n>\n>     *******************************************\n>     Laura Chihara\n>     Professor of Mathematics   507-222-4065 (office)\n>     Dept of Mathematics        507-222-4312 (fax)\n>     Carleton College\n>     1 North College Street\n>     Northfield MN 55057\n>\n>     _______________________________________________\n>     R-sig-teaching at r-project.org <mailto:R-sig-teaching at r-project.org>\n>     mailing list\n>     https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n>\n>\n> --\n> Ralph O'Brien, PhD\n> Professor, Dept of Epidemiology and Biostatistics\n> Case Western Reserve University\n> Office: 216.368.1927\n> Cell: 216.312.3203\n\n-- \n*******************************************\nLaura Chihara\nProfessor of Mathematics   507-222-4065 (office)\nDept of Mathematics        507-222-4312 (fax)\nCarleton College\n1 North College Street\nNorthfield MN 55057",
+      "body_snippet": "Yes, thank you for this reference. But according to\nthis article, the score is better than continuity\ncorrection, so why is continuity correction the default\nwith prop.test?\n\n-Laura\n\nOn 10/25/2010 4:0",
+      "thread_id": "thread-51f211742aba",
+      "thread_depth": 2,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-d0a86e0418c1",
+      "message_id": "<81EBF878-E1F3-4419-8117-9CE01CC0FB68@stat.ucla.edu>",
+      "from_name": "Ian Fellows",
+      "from_email_hash": "aa2c780fbe5343d29316529dbad2b61e2a8735d64e323f572a06de636ac36465",
+      "date": "2010-10-25T14:20:59-07:00",
+      "subject": "[R-sig-teaching] prop.test in R",
+      "subject_clean": "prop.test in R",
+      "in_reply_to": "<4CC5EABC.4080404@carleton.edu>",
+      "references": [
+        "<4CC5EABC.4080404@carleton.edu>"
+      ],
+      "body_plain": "Laura,\n\nI would make the argument that continuity correction should not be used in practice, or in the classroom. Continuity corrected intervals are, on average, to wide. This might be defensible if they guaranteed their coverage level (as 'exact' distribution based intervals do), but due to the fact that they are asymptotic, they may have coverage less than the nominal level.\n\nThe Agresti reference Ralph sent is an excellent article. I highly recommend it. I find it helpful to categorize discrete tests on two axes. conservative vs. approximate, and asymptotic vs distribution based. Conservative tests attempt to keep type 1 error less than the nominal level, and approximate tests attempt to keep the error near its nominal level.\n\n\t\t\t\tAsymptotic\t\t\t\tDistribution based\nConservative\tContinuity Corrected\t\tStandard 'Exact' test\n\nApproximate\t\tStandard Asymptotic\t\tMid p-value\n\n\n\nI would also be interested to hear why the default it correct=TRUE. Perhaps it is historical.\n\nIan\n\nOn Oct 25, 2010, at 1:38 PM, Laura Chihara wrote:\n\n> Hi,\n> \n> I have a question about prop.test in R:\n> \n> I teach students the score confidence\n> interval for proportions (also called\n> Wilson or Wilson score interval).\n> \n> prop.test(,..., correct=FALSE) gives this\n> interval.\n> \n> The default uses a continuity correction.\n> When should we use one over the other?\n> Is it worth going over this in class? Why\n> is correct=TRUE the default?\n> \n> Thanks for any pedagogical guidance here!\n> \n> -- Laura\n> \n> *******************************************\n> Laura Chihara\n> Professor of Mathematics   507-222-4065 (office)\n> Dept of Mathematics        507-222-4312 (fax)\n> Carleton College\n> 1 North College Street\n> Northfield MN 55057\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_snippet": "Laura,\n\nI would make the argument that continuity correction should not be used in practice, or in the classroom. Continuity corrected intervals are, on average, to wide. This might be defensible if t",
+      "thread_id": "thread-51f211742aba",
+      "thread_depth": 1,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-0509c5a7d399",
+      "message_id": "<20101025230517.GA12078@reed.edu>",
+      "from_name": "Albyn Jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2010-10-25T16:05:17-07:00",
+      "subject": "[R-sig-teaching] prop.test in R",
+      "subject_clean": "prop.test in R",
+      "in_reply_to": "<4CC5F368.8090102@carleton.edu>",
+      "references": [
+        "<4CC5EABC.4080404@carleton.edu>",
+        "<AANLkTik6EzJQrDuafWKGOPAwk7eyqHrrLKfgaicRaSK1@mail.gmail.com>",
+        "<4CC5F368.8090102@carleton.edu>"
+      ],
+      "body_plain": "I don't know, the help file is uninformative.  I'd guess the answer is\n\"the author wrote it that way\".  Other R functions like t.test include\nsimilar unfortunate (to me) default choices, in that case\nvar.equal=FALSE (ie the Welch test) is the default.\n\nalbyn\n\nOn Mon, Oct 25, 2010 at 04:15:20PM -0500, Laura Chihara wrote:\n> Yes, thank you for this reference. But according to\n> this article, the score is better than continuity\n> correction, so why is continuity correction the default\n> with prop.test?\n> \n> -Laura\n> \n> On 10/25/2010 4:02 PM, Ralph O'Brien, PhD wrote:\n> >I suggest:\n> >\n> >A. Agresti and B. A. Coull. Approximate is better than ?exact? for\n> >interval estimation of binomial proportions. The American Statistician,\n> >52(2):119?126, 1998.\n> >\n> >\n> >\n> >\n> >\n> >\n> >\n> >On Mon, Oct 25, 2010 at 4:38 PM, Laura Chihara <lchihara at carleton.edu\n> ><mailto:lchihara at carleton.edu>> wrote:\n> >\n> >    Hi,\n> >\n> >    I have a question about prop.test in R:\n> >\n> >    I teach students the score confidence\n> >    interval for proportions (also called\n> >    Wilson or Wilson score interval).\n> >\n> >    prop.test(,..., correct=FALSE) gives this\n> >    interval.\n> >\n> >    The default uses a continuity correction.\n> >    When should we use one over the other?\n> >    Is it worth going over this in class? Why\n> >    is correct=TRUE the default?\n> >\n> >    Thanks for any pedagogical guidance here!\n> >\n> >    -- Laura\n> >\n> >    *******************************************\n> >    Laura Chihara\n> >    Professor of Mathematics   507-222-4065 (office)\n> >    Dept of Mathematics        507-222-4312 (fax)\n> >    Carleton College\n> >    1 North College Street\n> >    Northfield MN 55057\n> >\n> >    _______________________________________________\n> >    R-sig-teaching at r-project.org <mailto:R-sig-teaching at r-project.org>\n> >    mailing list\n> >    https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >\n> >\n> >\n> >\n> >--\n> >Ralph O'Brien, PhD\n> >Professor, Dept of Epidemiology and Biostatistics\n> >Case Western Reserve University\n> >Office: 216.368.1927\n> >Cell: 216.312.3203\n> \n> -- \n> *******************************************\n> Laura Chihara\n> Professor of Mathematics   507-222-4065 (office)\n> Dept of Mathematics        507-222-4312 (fax)\n> Carleton College\n> 1 North College Street\n> Northfield MN 55057\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n\n-- \nAlbyn Jones\nReed College\njones at reed.edu",
+      "body_snippet": "I don't know, the help file is uninformative.  I'd guess the answer is\n\"the author wrote it that way\".  Other R functions like t.test include\nsimilar unfortunate (to me) default choices, in that case\n",
+      "thread_id": "thread-51f211742aba",
+      "thread_depth": 3,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-de592cfca5e0",
+      "message_id": "<ED9D2250-1275-4E46-8F63-75CDC383287B@stat.ucla.edu>",
+      "from_name": "Ian Fellows",
+      "from_email_hash": "aa2c780fbe5343d29316529dbad2b61e2a8735d64e323f572a06de636ac36465",
+      "date": "2010-10-25T16:57:24-07:00",
+      "subject": "[R-sig-teaching] prop.test in R",
+      "subject_clean": "prop.test in R",
+      "in_reply_to": "<20101025230517.GA12078@reed.edu>",
+      "references": [
+        "<4CC5EABC.4080404@carleton.edu>",
+        "<AANLkTik6EzJQrDuafWKGOPAwk7eyqHrrLKfgaicRaSK1@mail.gmail.com>",
+        "<4CC5F368.8090102@carleton.edu>",
+        "<20101025230517.GA12078@reed.edu>"
+      ],
+      "body_plain": "In the case of the t.test, having the default be var.equal=TRUE is the right way to go. There is little to no power lost by using the welch test, and the assumption of equal variance can be difficult to assess. For this reason, many introductory text books have now banished the equal variance t-test from their chapters (e.g. Moore's The Basic Practice of Statistics).\n\nIan\n\n\nOn Oct 25, 2010, at 4:05 PM, Albyn Jones wrote:\n\n> I don't know, the help file is uninformative.  I'd guess the answer is\n> \"the author wrote it that way\".  Other R functions like t.test include\n> similar unfortunate (to me) default choices, in that case\n> var.equal=FALSE (ie the Welch test) is the default.\n> \n> albyn\n> \n> On Mon, Oct 25, 2010 at 04:15:20PM -0500, Laura Chihara wrote:\n>> Yes, thank you for this reference. But according to\n>> this article, the score is better than continuity\n>> correction, so why is continuity correction the default\n>> with prop.test?\n>> \n>> -Laura\n>> \n>> On 10/25/2010 4:02 PM, Ralph O'Brien, PhD wrote:\n>>> I suggest:\n>>> \n>>> A. Agresti and B. A. Coull. Approximate is better than ?exact? for\n>>> interval estimation of binomial proportions. The American Statistician,\n>>> 52(2):119?126, 1998.\n>>> \n>>> \n>>> \n>>> \n>>> \n>>> \n>>> \n>>> On Mon, Oct 25, 2010 at 4:38 PM, Laura Chihara <lchihara at carleton.edu\n>>> <mailto:lchihara at carleton.edu>> wrote:\n>>> \n>>>   Hi,\n>>> \n>>>   I have a question about prop.test in R:\n>>> \n>>>   I teach students the score confidence\n>>>   interval for proportions (also called\n>>>   Wilson or Wilson score interval).\n>>> \n>>>   prop.test(,..., correct=FALSE) gives this\n>>>   interval.\n>>> \n>>>   The default uses a continuity correction.\n>>>   When should we use one over the other?\n>>>   Is it worth going over this in class? Why\n>>>   is correct=TRUE the default?\n>>> \n>>>   Thanks for any pedagogical guidance here!\n>>> \n>>>   -- Laura\n>>> \n>>>   *******************************************\n>>>   Laura Chihara\n>>>   Professor of Mathematics   507-222-4065 (office)\n>>>   Dept of Mathematics        507-222-4312 (fax)\n>>>   Carleton College\n>>>   1 North College Street\n>>>   Northfield MN 55057\n>>> \n>>>   _______________________________________________\n>>>   R-sig-teaching at r-project.org <mailto:R-sig-teaching at r-project.org>\n>>>   mailing list\n>>>   https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>> \n>>> \n>>> \n>>> \n>>> --\n>>> Ralph O'Brien, PhD\n>>> Professor, Dept of Epidemiology and Biostatistics\n>>> Case Western Reserve University\n>>> Office: 216.368.1927\n>>> Cell: 216.312.3203\n>> \n>> -- \n>> *******************************************\n>> Laura Chihara\n>> Professor of Mathematics   507-222-4065 (office)\n>> Dept of Mathematics        507-222-4312 (fax)\n>> Carleton College\n>> 1 North College Street\n>> Northfield MN 55057\n>> \n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>> \n> \n> -- \n> Albyn Jones\n> Reed College\n> jones at reed.edu\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "In the case of the t.test, having the default be var.equal=TRUE is the right way to go. There is little to no power lost by using the welch test, and the assumption of equal variance can be difficult ",
+      "thread_id": "thread-51f211742aba",
+      "thread_depth": 4,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-124dc68a8949",
+      "message_id": "<20101025185126.1753346v5mzgdqn2@webmail.reed.edu>",
+      "from_name": "Albyn Jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2010-10-25T18:51:26-07:00",
+      "subject": "[R-sig-teaching] prop.test in R",
+      "subject_clean": "prop.test in R",
+      "in_reply_to": "<ED9D2250-1275-4E46-8F63-75CDC383287B@stat.ucla.edu>",
+      "references": [
+        "<4CC5EABC.4080404@carleton.edu>",
+        "<AANLkTik6EzJQrDuafWKGOPAwk7eyqHrrLKfgaicRaSK1@mail.gmail.com>",
+        "<4CC5F368.8090102@carleton.edu>",
+        "<20101025230517.GA12078@reed.edu>",
+        "<ED9D2250-1275-4E46-8F63-75CDC383287B@stat.ucla.edu>"
+      ],
+      "body_plain": "Exactly - elementary texts and methods books recommend the welch test  \nfor the reason you mention.  Curiously, those same texts recommend  \nusing anova and regression without automatically correcting for the  \npossibility of non-constant variance.  Why is the case of comparing  \ntwo means different from 3?  Those same books will tell you that anova  \nis pretty robust to non-constant variance.  well, the two sample  \nt-test is anova.\n\nI don't use the welch test except as a conscious decision: ie I really  \nwant to compare the means while suspecting that the variances differ.   \nGenerally people are using the t test to certify that two populations  \nare different.  If the variances are wildly different, that may be  \nmuch more important than a difference in means.  in fact, to test for  \na difference in means when the variances are wildly different is  \nalmost always substantively silly.   There was a great example a few  \nyears ago from a psychiatric journal, comparing two medications, where  \nthe investigators did a t-test for the means when one distribution was  \nunimodal and the other was bi-modal; there was no statistically  \nsignificant difference in the means, but there was a really important  \ndifference in the distributions.  The automatic use of the welch test  \nmakes you feel that you are protected against Bad Things, when you  \naren't.\n\nalbyn\n\nQuoting Ian Fellows <ian.fellows at stat.ucla.edu>:\n\n> In the case of the t.test, having the default be var.equal=TRUE is  \n> the right way to go. There is little to no power lost by using the  \n> welch test, and the assumption of equal variance can be difficult to  \n> assess. For this reason, many introductory text books have now  \n> banished the equal variance t-test from their chapters (e.g. Moore's  \n> The Basic Practice of Statistics).\n>\n> Ian\n>\n>\n> On Oct 25, 2010, at 4:05 PM, Albyn Jones wrote:\n>\n>> I don't know, the help file is uninformative.  I'd guess the answer is\n>> \"the author wrote it that way\".  Other R functions like t.test include\n>> similar unfortunate (to me) default choices, in that case\n>> var.equal=FALSE (ie the Welch test) is the default.\n>>\n>> albyn\n>>\n>> On Mon, Oct 25, 2010 at 04:15:20PM -0500, Laura Chihara wrote:\n>>> Yes, thank you for this reference. But according to\n>>> this article, the score is better than continuity\n>>> correction, so why is continuity correction the default\n>>> with prop.test?\n>>>\n>>> -Laura\n>>>\n>>> On 10/25/2010 4:02 PM, Ralph O'Brien, PhD wrote:\n>>>> I suggest:\n>>>>\n>>>> A. Agresti and B. A. Coull. Approximate is better than ?exact? for\n>>>> interval estimation of binomial proportions. The American Statistician,\n>>>> 52(2):119?126, 1998.\n>>>>\n>>>>\n>>>>\n>>>>\n>>>>\n>>>>\n>>>>\n>>>> On Mon, Oct 25, 2010 at 4:38 PM, Laura Chihara <lchihara at carleton.edu\n>>>> <mailto:lchihara at carleton.edu>> wrote:\n>>>>\n>>>>   Hi,\n>>>>\n>>>>   I have a question about prop.test in R:\n>>>>\n>>>>   I teach students the score confidence\n>>>>   interval for proportions (also called\n>>>>   Wilson or Wilson score interval).\n>>>>\n>>>>   prop.test(,..., correct=FALSE) gives this\n>>>>   interval.\n>>>>\n>>>>   The default uses a continuity correction.\n>>>>   When should we use one over the other?\n>>>>   Is it worth going over this in class? Why\n>>>>   is correct=TRUE the default?\n>>>>\n>>>>   Thanks for any pedagogical guidance here!\n>>>>\n>>>>   -- Laura\n>>>>\n>>>>   *******************************************\n>>>>   Laura Chihara\n>>>>   Professor of Mathematics   507-222-4065 (office)\n>>>>   Dept of Mathematics        507-222-4312 (fax)\n>>>>   Carleton College\n>>>>   1 North College Street\n>>>>   Northfield MN 55057\n>>>>\n>>>>   _______________________________________________\n>>>>   R-sig-teaching at r-project.org <mailto:R-sig-teaching at r-project.org>\n>>>>   mailing list\n>>>>   https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>>>\n>>>>\n>>>>\n>>>>\n>>>> --\n>>>> Ralph O'Brien, PhD\n>>>> Professor, Dept of Epidemiology and Biostatistics\n>>>> Case Western Reserve University\n>>>> Office: 216.368.1927\n>>>> Cell: 216.312.3203\n>>>\n>>> --\n>>> *******************************************\n>>> Laura Chihara\n>>> Professor of Mathematics   507-222-4065 (office)\n>>> Dept of Mathematics        507-222-4312 (fax)\n>>> Carleton College\n>>> 1 North College Street\n>>> Northfield MN 55057\n>>>\n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>>\n>>\n>> --\n>> Albyn Jones\n>> Reed College\n>> jones at reed.edu\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n>",
+      "body_snippet": "Exactly - elementary texts and methods books recommend the welch test  \nfor the reason you mention.  Curiously, those same texts recommend  \nusing anova and regression without automatically correcting",
+      "thread_id": "thread-51f211742aba",
+      "thread_depth": 5,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-5b15fc9c7377",
+      "message_id": "<9064522880125945B98983BBAECBA1CC0101BD32@exchsrv001.ebs.local>",
+      "from_name": "Adams, Zeno",
+      "from_email_hash": "048089c8b19ceb4b811b8f1dce71539c6059bef3abd322b112c05f02d424e2a0",
+      "date": "2010-10-26T11:42:39+02:00",
+      "subject": "[R-sig-teaching] prop.test in R",
+      "subject_clean": "prop.test in R",
+      "in_reply_to": null,
+      "references": [
+        "<4CC5EABC.4080404@carleton.edu>",
+        "<AANLkTik6EzJQrDuafWKGOPAwk7eyqHrrLKfgaicRaSK1@mail.gmail.com>",
+        "<4CC5F368.8090102@carleton.edu>",
+        "<20101025230517.GA12078@reed.edu>",
+        "<ED9D2250-1275-4E46-8F63-75CDC383287B@stat.ucla.edu>",
+        "<20101025185126.1753346v5mzgdqn2@webmail.reed.edu>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101026/85b1c39e/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101026/85b1c39e/attachment.pl>",
+      "thread_id": "thread-51f211742aba",
+      "thread_depth": 6,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-54638acd1e8e",
+      "message_id": "<AANLkTimpKEhe3ydARMkT7ekerYRG3HsoVS=1N+0P6z64@mail.gmail.com>",
+      "from_name": "Douglas Bates",
+      "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
+      "date": "2010-10-26T07:40:51-05:00",
+      "subject": "[R-sig-teaching] prop.test in R",
+      "subject_clean": "prop.test in R",
+      "in_reply_to": "<9064522880125945B98983BBAECBA1CC0101BD32@exchsrv001.ebs.local>",
+      "references": [
+        "<4CC5EABC.4080404@carleton.edu>",
+        "<AANLkTik6EzJQrDuafWKGOPAwk7eyqHrrLKfgaicRaSK1@mail.gmail.com>",
+        "<4CC5F368.8090102@carleton.edu>",
+        "<20101025230517.GA12078@reed.edu>",
+        "<ED9D2250-1275-4E46-8F63-75CDC383287B@stat.ucla.edu>",
+        "<20101025185126.1753346v5mzgdqn2@webmail.reed.edu>",
+        "<9064522880125945B98983BBAECBA1CC0101BD32@exchsrv001.ebs.local>"
+      ],
+      "body_plain": "On Tue, Oct 26, 2010 at 4:42 AM, Adams, Zeno <Zeno.Adams at ebs.edu> wrote:\n> This is an interesting discussion. Concerning the right choice and computation of t-tests there is still one point that is unclear to me: In the Welch t-test we have a difference in the numerator and a standard deviation of a difference in the denominator. Why then is the standard deviation of the difference not computed correctly, i.e. why is the covariance between X and Y not taken into account?\n>\n> For example using the sleep data:\n>\n> data(sleep)\n> means <- tapply(sleep$extra,sleep$group,mean) ; means\n> vars <- tapply(sleep$extra,sleep$group,var) ; vars\n>\n> sd.welch <- sqrt(vars[1]/10 + vars[2]/10) ; sd.welch\n> #in sd.welch the covariance is ignored\n>\n> t.welch <- (means[1]-means[2])/sd.welch ; t.welch\n>\n> #verify with R-built-in t.test function:\n> t.test(extra ~ group, data = sleep)\n>\n>\n> However, the correlation between sleep$extra[sleep$group == 1] and sleep$extra[sleep$group == 2] is relatively high:\n>\n> cor(sleep$extra[sleep$group == 1],sleep$extra[sleep$group == 2])\n>\n> Souldn?t the correct standard deviation be?\n>\n> sd.paired <- sqrt(vars[1]/10 + vars[2]/10\n> ? ? ? ?-2*cov(sleep$extra[sleep$group == 1],sleep$extra[sleep$group == 2])/10) ; sd.paired\n>\n> ?as in the paired t-test???\n\nOnly if the order of the observations in each sample is fixed.  I\ndon't want to sound facetious but the important characteristic of the\nsamples in a paired t-test is that they are paired.  The first\nobservation in sample 1 is associated in some way with the first\nobservation in sample 2, say because they are observations on the same\nsubject or at the same location or ...\n\nIf there is no pairing then one of the samples could be rearranged\nwithout changing the other, thereby changing the covariance.\n\nBecause of the pairing the sample sizes in a paired t-test must be\nequal.  But a t-test for independent samples can be used when the\nsample sizes are unequal.  So, no, the t-test for independent samples\nis not a special case of the paired t-test.\n\n> In other words, isn?t the Welch t-test a special case of the paired t-test with both samples assumed to be uncorrelated? And shouldn?t we then teach only the paired t-test as the most general test in class?\n>\n> Thanks!\n>\n> Zeno\n>\n>\n>\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org on behalf of Albyn Jones\n> Sent: Tue 10/26/2010 3:51 AM\n> To: Ian Fellows\n> Cc: r-sig-teaching at r-project.org\n> Subject: Re: [R-sig-teaching] prop.test in R\n>\n> Exactly - elementary texts and methods books recommend the welch test\n> for the reason you mention. ?Curiously, those same texts recommend\n> using anova and regression without automatically correcting for the\n> possibility of non-constant variance. ?Why is the case of comparing\n> two means different from 3? ?Those same books will tell you that anova\n> is pretty robust to non-constant variance. ?well, the two sample\n> t-test is anova.\n>\n> I don't use the welch test except as a conscious decision: ie I really\n> want to compare the means while suspecting that the variances differ.\n> Generally people are using the t test to certify that two populations\n> are different. ?If the variances are wildly different, that may be\n> much more important than a difference in means. ?in fact, to test for\n> a difference in means when the variances are wildly different is\n> almost always substantively silly. ? There was a great example a few\n> years ago from a psychiatric journal, comparing two medications, where\n> the investigators did a t-test for the means when one distribution was\n> unimodal and the other was bi-modal; there was no statistically\n> significant difference in the means, but there was a really important\n> difference in the distributions. ?The automatic use of the welch test\n> makes you feel that you are protected against Bad Things, when you\n> aren't.\n>\n> albyn\n>\n> Quoting Ian Fellows <ian.fellows at stat.ucla.edu>:\n>\n>> In the case of the t.test, having the default be var.equal=TRUE is\n>> the right way to go. There is little to no power lost by using the\n>> welch test, and the assumption of equal variance can be difficult to\n>> assess. For this reason, many introductory text books have now\n>> banished the equal variance t-test from their chapters (e.g. Moore's\n>> The Basic Practice of Statistics).\n>>\n>> Ian\n>>\n>>\n>> On Oct 25, 2010, at 4:05 PM, Albyn Jones wrote:\n>>\n>>> I don't know, the help file is uninformative. ?I'd guess the answer is\n>>> \"the author wrote it that way\". ?Other R functions like t.test include\n>>> similar unfortunate (to me) default choices, in that case\n>>> var.equal=FALSE (ie the Welch test) is the default.\n>>>\n>>> albyn\n>>>\n>>> On Mon, Oct 25, 2010 at 04:15:20PM -0500, Laura Chihara wrote:\n>>>> Yes, thank you for this reference. But according to\n>>>> this article, the score is better than continuity\n>>>> correction, so why is continuity correction the default\n>>>> with prop.test?\n>>>>\n>>>> -Laura\n>>>>\n>>>> On 10/25/2010 4:02 PM, Ralph O'Brien, PhD wrote:\n>>>>> I suggest:\n>>>>>\n>>>>> A. Agresti and B. A. Coull. Approximate is better than \"exact\" for\n>>>>> interval estimation of binomial proportions. The American Statistician,\n>>>>> 52(2):119-126, 1998.\n>>>>>\n>>>>>\n>>>>>\n>>>>>\n>>>>>\n>>>>>\n>>>>>\n>>>>> On Mon, Oct 25, 2010 at 4:38 PM, Laura Chihara <lchihara at carleton.edu\n>>>>> <mailto:lchihara at carleton.edu>> wrote:\n>>>>>\n>>>>> ? Hi,\n>>>>>\n>>>>> ? I have a question about prop.test in R:\n>>>>>\n>>>>> ? I teach students the score confidence\n>>>>> ? interval for proportions (also called\n>>>>> ? Wilson or Wilson score interval).\n>>>>>\n>>>>> ? prop.test(,..., correct=FALSE) gives this\n>>>>> ? interval.\n>>>>>\n>>>>> ? The default uses a continuity correction.\n>>>>> ? When should we use one over the other?\n>>>>> ? Is it worth going over this in class? Why\n>>>>> ? is correct=TRUE the default?\n>>>>>\n>>>>> ? Thanks for any pedagogical guidance here!\n>>>>>\n>>>>> ? -- Laura\n>>>>>\n>>>>> ? *******************************************\n>>>>> ? Laura Chihara\n>>>>> ? Professor of Mathematics ? 507-222-4065 (office)\n>>>>> ? Dept of Mathematics ? ? ? ?507-222-4312 (fax)\n>>>>> ? Carleton College\n>>>>> ? 1 North College Street\n>>>>> ? Northfield MN 55057\n>>>>>\n>>>>> ? _______________________________________________\n>>>>> ? R-sig-teaching at r-project.org <mailto:R-sig-teaching at r-project.org>\n>>>>> ? mailing list\n>>>>> ? https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>>>>\n>>>>>\n>>>>>\n>>>>>\n>>>>> --\n>>>>> Ralph O'Brien, PhD\n>>>>> Professor, Dept of Epidemiology and Biostatistics\n>>>>> Case Western Reserve University\n>>>>> Office: 216.368.1927\n>>>>> Cell: 216.312.3203\n>>>>\n>>>> --\n>>>> *******************************************\n>>>> Laura Chihara\n>>>> Professor of Mathematics ? 507-222-4065 (office)\n>>>> Dept of Mathematics ? ? ? ?507-222-4312 (fax)\n>>>> Carleton College\n>>>> 1 North College Street\n>>>> Northfield MN 55057\n>>>>\n>>>> _______________________________________________\n>>>> R-sig-teaching at r-project.org mailing list\n>>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>>>\n>>>\n>>> --\n>>> Albyn Jones\n>>> Reed College\n>>> jones at reed.edu\n>>>\n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>>\n>>\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n>\n> EBS European Business School gemeinnuetzige GmbH, Universitaet fuer Wirtschaft und Recht i.Gr. - Amtsgericht Wiesbaden HRB 19951 - Umsatzsteuer-ID DE 113891213 Geschaeftsfuehrung: Prof. Dr. Christopher Jahns, ?President; Prof. Dr. Rolf Tilmes, Dean Business School; Sabine Fuchs, CMO; Prof. Dr. Dr. Gerrick Frhr. v. Hoyningen-Huene, Dean Law School; Verwaltungsrat: Dr. Hellmut K. Albrecht, Vorsitzender\n> ? ? ? ?[[alternative HTML version deleted]]\n>\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>",
+      "body_snippet": "On Tue, Oct 26, 2010 at 4:42 AM, Adams, Zeno <Zeno.Adams at ebs.edu> wrote:\n> This is an interesting discussion. Concerning the right choice and computation of t-tests there is still one point that is",
+      "thread_id": "thread-51f211742aba",
+      "thread_depth": 7,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-ca2405f6e0bf",
+      "message_id": "<4CC727B1.6040504@waikato.ac.nz>",
+      "from_name": "Murray Jorgensen",
+      "from_email_hash": "8e2ba5706dbbcc74561b819a2eba19d1d3d7cf60d5f0b85161a3f897f4206f3a",
+      "date": "2010-10-27T08:10:41+13:00",
+      "subject": "[R-sig-teaching] The pedagogy of the assignment operator",
+      "subject_clean": "The pedagogy of the assignment operator",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Greetings all,\n\nin my own R code I have used various forms of the R assignment operator \nat different times in my life. There are arguments for and against each \nchoice.\n\nA question I would like this sig is whether there are any specifically \nteaching reasons for preferring one form over another?\n\nA second question, mainly to clarify the first, is whether different \nforms might be preferred for different types of student?\n\nAwaiting responses with interest  -  Murray\n\n-- \nDr Murray Jorgensen      http://www.stats.waikato.ac.nz/Staff/maj.html\nDepartment of Statistics, University of Waikato, Hamilton, New Zealand\nEmail: maj at waikato.ac.nz    majorgensen at ihug.co.nz      Fax 7 838 4155\nPhone  +64 7 838 4773 wk    Home +64 7 825 0441   Mobile 021 0200 8350",
+      "body_snippet": "Greetings all,\n\nin my own R code I have used various forms of the R assignment operator \nat different times in my life. There are arguments for and against each \nchoice.\n\nA question I would like this ",
+      "thread_id": "thread-ca2405f6e0bf",
+      "thread_depth": 0,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-9b94ba284bc2",
+      "message_id": "<AANLkTi=mnyjHakyY53Fwju_uFxcdjx0wAEXWta5i4m9L@mail.gmail.com>",
+      "from_name": "Douglas Bates",
+      "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
+      "date": "2010-10-26T14:43:07-05:00",
+      "subject": "[R-sig-teaching] The pedagogy of the assignment operator",
+      "subject_clean": "The pedagogy of the assignment operator",
+      "in_reply_to": "<4CC727B1.6040504@waikato.ac.nz>",
+      "references": [
+        "<4CC727B1.6040504@waikato.ac.nz>"
+      ],
+      "body_plain": "Arguments in favor of using \"=\" as the assignment operator:\n - it is familiar to any students who have studied compiled languages\nlike C++ or Java or interpreted languages like Matlab, Perl, Python,\n...\n - it is easier to type than \"<-\"\n\nArguments in favor of using \"<-\"\n - \"<-\" is more general than \"=\".  They are almost but not quite\nequivalent and the case where they do differ is something I use\nfrequently.\n\nMore detail:\n\nI encourage students to use str() frequently to check the structure of\nthe data object that they are producing and make sure it corresponds\nto what they think it should be.  Often I wrap an assignment in a call\nto str() or to summary().  For example\n\nstr(read.csv(\"WRAP.csv\"))\nsummary(wrap <- within(read.csv(\"WRAP.csv\"),\n                   {\n                       DBID <- factor(DBID)\n                       VisNo <- factor(VisNo, labels=c(\"base\",\"follow\"))\n                       family <- factor(family)\n                       famhist <- factor(famhist, labels=c(\"N\",\"Y\"))\n                       apoe <- factor(apoe, labels=c(\"N\",\"Y\"))\n                       gender <- factor(gender, labels=c(\"M\",\"F\"))\n                       ed <- ordered(ed)\n                       race <- factor(race)\n                       tester <- factor(tester)\n                   }))\n\nThe first call to str is to check what variables are recorded as\nintegers and should be factors.  The call to within performs the\ndesired transformations following which the data frame is assigned to\nthe name \"wrap\" and summarized.  You can't write that as\n\nsummary(wrap = within(...\n\nbecause the \"=\" is taken to indicate a named argument, not assignment.\n\n\nOn Tue, Oct 26, 2010 at 2:10 PM, Murray Jorgensen <maj at waikato.ac.nz> wrote:\n> Greetings all,\n>\n> in my own R code I have used various forms of the R assignment operator at\n> different times in my life. There are arguments for and against each choice.\n>\n> A question I would like this sig is whether there are any specifically\n> teaching reasons for preferring one form over another?\n>\n> A second question, mainly to clarify the first, is whether different forms\n> might be preferred for different types of student?\n>\n> Awaiting responses with interest ?- ?Murray\n>\n> --\n> Dr Murray Jorgensen ? ? ?http://www.stats.waikato.ac.nz/Staff/maj.html\n> Department of Statistics, University of Waikato, Hamilton, New Zealand\n> Email: maj at waikato.ac.nz ? ?majorgensen at ihug.co.nz ? ? ?Fax 7 838 4155\n> Phone ?+64 7 838 4773 wk ? ?Home +64 7 825 0441 ? Mobile 021 0200 8350\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_snippet": "Arguments in favor of using \"=\" as the assignment operator:\n - it is familiar to any students who have studied compiled languages\nlike C++ or Java or interpreted languages like Matlab, Perl, Python,\n.",
+      "thread_id": "thread-ca2405f6e0bf",
+      "thread_depth": 1,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-4d5f08cb578c",
+      "message_id": "<20101026194430.68259.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2010-10-26T15:44:30-04:00",
+      "subject": "[R-sig-teaching]  The pedagogy of the assignment operator",
+      "subject_clean": "The pedagogy of the assignment operator",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Forwarded message:\n> From: Murray Jorgensen <maj at waikato.ac.nz>\n> \n> in my own R code I have used various forms of the R assignment operator \n> at different times in my life. There are arguments for and against each \n> choice.\n> \n> A question I would like this sig is whether there are any specifically \n> teaching reasons for preferring one form over another?\n> \n> A second question, mainly to clarify the first, is whether different \n> forms might be preferred for different types of student?\n\nI don't have a strong opinion but I think this was much debated long\nago in connection with other programming languages such as BASIC and\nPascal.  Some of that might be relevant.\n\n------->  First-time AP Stats. teacher?  Help is on the way! See\n\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n         \nRobert W. Hayden, P.O Box 450, North Troy, VT 05859 \nphone (802) 988-2587  web site http://statland.org/      \nemail  bob statland.org  (add your own \"@\" and save me some spam)",
+      "body_snippet": "Forwarded message:\n> From: Murray Jorgensen <maj at waikato.ac.nz>\n> \n> in my own R code I have used various forms of the R assignment operator \n> at different times in my life. There are arguments fo",
+      "thread_id": "thread-4d5f08cb578c",
+      "thread_depth": 0,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-e2b5970b382a",
+      "message_id": "<87k4l4g14d.fsf@kolob.sebmags.homelinux.org>",
+      "from_name": "Sebastian P. Luque",
+      "from_email_hash": "2cd4815ed8883e0c35c16bacf1be9d88d662c4a9f03492384d48d7b9ac92a1d5",
+      "date": "2010-10-26T15:17:22-05:00",
+      "subject": "[R-sig-teaching] The pedagogy of the assignment operator",
+      "subject_clean": "The pedagogy of the assignment operator",
+      "in_reply_to": null,
+      "references": [
+        "<4CC727B1.6040504@waikato.ac.nz>"
+      ],
+      "body_plain": "On Wed, 27 Oct 2010 08:10:41 +1300,\nMurray Jorgensen <maj at waikato.ac.nz> wrote:\n\n> Greetings all, in my own R code I have used various forms of the R\n> assignment operator at different times in my life. There are arguments\n> for and against each choice.\n\n> A question I would like this sig is whether there are any specifically\n> teaching reasons for preferring one form over another?\n\n> A second question, mainly to clarify the first, is whether different\n> forms might be preferred for different types of student?\n\n> Awaiting responses with interest\n\nPersonally I find the most compelling reason to get into the habit of\nusing \"<-\" for assignments as early as possible is that it has a single\nmeaning, whereas \"=\" has two different meanings as others have pointed\nout.  It makes code a lot cleaner and easier to read because assignments\nreadily stand-out from parts where a value is being given to an\nargument.  Although it might be easier for some new users to read and\ntype \"=\" for assignments, it blurs the distinction between the two\ndifferent meanings for \"=\".  Because these different meanings depend on\nthe context, that's one more thing for a user to keep in mind.\n\n-- \nSeb",
+      "body_snippet": "On Wed, 27 Oct 2010 08:10:41 +1300,\nMurray Jorgensen <maj at waikato.ac.nz> wrote:\n\n> Greetings all, in my own R code I have used various forms of the R\n> assignment operator at different times in my ",
+      "thread_id": "thread-ca2405f6e0bf",
+      "thread_depth": 1,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-eb8002913408",
+      "message_id": "<c2f1fe52882a641de41802b5dec86a0f.squirrel@mail.stat.ucla.edu>",
+      "from_name": "ian.fellows at stat.ucla.edu",
+      "from_email_hash": "aa2c780fbe5343d29316529dbad2b61e2a8735d64e323f572a06de636ac36465",
+      "date": "2010-10-26T14:07:37-07:00",
+      "subject": "[R-sig-teaching] prop.test in R",
+      "subject_clean": "prop.test in R",
+      "in_reply_to": "<20101025185126.1753346v5mzgdqn2@webmail.reed.edu>",
+      "references": [
+        "<4CC5EABC.4080404@carleton.edu>",
+        "<AANLkTik6EzJQrDuafWKGOPAwk7eyqHrrLKfgaicRaSK1@mail.gmail.com>",
+        "<4CC5F368.8090102@carleton.edu>",
+        "<20101025230517.GA12078@reed.edu>",
+        "<ED9D2250-1275-4E46-8F63-75CDC383287B@stat.ucla.edu>",
+        "<20101025185126.1753346v5mzgdqn2@webmail.reed.edu>"
+      ],
+      "body_plain": "> Exactly - elementary texts and methods books recommend the welch test\n> for the reason you mention.  Curiously, those same texts recommend\n> using anova and regression without automatically correcting for the\n> possibility of non-constant variance.  Why is the case of comparing\n> two means different from 3?  Those same books will tell you that anova\n> is pretty robust to non-constant variance.  well, the two sample\n> t-test is anova.\n\nI agree with you that the presentation is unfortunate. Perhaps it has\nsomething to do with the fact that heteroskedastic consistent covariance\nmatrices (HCCM) for linear regression are a relatively recent development\n(by White and Huber in the early 80s), and initially they performed poorly\nfor small sample sizes. From a pedegogy standpoint the derivations of the\nformulas for HCCM are beyond the scope of an undergraduate course whereas\nthe equal variance versions can be easily derived.\n\nGiven more recent simulation studies showing the power and level of tests\nbased on HCCM are comparable with equal variance regression, and that\nthere is rarely any reason to apriori think that the variances are equal.\n\nThe anova is robust to violations so long as the group sizes are equal. if\nthey aren't then it isn't.\n\n>\n> I don't use the welch test except as a conscious decision: ie I really\n> want to compare the means while suspecting that the variances differ.\n> Generally people are using the t test to certify that two populations\n> are different.  If the variances are wildly different, that may be\n> much more important than a difference in means.  in fact, to test for\n> a difference in means when the variances are wildly different is\n> almost always substantively silly.   There was a great example a few\n> years ago from a psychiatric journal, comparing two medications, where\n> the investigators did a t-test for the means when one distribution was\n> unimodal and the other was bi-modal; there was no statistically\n> significant difference in the means, but there was a really important\n> difference in the distributions.  The automatic use of the welch test\n> makes you feel that you are protected against Bad Things, when you\n> aren't.\n\nYou may not suspect that the variances are different, but there is no\napriori reason to think that they are equal. Why should you assume\nsomething you have no reason to believe is true? In my experience, people\nare not using the t-test to say that two populations are in some general\nway different, but rather specifically that the means vary. This is an\nimportant question regardless of whether the variances are equal.\n\nIn your medication example, the shape of the two distributions was\ndifferent, but when making the decision of whether to approve a\nmedication, the more important question is whether the central tendency is\ndifferent. Does one medication on average improve the outcome more than\nanother. A secondary, though important, question is how variable the\noutcome is. The investigators made a correct inference (in stating no\nsignificant mean difference between the groups), but they missed an\nimportant question that they could have asked their data. This omission\nhas nothing to do with the t-test.\n\nUsing heteroskedastic robust methods DO protect against \"Bad Things.\" What\nthey don't do is reveal the existence  important data trends unrelated to\ntheir hypothesis of interest.\n\n\nIan",
+      "body_snippet": "> Exactly - elementary texts and methods books recommend the welch test\n> for the reason you mention.  Curiously, those same texts recommend\n> using anova and regression without automatically correcti",
+      "thread_id": "thread-51f211742aba",
+      "thread_depth": 6,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-ba3299cb9ad0",
+      "message_id": "<AANLkTikYS46kRUUXYsz0-TKHswq=eLL3RhNgs06HaWMO@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2010-10-26T19:59:18-04:00",
+      "subject": "[R-sig-teaching] The pedagogy of the assignment operator",
+      "subject_clean": "The pedagogy of the assignment operator",
+      "in_reply_to": "<4CC727B1.6040504@waikato.ac.nz>",
+      "references": [
+        "<4CC727B1.6040504@waikato.ac.nz>"
+      ],
+      "body_plain": "On Tue, Oct 26, 2010 at 3:10 PM, Murray Jorgensen <maj at waikato.ac.nz> wrote:\n> Greetings all,\n>\n> in my own R code I have used various forms of the R assignment operator at\n> different times in my life. There are arguments for and against each choice.\n>\n> A question I would like this sig is whether there are any specifically\n> teaching reasons for preferring one form over another?\n>\n> A second question, mainly to clarify the first, is whether different forms\n> might be preferred for different types of student?\n>\n> Awaiting responses with interest ?- ?Murray\n\n<- is less error prone so you always want to use that.  It might be\nargued that there are only a few cases where it matters but if you run\ninto one of those cases you will be sorry you did not standardize on\nusing <- .\n\n-- \nStatistics & Software Consulting\nGKX Group, GKX Associates Inc.\ntel: 1-877-GKX-GROUP\nemail: ggrothendieck at gmail.com",
+      "body_snippet": "On Tue, Oct 26, 2010 at 3:10 PM, Murray Jorgensen <maj at waikato.ac.nz> wrote:\n> Greetings all,\n>\n> in my own R code I have used various forms of the R assignment operator at\n> different times in my ",
+      "thread_id": "thread-ca2405f6e0bf",
+      "thread_depth": 1,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-0638270ca8dc",
+      "message_id": "<4CC77529.3010307@waikato.ac.nz>",
+      "from_name": "Murray Jorgensen",
+      "from_email_hash": "8e2ba5706dbbcc74561b819a2eba19d1d3d7cf60d5f0b85161a3f897f4206f3a",
+      "date": "2010-10-27T13:41:13+13:00",
+      "subject": "[R-sig-teaching] The pedagogy of the assignment operator",
+      "subject_clean": "The pedagogy of the assignment operator",
+      "in_reply_to": "<AANLkTikYS46kRUUXYsz0-TKHswq=eLL3RhNgs06HaWMO@mail.gmail.com>",
+      "references": [
+        "<4CC727B1.6040504@waikato.ac.nz>",
+        "<AANLkTikYS46kRUUXYsz0-TKHswq=eLL3RhNgs06HaWMO@mail.gmail.com>"
+      ],
+      "body_plain": "I can see that I am going to have to set a little context because I \nwanted to anchor the discussion in the teaching of statistics, and not \nof R as a language. I think the issues are different in the two. One big \nproblem in the former is that symbols can engender fear in the students.\n\nA few years ago I was taken off the teaching of a large first year \nbusiness statistics course. The clinching incident in this decision \nmentioned by my then chairperson was the use ( in a side-discussion ) of \nthe mathematical summation sign ( upper-case Greek sigma ).  I don't \nthink my chairperson was wrong. In the context of that course what I \nshould have done was illustrate my point with a column of data in an \nExcel spreadsheet.\n\nIf \\Sigma upsets business students with its suggestion of abstract \nmathematics, I think many other statistics students find <- somewhat \nsuggestive of abstract logic or theoretical computer science, favourite \nsubjects of an epsilonic proportion of the large classes I used to teach.\n\nI teach smaller classes now and my students come to me with previous \nexposure to Minitab which uses = for assignment. I use = both to avoid \nany of the symbol-fear that I spoke of, and also because they are used \nto how assignment works in Minitab. (For maybe half of the students, \nMinitab would be the only computer language that they would have met.)\n\nI will come clean and admit that I have another reason for not liking R.\nThe symbol <- suggests the right-to-left direction of the assignment \nstrongly and appropriately. But I read from left-to-right and I get \nstartled by an arrow coming at me from the unseen future and feel a \nsecond or two of cognitive dissonance.\n\nI actually rather like the right-pointing -> assignment as the \ndirections of reading and of computation agree. It would be a bit \nidiosyncratic to use it in code though. I find it useful in interactive \nR when I have typed and evaluated a complex expression and realise that \nI really should have assigned it to something. After the up-arrow key -> \nlets me do the needed assignment on the right of the expression.\n\nMurray\n\nOn 27/10/2010 12:59 p.m., Gabor Grothendieck wrote:\n> On Tue, Oct 26, 2010 at 3:10 PM, Murray Jorgensen<maj at waikato.ac.nz>  wrote:\n>> Greetings all,\n>>\n>> in my own R code I have used various forms of the R assignment operator at\n>> different times in my life. There are arguments for and against each choice.\n>>\n>> A question I would like this sig is whether there are any specifically\n>> teaching reasons for preferring one form over another?\n>>\n>> A second question, mainly to clarify the first, is whether different forms\n>> might be preferred for different types of student?\n>>\n>> Awaiting responses with interest  -  Murray\n>\n> <- is less error prone so you always want to use that.  It might be\n> argued that there are only a few cases where it matters but if you run\n> into one of those cases you will be sorry you did not standardize on\n> using<- .\n>\n\n\n-- \nDr Murray Jorgensen      http://www.stats.waikato.ac.nz/Staff/maj.html\nDepartment of Statistics, University of Waikato, Hamilton, New Zealand\nEmail: maj at waikato.ac.nz    majorgensen at ihug.co.nz      Fax 7 838 4155\nPhone  +64 7 838 4773 wk    Home +64 7 825 0441   Mobile 021 0200 8350",
+      "body_snippet": "I can see that I am going to have to set a little context because I \nwanted to anchor the discussion in the teaching of statistics, and not \nof R as a language. I think the issues are different in the",
+      "thread_id": "thread-ca2405f6e0bf",
+      "thread_depth": 2,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-e0afab4ce621",
+      "message_id": "<4CC77784.2020200@uq.edu.au>",
+      "from_name": "Simon Blomberg",
+      "from_email_hash": "6c7dda090419d9b6565b77a5e8c6e7e842cd8a8eeed9e19fcec3fce096932e07",
+      "date": "2010-10-27T10:51:16+10:00",
+      "subject": "[R-sig-teaching] The pedagogy of the assignment operator",
+      "subject_clean": "The pedagogy of the assignment operator",
+      "in_reply_to": "<4CC77529.3010307@waikato.ac.nz>",
+      "references": [
+        "<4CC727B1.6040504@waikato.ac.nz>",
+        "<AANLkTikYS46kRUUXYsz0-TKHswq=eLL3RhNgs06HaWMO@mail.gmail.com>",
+        "<4CC77529.3010307@waikato.ac.nz>"
+      ],
+      "body_plain": "I like the Venables and Ripley reasoning around the assignment \ncharacter: use different characters for assignment in different \nenvironments. So you have = for assignment inside function calls, <- for \nassignment in the current environment, and <<- for assignment in the \nglobal environment.\n\nCheers,\n\nSimon.\n\nOn 27/10/10 10:41, Murray Jorgensen wrote:\n> I can see that I am going to have to set a little context because I \n> wanted to anchor the discussion in the teaching of statistics, and not \n> of R as a language. I think the issues are different in the two. One \n> big problem in the former is that symbols can engender fear in the \n> students.\n>\n> A few years ago I was taken off the teaching of a large first year \n> business statistics course. The clinching incident in this decision \n> mentioned by my then chairperson was the use ( in a side-discussion ) \n> of the mathematical summation sign ( upper-case Greek sigma ).  I \n> don't think my chairperson was wrong. In the context of that course \n> what I should have done was illustrate my point with a column of data \n> in an Excel spreadsheet.\n>\n> If \\Sigma upsets business students with its suggestion of abstract \n> mathematics, I think many other statistics students find <- somewhat \n> suggestive of abstract logic or theoretical computer science, \n> favourite subjects of an epsilonic proportion of the large classes I \n> used to teach.\n>\n> I teach smaller classes now and my students come to me with previous \n> exposure to Minitab which uses = for assignment. I use = both to avoid \n> any of the symbol-fear that I spoke of, and also because they are used \n> to how assignment works in Minitab. (For maybe half of the students, \n> Minitab would be the only computer language that they would have met.)\n>\n> I will come clean and admit that I have another reason for not liking R.\n> The symbol <- suggests the right-to-left direction of the assignment \n> strongly and appropriately. But I read from left-to-right and I get \n> startled by an arrow coming at me from the unseen future and feel a \n> second or two of cognitive dissonance.\n>\n> I actually rather like the right-pointing -> assignment as the \n> directions of reading and of computation agree. It would be a bit \n> idiosyncratic to use it in code though. I find it useful in \n> interactive R when I have typed and evaluated a complex expression and \n> realise that I really should have assigned it to something. After the \n> up-arrow key -> lets me do the needed assignment on the right of the \n> expression.\n>\n> Murray\n>\n> On 27/10/2010 12:59 p.m., Gabor Grothendieck wrote:\n>> On Tue, Oct 26, 2010 at 3:10 PM, Murray Jorgensen<maj at waikato.ac.nz>  \n>> wrote:\n>>> Greetings all,\n>>>\n>>> in my own R code I have used various forms of the R assignment \n>>> operator at\n>>> different times in my life. There are arguments for and against each \n>>> choice.\n>>>\n>>> A question I would like this sig is whether there are any specifically\n>>> teaching reasons for preferring one form over another?\n>>>\n>>> A second question, mainly to clarify the first, is whether different \n>>> forms\n>>> might be preferred for different types of student?\n>>>\n>>> Awaiting responses with interest  -  Murray\n>>\n>> <- is less error prone so you always want to use that.  It might be\n>> argued that there are only a few cases where it matters but if you run\n>> into one of those cases you will be sorry you did not standardize on\n>> using<- .\n>>\n>\n>\n\n-- \nSimon Blomberg, BSc (Hons), PhD, MAppStat, AStat\nLecturer and Consultant Statistician\nSchool of Biological Sciences\nThe University of Queensland\nSt. Lucia Queensland 4072\nAustralia\nT: +61 7 3365 2506\nemail: S.Blomberg1_at_uq.edu.au\nhttp://www.uq.edu.au/~uqsblomb/\n\nPolicies:\n1.  I will NOT analyse your data for you.\n2.  Your deadline is your problem\n\nStatistics is the grammar of science - Karl Pearson.",
+      "body_snippet": "I like the Venables and Ripley reasoning around the assignment \ncharacter: use different characters for assignment in different \nenvironments. So you have = for assignment inside function calls, <- fo",
+      "thread_id": "thread-ca2405f6e0bf",
+      "thread_depth": 3,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-2e9a29580bb7",
+      "message_id": "<AANLkTik5LKd=R8HVzu-_cZgtL6Nc__O+QkbHbH2gsfuA@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2010-10-26T21:01:15-04:00",
+      "subject": "[R-sig-teaching] The pedagogy of the assignment operator",
+      "subject_clean": "The pedagogy of the assignment operator",
+      "in_reply_to": "<4CC77529.3010307@waikato.ac.nz>",
+      "references": [
+        "<4CC727B1.6040504@waikato.ac.nz>",
+        "<AANLkTikYS46kRUUXYsz0-TKHswq=eLL3RhNgs06HaWMO@mail.gmail.com>",
+        "<4CC77529.3010307@waikato.ac.nz>"
+      ],
+      "body_plain": "On Tue, Oct 26, 2010 at 8:41 PM, Murray Jorgensen <maj at waikato.ac.nz> wrote:\n> I can see that I am going to have to set a little context because I wanted\n> to anchor the discussion in the teaching of statistics, and not of R as a\n> language. I think the issues are different in the two. One big problem in\n> the former is that symbols can engender fear in the students.\n>\n> A few years ago I was taken off the teaching of a large first year business\n> statistics course. The clinching incident in this decision mentioned by my\n> then chairperson was the use ( in a side-discussion ) of the mathematical\n> summation sign ( upper-case Greek sigma ). ?I don't think my chairperson was\n> wrong. In the context of that course what I should have done was illustrate\n> my point with a column of data in an Excel spreadsheet.\n>\n> If \\Sigma upsets business students with its suggestion of abstract\n> mathematics, I think many other statistics students find <- somewhat\n> suggestive of abstract logic or theoretical computer science, favourite\n> subjects of an epsilonic proportion of the large classes I used to teach.\n>\n> I teach smaller classes now and my students come to me with previous\n> exposure to Minitab which uses = for assignment. I use = both to avoid any\n> of the symbol-fear that I spoke of, and also because they are used to how\n> assignment works in Minitab. (For maybe half of the students, Minitab would\n> be the only computer language that they would have met.)\n>\n> I will come clean and admit that I have another reason for not liking R.\n> The symbol <- suggests the right-to-left direction of the assignment\n> strongly and appropriately. But I read from left-to-right and I get startled\n> by an arrow coming at me from the unseen future and feel a second or two of\n> cognitive dissonance.\n>\n> I actually rather like the right-pointing -> assignment as the directions of\n> reading and of computation agree. It would be a bit idiosyncratic to use it\n> in code though. I find it useful in interactive R when I have typed and\n> evaluated a complex expression and realise that I really should have\n> assigned it to something. After the up-arrow key -> lets me do the needed\n> assignment on the right of the expression.\n>\n\nTo me = reminds me of equality and its easily confused with == whereas\n <- unambiguously means assignment.\n\n-> should not be taught. Its too weird and almost never appears in\ncode out there so its wasting people's time on trivia rather than\nfocusing them on the essentials.\n\nThe fact is that R involves programming and syntax and if they fear\nthat to the extent that it requires teaching bad practice then it\nmight be better to forget about R entirely and switch to something\nmore palatable driven by a GUI.  This might be some other software\nentirely or maybe Rcmdr or other GUI front end to R.\n\n\n-- \nStatistics & Software Consulting\nGKX Group, GKX Associates Inc.\ntel: 1-877-GKX-GROUP\nemail: ggrothendieck at gmail.com",
+      "body_snippet": "On Tue, Oct 26, 2010 at 8:41 PM, Murray Jorgensen <maj at waikato.ac.nz> wrote:\n> I can see that I am going to have to set a little context because I wanted\n> to anchor the discussion in the teaching ",
+      "thread_id": "thread-ca2405f6e0bf",
+      "thread_depth": 3,
+      "month": "2010-10"
+    },
+    {
+      "id": "msg-56eb4aa8b2ac",
+      "message_id": "<4CC78060.7030906@waikato.ac.nz>",
+      "from_name": "Murray Jorgensen",
+      "from_email_hash": "8e2ba5706dbbcc74561b819a2eba19d1d3d7cf60d5f0b85161a3f897f4206f3a",
+      "date": "2010-10-27T14:29:04+13:00",
+      "subject": "[R-sig-teaching] The pedagogy of the assignment operator",
+      "subject_clean": "The pedagogy of the assignment operator",
+      "in_reply_to": "<4CC77529.3010307@waikato.ac.nz>",
+      "references": [
+        "<4CC727B1.6040504@waikato.ac.nz>",
+        "<AANLkTikYS46kRUUXYsz0-TKHswq=eLL3RhNgs06HaWMO@mail.gmail.com>",
+        "<4CC77529.3010307@waikato.ac.nz>"
+      ],
+      "body_plain": "Woops! I meant \"for not liking <-\"  !\n\nOn 27/10/2010 1:41 p.m., Murray Jorgensen wrote:\n\n[...]\n\n> I will come clean and admit that I have another reason for not liking R.\n[...]\n\nMurrar",
+      "body_snippet": "Woops! I meant \"for not liking <-\"  !\n\nOn 27/10/2010 1:41 p.m., Murray Jorgensen wrote:\n\n[...]\n\n> I will come clean and admit that I have another reason for not liking R.\n[...]\n\nMurrar",
+      "thread_id": "thread-ca2405f6e0bf",
+      "thread_depth": 3,
+      "month": "2010-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-3568678adab6",
+      "subject": "plotting hypothesis of correlation t-test",
+      "message_count": 2,
+      "participants": [
+        "Liviu Andronic",
+        "RICHARD M. HEIBERGER"
+      ],
+      "started": "2010-10-01T01:10:34+03:00",
+      "last_reply": "2010-10-01T20:07:42-04:00",
+      "root_message_id": "msg-3568678adab6"
+    },
+    {
+      "id": "thread-e95a975367a8",
+      "subject": "plotting hypothesis of correlation t-test",
+      "message_count": 1,
+      "participants": [
+        "Liviu Andronic"
+      ],
+      "started": "2010-10-01T09:33:49+03:00",
+      "last_reply": "2010-10-01T09:33:49+03:00",
+      "root_message_id": "msg-e95a975367a8"
+    },
+    {
+      "id": "thread-8fdfe37b4f1e",
+      "subject": "Download all package",
+      "message_count": 2,
+      "participants": [
+        "Liviu Andronic",
+        "Partha Sinha"
+      ],
+      "started": "2010-10-01T14:22:00+05:30",
+      "last_reply": "2010-10-01T11:59:44+03:00",
+      "root_message_id": "msg-8fdfe37b4f1e"
+    },
+    {
+      "id": "thread-266067d8b6a2",
+      "subject": "data preprocessing resources",
+      "message_count": 5,
+      "participants": [
+        "Greg Snow",
+        "Ista Zahn",
+        "Tyler Smith"
+      ],
+      "started": "2010-10-01T16:08:47-04:00",
+      "last_reply": "2010-10-03T21:10:07-04:00",
+      "root_message_id": "msg-266067d8b6a2"
+    },
+    {
+      "id": "thread-7d689980bb88",
+      "subject": "Download all package",
+      "message_count": 2,
+      "participants": [
+        "Greg Snow",
+        "Robert W. Hayden"
+      ],
+      "started": "2010-10-07T16:42:12-04:00",
+      "last_reply": "2010-10-07T14:46:57-06:00",
+      "root_message_id": "msg-7d689980bb88"
+    },
+    {
+      "id": "thread-061c6ce078a0",
+      "subject": "Download all package",
+      "message_count": 1,
+      "participants": [
+        "Robert W. Hayden"
+      ],
+      "started": "2010-10-08T13:14:09-04:00",
+      "last_reply": "2010-10-08T13:14:09-04:00",
+      "root_message_id": "msg-061c6ce078a0"
+    },
+    {
+      "id": "thread-cb4eff3efe80",
+      "subject": "videos, lecture notes, etc.",
+      "message_count": 1,
+      "participants": [
+        "G. Jay Kerns"
+      ],
+      "started": "2010-10-09T01:32:09-04:00",
+      "last_reply": "2010-10-09T01:32:09-04:00",
+      "root_message_id": "msg-cb4eff3efe80"
+    },
+    {
+      "id": "thread-51f211742aba",
+      "subject": "prop.test in R",
+      "message_count": 10,
+      "participants": [
+        "Adams, Zeno",
+        "Albyn Jones",
+        "Douglas Bates",
+        "Ian Fellows",
+        "Laura Chihara",
+        "Ralph O'Brien, PhD",
+        "ian.fellows at stat.ucla.edu"
+      ],
+      "started": "2010-10-25T15:38:20-05:00",
+      "last_reply": "2010-10-26T14:07:37-07:00",
+      "root_message_id": "msg-51f211742aba"
+    },
+    {
+      "id": "thread-4d5f08cb578c",
+      "subject": "The pedagogy of the assignment operator",
+      "message_count": 1,
+      "participants": [
+        "Robert W. Hayden"
+      ],
+      "started": "2010-10-26T15:44:30-04:00",
+      "last_reply": "2010-10-26T15:44:30-04:00",
+      "root_message_id": "msg-4d5f08cb578c"
+    },
+    {
+      "id": "thread-ca2405f6e0bf",
+      "subject": "The pedagogy of the assignment operator",
+      "message_count": 8,
+      "participants": [
+        "Douglas Bates",
+        "Gabor Grothendieck",
+        "Murray Jorgensen",
+        "Sebastian P. Luque",
+        "Simon Blomberg"
+      ],
+      "started": "2010-10-27T08:10:41+13:00",
+      "last_reply": "2010-10-27T14:29:04+13:00",
+      "root_message_id": "msg-ca2405f6e0bf"
+    }
+  ]
+}

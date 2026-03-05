@@ -1,0 +1,90 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2011-10",
+  "messages": [
+    {
+      "id": "msg-c182191eaae1",
+      "message_id": "<1319977690.47335.YahooMailClassic@web162203.mail.bf1.yahoo.com>",
+      "from_name": "Ali Zanaty",
+      "from_email_hash": "65acd645f9ed74fc7721f9ea58469b32335ac44f193ffbf59b7c89913407d9ac",
+      "date": "2011-10-30T05:28:10-07:00",
+      "subject": "[R-sig-teaching] Comparing two regression lines",
+      "subject_clean": "Comparing two regression lines",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20111030/56c3d880/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20111030/56c3d880/attachment.pl>",
+      "thread_id": "thread-c182191eaae1",
+      "thread_depth": 0,
+      "month": "2011-10"
+    },
+    {
+      "id": "msg-0a87db1abcdf",
+      "message_id": "<1319981477.54624.YahooMailClassic@web162218.mail.bf1.yahoo.com>",
+      "from_name": "Ali Zanaty",
+      "from_email_hash": "65acd645f9ed74fc7721f9ea58469b32335ac44f193ffbf59b7c89913407d9ac",
+      "date": "2011-10-30T06:31:17-07:00",
+      "subject": "[R-sig-teaching] Comparing two Regression Lines (Clarify)",
+      "subject_clean": "Comparing two Regression Lines (Clarify)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20111030/106c253f/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20111030/106c253f/attachment.pl>",
+      "thread_id": "thread-0a87db1abcdf",
+      "thread_depth": 0,
+      "month": "2011-10"
+    },
+    {
+      "id": "msg-492c696ee4d0",
+      "message_id": "<6F81A23F-BB1D-4DA3-8747-73BB3DC3EB41@utk.edu>",
+      "from_name": "Nagle, Nicholas",
+      "from_email_hash": "386473520c1c45bcd1e22bd2784e35bf85b5064bd2b8522aedb8a09a59cc74ed",
+      "date": "2011-10-31T12:43:30Z",
+      "subject": "[R-sig-teaching] Comparing two Regression Lines",
+      "subject_clean": "Comparing two Regression Lines",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Try this for starters:\n\nX1<-c(25, 50, 100, 200, 400)\nY1<-c(77.7, 78, 64.3, 59.7, 51.2)\n\nX2<-c(25, 50, 100, 200)\nY2<-c(77.7, 52.3, 23.7, 6)\n\ndat1 <- data.frame(X=X1,Y=Y1,f='D1')\ndat2 <- data.frame(X=X2,Y=Y2,f='D2')\n\ndat <- rbind(dat1,dat2)\n\nmodel <- lm(Y~X*f,data=dat)\nsummary(model)\n# Test H_0: fD2=0 for difference in intercept\n# Test H_0: X:fD2=0 for difference in slopes.\n\n# Don't forget this test!\nanova(lm(Y~X,data=dat),lm(Y~X*f,data=dat))\n\nlibrary(ggplot2)\nggplot(data=dat,aes(x=X,y=Y,group=f))+geom_point(aes(colour=f))+xlim(0,400)+geom_abline(intercept=77.175,slope=-0.07094)+geom_abline(intercept=(77.175-1.54022), slope=(-.07094-.30997))\n\n\n\nNicholas",
+      "body_snippet": "Try this for starters:\n\nX1<-c(25, 50, 100, 200, 400)\nY1<-c(77.7, 78, 64.3, 59.7, 51.2)\n\nX2<-c(25, 50, 100, 200)\nY2<-c(77.7, 52.3, 23.7, 6)\n\ndat1 <- data.frame(X=X1,Y=Y1,f='D1')\ndat2 <- data.frame(X=X2",
+      "thread_id": "thread-492c696ee4d0",
+      "thread_depth": 0,
+      "month": "2011-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-c182191eaae1",
+      "subject": "Comparing two regression lines",
+      "message_count": 1,
+      "participants": [
+        "Ali Zanaty"
+      ],
+      "started": "2011-10-30T05:28:10-07:00",
+      "last_reply": "2011-10-30T05:28:10-07:00",
+      "root_message_id": "msg-c182191eaae1"
+    },
+    {
+      "id": "thread-0a87db1abcdf",
+      "subject": "Comparing two Regression Lines (Clarify)",
+      "message_count": 1,
+      "participants": [
+        "Ali Zanaty"
+      ],
+      "started": "2011-10-30T06:31:17-07:00",
+      "last_reply": "2011-10-30T06:31:17-07:00",
+      "root_message_id": "msg-0a87db1abcdf"
+    },
+    {
+      "id": "thread-492c696ee4d0",
+      "subject": "Comparing two Regression Lines",
+      "message_count": 1,
+      "participants": [
+        "Nagle, Nicholas"
+      ],
+      "started": "2011-10-31T12:43:30+00:00",
+      "last_reply": "2011-10-31T12:43:30+00:00",
+      "root_message_id": "msg-492c696ee4d0"
+    }
+  ]
+}

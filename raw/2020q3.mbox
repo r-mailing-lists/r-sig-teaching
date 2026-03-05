@@ -1,0 +1,189 @@
+From citc m@iii@g oii disroot@org  Tue Jul 14 12:07:17 2020
+From: citc m@iii@g oii disroot@org (citc m@iii@g oii disroot@org)
+Date: Tue, 14 Jul 2020 10:07:17 +0000
+Subject: [R-sig-teaching] mail list archive
+Message-ID: <3e51a24a5236f52f8e4c4ba221703e3e@disroot.org>
+
+Mail list administrator,
+
+Please is it possible to have this mailing list also on the archive 'mail-archive.com', similarly to others such as:
+
+https://www.mail-archive.com/r-help at r-project.org/info.html
+https://www.mail-archive.com/r-sig-debian at r-project.org
+
+Want to be able to subscribe via RSS in an RSS reader, e.g.:
+
+https://www.mail-archive.com/r-help at r-project.org/maillist.xml
+
+Thanks.
+
+
+From citc m@iii@g oii disroot@org  Mon Aug  3 11:55:58 2020
+From: citc m@iii@g oii disroot@org (citc m@iii@g oii disroot@org)
+Date: Mon, 03 Aug 2020 09:55:58 +0000
+Subject: [R-sig-teaching] school level introduction to and use of R
+Message-ID: <3a1aa0c6498ed0d49577b91c78f5a2ca@disroot.org>
+
+Readers,
+
+Is it possible to install R on a server and allow school children (e.g. 15 years) to be given simple scripts to plot a graph, then save as svg or png format for use in other documents?
+
+Tried to search RWeb but that long since gone.
+
+__________________________
+https://chemistryinthecity.neocities.org
+
+
+From cet|nk@y@@m|ne @end|ng |rom gm@||@com  Mon Aug  3 12:39:37 2020
+From: cet|nk@y@@m|ne @end|ng |rom gm@||@com (=?utf-8?Q?Mine_=C3=87etinkaya-Rundel?=)
+Date: Mon, 3 Aug 2020 11:39:37 +0100
+Subject: [R-sig-teaching] school level introduction to and use of R
+In-Reply-To: <3a1aa0c6498ed0d49577b91c78f5a2ca@disroot.org>
+References: <3a1aa0c6498ed0d49577b91c78f5a2ca@disroot.org>
+Message-ID: <1870930c-3ccb-49d4-936c-0f0f3b39c8b1@Spark>
+
+Hello,
+
+Yes, this is possible, and there are a few approaches you might use. Note that this is not an exhaustive list, there may be other approaches I?m unaware of / can?t think of at the moment.
+
+? RStudio:
+    ? RStudio Cloud:?https://rstudio.cloud/. Depending on student numbers / how you structure access, could be free or require a premium plan.?https://rstudio.cloud/learn/guide?has information on getting started.
+    ? RStudio Server Pro: See?https://rstudio.com/pricing/academic-pricing/?for Academic Pricing, the software is free for teaching purposes, but needs more setup than RStudio Cloud.?https://docs.rstudio.com/ide/server-pro/?has information on getting started.
+? Binder:
+    ? You can use Jupyter+R or RStudio with Binder,?https://github.com/binder-examples/r?has some examples for this.
+    ? An alternative approach is using the holepunch package:?https://karthik.github.io/holepunch/index.html
+? Depending on how simple the script is (e.g. do you need external data?),?https://rdrr.io/snippets/?might be an option.
+? I?ve recently come across COCALC (https://cocalc.com/doc/r-statistical-software.html) which seems to have offer a Jupyter interface to R. It appears to have a free tier but I?m not 100% sure how it works.
+
+Best,
+Mine
+
+
+--
+
+Mine ?etinkaya-Rundel
+? mine-cr.com
+?? citizen-statistician.org
+? @minebocek
+? she/her
+
+On 3 Aug 2020, 10:56 +0100, citc at disroot.org, wrote:
+> Readers,
+>
+> Is it possible to install R on a server and allow school children (e.g. 15 years) to be given simple scripts to plot a graph, then save as svg or png format for use in other documents?
+>
+> Tried to search RWeb but that long since gone.
+>
+> __________________________
+> https://chemistryinthecity.neocities.org
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+	[[alternative HTML version deleted]]
+
+
+From w@yne@@m|th @end|ng |rom c@un@edu  Mon Aug  3 18:40:17 2020
+From: w@yne@@m|th @end|ng |rom c@un@edu (Wayne Smith)
+Date: Mon, 3 Aug 2020 09:40:17 -0700
+Subject: [R-sig-teaching] R-sig-teaching Digest, Vol 113, Issue 1
+In-Reply-To: <mailman.859.9.1596449171.31464.r-sig-teaching@r-project.org>
+References: <mailman.859.9.1596449171.31464.r-sig-teaching@r-project.org>
+Message-ID: <9e14c348-ed2e-fa01-4cf2-f9b6cfa3d054@csun.edu>
+
+CITC,
+
+It might be possible to use a free Rstudio Cloud account for this task.
+
+ ??? https://rstudio.cloud/
+
+Best,
+
+Wayne
+
+On 8/3/2020 3:06 AM, r-sig-teaching-request at r-project.org wrote:
+> Send R-sig-teaching mailing list submissions to
+> 	r-sig-teaching at r-project.org
+>
+> To subscribe or unsubscribe via the World Wide Web, visit
+> 	https://urldefense.proofpoint.com/v2/url?u=https-3A__stat.ethz.ch_mailman_listinfo_r-2Dsig-2Dteaching&d=DwICAg&c=Oo8bPJf7k7r_cPTz1JF7vEiFxvFRfQtp-j14fFwh71U&r=arUOXBJV185ReiAVcorpVCJACrg7Z_StHteKeAMMoBM&m=2dSIKomBOhBA_GuuXs7vVjKjN378h-IQA2AqondqEpI&s=CdNhpEgSxNxI9jcMsyU018EWaNmeOgtmqIOuRbe8C0c&e=
+> or, via email, send a message with subject or body 'help' to
+> 	r-sig-teaching-request at r-project.org
+>
+> You can reach the person managing the list at
+> 	r-sig-teaching-owner at r-project.org
+>
+> When replying, please edit your Subject line so it is more specific
+> than "Re: Contents of R-sig-teaching digest..."
+>
+>
+> Today's Topics:
+>
+>     1. school level introduction to and use of R (citc at disroot.org)
+>
+> ----------------------------------------------------------------------
+>
+> Message: 1
+> Date: Mon, 03 Aug 2020 09:55:58 +0000
+> From: citc at disroot.org
+> To: r-sig-teaching at r-project.org
+> Subject: [R-sig-teaching] school level introduction to and use of R
+> Message-ID: <3a1aa0c6498ed0d49577b91c78f5a2ca at disroot.org>
+> Content-Type: text/plain; charset="utf-8"
+>
+> Readers,
+>
+> Is it possible to install R on a server and allow school children (e.g. 15 years) to be given simple scripts to plot a graph, then save as svg or png format for use in other documents?
+>
+> Tried to search RWeb but that long since gone.
+>
+> __________________________
+> https://urldefense.proofpoint.com/v2/url?u=https-3A__chemistryinthecity.neocities.org&d=DwICAg&c=Oo8bPJf7k7r_cPTz1JF7vEiFxvFRfQtp-j14fFwh71U&r=arUOXBJV185ReiAVcorpVCJACrg7Z_StHteKeAMMoBM&m=2dSIKomBOhBA_GuuXs7vVjKjN378h-IQA2AqondqEpI&s=NptfRnjd-A_uaihKNVIOmOxN7KYIrK3Blo-k4lawWhk&e=
+>
+>
+>
+>
+> ------------------------------
+>
+> Subject: Digest Footer
+>
+> _______________________________________________
+> R-sig-teaching mailing list
+> R-sig-teaching at r-project.org
+> https://urldefense.proofpoint.com/v2/url?u=https-3A__stat.ethz.ch_mailman_listinfo_r-2Dsig-2Dteaching&d=DwICAg&c=Oo8bPJf7k7r_cPTz1JF7vEiFxvFRfQtp-j14fFwh71U&r=arUOXBJV185ReiAVcorpVCJACrg7Z_StHteKeAMMoBM&m=2dSIKomBOhBA_GuuXs7vVjKjN378h-IQA2AqondqEpI&s=CdNhpEgSxNxI9jcMsyU018EWaNmeOgtmqIOuRbe8C0c&e=
+>
+>
+> ------------------------------
+>
+> End of R-sig-teaching Digest, Vol 113, Issue 1
+> **********************************************
+
+
+From citc m@iii@g oii disroot@org  Tue Aug  4 11:57:50 2020
+From: citc m@iii@g oii disroot@org (citc m@iii@g oii disroot@org)
+Date: Tue, 04 Aug 2020 09:57:50 +0000
+Subject: [R-sig-teaching] school level introduction to and use of R
+In-Reply-To: <1870930c-3ccb-49d4-936c-0f0f3b39c8b1@Spark>
+References: <1870930c-3ccb-49d4-936c-0f0f3b39c8b1@Spark>
+ <3a1aa0c6498ed0d49577b91c78f5a2ca@disroot.org>
+Message-ID: <aa768215f2f5ca887df34f14529777da@disroot.org>
+
+August 3, 2020 11:39 AM, "Mine ?etinkaya-Rundel" <cetinkaya.mine at gmail.com> wrote:
+
+> * Binder:
+> * You can use Jupyter+R or RStudio with Binder, https://github.com/binder-examples/r has some
+> examples for this.
+
+Thanks, gave it a try using their web site:
+https://jupyter.org/try
+
+It would be preferable if gitlab could be used and google avoided (mailing list, web site visit surveillance, scripts, etc..)
+
+> 
+> * Depending on how simple the script is (e.g. do you need external data?),
+> https://rdrr.io/snippets/ might be an option.
+
+This is also useful to be aware; again, thank you. The usage is that school students would have experimental data (e.g. measure amount of mass lost during chemical reaction), plot data, save graph as a png/svg image, insert graphical data into a document such as a experiment report.
+
+

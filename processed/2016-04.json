@@ -1,0 +1,36 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2016-04",
+  "messages": [
+    {
+      "id": "msg-aee3ac769e41",
+      "message_id": "<671702845.16183901.1460119011301.JavaMail.zimbra@carleton.edu>",
+      "from_name": "Bob Dobrow",
+      "from_email_hash": "c33452efce92c3343866d83ef5746b58a42298b457360e27ecaa4c83cb977b88",
+      "date": "2016-04-08T08:36:51-04:00",
+      "subject": "[R-sig-teaching] New Stochastic Processes textbook Using R",
+      "subject_clean": "New Stochastic Processes textbook Using R",
+      "in_reply_to": "<65396253.16153074.1460118730079.JavaMail.zimbra@carleton.edu>",
+      "references": [],
+      "body_plain": "Dear friends,\n\nA new undergraduate-focused textbook on stochastic processes: Introduction to Stochastic Processes With R (Wiley 2016)\nis now available.\n\nA focus of the book is simulation. The book includes an R tutorial and example script files.\n\nHere is the link to the book's homepage: http://people.carleton.edu/~rdobrow/stochbook/\n\nand to the Wiley page\n\nhttp://www.wiley.com/WileyCDA/WileyTitle/productCd-1118740653.html\n\n\nIf you would like more information, sample chapters, or have any questions, I would be happy to discuss.\n\nBest,\nBob Dobrow\nDepartment of Mathematics and Statistics\nCarleton College\nNorthfield, MN 55057\nrdobrow at carleton.edu",
+      "body_snippet": "Dear friends,\n\nA new undergraduate-focused textbook on stochastic processes: Introduction to Stochastic Processes With R (Wiley 2016)\nis now available.\n\nA focus of the book is simulation. The book inc",
+      "thread_id": "thread-aee3ac769e41",
+      "thread_depth": 0,
+      "month": "2016-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-aee3ac769e41",
+      "subject": "New Stochastic Processes textbook Using R",
+      "message_count": 1,
+      "participants": [
+        "Bob Dobrow"
+      ],
+      "started": "2016-04-08T08:36:51-04:00",
+      "last_reply": "2016-04-08T08:36:51-04:00",
+      "root_message_id": "msg-aee3ac769e41"
+    }
+  ]
+}

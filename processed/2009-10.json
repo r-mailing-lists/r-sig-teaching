@@ -1,0 +1,305 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2009-10",
+  "messages": [
+    {
+      "id": "msg-d6eaa2579664",
+      "message_id": "<4AC72F81.9060209@u-paris10.fr>",
+      "from_name": "Christophe Genolini",
+      "from_email_hash": "188243ef6b743b8d3cdd972d5ac76d36899f18656fb52ce7f6a8f452409f5017",
+      "date": "2009-10-03T13:03:29+02:00",
+      "subject": "[R-sig-teaching] Rlight, a simplified version of R for very basic tools",
+      "subject_clean": "Rlight, a simplified version of R for very basic tools",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091003/de8ca35d/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091003/de8ca35d/attachment.pl>",
+      "thread_id": "thread-d6eaa2579664",
+      "thread_depth": 0,
+      "month": "2009-10"
+    },
+    {
+      "id": "msg-35f7ef64e90e",
+      "message_id": "<200910072240.n97MeE3X017302@definetti.ddns.uark.edu>",
+      "from_name": "Giovanni Petris",
+      "from_email_hash": "a8d6ee6436f2dfc5e32ffa3fbe802e40ef839cfd54608c07550b54289ed80d58",
+      "date": "2009-10-07T17:40:14-05:00",
+      "subject": "[R-sig-teaching] Markov chain Monte Carlo",
+      "subject_clean": "Markov chain Monte Carlo",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello all,\n\nIn a recent issue of the Bulletin of the American Mathematical\nSociety, Persi Diaconis opens a review/discussion paper on MCMC with a\nnice application to cryptography and message decoding. The article is\navailable online at\n\nhttp://www.ams.org/bull/2009-46-02/S0273-0979-08-01238-X/S0273-0979-08-01238-X.pdf\n\nI liked the example and wanted to do something similar in my\nclasses. Does any body have any suggestions? I can make up my own\ncoded message, but in order to decode it I will need a matrix of first\norder transition probabilities for letters in standard English: is\nthere anything like that available on line?\n\nThank you in advance.\n\nBest,\nGiovanni Petris\n\n-- \n\nGiovanni Petris  <GPetris at uark.edu>\nAssociate Professor\nDepartment of Mathematical Sciences\nUniversity of Arkansas - Fayetteville, AR 72701\nPh: (479) 575-6324, 575-8630 (fax)\nhttp://definetti.uark.edu/~gpetris/",
+      "body_snippet": "Hello all,\n\nIn a recent issue of the Bulletin of the American Mathematical\nSociety, Persi Diaconis opens a review/discussion paper on MCMC with a\nnice application to cryptography and message decoding.",
+      "thread_id": "thread-35f7ef64e90e",
+      "thread_depth": 0,
+      "month": "2009-10"
+    },
+    {
+      "id": "msg-855cfaedda9a",
+      "message_id": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC6218ACC184@LP-EXMBVS10.CO.IHC.COM>",
+      "from_name": "Greg Snow",
+      "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
+      "date": "2009-10-12T11:42:50-06:00",
+      "subject": "[R-sig-teaching] Rlight, a simplified version of R for very basic tools",
+      "subject_clean": "Rlight, a simplified version of R for very basic tools",
+      "in_reply_to": "<4AC72F81.9060209@u-paris10.fr>",
+      "references": [
+        "<4AC72F81.9060209@u-paris10.fr>"
+      ],
+      "body_plain": "Have you looked at the Rexcel functionality (this allows access to R from within Excel, less learning curve for people enamored with Excel).  There is also Rcmdr which  is a GUI version (also available through Rexcel) which also shows the commands that would generate the same results.  There are other GUIs, but I don't know much about them.\n\nThese may give alternatives for you to consider.\n\n-- \nGregory (Greg) L. Snow Ph.D.\nStatistical Data Center\nIntermountain Healthcare\ngreg.snow at imail.org\n801.408.8111\n\n\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-\n> bounces at r-project.org] On Behalf Of Christophe Genolini\n> Sent: Saturday, October 03, 2009 5:03 AM\n> To: r-sig-teaching at r-project.org\n> Subject: [R-sig-teaching] Rlight, a simplified version of R for very\n> basic tools\n> \n> Hi the list,\n> \n> _**** In short ****__* *_\n> R is too complex for basic level non statistician students especially\n> when they compare it to the %$*#& Excel. It could be interesting to\n> create a package that would propose the very basic tools with a very\n> simplified structure.\n> \n> \n> _**** More precisely ****__* *_\n> Reading this list, I have the feeling that R is less and less for\n> specialist, more and more for occasional users. On my side, I am\n> teaching R to sports student... Statistics is definitely NOT their\n> favorite topic. They just need to be basic user: they need to know how\n> to compute a mean, median, some basic test (parametric or not), some\n> regression. They also need to be able to deal with real data with\n> missing value.\n> To their point of vu (point of vu that I share most of the time), one\n> major difficulty in R is the \"non uniformity\" of syntaxes:\n> \n> - Why does median not work on ordered factor?\n> - Why does cor(age,size,na.rm=TRUE) not work?\n> - Why does summary report the quartiles but not the standard deviation?\n> - Why is it t.test(age~groupe) and cor.test(age,size)?\n> - Why is it boxplot(age) and barplot(table(age))?\n> - Why is it as.numeric but ordered?\n> - Sir, we hate changing the working directory and using the %$*#&\n> function \"read.csv\". Why not stopping working on R and start using\n> Excel\n> again, like in all other classes with all the other teachers? (I do NOT\n> share this one :-) )\n> - ...\n> \n> The calculation of a statistics relatively to a specific modality (like\n> calculation of the mean(size) but only for men then for women) is also\n> a\n> basic needs, one of the first things they want to do. But\n> unfortunately,\n> it is very complicated: it needs the introduction of vector, logical\n> operator, lines selection using a logical vector. And every syntax\n> mistake is fatal. Under Excel, you need to know how to sort the data,\n> then use the function \"=mean\"...\n> \n> It is why I start to create a package (called \"R light\" but that can\n> change) that would propose a simplified and more uniform version of the\n> tool that low levels user need (call the \"light tools\"?). The syntax\n> could be very simple but should suffer NO exception:\n> \n> function(variable) : works on a variable\n> function(variable~groups): works on a variable relatively to each group\n> modality.\n> Then Lmean will compute the mean, Lvar will compute the variance,\n> Lmedian the median and so on.\n> \n> *_*** Examples *** _*\n> >  age <- c(15,16,18,15,16,12)\n> >  groups <- c(\"M\",\"F\",\"M\",\"F\",\"M\",\"F\")\n> \n> >  Lmean(age)\n> [1] 15.33333\n> Lmean(age~groups)\n>        F        M\n> 14.33333 16.33333\n> \n> >  Lvar(age)\n>  [1] 3.866667\n> \n> >  Lvar(age~groups)\n>        F        M\n> 4.333333 2.333333\n> \n> >  marks <- ordered(\"A\",\"B\",\"A\",\"C\",\"B\",\"C\",levels=c(\"C\",\"B\",\"A\"))\n> >  Lmedian(marks)\n> [1] B\n> Levels: C < B < A\n> >  Lmedian(marks~groups)\n> F M\n> C A\n> Levels: C < B < A\n> \n> \n> That way, R would be simpler than Excel...\n> \n> \n> *_*** What next? *** _*\n> So I start to create the package but it takes me a lot of time (like\n> always when creating a package). Since this can be useful for a lot of\n> R\n> teacher, I think that some people might be interested in collaborating\n> on this project. Several needs:\n> \n> - Brain storming on what should be in Rlight: What are the tools those\n> basic users that know nothing on computing and not that much on\n> statistics do need?\n> - Brain storming on the syntax: I define \"function(variable)\" and\n> \"function(variable~groups)\", some other syntax might be interesting\n> specially for more advance concept.\n> - Writing documentation: well you guess it by reading this email, I am\n> NOT a native English speaker...\n> - Writing some L function.\n> \n> You will find the code that already exists and some tests here:\n> http://christophe.genolini.free.fr/aTelecharger/Rlight.r\n> \n> \n> \n> Christophe Genolini\n> \n> Associate professor\n>       University of Paris X\n>       INSERM U699\n> R package maintainer:\n>      - r2lUniv\n>      - kml\n> R Tutorial (on CRAN):\n>      - A (Not So) Short Introduction to S4\n>      - Petit Manuel de S4\n>      - Lire; Compter ; Tester... avec R\n>      - Construire un Package\n>      - R, bonnes pratiques\n> \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Have you looked at the Rexcel functionality (this allows access to R from within Excel, less learning curve for people enamored with Excel).  There is also Rcmdr which  is a GUI version (also availabl",
+      "thread_id": "thread-d6eaa2579664",
+      "thread_depth": 1,
+      "month": "2009-10"
+    },
+    {
+      "id": "msg-d14f01520474",
+      "message_id": "<5bfb4a970910161236j2e3f23b1nd3276e87f38886f1@mail.gmail.com>",
+      "from_name": "Gautier RENAULT",
+      "from_email_hash": "7a0696fb101cdc494455e26736082606b01e6e9f74a3a2f26cb206da074798e9",
+      "date": "2009-10-16T21:36:47+02:00",
+      "subject": "[R-sig-teaching] Breusch-pagan and white test - check homoscedasticity",
+      "subject_clean": "Breusch-pagan and white test - check homoscedasticity",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091016/90aef92c/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091016/90aef92c/attachment.pl>",
+      "thread_id": "thread-d14f01520474",
+      "thread_depth": 0,
+      "month": "2009-10"
+    },
+    {
+      "id": "msg-b28d6975a6ad",
+      "message_id": "<340939.20873.qm@web58904.mail.re1.yahoo.com>",
+      "from_name": "Iasonas Lamprianou",
+      "from_email_hash": "adc4000e6b6f587081cbb01b701b71b0f2e10f18fd9bd7b9d65e3cde6312df9f",
+      "date": "2009-10-23T00:03:46-07:00",
+      "subject": "[R-sig-teaching] introducing R",
+      "subject_clean": "introducing R",
+      "in_reply_to": "<mailman.11.1255773602.15803.r-sig-teaching@r-project.org>",
+      "references": [],
+      "body_plain": "Dear friends, \nI want to start using the R package for my postgraduate students in Research Methods courses and also in Quantitative Methods courses. I am also considering using it for my undergrads as well. The point is, not all of my colleagues agree. They are afraid that it may be too non-friendly for the students. What is more, I need material in Greek.\nPlease, do you have bright examples of how it is used in other Universities (in English or in Greek) with undergrads or postgrads? What material do you use (e.g. notes, books etc). How do you use it? What User Interface do you use?\n\nThank you\n\nDr. Iasonas Lamprianou\n\n\nAssistant Professor (Educational Research and Evaluation)\nDepartment of Education Sciences\nEuropean University-Cyprus\nP.O. Box 22006\n1516 Nicosia\nCyprus \nTel.: +357-22-713178\nFax: +357-22-590539\n\n\nHonorary Research Fellow\nDepartment of Education\nThe University of Manchester\nOxford Road, Manchester M13 9PL, UK\nTel. 0044  161 275 3485\niasonas.lamprianou at manchester.ac.uk\n\n\n--- On Sat, 17/10/09, r-sig-teaching-request at r-project.org <r-sig-teaching-request at r-project.org> wrote:\n\n> From: r-sig-teaching-request at r-project.org <r-sig-teaching-request at r-project.org>\n> Subject: R-sig-teaching Digest, Vol 26, Issue 4\n> To: r-sig-teaching at r-project.org\n> Date: Saturday, 17 October, 2009, 11:00 AM\n> Send R-sig-teaching mailing list\n> submissions to\n> ??? r-sig-teaching at r-project.org\n> \n> To subscribe or unsubscribe via the World Wide Web, visit\n> ??? https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> or, via email, send a message with subject or body 'help'\n> to\n> ??? r-sig-teaching-request at r-project.org\n> \n> You can reach the person managing the list at\n> ??? r-sig-teaching-owner at r-project.org\n> \n> When replying, please edit your Subject line so it is more\n> specific\n> than \"Re: Contents of R-sig-teaching digest...\"\n> \n> \n> Today's Topics:\n> \n> ???1. Breusch-pagan and white test -\n> check??? homoscedasticity\n> ? ? ? (Gautier RENAULT)\n> \n> \n> ----------------------------------------------------------------------\n> \n> Message: 1\n> Date: Fri, 16 Oct 2009 21:36:47 +0200\n> From: Gautier RENAULT <renault.gautier at gmail.com>\n> Subject: [R-sig-teaching] Breusch-pagan and white test -\n> check\n> ??? homoscedasticity\n> To: r-sig-teaching at r-project.org,\n> r-help at r-project.org\n> Message-ID:\n> ??? <5bfb4a970910161236j2e3f23b1nd3276e87f38886f1 at mail.gmail.com>\n> Content-Type: text/plain\n> \n> Hi r-programmers,\n> \n> I performe Breusch-Pagan tests (bptest in package lmtest)\n> to check the\n> homoscedasticity of the residuals from a linear model and I\n> carry out carry\n> out White's test via\n> bptest (formula, ~ x * z + I(x^2) + I(z^2)) include all\n> regressors and the\n> squares/cross-products in the auxiliary regression.\n> \n> But what can I do if I want find coefficient and p-values\n> of variables x, z,\n> x*z, I(x^2), I(z^2) ? **I wish find out which is\n> responsible of\n> heteroscedasticity...\n> \n> Can anyone help?\n> \n> thanking you in advance,\n> \n> Gautier RENAULT\n> \n> ??? [[alternative HTML version deleted]]\n> \n> \n> \n> ------------------------------\n> \n> _______________________________________________\n> R-sig-teaching mailing list\n> R-sig-teaching at r-project.org\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n> \n> End of R-sig-teaching Digest, Vol 26, Issue 4\n> *********************************************\n>",
+      "body_snippet": "Dear friends, \nI want to start using the R package for my postgraduate students in Research Methods courses and also in Quantitative Methods courses. I am also considering using it for my undergrads a",
+      "thread_id": "thread-b28d6975a6ad",
+      "thread_depth": 0,
+      "month": "2009-10"
+    },
+    {
+      "id": "msg-92f2f2bbaa41",
+      "message_id": "<68b1e2610910230135k6822cbfep96632c5fae185d9d@mail.gmail.com>",
+      "from_name": "Liviu Andronic",
+      "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
+      "date": "2009-10-23T09:35:00+01:00",
+      "subject": "[R-sig-teaching] introducing R",
+      "subject_clean": "introducing R",
+      "in_reply_to": "<340939.20873.qm@web58904.mail.re1.yahoo.com>",
+      "references": [
+        "<mailman.11.1255773602.15803.r-sig-teaching@r-project.org>",
+        "<340939.20873.qm@web58904.mail.re1.yahoo.com>"
+      ],
+      "body_plain": "Hello\n\nOn 10/23/09, Iasonas Lamprianou <lamprianou at yahoo.com> wrote:\n>  Please, do you have bright examples of how it is used in other Universities (in English or in Greek) with undergrads or postgrads? What material do you use (e.g. notes, books etc). How do you use it? What User Interface do you use?\n>\nI am not sure that these are bright examples, but there were several\nrelated discussions on the ML [1][2][3]. There is also a User!\npresentation [4].\nLiviu\n\n[1] https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000197.html\n[2] http://www.mail-archive.com/r-sig-teaching at r-project.org/msg00147.html\n[3] http://www.mail-archive.com/r-help at r-project.org/msg66939.html\n[4] http://www.r-project.org/user-2006/Slides/Fox+Weisberg.pdf",
+      "body_snippet": "Hello\n\nOn 10/23/09, Iasonas Lamprianou <lamprianou at yahoo.com> wrote:\n>  Please, do you have bright examples of how it is used in other Universities (in English or in Greek) with undergrads or postg",
+      "thread_id": "thread-b28d6975a6ad",
+      "thread_depth": 1,
+      "month": "2009-10"
+    },
+    {
+      "id": "msg-617380673901",
+      "message_id": "<4AE1EFE4.2020005@usask.ca>",
+      "from_name": "Eric Lamb",
+      "from_email_hash": "52b848cbf4492040396c521f32ce6e3fbf252d0085ef98898950b41ff2e02a64",
+      "date": "2009-10-23T12:03:16-06:00",
+      "subject": "[R-sig-teaching] introducing R",
+      "subject_clean": "introducing R",
+      "in_reply_to": "<mailman.11.1256292003.13242.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.11.1256292003.13242.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": "I also have recieved a fair amount of pushback from collegues who would \nprefer their favorite program to be taught to graduate students.\n\nWhen it comes to presuading people to embrace R I have found that a \ndiscussion of the benefits of open source software is very effective. My \ninstitution trains a large number of graduate students from developing \ncountries who will likely have limited access to research funds when \nthey return. Pointing out the benefits of training on an open access \nplatform to the future research careers of these students has gotten \nmany onside. The same arguement applies to students who will be working \nfor small companies that cannot afford/justify a SAS license.\n\nCheers, Eric\n\n-- \nEric Lamb\nAssistant Professor, Plant Ecology and Biostatistics\nDept. of Plant Sciences, University of Saskatchewan\nhttp://homepage.usask.ca/egl388/index.html\n\n4D68 Agriculture Building\n306-966-1799\neric.lamb at usask.ca",
+      "body_snippet": "I also have recieved a fair amount of pushback from collegues who would \nprefer their favorite program to be taught to graduate students.\n\nWhen it comes to presuading people to embrace R I have found ",
+      "thread_id": "thread-617380673901",
+      "thread_depth": 0,
+      "month": "2009-10"
+    },
+    {
+      "id": "msg-33f378d61cc8",
+      "message_id": "<971536df0910232041n5154ec29ra5288c5009574e6@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2009-10-23T23:41:25-04:00",
+      "subject": "[R-sig-teaching] introducing R",
+      "subject_clean": "introducing R",
+      "in_reply_to": "<340939.20873.qm@web58904.mail.re1.yahoo.com>",
+      "references": [
+        "<mailman.11.1255773602.15803.r-sig-teaching@r-project.org>",
+        "<340939.20873.qm@web58904.mail.re1.yahoo.com>"
+      ],
+      "body_plain": "On Fri, Oct 23, 2009 at 3:03 AM, Iasonas Lamprianou\n<lamprianou at yahoo.com> wrote:\n>  What is more, I need material in Greek.\n\nThere is a Greek intro here:\n\nhttp://stat-athens.aueb.gr/~grstats/notes/r_giagos.pdf",
+      "body_snippet": "On Fri, Oct 23, 2009 at 3:03 AM, Iasonas Lamprianou\n<lamprianou at yahoo.com> wrote:\n>  What is more, I need material in Greek.\n\nThere is a Greek intro here:\n\nhttp://stat-athens.aueb.gr/~grstats/notes",
+      "thread_id": "thread-b28d6975a6ad",
+      "thread_depth": 1,
+      "month": "2009-10"
+    },
+    {
+      "id": "msg-6a3fa3080158",
+      "message_id": "<COL102-W379101E963ED4F9EB790D8CFBC0@phx.gbl>",
+      "from_name": "柯洁",
+      "from_email_hash": "3a72c308ca4fe14e066abb1f373500f8f7f026720914990a1def38f9a1948bb8",
+      "date": "2009-10-24T23:20:34+08:00",
+      "subject": "[R-sig-teaching] bagging",
+      "subject_clean": "bagging",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091024/a5504c02/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091024/a5504c02/attachment.pl>",
+      "thread_id": "thread-6a3fa3080158",
+      "thread_depth": 0,
+      "month": "2009-10"
+    },
+    {
+      "id": "msg-049baf08df67",
+      "message_id": "<775826.45781.qm@web58902.mail.re1.yahoo.com>",
+      "from_name": "Iasonas Lamprianou",
+      "from_email_hash": "adc4000e6b6f587081cbb01b701b71b0f2e10f18fd9bd7b9d65e3cde6312df9f",
+      "date": "2009-10-24T09:15:23-07:00",
+      "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 26, Issue 6",
+      "subject_clean": "R-sig-teaching Digest, Vol 26, Issue 6",
+      "in_reply_to": "<mailman.9.1256378403.26717.r-sig-teaching@r-project.org>",
+      "references": [],
+      "body_plain": "thanks to all for your comments\n\njason\n\nDr. Iasonas Lamprianou\n\n\nAssistant Professor (Educational Research and Evaluation)\nDepartment of Education Sciences\nEuropean University-Cyprus\nP.O. Box 22006\n1516 Nicosia\nCyprus \nTel.: +357-22-713178\nFax: +357-22-590539\n\n\nHonorary Research Fellow\nDepartment of Education\nThe University of Manchester\nOxford Road, Manchester M13 9PL, UK\nTel. 0044  161 275 3485\niasonas.lamprianou at manchester.ac.uk\n\n\n--- On Sat, 24/10/09, r-sig-teaching-request at r-project.org <r-sig-teaching-request at r-project.org> wrote:\n\n> From: r-sig-teaching-request at r-project.org <r-sig-teaching-request at r-project.org>\n> Subject: R-sig-teaching Digest, Vol 26, Issue 6\n> To: r-sig-teaching at r-project.org\n> Date: Saturday, 24 October, 2009, 11:00 AM\n> Send R-sig-teaching mailing list\n> submissions to\n> ??? r-sig-teaching at r-project.org\n> \n> To subscribe or unsubscribe via the World Wide Web, visit\n> ??? https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> or, via email, send a message with subject or body 'help'\n> to\n> ??? r-sig-teaching-request at r-project.org\n> \n> You can reach the person managing the list at\n> ??? r-sig-teaching-owner at r-project.org\n> \n> When replying, please edit your Subject line so it is more\n> specific\n> than \"Re: Contents of R-sig-teaching digest...\"\n> \n> \n> Today's Topics:\n> \n> ???1. Re: introducing R (Eric Lamb)\n> ???2. Re: introducing R (Gabor\n> Grothendieck)\n> \n> \n> ----------------------------------------------------------------------\n> \n> Message: 1\n> Date: Fri, 23 Oct 2009 12:03:16 -0600\n> From: Eric Lamb <eric.lamb at usask.ca>\n> Subject: Re: [R-sig-teaching] introducing R\n> To: r-sig-teaching at r-project.org\n> Message-ID: <4AE1EFE4.2020005 at usask.ca>\n> Content-Type: text/plain; charset=ISO-8859-1;\n> format=flowed\n> \n> I also have recieved a fair amount of pushback from\n> collegues who would \n> prefer their favorite program to be taught to graduate\n> students.\n> \n> When it comes to presuading people to embrace R I have\n> found that a \n> discussion of the benefits of open source software is very\n> effective. My \n> institution trains a large number of graduate students from\n> developing \n> countries who will likely have limited access to research\n> funds when \n> they return. Pointing out the benefits of training on an\n> open access \n> platform to the future research careers of these students\n> has gotten \n> many onside. The same arguement applies to students who\n> will be working \n> for small companies that cannot afford/justify a SAS\n> license.\n> \n> Cheers, Eric\n> \n> -- \n> Eric Lamb\n> Assistant Professor, Plant Ecology and Biostatistics\n> Dept. of Plant Sciences, University of Saskatchewan\n> http://homepage.usask.ca/egl388/index.html\n> \n> 4D68 Agriculture Building\n> 306-966-1799\n> eric.lamb at usask.ca\n> \n> \n> \n> ------------------------------\n> \n> Message: 2\n> Date: Fri, 23 Oct 2009 23:41:25 -0400\n> From: Gabor Grothendieck <ggrothendieck at gmail.com>\n> Subject: Re: [R-sig-teaching] introducing R\n> To: Iasonas Lamprianou <lamprianou at yahoo.com>\n> Cc: r-sig-teaching at r-project.org\n> Message-ID:\n> ??? <971536df0910232041n5154ec29ra5288c5009574e6 at mail.gmail.com>\n> Content-Type: text/plain; charset=ISO-8859-1\n> \n> On Fri, Oct 23, 2009 at 3:03 AM, Iasonas Lamprianou\n> <lamprianou at yahoo.com>\n> wrote:\n> >? What is more, I need material in Greek.\n> \n> There is a Greek intro here:\n> \n> http://stat-athens.aueb.gr/~grstats/notes/r_giagos.pdf\n> \n> \n> \n> ------------------------------\n> \n> _______________________________________________\n> R-sig-teaching mailing list\n> R-sig-teaching at r-project.org\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n> \n> End of R-sig-teaching Digest, Vol 26, Issue 6\n> *********************************************\n>",
+      "body_snippet": "thanks to all for your comments\n\njason\n\nDr. Iasonas Lamprianou\n\n\nAssistant Professor (Educational Research and Evaluation)\nDepartment of Education Sciences\nEuropean University-Cyprus\nP.O. Box 22006\n15",
+      "thread_id": "thread-049baf08df67",
+      "thread_depth": 0,
+      "month": "2009-10"
+    },
+    {
+      "id": "msg-bbd907dd38c0",
+      "message_id": "<68b1e2610910241103v7ac4aea8wc10339f644b22ac2@mail.gmail.com>",
+      "from_name": "Liviu Andronic",
+      "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
+      "date": "2009-10-24T19:03:51+01:00",
+      "subject": "[R-sig-teaching] bagging",
+      "subject_clean": "bagging",
+      "in_reply_to": "<COL102-W379101E963ED4F9EB790D8CFBC0@phx.gbl>",
+      "references": [
+        "<COL102-W379101E963ED4F9EB790D8CFBC0@phx.gbl>"
+      ],
+      "body_plain": "Hello\n\nOn 10/24/09, ?? <kejiefinance at hotmail.com> wrote:\n>  I have a data set which name is \"c78p\",now I want to deal with it with bagging.% of data from c78p as training set is 50%,and number of bootstrap random samples with replacement from c78p is 5,use SVM in each run,can you help me to write the code?\n>\nFirst, such questions should be addressed to r-help.\n\nSecond, \"PLEASE do read the posting guide\nhttp://www.R-project.org/posting-guide.html and provide commented,\nminimal, self-contained, reproducible code.\"\n\nConcerning the random samples, I would suggest Quick-R [1] for a good\nbeginner's guide to R, and for bootstrapping techniques [2].\n\nRegards\nLiviu\n\n\n[1] http://www.statmethods.net/\n[2] http://www.statmethods.net/advstats/bootstrapping.html",
+      "body_snippet": "Hello\n\nOn 10/24/09, ?? <kejiefinance at hotmail.com> wrote:\n>  I have a data set which name is \"c78p\",now I want to deal with it with bagging.% of data from c78p as training set is 50%,and number of b",
+      "thread_id": "thread-6a3fa3080158",
+      "thread_depth": 1,
+      "month": "2009-10"
+    },
+    {
+      "id": "msg-3829a060cc2b",
+      "message_id": "<636937452.12522141256523134133.JavaMail.root@huron.cs.uoguelph.ca>",
+      "from_name": "Luca Borger",
+      "from_email_hash": "c5ae7db59c3ef56e6943cd5b6a477003c6694dec840957f5b8e088688be17d1b",
+      "date": "2009-10-25T22:12:14-04:00",
+      "subject": "[R-sig-teaching] bagging",
+      "subject_clean": "bagging",
+      "in_reply_to": "<831253314.12521941256523110525.JavaMail.root@huron.cs.uoguelph.ca>",
+      "references": [],
+      "body_plain": "Hello,\n\nI'd suggest also to get a copy of:\n\nThe Elements of Statistical Learning: Data Mining, Inference, and Prediction.\nSecond Edition\nFebruary 2009\nTrevor Hastie, Robert Tibshirani, Jerome Friedman.\n\nhttp://www-stat-class.stanford.edu/~tibs/ElemStatLearn/\n\n\nCheers,\n\nLuca\n\n\n\n----- Messaggio originale -----\nDa: r-sig-teaching-request at r-project.org\nA: r-sig-teaching at r-project.org\nInviato: Domenica, 25 ottobre 2009 7:00:02 GMT -05:00 U.S.A./Canada, stati orientali\nOggetto: R-sig-teaching Digest, Vol 26, Issue 7\n\nSend R-sig-teaching mailing list submissions to\n\tr-sig-teaching at r-project.org\n\nTo subscribe or unsubscribe via the World Wide Web, visit\n\thttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\nor, via email, send a message with subject or body 'help' to\n\tr-sig-teaching-request at r-project.org\n\nYou can reach the person managing the list at\n\tr-sig-teaching-owner at r-project.org\n\nWhen replying, please edit your Subject line so it is more specific\nthan \"Re: Contents of R-sig-teaching digest...\"\n\n\nToday's Topics:\n\n   1. bagging (??)\n   2. Re: R-sig-teaching Digest, Vol 26, Issue 6 (Iasonas Lamprianou)\n   3. Re: bagging (Liviu Andronic)\n\n\n----------------------------------------------------------------------\n\nMessage: 1\nDate: Sat, 24 Oct 2009 23:20:34 +0800\nFrom: ?? <kejiefinance at hotmail.com>\nSubject: [R-sig-teaching] bagging\nTo: <r-sig-teaching at r-project.org>\nMessage-ID: <COL102-W379101E963ED4F9EB790D8CFBC0 at phx.gbl>\nContent-Type: text/plain\n\n\nDear sir,\nI have a data set which name is \"c78p\",now I want to deal with it with bagging.% of data from c78p as training set is 50%,and number of bootstrap random samples with replacement from c78p is 5,use SVM in each run,can you help me to write the code?\nThanks! \t\t \t   \t\t  \n_________________________________________________________________\n\n\n\t[[alternative HTML version deleted]]\n\n\n\n------------------------------\n\nMessage: 2\nDate: Sat, 24 Oct 2009 09:15:23 -0700 (PDT)\nFrom: Iasonas Lamprianou <lamprianou at yahoo.com>\nSubject: Re: [R-sig-teaching] R-sig-teaching Digest, Vol 26, Issue 6\nTo: r-sig-teaching at r-project.org\nMessage-ID: <775826.45781.qm at web58902.mail.re1.yahoo.com>\nContent-Type: text/plain; charset=iso-8859-1\n\nthanks to all for your comments\n\njason\n\nDr. Iasonas Lamprianou\n\n\nAssistant Professor (Educational Research and Evaluation)\nDepartment of Education Sciences\nEuropean University-Cyprus\nP.O. Box 22006\n1516 Nicosia\nCyprus \nTel.: +357-22-713178\nFax: +357-22-590539\n\n\nHonorary Research Fellow\nDepartment of Education\nThe University of Manchester\nOxford Road, Manchester M13 9PL, UK\nTel. 0044  161 275 3485\niasonas.lamprianou at manchester.ac.uk\n\n\n--- On Sat, 24/10/09, r-sig-teaching-request at r-project.org <r-sig-teaching-request at r-project.org> wrote:\n\n> From: r-sig-teaching-request at r-project.org <r-sig-teaching-request at r-project.org>\n> Subject: R-sig-teaching Digest, Vol 26, Issue 6\n> To: r-sig-teaching at r-project.org\n> Date: Saturday, 24 October, 2009, 11:00 AM\n> Send R-sig-teaching mailing list\n> submissions to\n> ??? r-sig-teaching at r-project.org\n> \n> To subscribe or unsubscribe via the World Wide Web, visit\n> ??? https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> or, via email, send a message with subject or body 'help'\n> to\n> ??? r-sig-teaching-request at r-project.org\n> \n> You can reach the person managing the list at\n> ??? r-sig-teaching-owner at r-project.org\n> \n> When replying, please edit your Subject line so it is more\n> specific\n> than \"Re: Contents of R-sig-teaching digest...\"\n> \n> \n> Today's Topics:\n> \n> ???1. Re: introducing R (Eric Lamb)\n> ???2. Re: introducing R (Gabor\n> Grothendieck)\n> \n> \n> ----------------------------------------------------------------------\n> \n> Message: 1\n> Date: Fri, 23 Oct 2009 12:03:16 -0600\n> From: Eric Lamb <eric.lamb at usask.ca>\n> Subject: Re: [R-sig-teaching] introducing R\n> To: r-sig-teaching at r-project.org\n> Message-ID: <4AE1EFE4.2020005 at usask.ca>\n> Content-Type: text/plain; charset=ISO-8859-1;\n> format=flowed\n> \n> I also have recieved a fair amount of pushback from\n> collegues who would \n> prefer their favorite program to be taught to graduate\n> students.\n> \n> When it comes to presuading people to embrace R I have\n> found that a \n> discussion of the benefits of open source software is very\n> effective. My \n> institution trains a large number of graduate students from\n> developing \n> countries who will likely have limited access to research\n> funds when \n> they return. Pointing out the benefits of training on an\n> open access \n> platform to the future research careers of these students\n> has gotten \n> many onside. The same arguement applies to students who\n> will be working \n> for small companies that cannot afford/justify a SAS\n> license.\n> \n> Cheers, Eric\n> \n> -- \n> Eric Lamb\n> Assistant Professor, Plant Ecology and Biostatistics\n> Dept. of Plant Sciences, University of Saskatchewan\n> http://homepage.usask.ca/egl388/index.html\n> \n> 4D68 Agriculture Building\n> 306-966-1799\n> eric.lamb at usask.ca\n> \n> \n> \n> ------------------------------\n> \n> Message: 2\n> Date: Fri, 23 Oct 2009 23:41:25 -0400\n> From: Gabor Grothendieck <ggrothendieck at gmail.com>\n> Subject: Re: [R-sig-teaching] introducing R\n\n> Cc: r-sig-teaching at r-project.org\n> Message-ID:\n> ??? <971536df0910232041n5154ec29ra5288c5009574e6 at mail.gmail.com>\n> Content-Type: text/plain; charset=ISO-8859-1\n> \n> On Fri, Oct 23, 2009 at 3:03 AM, Iasonas Lamprianou\n\n> wrote:\n> >? What is more, I need material in Greek.\n> \n> There is a Greek intro here:\n> \n> http://stat-athens.aueb.gr/~grstats/notes/r_giagos.pdf\n> \n> \n> \n> ------------------------------\n> \n> _______________________________________________\n> R-sig-teaching mailing list\n> R-sig-teaching at r-project.org\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n> \n> End of R-sig-teaching Digest, Vol 26, Issue 6\n> *********************************************\n> \n\n\n\n\n\n\n------------------------------\n\nMessage: 3\nDate: Sat, 24 Oct 2009 19:03:51 +0100\nFrom: Liviu Andronic <landronimirc at gmail.com>\nSubject: Re: [R-sig-teaching] bagging\nTo: ?? <kejiefinance at hotmail.com>\nCc: r-sig-teaching at r-project.org\nMessage-ID:\n\t<68b1e2610910241103v7ac4aea8wc10339f644b22ac2 at mail.gmail.com>\nContent-Type: text/plain; charset=UTF-8\n\nHello\n\nOn 10/24/09, ?? <kejiefinance at hotmail.com> wrote:\n>  I have a data set which name is \"c78p\",now I want to deal with it with bagging.% of data from c78p as training set is 50%,and number of bootstrap random samples with replacement from c78p is 5,use SVM in each run,can you help me to write the code?\n>\nFirst, such questions should be addressed to r-help.\n\nSecond, \"PLEASE do read the posting guide\nhttp://www.R-project.org/posting-guide.html and provide commented,\nminimal, self-contained, reproducible code.\"\n\nConcerning the random samples, I would suggest Quick-R [1] for a good\nbeginner's guide to R, and for bootstrapping techniques [2].\n\nRegards\nLiviu\n\n\n[1] http://www.statmethods.net/\n[2] http://www.statmethods.net/advstats/bootstrapping.html\n\n\n\n------------------------------\n\n_______________________________________________\nR-sig-teaching mailing list\nR-sig-teaching at r-project.org\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\nEnd of R-sig-teaching Digest, Vol 26, Issue 7",
+      "body_snippet": "Hello,\n\nI'd suggest also to get a copy of:\n\nThe Elements of Statistical Learning: Data Mining, Inference, and Prediction.\nSecond Edition\nFebruary 2009\nTrevor Hastie, Robert Tibshirani, Jerome Friedman",
+      "thread_id": "thread-3829a060cc2b",
+      "thread_depth": 0,
+      "month": "2009-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-d6eaa2579664",
+      "subject": "Rlight, a simplified version of R for very basic tools",
+      "message_count": 2,
+      "participants": [
+        "Christophe Genolini",
+        "Greg Snow"
+      ],
+      "started": "2009-10-03T13:03:29+02:00",
+      "last_reply": "2009-10-12T11:42:50-06:00",
+      "root_message_id": "msg-d6eaa2579664"
+    },
+    {
+      "id": "thread-35f7ef64e90e",
+      "subject": "Markov chain Monte Carlo",
+      "message_count": 1,
+      "participants": [
+        "Giovanni Petris"
+      ],
+      "started": "2009-10-07T17:40:14-05:00",
+      "last_reply": "2009-10-07T17:40:14-05:00",
+      "root_message_id": "msg-35f7ef64e90e"
+    },
+    {
+      "id": "thread-d14f01520474",
+      "subject": "Breusch-pagan and white test - check homoscedasticity",
+      "message_count": 1,
+      "participants": [
+        "Gautier RENAULT"
+      ],
+      "started": "2009-10-16T21:36:47+02:00",
+      "last_reply": "2009-10-16T21:36:47+02:00",
+      "root_message_id": "msg-d14f01520474"
+    },
+    {
+      "id": "thread-b28d6975a6ad",
+      "subject": "introducing R",
+      "message_count": 3,
+      "participants": [
+        "Gabor Grothendieck",
+        "Iasonas Lamprianou",
+        "Liviu Andronic"
+      ],
+      "started": "2009-10-23T00:03:46-07:00",
+      "last_reply": "2009-10-23T23:41:25-04:00",
+      "root_message_id": "msg-b28d6975a6ad"
+    },
+    {
+      "id": "thread-617380673901",
+      "subject": "introducing R",
+      "message_count": 1,
+      "participants": [
+        "Eric Lamb"
+      ],
+      "started": "2009-10-23T12:03:16-06:00",
+      "last_reply": "2009-10-23T12:03:16-06:00",
+      "root_message_id": "msg-617380673901"
+    },
+    {
+      "id": "thread-049baf08df67",
+      "subject": "R-sig-teaching Digest, Vol 26, Issue 6",
+      "message_count": 1,
+      "participants": [
+        "Iasonas Lamprianou"
+      ],
+      "started": "2009-10-24T09:15:23-07:00",
+      "last_reply": "2009-10-24T09:15:23-07:00",
+      "root_message_id": "msg-049baf08df67"
+    },
+    {
+      "id": "thread-6a3fa3080158",
+      "subject": "bagging",
+      "message_count": 2,
+      "participants": [
+        "Liviu Andronic",
+        "柯洁"
+      ],
+      "started": "2009-10-24T23:20:34+08:00",
+      "last_reply": "2009-10-24T19:03:51+01:00",
+      "root_message_id": "msg-6a3fa3080158"
+    },
+    {
+      "id": "thread-3829a060cc2b",
+      "subject": "bagging",
+      "message_count": 1,
+      "participants": [
+        "Luca Borger"
+      ],
+      "started": "2009-10-25T22:12:14-04:00",
+      "last_reply": "2009-10-25T22:12:14-04:00",
+      "root_message_id": "msg-3829a060cc2b"
+    }
+  ]
+}

@@ -1,0 +1,491 @@
+From dcheng6 @end|ng |rom vt@edu  Fri Jun 14 20:18:39 2019
+From: dcheng6 @end|ng |rom vt@edu (Chenguang Du)
+Date: Fri, 14 Jun 2019 14:18:39 -0400
+Subject: [R-sig-teaching] Need help to understand the code
+Message-ID: <CAB1cB5U-pj0peXt9_y+2PNRgOSrQv-3K69tFYEZsekw8Drs=Gw@mail.gmail.com>
+
+I am reading the book  R in action, but get confused by the following code
+
+mystats <- function(x, na.omit=FALSE){
+
+if (na.omit)
+
+x <- x[!is.na(x)]
+
+m <- mean(x)
+
+n <- length(x)
+
+s <- sd(x)
+
+skew <- sum((x-m)^3/s^3)/n
+
+kurt <- sum((x-m)^4/s^4)/n - 3
+
+return(c(n=n, mean=m, stdev=s, skew=skew, kurtosis=kurt))
+
+}
+
+my question is  when if control statement is used inside the function, why
+the { } after the (na.omit)  is not followed???  why it still works???
+-- 
+Chenguang Du
+Ph.D Candidate
+Educational Research and Evaluation
+School of Education
+Virginia Tech
+
+	[[alternative HTML version deleted]]
+
+
+From cdde@j@rd|n@ @end|ng |rom gm@||@com  Fri Jun 14 20:37:34 2019
+From: cdde@j@rd|n@ @end|ng |rom gm@||@com (Christopher David Desjardins)
+Date: Fri, 14 Jun 2019 13:37:34 -0500
+Subject: [R-sig-teaching] Need help to understand the code
+In-Reply-To: <CAB1cB5U-pj0peXt9_y+2PNRgOSrQv-3K69tFYEZsekw8Drs=Gw@mail.gmail.com>
+References: <CAB1cB5U-pj0peXt9_y+2PNRgOSrQv-3K69tFYEZsekw8Drs=Gw@mail.gmail.com>
+Message-ID: <CALrjt78TvcyN4Omw2Jmf0DtC=deLZ1hYwa1mTxQGdf5oi0GTow@mail.gmail.com>
+
+Hi Chenguang Du,
+
+This is really a better question for R-help as R-Sig-Teaching is about
+teaching statistics with R. But ?
+
+This function:
+
+mystats <- function(x, na.omit=FALSE){
+ if (na.omit)
+ x <- x[!is.na(x)]
+ m <- mean(x)
+ n <- length(x)
+ s <- sd(x)
+ skew <- sum((x-m)^3/s^3)/n
+ kurt <- sum((x-m)^4/s^4)/n - 3
+ return(c(n=n, mean=m, stdev=s, skew=skew, kurtosis=kurt))
+ }
+
+is equivalent to:
+
+mystats <- function(x, na.omit=FALSE){if (na.omit){
+   x <- x[!is.na(x)]
+}
+m <- mean(x)
+ n <- length(x)
+ s <- sd(x)
+ skew <- sum((x-m)^3/s^3)/n
+ kurt <- sum((x-m)^4/s^4)/n - 3
+ return(c(n=n, mean=m, stdev=s, skew=skew, kurtosis=kurt))
+ }
+
+So, the authors of that function wanted that if() statement to apply only
+to the line immediately below it (i.e., this code x <- x[!is.na(x)]) and
+not the rest of the function.
+
+On Fri, Jun 14, 2019 at 1:19 PM Chenguang Du <dcheng6 at vt.edu> wrote:
+
+> I am reading the book  R in action, but get confused by the following code
+>
+> mystats <- function(x, na.omit=FALSE){
+>
+> if (na.omit)
+>
+> x <- x[!is.na(x)]
+>
+> m <- mean(x)
+>
+> n <- length(x)
+>
+> s <- sd(x)
+>
+> skew <- sum((x-m)^3/s^3)/n
+>
+> kurt <- sum((x-m)^4/s^4)/n - 3
+>
+> return(c(n=n, mean=m, stdev=s, skew=skew, kurtosis=kurt))
+>
+> }
+>
+> my question is  when if control statement is used inside the function, why
+> the { } after the (na.omit)  is not followed???  why it still works???
+> --
+> Chenguang Du
+> Ph.D Candidate
+> Educational Research and Evaluation
+> School of Education
+> Virginia Tech
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+	[[alternative HTML version deleted]]
+
+
+From rpru|m @end|ng |rom c@|v|n@edu  Fri Jun 14 21:37:41 2019
+From: rpru|m @end|ng |rom c@|v|n@edu (Randall Pruim)
+Date: Fri, 14 Jun 2019 19:37:41 +0000
+Subject: [R-sig-teaching] Need help to understand the code
+In-Reply-To: <CALrjt78TvcyN4Omw2Jmf0DtC=deLZ1hYwa1mTxQGdf5oi0GTow@mail.gmail.com>
+References: <CAB1cB5U-pj0peXt9_y+2PNRgOSrQv-3K69tFYEZsekw8Drs=Gw@mail.gmail.com>
+ <CALrjt78TvcyN4Omw2Jmf0DtC=deLZ1hYwa1mTxQGdf5oi0GTow@mail.gmail.com>
+Message-ID: <C78839CC-B705-4078-80A4-1B8819A51211@calvin.edu>
+
+Perhaps the original question was only the syntax question about how if() statements work. That has been answered. (But I?ll add a note that omitting  { } in this situation is a good way to introduce bugs over time, so I generally avoid doing that.)
+
+But in case the question is motivated by the desire to compute summary statistics for a data set, the df_stats() function provides a simple way to do this, and the fBasics package includes functions for skew and kurtosis.  Combining, you can do this:
+
+
+library(fBasics)   # defines skewness and kurtosis
+library(ggformula) # or library(mosaic)
+
+df_stats( ~ Sepal.Length, data = iris, mean, sd, skewness, kurtosis, n = length())
+##   mean_Sepal.Length sd_Sepal.Length skewness_Sepal.Length kurtosis_Sepal.Length   n
+## 1          5.843333       0.8280661             0.3086407            -0.6058125 150
+
+df_stats( Sepal.Length ~ Species, data = iris, mean, sd, skewness, kurtosis, n = length())
+##      Species mean_Sepal.Length sd_Sepal.Length skewness_Sepal.Length kurtosis_Sepal.Length  n
+## 1     setosa             5.006       0.3524897            0.11297784            -0.4508724 50
+## 2 versicolor             5.936       0.5161711            0.09913926            -0.6939138 50
+## 3  virginica             6.588       0.6358796            0.11102862            -0.2032597 50
+
+df_stats(~Sepal.Length, data = iris)
+##   min  Q1 median  Q3 max     mean        sd   n missing
+## 1 4.3 5.1    5.8 6.4 7.9 5.843333 0.8280661 150       0
+
+There are options to control how things are named if the defaults are long for your liking.  The results are returned in a data frame, so they are suitable for downstream things like plotting with ggformula.
+
+?rjp
+
+
+
+
+On Jun 14, 2019, at 2:37 PM, Christopher David Desjardins <cddesjardins at gmail.com<mailto:cddesjardins at gmail.com>> wrote:
+
+Hi Chenguang Du,
+
+This is really a better question for R-help as R-Sig-Teaching is about
+teaching statistics with R. But ?
+
+This function:
+
+mystats <- function(x, na.omit=FALSE){
+if (na.omit)
+x <- x[!is.na(x)]
+m <- mean(x)
+n <- length(x)
+s <- sd(x)
+skew <- sum((x-m)^3/s^3)/n
+kurt <- sum((x-m)^4/s^4)/n - 3
+return(c(n=n, mean=m, stdev=s, skew=skew, kurtosis=kurt))
+}
+
+is equivalent to:
+
+mystats <- function(x, na.omit=FALSE){if (na.omit){
+  x <- x[!is.na(x)]
+}
+m <- mean(x)
+n <- length(x)
+s <- sd(x)
+skew <- sum((x-m)^3/s^3)/n
+kurt <- sum((x-m)^4/s^4)/n - 3
+return(c(n=n, mean=m, stdev=s, skew=skew, kurtosis=kurt))
+}
+
+So, the authors of that function wanted that if() statement to apply only
+to the line immediately below it (i.e., this code x <- x[!is.na(x)]) and
+not the rest of the function.
+
+On Fri, Jun 14, 2019 at 1:19 PM Chenguang Du <dcheng6 at vt.edu<mailto:dcheng6 at vt.edu>> wrote:
+
+I am reading the book  R in action, but get confused by the following code
+
+mystats <- function(x, na.omit=FALSE){
+
+if (na.omit)
+
+x <- x[!is.na(x)]
+
+m <- mean(x)
+
+n <- length(x)
+
+s <- sd(x)
+
+skew <- sum((x-m)^3/s^3)/n
+
+kurt <- sum((x-m)^4/s^4)/n - 3
+
+return(c(n=n, mean=m, stdev=s, skew=skew, kurtosis=kurt))
+
+}
+
+my question is  when if control statement is used inside the function, why
+the { } after the (na.omit)  is not followed???  why it still works???
+--
+Chenguang Du
+Ph.D Candidate
+Educational Research and Evaluation
+School of Education
+Virginia Tech
+
+       [[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org<mailto:R-sig-teaching at r-project.org> mailing list
+https://urldefense.proofpoint.com/v2/url?u=https-3A__stat.ethz.ch_mailman_listinfo_r-2Dsig-2Dteaching&d=DwIFaQ&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=3j96AZXWDZA1eiPxIVqSIQEXW9YNVKW_yfM42D6OBTE&s=jO7Yk0rUYjReb1doAvESno2PNBn6qb4iy01nuet4600&e=
+
+
+[[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org<mailto:R-sig-teaching at r-project.org> mailing list
+https://urldefense.proofpoint.com/v2/url?u=https-3A__stat.ethz.ch_mailman_listinfo_r-2Dsig-2Dteaching&d=DwIFaQ&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=3j96AZXWDZA1eiPxIVqSIQEXW9YNVKW_yfM42D6OBTE&s=jO7Yk0rUYjReb1doAvESno2PNBn6qb4iy01nuet4600&e=
+
+
+	[[alternative HTML version deleted]]
+
+
+From @neh@||kh@k@e302 @end|ng |rom gm@||@com  Fri Jun 28 07:46:50 2019
+From: @neh@||kh@k@e302 @end|ng |rom gm@||@com (hello)
+Date: Fri, 28 Jun 2019 11:16:50 +0530
+Subject: [R-sig-teaching] need help in finding value of discrimination
+Message-ID: <5d15a9ca.1c69fb81.9b75c.577a@mx.google.com>
+
+Hello Sir/ma?am
+I am snehali, doing IRT analysis for 2pl model.
+1)I have data of 38 students with 40 questions.
+2)I find value of theta(ability) of student
+Formula = ln(total_count/(1-total_count))
+At student level
+3)difficulty?of questions (item difficulty)
+Formula = ln(total_count/(1-total_count))
+4)Find probability of Item difficulty by using following code
+function (items)
+{
+????????????? ncases <- nrow(items)
+????????????? item.mean <- colMeans(items, na.rm = TRUE)
+????????????? item.mean[item.mean < (1/ncases)] <- 1/ncases
+????????????? irt.item.diff.rasch <- log((1/item.mean) - 1)
+}
+5)Now need to find?item discrimination ,this is code from?package psych
+and not understand value of x,diff,item.diff,theta,scores
+?
+?
+function (item.diff, theta, items)
+{
+????????????? irt.item.discrim <- function(x, diff, theta, scores) {
+?????????????????????????? fit <- -1 * (log(scores/(1 + exp(x * (diff - theta))) +
+???????????????????????????????????????? (1 - scores)/(1 + exp(x * (theta - diff)))))
+?????????????????????????? mean(fit, na.rm = TRUE)
+????????????? }
+????????????? nitems <- length(item.diff)
+????????????? discrim <- matrix(NaN, nitems, 2)
+????????????? for (i in 1:nitems) {
+?????????????????????????? item.fit <- optimize(irt.item.discrim, c(-5, 5), diff = item.diff[i],
+???????????????????????????????????????? theta = theta, scores = items[, i])
+?????????????????????????? discrim[i, 1] <- item.fit$minimum
+?????????????????????????? discrim[i, 2] <- item.fit$objective
+????????????? }
+????????????? irt.discrim <- discrim
+}
+Your reply is very important it will be great help for me
+
+
+I?m protected online with Avast Free Antivirus.?Get it here ? it?s free forever.
+
+
+
+
+
+
+
+Sent from Mail for Windows 10
+
+
+
+---
+This email has been checked for viruses by Avast antivirus software.
+https://www.avast.com/antivirus
+
+	[[alternative HTML version deleted]]
+
+
+From m@ech|er @end|ng |rom @t@t@m@th@ethz@ch  Fri Jun 28 09:05:07 2019
+From: m@ech|er @end|ng |rom @t@t@m@th@ethz@ch (Martin Maechler)
+Date: Fri, 28 Jun 2019 09:05:07 +0200
+Subject: [R-sig-teaching] need help in finding value of discrimination
+In-Reply-To: <5d15a9ca.1c69fb81.9b75c.577a@mx.google.com>
+References: <5d15a9ca.1c69fb81.9b75c.577a@mx.google.com>
+Message-ID: <23829.48163.942884.265657@stat.math.ethz.ch>
+
+>>>>> hello  
+>>>>>     on Fri, 28 Jun 2019 11:16:50 +0530 writes:
+
+Dear Snehali,
+this is the wrong mailing list
+(this list is for TEACHERS / Instructors of Statistics and R,
+ using R in class).
+
+Please use the R-help mailing list instead,  and see also
+  https://www.r-project.org/help.html
+
+Best regards,
+Martin Maechler
+
+
+
+    > Hello Sir/ma?am
+    
+    > I am snehali, doing IRT analysis for 2pl model.
+    > 1)I have data of 38 students with 40 questions.
+    
+    > 2)I find value of theta(ability) of student
+    > Formula = ln(total_count/(1-total_count))
+    > At student level
+    
+    > 3)difficulty?of questions (item difficulty)
+    > Formula = ln(total_count/(1-total_count))
+    
+    > 4)Find probability of Item difficulty by using following code
+    > function (items)
+    > {
+    > ????????????? ncases <- nrow(items)
+    > ????????????? item.mean <- colMeans(items, na.rm = TRUE)
+    > ????????????? item.mean[item.mean < (1/ncases)] <- 1/ncases
+    > ????????????? irt.item.diff.rasch <- log((1/item.mean) - 1)
+    > }
+    
+    > 5)Now need to find?item discrimination ,this is code from?package psych
+    > and not understand value of x,diff,item.diff,theta,scores
+    > ?
+    > ?
+    > function (item.diff, theta, items)
+    > {
+    > ????????????? irt.item.discrim <- function(x, diff, theta, scores) {
+    > ?????????????????????????? fit <- -1 * (log(scores/(1 + exp(x * (diff - theta))) +
+    > ???????????????????????????????????????? (1 - scores)/(1 + exp(x * (theta - diff)))))
+    > ?????????????????????????? mean(fit, na.rm = TRUE)
+    > ????????????? }
+    > ????????????? nitems <- length(item.diff)
+    > ????????????? discrim <- matrix(NaN, nitems, 2)
+    > ????????????? for (i in 1:nitems) {
+    > ?????????????????????????? item.fit <- optimize(irt.item.discrim, c(-5, 5), diff = item.diff[i],
+    > ???????????????????????????????????????? theta = theta, scores = items[, i])
+    > ?????????????????????????? discrim[i, 1] <- item.fit$minimum
+    > ?????????????????????????? discrim[i, 2] <- item.fit$objective
+    > ????????????? }
+    > ????????????? irt.discrim <- discrim
+    > }
+    > Your reply is very important it will be great help for me
+
+    > 
+I?m protected online with Avast Free Antivirus.?Get it here ? it?s free forever.
+
+
+
+
+
+
+
+    > Sent from Mail for Windows 10
+
+
+
+    > ---
+    > This email has been checked for viruses by Avast antivirus software.
+    > https://www.avast.com/antivirus
+
+    > [[alternative HTML version deleted]]
+
+    > _______________________________________________
+    > R-sig-teaching at r-project.org mailing list
+    > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+From je|||@ux @end|ng |rom gm@||@com  Fri Jun 28 13:24:00 2019
+From: je|||@ux @end|ng |rom gm@||@com (Jeff Laux)
+Date: Fri, 28 Jun 2019 07:24:00 -0400
+Subject: [R-sig-teaching] need help in finding value of discrimination
+In-Reply-To: <5d15a9ca.1c69fb81.9b75c.577a@mx.google.com>
+References: <5d15a9ca.1c69fb81.9b75c.577a@mx.google.com>
+Message-ID: <CANV9buQAbGsD7veqgezJ167_AvdT6NNuPy9iWgxf_YQtDhfKBw@mail.gmail.com>
+
+This is for how to teach statistics and/or R.  It is not for how to do
+analyses.  There may be some IRT sources on the internet.  You should
+search for them.
+
+
+On Fri, Jun 28, 2019 at 1:47 AM hello <snehalikhakse302 at gmail.com> wrote:
+
+> Hello Sir/ma?am
+> I am snehali, doing IRT analysis for 2pl model.
+> 1)I have data of 38 students with 40 questions.
+> 2)I find value of theta(ability) of student
+> Formula = ln(total_count/(1-total_count))
+> At student level
+> 3)difficulty of questions (item difficulty)
+> Formula = ln(total_count/(1-total_count))
+> 4)Find probability of Item difficulty by using following code
+> function (items)
+> {
+>               ncases <- nrow(items)
+>               item.mean <- colMeans(items, na.rm = TRUE)
+>               item.mean[item.mean < (1/ncases)] <- 1/ncases
+>               irt.item.diff.rasch <- log((1/item.mean) - 1)
+> }
+> 5)Now need to find item discrimination ,this is code from package psych
+> and not understand value of x,diff,item.diff,theta,scores
+>
+>
+> function (item.diff, theta, items)
+> {
+>               irt.item.discrim <- function(x, diff, theta, scores) {
+>                            fit <- -1 * (log(scores/(1 + exp(x * (diff -
+> theta))) +
+>                                          (1 - scores)/(1 + exp(x * (theta
+> - diff)))))
+>                            mean(fit, na.rm = TRUE)
+>               }
+>               nitems <- length(item.diff)
+>               discrim <- matrix(NaN, nitems, 2)
+>               for (i in 1:nitems) {
+>                            item.fit <- optimize(irt.item.discrim, c(-5,
+> 5), diff = item.diff[i],
+>                                          theta = theta, scores = items[,
+> i])
+>                            discrim[i, 1] <- item.fit$minimum
+>                            discrim[i, 2] <- item.fit$objective
+>               }
+>               irt.discrim <- discrim
+> }
+> Your reply is very important it will be great help for me
+>
+> I?m protected online with Avast Free Antivirus. Get it here ? it?s free
+> forever.
+>
+>
+>
+>
+>
+>
+> Sent from Mail for Windows 10
+>
+>
+>
+> ---
+> This email has been checked for viruses by Avast antivirus software.
+> https://www.avast.com/antivirus
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+	[[alternative HTML version deleted]]
+
+

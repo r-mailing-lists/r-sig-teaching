@@ -1,0 +1,36 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2016-02",
+  "messages": [
+    {
+      "id": "msg-d1b2cf089c45",
+      "message_id": "<CAOnqpJhSysAY+aEfRsw5cSviDqGQWLp9YD0rs3tb7_EG0WuXQg@mail.gmail.com>",
+      "from_name": "Whitt Kilburn",
+      "from_email_hash": "fe27a8f95571ad5642f70c01918746226e6fa4fada0c412d554147ec71848ae8",
+      "date": "2016-02-15T10:23:02-05:00",
+      "subject": "[R-sig-teaching] accessible introductions to ggplot2 for non stats/cs undergraduates?",
+      "subject_clean": "accessible introductions to ggplot2 for non stats/cs undergraduates?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello all,\n\nCould anyone please refer me to your preferred introduction to the\ncomponents of ggplot()?\n\nIf you have notes online or handouts you provide your students, I would\nsincerely appreciate seeing how you all introduce students to the syntax\nand broader theory.\n\nMy students are primarily social science majors, but they have all\ncompleted an introductory applied statistics course.\n\nReally any thoughts on strategies or resources would be appreciated.\n\nThank you all very much for your time.\n\nbest,\nWhitt\n**************************************************\nH. Whitt Kilburn\nAssociate Professor\nPolitical Science Department\nGrand Valley State University\nAllendale, Michigan\n***************************************************\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello all,\n\nCould anyone please refer me to your preferred introduction to the\ncomponents of ggplot()?\n\nIf you have notes online or handouts you provide your students, I would\nsincerely appreciate see",
+      "thread_id": "thread-d1b2cf089c45",
+      "thread_depth": 0,
+      "month": "2016-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-d1b2cf089c45",
+      "subject": "accessible introductions to ggplot2 for non stats/cs undergraduates?",
+      "message_count": 1,
+      "participants": [
+        "Whitt Kilburn"
+      ],
+      "started": "2016-02-15T10:23:02-05:00",
+      "last_reply": "2016-02-15T10:23:02-05:00",
+      "root_message_id": "msg-d1b2cf089c45"
+    }
+  ]
+}

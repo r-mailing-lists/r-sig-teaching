@@ -1,0 +1,38 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2010-09",
+  "messages": [
+    {
+      "id": "msg-fb6fb5db19ed",
+      "message_id": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC633E40FA23@LP-EXMBVS10.CO.IHC.COM>",
+      "from_name": "Greg Snow",
+      "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
+      "date": "2010-09-30T17:33:22-06:00",
+      "subject": "[R-sig-teaching] plotting hypothesis of correlation t-test",
+      "subject_clean": "plotting hypothesis of correlation t-test",
+      "in_reply_to": "<AANLkTinyNqfWZt7BDGOmeAmGHQXUmiKrc6+kMMtygjy9@mail.gmail.com>",
+      "references": [
+        "<AANLkTinyNqfWZt7BDGOmeAmGHQXUmiKrc6+kMMtygjy9@mail.gmail.com>"
+      ],
+      "body_plain": "It looks like the -0.361 is qt(0.025, 30) * 0.177 where 0.177 is the standard error of the mean.  And 31.481 is approximately (possible rounding error from limited reporting) 5.565/0.177, so those are the numbers on the scale of the original mean, not the t-statistic.\n\nHope this helps,\n\n-- \nGregory (Greg) L. Snow Ph.D.\nStatistical Data Center\nIntermountain Healthcare\ngreg.snow at imail.org\n801.408.8111\n\n\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-\n> bounces at r-project.org] On Behalf Of Liviu Andronic\n> Sent: Thursday, September 30, 2010 4:11 PM\n> To: R-sig-teaching\n> Cc: Richard M. Heiberger\n> Subject: [R-sig-teaching] plotting hypothesis of correlation t-test\n> \n> Dear all\n> I'm not sure that this is an r-sig-teaching per se, but I need it for\n> teaching so here I go.\n> \n> I need to plot the hypothesis of a correlation test. The only\n> semi-automated way I know to do this is RcmdrPlugin.HH. For example,\n> > cor.test(mtcars$am, mtcars$drat, alternative=\"two.sided\",\n> method=\"pearson\")\n> \n> \tPearson's product-moment correlation\n> \n> data:  mtcars$am and mtcars$drat\n> t = 5.5651, df = 30, p-value = 4.727e-06\n> alternative hypothesis: true correlation is not equal to 0\n> 95 percent confidence interval:\n>  0.4843991 0.8501319\n> sample estimates:\n>       cor\n> 0.7127111\n> > qt(c(0.025), df=30, lower.tail=F)\n> [1] 2.042272\n> \n> \n> Then I supply these data to the 'Plot Hypotheses (HH)' in Rcmdr >\n> Cont. Distributions > t distro.\n> require(RcmdrPlugin.HH)\n> normal.and.t.dist.result <- normal.and.t.dist(std.dev=NA, n=32,\n>   deg.freedom=30, mu.H0=0, xmin=NA, xmax=NA, gxbar.min=NA,\n> gxbar.max=NA,\n>   Use.alpha.right=TRUE, alpha.right=0.025, Use.alpha.left=TRUE,\n>   alpha.left=0.025, Use.mu.H1=FALSE, mu.H1=NA, Use.obs.mean=TRUE,\n>   obs.mean=5.5651, hypoth.or.conf=\"Hypoth\", col.mean=\"lime green\",\n>   col.alpha=\"blue\", col.beta=\"red\", col.conf=\"pale green\",\n>   col.conf.arrow=\"dark green\", col.mean.label=\"lime green\",\n>   col.alpha.label=\"blue\", col.beta.label=\"red\", col.conf.label=\"dark\n> green\",\n>   cex.crit=1.2)\n> \n> \n> There are several elements that I do not quite understand in the\n> resulting graph [1]:\n> - what does '0.361' correspond to? If this is the mean (x bar), why\n> would I be interested in this for this particular hypothesis testing?\n> - what does '31.481' correspond to? From the colors I understand that\n> it's related to the observed t statistic, but I cannot figure what\n> exactly it represents.\n> \n> I'd be grateful for any insights. Regards\n> Liviu\n> \n> [1] http://s000.tinyupload.com/index.php?file_id=02099991814244792735\n> \n> \n> \n> --\n> Do you know how to read?\n> http://www.alienetworks.com/srtest.cfm\n> http://goodies.xfce.org/projects/applications/xfce4-dict#speed-reader\n> Do you know how to write?\n> http://garbl.home.comcast.net/~garbl/stylemanual/e.htm#e-mail\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "It looks like the -0.361 is qt(0.025, 30) * 0.177 where 0.177 is the standard error of the mean.  And 31.481 is approximately (possible rounding error from limited reporting) 5.565/0.177, so those are",
+      "thread_id": "thread-fb6fb5db19ed",
+      "thread_depth": 0,
+      "month": "2010-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-fb6fb5db19ed",
+      "subject": "plotting hypothesis of correlation t-test",
+      "message_count": 1,
+      "participants": [
+        "Greg Snow"
+      ],
+      "started": "2010-09-30T17:33:22-06:00",
+      "last_reply": "2010-09-30T17:33:22-06:00",
+      "root_message_id": "msg-fb6fb5db19ed"
+    }
+  ]
+}

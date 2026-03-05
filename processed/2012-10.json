@@ -1,0 +1,185 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2012-10",
+  "messages": [
+    {
+      "id": "msg-ae8e074762e3",
+      "message_id": "<1349297868.27844.YahooMailNeo@web125804.mail.ne1.yahoo.com>",
+      "from_name": "Ali Zanaty",
+      "from_email_hash": "65acd645f9ed74fc7721f9ea58469b32335ac44f193ffbf59b7c89913407d9ac",
+      "date": "2012-10-03T13:57:48-07:00",
+      "subject": "[R-sig-teaching] Interpreting the results",
+      "subject_clean": "Interpreting the results",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121003/ae97dfe0/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121003/ae97dfe0/attachment.pl>",
+      "thread_id": "thread-ae8e074762e3",
+      "thread_depth": 0,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-2d73dc712b77",
+      "message_id": "<CANV9buQymauEb6FYukcFemDXWpuyi-8PEqTxFdkn1rhyJA8o6g@mail.gmail.com>",
+      "from_name": "Jeff Laux",
+      "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
+      "date": "2012-10-03T17:36:52-04:00",
+      "subject": "[R-sig-teaching] Interpreting the results",
+      "subject_clean": "Interpreting the results",
+      "in_reply_to": "<1349297868.27844.YahooMailNeo@web125804.mail.ne1.yahoo.com>",
+      "references": [
+        "<1349297868.27844.YahooMailNeo@web125804.mail.ne1.yahoo.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121003/66daece1/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121003/66daece1/attachment.pl>",
+      "thread_id": "thread-ae8e074762e3",
+      "thread_depth": 1,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-a04aff4bd2be",
+      "message_id": "<CAErODj-rnHDHBXOmRKOb6_SA1G8AQzj2GFijkRrm9nyfB6Ys1Q@mail.gmail.com>",
+      "from_name": "Paul Johnson",
+      "from_email_hash": "b96b8a38c7fef12892ac8cae395028a3b39f3acce423d9c564ab27dc864c47b3",
+      "date": "2012-10-03T21:44:48-05:00",
+      "subject": "[R-sig-teaching] Interpreting the results",
+      "subject_clean": "Interpreting the results",
+      "in_reply_to": "<1349297868.27844.YahooMailNeo@web125804.mail.ne1.yahoo.com>",
+      "references": [
+        "<1349297868.27844.YahooMailNeo@web125804.mail.ne1.yahoo.com>"
+      ],
+      "body_plain": "There appears to be a little mistake in your code\n\nOn Wed, Oct 3, 2012 at 3:57 PM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:\n> Dear All:\n> I have two variables:\n> X (nominal categorical) has 9 categories.\n> Y(ordinal categorical) has 4 categories.\n>\n> 1-I fit a logistic regression using Y as\n> the response variable and X as the independent variable. The P VALUE was\n> 0.2373. This tells me that the independent variable X is NOT significant\n> predictor.\n>\n\nif X is nominal with 9 categories, the fitted regression should\ninclude an intercept and 8 categories.  If it is only fitting one\npredictor, that means  your X is not properly understood as a factor\nvariable.\n\nIf y is ordinal, then fitting the model requires use of some addon\npackage, not something provided with R. You'd need polr, ordinal, or\nlrm from the rms package.\n\nSo I think you don't have what you think you have, and you'd better\ndouble check and then post the full code for the model along with the\noutput of str() on your data frame.\n\npj\n\n>\n> 2- I run a\n> chi-square test to test if there is a relationship (association ship) between\n> both X and Y variables. The P VALUE was 0.0013. That is there is statistical\n> evidence of association between the two variables.\n>\n> 3- I collapsed the 4 categories of the Y-variable into 2 categories. I run a\n> chi-square test to test if there is a difference(s) among proportions of the X-variable (the equality of the 9 proportions). The P VALUE was 0.0037. That is there is statistical\n> evidence of differences among the 9 proportions.\n>\n> How\n> I can explain results of one versustwo, and one versus three. I am not sure if there is a contradiction among these results.\n>  many\n> thanks\n> Ali\n>         [[alternative HTML version deleted]]\n>\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \nPaul E. Johnson\nProfessor, Political Science    Assoc. Director\n1541 Lilac Lane, Room 504     Center for Research Methods\nUniversity of Kansas               University of Kansas\nhttp://pj.freefaculty.org            http://quant.ku.edu",
+      "body_snippet": "There appears to be a little mistake in your code\n\nOn Wed, Oct 3, 2012 at 3:57 PM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:\n> Dear All:\n> I have two variables:\n> X (nominal categorical) has 9 categ",
+      "thread_id": "thread-ae8e074762e3",
+      "thread_depth": 1,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-f099780a5694",
+      "message_id": "<1349342460.35324.YahooMailNeo@web125806.mail.ne1.yahoo.com>",
+      "from_name": "Ali Zanaty",
+      "from_email_hash": "65acd645f9ed74fc7721f9ea58469b32335ac44f193ffbf59b7c89913407d9ac",
+      "date": "2012-10-04T02:21:00-07:00",
+      "subject": "[R-sig-teaching] Fw: Interpreting the results",
+      "subject_clean": "Interpreting the results",
+      "in_reply_to": "<1349297868.27844.YahooMailNeo@web125804.mail.ne1.yahoo.com>",
+      "references": [
+        "<1349297868.27844.YahooMailNeo@web125804.mail.ne1.yahoo.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121004/aae1f1aa/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121004/aae1f1aa/attachment.pl>",
+      "thread_id": "thread-ae8e074762e3",
+      "thread_depth": 1,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-ff86827e4766",
+      "message_id": "<07851CEA-E1E9-4A30-83EC-DFBAEE39454C@gmail.com>",
+      "from_name": "Timothy Bates",
+      "from_email_hash": "906d407a729647cc91c4e43ce28d4fcaa3d8c31102184befaff986e86fb70998",
+      "date": "2012-10-04T16:54:35+01:00",
+      "subject": "[R-sig-teaching] Fw: Interpreting the results",
+      "subject_clean": "Interpreting the results",
+      "in_reply_to": "<1349342460.35324.YahooMailNeo@web125806.mail.ne1.yahoo.com>",
+      "references": [
+        "<1349297868.27844.YahooMailNeo@web125804.mail.ne1.yahoo.com>",
+        "<1349342460.35324.YahooMailNeo@web125806.mail.ne1.yahoo.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121004/ea5184a6/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121004/ea5184a6/attachment.pl>",
+      "thread_id": "thread-ae8e074762e3",
+      "thread_depth": 2,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-4022936979c7",
+      "message_id": "<CAGRravawKsAZ7EZTAVJE4VE2A3M7ziUvRMSnAzm3HdWrMahokA@mail.gmail.com>",
+      "from_name": "Geoffrey Smith",
+      "from_email_hash": "6c829f2d25848af1d52a90e4b27006b9ac3763c053bf3aaf885fb0f7ceb0b753",
+      "date": "2012-10-09T11:54:40-05:00",
+      "subject": "[R-sig-teaching] teaching corp risk management",
+      "subject_clean": "teaching corp risk management",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello, I am teaching a course called \"Corporate Risk Management\" next\nsemester for masters-level students (possibly executives).  It meets\nfor fours hours on Friday evenings and Saturday mornings...so I would\nlike to build some R programming into the class.  The topics include\nvalue at risk, interest rate swaps, futures, currency swaps, credit\ndefault swaps, catastrophic risk markets, weather derivatives, and so\non.  The suggested textbook is Risk Management & Derivatives by Rene\nStulz.\n\nDoes anybody have any problem sets I could use that would involve R\nprogramming in these areas?  Can anyone suggest a textbook that would\nbuild in some R programming?  Any other suggestions for me?  Thank you\nvery much.",
+      "body_snippet": "Hello, I am teaching a course called \"Corporate Risk Management\" next\nsemester for masters-level students (possibly executives).  It meets\nfor fours hours on Friday evenings and Saturday mornings...so",
+      "thread_id": "thread-4022936979c7",
+      "thread_depth": 0,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-1939b87b1c8f",
+      "message_id": "<1351182729.48217.YahooMailClassic@web120606.mail.ne1.yahoo.com>",
+      "from_name": "Yahoo! Mail Classic",
+      "from_email_hash": "22385bbcf078dc17ff188e29e3a1eaf01aad381796219c59b64e7bb0baec2847",
+      "date": "2012-10-25T09:32:09-07:00",
+      "subject": "[R-sig-teaching] season package for time series plots",
+      "subject_clean": "season package for time series plots",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121025/dc9900bd/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121025/dc9900bd/attachment.pl>",
+      "thread_id": "thread-1939b87b1c8f",
+      "thread_depth": 0,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-9f185ba7a752",
+      "message_id": "<50896D01.8090508@balcarce.inta.gov.ar>",
+      "from_name": "Gabriela Cendoya",
+      "from_email_hash": "77293f29b8552115e2fd6df44458b48e69a2eb3337dd1869e973167ca1cb8397",
+      "date": "2012-10-25T13:46:57-03:00",
+      "subject": "[R-sig-teaching] season package for time series plots",
+      "subject_clean": "season package for time series plots",
+      "in_reply_to": "<1351182729.48217.YahooMailClassic@web120606.mail.ne1.yahoo.com>",
+      "references": [
+        "<1351182729.48217.YahooMailClassic@web120606.mail.ne1.yahoo.com>"
+      ],
+      "body_plain": "did you load the package?\nlibrary(season)\n?season\nworks for me,\n\n\n_________________________________\nLic. Mar?a Gabriela Cendoya\nMg. Sc. Biometr?a\nProf. Adjunto\nC?tedra de Estad?stica y Dise?o\nFacultad de Ciencias Agrarias\nUNMdP - Argentina\n_________________________________\n\nEl 25/10/2012 01:32 p.m., Yahoo! Mail Classic escribi?:\n> Dear R Users:\n>\n>\n>\n>\n> I am teaching regression and forecasting class. I installed the season\n> package, and I am trying to use it to get a graph of some data, but it\n> says could not find function season\n>\n>\n> Any helps that make it work will be appreciated.\n>\n> many thanks\n> abou\n>\n>\n>\n> ========================\n>\n> AbouEl-Makarim Aboueissa\n>\n> Sozan Elsalakawy\n>\n> Mohamed Agamia\n>\n>\n>\n> 246 Auburn Street, #158\n>\n> Portland, ME 04103\n>\n> USA\n>\n>\n>\n> Tel: (207) 797-2724\n>\n> Email: aboueiss at yahoo.com\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n___________________________________________________________________________\n\nAviso:\n=====\n\nEl contenido del presente e-mail y sus posibles adjuntos pertenecen al INTA y pueden contener informaci?n confidencial. Si usted no es el destinatario original de este mensaje y por este medio pudo acceder a dicha informaci?n, por favor solicitamos contactar al remitente y eliminar el mensaje de inmediato. Se encuentra prohibida la divulgaci?n, copia, distribuci?n o cualquier otro uso de la informaci?n contenida en el presente e-mail por parte de personas distintas al destinatario. \n\n\nThis e-mail contents and its possible attachments belong to INTA and may contain confidential information. If this message was not originally addressed to you, but you have accessed to such information by this means, please contact the sender and eliminate this message immediately. Circulation, copy, distribution, or any other use of the information contained in this e-mail is not allowed on part of those different from the addressee.\n\n\nAntes de imprimir este mensaje, aseg?rese de que sea necesario. Proteger el medio ambiente est? tambi?n en su mano.",
+      "body_snippet": "did you load the package?\nlibrary(season)\n?season\nworks for me,\n\n\n_________________________________\nLic. Mar?a Gabriela Cendoya\nMg. Sc. Biometr?a\nProf. Adjunto\nC?tedra de Estad?stica y Dise?o\nFacultad",
+      "thread_id": "thread-1939b87b1c8f",
+      "thread_depth": 1,
+      "month": "2012-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-ae8e074762e3",
+      "subject": "Interpreting the results",
+      "message_count": 5,
+      "participants": [
+        "Ali Zanaty",
+        "Jeff Laux",
+        "Paul Johnson",
+        "Timothy Bates"
+      ],
+      "started": "2012-10-03T13:57:48-07:00",
+      "last_reply": "2012-10-04T16:54:35+01:00",
+      "root_message_id": "msg-ae8e074762e3"
+    },
+    {
+      "id": "thread-4022936979c7",
+      "subject": "teaching corp risk management",
+      "message_count": 1,
+      "participants": [
+        "Geoffrey Smith"
+      ],
+      "started": "2012-10-09T11:54:40-05:00",
+      "last_reply": "2012-10-09T11:54:40-05:00",
+      "root_message_id": "msg-4022936979c7"
+    },
+    {
+      "id": "thread-1939b87b1c8f",
+      "subject": "season package for time series plots",
+      "message_count": 2,
+      "participants": [
+        "Gabriela Cendoya",
+        "Yahoo! Mail Classic"
+      ],
+      "started": "2012-10-25T09:32:09-07:00",
+      "last_reply": "2012-10-25T13:46:57-03:00",
+      "root_message_id": "msg-1939b87b1c8f"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2017-03",
+  "messages": [
+    {
+      "id": "msg-ea90241c9d29",
+      "message_id": "<CAE9stmdCppUwpnSKiTpJP+55UXJAOwLgM6HuP274Gxb7sggkWQ@mail.gmail.com>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "57ed60c71c38f5aa7111618f7d433e719fa232f0704722ddb27973d2f4c216c5",
+      "date": "2017-03-01T13:08:58-05:00",
+      "subject": "[R-sig-teaching] Coefficient of Partial Determination",
+      "subject_clean": "Coefficient of Partial Determination",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\n\nI am teaching a regression class. I am wondering if the *Coefficient of\nPartial Determination* in multiple linear regression can be computed in R.\nIf so, could you please let me know how?\n\n\nfullmodel <- lm(Price ~ Size + Lotsize + Bedrooms + Bathrooms)\n\n\n*I found this in the internet, but I could find the package \"rms\"*\n\n*library(rms)  # will also load Hmisc*\n\n*fit <- ols(y ~ x1 + x2, data=bf.dat) *\n\n*plt <- plot(anova(fit), what='partial R2')*\n\n*plt*\n\n\n\nHere is part of the data as an example:\n---------------------------------------------------\n\n Taxes Bedrooms Bathrooms   Price Size Lotsize\n   296        3         3  795000 2371    5850\n   242        4         3  399000 2818    4000\n   242        4         3  545000 3032    3060\n   222        4         4  909000 3540    6650\n   222        3         1  109900 1249    6360\n   222        3         3  324900 1800    4160\n   311        4         2  192900 1603    3880\n   311        3         2  215000 1450    4160\n   311        4         3  999000 3360    4800\n   311        3         2  319000 1323    5500\n   311        3         2  350000 1750    7200\n   311        3         2  249000 1400    3000\n   311        2         2  299000 1257    1700\n   307        3         2  235900 1400    2880\n   307        3         2  348000 1600    3600\n   307        4         3  314000 1794    3185\n   307        4         2  399000 1850    3300\n   307        3         3  599000 2950    5200\n   307        3         2  299000 1719    3450\n   307        3         3  425000 1472    3986\n   307        4         3 1100000 4168    4785\n   307        3         3 1500000 3880    4510\n   307        2         1  110000 1000    4000\n   307        3         2  200000 1139    3934\n   307        3         1  134900 1080    4960\n   307        4         3  250000 2000    3000\n   307        3         4  950000 1920    3800\n   307        4         2  239950 1348    4960\n   307        3         2  170000 1280    3000\n   307        3         2  285000 2400    4500\n   307        3         3  279000 1700    3500\n   307        3         2  219000 1600    3500\n   307        3         2  155000 1050    4000\n   307        3         2  389000 1415    4500\n   307        3         1  340000 1110    6360\n   279        2         1   95000  797    4500\n   279        2         2  140000 1100    4032\n   279        3         3 1100000 2602    5170\n   279        4         3  360000 2351    5400\n   252        3         3  415000 1350    3150\n   252        4         2  250000 1206    3745\n   233        3         3  559000 2628    4520\n   233        3         3  525000 2365    4640\n   233        3         3  779000 2990    8580\n   233        3         2  595000 1750    2000\n   233        4         5 1150000 5500    2160\n   233        3         2  550000 1852    3040\n   233        3         2  500000 2100    3090\n   233        4         3  279000 2580    4960\n   233        4         2  375000 1963    3350\n   243        3         3  330000 1900    5300\n   243        3         3  199000 1450    4100\n   243        2         2  165000 1000    9166\n   243        4         3 1399000 6500    4040\n   469        3         2  255000 1218    3630\n   226        2         2  325000  893    3620\n\n\n\nThank you very much for your help and support\n\nabou\n______________________\nAbouEl-Makarim Aboueissa, PhD\nUniversity of Southern Maine\nDepartment of Mathematics and Statistics\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\nI am teaching a regression class. I am wondering if the *Coefficient of\nPartial Determination* in multiple linear regression can be computed in R.\nIf so, could you please let me know how?\n\n",
+      "thread_id": "thread-ea90241c9d29",
+      "thread_depth": 0,
+      "month": "2017-03"
+    },
+    {
+      "id": "msg-f61c8008f957",
+      "message_id": "<CAE9stmcJ0VW=4QOZWbF89v_qJu8tkkM+DEK1VZKFOeAjfzCCGw@mail.gmail.com>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "57ed60c71c38f5aa7111618f7d433e719fa232f0704722ddb27973d2f4c216c5",
+      "date": "2017-03-08T11:34:14-05:00",
+      "subject": "[R-sig-teaching] Reverse the scoring of some Columns of a Data Set",
+      "subject_clean": "Reverse the scoring of some Columns of a Data Set",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All: goods morning\n\nSorry if this topic does not match with the r-sig-teaching group.\n\n\nIs there is a way to reverse the scoring of the first three columns x1, x2,\nand x3 and keep the original scores for the fourth column x4.\n\n\n*Here is an example of the data set:*\n\nx1 x2 x3 x4\n2  5   4   4\n1  1   1   6\n1  2   1   6\n2  3   2   4\n1  2   1   6\n1  3   1   6\n2  2   2   5\n2  1   1   6\n2  2   4   5\n5  5   2   1\n\nI am expecting the output to be:\nx1 x2 x3 x4\n5  5   2   4\n2  2   4   6\n2  1   1   6\n2  2   2   4\n1  3   1   6\n1  2   1   6\n2  3   2   5\n1  2   1   6\n1  1   1   5\n2  5   4   1\n\n\n\nthank you very much for your help and support\nabou\n\n______________________\nAbouEl-Makarim Aboueissa, PhD\nDepartment of Mathematics and Statistics\nUniversity of Southern Maine\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All: goods morning\n\nSorry if this topic does not match with the r-sig-teaching group.\n\n\nIs there is a way to reverse the scoring of the first three columns x1, x2,\nand x3 and keep the original sc",
+      "thread_id": "thread-f61c8008f957",
+      "thread_depth": 0,
+      "month": "2017-03"
+    },
+    {
+      "id": "msg-e8ebcc64b2b0",
+      "message_id": "<05A396B0-2AD4-4AD1-A27A-A9F9730BFC59@joelschwartz.com>",
+      "from_name": "Joel Schwartz",
+      "from_email_hash": "c0ae5a3e9c619e01102404769ffc380b8804be776bffd93f2f71cf012d12b506",
+      "date": "2017-03-08T09:02:55-08:00",
+      "subject": "[R-sig-teaching] Reverse the scoring of some Columns of a Data Set",
+      "subject_clean": "Reverse the scoring of some Columns of a Data Set",
+      "in_reply_to": "<CAE9stmcJ0VW=4QOZWbF89v_qJu8tkkM+DEK1VZKFOeAjfzCCGw@mail.gmail.com>",
+      "references": [
+        "<CAE9stmcJ0VW=4QOZWbF89v_qJu8tkkM+DEK1VZKFOeAjfzCCGw@mail.gmail.com>"
+      ],
+      "body_plain": "If your data frame is called df then you can reverse the scoring by doing df$x1 =  rev(df$x1).\n\nTo do multiple columns, you can do:\n\ndf[ , paste0(?x?,1:3)] = lapply(df[ , paste0(?x?,1:3)], rev)\n\n> On Mar 8, 2017, at 8:34 AM, AbouEl-Makarim Aboueissa <abouelmakarim1962 at gmail.com> wrote:\n> \n> Dear All: goods morning\n> \n> Sorry if this topic does not match with the r-sig-teaching group.\n> \n> \n> Is there is a way to reverse the scoring of the first three columns x1, x2,\n> and x3 and keep the original scores for the fourth column x4.\n> \n> \n> *Here is an example of the data set:*\n> \n> x1 x2 x3 x4\n> 2  5   4   4\n> 1  1   1   6\n> 1  2   1   6\n> 2  3   2   4\n> 1  2   1   6\n> 1  3   1   6\n> 2  2   2   5\n> 2  1   1   6\n> 2  2   4   5\n> 5  5   2   1\n> \n> I am expecting the output to be:\n> x1 x2 x3 x4\n> 5  5   2   4\n> 2  2   4   6\n> 2  1   1   6\n> 2  2   2   4\n> 1  3   1   6\n> 1  2   1   6\n> 2  3   2   5\n> 1  2   1   6\n> 1  1   1   5\n> 2  5   4   1\n> \n> \n> \n> thank you very much for your help and support\n> abou\n> \n> ______________________\n> AbouEl-Makarim Aboueissa, PhD\n> Department of Mathematics and Statistics\n> University of Southern Maine\n> \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "If your data frame is called df then you can reverse the scoring by doing df$x1 =  rev(df$x1).\n\nTo do multiple columns, you can do:\n\ndf[ , paste0(?x?,1:3)] = lapply(df[ , paste0(?x?,1:3)], rev)\n\n> On ",
+      "thread_id": "thread-f61c8008f957",
+      "thread_depth": 1,
+      "month": "2017-03"
+    },
+    {
+      "id": "msg-e32ae12d530c",
+      "message_id": "<D60C8978-A61B-4C62-9459-43F458FC343C@yahoo.com>",
+      "from_name": "Nicholas Horton",
+      "from_email_hash": "9e44a5ab3434adb176b17e0e24804f1ac2dc82061d5d92983e9e78e4057e0d0c",
+      "date": "2017-03-16T10:04:46-04:00",
+      "subject": "[R-sig-teaching] reversing the scoring of some columns",
+      "subject_clean": "reversing the scoring of some columns",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Joel Schwartz wrote:\n\nCc: r-sig-teaching at r-project.org\nSubject: Re: [R-sig-teaching] Reverse the scoring of some Columns of a\n\tData\tSet\nMessage-ID: <05A396B0-2AD4-4AD1-A27A-A9F9730BFC59 at joelschwartz.com>\nContent-Type: text/plain; charset=utf-8\n\nIf your data frame is called df then you can reverse the scoring by doing df$x1 = rev(df$x1).\n\nTo do multiple columns, you can do:\n\ndf[ , paste0(?x?,1:3)] = lapply(df[ , paste0(?x?,1:3)], rev)\n\n\nMY RESPONSE: Wow: that's a neat (but somewhat obfuscated) solution.  I make R and R programming a component of my upper level stats courses, but it's hard for me to imagine teaching all of the idioms that are embedded within it.  Are there cleaner ways to proceed?  How can we prepare students to be able to undertake wrangling of this sort?\n\nJust my $0.02,\n\nNick",
+      "body_snippet": "Joel Schwartz wrote:\n\nCc: r-sig-teaching at r-project.org\nSubject: Re: [R-sig-teaching] Reverse the scoring of some Columns of a\n\tData\tSet\nMessage-ID: <05A396B0-2AD4-4AD1-A27A-A9F9730BFC59 at joelschw",
+      "thread_id": "thread-e32ae12d530c",
+      "thread_depth": 0,
+      "month": "2017-03"
+    },
+    {
+      "id": "msg-8b21de831e37",
+      "message_id": "<48480198-a66a-73c8-c7e2-62ba31cc14b0@atsu.edu>",
+      "from_name": "Robert Baer",
+      "from_email_hash": "ddd5677bd41ce9ccb8239fe4a8cc1ce533091d0e3a66b906fbf82801b2b76509",
+      "date": "2017-03-16T10:07:09-05:00",
+      "subject": "[R-sig-teaching] reversing the scoring of some columns",
+      "subject_clean": "reversing the scoring of some columns",
+      "in_reply_to": "<D60C8978-A61B-4C62-9459-43F458FC343C@yahoo.com>",
+      "references": [
+        "<D60C8978-A61B-4C62-9459-43F458FC343C@yahoo.com>"
+      ],
+      "body_plain": "On 3/16/2017 9:04 AM, Nicholas Horton wrote:\n> Joel Schwartz wrote:\n>\n> Cc: r-sig-teaching at r-project.org\n> Subject: Re: [R-sig-teaching] Reverse the scoring of some Columns of a\n> \tData\tSet\n> Message-ID: <05A396B0-2AD4-4AD1-A27A-A9F9730BFC59 at joelschwartz.com>\n> Content-Type: text/plain; charset=utf-8\n>\n> If your data frame is called df then you can reverse the scoring by doing df$x1 = rev(df$x1).\n>\n> To do multiple columns, you can do:\n>\n> df[ , paste0(?x?,1:3)] = lapply(df[ , paste0(?x?,1:3)], rev)\n>\n>\n> MY RESPONSE: Wow: that's a neat (but somewhat obfuscated) solution.  I make R and R programming a component of my upper level stats courses, but it's hard for me to imagine teaching all of the idioms that are embedded within it.  Are there cleaner ways to proceed?  How can we prepare students to be able to undertake wrangling of this sort?\nOf course, I share your concern as I'm sure do many others.\n\nI have no quick answer, but what I've learned by doing this for a while \nis to pick and choose the most important idioms, and repeat them over \nand over in the context of class demo's with the students working along \nwith me.  I frequently express my own awe that you can achieve such \nthings (even if it seems a bit incomprehensible - have fun with the \nprocess of learning/teaching idioms!).  The use of RStudio with its \n\"history tab\" has revolutionized the ability of new students to take on \nthese idioms faster, because they can get a second look at the detailed \nsyntax as they did it during class.\n\nDemo problems shouldn't be about R itself.  In my case, I make the \nproblems relevant to my biomedical science students goals.  The other \nthing I typically do, is to store an \"idiom containing\" solution to a \nsample problem in a common place (for example Blackboard or the network \nfileserver) where students can find the idiomatic detail to copy from as \nthey solve their own problems.\n\nMany of the students leave the course not QUITE ready to TEACH someone \nelse or to DO idiom-containing problems by themselves in the wild, but \nI'm gratified by how much they remember as they start to work on \nanalyzing their own thesis data.  Even the idioms come back quickly if \nthey were \"learned\" in a context of relevant, discipline-specific \nproblem solving.\n\nI guess my answer is about as insightful as, \"Monkey see; Monkey do\".  \nSorry about that...\n\n\n\n>\n> Just my $0.02,\n>\n> Nick\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n-- \n\n\n--\nRobert W. Baer, Ph.D.\nProfessor of Physiology\nKirksville College of Osteopathic Medicine\nA T Still University of Health Sciences\n800 W. Jefferson St\nKirksville, MO 63501\n660-626-2321 Department\n660-626-2965 FAX",
+      "body_snippet": "On 3/16/2017 9:04 AM, Nicholas Horton wrote:\n> Joel Schwartz wrote:\n>\n> Cc: r-sig-teaching at r-project.org\n> Subject: Re: [R-sig-teaching] Reverse the scoring of some Columns of a\n> \tData\tSet\n> Messa",
+      "thread_id": "thread-e32ae12d530c",
+      "thread_depth": 1,
+      "month": "2017-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-ea90241c9d29",
+      "subject": "Coefficient of Partial Determination",
+      "message_count": 1,
+      "participants": [
+        "AbouEl-Makarim Aboueissa"
+      ],
+      "started": "2017-03-01T13:08:58-05:00",
+      "last_reply": "2017-03-01T13:08:58-05:00",
+      "root_message_id": "msg-ea90241c9d29"
+    },
+    {
+      "id": "thread-f61c8008f957",
+      "subject": "Reverse the scoring of some Columns of a Data Set",
+      "message_count": 2,
+      "participants": [
+        "AbouEl-Makarim Aboueissa",
+        "Joel Schwartz"
+      ],
+      "started": "2017-03-08T11:34:14-05:00",
+      "last_reply": "2017-03-08T09:02:55-08:00",
+      "root_message_id": "msg-f61c8008f957"
+    },
+    {
+      "id": "thread-e32ae12d530c",
+      "subject": "reversing the scoring of some columns",
+      "message_count": 2,
+      "participants": [
+        "Nicholas Horton",
+        "Robert Baer"
+      ],
+      "started": "2017-03-16T10:04:46-04:00",
+      "last_reply": "2017-03-16T10:07:09-05:00",
+      "root_message_id": "msg-e32ae12d530c"
+    }
+  ]
+}

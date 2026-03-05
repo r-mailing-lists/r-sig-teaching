@@ -1,0 +1,2917 @@
+From nctu2006 at gmail.com  Mon Jan  5 16:48:45 2015
+From: nctu2006 at gmail.com (Nguyen C.)
+Date: Mon, 5 Jan 2015 22:48:45 +0700
+Subject: [R-sig-teaching] Could not load mosaic package
+Message-ID: <CABvvk7UZMGjcFWh7rMydUdswrNUqbEU=a_OXSsFGxCJmyUr7Cw@mail.gmail.com>
+
+Dear all,
+I have installed the latest version of R (64) and mosaic  package
+sucessfully in my laptop (windown 7).
+But when I try to load mosaic with comand >library(mosaic), I got the
+following message:
+###
+>library(mosaic)
+Loading required package: car
+Loading required package: dplyr
+Error in get(".packageName", where) :
+  cannot open file 'C:/Users/Nguyen
+Tu/Documents/R/win-library/3.1/DBI/R/DBI.rdb': No such file or directory
+Error: package ?dplyr? could not be loaded
+>
+###
+I look at the win-library as mentioned above, then the folder
+'C:/Users/Nguyen Tu/Documents/R/win-library/3.1/DBI/' is empty.
+I do not know what is wrong and how to correct the problem.
+
+Please help me.
+Thank you in advance.
+Tu
+
+	[[alternative HTML version deleted]]
+
+
+From rpruim at calvin.edu  Mon Jan  5 17:47:56 2015
+From: rpruim at calvin.edu (Randall Pruim)
+Date: Mon, 5 Jan 2015 16:47:56 +0000
+Subject: [R-sig-teaching] Could not load mosaic package
+In-Reply-To: <CABvvk7UZMGjcFWh7rMydUdswrNUqbEU=a_OXSsFGxCJmyUr7Cw@mail.gmail.com>
+References: <CABvvk7UZMGjcFWh7rMydUdswrNUqbEU=a_OXSsFGxCJmyUr7Cw@mail.gmail.com>
+Message-ID: <E9BBC7E9-9E53-444E-9E8A-02E4E54CEFE3@calvin.edu>
+
+
+I?m glad you are giving the mosaic package a try, but the issue below is not with mosaic itself but with loading the dplyr package that mosaic depends on.  I?m not exactly sure what the problem is, but I would start by doing this:
+
+install.packages(?DBI?)
+install.packages(?dplyr?)
+
+to make sure you have the newest version of dplyr and DBI on your machine.  Depending on the state of your R System, you might also update all of your packages
+
+	update.packages()
+
+If you are in RStudio or one of the other environments, you can do some or all of these from the menu system instead of from the command line.
+
+If after all this, you still cannot load the mosaic package, give us a updated report and we?ll see what we can do.  But my first guess is that DBI is simply not installed on your machine.
+
+?rjp
+
+
+On Jan 5, 2015, at 10:48 AM, Nguyen C. <nctu2006 at gmail.com> wrote:
+
+> Dear all,
+> I have installed the latest version of R (64) and mosaic  package
+> sucessfully in my laptop (windown 7).
+> But when I try to load mosaic with comand >library(mosaic), I got the
+> following message:
+> ###
+>> library(mosaic)
+> Loading required package: car
+> Loading required package: dplyr
+> Error in get(".packageName", where) :
+>  cannot open file 'C:/Users/Nguyen
+> Tu/Documents/R/win-library/3.1/DBI/R/DBI.rdb': No such file or directory
+> Error: package ?dplyr? could not be loaded
+>> 
+> ###
+> I look at the win-library as mentioned above, then the folder
+> 'C:/Users/Nguyen Tu/Documents/R/win-library/3.1/DBI/' is empty.
+> I do not know what is wrong and how to correct the problem.
+> 
+> Please help me.
+> Thank you in advance.
+> Tu
+> 
+> 	[[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From nctu2006 at gmail.com  Tue Jan  6 11:35:26 2015
+From: nctu2006 at gmail.com (Nguyen C.)
+Date: Tue, 6 Jan 2015 17:35:26 +0700
+Subject: [R-sig-teaching] Could not load mosaic package
+In-Reply-To: <E9BBC7E9-9E53-444E-9E8A-02E4E54CEFE3@calvin.edu>
+References: <CABvvk7UZMGjcFWh7rMydUdswrNUqbEU=a_OXSsFGxCJmyUr7Cw@mail.gmail.com>
+	<E9BBC7E9-9E53-444E-9E8A-02E4E54CEFE3@calvin.edu>
+Message-ID: <CABvvk7UG2B-KEhW26Sgt5199WL1G7u25-HMUjCas9HyV+v-7tA@mail.gmail.com>
+
+Dear all,
+I did as Randall said and it worked.
+Thank Randall and all.
+T
+
+On Mon, Jan 5, 2015 at 11:47 PM, Randall Pruim <rpruim at calvin.edu> wrote:
+
+>
+> I?m glad you are giving the mosaic package a try, but the issue below is
+> not with mosaic itself but with loading the dplyr package that mosaic
+> depends on.  I?m not exactly sure what the problem is, but I would start by
+> doing this:
+>
+> install.packages(?DBI?)
+> install.packages(?dplyr?)
+>
+> to make sure you have the newest version of dplyr and DBI on your
+> machine.  Depending on the state of your R System, you might also update
+> all of your packages
+>
+>         update.packages()
+>
+> If you are in RStudio or one of the other environments, you can do some or
+> all of these from the menu system instead of from the command line.
+>
+> If after all this, you still cannot load the mosaic package, give us a
+> updated report and we?ll see what we can do.  But my first guess is that
+> DBI is simply not installed on your machine.
+>
+> ?rjp
+>
+>
+> On Jan 5, 2015, at 10:48 AM, Nguyen C. <nctu2006 at gmail.com> wrote:
+>
+> > Dear all,
+> > I have installed the latest version of R (64) and mosaic  package
+> > sucessfully in my laptop (windown 7).
+> > But when I try to load mosaic with comand >library(mosaic), I got the
+> > following message:
+> > ###
+> >> library(mosaic)
+> > Loading required package: car
+> > Loading required package: dplyr
+> > Error in get(".packageName", where) :
+> >  cannot open file 'C:/Users/Nguyen
+> > Tu/Documents/R/win-library/3.1/DBI/R/DBI.rdb': No such file or directory
+> > Error: package ?dplyr? could not be loaded
+> >>
+> > ###
+> > I look at the win-library as mentioned above, then the folder
+> > 'C:/Users/Nguyen Tu/Documents/R/win-library/3.1/DBI/' is empty.
+> > I do not know what is wrong and how to correct the problem.
+> >
+> > Please help me.
+> > Thank you in advance.
+> > Tu
+> >
+> >       [[alternative HTML version deleted]]
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+
+	[[alternative HTML version deleted]]
+
+
+From cgenolin at u-paris10.fr  Thu Jan  8 15:40:38 2015
+From: cgenolin at u-paris10.fr (Christophe Genolini)
+Date: Thu, 08 Jan 2015 15:40:38 +0100
+Subject: [R-sig-teaching] Random effet ANOVA,
+	presentation like the classic one.
+In-Reply-To: <1465014430.128236.1419205551395.JavaMail.yahoo@jws10034.mail.ne1.yahoo.com>
+References: <1465014430.128236.1419205551395.JavaMail.yahoo@jws10034.mail.ne1.yahoo.com>
+Message-ID: <54AE96E6.3090808@u-paris10.fr>
+
+Hi the list,
+
+I am teaching ANOVA with R. The classic case is quite easy:
+
+#--- 8< ---------------
+n <- 8        # number of individual in each group.
+kSport <- 3   # kA number of sport groups
+kSchool <- 2  # kB Number of possible school
+
+set.seed(1)
+size <- rep(c(-10+15,+20+15,-10+15,-10-15,+30-15,-20-15),each=n)+rnorm(n*kSport,170,10)
+sport <- factor(rep(rep(paste("a",1:kSport,sep=""),each=n),kSchool))
+school <- factor(rep(paste("b",1:kSchool,sep=""),each=n*kSport))
+
+summary(aov(size~sport+school+sport:school))
+
+
+              Df Sum Sq Mean Sq F value   Pr(>F)
+sport         2  13955    6978   68.91 5.46e-14 ***
+school        1  10800   10800  106.65 4.25e-13 ***
+sport:school  2    800     400    3.95   0.0268 *
+Residuals    42   4253     101
+---
+Signif. codes:  0 ?***? 0.001 ?**? 0.01 ?*? 0.05 ?.? 0.1 ? ? 1
+
+#--- 8< --------------
+
+The model with some random effect is :
+
+#--- 8< --------------
+summary(aov(size~Error(sport+school+sport:school)))
+#--- 8< --------------
+
+But I did not get the computation of the f (fSportSchool=400/101.3=3.960 ; fsport=6978/400=17.445 
+and fSchool=10800/400=27).
+So is there a way to get them?
+
+I would like to get:
+
+#--- 8< --------------
+              Df Sum Sq Mean Sq F value   Pr(>F)
+sport         2  13955    6978   17.445       ?
+school        1  10800   10800   27.000       ?
+sport:school  2    800     400    3.960       ?
+Residuals    42   4253     101
+#--- 8< --------------
+
+Thanks for you help.
+Christophe
+
+
+From sstoline at gmail.com  Thu Jan  8 19:06:04 2015
+From: sstoline at gmail.com (Steven Stoline)
+Date: Thu, 8 Jan 2015 13:06:04 -0500
+Subject: [R-sig-teaching] Analyze Nested and Split-Plot Designs with R
+Message-ID: <CAHDp66CyU9NUd-XVGgUdXMP51vzDMd7EzFT_DrcON0oBRkYzQg@mail.gmail.com>
+
+Dear All:
+
+example 14.1, Montgomery, chapter 14. *Supplier* is a *fixed factor*,
+*Batches* is a *random factor* nested within the fixed factor Supplier.
+
+How to analyze these data in R in two ways:
+
+1- Nested Design
+
+fit <- aov(purity~Supplier/Batch)
+
+
+it did not give me the expected output.
+
+
+2- as a factorial (suppliers Fixed, Batches Random)
+
+fit.out <- aov(Purity~Supplier*Batch, data=have)
+
+it did not give me the expected output.
+
+
+Here is the data set:
+===============
+
+> data
+  Supplier Batch  Purity
+1     1  1
+1     1 -1
+1     1  0
+1     2 -2
+1     2 -3
+1     2 -4
+1     3 -2
+1     3  0
+1     3  1
+1     4  1
+1     4  4
+1     4  0
+2     1  1
+2     1 -2
+2     1 -3
+2     2  0
+2     2  4
+2     2  2
+2     3 -1
+2     3  0
+2     3 -2
+2     4  0
+2     4  3
+2     4  2
+3     1  2
+3     1  4
+3     1  0
+3     2 -2
+3     2  0
+3     2  2
+3     3  1
+3     3 -1
+3     3  2
+3     4  3
+3     4  2
+3     4  1
+
+
+many thanks
+Steven
+
+-- 
+Steven M. Stoline
+1123 Forest Avenue
+Portland, ME 04112
+sstoline at gmail.com
+
+	[[alternative HTML version deleted]]
+
+
+From rmh at temple.edu  Thu Jan  8 19:58:54 2015
+From: rmh at temple.edu (Richard M. Heiberger)
+Date: Thu, 8 Jan 2015 13:58:54 -0500
+Subject: [R-sig-teaching] Analyze Nested and Split-Plot Designs with R
+In-Reply-To: <CAHDp66CyU9NUd-XVGgUdXMP51vzDMd7EzFT_DrcON0oBRkYzQg@mail.gmail.com>
+References: <CAHDp66CyU9NUd-XVGgUdXMP51vzDMd7EzFT_DrcON0oBRkYzQg@mail.gmail.com>
+Message-ID: <CAGx1TMAGaug9ut9SOkQFapFsBCuHTscARKHydu2Nf_z9fQC_YQ@mail.gmail.com>
+
+Steven,
+
+I assume you mean Montgomery 8th edition (he changed chapter numbers recently).
+
+Please state what you expect as output.
+
+For your first attempt, you have the case wrong (purity instead of Purity).
+
+Are you reading Supplier and Batch as factors.  It can't be determined from the
+printed table in your email.  Use dump (or dput) next time.   dput is
+designed for R.
+
+With the above corrections, your first model formula gives Table 14.4
+and your second
+formula gives Table 14.5.
+
+To get Table 14.6 you need to use the Error() function in the model formula.
+Here are statements for all three tables.
+
+Rich
+
+## dump("MontEx14.1","")
+MontEx14.1 <-
+structure(list(Supplier = structure(c(1L, 1L, 1L, 1L, 1L, 1L,
+1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L,
+2L, 2L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L), .Label = c("1",
+"2", "3"), class = "factor"), Batch = structure(c(1L, 1L, 1L,
+2L, 2L, 2L, 3L, 3L, 3L, 4L, 4L, 4L, 1L, 1L, 1L, 2L, 2L, 2L, 3L,
+3L, 3L, 4L, 4L, 4L, 1L, 1L, 1L, 2L, 2L, 2L, 3L, 3L, 3L, 4L, 4L,
+4L), .Label = c("1", "2", "3", "4"), class = "factor"), Purity = c(1L,
+-1L, 0L, -2L, -3L, -4L, -2L, 0L, 1L, 1L, 4L, 0L, 1L, -2L, -3L,
+0L, 4L, 2L, -1L, 0L, -2L, 0L, 3L, 2L, 2L, 4L, 0L, -2L, 0L, 2L,
+1L, -1L, 2L, 3L, 2L, 1L)), .Names = c("Supplier", "Batch", "Purity"
+), row.names = c(NA, -36L), class = "data.frame")
+
+
+
+MontEx14.1$Supplier <- factor(MontEx14.1$Supplier)
+MontEx14.1$Batch <- factor(MontEx14.1$Batch)
+
+MontEx14.1.aov1 <- aov(Purity ~ Supplier/Batch, data=MontEx14.1)
+summary(MontEx14.1.aov1)
+
+MontEx14.1.aov2 <- aov(Purity ~ Supplier*Batch, data=MontEx14.1)
+summary(MontEx14.1.aov2)
+
+MontEx14.1.aov3 <- aov(Purity ~ Supplier + Error(Supplier:Batch),
+data=MontEx14.1)
+summary(MontEx14.1.aov3)
+
+
+On Thu, Jan 8, 2015 at 1:06 PM, Steven Stoline <sstoline at gmail.com> wrote:
+> Dear All:
+>
+> example 14.1, Montgomery, chapter 14. *Supplier* is a *fixed factor*,
+> *Batches* is a *random factor* nested within the fixed factor Supplier.
+>
+> How to analyze these data in R in two ways:
+>
+> 1- Nested Design
+>
+> fit <- aov(purity~Supplier/Batch)
+>
+>
+> it did not give me the expected output.
+>
+>
+> 2- as a factorial (suppliers Fixed, Batches Random)
+>
+> fit.out <- aov(Purity~Supplier*Batch, data=have)
+>
+> it did not give me the expected output.
+>
+>
+> Here is the data set:
+> ===============
+>
+>> data
+>   Supplier Batch  Purity
+> 1     1  1
+> 1     1 -1
+> 1     1  0
+> 1     2 -2
+> 1     2 -3
+> 1     2 -4
+> 1     3 -2
+> 1     3  0
+> 1     3  1
+> 1     4  1
+> 1     4  4
+> 1     4  0
+> 2     1  1
+> 2     1 -2
+> 2     1 -3
+> 2     2  0
+> 2     2  4
+> 2     2  2
+> 2     3 -1
+> 2     3  0
+> 2     3 -2
+> 2     4  0
+> 2     4  3
+> 2     4  2
+> 3     1  2
+> 3     1  4
+> 3     1  0
+> 3     2 -2
+> 3     2  0
+> 3     2  2
+> 3     3  1
+> 3     3 -1
+> 3     3  2
+> 3     4  3
+> 3     4  2
+> 3     4  1
+>
+>
+> many thanks
+> Steven
+>
+> --
+> Steven M. Stoline
+> 1123 Forest Avenue
+> Portland, ME 04112
+> sstoline at gmail.com
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From sstoline at gmail.com  Thu Jan  8 21:04:55 2015
+From: sstoline at gmail.com (Steven Stoline)
+Date: Thu, 8 Jan 2015 15:04:55 -0500
+Subject: [R-sig-teaching] Analyze Nested and Split-Plot Designs with R
+In-Reply-To: <CAGx1TMAGaug9ut9SOkQFapFsBCuHTscARKHydu2Nf_z9fQC_YQ@mail.gmail.com>
+References: <CAHDp66CyU9NUd-XVGgUdXMP51vzDMd7EzFT_DrcON0oBRkYzQg@mail.gmail.com>
+	<CAGx1TMAGaug9ut9SOkQFapFsBCuHTscARKHydu2Nf_z9fQC_YQ@mail.gmail.com>
+Message-ID: <CAHDp66CkSoigifSPZQUD2Jp3q0A7jf8L-u5Yxzmq2J1hS8i59A@mail.gmail.com>
+
+Dear Rich:
+
+First thank you very much. it helped a lot.
+
+The F value and its p-values corresponding to the factor "Supplier"are
+different from the ones in the textbook, Montgomery 8th ed. But conclusion
+stay same (Pvalue > 0.05)
+
+
+
+In the last model (the third one) used for Table 14.6 , I am not sure what
+is wrong.
+
+
+> MontEx14.1.aov3 <- aov(Purity ~ Supplier + Error(Supplier:Batch),
+data=MontEx14.1)
+
+Warning message:
+
+In aov(Purity ~ Supplier + Error(Supplier:Batch), data = MontEx14.1) :
+  Error() model is singular
+
+
+
+
+many thanks
+Steven
+
+On Thu, Jan 8, 2015 at 1:58 PM, Richard M. Heiberger <rmh at temple.edu> wrote:
+
+> Steven,
+>
+> I assume you mean Montgomery 8th edition (he changed chapter numbers
+> recently).
+>
+> Please state what you expect as output.
+>
+> For your first attempt, you have the case wrong (purity instead of Purity).
+>
+> Are you reading Supplier and Batch as factors.  It can't be determined
+> from the
+> printed table in your email.  Use dump (or dput) next time.   dput is
+> designed for R.
+>
+> With the above corrections, your first model formula gives Table 14.4
+> and your second
+> formula gives Table 14.5.
+>
+> To get Table 14.6 you need to use the Error() function in the model
+> formula.
+> Here are statements for all three tables.
+>
+> Rich
+>
+> ## dump("MontEx14.1","")
+> MontEx14.1 <-
+> structure(list(Supplier = structure(c(1L, 1L, 1L, 1L, 1L, 1L,
+> 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L,
+> 2L, 2L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L), .Label = c("1",
+> "2", "3"), class = "factor"), Batch = structure(c(1L, 1L, 1L,
+> 2L, 2L, 2L, 3L, 3L, 3L, 4L, 4L, 4L, 1L, 1L, 1L, 2L, 2L, 2L, 3L,
+> 3L, 3L, 4L, 4L, 4L, 1L, 1L, 1L, 2L, 2L, 2L, 3L, 3L, 3L, 4L, 4L,
+> 4L), .Label = c("1", "2", "3", "4"), class = "factor"), Purity = c(1L,
+> -1L, 0L, -2L, -3L, -4L, -2L, 0L, 1L, 1L, 4L, 0L, 1L, -2L, -3L,
+> 0L, 4L, 2L, -1L, 0L, -2L, 0L, 3L, 2L, 2L, 4L, 0L, -2L, 0L, 2L,
+> 1L, -1L, 2L, 3L, 2L, 1L)), .Names = c("Supplier", "Batch", "Purity"
+> ), row.names = c(NA, -36L), class = "data.frame")
+>
+>
+>
+> MontEx14.1$Supplier <- factor(MontEx14.1$Supplier)
+> MontEx14.1$Batch <- factor(MontEx14.1$Batch)
+>
+> MontEx14.1.aov1 <- aov(Purity ~ Supplier/Batch, data=MontEx14.1)
+> summary(MontEx14.1.aov1)
+>
+> MontEx14.1.aov2 <- aov(Purity ~ Supplier*Batch, data=MontEx14.1)
+> summary(MontEx14.1.aov2)
+>
+> MontEx14.1.aov3 <- aov(Purity ~ Supplier + Error(Supplier:Batch),
+> data=MontEx14.1)
+> summary(MontEx14.1.aov3)
+>
+>
+> On Thu, Jan 8, 2015 at 1:06 PM, Steven Stoline <sstoline at gmail.com> wrote:
+> > Dear All:
+> >
+> > example 14.1, Montgomery, chapter 14. *Supplier* is a *fixed factor*,
+> > *Batches* is a *random factor* nested within the fixed factor Supplier.
+> >
+> > How to analyze these data in R in two ways:
+> >
+> > 1- Nested Design
+> >
+> > fit <- aov(purity~Supplier/Batch)
+> >
+> >
+> > it did not give me the expected output.
+> >
+> >
+> > 2- as a factorial (suppliers Fixed, Batches Random)
+> >
+> > fit.out <- aov(Purity~Supplier*Batch, data=have)
+> >
+> > it did not give me the expected output.
+> >
+> >
+> > Here is the data set:
+> > ===============
+> >
+> >> data
+> >   Supplier Batch  Purity
+> > 1     1  1
+> > 1     1 -1
+> > 1     1  0
+> > 1     2 -2
+> > 1     2 -3
+> > 1     2 -4
+> > 1     3 -2
+> > 1     3  0
+> > 1     3  1
+> > 1     4  1
+> > 1     4  4
+> > 1     4  0
+> > 2     1  1
+> > 2     1 -2
+> > 2     1 -3
+> > 2     2  0
+> > 2     2  4
+> > 2     2  2
+> > 2     3 -1
+> > 2     3  0
+> > 2     3 -2
+> > 2     4  0
+> > 2     4  3
+> > 2     4  2
+> > 3     1  2
+> > 3     1  4
+> > 3     1  0
+> > 3     2 -2
+> > 3     2  0
+> > 3     2  2
+> > 3     3  1
+> > 3     3 -1
+> > 3     3  2
+> > 3     4  3
+> > 3     4  2
+> > 3     4  1
+> >
+> >
+> > many thanks
+> > Steven
+> >
+> > --
+> > Steven M. Stoline
+> > 1123 Forest Avenue
+> > Portland, ME 04112
+> > sstoline at gmail.com
+> >
+> >         [[alternative HTML version deleted]]
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+-- 
+Steven M. Stoline
+1123 Forest Avenue
+Portland, ME 04112
+sstoline at gmail.com
+
+	[[alternative HTML version deleted]]
+
+
+From rmh at temple.edu  Thu Jan  8 21:15:47 2015
+From: rmh at temple.edu (Richard M. Heiberger)
+Date: Thu, 8 Jan 2015 15:15:47 -0500
+Subject: [R-sig-teaching] Analyze Nested and Split-Plot Designs with R
+In-Reply-To: <CAHDp66CkSoigifSPZQUD2Jp3q0A7jf8L-u5Yxzmq2J1hS8i59A@mail.gmail.com>
+References: <CAHDp66CyU9NUd-XVGgUdXMP51vzDMd7EzFT_DrcON0oBRkYzQg@mail.gmail.com>
+	<CAGx1TMAGaug9ut9SOkQFapFsBCuHTscARKHydu2Nf_z9fQC_YQ@mail.gmail.com>
+	<CAHDp66CkSoigifSPZQUD2Jp3q0A7jf8L-u5Yxzmq2J1hS8i59A@mail.gmail.com>
+Message-ID: <CAGx1TMDNT7VnzQ_z8tC=+5LqKmj1unrm+1Qhb+gmTGNgaN4trg@mail.gmail.com>
+
+Nothing is wrong.  The "Warning" makes sure you know that there is no
+numerator term in
+the "Within" stratum.  Since that is intended by this design, all is well.
+
+Any differences in numerical values are most likely an artifact of rounding.
+
+Please be specific about what you typed and what you received when
+asking questions on this
+list.  In this case, there are three models and three tables in
+Montgomery.  Your question doesn't
+say which you are asking about, nor what you differences you are
+seeing.  The general comment
+from the R-help list applies here:
+
+PLEASE do read the posting guide http://www.R-project.org/posting-guide.html
+and provide commented, minimal, self-contained, reproducible code.
+
+Rich
+
+On Thu, Jan 8, 2015 at 3:04 PM, Steven Stoline <sstoline at gmail.com> wrote:
+> Dear Rich:
+>
+> First thank you very much. it helped a lot.
+>
+> The F value and its p-values corresponding to the factor "Supplier"are
+> different from the ones in the textbook, Montgomery 8th ed. But conclusion
+> stay same (Pvalue > 0.05)
+>
+>
+>
+> In the last model (the third one) used for Table 14.6 , I am not sure what
+> is wrong.
+>
+>
+>> MontEx14.1.aov3 <- aov(Purity ~ Supplier + Error(Supplier:Batch),
+>> data=MontEx14.1)
+>
+> Warning message:
+>
+> In aov(Purity ~ Supplier + Error(Supplier:Batch), data = MontEx14.1) :
+>   Error() model is singular
+>
+>
+>
+>
+> many thanks
+> Steven
+>
+> On Thu, Jan 8, 2015 at 1:58 PM, Richard M. Heiberger <rmh at temple.edu> wrote:
+>>
+>> Steven,
+>>
+>> I assume you mean Montgomery 8th edition (he changed chapter numbers
+>> recently).
+>>
+>> Please state what you expect as output.
+>>
+>> For your first attempt, you have the case wrong (purity instead of
+>> Purity).
+>>
+>> Are you reading Supplier and Batch as factors.  It can't be determined
+>> from the
+>> printed table in your email.  Use dump (or dput) next time.   dput is
+>> designed for R.
+>>
+>> With the above corrections, your first model formula gives Table 14.4
+>> and your second
+>> formula gives Table 14.5.
+>>
+>> To get Table 14.6 you need to use the Error() function in the model
+>> formula.
+>> Here are statements for all three tables.
+>>
+>> Rich
+>>
+>> ## dump("MontEx14.1","")
+>> MontEx14.1 <-
+>> structure(list(Supplier = structure(c(1L, 1L, 1L, 1L, 1L, 1L,
+>> 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L,
+>> 2L, 2L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L), .Label = c("1",
+>> "2", "3"), class = "factor"), Batch = structure(c(1L, 1L, 1L,
+>> 2L, 2L, 2L, 3L, 3L, 3L, 4L, 4L, 4L, 1L, 1L, 1L, 2L, 2L, 2L, 3L,
+>> 3L, 3L, 4L, 4L, 4L, 1L, 1L, 1L, 2L, 2L, 2L, 3L, 3L, 3L, 4L, 4L,
+>> 4L), .Label = c("1", "2", "3", "4"), class = "factor"), Purity = c(1L,
+>> -1L, 0L, -2L, -3L, -4L, -2L, 0L, 1L, 1L, 4L, 0L, 1L, -2L, -3L,
+>> 0L, 4L, 2L, -1L, 0L, -2L, 0L, 3L, 2L, 2L, 4L, 0L, -2L, 0L, 2L,
+>> 1L, -1L, 2L, 3L, 2L, 1L)), .Names = c("Supplier", "Batch", "Purity"
+>> ), row.names = c(NA, -36L), class = "data.frame")
+>>
+>>
+>>
+>> MontEx14.1$Supplier <- factor(MontEx14.1$Supplier)
+>> MontEx14.1$Batch <- factor(MontEx14.1$Batch)
+>>
+>> MontEx14.1.aov1 <- aov(Purity ~ Supplier/Batch, data=MontEx14.1)
+>> summary(MontEx14.1.aov1)
+>>
+>> MontEx14.1.aov2 <- aov(Purity ~ Supplier*Batch, data=MontEx14.1)
+>> summary(MontEx14.1.aov2)
+>>
+>> MontEx14.1.aov3 <- aov(Purity ~ Supplier + Error(Supplier:Batch),
+>> data=MontEx14.1)
+>> summary(MontEx14.1.aov3)
+>>
+>>
+>> On Thu, Jan 8, 2015 at 1:06 PM, Steven Stoline <sstoline at gmail.com> wrote:
+>> > Dear All:
+>> >
+>> > example 14.1, Montgomery, chapter 14. *Supplier* is a *fixed factor*,
+>> > *Batches* is a *random factor* nested within the fixed factor Supplier.
+>> >
+>> > How to analyze these data in R in two ways:
+>> >
+>> > 1- Nested Design
+>> >
+>> > fit <- aov(purity~Supplier/Batch)
+>> >
+>> >
+>> > it did not give me the expected output.
+>> >
+>> >
+>> > 2- as a factorial (suppliers Fixed, Batches Random)
+>> >
+>> > fit.out <- aov(Purity~Supplier*Batch, data=have)
+>> >
+>> > it did not give me the expected output.
+>> >
+>> >
+>> > Here is the data set:
+>> > ===============
+>> >
+>> >> data
+>> >   Supplier Batch  Purity
+>> > 1     1  1
+>> > 1     1 -1
+>> > 1     1  0
+>> > 1     2 -2
+>> > 1     2 -3
+>> > 1     2 -4
+>> > 1     3 -2
+>> > 1     3  0
+>> > 1     3  1
+>> > 1     4  1
+>> > 1     4  4
+>> > 1     4  0
+>> > 2     1  1
+>> > 2     1 -2
+>> > 2     1 -3
+>> > 2     2  0
+>> > 2     2  4
+>> > 2     2  2
+>> > 2     3 -1
+>> > 2     3  0
+>> > 2     3 -2
+>> > 2     4  0
+>> > 2     4  3
+>> > 2     4  2
+>> > 3     1  2
+>> > 3     1  4
+>> > 3     1  0
+>> > 3     2 -2
+>> > 3     2  0
+>> > 3     2  2
+>> > 3     3  1
+>> > 3     3 -1
+>> > 3     3  2
+>> > 3     4  3
+>> > 3     4  2
+>> > 3     4  1
+>> >
+>> >
+>> > many thanks
+>> > Steven
+>> >
+>> > --
+>> > Steven M. Stoline
+>> > 1123 Forest Avenue
+>> > Portland, ME 04112
+>> > sstoline at gmail.com
+>> >
+>> >         [[alternative HTML version deleted]]
+>> >
+>> > _______________________________________________
+>> > R-sig-teaching at r-project.org mailing list
+>> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+>
+>
+> --
+> Steven M. Stoline
+> 1123 Forest Avenue
+> Portland, ME 04112
+> sstoline at gmail.com
+
+
+From rdiaz02 at gmail.com  Fri Jan  9 13:46:25 2015
+From: rdiaz02 at gmail.com (Ramon Diaz-Uriarte)
+Date: Fri, 09 Jan 2015 13:46:25 +0100
+Subject: [R-sig-teaching] Analyze Nested and Split-Plot Designs with R
+In-Reply-To: <CAGx1TMDNT7VnzQ_z8tC=+5LqKmj1unrm+1Qhb+gmTGNgaN4trg@mail.gmail.com>
+References: <CAHDp66CyU9NUd-XVGgUdXMP51vzDMd7EzFT_DrcON0oBRkYzQg@mail.gmail.com>
+	<CAGx1TMAGaug9ut9SOkQFapFsBCuHTscARKHydu2Nf_z9fQC_YQ@mail.gmail.com>
+	<CAHDp66CkSoigifSPZQUD2Jp3q0A7jf8L-u5Yxzmq2J1hS8i59A@mail.gmail.com>
+	<CAGx1TMDNT7VnzQ_z8tC=+5LqKmj1unrm+1Qhb+gmTGNgaN4trg@mail.gmail.com>
+Message-ID: <87bnm8dsv2.fsf@gmail.com>
+
+Dear Rich and Steven,
+
+I think Steven's comment about differences refer to the F statistics and
+p-values for the Suppliers term. In particular,
+
+summary(MontEx14.1.aov1)
+
+does not give the same F statistic for Suppliers as that shown in Table
+14.4 of Montgomery (F = 0.97 in Table 14.4, F = 2.85 in the output from
+R). But that is because the R output is computing the F statistic as the
+ratio of Suppliers Mean Squares over the Error Mean Squares. In contrast,
+in Table 14-4 of Montgomery[1] the F-ratio is from the ratio of Suppliers
+to Batches Mean Squares. This can be seen from the column labeled "Expected
+Mean Squares" (where we see we need this ratio to test the \tau), and this
+in turn corresponds to the middle column of Table 14.1, where A is Fixed
+and B is Fixed.
+
+
+So the F-ratio and p-value differences for Suppliers are not an artifact of
+rounding, but of using different denominator Mean Squares (the rationale
+for which is explained in the previous pages in Montgomery, those where he
+goes over the entries in Table 14.1). Thus even if, as Steven says,
+"(Pvalue 0.05)", they are larger than 0.05 in very different ways :-)
+
+
+
+Of course, the third model that Rich provided:
+
+MontEx14.1.aov3 <- aov(Purity ~ Supplier + Error(Supplier:Batch),
+                       data=MontEx14.1)
+summary(MontEx14.1.aov3)
+
+
+does give identical F statistics and p-values for Supplier (F = 0.97, p =
+0.42) as those in Table 14.4 and table 14.6 of Montgomery.
+
+
+
+
+In addition, and to try to make this analysis more clear (though this is
+not in Montgomery), I often find that in cases such as this it is
+instructive to average the batches: this way, we are forced to assess
+variation among Suppliers relative to the among-Batch-within-Supplier
+variation (i.e., given the perfect balance, etc, etc, here by decree we use
+the right denominator in the ratio to find the F statistic for Supplier)
+
+
+MontAverage <- aggregate(Purity ~ Supplier + Batch,
+                         data = MontEx14.1, mean)
+
+## F is same as Table 14.4 for Supplier. One can also check that the Sums of
+## Squares here are 1/3 of those in Table 14.4 for Supplier, and that the
+## Residuals SS here are 1/3 of the SS for Batches in Table 14.4.
+
+summary(aov(Purity ~ Supplier, data = MontAverage))
+
+
+
+
+Best,
+
+
+R.
+
+
+
+[1] I only have access right now to the 5th edition, so I am looking at
+Table 13-4 in p. 561, but I think this is exactly the same as Table 14-4 in
+the 8th edition.
+
+
+On Thu, 08-01-2015, at 21:15, Richard M. Heiberger <rmh at temple.edu> wrote:
+> Nothing is wrong.  The "Warning" makes sure you know that there is no
+> numerator term in
+> the "Within" stratum.  Since that is intended by this design, all is well.
+>
+> Any differences in numerical values are most likely an artifact of rounding.
+>
+> Please be specific about what you typed and what you received when
+> asking questions on this
+> list.  In this case, there are three models and three tables in
+> Montgomery.  Your question doesn't
+> say which you are asking about, nor what you differences you are
+> seeing.  The general comment
+> from the R-help list applies here:
+>
+> PLEASE do read the posting guide http://www.R-project.org/posting-guide.html
+> and provide commented, minimal, self-contained, reproducible code.
+>
+> Rich
+>
+> On Thu, Jan 8, 2015 at 3:04 PM, Steven Stoline <sstoline at gmail.com> wrote:
+>> Dear Rich:
+>>
+>> First thank you very much. it helped a lot.
+>>
+>> The F value and its p-values corresponding to the factor "Supplier"are
+>> different from the ones in the textbook, Montgomery 8th ed. But conclusion
+>> stay same (Pvalue > 0.05)
+>>
+>>
+>>
+>> In the last model (the third one) used for Table 14.6 , I am not sure what
+>> is wrong.
+>>
+>>
+>>> MontEx14.1.aov3 <- aov(Purity ~ Supplier + Error(Supplier:Batch),
+>>> data=MontEx14.1)
+>>
+>> Warning message:
+>>
+>> In aov(Purity ~ Supplier + Error(Supplier:Batch), data = MontEx14.1) :
+>>   Error() model is singular
+>>
+>>
+>>
+>>
+>> many thanks
+>> Steven
+>>
+>> On Thu, Jan 8, 2015 at 1:58 PM, Richard M. Heiberger <rmh at temple.edu> wrote:
+>>>
+>>> Steven,
+>>>
+>>> I assume you mean Montgomery 8th edition (he changed chapter numbers
+>>> recently).
+>>>
+>>> Please state what you expect as output.
+>>>
+>>> For your first attempt, you have the case wrong (purity instead of
+>>> Purity).
+>>>
+>>> Are you reading Supplier and Batch as factors.  It can't be determined
+>>> from the
+>>> printed table in your email.  Use dump (or dput) next time.   dput is
+>>> designed for R.
+>>>
+>>> With the above corrections, your first model formula gives Table 14.4
+>>> and your second
+>>> formula gives Table 14.5.
+>>>
+>>> To get Table 14.6 you need to use the Error() function in the model
+>>> formula.
+>>> Here are statements for all three tables.
+>>>
+>>> Rich
+>>>
+>>> ## dump("MontEx14.1","")
+>>> MontEx14.1 <-
+>>> structure(list(Supplier = structure(c(1L, 1L, 1L, 1L, 1L, 1L,
+>>> 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L,
+>>> 2L, 2L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L), .Label = c("1",
+>>> "2", "3"), class = "factor"), Batch = structure(c(1L, 1L, 1L,
+>>> 2L, 2L, 2L, 3L, 3L, 3L, 4L, 4L, 4L, 1L, 1L, 1L, 2L, 2L, 2L, 3L,
+>>> 3L, 3L, 4L, 4L, 4L, 1L, 1L, 1L, 2L, 2L, 2L, 3L, 3L, 3L, 4L, 4L,
+>>> 4L), .Label = c("1", "2", "3", "4"), class = "factor"), Purity = c(1L,
+>>> -1L, 0L, -2L, -3L, -4L, -2L, 0L, 1L, 1L, 4L, 0L, 1L, -2L, -3L,
+>>> 0L, 4L, 2L, -1L, 0L, -2L, 0L, 3L, 2L, 2L, 4L, 0L, -2L, 0L, 2L,
+>>> 1L, -1L, 2L, 3L, 2L, 1L)), .Names = c("Supplier", "Batch", "Purity"
+>>> ), row.names = c(NA, -36L), class = "data.frame")
+>>>
+>>>
+>>>
+>>> MontEx14.1$Supplier <- factor(MontEx14.1$Supplier)
+>>> MontEx14.1$Batch <- factor(MontEx14.1$Batch)
+>>>
+>>> MontEx14.1.aov1 <- aov(Purity ~ Supplier/Batch, data=MontEx14.1)
+>>> summary(MontEx14.1.aov1)
+>>>
+>>> MontEx14.1.aov2 <- aov(Purity ~ Supplier*Batch, data=MontEx14.1)
+>>> summary(MontEx14.1.aov2)
+>>>
+>>> MontEx14.1.aov3 <- aov(Purity ~ Supplier + Error(Supplier:Batch),
+>>> data=MontEx14.1)
+>>> summary(MontEx14.1.aov3)
+>>>
+>>>
+>>> On Thu, Jan 8, 2015 at 1:06 PM, Steven Stoline <sstoline at gmail.com> wrote:
+>>> > Dear All:
+>>> >
+>>> > example 14.1, Montgomery, chapter 14. *Supplier* is a *fixed factor*,
+>>> > *Batches* is a *random factor* nested within the fixed factor Supplier.
+>>> >
+>>> > How to analyze these data in R in two ways:
+>>> >
+>>> > 1- Nested Design
+>>> >
+>>> > fit <- aov(purity~Supplier/Batch)
+>>> >
+>>> >
+>>> > it did not give me the expected output.
+>>> >
+>>> >
+>>> > 2- as a factorial (suppliers Fixed, Batches Random)
+>>> >
+>>> > fit.out <- aov(Purity~Supplier*Batch, data=have)
+>>> >
+>>> > it did not give me the expected output.
+>>> >
+>>> >
+>>> > Here is the data set:
+>>> > ===============
+>>> >
+>>> >> data
+>>> >   Supplier Batch  Purity
+>>> > 1     1  1
+>>> > 1     1 -1
+>>> > 1     1  0
+>>> > 1     2 -2
+>>> > 1     2 -3
+>>> > 1     2 -4
+>>> > 1     3 -2
+>>> > 1     3  0
+>>> > 1     3  1
+>>> > 1     4  1
+>>> > 1     4  4
+>>> > 1     4  0
+>>> > 2     1  1
+>>> > 2     1 -2
+>>> > 2     1 -3
+>>> > 2     2  0
+>>> > 2     2  4
+>>> > 2     2  2
+>>> > 2     3 -1
+>>> > 2     3  0
+>>> > 2     3 -2
+>>> > 2     4  0
+>>> > 2     4  3
+>>> > 2     4  2
+>>> > 3     1  2
+>>> > 3     1  4
+>>> > 3     1  0
+>>> > 3     2 -2
+>>> > 3     2  0
+>>> > 3     2  2
+>>> > 3     3  1
+>>> > 3     3 -1
+>>> > 3     3  2
+>>> > 3     4  3
+>>> > 3     4  2
+>>> > 3     4  1
+>>> >
+>>> >
+>>> > many thanks
+>>> > Steven
+>>> >
+>>> > --
+>>> > Steven M. Stoline
+>>> > 1123 Forest Avenue
+>>> > Portland, ME 04112
+>>> > sstoline at gmail.com
+>>> >
+>>> >         [[alternative HTML version deleted]]
+>>> >
+>>> > _______________________________________________
+>>> > R-sig-teaching at r-project.org mailing list
+>>> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>>
+>>
+>>
+>> --
+>> Steven M. Stoline
+>> 1123 Forest Avenue
+>> Portland, ME 04112
+>> sstoline at gmail.com
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+-- 
+Ramon Diaz-Uriarte
+Department of Biochemistry, Lab B-25
+Facultad de Medicina
+Universidad Aut?noma de Madrid 
+Arzobispo Morcillo, 4
+28029 Madrid
+Spain
+
+Phone: +34-91-497-2412
+
+Email: rdiaz02 at gmail.com
+       ramon.diaz at iib.uam.es
+
+http://ligarto.org/rdiaz
+
+
+From amado at cambrasabadell.org  Thu Feb  5 09:08:21 2015
+From: amado at cambrasabadell.org (=?iso-8859-1?Q?Manel_Amado_Mart=ED?=)
+Date: Thu, 5 Feb 2015 08:08:21 +0000
+Subject: [R-sig-teaching] Optimizing loop
+Message-ID: <DB3PR05MB02681F9972299BA8B9611E8C63B0@DB3PR05MB026.eurprd05.prod.outlook.com>
+
+I'm processing a table database. To do that, I put it in a dataframe, and then I do the data processing (normalization of some fields). I'm used to program in C, and some R's facilities are not so natural to me, please, excuse me if the question is for "dummies".
+In the processing, I want to substitute some field's value depending on the previous content. For example, if field starts with a digit instead of an alpha character, the entire field from the actual row, I'll replace it with "SOLPD". I'm sure that would be another way (maybe through some apply function), but I can't figure how to do.
+The code that I'm using now, is:
+for( i in 1:nrow(dataframe2)) {
+        if(is.na(dataframe2[i,"NIF/NIE"])==FALSE){
+                if(str_locate(dataframe2[i,"NIF/NIE"],"\\d")[1]<2){
+                        sprintf("elimina NIF aut?nom: % i\n",i)
+                        dataframe2[i,"NIF"]<-"SLOPD"}
+                }
+        }
+}
+
+Thank you for your attention!
+
+
+
+
+Manel Amado i Mart?
+Cap d'Assessoria de Comer? Interior
+amado at cambrasabadell.org<mailto:amado at cambrasabadell.org>
+Tel. 93 745 12 63 ? Fax 93 745 12 64    [http://www.cambrasabadell.org/Ficheros/mails/Plantilles/facebook.png] <https://www.facebook.com/cambrasabadell>   [http://www.cambrasabadell.org/Ficheros/mails/Plantilles/Twitter.png] <https://twitter.com/CambraSabadell>   [http://www.cambrasabadell.org/Ficheros/mails/Plantilles/LinkedIn.png] <http://www.linkedin.com/company/cambra-de-comer-de-sabadell?trk=company_name>
+Av. Francesc Maci?, 35 ? 08206 Sabadell
+Apt. corr. 119 ? www.cambrasabadell.org<http://www.cambrasabadell.org>
+
+[http://www.cambrasabadell.org/Ficheros/mails/Plantilles/peu.png]
+Aquest missatge pot contenir informaci? confidencial o sotmesa a secret professional, la divulgaci? de la qual est? prohibida per la llei. Si no sou el destinatari del missatge, si us plau, esborreu-lo i comuniqueu-nos-ho immediatament, no el reenvieu ni en copieu el contingut. Si la vostra empresa no permet rebre missatges d'aquesta mena, si us plau, feu-nos-ho saber immediatament.
+Este mensaje puede contener informaci?n confidencial o sometida a secreto profesional, cuya divulgaci?n est? prohibida por la ley. Si no es usted el destinatario del mensaje, le rogamos que lo borre y nos lo notifique inmediatamente; no lo reenv?e ni copie su contenido. Si su empresa no permite la recepci?n de mensajes de este tipo, por favor h?ganoslo saber inmediatamente.
+This message may contain confidential information that i...{{dropped:11}}
+
+
+From uma at sophie.unam.mx  Thu Feb  5 18:09:52 2015
+From: uma at sophie.unam.mx (Ulises M. Alvarez)
+Date: Thu, 05 Feb 2015 11:09:52 -0600
+Subject: [R-sig-teaching] Optimizing loop
+In-Reply-To: <DB3PR05MB02681F9972299BA8B9611E8C63B0@DB3PR05MB026.eurprd05.prod.outlook.com>
+References: <DB3PR05MB02681F9972299BA8B9611E8C63B0@DB3PR05MB026.eurprd05.prod.outlook.com>
+Message-ID: <54D3A3E0.80004@sophie.unam.mx>
+
+On 02/05/2015 02:08 AM, Manel Amado Mart? wrote:
+> I'm processing a table database. To do that, I put it in a dataframe, and then I do the data processing (normalization of some fields). I'm used to program in C, and some R's facilities are not so natural to me, please, excuse me if the question is for "dummies".
+> In the processing, I want to substitute some field's value depending on the previous content. For example, if field starts with a digit instead of an alpha character, the entire field from the actual row, I'll replace it with "SOLPD". I'm sure that would be another way (maybe through some apply function), but I can't figure how to do.
+> The code that I'm using now, is:
+> for( i in 1:nrow(dataframe2)) {
+>          if(is.na(dataframe2[i,"NIF/NIE"])==FALSE){
+>                  if(str_locate(dataframe2[i,"NIF/NIE"],"\\d")[1]<2){
+>                          sprintf("elimina NIF aut?nom: % i\n",i)
+>                          dataframe2[i,"NIF"]<-"SLOPD"}
+>                  }
+>          }
+> }
+>
+> Thank you for your attention!
+
+Hi:
+
+You may take a look at the dplyr library:
+
+https://github.com/hadley/dplyr
+
+If you provide a small, reproducible example, we may provide further help.
+-- 
+Ulises M. Alvarez
+http://sophie.unam.mx/
+
+
+From jones at reed.edu  Thu Feb  5 20:45:40 2015
+From: jones at reed.edu (Albyn Jones)
+Date: Thu, 5 Feb 2015 11:45:40 -0800
+Subject: [R-sig-teaching] Optimizing loop
+In-Reply-To: <54D3A3E0.80004@sophie.unam.mx>
+References: <DB3PR05MB02681F9972299BA8B9611E8C63B0@DB3PR05MB026.eurprd05.prod.outlook.com>
+	<54D3A3E0.80004@sophie.unam.mx>
+Message-ID: <CA+3jU8HomwQq7NDqS90zFwiVF3Ortk9AjnOZuEOESycG=LxO4A@mail.gmail.com>
+
+Actually, this question should be re-directed to the R-Help list - it is
+not about teaching with R.
+
+albyn
+
+On Thu, Feb 5, 2015 at 9:09 AM, Ulises M. Alvarez <uma at sophie.unam.mx>
+wrote:
+
+> On 02/05/2015 02:08 AM, Manel Amado Mart? wrote:
+>
+>> I'm processing a table database. To do that, I put it in a dataframe, and
+>> then I do the data processing (normalization of some fields). I'm used to
+>> program in C, and some R's facilities are not so natural to me, please,
+>> excuse me if the question is for "dummies".
+>> In the processing, I want to substitute some field's value depending on
+>> the previous content. For example, if field starts with a digit instead of
+>> an alpha character, the entire field from the actual row, I'll replace it
+>> with "SOLPD". I'm sure that would be another way (maybe through some apply
+>> function), but I can't figure how to do.
+>> The code that I'm using now, is:
+>> for( i in 1:nrow(dataframe2)) {
+>>          if(is.na(dataframe2[i,"NIF/NIE"])==FALSE){
+>>                  if(str_locate(dataframe2[i,"NIF/NIE"],"\\d")[1]<2){
+>>                          sprintf("elimina NIF aut?nom: % i\n",i)
+>>                          dataframe2[i,"NIF"]<-"SLOPD"}
+>>                  }
+>>          }
+>> }
+>>
+>> Thank you for your attention!
+>>
+>
+> Hi:
+>
+> You may take a look at the dplyr library:
+>
+> https://github.com/hadley/dplyr
+>
+> If you provide a small, reproducible example, we may provide further help.
+> --
+> Ulises M. Alvarez
+> http://sophie.unam.mx/
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+	[[alternative HTML version deleted]]
+
+
+From amado at cambrasabadell.org  Fri Feb  6 08:46:39 2015
+From: amado at cambrasabadell.org (=?utf-8?B?TWFuZWwgQW1hZG8gTWFydMOt?=)
+Date: Fri, 6 Feb 2015 07:46:39 +0000
+Subject: [R-sig-teaching] Optimizing loop
+In-Reply-To: <CA+3jU8HomwQq7NDqS90zFwiVF3Ortk9AjnOZuEOESycG=LxO4A@mail.gmail.com>
+References: <DB3PR05MB02681F9972299BA8B9611E8C63B0@DB3PR05MB026.eurprd05.prod.outlook.com>
+	<54D3A3E0.80004@sophie.unam.mx>
+	<CA+3jU8HomwQq7NDqS90zFwiVF3Ortk9AjnOZuEOESycG=LxO4A@mail.gmail.com>
+Message-ID: <DB3PR05MB02633283EB2E3A6CE1650F0C6380@DB3PR05MB026.eurprd05.prod.outlook.com>
+
+Ok, thanks to your help, and suggestions.
+
+
+
+
+
+Manel Amado i Mart?
+Cap d'Assessoria de Comer? Interior
+amado at cambrasabadell.org<mailto:amado at cambrasabadell.org>
+Tel. 93 745 12 63 ? Fax 93 745 12 64
+
+[Segueix-nos a Facebook]<https://www.facebook.com/cambrasabadell>  [Segueix-nos a Twitter] <https://twitter.com/CambraSabadell>   [Segueix-nos a LinkedIn] <http://www.linkedin.com/company/cambra-de-comer-de-sabadell?trk=company_name>
+Av. Francesc Maci?, 35 ? 08206 Sabadell
+Apt. corr. 119 ? www.cambrasabadell.org<http://www.cambrasabadell.org>
+
+
+
+
+De: Albyn Jones [mailto:jones at reed.edu]
+Enviat: dijous, 5 / febrer / 2015 20:46
+Per a: Ulises M. Alvarez
+A/c: Manel Amado Mart?; r-sig-teaching at r-project.org
+Tema: Re: [R-sig-teaching] Optimizing loop
+
+Actually, this question should be re-directed to the R-Help list - it is not about teaching with R.
+
+albyn
+
+On Thu, Feb 5, 2015 at 9:09 AM, Ulises M. Alvarez <uma at sophie.unam.mx<mailto:uma at sophie.unam.mx>> wrote:
+On 02/05/2015 02:08 AM, Manel Amado Mart? wrote:
+I'm processing a table database. To do that, I put it in a dataframe, and then I do the data processing (normalization of some fields). I'm used to program in C, and some R's facilities are not so natural to me, please, excuse me if the question is for "dummies".
+In the processing, I want to substitute some field's value depending on the previous content. For example, if field starts with a digit instead of an alpha character, the entire field from the actual row, I'll replace it with "SOLPD". I'm sure that would be another way (maybe through some apply function), but I can't figure how to do.
+The code that I'm using now, is:
+for( i in 1:nrow(dataframe2)) {
+         if(is.na<http://is.na>(dataframe2[i,"NIF/NIE"])==FALSE){
+                 if(str_locate(dataframe2[i,"NIF/NIE"],"\\d<file:///\\d>")[1]<2){
+                         sprintf("elimina NIF aut?nom: % i\n",i)
+                         dataframe2[i,"NIF"]<-"SLOPD"}
+                 }
+         }
+}
+
+Thank you for your attention!
+
+Hi:
+
+You may take a look at the dplyr library:
+
+https://github.com/hadley/dplyr
+
+If you provide a small, reproducible example, we may provide further help.
+--
+Ulises M. Alvarez
+http://sophie.unam.mx/
+
+_______________________________________________
+R-sig-teaching at r-project.org<mailto:R-sig-teaching at r-project.org> mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+	[[alternative HTML version deleted]]
+
+
+From msharp at txbiomed.org  Fri Feb  6 23:46:53 2015
+From: msharp at txbiomed.org (Mark Sharp)
+Date: Fri, 6 Feb 2015 16:46:53 -0600
+Subject: [R-sig-teaching] Optimizing loop
+In-Reply-To: <DB3PR05MB02681F9972299BA8B9611E8C63B0@DB3PR05MB026.eurprd05.prod.outlook.com>
+References: <DB3PR05MB02681F9972299BA8B9611E8C63B0@DB3PR05MB026.eurprd05.prod.outlook.com>
+Message-ID: <A4004C60-A704-4BE1-B97F-D1BBE8DEB231@txbiomed.org>
+
+Manel,
+
+# I recommend the stringi package, which has deliberately copied much
+#    of the syntax used by Hadley's wonderful stringr package.
+# However, it does more and is much faster.
+# Since you are not requiring anything complex you can use base R functionality
+#    for everything, but I think the stringi syntax is cleaner and it is all
+#    C++ code under the covers.
+
+library(stringi)
+seed(1)
+len <- 10
+# Let's make a dataframe with some data.
+# The column name of 'NIF/NIE' is problematic.
+# Although you can force it, R is not going to like it.
+# Use an underscore or period.
+
+df_2 <- data.frame('NIF_NIE' = sample(c(NA, 'starts with alpha', '1234numerals'),
+                                      len, replace = TRUE),
+                   col2 = 1:len, stringsAsFactors = FALSE)
+df_2 # see what it looks like
+df_2$NIF_NIE[!is.na(df_2$NIF_NIE) &
+    stri_detect_regex(df_2$NIF_NIE, '^[0-9]')] <- 'SLOPD'
+df_2
+
+# end of code
+
+On my iMac with len set to 10^6, this takes less than a tenth of a second.
+
+> start.time <- Sys.time()
+> len <- 1000000
+> df_2 <- data.frame('NIF_NIE' = sample(c(NA, 'starts with alpha', '1234numerals'), len, replace = TRUE),
++     col2 = 1:len, stringsAsFactors = FALSE)
+> end.time <- Sys.time()
+> time.taken <- end.time - start.time
+> time.taken
+Time difference of 0.08968401 secs
+
+R. Mark Sharp, Ph.D.
+Director of Primate Records Database
+Southwest National Primate Research Center
+Texas Biomedical Research Institute
+P.O. Box 760549
+San Antonio, TX 78245-0549
+Telephone: (210)258-9476
+e-mail: msharp at TxBiomed.org
+
+
+
+
+
+
+
+> On Feb 5, 2015, at 2:08 AM, Manel Amado Mart? <amado at cambrasabadell.org> wrote:
+>
+> I'm processing a table database. To do that, I put it in a dataframe, and then I do the data processing (normalization of some fields). I'm used to program in C, and some R's facilities are not so natural to me, please, excuse me if the question is for "dummies".
+> In the processing, I want to substitute some field's value depending on the previous content. For example, if field starts with a digit instead of an alpha character, the entire field from the actual row, I'll replace it with "SOLPD". I'm sure that would be another way (maybe through some apply function), but I can't figure how to do.
+> The code that I'm using now, is:
+> for( i in 1:nrow(dataframe2)) {
+>        if(is.na(dataframe2[i,"NIF/NIE"])==FALSE){
+>                if(str_locate(dataframe2[i,"NIF/NIE"],"\\d")[1]<2){
+>                        sprintf("elimina NIF aut?nom: % i\n",i)
+>                        dataframe2[i,"NIF"]<-"SLOPD"}
+>                }
+>        }
+> }
+>
+> Thank you for your attention!
+>
+>
+>
+>
+> Manel Amado i Mart?
+> Cap d'Assessoria de Comer? Interior
+> amado at cambrasabadell.org<mailto:amado at cambrasabadell.org>
+> Tel. 93 745 12 63 ? Fax 93 745 12 64    [http://www.cambrasabadell.org/Ficheros/mails/Plantilles/facebook.png] <https://www.facebook.com/cambrasabadell>   [http://www.cambrasabadell.org/Ficheros/mails/Plantilles/Twitter.png] <https://twitter.com/CambraSabadell>   [http://www.cambrasabadell.org/Ficheros/mails/Plantilles/LinkedIn.png] <http://www.linkedin.com/company/cambra-de-comer-de-sabadell?trk=company_name>
+> Av. Francesc Maci?, 35 ? 08206 Sabadell
+> Apt. corr. 119 ? www.cambrasabadell.org<http://www.cambrasabadell.org>
+>
+> [http://www.cambrasabadell.org/Ficheros/mails/Plantilles/peu.png]
+> Aquest missatge pot contenir informaci? confidencial o sotmesa a secret professional, la divulgaci? de la qual est? prohibida per la llei. Si no sou el destinatari del missatge, si us plau, esborreu-lo i comuniqueu-nos-ho immediatament, no el reenvieu ni en copieu el contingut. Si la vostra empresa no permet rebre missatges d'aquesta mena, si us plau, feu-nos-ho saber immediatament.
+> Este mensaje puede contener informaci?n confidencial o sometida a secreto profesional, cuya divulgaci?n est? prohibida por la ley. Si no es usted el destinatario del mensaje, le rogamos que lo borre y nos lo notifique inmediatamente; no lo reenv?e ni copie su contenido. Si su empresa no permite la recepci?n de mensajes de este tipo, por favor h?ganoslo saber inmediatamente.
+> This message may contain confidential information that i...{{dropped:11}}
+>
+> <ATT00001.c>
+
+
+NOTICE:  This E-Mail (including attachments) is confidential and may be legally privileged.  It is covered by the Electronic Communications Privacy Act, 18 U.S.C.2510-2521.  If you are not the intended recipient, you are hereby notified that any retention, dissemination, distribution or copying of this communication is strictly prohibited.  Please reply to the sender that you have received this message in error, then delete it.
+
+From msharp at txbiomed.org  Fri Feb  6 23:47:51 2015
+From: msharp at txbiomed.org (Mark Sharp)
+Date: Fri, 6 Feb 2015 16:47:51 -0600
+Subject: [R-sig-teaching] Optimizing loop
+In-Reply-To: <DB3PR05MB02681F9972299BA8B9611E8C63B0@DB3PR05MB026.eurprd05.prod.outlook.com>
+References: <DB3PR05MB02681F9972299BA8B9611E8C63B0@DB3PR05MB026.eurprd05.prod.outlook.com>
+Message-ID: <76D7987D-72DD-4553-BBFA-A7E8EA901666@TxBiomed.org>
+
+Manel,
+
+# I recommend the stringi package, which has deliberately copied much
+#    of the syntax used by Hadley's wonderful stringr package.
+# However, it does more and is much faster.
+# Since you are not requiring anything complex you can use base R functionality
+#    for everything, but I think the stringi syntax is cleaner and it is all
+#    C++ code under the covers.
+
+library(stringi)
+seed(1)
+len <- 10
+# Let's make a dataframe with some data.
+# The column name of 'NIF/NIE' is problematic.
+# Although you can force it, R is not going to like it.
+# Use an underscore or period.
+
+df_2 <- data.frame('NIF_NIE' = sample(c(NA, 'starts with alpha', '1234numerals'),
+                                      len, replace = TRUE),
+                  col2 = 1:len, stringsAsFactors = FALSE)
+df_2 # see what it looks like
+df_2$NIF_NIE[!is.na(df_2$NIF_NIE) &
+   stri_detect_regex(df_2$NIF_NIE, '^[0-9]')] <- 'SLOPD'
+df_2
+
+# end of code
+
+On my iMac with len set to 10^6, this takes less than a tenth of a second.
+
+> start.time <- Sys.time()
+> len <- 1000000
+> df_2 <- data.frame('NIF_NIE' = sample(c(NA, 'starts with alpha', '1234numerals'), len, replace = TRUE),
++     col2 = 1:len, stringsAsFactors = FALSE)
+> end.time <- Sys.time()
+> time.taken <- end.time - start.time
+> time.taken
+Time difference of 0.08968401 secs
+
+R. Mark Sharp, Ph.D.
+Director of Primate Records Database
+Southwest National Primate Research Center
+Texas Biomedical Research Institute
+P.O. Box 760549
+San Antonio, TX 78245-0549
+Telephone: (210)258-9476
+e-mail: msharp at TxBiomed.org
+
+
+
+
+
+
+
+> On Feb 5, 2015, at 2:08 AM, Manel Amado Mart? <amado at cambrasabadell.org> wrote:
+>
+> I'm processing a table database. To do that, I put it in a dataframe, and then I do the data processing (normalization of some fields). I'm used to program in C, and some R's facilities are not so natural to me, please, excuse me if the question is for "dummies".
+> In the processing, I want to substitute some field's value depending on the previous content. For example, if field starts with a digit instead of an alpha character, the entire field from the actual row, I'll replace it with "SOLPD". I'm sure that would be another way (maybe through some apply function), but I can't figure how to do.
+> The code that I'm using now, is:
+> for( i in 1:nrow(dataframe2)) {
+>       if(is.na(dataframe2[i,"NIF/NIE"])==FALSE){
+>               if(str_locate(dataframe2[i,"NIF/NIE"],"\\d")[1]<2){
+>                       sprintf("elimina NIF aut?nom: % i\n",i)
+>                       dataframe2[i,"NIF"]<-"SLOPD"}
+>               }
+>       }
+> }
+>
+> Thank you for your attention!
+>
+>
+>
+>
+> Manel Amado i Mart?
+> Cap d'Assessoria de Comer? Interior
+> amado at cambrasabadell.org<mailto:amado at cambrasabadell.org>
+> Tel. 93 745 12 63 ? Fax 93 745 12 64    [http://www.cambrasabadell.org/Ficheros/mails/Plantilles/facebook.png] <https://www.facebook.com/cambrasabadell>   [http://www.cambrasabadell.org/Ficheros/mails/Plantilles/Twitter.png] <https://twitter.com/CambraSabadell>   [http://www.cambrasabadell.org/Ficheros/mails/Plantilles/LinkedIn.png] <http://www.linkedin.com/company/cambra-de-comer-de-sabadell?trk=company_name>
+> Av. Francesc Maci?, 35 ? 08206 Sabadell
+> Apt. corr. 119 ? www.cambrasabadell.org<http://www.cambrasabadell.org>
+>
+> [http://www.cambrasabadell.org/Ficheros/mails/Plantilles/peu.png]
+> Aquest missatge pot contenir informaci? confidencial o sotmesa a secret professional, la divulgaci? de la qual est? prohibida per la llei. Si no sou el destinatari del missatge, si us plau, esborreu-lo i comuniqueu-nos-ho immediatament, no el reenvieu ni en copieu el contingut. Si la vostra empresa no permet rebre missatges d'aquesta mena, si us plau, feu-nos-ho saber immediatament.
+> Este mensaje puede contener informaci?n confidencial o sometida a secreto profesional, cuya divulgaci?n est? prohibida por la ley. Si no es usted el destinatario del mensaje, le rogamos que lo borre y nos lo notifique inmediatamente; no lo reenv?e ni copie su contenido. Si su empresa no permite la recepci?n de mensajes de este tipo, por favor h?ganoslo saber inmediatamente.
+> This message may contain confidential information that i...{{dropped:11}}
+>
+> <ATT00001.c>
+
+R. Mark Sharp, Ph.D.
+Director of Primate Records Database
+Southwest National Primate Research Center
+Texas Biomedical Research Institute
+P.O. Box 760549
+San Antonio, TX 78245-0549
+Telephone: (210)258-9476
+e-mail: msharp at TxBiomed.org
+
+
+
+
+
+
+
+
+NOTICE:  This E-Mail (including attachments) is confidential and may be legally privileged.  It is covered by the Electronic Communications Privacy Act, 18 U.S.C.2510-2521.  If you are not the intended recipient, you are hereby notified that any retention, dissemination, distribution or copying of this communication is strictly prohibited.  Please reply to the sender that you have received this message in error, then delete it.
+
+From cryan at binghamton.edu  Sat Feb 14 05:27:56 2015
+From: cryan at binghamton.edu (Christopher W. Ryan)
+Date: Fri, 13 Feb 2015 23:27:56 -0500
+Subject: [R-sig-teaching] long term follow up from R workshops with high
+	school students
+Message-ID: <54DECECC.9010507@binghamton.edu>
+
+Some of you may recall, from a couple years back, a discussion of
+teaching R to high school students. Thought the group might be
+interested in some follow up.
+
+I did two 5-hour workshops with a group of students in a longitudinal
+science research class at Rondout Valley High School in the Hudson
+Valley region of New York State.
+
+Their teacher is retiring after many years of service, and she was kind
+enough to drop me a line.  Edited to remove some personal info, here is
+what she wrote:
+
+=============================================
+HI Chris,
+
+. . . I did want to tell you that three of my senior students (you came
+to visit these students 2X) have continued to learn R up to an
+intermediate level. Two of my juniors (out of six) are learning R on
+their own up to an intermediate level. Two of these have research
+projects that will involve R in the analysis. Two students did not use R
+but are capable of using other statistical analysis programs. Of my
+twelve Junior and senior students  five of them are much more capable
+with statistical analysis and readily continue to pursue coding and
+statistics. One of the Juniors is teaching other students R and other
+coding and has formed a computer club. I am really amazed at this
+success . . . .  This is an inspiration to me. Students are willing to
+go into areas that are completely unknown and become mathematically
+literate in coding and statistics . . . . So you are right Chris you can
+tell your friends on the R list that high school students can learn R
+and become adept at it.
+
+
+From sstoline at gmail.com  Sat Feb 21 11:37:12 2015
+From: sstoline at gmail.com (Steven Stoline)
+Date: Sat, 21 Feb 2015 05:37:12 -0500
+Subject: [R-sig-teaching] Normal Distribution Table
+Message-ID: <CAHDp66CspO0MwCij3DwcNzx69A7G70zj5Zv-bJmCMBNbNJr8NA@mail.gmail.com>
+
+Dear All:
+
+I am trying to use the below R code to create the standard normal
+distribution table. But I need some helps on the output:
+
+1- how I can insert one line-space between each two rows.
+
+2- there is  one "<NA>" in the output, how to remove it from the output.
+
+Simply copy-paste the below code into R.
+
+
+Here is the Code:
+============
+
+
+columnz<-c(0.00, 0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09)
+
+
+rowz<-c(0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,
+
+2.0,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,2.9,3.0,3.1,3.2,3.3,3.4,3.5,3.6,3.7,3.8,3.9,4.0)
+
+
+normal.table<-function(columnz,rowz){
+
+
+m<-length(rowz)
+
+n<-length(columnz)
+
+
+A<-matrix(NA, nrow = m+1 , ncol = n+1)
+
+
+for (i in (1:m+1)) {
+
+    A[i,1]<-"   "
+
+}
+
+
+for (j in (1:n+1)) {
+
+    A[1,j]<-"------"
+
+}
+
+
+for (i in (1:m)) {
+  for (j in (1:n)){
+
+####    A[i,j]<-round(pnorm(rowz[i]+columnz[j]),4)
+
+   A[i+1,j+1]<-round(pnorm(rowz[i]+columnz[j]),4)
+
+
+  }
+
+}
+
+
+
+ dimnames(A)<-list(c("  ",
+"0.0","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9",
+
+"1.0","1.1","1.2","1.3","1.4","1.5","1.6","1.7","1.8","1.9",
+
+"2.0","2.1","2.2","2.3","2.4","2.5","2.6","2.7","2.8","2.9",
+
+"3.0","3.1","3.2","3.3","3.4","3.5","3.6","3.7","3.8","3.9","4.0"),
+                    c("  ", " 0.00", " 0.01", " 0.02", " 0.03", " 0.04", "
+0.05", " 0.06", " 0.07", " 0.08", " 0.09"))
+
+ print(A,quote=F)
+
+ invisible()
+
+}
+
+normal.table(columnz,rowz)
+
+
+with many thanks
+Steve
+
+-- 
+Steven M. Stoline
+1123 Forest Avenue
+Portland, ME 04112
+sstoline at gmail.com
+
+	[[alternative HTML version deleted]]
+
+
+From sstoline at gmail.com  Sat Feb 21 11:49:17 2015
+From: sstoline at gmail.com (Steven Stoline)
+Date: Sat, 21 Feb 2015 05:49:17 -0500
+Subject: [R-sig-teaching] Fwd: Normal Distribution Table
+In-Reply-To: <CAHDp66CspO0MwCij3DwcNzx69A7G70zj5Zv-bJmCMBNbNJr8NA@mail.gmail.com>
+References: <CAHDp66CspO0MwCij3DwcNzx69A7G70zj5Zv-bJmCMBNbNJr8NA@mail.gmail.com>
+Message-ID: <CAHDp66BiAW9r+DEv7Kckf22iXxK3juur1WNDhxUbxL2kTKwz3w@mail.gmail.com>
+
+One more thing;
+
+3- how to force all output to be in a 4 decimal format. e.g. 1 should look
+like 1.0000.
+
+thanks
+steve
+---------- Forwarded message ----------
+From: Steven Stoline <sstoline at gmail.com>
+Date: Sat, Feb 21, 2015 at 5:37 AM
+Subject: Normal Distribution Table
+To: R-sig-teaching <R-sig-teaching at r-project.org>
+
+
+Dear All:
+
+I am trying to use the below R code to create the standard normal
+distribution table. But I need some helps on the output:
+
+1- how I can insert one line-space between each two rows.
+
+2- there is  one "<NA>" in the output, how to remove it from the output.
+
+Simply copy-paste the below code into R.
+
+
+Here is the Code:
+============
+
+
+columnz<-c(0.00, 0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09)
+
+
+rowz<-c(0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,
+
+2.0,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,2.9,3.0,3.1,3.2,3.3,3.4,3.5,3.6,3.7,3.8,3.9,4.0)
+
+
+normal.table<-function(columnz,rowz){
+
+
+m<-length(rowz)
+
+n<-length(columnz)
+
+
+A<-matrix(NA, nrow = m+1 , ncol = n+1)
+
+
+for (i in (1:m+1)) {
+
+    A[i,1]<-"   "
+
+}
+
+
+for (j in (1:n+1)) {
+
+    A[1,j]<-"------"
+
+}
+
+
+for (i in (1:m)) {
+  for (j in (1:n)){
+
+####    A[i,j]<-round(pnorm(rowz[i]+columnz[j]),4)
+
+   A[i+1,j+1]<-round(pnorm(rowz[i]+columnz[j]),4)
+
+
+  }
+
+}
+
+
+
+ dimnames(A)<-list(c("  ",
+"0.0","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9",
+
+"1.0","1.1","1.2","1.3","1.4","1.5","1.6","1.7","1.8","1.9",
+
+"2.0","2.1","2.2","2.3","2.4","2.5","2.6","2.7","2.8","2.9",
+
+"3.0","3.1","3.2","3.3","3.4","3.5","3.6","3.7","3.8","3.9","4.0"),
+                    c("  ", " 0.00", " 0.01", " 0.02", " 0.03", " 0.04", "
+0.05", " 0.06", " 0.07", " 0.08", " 0.09"))
+
+ print(A,quote=F)
+
+ invisible()
+
+}
+
+normal.table(columnz,rowz)
+
+
+with many thanks
+Steve
+
+-- 
+Steven M. Stoline
+1123 Forest Avenue
+Portland, ME 04112
+sstoline at gmail.com
+
+
+
+-- 
+Steven M. Stoline
+1123 Forest Avenue
+Portland, ME 04112
+sstoline at gmail.com
+
+	[[alternative HTML version deleted]]
+
+
+From arthur.charpentier at gmail.com  Sat Feb 21 12:02:09 2015
+From: arthur.charpentier at gmail.com (Arthur Charpentier)
+Date: Sat, 21 Feb 2015 12:02:09 +0100
+Subject: [R-sig-teaching] Fwd: Normal Distribution Table
+In-Reply-To: <CAHDp66BiAW9r+DEv7Kckf22iXxK3juur1WNDhxUbxL2kTKwz3w@mail.gmail.com>
+References: <CAHDp66CspO0MwCij3DwcNzx69A7G70zj5Zv-bJmCMBNbNJr8NA@mail.gmail.com>
+	<CAHDp66BiAW9r+DEv7Kckf22iXxK3juur1WNDhxUbxL2kTKwz3w@mail.gmail.com>
+Message-ID: <CADcAK02HbhKtiTyB-JAnUWp4+o7ey9Kv=WwtSrwyFFBXwX3RWg@mail.gmail.com>
+
+Hi Steven
+it might be out of scope but a few months ago, I published some codes to
+generate such a table
+see http://freakonometrics.hypotheses.org/9404
+Arthur
+
+
+
+2015-02-21 11:49 GMT+01:00 Steven Stoline <sstoline at gmail.com>:
+
+> One more thing;
+>
+> 3- how to force all output to be in a 4 decimal format. e.g. 1 should look
+> like 1.0000.
+>
+> thanks
+> steve
+> ---------- Forwarded message ----------
+> From: Steven Stoline <sstoline at gmail.com>
+> Date: Sat, Feb 21, 2015 at 5:37 AM
+> Subject: Normal Distribution Table
+> To: R-sig-teaching <R-sig-teaching at r-project.org>
+>
+>
+> Dear All:
+>
+> I am trying to use the below R code to create the standard normal
+> distribution table. But I need some helps on the output:
+>
+> 1- how I can insert one line-space between each two rows.
+>
+> 2- there is  one "<NA>" in the output, how to remove it from the output.
+>
+> Simply copy-paste the below code into R.
+>
+>
+> Here is the Code:
+> ============
+>
+>
+> columnz<-c(0.00, 0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09)
+>
+>
+>
+> rowz<-c(0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,
+>
+>
+> 2.0,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,2.9,3.0,3.1,3.2,3.3,3.4,3.5,3.6,3.7,3.8,3.9,4.0)
+>
+>
+> normal.table<-function(columnz,rowz){
+>
+>
+> m<-length(rowz)
+>
+> n<-length(columnz)
+>
+>
+> A<-matrix(NA, nrow = m+1 , ncol = n+1)
+>
+>
+> for (i in (1:m+1)) {
+>
+>     A[i,1]<-"   "
+>
+> }
+>
+>
+> for (j in (1:n+1)) {
+>
+>     A[1,j]<-"------"
+>
+> }
+>
+>
+> for (i in (1:m)) {
+>   for (j in (1:n)){
+>
+> ####    A[i,j]<-round(pnorm(rowz[i]+columnz[j]),4)
+>
+>    A[i+1,j+1]<-round(pnorm(rowz[i]+columnz[j]),4)
+>
+>
+>   }
+>
+> }
+>
+>
+>
+>  dimnames(A)<-list(c("  ",
+> "0.0","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9",
+>
+> "1.0","1.1","1.2","1.3","1.4","1.5","1.6","1.7","1.8","1.9",
+>
+> "2.0","2.1","2.2","2.3","2.4","2.5","2.6","2.7","2.8","2.9",
+>
+> "3.0","3.1","3.2","3.3","3.4","3.5","3.6","3.7","3.8","3.9","4.0"),
+>                     c("  ", " 0.00", " 0.01", " 0.02", " 0.03", " 0.04", "
+> 0.05", " 0.06", " 0.07", " 0.08", " 0.09"))
+>
+>  print(A,quote=F)
+>
+>  invisible()
+>
+> }
+>
+> normal.table(columnz,rowz)
+>
+>
+> with many thanks
+> Steve
+>
+> --
+> Steven M. Stoline
+> 1123 Forest Avenue
+> Portland, ME 04112
+> sstoline at gmail.com
+>
+>
+>
+> --
+> Steven M. Stoline
+> 1123 Forest Avenue
+> Portland, ME 04112
+> sstoline at gmail.com
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+	[[alternative HTML version deleted]]
+
+
+From rpruim at calvin.edu  Mon Feb 23 07:15:04 2015
+From: rpruim at calvin.edu (Randall Pruim)
+Date: Mon, 23 Feb 2015 06:15:04 +0000
+Subject: [R-sig-teaching] Normal Distribution Table
+In-Reply-To: <CADcAK02HbhKtiTyB-JAnUWp4+o7ey9Kv=WwtSrwyFFBXwX3RWg@mail.gmail.com>
+References: <CAHDp66CspO0MwCij3DwcNzx69A7G70zj5Zv-bJmCMBNbNJr8NA@mail.gmail.com>
+	<CAHDp66BiAW9r+DEv7Kckf22iXxK3juur1WNDhxUbxL2kTKwz3w@mail.gmail.com>
+	<CADcAK02HbhKtiTyB-JAnUWp4+o7ey9Kv=WwtSrwyFFBXwX3RWg@mail.gmail.com>
+Message-ID: <ED4D2C82-0C72-40AC-8C51-42C9D265A544@calvin.edu>
+
+I?m not a fan of probability tables.  I don?t use trig or log tables when for calculus, why should I use normal probability tables when I teach statistics.
+
+But I am a fan of good R coding and of knitr, and since Arthur wished for an RMarkdown version of his table and I think there are ways to improve the R used to generate the table (note the use of outer(), the avoidance of all loops, and letting the computer calculate sequences), I?ll offer the following RMarkdown file.  It is more complicated than necessary to show how to include a plot and how to control the table format a bit.  A minimalist version with just the table and no custom formatting would be shorter.
+
+Anyway, here goes:
+
+
+```{r include=FALSE} # execute this code, but don?t put anything into the output
+require(xtable)
+require(grid)        # for the plot
+require(mosaic)      # for the plot
+trellis.par.set(theme=theme.mosaic())   # change default colors for plot
+big <- seq(0, 3.5, by = 0.1)
+little <- seq(0, 0.09, by = 0.01)
+norm_table <- outer(big, little, function(x,y) pnorm(x+y))
+row.names(norm_table) <- format(big, digits=1)
+colnames(norm_table)  <- format(little, digits=2)
+```
+
+The table gives values for $P(Z \le z)$ where $z$ is the sum of the left and right headers.
+
+```{r echo=FALSE, fig.width = 7.0, fig.height = 2, fig.keep="last"}
+plotDist("norm", groups = x >= 1, type="h")
+ladd(grid.text(label=expression(P(Z <= z)), x = .2, y = .7))
+```
+
+
+```{r results="asis", echo=FALSE}
+print(
+  xtable(
+    norm_table,
+    digits=4,                          # display 4 digits
+    align="|r|rrrrrrrrrr|"             # additional vertical lines
+  ),
+  hline.after = c(-1, seq(0, nrow(norm_table), by=4)),  # additional horizontal lines
+  comment=FALSE)                       # avoid latex comment about table generation
+```
+
+On Feb 22, 2015, at 12:02 AM, Arthur Charpentier <arthur.charpentier at gmail.com<mailto:arthur.charpentier at gmail.com>> wrote:
+
+Hi Steven
+it might be out of scope but a few months ago, I published some codes to
+generate such a table
+see http://freakonometrics.hypotheses.org/9404
+Arthur
+
+
+
+2015-02-21 11:49 GMT+01:00 Steven Stoline <sstoline at gmail.com<mailto:sstoline at gmail.com>>:
+
+One more thing;
+
+3- how to force all output to be in a 4 decimal format. e.g. 1 should look
+like 1.0000.
+
+thanks
+steve
+---------- Forwarded message ----------
+From: Steven Stoline <sstoline at gmail.com<mailto:sstoline at gmail.com>>
+Date: Sat, Feb 21, 2015 at 5:37 AM
+Subject: Normal Distribution Table
+To: R-sig-teaching <R-sig-teaching at r-project.org<mailto:R-sig-teaching at r-project.org>>
+
+
+Dear All:
+
+I am trying to use the below R code to create the standard normal
+distribution table. But I need some helps on the output:
+
+1- how I can insert one line-space between each two rows.
+
+2- there is  one "<NA>" in the output, how to remove it from the output.
+
+Simply copy-paste the below code into R.
+
+
+Here is the Code:
+============
+
+
+columnz<-c(0.00, 0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09)
+
+
+
+rowz<-c(0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,
+
+
+2.0,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,2.9,3.0,3.1,3.2,3.3,3.4,3.5,3.6,3.7,3.8,3.9,4.0)
+
+
+normal.table<-function(columnz,rowz){
+
+
+m<-length(rowz)
+
+n<-length(columnz)
+
+
+A<-matrix(NA, nrow = m+1 , ncol = n+1)
+
+
+for (i in (1:m+1)) {
+
+   A[i,1]<-"   "
+
+}
+
+
+for (j in (1:n+1)) {
+
+   A[1,j]<-"------"
+
+}
+
+
+for (i in (1:m)) {
+ for (j in (1:n)){
+
+####    A[i,j]<-round(pnorm(rowz[i]+columnz[j]),4)
+
+  A[i+1,j+1]<-round(pnorm(rowz[i]+columnz[j]),4)
+
+
+ }
+
+}
+
+
+
+dimnames(A)<-list(c("  ",
+"0.0","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9",
+
+"1.0","1.1","1.2","1.3","1.4","1.5","1.6","1.7","1.8","1.9",
+
+"2.0","2.1","2.2","2.3","2.4","2.5","2.6","2.7","2.8","2.9",
+
+"3.0","3.1","3.2","3.3","3.4","3.5","3.6","3.7","3.8","3.9","4.0"),
+                   c("  ", " 0.00", " 0.01", " 0.02", " 0.03", " 0.04", "
+0.05", " 0.06", " 0.07", " 0.08", " 0.09"))
+
+print(A,quote=F)
+
+invisible()
+
+}
+
+normal.table(columnz,rowz)
+
+
+with many thanks
+Steve
+
+--
+Steven M. Stoline
+1123 Forest Avenue
+Portland, ME 04112
+sstoline at gmail.com<mailto:sstoline at gmail.com>
+
+
+
+--
+Steven M. Stoline
+1123 Forest Avenue
+Portland, ME 04112
+sstoline at gmail.com
+
+       [[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+[[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org<mailto:R-sig-teaching at r-project.org> mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+	[[alternative HTML version deleted]]
+
+
+From julianwells at gn.apc.org  Mon Feb 23 12:56:09 2015
+From: julianwells at gn.apc.org (Julian Wells)
+Date: Mon, 23 Feb 2015 11:56:09 +0000
+Subject: [R-sig-teaching] R-sig-teaching Digest, Vol 74, Issue 7
+In-Reply-To: <mailman.7.1424689203.18562.r-sig-teaching@r-project.org>
+References: <mailman.7.1424689203.18562.r-sig-teaching@r-project.org>
+Message-ID: <4EB58945-F5C2-4CD7-9A7A-2504EB048B3E@gn.apc.org>
+
+One might not use tables to *teach* stat.s, but one may wish to provide exam candidates with them.
+
+Julian
+
+
+On 23 Feb 2015, at 11:00, r-sig-teaching-request at r-project.org wrote:
+
+> Send R-sig-teaching mailing list submissions to
+> 	r-sig-teaching at r-project.org
+> 
+> To subscribe or unsubscribe via the World Wide Web, visit
+> 	https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> or, via email, send a message with subject or body 'help' to
+> 	r-sig-teaching-request at r-project.org
+> 
+> You can reach the person managing the list at
+> 	r-sig-teaching-owner at r-project.org
+> 
+> When replying, please edit your Subject line so it is more specific
+> than "Re: Contents of R-sig-teaching digest..."
+> 
+> 
+> Today's Topics:
+> 
+>   1. Re: Normal Distribution Table (Randall Pruim)
+> 
+> 
+> ----------------------------------------------------------------------
+> 
+> Message: 1
+> Date: Mon, 23 Feb 2015 06:15:04 +0000
+> From: Randall Pruim <rpruim at calvin.edu>
+> To: Arthur Charpentier <arthur.charpentier at gmail.com>
+> Cc: R-sig-teaching <R-sig-teaching at r-project.org>
+> Subject: Re: [R-sig-teaching] Normal Distribution Table
+> Message-ID: <ED4D2C82-0C72-40AC-8C51-42C9D265A544 at calvin.edu>
+> Content-Type: text/plain; charset="UTF-8"
+> 
+> I?m not a fan of probability tables.  I don?t use trig or log tables when for calculus, why should I use normal probability tables when I teach statistics.
+> 
+> But I am a fan of good R coding and of knitr, and since Arthur wished for an RMarkdown version of his table and I think there are ways to improve the R used to generate the table (note the use of outer(), the avoidance of all loops, and letting the computer calculate sequences), I?ll offer the following RMarkdown file.  It is more complicated than necessary to show how to include a plot and how to control the table format a bit.  A minimalist version with just the table and no custom formatting would be shorter.
+> 
+> Anyway, here goes:
+> 
+> 
+> ```{r include=FALSE} # execute this code, but don?t put anything into the output
+> require(xtable)
+> require(grid)        # for the plot
+> require(mosaic)      # for the plot
+> trellis.par.set(theme=theme.mosaic())   # change default colors for plot
+> big <- seq(0, 3.5, by = 0.1)
+> little <- seq(0, 0.09, by = 0.01)
+> norm_table <- outer(big, little, function(x,y) pnorm(x+y))
+> row.names(norm_table) <- format(big, digits=1)
+> colnames(norm_table)  <- format(little, digits=2)
+> ```
+> 
+> The table gives values for $P(Z \le z)$ where $z$ is the sum of the left and right headers.
+> 
+> ```{r echo=FALSE, fig.width = 7.0, fig.height = 2, fig.keep="last"}
+> plotDist("norm", groups = x >= 1, type="h")
+> ladd(grid.text(label=expression(P(Z <= z)), x = .2, y = .7))
+> ```
+> 
+> 
+> ```{r results="asis", echo=FALSE}
+> print(
+>  xtable(
+>    norm_table,
+>    digits=4,                          # display 4 digits
+>    align="|r|rrrrrrrrrr|"             # additional vertical lines
+>  ),
+>  hline.after = c(-1, seq(0, nrow(norm_table), by=4)),  # additional horizontal lines
+>  comment=FALSE)                       # avoid latex comment about table generation
+> ```
+> 
+> On Feb 22, 2015, at 12:02 AM, Arthur Charpentier <arthur.charpentier at gmail.com<mailto:arthur.charpentier at gmail.com>> wrote:
+> 
+> Hi Steven
+> it might be out of scope but a few months ago, I published some codes to
+> generate such a table
+> see http://freakonometrics.hypotheses.org/9404
+> Arthur
+> 
+> 
+> 
+> 2015-02-21 11:49 GMT+01:00 Steven Stoline <sstoline at gmail.com<mailto:sstoline at gmail.com>>:
+> 
+> One more thing;
+> 
+> 3- how to force all output to be in a 4 decimal format. e.g. 1 should look
+> like 1.0000.
+> 
+> thanks
+> steve
+> ---------- Forwarded message ----------
+> From: Steven Stoline <sstoline at gmail.com<mailto:sstoline at gmail.com>>
+> Date: Sat, Feb 21, 2015 at 5:37 AM
+> Subject: Normal Distribution Table
+> To: R-sig-teaching <R-sig-teaching at r-project.org<mailto:R-sig-teaching at r-project.org>>
+> 
+> 
+> Dear All:
+> 
+> I am trying to use the below R code to create the standard normal
+> distribution table. But I need some helps on the output:
+> 
+> 1- how I can insert one line-space between each two rows.
+> 
+> 2- there is  one "<NA>" in the output, how to remove it from the output.
+> 
+> Simply copy-paste the below code into R.
+> 
+> 
+> Here is the Code:
+> ============
+> 
+> 
+> columnz<-c(0.00, 0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09)
+> 
+> 
+> 
+> rowz<-c(0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,
+> 
+> 
+> 2.0,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,2.9,3.0,3.1,3.2,3.3,3.4,3.5,3.6,3.7,3.8,3.9,4.0)
+> 
+> 
+> normal.table<-function(columnz,rowz){
+> 
+> 
+> m<-length(rowz)
+> 
+> n<-length(columnz)
+> 
+> 
+> A<-matrix(NA, nrow = m+1 , ncol = n+1)
+> 
+> 
+> for (i in (1:m+1)) {
+> 
+>   A[i,1]<-"   "
+> 
+> }
+> 
+> 
+> for (j in (1:n+1)) {
+> 
+>   A[1,j]<-"------"
+> 
+> }
+> 
+> 
+> for (i in (1:m)) {
+> for (j in (1:n)){
+> 
+> ####    A[i,j]<-round(pnorm(rowz[i]+columnz[j]),4)
+> 
+>  A[i+1,j+1]<-round(pnorm(rowz[i]+columnz[j]),4)
+> 
+> 
+> }
+> 
+> }
+> 
+> 
+> 
+> dimnames(A)<-list(c("  ",
+> "0.0","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9",
+> 
+> "1.0","1.1","1.2","1.3","1.4","1.5","1.6","1.7","1.8","1.9",
+> 
+> "2.0","2.1","2.2","2.3","2.4","2.5","2.6","2.7","2.8","2.9",
+> 
+> "3.0","3.1","3.2","3.3","3.4","3.5","3.6","3.7","3.8","3.9","4.0"),
+>                   c("  ", " 0.00", " 0.01", " 0.02", " 0.03", " 0.04", "
+> 0.05", " 0.06", " 0.07", " 0.08", " 0.09"))
+> 
+> print(A,quote=F)
+> 
+> invisible()
+> 
+> }
+> 
+> normal.table(columnz,rowz)
+> 
+> 
+> with many thanks
+> Steve
+> 
+> --
+> Steven M. Stoline
+> 1123 Forest Avenue
+> Portland, ME 04112
+> sstoline at gmail.com<mailto:sstoline at gmail.com>
+> 
+> 
+> 
+> --
+> Steven M. Stoline
+> 1123 Forest Avenue
+> Portland, ME 04112
+> sstoline at gmail.com
+> 
+>       [[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+> 
+> [[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org<mailto:R-sig-teaching at r-project.org> mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+> 
+> 	[[alternative HTML version deleted]]
+> 
+> 
+> 
+> ------------------------------
+> 
+> Subject: Digest Footer
+> 
+> _______________________________________________
+> R-sig-teaching mailing list
+> R-sig-teaching at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+> 
+> ------------------------------
+> 
+> End of R-sig-teaching Digest, Vol 74, Issue 7
+> *********************************************
+> 
+
+
+From sstoline at gmail.com  Mon Feb 23 13:08:31 2015
+From: sstoline at gmail.com (Steven Stoline)
+Date: Mon, 23 Feb 2015 07:08:31 -0500
+Subject: [R-sig-teaching] R-sig-teaching Digest, Vol 74, Issue 7
+In-Reply-To: <4EB58945-F5C2-4CD7-9A7A-2504EB048B3E@gn.apc.org>
+References: <mailman.7.1424689203.18562.r-sig-teaching@r-project.org>
+	<4EB58945-F5C2-4CD7-9A7A-2504EB048B3E@gn.apc.org>
+Message-ID: <CAHDp66CBksOeLhhU4nC8+8a5=UgUC1k+ZGPLTQycoAPKRAxEsQ@mail.gmail.com>
+
+Dear All:
+
+Regarding my question regarding normal table, I will use it as an example
+for R functions.
+
+many thanks
+
+steven
+
+
+On Mon, Feb 23, 2015 at 6:56 AM, Julian Wells <julianwells at gn.apc.org>
+wrote:
+
+> One might not use tables to *teach* stat.s, but one may wish to provide
+> exam candidates with them.
+>
+> Julian
+>
+>
+> On 23 Feb 2015, at 11:00, r-sig-teaching-request at r-project.org wrote:
+>
+> > Send R-sig-teaching mailing list submissions to
+> >       r-sig-teaching at r-project.org
+> >
+> > To subscribe or unsubscribe via the World Wide Web, visit
+> >       https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> > or, via email, send a message with subject or body 'help' to
+> >       r-sig-teaching-request at r-project.org
+> >
+> > You can reach the person managing the list at
+> >       r-sig-teaching-owner at r-project.org
+> >
+> > When replying, please edit your Subject line so it is more specific
+> > than "Re: Contents of R-sig-teaching digest..."
+> >
+> >
+> > Today's Topics:
+> >
+> >   1. Re: Normal Distribution Table (Randall Pruim)
+> >
+> >
+> > ----------------------------------------------------------------------
+> >
+> > Message: 1
+> > Date: Mon, 23 Feb 2015 06:15:04 +0000
+> > From: Randall Pruim <rpruim at calvin.edu>
+> > To: Arthur Charpentier <arthur.charpentier at gmail.com>
+> > Cc: R-sig-teaching <R-sig-teaching at r-project.org>
+> > Subject: Re: [R-sig-teaching] Normal Distribution Table
+> > Message-ID: <ED4D2C82-0C72-40AC-8C51-42C9D265A544 at calvin.edu>
+> > Content-Type: text/plain; charset="UTF-8"
+> >
+> > I?m not a fan of probability tables.  I don?t use trig or log tables
+> when for calculus, why should I use normal probability tables when I teach
+> statistics.
+> >
+> > But I am a fan of good R coding and of knitr, and since Arthur wished
+> for an RMarkdown version of his table and I think there are ways to improve
+> the R used to generate the table (note the use of outer(), the avoidance of
+> all loops, and letting the computer calculate sequences), I?ll offer the
+> following RMarkdown file.  It is more complicated than necessary to show
+> how to include a plot and how to control the table format a bit.  A
+> minimalist version with just the table and no custom formatting would be
+> shorter.
+> >
+> > Anyway, here goes:
+> >
+> >
+> > ```{r include=FALSE} # execute this code, but don?t put anything into
+> the output
+> > require(xtable)
+> > require(grid)        # for the plot
+> > require(mosaic)      # for the plot
+> > trellis.par.set(theme=theme.mosaic())   # change default colors for plot
+> > big <- seq(0, 3.5, by = 0.1)
+> > little <- seq(0, 0.09, by = 0.01)
+> > norm_table <- outer(big, little, function(x,y) pnorm(x+y))
+> > row.names(norm_table) <- format(big, digits=1)
+> > colnames(norm_table)  <- format(little, digits=2)
+> > ```
+> >
+> > The table gives values for $P(Z \le z)$ where $z$ is the sum of the left
+> and right headers.
+> >
+> > ```{r echo=FALSE, fig.width = 7.0, fig.height = 2, fig.keep="last"}
+> > plotDist("norm", groups = x >= 1, type="h")
+> > ladd(grid.text(label=expression(P(Z <= z)), x = .2, y = .7))
+> > ```
+> >
+> >
+> > ```{r results="asis", echo=FALSE}
+> > print(
+> >  xtable(
+> >    norm_table,
+> >    digits=4,                          # display 4 digits
+> >    align="|r|rrrrrrrrrr|"             # additional vertical lines
+> >  ),
+> >  hline.after = c(-1, seq(0, nrow(norm_table), by=4)),  # additional
+> horizontal lines
+> >  comment=FALSE)                       # avoid latex comment about table
+> generation
+> > ```
+> >
+> > On Feb 22, 2015, at 12:02 AM, Arthur Charpentier <
+> arthur.charpentier at gmail.com<mailto:arthur.charpentier at gmail.com>> wrote:
+> >
+> > Hi Steven
+> > it might be out of scope but a few months ago, I published some codes to
+> > generate such a table
+> > see http://freakonometrics.hypotheses.org/9404
+> > Arthur
+> >
+> >
+> >
+> > 2015-02-21 11:49 GMT+01:00 Steven Stoline <sstoline at gmail.com<mailto:
+> sstoline at gmail.com>>:
+> >
+> > One more thing;
+> >
+> > 3- how to force all output to be in a 4 decimal format. e.g. 1 should
+> look
+> > like 1.0000.
+> >
+> > thanks
+> > steve
+> > ---------- Forwarded message ----------
+> > From: Steven Stoline <sstoline at gmail.com<mailto:sstoline at gmail.com>>
+> > Date: Sat, Feb 21, 2015 at 5:37 AM
+> > Subject: Normal Distribution Table
+> > To: R-sig-teaching <R-sig-teaching at r-project.org<mailto:
+> R-sig-teaching at r-project.org>>
+> >
+> >
+> > Dear All:
+> >
+> > I am trying to use the below R code to create the standard normal
+> > distribution table. But I need some helps on the output:
+> >
+> > 1- how I can insert one line-space between each two rows.
+> >
+> > 2- there is  one "<NA>" in the output, how to remove it from the output.
+> >
+> > Simply copy-paste the below code into R.
+> >
+> >
+> > Here is the Code:
+> > ============
+> >
+> >
+> > columnz<-c(0.00, 0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09)
+> >
+> >
+> >
+> >
+> rowz<-c(0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,
+> >
+> >
+> >
+> 2.0,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,2.9,3.0,3.1,3.2,3.3,3.4,3.5,3.6,3.7,3.8,3.9,4.0)
+> >
+> >
+> > normal.table<-function(columnz,rowz){
+> >
+> >
+> > m<-length(rowz)
+> >
+> > n<-length(columnz)
+> >
+> >
+> > A<-matrix(NA, nrow = m+1 , ncol = n+1)
+> >
+> >
+> > for (i in (1:m+1)) {
+> >
+> >   A[i,1]<-"   "
+> >
+> > }
+> >
+> >
+> > for (j in (1:n+1)) {
+> >
+> >   A[1,j]<-"------"
+> >
+> > }
+> >
+> >
+> > for (i in (1:m)) {
+> > for (j in (1:n)){
+> >
+> > ####    A[i,j]<-round(pnorm(rowz[i]+columnz[j]),4)
+> >
+> >  A[i+1,j+1]<-round(pnorm(rowz[i]+columnz[j]),4)
+> >
+> >
+> > }
+> >
+> > }
+> >
+> >
+> >
+> > dimnames(A)<-list(c("  ",
+> > "0.0","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9",
+> >
+> > "1.0","1.1","1.2","1.3","1.4","1.5","1.6","1.7","1.8","1.9",
+> >
+> > "2.0","2.1","2.2","2.3","2.4","2.5","2.6","2.7","2.8","2.9",
+> >
+> > "3.0","3.1","3.2","3.3","3.4","3.5","3.6","3.7","3.8","3.9","4.0"),
+> >                   c("  ", " 0.00", " 0.01", " 0.02", " 0.03", " 0.04", "
+> > 0.05", " 0.06", " 0.07", " 0.08", " 0.09"))
+> >
+> > print(A,quote=F)
+> >
+> > invisible()
+> >
+> > }
+> >
+> > normal.table(columnz,rowz)
+> >
+> >
+> > with many thanks
+> > Steve
+> >
+> > --
+> > Steven M. Stoline
+> > 1123 Forest Avenue
+> > Portland, ME 04112
+> > sstoline at gmail.com<mailto:sstoline at gmail.com>
+> >
+> >
+> >
+> > --
+> > Steven M. Stoline
+> > 1123 Forest Avenue
+> > Portland, ME 04112
+> > sstoline at gmail.com
+> >
+> >       [[alternative HTML version deleted]]
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >
+> >
+> > [[alternative HTML version deleted]]
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org<mailto:R-sig-teaching at r-project.org>
+> mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >
+> >
+> >       [[alternative HTML version deleted]]
+> >
+> >
+> >
+> > ------------------------------
+> >
+> > Subject: Digest Footer
+> >
+> > _______________________________________________
+> > R-sig-teaching mailing list
+> > R-sig-teaching at r-project.org
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >
+> >
+> > ------------------------------
+> >
+> > End of R-sig-teaching Digest, Vol 74, Issue 7
+> > *********************************************
+> >
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+-- 
+Steven M. Stoline
+1123 Forest Avenue
+Portland, ME 04112
+sstoline at gmail.com
+
+	[[alternative HTML version deleted]]
+
+
+From rpruim at calvin.edu  Tue Feb 24 00:05:36 2015
+From: rpruim at calvin.edu (Randall Pruim)
+Date: Mon, 23 Feb 2015 23:05:36 +0000
+Subject: [R-sig-teaching] Normal Distribution Table
+In-Reply-To: <ED4D2C82-0C72-40AC-8C51-42C9D265A544@calvin.edu>
+References: <CAHDp66CspO0MwCij3DwcNzx69A7G70zj5Zv-bJmCMBNbNJr8NA@mail.gmail.com>
+	<CAHDp66BiAW9r+DEv7Kckf22iXxK3juur1WNDhxUbxL2kTKwz3w@mail.gmail.com>
+	<CADcAK02HbhKtiTyB-JAnUWp4+o7ey9Kv=WwtSrwyFFBXwX3RWg@mail.gmail.com>
+	<ED4D2C82-0C72-40AC-8C51-42C9D265A544@calvin.edu>
+Message-ID: <3AEE2AE6-74A3-4962-8B86-6728987E824D@calvin.edu>
+
+The file got a bit garbled in the email, so I?ve submitted it to RPubs:  http://rpubs.com/rpruim/normal-prob-table
+
+I thought that would give access to the source as well, but it doesn?t seem to, so I?ve posted the RMarkdown, HTML, and PDF here:
+
+http://www.calvin.edu/~rpruim/R/misc/ProbabilityTable/
+
+As a side effect of wanting to put the doc on Rpubs, I created a version that can switch hit between HTML and PDF.  RPubs shows the HTML version, but if you grab the Rmd file and knitPDF it, you will get a PDF version.  (If you are curious to see how to have the document detect which format is being produced, look at the markdown and search for ?target".)
+
+?rjp
+
+PS.  I haven?t used tables like this in a quite awhile.  I generally have my students using RStudio during exams if they need access to this sort of calculation.  Else I simply write an exam about different things.  But there are standardized exams for which various sorts of tables are provided, and you should be able to tweak my example to create tables in the desired format.  (The Fundamentals of Engineering Exam, for example, provides lower tail, upper tail, central and 2-tailed probabilities in the table they provide, IIRC.)
+
+
+On Feb 23, 2015, at 7:15 PM, Randall Pruim <rpruim at calvin.edu<mailto:rpruim at calvin.edu>> wrote:
+
+I?m not a fan of probability tables.  I don?t use trig or log tables when for calculus, why should I use normal probability tables when I teach statistics.
+
+But I am a fan of good R coding and of knitr, and since Arthur wished for an RMarkdown version of his table and I think there are ways to improve the R used to generate the table (note the use of outer(), the avoidance of all loops, and letting the computer calculate sequences), I?ll offer the following RMarkdown file.  It is more complicated than necessary to show how to include a plot and how to control the table format a bit.  A minimalist version with just the table and no custom formatting would be shorter.
+
+Anyway, here goes:
+
+
+```{r include=FALSE} # execute this code, but don?t put anything into the output
+require(xtable)
+require(grid)        # for the plot
+require(mosaic)      # for the plot
+trellis.par.set(theme=theme.mosaic())   # change default colors for plot
+big <- seq(0, 3.5, by = 0.1)
+little <- seq(0, 0.09, by = 0.01)
+norm_table <- outer(big, little, function(x,y) pnorm(x+y))
+row.names(norm_table) <- format(big, digits=1)
+colnames(norm_table)  <- format(little, digits=2)
+```
+
+The table gives values for $P(Z \le z)$ where $z$ is the sum of the left and right headers.
+
+```{r echo=FALSE, fig.width = 7.0, fig.height = 2, fig.keep="last"}
+plotDist("norm", groups = x >= 1, type="h")
+ladd(grid.text(label=expression(P(Z <= z)), x = .2, y = .7))
+```
+
+
+```{r results="asis", echo=FALSE}
+print(
+ xtable(
+   norm_table,
+   digits=4,                          # display 4 digits
+   align="|r|rrrrrrrrrr|"             # additional vertical lines
+ ),
+ hline.after = c(-1, seq(0, nrow(norm_table), by=4)),  # additional horizontal lines
+ comment=FALSE)                       # avoid latex comment about table generation
+```
+
+On Feb 22, 2015, at 12:02 AM, Arthur Charpentier <arthur.charpentier at gmail.com<mailto:arthur.charpentier at gmail.com><mailto:arthur.charpentier at gmail.com>> wrote:
+
+Hi Steven
+it might be out of scope but a few months ago, I published some codes to
+generate such a table
+see http://freakonometrics.hypotheses.org/9404
+Arthur
+
+
+
+2015-02-21 11:49 GMT+01:00 Steven Stoline <sstoline at gmail.com<mailto:sstoline at gmail.com><mailto:sstoline at gmail.com>>:
+
+One more thing;
+
+3- how to force all output to be in a 4 decimal format. e.g. 1 should look
+like 1.0000.
+
+thanks
+steve
+---------- Forwarded message ----------
+From: Steven Stoline <sstoline at gmail.com<mailto:sstoline at gmail.com><mailto:sstoline at gmail.com>>
+Date: Sat, Feb 21, 2015 at 5:37 AM
+Subject: Normal Distribution Table
+To: R-sig-teaching <R-sig-teaching at r-project.org<mailto:R-sig-teaching at r-project.org><mailto:R-sig-teaching at r-project.org>>
+
+
+Dear All:
+
+I am trying to use the below R code to create the standard normal
+distribution table. But I need some helps on the output:
+
+1- how I can insert one line-space between each two rows.
+
+2- there is  one "<NA>" in the output, how to remove it from the output.
+
+Simply copy-paste the below code into R.
+
+
+Here is the Code:
+============
+
+
+columnz<-c(0.00, 0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09)
+
+
+
+rowz<-c(0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,
+
+
+2.0,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,2.9,3.0,3.1,3.2,3.3,3.4,3.5,3.6,3.7,3.8,3.9,4.0)
+
+
+normal.table<-function(columnz,rowz){
+
+
+m<-length(rowz)
+
+n<-length(columnz)
+
+
+A<-matrix(NA, nrow = m+1 , ncol = n+1)
+
+
+for (i in (1:m+1)) {
+
+  A[i,1]<-"   "
+
+}
+
+
+for (j in (1:n+1)) {
+
+  A[1,j]<-"------"
+
+}
+
+
+for (i in (1:m)) {
+for (j in (1:n)){
+
+####    A[i,j]<-round(pnorm(rowz[i]+columnz[j]),4)
+
+ A[i+1,j+1]<-round(pnorm(rowz[i]+columnz[j]),4)
+
+
+}
+
+}
+
+
+
+dimnames(A)<-list(c("  ",
+"0.0","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9",
+
+"1.0","1.1","1.2","1.3","1.4","1.5","1.6","1.7","1.8","1.9",
+
+"2.0","2.1","2.2","2.3","2.4","2.5","2.6","2.7","2.8","2.9",
+
+"3.0","3.1","3.2","3.3","3.4","3.5","3.6","3.7","3.8","3.9","4.0"),
+                  c("  ", " 0.00", " 0.01", " 0.02", " 0.03", " 0.04", "
+0.05", " 0.06", " 0.07", " 0.08", " 0.09"))
+
+print(A,quote=F)
+
+invisible()
+
+}
+
+normal.table(columnz,rowz)
+
+
+with many thanks
+Steve
+
+--
+Steven M. Stoline
+1123 Forest Avenue
+Portland, ME 04112
+sstoline at gmail.com<mailto:sstoline at gmail.com><mailto:sstoline at gmail.com>
+
+
+
+--
+Steven M. Stoline
+1123 Forest Avenue
+Portland, ME 04112
+sstoline at gmail.com<mailto:sstoline at gmail.com>
+
+      [[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+[[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org<mailto:R-sig-teaching at r-project.org> mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+[[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+	[[alternative HTML version deleted]]
+
+

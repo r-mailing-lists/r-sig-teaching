@@ -1,0 +1,3729 @@
+From landronimirc at gmail.com  Fri Oct  1 00:10:34 2010
+From: landronimirc at gmail.com (Liviu Andronic)
+Date: Fri, 1 Oct 2010 01:10:34 +0300
+Subject: [R-sig-teaching] plotting hypothesis of correlation t-test
+Message-ID: <AANLkTinyNqfWZt7BDGOmeAmGHQXUmiKrc6+kMMtygjy9@mail.gmail.com>
+
+Dear all
+I'm not sure that this is an r-sig-teaching per se, but I need it for
+teaching so here I go.
+
+I need to plot the hypothesis of a correlation test. The only
+semi-automated way I know to do this is RcmdrPlugin.HH. For example,
+> cor.test(mtcars$am, mtcars$drat, alternative="two.sided", method="pearson")
+
+	Pearson's product-moment correlation
+
+data:  mtcars$am and mtcars$drat
+t = 5.5651, df = 30, p-value = 4.727e-06
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.4843991 0.8501319
+sample estimates:
+      cor
+0.7127111
+> qt(c(0.025), df=30, lower.tail=F)
+[1] 2.042272
+
+
+Then I supply these data to the 'Plot Hypotheses (HH)' in Rcmdr >
+Cont. Distributions > t distro.
+require(RcmdrPlugin.HH)
+normal.and.t.dist.result <- normal.and.t.dist(std.dev=NA, n=32,
+  deg.freedom=30, mu.H0=0, xmin=NA, xmax=NA, gxbar.min=NA, gxbar.max=NA,
+  Use.alpha.right=TRUE, alpha.right=0.025, Use.alpha.left=TRUE,
+  alpha.left=0.025, Use.mu.H1=FALSE, mu.H1=NA, Use.obs.mean=TRUE,
+  obs.mean=5.5651, hypoth.or.conf="Hypoth", col.mean="lime green",
+  col.alpha="blue", col.beta="red", col.conf="pale green",
+  col.conf.arrow="dark green", col.mean.label="lime green",
+  col.alpha.label="blue", col.beta.label="red", col.conf.label="dark green",
+  cex.crit=1.2)
+
+
+There are several elements that I do not quite understand in the
+resulting graph [1]:
+- what does '0.361' correspond to? If this is the mean (x bar), why
+would I be interested in this for this particular hypothesis testing?
+- what does '31.481' correspond to? From the colors I understand that
+it's related to the observed t statistic, but I cannot figure what
+exactly it represents.
+
+I'd be grateful for any insights. Regards
+Liviu
+
+[1] http://s000.tinyupload.com/index.php?file_id=02099991814244792735
+
+
+
+-- 
+Do you know how to read?
+http://www.alienetworks.com/srtest.cfm
+http://goodies.xfce.org/projects/applications/xfce4-dict#speed-reader
+Do you know how to write?
+http://garbl.home.comcast.net/~garbl/stylemanual/e.htm#e-mail
+
+
+
+From Greg.Snow at imail.org  Fri Oct  1 01:33:22 2010
+From: Greg.Snow at imail.org (Greg Snow)
+Date: Thu, 30 Sep 2010 17:33:22 -0600
+Subject: [R-sig-teaching] plotting hypothesis of correlation t-test
+In-Reply-To: <AANLkTinyNqfWZt7BDGOmeAmGHQXUmiKrc6+kMMtygjy9@mail.gmail.com>
+References: <AANLkTinyNqfWZt7BDGOmeAmGHQXUmiKrc6+kMMtygjy9@mail.gmail.com>
+Message-ID: <B37C0A15B8FB3C468B5BC7EBC7DA14CC633E40FA23@LP-EXMBVS10.CO.IHC.COM>
+
+It looks like the -0.361 is qt(0.025, 30) * 0.177 where 0.177 is the standard error of the mean.  And 31.481 is approximately (possible rounding error from limited reporting) 5.565/0.177, so those are the numbers on the scale of the original mean, not the t-statistic.
+
+Hope this helps,
+
+-- 
+Gregory (Greg) L. Snow Ph.D.
+Statistical Data Center
+Intermountain Healthcare
+greg.snow at imail.org
+801.408.8111
+
+
+> -----Original Message-----
+> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-
+> bounces at r-project.org] On Behalf Of Liviu Andronic
+> Sent: Thursday, September 30, 2010 4:11 PM
+> To: R-sig-teaching
+> Cc: Richard M. Heiberger
+> Subject: [R-sig-teaching] plotting hypothesis of correlation t-test
+> 
+> Dear all
+> I'm not sure that this is an r-sig-teaching per se, but I need it for
+> teaching so here I go.
+> 
+> I need to plot the hypothesis of a correlation test. The only
+> semi-automated way I know to do this is RcmdrPlugin.HH. For example,
+> > cor.test(mtcars$am, mtcars$drat, alternative="two.sided",
+> method="pearson")
+> 
+> 	Pearson's product-moment correlation
+> 
+> data:  mtcars$am and mtcars$drat
+> t = 5.5651, df = 30, p-value = 4.727e-06
+> alternative hypothesis: true correlation is not equal to 0
+> 95 percent confidence interval:
+>  0.4843991 0.8501319
+> sample estimates:
+>       cor
+> 0.7127111
+> > qt(c(0.025), df=30, lower.tail=F)
+> [1] 2.042272
+> 
+> 
+> Then I supply these data to the 'Plot Hypotheses (HH)' in Rcmdr >
+> Cont. Distributions > t distro.
+> require(RcmdrPlugin.HH)
+> normal.and.t.dist.result <- normal.and.t.dist(std.dev=NA, n=32,
+>   deg.freedom=30, mu.H0=0, xmin=NA, xmax=NA, gxbar.min=NA,
+> gxbar.max=NA,
+>   Use.alpha.right=TRUE, alpha.right=0.025, Use.alpha.left=TRUE,
+>   alpha.left=0.025, Use.mu.H1=FALSE, mu.H1=NA, Use.obs.mean=TRUE,
+>   obs.mean=5.5651, hypoth.or.conf="Hypoth", col.mean="lime green",
+>   col.alpha="blue", col.beta="red", col.conf="pale green",
+>   col.conf.arrow="dark green", col.mean.label="lime green",
+>   col.alpha.label="blue", col.beta.label="red", col.conf.label="dark
+> green",
+>   cex.crit=1.2)
+> 
+> 
+> There are several elements that I do not quite understand in the
+> resulting graph [1]:
+> - what does '0.361' correspond to? If this is the mean (x bar), why
+> would I be interested in this for this particular hypothesis testing?
+> - what does '31.481' correspond to? From the colors I understand that
+> it's related to the observed t statistic, but I cannot figure what
+> exactly it represents.
+> 
+> I'd be grateful for any insights. Regards
+> Liviu
+> 
+> [1] http://s000.tinyupload.com/index.php?file_id=02099991814244792735
+> 
+> 
+> 
+> --
+> Do you know how to read?
+> http://www.alienetworks.com/srtest.cfm
+> http://goodies.xfce.org/projects/applications/xfce4-dict#speed-reader
+> Do you know how to write?
+> http://garbl.home.comcast.net/~garbl/stylemanual/e.htm#e-mail
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+From landronimirc at gmail.com  Fri Oct  1 08:33:49 2010
+From: landronimirc at gmail.com (Liviu Andronic)
+Date: Fri, 1 Oct 2010 09:33:49 +0300
+Subject: [R-sig-teaching] plotting hypothesis of correlation t-test
+In-Reply-To: <AANLkTikxuDv88SKygrNYeLj5rxHp6Zp-pVQN7_LAt5ve@mail.gmail.com>
+References: <AANLkTinyNqfWZt7BDGOmeAmGHQXUmiKrc6+kMMtygjy9@mail.gmail.com>
+	<B37C0A15B8FB3C468B5BC7EBC7DA14CC633E40FA23@LP-EXMBVS10.CO.IHC.COM>
+	<AANLkTikxuDv88SKygrNYeLj5rxHp6Zp-pVQN7_LAt5ve@mail.gmail.com>
+Message-ID: <AANLkTinuVdfNRGC29+q0B1N3zh6rt8TqbFFWv4tYJgP4@mail.gmail.com>
+
+Hello
+Thanks all for your input!
+
+
+On Fri, Oct 1, 2010 at 3:55 AM, RICHARD M. HEIBERGER <rmh at temple.edu> wrote:
+> The t-value in the cor.test is already scaled for 30 df by the time it
+> is printed.? Giving an n-value scales it again, by dividing the
+> standard deviation by sqrt(n).? Since you are already in the standard
+> t-scaling, n=1 is the correct value for your example.
+> This is the graph you are looking for:
+>
+> ??? normal.and.t.dist(obs.mean=5.5651, deg.freedom=30, alpha.right=.025,
+> ????????????????????? Use.alpha.left=TRUE, Use.obs.mean=TRUE, xmin=-6)
+>
+This is indeed the graph that I was looking for. I was assuming that,
+since I knew both df and t, I should specify both, but I was obviously
+wrong. Also, I prefer this graph to the below because it's cleaner and
+should raise less questions.
+
+Thanks a lot for the helpful functions. Best regards
+Liviu
+
+
+> The above graph does not specifiy n, and therefore shows
+> "Standard t Density", and only the t axis.? The green 5.565 is the observed
+> t-value, and the -5.565 is the boundary of the p-value region on the other
+> side.
+> We need both sides because the cor.test said the alternative hypothesis is
+> two-sided.
+>
+> Here is almost the same graph, this time with n=1.? Now it shows "t density"
+> with
+> standard error of x.bar and the x.bar axis as well as the t axis.
+> ??? normal.and.t.dist(obs.mean=5.5651, deg.freedom=30, alpha.right=.025,
+> ????????????????????? Use.alpha.left=TRUE, Use.obs.mean=TRUE, xmin=-6, n=1)
+> In this example with n=1, the x.bar scale and the t scale are identical.
+> The blue +/- 2.042 are the boundaries of the rejection region in x.bar
+> units.
+> On your original graph, simplified here
+>
+> normal.and.t.dist(obs.mean=5.5651, deg.freedom=30, alpha.right=0.025,
+> ????????????????? Use.alpha.left=TRUE, Use.obs.mean=TRUE, n=32)
+>
+> the blue values are in the x.bar scale (as indicated on the graph),
+> asssuming that the observed mean x.bar=5.5651 comes from a
+> distribution of x.bar with standard deviation 1/sqrt(32).
+> Scale that to the t-scale with 5.5651/(1/sqrt(32)) = 31.48096 and that
+> is the number you were querying.
+>
+> Expand the graph to fill the screen and you will see that the right boundary
+> of the rejection region is suppressed by R to avoid overprinting.
+> If you extend the graph to the left, with xmin=-6,
+>
+> normal.and.t.dist(obs.mean=5.5651, deg.freedom=30, alpha.right=0.025,
+> ????????????????? Use.alpha.left=TRUE, Use.obs.mean=TRUE, n=32, xmin=-6)
+>
+> then you will see that the left boundary of the p-value region -31.481
+> is also displayed.
+> Rich
+>
+
+
+
+-- 
+Do you know how to read?
+http://www.alienetworks.com/srtest.cfm
+http://goodies.xfce.org/projects/applications/xfce4-dict#speed-reader
+Do you know how to write?
+http://garbl.home.comcast.net/~garbl/stylemanual/e.htm#e-mail
+
+
+
+From pnsinha68 at gmail.com  Fri Oct  1 10:52:00 2010
+From: pnsinha68 at gmail.com (Partha Sinha)
+Date: Fri, 1 Oct 2010 14:22:00 +0530
+Subject: [R-sig-teaching] Download all package
+Message-ID: <AANLkTin5gMXMKuQDHwaQtkF4KmrmnXnb3Y86L=_9i27n@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101001/61d87e52/attachment.pl>
+
+From landronimirc at gmail.com  Fri Oct  1 10:59:44 2010
+From: landronimirc at gmail.com (Liviu Andronic)
+Date: Fri, 1 Oct 2010 11:59:44 +0300
+Subject: [R-sig-teaching] Download all package
+In-Reply-To: <AANLkTin5gMXMKuQDHwaQtkF4KmrmnXnb3Y86L=_9i27n@mail.gmail.com>
+References: <AANLkTin5gMXMKuQDHwaQtkF4KmrmnXnb3Y86L=_9i27n@mail.gmail.com>
+Message-ID: <AANLkTimuxF_j+fjTrC7LQ_Bd=A1Tp_kPyf9FLs72Yeu6@mail.gmail.com>
+
+Hello
+
+On Fri, Oct 1, 2010 at 11:52 AM, Partha Sinha <pnsinha68 at gmail.com> wrote:
+> Dear Sir
+> Is there a way I can download all the packages in one shot or I need to
+> download one by one and use them?
+>
+This question doesn't seem relevant to teaching with R, so r-help may
+be more appropriate.
+
+Generally you need to decide on the package that you intend to use, and
+install.package('your_package', dep=T)
+
+to install it and all its dependencies. This would avoid you the
+trouble of individually installing each dependency.
+
+Regards
+Liviu
+
+
+> Regards
+> Partha
+>
+> ? ? ? ?[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+-- 
+Do you know how to read?
+http://www.alienetworks.com/srtest.cfm
+http://goodies.xfce.org/projects/applications/xfce4-dict#speed-reader
+Do you know how to write?
+http://garbl.home.comcast.net/~garbl/stylemanual/e.htm#e-mail
+
+
+
+From tyler.smith at EKU.EDU  Fri Oct  1 22:08:47 2010
+From: tyler.smith at EKU.EDU (Tyler Smith)
+Date: Fri, 1 Oct 2010 16:08:47 -0400
+Subject: [R-sig-teaching] data preprocessing resources
+Message-ID: <4CA63FCF.9010402@eku.edu>
+
+  Hi,
+
+I'll be teaching a grad course in multivariate stats for ecologists 
+(ordination et al.) for the first time this coming spring. One thing 
+I've discovered in my interactions with grad students is that they each 
+develop their own rather idiosyncratic approaches to data processing. 
+I've seen some really odd and weirdly illogical use of spreadsheets 
+since I started teaching last year.
+
+Do any of you know of good online or in-print resources to either use in 
+my teaching or direct students to? I've come across bits and pieces 
+scattered in various online lecture slides and notes, but nothing really 
+focused on this particular issue.
+
+I know this is not really an R issue per se, but it's much easier to get 
+data into R if it is originally entered into a spreadsheet in a sensible 
+fashion.
+
+Thanks for any suggestions!
+
+Tyler
+
+
+
+From Greg.Snow at imail.org  Fri Oct  1 23:05:20 2010
+From: Greg.Snow at imail.org (Greg Snow)
+Date: Fri, 1 Oct 2010 15:05:20 -0600
+Subject: [R-sig-teaching] data preprocessing resources
+In-Reply-To: <4CA63FCF.9010402@eku.edu>
+References: <4CA63FCF.9010402@eku.edu>
+Message-ID: <B37C0A15B8FB3C468B5BC7EBC7DA14CC633E40FD3E@LP-EXMBVS10.CO.IHC.COM>
+
+I would start here:
+
+http://www.burns-stat.com/pages/Tutor/spreadsheet_addiction.html
+
+Then point the students to a basic tutorial about databases (or at least MSaccess).
+
+Or you can have them enter the data directly into R without using outside products.  Some of the GUI front ends for R have spreadsheet like interfaces, or you can create an empty data frame with the correct column types, then use edit/fix to enter the data in a way that feels familiar to spreadsheet users, but prevents some of the major problems that come from abuse of spreadsheets.
+
+-- 
+Gregory (Greg) L. Snow Ph.D.
+Statistical Data Center
+Intermountain Healthcare
+greg.snow at imail.org
+801.408.8111
+
+
+> -----Original Message-----
+> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-
+> bounces at r-project.org] On Behalf Of Tyler Smith
+> Sent: Friday, October 01, 2010 2:09 PM
+> To: r-sig-teaching at r-project.org
+> Subject: [R-sig-teaching] data preprocessing resources
+> 
+>   Hi,
+> 
+> I'll be teaching a grad course in multivariate stats for ecologists
+> (ordination et al.) for the first time this coming spring. One thing
+> I've discovered in my interactions with grad students is that they each
+> develop their own rather idiosyncratic approaches to data processing.
+> I've seen some really odd and weirdly illogical use of spreadsheets
+> since I started teaching last year.
+> 
+> Do any of you know of good online or in-print resources to either use
+> in
+> my teaching or direct students to? I've come across bits and pieces
+> scattered in various online lecture slides and notes, but nothing
+> really
+> focused on this particular issue.
+> 
+> I know this is not really an R issue per se, but it's much easier to
+> get
+> data into R if it is originally entered into a spreadsheet in a
+> sensible
+> fashion.
+> 
+> Thanks for any suggestions!
+> 
+> Tyler
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+From izahn at psych.rochester.edu  Fri Oct  1 23:51:17 2010
+From: izahn at psych.rochester.edu (Ista Zahn)
+Date: Fri, 1 Oct 2010 17:51:17 -0400
+Subject: [R-sig-teaching] data preprocessing resources
+In-Reply-To: <4CA63FCF.9010402@eku.edu>
+References: <4CA63FCF.9010402@eku.edu>
+Message-ID: <AANLkTi=KuUCNxXCQXHUNRD2vj0DwbEKAJtjQspyxArWb@mail.gmail.com>
+
+You might find Paul Murrell's text helpful:
+http://www.stat.auckland.ac.nz/~paul/ItDT/
+
+-Ista
+
+On Fri, Oct 1, 2010 at 4:08 PM, Tyler Smith <tyler.smith at eku.edu> wrote:
+> ?Hi,
+>
+> I'll be teaching a grad course in multivariate stats for ecologists
+> (ordination et al.) for the first time this coming spring. One thing I've
+> discovered in my interactions with grad students is that they each develop
+> their own rather idiosyncratic approaches to data processing. I've seen some
+> really odd and weirdly illogical use of spreadsheets since I started
+> teaching last year.
+>
+> Do any of you know of good online or in-print resources to either use in my
+> teaching or direct students to? I've come across bits and pieces scattered
+> in various online lecture slides and notes, but nothing really focused on
+> this particular issue.
+>
+> I know this is not really an R issue per se, but it's much easier to get
+> data into R if it is originally entered into a spreadsheet in a sensible
+> fashion.
+>
+> Thanks for any suggestions!
+>
+> Tyler
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+-- 
+Ista Zahn
+Graduate student
+University of Rochester
+Department of Clinical and Social Psychology
+http://yourpsyche.org
+
+
+
+From rmh at temple.edu  Sat Oct  2 02:07:42 2010
+From: rmh at temple.edu (RICHARD M. HEIBERGER)
+Date: Fri, 1 Oct 2010 20:07:42 -0400
+Subject: [R-sig-teaching] plotting hypothesis of correlation t-test
+In-Reply-To: <AANLkTinyNqfWZt7BDGOmeAmGHQXUmiKrc6+kMMtygjy9@mail.gmail.com>
+References: <AANLkTinyNqfWZt7BDGOmeAmGHQXUmiKrc6+kMMtygjy9@mail.gmail.com>
+Message-ID: <AANLkTinbzZPhc_pRvg83dDoaXHoiCZ19-Lky43Cso89g@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101001/4b210904/attachment.pl>
+
+From tyler.smith at eku.edu  Mon Oct  4 03:07:04 2010
+From: tyler.smith at eku.edu (Tyler Smith)
+Date: Sun, 03 Oct 2010 21:07:04 -0400
+Subject: [R-sig-teaching] data preprocessing resources
+In-Reply-To: <B37C0A15B8FB3C468B5BC7EBC7DA14CC633E40FD3E@LP-EXMBVS10.CO.IHC.COM>
+References: <4CA63FCF.9010402@eku.edu>
+	<B37C0A15B8FB3C468B5BC7EBC7DA14CC633E40FD3E@LP-EXMBVS10.CO.IHC.COM>
+Message-ID: <4CA928B8.3020301@eku.edu>
+
+  On 10/01/2010 05:05 PM, Greg Snow wrote:
+> I would start here:
+>
+> http://www.burns-stat.com/pages/Tutor/spreadsheet_addiction.html
+>
+> Then point the students to a basic tutorial about databases (or at least MSaccess).
+>
+> Or you can have them enter the data directly into R without using outside products.  Some of the GUI front ends for R have spreadsheet like interfaces, or you can create an empty data frame with the correct column types, then use edit/fix to enter the data in a way that feels familiar to spreadsheet users, but prevents some of the major problems that come from abuse of spreadsheets.
+>
+Thanks! I'd forgotten about that essay. That's a nice opener. I have 
+never really considered R as a tool for data entry, but I'll have to 
+take another look at the GUIs.
+
+Cheers,
+
+Tyler
+
+
+
+From tyler.smith at eku.edu  Mon Oct  4 03:10:07 2010
+From: tyler.smith at eku.edu (Tyler Smith)
+Date: Sun, 03 Oct 2010 21:10:07 -0400
+Subject: [R-sig-teaching] data preprocessing resources
+In-Reply-To: <AANLkTi=KuUCNxXCQXHUNRD2vj0DwbEKAJtjQspyxArWb@mail.gmail.com>
+References: <4CA63FCF.9010402@eku.edu>
+	<AANLkTi=KuUCNxXCQXHUNRD2vj0DwbEKAJtjQspyxArWb@mail.gmail.com>
+Message-ID: <4CA9296F.5060807@eku.edu>
+
+  On 10/01/2010 05:51 PM, Ista Zahn wrote:
+> You might find Paul Murrell's text helpful:
+> http://www.stat.auckland.ac.nz/~paul/ItDT/
+>
+Thanks! That looks fantastic. It'll be a handy secondary resource for my 
+grad course, and could be a great primary text for an undergrad course 
+on its own.
+
+Cheers,
+
+Tyler
+
+
+
+From hayden at mv.mv.com  Thu Oct  7 22:42:12 2010
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Thu, 7 Oct 2010 16:42:12 -0400 (EDT)
+Subject: [R-sig-teaching]  Download all package
+Message-ID: <20101007204212.80948.qmail@mv.mv.com>
+
+Forwarded message:
+> From: Partha Sinha <pnsinha68 at gmail.com>
+> 
+> Dear Sir
+> Is there a way I can download all the packages in one shot or I need to
+> download one by one and use them?
+
+That sounds more like a browser question than an R teaching question
+but I have done it using the Down Them All plug-in for Firefox. 
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+
+http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+         
+Robert W. Hayden   phone (802) 334-1789  web site http://statland.org/      
+email  bob statland.org  (add your own "@" and save me some spam)
+
+
+
+From Greg.Snow at imail.org  Thu Oct  7 22:46:57 2010
+From: Greg.Snow at imail.org (Greg Snow)
+Date: Thu, 7 Oct 2010 14:46:57 -0600
+Subject: [R-sig-teaching] Download all package
+In-Reply-To: <20101007204212.80948.qmail@mv.mv.com>
+References: <20101007204212.80948.qmail@mv.mv.com>
+Message-ID: <B37C0A15B8FB3C468B5BC7EBC7DA14CC633E6AB00C@LP-EXMBVS10.CO.IHC.COM>
+
+Within R you can set your mirror and your repositories then do:
+
+> install.packages(new.packages())
+
+Then go home for the weekend because it is going to take quite a while to download and install everything.
+
+-- 
+Gregory (Greg) L. Snow Ph.D.
+Statistical Data Center
+Intermountain Healthcare
+greg.snow at imail.org
+801.408.8111
+
+
+> -----Original Message-----
+> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-
+> bounces at r-project.org] On Behalf Of Robert W. Hayden
+> Sent: Thursday, October 07, 2010 2:42 PM
+> To: R-sig-teaching
+> Subject: [R-sig-teaching] Download all package
+> 
+> Forwarded message:
+> > From: Partha Sinha <pnsinha68 at gmail.com>
+> >
+> > Dear Sir
+> > Is there a way I can download all the packages in one shot or I need
+> to
+> > download one by one and use them?
+> 
+> That sounds more like a browser question than an R teaching question
+> but I have done it using the Down Them All plug-in for Firefox.
+> 
+> ------->  First-time AP Stats. teacher?  Help is on the way! See
+> 
+> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.h
+> tml
+> 
+> Robert W. Hayden   phone (802) 334-1789  web site http://statland.org/
+> email  bob statland.org  (add your own "@" and save me some spam)
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+From hayden at mv.mv.com  Fri Oct  8 19:14:09 2010
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Fri, 8 Oct 2010 13:14:09 -0400 (EDT)
+Subject: [R-sig-teaching] Download all package
+Message-ID: <20101008171409.75034.qmail@mv.mv.com>
+
+Forwarded message:
+> From: Greg Snow <Greg.Snow at imail.org>
+> 
+> Within R you can set your mirror and your repositories then do:
+> 
+> > install.packages(new.packages())
+> 
+> Then go home for the weekend because it is going to take quite a while to d=
+> ownload and install everything.
+
+That's more elegant than using Firefox with Down Them All but it seems
+to me which way to go depends on the situation.  (The original post
+did not specify.) If you have R running on a machine connected to
+the Internet and you want to INSTALL all packages for THAT version of
+R then Greg's solution does the trick.  My situation has been making
+the packages available to machines running older versions of R and NOT
+connected to the Internet.  (One reason for that situation is some
+Windows 98 machines that can't run the current version of R and are
+not allowed on the Internet for security reasons.) 
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+
+http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+         
+Robert W. Hayden   phone (802) 334-1789  web site http://statland.org/      
+email  bob statland.org  (add your own "@" and save me some spam)
+
+
+
+From gjkerns at gmail.com  Sat Oct  9 07:32:09 2010
+From: gjkerns at gmail.com (G. Jay Kerns)
+Date: Sat, 9 Oct 2010 01:32:09 -0400
+Subject: [R-sig-teaching] videos, lecture notes, etc.
+Message-ID: <AANLkTinHck+HVQBya07V8wxYNt9gQD93D=10fjhy6B3Z@mail.gmail.com>
+
+Dear R-SIG-teaching,
+
+I have opened up guest access to the Moodle course for STAT 3743:
+Probability and Statistics.  The URL is
+
+http://www.moodle.ysumathstat.org/
+
+There a person will (cumulatively) find lecture notes, selected
+quizzes, exams, and video/screencasts of the daily recorded lectures.
+(And yes, it's all FREE.)  I mention it here because R is used
+liberally throughout and maybe some portion of it would be useful to
+one of you or your students.  The textbook is IPSUR, so a person can
+really get a front row seat to the whole thing in action.
+
+The direct link to the videos, etc. is
+
+http://www.ysumathstat.org/faculty/kerns/video/
+
+This is certainly work in progress and I haven't had time for things
+like video polishing;  please overlook any embarrassing roughness
+around the edges.
+
+Jay
+
+P.S.  Instructors would probably get the most mileage out of the
+RESOURCES subdirectory:
+
+http://www.ysumathstat.org/faculty/kerns/video/STAT3743/02-RESOURCES/
+
+P.P.S. There is another course shown on Moodle but it doesn't use R very much.
+
+
+
+***************************************************
+G. Jay Kerns, Ph.D.
+Associate Professor
+Department of Mathematics & Statistics
+Youngstown State University
+Youngstown, OH 44555-0002 USA
+Office: 1035 Cushwa Hall
+Phone: (330) 941-3310 Office (voice mail)
+-3302 Department
+-3170 FAX
+VoIP: gjkerns at ekiga.net
+E-mail: gkerns at ysu.edu
+http://people.ysu.edu/~gkerns/
+
+
+
+From lchihara at carleton.edu  Mon Oct 25 22:38:20 2010
+From: lchihara at carleton.edu (Laura Chihara)
+Date: Mon, 25 Oct 2010 15:38:20 -0500
+Subject: [R-sig-teaching] prop.test in R
+Message-ID: <4CC5EABC.4080404@carleton.edu>
+
+Hi,
+
+I have a question about prop.test in R:
+
+I teach students the score confidence
+interval for proportions (also called
+Wilson or Wilson score interval).
+
+prop.test(,..., correct=FALSE) gives this
+interval.
+
+The default uses a continuity correction.
+When should we use one over the other?
+Is it worth going over this in class? Why
+is correct=TRUE the default?
+
+Thanks for any pedagogical guidance here!
+
+-- Laura
+
+*******************************************
+Laura Chihara
+Professor of Mathematics   507-222-4065 (office)
+Dept of Mathematics        507-222-4312 (fax)
+Carleton College
+1 North College Street
+Northfield MN 55057
+
+
+
+From obrienralph at gmail.com  Mon Oct 25 23:02:02 2010
+From: obrienralph at gmail.com (Ralph O'Brien, PhD)
+Date: Mon, 25 Oct 2010 17:02:02 -0400
+Subject: [R-sig-teaching] prop.test in R
+In-Reply-To: <4CC5EABC.4080404@carleton.edu>
+References: <4CC5EABC.4080404@carleton.edu>
+Message-ID: <AANLkTik6EzJQrDuafWKGOPAwk7eyqHrrLKfgaicRaSK1@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101025/082cebc8/attachment.pl>
+
+From lchihara at carleton.edu  Mon Oct 25 23:15:20 2010
+From: lchihara at carleton.edu (Laura Chihara)
+Date: Mon, 25 Oct 2010 16:15:20 -0500
+Subject: [R-sig-teaching] prop.test in R
+In-Reply-To: <AANLkTik6EzJQrDuafWKGOPAwk7eyqHrrLKfgaicRaSK1@mail.gmail.com>
+References: <4CC5EABC.4080404@carleton.edu>
+	<AANLkTik6EzJQrDuafWKGOPAwk7eyqHrrLKfgaicRaSK1@mail.gmail.com>
+Message-ID: <4CC5F368.8090102@carleton.edu>
+
+Yes, thank you for this reference. But according to
+this article, the score is better than continuity
+correction, so why is continuity correction the default
+with prop.test?
+
+-Laura
+
+On 10/25/2010 4:02 PM, Ralph O'Brien, PhD wrote:
+> I suggest:
+>
+> A. Agresti and B. A. Coull. Approximate is better than ?exact? for
+> interval estimation of binomial proportions. The American Statistician,
+> 52(2):119?126, 1998.
+>
+>
+>
+>
+>
+>
+>
+> On Mon, Oct 25, 2010 at 4:38 PM, Laura Chihara <lchihara at carleton.edu
+> <mailto:lchihara at carleton.edu>> wrote:
+>
+>     Hi,
+>
+>     I have a question about prop.test in R:
+>
+>     I teach students the score confidence
+>     interval for proportions (also called
+>     Wilson or Wilson score interval).
+>
+>     prop.test(,..., correct=FALSE) gives this
+>     interval.
+>
+>     The default uses a continuity correction.
+>     When should we use one over the other?
+>     Is it worth going over this in class? Why
+>     is correct=TRUE the default?
+>
+>     Thanks for any pedagogical guidance here!
+>
+>     -- Laura
+>
+>     *******************************************
+>     Laura Chihara
+>     Professor of Mathematics   507-222-4065 (office)
+>     Dept of Mathematics        507-222-4312 (fax)
+>     Carleton College
+>     1 North College Street
+>     Northfield MN 55057
+>
+>     _______________________________________________
+>     R-sig-teaching at r-project.org <mailto:R-sig-teaching at r-project.org>
+>     mailing list
+>     https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+>
+>
+> --
+> Ralph O'Brien, PhD
+> Professor, Dept of Epidemiology and Biostatistics
+> Case Western Reserve University
+> Office: 216.368.1927
+> Cell: 216.312.3203
+
+-- 
+*******************************************
+Laura Chihara
+Professor of Mathematics   507-222-4065 (office)
+Dept of Mathematics        507-222-4312 (fax)
+Carleton College
+1 North College Street
+Northfield MN 55057
+
+
+
+From ian.fellows at stat.ucla.edu  Mon Oct 25 23:20:59 2010
+From: ian.fellows at stat.ucla.edu (Ian Fellows)
+Date: Mon, 25 Oct 2010 14:20:59 -0700
+Subject: [R-sig-teaching] prop.test in R
+In-Reply-To: <4CC5EABC.4080404@carleton.edu>
+References: <4CC5EABC.4080404@carleton.edu>
+Message-ID: <81EBF878-E1F3-4419-8117-9CE01CC0FB68@stat.ucla.edu>
+
+Laura,
+
+I would make the argument that continuity correction should not be used in practice, or in the classroom. Continuity corrected intervals are, on average, to wide. This might be defensible if they guaranteed their coverage level (as 'exact' distribution based intervals do), but due to the fact that they are asymptotic, they may have coverage less than the nominal level.
+
+The Agresti reference Ralph sent is an excellent article. I highly recommend it. I find it helpful to categorize discrete tests on two axes. conservative vs. approximate, and asymptotic vs distribution based. Conservative tests attempt to keep type 1 error less than the nominal level, and approximate tests attempt to keep the error near its nominal level.
+
+				Asymptotic				Distribution based
+Conservative	Continuity Corrected		Standard 'Exact' test
+
+Approximate		Standard Asymptotic		Mid p-value
+
+
+
+I would also be interested to hear why the default it correct=TRUE. Perhaps it is historical.
+
+Ian
+
+On Oct 25, 2010, at 1:38 PM, Laura Chihara wrote:
+
+> Hi,
+> 
+> I have a question about prop.test in R:
+> 
+> I teach students the score confidence
+> interval for proportions (also called
+> Wilson or Wilson score interval).
+> 
+> prop.test(,..., correct=FALSE) gives this
+> interval.
+> 
+> The default uses a continuity correction.
+> When should we use one over the other?
+> Is it worth going over this in class? Why
+> is correct=TRUE the default?
+> 
+> Thanks for any pedagogical guidance here!
+> 
+> -- Laura
+> 
+> *******************************************
+> Laura Chihara
+> Professor of Mathematics   507-222-4065 (office)
+> Dept of Mathematics        507-222-4312 (fax)
+> Carleton College
+> 1 North College Street
+> Northfield MN 55057
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+
+
+
+From jones at reed.edu  Tue Oct 26 01:05:17 2010
+From: jones at reed.edu (Albyn Jones)
+Date: Mon, 25 Oct 2010 16:05:17 -0700
+Subject: [R-sig-teaching] prop.test in R
+In-Reply-To: <4CC5F368.8090102@carleton.edu>
+References: <4CC5EABC.4080404@carleton.edu>
+	<AANLkTik6EzJQrDuafWKGOPAwk7eyqHrrLKfgaicRaSK1@mail.gmail.com>
+	<4CC5F368.8090102@carleton.edu>
+Message-ID: <20101025230517.GA12078@reed.edu>
+
+I don't know, the help file is uninformative.  I'd guess the answer is
+"the author wrote it that way".  Other R functions like t.test include
+similar unfortunate (to me) default choices, in that case
+var.equal=FALSE (ie the Welch test) is the default.
+
+albyn
+
+On Mon, Oct 25, 2010 at 04:15:20PM -0500, Laura Chihara wrote:
+> Yes, thank you for this reference. But according to
+> this article, the score is better than continuity
+> correction, so why is continuity correction the default
+> with prop.test?
+> 
+> -Laura
+> 
+> On 10/25/2010 4:02 PM, Ralph O'Brien, PhD wrote:
+> >I suggest:
+> >
+> >A. Agresti and B. A. Coull. Approximate is better than ?exact? for
+> >interval estimation of binomial proportions. The American Statistician,
+> >52(2):119?126, 1998.
+> >
+> >
+> >
+> >
+> >
+> >
+> >
+> >On Mon, Oct 25, 2010 at 4:38 PM, Laura Chihara <lchihara at carleton.edu
+> ><mailto:lchihara at carleton.edu>> wrote:
+> >
+> >    Hi,
+> >
+> >    I have a question about prop.test in R:
+> >
+> >    I teach students the score confidence
+> >    interval for proportions (also called
+> >    Wilson or Wilson score interval).
+> >
+> >    prop.test(,..., correct=FALSE) gives this
+> >    interval.
+> >
+> >    The default uses a continuity correction.
+> >    When should we use one over the other?
+> >    Is it worth going over this in class? Why
+> >    is correct=TRUE the default?
+> >
+> >    Thanks for any pedagogical guidance here!
+> >
+> >    -- Laura
+> >
+> >    *******************************************
+> >    Laura Chihara
+> >    Professor of Mathematics   507-222-4065 (office)
+> >    Dept of Mathematics        507-222-4312 (fax)
+> >    Carleton College
+> >    1 North College Street
+> >    Northfield MN 55057
+> >
+> >    _______________________________________________
+> >    R-sig-teaching at r-project.org <mailto:R-sig-teaching at r-project.org>
+> >    mailing list
+> >    https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >
+> >
+> >
+> >
+> >--
+> >Ralph O'Brien, PhD
+> >Professor, Dept of Epidemiology and Biostatistics
+> >Case Western Reserve University
+> >Office: 216.368.1927
+> >Cell: 216.312.3203
+> 
+> -- 
+> *******************************************
+> Laura Chihara
+> Professor of Mathematics   507-222-4065 (office)
+> Dept of Mathematics        507-222-4312 (fax)
+> Carleton College
+> 1 North College Street
+> Northfield MN 55057
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+
+-- 
+Albyn Jones
+Reed College
+jones at reed.edu
+
+
+
+From ian.fellows at stat.ucla.edu  Tue Oct 26 01:57:24 2010
+From: ian.fellows at stat.ucla.edu (Ian Fellows)
+Date: Mon, 25 Oct 2010 16:57:24 -0700
+Subject: [R-sig-teaching] prop.test in R
+In-Reply-To: <20101025230517.GA12078@reed.edu>
+References: <4CC5EABC.4080404@carleton.edu>
+	<AANLkTik6EzJQrDuafWKGOPAwk7eyqHrrLKfgaicRaSK1@mail.gmail.com>
+	<4CC5F368.8090102@carleton.edu> <20101025230517.GA12078@reed.edu>
+Message-ID: <ED9D2250-1275-4E46-8F63-75CDC383287B@stat.ucla.edu>
+
+In the case of the t.test, having the default be var.equal=TRUE is the right way to go. There is little to no power lost by using the welch test, and the assumption of equal variance can be difficult to assess. For this reason, many introductory text books have now banished the equal variance t-test from their chapters (e.g. Moore's The Basic Practice of Statistics).
+
+Ian
+
+
+On Oct 25, 2010, at 4:05 PM, Albyn Jones wrote:
+
+> I don't know, the help file is uninformative.  I'd guess the answer is
+> "the author wrote it that way".  Other R functions like t.test include
+> similar unfortunate (to me) default choices, in that case
+> var.equal=FALSE (ie the Welch test) is the default.
+> 
+> albyn
+> 
+> On Mon, Oct 25, 2010 at 04:15:20PM -0500, Laura Chihara wrote:
+>> Yes, thank you for this reference. But according to
+>> this article, the score is better than continuity
+>> correction, so why is continuity correction the default
+>> with prop.test?
+>> 
+>> -Laura
+>> 
+>> On 10/25/2010 4:02 PM, Ralph O'Brien, PhD wrote:
+>>> I suggest:
+>>> 
+>>> A. Agresti and B. A. Coull. Approximate is better than ?exact? for
+>>> interval estimation of binomial proportions. The American Statistician,
+>>> 52(2):119?126, 1998.
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> On Mon, Oct 25, 2010 at 4:38 PM, Laura Chihara <lchihara at carleton.edu
+>>> <mailto:lchihara at carleton.edu>> wrote:
+>>> 
+>>>   Hi,
+>>> 
+>>>   I have a question about prop.test in R:
+>>> 
+>>>   I teach students the score confidence
+>>>   interval for proportions (also called
+>>>   Wilson or Wilson score interval).
+>>> 
+>>>   prop.test(,..., correct=FALSE) gives this
+>>>   interval.
+>>> 
+>>>   The default uses a continuity correction.
+>>>   When should we use one over the other?
+>>>   Is it worth going over this in class? Why
+>>>   is correct=TRUE the default?
+>>> 
+>>>   Thanks for any pedagogical guidance here!
+>>> 
+>>>   -- Laura
+>>> 
+>>>   *******************************************
+>>>   Laura Chihara
+>>>   Professor of Mathematics   507-222-4065 (office)
+>>>   Dept of Mathematics        507-222-4312 (fax)
+>>>   Carleton College
+>>>   1 North College Street
+>>>   Northfield MN 55057
+>>> 
+>>>   _______________________________________________
+>>>   R-sig-teaching at r-project.org <mailto:R-sig-teaching at r-project.org>
+>>>   mailing list
+>>>   https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>> 
+>>> 
+>>> 
+>>> 
+>>> --
+>>> Ralph O'Brien, PhD
+>>> Professor, Dept of Epidemiology and Biostatistics
+>>> Case Western Reserve University
+>>> Office: 216.368.1927
+>>> Cell: 216.312.3203
+>> 
+>> -- 
+>> *******************************************
+>> Laura Chihara
+>> Professor of Mathematics   507-222-4065 (office)
+>> Dept of Mathematics        507-222-4312 (fax)
+>> Carleton College
+>> 1 North College Street
+>> Northfield MN 55057
+>> 
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>> 
+> 
+> -- 
+> Albyn Jones
+> Reed College
+> jones at reed.edu
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+From jones at reed.edu  Tue Oct 26 03:51:26 2010
+From: jones at reed.edu (Albyn Jones)
+Date: Mon, 25 Oct 2010 18:51:26 -0700
+Subject: [R-sig-teaching] prop.test in R
+In-Reply-To: <ED9D2250-1275-4E46-8F63-75CDC383287B@stat.ucla.edu>
+References: <4CC5EABC.4080404@carleton.edu>
+	<AANLkTik6EzJQrDuafWKGOPAwk7eyqHrrLKfgaicRaSK1@mail.gmail.com>
+	<4CC5F368.8090102@carleton.edu> <20101025230517.GA12078@reed.edu>
+	<ED9D2250-1275-4E46-8F63-75CDC383287B@stat.ucla.edu>
+Message-ID: <20101025185126.1753346v5mzgdqn2@webmail.reed.edu>
+
+Exactly - elementary texts and methods books recommend the welch test  
+for the reason you mention.  Curiously, those same texts recommend  
+using anova and regression without automatically correcting for the  
+possibility of non-constant variance.  Why is the case of comparing  
+two means different from 3?  Those same books will tell you that anova  
+is pretty robust to non-constant variance.  well, the two sample  
+t-test is anova.
+
+I don't use the welch test except as a conscious decision: ie I really  
+want to compare the means while suspecting that the variances differ.   
+Generally people are using the t test to certify that two populations  
+are different.  If the variances are wildly different, that may be  
+much more important than a difference in means.  in fact, to test for  
+a difference in means when the variances are wildly different is  
+almost always substantively silly.   There was a great example a few  
+years ago from a psychiatric journal, comparing two medications, where  
+the investigators did a t-test for the means when one distribution was  
+unimodal and the other was bi-modal; there was no statistically  
+significant difference in the means, but there was a really important  
+difference in the distributions.  The automatic use of the welch test  
+makes you feel that you are protected against Bad Things, when you  
+aren't.
+
+albyn
+
+Quoting Ian Fellows <ian.fellows at stat.ucla.edu>:
+
+> In the case of the t.test, having the default be var.equal=TRUE is  
+> the right way to go. There is little to no power lost by using the  
+> welch test, and the assumption of equal variance can be difficult to  
+> assess. For this reason, many introductory text books have now  
+> banished the equal variance t-test from their chapters (e.g. Moore's  
+> The Basic Practice of Statistics).
+>
+> Ian
+>
+>
+> On Oct 25, 2010, at 4:05 PM, Albyn Jones wrote:
+>
+>> I don't know, the help file is uninformative.  I'd guess the answer is
+>> "the author wrote it that way".  Other R functions like t.test include
+>> similar unfortunate (to me) default choices, in that case
+>> var.equal=FALSE (ie the Welch test) is the default.
+>>
+>> albyn
+>>
+>> On Mon, Oct 25, 2010 at 04:15:20PM -0500, Laura Chihara wrote:
+>>> Yes, thank you for this reference. But according to
+>>> this article, the score is better than continuity
+>>> correction, so why is continuity correction the default
+>>> with prop.test?
+>>>
+>>> -Laura
+>>>
+>>> On 10/25/2010 4:02 PM, Ralph O'Brien, PhD wrote:
+>>>> I suggest:
+>>>>
+>>>> A. Agresti and B. A. Coull. Approximate is better than ?exact? for
+>>>> interval estimation of binomial proportions. The American Statistician,
+>>>> 52(2):119?126, 1998.
+>>>>
+>>>>
+>>>>
+>>>>
+>>>>
+>>>>
+>>>>
+>>>> On Mon, Oct 25, 2010 at 4:38 PM, Laura Chihara <lchihara at carleton.edu
+>>>> <mailto:lchihara at carleton.edu>> wrote:
+>>>>
+>>>>   Hi,
+>>>>
+>>>>   I have a question about prop.test in R:
+>>>>
+>>>>   I teach students the score confidence
+>>>>   interval for proportions (also called
+>>>>   Wilson or Wilson score interval).
+>>>>
+>>>>   prop.test(,..., correct=FALSE) gives this
+>>>>   interval.
+>>>>
+>>>>   The default uses a continuity correction.
+>>>>   When should we use one over the other?
+>>>>   Is it worth going over this in class? Why
+>>>>   is correct=TRUE the default?
+>>>>
+>>>>   Thanks for any pedagogical guidance here!
+>>>>
+>>>>   -- Laura
+>>>>
+>>>>   *******************************************
+>>>>   Laura Chihara
+>>>>   Professor of Mathematics   507-222-4065 (office)
+>>>>   Dept of Mathematics        507-222-4312 (fax)
+>>>>   Carleton College
+>>>>   1 North College Street
+>>>>   Northfield MN 55057
+>>>>
+>>>>   _______________________________________________
+>>>>   R-sig-teaching at r-project.org <mailto:R-sig-teaching at r-project.org>
+>>>>   mailing list
+>>>>   https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>>>
+>>>>
+>>>>
+>>>>
+>>>> --
+>>>> Ralph O'Brien, PhD
+>>>> Professor, Dept of Epidemiology and Biostatistics
+>>>> Case Western Reserve University
+>>>> Office: 216.368.1927
+>>>> Cell: 216.312.3203
+>>>
+>>> --
+>>> *******************************************
+>>> Laura Chihara
+>>> Professor of Mathematics   507-222-4065 (office)
+>>> Dept of Mathematics        507-222-4312 (fax)
+>>> Carleton College
+>>> 1 North College Street
+>>> Northfield MN 55057
+>>>
+>>> _______________________________________________
+>>> R-sig-teaching at r-project.org mailing list
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>>
+>>
+>> --
+>> Albyn Jones
+>> Reed College
+>> jones at reed.edu
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+>
+
+
+
+From Zeno.Adams at ebs.edu  Tue Oct 26 11:42:39 2010
+From: Zeno.Adams at ebs.edu (Adams, Zeno)
+Date: Tue, 26 Oct 2010 11:42:39 +0200
+Subject: [R-sig-teaching] prop.test in R
+References: <4CC5EABC.4080404@carleton.edu><AANLkTik6EzJQrDuafWKGOPAwk7eyqHrrLKfgaicRaSK1@mail.gmail.com><4CC5F368.8090102@carleton.edu>
+	<20101025230517.GA12078@reed.edu><ED9D2250-1275-4E46-8F63-75CDC383287B@stat.ucla.edu>
+	<20101025185126.1753346v5mzgdqn2@webmail.reed.edu>
+Message-ID: <9064522880125945B98983BBAECBA1CC0101BD32@exchsrv001.ebs.local>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101026/85b1c39e/attachment.pl>
+
+From bates at stat.wisc.edu  Tue Oct 26 14:40:51 2010
+From: bates at stat.wisc.edu (Douglas Bates)
+Date: Tue, 26 Oct 2010 07:40:51 -0500
+Subject: [R-sig-teaching] prop.test in R
+In-Reply-To: <9064522880125945B98983BBAECBA1CC0101BD32@exchsrv001.ebs.local>
+References: <4CC5EABC.4080404@carleton.edu>
+	<AANLkTik6EzJQrDuafWKGOPAwk7eyqHrrLKfgaicRaSK1@mail.gmail.com>
+	<4CC5F368.8090102@carleton.edu> <20101025230517.GA12078@reed.edu>
+	<ED9D2250-1275-4E46-8F63-75CDC383287B@stat.ucla.edu>
+	<20101025185126.1753346v5mzgdqn2@webmail.reed.edu>
+	<9064522880125945B98983BBAECBA1CC0101BD32@exchsrv001.ebs.local>
+Message-ID: <AANLkTimpKEhe3ydARMkT7ekerYRG3HsoVS=1N+0P6z64@mail.gmail.com>
+
+On Tue, Oct 26, 2010 at 4:42 AM, Adams, Zeno <Zeno.Adams at ebs.edu> wrote:
+> This is an interesting discussion. Concerning the right choice and computation of t-tests there is still one point that is unclear to me: In the Welch t-test we have a difference in the numerator and a standard deviation of a difference in the denominator. Why then is the standard deviation of the difference not computed correctly, i.e. why is the covariance between X and Y not taken into account?
+>
+> For example using the sleep data:
+>
+> data(sleep)
+> means <- tapply(sleep$extra,sleep$group,mean) ; means
+> vars <- tapply(sleep$extra,sleep$group,var) ; vars
+>
+> sd.welch <- sqrt(vars[1]/10 + vars[2]/10) ; sd.welch
+> #in sd.welch the covariance is ignored
+>
+> t.welch <- (means[1]-means[2])/sd.welch ; t.welch
+>
+> #verify with R-built-in t.test function:
+> t.test(extra ~ group, data = sleep)
+>
+>
+> However, the correlation between sleep$extra[sleep$group == 1] and sleep$extra[sleep$group == 2] is relatively high:
+>
+> cor(sleep$extra[sleep$group == 1],sleep$extra[sleep$group == 2])
+>
+> Souldn?t the correct standard deviation be?
+>
+> sd.paired <- sqrt(vars[1]/10 + vars[2]/10
+> ? ? ? ?-2*cov(sleep$extra[sleep$group == 1],sleep$extra[sleep$group == 2])/10) ; sd.paired
+>
+> ?as in the paired t-test???
+
+Only if the order of the observations in each sample is fixed.  I
+don't want to sound facetious but the important characteristic of the
+samples in a paired t-test is that they are paired.  The first
+observation in sample 1 is associated in some way with the first
+observation in sample 2, say because they are observations on the same
+subject or at the same location or ...
+
+If there is no pairing then one of the samples could be rearranged
+without changing the other, thereby changing the covariance.
+
+Because of the pairing the sample sizes in a paired t-test must be
+equal.  But a t-test for independent samples can be used when the
+sample sizes are unequal.  So, no, the t-test for independent samples
+is not a special case of the paired t-test.
+
+> In other words, isn?t the Welch t-test a special case of the paired t-test with both samples assumed to be uncorrelated? And shouldn?t we then teach only the paired t-test as the most general test in class?
+>
+> Thanks!
+>
+> Zeno
+>
+>
+>
+> -----Original Message-----
+> From: r-sig-teaching-bounces at r-project.org on behalf of Albyn Jones
+> Sent: Tue 10/26/2010 3:51 AM
+> To: Ian Fellows
+> Cc: r-sig-teaching at r-project.org
+> Subject: Re: [R-sig-teaching] prop.test in R
+>
+> Exactly - elementary texts and methods books recommend the welch test
+> for the reason you mention. ?Curiously, those same texts recommend
+> using anova and regression without automatically correcting for the
+> possibility of non-constant variance. ?Why is the case of comparing
+> two means different from 3? ?Those same books will tell you that anova
+> is pretty robust to non-constant variance. ?well, the two sample
+> t-test is anova.
+>
+> I don't use the welch test except as a conscious decision: ie I really
+> want to compare the means while suspecting that the variances differ.
+> Generally people are using the t test to certify that two populations
+> are different. ?If the variances are wildly different, that may be
+> much more important than a difference in means. ?in fact, to test for
+> a difference in means when the variances are wildly different is
+> almost always substantively silly. ? There was a great example a few
+> years ago from a psychiatric journal, comparing two medications, where
+> the investigators did a t-test for the means when one distribution was
+> unimodal and the other was bi-modal; there was no statistically
+> significant difference in the means, but there was a really important
+> difference in the distributions. ?The automatic use of the welch test
+> makes you feel that you are protected against Bad Things, when you
+> aren't.
+>
+> albyn
+>
+> Quoting Ian Fellows <ian.fellows at stat.ucla.edu>:
+>
+>> In the case of the t.test, having the default be var.equal=TRUE is
+>> the right way to go. There is little to no power lost by using the
+>> welch test, and the assumption of equal variance can be difficult to
+>> assess. For this reason, many introductory text books have now
+>> banished the equal variance t-test from their chapters (e.g. Moore's
+>> The Basic Practice of Statistics).
+>>
+>> Ian
+>>
+>>
+>> On Oct 25, 2010, at 4:05 PM, Albyn Jones wrote:
+>>
+>>> I don't know, the help file is uninformative. ?I'd guess the answer is
+>>> "the author wrote it that way". ?Other R functions like t.test include
+>>> similar unfortunate (to me) default choices, in that case
+>>> var.equal=FALSE (ie the Welch test) is the default.
+>>>
+>>> albyn
+>>>
+>>> On Mon, Oct 25, 2010 at 04:15:20PM -0500, Laura Chihara wrote:
+>>>> Yes, thank you for this reference. But according to
+>>>> this article, the score is better than continuity
+>>>> correction, so why is continuity correction the default
+>>>> with prop.test?
+>>>>
+>>>> -Laura
+>>>>
+>>>> On 10/25/2010 4:02 PM, Ralph O'Brien, PhD wrote:
+>>>>> I suggest:
+>>>>>
+>>>>> A. Agresti and B. A. Coull. Approximate is better than "exact" for
+>>>>> interval estimation of binomial proportions. The American Statistician,
+>>>>> 52(2):119-126, 1998.
+>>>>>
+>>>>>
+>>>>>
+>>>>>
+>>>>>
+>>>>>
+>>>>>
+>>>>> On Mon, Oct 25, 2010 at 4:38 PM, Laura Chihara <lchihara at carleton.edu
+>>>>> <mailto:lchihara at carleton.edu>> wrote:
+>>>>>
+>>>>> ? Hi,
+>>>>>
+>>>>> ? I have a question about prop.test in R:
+>>>>>
+>>>>> ? I teach students the score confidence
+>>>>> ? interval for proportions (also called
+>>>>> ? Wilson or Wilson score interval).
+>>>>>
+>>>>> ? prop.test(,..., correct=FALSE) gives this
+>>>>> ? interval.
+>>>>>
+>>>>> ? The default uses a continuity correction.
+>>>>> ? When should we use one over the other?
+>>>>> ? Is it worth going over this in class? Why
+>>>>> ? is correct=TRUE the default?
+>>>>>
+>>>>> ? Thanks for any pedagogical guidance here!
+>>>>>
+>>>>> ? -- Laura
+>>>>>
+>>>>> ? *******************************************
+>>>>> ? Laura Chihara
+>>>>> ? Professor of Mathematics ? 507-222-4065 (office)
+>>>>> ? Dept of Mathematics ? ? ? ?507-222-4312 (fax)
+>>>>> ? Carleton College
+>>>>> ? 1 North College Street
+>>>>> ? Northfield MN 55057
+>>>>>
+>>>>> ? _______________________________________________
+>>>>> ? R-sig-teaching at r-project.org <mailto:R-sig-teaching at r-project.org>
+>>>>> ? mailing list
+>>>>> ? https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>>>>
+>>>>>
+>>>>>
+>>>>>
+>>>>> --
+>>>>> Ralph O'Brien, PhD
+>>>>> Professor, Dept of Epidemiology and Biostatistics
+>>>>> Case Western Reserve University
+>>>>> Office: 216.368.1927
+>>>>> Cell: 216.312.3203
+>>>>
+>>>> --
+>>>> *******************************************
+>>>> Laura Chihara
+>>>> Professor of Mathematics ? 507-222-4065 (office)
+>>>> Dept of Mathematics ? ? ? ?507-222-4312 (fax)
+>>>> Carleton College
+>>>> 1 North College Street
+>>>> Northfield MN 55057
+>>>>
+>>>> _______________________________________________
+>>>> R-sig-teaching at r-project.org mailing list
+>>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>>>
+>>>
+>>> --
+>>> Albyn Jones
+>>> Reed College
+>>> jones at reed.edu
+>>>
+>>> _______________________________________________
+>>> R-sig-teaching at r-project.org mailing list
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>>
+>>
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+>
+> EBS European Business School gemeinnuetzige GmbH, Universitaet fuer Wirtschaft und Recht i.Gr. - Amtsgericht Wiesbaden HRB 19951 - Umsatzsteuer-ID DE 113891213 Geschaeftsfuehrung: Prof. Dr. Christopher Jahns, ?President; Prof. Dr. Rolf Tilmes, Dean Business School; Sabine Fuchs, CMO; Prof. Dr. Dr. Gerrick Frhr. v. Hoyningen-Huene, Dean Law School; Verwaltungsrat: Dr. Hellmut K. Albrecht, Vorsitzender
+> ? ? ? ?[[alternative HTML version deleted]]
+>
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+
+
+
+From maj at waikato.ac.nz  Tue Oct 26 21:10:41 2010
+From: maj at waikato.ac.nz (Murray Jorgensen)
+Date: Wed, 27 Oct 2010 08:10:41 +1300
+Subject: [R-sig-teaching] The pedagogy of the assignment operator
+Message-ID: <4CC727B1.6040504@waikato.ac.nz>
+
+Greetings all,
+
+in my own R code I have used various forms of the R assignment operator 
+at different times in my life. There are arguments for and against each 
+choice.
+
+A question I would like this sig is whether there are any specifically 
+teaching reasons for preferring one form over another?
+
+A second question, mainly to clarify the first, is whether different 
+forms might be preferred for different types of student?
+
+Awaiting responses with interest  -  Murray
+
+-- 
+Dr Murray Jorgensen      http://www.stats.waikato.ac.nz/Staff/maj.html
+Department of Statistics, University of Waikato, Hamilton, New Zealand
+Email: maj at waikato.ac.nz    majorgensen at ihug.co.nz      Fax 7 838 4155
+Phone  +64 7 838 4773 wk    Home +64 7 825 0441   Mobile 021 0200 8350
+
+
+
+From bates at stat.wisc.edu  Tue Oct 26 21:43:07 2010
+From: bates at stat.wisc.edu (Douglas Bates)
+Date: Tue, 26 Oct 2010 14:43:07 -0500
+Subject: [R-sig-teaching] The pedagogy of the assignment operator
+In-Reply-To: <4CC727B1.6040504@waikato.ac.nz>
+References: <4CC727B1.6040504@waikato.ac.nz>
+Message-ID: <AANLkTi=mnyjHakyY53Fwju_uFxcdjx0wAEXWta5i4m9L@mail.gmail.com>
+
+Arguments in favor of using "=" as the assignment operator:
+ - it is familiar to any students who have studied compiled languages
+like C++ or Java or interpreted languages like Matlab, Perl, Python,
+...
+ - it is easier to type than "<-"
+
+Arguments in favor of using "<-"
+ - "<-" is more general than "=".  They are almost but not quite
+equivalent and the case where they do differ is something I use
+frequently.
+
+More detail:
+
+I encourage students to use str() frequently to check the structure of
+the data object that they are producing and make sure it corresponds
+to what they think it should be.  Often I wrap an assignment in a call
+to str() or to summary().  For example
+
+str(read.csv("WRAP.csv"))
+summary(wrap <- within(read.csv("WRAP.csv"),
+                   {
+                       DBID <- factor(DBID)
+                       VisNo <- factor(VisNo, labels=c("base","follow"))
+                       family <- factor(family)
+                       famhist <- factor(famhist, labels=c("N","Y"))
+                       apoe <- factor(apoe, labels=c("N","Y"))
+                       gender <- factor(gender, labels=c("M","F"))
+                       ed <- ordered(ed)
+                       race <- factor(race)
+                       tester <- factor(tester)
+                   }))
+
+The first call to str is to check what variables are recorded as
+integers and should be factors.  The call to within performs the
+desired transformations following which the data frame is assigned to
+the name "wrap" and summarized.  You can't write that as
+
+summary(wrap = within(...
+
+because the "=" is taken to indicate a named argument, not assignment.
+
+
+On Tue, Oct 26, 2010 at 2:10 PM, Murray Jorgensen <maj at waikato.ac.nz> wrote:
+> Greetings all,
+>
+> in my own R code I have used various forms of the R assignment operator at
+> different times in my life. There are arguments for and against each choice.
+>
+> A question I would like this sig is whether there are any specifically
+> teaching reasons for preferring one form over another?
+>
+> A second question, mainly to clarify the first, is whether different forms
+> might be preferred for different types of student?
+>
+> Awaiting responses with interest ?- ?Murray
+>
+> --
+> Dr Murray Jorgensen ? ? ?http://www.stats.waikato.ac.nz/Staff/maj.html
+> Department of Statistics, University of Waikato, Hamilton, New Zealand
+> Email: maj at waikato.ac.nz ? ?majorgensen at ihug.co.nz ? ? ?Fax 7 838 4155
+> Phone ?+64 7 838 4773 wk ? ?Home +64 7 825 0441 ? Mobile 021 0200 8350
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+From hayden at mv.mv.com  Tue Oct 26 21:44:30 2010
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Tue, 26 Oct 2010 15:44:30 -0400 (EDT)
+Subject: [R-sig-teaching]  The pedagogy of the assignment operator
+Message-ID: <20101026194430.68259.qmail@mv.mv.com>
+
+Forwarded message:
+> From: Murray Jorgensen <maj at waikato.ac.nz>
+> 
+> in my own R code I have used various forms of the R assignment operator 
+> at different times in my life. There are arguments for and against each 
+> choice.
+> 
+> A question I would like this sig is whether there are any specifically 
+> teaching reasons for preferring one form over another?
+> 
+> A second question, mainly to clarify the first, is whether different 
+> forms might be preferred for different types of student?
+
+I don't have a strong opinion but I think this was much debated long
+ago in connection with other programming languages such as BASIC and
+Pascal.  Some of that might be relevant.
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+
+http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+         
+Robert W. Hayden, P.O Box 450, North Troy, VT 05859 
+phone (802) 988-2587  web site http://statland.org/      
+email  bob statland.org  (add your own "@" and save me some spam)
+
+
+
+From spluque at gmail.com  Tue Oct 26 22:17:22 2010
+From: spluque at gmail.com (Sebastian P. Luque)
+Date: Tue, 26 Oct 2010 15:17:22 -0500
+Subject: [R-sig-teaching] The pedagogy of the assignment operator
+References: <4CC727B1.6040504@waikato.ac.nz>
+Message-ID: <87k4l4g14d.fsf@kolob.sebmags.homelinux.org>
+
+On Wed, 27 Oct 2010 08:10:41 +1300,
+Murray Jorgensen <maj at waikato.ac.nz> wrote:
+
+> Greetings all, in my own R code I have used various forms of the R
+> assignment operator at different times in my life. There are arguments
+> for and against each choice.
+
+> A question I would like this sig is whether there are any specifically
+> teaching reasons for preferring one form over another?
+
+> A second question, mainly to clarify the first, is whether different
+> forms might be preferred for different types of student?
+
+> Awaiting responses with interest
+
+Personally I find the most compelling reason to get into the habit of
+using "<-" for assignments as early as possible is that it has a single
+meaning, whereas "=" has two different meanings as others have pointed
+out.  It makes code a lot cleaner and easier to read because assignments
+readily stand-out from parts where a value is being given to an
+argument.  Although it might be easier for some new users to read and
+type "=" for assignments, it blurs the distinction between the two
+different meanings for "=".  Because these different meanings depend on
+the context, that's one more thing for a user to keep in mind.
+
+-- 
+Seb
+
+
+
+From ian.fellows at stat.ucla.edu  Tue Oct 26 23:07:37 2010
+From: ian.fellows at stat.ucla.edu (ian.fellows at stat.ucla.edu)
+Date: Tue, 26 Oct 2010 14:07:37 -0700 (PDT)
+Subject: [R-sig-teaching] prop.test in R
+In-Reply-To: <20101025185126.1753346v5mzgdqn2@webmail.reed.edu>
+References: <4CC5EABC.4080404@carleton.edu>
+	<AANLkTik6EzJQrDuafWKGOPAwk7eyqHrrLKfgaicRaSK1@mail.gmail.com>
+	<4CC5F368.8090102@carleton.edu> <20101025230517.GA12078@reed.edu>
+	<ED9D2250-1275-4E46-8F63-75CDC383287B@stat.ucla.edu>
+	<20101025185126.1753346v5mzgdqn2@webmail.reed.edu>
+Message-ID: <c2f1fe52882a641de41802b5dec86a0f.squirrel@mail.stat.ucla.edu>
+
+> Exactly - elementary texts and methods books recommend the welch test
+> for the reason you mention.  Curiously, those same texts recommend
+> using anova and regression without automatically correcting for the
+> possibility of non-constant variance.  Why is the case of comparing
+> two means different from 3?  Those same books will tell you that anova
+> is pretty robust to non-constant variance.  well, the two sample
+> t-test is anova.
+
+I agree with you that the presentation is unfortunate. Perhaps it has
+something to do with the fact that heteroskedastic consistent covariance
+matrices (HCCM) for linear regression are a relatively recent development
+(by White and Huber in the early 80s), and initially they performed poorly
+for small sample sizes. From a pedegogy standpoint the derivations of the
+formulas for HCCM are beyond the scope of an undergraduate course whereas
+the equal variance versions can be easily derived.
+
+Given more recent simulation studies showing the power and level of tests
+based on HCCM are comparable with equal variance regression, and that
+there is rarely any reason to apriori think that the variances are equal.
+
+The anova is robust to violations so long as the group sizes are equal. if
+they aren't then it isn't.
+
+>
+> I don't use the welch test except as a conscious decision: ie I really
+> want to compare the means while suspecting that the variances differ.
+> Generally people are using the t test to certify that two populations
+> are different.  If the variances are wildly different, that may be
+> much more important than a difference in means.  in fact, to test for
+> a difference in means when the variances are wildly different is
+> almost always substantively silly.   There was a great example a few
+> years ago from a psychiatric journal, comparing two medications, where
+> the investigators did a t-test for the means when one distribution was
+> unimodal and the other was bi-modal; there was no statistically
+> significant difference in the means, but there was a really important
+> difference in the distributions.  The automatic use of the welch test
+> makes you feel that you are protected against Bad Things, when you
+> aren't.
+
+You may not suspect that the variances are different, but there is no
+apriori reason to think that they are equal. Why should you assume
+something you have no reason to believe is true? In my experience, people
+are not using the t-test to say that two populations are in some general
+way different, but rather specifically that the means vary. This is an
+important question regardless of whether the variances are equal.
+
+In your medication example, the shape of the two distributions was
+different, but when making the decision of whether to approve a
+medication, the more important question is whether the central tendency is
+different. Does one medication on average improve the outcome more than
+another. A secondary, though important, question is how variable the
+outcome is. The investigators made a correct inference (in stating no
+significant mean difference between the groups), but they missed an
+important question that they could have asked their data. This omission
+has nothing to do with the t-test.
+
+Using heteroskedastic robust methods DO protect against "Bad Things." What
+they don't do is reveal the existence  important data trends unrelated to
+their hypothesis of interest.
+
+
+Ian
+
+
+
+From ggrothendieck at gmail.com  Wed Oct 27 01:59:18 2010
+From: ggrothendieck at gmail.com (Gabor Grothendieck)
+Date: Tue, 26 Oct 2010 19:59:18 -0400
+Subject: [R-sig-teaching] The pedagogy of the assignment operator
+In-Reply-To: <4CC727B1.6040504@waikato.ac.nz>
+References: <4CC727B1.6040504@waikato.ac.nz>
+Message-ID: <AANLkTikYS46kRUUXYsz0-TKHswq=eLL3RhNgs06HaWMO@mail.gmail.com>
+
+On Tue, Oct 26, 2010 at 3:10 PM, Murray Jorgensen <maj at waikato.ac.nz> wrote:
+> Greetings all,
+>
+> in my own R code I have used various forms of the R assignment operator at
+> different times in my life. There are arguments for and against each choice.
+>
+> A question I would like this sig is whether there are any specifically
+> teaching reasons for preferring one form over another?
+>
+> A second question, mainly to clarify the first, is whether different forms
+> might be preferred for different types of student?
+>
+> Awaiting responses with interest ?- ?Murray
+
+<- is less error prone so you always want to use that.  It might be
+argued that there are only a few cases where it matters but if you run
+into one of those cases you will be sorry you did not standardize on
+using <- .
+
+-- 
+Statistics & Software Consulting
+GKX Group, GKX Associates Inc.
+tel: 1-877-GKX-GROUP
+email: ggrothendieck at gmail.com
+
+
+
+From maj at waikato.ac.nz  Wed Oct 27 02:41:13 2010
+From: maj at waikato.ac.nz (Murray Jorgensen)
+Date: Wed, 27 Oct 2010 13:41:13 +1300
+Subject: [R-sig-teaching] The pedagogy of the assignment operator
+In-Reply-To: <AANLkTikYS46kRUUXYsz0-TKHswq=eLL3RhNgs06HaWMO@mail.gmail.com>
+References: <4CC727B1.6040504@waikato.ac.nz>
+	<AANLkTikYS46kRUUXYsz0-TKHswq=eLL3RhNgs06HaWMO@mail.gmail.com>
+Message-ID: <4CC77529.3010307@waikato.ac.nz>
+
+I can see that I am going to have to set a little context because I 
+wanted to anchor the discussion in the teaching of statistics, and not 
+of R as a language. I think the issues are different in the two. One big 
+problem in the former is that symbols can engender fear in the students.
+
+A few years ago I was taken off the teaching of a large first year 
+business statistics course. The clinching incident in this decision 
+mentioned by my then chairperson was the use ( in a side-discussion ) of 
+the mathematical summation sign ( upper-case Greek sigma ).  I don't 
+think my chairperson was wrong. In the context of that course what I 
+should have done was illustrate my point with a column of data in an 
+Excel spreadsheet.
+
+If \Sigma upsets business students with its suggestion of abstract 
+mathematics, I think many other statistics students find <- somewhat 
+suggestive of abstract logic or theoretical computer science, favourite 
+subjects of an epsilonic proportion of the large classes I used to teach.
+
+I teach smaller classes now and my students come to me with previous 
+exposure to Minitab which uses = for assignment. I use = both to avoid 
+any of the symbol-fear that I spoke of, and also because they are used 
+to how assignment works in Minitab. (For maybe half of the students, 
+Minitab would be the only computer language that they would have met.)
+
+I will come clean and admit that I have another reason for not liking R.
+The symbol <- suggests the right-to-left direction of the assignment 
+strongly and appropriately. But I read from left-to-right and I get 
+startled by an arrow coming at me from the unseen future and feel a 
+second or two of cognitive dissonance.
+
+I actually rather like the right-pointing -> assignment as the 
+directions of reading and of computation agree. It would be a bit 
+idiosyncratic to use it in code though. I find it useful in interactive 
+R when I have typed and evaluated a complex expression and realise that 
+I really should have assigned it to something. After the up-arrow key -> 
+lets me do the needed assignment on the right of the expression.
+
+Murray
+
+On 27/10/2010 12:59 p.m., Gabor Grothendieck wrote:
+> On Tue, Oct 26, 2010 at 3:10 PM, Murray Jorgensen<maj at waikato.ac.nz>  wrote:
+>> Greetings all,
+>>
+>> in my own R code I have used various forms of the R assignment operator at
+>> different times in my life. There are arguments for and against each choice.
+>>
+>> A question I would like this sig is whether there are any specifically
+>> teaching reasons for preferring one form over another?
+>>
+>> A second question, mainly to clarify the first, is whether different forms
+>> might be preferred for different types of student?
+>>
+>> Awaiting responses with interest  -  Murray
+>
+> <- is less error prone so you always want to use that.  It might be
+> argued that there are only a few cases where it matters but if you run
+> into one of those cases you will be sorry you did not standardize on
+> using<- .
+>
+
+
+-- 
+Dr Murray Jorgensen      http://www.stats.waikato.ac.nz/Staff/maj.html
+Department of Statistics, University of Waikato, Hamilton, New Zealand
+Email: maj at waikato.ac.nz    majorgensen at ihug.co.nz      Fax 7 838 4155
+Phone  +64 7 838 4773 wk    Home +64 7 825 0441   Mobile 021 0200 8350
+
+
+
+From s.blomberg1 at uq.edu.au  Wed Oct 27 02:51:16 2010
+From: s.blomberg1 at uq.edu.au (Simon Blomberg)
+Date: Wed, 27 Oct 2010 10:51:16 +1000
+Subject: [R-sig-teaching] The pedagogy of the assignment operator
+In-Reply-To: <4CC77529.3010307@waikato.ac.nz>
+References: <4CC727B1.6040504@waikato.ac.nz>	<AANLkTikYS46kRUUXYsz0-TKHswq=eLL3RhNgs06HaWMO@mail.gmail.com>
+	<4CC77529.3010307@waikato.ac.nz>
+Message-ID: <4CC77784.2020200@uq.edu.au>
+
+I like the Venables and Ripley reasoning around the assignment 
+character: use different characters for assignment in different 
+environments. So you have = for assignment inside function calls, <- for 
+assignment in the current environment, and <<- for assignment in the 
+global environment.
+
+Cheers,
+
+Simon.
+
+On 27/10/10 10:41, Murray Jorgensen wrote:
+> I can see that I am going to have to set a little context because I 
+> wanted to anchor the discussion in the teaching of statistics, and not 
+> of R as a language. I think the issues are different in the two. One 
+> big problem in the former is that symbols can engender fear in the 
+> students.
+>
+> A few years ago I was taken off the teaching of a large first year 
+> business statistics course. The clinching incident in this decision 
+> mentioned by my then chairperson was the use ( in a side-discussion ) 
+> of the mathematical summation sign ( upper-case Greek sigma ).  I 
+> don't think my chairperson was wrong. In the context of that course 
+> what I should have done was illustrate my point with a column of data 
+> in an Excel spreadsheet.
+>
+> If \Sigma upsets business students with its suggestion of abstract 
+> mathematics, I think many other statistics students find <- somewhat 
+> suggestive of abstract logic or theoretical computer science, 
+> favourite subjects of an epsilonic proportion of the large classes I 
+> used to teach.
+>
+> I teach smaller classes now and my students come to me with previous 
+> exposure to Minitab which uses = for assignment. I use = both to avoid 
+> any of the symbol-fear that I spoke of, and also because they are used 
+> to how assignment works in Minitab. (For maybe half of the students, 
+> Minitab would be the only computer language that they would have met.)
+>
+> I will come clean and admit that I have another reason for not liking R.
+> The symbol <- suggests the right-to-left direction of the assignment 
+> strongly and appropriately. But I read from left-to-right and I get 
+> startled by an arrow coming at me from the unseen future and feel a 
+> second or two of cognitive dissonance.
+>
+> I actually rather like the right-pointing -> assignment as the 
+> directions of reading and of computation agree. It would be a bit 
+> idiosyncratic to use it in code though. I find it useful in 
+> interactive R when I have typed and evaluated a complex expression and 
+> realise that I really should have assigned it to something. After the 
+> up-arrow key -> lets me do the needed assignment on the right of the 
+> expression.
+>
+> Murray
+>
+> On 27/10/2010 12:59 p.m., Gabor Grothendieck wrote:
+>> On Tue, Oct 26, 2010 at 3:10 PM, Murray Jorgensen<maj at waikato.ac.nz>  
+>> wrote:
+>>> Greetings all,
+>>>
+>>> in my own R code I have used various forms of the R assignment 
+>>> operator at
+>>> different times in my life. There are arguments for and against each 
+>>> choice.
+>>>
+>>> A question I would like this sig is whether there are any specifically
+>>> teaching reasons for preferring one form over another?
+>>>
+>>> A second question, mainly to clarify the first, is whether different 
+>>> forms
+>>> might be preferred for different types of student?
+>>>
+>>> Awaiting responses with interest  -  Murray
+>>
+>> <- is less error prone so you always want to use that.  It might be
+>> argued that there are only a few cases where it matters but if you run
+>> into one of those cases you will be sorry you did not standardize on
+>> using<- .
+>>
+>
+>
+
+-- 
+Simon Blomberg, BSc (Hons), PhD, MAppStat, AStat
+Lecturer and Consultant Statistician
+School of Biological Sciences
+The University of Queensland
+St. Lucia Queensland 4072
+Australia
+T: +61 7 3365 2506
+email: S.Blomberg1_at_uq.edu.au
+http://www.uq.edu.au/~uqsblomb/
+
+Policies:
+1.  I will NOT analyse your data for you.
+2.  Your deadline is your problem
+
+Statistics is the grammar of science - Karl Pearson.
+
+
+
+From ggrothendieck at gmail.com  Wed Oct 27 03:01:15 2010
+From: ggrothendieck at gmail.com (Gabor Grothendieck)
+Date: Tue, 26 Oct 2010 21:01:15 -0400
+Subject: [R-sig-teaching] The pedagogy of the assignment operator
+In-Reply-To: <4CC77529.3010307@waikato.ac.nz>
+References: <4CC727B1.6040504@waikato.ac.nz>
+	<AANLkTikYS46kRUUXYsz0-TKHswq=eLL3RhNgs06HaWMO@mail.gmail.com>
+	<4CC77529.3010307@waikato.ac.nz>
+Message-ID: <AANLkTik5LKd=R8HVzu-_cZgtL6Nc__O+QkbHbH2gsfuA@mail.gmail.com>
+
+On Tue, Oct 26, 2010 at 8:41 PM, Murray Jorgensen <maj at waikato.ac.nz> wrote:
+> I can see that I am going to have to set a little context because I wanted
+> to anchor the discussion in the teaching of statistics, and not of R as a
+> language. I think the issues are different in the two. One big problem in
+> the former is that symbols can engender fear in the students.
+>
+> A few years ago I was taken off the teaching of a large first year business
+> statistics course. The clinching incident in this decision mentioned by my
+> then chairperson was the use ( in a side-discussion ) of the mathematical
+> summation sign ( upper-case Greek sigma ). ?I don't think my chairperson was
+> wrong. In the context of that course what I should have done was illustrate
+> my point with a column of data in an Excel spreadsheet.
+>
+> If \Sigma upsets business students with its suggestion of abstract
+> mathematics, I think many other statistics students find <- somewhat
+> suggestive of abstract logic or theoretical computer science, favourite
+> subjects of an epsilonic proportion of the large classes I used to teach.
+>
+> I teach smaller classes now and my students come to me with previous
+> exposure to Minitab which uses = for assignment. I use = both to avoid any
+> of the symbol-fear that I spoke of, and also because they are used to how
+> assignment works in Minitab. (For maybe half of the students, Minitab would
+> be the only computer language that they would have met.)
+>
+> I will come clean and admit that I have another reason for not liking R.
+> The symbol <- suggests the right-to-left direction of the assignment
+> strongly and appropriately. But I read from left-to-right and I get startled
+> by an arrow coming at me from the unseen future and feel a second or two of
+> cognitive dissonance.
+>
+> I actually rather like the right-pointing -> assignment as the directions of
+> reading and of computation agree. It would be a bit idiosyncratic to use it
+> in code though. I find it useful in interactive R when I have typed and
+> evaluated a complex expression and realise that I really should have
+> assigned it to something. After the up-arrow key -> lets me do the needed
+> assignment on the right of the expression.
+>
+
+To me = reminds me of equality and its easily confused with == whereas
+ <- unambiguously means assignment.
+
+-> should not be taught. Its too weird and almost never appears in
+code out there so its wasting people's time on trivia rather than
+focusing them on the essentials.
+
+The fact is that R involves programming and syntax and if they fear
+that to the extent that it requires teaching bad practice then it
+might be better to forget about R entirely and switch to something
+more palatable driven by a GUI.  This might be some other software
+entirely or maybe Rcmdr or other GUI front end to R.
+
+
+-- 
+Statistics & Software Consulting
+GKX Group, GKX Associates Inc.
+tel: 1-877-GKX-GROUP
+email: ggrothendieck at gmail.com
+
+
+
+From maj at waikato.ac.nz  Wed Oct 27 03:29:04 2010
+From: maj at waikato.ac.nz (Murray Jorgensen)
+Date: Wed, 27 Oct 2010 14:29:04 +1300
+Subject: [R-sig-teaching] The pedagogy of the assignment operator
+In-Reply-To: <4CC77529.3010307@waikato.ac.nz>
+References: <4CC727B1.6040504@waikato.ac.nz>	<AANLkTikYS46kRUUXYsz0-TKHswq=eLL3RhNgs06HaWMO@mail.gmail.com>
+	<4CC77529.3010307@waikato.ac.nz>
+Message-ID: <4CC78060.7030906@waikato.ac.nz>
+
+Woops! I meant "for not liking <-"  !
+
+On 27/10/2010 1:41 p.m., Murray Jorgensen wrote:
+
+[...]
+
+> I will come clean and admit that I have another reason for not liking R.
+[...]
+
+Murrar
+
+
+
+From lchihara at carleton.edu  Mon Nov  1 22:32:14 2010
+From: lchihara at carleton.edu (Laura Chihara)
+Date: Mon, 01 Nov 2010 16:32:14 -0500
+Subject: [R-sig-teaching] workspace management
+Message-ID: <4CCF31DE.7010306@carleton.edu>
+
+hello!
+
+I'm wondering how you have your students
+handle workspaces in R. Do you have students
+create their own R folder (on their home drive),
+and then load from within R? Or do you
+have them create an R shortcut and then
+type the path in the "Start In" field (Windows)?
+
+I've been teaching the latter method, but am
+wondering if loading from within R is easier?
+
+Thanks for ideas.
+
+--Laura
+
+*******************************************
+Laura Chihara
+Professor of Mathematics   507-222-4065 (office)
+Dept of Mathematics        507-222-4312 (fax)
+Carleton College
+1 North College Street
+Northfield MN 55057
+
+
+
+From maj at waikato.ac.nz  Tue Nov  2 02:09:54 2010
+From: maj at waikato.ac.nz (Murray Jorgensen)
+Date: Tue, 02 Nov 2010 14:09:54 +1300
+Subject: [R-sig-teaching] workspace management
+In-Reply-To: <4CCF31DE.7010306@carleton.edu>
+References: <4CCF31DE.7010306@carleton.edu>
+Message-ID: <4CCF64E2.6050107@waikato.ac.nz>
+
+I think that folders should be organized by topic and not by the 
+software that might use the files. After all you might want to use 
+several different applications of files in a folder.
+
+I teach doing something like this at the start of an R script:
+
+ > wdir <- choose.dir()
+ > wdir
+[1] "C:\\Files\\Teaching\\STAT321\\2008"
+ > setwd(wdir)
+
+Later you can edit this to
+
+wdir <- # choose.dir()
+        "C:\\Files\\Teaching\\STAT321\\2008"
+setwd(wdir)
+
+to avoid repeating the dialog boxes.
+
+Murray
+
+
+On 2/11/2010 10:32 a.m., Laura Chihara wrote:
+> hello!
+>
+> I'm wondering how you have your students
+> handle workspaces in R. Do you have students
+> create their own R folder (on their home drive),
+> and then load from within R? Or do you
+> have them create an R shortcut and then
+> type the path in the "Start In" field (Windows)?
+>
+> I've been teaching the latter method, but am
+> wondering if loading from within R is easier?
+>
+> Thanks for ideas.
+>
+> --Laura
+>
+> *******************************************
+> Laura Chihara
+> Professor of Mathematics 507-222-4065 (office)
+> Dept of Mathematics 507-222-4312 (fax)
+> Carleton College
+> 1 North College Street
+> Northfield MN 55057
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+-- 
+Dr Murray Jorgensen      http://www.stats.waikato.ac.nz/Staff/maj.html
+Department of Statistics, University of Waikato, Hamilton, New Zealand
+Email: maj at waikato.ac.nz                                Fax 7 838 4155
+Phone  +64 7 838 4773 wk    Home +64 7 825 0441   Mobile 021 0200 8350
+
+
+
+From obrienralph at gmail.com  Tue Nov  2 17:51:57 2010
+From: obrienralph at gmail.com (Ralph O'Brien, PhD)
+Date: Tue, 2 Nov 2010 12:51:57 -0400
+Subject: [R-sig-teaching] workspace management
+In-Reply-To: <4CCF64E2.6050107@waikato.ac.nz>
+References: <4CCF31DE.7010306@carleton.edu> <4CCF64E2.6050107@waikato.ac.nz>
+Message-ID: <AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101102/fff3ac9b/attachment.pl>
+
+From ggrothendieck at gmail.com  Tue Nov  2 18:24:44 2010
+From: ggrothendieck at gmail.com (Gabor Grothendieck)
+Date: Tue, 2 Nov 2010 13:24:44 -0400
+Subject: [R-sig-teaching] workspace management
+In-Reply-To: <AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>
+References: <4CCF31DE.7010306@carleton.edu> <4CCF64E2.6050107@waikato.ac.nz>
+	<AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>
+Message-ID: <AANLkTimOJDCd7cWOAqtM6y3KKecBLfeKE-9WTX-qUExX@mail.gmail.com>
+
+On Tue, Nov 2, 2010 at 12:51 PM, Ralph O'Brien, PhD
+<obrienralph at gmail.com> wrote:
+> A huge plus for R is that it runs nearly identically on all three major
+> platforms. There is every reason to make our teaching as
+> platform-independent as we can.
+>
+> The choose.dir() function is not found on the Mac release (I'm still at v.
+> 2.11.1), so I would advise against using it, especially since it is trivial
+> to teach and use code that is "plain vanilla."
+>
+> My scripts to students begin with something like:
+>
+> # Uncomment one of these path2data statements and
+> # insert your appropriate path specification.
+> # path2data <- "C:/EPBI431/datasets" ? # Windows (convert to forward
+> slashes)
+> ?# path2data <- "/Users/ralphobrien/AllDocs/teaching/EPBI431/datasets" ? #
+> Mac OS
+> setwd(path2data)
+>
+> Later, I might simply give them:
+>
+> # setwd("C:/EPBI431/datasets") ?# Windows (convert to forward slashes)
+> # setwd("/Users/ralphobrien/AllDocs/teaching/EPBI431/datasets") ?# Mac OS
+>
+> Some students have never encountered path specifications, so when I
+> introduce this, I show them how to use "Properties" (Windows XP) and "Get
+> Info" (Mac OS) to copy-paste what is needed, converting the back slashes to
+> forward slashes for Windows.
+
+If you have a path with backslashes in the Windows clipboard you can
+just do this:
+
+myPath <- readClipboard()
+setwd(myPath)
+
+which eliminates the need for any conversion.
+
+
+-- 
+Statistics & Software Consulting
+GKX Group, GKX Associates Inc.
+tel: 1-877-GKX-GROUP
+email: ggrothendieck at gmail.com
+
+
+
+From obrienralph at gmail.com  Tue Nov  2 18:44:49 2010
+From: obrienralph at gmail.com (Ralph O'Brien, PhD)
+Date: Tue, 2 Nov 2010 13:44:49 -0400
+Subject: [R-sig-teaching] workspace management
+In-Reply-To: <AANLkTimOJDCd7cWOAqtM6y3KKecBLfeKE-9WTX-qUExX@mail.gmail.com>
+References: <4CCF31DE.7010306@carleton.edu> <4CCF64E2.6050107@waikato.ac.nz>
+	<AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>
+	<AANLkTimOJDCd7cWOAqtM6y3KKecBLfeKE-9WTX-qUExX@mail.gmail.com>
+Message-ID: <AANLkTikBhvm+00Ep0Q2U8hk8rA3ya7c_f6LMK8NyJ3UO@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101102/da075f82/attachment.pl>
+
+From ggrothendieck at gmail.com  Tue Nov  2 18:52:28 2010
+From: ggrothendieck at gmail.com (Gabor Grothendieck)
+Date: Tue, 2 Nov 2010 13:52:28 -0400
+Subject: [R-sig-teaching] workspace management
+In-Reply-To: <AANLkTikBhvm+00Ep0Q2U8hk8rA3ya7c_f6LMK8NyJ3UO@mail.gmail.com>
+References: <4CCF31DE.7010306@carleton.edu> <4CCF64E2.6050107@waikato.ac.nz>
+	<AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>
+	<AANLkTimOJDCd7cWOAqtM6y3KKecBLfeKE-9WTX-qUExX@mail.gmail.com>
+	<AANLkTikBhvm+00Ep0Q2U8hk8rA3ya7c_f6LMK8NyJ3UO@mail.gmail.com>
+Message-ID: <AANLkTikMOUHissgJWK74s9RayRYqZPkEE4CG3zjsc9EV@mail.gmail.com>
+
+On Tue, Nov 2, 2010 at 1:44 PM, Ralph O'Brien, PhD
+<obrienralph at gmail.com> wrote:
+> ========================
+> If you have a path with backslashes in the Windows clipboard you can
+> just do this:
+>
+> myPath <- readClipboard()
+> setwd(myPath)
+>
+> which eliminates the need for any conversion.
+> ========================
+>
+> But this is still Windows-centric functionality (not platform independent)
+> and it hides what dataset was in play (not a good programming practice in
+> the real world).
+
+You are already converting backslashes to forward slashes which is
+only needed for Windows; however, we can make this completely generic
+by using:
+
+myPath <- readLines("clipboard")
+
+which works on Windows and Linux and maybe Mac (I don't have one).  If
+you don't have a newline in your clipboard it will give a warning on
+Windows but you can ignore that as it will still work.
+
+
+
+>
+> On Tue, Nov 2, 2010 at 1:24 PM, Gabor Grothendieck <ggrothendieck at gmail.com>
+> wrote:
+>>
+>> On Tue, Nov 2, 2010 at 12:51 PM, Ralph O'Brien, PhD
+>> <obrienralph at gmail.com> wrote:
+>> > A huge plus for R is that it runs nearly identically on all three major
+>> > platforms. There is every reason to make our teaching as
+>> > platform-independent as we can.
+>> >
+>> > The choose.dir() function is not found on the Mac release (I'm still at
+>> > v.
+>> > 2.11.1), so I would advise against using it, especially since it is
+>> > trivial
+>> > to teach and use code that is "plain vanilla."
+>> >
+>> > My scripts to students begin with something like:
+>> >
+>> > # Uncomment one of these path2data statements and
+>> > # insert your appropriate path specification.
+>> > # path2data <- "C:/EPBI431/datasets" ? # Windows (convert to forward
+>> > slashes)
+>> > ?# path2data <- "/Users/ralphobrien/AllDocs/teaching/EPBI431/datasets"
+>> > #
+>> > Mac OS
+>> > setwd(path2data)
+>> >
+>> > Later, I might simply give them:
+>> >
+>> > # setwd("C:/EPBI431/datasets") ?# Windows (convert to forward slashes)
+>> > # setwd("/Users/ralphobrien/AllDocs/teaching/EPBI431/datasets") ?# Mac
+>> > OS
+>> >
+>> > Some students have never encountered path specifications, so when I
+>> > introduce this, I show them how to use "Properties" (Windows XP) and
+>> > "Get
+>> > Info" (Mac OS) to copy-paste what is needed, converting the back slashes
+>> > to
+>> > forward slashes for Windows.
+>>
+>> If you have a path with backslashes in the Windows clipboard you can
+>> just do this:
+>>
+>> myPath <- readClipboard()
+>> setwd(myPath)
+>>
+>> which eliminates the need for any conversion.
+>>
+>>
+>> --
+>> Statistics & Software Consulting
+>> GKX Group, GKX Associates Inc.
+>> tel: 1-877-GKX-GROUP
+>> email: ggrothendieck at gmail.com
+>
+>
+>
+> --
+> Ralph O'Brien, PhD
+> Professor, Dept of Epidemiology and Biostatistics
+> Case Western Reserve University
+> Office: 216.368.1927
+> Cell: 216.312.3203
+>
+
+
+
+-- 
+Statistics & Software Consulting
+GKX Group, GKX Associates Inc.
+tel: 1-877-GKX-GROUP
+email: ggrothendieck at gmail.com
+
+
+
+From hadley at rice.edu  Tue Nov  2 19:23:02 2010
+From: hadley at rice.edu (Hadley Wickham)
+Date: Tue, 2 Nov 2010 18:23:02 +0000
+Subject: [R-sig-teaching] workspace management
+In-Reply-To: <AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>
+References: <4CCF31DE.7010306@carleton.edu> <4CCF64E2.6050107@waikato.ac.nz>
+	<AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>
+Message-ID: <AANLkTing0GXPDMkQTStmTAaV=VP8Q5O6nvZxfa=Y3zx5@mail.gmail.com>
+
+> In the real world, there are also strong programming integrity reasons to
+> hard code paths directly into our scripts. This leaves no doubt about what
+> dataset was being analyzed, etc.
+
+The whole point of using a working directory is so that you _don't_
+have to do that.  Any hard coded path makes reproduction on another
+computer a real pain - you should always rely on the analyst setting
+the working directory from outside of the script, otherwise you lose
+most of the advantages of a working directory.
+
+Hadley
+
+-- 
+Assistant Professor / Dobelman Family Junior Chair
+Department of Statistics / Rice University
+http://had.co.nz/
+
+
+
+From lists at revelle.net  Tue Nov  2 20:45:26 2010
+From: lists at revelle.net (William Revelle)
+Date: Tue, 2 Nov 2010 14:45:26 -0500
+Subject: [R-sig-teaching] workspace management
+In-Reply-To: <AANLkTikBhvm+00Ep0Q2U8hk8rA3ya7c_f6LMK8NyJ3UO@mail.gmail.com>
+References: <4CCF31DE.7010306@carleton.edu> <4CCF64E2.6050107@waikato.ac.nz>
+	<AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>
+	<AANLkTimOJDCd7cWOAqtM6y3KKecBLfeKE-9WTX-qUExX@mail.gmail.com>
+	<AANLkTikBhvm+00Ep0Q2U8hk8rA3ya7c_f6LMK8NyJ3UO@mail.gmail.com>
+Message-ID: <p06240860c8f619ce449d@[165.124.161.180]>
+
+My solution is a bit different.
+
+Most student oriented files are relatively small (less than 1 MB) and 
+can just be copied to the clipboard from their editor/spreadsheet 
+progam.
+
+Most students know how to open excel or text files.  I have them do 
+that and then just copy the data to the clipboard (from Excel or 
+OpenOffice or Word or their favorite text editor)
+
+then,
+my.data <- read.clipboard()   #from the psych package
+
+and their data are in a suitable format.
+If they are copying from excel,
+my.data <- read.clipboard.tab()  #will read directly from an Excel file
+my.data <- read.clipboard.csv()  # will read from a file in comma 
+delimited form.
+etc.
+
+The one problem I have had doing this is some student's do not know 
+what the clipboard is!
+
+Bill
+
+
+At 1:44 PM -0400 11/2/10, Ralph O'Brien, PhD wrote:
+>========================
+>If you have a path with backslashes in the Windows clipboard you can
+>just do this:
+>
+>myPath <- readClipboard()
+>setwd(myPath)
+>
+>which eliminates the need for any conversion.
+>========================
+>
+>But this is still Windows-centric functionality (not platform independent)
+>and it hides what dataset was in play (not a good programming practice in
+>the real world).
+>
+>On Tue, Nov 2, 2010 at 1:24 PM, Gabor Grothendieck
+><ggrothendieck at gmail.com>wrote:
+>
+>>  On Tue, Nov 2, 2010 at 12:51 PM, Ralph O'Brien, PhD
+>>  <obrienralph at gmail.com> wrote:
+>>  > A huge plus for R is that it runs nearly identically on all three major
+>>  > platforms. There is every reason to make our teaching as
+>>  > platform-independent as we can.
+>>  >
+>>  > The choose.dir() function is not found on the Mac release (I'm still at
+>>  v.
+>>  > 2.11.1), so I would advise against using it, especially since it is
+>>  trivial
+>>  > to teach and use code that is "plain vanilla."
+>>  >
+>>  > My scripts to students begin with something like:
+>>  >
+>>  > # Uncomment one of these path2data statements and
+>>  > # insert your appropriate path specification.
+>>  > # path2data <- "C:/EPBI431/datasets"   # Windows (convert to forward
+>>  > slashes)
+>>  >  # path2data <- "/Users/ralphobrien/AllDocs/teaching/EPBI431/datasets"
+>>  #
+>>  > Mac OS
+>>  > setwd(path2data)
+>>  >
+>>  > Later, I might simply give them:
+>>  >
+>>  > # setwd("C:/EPBI431/datasets")  # Windows (convert to forward slashes)
+>>  > # setwd("/Users/ralphobrien/AllDocs/teaching/EPBI431/datasets")  # Mac OS
+>>  >
+>>  > Some students have never encountered path specifications, so when I
+>>  > introduce this, I show them how to use "Properties" (Windows XP) and "Get
+>>  > Info" (Mac OS) to copy-paste what is needed, converting the back slashes
+>>  to
+>>  > forward slashes for Windows.
+>>
+>>  If you have a path with backslashes in the Windows clipboard you can
+>>  just do this:
+>>
+>>  myPath <- readClipboard()
+>>  setwd(myPath)
+>>
+>>  which eliminates the need for any conversion.
+>>
+>>
+>>  --
+>>  Statistics & Software Consulting
+>>  GKX Group, GKX Associates Inc.
+>>  tel: 1-877-GKX-GROUP
+>>  email: ggrothendieck at gmail.com
+>>
+>
+>
+>
+>--
+>Ralph O'Brien, PhD
+>Professor, Dept of Epidemiology and Biostatistics
+>Case Western Reserve University
+>Office: 216.368.1927
+>Cell: 216.312.3203
+>
+>	[[alternative HTML version deleted]]
+>
+>_______________________________________________
+>R-sig-teaching at r-project.org mailing list
+>https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+From maj at waikato.ac.nz  Tue Nov  2 23:05:29 2010
+From: maj at waikato.ac.nz (Murray Jorgensen)
+Date: Wed, 03 Nov 2010 11:05:29 +1300
+Subject: [R-sig-teaching] workspace management
+In-Reply-To: <AANLkTing0GXPDMkQTStmTAaV=VP8Q5O6nvZxfa=Y3zx5@mail.gmail.com>
+References: <4CCF31DE.7010306@carleton.edu> <4CCF64E2.6050107@waikato.ac.nz>
+	<AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>
+	<AANLkTing0GXPDMkQTStmTAaV=VP8Q5O6nvZxfa=Y3zx5@mail.gmail.com>
+Message-ID: <4CD08B29.6060101@waikato.ac.nz>
+
+Actually I find a hard-coded path *especially* useful when I'm using 
+more than one computer as it reminds me of what directory I'm suppose to 
+be working in.
+
+I write code like
+
+wbf =  #"C:\\Files\\Consulting\\Cilla\\Wetaboxes 1.7.09.csv"
+   "C:\\Users\\maj\\Documents\\Consulting\\Cilla\\Wetaboxes 1.7.09.csv"
+longterm = read.csv(wbf,header=TRUE)
+
+and move the # around depending on what computer I'm on.
+
+Murray
+
+On 3/11/2010 7:23 a.m., Hadley Wickham wrote:
+>> In the real world, there are also strong programming integrity reasons to
+>> hard code paths directly into our scripts. This leaves no doubt about what
+>> dataset was being analyzed, etc.
+>
+> The whole point of using a working directory is so that you _don't_
+> have to do that.  Any hard coded path makes reproduction on another
+> computer a real pain - you should always rely on the analyst setting
+> the working directory from outside of the script, otherwise you lose
+> most of the advantages of a working directory.
+>
+> Hadley
+>
+
+-- 
+Dr Murray Jorgensen      http://www.stats.waikato.ac.nz/Staff/maj.html
+Department of Statistics, University of Waikato, Hamilton, New Zealand
+Email: maj at waikato.ac.nz                                Fax 7 838 4155
+Phone  +64 7 838 4773 wk    Home +64 7 825 0441   Mobile 021 0200 8350
+
+
+
+From hadley at rice.edu  Tue Nov  2 23:13:12 2010
+From: hadley at rice.edu (Hadley Wickham)
+Date: Tue, 2 Nov 2010 22:13:12 +0000
+Subject: [R-sig-teaching] workspace management
+In-Reply-To: <4CD08B29.6060101@waikato.ac.nz>
+References: <4CCF31DE.7010306@carleton.edu> <4CCF64E2.6050107@waikato.ac.nz>
+	<AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>
+	<AANLkTing0GXPDMkQTStmTAaV=VP8Q5O6nvZxfa=Y3zx5@mail.gmail.com>
+	<4CD08B29.6060101@waikato.ac.nz>
+Message-ID: <AANLkTimDDAKHyc-O0A7NfMQ9G_zvY9uLgbDqmzkARmh=@mail.gmail.com>
+
+> Actually I find a hard-coded path *especially* useful when I'm using more
+> than one computer as it reminds me of what directory I'm suppose to be
+> working in.
+>
+> I write code like
+>
+> wbf = ?#"C:\\Files\\Consulting\\Cilla\\Wetaboxes 1.7.09.csv"
+> ?"C:\\Users\\maj\\Documents\\Consulting\\Cilla\\Wetaboxes 1.7.09.csv"
+> longterm = read.csv(wbf,header=TRUE)
+>
+> and move the # around depending on what computer I'm on.
+
+But that's exactly what the idea of a working directory is to avoid.
+Just set all paths relative to the R file, and then set the working
+directory (or use source + chdir = T) and you're golden.  Admittedly
+this works best from the command line, where the directory you start R
+from becomes the working directory.
+
+Hadley
+
+-- 
+Assistant Professor / Dobelman Family Junior Chair
+Department of Statistics / Rice University
+http://had.co.nz/
+
+
+
+From cha at muhlenberg.edu  Tue Nov  9 06:25:41 2010
+From: cha at muhlenberg.edu (Byungchul Cha)
+Date: Tue, 09 Nov 2010 00:25:41 -0500
+Subject: [R-sig-teaching] t.test from summary of data
+Message-ID: <4CD89505020000B10006DAC8@GW.muhlenberg.edu>
+
+I am using R in my intro stat course, and, I myself is a R novice.
+
+We use "Intro to the practice of statistics" by Moore, McCabe, Craig as textbook. Is there an option for the command "t.test" so that it can perform t-test from the summary of sample data (that is, sample mean, sample sd, and sample size), instead of the (raw) sample data? I've been looking to find a way to do so, but, I couldn't. 
+
+I believe it is possible to write codes to do this for my own use, but, I am just curious. Is there a pedagogical reason not to do so? This is a bit annoying when all the exercises problems in the book needs such a functionality, and I can't figure out how to do it in R, especially when many other major stat packages (including TI calculators) have that capability. What am I missing here?
+
+--
+Byungchul Cha
+Muhlenberg College
+
+
+
+From jwiley.psych at gmail.com  Tue Nov  9 06:57:12 2010
+From: jwiley.psych at gmail.com (Joshua Wiley)
+Date: Mon, 8 Nov 2010 21:57:12 -0800
+Subject: [R-sig-teaching] t.test from summary of data
+In-Reply-To: <4CD89505020000B10006DAC8@GW.muhlenberg.edu>
+References: <4CD89505020000B10006DAC8@GW.muhlenberg.edu>
+Message-ID: <AANLkTiktOy02vA5eQ1UpY7fu2Q8vErN2zPSo9BLgaq-V@mail.gmail.com>
+
+Dear Byungchul,
+
+To my knowledge there is no built in functionality to calculate just
+the t statistic using pre-calculated means and standard deviations.
+
+Regarding teaching, I would flip your question around a bit, "is there
+a pedagogical reason to have students who are using computers for the
+calculations not use raw data?".  Personally, if you are going to let
+them use a computer, let students practice on real data.  My guess is
+the book author intended students to use the formula and practice "by
+hand".
+
+The functionality is essentially built in if not wrapped up in a
+pretty function, a short version is: mean/(sd/sqrt(n))  .  A (ever so
+slightly) fancier version is:
+
+summary.t.test <- function(mean, sd, n, mu = 0, two.tailed = TRUE) {
+  statistic <- (mean - mu) / (sd/sqrt(n))
+  p <- pt(q = statistic, df = n - 1, lower.tail = FALSE)
+  if(two.tailed) {p <- p * 2}
+  output <- list("t" = statistic, "df" = n - 1, "p" = p)
+  return(output)
+}
+
+After becoming quite tired of doing it by hand myself, I wrote a
+function to calculate contrast ts.  With lambdas (contrasts) +1 and
+-1, this should be equivalent to a two-sample t-test.  I was a very
+new user of R when I wrote it so the implementation is crude as I
+recall, but perhaps you will find some part beneficial, and you should
+even be able to source() the function straight into R if your computer
+has internet access:   http://joshuawiley.com/R/contrast_t.R
+
+Best Regards,
+
+Josh
+
+
+On Mon, Nov 8, 2010 at 9:25 PM, Byungchul Cha <cha at muhlenberg.edu> wrote:
+> I am using R in my intro stat course, and, I myself is a R novice.
+>
+> We use "Intro to the practice of statistics" by Moore, McCabe, Craig as textbook. Is there an option for the command "t.test" so that it can perform t-test from the summary of sample data (that is, sample mean, sample sd, and sample size), instead of the (raw) sample data? I've been looking to find a way to do so, but, I couldn't.
+>
+> I believe it is possible to write codes to do this for my own use, but, I am just curious. Is there a pedagogical reason not to do so? This is a bit annoying when all the exercises problems in the book needs such a functionality, and I can't figure out how to do it in R, especially when many other major stat packages (including TI calculators) have that capability. What am I missing here?
+>
+> --
+> Byungchul Cha
+> Muhlenberg College
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+-- 
+Joshua Wiley
+Ph.D. Student, Health Psychology
+University of California, Los Angeles
+http://www.joshuawiley.com/
+
+
+
+From rmh at temple.edu  Tue Nov  9 06:58:40 2010
+From: rmh at temple.edu (RICHARD M. HEIBERGER)
+Date: Tue, 9 Nov 2010 00:58:40 -0500
+Subject: [R-sig-teaching] t.test from summary of data
+In-Reply-To: <4CD89505020000B10006DAC8@GW.muhlenberg.edu>
+References: <4CD89505020000B10006DAC8@GW.muhlenberg.edu>
+Message-ID: <AANLkTikP_VurkugGhsZFuHg83GhUKkUcwKiFGRK1GSno@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101109/b3dbc488/attachment.pl>
+
+From hayden at mv.mv.com  Tue Nov  9 13:43:39 2010
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Tue, 9 Nov 2010 07:43:39 -0500 (EST)
+Subject: [R-sig-teaching]  t.test from summary of data
+Message-ID: <20101109124339.29548.qmail@mv.mv.com>
+
+Forwarded message:
+> From: "Byungchul Cha" <cha at muhlenberg.edu>
+ 
+> We use "Intro to the practice of statistics" by Moore, McCabe, Craig
+  as textbook. Is there an option for the command "t.test" so that it
+  can perform t-test from the summary of sample data (that is, sample
+  mean, sample sd, and sample size), instead of the (raw) sample data?
+  I've been looking to find a way to do so, but, I couldn't.  I
+  believe it is possible to write codes to do this for my own use,
+  but, I am just curious. Is there a pedagogical reason not to do so?
+
+YES!
+
+One of the reasons to use statistical software in a first course is so
+that students can work with real, raw data.  For example, it is nearly
+imnpossible to check assumptions if you do not have the data.
+However, publishers want to sell books to EVERYONE, including those
+who do not have or do not use any technology beyond a $2 calculator.
+So the homework problems are driven by this least common denominator.  
+
+These data-free homework problems provide practice in plugging numbers
+into formulae, an Algebra I or even junior high school skill, and a
+pretty minor skill for doing statistics in the real world.  So I would
+suggest not assigning these and replacing them with problems that
+involve real data, and asking students to LOOK AT THE DATA to check
+assumptions and look for gross errors. I think you can find many real
+data sets on the CD that comes with this text, and many are included
+with R as well. Other sources include DASL and the _Journal of
+Statitics Education_.
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+
+http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+         
+Robert W. Hayden, P.O Box 450, North Troy, VT 05859 
+phone (802) 988-2587  web site http://statland.org/      
+email  bob statland.org  (add your own "@" and save me some spam)
+
+
+
+From bates at stat.wisc.edu  Tue Nov  9 15:17:51 2010
+From: bates at stat.wisc.edu (Douglas Bates)
+Date: Tue, 9 Nov 2010 08:17:51 -0600
+Subject: [R-sig-teaching] t.test from summary of data
+In-Reply-To: <20101109124339.29548.qmail@mv.mv.com>
+References: <20101109124339.29548.qmail@mv.mv.com>
+Message-ID: <AANLkTinfLmrq1dXacHBZcX6SO0H47kaJJi8BhMD7YA1R@mail.gmail.com>
+
+On Tue, Nov 9, 2010 at 6:43 AM, Robert W. Hayden <hayden at mv.mv.com> wrote:
+> Forwarded message:
+>> From: "Byungchul Cha" <cha at muhlenberg.edu>
+>
+>> We use "Intro to the practice of statistics" by Moore, McCabe, Craig
+> ?as textbook. Is there an option for the command "t.test" so that it
+> ?can perform t-test from the summary of sample data (that is, sample
+> ?mean, sample sd, and sample size), instead of the (raw) sample data?
+> ?I've been looking to find a way to do so, but, I couldn't. ?I
+> ?believe it is possible to write codes to do this for my own use,
+> ?but, I am just curious. Is there a pedagogical reason not to do so?
+>
+> YES!
+>
+> One of the reasons to use statistical software in a first course is so
+> that students can work with real, raw data. ?For example, it is nearly
+> imnpossible to check assumptions if you do not have the data.
+> However, publishers want to sell books to EVERYONE, including those
+> who do not have or do not use any technology beyond a $2 calculator.
+> So the homework problems are driven by this least common denominator.
+>
+> These data-free homework problems provide practice in plugging numbers
+> into formulae, an Algebra I or even junior high school skill, and a
+> pretty minor skill for doing statistics in the real world. ?So I would
+> suggest not assigning these and replacing them with problems that
+> involve real data, and asking students to LOOK AT THE DATA to check
+> assumptions and look for gross errors. I think you can find many real
+> data sets on the CD that comes with this text, and many are included
+> with R as well. Other sources include DASL and the _Journal of
+> Statitics Education_.
+
+I completely agree that the practice of teaching statistics as a
+collection of plug-in formulas, without any indication that you might,
+say, plot the data to see if it close to the form assumed in the
+formula, is quite outmoded.  I took a first course in statistics over
+forty years ago when our calculation capabilities were limited to
+pencil and paper or slide rules.  Naturally we needed to use any
+computational short cut we could find and we wouldn't be able to
+calculate quantities related to distributions without access to
+tables.   This led to many approximations (normal or Poisson
+approximation to the binomial, binomial instead of hypergeometric,
+normal approximation to Poisson, normal approximation to t when
+degrees of freedom exceeded 30, etc.)
+
+Things have advanced a lot since then.  Lectures can be presented
+using slides on a laptop hooked to a projector and the students often
+follow along with copies of the slides on their own laptops or perhaps
+on tablet computers or even smart phones.  The fact that we teach the
+same approach of plugging numbers into simplistic formulas and using
+approximations so that students can get the answers by looking up
+numbers in tables is absurd, yet we do so.  One reason is inertia.  If
+my introductory course in statistics was taught this way then I should
+teach all subsequent introductory courses  this way.  Inertial is
+encouraged by the textbook industry who concentrate on providing new
+editions of existing texts, not because the content is new or
+providing greater insight into data but because the problems have
+different numbers and students must buy new books instead of used
+books.
+
+Also, statisticians should recognize that the majority of introductory
+statistics courses are taught in mathematics departments at two-year
+or four-year colleges, which means that the instructor is often a
+person whose training is in some area of mathematics not related to
+statistics and who was unlucky enough to draw the short straw.  Not
+surprisingly such an instructor feels more comfortable teach formula
+derivations than teaching exploration of data, assessment of
+assumptions, and how to use software to do so.
+
+Saying we can't teach data exploration, etc. because students have
+limited computational capabilities is an argument that gets weaker and
+weaker every year.  The cost of inexpensive computers like netbooks is
+approaching the cost of one or two textbooks, not to mention other
+computing devices like smart phones.  I think it is just too easy to
+keep doing what we have been doing.  It's difficult to write about or
+to teach how to use software because the software keeps changing.  It
+is much easier to present the same old formulas with a couple of new,
+usually artificial, examples thrown in to make things look new.
+
+> -------> ?First-time AP Stats. teacher? ?Help is on the way! See
+>
+> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+>
+> Robert W. Hayden, P.O Box 450, North Troy, VT 05859
+> phone (802) 988-2587 ?web site http://statland.org/
+> email ?bob statland.org ?(add your own "@" and save me some spam)
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+From Greg.Snow at imail.org  Tue Nov  9 18:05:28 2010
+From: Greg.Snow at imail.org (Greg Snow)
+Date: Tue, 9 Nov 2010 10:05:28 -0700
+Subject: [R-sig-teaching] t.test from summary of data
+In-Reply-To: <4CD89505020000B10006DAC8@GW.muhlenberg.edu>
+References: <4CD89505020000B10006DAC8@GW.muhlenberg.edu>
+Message-ID: <B37C0A15B8FB3C468B5BC7EBC7DA14CC633ED72C0B@LP-EXMBVS10.CO.IHC.COM>
+
+Are you interested in this only for simple one sample t-tests? Or do you need something for the more complicated cases (which lead to discussions about approximations to degrees of freedom, etc.)?
+
+For the simple one sample, the test can be done as a one liner:
+
+> pt( mean/(sd/sqrt(n)), n-1 )
+
+Which is not that much more complicated than a modified t-test function would be:
+
+> t.test.summary( mean, sd, n )
+
+Using the pt function would then force the students to think about which tail they are computing the area for and whether the p-value needs to be multiplied by 2 (rather than just specifying an argument).
+
+For the 2 sample case, I have in the past just simulated a dataset with the same means and standard deviations, then used this in place of the raw data, the mvrnorm function in the MASS package has an option to generate normal data with the exact mean and variance specified.
+
+-- 
+Gregory (Greg) L. Snow Ph.D.
+Statistical Data Center
+Intermountain Healthcare
+greg.snow at imail.org
+801.408.8111
+
+
+> -----Original Message-----
+> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-
+> bounces at r-project.org] On Behalf Of Byungchul Cha
+> Sent: Monday, November 08, 2010 10:26 PM
+> To: r-sig-teaching at r-project.org
+> Subject: [R-sig-teaching] t.test from summary of data
+> 
+> I am using R in my intro stat course, and, I myself is a R novice.
+> 
+> We use "Intro to the practice of statistics" by Moore, McCabe, Craig as
+> textbook. Is there an option for the command "t.test" so that it can
+> perform t-test from the summary of sample data (that is, sample mean,
+> sample sd, and sample size), instead of the (raw) sample data? I've
+> been looking to find a way to do so, but, I couldn't.
+> 
+> I believe it is possible to write codes to do this for my own use, but,
+> I am just curious. Is there a pedagogical reason not to do so? This is
+> a bit annoying when all the exercises problems in the book needs such a
+> functionality, and I can't figure out how to do it in R, especially
+> when many other major stat packages (including TI calculators) have
+> that capability. What am I missing here?
+> 
+> --
+> Byungchul Cha
+> Muhlenberg College
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+From zanaty2005 at yahoo.com  Sat Nov 13 15:02:02 2010
+From: zanaty2005 at yahoo.com (Ali Zanaty)
+Date: Sat, 13 Nov 2010 06:02:02 -0800 (PST)
+Subject: [R-sig-teaching] Installing R into my computer
+Message-ID: <603399.57154.qm@web59514.mail.ac4.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101113/f1d9a4be/attachment.pl>
+
+From nordicgnome at gmail.com  Sat Nov 13 15:50:05 2010
+From: nordicgnome at gmail.com (Jan Vandermeer)
+Date: Sat, 13 Nov 2010 09:50:05 -0500
+Subject: [R-sig-teaching] Installing R into my computer
+In-Reply-To: <603399.57154.qm@web59514.mail.ac4.yahoo.com>
+References: <603399.57154.qm@web59514.mail.ac4.yahoo.com>
+Message-ID: <AANLkTikMHYUXnmuzKv=yF6LYXcx9C57BBK2BnUmuJFez@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101113/b8425af0/attachment.pl>
+
+From jfox at mcmaster.ca  Sat Nov 13 16:55:39 2010
+From: jfox at mcmaster.ca (John Fox)
+Date: Sat, 13 Nov 2010 10:55:39 -0500
+Subject: [R-sig-teaching] Installing R into my computer
+In-Reply-To: <AANLkTikMHYUXnmuzKv=yF6LYXcx9C57BBK2BnUmuJFez@mail.gmail.com>
+References: <603399.57154.qm@web59514.mail.ac4.yahoo.com>
+	<AANLkTikMHYUXnmuzKv=yF6LYXcx9C57BBK2BnUmuJFez@mail.gmail.com>
+Message-ID: <000101cb834b$38255e30$a8701a90$@ca>
+
+Dear Jan and Ali,
+
+I haven't followed this thread, so I apologize if my information is off-base
+or redundant.
+
+I expect that Ali simply wants to install R on a Windows machine, in which
+case he would be well advised to download and use the Windows installer for
+R rather than download the source distribution of R. The installer is
+available on CRAN at <http://cran.r-project.org/bin/windows/base/> or,
+better, at the analogous location on a nearby mirror site.
+
+I hope this helps,
+ John
+
+--------------------------------
+John Fox
+Senator William McMaster 
+  Professor of Social Statistics
+Department of Sociology
+McMaster University
+Hamilton, Ontario, Canada
+web: socserv.mcmaster.ca/jfox
+
+
+> -----Original Message-----
+> From: r-sig-teaching-bounces at r-project.org
+[mailto:r-sig-teaching-bounces at r-
+> project.org] On Behalf Of Jan Vandermeer
+> Sent: November-13-10 9:50 AM
+> To: Ali Zanaty
+> Cc: r-sig-teaching at r-project.org
+> Subject: Re: [R-sig-teaching] Installing R into my computer
+> 
+> Hi Ali;
+> 
+> You need to install a program like 7Zip <http://www.7-zip.org/> which will
+> allow you to untar and install the *.tar file.
+> 
+> 7Zip unpacks tars, rars, zips and their own proprietary 7z compaction
+> methods.
+> 
+> *7-Zip* is *open source* software. Most of the source code is under the
+*GNU
+> LGPL* license. The unRAR code is under a mixed license: GNU LGPL + unRAR
+> restrictions. Check license information here: 7-Zip
+> license<http://www.7-zip.org/license.txt>
+> .
+> 
+> You can use 7-Zip on any computer, including a computer in a commercial
+> organization. You don't need to register or pay for 7-Zip.
+> 
+> Just as R is open source and under a similar license.
+> 
+> 
+> Jan
+> 
+> 
+> On Sat, Nov 13, 2010 at 9:02 AM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:
+> 
+> > Dear All R Users:
+> >
+> > I am trying to install R into my computer. I downloaded R-2.12.0.tar and
+> > the old
+> > version R-2.6.2.tar. But when I tried to double click on the the file(s)
+it
+> > did
+> > not install the program, it says Windows cannot open this file:
+> >
+> > File: R-2.12.0.tar.gz
+> >
+> > To open this file, windows needs to know what progrm created it, ....
+> >
+> > What do you want to do?
+> >
+> > Use the Web sercvice to find the approperiate program
+> > Select the program from a list.
+> >
+> > I think I  am missing something, but I do not know what it is?
+> >
+> > Thanks for your helps.
+> >
+> > Ali
+> >
+> >
+> >
+> >        [[alternative HTML version deleted]]
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >
+> 
+> 	[[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+From nordicgnome at gmail.com  Sat Nov 13 17:52:15 2010
+From: nordicgnome at gmail.com (Jan Vandermeer)
+Date: Sat, 13 Nov 2010 11:52:15 -0500
+Subject: [R-sig-teaching] Installing R into my computer
+In-Reply-To: <000101cb834b$38255e30$a8701a90$@ca>
+References: <603399.57154.qm@web59514.mail.ac4.yahoo.com>
+	<AANLkTikMHYUXnmuzKv=yF6LYXcx9C57BBK2BnUmuJFez@mail.gmail.com>
+	<000101cb834b$38255e30$a8701a90$@ca>
+Message-ID: <AANLkTi=B538tKK48oFBqPCoXNUSDgwjVNKyic0xuENCj@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101113/c36a40ab/attachment.pl>
+
+From gavin.simpson at ucl.ac.uk  Mon Nov 29 17:51:49 2010
+From: gavin.simpson at ucl.ac.uk (Gavin Simpson)
+Date: Mon, 29 Nov 2010 16:51:49 +0000
+Subject: [R-sig-teaching] Installing R into my computer
+In-Reply-To: <603399.57154.qm@web59514.mail.ac4.yahoo.com>
+References: <603399.57154.qm@web59514.mail.ac4.yahoo.com>
+Message-ID: <1291049509.25769.42.camel@prometheus.geog.ucl.ac.uk>
+
+On Sat, 2010-11-13 at 06:02 -0800, Ali Zanaty wrote:
+> Dear All R Users:
+
+This is not a suitable question for this particular R list. The R-Help
+list would be appropriate. This list is for discussions regarding the
+use of R in teaching, not teaching people how to use R.
+
+Hopefully John's suggestion has solved this particular problem for you.
+
+G
+
+> I am trying to install R into my computer. I downloaded R-2.12.0.tar and the old 
+> version R-2.6.2.tar. But when I tried to double click on the the file(s) it did 
+> not install the program, it says Windows cannot open this file:
+> 
+> File: R-2.12.0.tar.gz
+> 
+> To open this file, windows needs to know what progrm created it, ....
+> 
+> What do you want to do?
+> 
+> Use the Web sercvice to find the approperiate program
+> Select the program from a list.
+> 
+> I think I  am missing something, but I do not know what it is?
+> 
+> Thanks for your helps.
+> 
+> Ali
+> 
+> 
+>       
+> 	[[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+-- 
+%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%
+ Dr. Gavin Simpson             [t] +44 (0)20 7679 0522
+ ECRC, UCL Geography,          [f] +44 (0)20 7679 0565
+ Pearson Building,             [e] gavin.simpsonATNOSPAMucl.ac.uk
+ Gower Street, London          [w] http://www.ucl.ac.uk/~ucfagls/
+ UK. WC1E 6BT.                 [w] http://www.freshwaters.org.uk
+%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%
+
+
+
+From dmonterde at me.com  Mon Dec  6 12:27:31 2010
+From: dmonterde at me.com (david monterde)
+Date: Mon, 06 Dec 2010 12:27:31 +0100
+Subject: [R-sig-teaching] workspace management
+In-Reply-To: <AANLkTimDDAKHyc-O0A7NfMQ9G_zvY9uLgbDqmzkARmh=@mail.gmail.com>
+References: <4CCF31DE.7010306@carleton.edu> <4CCF64E2.6050107@waikato.ac.nz>
+	<AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>
+	<AANLkTing0GXPDMkQTStmTAaV=VP8Q5O6nvZxfa=Y3zx5@mail.gmail.com>
+	<4CD08B29.6060101@waikato.ac.nz>
+	<AANLkTimDDAKHyc-O0A7NfMQ9G_zvY9uLgbDqmzkARmh=@mail.gmail.com>
+Message-ID: <AD65F17C-37EC-412B-82B7-AD8CED3CEC52@me.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101206/546d0b45/attachment.pl>
+
+From ggrothendieck at gmail.com  Mon Dec  6 12:38:16 2010
+From: ggrothendieck at gmail.com (Gabor Grothendieck)
+Date: Mon, 6 Dec 2010 06:38:16 -0500
+Subject: [R-sig-teaching] workspace management
+In-Reply-To: <AD65F17C-37EC-412B-82B7-AD8CED3CEC52@me.com>
+References: <4CCF31DE.7010306@carleton.edu> <4CCF64E2.6050107@waikato.ac.nz>
+	<AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>
+	<AANLkTing0GXPDMkQTStmTAaV=VP8Q5O6nvZxfa=Y3zx5@mail.gmail.com>
+	<4CD08B29.6060101@waikato.ac.nz>
+	<AANLkTimDDAKHyc-O0A7NfMQ9G_zvY9uLgbDqmzkARmh=@mail.gmail.com>
+	<AD65F17C-37EC-412B-82B7-AD8CED3CEC52@me.com>
+Message-ID: <AANLkTik7uO3+=_8Zs-FCYmYQcLwoGAs1-E32eyERZ1-t@mail.gmail.com>
+
+On Mon, Dec 6, 2010 at 6:27 AM, david monterde <dmonterde at me.com> wrote:
+> I use the select.list when I have welldefined the paths and the fix function when not
+> I start idetifyind the unit, and then the rest of the path:
+>
+> ? unit ? <- select.list(paste(letters,":/",sep=""))
+> ? paths <- c("Projects/Data/", "MyPenDrive/Projects/Data")
+> ? path ?<- select.list(paths)
+> ? path ?<- paste(unit,path,sep="")
+>
+> So I can work with the same program in any computer using my pendrive, or in my computer using my own path.
+>
+> If there is not a fixed path:
+>
+> ? path <- "c:/new path/"
+> ? fix(path)
+>
+> You can use the select-list function to choose between different platforms, (Linux, Mac, Windows):
+>
+> ? OS ? <- select.list("Lunix,"Mac","Windows")
+> ? if (OS=="Linux") then { # use the select.list function with paths in Linux format (//users//) }
+> ? if (OS=="Windows") then { # use the select.list function with paths in Linux format (c:/) }
+>
+
+You can detect windows vs. unix using .Platform$OS eliminating a
+question to the user.  See ?.Platform
+
+-- 
+Statistics & Software Consulting
+GKX Group, GKX Associates Inc.
+tel: 1-877-GKX-GROUP
+email: ggrothendieck at gmail.com
+
+
+
+From zanaty2005 at yahoo.com  Sat Dec 11 15:43:03 2010
+From: zanaty2005 at yahoo.com (Ali Zanaty)
+Date: Sat, 11 Dec 2010 06:43:03 -0800 (PST)
+Subject: [R-sig-teaching] adding plus/minus 1 standard devaition into each
+	bar in cluster bar chart
+Message-ID: <323228.98484.qm@web59516.mail.ac4.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101211/75436d6e/attachment.pl>
+
+From Zeno.Adams at ebs.edu  Mon Dec 13 10:20:38 2010
+From: Zeno.Adams at ebs.edu (Adams, Zeno)
+Date: Mon, 13 Dec 2010 10:20:38 +0100
+Subject: [R-sig-teaching] adding plus/minus 1 standard devaition into
+	eachbar in cluster bar chart
+References: <323228.98484.qm@web59516.mail.ac4.yahoo.com>
+Message-ID: <9064522880125945B98983BBAECBA1CC0101BD8F@exchsrv001.ebs.local>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101213/62d87d9a/attachment.pl>
+
+From lists at revelle.net  Mon Dec 13 21:20:05 2010
+From: lists at revelle.net (William Revelle)
+Date: Mon, 13 Dec 2010 14:20:05 -0600
+Subject: [R-sig-teaching] adding plus/minus 1 standard devaition into
+ eachbar in cluster bar chart
+In-Reply-To: <9064522880125945B98983BBAECBA1CC0101BD8F@exchsrv001.ebs.local>
+References: <323228.98484.qm@web59516.mail.ac4.yahoo.com>
+	<9064522880125945B98983BBAECBA1CC0101BD8F@exchsrv001.ebs.local>
+Message-ID: <p0624085cc92c2cdf9ff2@[165.124.162.15]>
+
+Another error.bars function is found in the psych package.
+
+For zanaty's data, a log transform makes more sense:
+
+package(psych)
+error.bars.by(my.data$data,my.data$cat2,by.var=TRUE,bars=TRUE,sd=TRUE) 
+#original data
+error.bars.by(log(my.data$data),my.data$cat2,by.var=TRUE,bars=TRUE,sd=TRUE) 
+#log transformed data
+error.bars.by(log(my.data$data),my.data$cat1*(my.data$cat2+3),by.var=TRUE,bars=TRUE,sd=TRUE) 
+#to group by cat1 and cat2
+?error.bars.by
+
+
+Bill
+
+
+
+At 10:20 AM +0100 12/13/10, Adams, Zeno wrote:
+>In Michael Crawley's "The R Book" (which I can highly recommend for 
+>teaching undergraduate statistics) the author proposes a function 
+>that adds the standard errors with the line function. The function 
+>has three arguments: The means, the standard errors, and the bar 
+>labels. For a reproducible dataset such as:
+>
+>dat1 <- data.frame(income = c((2000 + 500*rnorm(10)),(2500 + 
+>500*rnorm(10))), gender = rep(c("m","f"),c(10,10)))
+>
+>with
+>
+>ybar <- tapply(dat1$income, dat1$gender, mean)
+>se <- tapply(dat1$income, dat1$gender, sd)/10
+>labels <- as.character(levels(dat1$gender))
+>
+>as the means, se, and labels, respectively
+>
+>the function is:
+>
+>error.bars<-function(yv,z,nn) {
+>xv<-
+>barplot(yv,ylim=c(0,(max(yv)+max(z))),names=nn,ylab=deparse(substitute(yv)
+>))
+>g=(max(xv)-min(xv))/50
+>for (i in 1:length(xv)) {
+>lines(c(xv[i],xv[i]),c(yv[i]+z[i],yv[i]-z[i]))
+>lines(c(xv[i]-g,xv[i]+g),c(yv[i]+z[i], yv[i]+z[i]))
+>lines(c(xv[i]-g,xv[i]+g),c(yv[i]-z[i], yv[i]-z[i]))
+>}}
+>
+>which can be used after plotting the data:
+>
+>barplot(ybar)
+>error.bars(ybar, se, labels)
+>
+>
+>Zeno
+>
+>
+>-----Original Message-----
+>From: r-sig-teaching-bounces at r-project.org on behalf of Ali Zanaty
+>Sent: Sat 12/11/2010 3:43 PM
+>To: r-sig-teaching at r-project.org
+>Subject: [R-sig-teaching] adding plus/minus 1 standard devaition 
+>into eachbar in cluster bar chart
+>
+>Dear All R users:
+>
+>I hope that this message finds all of you well.
+>
+>Currently, I am teaching an undergraduate course in statistics.
+>
+>If possible, Could you please help me out how to add plus/minus 1 standard
+>deviation added to each bar into R cluster bar chart.
+>
+>You can use the following artificial data.
+>
+>data cat 1 cat 2
+>23     1      1
+>45     1      1
+>34     1      1
+>5      1      1
+>32     1      1
+>44     1      1
+>3      2      1
+>1      2      1
+>2      2      1
+>3      2      1
+>4      2      1
+>5      1      2
+>6      1      2
+>7      1      2
+>8      1      2
+>544    2      2
+>78     2      2
+>543    2      2
+>34     2      2
+>89     2      2
+>9      1      3
+>43     1      3
+>23     1      3
+>45     1      3
+>7      1      3
+>5      1      3
+>7      1      3
+>6      2      3
+>867    2      3
+>3      2      3
+>4      2      3
+>5      2      3
+>6      2      3
+>7      2      3
+>8      2      3
+>9      2      3
+>
+>I need to create a bar chart for the mean of data column for each category. I
+>know how to create the cluster bar chart. But I need your help with how to add
+>plus/minus 1 standard deviation into each bar.
+>
+>Thank you so much for your helps and for your attention to this matter, and I
+>look forward to hearing from you.
+>
+>
+>Regards,
+>
+>zanaty
+>
+>
+>      
+>	[[alternative HTML version deleted]]
+>
+>_______________________________________________
+>R-sig-teaching at r-project.org mailing list
+>https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+>
+>EBS European Business School gemeinnuetzige GmbH, Universitaet fuer 
+>Wirtschaft und Recht i.Gr. - Amtsgericht Wiesbaden HRB 19951 - 
+>Umsatzsteuer-ID DE 113891213 Geschaeftsfuehrung: Prof. Dr. 
+>Christopher Jahns,  President; Prof. Dr. Rolf Tilmes, Dean Business 
+>School; Sabine Fuchs, CMO; Prof. Dr. Dr. Gerrick Frhr. v. 
+>Hoyningen-Huene, Dean Law School; Aufsichtsrat: Dr. Hellmut K. 
+>Albrecht, Vorsitzender
+>	[[alternative HTML version deleted]]
+>
+>_______________________________________________
+>R-sig-teaching at r-project.org mailing list
+>https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+From jwiley.psych at gmail.com  Mon Dec 13 22:17:15 2010
+From: jwiley.psych at gmail.com (Joshua Wiley)
+Date: Mon, 13 Dec 2010 13:17:15 -0800
+Subject: [R-sig-teaching] adding plus/minus 1 standard devaition into
+ each bar in cluster bar chart
+In-Reply-To: <323228.98484.qm@web59516.mail.ac4.yahoo.com>
+References: <323228.98484.qm@web59516.mail.ac4.yahoo.com>
+Message-ID: <AANLkTi=6xrTwqt8vZPvwcK6VG3DufxteY59m+xYAf=Dw@mail.gmail.com>
+
+Hi Ali,
+
+Here is another suggestion.  What I really like about using ggplot2 is
+the graphs are elegant (at least to my eye), and extremely flexible.
+For instance, using the method I show below, suppose you decided you
+wanted +/- 1 standard error instead of standard deviation, no problem,
+just change the summary function "myfun" and you're done.  ggplot2
+takes care of applying your function to every level of cat2, you do
+not have to do this yourself with tapply() or by().  What if you
+wanted a point +/- 1 sd instead of using a lot of ink to create bars?
+All you need to do is ask for geom = c("point", "errorbar").  In other
+words, it becomes very easy to ask for different types of graphical
+objects (bars, errorbars, points, lines, etc.) and use different
+summary functions, without a lot of effort or change on your part.
+Now if only someone would do the same for cooking...
+
+Cheers,
+
+Josh (code follows)
+
+## Your data in copy-and-pastable format
+zdat <- structure(list(data = c(23L, 45L, 34L, 5L, 32L, 44L, 3L, 1L,
+2L, 3L, 4L, 5L, 6L, 7L, 8L, 544L, 78L, 543L, 34L, 89L, 9L, 43L,
+23L, 45L, 7L, 5L, 7L, 6L, 867L, 3L, 4L, 5L, 6L, 7L, 8L, 9L),
+    cat1 = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L,
+    2L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 1L, 1L, 1L, 1L, 1L,
+    1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L), .Label = c("1",
+    "2"), class = "factor"), cat2 = structure(c(1L, 1L, 1L, 1L,
+    1L, 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L,
+    2L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L,
+    3L, 3L), .Label = c("1", "2", "3"), class = "factor")), .Names = c("data",
+"cat1", "cat2"), row.names = c(NA, -36L), class = "data.frame")
+
+## summary function, calculates, the mean, mean - sd, and mean + sd
+myfun <- function(x) {
+  mx <- mean(x, na.rm = TRUE)
+  sx <- sd(x, na.rm = TRUE)
+  out <- data.frame(y = mx, ymin = mx - sx, ymax = mx + sx)
+  return(out)
+}
+
+## ggplot2 package, great for graphing
+library(ggplot2)
+
+qplot(x = cat2, y = data, data = zdat,
+  fill = cat2, geom = c("bar", "errorbar"),
+  stat = "summary", fun.data = myfun)
+## basic info: what is on x, y, and where is data
+## aesthetics: fill colour, and ask for bars and errorbars
+## tell it to calculate summaries using "myfun" defined earlier
+
+
+On Sat, Dec 11, 2010 at 6:43 AM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:
+> Dear All R users:
+>
+> I hope that this message finds all of you well.
+>
+> Currently, I am teaching an undergraduate course in statistics.
+>
+> If possible, Could you please help me out how to add plus/minus 1 standard
+> deviation added to each bar into R cluster bar chart.
+>
+> You can use the following artificial data.
+>
+> data cat 1 cat 2
+> 23 ? ? 1 ? ? ?1
+> 45 ? ? 1 ? ? ?1
+> 34 ? ? 1 ? ? ?1
+> 5 ? ? ?1 ? ? ?1
+> 32 ? ? 1 ? ? ?1
+> 44 ? ? 1 ? ? ?1
+> 3 ? ? ?2 ? ? ?1
+> 1 ? ? ?2 ? ? ?1
+> 2 ? ? ?2 ? ? ?1
+> 3 ? ? ?2 ? ? ?1
+> 4 ? ? ?2 ? ? ?1
+> 5 ? ? ?1 ? ? ?2
+> 6 ? ? ?1 ? ? ?2
+> 7 ? ? ?1 ? ? ?2
+> 8 ? ? ?1 ? ? ?2
+> 544 ? ?2 ? ? ?2
+> 78 ? ? 2 ? ? ?2
+> 543 ? ?2 ? ? ?2
+> 34 ? ? 2 ? ? ?2
+> 89 ? ? 2 ? ? ?2
+> 9 ? ? ?1 ? ? ?3
+> 43 ? ? 1 ? ? ?3
+> 23 ? ? 1 ? ? ?3
+> 45 ? ? 1 ? ? ?3
+> 7 ? ? ?1 ? ? ?3
+> 5 ? ? ?1 ? ? ?3
+> 7 ? ? ?1 ? ? ?3
+> 6 ? ? ?2 ? ? ?3
+> 867 ? ?2 ? ? ?3
+> 3 ? ? ?2 ? ? ?3
+> 4 ? ? ?2 ? ? ?3
+> 5 ? ? ?2 ? ? ?3
+> 6 ? ? ?2 ? ? ?3
+> 7 ? ? ?2 ? ? ?3
+> 8 ? ? ?2 ? ? ?3
+> 9 ? ? ?2 ? ? ?3
+>
+> I need to create a bar chart for the mean of data column for each category. I
+> know how to create the cluster bar chart. But I need your help with how to add
+> plus/minus 1 standard deviation into each bar.
+>
+> Thank you so much for your helps and for your attention to this matter, and I
+> look forward to hearing from you.
+>
+>
+> Regards,
+>
+> zanaty
+>
+>
+>
+> ? ? ? ?[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+-- 
+Joshua Wiley
+Ph.D. Student, Health Psychology
+University of California, Los Angeles
+http://www.joshuawiley.com/
+
+
+
+From hadley at rice.edu  Tue Dec 14 00:22:09 2010
+From: hadley at rice.edu (Hadley Wickham)
+Date: Mon, 13 Dec 2010 17:22:09 -0600
+Subject: [R-sig-teaching] adding plus/minus 1 standard devaition into
+ each bar in cluster bar chart
+In-Reply-To: <323228.98484.qm@web59516.mail.ac4.yahoo.com>
+References: <323228.98484.qm@web59516.mail.ac4.yahoo.com>
+Message-ID: <AANLkTimzC4=7Uw6+aZXBcvEWYZPETBoswyf=LnHhe=VM@mail.gmail.com>
+
+Before doing that, I'd highly recommend reading
+http://biostat.mc.vanderbilt.edu/twiki/pub/Main/TatsukiRcode/Poster3.pdf
+
+Hadley
+
+On Sat, Dec 11, 2010 at 8:43 AM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:
+> Dear All R users:
+>
+> I hope that this message finds all of you well.
+>
+> Currently, I am teaching an undergraduate course in statistics.
+>
+> If possible, Could you please help me out how to add plus/minus 1 standard
+> deviation added to each bar into R cluster bar chart.
+>
+> You can use the following artificial data.
+>
+> data cat 1 cat 2
+> 23 ? ? 1 ? ? ?1
+> 45 ? ? 1 ? ? ?1
+> 34 ? ? 1 ? ? ?1
+> 5 ? ? ?1 ? ? ?1
+> 32 ? ? 1 ? ? ?1
+> 44 ? ? 1 ? ? ?1
+> 3 ? ? ?2 ? ? ?1
+> 1 ? ? ?2 ? ? ?1
+> 2 ? ? ?2 ? ? ?1
+> 3 ? ? ?2 ? ? ?1
+> 4 ? ? ?2 ? ? ?1
+> 5 ? ? ?1 ? ? ?2
+> 6 ? ? ?1 ? ? ?2
+> 7 ? ? ?1 ? ? ?2
+> 8 ? ? ?1 ? ? ?2
+> 544 ? ?2 ? ? ?2
+> 78 ? ? 2 ? ? ?2
+> 543 ? ?2 ? ? ?2
+> 34 ? ? 2 ? ? ?2
+> 89 ? ? 2 ? ? ?2
+> 9 ? ? ?1 ? ? ?3
+> 43 ? ? 1 ? ? ?3
+> 23 ? ? 1 ? ? ?3
+> 45 ? ? 1 ? ? ?3
+> 7 ? ? ?1 ? ? ?3
+> 5 ? ? ?1 ? ? ?3
+> 7 ? ? ?1 ? ? ?3
+> 6 ? ? ?2 ? ? ?3
+> 867 ? ?2 ? ? ?3
+> 3 ? ? ?2 ? ? ?3
+> 4 ? ? ?2 ? ? ?3
+> 5 ? ? ?2 ? ? ?3
+> 6 ? ? ?2 ? ? ?3
+> 7 ? ? ?2 ? ? ?3
+> 8 ? ? ?2 ? ? ?3
+> 9 ? ? ?2 ? ? ?3
+>
+> I need to create a bar chart for the mean of data column for each category. I
+> know how to create the cluster bar chart. But I need your help with how to add
+> plus/minus 1 standard deviation into each bar.
+>
+> Thank you so much for your helps and for your attention to this matter, and I
+> look forward to hearing from you.
+>
+>
+> Regards,
+>
+> zanaty
+>
+>
+>
+> ? ? ? ?[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+-- 
+Assistant Professor / Dobelman Family Junior Chair
+Department of Statistics / Rice University
+http://had.co.nz/
+
+
+
+From s-wagenius at northwestern.edu  Tue Dec 14 15:43:32 2010
+From: s-wagenius at northwestern.edu (Stuart Wagenius)
+Date: Tue, 14 Dec 2010 08:43:32 -0600
+Subject: [R-sig-teaching] adding plus/minus 1 standard devaition into
+ each bar in cluster bar chart
+In-Reply-To: <AANLkTimzC4=7Uw6+aZXBcvEWYZPETBoswyf=LnHhe=VM@mail.gmail.com>
+References: <323228.98484.qm@web59516.mail.ac4.yahoo.com>
+	<AANLkTimzC4=7Uw6+aZXBcvEWYZPETBoswyf=LnHhe=VM@mail.gmail.com>
+Message-ID: <AANLkTikfCWPq5ZDPABAXMun7qHGeGJjtjM-KYPKem8vi@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101214/181887bf/attachment.pl>
+
+From ian.fellows at stat.ucla.edu  Tue Dec 14 17:37:17 2010
+From: ian.fellows at stat.ucla.edu (Ian Fellows)
+Date: Tue, 14 Dec 2010 08:37:17 -0800
+Subject: [R-sig-teaching] adding plus/minus 1 standard devaition into
+	each bar in cluster bar chart
+In-Reply-To: <AANLkTikfCWPq5ZDPABAXMun7qHGeGJjtjM-KYPKem8vi@mail.gmail.com>
+References: <323228.98484.qm@web59516.mail.ac4.yahoo.com>
+	<AANLkTimzC4=7Uw6+aZXBcvEWYZPETBoswyf=LnHhe=VM@mail.gmail.com>
+	<AANLkTikfCWPq5ZDPABAXMun7qHGeGJjtjM-KYPKem8vi@mail.gmail.com>
+Message-ID: <09957D09-DECB-49BC-B995-AD023C62D057@stat.ucla.edu>
+
+Superior plots can be made pretty easily in ggplot2
+library(ggplot2)
+ggplot() +
+	stat_boxplot(aes(y = mpg,x = factor(gear)),data=mtcars,width = 0.5) +
+	geom_point(aes(x = factor(gear),y = mpg),data=mtcars,position = position_jitter(height = 0.0,width = 0.1))
+
+There is also a convinience function in Deducer that does much the same thing:
+
+library(Deducer)
+data(mtcars)
+oneway.plot(formula=mpg~gear,data=mtcars,alpha=1) #with one variable
+oneway.plot(formula=d(mpg,disp,hp,drat)~gear,data=mtcars, alpha=1) #with multiple variables
+
+
+
+On Dec 14, 2010, at 6:43 AM, Stuart Wagenius wrote:
+
+> Hadley, Thanks for the recommended reading. Is there R code to make
+> recommended plots?
+> 
+> Stuart
+> 
+> On Mon, Dec 13, 2010 at 5:22 PM, Hadley Wickham <hadley at rice.edu> wrote:
+> 
+>> Before doing that, I'd highly recommend reading
+>> http://biostat.mc.vanderbilt.edu/twiki/pub/Main/TatsukiRcode/Poster3.pdf
+>> 
+>> Hadley
+>> 
+>> On Sat, Dec 11, 2010 at 8:43 AM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:
+>>> Dear All R users:
+>>> 
+>>> I hope that this message finds all of you well.
+>>> 
+>>> Currently, I am teaching an undergraduate course in statistics.
+>>> 
+>>> If possible, Could you please help me out how to add plus/minus 1
+>> standard
+>>> deviation added to each bar into R cluster bar chart.
+>>> 
+>>> You can use the following artificial data.
+>>> 
+>>> data cat 1 cat 2
+>>> 23     1      1
+>>> 45     1      1
+>>> 34     1      1
+>>> 5      1      1
+>>> 32     1      1
+>>> 44     1      1
+>>> 3      2      1
+>>> 1      2      1
+>>> 2      2      1
+>>> 3      2      1
+>>> 4      2      1
+>>> 5      1      2
+>>> 6      1      2
+>>> 7      1      2
+>>> 8      1      2
+>>> 544    2      2
+>>> 78     2      2
+>>> 543    2      2
+>>> 34     2      2
+>>> 89     2      2
+>>> 9      1      3
+>>> 43     1      3
+>>> 23     1      3
+>>> 45     1      3
+>>> 7      1      3
+>>> 5      1      3
+>>> 7      1      3
+>>> 6      2      3
+>>> 867    2      3
+>>> 3      2      3
+>>> 4      2      3
+>>> 5      2      3
+>>> 6      2      3
+>>> 7      2      3
+>>> 8      2      3
+>>> 9      2      3
+>>> 
+>>> I need to create a bar chart for the mean of data column for each
+>> category. I
+>>> know how to create the cluster bar chart. But I need your help with how
+>> to add
+>>> plus/minus 1 standard deviation into each bar.
+>>> 
+>>> Thank you so much for your helps and for your attention to this matter,
+>> and I
+>>> look forward to hearing from you.
+>>> 
+>>> 
+>>> Regards,
+>>> 
+>>> zanaty
+>>> 
+>>> 
+>>> 
+>>>       [[alternative HTML version deleted]]
+>>> 
+>>> _______________________________________________
+>>> R-sig-teaching at r-project.org mailing list
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>> 
+>> 
+>> 
+>> 
+>> --
+>> Assistant Professor / Dobelman Family Junior Chair
+>> Department of Statistics / Rice University
+>> http://had.co.nz/
+>> 
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>> 
+> 
+> 	[[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+
+
+

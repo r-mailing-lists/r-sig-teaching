@@ -1,0 +1,218 @@
+From @boue|m@k@r|m1962 @end|ng |rom gm@||@com  Mon Aug 30 11:31:25 2021
+From: @boue|m@k@r|m1962 @end|ng |rom gm@||@com (AbouEl-Makarim Aboueissa)
+Date: Mon, 30 Aug 2021 05:31:25 -0400
+Subject: [R-sig-teaching] R codes/functions for test procedures
+Message-ID: <CAE9stmcZBj=LJPr=weMQyL66S3q3M3z0C20tVTDuK4W5DcYCJg@mail.gmail.com>
+
+Dear All:
+
+
+I am sending this request to this group too hoping that someone can help.
+
+
+
+I am wondering if someone have an R codes (R functions) to run the test
+procedures described in the paper titled ?ESTIMATION AND COMPARISON OF
+LOGNORMAL PARAMETERS IN THE PRESENCE OF CENSORED DATA? by STAVROS POULOUKAS
+2004, Journal of Statistical Computation & Simulation, Vol. 74, No. 3,
+March 2004, pp. 157?169.
+
+
+I can send a copy of the paper if necessary.
+
+
+
+with many thanks
+
+abou
+______________________
+
+
+*AbouEl-Makarim Aboueissa, PhD*
+
+*Professor, Statistics and Data Science*
+*Graduate Coordinator*
+
+*Department of Mathematics and Statistics*
+*University of Southern Maine*
+
+	[[alternative HTML version deleted]]
+
+
+From je|||@ux @end|ng |rom gm@||@com  Mon Aug 30 13:38:54 2021
+From: je|||@ux @end|ng |rom gm@||@com (Jeff Laux)
+Date: Mon, 30 Aug 2021 07:38:54 -0400
+Subject: [R-sig-teaching] R codes/functions for test procedures
+In-Reply-To: <CAE9stmcZBj=LJPr=weMQyL66S3q3M3z0C20tVTDuK4W5DcYCJg@mail.gmail.com>
+References: <CAE9stmcZBj=LJPr=weMQyL66S3q3M3z0C20tVTDuK4W5DcYCJg@mail.gmail.com>
+Message-ID: <CANV9buQv4y25x03AtL9ZEEnwXthzqkr10jguqgaFC7x=nBLtPw@mail.gmail.com>
+
+This list is for discussions about using R in teaching statistics.  It
+isn't a help line where you ask people to write code for you.  You can ask
+on the main list, or on stack overflow for help with coding.  Please only
+use this list for its intended purpose.
+
+
+On Mon, Aug 30, 2021 at 5:32 AM AbouEl-Makarim Aboueissa <
+abouelmakarim1962 at gmail.com> wrote:
+
+> Dear All:
+>
+>
+> I am sending this request to this group too hoping that someone can help.
+>
+>
+>
+> I am wondering if someone have an R codes (R functions) to run the test
+> procedures described in the paper titled ?ESTIMATION AND COMPARISON OF
+> LOGNORMAL PARAMETERS IN THE PRESENCE OF CENSORED DATA? by STAVROS POULOUKAS
+> 2004, Journal of Statistical Computation & Simulation, Vol. 74, No. 3,
+> March 2004, pp. 157?169.
+>
+>
+> I can send a copy of the paper if necessary.
+>
+>
+>
+> with many thanks
+>
+> abou
+> ______________________
+>
+>
+> *AbouEl-Makarim Aboueissa, PhD*
+>
+> *Professor, Statistics and Data Science*
+> *Graduate Coordinator*
+>
+> *Department of Mathematics and Statistics*
+> *University of Southern Maine*
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+	[[alternative HTML version deleted]]
+
+
+From @boue|m@k@r|m1962 @end|ng |rom gm@||@com  Mon Aug 30 13:57:59 2021
+From: @boue|m@k@r|m1962 @end|ng |rom gm@||@com (AbouEl-Makarim Aboueissa)
+Date: Mon, 30 Aug 2021 07:57:59 -0400
+Subject: [R-sig-teaching] R codes/functions for test procedures
+In-Reply-To: <CANV9buQv4y25x03AtL9ZEEnwXthzqkr10jguqgaFC7x=nBLtPw@mail.gmail.com>
+References: <CAE9stmcZBj=LJPr=weMQyL66S3q3M3z0C20tVTDuK4W5DcYCJg@mail.gmail.com>
+ <CANV9buQv4y25x03AtL9ZEEnwXthzqkr10jguqgaFC7x=nBLtPw@mail.gmail.com>
+Message-ID: <CAE9stmez4vVMJ1seeh5bwyDUjhAm9wLMt0nuXOYnkzp3iGk1wQ@mail.gmail.com>
+
+Dear Jeff: good morning
+
+
+I just thought that someone may know where I can find help in this matter,
+or maybe know where I can find this R code(s).
+
+Anyway, thank you very much for your message.
+
+
+with many thanks
+abou
+______________________
+
+
+*AbouEl-Makarim Aboueissa, PhD*
+
+*Professor, Statistics and Data Science*
+*Graduate Coordinator*
+
+*Department of Mathematics and Statistics*
+*University of Southern Maine*
+
+
+
+On Mon, Aug 30, 2021 at 7:39 AM Jeff Laux <jefflaux at gmail.com> wrote:
+
+> This list is for discussions about using R in teaching statistics.  It
+> isn't a help line where you ask people to write code for you.  You can ask
+> on the main list, or on stack overflow for help with coding.  Please only
+> use this list for its intended purpose.
+>
+>
+> On Mon, Aug 30, 2021 at 5:32 AM AbouEl-Makarim Aboueissa <
+> abouelmakarim1962 at gmail.com> wrote:
+>
+>> Dear All:
+>>
+>>
+>> I am sending this request to this group too hoping that someone can help.
+>>
+>>
+>>
+>> I am wondering if someone have an R codes (R functions) to run the test
+>> procedures described in the paper titled ?ESTIMATION AND COMPARISON OF
+>> LOGNORMAL PARAMETERS IN THE PRESENCE OF CENSORED DATA? by STAVROS
+>> POULOUKAS
+>> 2004, Journal of Statistical Computation & Simulation, Vol. 74, No. 3,
+>> March 2004, pp. 157?169.
+>>
+>>
+>> I can send a copy of the paper if necessary.
+>>
+>>
+>>
+>> with many thanks
+>>
+>> abou
+>> ______________________
+>>
+>>
+>> *AbouEl-Makarim Aboueissa, PhD*
+>>
+>> *Professor, Statistics and Data Science*
+>> *Graduate Coordinator*
+>>
+>> *Department of Mathematics and Statistics*
+>> *University of Southern Maine*
+>>
+>>         [[alternative HTML version deleted]]
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>
+
+	[[alternative HTML version deleted]]
+
+
+From m@ech|er @end|ng |rom @t@t@m@th@ethz@ch  Tue Aug 31 17:24:25 2021
+From: m@ech|er @end|ng |rom @t@t@m@th@ethz@ch (Martin Maechler)
+Date: Tue, 31 Aug 2021 17:24:25 +0200
+Subject: [R-sig-teaching] R codes/functions for test procedures
+In-Reply-To: <CANV9buQv4y25x03AtL9ZEEnwXthzqkr10jguqgaFC7x=nBLtPw-6465@mail.gmail.com>
+References: <CAE9stmcZBj=LJPr=weMQyL66S3q3M3z0C20tVTDuK4W5DcYCJg@mail.gmail.com>
+ <CANV9buQv4y25x03AtL9ZEEnwXthzqkr10jguqgaFC7x=nBLtPw-6465@mail.gmail.com>
+Message-ID: <24878.18857.469806.395768@stat.math.ethz.ch>
+
+>>>>> Jeff Laux 
+>>>>>     on Mon, 30 Aug 2021 07:38:54 -0400 writes:
+
+    > This list is for discussions about using R in teaching
+    > statistics.  It isn't a help line where you ask people to
+    > write code for you.  You can ask on the main list, or on
+    > stack overflow for help with coding.  Please only use this
+    > list for its intended purpose.
+
+Yes, indeed!
+
+Notably since you (Prof AbouEl-Makarim Aboueissa)
+*already* posted this to the R-help list and you  *did* get some
+help there!
+
+What you just did is indeed considered to be a misuse of
+volunteers' time.
+
+Martin Maechler
+
+

@@ -1,0 +1,2072 @@
+From aaboueissa at usm.maine.edu  Wed May  6 23:25:42 2009
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Wed, 06 May 2009 17:25:42 -0400
+Subject: [R-sig-teaching] Help wanted with R
+Message-ID: <4A01C815.01BB.00A6.1@usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090506/2f953794/attachment.pl>
+
+From jholtman at gmail.com  Thu May  7 03:20:12 2009
+From: jholtman at gmail.com (jim holtman)
+Date: Wed, 6 May 2009 21:20:12 -0400
+Subject: [R-sig-teaching] Help wanted with R
+In-Reply-To: <4A01C815.01BB.00A6.1@usm.maine.edu>
+References: <4A01C815.01BB.00A6.1@usm.maine.edu>
+Message-ID: <644e1f320905061820w4df08f5ax8c10bb697138c6c4@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090506/1800f24d/attachment.pl>
+
+From retzerjj at gmail.com  Fri May  8 02:41:32 2009
+From: retzerjj at gmail.com (Retzer Joe)
+Date: Thu, 7 May 2009 19:41:32 -0500
+Subject: [R-sig-teaching] Simple practice problems for R tutorial
+In-Reply-To: <f8e6ff050903310724j623763bdt3e3d9933e1954d42@mail.gmail.com>
+References: <49B15D49.8030107@umn.edu>
+	<20090309210908.GG14522@laplace.reed.edu>
+	<D86C9EFF6AA3734193923FFA1EE4308B07D7DC65@nc-mail2.northland.edu>
+	<40e66e0b0903301412i275524d1g4df1e9925f2b3915@mail.gmail.com>
+	<f8e6ff050903301529u20c2e480n4bce9d83c429a1ab@mail.gmail.com>
+	<40e66e0b0903301602h7268dd02y82e1e7c454e9170b@mail.gmail.com>
+	<f8e6ff050903301754x34fa26earb7fd9f5d2506add7@mail.gmail.com>
+	<40e66e0b0903310641x7a1b29afo2cd31825191641b2@mail.gmail.com>
+	<f8e6ff050903310724j623763bdt3e3d9933e1954d42@mail.gmail.com>
+Message-ID: <AE48B961-35D1-4F47-B77D-EF20103B51DF@gmail.com>
+
+I'm putting together an R tutorial and wanted to give a few, in class,  
+practice problems to the students. I'd like to have some very basic  
+ones (since they will be done in class) on things like:
+
+- read a data file
+- do some simple manipulations / calculations
+- do some sorting
+- create a list
+- load a library and run something from it
+- draw some easy graphs (and make simple par changes)
+- simple matrix manipulations
+
+etc.
+
+I was wondering if anyone had some of these or knew where I might find  
+some (url, text, etc.). I've been looking w/o success. Any help or  
+advice would really be appreciated.
+
+Many thanks,
+Joe Retzer
+
+
+
+From rickhg12hs at gmail.com  Fri May  8 04:37:30 2009
+From: rickhg12hs at gmail.com (Richard Graham)
+Date: Thu, 7 May 2009 22:37:30 -0400
+Subject: [R-sig-teaching] Simple practice problems for R tutorial
+In-Reply-To: <AE48B961-35D1-4F47-B77D-EF20103B51DF@gmail.com>
+References: <49B15D49.8030107@umn.edu>
+	<20090309210908.GG14522@laplace.reed.edu>
+	<D86C9EFF6AA3734193923FFA1EE4308B07D7DC65@nc-mail2.northland.edu>
+	<40e66e0b0903301412i275524d1g4df1e9925f2b3915@mail.gmail.com>
+	<f8e6ff050903301529u20c2e480n4bce9d83c429a1ab@mail.gmail.com>
+	<40e66e0b0903301602h7268dd02y82e1e7c454e9170b@mail.gmail.com>
+	<f8e6ff050903301754x34fa26earb7fd9f5d2506add7@mail.gmail.com>
+	<40e66e0b0903310641x7a1b29afo2cd31825191641b2@mail.gmail.com>
+	<f8e6ff050903310724j623763bdt3e3d9933e1954d42@mail.gmail.com>
+	<AE48B961-35D1-4F47-B77D-EF20103B51DF@gmail.com>
+Message-ID: <9410b37b0905071937o7cec6febw628f75446f413c03@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090507/e9f70d74/attachment.pl>
+
+From h.wickham at gmail.com  Fri May  8 05:23:44 2009
+From: h.wickham at gmail.com (hadley wickham)
+Date: Thu, 7 May 2009 22:23:44 -0500
+Subject: [R-sig-teaching] Simple practice problems for R tutorial
+In-Reply-To: <AE48B961-35D1-4F47-B77D-EF20103B51DF@gmail.com>
+References: <49B15D49.8030107@umn.edu>
+	<20090309210908.GG14522@laplace.reed.edu>
+	<D86C9EFF6AA3734193923FFA1EE4308B07D7DC65@nc-mail2.northland.edu>
+	<40e66e0b0903301412i275524d1g4df1e9925f2b3915@mail.gmail.com>
+	<f8e6ff050903301529u20c2e480n4bce9d83c429a1ab@mail.gmail.com>
+	<40e66e0b0903301602h7268dd02y82e1e7c454e9170b@mail.gmail.com>
+	<f8e6ff050903301754x34fa26earb7fd9f5d2506add7@mail.gmail.com>
+	<40e66e0b0903310641x7a1b29afo2cd31825191641b2@mail.gmail.com>
+	<f8e6ff050903310724j623763bdt3e3d9933e1954d42@mail.gmail.com>
+	<AE48B961-35D1-4F47-B77D-EF20103B51DF@gmail.com>
+Message-ID: <f8e6ff050905072023t6fdb85b1k2811e0b9efaa55fc@mail.gmail.com>
+
+You might want to have a look at the slides from my stat computing and
+graphics class - http://had.co.nz/stat405.  They are plenty of small
+exercises interleaved throughout the content.
+
+Hadley
+
+On Thu, May 7, 2009 at 7:41 PM, Retzer Joe <retzerjj at gmail.com> wrote:
+> I'm putting together an R tutorial and wanted to give a few, in class,
+> practice problems to the students. I'd like to have some very basic ones
+> (since they will be done in class) on things like:
+>
+> - read a data file
+> - do some simple manipulations / calculations
+> - do some sorting
+> - create a list
+> - load a library and run something from it
+> - draw some easy graphs (and make simple par changes)
+> - simple matrix manipulations
+>
+> etc.
+>
+> I was wondering if anyone had some of these or knew where I might find some
+> (url, text, etc.). I've been looking w/o success. Any help or advice would
+> really be appreciated.
+>
+> Many thanks,
+> Joe Retzer
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+-- 
+http://had.co.nz/
+
+
+
+From news at jonasstein.de  Fri May  8 14:58:43 2009
+From: news at jonasstein.de (Jonas Stein)
+Date: Fri, 08 May 2009 14:58:43 +0200
+Subject: [R-sig-teaching] R in physics
+Message-ID: <877i0rrbss.fsf@jonasstein.de>
+
+Hi,
+i am looking for literature (ebook, howto, websites..) that explains how
+to make best effort out of R in physics.
+
+I found a lot of documentation about R in finance, and biology but the
+commands one needs in these subjects are very different.
+
+In physics the focus is on plot, fit, calculation of errbars, writing TeX
+in the plots, using sweave, and so on.
+
+Thank you for hints.
+
+-- 
+Jonas Stein <news at jonasstein.de>
+
+
+
+From landronimirc at gmail.com  Fri May  8 15:53:08 2009
+From: landronimirc at gmail.com (Liviu Andronic)
+Date: Fri, 8 May 2009 15:53:08 +0200
+Subject: [R-sig-teaching] R in physics
+In-Reply-To: <877i0rrbss.fsf@jonasstein.de>
+References: <877i0rrbss.fsf@jonasstein.de>
+Message-ID: <68b1e2610905080653j63cd2c02j475cb301b3fa882b@mail.gmail.com>
+
+Hello,
+
+On Fri, May 8, 2009 at 2:58 PM, Jonas Stein <news at jonasstein.de> wrote:
+> i am looking for literature (ebook, howto, websites..) that explains how
+> to make best effort out of R in physics.
+>
+Did you check the CRAN Task Views [1]? There are some (ChemPhys,
+Graphics) that may prove of interest.
+Liviu
+
+[1] http://cran.r-project.org/web/views/index.html
+
+
+
+From aaboueissa at usm.maine.edu  Tue May 12 00:17:20 2009
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Mon, 11 May 2009 18:17:20 -0400
+Subject: [R-sig-teaching] Comparing points on the same regression line
+Message-ID: <4A086BAF.01BB.00A6.1@usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090511/36d4f9a1/attachment.pl>
+
+From mboutsen at ulb.ac.be  Sun May 17 15:38:29 2009
+From: mboutsen at ulb.ac.be (mboutsen)
+Date: Sun, 17 May 2009 15:38:29 +0200
+Subject: [R-sig-teaching] discrepancies between R and stata
+Message-ID: <4A101355.8020508@ulb.ac.be>
+
+Hi
+
+
+I am trying R and more particulary the cox model
+With the same data base, I get a hazard ratio (5.82) that is not the 
+same obtained with stata
+
+Attached the file leukemia.dta
+
+Here are the codes
+
+for R
+library(foreign)
+leukemia<-read.dta("leukemia.dta")
+library(survival)
+res <- coxph(Surv(TIME, STATUS)~TREAT, data=leukemia)
+summary(res)
+
+
+for stata
+use "leukemia.dta",clear
+stset TIME, failure(STATUS==1)
+stcox TREAT
+
+SPSS and EPIinfo give the same HR than Stata
+
+I tried with an other database without any problem
+
+What is the problem???
+
+I saw a few posts with discrepancies but with no explanations
+
+Thanks in advance
+
+Michel Boutsen
+Brussel's University
+Department of Biostatistics
+
+
+From prasun30 at gmail.com  Fri May 22 07:33:22 2009
+From: prasun30 at gmail.com (prasun kumar)
+Date: Thu, 21 May 2009 22:33:22 -0700
+Subject: [R-sig-teaching] regarding PCA
+Message-ID: <a473abdb0905212233l687a3861w26cfc5f428f191b1@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090521/ab2a5d01/attachment.pl>
+
+From istazahn at gmail.com  Fri May 22 15:38:03 2009
+From: istazahn at gmail.com (Ista Zahn)
+Date: Fri, 22 May 2009 09:38:03 -0400
+Subject: [R-sig-teaching] regarding PCA
+In-Reply-To: <a473abdb0905212233l687a3861w26cfc5f428f191b1@mail.gmail.com>
+References: <a473abdb0905212233l687a3861w26cfc5f428f191b1@mail.gmail.com>
+Message-ID: <f55e7cf50905220638t17f5930cqd462fe8f211d95ef@mail.gmail.com>
+
+Hi Prasun,
+I wrote a short guide for my students that you can download from my
+website at http://www.realpsychresearch.org/sites/default/files/PCwithR.pdf
+
+It's a very rudimentary introduction, but it should get you started.
+
+All the best,
+Ista
+
+On Fri, May 22, 2009 at 1:33 AM, prasun kumar <prasun30 at gmail.com> wrote:
+> Dear all
+>
+> I am prasun kumar from SASTRA university ?studying in final year
+> bioinformatcis.
+> I am new to R and want to do the PCA for my data. Idont know how to start.
+>
+> Can some one help me please in this.If any one is having any tutorial please
+> send me via mail my id is prasun30 at gmail.com
+> waitting for positive reply
+> yours truly
+> prasun
+> PRASUN (ASHOKA)
+>
+> ? ? ? ?[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+From aaboueissa at usm.maine.edu  Thu Jun  4 19:00:13 2009
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Thu, 04 Jun 2009 13:00:13 -0400
+Subject: [R-sig-teaching] Help with graph joint pdf
+Message-ID: <4A27C55C.01BB.00A6.1@usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090604/376f6b2b/attachment.pl>
+
+From aaboueissa at usm.maine.edu  Thu Jun  4 19:24:40 2009
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Thu, 04 Jun 2009 13:24:40 -0400
+Subject: [R-sig-teaching] Help with graph joint pdf
+Message-ID: <4A27CB17.01BB.00A6.1@usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090604/7d69b266/attachment.pl>
+
+From scastro at iesta.edu.uy  Thu Jun  4 19:35:55 2009
+From: scastro at iesta.edu.uy (=?iso-8859-1?Q?Sebasti=E1n_Castro?=)
+Date: Thu, 4 Jun 2009 14:35:55 -0300 (UYT)
+Subject: [R-sig-teaching] Help with graph joint pdf
+In-Reply-To: <4A27CB17.01BB.00A6.1@usm.maine.edu>
+References: <4A27CB17.01BB.00A6.1@usm.maine.edu>
+Message-ID: <60be8d9a1998f2db15f8ac3e0f8883ea.squirrel@mail.ccee.edu.uy>
+
+I would do it in this way:
+
+###########################################################################
+u=seq(0.0001,1,0.1)
+v=u
+f=outer(u,v, function(u,v) 18*(u/v)*(1-u/v))
+f
+for (i in 2:length(u)) {
+	for (j in 1:(i-1)) {
+		f[i,j]=0
+	}
+}
+f
+
+persp( u, v, f, phi=30, theta=-30,col='red')
+###########################################################################
+
+Surely you (or someone) have a better solution to share.
+
+Sebasti?n.
+
+> Dear All: Please ignore my previous email. I fixed the joint pdf.
+>
+>
+> How I can get the graph of the joint pdf:
+>
+> f(u,v)=18 v (u/v) (1-(u/v))  for 0<u<v and 0<v<1, and 0 otherwise.
+>
+> With many thanks
+>
+> Abou
+>
+>
+> ==========================
+> AbouEl-Makarim Aboueissa, Ph.D.
+> Assistant Professor of Statistics
+> Department of Mathematics & Statistics
+> University of Southern Maine
+> 96 Falmouth Street
+> P.O. Box 9300
+> Portland, ME 04104-9300
+> USA
+>
+>
+> Tel: (207) 228-8389
+> Fax: (207) 780-5607
+> Email: aaboueissa at usm.maine.edu
+>           aboueiss at yahoo.com
+>
+>   http://www.usm.maine.edu/~aaboueissa/
+>
+>
+> Office: 301C Payson Smith
+>
+>
+> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+From madhucift at gmail.com  Fri Jun  5 12:56:28 2009
+From: madhucift at gmail.com (madhu vr)
+Date: Fri, 5 Jun 2009 16:26:28 +0530
+Subject: [R-sig-teaching] R-sig-teaching Digest, Vol 22, Issue 1
+In-Reply-To: <mailman.7.1244196003.23849.r-sig-teaching@r-project.org>
+References: <mailman.7.1244196003.23849.r-sig-teaching@r-project.org>
+Message-ID: <b1d8ec420906050356sb8816cdu8440c8c51230a6b6@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090605/d35fafeb/attachment.pl>
+
+From scastro at iesta.edu.uy  Fri Jun  5 20:23:44 2009
+From: scastro at iesta.edu.uy (=?iso-8859-1?Q?Sebasti=E1n_Castro?=)
+Date: Fri, 5 Jun 2009 15:23:44 -0300 (UYT)
+Subject: [R-sig-teaching] Help with graph joint pdf
+In-Reply-To: <60be8d9a1998f2db15f8ac3e0f8883ea.squirrel@mail.ccee.edu.uy>
+References: <4A27CB17.01BB.00A6.1@usm.maine.edu>
+	<60be8d9a1998f2db15f8ac3e0f8883ea.squirrel@mail.ccee.edu.uy>
+Message-ID: <97af3fa09cd1c10b52182dd808e18b5a.squirrel@mail.ccee.edu.uy>
+
+I've found a 'better' solution:
+
+###########################################################################
+u=seq(0.0001,1,0.05)
+v=u
+f=outer(u,v, function(u,v) 18*(u/v)*(1-u/v))*outer(u, v, function(u,v)(u<v))
+persp( u, v, f, phi=30, theta=-30,col='red')
+###########################################################################
+
+Sebasti?n.
+
+
+
+
+
+
+> I would do it in this way:
+>
+> ###########################################################################
+> u=seq(0.0001,1,0.1)
+> v=u
+> f=outer(u,v, function(u,v) 18*(u/v)*(1-u/v))
+> f
+> for (i in 2:length(u)) {
+> 	for (j in 1:(i-1)) {
+> 		f[i,j]=0
+> 	}
+> }
+> f
+>
+> persp( u, v, f, phi=30, theta=-30,col='red')
+> ###########################################################################
+>
+> Surely you (or someone) have a better solution to share.
+>
+> Sebasti?n.
+>
+>> Dear All: Please ignore my previous email. I fixed the joint pdf.
+>>
+>>
+>> How I can get the graph of the joint pdf:
+>>
+>> f(u,v)=18 v (u/v) (1-(u/v))  for 0<u<v and 0<v<1, and 0 otherwise.
+>>
+>> With many thanks
+>>
+>> Abou
+>>
+>>
+>> ==========================
+>> AbouEl-Makarim Aboueissa, Ph.D.
+>> Assistant Professor of Statistics
+>> Department of Mathematics & Statistics
+>> University of Southern Maine
+>> 96 Falmouth Street
+>> P.O. Box 9300
+>> Portland, ME 04104-9300
+>> USA
+>>
+>>
+>> Tel: (207) 228-8389
+>> Fax: (207) 780-5607
+>> Email: aaboueissa at usm.maine.edu
+>>           aboueiss at yahoo.com
+>>
+>>   http://www.usm.maine.edu/~aaboueissa/
+>>
+>>
+>> Office: 301C Payson Smith
+>>
+>>
+>> 	[[alternative HTML version deleted]]
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+From maj at waikato.ac.nz  Tue Jun  9 02:01:48 2009
+From: maj at waikato.ac.nz (Murray Jorgensen)
+Date: Tue, 09 Jun 2009 12:01:48 +1200
+Subject: [R-sig-teaching] Providing R resources in Moodle
+Message-ID: <4A2DA66C.7010104@waikato.ac.nz>
+
+My university is encouraging the development of on-line course resources
+using the open-source "Moodle" software. I think that it might be a good
+idea to provide some beginner support for R using Moodle. I am very much
+a beginner in Moodle so if any members of this list have any experience
+with this I would be very interested.
+
+Regards,  Murray Jorgensen
+
+-- 
+Dr Murray Jorgensen      http://www.stats.waikato.ac.nz/Staff/maj.html
+Department of Statistics, University of Waikato, Hamilton, New Zealand
+Email: maj at waikato.ac.nz                                Fax 7 838 4155
+Phone  +64 7 838 4773 wk    Home +64 7 825 0441   Mobile 021 0200 8350
+
+
+
+From semin2006 at gmail.com  Tue Jun  9 17:26:43 2009
+From: semin2006 at gmail.com (Sam Lin)
+Date: Wed, 10 Jun 2009 03:26:43 +1200
+Subject: [R-sig-teaching] Providing R resources in Moodle (Murray
+	Jorgensen)
+In-Reply-To: <mailman.5.1244541603.14264.r-sig-teaching@r-project.org>
+References: <mailman.5.1244541603.14264.r-sig-teaching@r-project.org>
+Message-ID: <4A2E7F33.6030800@gmail.com>
+
+Dear Dr. Jorgensen,
+
+I think I can be of some help.
+
+Regards,
+Sam
+
+> ----------------------------------------------------------------------
+> 
+> Message: 1
+> Date: Tue, 09 Jun 2009 12:01:48 +1200
+> From: Murray Jorgensen <maj at waikato.ac.nz>
+> Subject: [R-sig-teaching] Providing R resources in Moodle
+> To: r-sig-teaching at r-project.org
+> Message-ID: <4A2DA66C.7010104 at waikato.ac.nz>
+> Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+> 
+> My university is encouraging the development of on-line course resources
+> using the open-source "Moodle" software. I think that it might be a good
+> idea to provide some beginner support for R using Moodle. I am very much
+> a beginner in Moodle so if any members of this list have any experience
+> with this I would be very interested.
+> 
+> Regards,  Murray Jorgensen
+> 
+
+
+-- 
+Shih-Min Lin (Sam)
+Honey Research Unit
+Department of Biological Sciences
+University of Waikato
+Private Bag 3105
+Hamilton 3240
+New Zealand
+Tel +64 7 838 4466 Ext 8247
+Fax +64 7 838 4324
+
+
+
+From kasturiclear at gmail.com  Sat Jun 20 00:36:28 2009
+From: kasturiclear at gmail.com (kasturi bardhan)
+Date: Sat, 20 Jun 2009 04:06:28 +0530
+Subject: [R-sig-teaching] CDF for Bivariate Kernel density estimation
+Message-ID: <9a617b890906191536q517b5dbfh231998a8b0fa6864@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090620/4b02c187/attachment.pl>
+
+From aaboueissa at usm.maine.edu  Wed Jun 24 01:57:45 2009
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Tue, 23 Jun 2009 19:57:45 -0400
+Subject: [R-sig-teaching] Graph critical region
+Message-ID: <4A4133B9020000A600050897@uct5.uct.usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090623/903ee5d9/attachment.pl>
+
+From AnnisC at asme.org  Wed Jun 24 03:08:29 2009
+From: AnnisC at asme.org (Charles Annis, P.E.)
+Date: Tue, 23 Jun 2009 21:08:29 -0400
+Subject: [R-sig-teaching] Graph critical region
+In-Reply-To: <4A4133B9020000A600050897@uct5.uct.usm.maine.edu>
+References: <4A4133B9020000A600050897@uct5.uct.usm.maine.edu>
+Message-ID: <2E334188614646FA9C0C16B74B456553@DD4XFW31>
+
+This probably should be a FAQ.
+
+You will find an example (with code) here, along with a bazillion other
+example of nifty R graphics.
+
+http://addictedtor.free.fr/graphiques/thumbs.php
+http://addictedtor.free.fr/graphiques/RGraphGallery.php?graph=88
+
+
+Charles Annis, P.E.
+
+Charles.Annis at StatisticalEngineering.com
+phone: 561-352-9699
+eFax:  614-455-3265
+http://www.StatisticalEngineering.com
+ 
+
+-----Original Message-----
+From: r-sig-teaching-bounces at r-project.org
+[mailto:r-sig-teaching-bounces at r-project.org] On Behalf Of AbouEl-Makarim
+Aboueissa
+Sent: Tuesday, June 23, 2009 7:58 PM
+To: R-sig-teaching at r-project.org
+Subject: [R-sig-teaching] Graph critical region
+
+Dear All:
+ 
+I need some help with graphing the critical regions of hypothesis testing.
+ 
+Consider the Z-test, assume Z=3.2, and alpha=0.05 (that is Z_(a.pha/2)=1.96.
+
+ 
+Then how to graph the rejection region in the following three cases:
+ 
+Left-tailed test
+ 
+ 
+Right-tailed test
+ 
+ 
+Two tailed test
+ 
+ 
+ 
+Same for the T-test.
+ 
+ 
+Thank you so much for your times.
+ 
+Abou
+ 
+ 
+
+
+==========================
+AbouEl-Makarim Aboueissa, Ph.D.
+Assistant Professor of Statistics
+Department of Mathematics & Statistics
+University of Southern Maine
+96 Falmouth Street
+P.O. Box 9300
+Portland, ME 04104-9300
+
+Tel: (207) 228-8389
+Email: aaboueissa at usm.maine.edu
+          aboueiss at yahoo.com
+Office: 301C Payson Smith
+
+	[[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+From istazahn at gmail.com  Wed Jun 24 04:44:30 2009
+From: istazahn at gmail.com (Ista Zahn)
+Date: Tue, 23 Jun 2009 22:44:30 -0400
+Subject: [R-sig-teaching] Graph critical region
+In-Reply-To: <4A4133B9020000A600050897@uct5.uct.usm.maine.edu>
+References: <4A4133B9020000A600050897@uct5.uct.usm.maine.edu>
+Message-ID: <f55e7cf50906231944s4c5b7817w6f26bf705cd7a21e@mail.gmail.com>
+
+I've seen quicker ways to do it, but I've been using ggplot2 for this.
+See examples below.
+
+On Tue, Jun 23, 2009 at 7:57 PM, AbouEl-Makarim
+Aboueissa<aaboueissa at usm.maine.edu> wrote:
+> Dear All:
+>
+> I need some help with graphing the critical regions of hypothesis testing.
+>
+> Consider the Z-test, assume Z=3.2, and alpha=0.05 (that is Z_(a.pha/2)=1.96.
+>
+> Then how to graph the rejection region in the following three cases:
+>
+> Left-tailed test
+
+library(ggplot2)
+z <- seq(-4,4, by = .01)
+Density <- dnorm(z)
+criteria <- factor(rep("retain", length(z)), levels=c("retain", "reject"))
+criteria[which(z < qnorm(.05))] <- "reject"
+qplot(z,Density, geom=c("path","area"), fill=criteria) +
+scale_fill_manual(values=c("grey40", "red"))
+>
+>
+> Right-tailed test
+>
+Same as above except do
+criteria[which(z > qnorm(.95))] <- "reject"
+>
+> Two tailed test
+>
+Sorry, haven't figured this one out yet.
+>
+>
+> Same for the T-test.
+
+t <- seq(-4,4, by = .01)
+Density <- dt(t,df=20)
+criteria <- factor(rep("retain", length(t)), levels=c("retain", "reject"))
+criteria[which(t > qt(.95,df=20))] <- "reject"
+qplot(t,Density, geom=c("path","area"), fill=criteria) +
+scale_fill_manual(values=c("grey40", "red"))
+
+Hope it helps,
+Ista
+>
+>
+> Thank you so much for your times.
+>
+> Abou
+>
+>
+>
+>
+> ==========================
+> AbouEl-Makarim Aboueissa, Ph.D.
+> Assistant Professor of Statistics
+> Department of Mathematics & Statistics
+> University of Southern Maine
+> 96 Falmouth Street
+> P.O. Box 9300
+> Portland, ME 04104-9300
+>
+> Tel: (207) 228-8389
+> Email: aaboueissa at usm.maine.edu
+> ? ? ? ? ?aboueiss at yahoo.com
+> Office: 301C Payson Smith
+>
+> ? ? ? ?[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+From h.wickham at gmail.com  Wed Jun 24 04:58:20 2009
+From: h.wickham at gmail.com (hadley wickham)
+Date: Tue, 23 Jun 2009 21:58:20 -0500
+Subject: [R-sig-teaching] Graph critical region
+In-Reply-To: <f55e7cf50906231944s4c5b7817w6f26bf705cd7a21e@mail.gmail.com>
+References: <4A4133B9020000A600050897@uct5.uct.usm.maine.edu>
+	<f55e7cf50906231944s4c5b7817w6f26bf705cd7a21e@mail.gmail.com>
+Message-ID: <f8e6ff050906231958i280092a6p582a021f1772d3e0@mail.gmail.com>
+
+On Tue, Jun 23, 2009 at 9:44 PM, Ista Zahn<istazahn at gmail.com> wrote:
+> I've seen quicker ways to do it, but I've been using ggplot2 for this.
+> See examples below.
+>
+> On Tue, Jun 23, 2009 at 7:57 PM, AbouEl-Makarim
+> Aboueissa<aaboueissa at usm.maine.edu> wrote:
+>> Dear All:
+>>
+>> I need some help with graphing the critical regions of hypothesis testing.
+>>
+>> Consider the Z-test, assume Z=3.2, and alpha=0.05 (that is Z_(a.pha/2)=1.96.
+>>
+>> Then how to graph the rejection region in the following three cases:
+>>
+>> Left-tailed test
+>
+> library(ggplot2)
+> z <- seq(-4,4, by = .01)
+> Density <- dnorm(z)
+> criteria <- factor(rep("retain", length(z)), levels=c("retain", "reject"))
+> criteria[which(z < qnorm(.05))] <- "reject"
+> qplot(z,Density, geom=c("path","area"), fill=criteria) +
+> scale_fill_manual(values=c("grey40", "red"))
+
+Here's how I'd do it.  I don't know if it's much of an improvement,
+but at least the final example shows you how to do the two-tailed
+case:
+
+library(ggplot2)
+df <- data.frame(z = seq(-4, 4, length = 100))
+
+base <- qplot(z, dnorm(z), data = df, geom = "area")
+
+base + geom_area(data = subset(df, z < qnorm(0.05)), fill = "red")
+base + geom_area(data = subset(df, z > qnorm(0.95)), fill = "red")
+base + geom_area(aes(group = sign(z)),
+  data = subset(df, abs(z) > qnorm(1 - 0.05 / 2)), fill = "red")
+
+-- 
+http://had.co.nz/
+
+
+
+From landronimirc at gmail.com  Thu Jun 25 11:20:44 2009
+From: landronimirc at gmail.com (Liviu Andronic)
+Date: Thu, 25 Jun 2009 11:20:44 +0200
+Subject: [R-sig-teaching] Graph critical region
+In-Reply-To: <4A4133B9020000A600050897@uct5.uct.usm.maine.edu>
+References: <4A4133B9020000A600050897@uct5.uct.usm.maine.edu>
+Message-ID: <68b1e2610906250220p1cc18fcfy4c5d0d0100783486@mail.gmail.com>
+
+Hello,
+
+On 6/24/09, AbouEl-Makarim Aboueissa <aaboueissa at usm.maine.edu> wrote:
+>  I need some help with graphing the critical regions of hypothesis testing.
+>
+I may also do this with RcmdrPlugin.HH.
+Liviu
+
+
+
+From aaboueissa at usm.maine.edu  Mon Jun 29 16:32:04 2009
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Mon, 29 Jun 2009 10:32:04 -0400
+Subject: [R-sig-teaching] T-test
+Message-ID: <4A489823.01BB.00A6.1@usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090629/ad2ae261/attachment.pl>
+
+From maechler at stat.math.ethz.ch  Mon Jun 29 16:55:10 2009
+From: maechler at stat.math.ethz.ch (Martin Maechler)
+Date: Mon, 29 Jun 2009 16:55:10 +0200
+Subject: [R-sig-teaching] T-test
+In-Reply-To: <4A489823.01BB.00A6.1@usm.maine.edu>
+References: <4A489823.01BB.00A6.1@usm.maine.edu>
+Message-ID: <19016.54734.475087.876553@lynne.math.ethz.ch>
+
+Wrong Mailing List !!
+
+Please use R-help  for R questions!
+
+------------------------------
+
+>>>>> "AA" == AbouEl-Makarim Aboueissa <aaboueissa at usm.maine.edu>
+>>>>>     on Mon, 29 Jun 2009 10:32:04 -0400 writes:
+
+    AA> Dear All:
+
+    AA> I hope that this message finds you well.
+
+
+    AA> I need some helps with t-test in R.
+
+    AA> Assume I have the following data sets:
+
+...................
+
+    AA> What I need to do is to use the t-test (two-independent
+    AA> samples) to compare each pairs.
+
+
+
+    AA> For examples:
+
+    AA> X1 versus X2 X1 versus X3 ..  ..  ..  X1 versus X8
+
+    AA> and
+
+    AA> X2 versus X3 X2 versus X4 ..  ..  ..  X2 versus X8
+
+    AA> and so on.
+
+
+
+    AA> My question: Is there away in R to do this in one step
+    AA> instead of doing it in many steps (pairs by pairs)?
+
+
+    AA> With many thanks.
+
+
+    AA>  Abou
+
+
+    AA> ========================== AbouEl-Makarim Aboueissa,
+    AA> Ph.D.  Assistant Professor of Statistics Department of
+    AA> Mathematics & Statistics University of Southern Maine 96
+    AA> Falmouth Street P.O. Box 9300 Portland, ME 04104-9300
+    AA> USA
+
+
+    AA> Tel: (207) 228-8389 Fax: (207) 780-5607 Email:
+    AA> aaboueissa at usm.maine.edu aboueiss at yahoo.com
+
+    AA> Web address: http://www.usm.maine.edu/~aaboueissa/
+
+    AA> Office: 301C Payson Smith
+
+
+    AA> 	[[alternative HTML version deleted]]
+
+    AA> _______________________________________________
+    AA> R-sig-teaching at r-project.org mailing list
+    AA> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+From landronimirc at gmail.com  Tue Jun 30 08:51:35 2009
+From: landronimirc at gmail.com (Liviu Andronic)
+Date: Tue, 30 Jun 2009 08:51:35 +0200
+Subject: [R-sig-teaching] T-test
+In-Reply-To: <19016.54734.475087.876553@lynne.math.ethz.ch>
+References: <4A489823.01BB.00A6.1@usm.maine.edu>
+	<19016.54734.475087.876553@lynne.math.ethz.ch>
+Message-ID: <68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>
+
+On 6/29/09, Martin Maechler <maechler at stat.math.ethz.ch> wrote:
+> Wrong Mailing List !!
+>
+>  Please use R-help  for R questions!
+>
+<skip>
+>     AA> Assume I have the following data sets:
+>
+Also, please send reproducible code with dummy data. Assuming the data
+is too abstract to think of a solution; and you haven't even mentioned
+the exact R function that you wanted to use.
+Best regards,
+Liviu
+
+
+
+From hayden at mv.mv.com  Tue Jun 30 13:32:49 2009
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Tue, 30 Jun 2009 07:32:49 -0400 (EDT)
+Subject: [R-sig-teaching] purpose of list
+In-Reply-To: <68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com> from
+	"Liviu Andronic" at Jun 30, 2009 08:51:35 AM
+Message-ID: <20090630113249.90610.qmail@mv.mv.com>
+
+
+I had some minor role in the creation of this list.  At times I have
+complained that members have been too harsh in redirecting queries
+whose proper home seemed to me debatable.  But as time has gone on I
+have to admit that too much (most?) of the traffic on this list is
+about how to make R work rather than how to use it in education.  So,
+trying to think positively, let me toss out some general EDUCATIONAL
+questions.  How are people using R for educational purposes?  What do
+people think of the various GUI or alternate (e.g., spreadsheet)
+interfaces?  Is there anything that makes R as easy to use for
+beginners as, say, Minitab?  What about using R for educational
+simulations?  Is R the tool for replacing what George Cobb calls a
+"Ptolemaic curriculum"?
+
+       http://repositories.cdlib.org/uclastat/cts/tise/vol1/iss1/art1/ 
+
+If anyone wants to respond it might help to briefly describe your
+student audience.  While I am attracted to the power of R, many of the
+folks who ask me about R are attracted by the price.  That is
+especially important in a number of contexts I work with:
+
+
+my own online courses where we have no computer labs for
+students who must get their own software, often paying full
+single-copy prices
+
+public high schools in the U.S. where student computer access at
+school is limited and it is very helpful to give students something
+they can install on a computer at home
+
+people teaching in less wealthy nations
+
+
+> On 6/29/09, Martin Maechler <maechler at stat.math.ethz.ch> wrote:
+> > Wrong Mailing List !!
+> >
+> >  Please use R-help  for R questions!
+> >
+> <skip>
+> >     AA> Assume I have the following data sets:
+> >
+> Also, please send reproducible code with dummy data. Assuming the data
+> is too abstract to think of a solution; and you haven't even mentioned
+> the exact R function that you wanted to use.
+> Best regards,
+> Liviu
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+
+ http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+	    
+  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)
+  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      
+  email  bob statland.org  (add your own "@" and save me some spam)
+
+
+
+From mdw at purdue.edu  Tue Jun 30 14:42:33 2009
+From: mdw at purdue.edu (Mark Daniel Ward)
+Date: Tue, 30 Jun 2009 08:42:33 -0400
+Subject: [R-sig-teaching] purpose of list
+In-Reply-To: <20090630113249.90610.qmail@mv.mv.com>
+References: <20090630113249.90610.qmail@mv.mv.com>
+Message-ID: <4A4A0839.9040605@purdue.edu>
+
+Dear Bob,
+    Thank you for your question to the list.  I'm using R to teach 
+courses on Computing with Data.  I am in the Department of Statistics at 
+Purdue University (in West Lafayette, Indiana, USA), although of course 
+my opinion does not represent our entire department.
+    I believe that R is a great tool for teaching undergraduates and 
+graduate students.  I teach these Computing with Data classes at both 
+levels.  As you might guess from the title, I do not focus on 
+statistical methods, but instead I focus on the ability to manipulate 
+data that is very large and thus cannot be handled by less-powerful 
+software.
+    It might be helpful to note that I teach R alongside other 
+technologies (in the same course), including UNIX tools, bash shell 
+scripting, regular expressions, SQL, XML, and a brief introduction to 
+Perl....  although R remains the main topic in my course.  I spend about 
+1/3 of the time in the course on R.
+    Our students are fortunate to have access to other software, 
+including (for instance) S-PLUS, but I really enjoy using open source 
+technologies in my classes to the greatest possible extent.
+    I hope that helps give a perspective about one use of R in the 
+classroom.
+Mark
+
+
+
+Robert W. Hayden wrote:
+> I had some minor role in the creation of this list.  At times I have
+> complained that members have been too harsh in redirecting queries
+> whose proper home seemed to me debatable.  But as time has gone on I
+> have to admit that too much (most?) of the traffic on this list is
+> about how to make R work rather than how to use it in education.  So,
+> trying to think positively, let me toss out some general EDUCATIONAL
+> questions.  How are people using R for educational purposes?  What do
+> people think of the various GUI or alternate (e.g., spreadsheet)
+> interfaces?  Is there anything that makes R as easy to use for
+> beginners as, say, Minitab?  What about using R for educational
+> simulations?  Is R the tool for replacing what George Cobb calls a
+> "Ptolemaic curriculum"?
+>
+>        http://repositories.cdlib.org/uclastat/cts/tise/vol1/iss1/art1/ 
+>
+> If anyone wants to respond it might help to briefly describe your
+> student audience.  While I am attracted to the power of R, many of the
+> folks who ask me about R are attracted by the price.  That is
+> especially important in a number of contexts I work with:
+>
+>
+> my own online courses where we have no computer labs for
+> students who must get their own software, often paying full
+> single-copy prices
+>
+> public high schools in the U.S. where student computer access at
+> school is limited and it is very helpful to give students something
+> they can install on a computer at home
+>
+> people teaching in less wealthy nations
+>
+>
+>   
+>> On 6/29/09, Martin Maechler <maechler at stat.math.ethz.ch> wrote:
+>>     
+>>> Wrong Mailing List !!
+>>>
+>>>  Please use R-help  for R questions!
+>>>
+>>>       
+>> <skip>
+>>     
+>>>     AA> Assume I have the following data sets:
+>>>
+>>>       
+>> Also, please send reproducible code with dummy data. Assuming the data
+>> is too abstract to think of a solution; and you haven't even mentioned
+>> the exact R function that you wanted to use.
+>> Best regards,
+>> Liviu
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>>     
+>
+>
+> ------->  First-time AP Stats. teacher?  Help is on the way! See
+>
+>  http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+> 	    
+>   Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)
+>   North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      
+>   email  bob statland.org  (add your own "@" and save me some spam)
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+
+
+
+From landronimirc at gmail.com  Tue Jun 30 15:18:40 2009
+From: landronimirc at gmail.com (Liviu Andronic)
+Date: Tue, 30 Jun 2009 15:18:40 +0200
+Subject: [R-sig-teaching] purpose of list
+In-Reply-To: <20090630113249.90610.qmail@mv.mv.com>
+References: <68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com> 
+	<20090630113249.90610.qmail@mv.mv.com>
+Message-ID: <68b1e2610906300618v1f4192b9s80f3c6b36db553df@mail.gmail.com>
+
+Dear Robert,
+
+On Tue, Jun 30, 2009 at 1:32 PM, Robert W. Hayden<hayden at mv.mv.com> wrote:
+> questions. ?How are people using R for educational purposes? ?What do
+> people think of the various GUI or alternate (e.g., spreadsheet)
+> interfaces? ?Is there anything that makes R as easy to use for
+> beginners as, say, Minitab? ?What about using R for educational
+>
+I am not sure that this is a proper answer to your e-mail, but I will
+mention a recent discussion [1] on r-sig-gui that would---I
+believe---also be interesting to this list. It is about Deducer [2], a
+new R-GUI built on top of JGR [3], intended to be in some respects
+similar to SPSS or Minitab.
+
+Personally, as a student and a self-taught novice in R, I believe that
+JGR and Rcmdr are individually (and combined) most helpful to
+beginners in grasping the basics of R, of course apart from the
+introductory web sites [4] and beginner-friendly documentation. There
+is also playwith [5] for graphics manipulation. I'd be keen to add
+Deducer on the list, when the project matures.
+Departing from the "doing statistics" objective, LyX [6] is most
+helpful in writing Sweave reports without the additional burden of
+(properly) learning LaTeX.
+One important note is that all the mentioned applications are
+cross-platform, and relatively easy to install.
+
+Best regards,
+Liviu
+
+[1] http://www.mail-archive.com/r-sig-gui at stat.math.ethz.ch/msg00465.html
+[2] http://cran.r-project.org/web/packages/Deducer/index.html
+[3] http://cran.r-project.org/web/packages/JGR/index.html
+[4] http://www.statmethods.net/
+[5] http://cran.r-project.org/web/packages/playwith/index.html
+[6] http://www.lyx.org/
+
+
+
+From myotisone at gmail.com  Tue Jun 30 19:12:37 2009
+From: myotisone at gmail.com (Graham Smith)
+Date: Tue, 30 Jun 2009 18:12:37 +0100
+Subject: [R-sig-teaching] purpose of list
+In-Reply-To: <20090630113249.90610.qmail@mv.mv.com>
+References: <68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>
+	<20090630113249.90610.qmail@mv.mv.com>
+Message-ID: <2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>
+
+Rob,
+
+> ?Is there anything that makes R as easy to use for
+> beginners as, say, Minitab?
+
+As a casual observation I am now in my third year of teaching basic
+statistics to biology/ecology students with a mix of Minitab and R.
+Outside the formal teaching, I have used R with selected students for
+6 or 7 years (students who want to work at home, students with
+Macs/Linux at home, and my personal dissertation students).
+
+ In the first year I use Minitab and in the second year I use R.
+Classes are around 30 students in first year and 20 in second year.
+
+In all three years, unprompted by me, I have had between five and
+seven students come to me after the R sessions asking why we hadn't
+used R in first year. They find the command line more direct and
+immediate than Mintab, which, it seems, they had found confusing. This
+year I asked the whole  2nd year class to vote on whether they would
+have preferred R to Mintab in 1st year. Everyone voted for R.
+
+This year I also offered R sessions to the first year, in addition to
+the Minitab sessions. Six people came to these sessions and all used R
+in preference to Mintab for the later marked assignments. They could
+have used either program. Again they all said they would rather have
+used R for the main teaching sessions.
+
+Next year I am dropping Mintab,and switching to R, but three points.
+
+1. We only have a very limited tme for the stats and only do very
+simple things, which are easy in R.
+2. The stumbling block in changing to R has not been the students, but
+the staff, who don't want to learn a command line stats program, and
+are confident the students "won't like it" BUT SPSS license are up for
+renewal, staff seemed reassured by my anecdotal evidence for students
+liking R and now a days almost everyone seems to know someone in their
+field who is using R, or teaching with R. So a switch to R as the
+standard looks on the cards.
+3. But, we are re-organising and merging with the School of Social
+Sciences who I understand are super glued to SPSS, so it may be
+interesting to see what happens.
+
+Graham
+
+BTW I do introduce Rcmdr and BiodiversityR to the students so they
+know there are GUI alternatives if they get stuck, and some do use
+these, but most seem to simply email me the code to sort out where
+they have gone wrong.
+
+
+
+From h.wickham at gmail.com  Tue Jun 30 19:53:57 2009
+From: h.wickham at gmail.com (hadley wickham)
+Date: Tue, 30 Jun 2009 12:53:57 -0500
+Subject: [R-sig-teaching] purpose of list
+In-Reply-To: <2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>
+References: <68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>
+	<20090630113249.90610.qmail@mv.mv.com>
+	<2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>
+Message-ID: <f8e6ff050906301053j78de98e8lcade226dea28ac4e@mail.gmail.com>
+
+> As a casual observation I am now in my third year of teaching basic
+> statistics to biology/ecology students with a mix of Minitab and R.
+> Outside the formal teaching, I have used R with selected students for
+> 6 or 7 years (students who want to work at home, students with
+> Macs/Linux at home, and my personal dissertation students).
+>
+> ?In the first year I use Minitab and in the second year I use R.
+> Classes are around 30 students in first year and 20 in second year.
+>
+> In all three years, unprompted by me, I have had between five and
+> seven students come to me after the R sessions asking why we hadn't
+> used R in first year. They find the command line more direct and
+> immediate than Mintab, which, it seems, they had found confusing. This
+> year I asked the whole ?2nd year class to vote on whether they would
+> have preferred R to Mintab in 1st year. Everyone voted for R.
+
+This matches my experience in a course which I taught both Excel and
+R.  Most students preferred R because it was much harder to follow
+what I was doing in the GUI - where exactly was I clicking, was it a
+right or left click, etc.  With R you see everything I type and it's
+very easier to reproduce.  It's also much faster and easier to produce
+a page of commented R code that allows students to reproduce all the
+important steps, compared to recording a screencast to show the steps
+in Excel.
+
+Hadley
+
+-- 
+http://had.co.nz/
+
+
+
+From mdw at purdue.edu  Tue Jun 30 19:58:35 2009
+From: mdw at purdue.edu (Mark Daniel Ward)
+Date: Tue, 30 Jun 2009 13:58:35 -0400
+Subject: [R-sig-teaching] purpose of list
+In-Reply-To: <f8e6ff050906301053j78de98e8lcade226dea28ac4e@mail.gmail.com>
+References: <68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>	<20090630113249.90610.qmail@mv.mv.com>	<2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>
+	<f8e6ff050906301053j78de98e8lcade226dea28ac4e@mail.gmail.com>
+Message-ID: <4A4A524B.1070307@purdue.edu>
+
+I'll follow-up on Hadley's comment by noting that I always post the 
+complete R transcript of our class session, so that the students can 
+download it and use it.  I also add lots and lots of comments to the 
+file (after class is over), so that they can remember what we did in 
+class.  They seem to like this feature of my class.
+Mark
+
+
+
+hadley wickham wrote:
+>> As a casual observation I am now in my third year of teaching basic
+>> statistics to biology/ecology students with a mix of Minitab and R.
+>> Outside the formal teaching, I have used R with selected students for
+>> 6 or 7 years (students who want to work at home, students with
+>> Macs/Linux at home, and my personal dissertation students).
+>>
+>>  In the first year I use Minitab and in the second year I use R.
+>> Classes are around 30 students in first year and 20 in second year.
+>>
+>> In all three years, unprompted by me, I have had between five and
+>> seven students come to me after the R sessions asking why we hadn't
+>> used R in first year. They find the command line more direct and
+>> immediate than Mintab, which, it seems, they had found confusing. This
+>> year I asked the whole  2nd year class to vote on whether they would
+>> have preferred R to Mintab in 1st year. Everyone voted for R.
+>>     
+>
+> This matches my experience in a course which I taught both Excel and
+> R.  Most students preferred R because it was much harder to follow
+> what I was doing in the GUI - where exactly was I clicking, was it a
+> right or left click, etc.  With R you see everything I type and it's
+> very easier to reproduce.  It's also much faster and easier to produce
+> a page of commented R code that allows students to reproduce all the
+> important steps, compared to recording a screencast to show the steps
+> in Excel.
+>
+> Hadley
+>
+>
+
+
+
+From myotisone at gmail.com  Tue Jun 30 20:16:52 2009
+From: myotisone at gmail.com (Graham Smith)
+Date: Tue, 30 Jun 2009 19:16:52 +0100
+Subject: [R-sig-teaching] purpose of list
+In-Reply-To: <4A4A524B.1070307@purdue.edu>
+References: <68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>
+	<20090630113249.90610.qmail@mv.mv.com>
+	<2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>
+	<f8e6ff050906301053j78de98e8lcade226dea28ac4e@mail.gmail.com>
+	<4A4A524B.1070307@purdue.edu>
+Message-ID: <2c75873c0906301116q7332f0bakb5b25cf01187e00f@mail.gmail.com>
+
+Hadley /Mark
+
+Mark Daniel Ward wrote:
+> I'll follow-up on Hadley's comment by noting that I always post the complete
+> R transcript of our class session, so that the students can download it and
+> use it. ?I also add lots and lots of comments to the file (after class is
+> over), so that they can remember what we did in class. ?They seem to like
+> this feature of my class.
+
+
+> hadley wickham wrote:
+>> This matches my experience in a course which I taught both Excel and
+>> R. ?Most students preferred R because it was much harder to follow
+>> what I was doing in the GUI - where exactly was I clicking, was it a
+>> right or left click, etc. ?With R you see everything I type and it's
+>> very easier to reproduce. ?It's also much faster and easier to produce
+>> a page of commented R code that allows students to reproduce all the
+>> important steps, compared to recording a screencast to show the steps
+>> in Excel.
+
+I'm glad to see my experience isn't unique.
+
+I find the ability to email me a bit of code that isn't working a
+fanatastic feature for me. It has always been a nightmare trying to
+diagnose via email what some one is doing wrong with Minitab/Excel.
+
+Graham
+
+
+
+From h.wickham at gmail.com  Tue Jun 30 20:25:55 2009
+From: h.wickham at gmail.com (hadley wickham)
+Date: Tue, 30 Jun 2009 13:25:55 -0500
+Subject: [R-sig-teaching] purpose of list
+In-Reply-To: <4A4A524B.1070307@purdue.edu>
+References: <68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>
+	<20090630113249.90610.qmail@mv.mv.com>
+	<2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>
+	<f8e6ff050906301053j78de98e8lcade226dea28ac4e@mail.gmail.com>
+	<4A4A524B.1070307@purdue.edu>
+Message-ID: <f8e6ff050906301125w465f5e22yaaa615c536686ad3@mail.gmail.com>
+
+I used to do before I became depressed by the huge number of mistakes
+I made!  Now I tend to come up with the commented R code first, then
+build the lecture around that.  I'll still do some live exploratory
+programming, but all the important stuff will be available online.
+
+Hadley
+
+On Tue, Jun 30, 2009 at 12:58 PM, Mark Daniel Ward<mdw at purdue.edu> wrote:
+> I'll follow-up on Hadley's comment by noting that I always post the complete
+> R transcript of our class session, so that the students can download it and
+> use it. ?I also add lots and lots of comments to the file (after class is
+> over), so that they can remember what we did in class. ?They seem to like
+> this feature of my class.
+> Mark
+>
+>
+>
+> hadley wickham wrote:
+>>>
+>>> As a casual observation I am now in my third year of teaching basic
+>>> statistics to biology/ecology students with a mix of Minitab and R.
+>>> Outside the formal teaching, I have used R with selected students for
+>>> 6 or 7 years (students who want to work at home, students with
+>>> Macs/Linux at home, and my personal dissertation students).
+>>>
+>>> ?In the first year I use Minitab and in the second year I use R.
+>>> Classes are around 30 students in first year and 20 in second year.
+>>>
+>>> In all three years, unprompted by me, I have had between five and
+>>> seven students come to me after the R sessions asking why we hadn't
+>>> used R in first year. They find the command line more direct and
+>>> immediate than Mintab, which, it seems, they had found confusing. This
+>>> year I asked the whole ?2nd year class to vote on whether they would
+>>> have preferred R to Mintab in 1st year. Everyone voted for R.
+>>>
+>>
+>> This matches my experience in a course which I taught both Excel and
+>> R. ?Most students preferred R because it was much harder to follow
+>> what I was doing in the GUI - where exactly was I clicking, was it a
+>> right or left click, etc. ?With R you see everything I type and it's
+>> very easier to reproduce. ?It's also much faster and easier to produce
+>> a page of commented R code that allows students to reproduce all the
+>> important steps, compared to recording a screencast to show the steps
+>> in Excel.
+>>
+>> Hadley
+>>
+>>
+>
+
+
+
+-- 
+http://had.co.nz/
+
+
+
+From mdw at purdue.edu  Tue Jun 30 20:29:35 2009
+From: mdw at purdue.edu (Mark Daniel Ward)
+Date: Tue, 30 Jun 2009 14:29:35 -0400
+Subject: [R-sig-teaching] purpose of list
+In-Reply-To: <f8e6ff050906301125w465f5e22yaaa615c536686ad3@mail.gmail.com>
+References: <68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>	
+	<20090630113249.90610.qmail@mv.mv.com>	
+	<2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>	
+	<f8e6ff050906301053j78de98e8lcade226dea28ac4e@mail.gmail.com>	
+	<4A4A524B.1070307@purdue.edu>
+	<f8e6ff050906301125w465f5e22yaaa615c536686ad3@mail.gmail.com>
+Message-ID: <4A4A598F.5070108@purdue.edu>
+
+Dear Hadley,
+    Yes, yes, I make lots and lots of mistakes too.  I do everything 
+"live", in front of the students.  (I think that it makes them happy to 
+see the professor making some mistakes, because they see that everyone 
+makes mistakes from time to time!)
+    After the lecture is over, while I am adding lots of comments, I 
+also take the time to correct any mistakes that I made.  This process 
+took a LOT of time the first time that I did it, but I think that it was 
+worthwhile.  I'm weighing whether to do it again this fall.....  and I 
+think that I will.  It should be easier the second time around.
+Mark
+
+
+
+hadley wickham wrote:
+> I used to do before I became depressed by the huge number of mistakes
+> I made!  Now I tend to come up with the commented R code first, then
+> build the lecture around that.  I'll still do some live exploratory
+> programming, but all the important stuff will be available online.
+>
+> Hadley
+>
+> On Tue, Jun 30, 2009 at 12:58 PM, Mark Daniel Ward<mdw at purdue.edu> wrote:
+>   
+>> I'll follow-up on Hadley's comment by noting that I always post the complete
+>> R transcript of our class session, so that the students can download it and
+>> use it.  I also add lots and lots of comments to the file (after class is
+>> over), so that they can remember what we did in class.  They seem to like
+>> this feature of my class.
+>> Mark
+>>
+>>
+>>
+>> hadley wickham wrote:
+>>     
+>>>> As a casual observation I am now in my third year of teaching basic
+>>>> statistics to biology/ecology students with a mix of Minitab and R.
+>>>> Outside the formal teaching, I have used R with selected students for
+>>>> 6 or 7 years (students who want to work at home, students with
+>>>> Macs/Linux at home, and my personal dissertation students).
+>>>>
+>>>>  In the first year I use Minitab and in the second year I use R.
+>>>> Classes are around 30 students in first year and 20 in second year.
+>>>>
+>>>> In all three years, unprompted by me, I have had between five and
+>>>> seven students come to me after the R sessions asking why we hadn't
+>>>> used R in first year. They find the command line more direct and
+>>>> immediate than Mintab, which, it seems, they had found confusing. This
+>>>> year I asked the whole  2nd year class to vote on whether they would
+>>>> have preferred R to Mintab in 1st year. Everyone voted for R.
+>>>>
+>>>>         
+>>> This matches my experience in a course which I taught both Excel and
+>>> R.  Most students preferred R because it was much harder to follow
+>>> what I was doing in the GUI - where exactly was I clicking, was it a
+>>> right or left click, etc.  With R you see everything I type and it's
+>>> very easier to reproduce.  It's also much faster and easier to produce
+>>> a page of commented R code that allows students to reproduce all the
+>>> important steps, compared to recording a screencast to show the steps
+>>> in Excel.
+>>>
+>>> Hadley
+>>>
+>>>
+>>>       
+>
+>
+>
+>
+
+
+
+From mdw at purdue.edu  Tue Jun 30 20:34:20 2009
+From: mdw at purdue.edu (Mark Daniel Ward)
+Date: Tue, 30 Jun 2009 14:34:20 -0400
+Subject: [R-sig-teaching] purpose of list
+In-Reply-To: <2c75873c0906301116q7332f0bakb5b25cf01187e00f@mail.gmail.com>
+References: <68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>	<20090630113249.90610.qmail@mv.mv.com>	<2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>	<f8e6ff050906301053j78de98e8lcade226dea28ac4e@mail.gmail.com>	<4A4A524B.1070307@purdue.edu>
+	<2c75873c0906301116q7332f0bakb5b25cf01187e00f@mail.gmail.com>
+Message-ID: <4A4A5AAC.2080409@purdue.edu>
+
+Dear Graham,
+    Actually, I love to communicate with the students by email, but I 
+find it a nightmare when they email me any code!  Sometimes a 1-minute 
+verbal explanation will take several paragraphs to clarify by email.
+    I try to be available almost all of the time in my office, so that 
+they can drop by with occasional questions, even outside of office 
+hours.  I also use a once-per-week lab session to answer questions, and 
+I've noticed that the students talk to each other during such labs..... 
+and they frequently answer each other's questions, which is a blessing.
+Mark
+
+
+
+Graham Smith wrote:
+> Hadley /Mark
+>
+> Mark Daniel Ward wrote:
+>   
+>> I'll follow-up on Hadley's comment by noting that I always post the complete
+>> R transcript of our class session, so that the students can download it and
+>> use it.  I also add lots and lots of comments to the file (after class is
+>> over), so that they can remember what we did in class.  They seem to like
+>> this feature of my class.
+>>     
+>
+>
+>   
+>> hadley wickham wrote:
+>>     
+>>> This matches my experience in a course which I taught both Excel and
+>>> R.  Most students preferred R because it was much harder to follow
+>>> what I was doing in the GUI - where exactly was I clicking, was it a
+>>> right or left click, etc.  With R you see everything I type and it's
+>>> very easier to reproduce.  It's also much faster and easier to produce
+>>> a page of commented R code that allows students to reproduce all the
+>>> important steps, compared to recording a screencast to show the steps
+>>> in Excel.
+>>>       
+>
+> I'm glad to see my experience isn't unique.
+>
+> I find the ability to email me a bit of code that isn't working a
+> fanatastic feature for me. It has always been a nightmare trying to
+> diagnose via email what some one is doing wrong with Minitab/Excel.
+>
+> Graham
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+From jones at reed.edu  Tue Jun 30 20:35:43 2009
+From: jones at reed.edu (Albyn Jones)
+Date: Tue, 30 Jun 2009 11:35:43 -0700
+Subject: [R-sig-teaching] purpose of list
+In-Reply-To: <4A4A598F.5070108@purdue.edu>
+References: <68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>
+	<20090630113249.90610.qmail@mv.mv.com>
+	<2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>
+	<f8e6ff050906301053j78de98e8lcade226dea28ac4e@mail.gmail.com>
+	<4A4A524B.1070307@purdue.edu>
+	<f8e6ff050906301125w465f5e22yaaa615c536686ad3@mail.gmail.com>
+	<4A4A598F.5070108@purdue.edu>
+Message-ID: <20090630183543.GB9687@laplace.reed.edu>
+
+On Tue, Jun 30, 2009 at 02:29:35PM -0400, Mark Daniel Ward wrote:
+> Dear Hadley,
+>    Yes, yes, I make lots and lots of mistakes too.  I do everything "live", 
+> in front of the students.  (I think that it makes them happy to see the 
+> professor making some mistakes, because they see that everyone makes 
+> mistakes from time to time!)
+>    After the lecture is over, while I am adding lots of comments, I also 
+> take the time to correct any mistakes that I made.  This process took a LOT 
+> of time the first time that I did it, but I think that it was worthwhile.  
+> I'm weighing whether to do it again this fall.....  and I think that I 
+> will.  It should be easier the second time around.
+> Mark
+
+I have often done exactly the same, and students have expressed their
+appreciation.  They also are likely complain when I don't do this, no
+matter how simple the example presented...
+
+albyn
+
+
+
+From h.wickham at gmail.com  Tue Jun 30 20:44:41 2009
+From: h.wickham at gmail.com (hadley wickham)
+Date: Tue, 30 Jun 2009 13:44:41 -0500
+Subject: [R-sig-teaching] purpose of list
+In-Reply-To: <4A4A5AAC.2080409@purdue.edu>
+References: <68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>
+	<20090630113249.90610.qmail@mv.mv.com>
+	<2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>
+	<f8e6ff050906301053j78de98e8lcade226dea28ac4e@mail.gmail.com>
+	<4A4A524B.1070307@purdue.edu>
+	<2c75873c0906301116q7332f0bakb5b25cf01187e00f@mail.gmail.com>
+	<4A4A5AAC.2080409@purdue.edu>
+Message-ID: <f8e6ff050906301144g2fe4a16dte34619912d656203@mail.gmail.com>
+
+I spent a lot of time focussing on code as communication to make
+electronic interaction as easy as possible.  Personally, I think this
+is very important as the majority of my programming work is in
+collaboration with others spread around the world, who I might see in
+person at most once a year.  I agree with Mark that encouraging
+cooperation within class makes a big difference.  There will usually
+be a few students who catch on really quickly and can help the others
+- a good reason for group projects.
+
+For most homeworks, I printed out their submitted code and marked it
+like you'd mark an essay, with marks for the equivalent of punctuation
+and sentence structure. Little things like indentation make a big
+difference to readability.  It took a few weeks, but the quality of
+their code improved considerably (so did mine!)
+
+Hadley
+
+On Tue, Jun 30, 2009 at 1:34 PM, Mark Daniel Ward<mdw at purdue.edu> wrote:
+> Dear Graham,
+> ? Actually, I love to communicate with the students by email, but I find it
+> a nightmare when they email me any code! ?Sometimes a 1-minute verbal
+> explanation will take several paragraphs to clarify by email.
+> ? I try to be available almost all of the time in my office, so that they
+> can drop by with occasional questions, even outside of office hours. ?I also
+> use a once-per-week lab session to answer questions, and I've noticed that
+> the students talk to each other during such labs..... and they frequently
+> answer each other's questions, which is a blessing.
+> Mark
+>
+>
+>
+> Graham Smith wrote:
+>>
+>> Hadley /Mark
+>>
+>> Mark Daniel Ward wrote:
+>>
+>>>
+>>> I'll follow-up on Hadley's comment by noting that I always post the
+>>> complete
+>>> R transcript of our class session, so that the students can download it
+>>> and
+>>> use it. ?I also add lots and lots of comments to the file (after class is
+>>> over), so that they can remember what we did in class. ?They seem to like
+>>> this feature of my class.
+>>>
+>>
+>>
+>>
+>>>
+>>> hadley wickham wrote:
+>>>
+>>>>
+>>>> This matches my experience in a course which I taught both Excel and
+>>>> R. ?Most students preferred R because it was much harder to follow
+>>>> what I was doing in the GUI - where exactly was I clicking, was it a
+>>>> right or left click, etc. ?With R you see everything I type and it's
+>>>> very easier to reproduce. ?It's also much faster and easier to produce
+>>>> a page of commented R code that allows students to reproduce all the
+>>>> important steps, compared to recording a screencast to show the steps
+>>>> in Excel.
+>>>>
+>>
+>> I'm glad to see my experience isn't unique.
+>>
+>> I find the ability to email me a bit of code that isn't working a
+>> fanatastic feature for me. It has always been a nightmare trying to
+>> diagnose via email what some one is doing wrong with Minitab/Excel.
+>>
+>> Graham
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+-- 
+http://had.co.nz/
+
+
+
+From myotisone at gmail.com  Tue Jun 30 20:46:37 2009
+From: myotisone at gmail.com (Graham Smith)
+Date: Tue, 30 Jun 2009 19:46:37 +0100
+Subject: [R-sig-teaching] purpose of list
+In-Reply-To: <4A4A5AAC.2080409@purdue.edu>
+References: <68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>
+	<20090630113249.90610.qmail@mv.mv.com>
+	<2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>
+	<f8e6ff050906301053j78de98e8lcade226dea28ac4e@mail.gmail.com>
+	<4A4A524B.1070307@purdue.edu>
+	<2c75873c0906301116q7332f0bakb5b25cf01187e00f@mail.gmail.com>
+	<4A4A5AAC.2080409@purdue.edu>
+Message-ID: <2c75873c0906301146h5252c8f8hdc3a9b0ca01e2697@mail.gmail.com>
+
+Mark
+
+> ? Actually, I love to communicate with the students by email, but I find it
+> a nightmare when they email me any code! ?Sometimes a 1-minute verbal
+> explanation will take several paragraphs to clarify by email.
+
+I agree, but
+
+a) I only lecture part time, (I do ecological consultancy the other
+part). I have a "very" flexible office hours, which often don't fit in
+with student hand in dates, so I feel I need to give email support
+b) I also run a part time Masters in Ecological Impact Assessment,
+which relies on teaching being concentrated into five long weekends.
+So email is the only way I can give ongoing support for the statistics
+(or any of the other) parts of the course.
+
+However, I agree with you about email support being a mixed blessing
+and I often find that an hour will have vanished as I try and work out
+the best way of explaining something in writing, which face to face
+would have been relatively simple. But it is still a lot easier with a
+bit of code in front of me instead of vague descriptions about what
+menu steps they followed,  and what boxes they may or may not have
+ticked along the way.  Sending me the data set and the code is, on
+balance, a lot easier.
+
+Graham
+
+
+
+From mdw at purdue.edu  Tue Jun 30 20:46:49 2009
+From: mdw at purdue.edu (Mark Daniel Ward)
+Date: Tue, 30 Jun 2009 14:46:49 -0400
+Subject: [R-sig-teaching] purpose of list
+In-Reply-To: <f8e6ff050906301144g2fe4a16dte34619912d656203@mail.gmail.com>
+References: <68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>	
+	<20090630113249.90610.qmail@mv.mv.com>	
+	<2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>	
+	<f8e6ff050906301053j78de98e8lcade226dea28ac4e@mail.gmail.com>	
+	<4A4A524B.1070307@purdue.edu>	
+	<2c75873c0906301116q7332f0bakb5b25cf01187e00f@mail.gmail.com>	
+	<4A4A5AAC.2080409@purdue.edu>
+	<f8e6ff050906301144g2fe4a16dte34619912d656203@mail.gmail.com>
+Message-ID: <4A4A5D99.7040100@purdue.edu>
+
+I've seen Hadley's rubrics for his assignments.  They are really excellent!
+Mark
+
+
+
+hadley wickham wrote:
+> I spent a lot of time focussing on code as communication to make
+> electronic interaction as easy as possible.  Personally, I think this
+> is very important as the majority of my programming work is in
+> collaboration with others spread around the world, who I might see in
+> person at most once a year.  I agree with Mark that encouraging
+> cooperation within class makes a big difference.  There will usually
+> be a few students who catch on really quickly and can help the others
+> - a good reason for group projects.
+>
+> For most homeworks, I printed out their submitted code and marked it
+> like you'd mark an essay, with marks for the equivalent of punctuation
+> and sentence structure. Little things like indentation make a big
+> difference to readability.  It took a few weeks, but the quality of
+> their code improved considerably (so did mine!)
+>
+> Hadley
+>
+> On Tue, Jun 30, 2009 at 1:34 PM, Mark Daniel Ward<mdw at purdue.edu> wrote:
+>   
+>> Dear Graham,
+>>   Actually, I love to communicate with the students by email, but I find it
+>> a nightmare when they email me any code!  Sometimes a 1-minute verbal
+>> explanation will take several paragraphs to clarify by email.
+>>   I try to be available almost all of the time in my office, so that they
+>> can drop by with occasional questions, even outside of office hours.  I also
+>> use a once-per-week lab session to answer questions, and I've noticed that
+>> the students talk to each other during such labs..... and they frequently
+>> answer each other's questions, which is a blessing.
+>> Mark
+>>
+>>
+>>
+>> Graham Smith wrote:
+>>     
+>>> Hadley /Mark
+>>>
+>>> Mark Daniel Ward wrote:
+>>>
+>>>       
+>>>> I'll follow-up on Hadley's comment by noting that I always post the
+>>>> complete
+>>>> R transcript of our class session, so that the students can download it
+>>>> and
+>>>> use it.  I also add lots and lots of comments to the file (after class is
+>>>> over), so that they can remember what we did in class.  They seem to like
+>>>> this feature of my class.
+>>>>
+>>>>         
+>>>
+>>>       
+>>>> hadley wickham wrote:
+>>>>
+>>>>         
+>>>>> This matches my experience in a course which I taught both Excel and
+>>>>> R.  Most students preferred R because it was much harder to follow
+>>>>> what I was doing in the GUI - where exactly was I clicking, was it a
+>>>>> right or left click, etc.  With R you see everything I type and it's
+>>>>> very easier to reproduce.  It's also much faster and easier to produce
+>>>>> a page of commented R code that allows students to reproduce all the
+>>>>> important steps, compared to recording a screencast to show the steps
+>>>>> in Excel.
+>>>>>
+>>>>>           
+>>> I'm glad to see my experience isn't unique.
+>>>
+>>> I find the ability to email me a bit of code that isn't working a
+>>> fanatastic feature for me. It has always been a nightmare trying to
+>>> diagnose via email what some one is doing wrong with Minitab/Excel.
+>>>
+>>> Graham
+>>>
+>>> _______________________________________________
+>>> R-sig-teaching at r-project.org mailing list
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>>
+>>>       
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>>     
+>
+>
+>
+>
+
+
+
+From jverzani at gmail.com  Tue Jun 30 21:14:30 2009
+From: jverzani at gmail.com (jverzani)
+Date: Tue, 30 Jun 2009 19:14:30 +0000 (UTC)
+Subject: [R-sig-teaching] Teaching with R website
+Message-ID: <loom.20090630T185758-848@post.gmane.org>
+
+I was at the USCOTS conference in Ohio and found myself attending a
+demonstration on the statcrunch software, which I hadn't seen until then. As far
+as it goes the software is fine, but what was very interesting to me was the
+statcrunch.com website. As described there, this is set up to allow easy sharing
+of data sets, code and reports along with surveys etc. There were an enormous
+number of data sets (13000, reports etc. that were posted by instructors and
+students). The site is so successful a publisher now runs it.
+
+I currently put such files on my personal web site for my students to download.
+I have also enjoyed using materials from many other websites, such as those
+discussed in a recent thread. However, I think it might be extremely beneficial
+from a student perspective to have an one spot where they can find the work of
+many people oriented around teaching and learning R. Some site with good search
+abilities, some well chosen organization and a relatively modern look.
+
+I know there are a bunch of interesting web sites for R beyond the main one:
+CRANtastic, the R-Wiki, the graph gallery, ... but none seem oriented towards
+the exchange of data and techniques that are used to teach with R.
+
+Does anyone else think such a resource might be useful to the point where it was
+actually used? Are there other ideas where a common place for such information
+is value added?
+
+If this seems like a good idea, does anyone know if there is some off-the-shelf
+content management system that is well suited towards such?
+
+--John
+
+
+
+From mdw at purdue.edu  Tue Jun 30 21:31:09 2009
+From: mdw at purdue.edu (Mark Daniel Ward)
+Date: Tue, 30 Jun 2009 15:31:09 -0400
+Subject: [R-sig-teaching] Teaching with R website
+In-Reply-To: <loom.20090630T185758-848@post.gmane.org>
+References: <loom.20090630T185758-848@post.gmane.org>
+Message-ID: <4A4A67FD.1070600@purdue.edu>
+
+Dear John,
+    There are a handful of us who are thinking about such resources.  
+There are many possibilities.  Yes, yes, I believe that such resources 
+would be very useful to people who are starting to teach classes in R.  
+Do you have specific suggestions?  I'm sending you a separate PM about this.
+Mark
+
+
+
+
+jverzani wrote:
+> I was at the USCOTS conference in Ohio and found myself attending a
+> demonstration on the statcrunch software, which I hadn't seen until then. As far
+> as it goes the software is fine, but what was very interesting to me was the
+> statcrunch.com website. As described there, this is set up to allow easy sharing
+> of data sets, code and reports along with surveys etc. There were an enormous
+> number of data sets (13000, reports etc. that were posted by instructors and
+> students). The site is so successful a publisher now runs it.
+>
+> I currently put such files on my personal web site for my students to download.
+> I have also enjoyed using materials from many other websites, such as those
+> discussed in a recent thread. However, I think it might be extremely beneficial
+> from a student perspective to have an one spot where they can find the work of
+> many people oriented around teaching and learning R. Some site with good search
+> abilities, some well chosen organization and a relatively modern look.
+>
+> I know there are a bunch of interesting web sites for R beyond the main one:
+> CRANtastic, the R-Wiki, the graph gallery, ... but none seem oriented towards
+> the exchange of data and techniques that are used to teach with R.
+>
+> Does anyone else think such a resource might be useful to the point where it was
+> actually used? Are there other ideas where a common place for such information
+> is value added?
+>
+> If this seems like a good idea, does anyone know if there is some off-the-shelf
+> content management system that is well suited towards such?
+>
+> --John
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+
+
+
+From Greg.Snow at imail.org  Tue Jun 30 23:02:02 2009
+From: Greg.Snow at imail.org (Greg Snow)
+Date: Tue, 30 Jun 2009 15:02:02 -0600
+Subject: [R-sig-teaching] purpose of list
+In-Reply-To: <20090630113249.90610.qmail@mv.mv.com>
+References: <68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>
+	from	"Liviu Andronic" at Jun 30, 2009 08:51:35 AM
+	<20090630113249.90610.qmail@mv.mv.com>
+Message-ID: <B37C0A15B8FB3C468B5BC7EBC7DA14CC62126E9E3F@LP-EXMBVS10.CO.IHC.COM>
+
+My teaching situation is a bit different from the others who have responded so far.  I do teach an occasional class at the university, but my main job is with a group of hospitals and doctors doing their statistics.  As part of that I teach some classes within the hospital system to doctors/nurses/whoever.  These tend to be very different students from the undergrads at the university (anyone else ever had a student use the excuse "I was performing surgery" for missing class?).
+
+These classes are less focused on how to do the stats (they will have me do them for them), but more on the concepts so that they can understand the literature that they read, work with me better in designing studies, and do better at writing/presenting the results.
+
+The university where I teach occasionally uses some web based stats program for the intro class (even simpler than minitab in what it can do).  I keep trying to talk them into using R (through the Excel interface or RCmdr), but so far have made little progress.
+
+In both situations I am not teaching the students how to use R, but I still use it to demonstrate various concepts.  I mostly use simple examples (plots, quick numbers) or those from the TeachingDemos package (that is what it was written for (disclosure of possible conflict of interest in promoting the package: I believe that the package author/maintainer raids my fridge more often than he should)).  Even though the students are not learning R itself, they appreciate the concepts illustrated.  The mainly GUI based illustrations could be written in any language (but using R means that I can customize them and more advanced students can look at the code themselves and learn more).
+
+The R-based code usually does not phase the students even though they have not leaned R themselves yet.  Those that do not understand it just look at the results, but many do understand the main ideas.  For example, at the university, the standard course materials use the 1970 draft lottery as an example for showing scatterplots, correlation, relationships and other concepts.  As a bit of a teaser there is a slide that asks if the relationship could be due to chance (this is before we get into the inference part of the course).  We don't come back and answer that teaser until the last week of class (when we have done hypothesis testing an regression).  But I like to show the students a simple simulation at the time of the teaser with simple code such as:
+
+> out <- replicate(10000, cor( sample(1:366), 1:366 ) )
+> hist(out)
+> sum( abs(out) > 0.18 )
+[1] 5
+> sum( abs(out) > 0.1 )
+[1] 533
+> quantile( out, c(0.025, 0.975) )
+      2.5%      97.5% 
+-0.1021715  0.1003527
+
+It takes less than a minute to explain that 1:366 is the numbers from 1 to 366 and that the sample function randomizes the order.  The replicate function and the rest of the code is fairly self explanatory even for people who don't know any programming, but this example clearly shows that the amount of correlation in the 1970 draft lottery was unlikely due to random chance as well as what values we would expect to see by chance.  Some of the students will stay after class and ask about R, I explain that it is not part of the official class, but that if they are interested here is the website and additional info ...
+
+So, I think that R is a great tool for teaching statistical concepts even when R is not the statistical package being used for the course itself.
+
+
+-- 
+Gregory (Greg) L. Snow Ph.D.
+Statistical Data Center
+Intermountain Healthcare
+greg.snow at imail.org
+801.408.8111
+
+
+> -----Original Message-----
+> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-
+> bounces at r-project.org] On Behalf Of Robert W. Hayden
+> Sent: Tuesday, June 30, 2009 5:33 AM
+> To: Liviu Andronic
+> Cc: R-sig-teaching at r-project.org
+> Subject: Re: [R-sig-teaching] purpose of list
+> 
+> 
+> I had some minor role in the creation of this list.  At times I have
+> complained that members have been too harsh in redirecting queries
+> whose proper home seemed to me debatable.  But as time has gone on I
+> have to admit that too much (most?) of the traffic on this list is
+> about how to make R work rather than how to use it in education.  So,
+> trying to think positively, let me toss out some general EDUCATIONAL
+> questions.  How are people using R for educational purposes?  What do
+> people think of the various GUI or alternate (e.g., spreadsheet)
+> interfaces?  Is there anything that makes R as easy to use for
+> beginners as, say, Minitab?  What about using R for educational
+> simulations?  Is R the tool for replacing what George Cobb calls a
+> "Ptolemaic curriculum"?
+> 
+>        http://repositories.cdlib.org/uclastat/cts/tise/vol1/iss1/art1/
+> 
+> If anyone wants to respond it might help to briefly describe your
+> student audience.  While I am attracted to the power of R, many of the
+> folks who ask me about R are attracted by the price.  That is
+> especially important in a number of contexts I work with:
+> 
+> 
+> my own online courses where we have no computer labs for
+> students who must get their own software, often paying full
+> single-copy prices
+> 
+> public high schools in the U.S. where student computer access at
+> school is limited and it is very helpful to give students something
+> they can install on a computer at home
+> 
+> people teaching in less wealthy nations
+> 
+> 
+> > On 6/29/09, Martin Maechler <maechler at stat.math.ethz.ch> wrote:
+> > > Wrong Mailing List !!
+> > >
+> > >  Please use R-help  for R questions!
+> > >
+> > <skip>
+> > >     AA> Assume I have the following data sets:
+> > >
+> > Also, please send reproducible code with dummy data. Assuming the
+> data
+> > is too abstract to think of a solution; and you haven't even
+> mentioned
+> > the exact R function that you wanted to use.
+> > Best regards,
+> > Liviu
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >
+> 
+> 
+> ------->  First-time AP Stats. teacher?  Help is on the way! See
+> 
+> 
+> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.h
+> tml
+> 
+>   Robert W. Hayden in the old library at  212 Main Street (P. O. Box
+> 450)
+>   North Troy, VT 05859  phone (802) 988-2587  web site
+> http://statland.org/
+>   email  bob statland.org  (add your own "@" and save me some spam)
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+

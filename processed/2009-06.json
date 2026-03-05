@@ -1,0 +1,765 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2009-06",
+  "messages": [
+    {
+      "id": "msg-9b7e548198a0",
+      "message_id": "<4A27C55C.01BB.00A6.1@usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2009-06-04T13:00:13-04:00",
+      "subject": "[R-sig-teaching] Help with graph joint pdf",
+      "subject_clean": "Help with graph joint pdf",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090604/376f6b2b/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090604/376f6b2b/attachment.pl>",
+      "thread_id": "thread-9b7e548198a0",
+      "thread_depth": 0,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-a36c7ef6d87e",
+      "message_id": "<4A27CB17.01BB.00A6.1@usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2009-06-04T13:24:40-04:00",
+      "subject": "[R-sig-teaching] Help with graph joint pdf",
+      "subject_clean": "Help with graph joint pdf",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090604/7d69b266/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090604/7d69b266/attachment.pl>",
+      "thread_id": "thread-a36c7ef6d87e",
+      "thread_depth": 0,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-d89236d0413b",
+      "message_id": "<60be8d9a1998f2db15f8ac3e0f8883ea.squirrel@mail.ccee.edu.uy>",
+      "from_name": "Sebastián Castro",
+      "from_email_hash": "84995a834e820d4b6ab1f52400e84fce757bb05f476a0c06662f7784cba0f299",
+      "date": "2009-06-04T14:35:55-03:00",
+      "subject": "[R-sig-teaching] Help with graph joint pdf",
+      "subject_clean": "Help with graph joint pdf",
+      "in_reply_to": "<4A27CB17.01BB.00A6.1@usm.maine.edu>",
+      "references": [
+        "<4A27CB17.01BB.00A6.1@usm.maine.edu>"
+      ],
+      "body_plain": "I would do it in this way:\n\n###########################################################################\nu=seq(0.0001,1,0.1)\nv=u\nf=outer(u,v, function(u,v) 18*(u/v)*(1-u/v))\nf\nfor (i in 2:length(u)) {\n\tfor (j in 1:(i-1)) {\n\t\tf[i,j]=0\n\t}\n}\nf\n\npersp( u, v, f, phi=30, theta=-30,col='red')\n###########################################################################\n\nSurely you (or someone) have a better solution to share.\n\nSebasti?n.\n\n> Dear All: Please ignore my previous email. I fixed the joint pdf.\n>\n>\n> How I can get the graph of the joint pdf:\n>\n> f(u,v)=18 v (u/v) (1-(u/v))  for 0<u<v and 0<v<1, and 0 otherwise.\n>\n> With many thanks\n>\n> Abou\n>\n>\n> ==========================\n> AbouEl-Makarim Aboueissa, Ph.D.\n> Assistant Professor of Statistics\n> Department of Mathematics & Statistics\n> University of Southern Maine\n> 96 Falmouth Street\n> P.O. Box 9300\n> Portland, ME 04104-9300\n> USA\n>\n>\n> Tel: (207) 228-8389\n> Fax: (207) 780-5607\n> Email: aaboueissa at usm.maine.edu\n>           aboueiss at yahoo.com\n>\n>   http://www.usm.maine.edu/~aaboueissa/\n>\n>\n> Office: 301C Payson Smith\n>\n>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_snippet": "I would do it in this way:\n\n###########################################################################\nu=seq(0.0001,1,0.1)\nv=u\nf=outer(u,v, function(u,v) 18*(u/v)*(1-u/v))\nf\nfor (i in 2:length(u)) {\n",
+      "thread_id": "thread-a36c7ef6d87e",
+      "thread_depth": 1,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-faa7bdc60dd9",
+      "message_id": "<b1d8ec420906050356sb8816cdu8440c8c51230a6b6@mail.gmail.com>",
+      "from_name": "madhu vr",
+      "from_email_hash": "f635b65ef1e0a5ccdc2acd878feadf7e14a1df44ab36b088f851151b47889a08",
+      "date": "2009-06-05T16:26:28+05:30",
+      "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 22, Issue 1",
+      "subject_clean": "R-sig-teaching Digest, Vol 22, Issue 1",
+      "in_reply_to": "<mailman.7.1244196003.23849.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.7.1244196003.23849.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090605/d35fafeb/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090605/d35fafeb/attachment.pl>",
+      "thread_id": "thread-faa7bdc60dd9",
+      "thread_depth": 0,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-9249d782970e",
+      "message_id": "<97af3fa09cd1c10b52182dd808e18b5a.squirrel@mail.ccee.edu.uy>",
+      "from_name": "Sebastián Castro",
+      "from_email_hash": "84995a834e820d4b6ab1f52400e84fce757bb05f476a0c06662f7784cba0f299",
+      "date": "2009-06-05T15:23:44-03:00",
+      "subject": "[R-sig-teaching] Help with graph joint pdf",
+      "subject_clean": "Help with graph joint pdf",
+      "in_reply_to": "<60be8d9a1998f2db15f8ac3e0f8883ea.squirrel@mail.ccee.edu.uy>",
+      "references": [
+        "<4A27CB17.01BB.00A6.1@usm.maine.edu>",
+        "<60be8d9a1998f2db15f8ac3e0f8883ea.squirrel@mail.ccee.edu.uy>"
+      ],
+      "body_plain": "I've found a 'better' solution:\n\n###########################################################################\nu=seq(0.0001,1,0.05)\nv=u\nf=outer(u,v, function(u,v) 18*(u/v)*(1-u/v))*outer(u, v, function(u,v)(u<v))\npersp( u, v, f, phi=30, theta=-30,col='red')\n###########################################################################\n\nSebasti?n.\n\n\n\n\n\n\n> I would do it in this way:\n>\n> ###########################################################################\n> u=seq(0.0001,1,0.1)\n> v=u\n> f=outer(u,v, function(u,v) 18*(u/v)*(1-u/v))\n> f\n> for (i in 2:length(u)) {\n> \tfor (j in 1:(i-1)) {\n> \t\tf[i,j]=0\n> \t}\n> }\n> f\n>\n> persp( u, v, f, phi=30, theta=-30,col='red')\n> ###########################################################################\n>\n> Surely you (or someone) have a better solution to share.\n>\n> Sebasti?n.\n>\n>> Dear All: Please ignore my previous email. I fixed the joint pdf.\n>>\n>>\n>> How I can get the graph of the joint pdf:\n>>\n>> f(u,v)=18 v (u/v) (1-(u/v))  for 0<u<v and 0<v<1, and 0 otherwise.\n>>\n>> With many thanks\n>>\n>> Abou\n>>\n>>\n>> ==========================\n>> AbouEl-Makarim Aboueissa, Ph.D.\n>> Assistant Professor of Statistics\n>> Department of Mathematics & Statistics\n>> University of Southern Maine\n>> 96 Falmouth Street\n>> P.O. Box 9300\n>> Portland, ME 04104-9300\n>> USA\n>>\n>>\n>> Tel: (207) 228-8389\n>> Fax: (207) 780-5607\n>> Email: aaboueissa at usm.maine.edu\n>>           aboueiss at yahoo.com\n>>\n>>   http://www.usm.maine.edu/~aaboueissa/\n>>\n>>\n>> Office: 301C Payson Smith\n>>\n>>\n>> \t[[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_snippet": "I've found a 'better' solution:\n\n###########################################################################\nu=seq(0.0001,1,0.05)\nv=u\nf=outer(u,v, function(u,v) 18*(u/v)*(1-u/v))*outer(u, v, function(",
+      "thread_id": "thread-a36c7ef6d87e",
+      "thread_depth": 2,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-34340d0cca46",
+      "message_id": "<4A2DA66C.7010104@waikato.ac.nz>",
+      "from_name": "Murray Jorgensen",
+      "from_email_hash": "8e2ba5706dbbcc74561b819a2eba19d1d3d7cf60d5f0b85161a3f897f4206f3a",
+      "date": "2009-06-09T12:01:48+12:00",
+      "subject": "[R-sig-teaching] Providing R resources in Moodle",
+      "subject_clean": "Providing R resources in Moodle",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "My university is encouraging the development of on-line course resources\nusing the open-source \"Moodle\" software. I think that it might be a good\nidea to provide some beginner support for R using Moodle. I am very much\na beginner in Moodle so if any members of this list have any experience\nwith this I would be very interested.\n\nRegards,  Murray Jorgensen\n\n-- \nDr Murray Jorgensen      http://www.stats.waikato.ac.nz/Staff/maj.html\nDepartment of Statistics, University of Waikato, Hamilton, New Zealand\nEmail: maj at waikato.ac.nz                                Fax 7 838 4155\nPhone  +64 7 838 4773 wk    Home +64 7 825 0441   Mobile 021 0200 8350",
+      "body_snippet": "My university is encouraging the development of on-line course resources\nusing the open-source \"Moodle\" software. I think that it might be a good\nidea to provide some beginner support for R using Mood",
+      "thread_id": "thread-34340d0cca46",
+      "thread_depth": 0,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-a45e20f424a9",
+      "message_id": "<4A2E7F33.6030800@gmail.com>",
+      "from_name": "Sam Lin",
+      "from_email_hash": "795698da8b6949ad7d75088138df11471c7783cd9153ac7dcebd44d81a1a92ea",
+      "date": "2009-06-10T03:26:43+12:00",
+      "subject": "[R-sig-teaching] Providing R resources in Moodle (Murray Jorgensen)",
+      "subject_clean": "Providing R resources in Moodle (Murray Jorgensen)",
+      "in_reply_to": "<mailman.5.1244541603.14264.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.5.1244541603.14264.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": "Dear Dr. Jorgensen,\n\nI think I can be of some help.\n\nRegards,\nSam\n\n> ----------------------------------------------------------------------\n> \n> Message: 1\n> Date: Tue, 09 Jun 2009 12:01:48 +1200\n> From: Murray Jorgensen <maj at waikato.ac.nz>\n> Subject: [R-sig-teaching] Providing R resources in Moodle\n> To: r-sig-teaching at r-project.org\n> Message-ID: <4A2DA66C.7010104 at waikato.ac.nz>\n> Content-Type: text/plain; charset=ISO-8859-1; format=flowed\n> \n> My university is encouraging the development of on-line course resources\n> using the open-source \"Moodle\" software. I think that it might be a good\n> idea to provide some beginner support for R using Moodle. I am very much\n> a beginner in Moodle so if any members of this list have any experience\n> with this I would be very interested.\n> \n> Regards,  Murray Jorgensen\n> \n\n\n-- \nShih-Min Lin (Sam)\nHoney Research Unit\nDepartment of Biological Sciences\nUniversity of Waikato\nPrivate Bag 3105\nHamilton 3240\nNew Zealand\nTel +64 7 838 4466 Ext 8247\nFax +64 7 838 4324",
+      "body_snippet": "Dear Dr. Jorgensen,\n\nI think I can be of some help.\n\nRegards,\nSam\n\n> ----------------------------------------------------------------------\n> \n> Message: 1\n> Date: Tue, 09 Jun 2009 12:01:48 +1200\n> Fr",
+      "thread_id": "thread-a45e20f424a9",
+      "thread_depth": 0,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-ebbfcb3c26ee",
+      "message_id": "<9a617b890906191536q517b5dbfh231998a8b0fa6864@mail.gmail.com>",
+      "from_name": "kasturi bardhan",
+      "from_email_hash": "2999722f6fb061bfe358b430bcac582f51afebbfbb8fadde3be85a7e6496f77e",
+      "date": "2009-06-20T04:06:28+05:30",
+      "subject": "[R-sig-teaching] CDF for Bivariate Kernel density estimation",
+      "subject_clean": "CDF for Bivariate Kernel density estimation",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090620/4b02c187/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090620/4b02c187/attachment.pl>",
+      "thread_id": "thread-ebbfcb3c26ee",
+      "thread_depth": 0,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-f1c4a1e9fc72",
+      "message_id": "<4A4133B9020000A600050897@uct5.uct.usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2009-06-23T19:57:45-04:00",
+      "subject": "[R-sig-teaching] Graph critical region",
+      "subject_clean": "Graph critical region",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090623/903ee5d9/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090623/903ee5d9/attachment.pl>",
+      "thread_id": "thread-f1c4a1e9fc72",
+      "thread_depth": 0,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-0eaeec8da046",
+      "message_id": "<2E334188614646FA9C0C16B74B456553@DD4XFW31>",
+      "from_name": "Charles Annis, P.E.",
+      "from_email_hash": "6c0b880848f2708ee07c1a1cecf3c5ac9398ba6cbf03d68fd1c028e3ad70c44a",
+      "date": "2009-06-23T21:08:29-04:00",
+      "subject": "[R-sig-teaching] Graph critical region",
+      "subject_clean": "Graph critical region",
+      "in_reply_to": "<4A4133B9020000A600050897@uct5.uct.usm.maine.edu>",
+      "references": [
+        "<4A4133B9020000A600050897@uct5.uct.usm.maine.edu>"
+      ],
+      "body_plain": "This probably should be a FAQ.\n\nYou will find an example (with code) here, along with a bazillion other\nexample of nifty R graphics.\n\nhttp://addictedtor.free.fr/graphiques/thumbs.php\nhttp://addictedtor.free.fr/graphiques/RGraphGallery.php?graph=88\n\n\nCharles Annis, P.E.\n\nCharles.Annis at StatisticalEngineering.com\nphone: 561-352-9699\neFax:  614-455-3265\nhttp://www.StatisticalEngineering.com\n \n\n-----Original Message-----\nFrom: r-sig-teaching-bounces at r-project.org\n[mailto:r-sig-teaching-bounces at r-project.org] On Behalf Of AbouEl-Makarim\nAboueissa\nSent: Tuesday, June 23, 2009 7:58 PM\nTo: R-sig-teaching at r-project.org\nSubject: [R-sig-teaching] Graph critical region\n\nDear All:\n \nI need some help with graphing the critical regions of hypothesis testing.\n \nConsider the Z-test, assume Z=3.2, and alpha=0.05 (that is Z_(a.pha/2)=1.96.\n\n \nThen how to graph the rejection region in the following three cases:\n \nLeft-tailed test\n \n \nRight-tailed test\n \n \nTwo tailed test\n \n \n \nSame for the T-test.\n \n \nThank you so much for your times.\n \nAbou\n \n \n\n\n==========================\nAbouEl-Makarim Aboueissa, Ph.D.\nAssistant Professor of Statistics\nDepartment of Mathematics & Statistics\nUniversity of Southern Maine\n96 Falmouth Street\nP.O. Box 9300\nPortland, ME 04104-9300\n\nTel: (207) 228-8389\nEmail: aaboueissa at usm.maine.edu\n          aboueiss at yahoo.com\nOffice: 301C Payson Smith\n\n\t[[alternative HTML version deleted]]\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "This probably should be a FAQ.\n\nYou will find an example (with code) here, along with a bazillion other\nexample of nifty R graphics.\n\nhttp://addictedtor.free.fr/graphiques/thumbs.php\nhttp://addictedto",
+      "thread_id": "thread-f1c4a1e9fc72",
+      "thread_depth": 1,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-58e42bc205a6",
+      "message_id": "<f55e7cf50906231944s4c5b7817w6f26bf705cd7a21e@mail.gmail.com>",
+      "from_name": "Ista Zahn",
+      "from_email_hash": "098a31f0cc45d6b90198bf3b75e03deed7c570292be352a10b98aeee4bf7012e",
+      "date": "2009-06-23T22:44:30-04:00",
+      "subject": "[R-sig-teaching] Graph critical region",
+      "subject_clean": "Graph critical region",
+      "in_reply_to": "<4A4133B9020000A600050897@uct5.uct.usm.maine.edu>",
+      "references": [
+        "<4A4133B9020000A600050897@uct5.uct.usm.maine.edu>"
+      ],
+      "body_plain": "I've seen quicker ways to do it, but I've been using ggplot2 for this.\nSee examples below.\n\nOn Tue, Jun 23, 2009 at 7:57 PM, AbouEl-Makarim\nAboueissa<aaboueissa at usm.maine.edu> wrote:\n> Dear All:\n>\n> I need some help with graphing the critical regions of hypothesis testing.\n>\n> Consider the Z-test, assume Z=3.2, and alpha=0.05 (that is Z_(a.pha/2)=1.96.\n>\n> Then how to graph the rejection region in the following three cases:\n>\n> Left-tailed test\n\nlibrary(ggplot2)\nz <- seq(-4,4, by = .01)\nDensity <- dnorm(z)\ncriteria <- factor(rep(\"retain\", length(z)), levels=c(\"retain\", \"reject\"))\ncriteria[which(z < qnorm(.05))] <- \"reject\"\nqplot(z,Density, geom=c(\"path\",\"area\"), fill=criteria) +\nscale_fill_manual(values=c(\"grey40\", \"red\"))\n>\n>\n> Right-tailed test\n>\nSame as above except do\ncriteria[which(z > qnorm(.95))] <- \"reject\"\n>\n> Two tailed test\n>\nSorry, haven't figured this one out yet.\n>\n>\n> Same for the T-test.\n\nt <- seq(-4,4, by = .01)\nDensity <- dt(t,df=20)\ncriteria <- factor(rep(\"retain\", length(t)), levels=c(\"retain\", \"reject\"))\ncriteria[which(t > qt(.95,df=20))] <- \"reject\"\nqplot(t,Density, geom=c(\"path\",\"area\"), fill=criteria) +\nscale_fill_manual(values=c(\"grey40\", \"red\"))\n\nHope it helps,\nIsta\n>\n>\n> Thank you so much for your times.\n>\n> Abou\n>\n>\n>\n>\n> ==========================\n> AbouEl-Makarim Aboueissa, Ph.D.\n> Assistant Professor of Statistics\n> Department of Mathematics & Statistics\n> University of Southern Maine\n> 96 Falmouth Street\n> P.O. Box 9300\n> Portland, ME 04104-9300\n>\n> Tel: (207) 228-8389\n> Email: aaboueissa at usm.maine.edu\n> ? ? ? ? ?aboueiss at yahoo.com\n> Office: 301C Payson Smith\n>\n> ? ? ? ?[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_snippet": "I've seen quicker ways to do it, but I've been using ggplot2 for this.\nSee examples below.\n\nOn Tue, Jun 23, 2009 at 7:57 PM, AbouEl-Makarim\nAboueissa<aaboueissa at usm.maine.edu> wrote:\n> Dear All:\n>\n",
+      "thread_id": "thread-f1c4a1e9fc72",
+      "thread_depth": 1,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-3e5b7e0059ee",
+      "message_id": "<f8e6ff050906231958i280092a6p582a021f1772d3e0@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2009-06-23T21:58:20-05:00",
+      "subject": "[R-sig-teaching] Graph critical region",
+      "subject_clean": "Graph critical region",
+      "in_reply_to": "<f55e7cf50906231944s4c5b7817w6f26bf705cd7a21e@mail.gmail.com>",
+      "references": [
+        "<4A4133B9020000A600050897@uct5.uct.usm.maine.edu>",
+        "<f55e7cf50906231944s4c5b7817w6f26bf705cd7a21e@mail.gmail.com>"
+      ],
+      "body_plain": "On Tue, Jun 23, 2009 at 9:44 PM, Ista Zahn<istazahn at gmail.com> wrote:\n> I've seen quicker ways to do it, but I've been using ggplot2 for this.\n> See examples below.\n>\n> On Tue, Jun 23, 2009 at 7:57 PM, AbouEl-Makarim\n> Aboueissa<aaboueissa at usm.maine.edu> wrote:\n>> Dear All:\n>>\n>> I need some help with graphing the critical regions of hypothesis testing.\n>>\n>> Consider the Z-test, assume Z=3.2, and alpha=0.05 (that is Z_(a.pha/2)=1.96.\n>>\n>> Then how to graph the rejection region in the following three cases:\n>>\n>> Left-tailed test\n>\n> library(ggplot2)\n> z <- seq(-4,4, by = .01)\n> Density <- dnorm(z)\n> criteria <- factor(rep(\"retain\", length(z)), levels=c(\"retain\", \"reject\"))\n> criteria[which(z < qnorm(.05))] <- \"reject\"\n> qplot(z,Density, geom=c(\"path\",\"area\"), fill=criteria) +\n> scale_fill_manual(values=c(\"grey40\", \"red\"))\n\nHere's how I'd do it.  I don't know if it's much of an improvement,\nbut at least the final example shows you how to do the two-tailed\ncase:\n\nlibrary(ggplot2)\ndf <- data.frame(z = seq(-4, 4, length = 100))\n\nbase <- qplot(z, dnorm(z), data = df, geom = \"area\")\n\nbase + geom_area(data = subset(df, z < qnorm(0.05)), fill = \"red\")\nbase + geom_area(data = subset(df, z > qnorm(0.95)), fill = \"red\")\nbase + geom_area(aes(group = sign(z)),\n  data = subset(df, abs(z) > qnorm(1 - 0.05 / 2)), fill = \"red\")\n\n-- \nhttp://had.co.nz/",
+      "body_snippet": "On Tue, Jun 23, 2009 at 9:44 PM, Ista Zahn<istazahn at gmail.com> wrote:\n> I've seen quicker ways to do it, but I've been using ggplot2 for this.\n> See examples below.\n>\n> On Tue, Jun 23, 2009 at 7:57",
+      "thread_id": "thread-f1c4a1e9fc72",
+      "thread_depth": 2,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-7efed8d5c3a2",
+      "message_id": "<68b1e2610906250220p1cc18fcfy4c5d0d0100783486@mail.gmail.com>",
+      "from_name": "Liviu Andronic",
+      "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
+      "date": "2009-06-25T11:20:44+02:00",
+      "subject": "[R-sig-teaching] Graph critical region",
+      "subject_clean": "Graph critical region",
+      "in_reply_to": "<4A4133B9020000A600050897@uct5.uct.usm.maine.edu>",
+      "references": [
+        "<4A4133B9020000A600050897@uct5.uct.usm.maine.edu>"
+      ],
+      "body_plain": "Hello,\n\nOn 6/24/09, AbouEl-Makarim Aboueissa <aaboueissa at usm.maine.edu> wrote:\n>  I need some help with graphing the critical regions of hypothesis testing.\n>\nI may also do this with RcmdrPlugin.HH.\nLiviu",
+      "body_snippet": "Hello,\n\nOn 6/24/09, AbouEl-Makarim Aboueissa <aaboueissa at usm.maine.edu> wrote:\n>  I need some help with graphing the critical regions of hypothesis testing.\n>\nI may also do this with RcmdrPlugin.HH",
+      "thread_id": "thread-f1c4a1e9fc72",
+      "thread_depth": 1,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-88c5b4aa2c50",
+      "message_id": "<4A489823.01BB.00A6.1@usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2009-06-29T10:32:04-04:00",
+      "subject": "[R-sig-teaching] T-test",
+      "subject_clean": "T-test",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090629/ad2ae261/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090629/ad2ae261/attachment.pl>",
+      "thread_id": "thread-88c5b4aa2c50",
+      "thread_depth": 0,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-ce5c74308860",
+      "message_id": "<19016.54734.475087.876553@lynne.math.ethz.ch>",
+      "from_name": "Martin Maechler",
+      "from_email_hash": "c2c86f22f78a4ecfe6d0e6b4e2be505a3f5beb0470ea88c903688ac536018a98",
+      "date": "2009-06-29T16:55:10+02:00",
+      "subject": "[R-sig-teaching] T-test",
+      "subject_clean": "T-test",
+      "in_reply_to": "<4A489823.01BB.00A6.1@usm.maine.edu>",
+      "references": [
+        "<4A489823.01BB.00A6.1@usm.maine.edu>"
+      ],
+      "body_plain": "Wrong Mailing List !!\n\nPlease use R-help  for R questions!\n\n------------------------------\n\n>>>>> \"AA\" == AbouEl-Makarim Aboueissa <aaboueissa at usm.maine.edu>\n>>>>>     on Mon, 29 Jun 2009 10:32:04 -0400 writes:\n\n    AA> Dear All:\n\n    AA> I hope that this message finds you well.\n\n\n    AA> I need some helps with t-test in R.\n\n    AA> Assume I have the following data sets:\n\n...................\n\n    AA> What I need to do is to use the t-test (two-independent\n    AA> samples) to compare each pairs.\n\n\n\n    AA> For examples:\n\n    AA> X1 versus X2 X1 versus X3 ..  ..  ..  X1 versus X8\n\n    AA> and\n\n    AA> X2 versus X3 X2 versus X4 ..  ..  ..  X2 versus X8\n\n    AA> and so on.\n\n\n\n    AA> My question: Is there away in R to do this in one step\n    AA> instead of doing it in many steps (pairs by pairs)?\n\n\n    AA> With many thanks.\n\n\n    AA>  Abou\n\n\n    AA> ========================== AbouEl-Makarim Aboueissa,\n    AA> Ph.D.  Assistant Professor of Statistics Department of\n    AA> Mathematics & Statistics University of Southern Maine 96\n    AA> Falmouth Street P.O. Box 9300 Portland, ME 04104-9300\n    AA> USA\n\n\n    AA> Tel: (207) 228-8389 Fax: (207) 780-5607 Email:\n    AA> aaboueissa at usm.maine.edu aboueiss at yahoo.com\n\n    AA> Web address: http://www.usm.maine.edu/~aaboueissa/\n\n    AA> Office: 301C Payson Smith\n\n\n    AA> \t[[alternative HTML version deleted]]\n\n    AA> _______________________________________________\n    AA> R-sig-teaching at r-project.org mailing list\n    AA> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Wrong Mailing List !!\n\nPlease use R-help  for R questions!\n\n------------------------------\n\n>>>>> \"AA\" == AbouEl-Makarim Aboueissa <aaboueissa at usm.maine.edu>\n>>>>>     on Mon, 29 Jun 2009 10:32:04 ",
+      "thread_id": "thread-88c5b4aa2c50",
+      "thread_depth": 1,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-c4280a75b829",
+      "message_id": "<68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>",
+      "from_name": "Liviu Andronic",
+      "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
+      "date": "2009-06-30T08:51:35+02:00",
+      "subject": "[R-sig-teaching] T-test",
+      "subject_clean": "T-test",
+      "in_reply_to": "<19016.54734.475087.876553@lynne.math.ethz.ch>",
+      "references": [
+        "<4A489823.01BB.00A6.1@usm.maine.edu>",
+        "<19016.54734.475087.876553@lynne.math.ethz.ch>"
+      ],
+      "body_plain": "On 6/29/09, Martin Maechler <maechler at stat.math.ethz.ch> wrote:\n> Wrong Mailing List !!\n>\n>  Please use R-help  for R questions!\n>\n<skip>\n>     AA> Assume I have the following data sets:\n>\nAlso, please send reproducible code with dummy data. Assuming the data\nis too abstract to think of a solution; and you haven't even mentioned\nthe exact R function that you wanted to use.\nBest regards,\nLiviu",
+      "body_snippet": "On 6/29/09, Martin Maechler <maechler at stat.math.ethz.ch> wrote:\n> Wrong Mailing List !!\n>\n>  Please use R-help  for R questions!\n>\n<skip>\n>     AA> Assume I have the following data sets:\n>\nAlso, pl",
+      "thread_id": "thread-88c5b4aa2c50",
+      "thread_depth": 2,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-b10080e5ad7d",
+      "message_id": "<20090630113249.90610.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2009-06-30T07:32:49-04:00",
+      "subject": "[R-sig-teaching] purpose of list",
+      "subject_clean": "purpose of list",
+      "in_reply_to": "<68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com> from \"Liviu Andronic\" at Jun 30, 2009 08:51:35 AM",
+      "references": [],
+      "body_plain": "I had some minor role in the creation of this list.  At times I have\ncomplained that members have been too harsh in redirecting queries\nwhose proper home seemed to me debatable.  But as time has gone on I\nhave to admit that too much (most?) of the traffic on this list is\nabout how to make R work rather than how to use it in education.  So,\ntrying to think positively, let me toss out some general EDUCATIONAL\nquestions.  How are people using R for educational purposes?  What do\npeople think of the various GUI or alternate (e.g., spreadsheet)\ninterfaces?  Is there anything that makes R as easy to use for\nbeginners as, say, Minitab?  What about using R for educational\nsimulations?  Is R the tool for replacing what George Cobb calls a\n\"Ptolemaic curriculum\"?\n\n       http://repositories.cdlib.org/uclastat/cts/tise/vol1/iss1/art1/ \n\nIf anyone wants to respond it might help to briefly describe your\nstudent audience.  While I am attracted to the power of R, many of the\nfolks who ask me about R are attracted by the price.  That is\nespecially important in a number of contexts I work with:\n\n\nmy own online courses where we have no computer labs for\nstudents who must get their own software, often paying full\nsingle-copy prices\n\npublic high schools in the U.S. where student computer access at\nschool is limited and it is very helpful to give students something\nthey can install on a computer at home\n\npeople teaching in less wealthy nations\n\n\n> On 6/29/09, Martin Maechler <maechler at stat.math.ethz.ch> wrote:\n> > Wrong Mailing List !!\n> >\n> >  Please use R-help  for R questions!\n> >\n> <skip>\n> >     AA> Assume I have the following data sets:\n> >\n> Also, please send reproducible code with dummy data. Assuming the data\n> is too abstract to think of a solution; and you haven't even mentioned\n> the exact R function that you wanted to use.\n> Best regards,\n> Liviu\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n\n\n------->  First-time AP Stats. teacher?  Help is on the way! See\n\n http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n\t    \n  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)\n  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      \n  email  bob statland.org  (add your own \"@\" and save me some spam)",
+      "body_snippet": "I had some minor role in the creation of this list.  At times I have\ncomplained that members have been too harsh in redirecting queries\nwhose proper home seemed to me debatable.  But as time has gone ",
+      "thread_id": "thread-b10080e5ad7d",
+      "thread_depth": 0,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-0f531c99c5ba",
+      "message_id": "<4A4A0839.9040605@purdue.edu>",
+      "from_name": "Mark Daniel Ward",
+      "from_email_hash": "9660c15b92052c1ae502524414654a6571d365b2d3e5844d0a72a5172a130df6",
+      "date": "2009-06-30T08:42:33-04:00",
+      "subject": "[R-sig-teaching] purpose of list",
+      "subject_clean": "purpose of list",
+      "in_reply_to": "<20090630113249.90610.qmail@mv.mv.com>",
+      "references": [
+        "<20090630113249.90610.qmail@mv.mv.com>"
+      ],
+      "body_plain": "Dear Bob,\n    Thank you for your question to the list.  I'm using R to teach \ncourses on Computing with Data.  I am in the Department of Statistics at \nPurdue University (in West Lafayette, Indiana, USA), although of course \nmy opinion does not represent our entire department.\n    I believe that R is a great tool for teaching undergraduates and \ngraduate students.  I teach these Computing with Data classes at both \nlevels.  As you might guess from the title, I do not focus on \nstatistical methods, but instead I focus on the ability to manipulate \ndata that is very large and thus cannot be handled by less-powerful \nsoftware.\n    It might be helpful to note that I teach R alongside other \ntechnologies (in the same course), including UNIX tools, bash shell \nscripting, regular expressions, SQL, XML, and a brief introduction to \nPerl....  although R remains the main topic in my course.  I spend about \n1/3 of the time in the course on R.\n    Our students are fortunate to have access to other software, \nincluding (for instance) S-PLUS, but I really enjoy using open source \ntechnologies in my classes to the greatest possible extent.\n    I hope that helps give a perspective about one use of R in the \nclassroom.\nMark\n\n\n\nRobert W. Hayden wrote:\n> I had some minor role in the creation of this list.  At times I have\n> complained that members have been too harsh in redirecting queries\n> whose proper home seemed to me debatable.  But as time has gone on I\n> have to admit that too much (most?) of the traffic on this list is\n> about how to make R work rather than how to use it in education.  So,\n> trying to think positively, let me toss out some general EDUCATIONAL\n> questions.  How are people using R for educational purposes?  What do\n> people think of the various GUI or alternate (e.g., spreadsheet)\n> interfaces?  Is there anything that makes R as easy to use for\n> beginners as, say, Minitab?  What about using R for educational\n> simulations?  Is R the tool for replacing what George Cobb calls a\n> \"Ptolemaic curriculum\"?\n>\n>        http://repositories.cdlib.org/uclastat/cts/tise/vol1/iss1/art1/ \n>\n> If anyone wants to respond it might help to briefly describe your\n> student audience.  While I am attracted to the power of R, many of the\n> folks who ask me about R are attracted by the price.  That is\n> especially important in a number of contexts I work with:\n>\n>\n> my own online courses where we have no computer labs for\n> students who must get their own software, often paying full\n> single-copy prices\n>\n> public high schools in the U.S. where student computer access at\n> school is limited and it is very helpful to give students something\n> they can install on a computer at home\n>\n> people teaching in less wealthy nations\n>\n>\n>   \n>> On 6/29/09, Martin Maechler <maechler at stat.math.ethz.ch> wrote:\n>>     \n>>> Wrong Mailing List !!\n>>>\n>>>  Please use R-help  for R questions!\n>>>\n>>>       \n>> <skip>\n>>     \n>>>     AA> Assume I have the following data sets:\n>>>\n>>>       \n>> Also, please send reproducible code with dummy data. Assuming the data\n>> is too abstract to think of a solution; and you haven't even mentioned\n>> the exact R function that you wanted to use.\n>> Best regards,\n>> Liviu\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>>     \n>\n>\n> ------->  First-time AP Stats. teacher?  Help is on the way! See\n>\n>  http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n> \t    \n>   Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)\n>   North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      \n>   email  bob statland.org  (add your own \"@\" and save me some spam)\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>",
+      "body_snippet": "Dear Bob,\n    Thank you for your question to the list.  I'm using R to teach \ncourses on Computing with Data.  I am in the Department of Statistics at \nPurdue University (in West Lafayette, Indiana, U",
+      "thread_id": "thread-b10080e5ad7d",
+      "thread_depth": 1,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-27c5df3a20aa",
+      "message_id": "<68b1e2610906300618v1f4192b9s80f3c6b36db553df@mail.gmail.com>",
+      "from_name": "Liviu Andronic",
+      "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
+      "date": "2009-06-30T15:18:40+02:00",
+      "subject": "[R-sig-teaching] purpose of list",
+      "subject_clean": "purpose of list",
+      "in_reply_to": "<20090630113249.90610.qmail@mv.mv.com>",
+      "references": [
+        "<68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>",
+        "<20090630113249.90610.qmail@mv.mv.com>"
+      ],
+      "body_plain": "Dear Robert,\n\nOn Tue, Jun 30, 2009 at 1:32 PM, Robert W. Hayden<hayden at mv.mv.com> wrote:\n> questions. ?How are people using R for educational purposes? ?What do\n> people think of the various GUI or alternate (e.g., spreadsheet)\n> interfaces? ?Is there anything that makes R as easy to use for\n> beginners as, say, Minitab? ?What about using R for educational\n>\nI am not sure that this is a proper answer to your e-mail, but I will\nmention a recent discussion [1] on r-sig-gui that would---I\nbelieve---also be interesting to this list. It is about Deducer [2], a\nnew R-GUI built on top of JGR [3], intended to be in some respects\nsimilar to SPSS or Minitab.\n\nPersonally, as a student and a self-taught novice in R, I believe that\nJGR and Rcmdr are individually (and combined) most helpful to\nbeginners in grasping the basics of R, of course apart from the\nintroductory web sites [4] and beginner-friendly documentation. There\nis also playwith [5] for graphics manipulation. I'd be keen to add\nDeducer on the list, when the project matures.\nDeparting from the \"doing statistics\" objective, LyX [6] is most\nhelpful in writing Sweave reports without the additional burden of\n(properly) learning LaTeX.\nOne important note is that all the mentioned applications are\ncross-platform, and relatively easy to install.\n\nBest regards,\nLiviu\n\n[1] http://www.mail-archive.com/r-sig-gui at stat.math.ethz.ch/msg00465.html\n[2] http://cran.r-project.org/web/packages/Deducer/index.html\n[3] http://cran.r-project.org/web/packages/JGR/index.html\n[4] http://www.statmethods.net/\n[5] http://cran.r-project.org/web/packages/playwith/index.html\n[6] http://www.lyx.org/",
+      "body_snippet": "Dear Robert,\n\nOn Tue, Jun 30, 2009 at 1:32 PM, Robert W. Hayden<hayden at mv.mv.com> wrote:\n> questions. ?How are people using R for educational purposes? ?What do\n> people think of the various GUI or",
+      "thread_id": "thread-b10080e5ad7d",
+      "thread_depth": 1,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-2c39da267cea",
+      "message_id": "<2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>",
+      "from_name": "Graham Smith",
+      "from_email_hash": "ac1c7855ebbb565cf36e8205a6ce07dfb894db98f8221917c5b19b5cc16941ec",
+      "date": "2009-06-30T18:12:37+01:00",
+      "subject": "[R-sig-teaching] purpose of list",
+      "subject_clean": "purpose of list",
+      "in_reply_to": "<20090630113249.90610.qmail@mv.mv.com>",
+      "references": [
+        "<68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>",
+        "<20090630113249.90610.qmail@mv.mv.com>"
+      ],
+      "body_plain": "Rob,\n\n> ?Is there anything that makes R as easy to use for\n> beginners as, say, Minitab?\n\nAs a casual observation I am now in my third year of teaching basic\nstatistics to biology/ecology students with a mix of Minitab and R.\nOutside the formal teaching, I have used R with selected students for\n6 or 7 years (students who want to work at home, students with\nMacs/Linux at home, and my personal dissertation students).\n\n In the first year I use Minitab and in the second year I use R.\nClasses are around 30 students in first year and 20 in second year.\n\nIn all three years, unprompted by me, I have had between five and\nseven students come to me after the R sessions asking why we hadn't\nused R in first year. They find the command line more direct and\nimmediate than Mintab, which, it seems, they had found confusing. This\nyear I asked the whole  2nd year class to vote on whether they would\nhave preferred R to Mintab in 1st year. Everyone voted for R.\n\nThis year I also offered R sessions to the first year, in addition to\nthe Minitab sessions. Six people came to these sessions and all used R\nin preference to Mintab for the later marked assignments. They could\nhave used either program. Again they all said they would rather have\nused R for the main teaching sessions.\n\nNext year I am dropping Mintab,and switching to R, but three points.\n\n1. We only have a very limited tme for the stats and only do very\nsimple things, which are easy in R.\n2. The stumbling block in changing to R has not been the students, but\nthe staff, who don't want to learn a command line stats program, and\nare confident the students \"won't like it\" BUT SPSS license are up for\nrenewal, staff seemed reassured by my anecdotal evidence for students\nliking R and now a days almost everyone seems to know someone in their\nfield who is using R, or teaching with R. So a switch to R as the\nstandard looks on the cards.\n3. But, we are re-organising and merging with the School of Social\nSciences who I understand are super glued to SPSS, so it may be\ninteresting to see what happens.\n\nGraham\n\nBTW I do introduce Rcmdr and BiodiversityR to the students so they\nknow there are GUI alternatives if they get stuck, and some do use\nthese, but most seem to simply email me the code to sort out where\nthey have gone wrong.",
+      "body_snippet": "Rob,\n\n> ?Is there anything that makes R as easy to use for\n> beginners as, say, Minitab?\n\nAs a casual observation I am now in my third year of teaching basic\nstatistics to biology/ecology students wit",
+      "thread_id": "thread-b10080e5ad7d",
+      "thread_depth": 1,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-0dafc711ab44",
+      "message_id": "<f8e6ff050906301053j78de98e8lcade226dea28ac4e@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2009-06-30T12:53:57-05:00",
+      "subject": "[R-sig-teaching] purpose of list",
+      "subject_clean": "purpose of list",
+      "in_reply_to": "<2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>",
+      "references": [
+        "<68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>",
+        "<20090630113249.90610.qmail@mv.mv.com>",
+        "<2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>"
+      ],
+      "body_plain": "> As a casual observation I am now in my third year of teaching basic\n> statistics to biology/ecology students with a mix of Minitab and R.\n> Outside the formal teaching, I have used R with selected students for\n> 6 or 7 years (students who want to work at home, students with\n> Macs/Linux at home, and my personal dissertation students).\n>\n> ?In the first year I use Minitab and in the second year I use R.\n> Classes are around 30 students in first year and 20 in second year.\n>\n> In all three years, unprompted by me, I have had between five and\n> seven students come to me after the R sessions asking why we hadn't\n> used R in first year. They find the command line more direct and\n> immediate than Mintab, which, it seems, they had found confusing. This\n> year I asked the whole ?2nd year class to vote on whether they would\n> have preferred R to Mintab in 1st year. Everyone voted for R.\n\nThis matches my experience in a course which I taught both Excel and\nR.  Most students preferred R because it was much harder to follow\nwhat I was doing in the GUI - where exactly was I clicking, was it a\nright or left click, etc.  With R you see everything I type and it's\nvery easier to reproduce.  It's also much faster and easier to produce\na page of commented R code that allows students to reproduce all the\nimportant steps, compared to recording a screencast to show the steps\nin Excel.\n\nHadley\n\n-- \nhttp://had.co.nz/",
+      "body_snippet": "> As a casual observation I am now in my third year of teaching basic\n> statistics to biology/ecology students with a mix of Minitab and R.\n> Outside the formal teaching, I have used R with selected s",
+      "thread_id": "thread-b10080e5ad7d",
+      "thread_depth": 2,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-1f2dc992902c",
+      "message_id": "<4A4A524B.1070307@purdue.edu>",
+      "from_name": "Mark Daniel Ward",
+      "from_email_hash": "9660c15b92052c1ae502524414654a6571d365b2d3e5844d0a72a5172a130df6",
+      "date": "2009-06-30T13:58:35-04:00",
+      "subject": "[R-sig-teaching] purpose of list",
+      "subject_clean": "purpose of list",
+      "in_reply_to": "<f8e6ff050906301053j78de98e8lcade226dea28ac4e@mail.gmail.com>",
+      "references": [
+        "<68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>",
+        "<20090630113249.90610.qmail@mv.mv.com>",
+        "<2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>",
+        "<f8e6ff050906301053j78de98e8lcade226dea28ac4e@mail.gmail.com>"
+      ],
+      "body_plain": "I'll follow-up on Hadley's comment by noting that I always post the \ncomplete R transcript of our class session, so that the students can \ndownload it and use it.  I also add lots and lots of comments to the \nfile (after class is over), so that they can remember what we did in \nclass.  They seem to like this feature of my class.\nMark\n\n\n\nhadley wickham wrote:\n>> As a casual observation I am now in my third year of teaching basic\n>> statistics to biology/ecology students with a mix of Minitab and R.\n>> Outside the formal teaching, I have used R with selected students for\n>> 6 or 7 years (students who want to work at home, students with\n>> Macs/Linux at home, and my personal dissertation students).\n>>\n>>  In the first year I use Minitab and in the second year I use R.\n>> Classes are around 30 students in first year and 20 in second year.\n>>\n>> In all three years, unprompted by me, I have had between five and\n>> seven students come to me after the R sessions asking why we hadn't\n>> used R in first year. They find the command line more direct and\n>> immediate than Mintab, which, it seems, they had found confusing. This\n>> year I asked the whole  2nd year class to vote on whether they would\n>> have preferred R to Mintab in 1st year. Everyone voted for R.\n>>     \n>\n> This matches my experience in a course which I taught both Excel and\n> R.  Most students preferred R because it was much harder to follow\n> what I was doing in the GUI - where exactly was I clicking, was it a\n> right or left click, etc.  With R you see everything I type and it's\n> very easier to reproduce.  It's also much faster and easier to produce\n> a page of commented R code that allows students to reproduce all the\n> important steps, compared to recording a screencast to show the steps\n> in Excel.\n>\n> Hadley\n>\n>",
+      "body_snippet": "I'll follow-up on Hadley's comment by noting that I always post the \ncomplete R transcript of our class session, so that the students can \ndownload it and use it.  I also add lots and lots of comments",
+      "thread_id": "thread-b10080e5ad7d",
+      "thread_depth": 3,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-54b5368586b6",
+      "message_id": "<2c75873c0906301116q7332f0bakb5b25cf01187e00f@mail.gmail.com>",
+      "from_name": "Graham Smith",
+      "from_email_hash": "ac1c7855ebbb565cf36e8205a6ce07dfb894db98f8221917c5b19b5cc16941ec",
+      "date": "2009-06-30T19:16:52+01:00",
+      "subject": "[R-sig-teaching] purpose of list",
+      "subject_clean": "purpose of list",
+      "in_reply_to": "<4A4A524B.1070307@purdue.edu>",
+      "references": [
+        "<68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>",
+        "<20090630113249.90610.qmail@mv.mv.com>",
+        "<2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>",
+        "<f8e6ff050906301053j78de98e8lcade226dea28ac4e@mail.gmail.com>",
+        "<4A4A524B.1070307@purdue.edu>"
+      ],
+      "body_plain": "Hadley /Mark\n\nMark Daniel Ward wrote:\n> I'll follow-up on Hadley's comment by noting that I always post the complete\n> R transcript of our class session, so that the students can download it and\n> use it. ?I also add lots and lots of comments to the file (after class is\n> over), so that they can remember what we did in class. ?They seem to like\n> this feature of my class.\n\n\n> hadley wickham wrote:\n>> This matches my experience in a course which I taught both Excel and\n>> R. ?Most students preferred R because it was much harder to follow\n>> what I was doing in the GUI - where exactly was I clicking, was it a\n>> right or left click, etc. ?With R you see everything I type and it's\n>> very easier to reproduce. ?It's also much faster and easier to produce\n>> a page of commented R code that allows students to reproduce all the\n>> important steps, compared to recording a screencast to show the steps\n>> in Excel.\n\nI'm glad to see my experience isn't unique.\n\nI find the ability to email me a bit of code that isn't working a\nfanatastic feature for me. It has always been a nightmare trying to\ndiagnose via email what some one is doing wrong with Minitab/Excel.\n\nGraham",
+      "body_snippet": "Hadley /Mark\n\nMark Daniel Ward wrote:\n> I'll follow-up on Hadley's comment by noting that I always post the complete\n> R transcript of our class session, so that the students can download it and\n> use",
+      "thread_id": "thread-b10080e5ad7d",
+      "thread_depth": 4,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-f1a12e0fa69d",
+      "message_id": "<f8e6ff050906301125w465f5e22yaaa615c536686ad3@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2009-06-30T13:25:55-05:00",
+      "subject": "[R-sig-teaching] purpose of list",
+      "subject_clean": "purpose of list",
+      "in_reply_to": "<4A4A524B.1070307@purdue.edu>",
+      "references": [
+        "<68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>",
+        "<20090630113249.90610.qmail@mv.mv.com>",
+        "<2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>",
+        "<f8e6ff050906301053j78de98e8lcade226dea28ac4e@mail.gmail.com>",
+        "<4A4A524B.1070307@purdue.edu>"
+      ],
+      "body_plain": "I used to do before I became depressed by the huge number of mistakes\nI made!  Now I tend to come up with the commented R code first, then\nbuild the lecture around that.  I'll still do some live exploratory\nprogramming, but all the important stuff will be available online.\n\nHadley\n\nOn Tue, Jun 30, 2009 at 12:58 PM, Mark Daniel Ward<mdw at purdue.edu> wrote:\n> I'll follow-up on Hadley's comment by noting that I always post the complete\n> R transcript of our class session, so that the students can download it and\n> use it. ?I also add lots and lots of comments to the file (after class is\n> over), so that they can remember what we did in class. ?They seem to like\n> this feature of my class.\n> Mark\n>\n>\n>\n> hadley wickham wrote:\n>>>\n>>> As a casual observation I am now in my third year of teaching basic\n>>> statistics to biology/ecology students with a mix of Minitab and R.\n>>> Outside the formal teaching, I have used R with selected students for\n>>> 6 or 7 years (students who want to work at home, students with\n>>> Macs/Linux at home, and my personal dissertation students).\n>>>\n>>> ?In the first year I use Minitab and in the second year I use R.\n>>> Classes are around 30 students in first year and 20 in second year.\n>>>\n>>> In all three years, unprompted by me, I have had between five and\n>>> seven students come to me after the R sessions asking why we hadn't\n>>> used R in first year. They find the command line more direct and\n>>> immediate than Mintab, which, it seems, they had found confusing. This\n>>> year I asked the whole ?2nd year class to vote on whether they would\n>>> have preferred R to Mintab in 1st year. Everyone voted for R.\n>>>\n>>\n>> This matches my experience in a course which I taught both Excel and\n>> R. ?Most students preferred R because it was much harder to follow\n>> what I was doing in the GUI - where exactly was I clicking, was it a\n>> right or left click, etc. ?With R you see everything I type and it's\n>> very easier to reproduce. ?It's also much faster and easier to produce\n>> a page of commented R code that allows students to reproduce all the\n>> important steps, compared to recording a screencast to show the steps\n>> in Excel.\n>>\n>> Hadley\n>>\n>>\n>\n\n\n\n-- \nhttp://had.co.nz/",
+      "body_snippet": "I used to do before I became depressed by the huge number of mistakes\nI made!  Now I tend to come up with the commented R code first, then\nbuild the lecture around that.  I'll still do some live explo",
+      "thread_id": "thread-b10080e5ad7d",
+      "thread_depth": 4,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-e4eded4b64b7",
+      "message_id": "<4A4A598F.5070108@purdue.edu>",
+      "from_name": "Mark Daniel Ward",
+      "from_email_hash": "9660c15b92052c1ae502524414654a6571d365b2d3e5844d0a72a5172a130df6",
+      "date": "2009-06-30T14:29:35-04:00",
+      "subject": "[R-sig-teaching] purpose of list",
+      "subject_clean": "purpose of list",
+      "in_reply_to": "<f8e6ff050906301125w465f5e22yaaa615c536686ad3@mail.gmail.com>",
+      "references": [
+        "<68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>",
+        "<20090630113249.90610.qmail@mv.mv.com>",
+        "<2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>",
+        "<f8e6ff050906301053j78de98e8lcade226dea28ac4e@mail.gmail.com>",
+        "<4A4A524B.1070307@purdue.edu>",
+        "<f8e6ff050906301125w465f5e22yaaa615c536686ad3@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Hadley,\n    Yes, yes, I make lots and lots of mistakes too.  I do everything \n\"live\", in front of the students.  (I think that it makes them happy to \nsee the professor making some mistakes, because they see that everyone \nmakes mistakes from time to time!)\n    After the lecture is over, while I am adding lots of comments, I \nalso take the time to correct any mistakes that I made.  This process \ntook a LOT of time the first time that I did it, but I think that it was \nworthwhile.  I'm weighing whether to do it again this fall.....  and I \nthink that I will.  It should be easier the second time around.\nMark\n\n\n\nhadley wickham wrote:\n> I used to do before I became depressed by the huge number of mistakes\n> I made!  Now I tend to come up with the commented R code first, then\n> build the lecture around that.  I'll still do some live exploratory\n> programming, but all the important stuff will be available online.\n>\n> Hadley\n>\n> On Tue, Jun 30, 2009 at 12:58 PM, Mark Daniel Ward<mdw at purdue.edu> wrote:\n>   \n>> I'll follow-up on Hadley's comment by noting that I always post the complete\n>> R transcript of our class session, so that the students can download it and\n>> use it.  I also add lots and lots of comments to the file (after class is\n>> over), so that they can remember what we did in class.  They seem to like\n>> this feature of my class.\n>> Mark\n>>\n>>\n>>\n>> hadley wickham wrote:\n>>     \n>>>> As a casual observation I am now in my third year of teaching basic\n>>>> statistics to biology/ecology students with a mix of Minitab and R.\n>>>> Outside the formal teaching, I have used R with selected students for\n>>>> 6 or 7 years (students who want to work at home, students with\n>>>> Macs/Linux at home, and my personal dissertation students).\n>>>>\n>>>>  In the first year I use Minitab and in the second year I use R.\n>>>> Classes are around 30 students in first year and 20 in second year.\n>>>>\n>>>> In all three years, unprompted by me, I have had between five and\n>>>> seven students come to me after the R sessions asking why we hadn't\n>>>> used R in first year. They find the command line more direct and\n>>>> immediate than Mintab, which, it seems, they had found confusing. This\n>>>> year I asked the whole  2nd year class to vote on whether they would\n>>>> have preferred R to Mintab in 1st year. Everyone voted for R.\n>>>>\n>>>>         \n>>> This matches my experience in a course which I taught both Excel and\n>>> R.  Most students preferred R because it was much harder to follow\n>>> what I was doing in the GUI - where exactly was I clicking, was it a\n>>> right or left click, etc.  With R you see everything I type and it's\n>>> very easier to reproduce.  It's also much faster and easier to produce\n>>> a page of commented R code that allows students to reproduce all the\n>>> important steps, compared to recording a screencast to show the steps\n>>> in Excel.\n>>>\n>>> Hadley\n>>>\n>>>\n>>>       \n>\n>\n>\n>",
+      "body_snippet": "Dear Hadley,\n    Yes, yes, I make lots and lots of mistakes too.  I do everything \n\"live\", in front of the students.  (I think that it makes them happy to \nsee the professor making some mistakes, beca",
+      "thread_id": "thread-b10080e5ad7d",
+      "thread_depth": 5,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-13c8f2d419a0",
+      "message_id": "<4A4A5AAC.2080409@purdue.edu>",
+      "from_name": "Mark Daniel Ward",
+      "from_email_hash": "9660c15b92052c1ae502524414654a6571d365b2d3e5844d0a72a5172a130df6",
+      "date": "2009-06-30T14:34:20-04:00",
+      "subject": "[R-sig-teaching] purpose of list",
+      "subject_clean": "purpose of list",
+      "in_reply_to": "<2c75873c0906301116q7332f0bakb5b25cf01187e00f@mail.gmail.com>",
+      "references": [
+        "<68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>",
+        "<20090630113249.90610.qmail@mv.mv.com>",
+        "<2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>",
+        "<f8e6ff050906301053j78de98e8lcade226dea28ac4e@mail.gmail.com>",
+        "<4A4A524B.1070307@purdue.edu>",
+        "<2c75873c0906301116q7332f0bakb5b25cf01187e00f@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Graham,\n    Actually, I love to communicate with the students by email, but I \nfind it a nightmare when they email me any code!  Sometimes a 1-minute \nverbal explanation will take several paragraphs to clarify by email.\n    I try to be available almost all of the time in my office, so that \nthey can drop by with occasional questions, even outside of office \nhours.  I also use a once-per-week lab session to answer questions, and \nI've noticed that the students talk to each other during such labs..... \nand they frequently answer each other's questions, which is a blessing.\nMark\n\n\n\nGraham Smith wrote:\n> Hadley /Mark\n>\n> Mark Daniel Ward wrote:\n>   \n>> I'll follow-up on Hadley's comment by noting that I always post the complete\n>> R transcript of our class session, so that the students can download it and\n>> use it.  I also add lots and lots of comments to the file (after class is\n>> over), so that they can remember what we did in class.  They seem to like\n>> this feature of my class.\n>>     \n>\n>\n>   \n>> hadley wickham wrote:\n>>     \n>>> This matches my experience in a course which I taught both Excel and\n>>> R.  Most students preferred R because it was much harder to follow\n>>> what I was doing in the GUI - where exactly was I clicking, was it a\n>>> right or left click, etc.  With R you see everything I type and it's\n>>> very easier to reproduce.  It's also much faster and easier to produce\n>>> a page of commented R code that allows students to reproduce all the\n>>> important steps, compared to recording a screencast to show the steps\n>>> in Excel.\n>>>       \n>\n> I'm glad to see my experience isn't unique.\n>\n> I find the ability to email me a bit of code that isn't working a\n> fanatastic feature for me. It has always been a nightmare trying to\n> diagnose via email what some one is doing wrong with Minitab/Excel.\n>\n> Graham\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_snippet": "Dear Graham,\n    Actually, I love to communicate with the students by email, but I \nfind it a nightmare when they email me any code!  Sometimes a 1-minute \nverbal explanation will take several paragra",
+      "thread_id": "thread-b10080e5ad7d",
+      "thread_depth": 5,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-f2c640feb4ed",
+      "message_id": "<20090630183543.GB9687@laplace.reed.edu>",
+      "from_name": "Albyn Jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2009-06-30T11:35:43-07:00",
+      "subject": "[R-sig-teaching] purpose of list",
+      "subject_clean": "purpose of list",
+      "in_reply_to": "<4A4A598F.5070108@purdue.edu>",
+      "references": [
+        "<68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>",
+        "<20090630113249.90610.qmail@mv.mv.com>",
+        "<2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>",
+        "<f8e6ff050906301053j78de98e8lcade226dea28ac4e@mail.gmail.com>",
+        "<4A4A524B.1070307@purdue.edu>",
+        "<f8e6ff050906301125w465f5e22yaaa615c536686ad3@mail.gmail.com>",
+        "<4A4A598F.5070108@purdue.edu>"
+      ],
+      "body_plain": "On Tue, Jun 30, 2009 at 02:29:35PM -0400, Mark Daniel Ward wrote:\n> Dear Hadley,\n>    Yes, yes, I make lots and lots of mistakes too.  I do everything \"live\", \n> in front of the students.  (I think that it makes them happy to see the \n> professor making some mistakes, because they see that everyone makes \n> mistakes from time to time!)\n>    After the lecture is over, while I am adding lots of comments, I also \n> take the time to correct any mistakes that I made.  This process took a LOT \n> of time the first time that I did it, but I think that it was worthwhile.  \n> I'm weighing whether to do it again this fall.....  and I think that I \n> will.  It should be easier the second time around.\n> Mark\n\nI have often done exactly the same, and students have expressed their\nappreciation.  They also are likely complain when I don't do this, no\nmatter how simple the example presented...\n\nalbyn",
+      "body_snippet": "On Tue, Jun 30, 2009 at 02:29:35PM -0400, Mark Daniel Ward wrote:\n> Dear Hadley,\n>    Yes, yes, I make lots and lots of mistakes too.  I do everything \"live\", \n> in front of the students.  (I think th",
+      "thread_id": "thread-b10080e5ad7d",
+      "thread_depth": 6,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-df7c35d726ff",
+      "message_id": "<f8e6ff050906301144g2fe4a16dte34619912d656203@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2009-06-30T13:44:41-05:00",
+      "subject": "[R-sig-teaching] purpose of list",
+      "subject_clean": "purpose of list",
+      "in_reply_to": "<4A4A5AAC.2080409@purdue.edu>",
+      "references": [
+        "<68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>",
+        "<20090630113249.90610.qmail@mv.mv.com>",
+        "<2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>",
+        "<f8e6ff050906301053j78de98e8lcade226dea28ac4e@mail.gmail.com>",
+        "<4A4A524B.1070307@purdue.edu>",
+        "<2c75873c0906301116q7332f0bakb5b25cf01187e00f@mail.gmail.com>",
+        "<4A4A5AAC.2080409@purdue.edu>"
+      ],
+      "body_plain": "I spent a lot of time focussing on code as communication to make\nelectronic interaction as easy as possible.  Personally, I think this\nis very important as the majority of my programming work is in\ncollaboration with others spread around the world, who I might see in\nperson at most once a year.  I agree with Mark that encouraging\ncooperation within class makes a big difference.  There will usually\nbe a few students who catch on really quickly and can help the others\n- a good reason for group projects.\n\nFor most homeworks, I printed out their submitted code and marked it\nlike you'd mark an essay, with marks for the equivalent of punctuation\nand sentence structure. Little things like indentation make a big\ndifference to readability.  It took a few weeks, but the quality of\ntheir code improved considerably (so did mine!)\n\nHadley\n\nOn Tue, Jun 30, 2009 at 1:34 PM, Mark Daniel Ward<mdw at purdue.edu> wrote:\n> Dear Graham,\n> ? Actually, I love to communicate with the students by email, but I find it\n> a nightmare when they email me any code! ?Sometimes a 1-minute verbal\n> explanation will take several paragraphs to clarify by email.\n> ? I try to be available almost all of the time in my office, so that they\n> can drop by with occasional questions, even outside of office hours. ?I also\n> use a once-per-week lab session to answer questions, and I've noticed that\n> the students talk to each other during such labs..... and they frequently\n> answer each other's questions, which is a blessing.\n> Mark\n>\n>\n>\n> Graham Smith wrote:\n>>\n>> Hadley /Mark\n>>\n>> Mark Daniel Ward wrote:\n>>\n>>>\n>>> I'll follow-up on Hadley's comment by noting that I always post the\n>>> complete\n>>> R transcript of our class session, so that the students can download it\n>>> and\n>>> use it. ?I also add lots and lots of comments to the file (after class is\n>>> over), so that they can remember what we did in class. ?They seem to like\n>>> this feature of my class.\n>>>\n>>\n>>\n>>\n>>>\n>>> hadley wickham wrote:\n>>>\n>>>>\n>>>> This matches my experience in a course which I taught both Excel and\n>>>> R. ?Most students preferred R because it was much harder to follow\n>>>> what I was doing in the GUI - where exactly was I clicking, was it a\n>>>> right or left click, etc. ?With R you see everything I type and it's\n>>>> very easier to reproduce. ?It's also much faster and easier to produce\n>>>> a page of commented R code that allows students to reproduce all the\n>>>> important steps, compared to recording a screencast to show the steps\n>>>> in Excel.\n>>>>\n>>\n>> I'm glad to see my experience isn't unique.\n>>\n>> I find the ability to email me a bit of code that isn't working a\n>> fanatastic feature for me. It has always been a nightmare trying to\n>> diagnose via email what some one is doing wrong with Minitab/Excel.\n>>\n>> Graham\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \nhttp://had.co.nz/",
+      "body_snippet": "I spent a lot of time focussing on code as communication to make\nelectronic interaction as easy as possible.  Personally, I think this\nis very important as the majority of my programming work is in\nco",
+      "thread_id": "thread-b10080e5ad7d",
+      "thread_depth": 6,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-c3e80a3d5e42",
+      "message_id": "<2c75873c0906301146h5252c8f8hdc3a9b0ca01e2697@mail.gmail.com>",
+      "from_name": "Graham Smith",
+      "from_email_hash": "ac1c7855ebbb565cf36e8205a6ce07dfb894db98f8221917c5b19b5cc16941ec",
+      "date": "2009-06-30T19:46:37+01:00",
+      "subject": "[R-sig-teaching] purpose of list",
+      "subject_clean": "purpose of list",
+      "in_reply_to": "<4A4A5AAC.2080409@purdue.edu>",
+      "references": [
+        "<68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>",
+        "<20090630113249.90610.qmail@mv.mv.com>",
+        "<2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>",
+        "<f8e6ff050906301053j78de98e8lcade226dea28ac4e@mail.gmail.com>",
+        "<4A4A524B.1070307@purdue.edu>",
+        "<2c75873c0906301116q7332f0bakb5b25cf01187e00f@mail.gmail.com>",
+        "<4A4A5AAC.2080409@purdue.edu>"
+      ],
+      "body_plain": "Mark\n\n> ? Actually, I love to communicate with the students by email, but I find it\n> a nightmare when they email me any code! ?Sometimes a 1-minute verbal\n> explanation will take several paragraphs to clarify by email.\n\nI agree, but\n\na) I only lecture part time, (I do ecological consultancy the other\npart). I have a \"very\" flexible office hours, which often don't fit in\nwith student hand in dates, so I feel I need to give email support\nb) I also run a part time Masters in Ecological Impact Assessment,\nwhich relies on teaching being concentrated into five long weekends.\nSo email is the only way I can give ongoing support for the statistics\n(or any of the other) parts of the course.\n\nHowever, I agree with you about email support being a mixed blessing\nand I often find that an hour will have vanished as I try and work out\nthe best way of explaining something in writing, which face to face\nwould have been relatively simple. But it is still a lot easier with a\nbit of code in front of me instead of vague descriptions about what\nmenu steps they followed,  and what boxes they may or may not have\nticked along the way.  Sending me the data set and the code is, on\nbalance, a lot easier.\n\nGraham",
+      "body_snippet": "Mark\n\n> ? Actually, I love to communicate with the students by email, but I find it\n> a nightmare when they email me any code! ?Sometimes a 1-minute verbal\n> explanation will take several paragraphs t",
+      "thread_id": "thread-b10080e5ad7d",
+      "thread_depth": 6,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-e0355d4f4d01",
+      "message_id": "<4A4A5D99.7040100@purdue.edu>",
+      "from_name": "Mark Daniel Ward",
+      "from_email_hash": "9660c15b92052c1ae502524414654a6571d365b2d3e5844d0a72a5172a130df6",
+      "date": "2009-06-30T14:46:49-04:00",
+      "subject": "[R-sig-teaching] purpose of list",
+      "subject_clean": "purpose of list",
+      "in_reply_to": "<f8e6ff050906301144g2fe4a16dte34619912d656203@mail.gmail.com>",
+      "references": [
+        "<68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>",
+        "<20090630113249.90610.qmail@mv.mv.com>",
+        "<2c75873c0906301012k23bf0a70q4c45d01f3056aad5@mail.gmail.com>",
+        "<f8e6ff050906301053j78de98e8lcade226dea28ac4e@mail.gmail.com>",
+        "<4A4A524B.1070307@purdue.edu>",
+        "<2c75873c0906301116q7332f0bakb5b25cf01187e00f@mail.gmail.com>",
+        "<4A4A5AAC.2080409@purdue.edu>",
+        "<f8e6ff050906301144g2fe4a16dte34619912d656203@mail.gmail.com>"
+      ],
+      "body_plain": "I've seen Hadley's rubrics for his assignments.  They are really excellent!\nMark\n\n\n\nhadley wickham wrote:\n> I spent a lot of time focussing on code as communication to make\n> electronic interaction as easy as possible.  Personally, I think this\n> is very important as the majority of my programming work is in\n> collaboration with others spread around the world, who I might see in\n> person at most once a year.  I agree with Mark that encouraging\n> cooperation within class makes a big difference.  There will usually\n> be a few students who catch on really quickly and can help the others\n> - a good reason for group projects.\n>\n> For most homeworks, I printed out their submitted code and marked it\n> like you'd mark an essay, with marks for the equivalent of punctuation\n> and sentence structure. Little things like indentation make a big\n> difference to readability.  It took a few weeks, but the quality of\n> their code improved considerably (so did mine!)\n>\n> Hadley\n>\n> On Tue, Jun 30, 2009 at 1:34 PM, Mark Daniel Ward<mdw at purdue.edu> wrote:\n>   \n>> Dear Graham,\n>>   Actually, I love to communicate with the students by email, but I find it\n>> a nightmare when they email me any code!  Sometimes a 1-minute verbal\n>> explanation will take several paragraphs to clarify by email.\n>>   I try to be available almost all of the time in my office, so that they\n>> can drop by with occasional questions, even outside of office hours.  I also\n>> use a once-per-week lab session to answer questions, and I've noticed that\n>> the students talk to each other during such labs..... and they frequently\n>> answer each other's questions, which is a blessing.\n>> Mark\n>>\n>>\n>>\n>> Graham Smith wrote:\n>>     \n>>> Hadley /Mark\n>>>\n>>> Mark Daniel Ward wrote:\n>>>\n>>>       \n>>>> I'll follow-up on Hadley's comment by noting that I always post the\n>>>> complete\n>>>> R transcript of our class session, so that the students can download it\n>>>> and\n>>>> use it.  I also add lots and lots of comments to the file (after class is\n>>>> over), so that they can remember what we did in class.  They seem to like\n>>>> this feature of my class.\n>>>>\n>>>>         \n>>>\n>>>       \n>>>> hadley wickham wrote:\n>>>>\n>>>>         \n>>>>> This matches my experience in a course which I taught both Excel and\n>>>>> R.  Most students preferred R because it was much harder to follow\n>>>>> what I was doing in the GUI - where exactly was I clicking, was it a\n>>>>> right or left click, etc.  With R you see everything I type and it's\n>>>>> very easier to reproduce.  It's also much faster and easier to produce\n>>>>> a page of commented R code that allows students to reproduce all the\n>>>>> important steps, compared to recording a screencast to show the steps\n>>>>> in Excel.\n>>>>>\n>>>>>           \n>>> I'm glad to see my experience isn't unique.\n>>>\n>>> I find the ability to email me a bit of code that isn't working a\n>>> fanatastic feature for me. It has always been a nightmare trying to\n>>> diagnose via email what some one is doing wrong with Minitab/Excel.\n>>>\n>>> Graham\n>>>\n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>>\n>>>       \n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>>     \n>\n>\n>\n>",
+      "body_snippet": "I've seen Hadley's rubrics for his assignments.  They are really excellent!\nMark\n\n\n\nhadley wickham wrote:\n> I spent a lot of time focussing on code as communication to make\n> electronic interaction as",
+      "thread_id": "thread-b10080e5ad7d",
+      "thread_depth": 7,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-e2355cc396bf",
+      "message_id": "<loom.20090630T185758-848@post.gmane.org>",
+      "from_name": "jverzani",
+      "from_email_hash": "a6a1200a231be5378c9dcfeda609f69229e627084135d087c77352452f162633",
+      "date": "2009-06-30T19:14:30Z",
+      "subject": "[R-sig-teaching] Teaching with R website",
+      "subject_clean": "Teaching with R website",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I was at the USCOTS conference in Ohio and found myself attending a\ndemonstration on the statcrunch software, which I hadn't seen until then. As far\nas it goes the software is fine, but what was very interesting to me was the\nstatcrunch.com website. As described there, this is set up to allow easy sharing\nof data sets, code and reports along with surveys etc. There were an enormous\nnumber of data sets (13000, reports etc. that were posted by instructors and\nstudents). The site is so successful a publisher now runs it.\n\nI currently put such files on my personal web site for my students to download.\nI have also enjoyed using materials from many other websites, such as those\ndiscussed in a recent thread. However, I think it might be extremely beneficial\nfrom a student perspective to have an one spot where they can find the work of\nmany people oriented around teaching and learning R. Some site with good search\nabilities, some well chosen organization and a relatively modern look.\n\nI know there are a bunch of interesting web sites for R beyond the main one:\nCRANtastic, the R-Wiki, the graph gallery, ... but none seem oriented towards\nthe exchange of data and techniques that are used to teach with R.\n\nDoes anyone else think such a resource might be useful to the point where it was\nactually used? Are there other ideas where a common place for such information\nis value added?\n\nIf this seems like a good idea, does anyone know if there is some off-the-shelf\ncontent management system that is well suited towards such?\n\n--John",
+      "body_snippet": "I was at the USCOTS conference in Ohio and found myself attending a\ndemonstration on the statcrunch software, which I hadn't seen until then. As far\nas it goes the software is fine, but what was very ",
+      "thread_id": "thread-e2355cc396bf",
+      "thread_depth": 0,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-7f72a762da07",
+      "message_id": "<4A4A67FD.1070600@purdue.edu>",
+      "from_name": "Mark Daniel Ward",
+      "from_email_hash": "9660c15b92052c1ae502524414654a6571d365b2d3e5844d0a72a5172a130df6",
+      "date": "2009-06-30T15:31:09-04:00",
+      "subject": "[R-sig-teaching] Teaching with R website",
+      "subject_clean": "Teaching with R website",
+      "in_reply_to": "<loom.20090630T185758-848@post.gmane.org>",
+      "references": [
+        "<loom.20090630T185758-848@post.gmane.org>"
+      ],
+      "body_plain": "Dear John,\n    There are a handful of us who are thinking about such resources.  \nThere are many possibilities.  Yes, yes, I believe that such resources \nwould be very useful to people who are starting to teach classes in R.  \nDo you have specific suggestions?  I'm sending you a separate PM about this.\nMark\n\n\n\n\njverzani wrote:\n> I was at the USCOTS conference in Ohio and found myself attending a\n> demonstration on the statcrunch software, which I hadn't seen until then. As far\n> as it goes the software is fine, but what was very interesting to me was the\n> statcrunch.com website. As described there, this is set up to allow easy sharing\n> of data sets, code and reports along with surveys etc. There were an enormous\n> number of data sets (13000, reports etc. that were posted by instructors and\n> students). The site is so successful a publisher now runs it.\n>\n> I currently put such files on my personal web site for my students to download.\n> I have also enjoyed using materials from many other websites, such as those\n> discussed in a recent thread. However, I think it might be extremely beneficial\n> from a student perspective to have an one spot where they can find the work of\n> many people oriented around teaching and learning R. Some site with good search\n> abilities, some well chosen organization and a relatively modern look.\n>\n> I know there are a bunch of interesting web sites for R beyond the main one:\n> CRANtastic, the R-Wiki, the graph gallery, ... but none seem oriented towards\n> the exchange of data and techniques that are used to teach with R.\n>\n> Does anyone else think such a resource might be useful to the point where it was\n> actually used? Are there other ideas where a common place for such information\n> is value added?\n>\n> If this seems like a good idea, does anyone know if there is some off-the-shelf\n> content management system that is well suited towards such?\n>\n> --John\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>",
+      "body_snippet": "Dear John,\n    There are a handful of us who are thinking about such resources.  \nThere are many possibilities.  Yes, yes, I believe that such resources \nwould be very useful to people who are startin",
+      "thread_id": "thread-e2355cc396bf",
+      "thread_depth": 1,
+      "month": "2009-06"
+    },
+    {
+      "id": "msg-f240f008a947",
+      "message_id": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC62126E9E3F@LP-EXMBVS10.CO.IHC.COM>",
+      "from_name": "Greg Snow",
+      "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
+      "date": "2009-06-30T15:02:02-06:00",
+      "subject": "[R-sig-teaching] purpose of list",
+      "subject_clean": "purpose of list",
+      "in_reply_to": "<20090630113249.90610.qmail@mv.mv.com>",
+      "references": [
+        "<68b1e2610906292351x5550009i525c223547a3f36e@mail.gmail.com>",
+        "<20090630113249.90610.qmail@mv.mv.com>"
+      ],
+      "body_plain": "My teaching situation is a bit different from the others who have responded so far.  I do teach an occasional class at the university, but my main job is with a group of hospitals and doctors doing their statistics.  As part of that I teach some classes within the hospital system to doctors/nurses/whoever.  These tend to be very different students from the undergrads at the university (anyone else ever had a student use the excuse \"I was performing surgery\" for missing class?).\n\nThese classes are less focused on how to do the stats (they will have me do them for them), but more on the concepts so that they can understand the literature that they read, work with me better in designing studies, and do better at writing/presenting the results.\n\nThe university where I teach occasionally uses some web based stats program for the intro class (even simpler than minitab in what it can do).  I keep trying to talk them into using R (through the Excel interface or RCmdr), but so far have made little progress.\n\nIn both situations I am not teaching the students how to use R, but I still use it to demonstrate various concepts.  I mostly use simple examples (plots, quick numbers) or those from the TeachingDemos package (that is what it was written for (disclosure of possible conflict of interest in promoting the package: I believe that the package author/maintainer raids my fridge more often than he should)).  Even though the students are not learning R itself, they appreciate the concepts illustrated.  The mainly GUI based illustrations could be written in any language (but using R means that I can customize them and more advanced students can look at the code themselves and learn more).\n\nThe R-based code usually does not phase the students even though they have not leaned R themselves yet.  Those that do not understand it just look at the results, but many do understand the main ideas.  For example, at the university, the standard course materials use the 1970 draft lottery as an example for showing scatterplots, correlation, relationships and other concepts.  As a bit of a teaser there is a slide that asks if the relationship could be due to chance (this is before we get into the inference part of the course).  We don't come back and answer that teaser until the last week of class (when we have done hypothesis testing an regression).  But I like to show the students a simple simulation at the time of the teaser with simple code such as:\n\n> out <- replicate(10000, cor( sample(1:366), 1:366 ) )\n> hist(out)\n> sum( abs(out) > 0.18 )\n[1] 5\n> sum( abs(out) > 0.1 )\n[1] 533\n> quantile( out, c(0.025, 0.975) )\n      2.5%      97.5% \n-0.1021715  0.1003527\n\nIt takes less than a minute to explain that 1:366 is the numbers from 1 to 366 and that the sample function randomizes the order.  The replicate function and the rest of the code is fairly self explanatory even for people who don't know any programming, but this example clearly shows that the amount of correlation in the 1970 draft lottery was unlikely due to random chance as well as what values we would expect to see by chance.  Some of the students will stay after class and ask about R, I explain that it is not part of the official class, but that if they are interested here is the website and additional info ...\n\nSo, I think that R is a great tool for teaching statistical concepts even when R is not the statistical package being used for the course itself.\n\n\n-- \nGregory (Greg) L. Snow Ph.D.\nStatistical Data Center\nIntermountain Healthcare\ngreg.snow at imail.org\n801.408.8111\n\n\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-\n> bounces at r-project.org] On Behalf Of Robert W. Hayden\n> Sent: Tuesday, June 30, 2009 5:33 AM\n> To: Liviu Andronic\n> Cc: R-sig-teaching at r-project.org\n> Subject: Re: [R-sig-teaching] purpose of list\n> \n> \n> I had some minor role in the creation of this list.  At times I have\n> complained that members have been too harsh in redirecting queries\n> whose proper home seemed to me debatable.  But as time has gone on I\n> have to admit that too much (most?) of the traffic on this list is\n> about how to make R work rather than how to use it in education.  So,\n> trying to think positively, let me toss out some general EDUCATIONAL\n> questions.  How are people using R for educational purposes?  What do\n> people think of the various GUI or alternate (e.g., spreadsheet)\n> interfaces?  Is there anything that makes R as easy to use for\n> beginners as, say, Minitab?  What about using R for educational\n> simulations?  Is R the tool for replacing what George Cobb calls a\n> \"Ptolemaic curriculum\"?\n> \n>        http://repositories.cdlib.org/uclastat/cts/tise/vol1/iss1/art1/\n> \n> If anyone wants to respond it might help to briefly describe your\n> student audience.  While I am attracted to the power of R, many of the\n> folks who ask me about R are attracted by the price.  That is\n> especially important in a number of contexts I work with:\n> \n> \n> my own online courses where we have no computer labs for\n> students who must get their own software, often paying full\n> single-copy prices\n> \n> public high schools in the U.S. where student computer access at\n> school is limited and it is very helpful to give students something\n> they can install on a computer at home\n> \n> people teaching in less wealthy nations\n> \n> \n> > On 6/29/09, Martin Maechler <maechler at stat.math.ethz.ch> wrote:\n> > > Wrong Mailing List !!\n> > >\n> > >  Please use R-help  for R questions!\n> > >\n> > <skip>\n> > >     AA> Assume I have the following data sets:\n> > >\n> > Also, please send reproducible code with dummy data. Assuming the\n> data\n> > is too abstract to think of a solution; and you haven't even\n> mentioned\n> > the exact R function that you wanted to use.\n> > Best regards,\n> > Liviu\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >\n> \n> \n> ------->  First-time AP Stats. teacher?  Help is on the way! See\n> \n> \n> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.h\n> tml\n> \n>   Robert W. Hayden in the old library at  212 Main Street (P. O. Box\n> 450)\n>   North Troy, VT 05859  phone (802) 988-2587  web site\n> http://statland.org/\n>   email  bob statland.org  (add your own \"@\" and save me some spam)\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "My teaching situation is a bit different from the others who have responded so far.  I do teach an occasional class at the university, but my main job is with a group of hospitals and doctors doing th",
+      "thread_id": "thread-b10080e5ad7d",
+      "thread_depth": 1,
+      "month": "2009-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-9b7e548198a0",
+      "subject": "Help with graph joint pdf",
+      "message_count": 1,
+      "participants": [
+        "AbouEl-Makarim Aboueissa"
+      ],
+      "started": "2009-06-04T13:00:13-04:00",
+      "last_reply": "2009-06-04T13:00:13-04:00",
+      "root_message_id": "msg-9b7e548198a0"
+    },
+    {
+      "id": "thread-a36c7ef6d87e",
+      "subject": "Help with graph joint pdf",
+      "message_count": 3,
+      "participants": [
+        "AbouEl-Makarim Aboueissa",
+        "Sebastián Castro"
+      ],
+      "started": "2009-06-04T13:24:40-04:00",
+      "last_reply": "2009-06-05T15:23:44-03:00",
+      "root_message_id": "msg-a36c7ef6d87e"
+    },
+    {
+      "id": "thread-faa7bdc60dd9",
+      "subject": "R-sig-teaching Digest, Vol 22, Issue 1",
+      "message_count": 1,
+      "participants": [
+        "madhu vr"
+      ],
+      "started": "2009-06-05T16:26:28+05:30",
+      "last_reply": "2009-06-05T16:26:28+05:30",
+      "root_message_id": "msg-faa7bdc60dd9"
+    },
+    {
+      "id": "thread-34340d0cca46",
+      "subject": "Providing R resources in Moodle",
+      "message_count": 1,
+      "participants": [
+        "Murray Jorgensen"
+      ],
+      "started": "2009-06-09T12:01:48+12:00",
+      "last_reply": "2009-06-09T12:01:48+12:00",
+      "root_message_id": "msg-34340d0cca46"
+    },
+    {
+      "id": "thread-a45e20f424a9",
+      "subject": "Providing R resources in Moodle (Murray Jorgensen)",
+      "message_count": 1,
+      "participants": [
+        "Sam Lin"
+      ],
+      "started": "2009-06-10T03:26:43+12:00",
+      "last_reply": "2009-06-10T03:26:43+12:00",
+      "root_message_id": "msg-a45e20f424a9"
+    },
+    {
+      "id": "thread-ebbfcb3c26ee",
+      "subject": "CDF for Bivariate Kernel density estimation",
+      "message_count": 1,
+      "participants": [
+        "kasturi bardhan"
+      ],
+      "started": "2009-06-20T04:06:28+05:30",
+      "last_reply": "2009-06-20T04:06:28+05:30",
+      "root_message_id": "msg-ebbfcb3c26ee"
+    },
+    {
+      "id": "thread-f1c4a1e9fc72",
+      "subject": "Graph critical region",
+      "message_count": 5,
+      "participants": [
+        "AbouEl-Makarim Aboueissa",
+        "Charles Annis, P.E.",
+        "Ista Zahn",
+        "Liviu Andronic",
+        "hadley wickham"
+      ],
+      "started": "2009-06-23T19:57:45-04:00",
+      "last_reply": "2009-06-25T11:20:44+02:00",
+      "root_message_id": "msg-f1c4a1e9fc72"
+    },
+    {
+      "id": "thread-88c5b4aa2c50",
+      "subject": "T-test",
+      "message_count": 3,
+      "participants": [
+        "AbouEl-Makarim Aboueissa",
+        "Liviu Andronic",
+        "Martin Maechler"
+      ],
+      "started": "2009-06-29T10:32:04-04:00",
+      "last_reply": "2009-06-30T08:51:35+02:00",
+      "root_message_id": "msg-88c5b4aa2c50"
+    },
+    {
+      "id": "thread-b10080e5ad7d",
+      "subject": "purpose of list",
+      "message_count": 15,
+      "participants": [
+        "Albyn Jones",
+        "Graham Smith",
+        "Greg Snow",
+        "Liviu Andronic",
+        "Mark Daniel Ward",
+        "Robert W. Hayden",
+        "hadley wickham"
+      ],
+      "started": "2009-06-30T07:32:49-04:00",
+      "last_reply": "2009-06-30T15:02:02-06:00",
+      "root_message_id": "msg-b10080e5ad7d"
+    },
+    {
+      "id": "thread-e2355cc396bf",
+      "subject": "Teaching with R website",
+      "message_count": 2,
+      "participants": [
+        "Mark Daniel Ward",
+        "jverzani"
+      ],
+      "started": "2009-06-30T19:14:30+00:00",
+      "last_reply": "2009-06-30T15:31:09-04:00",
+      "root_message_id": "msg-e2355cc396bf"
+    }
+  ]
+}

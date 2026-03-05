@@ -1,0 +1,177 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2010-08",
+  "messages": [
+    {
+      "id": "msg-7435590cdd3f",
+      "message_id": "<868749225.220762.1280694602620.JavaMail.root@erie.cs.uoguelph.ca>",
+      "from_name": "Scott Colwell",
+      "from_email_hash": "ed4ea20fb71dac5f8d07d1b0852464207293155771ae11d26aa35224716e520b",
+      "date": "2010-08-01T16:30:02-04:00",
+      "subject": "[R-sig-teaching] Looking for code for population and sample curve",
+      "subject_clean": "Looking for code for population and sample curve",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello,\n\nI am looking for code to create normal distribution plots of a population and 5 samples of the population all on one graph.  I can plot all 6 together, but can't seem to adjust the height of the sample plots so that they fit under the population curve.\n\nThanks,\n\nSC\n\n-- \nScott R. Colwell, Ph.D.\nAssociate Professor\nUniversity of Guelph\nCollege of Management and Economics\nGuelph, Ontario, Canada, N1G 2W1",
+      "body_snippet": "Hello,\n\nI am looking for code to create normal distribution plots of a population and 5 samples of the population all on one graph.  I can plot all 6 together, but can't seem to adjust the height of t",
+      "thread_id": "thread-7435590cdd3f",
+      "thread_depth": 0,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-bfb82a1f3c1a",
+      "message_id": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC633A72DF7F@LP-EXMBVS10.CO.IHC.COM>",
+      "from_name": "Greg Snow",
+      "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
+      "date": "2010-08-03T14:19:32-06:00",
+      "subject": "[R-sig-teaching] Looking for code for population and sample curve",
+      "subject_clean": "Looking for code for population and sample curve",
+      "in_reply_to": "<868749225.220762.1280694602620.JavaMail.root@erie.cs.uoguelph.ca>",
+      "references": [
+        "<868749225.220762.1280694602620.JavaMail.root@erie.cs.uoguelph.ca>"
+      ],
+      "body_plain": "What types of plots are you trying to get?  Qq-plots? Histograms of samples compared to a line showing the population?  Density estimates?\n\n-- \nGregory (Greg) L. Snow Ph.D.\nStatistical Data Center\nIntermountain Healthcare\ngreg.snow at imail.org\n801.408.8111\n\n\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-\n> bounces at r-project.org] On Behalf Of Scott Colwell\n> Sent: Sunday, August 01, 2010 2:30 PM\n> To: r-sig-teaching at r-project.org\n> Subject: [R-sig-teaching] Looking for code for population and sample\n> curve\n> \n> Hello,\n> \n> I am looking for code to create normal distribution plots of a\n> population and 5 samples of the population all on one graph.  I can\n> plot all 6 together, but can't seem to adjust the height of the sample\n> plots so that they fit under the population curve.\n> \n> Thanks,\n> \n> SC\n> \n> --\n> Scott R. Colwell, Ph.D.\n> Associate Professor\n> University of Guelph\n> College of Management and Economics\n> Guelph, Ontario, Canada, N1G 2W1\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "What types of plots are you trying to get?  Qq-plots? Histograms of samples compared to a line showing the population?  Density estimates?\n\n-- \nGregory (Greg) L. Snow Ph.D.\nStatistical Data Center\nInt",
+      "thread_id": "thread-7435590cdd3f",
+      "thread_depth": 1,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-017e4f90a68a",
+      "message_id": "<4C59296E.7080904@inseed.org>",
+      "from_name": "INSEED workshops",
+      "from_email_hash": "a7199273dd9d48639fb9926dfb7ace8f1fdde3ae8f2ab9e4951be717f732a325",
+      "date": "2010-08-04T11:48:46+03:00",
+      "subject": "[R-sig-teaching] Short courses in statistics",
+      "subject_clean": "Short courses in statistics",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear friends,\n\nINSEED is happy to announce two short courses, viz.\n\n* 10-14 November, 2010: Statistical methods in Epidemiology (using R), \nAnand, Gujarat\n\n* 22-26 November, 2010: Bayesian computation using OpenBUGS (and R), \nVellore, Tamil Nadu\n\nThe details of the workshop and the registration procedure are at \nhttp://www.inseed.org/workshops/.\n\nBijoy Joseph\nCourse coordinator\n____________________________________________________\nIndic Society for Education and Development (INSEED)\n1, Swami Enterprises complex,\nTigrania Road, Nashik - 422011, India.\n\nTel: +91-9890729200, +91-253-2503969\nhttp://www.inseed.org/",
+      "body_snippet": "Dear friends,\n\nINSEED is happy to announce two short courses, viz.\n\n* 10-14 November, 2010: Statistical methods in Epidemiology (using R), \nAnand, Gujarat\n\n* 22-26 November, 2010: Bayesian computation",
+      "thread_id": "thread-017e4f90a68a",
+      "thread_depth": 0,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-6564b7a46b04",
+      "message_id": "<706237.65863.qm@web50806.mail.re2.yahoo.com>",
+      "from_name": "solafah bh",
+      "from_email_hash": "44ac136083444abfb43f969ca7a693201070b287b2e8c825823b493117cca96b",
+      "date": "2010-08-19T16:33:34-07:00",
+      "subject": "[R-sig-teaching] question",
+      "subject_clean": "question",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100819/b32448b9/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100819/b32448b9/attachment.pl>",
+      "thread_id": "thread-6564b7a46b04",
+      "thread_depth": 0,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-bb910e818696",
+      "message_id": "<20100820001801.GF2201@reed.edu>",
+      "from_name": "Albyn Jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2010-08-19T17:18:01-07:00",
+      "subject": "[R-sig-teaching] question",
+      "subject_clean": "question",
+      "in_reply_to": "<706237.65863.qm@web50806.mail.re2.yahoo.com>",
+      "references": [
+        "<706237.65863.qm@web50806.mail.re2.yahoo.com>"
+      ],
+      "body_plain": "Dear solafah\n\nThis is a list for discussion of use of R in teaching.\n\nYour question would be more appropriate for the r-help list, assuming\nit's not a homework assignment.  It is an amusing question though.\nOne way would be to make use of the inverse CDF method, combined with\nuniformly sampling from some interval like (0, .05) or (.95,1).  I'll\nleave the details as an exercise for the r student.\n\nalbyn\n\nOn Thu, Aug 19, 2010 at 04:33:34PM -0700, solafah bh wrote:\n> Hello\n> I want to know how can i sampling from upper and lower tail of normal distribution, by R code?\n> ?\n> Regards\n> \n> \n>       \n> \t[[alternative HTML version deleted]]\n> \n\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\n-- \nAlbyn Jones\nReed College\njones at reed.edu",
+      "body_snippet": "Dear solafah\n\nThis is a list for discussion of use of R in teaching.\n\nYour question would be more appropriate for the r-help list, assuming\nit's not a homework assignment.  It is an amusing question t",
+      "thread_id": "thread-6564b7a46b04",
+      "thread_depth": 1,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-81468493f86d",
+      "message_id": "<BLU136-W31B5B718893BCA2D5845A3CF9F0@phx.gbl>",
+      "from_name": "Yemitan Raphael",
+      "from_email_hash": "bd9f8fb29233d7de52f88593626597b25c4c1953460e313d1f49d23aea3053be",
+      "date": "2010-08-20T10:31:16Z",
+      "subject": "[R-sig-teaching] Entering Data into R and running a bootstrap",
+      "subject_clean": "Entering Data into R and running a bootstrap",
+      "in_reply_to": "<mailman.9.1282298403.28650.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.9.1282298403.28650.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100820/01af58df/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100820/01af58df/attachment.pl>",
+      "thread_id": "thread-81468493f86d",
+      "thread_depth": 0,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-c0a7a95cf970",
+      "message_id": "<1282300776.2349.120.camel@desktop.localdomain>",
+      "from_name": "Gavin Simpson",
+      "from_email_hash": "de29578fbbb79e6883c8203a1faebef3fddd10c08cc122f35e5ad109dc250099",
+      "date": "2010-08-20T11:39:36+01:00",
+      "subject": "[R-sig-teaching] Entering Data into R and running a bootstrap",
+      "subject_clean": "Entering Data into R and running a bootstrap",
+      "in_reply_to": "<BLU136-W31B5B718893BCA2D5845A3CF9F0@phx.gbl>",
+      "references": [
+        "<mailman.9.1282298403.28650.r-sig-teaching@r-project.org>",
+        "<BLU136-W31B5B718893BCA2D5845A3CF9F0@phx.gbl>"
+      ],
+      "body_plain": "On Fri, 2010-08-20 at 10:31 +0000, Yemitan Raphael wrote:\n> Hello,\n>  \n> I want to know how to enter data into R, how to run a bootstrap\n> regression and also how to test for serial correlation.\n\nWrong list. Try R-Help, but not before you've read the posting guide as\nyou won't get an answer to your question if you send the same message\nthere.\n\nG\n\n-- \n%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%\n Dr. Gavin Simpson             [t] +44 (0)20 7679 0522\n ECRC, UCL Geography,          [f] +44 (0)20 7679 0565\n Pearson Building,             [e] gavin.simpsonATNOSPAMucl.ac.uk\n Gower Street, London          [w] http://www.ucl.ac.uk/~ucfagls/\n UK. WC1E 6BT.                 [w] http://www.freshwaters.org.uk\n%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%",
+      "body_snippet": "On Fri, 2010-08-20 at 10:31 +0000, Yemitan Raphael wrote:\n> Hello,\n>  \n> I want to know how to enter data into R, how to run a bootstrap\n> regression and also how to test for serial correlation.\n\nWron",
+      "thread_id": "thread-81468493f86d",
+      "thread_depth": 1,
+      "month": "2010-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-7435590cdd3f",
+      "subject": "Looking for code for population and sample curve",
+      "message_count": 2,
+      "participants": [
+        "Greg Snow",
+        "Scott Colwell"
+      ],
+      "started": "2010-08-01T16:30:02-04:00",
+      "last_reply": "2010-08-03T14:19:32-06:00",
+      "root_message_id": "msg-7435590cdd3f"
+    },
+    {
+      "id": "thread-017e4f90a68a",
+      "subject": "Short courses in statistics",
+      "message_count": 1,
+      "participants": [
+        "INSEED workshops"
+      ],
+      "started": "2010-08-04T11:48:46+03:00",
+      "last_reply": "2010-08-04T11:48:46+03:00",
+      "root_message_id": "msg-017e4f90a68a"
+    },
+    {
+      "id": "thread-6564b7a46b04",
+      "subject": "question",
+      "message_count": 2,
+      "participants": [
+        "Albyn Jones",
+        "solafah bh"
+      ],
+      "started": "2010-08-19T16:33:34-07:00",
+      "last_reply": "2010-08-19T17:18:01-07:00",
+      "root_message_id": "msg-6564b7a46b04"
+    },
+    {
+      "id": "thread-81468493f86d",
+      "subject": "Entering Data into R and running a bootstrap",
+      "message_count": 2,
+      "participants": [
+        "Gavin Simpson",
+        "Yemitan Raphael"
+      ],
+      "started": "2010-08-20T10:31:16+00:00",
+      "last_reply": "2010-08-20T11:39:36+01:00",
+      "root_message_id": "msg-81468493f86d"
+    }
+  ]
+}

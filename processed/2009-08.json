@@ -1,0 +1,312 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2009-08",
+  "messages": [
+    {
+      "id": "msg-4c772528a3f1",
+      "message_id": "<508E815F27CD4EF5B7D61A82AB78AD74@gpbdmx>",
+      "from_name": "Ian Fellows",
+      "from_email_hash": "d12bb521d01a14c5c9364007086c61200d7898178507ef5d276c14223c822c6b",
+      "date": "2009-08-03T11:21:23-07:00",
+      "subject": "[R-sig-teaching] FW: Deducer 0.1 Released",
+      "subject_clean": "Deducer 0.1 Released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi All,\n\n   I am seeking comments, suggestions, bugs, and users for a data analysis\nGUI that has just been released to CRAN. One of the first areas that I think\nthat this GUI could be of use is in the classroom, so your comments would be\nvery valuable to me. An online manual is available (though under\nconstruction) here:\n\nhttp://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual\n\n   I'd appreciate any feedback or bugs. I'm particularly interested in\nexperiences using it from within non-JGR GUI's, and under Linux. If any of\nyou teach introductory/intermediate statistics, I'd like to know how you\nwould feel about using it in the classroom. \n\nTIA,\nIan\n\n\np.s. Installation instructions: \ninstall.packages(\"Deducer\",,\"http://cran.r-project.org\")\n\n\n\n\n---------------------------------------------------------------------------\n\n\nDeducer 0.1 has been released to CRAN\n\nDeducer is designed to be a free, easy to use, alternative to proprietary\nsoftware such as SPSS, JMP, and Minitab. It has a menu system to do common\ndata manipulation and data analysis tasks, and an excel-like spreadsheet in\nwhich to view and edit data frames. The goal of the project is to two fold. \n\n\t1. Provide an intuitive interface so that non-technical users \n\t   can learn and perform analyses without programming getting \n\t   in their way. \n\t2. Increase the efficiency of expert R users when performing \n         common tasks by replacing hundreds of keystrokes with a few \n         mouse clicks. Also, as much as possible the GUI should not \n         get in their way if they just want to do some programming. \n\nDeducer is integrated into the Windows RGui, and the cross-platform Java\nconsole JGR, and is also usable and accessible from the command line.\nScreen shots and examples can be viewed in the online wiki manual:\n\nhttp://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual\n\nComments and questions are more than welcome. A discussion group has been\ncreated for any questions or recommendations.\n\nhttp://groups.google.com/group/deducer\n\nDeducer Features:\n\nData manipulation:\n\t1. Factor editor\n\t2. Variable recoding\n\t3. data sorting\n\t4. data frame merging\n\t5. transposing a data frame\n\t6. subseting\n\nAnalysis:\n\t1. Frequencies\n\t2. Descriptives\n\t3. Contingency tables\n\t\ta. Nicely formatted tables with optional\n\t\t\ti. Percentages\n\t\t\tii. Expected counts\n\t\t\tiii. Residuals\n\t\tb. Statistical tests\n\t\t\ti. chi-squared \n\t\t\tii. likelihood ratio\n\t\t\tiii. fisher's exact\n\t\t\tiv. mantel haenszel\n\t\t\tv. kendall's tau\n\t\t\tvi. spearman's rho\n\t\t\tvii. kruskal-wallis\n\t\t\tviii. mid-p values for all exact/monte carlo tests\n\t4. One sample tests\n\t\ta. T-test\n\t\tb. Shapiro-wilk\n\t\tc. Histogram/box-plot summaries\n\t5. Two sample tests\n\t\ta. T-test (student and welch)\n\t\tb. Permutation test\n\t\tc. Wilcoxon\n\t\td. Brunner-munzel\n\t\te. Kolmogorov-smirnov\n\t\tf. Jitter/box-plot group comparison\n\t6. K-sample tests\n\t\ta. Anova (usual and welch)\n\t\tb. Kruskal-wallis\n\t\tc. Jitter/boxplot comparison\n\t7. Correlation\n\t\ta. Nicely formatted correlation matrices\n\t\tb. Pearson's\n\t\tc. Kendall's\n\t\td. Spearman's\n\t\te. Scatterplot paneled array\n\t\tf. Circle plot\n\t\tg. Full correlation matrix plot\n        8.Generalized Linear Models\n\t\ta. Model preview\n\t\tb. Intuitive model builder\n\t\tc. diagnostic plots \n\t\td. Component residual and added variable plots\n\t\te. Anova (type II and III implementing LR, Wald and F tests)\n\t\tf. Parameter summary tables and parameter correlations\n\t\tg. Influence and colinearity diagnostics\n\t\th. Post-hoc tests and confidence intervals \n\t\t   with (or without) adjustments for multiple testing.\n\t\ti. Custom linear hypothesis tests\n\t\tj. Effect mean summaries (with confidence intervals), and\nplots\n\t\tk. Exports: Residuals, Standardized residuals, Studentized\n \t\t   residuals, Predicted Values (linear and link), Cooks \n\t\t   distance, DFBETA, DFFITS, hat values, and Cov Ratio\n\t\tl. Observation weights and subseting\n\t9. Logistic Regression\n\t\ta. All GLM features\n\t\tb. ROC Plot\n\t10. Linear Model\n\t\ta. All GLM features\n       \tb. Heteroskedastic robust tests",
+      "body_snippet": "Hi All,\n\n   I am seeking comments, suggestions, bugs, and users for a data analysis\nGUI that has just been released to CRAN. One of the first areas that I think\nthat this GUI could be of use is in the",
+      "thread_id": "thread-4c772528a3f1",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-980d0f78f4dd",
+      "message_id": "<a695148b0908070540j3c850991kd4c43622b2ae6224@mail.gmail.com>",
+      "from_name": "G. Jay Kerns",
+      "from_email_hash": "50e93b09ae5eba7f3237d0e4291e3a6b8825a6fb21853bb3678551306330b319",
+      "date": "2009-08-07T08:40:11-04:00",
+      "subject": "[R-sig-teaching] FW: Deducer 0.1 Released",
+      "subject_clean": "Deducer 0.1 Released",
+      "in_reply_to": "<508E815F27CD4EF5B7D61A82AB78AD74@gpbdmx>",
+      "references": [
+        "<508E815F27CD4EF5B7D61A82AB78AD74@gpbdmx>"
+      ],
+      "body_plain": "Hello,\n\nI tried Deducer earlier in the week (on Ubuntu Linux) and encountered\nsome hiccups, but I suspected that it had something to do with the\nidiosyncrasies of my machine rather than the Deducer package proper.\nSo last night I did a *clean* install of Ubuntu 9.04 and all of my\nother software.  Today, everything runs perfectly, without a hitch,\nfirst time.\n\nSome things I am doing which may be relevant (or, not):\n\n1) using the latest version of R (session info below), installed from\nCRAN according to the Ubuntu README\nhttp://cran.r-project.org/bin/linux/ubuntu/\n\n2) only using package binaries from cran2deb, namely, r-cran-deducer,\nr-cran-jgr, etc; did not build *anything* from scratch\n\n3) am using sun-java-6, as opposed to some of the other Java\nimplementations (iced-tea, etc)\n\n4) *must* do sudo R CMD javareconf\n\n\nFurthermore, not only is JGR/Deducer working fine, but also rgl works\ntoo (something that has caused me trouble in the past). Note, however,\nthat this does not address the 100% CPU issue with JGR reported\nelsewhere earlier.\n\nI have tried Deducer without JGR, and everything seems to be operating\naccording to plan.  The JGR console isn't there (obviously), but there\nare command line selections to navigate through the menus, and they\nseem to be functioning properly.  It is a little bit strange to use\nthe command line menus, though, because once you've made a selection\nin a submenu, you can't go back one step if you change your mind; you\ncan only enter 0 to exit deducer() completely and start over from the\nbeginning.  The JGR console is much more convenient with its GUI and\n'cancel' options.\n\nIn fact, JGR is already loaded as a dependency of Deducer... it would\nappear to be easier overall for a person to just run JGR() at the\nbeginning to operate Deducer through the JGR console and sidestep the\ncommand line entirely.  There are apparently other reasons why using\ncommand line Deducer is desirable, from other discussions that I have\nnot read.\n\n\nThe other question was whether Deducer would be a good thing for\nintroductory statistics, and in my opinion the answer is \"yes\".  The\nlayout of the menus seems reminiscent of something like SPSS, and in\nparticular, many of the plots are integrated into the \"Analysis\" menu\nitems, rather than having a top menu of their own as in Rcmdr.  There\nare advantages and disadvantages to both approaches.\n\nI really like the \"Data Viewer\".  This is great.  It makes it much\neasier to handle factors, factor levels, ordered factors, and\ncontrasts.\n\nThe main goal in my view is to get the students started, and I think\nDeducer would accomplish that goal very well.\n\nCheers,\nJay\n\n\n\n\n\nsessionInfo()\nR version 2.9.1 (2009-06-26)\nx86_64-pc-linux-gnu\n\nlocale:\nLC_CTYPE=en_US.UTF-8;LC_NUMERIC=C;LC_TIME=en_US.UTF-8;LC_COLLATE=en_US.UTF-8;LC_MONETARY=C;LC_MESSAGES=en_US.UTF-8;LC_PAPER=en_US.UTF-8;LC_NAME=C;LC_ADDRESS=C;LC_TELEPHONE=C;LC_MEASUREMENT=en_US.UTF-8;LC_IDENTIFICATION=C\n\nattached base packages:\n [1] stats4    splines   grid      stats     graphics  grDevices utils\n [8] datasets  methods   base\n\nother attached packages:\n [1] Deducer_0.1-0   lawstat_2.3     VGAM_0.7-9      foreign_0.8-36\n [5] effects_2.0-3   nnet_7.2-47     MASS_7.2-47     lattice_0.17-25\n [9] multcomp_1.1-1  survival_2.35-4 mvtnorm_0.9-7   car_1.2-14\n[13] JGR_1.6-7       iplots_1.1-3    ggplot2_0.8.3   reshape_0.8.3\n[17] plyr_0.1.9      proto_0.3-8     JavaGD_0.5-2    rJava_0.6-3\n\nloaded via a namespace (and not attached):\n[1] tools_2.9.1\n>\n\n\n\n\n\n-- \n***************************************************\nG. Jay Kerns, Ph.D.\nAssociate Professor\nDepartment of Mathematics & Statistics\nYoungstown State University\nYoungstown, OH 44555-0002 USA\nOffice: 1035 Cushwa Hall\nPhone: (330) 941-3310 Office (voice mail)\n-3302 Department\n-3170 FAX\nVoIP: gjkerns at ekiga.net\nE-mail: gkerns at ysu.edu\nhttp://www.cc.ysu.edu/~gjkerns/",
+      "body_snippet": "Hello,\n\nI tried Deducer earlier in the week (on Ubuntu Linux) and encountered\nsome hiccups, but I suspected that it had something to do with the\nidiosyncrasies of my machine rather than the Deducer pa",
+      "thread_id": "thread-4c772528a3f1",
+      "thread_depth": 1,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-251b8c362a92",
+      "message_id": "<e64efa440908071057g6114ae0fofca1d8771790ac@mail.gmail.com>",
+      "from_name": "Jan Vandermeer",
+      "from_email_hash": "65b2bed4af24f2268054b4cb336acfe7f7edef556572120e7a97e791bec4c479",
+      "date": "2009-08-07T13:57:07-04:00",
+      "subject": "[R-sig-teaching] FW: Deducer 0.1 Released",
+      "subject_clean": "Deducer 0.1 Released",
+      "in_reply_to": "<508E815F27CD4EF5B7D61A82AB78AD74@gpbdmx>",
+      "references": [
+        "<AcoUXv+v/zyGlH+LRdy5BFwn1OKxIAAB090g>",
+        "<508E815F27CD4EF5B7D61A82AB78AD74@gpbdmx>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090807/6c7fa4a1/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090807/6c7fa4a1/attachment.pl>",
+      "thread_id": "thread-4c772528a3f1",
+      "thread_depth": 1,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-0dd2c0b41606",
+      "message_id": "<A7D126D5B50C46D3934ECCB3E973AB2D@gpbdmx>",
+      "from_name": "Ian Fellows",
+      "from_email_hash": "d12bb521d01a14c5c9364007086c61200d7898178507ef5d276c14223c822c6b",
+      "date": "2009-08-07T11:21:32-07:00",
+      "subject": "[R-sig-teaching] FW: Deducer 0.1 Released",
+      "subject_clean": "Deducer 0.1 Released",
+      "in_reply_to": "<e64efa440908071057g6114ae0fofca1d8771790ac@mail.gmail.com>",
+      "references": [],
+      "body_plain": "Hi Jan,\n\nIt looks like you have the unstable version of JGR installed. you will\nneed version 1.6-7 available on CRAN. simply run\n\ninstall.packages(\"JGR\")\n\n\n\nIan\n\n________________________________________\nFrom: Jan Vandermeer [mailto:nordicgnome at gmail.com] \nSent: Friday, August 07, 2009 10:57 AM\nTo: Fellows, Ian\nCc: r-sig-teaching at r-project.org; deducer at googlegroups.com\nSubject: Re: [R-sig-teaching] FW: Deducer 0.1 Released\n\nHi,\n\nI tried to install Deducer on an Gentoo Linux AMD64 and received the\nfollowing error messages:\ninstall.packages(\"Deducer\",,\"http://cran.r-project.org\")\ntrying URL 'http://cran.r-project.org/src/contrib/Deducer_0.1-0.tar.gz'\nContent type 'application/x-gzip' length 2123646 bytes (2.0 Mb)\nopened URL\n==================================================\ndownloaded 2.0 Mb\n\n* Installing *source* package 'Deducer' ...\n** R\n** inst\n** preparing package for lazy loading\nLoading required package: proto\nLoading required package: grid\nLoading required package: reshape\nLoading required package: plyr\n\nAttaching package: 'ggplot2'\n\n\n?? ? ? ?The following object(s) are masked from package:grid :\n\n?? ? ? ? nullGrob\n\nError : package 'JGR' 1.7-0 was found, but < 1.7 is required by 'Deducer'\nERROR: lazy loading failed for package 'Deducer'\n* Removing '/usr/lib64/R/library/Deducer'\n\nThe downloaded packages are in\n?? ? ? ?'/tmp/RtmpWnRZ0y/downloaded_packages'\nUpdating HTML index of packages in '.Library'\nWarning message:\nIn install.packages(\"Deducer\", , \"http://cran.r-project.org\") :\n??installation of package 'Deducer' had non-zero exit status\n\nJan Vandermeer\n\n\nOn Mon, Aug 3, 2009 at 2:21 PM, Ian Fellows <ifellows at ucsd.edu> wrote:\nHi All,\n\n? I am seeking comments, suggestions, bugs, and users for a data analysis\nGUI that has just been released to CRAN. One of the first areas that I think\nthat this GUI could be of use is in the classroom, so your comments would be\nvery valuable to me. An online manual is available (though under\nconstruction) here:\n\nhttp://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual\n\n? I'd appreciate any feedback or bugs. I'm particularly interested in\nexperiences using it from within non-JGR GUI's, and under Linux. If any of\nyou teach introductory/intermediate statistics, I'd like to know how you\nwould feel about using it in the classroom.\n\nTIA,\nIan\n\n\np.s. Installation instructions:\ninstall.packages(\"Deducer\",,\"http://cran.r-project.org\")\n\n\n\n\n---------------------------------------------------------------------------\n\n\nDeducer 0.1 has been released to CRAN\n\nDeducer is designed to be a free, easy to use, alternative to proprietary\nsoftware such as SPSS, JMP, and Minitab. It has a menu system to do common\ndata manipulation and data analysis tasks, and an excel-like spreadsheet in\nwhich to view and edit data frames. The goal of the project is to two fold.\n\n? ? ? ?1. Provide an intuitive interface so that non-technical users\n? ? ? ? ? can learn and perform analyses without programming getting\n? ? ? ? ? in their way.\n? ? ? ?2. Increase the efficiency of expert R users when performing\n? ? ? ? common tasks by replacing hundreds of keystrokes with a few\n? ? ? ? mouse clicks. Also, as much as possible the GUI should not\n? ? ? ? get in their way if they just want to do some programming.\n\nDeducer is integrated into the Windows RGui, and the cross-platform Java\nconsole JGR, and is also usable and accessible from the command line.\nScreen shots and examples can be viewed in the online wiki manual:\n\nhttp://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual\n\nComments and questions are more than welcome. A discussion group has been\ncreated for any questions or recommendations.\n\nhttp://groups.google.com/group/deducer\n\nDeducer Features:\n\nData manipulation:\n? ? ? ?1. Factor editor\n? ? ? ?2. Variable recoding\n? ? ? ?3. data sorting\n? ? ? ?4. data frame merging\n? ? ? ?5. transposing a data frame\n? ? ? ?6. subseting\n\nAnalysis:\n? ? ? ?1. Frequencies\n? ? ? ?2. Descriptives\n? ? ? ?3. Contingency tables\n? ? ? ? ? ? ? ?a. Nicely formatted tables with optional\n? ? ? ? ? ? ? ? ? ? ? ?i. Percentages\n? ? ? ? ? ? ? ? ? ? ? ?ii. Expected counts\n? ? ? ? ? ? ? ? ? ? ? ?iii. Residuals\n? ? ? ? ? ? ? ?b. Statistical tests\n? ? ? ? ? ? ? ? ? ? ? ?i. chi-squared\n? ? ? ? ? ? ? ? ? ? ? ?ii. likelihood ratio\n? ? ? ? ? ? ? ? ? ? ? ?iii. fisher's exact\n? ? ? ? ? ? ? ? ? ? ? ?iv. mantel haenszel\n? ? ? ? ? ? ? ? ? ? ? ?v. kendall's tau\n? ? ? ? ? ? ? ? ? ? ? ?vi. spearman's rho\n? ? ? ? ? ? ? ? ? ? ? ?vii. kruskal-wallis\n? ? ? ? ? ? ? ? ? ? ? ?viii. mid-p values for all exact/monte carlo tests\n? ? ? ?4. One sample tests\n? ? ? ? ? ? ? ?a. T-test\n? ? ? ? ? ? ? ?b. Shapiro-wilk\n? ? ? ? ? ? ? ?c. Histogram/box-plot summaries\n? ? ? ?5. Two sample tests\n? ? ? ? ? ? ? ?a. T-test (student and welch)\n? ? ? ? ? ? ? ?b. Permutation test\n? ? ? ? ? ? ? ?c. Wilcoxon\n? ? ? ? ? ? ? ?d. Brunner-munzel\n? ? ? ? ? ? ? ?e. Kolmogorov-smirnov\n? ? ? ? ? ? ? ?f. Jitter/box-plot group comparison\n? ? ? ?6. K-sample tests\n? ? ? ? ? ? ? ?a. Anova (usual and welch)\n? ? ? ? ? ? ? ?b. Kruskal-wallis\n? ? ? ? ? ? ? ?c. Jitter/boxplot comparison\n? ? ? ?7. Correlation\n? ? ? ? ? ? ? ?a. Nicely formatted correlation matrices\n? ? ? ? ? ? ? ?b. Pearson's\n? ? ? ? ? ? ? ?c. Kendall's\n? ? ? ? ? ? ? ?d. Spearman's\n? ? ? ? ? ? ? ?e. Scatterplot paneled array\n? ? ? ? ? ? ? ?f. Circle plot\n? ? ? ? ? ? ? ?g. Full correlation matrix plot\n? ? ? ?8.Generalized Linear Models\n? ? ? ? ? ? ? ?a. Model preview\n? ? ? ? ? ? ? ?b. Intuitive model builder\n? ? ? ? ? ? ? ?c. diagnostic plots\n? ? ? ? ? ? ? ?d. Component residual and added variable plots\n? ? ? ? ? ? ? ?e. Anova (type II and III implementing LR, Wald and F tests)\n? ? ? ? ? ? ? ?f. Parameter summary tables and parameter correlations\n? ? ? ? ? ? ? ?g. Influence and colinearity diagnostics\n? ? ? ? ? ? ? ?h. Post-hoc tests and confidence intervals\n? ? ? ? ? ? ? ? ? with (or without) adjustments for multiple testing.\n? ? ? ? ? ? ? ?i. Custom linear hypothesis tests\n? ? ? ? ? ? ? ?j. Effect mean summaries (with confidence intervals), and\nplots\n? ? ? ? ? ? ? ?k. Exports: Residuals, Standardized residuals, Studentized\n? ? ? ? ? ? ? ? ? residuals, Predicted Values (linear and link), Cooks\n? ? ? ? ? ? ? ? ? distance, DFBETA, DFFITS, hat values, and Cov Ratio\n? ? ? ? ? ? ? ?l. Observation weights and subseting\n? ? ? ?9. Logistic Regression\n? ? ? ? ? ? ? ?a. All GLM features\n? ? ? ? ? ? ? ?b. ROC Plot\n? ? ? ?10. Linear Model\n? ? ? ? ? ? ? ?a. All GLM features\n? ? ? ?b. Heteroskedastic robust tests\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Hi Jan,\n\nIt looks like you have the unstable version of JGR installed. you will\nneed version 1.6-7 available on CRAN. simply run\n\ninstall.packages(\"JGR\")\n\n\n\nIan\n\n______________________________________",
+      "thread_id": "thread-4c772528a3f1",
+      "thread_depth": 2,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-69078c514988",
+      "message_id": "<4A8D0F7F.5060300@purdue.edu>",
+      "from_name": "Mark Daniel Ward",
+      "from_email_hash": "9660c15b92052c1ae502524414654a6571d365b2d3e5844d0a72a5172a130df6",
+      "date": "2009-08-20T04:55:27-04:00",
+      "subject": "[R-sig-teaching] cartograms in R",
+      "subject_clean": "cartograms in R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I posted a question about cartograms in R on the R-sig-Geo list 10 days \nago and didn't get any responses....  but it is also relevant to \nteaching with R, so I'll post it here now.\n\nI installed libfftw3, and also Rcartogram from Omegahat, and I am able \nto run\nDuncan's example successfully:\n\nhttp://www.omegahat.org/Rcartogram/demo/synthetic.R\n\nIn fact, the example runs surprisingly fast, even on the humble Mac G4 I \nhave at\nhome.  Very cool!\n\nSo now let's reach for the stars.  I would like to be able to assign a \nproject\nfor my students to make some cartograms in R.  Has anyone tried this in\npractice?  I see that Duncan gave this as a bonus project in fall 2008:\n\nhttp://eeyore.ucdavis.edu/stat141/Homeworks/hw4.html\n\nMy students won't be wizards with R, in fact, they will be first-semester\nstudents in R, but they are in the Honors program (top 1 percent of Purdue\nstudents).  I think it is an excellent opportunity to get them making some\ncartograms with R.  What I would like to have are some start-to-finish \nexamples\nto give to the students.  Duncan's synthetic.R example is really cool, \nbut it\ndoesn't produce a cartogram, for instance, of the whole USA or the whole \nglobe.\n\nMaybe it sounds crazy, but I would love to have the students be able to make\nsome maps of the caliber seen on Worldmapper:\nhttp://www.worldmapper.org/\n\nIs this feasible?  Crazy?  Hints?  Suggestions?  I always like to have some\nnice, concrete examples to give to the students before starting (rather than\nletting the students jump into water over their heads and sink).\n\nAny advice that you have would be greatly appreciated.",
+      "body_snippet": "I posted a question about cartograms in R on the R-sig-Geo list 10 days \nago and didn't get any responses....  but it is also relevant to \nteaching with R, so I'll post it here now.\n\nI installed libff",
+      "thread_id": "thread-69078c514988",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-506288e950d8",
+      "message_id": "<4A8D2249020000A600056988@uct5.uct.usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2009-08-20T10:15:37-04:00",
+      "subject": "[R-sig-teaching] Standardized canonical discriminant functions",
+      "subject_clean": "Standardized canonical discriminant functions",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090820/c83d4183/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090820/c83d4183/attachment.pl>",
+      "thread_id": "thread-506288e950d8",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-541e603a4437",
+      "message_id": "<4A8D36EB020000A6000569C6@uct5.uct.usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2009-08-20T11:43:39-04:00",
+      "subject": "[R-sig-teaching] Standardized canonical discriminant functions",
+      "subject_clean": "Standardized canonical discriminant functions",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090820/a1f5a9f1/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090820/a1f5a9f1/attachment.pl>",
+      "thread_id": "thread-541e603a4437",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-906958fa01cb",
+      "message_id": "<213fc0be0908250842u57fa3a68p1ebca92f380fdab1@mail.gmail.com>",
+      "from_name": "Luna Laurent",
+      "from_email_hash": "3636a9d9a05c9e283e45b277d638a3b43d1015f2a222ce0765a78b898ff56a35",
+      "date": "2009-08-25T08:42:55-07:00",
+      "subject": "[R-sig-teaching] seeking tutor on statistical learning and data-mining",
+      "subject_clean": "seeking tutor on statistical learning and data-mining",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090825/eec386ba/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090825/eec386ba/attachment.pl>",
+      "thread_id": "thread-906958fa01cb",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-1e63da5768d2",
+      "message_id": "<213fc0be0908302250r5ef94475ic50a25913587972c@mail.gmail.com>",
+      "from_name": "Luna Laurent",
+      "from_email_hash": "3636a9d9a05c9e283e45b277d638a3b43d1015f2a222ce0765a78b898ff56a35",
+      "date": "2009-08-30T22:50:08-07:00",
+      "subject": "[R-sig-teaching] online classes or online eduction in statistics? esp. time series analysis and cointegration?",
+      "subject_clean": "online classes or online eduction in statistics? esp. time series analysis and cointegration?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090830/4cdca55b/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090830/4cdca55b/attachment.pl>",
+      "thread_id": "thread-1e63da5768d2",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-52ebc5124195",
+      "message_id": "<213fc0be0908302313w580d65e5g41281dde416ad346@mail.gmail.com>",
+      "from_name": "Luna Laurent",
+      "from_email_hash": "3636a9d9a05c9e283e45b277d638a3b43d1015f2a222ce0765a78b898ff56a35",
+      "date": "2009-08-30T23:13:41-07:00",
+      "subject": "[R-sig-teaching] [R] online classes or online eduction in statistics? esp. time series analysis and cointegration?",
+      "subject_clean": "online classes or online eduction in statistics? esp. time series analysis and cointegration?",
+      "in_reply_to": "<0KP8007UC91DYJJ1@vms173017.mailsrvcs.net>",
+      "references": [
+        "<213fc0be0908302250r5ef94475ic50a25913587972c@mail.gmail.com>",
+        "<0KP8007UC91DYJJ1@vms173017.mailsrvcs.net>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090830/3cf04a32/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090830/3cf04a32/attachment.pl>",
+      "thread_id": "thread-52ebc5124195",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-100cb5c57a96",
+      "message_id": "<896718040908310432y36d19fbbmc6829dc66d9e9e53@mail.gmail.com>",
+      "from_name": "sanket deshmukh",
+      "from_email_hash": "87c179c993b109098143357ee6605108aec888cefab30e62920ba991eb9b2bd0",
+      "date": "2009-08-31T17:02:28+05:30",
+      "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 24, Issue 6",
+      "subject_clean": "R-sig-teaching Digest, Vol 24, Issue 6",
+      "in_reply_to": "<mailman.7.1251712803.5605.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.7.1251712803.5605.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090831/d1bdb534/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090831/d1bdb534/attachment.pl>",
+      "thread_id": "thread-100cb5c57a96",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-41e0c1939a76",
+      "message_id": "<20090831175318.61444.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2009-08-31T13:53:18-04:00",
+      "subject": "[R-sig-teaching] [R] online classes or online eduction in",
+      "subject_clean": "online classes or online eduction in",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Forwarded message:\n> From: Luna Laurent <luna.laurent.ucb at gmail.com>\n> \n> What's their fee structures?\n\nFor the forecasting course\n\nRegister Online - $469\nRegister Online (academic) - $369 (you must be affiliated with a\ncollege, university or high school)\n\nAdd $50 service fee if you require a prior invoice, or if you need to\nsubmit a purchase order or voucher, pay by wire transfer or EFT, or\nrefund and reprocess a prior payment. Please use this printed\nregistration form, for these and other special orders. \n\nwhich covers about half of Hanke and Wichern's 9th Edition of Business\nForecasting. \n\n------->  First-time AP Stats. teacher?  Help is on the way! See\n\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n         \nRobert W. Hayden in the old library at  212 Main Street (P. O. Box 450)\nNorth Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      \nemail  bob statland.org  (add your own \"@\" and save me some spam)",
+      "body_snippet": "Forwarded message:\n> From: Luna Laurent <luna.laurent.ucb at gmail.com>\n> \n> What's their fee structures?\n\nFor the forecasting course\n\nRegister Online - $469\nRegister Online (academic) - $369 (you mus",
+      "thread_id": "thread-41e0c1939a76",
+      "thread_depth": 0,
+      "month": "2009-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-4c772528a3f1",
+      "subject": "Deducer 0.1 Released",
+      "message_count": 4,
+      "participants": [
+        "G. Jay Kerns",
+        "Ian Fellows",
+        "Jan Vandermeer"
+      ],
+      "started": "2009-08-03T11:21:23-07:00",
+      "last_reply": "2009-08-07T11:21:32-07:00",
+      "root_message_id": "msg-4c772528a3f1"
+    },
+    {
+      "id": "thread-69078c514988",
+      "subject": "cartograms in R",
+      "message_count": 1,
+      "participants": [
+        "Mark Daniel Ward"
+      ],
+      "started": "2009-08-20T04:55:27-04:00",
+      "last_reply": "2009-08-20T04:55:27-04:00",
+      "root_message_id": "msg-69078c514988"
+    },
+    {
+      "id": "thread-506288e950d8",
+      "subject": "Standardized canonical discriminant functions",
+      "message_count": 1,
+      "participants": [
+        "AbouEl-Makarim Aboueissa"
+      ],
+      "started": "2009-08-20T10:15:37-04:00",
+      "last_reply": "2009-08-20T10:15:37-04:00",
+      "root_message_id": "msg-506288e950d8"
+    },
+    {
+      "id": "thread-541e603a4437",
+      "subject": "Standardized canonical discriminant functions",
+      "message_count": 1,
+      "participants": [
+        "AbouEl-Makarim Aboueissa"
+      ],
+      "started": "2009-08-20T11:43:39-04:00",
+      "last_reply": "2009-08-20T11:43:39-04:00",
+      "root_message_id": "msg-541e603a4437"
+    },
+    {
+      "id": "thread-906958fa01cb",
+      "subject": "seeking tutor on statistical learning and data-mining",
+      "message_count": 1,
+      "participants": [
+        "Luna Laurent"
+      ],
+      "started": "2009-08-25T08:42:55-07:00",
+      "last_reply": "2009-08-25T08:42:55-07:00",
+      "root_message_id": "msg-906958fa01cb"
+    },
+    {
+      "id": "thread-1e63da5768d2",
+      "subject": "online classes or online eduction in statistics? esp. time series analysis and cointegration?",
+      "message_count": 1,
+      "participants": [
+        "Luna Laurent"
+      ],
+      "started": "2009-08-30T22:50:08-07:00",
+      "last_reply": "2009-08-30T22:50:08-07:00",
+      "root_message_id": "msg-1e63da5768d2"
+    },
+    {
+      "id": "thread-52ebc5124195",
+      "subject": "online classes or online eduction in statistics? esp. time series analysis and cointegration?",
+      "message_count": 1,
+      "participants": [
+        "Luna Laurent"
+      ],
+      "started": "2009-08-30T23:13:41-07:00",
+      "last_reply": "2009-08-30T23:13:41-07:00",
+      "root_message_id": "msg-52ebc5124195"
+    },
+    {
+      "id": "thread-41e0c1939a76",
+      "subject": "online classes or online eduction in",
+      "message_count": 1,
+      "participants": [
+        "Robert W. Hayden"
+      ],
+      "started": "2009-08-31T13:53:18-04:00",
+      "last_reply": "2009-08-31T13:53:18-04:00",
+      "root_message_id": "msg-41e0c1939a76"
+    },
+    {
+      "id": "thread-100cb5c57a96",
+      "subject": "R-sig-teaching Digest, Vol 24, Issue 6",
+      "message_count": 1,
+      "participants": [
+        "sanket deshmukh"
+      ],
+      "started": "2009-08-31T17:02:28+05:30",
+      "last_reply": "2009-08-31T17:02:28+05:30",
+      "root_message_id": "msg-100cb5c57a96"
+    }
+  ]
+}

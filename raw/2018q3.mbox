@@ -1,0 +1,1849 @@
+From cry@n @ending from bingh@mton@edu  Mon Jul  2 22:30:40 2018
+From: cry@n @ending from bingh@mton@edu (Christopher W. Ryan)
+Date: Mon, 2 Jul 2018 16:30:40 -0400
+Subject: [R-sig-teaching] R for introductory epidemiology for MPH
+ students--base or with a package or two?
+Message-ID: <4647be21-9195-a0c0-3cb1-9161bf31bdf8@binghamton.edu>
+
+I'll be teaching intro epidemiology in a new MPH program, starting this
+fall. Weekly sessions, each 3 hours long. Expecting 12-20 students. I
+plan to try to make it fairly interactive, with a "computer lab" as part
+of almost every class session. Using R. I'll do an initial "needs
+assessment" prior to or on first day of class; for now I assume none of
+the students are at all familiar with R. My first thought was to limit
+my efforts to base R, rather than try to use any installable packages.
+Any opinions about that? I specifically wonder whether Hadley Wickham's
+tidyverse way of doing things is become so commonplace (and rightly so!)
+that I should introduce this. It certainly makes data wrangling much
+easier, and that is a lot of what epidemiologists do, since we are so
+often given existing data that were not recorded with future analyses in
+mind.
+
+Thoughts on any of the above?  Thanks.
+
+--Chris Ryan, MD, MS
+Binghamton University,
+SUNY Upstate Medical University,
+and
+Broome County Health Department, NY, US
+
+
+From rpruim @ending from c@lvin@edu  Mon Jul  2 22:38:42 2018
+From: rpruim @ending from c@lvin@edu (Randall Pruim)
+Date: Mon, 2 Jul 2018 20:38:42 +0000
+Subject: [R-sig-teaching] R for introductory epidemiology for MPH
+ students--base or with a package or two?
+In-Reply-To: <4647be21-9195-a0c0-3cb1-9161bf31bdf8@binghamton.edu>
+References: <4647be21-9195-a0c0-3cb1-9161bf31bdf8@binghamton.edu>
+Message-ID: <893658F3-90C3-4CDD-A27F-CDC90EAA8E0D@calvin.edu>
+
+Christopher,
+
+It sounds to me like you are the right track to answering your own question.  There are certainly packages that make some things much easier (like the tidyverse suite you mention), and in the end you will need to match what you choose to your audience and your goals.
+
+So my take is this:
+
+	* there is no one right answer,
+	* there is no reason to avoid packages just for the sake of avoiding packages.
+
+Of course, now comes the work: figuring out the right set of packages (and functions within them) for your situation.
+
+Best of luck!
+
+?rjp
+
+
+
+> On Jul 2, 2018, at 4:30 PM, Christopher W. Ryan <cryan at binghamton.edu> wrote:
+> 
+> I'll be teaching intro epidemiology in a new MPH program, starting this
+> fall. Weekly sessions, each 3 hours long. Expecting 12-20 students. I
+> plan to try to make it fairly interactive, with a "computer lab" as part
+> of almost every class session. Using R. I'll do an initial "needs
+> assessment" prior to or on first day of class; for now I assume none of
+> the students are at all familiar with R. My first thought was to limit
+> my efforts to base R, rather than try to use any installable packages.
+> Any opinions about that? I specifically wonder whether Hadley Wickham's
+> tidyverse way of doing things is become so commonplace (and rightly so!)
+> that I should introduce this. It certainly makes data wrangling much
+> easier, and that is a lot of what epidemiologists do, since we are so
+> often given existing data that were not recorded with future analyses in
+> mind.
+> 
+> Thoughts on any of the above?  Thanks.
+> 
+> --Chris Ryan, MD, MS
+> Binghamton University,
+> SUNY Upstate Medical University,
+> and
+> Broome County Health Department, NY, US
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://urldefense.proofpoint.com/v2/url?u=https-3A__stat.ethz.ch_mailman_listinfo_r-2Dsig-2Dteaching&d=DwICAg&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=XIWpSAvwpw16PWUfq8YeKBIcv84Coz7BGJ8NO5s4j3k&s=Pxryj4gGvh3YoyXVfquwKBRz7B1Io4kdOGkF6qUqvD0&e=
+
+
+From h@wickh@m @ending from gm@il@com  Tue Jul  3 00:10:40 2018
+From: h@wickh@m @ending from gm@il@com (Hadley Wickham)
+Date: Mon, 2 Jul 2018 17:10:40 -0500
+Subject: [R-sig-teaching] R for introductory epidemiology for MPH
+ students--base or with a package or two?
+In-Reply-To: <4647be21-9195-a0c0-3cb1-9161bf31bdf8@binghamton.edu>
+References: <4647be21-9195-a0c0-3cb1-9161bf31bdf8@binghamton.edu>
+Message-ID: <CABdHhvHT09LxJFcGhjTu9j6yJ5Fxz8gGkBKSwTZyALAcozaeyg@mail.gmail.com>
+
+David Robinson has a nice blog post on the subject:
+http://varianceexplained.org/r/teach-tidyverse/
+Hadley
+
+On Mon, Jul 2, 2018 at 3:30 PM, Christopher W. Ryan
+<cryan at binghamton.edu> wrote:
+> I'll be teaching intro epidemiology in a new MPH program, starting this
+> fall. Weekly sessions, each 3 hours long. Expecting 12-20 students. I
+> plan to try to make it fairly interactive, with a "computer lab" as part
+> of almost every class session. Using R. I'll do an initial "needs
+> assessment" prior to or on first day of class; for now I assume none of
+> the students are at all familiar with R. My first thought was to limit
+> my efforts to base R, rather than try to use any installable packages.
+> Any opinions about that? I specifically wonder whether Hadley Wickham's
+> tidyverse way of doing things is become so commonplace (and rightly so!)
+> that I should introduce this. It certainly makes data wrangling much
+> easier, and that is a lot of what epidemiologists do, since we are so
+> often given existing data that were not recorded with future analyses in
+> mind.
+>
+> Thoughts on any of the above?  Thanks.
+>
+> --Chris Ryan, MD, MS
+> Binghamton University,
+> SUNY Upstate Medical University,
+> and
+> Broome County Health Department, NY, US
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+-- 
+http://hadley.nz
+
+
+From drki@mu@@ @ending from gm@il@com  Tue Jul  3 07:16:03 2018
+From: drki@mu@@ @ending from gm@il@com (K Imran M)
+Date: Tue, 3 Jul 2018 13:16:03 +0800
+Subject: [R-sig-teaching] R for introductory epidemiology for MPH
+ students--base or with a package or two?
+In-Reply-To: <4647be21-9195-a0c0-3cb1-9161bf31bdf8@binghamton.edu>
+References: <4647be21-9195-a0c0-3cb1-9161bf31bdf8@binghamton.edu>
+Message-ID: <CADop7+jeset1i1pStGfjCziYTL=5b-Fp1hAbO9Ksq_9jmtyxMQ@mail.gmail.com>
+
+Chris,
+
+I introduced R to our DrPH students like 3 or 4 years ago. All of our
+DrPH students come from MD background with very little or no
+programming background. I started teaching them with base R and
+gradually increase the use 'tidyverse' packages. I can't help but
+noticing that 'tidyverse' fastens the learning process especially for
+data wrangling (using dplyr) and exploratory data analysis (using
+ggplot2). The help documents (vignettes) for tidyverse are very
+useful, the books are available (R graphics Cookbook, R for Data
+Science) and the websites (ggplot2 website, Cookbook for R websites)
+are excellent. I also teach them Rmarkdown which they are using very
+happily to create pdf and MS Word (especially) for their assignments.
+So as for now, tidyverse constitutes for almost 95% of my teaching and
+my workshop when it comes to data wrangling and data exploration.
+
+Regards,
+Kamarul
+-------------------------------------
+Kamarul Imran Musa
+MD, MCommunityMed, PhD (Statistics & Epidemiology)
+Associate Professor (Epidemiology & Biostatistics) and
+Public Health Medicine Specialist,
+
+Department of Community Medicine,
+School of Medical Sciences,
+Universiti Sains Malaysia,
+16150 Kbg Kerian Kelantan
+Malaysia
+Tel +6097676621
+
+
+Malaysian Medical Council Registration: 34450
+ResearcherID: http://www.researcherid.com/rid/N-3198-2015
+Google-scholar: 'Kamarul Imran Musa'  at https://goo.gl/D3o3y6
+ORCID ID: orcid.org/0000-0002-3708-0628
+ScopusID: 57194536466
+On Tue, Jul 3, 2018 at 4:30 AM Christopher W. Ryan <cryan at binghamton.edu> wrote:
+>
+> I'll be teaching intro epidemiology in a new MPH program, starting this
+> fall. Weekly sessions, each 3 hours long. Expecting 12-20 students. I
+> plan to try to make it fairly interactive, with a "computer lab" as part
+> of almost every class session. Using R. I'll do an initial "needs
+> assessment" prior to or on first day of class; for now I assume none of
+> the students are at all familiar with R. My first thought was to limit
+> my efforts to base R, rather than try to use any installable packages.
+> Any opinions about that? I specifically wonder whether Hadley Wickham's
+> tidyverse way of doing things is become so commonplace (and rightly so!)
+> that I should introduce this. It certainly makes data wrangling much
+> easier, and that is a lot of what epidemiologists do, since we are so
+> often given existing data that were not recorded with future analyses in
+> mind.
+>
+> Thoughts on any of the above?  Thanks.
+>
+> --Chris Ryan, MD, MS
+> Binghamton University,
+> SUNY Upstate Medical University,
+> and
+> Broome County Health Department, NY, US
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From timothy@c@b@te@ @ending from gm@il@com  Tue Jul  3 13:19:01 2018
+From: timothy@c@b@te@ @ending from gm@il@com (Timothy Bates)
+Date: Tue, 3 Jul 2018 12:19:01 +0100
+Subject: [R-sig-teaching] R for introductory epidemiology for MPH
+ students--base or with a package or two?
+In-Reply-To: <CADop7+jeset1i1pStGfjCziYTL=5b-Fp1hAbO9Ksq_9jmtyxMQ@mail.gmail.com>
+References: <4647be21-9195-a0c0-3cb1-9161bf31bdf8@binghamton.edu>
+ <CADop7+jeset1i1pStGfjCziYTL=5b-Fp1hAbO9Ksq_9jmtyxMQ@mail.gmail.com>
+Message-ID: <CAKe6t22inktrG5jvLgqWnFm3X0f3Pta5UCuQBUn7fXcK9LGqQw@mail.gmail.com>
+
+I'd say stick to base R wherever possible.
+
+We added tidyverse in post graduate lectures this year.In practice, it was
+just a user-preference generating a lot more non-statistics to learn,
+distracting from the actual statistics that R does so well, and that is
+what stats courses are for, after all :-)
+
+Based on that, we're dropping all the tidyverse this year. Just saying to
+students that there are various tool chains they might adopt as they
+progress beyond the course. Tidyverse also made marking harder (tutors who
+don't know it), and makes debugging harder, as it encourages copy-paste of
+long chains of piped functions, that can't easily be probed for
+intermediate results. May as well just wrap the whole lot into a function
+if that's the case.
+
+The exceptions, I think, are packages where there isn't support in base R.
+But that's really restricted to things like structural equation modelling.
+
+Some visualization and table formatting tools can also be helpful: like
+visreg.
+
+Others will no doubt agree and disagree :-)
+T
+
+On Tue, Jul 3, 2018, 6:16 AM K Imran M <drki.musa at gmail.com> wrote:
+
+> Chris,
+>
+> I introduced R to our DrPH students like 3 or 4 years ago. All of our
+> DrPH students come from MD background with very little or no
+> programming background. I started teaching them with base R and
+> gradually increase the use 'tidyverse' packages. I can't help but
+> noticing that 'tidyverse' fastens the learning process especially for
+> data wrangling (using dplyr) and exploratory data analysis (using
+> ggplot2). The help documents (vignettes) for tidyverse are very
+> useful, the books are available (R graphics Cookbook, R for Data
+> Science) and the websites (ggplot2 website, Cookbook for R websites)
+> are excellent. I also teach them Rmarkdown which they are using very
+> happily to create pdf and MS Word (especially) for their assignments.
+> So as for now, tidyverse constitutes for almost 95% of my teaching and
+> my workshop when it comes to data wrangling and data exploration.
+>
+> Regards,
+> Kamarul
+> -------------------------------------
+> Kamarul Imran Musa
+> MD, MCommunityMed, PhD (Statistics & Epidemiology)
+> Associate Professor (Epidemiology & Biostatistics) and
+> Public Health Medicine Specialist,
+>
+> Department of Community Medicine,
+> School of Medical Sciences,
+> Universiti Sains Malaysia,
+> 16150 Kbg Kerian Kelantan
+> Malaysia
+> Tel +6097676621
+>
+>
+> Malaysian Medical Council Registration: 34450
+> ResearcherID: http://www.researcherid.com/rid/N-3198-2015
+> Google-scholar: 'Kamarul Imran Musa'  at https://goo.gl/D3o3y6
+> ORCID ID: orcid.org/0000-0002-3708-0628
+> ScopusID: 57194536466
+> On Tue, Jul 3, 2018 at 4:30 AM Christopher W. Ryan <cryan at binghamton.edu>
+> wrote:
+> >
+> > I'll be teaching intro epidemiology in a new MPH program, starting this
+> > fall. Weekly sessions, each 3 hours long. Expecting 12-20 students. I
+> > plan to try to make it fairly interactive, with a "computer lab" as part
+> > of almost every class session. Using R. I'll do an initial "needs
+> > assessment" prior to or on first day of class; for now I assume none of
+> > the students are at all familiar with R. My first thought was to limit
+> > my efforts to base R, rather than try to use any installable packages.
+> > Any opinions about that? I specifically wonder whether Hadley Wickham's
+> > tidyverse way of doing things is become so commonplace (and rightly so!)
+> > that I should introduce this. It certainly makes data wrangling much
+> > easier, and that is a lot of what epidemiologists do, since we are so
+> > often given existing data that were not recorded with future analyses in
+> > mind.
+> >
+> > Thoughts on any of the above?  Thanks.
+> >
+> > --Chris Ryan, MD, MS
+> > Binghamton University,
+> > SUNY Upstate Medical University,
+> > and
+> > Broome County Health Department, NY, US
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+	[[alternative HTML version deleted]]
+
+
+From Mich@el@Gr@n@@@ @ending from u@d@edu  Tue Jul  3 15:34:11 2018
+From: Mich@el@Gr@n@@@ @ending from u@d@edu (Granaas, Michael)
+Date: Tue, 3 Jul 2018 13:34:11 +0000
+Subject: [R-sig-teaching] R for introductory epidemiology for MPH
+ students--base or with a package or two?
+In-Reply-To: <893658F3-90C3-4CDD-A27F-CDC90EAA8E0D@calvin.edu>
+References: <4647be21-9195-a0c0-3cb1-9161bf31bdf8@binghamton.edu>,
+ <893658F3-90C3-4CDD-A27F-CDC90EAA8E0D@calvin.edu>
+Message-ID: <BYAPR08MB474175E07ACE8F730E974FB2E2420@BYAPR08MB4741.namprd08.prod.outlook.com>
+
+Randall Pruim is spot on--there is no single right answer--except, maybe, RStudio, which I strongly recommend in addition to base R.
+
+Adding packages isn't a big deal--as long as they are relevant for what your students are doing.   It is especially easy in RStudio to get packages added to your library.  But only add packages that are relevant to students' immediate needs.
+
+I am going to be following the lead of others and add R Markdown this coming year. 
+
+In the process of adding R to my own classes I've reviewed dozens of resources--books, online videos, Coursera, etc., and found that there is a wealth of good material out there.  I have found that I need to pick a small number of resources for my students to avoid overwhelming them.  
+
+Currently I am taking advantage of datacamp.com's offer of free access for students enrolled in university courses.  My only complaint is that I don't get to keep my free access during the summer, so I have to review/evaluate their materials during the academic year to determine which courses/units I will be assigning.  That being such a minor complaint, I would encourage you to look at their offerings (many courses have the first lesson free to all) and see if anything looks promising to you.
+
+My biggest challenge is to get students to actually learn what they are doing rather than copying and pasting code.   I think that problem deserves a separate thread.  
+
+Michael
+
+__________________________________________________________
+Michael Granaas                                           mgranaas at usd.edu
+Department of Psychology                           SL: VRprofessor Resident
+University of South Dakota
+414 E. Clark St                                             Phone: 605 677 5351
+Vermillion, SD  57069                                 FAX: 605 677 3195
+ ____________________________________________________________
+My Personal Pet Project: http://maps.secondlife.com/secondlife/Chieut/20/252/88
+Free classrooms for educators exploring Second Life
+
+________________________________________
+From: R-sig-teaching <r-sig-teaching-bounces at r-project.org> on behalf of Randall Pruim <rpruim at calvin.edu>
+Sent: Monday, July 2, 2018 3:38 PM
+To: Christopher W. Ryan
+Cc: R-sig-teaching
+Subject: Re: [R-sig-teaching] R for introductory epidemiology for MPH students--base or with a package or two?
+
+Christopher,
+
+It sounds to me like you are the right track to answering your own question.  There are certainly packages that make some things much easier (like the tidyverse suite you mention), and in the end you will need to match what you choose to your audience and your goals.
+
+So my take is this:
+
+        * there is no one right answer,
+        * there is no reason to avoid packages just for the sake of avoiding packages.
+
+Of course, now comes the work: figuring out the right set of packages (and functions within them) for your situation.
+
+Best of luck!
+
+?rjp
+
+
+
+> On Jul 2, 2018, at 4:30 PM, Christopher W. Ryan <cryan at binghamton.edu> wrote:
+>
+> I'll be teaching intro epidemiology in a new MPH program, starting this
+> fall. Weekly sessions, each 3 hours long. Expecting 12-20 students. I
+> plan to try to make it fairly interactive, with a "computer lab" as part
+> of almost every class session. Using R. I'll do an initial "needs
+> assessment" prior to or on first day of class; for now I assume none of
+> the students are at all familiar with R. My first thought was to limit
+> my efforts to base R, rather than try to use any installable packages.
+> Any opinions about that? I specifically wonder whether Hadley Wickham's
+> tidyverse way of doing things is become so commonplace (and rightly so!)
+> that I should introduce this. It certainly makes data wrangling much
+> easier, and that is a lot of what epidemiologists do, since we are so
+> often given existing data that were not recorded with future analyses in
+> mind.
+>
+> Thoughts on any of the above?  Thanks.
+>
+> --Chris Ryan, MD, MS
+> Binghamton University,
+> SUNY Upstate Medical University,
+> and
+> Broome County Health Department, NY, US
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://urldefense.proofpoint.com/v2/url?u=https-3A__stat.ethz.ch_mailman_listinfo_r-2Dsig-2Dteaching&d=DwICAg&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=XIWpSAvwpw16PWUfq8YeKBIcv84Coz7BGJ8NO5s4j3k&s=Pxryj4gGvh3YoyXVfquwKBRz7B1Io4kdOGkF6qUqvD0&e=
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From cry@n @ending from bingh@mton@edu  Fri Jul 20 17:13:46 2018
+From: cry@n @ending from bingh@mton@edu (Christopher W. Ryan)
+Date: Fri, 20 Jul 2018 11:13:46 -0400
+Subject: [R-sig-teaching] source for rhodococcus nosocomial outbreak data
+Message-ID: <737cc7a5-234c-067b-0f6d-03c50bc1e16c@binghamton.edu>
+
+Many moons ago, the US CDC came out with DoEpi, which was computer-based
+instruction in outbreak investigation, using the CDC's Epi Info software.
+
+I recall two instructionally useful cases in DoEpi:  the Oswego church
+supper outbreak (a classic!) and a nosocomial outbreak of
+post-sternotomy sternal osteomyelitis with Rhodococcus.
+
+I'd like to use these cases in an intro epidemiology class in a new MPH
+program, but with R.  I no longer have my old DoEpi files. I found the
+Oswego church supper data in the R epitools package. Does anyone know if
+the rhodococcus dataset is available somewhere?
+
+Thanks.
+
+--Chris Ryan
+SUNY Upstate Medical University
+and
+Binghamton University
+
+
+From jone@ @ending from reed@edu  Fri Jul 20 18:46:44 2018
+From: jone@ @ending from reed@edu (Albyn Jones)
+Date: Fri, 20 Jul 2018 09:46:44 -0700
+Subject: [R-sig-teaching] 
+ source for rhodococcus nosocomial outbreak data
+In-Reply-To: <737cc7a5-234c-067b-0f6d-03c50bc1e16c@binghamton.edu>
+References: <737cc7a5-234c-067b-0f6d-03c50bc1e16c@binghamton.edu>
+Message-ID: <CA+3jU8E3ffxwPePEHpdwKLLYyDn6feKXoX55KWMMZmquPRyLEA@mail.gmail.com>
+
+Google points me to
+
+New England Journal of Medicine
+<https://www.researchgate.net/journal/0028-4793_New_England_Journal_of_Medicine>
+324(2):104-9 ? February 1991.
+
+and
+
+https://www.nejm.org/doi/full/10.1056/NEJM199101103240206
+
+On Fri, Jul 20, 2018 at 8:13 AM, Christopher W. Ryan <cryan at binghamton.edu>
+wrote:
+
+> Many moons ago, the US CDC came out with DoEpi, which was computer-based
+> instruction in outbreak investigation, using the CDC's Epi Info software.
+>
+> I recall two instructionally useful cases in DoEpi:  the Oswego church
+> supper outbreak (a classic!) and a nosocomial outbreak of
+> post-sternotomy sternal osteomyelitis with Rhodococcus.
+>
+> I'd like to use these cases in an intro epidemiology class in a new MPH
+> program, but with R.  I no longer have my old DoEpi files. I found the
+> Oswego church supper data in the R epitools package. Does anyone know if
+> the rhodococcus dataset is available somewhere?
+>
+> Thanks.
+>
+> --Chris Ryan
+> SUNY Upstate Medical University
+> and
+> Binghamton University
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+	[[alternative HTML version deleted]]
+
+
+From cry@n @ending from bingh@mton@edu  Fri Jul 20 19:09:12 2018
+From: cry@n @ending from bingh@mton@edu (Christopher W. Ryan)
+Date: Fri, 20 Jul 2018 13:09:12 -0400
+Subject: [R-sig-teaching] 
+ source for rhodococcus nosocomial outbreak data
+In-Reply-To: <CA+3jU8E3ffxwPePEHpdwKLLYyDn6feKXoX55KWMMZmquPRyLEA@mail.gmail.com>
+References: <737cc7a5-234c-067b-0f6d-03c50bc1e16c@binghamton.edu>
+ <CA+3jU8E3ffxwPePEHpdwKLLYyDn6feKXoX55KWMMZmquPRyLEA@mail.gmail.com>
+Message-ID: <7b5fad86-2909-a44a-8c2e-4433549cc6f3@binghamton.edu>
+
+Thanks. I'm looking for raw anonymous data, e.g. a csv file of a line
+listing.
+
+--Chris
+
+Albyn Jones wrote:
+> Google points me to
+> 
+> New England Journal of Medicine
+> <https://www.researchgate.net/journal/0028-4793_New_England_Journal_of_Medicine>
+> 324(2):104-9 ? February 1991.
+> 
+> and
+> 
+> https://www.nejm.org/doi/full/10.1056/NEJM199101103240206
+> 
+> On Fri, Jul 20, 2018 at 8:13 AM, Christopher W. Ryan
+> <cryan at binghamton.edu <mailto:cryan at binghamton.edu>> wrote:
+> 
+>     Many moons ago, the US CDC came out with DoEpi, which was computer-based
+>     instruction in outbreak investigation, using the CDC's Epi Info
+>     software.
+> 
+>     I recall two instructionally useful cases in DoEpi:  the Oswego church
+>     supper outbreak (a classic!) and a nosocomial outbreak of
+>     post-sternotomy sternal osteomyelitis with Rhodococcus.
+> 
+>     I'd like to use these cases in an intro epidemiology class in a new MPH
+>     program, but with R.  I no longer have my old DoEpi files. I found the
+>     Oswego church supper data in the R epitools package. Does anyone know if
+>     the rhodococcus dataset is available somewhere?
+> 
+>     Thanks.
+> 
+>     --Chris Ryan
+>     SUNY Upstate Medical University
+>     and
+>     Binghamton University
+> 
+>     _______________________________________________
+>     R-sig-teaching at r-project.org <mailto:R-sig-teaching at r-project.org>
+>     mailing list
+>     https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>     <https://stat.ethz.ch/mailman/listinfo/r-sig-teaching>
+> 
+>
+
+
+From j@f@rf@n @ending from gm@il@com  Tue Jul 24 22:09:53 2018
+From: j@f@rf@n @ending from gm@il@com (Jose Arturo Farfan)
+Date: Tue, 24 Jul 2018 15:09:53 -0500
+Subject: [R-sig-teaching] R-sig-teaching Digest, Vol 102, Issue 3
+In-Reply-To: <mailman.805.9.1532167202.39293.r-sig-teaching@r-project.org>
+References: <mailman.805.9.1532167202.39293.r-sig-teaching@r-project.org>
+Message-ID: <CAP3zPTM+BdBUzA0ZKr59PbaC5=ARHyN2xzFMrbkRM7Hsp4Tm4A@mail.gmail.com>
+
+Hi Chris,
+
+My sugestion is to download the epi info version3..5.4 from
+
+https://www.cdc.gov/epiinfo/support/downloads/prevversions.html
+
+Install that version, and get the data files, and also the old
+tutorials are going to be installled.
+
+I am very interested in your epidemiology class using R. I am trying
+to do something similar, but I teach statistisc and epidemiology to
+doctors doing the speciality in psychiatry. I have been having
+problems founding databases to present examples to them.
+
+I will appreciate if you can share some information about the approach
+you are doing using R.
+
+Bes wishes and blesings
+Jose A. Farfan-Ale
+
+
+
+
+
+2018-07-21 5:00 GMT-05:00  <r-sig-teaching-request at r-project.org>:
+> Send R-sig-teaching mailing list submissions to
+>         r-sig-teaching at r-project.org
+>
+> To subscribe or unsubscribe via the World Wide Web, visit
+>         https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> or, via email, send a message with subject or body 'help' to
+>         r-sig-teaching-request at r-project.org
+>
+> You can reach the person managing the list at
+>         r-sig-teaching-owner at r-project.org
+>
+> When replying, please edit your Subject line so it is more specific
+> than "Re: Contents of R-sig-teaching digest..."
+>
+>
+> Today's Topics:
+>
+>    1. source for rhodococcus nosocomial outbreak data
+>       (Christopher W. Ryan)
+>    2. Re:  source for rhodococcus nosocomial outbreak data (Albyn Jones)
+>    3. Re:  source for rhodococcus nosocomial outbreak data
+>       (Christopher W. Ryan)
+>
+> ----------------------------------------------------------------------
+>
+> Message: 1
+> Date: Fri, 20 Jul 2018 11:13:46 -0400
+> From: "Christopher W. Ryan" <cryan at binghamton.edu>
+> To: R-sig-teaching <r-sig-teaching at r-project.org>
+> Subject: [R-sig-teaching] source for rhodococcus nosocomial outbreak
+>         data
+> Message-ID: <737cc7a5-234c-067b-0f6d-03c50bc1e16c at binghamton.edu>
+> Content-Type: text/plain; charset="utf-8"
+>
+> Many moons ago, the US CDC came out with DoEpi, which was computer-based
+> instruction in outbreak investigation, using the CDC's Epi Info software.
+>
+> I recall two instructionally useful cases in DoEpi:  the Oswego church
+> supper outbreak (a classic!) and a nosocomial outbreak of
+> post-sternotomy sternal osteomyelitis with Rhodococcus.
+>
+> I'd like to use these cases in an intro epidemiology class in a new MPH
+> program, but with R.  I no longer have my old DoEpi files. I found the
+> Oswego church supper data in the R epitools package. Does anyone know if
+> the rhodococcus dataset is available somewhere?
+>
+> Thanks.
+>
+> --Chris Ryan
+> SUNY Upstate Medical University
+> and
+> Binghamton University
+>
+>
+>
+>
+> ------------------------------
+>
+> Message: 2
+> Date: Fri, 20 Jul 2018 09:46:44 -0700
+> From: Albyn Jones <jones at reed.edu>
+> To: "Christopher W. Ryan" <cryan at binghamton.edu>
+> Cc: R-sig-teaching <r-sig-teaching at r-project.org>
+> Subject: Re: [R-sig-teaching]  source for rhodococcus nosocomial
+>         outbreak data
+> Message-ID:
+>         <CA+3jU8E3ffxwPePEHpdwKLLYyDn6feKXoX55KWMMZmquPRyLEA at mail.gmail.com>
+> Content-Type: text/plain; charset="utf-8"
+>
+> Google points me to
+>
+> New England Journal of Medicine
+> <https://www.researchgate.net/journal/0028-4793_New_England_Journal_of_Medicine>
+> 324(2):104-9 ? February 1991.
+>
+> and
+>
+> https://www.nejm.org/doi/full/10.1056/NEJM199101103240206
+>
+> On Fri, Jul 20, 2018 at 8:13 AM, Christopher W. Ryan <cryan at binghamton.edu>
+> wrote:
+>
+>> Many moons ago, the US CDC came out with DoEpi, which was computer-based
+>> instruction in outbreak investigation, using the CDC's Epi Info software.
+>>
+>> I recall two instructionally useful cases in DoEpi:  the Oswego church
+>> supper outbreak (a classic!) and a nosocomial outbreak of
+>> post-sternotomy sternal osteomyelitis with Rhodococcus.
+>>
+>> I'd like to use these cases in an intro epidemiology class in a new MPH
+>> program, but with R.  I no longer have my old DoEpi files. I found the
+>> Oswego church supper data in the R epitools package. Does anyone know if
+>> the rhodococcus dataset is available somewhere?
+>>
+>> Thanks.
+>>
+>> --Chris Ryan
+>> SUNY Upstate Medical University
+>> and
+>> Binghamton University
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>
+>         [[alternative HTML version deleted]]
+>
+>
+>
+>
+> ------------------------------
+>
+> Message: 3
+> Date: Fri, 20 Jul 2018 13:09:12 -0400
+> From: "Christopher W. Ryan" <cryan at binghamton.edu>
+> To: R-sig-teaching <r-sig-teaching at r-project.org>
+> Subject: Re: [R-sig-teaching]  source for rhodococcus nosocomial
+>         outbreak data
+> Message-ID: <7b5fad86-2909-a44a-8c2e-4433549cc6f3 at binghamton.edu>
+> Content-Type: text/plain; charset="utf-8"
+>
+> Thanks. I'm looking for raw anonymous data, e.g. a csv file of a line
+> listing.
+>
+> --Chris
+>
+> Albyn Jones wrote:
+>> Google points me to
+>>
+>> New England Journal of Medicine
+>> <https://www.researchgate.net/journal/0028-4793_New_England_Journal_of_Medicine>
+>> 324(2):104-9 ? February 1991.
+>>
+>> and
+>>
+>> https://www.nejm.org/doi/full/10.1056/NEJM199101103240206
+>>
+>> On Fri, Jul 20, 2018 at 8:13 AM, Christopher W. Ryan
+>> <cryan at binghamton.edu <mailto:cryan at binghamton.edu>> wrote:
+>>
+>>     Many moons ago, the US CDC came out with DoEpi, which was computer-based
+>>     instruction in outbreak investigation, using the CDC's Epi Info
+>>     software.
+>>
+>>     I recall two instructionally useful cases in DoEpi:  the Oswego church
+>>     supper outbreak (a classic!) and a nosocomial outbreak of
+>>     post-sternotomy sternal osteomyelitis with Rhodococcus.
+>>
+>>     I'd like to use these cases in an intro epidemiology class in a new MPH
+>>     program, but with R.  I no longer have my old DoEpi files. I found the
+>>     Oswego church supper data in the R epitools package. Does anyone know if
+>>     the rhodococcus dataset is available somewhere?
+>>
+>>     Thanks.
+>>
+>>     --Chris Ryan
+>>     SUNY Upstate Medical University
+>>     and
+>>     Binghamton University
+>>
+>>     _______________________________________________
+>>     R-sig-teaching at r-project.org <mailto:R-sig-teaching at r-project.org>
+>>     mailing list
+>>     https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>     <https://stat.ethz.ch/mailman/listinfo/r-sig-teaching>
+>>
+>>
+>
+>
+>
+>
+> ------------------------------
+>
+> Subject: Digest Footer
+>
+> _______________________________________________
+> R-sig-teaching mailing list
+> R-sig-teaching at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+> ------------------------------
+>
+> End of R-sig-teaching Digest, Vol 102, Issue 3
+> **********************************************
+
+
+From b@un1 @ending from @tudent@@tow@on@edu  Sat Jul 28 16:46:43 2018
+From: b@un1 @ending from @tudent@@tow@on@edu (Baojun Sun)
+Date: Sat, 28 Jul 2018 10:46:43 -0400
+Subject: [R-sig-teaching] (no subject)
+Message-ID: <CAPkQrWL+pVuEPig+ZhnW9JJ6ZzpN8Nyi3+QfNvw8dr2eB-tqwg@mail.gmail.com>
+
+The book "Introduction to Statistical Learning" gives R scripts for its
+labs. I found a script for ridge regression that works on the dataset the
+book uses but is unusable on other datasets I own unless I clean the data.
+
+
+I'm trying to understand the syntax for I need for data cleaning and am
+stuck. I want to learn to do ridge regression. I tried using my own data
+set on this script rather than the book example but get errors. If you use
+your own data set rather than the Hitters dataset, then you'll get errors
+unless you format your code. How do I change this script or clean any
+dataset so that this script for ridge regression useable for all datasets?
+
+
+    library(ISLR)
+
+    fix(Hitters)
+
+    names(Hitters)
+
+    dim(Hitters)
+
+    sum(is.na(Hitters$Salary))
+
+    Hitters=na.omit(Hitters)
+
+    dim(Hitters)
+
+    sum(is.na(Hitters))
+
+    library(leaps)
+
+
+
+    x=model.matrix(Salary~.,Hitters)[,-1]
+
+    y=Hitters$Salary
+
+
+
+    # Ridge Regression
+
+
+
+    library(glmnet)
+
+    grid=10^seq(10,-2,length=100)
+
+    ridge.mod=glmnet(x,y,alpha=0,lambda=grid)
+
+    dim(coef(ridge.mod))
+
+    ridge.mod$lambda[50]
+
+    coef(ridge.mod)[,50]
+
+    sqrt(sum(coef(ridge.mod)[-1,50]^2))
+
+    ridge.mod$lambda[60]
+
+    coef(ridge.mod)[,60]
+
+    sqrt(sum(coef(ridge.mod)[-1,60]^2))
+
+    predict(ridge.mod,s=50,type="coefficients")[1:20,]
+
+    set.seed(1)
+
+    train=sample(1:nrow(x), nrow(x)/2)
+
+    test=(-train)
+
+    y.test=y[test]
+
+    ridge.mod=glmnet(x[train,],y[train],alpha=0,lambda=grid, thresh=1e-12)
+
+    ridge.pred=predict(ridge.mod,s=4,newx=x[test,])
+
+    mean((ridge.pred-y.test)^2)
+
+    mean((mean(y[train])-y.test)^2)
+
+    ridge.pred=predict(ridge.mod,s=1e10,newx=x[test,])
+
+    mean((ridge.pred-y.test)^2)
+
+    ridge.pred=predict(ridge.mod,s=0,newx=x[test,],exact=T)
+
+    mean((ridge.pred-y.test)^2)
+
+    lm(y~x, subset=train)
+
+    predict(ridge.mod,s=0,exact=T,type="coefficients")[1:20,]
+
+    set.seed(1)
+
+    cv.out=cv.glmnet(x[train,],y[train],alpha=0)
+
+    plot(cv.out)
+
+    bestlam=cv.out$lambda.min
+
+    bestlam
+
+    ridge.pred=predict(ridge.mod,s=bestlam,newx=x[test,])
+
+    mean((ridge.pred-y.test)^2)
+
+    out=glmnet(x,y,alpha=0)
+
+    predict(out,type="coefficients",s=bestlam)[1:20,]
+
+	[[alternative HTML version deleted]]
+
+
+From jone@ @ending from reed@edu  Sun Jul 29 07:12:31 2018
+From: jone@ @ending from reed@edu (Albyn Jones)
+Date: Sat, 28 Jul 2018 22:12:31 -0700
+Subject: [R-sig-teaching] (no subject)
+In-Reply-To: <CAPkQrWL+pVuEPig+ZhnW9JJ6ZzpN8Nyi3+QfNvw8dr2eB-tqwg@mail.gmail.com>
+References: <CAPkQrWL+pVuEPig+ZhnW9JJ6ZzpN8Nyi3+QfNvw8dr2eB-tqwg@mail.gmail.com>
+Message-ID: <CA+3jU8Ff3G5AZmMHTKXSOiKucRZArpkdunABLGf943aUGxxV=w@mail.gmail.com>
+
+Is this a question about using R to teach statistical learning, or a
+question for r-help, or homework?
+
+On Sat, Jul 28, 2018 at 7:46 AM, Baojun Sun <bsun1 at students.towson.edu>
+wrote:
+
+> The book "Introduction to Statistical Learning" gives R scripts for its
+> labs. I found a script for ridge regression that works on the dataset the
+> book uses but is unusable on other datasets I own unless I clean the data.
+>
+>
+> I'm trying to understand the syntax for I need for data cleaning and am
+> stuck. I want to learn to do ridge regression. I tried using my own data
+> set on this script rather than the book example but get errors. If you use
+> your own data set rather than the Hitters dataset, then you'll get errors
+> unless you format your code. How do I change this script or clean any
+> dataset so that this script for ridge regression useable for all datasets?
+>
+>
+>     library(ISLR)
+>
+>     fix(Hitters)
+>
+>     names(Hitters)
+>
+>     dim(Hitters)
+>
+>     sum(is.na(Hitters$Salary))
+>
+>     Hitters=na.omit(Hitters)
+>
+>     dim(Hitters)
+>
+>     sum(is.na(Hitters))
+>
+>     library(leaps)
+>
+>
+>
+>     x=model.matrix(Salary~.,Hitters)[,-1]
+>
+>     y=Hitters$Salary
+>
+>
+>
+>     # Ridge Regression
+>
+>
+>
+>     library(glmnet)
+>
+>     grid=10^seq(10,-2,length=100)
+>
+>     ridge.mod=glmnet(x,y,alpha=0,lambda=grid)
+>
+>     dim(coef(ridge.mod))
+>
+>     ridge.mod$lambda[50]
+>
+>     coef(ridge.mod)[,50]
+>
+>     sqrt(sum(coef(ridge.mod)[-1,50]^2))
+>
+>     ridge.mod$lambda[60]
+>
+>     coef(ridge.mod)[,60]
+>
+>     sqrt(sum(coef(ridge.mod)[-1,60]^2))
+>
+>     predict(ridge.mod,s=50,type="coefficients")[1:20,]
+>
+>     set.seed(1)
+>
+>     train=sample(1:nrow(x), nrow(x)/2)
+>
+>     test=(-train)
+>
+>     y.test=y[test]
+>
+>     ridge.mod=glmnet(x[train,],y[train],alpha=0,lambda=grid, thresh=1e-12)
+>
+>     ridge.pred=predict(ridge.mod,s=4,newx=x[test,])
+>
+>     mean((ridge.pred-y.test)^2)
+>
+>     mean((mean(y[train])-y.test)^2)
+>
+>     ridge.pred=predict(ridge.mod,s=1e10,newx=x[test,])
+>
+>     mean((ridge.pred-y.test)^2)
+>
+>     ridge.pred=predict(ridge.mod,s=0,newx=x[test,],exact=T)
+>
+>     mean((ridge.pred-y.test)^2)
+>
+>     lm(y~x, subset=train)
+>
+>     predict(ridge.mod,s=0,exact=T,type="coefficients")[1:20,]
+>
+>     set.seed(1)
+>
+>     cv.out=cv.glmnet(x[train,],y[train],alpha=0)
+>
+>     plot(cv.out)
+>
+>     bestlam=cv.out$lambda.min
+>
+>     bestlam
+>
+>     ridge.pred=predict(ridge.mod,s=bestlam,newx=x[test,])
+>
+>     mean((ridge.pred-y.test)^2)
+>
+>     out=glmnet(x,y,alpha=0)
+>
+>     predict(out,type="coefficients",s=bestlam)[1:20,]
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+	[[alternative HTML version deleted]]
+
+
+From bob @ending from @t@tl@nd@org  Sun Jul 29 13:42:54 2018
+From: bob @ending from @t@tl@nd@org (User Hayden)
+Date: Sun, 29 Jul 2018 07:42:54 -0400
+Subject: [R-sig-teaching] [jones@reed.edu: Re:  (no subject)]
+Message-ID: <20180729114254.GB99140@lilly.csoft.net>
+
+
+To be specific, this list is about using R for teaching.  Appropriate
+content might include things like sharing R tutorials for beginners,
+ideas for assignments or grading policies, educational simulations or
+demos using R, etc.  How-To questions about using R should go to
+r-help.  The bulk of posts here are not suitable for this list and I
+wonder how people end up here.  When a person joins, do they get an
+initial email discribing what is appropriate content for this list,
+with suggestions of where to go for other sorts of questions?  This
+might reduce the traffic in inappropriate questions, and notifications
+of same, and help those seeking help get to a place where they might
+actually get it;-)
+
+
+----- Forwarded message from Albyn Jones <jones at reed.edu> -----
+
+Date: Sat, 28 Jul 2018 22:12:31 -0700
+From: Albyn Jones <jones at reed.edu>
+To: Baojun Sun <bsun1 at students.towson.edu>
+Cc: R-sig-teaching <r-sig-teaching at r-project.org>
+Subject: Re: [R-sig-teaching] (no subject)
+
+Is this a question about using R to teach statistical learning, or a
+question for r-help, or homework?
+
+On Sat, Jul 28, 2018 at 7:46 AM, Baojun Sun <bsun1 at students.towson.edu>
+wrote:
+
+> The book "Introduction to Statistical Learning" gives R scripts for its
+> labs. I found a script for ridge regression that works on the dataset the
+> book uses but is unusable on other datasets I own unless I clean the data.
+>
+>
+> I'm trying to understand the syntax for I need for data cleaning and am
+> stuck. I want to learn to do ridge regression. I tried using my own data
+> set on this script rather than the book example but get errors. If you use
+> your own data set rather than the Hitters dataset, then you'll get errors
+> unless you format your code. How do I change this script or clean any
+> dataset so that this script for ridge regression useable for all datasets?
+>
+>
+>     library(ISLR)
+>
+>     fix(Hitters)
+>
+>     names(Hitters)
+>
+>     dim(Hitters)
+>
+>     sum(is.na(Hitters$Salary))
+>
+>     Hitters=na.omit(Hitters)
+>
+>     dim(Hitters)
+>
+>     sum(is.na(Hitters))
+>
+>     library(leaps)
+>
+>
+>
+>     x=model.matrix(Salary~.,Hitters)[,-1]
+>
+>     y=Hitters$Salary
+>
+>
+>
+>     # Ridge Regression
+>
+>
+>
+>     library(glmnet)
+>
+>     grid=10^seq(10,-2,length=100)
+>
+>     ridge.mod=glmnet(x,y,alpha=0,lambda=grid)
+>
+>     dim(coef(ridge.mod))
+>
+>     ridge.mod$lambda[50]
+>
+>     coef(ridge.mod)[,50]
+>
+>     sqrt(sum(coef(ridge.mod)[-1,50]^2))
+>
+>     ridge.mod$lambda[60]
+>
+>     coef(ridge.mod)[,60]
+>
+>     sqrt(sum(coef(ridge.mod)[-1,60]^2))
+>
+>     predict(ridge.mod,s=50,type="coefficients")[1:20,]
+>
+>     set.seed(1)
+>
+>     train=sample(1:nrow(x), nrow(x)/2)
+>
+>     test=(-train)
+>
+>     y.test=y[test]
+>
+>     ridge.mod=glmnet(x[train,],y[train],alpha=0,lambda=grid, thresh=1e-12)
+>
+>     ridge.pred=predict(ridge.mod,s=4,newx=x[test,])
+>
+>     mean((ridge.pred-y.test)^2)
+>
+>     mean((mean(y[train])-y.test)^2)
+>
+>     ridge.pred=predict(ridge.mod,s=1e10,newx=x[test,])
+>
+>     mean((ridge.pred-y.test)^2)
+>
+>     ridge.pred=predict(ridge.mod,s=0,newx=x[test,],exact=T)
+>
+>     mean((ridge.pred-y.test)^2)
+>
+>     lm(y~x, subset=train)
+>
+>     predict(ridge.mod,s=0,exact=T,type="coefficients")[1:20,]
+>
+>     set.seed(1)
+>
+>     cv.out=cv.glmnet(x[train,],y[train],alpha=0)
+>
+>     plot(cv.out)
+>
+>     bestlam=cv.out$lambda.min
+>
+>     bestlam
+>
+>     ridge.pred=predict(ridge.mod,s=bestlam,newx=x[test,])
+>
+>     mean((ridge.pred-y.test)^2)
+>
+>     out=glmnet(x,y,alpha=0)
+>
+>     predict(out,type="coefficients",s=bestlam)[1:20,]
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+	[[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+----- End forwarded message -----
+
+-- 
+
+      _
+     | |          Robert W. Hayden
+     | |          5 Howard Street, Apartment 206
+    /  |          Wilton, New Hampshire 03086  USA
+   |   |          
+   |   |          email: bob@ the site below
+  /    |          website: http://statland.org
+ |   x /          
+ ''''''
+
+
+From cry@n @ending from bingh@mton@edu  Wed Aug  1 20:01:42 2018
+From: cry@n @ending from bingh@mton@edu (Christopher W. Ryan)
+Date: Wed, 1 Aug 2018 14:01:42 -0400
+Subject: [R-sig-teaching] R-sig-teaching Digest, Vol 102, Issue 3
+In-Reply-To: <CAP3zPTM+BdBUzA0ZKr59PbaC5=ARHyN2xzFMrbkRM7Hsp4Tm4A@mail.gmail.com>
+References: <mailman.805.9.1532167202.39293.r-sig-teaching@r-project.org>
+ <CAP3zPTM+BdBUzA0ZKr59PbaC5=ARHyN2xzFMrbkRM7Hsp4Tm4A@mail.gmail.com>
+Message-ID: <3ab4ea10-57c8-6f21-f2fb-fb26d170ce41@binghamton.edu>
+
+Thanks for the advice, Jose. I discovered that the latest version of
+EpiInfo does not seem to contain the data for this particular tutorial,
+but version 3.5.4 does, so I downloaded and installed it. I was able
+easily to extract the rhodoccus data to a plain text file.
+
+Here is a link to a nice collection of plain text data files for use
+with R. Not all are medical/epidemiological in nature, but I think I can
+make use of several:
+
+http://vincentarelbundock.github.io/Rdatasets/datasets.html
+
+I'll be teaching the intro epi course for a new MPH degree program at
+Binghamton University in Binghamton, NY, US. I've taught family medicine
+for about 25 years; this will be my first experience with formal
+teaching of MPH students. Roughly speaking, I plan to use about 90
+minutes of each 3-hour weekly class session for the usual, general,
+principles of epidemiology. I'll use about 45 minutes for a "computer
+lab" of sorts with R, for practical application of the principles. And
+about 45 minutes for a substantive discussion of the epidemiology of an
+important health problem, communicable or non-communicable.
+
+I hope the early introduction of R will seque well into their intro
+stats course that I'll teach second semester.
+
+Tentaively, these are the R-related concepts I hope to practice with them:
+
+Overview of R
+Installation of R
+Saving your R code: why and how
+
+R as a calculator. Rate standardization.
+Data structures, types and levels of measurement
+Dates and times
+Tables
+
+Analysis of tabular data
+Introduction to good graphics
+
+More analysis of tabular data
+More on good graphics
+
+Data discipline
+Data sharing
+Installing and using packages
+Getting data into R from "the wild"
+Data wrangling in the tidyverse
+Getting things out of R
+Epidemic curves
+
+More on good graphics
+
+Brief foray into maps and spatial epidemiology
+
+
+We'll see how it all works out!  I'd love to hear from others their
+thoughts or experiences using R in teaching intro epidemiology.
+
+--Chris
+
+
+
+Jose Arturo Farfan wrote:
+> Hi Chris,
+> 
+> My sugestion is to download the epi info version3..5.4 from
+> 
+> https://www.cdc.gov/epiinfo/support/downloads/prevversions.html
+> 
+> Install that version, and get the data files, and also the old
+> tutorials are going to be installled.
+> 
+> I am very interested in your epidemiology class using R. I am trying
+> to do something similar, but I teach statistisc and epidemiology to
+> doctors doing the speciality in psychiatry. I have been having
+> problems founding databases to present examples to them.
+> 
+> I will appreciate if you can share some information about the approach
+> you are doing using R.
+> 
+> Bes wishes and blesings
+> Jose A. Farfan-Ale
+> 
+> 
+> 
+> 
+> 
+> 2018-07-21 5:00 GMT-05:00  <r-sig-teaching-request at r-project.org>:
+>> Send R-sig-teaching mailing list submissions to
+>>         r-sig-teaching at r-project.org
+>>
+>> To subscribe or unsubscribe via the World Wide Web, visit
+>>         https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>> or, via email, send a message with subject or body 'help' to
+>>         r-sig-teaching-request at r-project.org
+>>
+>> You can reach the person managing the list at
+>>         r-sig-teaching-owner at r-project.org
+>>
+>> When replying, please edit your Subject line so it is more specific
+>> than "Re: Contents of R-sig-teaching digest..."
+>>
+>>
+>> Today's Topics:
+>>
+>>    1. source for rhodococcus nosocomial outbreak data
+>>       (Christopher W. Ryan)
+>>    2. Re:  source for rhodococcus nosocomial outbreak data (Albyn Jones)
+>>    3. Re:  source for rhodococcus nosocomial outbreak data
+>>       (Christopher W. Ryan)
+>>
+>> ----------------------------------------------------------------------
+>>
+>> Message: 1
+>> Date: Fri, 20 Jul 2018 11:13:46 -0400
+>> From: "Christopher W. Ryan" <cryan at binghamton.edu>
+>> To: R-sig-teaching <r-sig-teaching at r-project.org>
+>> Subject: [R-sig-teaching] source for rhodococcus nosocomial outbreak
+>>         data
+>> Message-ID: <737cc7a5-234c-067b-0f6d-03c50bc1e16c at binghamton.edu>
+>> Content-Type: text/plain; charset="utf-8"
+>>
+>> Many moons ago, the US CDC came out with DoEpi, which was computer-based
+>> instruction in outbreak investigation, using the CDC's Epi Info software.
+>>
+>> I recall two instructionally useful cases in DoEpi:  the Oswego church
+>> supper outbreak (a classic!) and a nosocomial outbreak of
+>> post-sternotomy sternal osteomyelitis with Rhodococcus.
+>>
+>> I'd like to use these cases in an intro epidemiology class in a new MPH
+>> program, but with R.  I no longer have my old DoEpi files. I found the
+>> Oswego church supper data in the R epitools package. Does anyone know if
+>> the rhodococcus dataset is available somewhere?
+>>
+>> Thanks.
+>>
+>> --Chris Ryan
+>> SUNY Upstate Medical University
+>> and
+>> Binghamton University
+>>
+>>
+>>
+>>
+>> ------------------------------
+>>
+>> Message: 2
+>> Date: Fri, 20 Jul 2018 09:46:44 -0700
+>> From: Albyn Jones <jones at reed.edu>
+>> To: "Christopher W. Ryan" <cryan at binghamton.edu>
+>> Cc: R-sig-teaching <r-sig-teaching at r-project.org>
+>> Subject: Re: [R-sig-teaching]  source for rhodococcus nosocomial
+>>         outbreak data
+>> Message-ID:
+>>         <CA+3jU8E3ffxwPePEHpdwKLLYyDn6feKXoX55KWMMZmquPRyLEA at mail.gmail.com>
+>> Content-Type: text/plain; charset="utf-8"
+>>
+>> Google points me to
+>>
+>> New England Journal of Medicine
+>> <https://www.researchgate.net/journal/0028-4793_New_England_Journal_of_Medicine>
+>> 324(2):104-9 ? February 1991.
+>>
+>> and
+>>
+>> https://www.nejm.org/doi/full/10.1056/NEJM199101103240206
+>>
+>> On Fri, Jul 20, 2018 at 8:13 AM, Christopher W. Ryan <cryan at binghamton.edu>
+>> wrote:
+>>
+>>> Many moons ago, the US CDC came out with DoEpi, which was computer-based
+>>> instruction in outbreak investigation, using the CDC's Epi Info software.
+>>>
+>>> I recall two instructionally useful cases in DoEpi:  the Oswego church
+>>> supper outbreak (a classic!) and a nosocomial outbreak of
+>>> post-sternotomy sternal osteomyelitis with Rhodococcus.
+>>>
+>>> I'd like to use these cases in an intro epidemiology class in a new MPH
+>>> program, but with R.  I no longer have my old DoEpi files. I found the
+>>> Oswego church supper data in the R epitools package. Does anyone know if
+>>> the rhodococcus dataset is available somewhere?
+>>>
+>>> Thanks.
+>>>
+>>> --Chris Ryan
+>>> SUNY Upstate Medical University
+>>> and
+>>> Binghamton University
+>>>
+>>> _______________________________________________
+>>> R-sig-teaching at r-project.org mailing list
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>>
+>>
+>>         [[alternative HTML version deleted]]
+>>
+>>
+>>
+>>
+>> ------------------------------
+>>
+>> Message: 3
+>> Date: Fri, 20 Jul 2018 13:09:12 -0400
+>> From: "Christopher W. Ryan" <cryan at binghamton.edu>
+>> To: R-sig-teaching <r-sig-teaching at r-project.org>
+>> Subject: Re: [R-sig-teaching]  source for rhodococcus nosocomial
+>>         outbreak data
+>> Message-ID: <7b5fad86-2909-a44a-8c2e-4433549cc6f3 at binghamton.edu>
+>> Content-Type: text/plain; charset="utf-8"
+>>
+>> Thanks. I'm looking for raw anonymous data, e.g. a csv file of a line
+>> listing.
+>>
+>> --Chris
+>>
+>> Albyn Jones wrote:
+>>> Google points me to
+>>>
+>>> New England Journal of Medicine
+>>> <https://www.researchgate.net/journal/0028-4793_New_England_Journal_of_Medicine>
+>>> 324(2):104-9 ? February 1991.
+>>>
+>>> and
+>>>
+>>> https://www.nejm.org/doi/full/10.1056/NEJM199101103240206
+>>>
+>>> On Fri, Jul 20, 2018 at 8:13 AM, Christopher W. Ryan
+>>> <cryan at binghamton.edu <mailto:cryan at binghamton.edu>> wrote:
+>>>
+>>>     Many moons ago, the US CDC came out with DoEpi, which was computer-based
+>>>     instruction in outbreak investigation, using the CDC's Epi Info
+>>>     software.
+>>>
+>>>     I recall two instructionally useful cases in DoEpi:  the Oswego church
+>>>     supper outbreak (a classic!) and a nosocomial outbreak of
+>>>     post-sternotomy sternal osteomyelitis with Rhodococcus.
+>>>
+>>>     I'd like to use these cases in an intro epidemiology class in a new MPH
+>>>     program, but with R.  I no longer have my old DoEpi files. I found the
+>>>     Oswego church supper data in the R epitools package. Does anyone know if
+>>>     the rhodococcus dataset is available somewhere?
+>>>
+>>>     Thanks.
+>>>
+>>>     --Chris Ryan
+>>>     SUNY Upstate Medical University
+>>>     and
+>>>     Binghamton University
+>>>
+>>>     _______________________________________________
+>>>     R-sig-teaching at r-project.org <mailto:R-sig-teaching at r-project.org>
+>>>     mailing list
+>>>     https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>>     <https://stat.ethz.ch/mailman/listinfo/r-sig-teaching>
+>>>
+>>>
+>>
+>>
+>>
+>>
+>> ------------------------------
+>>
+>> Subject: Digest Footer
+>>
+>> _______________________________________________
+>> R-sig-teaching mailing list
+>> R-sig-teaching at r-project.org
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>>
+>> ------------------------------
+>>
+>> End of R-sig-teaching Digest, Vol 102, Issue 3
+>> **********************************************
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+From j@f@rf@n @ending from gm@il@com  Sat Aug  4 20:41:12 2018
+From: j@f@rf@n @ending from gm@il@com (Jose Arturo Farfan)
+Date: Sat, 4 Aug 2018 13:41:12 -0500
+Subject: [R-sig-teaching] Good source of data for clases
+Message-ID: <CAP3zPTPX-FjKHM8ept91DppF+K7u7wAvtq5013c02Pms1734sA@mail.gmail.com>
+
+Hi, Chris
+I am happy to read that you get the rhodoccus data that you wanted.
+Thank you for the information about your epi course you are going to
+be teaching. In addition thank you for the link you gave to us. It is
+a wow????? good source of data files for teaching.
+
+My best wishes for you, and happy teaching. Maybe I wil se you again
+in this list.
+
+Blessings
+
+Jose
+
+2018-08-02 5:04 GMT-05:00  <r-sig-teaching-request at r-project.org>:
+> Send R-sig-teaching mailing list submissions to
+>         r-sig-teaching at r-project.org
+>
+> To subscribe or unsubscribe via the World Wide Web, visit
+>         https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> or, via email, send a message with subject or body 'help' to
+>         r-sig-teaching-request at r-project.org
+>
+> You can reach the person managing the list at
+>         r-sig-teaching-owner at r-project.org
+>
+> When replying, please edit your Subject line so it is more specific
+> than "Re: Contents of R-sig-teaching digest..."
+>
+>
+> Today's Topics:
+>
+>    1. Re: R-sig-teaching Digest, Vol 102, Issue 3 (Christopher W. Ryan)
+>
+> ----------------------------------------------------------------------
+>
+> Message: 1
+> Date: Wed, 1 Aug 2018 14:01:42 -0400
+> From: "Christopher W. Ryan" <cryan at binghamton.edu>
+> To: r-sig-teaching at r-project.org
+> Subject: Re: [R-sig-teaching] R-sig-teaching Digest, Vol 102, Issue 3
+> Message-ID: <3ab4ea10-57c8-6f21-f2fb-fb26d170ce41 at binghamton.edu>
+> Content-Type: text/plain; charset="utf-8"
+>
+> Thanks for the advice, Jose. I discovered that the latest version of
+> EpiInfo does not seem to contain the data for this particular tutorial,
+> but version 3.5.4 does, so I downloaded and installed it. I was able
+> easily to extract the rhodoccus data to a plain text file.
+>
+> Here is a link to a nice collection of plain text data files for use
+> with R. Not all are medical/epidemiological in nature, but I think I can
+> make use of several:
+>
+> http://vincentarelbundock.github.io/Rdatasets/datasets.html
+>
+> I'll be teaching the intro epi course for a new MPH degree program at
+> Binghamton University in Binghamton, NY, US. I've taught family medicine
+> for about 25 years; this will be my first experience with formal
+> teaching of MPH students. Roughly speaking, I plan to use about 90
+> minutes of each 3-hour weekly class session for the usual, general,
+> principles of epidemiology. I'll use about 45 minutes for a "computer
+> lab" of sorts with R, for practical application of the principles. And
+> about 45 minutes for a substantive discussion of the epidemiology of an
+> important health problem, communicable or non-communicable.
+>
+> I hope the early introduction of R will seque well into their intro
+> stats course that I'll teach second semester.
+>
+> Tentaively, these are the R-related concepts I hope to practice with them:
+>
+> Overview of R
+> Installation of R
+> Saving your R code: why and how
+>
+> R as a calculator. Rate standardization.
+> Data structures, types and levels of measurement
+> Dates and times
+> Tables
+>
+> Analysis of tabular data
+> Introduction to good graphics
+>
+> More analysis of tabular data
+> More on good graphics
+>
+> Data discipline
+> Data sharing
+> Installing and using packages
+> Getting data into R from "the wild"
+> Data wrangling in the tidyverse
+> Getting things out of R
+> Epidemic curves
+>
+> More on good graphics
+>
+> Brief foray into maps and spatial epidemiology
+>
+>
+> We'll see how it all works out!  I'd love to hear from others their
+> thoughts or experiences using R in teaching intro epidemiology.
+>
+> --Chris
+>
+>
+>
+> Jose Arturo Farfan wrote:
+>> Hi Chris,
+>>
+>> My sugestion is to download the epi info version3..5.4 from
+>>
+>> https://www.cdc.gov/epiinfo/support/downloads/prevversions.html
+>>
+>> Install that version, and get the data files, and also the old
+>> tutorials are going to be installled.
+>>
+>> I am very interested in your epidemiology class using R. I am trying
+>> to do something similar, but I teach statistisc and epidemiology to
+>> doctors doing the speciality in psychiatry. I have been having
+>> problems founding databases to present examples to them.
+>>
+>> I will appreciate if you can share some information about the approach
+>> you are doing using R.
+>>
+>> Bes wishes and blesings
+>> Jose A. Farfan-Ale
+>>
+>>
+>>
+>>
+>>
+>> 2018-07-21 5:00 GMT-05:00  <r-sig-teaching-request at r-project.org>:
+>>> Send R-sig-teaching mailing list submissions to
+>>>         r-sig-teaching at r-project.org
+>>>
+>>> To subscribe or unsubscribe via the World Wide Web, visit
+>>>         https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>> or, via email, send a message with subject or body 'help' to
+>>>         r-sig-teaching-request at r-project.org
+>>>
+>>> You can reach the person managing the list at
+>>>         r-sig-teaching-owner at r-project.org
+>>>
+>>> When replying, please edit your Subject line so it is more specific
+>>> than "Re: Contents of R-sig-teaching digest..."
+>>>
+>>>
+>>> Today's Topics:
+>>>
+>>>    1. source for rhodococcus nosocomial outbreak data
+>>>       (Christopher W. Ryan)
+>>>    2. Re:  source for rhodococcus nosocomial outbreak data (Albyn Jones)
+>>>    3. Re:  source for rhodococcus nosocomial outbreak data
+>>>       (Christopher W. Ryan)
+>>>
+>>> ----------------------------------------------------------------------
+>>>
+>>> Message: 1
+>>> Date: Fri, 20 Jul 2018 11:13:46 -0400
+>>> From: "Christopher W. Ryan" <cryan at binghamton.edu>
+>>> To: R-sig-teaching <r-sig-teaching at r-project.org>
+>>> Subject: [R-sig-teaching] source for rhodococcus nosocomial outbreak
+>>>         data
+>>> Message-ID: <737cc7a5-234c-067b-0f6d-03c50bc1e16c at binghamton.edu>
+>>> Content-Type: text/plain; charset="utf-8"
+>>>
+>>> Many moons ago, the US CDC came out with DoEpi, which was computer-based
+>>> instruction in outbreak investigation, using the CDC's Epi Info software.
+>>>
+>>> I recall two instructionally useful cases in DoEpi:  the Oswego church
+>>> supper outbreak (a classic!) and a nosocomial outbreak of
+>>> post-sternotomy sternal osteomyelitis with Rhodococcus.
+>>>
+>>> I'd like to use these cases in an intro epidemiology class in a new MPH
+>>> program, but with R.  I no longer have my old DoEpi files. I found the
+>>> Oswego church supper data in the R epitools package. Does anyone know if
+>>> the rhodococcus dataset is available somewhere?
+>>>
+>>> Thanks.
+>>>
+>>> --Chris Ryan
+>>> SUNY Upstate Medical University
+>>> and
+>>> Binghamton University
+>>>
+>>>
+>>>
+>>>
+>>> ------------------------------
+>>>
+>>> Message: 2
+>>> Date: Fri, 20 Jul 2018 09:46:44 -0700
+>>> From: Albyn Jones <jones at reed.edu>
+>>> To: "Christopher W. Ryan" <cryan at binghamton.edu>
+>>> Cc: R-sig-teaching <r-sig-teaching at r-project.org>
+>>> Subject: Re: [R-sig-teaching]  source for rhodococcus nosocomial
+>>>         outbreak data
+>>> Message-ID:
+>>>         <CA+3jU8E3ffxwPePEHpdwKLLYyDn6feKXoX55KWMMZmquPRyLEA at mail.gmail.com>
+>>> Content-Type: text/plain; charset="utf-8"
+>>>
+>>> Google points me to
+>>>
+>>> New England Journal of Medicine
+>>> <https://www.researchgate.net/journal/0028-4793_New_England_Journal_of_Medicine>
+>>> 324(2):104-9 ? February 1991.
+>>>
+>>> and
+>>>
+>>> https://www.nejm.org/doi/full/10.1056/NEJM199101103240206
+>>>
+>>> On Fri, Jul 20, 2018 at 8:13 AM, Christopher W. Ryan <cryan at binghamton.edu>
+>>> wrote:
+>>>
+>>>> Many moons ago, the US CDC came out with DoEpi, which was computer-based
+>>>> instruction in outbreak investigation, using the CDC's Epi Info software.
+>>>>
+>>>> I recall two instructionally useful cases in DoEpi:  the Oswego church
+>>>> supper outbreak (a classic!) and a nosocomial outbreak of
+>>>> post-sternotomy sternal osteomyelitis with Rhodococcus.
+>>>>
+>>>> I'd like to use these cases in an intro epidemiology class in a new MPH
+>>>> program, but with R.  I no longer have my old DoEpi files. I found the
+>>>> Oswego church supper data in the R epitools package. Does anyone know if
+>>>> the rhodococcus dataset is available somewhere?
+>>>>
+>>>> Thanks.
+>>>>
+>>>> --Chris Ryan
+>>>> SUNY Upstate Medical University
+>>>> and
+>>>> Binghamton University
+>>>>
+>>>> _______________________________________________
+>>>> R-sig-teaching at r-project.org mailing list
+>>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>>>
+>>>
+>>>         [[alternative HTML version deleted]]
+>>>
+>>>
+>>>
+>>>
+>>> ------------------------------
+>>>
+>>> Message: 3
+>>> Date: Fri, 20 Jul 2018 13:09:12 -0400
+>>> From: "Christopher W. Ryan" <cryan at binghamton.edu>
+>>> To: R-sig-teaching <r-sig-teaching at r-project.org>
+>>> Subject: Re: [R-sig-teaching]  source for rhodococcus nosocomial
+>>>         outbreak data
+>>> Message-ID: <7b5fad86-2909-a44a-8c2e-4433549cc6f3 at binghamton.edu>
+>>> Content-Type: text/plain; charset="utf-8"
+>>>
+>>> Thanks. I'm looking for raw anonymous data, e.g. a csv file of a line
+>>> listing.
+>>>
+>>> --Chris
+>>>
+>>> Albyn Jones wrote:
+>>>> Google points me to
+>>>>
+>>>> New England Journal of Medicine
+>>>> <https://www.researchgate.net/journal/0028-4793_New_England_Journal_of_Medicine>
+>>>> 324(2):104-9 ? February 1991.
+>>>>
+>>>> and
+>>>>
+>>>> https://www.nejm.org/doi/full/10.1056/NEJM199101103240206
+>>>>
+>>>> On Fri, Jul 20, 2018 at 8:13 AM, Christopher W. Ryan
+>>>> <cryan at binghamton.edu <mailto:cryan at binghamton.edu>> wrote:
+>>>>
+>>>>     Many moons ago, the US CDC came out with DoEpi, which was computer-based
+>>>>     instruction in outbreak investigation, using the CDC's Epi Info
+>>>>     software.
+>>>>
+>>>>     I recall two instructionally useful cases in DoEpi:  the Oswego church
+>>>>     supper outbreak (a classic!) and a nosocomial outbreak of
+>>>>     post-sternotomy sternal osteomyelitis with Rhodococcus.
+>>>>
+>>>>     I'd like to use these cases in an intro epidemiology class in a new MPH
+>>>>     program, but with R.  I no longer have my old DoEpi files. I found the
+>>>>     Oswego church supper data in the R epitools package. Does anyone know if
+>>>>     the rhodococcus dataset is available somewhere?
+>>>>
+>>>>     Thanks.
+>>>>
+>>>>     --Chris Ryan
+>>>>     SUNY Upstate Medical University
+>>>>     and
+>>>>     Binghamton University
+>>>>
+>>>>     _______________________________________________
+>>>>     R-sig-teaching at r-project.org <mailto:R-sig-teaching at r-project.org>
+>>>>     mailing list
+>>>>     https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>>>     <https://stat.ethz.ch/mailman/listinfo/r-sig-teaching>
+>>>>
+>>>>
+>>>
+>>>
+>>>
+>>>
+>>> ------------------------------
+>>>
+>>> Subject: Digest Footer
+>>>
+>>> _______________________________________________
+>>> R-sig-teaching mailing list
+>>> R-sig-teaching at r-project.org
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>>
+>>>
+>>> ------------------------------
+>>>
+>>> End of R-sig-teaching Digest, Vol 102, Issue 3
+>>> **********************************************
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>
+>
+>
+>
+> ------------------------------
+>
+> Subject: Digest Footer
+>
+> _______________________________________________
+> R-sig-teaching mailing list
+> R-sig-teaching at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+> ------------------------------
+>
+> End of R-sig-teaching Digest, Vol 103, Issue 1
+> **********************************************
+
+
+From j@f@rf@n @ending from gm@il@com  Tue Aug 14 02:10:19 2018
+From: j@f@rf@n @ending from gm@il@com (Jose Arturo Farfan)
+Date: Mon, 13 Aug 2018 19:10:19 -0500
+Subject: [R-sig-teaching] References
+Message-ID: <CAP3zPTM8JvsT75b2EvywH8DiBHFU=7PnPfuPW6wL7-cxGe8zgw@mail.gmail.com>
+
+Are the anyone who coul send me a pdf copy of the  rhodoccus data
+situation?. I do not have a subscription to the NEJM, so I can not
+download the paper in pdf format.
+I am trayin to get the published paper, CDC have used in the examples
+ot the several Epi Info version. I will appreciaete your help.
+Another request, if anyone has data of Mental disease I can use for my
+teaching would be great. I teacfhsh scientifical methodology and
+Statistics th ohysician dpoin the residency to become psychiatrists.I
+have work hard to get some data bases, specialy from real studies, but
+I have found just a very small of them.
+I will appreciate youir help.
+Blessings
+
+Jos? A. Farf?n-Ale
+PS. I teach in the Yucat?n in M?xico
+
+

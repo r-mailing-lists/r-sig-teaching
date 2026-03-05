@@ -1,0 +1,541 @@
+From jte||er|@@rproject @end|ng |rom gm@||@com  Fri Jan  3 11:10:00 2020
+From: jte||er|@@rproject @end|ng |rom gm@||@com (Juan Telleria Ruiz de Aguirre)
+Date: Fri, 3 Jan 2020 11:10:00 +0100
+Subject: [R-sig-teaching] Useful Resources for Teaching R & Basic Statistics
+In-Reply-To: <CAJXDcw0oeGjhuAW_YDhq96OXPJQE4vV6a52uebimXhWFJrGMnw@mail.gmail.com>
+References: <CAJXDcw0oeGjhuAW_YDhq96OXPJQE4vV6a52uebimXhWFJrGMnw@mail.gmail.com>
+Message-ID: <CAJXDcw3dsYNUUotztSKY0v4eMAm07t0g7gn2UEpg8Ef73SM3sw@mail.gmail.com>
+
+Dear R Teaching Mailing List,
+
+I would like to share 2 useful Resources for Teaching both R and
+Statistical Concepts Essentials.
+
+R Cookbook Second Edition: Freely Available
+https://rc2e.com/
+
+Statistics from A to Z (Wiley):
+
+https://books.google.es/books?id=_mT_DAAAQBAJ&printsec=
+frontcover&dq=statistical+concepts+from+A+to+Z+wiley&hl=es&sa=X&ved=
+0ahUKEwjC2pOOkufmAhVJAWMBHYyiAdgQ6AEIKzAA#v=onepage&q&f=false
+
+This last book puts emphasis on the statistical concepts from a
+"high-level" perspective, rather than on the mathematical definition or
+theorem calculation.
+
+Hope you find them useful.
+
+Kind regards,
+Juan
+
+	[[alternative HTML version deleted]]
+
+
+From jte||er|@@rproject @end|ng |rom gm@||@com  Fri Jan  3 11:12:11 2020
+From: jte||er|@@rproject @end|ng |rom gm@||@com (Juan Telleria Ruiz de Aguirre)
+Date: Fri, 3 Jan 2020 11:12:11 +0100
+Subject: [R-sig-teaching] 
+ Useful Resources for Teaching R & Basic Statistics
+In-Reply-To: <CAJXDcw3dsYNUUotztSKY0v4eMAm07t0g7gn2UEpg8Ef73SM3sw@mail.gmail.com>
+References: <CAJXDcw0oeGjhuAW_YDhq96OXPJQE4vV6a52uebimXhWFJrGMnw@mail.gmail.com>
+ <CAJXDcw3dsYNUUotztSKY0v4eMAm07t0g7gn2UEpg8Ef73SM3sw@mail.gmail.com>
+Message-ID: <CAJXDcw0nS2u-LwXvE+_h_7uBOjA8rzr_qo+fSJQ3DBz39JgfjQ@mail.gmail.com>
+
+Dear R Teaching Mailing List,
+
+I would like to share 2 useful Resources for Teaching both R and
+Statistical Concepts Essentials.
+
+R Cookbook Second Edition: Freely Available
+https://rc2e.com/
+
+Statistics from A to Z (Wiley):
+
+https://books.google.es/books?id=_mT_DAAAQBAJ&printsec=frontcover&dq=statistical+concepts+from+A+to+Z+wiley&hl=es&sa=X&ved=0ahUKEwjC2pOOkufmAhVJAWMBHYyiAdgQ6AEIKzAA#v=onepage&q&f=false
+
+This last book puts emphasis on the statistical concepts from a
+"high-level" perspective, rather than on the mathematical definition or
+theorem calculation.
+
+Hope you find them useful.
+
+Kind regards,
+Juan
+
+	[[alternative HTML version deleted]]
+
+
+From jte||er|@@rproject @end|ng |rom gm@||@com  Fri Jan  3 11:16:43 2020
+From: jte||er|@@rproject @end|ng |rom gm@||@com (Juan Telleria Ruiz de Aguirre)
+Date: Fri, 3 Jan 2020 11:16:43 +0100
+Subject: [R-sig-teaching] Teaching GIT Version Control Essentials: IDE &
+ Command Line
+Message-ID: <CAJXDcw3G5H1FCBTxrj5NTfsw+92=nci659fz7uq-DyJMg28jwQ@mail.gmail.com>
+
+Dear R Teaching Mailing List,
+
+I would like to share a few resources I find useful for teaching GIT
+Version Control, in order to be able to collaborate in R Package
+Development through GitHub:
+
+GIT Client IDE:
+
+https://www.gitkraken.com/download
+
+Freely Available for Open Source Development, this IDE allows you to handle
+all your GitHub repository entirely though a visual interface: Squashing
+commits, Merging Locally, Generating a Branch in any Commit at any point in
+the History, ...
+
+GIT Essential Commands Cheatsheet:
+
+https://www.google.com/url?sa=t&source=web&rct=j&url=https://about.gitlab.com/images/press/git-cheat-sheet.pdf&ved=2ahUKEwiOk9_flOfmAhVD8eAKHY-ZA6wQFjAAegQIBRAB&usg=AOvVaw2aQ2fhWOuLJ1WkQ6bZGjQu
+
+GIT MIT Presentation:
+
+https://www.google.com/url?sa=t&source=web&rct=j&url=http://6.470.scripts.mit.edu/2014/slides/git.pdf&ved=2ahUKEwiHrLPPlefmAhWLsRQKHXj0BPMQFjAAegQIBhAC&usg=AOvVaw1LbyRChTCGLyh_C9dV38Dt
+
+Hope you find it useful.
+
+Kind regards,
+Juan
+
+	[[alternative HTML version deleted]]
+
+
+From jte||er|@@rproject @end|ng |rom gm@||@com  Fri Jan  3 11:21:33 2020
+From: jte||er|@@rproject @end|ng |rom gm@||@com (Juan Telleria Ruiz de Aguirre)
+Date: Fri, 3 Jan 2020 11:21:33 +0100
+Subject: [R-sig-teaching] Resources for Teaching R Programming & Basic
+ Statistical Concepts from a Business Perspective
+Message-ID: <CAJXDcw1=-sXhLt++9KRw5901oWmHL4Ec0oN=DjqwiihXEpv02Q@mail.gmail.com>
+
+Dear R Teaching Mailing List,
+
+I would like to share 2 useful Resources for Teaching both R and
+Statistical Concepts Essentials.
+
+R Cookbook Second Edition: Freely Available
+https://rc2e.com/
+
+Statistics from A to Z (Wiley):
+
+https://books.google.es/books?id=_mT_DAAAQBAJ&printsec=frontcover&dq=statistical+concepts+from+A+to+Z+wiley&hl=es&sa=X&ved=0ahUKEwjC2pOOkufmAhVJAWMBHYyiAdgQ6AEIKzAA#v=onepage&q&f=false
+
+This last book puts emphasis on the statistical concepts from a
+"high-level" perspective, rather than on the mathematical definition or
+theorem calculation.
+
+Hope you find them useful.
+
+Kind regards,
+Juan
+
+*P.D: E-mail resent due to a e-mail formatting error (Not Plain Text).
+
+	[[alternative HTML version deleted]]
+
+
+From dr@o|@ch@o@ @end|ng |rom gm@||@com  Sat Jan  4 19:16:19 2020
+From: dr@o|@ch@o@ @end|ng |rom gm@||@com (Brian Dennis)
+Date: Sat, 4 Jan 2020 10:16:19 -0800
+Subject: [R-sig-teaching] R book for teaching math & science in high school
+Message-ID: <CAEZOd2Aq523K6TZaVvpJ+gGw9YFCNa54D7s7R0mjtExgr6b5=Q@mail.gmail.com>
+
+Here is a book that introduces R programming for use in high school or
+college math and science courses:
+
+https://www.crcpress.com/The-R-Student-Companion/Dennis/p/book/9781439875407
+
+The book is written for absolute beginners in programming concepts and is
+one of the most elementary books about R available.  The focus of the book
+is not statistics per se but rather scientific graphing, calculation,
+modeling, and simulation.  Collected reviews of the book can be found here:
+
+https://webpages.uidaho.edu/~brian/reviews_of_RSC.pdf
+
+The topics are very vanilla R, no RStudio, no ggplot, no dplyr, etc.  The
+choice of topics was deliberate so as not to overwhelm students.  The math
+level is high school algebra.  The scientific examples treated are quite
+real and engaging.
+
+With the move in education toward trying to teach "coding" in schools, one
+might ask why not use Python, Java, C+, etc.  The answer is clear:
+students can do more cool stuff with R with much less code and computer
+science overhead.  As well, the supporting online instructional
+environment, with zillions of websites, tutorials, and videos, is hard to
+beat.  For future STEM workers, R is the ideal gateway drug!
+
+I have even taught graphing and calculating in R to elementary school
+students.  They are eager and enthusiastic and take to it as fast as the
+older students.
+
+Readin', Ritin', Rithmetic, and R!
+
+Brian Dennis, Professor
+University of Idaho USA
+
+	[[alternative HTML version deleted]]
+
+
+From cry@n @end|ng |rom b|ngh@mton@edu  Sat Jan  4 19:57:32 2020
+From: cry@n @end|ng |rom b|ngh@mton@edu (Christopher W. Ryan)
+Date: Sat, 4 Jan 2020 13:57:32 -0500
+Subject: [R-sig-teaching] [External Email] R book for teaching math &
+ science in high school
+In-Reply-To: <CAEZOd2Aq523K6TZaVvpJ+gGw9YFCNa54D7s7R0mjtExgr6b5=Q@mail.gmail.com>
+References: <CAEZOd2Aq523K6TZaVvpJ+gGw9YFCNa54D7s7R0mjtExgr6b5=Q@mail.gmail.com>
+Message-ID: <5afa596f-ac84-2ece-afa1-4b0fcb5dfe13@binghamton.edu>
+
+Brian--
+
+I would heartily endorse your recommendation for teaching R to younger
+folk. 4-5 years ago I did a 5-hour workshop introducing R to about 20
+students in grades 10-12. I think it was quite successful--at least they
+invited me back to do another one the following year!
+
+I wish I had had your book!
+
+--Chris Ryan
+SUNY Upstate Medical University
+and
+Binghamton University
+
+Brian Dennis wrote:
+> Here is a book that introduces R programming for use in high school or
+> college math and science courses:
+> 
+> https://www.crcpress.com/The-R-Student-Companion/Dennis/p/book/9781439875407
+> 
+> The book is written for absolute beginners in programming concepts and is
+> one of the most elementary books about R available.  The focus of the book
+> is not statistics per se but rather scientific graphing, calculation,
+> modeling, and simulation.  Collected reviews of the book can be found here:
+> 
+> https://webpages.uidaho.edu/~brian/reviews_of_RSC.pdf
+> 
+> The topics are very vanilla R, no RStudio, no ggplot, no dplyr, etc.  The
+> choice of topics was deliberate so as not to overwhelm students.  The math
+> level is high school algebra.  The scientific examples treated are quite
+> real and engaging.
+> 
+> With the move in education toward trying to teach "coding" in schools, one
+> might ask why not use Python, Java, C+, etc.  The answer is clear:
+> students can do more cool stuff with R with much less code and computer
+> science overhead.  As well, the supporting online instructional
+> environment, with zillions of websites, tutorials, and videos, is hard to
+> beat.  For future STEM workers, R is the ideal gateway drug!
+> 
+> I have even taught graphing and calculating in R to elementary school
+> students.  They are eager and enthusiastic and take to it as fast as the
+> older students.
+> 
+> Readin', Ritin', Rithmetic, and R!
+> 
+> Brian Dennis, Professor
+> University of Idaho USA
+> 
+> 	[[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+From bob @end|ng |rom @t@t|@nd@org  Sun Jan  5 14:22:47 2020
+From: bob @end|ng |rom @t@t|@nd@org (User Hayden)
+Date: Sun, 5 Jan 2020 08:22:47 -0500
+Subject: [R-sig-teaching] [dr.of.chaos@gmail.com: R book for teaching math &
+ science in high school]
+Message-ID: <20200105132247.GA14531@lilly.csoft.net>
+
+
+Thanks for reminding me of this book.  I especially appreciate the
+fact that it does not assume you have loaded innumerable libraries.  I
+have found that just installing R can be a challenge for many
+students, and adding libraries even more so.  First, it requires a
+persistent Internet connection, whereas base R can be installed from a
+thumb drive or optical disk.  Then there is dependency hell, from
+which the R developers try to shield us, not always successfully.  I
+can remember trying to install a package that makes R more friendly for
+beginners.  It had a long list of dependencies, each with its own
+dependencies.  I think there were 147 in all.  Of course, one failed
+to load, and so the original package could not be installed.  I
+thought a good homework problem would be to determine what the
+probability of one package loading would have to be in order for the
+probability of 147 loading to be > 50%.    
+
+This book would be a natural for the newish AP Computer Science
+Principles course.
+
+https://apstudents.collegeboard.org/courses/ap-computer-science-principles/about
+
+It's obviously relevant to AP Statistics, though teachers there are
+wedded to graphing calculators, which is encouraged by same being
+"expected" on the official exam.  However, a few AP Stats. teachers do
+use R, and I have taken the liberty of quoting this message in the AP
+Statistics online community.  FWIW though I think the review by
+Matloff will offend that audience.  While I share his views on the
+weaknesses of AP Statistics, those weaknesses are shared by a great
+many college intro. stats. courses.  In addition, citing the fact that
+R is free and graphing calculators cost $100 or so, shows lack of
+appreciation of the situation on the ground in many high schools.
+While R itself is free, you have to have a computer to run it on and a
+readily accessible lab where students can access said computers. Those
+are NOT free.  Students also have access to their calculators at home,
+which may not be the case for R.  
+
+----- Forwarded message from Brian Dennis
+<dr.of.chaos at gmail.com> -----
+
+Date: Sat, 4 Jan 2020 10:16:19 -0800
+From: Brian Dennis <dr.of.chaos at gmail.com>
+To: r-sig-teaching at r-project.org
+Subject: [R-sig-teaching] R book for teaching math & science in high school
+
+Here is a book that introduces R programming for use in high school or
+college math and science courses:
+
+https://www.crcpress.com/The-R-Student-Companion/Dennis/p/book/9781439875407
+
+The book is written for absolute beginners in programming concepts and is
+one of the most elementary books about R available.  The focus of the book
+is not statistics per se but rather scientific graphing, calculation,
+modeling, and simulation.  Collected reviews of the book can be found here:
+
+https://webpages.uidaho.edu/~brian/reviews_of_RSC.pdf
+
+The topics are very vanilla R, no RStudio, no ggplot, no dplyr, etc.  The
+choice of topics was deliberate so as not to overwhelm students.  The math
+level is high school algebra.  The scientific examples treated are quite
+real and engaging.
+
+With the move in education toward trying to teach "coding" in schools, one
+might ask why not use Python, Java, C+, etc.  The answer is clear:
+students can do more cool stuff with R with much less code and computer
+science overhead.  As well, the supporting online instructional
+environment, with zillions of websites, tutorials, and videos, is hard to
+beat.  For future STEM workers, R is the ideal gateway drug!
+
+I have even taught graphing and calculating in R to elementary school
+students.  They are eager and enthusiastic and take to it as fast as the
+older students.
+
+Readin', Ritin', Rithmetic, and R!
+
+Brian Dennis, Professor
+University of Idaho USA
+
+	[[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+----- End forwarded message -----
+
+-- 
+
+      _
+     | |          Robert W. Hayden
+     | |          5 Howard Street, Apartment 206
+    /  |          Wilton, New Hampshire 03086  USA
+   |   |          
+   |   |          email: bob@ the site below
+  /    |          website: http://statland.org
+ |   x /          
+ ''''''
+
+
+From m@p|no|@10 @end|ng |rom gm@||@com  Sun Mar 29 15:42:33 2020
+From: m@p|no|@10 @end|ng |rom gm@||@com (=?UTF-8?Q?Manuel_Sp=C3=ADnola?=)
+Date: Sun, 29 Mar 2020 07:42:33 -0600
+Subject: [R-sig-teaching] R packages to make interactive homeworks or exams
+ that you can grade
+Message-ID: <CABkCotS=4Zo3MU2GTV6wFFQyDK0=B6safsserTD-0XaDJGW-xA@mail.gmail.com>
+
+Dear list members,
+
+I am looking for a way to make interactive homeworks o exams when teaching
+statistics in R.
+
+I have been looking on the package gradethis but I do not see how this
+package works in the way that I am looking for.
+
+I am looking for something that you can send to the students and the
+student send it back to you and you can grade the homework or exam in a an
+interactive way.
+
+Manuel
+
+-- 
+*Manuel Sp?nola, Ph.D.*
+Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre
+Universidad Nacional
+Apartado 1350-3000
+Heredia
+COSTA RICA
+mspinola at una.cr <mspinola at una.ac.cr>
+mspinola10 at gmail.com
+Tel?fono: (506) 8706 - 4662
+Personal website: Lobito de r?o <https://sites.google.com/site/lobitoderio/>
+Institutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>
+
+	[[alternative HTML version deleted]]
+
+
+From @rthur@ch@rpent|er @end|ng |rom gm@||@com  Sun Mar 29 15:57:09 2020
+From: @rthur@ch@rpent|er @end|ng |rom gm@||@com (Arthur Charpentier)
+Date: Sun, 29 Mar 2020 09:57:09 -0400
+Subject: [R-sig-teaching] 
+ R packages to make interactive homeworks or exams that you can grade
+In-Reply-To: <CABkCotS=4Zo3MU2GTV6wFFQyDK0=B6safsserTD-0XaDJGW-xA@mail.gmail.com>
+References: <CABkCotS=4Zo3MU2GTV6wFFQyDK0=B6safsserTD-0XaDJGW-xA@mail.gmail.com>
+Message-ID: <CADcAK00aWjTAj1W6x8WCT0FUFdgeVxOCkPX9N8B5ZJ-0nnm_QA@mail.gmail.com>
+
+Hi Manuel
+Achim Zeilis gave a great talk two years ago
+https://eeecon.uibk.ac.at/~zeileis/papers/eRum-2018.pdf (and
+https://www.youtube.com/watch?v=NMIzbrklBEE) about http://www.r-exams.org/
+Arthur
+
+Le dim. 29 mars 2020 ? 09:42, Manuel Sp?nola <mspinola10 at gmail.com> a
+?crit :
+
+> Dear list members,
+>
+> I am looking for a way to make interactive homeworks o exams when teaching
+> statistics in R.
+>
+> I have been looking on the package gradethis but I do not see how this
+> package works in the way that I am looking for.
+>
+> I am looking for something that you can send to the students and the
+> student send it back to you and you can grade the homework or exam in a an
+> interactive way.
+>
+> Manuel
+>
+> --
+> *Manuel Sp?nola, Ph.D.*
+> Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre
+> Universidad Nacional
+> Apartado 1350-3000
+> Heredia
+> COSTA RICA
+> mspinola at una.cr <mspinola at una.ac.cr>
+> mspinola10 at gmail.com
+> Tel?fono: (506) 8706 - 4662
+> Personal website: Lobito de r?o <
+> https://sites.google.com/site/lobitoderio/>
+> Institutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+-- 
+Arthur Charpentier
+Universit? du Qu?bec ? Montr?al
+email: charpentier.arthur at uqam.ca
+url: http://freakonometrics.github.io
+twitter: @freakonometrics <https://twitter.com/freakonometrics>
+
+	[[alternative HTML version deleted]]
+
+
+From m@p|no|@10 @end|ng |rom gm@||@com  Sun Mar 29 16:04:12 2020
+From: m@p|no|@10 @end|ng |rom gm@||@com (=?UTF-8?Q?Manuel_Sp=C3=ADnola?=)
+Date: Sun, 29 Mar 2020 08:04:12 -0600
+Subject: [R-sig-teaching] 
+ R packages to make interactive homeworks or exams that you can grade
+In-Reply-To: <CADcAK00aWjTAj1W6x8WCT0FUFdgeVxOCkPX9N8B5ZJ-0nnm_QA@mail.gmail.com>
+References: <CABkCotS=4Zo3MU2GTV6wFFQyDK0=B6safsserTD-0XaDJGW-xA@mail.gmail.com>
+ <CADcAK00aWjTAj1W6x8WCT0FUFdgeVxOCkPX9N8B5ZJ-0nnm_QA@mail.gmail.com>
+Message-ID: <CABkCotSoOLGQTKUiu7-hrkFXEtk26axwfUy8cT3MZ_oMDBXZFA@mail.gmail.com>
+
+Thank you very much Arthur.
+
+I am going to take a look.
+
+Manuel
+
+El dom., 29 mar. 2020 a las 7:57, Arthur Charpentier (<
+arthur.charpentier at gmail.com>) escribi?:
+
+> Hi Manuel
+> Achim Zeilis gave a great talk two years ago
+> https://eeecon.uibk.ac.at/~zeileis/papers/eRum-2018.pdf (and
+> https://www.youtube.com/watch?v=NMIzbrklBEE) about http://www.r-exams.org/
+> Arthur
+>
+> Le dim. 29 mars 2020 ? 09:42, Manuel Sp?nola <mspinola10 at gmail.com> a
+> ?crit :
+>
+>> Dear list members,
+>>
+>> I am looking for a way to make interactive homeworks o exams when teaching
+>> statistics in R.
+>>
+>> I have been looking on the package gradethis but I do not see how this
+>> package works in the way that I am looking for.
+>>
+>> I am looking for something that you can send to the students and the
+>> student send it back to you and you can grade the homework or exam in a an
+>> interactive way.
+>>
+>> Manuel
+>>
+>> --
+>> *Manuel Sp?nola, Ph.D.*
+>> Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre
+>> Universidad Nacional
+>> Apartado 1350-3000
+>> Heredia
+>> COSTA RICA
+>> mspinola at una.cr <mspinola at una.ac.cr>
+>> mspinola10 at gmail.com
+>> Tel?fono: (506) 8706 - 4662
+>> Personal website: Lobito de r?o <
+>> https://sites.google.com/site/lobitoderio/>
+>> Institutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>
+>>
+>>         [[alternative HTML version deleted]]
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>
+>
+> --
+> Arthur Charpentier
+> Universit? du Qu?bec ? Montr?al
+> email: charpentier.arthur at uqam.ca
+> url: http://freakonometrics.github.io
+> twitter: @freakonometrics <https://twitter.com/freakonometrics>
+>
+
+
+-- 
+*Manuel Sp?nola, Ph.D.*
+Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre
+Universidad Nacional
+Apartado 1350-3000
+Heredia
+COSTA RICA
+mspinola at una.cr <mspinola at una.ac.cr>
+mspinola10 at gmail.com
+Tel?fono: (506) 8706 - 4662
+Personal website: Lobito de r?o <https://sites.google.com/site/lobitoderio/>
+Institutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>
+
+	[[alternative HTML version deleted]]
+
+

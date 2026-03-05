@@ -1,0 +1,2321 @@
+From aaboueissa at usm.maine.edu  Sun Apr  1 02:04:05 2012
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Sat, 31 Mar 2012 20:04:05 -0400
+Subject: [R-sig-teaching] Comparing Points on Two Regression Lines
+Message-ID: <4F776335020000A6000C06CD@uct5.uct.usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120331/8e484ede/attachment.pl>
+
+From michael.weylandt at gmail.com  Sun Apr  1 02:10:15 2012
+From: michael.weylandt at gmail.com (R. Michael Weylandt)
+Date: Sat, 31 Mar 2012 20:10:15 -0400
+Subject: [R-sig-teaching] Comparing Points on Two Regression Lines
+In-Reply-To: <4F776335020000A6000C06CD@uct5.uct.usm.maine.edu>
+References: <4F776335020000A6000C06CD@uct5.uct.usm.maine.edu>
+Message-ID: <CAAmySGO2bqx0hfRU2WCnUe6kA1RWzRdHmqJxN7sk4OAJeXuqeA@mail.gmail.com>
+
+? approxfun
+
+f1 <- approxfun(x1,y1)
+f2 <- approxfun(x2,y2)
+
+f1(x) - f2(x)
+
+But I'm not sure what you mean be compare...do you have a particular
+test in mind?
+
+Michael
+
+On Sat, Mar 31, 2012 at 8:04 PM, AbouEl-Makarim Aboueissa
+<aaboueissa at usm.maine.edu> wrote:
+> Dear All:
+>
+> I am trying to compare points on two regression lines given some specific values of X. I am not sure how to do it in R and/or in SAS. Can someone help me, and show me how to conduct such test in R.
+>
+>
+> You can use the following data for both lines.
+>
+> ### data for line 1:
+> ### =========
+>
+> x1<-c(0.0,0.25,2.5,25.0,50.0)
+> y1<-c(100.0,79.0,74.0,36.0,8.0)
+>
+>
+>
+> ### data for line 2:
+> ### =========
+>
+> x2<-c(0.0,0.25,2.5,25.0,50.0)
+> y2<-c(100.0,79.0,55.0,18.0,2.0)
+>
+>
+> ### these are the given values of X:
+> ### ?===================
+>
+> x<-c(0.10,0.20,2.0,15.0,35.0)
+>
+>
+> thank you very much in advance
+> abou
+>
+>
+>
+>
+>
+>
+>
+>
+> ==========================
+> AbouEl-Makarim Aboueissa, Ph.D.
+> Associate Professor of Statistics
+> Graduate Program Coordinator
+> Department of Mathematics & Statistics
+> University of Southern Maine
+> 96 Falmouth Street
+> P.O. Box 9300
+> Portland, ME 04104-9300
+> USA
+>
+>
+> Tel: (207) 228-8389
+> Fax: (207) 780-5607
+> Email: aaboueissa at usm.maine.edu
+> ? ? ? ? ?aboueiss at yahoo.com
+>
+> Office: 301C Payson Smith
+>
+>
+> ? ? ? ?[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From michael.weylandt at gmail.com  Sun Apr  1 03:13:02 2012
+From: michael.weylandt at gmail.com (R. Michael Weylandt)
+Date: Sat, 31 Mar 2012 21:13:02 -0400
+Subject: [R-sig-teaching] Comparing Points on Two Regression Lines
+In-Reply-To: <4F7766DA020000A6000C06D3@uct5.uct.usm.maine.edu>
+References: <4F776335020000A6000C06CD@uct5.uct.usm.maine.edu>
+	<CAAmySGO2bqx0hfRU2WCnUe6kA1RWzRdHmqJxN7sk4OAJeXuqeA@mail.gmail.com>
+	<4F7766DA020000A6000C06D3@uct5.uct.usm.maine.edu>
+Message-ID: <CAAmySGP12Ao3zghdFrF5swPV6JSsg_5CVautqzYLWZUJxQbv_w@mail.gmail.com>
+
+Again, you need to clarify what you mean by compare, but here's a
+better way to do predict from a linear model -- my first guess was
+simple interpolation (not very good):
+
+m1 <- lm(y ~ x, data = data.frame(y = y1, x = x1))
+m2 <- lm(y ~ x, data = data.frame(y = y2, x = x2))
+
+predict(m1, newdata = data.frame(x = x))
+predict(m2, newdata = data.frame(x = x))
+
+Perhaps you want an ANOVA (?anova) test to compare the models: if you
+want to compare the predicted values at x directly, you could use
+interval="predict" for the different models and see if they overlap at
+a given confidence level.
+
+Michael
+
+PS -- Please do cc the list: I'm not a statistics expert by any means
+and I'd hate for what I say to go unreviewed by actual experts.
+
+On Sat, Mar 31, 2012 at 8:19 PM, AbouEl-Makarim Aboueissa
+<aaboueissa at usm.maine.edu> wrote:
+> I need to compare the value of y1-hat versus y2-hat corresponding to these
+> values of x<-c(0.10,0.20,2.0,15.0,35.0)
+> e.g. for x=0.10 compare y1-hat(x=0.10) versus y2-hat(x=0.10) and so on.
+>
+> thanks
+> abou
+>
+>
+>>>> "R. Michael Weylandt" <michael.weylandt at gmail.com> 3/31/2012 8:10 PM >>>
+> ? approxfun
+>
+> f1 <- approxfun(x1,y1)
+> f2 <- approxfun(x2,y2)
+>
+> f1(x) - f2(x)
+>
+> But I'm not sure what you mean be compare...do you have a particular
+> test in mind?
+>
+> Michael
+>
+> On Sat, Mar 31, 2012 at 8:04 PM, AbouEl-Makarim Aboueissa
+> <aaboueissa at usm.maine.edu> wrote:
+>> Dear All:
+>>
+>> I am trying to compare points on two regression lines given some specific
+>> values of X. I am not sure how to do it in R and/or in SAS. Can someone help
+>> me, and show me how to conduct such test in R.
+>>
+>>
+>> You can use the following data for both lines.
+>>
+>> ### data for line 1:
+>> ### =========
+>>
+>> x1<-c(0.0,0.25,2.5,25.0,50.0)
+>> y1<-c(100.0,79.0,74.0,36.0,8.0)
+>>
+>>
+>>
+>> ### data for line 2:
+>> ### =========
+>>
+>> x2<-c(0.0,0.25,2.5,25.0,50.0)
+>> y2<-c(100.0,79.0,55.0,18.0,2.0)
+>>
+>>
+>> ### these are the given values of X:
+>> ###? ===================
+>>
+>> x<-c(0.10,0.20,2.0,15.0,35.0)
+>>
+>>
+>> thank you very much in advance
+>> abou
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>> ==========================
+>> AbouEl-Makarim Aboueissa, Ph.D.
+>> Associate Professor of Statistics
+>> Graduate Program Coordinator
+>> Department of Mathematics & Statistics
+>> University of Southern Maine
+>> 96 Falmouth Street
+>> P.O. Box 9300
+>> Portland, ME 04104-9300
+>> USA
+>>
+>>
+>> Tel: (207) 228-8389
+>> Fax: (207) 780-5607
+>> Email: aaboueissa at usm.maine.edu
+>>????????? aboueiss at yahoo.com
+>>
+>> Office: 301C Payson Smith
+>>
+>>
+>>??????? [[alternative HTML version deleted]]
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From aaboueissa at usm.maine.edu  Sun Apr  1 04:01:09 2012
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Sat, 31 Mar 2012 22:01:09 -0400
+Subject: [R-sig-teaching] Comparing Points on Two Regression Lines
+In-Reply-To: <CAAmySGP12Ao3zghdFrF5swPV6JSsg_5CVautqzYLWZUJxQbv_w@mail.gmail.com>
+References: <4F776335020000A6000C06CD@uct5.uct.usm.maine.edu>
+	<CAAmySGO2bqx0hfRU2WCnUe6kA1RWzRdHmqJxN7sk4OAJeXuqeA@mail.gmail.com>
+	<4F7766DA020000A6000C06D3@uct5.uct.usm.maine.edu>
+	<CAAmySGP12Ao3zghdFrF5swPV6JSsg_5CVautqzYLWZUJxQbv_w@mail.gmail.com>
+Message-ID: <4F777EA5020000A6000C06DF@uct5.uct.usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120331/9f8ad71f/attachment.pl>
+
+From oforsber at kvasaheim.com  Sun Apr  1 07:20:18 2012
+From: oforsber at kvasaheim.com (Ole J. Forsberg, Ph.D.)
+Date: Sun, 01 Apr 2012 00:20:18 -0500
+Subject: [R-sig-teaching] Comparing Points on Two Regression Lines
+In-Reply-To: <4F777EA5020000A6000C06DF@uct5.uct.usm.maine.edu>
+References: <4F776335020000A6000C06CD@uct5.uct.usm.maine.edu>
+	<CAAmySGO2bqx0hfRU2WCnUe6kA1RWzRdHmqJxN7sk4OAJeXuqeA@mail.gmail.com>
+	<4F7766DA020000A6000C06D3@uct5.uct.usm.maine.edu>
+	<CAAmySGP12Ao3zghdFrF5swPV6JSsg_5CVautqzYLWZUJxQbv_w@mail.gmail.com>
+	<4F777EA5020000A6000C06DF@uct5.uct.usm.maine.edu>
+Message-ID: <4F77E592.70208@kvasaheim.com>
+
+
+Thread,
+
+When discussing statistical tests with my students, I emphasize clarity. 
+I have noticed that once they clearly define what they mean by 
+"compare," the method becomes obvious to them.
+
+In this question, it is very easy to compare 84.42477 and 76.86037 -- 
+the first is larger than the second -- however, this is really not the 
+question being asked. What is the question being asked? Is the first 
+(statistically) significantly larger than the second? Well, what is the 
+standard error at those points? Is the first (practically) significantly 
+larger than the second? That depends on the goals of the research. Both 
+questions are important. Neither question can be answered by the 
+question posed.
+
+  ~ Ole
+
+
+
+On 3/31/2012 9:01 PM, AbouEl-Makarim Aboueissa wrote:
+> What I need is to compare these predicted values on both lines:
+>
+>> predict(m1, newdata = data.frame(x = x))
+>         1        2        3        4        5
+> 84.42477 84.26280 81.34729 60.29085 27.89632
+>
+>
+>> predict(m2, newdata = data.frame(x = x))
+>         1        2        3        4        5
+> 76.86037 76.69170 73.65554 51.72772 17.99261
+>
+> for example: compare 84.42477  versus 76.86037 , and   84.26280  versus  76.69170  and so on.
+>
+>
+>
+>
+> with many thanks
+> abou
+>
+>
+>
+>
+> ==========================
+> AbouEl-Makarim Aboueissa, Ph.D.
+> Associate Professor of Statistics
+> Graduate Program Coordinator
+> Department of Mathematics&  Statistics
+> University of Southern Maine
+> 96 Falmouth Street
+> P.O. Box 9300
+> Portland, ME 04104-9300
+> USA
+>
+>
+> Tel: (207) 228-8389
+> Fax: (207) 780-5607
+> Email: aaboueissa at usm.maine.edu
+>            aboueiss at yahoo.com
+>
+> Office: 301C Payson Smith
+>
+>>>> "R. Michael Weylandt"<michael.weylandt at gmail.com>  3/31/2012 9:13 PM>>>
+> Again, you need to clarify what you mean by compare, but here's a
+> better way to do predict from a linear model -- my first guess was
+> simple interpolation (not very good):
+>
+> m1<- lm(y ~ x, data = data.frame(y = y1, x = x1))
+> m2<- lm(y ~ x, data = data.frame(y = y2, x = x2))
+>
+> predict(m1, newdata = data.frame(x = x))
+> predict(m2, newdata = data.frame(x = x))
+>
+> Perhaps you want an ANOVA (?anova) test to compare the models: if you
+> want to compare the predicted values at x directly, you could use
+> interval="predict" for the different models and see if they overlap at
+> a given confidence level.
+>
+> Michael
+>
+> PS -- Please do cc the list: I'm not a statistics expert by any means
+> and I'd hate for what I say to go unreviewed by actual experts.
+>
+> On Sat, Mar 31, 2012 at 8:19 PM, AbouEl-Makarim Aboueissa
+> <aaboueissa at usm.maine.edu>  wrote:
+>> I need to compare the value of y1-hat versus y2-hat corresponding to these
+>> values of x<-c(0.10,0.20,2.0,15.0,35.0)
+>> e.g. for x=0.10 compare y1-hat(x=0.10) versus y2-hat(x=0.10) and so on.
+>>
+>> thanks
+>> abou
+>>
+>>
+>>>>> "R. Michael Weylandt"<michael.weylandt at gmail.com>  3/31/2012 8:10 PM>>>
+>> ? approxfun
+>>
+>> f1<- approxfun(x1,y1)
+>> f2<- approxfun(x2,y2)
+>>
+>> f1(x) - f2(x)
+>>
+>> But I'm not sure what you mean be compare...do you have a particular
+>> test in mind?
+>>
+>> Michael
+>>
+>> On Sat, Mar 31, 2012 at 8:04 PM, AbouEl-Makarim Aboueissa
+>> <aaboueissa at usm.maine.edu>  wrote:
+>>> Dear All:
+>>>
+>>> I am trying to compare points on two regression lines given some specific
+>>> values of X. I am not sure how to do it in R and/or in SAS. Can someone help
+>>> me, and show me how to conduct such test in R.
+>>>
+>>>
+>>> You can use the following data for both lines.
+>>>
+>>> ### data for line 1:
+>>> ### =========
+>>>
+>>> x1<-c(0.0,0.25,2.5,25.0,50.0)
+>>> y1<-c(100.0,79.0,74.0,36.0,8.0)
+>>>
+>>>
+>>>
+>>> ### data for line 2:
+>>> ### =========
+>>>
+>>> x2<-c(0.0,0.25,2.5,25.0,50.0)
+>>> y2<-c(100.0,79.0,55.0,18.0,2.0)
+>>>
+>>>
+>>> ### these are the given values of X:
+>>> ###  ===================
+>>>
+>>> x<-c(0.10,0.20,2.0,15.0,35.0)
+>>>
+>>>
+>>> thank you very much in advance
+>>> abou
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> ==========================
+>>> AbouEl-Makarim Aboueissa, Ph.D.
+>>> Associate Professor of Statistics
+>>> Graduate Program Coordinator
+>>> Department of Mathematics&  Statistics
+>>> University of Southern Maine
+>>> 96 Falmouth Street
+>>> P.O. Box 9300
+>>> Portland, ME 04104-9300
+>>> USA
+>>>
+>>>
+>>> Tel: (207) 228-8389
+>>> Fax: (207) 780-5607
+>>> Email: aaboueissa at usm.maine.edu
+>>>           aboueiss at yahoo.com
+>>>
+>>> Office: 301C Payson Smith
+>>>
+>>>
+>>>         [[alternative HTML version deleted]]
+>>>
+>>> _______________________________________________
+>>> R-sig-teaching at r-project.org mailing list
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+From aaboueissa at usm.maine.edu  Sun Apr  1 13:37:02 2012
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Sun, 01 Apr 2012 07:37:02 -0400
+Subject: [R-sig-teaching] Comparing Points on Two Regression Lines
+In-Reply-To: <CAAmySGP12Ao3zghdFrF5swPV6JSsg_5CVautqzYLWZUJxQbv_w@mail.gmail.com>
+References: <4F776335020000A6000C06CD@uct5.uct.usm.maine.edu>
+	<CAAmySGO2bqx0hfRU2WCnUe6kA1RWzRdHmqJxN7sk4OAJeXuqeA@mail.gmail.com>
+	<4F7766DA020000A6000C06D3@uct5.uct.usm.maine.edu>
+	<CAAmySGP12Ao3zghdFrF5swPV6JSsg_5CVautqzYLWZUJxQbv_w@mail.gmail.com>
+Message-ID: <4F78059E020000A6000C06F5@uct5.uct.usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120401/f274d4ed/attachment.pl>
+
+From aaboueissa at usm.maine.edu  Wed Apr  4 01:31:41 2012
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Tue, 03 Apr 2012 19:31:41 -0400
+Subject: [R-sig-teaching] Computing correlations
+Message-ID: <4F7B501D020000A6000C0B75@uct5.uct.usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120403/89481ab3/attachment.pl>
+
+From aaboueissa at usm.maine.edu  Wed Apr  4 01:48:45 2012
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Tue, 03 Apr 2012 19:48:45 -0400
+Subject: [R-sig-teaching] Computing correlations including the p values
+Message-ID: <4F7B541D020000A6000C0B7B@uct5.uct.usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120403/3053af47/attachment.pl>
+
+From istazahn at gmail.com  Wed Apr  4 02:05:57 2012
+From: istazahn at gmail.com (Ista Zahn)
+Date: Tue, 3 Apr 2012 20:05:57 -0400
+Subject: [R-sig-teaching] Computing correlations including the p values
+In-Reply-To: <4F7B541D020000A6000C0B7B@uct5.uct.usm.maine.edu>
+References: <4F7B541D020000A6000C0B7B@uct5.uct.usm.maine.edu>
+Message-ID: <CA+vqiLEDK_F5SVKr4an4VmNc6mW8nQPv=vXy42-pex6PNauTKg@mail.gmail.com>
+
+Hi,
+
+For the correlations you just need to understand how matrix indecies work in R:
+
+cor(cbind(x1, x2, x3, y1, y2, y3))[4:6, 1:3]
+
+I'll leave it to you to figure out the p values part.
+
+Best,
+Ista
+
+On Tue, Apr 3, 2012 at 7:48 PM, AbouEl-Makarim Aboueissa
+<aaboueissa at usm.maine.edu> wrote:
+> Dear All: (revise of the previous message)
+>
+> I have another silly question. How I can compute the correlations of two groups of variables including the p values. For example how to compute the correlations of the X's with Y's only of these two groups of variables
+>
+> x1<-c(12,3,45,32,34,56,7,89)
+> x2<-c(6,8,9,6,7,44,33,22)
+> x3<-c(45,7,6,89,23,45,67,22)
+>
+> y1<-c(21,43,77,32,23,45,78,90)
+> y2<-c(32,56,78,90,34,23,11,23)
+> y3<-c(8,90,34,68,72,17,27,35)
+>
+>
+> This what I need to get:
+>
+> ? ? ? ? ? ? ? ? ? ? y1 ? ? ? ? ? ? ? ? ?y2 ? ? ? ? ? ? ? ? ?y3
+>
+> x1 ? ? ? ?corr(x1,y1) ? ? ? corr(x1,y2) ? ? ? ? corr(x1,y3)
+> ? ? ? ? ? ?p value ? ? ? ? ? ? ?p value ? ? ? ? ? ? p value
+>
+> x2 ? ? ? ?corr(x2,y1) ? ? ? corr(x2,y2) ? ? ? ? corr(x2,y3)
+> ? ? ? ? ? ? p value ? ? ? ? ? p value ? ? ? ? ? ? ? ?p value
+>
+> x3 ? ? ? ?corr(x3,y1) ? ? ? corr(x3,y2) ? ? ? ? corr(x3,y3)
+> ? ? ? ? ? ? ?p value ? ? ? ? ? p value ? ? ? ? ? ? ? p value
+>
+>
+>
+> Thank you very much
+> abou
+>
+>
+> ==========================
+> AbouEl-Makarim Aboueissa, Ph.D.
+> Associate Professor of Statistics
+> Graduate Program Coordinator
+> Department of Mathematics & Statistics
+> University of Southern Maine
+> 96 Falmouth Street
+> P.O. Box 9300
+> Portland, ME 04104-9300
+> USA
+>
+>
+> Tel: (207) 228-8389
+> Fax: (207) 780-5607
+> Email: aaboueissa at usm.maine.edu
+> ? ? ? ? ?aboueiss at yahoo.com
+>
+> Office: 301C Payson Smith
+>
+>
+> ? ? ? ?[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From aaboueissa at usm.maine.edu  Wed Apr  4 04:24:52 2012
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Tue, 03 Apr 2012 22:24:52 -0400
+Subject: [R-sig-teaching] Computing correlations including the p values
+In-Reply-To: <CA+vqiLEDK_F5SVKr4an4VmNc6mW8nQPv=vXy42-pex6PNauTKg@mail.gmail.com>
+References: <4F7B541D020000A6000C0B7B@uct5.uct.usm.maine.edu>
+	<CA+vqiLEDK_F5SVKr4an4VmNc6mW8nQPv=vXy42-pex6PNauTKg@mail.gmail.com>
+Message-ID: <4F7B78B4020000A6000C0B91@uct5.uct.usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120403/e4ee1435/attachment.pl>
+
+From istazahn at gmail.com  Wed Apr  4 04:32:33 2012
+From: istazahn at gmail.com (Ista Zahn)
+Date: Tue, 3 Apr 2012 22:32:33 -0400
+Subject: [R-sig-teaching] Computing correlations including the p values
+In-Reply-To: <4F7B78B4020000A6000C0B91@uct5.uct.usm.maine.edu>
+References: <4F7B541D020000A6000C0B7B@uct5.uct.usm.maine.edu>
+	<CA+vqiLEDK_F5SVKr4an4VmNc6mW8nQPv=vXy42-pex6PNauTKg@mail.gmail.com>
+	<4F7B78B4020000A6000C0B91@uct5.uct.usm.maine.edu>
+Message-ID: <CA+vqiLHaj0=jNPvZg_YYyAPgjS9GakN6vdR5RrEPL25Kq3X4ng@mail.gmail.com>
+
+On Tue, Apr 3, 2012 at 10:24 PM, AbouEl-Makarim Aboueissa
+<aaboueissa at usm.maine.edu> wrote:
+> Hi,
+>
+> I am able to get the correlations as:
+>
+> xxx<-cbind(x1,x2,x3)
+> yyy<-cbind(y1,y2,y3)
+> cor(xxx,yyy)
+> This yields same results as yours.
+>
+> But I could not get the p values yet.
+
+What have you tried? What went wrong? Getting the p.values is not a
+straightforward extension of the approach I illustrated earlier, but
+it is something you can figure out with a few google searches. If you
+run into problems I'll be glad to help, but please do make an effort
+to figure it out on your own.
+
+Best,
+Ista
+
+>
+> thanks
+> abou
+>
+>
+>>>> Ista Zahn <istazahn at gmail.com> 4/3/2012 8:05 PM >>>
+>
+> Hi,
+>
+> For the correlations you just need to understand how matrix indecies work in
+> R:
+>
+> cor(cbind(x1, x2, x3, y1, y2, y3))[4:6, 1:3]
+>
+> I'll leave it to you to figure out the p values part.
+>
+> Best,
+> Ista
+>
+> On Tue, Apr 3, 2012 at 7:48 PM, AbouEl-Makarim Aboueissa
+> <aaboueissa at usm.maine.edu> wrote:
+>> Dear All: (revise of the previous message)
+>>
+>> I have another silly question. How I can compute the correlations of two
+>> groups of variables including the p values. For example how to compute the
+>> correlations of the X's with Y's only of these two groups of variables
+>>
+>> x1<-c(12,3,45,32,34,56,7,89)
+>> x2<-c(6,8,9,6,7,44,33,22)
+>> x3<-c(45,7,6,89,23,45,67,22)
+>>
+>> y1<-c(21,43,77,32,23,45,78,90)
+>> y2<-c(32,56,78,90,34,23,11,23)
+>> y3<-c(8,90,34,68,72,17,27,35)
+>>
+>>
+>> This what I need to get:
+>>
+>>???????????????????? y1????????????????? y2????????????????? y3
+>>
+>> x1??????? corr(x1,y1)?????? corr(x1,y2)???????? corr(x1,y3)
+>>??????????? p value????????????? p value???????????? p value
+>>
+>> x2??????? corr(x2,y1)?????? corr(x2,y2)???????? corr(x2,y3)
+>>???????????? p value?????????? p value??????????????? p value
+>>
+>> x3??????? corr(x3,y1)?????? corr(x3,y2)???????? corr(x3,y3)
+>>????????????? p value?????????? p value?????????????? p value
+>>
+>>
+>>
+>> Thank you very much
+>> abou
+>>
+>>
+>> ==========================
+>> AbouEl-Makarim Aboueissa, Ph.D.
+>> Associate Professor of Statistics
+>> Graduate Program Coordinator
+>> Department of Mathematics & Statistics
+>> University of Southern Maine
+>> 96 Falmouth Street
+>> P.O. Box 9300
+>> Portland, ME 04104-9300
+>> USA
+>>
+>>
+>> Tel: (207) 228-8389
+>> Fax: (207) 780-5607
+>> Email: aaboueissa at usm.maine.edu
+>>????????? aboueiss at yahoo.com
+>>
+>> Office: 301C Payson Smith
+>>
+>>
+>>??????? [[alternative HTML version deleted]]
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From lists at revelle.net  Wed Apr  4 05:00:37 2012
+From: lists at revelle.net (William Revelle)
+Date: Tue, 3 Apr 2012 22:00:37 -0500
+Subject: [R-sig-teaching] Computing correlations including the p values
+In-Reply-To: <CA+vqiLHaj0=jNPvZg_YYyAPgjS9GakN6vdR5RrEPL25Kq3X4ng@mail.gmail.com>
+References: <4F7B541D020000A6000C0B7B@uct5.uct.usm.maine.edu>
+	<CA+vqiLEDK_F5SVKr4an4VmNc6mW8nQPv=vXy42-pex6PNauTKg@mail.gmail.com>
+	<4F7B78B4020000A6000C0B91@uct5.uct.usm.maine.edu>
+	<CA+vqiLHaj0=jNPvZg_YYyAPgjS9GakN6vdR5RrEPL25Kq3X4ng@mail.gmail.com>
+Message-ID: <73FE1A0A-8A2A-469F-BFFF-D508840CE8DD@revelle.net>
+
+Dear AbouEl-Makarim Aboueissa,
+
+As people have pointed out before, if you are interested in how to use R to teach statistics, this is the appropriate mailing list, if you want to learn how to use R, the appropriate mailing list is the r-help mailing list.
+
+However, to answer your question:
+
+To get the p-values of a group of correlations, you might try the corr.test function in psych.
+
+Unfortunately, although this will give you the correct correlations, it will not give the correct p values for different sets of x and y.
+So you need to work a little harder 
+
+> x1<-c(12,3,45,32,34,56,7,89)
+> x2<-c(6,8,9,6,7,44,33,22)
+> x3<-c(45,7,6,89,23,45,67,22)
+> 
+> y1<-c(21,43,77,32,23,45,78,90)
+> y2<-c(32,56,78,90,34,23,11,23)
+> y3<-c(8,90,34,68,72,17,27,35)
+> df <- data.frame(x1,x2,x3,y1,y2,y3)
+> c <- corr.test(df)
+rs <- c$r[4:6,1:3]
+ps <- c$p[4:6,1:3]
+
+Bill
+
+
+On Apr 3, 2012, at 9:32 PM, Ista Zahn wrote:
+
+> On Tue, Apr 3, 2012 at 10:24 PM, AbouEl-Makarim Aboueissa
+> <aaboueissa at usm.maine.edu> wrote:
+>> Hi,
+>> 
+>> I am able to get the correlations as:
+>> 
+>> xxx<-cbind(x1,x2,x3)
+>> yyy<-cbind(y1,y2,y3)
+>> cor(xxx,yyy)
+>> This yields same results as yours.
+>> 
+>> But I could not get the p values yet.
+> 
+> What have you tried? What went wrong? Getting the p.values is not a
+> straightforward extension of the approach I illustrated earlier, but
+> it is something you can figure out with a few google searches. If you
+> run into problems I'll be glad to help, but please do make an effort
+> to figure it out on your own.
+> 
+> Best,
+> Ista
+> 
+>> 
+>> thanks
+>> abou
+>> 
+>> 
+>>>>> Ista Zahn <istazahn at gmail.com> 4/3/2012 8:05 PM >>>
+>> 
+>> Hi,
+>> 
+>> For the correlations you just need to understand how matrix indecies work in
+>> R:
+>> 
+>> cor(cbind(x1, x2, x3, y1, y2, y3))[4:6, 1:3]
+>> 
+>> I'll leave it to you to figure out the p values part.
+>> 
+>> Best,
+>> Ista
+>> 
+>> On Tue, Apr 3, 2012 at 7:48 PM, AbouEl-Makarim Aboueissa
+>> <aaboueissa at usm.maine.edu> wrote:
+>>> Dear All: (revise of the previous message)
+>>> 
+>>> I have another silly question. How I can compute the correlations of two
+>>> groups of variables including the p values. For example how to compute the
+>>> correlations of the X's with Y's only of these two groups of variables
+>>> 
+>>> x1<-c(12,3,45,32,34,56,7,89)
+>>> x2<-c(6,8,9,6,7,44,33,22)
+>>> x3<-c(45,7,6,89,23,45,67,22)
+>>> 
+>>> y1<-c(21,43,77,32,23,45,78,90)
+>>> y2<-c(32,56,78,90,34,23,11,23)
+>>> y3<-c(8,90,34,68,72,17,27,35)
+>>> 
+>>> 
+>>> This what I need to get:
+>>> 
+>>>                      y1                  y2                  y3
+>>> 
+>>> x1        corr(x1,y1)       corr(x1,y2)         corr(x1,y3)
+>>>             p value              p value             p value
+>>> 
+>>> x2        corr(x2,y1)       corr(x2,y2)         corr(x2,y3)
+>>>              p value           p value                p value
+>>> 
+>>> x3        corr(x3,y1)       corr(x3,y2)         corr(x3,y3)
+>>>               p value           p value               p value
+>>> 
+>>> 
+>>> 
+>>> Thank you very much
+>>> abou
+>>> 
+>>> 
+>>> ==========================
+>>> AbouEl-Makarim Aboueissa, Ph.D.
+>>> Associate Professor of Statistics
+>>> Graduate Program Coordinator
+>>> Department of Mathematics & Statistics
+>>> University of Southern Maine
+>>> 96 Falmouth Street
+>>> P.O. Box 9300
+>>> Portland, ME 04104-9300
+>>> USA
+>>> 
+>>> 
+>>> Tel: (207) 228-8389
+>>> Fax: (207) 780-5607
+>>> Email: aaboueissa at usm.maine.edu
+>>>           aboueiss at yahoo.com
+>>> 
+>>> Office: 301C Payson Smith
+>>> 
+>>> 
+>>>         [[alternative HTML version deleted]]
+>>> 
+>>> _______________________________________________
+>>> R-sig-teaching at r-project.org mailing list
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+
+William Revelle		           http://personality-project.org/revelle.html
+Professor			           http://personality-project.org
+Department of Psychology   http://www.wcas.northwestern.edu/psych/
+Northwestern University	   http://www.northwestern.edu/
+Use R for psychology             http://personality-project.org/r
+It is 5 minutes to midnight	   http://www.thebulletin.org
+
+
+From jones at reed.edu  Wed Apr  4 07:38:46 2012
+From: jones at reed.edu (jones)
+Date: Tue, 03 Apr 2012 22:38:46 -0700
+Subject: [R-sig-teaching] Computing correlations
+In-Reply-To: <4F7B501D020000A6000C0B75@uct5.uct.usm.maine.edu>
+References: <4F7B501D020000A6000C0B75@uct5.uct.usm.maine.edu>
+Message-ID: <1a605e35474424ecb6cda953f158c9e6@reed.edu>
+
+That is really an r-help question, but easy, and I'm busy not
+writing the lecture I should be writing:
+
+X <- cbind(x1,x2,x3,y1,y2,y3)
+cor(X)[1:3,4:6]
+
+albyn
+
+On 4/3/12 4:31 PM, AbouEl-Makarim Aboueissa wrote:
+> Dear All:
+>
+> I have another silly question. How I can compute the correlations of
+> two groups of variables. For example how to compute the correlations
+> of the X's with Y's only of these two groups of variables
+>
+> x1<-c(12,3,45,32,34,56,7,89)
+> x2<-c(6,8,9,6,7,44,33,22)
+> x2<-c(45,7,6,89,23,45,67,22)
+>
+> y1<-c(21,43,77,32,23,45,78,90)
+> y2<-c(32,56,78,90,34,23,11,23)
+> y3<-c(8,90,34,68,72,17,27,35)
+>
+>
+> This what I need to get:
+>
+>                      y1                  y2                  y3
+>
+> x1        corr(x1,y1)       corr(x1,y2)         corr(x1,y3)
+>
+>
+> x2        corr(x2,y1)       corr(x2,y2)         corr(x2,y3)
+>
+>
+> x3        corr(x3,y1)       corr(x3,y2)         corr(x3,y3)
+>
+>
+>
+>
+> Thank you very much
+> abou
+>
+>
+>
+>
+>
+>
+>
+>
+>
+> ==========================
+> AbouEl-Makarim Aboueissa, Ph.D.
+> Associate Professor of Statistics
+> Graduate Program Coordinator
+> Department of Mathematics & Statistics
+> University of Southern Maine
+> 96 Falmouth Street
+> P.O. Box 9300
+> Portland, ME 04104-9300
+> USA
+>
+>
+> Tel: (207) 228-8389
+> Fax: (207) 780-5607
+> Email: aaboueissa at usm.maine.edu
+>           aboueiss at yahoo.com
+>
+> Office: 301C Payson Smith
+>
+>
+> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From landronimirc at gmail.com  Wed Apr  4 13:59:49 2012
+From: landronimirc at gmail.com (Liviu Andronic)
+Date: Wed, 4 Apr 2012 13:59:49 +0200
+Subject: [R-sig-teaching] Computing correlations
+In-Reply-To: <4F7B501D020000A6000C0B75@uct5.uct.usm.maine.edu>
+References: <4F7B501D020000A6000C0B75@uct5.uct.usm.maine.edu>
+Message-ID: <CABxs9VkF6Lkbaa90RumN4+7C6uagYY=AhjC7L5CzXZpWBipwCQ@mail.gmail.com>
+
+On Wed, Apr 4, 2012 at 1:31 AM, AbouEl-Makarim Aboueissa
+<aaboueissa at usm.maine.edu> wrote:
+> I have another silly question. How I can compute the correlations of two groups of variables. For example how to compute the correlations of the X's with Y's only of these two groups of variables
+>
+As Albyn suggested, such questions should really be posted on r-help.
+To get started with basic statistics procedures I would recommend
+Rcmdr. It allows to easily compute correlations (and display the code
+used for that) and much more.
+
+Regards
+Liviu
+
+
+From rpruim at calvin.edu  Tue Apr 10 20:59:26 2012
+From: rpruim at calvin.edu (Randall Pruim)
+Date: Tue, 10 Apr 2012 14:59:26 -0400
+Subject: [R-sig-teaching] New version of mosaic on CRAN
+Message-ID: <C9FF1CAA-28B5-443F-BCE4-3C1365629435@calvin.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120410/6f70ef31/attachment.pl>
+
+From zanaty2005 at yahoo.com  Sun Apr 15 17:14:10 2012
+From: zanaty2005 at yahoo.com (Ali Zanaty)
+Date: Sun, 15 Apr 2012 08:14:10 -0700 (PDT)
+Subject: [R-sig-teaching] Distribution of the T test statistic under H0 and
+	Ha
+Message-ID: <1334502850.76732.YahooMailClassic@web162203.mail.bf1.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120415/4e9a4b4d/attachment.pl>
+
+From schumacr at cedarville.edu  Sun Apr 15 18:26:43 2012
+From: schumacr at cedarville.edu (Bob Schumacher)
+Date: Sun, 15 Apr 2012 12:26:43 -0400
+Subject: [R-sig-teaching] Distribution of the T test statistic under H0
+ and Ha
+Message-ID: <4F8ABE85020000D5000D919C@poplar.cedarville.edu>
+
+I use the package HH function norm.curve for this. 
+
+Bob Schumacher
+
+
+>>> Ali Zanaty  04/15/12 11:14 AM >>>
+Dear All: 
+
+  
+
+
+
+I need a quick help in R. How I can plot plot the distribution of the T test 
+statistic under Ho and Ha with shading areas. Plot overlapping two T distributions and shading overlapping areas under both curves. You choose any values just
+ for example. I could not upload any graph for example.
+
+  
+
+
+
+Once I know how to create this one, I think I will be able to create the one for normal case.
+
+
+
+Thank you very much and sorry for bothering.
+
+
+
+Ali
+
+
+    [[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From landronimirc at gmail.com  Mon Apr 16 08:23:10 2012
+From: landronimirc at gmail.com (Liviu Andronic)
+Date: Mon, 16 Apr 2012 08:23:10 +0200
+Subject: [R-sig-teaching] Distribution of the T test statistic under H0
+ and Ha
+In-Reply-To: <4F8ABE85020000D5000D919C@poplar.cedarville.edu>
+References: <4F8ABE85020000D5000D919C@poplar.cedarville.edu>
+Message-ID: <CABxs9VkQ8D1JYACF4SGN6pnJVB92VJp0BGP39ELY9TQ0kX=R2A@mail.gmail.com>
+
+On Sun, Apr 15, 2012 at 6:26 PM, Bob Schumacher <schumacr at cedarville.edu> wrote:
+> I use the package HH function norm.curve for this.
+>
+See also the Rcmdr 'Distributions' menu.
+
+Liviu
+
+
+From aaboueissa at usm.maine.edu  Mon Apr 16 15:56:11 2012
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Mon, 16 Apr 2012 09:56:11 -0400
+Subject: [R-sig-teaching] Distribution of the T test statistic under H0
+ and Ha
+In-Reply-To: <1334502850.76732.YahooMailClassic@web162203.mail.bf1.yahoo.com>
+References: <1334502850.76732.YahooMailClassic@web162203.mail.bf1.yahoo.com>
+Message-ID: <4F8BECBB020000A6000C24C8@uct5.uct.usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120416/d73671eb/attachment.pl>
+
+From 538280 at gmail.com  Mon Apr 16 17:44:33 2012
+From: 538280 at gmail.com (Greg Snow)
+Date: Mon, 16 Apr 2012 09:44:33 -0600
+Subject: [R-sig-teaching] Distribution of the T test statistic under H0
+ and Ha
+In-Reply-To: <1334502850.76732.YahooMailClassic@web162203.mail.bf1.yahoo.com>
+References: <1334502850.76732.YahooMailClassic@web162203.mail.bf1.yahoo.com>
+Message-ID: <CAFEqCdzmyRNANDZgLfAbGyrMgfrm3T5HS4Srn=fuu5JM=GO4_g@mail.gmail.com>
+
+The power.examp function in the TeachingDemos package compares normal
+distributions from a null and alternative hypothesis (the
+run.power.examp function provides a GUI for the function).  The
+normals could be replaced with a T and non-central T distribution (on
+my to do list, I actually have contributed code for this, just have
+not incorporated it yet).
+
+On Sun, Apr 15, 2012 at 9:14 AM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:
+> Dear All:
+>
+>
+>
+>
+>
+> I need a quick help in R. How I can plot plot the distribution of the T test
+> statistic under Ho and Ha with shading areas. Plot overlapping two T distributions and shading overlapping areas under both curves. You choose any values just
+> ?for example. I could not upload any graph for example.
+>
+>
+>
+>
+>
+> Once I know how to create this one, I think I will be able to create the one for normal case.
+>
+>
+>
+> Thank you very much and sorry for bothering.
+>
+>
+>
+> Ali
+>
+>
+> ? ? ? ?[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+-- 
+Gregory (Greg) L. Snow Ph.D.
+538280 at gmail.com
+
+
+From cryan at binghamton.edu  Thu Apr 19 04:47:56 2012
+From: cryan at binghamton.edu (Christopher W Ryan)
+Date: Wed, 18 Apr 2012 22:47:56 -0400
+Subject: [R-sig-teaching] introducing R to high school students
+Message-ID: <CAM+rpYkV1R=TCMz_tMhp0qg1uU6O9A2ModvxoAa2D-njbyJUbw@mail.gmail.com>
+
+After some interesting discussions on r-help list, the suggestion was
+made that I could also probably gain some useful insights on this
+teaching listserve, a resource that I didn't know about previously.
+
+I participate peripherally on a listserve for middle- and high-school
+science teachers. Sometimes questions about graphing or data analysis
+come up. I never miss an opportunity to advocate for R. However, the
+teachers are often skeptical that the students would be able to issue
+commands or write a little code; they think it would be too difficult.
+Perhaps this stems from the Microsoft- and spreadsheet-centered,
+pointy-clicky culture prevalent in most US public schools. Then again,
+I have little experience teaching this age group, besides my own kids
+and my Science Olympiad team, so I respect their concerns.
+
+Now I have to put my money where my mouth is. I've offered to visit a
+high school and introduce R to some fairly advanced students
+participating in a longitudinal 3-year science research class.  To be
+clear, they are already, for good or for ill, doing data analysis and
+graphics for their projects using software.  Mostly they are using
+Excel and SPSS.  My goal would be to introduce them to R as another
+(and better) tool for what they are currently doing. I would have to
+work hard to keep it at a very introductory level, but I don't see why
+plot(force, acceleration) should be any more conceptually difficult
+for high schoolers than clicking through a whole series of dialog
+boxes. The latter merely has the advantage of familiarity. But I can't
+help but wonder whether it would be better to give kids good
+scientific tools upfront, rather than have them spend many
+impressionable years using sub-optimal tools and then in graduate
+school try to entice them to switch.
+
+They all will have datasets of their own.  I imagine they will mostly
+be single, "rectangular" datasets, ie  data frames.
+
+I tentatively anticipate a lot of graphics, of course, which I'm
+hoping they would find pretty cool and useful. I'd also like to
+introduce the concept of an object, just to the level of "there are
+different kinds, here's what some of the kinds are called, there's
+stuff inside them, and you can explore them with str(), head(),
+tail(), class()" and the like. Some simple descriptive statistics.
+They are already doing t-tests, Chi-squared tests, and linear
+regression (again, for good or for ill.)  I don't know whether I'd
+have time to get to those topics in R, probably not.
+
+There was a diversity of opinions on R-help about how to do this, and
+especially, whether to do it at all.
+
+Has anyone done anything with R in high schools?
+
+Thanks.
+
+--Chris Ryan
+SUNY Upstate Medical University
+Binghamton Clinical Campus
+
+
+From rpruim at calvin.edu  Thu Apr 19 07:02:36 2012
+From: rpruim at calvin.edu (Randall Pruim)
+Date: Thu, 19 Apr 2012 01:02:36 -0400
+Subject: [R-sig-teaching] introducing R to high school students
+In-Reply-To: <CAM+rpYkV1R=TCMz_tMhp0qg1uU6O9A2ModvxoAa2D-njbyJUbw@mail.gmail.com>
+References: <CAM+rpYkV1R=TCMz_tMhp0qg1uU6O9A2ModvxoAa2D-njbyJUbw@mail.gmail.com>
+Message-ID: <9A0B26D4-FD7A-4F48-972A-89D959674DA6@calvin.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120419/5d1d092a/attachment.pl>
+
+From Robert.Grant at sgul.kingston.ac.uk  Thu Apr 19 11:27:31 2012
+From: Robert.Grant at sgul.kingston.ac.uk (Grant, Robert)
+Date: Thu, 19 Apr 2012 10:27:31 +0100
+Subject: [R-sig-teaching] introducing R to high school students
+In-Reply-To: <9A0B26D4-FD7A-4F48-972A-89D959674DA6@calvin.edu>
+References: <CAM+rpYkV1R=TCMz_tMhp0qg1uU6O9A2ModvxoAa2D-njbyJUbw@mail.gmail.com>
+	<9A0B26D4-FD7A-4F48-972A-89D959674DA6@calvin.edu>
+Message-ID: <8470FED1FC4ED845A512093F3E4F8ABF013D2B2AFABF@KUMBX.kuds.kingston.ac.uk>
+
+Dear Chris et al
+
+I would strictly control how much of the session looks at their own datasets. This is incredibly demanding on a teacher and your time will vanish before you know it! First, you need to get them typing some basic code and getting nice graphs out. I would focus on things they can't do in Excel/SPSS, such as controlling options like cex and col with variables. But you could get them to work through some good datasets first and then set them loose on their own stuff, maybe in small groups so they can try to stretch beyond what you show them.
+
+I think the Titanic passenger list would be ideal for some binary variables. How topical can you get? (http://lib.stat.cmu.edu/S/Harrell/data/descriptions/titanic.html)
+
+Disclaimer: I'm a university lecturer and probably have typically unrealistic views of high school teaching!
+
+Robert
+
+-----Original Message-----
+From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-bounces at r-project.org] On Behalf Of Randall Pruim
+Sent: 19 April 2012 06:03
+To: Christopher W Ryan
+Cc: R-sig-teaching at r-project.org
+Subject: Re: [R-sig-teaching] introducing R to high school students
+
+
+A few thoughts.  You can do what you want with them.
+
+1) Use R formulas.
+
+If you lattice graphics, then lm() and plots have essentially the same  
+syntax and you can make nice connections between the graphs and the  
+analyses.  For example,
+
+bwplot( weightLoss ~ diet ) or xyplot (weightLoss ~ diet) if the data  
+set is small
+lm( weightLoss ~ diet )
+
+This approach should give you the "time to get to those topics" since  
+the formula interface can be learned through graphical explorations  
+first.
+
+If you add the mosaic package to your arsenal, then you can also do  
+numerical summaries this way
+
+mean( weightLoss ~ diet )
+
+1a) Some quirks in R you might want to just avoid.
+
+Out of the box, not all of the statistical test functions take a  
+formula interface.  binom.test() and chisq.test() require summarized  
+data.  t.test() uses a formula for 2-sample tests, but not for 1- 
+sample tests.  If time is short, dealing with this might be more  
+hassle than it's worth.  You might want to limit yourself to lm() --  
+perhaps augmented by glm().  You can do some fun examples in that  
+context and see how well they are able to construct models and  
+interpret their parameters.
+
+If the students left your session(s) knowing how to make a handful of  
+lattice plots, to create and fit models with lm(), and to interpret  
+the resulting model fits, I would call that highly successful.
+
+2) You may or may not find "rectangular data"
+
+People storing data in Excel do all manner of things.  If the students  
+do something other than "rectangular data", take some time to talk  
+about R's convention and why it is important to know about  
+observational units and variables.
+
+3) If you have access to and RStudio server, then you can avoid all  
+installation and set up issues and students can work in a browser.
+
+In my experience, you never know just what state high school  
+technology will be in.
+
+4) Find some good data sets for your examples.
+
+What qualifies is a matter of taste, I suppose, but don't skimp on the  
+data. If you have time, and if it is easy to get their data, you could  
+do some examples with the students' data.
+
+5) I don't know how much time you will be given, but it will go by too  
+quickly.
+
+Prepare lots of cool stuff, but don't rush to use it all.  Better to  
+do less and do it well.  Leave them begging for more.
+
+6) Teach a little bit about function syntax.
+
+If your time is limited, you likely won't have much time to get into  
+programming, control structures, classes of objects, method dispatch,  
+lazy evaluation, ...  But you can do a lot with R in a one-line-of- 
+code-at-a-time sort of way.  One thing you do need to say a bit about  
+is functions, since nearly every one of these lines will include one  
+or more of an arithmetic computation, an assignment, or function  
+call.  When I teach new functions to beginners, I ask them what things  
+the computer would need to know to produce the result we are hoping to  
+get.  Once they have identified the inputs and outputs, then I tell  
+them the syntax used to provide the inputs to R and look at the output  
+R returns.  I emphasize too the common pattern of functions syntax --  
+name, open paren, comma-separated list of arguments, close paren.
+
+7) If the students are good and you can react quickly on your feet,  
+ask them what they want to learn about and show it to them.
+
+You'll probably have a good sense for their level after the first  
+15-20 minutes.
+
+8) Almost forgot... You could do some resampling stuff.
+
+R is well suited for this.  You can simplify it a bit by using do()  
+from the mosaic package, or you can use replicate()
+
+ > lm( age ~ sex, HELPrct )
+
+Call:
+lm(formula = age ~ sex, data = HELPrct)
+
+Coefficients:
+(Intercept)      sexmale
+     36.2523      -0.7841
+
+ > do(5) * lm( age ~ shuffle(sex), HELPrct )
+   Intercept     sexmale    sigma    r-squared
+1  35.83178 -0.23350980 7.718169 1.658421e-04
+2  35.34579  0.40276052 7.716905 4.933763e-04
+3  35.69159 -0.04997029 7.718780 7.594658e-06
+4  34.62617  1.34493004 7.697547 5.501535e-03
+5  35.04673  0.79431149 7.711400 1.918961e-03
+
+Have fun.  Hope it goes well for you.
+
+---rjp
+
+
+
+
+
+On Apr 18, 2012, at 10:47 PM, Christopher W Ryan wrote:
+
+> After some interesting discussions on r-help list, the suggestion was
+> made that I could also probably gain some useful insights on this
+> teaching listserve, a resource that I didn't know about previously.
+>
+> I participate peripherally on a listserve for middle- and high-school
+> science teachers. Sometimes questions about graphing or data analysis
+> come up. I never miss an opportunity to advocate for R. However, the
+> teachers are often skeptical that the students would be able to issue
+> commands or write a little code; they think it would be too difficult.
+> Perhaps this stems from the Microsoft- and spreadsheet-centered,
+> pointy-clicky culture prevalent in most US public schools. Then again,
+> I have little experience teaching this age group, besides my own kids
+> and my Science Olympiad team, so I respect their concerns.
+>
+> Now I have to put my money where my mouth is. I've offered to visit a
+> high school and introduce R to some fairly advanced students
+> participating in a longitudinal 3-year science research class.  To be
+> clear, they are already, for good or for ill, doing data analysis and
+> graphics for their projects using software.  Mostly they are using
+> Excel and SPSS.  My goal would be to introduce them to R as another
+> (and better) tool for what they are currently doing. I would have to
+> work hard to keep it at a very introductory level, but I don't see why
+> plot(force, acceleration) should be any more conceptually difficult
+> for high schoolers than clicking through a whole series of dialog
+> boxes. The latter merely has the advantage of familiarity. But I can't
+> help but wonder whether it would be better to give kids good
+> scientific tools upfront, rather than have them spend many
+> impressionable years using sub-optimal tools and then in graduate
+> school try to entice them to switch.
+>
+> They all will have datasets of their own.  I imagine they will mostly
+> be single, "rectangular" datasets, ie  data frames.
+>
+> I tentatively anticipate a lot of graphics, of course, which I'm
+> hoping they would find pretty cool and useful. I'd also like to
+> introduce the concept of an object, just to the level of "there are
+> different kinds, here's what some of the kinds are called, there's
+> stuff inside them, and you can explore them with str(), head(),
+> tail(), class()" and the like. Some simple descriptive statistics.
+> They are already doing t-tests, Chi-squared tests, and linear
+> regression (again, for good or for ill.)  I don't know whether I'd
+> have time to get to those topics in R, probably not.
+>
+> There was a diversity of opinions on R-help about how to do this, and
+> especially, whether to do it at all.
+>
+> Has anyone done anything with R in high schools?
+>
+> Thanks.
+>
+> --Chris Ryan
+> SUNY Upstate Medical University
+> Binghamton Clinical Campus
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+	[[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+This email has been scanned for all viruses by the MessageLabs Email
+Security System.
+
+This email has been scanned for all viruses by the MessageLabs Email
+Security System.
+
+
+From bob at statland.org  Thu Apr 19 15:34:55 2012
+From: bob at statland.org (Bob)
+Date: Thu, 19 Apr 2012 08:34:55 -0500 (EST)
+Subject: [R-sig-teaching]  introducing R to high school students
+Message-ID: <20120419133455.6096328824@mail89.csoft.net>
+
+
+I know one high school teacher who used R in her AP Statistics
+class.  I just dropped her a note to see if she is willing to provide
+any links to her work or an email address.  I have also used R as one
+software option in online courses over the past few years, and plan to
+use it a bit next summer in a workshop for high school AP Statistics
+teachers. 
+
+Installation and data file format can grind a demo to a halt in no
+time.  I suggest you run stuff on your own machine or use something
+like RWEB (Google it).  To use student data maybe you can either send
+them info on the file format you need or even better ask them to
+submit data beforehand with documentation so you can see if you can
+find anything you can use.  My experience is that anyting you ask a
+host to get working in advance will not work the day of the demo;-(
+
+R can do some spectacular graphics -- certainly compared to Excel!
+Even a simple histogram, which also has the advantage the R is much
+EASIER than Excel for such basic graphics.  
+
+If I knew the students had access to PCs I would download the latest R
+and burn it to CDs to hand out.  I would not spend demo time on
+installation but they could all take this home to play with.
+Actually, I would probably give out a live Linux Cd with R
+preinstalled.  (Often the problem is that the teachers cannot figure
+out R but the students can, which creates problems for teachers who
+need to give the appearance of having all the answers.)  If they use
+Macs I would give up;-)
+
+It is much easier to modify code than to write it from scratch.  You
+might do a simple lm(y~x) with a dataset with several variables and
+then try lm(z~x) or lm(y~z). Should be easy in RWEB.  
+
+My experience with learning R is that those who teach it presnt things
+that are way too complicate4d for beginners. The goal is to anlyze
+data, not to show of how much you know about R, or every feature it
+has.  Beginners will not see the need for or usefulness of objects
+until they have gained some experience. The goal should be to maximize
+the analysis of data and minimize time spent on the peculiarities of
+R.  You are welcome to offer students this link to materials that try
+to do this.
+
+   http://statland.org/Software_Help/R/Rhome.htm
+
+ 
+
+Forwarded message:
+> From: Christopher W Ryan <cryan at binghamton.edu>
+> I participate peripherally on a listserve for middle- and high-school
+> science teachers. Sometimes questions about graphing or data analysis
+> come up. I never miss an opportunity to advocate for R. However, the
+> teachers are often skeptical that the students would be able to issue
+> commands or write a little code; they think it would be too difficult.
+> Perhaps this stems from the Microsoft- and spreadsheet-centered,
+> pointy-clicky culture prevalent in most US public schools. Then again,
+> I have little experience teaching this age group, besides my own kids
+> and my Science Olympiad team, so I respect their concerns.
+> 
+> Now I have to put my money where my mouth is. I've offered to visit a
+> high school and introduce R to some fairly advanced students
+> participating in a longitudinal 3-year science research class.  To be
+> clear, they are already, for good or for ill, doing data analysis and
+> graphics for their projects using software.  Mostly they are using
+> Excel and SPSS.  My goal would be to introduce them to R as another
+> (and better) tool for what they are currently doing. I would have to
+> work hard to keep it at a very introductory level, but I don't see why
+> plot(force, acceleration) should be any more conceptually difficult
+> for high schoolers than clicking through a whole series of dialog
+> boxes. The latter merely has the advantage of familiarity. But I can't
+> help but wonder whether it would be better to give kids good
+> scientific tools upfront, rather than have them spend many
+> impressionable years using sub-optimal tools and then in graduate
+> school try to entice them to switch.
+> 
+> They all will have datasets of their own.  I imagine they will mostly
+> be single, "rectangular" datasets, ie  data frames.
+> 
+> I tentatively anticipate a lot of graphics, of course, which I'm
+> hoping they would find pretty cool and useful. I'd also like to
+> introduce the concept of an object, just to the level of "there are
+> different kinds, here's what some of the kinds are called, there's
+> stuff inside them, and you can explore them with str(), head(),
+> tail(), class()" and the like. Some simple descriptive statistics.
+> They are already doing t-tests, Chi-squared tests, and linear
+> regression (again, for good or for ill.)  I don't know whether I'd
+> have time to get to those topics in R, probably not.
+> 
+> There was a diversity of opinions on R-help about how to do this, and
+> especially, whether to do it at all.
+> 
+> Has anyone done anything with R in high schools?
+> 
+> Thanks.
+> 
+> --Chris Ryan
+> SUNY Upstate Medical University
+> Binghamton Clinical Campus
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+> 
+
+Sent from my nine-year-old Dell GX-260 running Mepis Linux 8.0
+------->  First-time AP Stats. teacher?  Help is on the way! See
+http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+      _
+     | |          Robert W. Hayden
+     | |          142 Main Street
+    /  |          Apartment 104
+   |   |          Jaffrey, New Hampshire 03452  USA
+   |   |          email: bob@ the site below
+  /    |          website: http://statland.org
+ | .   y          phone: (603) 532-7224 (home)
+ ''''''
+
+
+From cgenolin at u-paris10.fr  Fri Apr 20 13:41:20 2012
+From: cgenolin at u-paris10.fr (cgenolin)
+Date: Fri, 20 Apr 2012 13:41:20 +0200
+Subject: [R-sig-teaching] R exercices
+Message-ID: <71e092791844e7056ce97accc764e1a4@u-paris10.fr>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120420/44cc2840/attachment.pl>
+
+From jefflaux at gmail.com  Fri Apr 20 15:30:55 2012
+From: jefflaux at gmail.com (Jeff Laux)
+Date: Fri, 20 Apr 2012 09:30:55 -0400
+Subject: [R-sig-teaching] R exercices
+In-Reply-To: <71e092791844e7056ce97accc764e1a4@u-paris10.fr>
+References: <71e092791844e7056ce97accc764e1a4@u-paris10.fr>
+Message-ID: <4F91650F.1090705@gmail.com>
+
+Are you familiar with R Inferno?  This is a programming-oriented 
+tutorial for R by the statistician Patric Burns.  He has generously 
+placed it as a pdf online for free 
+(http://www.burns-stat.com/pages/Tutor/R_inferno.pdf); you could also 
+purchase a copy.  Of course this will be more than just a few practice 
+exercises (a lot more, and actually, I'm not sure there are any 
+exercises but you can certainly follow along with the examples).  
+Nonetheless, it may still be right up your alley.  There are other 
+resources for learning the programming side of R, but only a few that 
+are as good, and none other free, so far as I know.  If this is really 
+different from what you're looking for, you may want to reply with more 
+detail.
+
+Hope that helps.  -Jeff
+
+
+On 4/20/2012 7:41 AM, cgenolin wrote:
+>
+>
+> Hi the list,
+>
+> I am looking for some exercices for a PhD student
+> that start to learn R. He already "read" some tutorial, but now he needs
+> some practice.
+>
+> He does *not* need to learn any statistical tools ; he
+> just needs to work on programmation concept. So I am looking for some
+> exercice sheet that will, for example, focus on :
+>
+>   - structuring the
+> data (data.frame / list / matrix / ...)
+>
+>   - using controle syntax (for
+> / if / while / function)
+>
+>   - reading data
+>
+>   - ...
+>
+> Any link for this
+> kind of material?
+>
+> Sincerely
+>
+> Christophe
+>
+> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+> -----
+> No virus found in this message.
+> Checked by AVG - www.avg.com
+> Version: 2012.0.1913 / Virus Database: 2411/4948 - Release Date: 04/20/12
+>
+>
+
+
+From paula.young at salem.edu  Fri Apr 20 15:55:47 2012
+From: paula.young at salem.edu (Paula Young)
+Date: Fri, 20 Apr 2012 09:55:47 -0400
+Subject: [R-sig-teaching] R exercices
+In-Reply-To: <4F91650F.1090705@gmail.com>
+References: <71e092791844e7056ce97accc764e1a4@u-paris10.fr>
+	<4F91650F.1090705@gmail.com>
+Message-ID: <CA+srNj6m1ryCeGLRJzx-F+1P0FB_S=_zCyCLWuLvpgNPGtnG4w@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120420/0e38f2bd/attachment.pl>
+
+From cgenolin at u-paris10.fr  Fri Apr 20 16:05:32 2012
+From: cgenolin at u-paris10.fr (cgenolin)
+Date: Fri, 20 Apr 2012 16:05:32 +0200
+Subject: [R-sig-teaching] R exercices
+In-Reply-To: <4F91650F.1090705@gmail.com>
+References: <71e092791844e7056ce97accc764e1a4@u-paris10.fr>
+	<4F91650F.1090705@gmail.com>
+Message-ID: <5f74a8e369f23cffe6562dc37d9c3a3e@u-paris10.fr>
+
+Thanks for your answer.
+
+Yes, it is quite different from what I am looking for which will be 
+more
+something like :
+
+--- 8< -----
+
+Exercice 1: wrote a function that compute the surface of a rectangle
+
+Exercice 2: wrote a function that compute factorial n (whithout using 
+the
+function factorial)
+
+Exercice 3: wrote a function, that given a n, will draw a triangle of 
+"*".
+Example with n=5
+
+*
+**
+***
+****
+*****
+
+--- 8< -----
+
+The first exemple is about writing a (very) simple function and 
+returning the result ; the second
+need the use of a loop. The third will need two loops (for a beginer).
+
+And so on, on various topic.
+
+Christophe
+
+> Are you familiar with R Inferno? This is a programming-oriented
+> tutorial for R by the statistician Patric Burns. He has generously
+> placed it as a pdf online for free
+> (http://www.burns-stat.com/pages/Tutor/R_inferno.pdf [4]); you could
+> also
+> purchase a copy. Of course this will be more than just a few practice
+> exercises (a lot more, and actually, I'm not sure there are any
+> exercises but you can certainly follow along with the examples).
+> Nonetheless, it may still be right up your alley. There are other
+> resources for learning the programming side of R, but only a few that
+> are as good, and none other free, so far as I know. If this is really
+> different from what you're looking for, you may want to reply with 
+> more
+> detail.
+>
+> Hope that helps. -Jeff
+>
+> On 4/20/2012 7:41 AM, cgenolin wrote:
+>
+>> Hi the list, I am looking for some exercices for a PhD student that
+>> start to learn R. He already "read" some tutorial, but now he needs
+>> some practice. He does *not* need to learn any statistical tools ; 
+>> he
+>> just needs to work on programmation concept. So I am looking for 
+>> some
+>> exercice sheet that will, for example, focus on : - structuring the
+>> data (data.frame / list / matrix / ...) - using controle syntax (for 
+>> /
+>> if / while / function) - reading data - ... Any link for this kind 
+>> of
+>> material? Sincerely Christophe [[alternative HTML version deleted]]
+>> _______________________________________________
+>> R-sig-teaching at r-project.org [1] mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching [2] ----- No
+> virus
+>> found in this message. Checked by AVG - www.avg.com [3] Version:
+>> 2012.0.1913 / Virus Database: 2411/4948 - Release Date: 04/20/12
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org [5] mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching [6]
+
+
+
+Links:
+------
+[1] mailto:R-sig-teaching at r-project.org
+[2] https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+[3] http://www.avg.com
+[4] http://www.burns-stat.com/pages/Tutor/R_inferno.pdf
+[5] mailto:R-sig-teaching at r-project.org
+[6] https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From michael.weylandt at gmail.com  Fri Apr 20 16:45:55 2012
+From: michael.weylandt at gmail.com (R. Michael Weylandt)
+Date: Fri, 20 Apr 2012 10:45:55 -0400
+Subject: [R-sig-teaching] R exercices
+In-Reply-To: <5f74a8e369f23cffe6562dc37d9c3a3e@u-paris10.fr>
+References: <71e092791844e7056ce97accc764e1a4@u-paris10.fr>
+	<4F91650F.1090705@gmail.com>
+	<5f74a8e369f23cffe6562dc37d9c3a3e@u-paris10.fr>
+Message-ID: <CAAmySGN8vejLmkO1OTyCbB1wNOyjX_dYCD7V8YARMaXNkTC59A@mail.gmail.com>
+
+R is in the broad family of functional languages -- if your student is
+on board with the statistical capabilities of R, he might benefit from
+looking at one of the classic tutorials for those while doing the
+exercises in R. SICP is a classic, but the syntax doesn't match: maybe
+the python version works
+http://www-inst.eecs.berkeley.edu/~cs61a/sp12/book/index.html :
+alternatively, think Python or think Complexity (both online) provide
+another (less difficult) exposition. However, take these options with
+a grain of salt: if your student learns R this way, he'll get some bad
+R habits that will take a long time to break: I'd highly advise
+against any solution that suggests he do the
+
+*
+**
+***
+
+puzzle with nested loops: performance in later programming assignments
+will be terrible. Better to learn good habits now: lapply(1:n,
+function(x) cat(rep("*", n), "\n")
+
+Alternatively, working through something like Project Euler in R will
+require a little more self-starting, but might be more rewarding after
+he masters the basics of syntax. (just what's given in a first read
+through the standard intro to R document)
+
+Finally, Matloff's Art of R programming is probably exactly what
+you're looking for, but isn't free.
+
+Hope this helps, (and my strong advice is options 2 or 3)
+
+Michael
+
+On Fri, Apr 20, 2012 at 10:05 AM, cgenolin <cgenolin at u-paris10.fr> wrote:
+> Thanks for your answer.
+>
+> Yes, it is quite different from what I am looking for which will be more
+> something like :
+>
+> --- 8< -----
+>
+> Exercice 1: wrote a function that compute the surface of a rectangle
+>
+> Exercice 2: wrote a function that compute factorial n (whithout using the
+> function factorial)
+>
+> Exercice 3: wrote a function, that given a n, will draw a triangle of "*".
+> Example with n=5
+>
+> *
+> **
+> ***
+> ****
+> *****
+>
+> --- 8< -----
+>
+> The first exemple is about writing a (very) simple function and returning
+> the result ; the second
+> need the use of a loop. The third will need two loops (for a beginer).
+>
+> And so on, on various topic.
+>
+> Christophe
+>
+>> Are you familiar with R Inferno? This is a programming-oriented
+>> tutorial for R by the statistician Patric Burns. He has generously
+>> placed it as a pdf online for free
+>> (http://www.burns-stat.com/pages/Tutor/R_inferno.pdf [4]); you could
+>>
+>> also
+>> purchase a copy. Of course this will be more than just a few practice
+>> exercises (a lot more, and actually, I'm not sure there are any
+>> exercises but you can certainly follow along with the examples).
+>> Nonetheless, it may still be right up your alley. There are other
+>> resources for learning the programming side of R, but only a few that
+>> are as good, and none other free, so far as I know. If this is really
+>> different from what you're looking for, you may want to reply with more
+>> detail.
+>>
+>> Hope that helps. -Jeff
+>>
+>> On 4/20/2012 7:41 AM, cgenolin wrote:
+>>
+>>> Hi the list, I am looking for some exercices for a PhD student that
+>>> start to learn R. He already "read" some tutorial, but now he needs
+>>> some practice. He does *not* need to learn any statistical tools ; he
+>>> just needs to work on programmation concept. So I am looking for some
+>>> exercice sheet that will, for example, focus on : - structuring the
+>>> data (data.frame / list / matrix / ...) - using controle syntax (for /
+>>> if / while / function) - reading data - ... Any link for this kind of
+>>> material? Sincerely Christophe [[alternative HTML version deleted]]
+>>> _______________________________________________
+>>> R-sig-teaching at r-project.org [1] mailing list
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching [2] ----- No
+>>
+>> virus
+>>>
+>>> found in this message. Checked by AVG - www.avg.com [3] Version:
+>>>
+>>> 2012.0.1913 / Virus Database: 2411/4948 - Release Date: 04/20/12
+>>
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org [5] mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching [6]
+>
+>
+>
+>
+> Links:
+> ------
+> [1] mailto:R-sig-teaching at r-project.org
+> [2] https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> [3] http://www.avg.com
+> [4] http://www.burns-stat.com/pages/Tutor/R_inferno.pdf
+> [5] mailto:R-sig-teaching at r-project.org
+> [6] https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From michael.weylandt at gmail.com  Fri Apr 20 16:46:56 2012
+From: michael.weylandt at gmail.com (R. Michael Weylandt)
+Date: Fri, 20 Apr 2012 10:46:56 -0400
+Subject: [R-sig-teaching] R exercices
+In-Reply-To: <CAAmySGN8vejLmkO1OTyCbB1wNOyjX_dYCD7V8YARMaXNkTC59A@mail.gmail.com>
+References: <71e092791844e7056ce97accc764e1a4@u-paris10.fr>
+	<4F91650F.1090705@gmail.com>
+	<5f74a8e369f23cffe6562dc37d9c3a3e@u-paris10.fr>
+	<CAAmySGN8vejLmkO1OTyCbB1wNOyjX_dYCD7V8YARMaXNkTC59A@mail.gmail.com>
+Message-ID: <CAAmySGOW79NRhTZbbNYTLFNK2HnEzYzAbnu5xJTC5VE2XWQCww@mail.gmail.com>
+
+Sorry typo -- lapply(1:n, function(x) cat(rep("*",x),"\n"))
+
+
+M
+
+
+On Fri, Apr 20, 2012 at 10:45 AM, R. Michael Weylandt
+<michael.weylandt at gmail.com> wrote:
+> R is in the broad family of functional languages -- if your student is
+> on board with the statistical capabilities of R, he might benefit from
+> looking at one of the classic tutorials for those while doing the
+> exercises in R. SICP is a classic, but the syntax doesn't match: maybe
+> the python version works
+> http://www-inst.eecs.berkeley.edu/~cs61a/sp12/book/index.html :
+> alternatively, think Python or think Complexity (both online) provide
+> another (less difficult) exposition. However, take these options with
+> a grain of salt: if your student learns R this way, he'll get some bad
+> R habits that will take a long time to break: I'd highly advise
+> against any solution that suggests he do the
+>
+> *
+> **
+> ***
+>
+> puzzle with nested loops: performance in later programming assignments
+> will be terrible. Better to learn good habits now: lapply(1:n,
+> function(x) cat(rep("*", n), "\n")
+>
+> Alternatively, working through something like Project Euler in R will
+> require a little more self-starting, but might be more rewarding after
+> he masters the basics of syntax. (just what's given in a first read
+> through the standard intro to R document)
+>
+> Finally, Matloff's Art of R programming is probably exactly what
+> you're looking for, but isn't free.
+>
+> Hope this helps, (and my strong advice is options 2 or 3)
+>
+> Michael
+>
+> On Fri, Apr 20, 2012 at 10:05 AM, cgenolin <cgenolin at u-paris10.fr> wrote:
+>> Thanks for your answer.
+>>
+>> Yes, it is quite different from what I am looking for which will be more
+>> something like :
+>>
+>> --- 8< -----
+>>
+>> Exercice 1: wrote a function that compute the surface of a rectangle
+>>
+>> Exercice 2: wrote a function that compute factorial n (whithout using the
+>> function factorial)
+>>
+>> Exercice 3: wrote a function, that given a n, will draw a triangle of "*".
+>> Example with n=5
+>>
+>> *
+>> **
+>> ***
+>> ****
+>> *****
+>>
+>> --- 8< -----
+>>
+>> The first exemple is about writing a (very) simple function and returning
+>> the result ; the second
+>> need the use of a loop. The third will need two loops (for a beginer).
+>>
+>> And so on, on various topic.
+>>
+>> Christophe
+>>
+>>> Are you familiar with R Inferno? This is a programming-oriented
+>>> tutorial for R by the statistician Patric Burns. He has generously
+>>> placed it as a pdf online for free
+>>> (http://www.burns-stat.com/pages/Tutor/R_inferno.pdf [4]); you could
+>>>
+>>> also
+>>> purchase a copy. Of course this will be more than just a few practice
+>>> exercises (a lot more, and actually, I'm not sure there are any
+>>> exercises but you can certainly follow along with the examples).
+>>> Nonetheless, it may still be right up your alley. There are other
+>>> resources for learning the programming side of R, but only a few that
+>>> are as good, and none other free, so far as I know. If this is really
+>>> different from what you're looking for, you may want to reply with more
+>>> detail.
+>>>
+>>> Hope that helps. -Jeff
+>>>
+>>> On 4/20/2012 7:41 AM, cgenolin wrote:
+>>>
+>>>> Hi the list, I am looking for some exercices for a PhD student that
+>>>> start to learn R. He already "read" some tutorial, but now he needs
+>>>> some practice. He does *not* need to learn any statistical tools ; he
+>>>> just needs to work on programmation concept. So I am looking for some
+>>>> exercice sheet that will, for example, focus on : - structuring the
+>>>> data (data.frame / list / matrix / ...) - using controle syntax (for /
+>>>> if / while / function) - reading data - ... Any link for this kind of
+>>>> material? Sincerely Christophe [[alternative HTML version deleted]]
+>>>> _______________________________________________
+>>>> R-sig-teaching at r-project.org [1] mailing list
+>>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching [2] ----- No
+>>>
+>>> virus
+>>>>
+>>>> found in this message. Checked by AVG - www.avg.com [3] Version:
+>>>>
+>>>> 2012.0.1913 / Virus Database: 2411/4948 - Release Date: 04/20/12
+>>>
+>>>
+>>> _______________________________________________
+>>> R-sig-teaching at r-project.org [5] mailing list
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching [6]
+>>
+>>
+>>
+>>
+>> Links:
+>> ------
+>> [1] mailto:R-sig-teaching at r-project.org
+>> [2] https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>> [3] http://www.avg.com
+>> [4] http://www.burns-stat.com/pages/Tutor/R_inferno.pdf
+>> [5] mailto:R-sig-teaching at r-project.org
+>> [6] https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From randy.n.julie at gmail.com  Fri Apr 20 19:08:37 2012
+From: randy.n.julie at gmail.com (Randy Johnson)
+Date: Fri, 20 Apr 2012 13:08:37 -0400
+Subject: [R-sig-teaching] introducing R to high school students
+In-Reply-To: <8470FED1FC4ED845A512093F3E4F8ABF013D2B2AFABF@KUMBX.kuds.kingston.ac.uk>
+References: <CAM+rpYkV1R=TCMz_tMhp0qg1uU6O9A2ModvxoAa2D-njbyJUbw@mail.gmail.com>
+	<9A0B26D4-FD7A-4F48-972A-89D959674DA6@calvin.edu>
+	<8470FED1FC4ED845A512093F3E4F8ABF013D2B2AFABF@KUMBX.kuds.kingston.ac.uk>
+Message-ID: <095723DD-24BF-42A6-A833-1AE6E5C8C89B@gmail.com>
+
+I work with High School students, and while they are certainly capable, your time constraints and the class size may be the hardest thing to work around. I would second Robert's advice on starting with a clean dataset and a short introductory tutorial.
+
+It would also help a lot to have an additional assistant or two who are familiar enough with R to answer their questions as they begin to play on their own.
+
+Best,
+Randy
+
+On Apr 19, 2012, at 5:27 AM, Grant, Robert wrote:
+
+> Dear Chris et al
+> 
+> I would strictly control how much of the session looks at their own datasets. This is incredibly demanding on a teacher and your time will vanish before you know it! First, you need to get them typing some basic code and getting nice graphs out. I would focus on things they can't do in Excel/SPSS, such as controlling options like cex and col with variables. But you could get them to work through some good datasets first and then set them loose on their own stuff, maybe in small groups so they can try to stretch beyond what you show them.
+> 
+> I think the Titanic passenger list would be ideal for some binary variables. How topical can you get? (http://lib.stat.cmu.edu/S/Harrell/data/descriptions/titanic.html)
+> 
+> Disclaimer: I'm a university lecturer and probably have typically unrealistic views of high school teaching!
+> 
+> Robert
+> 
+> -----Original Message-----
+> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-bounces at r-project.org] On Behalf Of Randall Pruim
+> Sent: 19 April 2012 06:03
+> To: Christopher W Ryan
+> Cc: R-sig-teaching at r-project.org
+> Subject: Re: [R-sig-teaching] introducing R to high school students
+> 
+> 
+> A few thoughts.  You can do what you want with them.
+> 
+> 1) Use R formulas.
+> 
+> If you lattice graphics, then lm() and plots have essentially the same  
+> syntax and you can make nice connections between the graphs and the  
+> analyses.  For example,
+> 
+> bwplot( weightLoss ~ diet ) or xyplot (weightLoss ~ diet) if the data  
+> set is small
+> lm( weightLoss ~ diet )
+> 
+> This approach should give you the "time to get to those topics" since  
+> the formula interface can be learned through graphical explorations  
+> first.
+> 
+> If you add the mosaic package to your arsenal, then you can also do  
+> numerical summaries this way
+> 
+> mean( weightLoss ~ diet )
+> 
+> 1a) Some quirks in R you might want to just avoid.
+> 
+> Out of the box, not all of the statistical test functions take a  
+> formula interface.  binom.test() and chisq.test() require summarized  
+> data.  t.test() uses a formula for 2-sample tests, but not for 1- 
+> sample tests.  If time is short, dealing with this might be more  
+> hassle than it's worth.  You might want to limit yourself to lm() --  
+> perhaps augmented by glm().  You can do some fun examples in that  
+> context and see how well they are able to construct models and  
+> interpret their parameters.
+> 
+> If the students left your session(s) knowing how to make a handful of  
+> lattice plots, to create and fit models with lm(), and to interpret  
+> the resulting model fits, I would call that highly successful.
+> 
+> 2) You may or may not find "rectangular data"
+> 
+> People storing data in Excel do all manner of things.  If the students  
+> do something other than "rectangular data", take some time to talk  
+> about R's convention and why it is important to know about  
+> observational units and variables.
+> 
+> 3) If you have access to and RStudio server, then you can avoid all  
+> installation and set up issues and students can work in a browser.
+> 
+> In my experience, you never know just what state high school  
+> technology will be in.
+> 
+> 4) Find some good data sets for your examples.
+> 
+> What qualifies is a matter of taste, I suppose, but don't skimp on the  
+> data. If you have time, and if it is easy to get their data, you could  
+> do some examples with the students' data.
+> 
+> 5) I don't know how much time you will be given, but it will go by too  
+> quickly.
+> 
+> Prepare lots of cool stuff, but don't rush to use it all.  Better to  
+> do less and do it well.  Leave them begging for more.
+> 
+> 6) Teach a little bit about function syntax.
+> 
+> If your time is limited, you likely won't have much time to get into  
+> programming, control structures, classes of objects, method dispatch,  
+> lazy evaluation, ...  But you can do a lot with R in a one-line-of- 
+> code-at-a-time sort of way.  One thing you do need to say a bit about  
+> is functions, since nearly every one of these lines will include one  
+> or more of an arithmetic computation, an assignment, or function  
+> call.  When I teach new functions to beginners, I ask them what things  
+> the computer would need to know to produce the result we are hoping to  
+> get.  Once they have identified the inputs and outputs, then I tell  
+> them the syntax used to provide the inputs to R and look at the output  
+> R returns.  I emphasize too the common pattern of functions syntax --  
+> name, open paren, comma-separated list of arguments, close paren.
+> 
+> 7) If the students are good and you can react quickly on your feet,  
+> ask them what they want to learn about and show it to them.
+> 
+> You'll probably have a good sense for their level after the first  
+> 15-20 minutes.
+> 
+> 8) Almost forgot... You could do some resampling stuff.
+> 
+> R is well suited for this.  You can simplify it a bit by using do()  
+> from the mosaic package, or you can use replicate()
+> 
+>> lm( age ~ sex, HELPrct )
+> 
+> Call:
+> lm(formula = age ~ sex, data = HELPrct)
+> 
+> Coefficients:
+> (Intercept)      sexmale
+>     36.2523      -0.7841
+> 
+>> do(5) * lm( age ~ shuffle(sex), HELPrct )
+>   Intercept     sexmale    sigma    r-squared
+> 1  35.83178 -0.23350980 7.718169 1.658421e-04
+> 2  35.34579  0.40276052 7.716905 4.933763e-04
+> 3  35.69159 -0.04997029 7.718780 7.594658e-06
+> 4  34.62617  1.34493004 7.697547 5.501535e-03
+> 5  35.04673  0.79431149 7.711400 1.918961e-03
+> 
+> Have fun.  Hope it goes well for you.
+> 
+> ---rjp
+> 
+> 
+> 
+> 
+> 
+> On Apr 18, 2012, at 10:47 PM, Christopher W Ryan wrote:
+> 
+>> After some interesting discussions on r-help list, the suggestion was
+>> made that I could also probably gain some useful insights on this
+>> teaching listserve, a resource that I didn't know about previously.
+>> 
+>> I participate peripherally on a listserve for middle- and high-school
+>> science teachers. Sometimes questions about graphing or data analysis
+>> come up. I never miss an opportunity to advocate for R. However, the
+>> teachers are often skeptical that the students would be able to issue
+>> commands or write a little code; they think it would be too difficult.
+>> Perhaps this stems from the Microsoft- and spreadsheet-centered,
+>> pointy-clicky culture prevalent in most US public schools. Then again,
+>> I have little experience teaching this age group, besides my own kids
+>> and my Science Olympiad team, so I respect their concerns.
+>> 
+>> Now I have to put my money where my mouth is. I've offered to visit a
+>> high school and introduce R to some fairly advanced students
+>> participating in a longitudinal 3-year science research class.  To be
+>> clear, they are already, for good or for ill, doing data analysis and
+>> graphics for their projects using software.  Mostly they are using
+>> Excel and SPSS.  My goal would be to introduce them to R as another
+>> (and better) tool for what they are currently doing. I would have to
+>> work hard to keep it at a very introductory level, but I don't see why
+>> plot(force, acceleration) should be any more conceptually difficult
+>> for high schoolers than clicking through a whole series of dialog
+>> boxes. The latter merely has the advantage of familiarity. But I can't
+>> help but wonder whether it would be better to give kids good
+>> scientific tools upfront, rather than have them spend many
+>> impressionable years using sub-optimal tools and then in graduate
+>> school try to entice them to switch.
+>> 
+>> They all will have datasets of their own.  I imagine they will mostly
+>> be single, "rectangular" datasets, ie  data frames.
+>> 
+>> I tentatively anticipate a lot of graphics, of course, which I'm
+>> hoping they would find pretty cool and useful. I'd also like to
+>> introduce the concept of an object, just to the level of "there are
+>> different kinds, here's what some of the kinds are called, there's
+>> stuff inside them, and you can explore them with str(), head(),
+>> tail(), class()" and the like. Some simple descriptive statistics.
+>> They are already doing t-tests, Chi-squared tests, and linear
+>> regression (again, for good or for ill.)  I don't know whether I'd
+>> have time to get to those topics in R, probably not.
+>> 
+>> There was a diversity of opinions on R-help about how to do this, and
+>> especially, whether to do it at all.
+>> 
+>> Has anyone done anything with R in high schools?
+>> 
+>> Thanks.
+>> 
+>> --Chris Ryan
+>> SUNY Upstate Medical University
+>> Binghamton Clinical Campus
+>> 
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+> 
+> 	[[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+> This email has been scanned for all viruses by the MessageLabs Email
+> Security System.
+> 
+> This email has been scanned for all viruses by the MessageLabs Email
+> Security System.
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+CGTGCTAACGACTACTAG
+
+
+From gupta.nilesh84 at gmail.com  Sun Apr 22 05:43:29 2012
+From: gupta.nilesh84 at gmail.com (Nilesh Gupta)
+Date: Sun, 22 Apr 2012 09:13:29 +0530
+Subject: [R-sig-teaching] R exercices
+Message-ID: <CADYnpWEGBrrFT9+o0V8=YZipE47y8VjQLBzqcsR0NOWmH8Jmxg@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120422/06cb802d/attachment.pl>
+
+From rmh at temple.edu  Sun Apr 22 06:15:31 2012
+From: rmh at temple.edu (Richard M. Heiberger)
+Date: Sun, 22 Apr 2012 00:15:31 -0400
+Subject: [R-sig-teaching] R exercices
+In-Reply-To: <5f74a8e369f23cffe6562dc37d9c3a3e@u-paris10.fr>
+References: <71e092791844e7056ce97accc764e1a4@u-paris10.fr>
+	<4F91650F.1090705@gmail.com>
+	<5f74a8e369f23cffe6562dc37d9c3a3e@u-paris10.fr>
+Message-ID: <CAGx1TMCmcTssjHpETOD4s+aPFEHsm+Mr4FphA=_2N-qa8DYdQA@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120422/ef8054c7/attachment.pl>
+
+From cgenolin at u-paris10.fr  Sun Apr 22 11:39:56 2012
+From: cgenolin at u-paris10.fr (cgenolin)
+Date: Sun, 22 Apr 2012 11:39:56 +0200
+Subject: [R-sig-teaching] R exercices
+In-Reply-To: <CAGx1TMCmcTssjHpETOD4s+aPFEHsm+Mr4FphA=_2N-qa8DYdQA@mail.gmail.com>
+References: <71e092791844e7056ce97accc764e1a4@u-paris10.fr>
+	<4F91650F.1090705@gmail.com>
+	<5f74a8e369f23cffe6562dc37d9c3a3e@u-paris10.fr>
+	<CAGx1TMCmcTssjHpETOD4s+aPFEHsm+Mr4FphA=_2N-qa8DYdQA@mail.gmail.com>
+Message-ID: <2395b1d7298b536099485e8a12aaf14f@u-paris10.fr>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120422/ddcf84f6/attachment.pl>
+
+From landronimirc at gmail.com  Sun May  6 10:03:14 2012
+From: landronimirc at gmail.com (Liviu Andronic)
+Date: Sun, 6 May 2012 10:03:14 +0200
+Subject: [R-sig-teaching] introducing R to high school students
+In-Reply-To: <CAM+rpYkV1R=TCMz_tMhp0qg1uU6O9A2ModvxoAa2D-njbyJUbw@mail.gmail.com>
+References: <CAM+rpYkV1R=TCMz_tMhp0qg1uU6O9A2ModvxoAa2D-njbyJUbw@mail.gmail.com>
+Message-ID: <CABxs9VmA-jeK1EZpXFjWWv_fai0+o3AMjBQT62bCL12ezCm=9A@mail.gmail.com>
+
+Hello
+A bit late to the party..
+
+
+On Thu, Apr 19, 2012 at 4:47 AM, Christopher W Ryan
+<cryan at binghamton.edu> wrote:
+> Now I have to put my money where my mouth is. I've offered to visit a
+> high school and introduce R to some fairly advanced students
+> participating in a longitudinal 3-year science research class. ?To be
+> clear, they are already, for good or for ill, doing data analysis and
+> graphics for their projects using software. ?Mostly they are using
+> Excel and SPSS. ?My goal would be to introduce them to R as another
+> (and better) tool for what they are currently doing.
+>
+Although RExcel was already mentioned, one element conspicuously
+missing from this discussion was R GUIs. Some have suggested RStudio
+as a practical IDE to R, and I second that. But there are several
+other GUIs that may help your students to get a quick grasp of R and
+its coding conventions.
+
+Rcmdr and its plug-ins is the inevitable candidate for teaching
+basic-statistics. There is also Deducer with its plug-ins and data
+editor window, but in my opinion it is less robust and useful in
+teaching R coding than Rcmdr. I also like 'playwith', which allows
+editing and enhancing various R graphics. Its cousin, 'latticist', is
+an excellent GUI to lattice that, given a data frame, allows to easily
+generate a range of graphics. Beware, though, of mixing Rcmdr---tcltk
+based---and playwith/latticist---mainly GTK based---in the same R
+session: there is a nasty bug [1] that often crashes your R instance.
+
+Regards
+Liviu
+
+[1] https://bugs.r-project.org/bugzilla3/show_bug.cgi?id=14187
+
+
+From mspinola10 at gmail.com  Sun May  6 14:57:12 2012
+From: mspinola10 at gmail.com (=?ISO-8859-1?Q?Manuel_Sp=EDnola?=)
+Date: Sun, 6 May 2012 06:57:12 -0600
+Subject: [R-sig-teaching] Teaching R online
+Message-ID: <CABkCotTjMihkW9udxC+J3sMbyvPeu-pYWxSZpgqrb2x8S6vWCg@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120506/5a7d4837/attachment.pl>
+
+From semin2006 at gmail.com  Mon May  7 13:07:50 2012
+From: semin2006 at gmail.com (Sam Lin)
+Date: Mon, 7 May 2012 23:07:50 +1200
+Subject: [R-sig-teaching] Teaching R online
+Message-ID: <CAB9YQzO1MZ1yhuj+y-gj9qoTv3RJuu9rT8t=DffGFRm-RowbOA@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120507/6c57d944/attachment.pl>
+
+From i.e.holliday at aston.ac.uk  Mon May  7 13:23:16 2012
+From: i.e.holliday at aston.ac.uk (Holliday, Ian E)
+Date: Mon, 7 May 2012 11:23:16 +0000
+Subject: [R-sig-teaching] Teaching R online
+Message-ID: <C980075AFDDA964F9EE8981FE721663B11E43C24@exch-mb-l4-02.campus.aston.ac.uk>
+
+Dear Manuel,
+
+I run an introductory stats course using R and online services using this:
+http://www.wessa.net/rfc.wasp
+
+My whole course is managed within this interface.
+
+The platform was developed by Patrick Wessa and more info and publications about this at www.freestatistics.org. Demonstration videos here: http://youtu.be/mEO6d00ViQQ
+
+Patrick invites anyone interested in integrating this in their teaching to get in touch via patrick dot Wessa at gmail dot com.
+
+Regards
+
+Ian
+
+
+From siddall at longsight.com  Thu Jun  7 21:21:01 2012
+From: siddall at longsight.com (Scott Siddall)
+Date: Thu, 7 Jun 2012 15:21:01 -0400
+Subject: [R-sig-teaching] Open access to R
+Message-ID: <b1318902542f7fec2a21a32affcdc88d@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120607/a44f1e6b/attachment.pl>
+

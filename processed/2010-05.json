@@ -1,0 +1,94 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2010-05",
+  "messages": [
+    {
+      "id": "msg-56a6bf4bfd9e",
+      "message_id": "<4BE156E1.B080.00B1.0@gw.muhlenberg.edu>",
+      "from_name": "Byungchul Cha",
+      "from_email_hash": "563df5eaf37a7efb67321eb1053291ba07c8e2710999dbd6d7eb5bc6b526d545",
+      "date": "2010-05-05T11:30:43-04:00",
+      "subject": "[R-sig-teaching] Creating table from data.frame",
+      "subject_clean": "Creating table from data.frame",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I am a relatively novice in R and I need some help. \n\nI want to create a two-way table from a data given as a data.frame, which looks like this:\n\n> x\n   group status gender count\n1      1     s1     g1   890\n2      2     s1     g2   969\n3      3     s2     g1   340\n4      4     s2     g2   403\n5      5     s3     g1  2897\n6      6     s3     g2  3321\n7      7     s4     g1   249\n8      8     s4     g2   383\n9      9     s5     g1   306\n10    10     s5     g2   366\n11    11     s6     g1   160\n12    12     s6     g2   137\n\nI would like a two way table, which would look like\n\nstatus    men    women\ns1    890    969\ns2    340    403\ns3    2897    3321\n...\n\nHow do I do this in a relatively efficient way? Thanks.\n\nByungchul",
+      "body_snippet": "I am a relatively novice in R and I need some help. \n\nI want to create a two-way table from a data given as a data.frame, which looks like this:\n\n> x\n   group status gender count\n1      1     s1     g",
+      "thread_id": "thread-56a6bf4bfd9e",
+      "thread_depth": 0,
+      "month": "2010-05"
+    },
+    {
+      "id": "msg-276112212314",
+      "message_id": "<x2m40e66e0b1005050912o56caf28fp1e6608635d7c6ca2@mail.gmail.com>",
+      "from_name": "Douglas Bates",
+      "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
+      "date": "2010-05-05T11:12:14-05:00",
+      "subject": "[R-sig-teaching] Creating table from data.frame",
+      "subject_clean": "Creating table from data.frame",
+      "in_reply_to": "<4BE156E1.B080.00B1.0@gw.muhlenberg.edu>",
+      "references": [
+        "<4BE156E1.B080.00B1.0@gw.muhlenberg.edu>"
+      ],
+      "body_plain": "On Wed, May 5, 2010 at 10:30 AM, Byungchul Cha <cha at muhlenberg.edu> wrote:\n\n> I am a relatively novice in R and I need some help.\n\n> I want to create a two-way table from a data given as a data.frame, which looks like this:\n\n>> x\n> ? group status gender count\n> 1 ? ? ?1 ? ? s1 ? ? g1 ? 890\n> 2 ? ? ?2 ? ? s1 ? ? g2 ? 969\n> 3 ? ? ?3 ? ? s2 ? ? g1 ? 340\n> 4 ? ? ?4 ? ? s2 ? ? g2 ? 403\n> 5 ? ? ?5 ? ? s3 ? ? g1 ?2897\n> 6 ? ? ?6 ? ? s3 ? ? g2 ?3321\n> 7 ? ? ?7 ? ? s4 ? ? g1 ? 249\n> 8 ? ? ?8 ? ? s4 ? ? g2 ? 383\n> 9 ? ? ?9 ? ? s5 ? ? g1 ? 306\n> 10 ? ?10 ? ? s5 ? ? g2 ? 366\n> 11 ? ?11 ? ? s6 ? ? g1 ? 160\n> 12 ? ?12 ? ? s6 ? ? g2 ? 137\n>\n> I would like a two way table, which would look like\n>\n> status ? ?men ? ?women\n> s1 ? ?890 ? ?969\n> s2 ? ?340 ? ?403\n> s3 ? ?2897 ? ?3321\n> ...\n>\n> How do I do this in a relatively efficient way? Thanks.\n\nLook up the documentation for xtabs, say by typing\n\n?xtabs\n\nin R.  What you want is\n\nxtabs(count ~ status + gender, x)",
+      "body_snippet": "On Wed, May 5, 2010 at 10:30 AM, Byungchul Cha <cha at muhlenberg.edu> wrote:\n\n> I am a relatively novice in R and I need some help.\n\n> I want to create a two-way table from a data given as a data.fra",
+      "thread_id": "thread-56a6bf4bfd9e",
+      "thread_depth": 1,
+      "month": "2010-05"
+    },
+    {
+      "id": "msg-b1e296df80e3",
+      "message_id": "<q2j4b5c27441005051027x571972f3je100a2e76fed5047@mail.gmail.com>",
+      "from_name": "Geoffrey Smith",
+      "from_email_hash": "6c829f2d25848af1d52a90e4b27006b9ac3763c053bf3aaf885fb0f7ceb0b753",
+      "date": "2010-05-05T10:27:10-07:00",
+      "subject": "[R-sig-teaching] Creating table from data.frame",
+      "subject_clean": "Creating table from data.frame",
+      "in_reply_to": "<x2m40e66e0b1005050912o56caf28fp1e6608635d7c6ca2@mail.gmail.com>",
+      "references": [
+        "<4BE156E1.B080.00B1.0@gw.muhlenberg.edu>",
+        "<x2m40e66e0b1005050912o56caf28fp1e6608635d7c6ca2@mail.gmail.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100505/62b128f8/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100505/62b128f8/attachment.pl>",
+      "thread_id": "thread-56a6bf4bfd9e",
+      "thread_depth": 2,
+      "month": "2010-05"
+    },
+    {
+      "id": "msg-1250aa6b9f92",
+      "message_id": "<4BE1C8DF.9030401@sciviews.org>",
+      "from_name": "Philippe Grosjean",
+      "from_email_hash": "71b9dd5d435dd797c88b6e8e80adcc63b4c2764c443f0ceca36f80f3ecda8d9a",
+      "date": "2010-05-05T21:37:03+02:00",
+      "subject": "[R-sig-teaching] Creating table from data.frame",
+      "subject_clean": "Creating table from data.frame",
+      "in_reply_to": "<4BE156E1.B080.00B1.0@gw.muhlenberg.edu>",
+      "references": [
+        "<4BE156E1.B080.00B1.0@gw.muhlenberg.edu>"
+      ],
+      "body_plain": "This is easy:\n\n# Recode gender\nlevels(x$gender) <- c(\"men\", \"women\")\n# Build the two-way table (and print it)\n(x.Table <- xtabs(count ~ status + gender, data = x))\n\nBest,\n\nPhG\n\n..............................................<?}))><........\n  ) ) ) ) )\n( ( ( ( (    Prof. Philippe Grosjean\n  ) ) ) ) )\n( ( ( ( (    Numerical Ecology of Aquatic Systems\n  ) ) ) ) )   Mons University, Belgium\n( ( ( ( (\n..............................................................\n\nOn 05/05/10 17:30, Byungchul Cha wrote:\n>\n> I am a relatively novice in R and I need some help.\n>\n> I want to create a two-way table from a data given as a data.frame, which looks like this:\n>\n>> x\n>     group status gender count\n> 1      1     s1     g1   890\n> 2      2     s1     g2   969\n> 3      3     s2     g1   340\n> 4      4     s2     g2   403\n> 5      5     s3     g1  2897\n> 6      6     s3     g2  3321\n> 7      7     s4     g1   249\n> 8      8     s4     g2   383\n> 9      9     s5     g1   306\n> 10    10     s5     g2   366\n> 11    11     s6     g1   160\n> 12    12     s6     g2   137\n>\n> I would like a two way table, which would look like\n>\n> status    men    women\n> s1    890    969\n> s2    340    403\n> s3    2897    3321\n> ...\n>\n> How do I do this in a relatively efficient way? Thanks.\n>\n> Byungchul\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>",
+      "body_snippet": "This is easy:\n\n# Recode gender\nlevels(x$gender) <- c(\"men\", \"women\")\n# Build the two-way table (and print it)\n(x.Table <- xtabs(count ~ status + gender, data = x))\n\nBest,\n\nPhG\n\n.......................",
+      "thread_id": "thread-56a6bf4bfd9e",
+      "thread_depth": 1,
+      "month": "2010-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-56a6bf4bfd9e",
+      "subject": "Creating table from data.frame",
+      "message_count": 4,
+      "participants": [
+        "Byungchul Cha",
+        "Douglas Bates",
+        "Geoffrey Smith",
+        "Philippe Grosjean"
+      ],
+      "started": "2010-05-05T11:30:43-04:00",
+      "last_reply": "2010-05-05T21:37:03+02:00",
+      "root_message_id": "msg-56a6bf4bfd9e"
+    }
+  ]
+}

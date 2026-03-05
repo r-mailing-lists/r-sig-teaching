@@ -1,0 +1,345 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2012-08",
+  "messages": [
+    {
+      "id": "msg-55f3213d74ee",
+      "message_id": "<7E318EDE-61AF-49D0-8CD7-1EC576B336D0@ppetto.com>",
+      "from_name": "Peter Petto",
+      "from_email_hash": "d47e836e7ca884c98cf9f5611c9298e833b1a500c501a46a3d2d6c0e29b6555e",
+      "date": "2012-08-07T12:35:50-04:00",
+      "subject": "[R-sig-teaching] looking for accessibility help (blind student)",
+      "subject_clean": "looking for accessibility help (blind student)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I will have a blind student in my AP Statistics class this year.\n\nI'm thinking about using R as his calculator. It seems like it's core text-in text-out nature may match screen reading software well. And I'd like to explore directing visualizations to tactile graphics output.\n\nI'm wondering if anyone could give me suggestions (people, websites, organizations) where I could discover anything that could help me help him.\n\nThanks so much.\n\n   Peter++\n\n===\n\nPeter Petto <ppetto at ppetto.com>\nLakewood High School Math   cell: 440.249.4289",
+      "body_snippet": "I will have a blind student in my AP Statistics class this year.\n\nI'm thinking about using R as his calculator. It seems like it's core text-in text-out nature may match screen reading software well. ",
+      "thread_id": "thread-55f3213d74ee",
+      "thread_depth": 0,
+      "month": "2012-08"
+    },
+    {
+      "id": "msg-f4941aca9004",
+      "message_id": "<CAFEqCdzOJZoN2QhTtiDqi-R3BRi8D+jjf_TMTtYy3P=w4Khd2A@mail.gmail.com>",
+      "from_name": "Greg Snow",
+      "from_email_hash": "7e8b90198d8dda6d8bbc636598f3105b18d65713fa78fc3e88cbec77163d50cf",
+      "date": "2012-08-07T12:21:45-06:00",
+      "subject": "[R-sig-teaching] looking for accessibility help (blind student)",
+      "subject_clean": "looking for accessibility help (blind student)",
+      "in_reply_to": "<7E318EDE-61AF-49D0-8CD7-1EC576B336D0@ppetto.com>",
+      "references": [
+        "<7E318EDE-61AF-49D0-8CD7-1EC576B336D0@ppetto.com>"
+      ],
+      "body_plain": "There is a BrailleR package on CRAN that may be of use.  It looks like\nit is very much a work in progress but may be helpful.  You could also\ncontact the author of the package to see what they suggest (and it may\ninspire quicker development of the package if there is clear\ninterest).\n\nThis blog post may be helpful as well:\nhttp://www.r-statistics.com/2010/05/helping-the-blind-use-r-by-exporting-r-console-to-word/\n\nThe discussion on R-help from a couple of years ago starting here:\nhttps://stat.ethz.ch/pipermail/r-help/2010-May/239902.html\ncould also be helpful.\n\nOn Tue, Aug 7, 2012 at 10:35 AM, Peter Petto <ppetto at ppetto.com> wrote:\n> I will have a blind student in my AP Statistics class this year.\n>\n> I'm thinking about using R as his calculator. It seems like it's core text-in text-out nature may match screen reading software well. And I'd like to explore directing visualizations to tactile graphics output.\n>\n> I'm wondering if anyone could give me suggestions (people, websites, organizations) where I could discover anything that could help me help him.\n>\n> Thanks so much.\n>\n>    Peter++\n>\n> ===\n>\n> Peter Petto <ppetto at ppetto.com>\n> Lakewood High School Math   cell: 440.249.4289\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\n\n-- \nGregory (Greg) L. Snow Ph.D.\n538280 at gmail.com",
+      "body_snippet": "There is a BrailleR package on CRAN that may be of use.  It looks like\nit is very much a work in progress but may be helpful.  You could also\ncontact the author of the package to see what they suggest",
+      "thread_id": "thread-55f3213d74ee",
+      "thread_depth": 1,
+      "month": "2012-08"
+    },
+    {
+      "id": "msg-e27dfc44cb09",
+      "message_id": "<6C5EFA68-2F3C-4051-BEB4-B799037A9E1C@smith.edu>",
+      "from_name": "Nicholas Horton",
+      "from_email_hash": "cf176a29de4abfc7da13c6fc418c20e19771b5741537f75c9aee351ac098ab29",
+      "date": "2012-08-09T20:22:29-04:00",
+      "subject": "[R-sig-teaching] Illustrating the case studies in the \"Statistical Sleuth\" using R",
+      "subject_clean": "Illustrating the case studies in the \"Statistical Sleuth\" using R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "My summer students and I have created a series of files to help describe how to undertake analyses introduced as examples in the Second Edition of the Statistical Sleuth: A Course in Methods of Data Analysis (2002), the excellent text by Fred Ramsey and Dan Schafer.  If you are using this book, or would like to see straightforward ways to undertake analyses in R for intro and intermediate statistics courses, these may be of interest.\n\nThese files can be found at http://www.math.smith.edu/~nhorton/sleuth\n\nWe have include both formatted pdf files as well as the original knitr files which were used to generate the output. Knitr is an elegant, flexible and fast means to undertake reproducible analysis and dynamic report generation within R and RStudio.  \n\nThis work leverages efforts undertaken by Project MOSAIC, an NSF-funded initiative to improve the teaching of statistics, calculus, science and computing in the undergraduate curriculum. In particular, we utilize the mosaic package, which was written to simplify the use of R for introductory statistics courses. More information can be found at http://www.mosaic-web.org.\n\nWe've generated these illustrated analyses for chapters 1-6 plus 9-11 and 13, with more chapters to come.  Comments, suggestions and corrections welcomed.\n\nBest wishes for the balance of the summer,\n\nNick\n\nNicholas Horton \nDepartment of Mathematics and Statistics, Smith College\nClark Science Center, Northampton, MA 01063-0001\nhttp://www.math.smith.edu/~nhorton",
+      "body_snippet": "My summer students and I have created a series of files to help describe how to undertake analyses introduced as examples in the Second Edition of the Statistical Sleuth: A Course in Methods of Data A",
+      "thread_id": "thread-e27dfc44cb09",
+      "thread_depth": 0,
+      "month": "2012-08"
+    },
+    {
+      "id": "msg-e7863bc11665",
+      "message_id": "<CABkCotRLL8C54GDkrrz8yvcxgNbZcUz+vjJNPopaZGoJS61V-g@mail.gmail.com>",
+      "from_name": "Manuel Spínola",
+      "from_email_hash": "c67b4a8f4e027cf75cc3544d4e04791324bee3c4417f2f5edf4561a1da2f995b",
+      "date": "2012-08-12T09:58:06-06:00",
+      "subject": "[R-sig-teaching] Illustrating the case studies in the \"Statistical Sleuth\" using R",
+      "subject_clean": "Illustrating the case studies in the \"Statistical Sleuth\" using R",
+      "in_reply_to": "<6C5EFA68-2F3C-4051-BEB4-B799037A9E1C@smith.edu>",
+      "references": [
+        "<6C5EFA68-2F3C-4051-BEB4-B799037A9E1C@smith.edu>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120812/77ee6232/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120812/77ee6232/attachment.pl>",
+      "thread_id": "thread-e27dfc44cb09",
+      "thread_depth": 1,
+      "month": "2012-08"
+    },
+    {
+      "id": "msg-e870a636391d",
+      "message_id": "<50293004.80705@csun.edu>",
+      "from_name": "Wayne Smith",
+      "from_email_hash": "abb1d287609a9e2b13b674a9b9d3f2fbfc47c1f3fe788b1552b4cd800ab687e3",
+      "date": "2012-08-13T09:49:08-07:00",
+      "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 54, Issue 3",
+      "subject_clean": "R-sig-teaching Digest, Vol 54, Issue 3",
+      "in_reply_to": "<mailman.9.1344852002.17381.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.9.1344852002.17381.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": "+1\n\nWayne Smith, Ph.D.\nDepartment of Management\nCSU Northridge\n\nOn 8/13/2012 3:00 AM, r-sig-teaching-request at r-project.org wrote:\n> Send R-sig-teaching mailing list submissions to\n> \tr-sig-teaching at r-project.org\n>\n> To subscribe or unsubscribe via the World Wide Web, visit\n> \thttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> or, via email, send a message with subject or body 'help' to\n> \tr-sig-teaching-request at r-project.org\n>\n> You can reach the person managing the list at\n> \tr-sig-teaching-owner at r-project.org\n>\n> When replying, please edit your Subject line so it is more specific\n> than \"Re: Contents of R-sig-teaching digest...\"\n>\n>\n> Today's Topics:\n>\n>     1. Re: Illustrating the case studies in the \"Statistical Sleuth\"\n>        using R (Manuel Sp?nola)\n>\n>\n> ----------------------------------------------------------------------\n>\n> Message: 1\n> Date: Sun, 12 Aug 2012 09:58:06 -0600\n> From: Manuel Sp?nola <mspinola10 at gmail.com>\n> To: Nicholas Horton <nhorton at smith.edu>\n> Cc: r-sig-teaching at r-project.org\n> Subject: Re: [R-sig-teaching] Illustrating the case studies in the\n> \t\"Statistical Sleuth\" using R\n> Message-ID:\n> \t<CABkCotRLL8C54GDkrrz8yvcxgNbZcUz+vjJNPopaZGoJS61V-g at mail.gmail.com>\n> Content-Type: text/plain\n>\n> Very useful. Nice work.\n>\n> Best,\n>\n> Manuel\n>\n> 2012/8/9 Nicholas Horton <nhorton at smith.edu>\n>\n>> My summer students and I have created a series of files to help describe\n>> how to undertake analyses introduced as examples in the Second Edition of\n>> the Statistical Sleuth: A Course in Methods of Data Analysis (2002), the\n>> excellent text by Fred Ramsey and Dan Schafer.  If you are using this book,\n>> or would like to see straightforward ways to undertake analyses in R for\n>> intro and intermediate statistics courses, these may be of interest.\n>>\n>> These files can be found at http://www.math.smith.edu/~nhorton/sleuth\n>>\n>> We have include both formatted pdf files as well as the original knitr\n>> files which were used to generate the output. Knitr is an elegant, flexible\n>> and fast means to undertake reproducible analysis and dynamic report\n>> generation within R and RStudio.\n>>\n>> This work leverages efforts undertaken by Project MOSAIC, an NSF-funded\n>> initiative to improve the teaching of statistics, calculus, science and\n>> computing in the undergraduate curriculum. In particular, we utilize the\n>> mosaic package, which was written to simplify the use of R for introductory\n>> statistics courses. More information can be found at\n>> http://www.mosaic-web.org.\n>>\n>> We've generated these illustrated analyses for chapters 1-6 plus 9-11 and\n>> 13, with more chapters to come.  Comments, suggestions and corrections\n>> welcomed.\n>>\n>> Best wishes for the balance of the summer,\n>>\n>> Nick\n>>\n>> Nicholas Horton\n>> Department of Mathematics and Statistics, Smith College\n>> Clark Science Center, Northampton, MA 01063-0001\n>> http://www.math.smith.edu/~nhorton\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>\n>\n>",
+      "body_snippet": "+1\n\nWayne Smith, Ph.D.\nDepartment of Management\nCSU Northridge\n\nOn 8/13/2012 3:00 AM, r-sig-teaching-request at r-project.org wrote:\n> Send R-sig-teaching mailing list submissions to\n> \tr-sig-teaching",
+      "thread_id": "thread-e870a636391d",
+      "thread_depth": 0,
+      "month": "2012-08"
+    },
+    {
+      "id": "msg-1e3087f1f0f5",
+      "message_id": "<20120817052335.2104108etmurxls7@antigowebmail.usp.br>",
+      "from_name": "nndsilva at usp.br",
+      "from_email_hash": "27c5a2573dad661c96edd4a2b6e869443c32c2577f32667a7e5998b669f4ab32",
+      "date": "2012-08-17T05:23:35-03:00",
+      "subject": "[R-sig-teaching] tank you",
+      "subject_clean": "tank you",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "",
+      "body_snippet": "",
+      "thread_id": "thread-1e3087f1f0f5",
+      "thread_depth": 0,
+      "month": "2012-08"
+    },
+    {
+      "id": "msg-b3874bb0f50b",
+      "message_id": "<loom.20120818T224548-355@post.gmane.org>",
+      "from_name": "nf grinberg",
+      "from_email_hash": "a766e4585315c56048334014aa458489c825c309c9424404fb14e9014eacab95",
+      "date": "2012-08-18T20:47:07Z",
+      "subject": "[R-sig-teaching] R exercices",
+      "subject_clean": "R exercices",
+      "in_reply_to": null,
+      "references": [
+        "<71e092791844e7056ce97accc764e1a4@u-paris10.fr>"
+      ],
+      "body_plain": "cgenolin <cgenolin <at> u-paris10.fr> writes:\n\n> \n> \n> Hi the list, \n> \n> I am looking for some exercices for a PhD student\n> that start to learn R. He already \"read\" some tutorial, but now he needs\n> some practice. \n> \n> He does *not* need to learn any statistical tools ; he\n> just needs to work on programmation concept. So I am looking for some\n> exercice sheet that will, for example, focus on :  \n> \n>  - structuring the\n> data (data.frame / list / matrix / ...) \n> \n>  - using controle syntax (for\n> / if / while / function) \n> \n>  - reading data \n> \n>  - ... \n> \n> Any link for this\n> kind of material? \n> \n> Sincerely \n> \n> Christophe \n> \n> \t[[alternative HTML version deleted]]\n> \n> \n\nHi Christophe,\n\nThe following set of exercises (by Robin Reed and myself) is aimed at people\nwishing to learn R in a non-statistical context (there are exercises involving\nmatrices (and arrays) and vectors and writing functions).\nMaybe your student might find them useful.\nhttp://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-\nresearch/reed/rexercises.pdf (accessible from here\nhttp://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/reed )\n\nBest,\nNastasiya",
+      "body_snippet": "cgenolin <cgenolin <at> u-paris10.fr> writes:\n\n> \n> \n> Hi the list, \n> \n> I am looking for some exercices for a PhD student\n> that start to learn R. He already \"read\" some tutorial, but now he needs\n>",
+      "thread_id": "thread-b3874bb0f50b",
+      "thread_depth": 0,
+      "month": "2012-08"
+    },
+    {
+      "id": "msg-35ef9d13da0e",
+      "message_id": "<50326643.7050004@atsu.edu>",
+      "from_name": "Robert Baer",
+      "from_email_hash": "ddd5677bd41ce9ccb8239fe4a8cc1ce533091d0e3a66b906fbf82801b2b76509",
+      "date": "2012-08-20T11:30:59-05:00",
+      "subject": "[R-sig-teaching] R exercices",
+      "subject_clean": "R exercices",
+      "in_reply_to": "<loom.20120818T224548-355@post.gmane.org>",
+      "references": [
+        "<71e092791844e7056ce97accc764e1a4@u-paris10.fr>",
+        "<loom.20120818T224548-355@post.gmane.org>"
+      ],
+      "body_plain": "You could have him work through Norman Matloff's book, \"The Art of R \nProgramming\" which covers the things you list.\n\nRob\n\n\nOn 8/18/2012 3:47 PM, nf grinberg wrote:\n> cgenolin <cgenolin <at> u-paris10.fr> writes:\n>\n>>\n>> Hi the list,\n>>\n>> I am looking for some exercices for a PhD student\n>> that start to learn R. He already \"read\" some tutorial, but now he needs\n>> some practice.\n>>\n>> He does *not* need to learn any statistical tools ; he\n>> just needs to work on programmation concept. So I am looking for some\n>> exercice sheet that will, for example, focus on :\n>>\n>>   - structuring the\n>> data (data.frame / list / matrix / ...)\n>>\n>>   - using controle syntax (for\n>> / if / while / function)\n>>\n>>   - reading data\n>>\n>>   - ...\n>>\n>> Any link for this\n>> kind of material?\n>>\n>> Sincerely\n>>\n>> Christophe\n>>\n>> \t[[alternative HTML version deleted]]\n>>\n>>\n> Hi Christophe,\n>\n> The following set of exercises (by Robin Reed and myself) is aimed at people\n> wishing to learn R in a non-statistical context (there are exercises involving\n> matrices (and arrays) and vectors and writing functions).\n> Maybe your student might find them useful.\n> http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-\n> research/reed/rexercises.pdf (accessible from here\n> http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/reed )\n>\n> Best,\n> Nastasiya\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "You could have him work through Norman Matloff's book, \"The Art of R \nProgramming\" which covers the things you list.\n\nRob\n\n\nOn 8/18/2012 3:47 PM, nf grinberg wrote:\n> cgenolin <cgenolin <at> u-paris10",
+      "thread_id": "thread-b3874bb0f50b",
+      "thread_depth": 1,
+      "month": "2012-08"
+    },
+    {
+      "id": "msg-b77cacd51917",
+      "message_id": "<503267E6.50202@gmail.com>",
+      "from_name": "Jeff Laux",
+      "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
+      "date": "2012-08-20T12:37:58-04:00",
+      "subject": "[R-sig-teaching] R exercices",
+      "subject_clean": "R exercices",
+      "in_reply_to": "<50326643.7050004@atsu.edu>",
+      "references": [
+        "<71e092791844e7056ce97accc764e1a4@u-paris10.fr>",
+        "<loom.20120818T224548-355@post.gmane.org>",
+        "<50326643.7050004@atsu.edu>"
+      ],
+      "body_plain": "Matloff's book is very good, but  a critical shortcoming is that it does \nnot include exercises, so it may not meet the stated requirements.\n\n\nOn 8/20/2012 12:30 PM, Robert Baer wrote:\n> You could have him work through Norman Matloff's book, \"The Art of R \n> Programming\" which covers the things you list.\n>\n> Rob\n>\n>\n> On 8/18/2012 3:47 PM, nf grinberg wrote:\n>> cgenolin <cgenolin <at> u-paris10.fr> writes:\n>>\n>>>\n>>> Hi the list,\n>>>\n>>> I am looking for some exercices for a PhD student\n>>> that start to learn R. He already \"read\" some tutorial, but now he \n>>> needs\n>>> some practice.\n>>>\n>>> He does *not* need to learn any statistical tools ; he\n>>> just needs to work on programmation concept. So I am looking for some\n>>> exercice sheet that will, for example, focus on :\n>>>\n>>>   - structuring the\n>>> data (data.frame / list / matrix / ...)\n>>>\n>>>   - using controle syntax (for\n>>> / if / while / function)\n>>>\n>>>   - reading data\n>>>\n>>>   - ...\n>>>\n>>> Any link for this\n>>> kind of material?\n>>>\n>>> Sincerely\n>>>\n>>> Christophe\n>>>\n>>>     [[alternative HTML version deleted]]\n>>>\n>>>\n>> Hi Christophe,\n>>\n>> The following set of exercises (by Robin Reed and myself) is aimed at \n>> people\n>> wishing to learn R in a non-statistical context (there are exercises \n>> involving\n>> matrices (and arrays) and vectors and writing functions).\n>> Maybe your student might find them useful.\n>> http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-\n>> research/reed/rexercises.pdf (accessible from here\n>> http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/reed \n>> )\n>>\n>> Best,\n>> Nastasiya\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_snippet": "Matloff's book is very good, but  a critical shortcoming is that it does \nnot include exercises, so it may not meet the stated requirements.\n\n\nOn 8/20/2012 12:30 PM, Robert Baer wrote:\n> You could hav",
+      "thread_id": "thread-b3874bb0f50b",
+      "thread_depth": 2,
+      "month": "2012-08"
+    },
+    {
+      "id": "msg-40bdaee57fb3",
+      "message_id": "<50326B5F.5040300@atsu.edu>",
+      "from_name": "Robert Baer",
+      "from_email_hash": "ddd5677bd41ce9ccb8239fe4a8cc1ce533091d0e3a66b906fbf82801b2b76509",
+      "date": "2012-08-20T11:52:47-05:00",
+      "subject": "[R-sig-teaching] R exercices",
+      "subject_clean": "R exercices",
+      "in_reply_to": "<503267E6.50202@gmail.com>",
+      "references": [
+        "<71e092791844e7056ce97accc764e1a4@u-paris10.fr>",
+        "<loom.20120818T224548-355@post.gmane.org>",
+        "<50326643.7050004@atsu.edu>",
+        "<503267E6.50202@gmail.com>"
+      ],
+      "body_plain": "On 8/20/2012 11:37 AM, Jeff Laux wrote:\n> Matloff's book is very good, but  a critical shortcoming is that it \n> does not include exercises, so it may not meet the stated requirements.\nPoint well taken.  The lack of Chapter-end exercises makes this book not \nwork well for a classroom environment, but the OP did say, \"... for a \nPhD student ...\", and the book is full of exercises that the author \ntakes readers through. This collection of  exemplars might be perfect \nfor  self-study by a PhD student looking to move on to solve his own \nproblems.\n\nRob\n>\n>\n> On 8/20/2012 12:30 PM, Robert Baer wrote:\n>> You could have him work through Norman Matloff's book, \"The Art of R \n>> Programming\" which covers the things you list.\n>>\n>> Rob\n>>\n>>\n>> On 8/18/2012 3:47 PM, nf grinberg wrote:\n>>> cgenolin <cgenolin <at> u-paris10.fr> writes:\n>>>\n>>>>\n>>>> Hi the list,\n>>>>\n>>>> I am looking for some exercices for a PhD student\n>>>> that start to learn R. He already \"read\" some tutorial, but now he \n>>>> needs\n>>>> some practice.\n>>>>\n>>>> He does *not* need to learn any statistical tools ; he\n>>>> just needs to work on programmation concept. So I am looking for some\n>>>> exercice sheet that will, for example, focus on :\n>>>>\n>>>>   - structuring the\n>>>> data (data.frame / list / matrix / ...)\n>>>>\n>>>>   - using controle syntax (for\n>>>> / if / while / function)\n>>>>\n>>>>   - reading data\n>>>>\n>>>>   - ...\n>>>>\n>>>> Any link for this\n>>>> kind of material?\n>>>>\n>>>> Sincerely\n>>>>\n>>>> Christophe\n>>>>\n>>>>     [[alternative HTML version deleted]]\n>>>>\n>>>>\n>>> Hi Christophe,\n>>>\n>>> The following set of exercises (by Robin Reed and myself) is aimed \n>>> at people\n>>> wishing to learn R in a non-statistical context (there are exercises \n>>> involving\n>>> matrices (and arrays) and vectors and writing functions).\n>>> Maybe your student might find them useful.\n>>> http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-\n>>> research/reed/rexercises.pdf (accessible from here\n>>> http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/reed \n>>> )\n>>>\n>>> Best,\n>>> Nastasiya\n>>>\n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "On 8/20/2012 11:37 AM, Jeff Laux wrote:\n> Matloff's book is very good, but  a critical shortcoming is that it \n> does not include exercises, so it may not meet the stated requirements.\nPoint well take",
+      "thread_id": "thread-b3874bb0f50b",
+      "thread_depth": 3,
+      "month": "2012-08"
+    },
+    {
+      "id": "msg-30c3a36c4f22",
+      "message_id": "<50326F70.1030702@gmail.com>",
+      "from_name": "Jeff Laux",
+      "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
+      "date": "2012-08-20T13:10:08-04:00",
+      "subject": "[R-sig-teaching] R exercices",
+      "subject_clean": "R exercices",
+      "in_reply_to": "<50326B5F.5040300@atsu.edu>",
+      "references": [
+        "<71e092791844e7056ce97accc764e1a4@u-paris10.fr>",
+        "<loom.20120818T224548-355@post.gmane.org>",
+        "<50326643.7050004@atsu.edu>",
+        "<503267E6.50202@gmail.com>",
+        "<50326B5F.5040300@atsu.edu>"
+      ],
+      "body_plain": "I agree with you, and I really don't want to get into an argument over \nthe email list, but note that it can be difficult to follow along with \nMatloff's examples because the data he's using aren't posted anywhere \n(at least that I could find, if someone else knows where they are please \nrespond).  Again, I think Matloff's book is very good, and I got a lot \nout of reading it.  You can try some of the examples.  I do recommend it \nto people.  It may well be a good recommendation for this individual, in \naddition to something else that provides exercises that he can practice on.\n\n\nOn 8/20/2012 12:52 PM, Robert Baer wrote:\n> On 8/20/2012 11:37 AM, Jeff Laux wrote:\n>> Matloff's book is very good, but  a critical shortcoming is that it \n>> does not include exercises, so it may not meet the stated requirements.\n> Point well taken.  The lack of Chapter-end exercises makes this book \n> not work well for a classroom environment, but the OP did say, \"... \n> for a PhD student ...\", and the book is full of exercises that the \n> author takes readers through. This collection of  exemplars might be \n> perfect for  self-study by a PhD student looking to move on to solve \n> his own problems.\n>\n> Rob\n>>\n>>\n>> On 8/20/2012 12:30 PM, Robert Baer wrote:\n>>> You could have him work through Norman Matloff's book, \"The Art of R \n>>> Programming\" which covers the things you list.\n>>>\n>>> Rob\n>>>\n>>>\n>>> On 8/18/2012 3:47 PM, nf grinberg wrote:\n>>>> cgenolin <cgenolin <at> u-paris10.fr> writes:\n>>>>\n>>>>>\n>>>>> Hi the list,\n>>>>>\n>>>>> I am looking for some exercices for a PhD student\n>>>>> that start to learn R. He already \"read\" some tutorial, but now he \n>>>>> needs\n>>>>> some practice.\n>>>>>\n>>>>> He does *not* need to learn any statistical tools ; he\n>>>>> just needs to work on programmation concept. So I am looking for some\n>>>>> exercice sheet that will, for example, focus on :\n>>>>>\n>>>>>   - structuring the\n>>>>> data (data.frame / list / matrix / ...)\n>>>>>\n>>>>>   - using controle syntax (for\n>>>>> / if / while / function)\n>>>>>\n>>>>>   - reading data\n>>>>>\n>>>>>   - ...\n>>>>>\n>>>>> Any link for this\n>>>>> kind of material?\n>>>>>\n>>>>> Sincerely\n>>>>>\n>>>>> Christophe\n>>>>>\n>>>>>     [[alternative HTML version deleted]]\n>>>>>\n>>>>>\n>>>> Hi Christophe,\n>>>>\n>>>> The following set of exercises (by Robin Reed and myself) is aimed \n>>>> at people\n>>>> wishing to learn R in a non-statistical context (there are \n>>>> exercises involving\n>>>> matrices (and arrays) and vectors and writing functions).\n>>>> Maybe your student might find them useful.\n>>>> http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-\n>>>> research/reed/rexercises.pdf (accessible from here\n>>>> http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/reed \n>>>> )\n>>>>\n>>>> Best,\n>>>> Nastasiya\n>>>>\n>>>> _______________________________________________\n>>>> R-sig-teaching at r-project.org mailing list\n>>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>>\n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>>\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>",
+      "body_snippet": "I agree with you, and I really don't want to get into an argument over \nthe email list, but note that it can be difficult to follow along with \nMatloff's examples because the data he's using aren't po",
+      "thread_id": "thread-b3874bb0f50b",
+      "thread_depth": 4,
+      "month": "2012-08"
+    },
+    {
+      "id": "msg-8b0c8d2d5f60",
+      "message_id": "<CAP01uR=RnCZrq4njS9n0o8cQ8h+qeYScccw5o+Rnoeg2aUkcFQ@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2012-08-20T13:28:54-04:00",
+      "subject": "[R-sig-teaching] R exercices",
+      "subject_clean": "R exercices",
+      "in_reply_to": "<50326F70.1030702@gmail.com>",
+      "references": [
+        "<71e092791844e7056ce97accc764e1a4@u-paris10.fr>",
+        "<loom.20120818T224548-355@post.gmane.org>",
+        "<50326643.7050004@atsu.edu>",
+        "<503267E6.50202@gmail.com>",
+        "<50326B5F.5040300@atsu.edu>",
+        "<50326F70.1030702@gmail.com>"
+      ],
+      "body_plain": "On Mon, Aug 20, 2012 at 1:10 PM, Jeff Laux <jefflaux at gmail.com> wrote:\n> I agree with you, and I really don't want to get into an argument over the\n> email list, but note that it can be difficult to follow along with Matloff's\n> examples because the data he's using aren't posted anywhere (at least that I\n> could find, if someone else knows where they are please respond).  Again, I\n> think Matloff's book is very good, and I got a lot out of reading it.  You\n> can try some of the examples.  I do recommend it to people.  It may well be\n> a good recommendation for this individual, in addition to something else\n> that provides exercises that he can practice on.\n\nThe data is on the book's page on the publisher's site.\n\n-- \nStatistics & Software Consulting\nGKX Group, GKX Associates Inc.\ntel: 1-877-GKX-GROUP\nemail: ggrothendieck at gmail.com",
+      "body_snippet": "On Mon, Aug 20, 2012 at 1:10 PM, Jeff Laux <jefflaux at gmail.com> wrote:\n> I agree with you, and I really don't want to get into an argument over the\n> email list, but note that it can be difficult t",
+      "thread_id": "thread-b3874bb0f50b",
+      "thread_depth": 5,
+      "month": "2012-08"
+    },
+    {
+      "id": "msg-a541e6cb2c57",
+      "message_id": "<503276C7.4080904@gmail.com>",
+      "from_name": "Jeff Laux",
+      "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
+      "date": "2012-08-20T13:41:27-04:00",
+      "subject": "[R-sig-teaching] R exercices",
+      "subject_clean": "R exercices",
+      "in_reply_to": "<CAP01uR=RnCZrq4njS9n0o8cQ8h+qeYScccw5o+Rnoeg2aUkcFQ@mail.gmail.com>",
+      "references": [
+        "<71e092791844e7056ce97accc764e1a4@u-paris10.fr>",
+        "<loom.20120818T224548-355@post.gmane.org>",
+        "<50326643.7050004@atsu.edu>",
+        "<503267E6.50202@gmail.com>",
+        "<50326B5F.5040300@atsu.edu>",
+        "<50326F70.1030702@gmail.com>",
+        "<CAP01uR=RnCZrq4njS9n0o8cQ8h+qeYScccw5o+Rnoeg2aUkcFQ@mail.gmail.com>"
+      ],
+      "body_plain": "Thanks!  So they are \n(http://nostarch.com/download/code/artofr_data.zip).  In which case, the \nbook may be a better fit for this situation.\n\n\nOn 8/20/2012 1:28 PM, Gabor Grothendieck wrote:\n> On Mon, Aug 20, 2012 at 1:10 PM, Jeff Laux <jefflaux at gmail.com> wrote:\n>> I agree with you, and I really don't want to get into an argument over the\n>> email list, but note that it can be difficult to follow along with Matloff's\n>> examples because the data he's using aren't posted anywhere (at least that I\n>> could find, if someone else knows where they are please respond).  Again, I\n>> think Matloff's book is very good, and I got a lot out of reading it.  You\n>> can try some of the examples.  I do recommend it to people.  It may well be\n>> a good recommendation for this individual, in addition to something else\n>> that provides exercises that he can practice on.\n> The data is on the book's page on the publisher's site.\n>",
+      "body_snippet": "Thanks!  So they are \n(http://nostarch.com/download/code/artofr_data.zip).  In which case, the \nbook may be a better fit for this situation.\n\n\nOn 8/20/2012 1:28 PM, Gabor Grothendieck wrote:\n> On Mon,",
+      "thread_id": "thread-b3874bb0f50b",
+      "thread_depth": 6,
+      "month": "2012-08"
+    },
+    {
+      "id": "msg-12814146f471",
+      "message_id": "<BLU0-SMTP131E5B0445ED1FEDA447483ADA00@phx.gbl>",
+      "from_name": "Jonathan Cornelissen",
+      "from_email_hash": "e9f597a2eeea6b0f17c00463eafe950dca01c55fd724190562df11261f2b1fae",
+      "date": "2012-08-29T14:52:03-05:00",
+      "subject": "[R-sig-teaching] How do you learn/teach R?",
+      "subject_clean": "How do you learn/teach R?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120829/be13929b/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120829/be13929b/attachment.pl>",
+      "thread_id": "thread-12814146f471",
+      "thread_depth": 0,
+      "month": "2012-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-55f3213d74ee",
+      "subject": "looking for accessibility help (blind student)",
+      "message_count": 2,
+      "participants": [
+        "Greg Snow",
+        "Peter Petto"
+      ],
+      "started": "2012-08-07T12:35:50-04:00",
+      "last_reply": "2012-08-07T12:21:45-06:00",
+      "root_message_id": "msg-55f3213d74ee"
+    },
+    {
+      "id": "thread-e27dfc44cb09",
+      "subject": "Illustrating the case studies in the \"Statistical Sleuth\" using R",
+      "message_count": 2,
+      "participants": [
+        "Manuel Spínola",
+        "Nicholas Horton"
+      ],
+      "started": "2012-08-09T20:22:29-04:00",
+      "last_reply": "2012-08-12T09:58:06-06:00",
+      "root_message_id": "msg-e27dfc44cb09"
+    },
+    {
+      "id": "thread-e870a636391d",
+      "subject": "R-sig-teaching Digest, Vol 54, Issue 3",
+      "message_count": 1,
+      "participants": [
+        "Wayne Smith"
+      ],
+      "started": "2012-08-13T09:49:08-07:00",
+      "last_reply": "2012-08-13T09:49:08-07:00",
+      "root_message_id": "msg-e870a636391d"
+    },
+    {
+      "id": "thread-1e3087f1f0f5",
+      "subject": "tank you",
+      "message_count": 1,
+      "participants": [
+        "nndsilva at usp.br"
+      ],
+      "started": "2012-08-17T05:23:35-03:00",
+      "last_reply": "2012-08-17T05:23:35-03:00",
+      "root_message_id": "msg-1e3087f1f0f5"
+    },
+    {
+      "id": "thread-b3874bb0f50b",
+      "subject": "R exercices",
+      "message_count": 7,
+      "participants": [
+        "Gabor Grothendieck",
+        "Jeff Laux",
+        "Robert Baer",
+        "nf grinberg"
+      ],
+      "started": "2012-08-18T20:47:07+00:00",
+      "last_reply": "2012-08-20T13:41:27-04:00",
+      "root_message_id": "msg-b3874bb0f50b"
+    },
+    {
+      "id": "thread-12814146f471",
+      "subject": "How do you learn/teach R?",
+      "message_count": 1,
+      "participants": [
+        "Jonathan Cornelissen"
+      ],
+      "started": "2012-08-29T14:52:03-05:00",
+      "last_reply": "2012-08-29T14:52:03-05:00",
+      "root_message_id": "msg-12814146f471"
+    }
+  ]
+}

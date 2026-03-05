@@ -1,0 +1,128 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2013-04",
+  "messages": [
+    {
+      "id": "msg-9073e580f353",
+      "message_id": "<1365764589.10240.YahooMailNeo@web125806.mail.ne1.yahoo.com>",
+      "from_name": "Ali Zanaty",
+      "from_email_hash": "65acd645f9ed74fc7721f9ea58469b32335ac44f193ffbf59b7c89913407d9ac",
+      "date": "2013-04-12T04:03:09-07:00",
+      "subject": "[R-sig-teaching] wielbili",
+      "subject_clean": "wielbili",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130412/593f41db/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130412/593f41db/attachment.pl>",
+      "thread_id": "thread-9073e580f353",
+      "thread_depth": 0,
+      "month": "2013-04"
+    },
+    {
+      "id": "msg-d20addc8f044",
+      "message_id": "<1365956750.6656.YahooMailClassic@web120605.mail.ne1.yahoo.com>",
+      "from_name": "Yahoo!",
+      "from_email_hash": "22385bbcf078dc17ff188e29e3a1eaf01aad381796219c59b64e7bb0baec2847",
+      "date": "2013-04-14T09:25:50-07:00",
+      "subject": "[R-sig-teaching] Create and graph a negative skewed distribution (curve)",
+      "subject_clean": "Create and graph a negative skewed distribution (curve)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130414/d2cecb39/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130414/d2cecb39/attachment.pl>",
+      "thread_id": "thread-d20addc8f044",
+      "thread_depth": 0,
+      "month": "2013-04"
+    },
+    {
+      "id": "msg-41b2ad89ab6c",
+      "message_id": "<CADv2QyGHF5ftT5bXoawJsH=i8+1QwOH3jC=Boqft3aQ2qfjeDg@mail.gmail.com>",
+      "from_name": "Dennis Murphy",
+      "from_email_hash": "e4a5a8dffeb093c4485cbdaf24417516db9183251269103e90963889fce45f74",
+      "date": "2013-04-14T13:22:34-07:00",
+      "subject": "[R-sig-teaching] Create and graph a negative skewed distribution (curve)",
+      "subject_clean": "Create and graph a negative skewed distribution (curve)",
+      "in_reply_to": "<1365956750.6656.YahooMailClassic@web120605.mail.ne1.yahoo.com>",
+      "references": [
+        "<1365956750.6656.YahooMailClassic@web120605.mail.ne1.yahoo.com>"
+      ],
+      "body_plain": "Pray tell, what is a \"negative distribution\"?\n\nTo be a little more helpful, consult the probability chapter in the\nIntroduction to R that comes with the software in both html and pdf\nform to learn which distributions are built into the base distribution\nof R. Perhaps you'll find what you need there. According to a recent\nR-bloggers post, counting the base distribution and the contributed\npackages on CRAN, there are approximately 170 probability\ndistributions available in R. You could try package sos (which\nrequires an active Internet connection) to find the distribution you\nwant if the Intro to R perusal comes up empty:\n\n# install.packages(\"sos\")\nlibrary(sos)\nfindFn(\"my_search_string\")\n\nIt will return a web page of (partial) matches to your query string.\n\nIf your distribution is continuous, you could consider the curve()\nfunction, or just your everyday plot() with type = \"l\". For discrete\ndistibutions, you could consider barplot() or plot() with type = \"h\";\nsee the help page for plot.default() for an example (the one that\nshows the different plot types).\n\nDennis\n\nOn Sun, Apr 14, 2013 at 9:25 AM, Yahoo! <aboueiss at yahoo.com> wrote:\n> Dear All:\n>\n> How I can create and plot a negative distribution (curve) in R.\n>\n> with many thanks\n> abou\n>\n>\n> ========================\n>\n> AbouEl-Makarim Aboueissa\n>\n> Sozan Elsalakawy\n>\n> Mohamed Agamia\n>\n>\n>\n> 246 Auburn Street, #158\n>\n> Portland, ME 04103\n>\n> USA\n>\n>\n>\n> Tel: (207) 797-2724\n>\n> Email: aboueiss at yahoo.com\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Pray tell, what is a \"negative distribution\"?\n\nTo be a little more helpful, consult the probability chapter in the\nIntroduction to R that comes with the software in both html and pdf\nform to learn whi",
+      "thread_id": "thread-d20addc8f044",
+      "thread_depth": 1,
+      "month": "2013-04"
+    },
+    {
+      "id": "msg-48a030e515bf",
+      "message_id": "<1365972735.46948.YahooMailClassic@web120602.mail.ne1.yahoo.com>",
+      "from_name": "Yahoo!",
+      "from_email_hash": "22385bbcf078dc17ff188e29e3a1eaf01aad381796219c59b64e7bb0baec2847",
+      "date": "2013-04-14T13:52:15-07:00",
+      "subject": "[R-sig-teaching] create a negative skewed plot (density)",
+      "subject_clean": "create a negative skewed plot (density)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130414/129a2254/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130414/129a2254/attachment.pl>",
+      "thread_id": "thread-48a030e515bf",
+      "thread_depth": 0,
+      "month": "2013-04"
+    },
+    {
+      "id": "msg-a5c92c56c7af",
+      "message_id": "<D1ECE5AA-438C-46E3-B8CB-FDD9BC29CEB8@gmail.com>",
+      "from_name": "michael.weylandt at gmail.com (R. Michael Weylandt",
+      "from_email_hash": "302378f35d16399c7239457e040a11ee7483a70b012a7a6bc3d0de49cf0a2b8a",
+      "date": "2013-04-14T17:02:17-04:00",
+      "subject": "[R-sig-teaching] create a negative skewed plot (density)",
+      "subject_clean": "create a negative skewed plot (density)",
+      "in_reply_to": "<1365972735.46948.YahooMailClassic@web120602.mail.ne1.yahoo.com>",
+      "references": [
+        "<1365972735.46948.YahooMailClassic@web120602.mail.ne1.yahoo.com>"
+      ],
+      "body_plain": "On Apr 14, 2013, at 4:52 PM, Yahoo! <aboueiss at yahoo.com> wrote:\n\n> \n> \n> Dear All: Just fix my previous email.\n> \n> \n> \n> I am trying to show the symmetric and skewed (both left and right) distributions to my students.\n\nBut that's vastly under specified; there's no such thing as _the_ skewed distribution. You simply need to pick a skewed distribution and then plot it however you want. You've already been pointed to one resource on how to do so. \n\n> But I could not create a negative skewed distribution *or negative skewed graph). I am still not be able to figure it out\n\nHow about something like this? \n\nlayout(1:3)\nx <- rnorm(1e5, 4, 1)\nplot(density(x))\nplot(density(log(x)))\nplot(density(exp(x)))\n\nMichael\n\n\n> \n> \n> with many thanks\n> \n> abou\n> \n> \n> \n> ========================\n> \n> AbouEl-Makarim Aboueissa\n> \n> Sozan Elsalakawy\n> \n> Mohamed Agamia\n> \n> \n> \n> 246 Auburn Street, #158\n> \n> Portland, ME 04103\n> \n> USA\n> \n> \n> \n> Tel: (207) 797-2724\n> \n> Email: aboueiss at yahoo.com\n>    [[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "On Apr 14, 2013, at 4:52 PM, Yahoo! <aboueiss at yahoo.com> wrote:\n\n> \n> \n> Dear All: Just fix my previous email.\n> \n> \n> \n> I am trying to show the symmetric and skewed (both left and right) distribu",
+      "thread_id": "thread-48a030e515bf",
+      "thread_depth": 1,
+      "month": "2013-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-9073e580f353",
+      "subject": "wielbili",
+      "message_count": 1,
+      "participants": [
+        "Ali Zanaty"
+      ],
+      "started": "2013-04-12T04:03:09-07:00",
+      "last_reply": "2013-04-12T04:03:09-07:00",
+      "root_message_id": "msg-9073e580f353"
+    },
+    {
+      "id": "thread-d20addc8f044",
+      "subject": "Create and graph a negative skewed distribution (curve)",
+      "message_count": 2,
+      "participants": [
+        "Dennis Murphy",
+        "Yahoo!"
+      ],
+      "started": "2013-04-14T09:25:50-07:00",
+      "last_reply": "2013-04-14T13:22:34-07:00",
+      "root_message_id": "msg-d20addc8f044"
+    },
+    {
+      "id": "thread-48a030e515bf",
+      "subject": "create a negative skewed plot (density)",
+      "message_count": 2,
+      "participants": [
+        "Yahoo!",
+        "michael.weylandt at gmail.com (R. Michael Weylandt"
+      ],
+      "started": "2013-04-14T13:52:15-07:00",
+      "last_reply": "2013-04-14T17:02:17-04:00",
+      "root_message_id": "msg-48a030e515bf"
+    }
+  ]
+}

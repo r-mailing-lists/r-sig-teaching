@@ -1,0 +1,97 @@
+From grayw at rpi.edu  Sat Jul  2 21:12:20 2011
+From: grayw at rpi.edu (Wayne Gray)
+Date: Sat, 2 Jul 2011 15:12:20 -0400
+Subject: [R-sig-teaching] ANOVA questions
+Message-ID: <83D9E3C5-899E-4C88-9D38-DDA64D6704FA@rpi.edu>
+
+Greetings.
+
+I am not totally sure where to post this query so forgive me if this is the wrong SIG. However, I do teach stats in conjunction with experimental design and the question is one that is of considerable interest right now to several of my grad students and myself - hence this presents a weak rationale for sending the query to this listserv.
+
+As background, I am very familiar with Type III marginal SS for ANOVAs. However, we have a situation where a reviewer is insisting on an analysis that requires thin slicing our data so that we do not have observations in some of the cells for some of our Ss. I think I understand what R is telling me, but I am not positive that I do. Even worse, I don't know how to explain the analysis (assuming I have interpreted it correctly) to the editor or to the readers of the journal who, like me, are familiar with Type III ANOVAs. 
+
+I have tried to attach the R file plus the data file to this email. I am not sure whether the listserv will allow attachments. If not these files can be found here:
+
+Rcode:  files.me.com/graywayne/7z7db3
+data:     files.me.com/graywayne/688878
+
+What I think is the "takeaway" point is that there is no evidence in our data that the factor "dens.targ" is significant or that any of its interactions are significant. Given that the other analyses strongly support our interpretation of the results, I would like to conclude that any effect of density of the target stimuli on response time is very weak at best. This is a very satisfactory conclusion to me, however, I want to go the extra mile to show the editor that we tested this as best we could. Although it might appear in the paper, it is not clear that it would. It may be the sort of thing you do to present to the Editor but leave out of the final version of the paper.
+
+Any help, comments, pointers, etc will be much appreciated.
+
+BTW: This is a visual search paradigm where the factor of interest is the density of distractors in the quadrant in which the target is found. The data are limited to those cases in which the initial visual saccade is to a "dense quadrant" or a "nondense quadrant" for those cases in which the initially saccaded-to-quadrant also contained the "target." The DV, TRIAL.TIME, is the time from the beginning of the trial to the point where the subject indicates they have found the target by clicking a key.
+
+Yours,
+
+Wayne Gray
+
+> anova.e1sq <- with(e1sq, summary(aov(TRIAL.TIME ~ BLOCK.NUMBER*dens.targ + Error(SUBJECT/(BLOCK.NUMBER*dens.targ)))))
+> anova.e1sq
+
+Error: SUBJECT
+                       Df  Sum Sq Mean Sq F value Pr(>F)
+BLOCK.NUMBER            3 9237318 3079106  0.9906 0.5030
+dens.targ               1    8661    8661  0.0028 0.9612
+BLOCK.NUMBER:dens.targ  3  254237   84746  0.0273 0.9927
+Residuals               3 9324782 3108261               
+
+Error: SUBJECT:BLOCK.NUMBER
+                       Df   Sum Sq Mean Sq F value Pr(>F)
+BLOCK.NUMBER            3  2516104  838701  1.4333 0.2557
+dens.targ               1   166064  166064  0.2838 0.5987
+BLOCK.NUMBER:dens.targ  3   362702  120901  0.2066 0.8909
+Residuals              26 15213849  585148               
+
+Error: SUBJECT:dens.targ
+                       Df Sum Sq Mean Sq F value Pr(>F)
+dens.targ               1 272316  272316  2.4674 0.1602
+BLOCK.NUMBER:dens.targ  3 404184  134728  1.2207 0.3710
+Residuals               7 772557  110365               
+
+Error: SUBJECT:BLOCK.NUMBER:dens.targ
+                       Df  Sum Sq Mean Sq F value Pr(>F)
+BLOCK.NUMBER:dens.targ  3  367036  122345  0.9171 0.4444
+Residuals              30 4002169  133406               
+
+Error: Within
+           Df   Sum Sq Mean Sq F value Pr(>F)
+Residuals 418 59572437  142518               
+
+
+
+
+   
+
+From kubovy at virginia.edu  Sun Jul  3 18:34:07 2011
+From: kubovy at virginia.edu (Michael Kubovy)
+Date: Sun, 3 Jul 2011 12:34:07 -0400
+Subject: [R-sig-teaching] ANOVA questions
+In-Reply-To: <83D9E3C5-899E-4C88-9D38-DDA64D6704FA@rpi.edu>
+References: <83D9E3C5-899E-4C88-9D38-DDA64D6704FA@rpi.edu>
+Message-ID: <BFE5F5F2-F2C9-4259-86B0-F45DA58B5ED9@virginia.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110703/acaf3d09/attachment.pl>
+
+From aravindbm at gmail.com  Wed Jul  6 09:19:50 2011
+From: aravindbm at gmail.com (Manoj Aravind)
+Date: Wed, 6 Jul 2011 12:49:50 +0530
+Subject: [R-sig-teaching] Odds Ratio for evaluating Diagnostic tests
+Message-ID: <CAKuPk6DUN_aR7o2OiJaXdWNDYZxv5rRR5GkTyB8U6-K9Dzwuxg@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110706/40e2339c/attachment.pl>
+
+From rpruim at calvin.edu  Sat Jul  9 21:26:45 2011
+From: rpruim at calvin.edu (Randall Pruim)
+Date: Sat, 9 Jul 2011 15:26:45 -0400
+Subject: [R-sig-teaching] Plotting the p-value
+References: <9B97ECF2-A574-46D5-93D2-0849664D13CF@smith.edu>
+Message-ID: <489E61E6-361E-43C8-B578-83B453DD5267@calvin.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110709/407d96e2/attachment.pl>
+

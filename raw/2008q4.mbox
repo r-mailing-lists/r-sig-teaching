@@ -1,0 +1,3192 @@
+From lobry at biomserv.univ-lyon1.fr  Sat Nov  8 14:12:16 2008
+From: lobry at biomserv.univ-lyon1.fr (Jean lobry)
+Date: Sat, 8 Nov 2008 14:12:16 +0100
+Subject: [R-sig-teaching] Dartboard
+Message-ID: <p06002007c53b3e8c50e7@[134.214.233.74]>
+
+Hi,
+
+Tired of sampling black and white balls from an urn for teaching?
+You will find there: http://pbil.univ-lyon1.fr/R/pdf/tdr7f.pdf
+some R code to produce a dartboard.
+
+Best,
+
+-- 
+Jean R. Lobry            (lobry at biomserv.univ-lyon1.fr)
+Laboratoire BBE-CNRS-UMR-5558, Univ. C. Bernard - LYON I,
+43 Bd 11/11/1918, F-69622 VILLEURBANNE CEDEX, FRANCE
+allo  : +33 472 43 27 56     fax    : +33 472 43 13 88
+http://pbil.univ-lyon1.fr/members/lobry/
+
+
+
+From paul.richardson at ttu.edu  Fri Nov 14 00:18:24 2008
+From: paul.richardson at ttu.edu (Richardson, Paul)
+Date: Thu, 13 Nov 2008 17:18:24 -0600
+Subject: [R-sig-teaching] R Equivalent of SPSS "Split File" and "AutoRecode"
+Message-ID: <D1B8B0AC6612B944BEEF511B4C8BB14B1B452DC9A2@CETO.ttu.edu>
+
+
+Greetings Fellow Teachers of R,
+
+
+ *
+I am working on a tutorial for a class to be taught at my college.
+ *
+First, I am going to provide a PowerPoint seminar for the faculty, and then I will create a series of Camtasia screen recordings with narration.
+ *
+The course is aimed at teaching those familiar with introductory level stats how to perform similar actions in R, that would normally be performed in SPSS.
+ *
+Is there an autorecode capability in R which is analogous to autorecode in SPSS?  I'm having trouble with item with item f below (second half) "autorecode".
+ *
+I am also having trouble with item "i" below, because I don't know how to split a data file, like you normally do in SPSS.
+ *
+Is there some equivalent way to do this in R?
+
+thanks much,
+Paul Richardson
+cell 806-543-0087
+
+
+a.       Go to AEIS data site:  http://www.tea.state.tx.us/perfreport/aeis/2007/DownloadData.html
+b.      Select Campus, Reference File, and Layout, and download; then do the same for the Reference data file.  Download Campus Financial Statistics, both layout and download.  Download Student Statistics, both layout and download.
+c.       Import the data files into R.
+d.      Using the layout file, create variable labels; create value labels (if possible).  Assign 0 as a missing value for variable BPETALLC.
+e.       Merge the Reference, Financial, and Student files
+f.       Recode variable C_RATING into a new, numeric variable named campus.rating in R.  Recode GRDTYPE in a new, numeric variable called grade.type in R.  Use autorecode (if there is something similar in R) to recode CNTYNAME into county.name.  Create a new variable called log.cperra1r, which is the logarithm of CPERRA1R.
+g.      Do summary statistics (minimum, maximum, range, mean, median, variance, standard deviation, skewness, kurtosis).
+h.      Run histograms, boxplots, scatterplots, scatterplot matrices
+i.        Select only cases from Region 17 (using REGION variable) and do the analyses for j-r below; using the equivalent of split file (if possible) to do same analysis for each region separately (using REGION variable).
+j.        Conduct 1-way ANOVA using campus.rating as IV and CPETECOP as DV
+k.      Conduct repeated measures ANOVA using BPFEAOPRT and CPFEAOPRT (although these are measuring different things, I am having you use them for purely instructional purposes)
+l.        Conduct factorial ANOVA using campus.rating and grade.type as IV?s and CPETECOP as DV
+m.    Conduct correlation using CPFPGSPET and CPFPGGIFT.
+n.      Conduct bivariate regression using CPFPGGIFK and CPFPGSPEK
+o.      Conduct multiple regression using CPFPGREGT as criterion/outcome variable and CPFPAVOCT, CPFPASPET, and CPFPABILT as predictor variables
+p.      Conduct the following regression diagnostics
+                                i.            Numerical diagnostics
+1.      Variance inflation factors
+2.      Breusch-Pagan test for heteroscedasticity
+3.      Durbin-Watson test for autocorrelation
+4.      RESET test for nonlinearity
+5.      Bonferonni outlier test
+                              ii.            Graphs
+1.      Basic diagnostic plots
+2.      Residual quantile comparison plot
+3.      Component+residuals plot
+4.      Added variables plot
+5.      Influence plot
+6.      Effects plot
+q.      Conduct chi-square using campus.rating and grade.type.
+r.        Aggregate all the variables in the file by region (using REGION) and save to a new file called cref_cfin_cstud_agg.rdat
+
+
+
+
+Below is the actual syntax for the above tasks:
+======================// beginning of R syntax //=======================
+# Import CREF
+CREF <- sqlQuery(channel = 1, select * from [cref_tabdelimited$])
+attach(CREF)
+# SORT
+CREF<- order(+CREF$campus)
+CREF
+# variable labels
+library(Hmisc)
+label(CREF$DISTNAME)<- "District Name"
+label(CREF$CAMPNAME)<- "Campus Name"
+label(CREF$CACKDTL)<- "Campus 2007 Ratings: GPA Acknowledgment Detail"
+label(CREF$CAMPUS)<- "CURRENT 9-DIGIT CDC NUMBER"
+label(CREF$DISTRICT)<- "6 Digit County District Number"
+label(CREF$COUNTY)<- "3 Digit County Number"
+label(CREF$REGION)<- "2 Digit ESC Region"
+label(CREF$CNTYNAME)<- "County Name"
+label(CREF$GRDTYPE)<- "Campus Type (B,E,M,S) Total Enrollment"
+label(CREF$GRDSPAN)<- "Grade Span (Total Enrollment)"
+label(CREF$CFLCHART)<- "CAMPUS 2007 Flag-Chater School (Y/N)"
+label(CREF$PAIRCAMP)<- "CAMPUS 2007 Flag-Campus/District No. of TAKS Giver"
+label(CREF$PAIRNAME)<- "CAMPUS 2007 Flag-Campus/District Name of TAKS Giver"
+label(CREF$C_RATING)<- "Campus 2007 Ratings: Final Accountability Rating"
+#Import CSTUD
+CSTUD <- read.table("C:/Users/Matt/Desktop/TTU/Courses/EPSY 5385_Stats Packages/DATA FILES/cstud.dat", header=TRUE, sep=",", na.strings="NA", dec=".", strip.white=TRUE)
+attach(CSTUD)
+# SORT
+CSTUD<- order(+CSTUD$campus)
+CSTUD
+# variable labels
+library(Hmisc)
+label(CSTUD$CA0GR06N)<- "Campus 2006 Graduates: All Students Count"
+label(CSTUD$CA0GH06N)<- "Campus 2006 Graduates: Recom HS Pgm All Students Count"
+label(CSTUD$CA0GM06N)<- "Campus 2006 Graduates: Min HS Pgm All Students Count"
+label(CSTUD$CB0GR06N)<- "Campus 2006 Graduates: African American Count"
+label(CSTUD$CH0GR06N)<- "Campus 2006 Graduates: Hispanic Count"
+label(CSTUD$CW0GR06N)<- "Campus 2006 Graduates: White Count"
+label(CSTUD$CI0GR06N)<- "Campus 2006 Graduates: Native American Count"
+label(CSTUD$CP0GR06N)<- "Campus 2006 Graduates: Asian/Pacific Islander Count"
+label(CSTUD$CS0GR06N)<- "Campus 2006 Graduates: Special Ed Count"
+label(CSTUD$BPETALLC)<- "Group 2007 Student: All Students Count"
+label(CSTUD$BA0GR06N)<- "Group 2006 Graduates: All Students Count"
+label(CSTUD$BB0GR06N)<- "Group 2006 Graduates: African American Count"
+label(CSTUD$BH0GR06N)<- "Group 2006 Graduates: Hispanic Count"
+label(CSTUD$BW0GR06N)<- "Group 2006 Graduates: White Count"
+label(CSTUD$BI0GR06N)<- "Group 2006 Graduates: Native American Count"
+label(CSTUD$BP0GR06N)<- "Group 2006 Graduates: Asian/Pacific Islander Count"
+label(CSTUD$BS0GR06N)<- "Group 2006 Graduates: Special Ed Count"
+label(CSTUD$BA0GH06N)<- "Group 2006 Graduates: Recom HS Pgm All Students Count"
+label(CSTUD$BA0GM06N)<- "Group 2006 Graduates: Min HS Pgm All Students Count"
+label(CSTUD$BPETDISC)<- "Group 2006 DAEP: Count"
+label(CSTUD$CPERRAKR)<- "Campus 2006 Retention: Regular Ed KG Rate"
+label(CSTUD$CPERRA1R)<- "Campus 2006 Retention: Regular Ed 01 Rate"
+label(CSTUD$CPERRA2R)<- "Campus 2006 Retention: Regular Ed 02 Rate"
+label(CSTUD$CPERRA3R)<- "Campus 2006 Retention: Regular Ed 03 Rate"
+label(CSTUD$CPERRA4R)<- "Campus 2006 Retention: Regular Ed 04 Rate"
+label(CSTUD$CPERRA5R)<- "Campus 2006 Retention: Regular Ed 05 Rate"
+label(CSTUD$CPERRA6R)<- "Campus 2006 Retention: Regular Ed 06 Rate"
+label(CSTUD$CPERRA7R)<- "Campus 2006 Retention: Regular Ed 07 Rate"
+label(CSTUD$CPERRA8R)<- "Campus 2006 Retention: Regular Ed 08 Rate"
+label(CSTUD$CPERSAKR)<- "Campus 2006 Retention: Special Ed KG Rate"
+label(CSTUD$CPERSA1R)<- "Campus 2006 Retention: Special Ed 01 Rate"
+label(CSTUD$CPERSA2R)<- "Campus 2006 Retention: Special Ed 02 Rate"
+label(CSTUD$CPERSA3R)<- "Campus 2006 Retention: Special Ed 03 Rate"
+label(CSTUD$CPERSA4R)<- "Campus 2006 Retention: Special Ed 04 Rate"
+label(CSTUD$CPERSA5R)<- "Campus 2006 Retention: Special Ed 05 Rate"
+label(CSTUD$CPERSA6R)<- "Campus 2006 Retention: Special Ed 06 Rate"
+label(CSTUD$CPERSA7R)<- "Campus 2006 Retention: Special Ed 07 Rate"
+label(CSTUD$CPERSA8R)<- "Campus 2006 Retention: Special Ed 08 Rate"
+label(CSTUD$CPETDISC)<- "Campus 2006 DAEP: Count"
+label(CSTUD$CPETDISP)<- "Campus 2006 DAEP: Percent"
+label(CSTUD$CPETLEPP)<- "Campus 2007 Student: LEP Percent"
+label(CSTUD$CPETECOP)<- "Campus 2007 Student: ECO Percent"
+label(CSTUD$CPETECOC)<- "Campus 2007 Student: ECO Count"
+label(CSTUD$CPETLEPC)<- "Campus 2007 Student: LEP Count"
+label(CSTUD$CPETSPEC)<- "Campus 2007 Student: SPE Count"
+label(CSTUD$CPETGIFC)<- "Campus 2007 Student: GIF/TAL Count"
+label(CSTUD$CPETBILC)<- "Campus 2007 Student: BIL Count"
+label(CSTUD$CPETALLC)<- "Campus 2007 Student: All Students Count"
+label(CSTUD$CPETVOCC)<- "Campus 2007 Student: VOC Count"
+label(CSTUD$CPETINDC)<- "Campus 2007 Student: Native American Count"
+label(CSTUD$CPETPACC)<- "Campus 2007 Student: Asian/Pacific Islander Count"
+label(CSTUD$CPETBLAC)<- "Campus 2007 Student: African American Count"
+label(CSTUD$CPETHISC)<- "Campus 2007 Student: Hispanic Count"
+label(CSTUD$CPETWHIC)<- "Campus 2007 Student: White Count"
+label(CSTUD$CPETGEEC)<- "Campus 2007 Student: EE Count"
+label(CSTUD$CPETGPKC)<- "Campus 2007 Student: PK Count"
+label(CSTUD$CPETGKNC)<- "Campus 2007 Student: KG Count"
+label(CSTUD$CPETG01C)<- "Campus 2007 Student: 01 Count"
+label(CSTUD$CPETG02C)<- "Campus 2007 Student: 02 Count"
+label(CSTUD$CPETG03C)<- "Campus 2007 Student: 03 Count"
+label(CSTUD$CPETG04C)<- "Campus 2007 Student: 04 Count"
+label(CSTUD$CPETG05C)<- "Campus 2007 Student: 05 Count"
+label(CSTUD$CPETG06C)<- "Campus 2007 Student: 06 Count"
+label(CSTUD$CPETG07C)<- "Campus 2007 Student: 07 Count"
+label(CSTUD$CPETG08C)<- "Campus 2007 Student: 08 Count"
+label(CSTUD$CPETG09C)<- "Campus 2007 Student: 09 Count"
+label(CSTUD$CPETG10C)<- "Campus 2007 Student: 10 Count"
+label(CSTUD$CPETG11C)<- "Campus 2007 Student: 11 Count"
+label(CSTUD$CPETG12C)<- "Campus 2007 Student: 12 Count"
+label(CSTUD$CPEMALLC)<- "Campus 2007 Student: 06 Mobility Numerator (Campus Only)"
+label(CSTUD$CPETWHIP)<- "Campus 2007 Student: White Percent"
+label(CSTUD$CPETBLAP)<- "Campus 2007 Student: African American Percent"
+label(CSTUD$CPETHISP)<- "Campus 2007 Student: Hispanic Percent"
+label(CSTUD$CPETINDP)<- "Campus 2007 Student: Native American Percent"
+label(CSTUD$CPETPACP)<- "Campus 2007 Student: Asian/Pacific Islander Percent"
+label(CSTUD$CPETSPEP)<- "Campus 2007 Student: SPE Percent"
+label(CSTUD$CPETVOCP)<- "Campus 2007 Student: VOC Percent"
+label(CSTUD$CPETBILP)<- "Campus 2007 Student: BIL Percent"
+label(CSTUD$CPETGIFP)<- "Campus 2007 Student: GIF/TAL Percent"
+label(CSTUD$CPETGEEP)<- "Campus 2007 Student: EE Percent"
+label(CSTUD$CPETGPKP)<- "Campus 2007 Student: PK Percent"
+label(CSTUD$CPETGKNP)<- "Campus 2007 Student: KG Percent"
+label(CSTUD$CPETG01P)<- "Campus 2007 Student: 01 Percent"
+label(CSTUD$CPETG02P)<- "Campus 2007 Student: 02 Percent"
+label(CSTUD$CPETG03P)<- "Campus 2007 Student: 03 Percent"
+label(CSTUD$CPETG04P)<- "Campus 2007 Student: 04 Percent"
+label(CSTUD$CPETG05P)<- "Campus 2007 Student: 05 Percent"
+label(CSTUD$CPETG06P)<- "Campus 2007 Student: 06 Percent"
+label(CSTUD$CPETG07P)<- "Campus 2007 Student: 07 Percent"
+label(CSTUD$CPETG08P)<- "Campus 2007 Student: 08 Percent"
+label(CSTUD$CPETG09P)<- "Campus 2007 Student: 09 Percent"
+label(CSTUD$CPETG10P)<- "Campus 2007 Student: 10 Percent"
+label(CSTUD$CPETG11P)<- "Campus 2007 Student: 11 Percent"
+label(CSTUD$CPETG12P)<- "Campus 2007 Student: 12 Percent"
+label(CSTUD$CPEMALLP)<- "Campus 2007 Student: 06 Mobility Percent (Campus Only)"
+label(CSTUD$BPETWHIP)<- "Group 2007 Student: White Percent"
+label(CSTUD$BPETBLAP)<- "Group 2007 Student: African American Percent"
+label(CSTUD$BPETHISP)<- "Group 2007 Student: Hispanic Percent"
+label(CSTUD$BPETINDP)<- "Group 2007 Student: Native American Percent"
+label(CSTUD$BPETPACP)<- "Group 2007 Student: Asian/Pacific Islander Percent"
+label(CSTUD$BPETECOP)<- "Group 2007 Student: ECO Percent"
+label(CSTUD$BPETLEPP)<- "Group 2007 Student: LEP Percent"
+label(CSTUD$BPETSPEP)<- "Group 2007 Student: SPE Percent"
+label(CSTUD$BPETVOCP)<- "Group 2007 Student: VOC Percent"
+label(CSTUD$BPETBILP)<- "Group 2007 Student: BIL Percent"
+label(CSTUD$BPETGIFP)<- "Group 2007 Student: GIF/TAL Percent"
+label(CSTUD$BPETGEEP)<- "Group 2007 Student: EE Percent"
+label(CSTUD$BPETGPKP)<- "Group 2007 Student: PK Percent"
+label(CSTUD$BPETGKNP)<- "Group 2007 Student: KG Percent"
+label(CSTUD$BPETG01P)<- "Group 2007 Student: 01 Percent"
+label(CSTUD$BPETG02P)<- "Group 2007 Student: 02 Percent"
+label(CSTUD$BPETG03P)<- "Group 2007 Student: 03 Percent"
+label(CSTUD$BPETG04P)<- "Group 2007 Student: 04 Percent"
+label(CSTUD$BPETG05P)<- "Group 2007 Student: 05 Percent"
+label(CSTUD$BPETG06P)<- "Group 2007 Student: 06 Percent"
+label(CSTUD$BPETG07P)<- "Group 2007 Student: 07 Percent"
+label(CSTUD$BPETG08P)<- "Group 2007 Student: 08 Percent"
+label(CSTUD$BPETG09P)<- "Group 2007 Student: 09 Percent"
+label(CSTUD$BPETG10P)<- "Group 2007 Student: 10 Percent"
+label(CSTUD$BPETG11P)<- "Group 2007 Student: 11 Percent"
+label(CSTUD$BPETG12P)<- "Group 2007 Student: 12 Percent"
+label(CSTUD$BPEMALLP)<- "Group 2007 Student: 06 Mobility Percent (Campus ONLY)"
+label(CSTUD$BPERRAKR)<- "Group 2006 Retention: Regular Ed KG Rate"
+label(CSTUD$BPERRA1R)<- "Group 2006 Retention: Regular Ed 01 Rate"
+label(CSTUD$BPERRA2R)<- "Group 2006 Retention: Regular Ed 02 Rate"
+label(CSTUD$BPERRA3R)<- "Group 2006 Retention: Regular Ed 03 Rate"
+label(CSTUD$BPERRA4R)<- "Group 2006 Retention: Regular Ed 04 Rate"
+label(CSTUD$BPERRA5R)<- "Group 2006 Retention: Regular Ed 05 Rate"
+label(CSTUD$BPERRA6R)<- "Group 2006 Retention: Regular Ed 06 Rate"
+label(CSTUD$BPERRA7R)<- "Group 2006 Retention: Regular Ed 07 Rate"
+label(CSTUD$BPERRA8R)<- "Group 2006 Retention: Regular Ed 08 Rate"
+label(CSTUD$BPERSAKR)<- "Group 2006 Retention: Special Ed KG Rate"
+label(CSTUD$BPERSA1R)<- "Group 2006 Retention: Special Ed 01 Rate"
+label(CSTUD$BPERSA2R)<- "Group 2006 Retention: Special Ed 02 Rate"
+label(CSTUD$BPERSA3R)<- "Group 2006 Retention: Special Ed 03 Rate"
+label(CSTUD$BPERSA4R)<- "Group 2006 Retention: Special Ed 04 Rate"
+label(CSTUD$BPERSA5R)<- "Group 2006 Retention: Special Ed 05 Rate"
+label(CSTUD$BPERSA6R)<- "Group 2006 Retention: Special Ed 06 Rate"
+label(CSTUD$BPERSA7R)<- "Group 2006 Retention: Special Ed 07 Rate"
+label(CSTUD$BPERSA8R)<- "Group 2006 Retention: Special Ed 08 Rate"
+label(CSTUD$BPETDISP)<- "Group 2006 DAEP: Percent"
+CSTUD$BPETALLC [CSTUD$BPETALLC == 0] <- NA
+CSTUD$BPETALLC [is.na(CSTUD$BPETALLC)] <- 0
+# Import CFIN
+CFIN <- read.table("C:/Users/Matt/Desktop/TTU/Courses/EPSY 5385_Stats Packages/DATA FILES/cfin.dat", header=TRUE, sep=",", na.strings="NA", dec=".", strip.white=TRUE)
+attach(CFIN)
+# SORT
+CFIN<- order(+CFIN$campus)
+CFIN
+# variable labels
+library(Hmisc)
+label(CFIN$CPFEGADST)<- "Campus 2006 Finance: Expenditure by Function-School Leadership, General Fund"
+label(CFIN$CPFEGADIT)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership, General Fund"
+label(CFIN$CPFEAADST)<- "Campus 2006 Finance: Expenditure by Function-School Leadership, All Funds"
+label(CFIN$CPFEAADIT)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership, All Funds"
+label(CFIN$CPFPGREGT)<- "Campus 2006 Finance: Expenditure by Program-Regular, GeneralFund"
+label(CFIN$CPFPGVOCT)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology, General Fund"
+label(CFIN$CPFPGSPET)<- "Campus 2006 Finance: Expenditure by Program-Special Education, General Fund"
+label(CFIN$CPFPGGIFT)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented, General Fund"
+label(CFIN$CPFPGBILT)<- "Campus 2006 Finance: Expenditure by Program-Bilingual, General Fund"
+label(CFIN$CPFPAREGT)<- "Campus 2006 Finance: Expenditure by Program-Regular, All Funds"
+label(CFIN$CPFPAVOCT)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology, All Funds"
+label(CFIN$CPFPASPET)<- "Campus 2006 Finance: Expenditure by Program-Special Education, All Funds"
+label(CFIN$CPFPAGIFT)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented, All Funds"
+label(CFIN$CPFPABILT)<- "Campus 2006 Finance: Expenditure by Program-Bilingual, All Funds"
+label(CFIN$CPFEGINST)<- "Campus 2006 Finance: Expenditure by Function-Instruction, General Fund"
+label(CFIN$CPFEAINST)<- "Campus 2006 Finance: Expenditure by Function-Instruction, All Funds"
+label(CFIN$CPFEGOPRT)<- "Campus 2006 Finance: Expenditure by Function-Total Operating,General Fund"
+label(CFIN$CPFEAOPRT)<- "Campus 2006 Finance: Expenditure by Function-Total Operating, All Funds"
+label(CFIN$CPFPGALLT)<- "Campus 2006 Finance: Expenditure by Program-Total, General Fund"
+label(CFIN$CPFPAALLT)<- "Campus 2006 Finance: Expenditure by Program-Total, All Funds"
+label(CFIN$CPFEGINSK)<- "Campus 2006 Finance: Expenditure by Function-Instruction PerPupil, General Fund"
+label(CFIN$CPFEGADIK)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership Per Pupil, General Fund"
+label(CFIN$CPFEGADSK)<- "Campus 2006 Finance: Expenditure by Function-School Leadership Per Pupil, General Fund"
+label(CFIN$CPFEGOPRK)<- "Campus 2006 Finance: Expenditure by Function-Total OperatingPer Pupil, General Fund"
+label(CFIN$CPFPGREGK)<- "Campus 2006 Finance: Expenditure by Program-Regular Per Pupil, General Fund"
+label(CFIN$CPFPGVOCK)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology Per Pupil, General Fund"
+label(CFIN$CPFPGBILK)<- "Campus 2006 Finance: Expenditure by Program-Bilingual Per Pupil, General Fund"
+label(CFIN$CPFPGGIFK)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented Per Pupil, General Fund"
+label(CFIN$CPFPGSPEK)<- "Campus 2006 Finance: Expenditure by Program-Special Education Per Pupil, General Fund"
+label(CFIN$CPFPGALLK)<- "Campus 2006 Finance: Expenditure by Program-Total Per Pupil,General Fund"
+label(CFIN$CPFEAINSK)<- "Campus 2006 Finance: Expenditure by Function-Instruction PerPupil, All Funds"
+label(CFIN$CPFEAADIK)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership Per Pupil, All Funds"
+label(CFIN$CPFEAADSK)<- "Campus 2006 Finance: Expenditure by Function-School Leadership Per Pupil, All Funds"
+label(CFIN$CPFEAOPRK)<- "Campus 2006 Finance: Expenditure by Function-Total OperatingPer Pupil, ALL Funds"
+label(CFIN$CPFPAREGK)<- "Campus 2006 Finance: Expenditure by Program-Regular Per Pupil, All Funds"
+label(CFIN$CPFPAVOCK)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology Per Pupil, All Funds"
+label(CFIN$CPFPABILK)<- "Campus 2006 Finance: Expenditure by Program-Bilingual Per Pupil, All Funds"
+label(CFIN$CPFPAGIFK)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented Per Pupil, All Funds"
+label(CFIN$CPFPASPEK)<- "Campus 2006 Finance: Expenditure by Program-Special Education Per Pupil, All Funds"
+label(CFIN$CPFPAALLK)<- "Campus 2006 Finance: Expenditure by Program-Total Per Pupil,All Funds"
+label(CFIN$CPFEGRELT)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services, General Fund"
+label(CFIN$CPFEARELT)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services, All Funds"
+label(CFIN$CPFEGSUPT)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student, General Fund"
+label(CFIN$CPFEASUPT)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student, All Funds"
+label(CFIN$CPFPGCOMT)<- "Campus 2006 Finance: Expenditure by Program-Compensatory, General Fund"
+label(CFIN$CPFPACOMT)<- "Campus 2006 Finance: Expenditure by Program-Compensatory, All Funds"
+label(CFIN$CPFPGOTHT)<- "Campus 2006 Finance: Expenditure by Program-Other, General Fund"
+label(CFIN$CPFPAOTHT)<- "Campus 2006 Finance: Expenditure by Program-Other, All Funds"
+label(CFIN$CPFEGOPRP)<- "Campus 2006 Finance: Expenditure by Function-Total OperatingPercent, General Fund"
+label(CFIN$CPFEGINSP)<- "Campus 2006 Finance: Expenditure by Function-Instruction Percent, General Fund"
+label(CFIN$CPFEGRELP)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services Percent, General Fund"
+label(CFIN$CPFEGADIP)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership Percent, General Fund"
+label(CFIN$CPFEGADSP)<- "Campus 2006 Finance: Expenditure by Function-School Leadership Percent, General Fund"
+label(CFIN$CPFEGSUPP)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student Percent, General Fund"
+label(CFIN$CPFEAOPRP)<- "Campus 2006 Finance: Expenditure by Function-Total OperatingPercent, All Funds"
+label(CFIN$CPFEAINSP)<- "Campus 2006 Finance: Expenditure by Function-Instruction Percent, All Funds"
+label(CFIN$CPFEARELP)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services Percent, All Funds"
+label(CFIN$CPFEAADIP)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership Percent, All Funds"
+label(CFIN$CPFEAADSP)<- "Campus 2006 Finance: Expenditure by Function-School Leadership Percent, All Funds"
+label(CFIN$CPFEASUPP)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student Percent, All Funds"
+label(CFIN$CPFPGALLP)<- "Campus 2006 Finance: Expenditure by Program-Total Percent, General Fund"
+label(CFIN$CPFPGBILP)<- "Campus 2006 Finance: Expenditure by Program-Bilingual Percent, General Fund"
+label(CFIN$CPFPGVOCP)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology Percent, General Fund"
+label(CFIN$CPFPGCOMP)<- "Campus 2006 Finance: Expenditure by Program-Compensatory Percent, General Fund"
+label(CFIN$CPFPGGIFP)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented Percent, General Fund"
+label(CFIN$CPFPGREGP)<- "Campus 2006 Finance: Expenditure by Program-Regular Percent,General Fund"
+label(CFIN$CPFPGSPEP)<- "Campus 2006 Finance: Expenditure by Program-Special Education Percent, General Fund"
+label(CFIN$CPFPGOTHP)<- "Campus 2006 Finance: Expenditure by Program-Other Percent, General Fund"
+label(CFIN$CPFPAALLP)<- "Campus 2006 Finance: Expenditure by Program-Total Percent, All Funds"
+label(CFIN$CPFPABILP)<- "Campus 2006 Finance: Expenditure by Program-Bilingual Percent, All Funds"
+label(CFIN$CPFPAVOCP)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology Percent, All Funds"
+label(CFIN$CPFPACOMP)<- "Campus 2006 Finance: Expenditure by Program-Compensatory Percent, All Funds"
+label(CFIN$CPFPAGIFP)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented Percent, All Funds"
+label(CFIN$CPFPAREGP)<- "Campus 2006 Finance: Expenditure by Program-Regular Percent,All Funds"
+label(CFIN$CPFPASPEP)<- "Campus 2006 Finance: Expenditure by Program-Special Education Percent, All Funds"
+label(CFIN$CPFPAOTHP)<- "Campus 2006 Finance: Expenditure by Program-Other Percent, All Funds"
+label(CFIN$CPFEGRELK)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services Per Pupil, General Fund"
+label(CFIN$CPFEARELK)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services Per Pupil, All Funds"
+label(CFIN$CPFEGSUPK)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student Per Pupil, General Fund"
+label(CFIN$CPFEASUPK)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student Per Pupil, All Funds"
+label(CFIN$CPFPGCOMK)<- "Campus 2006 Finance: Expenditure by Program-Compensatory PerPupil, General Fund"
+label(CFIN$CPFPACOMK)<- "Campus 2006 Finance: Expenditure by Program-Compensatory PerPupil, All Funds"
+label(CFIN$CPFPGOTHK)<- "Campus 2006 Finance: Expenditure by Program-Other Per Pupil,General Fund"
+label(CFIN$CPFPAOTHK)<- "Campus 2006 Finance: Expenditure by Program-Other Per Pupil,All Funds"
+label(CFIN$BPFEAOPRT)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Total Operating, All Funds"
+label(CFIN$BPFEAINST)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instruction, All Funds"
+label(CFIN$BPFEARELT)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional-Related Services, All Funds"
+label(CFIN$BPFEAADIT)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional Leadership, All Funds"
+label(CFIN$BPFEAADST)<- "Campus 2006 Finance: Group Total-Expenditure by Function-School Leadership, All Funds"
+label(CFIN$BPFEASUPT)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Support Services--Student, All Funds"
+label(CFIN$BPFPAALLT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Total, All Funds"
+label(CFIN$BPFPABILT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Bilingual, All Funds"
+label(CFIN$BPFPAVOCT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Career & Technology, All Funds"
+label(CFIN$BPFPACOMT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Compensatory, All Funds"
+label(CFIN$BPFPAGIFT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Gifted & Talented, All Funds"
+label(CFIN$BPFPAREGT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Regular, All Funds"
+label(CFIN$BPFPASPET)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Special Education, All Funds"
+label(CFIN$BPFPAOTHT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Other, All Funds"
+label(CFIN$BPFPAALLP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Total Percent, All Funds"
+label(CFIN$BPFPAREGP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Regular Percent, All Funds"
+label(CFIN$BPFPABILP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Bilingual Percent, All Funds"
+label(CFIN$BPFPACOMP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Compensatory Percent, All Funds"
+label(CFIN$BPFPAGIFP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Gifted & Talented Percent, All Funds"
+label(CFIN$BPFPAVOCP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Career & Technology Percent, All Funds"
+label(CFIN$BPFPASPEP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Special Education Percent, All Funds"
+label(CFIN$BPFPAOTHP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Other Percent, All Funds"
+label(CFIN$BPFEAOPRP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Total Operating Percent, All Funds"
+label(CFIN$BPFEAINSP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instruction Percent, All Funds"
+label(CFIN$BPFEARELP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional-Related Services Percent, All Funds"
+label(CFIN$BPFEAADIP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional Leadership Percent, All Funds"
+label(CFIN$BPFEAADSP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-School Leadership Percent, All Funds"
+label(CFIN$BPFEASUPP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Support Services--Student Percent, All Funds"
+label(CFIN$BPFEAOPRK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Total Operating Per Pupil, All Funds"
+label(CFIN$BPFEAINSK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instruction Per Pupil, All Funds"
+label(CFIN$BPFEARELK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional-Related Services Per Pupil, All Funds"
+label(CFIN$BPFEAADIK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional Leadership Per Pupil, All Funds"
+label(CFIN$BPFEAADSK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-School Leadership Per Pupil, All Funds"
+label(CFIN$BPFEASUPK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Support Services--Student Per Pupil, All Funds"
+label(CFIN$BPFPAALLK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Total Per Pupil, All Funds"
+label(CFIN$BPFPABILK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Bilingual Per Pupil, All Funds"
+label(CFIN$BPFPAVOCK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Career & Technology Per Pupil, All Funds"
+label(CFIN$BPFPACOMK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Compensatory Per Pupil, All Funds"
+label(CFIN$BPFPAGIFK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Gifted & Talented Per Pupil, All Funds"
+label(CFIN$BPFPAREGK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Regular Per Pupil, All Funds"
+label(CFIN$BPFPASPEK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Special Education Per Pupil, All Funds"
+label(CFIN$BPFPAOTHK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Other Per Pupil, All Funds"
+# merge two datasets by CAMPUS
+total <- merge(CREF,CSTUD, by="CAMPUS", all=T)
+attach(total)
+total2 <- merge(total,CFIN, by="CAMPUS", all=T)
+attach(total2)
+# Sort
+total2 <- order(+total2$campus)
+total2
+#Recodes
+total2$campus.rating <- recode(total2$C_RATING, '"A" = 1; "E" = 2; "R" = 3; "X" = 4; "L" = 5; ', as.factor.result=TRUE)
+total2$campus.rating <- factor(total2$campus.rating,levels=c("1","2","3","4","5"),labels=c("Acceptable","Exemplary","Recognized","Unacceptable","Unknown"))
+total2$grade.type <- recode(total2$GRDTYPE, '"B" = 1; "E" = 2; "M" = 3; "S" = 4; ', as.factor.result=TRUE)
+total2$grade.type <- factor(total2$grade.type,levels=c("1","2","3","4"),labels=c("Both","Elementary","Middle","Senior"))
+total2$CPERRA1R <- as.numeric(total2$CPERRA1R)
+total2$log.cperra1r <- with(total2, log10(CPERRA1R))
+# auto-recode -- county.name
+#Summary statistics
+summary(total2)
+# Histogram
+Hist(total2$BA0GH06N, scale="frequency", breaks="Sturges", col="darkgray")
+#Scatterplot
+scatterplot(BA0GR06N~BA0GM06N, reg.line=FALSE, smooth=FALSE, labels=FALSE, boxplots='xy', span=0.5, data=total2)
+#Scatterplot matrices
+scatterplot.matrix(~BA0GH06N+BA0GR06N+BH0GR06N+BP0GR06N+BPETDISC, reg.line=FALSE, smooth=FALSE, span=0.5, diagonal = 'density', data=total2)
+# Split File -- CAN'T IN R
+# 1-way ANOVA
+total2$CPETECOP <- as.numeric(total2$CPETECOP)
+.Anova<- lm(CPETECOP ~ campus.rating, data=total2)
+anova(.Anova)
+tapply(total2$CPETECOP, total2$campus.rating, mean, na.rm=TRUE) # means
+tapply(total2$CPETECOP, total2$campus.rating, sd, na.rm=TRUE) # std. deviations
+tapply(total2$CPETECOP, total2$campus.rating, function(x) sum(!is.na(x))) # counts
+remove(.Anova)
+# Repeated measures ANOVA?
+GLM.1 <- glm(BPFEAOPRT  ~ CPFEAOPRT, family=binomial(logit), data=total2)
+summary(GLM.1)
+# Factorial ANOVA
+# Correlation
+library(RODBC)
+total2$CPFPGSPET <- as.numeric(total2$CPFPGSPET)
+total2$CPFPGGIFT <- as.numeric(total2$CPFPGGIFT)
+cor.test(total2$CPFPGSPET , total2$CPFPGGIFT, use="pairwise.complete.obs", alternative="two.sided", method="pearson")
+# Bivariate Regression
+total2$CPFPGGIFK <- as.numeric(total2$CPFPGGIFK)
+total2$CPFPGSPEK <- as.numeric(total2$CPFPGSPEK)
+RegModel.1 <- lm(CPFPGGIFK~CPFPGSPEK, data=total2)
+summary(RegModel.1)
+anova(RegModel.1)
+plot(RegModel.1)
+termplot(RegModel.1)
+bptest(CPFPGGIFK~CPFPGSPEK, varformula = ~ fitted.values(RegModel.1), studentize=FALSE, data=total2)
+dwtest(CPFPGGIFK~CPFPGSPEK, alternative="greater", data=total2)
+resettest(CPFPGGIFK~CPFPGSPEK, power=2:3, type="regressor", data=total2)
+outlier.test(RegModel.1)
+#Graphs
+oldpar <- par(oma=c(0,0,3,0), mfrow=c(2,2))
+plot(RegModel.1)
+par(oldpar)
+qq.plot(RegModel.1, simulate=TRUE, labels=FALSE)
+cr.plots(RegModel.1, ask=FALSE)
+av.plots(RegModel.1, ask=FALSE, identify.points=TRUE)
+influencePlot(RegModel.1)
+trellis.device(theme="col.whitebg")
+plot(all.effects(RegModel.1), ask=FALSE)
+# Multiple Regression
+total2$CPFPGREGT <- as.numeric(total2$CPFPGREGT)
+total2$CPFPAVOCT <- as.numeric(total2$CPFPAVOCT)
+total2$CPFPASPET <- as.numeric(total2$CPFPASPET)
+total2$CPFPABILT <- as.numeric(total2$CPFPABILT)
+RegModel.2 <- lm(CPFPGREGT~CPFPAVOCT+CPFPASPET+CPFPABILT, data=total2)
+summary(RegModel.2)
+anova(RegModel.2)
+plot(RegModel.2)
+termplot(RegModel.2)
+vif(RegModel.1)
+bptest(CPFPGREGT~CPFPAVOCT+CPFPASPET+CPFPABILT, varformula = ~ fitted.values(RegModel.1), studentize=FALSE, data=total2)
+dwtest(CPFPGREGT~CPFPAVOCT+CPFPASPET+CPFPABILT, alternative="greater", data=total2)
+resettest(CPFPGREGT~CPFPAVOCT+CPFPASPET+CPFPABILT, power=2:3, type="regressor", data=total2)
+outlier.test(RegModel.1)
+#Graphs
+oldpar <- par(oma=c(0,0,3,0), mfrow=c(2,2))
+plot(RegModel.2)
+par(oldpar)
+qq.plot(RegModel.2, simulate=TRUE, labels=FALSE)
+cr.plots(RegModel.2, ask=FALSE)
+av.plots(RegModel.2, ask=FALSE, identify.points=TRUE)
+influencePlot(RegModel.2)
+trellis.device(theme="col.whitebg")
+plot(all.effects(RegModel.2), ask=FALSE)
+# Chi-square
+chisq.test(total2$campus.rating, total2$grade.type))
+# Aggregate
+attach(total2)
+cref_cfin_cstud_agg <-aggregate(total2, by=list(REGION),
+  FUN=mean, na.rm=TRUE)
+
+
+
+From jones at reed.edu  Fri Nov 14 00:31:55 2008
+From: jones at reed.edu (Albyn Jones)
+Date: Thu, 13 Nov 2008 15:31:55 -0800
+Subject: [R-sig-teaching] R Equivalent of SPSS "Split File"
+	and	"AutoRecode"
+In-Reply-To: <D1B8B0AC6612B944BEEF511B4C8BB14B1B452DC9A2@CETO.ttu.edu>
+References: <D1B8B0AC6612B944BEEF511B4C8BB14B1B452DC9A2@CETO.ttu.edu>
+Message-ID: <20081113233155.GG21149@laplace.reed.edu>
+
+ I have no clue what "autorecode" means.  Selecting a subset of a file is
+easy.  Suppose your data frame is named X, assuming REGION is numeric:
+
+    attach(X)
+    X17 = X[REGION == 17,]
+
+albyn
+
+On Thu, Nov 13, 2008 at 05:18:24PM -0600, Richardson, Paul wrote:
+> 
+> Greetings Fellow Teachers of R,
+> 
+> 
+>  *
+> I am working on a tutorial for a class to be taught at my college.
+>  *
+> First, I am going to provide a PowerPoint seminar for the faculty, and then I will create a series of Camtasia screen recordings with narration.
+>  *
+> The course is aimed at teaching those familiar with introductory level stats how to perform similar actions in R, that would normally be performed in SPSS.
+>  *
+> Is there an autorecode capability in R which is analogous to autorecode in SPSS?  I'm having trouble with item with item f below (second half) "autorecode".
+>  *
+> I am also having trouble with item "i" below, because I don't know how to split a data file, like you normally do in SPSS.
+>  *
+> Is there some equivalent way to do this in R?
+> 
+> thanks much,
+> Paul Richardson
+> cell 806-543-0087
+> 
+> 
+> a.       Go to AEIS data site:  http://www.tea.state.tx.us/perfreport/aeis/2007/DownloadData.html
+> b.      Select Campus, Reference File, and Layout, and download; then do the same for the Reference data file.  Download Campus Financial Statistics, both layout and download.  Download Student Statistics, both layout and download.
+> c.       Import the data files into R.
+> d.      Using the layout file, create variable labels; create value labels (if possible).  Assign 0 as a missing value for variable BPETALLC.
+> e.       Merge the Reference, Financial, and Student files
+> f.       Recode variable C_RATING into a new, numeric variable named campus.rating in R.  Recode GRDTYPE in a new, numeric variable called grade.type in R.  Use autorecode (if there is something similar in R) to recode CNTYNAME into county.name.  Create a new variable called log.cperra1r, which is the logarithm of CPERRA1R.
+> g.      Do summary statistics (minimum, maximum, range, mean, median, variance, standard deviation, skewness, kurtosis).
+> h.      Run histograms, boxplots, scatterplots, scatterplot matrices
+> i.        Select only cases from Region 17 (using REGION variable) and do the analyses for j-r below; using the equivalent of split file (if possible) to do same analysis for each region separately (using REGION variable).
+> j.        Conduct 1-way ANOVA using campus.rating as IV and CPETECOP as DV
+> k.      Conduct repeated measures ANOVA using BPFEAOPRT and CPFEAOPRT (although these are measuring different things, I am having you use them for purely instructional purposes)
+> l.        Conduct factorial ANOVA using campus.rating and grade.type as IV?s and CPETECOP as DV
+> m.    Conduct correlation using CPFPGSPET and CPFPGGIFT.
+> n.      Conduct bivariate regression using CPFPGGIFK and CPFPGSPEK
+> o.      Conduct multiple regression using CPFPGREGT as criterion/outcome variable and CPFPAVOCT, CPFPASPET, and CPFPABILT as predictor variables
+> p.      Conduct the following regression diagnostics
+>                                 i.            Numerical diagnostics
+> 1.      Variance inflation factors
+> 2.      Breusch-Pagan test for heteroscedasticity
+> 3.      Durbin-Watson test for autocorrelation
+> 4.      RESET test for nonlinearity
+> 5.      Bonferonni outlier test
+>                               ii.            Graphs
+> 1.      Basic diagnostic plots
+> 2.      Residual quantile comparison plot
+> 3.      Component+residuals plot
+> 4.      Added variables plot
+> 5.      Influence plot
+> 6.      Effects plot
+> q.      Conduct chi-square using campus.rating and grade.type.
+> r.        Aggregate all the variables in the file by region (using REGION) and save to a new file called cref_cfin_cstud_agg.rdat
+> 
+> 
+> 
+> 
+> Below is the actual syntax for the above tasks:
+> ======================// beginning of R syntax //=======================
+> # Import CREF
+> CREF <- sqlQuery(channel = 1, select * from [cref_tabdelimited$])
+> attach(CREF)
+> # SORT
+> CREF<- order(+CREF$campus)
+> CREF
+> # variable labels
+> library(Hmisc)
+> label(CREF$DISTNAME)<- "District Name"
+> label(CREF$CAMPNAME)<- "Campus Name"
+> label(CREF$CACKDTL)<- "Campus 2007 Ratings: GPA Acknowledgment Detail"
+> label(CREF$CAMPUS)<- "CURRENT 9-DIGIT CDC NUMBER"
+> label(CREF$DISTRICT)<- "6 Digit County District Number"
+> label(CREF$COUNTY)<- "3 Digit County Number"
+> label(CREF$REGION)<- "2 Digit ESC Region"
+> label(CREF$CNTYNAME)<- "County Name"
+> label(CREF$GRDTYPE)<- "Campus Type (B,E,M,S) Total Enrollment"
+> label(CREF$GRDSPAN)<- "Grade Span (Total Enrollment)"
+> label(CREF$CFLCHART)<- "CAMPUS 2007 Flag-Chater School (Y/N)"
+> label(CREF$PAIRCAMP)<- "CAMPUS 2007 Flag-Campus/District No. of TAKS Giver"
+> label(CREF$PAIRNAME)<- "CAMPUS 2007 Flag-Campus/District Name of TAKS Giver"
+> label(CREF$C_RATING)<- "Campus 2007 Ratings: Final Accountability Rating"
+> #Import CSTUD
+> CSTUD <- read.table("C:/Users/Matt/Desktop/TTU/Courses/EPSY 5385_Stats Packages/DATA FILES/cstud.dat", header=TRUE, sep=",", na.strings="NA", dec=".", strip.white=TRUE)
+> attach(CSTUD)
+> # SORT
+> CSTUD<- order(+CSTUD$campus)
+> CSTUD
+> # variable labels
+> library(Hmisc)
+> label(CSTUD$CA0GR06N)<- "Campus 2006 Graduates: All Students Count"
+> label(CSTUD$CA0GH06N)<- "Campus 2006 Graduates: Recom HS Pgm All Students Count"
+> label(CSTUD$CA0GM06N)<- "Campus 2006 Graduates: Min HS Pgm All Students Count"
+> label(CSTUD$CB0GR06N)<- "Campus 2006 Graduates: African American Count"
+> label(CSTUD$CH0GR06N)<- "Campus 2006 Graduates: Hispanic Count"
+> label(CSTUD$CW0GR06N)<- "Campus 2006 Graduates: White Count"
+> label(CSTUD$CI0GR06N)<- "Campus 2006 Graduates: Native American Count"
+> label(CSTUD$CP0GR06N)<- "Campus 2006 Graduates: Asian/Pacific Islander Count"
+> label(CSTUD$CS0GR06N)<- "Campus 2006 Graduates: Special Ed Count"
+> label(CSTUD$BPETALLC)<- "Group 2007 Student: All Students Count"
+> label(CSTUD$BA0GR06N)<- "Group 2006 Graduates: All Students Count"
+> label(CSTUD$BB0GR06N)<- "Group 2006 Graduates: African American Count"
+> label(CSTUD$BH0GR06N)<- "Group 2006 Graduates: Hispanic Count"
+> label(CSTUD$BW0GR06N)<- "Group 2006 Graduates: White Count"
+> label(CSTUD$BI0GR06N)<- "Group 2006 Graduates: Native American Count"
+> label(CSTUD$BP0GR06N)<- "Group 2006 Graduates: Asian/Pacific Islander Count"
+> label(CSTUD$BS0GR06N)<- "Group 2006 Graduates: Special Ed Count"
+> label(CSTUD$BA0GH06N)<- "Group 2006 Graduates: Recom HS Pgm All Students Count"
+> label(CSTUD$BA0GM06N)<- "Group 2006 Graduates: Min HS Pgm All Students Count"
+> label(CSTUD$BPETDISC)<- "Group 2006 DAEP: Count"
+> label(CSTUD$CPERRAKR)<- "Campus 2006 Retention: Regular Ed KG Rate"
+> label(CSTUD$CPERRA1R)<- "Campus 2006 Retention: Regular Ed 01 Rate"
+> label(CSTUD$CPERRA2R)<- "Campus 2006 Retention: Regular Ed 02 Rate"
+> label(CSTUD$CPERRA3R)<- "Campus 2006 Retention: Regular Ed 03 Rate"
+> label(CSTUD$CPERRA4R)<- "Campus 2006 Retention: Regular Ed 04 Rate"
+> label(CSTUD$CPERRA5R)<- "Campus 2006 Retention: Regular Ed 05 Rate"
+> label(CSTUD$CPERRA6R)<- "Campus 2006 Retention: Regular Ed 06 Rate"
+> label(CSTUD$CPERRA7R)<- "Campus 2006 Retention: Regular Ed 07 Rate"
+> label(CSTUD$CPERRA8R)<- "Campus 2006 Retention: Regular Ed 08 Rate"
+> label(CSTUD$CPERSAKR)<- "Campus 2006 Retention: Special Ed KG Rate"
+> label(CSTUD$CPERSA1R)<- "Campus 2006 Retention: Special Ed 01 Rate"
+> label(CSTUD$CPERSA2R)<- "Campus 2006 Retention: Special Ed 02 Rate"
+> label(CSTUD$CPERSA3R)<- "Campus 2006 Retention: Special Ed 03 Rate"
+> label(CSTUD$CPERSA4R)<- "Campus 2006 Retention: Special Ed 04 Rate"
+> label(CSTUD$CPERSA5R)<- "Campus 2006 Retention: Special Ed 05 Rate"
+> label(CSTUD$CPERSA6R)<- "Campus 2006 Retention: Special Ed 06 Rate"
+> label(CSTUD$CPERSA7R)<- "Campus 2006 Retention: Special Ed 07 Rate"
+> label(CSTUD$CPERSA8R)<- "Campus 2006 Retention: Special Ed 08 Rate"
+> label(CSTUD$CPETDISC)<- "Campus 2006 DAEP: Count"
+> label(CSTUD$CPETDISP)<- "Campus 2006 DAEP: Percent"
+> label(CSTUD$CPETLEPP)<- "Campus 2007 Student: LEP Percent"
+> label(CSTUD$CPETECOP)<- "Campus 2007 Student: ECO Percent"
+> label(CSTUD$CPETECOC)<- "Campus 2007 Student: ECO Count"
+> label(CSTUD$CPETLEPC)<- "Campus 2007 Student: LEP Count"
+> label(CSTUD$CPETSPEC)<- "Campus 2007 Student: SPE Count"
+> label(CSTUD$CPETGIFC)<- "Campus 2007 Student: GIF/TAL Count"
+> label(CSTUD$CPETBILC)<- "Campus 2007 Student: BIL Count"
+> label(CSTUD$CPETALLC)<- "Campus 2007 Student: All Students Count"
+> label(CSTUD$CPETVOCC)<- "Campus 2007 Student: VOC Count"
+> label(CSTUD$CPETINDC)<- "Campus 2007 Student: Native American Count"
+> label(CSTUD$CPETPACC)<- "Campus 2007 Student: Asian/Pacific Islander Count"
+> label(CSTUD$CPETBLAC)<- "Campus 2007 Student: African American Count"
+> label(CSTUD$CPETHISC)<- "Campus 2007 Student: Hispanic Count"
+> label(CSTUD$CPETWHIC)<- "Campus 2007 Student: White Count"
+> label(CSTUD$CPETGEEC)<- "Campus 2007 Student: EE Count"
+> label(CSTUD$CPETGPKC)<- "Campus 2007 Student: PK Count"
+> label(CSTUD$CPETGKNC)<- "Campus 2007 Student: KG Count"
+> label(CSTUD$CPETG01C)<- "Campus 2007 Student: 01 Count"
+> label(CSTUD$CPETG02C)<- "Campus 2007 Student: 02 Count"
+> label(CSTUD$CPETG03C)<- "Campus 2007 Student: 03 Count"
+> label(CSTUD$CPETG04C)<- "Campus 2007 Student: 04 Count"
+> label(CSTUD$CPETG05C)<- "Campus 2007 Student: 05 Count"
+> label(CSTUD$CPETG06C)<- "Campus 2007 Student: 06 Count"
+> label(CSTUD$CPETG07C)<- "Campus 2007 Student: 07 Count"
+> label(CSTUD$CPETG08C)<- "Campus 2007 Student: 08 Count"
+> label(CSTUD$CPETG09C)<- "Campus 2007 Student: 09 Count"
+> label(CSTUD$CPETG10C)<- "Campus 2007 Student: 10 Count"
+> label(CSTUD$CPETG11C)<- "Campus 2007 Student: 11 Count"
+> label(CSTUD$CPETG12C)<- "Campus 2007 Student: 12 Count"
+> label(CSTUD$CPEMALLC)<- "Campus 2007 Student: 06 Mobility Numerator (Campus Only)"
+> label(CSTUD$CPETWHIP)<- "Campus 2007 Student: White Percent"
+> label(CSTUD$CPETBLAP)<- "Campus 2007 Student: African American Percent"
+> label(CSTUD$CPETHISP)<- "Campus 2007 Student: Hispanic Percent"
+> label(CSTUD$CPETINDP)<- "Campus 2007 Student: Native American Percent"
+> label(CSTUD$CPETPACP)<- "Campus 2007 Student: Asian/Pacific Islander Percent"
+> label(CSTUD$CPETSPEP)<- "Campus 2007 Student: SPE Percent"
+> label(CSTUD$CPETVOCP)<- "Campus 2007 Student: VOC Percent"
+> label(CSTUD$CPETBILP)<- "Campus 2007 Student: BIL Percent"
+> label(CSTUD$CPETGIFP)<- "Campus 2007 Student: GIF/TAL Percent"
+> label(CSTUD$CPETGEEP)<- "Campus 2007 Student: EE Percent"
+> label(CSTUD$CPETGPKP)<- "Campus 2007 Student: PK Percent"
+> label(CSTUD$CPETGKNP)<- "Campus 2007 Student: KG Percent"
+> label(CSTUD$CPETG01P)<- "Campus 2007 Student: 01 Percent"
+> label(CSTUD$CPETG02P)<- "Campus 2007 Student: 02 Percent"
+> label(CSTUD$CPETG03P)<- "Campus 2007 Student: 03 Percent"
+> label(CSTUD$CPETG04P)<- "Campus 2007 Student: 04 Percent"
+> label(CSTUD$CPETG05P)<- "Campus 2007 Student: 05 Percent"
+> label(CSTUD$CPETG06P)<- "Campus 2007 Student: 06 Percent"
+> label(CSTUD$CPETG07P)<- "Campus 2007 Student: 07 Percent"
+> label(CSTUD$CPETG08P)<- "Campus 2007 Student: 08 Percent"
+> label(CSTUD$CPETG09P)<- "Campus 2007 Student: 09 Percent"
+> label(CSTUD$CPETG10P)<- "Campus 2007 Student: 10 Percent"
+> label(CSTUD$CPETG11P)<- "Campus 2007 Student: 11 Percent"
+> label(CSTUD$CPETG12P)<- "Campus 2007 Student: 12 Percent"
+> label(CSTUD$CPEMALLP)<- "Campus 2007 Student: 06 Mobility Percent (Campus Only)"
+> label(CSTUD$BPETWHIP)<- "Group 2007 Student: White Percent"
+> label(CSTUD$BPETBLAP)<- "Group 2007 Student: African American Percent"
+> label(CSTUD$BPETHISP)<- "Group 2007 Student: Hispanic Percent"
+> label(CSTUD$BPETINDP)<- "Group 2007 Student: Native American Percent"
+> label(CSTUD$BPETPACP)<- "Group 2007 Student: Asian/Pacific Islander Percent"
+> label(CSTUD$BPETECOP)<- "Group 2007 Student: ECO Percent"
+> label(CSTUD$BPETLEPP)<- "Group 2007 Student: LEP Percent"
+> label(CSTUD$BPETSPEP)<- "Group 2007 Student: SPE Percent"
+> label(CSTUD$BPETVOCP)<- "Group 2007 Student: VOC Percent"
+> label(CSTUD$BPETBILP)<- "Group 2007 Student: BIL Percent"
+> label(CSTUD$BPETGIFP)<- "Group 2007 Student: GIF/TAL Percent"
+> label(CSTUD$BPETGEEP)<- "Group 2007 Student: EE Percent"
+> label(CSTUD$BPETGPKP)<- "Group 2007 Student: PK Percent"
+> label(CSTUD$BPETGKNP)<- "Group 2007 Student: KG Percent"
+> label(CSTUD$BPETG01P)<- "Group 2007 Student: 01 Percent"
+> label(CSTUD$BPETG02P)<- "Group 2007 Student: 02 Percent"
+> label(CSTUD$BPETG03P)<- "Group 2007 Student: 03 Percent"
+> label(CSTUD$BPETG04P)<- "Group 2007 Student: 04 Percent"
+> label(CSTUD$BPETG05P)<- "Group 2007 Student: 05 Percent"
+> label(CSTUD$BPETG06P)<- "Group 2007 Student: 06 Percent"
+> label(CSTUD$BPETG07P)<- "Group 2007 Student: 07 Percent"
+> label(CSTUD$BPETG08P)<- "Group 2007 Student: 08 Percent"
+> label(CSTUD$BPETG09P)<- "Group 2007 Student: 09 Percent"
+> label(CSTUD$BPETG10P)<- "Group 2007 Student: 10 Percent"
+> label(CSTUD$BPETG11P)<- "Group 2007 Student: 11 Percent"
+> label(CSTUD$BPETG12P)<- "Group 2007 Student: 12 Percent"
+> label(CSTUD$BPEMALLP)<- "Group 2007 Student: 06 Mobility Percent (Campus ONLY)"
+> label(CSTUD$BPERRAKR)<- "Group 2006 Retention: Regular Ed KG Rate"
+> label(CSTUD$BPERRA1R)<- "Group 2006 Retention: Regular Ed 01 Rate"
+> label(CSTUD$BPERRA2R)<- "Group 2006 Retention: Regular Ed 02 Rate"
+> label(CSTUD$BPERRA3R)<- "Group 2006 Retention: Regular Ed 03 Rate"
+> label(CSTUD$BPERRA4R)<- "Group 2006 Retention: Regular Ed 04 Rate"
+> label(CSTUD$BPERRA5R)<- "Group 2006 Retention: Regular Ed 05 Rate"
+> label(CSTUD$BPERRA6R)<- "Group 2006 Retention: Regular Ed 06 Rate"
+> label(CSTUD$BPERRA7R)<- "Group 2006 Retention: Regular Ed 07 Rate"
+> label(CSTUD$BPERRA8R)<- "Group 2006 Retention: Regular Ed 08 Rate"
+> label(CSTUD$BPERSAKR)<- "Group 2006 Retention: Special Ed KG Rate"
+> label(CSTUD$BPERSA1R)<- "Group 2006 Retention: Special Ed 01 Rate"
+> label(CSTUD$BPERSA2R)<- "Group 2006 Retention: Special Ed 02 Rate"
+> label(CSTUD$BPERSA3R)<- "Group 2006 Retention: Special Ed 03 Rate"
+> label(CSTUD$BPERSA4R)<- "Group 2006 Retention: Special Ed 04 Rate"
+> label(CSTUD$BPERSA5R)<- "Group 2006 Retention: Special Ed 05 Rate"
+> label(CSTUD$BPERSA6R)<- "Group 2006 Retention: Special Ed 06 Rate"
+> label(CSTUD$BPERSA7R)<- "Group 2006 Retention: Special Ed 07 Rate"
+> label(CSTUD$BPERSA8R)<- "Group 2006 Retention: Special Ed 08 Rate"
+> label(CSTUD$BPETDISP)<- "Group 2006 DAEP: Percent"
+> CSTUD$BPETALLC [CSTUD$BPETALLC == 0] <- NA
+> CSTUD$BPETALLC [is.na(CSTUD$BPETALLC)] <- 0
+> # Import CFIN
+> CFIN <- read.table("C:/Users/Matt/Desktop/TTU/Courses/EPSY 5385_Stats Packages/DATA FILES/cfin.dat", header=TRUE, sep=",", na.strings="NA", dec=".", strip.white=TRUE)
+> attach(CFIN)
+> # SORT
+> CFIN<- order(+CFIN$campus)
+> CFIN
+> # variable labels
+> library(Hmisc)
+> label(CFIN$CPFEGADST)<- "Campus 2006 Finance: Expenditure by Function-School Leadership, General Fund"
+> label(CFIN$CPFEGADIT)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership, General Fund"
+> label(CFIN$CPFEAADST)<- "Campus 2006 Finance: Expenditure by Function-School Leadership, All Funds"
+> label(CFIN$CPFEAADIT)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership, All Funds"
+> label(CFIN$CPFPGREGT)<- "Campus 2006 Finance: Expenditure by Program-Regular, GeneralFund"
+> label(CFIN$CPFPGVOCT)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology, General Fund"
+> label(CFIN$CPFPGSPET)<- "Campus 2006 Finance: Expenditure by Program-Special Education, General Fund"
+> label(CFIN$CPFPGGIFT)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented, General Fund"
+> label(CFIN$CPFPGBILT)<- "Campus 2006 Finance: Expenditure by Program-Bilingual, General Fund"
+> label(CFIN$CPFPAREGT)<- "Campus 2006 Finance: Expenditure by Program-Regular, All Funds"
+> label(CFIN$CPFPAVOCT)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology, All Funds"
+> label(CFIN$CPFPASPET)<- "Campus 2006 Finance: Expenditure by Program-Special Education, All Funds"
+> label(CFIN$CPFPAGIFT)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented, All Funds"
+> label(CFIN$CPFPABILT)<- "Campus 2006 Finance: Expenditure by Program-Bilingual, All Funds"
+> label(CFIN$CPFEGINST)<- "Campus 2006 Finance: Expenditure by Function-Instruction, General Fund"
+> label(CFIN$CPFEAINST)<- "Campus 2006 Finance: Expenditure by Function-Instruction, All Funds"
+> label(CFIN$CPFEGOPRT)<- "Campus 2006 Finance: Expenditure by Function-Total Operating,General Fund"
+> label(CFIN$CPFEAOPRT)<- "Campus 2006 Finance: Expenditure by Function-Total Operating, All Funds"
+> label(CFIN$CPFPGALLT)<- "Campus 2006 Finance: Expenditure by Program-Total, General Fund"
+> label(CFIN$CPFPAALLT)<- "Campus 2006 Finance: Expenditure by Program-Total, All Funds"
+> label(CFIN$CPFEGINSK)<- "Campus 2006 Finance: Expenditure by Function-Instruction PerPupil, General Fund"
+> label(CFIN$CPFEGADIK)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership Per Pupil, General Fund"
+> label(CFIN$CPFEGADSK)<- "Campus 2006 Finance: Expenditure by Function-School Leadership Per Pupil, General Fund"
+> label(CFIN$CPFEGOPRK)<- "Campus 2006 Finance: Expenditure by Function-Total OperatingPer Pupil, General Fund"
+> label(CFIN$CPFPGREGK)<- "Campus 2006 Finance: Expenditure by Program-Regular Per Pupil, General Fund"
+> label(CFIN$CPFPGVOCK)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology Per Pupil, General Fund"
+> label(CFIN$CPFPGBILK)<- "Campus 2006 Finance: Expenditure by Program-Bilingual Per Pupil, General Fund"
+> label(CFIN$CPFPGGIFK)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented Per Pupil, General Fund"
+> label(CFIN$CPFPGSPEK)<- "Campus 2006 Finance: Expenditure by Program-Special Education Per Pupil, General Fund"
+> label(CFIN$CPFPGALLK)<- "Campus 2006 Finance: Expenditure by Program-Total Per Pupil,General Fund"
+> label(CFIN$CPFEAINSK)<- "Campus 2006 Finance: Expenditure by Function-Instruction PerPupil, All Funds"
+> label(CFIN$CPFEAADIK)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership Per Pupil, All Funds"
+> label(CFIN$CPFEAADSK)<- "Campus 2006 Finance: Expenditure by Function-School Leadership Per Pupil, All Funds"
+> label(CFIN$CPFEAOPRK)<- "Campus 2006 Finance: Expenditure by Function-Total OperatingPer Pupil, ALL Funds"
+> label(CFIN$CPFPAREGK)<- "Campus 2006 Finance: Expenditure by Program-Regular Per Pupil, All Funds"
+> label(CFIN$CPFPAVOCK)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology Per Pupil, All Funds"
+> label(CFIN$CPFPABILK)<- "Campus 2006 Finance: Expenditure by Program-Bilingual Per Pupil, All Funds"
+> label(CFIN$CPFPAGIFK)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented Per Pupil, All Funds"
+> label(CFIN$CPFPASPEK)<- "Campus 2006 Finance: Expenditure by Program-Special Education Per Pupil, All Funds"
+> label(CFIN$CPFPAALLK)<- "Campus 2006 Finance: Expenditure by Program-Total Per Pupil,All Funds"
+> label(CFIN$CPFEGRELT)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services, General Fund"
+> label(CFIN$CPFEARELT)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services, All Funds"
+> label(CFIN$CPFEGSUPT)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student, General Fund"
+> label(CFIN$CPFEASUPT)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student, All Funds"
+> label(CFIN$CPFPGCOMT)<- "Campus 2006 Finance: Expenditure by Program-Compensatory, General Fund"
+> label(CFIN$CPFPACOMT)<- "Campus 2006 Finance: Expenditure by Program-Compensatory, All Funds"
+> label(CFIN$CPFPGOTHT)<- "Campus 2006 Finance: Expenditure by Program-Other, General Fund"
+> label(CFIN$CPFPAOTHT)<- "Campus 2006 Finance: Expenditure by Program-Other, All Funds"
+> label(CFIN$CPFEGOPRP)<- "Campus 2006 Finance: Expenditure by Function-Total OperatingPercent, General Fund"
+> label(CFIN$CPFEGINSP)<- "Campus 2006 Finance: Expenditure by Function-Instruction Percent, General Fund"
+> label(CFIN$CPFEGRELP)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services Percent, General Fund"
+> label(CFIN$CPFEGADIP)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership Percent, General Fund"
+> label(CFIN$CPFEGADSP)<- "Campus 2006 Finance: Expenditure by Function-School Leadership Percent, General Fund"
+> label(CFIN$CPFEGSUPP)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student Percent, General Fund"
+> label(CFIN$CPFEAOPRP)<- "Campus 2006 Finance: Expenditure by Function-Total OperatingPercent, All Funds"
+> label(CFIN$CPFEAINSP)<- "Campus 2006 Finance: Expenditure by Function-Instruction Percent, All Funds"
+> label(CFIN$CPFEARELP)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services Percent, All Funds"
+> label(CFIN$CPFEAADIP)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership Percent, All Funds"
+> label(CFIN$CPFEAADSP)<- "Campus 2006 Finance: Expenditure by Function-School Leadership Percent, All Funds"
+> label(CFIN$CPFEASUPP)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student Percent, All Funds"
+> label(CFIN$CPFPGALLP)<- "Campus 2006 Finance: Expenditure by Program-Total Percent, General Fund"
+> label(CFIN$CPFPGBILP)<- "Campus 2006 Finance: Expenditure by Program-Bilingual Percent, General Fund"
+> label(CFIN$CPFPGVOCP)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology Percent, General Fund"
+> label(CFIN$CPFPGCOMP)<- "Campus 2006 Finance: Expenditure by Program-Compensatory Percent, General Fund"
+> label(CFIN$CPFPGGIFP)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented Percent, General Fund"
+> label(CFIN$CPFPGREGP)<- "Campus 2006 Finance: Expenditure by Program-Regular Percent,General Fund"
+> label(CFIN$CPFPGSPEP)<- "Campus 2006 Finance: Expenditure by Program-Special Education Percent, General Fund"
+> label(CFIN$CPFPGOTHP)<- "Campus 2006 Finance: Expenditure by Program-Other Percent, General Fund"
+> label(CFIN$CPFPAALLP)<- "Campus 2006 Finance: Expenditure by Program-Total Percent, All Funds"
+> label(CFIN$CPFPABILP)<- "Campus 2006 Finance: Expenditure by Program-Bilingual Percent, All Funds"
+> label(CFIN$CPFPAVOCP)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology Percent, All Funds"
+> label(CFIN$CPFPACOMP)<- "Campus 2006 Finance: Expenditure by Program-Compensatory Percent, All Funds"
+> label(CFIN$CPFPAGIFP)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented Percent, All Funds"
+> label(CFIN$CPFPAREGP)<- "Campus 2006 Finance: Expenditure by Program-Regular Percent,All Funds"
+> label(CFIN$CPFPASPEP)<- "Campus 2006 Finance: Expenditure by Program-Special Education Percent, All Funds"
+> label(CFIN$CPFPAOTHP)<- "Campus 2006 Finance: Expenditure by Program-Other Percent, All Funds"
+> label(CFIN$CPFEGRELK)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services Per Pupil, General Fund"
+> label(CFIN$CPFEARELK)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services Per Pupil, All Funds"
+> label(CFIN$CPFEGSUPK)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student Per Pupil, General Fund"
+> label(CFIN$CPFEASUPK)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student Per Pupil, All Funds"
+> label(CFIN$CPFPGCOMK)<- "Campus 2006 Finance: Expenditure by Program-Compensatory PerPupil, General Fund"
+> label(CFIN$CPFPACOMK)<- "Campus 2006 Finance: Expenditure by Program-Compensatory PerPupil, All Funds"
+> label(CFIN$CPFPGOTHK)<- "Campus 2006 Finance: Expenditure by Program-Other Per Pupil,General Fund"
+> label(CFIN$CPFPAOTHK)<- "Campus 2006 Finance: Expenditure by Program-Other Per Pupil,All Funds"
+> label(CFIN$BPFEAOPRT)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Total Operating, All Funds"
+> label(CFIN$BPFEAINST)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instruction, All Funds"
+> label(CFIN$BPFEARELT)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional-Related Services, All Funds"
+> label(CFIN$BPFEAADIT)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional Leadership, All Funds"
+> label(CFIN$BPFEAADST)<- "Campus 2006 Finance: Group Total-Expenditure by Function-School Leadership, All Funds"
+> label(CFIN$BPFEASUPT)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Support Services--Student, All Funds"
+> label(CFIN$BPFPAALLT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Total, All Funds"
+> label(CFIN$BPFPABILT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Bilingual, All Funds"
+> label(CFIN$BPFPAVOCT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Career & Technology, All Funds"
+> label(CFIN$BPFPACOMT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Compensatory, All Funds"
+> label(CFIN$BPFPAGIFT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Gifted & Talented, All Funds"
+> label(CFIN$BPFPAREGT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Regular, All Funds"
+> label(CFIN$BPFPASPET)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Special Education, All Funds"
+> label(CFIN$BPFPAOTHT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Other, All Funds"
+> label(CFIN$BPFPAALLP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Total Percent, All Funds"
+> label(CFIN$BPFPAREGP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Regular Percent, All Funds"
+> label(CFIN$BPFPABILP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Bilingual Percent, All Funds"
+> label(CFIN$BPFPACOMP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Compensatory Percent, All Funds"
+> label(CFIN$BPFPAGIFP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Gifted & Talented Percent, All Funds"
+> label(CFIN$BPFPAVOCP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Career & Technology Percent, All Funds"
+> label(CFIN$BPFPASPEP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Special Education Percent, All Funds"
+> label(CFIN$BPFPAOTHP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Other Percent, All Funds"
+> label(CFIN$BPFEAOPRP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Total Operating Percent, All Funds"
+> label(CFIN$BPFEAINSP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instruction Percent, All Funds"
+> label(CFIN$BPFEARELP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional-Related Services Percent, All Funds"
+> label(CFIN$BPFEAADIP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional Leadership Percent, All Funds"
+> label(CFIN$BPFEAADSP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-School Leadership Percent, All Funds"
+> label(CFIN$BPFEASUPP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Support Services--Student Percent, All Funds"
+> label(CFIN$BPFEAOPRK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Total Operating Per Pupil, All Funds"
+> label(CFIN$BPFEAINSK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instruction Per Pupil, All Funds"
+> label(CFIN$BPFEARELK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional-Related Services Per Pupil, All Funds"
+> label(CFIN$BPFEAADIK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional Leadership Per Pupil, All Funds"
+> label(CFIN$BPFEAADSK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-School Leadership Per Pupil, All Funds"
+> label(CFIN$BPFEASUPK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Support Services--Student Per Pupil, All Funds"
+> label(CFIN$BPFPAALLK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Total Per Pupil, All Funds"
+> label(CFIN$BPFPABILK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Bilingual Per Pupil, All Funds"
+> label(CFIN$BPFPAVOCK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Career & Technology Per Pupil, All Funds"
+> label(CFIN$BPFPACOMK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Compensatory Per Pupil, All Funds"
+> label(CFIN$BPFPAGIFK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Gifted & Talented Per Pupil, All Funds"
+> label(CFIN$BPFPAREGK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Regular Per Pupil, All Funds"
+> label(CFIN$BPFPASPEK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Special Education Per Pupil, All Funds"
+> label(CFIN$BPFPAOTHK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Other Per Pupil, All Funds"
+> # merge two datasets by CAMPUS
+> total <- merge(CREF,CSTUD, by="CAMPUS", all=T)
+> attach(total)
+> total2 <- merge(total,CFIN, by="CAMPUS", all=T)
+> attach(total2)
+> # Sort
+> total2 <- order(+total2$campus)
+> total2
+> #Recodes
+> total2$campus.rating <- recode(total2$C_RATING, '"A" = 1; "E" = 2; "R" = 3; "X" = 4; "L" = 5; ', as.factor.result=TRUE)
+> total2$campus.rating <- factor(total2$campus.rating,levels=c("1","2","3","4","5"),labels=c("Acceptable","Exemplary","Recognized","Unacceptable","Unknown"))
+> total2$grade.type <- recode(total2$GRDTYPE, '"B" = 1; "E" = 2; "M" = 3; "S" = 4; ', as.factor.result=TRUE)
+> total2$grade.type <- factor(total2$grade.type,levels=c("1","2","3","4"),labels=c("Both","Elementary","Middle","Senior"))
+> total2$CPERRA1R <- as.numeric(total2$CPERRA1R)
+> total2$log.cperra1r <- with(total2, log10(CPERRA1R))
+> # auto-recode -- county.name
+> #Summary statistics
+> summary(total2)
+> # Histogram
+> Hist(total2$BA0GH06N, scale="frequency", breaks="Sturges", col="darkgray")
+> #Scatterplot
+> scatterplot(BA0GR06N~BA0GM06N, reg.line=FALSE, smooth=FALSE, labels=FALSE, boxplots='xy', span=0.5, data=total2)
+> #Scatterplot matrices
+> scatterplot.matrix(~BA0GH06N+BA0GR06N+BH0GR06N+BP0GR06N+BPETDISC, reg.line=FALSE, smooth=FALSE, span=0.5, diagonal = 'density', data=total2)
+> # Split File -- CAN'T IN R
+> # 1-way ANOVA
+> total2$CPETECOP <- as.numeric(total2$CPETECOP)
+> .Anova<- lm(CPETECOP ~ campus.rating, data=total2)
+> anova(.Anova)
+> tapply(total2$CPETECOP, total2$campus.rating, mean, na.rm=TRUE) # means
+> tapply(total2$CPETECOP, total2$campus.rating, sd, na.rm=TRUE) # std. deviations
+> tapply(total2$CPETECOP, total2$campus.rating, function(x) sum(!is.na(x))) # counts
+> remove(.Anova)
+> # Repeated measures ANOVA?
+> GLM.1 <- glm(BPFEAOPRT  ~ CPFEAOPRT, family=binomial(logit), data=total2)
+> summary(GLM.1)
+> # Factorial ANOVA
+> # Correlation
+> library(RODBC)
+> total2$CPFPGSPET <- as.numeric(total2$CPFPGSPET)
+> total2$CPFPGGIFT <- as.numeric(total2$CPFPGGIFT)
+> cor.test(total2$CPFPGSPET , total2$CPFPGGIFT, use="pairwise.complete.obs", alternative="two.sided", method="pearson")
+> # Bivariate Regression
+> total2$CPFPGGIFK <- as.numeric(total2$CPFPGGIFK)
+> total2$CPFPGSPEK <- as.numeric(total2$CPFPGSPEK)
+> RegModel.1 <- lm(CPFPGGIFK~CPFPGSPEK, data=total2)
+> summary(RegModel.1)
+> anova(RegModel.1)
+> plot(RegModel.1)
+> termplot(RegModel.1)
+> bptest(CPFPGGIFK~CPFPGSPEK, varformula = ~ fitted.values(RegModel.1), studentize=FALSE, data=total2)
+> dwtest(CPFPGGIFK~CPFPGSPEK, alternative="greater", data=total2)
+> resettest(CPFPGGIFK~CPFPGSPEK, power=2:3, type="regressor", data=total2)
+> outlier.test(RegModel.1)
+> #Graphs
+> oldpar <- par(oma=c(0,0,3,0), mfrow=c(2,2))
+> plot(RegModel.1)
+> par(oldpar)
+> qq.plot(RegModel.1, simulate=TRUE, labels=FALSE)
+> cr.plots(RegModel.1, ask=FALSE)
+> av.plots(RegModel.1, ask=FALSE, identify.points=TRUE)
+> influencePlot(RegModel.1)
+> trellis.device(theme="col.whitebg")
+> plot(all.effects(RegModel.1), ask=FALSE)
+> # Multiple Regression
+> total2$CPFPGREGT <- as.numeric(total2$CPFPGREGT)
+> total2$CPFPAVOCT <- as.numeric(total2$CPFPAVOCT)
+> total2$CPFPASPET <- as.numeric(total2$CPFPASPET)
+> total2$CPFPABILT <- as.numeric(total2$CPFPABILT)
+> RegModel.2 <- lm(CPFPGREGT~CPFPAVOCT+CPFPASPET+CPFPABILT, data=total2)
+> summary(RegModel.2)
+> anova(RegModel.2)
+> plot(RegModel.2)
+> termplot(RegModel.2)
+> vif(RegModel.1)
+> bptest(CPFPGREGT~CPFPAVOCT+CPFPASPET+CPFPABILT, varformula = ~ fitted.values(RegModel.1), studentize=FALSE, data=total2)
+> dwtest(CPFPGREGT~CPFPAVOCT+CPFPASPET+CPFPABILT, alternative="greater", data=total2)
+> resettest(CPFPGREGT~CPFPAVOCT+CPFPASPET+CPFPABILT, power=2:3, type="regressor", data=total2)
+> outlier.test(RegModel.1)
+> #Graphs
+> oldpar <- par(oma=c(0,0,3,0), mfrow=c(2,2))
+> plot(RegModel.2)
+> par(oldpar)
+> qq.plot(RegModel.2, simulate=TRUE, labels=FALSE)
+> cr.plots(RegModel.2, ask=FALSE)
+> av.plots(RegModel.2, ask=FALSE, identify.points=TRUE)
+> influencePlot(RegModel.2)
+> trellis.device(theme="col.whitebg")
+> plot(all.effects(RegModel.2), ask=FALSE)
+> # Chi-square
+> chisq.test(total2$campus.rating, total2$grade.type))
+> # Aggregate
+> attach(total2)
+> cref_cfin_cstud_agg <-aggregate(total2, by=list(REGION),
+>   FUN=mean, na.rm=TRUE)
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+From xieyihui at gmail.com  Fri Nov 14 05:29:32 2008
+From: xieyihui at gmail.com (Yihui Xie)
+Date: Fri, 14 Nov 2008 12:29:32 +0800
+Subject: [R-sig-teaching] R Equivalent of SPSS "Split File" and
+	"AutoRecode"
+In-Reply-To: <20081113233155.GG21149@laplace.reed.edu>
+References: <D1B8B0AC6612B944BEEF511B4C8BB14B1B452DC9A2@CETO.ttu.edu>
+	<20081113233155.GG21149@laplace.reed.edu>
+Message-ID: <89b6b8c90811132029l24fed6d1k5a7729195106e4db@mail.gmail.com>
+
+The code is so long... Why not store the labels in another file and
+read them into a vector, then assign labels to columns in a loop?
+
+To split file means you have to do the same procedure on each subset
+of the data - this is easy in R: what you need are the splitting
+variable and corresponding conditions, then apply your functions to
+the subset of data in a loop (or use sapply(), ...)
+
+For autorecode, it is nothing but factor() in R!
+
+Regards,
+Yihui
+--
+Yihui Xie <xieyihui at gmail.com>
+Phone: +86-(0)10-82509086 Fax: +86-(0)10-82509086
+Mobile: +86-15810805877
+Homepage: http://www.yihui.name
+School of Statistics, Room 1037, Mingde Main Building,
+Renmin University of China, Beijing, 100872, China
+
+
+
+On Fri, Nov 14, 2008 at 7:31 AM, Albyn Jones <jones at reed.edu> wrote:
+>  I have no clue what "autorecode" means.  Selecting a subset of a file is
+> easy.  Suppose your data frame is named X, assuming REGION is numeric:
+>
+>    attach(X)
+>    X17 = X[REGION == 17,]
+>
+> albyn
+>
+> On Thu, Nov 13, 2008 at 05:18:24PM -0600, Richardson, Paul wrote:
+>>
+>> Greetings Fellow Teachers of R,
+>>
+>>
+>>  *
+>> I am working on a tutorial for a class to be taught at my college.
+>>  *
+>> First, I am going to provide a PowerPoint seminar for the faculty, and then I will create a series of Camtasia screen recordings with narration.
+>>  *
+>> The course is aimed at teaching those familiar with introductory level stats how to perform similar actions in R, that would normally be performed in SPSS.
+>>  *
+>> Is there an autorecode capability in R which is analogous to autorecode in SPSS?  I'm having trouble with item with item f below (second half) "autorecode".
+>>  *
+>> I am also having trouble with item "i" below, because I don't know how to split a data file, like you normally do in SPSS.
+>>  *
+>> Is there some equivalent way to do this in R?
+>>
+>> thanks much,
+>> Paul Richardson
+>> cell 806-543-0087
+>>
+>>
+>> a.       Go to AEIS data site:  http://www.tea.state.tx.us/perfreport/aeis/2007/DownloadData.html
+>> b.      Select Campus, Reference File, and Layout, and download; then do the same for the Reference data file.  Download Campus Financial Statistics, both layout and download.  Download Student Statistics, both layout and download.
+>> c.       Import the data files into R.
+>> d.      Using the layout file, create variable labels; create value labels (if possible).  Assign 0 as a missing value for variable BPETALLC.
+>> e.       Merge the Reference, Financial, and Student files
+>> f.       Recode variable C_RATING into a new, numeric variable named campus.rating in R.  Recode GRDTYPE in a new, numeric variable called grade.type in R.  Use autorecode (if there is something similar in R) to recode CNTYNAME into county.name.  Create a new variable called log.cperra1r, which is the logarithm of CPERRA1R.
+>> g.      Do summary statistics (minimum, maximum, range, mean, median, variance, standard deviation, skewness, kurtosis).
+>> h.      Run histograms, boxplots, scatterplots, scatterplot matrices
+>> i.        Select only cases from Region 17 (using REGION variable) and do the analyses for j-r below; using the equivalent of split file (if possible) to do same analysis for each region separately (using REGION variable).
+>> j.        Conduct 1-way ANOVA using campus.rating as IV and CPETECOP as DV
+>> k.      Conduct repeated measures ANOVA using BPFEAOPRT and CPFEAOPRT (although these are measuring different things, I am having you use them for purely instructional purposes)
+>> l.        Conduct factorial ANOVA using campus.rating and grade.type as IV's and CPETECOP as DV
+>> m.    Conduct correlation using CPFPGSPET and CPFPGGIFT.
+>> n.      Conduct bivariate regression using CPFPGGIFK and CPFPGSPEK
+>> o.      Conduct multiple regression using CPFPGREGT as criterion/outcome variable and CPFPAVOCT, CPFPASPET, and CPFPABILT as predictor variables
+>> p.      Conduct the following regression diagnostics
+>>                                 i.            Numerical diagnostics
+>> 1.      Variance inflation factors
+>> 2.      Breusch-Pagan test for heteroscedasticity
+>> 3.      Durbin-Watson test for autocorrelation
+>> 4.      RESET test for nonlinearity
+>> 5.      Bonferonni outlier test
+>>                               ii.            Graphs
+>> 1.      Basic diagnostic plots
+>> 2.      Residual quantile comparison plot
+>> 3.      Component+residuals plot
+>> 4.      Added variables plot
+>> 5.      Influence plot
+>> 6.      Effects plot
+>> q.      Conduct chi-square using campus.rating and grade.type.
+>> r.        Aggregate all the variables in the file by region (using REGION) and save to a new file called cref_cfin_cstud_agg.rdat
+>>
+>>
+>>
+>>
+>> Below is the actual syntax for the above tasks:
+>> ======================// beginning of R syntax //=======================
+>> # Import CREF
+>> CREF <- sqlQuery(channel = 1, select * from [cref_tabdelimited$])
+>> attach(CREF)
+>> # SORT
+>> CREF<- order(+CREF$campus)
+>> CREF
+>> # variable labels
+>> library(Hmisc)
+>> label(CREF$DISTNAME)<- "District Name"
+>> label(CREF$CAMPNAME)<- "Campus Name"
+>> label(CREF$CACKDTL)<- "Campus 2007 Ratings: GPA Acknowledgment Detail"
+>> label(CREF$CAMPUS)<- "CURRENT 9-DIGIT CDC NUMBER"
+>> label(CREF$DISTRICT)<- "6 Digit County District Number"
+>> label(CREF$COUNTY)<- "3 Digit County Number"
+>> label(CREF$REGION)<- "2 Digit ESC Region"
+>> label(CREF$CNTYNAME)<- "County Name"
+>> label(CREF$GRDTYPE)<- "Campus Type (B,E,M,S) Total Enrollment"
+>> label(CREF$GRDSPAN)<- "Grade Span (Total Enrollment)"
+>> label(CREF$CFLCHART)<- "CAMPUS 2007 Flag-Chater School (Y/N)"
+>> label(CREF$PAIRCAMP)<- "CAMPUS 2007 Flag-Campus/District No. of TAKS Giver"
+>> label(CREF$PAIRNAME)<- "CAMPUS 2007 Flag-Campus/District Name of TAKS Giver"
+>> label(CREF$C_RATING)<- "Campus 2007 Ratings: Final Accountability Rating"
+>> #Import CSTUD
+>> CSTUD <- read.table("C:/Users/Matt/Desktop/TTU/Courses/EPSY 5385_Stats Packages/DATA FILES/cstud.dat", header=TRUE, sep=",", na.strings="NA", dec=".", strip.white=TRUE)
+>> attach(CSTUD)
+>> # SORT
+>> CSTUD<- order(+CSTUD$campus)
+>> CSTUD
+>> # variable labels
+>> library(Hmisc)
+>> label(CSTUD$CA0GR06N)<- "Campus 2006 Graduates: All Students Count"
+>> label(CSTUD$CA0GH06N)<- "Campus 2006 Graduates: Recom HS Pgm All Students Count"
+>> label(CSTUD$CA0GM06N)<- "Campus 2006 Graduates: Min HS Pgm All Students Count"
+>> label(CSTUD$CB0GR06N)<- "Campus 2006 Graduates: African American Count"
+>> label(CSTUD$CH0GR06N)<- "Campus 2006 Graduates: Hispanic Count"
+>> label(CSTUD$CW0GR06N)<- "Campus 2006 Graduates: White Count"
+>> label(CSTUD$CI0GR06N)<- "Campus 2006 Graduates: Native American Count"
+>> label(CSTUD$CP0GR06N)<- "Campus 2006 Graduates: Asian/Pacific Islander Count"
+>> label(CSTUD$CS0GR06N)<- "Campus 2006 Graduates: Special Ed Count"
+>> label(CSTUD$BPETALLC)<- "Group 2007 Student: All Students Count"
+>> label(CSTUD$BA0GR06N)<- "Group 2006 Graduates: All Students Count"
+>> label(CSTUD$BB0GR06N)<- "Group 2006 Graduates: African American Count"
+>> label(CSTUD$BH0GR06N)<- "Group 2006 Graduates: Hispanic Count"
+>> label(CSTUD$BW0GR06N)<- "Group 2006 Graduates: White Count"
+>> label(CSTUD$BI0GR06N)<- "Group 2006 Graduates: Native American Count"
+>> label(CSTUD$BP0GR06N)<- "Group 2006 Graduates: Asian/Pacific Islander Count"
+>> label(CSTUD$BS0GR06N)<- "Group 2006 Graduates: Special Ed Count"
+>> label(CSTUD$BA0GH06N)<- "Group 2006 Graduates: Recom HS Pgm All Students Count"
+>> label(CSTUD$BA0GM06N)<- "Group 2006 Graduates: Min HS Pgm All Students Count"
+>> label(CSTUD$BPETDISC)<- "Group 2006 DAEP: Count"
+>> label(CSTUD$CPERRAKR)<- "Campus 2006 Retention: Regular Ed KG Rate"
+>> label(CSTUD$CPERRA1R)<- "Campus 2006 Retention: Regular Ed 01 Rate"
+>> label(CSTUD$CPERRA2R)<- "Campus 2006 Retention: Regular Ed 02 Rate"
+>> label(CSTUD$CPERRA3R)<- "Campus 2006 Retention: Regular Ed 03 Rate"
+>> label(CSTUD$CPERRA4R)<- "Campus 2006 Retention: Regular Ed 04 Rate"
+>> label(CSTUD$CPERRA5R)<- "Campus 2006 Retention: Regular Ed 05 Rate"
+>> label(CSTUD$CPERRA6R)<- "Campus 2006 Retention: Regular Ed 06 Rate"
+>> label(CSTUD$CPERRA7R)<- "Campus 2006 Retention: Regular Ed 07 Rate"
+>> label(CSTUD$CPERRA8R)<- "Campus 2006 Retention: Regular Ed 08 Rate"
+>> label(CSTUD$CPERSAKR)<- "Campus 2006 Retention: Special Ed KG Rate"
+>> label(CSTUD$CPERSA1R)<- "Campus 2006 Retention: Special Ed 01 Rate"
+>> label(CSTUD$CPERSA2R)<- "Campus 2006 Retention: Special Ed 02 Rate"
+>> label(CSTUD$CPERSA3R)<- "Campus 2006 Retention: Special Ed 03 Rate"
+>> label(CSTUD$CPERSA4R)<- "Campus 2006 Retention: Special Ed 04 Rate"
+>> label(CSTUD$CPERSA5R)<- "Campus 2006 Retention: Special Ed 05 Rate"
+>> label(CSTUD$CPERSA6R)<- "Campus 2006 Retention: Special Ed 06 Rate"
+>> label(CSTUD$CPERSA7R)<- "Campus 2006 Retention: Special Ed 07 Rate"
+>> label(CSTUD$CPERSA8R)<- "Campus 2006 Retention: Special Ed 08 Rate"
+>> label(CSTUD$CPETDISC)<- "Campus 2006 DAEP: Count"
+>> label(CSTUD$CPETDISP)<- "Campus 2006 DAEP: Percent"
+>> label(CSTUD$CPETLEPP)<- "Campus 2007 Student: LEP Percent"
+>> label(CSTUD$CPETECOP)<- "Campus 2007 Student: ECO Percent"
+>> label(CSTUD$CPETECOC)<- "Campus 2007 Student: ECO Count"
+>> label(CSTUD$CPETLEPC)<- "Campus 2007 Student: LEP Count"
+>> label(CSTUD$CPETSPEC)<- "Campus 2007 Student: SPE Count"
+>> label(CSTUD$CPETGIFC)<- "Campus 2007 Student: GIF/TAL Count"
+>> label(CSTUD$CPETBILC)<- "Campus 2007 Student: BIL Count"
+>> label(CSTUD$CPETALLC)<- "Campus 2007 Student: All Students Count"
+>> label(CSTUD$CPETVOCC)<- "Campus 2007 Student: VOC Count"
+>> label(CSTUD$CPETINDC)<- "Campus 2007 Student: Native American Count"
+>> label(CSTUD$CPETPACC)<- "Campus 2007 Student: Asian/Pacific Islander Count"
+>> label(CSTUD$CPETBLAC)<- "Campus 2007 Student: African American Count"
+>> label(CSTUD$CPETHISC)<- "Campus 2007 Student: Hispanic Count"
+>> label(CSTUD$CPETWHIC)<- "Campus 2007 Student: White Count"
+>> label(CSTUD$CPETGEEC)<- "Campus 2007 Student: EE Count"
+>> label(CSTUD$CPETGPKC)<- "Campus 2007 Student: PK Count"
+>> label(CSTUD$CPETGKNC)<- "Campus 2007 Student: KG Count"
+>> label(CSTUD$CPETG01C)<- "Campus 2007 Student: 01 Count"
+>> label(CSTUD$CPETG02C)<- "Campus 2007 Student: 02 Count"
+>> label(CSTUD$CPETG03C)<- "Campus 2007 Student: 03 Count"
+>> label(CSTUD$CPETG04C)<- "Campus 2007 Student: 04 Count"
+>> label(CSTUD$CPETG05C)<- "Campus 2007 Student: 05 Count"
+>> label(CSTUD$CPETG06C)<- "Campus 2007 Student: 06 Count"
+>> label(CSTUD$CPETG07C)<- "Campus 2007 Student: 07 Count"
+>> label(CSTUD$CPETG08C)<- "Campus 2007 Student: 08 Count"
+>> label(CSTUD$CPETG09C)<- "Campus 2007 Student: 09 Count"
+>> label(CSTUD$CPETG10C)<- "Campus 2007 Student: 10 Count"
+>> label(CSTUD$CPETG11C)<- "Campus 2007 Student: 11 Count"
+>> label(CSTUD$CPETG12C)<- "Campus 2007 Student: 12 Count"
+>> label(CSTUD$CPEMALLC)<- "Campus 2007 Student: 06 Mobility Numerator (Campus Only)"
+>> label(CSTUD$CPETWHIP)<- "Campus 2007 Student: White Percent"
+>> label(CSTUD$CPETBLAP)<- "Campus 2007 Student: African American Percent"
+>> label(CSTUD$CPETHISP)<- "Campus 2007 Student: Hispanic Percent"
+>> label(CSTUD$CPETINDP)<- "Campus 2007 Student: Native American Percent"
+>> label(CSTUD$CPETPACP)<- "Campus 2007 Student: Asian/Pacific Islander Percent"
+>> label(CSTUD$CPETSPEP)<- "Campus 2007 Student: SPE Percent"
+>> label(CSTUD$CPETVOCP)<- "Campus 2007 Student: VOC Percent"
+>> label(CSTUD$CPETBILP)<- "Campus 2007 Student: BIL Percent"
+>> label(CSTUD$CPETGIFP)<- "Campus 2007 Student: GIF/TAL Percent"
+>> label(CSTUD$CPETGEEP)<- "Campus 2007 Student: EE Percent"
+>> label(CSTUD$CPETGPKP)<- "Campus 2007 Student: PK Percent"
+>> label(CSTUD$CPETGKNP)<- "Campus 2007 Student: KG Percent"
+>> label(CSTUD$CPETG01P)<- "Campus 2007 Student: 01 Percent"
+>> label(CSTUD$CPETG02P)<- "Campus 2007 Student: 02 Percent"
+>> label(CSTUD$CPETG03P)<- "Campus 2007 Student: 03 Percent"
+>> label(CSTUD$CPETG04P)<- "Campus 2007 Student: 04 Percent"
+>> label(CSTUD$CPETG05P)<- "Campus 2007 Student: 05 Percent"
+>> label(CSTUD$CPETG06P)<- "Campus 2007 Student: 06 Percent"
+>> label(CSTUD$CPETG07P)<- "Campus 2007 Student: 07 Percent"
+>> label(CSTUD$CPETG08P)<- "Campus 2007 Student: 08 Percent"
+>> label(CSTUD$CPETG09P)<- "Campus 2007 Student: 09 Percent"
+>> label(CSTUD$CPETG10P)<- "Campus 2007 Student: 10 Percent"
+>> label(CSTUD$CPETG11P)<- "Campus 2007 Student: 11 Percent"
+>> label(CSTUD$CPETG12P)<- "Campus 2007 Student: 12 Percent"
+>> label(CSTUD$CPEMALLP)<- "Campus 2007 Student: 06 Mobility Percent (Campus Only)"
+>> label(CSTUD$BPETWHIP)<- "Group 2007 Student: White Percent"
+>> label(CSTUD$BPETBLAP)<- "Group 2007 Student: African American Percent"
+>> label(CSTUD$BPETHISP)<- "Group 2007 Student: Hispanic Percent"
+>> label(CSTUD$BPETINDP)<- "Group 2007 Student: Native American Percent"
+>> label(CSTUD$BPETPACP)<- "Group 2007 Student: Asian/Pacific Islander Percent"
+>> label(CSTUD$BPETECOP)<- "Group 2007 Student: ECO Percent"
+>> label(CSTUD$BPETLEPP)<- "Group 2007 Student: LEP Percent"
+>> label(CSTUD$BPETSPEP)<- "Group 2007 Student: SPE Percent"
+>> label(CSTUD$BPETVOCP)<- "Group 2007 Student: VOC Percent"
+>> label(CSTUD$BPETBILP)<- "Group 2007 Student: BIL Percent"
+>> label(CSTUD$BPETGIFP)<- "Group 2007 Student: GIF/TAL Percent"
+>> label(CSTUD$BPETGEEP)<- "Group 2007 Student: EE Percent"
+>> label(CSTUD$BPETGPKP)<- "Group 2007 Student: PK Percent"
+>> label(CSTUD$BPETGKNP)<- "Group 2007 Student: KG Percent"
+>> label(CSTUD$BPETG01P)<- "Group 2007 Student: 01 Percent"
+>> label(CSTUD$BPETG02P)<- "Group 2007 Student: 02 Percent"
+>> label(CSTUD$BPETG03P)<- "Group 2007 Student: 03 Percent"
+>> label(CSTUD$BPETG04P)<- "Group 2007 Student: 04 Percent"
+>> label(CSTUD$BPETG05P)<- "Group 2007 Student: 05 Percent"
+>> label(CSTUD$BPETG06P)<- "Group 2007 Student: 06 Percent"
+>> label(CSTUD$BPETG07P)<- "Group 2007 Student: 07 Percent"
+>> label(CSTUD$BPETG08P)<- "Group 2007 Student: 08 Percent"
+>> label(CSTUD$BPETG09P)<- "Group 2007 Student: 09 Percent"
+>> label(CSTUD$BPETG10P)<- "Group 2007 Student: 10 Percent"
+>> label(CSTUD$BPETG11P)<- "Group 2007 Student: 11 Percent"
+>> label(CSTUD$BPETG12P)<- "Group 2007 Student: 12 Percent"
+>> label(CSTUD$BPEMALLP)<- "Group 2007 Student: 06 Mobility Percent (Campus ONLY)"
+>> label(CSTUD$BPERRAKR)<- "Group 2006 Retention: Regular Ed KG Rate"
+>> label(CSTUD$BPERRA1R)<- "Group 2006 Retention: Regular Ed 01 Rate"
+>> label(CSTUD$BPERRA2R)<- "Group 2006 Retention: Regular Ed 02 Rate"
+>> label(CSTUD$BPERRA3R)<- "Group 2006 Retention: Regular Ed 03 Rate"
+>> label(CSTUD$BPERRA4R)<- "Group 2006 Retention: Regular Ed 04 Rate"
+>> label(CSTUD$BPERRA5R)<- "Group 2006 Retention: Regular Ed 05 Rate"
+>> label(CSTUD$BPERRA6R)<- "Group 2006 Retention: Regular Ed 06 Rate"
+>> label(CSTUD$BPERRA7R)<- "Group 2006 Retention: Regular Ed 07 Rate"
+>> label(CSTUD$BPERRA8R)<- "Group 2006 Retention: Regular Ed 08 Rate"
+>> label(CSTUD$BPERSAKR)<- "Group 2006 Retention: Special Ed KG Rate"
+>> label(CSTUD$BPERSA1R)<- "Group 2006 Retention: Special Ed 01 Rate"
+>> label(CSTUD$BPERSA2R)<- "Group 2006 Retention: Special Ed 02 Rate"
+>> label(CSTUD$BPERSA3R)<- "Group 2006 Retention: Special Ed 03 Rate"
+>> label(CSTUD$BPERSA4R)<- "Group 2006 Retention: Special Ed 04 Rate"
+>> label(CSTUD$BPERSA5R)<- "Group 2006 Retention: Special Ed 05 Rate"
+>> label(CSTUD$BPERSA6R)<- "Group 2006 Retention: Special Ed 06 Rate"
+>> label(CSTUD$BPERSA7R)<- "Group 2006 Retention: Special Ed 07 Rate"
+>> label(CSTUD$BPERSA8R)<- "Group 2006 Retention: Special Ed 08 Rate"
+>> label(CSTUD$BPETDISP)<- "Group 2006 DAEP: Percent"
+>> CSTUD$BPETALLC [CSTUD$BPETALLC == 0] <- NA
+>> CSTUD$BPETALLC [is.na(CSTUD$BPETALLC)] <- 0
+>> # Import CFIN
+>> CFIN <- read.table("C:/Users/Matt/Desktop/TTU/Courses/EPSY 5385_Stats Packages/DATA FILES/cfin.dat", header=TRUE, sep=",", na.strings="NA", dec=".", strip.white=TRUE)
+>> attach(CFIN)
+>> # SORT
+>> CFIN<- order(+CFIN$campus)
+>> CFIN
+>> # variable labels
+>> library(Hmisc)
+>> label(CFIN$CPFEGADST)<- "Campus 2006 Finance: Expenditure by Function-School Leadership, General Fund"
+>> label(CFIN$CPFEGADIT)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership, General Fund"
+>> label(CFIN$CPFEAADST)<- "Campus 2006 Finance: Expenditure by Function-School Leadership, All Funds"
+>> label(CFIN$CPFEAADIT)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership, All Funds"
+>> label(CFIN$CPFPGREGT)<- "Campus 2006 Finance: Expenditure by Program-Regular, GeneralFund"
+>> label(CFIN$CPFPGVOCT)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology, General Fund"
+>> label(CFIN$CPFPGSPET)<- "Campus 2006 Finance: Expenditure by Program-Special Education, General Fund"
+>> label(CFIN$CPFPGGIFT)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented, General Fund"
+>> label(CFIN$CPFPGBILT)<- "Campus 2006 Finance: Expenditure by Program-Bilingual, General Fund"
+>> label(CFIN$CPFPAREGT)<- "Campus 2006 Finance: Expenditure by Program-Regular, All Funds"
+>> label(CFIN$CPFPAVOCT)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology, All Funds"
+>> label(CFIN$CPFPASPET)<- "Campus 2006 Finance: Expenditure by Program-Special Education, All Funds"
+>> label(CFIN$CPFPAGIFT)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented, All Funds"
+>> label(CFIN$CPFPABILT)<- "Campus 2006 Finance: Expenditure by Program-Bilingual, All Funds"
+>> label(CFIN$CPFEGINST)<- "Campus 2006 Finance: Expenditure by Function-Instruction, General Fund"
+>> label(CFIN$CPFEAINST)<- "Campus 2006 Finance: Expenditure by Function-Instruction, All Funds"
+>> label(CFIN$CPFEGOPRT)<- "Campus 2006 Finance: Expenditure by Function-Total Operating,General Fund"
+>> label(CFIN$CPFEAOPRT)<- "Campus 2006 Finance: Expenditure by Function-Total Operating, All Funds"
+>> label(CFIN$CPFPGALLT)<- "Campus 2006 Finance: Expenditure by Program-Total, General Fund"
+>> label(CFIN$CPFPAALLT)<- "Campus 2006 Finance: Expenditure by Program-Total, All Funds"
+>> label(CFIN$CPFEGINSK)<- "Campus 2006 Finance: Expenditure by Function-Instruction PerPupil, General Fund"
+>> label(CFIN$CPFEGADIK)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership Per Pupil, General Fund"
+>> label(CFIN$CPFEGADSK)<- "Campus 2006 Finance: Expenditure by Function-School Leadership Per Pupil, General Fund"
+>> label(CFIN$CPFEGOPRK)<- "Campus 2006 Finance: Expenditure by Function-Total OperatingPer Pupil, General Fund"
+>> label(CFIN$CPFPGREGK)<- "Campus 2006 Finance: Expenditure by Program-Regular Per Pupil, General Fund"
+>> label(CFIN$CPFPGVOCK)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology Per Pupil, General Fund"
+>> label(CFIN$CPFPGBILK)<- "Campus 2006 Finance: Expenditure by Program-Bilingual Per Pupil, General Fund"
+>> label(CFIN$CPFPGGIFK)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented Per Pupil, General Fund"
+>> label(CFIN$CPFPGSPEK)<- "Campus 2006 Finance: Expenditure by Program-Special Education Per Pupil, General Fund"
+>> label(CFIN$CPFPGALLK)<- "Campus 2006 Finance: Expenditure by Program-Total Per Pupil,General Fund"
+>> label(CFIN$CPFEAINSK)<- "Campus 2006 Finance: Expenditure by Function-Instruction PerPupil, All Funds"
+>> label(CFIN$CPFEAADIK)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership Per Pupil, All Funds"
+>> label(CFIN$CPFEAADSK)<- "Campus 2006 Finance: Expenditure by Function-School Leadership Per Pupil, All Funds"
+>> label(CFIN$CPFEAOPRK)<- "Campus 2006 Finance: Expenditure by Function-Total OperatingPer Pupil, ALL Funds"
+>> label(CFIN$CPFPAREGK)<- "Campus 2006 Finance: Expenditure by Program-Regular Per Pupil, All Funds"
+>> label(CFIN$CPFPAVOCK)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology Per Pupil, All Funds"
+>> label(CFIN$CPFPABILK)<- "Campus 2006 Finance: Expenditure by Program-Bilingual Per Pupil, All Funds"
+>> label(CFIN$CPFPAGIFK)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented Per Pupil, All Funds"
+>> label(CFIN$CPFPASPEK)<- "Campus 2006 Finance: Expenditure by Program-Special Education Per Pupil, All Funds"
+>> label(CFIN$CPFPAALLK)<- "Campus 2006 Finance: Expenditure by Program-Total Per Pupil,All Funds"
+>> label(CFIN$CPFEGRELT)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services, General Fund"
+>> label(CFIN$CPFEARELT)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services, All Funds"
+>> label(CFIN$CPFEGSUPT)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student, General Fund"
+>> label(CFIN$CPFEASUPT)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student, All Funds"
+>> label(CFIN$CPFPGCOMT)<- "Campus 2006 Finance: Expenditure by Program-Compensatory, General Fund"
+>> label(CFIN$CPFPACOMT)<- "Campus 2006 Finance: Expenditure by Program-Compensatory, All Funds"
+>> label(CFIN$CPFPGOTHT)<- "Campus 2006 Finance: Expenditure by Program-Other, General Fund"
+>> label(CFIN$CPFPAOTHT)<- "Campus 2006 Finance: Expenditure by Program-Other, All Funds"
+>> label(CFIN$CPFEGOPRP)<- "Campus 2006 Finance: Expenditure by Function-Total OperatingPercent, General Fund"
+>> label(CFIN$CPFEGINSP)<- "Campus 2006 Finance: Expenditure by Function-Instruction Percent, General Fund"
+>> label(CFIN$CPFEGRELP)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services Percent, General Fund"
+>> label(CFIN$CPFEGADIP)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership Percent, General Fund"
+>> label(CFIN$CPFEGADSP)<- "Campus 2006 Finance: Expenditure by Function-School Leadership Percent, General Fund"
+>> label(CFIN$CPFEGSUPP)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student Percent, General Fund"
+>> label(CFIN$CPFEAOPRP)<- "Campus 2006 Finance: Expenditure by Function-Total OperatingPercent, All Funds"
+>> label(CFIN$CPFEAINSP)<- "Campus 2006 Finance: Expenditure by Function-Instruction Percent, All Funds"
+>> label(CFIN$CPFEARELP)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services Percent, All Funds"
+>> label(CFIN$CPFEAADIP)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership Percent, All Funds"
+>> label(CFIN$CPFEAADSP)<- "Campus 2006 Finance: Expenditure by Function-School Leadership Percent, All Funds"
+>> label(CFIN$CPFEASUPP)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student Percent, All Funds"
+>> label(CFIN$CPFPGALLP)<- "Campus 2006 Finance: Expenditure by Program-Total Percent, General Fund"
+>> label(CFIN$CPFPGBILP)<- "Campus 2006 Finance: Expenditure by Program-Bilingual Percent, General Fund"
+>> label(CFIN$CPFPGVOCP)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology Percent, General Fund"
+>> label(CFIN$CPFPGCOMP)<- "Campus 2006 Finance: Expenditure by Program-Compensatory Percent, General Fund"
+>> label(CFIN$CPFPGGIFP)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented Percent, General Fund"
+>> label(CFIN$CPFPGREGP)<- "Campus 2006 Finance: Expenditure by Program-Regular Percent,General Fund"
+>> label(CFIN$CPFPGSPEP)<- "Campus 2006 Finance: Expenditure by Program-Special Education Percent, General Fund"
+>> label(CFIN$CPFPGOTHP)<- "Campus 2006 Finance: Expenditure by Program-Other Percent, General Fund"
+>> label(CFIN$CPFPAALLP)<- "Campus 2006 Finance: Expenditure by Program-Total Percent, All Funds"
+>> label(CFIN$CPFPABILP)<- "Campus 2006 Finance: Expenditure by Program-Bilingual Percent, All Funds"
+>> label(CFIN$CPFPAVOCP)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology Percent, All Funds"
+>> label(CFIN$CPFPACOMP)<- "Campus 2006 Finance: Expenditure by Program-Compensatory Percent, All Funds"
+>> label(CFIN$CPFPAGIFP)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented Percent, All Funds"
+>> label(CFIN$CPFPAREGP)<- "Campus 2006 Finance: Expenditure by Program-Regular Percent,All Funds"
+>> label(CFIN$CPFPASPEP)<- "Campus 2006 Finance: Expenditure by Program-Special Education Percent, All Funds"
+>> label(CFIN$CPFPAOTHP)<- "Campus 2006 Finance: Expenditure by Program-Other Percent, All Funds"
+>> label(CFIN$CPFEGRELK)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services Per Pupil, General Fund"
+>> label(CFIN$CPFEARELK)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services Per Pupil, All Funds"
+>> label(CFIN$CPFEGSUPK)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student Per Pupil, General Fund"
+>> label(CFIN$CPFEASUPK)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student Per Pupil, All Funds"
+>> label(CFIN$CPFPGCOMK)<- "Campus 2006 Finance: Expenditure by Program-Compensatory PerPupil, General Fund"
+>> label(CFIN$CPFPACOMK)<- "Campus 2006 Finance: Expenditure by Program-Compensatory PerPupil, All Funds"
+>> label(CFIN$CPFPGOTHK)<- "Campus 2006 Finance: Expenditure by Program-Other Per Pupil,General Fund"
+>> label(CFIN$CPFPAOTHK)<- "Campus 2006 Finance: Expenditure by Program-Other Per Pupil,All Funds"
+>> label(CFIN$BPFEAOPRT)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Total Operating, All Funds"
+>> label(CFIN$BPFEAINST)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instruction, All Funds"
+>> label(CFIN$BPFEARELT)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional-Related Services, All Funds"
+>> label(CFIN$BPFEAADIT)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional Leadership, All Funds"
+>> label(CFIN$BPFEAADST)<- "Campus 2006 Finance: Group Total-Expenditure by Function-School Leadership, All Funds"
+>> label(CFIN$BPFEASUPT)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Support Services--Student, All Funds"
+>> label(CFIN$BPFPAALLT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Total, All Funds"
+>> label(CFIN$BPFPABILT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Bilingual, All Funds"
+>> label(CFIN$BPFPAVOCT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Career & Technology, All Funds"
+>> label(CFIN$BPFPACOMT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Compensatory, All Funds"
+>> label(CFIN$BPFPAGIFT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Gifted & Talented, All Funds"
+>> label(CFIN$BPFPAREGT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Regular, All Funds"
+>> label(CFIN$BPFPASPET)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Special Education, All Funds"
+>> label(CFIN$BPFPAOTHT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Other, All Funds"
+>> label(CFIN$BPFPAALLP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Total Percent, All Funds"
+>> label(CFIN$BPFPAREGP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Regular Percent, All Funds"
+>> label(CFIN$BPFPABILP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Bilingual Percent, All Funds"
+>> label(CFIN$BPFPACOMP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Compensatory Percent, All Funds"
+>> label(CFIN$BPFPAGIFP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Gifted & Talented Percent, All Funds"
+>> label(CFIN$BPFPAVOCP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Career & Technology Percent, All Funds"
+>> label(CFIN$BPFPASPEP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Special Education Percent, All Funds"
+>> label(CFIN$BPFPAOTHP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Other Percent, All Funds"
+>> label(CFIN$BPFEAOPRP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Total Operating Percent, All Funds"
+>> label(CFIN$BPFEAINSP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instruction Percent, All Funds"
+>> label(CFIN$BPFEARELP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional-Related Services Percent, All Funds"
+>> label(CFIN$BPFEAADIP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional Leadership Percent, All Funds"
+>> label(CFIN$BPFEAADSP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-School Leadership Percent, All Funds"
+>> label(CFIN$BPFEASUPP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Support Services--Student Percent, All Funds"
+>> label(CFIN$BPFEAOPRK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Total Operating Per Pupil, All Funds"
+>> label(CFIN$BPFEAINSK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instruction Per Pupil, All Funds"
+>> label(CFIN$BPFEARELK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional-Related Services Per Pupil, All Funds"
+>> label(CFIN$BPFEAADIK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional Leadership Per Pupil, All Funds"
+>> label(CFIN$BPFEAADSK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-School Leadership Per Pupil, All Funds"
+>> label(CFIN$BPFEASUPK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Support Services--Student Per Pupil, All Funds"
+>> label(CFIN$BPFPAALLK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Total Per Pupil, All Funds"
+>> label(CFIN$BPFPABILK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Bilingual Per Pupil, All Funds"
+>> label(CFIN$BPFPAVOCK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Career & Technology Per Pupil, All Funds"
+>> label(CFIN$BPFPACOMK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Compensatory Per Pupil, All Funds"
+>> label(CFIN$BPFPAGIFK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Gifted & Talented Per Pupil, All Funds"
+>> label(CFIN$BPFPAREGK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Regular Per Pupil, All Funds"
+>> label(CFIN$BPFPASPEK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Special Education Per Pupil, All Funds"
+>> label(CFIN$BPFPAOTHK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Other Per Pupil, All Funds"
+>> # merge two datasets by CAMPUS
+>> total <- merge(CREF,CSTUD, by="CAMPUS", all=T)
+>> attach(total)
+>> total2 <- merge(total,CFIN, by="CAMPUS", all=T)
+>> attach(total2)
+>> # Sort
+>> total2 <- order(+total2$campus)
+>> total2
+>> #Recodes
+>> total2$campus.rating <- recode(total2$C_RATING, '"A" = 1; "E" = 2; "R" = 3; "X" = 4; "L" = 5; ', as.factor.result=TRUE)
+>> total2$campus.rating <- factor(total2$campus.rating,levels=c("1","2","3","4","5"),labels=c("Acceptable","Exemplary","Recognized","Unacceptable","Unknown"))
+>> total2$grade.type <- recode(total2$GRDTYPE, '"B" = 1; "E" = 2; "M" = 3; "S" = 4; ', as.factor.result=TRUE)
+>> total2$grade.type <- factor(total2$grade.type,levels=c("1","2","3","4"),labels=c("Both","Elementary","Middle","Senior"))
+>> total2$CPERRA1R <- as.numeric(total2$CPERRA1R)
+>> total2$log.cperra1r <- with(total2, log10(CPERRA1R))
+>> # auto-recode -- county.name
+>> #Summary statistics
+>> summary(total2)
+>> # Histogram
+>> Hist(total2$BA0GH06N, scale="frequency", breaks="Sturges", col="darkgray")
+>> #Scatterplot
+>> scatterplot(BA0GR06N~BA0GM06N, reg.line=FALSE, smooth=FALSE, labels=FALSE, boxplots='xy', span=0.5, data=total2)
+>> #Scatterplot matrices
+>> scatterplot.matrix(~BA0GH06N+BA0GR06N+BH0GR06N+BP0GR06N+BPETDISC, reg.line=FALSE, smooth=FALSE, span=0.5, diagonal = 'density', data=total2)
+>> # Split File -- CAN'T IN R
+>> # 1-way ANOVA
+>> total2$CPETECOP <- as.numeric(total2$CPETECOP)
+>> .Anova<- lm(CPETECOP ~ campus.rating, data=total2)
+>> anova(.Anova)
+>> tapply(total2$CPETECOP, total2$campus.rating, mean, na.rm=TRUE) # means
+>> tapply(total2$CPETECOP, total2$campus.rating, sd, na.rm=TRUE) # std. deviations
+>> tapply(total2$CPETECOP, total2$campus.rating, function(x) sum(!is.na(x))) # counts
+>> remove(.Anova)
+>> # Repeated measures ANOVA?
+>> GLM.1 <- glm(BPFEAOPRT  ~ CPFEAOPRT, family=binomial(logit), data=total2)
+>> summary(GLM.1)
+>> # Factorial ANOVA
+>> # Correlation
+>> library(RODBC)
+>> total2$CPFPGSPET <- as.numeric(total2$CPFPGSPET)
+>> total2$CPFPGGIFT <- as.numeric(total2$CPFPGGIFT)
+>> cor.test(total2$CPFPGSPET , total2$CPFPGGIFT, use="pairwise.complete.obs", alternative="two.sided", method="pearson")
+>> # Bivariate Regression
+>> total2$CPFPGGIFK <- as.numeric(total2$CPFPGGIFK)
+>> total2$CPFPGSPEK <- as.numeric(total2$CPFPGSPEK)
+>> RegModel.1 <- lm(CPFPGGIFK~CPFPGSPEK, data=total2)
+>> summary(RegModel.1)
+>> anova(RegModel.1)
+>> plot(RegModel.1)
+>> termplot(RegModel.1)
+>> bptest(CPFPGGIFK~CPFPGSPEK, varformula = ~ fitted.values(RegModel.1), studentize=FALSE, data=total2)
+>> dwtest(CPFPGGIFK~CPFPGSPEK, alternative="greater", data=total2)
+>> resettest(CPFPGGIFK~CPFPGSPEK, power=2:3, type="regressor", data=total2)
+>> outlier.test(RegModel.1)
+>> #Graphs
+>> oldpar <- par(oma=c(0,0,3,0), mfrow=c(2,2))
+>> plot(RegModel.1)
+>> par(oldpar)
+>> qq.plot(RegModel.1, simulate=TRUE, labels=FALSE)
+>> cr.plots(RegModel.1, ask=FALSE)
+>> av.plots(RegModel.1, ask=FALSE, identify.points=TRUE)
+>> influencePlot(RegModel.1)
+>> trellis.device(theme="col.whitebg")
+>> plot(all.effects(RegModel.1), ask=FALSE)
+>> # Multiple Regression
+>> total2$CPFPGREGT <- as.numeric(total2$CPFPGREGT)
+>> total2$CPFPAVOCT <- as.numeric(total2$CPFPAVOCT)
+>> total2$CPFPASPET <- as.numeric(total2$CPFPASPET)
+>> total2$CPFPABILT <- as.numeric(total2$CPFPABILT)
+>> RegModel.2 <- lm(CPFPGREGT~CPFPAVOCT+CPFPASPET+CPFPABILT, data=total2)
+>> summary(RegModel.2)
+>> anova(RegModel.2)
+>> plot(RegModel.2)
+>> termplot(RegModel.2)
+>> vif(RegModel.1)
+>> bptest(CPFPGREGT~CPFPAVOCT+CPFPASPET+CPFPABILT, varformula = ~ fitted.values(RegModel.1), studentize=FALSE, data=total2)
+>> dwtest(CPFPGREGT~CPFPAVOCT+CPFPASPET+CPFPABILT, alternative="greater", data=total2)
+>> resettest(CPFPGREGT~CPFPAVOCT+CPFPASPET+CPFPABILT, power=2:3, type="regressor", data=total2)
+>> outlier.test(RegModel.1)
+>> #Graphs
+>> oldpar <- par(oma=c(0,0,3,0), mfrow=c(2,2))
+>> plot(RegModel.2)
+>> par(oldpar)
+>> qq.plot(RegModel.2, simulate=TRUE, labels=FALSE)
+>> cr.plots(RegModel.2, ask=FALSE)
+>> av.plots(RegModel.2, ask=FALSE, identify.points=TRUE)
+>> influencePlot(RegModel.2)
+>> trellis.device(theme="col.whitebg")
+>> plot(all.effects(RegModel.2), ask=FALSE)
+>> # Chi-square
+>> chisq.test(total2$campus.rating, total2$grade.type))
+>> # Aggregate
+>> attach(total2)
+>> cref_cfin_cstud_agg <-aggregate(total2, by=list(REGION),
+>>   FUN=mean, na.rm=TRUE)
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+From izahn at psych.rochester.edu  Fri Nov 14 06:35:26 2008
+From: izahn at psych.rochester.edu (Ista Zahn)
+Date: Fri, 14 Nov 2008 00:35:26 -0500
+Subject: [R-sig-teaching] R Equivalent of SPSS "Split File" and
+	"AutoRecode"
+In-Reply-To: <89b6b8c90811132029l24fed6d1k5a7729195106e4db@mail.gmail.com>
+References: <D1B8B0AC6612B944BEEF511B4C8BB14B1B452DC9A2@CETO.ttu.edu>
+	<20081113233155.GG21149@laplace.reed.edu>
+	<89b6b8c90811132029l24fed6d1k5a7729195106e4db@mail.gmail.com>
+Message-ID: <f55e7cf50811132135w557689daoe75f0c51502b7b33@mail.gmail.com>
+
+I'd like to help, but your code isn't reproducible, and I'm not
+familiar with the RODBC package so I get stuck at
+
+CREF <- sqlQuery(channel = 1, select * from [cref_tabdelimited$])
+Error: unexpected ']' in "CREF <- sqlQuery(channel = 1, select * from
+[cref_tabdelimited$]"
+
+If you make your code reproducible I'll be happy to take a look at it
+and suggest improvements, as well as suggestions for dealing with the
+particular issues you were having trouble with.
+
+-Ista
+
+On Thu, Nov 13, 2008 at 11:29 PM, Yihui Xie <xieyihui at gmail.com> wrote:
+> The code is so long... Why not store the labels in another file and
+> read them into a vector, then assign labels to columns in a loop?
+>
+> To split file means you have to do the same procedure on each subset
+> of the data - this is easy in R: what you need are the splitting
+> variable and corresponding conditions, then apply your functions to
+> the subset of data in a loop (or use sapply(), ...)
+>
+> For autorecode, it is nothing but factor() in R!
+>
+> Regards,
+> Yihui
+> --
+> Yihui Xie <xieyihui at gmail.com>
+> Phone: +86-(0)10-82509086 Fax: +86-(0)10-82509086
+> Mobile: +86-15810805877
+> Homepage: http://www.yihui.name
+> School of Statistics, Room 1037, Mingde Main Building,
+> Renmin University of China, Beijing, 100872, China
+>
+>
+>
+> On Fri, Nov 14, 2008 at 7:31 AM, Albyn Jones <jones at reed.edu> wrote:
+>>  I have no clue what "autorecode" means.  Selecting a subset of a file is
+>> easy.  Suppose your data frame is named X, assuming REGION is numeric:
+>>
+>>    attach(X)
+>>    X17 = X[REGION == 17,]
+>>
+>> albyn
+>>
+>> On Thu, Nov 13, 2008 at 05:18:24PM -0600, Richardson, Paul wrote:
+>>>
+>>> Greetings Fellow Teachers of R,
+>>>
+>>>
+>>>  *
+>>> I am working on a tutorial for a class to be taught at my college.
+>>>  *
+>>> First, I am going to provide a PowerPoint seminar for the faculty, and then I will create a series of Camtasia screen recordings with narration.
+>>>  *
+>>> The course is aimed at teaching those familiar with introductory level stats how to perform similar actions in R, that would normally be performed in SPSS.
+>>>  *
+>>> Is there an autorecode capability in R which is analogous to autorecode in SPSS?  I'm having trouble with item with item f below (second half) "autorecode".
+>>>  *
+>>> I am also having trouble with item "i" below, because I don't know how to split a data file, like you normally do in SPSS.
+>>>  *
+>>> Is there some equivalent way to do this in R?
+>>>
+>>> thanks much,
+>>> Paul Richardson
+>>> cell 806-543-0087
+>>>
+>>>
+>>> a.       Go to AEIS data site:  http://www.tea.state.tx.us/perfreport/aeis/2007/DownloadData.html
+>>> b.      Select Campus, Reference File, and Layout, and download; then do the same for the Reference data file.  Download Campus Financial Statistics, both layout and download.  Download Student Statistics, both layout and download.
+>>> c.       Import the data files into R.
+>>> d.      Using the layout file, create variable labels; create value labels (if possible).  Assign 0 as a missing value for variable BPETALLC.
+>>> e.       Merge the Reference, Financial, and Student files
+>>> f.       Recode variable C_RATING into a new, numeric variable named campus.rating in R.  Recode GRDTYPE in a new, numeric variable called grade.type in R.  Use autorecode (if there is something similar in R) to recode CNTYNAME into county.name.  Create a new variable called log.cperra1r, which is the logarithm of CPERRA1R.
+>>> g.      Do summary statistics (minimum, maximum, range, mean, median, variance, standard deviation, skewness, kurtosis).
+>>> h.      Run histograms, boxplots, scatterplots, scatterplot matrices
+>>> i.        Select only cases from Region 17 (using REGION variable) and do the analyses for j-r below; using the equivalent of split file (if possible) to do same analysis for each region separately (using REGION variable).
+>>> j.        Conduct 1-way ANOVA using campus.rating as IV and CPETECOP as DV
+>>> k.      Conduct repeated measures ANOVA using BPFEAOPRT and CPFEAOPRT (although these are measuring different things, I am having you use them for purely instructional purposes)
+>>> l.        Conduct factorial ANOVA using campus.rating and grade.type as IV's and CPETECOP as DV
+>>> m.    Conduct correlation using CPFPGSPET and CPFPGGIFT.
+>>> n.      Conduct bivariate regression using CPFPGGIFK and CPFPGSPEK
+>>> o.      Conduct multiple regression using CPFPGREGT as criterion/outcome variable and CPFPAVOCT, CPFPASPET, and CPFPABILT as predictor variables
+>>> p.      Conduct the following regression diagnostics
+>>>                                 i.            Numerical diagnostics
+>>> 1.      Variance inflation factors
+>>> 2.      Breusch-Pagan test for heteroscedasticity
+>>> 3.      Durbin-Watson test for autocorrelation
+>>> 4.      RESET test for nonlinearity
+>>> 5.      Bonferonni outlier test
+>>>                               ii.            Graphs
+>>> 1.      Basic diagnostic plots
+>>> 2.      Residual quantile comparison plot
+>>> 3.      Component+residuals plot
+>>> 4.      Added variables plot
+>>> 5.      Influence plot
+>>> 6.      Effects plot
+>>> q.      Conduct chi-square using campus.rating and grade.type.
+>>> r.        Aggregate all the variables in the file by region (using REGION) and save to a new file called cref_cfin_cstud_agg.rdat
+>>>
+>>>
+>>>
+>>>
+>>> Below is the actual syntax for the above tasks:
+>>> ======================// beginning of R syntax //=======================
+>>> # Import CREF
+>>> CREF <- sqlQuery(channel = 1, select * from [cref_tabdelimited$])
+>>> attach(CREF)
+>>> # SORT
+>>> CREF<- order(+CREF$campus)
+>>> CREF
+>>> # variable labels
+>>> library(Hmisc)
+>>> label(CREF$DISTNAME)<- "District Name"
+>>> label(CREF$CAMPNAME)<- "Campus Name"
+>>> label(CREF$CACKDTL)<- "Campus 2007 Ratings: GPA Acknowledgment Detail"
+>>> label(CREF$CAMPUS)<- "CURRENT 9-DIGIT CDC NUMBER"
+>>> label(CREF$DISTRICT)<- "6 Digit County District Number"
+>>> label(CREF$COUNTY)<- "3 Digit County Number"
+>>> label(CREF$REGION)<- "2 Digit ESC Region"
+>>> label(CREF$CNTYNAME)<- "County Name"
+>>> label(CREF$GRDTYPE)<- "Campus Type (B,E,M,S) Total Enrollment"
+>>> label(CREF$GRDSPAN)<- "Grade Span (Total Enrollment)"
+>>> label(CREF$CFLCHART)<- "CAMPUS 2007 Flag-Chater School (Y/N)"
+>>> label(CREF$PAIRCAMP)<- "CAMPUS 2007 Flag-Campus/District No. of TAKS Giver"
+>>> label(CREF$PAIRNAME)<- "CAMPUS 2007 Flag-Campus/District Name of TAKS Giver"
+>>> label(CREF$C_RATING)<- "Campus 2007 Ratings: Final Accountability Rating"
+>>> #Import CSTUD
+>>> CSTUD <- read.table("C:/Users/Matt/Desktop/TTU/Courses/EPSY 5385_Stats Packages/DATA FILES/cstud.dat", header=TRUE, sep=",", na.strings="NA", dec=".", strip.white=TRUE)
+>>> attach(CSTUD)
+>>> # SORT
+>>> CSTUD<- order(+CSTUD$campus)
+>>> CSTUD
+>>> # variable labels
+>>> library(Hmisc)
+>>> label(CSTUD$CA0GR06N)<- "Campus 2006 Graduates: All Students Count"
+>>> label(CSTUD$CA0GH06N)<- "Campus 2006 Graduates: Recom HS Pgm All Students Count"
+>>> label(CSTUD$CA0GM06N)<- "Campus 2006 Graduates: Min HS Pgm All Students Count"
+>>> label(CSTUD$CB0GR06N)<- "Campus 2006 Graduates: African American Count"
+>>> label(CSTUD$CH0GR06N)<- "Campus 2006 Graduates: Hispanic Count"
+>>> label(CSTUD$CW0GR06N)<- "Campus 2006 Graduates: White Count"
+>>> label(CSTUD$CI0GR06N)<- "Campus 2006 Graduates: Native American Count"
+>>> label(CSTUD$CP0GR06N)<- "Campus 2006 Graduates: Asian/Pacific Islander Count"
+>>> label(CSTUD$CS0GR06N)<- "Campus 2006 Graduates: Special Ed Count"
+>>> label(CSTUD$BPETALLC)<- "Group 2007 Student: All Students Count"
+>>> label(CSTUD$BA0GR06N)<- "Group 2006 Graduates: All Students Count"
+>>> label(CSTUD$BB0GR06N)<- "Group 2006 Graduates: African American Count"
+>>> label(CSTUD$BH0GR06N)<- "Group 2006 Graduates: Hispanic Count"
+>>> label(CSTUD$BW0GR06N)<- "Group 2006 Graduates: White Count"
+>>> label(CSTUD$BI0GR06N)<- "Group 2006 Graduates: Native American Count"
+>>> label(CSTUD$BP0GR06N)<- "Group 2006 Graduates: Asian/Pacific Islander Count"
+>>> label(CSTUD$BS0GR06N)<- "Group 2006 Graduates: Special Ed Count"
+>>> label(CSTUD$BA0GH06N)<- "Group 2006 Graduates: Recom HS Pgm All Students Count"
+>>> label(CSTUD$BA0GM06N)<- "Group 2006 Graduates: Min HS Pgm All Students Count"
+>>> label(CSTUD$BPETDISC)<- "Group 2006 DAEP: Count"
+>>> label(CSTUD$CPERRAKR)<- "Campus 2006 Retention: Regular Ed KG Rate"
+>>> label(CSTUD$CPERRA1R)<- "Campus 2006 Retention: Regular Ed 01 Rate"
+>>> label(CSTUD$CPERRA2R)<- "Campus 2006 Retention: Regular Ed 02 Rate"
+>>> label(CSTUD$CPERRA3R)<- "Campus 2006 Retention: Regular Ed 03 Rate"
+>>> label(CSTUD$CPERRA4R)<- "Campus 2006 Retention: Regular Ed 04 Rate"
+>>> label(CSTUD$CPERRA5R)<- "Campus 2006 Retention: Regular Ed 05 Rate"
+>>> label(CSTUD$CPERRA6R)<- "Campus 2006 Retention: Regular Ed 06 Rate"
+>>> label(CSTUD$CPERRA7R)<- "Campus 2006 Retention: Regular Ed 07 Rate"
+>>> label(CSTUD$CPERRA8R)<- "Campus 2006 Retention: Regular Ed 08 Rate"
+>>> label(CSTUD$CPERSAKR)<- "Campus 2006 Retention: Special Ed KG Rate"
+>>> label(CSTUD$CPERSA1R)<- "Campus 2006 Retention: Special Ed 01 Rate"
+>>> label(CSTUD$CPERSA2R)<- "Campus 2006 Retention: Special Ed 02 Rate"
+>>> label(CSTUD$CPERSA3R)<- "Campus 2006 Retention: Special Ed 03 Rate"
+>>> label(CSTUD$CPERSA4R)<- "Campus 2006 Retention: Special Ed 04 Rate"
+>>> label(CSTUD$CPERSA5R)<- "Campus 2006 Retention: Special Ed 05 Rate"
+>>> label(CSTUD$CPERSA6R)<- "Campus 2006 Retention: Special Ed 06 Rate"
+>>> label(CSTUD$CPERSA7R)<- "Campus 2006 Retention: Special Ed 07 Rate"
+>>> label(CSTUD$CPERSA8R)<- "Campus 2006 Retention: Special Ed 08 Rate"
+>>> label(CSTUD$CPETDISC)<- "Campus 2006 DAEP: Count"
+>>> label(CSTUD$CPETDISP)<- "Campus 2006 DAEP: Percent"
+>>> label(CSTUD$CPETLEPP)<- "Campus 2007 Student: LEP Percent"
+>>> label(CSTUD$CPETECOP)<- "Campus 2007 Student: ECO Percent"
+>>> label(CSTUD$CPETECOC)<- "Campus 2007 Student: ECO Count"
+>>> label(CSTUD$CPETLEPC)<- "Campus 2007 Student: LEP Count"
+>>> label(CSTUD$CPETSPEC)<- "Campus 2007 Student: SPE Count"
+>>> label(CSTUD$CPETGIFC)<- "Campus 2007 Student: GIF/TAL Count"
+>>> label(CSTUD$CPETBILC)<- "Campus 2007 Student: BIL Count"
+>>> label(CSTUD$CPETALLC)<- "Campus 2007 Student: All Students Count"
+>>> label(CSTUD$CPETVOCC)<- "Campus 2007 Student: VOC Count"
+>>> label(CSTUD$CPETINDC)<- "Campus 2007 Student: Native American Count"
+>>> label(CSTUD$CPETPACC)<- "Campus 2007 Student: Asian/Pacific Islander Count"
+>>> label(CSTUD$CPETBLAC)<- "Campus 2007 Student: African American Count"
+>>> label(CSTUD$CPETHISC)<- "Campus 2007 Student: Hispanic Count"
+>>> label(CSTUD$CPETWHIC)<- "Campus 2007 Student: White Count"
+>>> label(CSTUD$CPETGEEC)<- "Campus 2007 Student: EE Count"
+>>> label(CSTUD$CPETGPKC)<- "Campus 2007 Student: PK Count"
+>>> label(CSTUD$CPETGKNC)<- "Campus 2007 Student: KG Count"
+>>> label(CSTUD$CPETG01C)<- "Campus 2007 Student: 01 Count"
+>>> label(CSTUD$CPETG02C)<- "Campus 2007 Student: 02 Count"
+>>> label(CSTUD$CPETG03C)<- "Campus 2007 Student: 03 Count"
+>>> label(CSTUD$CPETG04C)<- "Campus 2007 Student: 04 Count"
+>>> label(CSTUD$CPETG05C)<- "Campus 2007 Student: 05 Count"
+>>> label(CSTUD$CPETG06C)<- "Campus 2007 Student: 06 Count"
+>>> label(CSTUD$CPETG07C)<- "Campus 2007 Student: 07 Count"
+>>> label(CSTUD$CPETG08C)<- "Campus 2007 Student: 08 Count"
+>>> label(CSTUD$CPETG09C)<- "Campus 2007 Student: 09 Count"
+>>> label(CSTUD$CPETG10C)<- "Campus 2007 Student: 10 Count"
+>>> label(CSTUD$CPETG11C)<- "Campus 2007 Student: 11 Count"
+>>> label(CSTUD$CPETG12C)<- "Campus 2007 Student: 12 Count"
+>>> label(CSTUD$CPEMALLC)<- "Campus 2007 Student: 06 Mobility Numerator (Campus Only)"
+>>> label(CSTUD$CPETWHIP)<- "Campus 2007 Student: White Percent"
+>>> label(CSTUD$CPETBLAP)<- "Campus 2007 Student: African American Percent"
+>>> label(CSTUD$CPETHISP)<- "Campus 2007 Student: Hispanic Percent"
+>>> label(CSTUD$CPETINDP)<- "Campus 2007 Student: Native American Percent"
+>>> label(CSTUD$CPETPACP)<- "Campus 2007 Student: Asian/Pacific Islander Percent"
+>>> label(CSTUD$CPETSPEP)<- "Campus 2007 Student: SPE Percent"
+>>> label(CSTUD$CPETVOCP)<- "Campus 2007 Student: VOC Percent"
+>>> label(CSTUD$CPETBILP)<- "Campus 2007 Student: BIL Percent"
+>>> label(CSTUD$CPETGIFP)<- "Campus 2007 Student: GIF/TAL Percent"
+>>> label(CSTUD$CPETGEEP)<- "Campus 2007 Student: EE Percent"
+>>> label(CSTUD$CPETGPKP)<- "Campus 2007 Student: PK Percent"
+>>> label(CSTUD$CPETGKNP)<- "Campus 2007 Student: KG Percent"
+>>> label(CSTUD$CPETG01P)<- "Campus 2007 Student: 01 Percent"
+>>> label(CSTUD$CPETG02P)<- "Campus 2007 Student: 02 Percent"
+>>> label(CSTUD$CPETG03P)<- "Campus 2007 Student: 03 Percent"
+>>> label(CSTUD$CPETG04P)<- "Campus 2007 Student: 04 Percent"
+>>> label(CSTUD$CPETG05P)<- "Campus 2007 Student: 05 Percent"
+>>> label(CSTUD$CPETG06P)<- "Campus 2007 Student: 06 Percent"
+>>> label(CSTUD$CPETG07P)<- "Campus 2007 Student: 07 Percent"
+>>> label(CSTUD$CPETG08P)<- "Campus 2007 Student: 08 Percent"
+>>> label(CSTUD$CPETG09P)<- "Campus 2007 Student: 09 Percent"
+>>> label(CSTUD$CPETG10P)<- "Campus 2007 Student: 10 Percent"
+>>> label(CSTUD$CPETG11P)<- "Campus 2007 Student: 11 Percent"
+>>> label(CSTUD$CPETG12P)<- "Campus 2007 Student: 12 Percent"
+>>> label(CSTUD$CPEMALLP)<- "Campus 2007 Student: 06 Mobility Percent (Campus Only)"
+>>> label(CSTUD$BPETWHIP)<- "Group 2007 Student: White Percent"
+>>> label(CSTUD$BPETBLAP)<- "Group 2007 Student: African American Percent"
+>>> label(CSTUD$BPETHISP)<- "Group 2007 Student: Hispanic Percent"
+>>> label(CSTUD$BPETINDP)<- "Group 2007 Student: Native American Percent"
+>>> label(CSTUD$BPETPACP)<- "Group 2007 Student: Asian/Pacific Islander Percent"
+>>> label(CSTUD$BPETECOP)<- "Group 2007 Student: ECO Percent"
+>>> label(CSTUD$BPETLEPP)<- "Group 2007 Student: LEP Percent"
+>>> label(CSTUD$BPETSPEP)<- "Group 2007 Student: SPE Percent"
+>>> label(CSTUD$BPETVOCP)<- "Group 2007 Student: VOC Percent"
+>>> label(CSTUD$BPETBILP)<- "Group 2007 Student: BIL Percent"
+>>> label(CSTUD$BPETGIFP)<- "Group 2007 Student: GIF/TAL Percent"
+>>> label(CSTUD$BPETGEEP)<- "Group 2007 Student: EE Percent"
+>>> label(CSTUD$BPETGPKP)<- "Group 2007 Student: PK Percent"
+>>> label(CSTUD$BPETGKNP)<- "Group 2007 Student: KG Percent"
+>>> label(CSTUD$BPETG01P)<- "Group 2007 Student: 01 Percent"
+>>> label(CSTUD$BPETG02P)<- "Group 2007 Student: 02 Percent"
+>>> label(CSTUD$BPETG03P)<- "Group 2007 Student: 03 Percent"
+>>> label(CSTUD$BPETG04P)<- "Group 2007 Student: 04 Percent"
+>>> label(CSTUD$BPETG05P)<- "Group 2007 Student: 05 Percent"
+>>> label(CSTUD$BPETG06P)<- "Group 2007 Student: 06 Percent"
+>>> label(CSTUD$BPETG07P)<- "Group 2007 Student: 07 Percent"
+>>> label(CSTUD$BPETG08P)<- "Group 2007 Student: 08 Percent"
+>>> label(CSTUD$BPETG09P)<- "Group 2007 Student: 09 Percent"
+>>> label(CSTUD$BPETG10P)<- "Group 2007 Student: 10 Percent"
+>>> label(CSTUD$BPETG11P)<- "Group 2007 Student: 11 Percent"
+>>> label(CSTUD$BPETG12P)<- "Group 2007 Student: 12 Percent"
+>>> label(CSTUD$BPEMALLP)<- "Group 2007 Student: 06 Mobility Percent (Campus ONLY)"
+>>> label(CSTUD$BPERRAKR)<- "Group 2006 Retention: Regular Ed KG Rate"
+>>> label(CSTUD$BPERRA1R)<- "Group 2006 Retention: Regular Ed 01 Rate"
+>>> label(CSTUD$BPERRA2R)<- "Group 2006 Retention: Regular Ed 02 Rate"
+>>> label(CSTUD$BPERRA3R)<- "Group 2006 Retention: Regular Ed 03 Rate"
+>>> label(CSTUD$BPERRA4R)<- "Group 2006 Retention: Regular Ed 04 Rate"
+>>> label(CSTUD$BPERRA5R)<- "Group 2006 Retention: Regular Ed 05 Rate"
+>>> label(CSTUD$BPERRA6R)<- "Group 2006 Retention: Regular Ed 06 Rate"
+>>> label(CSTUD$BPERRA7R)<- "Group 2006 Retention: Regular Ed 07 Rate"
+>>> label(CSTUD$BPERRA8R)<- "Group 2006 Retention: Regular Ed 08 Rate"
+>>> label(CSTUD$BPERSAKR)<- "Group 2006 Retention: Special Ed KG Rate"
+>>> label(CSTUD$BPERSA1R)<- "Group 2006 Retention: Special Ed 01 Rate"
+>>> label(CSTUD$BPERSA2R)<- "Group 2006 Retention: Special Ed 02 Rate"
+>>> label(CSTUD$BPERSA3R)<- "Group 2006 Retention: Special Ed 03 Rate"
+>>> label(CSTUD$BPERSA4R)<- "Group 2006 Retention: Special Ed 04 Rate"
+>>> label(CSTUD$BPERSA5R)<- "Group 2006 Retention: Special Ed 05 Rate"
+>>> label(CSTUD$BPERSA6R)<- "Group 2006 Retention: Special Ed 06 Rate"
+>>> label(CSTUD$BPERSA7R)<- "Group 2006 Retention: Special Ed 07 Rate"
+>>> label(CSTUD$BPERSA8R)<- "Group 2006 Retention: Special Ed 08 Rate"
+>>> label(CSTUD$BPETDISP)<- "Group 2006 DAEP: Percent"
+>>> CSTUD$BPETALLC [CSTUD$BPETALLC == 0] <- NA
+>>> CSTUD$BPETALLC [is.na(CSTUD$BPETALLC)] <- 0
+>>> # Import CFIN
+>>> CFIN <- read.table("C:/Users/Matt/Desktop/TTU/Courses/EPSY 5385_Stats Packages/DATA FILES/cfin.dat", header=TRUE, sep=",", na.strings="NA", dec=".", strip.white=TRUE)
+>>> attach(CFIN)
+>>> # SORT
+>>> CFIN<- order(+CFIN$campus)
+>>> CFIN
+>>> # variable labels
+>>> library(Hmisc)
+>>> label(CFIN$CPFEGADST)<- "Campus 2006 Finance: Expenditure by Function-School Leadership, General Fund"
+>>> label(CFIN$CPFEGADIT)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership, General Fund"
+>>> label(CFIN$CPFEAADST)<- "Campus 2006 Finance: Expenditure by Function-School Leadership, All Funds"
+>>> label(CFIN$CPFEAADIT)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership, All Funds"
+>>> label(CFIN$CPFPGREGT)<- "Campus 2006 Finance: Expenditure by Program-Regular, GeneralFund"
+>>> label(CFIN$CPFPGVOCT)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology, General Fund"
+>>> label(CFIN$CPFPGSPET)<- "Campus 2006 Finance: Expenditure by Program-Special Education, General Fund"
+>>> label(CFIN$CPFPGGIFT)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented, General Fund"
+>>> label(CFIN$CPFPGBILT)<- "Campus 2006 Finance: Expenditure by Program-Bilingual, General Fund"
+>>> label(CFIN$CPFPAREGT)<- "Campus 2006 Finance: Expenditure by Program-Regular, All Funds"
+>>> label(CFIN$CPFPAVOCT)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology, All Funds"
+>>> label(CFIN$CPFPASPET)<- "Campus 2006 Finance: Expenditure by Program-Special Education, All Funds"
+>>> label(CFIN$CPFPAGIFT)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented, All Funds"
+>>> label(CFIN$CPFPABILT)<- "Campus 2006 Finance: Expenditure by Program-Bilingual, All Funds"
+>>> label(CFIN$CPFEGINST)<- "Campus 2006 Finance: Expenditure by Function-Instruction, General Fund"
+>>> label(CFIN$CPFEAINST)<- "Campus 2006 Finance: Expenditure by Function-Instruction, All Funds"
+>>> label(CFIN$CPFEGOPRT)<- "Campus 2006 Finance: Expenditure by Function-Total Operating,General Fund"
+>>> label(CFIN$CPFEAOPRT)<- "Campus 2006 Finance: Expenditure by Function-Total Operating, All Funds"
+>>> label(CFIN$CPFPGALLT)<- "Campus 2006 Finance: Expenditure by Program-Total, General Fund"
+>>> label(CFIN$CPFPAALLT)<- "Campus 2006 Finance: Expenditure by Program-Total, All Funds"
+>>> label(CFIN$CPFEGINSK)<- "Campus 2006 Finance: Expenditure by Function-Instruction PerPupil, General Fund"
+>>> label(CFIN$CPFEGADIK)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership Per Pupil, General Fund"
+>>> label(CFIN$CPFEGADSK)<- "Campus 2006 Finance: Expenditure by Function-School Leadership Per Pupil, General Fund"
+>>> label(CFIN$CPFEGOPRK)<- "Campus 2006 Finance: Expenditure by Function-Total OperatingPer Pupil, General Fund"
+>>> label(CFIN$CPFPGREGK)<- "Campus 2006 Finance: Expenditure by Program-Regular Per Pupil, General Fund"
+>>> label(CFIN$CPFPGVOCK)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology Per Pupil, General Fund"
+>>> label(CFIN$CPFPGBILK)<- "Campus 2006 Finance: Expenditure by Program-Bilingual Per Pupil, General Fund"
+>>> label(CFIN$CPFPGGIFK)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented Per Pupil, General Fund"
+>>> label(CFIN$CPFPGSPEK)<- "Campus 2006 Finance: Expenditure by Program-Special Education Per Pupil, General Fund"
+>>> label(CFIN$CPFPGALLK)<- "Campus 2006 Finance: Expenditure by Program-Total Per Pupil,General Fund"
+>>> label(CFIN$CPFEAINSK)<- "Campus 2006 Finance: Expenditure by Function-Instruction PerPupil, All Funds"
+>>> label(CFIN$CPFEAADIK)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership Per Pupil, All Funds"
+>>> label(CFIN$CPFEAADSK)<- "Campus 2006 Finance: Expenditure by Function-School Leadership Per Pupil, All Funds"
+>>> label(CFIN$CPFEAOPRK)<- "Campus 2006 Finance: Expenditure by Function-Total OperatingPer Pupil, ALL Funds"
+>>> label(CFIN$CPFPAREGK)<- "Campus 2006 Finance: Expenditure by Program-Regular Per Pupil, All Funds"
+>>> label(CFIN$CPFPAVOCK)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology Per Pupil, All Funds"
+>>> label(CFIN$CPFPABILK)<- "Campus 2006 Finance: Expenditure by Program-Bilingual Per Pupil, All Funds"
+>>> label(CFIN$CPFPAGIFK)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented Per Pupil, All Funds"
+>>> label(CFIN$CPFPASPEK)<- "Campus 2006 Finance: Expenditure by Program-Special Education Per Pupil, All Funds"
+>>> label(CFIN$CPFPAALLK)<- "Campus 2006 Finance: Expenditure by Program-Total Per Pupil,All Funds"
+>>> label(CFIN$CPFEGRELT)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services, General Fund"
+>>> label(CFIN$CPFEARELT)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services, All Funds"
+>>> label(CFIN$CPFEGSUPT)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student, General Fund"
+>>> label(CFIN$CPFEASUPT)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student, All Funds"
+>>> label(CFIN$CPFPGCOMT)<- "Campus 2006 Finance: Expenditure by Program-Compensatory, General Fund"
+>>> label(CFIN$CPFPACOMT)<- "Campus 2006 Finance: Expenditure by Program-Compensatory, All Funds"
+>>> label(CFIN$CPFPGOTHT)<- "Campus 2006 Finance: Expenditure by Program-Other, General Fund"
+>>> label(CFIN$CPFPAOTHT)<- "Campus 2006 Finance: Expenditure by Program-Other, All Funds"
+>>> label(CFIN$CPFEGOPRP)<- "Campus 2006 Finance: Expenditure by Function-Total OperatingPercent, General Fund"
+>>> label(CFIN$CPFEGINSP)<- "Campus 2006 Finance: Expenditure by Function-Instruction Percent, General Fund"
+>>> label(CFIN$CPFEGRELP)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services Percent, General Fund"
+>>> label(CFIN$CPFEGADIP)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership Percent, General Fund"
+>>> label(CFIN$CPFEGADSP)<- "Campus 2006 Finance: Expenditure by Function-School Leadership Percent, General Fund"
+>>> label(CFIN$CPFEGSUPP)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student Percent, General Fund"
+>>> label(CFIN$CPFEAOPRP)<- "Campus 2006 Finance: Expenditure by Function-Total OperatingPercent, All Funds"
+>>> label(CFIN$CPFEAINSP)<- "Campus 2006 Finance: Expenditure by Function-Instruction Percent, All Funds"
+>>> label(CFIN$CPFEARELP)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services Percent, All Funds"
+>>> label(CFIN$CPFEAADIP)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership Percent, All Funds"
+>>> label(CFIN$CPFEAADSP)<- "Campus 2006 Finance: Expenditure by Function-School Leadership Percent, All Funds"
+>>> label(CFIN$CPFEASUPP)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student Percent, All Funds"
+>>> label(CFIN$CPFPGALLP)<- "Campus 2006 Finance: Expenditure by Program-Total Percent, General Fund"
+>>> label(CFIN$CPFPGBILP)<- "Campus 2006 Finance: Expenditure by Program-Bilingual Percent, General Fund"
+>>> label(CFIN$CPFPGVOCP)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology Percent, General Fund"
+>>> label(CFIN$CPFPGCOMP)<- "Campus 2006 Finance: Expenditure by Program-Compensatory Percent, General Fund"
+>>> label(CFIN$CPFPGGIFP)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented Percent, General Fund"
+>>> label(CFIN$CPFPGREGP)<- "Campus 2006 Finance: Expenditure by Program-Regular Percent,General Fund"
+>>> label(CFIN$CPFPGSPEP)<- "Campus 2006 Finance: Expenditure by Program-Special Education Percent, General Fund"
+>>> label(CFIN$CPFPGOTHP)<- "Campus 2006 Finance: Expenditure by Program-Other Percent, General Fund"
+>>> label(CFIN$CPFPAALLP)<- "Campus 2006 Finance: Expenditure by Program-Total Percent, All Funds"
+>>> label(CFIN$CPFPABILP)<- "Campus 2006 Finance: Expenditure by Program-Bilingual Percent, All Funds"
+>>> label(CFIN$CPFPAVOCP)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology Percent, All Funds"
+>>> label(CFIN$CPFPACOMP)<- "Campus 2006 Finance: Expenditure by Program-Compensatory Percent, All Funds"
+>>> label(CFIN$CPFPAGIFP)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented Percent, All Funds"
+>>> label(CFIN$CPFPAREGP)<- "Campus 2006 Finance: Expenditure by Program-Regular Percent,All Funds"
+>>> label(CFIN$CPFPASPEP)<- "Campus 2006 Finance: Expenditure by Program-Special Education Percent, All Funds"
+>>> label(CFIN$CPFPAOTHP)<- "Campus 2006 Finance: Expenditure by Program-Other Percent, All Funds"
+>>> label(CFIN$CPFEGRELK)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services Per Pupil, General Fund"
+>>> label(CFIN$CPFEARELK)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services Per Pupil, All Funds"
+>>> label(CFIN$CPFEGSUPK)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student Per Pupil, General Fund"
+>>> label(CFIN$CPFEASUPK)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student Per Pupil, All Funds"
+>>> label(CFIN$CPFPGCOMK)<- "Campus 2006 Finance: Expenditure by Program-Compensatory PerPupil, General Fund"
+>>> label(CFIN$CPFPACOMK)<- "Campus 2006 Finance: Expenditure by Program-Compensatory PerPupil, All Funds"
+>>> label(CFIN$CPFPGOTHK)<- "Campus 2006 Finance: Expenditure by Program-Other Per Pupil,General Fund"
+>>> label(CFIN$CPFPAOTHK)<- "Campus 2006 Finance: Expenditure by Program-Other Per Pupil,All Funds"
+>>> label(CFIN$BPFEAOPRT)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Total Operating, All Funds"
+>>> label(CFIN$BPFEAINST)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instruction, All Funds"
+>>> label(CFIN$BPFEARELT)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional-Related Services, All Funds"
+>>> label(CFIN$BPFEAADIT)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional Leadership, All Funds"
+>>> label(CFIN$BPFEAADST)<- "Campus 2006 Finance: Group Total-Expenditure by Function-School Leadership, All Funds"
+>>> label(CFIN$BPFEASUPT)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Support Services--Student, All Funds"
+>>> label(CFIN$BPFPAALLT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Total, All Funds"
+>>> label(CFIN$BPFPABILT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Bilingual, All Funds"
+>>> label(CFIN$BPFPAVOCT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Career & Technology, All Funds"
+>>> label(CFIN$BPFPACOMT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Compensatory, All Funds"
+>>> label(CFIN$BPFPAGIFT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Gifted & Talented, All Funds"
+>>> label(CFIN$BPFPAREGT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Regular, All Funds"
+>>> label(CFIN$BPFPASPET)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Special Education, All Funds"
+>>> label(CFIN$BPFPAOTHT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Other, All Funds"
+>>> label(CFIN$BPFPAALLP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Total Percent, All Funds"
+>>> label(CFIN$BPFPAREGP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Regular Percent, All Funds"
+>>> label(CFIN$BPFPABILP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Bilingual Percent, All Funds"
+>>> label(CFIN$BPFPACOMP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Compensatory Percent, All Funds"
+>>> label(CFIN$BPFPAGIFP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Gifted & Talented Percent, All Funds"
+>>> label(CFIN$BPFPAVOCP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Career & Technology Percent, All Funds"
+>>> label(CFIN$BPFPASPEP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Special Education Percent, All Funds"
+>>> label(CFIN$BPFPAOTHP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Other Percent, All Funds"
+>>> label(CFIN$BPFEAOPRP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Total Operating Percent, All Funds"
+>>> label(CFIN$BPFEAINSP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instruction Percent, All Funds"
+>>> label(CFIN$BPFEARELP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional-Related Services Percent, All Funds"
+>>> label(CFIN$BPFEAADIP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional Leadership Percent, All Funds"
+>>> label(CFIN$BPFEAADSP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-School Leadership Percent, All Funds"
+>>> label(CFIN$BPFEASUPP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Support Services--Student Percent, All Funds"
+>>> label(CFIN$BPFEAOPRK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Total Operating Per Pupil, All Funds"
+>>> label(CFIN$BPFEAINSK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instruction Per Pupil, All Funds"
+>>> label(CFIN$BPFEARELK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional-Related Services Per Pupil, All Funds"
+>>> label(CFIN$BPFEAADIK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional Leadership Per Pupil, All Funds"
+>>> label(CFIN$BPFEAADSK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-School Leadership Per Pupil, All Funds"
+>>> label(CFIN$BPFEASUPK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Support Services--Student Per Pupil, All Funds"
+>>> label(CFIN$BPFPAALLK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Total Per Pupil, All Funds"
+>>> label(CFIN$BPFPABILK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Bilingual Per Pupil, All Funds"
+>>> label(CFIN$BPFPAVOCK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Career & Technology Per Pupil, All Funds"
+>>> label(CFIN$BPFPACOMK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Compensatory Per Pupil, All Funds"
+>>> label(CFIN$BPFPAGIFK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Gifted & Talented Per Pupil, All Funds"
+>>> label(CFIN$BPFPAREGK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Regular Per Pupil, All Funds"
+>>> label(CFIN$BPFPASPEK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Special Education Per Pupil, All Funds"
+>>> label(CFIN$BPFPAOTHK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Other Per Pupil, All Funds"
+>>> # merge two datasets by CAMPUS
+>>> total <- merge(CREF,CSTUD, by="CAMPUS", all=T)
+>>> attach(total)
+>>> total2 <- merge(total,CFIN, by="CAMPUS", all=T)
+>>> attach(total2)
+>>> # Sort
+>>> total2 <- order(+total2$campus)
+>>> total2
+>>> #Recodes
+>>> total2$campus.rating <- recode(total2$C_RATING, '"A" = 1; "E" = 2; "R" = 3; "X" = 4; "L" = 5; ', as.factor.result=TRUE)
+>>> total2$campus.rating <- factor(total2$campus.rating,levels=c("1","2","3","4","5"),labels=c("Acceptable","Exemplary","Recognized","Unacceptable","Unknown"))
+>>> total2$grade.type <- recode(total2$GRDTYPE, '"B" = 1; "E" = 2; "M" = 3; "S" = 4; ', as.factor.result=TRUE)
+>>> total2$grade.type <- factor(total2$grade.type,levels=c("1","2","3","4"),labels=c("Both","Elementary","Middle","Senior"))
+>>> total2$CPERRA1R <- as.numeric(total2$CPERRA1R)
+>>> total2$log.cperra1r <- with(total2, log10(CPERRA1R))
+>>> # auto-recode -- county.name
+>>> #Summary statistics
+>>> summary(total2)
+>>> # Histogram
+>>> Hist(total2$BA0GH06N, scale="frequency", breaks="Sturges", col="darkgray")
+>>> #Scatterplot
+>>> scatterplot(BA0GR06N~BA0GM06N, reg.line=FALSE, smooth=FALSE, labels=FALSE, boxplots='xy', span=0.5, data=total2)
+>>> #Scatterplot matrices
+>>> scatterplot.matrix(~BA0GH06N+BA0GR06N+BH0GR06N+BP0GR06N+BPETDISC, reg.line=FALSE, smooth=FALSE, span=0.5, diagonal = 'density', data=total2)
+>>> # Split File -- CAN'T IN R
+>>> # 1-way ANOVA
+>>> total2$CPETECOP <- as.numeric(total2$CPETECOP)
+>>> .Anova<- lm(CPETECOP ~ campus.rating, data=total2)
+>>> anova(.Anova)
+>>> tapply(total2$CPETECOP, total2$campus.rating, mean, na.rm=TRUE) # means
+>>> tapply(total2$CPETECOP, total2$campus.rating, sd, na.rm=TRUE) # std. deviations
+>>> tapply(total2$CPETECOP, total2$campus.rating, function(x) sum(!is.na(x))) # counts
+>>> remove(.Anova)
+>>> # Repeated measures ANOVA?
+>>> GLM.1 <- glm(BPFEAOPRT  ~ CPFEAOPRT, family=binomial(logit), data=total2)
+>>> summary(GLM.1)
+>>> # Factorial ANOVA
+>>> # Correlation
+>>> library(RODBC)
+>>> total2$CPFPGSPET <- as.numeric(total2$CPFPGSPET)
+>>> total2$CPFPGGIFT <- as.numeric(total2$CPFPGGIFT)
+>>> cor.test(total2$CPFPGSPET , total2$CPFPGGIFT, use="pairwise.complete.obs", alternative="two.sided", method="pearson")
+>>> # Bivariate Regression
+>>> total2$CPFPGGIFK <- as.numeric(total2$CPFPGGIFK)
+>>> total2$CPFPGSPEK <- as.numeric(total2$CPFPGSPEK)
+>>> RegModel.1 <- lm(CPFPGGIFK~CPFPGSPEK, data=total2)
+>>> summary(RegModel.1)
+>>> anova(RegModel.1)
+>>> plot(RegModel.1)
+>>> termplot(RegModel.1)
+>>> bptest(CPFPGGIFK~CPFPGSPEK, varformula = ~ fitted.values(RegModel.1), studentize=FALSE, data=total2)
+>>> dwtest(CPFPGGIFK~CPFPGSPEK, alternative="greater", data=total2)
+>>> resettest(CPFPGGIFK~CPFPGSPEK, power=2:3, type="regressor", data=total2)
+>>> outlier.test(RegModel.1)
+>>> #Graphs
+>>> oldpar <- par(oma=c(0,0,3,0), mfrow=c(2,2))
+>>> plot(RegModel.1)
+>>> par(oldpar)
+>>> qq.plot(RegModel.1, simulate=TRUE, labels=FALSE)
+>>> cr.plots(RegModel.1, ask=FALSE)
+>>> av.plots(RegModel.1, ask=FALSE, identify.points=TRUE)
+>>> influencePlot(RegModel.1)
+>>> trellis.device(theme="col.whitebg")
+>>> plot(all.effects(RegModel.1), ask=FALSE)
+>>> # Multiple Regression
+>>> total2$CPFPGREGT <- as.numeric(total2$CPFPGREGT)
+>>> total2$CPFPAVOCT <- as.numeric(total2$CPFPAVOCT)
+>>> total2$CPFPASPET <- as.numeric(total2$CPFPASPET)
+>>> total2$CPFPABILT <- as.numeric(total2$CPFPABILT)
+>>> RegModel.2 <- lm(CPFPGREGT~CPFPAVOCT+CPFPASPET+CPFPABILT, data=total2)
+>>> summary(RegModel.2)
+>>> anova(RegModel.2)
+>>> plot(RegModel.2)
+>>> termplot(RegModel.2)
+>>> vif(RegModel.1)
+>>> bptest(CPFPGREGT~CPFPAVOCT+CPFPASPET+CPFPABILT, varformula = ~ fitted.values(RegModel.1), studentize=FALSE, data=total2)
+>>> dwtest(CPFPGREGT~CPFPAVOCT+CPFPASPET+CPFPABILT, alternative="greater", data=total2)
+>>> resettest(CPFPGREGT~CPFPAVOCT+CPFPASPET+CPFPABILT, power=2:3, type="regressor", data=total2)
+>>> outlier.test(RegModel.1)
+>>> #Graphs
+>>> oldpar <- par(oma=c(0,0,3,0), mfrow=c(2,2))
+>>> plot(RegModel.2)
+>>> par(oldpar)
+>>> qq.plot(RegModel.2, simulate=TRUE, labels=FALSE)
+>>> cr.plots(RegModel.2, ask=FALSE)
+>>> av.plots(RegModel.2, ask=FALSE, identify.points=TRUE)
+>>> influencePlot(RegModel.2)
+>>> trellis.device(theme="col.whitebg")
+>>> plot(all.effects(RegModel.2), ask=FALSE)
+>>> # Chi-square
+>>> chisq.test(total2$campus.rating, total2$grade.type))
+>>> # Aggregate
+>>> attach(total2)
+>>> cref_cfin_cstud_agg <-aggregate(total2, by=list(REGION),
+>>>   FUN=mean, na.rm=TRUE)
+>>>
+>>> _______________________________________________
+>>> R-sig-teaching at r-project.org mailing list
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>>
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+From bates at stat.wisc.edu  Fri Nov 14 16:52:50 2008
+From: bates at stat.wisc.edu (Douglas Bates)
+Date: Fri, 14 Nov 2008 09:52:50 -0600
+Subject: [R-sig-teaching] R Equivalent of SPSS "Split File" and
+	"AutoRecode"
+In-Reply-To: <20081113233155.GG21149@laplace.reed.edu>
+References: <D1B8B0AC6612B944BEEF511B4C8BB14B1B452DC9A2@CETO.ttu.edu>
+	<20081113233155.GG21149@laplace.reed.edu>
+Message-ID: <40e66e0b0811140752vadc9d40w9a99083fa42c0cee@mail.gmail.com>
+
+On Thu, Nov 13, 2008 at 5:31 PM, Albyn Jones <jones at reed.edu> wrote:
+>  I have no clue what "autorecode" means.  Selecting a subset of a file is
+> easy.  Suppose your data frame is named X, assuming REGION is numeric:
+>
+>    attach(X)
+>    X17 = X[REGION == 17,]
+
+I think it is better style to use
+
+X17 <- subset(X, REGION == 17)
+
+Using attach/detach is discouraged these days.  The "subset" function,
+the"with" function and the general use of the formula/data arguments
+in model fitting functions and the lattice graphics functions provide
+cleaner approaches than using attach.  The problem with attach is that
+it has the side-effect of changing the search path, which is, of
+course, what it is supposed to do.  However, any functions with
+side-effects should be used only when you can't find a better
+alternative and in this case there are better alternatives.
+
+
+>
+> albyn
+>
+> On Thu, Nov 13, 2008 at 05:18:24PM -0600, Richardson, Paul wrote:
+>>
+>> Greetings Fellow Teachers of R,
+>>
+>>
+>>  *
+>> I am working on a tutorial for a class to be taught at my college.
+>>  *
+>> First, I am going to provide a PowerPoint seminar for the faculty, and then I will create a series of Camtasia screen recordings with narration.
+>>  *
+>> The course is aimed at teaching those familiar with introductory level stats how to perform similar actions in R, that would normally be performed in SPSS.
+>>  *
+>> Is there an autorecode capability in R which is analogous to autorecode in SPSS?  I'm having trouble with item with item f below (second half) "autorecode".
+>>  *
+>> I am also having trouble with item "i" below, because I don't know how to split a data file, like you normally do in SPSS.
+>>  *
+>> Is there some equivalent way to do this in R?
+>>
+>> thanks much,
+>> Paul Richardson
+>> cell 806-543-0087
+>>
+>>
+>> a.       Go to AEIS data site:  http://www.tea.state.tx.us/perfreport/aeis/2007/DownloadData.html
+>> b.      Select Campus, Reference File, and Layout, and download; then do the same for the Reference data file.  Download Campus Financial Statistics, both layout and download.  Download Student Statistics, both layout and download.
+>> c.       Import the data files into R.
+>> d.      Using the layout file, create variable labels; create value labels (if possible).  Assign 0 as a missing value for variable BPETALLC.
+>> e.       Merge the Reference, Financial, and Student files
+>> f.       Recode variable C_RATING into a new, numeric variable named campus.rating in R.  Recode GRDTYPE in a new, numeric variable called grade.type in R.  Use autorecode (if there is something similar in R) to recode CNTYNAME into county.name.  Create a new variable called log.cperra1r, which is the logarithm of CPERRA1R.
+>> g.      Do summary statistics (minimum, maximum, range, mean, median, variance, standard deviation, skewness, kurtosis).
+>> h.      Run histograms, boxplots, scatterplots, scatterplot matrices
+>> i.        Select only cases from Region 17 (using REGION variable) and do the analyses for j-r below; using the equivalent of split file (if possible) to do same analysis for each region separately (using REGION variable).
+>> j.        Conduct 1-way ANOVA using campus.rating as IV and CPETECOP as DV
+>> k.      Conduct repeated measures ANOVA using BPFEAOPRT and CPFEAOPRT (although these are measuring different things, I am having you use them for purely instructional purposes)
+>> l.        Conduct factorial ANOVA using campus.rating and grade.type as IV's and CPETECOP as DV
+>> m.    Conduct correlation using CPFPGSPET and CPFPGGIFT.
+>> n.      Conduct bivariate regression using CPFPGGIFK and CPFPGSPEK
+>> o.      Conduct multiple regression using CPFPGREGT as criterion/outcome variable and CPFPAVOCT, CPFPASPET, and CPFPABILT as predictor variables
+>> p.      Conduct the following regression diagnostics
+>>                                 i.            Numerical diagnostics
+>> 1.      Variance inflation factors
+>> 2.      Breusch-Pagan test for heteroscedasticity
+>> 3.      Durbin-Watson test for autocorrelation
+>> 4.      RESET test for nonlinearity
+>> 5.      Bonferonni outlier test
+>>                               ii.            Graphs
+>> 1.      Basic diagnostic plots
+>> 2.      Residual quantile comparison plot
+>> 3.      Component+residuals plot
+>> 4.      Added variables plot
+>> 5.      Influence plot
+>> 6.      Effects plot
+>> q.      Conduct chi-square using campus.rating and grade.type.
+>> r.        Aggregate all the variables in the file by region (using REGION) and save to a new file called cref_cfin_cstud_agg.rdat
+>>
+>>
+>>
+>>
+>> Below is the actual syntax for the above tasks:
+>> ======================// beginning of R syntax //=======================
+>> # Import CREF
+>> CREF <- sqlQuery(channel = 1, select * from [cref_tabdelimited$])
+>> attach(CREF)
+>> # SORT
+>> CREF<- order(+CREF$campus)
+>> CREF
+>> # variable labels
+>> library(Hmisc)
+>> label(CREF$DISTNAME)<- "District Name"
+>> label(CREF$CAMPNAME)<- "Campus Name"
+>> label(CREF$CACKDTL)<- "Campus 2007 Ratings: GPA Acknowledgment Detail"
+>> label(CREF$CAMPUS)<- "CURRENT 9-DIGIT CDC NUMBER"
+>> label(CREF$DISTRICT)<- "6 Digit County District Number"
+>> label(CREF$COUNTY)<- "3 Digit County Number"
+>> label(CREF$REGION)<- "2 Digit ESC Region"
+>> label(CREF$CNTYNAME)<- "County Name"
+>> label(CREF$GRDTYPE)<- "Campus Type (B,E,M,S) Total Enrollment"
+>> label(CREF$GRDSPAN)<- "Grade Span (Total Enrollment)"
+>> label(CREF$CFLCHART)<- "CAMPUS 2007 Flag-Chater School (Y/N)"
+>> label(CREF$PAIRCAMP)<- "CAMPUS 2007 Flag-Campus/District No. of TAKS Giver"
+>> label(CREF$PAIRNAME)<- "CAMPUS 2007 Flag-Campus/District Name of TAKS Giver"
+>> label(CREF$C_RATING)<- "Campus 2007 Ratings: Final Accountability Rating"
+>> #Import CSTUD
+>> CSTUD <- read.table("C:/Users/Matt/Desktop/TTU/Courses/EPSY 5385_Stats Packages/DATA FILES/cstud.dat", header=TRUE, sep=",", na.strings="NA", dec=".", strip.white=TRUE)
+>> attach(CSTUD)
+>> # SORT
+>> CSTUD<- order(+CSTUD$campus)
+>> CSTUD
+>> # variable labels
+>> library(Hmisc)
+>> label(CSTUD$CA0GR06N)<- "Campus 2006 Graduates: All Students Count"
+>> label(CSTUD$CA0GH06N)<- "Campus 2006 Graduates: Recom HS Pgm All Students Count"
+>> label(CSTUD$CA0GM06N)<- "Campus 2006 Graduates: Min HS Pgm All Students Count"
+>> label(CSTUD$CB0GR06N)<- "Campus 2006 Graduates: African American Count"
+>> label(CSTUD$CH0GR06N)<- "Campus 2006 Graduates: Hispanic Count"
+>> label(CSTUD$CW0GR06N)<- "Campus 2006 Graduates: White Count"
+>> label(CSTUD$CI0GR06N)<- "Campus 2006 Graduates: Native American Count"
+>> label(CSTUD$CP0GR06N)<- "Campus 2006 Graduates: Asian/Pacific Islander Count"
+>> label(CSTUD$CS0GR06N)<- "Campus 2006 Graduates: Special Ed Count"
+>> label(CSTUD$BPETALLC)<- "Group 2007 Student: All Students Count"
+>> label(CSTUD$BA0GR06N)<- "Group 2006 Graduates: All Students Count"
+>> label(CSTUD$BB0GR06N)<- "Group 2006 Graduates: African American Count"
+>> label(CSTUD$BH0GR06N)<- "Group 2006 Graduates: Hispanic Count"
+>> label(CSTUD$BW0GR06N)<- "Group 2006 Graduates: White Count"
+>> label(CSTUD$BI0GR06N)<- "Group 2006 Graduates: Native American Count"
+>> label(CSTUD$BP0GR06N)<- "Group 2006 Graduates: Asian/Pacific Islander Count"
+>> label(CSTUD$BS0GR06N)<- "Group 2006 Graduates: Special Ed Count"
+>> label(CSTUD$BA0GH06N)<- "Group 2006 Graduates: Recom HS Pgm All Students Count"
+>> label(CSTUD$BA0GM06N)<- "Group 2006 Graduates: Min HS Pgm All Students Count"
+>> label(CSTUD$BPETDISC)<- "Group 2006 DAEP: Count"
+>> label(CSTUD$CPERRAKR)<- "Campus 2006 Retention: Regular Ed KG Rate"
+>> label(CSTUD$CPERRA1R)<- "Campus 2006 Retention: Regular Ed 01 Rate"
+>> label(CSTUD$CPERRA2R)<- "Campus 2006 Retention: Regular Ed 02 Rate"
+>> label(CSTUD$CPERRA3R)<- "Campus 2006 Retention: Regular Ed 03 Rate"
+>> label(CSTUD$CPERRA4R)<- "Campus 2006 Retention: Regular Ed 04 Rate"
+>> label(CSTUD$CPERRA5R)<- "Campus 2006 Retention: Regular Ed 05 Rate"
+>> label(CSTUD$CPERRA6R)<- "Campus 2006 Retention: Regular Ed 06 Rate"
+>> label(CSTUD$CPERRA7R)<- "Campus 2006 Retention: Regular Ed 07 Rate"
+>> label(CSTUD$CPERRA8R)<- "Campus 2006 Retention: Regular Ed 08 Rate"
+>> label(CSTUD$CPERSAKR)<- "Campus 2006 Retention: Special Ed KG Rate"
+>> label(CSTUD$CPERSA1R)<- "Campus 2006 Retention: Special Ed 01 Rate"
+>> label(CSTUD$CPERSA2R)<- "Campus 2006 Retention: Special Ed 02 Rate"
+>> label(CSTUD$CPERSA3R)<- "Campus 2006 Retention: Special Ed 03 Rate"
+>> label(CSTUD$CPERSA4R)<- "Campus 2006 Retention: Special Ed 04 Rate"
+>> label(CSTUD$CPERSA5R)<- "Campus 2006 Retention: Special Ed 05 Rate"
+>> label(CSTUD$CPERSA6R)<- "Campus 2006 Retention: Special Ed 06 Rate"
+>> label(CSTUD$CPERSA7R)<- "Campus 2006 Retention: Special Ed 07 Rate"
+>> label(CSTUD$CPERSA8R)<- "Campus 2006 Retention: Special Ed 08 Rate"
+>> label(CSTUD$CPETDISC)<- "Campus 2006 DAEP: Count"
+>> label(CSTUD$CPETDISP)<- "Campus 2006 DAEP: Percent"
+>> label(CSTUD$CPETLEPP)<- "Campus 2007 Student: LEP Percent"
+>> label(CSTUD$CPETECOP)<- "Campus 2007 Student: ECO Percent"
+>> label(CSTUD$CPETECOC)<- "Campus 2007 Student: ECO Count"
+>> label(CSTUD$CPETLEPC)<- "Campus 2007 Student: LEP Count"
+>> label(CSTUD$CPETSPEC)<- "Campus 2007 Student: SPE Count"
+>> label(CSTUD$CPETGIFC)<- "Campus 2007 Student: GIF/TAL Count"
+>> label(CSTUD$CPETBILC)<- "Campus 2007 Student: BIL Count"
+>> label(CSTUD$CPETALLC)<- "Campus 2007 Student: All Students Count"
+>> label(CSTUD$CPETVOCC)<- "Campus 2007 Student: VOC Count"
+>> label(CSTUD$CPETINDC)<- "Campus 2007 Student: Native American Count"
+>> label(CSTUD$CPETPACC)<- "Campus 2007 Student: Asian/Pacific Islander Count"
+>> label(CSTUD$CPETBLAC)<- "Campus 2007 Student: African American Count"
+>> label(CSTUD$CPETHISC)<- "Campus 2007 Student: Hispanic Count"
+>> label(CSTUD$CPETWHIC)<- "Campus 2007 Student: White Count"
+>> label(CSTUD$CPETGEEC)<- "Campus 2007 Student: EE Count"
+>> label(CSTUD$CPETGPKC)<- "Campus 2007 Student: PK Count"
+>> label(CSTUD$CPETGKNC)<- "Campus 2007 Student: KG Count"
+>> label(CSTUD$CPETG01C)<- "Campus 2007 Student: 01 Count"
+>> label(CSTUD$CPETG02C)<- "Campus 2007 Student: 02 Count"
+>> label(CSTUD$CPETG03C)<- "Campus 2007 Student: 03 Count"
+>> label(CSTUD$CPETG04C)<- "Campus 2007 Student: 04 Count"
+>> label(CSTUD$CPETG05C)<- "Campus 2007 Student: 05 Count"
+>> label(CSTUD$CPETG06C)<- "Campus 2007 Student: 06 Count"
+>> label(CSTUD$CPETG07C)<- "Campus 2007 Student: 07 Count"
+>> label(CSTUD$CPETG08C)<- "Campus 2007 Student: 08 Count"
+>> label(CSTUD$CPETG09C)<- "Campus 2007 Student: 09 Count"
+>> label(CSTUD$CPETG10C)<- "Campus 2007 Student: 10 Count"
+>> label(CSTUD$CPETG11C)<- "Campus 2007 Student: 11 Count"
+>> label(CSTUD$CPETG12C)<- "Campus 2007 Student: 12 Count"
+>> label(CSTUD$CPEMALLC)<- "Campus 2007 Student: 06 Mobility Numerator (Campus Only)"
+>> label(CSTUD$CPETWHIP)<- "Campus 2007 Student: White Percent"
+>> label(CSTUD$CPETBLAP)<- "Campus 2007 Student: African American Percent"
+>> label(CSTUD$CPETHISP)<- "Campus 2007 Student: Hispanic Percent"
+>> label(CSTUD$CPETINDP)<- "Campus 2007 Student: Native American Percent"
+>> label(CSTUD$CPETPACP)<- "Campus 2007 Student: Asian/Pacific Islander Percent"
+>> label(CSTUD$CPETSPEP)<- "Campus 2007 Student: SPE Percent"
+>> label(CSTUD$CPETVOCP)<- "Campus 2007 Student: VOC Percent"
+>> label(CSTUD$CPETBILP)<- "Campus 2007 Student: BIL Percent"
+>> label(CSTUD$CPETGIFP)<- "Campus 2007 Student: GIF/TAL Percent"
+>> label(CSTUD$CPETGEEP)<- "Campus 2007 Student: EE Percent"
+>> label(CSTUD$CPETGPKP)<- "Campus 2007 Student: PK Percent"
+>> label(CSTUD$CPETGKNP)<- "Campus 2007 Student: KG Percent"
+>> label(CSTUD$CPETG01P)<- "Campus 2007 Student: 01 Percent"
+>> label(CSTUD$CPETG02P)<- "Campus 2007 Student: 02 Percent"
+>> label(CSTUD$CPETG03P)<- "Campus 2007 Student: 03 Percent"
+>> label(CSTUD$CPETG04P)<- "Campus 2007 Student: 04 Percent"
+>> label(CSTUD$CPETG05P)<- "Campus 2007 Student: 05 Percent"
+>> label(CSTUD$CPETG06P)<- "Campus 2007 Student: 06 Percent"
+>> label(CSTUD$CPETG07P)<- "Campus 2007 Student: 07 Percent"
+>> label(CSTUD$CPETG08P)<- "Campus 2007 Student: 08 Percent"
+>> label(CSTUD$CPETG09P)<- "Campus 2007 Student: 09 Percent"
+>> label(CSTUD$CPETG10P)<- "Campus 2007 Student: 10 Percent"
+>> label(CSTUD$CPETG11P)<- "Campus 2007 Student: 11 Percent"
+>> label(CSTUD$CPETG12P)<- "Campus 2007 Student: 12 Percent"
+>> label(CSTUD$CPEMALLP)<- "Campus 2007 Student: 06 Mobility Percent (Campus Only)"
+>> label(CSTUD$BPETWHIP)<- "Group 2007 Student: White Percent"
+>> label(CSTUD$BPETBLAP)<- "Group 2007 Student: African American Percent"
+>> label(CSTUD$BPETHISP)<- "Group 2007 Student: Hispanic Percent"
+>> label(CSTUD$BPETINDP)<- "Group 2007 Student: Native American Percent"
+>> label(CSTUD$BPETPACP)<- "Group 2007 Student: Asian/Pacific Islander Percent"
+>> label(CSTUD$BPETECOP)<- "Group 2007 Student: ECO Percent"
+>> label(CSTUD$BPETLEPP)<- "Group 2007 Student: LEP Percent"
+>> label(CSTUD$BPETSPEP)<- "Group 2007 Student: SPE Percent"
+>> label(CSTUD$BPETVOCP)<- "Group 2007 Student: VOC Percent"
+>> label(CSTUD$BPETBILP)<- "Group 2007 Student: BIL Percent"
+>> label(CSTUD$BPETGIFP)<- "Group 2007 Student: GIF/TAL Percent"
+>> label(CSTUD$BPETGEEP)<- "Group 2007 Student: EE Percent"
+>> label(CSTUD$BPETGPKP)<- "Group 2007 Student: PK Percent"
+>> label(CSTUD$BPETGKNP)<- "Group 2007 Student: KG Percent"
+>> label(CSTUD$BPETG01P)<- "Group 2007 Student: 01 Percent"
+>> label(CSTUD$BPETG02P)<- "Group 2007 Student: 02 Percent"
+>> label(CSTUD$BPETG03P)<- "Group 2007 Student: 03 Percent"
+>> label(CSTUD$BPETG04P)<- "Group 2007 Student: 04 Percent"
+>> label(CSTUD$BPETG05P)<- "Group 2007 Student: 05 Percent"
+>> label(CSTUD$BPETG06P)<- "Group 2007 Student: 06 Percent"
+>> label(CSTUD$BPETG07P)<- "Group 2007 Student: 07 Percent"
+>> label(CSTUD$BPETG08P)<- "Group 2007 Student: 08 Percent"
+>> label(CSTUD$BPETG09P)<- "Group 2007 Student: 09 Percent"
+>> label(CSTUD$BPETG10P)<- "Group 2007 Student: 10 Percent"
+>> label(CSTUD$BPETG11P)<- "Group 2007 Student: 11 Percent"
+>> label(CSTUD$BPETG12P)<- "Group 2007 Student: 12 Percent"
+>> label(CSTUD$BPEMALLP)<- "Group 2007 Student: 06 Mobility Percent (Campus ONLY)"
+>> label(CSTUD$BPERRAKR)<- "Group 2006 Retention: Regular Ed KG Rate"
+>> label(CSTUD$BPERRA1R)<- "Group 2006 Retention: Regular Ed 01 Rate"
+>> label(CSTUD$BPERRA2R)<- "Group 2006 Retention: Regular Ed 02 Rate"
+>> label(CSTUD$BPERRA3R)<- "Group 2006 Retention: Regular Ed 03 Rate"
+>> label(CSTUD$BPERRA4R)<- "Group 2006 Retention: Regular Ed 04 Rate"
+>> label(CSTUD$BPERRA5R)<- "Group 2006 Retention: Regular Ed 05 Rate"
+>> label(CSTUD$BPERRA6R)<- "Group 2006 Retention: Regular Ed 06 Rate"
+>> label(CSTUD$BPERRA7R)<- "Group 2006 Retention: Regular Ed 07 Rate"
+>> label(CSTUD$BPERRA8R)<- "Group 2006 Retention: Regular Ed 08 Rate"
+>> label(CSTUD$BPERSAKR)<- "Group 2006 Retention: Special Ed KG Rate"
+>> label(CSTUD$BPERSA1R)<- "Group 2006 Retention: Special Ed 01 Rate"
+>> label(CSTUD$BPERSA2R)<- "Group 2006 Retention: Special Ed 02 Rate"
+>> label(CSTUD$BPERSA3R)<- "Group 2006 Retention: Special Ed 03 Rate"
+>> label(CSTUD$BPERSA4R)<- "Group 2006 Retention: Special Ed 04 Rate"
+>> label(CSTUD$BPERSA5R)<- "Group 2006 Retention: Special Ed 05 Rate"
+>> label(CSTUD$BPERSA6R)<- "Group 2006 Retention: Special Ed 06 Rate"
+>> label(CSTUD$BPERSA7R)<- "Group 2006 Retention: Special Ed 07 Rate"
+>> label(CSTUD$BPERSA8R)<- "Group 2006 Retention: Special Ed 08 Rate"
+>> label(CSTUD$BPETDISP)<- "Group 2006 DAEP: Percent"
+>> CSTUD$BPETALLC [CSTUD$BPETALLC == 0] <- NA
+>> CSTUD$BPETALLC [is.na(CSTUD$BPETALLC)] <- 0
+>> # Import CFIN
+>> CFIN <- read.table("C:/Users/Matt/Desktop/TTU/Courses/EPSY 5385_Stats Packages/DATA FILES/cfin.dat", header=TRUE, sep=",", na.strings="NA", dec=".", strip.white=TRUE)
+>> attach(CFIN)
+>> # SORT
+>> CFIN<- order(+CFIN$campus)
+>> CFIN
+>> # variable labels
+>> library(Hmisc)
+>> label(CFIN$CPFEGADST)<- "Campus 2006 Finance: Expenditure by Function-School Leadership, General Fund"
+>> label(CFIN$CPFEGADIT)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership, General Fund"
+>> label(CFIN$CPFEAADST)<- "Campus 2006 Finance: Expenditure by Function-School Leadership, All Funds"
+>> label(CFIN$CPFEAADIT)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership, All Funds"
+>> label(CFIN$CPFPGREGT)<- "Campus 2006 Finance: Expenditure by Program-Regular, GeneralFund"
+>> label(CFIN$CPFPGVOCT)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology, General Fund"
+>> label(CFIN$CPFPGSPET)<- "Campus 2006 Finance: Expenditure by Program-Special Education, General Fund"
+>> label(CFIN$CPFPGGIFT)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented, General Fund"
+>> label(CFIN$CPFPGBILT)<- "Campus 2006 Finance: Expenditure by Program-Bilingual, General Fund"
+>> label(CFIN$CPFPAREGT)<- "Campus 2006 Finance: Expenditure by Program-Regular, All Funds"
+>> label(CFIN$CPFPAVOCT)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology, All Funds"
+>> label(CFIN$CPFPASPET)<- "Campus 2006 Finance: Expenditure by Program-Special Education, All Funds"
+>> label(CFIN$CPFPAGIFT)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented, All Funds"
+>> label(CFIN$CPFPABILT)<- "Campus 2006 Finance: Expenditure by Program-Bilingual, All Funds"
+>> label(CFIN$CPFEGINST)<- "Campus 2006 Finance: Expenditure by Function-Instruction, General Fund"
+>> label(CFIN$CPFEAINST)<- "Campus 2006 Finance: Expenditure by Function-Instruction, All Funds"
+>> label(CFIN$CPFEGOPRT)<- "Campus 2006 Finance: Expenditure by Function-Total Operating,General Fund"
+>> label(CFIN$CPFEAOPRT)<- "Campus 2006 Finance: Expenditure by Function-Total Operating, All Funds"
+>> label(CFIN$CPFPGALLT)<- "Campus 2006 Finance: Expenditure by Program-Total, General Fund"
+>> label(CFIN$CPFPAALLT)<- "Campus 2006 Finance: Expenditure by Program-Total, All Funds"
+>> label(CFIN$CPFEGINSK)<- "Campus 2006 Finance: Expenditure by Function-Instruction PerPupil, General Fund"
+>> label(CFIN$CPFEGADIK)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership Per Pupil, General Fund"
+>> label(CFIN$CPFEGADSK)<- "Campus 2006 Finance: Expenditure by Function-School Leadership Per Pupil, General Fund"
+>> label(CFIN$CPFEGOPRK)<- "Campus 2006 Finance: Expenditure by Function-Total OperatingPer Pupil, General Fund"
+>> label(CFIN$CPFPGREGK)<- "Campus 2006 Finance: Expenditure by Program-Regular Per Pupil, General Fund"
+>> label(CFIN$CPFPGVOCK)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology Per Pupil, General Fund"
+>> label(CFIN$CPFPGBILK)<- "Campus 2006 Finance: Expenditure by Program-Bilingual Per Pupil, General Fund"
+>> label(CFIN$CPFPGGIFK)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented Per Pupil, General Fund"
+>> label(CFIN$CPFPGSPEK)<- "Campus 2006 Finance: Expenditure by Program-Special Education Per Pupil, General Fund"
+>> label(CFIN$CPFPGALLK)<- "Campus 2006 Finance: Expenditure by Program-Total Per Pupil,General Fund"
+>> label(CFIN$CPFEAINSK)<- "Campus 2006 Finance: Expenditure by Function-Instruction PerPupil, All Funds"
+>> label(CFIN$CPFEAADIK)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership Per Pupil, All Funds"
+>> label(CFIN$CPFEAADSK)<- "Campus 2006 Finance: Expenditure by Function-School Leadership Per Pupil, All Funds"
+>> label(CFIN$CPFEAOPRK)<- "Campus 2006 Finance: Expenditure by Function-Total OperatingPer Pupil, ALL Funds"
+>> label(CFIN$CPFPAREGK)<- "Campus 2006 Finance: Expenditure by Program-Regular Per Pupil, All Funds"
+>> label(CFIN$CPFPAVOCK)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology Per Pupil, All Funds"
+>> label(CFIN$CPFPABILK)<- "Campus 2006 Finance: Expenditure by Program-Bilingual Per Pupil, All Funds"
+>> label(CFIN$CPFPAGIFK)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented Per Pupil, All Funds"
+>> label(CFIN$CPFPASPEK)<- "Campus 2006 Finance: Expenditure by Program-Special Education Per Pupil, All Funds"
+>> label(CFIN$CPFPAALLK)<- "Campus 2006 Finance: Expenditure by Program-Total Per Pupil,All Funds"
+>> label(CFIN$CPFEGRELT)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services, General Fund"
+>> label(CFIN$CPFEARELT)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services, All Funds"
+>> label(CFIN$CPFEGSUPT)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student, General Fund"
+>> label(CFIN$CPFEASUPT)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student, All Funds"
+>> label(CFIN$CPFPGCOMT)<- "Campus 2006 Finance: Expenditure by Program-Compensatory, General Fund"
+>> label(CFIN$CPFPACOMT)<- "Campus 2006 Finance: Expenditure by Program-Compensatory, All Funds"
+>> label(CFIN$CPFPGOTHT)<- "Campus 2006 Finance: Expenditure by Program-Other, General Fund"
+>> label(CFIN$CPFPAOTHT)<- "Campus 2006 Finance: Expenditure by Program-Other, All Funds"
+>> label(CFIN$CPFEGOPRP)<- "Campus 2006 Finance: Expenditure by Function-Total OperatingPercent, General Fund"
+>> label(CFIN$CPFEGINSP)<- "Campus 2006 Finance: Expenditure by Function-Instruction Percent, General Fund"
+>> label(CFIN$CPFEGRELP)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services Percent, General Fund"
+>> label(CFIN$CPFEGADIP)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership Percent, General Fund"
+>> label(CFIN$CPFEGADSP)<- "Campus 2006 Finance: Expenditure by Function-School Leadership Percent, General Fund"
+>> label(CFIN$CPFEGSUPP)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student Percent, General Fund"
+>> label(CFIN$CPFEAOPRP)<- "Campus 2006 Finance: Expenditure by Function-Total OperatingPercent, All Funds"
+>> label(CFIN$CPFEAINSP)<- "Campus 2006 Finance: Expenditure by Function-Instruction Percent, All Funds"
+>> label(CFIN$CPFEARELP)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services Percent, All Funds"
+>> label(CFIN$CPFEAADIP)<- "Campus 2006 Finance: Expenditure by Function-Instructional Leadership Percent, All Funds"
+>> label(CFIN$CPFEAADSP)<- "Campus 2006 Finance: Expenditure by Function-School Leadership Percent, All Funds"
+>> label(CFIN$CPFEASUPP)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student Percent, All Funds"
+>> label(CFIN$CPFPGALLP)<- "Campus 2006 Finance: Expenditure by Program-Total Percent, General Fund"
+>> label(CFIN$CPFPGBILP)<- "Campus 2006 Finance: Expenditure by Program-Bilingual Percent, General Fund"
+>> label(CFIN$CPFPGVOCP)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology Percent, General Fund"
+>> label(CFIN$CPFPGCOMP)<- "Campus 2006 Finance: Expenditure by Program-Compensatory Percent, General Fund"
+>> label(CFIN$CPFPGGIFP)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented Percent, General Fund"
+>> label(CFIN$CPFPGREGP)<- "Campus 2006 Finance: Expenditure by Program-Regular Percent,General Fund"
+>> label(CFIN$CPFPGSPEP)<- "Campus 2006 Finance: Expenditure by Program-Special Education Percent, General Fund"
+>> label(CFIN$CPFPGOTHP)<- "Campus 2006 Finance: Expenditure by Program-Other Percent, General Fund"
+>> label(CFIN$CPFPAALLP)<- "Campus 2006 Finance: Expenditure by Program-Total Percent, All Funds"
+>> label(CFIN$CPFPABILP)<- "Campus 2006 Finance: Expenditure by Program-Bilingual Percent, All Funds"
+>> label(CFIN$CPFPAVOCP)<- "Campus 2006 Finance: Expenditure by Program-Career & Technology Percent, All Funds"
+>> label(CFIN$CPFPACOMP)<- "Campus 2006 Finance: Expenditure by Program-Compensatory Percent, All Funds"
+>> label(CFIN$CPFPAGIFP)<- "Campus 2006 Finance: Expenditure by Program-Gifted & Talented Percent, All Funds"
+>> label(CFIN$CPFPAREGP)<- "Campus 2006 Finance: Expenditure by Program-Regular Percent,All Funds"
+>> label(CFIN$CPFPASPEP)<- "Campus 2006 Finance: Expenditure by Program-Special Education Percent, All Funds"
+>> label(CFIN$CPFPAOTHP)<- "Campus 2006 Finance: Expenditure by Program-Other Percent, All Funds"
+>> label(CFIN$CPFEGRELK)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services Per Pupil, General Fund"
+>> label(CFIN$CPFEARELK)<- "Campus 2006 Finance: Expenditure by Function-Instructional-Related Services Per Pupil, All Funds"
+>> label(CFIN$CPFEGSUPK)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student Per Pupil, General Fund"
+>> label(CFIN$CPFEASUPK)<- "Campus 2006 Finance: Expenditure by Function-Support Services-Student Per Pupil, All Funds"
+>> label(CFIN$CPFPGCOMK)<- "Campus 2006 Finance: Expenditure by Program-Compensatory PerPupil, General Fund"
+>> label(CFIN$CPFPACOMK)<- "Campus 2006 Finance: Expenditure by Program-Compensatory PerPupil, All Funds"
+>> label(CFIN$CPFPGOTHK)<- "Campus 2006 Finance: Expenditure by Program-Other Per Pupil,General Fund"
+>> label(CFIN$CPFPAOTHK)<- "Campus 2006 Finance: Expenditure by Program-Other Per Pupil,All Funds"
+>> label(CFIN$BPFEAOPRT)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Total Operating, All Funds"
+>> label(CFIN$BPFEAINST)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instruction, All Funds"
+>> label(CFIN$BPFEARELT)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional-Related Services, All Funds"
+>> label(CFIN$BPFEAADIT)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional Leadership, All Funds"
+>> label(CFIN$BPFEAADST)<- "Campus 2006 Finance: Group Total-Expenditure by Function-School Leadership, All Funds"
+>> label(CFIN$BPFEASUPT)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Support Services--Student, All Funds"
+>> label(CFIN$BPFPAALLT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Total, All Funds"
+>> label(CFIN$BPFPABILT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Bilingual, All Funds"
+>> label(CFIN$BPFPAVOCT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Career & Technology, All Funds"
+>> label(CFIN$BPFPACOMT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Compensatory, All Funds"
+>> label(CFIN$BPFPAGIFT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Gifted & Talented, All Funds"
+>> label(CFIN$BPFPAREGT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Regular, All Funds"
+>> label(CFIN$BPFPASPET)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Special Education, All Funds"
+>> label(CFIN$BPFPAOTHT)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Other, All Funds"
+>> label(CFIN$BPFPAALLP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Total Percent, All Funds"
+>> label(CFIN$BPFPAREGP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Regular Percent, All Funds"
+>> label(CFIN$BPFPABILP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Bilingual Percent, All Funds"
+>> label(CFIN$BPFPACOMP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Compensatory Percent, All Funds"
+>> label(CFIN$BPFPAGIFP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Gifted & Talented Percent, All Funds"
+>> label(CFIN$BPFPAVOCP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Career & Technology Percent, All Funds"
+>> label(CFIN$BPFPASPEP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Special Education Percent, All Funds"
+>> label(CFIN$BPFPAOTHP)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Other Percent, All Funds"
+>> label(CFIN$BPFEAOPRP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Total Operating Percent, All Funds"
+>> label(CFIN$BPFEAINSP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instruction Percent, All Funds"
+>> label(CFIN$BPFEARELP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional-Related Services Percent, All Funds"
+>> label(CFIN$BPFEAADIP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional Leadership Percent, All Funds"
+>> label(CFIN$BPFEAADSP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-School Leadership Percent, All Funds"
+>> label(CFIN$BPFEASUPP)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Support Services--Student Percent, All Funds"
+>> label(CFIN$BPFEAOPRK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Total Operating Per Pupil, All Funds"
+>> label(CFIN$BPFEAINSK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instruction Per Pupil, All Funds"
+>> label(CFIN$BPFEARELK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional-Related Services Per Pupil, All Funds"
+>> label(CFIN$BPFEAADIK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Instructional Leadership Per Pupil, All Funds"
+>> label(CFIN$BPFEAADSK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-School Leadership Per Pupil, All Funds"
+>> label(CFIN$BPFEASUPK)<- "Campus 2006 Finance: Group Total-Expenditure by Function-Support Services--Student Per Pupil, All Funds"
+>> label(CFIN$BPFPAALLK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Total Per Pupil, All Funds"
+>> label(CFIN$BPFPABILK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Bilingual Per Pupil, All Funds"
+>> label(CFIN$BPFPAVOCK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Career & Technology Per Pupil, All Funds"
+>> label(CFIN$BPFPACOMK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Compensatory Per Pupil, All Funds"
+>> label(CFIN$BPFPAGIFK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Gifted & Talented Per Pupil, All Funds"
+>> label(CFIN$BPFPAREGK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Regular Per Pupil, All Funds"
+>> label(CFIN$BPFPASPEK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Special Education Per Pupil, All Funds"
+>> label(CFIN$BPFPAOTHK)<- "Campus 2006 Finance: Group Total-Expenditure by Program-Other Per Pupil, All Funds"
+>> # merge two datasets by CAMPUS
+>> total <- merge(CREF,CSTUD, by="CAMPUS", all=T)
+>> attach(total)
+>> total2 <- merge(total,CFIN, by="CAMPUS", all=T)
+>> attach(total2)
+>> # Sort
+>> total2 <- order(+total2$campus)
+>> total2
+>> #Recodes
+>> total2$campus.rating <- recode(total2$C_RATING, '"A" = 1; "E" = 2; "R" = 3; "X" = 4; "L" = 5; ', as.factor.result=TRUE)
+>> total2$campus.rating <- factor(total2$campus.rating,levels=c("1","2","3","4","5"),labels=c("Acceptable","Exemplary","Recognized","Unacceptable","Unknown"))
+>> total2$grade.type <- recode(total2$GRDTYPE, '"B" = 1; "E" = 2; "M" = 3; "S" = 4; ', as.factor.result=TRUE)
+>> total2$grade.type <- factor(total2$grade.type,levels=c("1","2","3","4"),labels=c("Both","Elementary","Middle","Senior"))
+>> total2$CPERRA1R <- as.numeric(total2$CPERRA1R)
+>> total2$log.cperra1r <- with(total2, log10(CPERRA1R))
+>> # auto-recode -- county.name
+>> #Summary statistics
+>> summary(total2)
+>> # Histogram
+>> Hist(total2$BA0GH06N, scale="frequency", breaks="Sturges", col="darkgray")
+>> #Scatterplot
+>> scatterplot(BA0GR06N~BA0GM06N, reg.line=FALSE, smooth=FALSE, labels=FALSE, boxplots='xy', span=0.5, data=total2)
+>> #Scatterplot matrices
+>> scatterplot.matrix(~BA0GH06N+BA0GR06N+BH0GR06N+BP0GR06N+BPETDISC, reg.line=FALSE, smooth=FALSE, span=0.5, diagonal = 'density', data=total2)
+>> # Split File -- CAN'T IN R
+>> # 1-way ANOVA
+>> total2$CPETECOP <- as.numeric(total2$CPETECOP)
+>> .Anova<- lm(CPETECOP ~ campus.rating, data=total2)
+>> anova(.Anova)
+>> tapply(total2$CPETECOP, total2$campus.rating, mean, na.rm=TRUE) # means
+>> tapply(total2$CPETECOP, total2$campus.rating, sd, na.rm=TRUE) # std. deviations
+>> tapply(total2$CPETECOP, total2$campus.rating, function(x) sum(!is.na(x))) # counts
+>> remove(.Anova)
+>> # Repeated measures ANOVA?
+>> GLM.1 <- glm(BPFEAOPRT  ~ CPFEAOPRT, family=binomial(logit), data=total2)
+>> summary(GLM.1)
+>> # Factorial ANOVA
+>> # Correlation
+>> library(RODBC)
+>> total2$CPFPGSPET <- as.numeric(total2$CPFPGSPET)
+>> total2$CPFPGGIFT <- as.numeric(total2$CPFPGGIFT)
+>> cor.test(total2$CPFPGSPET , total2$CPFPGGIFT, use="pairwise.complete.obs", alternative="two.sided", method="pearson")
+>> # Bivariate Regression
+>> total2$CPFPGGIFK <- as.numeric(total2$CPFPGGIFK)
+>> total2$CPFPGSPEK <- as.numeric(total2$CPFPGSPEK)
+>> RegModel.1 <- lm(CPFPGGIFK~CPFPGSPEK, data=total2)
+>> summary(RegModel.1)
+>> anova(RegModel.1)
+>> plot(RegModel.1)
+>> termplot(RegModel.1)
+>> bptest(CPFPGGIFK~CPFPGSPEK, varformula = ~ fitted.values(RegModel.1), studentize=FALSE, data=total2)
+>> dwtest(CPFPGGIFK~CPFPGSPEK, alternative="greater", data=total2)
+>> resettest(CPFPGGIFK~CPFPGSPEK, power=2:3, type="regressor", data=total2)
+>> outlier.test(RegModel.1)
+>> #Graphs
+>> oldpar <- par(oma=c(0,0,3,0), mfrow=c(2,2))
+>> plot(RegModel.1)
+>> par(oldpar)
+>> qq.plot(RegModel.1, simulate=TRUE, labels=FALSE)
+>> cr.plots(RegModel.1, ask=FALSE)
+>> av.plots(RegModel.1, ask=FALSE, identify.points=TRUE)
+>> influencePlot(RegModel.1)
+>> trellis.device(theme="col.whitebg")
+>> plot(all.effects(RegModel.1), ask=FALSE)
+>> # Multiple Regression
+>> total2$CPFPGREGT <- as.numeric(total2$CPFPGREGT)
+>> total2$CPFPAVOCT <- as.numeric(total2$CPFPAVOCT)
+>> total2$CPFPASPET <- as.numeric(total2$CPFPASPET)
+>> total2$CPFPABILT <- as.numeric(total2$CPFPABILT)
+>> RegModel.2 <- lm(CPFPGREGT~CPFPAVOCT+CPFPASPET+CPFPABILT, data=total2)
+>> summary(RegModel.2)
+>> anova(RegModel.2)
+>> plot(RegModel.2)
+>> termplot(RegModel.2)
+>> vif(RegModel.1)
+>> bptest(CPFPGREGT~CPFPAVOCT+CPFPASPET+CPFPABILT, varformula = ~ fitted.values(RegModel.1), studentize=FALSE, data=total2)
+>> dwtest(CPFPGREGT~CPFPAVOCT+CPFPASPET+CPFPABILT, alternative="greater", data=total2)
+>> resettest(CPFPGREGT~CPFPAVOCT+CPFPASPET+CPFPABILT, power=2:3, type="regressor", data=total2)
+>> outlier.test(RegModel.1)
+>> #Graphs
+>> oldpar <- par(oma=c(0,0,3,0), mfrow=c(2,2))
+>> plot(RegModel.2)
+>> par(oldpar)
+>> qq.plot(RegModel.2, simulate=TRUE, labels=FALSE)
+>> cr.plots(RegModel.2, ask=FALSE)
+>> av.plots(RegModel.2, ask=FALSE, identify.points=TRUE)
+>> influencePlot(RegModel.2)
+>> trellis.device(theme="col.whitebg")
+>> plot(all.effects(RegModel.2), ask=FALSE)
+>> # Chi-square
+>> chisq.test(total2$campus.rating, total2$grade.type))
+>> # Aggregate
+>> attach(total2)
+>> cref_cfin_cstud_agg <-aggregate(total2, by=list(REGION),
+>>   FUN=mean, na.rm=TRUE)
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+From jones at reed.edu  Fri Nov 14 18:26:51 2008
+From: jones at reed.edu (Albyn Jones)
+Date: Fri, 14 Nov 2008 09:26:51 -0800
+Subject: [R-sig-teaching] R Equivalent of SPSS "Split File"
+	and	"AutoRecode"
+In-Reply-To: <40e66e0b0811140752vadc9d40w9a99083fa42c0cee@mail.gmail.com>
+References: <D1B8B0AC6612B944BEEF511B4C8BB14B1B452DC9A2@CETO.ttu.edu>
+	<20081113233155.GG21149@laplace.reed.edu>
+	<40e66e0b0811140752vadc9d40w9a99083fa42c0cee@mail.gmail.com>
+Message-ID: <20081114172651.GA3693@laplace.reed.edu>
+
+Thanks Douglas!
+
+I am sure that there are other ways in which my R habits are becoming
+stylistically obsolete.  Is there a "manual of R style" somewhere?
+
+albyn
+
+On Fri, Nov 14, 2008 at 09:52:50AM -0600, Douglas Bates wrote:
+> On Thu, Nov 13, 2008 at 5:31 PM, Albyn Jones <jones at reed.edu> wrote:
+> >  I have no clue what "autorecode" means.  Selecting a subset of a file is
+> > easy.  Suppose your data frame is named X, assuming REGION is numeric:
+> >
+> >    attach(X)
+> >    X17 = X[REGION == 17,]
+> 
+> I think it is better style to use
+> 
+> X17 <- subset(X, REGION == 17)
+> 
+> Using attach/detach is discouraged these days.  The "subset" function,
+> the"with" function and the general use of the formula/data arguments
+> in model fitting functions and the lattice graphics functions provide
+> cleaner approaches than using attach.  The problem with attach is that
+> it has the side-effect of changing the search path, which is, of
+> course, what it is supposed to do.  However, any functions with
+> side-effects should be used only when you can't find a better
+> alternative and in this case there are better alternatives.
+> 
+>
+
+
+
+From m.kossner at tu-bs.de  Wed Nov 19 09:19:23 2008
+From: m.kossner at tu-bs.de (markus)
+Date: Wed, 19 Nov 2008 09:19:23 +0100
+Subject: [R-sig-teaching] Simulating Data with predefined reg-coefficients
+	and R2
+Message-ID: <4923CC0B.5040206@tu-bs.de>
+
+Hi all at the R-teaching mailing list,
+I am currently preparing my first  R-based  regression  course. Along 
+this way I encountered the following problem:
+
+I want to simulate multivariate data that has some specific predefined 
+attributes. For example I want to produce a Predictor-matrix (X)
+and a response-vector (y) that will yield a given vector of regression 
+coefficients (b) and a given R2 when I perform a multivariate linear 
+Regression
+on the dataset. This would be best described by the well known equation 
+y=X*b+e.
+In some next step I also want to simulate polynomic relationships, but I 
+think that should work not very different.
+
+I already searched the web and found some hints, but no clear answer. 
+There is a pdf out there from John H. Walker (Teaching Regression with 
+simulation)
+which does however not discuss this special topic. I also have a Paper 
+from K.Baumann 'Chance Correlation in variable subset regression: 
+Influence of the objective function, selection mechanism and Ensemble 
+averaging' QCS, 2005. There an 'Autoregressive process' is used to 
+simulate such data.
+
+Now my question is:
+Is it really that difficult to simulate such data? Is there perhaps a 
+package in R facilitating at least parts of this work?
+
+Thanks in advance for the help,
+Markus
+
+
+
+From bates at stat.wisc.edu  Wed Nov 19 15:25:32 2008
+From: bates at stat.wisc.edu (Douglas Bates)
+Date: Wed, 19 Nov 2008 08:25:32 -0600
+Subject: [R-sig-teaching] Simulating Data with predefined
+	reg-coefficients and R2
+In-Reply-To: <4923CC0B.5040206@tu-bs.de>
+References: <4923CC0B.5040206@tu-bs.de>
+Message-ID: <40e66e0b0811190625o75a24847s3526c9ead5573647@mail.gmail.com>
+
+On Wed, Nov 19, 2008 at 2:19 AM, markus <m.kossner at tu-bs.de> wrote:
+> Hi all at the R-teaching mailing list,
+> I am currently preparing my first  R-based  regression  course. Along this
+> way I encountered the following problem:
+
+> I want to simulate multivariate data that has some specific predefined
+> attributes. For example I want to produce a Predictor-matrix (X)
+> and a response-vector (y) that will yield a given vector of regression
+> coefficients (b) and a given R2 when I perform a multivariate linear
+> Regression
+> on the dataset. This would be best described by the well known equation
+> y=X*b+e.
+> In some next step I also want to simulate polynomic relationships, but I
+> think that should work not very different.
+
+Do you want to simulate data such that the least squares estimates of
+the regression coefficients are exactly b and the R2 is exactly the
+value you specify or do you want to simulate data according to a model
+for which the "true but unknown" regression coefficients are b and the
+variance of the random noise is a particular value?
+
+The second scenario is easier than the first but both are possible.
+
+To simulate from a "true" model X %*% beta + epsilon where
+Var(epsilon) = sigma^2 * diag(n) you simply add random noise to the
+vector of true responses.  Because the lm function in R can take a
+matrix of responses (each column corresponding to a response vector)
+it is best to simulate a matrix of y values as
+
+# assign r to be the number of replicates desired
+n <- nrow(X)
+ymat <- X %*% beta + matrix(rnorm(n * r, sd = sigma), nrow = n)
+
+If you want the second scenario where you simulate data such that the
+least squares estimates are exactly b (or as close to b as floating
+point computation allows) then you should use the QR decomposition of
+X.  The Q matrix from QR decomposition is an orthogonal matrix
+corresponding to a rigid transformation of the response space after
+which the part determining the coefficients and the part corresponding
+to the noise are different groups of elements.  Under that basis you
+can establish the required coefficients and a noise term of exactly
+the desired length.
+
+> I already searched the web and found some hints, but no clear answer. There
+> is a pdf out there from John H. Walker (Teaching Regression with simulation)
+> which does however not discuss this special topic. I also have a Paper from
+> K.Baumann 'Chance Correlation in variable subset regression: Influence of
+> the objective function, selection mechanism and Ensemble averaging' QCS,
+> 2005. There an 'Autoregressive process' is used to simulate such data.
+>
+> Now my question is:
+> Is it really that difficult to simulate such data? Is there perhaps a
+> package in R facilitating at least parts of this work?
+>
+> Thanks in advance for the help,
+> Markus
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+From Greg.Snow at imail.org  Wed Nov 19 17:29:39 2008
+From: Greg.Snow at imail.org (Greg Snow)
+Date: Wed, 19 Nov 2008 09:29:39 -0700
+Subject: [R-sig-teaching] Simulating Data with predefined
+ reg-coefficients	and R2
+In-Reply-To: <4923CC0B.5040206@tu-bs.de>
+References: <4923CC0B.5040206@tu-bs.de>
+Message-ID: <B37C0A15B8FB3C468B5BC7EBC7DA14CC61C136847B@LP-EXMBVS10.CO.IHC.COM>
+
+Try this:
+
+
+# generate x's
+
+x1 <- sample(100, 100, TRUE)
+x2 <- sample(100, 100, TRUE)
+
+# generate yhat with b0=1, b1=2, b2=3
+
+yhat <- 1 + 2*x1 + 3*x2
+
+# compute ssr
+
+ssr <- sum( (yhat-mean(yhat))^2 )
+
+# generate errors
+
+e <- rnorm(100)
+e <- resid( lm( e ~ x1 + x2 ) )
+
+# to get R^2 of 0.8, ssr/(ssr+sse)=0.8 so sse=0.2/0.8*ssr
+
+e <- e* sqrt(0.2/0.8*ssr/(sum(e^2)))
+
+# now for y
+
+y <- yhat + e
+
+# put into a data frame and test
+
+mydata <- data.frame( y=y, x1=x1, x2=x2 )
+fit <- lm(y ~ x1 + x2, data=mydata )
+summary(fit)
+
+
+Now just change the values that you want changed to match your situation.  It does not matter how the x's are generated, so include more, include polynomials, include interactions, etc.
+
+Hope this helps,
+
+
+--
+Gregory (Greg) L. Snow Ph.D.
+Statistical Data Center
+Intermountain Healthcare
+greg.snow at imail.org
+801.408.8111
+
+
+> -----Original Message-----
+> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-
+> bounces at r-project.org] On Behalf Of markus
+> Sent: Wednesday, November 19, 2008 1:19 AM
+> To: r-sig-teaching at r-project.org
+> Subject: [R-sig-teaching] Simulating Data with predefined reg-
+> coefficients and R2
+>
+> Hi all at the R-teaching mailing list,
+> I am currently preparing my first  R-based  regression  course. Along
+> this way I encountered the following problem:
+>
+> I want to simulate multivariate data that has some specific predefined
+> attributes. For example I want to produce a Predictor-matrix (X)
+> and a response-vector (y) that will yield a given vector of regression
+> coefficients (b) and a given R2 when I perform a multivariate linear
+> Regression
+> on the dataset. This would be best described by the well known equation
+> y=X*b+e.
+> In some next step I also want to simulate polynomic relationships, but
+> I
+> think that should work not very different.
+>
+> I already searched the web and found some hints, but no clear answer.
+> There is a pdf out there from John H. Walker (Teaching Regression with
+> simulation)
+> which does however not discuss this special topic. I also have a Paper
+> from K.Baumann 'Chance Correlation in variable subset regression:
+> Influence of the objective function, selection mechanism and Ensemble
+> averaging' QCS, 2005. There an 'Autoregressive process' is used to
+> simulate such data.
+>
+> Now my question is:
+> Is it really that difficult to simulate such data? Is there perhaps a
+> package in R facilitating at least parts of this work?
+>
+> Thanks in advance for the help,
+> Markus
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+From jones at reed.edu  Wed Nov 19 18:47:22 2008
+From: jones at reed.edu (Albyn Jones)
+Date: Wed, 19 Nov 2008 09:47:22 -0800
+Subject: [R-sig-teaching] [harriet.baulcombe@sagepub.co.uk: R-sig-teaching]
+Message-ID: <20081119174722.GC21011@laplace.reed.edu>
+
+We have decided to forward this announcement to the list, on the
+grounds that it might be useful and is relevant.  
+
+albyn
+
+----- Forwarded message from "Baulcombe, Harriet" <harriet.baulcombe at sagepub.co.uk> -----
+
+
+Dear Moderators
+
+We are publishing 'Modern Regression Techniques Using R' by Daniel B
+Wright and Kamala London in February 2009, and I'd like to alert
+subscribers to the R-sig-teaching group to the book and the fact that
+anyone teaching a course on which they might use the book can request an
+inspection copy at
+http://www.sagepub.co.uk/booksProdDesc.nav?prodId=Book233198 (or a
+faculty review copy if they are in the US at
+http://www.sagepub.com/booksProdDesc.nav?prodId=Book233198).
+
+Would it be acceptable to send a message along these lines to the group?
+ 
+Many thanks,
+Harriet
+ 
+ 
+
+Harriet Baulcombe
+Senior Marketing Manager
+SAGE Publications Ltd,
+1 Oliver's Yard
+55 City Road
+London, EC1Y 1SP
+
+Tel: +44 (0)20 7324 8500 ext 2269
+Tel: +44 (0)20 7324 8569
+E-mail: harriet.baulcombe at sagepub.co.uk
+http://www.sagepub.co.uk <http://www.sagepub.co.uk>  
+ 
+Please consider the environment before printing this e-mail
+
+
+
+----- End forwarded message -----
+
+
+
+From fauna at pngp.it  Fri Nov 21 01:01:17 2008
+From: fauna at pngp.it (Achaz von Hardenberg)
+Date: Fri, 21 Nov 2008 01:01:17 +0100
+Subject: [R-sig-teaching] Simulating Data with predefined
+	reg-coefficients	and R2
+In-Reply-To: <B37C0A15B8FB3C468B5BC7EBC7DA14CC61C136847B@LP-EXMBVS10.CO.IHC.COM>
+References: <4923CC0B.5040206@tu-bs.de>
+	<B37C0A15B8FB3C468B5BC7EBC7DA14CC61C136847B@LP-EXMBVS10.CO.IHC.COM>
+Message-ID: <09BFA95A-4EAD-4C4A-80F6-9F2CDFDD2466@pngp.it>
+
+Thanks to Greg for a nice solution to the question posed by Markus.
+Now I am going to complicate things a bit...
+what if besides the regression coefficients (b) I have also their  
+associated standard errors (b+/-se)?
+Is it possible to generate data which,in a multivariate regression,  
+will yeld not only predefinite r^2 and b values but also their  
+associated predefinite s.e. values?
+thanks for your input!
+
+achaz
+
+Dr. Achaz von Hardenberg
+------------------------------------------------------------------------ 
+--------------------------------
+Centro Studi Fauna Alpina - Alpine Wildlife Research Centre
+Servizio Sanitario e della Ricerca Scientifica
+Parco Nazionale Gran Paradiso, Degioz, 11, 11010-Valsavarenche (Ao),  
+Italy
+
+E-mail: achaz.hardenberg at pngp.it
+	     fauna at pngp.it
+Skype: achazhardenberg
+      Tel.: +39.0165.905783
+      Fax: +39.0165.905506
+Mobile: +39.328.8736291
+------------------------------------------------------------------------ 
+--------------------------------
+
+
+
+
+
+On 19 Nov 2008, at 17:29, Greg Snow wrote:
+
+> Try this:
+>
+>
+> # generate x's
+>
+> x1 <- sample(100, 100, TRUE)
+> x2 <- sample(100, 100, TRUE)
+>
+> # generate yhat with b0=1, b1=2, b2=3
+>
+> yhat <- 1 + 2*x1 + 3*x2
+>
+> # compute ssr
+>
+> ssr <- sum( (yhat-mean(yhat))^2 )
+>
+> # generate errors
+>
+> e <- rnorm(100)
+> e <- resid( lm( e ~ x1 + x2 ) )
+>
+> # to get R^2 of 0.8, ssr/(ssr+sse)=0.8 so sse=0.2/0.8*ssr
+>
+> e <- e* sqrt(0.2/0.8*ssr/(sum(e^2)))
+>
+> # now for y
+>
+> y <- yhat + e
+>
+> # put into a data frame and test
+>
+> mydata <- data.frame( y=y, x1=x1, x2=x2 )
+> fit <- lm(y ~ x1 + x2, data=mydata )
+> summary(fit)
+>
+>
+> Now just change the values that you want changed to match your  
+> situation.  It does not matter how the x's are generated, so  
+> include more, include polynomials, include interactions, etc.
+>
+> Hope this helps,
+>
+>
+> --
+> Gregory (Greg) L. Snow Ph.D.
+> Statistical Data Center
+> Intermountain Healthcare
+> greg.snow at imail.org
+> 801.408.8111
+>
+>
+>> -----Original Message-----
+>> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-
+>> bounces at r-project.org] On Behalf Of markus
+>> Sent: Wednesday, November 19, 2008 1:19 AM
+>> To: r-sig-teaching at r-project.org
+>> Subject: [R-sig-teaching] Simulating Data with predefined reg-
+>> coefficients and R2
+>>
+>> Hi all at the R-teaching mailing list,
+>> I am currently preparing my first  R-based  regression  course. Along
+>> this way I encountered the following problem:
+>>
+>> I want to simulate multivariate data that has some specific  
+>> predefined
+>> attributes. For example I want to produce a Predictor-matrix (X)
+>> and a response-vector (y) that will yield a given vector of  
+>> regression
+>> coefficients (b) and a given R2 when I perform a multivariate linear
+>> Regression
+>> on the dataset. This would be best described by the well known  
+>> equation
+>> y=X*b+e.
+>> In some next step I also want to simulate polynomic relationships,  
+>> but
+>> I
+>> think that should work not very different.
+>>
+>> I already searched the web and found some hints, but no clear answer.
+>> There is a pdf out there from John H. Walker (Teaching Regression  
+>> with
+>> simulation)
+>> which does however not discuss this special topic. I also have a  
+>> Paper
+>> from K.Baumann 'Chance Correlation in variable subset regression:
+>> Influence of the objective function, selection mechanism and Ensemble
+>> averaging' QCS, 2005. There an 'Autoregressive process' is used to
+>> simulate such data.
+>>
+>> Now my question is:
+>> Is it really that difficult to simulate such data? Is there perhaps a
+>> package in R facilitating at least parts of this work?
+>>
+>> Thanks in advance for the help,
+>> Markus
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+> --
+> This message was scanned by ESVA and is believed to be clean.
+>
+
+
+
+From Greg.Snow at imail.org  Sat Nov 22 16:42:15 2008
+From: Greg.Snow at imail.org (Greg Snow)
+Date: Sat, 22 Nov 2008 08:42:15 -0700
+Subject: [R-sig-teaching] Simulating Data with
+	predefined	reg-coefficients	and R2
+In-Reply-To: <09BFA95A-4EAD-4C4A-80F6-9F2CDFDD2466@pngp.it>
+References: <4923CC0B.5040206@tu-bs.de>
+	<B37C0A15B8FB3C468B5BC7EBC7DA14CC61C136847B@LP-EXMBVS10.CO.IHC.COM>
+	<09BFA95A-4EAD-4C4A-80F6-9F2CDFDD2466@pngp.it>
+Message-ID: <B37C0A15B8FB3C468B5BC7EBC7DA14CC61C23B5743@LP-EXMBVS10.CO.IHC.COM>
+
+I have been thinking this through, and it is not as simple as the other ones.  Simulating the data with given betas and se of betas is straight forward, but getting the R^2 value to match is more difficult (and possibly impossible for general R^2 values).
+
+I would probably set the conditions for betas and sebetas simulate the data and see if the R^2 is close enough, if not, then adjust the sample size and simulate again until the R^2 value is close enough.
+
+Hope this helps,
+
+--
+Gregory (Greg) L. Snow Ph.D.
+Statistical Data Center
+Intermountain Healthcare
+greg.snow at imail.org
+801.408.8111
+
+> -----Original Message-----
+> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-
+> bounces at r-project.org] On Behalf Of Achaz von Hardenberg
+> Sent: Thursday, November 20, 2008 5:01 PM
+> To: Greg Snow
+> Cc: r-sig-teaching at r-project.org
+> Subject: Re: [R-sig-teaching] Simulating Data with predefined reg-
+> coefficients and R2
+>
+> Thanks to Greg for a nice solution to the question posed by Markus.
+> Now I am going to complicate things a bit...
+> what if besides the regression coefficients (b) I have also their
+> associated standard errors (b+/-se)?
+> Is it possible to generate data which,in a multivariate regression,
+> will yeld not only predefinite r^2 and b values but also their
+> associated predefinite s.e. values?
+> thanks for your input!
+>
+> achaz
+>
+> Dr. Achaz von Hardenberg
+> -----------------------------------------------------------------------
+> -
+> --------------------------------
+> Centro Studi Fauna Alpina - Alpine Wildlife Research Centre
+> Servizio Sanitario e della Ricerca Scientifica
+> Parco Nazionale Gran Paradiso, Degioz, 11, 11010-Valsavarenche (Ao),
+> Italy
+>
+> E-mail: achaz.hardenberg at pngp.it
+>              fauna at pngp.it
+> Skype: achazhardenberg
+>       Tel.: +39.0165.905783
+>       Fax: +39.0165.905506
+> Mobile: +39.328.8736291
+> -----------------------------------------------------------------------
+> -
+> --------------------------------
+>
+>
+>
+>
+>
+> On 19 Nov 2008, at 17:29, Greg Snow wrote:
+>
+> > Try this:
+> >
+> >
+> > # generate x's
+> >
+> > x1 <- sample(100, 100, TRUE)
+> > x2 <- sample(100, 100, TRUE)
+> >
+> > # generate yhat with b0=1, b1=2, b2=3
+> >
+> > yhat <- 1 + 2*x1 + 3*x2
+> >
+> > # compute ssr
+> >
+> > ssr <- sum( (yhat-mean(yhat))^2 )
+> >
+> > # generate errors
+> >
+> > e <- rnorm(100)
+> > e <- resid( lm( e ~ x1 + x2 ) )
+> >
+> > # to get R^2 of 0.8, ssr/(ssr+sse)=0.8 so sse=0.2/0.8*ssr
+> >
+> > e <- e* sqrt(0.2/0.8*ssr/(sum(e^2)))
+> >
+> > # now for y
+> >
+> > y <- yhat + e
+> >
+> > # put into a data frame and test
+> >
+> > mydata <- data.frame( y=y, x1=x1, x2=x2 )
+> > fit <- lm(y ~ x1 + x2, data=mydata )
+> > summary(fit)
+> >
+> >
+> > Now just change the values that you want changed to match your
+> > situation.  It does not matter how the x's are generated, so
+> > include more, include polynomials, include interactions, etc.
+> >
+> > Hope this helps,
+> >
+> >
+> > --
+> > Gregory (Greg) L. Snow Ph.D.
+> > Statistical Data Center
+> > Intermountain Healthcare
+> > greg.snow at imail.org
+> > 801.408.8111
+> >
+> >
+> >> -----Original Message-----
+> >> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-
+> >> bounces at r-project.org] On Behalf Of markus
+> >> Sent: Wednesday, November 19, 2008 1:19 AM
+> >> To: r-sig-teaching at r-project.org
+> >> Subject: [R-sig-teaching] Simulating Data with predefined reg-
+> >> coefficients and R2
+> >>
+> >> Hi all at the R-teaching mailing list,
+> >> I am currently preparing my first  R-based  regression  course.
+> Along
+> >> this way I encountered the following problem:
+> >>
+> >> I want to simulate multivariate data that has some specific
+> >> predefined
+> >> attributes. For example I want to produce a Predictor-matrix (X)
+> >> and a response-vector (y) that will yield a given vector of
+> >> regression
+> >> coefficients (b) and a given R2 when I perform a multivariate linear
+> >> Regression
+> >> on the dataset. This would be best described by the well known
+> >> equation
+> >> y=X*b+e.
+> >> In some next step I also want to simulate polynomic relationships,
+> >> but
+> >> I
+> >> think that should work not very different.
+> >>
+> >> I already searched the web and found some hints, but no clear
+> answer.
+> >> There is a pdf out there from John H. Walker (Teaching Regression
+> >> with
+> >> simulation)
+> >> which does however not discuss this special topic. I also have a
+> >> Paper
+> >> from K.Baumann 'Chance Correlation in variable subset regression:
+> >> Influence of the objective function, selection mechanism and
+> Ensemble
+> >> averaging' QCS, 2005. There an 'Autoregressive process' is used to
+> >> simulate such data.
+> >>
+> >> Now my question is:
+> >> Is it really that difficult to simulate such data? Is there perhaps
+> a
+> >> package in R facilitating at least parts of this work?
+> >>
+> >> Thanks in advance for the help,
+> >> Markus
+> >>
+> >> _______________________________________________
+> >> R-sig-teaching at r-project.org mailing list
+> >> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >
+> > --
+> > This message was scanned by ESVA and is believed to be clean.
+> >
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+

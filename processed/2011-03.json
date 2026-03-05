@@ -1,0 +1,151 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2011-03",
+  "messages": [
+    {
+      "id": "msg-9e4f5d135902",
+      "message_id": "<4D76393E.6050700@patfiza.net>",
+      "from_name": "Zhan Chubukou",
+      "from_email_hash": "fe21b0d73e7511a47e2419992184449f8a86e0ff7a70241ff6bf72c7db5ae9a9",
+      "date": "2011-03-08T16:12:14+02:00",
+      "subject": "[R-sig-teaching] embed an R console into a web-page?",
+      "subject_clean": "embed an R console into a web-page?",
+      "in_reply_to": "<4D65249D.9080604@patfiza.net>",
+      "references": [
+        "<870991.42661.qm@web30603.mail.mud.yahoo.com>",
+        "<4D65249D.9080604@patfiza.net>"
+      ],
+      "body_plain": "Collegues recommend interesting project called \"Rstudio\". Look at \nrstudio.org Don't blame me in spam!\nIt's really looks very nice! Thanks for developers. Sorry for my moonspeak.\n\n--\nBest regards,\nZhan A Chubukou\n-----\nGomel State Medical University\nDepartment of Pathological Physiology\n246000 Belarus, Gomel, Lange str. 5",
+      "body_snippet": "Collegues recommend interesting project called \"Rstudio\". Look at \nrstudio.org Don't blame me in spam!\nIt's really looks very nice! Thanks for developers. Sorry for my moonspeak.\n\n--\nBest regards,\nZha",
+      "thread_id": "thread-9e4f5d135902",
+      "thread_depth": 0,
+      "month": "2011-03"
+    },
+    {
+      "id": "msg-308235385218",
+      "message_id": "<817300.77052.qm@web30601.mail.mud.yahoo.com>",
+      "from_name": "jose romero",
+      "from_email_hash": "a239d2abfd6000b3143932058ce49c6bcae353eae79bc898cb147e87d639754c",
+      "date": "2011-03-08T09:35:24-08:00",
+      "subject": "[R-sig-teaching] embed an R console into a web-page?",
+      "subject_clean": "embed an R console into a web-page?",
+      "in_reply_to": "<mailman.9.1298458803.32410.r-sig-teaching@r-project.org>",
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110308/c5f37d86/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110308/c5f37d86/attachment.pl>",
+      "thread_id": "thread-308235385218",
+      "thread_depth": 0,
+      "month": "2011-03"
+    },
+    {
+      "id": "msg-0961b062f15e",
+      "message_id": "<AANLkTimGP_=i4vs8CwP7=ZKk_HAReYFB-WpFG9jNTvT5@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2011-03-08T12:51:22-05:00",
+      "subject": "[R-sig-teaching] embed an R console into a web-page?",
+      "subject_clean": "embed an R console into a web-page?",
+      "in_reply_to": "<817300.77052.qm@web30601.mail.mud.yahoo.com>",
+      "references": [
+        "<mailman.9.1298458803.32410.r-sig-teaching@r-project.org>",
+        "<817300.77052.qm@web30601.mail.mud.yahoo.com>"
+      ],
+      "body_plain": "On Tue, Mar 8, 2011 at 12:35 PM, jose romero <jlaurentum at yahoo.com> wrote:\n> Right,\n>\n> I followed the suggestion for the correct address to the Rweb page console, which is:\n>\n> http://www.math.montana.edu/Rweb/Rweb.general.html\n>\n> I pasted the sample code onto the text window, as per Rweb's instructions and this is what I got:\n>\n> You don't have permission to access /jeff-bin/Rweb1.03/Rweb.cgi\n> on this server.\n>\n> What must I do to have access to /jeff-bin/... ? Or does anyone know of another online R console page?\n>\n\nIt was working when this question first appeared but seems not to be\nnow. Don't know if this is temporary or not but google for Rweb\nserver.  The University of Lyon Rweb server worked for me.\n\n\n-- \nStatistics & Software Consulting\nGKX Group, GKX Associates Inc.\ntel: 1-877-GKX-GROUP\nemail: ggrothendieck at gmail.com",
+      "body_snippet": "On Tue, Mar 8, 2011 at 12:35 PM, jose romero <jlaurentum at yahoo.com> wrote:\n> Right,\n>\n> I followed the suggestion for the correct address to the Rweb page console, which is:\n>\n> http://www.math.mon",
+      "thread_id": "thread-308235385218",
+      "thread_depth": 1,
+      "month": "2011-03"
+    },
+    {
+      "id": "msg-157430b5a196",
+      "message_id": "<AANLkTinrntNMjC9j1aUY5bMwTZykrvpqwyid+pEBDA+f@mail.gmail.com>",
+      "from_name": "G. Jay Kerns",
+      "from_email_hash": "ad83289c1ea8001776b4a92be9b5d571c4a1a4d9f964cc52380fe565be90da90",
+      "date": "2011-03-19T01:54:33-04:00",
+      "subject": "[R-sig-teaching] Org-mode example for writing quizzes/exams",
+      "subject_clean": "Org-mode example for writing quizzes/exams",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The sample files are here:\n\nhttp://github.com/gjkerns/samplequiz\n\nIt took me a shamefully long time to get this just right, and it's\nstill not perfect (an extra space here and there, the indentation...).\n But the whole thing is very delicate. Well, not so much anymore.\n\nFor those interested but unfamiliar with Org-mode, open\n\"samplequiz.org\" with Emacs and export to PDF with the sequence\n\nC-c C-e d    (twice for good measure)\n\nand, to get an answer key, delete the single line\n\n#+EXPORT_EXCLUDE_TAGS: answer\n\nbeforehand.\n\n--Jay\n\n\n______________________________\nG. Jay Kerns, Ph.D.\nYoungstown State University\nhttp://people.ysu.edu/~gkerns/",
+      "body_snippet": "The sample files are here:\n\nhttp://github.com/gjkerns/samplequiz\n\nIt took me a shamefully long time to get this just right, and it's\nstill not perfect (an extra space here and there, the indentation..",
+      "thread_id": "thread-157430b5a196",
+      "thread_depth": 0,
+      "month": "2011-03"
+    },
+    {
+      "id": "msg-9bdec4762f3e",
+      "message_id": "<AANLkTik5YBNG+70hu_4YtRLT8O5arbGsqz4NL9TSc06n@mail.gmail.com>",
+      "from_name": "Liviu Andronic",
+      "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
+      "date": "2011-03-19T09:09:49+01:00",
+      "subject": "[R-sig-teaching] Org-mode example for writing quizzes/exams",
+      "subject_clean": "Org-mode example for writing quizzes/exams",
+      "in_reply_to": "<AANLkTinrntNMjC9j1aUY5bMwTZykrvpqwyid+pEBDA+f@mail.gmail.com>",
+      "references": [
+        "<AANLkTinrntNMjC9j1aUY5bMwTZykrvpqwyid+pEBDA+f@mail.gmail.com>"
+      ],
+      "body_plain": "Hello Jay\n\nOn Sat, Mar 19, 2011 at 6:54 AM, G. Jay Kerns <gjkerns at gmail.com> wrote:\n> The sample files are here:\n>\n> http://github.com/gjkerns/samplequiz\n>\n> It took me a shamefully long time to get this just right, and it's\n> still not perfect (an extra space here and there, the indentation...).\n> ?But the whole thing is very delicate. Well, not so much anymore.\n>\n> For those interested but unfamiliar with Org-mode,\n>\nOT: Are you aware of working layout files for LyX, which would also\nallow creating writing quizzes/exams via Sweave.\n\nThank you\nLiviu\n\n\n> open\n> \"samplequiz.org\" with Emacs and export to PDF with the sequence\n>\n> C-c C-e d ? ?(twice for good measure)\n>\n> and, to get an answer key, delete the single line\n>\n> #+EXPORT_EXCLUDE_TAGS: answer\n>\n> beforehand.\n>\n> --Jay\n>\n>\n> ______________________________\n> G. Jay Kerns, Ph.D.\n> Youngstown State University\n> http://people.ysu.edu/~gkerns/\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \nDo you know how to read?\nhttp://www.alienetworks.com/srtest.cfm\nhttp://goodies.xfce.org/projects/applications/xfce4-dict#speed-reader\nDo you know how to write?\nhttp://garbl.home.comcast.net/~garbl/stylemanual/e.htm#e-mail",
+      "body_snippet": "Hello Jay\n\nOn Sat, Mar 19, 2011 at 6:54 AM, G. Jay Kerns <gjkerns at gmail.com> wrote:\n> The sample files are here:\n>\n> http://github.com/gjkerns/samplequiz\n>\n> It took me a shamefully long time to ge",
+      "thread_id": "thread-157430b5a196",
+      "thread_depth": 1,
+      "month": "2011-03"
+    },
+    {
+      "id": "msg-1afc46ae371f",
+      "message_id": "<AANLkTim-5DcvRrR2BPv=_1y8PkUqKtmQM_SzGrMjZsQv@mail.gmail.com>",
+      "from_name": "G. Jay Kerns",
+      "from_email_hash": "ad83289c1ea8001776b4a92be9b5d571c4a1a4d9f964cc52380fe565be90da90",
+      "date": "2011-03-19T13:50:20-04:00",
+      "subject": "[R-sig-teaching] Org-mode example for writing quizzes/exams",
+      "subject_clean": "Org-mode example for writing quizzes/exams",
+      "in_reply_to": "<AANLkTik5YBNG+70hu_4YtRLT8O5arbGsqz4NL9TSc06n@mail.gmail.com>",
+      "references": [
+        "<AANLkTinrntNMjC9j1aUY5bMwTZykrvpqwyid+pEBDA+f@mail.gmail.com>",
+        "<AANLkTik5YBNG+70hu_4YtRLT8O5arbGsqz4NL9TSc06n@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Liviu,\n\nOn Sat, Mar 19, 2011 at 4:09 AM, Liviu Andronic <landronimirc at gmail.com> wrote:\n> Hello Jay\n>\n>>\n> OT: Are you aware of working layout files for LyX, which would also\n> allow creating writing quizzes/exams via Sweave.\n>\n> Thank you\n> Liviu\n>\n\nBoth yes and no:\n\nNo, I'm not aware of existing devoted layout files for quizzes/exams in LyX, but\n\nYes, with LyX + Sweave it's easy enough to throw a quiz together\nwithout too much trouble.  I have some examples here:\n\nhttp://www.ysumathstat.org/faculty/kerns/video/STAT3743/02-RESOURCES/quizexam/\n\nLooking back, it is/was much faster to write something like this with\nLyX than Org-mode, but after this pain it might be easier.  And\nsometimes it's a matter of sport.  :-)\n\nRegards,\nJay\n\n\n\n______________________________\nG. Jay Kerns, Ph.D.\nYoungstown State University\nhttp://people.ysu.edu/~gkerns/",
+      "body_snippet": "Dear Liviu,\n\nOn Sat, Mar 19, 2011 at 4:09 AM, Liviu Andronic <landronimirc at gmail.com> wrote:\n> Hello Jay\n>\n>>\n> OT: Are you aware of working layout files for LyX, which would also\n> allow creating ",
+      "thread_id": "thread-157430b5a196",
+      "thread_depth": 2,
+      "month": "2011-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-308235385218",
+      "subject": "embed an R console into a web-page?",
+      "message_count": 2,
+      "participants": [
+        "Gabor Grothendieck",
+        "jose romero"
+      ],
+      "started": "2011-03-08T09:35:24-08:00",
+      "last_reply": "2011-03-08T12:51:22-05:00",
+      "root_message_id": "msg-308235385218"
+    },
+    {
+      "id": "thread-9e4f5d135902",
+      "subject": "embed an R console into a web-page?",
+      "message_count": 1,
+      "participants": [
+        "Zhan Chubukou"
+      ],
+      "started": "2011-03-08T16:12:14+02:00",
+      "last_reply": "2011-03-08T16:12:14+02:00",
+      "root_message_id": "msg-9e4f5d135902"
+    },
+    {
+      "id": "thread-157430b5a196",
+      "subject": "Org-mode example for writing quizzes/exams",
+      "message_count": 3,
+      "participants": [
+        "G. Jay Kerns",
+        "Liviu Andronic"
+      ],
+      "started": "2011-03-19T01:54:33-04:00",
+      "last_reply": "2011-03-19T13:50:20-04:00",
+      "root_message_id": "msg-157430b5a196"
+    }
+  ]
+}

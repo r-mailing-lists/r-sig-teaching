@@ -1,0 +1,36 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2014-08",
+  "messages": [
+    {
+      "id": "msg-39671555da92",
+      "message_id": "<53ECB4D6020000A600113E34@uct5.doit.usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2014-08-14T13:08:38-04:00",
+      "subject": "[R-sig-teaching] R codes for Sampling Techniques, 3rd Ed., by William Cochran",
+      "subject_clean": "R codes for Sampling Techniques, 3rd Ed., by William Cochran",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All: (I posted this request in February 2014)\n\n\nI am going to teach Sampling Methods course in Fall 2014. I am going to use the book by William Cochran, Sampling Techniques, 3rd Ed.\n\n\nI am wondering if someone have R codes for examples and selected problems given in this textbook.\n\n\nAny examples and/or exercises will help.\n \n\nThank you very much in advance.\n\nAbou\n \n \n==========================\nAbouEl-Makarim Aboueissa, Ph.D.\nAssociate Professor of Mathematics & Statistics\nGraduate Program Coordinator\nDepartment of Mathematics & Statistics\nUniversity of Southern Maine\n96 Falmouth Street\nP.O. Box 9300\nPortland, ME 04104-9300\nUSA\n \n\nTel: (207) 228-8389\nFax: (207) 780-5607\nEmail: aaboueissa at usm.maine.edu\n          aboueiss at yahoo.com\n \nOffice: 301C Payson Smith\n \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All: (I posted this request in February 2014)\n\n\nI am going to teach Sampling Methods course in Fall 2014. I am going to use the book by William Cochran, Sampling Techniques, 3rd Ed.\n\n\nI am wonder",
+      "thread_id": "thread-39671555da92",
+      "thread_depth": 0,
+      "month": "2014-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-39671555da92",
+      "subject": "R codes for Sampling Techniques, 3rd Ed., by William Cochran",
+      "message_count": 1,
+      "participants": [
+        "AbouEl-Makarim Aboueissa"
+      ],
+      "started": "2014-08-14T13:08:38-04:00",
+      "last_reply": "2014-08-14T13:08:38-04:00",
+      "root_message_id": "msg-39671555da92"
+    }
+  ]
+}

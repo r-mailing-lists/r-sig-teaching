@@ -1,0 +1,147 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2017-01",
+  "messages": [
+    {
+      "id": "msg-410f1df05c9d",
+      "message_id": "<CAHDp66CWXiWXubdUC-7N8OP3pX3VGbTZ+BFU=PVo73VaX+jQ3Q@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2017-01-24T14:59:06-05:00",
+      "subject": "[R-sig-teaching] Simulated Two Independent Log-normal Distributions",
+      "subject_clean": "Simulated Two Independent Log-normal Distributions",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\n\n\nI want to simulate two independent log-normal distributions 10,000 times\n(say)\n\n*Log-normal 1: *  -10 <= mu1 <=100 and  0< sigma1 <=25   (say)\n\n*Log-normal 2: *  5 <= mu2 <=50  and  0< sigma2 <=10    (say)\n\n\nYour help will be highly appreciated.\n\n\n\nThank you very much for your support and help.\n\n\nwith thanks\nsteve\n\n-- \nSteven M. Stoline\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\n\nI want to simulate two independent log-normal distributions 10,000 times\n(say)\n\n*Log-normal 1: *  -10 <= mu1 <=100 and  0< sigma1 <=25   (say)\n\n*Log-normal 2: *  5 <= mu2 <=50  and  0< sig",
+      "thread_id": "thread-410f1df05c9d",
+      "thread_depth": 0,
+      "month": "2017-01"
+    },
+    {
+      "id": "msg-0c00ceca359e",
+      "message_id": "<CAHDp66At3n-qCLNDkh4wuGDjd=zAFPZM7CFdm2CMGRxuPBBb5Q@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2017-01-24T15:15:53-05:00",
+      "subject": "[R-sig-teaching] Simulated Two Independent Log-normal Distributions",
+      "subject_clean": "Simulated Two Independent Log-normal Distributions",
+      "in_reply_to": "<F9520D63-F1F9-4680-B295-D99E00F66012@calvin.edu>",
+      "references": [
+        "<CAHDp66CWXiWXubdUC-7N8OP3pX3VGbTZ+BFU=PVo73VaX+jQ3Q@mail.gmail.com>",
+        "<F9520D63-F1F9-4680-B295-D99E00F66012@calvin.edu>"
+      ],
+      "body_plain": "Dear Randall:\n\n\nI do need to simulate two independent log-normal distributions (say 10,000\ntimes) with the following specifications\n\nlog-normal dist. 1:  the mean mu1 and st.dev1. falls in the ranges   -100\n<= mu1 <=100 and 0< sigma1 <=25.\n\nlog-normal dist. 2:  the mean mu2 and st.dev2. falls in the ranges   -10 <=\nmu2 <=50 and 0< sigma1 <=10.\n\nI am not sure how to assure independency.\n\n\nwith thanks\nsteve\n\nOn Tue, Jan 24, 2017 at 3:06 PM, Randall Pruim <rpruim at calvin.edu> wrote:\n\n> I?m not sure exactly what you want, but I suggest starting with\n>\n> ?rlnorm\n>\n> ?rjp\n>\n> > On Jan 24, 2017, at 2:59 PM, Steven Stoline <sstoline at gmail.com> wrote:\n> >\n> > Dear All:\n> >\n> >\n> > I want to simulate two independent log-normal distributions 10,000 times\n> > (say)\n> >\n> > *Log-normal 1: *  -10 <= mu1 <=100 and  0< sigma1 <=25   (say)\n> >\n> > *Log-normal 2: *  5 <= mu2 <=50  and  0< sigma2 <=10    (say)\n> >\n> >\n> > Your help will be highly appreciated.\n> >\n> >\n> >\n> > Thank you very much for your support and help.\n> >\n> >\n> > with thanks\n> > steve\n> >\n> > --\n> > Steven M. Stoline\n> > sstoline at gmail.com\n> >\n> >       [[alternative HTML version deleted]]\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear Randall:\n\n\nI do need to simulate two independent log-normal distributions (say 10,000\ntimes) with the following specifications\n\nlog-normal dist. 1:  the mean mu1 and st.dev1. falls in the ranges ",
+      "thread_id": "thread-0c00ceca359e",
+      "thread_depth": 0,
+      "month": "2017-01"
+    },
+    {
+      "id": "msg-ba12cb99d597",
+      "message_id": "<CANV9buRcC84hyEBTQiy885Xz=SnP13+-7XxrXWbJjt_09DJ7yQ@mail.gmail.com>",
+      "from_name": "Jeff Laux",
+      "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
+      "date": "2017-01-24T15:57:40-05:00",
+      "subject": "[R-sig-teaching] Simulated Two Independent Log-normal Distributions",
+      "subject_clean": "Simulated Two Independent Log-normal Distributions",
+      "in_reply_to": "<CAHDp66CWXiWXubdUC-7N8OP3pX3VGbTZ+BFU=PVo73VaX+jQ3Q@mail.gmail.com>",
+      "references": [
+        "<CAHDp66CWXiWXubdUC-7N8OP3pX3VGbTZ+BFU=PVo73VaX+jQ3Q@mail.gmail.com>"
+      ],
+      "body_plain": "This doesn't really make sense.  I can't figure out what you mean by having\nthe parameters \"fall in the range\".  Do you want to do a Bayesian\nsimulation where the prior is a uniform on those ranges?  I don't\nunderstand what you mean by \"how to assure independency\" either.  I also\ndon't see what this has to do with how to use R to teach statistics.\n\n\nOn Tue, Jan 24, 2017 at 2:59 PM, Steven Stoline <sstoline at gmail.com> wrote:\n\n> Dear All:\n>\n>\n> I want to simulate two independent log-normal distributions 10,000 times\n> (say)\n>\n> *Log-normal 1: *  -10 <= mu1 <=100 and  0< sigma1 <=25   (say)\n>\n> *Log-normal 2: *  5 <= mu2 <=50  and  0< sigma2 <=10    (say)\n>\n>\n> Your help will be highly appreciated.\n>\n>\n>\n> Thank you very much for your support and help.\n>\n>\n> with thanks\n> steve\n>\n> --\n> Steven M. Stoline\n> sstoline at gmail.com\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "This doesn't really make sense.  I can't figure out what you mean by having\nthe parameters \"fall in the range\".  Do you want to do a Bayesian\nsimulation where the prior is a uniform on those ranges?  ",
+      "thread_id": "thread-410f1df05c9d",
+      "thread_depth": 1,
+      "month": "2017-01"
+    },
+    {
+      "id": "msg-6f00683d702b",
+      "message_id": "<CA+3jU8FnPPD_aEY0ZqcmkFU7eF8BPyP=JpEBVEj0S8eXQ+4Fyw@mail.gmail.com>",
+      "from_name": "Albyn Jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2017-01-24T12:59:56-08:00",
+      "subject": "[R-sig-teaching] Simulated Two Independent Log-normal Distributions",
+      "subject_clean": "Simulated Two Independent Log-normal Distributions",
+      "in_reply_to": "<CANV9buRcC84hyEBTQiy885Xz=SnP13+-7XxrXWbJjt_09DJ7yQ@mail.gmail.com>",
+      "references": [
+        "<CAHDp66CWXiWXubdUC-7N8OP3pX3VGbTZ+BFU=PVo73VaX+jQ3Q@mail.gmail.com>",
+        "<CANV9buRcC84hyEBTQiy885Xz=SnP13+-7XxrXWbJjt_09DJ7yQ@mail.gmail.com>"
+      ],
+      "body_plain": "\"I also don't see what this has to do with how to use R to teach\nstatistics.\"  me neither.\nit looks like a question for the r-help list.\n\nOn Tue, Jan 24, 2017 at 12:57 PM, Jeff Laux <jefflaux at gmail.com> wrote:\n\n> This doesn't really make sense.  I can't figure out what you mean by having\n> the parameters \"fall in the range\".  Do you want to do a Bayesian\n> simulation where the prior is a uniform on those ranges?  I don't\n> understand what you mean by \"how to assure independency\" either.  I also\n> don't see what this has to do with how to use R to teach statistics.\n>\n>\n> On Tue, Jan 24, 2017 at 2:59 PM, Steven Stoline <sstoline at gmail.com>\n> wrote:\n>\n> > Dear All:\n> >\n> >\n> > I want to simulate two independent log-normal distributions 10,000 times\n> > (say)\n> >\n> > *Log-normal 1: *  -10 <= mu1 <=100 and  0< sigma1 <=25   (say)\n> >\n> > *Log-normal 2: *  5 <= mu2 <=50  and  0< sigma2 <=10    (say)\n> >\n> >\n> > Your help will be highly appreciated.\n> >\n> >\n> >\n> > Thank you very much for your support and help.\n> >\n> >\n> > with thanks\n> > steve\n> >\n> > --\n> > Steven M. Stoline\n> > sstoline at gmail.com\n> >\n> >         [[alternative HTML version deleted]]\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "\"I also don't see what this has to do with how to use R to teach\nstatistics.\"  me neither.\nit looks like a question for the r-help list.\n\nOn Tue, Jan 24, 2017 at 12:57 PM, Jeff Laux <jefflaux at gmail",
+      "thread_id": "thread-410f1df05c9d",
+      "thread_depth": 2,
+      "month": "2017-01"
+    },
+    {
+      "id": "msg-7c2574635d78",
+      "message_id": "<CAHDp66Dsc5qmVX_YpRqAae_MMGLv6WzeXLK76OY_D_4kkrDWLA@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2017-01-24T16:28:57-05:00",
+      "subject": "[R-sig-teaching] Simulated Two Independent Log-normal Distributions",
+      "subject_clean": "Simulated Two Independent Log-normal Distributions",
+      "in_reply_to": "<CA+3jU8FnPPD_aEY0ZqcmkFU7eF8BPyP=JpEBVEj0S8eXQ+4Fyw@mail.gmail.com>",
+      "references": [
+        "<CAHDp66CWXiWXubdUC-7N8OP3pX3VGbTZ+BFU=PVo73VaX+jQ3Q@mail.gmail.com>",
+        "<CANV9buRcC84hyEBTQiy885Xz=SnP13+-7XxrXWbJjt_09DJ7yQ@mail.gmail.com>",
+        "<CA+3jU8FnPPD_aEY0ZqcmkFU7eF8BPyP=JpEBVEj0S8eXQ+4Fyw@mail.gmail.com>"
+      ],
+      "body_plain": "Dear All:\n\n\nI did mean how to conduct such simulation in R.\n\nLet me make it more simple.\n\nWant to simulate two independent log-normal distributions with parameters:\n\nLog-normal Distribution 1: mu1 = 50, sigma1 = 10\n\nLog-normal Distribution 2: mu2 = 25,  sigma2 = 5\n\n\nwith thanks\nstive\n\nOn Tue, Jan 24, 2017 at 3:59 PM, Albyn Jones <jones at reed.edu> wrote:\n\n> \"I also don't see what this has to do with how to use R to teach\n> statistics.\"  me neither.\n> it looks like a question for the r-help list.\n>\n> On Tue, Jan 24, 2017 at 12:57 PM, Jeff Laux <jefflaux at gmail.com> wrote:\n>\n>> This doesn't really make sense.  I can't figure out what you mean by\n>> having\n>> the parameters \"fall in the range\".  Do you want to do a Bayesian\n>> simulation where the prior is a uniform on those ranges?  I don't\n>> understand what you mean by \"how to assure independency\" either.  I also\n>> don't see what this has to do with how to use R to teach statistics.\n>>\n>>\n>> On Tue, Jan 24, 2017 at 2:59 PM, Steven Stoline <sstoline at gmail.com>\n>> wrote:\n>>\n>> > Dear All:\n>> >\n>> >\n>> > I want to simulate two independent log-normal distributions 10,000 times\n>> > (say)\n>> >\n>> > *Log-normal 1: *  -10 <= mu1 <=100 and  0< sigma1 <=25   (say)\n>> >\n>> > *Log-normal 2: *  5 <= mu2 <=50  and  0< sigma2 <=10    (say)\n>> >\n>> >\n>> > Your help will be highly appreciated.\n>> >\n>> >\n>> >\n>> > Thank you very much for your support and help.\n>> >\n>> >\n>> > with thanks\n>> > steve\n>> >\n>> > --\n>> > Steven M. Stoline\n>> > sstoline at gmail.com\n>> >\n>> >         [[alternative HTML version deleted]]\n>> >\n>> > _______________________________________________\n>> > R-sig-teaching at r-project.org mailing list\n>> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>> >\n>>\n>>         [[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>\n>\n\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\n\nI did mean how to conduct such simulation in R.\n\nLet me make it more simple.\n\nWant to simulate two independent log-normal distributions with parameters:\n\nLog-normal Distribution 1: mu1 = 5",
+      "thread_id": "thread-410f1df05c9d",
+      "thread_depth": 3,
+      "month": "2017-01"
+    },
+    {
+      "id": "msg-ef26f169de2f",
+      "message_id": "<CAHtLaM8VXVRkL7_vP_+f=kOn0keXo4MRbqnHijOEgVEPwd3PLA@mail.gmail.com>",
+      "from_name": "Sander",
+      "from_email_hash": "996aeb7e730335223e65c8b3fd324eecc35df22e9b832cc70d926d5307233b54",
+      "date": "2017-01-24T22:33:51+01:00",
+      "subject": "[R-sig-teaching] Simulated Two Independent Log-normal Distributions",
+      "subject_clean": "Simulated Two Independent Log-normal Distributions",
+      "in_reply_to": "<CAHDp66Dsc5qmVX_YpRqAae_MMGLv6WzeXLK76OY_D_4kkrDWLA@mail.gmail.com>",
+      "references": [
+        "<CAHDp66CWXiWXubdUC-7N8OP3pX3VGbTZ+BFU=PVo73VaX+jQ3Q@mail.gmail.com>",
+        "<CANV9buRcC84hyEBTQiy885Xz=SnP13+-7XxrXWbJjt_09DJ7yQ@mail.gmail.com>",
+        "<CA+3jU8FnPPD_aEY0ZqcmkFU7eF8BPyP=JpEBVEj0S8eXQ+4Fyw@mail.gmail.com>",
+        "<CAHDp66Dsc5qmVX_YpRqAae_MMGLv6WzeXLK76OY_D_4kkrDWLA@mail.gmail.com>"
+      ],
+      "body_plain": "As someone replied before, perhaps you could use rlnorm. Type ?rlnorm for\nmore information.\n\nd1 <- (10000, meanlog = 10, sdlog = 10)\nd2 <- (10000, meanlog = 25, sdlog = 5)\n\nWould that do the trick?\n\nKind regards,\nSander\n\nOn Tue, Jan 24, 2017 at 10:28 PM, Steven Stoline <sstoline at gmail.com> wrote:\n\n> Dear All:\n>\n>\n> I did mean how to conduct such simulation in R.\n>\n> Let me make it more simple.\n>\n> Want to simulate two independent log-normal distributions with parameters:\n>\n> Log-normal Distribution 1: mu1 = 50, sigma1 = 10\n>\n> Log-normal Distribution 2: mu2 = 25,  sigma2 = 5\n>\n>\n> with thanks\n> stive\n>\n> On Tue, Jan 24, 2017 at 3:59 PM, Albyn Jones <jones at reed.edu> wrote:\n>\n> > \"I also don't see what this has to do with how to use R to teach\n> > statistics.\"  me neither.\n> > it looks like a question for the r-help list.\n> >\n> > On Tue, Jan 24, 2017 at 12:57 PM, Jeff Laux <jefflaux at gmail.com> wrote:\n> >\n> >> This doesn't really make sense.  I can't figure out what you mean by\n> >> having\n> >> the parameters \"fall in the range\".  Do you want to do a Bayesian\n> >> simulation where the prior is a uniform on those ranges?  I don't\n> >> understand what you mean by \"how to assure independency\" either.  I also\n> >> don't see what this has to do with how to use R to teach statistics.\n> >>\n> >>\n> >> On Tue, Jan 24, 2017 at 2:59 PM, Steven Stoline <sstoline at gmail.com>\n> >> wrote:\n> >>\n> >> > Dear All:\n> >> >\n> >> >\n> >> > I want to simulate two independent log-normal distributions 10,000\n> times\n> >> > (say)\n> >> >\n> >> > *Log-normal 1: *  -10 <= mu1 <=100 and  0< sigma1 <=25   (say)\n> >> >\n> >> > *Log-normal 2: *  5 <= mu2 <=50  and  0< sigma2 <=10    (say)\n> >> >\n> >> >\n> >> > Your help will be highly appreciated.\n> >> >\n> >> >\n> >> >\n> >> > Thank you very much for your support and help.\n> >> >\n> >> >\n> >> > with thanks\n> >> > steve\n> >> >\n> >> > --\n> >> > Steven M. Stoline\n> >> > sstoline at gmail.com\n> >> >\n> >> >         [[alternative HTML version deleted]]\n> >> >\n> >> > _______________________________________________\n> >> > R-sig-teaching at r-project.org mailing list\n> >> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >> >\n> >>\n> >>         [[alternative HTML version deleted]]\n> >>\n> >> _______________________________________________\n> >> R-sig-teaching at r-project.org mailing list\n> >> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >>\n> >\n> >\n>\n>\n> --\n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "As someone replied before, perhaps you could use rlnorm. Type ?rlnorm for\nmore information.\n\nd1 <- (10000, meanlog = 10, sdlog = 10)\nd2 <- (10000, meanlog = 25, sdlog = 5)\n\nWould that do the trick?\n\nK",
+      "thread_id": "thread-410f1df05c9d",
+      "thread_depth": 4,
+      "month": "2017-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-410f1df05c9d",
+      "subject": "Simulated Two Independent Log-normal Distributions",
+      "message_count": 5,
+      "participants": [
+        "Albyn Jones",
+        "Jeff Laux",
+        "Sander",
+        "Steven Stoline"
+      ],
+      "started": "2017-01-24T14:59:06-05:00",
+      "last_reply": "2017-01-24T22:33:51+01:00",
+      "root_message_id": "msg-410f1df05c9d"
+    },
+    {
+      "id": "thread-0c00ceca359e",
+      "subject": "Simulated Two Independent Log-normal Distributions",
+      "message_count": 1,
+      "participants": [
+        "Steven Stoline"
+      ],
+      "started": "2017-01-24T15:15:53-05:00",
+      "last_reply": "2017-01-24T15:15:53-05:00",
+      "root_message_id": "msg-0c00ceca359e"
+    }
+  ]
+}

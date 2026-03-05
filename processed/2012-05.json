@@ -1,0 +1,119 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2012-05",
+  "messages": [
+    {
+      "id": "msg-2ae9808dc938",
+      "message_id": "<CABxs9VmA-jeK1EZpXFjWWv_fai0+o3AMjBQT62bCL12ezCm=9A@mail.gmail.com>",
+      "from_name": "Liviu Andronic",
+      "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
+      "date": "2012-05-06T10:03:14+02:00",
+      "subject": "[R-sig-teaching] introducing R to high school students",
+      "subject_clean": "introducing R to high school students",
+      "in_reply_to": "<CAM+rpYkV1R=TCMz_tMhp0qg1uU6O9A2ModvxoAa2D-njbyJUbw@mail.gmail.com>",
+      "references": [
+        "<CAM+rpYkV1R=TCMz_tMhp0qg1uU6O9A2ModvxoAa2D-njbyJUbw@mail.gmail.com>"
+      ],
+      "body_plain": "Hello\nA bit late to the party..\n\n\nOn Thu, Apr 19, 2012 at 4:47 AM, Christopher W Ryan\n<cryan at binghamton.edu> wrote:\n> Now I have to put my money where my mouth is. I've offered to visit a\n> high school and introduce R to some fairly advanced students\n> participating in a longitudinal 3-year science research class. ?To be\n> clear, they are already, for good or for ill, doing data analysis and\n> graphics for their projects using software. ?Mostly they are using\n> Excel and SPSS. ?My goal would be to introduce them to R as another\n> (and better) tool for what they are currently doing.\n>\nAlthough RExcel was already mentioned, one element conspicuously\nmissing from this discussion was R GUIs. Some have suggested RStudio\nas a practical IDE to R, and I second that. But there are several\nother GUIs that may help your students to get a quick grasp of R and\nits coding conventions.\n\nRcmdr and its plug-ins is the inevitable candidate for teaching\nbasic-statistics. There is also Deducer with its plug-ins and data\neditor window, but in my opinion it is less robust and useful in\nteaching R coding than Rcmdr. I also like 'playwith', which allows\nediting and enhancing various R graphics. Its cousin, 'latticist', is\nan excellent GUI to lattice that, given a data frame, allows to easily\ngenerate a range of graphics. Beware, though, of mixing Rcmdr---tcltk\nbased---and playwith/latticist---mainly GTK based---in the same R\nsession: there is a nasty bug [1] that often crashes your R instance.\n\nRegards\nLiviu\n\n[1] https://bugs.r-project.org/bugzilla3/show_bug.cgi?id=14187",
+      "body_snippet": "Hello\nA bit late to the party..\n\n\nOn Thu, Apr 19, 2012 at 4:47 AM, Christopher W Ryan\n<cryan at binghamton.edu> wrote:\n> Now I have to put my money where my mouth is. I've offered to visit a\n> high sc",
+      "thread_id": "thread-2ae9808dc938",
+      "thread_depth": 0,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-b56f7f36ed1e",
+      "message_id": "<CABkCotTjMihkW9udxC+J3sMbyvPeu-pYWxSZpgqrb2x8S6vWCg@mail.gmail.com>",
+      "from_name": "Manuel Spínola",
+      "from_email_hash": "c67b4a8f4e027cf75cc3544d4e04791324bee3c4417f2f5edf4561a1da2f995b",
+      "date": "2012-05-06T06:57:12-06:00",
+      "subject": "[R-sig-teaching] Teaching R online",
+      "subject_clean": "Teaching R online",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120506/5a7d4837/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120506/5a7d4837/attachment.pl>",
+      "thread_id": "thread-b56f7f36ed1e",
+      "thread_depth": 0,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-50268c990c75",
+      "message_id": "<CAB9YQzO1MZ1yhuj+y-gj9qoTv3RJuu9rT8t=DffGFRm-RowbOA@mail.gmail.com>",
+      "from_name": "Sam Lin",
+      "from_email_hash": "795698da8b6949ad7d75088138df11471c7783cd9153ac7dcebd44d81a1a92ea",
+      "date": "2012-05-07T23:07:50+12:00",
+      "subject": "[R-sig-teaching] Teaching R online",
+      "subject_clean": "Teaching R online",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120507/6c57d944/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120507/6c57d944/attachment.pl>",
+      "thread_id": "thread-50268c990c75",
+      "thread_depth": 0,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-5cd54eba2a9f",
+      "message_id": "<C980075AFDDA964F9EE8981FE721663B11E43C24@exch-mb-l4-02.campus.aston.ac.uk>",
+      "from_name": "Holliday, Ian E",
+      "from_email_hash": "7f1cf031584051d97a259081949b717ef60f3ebb36b2404b356231d0852c250c",
+      "date": "2012-05-07T11:23:16Z",
+      "subject": "[R-sig-teaching] Teaching R online",
+      "subject_clean": "Teaching R online",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear Manuel,\n\nI run an introductory stats course using R and online services using this:\nhttp://www.wessa.net/rfc.wasp\n\nMy whole course is managed within this interface.\n\nThe platform was developed by Patrick Wessa and more info and publications about this at www.freestatistics.org. Demonstration videos here: http://youtu.be/mEO6d00ViQQ\n\nPatrick invites anyone interested in integrating this in their teaching to get in touch via patrick dot Wessa at gmail dot com.\n\nRegards\n\nIan",
+      "body_snippet": "Dear Manuel,\n\nI run an introductory stats course using R and online services using this:\nhttp://www.wessa.net/rfc.wasp\n\nMy whole course is managed within this interface.\n\nThe platform was developed by",
+      "thread_id": "thread-5cd54eba2a9f",
+      "thread_depth": 0,
+      "month": "2012-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-b56f7f36ed1e",
+      "subject": "Teaching R online",
+      "message_count": 1,
+      "participants": [
+        "Manuel Spínola"
+      ],
+      "started": "2012-05-06T06:57:12-06:00",
+      "last_reply": "2012-05-06T06:57:12-06:00",
+      "root_message_id": "msg-b56f7f36ed1e"
+    },
+    {
+      "id": "thread-2ae9808dc938",
+      "subject": "introducing R to high school students",
+      "message_count": 1,
+      "participants": [
+        "Liviu Andronic"
+      ],
+      "started": "2012-05-06T10:03:14+02:00",
+      "last_reply": "2012-05-06T10:03:14+02:00",
+      "root_message_id": "msg-2ae9808dc938"
+    },
+    {
+      "id": "thread-5cd54eba2a9f",
+      "subject": "Teaching R online",
+      "message_count": 1,
+      "participants": [
+        "Holliday, Ian E"
+      ],
+      "started": "2012-05-07T11:23:16+00:00",
+      "last_reply": "2012-05-07T11:23:16+00:00",
+      "root_message_id": "msg-5cd54eba2a9f"
+    },
+    {
+      "id": "thread-50268c990c75",
+      "subject": "Teaching R online",
+      "message_count": 1,
+      "participants": [
+        "Sam Lin"
+      ],
+      "started": "2012-05-07T23:07:50+12:00",
+      "last_reply": "2012-05-07T23:07:50+12:00",
+      "root_message_id": "msg-50268c990c75"
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+From ramos.grad.student at gmail.com  Tue Jul 15 03:19:31 2014
+From: ramos.grad.student at gmail.com (Antonio Pedro Ramos)
+Date: Tue, 15 Jul 2014 01:19:31 +0000 (UTC)
+Subject: [R-sig-teaching] Stay in touch with me on LinkedIn
+Message-ID: <271848898.4848057.1405387171458.JavaMail.app@ela4-app7973.prod>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20140715/a59f9abc/attachment.pl>
+
+From aaboueissa at usm.maine.edu  Thu Aug 14 19:08:38 2014
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Thu, 14 Aug 2014 13:08:38 -0400
+Subject: [R-sig-teaching] R codes for Sampling Techniques, 3rd Ed.,
+	by William Cochran
+Message-ID: <53ECB4D6020000A600113E34@uct5.doit.usm.maine.edu>
+
+Dear All: (I posted this request in February 2014)
+
+
+I am going to teach Sampling Methods course in Fall 2014. I am going to use the book by William Cochran, Sampling Techniques, 3rd Ed.
+
+
+I am wondering if someone have R codes for examples and selected problems given in this textbook.
+
+
+Any examples and/or exercises will help.
+ 
+
+Thank you very much in advance.
+
+Abou
+ 
+ 
+==========================
+AbouEl-Makarim Aboueissa, Ph.D.
+Associate Professor of Mathematics & Statistics
+Graduate Program Coordinator
+Department of Mathematics & Statistics
+University of Southern Maine
+96 Falmouth Street
+P.O. Box 9300
+Portland, ME 04104-9300
+USA
+ 
+
+Tel: (207) 228-8389
+Fax: (207) 780-5607
+Email: aaboueissa at usm.maine.edu
+          aboueiss at yahoo.com
+ 
+Office: 301C Payson Smith
+ 
+
+	[[alternative HTML version deleted]]
+
+
+From sstoline at gmail.com  Wed Sep 10 05:12:21 2014
+From: sstoline at gmail.com (Steven Stoline)
+Date: Tue, 9 Sep 2014 23:12:21 -0400
+Subject: [R-sig-teaching] length of vectors with tapply
+Message-ID: <CAHDp66AS9PE8t1pSWW2ihwchPuj0wh8usajNbKZv3qLOok8WhQ@mail.gmail.com>
+
+Dear All:
+
+I was trying to get the lengths of vectors using "length" in tapply as
+follows:
+
+ni<-tapply(data[,2], data[,2], length, na.rm=TRUE)
+
+but it did not work for me. I am not sure what I am doing wrong.
+
+I am not sure if I should use different function.
+
+Here is the data:
+============
+data<-matrix(c(8,24,0,0,16,32,6,0,16,7,4,4,9,5,8,18,2,0,4,0,8,3,1,5,24,12,2,8,1,8,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3),30,2)
+
+
+
+The answer should be:
+
+ni: 18  ,  10  ,  2
+
+
+thank you very much
+Steven
+
+-- 
+Steven M. Stoline
+1123 Forest Avenue
+Portland, ME 04112
+sstoline at gmail.com
+
+	[[alternative HTML version deleted]]
+
+
+From mdw at purdue.edu  Wed Sep 10 05:16:23 2014
+From: mdw at purdue.edu (Mark Daniel Ward)
+Date: Tue, 09 Sep 2014 23:16:23 -0400
+Subject: [R-sig-teaching] length of vectors with tapply
+In-Reply-To: <CAHDp66AS9PE8t1pSWW2ihwchPuj0wh8usajNbKZv3qLOok8WhQ@mail.gmail.com>
+References: <CAHDp66AS9PE8t1pSWW2ihwchPuj0wh8usajNbKZv3qLOok8WhQ@mail.gmail.com>
+Message-ID: <540FC287.8040203@purdue.edu>
+
+Dear Steven,
+
+If you remove the parameter:
+na.rm=TRUE
+then your example seems to work fine for me.  Good luck!
+
+Best wishes,
+Mark
+
+Mark Daniel Ward, Ph.D.
+Associate Professor and Undergraduate Chair
+Department of Statistics
+Purdue University
+150 North University Street
+West Lafayette, IN 47907-2067
+mdw at purdue.edu
+phone: (765) 496-9563
+
+
+
+On 9/9/14, 11:12 PM, Steven Stoline wrote:
+> Dear All:
+>
+> I was trying to get the lengths of vectors using "length" in tapply as
+> follows:
+>
+> ni<-tapply(data[,2], data[,2], length, na.rm=TRUE)
+>
+> but it did not work for me. I am not sure what I am doing wrong.
+>
+> I am not sure if I should use different function.
+>
+> Here is the data:
+> ============
+> data<-matrix(c(8,24,0,0,16,32,6,0,16,7,4,4,9,5,8,18,2,0,4,0,8,3,1,5,24,12,2,8,1,8,
+> 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3),30,2)
+>
+>
+>
+> The answer should be:
+>
+> ni: 18  ,  10  ,  2
+>
+>
+> thank you very much
+> Steven
+>
+
+
+From sstoline at gmail.com  Wed Sep 10 05:24:15 2014
+From: sstoline at gmail.com (Steven Stoline)
+Date: Tue, 9 Sep 2014 23:24:15 -0400
+Subject: [R-sig-teaching] length of vectors with tapply
+In-Reply-To: <540FC287.8040203@purdue.edu>
+References: <CAHDp66AS9PE8t1pSWW2ihwchPuj0wh8usajNbKZv3qLOok8WhQ@mail.gmail.com>
+	<540FC287.8040203@purdue.edu>
+Message-ID: <CAHDp66CaU3GSKDK4o2o3Y+tjEK5Jt19vKfieVfdJsBFfHPSq6g@mail.gmail.com>
+
+got it
+
+many thanks
+
+Steven
+
+On Tue, Sep 9, 2014 at 11:16 PM, Mark Daniel Ward <mdw at purdue.edu> wrote:
+
+> Dear Steven,
+>
+> If you remove the parameter:
+> na.rm=TRUE
+> then your example seems to work fine for me.  Good luck!
+>
+> Best wishes,
+> Mark
+>
+> Mark Daniel Ward, Ph.D.
+> Associate Professor and Undergraduate Chair
+> Department of Statistics
+> Purdue University
+> 150 North University Street
+> West Lafayette, IN 47907-2067
+> mdw at purdue.edu
+> phone: (765) 496-9563
+>
+>
+>
+>
+> On 9/9/14, 11:12 PM, Steven Stoline wrote:
+>
+>> Dear All:
+>>
+>> I was trying to get the lengths of vectors using "length" in tapply as
+>> follows:
+>>
+>> ni<-tapply(data[,2], data[,2], length, na.rm=TRUE)
+>>
+>> but it did not work for me. I am not sure what I am doing wrong.
+>>
+>> I am not sure if I should use different function.
+>>
+>> Here is the data:
+>> ============
+>> data<-matrix(c(8,24,0,0,16,32,6,0,16,7,4,4,9,5,8,18,2,0,4,0,
+>> 8,3,1,5,24,12,2,8,1,8,
+>> 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3),30,2)
+>>
+>>
+>>
+>> The answer should be:
+>>
+>> ni: 18  ,  10  ,  2
+>>
+>>
+>> thank you very much
+>> Steven
+>>
+>>
+>
+
+
+-- 
+Steven M. Stoline
+1123 Forest Avenue
+Portland, ME 04112
+sstoline at gmail.com
+
+	[[alternative HTML version deleted]]
+
+

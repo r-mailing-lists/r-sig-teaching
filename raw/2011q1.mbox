@@ -1,0 +1,363 @@
+From jlaurentum at yahoo.com  Tue Feb 22 19:17:21 2011
+From: jlaurentum at yahoo.com (jose romero)
+Date: Tue, 22 Feb 2011 10:17:21 -0800 (PST)
+Subject: [R-sig-teaching] embed an R console into a web-page?
+Message-ID: <870991.42661.qm@web30603.mail.mud.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110222/e0413589/attachment.pl>
+
+From ggrothendieck at gmail.com  Tue Feb 22 19:36:37 2011
+From: ggrothendieck at gmail.com (Gabor Grothendieck)
+Date: Tue, 22 Feb 2011 13:36:37 -0500
+Subject: [R-sig-teaching] embed an R console into a web-page?
+In-Reply-To: <870991.42661.qm@web30603.mail.mud.yahoo.com>
+References: <870991.42661.qm@web30603.mail.mud.yahoo.com>
+Message-ID: <AANLkTim7E_9V5dDb68eBMqGbC5+F2SxEh=-BKJbebT7y@mail.gmail.com>
+
+On Tue, Feb 22, 2011 at 1:17 PM, jose romero <jlaurentum at yahoo.com> wrote:
+> Hello list:
+>
+> Perhaps this is not the appropriate mailing list for this question...
+> I would like to encourage the use R in my statistic courses in an open university (distance learning).? In my webpage, I have written instructions on how to download and install R, how to download the semester's project data file, some basic commands on the console to get certain things done (descriptive statistics, linear regression, anova, etc.).? However, I find that some of my students get all tangled up in the process of setting up R and reading in the data files.? So my question is:
+>
+> Is there a way to "embed" an R console into a webpage, where the user can type in the commands and get instant results?
+>
+
+This is actually a frequently asked question (FAQ):
+
+http://cran.r-project.org/doc/FAQ/R-FAQ.html#R-Web-Interfaces
+
+-- 
+Statistics & Software Consulting
+GKX Group, GKX Associates Inc.
+tel: 1-877-GKX-GROUP
+email: ggrothendieck at gmail.com
+
+
+
+From hayden at mv.mv.com  Wed Feb 23 15:18:53 2011
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Wed, 23 Feb 2011 09:18:53 -0500 (EST)
+Subject: [R-sig-teaching] embed an R console into a web-page?
+Message-ID: <20110223141853.27463.qmail@mv.mv.com>
+
+
+OK, I went there and found links that were broken or timed out.  So
+let me reformulate the question.  Does anyone on the list have actual
+experience with anything that might solve Jose's problem and is
+currently supported with an accessible web site?
+
+Forwarded message:
+ 
+> On Tue, Feb 22, 2011 at 1:17 PM, jose romero <jlaurentum at yahoo.com> wrote:
+> > Hello list:
+> >
+> > Perhaps this is not the appropriate mailing list for this question...
+> > I would like to encourage the use R in my statistic courses in an open un=
+> iversity (distance learning).=A0 In my webpage, I have written instructions=
+>  on how to download and install R, how to download the semester's project d=
+> ata file, some basic commands on the console to get certain things done (de=
+> scriptive statistics, linear regression, anova, etc.).=A0 However, I find t=
+> hat some of my students get all tangled up in the process of setting up R a=
+> nd reading in the data files.=A0 So my question is:
+> >
+> > Is there a way to "embed" an R console into a webpage, where the user can=
+>  type in the commands and get instant results?
+> >
+> 
+> This is actually a frequently asked question (FAQ):
+> 
+> http://cran.r-project.org/doc/FAQ/R-FAQ.html#R-Web-Interfaces
+> 
+> -- =
+> 
+> Statistics & Software Consulting
+> GKX Group, GKX Associates Inc.
+> tel: 1-877-GKX-GROUP
+> email: ggrothendieck at gmail.com
+
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+
+http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+         
+Robert W. Hayden, P.O Box 450, North Troy, VT 05859 
+phone (802) 988-2587  web site http://statland.org/      
+email  bob statland.org  (add your own "@" and save me some spam)
+
+
+
+From ggrothendieck at gmail.com  Wed Feb 23 15:38:51 2011
+From: ggrothendieck at gmail.com (Gabor Grothendieck)
+Date: Wed, 23 Feb 2011 09:38:51 -0500
+Subject: [R-sig-teaching] embed an R console into a web-page?
+In-Reply-To: <20110223141853.27463.qmail@mv.mv.com>
+References: <20110223141853.27463.qmail@mv.mv.com>
+Message-ID: <AANLkTi=JX06AibP2REYj72xqTYAaScSDY0nO_7o0nc9v@mail.gmail.com>
+
+On Wed, Feb 23, 2011 at 9:18 AM, Robert W. Hayden <hayden at mv.mv.com> wrote:
+>
+> OK, I went there and found links that were broken or timed out. ?So
+> let me reformulate the question. ?Does anyone on the list have actual
+> experience with anything that might solve Jose's problem and is
+> currently supported with an accessible web site?
+>
+
+Then the next step is to google to find out what they have changed to.
+
+Doing that we find the links on Jeff Banfield's Rweb server site,
+listed in the R FAQ, that have bayes in the URL work if you change the
+URL by replacing bayes with www.  Also the site name suggests that we
+google for Rweb Servers and indeed that gives us serveral  such
+servers.
+
+-- 
+Statistics & Software Consulting
+GKX Group, GKX Associates Inc.
+tel: 1-877-GKX-GROUP
+email: ggrothendieck at gmail.com
+
+
+
+From chubukou at patfiza.net  Wed Feb 23 16:15:41 2011
+From: chubukou at patfiza.net (Zhan Chubukou)
+Date: Wed, 23 Feb 2011 17:15:41 +0200
+Subject: [R-sig-teaching] embed an R console into a web-page?
+In-Reply-To: <870991.42661.qm@web30603.mail.mud.yahoo.com>
+References: <870991.42661.qm@web30603.mail.mud.yahoo.com>
+Message-ID: <4D65249D.9080604@patfiza.net>
+
+Maybe try something like this 
+http://www.askapache.com/ajax/php-and-ajax-shell-console.html ?
+But there will some security questions...
+The simplest way I see is OpenSSH + R + Putty (for Windows Users), but 
+in this case you get some troubles with instant graphical output.
+
+-- 
+Best regards,
+Zhan A Chubukou
+-----
+Gomel State Medical University
+Department of Pathological Physiology
+246000 Belarus, Gomel, Lange str. 5
+
+
+
+From chubukou at patfiza.net  Tue Mar  8 15:12:14 2011
+From: chubukou at patfiza.net (Zhan Chubukou)
+Date: Tue, 08 Mar 2011 16:12:14 +0200
+Subject: [R-sig-teaching] embed an R console into a web-page?
+In-Reply-To: <4D65249D.9080604@patfiza.net>
+References: <870991.42661.qm@web30603.mail.mud.yahoo.com>
+	<4D65249D.9080604@patfiza.net>
+Message-ID: <4D76393E.6050700@patfiza.net>
+
+Collegues recommend interesting project called "Rstudio". Look at 
+rstudio.org Don't blame me in spam!
+It's really looks very nice! Thanks for developers. Sorry for my moonspeak.
+
+--
+Best regards,
+Zhan A Chubukou
+-----
+Gomel State Medical University
+Department of Pathological Physiology
+246000 Belarus, Gomel, Lange str. 5
+
+
+
+From jlaurentum at yahoo.com  Tue Mar  8 18:35:24 2011
+From: jlaurentum at yahoo.com (jose romero)
+Date: Tue, 8 Mar 2011 09:35:24 -0800 (PST)
+Subject: [R-sig-teaching] embed an R console into a web-page?
+In-Reply-To: <mailman.9.1298458803.32410.r-sig-teaching@r-project.org>
+Message-ID: <817300.77052.qm@web30601.mail.mud.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110308/c5f37d86/attachment.pl>
+
+From ggrothendieck at gmail.com  Tue Mar  8 18:51:22 2011
+From: ggrothendieck at gmail.com (Gabor Grothendieck)
+Date: Tue, 8 Mar 2011 12:51:22 -0500
+Subject: [R-sig-teaching] embed an R console into a web-page?
+In-Reply-To: <817300.77052.qm@web30601.mail.mud.yahoo.com>
+References: <mailman.9.1298458803.32410.r-sig-teaching@r-project.org>
+	<817300.77052.qm@web30601.mail.mud.yahoo.com>
+Message-ID: <AANLkTimGP_=i4vs8CwP7=ZKk_HAReYFB-WpFG9jNTvT5@mail.gmail.com>
+
+On Tue, Mar 8, 2011 at 12:35 PM, jose romero <jlaurentum at yahoo.com> wrote:
+> Right,
+>
+> I followed the suggestion for the correct address to the Rweb page console, which is:
+>
+> http://www.math.montana.edu/Rweb/Rweb.general.html
+>
+> I pasted the sample code onto the text window, as per Rweb's instructions and this is what I got:
+>
+> You don't have permission to access /jeff-bin/Rweb1.03/Rweb.cgi
+> on this server.
+>
+> What must I do to have access to /jeff-bin/... ? Or does anyone know of another online R console page?
+>
+
+It was working when this question first appeared but seems not to be
+now. Don't know if this is temporary or not but google for Rweb
+server.  The University of Lyon Rweb server worked for me.
+
+
+-- 
+Statistics & Software Consulting
+GKX Group, GKX Associates Inc.
+tel: 1-877-GKX-GROUP
+email: ggrothendieck at gmail.com
+
+
+
+From gjkerns at gmail.com  Sat Mar 19 06:54:33 2011
+From: gjkerns at gmail.com (G. Jay Kerns)
+Date: Sat, 19 Mar 2011 01:54:33 -0400
+Subject: [R-sig-teaching] Org-mode example for writing quizzes/exams
+Message-ID: <AANLkTinrntNMjC9j1aUY5bMwTZykrvpqwyid+pEBDA+f@mail.gmail.com>
+
+The sample files are here:
+
+http://github.com/gjkerns/samplequiz
+
+It took me a shamefully long time to get this just right, and it's
+still not perfect (an extra space here and there, the indentation...).
+ But the whole thing is very delicate. Well, not so much anymore.
+
+For those interested but unfamiliar with Org-mode, open
+"samplequiz.org" with Emacs and export to PDF with the sequence
+
+C-c C-e d    (twice for good measure)
+
+and, to get an answer key, delete the single line
+
+#+EXPORT_EXCLUDE_TAGS: answer
+
+beforehand.
+
+--Jay
+
+
+______________________________
+G. Jay Kerns, Ph.D.
+Youngstown State University
+http://people.ysu.edu/~gkerns/
+
+
+
+From landronimirc at gmail.com  Sat Mar 19 09:09:49 2011
+From: landronimirc at gmail.com (Liviu Andronic)
+Date: Sat, 19 Mar 2011 09:09:49 +0100
+Subject: [R-sig-teaching] Org-mode example for writing quizzes/exams
+In-Reply-To: <AANLkTinrntNMjC9j1aUY5bMwTZykrvpqwyid+pEBDA+f@mail.gmail.com>
+References: <AANLkTinrntNMjC9j1aUY5bMwTZykrvpqwyid+pEBDA+f@mail.gmail.com>
+Message-ID: <AANLkTik5YBNG+70hu_4YtRLT8O5arbGsqz4NL9TSc06n@mail.gmail.com>
+
+Hello Jay
+
+On Sat, Mar 19, 2011 at 6:54 AM, G. Jay Kerns <gjkerns at gmail.com> wrote:
+> The sample files are here:
+>
+> http://github.com/gjkerns/samplequiz
+>
+> It took me a shamefully long time to get this just right, and it's
+> still not perfect (an extra space here and there, the indentation...).
+> ?But the whole thing is very delicate. Well, not so much anymore.
+>
+> For those interested but unfamiliar with Org-mode,
+>
+OT: Are you aware of working layout files for LyX, which would also
+allow creating writing quizzes/exams via Sweave.
+
+Thank you
+Liviu
+
+
+> open
+> "samplequiz.org" with Emacs and export to PDF with the sequence
+>
+> C-c C-e d ? ?(twice for good measure)
+>
+> and, to get an answer key, delete the single line
+>
+> #+EXPORT_EXCLUDE_TAGS: answer
+>
+> beforehand.
+>
+> --Jay
+>
+>
+> ______________________________
+> G. Jay Kerns, Ph.D.
+> Youngstown State University
+> http://people.ysu.edu/~gkerns/
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+-- 
+Do you know how to read?
+http://www.alienetworks.com/srtest.cfm
+http://goodies.xfce.org/projects/applications/xfce4-dict#speed-reader
+Do you know how to write?
+http://garbl.home.comcast.net/~garbl/stylemanual/e.htm#e-mail
+
+
+
+From gjkerns at gmail.com  Sat Mar 19 18:50:20 2011
+From: gjkerns at gmail.com (G. Jay Kerns)
+Date: Sat, 19 Mar 2011 13:50:20 -0400
+Subject: [R-sig-teaching] Org-mode example for writing quizzes/exams
+In-Reply-To: <AANLkTik5YBNG+70hu_4YtRLT8O5arbGsqz4NL9TSc06n@mail.gmail.com>
+References: <AANLkTinrntNMjC9j1aUY5bMwTZykrvpqwyid+pEBDA+f@mail.gmail.com>
+	<AANLkTik5YBNG+70hu_4YtRLT8O5arbGsqz4NL9TSc06n@mail.gmail.com>
+Message-ID: <AANLkTim-5DcvRrR2BPv=_1y8PkUqKtmQM_SzGrMjZsQv@mail.gmail.com>
+
+Dear Liviu,
+
+On Sat, Mar 19, 2011 at 4:09 AM, Liviu Andronic <landronimirc at gmail.com> wrote:
+> Hello Jay
+>
+>>
+> OT: Are you aware of working layout files for LyX, which would also
+> allow creating writing quizzes/exams via Sweave.
+>
+> Thank you
+> Liviu
+>
+
+Both yes and no:
+
+No, I'm not aware of existing devoted layout files for quizzes/exams in LyX, but
+
+Yes, with LyX + Sweave it's easy enough to throw a quiz together
+without too much trouble.  I have some examples here:
+
+http://www.ysumathstat.org/faculty/kerns/video/STAT3743/02-RESOURCES/quizexam/
+
+Looking back, it is/was much faster to write something like this with
+LyX than Org-mode, but after this pain it might be easier.  And
+sometimes it's a matter of sport.  :-)
+
+Regards,
+Jay
+
+
+
+______________________________
+G. Jay Kerns, Ph.D.
+Youngstown State University
+http://people.ysu.edu/~gkerns/
+
+
+

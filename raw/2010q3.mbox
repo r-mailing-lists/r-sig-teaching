@@ -1,0 +1,1341 @@
+From jlaurentum at yahoo.com  Tue Jul 13 15:21:50 2010
+From: jlaurentum at yahoo.com (jose romero)
+Date: Tue, 13 Jul 2010 06:21:50 -0700 (PDT)
+Subject: [R-sig-teaching] a statistic-teaching question
+Message-ID: <105397.40095.qm@web30602.mail.mud.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100713/0217d57a/attachment.pl>
+
+From Greg.Snow at imail.org  Tue Jul 13 20:52:49 2010
+From: Greg.Snow at imail.org (Greg Snow)
+Date: Tue, 13 Jul 2010 12:52:49 -0600
+Subject: [R-sig-teaching] a statistic-teaching question
+In-Reply-To: <105397.40095.qm@web30602.mail.mud.yahoo.com>
+References: <105397.40095.qm@web30602.mail.mud.yahoo.com>
+Message-ID: <B37C0A15B8FB3C468B5BC7EBC7DA14CC633A25898D@LP-EXMBVS10.CO.IHC.COM>
+
+Well the correct answer from a frequentist perspective is that the probability is either 0 or 1, but there is not enough information to tell which one (actually for question 2 it is possible that the answer is both 0 and 1 (but not anything in between)).  So any student who expresses the idea of "I don't know" coherently should get full credit.  If we interpret mean or average to be sample rather than population, then the answer is still 0 or 1, but they can compute it.  Whether students who give the p-value for the t test should get full, partial, or no credit depends on what you (or other teachers) have stressed.  If you have stressed that p-values are definitely not probabilities on the population parameters, then the p-value is not the answer and should not get credit.  If the book and lecture were sufficiently vague on the point then they could get some credit.
+
+Either way both questions are clearly poorly worded (from a Bayesian perspective as well).
+
+-- 
+Gregory (Greg) L. Snow Ph.D.
+Statistical Data Center
+Intermountain Healthcare
+greg.snow at imail.org
+801.408.8111
+
+
+> -----Original Message-----
+> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-
+> bounces at r-project.org] On Behalf Of jose romero
+> Sent: Tuesday, July 13, 2010 7:22 AM
+> To: r-sig-teaching at r-project.org
+> Subject: [R-sig-teaching] a statistic-teaching question
+> 
+> Dear R-teaching list:
+> 
+> I would like to put forward for your consideration an issue which is
+> not R related, but statistics-teaching related.? Although i know full
+> well that this list is intended for discussion of the use of R in
+> teaching statistics, I also know that most (if not all) of you out
+> there are highly qualified statistics teachers, and as such, I'd like
+> to know your opinion on this issue:
+> 
+> As a statistics instructor in a open university (distance education),
+> part of my job functions consist in grading exams written at the
+> central level in my institution and presented by students nationwide.
+> Recently, i had to grade an exam of which the first two questions ran
+> like this (again, i did not write this exam):
+> 
+> 1) The following is a sample of the duration (in minutes) of time
+> intervals between queries to a data base:
+> 
+> ??? 91??? 86??? 71??? 79??? 51??? 51??? 67??? 60??? 79??? 85
+> ??? 68??? 86??? 53??? 45??? 86??? 71??? 82??? 88??? 72??? 67
+> ??? 51??? 51??? 75??? 81??? 76??? 80??? 75??? 76??? 82??? 49
+> ??? 66??? 83??? 84??? 82??? 84??? 76??? 53??? 75??? 70??? 55
+> 
+> What is the probability that the mean time between queries is more than
+> 72.5 minutes?
+> 
+> 2) For a certain region of the country, the rainfall measurements (in
+> mm) during the last 15 years are the following:
+> 
+> ??? 580??? 575??? 400??? 750??? 428??? 636??? 825??? 360
+> ??? 850??? 590??? 875??? 735??? 920??? 950??? 550
+> 
+> What is the probability that the average rainfall during the last 15
+> years is less than 625 mm?
+> 
+> 
+> Considering that these are exam questions for an introductory
+> statistical inference course (non bayesian), what are your objections,
+> as a teacher, to the way these questions are posed?? If you had to
+> grade exams with such questions, and it is not in your power to cancel
+> this exam and re-schedule for another one, how would you grade your
+> pupils?
+> 
+> Once again, please excuse me for posting these non-R related and very
+> absurd questions for your consideration.? However, i'd really like to
+> know the experts' opinion on this.
+> 
+> Thanks in advance,
+> 
+> jos? romero
+> 
+> 
+> 
+> 	[[alternative HTML version deleted]]
+
+
+
+From ian.fellows at stat.ucla.edu  Tue Jul 13 21:59:35 2010
+From: ian.fellows at stat.ucla.edu (ian fellows)
+Date: Tue, 13 Jul 2010 12:59:35 -0700
+Subject: [R-sig-teaching] a statistic-teaching question
+In-Reply-To: <B37C0A15B8FB3C468B5BC7EBC7DA14CC633A25898D@LP-EXMBVS10.CO.IHC.COM>
+References: <105397.40095.qm@web30602.mail.mud.yahoo.com>
+	<B37C0A15B8FB3C468B5BC7EBC7DA14CC633A25898D@LP-EXMBVS10.CO.IHC.COM>
+Message-ID: <A4582342-052E-44E4-966C-0056E4701A58@stat.ucla.edu>
+
+I would go further and hypothesize that the exam writer (and  
+instructor?) does not understand the interpretation of a p-value.  
+Both questions are misleading and impossible to answer without  
+rejecting the premise of the question itself. I would simply drop  
+them and use only the valid questions to determine a grade. The  
+danger is that the students have been taught this incorrect (but  
+common) interpretation throughout the course, and there may be  
+nothing that you can do to rectify that.
+
+Ian
+
+
+On Jul 13, 2010, at 11:52 AM, Greg Snow wrote:
+
+> Well the correct answer from a frequentist perspective is that the  
+> probability is either 0 or 1, but there is not enough information  
+> to tell which one (actually for question 2 it is possible that the  
+> answer is both 0 and 1 (but not anything in between)).  So any  
+> student who expresses the idea of "I don't know" coherently should  
+> get full credit.  If we interpret mean or average to be sample  
+> rather than population, then the answer is still 0 or 1, but they  
+> can compute it.  Whether students who give the p-value for the t  
+> test should get full, partial, or no credit depends on what you (or  
+> other teachers) have stressed.  If you have stressed that p-values  
+> are definitely not probabilities on the population parameters, then  
+> the p-value is not the answer and should not get credit.  If the  
+> book and lecture were sufficiently vague on the point then they  
+> could get some credit.
+>
+> Either way both questions are clearly poorly worded (from a  
+> Bayesian perspective as well).
+>
+> -- 
+> Gregory (Greg) L. Snow Ph.D.
+> Statistical Data Center
+> Intermountain Healthcare
+> greg.snow at imail.org
+> 801.408.8111
+>
+>
+>> -----Original Message-----
+>> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-
+>> bounces at r-project.org] On Behalf Of jose romero
+>> Sent: Tuesday, July 13, 2010 7:22 AM
+>> To: r-sig-teaching at r-project.org
+>> Subject: [R-sig-teaching] a statistic-teaching question
+>>
+>> Dear R-teaching list:
+>>
+>> I would like to put forward for your consideration an issue which is
+>> not R related, but statistics-teaching related.  Although i know full
+>> well that this list is intended for discussion of the use of R in
+>> teaching statistics, I also know that most (if not all) of you out
+>> there are highly qualified statistics teachers, and as such, I'd like
+>> to know your opinion on this issue:
+>>
+>> As a statistics instructor in a open university (distance education),
+>> part of my job functions consist in grading exams written at the
+>> central level in my institution and presented by students nationwide.
+>> Recently, i had to grade an exam of which the first two questions ran
+>> like this (again, i did not write this exam):
+>>
+>> 1) The following is a sample of the duration (in minutes) of time
+>> intervals between queries to a data base:
+>>
+>>     91    86    71    79    51    51    67    60    79    85
+>>     68    86    53    45    86    71    82    88    72    67
+>>     51    51    75    81    76    80    75    76    82    49
+>>     66    83    84    82    84    76    53    75    70    55
+>>
+>> What is the probability that the mean time between queries is more  
+>> than
+>> 72.5 minutes?
+>>
+>> 2) For a certain region of the country, the rainfall measurements (in
+>> mm) during the last 15 years are the following:
+>>
+>>     580    575    400    750    428    636    825    360
+>>     850    590    875    735    920    950    550
+>>
+>> What is the probability that the average rainfall during the last 15
+>> years is less than 625 mm?
+>>
+>>
+>> Considering that these are exam questions for an introductory
+>> statistical inference course (non bayesian), what are your  
+>> objections,
+>> as a teacher, to the way these questions are posed?  If you had to
+>> grade exams with such questions, and it is not in your power to  
+>> cancel
+>> this exam and re-schedule for another one, how would you grade your
+>> pupils?
+>>
+>> Once again, please excuse me for posting these non-R related and very
+>> absurd questions for your consideration.  However, i'd really like to
+>> know the experts' opinion on this.
+>>
+>> Thanks in advance,
+>>
+>> jos? romero
+>>
+>>
+>>
+>> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+From jones at reed.edu  Tue Jul 13 23:01:29 2010
+From: jones at reed.edu (Albyn Jones)
+Date: Tue, 13 Jul 2010 14:01:29 -0700
+Subject: [R-sig-teaching] a statistic-teaching question
+In-Reply-To: <105397.40095.qm@web30602.mail.mud.yahoo.com>
+References: <105397.40095.qm@web30602.mail.mud.yahoo.com>
+Message-ID: <20100713210129.GF12798@reed.edu>
+
+I hypothesize that the person who wrote question (1) expects the
+student to compute the sample mean (71.55) and se (2.06), assume that
+the sample mean is normally distributed with that mean and sd, and
+compute Pr(X >72.5|mu=71.5,sigma=2.06), ie about .32.  Since frequentists
+don't have probability distributions for parameters, that would be nonsense,
+or as some already stated, the answer is 0 or 1, and we don't know which.
+The question clearly does not assume a prior, so a Bayesian interpretation
+would presumably be out of order.
+
+question (2) exhibits the same confusion.
+
+albyn
+
+
+On Tue, Jul 13, 2010 at 06:21:50AM -0700, jose romero wrote:
+> Dear R-teaching list:
+> 
+> I would like to put forward for your consideration an issue which is not R related, but statistics-teaching related.? Although i know full well that this list is intended for discussion of the use of R in teaching statistics, I also know that most (if not all) of you out there are highly qualified statistics teachers, and as such, I'd like to know your opinion on this issue:
+> 
+> As a statistics instructor in a open university (distance education), part of my job functions consist in grading exams written at the central level in my institution and presented by students nationwide.? Recently, i had to grade an exam of which the first two questions ran like this (again, i did not write this exam):
+> 
+> 1) The following is a sample of the duration (in minutes) of time intervals between queries to a data base:
+> 
+> ??? 91??? 86??? 71??? 79??? 51??? 51??? 67??? 60??? 79??? 85
+> ??? 68??? 86??? 53??? 45??? 86??? 71??? 82??? 88??? 72??? 67
+> ??? 51??? 51??? 75??? 81??? 76??? 80??? 75??? 76??? 82??? 49
+> ??? 66??? 83??? 84??? 82??? 84??? 76??? 53??? 75??? 70??? 55
+> 
+> What is the probability that the mean time between queries is more than 72.5 minutes?
+> 
+> 2) For a certain region of the country, the rainfall measurements (in mm) during the last 15 years are the following:
+> 
+> ??? 580??? 575??? 400??? 750??? 428??? 636??? 825??? 360
+> ??? 850??? 590??? 875??? 735??? 920??? 950??? 550
+> 
+> What is the probability that the average rainfall during the last 15 years is less than 625 mm?
+> 
+> 
+> Considering that these are exam questions for an introductory statistical inference course (non bayesian), what are your objections, as a teacher, to the way these questions are posed?? If you had to grade exams with such questions, and it is not in your power to cancel this exam and re-schedule for another one, how would you grade your pupils?? 
+> 
+> Once again, please excuse me for posting these non-R related and very absurd questions for your consideration.? However, i'd really like to know the experts' opinion on this.
+> 
+> Thanks in advance,
+> 
+> jos? romero 
+> 
+> 
+> 
+> 	[[alternative HTML version deleted]]
+> 
+
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+-- 
+Albyn Jones
+Reed College
+jones at reed.edu
+
+
+
+From jlaurentum at yahoo.com  Fri Jul 16 17:50:02 2010
+From: jlaurentum at yahoo.com (jose romero)
+Date: Fri, 16 Jul 2010 08:50:02 -0700 (PDT)
+Subject: [R-sig-teaching] a statistic-teaching question
+In-Reply-To: <AANLkTilsc2rtgxfhg8KDUvd6WWsgwvuFDrt6Y1iLJpYR@mail.gmail.com>
+Message-ID: <473501.11124.qm@web30602.mail.mud.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100716/060d0f9a/attachment.pl>
+
+From scolwell at uoguelph.ca  Sun Aug  1 22:30:02 2010
+From: scolwell at uoguelph.ca (Scott Colwell)
+Date: Sun, 1 Aug 2010 16:30:02 -0400 (EDT)
+Subject: [R-sig-teaching] Looking for code for population and sample curve
+Message-ID: <868749225.220762.1280694602620.JavaMail.root@erie.cs.uoguelph.ca>
+
+Hello,
+
+I am looking for code to create normal distribution plots of a population and 5 samples of the population all on one graph.  I can plot all 6 together, but can't seem to adjust the height of the sample plots so that they fit under the population curve.
+
+Thanks,
+
+SC
+
+-- 
+Scott R. Colwell, Ph.D.
+Associate Professor
+University of Guelph
+College of Management and Economics
+Guelph, Ontario, Canada, N1G 2W1
+
+
+
+From Greg.Snow at imail.org  Tue Aug  3 22:19:32 2010
+From: Greg.Snow at imail.org (Greg Snow)
+Date: Tue, 3 Aug 2010 14:19:32 -0600
+Subject: [R-sig-teaching] Looking for code for population and sample
+ curve
+In-Reply-To: <868749225.220762.1280694602620.JavaMail.root@erie.cs.uoguelph.ca>
+References: <868749225.220762.1280694602620.JavaMail.root@erie.cs.uoguelph.ca>
+Message-ID: <B37C0A15B8FB3C468B5BC7EBC7DA14CC633A72DF7F@LP-EXMBVS10.CO.IHC.COM>
+
+What types of plots are you trying to get?  Qq-plots? Histograms of samples compared to a line showing the population?  Density estimates?
+
+-- 
+Gregory (Greg) L. Snow Ph.D.
+Statistical Data Center
+Intermountain Healthcare
+greg.snow at imail.org
+801.408.8111
+
+
+> -----Original Message-----
+> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-
+> bounces at r-project.org] On Behalf Of Scott Colwell
+> Sent: Sunday, August 01, 2010 2:30 PM
+> To: r-sig-teaching at r-project.org
+> Subject: [R-sig-teaching] Looking for code for population and sample
+> curve
+> 
+> Hello,
+> 
+> I am looking for code to create normal distribution plots of a
+> population and 5 samples of the population all on one graph.  I can
+> plot all 6 together, but can't seem to adjust the height of the sample
+> plots so that they fit under the population curve.
+> 
+> Thanks,
+> 
+> SC
+> 
+> --
+> Scott R. Colwell, Ph.D.
+> Associate Professor
+> University of Guelph
+> College of Management and Economics
+> Guelph, Ontario, Canada, N1G 2W1
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+From workshop at inseed.org  Wed Aug  4 10:48:46 2010
+From: workshop at inseed.org (INSEED workshops)
+Date: Wed, 04 Aug 2010 11:48:46 +0300
+Subject: [R-sig-teaching] Short courses in statistics
+Message-ID: <4C59296E.7080904@inseed.org>
+
+Dear friends,
+
+INSEED is happy to announce two short courses, viz.
+
+* 10-14 November, 2010: Statistical methods in Epidemiology (using R), 
+Anand, Gujarat
+
+* 22-26 November, 2010: Bayesian computation using OpenBUGS (and R), 
+Vellore, Tamil Nadu
+
+The details of the workshop and the registration procedure are at 
+http://www.inseed.org/workshops/.
+
+Bijoy Joseph
+Course coordinator
+____________________________________________________
+Indic Society for Education and Development (INSEED)
+1, Swami Enterprises complex,
+Tigrania Road, Nashik - 422011, India.
+
+Tel: +91-9890729200, +91-253-2503969
+http://www.inseed.org/
+
+
+
+From solafahbh at yahoo.com  Fri Aug 20 01:33:34 2010
+From: solafahbh at yahoo.com (solafah bh)
+Date: Thu, 19 Aug 2010 16:33:34 -0700 (PDT)
+Subject: [R-sig-teaching] question
+Message-ID: <706237.65863.qm@web50806.mail.re2.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100819/b32448b9/attachment.pl>
+
+From jones at reed.edu  Fri Aug 20 02:18:01 2010
+From: jones at reed.edu (Albyn Jones)
+Date: Thu, 19 Aug 2010 17:18:01 -0700
+Subject: [R-sig-teaching] question
+In-Reply-To: <706237.65863.qm@web50806.mail.re2.yahoo.com>
+References: <706237.65863.qm@web50806.mail.re2.yahoo.com>
+Message-ID: <20100820001801.GF2201@reed.edu>
+
+Dear solafah
+
+This is a list for discussion of use of R in teaching.
+
+Your question would be more appropriate for the r-help list, assuming
+it's not a homework assignment.  It is an amusing question though.
+One way would be to make use of the inverse CDF method, combined with
+uniformly sampling from some interval like (0, .05) or (.95,1).  I'll
+leave the details as an exercise for the r student.
+
+albyn
+
+On Thu, Aug 19, 2010 at 04:33:34PM -0700, solafah bh wrote:
+> Hello
+> I want to know how can i sampling from upper and lower tail of normal distribution, by R code?
+> ?
+> Regards
+> 
+> 
+>       
+> 	[[alternative HTML version deleted]]
+> 
+
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+-- 
+Albyn Jones
+Reed College
+jones at reed.edu
+
+
+
+From yemitanraphael at hotmail.com  Fri Aug 20 12:31:16 2010
+From: yemitanraphael at hotmail.com (Yemitan Raphael)
+Date: Fri, 20 Aug 2010 10:31:16 +0000
+Subject: [R-sig-teaching] Entering Data into R and running a bootstrap
+In-Reply-To: <mailman.9.1282298403.28650.r-sig-teaching@r-project.org>
+References: <mailman.9.1282298403.28650.r-sig-teaching@r-project.org>
+Message-ID: <BLU136-W31B5B718893BCA2D5845A3CF9F0@phx.gbl>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100820/01af58df/attachment.pl>
+
+From gavin.simpson at ucl.ac.uk  Fri Aug 20 12:39:36 2010
+From: gavin.simpson at ucl.ac.uk (Gavin Simpson)
+Date: Fri, 20 Aug 2010 11:39:36 +0100
+Subject: [R-sig-teaching] Entering Data into R and running a bootstrap
+In-Reply-To: <BLU136-W31B5B718893BCA2D5845A3CF9F0@phx.gbl>
+References: <mailman.9.1282298403.28650.r-sig-teaching@r-project.org>
+	<BLU136-W31B5B718893BCA2D5845A3CF9F0@phx.gbl>
+Message-ID: <1282300776.2349.120.camel@desktop.localdomain>
+
+On Fri, 2010-08-20 at 10:31 +0000, Yemitan Raphael wrote:
+> Hello,
+>  
+> I want to know how to enter data into R, how to run a bootstrap
+> regression and also how to test for serial correlation.
+
+Wrong list. Try R-Help, but not before you've read the posting guide as
+you won't get an answer to your question if you send the same message
+there.
+
+G
+
+-- 
+%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%
+ Dr. Gavin Simpson             [t] +44 (0)20 7679 0522
+ ECRC, UCL Geography,          [f] +44 (0)20 7679 0565
+ Pearson Building,             [e] gavin.simpsonATNOSPAMucl.ac.uk
+ Gower Street, London          [w] http://www.ucl.ac.uk/~ucfagls/
+ UK. WC1E 6BT.                 [w] http://www.freshwaters.org.uk
+%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%
+
+
+
+From aaboueissa at usm.maine.edu  Sat Sep 11 20:16:47 2010
+From: aaboueissa at usm.maine.edu (AbouEl-Makarim Aboueissa)
+Date: Sat, 11 Sep 2010 14:16:47 -0400
+Subject: [R-sig-teaching] Lecture Slides (Power Point)
+Message-ID: <4C8B8F4F020000A60008014B@uct5.uct.usm.maine.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100911/5254d942/attachment.pl>
+
+From jwiley.psych at gmail.com  Wed Sep 22 06:34:59 2010
+From: jwiley.psych at gmail.com (Joshua Wiley)
+Date: Tue, 21 Sep 2010 21:34:59 -0700
+Subject: [R-sig-teaching] pros/cons of teaching attach()
+Message-ID: <AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>
+
+Hi all,
+
+I am wondering if anyone teaches the attach function to new students
+and if so, why?
+
+
+I have never taught a class using R, but in small tutorials and
+providing direct help, I have run across this issue several times.  I
+have always avoided it, but a couple of times, students had learned to
+use it in a class (though without much detail) and were rather grumpy
+with me for using full variable names or with().  New converts,
+particularly from GUIs like SPSS, already tend to be leery of R, and I
+hate to make working at the command line more onerous since any typing
+is more than they are used to, but at the same time a discussion of
+environments, which I think is necessary to avoid trouble with attach,
+does not seem like beginner material either.
+
+I have wondered about this many times, but was just reminded again by
+an R-help post.
+
+Thanks,
+
+Josh
+
+-- 
+Joshua Wiley
+Ph.D. Student, Health Psychology
+University of California, Los Angeles
+http://www.joshuawiley.com/
+
+
+
+From maj at waikato.ac.nz  Wed Sep 22 07:03:36 2010
+From: maj at waikato.ac.nz (Murray Jorgensen)
+Date: Wed, 22 Sep 2010 17:03:36 +1200
+Subject: [R-sig-teaching] pros/cons of teaching attach()
+In-Reply-To: <AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>
+References: <AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>
+Message-ID: <4C998E28.5030503@waikato.ac.nz>
+
+Hi Joshua,
+
+I do teach R to my students and face each time what to do about attach() 
+.  I can't really add to your clear statement of the main reasons for 
+and against teaching attach() and I tend sometimes to go one way and 
+sometimes the other.
+
+Regards,  Murray
+
+On 22/09/2010 4:34 p.m., Joshua Wiley wrote:
+> Hi all,
+>
+> I am wondering if anyone teaches the attach function to new students
+> and if so, why?
+>
+>
+> I have never taught a class using R, but in small tutorials and
+> providing direct help, I have run across this issue several times.  I
+> have always avoided it, but a couple of times, students had learned to
+> use it in a class (though without much detail) and were rather grumpy
+> with me for using full variable names or with().  New converts,
+> particularly from GUIs like SPSS, already tend to be leery of R, and I
+> hate to make working at the command line more onerous since any typing
+> is more than they are used to, but at the same time a discussion of
+> environments, which I think is necessary to avoid trouble with attach,
+> does not seem like beginner material either.
+>
+> I have wondered about this many times, but was just reminded again by
+> an R-help post.
+>
+> Thanks,
+>
+> Josh
+>
+
+
+-- 
+Dr Murray Jorgensen      http://www.stats.waikato.ac.nz/Staff/maj.html
+Department of Statistics, University of Waikato, Hamilton, New Zealand
+Email: maj at waikato.ac.nz    majorgensen at ihug.co.nz      Fax 7 838 4155
+Phone  +64 7 838 4773 wk    Home +64 7 825 0441   Mobile 021 0200 8350
+
+
+
+From myotisone at gmail.com  Wed Sep 22 08:17:39 2010
+From: myotisone at gmail.com (Graham Smith)
+Date: Wed, 22 Sep 2010 07:17:39 +0100
+Subject: [R-sig-teaching] pros/cons of teaching attach()
+In-Reply-To: <AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>
+References: <AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>
+Message-ID: <AANLkTinJVVhYaQZ9bGQ=Kjw9f5Ye6XO5he79xuhNG3PY@mail.gmail.com>
+
+Josh
+
+> I am wondering if anyone teaches the attach function to new students
+> and if so, why?
+
+I'm not sure whether my approach is the best or worst of both worlds.
+
+I use attach() at the beginning with warnings of it being bad practice
+and explain why. But also explain why on occasions, it can make life
+easier. Such as your first few lessons in R.
+
+Later we subset the data and then use the data$variable approach and I
+remind them of my earlier explanation of attach() and why we are now
+using a different approach.
+
+Graham
+
+
+
+From gavin.simpson at ucl.ac.uk  Wed Sep 22 10:36:01 2010
+From: gavin.simpson at ucl.ac.uk (Gavin Simpson)
+Date: Wed, 22 Sep 2010 09:36:01 +0100
+Subject: [R-sig-teaching] pros/cons of teaching attach()
+In-Reply-To: <AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>
+References: <AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>
+Message-ID: <1285144561.2812.12.camel@desktop.localdomain>
+
+On Tue, 2010-09-21 at 21:34 -0700, Joshua Wiley wrote:
+> Hi all,
+> 
+> I am wondering if anyone teaches the attach function to new students
+> and if so, why?
+
+I don't use attach() at all; too easy to make mistakes that are
+difficult to track down. I tend not to use $ either as that encourages
+people to use it to go fiddling in the bowels of other lists (objects);
+model$residuals might be OK for lm() models (though not if you've used
+na.exclude for example) but students might be surprised with what they
+get with more complex modelling functions with different residuals.
+
+If I was really teaching R, I would mention attach() and then show why
+it is bad so I've dealt with the issue on my terms.
+
+G
+
+> I have never taught a class using R, but in small tutorials and
+> providing direct help, I have run across this issue several times.  I
+> have always avoided it, but a couple of times, students had learned to
+> use it in a class (though without much detail) and were rather grumpy
+> with me for using full variable names or with().  New converts,
+> particularly from GUIs like SPSS, already tend to be leery of R, and I
+> hate to make working at the command line more onerous since any typing
+> is more than they are used to, but at the same time a discussion of
+> environments, which I think is necessary to avoid trouble with attach,
+> does not seem like beginner material either.
+> 
+> I have wondered about this many times, but was just reminded again by
+> an R-help post.
+> 
+> Thanks,
+> 
+> Josh
+> 
+
+-- 
+%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%
+ Dr. Gavin Simpson             [t] +44 (0)20 7679 0522
+ ECRC, UCL Geography,          [f] +44 (0)20 7679 0565
+ Pearson Building,             [e] gavin.simpsonATNOSPAMucl.ac.uk
+ Gower Street, London          [w] http://www.ucl.ac.uk/~ucfagls/
+ UK. WC1E 6BT.                 [w] http://www.freshwaters.org.uk
+%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%
+
+
+
+From john.ros at gmail.com  Wed Sep 22 10:41:12 2010
+From: john.ros at gmail.com (Jonathan Rosenblatt)
+Date: Wed, 22 Sep 2010 10:41:12 +0200
+Subject: [R-sig-teaching] pros/cons of teaching attach()
+In-Reply-To: <1285144561.2812.12.camel@desktop.localdomain>
+References: <AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>
+	<1285144561.2812.12.camel@desktop.localdomain>
+Message-ID: <AANLkTinG2L-Qqg2hsDtN1Ry0kxWi80PjoHr+uRrTGK0p@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100922/381d78a2/attachment.pl>
+
+From jwiley.psych at gmail.com  Wed Sep 22 11:04:50 2010
+From: jwiley.psych at gmail.com (Joshua Wiley)
+Date: Wed, 22 Sep 2010 02:04:50 -0700
+Subject: [R-sig-teaching] pros/cons of teaching attach()
+In-Reply-To: <AANLkTinG2L-Qqg2hsDtN1Ry0kxWi80PjoHr+uRrTGK0p@mail.gmail.com>
+References: <AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>
+	<1285144561.2812.12.camel@desktop.localdomain>
+	<AANLkTinG2L-Qqg2hsDtN1Ry0kxWi80PjoHr+uRrTGK0p@mail.gmail.com>
+Message-ID: <AANLkTi=HaOQQw2WtkwsJcXtPRT3oxsuwMZBNy=yPUh62@mail.gmail.com>
+
+Thanks to everyone for your thoughtful replies.  I think I am inclined
+not to use attach, but to bring it up and briefly mention some of the
+mistakes that are easy to make.  If students already know/use attach,
+it will at least be clear why I do not use it, and for students
+unfamiliar with it, they should not be tempted to start.
+
+Thanks again for all the responses!
+
+Josh
+
+-- 
+Joshua Wiley
+Ph.D. Student, Health Psychology
+University of California, Los Angeles
+http://www.joshuawiley.com/
+
+
+
+From bates at stat.wisc.edu  Wed Sep 22 14:10:14 2010
+From: bates at stat.wisc.edu (Douglas Bates)
+Date: Wed, 22 Sep 2010 07:10:14 -0500
+Subject: [R-sig-teaching] pros/cons of teaching attach()
+In-Reply-To: <AANLkTi=HaOQQw2WtkwsJcXtPRT3oxsuwMZBNy=yPUh62@mail.gmail.com>
+References: <AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>
+	<1285144561.2812.12.camel@desktop.localdomain>
+	<AANLkTinG2L-Qqg2hsDtN1Ry0kxWi80PjoHr+uRrTGK0p@mail.gmail.com>
+	<AANLkTi=HaOQQw2WtkwsJcXtPRT3oxsuwMZBNy=yPUh62@mail.gmail.com>
+Message-ID: <AANLkTinVUxRe_qiFWcAs6msEN+0bERqBwsQp-R2wgyvn@mail.gmail.com>
+
+On Wed, Sep 22, 2010 at 4:04 AM, Joshua Wiley <jwiley.psych at gmail.com> wrote:
+> Thanks to everyone for your thoughtful replies. ?I think I am inclined
+> not to use attach, but to bring it up and briefly mention some of the
+> mistakes that are easy to make. ?If students already know/use attach,
+> it will at least be clear why I do not use it, and for students
+> unfamiliar with it, they should not be tempted to start.
+>
+> Thanks again for all the responses!
+
+I avoid teaching attach() and discourage its use if the students have
+already seen it.  I do teach both with and within (with provides
+read-only access, within provides read-write access to the variable
+names in a data frame or a list).  As mentioned in an earlier reply in
+this thread, the use of extractor functions, like residuals() or
+fitted() or coef(), should be preferred to reaching inside a data
+object and grabbing a component that may or may not continue to be
+defined in future versions,
+
+The supplementary material on R that I use in a first-year grad course
+on applied statistics is available, for this semester, at
+www.stat.wisc.edu/~st849-1/Rnotes  My approach to data organization is
+shown in the "Introduction to R".
+
+
+
+From ian.fellows at stat.ucla.edu  Wed Sep 22 17:56:07 2010
+From: ian.fellows at stat.ucla.edu (Ian Fellows)
+Date: Wed, 22 Sep 2010 08:56:07 -0700
+Subject: [R-sig-teaching] pros/cons of teaching attach()
+References: <A3C9773B-3BEC-495A-87B9-7EBB22FB3B6E@stat.ucla.edu>
+Message-ID: <73B50E06-B734-4560-A366-4B3DDF6455DD@stat.ucla.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100922/477c537e/attachment.pl>
+
+From lchihara at carleton.edu  Thu Sep 23 14:53:28 2010
+From: lchihara at carleton.edu (Laura Chihara)
+Date: Thu, 23 Sep 2010 07:53:28 -0500
+Subject: [R-sig-teaching] pros/cons of teaching attach()
+In-Reply-To: <AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>
+References: <AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>
+Message-ID: <4C9B4DC8.9030205@carleton.edu>
+
+This thread is interesting. For those who use the
+subset command, when you extract a variable from a
+data frame, do you give it the same name as in the data set?
+
+For instance,
+
+my.data with variables trout, whale
+
+trout <- subset(my.data, select=trout, drop=T)
+
+I guess if you never attach, then you don't have to
+worry about masking in the future.
+
+Thanks
+
+-Laura
+On 9/21/2010 11:34 PM, Joshua Wiley wrote:
+> Hi all,
+>
+> I am wondering if anyone teaches the attach function to new students
+> and if so, why?
+>
+>
+> I have never taught a class using R, but in small tutorials and
+> providing direct help, I have run across this issue several times.  I
+> have always avoided it, but a couple of times, students had learned to
+> use it in a class (though without much detail) and were rather grumpy
+> with me for using full variable names or with().  New converts,
+> particularly from GUIs like SPSS, already tend to be leery of R, and I
+> hate to make working at the command line more onerous since any typing
+> is more than they are used to, but at the same time a discussion of
+> environments, which I think is necessary to avoid trouble with attach,
+> does not seem like beginner material either.
+>
+> I have wondered about this many times, but was just reminded again by
+> an R-help post.
+>
+> Thanks,
+>
+> Josh
+>
+
+-- 
+************************************************
+Laura Chihara
+Professor of Mathematics  507-222-4065 (office)
+Dept of Mathematics       507-222-4312 (fax)
+Carleton College
+1 North College Street
+Northfield MN 55057
+
+
+
+From jwiley.psych at gmail.com  Thu Sep 23 17:09:07 2010
+From: jwiley.psych at gmail.com (Joshua Wiley)
+Date: Thu, 23 Sep 2010 08:09:07 -0700
+Subject: [R-sig-teaching] pros/cons of teaching attach()
+In-Reply-To: <4C9B4DC8.9030205@carleton.edu>
+References: <AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>
+	<4C9B4DC8.9030205@carleton.edu>
+Message-ID: <AANLkTik21fZfibL_+oPwegaDy3z==tW7ipygUNbDwATy@mail.gmail.com>
+
+On Thu, Sep 23, 2010 at 5:53 AM, Laura Chihara <lchihara at carleton.edu> wrote:
+> This thread is interesting. For those who use the
+> subset command, when you extract a variable from a
+> data frame, do you give it the same name as in the data set?
+
+For me this would depend on whether I would be merging the data back
+in and/or whether I would be using the data set (and original
+variable) again.  For example,
+
+conc <- subset(DNase, select = "conc")
+# now forget about DNase
+# various operations with conc
+--but--
+conc.tmp <- subset(DNase, select = "conc") # I often add .tmp or 2 or something
+# do some stuff (data cleaning, transformations, whatever)
+DNase[ , "conc"] <- conc.tmp
+# on to model fitting or whatever with full data
+
+That said unless there is reason to be doing alot of work with only
+one variable from the data set or to assign changes you may want to
+reverse, my preference would always be to leave it in the data set (it
+was in there for a reason, after all).
+
+>
+> For instance,
+>
+> my.data with variables trout, whale
+>
+> trout <- subset(my.data, select=trout, drop=T)
+
+If I was only selecting entire variables, I would just use one of the
+extraction operators, e.g., my.data[, "trout"]
+
+>
+> I guess if you never attach, then you don't have to
+> worry about masking in the future.
+>
+> Thanks
+>
+> -Laura
+> On 9/21/2010 11:34 PM, Joshua Wiley wrote:
+>>
+>> Hi all,
+>>
+>> I am wondering if anyone teaches the attach function to new students
+>> and if so, why?
+>>
+>>
+>> I have never taught a class using R, but in small tutorials and
+>> providing direct help, I have run across this issue several times. ?I
+>> have always avoided it, but a couple of times, students had learned to
+>> use it in a class (though without much detail) and were rather grumpy
+>> with me for using full variable names or with(). ?New converts,
+>> particularly from GUIs like SPSS, already tend to be leery of R, and I
+>> hate to make working at the command line more onerous since any typing
+>> is more than they are used to, but at the same time a discussion of
+>> environments, which I think is necessary to avoid trouble with attach,
+>> does not seem like beginner material either.
+>>
+>> I have wondered about this many times, but was just reminded again by
+>> an R-help post.
+>>
+>> Thanks,
+>>
+>> Josh
+>>
+>
+> --
+> ************************************************
+> Laura Chihara
+> Professor of Mathematics ?507-222-4065 (office)
+> Dept of Mathematics ? ? ? 507-222-4312 (fax)
+> Carleton College
+> 1 North College Street
+> Northfield MN 55057
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+-- 
+Joshua Wiley
+Ph.D. Student, Health Psychology
+University of California, Los Angeles
+http://www.joshuawiley.com/
+
+
+
+From maechler at stat.math.ethz.ch  Thu Sep 23 21:50:24 2010
+From: maechler at stat.math.ethz.ch (Martin Maechler)
+Date: Thu, 23 Sep 2010 21:50:24 +0200
+Subject: [R-sig-teaching] pros/cons of teaching attach()
+In-Reply-To: <AANLkTinVUxRe_qiFWcAs6msEN+0bERqBwsQp-R2wgyvn@mail.gmail.com>
+References: <AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>
+	<1285144561.2812.12.camel@desktop.localdomain>
+	<AANLkTinG2L-Qqg2hsDtN1Ry0kxWi80PjoHr+uRrTGK0p@mail.gmail.com>
+	<AANLkTi=HaOQQw2WtkwsJcXtPRT3oxsuwMZBNy=yPUh62@mail.gmail.com>
+	<AANLkTinVUxRe_qiFWcAs6msEN+0bERqBwsQp-R2wgyvn@mail.gmail.com>
+Message-ID: <19611.44928.634078.810193@deb1.math.ethz.ch>
+
+>>>>> Douglas Bates <bates at stat.wisc.edu>
+>>>>>     on Wed, 22 Sep 2010 07:10:14 -0500 writes:
+
+    > On Wed, Sep 22, 2010 at 4:04 AM, Joshua Wiley
+    > <jwiley.psych at gmail.com> wrote:
+    >> Thanks to everyone for your thoughtful replies. ?I think
+    >> I am inclined not to use attach, but to bring it up and
+    >> briefly mention some of the mistakes that are easy to
+    >> make. ?If students already know/use attach, it will at
+    >> least be clear why I do not use it, and for students
+    >> unfamiliar with it, they should not be tempted to start.
+    >> 
+    >> Thanks again for all the responses!
+
+    > I avoid teaching attach() and discourage its use if the
+    > students have already seen it.  I do teach both with and
+    > within (with provides read-only access, within provides
+    > read-write access to the variable names in a data frame or
+    > a list).  As mentioned in an earlier reply in this thread,
+    > the use of extractor functions, like residuals() or
+    > fitted() or coef(), should be preferred to reaching inside
+    > a data object and grabbing a component that may or may not
+    > continue to be defined in future versions,
+
+    > The supplementary material on R that I use in a first-year
+    > grad course on applied statistics is available, for this
+    > semester, at www.stat.wisc.edu/~st849-1/Rnotes My approach
+    > to data organization is shown in the "Introduction to R".
+
+I agree entirely with Doug and Gavin(mostly) and Jonathan.
+
+However,  there's one remark about attach() that "everyone" seems to
+forget (AFAIR even Doug ;-):
+
+Do consider (and teach!) using  attach("foobar.rda") for *.rda files
+which I often find quite preferable to load().
+I forgot who (from R-core) introduced this idea,
+but I do like it:  It rehabilitates attach() into a "decent R
+function" :-)
+
+Martin
+
+
+
+From jwiley.psych at gmail.com  Thu Sep 23 22:14:50 2010
+From: jwiley.psych at gmail.com (Joshua Wiley)
+Date: Thu, 23 Sep 2010 13:14:50 -0700
+Subject: [R-sig-teaching] pros/cons of teaching attach()
+In-Reply-To: <19611.44928.634078.810193@deb1.math.ethz.ch>
+References: <AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>
+	<1285144561.2812.12.camel@desktop.localdomain>
+	<AANLkTinG2L-Qqg2hsDtN1Ry0kxWi80PjoHr+uRrTGK0p@mail.gmail.com>
+	<AANLkTi=HaOQQw2WtkwsJcXtPRT3oxsuwMZBNy=yPUh62@mail.gmail.com>
+	<AANLkTinVUxRe_qiFWcAs6msEN+0bERqBwsQp-R2wgyvn@mail.gmail.com>
+	<19611.44928.634078.810193@deb1.math.ethz.ch>
+Message-ID: <AANLkTi=8HQA9yOj7q+shFXrmNAGapjFsfaW8_StddZmZ@mail.gmail.com>
+
+On Thu, Sep 23, 2010 at 12:50 PM, Martin Maechler
+<maechler at stat.math.ethz.ch> wrote:
+[snip]
+> Do consider (and teach!) using ?attach("foobar.rda") for *.rda files
+> which I often find quite preferable to load().
+> I forgot who (from R-core) introduced this idea,
+> but I do like it: ?It rehabilitates attach() into a "decent R
+> function" :-)
+
+This is amazing.  In two sentences, you made working with *.rda files
+containing multiple objects easier (which makes save.image suddenly
+seem much more useful) and provided a good answer to, "why was it
+written if it should be avoided?"
+
+--Josh
+>
+> Martin
+>
+
+
+
+From tyler.smith at EKU.EDU  Thu Sep 23 22:48:45 2010
+From: tyler.smith at EKU.EDU (Tyler Smith)
+Date: Thu, 23 Sep 2010 16:48:45 -0400
+Subject: [R-sig-teaching] pros/cons of teaching attach()
+In-Reply-To: <1285144561.2812.12.camel@desktop.localdomain>
+References: <AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>
+	<1285144561.2812.12.camel@desktop.localdomain>
+Message-ID: <4C9BBD2D.3060807@eku.edu>
+
+  On 09/22/2010 04:36 AM, Gavin Simpson wrote:
+>
+> I don't use attach() at all; too easy to make mistakes that are
+> difficult to track down. I tend not to use $ either as that encourages
+> people to use it to go fiddling in the bowels of other lists (objects);
+> model$residuals might be OK for lm() models (though not if you've used
+> na.exclude for example) but students might be surprised with what they
+> get with more complex modelling functions with different residuals.
+>
+This is going to be a dumb question, but what do you use instead of $ 
+for accessing variables in a list? [[]] allows for the same fiddling.
+
+Thanks,
+
+Tyler
+
+
+
+From bates at stat.wisc.edu  Thu Sep 23 23:20:38 2010
+From: bates at stat.wisc.edu (Douglas Bates)
+Date: Thu, 23 Sep 2010 16:20:38 -0500
+Subject: [R-sig-teaching] pros/cons of teaching attach()
+In-Reply-To: <4C9BBD2D.3060807@eku.edu>
+References: <AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>
+	<1285144561.2812.12.camel@desktop.localdomain>
+	<4C9BBD2D.3060807@eku.edu>
+Message-ID: <AANLkTimWbY4HRW=oAWe+L5tSynYnUEy5pTXpXA0R9_eD@mail.gmail.com>
+
+On Thu, Sep 23, 2010 at 3:48 PM, Tyler Smith <tyler.smith at eku.edu> wrote:
+> ?On 09/22/2010 04:36 AM, Gavin Simpson wrote:
+>>
+>> I don't use attach() at all; too easy to make mistakes that are
+>> difficult to track down. I tend not to use $ either as that encourages
+>> people to use it to go fiddling in the bowels of other lists (objects);
+>> model$residuals might be OK for lm() models (though not if you've used
+>> na.exclude for example) but students might be surprised with what they
+>> get with more complex modelling functions with different residuals.
+>>
+> This is going to be a dumb question, but what do you use instead of $ for
+> accessing variables in a list? [[]] allows for the same fiddling.
+
+Most people prefer the $ operator because it is easier to type and you
+don't need to quote the name.  The expression
+
+fr$x
+
+is simpler to type and probably to understand than is
+
+fr[["x"]]
+
+However, it is good to know that "[[]]" can be used because it is the
+answer to a frequent question from beginners, which is "How do I pass
+the name of the variable into a function?".  They will often try
+
+meanMed <- function(frm, nm) c(mean=mean(frm$nm), median=median(frm$nm))
+
+and are frustrated that it doesn't work as intended.  If you want to
+use the value of the argument called nm as the name of the variable to
+extract you must use frm[[nm]]
+
+
+
+From Greg.Snow at imail.org  Fri Sep 24 22:16:37 2010
+From: Greg.Snow at imail.org (Greg Snow)
+Date: Fri, 24 Sep 2010 14:16:37 -0600
+Subject: [R-sig-teaching] pros/cons of teaching attach()
+In-Reply-To: <4C9BBD2D.3060807@eku.edu>
+References: <AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>
+	<1285144561.2812.12.camel@desktop.localdomain>
+	<4C9BBD2D.3060807@eku.edu>
+Message-ID: <B37C0A15B8FB3C468B5BC7EBC7DA14CC633CA5BBC8@LP-EXMBVS10.CO.IHC.COM>
+
+I think that the reference to not using $ or [[ was meant for cases where there is a proper extraction function, residuals being the example used.
+
+If "fit" is an lm object then I could plot the fitted vs. residuals plot like this:
+
+> plot( fit$fitted, fit$residuals )
+
+Or like this:
+
+> plot( fitted(fit), resid(fit) )
+
+The second one is preferred as it properly extracts the information without needing to know the exact contents of fit (and the axis limits look a little nicer). 
+
+With an lm object the 2 plots will be essentially the same, but what if fit is a glm object?  Then fit$residuals does give something that fits the definition of residuals, but of the different types of residuals available for glm fits, this gives the one that is least interesting/interpretable to humans (they were useful to the program for getting the fit).  Here the resid (or residuals) function defaults to a more meaningful set of residuals and gives options for other types.
+
+If we have arbitrary objects without extractor functions then we need to use $ or [[ to extract the individual elements, but when working with fitted objects it is much better to teach students to use the proper extractor functions rather than directly working with elements of the object itself.
+
+-- 
+Gregory (Greg) L. Snow Ph.D.
+Statistical Data Center
+Intermountain Healthcare
+greg.snow at imail.org
+801.408.8111
+
+> -----Original Message-----
+> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-
+> bounces at r-project.org] On Behalf Of Tyler Smith
+> Sent: Thursday, September 23, 2010 2:49 PM
+> To: r-sig-teaching at r-project.org
+> Subject: Re: [R-sig-teaching] pros/cons of teaching attach()
+> 
+>   On 09/22/2010 04:36 AM, Gavin Simpson wrote:
+> >
+> > I don't use attach() at all; too easy to make mistakes that are
+> > difficult to track down. I tend not to use $ either as that
+> encourages
+> > people to use it to go fiddling in the bowels of other lists
+> (objects);
+> > model$residuals might be OK for lm() models (though not if you've
+> used
+> > na.exclude for example) but students might be surprised with what
+> they
+> > get with more complex modelling functions with different residuals.
+> >
+> This is going to be a dumb question, but what do you use instead of $
+> for accessing variables in a list? [[]] allows for the same fiddling.
+> 
+> Thanks,
+> 
+> Tyler
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+From maj at waikato.ac.nz  Sat Sep 25 00:18:42 2010
+From: maj at waikato.ac.nz (Murray Jorgensen)
+Date: Sat, 25 Sep 2010 10:18:42 +1200
+Subject: [R-sig-teaching] pros/cons of teaching attach()
+In-Reply-To: <B37C0A15B8FB3C468B5BC7EBC7DA14CC633CA5BBC8@LP-EXMBVS10.CO.IHC.COM>
+References: <AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>	<1285144561.2812.12.camel@desktop.localdomain>	<4C9BBD2D.3060807@eku.edu>
+	<B37C0A15B8FB3C468B5BC7EBC7DA14CC633CA5BBC8@LP-EXMBVS10.CO.IHC.COM>
+Message-ID: <4C9D23C2.1080200@waikato.ac.nz>
+
+I think what Greg say here is the "official wisdom" and it leads to more 
+future-proof code as the structure of various objects can change in new 
+versions of R.
+
+OTOH the structure of a kind of object can always be explored with str() 
+but it may not be easy to find out what extractor functions are 
+available for the object.
+
+Murray
+
+On 25/09/2010 8:16 a.m., Greg Snow wrote:
+> I think that the reference to not using $ or [[ was meant for cases where there is a proper extraction function, residuals being the example used.
+>
+> If "fit" is an lm object then I could plot the fitted vs. residuals plot like this:
+>
+>> plot( fit$fitted, fit$residuals )
+>
+> Or like this:
+>
+>> plot( fitted(fit), resid(fit) )
+>
+> The second one is preferred as it properly extracts the information without needing to know the exact contents of fit (and the axis limits look a little nicer).
+>
+> With an lm object the 2 plots will be essentially the same, but what if fit is a glm object?  Then fit$residuals does give something that fits the definition of residuals, but of the different types of residuals available for glm fits, this gives the one that is least interesting/interpretable to humans (they were useful to the program for getting the fit).  Here the resid (or residuals) function defaults to a more meaningful set of residuals and gives options for other types.
+>
+> If we have arbitrary objects without extractor functions then we need to use $ or [[ to extract the individual elements, but when working with fitted objects it is much better to teach students to use the proper extractor functions rather than directly working with elements of the object itself.
+>
+
+
+-- 
+Dr Murray Jorgensen      http://www.stats.waikato.ac.nz/Staff/maj.html
+Department of Statistics, University of Waikato, Hamilton, New Zealand
+Email: maj at waikato.ac.nz    majorgensen at ihug.co.nz      Fax 7 838 4155
+Phone  +64 7 838 4773 wk    Home +64 7 825 0441   Mobile 021 0200 8350
+
+
+
+From maj at waikato.ac.nz  Sat Sep 25 00:25:34 2010
+From: maj at waikato.ac.nz (Murray Jorgensen)
+Date: Sat, 25 Sep 2010 10:25:34 +1200
+Subject: [R-sig-teaching] pros/cons of teaching attach()
+In-Reply-To: <B37C0A15B8FB3C468B5BC7EBC7DA14CC633CA5BBC8@LP-EXMBVS10.CO.IHC.COM>
+References: <AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>	<1285144561.2812.12.camel@desktop.localdomain>	<4C9BBD2D.3060807@eku.edu>	<B37C0A15B8FB3C468B5BC7EBC7DA14CC633CA5BBC8@LP-EXMBVS10.CO.IHC.COM>
+Message-ID: <4C9D255E.1090709@waikato.ac.nz>
+
+When will I ever learn to proof-read my emails?!
+=============
+I think what Greg sayS here is the "official wisdom" and it leads to 
+more future-proofED code as the structure of various objects can change 
+in new versions of R.
+
+OTOH the structure of a kind of object can always be explored with 
+str(), but it may not be easy to find out what extractor functions are 
+available for the object.
+
+Murray
+
+On 25/09/2010 8:16 a.m., Greg Snow wrote:
+> I think that the reference to not using $ or [[ was meant for cases where there is a proper extraction function, residuals being the example used.
+>
+> If "fit" is an lm object then I could plot the fitted vs. residuals plot like this:
+>
+>> plot( fit$fitted, fit$residuals )
+>
+> Or like this:
+>
+>> plot( fitted(fit), resid(fit) )
+>
+> The second one is preferred as it properly extracts the information without needing to know the exact contents of fit (and the axis limits look a little nicer).
+>
+> With an lm object the 2 plots will be essentially the same, but what if fit is a glm object?  Then fit$residuals does give something that fits the definition of residuals, but of the different types of residuals available for glm fits, this gives the one that is least interesting/interpretable to humans (they were useful to the program for getting the fit).  Here the resid (or residuals) function defaults to a more meaningful set of residuals and gives options for other types.
+>
+> If we have arbitrary objects without extractor functions then we need to use $ or [[ to extract the individual elements, but when working with fitted objects it is much better to teach students to use the proper extractor functions rather than directly working with elements of the object itself.
+>
+
+
+-- 
+Dr Murray Jorgensen      http://www.stats.waikato.ac.nz/Staff/maj.html
+Department of Statistics, University of Waikato, Hamilton, New Zealand
+Email: maj at waikato.ac.nz    majorgensen at ihug.co.nz      Fax 7 838 4155
+Phone  +64 7 838 4773 wk    Home +64 7 825 0441   Mobile 021 0200 8350
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+From ggrothendieck at gmail.com  Sat Sep 25 01:07:08 2010
+From: ggrothendieck at gmail.com (Gabor Grothendieck)
+Date: Fri, 24 Sep 2010 19:07:08 -0400
+Subject: [R-sig-teaching] pros/cons of teaching attach()
+In-Reply-To: <4C9D255E.1090709@waikato.ac.nz>
+References: <AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>
+	<1285144561.2812.12.camel@desktop.localdomain>
+	<4C9BBD2D.3060807@eku.edu>
+	<B37C0A15B8FB3C468B5BC7EBC7DA14CC633CA5BBC8@LP-EXMBVS10.CO.IHC.COM>
+	<4C9D255E.1090709@waikato.ac.nz>
+Message-ID: <AANLkTin2-2RSop4NkLBFWE_TvouOOUpqHsTpFUvGbXbk@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100924/fbf3b323/attachment.pl>
+
+From maj at waikato.ac.nz  Sat Sep 25 01:45:17 2010
+From: maj at waikato.ac.nz (Murray Jorgensen)
+Date: Sat, 25 Sep 2010 11:45:17 +1200
+Subject: [R-sig-teaching] pros/cons of teaching attach()
+In-Reply-To: <AANLkTin2-2RSop4NkLBFWE_TvouOOUpqHsTpFUvGbXbk@mail.gmail.com>
+References: <AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>
+	<1285144561.2812.12.camel@desktop.localdomain>
+	<4C9BBD2D.3060807@eku.edu>
+	<B37C0A15B8FB3C468B5BC7EBC7DA14CC633CA5BBC8@LP-EXMBVS10.CO.IHC.COM>
+	<4C9D255E.1090709@waikato.ac.nz>
+	<AANLkTin2-2RSop4NkLBFWE_TvouOOUpqHsTpFUvGbXbk@mail.gmail.com>
+Message-ID: <4C9D380D.2080709@waikato.ac.nz>
+
+This may not always be useful when we venture too far from the cosy 
+world of lm().
+
+For example I have just been looking at the function flexmixedruns()
+from package fpc, and the object  fr  that is its value in the examples 
+for that function.
+
+ > methods(class=class(fr))
+
+just produces the standard list methods because fr is defined as a list. 
+To get stuff out you need $.
+
+Still I like Gabor's suggestion and I will use it when a function 
+returns an object of an unusual class.
+
+Murray
+
+
+On 25/09/2010 11:07 a.m., Gabor Grothendieck wrote:
+>
+>
+> On Fri, Sep 24, 2010 at 6:25 PM, Murray Jorgensen <maj at waikato.ac.nz
+> <mailto:maj at waikato.ac.nz>> wrote:
+>
+>     When will I ever learn to proof-read my emails?!
+>     =============
+>     I think what Greg sayS here is the "official wisdom" and it leads to
+>     more future-proofED code as the structure of various objects can
+>     change in new versions of R.
+>
+>
+>     OTOH the structure of a kind of object can always be explored with
+>     str(), but it may not be easy to find out what extractor functions
+>     are available for the object.
+>
+> Try this using builtin data.frame, BOD, to find methods can be applied
+> to fm:
+>
+> fm <- lm(demand ~ Time, BOD)
+> methods(class = class(fm))
+>
+> --
+> Statistics & Software Consulting
+> GKX Group, GKX Associates Inc.
+> tel: 1-877-GKX-GROUP
+> email: ggrothendieck at gmail.com <http://gmail.com>
+>
+
+
+-- 
+Dr Murray Jorgensen      http://www.stats.waikato.ac.nz/Staff/maj.html
+Department of Statistics, University of Waikato, Hamilton, New Zealand
+Email: maj at waikato.ac.nz    majorgensen at ihug.co.nz      Fax 7 838 4155
+Phone  +64 7 838 4773 wk    Home +64 7 825 0441   Mobile 021 0200 8350
+
+
+

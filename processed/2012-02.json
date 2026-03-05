@@ -1,0 +1,122 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2012-02",
+  "messages": [
+    {
+      "id": "msg-386f944dedea",
+      "message_id": "<4F3C2E34020000A6000BB68A@uct5.uct.usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2012-02-15T22:14:12-05:00",
+      "subject": "[R-sig-teaching] Shading the solution of quadratic inequality",
+      "subject_clean": "Shading the solution of quadratic inequality",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120215/881f3fd5/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120215/881f3fd5/attachment.pl>",
+      "thread_id": "thread-386f944dedea",
+      "thread_depth": 0,
+      "month": "2012-02"
+    },
+    {
+      "id": "msg-701ec2cfb580",
+      "message_id": "<4F3CC8A3020000A6000BB722@uct5.uct.usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2012-02-16T09:13:07-05:00",
+      "subject": "[R-sig-teaching] Shading the solution of quadratic inequality",
+      "subject_clean": "Shading the solution of quadratic inequality",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120216/1845e1e2/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120216/1845e1e2/attachment.pl>",
+      "thread_id": "thread-701ec2cfb580",
+      "thread_depth": 0,
+      "month": "2012-02"
+    },
+    {
+      "id": "msg-616ca79239df",
+      "message_id": "<CAAmySGP--RSpRoXkUKGXJ4bK3_uPz8FJHC6CbU_op4XsWP45pg@mail.gmail.com>",
+      "from_name": "R. Michael Weylandt",
+      "from_email_hash": "44e8775a589b9ef81880469e200f3cce307c7180b4289ca1696a578afb772b3a",
+      "date": "2012-02-16T09:42:18-05:00",
+      "subject": "[R-sig-teaching] Shading the solution of quadratic inequality",
+      "subject_clean": "Shading the solution of quadratic inequality",
+      "in_reply_to": "<4F3CC8A3020000A6000BB722@uct5.uct.usm.maine.edu>",
+      "references": [
+        "<4F3CC8A3020000A6000BB722@uct5.uct.usm.maine.edu>"
+      ],
+      "body_plain": "You should probably say more about which graphics engine you are\nusing, but here's a start:\n\ncurve(x^2-4, from = -3, to = 3)\nx <- seq(-3, 3, length.out = 200)\npolygon(c(x, rev(x)), c(x^2-4, rep(Inf, length(x))), col = 2)\n\nThe red is a little \"oppressive\" so I'd try to add transparency if\nyour device supports it. Adding a shade above/below argument to curve\nbased on the same principles might be a fun exercise too...\n\nMichael\n\nOn Thu, Feb 16, 2012 at 9:13 AM, AbouEl-Makarim Aboueissa\n<aaboueissa at usm.maine.edu> wrote:\n> Dear all R Users:\n>\n> How can I shade the solution (-Inf,-2) or (2,Inf) of the inequality -x^2+4<0 within the curve of f(x)=-x^2+4.\n>\n> and\n>\n> the solution (-Inf,-2)or(2,Inf) of the inequality x^2-4>0 within the curve of\n> f(x)=x^2-4.\n>\n>\n> with many thanks\n>\n> abou\n>\n>\n> ==========================\n> AbouEl-Makarim Aboueissa, Ph.D.\n> Associate Professor of Statistics\n> Graduate Program Coordinator\n> Department of Mathematics & Statistics\n> University of Southern Maine\n> 96 Falmouth Street\n> P.O. Box 9300\n> Portland, ME 04104-9300\n> USA\n>\n>\n> Tel: (207) 228-8389\n> Fax: (207) 780-5607\n> Email: aaboueissa at usm.maine.edu\n> ? ? ? ? ?aboueiss at yahoo.com\n>\n> Office: 301C Payson Smith\n>\n>\n> ? ? ? ?[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "You should probably say more about which graphics engine you are\nusing, but here's a start:\n\ncurve(x^2-4, from = -3, to = 3)\nx <- seq(-3, 3, length.out = 200)\npolygon(c(x, rev(x)), c(x^2-4, rep(Inf, l",
+      "thread_id": "thread-701ec2cfb580",
+      "thread_depth": 1,
+      "month": "2012-02"
+    },
+    {
+      "id": "msg-3bd9a3892333",
+      "message_id": "<050AD3B5-A863-4951-B83C-6077F5A246A3@calvin.edu>",
+      "from_name": "Randall Pruim",
+      "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
+      "date": "2012-02-16T10:07:33-05:00",
+      "subject": "[R-sig-teaching] Shading the solution of quadratic inequality",
+      "subject_clean": "Shading the solution of quadratic inequality",
+      "in_reply_to": "<CAAmySGP--RSpRoXkUKGXJ4bK3_uPz8FJHC6CbU_op4XsWP45pg@mail.gmail.com>",
+      "references": [
+        "<4F3CC8A3020000A6000BB722@uct5.uct.usm.maine.edu>",
+        "<CAAmySGP--RSpRoXkUKGXJ4bK3_uPz8FJHC6CbU_op4XsWP45pg@mail.gmail.com>"
+      ],
+      "body_plain": "I'm not sure exactly what sort of plot was desired, but I'll offer 1.5  \npossibilities.\n\nCurrently you can do something like this:\n\nrequire(mosaic)\nplotFun( x^2 - 4 ~ x , xlim=c(-6,6), col='blue' )\nplotFun( (x^2 - 4)/as.numeric(x^2 -4 > 0) ~ x , xlim=c(-6,-2),  \nadd=TRUE, col='blue', lwd=4 )\n\nIt is a bit of kludge since I'm using division by 0 to hide part of  \nthe function.  You can adjust colors, line thickness, and alpha to  \nyour particular sensitivities.  And you can use type='h' if you want a  \n\"filled in version\".\n\nSoon, you should be able to do\n\nplofFun( x^2 - 4 ~ x, groups=(x^2-4>0) )\n\nIf you find yourself wanting to plot \"mathematical\" functions like  \nthis, I encourage you to give plotFun() a try and let us know how you  \nlike it.\n\n---rjp\n\n\nOn Feb 16, 2012, at 9:42 AM, R. Michael Weylandt wrote:\n\n> You should probably say more about which graphics engine you are\n> using, but here's a start:\n>\n> curve(x^2-4, from = -3, to = 3)\n> x <- seq(-3, 3, length.out = 200)\n> polygon(c(x, rev(x)), c(x^2-4, rep(Inf, length(x))), col = 2)\n>\n> The red is a little \"oppressive\" so I'd try to add transparency if\n> your device supports it. Adding a shade above/below argument to curve\n> based on the same principles might be a fun exercise too...\n>\n> Michael\n>\n> On Thu, Feb 16, 2012 at 9:13 AM, AbouEl-Makarim Aboueissa\n> <aaboueissa at usm.maine.edu> wrote:\n>> Dear all R Users:\n>>\n>> How can I shade the solution (-Inf,-2) or (2,Inf) of the inequality  \n>> -x^2+4<0 within the curve of f(x)=-x^2+4.\n>>\n>> and\n>>\n>> the solution (-Inf,-2)or(2,Inf) of the inequality x^2-4>0 within  \n>> the curve of\n>> f(x)=x^2-4.\n>>\n>>\n>> with many thanks\n>>\n>> abou\n>>\n>>\n>> ==========================\n>> AbouEl-Makarim Aboueissa, Ph.D.\n>> Associate Professor of Statistics\n>> Graduate Program Coordinator\n>> Department of Mathematics & Statistics\n>> University of Southern Maine\n>> 96 Falmouth Street\n>> P.O. Box 9300\n>> Portland, ME 04104-9300\n>> USA\n>>\n>>\n>> Tel: (207) 228-8389\n>> Fax: (207) 780-5607\n>> Email: aaboueissa at usm.maine.edu\n>>          aboueiss at yahoo.com\n>>\n>> Office: 301C Payson Smith\n>>\n>>\n>>        [[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "I'm not sure exactly what sort of plot was desired, but I'll offer 1.5  \npossibilities.\n\nCurrently you can do something like this:\n\nrequire(mosaic)\nplotFun( x^2 - 4 ~ x , xlim=c(-6,6), col='blue' )\npl",
+      "thread_id": "thread-701ec2cfb580",
+      "thread_depth": 2,
+      "month": "2012-02"
+    },
+    {
+      "id": "msg-70680c8e0d82",
+      "message_id": "<6E34E3C2-5AAA-44CD-BEE0-9C5BA95BB6AB@calvin.edu>",
+      "from_name": "Randall Pruim",
+      "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
+      "date": "2012-02-16T10:11:12-05:00",
+      "subject": "[R-sig-teaching] Shading the solution of quadratic inequality",
+      "subject_clean": "Shading the solution of quadratic inequality",
+      "in_reply_to": "<050AD3B5-A863-4951-B83C-6077F5A246A3@calvin.edu>",
+      "references": [
+        "<4F3CC8A3020000A6000BB722@uct5.uct.usm.maine.edu>",
+        "<CAAmySGP--RSpRoXkUKGXJ4bK3_uPz8FJHC6CbU_op4XsWP45pg@mail.gmail.com>",
+        "<050AD3B5-A863-4951-B83C-6077F5A246A3@calvin.edu>"
+      ],
+      "body_plain": "The xlim=c(-6,-2) is extraneous in the code below.  It snuck in from  \nsomething else I was doing.  It doesn't hurt any, but it doesn't do  \nanything either since the plotting limits are inferred from the  \nsurrounding plot when add=TRUE is used.\n\n\nOn Feb 16, 2012, at 10:07 AM, Randall Pruim wrote:\n\n> I'm not sure exactly what sort of plot was desired, but I'll offer  \n> 1.5 possibilities.\n>\n> Currently you can do something like this:\n>\n> require(mosaic)\n> plotFun( x^2 - 4 ~ x , xlim=c(-6,6), col='blue' )\n> plotFun( (x^2 - 4)/as.numeric(x^2 -4 > 0) ~ x , xlim=c(-6,-2),  \n> add=TRUE, col='blue', lwd=4 )\n>\n> It is a bit of kludge since I'm using division by 0 to hide part of  \n> the function.  You can adjust colors, line thickness, and alpha to  \n> your particular sensitivities.  And you can use type='h' if you want  \n> a \"filled in version\".\n>\n> Soon, you should be able to do\n>\n> plofFun( x^2 - 4 ~ x, groups=(x^2-4>0) )\n>\n> If you find yourself wanting to plot \"mathematical\" functions like  \n> this, I encourage you to give plotFun() a try and let us know how  \n> you like it.\n>\n> ---rjp\n>\n>\n> On Feb 16, 2012, at 9:42 AM, R. Michael Weylandt wrote:\n>\n>> You should probably say more about which graphics engine you are\n>> using, but here's a start:\n>>\n>> curve(x^2-4, from = -3, to = 3)\n>> x <- seq(-3, 3, length.out = 200)\n>> polygon(c(x, rev(x)), c(x^2-4, rep(Inf, length(x))), col = 2)\n>>\n>> The red is a little \"oppressive\" so I'd try to add transparency if\n>> your device supports it. Adding a shade above/below argument to curve\n>> based on the same principles might be a fun exercise too...\n>>\n>> Michael\n>>\n>> On Thu, Feb 16, 2012 at 9:13 AM, AbouEl-Makarim Aboueissa\n>> <aaboueissa at usm.maine.edu> wrote:\n>>> Dear all R Users:\n>>>\n>>> How can I shade the solution (-Inf,-2) or (2,Inf) of the  \n>>> inequality -x^2+4<0 within the curve of f(x)=-x^2+4.\n>>>\n>>> and\n>>>\n>>> the solution (-Inf,-2)or(2,Inf) of the inequality x^2-4>0 within  \n>>> the curve of\n>>> f(x)=x^2-4.\n>>>\n>>>\n>>> with many thanks\n>>>\n>>> abou\n>>>\n>>>\n>>> ==========================\n>>> AbouEl-Makarim Aboueissa, Ph.D.\n>>> Associate Professor of Statistics\n>>> Graduate Program Coordinator\n>>> Department of Mathematics & Statistics\n>>> University of Southern Maine\n>>> 96 Falmouth Street\n>>> P.O. Box 9300\n>>> Portland, ME 04104-9300\n>>> USA\n>>>\n>>>\n>>> Tel: (207) 228-8389\n>>> Fax: (207) 780-5607\n>>> Email: aaboueissa at usm.maine.edu\n>>>         aboueiss at yahoo.com\n>>>\n>>> Office: 301C Payson Smith\n>>>\n>>>\n>>>       [[alternative HTML version deleted]]\n>>>\n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "The xlim=c(-6,-2) is extraneous in the code below.  It snuck in from  \nsomething else I was doing.  It doesn't hurt any, but it doesn't do  \nanything either since the plotting limits are inferred from",
+      "thread_id": "thread-701ec2cfb580",
+      "thread_depth": 3,
+      "month": "2012-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-386f944dedea",
+      "subject": "Shading the solution of quadratic inequality",
+      "message_count": 1,
+      "participants": [
+        "AbouEl-Makarim Aboueissa"
+      ],
+      "started": "2012-02-15T22:14:12-05:00",
+      "last_reply": "2012-02-15T22:14:12-05:00",
+      "root_message_id": "msg-386f944dedea"
+    },
+    {
+      "id": "thread-701ec2cfb580",
+      "subject": "Shading the solution of quadratic inequality",
+      "message_count": 4,
+      "participants": [
+        "AbouEl-Makarim Aboueissa",
+        "R. Michael Weylandt",
+        "Randall Pruim"
+      ],
+      "started": "2012-02-16T09:13:07-05:00",
+      "last_reply": "2012-02-16T10:11:12-05:00",
+      "root_message_id": "msg-701ec2cfb580"
+    }
+  ]
+}

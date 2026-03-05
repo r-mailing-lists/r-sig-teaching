@@ -1,0 +1,55 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2007-07",
+  "messages": [
+    {
+      "id": "msg-7825d53e4e59",
+      "message_id": "<468A68BE.7090207@unimi.it>",
+      "from_name": "Simone Negri",
+      "from_email_hash": "64eb97bc6e7f99fcecd7b390d139aa0cbf4e7ba167ef7c4ee561d41027a391c3",
+      "date": "2007-07-03T17:18:22+02:00",
+      "subject": "[R-sig-teaching] what test?",
+      "subject_clean": "what test?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I have to compare several proteomic expression data of four different \ncultivar collected in two different year (4 x 2). what sort of \nstatistical analysis have I to perform in your opinion?",
+      "body_snippet": "I have to compare several proteomic expression data of four different \ncultivar collected in two different year (4 x 2). what sort of \nstatistical analysis have I to perform in your opinion?",
+      "thread_id": "thread-7825d53e4e59",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-55762f185184",
+      "message_id": "<20070703165843.GA14850@laplace.reed.edu>",
+      "from_name": "Albyn Jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2007-07-03T09:58:43-07:00",
+      "subject": "[R-sig-teaching] what test?",
+      "subject_clean": "what test?",
+      "in_reply_to": "<468A68BE.7090207@unimi.it>",
+      "references": [
+        "<468A68BE.7090207@unimi.it>"
+      ],
+      "body_plain": "On Tue, Jul 03, 2007 at 05:18:22PM +0200, Simone Negri wrote:\n> I have to compare several proteomic expression data of four different \n> cultivar collected in two different year (4 x 2). what sort of \n> statistical analysis have I to perform in your opinion?\n\nThis is a list for questions about R and teaching.  You would be\nmore likely to get an informative response from a more appropriate list.\n\nAlso, you should also describe your experiment in more detail.  What is the\nscientific hypothesis you are interested in testing? \n\nFor people who don't work on proteomic expression data, there would be\nlots of basic questions (what's a cultivar?  are measurements from the\nsame cultivar in diffeent years independent, or correlated?  gaussian,\nor counts, etc etc)\n\nregards\n\nalbyn",
+      "body_snippet": "On Tue, Jul 03, 2007 at 05:18:22PM +0200, Simone Negri wrote:\n> I have to compare several proteomic expression data of four different \n> cultivar collected in two different year (4 x 2). what sort of ",
+      "thread_id": "thread-7825d53e4e59",
+      "thread_depth": 1,
+      "month": "2007-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-7825d53e4e59",
+      "subject": "what test?",
+      "message_count": 2,
+      "participants": [
+        "Albyn Jones",
+        "Simone Negri"
+      ],
+      "started": "2007-07-03T17:18:22+02:00",
+      "last_reply": "2007-07-03T09:58:43-07:00",
+      "root_message_id": "msg-7825d53e4e59"
+    }
+  ]
+}

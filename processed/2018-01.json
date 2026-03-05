@@ -1,0 +1,65 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2018-01",
+  "messages": [
+    {
+      "id": "msg-4ce69aa8cbad",
+      "message_id": "<1C11B3DE-B7D5-403D-A44D-DD1EDAD15A94@gmail.com>",
+      "from_name": "Nicholas Horton",
+      "from_email_hash": "21da3a972921daf9ba71fb679ab28915dacafd25739ef53c53ec32f5fba516f7",
+      "date": "2018-01-09T06:14:00-05:00",
+      "subject": "[R-sig-teaching] Electronic Conference on Teaching Statistics call for proposals",
+      "subject_clean": "Electronic Conference on Teaching Statistics call for proposals",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "We are excited to announce that the 2018 Electronic Conference on Teaching\nStatistics (eCOTS) will be held online May 21-25, 2018, and is currently\naccepting proposals for breakout sessions, virtual posters, and\nbirds-of-a-feather discussions.  This year's online conference is hosted\nby the Consortium for the Advancement of Undergraduate Statistics\nEducation (CAUSE) and focuses on statistics education at all levels and\ntypes of learning institutions:  secondary school, two-year/community\ncolleges, and four year liberal arts and research universities.\n\nThe conference theme is \"Data Science for All\".  Recently, we have seen a\nrise in data scientist (or related) positions in industry as well as a\nboom in data science graduate and undergraduate programs.  How should\nstatistics educators and students respond?  What curriculum should we\nteach?  How should we teach it?  Have the goals of statistics education\nchanged?  If so, how?\n\nThis conference is for anyone who teaches or studies statistics or data\nscience.  We have already started putting together a diverse set of\nexciting keynote speakers who work across different areas in statistics\nand data science education.  Sessions will range from ideas for\nincorporating statistics and/or data science concepts into all curricular\nlevels (K-12, two-year colleges, four-year colleges, graduate programs) to\nproviding interactive data and learning opportunities for all statistics\nstudents and educators to building certificates and degree programs that\ninclude data science.  Panel discussions will include describing data\nscience and statistics education, a look at the state-of-the-art in online\nstatistics education tools, and the future of statistics education,\nincluding funding opportunities.  Virtual posters will showcase the\ncurrent broad range of work in \"Statistics and/or Data Science for K-16\nand Beyond\".  The conference website will also include a repository of\nrelated available statistics and data science resources for attendees as\nwell as the general public.\n\nProposals should be related to the conference theme will be given\npriority, but proposals related to all aspects of statistics and data\nscience education are welcome.  All proposals are due by March 1, 2018.\nFor more details about eCOTS 2018 and to submit a proposal, please visit\nwww.causeweb.org/ecots/ecots18/. If you have any questions, please contact\nRebecca Nugent at rnugent at stat.cmu.edu. Thanks!\n\nBest,\nRebecca Nugent\neCOTS 2018 Program Chair\n\nNicholas Horton \nProfessor of Statistics\nDepartment of Mathematics and Statistics, Amherst College\nPO Box 5000, AC #2239\nAmherst, MA 01002-5000",
+      "body_snippet": "We are excited to announce that the 2018 Electronic Conference on Teaching\nStatistics (eCOTS) will be held online May 21-25, 2018, and is currently\naccepting proposals for breakout sessions, virtual p",
+      "thread_id": "thread-4ce69aa8cbad",
+      "thread_depth": 0,
+      "month": "2018-01"
+    },
+    {
+      "id": "msg-1b2a6b13384f",
+      "message_id": "<20180110095315.Horde.J7t4sf_MCdacAXlMnhBydg1@webmail.rice.edu>",
+      "from_name": "Brown, Tony N",
+      "from_email_hash": "0aef8314b2a0122a8b21e86d134e9eaf3f45a0a146b415e42ba3ae49b3be7ca8",
+      "date": "2018-01-10T09:53:15-06:00",
+      "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 99, Issue 3",
+      "subject_clean": "R-sig-teaching Digest, Vol 99, Issue 3",
+      "in_reply_to": "<mailman.25.1513162802.23193.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.25.1513162802.23193.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": "These materials may be useful for teaching about practical data  \nscience using R:\n\nhttp://datascience.tntlab.org/\n\nTony\n\nQuoting r-sig-teaching-request at r-project.org:\n\n> Send R-sig-teaching mailing list submissions to\n> &nbsp; &nbsp; &nbsp; &nbsp; r-sig-teaching at r-project.org\n>\n> To subscribe or unsubscribe via the World Wide Web, visit\n> &nbsp; &nbsp; &nbsp; &nbsp;  \n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> or, via email, send a message with subject or body 'help' to\n> &nbsp; &nbsp; &nbsp; &nbsp; r-sig-teaching-request at r-project.org\n>\n> You can reach the person managing the list at\n> &nbsp; &nbsp; &nbsp; &nbsp; r-sig-teaching-owner at r-project.org\n>\n> When replying, please edit your Subject line so it is more specific\n> than \"Re: Contents of R-sig-teaching digest...\"\n>\n> Today's Topics:\n>\n> &nbsp; 1. Re: Data Science Materials (Laura Chihara)\n> &nbsp; 2. Re: Data Science Materials (AbouEl-Makarim Aboueissa)\n>\n> ----------------------------------------------------------------------\n>\n> Message: 1\n> Date: Tue, 12 Dec 2017 09:30:12 -0600\n> From: Laura Chihara <lchihara at carleton.edu>\n> To: AbouEl-Makarim Aboueissa <abouelmakarim1962 at gmail.com>\n> Cc: r-sig-teaching at r-project.org\n> Subject: Re: [R-sig-teaching] Data Science Materials\n> Message-ID: <7a0cc765-4851-9496-ab83-4c9ebfd68055 at carleton.edu>\n> Content-Type: text/plain; charset=utf-8; format=flowed\n>\n> There are some R Tutorials in Data Science that were developed by Adam\n> Loy (Carleton), Shonda Kuiper (Grinnell) and me (Laura Chihara, Carleton\n> College) for an ACM grant.\n>\n> http://web.grinnell.edu/individuals/kuipers/stat2labs/RTutorials.html\n>\n> -Laura\n>\n> On 12/6/2017 7:57 AM, AbouEl-Makarim Aboueissa wrote:\n>> Dear All: good morning\n>>\n>> I am planning to teach a course in practical data science using R, may\nbe\n>> in Fall 2018. I am wondering if someone have some materials on data\n>> science\n>> such as notes, R codes, and etc.\n>>\n>> It will be highly appreciated if they are willing to share such\nmaterials\n>> with others.\n>>\n>> with many thanks\n>> abou\n>> ______________________\n>>\n>> *AbouEl-Makarim Aboueissa, PhD*\n>>\n>> *Professor of Statistics*\n>>\n>> *Department of Mathematics and Statistics*\n>> *University of Southern Maine*\n>>\n>> &nbsp; &nbsp; &nbsp; &nbsp; [[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n> **************************************\n> Laura Chihara\n> Professor of Mathematics and Statistics\n> Department of Mathematics and Statistics\n> Carleton College\n> Northfield MN 55057\n> 507-222-4065\n>\n> ------------------------------\n>\n> Message: 2\n> Date: Tue, 12 Dec 2017 10:42:12 -0500\n> From: AbouEl-Makarim Aboueissa <abouelmakarim1962 at gmail.com>\n> To: Laura Chihara <lchihara at carleton.edu>\n> Cc: R-sig-teaching <r-sig-teaching at r-project.org>\n> Subject: Re: [R-sig-teaching] Data Science Materials\n> Message-ID:\n> &nbsp; &nbsp; &nbsp; &nbsp;\n> <CAE9stmc_yQh+zjhGPP-1HML2g83-EXzDO2jUuAqyz+VJ2arMSQ at mail.gmail.com>\n> Content-Type: text/plain; charset=\"UTF-8\"\n>\n> Dear Laura:\n>\n> Thank you very much. It will help a lot.\n>\n> with thanks\n> abou\n>\n> ______________________\n>\n> *AbouEl-Makarim Aboueissa, PhD*\n>\n> *Professor of Statistics*\n>\n> *Department of Mathematics and Statistics*\n> *University of Southern Maine*\n>\n> On Tue, Dec 12, 2017 at 10:30 AM, Laura Chihara <lchihara at carleton.edu>\n> wrote:\n>> There are some R Tutorials in Data Science that were developed by Adam\n>> Loy\n>> (Carleton), Shonda Kuiper (Grinnell) and me (Laura Chihara, Carleton\n>> College) for an ACM grant.\n>>\n>> http://web.grinnell.edu/individuals/kuipers/stat2labs/RTutorials.html\n>>\n>> -Laura\n>>\n>> On 12/6/2017 7:57 AM, AbouEl-Makarim Aboueissa wrote:\n>>> Dear All: good morning\n>>>\n>>> I am planning to teach a course in practical data science using R, may\n>>> be\n>>> in Fall 2018. I am wondering if someone have some materials on data\n>>> science\n>>> such as notes, R codes, and etc.\n>>>\n>>> It will be highly appreciated if they are willing to share such\n>>> materials\n>>> with others.\n>>>\n>>> with many thanks\n>>> abou\n>>> ______________________\n>>>\n>>> *AbouEl-Makarim Aboueissa, PhD*\n>>>\n>>> *Professor of Statistics*\n>>>\n>>> *Department of Mathematics and Statistics*\n>>> *University of Southern Maine*\n>>>\n>>> &nbsp; &nbsp; &nbsp; &nbsp; [[alternative HTML version deleted]]\n>>>\n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>> **************************************\n>> Laura Chihara\n>> Professor of Mathematics and Statistics\n>> Department of Mathematics and Statistics\n>> Carleton College\n>> Northfield MN 55057\n>> 507-222-4065\n>> &nbsp;\n>\n> [[alternative HTML version deleted]]\n>\n> ------------------------------\n>\n> Subject: Digest Footer\n>\n> _______________________________________________\n> R-sig-teaching mailing list\n> R-sig-teaching at r-project.org\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n> ------------------------------\n>\n> End of R-sig-teaching Digest, Vol 99, Issue\n> 3*********************************************\n\n&nbsp;\n-- \nTony N. Brown, Ph.D.\nProfessor of Sociology\nRice University\n(713) 348-3242\ntnbrown at rice.edu\nGoogle Scholar Profile: http://tinyurl.com/lozlht8\nLinkedIn Profile: https://www.linkedin.com/in/tony-nicholas-brown-31a064a6",
+      "body_snippet": "These materials may be useful for teaching about practical data  \nscience using R:\n\nhttp://datascience.tntlab.org/\n\nTony\n\nQuoting r-sig-teaching-request at r-project.org:\n\n> Send R-sig-teaching mailin",
+      "thread_id": "thread-1b2a6b13384f",
+      "thread_depth": 0,
+      "month": "2018-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-4ce69aa8cbad",
+      "subject": "Electronic Conference on Teaching Statistics call for proposals",
+      "message_count": 1,
+      "participants": [
+        "Nicholas Horton"
+      ],
+      "started": "2018-01-09T06:14:00-05:00",
+      "last_reply": "2018-01-09T06:14:00-05:00",
+      "root_message_id": "msg-4ce69aa8cbad"
+    },
+    {
+      "id": "thread-1b2a6b13384f",
+      "subject": "R-sig-teaching Digest, Vol 99, Issue 3",
+      "message_count": 1,
+      "participants": [
+        "Brown, Tony N"
+      ],
+      "started": "2018-01-10T09:53:15-06:00",
+      "last_reply": "2018-01-10T09:53:15-06:00",
+      "root_message_id": "msg-1b2a6b13384f"
+    }
+  ]
+}

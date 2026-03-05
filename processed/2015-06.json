@@ -1,0 +1,82 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2015-06",
+  "messages": [
+    {
+      "id": "msg-ea8e20eebafb",
+      "message_id": "<CABvvk7Xz0nRhk30nLhTxoUsxMy8+6yqqrxbgqesRyXHGt95yfA@mail.gmail.com>",
+      "from_name": "Nguyen C.",
+      "from_email_hash": "0b9c2dbe22f7b38ecd8096e7f002f66f867bc7c415b18294d5c9b6db7f43a084",
+      "date": "2015-06-23T00:40:58+07:00",
+      "subject": "[R-sig-teaching] Help on packages working with excell files",
+      "subject_clean": "Help on packages working with excell files",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear friends,\nI am trying to install and use xlsx package. After installeing xlsx and\nrJava successfully, I type >library(xlsx) then R said :\n\"library(xlsx)\nLoading required package: rJava\nError : .onLoad failed in loadNamespace() for 'rJava', details:\n  call: fun(libname, pkgname)\n  error: No CurrentVersion entry in Software/JavaSoft registry! Try\nre-installing Java and make sure R and Java have matching architectures.\nError: package ?rJava? could not be loaded\"\nI did the same for gdata package,  after installing succesfully and calling\nlibrary(gdata), I did:\n> myDf<-read.xls(\"levuan2kq.xls\",sheet=1,header=TRUE)\nError in findPerl(verbose = verbose) :\n  perl executable not found. Use perl= argument to specify the correct path.\nError in file.exists(tfn) : invalid 'file' argument\n\nTill now, I could not use any package to work with excel file.\nAnyone can help me.\nThanks,\nTu\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear friends,\nI am trying to install and use xlsx package. After installeing xlsx and\nrJava successfully, I type >library(xlsx) then R said :\n\"library(xlsx)\nLoading required package: rJava\nError : .on",
+      "thread_id": "thread-ea8e20eebafb",
+      "thread_depth": 0,
+      "month": "2015-06"
+    },
+    {
+      "id": "msg-b7892623cc44",
+      "message_id": "<CA+vqiLHLF+OKYqSSopHjN1kRXdK=kgJg0mkvj_JsgZFX55FeHQ@mail.gmail.com>",
+      "from_name": "Ista Zahn",
+      "from_email_hash": "098a31f0cc45d6b90198bf3b75e03deed7c570292be352a10b98aeee4bf7012e",
+      "date": "2015-06-22T14:31:08-04:00",
+      "subject": "[R-sig-teaching] Help on packages working with excell files",
+      "subject_clean": "Help on packages working with excell files",
+      "in_reply_to": "<CABvvk7Xz0nRhk30nLhTxoUsxMy8+6yqqrxbgqesRyXHGt95yfA@mail.gmail.com>",
+      "references": [
+        "<CABvvk7Xz0nRhk30nLhTxoUsxMy8+6yqqrxbgqesRyXHGt95yfA@mail.gmail.com>"
+      ],
+      "body_plain": "Hi Tu,\n\nYes, those Java dependencies suck. I recommend trying the readxl\npackage, it doesn't have any external dependencies and should be\neasier to get it working.\n\nBest,\nIsta\n\nOn Mon, Jun 22, 2015 at 1:40 PM, Nguyen C. <nctu2006 at gmail.com> wrote:\n> Dear friends,\n> I am trying to install and use xlsx package. After installeing xlsx and\n> rJava successfully, I type >library(xlsx) then R said :\n> \"library(xlsx)\n> Loading required package: rJava\n> Error : .onLoad failed in loadNamespace() for 'rJava', details:\n>   call: fun(libname, pkgname)\n>   error: No CurrentVersion entry in Software/JavaSoft registry! Try\n> re-installing Java and make sure R and Java have matching architectures.\n> Error: package ?rJava? could not be loaded\"\n> I did the same for gdata package,  after installing succesfully and calling\n> library(gdata), I did:\n>> myDf<-read.xls(\"levuan2kq.xls\",sheet=1,header=TRUE)\n> Error in findPerl(verbose = verbose) :\n>   perl executable not found. Use perl= argument to specify the correct path.\n> Error in file.exists(tfn) : invalid 'file' argument\n>\n> Till now, I could not use any package to work with excel file.\n> Anyone can help me.\n> Thanks,\n> Tu\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Hi Tu,\n\nYes, those Java dependencies suck. I recommend trying the readxl\npackage, it doesn't have any external dependencies and should be\neasier to get it working.\n\nBest,\nIsta\n\nOn Mon, Jun 22, 2015 at",
+      "thread_id": "thread-ea8e20eebafb",
+      "thread_depth": 1,
+      "month": "2015-06"
+    },
+    {
+      "id": "msg-cb890e4eeb02",
+      "message_id": "<wtks4pv7mktwoa8hy9dnx368.1434999483647@email.android.com>",
+      "from_name": "Peter Meißner",
+      "from_email_hash": "82f2856eb7b63dd5ae611f001d6da3f63179b5487f28e2f0bcfff29b5d71086c",
+      "date": "2015-06-22T20:58:03+02:00",
+      "subject": "[R-sig-teaching] Help on packages working with excell files",
+      "subject_clean": "Help on packages working with excell files",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\nIf you need xlsx package try installing both java versions on your PC. I often had 32 bit java installed but running R on 64 bit requires a 64 bit java installed and vice versa.?\nBest, peter\n\n\nVon meinem Samsung Ger?t gesendet.\n\n-------- Urspr?ngliche Nachricht --------\nVon: Ista Zahn <istazahn at gmail.com> \nDatum: 2015.06.22  20:31  (GMT+01:00) \nAn: \"Nguyen C.\" <nctu2006 at gmail.com> \nCc: \"R-sig-teaching at r-project.org\" <r-sig-teaching at r-project.org> \nBetreff: Re: [R-sig-teaching] Help on packages working with excell files \n\nHi Tu,\n\nYes, those Java dependencies suck. I recommend trying the readxl\npackage, it doesn't have any external dependencies and should be\neasier to get it working.\n\nBest,\nIsta\n\nOn Mon, Jun 22, 2015 at 1:40 PM, Nguyen C. <nctu2006 at gmail.com> wrote:\n> Dear friends,\n> I am trying to install and use xlsx package. After installeing xlsx and\n> rJava successfully, I type >library(xlsx) then R said :\n> \"library(xlsx)\n> Loading required package: rJava\n> Error : .onLoad failed in loadNamespace() for 'rJava', details:\n>?? call: fun(libname, pkgname)\n>?? error: No CurrentVersion entry in Software/JavaSoft registry! Try\n> re-installing Java and make sure R and Java have matching architectures.\n> Error: package ?rJava? could not be loaded\"\n> I did the same for gdata package,? after installing succesfully and calling\n> library(gdata), I did:\n>> myDf<-read.xls(\"levuan2kq.xls\",sheet=1,header=TRUE)\n> Error in findPerl(verbose = verbose) :\n>?? perl executable not found. Use perl= argument to specify the correct path.\n> Error in file.exists(tfn) : invalid 'file' argument\n>\n> Till now, I could not use any package to work with excel file.\n> Anyone can help me.\n> Thanks,\n> Tu\n>\n>???????? [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi,\nIf you need xlsx package try installing both java versions on your PC. I often had 32 bit java installed but running R on 64 bit requires a 64 bit java installed and vice versa.?\nBest, peter\n\n\nVon",
+      "thread_id": "thread-cb890e4eeb02",
+      "thread_depth": 0,
+      "month": "2015-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-cb890e4eeb02",
+      "subject": "Help on packages working with excell files",
+      "message_count": 1,
+      "participants": [
+        "Peter Meißner"
+      ],
+      "started": "2015-06-22T20:58:03+02:00",
+      "last_reply": "2015-06-22T20:58:03+02:00",
+      "root_message_id": "msg-cb890e4eeb02"
+    },
+    {
+      "id": "thread-ea8e20eebafb",
+      "subject": "Help on packages working with excell files",
+      "message_count": 2,
+      "participants": [
+        "Ista Zahn",
+        "Nguyen C."
+      ],
+      "started": "2015-06-23T00:40:58+07:00",
+      "last_reply": "2015-06-22T14:31:08-04:00",
+      "root_message_id": "msg-ea8e20eebafb"
+    }
+  ]
+}

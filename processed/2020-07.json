@@ -1,0 +1,36 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2020-07",
+  "messages": [
+    {
+      "id": "msg-f7734168fc07",
+      "message_id": "<3e51a24a5236f52f8e4c4ba221703e3e@disroot.org>",
+      "from_name": "citc m@iii@g oii disroot@org",
+      "from_email_hash": "8a737ff3c9fdda8f9c41419d5bb0b937d099aea802b1ff2d48f49ee48804ef51",
+      "date": "2020-07-14T10:07:17Z",
+      "subject": "[R-sig-teaching] mail list archive",
+      "subject_clean": "mail list archive",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Mail list administrator,\n\nPlease is it possible to have this mailing list also on the archive 'mail-archive.com', similarly to others such as:\n\nhttps://www.mail-archive.com/r-help at r-project.org/info.html\nhttps://www.mail-archive.com/r-sig-debian at r-project.org\n\nWant to be able to subscribe via RSS in an RSS reader, e.g.:\n\nhttps://www.mail-archive.com/r-help at r-project.org/maillist.xml\n\nThanks.",
+      "body_snippet": "Mail list administrator,\n\nPlease is it possible to have this mailing list also on the archive 'mail-archive.com', similarly to others such as:\n\nhttps://www.mail-archive.com/r-help at r-project.org/inf",
+      "thread_id": "thread-f7734168fc07",
+      "thread_depth": 0,
+      "month": "2020-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-f7734168fc07",
+      "subject": "mail list archive",
+      "message_count": 1,
+      "participants": [
+        "citc m@iii@g oii disroot@org"
+      ],
+      "started": "2020-07-14T10:07:17+00:00",
+      "last_reply": "2020-07-14T10:07:17+00:00",
+      "root_message_id": "msg-f7734168fc07"
+    }
+  ]
+}

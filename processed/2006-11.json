@@ -1,0 +1,55 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2006-11",
+  "messages": [
+    {
+      "id": "msg-9e02bd597d20",
+      "message_id": "<20061104154622.93109.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2006-11-04T10:46:22-05:00",
+      "subject": "[R-sig-teaching]  R in intro stats",
+      "subject_clean": "R in intro stats",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Forwarded message: From: Bob Dobrow <rdobrow at carleton.edu>\n> \n> We've taken our GUI-based SPSS lab manual and rewritten it for R. If \n> anyone would like to see it I can make it available. I'll probably need \n> to supplement it with some very basic intro tutorials or\n> worksheets giving basic introduction.\n\nI would be interested.  Could this be on the WWW?  You might be able\nto use my handouts at\n\n   http://www.statland.org/R/dirlist.htm  \n\n\n _______\n|   ^  | \t\t    \n|     /  \t\t    Robert W. Hayden\n|    |   \t\t    in the old library\n|    |   \t\t    212 Main Street\n|   /    \t            P. O. Box 450\n|  |     \t\t  ^ North Troy, VT 05859\nL__L\t\t\t    (802) 988-2587\n                            http://statland.org/      \nMap of VT                   bob at statland.org\n\nCommunications sent to Plymouth State will not reach me.",
+      "body_snippet": "Forwarded message: From: Bob Dobrow <rdobrow at carleton.edu>\n> \n> We've taken our GUI-based SPSS lab manual and rewritten it for R. If \n> anyone would like to see it I can make it available. I'll pro",
+      "thread_id": "thread-9e02bd597d20",
+      "thread_depth": 0,
+      "month": "2006-11"
+    },
+    {
+      "id": "msg-de08574d64ea",
+      "message_id": "<p06230934c1728238c524@[165.124.165.58]>",
+      "from_name": "William Revelle",
+      "from_email_hash": "17775642d38a89586519cdb4da8b9881c3da6cb4b5abf51dc2b37a23be377688",
+      "date": "2006-11-04T11:49:49-06:00",
+      "subject": "[R-sig-teaching] R in intro stats",
+      "subject_clean": "R in intro stats",
+      "in_reply_to": "<20061104154622.93109.qmail@mv.mv.com>",
+      "references": [
+        "<20061104154622.93109.qmail@mv.mv.com>"
+      ],
+      "body_plain": "Although not used in intro stats, I have developed 2 tutorials for \nusing R in psychology  for advanced undergraduates.\nThe first is a research methods course where they are expected to \nanalyze some data.\nThe second is a personality research course where the examples are \nmore geared to the types of problems they will find there.\n\nhttp://personality-project.org/r/r.short.html\nhttp://personality-project.org/r/r.205.tutorial.html\n\nboth of these are abstracted from a somewhat longer tutorial\nhttp://personality-project.org/r/\n\nBill\n\n\n\n\n\n\nAt 10:46 AM -0500 11/4/06, Robert W. Hayden wrote:\n>Forwarded message: From: Bob Dobrow <rdobrow at carleton.edu>\n>>\n>>  We've taken our GUI-based SPSS lab manual and rewritten it for R. If\n>>  anyone would like to see it I can make it available. I'll probably need\n>>  to supplement it with some very basic intro tutorials or\n>>  worksheets giving basic introduction.\n>\n>I would be interested.  Could this be on the WWW?  You might be able\n>to use my handouts at\n>\n>    http://www.statland.org/R/dirlist.htm \n>\n>\n>  _______\n>|   ^  |\t\t   \n>|     / \t\t    Robert W. Hayden\n>|    |  \t\t    in the old library\n>|    |  \t\t    212 Main Street\n>|   /   \t            P. O. Box 450\n>|  |    \t\t  ^ North Troy, VT 05859\n>L__L\t\t\t    (802) 988-2587\n>                             http://statland.org/     \n>Map of VT                   bob at statland.org\n>\n>Communications sent to Plymouth State will not reach me.\n>\n>_______________________________________________\n>R-sig-teaching at r-project.org mailing list\n>https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\n-- \nWilliam Revelle\t\thttp://pmc.psych.northwestern.edu/revelle.html   \nProfessor\t\t\thttp://personality-project.org/personality.html\nDepartment of Psychology       http://www.wcas.northwestern.edu/psych/\nNorthwestern University\thttp://www.northwestern.edu/",
+      "body_snippet": "Although not used in intro stats, I have developed 2 tutorials for \nusing R in psychology  for advanced undergraduates.\nThe first is a research methods course where they are expected to \nanalyze some ",
+      "thread_id": "thread-9e02bd597d20",
+      "thread_depth": 1,
+      "month": "2006-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-9e02bd597d20",
+      "subject": "R in intro stats",
+      "message_count": 2,
+      "participants": [
+        "Robert W. Hayden",
+        "William Revelle"
+      ],
+      "started": "2006-11-04T10:46:22-05:00",
+      "last_reply": "2006-11-04T11:49:49-06:00",
+      "root_message_id": "msg-9e02bd597d20"
+    }
+  ]
+}

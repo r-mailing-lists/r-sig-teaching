@@ -1,0 +1,63 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2014-04",
+  "messages": [
+    {
+      "id": "msg-737b0a89eb82",
+      "message_id": "<20140409192347.GA10762@gmail.com>",
+      "from_name": "Stas Malavin",
+      "from_email_hash": "2d0edf46263c3bd2503baaa6debf3ff0329b63b0971d6c5f95061f663d488661",
+      "date": "2014-04-09T23:23:54+04:00",
+      "subject": "[R-sig-teaching] Webinar service for R course",
+      "subject_clean": "Webinar service for R course",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear colleagues,\n\nI plan to give a short online course for several friends covering the beginnings of R and multivariate statistics. Could you recommend any suitable (webinar) service? I don't intend to repeat the course, at least in the near future, so probably I'd better use a trial version or a one-time solution, not a full one. As for the content, I plan to base on live streaming of the console (thus screen sharing is needed), and to show a presentation outlining chief moments. I think I also need text chat.\nSorry if I overlooked a similar question here and thank you in advance, any advice is highly appreciated.\n\nStas",
+      "body_snippet": "Dear colleagues,\n\nI plan to give a short online course for several friends covering the beginnings of R and multivariate statistics. Could you recommend any suitable (webinar) service? I don't intend ",
+      "thread_id": "thread-737b0a89eb82",
+      "thread_depth": 0,
+      "month": "2014-04"
+    },
+    {
+      "id": "msg-0fe729c8d541",
+      "message_id": "<1398788639.37139.YahooMailNeo@web125701.mail.ne1.yahoo.com>",
+      "from_name": "Anke Piepenbrink",
+      "from_email_hash": "edc6c25e7f3019683568de0c89f6dbc78e054888f736aaef521add1076174b04",
+      "date": "2014-04-29T09:23:59-07:00",
+      "subject": "[R-sig-teaching] Interactive shiny apps for introductory statistics course",
+      "subject_clean": "Interactive shiny apps for introductory statistics course",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20140429/74a88fbb/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20140429/74a88fbb/attachment.pl>",
+      "thread_id": "thread-0fe729c8d541",
+      "thread_depth": 0,
+      "month": "2014-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-737b0a89eb82",
+      "subject": "Webinar service for R course",
+      "message_count": 1,
+      "participants": [
+        "Stas Malavin"
+      ],
+      "started": "2014-04-09T23:23:54+04:00",
+      "last_reply": "2014-04-09T23:23:54+04:00",
+      "root_message_id": "msg-737b0a89eb82"
+    },
+    {
+      "id": "thread-0fe729c8d541",
+      "subject": "Interactive shiny apps for introductory statistics course",
+      "message_count": 1,
+      "participants": [
+        "Anke Piepenbrink"
+      ],
+      "started": "2014-04-29T09:23:59-07:00",
+      "last_reply": "2014-04-29T09:23:59-07:00",
+      "root_message_id": "msg-0fe729c8d541"
+    }
+  ]
+}

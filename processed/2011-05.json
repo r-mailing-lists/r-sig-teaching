@@ -1,0 +1,55 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2011-05",
+  "messages": [
+    {
+      "id": "msg-bc3b1d52616b",
+      "message_id": "<281329.77573.qm@web59504.mail.ac4.yahoo.com>",
+      "from_name": "Ali Zanaty",
+      "from_email_hash": "65acd645f9ed74fc7721f9ea58469b32335ac44f193ffbf59b7c89913407d9ac",
+      "date": "2011-05-20T13:56:52-07:00",
+      "subject": "[R-sig-teaching] Power Analysis",
+      "subject_clean": "Power Analysis",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110520/cb2970ee/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110520/cb2970ee/attachment.pl>",
+      "thread_id": "thread-bc3b1d52616b",
+      "thread_depth": 0,
+      "month": "2011-05"
+    },
+    {
+      "id": "msg-fcdbbffc92e1",
+      "message_id": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC63478F28AD@LP-EXMBVS10.CO.IHC.COM>",
+      "from_name": "Greg Snow",
+      "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
+      "date": "2011-05-20T15:13:26-06:00",
+      "subject": "[R-sig-teaching] Power Analysis",
+      "subject_clean": "Power Analysis",
+      "in_reply_to": "<281329.77573.qm@web59504.mail.ac4.yahoo.com>",
+      "references": [
+        "<281329.77573.qm@web59504.mail.ac4.yahoo.com>"
+      ],
+      "body_plain": "Look at the pwr package.\n\n-- \nGregory (Greg) L. Snow Ph.D.\nStatistical Data Center\nIntermountain Healthcare\ngreg.snow at imail.org\n801.408.8111\n\n\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-\n> bounces at r-project.org] On Behalf Of Ali Zanaty\n> Sent: Friday, May 20, 2011 2:57 PM\n> To: r-sig-teaching at r-project.org\n> Subject: [R-sig-teaching] Power Analysis\n> \n> Dear All:\n> \n> \n> I need some help with the Power analysis and sample size determination\n> for the\n> Chi-Square and Fisher Exact tests.\n> \n> Any helps will be appreciated.\n> \n> With many thanks\n> Ali\n> \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Look at the pwr package.\n\n-- \nGregory (Greg) L. Snow Ph.D.\nStatistical Data Center\nIntermountain Healthcare\ngreg.snow at imail.org\n801.408.8111\n\n\n> -----Original Message-----\n> From: r-sig-teaching-bo",
+      "thread_id": "thread-bc3b1d52616b",
+      "thread_depth": 1,
+      "month": "2011-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-bc3b1d52616b",
+      "subject": "Power Analysis",
+      "message_count": 2,
+      "participants": [
+        "Ali Zanaty",
+        "Greg Snow"
+      ],
+      "started": "2011-05-20T13:56:52-07:00",
+      "last_reply": "2011-05-20T15:13:26-06:00",
+      "root_message_id": "msg-bc3b1d52616b"
+    }
+  ]
+}

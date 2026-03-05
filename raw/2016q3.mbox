@@ -1,0 +1,609 @@
+From sstoline at gmail.com  Thu Jul 21 17:20:07 2016
+From: sstoline at gmail.com (Steven Stoline)
+Date: Thu, 21 Jul 2016 11:20:07 -0400
+Subject: [R-sig-teaching] Calculation with R
+Message-ID: <CAHDp66Do6fLwSwAmZDRWLXfT6Gg1BxbnxGWh7x_giDVbEJJ6KQ@mail.gmail.com>
+
+Dear All: good morning
+
+I do need your help how to do the following calculation:
+
+Assume we have a matrix 13x2 (say). Two columns named dataval and index
+
+dataval index
+20 1
+11 0
+34 0
+54 1
+76 1
+76 0
+61 1
+88 1
+91 0
+11 0
+23 1
+45 1
+53 0
+
+data<-matrix(c(20,11,34,54,76,76,61,88,91,11,23,45,53,1,0,0,1,1,0,1,1,0,0,1,1,0),13,2)
+
+data
+
+I need to perform the calculation:
+
+for a = 7 (say)
+
+sum((data[ ,1] - a)^2)
+
+only for index = data[ ,2] = 1
+
+
+I am expecting the result to be equal to:
+
+(20-7)^2 + (54-7)^2+(76-7)^2+(61-7)^2+(88-7)^2+(23-7)^2+(45-7)^2 = 18316
+
+
+Any helps will be highly appreciated.
+
+
+with many thanks
+steve
+-------------------------
+Steven M. Stoline
+1123 Forest Avenue
+Portland, ME 04112
+sstoline at gmail.com
+
+	[[alternative HTML version deleted]]
+
+
+From tim.appelhans at gmail.com  Thu Jul 21 17:27:31 2016
+From: tim.appelhans at gmail.com (Tim Appelhans)
+Date: Thu, 21 Jul 2016 17:27:31 +0200
+Subject: [R-sig-teaching] Calculation with R
+In-Reply-To: <CAHDp66Do6fLwSwAmZDRWLXfT6Gg1BxbnxGWh7x_giDVbEJJ6KQ@mail.gmail.com>
+References: <CAHDp66Do6fLwSwAmZDRWLXfT6Gg1BxbnxGWh7x_giDVbEJJ6KQ@mail.gmail.com>
+Message-ID: <5790E9E3.1020602@gmail.com>
+
+Steve,
+
+sum((data[ ,1][data[, 2] == 1] - a)^2)
+
+Hope that helps,
+Tim
+
+On 21.07.2016 17:20, Steven Stoline wrote:
+> Dear All: good morning
+>
+> I do need your help how to do the following calculation:
+>
+> Assume we have a matrix 13x2 (say). Two columns named dataval and index
+>
+> dataval index
+> 20 1
+> 11 0
+> 34 0
+> 54 1
+> 76 1
+> 76 0
+> 61 1
+> 88 1
+> 91 0
+> 11 0
+> 23 1
+> 45 1
+> 53 0
+>
+> data<-matrix(c(20,11,34,54,76,76,61,88,91,11,23,45,53,1,0,0,1,1,0,1,1,0,0,1,1,0),13,2)
+>
+> data
+>
+> I need to perform the calculation:
+>
+> for a = 7 (say)
+>
+> sum((data[ ,1] - a)^2)
+>
+> only for index = data[ ,2] = 1
+>
+>
+> I am expecting the result to be equal to:
+>
+> (20-7)^2 + (54-7)^2+(76-7)^2+(61-7)^2+(88-7)^2+(23-7)^2+(45-7)^2 = 18316
+>
+>
+> Any helps will be highly appreciated.
+>
+>
+> with many thanks
+> steve
+> -------------------------
+> Steven M. Stoline
+> 1123 Forest Avenue
+> Portland, ME 04112
+> sstoline at gmail.com
+>
+> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+-- 
+#####################################
+Tim Appelhans
+Department of Geography
+Environmental Informatics
+Philipps Universit?t Marburg
+Deutschhausstra?e 12
+Raum 00A08
+35032 Marburg (Paketpost: 35037 Marburg)
+Germany
+
+Tel +49 (0) 6421 28-25957
+
+http://environmentalinformatics-marburg.de/
+
+
+From CMalone at winona.edu  Thu Jul 21 17:27:53 2016
+From: CMalone at winona.edu (Malone, Christopher J)
+Date: Thu, 21 Jul 2016 15:27:53 +0000
+Subject: [R-sig-teaching] Calculation with R
+In-Reply-To: <CAHDp66Do6fLwSwAmZDRWLXfT6Gg1BxbnxGWh7x_giDVbEJJ6KQ@mail.gmail.com>
+References: <CAHDp66Do6fLwSwAmZDRWLXfT6Gg1BxbnxGWh7x_giDVbEJJ6KQ@mail.gmail.com>
+Message-ID: <A69CE2E63D56FB458814A0C8E15181035026B57A@exchange0.winona.edu>
+
+Steve,
+ This should do the trick, subset rows == 1 in column 2 of matrix.
+
+sum((data[data[,2]==1 ,1] - a)^2)
+
+Have a good day,
+Chris Malone
+
+-----Original Message-----
+From: R-sig-teaching [mailto:r-sig-teaching-bounces at r-project.org] On Behalf Of Steven Stoline
+Sent: Thursday, July 21, 2016 10:20 AM
+To: R-sig-teaching <R-sig-teaching at r-project.org>
+Subject: [R-sig-teaching] Calculation with R
+
+Dear All: good morning
+
+I do need your help how to do the following calculation:
+
+Assume we have a matrix 13x2 (say). Two columns named dataval and index
+
+dataval index
+20 1
+11 0
+34 0
+54 1
+76 1
+76 0
+61 1
+88 1
+91 0
+11 0
+23 1
+45 1
+53 0
+
+data<-matrix(c(20,11,34,54,76,76,61,88,91,11,23,45,53,1,0,0,1,1,0,1,1,0,0,1,1,0),13,2)
+
+data
+
+I need to perform the calculation:
+
+for a = 7 (say)
+
+sum((data[ ,1] - a)^2)
+
+only for index = data[ ,2] = 1
+
+
+I am expecting the result to be equal to:
+
+(20-7)^2 + (54-7)^2+(76-7)^2+(61-7)^2+(88-7)^2+(23-7)^2+(45-7)^2 = 18316
+
+
+Any helps will be highly appreciated.
+
+
+with many thanks
+steve
+-------------------------
+Steven M. Stoline
+1123 Forest Avenue
+Portland, ME 04112
+sstoline at gmail.com
+
+	[[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From rpruim at calvin.edu  Thu Jul 21 17:32:00 2016
+From: rpruim at calvin.edu (Randall Pruim)
+Date: Thu, 21 Jul 2016 15:32:00 +0000
+Subject: [R-sig-teaching] Calculation with R
+In-Reply-To: <CAHDp66Do6fLwSwAmZDRWLXfT6Gg1BxbnxGWh7x_giDVbEJJ6KQ@mail.gmail.com>
+References: <CAHDp66Do6fLwSwAmZDRWLXfT6Gg1BxbnxGWh7x_giDVbEJJ6KQ@mail.gmail.com>
+Message-ID: <43538236-63A3-4585-A68C-CD961FF47121@calvin.edu>
+
+This isn?t really a teaching question, but for your particular case IIYC, just multiply the squared quantity by data[,2] before summing.  For more general cases, take a look at ifelse().
+
+> On Jul 21, 2016, at 11:20 AM, Steven Stoline <sstoline at gmail.com> wrote:
+> 
+> Dear All: good morning
+> 
+> I do need your help how to do the following calculation:
+> 
+> Assume we have a matrix 13x2 (say). Two columns named dataval and index
+> 
+> dataval index
+> 20 1
+> 11 0
+> 34 0
+> 54 1
+> 76 1
+> 76 0
+> 61 1
+> 88 1
+> 91 0
+> 11 0
+> 23 1
+> 45 1
+> 53 0
+> 
+> data<-matrix(c(20,11,34,54,76,76,61,88,91,11,23,45,53,1,0,0,1,1,0,1,1,0,0,1,1,0),13,2)
+> 
+> data
+> 
+> I need to perform the calculation:
+> 
+> for a = 7 (say)
+> 
+> sum((data[ ,1] - a)^2)
+> 
+> only for index = data[ ,2] = 1
+> 
+> 
+> I am expecting the result to be equal to:
+> 
+> (20-7)^2 + (54-7)^2+(76-7)^2+(61-7)^2+(88-7)^2+(23-7)^2+(45-7)^2 = 18316
+> 
+> 
+> Any helps will be highly appreciated.
+> 
+> 
+> with many thanks
+> steve
+> -------------------------
+> Steven M. Stoline
+> 1123 Forest Avenue
+> Portland, ME 04112
+> sstoline at gmail.com
+> 
+> 	[[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From ggrothendieck at gmail.com  Thu Jul 21 19:20:02 2016
+From: ggrothendieck at gmail.com (Gabor Grothendieck)
+Date: Thu, 21 Jul 2016 13:20:02 -0400
+Subject: [R-sig-teaching] Calculation with R
+In-Reply-To: <5790E9E3.1020602@gmail.com>
+References: <CAHDp66Do6fLwSwAmZDRWLXfT6Gg1BxbnxGWh7x_giDVbEJJ6KQ@mail.gmail.com>
+	<5790E9E3.1020602@gmail.com>
+Message-ID: <CAP01uRnpxOdF4h2hLmWgs68MOa3WNydzbYwGGmnPs=s-0qf_DQ@mail.gmail.com>
+
+Might be clearer if some variables are created first::
+
+values <- data[, 1]
+ok <- data[, 2] == 1
+sum( (values[ok] - 7)^2 )
+
+On the other hand if you prefer obsfucation replace the last line with:
+
+deviance(lm(values-7 ~ 0, subset = ok))
+
+
+On Thu, Jul 21, 2016 at 11:27 AM, Tim Appelhans <tim.appelhans at gmail.com> wrote:
+> Steve,
+>
+> sum((data[ ,1][data[, 2] == 1] - a)^2)
+>
+> Hope that helps,
+> Tim
+>
+>
+> On 21.07.2016 17:20, Steven Stoline wrote:
+>>
+>> Dear All: good morning
+>>
+>> I do need your help how to do the following calculation:
+>>
+>> Assume we have a matrix 13x2 (say). Two columns named dataval and index
+>>
+>> dataval index
+>> 20 1
+>> 11 0
+>> 34 0
+>> 54 1
+>> 76 1
+>> 76 0
+>> 61 1
+>> 88 1
+>> 91 0
+>> 11 0
+>> 23 1
+>> 45 1
+>> 53 0
+>>
+>>
+>> data<-matrix(c(20,11,34,54,76,76,61,88,91,11,23,45,53,1,0,0,1,1,0,1,1,0,0,1,1,0),13,2)
+>>
+>> data
+>>
+>> I need to perform the calculation:
+>>
+>> for a = 7 (say)
+>>
+>> sum((data[ ,1] - a)^2)
+>>
+>> only for index = data[ ,2] = 1
+>>
+>>
+>> I am expecting the result to be equal to:
+>>
+>> (20-7)^2 + (54-7)^2+(76-7)^2+(61-7)^2+(88-7)^2+(23-7)^2+(45-7)^2 = 18316
+>>
+>>
+>> Any helps will be highly appreciated.
+>>
+>>
+>> with many thanks
+>> steve
+>> -------------------------
+>> Steven M. Stoline
+>> 1123 Forest Avenue
+>> Portland, ME 04112
+>> sstoline at gmail.com
+>>
+>>         [[alternative HTML version deleted]]
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+> --
+> #####################################
+> Tim Appelhans
+> Department of Geography
+> Environmental Informatics
+> Philipps Universit?t Marburg
+> Deutschhausstra?e 12
+> Raum 00A08
+> 35032 Marburg (Paketpost: 35037 Marburg)
+> Germany
+>
+> Tel +49 (0) 6421 28-25957
+>
+> http://environmentalinformatics-marburg.de/
+>
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+-- 
+Statistics & Software Consulting
+GKX Group, GKX Associates Inc.
+tel: 1-877-GKX-GROUP
+email: ggrothendieck at gmail.com
+
+
+From maechler at stat.math.ethz.ch  Fri Jul 22 09:13:16 2016
+From: maechler at stat.math.ethz.ch (Martin Maechler)
+Date: Fri, 22 Jul 2016 09:13:16 +0200
+Subject: [R-sig-teaching] Calculation with R
+In-Reply-To: <43538236-63A3-4585-A68C-CD961FF47121@calvin.edu>
+References: <CAHDp66Do6fLwSwAmZDRWLXfT6Gg1BxbnxGWh7x_giDVbEJJ6KQ@mail.gmail.com>
+	<43538236-63A3-4585-A68C-CD961FF47121@calvin.edu>
+Message-ID: <22417.51084.794858.470405@stat.math.ethz.ch>
+
+>>>>> Randall Pruim <rpruim at calvin.edu>
+>>>>>     on Thu, 21 Jul 2016 15:32:00 +0000 writes:
+
+    > This isn?t really a teaching question, 
+
+Yes, indeed this is NOT  about 'teaching R'  or
+'teaching with R', and hence not appropriate for the
+R-SIG-teaching list.
+
+Please, Steven Stoline, stop misusing this list for your questions about R.
+
+There is the R-help mailing list for that, and other fora,
+such as Stackoverflow, see
+
+https://www.r-project.org/posting-guide.html    and also
+https://www.r-project.org/mail.html
+
+Martin Maechler
+(ETH Zurich / R Core)
+
+    > but for your particular case IIYC, just multiply the squared quantity by data[,2] before summing.  For more general cases, take a look at ifelse().
+    >> On Jul 21, 2016, at 11:20 AM, Steven Stoline <sstoline at gmail.com> wrote:
+    >> 
+    >> Dear All: good morning
+    >> 
+    >> I do need your help how to do the following calculation:
+    >> 
+    >> Assume we have a matrix 13x2 (say). Two columns named dataval and index
+    >> 
+    >> dataval index
+    >> 20 1
+    >> 11 0
+    >> 34 0
+    >> 54 1
+    >> 76 1
+    >> 76 0
+    >> 61 1
+    >> 88 1
+    >> 91 0
+    >> 11 0
+    >> 23 1
+    >> 45 1
+    >> 53 0
+    >> 
+    >> data<-matrix(c(20,11,34,54,76,76,61,88,91,11,23,45,53,1,0,0,1,1,0,1,1,0,0,1,1,0),13,2)
+    >> 
+    >> data
+    >> 
+    >> I need to perform the calculation:
+    >> 
+    >> for a = 7 (say)
+    >> 
+    >> sum((data[ ,1] - a)^2)
+    >> 
+    >> only for index = data[ ,2] = 1
+    >> 
+    >> 
+    >> I am expecting the result to be equal to:
+    >> 
+    >> (20-7)^2 + (54-7)^2+(76-7)^2+(61-7)^2+(88-7)^2+(23-7)^2+(45-7)^2 = 18316
+    >> 
+    >> 
+    >> Any helps will be highly appreciated.
+    >> 
+    >> 
+    >> with many thanks
+    >> steve
+    >> -------------------------
+    >> Steven M. Stoline
+    >> 1123 Forest Avenue
+    >> Portland, ME 04112
+    >> sstoline at gmail.com
+    >> 
+    >> [[alternative HTML version deleted]]
+    >> 
+    >> _______________________________________________
+    >> R-sig-teaching at r-project.org mailing list
+    >> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+    > _______________________________________________
+    > R-sig-teaching at r-project.org mailing list
+    > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From jefflaux at gmail.com  Fri Jul 22 15:19:49 2016
+From: jefflaux at gmail.com (Jeff Laux)
+Date: Fri, 22 Jul 2016 09:19:49 -0400
+Subject: [R-sig-teaching] Calculation with R
+In-Reply-To: <22417.51084.794858.470405@stat.math.ethz.ch>
+References: <CAHDp66Do6fLwSwAmZDRWLXfT6Gg1BxbnxGWh7x_giDVbEJJ6KQ@mail.gmail.com>	<43538236-63A3-4585-A68C-CD961FF47121@calvin.edu>
+	<22417.51084.794858.470405@stat.math.ethz.ch>
+Message-ID: <57921D75.30701@gmail.com>
+
+I have to agree here.  This question (and more generally most of the 
+questions I've seen you post) do not belong on this particular list.  
+There are a number of appropriate places where you should be able to get 
+help with this.  Moreover, this question is really trivial, and 
+shouldn't be a problem once you've been using R for a week or two.
+
+
+On 7/22/2016 3:13 AM, Martin Maechler wrote:
+>>>>>> Randall Pruim <rpruim at calvin.edu>
+>>>>>>      on Thu, 21 Jul 2016 15:32:00 +0000 writes:
+>      > This isn?t really a teaching question,
+>
+> Yes, indeed this is NOT  about 'teaching R'  or
+> 'teaching with R', and hence not appropriate for the
+> R-SIG-teaching list.
+>
+> Please, Steven Stoline, stop misusing this list for your questions about R.
+>
+> There is the R-help mailing list for that, and other fora,
+> such as Stackoverflow, see
+>
+> https://www.r-project.org/posting-guide.html    and also
+> https://www.r-project.org/mail.html
+>
+> Martin Maechler
+> (ETH Zurich / R Core)
+>
+>      > but for your particular case IIYC, just multiply the squared quantity by data[,2] before summing.  For more general cases, take a look at ifelse().
+>      >> On Jul 21, 2016, at 11:20 AM, Steven Stoline <sstoline at gmail.com> wrote:
+>      >>
+>      >> Dear All: good morning
+>      >>
+>      >> I do need your help how to do the following calculation:
+>      >>
+>      >> Assume we have a matrix 13x2 (say). Two columns named dataval and index
+>      >>
+>      >> dataval index
+>      >> 20 1
+>      >> 11 0
+>      >> 34 0
+>      >> 54 1
+>      >> 76 1
+>      >> 76 0
+>      >> 61 1
+>      >> 88 1
+>      >> 91 0
+>      >> 11 0
+>      >> 23 1
+>      >> 45 1
+>      >> 53 0
+>      >>
+>      >> data<-matrix(c(20,11,34,54,76,76,61,88,91,11,23,45,53,1,0,0,1,1,0,1,1,0,0,1,1,0),13,2)
+>      >>
+>      >> data
+>      >>
+>      >> I need to perform the calculation:
+>      >>
+>      >> for a = 7 (say)
+>      >>
+>      >> sum((data[ ,1] - a)^2)
+>      >>
+>      >> only for index = data[ ,2] = 1
+>      >>
+>      >>
+>      >> I am expecting the result to be equal to:
+>      >>
+>      >> (20-7)^2 + (54-7)^2+(76-7)^2+(61-7)^2+(88-7)^2+(23-7)^2+(45-7)^2 = 18316
+>      >>
+>      >>
+>      >> Any helps will be highly appreciated.
+>      >>
+>      >>
+>      >> with many thanks
+>      >> steve
+>      >> -------------------------
+>      >> Steven M. Stoline
+>      >> 1123 Forest Avenue
+>      >> Portland, ME 04112
+>      >> sstoline at gmail.com
+>      >>
+>      >> [[alternative HTML version deleted]]
+>      >>
+>      >> _______________________________________________
+>      >> R-sig-teaching at r-project.org mailing list
+>      >> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>      > _______________________________________________
+>      > R-sig-teaching at r-project.org mailing list
+>      > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+

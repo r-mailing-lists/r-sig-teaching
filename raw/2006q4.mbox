@@ -1,0 +1,881 @@
+From jones at reed.edu  Fri Oct 27 02:16:56 2006
+From: jones at reed.edu (Albyn Jones)
+Date: Thu, 26 Oct 2006 17:16:56 -0700
+Subject: [R-sig-teaching] R-sig-teaching mailing list
+Message-ID: <20061027001656.GQ10158@laplace.reed.edu>
+
+
+
+Discussions held on the Isolated Statistics mailing list about the
+use R in teaching introductory statistics courses led to the creation
+of a new R SIG: R-sig-teaching.
+
+The SIG description:
+Special Interest Group (SIG) on teaching statistics with R. The
+primary purpose of the group is to provide a forum where instructors
+using R in their statistics courses can share ideas, teaching
+materials, and experiences.  One particular focus of the SIG is to
+provide helpful support to instructors new to R who are teaching
+introductory statistics courses populated with students with little
+experience in statistics, statistical software, and command line
+interfaces.
+
+Administrators:
+               Albyn Jones <jones at reed.edu>
+               Bret Larget <brlarget at wisc.edu>
+
+
+Posting to the list is restricted to subscribers.  To post to the
+list, send the email to r-sig-teaching at r-project.org.
+
+To get help about using it, send a message with just the word `help'
+as subject or in the body, to:
+
+    r-sig-teaching-request at hypatia.math.ethz.ch
+
+The easiest way to subscribe is to go to the web interface at
+http://www.r-project.org/, and follow the link to Mailing Lists.
+
+Albyn
+
+
+
+From hayden at mv.mv.com  Fri Oct 27 13:17:51 2006
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Fri, 27 Oct 2006 07:17:51 -0400 (EDT)
+Subject: [R-sig-teaching] resource text
+Message-ID: <20061027111752.29521.qmail@mv.mv.com>
+
+ The most understandable reference on R I have found is
+ 
+ _Using R for Introductory Statistics_ by John Verzani, Chapman & Hall, 2005.
+
+
+
+ _______
+|   ^  | 		    
+|     /  		    Robert W. Hayden
+|    |   		    in the old library
+|    |   		    212 Main Street
+|   /    	            P. O. Box 450
+|  |     		  ^ North Troy, VT 05859
+L__L			    (802) 988-2587
+                            http://statland.org/      
+Map of VT                   bob at statland.org
+
+Communications sent to Plymouth State will not reach me.
+
+
+
+From hayden at mv.mv.com  Fri Oct 27 13:28:57 2006
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Fri, 27 Oct 2006 07:28:57 -0400 (EDT)
+Subject: [R-sig-teaching] resources
+Message-ID: <20061027112857.32123.qmail@mv.mv.com>
+
+This link
+
+     http://www.statland.org/R/WhyR.htm
+
+goes to a page that lists some of the advantages and disadvantages of
+using R in an introductroy course.  From there you can link to the 11
+handouts I used for a course I have taught online.  These might need
+to be localized to your situation.  R was not the main software for
+the course but an option for those planning to take further coures
+where R WAS the official software.  So, I do not really know if anyone
+ever used these pages.  If you find any errors or gltches, please let
+me know.
+
+ _______
+|   ^  | 		    
+|     /  		    Robert W. Hayden
+|    |   		    in the old library
+|    |   		    212 Main Street
+|   /    	            P. O. Box 450
+|  |     		  ^ North Troy, VT 05859
+L__L			    (802) 988-2587
+                            http://statland.org/      
+Map of VT                   bob at statland.org
+
+Communications sent to Plymouth State will not reach me.
+
+
+
+From nicholas_horton at yahoo.com  Fri Oct 27 15:10:08 2006
+From: nicholas_horton at yahoo.com (Nicholas Horton)
+Date: Fri, 27 Oct 2006 06:10:08 -0700 (PDT)
+Subject: [R-sig-teaching] query about how to organize an intro to R
+Message-ID: <20061027131009.36783.qmail@web53307.mail.yahoo.com>
+
+I'm planning to utilize R for my intermediate stats
+course in the spring.  I'd be most interested in
+hearing summaries and/or receiving materials that
+folks have used to introduce students to R, and guided
+them through the mechanics of using the command
+language, running scripts, etc.
+
+Thanks in advance for any examples or suggestions.
+
+Nick Horton
+Department of Mathematics and Statistics
+Smith College
+
+
+
+From rdobrow at carleton.edu  Fri Oct 27 15:24:12 2006
+From: rdobrow at carleton.edu (Bob Dobrow)
+Date: Fri, 27 Oct 2006 08:24:12 -0500
+Subject: [R-sig-teaching] R in intro stats
+Message-ID: <4542087C.40705@carleton.edu>
+
+I'm glad to see this sig list up and running.
+
+I'm planning to use R for my *intro* stats class in the Winter. This is 
+an experiment,
+as our intro stats classes all use SPSS. So I'm using R for this one 
+section (out of about 8 sections
+a year).  I want to see (1) how easy/hard it is for
+students to work in a command line environment and (2) whether there is some
+pedagogical advantage to working with command lines rather than just 
+point-and-click.
+
+We've taken our GUI-based SPSS lab manual and rewritten it for R. If 
+anyone would like to see it I can make it available. I'll probably need 
+to supplement it with some very basic intro tutorials or
+worksheets giving basic introduction. I do not intend to have these 
+students (mostly poli sci,
+econ and bio) writing scripts. But I do intend to use R lots in-class 
+simulations and
+presentations. If anyone has used R in the intro class I'd be interested 
+in hearing your experiences.
+
+Bob Dobrow
+Carleton College
+
+
+
+From maechler at stat.math.ethz.ch  Fri Oct 27 16:03:04 2006
+From: maechler at stat.math.ethz.ch (Martin Maechler)
+Date: Fri, 27 Oct 2006 16:03:04 +0200
+Subject: [R-sig-teaching] R in intro stats
+In-Reply-To: <4542087C.40705@carleton.edu>
+References: <4542087C.40705@carleton.edu>
+Message-ID: <17730.4504.701051.477946@stat.math.ethz.ch>
+
+I may state the obvious, but just in case it ain't.. :
+
+We have been using R for intro stats courses here at ETH only
+for engineer- or math- like students (and continue to do so),
+but not for e.g., biology or environmental science students.
+
+However, starting this fall, we (well, most of our faculty) are
+using or plan to use  Professor John Fox'  "RCmdr" ('R
+Commander')  instead of the GUI stats package ('SyStat' I believe). 
+One nice goal of the RCmdr is to give students a simple GUI but
+simultaneously expose them to the language (which is visibly
+produced by GUI clicking) such that they learn part of it "by
+the way", and are lured into using it for things that go beyond
+the GUI. 
+
+I could also envisage to use the R Cmdr for the first half of
+class and then to switch almost completely to "command line"
+i.e., rather an R-aware smart editor such as Tinn-R, Emacs,
+WinEdt, Kate, or the one that comes with R for MacOS X.
+
+Martin Maechler, 
+ETH Zurich
+
+>>>>> "Bob" == Bob Dobrow <rdobrow at carleton.edu>
+>>>>>     on Fri, 27 Oct 2006 08:24:12 -0500 writes:
+
+    Bob> I'm glad to see this sig list up and running.
+    Bob> I'm planning to use R for my *intro* stats class in the Winter. This is 
+    Bob> an experiment,
+    Bob> as our intro stats classes all use SPSS. So I'm using R for this one 
+    Bob> section (out of about 8 sections
+    Bob> a year).  I want to see (1) how easy/hard it is for
+    Bob> students to work in a command line environment and (2) whether there is some
+    Bob> pedagogical advantage to working with command lines rather than just 
+    Bob> point-and-click.
+
+    Bob> We've taken our GUI-based SPSS lab manual and rewritten it for R. If 
+    Bob> anyone would like to see it I can make it available. I'll probably need 
+    Bob> to supplement it with some very basic intro tutorials or
+    Bob> worksheets giving basic introduction. I do not intend to have these 
+    Bob> students (mostly poli sci,
+    Bob> econ and bio) writing scripts. But I do intend to use R lots in-class 
+    Bob> simulations and
+    Bob> presentations. If anyone has used R in the intro class I'd be interested 
+    Bob> in hearing your experiences.
+
+    Bob> Bob Dobrow
+    Bob> Carleton College
+
+
+
+From jones at reed.edu  Fri Oct 27 20:37:42 2006
+From: jones at reed.edu (Albyn Jones)
+Date: Fri, 27 Oct 2006 11:37:42 -0700
+Subject: [R-sig-teaching] R in intro stats
+In-Reply-To: <4542087C.40705@carleton.edu>
+References: <4542087C.40705@carleton.edu>
+Message-ID: <20061027183742.GE17604@laplace.reed.edu>
+
+ I have been using R (and Splus before that, and old S before that) in
+my intro course for a long time.  Most of the students in the course
+have never used a command line interface before.  They come from many
+disciplines (Bio, Econ, Soc, Poli Sci, History, etc...). 
+
+I see advantages and disadvantages: you certainly have to spend more
+time on learning the software.  The simple fact that spelling and
+capitalization (X vs x) cause trouble takes some time.  The payoff I
+see is substantial; the flexibility of the graphics facilities are a
+revelation for students who have used other statistical software.
+Some students get interested in R as a language.  The ease of doing
+simulations has great value.  The price is right: many students
+install R on their own personal machines, and some even continue to
+use it after the course ends.
+
+I use R for in-class demos, as well as having a 1 hour lab session every 
+week.  I have written online lab notes for each lab meeting, though I am
+constantly rethinking and revising them.  
+
+albyn 
+
+On Fri, Oct 27, 2006 at 08:24:12AM -0500, Bob Dobrow wrote:
+> I'm glad to see this sig list up and running.
+> 
+> I'm planning to use R for my *intro* stats class in the Winter. This is 
+> an experiment,
+> as our intro stats classes all use SPSS. So I'm using R for this one 
+> section (out of about 8 sections
+> a year).  I want to see (1) how easy/hard it is for
+> students to work in a command line environment and (2) whether there is some
+> pedagogical advantage to working with command lines rather than just 
+> point-and-click.
+> 
+> We've taken our GUI-based SPSS lab manual and rewritten it for R. If 
+> anyone would like to see it I can make it available. I'll probably need 
+> to supplement it with some very basic intro tutorials or
+> worksheets giving basic introduction. I do not intend to have these 
+> students (mostly poli sci,
+> econ and bio) writing scripts. But I do intend to use R lots in-class 
+> simulations and
+> presentations. If anyone has used R in the intro class I'd be interested 
+> in hearing your experiences.
+> 
+> Bob Dobrow
+> Carleton College
+> 
+> 
+
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+From hayden at mv.mv.com  Sat Nov  4 16:46:22 2006
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Sat, 4 Nov 2006 10:46:22 -0500 (EST)
+Subject: [R-sig-teaching]  R in intro stats
+Message-ID: <20061104154622.93109.qmail@mv.mv.com>
+
+Forwarded message: From: Bob Dobrow <rdobrow at carleton.edu>
+> 
+> We've taken our GUI-based SPSS lab manual and rewritten it for R. If 
+> anyone would like to see it I can make it available. I'll probably need 
+> to supplement it with some very basic intro tutorials or
+> worksheets giving basic introduction.
+
+I would be interested.  Could this be on the WWW?  You might be able
+to use my handouts at
+
+   http://www.statland.org/R/dirlist.htm  
+
+
+ _______
+|   ^  | 		    
+|     /  		    Robert W. Hayden
+|    |   		    in the old library
+|    |   		    212 Main Street
+|   /    	            P. O. Box 450
+|  |     		  ^ North Troy, VT 05859
+L__L			    (802) 988-2587
+                            http://statland.org/      
+Map of VT                   bob at statland.org
+
+Communications sent to Plymouth State will not reach me.
+
+
+
+From lists at revelle.net  Sat Nov  4 18:49:49 2006
+From: lists at revelle.net (William Revelle)
+Date: Sat, 4 Nov 2006 11:49:49 -0600
+Subject: [R-sig-teaching] R in intro stats
+In-Reply-To: <20061104154622.93109.qmail@mv.mv.com>
+References: <20061104154622.93109.qmail@mv.mv.com>
+Message-ID: <p06230934c1728238c524@[165.124.165.58]>
+
+Although not used in intro stats, I have developed 2 tutorials for 
+using R in psychology  for advanced undergraduates.
+The first is a research methods course where they are expected to 
+analyze some data.
+The second is a personality research course where the examples are 
+more geared to the types of problems they will find there.
+
+http://personality-project.org/r/r.short.html
+http://personality-project.org/r/r.205.tutorial.html
+
+both of these are abstracted from a somewhat longer tutorial
+http://personality-project.org/r/
+
+Bill
+
+
+
+
+
+
+At 10:46 AM -0500 11/4/06, Robert W. Hayden wrote:
+>Forwarded message: From: Bob Dobrow <rdobrow at carleton.edu>
+>>
+>>  We've taken our GUI-based SPSS lab manual and rewritten it for R. If
+>>  anyone would like to see it I can make it available. I'll probably need
+>>  to supplement it with some very basic intro tutorials or
+>>  worksheets giving basic introduction.
+>
+>I would be interested.  Could this be on the WWW?  You might be able
+>to use my handouts at
+>
+>    http://www.statland.org/R/dirlist.htm 
+>
+>
+>  _______
+>|   ^  |		   
+>|     / 		    Robert W. Hayden
+>|    |  		    in the old library
+>|    |  		    212 Main Street
+>|   /   	            P. O. Box 450
+>|  |    		  ^ North Troy, VT 05859
+>L__L			    (802) 988-2587
+>                             http://statland.org/     
+>Map of VT                   bob at statland.org
+>
+>Communications sent to Plymouth State will not reach me.
+>
+>_______________________________________________
+>R-sig-teaching at r-project.org mailing list
+>https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+-- 
+William Revelle		http://pmc.psych.northwestern.edu/revelle.html   
+Professor			http://personality-project.org/personality.html
+Department of Psychology       http://www.wcas.northwestern.edu/psych/
+Northwestern University	http://www.northwestern.edu/
+
+
+
+From yeasmin.khandakar at buseco.monash.edu.au  Mon Dec  4 02:13:46 2006
+From: yeasmin.khandakar at buseco.monash.edu.au (Yeasmin Khandakar)
+Date: Mon, 04 Dec 2006 12:13:46 +1100
+Subject: [R-sig-teaching] checking even/odd in R
+Message-ID: <4573764A.7000005@buseco.monash.edu.au>
+
+Dear all,
+
+I'm in search for a function which can be used to check whether a 
+numeriacl value (say, x) is even/odd.
+Any help is highly appreciated.
+
+Thanks
+Yeasmin
+
+From hayden at mv.mv.com  Mon Dec  4 02:24:13 2006
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Sun, 3 Dec 2006 20:24:13 -0500 (EST)
+Subject: [R-sig-teaching] checking even/odd in R
+In-Reply-To: <4573764A.7000005@buseco.monash.edu.au> from "Yeasmin Khandakar"
+	at Dec 04, 2006 12:13:46 PM
+Message-ID: <20061204012413.59973.qmail@mv.mv.com>
+
+
+I do not know of anything specific to r but standard programming
+tricks may do it.  For example, if the number is x, compute y=x/2,
+let z be y rounded to the nearest whole number, and check if y=z.  If
+it does, x is even.  There may be rounding issues; I doubt R stores
+data as integers.  You might have to do this in an environment that
+sees the numbers as integers -- or text.  AWK comes to mind.
+
+You may also want code to check for x values like 23.456. 
+
+> 
+> Dear all,
+> 
+> I'm in search for a function which can be used to check whether a 
+> numeriacl value (say, x) is even/odd.
+> Any help is highly appreciated.
+> 
+> Thanks
+> Yeasmin
+> 
+> --Boundary_(ID_5eoWS9sJoAbqcSKM1OUsmg)
+> Content-Type: text/plain; charset="us-ascii"
+> MIME-Version: 1.0
+> Content-Transfer-Encoding: 7bit
+> Content-Disposition: inline
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+> --Boundary_(ID_5eoWS9sJoAbqcSKM1OUsmg)--
+> 
+> 
+
+
+
+ _______
+|   ^  | 		    
+|     /  		    Robert W. Hayden
+|    |   		    in the old library
+|    |   		    212 Main Street
+|   /    	            P. O. Box 450
+|  |     		  ^ North Troy, VT 05859
+L__L			    (802) 988-2587
+                            http://statland.org/      
+Map of VT                   bob at statland.org
+
+Communications sent to Plymouth State will not reach me.
+
+
+
+From jfox at mcmaster.ca  Mon Dec  4 03:16:06 2006
+From: jfox at mcmaster.ca (John Fox)
+Date: Sun, 3 Dec 2006 21:16:06 -0500
+Subject: [R-sig-teaching] checking even/odd in R
+In-Reply-To: <20061204012413.59973.qmail@mv.mv.com>
+Message-ID: <20061204021604.HTZA8030.tomts22-srv.bellnexxia.net@JohnDesktop8300>
+
+Dear Robert and Yeasmin,
+
+You could test that the number mod 2 is 0; e.g.,
+
+> (1:10 %% 2) == 0
+ [1] FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE
+
+A potential problem is that testing exact equality is risky, so you're
+probably better off checking that abs(x) %% 2 is less than some very small
+number such as sqrt(.Machine$double.eps).
+
+I hope this helps,
+ John
+
+--------------------------------
+John Fox
+Department of Sociology
+McMaster University
+Hamilton, Ontario
+Canada L8S 4M4
+905-525-9140x23604
+http://socserv.mcmaster.ca/jfox 
+-------------------------------- 
+
+> -----Original Message-----
+> From: r-sig-teaching-bounces at r-project.org 
+> [mailto:r-sig-teaching-bounces at r-project.org] On Behalf Of 
+> Robert W. Hayden
+> Sent: Sunday, December 03, 2006 8:24 PM
+> To: Yeasmin Khandakar
+> Cc: R-sig-teaching
+> Subject: Re: [R-sig-teaching] checking even/odd in R
+> 
+> 
+> I do not know of anything specific to r but standard 
+> programming tricks may do it.  For example, if the number is 
+> x, compute y=x/2, let z be y rounded to the nearest whole 
+> number, and check if y=z.  If it does, x is even.  There may 
+> be rounding issues; I doubt R stores data as integers.  You 
+> might have to do this in an environment that sees the numbers 
+> as integers -- or text.  AWK comes to mind.
+> 
+> You may also want code to check for x values like 23.456. 
+> 
+> > 
+> > Dear all,
+> > 
+> > I'm in search for a function which can be used to check whether a 
+> > numeriacl value (say, x) is even/odd.
+> > Any help is highly appreciated.
+> > 
+> > Thanks
+> > Yeasmin
+> > 
+> > --Boundary_(ID_5eoWS9sJoAbqcSKM1OUsmg)
+> > Content-Type: text/plain; charset="us-ascii"
+> > MIME-Version: 1.0
+> > Content-Transfer-Encoding: 7bit
+> > Content-Disposition: inline
+> > 
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list 
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> > 
+> > --Boundary_(ID_5eoWS9sJoAbqcSKM1OUsmg)--
+> > 
+> > 
+> 
+> 
+> 
+>  _______
+> |   ^  | 		    
+> |     /  		    Robert W. Hayden
+> |    |   		    in the old library
+> |    |   		    212 Main Street
+> |   /    	            P. O. Box 450
+> |  |     		  ^ North Troy, VT 05859
+> L__L			    (802) 988-2587
+>                             http://statland.org/      
+> Map of VT                   bob at statland.org
+> 
+> Communications sent to Plymouth State will not reach me.
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list 
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+From jones at reed.edu  Mon Dec  4 03:42:01 2006
+From: jones at reed.edu (Albyn Jones)
+Date: Sun, 03 Dec 2006 18:42:01 -0800
+Subject: [R-sig-teaching] checking even/odd in R
+In-Reply-To: <20061204021604.HTZA8030.tomts22-srv.bellnexxia.net@JohnDesktop8300>
+References: <20061204021604.HTZA8030.tomts22-srv.bellnexxia.net@JohnDesktop8300>
+Message-ID: <20061203184201.q34sk1smn8ckkscs@webmail.reed.edu>
+
+One solution for the exact equality problem is to start by rounding or
+truncating to an integer, depending of course on what the origin of the 
+dataset
+was, and the point of the operation.  The sign doesn't matter;
+
+> -3 %% 2
+[1] 1
+
+
+floor(x) rounds down to an integer
+ceiling(x) rounds up
+round(x) rounds to the nearest integer, rounding to an even integer
+         in case of ties
+
+albyn
+
+Quoting John Fox <jfox at mcmaster.ca>:
+
+> Dear Robert and Yeasmin,
+>
+> You could test that the number mod 2 is 0; e.g.,
+>
+>> (1:10 %% 2) == 0
+> [1] FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE
+>
+> A potential problem is that testing exact equality is risky, so you're
+> probably better off checking that abs(x) %% 2 is less than some very small
+> number such as sqrt(.Machine$double.eps).
+>
+> I hope this helps,
+> John
+>
+> --------------------------------
+> John Fox
+> Department of Sociology
+> McMaster University
+> Hamilton, Ontario
+> Canada L8S 4M4
+> 905-525-9140x23604
+> http://socserv.mcmaster.ca/jfox
+> --------------------------------
+>
+>> -----Original Message-----
+>> From: r-sig-teaching-bounces at r-project.org
+>> [mailto:r-sig-teaching-bounces at r-project.org] On Behalf Of
+>> Robert W. Hayden
+>> Sent: Sunday, December 03, 2006 8:24 PM
+>> To: Yeasmin Khandakar
+>> Cc: R-sig-teaching
+>> Subject: Re: [R-sig-teaching] checking even/odd in R
+>>
+>>
+>> I do not know of anything specific to r but standard
+>> programming tricks may do it.  For example, if the number is
+>> x, compute y=x/2, let z be y rounded to the nearest whole
+>> number, and check if y=z.  If it does, x is even.  There may
+>> be rounding issues; I doubt R stores data as integers.  You
+>> might have to do this in an environment that sees the numbers
+>> as integers -- or text.  AWK comes to mind.
+>>
+>> You may also want code to check for x values like 23.456.
+>>
+>> >
+>> > Dear all,
+>> >
+>> > I'm in search for a function which can be used to check whether a
+>> > numeriacl value (say, x) is even/odd.
+>> > Any help is highly appreciated.
+>> >
+>> > Thanks
+>> > Yeasmin
+>> >
+>> > --Boundary_(ID_5eoWS9sJoAbqcSKM1OUsmg)
+>> > Content-Type: text/plain; charset="us-ascii"
+>> > MIME-Version: 1.0
+>> > Content-Transfer-Encoding: 7bit
+>> > Content-Disposition: inline
+>> >
+>> > _______________________________________________
+>> > R-sig-teaching at r-project.org mailing list
+>> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>> >
+>> > --Boundary_(ID_5eoWS9sJoAbqcSKM1OUsmg)--
+>> >
+>> >
+>>
+>>
+>>
+>>  _______
+>> |   ^  |
+>> |     /  		    Robert W. Hayden
+>> |    |   		    in the old library
+>> |    |   		    212 Main Street
+>> |   /    	            P. O. Box 450
+>> |  |     		  ^ North Troy, VT 05859
+>> L__L			    (802) 988-2587
+>>                             http://statland.org/
+>> Map of VT                   bob at statland.org
+>>
+>> Communications sent to Plymouth State will not reach me.
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+From jfox at mcmaster.ca  Mon Dec  4 14:29:33 2006
+From: jfox at mcmaster.ca (John Fox)
+Date: Mon, 4 Dec 2006 08:29:33 -0500
+Subject: [R-sig-teaching] checking even/odd in R
+In-Reply-To: <20061203184201.q34sk1smn8ckkscs@webmail.reed.edu>
+Message-ID: <20061204132930.KCYG8030.tomts22-srv.bellnexxia.net@JohnDesktop8300>
+
+Dear Albyn,
+
+I thought about rounding but was concerned that the arithmetic would still
+be performed on real numbers. This is true even if the left argument to %%
+is coerced to an integer. (round itself produces a double-precision floating
+point number, not an integer.) I'm not sure whether this is a realistic
+worry.
+
+Regards,
+ John
+
+--------------------------------
+John Fox
+Department of Sociology
+McMaster University
+Hamilton, Ontario
+Canada L8S 4M4
+905-525-9140x23604
+http://socserv.mcmaster.ca/jfox 
+-------------------------------- 
+
+> -----Original Message-----
+> From: Albyn Jones [mailto:jones at reed.edu] 
+> Sent: Sunday, December 03, 2006 9:42 PM
+> To: John Fox
+> Cc: bob at statland.org; 'Yeasmin Khandakar'; 'R-sig-teaching'
+> Subject: Re: [R-sig-teaching] checking even/odd in R
+> 
+> One solution for the exact equality problem is to start by 
+> rounding or truncating to an integer, depending of course on 
+> what the origin of the dataset was, and the point of the 
+> operation.  The sign doesn't matter;
+> 
+> > -3 %% 2
+> [1] 1
+> 
+> 
+> floor(x) rounds down to an integer
+> ceiling(x) rounds up
+> round(x) rounds to the nearest integer, rounding to an even integer
+>          in case of ties
+> 
+> albyn
+> 
+> Quoting John Fox <jfox at mcmaster.ca>:
+> 
+> > Dear Robert and Yeasmin,
+> >
+> > You could test that the number mod 2 is 0; e.g.,
+> >
+> >> (1:10 %% 2) == 0
+> > [1] FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE
+> >
+> > A potential problem is that testing exact equality is 
+> risky, so you're 
+> > probably better off checking that abs(x) %% 2 is less than 
+> some very 
+> > small number such as sqrt(.Machine$double.eps).
+> >
+> > I hope this helps,
+> > John
+> >
+> > --------------------------------
+> > John Fox
+> > Department of Sociology
+> > McMaster University
+> > Hamilton, Ontario
+> > Canada L8S 4M4
+> > 905-525-9140x23604
+> > http://socserv.mcmaster.ca/jfox
+> > --------------------------------
+> >
+> >> -----Original Message-----
+> >> From: r-sig-teaching-bounces at r-project.org
+> >> [mailto:r-sig-teaching-bounces at r-project.org] On Behalf Of 
+> Robert W. 
+> >> Hayden
+> >> Sent: Sunday, December 03, 2006 8:24 PM
+> >> To: Yeasmin Khandakar
+> >> Cc: R-sig-teaching
+> >> Subject: Re: [R-sig-teaching] checking even/odd in R
+> >>
+> >>
+> >> I do not know of anything specific to r but standard programming 
+> >> tricks may do it.  For example, if the number is x, compute y=x/2, 
+> >> let z be y rounded to the nearest whole number, and check 
+> if y=z.  If 
+> >> it does, x is even.  There may be rounding issues; I doubt 
+> R stores 
+> >> data as integers.  You might have to do this in an 
+> environment that 
+> >> sees the numbers as integers -- or text.  AWK comes to mind.
+> >>
+> >> You may also want code to check for x values like 23.456.
+> >>
+> >> >
+> >> > Dear all,
+> >> >
+> >> > I'm in search for a function which can be used to check 
+> whether a 
+> >> > numeriacl value (say, x) is even/odd.
+> >> > Any help is highly appreciated.
+> >> >
+> >> > Thanks
+> >> > Yeasmin
+> >> >
+> >> > --Boundary_(ID_5eoWS9sJoAbqcSKM1OUsmg)
+> >> > Content-Type: text/plain; charset="us-ascii"
+> >> > MIME-Version: 1.0
+> >> > Content-Transfer-Encoding: 7bit
+> >> > Content-Disposition: inline
+> >> >
+> >> > _______________________________________________
+> >> > R-sig-teaching at r-project.org mailing list 
+> >> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >> >
+> >> > --Boundary_(ID_5eoWS9sJoAbqcSKM1OUsmg)--
+> >> >
+> >> >
+> >>
+> >>
+> >>
+> >>  _______
+> >> |   ^  |
+> >> |     /  		    Robert W. Hayden
+> >> |    |   		    in the old library
+> >> |    |   		    212 Main Street
+> >> |   /    	            P. O. Box 450
+> >> |  |     		  ^ North Troy, VT 05859
+> >> L__L			    (802) 988-2587
+> >>                             http://statland.org/
+> >> Map of VT                   bob at statland.org
+> >>
+> >> Communications sent to Plymouth State will not reach me.
+> >>
+> >> _______________________________________________
+> >> R-sig-teaching at r-project.org mailing list 
+> >> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list 
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >
+> 
+> 
+> 
+>
+
+
+
+From jones at reed.edu  Mon Dec  4 18:43:30 2006
+From: jones at reed.edu (Albyn Jones)
+Date: Mon, 04 Dec 2006 09:43:30 -0800
+Subject: [R-sig-teaching] checking even/odd in R
+In-Reply-To: <20061204132930.KCYG8030.tomts22-srv.bellnexxia.net@JohnDesktop8300>
+References: <20061204132930.KCYG8030.tomts22-srv.bellnexxia.net@JohnDesktop8300>
+Message-ID: <20061204094330.1sr7lfoonv8cw8o8@webmail.reed.edu>
+
+Quoting John Fox <jfox at mcmaster.ca>:
+
+> Dear Albyn,
+>
+> I thought about rounding but was concerned that the arithmetic would still
+> be performed on real numbers. This is true even if the left argument to %%
+> is coerced to an integer. (round itself produces a double-precision floating
+> point number, not an integer.) I'm not sure whether this is a realistic
+> worry.
+>
+> Regards,
+> John
+
+It is easy to test.
+
+> pi
+[1] 3.141593
+> pi %% 2
+[1] 1.141593
+> trunc(pi) %% 2
+[1] 1
+> round(pi) %% 2
+[1] 1
+> is.integer(round(pi) %% 2)
+[1] FALSE
+> round(pi) %% 2 == 1
+[1] TRUE
+
+You are indeed correct; round() yields a double rather than an integer.
+However, %% seems to do the right thing anyway, and the equality test 
+works....
+
+I expect that for a sufficiently large double, finite precision will 
+eventually
+force it to be even even :-)  but that's pretty big.
+
+> (2^65-1) %% 2
+[1] 0
+Warning message:
+probable complete loss of accuracy in modulus
+
+it loooks like somebody thought of this problem already!
+
+albyn
+
+
+

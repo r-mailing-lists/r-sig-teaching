@@ -1,0 +1,97 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2007-02",
+  "messages": [
+    {
+      "id": "msg-ac8f04647194",
+      "message_id": "<20070209175016.46275.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2007-02-09T12:50:16-05:00",
+      "subject": "[R-sig-teaching] Rcmdr",
+      "subject_clean": "Rcmdr",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I am finding many but not all menu choices greyed out in Rcmdr --\ntwo-sample t-test for independent samples, for example.  I can do the\ntest from the command line but do not understand why I can't do it\nfrom the menu.\n\n _______\n|   ^  | \t\t    \n|     /  \t\t    Robert W. Hayden\n|    |   \t\t    in the old library\n|    |   \t\t    212 Main Street\n|   /    \t            P. O. Box 450\n|  |     \t\t  ^ North Troy, VT 05859\nL__L\t\t\t    (802) 988-2587\n                            http://statland.org/      \nMap of VT                   bob at statland.org\n\nCommunications sent to Plymouth State will not reach me.",
+      "body_snippet": "I am finding many but not all menu choices greyed out in Rcmdr --\ntwo-sample t-test for independent samples, for example.  I can do the\ntest from the command line but do not understand why I can't do ",
+      "thread_id": "thread-ac8f04647194",
+      "thread_depth": 0,
+      "month": "2007-02"
+    },
+    {
+      "id": "msg-99e722d2fc3c",
+      "message_id": "<web-161573863@cgpsrv2.cis.mcmaster.ca>",
+      "from_name": "John Fox",
+      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
+      "date": "2007-02-09T20:27:01-05:00",
+      "subject": "[R-sig-teaching] Rcmdr",
+      "subject_clean": "Rcmdr",
+      "in_reply_to": "<20070209175016.46275.qmail@mv.mv.com>",
+      "references": [],
+      "body_plain": "Dear Robert,\n\nThe Rcmdr only activates menu items that are applicable to the current\ndata set. In the case of a two-sample t-test, the data set must include\nat least one two-level factor and one numeric variable. Does that\nexplain the behaviour you noted?\n\nI hope this helps,\n John\n\nOn Fri, 9 Feb 2007 12:50:16 -0500 (EST)\n \"Robert W. Hayden\" <hayden at mv.mv.com> wrote:\n> I am finding many but not all menu choices greyed out in Rcmdr --\n> two-sample t-test for independent samples, for example.  I can do the\n> test from the command line but do not understand why I can't do it\n> from the menu.\n> \n>  _______\n> |   ^  | \t\t    \n> |     /  \t\t    Robert W. Hayden\n> |    |   \t\t    in the old library\n> |    |   \t\t    212 Main Street\n> |   /    \t            P. O. Box 450\n> |  |     \t\t  ^ North Troy, VT 05859\n> L__L\t\t\t    (802) 988-2587\n>                             http://statland.org/      \n> Map of VT                   bob at statland.org\n> \n> Communications sent to Plymouth State will not reach me.\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n--------------------------------\nJohn Fox\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario, Canada\nhttp://socserv.mcmaster.ca/jfox/",
+      "body_snippet": "Dear Robert,\n\nThe Rcmdr only activates menu items that are applicable to the current\ndata set. In the case of a two-sample t-test, the data set must include\nat least one two-level factor and one numer",
+      "thread_id": "thread-ac8f04647194",
+      "thread_depth": 1,
+      "month": "2007-02"
+    },
+    {
+      "id": "msg-16070f033ef3",
+      "message_id": "<20070210014949.3096.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2007-02-09T20:49:49-05:00",
+      "subject": "[R-sig-teaching] Rcmdr",
+      "subject_clean": "Rcmdr",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Thanks.  I guess what was missing was an indication of how Rcmdr\nwanted the data laid out.  Mine was in two columns, and R is perfectly\nhappy with this if I do \"t.test(col1,col2)\" so the test is certainly\n\"applicable to the...data\".  The catch in Rcmdr is that, because the\nmenu item is greyed out, you can't get to the dialog box that asks for\ndata in the format you mentioned, so you can't tell that Rcmdr is\nfussier than R.  This should not be a problem as long as I include it\nin the documentation for my students.\n\nPS\n\nI share your preference for how the data SHOULD be laid out, but that\nwas not how the data I had was laid out, and I had no trouble with it\nin R and was curious that I could not reproduce my analysis in Rcmdr.\nThanks again for your explanation.\n\nForwarded message:  From: \"John Fox\" <jfox at mcmaster.ca>\n> \n> Dear Robert,\n> \n> The Rcmdr only activates menu items that are applicable to the current\n> data set. In the case of a two-sample t-test, the data set must include\n> at least one two-level factor and one numeric variable. Does that\n> explain the behaviour you noted?\n> \n> I hope this helps,\n>  John\n\n\n\n _______\n|   ^  | \t\t    \n|     /  \t\t    Robert W. Hayden\n|    |   \t\t    in the old library\n|    |   \t\t    212 Main Street\n|   /    \t            P. O. Box 450\n|  |     \t\t  ^ North Troy, VT 05859\nL__L\t\t\t    (802) 988-2587\n                            http://statland.org/      \nMap of VT                   bob at statland.org\n\nCommunications sent to Plymouth State will not reach me.",
+      "body_snippet": "Thanks.  I guess what was missing was an indication of how Rcmdr\nwanted the data laid out.  Mine was in two columns, and R is perfectly\nhappy with this if I do \"t.test(col1,col2)\" so the test is certa",
+      "thread_id": "thread-16070f033ef3",
+      "thread_depth": 0,
+      "month": "2007-02"
+    },
+    {
+      "id": "msg-aac7c85d14e6",
+      "message_id": "<web-161576872@cgpsrv2.cis.mcmaster.ca>",
+      "from_name": "John Fox",
+      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
+      "date": "2007-02-09T21:08:47-05:00",
+      "subject": "[R-sig-teaching] Rcmdr",
+      "subject_clean": "Rcmdr",
+      "in_reply_to": "<20070210014949.3096.qmail@mv.mv.com>",
+      "references": [],
+      "body_plain": "Dear Robert,\n\nOK -- I see the problem. As a general matter, the Rcmdr is structured\naround rectangular data sets. This format of the input for t.test()\nonly works with a rectangular data set if both groups have the same\nnumber of observations.\n\nRegards,\n John\n\nOn Fri, 9 Feb 2007 20:49:49 -0500 (EST)\n \"Robert W. Hayden\" <hayden at mv.mv.com> wrote:\n> \n> Thanks.  I guess what was missing was an indication of how Rcmdr\n> wanted the data laid out.  Mine was in two columns, and R is\n> perfectly\n> happy with this if I do \"t.test(col1,col2)\" so the test is certainly\n> \"applicable to the...data\".  The catch in Rcmdr is that, because the\n> menu item is greyed out, you can't get to the dialog box that asks\n> for\n> data in the format you mentioned, so you can't tell that Rcmdr is\n> fussier than R.  This should not be a problem as long as I include it\n> in the documentation for my students.\n> \n> PS\n> \n> I share your preference for how the data SHOULD be laid out, but that\n> was not how the data I had was laid out, and I had no trouble with it\n> in R and was curious that I could not reproduce my analysis in Rcmdr.\n> Thanks again for your explanation.\n> \n> Forwarded message:  From: \"John Fox\" <jfox at mcmaster.ca>\n> > \n> > Dear Robert,\n> > \n> > The Rcmdr only activates menu items that are applicable to the\n> current\n> > data set. In the case of a two-sample t-test, the data set must\n> include\n> > at least one two-level factor and one numeric variable. Does that\n> > explain the behaviour you noted?\n> > \n> > I hope this helps,\n> >  John\n> \n> \n> \n>  _______\n> |   ^  | \t\t    \n> |     /  \t\t    Robert W. Hayden\n> |    |   \t\t    in the old library\n> |    |   \t\t    212 Main Street\n> |   /    \t            P. O. Box 450\n> |  |     \t\t  ^ North Troy, VT 05859\n> L__L\t\t\t    (802) 988-2587\n>                             http://statland.org/      \n> Map of VT                   bob at statland.org\n> \n> Communications sent to Plymouth State will not reach me.\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n--------------------------------\nJohn Fox\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario, Canada\nhttp://socserv.mcmaster.ca/jfox/",
+      "body_snippet": "Dear Robert,\n\nOK -- I see the problem. As a general matter, the Rcmdr is structured\naround rectangular data sets. This format of the input for t.test()\nonly works with a rectangular data set if both g",
+      "thread_id": "thread-16070f033ef3",
+      "thread_depth": 1,
+      "month": "2007-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-ac8f04647194",
+      "subject": "Rcmdr",
+      "message_count": 2,
+      "participants": [
+        "John Fox",
+        "Robert W. Hayden"
+      ],
+      "started": "2007-02-09T12:50:16-05:00",
+      "last_reply": "2007-02-09T20:27:01-05:00",
+      "root_message_id": "msg-ac8f04647194"
+    },
+    {
+      "id": "thread-16070f033ef3",
+      "subject": "Rcmdr",
+      "message_count": 2,
+      "participants": [
+        "John Fox",
+        "Robert W. Hayden"
+      ],
+      "started": "2007-02-09T20:49:49-05:00",
+      "last_reply": "2007-02-09T21:08:47-05:00",
+      "root_message_id": "msg-16070f033ef3"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2007-09",
+  "messages": [
+    {
+      "id": "msg-1433c534ae19",
+      "message_id": "<46F0ED24.9040408@gmx.de>",
+      "from_name": "Robert Glaß",
+      "from_email_hash": "c0441bd25f0ff1a8e179cbdd22118b18b3c1999b43165fd65a4e9323050c9bd4",
+      "date": "2007-09-19T11:34:28+02:00",
+      "subject": "[R-sig-teaching] multinomial logit models",
+      "subject_clean": "multinomial logit models",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R community,\n\nIs anybody aware of how to do diagnostics for multinomial logit models?\nIn the binomial case (for GLM's), I have already used the functions \nprovided by J. Fox in his car package.\nI estimate my model with multinom (nnet).\nNow I would like to do an analysis of the residuals, influence measures, \nnonlinearity and collinearity among the predictors.\nHow is generally controlled for the results in MNL using R?\nThank you very much in advance\n\nBest regards,\n\nRobert Glass",
+      "body_snippet": "Dear R community,\n\nIs anybody aware of how to do diagnostics for multinomial logit models?\nIn the binomial case (for GLM's), I have already used the functions \nprovided by J. Fox in his car package.\nI",
+      "thread_id": "thread-1433c534ae19",
+      "thread_depth": 0,
+      "month": "2007-09"
+    },
+    {
+      "id": "msg-a4d157264a16",
+      "message_id": "<20070919150455.31200.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2007-09-19T11:04:55-04:00",
+      "subject": "[R-sig-teaching]  multinomial logit models (fwd)",
+      "subject_clean": "multinomial logit models (fwd)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dunno but this list is for people using R to teach INTRODUCTORY\nstatistics courses.  There are other lists more appropraite for a\nquestion at this level.\n\n(Sorry for a second irrelevant message to the list.  I tried\nunsuccessfully to respond privately.)  \n\nForwarded message:\n> \n> Dear R community,\n> \n> Is anybody aware of how to do diagnostics for multinomial logit models?\n> In the binomial case (for GLM's), I have already used the functions \n> provided by J. Fox in his car package.\n> I estimate my model with multinom (nnet).\n> Now I would like to do an analysis of the residuals, influence measures, \n> nonlinearity and collinearity among the predictors.\n> How is generally controlled for the results in MNL using R?\n> Thank you very much in advance\n> \n> Best regards,\n> \n> Robert Glass\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n\n\n\n _______\n|   ^  | \t\t    \n|     /  \t\t    Robert W. Hayden\n|    |   \t\t    in the old library\n|    |   \t\t    212 Main Street\n|   /    \t            P. O. Box 450\n|  |     \t\t  ^ North Troy, VT 05859\nL__L\t\t\t    (802) 988-2587\n                            http://statland.org/      \nMap of VT                   bob at statland.org\n\nCommunications sent to Plymouth State will not reach me.",
+      "body_snippet": "Dunno but this list is for people using R to teach INTRODUCTORY\nstatistics courses.  There are other lists more appropraite for a\nquestion at this level.\n\n(Sorry for a second irrelevant message to the",
+      "thread_id": "thread-a4d157264a16",
+      "thread_depth": 0,
+      "month": "2007-09"
+    },
+    {
+      "id": "msg-3645f11307d7",
+      "message_id": "<20070919150840.33177.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2007-09-19T11:08:40-04:00",
+      "subject": "[R-sig-teaching] S-Plus?",
+      "subject_clean": "S-Plus?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Not meaning to start a religious war but what are people's feelings\nabout using S-Plus with beginners?  I see it as a possible alternative\nto one of the GUI interfaces for R.  It might be easy for beginners,\nbut helps one learn the S language.  After the class is over they\ncould buy S-Plus or use R.  (Yes, I know the student version of S-Plus\nis not as easy to access as the free R GUIs.)\n\n _______\n|   ^  | \t\t    \n|     /  \t\t    Robert W. Hayden\n|    |   \t\t    in the old library\n|    |   \t\t    212 Main Street\n|   /    \t            P. O. Box 450\n|  |     \t\t  ^ North Troy, VT 05859\nL__L\t\t\t    (802) 988-2587\n                            http://statland.org/      \nMap of VT                   bob at statland.org\n\nCommunications sent to Plymouth State will not reach me.",
+      "body_snippet": "Not meaning to start a religious war but what are people's feelings\nabout using S-Plus with beginners?  I see it as a possible alternative\nto one of the GUI interfaces for R.  It might be easy for beg",
+      "thread_id": "thread-3645f11307d7",
+      "thread_depth": 0,
+      "month": "2007-09"
+    },
+    {
+      "id": "msg-c5b6dfa543d8",
+      "message_id": "<20070919164057.GC17838@laplace.reed.edu>",
+      "from_name": "Albyn Jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2007-09-19T09:40:57-07:00",
+      "subject": "[R-sig-teaching] S-Plus?",
+      "subject_clean": "S-Plus?",
+      "in_reply_to": "<20070919150840.33177.qmail@mv.mv.com>",
+      "references": [
+        "<20070919150840.33177.qmail@mv.mv.com>"
+      ],
+      "body_plain": "I am not familiar with any user interfaces for S-Plus.  I looked at the\ninsightful website and noted the existence of a student version, but\nit appears to be limited to Windows.  That would rule it out for me.\n\nI use R in intro courses, without any GUI.\n\nalbyn\n\nOn Wed, Sep 19, 2007 at 11:08:40AM -0400, Robert W. Hayden wrote:\n> Not meaning to start a religious war but what are people's feelings\n> about using S-Plus with beginners?  I see it as a possible alternative\n> to one of the GUI interfaces for R.  It might be easy for beginners,\n> but helps one learn the S language.  After the class is over they\n> could buy S-Plus or use R.  (Yes, I know the student version of S-Plus\n> is not as easy to access as the free R GUIs.)\n> \n>  _______\n> |   ^  | \t\t    \n> |     /  \t\t    Robert W. Hayden\n> |    |   \t\t    in the old library\n> |    |   \t\t    212 Main Street\n> |   /    \t            P. O. Box 450\n> |  |     \t\t  ^ North Troy, VT 05859\n> L__L\t\t\t    (802) 988-2587\n>                             http://statland.org/      \n> Map of VT                   bob at statland.org\n> \n> Communications sent to Plymouth State will not reach me.\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_snippet": "I am not familiar with any user interfaces for S-Plus.  I looked at the\ninsightful website and noted the existence of a student version, but\nit appears to be limited to Windows.  That would rule it ou",
+      "thread_id": "thread-3645f11307d7",
+      "thread_depth": 1,
+      "month": "2007-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-a4d157264a16",
+      "subject": "multinomial logit models (fwd)",
+      "message_count": 1,
+      "participants": [
+        "Robert W. Hayden"
+      ],
+      "started": "2007-09-19T11:04:55-04:00",
+      "last_reply": "2007-09-19T11:04:55-04:00",
+      "root_message_id": "msg-a4d157264a16"
+    },
+    {
+      "id": "thread-3645f11307d7",
+      "subject": "S-Plus?",
+      "message_count": 2,
+      "participants": [
+        "Albyn Jones",
+        "Robert W. Hayden"
+      ],
+      "started": "2007-09-19T11:08:40-04:00",
+      "last_reply": "2007-09-19T09:40:57-07:00",
+      "root_message_id": "msg-3645f11307d7"
+    },
+    {
+      "id": "thread-1433c534ae19",
+      "subject": "multinomial logit models",
+      "message_count": 1,
+      "participants": [
+        "Robert Glaß"
+      ],
+      "started": "2007-09-19T11:34:28+02:00",
+      "last_reply": "2007-09-19T11:34:28+02:00",
+      "root_message_id": "msg-1433c534ae19"
+    }
+  ]
+}

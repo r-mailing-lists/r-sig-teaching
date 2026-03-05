@@ -1,0 +1,158 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2007-11",
+  "messages": [
+    {
+      "id": "msg-b52983a72250",
+      "message_id": "<1193940958.9052.10.camel@izahn-desktop>",
+      "from_name": "Ista Zahn",
+      "from_email_hash": "098a31f0cc45d6b90198bf3b75e03deed7c570292be352a10b98aeee4bf7012e",
+      "date": "2007-11-01T14:15:57-04:00",
+      "subject": "[R-sig-teaching] Free textbook",
+      "subject_clean": "Free textbook",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\nSometime ago I found an online (pdf) text about introductory statistics,\nwhich focused on simulations and examples. It was a fairly complete\ntextbook, but was free to download and use. I wanted to use the text as\na in a course I'm planing on teaching this summer. Unfortunately my\ncomputer was recently stolen, and I didn't have a backup of the pdf. I\nknow this isn't a very detailed description, but does this ring a bell\nfor anyone?\n\nThanks,\nIsta",
+      "body_snippet": "Hi,\nSometime ago I found an online (pdf) text about introductory statistics,\nwhich focused on simulations and examples. It was a fairly complete\ntextbook, but was free to download and use. I wanted to",
+      "thread_id": "thread-b52983a72250",
+      "thread_depth": 0,
+      "month": "2007-11"
+    },
+    {
+      "id": "msg-80df2990afe0",
+      "message_id": "<D8DD9F04-618C-4F20-AFF0-7513DFE4E717@ohsu.edu>",
+      "from_name": "Kyle.",
+      "from_email_hash": "51508c4f4a28964667ef732adc2cc07973ac3976dbbd195533384280a79d03de",
+      "date": "2007-11-01T11:41:26-07:00",
+      "subject": "[R-sig-teaching] Free textbook",
+      "subject_clean": "Free textbook",
+      "in_reply_to": "<1193940958.9052.10.camel@izahn-desktop>",
+      "references": [
+        "<1193940958.9052.10.camel@izahn-desktop>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20071101/6a4440f8/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20071101/6a4440f8/attachment.pl>",
+      "thread_id": "thread-b52983a72250",
+      "thread_depth": 1,
+      "month": "2007-11"
+    },
+    {
+      "id": "msg-6ee836e32511",
+      "message_id": "<1193944548.9052.18.camel@izahn-desktop>",
+      "from_name": "Ista Zahn",
+      "from_email_hash": "098a31f0cc45d6b90198bf3b75e03deed7c570292be352a10b98aeee4bf7012e",
+      "date": "2007-11-01T15:15:48-04:00",
+      "subject": "[R-sig-teaching] Free textbook",
+      "subject_clean": "Free textbook",
+      "in_reply_to": "<D8DD9F04-618C-4F20-AFF0-7513DFE4E717@ohsu.edu>",
+      "references": [
+        "<1193940958.9052.10.camel@izahn-desktop>",
+        "<D8DD9F04-618C-4F20-AFF0-7513DFE4E717@ohsu.edu>"
+      ],
+      "body_plain": "Thanks for the link to Bolker's book! It looks very interesting. The one\nI had in mind was \"The foundations of statistics: A simulation-based\napproach\" by Shravan Vasishth, available here:\nhttp://www.ling.uni-potsdam.de/~vasishth/SFLS.html\nWhat I really like about Vasishth's work is the relatively informal and\nstraightforward style, which I think will be appealing to my students.\nBolker's text looks like something I would want to read, but I'm not\nsure my students are ready for it.\n\nThanks again,\nIsta\nOn Thu, 2007-11-01 at 11:41 -0700, Kyle. wrote:\n> Was it Ben Bolker's book \"Ecological Models and Data in R\"?  He has it\n> available for free on his website\n> [ http://www.zoo.ufl.edu/bolker/emdbook/index.html ] while he's in the\n> progress of finishing it.  It's a fantastic reference, and I highly\n> recommend it.  Sorry about your computer!\n> \n> \n> \n> \n> Kyle H. Ambert\n> Graduate Student, Dept. Behavioral Neuroscience\n> Oregon Health & Science University\n> ambertk at ohsu.edu\n> \n> \n> \n> On Nov 1, 2007, at 11:15 AM, Ista Zahn wrote:\n> \n> > Hi,\n> > Sometime ago I found an online (pdf) text about introductory\n> > statistics,\n> > which focused on simulations and examples. It was a fairly complete\n> > textbook, but was free to download and use. I wanted to use the text\n> > as\n> > a in a course I'm planing on teaching this summer. Unfortunately my\n> > computer was recently stolen, and I didn't have a backup of the pdf.\n> > I\n> > know this isn't a very detailed description, but does this ring a\n> > bell\n> > for anyone?\n> > \n> > \n> > Thanks,\n> > Ista\n> > \n> > \n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> > \n> > \n> \n>",
+      "body_snippet": "Thanks for the link to Bolker's book! It looks very interesting. The one\nI had in mind was \"The foundations of statistics: A simulation-based\napproach\" by Shravan Vasishth, available here:\nhttp://www.",
+      "thread_id": "thread-b52983a72250",
+      "thread_depth": 2,
+      "month": "2007-11"
+    },
+    {
+      "id": "msg-4ce1d2117dfa",
+      "message_id": "<191577b80711060035r1766530dk2bc9ecdc3981334d@mail.gmail.com>",
+      "from_name": "Antonio P. Ramos",
+      "from_email_hash": "e95bafded85d24babdc99d611a276bf89a00bac76499acc1f1f445f966b0e617",
+      "date": "2007-11-06T04:35:32-04:00",
+      "subject": "[R-sig-teaching] R code to perform OLS by hand",
+      "subject_clean": "R code to perform OLS by hand",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20071106/ea263476/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20071106/ea263476/attachment.pl>",
+      "thread_id": "thread-4ce1d2117dfa",
+      "thread_depth": 0,
+      "month": "2007-11"
+    },
+    {
+      "id": "msg-a1efc170058e",
+      "message_id": "<666529580711060206i73552736ud10a2b3ec19cfc08@mail.gmail.com>",
+      "from_name": "Germano Rossi",
+      "from_email_hash": "700aaf0c5e54c3d8b1693c9e1a442a096c259f969677c113943b1569773d2cad",
+      "date": "2007-11-06T11:06:28+01:00",
+      "subject": "[R-sig-teaching] R code to perform OLS by hand",
+      "subject_clean": "R code to perform OLS by hand",
+      "in_reply_to": "<191577b80711060035r1766530dk2bc9ecdc3981334d@mail.gmail.com>",
+      "references": [
+        "<191577b80711060035r1766530dk2bc9ecdc3981334d@mail.gmail.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20071106/48270b70/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20071106/48270b70/attachment.pl>",
+      "thread_id": "thread-4ce1d2117dfa",
+      "thread_depth": 1,
+      "month": "2007-11"
+    },
+    {
+      "id": "msg-b4f126937385",
+      "message_id": "<40e66e0b0711060629v76888873x75f89de5bc593beb@mail.gmail.com>",
+      "from_name": "Douglas Bates",
+      "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
+      "date": "2007-11-06T08:29:21-06:00",
+      "subject": "[R-sig-teaching] R code to perform OLS by hand",
+      "subject_clean": "R code to perform OLS by hand",
+      "in_reply_to": "<191577b80711060035r1766530dk2bc9ecdc3981334d@mail.gmail.com>",
+      "references": [
+        "<191577b80711060035r1766530dk2bc9ecdc3981334d@mail.gmail.com>"
+      ],
+      "body_plain": "On 11/6/07, Antonio P. Ramos <ramos.grad.student at gmail.com> wrote:\n> Hi all.\n\n> Does anyone have a \"smart\" code for performing bi and mult-ivariable\n> regression in R by hand? This is suppose to help students without a sound\n> knowledge of R to understand what the computer is doing when we write\n> lm(x~y).\n\nWhy not approach the explanation the other way and describe what R did\nto get the results?  There are many extractor functions that can be\nused to \"deconstruct\" a fitted model.  You can use these to show\nexactly what calculations were performed to fit the model.\n\nRunning\n\nexample(trees)\n\nprovides several plots of the data on the volume of timber in a sample\nof 31 felled black cherry trees as a function of the girth (the\ncircumference of the tree at a specified distance from the ground) and\nthe overall height of the tree.  It also provides two fitted models,\nfm1 and fm2.  Try some of the following\n\nformula(fm1)\nmodel.matrix(fm1)\nmodel.frame(fm1)\nmodel.response(model.frame(fm1))\nfitted(fm1)\nresid(fm1)\nall.equal(model.response(model.frame(fm1) - fitted(fm1), resid(fm1))\ncoef(fm1)\n\nI personally am loathe to present the famous formula\n$\\hat{\\beta}=(X'X)^{-1}X'y$ because I know that the calculation is\nnever done that way.  However, I do want to show an equivalent\nrelationship, that the residual at the parameter estimates is\northogonal to the columns of the model matrix.  That is,\n\nt(model.matrix(fm1)) %*% resid(fm1)\n\nshould be very close to zero.\n\nRepeat this for fm2.",
+      "body_snippet": "On 11/6/07, Antonio P. Ramos <ramos.grad.student at gmail.com> wrote:\n> Hi all.\n\n> Does anyone have a \"smart\" code for performing bi and mult-ivariable\n> regression in R by hand? This is suppose to he",
+      "thread_id": "thread-4ce1d2117dfa",
+      "thread_depth": 1,
+      "month": "2007-11"
+    },
+    {
+      "id": "msg-5a653ff3f866",
+      "message_id": "<47307ABC.9070006@pdx.edu>",
+      "from_name": "Christian A. Parker",
+      "from_email_hash": "2027c0f71786e7cc3b3177f36c97181dd7990668efc9f7519b8ff86ce3eed8da",
+      "date": "2007-11-06T06:31:24-08:00",
+      "subject": "[R-sig-teaching] R code to perform OLS by hand",
+      "subject_clean": "R code to perform OLS by hand",
+      "in_reply_to": "<191577b80711060035r1766530dk2bc9ecdc3981334d@mail.gmail.com>",
+      "references": [
+        "<191577b80711060035r1766530dk2bc9ecdc3981334d@mail.gmail.com>"
+      ],
+      "body_plain": "http://web.pdx.edu/~cparker/scripts/byhand.r\n\n\nAntonio P. Ramos wrote:\n> Hi all.\n>\n> Does anyone have a \"smart\" code for performing bi and mult-ivariable\n> regression in R by hand? This is suppose to help students without a sound\n> knowledge of R to understand what the computer is doing when we write\n> lm(x~y).\n>\n> Thanks in advance,\n>\n> Antonio.\n>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>",
+      "body_snippet": "http://web.pdx.edu/~cparker/scripts/byhand.r\n\n\nAntonio P. Ramos wrote:\n> Hi all.\n>\n> Does anyone have a \"smart\" code for performing bi and mult-ivariable\n> regression in R by hand? This is suppose to ",
+      "thread_id": "thread-4ce1d2117dfa",
+      "thread_depth": 1,
+      "month": "2007-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-b52983a72250",
+      "subject": "Free textbook",
+      "message_count": 3,
+      "participants": [
+        "Ista Zahn",
+        "Kyle."
+      ],
+      "started": "2007-11-01T14:15:57-04:00",
+      "last_reply": "2007-11-01T15:15:48-04:00",
+      "root_message_id": "msg-b52983a72250"
+    },
+    {
+      "id": "thread-4ce1d2117dfa",
+      "subject": "R code to perform OLS by hand",
+      "message_count": 4,
+      "participants": [
+        "Antonio P. Ramos",
+        "Christian A. Parker",
+        "Douglas Bates",
+        "Germano Rossi"
+      ],
+      "started": "2007-11-06T04:35:32-04:00",
+      "last_reply": "2007-11-06T06:31:24-08:00",
+      "root_message_id": "msg-4ce1d2117dfa"
+    }
+  ]
+}

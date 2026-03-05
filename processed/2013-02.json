@@ -1,0 +1,96 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2013-02",
+  "messages": [
+    {
+      "id": "msg-13c085f18d14",
+      "message_id": "<CADv2QyHcpaONnd9kdLKxcDf+CJnxXsGhqs63deUidgpKWi=dWQ@mail.gmail.com>",
+      "from_name": "Dennis Murphy",
+      "from_email_hash": "e4a5a8dffeb093c4485cbdaf24417516db9183251269103e90963889fce45f74",
+      "date": "2013-02-06T17:27:08-08:00",
+      "subject": "[R-sig-teaching] Handbook of Small Datasets",
+      "subject_clean": "Handbook of Small Datasets",
+      "in_reply_to": "<CADv2QyGSqGVrJSET-Qah2AdagLWiOpy3h5=r_OWKeSPu-Ft6_A@mail.gmail.com>",
+      "references": [
+        "<20130130234801.9BAF471989D5@mail89.csoft.net>",
+        "<5109EADE.7080205@gmail.com>",
+        "<CADv2QyGSqGVrJSET-Qah2AdagLWiOpy3h5=r_OWKeSPu-Ft6_A@mail.gmail.com>"
+      ],
+      "body_plain": "Hi:\n\nAs promised, I have rolled up a few versions of the files in HDLMO and\nput them in my Dropbox.\n\n(1) Zipped csv form:\nhttps://dl.dropbox.com/u/57587928/csv.zip\n\n(2) Individual R binary objects in zip form:\nhttps://dl.dropbox.com/u/57587928/Rdata.zip\n\n(3) All of the R objects in one .Rdata file:\nhttps://dl.dropbox.com/u/57587928/hdlmo.Rdata\n\nShould you choose to access one or more of these archives, I\n******strongly******* encourage you to read the index.txt and\nREADME.txt files that come with the zipped archives. I took more than\na few liberties with renaming R objects relative to the names of the\noriginal datasets (originally, this was meant for my own use), and\nmany data sets contain more than one R object (and hence more than one\ncorresponding .Rdata or .csv file). The file index.txt provides the\nroadmap that connects the numbers and descriptions of the original\ndata sets to the names of the corresponding R objects, their\nclass/type and the name of the csv file to which the R object was\nwritten. The README file explains a few things about the contents of\nthe archive and the process by which it was generated.\n\nThe R versions are, of course, for R aficionados (after all, this is\nR-sig-teaching :), while the csv versions are for more general\napplications.\n\nThe R binary (3) contains neither index.txt nor README.txt, so grab\none of the zip archives to access these files.\n\nI hope you find these useful in some aspect of your work.\nDennis\n\nOn Thu, Jan 31, 2013 at 1:58 AM, Dennis Murphy <djmuser at gmail.com> wrote:\n> That's what the book is for: its purpose is to describe the variables\n> and context of each data set. The book 'Data' by Andrews and Herzberg\n> (1985) is similar in that respect. As I mentioned to Bob privately, I\n> thought about making a R package of the data sets in HDLMO several\n> years ago because I used a number of them in teaching, but then\n> realized that if I wrote the help pages, I'd essentially be violating\n> the copyright of the book...so that project died. But I do have a\n> collection of R objects for the data sets which I'm editing and hope\n> to finish before the weekend is out. Bob prefers a zipped csv archive,\n> but I can make an R binary available (or a zipped version of .Rdata\n> files) if anyone is interested.\n>\n> Dennis\n>\n> On Wed, Jan 30, 2013 at 7:54 PM, Jeff Laux <jefflaux at gmail.com> wrote:\n>> Yes.  They can be found on NC State's Statistics department's website:\n>>\n>>      http://www.stat.ncsu.edu/working_groups/sas/sicl/data/\n>>\n>> However, the accompanying stories don't exist.  What is posted is just tab\n>> delimited text files with numeric data.  Someone else will have to say what\n>> the numbers are supposed to mean.\n>>\n>>\n>>\n>> On 1/30/2013 6:48 PM, Bob wrote:\n>>>\n>>> Just saw a mention of _Handbook of Small Datasets_.  Does anyone know\n>>> if the data files ever got cleaned up and posted on the Internet?  I\n>>> bought this when I came out and the disk included files that seemed to\n>>> be created by cut and paste from the manuscript.  This meant that the\n>>> \"shape\" of the data matched a typesetter's needs rather than a\n>>> statistician's.  Most of the datasets needed considerable manual work\n>>> before one could hand them off to students.  (I DID find what appeared\n>>> to be the original disfunctional versions online.)  It's really sad\n>>> that a collection that was such a good idea on paper was so poorly\n>>> implemented.\n>>>\n>>>\n>>> ------->  First-time AP Stats. teacher?  Help is on the way! See\n>>> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n>>>        _\n>>>       | |          Robert W. Hayden\n>>>       | |          142 Main Street\n>>>      /  |          Apartment 104\n>>>     |   |          Jaffrey, New Hampshire 03452  USA\n>>>     |   |          email: bob@ the site below\n>>>    /    |          website: http://statland.org\n>>>   | x   /          phone: (603) 532-7224 (home)\n>>>   ''''''\n>>>\n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>>\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Hi:\n\nAs promised, I have rolled up a few versions of the files in HDLMO and\nput them in my Dropbox.\n\n(1) Zipped csv form:\nhttps://dl.dropbox.com/u/57587928/csv.zip\n\n(2) Individual R binary objects in ",
+      "thread_id": "thread-13c085f18d14",
+      "thread_depth": 0,
+      "month": "2013-02"
+    },
+    {
+      "id": "msg-0a40e4086272",
+      "message_id": "<73262E30-3677-40A0-A0DF-403323D9A030@yahoo.com>",
+      "from_name": "Nicholas Horton",
+      "from_email_hash": "9e44a5ab3434adb176b17e0e24804f1ac2dc82061d5d92983e9e78e4057e0d0c",
+      "date": "2013-02-07T08:43:26-05:00",
+      "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 59, Issue 9",
+      "subject_clean": "R-sig-teaching Digest, Vol 59, Issue 9",
+      "in_reply_to": "<mailman.7.1359543603.2231.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.7.1359543603.2231.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": "> Date: Tue, 29 Jan 2013 13:38:28 -0700\n> From: Allen Cornelius <allencornelius at gmail.com>\n> To: \"r-sig-teaching at r-project.org\" <r-sig-teaching at r-project.org>\n> Subject: [R-sig-teaching] Data sets for teaching advanced stats with R\n> \n> Knowledgable group,\n> \n> I am in the process of designing an advanced statistics class for doctoral level clinical psychology students. Their background in basic statistical concepts is OK, but they have little exposure to statistical software. I am looking for pre existing data sets that they can explore fairly easily, probably using R and R Commander (though some coding would be OK), to illustrate some multivariate analyses (e.g., advanced regression, MANOVA, factor analysis). I don't expect proficiency with the software, but enough exposure to the output of results of analyses to understand what things mean. I am looking for multiple examples of the same analyses, so they get exposure and practice with lots of stuff. \n> \n> Allen\n> \n\nAllen,\n\nYou might be interested in checking out the HELP study dataset, which is included as part of the \"mosaic\" package in R as well as in a variety of formats from the book \"SAS and R: Data Management, Statistical Analysis and Graphics\" book website at http://www.math.smith.edu/sasr/datasets.php.\n\nThis includes deidentified data from a randomized trial of n=470 subjects recruited from a detox center in Boston who were randomized to usual care or an intervention to link them to primary care.  Approximately 200 variables are measured at each of baseline, 6 months, 12 month, 18 month and 24 month follow up.  There are a variety of sociobehavioral, health, and health services questions which can be addressed.\n\nThe complete set of instruments can be downloaded from http://www.math.smith.edu/help.\n\nNick\n\nNicholas Horton \nDepartment of Mathematics and Statistics, Smith College\nClark Science Center, Northampton, MA 01063-0001\nhttp://www.math.smith.edu/~nhorton",
+      "body_snippet": "> Date: Tue, 29 Jan 2013 13:38:28 -0700\n> From: Allen Cornelius <allencornelius at gmail.com>\n> To: \"r-sig-teaching at r-project.org\" <r-sig-teaching at r-project.org>\n> Subject: [R-sig-teaching] Data",
+      "thread_id": "thread-0a40e4086272",
+      "thread_depth": 0,
+      "month": "2013-02"
+    },
+    {
+      "id": "msg-4bab483d345c",
+      "message_id": "<1360329622.33358.YahooMailNeo@web125806.mail.ne1.yahoo.com>",
+      "from_name": "Ali Zanaty",
+      "from_email_hash": "65acd645f9ed74fc7721f9ea58469b32335ac44f193ffbf59b7c89913407d9ac",
+      "date": "2013-02-08T05:20:22-08:00",
+      "subject": "[R-sig-teaching] R for Numercal Analysis",
+      "subject_clean": "R for Numercal Analysis",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130208/c4e59564/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130208/c4e59564/attachment.pl>",
+      "thread_id": "thread-4bab483d345c",
+      "thread_depth": 0,
+      "month": "2013-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-13c085f18d14",
+      "subject": "Handbook of Small Datasets",
+      "message_count": 1,
+      "participants": [
+        "Dennis Murphy"
+      ],
+      "started": "2013-02-06T17:27:08-08:00",
+      "last_reply": "2013-02-06T17:27:08-08:00",
+      "root_message_id": "msg-13c085f18d14"
+    },
+    {
+      "id": "thread-0a40e4086272",
+      "subject": "R-sig-teaching Digest, Vol 59, Issue 9",
+      "message_count": 1,
+      "participants": [
+        "Nicholas Horton"
+      ],
+      "started": "2013-02-07T08:43:26-05:00",
+      "last_reply": "2013-02-07T08:43:26-05:00",
+      "root_message_id": "msg-0a40e4086272"
+    },
+    {
+      "id": "thread-4bab483d345c",
+      "subject": "R for Numercal Analysis",
+      "message_count": 1,
+      "participants": [
+        "Ali Zanaty"
+      ],
+      "started": "2013-02-08T05:20:22-08:00",
+      "last_reply": "2013-02-08T05:20:22-08:00",
+      "root_message_id": "msg-4bab483d345c"
+    }
+  ]
+}

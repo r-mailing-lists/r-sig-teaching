@@ -1,0 +1,308 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2014-12",
+  "messages": [
+    {
+      "id": "msg-2e0178efcf81",
+      "message_id": "<1465014430.128236.1419205551395.JavaMail.yahoo@jws10034.mail.ne1.yahoo.com>",
+      "from_name": "Yahoo!",
+      "from_email_hash": "22385bbcf078dc17ff188e29e3a1eaf01aad381796219c59b64e7bb0baec2847",
+      "date": "2014-12-21T23:45:51Z",
+      "subject": "[R-sig-teaching] lmer",
+      "subject_clean": "lmer",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\nI am trying to run a random effect model in R, but when I used \"lmer\" I got the following errors: Please see below.\nlibrary(lme4)\nbatchlevel <- c(1,1,1,2,2,2,3,3,3,4,4,4,5,5,5)\n\nbatch <- as.character(batchlevel)\nyield <- c(74,76,75,68,71,72,75,77,77,72,74,73,79,81,79)\ndataaov <- data.frame(batch,yield)\nraneff <- lmer(yield~1+(1|batch),data=dataaov)\n\nError in get(name, envir = asNamespace(pkg), inherits = FALSE) :?? object '.setDummyField' not found\nsummary(raneff)\n\n?Error in summary(raneff) :?? error in evaluating the argument 'object' in selecting a method for function 'summary': Error: object 'raneff' not found\n\nAny help will be highly appreciated.\nmany thanksabou\n\n========================\nAbouEl-Makarim Aboueissa\nSozan Elsalakawy\nMohamed Agamia\n\n246 Auburn Street, #158\nPortland, ME 04103\nUSA\n\nTel: (207) 797-2724\nEmail: aboueiss at yahoo.com\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\nI am trying to run a random effect model in R, but when I used \"lmer\" I got the following errors: Please see below.\nlibrary(lme4)\nbatchlevel <- c(1,1,1,2,2,2,3,3,3,4,4,4,5,5,5)\n\nbatch <- as.",
+      "thread_id": "thread-2e0178efcf81",
+      "thread_depth": 0,
+      "month": "2014-12"
+    },
+    {
+      "id": "msg-2e0178efcf81",
+      "message_id": "<1465014430.128236.1419205551395.JavaMail.yahoo@jws10034.mail.ne1.yahoo.com>",
+      "from_name": "Yahoo!",
+      "from_email_hash": "22385bbcf078dc17ff188e29e3a1eaf01aad381796219c59b64e7bb0baec2847",
+      "date": "2014-12-21T23:45:51Z",
+      "subject": "[R-sig-teaching] lmer",
+      "subject_clean": "lmer",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\nI am trying to run a random effect model in R, but when I used \"lmer\" I got the following errors: Please see below.\nlibrary(lme4)\nbatchlevel <- c(1,1,1,2,2,2,3,3,3,4,4,4,5,5,5)\n\nbatch <- as.character(batchlevel)\nyield <- c(74,76,75,68,71,72,75,77,77,72,74,73,79,81,79)\ndataaov <- data.frame(batch,yield)\nraneff <- lmer(yield~1+(1|batch),data=dataaov)\n\nError in get(name, envir = asNamespace(pkg), inherits = FALSE) :?? object '.setDummyField' not found\nsummary(raneff)\n\n?Error in summary(raneff) :?? error in evaluating the argument 'object' in selecting a method for function 'summary': Error: object 'raneff' not found\n\nAny help will be highly appreciated.\nmany thanksabou\n\n========================\nAbouEl-Makarim Aboueissa\nSozan Elsalakawy\nMohamed Agamia\n\n246 Auburn Street, #158\nPortland, ME 04103\nUSA\n\nTel: (207) 797-2724\nEmail: aboueiss at yahoo.com\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\nI am trying to run a random effect model in R, but when I used \"lmer\" I got the following errors: Please see below.\nlibrary(lme4)\nbatchlevel <- c(1,1,1,2,2,2,3,3,3,4,4,4,5,5,5)\n\nbatch <- as.",
+      "thread_id": "thread-2e0178efcf81",
+      "thread_depth": 0,
+      "month": "2014-12"
+    },
+    {
+      "id": "msg-1847189a2002",
+      "message_id": "<2025461787.93798.1419254760717.JavaMail.yahoo@jws100129.mail.ne1.yahoo.com>",
+      "from_name": "Yahoo!",
+      "from_email_hash": "22385bbcf078dc17ff188e29e3a1eaf01aad381796219c59b64e7bb0baec2847",
+      "date": "2014-12-22T13:26:00Z",
+      "subject": "[R-sig-teaching] random effect model in R---- lmer",
+      "subject_clean": "random effect model in R---- lmer",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\n\n\n?\nI am trying to run arandom effect model in R, but when I used \"lmer\" I got the followingerrors: Please see below.\n\n\n?\nlibrary(lme4)\n\n\n?\nbatchlevel <-c(1,1,1,2,2,2,3,3,3,4,4,4,5,5,5)\n\n\n?\nbatch <-as.character(batchlevel)\n\n\n?\nyield <-c(74,76,75,68,71,72,75,77,77,72,74,73,79,81,79)\n\n\n?\ndataaov <-data.frame(batch,yield)\n\n\n?\nraneff <-lmer(yield~1+(1|batch),data=dataaov)\n\n\n?\nError in get(name,envir = asNamespace(pkg), inherits = FALSE) :?\n\n? object'.setDummyField' not found\n\n\n?\nsummary(raneff)\n\n\n?\n\n?\n?Error insummary(raneff) :?\n\n? error inevaluating the argument 'object' in selecting a method for function 'summary':Error: object 'raneff' not found\n\n\n?\n\n?\nAny help will be highlyappreciated.\n\n\n?\nmany thanks\n\nabou\n\n?========================\nAbouEl-Makarim Aboueissa\nSozan Elsalakawy\nMohamed Agamia\n\n246 Auburn Street, #158\nPortland, ME 04103\nUSA\n\nTel: (207) 797-2724\nEmail: aboueiss at yahoo.com\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\n\n?\nI am trying to run arandom effect model in R, but when I used \"lmer\" I got the followingerrors: Please see below.\n\n\n?\nlibrary(lme4)\n\n\n?\nbatchlevel <-c(1,1,1,2,2,2,3,3,3,4,4,4,5,5,5)\n\n\n?\n",
+      "thread_id": "thread-1847189a2002",
+      "thread_depth": 0,
+      "month": "2014-12"
+    },
+    {
+      "id": "msg-1847189a2002",
+      "message_id": "<2025461787.93798.1419254760717.JavaMail.yahoo@jws100129.mail.ne1.yahoo.com>",
+      "from_name": "Yahoo!",
+      "from_email_hash": "22385bbcf078dc17ff188e29e3a1eaf01aad381796219c59b64e7bb0baec2847",
+      "date": "2014-12-22T13:26:00Z",
+      "subject": "[R-sig-teaching] random effect model in R---- lmer",
+      "subject_clean": "random effect model in R---- lmer",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\n\n\n?\nI am trying to run arandom effect model in R, but when I used \"lmer\" I got the followingerrors: Please see below.\n\n\n?\nlibrary(lme4)\n\n\n?\nbatchlevel <-c(1,1,1,2,2,2,3,3,3,4,4,4,5,5,5)\n\n\n?\nbatch <-as.character(batchlevel)\n\n\n?\nyield <-c(74,76,75,68,71,72,75,77,77,72,74,73,79,81,79)\n\n\n?\ndataaov <-data.frame(batch,yield)\n\n\n?\nraneff <-lmer(yield~1+(1|batch),data=dataaov)\n\n\n?\nError in get(name,envir = asNamespace(pkg), inherits = FALSE) :?\n\n? object'.setDummyField' not found\n\n\n?\nsummary(raneff)\n\n\n?\n\n?\n?Error insummary(raneff) :?\n\n? error inevaluating the argument 'object' in selecting a method for function 'summary':Error: object 'raneff' not found\n\n\n?\n\n?\nAny help will be highlyappreciated.\n\n\n?\nmany thanks\n\nabou\n\n?========================\nAbouEl-Makarim Aboueissa\nSozan Elsalakawy\nMohamed Agamia\n\n246 Auburn Street, #158\nPortland, ME 04103\nUSA\n\nTel: (207) 797-2724\nEmail: aboueiss at yahoo.com\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\n\n?\nI am trying to run arandom effect model in R, but when I used \"lmer\" I got the followingerrors: Please see below.\n\n\n?\nlibrary(lme4)\n\n\n?\nbatchlevel <-c(1,1,1,2,2,2,3,3,3,4,4,4,5,5,5)\n\n\n?\n",
+      "thread_id": "thread-1847189a2002",
+      "thread_depth": 0,
+      "month": "2014-12"
+    },
+    {
+      "id": "msg-021a1fbb98fb",
+      "message_id": "<21656.8156.145896.833982@stat.math.ethz.ch>",
+      "from_name": "Martin Maechler",
+      "from_email_hash": "c2c86f22f78a4ecfe6d0e6b4e2be505a3f5beb0470ea88c903688ac536018a98",
+      "date": "2014-12-22T14:42:52+01:00",
+      "subject": "[R-sig-teaching] random effect model in R---- lmer",
+      "subject_clean": "random effect model in R---- lmer",
+      "in_reply_to": "<2025461787.93798.1419254760717.JavaMail.yahoo@jws100129.mail.ne1.yahoo.com>",
+      "references": [
+        "<2025461787.93798.1419254760717.JavaMail.yahoo@jws100129.mail.ne1.yahoo.com>"
+      ],
+      "body_plain": "Can you please send this to the R-SIG mailing list about mixed\nmodels??\n\nThis has *NOTHING* to do with using R for and in teaching!\n\n\n>>>>> Yahoo!  <aboueiss at yahoo.com>\n>>>>>     on Mon, 22 Dec 2014 13:26:00 +0000 writes:\n\n    > Dear All: ? I am trying to run arandom effect model in R,\n    > but when I used \"lmer\" I got the followingerrors: Please\n    > see below.\n\n\n    > ? library(lme4)\n    ......................\n\n    > _______________________________________________\n    > R-sig-teaching at r-project.org mailing list\n    > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Can you please send this to the R-SIG mailing list about mixed\nmodels??\n\nThis has *NOTHING* to do with using R for and in teaching!\n\n\n>>>>> Yahoo!  <aboueiss at yahoo.com>\n>>>>>     on Mon, 22 Dec 201",
+      "thread_id": "thread-1847189a2002",
+      "thread_depth": 1,
+      "month": "2014-12"
+    },
+    {
+      "id": "msg-a68e1f21d67a",
+      "message_id": "<CAHDp66A867ObWPZboEOJAnBStWGsj=H432NQoT27LfukXGd2fA@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2014-12-28T18:35:57-05:00",
+      "subject": "[R-sig-teaching] Problem with \"attach\"",
+      "subject_clean": "Problem with \"attach\"",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\n\nI do have problem with attach. I believe that I am doing the data.frame\ncorrectly. But it seems that I do have problem with the \"attach\" statement.\n\nhere is what I am doing:\n\n\ncontributions<-c(1000,1500,1200,1800,1600,1100,1000,1250,1500,1800,2000,1200,2000,1700,1800,1900,900,1000,1200,1500,1200,1550,1000,1100)\ncontributions\n\n### approach<-c(rep(1,8), rep(2,8), rep(3,8))\n\napproach<-c(1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3)\napproach\n\nn<-length(contributions)\n\ndonations <- data.frame(approach=approach,contributions=contributions)\ndonations\n\n\nattach(donations)\n\n\n\nthe code \"*plot(approach~contributions)* \" should yield the box-plots, but\nit does not.\n\n\n\n\n\nThis what I got from R:\n================\n\n> attach(donations)\nThe following objects are masked _by_ .GlobalEnv:\n\n    approach, contributions\nThe following objects are masked from donations (position 3):\n\n    approach, contributions\nThe following objects are masked from donations (position 5):\n\n    approach, contributions\nThe following objects are masked from donations (position 6):\n\n    approach, contributions\nThe following objects are masked from donations (position 8):\n\n    approach, contributions\nThe following objects are masked from donations (position 10):\n\n    approach, contributions\nThe following objects are masked from donations (position 12):\n\n    approach, contributions\nThe following objects are masked from donations (position 13):\n\n    approach, contributions\nThe following objects are masked from donations (position 14):\n\n    approach, contributions\nThe following objects are masked from donations (position 15):\n\n    approach, contributions\nThe following objects are masked from donations (position 16):\n\n    approach, contributions\n\n\n\nAny help will be highly appreciated.\nwith many thanks\nSteve\n\n\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\nI do have problem with attach. I believe that I am doing the data.frame\ncorrectly. But it seems that I do have problem with the \"attach\" statement.\n\nhere is what I am doing:\n\n\ncontributions",
+      "thread_id": "thread-a68e1f21d67a",
+      "thread_depth": 0,
+      "month": "2014-12"
+    },
+    {
+      "id": "msg-6e7b91d71f96",
+      "message_id": "<CAGx1TMA-Rhsa_AALDHzt7=tzQkCRgZH5g2AgAPVobOwVYVkLzA@mail.gmail.com>",
+      "from_name": "Richard M. Heiberger",
+      "from_email_hash": "4ce810eab8587777db353ea9d997b9e94d9e73af018121f9a3424238038952df",
+      "date": "2014-12-28T19:10:26-05:00",
+      "subject": "[R-sig-teaching] Problem with \"attach\"",
+      "subject_clean": "Problem with \"attach\"",
+      "in_reply_to": "<CAHDp66A867ObWPZboEOJAnBStWGsj=H432NQoT27LfukXGd2fA@mail.gmail.com>",
+      "references": [
+        "<CAHDp66A867ObWPZboEOJAnBStWGsj=H432NQoT27LfukXGd2fA@mail.gmail.com>"
+      ],
+      "body_plain": "Steven,\n\nIt is strongly recommended that you don't use attach.\nUse the data= argument.  This works.\n\nmy.data <- data.frame(contributions=c(\n                        1000,1500,1200,1800,1600,1100,1000,1250,\n                        1500,1800,2000,1200,2000,1700,1800,1900,\n                        0900,1000,1200,1500,1200,1550,1000,1100),\n                      approach=factor(c(\n                        1,1,1,1,1,1,1,1,\n                        2,2,2,2,2,2,2,2,\n                        3,3,3,3,3,3,3,3)))\n\nbwplot(contributions ~ approach, data=my.data) ## lattice graphics\n\nplot(contributions ~ approach, data=my.data)   ## base graphics\n\nRich\n\nOn Sun, Dec 28, 2014 at 6:35 PM, Steven Stoline <sstoline at gmail.com> wrote:\n> Dear All:\n>\n> I do have problem with attach. I believe that I am doing the data.frame\n> correctly. But it seems that I do have problem with the \"attach\" statement.\n>\n> here is what I am doing:\n>\n>\n> contributions<-c(1000,1500,1200,1800,1600,1100,1000,1250,1500,1800,2000,1200,2000,1700,1800,1900,900,1000,1200,1500,1200,1550,1000,1100)\n> contributions\n>\n> ### approach<-c(rep(1,8), rep(2,8), rep(3,8))\n>\n> approach<-c(1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3)\n> approach\n>\n> n<-length(contributions)\n>\n> donations <- data.frame(approach=approach,contributions=contributions)\n> donations\n>\n>\n> attach(donations)\n>\n>\n>\n> the code \"*plot(approach~contributions)* \" should yield the box-plots, but\n> it does not.\n>\n>\n>\n>\n>\n> This what I got from R:\n> ================\n>\n>> attach(donations)\n> The following objects are masked _by_ .GlobalEnv:\n>\n>     approach, contributions\n> The following objects are masked from donations (position 3):\n>\n>     approach, contributions\n> The following objects are masked from donations (position 5):\n>\n>     approach, contributions\n> The following objects are masked from donations (position 6):\n>\n>     approach, contributions\n> The following objects are masked from donations (position 8):\n>\n>     approach, contributions\n> The following objects are masked from donations (position 10):\n>\n>     approach, contributions\n> The following objects are masked from donations (position 12):\n>\n>     approach, contributions\n> The following objects are masked from donations (position 13):\n>\n>     approach, contributions\n> The following objects are masked from donations (position 14):\n>\n>     approach, contributions\n> The following objects are masked from donations (position 15):\n>\n>     approach, contributions\n> The following objects are masked from donations (position 16):\n>\n>     approach, contributions\n>\n>\n>\n> Any help will be highly appreciated.\n> with many thanks\n> Steve\n>\n>\n>\n> --\n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Steven,\n\nIt is strongly recommended that you don't use attach.\nUse the data= argument.  This works.\n\nmy.data <- data.frame(contributions=c(\n                        1000,1500,1200,1800,1600,1100,1000,1",
+      "thread_id": "thread-a68e1f21d67a",
+      "thread_depth": 1,
+      "month": "2014-12"
+    },
+    {
+      "id": "msg-6870e7c2f08a",
+      "message_id": "<CAHDp66BCtPgJXZxP0c5BDBqY_BD8rYw49+yBHndNX44jaKBf2g@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2014-12-28T19:27:42-05:00",
+      "subject": "[R-sig-teaching] Problem with \"attach\"",
+      "subject_clean": "Problem with \"attach\"",
+      "in_reply_to": "<CAGx1TMA-Rhsa_AALDHzt7=tzQkCRgZH5g2AgAPVobOwVYVkLzA@mail.gmail.com>",
+      "references": [
+        "<CAHDp66A867ObWPZboEOJAnBStWGsj=H432NQoT27LfukXGd2fA@mail.gmail.com>",
+        "<CAGx1TMA-Rhsa_AALDHzt7=tzQkCRgZH5g2AgAPVobOwVYVkLzA@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Rich:\n\nThank you very much. it works\n\nSteve\n\n\nOn Sun, Dec 28, 2014 at 7:10 PM, Richard M. Heiberger <rmh at temple.edu>\nwrote:\n\n> Steven,\n>\n> It is strongly recommended that you don't use attach.\n> Use the data= argument.  This works.\n>\n> my.data <- data.frame(contributions=c(\n>                         1000,1500,1200,1800,1600,1100,1000,1250,\n>                         1500,1800,2000,1200,2000,1700,1800,1900,\n>                         0900,1000,1200,1500,1200,1550,1000,1100),\n>                       approach=factor(c(\n>                         1,1,1,1,1,1,1,1,\n>                         2,2,2,2,2,2,2,2,\n>                         3,3,3,3,3,3,3,3)))\n>\n> bwplot(contributions ~ approach, data=my.data) ## lattice graphics\n>\n> plot(contributions ~ approach, data=my.data)   ## base graphics\n>\n> Rich\n>\n> On Sun, Dec 28, 2014 at 6:35 PM, Steven Stoline <sstoline at gmail.com>\n> wrote:\n> > Dear All:\n> >\n> > I do have problem with attach. I believe that I am doing the data.frame\n> > correctly. But it seems that I do have problem with the \"attach\"\n> statement.\n> >\n> > here is what I am doing:\n> >\n> >\n> >\n> contributions<-c(1000,1500,1200,1800,1600,1100,1000,1250,1500,1800,2000,1200,2000,1700,1800,1900,900,1000,1200,1500,1200,1550,1000,1100)\n> > contributions\n> >\n> > ### approach<-c(rep(1,8), rep(2,8), rep(3,8))\n> >\n> > approach<-c(1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3)\n> > approach\n> >\n> > n<-length(contributions)\n> >\n> > donations <- data.frame(approach=approach,contributions=contributions)\n> > donations\n> >\n> >\n> > attach(donations)\n> >\n> >\n> >\n> > the code \"*plot(approach~contributions)* \" should yield the box-plots,\n> but\n> > it does not.\n> >\n> >\n> >\n> >\n> >\n> > This what I got from R:\n> > ================\n> >\n> >> attach(donations)\n> > The following objects are masked _by_ .GlobalEnv:\n> >\n> >     approach, contributions\n> > The following objects are masked from donations (position 3):\n> >\n> >     approach, contributions\n> > The following objects are masked from donations (position 5):\n> >\n> >     approach, contributions\n> > The following objects are masked from donations (position 6):\n> >\n> >     approach, contributions\n> > The following objects are masked from donations (position 8):\n> >\n> >     approach, contributions\n> > The following objects are masked from donations (position 10):\n> >\n> >     approach, contributions\n> > The following objects are masked from donations (position 12):\n> >\n> >     approach, contributions\n> > The following objects are masked from donations (position 13):\n> >\n> >     approach, contributions\n> > The following objects are masked from donations (position 14):\n> >\n> >     approach, contributions\n> > The following objects are masked from donations (position 15):\n> >\n> >     approach, contributions\n> > The following objects are masked from donations (position 16):\n> >\n> >     approach, contributions\n> >\n> >\n> >\n> > Any help will be highly appreciated.\n> > with many thanks\n> > Steve\n> >\n> >\n> >\n> > --\n> > Steven M. Stoline\n> > 1123 Forest Avenue\n> > Portland, ME 04112\n> > sstoline at gmail.com\n> >\n> >         [[alternative HTML version deleted]]\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear Rich:\n\nThank you very much. it works\n\nSteve\n\n\nOn Sun, Dec 28, 2014 at 7:10 PM, Richard M. Heiberger <rmh at temple.edu>\nwrote:\n\n> Steven,\n>\n> It is strongly recommended that you don't use attach.",
+      "thread_id": "thread-a68e1f21d67a",
+      "thread_depth": 2,
+      "month": "2014-12"
+    },
+    {
+      "id": "msg-6c9920a60a10",
+      "message_id": "<CAH7sKSNEfn54rxRidQh2-nGzDmkos6fVPUemzTaAcCi8rXEZkg@mail.gmail.com>",
+      "from_name": "Kenn Konstabel",
+      "from_email_hash": "4367d6fc39ba53e70ea484f984561a98934fe9281202be0725fb246aa50a244a",
+      "date": "2014-12-30T10:45:39+02:00",
+      "subject": "[R-sig-teaching] Problem with \"attach\"",
+      "subject_clean": "Problem with \"attach\"",
+      "in_reply_to": "<CAHDp66BCtPgJXZxP0c5BDBqY_BD8rYw49+yBHndNX44jaKBf2g@mail.gmail.com>",
+      "references": [
+        "<CAHDp66A867ObWPZboEOJAnBStWGsj=H432NQoT27LfukXGd2fA@mail.gmail.com>",
+        "<CAGx1TMA-Rhsa_AALDHzt7=tzQkCRgZH5g2AgAPVobOwVYVkLzA@mail.gmail.com>",
+        "<CAHDp66BCtPgJXZxP0c5BDBqY_BD8rYw49+yBHndNX44jaKBf2g@mail.gmail.com>"
+      ],
+      "body_plain": "It may also useful to get some understanding about how attach actually\nworks -- then you can use in the (possibly rare) cases when it is\nconvenient and useful, without being worried that it is \"strongly not\nrecommended\".\n\nLook at what R told you -- quoted below in full but the first line\nwas: \"The following objects are masked _by_ .GlobalEnv:     approach,\ncontributions\"\n\nThe important point to notice here is that  `attach`  attach'es an\nenvironment to the search path (try: search() ), which contains the\nvarious packages that you have loaded, the base package, etc, and the\nglobal environment is always on top. In other words, if you have\nvariable x in the global environment and you attach a data frame\ncontaining a variable named x, then, by typing x, you will get the\nvalue from the global environment.\n\nTry this:\n\nx <- \"bla bla\"\ndf <- data.frame(x=1:5, y=2:6)\nprint(df)\n#     x y\n# 1 1 2\n# 2 2 3\n# 3 3 4\n# 4 4 5\n# 5 5 6\nattach(df)\n# The following object is masked _by_ .GlobalEnv:\n#\n#   x\nx\n# [1] \"bla bla\"\n\nBut after that you had a lot of other messages:     \"The following\nobjects are masked from donations (position 5):     approach,\ncontributions\"\n\nThis probably means that you had attached a number of different copies\nof the same data frame. This is almost never a good idea -- use detach\nbefore attach'ing a data frame again (presumably after you've made\nchanges in it) and use search() to check what you have attached.\n\nWhen you have a number of possibly different data frames attached, the\nresult becomes difficult to predict and depends on the order in which\nthe different copies were attached. Try this:\n\n\n### copy-paste from here\ndf1 <- data.frame(x=2:6, y=3:7, z=4:8)\nattach(df1)\ndf2 <- data.frame(x=1:5, y=2:6)\nattach(df2)\nx\ny\nz\n#### end\n\n##### output\n>df1 <- data.frame(x=2:6, y=3:7, z=4:8)\n> attach(df1)\nThe following object is masked _by_ .GlobalEnv:\n\n    x\n> df2 <- data.frame(x=1:5, y=2:6)\n> attach(df2)\nThe following object is masked _by_ .GlobalEnv:\n\n    x\nThe following objects are masked from df1:\n\n    x, y\n> x\n[1] \"bla bla\"\n> y\n[1] 2 3 4 5 6\n> z\n[1] 4 5 6 7 8\n##### end of output\n\nSo in this example, x is taken from global environment, y from df2 and\nz from df1 (because there is no z in df2 or global environment). The\nenvironments in the search path are looked at in the order they're\nshown in `search()`, for example:\n\n> search()\n [1] \".GlobalEnv\"        \"df2\"               \"df1\"\n [4] \"package:stats\"     \"package:graphics\"  \"package:grDevices\"\n [7] \"package:utils\"     \"package:datasets\"  \"package:methods\"\n[10] \"Autoloads\"         \"package:base\"\n\nSo you can overwrite any (almost any) function in base packages but\nthis only has an effect until you have these variables in the global\nenvironment:\n\n### commented output\n> c(1,9, 3)   # make a vector with c()\n[1] 1 9 3\n> c <- \"blah\"  # assign  a stupid value to \"c\"\n> c(1,9, 3)   # but it still works - the first function named \"c\" in the search path is still base::c\n[1] 1 9 3\n> c <- function(...) \"blah\"   # now we overwrite the previous stupid value with a new function which always returns \"blah\"\n> c(1,9, 3)     # and it works\n[1] \"blah\"\n> base::c(1,9,3)  # but we can still use the function in base package using :: operator\n[1] 1 9 3\n> rm(c)    # now we delete \"c\" from global env to restore the normal state of affairs\n> c(1,9, 3)\n[1] 1 9 3\n####\n\nIf you understand all of the above (or most of it) then you can use\nattach more or less safely. Of course, people who do not recommend\nusing attach are, in most cases, right -- too many things can go wrong\ntoo easily -- but if you can avoid all the traps, attach can be a\nuseful tool. But I think it is definitely not useful for beginners --\nand when you understand the basics of environments and search paths\nand stuff, then you're not a complete beginner any more. These things\nare, however, useful to understand even if you're not going to use\nattach.\n\nBest regards,\n\nKenn\n\n\n\n\n*****\n> attach(donations)\nThe following objects are masked _by_ .GlobalEnv:\n\n    approach, contributions\nThe following objects are masked from donations (position 3):\n\n    approach, contributions\nThe following objects are masked from donations (position 5):\n\n    approach, contributions\nThe following objects are masked from donations (position 6):\n\n    approach, contributions\nThe following objects are masked from donations (position 8):\n\n    approach, contributions\nThe following objects are masked from donations (position 10):\n\n    approach, contributions\nThe following objects are masked from donations (position 12):\n\n    approach, contributions\nThe following objects are masked from donations (position 13):\n\n    approach, contributions\nThe following objects are masked from donations (position 14):\n\n    approach, contributions\nThe following objects are masked from donations (position 15):\n\n    approach, contributions\nThe following objects are masked from donations (position 16):\n\n    approach, contributions\n\nOn Mon, Dec 29, 2014 at 2:27 AM, Steven Stoline <sstoline at gmail.com> wrote:\n> Dear Rich:\n>\n> Thank you very much. it works\n>\n> Steve\n>\n>\n> On Sun, Dec 28, 2014 at 7:10 PM, Richard M. Heiberger <rmh at temple.edu>\n> wrote:\n>\n>> Steven,\n>>\n>> It is strongly recommended that you don't use attach.\n>> Use the data= argument.  This works.\n>>\n>> my.data <- data.frame(contributions=c(\n>>                         1000,1500,1200,1800,1600,1100,1000,1250,\n>>                         1500,1800,2000,1200,2000,1700,1800,1900,\n>>                         0900,1000,1200,1500,1200,1550,1000,1100),\n>>                       approach=factor(c(\n>>                         1,1,1,1,1,1,1,1,\n>>                         2,2,2,2,2,2,2,2,\n>>                         3,3,3,3,3,3,3,3)))\n>>\n>> bwplot(contributions ~ approach, data=my.data) ## lattice graphics\n>>\n>> plot(contributions ~ approach, data=my.data)   ## base graphics\n>>\n>> Rich\n>>\n>> On Sun, Dec 28, 2014 at 6:35 PM, Steven Stoline <sstoline at gmail.com>\n>> wrote:\n>> > Dear All:\n>> >\n>> > I do have problem with attach. I believe that I am doing the data.frame\n>> > correctly. But it seems that I do have problem with the \"attach\"\n>> statement.\n>> >\n>> > here is what I am doing:\n>> >\n>> >\n>> >\n>> contributions<-c(1000,1500,1200,1800,1600,1100,1000,1250,1500,1800,2000,1200,2000,1700,1800,1900,900,1000,1200,1500,1200,1550,1000,1100)\n>> > contributions\n>> >\n>> > ### approach<-c(rep(1,8), rep(2,8), rep(3,8))\n>> >\n>> > approach<-c(1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3)\n>> > approach\n>> >\n>> > n<-length(contributions)\n>> >\n>> > donations <- data.frame(approach=approach,contributions=contributions)\n>> > donations\n>> >\n>> >\n>> > attach(donations)\n>> >\n>> >\n>> >\n>> > the code \"*plot(approach~contributions)* \" should yield the box-plots,\n>> but\n>> > it does not.\n>> >\n>> >\n>> >\n>> >\n>> >\n>> > This what I got from R:\n>> > ================\n>> >\n>> >> attach(donations)\n>> > The following objects are masked _by_ .GlobalEnv:\n>> >\n>> >     approach, contributions\n>> > The following objects are masked from donations (position 3):\n>> >\n>> >     approach, contributions\n>> > The following objects are masked from donations (position 5):\n>> >\n>> >     approach, contributions\n>> > The following objects are masked from donations (position 6):\n>> >\n>> >     approach, contributions\n>> > The following objects are masked from donations (position 8):\n>> >\n>> >     approach, contributions\n>> > The following objects are masked from donations (position 10):\n>> >\n>> >     approach, contributions\n>> > The following objects are masked from donations (position 12):\n>> >\n>> >     approach, contributions\n>> > The following objects are masked from donations (position 13):\n>> >\n>> >     approach, contributions\n>> > The following objects are masked from donations (position 14):\n>> >\n>> >     approach, contributions\n>> > The following objects are masked from donations (position 15):\n>> >\n>> >     approach, contributions\n>> > The following objects are masked from donations (position 16):\n>> >\n>> >     approach, contributions\n>> >\n>> >\n>> >\n>> > Any help will be highly appreciated.\n>> > with many thanks\n>> > Steve\n>> >\n>> >\n>> >\n>> > --\n>> > Steven M. Stoline\n>> > 1123 Forest Avenue\n>> > Portland, ME 04112\n>> > sstoline at gmail.com\n>> >\n>> >         [[alternative HTML version deleted]]\n>> >\n>> > _______________________________________________\n>> > R-sig-teaching at r-project.org mailing list\n>> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>\n>\n>\n> --\n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "It may also useful to get some understanding about how attach actually\nworks -- then you can use in the (possibly rare) cases when it is\nconvenient and useful, without being worried that it is \"strong",
+      "thread_id": "thread-a68e1f21d67a",
+      "thread_depth": 3,
+      "month": "2014-12"
+    },
+    {
+      "id": "msg-339ff6a6eb33",
+      "message_id": "<03EC1874-08A1-4208-A75C-BB0C130640E9@pepperdine.edu>",
+      "from_name": "Warford, Stan",
+      "from_email_hash": "ae192b89aa7d7f34d237b6becb127786abf8a5ee39276893b6ce49d8e8bcfed4",
+      "date": "2014-12-30T14:49:04-08:00",
+      "subject": "[R-sig-teaching] Legend for curve fit plot",
+      "subject_clean": "Legend for curve fit plot",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello all,\n\nI provide a function for my students to do two curve fits with a single set of data:\n\n# Performs two curve fits, quadratic and n lg n, with a plot of the data and the two curves\n# First parameter: A data frame\n# Second parameter: Name of the independent (x) variable\n# Third parameter: Name of the dependent (y) variable\n# Fourth parameter: The label for the x-axis\n# Fifth parameter: The label for the y-axis\ndp4dsFit <- function(dataFrame, indepVarName, depVarName, xLabel, yLabel) {\n  library(ggplot2)\n  library(labeling)\n  dp4dsQuadraticFit <- lm(dataFrame[,depVarName] ~ poly(dataFrame[,indepVarName],2))\n  write(\"=============\\r\",file=\"\")\n  write(\"Quadratic fit\\r\",file=\"\")\n  write(\"=============\\r\",file=\"\")\n  print(summary(dp4dsQuadraticFit))\n  dp4dsNlogNFit <- lm(dataFrame[,depVarName] ~ dataFrame[,indepVarName]:log(dataFrame[,indepVarName]) + dataFrame[,indepVarName])\n  write(\"==========\\r\",file=\"\")\n  write(\"n lg n fit\\r\",file=\"\")\n  write(\"==========\\r\",file=\"\")\n  print(summary(dp4dsNlogNFit))\n  ggplot() +\n    geom_point(data = dataFrame, aes_string(x = indepVarName, y = depVarName), size = 3) +\n    geom_smooth(data = dataFrame, aes_string(x = indepVarName, y = depVarName),\n                method = \"lm\", se = FALSE, colour = \"RED\", formula = y ~ poly(x,2)) +\n    geom_smooth(data = dataFrame, aes_string(x = indepVarName, y = depVarName),\n                method = \"lm\", se = FALSE, colour = \"BLUE\", formula = y ~ x:log(x) + x) +\n    xlab(label = xLabel) +\n    ylab(label = yLabel)\n}\n\n\nI use ggplot to produce the plot, but I cannot figure out how to produce the legend. Every example I have seen assumes a separate entry in the legend for each set of data. The problem is I have a single set of data with two different curve fits. How do I make a legend with red for the quadratic curve fit and blue for the n lg n curve fit?\n\nAnother minor question. Are the above write statements the best way to echo a message to the console?\n\nThanks,\nStan\n\nJ. Stanley Warford\nProfessor of Computer Science\nPepperdine University\nMalibu, CA 90263\nStan.Warford at pepperdine.edu<mailto:Stan.Warford at pepperdine.edu>\n310-506-4332\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello all,\n\nI provide a function for my students to do two curve fits with a single set of data:\n\n# Performs two curve fits, quadratic and n lg n, with a plot of the data and the two curves\n# First pa",
+      "thread_id": "thread-339ff6a6eb33",
+      "thread_depth": 0,
+      "month": "2014-12"
+    },
+    {
+      "id": "msg-455b67210008",
+      "message_id": "<CA+vqiLGCr94PSY6kMoKuF5txyzJXbD9ej0xY1XJVmsKe=bEXcA@mail.gmail.com>",
+      "from_name": "Ista Zahn",
+      "from_email_hash": "098a31f0cc45d6b90198bf3b75e03deed7c570292be352a10b98aeee4bf7012e",
+      "date": "2014-12-30T20:58:26-05:00",
+      "subject": "[R-sig-teaching] Legend for curve fit plot",
+      "subject_clean": "Legend for curve fit plot",
+      "in_reply_to": "<03EC1874-08A1-4208-A75C-BB0C130640E9@pepperdine.edu>",
+      "references": [
+        "<03EC1874-08A1-4208-A75C-BB0C130640E9@pepperdine.edu>"
+      ],
+      "body_plain": "Hi Stan,\n\nHere is one way to get the legend (I've also cleaned up the write statements):\n\ndp4dsFit <- function(dataFrame,\n                     indepVarName,\n                     depVarName,\n                     xLabel = indepVarName,\n                     yLabel = depVarName) {\n  library(ggplot2)\n  library(labeling)\n  dp4dsQuadraticFit <- lm(dataFrame[,depVarName] ~\npoly(dataFrame[,indepVarName],2))\n  cat(\n\"=============\\r\nQuadratic fit\\r\n=============\\r\")\n  print(summary(dp4dsQuadraticFit))\n  dp4dsNlogNFit <- lm(dataFrame[,depVarName] ~\ndataFrame[,indepVarName]:log(dataFrame[,indepVarName]) +\ndataFrame[,indepVarName])\n  cat(\n\"==========\\r\nn lg n fit\\r\n==========\\r\")\n  print(summary(dp4dsNlogNFit))\n  dataFrame <- rbind(data.frame(dataFrame,\n                                predicted = predict(dp4dsQuadraticFit),\n                                model = \"Quadratic\"),\n                     data.frame(dataFrame,\n                                predicted = predict(dp4dsNlogNFit),\n                                model = \"n lg n\"))\n  ggplot() +\n    geom_point(data = subset(dataFrame, model = \"Quadratic\"),\n               aes_string(x = indepVarName, y = depVarName),\n               size = 3) +\n    geom_line(data = dataFrame,\n                aes_string(x = indepVarName, y = \"predicted\", color =\n\"model\")) +\n    xlab(label = xLabel) +\n    ylab(label = yLabel)\n}\n\n\nBut this is not the R way(tm). The R way is to give your user control\nover the output by returning values from your functions, and writing\nprint or summary methods. Here is how I would go about it:\n\ndp4dsFit <- function(dataFrame,\n                     indepVarName,\n                     depVarName) {\n  dp4dsQuadraticFit <- lm(dataFrame[,depVarName] ~\npoly(dataFrame[,indepVarName],2))\n  dp4dsNlogNFit <- lm(dataFrame[,depVarName] ~\ndataFrame[,indepVarName]:log(dataFrame[,indepVarName]) +\ndataFrame[,indepVarName])\n  dataFrame <- rbind(data.frame(dataFrame,\n                                predicted = predict(dp4dsQuadraticFit),\n                                model = \"Quadratic\"),\n                     data.frame(dataFrame,\n                                predicted = predict(dp4dsNlogNFit),\n                                model = \"n lg n\"))\n  R <- list(dp4dsQuadraticFit = dp4dsQuadraticFit,\n            dp4dsNlogNFit = dp4dsNlogNFit,\n            dataFrame = dataFrame,\n            indepVarName = indepVarName,\n            depVarName = depVarName)\n  class(R) <- c(\"dp4dsFit\", class(R))\n  return(R)\n}\n\nprint.dp4dsFit <- function(x) {\n  cat(\n\"=============\\r\nQuadratic fit\\r\n=============\\r\")\n  print(x$dp4dsQuadraticFit)\n  cat(\n\"==========\\r\nn lg n fit\\r\n==========\\r\")\n  print(x$dp4dsNlogNFit)\n}\n\nsummary.dp4dsFit <- function(x, plot = FALSE) {\n  R <- sapply(x[1:2],\n              summary,\n              simplify=FALSE)\n  if(plot) print(plot(x))\n  class(R) <- c(\"dp4dsFit\", class(R))\n  return(R)\n}\n\nplot.dp4dsFit <- function(x, xLabel = x$indepVarName, yLabel = x$depVarName) {\n  library(ggplot2)\n  ggplot() +\n    geom_point(data = subset(x$dataFrame, model == \"Quadratic\"),\n               aes_string(x = x$indepVarName, y = x$depVarName),\n               size = 3) +\n    geom_line(data = x$dataFrame,\n              aes_string(x = x$indepVarName, y = \"predicted\", color =\n\"model\")) +\n    xlab(label = xLabel) +\n    ylab(label = yLabel)\n}\n\n## now you can do it all in one:\nmodels <- dp4dsFit(mtcars, \"mpg\", \"hp\")\nsummary(models, plot=TRUE)\n## or just plot it\nplot(models)\n## or just look at the model summaries\nsummary(models)\n## or do something else entirely:\npar( mfcol = c(2, 1))\nplot(models[[1]], which = 1)\nplot(models[[2]], which = 1)\n\nBest,\nIsta\n\nOn Tue, Dec 30, 2014 at 5:49 PM, Warford, Stan\n<Stan.Warford at pepperdine.edu> wrote:\n> Hello all,\n>\n> I provide a function for my students to do two curve fits with a single set of data:\n>\n> # Performs two curve fits, quadratic and n lg n, with a plot of the data and the two curves\n> # First parameter: A data frame\n> # Second parameter: Name of the independent (x) variable\n> # Third parameter: Name of the dependent (y) variable\n> # Fourth parameter: The label for the x-axis\n> # Fifth parameter: The label for the y-axis\n> dp4dsFit <- function(dataFrame, indepVarName, depVarName, xLabel, yLabel) {\n>   library(ggplot2)\n>   library(labeling)\n>   dp4dsQuadraticFit <- lm(dataFrame[,depVarName] ~ poly(dataFrame[,indepVarName],2))\n>   write(\"=============\\r\",file=\"\")\n>   write(\"Quadratic fit\\r\",file=\"\")\n>   write(\"=============\\r\",file=\"\")\n>   print(summary(dp4dsQuadraticFit))\n>   dp4dsNlogNFit <- lm(dataFrame[,depVarName] ~ dataFrame[,indepVarName]:log(dataFrame[,indepVarName]) + dataFrame[,indepVarName])\n>   write(\"==========\\r\",file=\"\")\n>   write(\"n lg n fit\\r\",file=\"\")\n>   write(\"==========\\r\",file=\"\")\n>   print(summary(dp4dsNlogNFit))\n>   ggplot() +\n>     geom_point(data = dataFrame, aes_string(x = indepVarName, y = depVarName), size = 3) +\n>     geom_smooth(data = dataFrame, aes_string(x = indepVarName, y = depVarName),\n>                 method = \"lm\", se = FALSE, colour = \"RED\", formula = y ~ poly(x,2)) +\n>     geom_smooth(data = dataFrame, aes_string(x = indepVarName, y = depVarName),\n>                 method = \"lm\", se = FALSE, colour = \"BLUE\", formula = y ~ x:log(x) + x) +\n>     xlab(label = xLabel) +\n>     ylab(label = yLabel)\n> }\n>\n>\n> I use ggplot to produce the plot, but I cannot figure out how to produce the legend. Every example I have seen assumes a separate entry in the legend for each set of data. The problem is I have a single set of data with two different curve fits. How do I make a legend with red for the quadratic curve fit and blue for the n lg n curve fit?\n>\n> Another minor question. Are the above write statements the best way to echo a message to the console?\n>\n> Thanks,\n> Stan\n>\n> J. Stanley Warford\n> Professor of Computer Science\n> Pepperdine University\n> Malibu, CA 90263\n> Stan.Warford at pepperdine.edu<mailto:Stan.Warford at pepperdine.edu>\n> 310-506-4332\n>\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Hi Stan,\n\nHere is one way to get the legend (I've also cleaned up the write statements):\n\ndp4dsFit <- function(dataFrame,\n                     indepVarName,\n                     depVarName,\n          ",
+      "thread_id": "thread-339ff6a6eb33",
+      "thread_depth": 1,
+      "month": "2014-12"
+    },
+    {
+      "id": "msg-95410001df0e",
+      "message_id": "<FCC5C26F-0193-4E77-889C-6DD041771CED@pepperdine.edu>",
+      "from_name": "Warford, Stan",
+      "from_email_hash": "ae192b89aa7d7f34d237b6becb127786abf8a5ee39276893b6ce49d8e8bcfed4",
+      "date": "2014-12-30T21:49:41-08:00",
+      "subject": "[R-sig-teaching] Legend for curve fit plot",
+      "subject_clean": "Legend for curve fit plot",
+      "in_reply_to": "<CA+vqiLGCr94PSY6kMoKuF5txyzJXbD9ej0xY1XJVmsKe=bEXcA@mail.gmail.com>",
+      "references": [
+        "<03EC1874-08A1-4208-A75C-BB0C130640E9@pepperdine.edu>",
+        "<CA+vqiLGCr94PSY6kMoKuF5txyzJXbD9ej0xY1XJVmsKe=bEXcA@mail.gmail.com>"
+      ],
+      "body_plain": "Thanks for the prompt responses. What a great list!\n\nI am going with Ista?s solution. I appreciate the R way, but the whole point of this script is to shield students from having to know R as much as possible. I don?t want to give them any choices. In fact, last year I had them use Deducer thinking that point and click would be easy and they could experiment to their hearts content, but that was a complete disaster. This year using these pre-written scripts with RStudio was much better. Even I have only learned enough R to show students how to do a curve fit. I am a complete novice.\n\nDennis questioned the model.\n\nQ: Do you want x:log(x) or x * log(x) in the second geom_smooth() formula?\n\nI hope I am doing this correctly. Computer science theory predicts n lg n behavior for some data sets and quadratic for others. I hope I am fitting to \n\nA * n * log(n) + B * n + C\n\nwhere * in the above expression represents multiplication. I was under the impression that : in the model formula was multiplication. Can someone verify that.\n\nThanks,\nStan\n\nJ. Stanley Warford\nProfessor of Computer Science\nPepperdine University\nMalibu, CA 90263\nStan.Warford at pepperdine.edu\n310-506-4332",
+      "body_snippet": "Thanks for the prompt responses. What a great list!\n\nI am going with Ista?s solution. I appreciate the R way, but the whole point of this script is to shield students from having to know R as much as ",
+      "thread_id": "thread-339ff6a6eb33",
+      "thread_depth": 2,
+      "month": "2014-12"
+    },
+    {
+      "id": "msg-10e0d1ddbac8",
+      "message_id": "<6E6ED682-B998-4E3B-A973-259089A4C5EF@calvin.edu>",
+      "from_name": "Randall Pruim",
+      "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
+      "date": "2014-12-31T17:16:01Z",
+      "subject": "[R-sig-teaching] Legend for curve fit plot",
+      "subject_clean": "Legend for curve fit plot",
+      "in_reply_to": "<FCC5C26F-0193-4E77-889C-6DD041771CED@pepperdine.edu>",
+      "references": [
+        "<03EC1874-08A1-4208-A75C-BB0C130640E9@pepperdine.edu>",
+        "<CA+vqiLGCr94PSY6kMoKuF5txyzJXbD9ej0xY1XJVmsKe=bEXcA@mail.gmail.com>",
+        "<FCC5C26F-0193-4E77-889C-6DD041771CED@pepperdine.edu>"
+      ],
+      "body_plain": "A few more things for you to consider:\n\n1) ?formula will tell you all about the formula syntax in R.  a * b expands to a +  b + a:b, and a:b is an ?interaction term? which is basically multiplication.  You can also use the I() function to inhibit the formula from treating things like + and * in formula-special ways.\n\n2) I think you should modify your approach to R slightly.  You are correct that beginners are not well served by having too much thrown at them.  But I think they are also poorly served by being fed lots of specialized functions that do 1 highly specific task in an idiosyncratic way.  So...\n\n2a) If you are providing them scripts, make sure that they ?play well together? and represent a coherent system.  Doing things ?the R way? is part of this, but there are actually multiple R ways (and also many things that are definitely not an R way). So...\n\n2b) Begin by determining which standard tools and packages you want to use and make the rest of what you give them fit into that system.  This reduces the cognitive load for your students and allows them to do more with less.\n\n2c) In fact, I recommend that you make a list of all the code you used in your most recent course. Then arrange the code into things that you find essential and nonessential.  Also mark the things your students found easy and hard.  Now try to get rid of as much as you can without losing things students can do.  This may require replacing some old favorites with some new favorites.  You will know you are succeeding if when you introduce something new, your students can pretty much guess how it works before you show them.\n\n3) The mosaic package (I am the maintainer) provides one particular way of doing this.  It begins by assuming you will want to show students the modeling language (to use things like lm()), so it emphasizes using formulas.  For this reason, the primary graphics system chosen is lattice rather than ggplot2.  (There are a few things that support ggplot2 users as well, and you might take a look at mplot(), in particular.)  We have also added functions that provide formula interfaces to many numerical summaries, including our favorite:\n\n> favstats( disp ~ cyl, data=mtcars )\n  .group   min     Q1 median     Q3   max     mean       sd  n missing\n1      4  71.1  78.85  108.0 120.65 146.7 105.1364 26.87159 11       0\n2      6 145.0 160.00  167.6 196.30 258.0 183.3143 41.56246  7       0\n3      8 275.8 301.75  350.5 390.00 472.0 353.1000 67.77132 14       0\n\nIn the end, most of what beginners need to do can be done with a single template:\n\ngoal( formula, data = mydata )\n\nwhere formula is one of\n\ny ~ x\ny ~ x | z\n          ~ x\n  ~ x | z\n\nFor data manipulation (if that is important to you), we are moving to using the dplyr and tidyr packages.\n\n4) The internals of your functions are less important (for student use) than the API, so choose your API and variable names very carefully.  For example, nearly all R functions that receive data call the variable ?data?, not ?dataFrame?.  Why have your function be different from all the rest? That makes students need to remember when to use ?data? and when to use ?dataFrame?.  Compare your functions to the functions in your list in 2c.\n\n5) The mosaic package also provides functions called makeFun() and plotFun() that make it easy to extract from a model a functional representation of the fit and to plot that function on top of a scatter plot.  Try example(makeFun).\n\n6) I?m including below another version of your function that provides a formula interface:\n\nmodels <- dp4dsFit(mpg ~ hp, data = mtcars)\n\nIt also rearranges the data a bit to be less wasteful of space (at the cost of some slightly trickier ggplot2 code).  These plots could be done in lattice as well, if you decided to go that route.  I?ve not done any serious debugging or tried to make other improvements, I just wanted to demonstrate how to write something with a formula interface, in case you decide to go more in that direction.\n\nEnjoy!\n\n?rjp\n\ndp4dsFit <- function(formula, data = parent.frame())\n{\n  # code below presumes formula has y ~ x shape.  Fancier code\n  # could check this and throw an error when badly shaped formulas\n  # are attempted.\n  # The code could be made more beautiful using mosaic::lhs() and\n  # mosaic::rhs() to extract left and right sides of formula.\n  yName = paste(deparse(formula[[3]]), collapse=\"\")\n  xName = paste(deparse(formula[[2]]), collapse=\"\")\n  quadraticFormula <-\n    substitute(y ~ poly(x, 2),\n               list(y = formula[[2]], x = formula[[3]]))\n  nlognFormula <-\n    substitute(y ~ x + x : log(x),\n               list(y = formula[[2]], x = formula[[3]]))\n\n  dp4dsQuadraticFit <- eval(\n    substitute( lm(f, data=data), list(f=quadraticFormula))\n    )\n  dp4dsNlogNFit <- eval(\n    substitute(lm(f, data=data), list(f=nlognFormula))\n  )\n\n  # could also use dplyr::mutate() to add in extra variables\n  data <- transform(\n    data,\n    predicted_quad = predict(dp4dsQuadraticFit),\n    predicted_nlogn = predict(dp4dsNlogNFit)\n  )\n  R <- list(dp4dsQuadraticFit = dp4dsQuadraticFit,\n            dp4dsNlogNFit = dp4dsNlogNFit,\n            data = data,\n            yName = yName,\n            xName = xName)\n  class(R) <- c(\"dp4dsFit\", class(R))\n  return(R)\n}\n\nprint.dp4dsFit <- function(x) {\n  cat(\n\"=============\\r\nQuadratic fit\\r\n=============\\r\")\n  print(x$dp4dsQuadraticFit)\n  cat(\n\"==========\\r\nn lg n fit\\r\n==========\\r\")\n  print(x$dp4dsNlogNFit)\n}\n\nsummary.dp4dsFit <- function(object, plot = FALSE, ...) {\n  R <- sapply(object[1:2],\n              summary,\n              simplify=FALSE)\n  if(plot) print(plot(object))\n  class(R) <- c(\"dp4dsFit\", class(R))\n  return(R)\n}\n\naes_c <- function( ... ) {\n  res <- c( ... )\n  class(res) <- \"uneval\"\n  res\n}\n\nplot.dp4dsFit <- function(x, y, xLabel = x$yName, yLabel = x$xName, ...) {\n  library(ggplot2)\n  ggplot() +\n    geom_point(data = x$data,\n               aes_string(x = x$yName, y = x$xName),\n               size = 3) +\n    geom_line(data = x$data,\n              aes_c(\n                aes_string(x = x$yName),\n                aes(y = predicted_quad, colour = \"quadratic\"))) +\n    geom_line(data = x$data,\n              aes_c(\n                aes_string(x = x$yName),\n                aes(y = predicted_nlogn, colour = \"n log n\"))) +\n    xlab(label = xLabel) +\n    ylab(label = yLabel) +\n    guides(colour = guide_legend(title=\"model\"))\n}\n\n## now you can do it all in one:\nmodels <- dp4dsFit(mpg ~ hp, data = mtcars)\nsummary(models, plot=TRUE)\n## or just plot it\nplot(models)\n## or just look at the model summaries\nsummary(models)\n## or do something else entirely:\nplot(models[[1]], which = 1)\nmosaic::mplot(models[[2]], which = 1, system=\"gg\")\n\n\nOn Dec 31, 2014, at 12:49 AM, Warford, Stan <Stan.Warford at pepperdine.edu<mailto:Stan.Warford at pepperdine.edu>> wrote:\n\nThanks for the prompt responses. What a great list!\n\nI am going with Ista?s solution. I appreciate the R way, but the whole point of this script is to shield students from having to know R as much as possible. I don?t want to give them any choices. In fact, last year I had them use Deducer thinking that point and click would be easy and they could experiment to their hearts content, but that was a complete disaster. This year using these pre-written scripts with RStudio was much better. Even I have only learned enough R to show students how to do a curve fit. I am a complete novice.\n\nDennis questioned the model.\n\nQ: Do you want x:log(x) or x * log(x) in the second geom_smooth() formula?\n\nI hope I am doing this correctly. Computer science theory predicts n lg n behavior for some data sets and quadratic for others. I hope I am fitting to\n\nA * n * log(n) + B * n + C\n\nwhere * in the above expression represents multiplication. I was under the impression that : in the model formula was multiplication. Can someone verify that.\n\nThanks,\nStan\n\nJ. Stanley Warford\nProfessor of Computer Science\nPepperdine University\nMalibu, CA 90263\nStan.Warford at pepperdine.edu<mailto:Stan.Warford at pepperdine.edu>\n310-506-4332\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "A few more things for you to consider:\n\n1) ?formula will tell you all about the formula syntax in R.  a * b expands to a +  b + a:b, and a:b is an ?interaction term? which is basically multiplication.",
+      "thread_id": "thread-339ff6a6eb33",
+      "thread_depth": 3,
+      "month": "2014-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-2e0178efcf81",
+      "subject": "lmer",
+      "message_count": 1,
+      "participants": [
+        "Yahoo!"
+      ],
+      "started": "2014-12-21T23:45:51+00:00",
+      "last_reply": "2014-12-21T23:45:51+00:00",
+      "root_message_id": "msg-2e0178efcf81"
+    },
+    {
+      "id": "thread-2e0178efcf81",
+      "subject": "lmer",
+      "message_count": 1,
+      "participants": [
+        "Yahoo!"
+      ],
+      "started": "2014-12-21T23:45:51+00:00",
+      "last_reply": "2014-12-21T23:45:51+00:00",
+      "root_message_id": "msg-2e0178efcf81"
+    },
+    {
+      "id": "thread-1847189a2002",
+      "subject": "random effect model in R---- lmer",
+      "message_count": 1,
+      "participants": [
+        "Yahoo!"
+      ],
+      "started": "2014-12-22T13:26:00+00:00",
+      "last_reply": "2014-12-22T13:26:00+00:00",
+      "root_message_id": "msg-1847189a2002"
+    },
+    {
+      "id": "thread-1847189a2002",
+      "subject": "random effect model in R---- lmer",
+      "message_count": 2,
+      "participants": [
+        "Martin Maechler",
+        "Yahoo!"
+      ],
+      "started": "2014-12-22T13:26:00+00:00",
+      "last_reply": "2014-12-22T14:42:52+01:00",
+      "root_message_id": "msg-1847189a2002"
+    },
+    {
+      "id": "thread-a68e1f21d67a",
+      "subject": "Problem with \"attach\"",
+      "message_count": 4,
+      "participants": [
+        "Kenn Konstabel",
+        "Richard M. Heiberger",
+        "Steven Stoline"
+      ],
+      "started": "2014-12-28T18:35:57-05:00",
+      "last_reply": "2014-12-30T10:45:39+02:00",
+      "root_message_id": "msg-a68e1f21d67a"
+    },
+    {
+      "id": "thread-339ff6a6eb33",
+      "subject": "Legend for curve fit plot",
+      "message_count": 4,
+      "participants": [
+        "Ista Zahn",
+        "Randall Pruim",
+        "Warford, Stan"
+      ],
+      "started": "2014-12-30T14:49:04-08:00",
+      "last_reply": "2014-12-31T17:16:01+00:00",
+      "root_message_id": "msg-339ff6a6eb33"
+    }
+  ]
+}

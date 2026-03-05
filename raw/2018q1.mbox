@@ -1,0 +1,527 @@
+From nicholasjhorton at gmail.com  Tue Jan  9 12:14:00 2018
+From: nicholasjhorton at gmail.com (Nicholas Horton)
+Date: Tue, 9 Jan 2018 06:14:00 -0500
+Subject: [R-sig-teaching] Electronic Conference on Teaching Statistics call
+	for proposals
+Message-ID: <1C11B3DE-B7D5-403D-A44D-DD1EDAD15A94@gmail.com>
+
+We are excited to announce that the 2018 Electronic Conference on Teaching
+Statistics (eCOTS) will be held online May 21-25, 2018, and is currently
+accepting proposals for breakout sessions, virtual posters, and
+birds-of-a-feather discussions.  This year's online conference is hosted
+by the Consortium for the Advancement of Undergraduate Statistics
+Education (CAUSE) and focuses on statistics education at all levels and
+types of learning institutions:  secondary school, two-year/community
+colleges, and four year liberal arts and research universities.
+
+The conference theme is "Data Science for All".  Recently, we have seen a
+rise in data scientist (or related) positions in industry as well as a
+boom in data science graduate and undergraduate programs.  How should
+statistics educators and students respond?  What curriculum should we
+teach?  How should we teach it?  Have the goals of statistics education
+changed?  If so, how?
+
+This conference is for anyone who teaches or studies statistics or data
+science.  We have already started putting together a diverse set of
+exciting keynote speakers who work across different areas in statistics
+and data science education.  Sessions will range from ideas for
+incorporating statistics and/or data science concepts into all curricular
+levels (K-12, two-year colleges, four-year colleges, graduate programs) to
+providing interactive data and learning opportunities for all statistics
+students and educators to building certificates and degree programs that
+include data science.  Panel discussions will include describing data
+science and statistics education, a look at the state-of-the-art in online
+statistics education tools, and the future of statistics education,
+including funding opportunities.  Virtual posters will showcase the
+current broad range of work in "Statistics and/or Data Science for K-16
+and Beyond".  The conference website will also include a repository of
+related available statistics and data science resources for attendees as
+well as the general public.
+
+Proposals should be related to the conference theme will be given
+priority, but proposals related to all aspects of statistics and data
+science education are welcome.  All proposals are due by March 1, 2018.
+For more details about eCOTS 2018 and to submit a proposal, please visit
+www.causeweb.org/ecots/ecots18/. If you have any questions, please contact
+Rebecca Nugent at rnugent at stat.cmu.edu. Thanks!
+
+Best,
+Rebecca Nugent
+eCOTS 2018 Program Chair
+
+Nicholas Horton 
+Professor of Statistics
+Department of Mathematics and Statistics, Amherst College
+PO Box 5000, AC #2239
+Amherst, MA 01002-5000
+
+
+From tony.n.brown at rice.edu  Wed Jan 10 16:53:15 2018
+From: tony.n.brown at rice.edu (Brown, Tony N)
+Date: Wed, 10 Jan 2018 09:53:15 -0600
+Subject: [R-sig-teaching] R-sig-teaching Digest, Vol 99, Issue 3
+In-Reply-To: <mailman.25.1513162802.23193.r-sig-teaching@r-project.org>
+References: <mailman.25.1513162802.23193.r-sig-teaching@r-project.org>
+Message-ID: <20180110095315.Horde.J7t4sf_MCdacAXlMnhBydg1@webmail.rice.edu>
+
+These materials may be useful for teaching about practical data  
+science using R:
+
+http://datascience.tntlab.org/
+
+Tony
+
+Quoting r-sig-teaching-request at r-project.org:
+
+> Send R-sig-teaching mailing list submissions to
+> &nbsp; &nbsp; &nbsp; &nbsp; r-sig-teaching at r-project.org
+>
+> To subscribe or unsubscribe via the World Wide Web, visit
+> &nbsp; &nbsp; &nbsp; &nbsp;  
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> or, via email, send a message with subject or body 'help' to
+> &nbsp; &nbsp; &nbsp; &nbsp; r-sig-teaching-request at r-project.org
+>
+> You can reach the person managing the list at
+> &nbsp; &nbsp; &nbsp; &nbsp; r-sig-teaching-owner at r-project.org
+>
+> When replying, please edit your Subject line so it is more specific
+> than "Re: Contents of R-sig-teaching digest..."
+>
+> Today's Topics:
+>
+> &nbsp; 1. Re: Data Science Materials (Laura Chihara)
+> &nbsp; 2. Re: Data Science Materials (AbouEl-Makarim Aboueissa)
+>
+> ----------------------------------------------------------------------
+>
+> Message: 1
+> Date: Tue, 12 Dec 2017 09:30:12 -0600
+> From: Laura Chihara <lchihara at carleton.edu>
+> To: AbouEl-Makarim Aboueissa <abouelmakarim1962 at gmail.com>
+> Cc: r-sig-teaching at r-project.org
+> Subject: Re: [R-sig-teaching] Data Science Materials
+> Message-ID: <7a0cc765-4851-9496-ab83-4c9ebfd68055 at carleton.edu>
+> Content-Type: text/plain; charset=utf-8; format=flowed
+>
+> There are some R Tutorials in Data Science that were developed by Adam
+> Loy (Carleton), Shonda Kuiper (Grinnell) and me (Laura Chihara, Carleton
+> College) for an ACM grant.
+>
+> http://web.grinnell.edu/individuals/kuipers/stat2labs/RTutorials.html
+>
+> -Laura
+>
+> On 12/6/2017 7:57 AM, AbouEl-Makarim Aboueissa wrote:
+>> Dear All: good morning
+>>
+>> I am planning to teach a course in practical data science using R, may
+be
+>> in Fall 2018. I am wondering if someone have some materials on data
+>> science
+>> such as notes, R codes, and etc.
+>>
+>> It will be highly appreciated if they are willing to share such
+materials
+>> with others.
+>>
+>> with many thanks
+>> abou
+>> ______________________
+>>
+>> *AbouEl-Makarim Aboueissa, PhD*
+>>
+>> *Professor of Statistics*
+>>
+>> *Department of Mathematics and Statistics*
+>> *University of Southern Maine*
+>>
+>> &nbsp; &nbsp; &nbsp; &nbsp; [[alternative HTML version deleted]]
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+> **************************************
+> Laura Chihara
+> Professor of Mathematics and Statistics
+> Department of Mathematics and Statistics
+> Carleton College
+> Northfield MN 55057
+> 507-222-4065
+>
+> ------------------------------
+>
+> Message: 2
+> Date: Tue, 12 Dec 2017 10:42:12 -0500
+> From: AbouEl-Makarim Aboueissa <abouelmakarim1962 at gmail.com>
+> To: Laura Chihara <lchihara at carleton.edu>
+> Cc: R-sig-teaching <r-sig-teaching at r-project.org>
+> Subject: Re: [R-sig-teaching] Data Science Materials
+> Message-ID:
+> &nbsp; &nbsp; &nbsp; &nbsp;
+> <CAE9stmc_yQh+zjhGPP-1HML2g83-EXzDO2jUuAqyz+VJ2arMSQ at mail.gmail.com>
+> Content-Type: text/plain; charset="UTF-8"
+>
+> Dear Laura:
+>
+> Thank you very much. It will help a lot.
+>
+> with thanks
+> abou
+>
+> ______________________
+>
+> *AbouEl-Makarim Aboueissa, PhD*
+>
+> *Professor of Statistics*
+>
+> *Department of Mathematics and Statistics*
+> *University of Southern Maine*
+>
+> On Tue, Dec 12, 2017 at 10:30 AM, Laura Chihara <lchihara at carleton.edu>
+> wrote:
+>> There are some R Tutorials in Data Science that were developed by Adam
+>> Loy
+>> (Carleton), Shonda Kuiper (Grinnell) and me (Laura Chihara, Carleton
+>> College) for an ACM grant.
+>>
+>> http://web.grinnell.edu/individuals/kuipers/stat2labs/RTutorials.html
+>>
+>> -Laura
+>>
+>> On 12/6/2017 7:57 AM, AbouEl-Makarim Aboueissa wrote:
+>>> Dear All: good morning
+>>>
+>>> I am planning to teach a course in practical data science using R, may
+>>> be
+>>> in Fall 2018. I am wondering if someone have some materials on data
+>>> science
+>>> such as notes, R codes, and etc.
+>>>
+>>> It will be highly appreciated if they are willing to share such
+>>> materials
+>>> with others.
+>>>
+>>> with many thanks
+>>> abou
+>>> ______________________
+>>>
+>>> *AbouEl-Makarim Aboueissa, PhD*
+>>>
+>>> *Professor of Statistics*
+>>>
+>>> *Department of Mathematics and Statistics*
+>>> *University of Southern Maine*
+>>>
+>>> &nbsp; &nbsp; &nbsp; &nbsp; [[alternative HTML version deleted]]
+>>>
+>>> _______________________________________________
+>>> R-sig-teaching at r-project.org mailing list
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>> **************************************
+>> Laura Chihara
+>> Professor of Mathematics and Statistics
+>> Department of Mathematics and Statistics
+>> Carleton College
+>> Northfield MN 55057
+>> 507-222-4065
+>> &nbsp;
+>
+> [[alternative HTML version deleted]]
+>
+> ------------------------------
+>
+> Subject: Digest Footer
+>
+> _______________________________________________
+> R-sig-teaching mailing list
+> R-sig-teaching at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+> ------------------------------
+>
+> End of R-sig-teaching Digest, Vol 99, Issue
+> 3*********************************************
+
+&nbsp;
+-- 
+Tony N. Brown, Ph.D.
+Professor of Sociology
+Rice University
+(713) 348-3242
+tnbrown at rice.edu
+Google Scholar Profile: http://tinyurl.com/lozlht8
+LinkedIn Profile: https://www.linkedin.com/in/tony-nicholas-brown-31a064a6
+
+
+From bret.larget at wisc.edu  Wed Feb 21 00:17:16 2018
+From: bret.larget at wisc.edu (BRET R LARGET)
+Date: Tue, 20 Feb 2018 23:17:16 +0000
+Subject: [R-sig-teaching] Fw: Questions on interactively teaching R
+In-Reply-To: <2e30b4a0-fad4-c8ce-74c1-5c98d18701bb@gmail.com>
+References: <mailman.791.884.1519152898.1673.r-sig-teaching@r-project.org>,
+ <2e30b4a0-fad4-c8ce-74c1-5c98d18701bb@gmail.com>
+Message-ID: <DM5PR06MB326015D74C96C1771FE7D83888CF0@DM5PR06MB3260.namprd06.prod.outlook.com>
+
+
+A message on behalf of Bjoern Fisseler.
+
+
+-Bret Larget
+
+
+
+
+From bret.larget at wisc.edu  Wed Feb 21 03:40:25 2018
+From: bret.larget at wisc.edu (BRET R LARGET)
+Date: Wed, 21 Feb 2018 02:40:25 +0000
+Subject: [R-sig-teaching] A second try...
+Message-ID: <DM5PR06MB32607DDCAF837708DECB1C4A88CE0@DM5PR06MB3260.namprd06.prod.outlook.com>
+
+Forwarded message:
+
+
+------------------------------------------------------------------------------
+
+Dear list,
+
+I'm currently thinking about possible ways how to interactively teach R
+to psychology students. I'm working with R myself, but am currently
+employed as an e-learning specialist at my university
+
+Doing some research I came across DataCamp, which could be a solution,
+if it wasn't a commercial vendor. Also using DataCamp Light would not be
+possible, because of the strict privacy policy of my institution.
+
+My idea is to create some kind of interactive workshop, a combination of
+video lecture, additional text/instructions, and an interactive R
+console similar to Swirl. Currently the students can only view a video
+as sort of "tutorial", and then have to do some exercises using R or
+RStudio. My imagination goes a little further:
+
+   * The students click on the video and start the tutorial. The lecturer
+     explains something, and the video stops at the first exercise.
+   * That's when the students have to do something using the interactive
+     R console. The enter some code and run it. Depending on the type of
+     exercise, they get feedback through the system in form of additional
+     text etc.
+   * All this is combined in one package, which is ideally fully usable
+     via Moodle.
+
+Does anyone know if something like this is available as a free solution?
+Or how could such a thing be tackled technically?
+
+I'm thankful for any clues.
+
+Kind regards
+
+          Bjoern
+
+	[[alternative HTML version deleted]]
+
+
+From rpruim at calvin.edu  Wed Feb 21 03:52:11 2018
+From: rpruim at calvin.edu (Randall Pruim)
+Date: Wed, 21 Feb 2018 02:52:11 +0000
+Subject: [R-sig-teaching] A second try...
+In-Reply-To: <DM5PR06MB32607DDCAF837708DECB1C4A88CE0@DM5PR06MB3260.namprd06.prod.outlook.com>
+References: <DM5PR06MB32607DDCAF837708DECB1C4A88CE0@DM5PR06MB3260.namprd06.prod.outlook.com>
+Message-ID: <52FA8054-156B-470F-8AB4-BCF56554E3F7@calvin.edu>
+
+Are you familiar with the learnr package for creating tutorials?  That might do much of what you want.  Also, checkr (by Danny Kaplan) is in development and will provide a way for you to check work and give feedback.
+
+?rjp
+
+> On Feb 20, 2018, at 9:40 PM, BRET R LARGET <bret.larget at wisc.edu> wrote:
+> 
+> Forwarded message:
+> 
+> 
+> ------------------------------------------------------------------------------
+> 
+> Dear list,
+> 
+> I'm currently thinking about possible ways how to interactively teach R
+> to psychology students. I'm working with R myself, but am currently
+> employed as an e-learning specialist at my university
+> 
+> Doing some research I came across DataCamp, which could be a solution,
+> if it wasn't a commercial vendor. Also using DataCamp Light would not be
+> possible, because of the strict privacy policy of my institution.
+> 
+> My idea is to create some kind of interactive workshop, a combination of
+> video lecture, additional text/instructions, and an interactive R
+> console similar to Swirl. Currently the students can only view a video
+> as sort of "tutorial", and then have to do some exercises using R or
+> RStudio. My imagination goes a little further:
+> 
+>   * The students click on the video and start the tutorial. The lecturer
+>     explains something, and the video stops at the first exercise.
+>   * That's when the students have to do something using the interactive
+>     R console. The enter some code and run it. Depending on the type of
+>     exercise, they get feedback through the system in form of additional
+>     text etc.
+>   * All this is combined in one package, which is ideally fully usable
+>     via Moodle.
+> 
+> Does anyone know if something like this is available as a free solution?
+> Or how could such a thing be tackled technically?
+> 
+> I'm thankful for any clues.
+> 
+> Kind regards
+> 
+>          Bjoern
+> 
+> 	[[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://urldefense.proofpoint.com/v2/url?u=https-3A__stat.ethz.ch_mailman_listinfo_r-2Dsig-2Dteaching&d=DwICAg&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=vY7prIe1UzFu2JcgL5eEb8-Wxcthysvzd9Fb46qM9SE&s=iMp1i3o5xxovmQTCWWLKpKq4eYbwbCXWRrMXQtdr2fk&e=
+
+
+From retzerjj at gmail.com  Wed Feb 21 03:56:13 2018
+From: retzerjj at gmail.com (Retzer Joe)
+Date: Tue, 20 Feb 2018 20:56:13 -0600
+Subject: [R-sig-teaching] A second try...
+In-Reply-To: <DM5PR06MB32607DDCAF837708DECB1C4A88CE0@DM5PR06MB3260.namprd06.prod.outlook.com>
+References: <DM5PR06MB32607DDCAF837708DECB1C4A88CE0@DM5PR06MB3260.namprd06.prod.outlook.com>
+Message-ID: <A3C2D8BF-5435-4025-9685-976B3A12C09C@gmail.com>
+
+DataCamp offers a free subscription to classes with appropriate academic credentials.
+Best,
+Joe
+
+Sent from my iPhone
+
+> On Feb 20, 2018, at 8:40 PM, BRET R LARGET <bret.larget at wisc.edu> wrote:
+> 
+> Forwarded message:
+> 
+> 
+> ------------------------------------------------------------------------------
+> 
+> Dear list,
+> 
+> I'm currently thinking about possible ways how to interactively teach R
+> to psychology students. I'm working with R myself, but am currently
+> employed as an e-learning specialist at my university
+> 
+> Doing some research I came across DataCamp, which could be a solution,
+> if it wasn't a commercial vendor. Also using DataCamp Light would not be
+> possible, because of the strict privacy policy of my institution.
+> 
+> My idea is to create some kind of interactive workshop, a combination of
+> video lecture, additional text/instructions, and an interactive R
+> console similar to Swirl. Currently the students can only view a video
+> as sort of "tutorial", and then have to do some exercises using R or
+> RStudio. My imagination goes a little further:
+> 
+>   * The students click on the video and start the tutorial. The lecturer
+>     explains something, and the video stops at the first exercise.
+>   * That's when the students have to do something using the interactive
+>     R console. The enter some code and run it. Depending on the type of
+>     exercise, they get feedback through the system in form of additional
+>     text etc.
+>   * All this is combined in one package, which is ideally fully usable
+>     via Moodle.
+> 
+> Does anyone know if something like this is available as a free solution?
+> Or how could such a thing be tackled technically?
+> 
+> I'm thankful for any clues.
+> 
+> Kind regards
+> 
+>          Bjoern
+> 
+>    [[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From rdonatello at csuchico.edu  Wed Feb 21 05:01:06 2018
+From: rdonatello at csuchico.edu (Robin A Donatello)
+Date: Wed, 21 Feb 2018 04:01:06 +0000
+Subject: [R-sig-teaching] A second try...
+In-Reply-To: <A3C2D8BF-5435-4025-9685-976B3A12C09C@gmail.com>
+References: <DM5PR06MB32607DDCAF837708DECB1C4A88CE0@DM5PR06MB3260.namprd06.prod.outlook.com>,
+ <A3C2D8BF-5435-4025-9685-976B3A12C09C@gmail.com>
+Message-ID: <MWHPR05MB332707FA49034F81DF995D29A3CE0@MWHPR05MB3327.namprd05.prod.outlook.com>
+
+Agree with Joe - Create an educational "classroom" group in Data Camp. Once they confirm you're a valid instructor you can add students and they get all Data Camp courses for free for the duration of the course. Typically 4-6 months or so? I use it quite frequently as a primer to R before the class, as a continuing education tool, and as lesson enhancement tool throughout the semester.
+
+
+-Robin
+
+________________________________
+From: R-sig-teaching <r-sig-teaching-bounces at r-project.org> on behalf of Retzer Joe <retzerjj at gmail.com>
+Sent: Tuesday, February 20, 2018 6:56:13 PM
+To: BRET R LARGET
+Cc: R-sig-teaching
+Subject: Re: [R-sig-teaching] A second try...
+
+DataCamp offers a free subscription to classes with appropriate academic credentials.
+Best,
+Joe
+
+Sent from my iPhone
+
+> On Feb 20, 2018, at 8:40 PM, BRET R LARGET <bret.larget at wisc.edu> wrote:
+>
+> Forwarded message:
+>
+>
+> ------------------------------------------------------------------------------
+>
+> Dear list,
+>
+> I'm currently thinking about possible ways how to interactively teach R
+> to psychology students. I'm working with R myself, but am currently
+> employed as an e-learning specialist at my university
+>
+> Doing some research I came across DataCamp, which could be a solution,
+> if it wasn't a commercial vendor. Also using DataCamp Light would not be
+> possible, because of the strict privacy policy of my institution.
+>
+> My idea is to create some kind of interactive workshop, a combination of
+> video lecture, additional text/instructions, and an interactive R
+> console similar to Swirl. Currently the students can only view a video
+> as sort of "tutorial", and then have to do some exercises using R or
+> RStudio. My imagination goes a little further:
+>
+>   * The students click on the video and start the tutorial. The lecturer
+>     explains something, and the video stops at the first exercise.
+>   * That's when the students have to do something using the interactive
+>     R console. The enter some code and run it. Depending on the type of
+>     exercise, they get feedback through the system in form of additional
+>     text etc.
+>   * All this is combined in one package, which is ideally fully usable
+>     via Moodle.
+>
+> Does anyone know if something like this is available as a free solution?
+> Or how could such a thing be tackled technically?
+>
+> I'm thankful for any clues.
+>
+> Kind regards
+>
+>          Bjoern
+>
+>    [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+	[[alternative HTML version deleted]]
+
+

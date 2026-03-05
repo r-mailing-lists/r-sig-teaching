@@ -1,0 +1,55 @@
+From hayden at mv.mv.com  Mon Mar  1 15:39:18 2010
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Mon, 1 Mar 2010 09:39:18 -0500 (EST)
+Subject: [R-sig-teaching] exchangeability
+Message-ID: <20100301143918.72091.qmail@mv.mv.com>
+
+
+I am trying to understand the assumptions for a permutation test and
+figure out how to explain those to beginning students.  (I am working
+on a project to integrate resampling methods into the first course in
+statistics.)  I have received some help from Tim Hesterberg who gave
+me the first definition of exchangeability I've seen.  One question is
+whether assumptions apply to randomized experiments or to using
+permutation tests for survey sampling applications.  In addition it
+would be helpful to have some counterexamples where the assumptions
+are NOT satisfied (and why). 
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+
+http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+         
+Robert W. Hayden   phone (802) 334-1789  web site http://statland.org/      
+email  bob statland.org  (add your own "@" and save me some spam)
+
+
+
+From vokey at uleth.ca  Wed Mar  3 03:11:29 2010
+From: vokey at uleth.ca (Vokey, John)
+Date: Tue, 2 Mar 2010 19:11:29 -0700
+Subject: [R-sig-teaching] exchangeability
+In-Reply-To: <mailman.7.1267527603.26924.r-sig-teaching@r-project.org>
+References: <mailman.7.1267527603.26924.r-sig-teaching@r-project.org>
+Message-ID: <A0D6F13E-9E11-437A-92E9-E1189FAF3B52@uleth.ca>
+
+
+On 2010-03-02, at 4:00 AM, r-sig-teaching-request at r-project.org wrote:
+
+> I am trying to understand the assumptions for a permutation test and
+> figure out how to explain those to beginning students.  (I am working
+> on a project to integrate resampling methods into the first course in
+> statistics.)  I have received some help from Tim Hesterberg who gave
+> me the first definition of exchangeability I've seen.  One question is
+> whether assumptions apply to randomized experiments or to using
+> permutation tests for survey sampling applications.  In addition it
+> would be helpful to have some counterexamples where the assumptions
+> are NOT satisfied (and why). 
+
+One perspective is that it makes NO assumptions.  It depends what you intend the resulting p-values to mean.  If they are to be interpreted as probabilities, then, yes, exchangeability can be seen as an enabling assumption.  On the other hand, seen only as a scale of typicality, the randomization/permutation p-values do not *assume* exchangeability so much as provide a test of it.
+
+--
+Please avoid sending me Word or PowerPoint attachments.
+See <http://www.gnu.org/philosophy/no-word-attachments.html>
+
+
+

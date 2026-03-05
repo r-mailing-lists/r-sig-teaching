@@ -1,0 +1,36 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2021-10",
+  "messages": [
+    {
+      "id": "msg-9365c63a67e7",
+      "message_id": "<CAGRravZmjUyY9NRc4oVf4NR8RO1rXxz1pCrDP4rS0i=RWPVpmw@mail.gmail.com>",
+      "from_name": "Geoffrey Smith",
+      "from_email_hash": "a6af3dd8df14ee9a4e76ccfa177b9f2d57442a5f1d3e2bf585638bc269075dc8",
+      "date": "2021-10-21T15:26:09-07:00",
+      "subject": "[R-sig-teaching] International finance",
+      "subject_clean": "International finance",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello,\n\nDoes anyone have any ideas on ways to incorporate R (e.g., lectures,\nhomework, projects) into a course on international finance at the graduate\nlevel?\n\nThank you.\n\nGeoff\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello,\n\nDoes anyone have any ideas on ways to incorporate R (e.g., lectures,\nhomework, projects) into a course on international finance at the graduate\nlevel?\n\nThank you.\n\nGeoff\n\n\t[[alternative HTML v",
+      "thread_id": "thread-9365c63a67e7",
+      "thread_depth": 0,
+      "month": "2021-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-9365c63a67e7",
+      "subject": "International finance",
+      "message_count": 1,
+      "participants": [
+        "Geoffrey Smith"
+      ],
+      "started": "2021-10-21T15:26:09-07:00",
+      "last_reply": "2021-10-21T15:26:09-07:00",
+      "root_message_id": "msg-9365c63a67e7"
+    }
+  ]
+}

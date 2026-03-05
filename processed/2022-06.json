@@ -1,0 +1,104 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2022-06",
+  "messages": [
+    {
+      "id": "msg-dfd502b59827",
+      "message_id": "<CAE9stmfmLfDkbHfYjTjaAjecR9niV6NZ=ySOF=tT0TjhYM4-+w@mail.gmail.com>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "0e2534724001ad358ea9a9a5e54bf3c5e424d8ab415891faf701f24510d27d97",
+      "date": "2022-06-23T10:41:05-04:00",
+      "subject": "[R-sig-teaching] R for Linear Algebra",
+      "subject_clean": "R for Linear Algebra",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Re: R for Linear Algebra\n\n\n\nDear All:\n\n\n\n\n\nIn my STA 591 topics in Biostatistics Fall 2022, I am planning to spend\nabout 5 weeks on Linear Algebra.\n\n\n\nI am wondering if someone has or knows the source for some R\nfunctions/programs written for linear algebra calculations.\n\n\n\nAlso if you know a book in Linear Algebra with R, will be a good help too.\n\n\nAny help in this matter is highly appreciated in advance.\n\n\n\n\n\nWith many thanks\n\nAbou\n______________________\n\n\n*AbouEl-Makarim Aboueissa, PhD*\n\n*Professor, Statistics and Data Science*\n*Graduate Coordinator*\n\n*Department of Mathematics and Statistics*\n*University of Southern Maine*\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Re: R for Linear Algebra\n\n\n\nDear All:\n\n\n\n\n\nIn my STA 591 topics in Biostatistics Fall 2022, I am planning to spend\nabout 5 weeks on Linear Algebra.\n\n\n\nI am wondering if someone has or knows the source",
+      "thread_id": "thread-dfd502b59827",
+      "thread_depth": 0,
+      "month": "2022-06"
+    },
+    {
+      "id": "msg-2f9275063037",
+      "message_id": "<a30d4fe2-cce2-46c7-6004-2043fc542889@csun.edu>",
+      "from_name": "Wayne Smith",
+      "from_email_hash": "3707cd936ee9ef7e9ac84e4ecefa13a9beea2808e31f69098a4d10dbba9498b3",
+      "date": "2022-06-24T17:03:34-07:00",
+      "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 118, Issue 1",
+      "subject_clean": "R-sig-teaching Digest, Vol 118, Issue 1",
+      "in_reply_to": "<mailman.869.13.1656064802.10513.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.869.13.1656064802.10513.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": "Abou,\n\nOne option might be:\n\n ??? https://shainarace.github.io/LinearAlgebra/\n\nBest,\n\nWayne Smith, Ph.D.\nCalifornia State University, Northridge\n\nOn 6/24/2022 3:00 AM, r-sig-teaching-request at r-project.org wrote:\n> Send R-sig-teaching mailing list submissions to\n> \tr-sig-teaching at r-project.org\n>\n> To subscribe or unsubscribe via the World Wide Web, visit\n> \thttps://urldefense.proofpoint.com/v2/url?u=https-3A__stat.ethz.ch_mailman_listinfo_r-2Dsig-2Dteaching&d=DwICAg&c=Oo8bPJf7k7r_cPTz1JF7vEiFxvFRfQtp-j14fFwh71U&r=arUOXBJV185ReiAVcorpVCJACrg7Z_StHteKeAMMoBM&m=gN50lrw_6y27FR81W3ISQpLkWXFDdoGuTUuN4fBiVRyAyLrhn3hnUWELr3vkpJnK&s=7AKV_E746GVkHJ3kxTlu2pzT5ndUPmO-kwwKskNiyhE&e=\n> or, via email, send a message with subject or body 'help' to\n> \tr-sig-teaching-request at r-project.org\n>\n> You can reach the person managing the list at\n> \tr-sig-teaching-owner at r-project.org\n>\n> When replying, please edit your Subject line so it is more specific\n> than \"Re: Contents of R-sig-teaching digest...\"\n>\n>\n> Today's Topics:\n>\n>     1. R for Linear Algebra (AbouEl-Makarim Aboueissa)\n>\n> ----------------------------------------------------------------------\n>\n> Message: 1\n> Date: Thu, 23 Jun 2022 10:41:05 -0400\n> From: AbouEl-Makarim Aboueissa <abouelmakarim1962 at gmail.com>\n> To: R-sig-teaching <r-sig-teaching at r-project.org>\n> Subject: [R-sig-teaching] R for Linear Algebra\n> Message-ID:\n> \t<CAE9stmfmLfDkbHfYjTjaAjecR9niV6NZ=ySOF=tT0TjhYM4-+w at mail.gmail.com>\n> Content-Type: text/plain; charset=\"utf-8\"\n>\n> Re: R for Linear Algebra\n>\n>\n>\n> Dear All:\n>\n>\n>\n>\n>\n> In my STA 591 topics in Biostatistics Fall 2022, I am planning to spend\n> about 5 weeks on Linear Algebra.\n>\n>\n>\n> I am wondering if someone has or knows the source for some R\n> functions/programs written for linear algebra calculations.\n>\n>\n>\n> Also if you know a book in Linear Algebra with R, will be a good help too.\n>\n>\n> Any help in this matter is highly appreciated in advance.\n>\n>\n>\n>\n>\n> With many thanks\n>\n> Abou\n> ______________________\n>\n>\n> *AbouEl-Makarim Aboueissa, PhD*\n>\n> *Professor, Statistics and Data Science*\n> *Graduate Coordinator*\n>\n> *Department of Mathematics and Statistics*\n> *University of Southern Maine*\n>\n> \t[[alternative HTML version deleted]]\n>\n>\n>\n>\n> ------------------------------\n>\n> Subject: Digest Footer\n>\n> _______________________________________________\n> R-sig-teaching mailing list\n> R-sig-teaching at r-project.org\n> https://urldefense.proofpoint.com/v2/url?u=https-3A__stat.ethz.ch_mailman_listinfo_r-2Dsig-2Dteaching&d=DwICAg&c=Oo8bPJf7k7r_cPTz1JF7vEiFxvFRfQtp-j14fFwh71U&r=arUOXBJV185ReiAVcorpVCJACrg7Z_StHteKeAMMoBM&m=gN50lrw_6y27FR81W3ISQpLkWXFDdoGuTUuN4fBiVRyAyLrhn3hnUWELr3vkpJnK&s=7AKV_E746GVkHJ3kxTlu2pzT5ndUPmO-kwwKskNiyhE&e=\n>\n>\n> ------------------------------\n>\n> End of R-sig-teaching Digest, Vol 118, Issue 1\n> **********************************************",
+      "body_snippet": "Abou,\n\nOne option might be:\n\n ??? https://shainarace.github.io/LinearAlgebra/\n\nBest,\n\nWayne Smith, Ph.D.\nCalifornia State University, Northridge\n\nOn 6/24/2022 3:00 AM, r-sig-teaching-request at r-proj",
+      "thread_id": "thread-2f9275063037",
+      "thread_depth": 0,
+      "month": "2022-06"
+    },
+    {
+      "id": "msg-35156d98fc79",
+      "message_id": "<BL1PR11MB5239267CBB1F9E713D3ECAB7D2B79@BL1PR11MB5239.namprd11.prod.outlook.com>",
+      "from_name": "Richard M. Heiberger",
+      "from_email_hash": "f2902bb7bf4e430670d9aab08348d4228400c239dd91133544c0c61925c5c4ef",
+      "date": "2022-06-25T16:42:33Z",
+      "subject": "[R-sig-teaching] [External]  R for Linear Algebra",
+      "subject_clean": "[External]  R for Linear Algebra",
+      "in_reply_to": "<CAE9stmfmLfDkbHfYjTjaAjecR9niV6NZ=ySOF=tT0TjhYM4-+w@mail.gmail.com>",
+      "references": [
+        "<CAE9stmfmLfDkbHfYjTjaAjecR9niV6NZ=ySOF=tT0TjhYM4-+w@mail.gmail.com>"
+      ],
+      "body_plain": "Let me recommend my book\n\nStatistical Analysis and Data Display:\nAn Intermediate Course with Examples in R (2nd edition),\nRichard M. Heiberger and Burt Holland\nSpringer 2015\n\nSection I.4 is a 23 page review of Topics in Matrix Algebra\nwith detailed references to appropriate R functions.\nIt is part of Appendix I: Mathematical Preliminaries.\n\nThe entire Appendix is a free download for everyone from Springer\n     https://doi.org/10.1007/978-1-4939-2122-5\nClick on the \"Back Matter\" PDF link.\n\nThe \"Back Matter\" download includes the 19 page\nAppendix G: Computational Precision and Floating-Point Arithmetic.\nAppendix G is referenced in FAQ 7.31 and illustrates many of the\nquestions and answers that repeatedly reappear on the R-help list.\n\nThe book was designed for a first-year graduate statistical methods\ncourse.  I (and others) have also used selected chapters for a second\nyear undergraduate course.\n\nThe entire book is available for download from the link above.\nIf your university library has the right arrangements with Springer,\nthen the entire book is a free download for you and your students.\n\nAnd of course you can get a paper copy from the same web page.\n\nFrom: R-sig-teaching <r-sig-teaching-bounces at r-project.org> on behalf of AbouEl-Makarim Aboueissa <abouelmakarim1962 at gmail.com>\nDate: Thursday, June 23, 2022 at 10:42\nTo: R-sig-teaching <r-sig-teaching at r-project.org>\nSubject: [External] [R-sig-teaching] R for Linear Algebra\nRe: R for Linear Algebra\n\n\n\nDear All:\n\n\n\n\n\nIn my STA 591 topics in Biostatistics Fall 2022, I am planning to spend\nabout 5 weeks on Linear Algebra.\n\n\n\nI am wondering if someone has or knows the source for some R\nfunctions/programs written for linear algebra calculations.\n\n\n\nAlso if you know a book in Linear Algebra with R, will be a good help too.\n\n\nAny help in this matter is highly appreciated in advance.\n\n\n\n\n\nWith many thanks\n\nAbou\n______________________\n\n\n*AbouEl-Makarim Aboueissa, PhD*\n\n*Professor, Statistics and Data Science*\n*Graduate Coordinator*\n\n*Department of Mathematics and Statistics*\n*University of Southern Maine*\n\n        [[alternative HTML version deleted]]\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fstat.ethz.ch%2Fmailman%2Flistinfo%2Fr-sig-teaching&amp;data=05%7C01%7Crmh%40temple.edu%7C2df6560962424c8cbc1a08da5526a002%7C716e81efb52244738e3110bd02ccf6e5%7C0%7C0%7C637915921786297027%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=u6WH8nWV%2FMSEET8HTFdYeg386tGNcBf9LqQYHdtjLvg%3D&amp;reserved=0\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Let me recommend my book\n\nStatistical Analysis and Data Display:\nAn Intermediate Course with Examples in R (2nd edition),\nRichard M. Heiberger and Burt Holland\nSpringer 2015\n\nSection I.4 is a 23 page ",
+      "thread_id": "thread-dfd502b59827",
+      "thread_depth": 1,
+      "month": "2022-06"
+    },
+    {
+      "id": "msg-a42cdc15d978",
+      "message_id": "<CAPCa8=HHjHHGtpQ4W8OAwxWfYe_y-BNE1mvHzKxKVP-Nvis7QA@mail.gmail.com>",
+      "from_name": "J. Marius RAKOTONDRAMANGA",
+      "from_email_hash": "811403bef92b387b0f90bea3c701bab3815e60585e73ecf2cb4e25a23c104eca",
+      "date": "2022-06-27T09:04:30+03:00",
+      "subject": "[R-sig-teaching] [External] R for Linear Algebra",
+      "subject_clean": "[External] R for Linear Algebra",
+      "in_reply_to": "<BL1PR11MB5239267CBB1F9E713D3ECAB7D2B79@BL1PR11MB5239.namprd11.prod.outlook.com>",
+      "references": [
+        "<CAE9stmfmLfDkbHfYjTjaAjecR9niV6NZ=ySOF=tT0TjhYM4-+w@mail.gmail.com>",
+        "<BL1PR11MB5239267CBB1F9E713D3ECAB7D2B79@BL1PR11MB5239.namprd11.prod.outlook.com>"
+      ],
+      "body_plain": "Dear Prof. Heiberger,\nWe thank you for sharing your knowledge with us in this helpful book.\nRegards,\n\n\nMarius,\n\n\n---------\nJ. Marius RAKOTONDRAMANGA, MSc\nPhD Student in Biostatistics/Biomathematics\nED 393 Pierre Louis de Sant? Publique : Epid?miologie et Sciences de\nl'Information Biom?dicale\nSorbonne Universit? (ex. UPMC)\n\n\nLe sam. 25 juin 2022 ? 19:42, Richard M. Heiberger <rmh at temple.edu> a\n?crit :\n\n> Let me recommend my book\n>\n> Statistical Analysis and Data Display:\n> An Intermediate Course with Examples in R (2nd edition),\n> Richard M. Heiberger and Burt Holland\n> Springer 2015\n>\n> Section I.4 is a 23 page review of Topics in Matrix Algebra\n> with detailed references to appropriate R functions.\n> It is part of Appendix I: Mathematical Preliminaries.\n>\n> The entire Appendix is a free download for everyone from Springer\n>      https://doi.org/10.1007/978-1-4939-2122-5\n> Click on the \"Back Matter\" PDF link.\n>\n> The \"Back Matter\" download includes the 19 page\n> Appendix G: Computational Precision and Floating-Point Arithmetic.\n> Appendix G is referenced in FAQ 7.31 and illustrates many of the\n> questions and answers that repeatedly reappear on the R-help list.\n>\n> The book was designed for a first-year graduate statistical methods\n> course.  I (and others) have also used selected chapters for a second\n> year undergraduate course.\n>\n> The entire book is available for download from the link above.\n> If your university library has the right arrangements with Springer,\n> then the entire book is a free download for you and your students.\n>\n> And of course you can get a paper copy from the same web page.\n>\n> From: R-sig-teaching <r-sig-teaching-bounces at r-project.org> on behalf of\n> AbouEl-Makarim Aboueissa <abouelmakarim1962 at gmail.com>\n> Date: Thursday, June 23, 2022 at 10:42\n> To: R-sig-teaching <r-sig-teaching at r-project.org>\n> Subject: [External] [R-sig-teaching] R for Linear Algebra\n> Re: R for Linear Algebra\n>\n>\n>\n> Dear All:\n>\n>\n>\n>\n>\n> In my STA 591 topics in Biostatistics Fall 2022, I am planning to spend\n> about 5 weeks on Linear Algebra.\n>\n>\n>\n> I am wondering if someone has or knows the source for some R\n> functions/programs written for linear algebra calculations.\n>\n>\n>\n> Also if you know a book in Linear Algebra with R, will be a good help too.\n>\n>\n> Any help in this matter is highly appreciated in advance.\n>\n>\n>\n>\n>\n> With many thanks\n>\n> Abou\n> ______________________\n>\n>\n> *AbouEl-Makarim Aboueissa, PhD*\n>\n> *Professor, Statistics and Data Science*\n> *Graduate Coordinator*\n>\n> *Department of Mathematics and Statistics*\n> *University of Southern Maine*\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n>\n> https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fstat.ethz.ch%2Fmailman%2Flistinfo%2Fr-sig-teaching&amp;data=05%7C01%7Crmh%40temple.edu%7C2df6560962424c8cbc1a08da5526a002%7C716e81efb52244738e3110bd02ccf6e5%7C0%7C0%7C637915921786297027%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=u6WH8nWV%2FMSEET8HTFdYeg386tGNcBf9LqQYHdtjLvg%3D&amp;reserved=0\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear Prof. Heiberger,\nWe thank you for sharing your knowledge with us in this helpful book.\nRegards,\n\n\nMarius,\n\n\n---------\nJ. Marius RAKOTONDRAMANGA, MSc\nPhD Student in Biostatistics/Biomathematics\nED",
+      "thread_id": "thread-dfd502b59827",
+      "thread_depth": 2,
+      "month": "2022-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-dfd502b59827",
+      "subject": "R for Linear Algebra",
+      "message_count": 3,
+      "participants": [
+        "AbouEl-Makarim Aboueissa",
+        "J. Marius RAKOTONDRAMANGA",
+        "Richard M. Heiberger"
+      ],
+      "started": "2022-06-23T10:41:05-04:00",
+      "last_reply": "2022-06-27T09:04:30+03:00",
+      "root_message_id": "msg-dfd502b59827"
+    },
+    {
+      "id": "thread-2f9275063037",
+      "subject": "R-sig-teaching Digest, Vol 118, Issue 1",
+      "message_count": 1,
+      "participants": [
+        "Wayne Smith"
+      ],
+      "started": "2022-06-24T17:03:34-07:00",
+      "last_reply": "2022-06-24T17:03:34-07:00",
+      "root_message_id": "msg-2f9275063037"
+    }
+  ]
+}

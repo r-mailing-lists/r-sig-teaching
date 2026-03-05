@@ -1,0 +1,136 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2008-01",
+  "messages": [
+    {
+      "id": "msg-5aef153a6a95",
+      "message_id": "<1199851144.47844688c03a1@webmail.ksu.edu>",
+      "from_name": "Karen A. Garrett",
+      "from_email_hash": "f58f0d43eaf963f61015c2bcd2e6396e8ebebf6aaba122ed94b6662156697591",
+      "date": "2008-01-08T21:59:04-06:00",
+      "subject": "[R-sig-teaching] Open-access teaching modules for using R in ecology/epidemiology",
+      "subject_clean": "Open-access teaching modules for using R in ecology/epidemiology",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A new set of teaching modules for using the R programming environment in\necology and epidemiology is available through the open-access on-line\npeer-reviewed journal The Plant Health Instructor (PHI).\n\nK. A. Garrett, P. D. Esker, and A. H. Sparks. 2007. An introduction to\nthe R programming environment. The Plant Health Instructor.\nDOI:10.1094/PHI-A-2007-1226-02. Available at\nhttp://www.apsnet.org/education/AdvancedPlantPath/Topics/RModules/doc0\n\nP. D. Esker, A. H. Sparks, M. Bates, W. Dall'Acqua, E. E. Frank, L.\nHuebel, V. Segovia, and K. A. Garrett. 2007. Ecology and epidemiology\nin R: Modeling dispersal gradients. The Plant Health Instructor.\nDOI:10.1094/PHI-A-2007-1226-03. Available at\nhttp://www.apsnet.org/education/AdvancedPlantPath/Topics/RModules/doc2\n\nOther modules are currently in the process of being published in PHI,\nwith the most recent link for each module available at\nhttp://www.ksu.edu/pdecology/RModules.html\n\nDisease progress over time\nSpatial analysis\nDisease forecasting\n\nWe hope you will find these modules useful!  PHI allows revision of\npublications, so we welcome your feedback for improving the modules.\n\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\nK. A. Garrett\nAssociate Professor\nDepartment of Plant Pathology\nKansas State University\nManhattan, KS 66506-5502  USA\nhttp://www.ksu.edu/pdecology\nPhone: 785-532-1370\nFax: 785-532-5692",
+      "body_snippet": "A new set of teaching modules for using the R programming environment in\necology and epidemiology is available through the open-access on-line\npeer-reviewed journal The Plant Health Instructor (PHI).\n",
+      "thread_id": "thread-5aef153a6a95",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-252a0c389613",
+      "message_id": "<a695148b0801100440o4b4d8166y8c5a0fb03fa52587@mail.gmail.com>",
+      "from_name": "G. Jay Kerns",
+      "from_email_hash": "50e93b09ae5eba7f3237d0e4291e3a6b8825a6fb21853bb3678551306330b319",
+      "date": "2008-01-10T07:40:46-05:00",
+      "subject": "[R-sig-teaching] prob package: elementary probability on finite sample spaces",
+      "subject_clean": "prob package: elementary probability on finite sample spaces",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R Community,\n\nI am pleased to announce the beta-release of the prob package.  The\nsource code is now on CRAN, and binaries should be generated there\nbefore long. In the meantime, you can get it with\n\ninstall.packages(\"prob\", repos = \"http://r-forge.r-project.org\")\n\nThe prob package gives a framework for doing elementary probability on\nfinite sample spaces in R.  The primary notion of \"probability space\"\nhas been built around the data frame structure, both for simplicity\nand to maximize compatibility with the R Commander by John Fox.\n\nThe package addresses an ample proportion of material in a typical\nundergraduate course in elementary probability, or the probability\nmaterial in an introductory statistics course. For details, see\nvignette(\"prob\").\n\nSince the focus is on sample/probability spaces, the prob package\ncould be used as a precursor to the more sophisticated distrxxx-family\nof packages.\n\nTopics:\n\n* construction of sample spaces (in the sense of 'prob' ) of various\nkinds.  Some standard sample spaces are included (toss a coin, roll a\ndie, sample from an urn, draw cards, roulette, etc.)\n* counting and the Multiplication Principle,\n* subsets and events including methods for intersect, union, and\nsetdiff extending those in the base package,\n* the prob function for finding probability and conditional\nprobability of events,\n* simulation and relative frequencies,\n* random variables, marginal distributions,\n* extensions for more general sample spaces,\n* discrete multivariate distributions with finite support,\n* more...\n\nSome discussion and examples can be found at the R-Forge prob project web page:\n\nhttp://prob.r-forge.r-project.org/\n\nThere are many avenues for future development/improvement;  all\nsuggestions and comments are welcomed.  I would appreciate hearing\nabout your experiences with it in the classroom and elsewhere.\n\nThe audience for this package would include teachers and students of\nelementary probability, or simply anyone wanting to dabble with\nprobability on a finite sample space.\n\nRegards,\nJay\n\n\n\n\n***************************************************\nG. Jay Kerns, Ph.D.\nAssistant Professor / Statistics Coordinator\nDepartment of Mathematics & Statistics\nYoungstown State University\nYoungstown, OH 44555-0002 USA\nOffice: 1035 Cushwa Hall\nPhone: (330) 941-3310 Office (voice mail)\n-3302 Department\n-3170 FAX\nE-mail: gkerns at ysu.edu\nhttp://www.cc.ysu.edu/~gjkerns/",
+      "body_snippet": "Dear R Community,\n\nI am pleased to announce the beta-release of the prob package.  The\nsource code is now on CRAN, and binaries should be generated there\nbefore long. In the meantime, you can get it w",
+      "thread_id": "thread-252a0c389613",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-9462a6ea6367",
+      "message_id": "<79610.19780.qm@web94404.mail.in2.yahoo.com>",
+      "from_name": "kasturi bardhan",
+      "from_email_hash": "5ad7206cf167a9a6a38676aea707992376c6656494e42e4d320c006b0092970b",
+      "date": "2008-01-26T16:40:07+05:30",
+      "subject": "[R-sig-teaching] How to import a minitab data file into R",
+      "subject_clean": "How to import a minitab data file into R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080126/c534b15d/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080126/c534b15d/attachment.pl>",
+      "thread_id": "thread-9462a6ea6367",
+      "thread_depth": 0,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-7397a161159c",
+      "message_id": "<479B5A7F.60904@pdx.edu>",
+      "from_name": "Christian A. Parker",
+      "from_email_hash": "2027c0f71786e7cc3b3177f36c97181dd7990668efc9f7519b8ff86ce3eed8da",
+      "date": "2008-01-26T08:06:23-08:00",
+      "subject": "[R-sig-teaching] How to import a minitab data file into R",
+      "subject_clean": "How to import a minitab data file into R",
+      "in_reply_to": "<79610.19780.qm@web94404.mail.in2.yahoo.com>",
+      "references": [
+        "<79610.19780.qm@web94404.mail.in2.yahoo.com>"
+      ],
+      "body_plain": "Without seeing all of your code its difficult to diagnose but based on \nwhat you sent and the error message I am going to guess that you forgot \nto load the foreign package. Also it looks like you dont have the file \nextension in the path, but thats not where your error is from. Your code \nshould look like this (potentially):\n\nlibrary(foreign)\ntbl<-read.mtp(file='central.mtp')\n\n-Chris\n\nkasturi bardhan wrote:\n> Hello everyone,\n> I am a new member of this gorup & have started learning R from a couple of days ago.\n> I am facing a problem in importing a minitab data file to R.\n> .\n> I used the command read.mtp(file=\"central\").But it returned with the error message could not find function \"read.mtp\"\n> Please help me in this regard mentioning the proper code to be used & with your valuable comments.\n>\n> Thanks in advance\n>\n>\n>       Forgot the famous last words? Access your message archive online at http://in.messenger.yahoo.com/webmessengerpromo.php\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>",
+      "body_snippet": "Without seeing all of your code its difficult to diagnose but based on \nwhat you sent and the error message I am going to guess that you forgot \nto load the foreign package. Also it looks like you don",
+      "thread_id": "thread-9462a6ea6367",
+      "thread_depth": 1,
+      "month": "2008-01"
+    },
+    {
+      "id": "msg-119fc4167a16",
+      "message_id": "<326401.32883.qm@web94405.mail.in2.yahoo.com>",
+      "from_name": "kasturi bardhan",
+      "from_email_hash": "5ad7206cf167a9a6a38676aea707992376c6656494e42e4d320c006b0092970b",
+      "date": "2008-01-27T01:48:01+05:30",
+      "subject": "[R-sig-teaching] How to import a minitab data file into R",
+      "subject_clean": "How to import a minitab data file into R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080127/37cdfb15/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080127/37cdfb15/attachment.pl>",
+      "thread_id": "thread-119fc4167a16",
+      "thread_depth": 0,
+      "month": "2008-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-5aef153a6a95",
+      "subject": "Open-access teaching modules for using R in ecology/epidemiology",
+      "message_count": 1,
+      "participants": [
+        "Karen A. Garrett"
+      ],
+      "started": "2008-01-08T21:59:04-06:00",
+      "last_reply": "2008-01-08T21:59:04-06:00",
+      "root_message_id": "msg-5aef153a6a95"
+    },
+    {
+      "id": "thread-252a0c389613",
+      "subject": "prob package: elementary probability on finite sample spaces",
+      "message_count": 1,
+      "participants": [
+        "G. Jay Kerns"
+      ],
+      "started": "2008-01-10T07:40:46-05:00",
+      "last_reply": "2008-01-10T07:40:46-05:00",
+      "root_message_id": "msg-252a0c389613"
+    },
+    {
+      "id": "thread-9462a6ea6367",
+      "subject": "How to import a minitab data file into R",
+      "message_count": 2,
+      "participants": [
+        "Christian A. Parker",
+        "kasturi bardhan"
+      ],
+      "started": "2008-01-26T16:40:07+05:30",
+      "last_reply": "2008-01-26T08:06:23-08:00",
+      "root_message_id": "msg-9462a6ea6367"
+    },
+    {
+      "id": "thread-119fc4167a16",
+      "subject": "How to import a minitab data file into R",
+      "message_count": 1,
+      "participants": [
+        "kasturi bardhan"
+      ],
+      "started": "2008-01-27T01:48:01+05:30",
+      "last_reply": "2008-01-27T01:48:01+05:30",
+      "root_message_id": "msg-119fc4167a16"
+    }
+  ]
+}

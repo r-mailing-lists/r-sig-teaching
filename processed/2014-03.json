@@ -1,0 +1,36 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2014-03",
+  "messages": [
+    {
+      "id": "msg-fbe562891327",
+      "message_id": "<462926173.56795186.1395422649199.JavaMail.root@carleton.edu>",
+      "from_name": "Bob Dobrow",
+      "from_email_hash": "c33452efce92c3343866d83ef5746b58a42298b457360e27ecaa4c83cb977b88",
+      "date": "2014-03-21T12:24:09-05:00",
+      "subject": "[R-sig-teaching] New Probability textbook with R",
+      "subject_clean": "New Probability textbook with R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear friends,\n\nA new undergraduate probability textbook: Probability With Applications and R (Wiley 2013)\nis now available.\n\nOne focus of the book is simulation. The book includes an R tutorial and example script files.\n\nHere is the link to the book on Wiley's homepage:\nhttp://www.wiley.com/WileyCDA/WileyTitle/productCd-1118241258.html\n\n\nBob Dobrow\nDepartment of Mathematics\nCarleton College\nNorthfield, MN\nrdobrow at carleton.edu",
+      "body_snippet": "Dear friends,\n\nA new undergraduate probability textbook: Probability With Applications and R (Wiley 2013)\nis now available.\n\nOne focus of the book is simulation. The book includes an R tutorial and ex",
+      "thread_id": "thread-fbe562891327",
+      "thread_depth": 0,
+      "month": "2014-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-fbe562891327",
+      "subject": "New Probability textbook with R",
+      "message_count": 1,
+      "participants": [
+        "Bob Dobrow"
+      ],
+      "started": "2014-03-21T12:24:09-05:00",
+      "last_reply": "2014-03-21T12:24:09-05:00",
+      "root_message_id": "msg-fbe562891327"
+    }
+  ]
+}

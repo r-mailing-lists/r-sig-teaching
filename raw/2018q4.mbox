@@ -1,0 +1,282 @@
+From rm@h@rp @ending from me@com  Tue Oct  2 17:54:36 2018
+From: rm@h@rp @ending from me@com (R. Mark Sharp)
+Date: Tue, 02 Oct 2018 10:54:36 -0500
+Subject: [R-sig-teaching] demonstration of weaknesses in stepwise variable
+ selection
+Message-ID: <485396B7-761E-499D-B580-BF7D3E912354@me.com>
+
+I am developing a short presentation for people with applied statistical backgrounds who have used backward stepwise variable selection where they remove variables based on small coefficient values, coefficient P values > 0.05, and large variances.
+
+I am wanting to provide some demonstration code in R that highlights some of the weakness as described by Frank Harrell (citation below). 
+
+Of particular interest are (1) failure to include informative predictor variables (categorical and continuous) and (2) lowered standard errors for the coefficients in the final model. I have code to demonstrate inclusion of too many false predictors.
+
+I expect this code is available, but I have not found it. Guidance would be appreciated.
+
+Mark
+P.S. I have started a public github package at https://github.com/rmsharp/stepwiser
+I has very little in it thus far.
+
+
+Frank E. Harrell. Regression Modeling Strategies with applications to linear models, logistic regression, and survival analysis, Springer Series in Statistics. Springer-Verlag. 2015.
+
+
+R. Mark Sharp, Ph.D.
+Data Scientist and Biomedical Statistical Consultant
+7526 Meadow Green St.
+San Antonio, TX 78251
+mobile: 210-218-2868
+rmsharp at me.com
+
+
+From jeffl@ux @ending from gm@il@com  Wed Oct  3 04:32:45 2018
+From: jeffl@ux @ending from gm@il@com (Jeff Laux)
+Date: Tue, 02 Oct 2018 22:32:45 -0400
+Subject: [R-sig-teaching] 
+ demonstration of weaknesses in stepwise variable selection
+In-Reply-To: <485396B7-761E-499D-B580-BF7D3E912354@me.com>
+References: <485396B7-761E-499D-B580-BF7D3E912354@me.com>
+Message-ID: <5BB42A4D.8090008@gmail.com>
+
+Although no code is given, it can be inferred from this:
+      https://stats.stackexchange.com/a/179945/
+Best, Jeff
+
+
+On 10/2/2018 11:54 AM, R. Mark Sharp wrote:
+> I am developing a short presentation for people with applied statistical backgrounds who have used backward stepwise variable selection where they remove variables based on small coefficient values, coefficient P values > 0.05, and large variances.
+>
+> I am wanting to provide some demonstration code in R that highlights some of the weakness as described by Frank Harrell (citation below).
+>
+> Of particular interest are (1) failure to include informative predictor variables (categorical and continuous) and (2) lowered standard errors for the coefficients in the final model. I have code to demonstrate inclusion of too many false predictors.
+>
+> I expect this code is available, but I have not found it. Guidance would be appreciated.
+>
+> Mark
+> P.S. I have started a public github package at https://github.com/rmsharp/stepwiser
+> I has very little in it thus far.
+>
+>
+> Frank E. Harrell. Regression Modeling Strategies with applications to linear models, logistic regression, and survival analysis, Springer Series in Statistics. Springer-Verlag. 2015.
+>
+>
+> R. Mark Sharp, Ph.D.
+> Data Scientist and Biomedical Statistical Consultant
+> 7526 Meadow Green St.
+> San Antonio, TX 78251
+> mobile: 210-218-2868
+> rmsharp at me.com
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+> ---
+> This email has been checked for viruses by AVG.
+> https://www.avg.com
+>
+>
+
+
+From drki@mu@@ @ending from gm@il@com  Wed Oct  3 05:13:32 2018
+From: drki@mu@@ @ending from gm@il@com (K Imran M)
+Date: Wed, 3 Oct 2018 11:13:32 +0800
+Subject: [R-sig-teaching] 
+ demonstration of weaknesses in stepwise variable selection
+In-Reply-To: <5BB42A4D.8090008@gmail.com>
+References: <485396B7-761E-499D-B580-BF7D3E912354@me.com>
+ <5BB42A4D.8090008@gmail.com>
+Message-ID: <CADop7+jwQ9SqLpbqsyED4tcu7fjL6aohVJQdmN73hSJZWj6uVg@mail.gmail.com>
+
+Looking forward to it ...
+
+KIM
+Malaysia
+
+On Wed, Oct 3, 2018 at 10:32 AM Jeff Laux <jefflaux at gmail.com> wrote:
+
+> Although no code is given, it can be inferred from this:
+>       https://stats.stackexchange.com/a/179945/
+> Best, Jeff
+>
+>
+> On 10/2/2018 11:54 AM, R. Mark Sharp wrote:
+> > I am developing a short presentation for people with applied statistical
+> backgrounds who have used backward stepwise variable selection where they
+> remove variables based on small coefficient values, coefficient P values >
+> 0.05, and large variances.
+> >
+> > I am wanting to provide some demonstration code in R that highlights
+> some of the weakness as described by Frank Harrell (citation below).
+> >
+> > Of particular interest are (1) failure to include informative predictor
+> variables (categorical and continuous) and (2) lowered standard errors for
+> the coefficients in the final model. I have code to demonstrate inclusion
+> of too many false predictors.
+> >
+> > I expect this code is available, but I have not found it. Guidance would
+> be appreciated.
+> >
+> > Mark
+> > P.S. I have started a public github package at
+> https://github.com/rmsharp/stepwiser
+> > I has very little in it thus far.
+> >
+> >
+> > Frank E. Harrell. Regression Modeling Strategies with applications to
+> linear models, logistic regression, and survival analysis, Springer Series
+> in Statistics. Springer-Verlag. 2015.
+> >
+> >
+> > R. Mark Sharp, Ph.D.
+> > Data Scientist and Biomedical Statistical Consultant
+> > 7526 Meadow Green St.
+> > San Antonio, TX 78251
+> > mobile: 210-218-2868
+> > rmsharp at me.com
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >
+> > ---
+> > This email has been checked for viruses by AVG.
+> > https://www.avg.com
+> >
+> >
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+	[[alternative HTML version deleted]]
+
+
+From @@nder1981 @ending from gm@il@com  Wed Oct  3 11:36:29 2018
+From: @@nder1981 @ending from gm@il@com (Sander)
+Date: Wed, 3 Oct 2018 11:36:29 +0200
+Subject: [R-sig-teaching] 
+ demonstration of weaknesses in stepwise variable selection
+In-Reply-To: <485396B7-761E-499D-B580-BF7D3E912354@me.com>
+References: <485396B7-761E-499D-B580-BF7D3E912354@me.com>
+Message-ID: <CAHtLaM-n=wT_JU14QBCLOcrZxdRDUXp7cSV6VWV2iZQdj6NfOA@mail.gmail.com>
+
+Perhaps it is much easier to show by means of a simulation that using
+p-value based selection causes upward bias in regression coefficient
+estimates as the ones that are relatively low are less likely to be
+included. Ewout Steyerberg has performed many of these simulations, perhaps
+some code of it is available on his website:
+http://www.clinicalpredictionmodels.org/doku.php?id=rcode_and_data:start
+
+
+Kind regards,
+Sander
+
+On Tue, Oct 2, 2018 at 5:54 PM R. Mark Sharp <rmsharp at me.com> wrote:
+
+> I am developing a short presentation for people with applied statistical
+> backgrounds who have used backward stepwise variable selection where they
+> remove variables based on small coefficient values, coefficient P values >
+> 0.05, and large variances.
+>
+> I am wanting to provide some demonstration code in R that highlights some
+> of the weakness as described by Frank Harrell (citation below).
+>
+> Of particular interest are (1) failure to include informative predictor
+> variables (categorical and continuous) and (2) lowered standard errors for
+> the coefficients in the final model. I have code to demonstrate inclusion
+> of too many false predictors.
+>
+> I expect this code is available, but I have not found it. Guidance would
+> be appreciated.
+>
+> Mark
+> P.S. I have started a public github package at
+> https://github.com/rmsharp/stepwiser
+> I has very little in it thus far.
+>
+>
+> Frank E. Harrell. Regression Modeling Strategies with applications to
+> linear models, logistic regression, and survival analysis, Springer Series
+> in Statistics. Springer-Verlag. 2015.
+>
+>
+> R. Mark Sharp, Ph.D.
+> Data Scientist and Biomedical Statistical Consultant
+> 7526 Meadow Green St.
+> San Antonio, TX 78251
+> mobile: 210-218-2868
+> rmsharp at me.com
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+	[[alternative HTML version deleted]]
+
+
+From john@m@indon@ld @ending from @nu@edu@@u  Wed Oct  3 22:18:30 2018
+From: john@m@indon@ld @ending from @nu@edu@@u (John Maindonald)
+Date: Wed, 3 Oct 2018 20:18:30 +0000
+Subject: [R-sig-teaching] demonstration of weaknesses in stepwise variable
+ selection
+In-Reply-To: <mailman.816.17.1538560803.65102.r-sig-teaching@r-project.org>
+References: <mailman.816.17.1538560803.65102.r-sig-teaching@r-project.org>
+Message-ID: <9B209EF6-5B42-4E16-B73F-38A6EEBA3491@anu.edu.au>
+
+The functions bsnVaryNvar() and bestsetNoise() in the DAAG package
+have been designed to highlight the opportunities that conventional
+variable selection methods offer for generating ?significant? effects from
+data that is pure noise.  There is an accompanying vignette
+simulate-varselect.
+
+It is a sad commentary on the limited extent to which an informed and
+incisive critical appraisal is commonly applied to results tossed out by
+packaged software that standard forms of backward and forward
+regression variable selection, and best subsets regression, continue
+to be used as the basis for published work.
+
+
+John Maindonald             email: john.maindonald at anu.edu.au<mailto:john.maindonald at anu.edu.au>
+
+On 3/10/2018, at 23:00, r-sig-teaching-request at r-project.org<mailto:r-sig-teaching-request at r-project.org> wrote:
+
+Message: 1
+Date: Tue, 02 Oct 2018 10:54:36 -0500
+From: "R. Mark Sharp" <rmsharp at me.com<mailto:rmsharp at me.com>>
+To: r-sig-teaching at r-project.org<mailto:r-sig-teaching at r-project.org>
+Subject: [R-sig-teaching] demonstration of weaknesses in stepwise
+variable selection
+Message-ID: <485396B7-761E-499D-B580-BF7D3E912354 at me.com<mailto:485396B7-761E-499D-B580-BF7D3E912354 at me.com>>
+Content-Type: text/plain; charset="us-ascii"
+
+I am developing a short presentation for people with applied statistical backgrounds who have used backward stepwise variable selection where they remove variables based on small coefficient values, coefficient P values > 0.05, and large variances.
+
+I am wanting to provide some demonstration code in R that highlights some of the weakness as described by Frank Harrell (citation below).
+
+Of particular interest are (1) failure to include informative predictor variables (categorical and continuous) and (2) lowered standard errors for the coefficients in the final model. I have code to demonstrate inclusion of too many false predictors.
+
+I expect this code is available, but I have not found it. Guidance would be appreciated.
+
+Mark
+P.S. I have started a public github package at https://github.com/rmsharp/stepwiser
+I has very little in it thus far.
+
+
+Frank E. Harrell. Regression Modeling Strategies with applications to linear models, logistic regression, and survival analysis, Springer Series in Statistics. Springer-Verlag. 2015.
+
+
+R. Mark Sharp, Ph.D.
+Data Scientist and Biomedical Statistical Consultant
+7526 Meadow Green St.
+San Antonio, TX 78251
+mobile: 210-218-2868
+rmsharp at me.com<mailto:rmsharp at me.com>
+
+
+
+	[[alternative HTML version deleted]]
+
+

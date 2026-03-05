@@ -1,0 +1,55 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2016-06",
+  "messages": [
+    {
+      "id": "msg-d8ddbc087ac9",
+      "message_id": "<CAOWjiK8D-JHJdcY=1LBz-wtgn=jaYK0uXTbXTUCeghxKLrt1vg@mail.gmail.com>",
+      "from_name": "Munjal Patel",
+      "from_email_hash": "49eda8cb6b8f99c91fd37e2f759e1aacb5272366594fddb667473f308aa8e031",
+      "date": "2016-06-07T11:55:22-04:00",
+      "subject": "[R-sig-teaching] Power Calculation:Equivalence test: 2-sided Binomial Proportion",
+      "subject_clean": "Power Calculation:Equivalence test: 2-sided Binomial Proportion",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-Sig-teaching users,\nI am an intermediate level R user.\n\nI am performing the power calculations for the Binomial proportions (2\nsided).\nI want to find the Power using the Exact test for the Equivalence of\nBinomial proportions.\nI do have the SAS code which is generating the Power for me but i am unable\nto find the Similar code in R.\nI need help for finding the similar computation in R.\n\nMy SAS code.\n\nproc power;\nonesamplefreq test = equiv_exact\nalpha = 0.05\nproportion = 0.30\nlower = 0.2\nupper = 0.4\nntotal = 500\npower = .;\nrun;\n\nCan somebody helkp me by providing the R code for the similar calculation ?\nThank you.\n\nMJ\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R-Sig-teaching users,\nI am an intermediate level R user.\n\nI am performing the power calculations for the Binomial proportions (2\nsided).\nI want to find the Power using the Exact test for the Equi",
+      "thread_id": "thread-d8ddbc087ac9",
+      "thread_depth": 0,
+      "month": "2016-06"
+    },
+    {
+      "id": "msg-1151bb8be51b",
+      "message_id": "<CA+3jU8GRVg=L=6XwbuQs65YpPeNeOegQ4i1y4kbdscuXeFE0CA@mail.gmail.com>",
+      "from_name": "Albyn Jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2016-06-07T09:23:56-07:00",
+      "subject": "[R-sig-teaching] Power Calculation:Equivalence test: 2-sided Binomial Proportion",
+      "subject_clean": "Power Calculation:Equivalence test: 2-sided Binomial Proportion",
+      "in_reply_to": "<CAOWjiK8D-JHJdcY=1LBz-wtgn=jaYK0uXTbXTUCeghxKLrt1vg@mail.gmail.com>",
+      "references": [
+        "<CAOWjiK8D-JHJdcY=1LBz-wtgn=jaYK0uXTbXTUCeghxKLrt1vg@mail.gmail.com>"
+      ],
+      "body_plain": "This list is for discussing the use of R in teaching.  Your question would\nbe more appropriate on the R-help list.\n\nalbyn\n\n\nOn Tue, Jun 7, 2016 at 8:55 AM, Munjal Patel <munjalpatel85 at gmail.com>\nwrote:\n\n> Dear R-Sig-teaching users,\n> I am an intermediate level R user.\n>\n> I am performing the power calculations for the Binomial proportions (2\n> sided).\n> I want to find the Power using the Exact test for the Equivalence of\n> Binomial proportions.\n> I do have the SAS code which is generating the Power for me but i am unable\n> to find the Similar code in R.\n> I need help for finding the similar computation in R.\n>\n> My SAS code.\n>\n> proc power;\n> onesamplefreq test = equiv_exact\n> alpha = 0.05\n> proportion = 0.30\n> lower = 0.2\n> upper = 0.4\n> ntotal = 500\n> power = .;\n> run;\n>\n> Can somebody helkp me by providing the R code for the similar calculation ?\n> Thank you.\n>\n> MJ\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "This list is for discussing the use of R in teaching.  Your question would\nbe more appropriate on the R-help list.\n\nalbyn\n\n\nOn Tue, Jun 7, 2016 at 8:55 AM, Munjal Patel <munjalpatel85 at gmail.com>\nwr",
+      "thread_id": "thread-d8ddbc087ac9",
+      "thread_depth": 1,
+      "month": "2016-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-d8ddbc087ac9",
+      "subject": "Power Calculation:Equivalence test: 2-sided Binomial Proportion",
+      "message_count": 2,
+      "participants": [
+        "Albyn Jones",
+        "Munjal Patel"
+      ],
+      "started": "2016-06-07T11:55:22-04:00",
+      "last_reply": "2016-06-07T09:23:56-07:00",
+      "root_message_id": "msg-d8ddbc087ac9"
+    }
+  ]
+}

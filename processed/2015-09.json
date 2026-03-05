@@ -1,0 +1,203 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2015-09",
+  "messages": [
+    {
+      "id": "msg-c47dbb3a13c7",
+      "message_id": "<55F93172.1040205@pocock.pro>",
+      "from_name": "Daniel Pocock",
+      "from_email_hash": "efc2d94506ba5bbd6f43e7a7d8e6df6877bb7bef4882718d0ec9a0d8d6d53df8",
+      "date": "2015-09-16T11:08:02+02:00",
+      "subject": "[R-sig-teaching] self-taught routes to a degree with R?",
+      "subject_clean": "self-taught routes to a degree with R?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Given the nature of mathematics and the fact that anybody can now\ndownload, experiment and learn with software like R on a Linux desktop,\nit seems more than plausible than ever that somebody could achieve the\nlevel of knowledge required to pass undergraduate and probably some\nmasters level exams without attending classes.\n\nThere are plenty of schools now offering online courses yet many of them\nappear to involve hefty tuition fees.  For people who have a history of\nself-education, paying fees for classes they won't attend may feel wasteful.\n\nA search also finds numerous pages of advice for people wanting to take\na self-taught route, e.g. http://datasciencemasters.org/ but not all of\nthese lead to a formal degree.\n\nMy own view is that even without classes and without having a whole\nbunch of money on the line, the goal of sitting an exam and getting a\ndegree provides a useful motivator for people who want to educate\nthemselves in this field.\n\nCan anybody comment on any educators or schools who are willing to\nengage with students who want to pursue that route?",
+      "body_snippet": "Given the nature of mathematics and the fact that anybody can now\ndownload, experiment and learn with software like R on a Linux desktop,\nit seems more than plausible than ever that somebody could ach",
+      "thread_id": "thread-c47dbb3a13c7",
+      "thread_depth": 0,
+      "month": "2015-09"
+    },
+    {
+      "id": "msg-a22cf6183d13",
+      "message_id": "<CAHDp66Af44H=PVAC5vbaq-R5pEmzp7UqKhSKjbEJm7vnWyUk=w@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2015-09-23T10:02:49-04:00",
+      "subject": "[R-sig-teaching] Read *.xlsx data file into R",
+      "subject_clean": "Read *.xlsx data file into R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\n\nI am having trouble reading an  *.xlsx data file into R.\n\nI tried to install the packages XLSX and readx1, but still did not work.\n\nAny helps will be appreciated.\n\nwith many thanks\nsreve\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\nI am having trouble reading an  *.xlsx data file into R.\n\nI tried to install the packages XLSX and readx1, but still did not work.\n\nAny helps will be appreciated.\n\nwith many thanks\nsreve\n\n-",
+      "thread_id": "thread-a22cf6183d13",
+      "thread_depth": 0,
+      "month": "2015-09"
+    },
+    {
+      "id": "msg-6f2499c2967a",
+      "message_id": "<5602B323.6060006@binghamton.edu>",
+      "from_name": "Christopher W. Ryan",
+      "from_email_hash": "1b29f9cec300eaee17dfd69d1f61fa0ef3e03d1c3e99be2390ec65184340c413",
+      "date": "2015-09-23T10:11:47-04:00",
+      "subject": "[R-sig-teaching] Read *.xlsx data file into R",
+      "subject_clean": "Read *.xlsx data file into R",
+      "in_reply_to": "<CAHDp66Af44H=PVAC5vbaq-R5pEmzp7UqKhSKjbEJm7vnWyUk=w@mail.gmail.com>",
+      "references": [
+        "<CAHDp66Af44H=PVAC5vbaq-R5pEmzp7UqKhSKjbEJm7vnWyUk=w@mail.gmail.com>"
+      ],
+      "body_plain": "I have just recently been struggling with this myself.  It seems a lot\ndepends on how the xlsx file was structured by its creator. As you know,\nExcel does many things behind the scenes \"for your convenience.\"\n\nI had some success with the openxlsx package.\n\n--Chris\n\nChristopher W. Ryan, MD, MS\ncryanatbinghamtondotedu\nMedical Director, Broome County Health Department\nhttps://www.linkedin.com/in/ryancw\n\nEarly success is a terrible teacher. You?re essentially being rewarded\nfor a lack of preparation, so when you find yourself in a situation\nwhere you must prepare, you can?t do it. You don?t know how.\n--Chris Hadfield, An Astronaut's Guide to Life on Earth\n\nSteven Stoline wrote:\n> Dear All:\n> \n> I am having trouble reading an  *.xlsx data file into R.\n> \n> I tried to install the packages XLSX and readx1, but still did not work.\n> \n> Any helps will be appreciated.\n> \n> with many thanks\n> sreve\n>",
+      "body_snippet": "I have just recently been struggling with this myself.  It seems a lot\ndepends on how the xlsx file was structured by its creator. As you know,\nExcel does many things behind the scenes \"for your conve",
+      "thread_id": "thread-a22cf6183d13",
+      "thread_depth": 1,
+      "month": "2015-09"
+    },
+    {
+      "id": "msg-0f730745b168",
+      "message_id": "<888D54EC-54F9-492D-A3DE-27251C3A7F8E@calvin.edu>",
+      "from_name": "Randall Pruim",
+      "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
+      "date": "2015-09-23T14:13:48Z",
+      "subject": "[R-sig-teaching] Read *.xlsx data file into R",
+      "subject_clean": "Read *.xlsx data file into R",
+      "in_reply_to": "<CAHDp66Af44H=PVAC5vbaq-R5pEmzp7UqKhSKjbEJm7vnWyUk=w@mail.gmail.com>",
+      "references": [
+        "<CAHDp66Af44H=PVAC5vbaq-R5pEmzp7UqKhSKjbEJm7vnWyUk=w@mail.gmail.com>"
+      ],
+      "body_plain": "Try readxl\n\nI?ve found that that package works very well.\n\n\n> On Sep 23, 2015, at 10:02 AM, Steven Stoline <sstoline at gmail.com> wrote:\n> \n> Dear All:\n> \n> I am having trouble reading an  *.xlsx data file into R.\n> \n> I tried to install the packages XLSX and readx1, but still did not work.\n> \n> Any helps will be appreciated.\n> \n> with many thanks\n> sreve\n> \n> -- \n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com\n> \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Try readxl\n\nI?ve found that that package works very well.\n\n\n> On Sep 23, 2015, at 10:02 AM, Steven Stoline <sstoline at gmail.com> wrote:\n> \n> Dear All:\n> \n> I am having trouble reading an  *.xlsx dat",
+      "thread_id": "thread-a22cf6183d13",
+      "thread_depth": 1,
+      "month": "2015-09"
+    },
+    {
+      "id": "msg-d5f7a748608b",
+      "message_id": "<d39a0e7f8c874b198519f250625faa92@WSR-MAILBOX-104.mrc-hnr.cam.ac.local>",
+      "from_name": "David Pell",
+      "from_email_hash": "bb944e6ba6f137343f9616b17be73ac385bbd4d1e8b74b618c141d58f0fae6d5",
+      "date": "2015-09-23T14:15:47Z",
+      "subject": "[R-sig-teaching] Read *.xlsx data file into R",
+      "subject_clean": "Read *.xlsx data file into R",
+      "in_reply_to": "<888D54EC-54F9-492D-A3DE-27251C3A7F8E@calvin.edu>",
+      "references": [
+        "<CAHDp66Af44H=PVAC5vbaq-R5pEmzp7UqKhSKjbEJm7vnWyUk=w@mail.gmail.com>",
+        "<888D54EC-54F9-492D-A3DE-27251C3A7F8E@calvin.edu>"
+      ],
+      "body_plain": "Difficult to know what's going on without an error message or an example.\n\nAre you specifying which sheet within the workbook you are using?\n\nrequire(xlsx)\nread.xlsx(\"myfile.xlsx\", sheetName = \"Sheet1\") read.xlsx2(\"myfile.xlsx\", sheetName = \"Sheet1\")\n\nAlternatively you could save the xslx as a csv then use the read.table\n\ndf = read.table(\"myfile.csv\", header = TRUE)\n\nDavid\n\n> On Sep 23, 2015, at 10:02 AM, Steven Stoline <sstoline at gmail.com> wrote:\n>\n> Dear All:\n>\n> I am having trouble reading an  *.xlsx data file into R.\n>\n> I tried to install the packages XLSX and readx1, but still did not work.\n>\n> Any helps will be appreciated.\n>\n> with many thanks\n> sreve\n>\n> --\n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com\n>\n> [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n________________________________\n\n\nThis email may have a protective marking please see http://www.mrc.ac.uk/about/information-standards/document-marking-policy/ <http://www.mrc.ac.uk/about/information-standards/document-marking-policy/>\n\nThis email and any attachments are intended for the named addressee(s) only. If you are not the intended recipient, please notify MRC HNR immediately and do not disclose, distribute, or retain this email or any part of it. While MRC HNR has taken every reasonable precaution to minimise risk of this e-mail or any attachments containing viruses, the recipient should carry out its own virus checks before opening the attachments. MRC HNR does not accept any liability for any losses or damages which the recipient may sustain due to presence of any viruses. MRC HNR reserves the right to monitor all e-mail communications through their networks for the purposes of preventing and detecting crime.\n---------------------------------------------------------------------------------------\n This email has been scanned for email related threats and delivered safely by Mimecast.\n For more information please visit http://www.mimecast.com\n---------------------------------------------------------------------------------------\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Difficult to know what's going on without an error message or an example.\n\nAre you specifying which sheet within the workbook you are using?\n\nrequire(xlsx)\nread.xlsx(\"myfile.xlsx\", sheetName = \"Sheet1",
+      "thread_id": "thread-a22cf6183d13",
+      "thread_depth": 2,
+      "month": "2015-09"
+    },
+    {
+      "id": "msg-709c2af06014",
+      "message_id": "<B946CDB5-9615-4998-A436-DA7119020531@gmail.com>",
+      "from_name": "Tim Bates",
+      "from_email_hash": "906d407a729647cc91c4e43ce28d4fcaa3d8c31102184befaff986e86fb70998",
+      "date": "2015-09-23T15:22:28+01:00",
+      "subject": "[R-sig-teaching] Read *.xlsx data file into R",
+      "subject_clean": "Read *.xlsx data file into R",
+      "in_reply_to": "<d39a0e7f8c874b198519f250625faa92@WSR-MAILBOX-104.mrc-hnr.cam.ac.local>",
+      "references": [
+        "<CAHDp66Af44H=PVAC5vbaq-R5pEmzp7UqKhSKjbEJm7vnWyUk=w@mail.gmail.com>",
+        "<888D54EC-54F9-492D-A3DE-27251C3A7F8E@calvin.edu>",
+        "<d39a0e7f8c874b198519f250625faa92@WSR-MAILBOX-104.mrc-hnr.cam.ac.local>"
+      ],
+      "body_plain": "your question is vague.\n\nFor those who need to read xlsx files, I?ve been having great results with the ?gdata? package, and it?s cross platform.\n\n# simple at its easiest\ndf <- gdata::read.xls(xls = ?~/Desktop/194.xlsx?)\n\n# and powerful options also:\n\ndf <- gdata::read.xls(xls = ,sheet=,pattern=,na.strings=,method=,perl=)\n\ntim\n\n> David\n> \n>> On Sep 23, 2015, at 10:02 AM, Steven Stoline <sstoline at gmail.com> wrote:\n>> Dear All:\n>> I am having trouble reading an  *.xlsx data file into R.\n>> I tried to install the packages XLSX and readx1, but still did not work.\n>> Any helps will be appreciated.",
+      "body_snippet": "your question is vague.\n\nFor those who need to read xlsx files, I?ve been having great results with the ?gdata? package, and it?s cross platform.\n\n# simple at its easiest\ndf <- gdata::read.xls(xls = ?",
+      "thread_id": "thread-a22cf6183d13",
+      "thread_depth": 3,
+      "month": "2015-09"
+    },
+    {
+      "id": "msg-1089dc10d74b",
+      "message_id": "<B4385F0B-2DC9-457A-A69F-284EE1FE0676@calvin.edu>",
+      "from_name": "Randall Pruim",
+      "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
+      "date": "2015-09-23T14:28:01Z",
+      "subject": "[R-sig-teaching] Read *.xlsx data file into R",
+      "subject_clean": "Read *.xlsx data file into R",
+      "in_reply_to": "<d39a0e7f8c874b198519f250625faa92@WSR-MAILBOX-104.mrc-hnr.cam.ac.local>",
+      "references": [
+        "<CAHDp66Af44H=PVAC5vbaq-R5pEmzp7UqKhSKjbEJm7vnWyUk=w@mail.gmail.com>",
+        "<888D54EC-54F9-492D-A3DE-27251C3A7F8E@calvin.edu>",
+        "<d39a0e7f8c874b198519f250625faa92@WSR-MAILBOX-104.mrc-hnr.cam.ac.local>"
+      ],
+      "body_plain": "But be warned that depending on the kinds of data you have, exporting to CSV and then reading in the CSV may or may not give you exactly what you are expecting.  So it is safer to use a tool designed to read excel files directly if (a) you can make it work and (b) the tool you are using is good at dealing with excel data issues.  (I?m not familiar with xslx, so I can?t comment on how well it works or what might be causing you problems in your case.)\n\nAlso, I would use either read.csv() or readr::read_csv() to read a csv file if you do go that route.\n\nOn Sep 23, 2015, at 10:15 AM, David Pell <David.Pell at mrc-hnr.cam.ac.uk<mailto:David.Pell at mrc-hnr.cam.ac.uk>> wrote:\n\n\nAlternatively you could save the xslx as a csv then use the read.table\n\ndf = read.table(\"myfile.csv\", header = TRUE)\n\nDavid\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "But be warned that depending on the kinds of data you have, exporting to CSV and then reading in the CSV may or may not give you exactly what you are expecting.  So it is safer to use a tool designed ",
+      "thread_id": "thread-a22cf6183d13",
+      "thread_depth": 3,
+      "month": "2015-09"
+    },
+    {
+      "id": "msg-69cff20e78b1",
+      "message_id": "<CA+srNj4MqAqx743tYAHrZh1aiaxPj_Vc-B81BbEt8TWyY+9mng@mail.gmail.com>",
+      "from_name": "Paula Grafton Young",
+      "from_email_hash": "57a4fb9a604414e5df5b5d7d1cb70d0b433edcc8c45b386950fd1ca7926d8a28",
+      "date": "2015-09-23T10:30:19-04:00",
+      "subject": "[R-sig-teaching] Read *.xlsx data file into R",
+      "subject_clean": "Read *.xlsx data file into R",
+      "in_reply_to": "<CAHDp66Af44H=PVAC5vbaq-R5pEmzp7UqKhSKjbEJm7vnWyUk=w@mail.gmail.com>",
+      "references": [
+        "<CAHDp66Af44H=PVAC5vbaq-R5pEmzp7UqKhSKjbEJm7vnWyUk=w@mail.gmail.com>"
+      ],
+      "body_plain": "Can you please post the error message? Also, please indicate your platform.\nI have had students using Macs who were unable to use the xlxs package.\n\nAs previously posted, saving the sheet (not a whole workbook) as a CSV file\nis better--cross-platform, and about  one-tenth the file size of an *.xlxs\nworkbook with just one sheet.\n\nMyData = read.table (\"fileName.csv\", header =T)\nOn Sep 23, 2015 10:03 AM, \"Steven Stoline\" <sstoline at gmail.com> wrote:\n\n> Dear All:\n>\n> I am having trouble reading an  *.xlsx data file into R.\n>\n> I tried to install the packages XLSX and readx1, but still did not work.\n>\n> Any helps will be appreciated.\n>\n> with many thanks\n> sreve\n>\n> --\n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Can you please post the error message? Also, please indicate your platform.\nI have had students using Macs who were unable to use the xlxs package.\n\nAs previously posted, saving the sheet (not a whole",
+      "thread_id": "thread-a22cf6183d13",
+      "thread_depth": 1,
+      "month": "2015-09"
+    },
+    {
+      "id": "msg-35f7f68dc147",
+      "message_id": "<CABdHhvEyn8ML+iQZ+ZLoGniBgBiPhrdRQPRAup2HZSp+W1c76w@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2015-09-23T12:27:57-05:00",
+      "subject": "[R-sig-teaching] Read *.xlsx data file into R",
+      "subject_clean": "Read *.xlsx data file into R",
+      "in_reply_to": "<B946CDB5-9615-4998-A436-DA7119020531@gmail.com>",
+      "references": [
+        "<CAHDp66Af44H=PVAC5vbaq-R5pEmzp7UqKhSKjbEJm7vnWyUk=w@mail.gmail.com>",
+        "<888D54EC-54F9-492D-A3DE-27251C3A7F8E@calvin.edu>",
+        "<d39a0e7f8c874b198519f250625faa92@WSR-MAILBOX-104.mrc-hnr.cam.ac.local>",
+        "<B946CDB5-9615-4998-A436-DA7119020531@gmail.com>"
+      ],
+      "body_plain": "Note that gdata::read.xls requires perl, which can be a hassle to install.\nHadley\n\nOn Wed, Sep 23, 2015 at 9:22 AM, Tim Bates <timothy.c.bates at gmail.com> wrote:\n> your question is vague.\n>\n> For those who need to read xlsx files, I?ve been having great results with the ?gdata? package, and it?s cross platform.\n>\n> # simple at its easiest\n> df <- gdata::read.xls(xls = ?~/Desktop/194.xlsx?)\n>\n> # and powerful options also:\n>\n> df <- gdata::read.xls(xls = ,sheet=,pattern=,na.strings=,method=,perl=)\n>\n> tim\n>\n>> David\n>>\n>>> On Sep 23, 2015, at 10:02 AM, Steven Stoline <sstoline at gmail.com> wrote:\n>>> Dear All:\n>>> I am having trouble reading an  *.xlsx data file into R.\n>>> I tried to install the packages XLSX and readx1, but still did not work.\n>>> Any helps will be appreciated.\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\n\n-- \nhttp://had.co.nz/",
+      "body_snippet": "Note that gdata::read.xls requires perl, which can be a hassle to install.\nHadley\n\nOn Wed, Sep 23, 2015 at 9:22 AM, Tim Bates <timothy.c.bates at gmail.com> wrote:\n> your question is vague.\n>\n> For th",
+      "thread_id": "thread-a22cf6183d13",
+      "thread_depth": 4,
+      "month": "2015-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-c47dbb3a13c7",
+      "subject": "self-taught routes to a degree with R?",
+      "message_count": 1,
+      "participants": [
+        "Daniel Pocock"
+      ],
+      "started": "2015-09-16T11:08:02+02:00",
+      "last_reply": "2015-09-16T11:08:02+02:00",
+      "root_message_id": "msg-c47dbb3a13c7"
+    },
+    {
+      "id": "thread-a22cf6183d13",
+      "subject": "Read *.xlsx data file into R",
+      "message_count": 8,
+      "participants": [
+        "Christopher W. Ryan",
+        "David Pell",
+        "Hadley Wickham",
+        "Paula Grafton Young",
+        "Randall Pruim",
+        "Steven Stoline",
+        "Tim Bates"
+      ],
+      "started": "2015-09-23T10:02:49-04:00",
+      "last_reply": "2015-09-23T12:27:57-05:00",
+      "root_message_id": "msg-a22cf6183d13"
+    }
+  ]
+}

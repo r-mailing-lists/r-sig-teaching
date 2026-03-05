@@ -1,0 +1,36 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2016-01",
+  "messages": [
+    {
+      "id": "msg-8f2dd716a4f4",
+      "message_id": "<CAHDp66Cpnu_SVaN5uPRQ=ULRb3ZGYAaJm8pA1=UiWWA2xbLOxA@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2016-01-07T07:23:02-05:00",
+      "subject": "[R-sig-teaching] Solve an Equation Including Integral",
+      "subject_clean": "Solve an Equation Including Integral",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\n\nI am trying to solve an equation including an integral for unknown\nparameter.\n\n\nIs this can be done in R? if so, any helps will be highly appreciated\n\n\n\n### The following function is a function of t, given exi, nu, and alpha.\n\n\nfun<-function(exi,nu,alpha)\n(nu+t^2)^(-(nu+1)/2)*exp(((nu+1)*exi*t)/((nu+t^2)^0.5))\n\n\n### I want to solve \"[Integral(-Inf,100) fun(exi,nu,alpha)]-(1-alpha)=0\"\nfor t.\n\n### That is, find the value of t which satisfy the equation:\n\n             [Integral(-Inf,100) fun(exi,nu,alpha)]-(1-alpha)=0\n\n\n### for example given: alpha = 0.05, nu = 20 , exi = 0.5, Solve for t.\n\n\nwith many thanks\nsteve\n\n-------------------------\nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\nI am trying to solve an equation including an integral for unknown\nparameter.\n\n\nIs this can be done in R? if so, any helps will be highly appreciated\n\n\n\n### The following function is a func",
+      "thread_id": "thread-8f2dd716a4f4",
+      "thread_depth": 0,
+      "month": "2016-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-8f2dd716a4f4",
+      "subject": "Solve an Equation Including Integral",
+      "message_count": 1,
+      "participants": [
+        "Steven Stoline"
+      ],
+      "started": "2016-01-07T07:23:02-05:00",
+      "last_reply": "2016-01-07T07:23:02-05:00",
+      "root_message_id": "msg-8f2dd716a4f4"
+    }
+  ]
+}

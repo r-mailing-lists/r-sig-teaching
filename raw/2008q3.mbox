@@ -1,0 +1,1205 @@
+From judy.thomas at taylorandfrancis.com  Tue Aug 12 16:27:42 2008
+From: judy.thomas at taylorandfrancis.com (Thomas, Judy)
+Date: Tue, 12 Aug 2008 10:27:42 -0400
+Subject: [R-sig-teaching] ANNOUNCEMENT: COMPLIMENTARY REVIEW COPIES OF NEW R
+	BOOKS FROM CHAPMAN & HALL/CRC!
+Message-ID: <E2F90CBA72FB2C43B422CC59388C23EB028B2F40@US-EXBE01.NA.CorpLAN.net>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080812/5b9d8ba4/attachment.pl>
+
+From vmf_94043 at yahoo.com  Wed Aug 20 15:08:35 2008
+From: vmf_94043 at yahoo.com (=?iso-8859-1?Q?Vanesa_Maribel_Fern=E1ndez?=)
+Date: Wed, 20 Aug 2008 06:08:35 -0700 (PDT)
+Subject: [R-sig-teaching] ANNOUNCEMENT: COMPLIMENTARY REVIEW COPIES OF
+	NEW R BOOKS FROM CHAPMAN & HALL/CRC!
+Message-ID: <897634.42294.qm@web32506.mail.mud.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080820/c69fe086/attachment.pl>
+
+From jones at reed.edu  Wed Aug 20 17:52:46 2008
+From: jones at reed.edu (Albyn Jones)
+Date: Wed, 20 Aug 2008 08:52:46 -0700
+Subject: [R-sig-teaching] R texts
+In-Reply-To: <897634.42294.qm@web32506.mail.mud.yahoo.com>
+References: <897634.42294.qm@web32506.mail.mud.yahoo.com>
+Message-ID: <20080820155246.GA1730@laplace.reed.edu>
+
+Hi Vanesa
+
+I'd start with free documentation, available on the CRAN websites.
+Under the Documentation links, take a look at Manuals: An Introduction
+to R.  In the Contributed section there are several documents that you
+may find useful.
+
+albyn
+
+On Wed, Aug 20, 2008 at 06:08:35AM -0700, Vanesa Maribel Fern?ndez wrote:
+> Hallo! My
+> name is Vanesa; I am a biology PhD student from Argentina. I am used to carry out
+> statistical analysis of data from our experiments. And I would like to have a
+> book to learn how to use ???R??? for statistical. I need one which contains for
+> example: analysis of categorical data, regression, ANOVA (fixed, mixed,
+> repeated measures nestled), etc.
+> Can you
+> help me to choose a book? 
+> Thank you
+> very much.
+> Vanesa
+
+
+
+From warrack at earthlink.net  Wed Aug 20 18:58:45 2008
+From: warrack at earthlink.net (A.G. WARRACK)
+Date: Wed, 20 Aug 2008 12:58:45 -0400
+Subject: [R-sig-teaching] R texts
+In-Reply-To: <20080820155246.GA1730@laplace.reed.edu>
+References: <897634.42294.qm@web32506.mail.mud.yahoo.com>
+	<20080820155246.GA1730@laplace.reed.edu>
+Message-ID: <154d1a660808200958x727bd479qa241b64658f81ba9@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080820/5a0b9e2d/attachment.pl>
+
+From lchihara at carleton.edu  Wed Aug 20 19:17:51 2008
+From: lchihara at carleton.edu (Laura Chihara)
+Date: Wed, 20 Aug 2008 12:17:51 -0500
+Subject: [R-sig-teaching] R texts
+In-Reply-To: <897634.42294.qm@web32506.mail.mud.yahoo.com>
+References: <897634.42294.qm@web32506.mail.mud.yahoo.com>
+Message-ID: <48AC51BF.6030509@carleton.edu>
+
+
+"The R Book" by Crawley (Wiley) is comprehensive and very useful.
+It got a nice review in the latest issue of "The American
+Statistician"
+
+-Laura
+
+Vanesa Maribel Fern?ndez wrote:
+> Hallo! My
+> name is Vanesa; I am a biology PhD student from Argentina. I am used to carry out
+> statistical analysis of data from our experiments. And I would like to have a
+> book to learn how to use ???R??? for statistical. I need one which contains for
+> example: analysis of categorical data, regression, ANOVA (fixed, mixed,
+> repeated measures nestled), etc.
+> Can you
+> help me to choose a book? 
+> Thank you
+> very much.
+> Vanesa
+>  
+>  
+> 
+> 
+> 
+> 
+> ----- Original Message ----
+> From: "Thomas, Judy" <judy.thomas at taylorandfrancis.com>
+> To: r-sig-teaching at r-project.org
+> Sent: Tuesday, August 12, 2008 11:27:42 AM
+> Subject: [R-sig-teaching] ANNOUNCEMENT: COMPLIMENTARY REVIEW COPIES OF NEW R BOOKS FROM CHAPMAN & HALL/CRC!
+> 
+> ANNOUNCEMENT:  COMPLIMENTARY REVIEW COPIES OF NEW R BOOKS FROM CHAPMAN & HALL/CRC!
+> 
+> 
+> It's back to school season, and the academic world is buzzing about new textbooks. We know you will be making your course adoption selections for the spring over the next couple of week, and want to make sure you get a sneak peek at our latest offerings.  
+> 
+> 
+> With this in mind, Chapman & Hall/CRC is pleased to provide complimentary review copies of our latest R titles to qualified instructors. Please contact Academic Sales Manager Susie Carlisle (susie.carlisle at taylorandfrancis.com), and mention promotion code #966HW, to take advantage of this special offer. 
+> 
+> 
+> Secure your review copy today!
+> 
+> 
+> ****NEW TITLES****
+> 
+> Probability and Statistics with R (http://www.crcpress.com/shopping_cart/products/product_detail.asp?sku=C8911)
+> 
+> Maria Dolores Ugarte, Public University of Navarre, Pamplona, Spain
+> Ana F. Militino, Public University of Navarre, Pamplona, Spain
+> Alan Arnholt, Appalachian State University, Boone, North Carolina, U.S.A.
+> 
+> Publication Date: April 2008
+> Number of Pages: 728
+> 
+> With numerous real-world examples, carefully explained proofs, end-of-chapter problems, and illuminating graphs, this text shows how to solve various statistical problems using both parametric and nonparametric techniques via R. The authors offer data sets, functions, and other ancillary material on a supporting website. A solutions manual is available for qualifying instructors.
+> 
+> 
+> List Prices: $89.95 / ???46.99  
+> 
+> 
+> Introduction to Probability with R
+> 
+> Kenneth P. Baclawski, Northeastern University, Boston, Massachusetts, U.S.A.
+> (http://www.crcpress.com/shopping_cart/products/product_detail.asp?sku=C6521)
+> 
+> Publication Date: January 2008
+> Number of Pages: 384
+> 
+> This text presents R programs and animations to provide an understanding of how to model natural phenomena from a probabilistic point of view. It covers stochastic processes, the Poisson process, transforms, Bayesian networks, entropy and information, and Markov chains. It includes exercises, selected answers, and ancillary material online.
+> 
+> 
+> List Prices: $89.95 / ???46.99  
+> 
+> Contact Academic Sales Manager Susie Carlisle (susie.carlisle at taylorandfrancis.com) to take advantage of this special offer. 
+> 
+> 
+> 
+> 
+>     [[alternative HTML version deleted]]
+> 
+> 
+>       
+> 	[[alternative HTML version deleted]]
+> 
+> 
+> 
+> ------------------------------------------------------------------------
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+-- 
+*******************************************
+Laura Chihara
+Professor of Mathematics   507-222-4065 (office)
+Dept of Mathematics        507-222-4312 (fax)
+Carleton College
+1 North College Street
+Northfield MN 55057
+
+
+
+From warrack at earthlink.net  Wed Aug 20 19:59:44 2008
+From: warrack at earthlink.net (A.G. WARRACK)
+Date: Wed, 20 Aug 2008 13:59:44 -0400
+Subject: [R-sig-teaching] R texts
+In-Reply-To: <48AC51BF.6030509@carleton.edu>
+References: <897634.42294.qm@web32506.mail.mud.yahoo.com>
+	<48AC51BF.6030509@carleton.edu>
+Message-ID: <154d1a660808201059i450353e9r35e697b0236875e0@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080820/a426096c/attachment.pl>
+
+From wbware at email.unc.edu  Fri Aug 22 22:28:22 2008
+From: wbware at email.unc.edu (William B. Ware)
+Date: Fri, 22 Aug 2008 16:28:22 -0400 (EDT)
+Subject: [R-sig-teaching] R texts
+In-Reply-To: <154d1a660808201059i450353e9r35e697b0236875e0@mail.gmail.com>
+References: <897634.42294.qm@web32506.mail.mud.yahoo.com>
+	<48AC51BF.6030509@carleton.edu>
+	<154d1a660808201059i450353e9r35e697b0236875e0@mail.gmail.com>
+Message-ID: <Pine.LNX.4.63+UNC.0808221623360.6828@login01.its.unc.edu>
+
+I'm new to R, but there are two books that I have found very helpful... 
+Most of the students that I teach are "social science" graduate 
+students... I think that John Verzani's book "Using R for Introductory 
+Statistics" is extremely well suited for that audience.  I also like 
+Michael Crawley's "Statistics: An Introduction using R" and Phil Good's 
+"Introduction to Statistics through Resampling Methods and R/S-Plus.
+
+Also very helpful has been Ugarte, Militino, and Arnholt's "Probability 
+and Statistics with R."
+
+wbw
+
+__________________________________________________________________________
+William B. Ware, Professor       	           Educational Psychology,
+CB# 3500		                       Measurement, and Evaluation
+University of North Carolina	  	             PHONE  (919)-962-7848
+Chapel Hill, NC      27599-3500		             FAX:   (919)-962-1533
+Office:  118 Peabody Hall                            EMAIL: wbware at unc.edu
+Adjunct Professor 		                     School of Social Work
+__________________________________________________________________________
+
+
+On Wed, 20 Aug 2008, A.G. WARRACK wrote:
+
+> but I think also it's very expensive, and as I recall the review in the R
+> newsletter wasn't that good.
+>
+> Also Venables and Ripley cover a lot of the material that Vanesa mentioned.
+> GW
+>
+> On 8/20/08, Laura Chihara <lchihara at carleton.edu> wrote:
+>>
+>>
+>> "The R Book" by Crawley (Wiley) is comprehensive and very useful.
+>> It got a nice review in the latest issue of "The American
+>> Statistician"
+>>
+>> -Laura
+>>
+>> Vanesa Maribel Fern?ndez wrote:
+>>
+>>> Hallo! My
+>>> name is Vanesa; I am a biology PhD student from Argentina. I am used to
+>>> carry out
+>>> statistical analysis of data from our experiments. And I would like to
+>>> have a
+>>> book to learn how to use ???R??  for statistical. I need one which
+>>> contains for
+>>> example: analysis of categorical data, regression, ANOVA (fixed, mixed,
+>>> repeated measures nestled), etc.
+>>> Can you
+>>> help me to choose a book? Thank you
+>>> very much.
+>>> Vanesa
+>>>
+>>>
+>>>
+>>>
+>>> ----- Original Message ----
+>>> From: "Thomas, Judy" <judy.thomas at taylorandfrancis.com>
+>>> To: r-sig-teaching at r-project.org
+>>> Sent: Tuesday, August 12, 2008 11:27:42 AM
+>>> Subject: [R-sig-teaching] ANNOUNCEMENT: COMPLIMENTARY REVIEW COPIES OF NEW
+>>> R BOOKS FROM CHAPMAN & HALL/CRC!
+>>>
+>>> ANNOUNCEMENT:  COMPLIMENTARY REVIEW COPIES OF NEW R BOOKS FROM CHAPMAN &
+>>> HALL/CRC!
+>>>
+>>>
+>>> It's back to school season, and the academic world is buzzing about new
+>>> textbooks. We know you will be making your course adoption selections for
+>>> the spring over the next couple of week, and want to make sure you get a
+>>> sneak peek at our latest offerings.
+>>>
+>>> With this in mind, Chapman & Hall/CRC is pleased to provide complimentary
+>>> review copies of our latest R titles to qualified instructors. Please
+>>> contact Academic Sales Manager Susie Carlisle (
+>>> susie.carlisle at taylorandfrancis.com), and mention promotion code #966HW,
+>>> to take advantage of this special offer.
+>>>
+>>> Secure your review copy today!
+>>>
+>>>
+>>> ****NEW TITLES****
+>>>
+>>> Probability and Statistics with R (
+>>> http://www.crcpress.com/shopping_cart/products/product_detail.asp?sku=C8911
+>>> )
+>>>
+>>> Maria Dolores Ugarte, Public University of Navarre, Pamplona, Spain
+>>> Ana F. Militino, Public University of Navarre, Pamplona, Spain
+>>> Alan Arnholt, Appalachian State University, Boone, North Carolina, U.S.A.
+>>>
+>>> Publication Date: April 2008
+>>> Number of Pages: 728
+>>>
+>>> With numerous real-world examples, carefully explained proofs,
+>>> end-of-chapter problems, and illuminating graphs, this text shows how to
+>>> solve various statistical problems using both parametric and nonparametric
+>>> techniques via R. The authors offer data sets, functions, and other
+>>> ancillary material on a supporting website. A solutions manual is available
+>>> for qualifying instructors.
+>>>
+>>>
+>>> List Prices: $89.95 / ???46.99
+>>>
+>>> Introduction to Probability with R
+>>>
+>>> Kenneth P. Baclawski, Northeastern University, Boston, Massachusetts,
+>>> U.S.A.
+>>> (
+>>> http://www.crcpress.com/shopping_cart/products/product_detail.asp?sku=C6521
+>>> )
+>>>
+>>> Publication Date: January 2008
+>>> Number of Pages: 384
+>>>
+>>> This text presents R programs and animations to provide an understanding
+>>> of how to model natural phenomena from a probabilistic point of view. It
+>>> covers stochastic processes, the Poisson process, transforms, Bayesian
+>>> networks, entropy and information, and Markov chains. It includes exercises,
+>>> selected answers, and ancillary material online.
+>>>
+>>>
+>>> List Prices: $89.95 / ???46.99
+>>> Contact Academic Sales Manager Susie Carlisle (
+>>> susie.carlisle at taylorandfrancis.com) to take advantage of this special
+>>> offer.
+>>>
+>>>
+>>>
+>>>    [[alternative HTML version deleted]]
+>>>
+>>>
+>>>              [[alternative HTML version deleted]]
+>>>
+>>>
+>>>
+>>> ------------------------------------------------------------------------
+>>>
+>>> _______________________________________________
+>>> R-sig-teaching at r-project.org mailing list
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>>
+>>
+>> --
+>> *******************************************
+>> Laura Chihara
+>> Professor of Mathematics   507-222-4065 (office)
+>> Dept of Mathematics        507-222-4312 (fax)
+>> Carleton College
+>> 1 North College Street
+>> Northfield MN 55057
+>>
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>>
+>
+>
+> -- 
+> Giles Warrack
+> 2412 Springwood Drive
+> Greensboro, NC 27403-2030
+> (336) 292-9272 (home)
+> (336) 686-5330 (cell)
+>
+> 	[[alternative HTML version deleted]]
+>
+>
+
+From maechler at stat.math.ethz.ch  Sat Aug 23 20:32:53 2008
+From: maechler at stat.math.ethz.ch (Martin Maechler)
+Date: Sat, 23 Aug 2008 20:32:53 +0200
+Subject: [R-sig-teaching] R texts
+In-Reply-To: <154d1a660808201059i450353e9r35e697b0236875e0@mail.gmail.com>
+References: <897634.42294.qm@web32506.mail.mud.yahoo.com>
+	<48AC51BF.6030509@carleton.edu>
+	<154d1a660808201059i450353e9r35e697b0236875e0@mail.gmail.com>
+Message-ID: <18608.22485.940159.84447@cmath-5.math.ethz.ch>
+
+>>>>> "AGW" == A G WARRACK <warrack at earthlink.net>
+>>>>>     on Wed, 20 Aug 2008 13:59:44 -0400 writes:
+
+    AGW> but I think also it's very expensive, and as I recall
+    AGW> the review in the R newsletter wasn't that good.
+
+yes, and I've also found it bit astonishing that someone who has
+not ever been close to the development R dares to write 
+"*THE* R book" ..
+
+    AGW> Also Venables and Ripley cover a lot of the material
+    AGW> that Vanesa mentioned.  GW
+
+yes, and boht have been close to the development of S and R for
+many years.
+
+Martin
+
+    AGW> On 8/20/08, Laura Chihara <lchihara at carleton.edu>
+    AGW> wrote:
+    >> 
+    >> 
+    >> "The R Book" by Crawley (Wiley) is comprehensive and very
+    >> useful.  It got a nice review in the latest issue of "The
+    >> American Statistician"
+    >> 
+    >> -Laura
+    >> 
+    >> Vanesa Maribel Fern?ndez wrote:
+    >> 
+    >>> Hallo! My name is Vanesa; I am a biology PhD student
+    >>> from Argentina. I am used to carry out statistical
+    >>> analysis of data from our experiments. And I would like
+    >>> to have a book to learn how to use ???R??
+    >>> for statistical. I need one which contains for example:
+    >>> analysis of categorical data, regression, ANOVA (fixed,
+    >>> mixed, repeated measures nestled), etc.  Can you help me
+    >>> to choose a book? Thank you very much.  Vanesa
+    >>> 
+    >>> 
+    >>> 
+    >>> 
+    >>> ----- Original Message ---- From: "Thomas, Judy"
+    >>> <judy.thomas at taylorandfrancis.com> To:
+    >>> r-sig-teaching at r-project.org Sent: Tuesday, August 12,
+    >>> 2008 11:27:42 AM Subject: [R-sig-teaching] ANNOUNCEMENT:
+    >>> COMPLIMENTARY REVIEW COPIES OF NEW R BOOKS FROM CHAPMAN
+    >>> & HALL/CRC!
+    >>> 
+    >>> ANNOUNCEMENT: COMPLIMENTARY REVIEW COPIES OF NEW R BOOKS
+    >>> FROM CHAPMAN & HALL/CRC!
+    >>> 
+    >>> 
+    >>> It's back to school season, and the academic world is
+    >>> buzzing about new textbooks. We know you will be making
+    >>> your course adoption selections for the spring over the
+    >>> next couple of week, and want to make sure you get a
+    >>> sneak peek at our latest offerings.
+    >>> 
+    >>> With this in mind, Chapman & Hall/CRC is pleased to
+    >>> provide complimentary review copies of our latest R
+    >>> titles to qualified instructors. Please contact Academic
+    >>> Sales Manager Susie Carlisle (
+    >>> susie.carlisle at taylorandfrancis.com), and mention
+    >>> promotion code #966HW, to take advantage of this special
+    >>> offer.
+    >>> 
+    >>> Secure your review copy today!
+    >>> 
+    >>> 
+    >>> ****NEW TITLES****
+    >>> 
+    >>> Probability and Statistics with R (
+    >>> http://www.crcpress.com/shopping_cart/products/product_detail.asp?sku=C8911
+    >>> )
+    >>> 
+    >>> Maria Dolores Ugarte, Public University of Navarre,
+    >>> Pamplona, Spain Ana F. Militino, Public University of
+    >>> Navarre, Pamplona, Spain Alan Arnholt, Appalachian State
+    >>> University, Boone, North Carolina, U.S.A.
+    >>> 
+    >>> Publication Date: April 2008 Number of Pages: 728
+    >>> 
+    >>> With numerous real-world examples, carefully explained
+    >>> proofs, end-of-chapter problems, and illuminating
+    >>> graphs, this text shows how to solve various statistical
+    >>> problems using both parametric and nonparametric
+    >>> techniques via R. The authors offer data sets,
+    >>> functions, and other ancillary material on a supporting
+    >>> website. A solutions manual is available for qualifying
+    >>> instructors.
+    >>> 
+    >>> 
+    >>> List Prices: $89.95 / ???46.99
+    >>> 
+    >>> Introduction to Probability with R
+    >>> 
+    >>> Kenneth P. Baclawski, Northeastern University, Boston,
+    >>> Massachusetts, U.S.A.  (
+    >>> http://www.crcpress.com/shopping_cart/products/product_detail.asp?sku=C6521
+    >>> )
+    >>> 
+    >>> Publication Date: January 2008 Number of Pages: 384
+    >>> 
+    >>> This text presents R programs and animations to provide
+    >>> an understanding of how to model natural phenomena from
+    >>> a probabilistic point of view. It covers stochastic
+    >>> processes, the Poisson process, transforms, Bayesian
+    >>> networks, entropy and information, and Markov chains. It
+    >>> includes exercises, selected answers, and ancillary
+    >>> material online.
+    >>> 
+    >>> 
+    >>> List Prices: $89.95 / ???46.99 Contact Academic
+    >>> Sales Manager Susie Carlisle (
+    >>> susie.carlisle at taylorandfrancis.com) to take advantage
+    >>> of this special offer.
+    >>> 
+    >>> 
+    >>> 
+    >>> [[alternative HTML version deleted]]
+    >>> 
+    >>> 
+    >>> [[alternative HTML version deleted]]
+    >>> 
+    >>> 
+    >>> 
+    >>> ------------------------------------------------------------------------
+    >>> 
+    >>> _______________________________________________
+    >>> R-sig-teaching at r-project.org mailing list
+    >>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+    >>> 
+    >> 
+> --
+> *******************************************
+> Laura Chihara Professor of Mathematics 507-222-4065 (office)
+    >> Dept of Mathematics 507-222-4312 (fax) Carleton College 1
+    >> North College Street Northfield MN 55057
+    >> 
+    >> 
+    >> _______________________________________________
+    >> R-sig-teaching at r-project.org mailing list
+    >> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+    >> 
+    >> 
+
+
+-- 
+Giles Warrack
+    AGW> 2412 Springwood Drive Greensboro, NC 27403-2030 (336)
+    AGW> 292-9272 (home) (336) 686-5330 (cell)
+
+    AGW> 	[[alternative HTML version deleted]]
+
+    AGW> _______________________________________________
+    AGW> R-sig-teaching at r-project.org mailing list
+    AGW> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+From luis.tedeschi at gmail.com  Sun Aug 31 15:59:55 2008
+From: luis.tedeschi at gmail.com (Luis Orlindo Tedeschi)
+Date: Sun, 31 Aug 2008 08:59:55 -0500
+Subject: [R-sig-teaching] R texts
+In-Reply-To: <48AC51BF.6030509@carleton.edu>
+References: <897634.42294.qm@web32506.mail.mud.yahoo.com>
+	<48AC51BF.6030509@carleton.edu>
+Message-ID: <1220191195.3082.9.camel@localhost.localdomain>
+
+Vanesa, I concur with "The R Book". I probably have 90% of the R free
+literature printed in hard copy and I've read them twice at least. I
+find "The R Book" excellent; and I anxiously waiting for the next
+edition (hopefully with corrections and additions). Today, it is my
+first choice to find for something in R. If I do not find it there
+(which is not usual), then I look into other resources including R lists
+and publications. Hope this helps.
+
+On Wed, 2008-08-20 at 12:17 -0500, Laura Chihara wrote:
+> "The R Book" by Crawley (Wiley) is comprehensive and very useful.
+> It got a nice review in the latest issue of "The American
+> Statistician"
+> 
+> -Laura
+> 
+> Vanesa Maribel Fern?ndez wrote:
+> > Hallo! My
+> > name is Vanesa; I am a biology PhD student from Argentina. I am used to carry out
+> > statistical analysis of data from our experiments. And I would like to have a
+> > book to learn how to use ???R?? for statistical. I need one which contains for
+> > example: analysis of categorical data, regression, ANOVA (fixed, mixed,
+> > repeated measures nestled), etc.
+> > Can you
+> > help me to choose a book? 
+> > Thank you
+> > very much.
+> > Vanesa
+> >  
+> >  
+> > 
+> > 
+> > 
+> > 
+> > ----- Original Message ----
+> > From: "Thomas, Judy" <judy.thomas at taylorandfrancis.com>
+> > To: r-sig-teaching at r-project.org
+> > Sent: Tuesday, August 12, 2008 11:27:42 AM
+> > Subject: [R-sig-teaching] ANNOUNCEMENT: COMPLIMENTARY REVIEW COPIES OF NEW R BOOKS FROM CHAPMAN & HALL/CRC!
+> > 
+> > ANNOUNCEMENT:  COMPLIMENTARY REVIEW COPIES OF NEW R BOOKS FROM CHAPMAN & HALL/CRC!
+> > 
+> > 
+> > It's back to school season, and the academic world is buzzing about new textbooks. We know you will be making your course adoption selections for the spring over the next couple of week, and want to make sure you get a sneak peek at our latest offerings.  
+> > 
+> > 
+> > With this in mind, Chapman & Hall/CRC is pleased to provide complimentary review copies of our latest R titles to qualified instructors. Please contact Academic Sales Manager Susie Carlisle (susie.carlisle at taylorandfrancis.com), and mention promotion code #966HW, to take advantage of this special offer. 
+> > 
+> > 
+> > Secure your review copy today!
+> > 
+> > 
+> > ****NEW TITLES****
+> > 
+> > Probability and Statistics with R (http://www.crcpress.com/shopping_cart/products/product_detail.asp?sku=C8911)
+> > 
+> > Maria Dolores Ugarte, Public University of Navarre, Pamplona, Spain
+> > Ana F. Militino, Public University of Navarre, Pamplona, Spain
+> > Alan Arnholt, Appalachian State University, Boone, North Carolina, U.S.A.
+> > 
+> > Publication Date: April 2008
+> > Number of Pages: 728
+> > 
+> > With numerous real-world examples, carefully explained proofs, end-of-chapter problems, and illuminating graphs, this text shows how to solve various statistical problems using both parametric and nonparametric techniques via R. The authors offer data sets, functions, and other ancillary material on a supporting website. A solutions manual is available for qualifying instructors.
+> > 
+> > 
+> > List Prices: $89.95 / ???46.99  
+> > 
+> > 
+> > Introduction to Probability with R
+> > 
+> > Kenneth P. Baclawski, Northeastern University, Boston, Massachusetts, U.S.A.
+> > (http://www.crcpress.com/shopping_cart/products/product_detail.asp?sku=C6521)
+> > 
+> > Publication Date: January 2008
+> > Number of Pages: 384
+> > 
+> > This text presents R programs and animations to provide an understanding of how to model natural phenomena from a probabilistic point of view. It covers stochastic processes, the Poisson process, transforms, Bayesian networks, entropy and information, and Markov chains. It includes exercises, selected answers, and ancillary material online.
+> > 
+> > 
+> > List Prices: $89.95 / ???46.99  
+> > 
+> > Contact Academic Sales Manager Susie Carlisle (susie.carlisle at taylorandfrancis.com) to take advantage of this special offer. 
+> > 
+> > 
+> > 
+> > 
+> >     [[alternative HTML version deleted]]
+> > 
+> > 
+> >       
+> > 	[[alternative HTML version deleted]]
+> > 
+> > 
+> > 
+> > ------------------------------------------------------------------------
+> > 
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+-- 
+
+??+----------------------------------------------------+
+              ?Luis O. Tedeschi, PhD, PAS
+                 Assistant Professor
+                 Texas A&M University
+
+230 Kleberg Center               p. (+1) 979-845-5065
+2471 TAMU                        f. (+1) 979-845-5292
+College Station, TX 77843-2471
+
+?http://nutritionmodels.tamu.edu
+http://nutr.tamu.edu
+http://people.tamu.edu/~luis.tedeschi
++----------------------------------------------------+
+
+
+
+From pmillet at emosist.fr  Mon Sep  1 11:53:30 2008
+From: pmillet at emosist.fr (pmillet)
+Date: Mon, 01 Sep 2008 11:53:30 +0200
+Subject: [R-sig-teaching] R texts
+In-Reply-To: <1220191195.3082.9.camel@localhost.localdomain>
+References: <897634.42294.qm@web32506.mail.mud.yahoo.com>	<48AC51BF.6030509@carleton.edu>
+	<1220191195.3082.9.camel@localhost.localdomain>
+Message-ID: <48BBBB9A.5090809@emosist.fr>
+
+I have found the R Book very useful as it have the same general approach 
+throughout the entire book. Most of the free articles do not share this 
+property. Each have it's own approach. This may be fruitful (plenty of 
+diffrent approaches) but is confusing for the beginner.(exemple = the 
+choice and exclusion of variables int the different regression tools = 
+linear, logistic, cox and so on.)
+Friendly P Millet
+
+Luis Orlindo Tedeschi a ?crit :
+> Vanesa, I concur with "The R Book". I probably have 90% of the R free
+> literature printed in hard copy and I've read them twice at least. I
+> find "The R Book" excellent; and I anxiously waiting for the next
+> edition (hopefully with corrections and additions). Today, it is my
+> first choice to find for something in R. If I do not find it there
+> (which is not usual), then I look into other resources including R lists
+> and publications. Hope this helps.
+>
+> On Wed, 2008-08-20 at 12:17 -0500, Laura Chihara wrote:
+>   
+>> "The R Book" by Crawley (Wiley) is comprehensive and very useful.
+>> It got a nice review in the latest issue of "The American
+>> Statistician"
+>>
+>> -Laura
+>>
+>> Vanesa Maribel Fern?ndez wrote:
+>>     
+>>> Hallo! My
+>>> name is Vanesa; I am a biology PhD student from Argentina. I am used to carry out
+>>> statistical analysis of data from our experiments. And I would like to have a
+>>> book to learn how to use ???R?? for statistical. I need one which contains for
+>>> example: analysis of categorical data, regression, ANOVA (fixed, mixed,
+>>> repeated measures nestled), etc.
+>>> Can you
+>>> help me to choose a book? 
+>>> Thank you
+>>> very much.
+>>> Vanesa
+>>>  
+>>>  
+>>>
+>>>
+>>>
+>>>
+>>> ----- Original Message ----
+>>> From: "Thomas, Judy" <judy.thomas at taylorandfrancis.com>
+>>> To: r-sig-teaching at r-project.org
+>>> Sent: Tuesday, August 12, 2008 11:27:42 AM
+>>> Subject: [R-sig-teaching] ANNOUNCEMENT: COMPLIMENTARY REVIEW COPIES OF NEW R BOOKS FROM CHAPMAN & HALL/CRC!
+>>>
+>>> ANNOUNCEMENT:  COMPLIMENTARY REVIEW COPIES OF NEW R BOOKS FROM CHAPMAN & HALL/CRC!
+>>>
+>>>
+>>> It's back to school season, and the academic world is buzzing about new textbooks. We know you will be making your course adoption selections for the spring over the next couple of week, and want to make sure you get a sneak peek at our latest offerings.  
+>>>
+>>>
+>>> With this in mind, Chapman & Hall/CRC is pleased to provide complimentary review copies of our latest R titles to qualified instructors. Please contact Academic Sales Manager Susie Carlisle (susie.carlisle at taylorandfrancis.com), and mention promotion code #966HW, to take advantage of this special offer. 
+>>>
+>>>
+>>> Secure your review copy today!
+>>>
+>>>
+>>> ****NEW TITLES****
+>>>
+>>> Probability and Statistics with R (http://www.crcpress.com/shopping_cart/products/product_detail.asp?sku=C8911)
+>>>
+>>> Maria Dolores Ugarte, Public University of Navarre, Pamplona, Spain
+>>> Ana F. Militino, Public University of Navarre, Pamplona, Spain
+>>> Alan Arnholt, Appalachian State University, Boone, North Carolina, U.S.A.
+>>>
+>>> Publication Date: April 2008
+>>> Number of Pages: 728
+>>>
+>>> With numerous real-world examples, carefully explained proofs, end-of-chapter problems, and illuminating graphs, this text shows how to solve various statistical problems using both parametric and nonparametric techniques via R. The authors offer data sets, functions, and other ancillary material on a supporting website. A solutions manual is available for qualifying instructors.
+>>>
+>>>
+>>> List Prices: $89.95 / ???46.99  
+>>>
+>>>
+>>> Introduction to Probability with R
+>>>
+>>> Kenneth P. Baclawski, Northeastern University, Boston, Massachusetts, U.S.A.
+>>> (http://www.crcpress.com/shopping_cart/products/product_detail.asp?sku=C6521)
+>>>
+>>> Publication Date: January 2008
+>>> Number of Pages: 384
+>>>
+>>> This text presents R programs and animations to provide an understanding of how to model natural phenomena from a probabilistic point of view. It covers stochastic processes, the Poisson process, transforms, Bayesian networks, entropy and information, and Markov chains. It includes exercises, selected answers, and ancillary material online.
+>>>
+>>>
+>>> List Prices: $89.95 / ???46.99  
+>>>
+>>> Contact Academic Sales Manager Susie Carlisle (susie.carlisle at taylorandfrancis.com) to take advantage of this special offer. 
+>>>
+>>>
+>>>
+>>>
+>>>     [[alternative HTML version deleted]]
+>>>
+>>>
+>>>       
+>>> 	[[alternative HTML version deleted]]
+>>>
+>>>
+>>>
+>>> ------------------------------------------------------------------------
+>>>
+>>> _______________________________________________
+>>> R-sig-teaching at r-project.org mailing list
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>>       
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+
+
+
+From pmillet at emosist.fr  Thu Sep 25 15:01:03 2008
+From: pmillet at emosist.fr (pmillet)
+Date: Thu, 25 Sep 2008 15:01:03 +0200
+Subject: [R-sig-teaching] some tools for linking 2 text vectors
+In-Reply-To: <1220191195.3082.9.camel@localhost.localdomain>
+References: <897634.42294.qm@web32506.mail.mud.yahoo.com>	<48AC51BF.6030509@carleton.edu>
+	<1220191195.3082.9.camel@localhost.localdomain>
+Message-ID: <48DB8B8F.5070403@emosist.fr>
+
+I used R somehow ? strangely ? for a rather common problem facing 
+programmers confronted with heterogeneous databases (who may or not be 
+statistician)=
+
+How to link database B with Base A when both base's data are totally or 
+partially un-standardized text ?
+
+At first glance, R is NOT the ideal tool for that, however =
+
+
+potent string tools are included in the base R (grep, agrep)
+
+R is multi platform (Linux, Mac, Windows)
+
+With R it is easy to read and write dbf ( Dbase) files , ans from Dbase 
+to excel, access and so on
+
+
+So I propose here a quite primitive tool, achieving this aim (where some 
+tricks may be useful). Of course, programmers will make it more adapted 
+to their specific aims. I hope it may be useful to some of you. Some 
+functions were unexpectedly difficult (how to manage empty lists, how to 
+import list data in a database row ) and I hope my solutions wille help.
+
+
+The fist program links a Dbase file with structured and standardized 
+fields = NIP= index number, name=NOM, surname=PRENOM, postal code=CP and 
+a csv file with unstructured text (identity, adress, postal 
+code).(yellow pages)
+
+
+I use the grep (or agrep function) to find a pattern in a text.(agrep 
+find approached links)
+
+I use three successive passes to find the links for name, then surname 
+(among the result file) and then Postal code If this last list of 
+results is not empty I write it in a Dbase datafile.
+
+
+With the grep function you can return either the index number of the 
+? hit ? or it's value (with the option value=TRUE). The problem is that 
+you return only the field who shows a link. So you look for ? smith ? 
+and have in return ? smith ? . It's not very useful.
+
+The trick is to use the scan function to read the csv file with the 
+return character as sep (separator). Then you have in return the entire 
+line (with ; virtually separating fields) inclunding the index number 
+and so on. .
+
+However the return is a list of strings . Importing the data from a list 
+to a database is quite tedious (see below)
+
+library (foreign)
+
+TT<- read.dbf ('C:\\PJ\\TFC.dbf')
+
+T <- scan ('C:\\PJ\\TT.CSV', what='string', sep='\r')
+
+REP <- c()
+
+K <- 1
+
+Sp <- ';'
+
+
+LTT <- length (TT$NOM1)
+
+for ( J in 1:LTT){
+
+
+
+C1 <- c ()
+
+C2 <- c ()
+
+C3 <- c ()
+
+
+CC <- data.frame( TT [J,])
+
+GLOBAL <- paste (Sp , CC$NIP, Sp, CC$NOM1, Sp, CC$PRENOM, Sp, CC$CP, Sp, 
+'0' )
+
+C1 <- grep (CC$NOM1, T, value=TRUE)
+
+if (length (C1) > 0) {
+
+C2 <- grep (CC$PRENOM, C1, value=TRUE)
+
+}
+
+if (length (C2) > 0) {
+
+C3 <- grep (CC$CP, C2, value=TRUE)
+
+}
+
+L <- length (C3)
+
+if (L>0) {
+
+for (G in 1:L) {
+
+REP [K] <- paste (GLOBAL,Sp , G,Sp , C3 [G], Sp, 'X')
+
+K <- K+1 }
+
+}
+
+}
+
+
+RP <- as.vector (REP)
+
+
+L <- length (RP)
+
+EXC <- c ()
+
+NIP <- c()
+
+NOM <- c()
+
+PRENOM <- c ()
+
+CP <- c()
+
+CTRL <- c()
+
+NB <- c()
+
+NUM <- c ()
+
+NOMX <-c ()
+
+NOM2 <- c()
+
+FONCT <- c()
+
+ADR1 <- c ()
+
+ADR2 <- c ()
+
+CPVILLE <- c ()
+
+TEL <- c ()
+
+FAX <- c()
+
+NUMRUB <- c()
+
+RUB <- c()
+
+SIRET <- c()
+
+for (G in 1:L) {
+
+TX <- as.character (RP [G])
+
+LTX <- length (TX)
+
+NX <- 0
+
+for (G2 in 1:LTX){
+
+if (TX [G2] ==';') NX <- NX+1
+
+}
+
+if (NX==18) TX <- paste (TX,';XX')
+
+TX <- paste (TX,';XX')
+
+
+LL <- strsplit (TX,';')
+
+EXC [G] <- LL [[1]] [1]
+
+NIP [G] <- LL [[1]] [2]
+
+NOM [G] <- LL [[1]] [3]
+
+PRENOM [G] <- LL [[1]] [4]
+
+CP [G] <- LL [[1]] [5]
+
+CTRL [G] <- LL [[1]] [6]
+
+NB [G] <- LL [[1]] [7]
+
+NUM [G] <- LL [[1]] [8]
+
+NOMX [G] <- LL [[1]] [9]
+
+NOM2 [G] <- LL [[1]] [10]
+
+FONCT [G] <- LL [[1]] [11]
+
+ADR1 [G] <- LL [[1]] [12]
+
+ADR2 [G] <- LL [[1]] [13]
+
+CPVILLE [ G] <- LL [[1]] [14]
+
+TEL [G] <- LL [[1]] [15]
+
+FAX [G] <- LL [[1]] [16]
+
+NUMRUB [G] <- LL [[1]] [17]
+
+RUB [G] <- LL [[1]] [18]
+
+SIRET [G] <- LL [[1]] [19]
+
+
+
+}
+
+
+DF <- data.frame (NIP, NOM, PRENOM, CP, CTRL, NB, NUM,NOMX,NOM2 , FONCT, 
+ADR1, ADR2, CPVILLE, TEL, FAX, NUMRUB, RUB,SIRET)
+
+write.dbf (DF, 'C:\\PJ\\RR3.dbf')
+
+
+
+
+However this program return more data than needed. For exemple we have a 
+central town who is named ? BESANCON ?. So for the 2 people in my base 
+who were named ? BESANCON ? I found all the people with the same surname 
+and postal code (As my grep was asking for a link between my pattern 
+(here BESANCON) with the entire line including the fields names, 
+surnames and .. city).
+
+
+So it is necessary to complete the first ? extensive ? search with a 
+control one.
+
+As the table saved with the first program has defined fields it is easy 
+to open it and make a grep between the 2 names fields (the ones coming 
+from each database) to control that the link is indeed between the 2 
+names and not between name1 and city. Is it ??
+
+Not really. Because grep is made to find a link between a pattern and a 
+list or vector (of strings), not between 2 strings. So it returns either 
+a list with the indexes of the hits (here only one as the field name2 is 
+a one string vector) or an empty list (integer (0). The problem is that 
+you have no direct test for an empty list (either they do not split = 
+is.numeric, is list are TRUE wether the list is empty or not, or they 
+create an exception).
+
+However sum (list) gives 0 for an empty list or 1 for a list with ? 1 ?. 
+This may be used as a test
+
+nb = the gsub function suppress some confusing characters including the 
+spaces.
+
+library (foreign)
+
+H <- read.dbf ("C:\\PJ\\RR3.dbf")
+
+L <- length (H$NIP)
+
+
+for (G in 1:L) {
+
+TT <- gsub ("[/?,'-_ ]","", H$NOM [G])
+
+TX <- gsub ("[/?,'-_ ]","", H$NOMX [G])
+
+
+if (sum (grep(TT,TX))==0) H$MAD [G] <- 1
+
+
+
+
+
+}
+
+write.dbf (H, 'C:\\PJ\\RRX.dbf')
+
+
+Il is useful to have a marker of potential problems as the procedure may 
+have ? false positives ?, for exemple FONTAINE marc and FONTEINE marc 
+are pointed as errors. A manual control is useful.
+
+
+
+One extension is to program a bigram procedure (two strings are compared 
+by taking 2 character strings in the first and computing the rate of 
+hits in the second). Numeric values are given a *3 weigth.
+
+
+
+
+library (foreign)
+
+H <- read.dbf ('C:\\PJ\\PJAD.DBF')
+
+L <- length (H$NIP)
+
+
+for (G in 1:L) {
+
+TT <- gsub ("[/?,' ]","", H$ADRPJ [G])
+
+TX <- gsub ("[/?,' ]","", H$ADRF [G])
+
+
+LTT <- nchar (TT)
+
+LL <- LTT
+
+CTTS <- 0
+
+for (GG in 1:(LTT-2)){
+
+
+
+CT <- substr (TT, GG,GG+1)
+
+
+
+
+CTTS <- CTTS + CTT
+
+}library (foreign)
+
+H <- read.dbf ('C:\\PJ\\PJAD.DBF')
+
+L <- length (H$NIP)
+
+
+for (G in 1:L) {
+
+TT <- gsub ("[/?,' ]","", H$ADRPJ [G])
+
+TX <- gsub ("[/?,' ]","", H$ADRF [G])
+
+
+LTT <- nchar (TT)
+
+LL <- LTT
+
+CTTS <- 0
+
+for (GG in 1:(LTT-2)){
+
+
+
+CT <- substr (TT, GG,GG+1)
+
+
+CTT <- sum (grep (CT,TX))
+
+if (sum (grep ("[0-9]", CT))){
+
+CTT <- 3*CTT
+
+LL <-LL+3
+
+}
+
+
+CTTS <- CTTS + CTT
+
+}
+
+CTTS1 <- (CTTS/LL)*100
+
+
+H$MAD [G] <- CTTS1
+
+
+}
+
+write.dbf (H, 'C:\\PJ\\PJAD2.dbf')
+
+
+>>>
+>>>
+>>> ------------------------------------------------------------------------
+>>>
+>>> _______________________________________________
+>>> R-sig-teaching at r-project.org mailing list
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>>       
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+
+
+

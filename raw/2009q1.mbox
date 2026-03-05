@@ -1,0 +1,4129 @@
+From statistics2020 at gmail.com  Sat Jan 31 20:55:43 2009
+From: statistics2020 at gmail.com (Anna Supady)
+Date: Sat, 31 Jan 2009 13:55:43 -0600
+Subject: [R-sig-teaching] issues with importing
+Message-ID: <a17f8fd00901311155p7923794dp14dec34724b0f43@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090131/e821f116/attachment.pl>
+
+From jholtman at gmail.com  Sat Jan 31 20:58:56 2009
+From: jholtman at gmail.com (jim holtman)
+Date: Sat, 31 Jan 2009 14:58:56 -0500
+Subject: [R-sig-teaching] issues with importing
+In-Reply-To: <a17f8fd00901311155p7923794dp14dec34724b0f43@mail.gmail.com>
+References: <a17f8fd00901311155p7923794dp14dec34724b0f43@mail.gmail.com>
+Message-ID: <644e1f320901311158u7b94ff3br67c2d582827b635f@mail.gmail.com>
+
+What exactly are you trying to do with Excel?  Have you tried
+exporting as CSV and then using 'read.csv' in R?  Exactly what error
+message are you getting and what statements were you executing.
+
+To create your matrix, use 'matrix',
+
+On Sat, Jan 31, 2009 at 2:55 PM, Anna Supady <statistics2020 at gmail.com> wrote:
+> Hello Everyone,
+> I am a new R user. Not everything goes so easy. I have many questions. I
+> believe that this is the place where one can discuss issue in R programing.
+> I cannot get excel file open using file location. Only note pad works but
+> some data is in excel. How can I do that? Also, I need to create MATRIX OF
+> DIMENSIONS nxn. I am not sure how to do that.
+>
+> Thanks for help,
+> Ania
+>
+>        [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+-- 
+Jim Holtman
+Cincinnati, OH
++1 513 646 9390
+
+What is the problem that you are trying to solve?
+
+
+
+From desja004 at umn.edu  Sat Jan 31 21:08:37 2009
+From: desja004 at umn.edu (Christopher Desjardins)
+Date: Sat, 31 Jan 2009 14:08:37 -0600
+Subject: [R-sig-teaching] issues with importing
+Message-ID: <p23osgex4ohjx0d0g0iu3bur.1233432518075@email.android.com>
+
+I believe you can import excel files via the foreign package. As was suggested saving the file as .csv would allow you to import directly via read.csv. If you're new to R you should read the docs on cran. They are very good.
+
+jim holtman <jholtman at gmail.com> wrote:
+
+>What exactly are you trying to do with Excel?  Have you tried
+>exporting as CSV and then using 'read.csv' in R?  Exactly what error
+>message are you getting and what statements were you executing.
+>
+>To create your matrix, use 'matrix',
+>
+>On Sat, Jan 31, 2009 at 2:55 PM, Anna Supady <statistics2020 at gmail.com> wrote:
+>> Hello Everyone,
+>> I am a new R user. Not everything goes so easy. I have many questions. I
+>> believe that this is the place where one can discuss issue in R programing.
+>> I cannot get excel file open using file location. Only note pad works but
+>> some data is in excel. How can I do that? Also, I need to create MATRIX OF
+>> DIMENSIONS nxn. I am not sure how to do that.
+>>
+>> Thanks for help,
+>> Ania
+>>
+>>        [[alternative HTML version deleted]]
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>
+>
+>
+>-- 
+>Jim Holtman
+>Cincinnati, OH
+>+1 513 646 9390
+>
+>What is the problem that you are trying to solve?
+>
+>_______________________________________________
+>R-sig-teaching at r-project.org mailing list
+>https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+From jones at reed.edu  Sat Jan 31 23:08:59 2009
+From: jones at reed.edu (Albyn Jones)
+Date: Sat, 31 Jan 2009 14:08:59 -0800
+Subject: [R-sig-teaching] issues with importing
+In-Reply-To: <a17f8fd00901311155p7923794dp14dec34724b0f43@mail.gmail.com>
+References: <a17f8fd00901311155p7923794dp14dec34724b0f43@mail.gmail.com>
+Message-ID: <20090131220859.GA16884@laplace.reed.edu>
+
+You should post basic R questions to the R-help list;
+this list is intended for discussion of the use of R in
+teaching.
+
+albyn
+
+On Sat, Jan 31, 2009 at 01:55:43PM -0600, Anna Supady wrote:
+> Hello Everyone,
+> I am a new R user. Not everything goes so easy. I have many questions. I
+> believe that this is the place where one can discuss issue in R programing.
+> I cannot get excel file open using file location. Only note pad works but
+> some data is in excel. How can I do that? Also, I need to create MATRIX OF
+> DIMENSIONS nxn. I am not sure how to do that.
+> 
+> Thanks for help,
+> Ania
+> 
+> 	[[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+From hayden at mv.mv.com  Sat Jan 31 23:17:38 2009
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Sat, 31 Jan 2009 17:17:38 -0500 (EST)
+Subject: [R-sig-teaching] issues with importing
+In-Reply-To: <a17f8fd00901311155p7923794dp14dec34724b0f43@mail.gmail.com> from
+	"Anna Supady" at Jan 31, 2009 01:55:43 PM
+Message-ID: <20090131221738.95319.qmail@mv.mv.com>
+
+> 
+> Hello Everyone,
+> I am a new R user. Not everything goes so easy. I have many questions. I
+> believe that this is the place where one can discuss issue in R programing.
+> I cannot get excel file open using file location. Only note pad works but
+> some data is in excel. How can I do that? Also, I need to create MATRIX OF
+> DIMENSIONS nxn. I am not sure how to do that.
+> 
+> Thanks for help,
+> Ania
+
+Look at
+
+     http://cran.r-project.org/doc/manuals/R-data.html#Reading-Excel-spreadsheets
+
+and the other suggestion posted before mine.  Also
+
+    http://www.sciviews.org/_rgui/
+
+where you can look at R-(D)COM Server or R Gnumeric which turn the
+problem upside down and run R from within a spreadsheet program.
+ 
+> 	[[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+
+ http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+	    
+  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)
+  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      
+  email  bob statland.org  (add your own "@" and save me some spam)
+
+
+
+From hayden at mv.mv.com  Sat Jan 31 23:47:27 2009
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Sat, 31 Jan 2009 17:47:27 -0500 (EST)
+Subject: [R-sig-teaching] Who is the list for?
+Message-ID: <20090131224727.1924.qmail@mv.mv.com>
+
+Forwarded message:
+> From: Albyn Jones <jones at reed.edu>
+> 
+> You should post basic R questions to the R-help list;
+> this list is intended for discussion of the use of R in
+> teaching.
+
+Albyn, could you tell us more about what is on that list?
+
+Some time ago I raised the possibility of an email list for those who
+want to use R in teaching introductory courses.  The idea was passed
+on and within a couple days this list was born.  (I assumed causality,
+but it may have been coincidence;-)  I would have made the list open to
+any question from anyone using R in an introductory course.  Perhaps
+there is a problem due to bimodality in the potential audience.  Some
+are old hands at R and now want to use it in the classroom.  Others
+may have never used it before and are now trying to teach with it.  I
+am not on the R-help list but wonder how much of the content there
+overlaps an introductory statistics course?  Or how much would be over
+the head of a beginner?  (I think most of the R documentation is well
+beyond the level of an introductory course, and pretty overwhelming
+and incomprehensible to a beginner, so I am hoping there is SOME place
+where beginners can get simple answers to simple questions without
+becoming Unix gurus or programmers first.)
+
+For anyone wondering why a non-R-guru such as myself might be on this
+list (or have suggested its creation)...  I teach online in a context
+where we cannot buy a site license to provide each student with
+software.  They have to either use whatever their employer provides
+(if anything), or pay for software out of their own pocket, normally
+at full single-copy prices.  R is attractive because it is free.  It
+also makes sense because our introductory courses (at least
+originally) only exist to prepare students for more advanced courses
+where R is preferred for its power or programmability.  So, having
+created the introductory courses themselves, I then created student
+manuals for Minitab (because I already knew it), Data Desk (because it
+comes with the textbook), and R (for reasons already given).  In
+creating the R materials, I encountered others trying to get started
+with R while using it in an introductory course, and hence this list.
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+
+ http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+	    
+  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)
+  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      
+  email  bob statland.org  (add your own "@" and save me some spam)
+
+
+
+From jones at reed.edu  Sun Feb  1 00:46:16 2009
+From: jones at reed.edu (Albyn Jones)
+Date: Sat, 31 Jan 2009 15:46:16 -0800
+Subject: [R-sig-teaching] [jones@reed.edu: Re:  Who is the list for?]
+Message-ID: <20090131234616.GA18179@laplace.reed.edu>
+
+Ooops, I failed to respond to the list.  Here it is...
+
+albyn
+
+----- Forwarded message from Albyn Jones <jones at reed.edu> -----
+
+Hi Robert
+
+That's a good question, and clearly the boundary is fuzzy.  
+
+I was inferring from the form of the question that the poster was a
+random person learning R, rather than someone using R to teach
+courses.  I may have been in error, in which case I apologize to all
+for jumping to a conclusion.
+
+I don't have a list of topics that are appropriate or inappropriate,
+rather a notion that this list is not the same as the R-help list,
+but is for discussion of issues related to teaching R or with R.
+
+In any case, anyone teaching with R should be aware of the R-help list.
+
+albyn
+
+
+
+On Sat, Jan 31, 2009 at 05:47:27PM -0500, Robert W. Hayden wrote:
+> Forwarded message:
+> > From: Albyn Jones <jones at reed.edu>
+> > 
+> > You should post basic R questions to the R-help list;
+> > this list is intended for discussion of the use of R in
+> > teaching.
+> 
+> Albyn, could you tell us more about what is on that list?
+> 
+> Some time ago I raised the possibility of an email list for those who
+> want to use R in teaching introductory courses.  The idea was passed
+> on and within a couple days this list was born.  (I assumed causality,
+> but it may have been coincidence;-)  I would have made the list open to
+> any question from anyone using R in an introductory course.  Perhaps
+> there is a problem due to bimodality in the potential audience.  Some
+> are old hands at R and now want to use it in the classroom.  Others
+> may have never used it before and are now trying to teach with it.  I
+> am not on the R-help list but wonder how much of the content there
+> overlaps an introductory statistics course?  Or how much would be over
+> the head of a beginner?  (I think most of the R documentation is well
+> beyond the level of an introductory course, and pretty overwhelming
+> and incomprehensible to a beginner, so I am hoping there is SOME place
+> where beginners can get simple answers to simple questions without
+> becoming Unix gurus or programmers first.)
+> 
+> For anyone wondering why a non-R-guru such as myself might be on this
+> list (or have suggested its creation)...  I teach online in a context
+> where we cannot buy a site license to provide each student with
+> software.  They have to either use whatever their employer provides
+> (if anything), or pay for software out of their own pocket, normally
+> at full single-copy prices.  R is attractive because it is free.  It
+> also makes sense because our introductory courses (at least
+> originally) only exist to prepare students for more advanced courses
+> where R is preferred for its power or programmability.  So, having
+> created the introductory courses themselves, I then created student
+> manuals for Minitab (because I already knew it), Data Desk (because it
+> comes with the textbook), and R (for reasons already given).  In
+> creating the R materials, I encountered others trying to get started
+> with R while using it in an introductory course, and hence this list.
+> 
+> ------->  First-time AP Stats. teacher?  Help is on the way! See
+> 
+>  http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+> 	    
+>   Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)
+>   North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      
+>   email  bob statland.org  (add your own "@" and save me some spam)
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> 
+
+----- End forwarded message -----
+
+
+
+From becky_le at yahoo.com  Sun Feb  1 01:38:03 2009
+From: becky_le at yahoo.com (Rebecca Le)
+Date: Sat, 31 Jan 2009 16:38:03 -0800 (PST)
+Subject: [R-sig-teaching] [Re:  Who is the list for?]
+In-Reply-To: <20090131234616.GA18179@laplace.reed.edu>
+Message-ID: <986176.94759.qm@web34807.mail.mud.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090131/16db7fb7/attachment.pl>
+
+From landronimirc at gmail.com  Sun Feb  1 09:50:39 2009
+From: landronimirc at gmail.com (Liviu Andronic)
+Date: Sun, 1 Feb 2009 09:50:39 +0100
+Subject: [R-sig-teaching] issues with importing
+In-Reply-To: <20090131221738.95319.qmail@mv.mv.com>
+References: <a17f8fd00901311155p7923794dp14dec34724b0f43@mail.gmail.com>
+	<20090131221738.95319.qmail@mv.mv.com>
+Message-ID: <68b1e2610902010050k63e92abdhcea4f95445951453@mail.gmail.com>
+
+On 1/31/09, Robert W. Hayden <hayden at mv.mv.com> wrote:
+>  where you can look at R-(D)COM Server or
+>
+Yes, a good idea is to use RExcel, or a GUI such as Rcmdr.
+
+
+> R Gnumeric which turn the
+>  problem upside down and run R from within a spreadsheet program.
+>
+Concerning Gnumeric, is there anything newer than the quite old
+RGnumeric_0.3-5. I am looking for something in the style of RExcel or
+ROOo [1] [2].
+Regards,
+Liviu
+
+[1] http://sunsite.univie.ac.at/rcom/
+[2] http://sunsite.univie.ac.at/rcom/download/
+
+
+-- 
+Do you know how to read?
+http://www.alienetworks.com/srtest.cfm
+Do you know how to write?
+http://garbl.home.comcast.net/~garbl/stylemanual/e.htm#e-mail
+
+
+
+From maechler at stat.math.ethz.ch  Mon Feb  9 09:36:20 2009
+From: maechler at stat.math.ethz.ch (Martin Maechler)
+Date: Mon, 9 Feb 2009 09:36:20 +0100
+Subject: [R-sig-teaching] Who is the list for?
+In-Reply-To: <20090131224727.1924.qmail@mv.mv.com>
+References: <20090131224727.1924.qmail@mv.mv.com>
+Message-ID: <18831.60164.66667.730827@stat.math.ethz.ch>
+
+>>>>> "RWH" == Robert W Hayden <hayden at mv.mv.com>
+>>>>>     on Sat, 31 Jan 2009 17:47:27 -0500 (EST) writes:
+
+    RWH> Forwarded message:
+    >> From: Albyn Jones <jones at reed.edu>
+    >> 
+    >> You should post basic R questions to the R-help list;
+    >> this list is intended for discussion of the use of R in
+    >> teaching.
+
+    RWH> Albyn, could you tell us more about what is on that
+    RWH> list?
+
+    RWH> Some time ago I raised the possibility of an email list
+    RWH> for those who want to use R in teaching introductory
+    RWH> courses.  The idea was passed on and within a couple
+    RWH> days this list was born.  (I assumed causality, but it
+    RWH> may have been coincidence;-) 
+
+both, I'd say (as the mailing list creator).
+
+    RWH> I would have made the list open to any question from
+    RWH> anyone using R in an introductory course.
+
+Well, I haven't been too active on this list; but in my perception,
+that hand't been the idea of R-sig-teaching.
+Rather it's a list for (potential) *teachers* of R or of
+"<your-science> using R".
+
+    RWH> Perhaps there is a problem due to
+    RWH> bimodality in the potential audience.  
+
+yes, if you (and others) want a "R-newbies questions mailing list",
+you should make a case for it ... on R-help (!) ... *the*
+principal R list.  But be aware that the issue is brought up
+about every two years, and after some discussion is buried, once
+people "see" that current situation with R-help (and its
+somewhat strict posting guidelines, and its gatewaying into
+Gmane and Nabble "forums") is not easy to improve as long as its
+based on volunteers running everything.
+
+Regards,
+Martin Maechler, ETH Zurich
+
+    RWH> Some are old hands at R and now want to use it in the classroom.
+    RWH> Others may have never used it before and are now trying
+    RWH> to teach with it.  I am not on the R-help list but
+    RWH> wonder how much of the content there overlaps an
+    RWH> introductory statistics course?  Or how much would be
+    RWH> over the head of a beginner?  (I think most of the R
+    RWH> documentation is well beyond the level of an
+    RWH> introductory course, and pretty overwhelming and
+    RWH> incomprehensible to a beginner, so I am hoping there is
+    RWH> SOME place where beginners can get simple answers to
+    RWH> simple questions without becoming Unix gurus or
+    RWH> programmers first.)
+
+    RWH> For anyone wondering why a non-R-guru such as myself
+    RWH> might be on this list (or have suggested its
+    RWH> creation)...  I teach online in a context where we
+    RWH> cannot buy a site license to provide each student with
+    RWH> software.  They have to either use whatever their
+    RWH> employer provides (if anything), or pay for software
+    RWH> out of their own pocket, normally at full single-copy
+    RWH> prices.  R is attractive because it is free.  It also
+    RWH> makes sense because our introductory courses (at least
+    RWH> originally) only exist to prepare students for more
+    RWH> advanced courses where R is preferred for its power or
+    RWH> programmability.  So, having created the introductory
+    RWH> courses themselves, I then created student manuals for
+    RWH> Minitab (because I already knew it), Data Desk (because
+    RWH> it comes with the textbook), and R (for reasons already
+    RWH> given).  In creating the R materials, I encountered
+    RWH> others trying to get started with R while using it in
+    RWH> an introductory course, and hence this list.
+
+    -------> First-time AP Stats. teacher?  Help is on the way!
+    -------> See
+
+    RWH>  http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+	    
+    RWH>   Robert W. Hayden in the old library at 212 Main
+    RWH> Street (P. O. Box 450) North Troy, VT 05859 phone (802)
+    RWH> 988-2587 web site http://statland.org/ email bob
+    RWH> statland.org (add your own "@" and save me some spam)
+
+    RWH> _______________________________________________
+    RWH> R-sig-teaching at r-project.org mailing list
+    RWH> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+From hayden at mv.mv.com  Sun Feb 15 03:24:15 2009
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Sat, 14 Feb 2009 21:24:15 -0500 (EST)
+Subject: [R-sig-teaching] installing Rcmdr
+Message-ID: <20090215022415.92847.qmail@mv.mv.com>
+
+
+Last weekend I visited my sister and her husband and installed R on
+their Ubuntu 8.04 machine and tried to add Rcmdr.  I had endless
+trouble most of which seemed to be because R (or Rcmdr) seemed to want
+a Fortran compiler (or a Fortran-to-C translator).  A smaller number
+of error mesages (out of many pages thereof) were removed by
+installing what appeared to be a library of Fortran linear algebra
+routines (lblas?).  Even then Rcmdr complained about missing packages
+when I ran it, and though it offered to install them, the installation
+failed in every case, with no useful error messages.  
+
+I have installed R and Rcmdr many times before to Windows and various
+Linux distributions (it's on this Debian right now)  and never had so
+much trouble.  Did I do something wrong?  Is there a problem with R on
+Ubuntu?  I have programmed in Fortran so I don't mind adding a
+compiler and I've taught linear algebra so I don't mind adding linear
+algebra routines, but there is no way my students would ever figure
+out that was needed.  I also noted that Rcmdr had a MUCH longer list
+of dependencies than I remember.  All of this has me worried about
+using R in an introductory course for folks who are not computer
+science majors.  
+
+Has anyone encountered a similar problem?  I used whatever version of
+R is in the Ubuntu repository.  I seem to remember 2.4 though that
+seems a bit old.
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+
+ http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+	    
+  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)
+  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      
+  email  bob statland.org  (add your own "@" and save me some spam)
+
+
+
+From gkerns at ysu.edu  Sun Feb 15 03:54:32 2009
+From: gkerns at ysu.edu (G. Jay Kerns)
+Date: Sat, 14 Feb 2009 21:54:32 -0500
+Subject: [R-sig-teaching] installing Rcmdr
+In-Reply-To: <20090215022415.92847.qmail@mv.mv.com>
+References: <20090215022415.92847.qmail@mv.mv.com>
+Message-ID: <a695148b0902141854r78c33b35vf2d1207ec71f02e7@mail.gmail.com>
+
+Dear Robert,
+
+
+On Sat, Feb 14, 2009 at 9:24 PM, Robert W. Hayden <hayden at mv.mv.com> wrote:
+>
+> Last weekend I visited my sister and her husband and installed R on
+> their Ubuntu 8.04 machine and tried to add Rcmdr.  I had endless
+> trouble most of which seemed to be because R (or Rcmdr) seemed to want
+> a Fortran compiler (or a Fortran-to-C translator).  A smaller number
+> of error mesages (out of many pages thereof) were removed by
+> installing what appeared to be a library of Fortran linear algebra
+> routines (lblas?).  Even then Rcmdr complained about missing packages
+> when I ran it, and though it offered to install them, the installation
+> failed in every case, with no useful error messages.
+>
+> I have installed R and Rcmdr many times before to Windows and various
+> Linux distributions (it's on this Debian right now)  and never had so
+> much trouble.  Did I do something wrong?  Is there a problem with R on
+> Ubuntu?  I have programmed in Fortran so I don't mind adding a
+> compiler and I've taught linear algebra so I don't mind adding linear
+> algebra routines, but there is no way my students would ever figure
+> out that was needed.  I also noted that Rcmdr had a MUCH longer list
+> of dependencies than I remember.  All of this has me worried about
+> using R in an introductory course for folks who are not computer
+> science majors.
+>
+> Has anyone encountered a similar problem?  I used whatever version of
+> R is in the Ubuntu repository.  I seem to remember 2.4 though that
+> seems a bit old.
+>
+> ------->  First-time AP Stats. teacher?  Help is on the way! See
+>
+>  http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+>
+>  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)
+>  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/
+>  email  bob statland.org  (add your own "@" and save me some spam)
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+I am and have been using Rcmdr on Ubuntu 7.10, 8.04, and currently on
+8.10.  I used 32 bit Ubuntu for 7.10 and 8.04, but on 8.10 I am using
+both 32 and 64 bit versions. For the record, I have had no problems
+whatsoever installing Rcmdr.
+
+First thought (and you didn't mention): are you sure that you have the
+r-base-dev Ubuntu package installed?  If you do not have that
+installed, then you won't be able to build _anything_.
+
+If you already have r-base-dev....? it is good practice to install the
+packages from the repository with Synaptic (which it sounds like is
+what you did), since in those cases, dependencies are marked
+automatically for installation most of the time.    Another thing that
+you could try is to right-click on packages in Synaptic - it gives
+other packages "suggested" for installation.  In some cases,
+installing these extra packages helped me with installation problems
+elsewhere, too.
+
+And you could consider contacting John Fox directly.  He's great about
+responding quickly, thoughtfully, and accurately.
+
+Good luck.
+Jay
+
+
+
+
+
+
+
+
+
+***************************************************
+G. Jay Kerns, Ph.D.
+Associate Professor
+Department of Mathematics & Statistics
+Youngstown State University
+Youngstown, OH 44555-0002 USA
+Office: 1035 Cushwa Hall
+Phone: (330) 941-3310 Office (voice mail)
+-3302 Department
+-3170 FAX
+E-mail: gkerns at ysu.edu
+http://www.cc.ysu.edu/~gjkerns/
+
+
+
+From istazahn at gmail.com  Sun Feb 15 05:11:45 2009
+From: istazahn at gmail.com (Ista Zahn)
+Date: Sat, 14 Feb 2009 23:11:45 -0500
+Subject: [R-sig-teaching] installing Rcmdr
+In-Reply-To: <20090215022415.92847.qmail@mv.mv.com>
+References: <20090215022415.92847.qmail@mv.mv.com>
+Message-ID: <f55e7cf50902142011h45090480v1c6ac5b8f2380bf3@mail.gmail.com>
+
+I've found the version of R in the Ubuntu repository is almost always
+out of date. Here is the process I follow:
+
+1) Add the R repository (see http://cran.r-project.org/bin/linux/ubuntu/).
+2) Install R and the dev package: sudo apt-get install r-base r-base-dev
+3) Install any packages needed to build a particular package. In this
+case something like sudo apt-get build-dep r-cran-rcmdr (I'm not on my
+ubuntu machine at the moment so I'm not sure the package name is
+correct).
+4) Start R from the command line as root so I can install packages
+system-wide: sudo R
+5) From the R command prompt, install Rcmdr: >
+install.packages("Rcmdr", dep=TRUE)
+6) Start Rcmdr and install additional packages when prompted.
+
+I've never had this procedure fail to produce a working installation.
+
+Hope it helps,
+Ista
+
+
+On Sat, Feb 14, 2009 at 9:24 PM, Robert W. Hayden <hayden at mv.mv.com> wrote:
+>
+> Last weekend I visited my sister and her husband and installed R on
+> their Ubuntu 8.04 machine and tried to add Rcmdr.  I had endless
+> trouble most of which seemed to be because R (or Rcmdr) seemed to want
+> a Fortran compiler (or a Fortran-to-C translator).  A smaller number
+> of error mesages (out of many pages thereof) were removed by
+> installing what appeared to be a library of Fortran linear algebra
+> routines (lblas?).  Even then Rcmdr complained about missing packages
+> when I ran it, and though it offered to install them, the installation
+> failed in every case, with no useful error messages.
+>
+> I have installed R and Rcmdr many times before to Windows and various
+> Linux distributions (it's on this Debian right now)  and never had so
+> much trouble.  Did I do something wrong?  Is there a problem with R on
+> Ubuntu?  I have programmed in Fortran so I don't mind adding a
+> compiler and I've taught linear algebra so I don't mind adding linear
+> algebra routines, but there is no way my students would ever figure
+> out that was needed.  I also noted that Rcmdr had a MUCH longer list
+> of dependencies than I remember.  All of this has me worried about
+> using R in an introductory course for folks who are not computer
+> science majors.
+>
+> Has anyone encountered a similar problem?  I used whatever version of
+> R is in the Ubuntu repository.  I seem to remember 2.4 though that
+> seems a bit old.
+>
+> ------->  First-time AP Stats. teacher?  Help is on the way! See
+>
+>  http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+>
+>  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)
+>  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/
+>  email  bob statland.org  (add your own "@" and save me some spam)
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+From jfox at mcmaster.ca  Sun Feb 15 16:01:57 2009
+From: jfox at mcmaster.ca (John Fox)
+Date: Sun, 15 Feb 2009 10:01:57 -0500
+Subject: [R-sig-teaching] installing Rcmdr
+In-Reply-To: <a695148b0902141854r78c33b35vf2d1207ec71f02e7@mail.gmail.com>
+References: <20090215022415.92847.qmail@mv.mv.com>
+	<a695148b0902141854r78c33b35vf2d1207ec71f02e7@mail.gmail.com>
+Message-ID: <001b01c98f7e$58cbc3d0$0a634b70$@ca>
+
+Dear Jay, Bob, Ista,
+
+I, too, have installed Rcmdr on Ubuntu systems several times with no
+problems. I suspect that r-base-dev wasn't installed and that Ista's
+procedure will produce the desired result.
+
+Ista: Do you mind if I add your procedure, slightly edited and with credit,
+to the Rcmdr installation page? Step 6, however, shouldn't be necessary
+after installing with dep=TRUE, nor, I think, should step 3, since there's
+only R code in the Rcmdr package.
+
+Regards,
+ John
+
+> -----Original Message-----
+> From: r-sig-teaching-bounces at r-project.org
+[mailto:r-sig-teaching-bounces at r-
+> project.org] On Behalf Of Ista Zahn
+> Sent: February-14-09 11:12 PM
+> To: bob at statland.org
+> Cc: R-sig-teaching
+> Subject: Re: [R-sig-teaching] installing Rcmdr
+> 
+> I've found the version of R in the Ubuntu repository is almost always
+> out of date. Here is the process I follow:
+> 
+> 1) Add the R repository (see http://cran.r-project.org/bin/linux/ubuntu/).
+> 2) Install R and the dev package: sudo apt-get install r-base r-base-dev
+> 3) Install any packages needed to build a particular package. In this
+> case something like sudo apt-get build-dep r-cran-rcmdr (I'm not on my
+> ubuntu machine at the moment so I'm not sure the package name is
+> correct).
+> 4) Start R from the command line as root so I can install packages
+> system-wide: sudo R
+> 5) From the R command prompt, install Rcmdr: >
+> install.packages("Rcmdr", dep=TRUE)
+> 6) Start Rcmdr and install additional packages when prompted.
+> 
+> I've never had this procedure fail to produce a working installation.
+> 
+> Hope it helps,
+> Ista
+
+> -----Original Message-----
+> From: r-sig-teaching-bounces at r-project.org
+[mailto:r-sig-teaching-bounces at r-
+> project.org] On Behalf Of G. Jay Kerns
+> Sent: February-14-09 9:55 PM
+> To: bob at statland.org
+> Cc: R-sig-teaching
+> Subject: Re: [R-sig-teaching] installing Rcmdr
+> 
+> Dear Robert,
+> 
+> 
+> On Sat, Feb 14, 2009 at 9:24 PM, Robert W. Hayden <hayden at mv.mv.com>
+wrote:
+> >
+> > Last weekend I visited my sister and her husband and installed R on
+> > their Ubuntu 8.04 machine and tried to add Rcmdr.  I had endless
+> > trouble most of which seemed to be because R (or Rcmdr) seemed to want
+> > a Fortran compiler (or a Fortran-to-C translator).  A smaller number
+> > of error mesages (out of many pages thereof) were removed by
+> > installing what appeared to be a library of Fortran linear algebra
+> > routines (lblas?).  Even then Rcmdr complained about missing packages
+> > when I ran it, and though it offered to install them, the installation
+> > failed in every case, with no useful error messages.
+> >
+> > I have installed R and Rcmdr many times before to Windows and various
+> > Linux distributions (it's on this Debian right now)  and never had so
+> > much trouble.  Did I do something wrong?  Is there a problem with R on
+> > Ubuntu?  I have programmed in Fortran so I don't mind adding a
+> > compiler and I've taught linear algebra so I don't mind adding linear
+> > algebra routines, but there is no way my students would ever figure
+> > out that was needed.  I also noted that Rcmdr had a MUCH longer list
+> > of dependencies than I remember.  All of this has me worried about
+> > using R in an introductory course for folks who are not computer
+> > science majors.
+> >
+> > Has anyone encountered a similar problem?  I used whatever version of
+> > R is in the Ubuntu repository.  I seem to remember 2.4 though that
+> > seems a bit old.
+> >
+> > ------->  First-time AP Stats. teacher?  Help is on the way! See
+> >
+> >
+http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+> >
+> >  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)
+> >  North Troy, VT 05859  phone (802) 988-2587  web site
+http://statland.org/
+> >  email  bob statland.org  (add your own "@" and save me some spam)
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >
+> 
+> 
+> I am and have been using Rcmdr on Ubuntu 7.10, 8.04, and currently on
+> 8.10.  I used 32 bit Ubuntu for 7.10 and 8.04, but on 8.10 I am using
+> both 32 and 64 bit versions. For the record, I have had no problems
+> whatsoever installing Rcmdr.
+> 
+> First thought (and you didn't mention): are you sure that you have the
+> r-base-dev Ubuntu package installed?  If you do not have that
+> installed, then you won't be able to build _anything_.
+> 
+> If you already have r-base-dev....? it is good practice to install the
+> packages from the repository with Synaptic (which it sounds like is
+> what you did), since in those cases, dependencies are marked
+> automatically for installation most of the time.    Another thing that
+> you could try is to right-click on packages in Synaptic - it gives
+> other packages "suggested" for installation.  In some cases,
+> installing these extra packages helped me with installation problems
+> elsewhere, too.
+> 
+> And you could consider contacting John Fox directly.  He's great about
+> responding quickly, thoughtfully, and accurately.
+> 
+> Good luck.
+> Jay
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> ***************************************************
+> G. Jay Kerns, Ph.D.
+> Associate Professor
+> Department of Mathematics & Statistics
+> Youngstown State University
+> Youngstown, OH 44555-0002 USA
+> Office: 1035 Cushwa Hall
+> Phone: (330) 941-3310 Office (voice mail)
+> -3302 Department
+> -3170 FAX
+> E-mail: gkerns at ysu.edu
+> http://www.cc.ysu.edu/~gjkerns/
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+From istazahn at gmail.com  Sun Feb 15 17:03:10 2009
+From: istazahn at gmail.com (Ista Zahn)
+Date: Sun, 15 Feb 2009 11:03:10 -0500
+Subject: [R-sig-teaching] installing Rcmdr
+In-Reply-To: <001b01c98f7e$58cbc3d0$0a634b70$@ca>
+References: <20090215022415.92847.qmail@mv.mv.com>
+	<a695148b0902141854r78c33b35vf2d1207ec71f02e7@mail.gmail.com>
+	<001b01c98f7e$58cbc3d0$0a634b70$@ca>
+Message-ID: <f55e7cf50902150803n59416b23y2cbe01b797588beb@mail.gmail.com>
+
+Hi John,
+Yes, please feel free to use my suggestions in any way you wish, with
+any modifications you want. The procedure is designed to be sufficient
+rather than necessary, and you are correct that some of the steps can
+be omitted.
+
+-Ista
+On Sun, Feb 15, 2009 at 10:01 AM, John Fox <jfox at mcmaster.ca> wrote:
+> Dear Jay, Bob, Ista,
+>
+> I, too, have installed Rcmdr on Ubuntu systems several times with no
+> problems. I suspect that r-base-dev wasn't installed and that Ista's
+> procedure will produce the desired result.
+>
+> Ista: Do you mind if I add your procedure, slightly edited and with credit,
+> to the Rcmdr installation page? Step 6, however, shouldn't be necessary
+> after installing with dep=TRUE, nor, I think, should step 3, since there's
+> only R code in the Rcmdr package.
+>
+> Regards,
+>  John
+>
+>> -----Original Message-----
+>> From: r-sig-teaching-bounces at r-project.org
+> [mailto:r-sig-teaching-bounces at r-
+>> project.org] On Behalf Of Ista Zahn
+>> Sent: February-14-09 11:12 PM
+>> To: bob at statland.org
+>> Cc: R-sig-teaching
+>> Subject: Re: [R-sig-teaching] installing Rcmdr
+>>
+>> I've found the version of R in the Ubuntu repository is almost always
+>> out of date. Here is the process I follow:
+>>
+>> 1) Add the R repository (see http://cran.r-project.org/bin/linux/ubuntu/).
+>> 2) Install R and the dev package: sudo apt-get install r-base r-base-dev
+>> 3) Install any packages needed to build a particular package. In this
+>> case something like sudo apt-get build-dep r-cran-rcmdr (I'm not on my
+>> ubuntu machine at the moment so I'm not sure the package name is
+>> correct).
+>> 4) Start R from the command line as root so I can install packages
+>> system-wide: sudo R
+>> 5) From the R command prompt, install Rcmdr: >
+>> install.packages("Rcmdr", dep=TRUE)
+>> 6) Start Rcmdr and install additional packages when prompted.
+>>
+>> I've never had this procedure fail to produce a working installation.
+>>
+>> Hope it helps,
+>> Ista
+>
+>> -----Original Message-----
+>> From: r-sig-teaching-bounces at r-project.org
+> [mailto:r-sig-teaching-bounces at r-
+>> project.org] On Behalf Of G. Jay Kerns
+>> Sent: February-14-09 9:55 PM
+>> To: bob at statland.org
+>> Cc: R-sig-teaching
+>> Subject: Re: [R-sig-teaching] installing Rcmdr
+>>
+>> Dear Robert,
+>>
+>>
+>> On Sat, Feb 14, 2009 at 9:24 PM, Robert W. Hayden <hayden at mv.mv.com>
+> wrote:
+>> >
+>> > Last weekend I visited my sister and her husband and installed R on
+>> > their Ubuntu 8.04 machine and tried to add Rcmdr.  I had endless
+>> > trouble most of which seemed to be because R (or Rcmdr) seemed to want
+>> > a Fortran compiler (or a Fortran-to-C translator).  A smaller number
+>> > of error mesages (out of many pages thereof) were removed by
+>> > installing what appeared to be a library of Fortran linear algebra
+>> > routines (lblas?).  Even then Rcmdr complained about missing packages
+>> > when I ran it, and though it offered to install them, the installation
+>> > failed in every case, with no useful error messages.
+>> >
+>> > I have installed R and Rcmdr many times before to Windows and various
+>> > Linux distributions (it's on this Debian right now)  and never had so
+>> > much trouble.  Did I do something wrong?  Is there a problem with R on
+>> > Ubuntu?  I have programmed in Fortran so I don't mind adding a
+>> > compiler and I've taught linear algebra so I don't mind adding linear
+>> > algebra routines, but there is no way my students would ever figure
+>> > out that was needed.  I also noted that Rcmdr had a MUCH longer list
+>> > of dependencies than I remember.  All of this has me worried about
+>> > using R in an introductory course for folks who are not computer
+>> > science majors.
+>> >
+>> > Has anyone encountered a similar problem?  I used whatever version of
+>> > R is in the Ubuntu repository.  I seem to remember 2.4 though that
+>> > seems a bit old.
+>> >
+>> > ------->  First-time AP Stats. teacher?  Help is on the way! See
+>> >
+>> >
+> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+>> >
+>> >  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)
+>> >  North Troy, VT 05859  phone (802) 988-2587  web site
+> http://statland.org/
+>> >  email  bob statland.org  (add your own "@" and save me some spam)
+>> >
+>> > _______________________________________________
+>> > R-sig-teaching at r-project.org mailing list
+>> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>> >
+>>
+>>
+>> I am and have been using Rcmdr on Ubuntu 7.10, 8.04, and currently on
+>> 8.10.  I used 32 bit Ubuntu for 7.10 and 8.04, but on 8.10 I am using
+>> both 32 and 64 bit versions. For the record, I have had no problems
+>> whatsoever installing Rcmdr.
+>>
+>> First thought (and you didn't mention): are you sure that you have the
+>> r-base-dev Ubuntu package installed?  If you do not have that
+>> installed, then you won't be able to build _anything_.
+>>
+>> If you already have r-base-dev....? it is good practice to install the
+>> packages from the repository with Synaptic (which it sounds like is
+>> what you did), since in those cases, dependencies are marked
+>> automatically for installation most of the time.    Another thing that
+>> you could try is to right-click on packages in Synaptic - it gives
+>> other packages "suggested" for installation.  In some cases,
+>> installing these extra packages helped me with installation problems
+>> elsewhere, too.
+>>
+>> And you could consider contacting John Fox directly.  He's great about
+>> responding quickly, thoughtfully, and accurately.
+>>
+>> Good luck.
+>> Jay
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>> ***************************************************
+>> G. Jay Kerns, Ph.D.
+>> Associate Professor
+>> Department of Mathematics & Statistics
+>> Youngstown State University
+>> Youngstown, OH 44555-0002 USA
+>> Office: 1035 Cushwa Hall
+>> Phone: (330) 941-3310 Office (voice mail)
+>> -3302 Department
+>> -3170 FAX
+>> E-mail: gkerns at ysu.edu
+>> http://www.cc.ysu.edu/~gjkerns/
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+>
+
+
+
+From tyler.smith at mail.mcgill.ca  Sun Feb 15 17:03:43 2009
+From: tyler.smith at mail.mcgill.ca (tyler)
+Date: Sun, 15 Feb 2009 12:03:43 -0400
+Subject: [R-sig-teaching] installing Rcmdr
+References: <20090215022415.92847.qmail@mv.mv.com>
+	<f55e7cf50902142011h45090480v1c6ac5b8f2380bf3@mail.gmail.com>
+Message-ID: <87zlgnbsbk.fsf@blackbart.sedgenet>
+
+Ista Zahn <istazahn at gmail.com> writes:
+
+> I've found the version of R in the Ubuntu repository is almost always
+> out of date. Here is the process I follow:
+>
+> 4) Start R from the command line as root so I can install packages
+> system-wide: sudo R
+
+As an alternative, if you set the permissions on
+/usr/local/lib/R/site-library to allow universal write access, you can
+call install.packages() from R without having root privileges:
+
+sudo chmod o+w /usr/local/lib/R/site-library
+
+This way you don't need to start a second R as root when installing new
+packages.
+
+Cheers,
+
+Tyler
+
+> 5) From the R command prompt, install Rcmdr: >
+> install.packages("Rcmdr", dep=TRUE)
+> 6) Start Rcmdr and install additional packages when prompted.
+>
+> I've never had this procedure fail to produce a working installation.
+>
+> Hope it helps,
+> Ista
+>
+>
+> On Sat, Feb 14, 2009 at 9:24 PM, Robert W. Hayden <hayden at mv.mv.com> wrote:
+>>
+>> Last weekend I visited my sister and her husband and installed R on
+>> their Ubuntu 8.04 machine and tried to add Rcmdr.  I had endless
+>> trouble most of which seemed to be because R (or Rcmdr) seemed to want
+>> a Fortran compiler (or a Fortran-to-C translator).  A smaller number
+>> of error mesages (out of many pages thereof) were removed by
+>> installing what appeared to be a library of Fortran linear algebra
+>> routines (lblas?).  Even then Rcmdr complained about missing packages
+>> when I ran it, and though it offered to install them, the installation
+>> failed in every case, with no useful error messages.
+>>
+>> I have installed R and Rcmdr many times before to Windows and various
+>> Linux distributions (it's on this Debian right now)  and never had so
+>> much trouble.  Did I do something wrong?  Is there a problem with R on
+>> Ubuntu?  I have programmed in Fortran so I don't mind adding a
+>> compiler and I've taught linear algebra so I don't mind adding linear
+>> algebra routines, but there is no way my students would ever figure
+>> out that was needed.  I also noted that Rcmdr had a MUCH longer list
+>> of dependencies than I remember.  All of this has me worried about
+>> using R in an introductory course for folks who are not computer
+>> science majors.
+>>
+>> Has anyone encountered a similar problem?  I used whatever version of
+>> R is in the Ubuntu repository.  I seem to remember 2.4 though that
+>> seems a bit old.
+>>
+>> ------->  First-time AP Stats. teacher?  Help is on the way! See
+>>
+>>  http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+>>
+>>  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)
+>>  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/
+>>  email  bob statland.org  (add your own "@" and save me some spam)
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>
+
+-- 
+There is no theory of evolution. 
+Just a list of animals Chuck Norris allows to live.
+
+http://www.chucknorrisfacts.com/
+
+
+
+From kapatp at gmail.com  Sun Feb 15 17:40:56 2009
+From: kapatp at gmail.com (Prasenjit Kapat)
+Date: Sun, 15 Feb 2009 11:40:56 -0500
+Subject: [R-sig-teaching] installing Rcmdr
+In-Reply-To: <87zlgnbsbk.fsf@blackbart.sedgenet>
+References: <20090215022415.92847.qmail@mv.mv.com>
+	<f55e7cf50902142011h45090480v1c6ac5b8f2380bf3@mail.gmail.com>
+	<87zlgnbsbk.fsf@blackbart.sedgenet>
+Message-ID: <de8c7cb40902150840s74803be7w6634611bdd3ffdd8@mail.gmail.com>
+
+On Sun, Feb 15, 2009 at 11:03 AM, tyler <tyler.smith at mail.mcgill.ca> wrote:
+> Ista Zahn <istazahn at gmail.com> writes:
+>
+>> I've found the version of R in the Ubuntu repository is almost always
+>> out of date. Here is the process I follow:
+>>
+>> 4) Start R from the command line as root so I can install packages
+>> system-wide: sudo R
+>
+> As an alternative, if you set the permissions on
+> /usr/local/lib/R/site-library to allow universal write access, you can
+> call install.packages() from R without having root privileges:
+>
+> sudo chmod o+w /usr/local/lib/R/site-library
+
+Is that a safe / secure? BTW what are the permissions on
+/usr/local/lib/R? Mine's already set to 755 for the "user"!!! I though
+it used to be owned by root!
+
+-- 
+Prasenjit
+
+
+
+From jfox at mcmaster.ca  Sun Feb 15 18:07:48 2009
+From: jfox at mcmaster.ca (John Fox)
+Date: Sun, 15 Feb 2009 12:07:48 -0500
+Subject: [R-sig-teaching] installing Rcmdr
+In-Reply-To: <f55e7cf50902150803n59416b23y2cbe01b797588beb@mail.gmail.com>
+References: <20090215022415.92847.qmail@mv.mv.com>	
+	<a695148b0902141854r78c33b35vf2d1207ec71f02e7@mail.gmail.com>	
+	<001b01c98f7e$58cbc3d0$0a634b70$@ca>
+	<f55e7cf50902150803n59416b23y2cbe01b797588beb@mail.gmail.com>
+Message-ID: <002101c98f8f$edf32500$c9d96f00$@ca>
+
+Dear Ista,
+
+I've updated the Rcmdr installation notes at
+<http://socserv.mcmaster.ca/jfox/Misc/Rcmdr/installation-notes.html> with
+specific instructions for Ubuntu.
+
+Thanks,
+ John
+
+> -----Original Message-----
+> From: Ista Zahn [mailto:istazahn at gmail.com]
+> Sent: February-15-09 11:03 AM
+> To: John Fox
+> Cc: G. Jay Kerns; bob at statland.org; R-sig-teaching
+> Subject: Re: [R-sig-teaching] installing Rcmdr
+> 
+> Hi John,
+> Yes, please feel free to use my suggestions in any way you wish, with
+> any modifications you want. The procedure is designed to be sufficient
+> rather than necessary, and you are correct that some of the steps can
+> be omitted.
+> 
+> -Ista
+> On Sun, Feb 15, 2009 at 10:01 AM, John Fox <jfox at mcmaster.ca> wrote:
+> > Dear Jay, Bob, Ista,
+> >
+> > I, too, have installed Rcmdr on Ubuntu systems several times with no
+> > problems. I suspect that r-base-dev wasn't installed and that Ista's
+> > procedure will produce the desired result.
+> >
+> > Ista: Do you mind if I add your procedure, slightly edited and with
+credit,
+> > to the Rcmdr installation page? Step 6, however, shouldn't be necessary
+> > after installing with dep=TRUE, nor, I think, should step 3, since
+there's
+> > only R code in the Rcmdr package.
+> >
+> > Regards,
+> >  John
+> >
+> >> -----Original Message-----
+> >> From: r-sig-teaching-bounces at r-project.org
+> > [mailto:r-sig-teaching-bounces at r-
+> >> project.org] On Behalf Of Ista Zahn
+> >> Sent: February-14-09 11:12 PM
+> >> To: bob at statland.org
+> >> Cc: R-sig-teaching
+> >> Subject: Re: [R-sig-teaching] installing Rcmdr
+> >>
+> >> I've found the version of R in the Ubuntu repository is almost always
+> >> out of date. Here is the process I follow:
+> >>
+> >> 1) Add the R repository (see
+http://cran.r-project.org/bin/linux/ubuntu/).
+> >> 2) Install R and the dev package: sudo apt-get install r-base
+r-base-dev
+> >> 3) Install any packages needed to build a particular package. In this
+> >> case something like sudo apt-get build-dep r-cran-rcmdr (I'm not on my
+> >> ubuntu machine at the moment so I'm not sure the package name is
+> >> correct).
+> >> 4) Start R from the command line as root so I can install packages
+> >> system-wide: sudo R
+> >> 5) From the R command prompt, install Rcmdr: >
+> >> install.packages("Rcmdr", dep=TRUE)
+> >> 6) Start Rcmdr and install additional packages when prompted.
+> >>
+> >> I've never had this procedure fail to produce a working installation.
+> >>
+> >> Hope it helps,
+> >> Ista
+> >
+> >> -----Original Message-----
+> >> From: r-sig-teaching-bounces at r-project.org
+> > [mailto:r-sig-teaching-bounces at r-
+> >> project.org] On Behalf Of G. Jay Kerns
+> >> Sent: February-14-09 9:55 PM
+> >> To: bob at statland.org
+> >> Cc: R-sig-teaching
+> >> Subject: Re: [R-sig-teaching] installing Rcmdr
+> >>
+> >> Dear Robert,
+> >>
+> >>
+> >> On Sat, Feb 14, 2009 at 9:24 PM, Robert W. Hayden <hayden at mv.mv.com>
+> > wrote:
+> >> >
+> >> > Last weekend I visited my sister and her husband and installed R on
+> >> > their Ubuntu 8.04 machine and tried to add Rcmdr.  I had endless
+> >> > trouble most of which seemed to be because R (or Rcmdr) seemed to
+want
+> >> > a Fortran compiler (or a Fortran-to-C translator).  A smaller number
+> >> > of error mesages (out of many pages thereof) were removed by
+> >> > installing what appeared to be a library of Fortran linear algebra
+> >> > routines (lblas?).  Even then Rcmdr complained about missing packages
+> >> > when I ran it, and though it offered to install them, the
+installation
+> >> > failed in every case, with no useful error messages.
+> >> >
+> >> > I have installed R and Rcmdr many times before to Windows and various
+> >> > Linux distributions (it's on this Debian right now)  and never had so
+> >> > much trouble.  Did I do something wrong?  Is there a problem with R
+on
+> >> > Ubuntu?  I have programmed in Fortran so I don't mind adding a
+> >> > compiler and I've taught linear algebra so I don't mind adding linear
+> >> > algebra routines, but there is no way my students would ever figure
+> >> > out that was needed.  I also noted that Rcmdr had a MUCH longer list
+> >> > of dependencies than I remember.  All of this has me worried about
+> >> > using R in an introductory course for folks who are not computer
+> >> > science majors.
+> >> >
+> >> > Has anyone encountered a similar problem?  I used whatever version of
+> >> > R is in the Ubuntu repository.  I seem to remember 2.4 though that
+> >> > seems a bit old.
+> >> >
+> >> > ------->  First-time AP Stats. teacher?  Help is on the way! See
+> >> >
+> >> >
+> >
+http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+> >> >
+> >> >  Robert W. Hayden in the old library at  212 Main Street (P. O. Box
+450)
+> >> >  North Troy, VT 05859  phone (802) 988-2587  web site
+> > http://statland.org/
+> >> >  email  bob statland.org  (add your own "@" and save me some spam)
+> >> >
+> >> > _______________________________________________
+> >> > R-sig-teaching at r-project.org mailing list
+> >> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >> >
+> >>
+> >>
+> >> I am and have been using Rcmdr on Ubuntu 7.10, 8.04, and currently on
+> >> 8.10.  I used 32 bit Ubuntu for 7.10 and 8.04, but on 8.10 I am using
+> >> both 32 and 64 bit versions. For the record, I have had no problems
+> >> whatsoever installing Rcmdr.
+> >>
+> >> First thought (and you didn't mention): are you sure that you have the
+> >> r-base-dev Ubuntu package installed?  If you do not have that
+> >> installed, then you won't be able to build _anything_.
+> >>
+> >> If you already have r-base-dev....? it is good practice to install the
+> >> packages from the repository with Synaptic (which it sounds like is
+> >> what you did), since in those cases, dependencies are marked
+> >> automatically for installation most of the time.    Another thing that
+> >> you could try is to right-click on packages in Synaptic - it gives
+> >> other packages "suggested" for installation.  In some cases,
+> >> installing these extra packages helped me with installation problems
+> >> elsewhere, too.
+> >>
+> >> And you could consider contacting John Fox directly.  He's great about
+> >> responding quickly, thoughtfully, and accurately.
+> >>
+> >> Good luck.
+> >> Jay
+> >>
+> >>
+> >>
+> >>
+> >>
+> >>
+> >>
+> >>
+> >>
+> >> ***************************************************
+> >> G. Jay Kerns, Ph.D.
+> >> Associate Professor
+> >> Department of Mathematics & Statistics
+> >> Youngstown State University
+> >> Youngstown, OH 44555-0002 USA
+> >> Office: 1035 Cushwa Hall
+> >> Phone: (330) 941-3310 Office (voice mail)
+> >> -3302 Department
+> >> -3170 FAX
+> >> E-mail: gkerns at ysu.edu
+> >> http://www.cc.ysu.edu/~gjkerns/
+> >>
+> >> _______________________________________________
+> >> R-sig-teaching at r-project.org mailing list
+> >> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >
+> >
+> >
+
+
+
+From hayden at mv.mv.com  Sun Feb 15 18:30:13 2009
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Sun, 15 Feb 2009 12:30:13 -0500 (EST)
+Subject: [R-sig-teaching] installing Rcmdr
+Message-ID: <20090215173013.70223.qmail@mv.mv.com>
+
+Forwarded message:
+> From jfox at mcmaster.ca Sun Feb 15 17:08:45 2009 +0000
+
+This (from John's web site)
+
+"Linux/Unix systems typically have all of the software required for
+building packages already installed. The easiest way to install the
+Rcmdr package and its dependencies if you have an active Internet
+connection is to run R as root and issue the command
+install.packages("Rcmdr", dependencies=TRUE) at the R prompt."
+
+is what I did.  After I got home (and after I posted my initial
+question to this list) I found that I have one computer here with
+Kubuntu installed -- and R.  So given that and the feedback I have
+received from this list I have to conclude there was something odd
+about the situation at my sister's.  Since I no longer have access to
+that machine (it's a five-hour drive away) I cannot check or reproduce
+anything.  Still the feedback has been useful -- it appears there is
+no need to track down what was wrong on that aberrant machine;-)  
+ 
+> I've updated the Rcmdr installation notes at
+> <http://socserv.mcmaster.ca/jfox/Misc/Rcmdr/installation-notes.html> with
+> specific instructions for Ubuntu.
+> 
+> Thanks,
+>  John
+> 
+> > -----Original Message-----
+> > From: Ista Zahn [mailto:istazahn at gmail.com]
+> > Sent: February-15-09 11:03 AM
+> > To: John Fox
+> > Cc: G. Jay Kerns; bob at statland.org; R-sig-teaching
+> > Subject: Re: [R-sig-teaching] installing Rcmdr
+> > 
+> > Hi John,
+> > Yes, please feel free to use my suggestions in any way you wish, with
+> > any modifications you want. The procedure is designed to be sufficient
+> > rather than necessary, and you are correct that some of the steps can
+> > be omitted.
+> > 
+> > -Ista
+> > On Sun, Feb 15, 2009 at 10:01 AM, John Fox <jfox at mcmaster.ca> wrote:
+> > > Dear Jay, Bob, Ista,
+> > >
+> > > I, too, have installed Rcmdr on Ubuntu systems several times with no
+> > > problems. I suspect that r-base-dev wasn't installed and that Ista's
+> > > procedure will produce the desired result.
+> > >
+> > > Ista: Do you mind if I add your procedure, slightly edited and with
+> credit,
+> > > to the Rcmdr installation page? Step 6, however, shouldn't be necessary
+> > > after installing with dep=TRUE, nor, I think, should step 3, since
+> there's
+> > > only R code in the Rcmdr package.
+> > >
+> > > Regards,
+> > >  John
+> > >
+> > >> -----Original Message-----
+> > >> From: r-sig-teaching-bounces at r-project.org
+> > > [mailto:r-sig-teaching-bounces at r-
+> > >> project.org] On Behalf Of Ista Zahn
+> > >> Sent: February-14-09 11:12 PM
+> > >> To: bob at statland.org
+> > >> Cc: R-sig-teaching
+> > >> Subject: Re: [R-sig-teaching] installing Rcmdr
+> > >>
+> > >> I've found the version of R in the Ubuntu repository is almost always
+> > >> out of date. Here is the process I follow:
+> > >>
+> > >> 1) Add the R repository (see
+> http://cran.r-project.org/bin/linux/ubuntu/).
+> > >> 2) Install R and the dev package: sudo apt-get install r-base
+> r-base-dev
+> > >> 3) Install any packages needed to build a particular package. In this
+> > >> case something like sudo apt-get build-dep r-cran-rcmdr (I'm not on my
+> > >> ubuntu machine at the moment so I'm not sure the package name is
+> > >> correct).
+> > >> 4) Start R from the command line as root so I can install packages
+> > >> system-wide: sudo R
+> > >> 5) From the R command prompt, install Rcmdr: >
+> > >> install.packages("Rcmdr", dep=TRUE)
+> > >> 6) Start Rcmdr and install additional packages when prompted.
+> > >>
+> > >> I've never had this procedure fail to produce a working installation.
+> > >>
+> > >> Hope it helps,
+> > >> Ista
+> > >
+> > >> -----Original Message-----
+> > >> From: r-sig-teaching-bounces at r-project.org
+> > > [mailto:r-sig-teaching-bounces at r-
+> > >> project.org] On Behalf Of G. Jay Kerns
+> > >> Sent: February-14-09 9:55 PM
+> > >> To: bob at statland.org
+> > >> Cc: R-sig-teaching
+> > >> Subject: Re: [R-sig-teaching] installing Rcmdr
+> > >>
+> > >> Dear Robert,
+> > >>
+> > >>
+> > >> On Sat, Feb 14, 2009 at 9:24 PM, Robert W. Hayden <hayden at mv.mv.com>
+> > > wrote:
+> > >> >
+> > >> > Last weekend I visited my sister and her husband and installed R on
+> > >> > their Ubuntu 8.04 machine and tried to add Rcmdr.  I had endless
+> > >> > trouble most of which seemed to be because R (or Rcmdr) seemed to
+> want
+> > >> > a Fortran compiler (or a Fortran-to-C translator).  A smaller number
+> > >> > of error mesages (out of many pages thereof) were removed by
+> > >> > installing what appeared to be a library of Fortran linear algebra
+> > >> > routines (lblas?).  Even then Rcmdr complained about missing packages
+> > >> > when I ran it, and though it offered to install them, the
+> installation
+> > >> > failed in every case, with no useful error messages.
+> > >> >
+> > >> > I have installed R and Rcmdr many times before to Windows and various
+> > >> > Linux distributions (it's on this Debian right now)  and never had so
+> > >> > much trouble.  Did I do something wrong?  Is there a problem with R
+> on
+> > >> > Ubuntu?  I have programmed in Fortran so I don't mind adding a
+> > >> > compiler and I've taught linear algebra so I don't mind adding linear
+> > >> > algebra routines, but there is no way my students would ever figure
+> > >> > out that was needed.  I also noted that Rcmdr had a MUCH longer list
+> > >> > of dependencies than I remember.  All of this has me worried about
+> > >> > using R in an introductory course for folks who are not computer
+> > >> > science majors.
+> > >> >
+> > >> > Has anyone encountered a similar problem?  I used whatever version of
+> > >> > R is in the Ubuntu repository.  I seem to remember 2.4 though that
+> > >> > seems a bit old.
+> > >> >
+> > >> > ------->  First-time AP Stats. teacher?  Help is on the way! See
+> > >> >
+> > >> >
+> > >
+> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+> > >> >
+> > >> >  Robert W. Hayden in the old library at  212 Main Street (P. O. Box
+> 450)
+> > >> >  North Troy, VT 05859  phone (802) 988-2587  web site
+> > > http://statland.org/
+> > >> >  email  bob statland.org  (add your own "@" and save me some spam)
+> > >> >
+> > >> > _______________________________________________
+> > >> > R-sig-teaching at r-project.org mailing list
+> > >> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> > >> >
+> > >>
+> > >>
+> > >> I am and have been using Rcmdr on Ubuntu 7.10, 8.04, and currently on
+> > >> 8.10.  I used 32 bit Ubuntu for 7.10 and 8.04, but on 8.10 I am using
+> > >> both 32 and 64 bit versions. For the record, I have had no problems
+> > >> whatsoever installing Rcmdr.
+> > >>
+> > >> First thought (and you didn't mention): are you sure that you have the
+> > >> r-base-dev Ubuntu package installed?  If you do not have that
+> > >> installed, then you won't be able to build _anything_.
+> > >>
+> > >> If you already have r-base-dev....? it is good practice to install the
+> > >> packages from the repository with Synaptic (which it sounds like is
+> > >> what you did), since in those cases, dependencies are marked
+> > >> automatically for installation most of the time.    Another thing that
+> > >> you could try is to right-click on packages in Synaptic - it gives
+> > >> other packages "suggested" for installation.  In some cases,
+> > >> installing these extra packages helped me with installation problems
+> > >> elsewhere, too.
+> > >>
+> > >> And you could consider contacting John Fox directly.  He's great about
+> > >> responding quickly, thoughtfully, and accurately.
+> > >>
+> > >> Good luck.
+> > >> Jay
+> > >>
+> > >>
+> > >>
+> > >>
+> > >>
+> > >>
+> > >>
+> > >>
+> > >>
+> > >> ***************************************************
+> > >> G. Jay Kerns, Ph.D.
+> > >> Associate Professor
+> > >> Department of Mathematics & Statistics
+> > >> Youngstown State University
+> > >> Youngstown, OH 44555-0002 USA
+> > >> Office: 1035 Cushwa Hall
+> > >> Phone: (330) 941-3310 Office (voice mail)
+> > >> -3302 Department
+> > >> -3170 FAX
+> > >> E-mail: gkerns at ysu.edu
+> > >> http://www.cc.ysu.edu/~gjkerns/
+> > >>
+> > >> _______________________________________________
+> > >> R-sig-teaching at r-project.org mailing list
+> > >> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> > >
+> > >
+> > >
+> 
+> 
+> 
+
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+
+ http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+	    
+  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)
+  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/      
+  email  bob statland.org  (add your own "@" and save me some spam)
+
+
+
+From bates at stat.wisc.edu  Sun Feb 15 18:49:26 2009
+From: bates at stat.wisc.edu (Douglas Bates)
+Date: Sun, 15 Feb 2009 11:49:26 -0600
+Subject: [R-sig-teaching] installing Rcmdr
+In-Reply-To: <87zlgnbsbk.fsf@blackbart.sedgenet>
+References: <20090215022415.92847.qmail@mv.mv.com>
+	<f55e7cf50902142011h45090480v1c6ac5b8f2380bf3@mail.gmail.com>
+	<87zlgnbsbk.fsf@blackbart.sedgenet>
+Message-ID: <40e66e0b0902150949j3459c003u206e4aea82ba9583@mail.gmail.com>
+
+On Sun, Feb 15, 2009 at 10:03 AM, tyler <tyler.smith at mail.mcgill.ca> wrote:
+> Ista Zahn <istazahn at gmail.com> writes:
+>
+>> I've found the version of R in the Ubuntu repository is almost always
+>> out of date. Here is the process I follow:
+>>
+>> 4) Start R from the command line as root so I can install packages
+>> system-wide: sudo R
+>
+> As an alternative, if you set the permissions on
+> /usr/local/lib/R/site-library to allow universal write access, you can
+> call install.packages() from R without having root privileges:
+>
+> sudo chmod o+w /usr/local/lib/R/site-library
+>
+> This way you don't need to start a second R as root when installing new
+> packages.
+
+An alternative to changing permissions like this is to establish a
+personal library in addition to the local site library.  First start R
+and use sessionInfo() to find the major version of R and the system
+type.  In my case the first two lines printed are
+
+> sessionInfo()
+R version 2.8.1 (2008-12-22)
+i486-pc-linux-gnu
+
+so the major version is 2.8 and the system type is i486-pc-linux-gnu.
+Now create the directory
+
+~/R/<systemType>-library/<majorVersion>/
+
+That is, I would create
+
+~/R/i486-pc-linux-gnu-library/2.8/
+
+This directory will be the first element of the default .libPaths
+
+> .libPaths()
+[1] "/home/bates/R/i486-pc-linux-gnu-library/2.8"
+[2] "/usr/local/lib/R/site-library"
+[3] "/usr/lib/R/site-library"
+[4] "/usr/lib/R/library"
+
+and any packages I install will, by default, be installed there.  I
+prefer this scheme to using system directories. Because I am
+more-or-less the sole user of my computers running Ubuntu, it doesn't
+result in redundancy.  Also, I can work with multiple versions of R
+without conflict in my personal library and I can avoid conflicting
+versions of code compiled for different architectures on our
+departmental computers where home directories are on AFS, a network
+file system.
+
+>
+> Cheers,
+>
+> Tyler
+>
+>> 5) From the R command prompt, install Rcmdr: >
+>> install.packages("Rcmdr", dep=TRUE)
+>> 6) Start Rcmdr and install additional packages when prompted.
+>>
+>> I've never had this procedure fail to produce a working installation.
+>>
+>> Hope it helps,
+>> Ista
+>>
+>>
+>> On Sat, Feb 14, 2009 at 9:24 PM, Robert W. Hayden <hayden at mv.mv.com> wrote:
+>>>
+>>> Last weekend I visited my sister and her husband and installed R on
+>>> their Ubuntu 8.04 machine and tried to add Rcmdr.  I had endless
+>>> trouble most of which seemed to be because R (or Rcmdr) seemed to want
+>>> a Fortran compiler (or a Fortran-to-C translator).  A smaller number
+>>> of error mesages (out of many pages thereof) were removed by
+>>> installing what appeared to be a library of Fortran linear algebra
+>>> routines (lblas?).  Even then Rcmdr complained about missing packages
+>>> when I ran it, and though it offered to install them, the installation
+>>> failed in every case, with no useful error messages.
+>>>
+>>> I have installed R and Rcmdr many times before to Windows and various
+>>> Linux distributions (it's on this Debian right now)  and never had so
+>>> much trouble.  Did I do something wrong?  Is there a problem with R on
+>>> Ubuntu?  I have programmed in Fortran so I don't mind adding a
+>>> compiler and I've taught linear algebra so I don't mind adding linear
+>>> algebra routines, but there is no way my students would ever figure
+>>> out that was needed.  I also noted that Rcmdr had a MUCH longer list
+>>> of dependencies than I remember.  All of this has me worried about
+>>> using R in an introductory course for folks who are not computer
+>>> science majors.
+>>>
+>>> Has anyone encountered a similar problem?  I used whatever version of
+>>> R is in the Ubuntu repository.  I seem to remember 2.4 though that
+>>> seems a bit old.
+>>>
+>>> ------->  First-time AP Stats. teacher?  Help is on the way! See
+>>>
+>>>  http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+>>>
+>>>  Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)
+>>>  North Troy, VT 05859  phone (802) 988-2587  web site http://statland.org/
+>>>  email  bob statland.org  (add your own "@" and save me some spam)
+>>>
+>>> _______________________________________________
+>>> R-sig-teaching at r-project.org mailing list
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>>
+>>
+>
+> --
+> There is no theory of evolution.
+> Just a list of animals Chuck Norris allows to live.
+>
+> http://www.chucknorrisfacts.com/
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+From tyler.smith at mail.mcgill.ca  Sun Feb 15 18:56:57 2009
+From: tyler.smith at mail.mcgill.ca (tyler)
+Date: Sun, 15 Feb 2009 13:56:57 -0400
+Subject: [R-sig-teaching] installing Rcmdr
+References: <20090215022415.92847.qmail@mv.mv.com>
+	<f55e7cf50902142011h45090480v1c6ac5b8f2380bf3@mail.gmail.com>
+	<87zlgnbsbk.fsf@blackbart.sedgenet>
+	<de8c7cb40902150840s74803be7w6634611bdd3ffdd8@mail.gmail.com>
+Message-ID: <878wo7inx2.fsf@blackbart.sedgenet>
+
+Prasenjit Kapat <kapatp at gmail.com> writes:
+
+> On Sun, Feb 15, 2009 at 11:03 AM, tyler <tyler.smith at mail.mcgill.ca> wrote:
+>> Ista Zahn <istazahn at gmail.com> writes:
+>>
+>>> I've found the version of R in the Ubuntu repository is almost always
+>>> out of date. Here is the process I follow:
+>>>
+>>> 4) Start R from the command line as root so I can install packages
+>>> system-wide: sudo R
+>>
+>> As an alternative, if you set the permissions on
+>> /usr/local/lib/R/site-library to allow universal write access, you can
+>> call install.packages() from R without having root privileges:
+>>
+>> sudo chmod o+w /usr/local/lib/R/site-library
+>
+> Is that a safe / secure? 
+
+I think the primary safety provided by granting only root access to
+/usr/local/lib/R/site-library is that it prevents random users from
+installing R packages. This is important if multiple users are depending
+on the correct libraries being properly installed, but I think it's a
+non-issue on single-user laptops. I don't think the security of my
+system is any less than if I was installing my packages to ~/mylibs/,
+which is what I do on my university's cluster. 
+
+In either case, an attack would require someone compromised my machine,
+(or the R repositories) and the impact would be limited to the installed
+R libraries (and everything else in ~/, of course, but that's the same
+either way). Which makes it even more important not to run R as root.
+
+I would welcome any corrections!
+
+> BTW what are the permissions on /usr/local/lib/R? Mine's already set
+> to 755 for the "user"!!! I though it used to be owned by root!
+
+On my Debian machine, it's:
+
+drwxrwsr-x 3 root staff   4096 2007-12-01 23:32 R
+
+Cheers,
+
+Tyler
+
+-- 
+Only YOU can stop forest fires.
+
+
+
+From izahn at psych.rochester.edu  Sat Feb 28 02:01:43 2009
+From: izahn at psych.rochester.edu (Ista Zahn)
+Date: Fri, 27 Feb 2009 20:01:43 -0500
+Subject: [R-sig-teaching] Unbalanced factorial designs
+In-Reply-To: <f55e7cf50902271653l78534df0lf08f3e0254cdfc40@mail.gmail.com>
+References: <f55e7cf50902271653l78534df0lf08f3e0254cdfc40@mail.gmail.com>
+Message-ID: <f55e7cf50902271701m1912b0a8obd0edb0c268466d5@mail.gmail.com>
+
+I see that the email has not gone through because of the attachment.
+The file can be downloaded from
+http://prometheus.scp.rochester.edu/zlab/sites/default/files/InteractionsAndTypesOfSS.pdf
+
+-Ista
+
+On Fri, Feb 27, 2009 at 7:53 PM, Ista Zahn <izahn at psych.rochester.edu> wrote:
+> Hi everyone,
+> This is not a very R-specific question, I hope that will be forgiven.
+> I am the teaching assistant for the graduate level regression course
+> in the department of clinical and social psychology at my university.
+> Many of the students are very confused about the issues that arise
+> when analyzing factorial designs with unequal cell sizes.
+>
+> I wrote the attached paper in an attempt to clarify these issues for
+> them. I'm concerned that my attempt to help them understand the issues
+> may just confuse them more, and I'm also concerned that I have be
+> mistaken about some of the claims I make in this paper.
+>
+> If you have time to look it over at let me know if you spot any
+> problems I would greatly appreciate it.
+>
+> Thank you,
+> Ista
+>
+
+
+
+From lists at revelle.net  Sat Feb 28 04:29:44 2009
+From: lists at revelle.net (William Revelle)
+Date: Fri, 27 Feb 2009 21:29:44 -0600
+Subject: [R-sig-teaching] Unbalanced factorial designs
+In-Reply-To: <f55e7cf50902271701m1912b0a8obd0edb0c268466d5@mail.gmail.com>
+References: <f55e7cf50902271653l78534df0lf08f3e0254cdfc40@mail.gmail.com>
+	<f55e7cf50902271701m1912b0a8obd0edb0c268466d5@mail.gmail.com>
+Message-ID: <p06240828c5ce5fa20333@[192.168.1.108]>
+
+Ista,
+
+
+At 8:01 PM -0500 2/27/09, Ista Zahn wrote:
+>I see that the email has not gone through because of the attachment.
+>The file can be downloaded from
+>http://prometheus.scp.rochester.edu/zlab/sites/default/files/InteractionsAndTypesOfSS.pdf
+>
+>-Ista
+>
+>On Fri, Feb 27, 2009 at 7:53 PM, Ista Zahn <izahn at psych.rochester.edu> wrote:
+>>  Hi everyone,
+>>  This is not a very R-specific question, I hope that will be forgiven.
+>>  I am the teaching assistant for the graduate level regression course
+>>  in the department of clinical and social psychology at my university.
+>>  Many of the students are very confused about the issues that arise
+>>  when analyzing factorial designs with unequal cell sizes.
+>>
+>>  I wrote the attached paper in an attempt to clarify these issues for
+>>  them. I'm concerned that my attempt to help them understand the issues
+>>  may just confuse them more, and I'm also concerned that I have be
+>>  mistaken about some of the claims I make in this paper.
+>>
+>>  If you have time to look it over at let me know if you spot any
+>>  problems I would greatly appreciate it.
+
+
+  From the point view of teaching ANOVA, this is great.  But from the 
+point of view of teaching how to use R to do the anova, it would be 
+helpful to include the R commands for the doing the various analyses. 
+(As well as creating those  lovely tables.)  Nice job.
+
+Bill
+
+
+>  >
+>>  Thank you,
+>>  Ista
+>>
+>
+>_______________________________________________
+>R-sig-teaching at r-project.org mailing list
+>https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+-- 
+William Revelle		http://personality-project.org/revelle.html
+Professor			http://personality-project.org/personality.html
+Department of Psychology             http://www.wcas.northwestern.edu/psych/
+Northwestern University	http://www.northwestern.edu/
+Use R for psychology                       http://personality-project.org/r
+
+
+
+From gkerns at ysu.edu  Sat Feb 28 06:34:27 2009
+From: gkerns at ysu.edu (G. Jay Kerns)
+Date: Sat, 28 Feb 2009 00:34:27 -0500
+Subject: [R-sig-teaching] Unbalanced factorial designs
+In-Reply-To: <p06240828c5ce5fa20333@192.168.1.108>
+References: <f55e7cf50902271653l78534df0lf08f3e0254cdfc40@mail.gmail.com>
+	<f55e7cf50902271701m1912b0a8obd0edb0c268466d5@mail.gmail.com>
+	<p06240828c5ce5fa20333@192.168.1.108>
+Message-ID: <a695148b0902272134v40d38579r1bd97a89cf197c3d@mail.gmail.com>
+
+Dear Ista,
+
+> creating those ?lovely tables.) ?Nice job.
+>
+> Bill
+>
+
+I agree, nice job.  :-)  It is great that you are writing about these
+issues, and even better that you are sharing it.
+
+In my classes, I discuss correlated contrasts using the geometric
+approach which is in many of the classical texts.  I am not sure how
+your audience would respond to this.
+
+I didn't notice any glaring errors in your interpretation, but I
+didn't study it thoroughly, either.  I trust that some of the masters
+on this list will catch mistakes much more efficiently than I do.
+
+A few thoughts that in my view may improve your document:
+
+1) Page 6, paragraph 2, line 5:  "The problem is that it is pretty
+obvious...".  When I first read this, it was not obvious.  After
+glancing at the table, it was plausible.  But after looking at a
+*graph*, yes, it was obvious.  A visual display here might be a good
+idea.  One option would be a two-way interaction plot.  There is one
+in the HH package, and you can even get one in Rcmdr with
+RcmdrPlugin.HH:
+
+library(HH)
+interaction2wt(salary ~ education + gender, data = D)
+
+(the dataframe D is dumped at the bottom of this email).
+
+2)  I got the same Type III and Type II tables as you did, but the
+Type II table was different...?
+
+library(car)
+options(contrasts=c("contr.Sum", "contr.poly"))
+
+salary.lm <- lm(salary ~ gender + education + gender:education, data = D)
+summary(salary.lm)
+
+Anova(salary.lm)  #  Type II tests
+anova(salary.lm)  #  Type I tests
+Anova(salary.lm, type = "III")  #  Type III tests
+
+
+3)  I typically refrain from using the language that you have used
+concerning "ignoring" and "controlling", etc.   I stick to the
+parametric jargon of column, row, and grand means.  This makes for
+precise statements without any fear of misunderstanding, but again,
+instructors should always keep the background of the audience in mind.
+
+
+Regardless of whether you like the ideas or not, the fact that you are
+going to the trouble of preparing a document like this for the class
+is admirable in its own right.  Keep it up.  :-)
+
+Cheers,
+Jay
+
+P.S. a once-over with a spell check would be good (it's going to
+students, right?).
+
+
+
+# the data
+
+D <-
+structure(list(ID = 1:22, salary = c(24L, 26L, 25L, 24L, 27L,
+24L, 27L, 23L, 15L, 17L, 20L, 16L, 25L, 29L, 27L, 19L, 18L, 21L,
+20L, 21L, 22L, 19L), gender = structure(c(1L, 1L, 1L, 1L, 1L,
+1L, 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L,
+2L), .Label = c("Female", "Male"), class = "factor"), education =
+structure(c(1L,
+1L, 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 1L, 1L, 1L, 2L, 2L,
+2L, 2L, 2L, 2L, 2L), .Label = c("Collegeeducation", "Nocollegeeducation"
+), class = "factor"), congend = structure(c(1L, 1L, 1L, 1L, 1L,
+1L, 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L,
+2L), .Label = c("1", "?1"), class = "factor"), coneduc = structure(c(1L,
+1L, 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 1L, 1L, 1L, 2L, 2L,
+2L, 2L, 2L, 2L, 2L), .Label = c("1", "?1"), class = "factor"),
+    congendeduc = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L,
+    2L, 2L, 2L, 2L, 2L, 2L, 2L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), .Label = c("1",
+    "?1"), class = "factor")), .Names = c("ID", "salary", "gender",
+"education", "congend", "coneduc", "congendeduc"), class =
+"data.frame", row.names = c(NA, -22L))
+
+
+
+
+
+***************************************************
+G. Jay Kerns, Ph.D.
+Associate Professor
+Department of Mathematics & Statistics
+Youngstown State University
+Youngstown, OH 44555-0002 USA
+Office: 1035 Cushwa Hall
+Phone: (330) 941-3310 Office (voice mail)
+-3302 Department
+-3170 FAX
+E-mail: gkerns at ysu.edu
+http://www.cc.ysu.edu/~gjkerns/
+
+
+
+From izahn at psych.rochester.edu  Sat Feb 28 15:53:47 2009
+From: izahn at psych.rochester.edu (Ista Zahn)
+Date: Sat, 28 Feb 2009 09:53:47 -0500
+Subject: [R-sig-teaching] Unbalanced factorial designs
+In-Reply-To: <p06240828c5ce5fa20333@192.168.1.108>
+References: <f55e7cf50902271653l78534df0lf08f3e0254cdfc40@mail.gmail.com>
+	<f55e7cf50902271701m1912b0a8obd0edb0c268466d5@mail.gmail.com>
+	<p06240828c5ce5fa20333@192.168.1.108>
+Message-ID: <f55e7cf50902280653x58035fb5u31439be332295995@mail.gmail.com>
+
+On Fri, Feb 27, 2009 at 10:29 PM, William Revelle <lists at revelle.net> wrote:
+> Ista,
+>
+>
+> At 8:01 PM -0500 2/27/09, Ista Zahn wrote:
+>>
+>> I see that the email has not gone through because of the attachment.
+>> The file can be downloaded from
+>>
+>> http://prometheus.scp.rochester.edu/zlab/sites/default/files/InteractionsAndTypesOfSS.pdf
+>>
+>> -Ista
+>>
+>> On Fri, Feb 27, 2009 at 7:53 PM, Ista Zahn <izahn at psych.rochester.edu>
+>> wrote:
+>>>
+>>> ?Hi everyone,
+>>> ?This is not a very R-specific question, I hope that will be forgiven.
+>>> ?I am the teaching assistant for the graduate level regression course
+>>> ?in the department of clinical and social psychology at my university.
+>>> ?Many of the students are very confused about the issues that arise
+>>> ?when analyzing factorial designs with unequal cell sizes.
+>>>
+>>> ?I wrote the attached paper in an attempt to clarify these issues for
+>>> ?them. I'm concerned that my attempt to help them understand the issues
+>>> ?may just confuse them more, and I'm also concerned that I have be
+>>> ?mistaken about some of the claims I make in this paper.
+>>>
+>>> ?If you have time to look it over at let me know if you spot any
+>>> ?problems I would greatly appreciate it.
+>
+>
+> ?From the point view of teaching ANOVA, this is great. ?But from the point
+> of view of teaching how to use R to do the anova, it would be helpful to
+> include the R commands for the doing the various analyses. (As well as
+> creating those ?lovely tables.) ?Nice job.
+
+Thanks for the encouragement, and the suggestions. I will definitely
+use your suggestion to include the R code in an appendix, but I will
+probably remove the table-making commands because few of the student's
+use LaTeX and I think it would just confuse them.
+
+Thanks again,
+Ista
+
+>
+> Bill
+>
+>
+>> ?>
+>>>
+>>> ?Thank you,
+>>> ?Ista
+>>>
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+> --
+> William Revelle ? ? ? ? http://personality-project.org/revelle.html
+> Professor
+> http://personality-project.org/personality.html
+> Department of Psychology ? ? ? ? ? ? http://www.wcas.northwestern.edu/psych/
+> Northwestern University http://www.northwestern.edu/
+> Use R for psychology ? ? ? ? ? ? ? ? ? ? ? http://personality-project.org/r
+>
+
+
+
+From izahn at psych.rochester.edu  Sat Feb 28 15:58:57 2009
+From: izahn at psych.rochester.edu (Ista Zahn)
+Date: Sat, 28 Feb 2009 09:58:57 -0500
+Subject: [R-sig-teaching] Unbalanced factorial designs
+In-Reply-To: <a695148b0902272134v40d38579r1bd97a89cf197c3d@mail.gmail.com>
+References: <f55e7cf50902271653l78534df0lf08f3e0254cdfc40@mail.gmail.com>
+	<f55e7cf50902271701m1912b0a8obd0edb0c268466d5@mail.gmail.com>
+	<p06240828c5ce5fa20333@192.168.1.108>
+	<a695148b0902272134v40d38579r1bd97a89cf197c3d@mail.gmail.com>
+Message-ID: <f55e7cf50902280658y463179fj1786b835717b6690@mail.gmail.com>
+
+On Sat, Feb 28, 2009 at 12:34 AM, G. Jay Kerns <gkerns at ysu.edu> wrote:
+> Dear Ista,
+>
+>> creating those  lovely tables.)  Nice job.
+>>
+>> Bill
+>>
+>
+> I agree, nice job.  :-)  It is great that you are writing about these
+> issues, and even better that you are sharing it.
+>
+> In my classes, I discuss correlated contrasts using the geometric
+> approach which is in many of the classical texts.  I am not sure how
+> your audience would respond to this.
+>
+> I didn't notice any glaring errors in your interpretation, but I
+> didn't study it thoroughly, either.  I trust that some of the masters
+> on this list will catch mistakes much more efficiently than I do.
+>
+> A few thoughts that in my view may improve your document:
+>
+> 1) Page 6, paragraph 2, line 5:  "The problem is that it is pretty
+> obvious...".  When I first read this, it was not obvious.  After
+> glancing at the table, it was plausible.  But after looking at a
+> *graph*, yes, it was obvious.  A visual display here might be a good
+> idea.  One option would be a two-way interaction plot.  There is one
+> in the HH package, and you can even get one in Rcmdr with
+> RcmdrPlugin.HH:
+>
+> library(HH)
+> interaction2wt(salary ~ education + gender, data = D)
+>
+> (the dataframe D is dumped at the bottom of this email).
+>
+
+Thanks, this is an excellent suggestion. You're right that it's much
+clearer when you plot the data.
+
+> 2)  I got the same Type III and Type II tables as you did, but the
+> Type II table was different...?
+>
+> library(car)
+> options(contrasts=c("contr.Sum", "contr.poly"))
+>
+> salary.lm <- lm(salary ~ gender + education + gender:education, data = D)
+> summary(salary.lm)
+>
+> Anova(salary.lm)  #  Type II tests
+> anova(salary.lm)  #  Type I tests
+> Anova(salary.lm, type = "III")  #  Type III tests
+>
+
+I'll investigate and try to figure out why we got different results, thanks.
+>
+> 3)  I typically refrain from using the language that you have used
+> concerning "ignoring" and "controlling", etc.   I stick to the
+> parametric jargon of column, row, and grand means.  This makes for
+> precise statements without any fear of misunderstanding, but again,
+> instructors should always keep the background of the audience in mind.
+>
+I'll probably stick with the current terms, simply because they are
+consistent with the textbook we are using.
+>
+> Regardless of whether you like the ideas or not, the fact that you are
+> going to the trouble of preparing a document like this for the class
+> is admirable in its own right.  Keep it up.  :-)
+>
+Thanks for the encouragement!
+
+-Ista
+
+
+> Cheers,
+> Jay
+>
+> P.S. a once-over with a spell check would be good (it's going to
+> students, right?).
+>
+>
+>
+> # the data
+>
+> D <-
+> structure(list(ID = 1:22, salary = c(24L, 26L, 25L, 24L, 27L,
+> 24L, 27L, 23L, 15L, 17L, 20L, 16L, 25L, 29L, 27L, 19L, 18L, 21L,
+> 20L, 21L, 22L, 19L), gender = structure(c(1L, 1L, 1L, 1L, 1L,
+> 1L, 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L,
+> 2L), .Label = c("Female", "Male"), class = "factor"), education =
+> structure(c(1L,
+> 1L, 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 1L, 1L, 1L, 2L, 2L,
+> 2L, 2L, 2L, 2L, 2L), .Label = c("Collegeeducation", "Nocollegeeducation"
+> ), class = "factor"), congend = structure(c(1L, 1L, 1L, 1L, 1L,
+> 1L, 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L,
+> 2L), .Label = c("1", "-1"), class = "factor"), coneduc = structure(c(1L,
+> 1L, 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 1L, 1L, 1L, 2L, 2L,
+> 2L, 2L, 2L, 2L, 2L), .Label = c("1", "-1"), class = "factor"),
+>    congendeduc = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L,
+>    2L, 2L, 2L, 2L, 2L, 2L, 2L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), .Label = c("1",
+>    "-1"), class = "factor")), .Names = c("ID", "salary", "gender",
+> "education", "congend", "coneduc", "congendeduc"), class =
+> "data.frame", row.names = c(NA, -22L))
+>
+>
+>
+>
+>
+> ***************************************************
+> G. Jay Kerns, Ph.D.
+> Associate Professor
+> Department of Mathematics & Statistics
+> Youngstown State University
+> Youngstown, OH 44555-0002 USA
+> Office: 1035 Cushwa Hall
+> Phone: (330) 941-3310 Office (voice mail)
+> -3302 Department
+> -3170 FAX
+> E-mail: gkerns at ysu.edu
+> http://www.cc.ysu.edu/~gjkerns/
+>
+
+
+
+From izahn at psych.rochester.edu  Mon Mar  2 03:51:27 2009
+From: izahn at psych.rochester.edu (Ista Zahn)
+Date: Sun, 1 Mar 2009 21:51:27 -0500
+Subject: [R-sig-teaching] Unbalanced factorial designs
+In-Reply-To: <f55e7cf50902280658y463179fj1786b835717b6690@mail.gmail.com>
+References: <f55e7cf50902271653l78534df0lf08f3e0254cdfc40@mail.gmail.com>
+	<f55e7cf50902271701m1912b0a8obd0edb0c268466d5@mail.gmail.com>
+	<p06240828c5ce5fa20333@192.168.1.108>
+	<a695148b0902272134v40d38579r1bd97a89cf197c3d@mail.gmail.com>
+	<f55e7cf50902280658y463179fj1786b835717b6690@mail.gmail.com>
+Message-ID: <f55e7cf50903011851w3d5eb203s669e4a597958f20f@mail.gmail.com>
+
+Hi everyone,
+Thanks for the helpful feedback on this paper!
+
+An updated version of the paper can be downloaded from
+http://realpsychresearch.org/sites/default/files/InteractionsAndTypesOfSS.pdf.
+The source file is at
+http://realpsychresearch.org/sites/default/files/InteractionsAndTypesOfSS.Rnw.
+
+Please feel free to use/modify/distribute it (I'm releasing it under a
+creative commons license).
+
+-Ista
+
+
+
+From jones at reed.edu  Mon Mar  9 22:09:08 2009
+From: jones at reed.edu (Albyn Jones)
+Date: Mon, 9 Mar 2009 14:09:08 -0700
+Subject: [R-sig-teaching] I need your thoughts on teaching with R
+In-Reply-To: <49B15D49.8030107@umn.edu>
+References: <49B15D49.8030107@umn.edu>
+Message-ID: <20090309210908.GG14522@laplace.reed.edu>
+
+I should have noted this at the beginning of the thread rather than
+now, but forthe record, there is an R special-interest-group mailing
+list called R-sig-teaching where this might also be of interest.
+
+albyn
+
+On Fri, Mar 06, 2009 at 11:28:41AM -0600, Andrew Zieffler wrote:
+> 
+> Hello Everyone,
+> 
+> I hope this email finds you all well. I have been asked to write a paper 
+> that discusses some suggested practices based on learning theory and 
+> cognition research for using R in teaching statistics. In thinking about 
+> framing this paper I have been considering all of the instructional 
+> choices that have to be made. For example, should one use the base 
+> graphics, lattice, ggplots, etc? Should there be instructional sessions 
+> just devoted to R or should it be completely integrated and students 
+> introduced to functions and the like as they need it? What additional 
+> supplemental materials should be made available to students to help them 
+> learn R? And there are many more of these types of questions and 
+> decisions that need to be made.
+> 
+> As I have looked at many of the texts that have incorporated R they all 
+> seem to have a similar approach of introducing simple operators such as 
+> addition, subtraction, etc Then moving to assignment; the idea of 
+> vectors; functions etc. It is unclear to me if there is a reason for 
+> this pattern or if it is based on tradition? Maybe this lends itself to 
+> developing better skills for students who will go on and do more 
+> programming in R, but --- at least in our courses --- there are also a 
+> host of students who will only ever use R as a data analysis tool.
+> 
+> All of this is a very long-winded way of asking for your help. I would 
+> love to hear your thoughts on the following:
+> 
+> 1) What are the instructional decisions that a person needs to make if 
+> they are going to be teaching statistics using R?
+> 2) What decisions have you yourself made and what were your reasons?
+> 3) How do you teach with R? Do you have sessions on R and other sessions 
+> where content is taught? Is the computing fully integrated with the 
+> content? Or some combination?
+> 4) If you have the heterogeneous group of students (some going on to 
+> program in R, others just trying to get through, etc.) how do we deal 
+> with this? Do we need to have different types of assignments and 
+> materials for the different students?
+> 
+> Thank you in advance.
+> Andy
+> 
+> 
+> -- 
+> Andrew Zieffler, Ph.D.
+> Educational Psychology
+> University of Minnesota
+> 167 Educational Sciences Building
+> 56 East River Road
+> Minneapolis, MN 55455
+> Email: zief0002 at umn.edu
+> http://www.tc.umn.edu/~zief0002
+> 
+> 
+> --~--~---------~--~----~------------~-------~--~----~
+> You received this message because you are subscribed to the Google Groups "Workshop on Integrating Computing into the Statistics Curricula" group.
+> To post to this group, send email to computing-statistics-curricula at googlegroups.com
+> To unsubscribe from this group, send email to computing-statistics-curricula+unsubscribe at googlegroups.com
+> For more options, visit this group at http://groups.google.com/group/computing-statistics-curricula?hl=en
+> -~----------~----~----~----~------~----~------~--~---
+> 
+>
+
+
+
+From m.kossner at tu-bs.de  Tue Mar 10 09:07:10 2009
+From: m.kossner at tu-bs.de (markus kossner)
+Date: Tue, 10 Mar 2009 09:07:10 +0100
+Subject: [R-sig-teaching] I need your thoughts on teaching with R
+In-Reply-To: <20090309210908.GG14522@laplace.reed.edu>
+References: <49B15D49.8030107@umn.edu>
+	<20090309210908.GG14522@laplace.reed.edu>
+Message-ID: <49B61FAE.9010106@tu-bs.de>
+
+Albyn Jones wrote:
+> I should have noted this at the beginning of the thread rather than
+> now, but forthe record, there is an R special-interest-group mailing
+> list called R-sig-teaching where this might also be of interest.
+>
+> albyn
+>
+> On Fri, Mar 06, 2009 at 11:28:41AM -0600, Andrew Zieffler wrote:
+>   
+>> Hello Everyone,
+>>
+>> I hope this email finds you all well. I have been asked to write a paper 
+>> that discusses some suggested practices based on learning theory and 
+>> cognition research for using R in teaching statistics. In thinking about 
+>> framing this paper I have been considering all of the instructional 
+>> choices that have to be made. For example, should one use the base 
+>> graphics, lattice, ggplots, etc? Should there be instructional sessions 
+>> just devoted to R or should it be completely integrated and students 
+>> introduced to functions and the like as they need it? What additional 
+>> supplemental materials should be made available to students to help them 
+>> learn R? And there are many more of these types of questions and 
+>> decisions that need to be made.
+>>
+>> As I have looked at many of the texts that have incorporated R they all 
+>> seem to have a similar approach of introducing simple operators such as 
+>> addition, subtraction, etc Then moving to assignment; the idea of 
+>> vectors; functions etc. It is unclear to me if there is a reason for 
+>> this pattern or if it is based on tradition? Maybe this lends itself to 
+>> developing better skills for students who will go on and do more 
+>> programming in R, but --- at least in our courses --- there are also a 
+>> host of students who will only ever use R as a data analysis tool.
+>>
+>> All of this is a very long-winded way of asking for your help. I would 
+>> love to hear your thoughts on the following:
+>>
+>> 1) What are the instructional decisions that a person needs to make if 
+>> they are going to be teaching statistics using R?
+>> 2) What decisions have you yourself made and what were your reasons?
+>> 3) How do you teach with R? Do you have sessions on R and other sessions 
+>> where content is taught? Is the computing fully integrated with the 
+>> content? Or some combination?
+>> 4) If you have the heterogeneous group of students (some going on to 
+>> program in R, others just trying to get through, etc.) how do we deal 
+>> with this? Do we need to have different types of assignments and 
+>> materials for the different students?
+>>
+>> Thank you in advance.
+>> Andy
+>>
+>>
+>> -- 
+>> Andrew Zieffler, Ph.D.
+>> Educational Psychology
+>> University of Minnesota
+>> 167 Educational Sciences Building
+>> 56 East River Road
+>> Minneapolis, MN 55455
+>> Email: zief0002 at umn.edu
+>> http://www.tc.umn.edu/~zief0002
+>>
+>>
+>> --~--~---------~--~----~------------~-------~--~----~
+>> You received this message because you are subscribed to the Google Groups "Workshop on Integrating Computing into the Statistics Curricula" group.
+>> To post to this group, send email to computing-statistics-curricula at googlegroups.com
+>> To unsubscribe from this group, send email to computing-statistics-curricula+unsubscribe at googlegroups.com
+>> For more options, visit this group at http://groups.google.com/group/computing-statistics-curricula?hl=en
+>> -~----------~----~----~----~------~----~------~--~---
+>>
+>>
+>>     
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>   
+Dear Andrew,
+as it seams to me that you will be interested in teaching data analysis 
+and/or Resgression analysis let me point you at
+Julian Faraway's excellent and free book  'Practical Regression and 
+ANOVA using R' .
+Faraway uses defined examples for using the various data analysis tools 
+within R and comments on their use, rather than
+talking too much about variables, functions...
+That might be a good start for you. There's also a package 'faraway' 
+that includes the examples... very great work!
+You can find all that directly in the CRAN or just google 'faraway book'
+
+Cheers Markus
+
+
+
+From tony.n.brown at Vanderbilt.Edu  Thu Mar 12 00:25:35 2009
+From: tony.n.brown at Vanderbilt.Edu (Brown, Tony Nicholas)
+Date: Wed, 11 Mar 2009 18:25:35 -0500
+Subject: [R-sig-teaching] I need your thoughts on teaching with R
+In-Reply-To: <mailman.5.1236682803.21030.r-sig-teaching@r-project.org>
+References: <mailman.5.1236682803.21030.r-sig-teaching@r-project.org>
+Message-ID: <63566160FBD1BE43873B5A100A4222DF0A19BC69@mailbe17.email.Vanderbilt.edu>
+
+Andrew,
+
+I teach a two-course statistics sequence in sociology using R. Here are
+my responses to your four questions:
+
+Q1. and Q2. The tough part is how to integrate teaching statistics
+(i.e., theory) with learning R (i.e., practice). I solved this dilemma
+by providing all R code from my lectures beforehand and by doing R
+demonstrations during lecture and by hosting a weekly one hour R lab.
+You must choose the right textbook. Most R textbooks assume either
+facility with programming schema or statistics. Usually, students I
+teach bring neither. I chose Verzani's "Using R for Introductory
+Statistics" and supplement it with advanced R textbooks, websites,
+journal articles, etc. You must decide whether you will (or expect
+students to) write functions vs. use functions included in the base
+installation. You need to decide what set of add-on packages students in
+your discipline should be familiar with, if any. I try to use functions
+from the base installation as much as possible and then introduce a few
+packages that are absolutely necessary. You must decide whether you want
+students to use a GUI (e.g., R Commander, SciViews-R) or type commands.
+You must decide whether you want them to use a command/text editor
+(e.g., TinnR, RWinEdt). I decided against both using a GUI and
+command/text editor--these are skills students can learn on their own.
+
+Q3. I use a combination of both approaches and actually encourage
+students to share R code that they have written. Sometimes we all learn
+about a useful function and maybe a way to write better R code. I find
+that the theory and practice have to be combined because some students
+have little interest in quantitative methods but have to take the
+sequence because it is required.
+
+Q4. I allow students to collaborate on graded assignments in small
+groups (n=3). These graded assignments must be turned in and completed
+as independent work but each student typically feels more or less
+comfortable with certain topics. And as a small group they can rely on
+each other for support and encouragement. Those students who just want
+to pass the courses sometimes appreciate statistics or R more because of
+the enthusiasm of another student. And students who get it learn to how
+explain what they know to someone who may be struggling.
+
+Cheers,
+Tony
+
+------------------------------------------------------------------
+Tony N. Brown, Ph.D.
+Associate Professor of Sociology
+Faculty Head of Hank Ingram House, The Commons
+Research Fellow, Vanderbilt Center for Nashville Studies
+Vanderbilt University
+(615) 322-7518
+(615) 322-7505 fax
+tony.n.brown at vanderbilt.edu
+
+
+
+From DOgle at northland.edu  Thu Mar 12 03:52:10 2009
+From: DOgle at northland.edu (Derek Ogle)
+Date: Wed, 11 Mar 2009 21:52:10 -0500
+Subject: [R-sig-teaching] I need your thoughts on teaching with R
+In-Reply-To: <20090309210908.GG14522@laplace.reed.edu>
+References: <49B15D49.8030107@umn.edu>
+	<20090309210908.GG14522@laplace.reed.edu>
+Message-ID: <D86C9EFF6AA3734193923FFA1EE4308B07D7DC65@nc-mail2.northland.edu>
+
+Andrew,
+
+I teach a intro statistics course to "science" students and some "general education" students and a "biometry" course to "natural resources" and a handful of other students at Northland College.  I have been using R in both of these statistics course, and in my fisheries science course, for four or five years now.  Below are my answers to your questions.  I would be happy to expand on these if you needed me to (though now coming back to re-read I see that I have typed quite a bit).
+
+
+> 1) What are the instructional decisions that a person needs to make if they are going to be teaching statistics using R?
+
+In general, I don't really think that these decisions are unique to R.  No matter the software I believe that an instructor, especially of an introductory class, has to make a decision of whether learning the software is one of the outcomes of the course or not.  When I taught with other software (Minitab) I chose not to have learning the software as an outcome.  However, when I began using R I decided that at least some understanding of the software should be an outcome because I felt that knowing R was adding value to the student.  I believe that this added value was especially important in my upper-level courses so it became important to me to make sure that students in the intro class were gaining some knowledge of the software (R).
+
+Once an instructor chooses to use R, I believe they must decide whether to use one of the GUIs, whether to use an external editor, which "graphics system" (base, ggplot2, lattice) to use, or whether to use package-specific or base functions.
+
+
+> 2) What decisions have you yourself made and what were your reasons?
+
+Of the latter items mentioned above I chose NOT to use a GUI.  I am familiar with RCMDR, for example, but, personally, I think the power of R rests in the command line.  I do use TINN-R as an external editor because I like the ability for students to save their commands and recycle them for future problems.  I have not seen any "cost" to the student of using TINN-R (it is simple to learn).  I chose to use base graphics because of the simplicity (in my mind) of their functions (for doing the basic graphics needed in most intro classes).
+
+I have also written a package of R functions that streamlines some of the base R functions.  For example, I have written a Subset() function that combines the base subset() and drop.levels() so that I don't have to explain to students the subtleties of why subset() does not drop the level from the list of possible levels for a factor variable after subsetting.  I have also written a function that can be used to provide a graphical display of probability calculations on a suite of probability distributions (motivated by a post by Dr. Bates on this list last year).  I did not want to create a large number of special purpose functions so I attempted to judiciously choose functions that simplified complexities or subtleties that I did not want students to be concerned with or that provided specific pedagogical advantages.  <BTW, my package is surely not up to the standards of other package developers but if anyone is interested it is available at www.rforge.net/NCStats.  A newer version using namespace will be up there when my semester is over in April.>  I also use some of the functions in the TeachingDemos package.
+
+Finally, I made the conscious decision of not using the phrases "R programming" or "R coding."  It is my experience that many students do not consider themselves capable of "computer programming."  I explain that the functions are simply replacements for menu'd commands but that they can be saved and reproduced.  At most, I refer to "R scripts" but never "R programs."
+
+
+> 3) How do you teach with R? Do you have sessions on R and other sessions where content is taught? Is the computing fully integrated with the content? Or some combinationn?
+
+At Northland, I teach two 2-hour sessions a week for the intro class.  Generally, I use some portion of this time for a traditional lecture, some portion to teach "doing statistics with R", and then some time for the students to work independently with R and ask me questions.  The traditional lecture and the "doing statistics with R" sections follow each other closely so I would consider them to be "integrated."  In the "doing statistics with R" section I have found it better to provide students with a handout (easily accomplished by the instructor with Sweave()) rather than demonstrating with the computer or letting them type commands into the computer.  The two main advantages to this are that it is easier to keep students in roughly the same spot (if they are typing things in themselves then invariably someone forgot a comma, or misspelled, etc, and you spend all of your time troubleshooting individual students while others sit there or start surfing the net) and it lets the students see a correct set of commands on which they can take detailed notes (if they are typing in commands themselves they are just typing and not thinking and not taking notes that they can return to).
+
+In the upper-level course, I fully integrate R into the notes and lecture.
+
+You can seen what I do, if interested, because all of my class materials ("book", handouts, lecture slides) are available at www.ncfaculty.net/dogle/ and then follow the intro stats, biometry, or fisheries science "buttons."
+
+
+> 4) If you have the heterogeneous group of students (some going on to program in R, others just trying to get through, etc.) how do we deal with this? Do we need to have different types of assignments and materials for the different students?
+Again, I don't see this as a specific issue with using R -- i.e., even if we did all calculations by hand there would be heterogeneity amongst those that will continue with other statistics courses and those "just trying to get through."
+
+
+> 5) A few more comments.
+When I first started teaching with R I was just learning the program myself.  I was terrible at teaching with it (and the students hated it) but I believed that it was the correct software to use.  Now, five years later, I am a much better teacher of statistics and R and, most of my students either "enjoy" R (I have seen students become more accepting of typing in a command line rather than a GUI -- I believe that this is due to the amount of texting and chatting that they do relative to students from just a few years ago) or are, at least, accepting of the idea of "R".  I even more firmly believe that this is the proper software for students to learn.  Be firm in your commitment to R if you choose to teach with it but also be patient with yourself and your students during the first few years.
+
+I do spend some time trying to teach students the "lexicon of R" as this makes communication about specific functions easier.  For example, my students will know about constructor and extractor functions, named and positional arguments, objects, assignment operators, vectors, data.frames, etc.  This has been a "cost" of using R in the sense that it does take time and, thus, "something else" had to go from my curriculum.
+
+I also think that R is especially beneficial for my biometry course which focuses on regression (simple, multiple, and indicator variable), anova (one- and two-way), and logistic regression because the vast majority of these topics use a common set of functions -- lm(), anova(), summary(), confint(), etc.  In addition, I have added a few functions (in my NCStats function) to make fitted line plots, residual plots, and to compare all slopes.  Thus, students can learn a vast number of topics with very few commands in R.  The same can be said in the intro class for t.test() (one-sample, two-sample, matched-pairs) and chisq.test() (goodness-of-fit and general chi-square).  This efficiency is very convenient and powerful.
+
+Finally, I have found R to be useful because students "like" free software, open-source concepts (at least at my environmental liberal arts college), and being on the "cutting edge."  The more students like in your class the more likely they are to learn.
+
+
+
+Dr. Derek H. Ogle
+Associate Professor of Mathematical Sciences and Natural Resources
+Northland College
+1411 Ellis Avenue
+Box?112
+Ashland, WI 
+715.682.1300
+www.ncfaculty.net/dogle/
+
+Please consider the environment before printing this email.
+
+
+
+From eric.lamb at usask.ca  Thu Mar 12 15:56:11 2009
+From: eric.lamb at usask.ca (Eric Lamb)
+Date: Thu, 12 Mar 2009 08:56:11 -0600
+Subject: [R-sig-teaching] thoughts on teaching with R
+In-Reply-To: <mailman.9.1236855612.24346.r-sig-teaching@r-project.org>
+References: <mailman.9.1236855612.24346.r-sig-teaching@r-project.org>
+Message-ID: <49B9228B.70002@usask.ca>
+
+Andrew,
+I am just finishing my first year teaching a graduate level stats course 
+to Agriculture and other life sciences students. The course is 
+practically oriented, and most of the students have taken 1 
+undergraduate course previous to mine.
+
+1) What are the instructional decisions that a person needs to make if 
+they are going to be teaching statistics using R?
+
+I think that the biggest decision is whether we are going to teach a lot 
+of calculations by hand, or whether we are going to "black box" a lot of 
+the mathematics and teach the process of data analysis.
+
+2) What decisions have you yourself made and what were your reasons?
+
+I have chosen to focus on data analysis as a process. I think for the 
+average MSc. student it is most important that they be able to choose an 
+appropriate method and apply it correctly than to understand the theory 
+of statistics. I have chosen to use R rather than a program like SAS 
+because it is so much more useful to the students.
+
+Most of my students will be going to work for small companies after 
+graduation that do not have the resources to purchase something like 
+SAS. There was a bit of pushback from faculty who didn't like the idea 
+that the students were leaning a program other than their favorite one, 
+but they fully accepted the value of wider availability.
+
+
+
+3) How do you teach with R? Do you have sessions on R and other sessions 
+where content is taught? Is the computing fully integrated with the 
+content? Or some combinationn?
+
+More than anything I like running examples "live" in class using R. I 
+notice a real difference in my students between a segment of powerpoint 
+(passive, unresponsive...) to when I am running examples (engaged, 
+suggesting ideas on how an anlysis should proceed...). I provide them 
+with all of the scripts developed in and for class so they can re-run 
+analyses later on their own.
+
+The students have weekly assignments where they are expected to apply 
+the tests they have seen in class to new datasets. I find the process of 
+having them see an example and then figure out how to apply it in a new 
+situation to be very effective.
+
+I use Crawley's "The R Book" extensively. I like the books approach, 
+integrating both theory and practice. The examples are also very 
+suitable to my agriculture / life sciences students.
+
+4) If you have the heterogeneous group of students (some going on to 
+program in R, others just trying to get through, etc.) how do we deal 
+with this? Do we need to have different types of assignments and 
+materials for the different students?
+
+Everyone has to do the same assignments. Different groups have different 
+challenges, however. I have some students with an engineering background 
+that are very comfortable with the idea of coding but have no background 
+in things such as experimental design and messy data. Oh the other hand 
+I have ag students who found the idea of telling a computer what to do 
+by typing very intimidating. Within 4 weeks of hands on practice I found 
+most students to be very comfortable with using the command line 
+interfaces, and since then almost all discusson and questions have 
+focussed on the use and interpretation of statistics.
+
+I hope this helps. In general I have found R to be rewarding to work 
+with, and the students have in general responded very well to it.
+
+Cheers, Eric
+-- 
+Eric Lamb
+Assistant Professor, Plant Ecology and Biostatistics
+Dept. of Plant Sciences, University of Saskatchewan
+http://homepage.usask.ca/egl388/index.html
+
+4D68 Agriculture Building
+306-966-1799
+eric.lamb at usask.ca
+
+
+
+From kiesling+ at pitt.edu  Tue Mar 24 21:04:14 2009
+From: kiesling+ at pitt.edu (Scott F. Kiesling)
+Date: Tue, 24 Mar 2009 16:04:14 -0400
+Subject: [R-sig-teaching] Creating data
+Message-ID: <20090324200414.GA10953@pitt.edu>
+
+Hi everyone-
+
+I'm currently teaching a graduate course in statistics for linguistics
+using R. I have used up most of the 'authentic' data I have been able
+to collect for homework and demonstrations. I can think of plenty more
+possible data sets, but I am finding the creation of them challenging,
+and my creations are often somewhat unlealistic (generally, too
+'neat' and obvious). 
+
+So, I was wondering if anyone had any tips on creating 'realistic'
+data sets, or links/books that describe it.
+
+For a simple example, let's say I want to create a dataset with
+students from different countries and academic departments who took an
+English test. I want to make some differences (significant and not)
+and possibly even interactions among the scores by country and
+department. I have been doing this through various iterations of
+sample() and rnorm(), and jitter() to get some randomness, but things
+are still coming out pretty neatly.  Is this the right (or a good)
+method? Advice?
+
+Thanks in advance-
+
+SFK
+
+-- 
+Scott F. Kiesling, PhD
+
+Associate Professor 
+Department Chair
+
+Department of Linguistics
+University of Pittsburgh, 2816 CL
+Pittsburgh, PA 15260
+http://www.linguistics.pitt.edu
+Office: +1 412-624-5916
+
+
+
+From cgenolin at u-paris10.fr  Tue Mar 24 21:15:14 2009
+From: cgenolin at u-paris10.fr (Christophe Genolini)
+Date: Tue, 24 Mar 2009 21:15:14 +0100
+Subject: [R-sig-teaching] Creating data
+In-Reply-To: <20090324200414.GA10953@pitt.edu>
+References: <20090324200414.GA10953@pitt.edu>
+Message-ID: <49C93F52.5010704@u-paris10.fr>
+
+Hi Scott
+
+When I create artificial data, I try to "copy" some real. So I mesure 
+the real data with as much parameters than I can (mean, var, cov, but 
+also percent of NA, outlier), then I generate the artificial one. It is 
+also possible to generate several sets that I finaly mixe (lika one set 
+for men, one set for women. Then I remove the variable "gender", I merge 
+the two set and I shuffle the resulting set.
+
+
+Christophe
+> Hi everyone-
+>
+> I'm currently teaching a graduate course in statistics for linguistics
+> using R. I have used up most of the 'authentic' data I have been able
+> to collect for homework and demonstrations. I can think of plenty more
+> possible data sets, but I am finding the creation of them challenging,
+> and my creations are often somewhat unlealistic (generally, too
+> 'neat' and obvious). 
+>
+> So, I was wondering if anyone had any tips on creating 'realistic'
+> data sets, or links/books that describe it.
+>
+> For a simple example, let's say I want to create a dataset with
+> students from different countries and academic departments who took an
+> English test. I want to make some differences (significant and not)
+> and possibly even interactions among the scores by country and
+> department. I have been doing this through various iterations of
+> sample() and rnorm(), and jitter() to get some randomness, but things
+> are still coming out pretty neatly.  Is this the right (or a good)
+> method? Advice?
+>
+> Thanks in advance-
+>
+> SFK
+>
+>
+
+
+
+From kiesling+ at pitt.edu  Tue Mar 24 21:57:44 2009
+From: kiesling+ at pitt.edu (Scott F. Kiesling)
+Date: Tue, 24 Mar 2009 16:57:44 -0400
+Subject: [R-sig-teaching] Creating data
+In-Reply-To: <49C9439E.1000401@stats.waikato.ac.nz>
+References: <20090324200414.GA10953@pitt.edu>
+	<49C9439E.1000401@stats.waikato.ac.nz>
+Message-ID: <20090324205744.GC10953@pitt.edu>
+
+Thanks-
+Yes I'm using that as a text. I'm trying to have something fresh so
+that I can add an example to demonstrations or give assessments with
+new data.
+
+I'm also using Keith Johnson's text. 
+
+SFK
+
+On Wed, Mar 25, 2009 at 09:33:34AM +1300, Murray Jorgensen wrote:
+> From: Murray Jorgensen <maj at stats.waikato.ac.nz>
+> Date: Wed, 25 Mar 2009 09:33:34 +1300
+> To: "Scott F. Kiesling" <kiesling at pitt.edu>
+> Cc: r-sig-teaching at r-project.org
+> Subject: Re: [R-sig-teaching] Creating data
+
+> I take it you have looked at the data sets in Baayen's book
+> "Analyzing linguistic data. A practical introduction to statistics"  ?
+>
+> www.ualberta.ca/~baayen/publications/baayenCUPstats.pdf
+>
+> Cheers,  Murray Jorgensen
+>
+> Scott F. Kiesling wrote:
+>> Hi everyone-
+
+>> I'm currently teaching a graduate course in statistics for linguistics
+>> using R. I have used up most of the 'authentic' data I have been able
+>> to collect for homework and demonstrations. I can think of plenty more
+>> possible data sets, but I am finding the creation of them challenging,
+>> and my creations are often somewhat unlealistic (generally, too
+>> 'neat' and obvious). 
+
+>> So, I was wondering if anyone had any tips on creating 'realistic'
+>> data sets, or links/books that describe it.
+
+>> For a simple example, let's say I want to create a dataset with
+>> students from different countries and academic departments who took an
+>> English test. I want to make some differences (significant and not)
+>> and possibly even interactions among the scores by country and
+>> department. I have been doing this through various iterations of
+>> sample() and rnorm(), and jitter() to get some randomness, but things
+>> are still coming out pretty neatly.  Is this the right (or a good)
+>> method? Advice?
+
+>> Thanks in advance-
+
+>> SFK
+-- 
+Scott F. Kiesling, PhD
+
+Associate Professor 
+Department Chair
+
+Department of Linguistics
+University of Pittsburgh, 2816 CL
+Pittsburgh, PA 15260
+http://www.linguistics.pitt.edu
+Office: +1 412-624-5916
+
+
+
+From jwegelin at vcu.edu  Tue Mar 24 22:51:22 2009
+From: jwegelin at vcu.edu (Jacob Wegelin)
+Date: Tue, 24 Mar 2009 17:51:22 -0400 (EDT)
+Subject: [R-sig-teaching] Creating data
+In-Reply-To: <20090324200414.GA10953@pitt.edu>
+References: <20090324200414.GA10953@pitt.edu>
+Message-ID: <alpine.OSX.1.00.0903241748480.48092@SPHBSTR3083-2.local>
+
+
+Scott,
+
+Have you considered looking at phonetics data?  I refer for instance to f0 (fundamental pitch) as a time series, based on recordings of speech. I think I heard that (for instance) data from recordings of native Unangax speakers (Unangan/Unangas, also called Aleut) are posted on the Web somewhere.
+
+Jake
+
+Jacob A. Wegelin
+Assistant Professor
+Department of Biostatistics
+Virginia Commonwealth University
+730 East Broad Street Room 3006
+P. O. Box 980032
+Richmond VA 23298-0032
+U.S.A. 
+E-mail: jwegelin at vcu.edu 
+URL: http://www.people.vcu.edu/~jwegelin
+
+On Tue, 24 Mar 2009, Scott F. Kiesling wrote:
+
+> Hi everyone-
+>
+> I'm currently teaching a graduate course in statistics for linguistics
+> using R. I have used up most of the 'authentic' data I have been able
+> to collect for homework and demonstrations. I can think of plenty more
+> possible data sets, but I am finding the creation of them challenging,
+> and my creations are often somewhat unlealistic (generally, too
+> 'neat' and obvious).
+>
+> So, I was wondering if anyone had any tips on creating 'realistic'
+> data sets, or links/books that describe it.
+>
+> For a simple example, let's say I want to create a dataset with
+> students from different countries and academic departments who took an
+> English test. I want to make some differences (significant and not)
+> and possibly even interactions among the scores by country and
+> department. I have been doing this through various iterations of
+> sample() and rnorm(), and jitter() to get some randomness, but things
+> are still coming out pretty neatly.  Is this the right (or a good)
+> method? Advice?
+>
+> Thanks in advance-
+>
+> SFK
+>
+> --
+> Scott F. Kiesling, PhD
+>
+> Associate Professor
+> Department Chair
+>
+> Department of Linguistics
+> University of Pittsburgh, 2816 CL
+> Pittsburgh, PA 15260
+> http://www.linguistics.pitt.edu
+> Office: +1 412-624-5916
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+From jfox at mcmaster.ca  Wed Mar 25 00:09:56 2009
+From: jfox at mcmaster.ca (John Fox)
+Date: Tue, 24 Mar 2009 19:09:56 -0400
+Subject: [R-sig-teaching] Creating data
+In-Reply-To: <20090324200414.GA10953@pitt.edu>
+References: <20090324200414.GA10953@pitt.edu>
+Message-ID: <008f01c9acd5$a6e61d80$f4b25880$@ca>
+
+Dear Scott,
+
+I have a strong preference for using real data. That said, one strategy for
+manufacturing data is to simulate a statistical model, either the same model
+that will be used to analyze the data (in which case the latter is the "true
+model") or a different model. For example, if you want some terms in the
+model to be "non-significant," you'll get that with high probability if
+these are omitted from the model used to generate the data. Similarly, you
+can generate outliers by sampling errors from a heavy-tailed or suitable
+mixture distribution.
+
+I hope this helps,
+ John 
+
+
+> -----Original Message-----
+> From: r-sig-teaching-bounces at r-project.org
+[mailto:r-sig-teaching-bounces at r-
+> project.org] On Behalf Of Scott F. Kiesling
+> Sent: March-24-09 4:04 PM
+> To: r-sig-teaching at r-project.org
+> Subject: [R-sig-teaching] Creating data
+> 
+> Hi everyone-
+> 
+> I'm currently teaching a graduate course in statistics for linguistics
+> using R. I have used up most of the 'authentic' data I have been able
+> to collect for homework and demonstrations. I can think of plenty more
+> possible data sets, but I am finding the creation of them challenging,
+> and my creations are often somewhat unlealistic (generally, too
+> 'neat' and obvious).
+> 
+> So, I was wondering if anyone had any tips on creating 'realistic'
+> data sets, or links/books that describe it.
+> 
+> For a simple example, let's say I want to create a dataset with
+> students from different countries and academic departments who took an
+> English test. I want to make some differences (significant and not)
+> and possibly even interactions among the scores by country and
+> department. I have been doing this through various iterations of
+> sample() and rnorm(), and jitter() to get some randomness, but things
+> are still coming out pretty neatly.  Is this the right (or a good)
+> method? Advice?
+> 
+> Thanks in advance-
+> 
+> SFK
+> 
+> --
+> Scott F. Kiesling, PhD
+> 
+> Associate Professor
+> Department Chair
+> 
+> Department of Linguistics
+> University of Pittsburgh, 2816 CL
+> Pittsburgh, PA 15260
+> http://www.linguistics.pitt.edu
+> Office: +1 412-624-5916
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+From h.wickham at gmail.com  Wed Mar 25 02:17:34 2009
+From: h.wickham at gmail.com (hadley wickham)
+Date: Tue, 24 Mar 2009 20:17:34 -0500
+Subject: [R-sig-teaching] Creating data
+In-Reply-To: <20090324200414.GA10953@pitt.edu>
+References: <20090324200414.GA10953@pitt.edu>
+Message-ID: <f8e6ff050903241817i6affed6cnd699650976d99d20@mail.gmail.com>
+
+> I'm currently teaching a graduate course in statistics for linguistics
+> using R. I have used up most of the 'authentic' data I have been able
+> to collect for homework and demonstrations. I can think of plenty more
+> possible data sets, but I am finding the creation of them challenging,
+> and my creations are often somewhat unlealistic (generally, too
+> 'neat' and obvious).
+
+Why don't you give us some parameters of the types of data you are
+looking for and we can suggest possible sources of new data.  You can
+see a few links I've collected at http://delicious.com/hadley/data.
+
+If you want something really big, there's also the data expo
+challenge: http://stat-computing.org/dataexpo/2009/
+
+Regards,
+
+Hadley
+
+-- 
+http://had.co.nz/
+
+
+
+From gkerns at ysu.edu  Wed Mar 25 19:46:39 2009
+From: gkerns at ysu.edu (G. Jay Kerns)
+Date: Wed, 25 Mar 2009 14:46:39 -0400
+Subject: [R-sig-teaching] Creating data
+In-Reply-To: <20090324200414.GA10953@pitt.edu>
+References: <20090324200414.GA10953@pitt.edu>
+Message-ID: <a695148b0903251146h49580c56y7caac64a225f112e@mail.gmail.com>
+
+Dear Scott,
+
+On Tue, Mar 24, 2009 at 4:04 PM, Scott F. Kiesling <kiesling+ at pitt.edu> wrote:
+
+>
+> For a simple example, let's say I want to create a dataset with
+> students from different countries and academic departments who took an
+> English test. I want to make some differences (significant and not)
+> and possibly even interactions among the scores by country and
+> department.
+
+
+I've been meaning to do this for a while (for quizzes, demos, etc) but
+didn't yet have the chance.  Below is something I quickly put
+together; I am sure that it can be improved.
+
+You seemed to be looking for only one dependent variable but in my
+case I am looking for several.
+
+
+Dep. vars:  y1 - y4 (correlated)
+Fixed effects: dept (4 levels) and region (3 levels).
+Covariate:  x_cov
+
+The model is Y = X*B + Eps:
+
+X is the model matrix:  ~ x_cov + region + dept + region:dept
+B is the parameter matrix
+Eps ~ multivariate normal (or t), mean 0, variance/covariance Sigma
+
+I used deviation contrasts; it would be easy to use treatment contrasts, too.
+
+If multicollinearity is desired, the same trick as for Eps can be used
+to generate multiple correlated x-variables.
+
+I didn't spend time thinking about the parameters - clearly the most
+important part (after all, there are 50+ of them in a bloated model
+like this). They are randomly generated which means that they will
+display *radically* different behavior, even on different runs.  In
+practice, one would want to choose a parameter matrix thoughtfully and
+stick with it.
+
+Everything is in BigData, at the end.
+
+Cheers,
+Jay
+
+
+
+
+##################################
+# need pkgs corpcor, sfsmisc, mvtnorm
+
+
+set.seed(1)
+n <- 500   # sample size
+
+##################################
+# generate indep. vars
+
+# covariate
+x_cov <- rnorm(n, mean = 37, sd = 15)
+
+# fixed effects
+region <- sample(c("Amer", "Euro", "Asia"), size = n, prob = c(7,9,4),
+replace = TRUE)
+dept <- sample(LETTERS[1:4], size = n, prob = c(2,3,3,4), replace = TRUE)
+region <- factor(region)
+dept <- factor(dept)
+
+D <- data.frame(x_cov = x_cov, region = region, dept = dept)
+
+head(D)  # the data
+
+
+##################################
+# model matrix
+
+X <- model.matrix( ~ x_cov + (region + dept)^2,
+                   data = D,
+                   contrasts = list( region="contr.sum", dept="contr.sum"))
+
+head(X)  # the model matrix
+
+
+# num of parameters, for each dep variable
+k <- dim(X)[2]
+
+
+##################################
+# specify parameters
+# should think about these
+
+b1 <- rnorm(k, sd = 6)
+b2 <- rcauchy(k, scale = 9)
+b3 <- rnorm(k, sd = 12)
+b4 <- rcauchy(k, scale = 15)
+
+B <- matrix( c(b1, b2, b3, b4), ncol = 4)
+
+B   # the parameter matrix
+
+##################################
+# generate error
+
+# a correlation matrix
+r1 <- c(  1.0,  0.4, -0.5,  0.7 )
+r2 <- c(  0.4,  1.0,  0.2, -0.1 )
+r3 <- c( -0.5,  0.2,  1.0,  0.0 )
+r4 <- c(  0.7, -0.1,  0.0,  1.0 )
+
+Corr <- matrix( c(r1, r2, r3, r4), ncol = 4)
+library(sfsmisc)
+Corr <- posdefify(Corr)
+
+# variances
+# tune Y correlation with the 1750
+eps_sigma <- 1750*c(15, 2, 21, 5)
+
+library(corpcor)
+Sigma <- rebuild.cov(r = Corr, v = eps_sigma)
+
+library(mvtnorm)
+Eps <- rmvnorm(n, sigma = Sigma)
+#Eps <- rmvt(n, df = 2, sigma = Sigma)
+
+
+
+##################################
+# put it all together
+
+Y <- data.frame( X %*% B + Eps )
+names(Y) <- c("y1", "y2", "y3", "y4")
+
+
+BigData <- cbind(Y,D)
+
+head(BigData)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+***************************************************
+G. Jay Kerns, Ph.D.
+Associate Professor
+Department of Mathematics & Statistics
+Youngstown State University
+Youngstown, OH 44555-0002 USA
+Office: 1035 Cushwa Hall
+Phone: (330) 941-3310 Office (voice mail)
+-3302 Department
+-3170 FAX
+E-mail: gkerns at ysu.edu
+http://www.cc.ysu.edu/~gjkerns/
+
+
+
+From bates at stat.wisc.edu  Wed Mar 25 20:24:53 2009
+From: bates at stat.wisc.edu (Douglas Bates)
+Date: Wed, 25 Mar 2009 14:24:53 -0500
+Subject: [R-sig-teaching] Creating data
+In-Reply-To: <a695148b0903251146h49580c56y7caac64a225f112e@mail.gmail.com>
+References: <20090324200414.GA10953@pitt.edu>
+	<a695148b0903251146h49580c56y7caac64a225f112e@mail.gmail.com>
+Message-ID: <40e66e0b0903251224w7378b232x61bcb8eb585429eb@mail.gmail.com>
+
+On Wed, Mar 25, 2009 at 1:46 PM, G. Jay Kerns <gkerns at ysu.edu> wrote:
+> Dear Scott,
+
+> On Tue, Mar 24, 2009 at 4:04 PM, Scott F. Kiesling <kiesling+ at pitt.edu> wrote:
+
+>>
+>> For a simple example, let's say I want to create a dataset with
+>> students from different countries and academic departments who took an
+>> English test. I want to make some differences (significant and not)
+>> and possibly even interactions among the scores by country and
+>> department.
+>
+>
+> I've been meaning to do this for a while (for quizzes, demos, etc) but
+> didn't yet have the chance. ?Below is something I quickly put
+> together; I am sure that it can be improved.
+>
+> You seemed to be looking for only one dependent variable but in my
+> case I am looking for several.
+>
+>
+> Dep. vars: ?y1 - y4 (correlated)
+> Fixed effects: dept (4 levels) and region (3 levels).
+> Covariate: ?x_cov
+>
+> The model is Y = X*B + Eps:
+>
+> X is the model matrix: ?~ x_cov + region + dept + region:dept
+> B is the parameter matrix
+> Eps ~ multivariate normal (or t), mean 0, variance/covariance Sigma
+>
+> I used deviation contrasts; it would be easy to use treatment contrasts, too.
+>
+> If multicollinearity is desired, the same trick as for Eps can be used
+> to generate multiple correlated x-variables.
+>
+> I didn't spend time thinking about the parameters - clearly the most
+> important part (after all, there are 50+ of them in a bloated model
+> like this). They are randomly generated which means that they will
+> display *radically* different behavior, even on different runs. ?In
+> practice, one would want to choose a parameter matrix thoughtfully and
+> stick with it.
+>
+> Everything is in BigData, at the end.
+
+Slightly off-topic but you may want to look at the 'exams' package by
+Achim Zeileis and Bettina Gruen
+
+http://cran.r-project.org/web/packages/exams/
+
+The vignette for the package gives examples of incorporating the data
+set generating process into the document that will generate the exam
+questions.  Even if you do not choose to use LaTeX to generate the
+exam it is still helpful to encapsulate the data generation process in
+something beyond an R script with some comments.  I know for myself
+that even with comments in a script I soon forget exactly what is
+being simulated in a script with a name like 'simulate.R'.
+
+> ##################################
+> # need pkgs corpcor, sfsmisc, mvtnorm
+>
+>
+> set.seed(1)
+> n <- 500 ? # sample size
+>
+> ##################################
+> # generate indep. vars
+>
+> # covariate
+> x_cov <- rnorm(n, mean = 37, sd = 15)
+>
+> # fixed effects
+> region <- sample(c("Amer", "Euro", "Asia"), size = n, prob = c(7,9,4),
+> replace = TRUE)
+> dept <- sample(LETTERS[1:4], size = n, prob = c(2,3,3,4), replace = TRUE)
+> region <- factor(region)
+> dept <- factor(dept)
+>
+> D <- data.frame(x_cov = x_cov, region = region, dept = dept)
+>
+> head(D) ?# the data
+>
+>
+> ##################################
+> # model matrix
+>
+> X <- model.matrix( ~ x_cov + (region + dept)^2,
+> ? ? ? ? ? ? ? ? ? data = D,
+> ? ? ? ? ? ? ? ? ? contrasts = list( region="contr.sum", dept="contr.sum"))
+>
+> head(X) ?# the model matrix
+>
+>
+> # num of parameters, for each dep variable
+> k <- dim(X)[2]
+>
+>
+> ##################################
+> # specify parameters
+> # should think about these
+>
+> b1 <- rnorm(k, sd = 6)
+> b2 <- rcauchy(k, scale = 9)
+> b3 <- rnorm(k, sd = 12)
+> b4 <- rcauchy(k, scale = 15)
+>
+> B <- matrix( c(b1, b2, b3, b4), ncol = 4)
+>
+> B ? # the parameter matrix
+>
+> ##################################
+> # generate error
+>
+> # a correlation matrix
+> r1 <- c( ?1.0, ?0.4, -0.5, ?0.7 )
+> r2 <- c( ?0.4, ?1.0, ?0.2, -0.1 )
+> r3 <- c( -0.5, ?0.2, ?1.0, ?0.0 )
+> r4 <- c( ?0.7, -0.1, ?0.0, ?1.0 )
+>
+> Corr <- matrix( c(r1, r2, r3, r4), ncol = 4)
+> library(sfsmisc)
+> Corr <- posdefify(Corr)
+>
+> # variances
+> # tune Y correlation with the 1750
+> eps_sigma <- 1750*c(15, 2, 21, 5)
+>
+> library(corpcor)
+> Sigma <- rebuild.cov(r = Corr, v = eps_sigma)
+>
+> library(mvtnorm)
+> Eps <- rmvnorm(n, sigma = Sigma)
+> #Eps <- rmvt(n, df = 2, sigma = Sigma)
+>
+>
+>
+> ##################################
+> # put it all together
+>
+> Y <- data.frame( X %*% B + Eps )
+> names(Y) <- c("y1", "y2", "y3", "y4")
+>
+>
+> BigData <- cbind(Y,D)
+>
+> head(BigData)
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+> ***************************************************
+> G. Jay Kerns, Ph.D.
+> Associate Professor
+> Department of Mathematics & Statistics
+> Youngstown State University
+> Youngstown, OH 44555-0002 USA
+> Office: 1035 Cushwa Hall
+> Phone: (330) 941-3310 Office (voice mail)
+> -3302 Department
+> -3170 FAX
+> E-mail: gkerns at ysu.edu
+> http://www.cc.ysu.edu/~gjkerns/
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+From krcabrer at une.net.co  Wed Mar 25 20:39:45 2009
+From: krcabrer at une.net.co (Kenneth Roy Cabrera Torres)
+Date: Wed, 25 Mar 2009 14:39:45 -0500
+Subject: [R-sig-teaching] Statistics for transportation
+Message-ID: <1238009985.2291.3.camel@localhost>
+
+Hi R teachers:
+
+I want to know if anybody had have a
+experience teaching statistics for
+transportation engineers.
+
+Thank you for any sugestion or help.
+
+Kenneth
+
+
+
+From gkerns at ysu.edu  Thu Mar 26 00:15:38 2009
+From: gkerns at ysu.edu (G. Jay Kerns)
+Date: Wed, 25 Mar 2009 19:15:38 -0400
+Subject: [R-sig-teaching] Creating data
+In-Reply-To: <Pine.LNX.4.64.0903252327200.3712@paninaro.stat-math.wu-wien.ac.at>
+References: <20090324200414.GA10953@pitt.edu>
+	<a695148b0903251146h49580c56y7caac64a225f112e@mail.gmail.com>
+	<40e66e0b0903251224w7378b232x61bcb8eb585429eb@mail.gmail.com>
+	<Pine.LNX.4.64.0903252327200.3712@paninaro.stat-math.wu-wien.ac.at>
+Message-ID: <a695148b0903251615v5fd44b88k190e2b00cf2a5d72@mail.gmail.com>
+
+Dear Doug and Achim,
+
+
+On 3/25/09, Achim Zeileis <Achim.Zeileis at wu-wien.ac.at> wrote:
+>
+> Thanks for including us and advertising our package, Doug!
+>
+> Actually, we use our "exams" package to generate simple two-way ANOVA
+> examples in our stats exams at WU Wien. The approach is very similar to
+> the one previously suggested: generate some random regressors, compute the
+> model matrix, draw random coefficients, set certain coefficients to zero
+> (if there should be only some main effects) and then simulate the final
+> data.
+>
+> For a one-way ANOVA, there is an example in the package, see
+>    library("exams")
+>    exams("anova")
+> and see the underlying code in ~/inst/exercises/anova.Rnw.
+>
+> hth,
+> Z
+>
+
+
+Thanks for the pointer to and example from the exams package.  I had
+heard about the package and flipped through the vignette, but didn't
+appreciate just how powerful this package could be.  Very, very cool.
+
+Regards,
+Jay
+
+
+
+From kiesling+ at pitt.edu  Thu Mar 26 14:52:19 2009
+From: kiesling+ at pitt.edu (Scott F. Kiesling)
+Date: Thu, 26 Mar 2009 09:52:19 -0400
+Subject: [R-sig-teaching] Creating data
+In-Reply-To: <Pine.LNX.4.64.0903252327200.3712@paninaro.stat-math.wu-wien.ac.at>
+References: <20090324200414.GA10953@pitt.edu>
+	<a695148b0903251146h49580c56y7caac64a225f112e@mail.gmail.com>
+	<40e66e0b0903251224w7378b232x61bcb8eb585429eb@mail.gmail.com>
+	<Pine.LNX.4.64.0903252327200.3712@paninaro.stat-math.wu-wien.ac.at>
+Message-ID: <20090326135219.GB13024@pitt.edu>
+
+Everyone, thanks for your help! I'm going to work on this more over
+the weekend.
+
+SFK
+
+On Wed, Mar 25, 2009 at 11:34:38PM +0100, Achim Zeileis wrote:
+> From: Achim Zeileis <Achim.Zeileis at wu-wien.ac.at>
+> Date: Wed, 25 Mar 2009 23:34:38 +0100 (CET)
+> To: Douglas Bates <bates at stat.wisc.edu>
+> Cc: "G. Jay Kerns" <gkerns at ysu.edu>,
+> 	"Scott F. Kiesling" <kiesling at pitt.edu>,
+> 	r-sig-teaching at r-project.org,
+> 	Bettina Gruen <Bettina.Gruen at wu-wien.ac.at>
+> Subject: Re: [R-sig-teaching] Creating data
+
+> On Wed, 25 Mar 2009, Douglas Bates wrote:
+>
+>> On Wed, Mar 25, 2009 at 1:46 PM, G. Jay Kerns <gkerns at ysu.edu> wrote:
+>>> Dear Scott,
+
+>>> On Tue, Mar 24, 2009 at 4:04 PM, Scott F. Kiesling <kiesling+ at pitt.edu> wrote:
+
+
+>>>> For a simple example, let's say I want to create a dataset with
+>>>> students from different countries and academic departments who took an
+>>>> English test. I want to make some differences (significant and not)
+>>>> and possibly even interactions among the scores by country and
+>>>> department.
+
+
+>>> I've been meaning to do this for a while (for quizzes, demos, etc) but
+>>> didn't yet have the chance. ?Below is something I quickly put
+>>> together; I am sure that it can be improved.
+
+>>> You seemed to be looking for only one dependent variable but in my
+>>> case I am looking for several.
+
+
+>>> Dep. vars: ?y1 - y4 (correlated)
+>>> Fixed effects: dept (4 levels) and region (3 levels).
+>>> Covariate: ?x_cov
+
+>>> The model is Y = X*B + Eps:
+
+>>> X is the model matrix: ?~ x_cov + region + dept + region:dept
+>>> B is the parameter matrix
+>>> Eps ~ multivariate normal (or t), mean 0, variance/covariance Sigma
+
+>>> I used deviation contrasts; it would be easy to use treatment contrasts, too.
+
+>>> If multicollinearity is desired, the same trick as for Eps can be used
+>>> to generate multiple correlated x-variables.
+
+>>> I didn't spend time thinking about the parameters - clearly the most
+>>> important part (after all, there are 50+ of them in a bloated model
+>>> like this). They are randomly generated which means that they will
+>>> display *radically* different behavior, even on different runs. ?In
+>>> practice, one would want to choose a parameter matrix thoughtfully and
+>>> stick with it.
+
+>>> Everything is in BigData, at the end.
+
+>> Slightly off-topic but you may want to look at the 'exams' package by
+>> Achim Zeileis and Bettina Gruen
+
+>> http://cran.r-project.org/web/packages/exams/
+
+>> The vignette for the package gives examples of incorporating the data
+>> set generating process into the document that will generate the exam
+>> questions.  Even if you do not choose to use LaTeX to generate the
+>> exam it is still helpful to encapsulate the data generation process in
+>> something beyond an R script with some comments.  I know for myself
+>> that even with comments in a script I soon forget exactly what is
+>> being simulated in a script with a name like 'simulate.R'.
+>
+> Thanks for including us and advertising our package, Doug!
+>
+> Actually, we use our "exams" package to generate simple two-way ANOVA  
+> examples in our stats exams at WU Wien. The approach is very similar to  
+> the one previously suggested: generate some random regressors, compute 
+> the model matrix, draw random coefficients, set certain coefficients to 
+> zero (if there should be only some main effects) and then simulate the 
+> final data.
+>
+> For a one-way ANOVA, there is an example in the package, see
+>   library("exams")
+>   exams("anova")
+> and see the underlying code in ~/inst/exercises/anova.Rnw.
+>
+> hth,
+> Z
+>
+
+>>> # need pkgs corpcor, sfsmisc, mvtnorm
+
+
+>>> set.seed(1)
+>>> n <- 500 ? # sample size
+
+
+>>> # generate indep. vars
+
+>>> # covariate
+>>> x_cov <- rnorm(n, mean = 37, sd = 15)
+
+>>> # fixed effects
+>>> region <- sample(c("Amer", "Euro", "Asia"), size = n, prob = c(7,9,4),
+>>> replace = TRUE)
+>>> dept <- sample(LETTERS[1:4], size = n, prob = c(2,3,3,4), replace = TRUE)
+>>> region <- factor(region)
+>>> dept <- factor(dept)
+
+>>> D <- data.frame(x_cov = x_cov, region = region, dept = dept)
+
+>>> head(D) ?# the data
+
+
+
+>>> # model matrix
+
+>>> X <- model.matrix( ~ x_cov + (region + dept)^2,
+>>> ? ? ? ? ? ? ? ? ? data = D,
+>>> ? ? ? ? ? ? ? ? ? contrasts = list( region="contr.sum", dept="contr.sum"))
+
+>>> head(X) ?# the model matrix
+
+
+>>> # num of parameters, for each dep variable
+>>> k <- dim(X)[2]
+
+
+
+>>> # specify parameters
+>>> # should think about these
+
+>>> b1 <- rnorm(k, sd = 6)
+>>> b2 <- rcauchy(k, scale = 9)
+>>> b3 <- rnorm(k, sd = 12)
+>>> b4 <- rcauchy(k, scale = 15)
+
+>>> B <- matrix( c(b1, b2, b3, b4), ncol = 4)
+
+>>> B ? # the parameter matrix
+
+
+>>> # generate error
+
+>>> # a correlation matrix
+>>> r1 <- c( ?1.0, ?0.4, -0.5, ?0.7 )
+>>> r2 <- c( ?0.4, ?1.0, ?0.2, -0.1 )
+>>> r3 <- c( -0.5, ?0.2, ?1.0, ?0.0 )
+>>> r4 <- c( ?0.7, -0.1, ?0.0, ?1.0 )
+
+>>> Corr <- matrix( c(r1, r2, r3, r4), ncol = 4)
+>>> library(sfsmisc)
+>>> Corr <- posdefify(Corr)
+
+>>> # variances
+>>> # tune Y correlation with the 1750
+>>> eps_sigma <- 1750*c(15, 2, 21, 5)
+
+>>> library(corpcor)
+>>> Sigma <- rebuild.cov(r = Corr, v = eps_sigma)
+
+>>> library(mvtnorm)
+>>> Eps <- rmvnorm(n, sigma = Sigma)
+>>> #Eps <- rmvt(n, df = 2, sigma = Sigma)
+
+
+
+
+>>> # put it all together
+
+>>> Y <- data.frame( X %*% B + Eps )
+>>> names(Y) <- c("y1", "y2", "y3", "y4")
+
+
+>>> BigData <- cbind(Y,D)
+
+>>> head(BigData)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>> ***************************************************
+>>> G. Jay Kerns, Ph.D.
+>>> Associate Professor
+>>> Department of Mathematics & Statistics
+>>> Youngstown State University
+>>> Youngstown, OH 44555-0002 USA
+>>> Office: 1035 Cushwa Hall
+>>> Phone: (330) 941-3310 Office (voice mail)
+>>> -3302 Department
+>>> -3170 FAX
+>>> E-mail: gkerns at ysu.edu
+>>> http://www.cc.ysu.edu/~gjkerns/
+
+>>> _______________________________________________
+>>> R-sig-teaching at r-project.org mailing list
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+
+
+-- 
+Scott F. Kiesling, PhD
+
+Associate Professor 
+Department Chair
+
+Department of Linguistics
+University of Pittsburgh, 2816 CL
+Pittsburgh, PA 15260
+http://www.linguistics.pitt.edu
+Office: +1 412-624-5916
+
+
+
+From bates at stat.wisc.edu  Mon Mar 30 23:12:17 2009
+From: bates at stat.wisc.edu (Douglas Bates)
+Date: Mon, 30 Mar 2009 16:12:17 -0500
+Subject: [R-sig-teaching] I need your thoughts on teaching with R
+In-Reply-To: <D86C9EFF6AA3734193923FFA1EE4308B07D7DC65@nc-mail2.northland.edu>
+References: <49B15D49.8030107@umn.edu>
+	<20090309210908.GG14522@laplace.reed.edu>
+	<D86C9EFF6AA3734193923FFA1EE4308B07D7DC65@nc-mail2.northland.edu>
+Message-ID: <40e66e0b0903301412i275524d1g4df1e9925f2b3915@mail.gmail.com>
+
+On Wed, Mar 11, 2009 at 9:52 PM, Derek Ogle <DOgle at northland.edu> wrote:
+> Andrew,
+>
+> I teach a intro statistics course to "science" students and some "general education" students and a "biometry" course to "natural resources" and a handful of other students at Northland College. ?I have been using R in both of these statistics course, and in my fisheries science course, for four or five years now. ?Below are my answers to your questions. ?I would be happy to expand on these if you needed me to (though now coming back to re-read I see that I have typed quite a bit).
+>
+>
+>> 1) What are the instructional decisions that a person needs to make if they are going to be teaching statistics using R?
+>
+> In general, I don't really think that these decisions are unique to R. ?No matter the software I believe that an instructor, especially of an introductory class, has to make a decision of whether learning the software is one of the outcomes of the course or not. ?When I taught with other software (Minitab) I chose not to have learning the software as an outcome. ?However, when I began using R I decided that at least some understanding of the software should be an outcome because I felt that knowing R was adding value to the student. ?I believe that this added value was especially important in my upper-level courses so it became important to me to make sure that students in the intro class were gaining some knowledge of the software (R).
+>
+> Once an instructor chooses to use R, I believe they must decide whether to use one of the GUIs, whether to use an external editor, which "graphics system" (base, ggplot2, lattice) to use, or whether to use package-specific or base functions.
+>
+>
+>> 2) What decisions have you yourself made and what were your reasons?
+>
+> Of the latter items mentioned above I chose NOT to use a GUI. ?I am familiar with RCMDR, for example, but, personally, I think the power of R rests in the command line. ?I do use TINN-R as an external editor because I like the ability for students to save their commands and recycle them for future problems. ?I have not seen any "cost" to the student of using TINN-R (it is simple to learn). ?I chose to use base graphics because of the simplicity (in my mind) of their functions (for doing the basic graphics needed in most intro classes).
+>
+> I have also written a package of R functions that streamlines some of the base R functions. ?For example, I have written a Subset() function that combines the base subset() and drop.levels() so that I don't have to explain to students the subtleties of why subset() does not drop the level from the list of possible levels for a factor variable after subsetting. ?I have also written a function that can be used to provide a graphical display of probability calculations on a suite of probability distributions (motivated by a post by Dr. Bates on this list last year). ?I did not want to create a large number of special purpose functions so I attempted to judiciously choose functions that simplified complexities or subtleties that I did not want students to be concerned with or that provided specific pedagogical advantages. ?<BTW, my package is surely not up to the standards of other package developers but if anyone is interested it is available at www.rforge.net/NCStats. ?A newer version using namespace will be up there when my semester is over in April.> ?I also use some of the functions in the TeachingDemos package.
+>
+> Finally, I made the conscious decision of not using the phrases "R programming" or "R coding." ?It is my experience that many students do not consider themselves capable of "computer programming." ?I explain that the functions are simply replacements for menu'd commands but that they can be saved and reproduced. ?At most, I refer to "R scripts" but never "R programs."
+>
+>
+>> 3) How do you teach with R? Do you have sessions on R and other sessions where content is taught? Is the computing fully integrated with the content? Or some combinationn?
+>
+> At Northland, I teach two 2-hour sessions a week for the intro class. ?Generally, I use some portion of this time for a traditional lecture, some portion to teach "doing statistics with R", and then some time for the students to work independently with R and ask me questions. ?The traditional lecture and the "doing statistics with R" sections follow each other closely so I would consider them to be "integrated." ?In the "doing statistics with R" section I have found it better to provide students with a handout (easily accomplished by the instructor with Sweave()) rather than demonstrating with the computer or letting them type commands into the computer. ?The two main advantages to this are that it is easier to keep students in roughly the same spot (if they are typing things in themselves then invariably someone forgot a comma, or misspelled, etc, and you spend all of your time troubleshooting individual students while others sit there or start surfing the net) and it lets the students see a correct set of commands on which they can take detailed notes (if they are typing in commands themselves they are just typing and not thinking and not taking notes that they can return to).
+>
+> In the upper-level course, I fully integrate R into the notes and lecture.
+>
+> You can seen what I do, if interested, because all of my class materials ("book", handouts, lecture slides) are available at www.ncfaculty.net/dogle/ and then follow the intro stats, biometry, or fisheries science "buttons."
+>
+>
+>> 4) If you have the heterogeneous group of students (some going on to program in R, others just trying to get through, etc.) how do we deal with this? Do we need to have different types of assignments and materials for the different students?
+> Again, I don't see this as a specific issue with using R -- i.e., even if we did all calculations by hand there would be heterogeneity amongst those that will continue with other statistics courses and those "just trying to get through."
+>
+>
+>> 5) A few more comments.
+> When I first started teaching with R I was just learning the program myself. ?I was terrible at teaching with it (and the students hated it) but I believed that it was the correct software to use. ?Now, five years later, I am a much better teacher of statistics and R and, most of my students either "enjoy" R (I have seen students become more accepting of typing in a command line rather than a GUI -- I believe that this is due to the amount of texting and chatting that they do relative to students from just a few years ago) or are, at least, accepting of the idea of "R". ?I even more firmly believe that this is the proper software for students to learn. ?Be firm in your commitment to R if you choose to teach with it but also be patient with yourself and your students during the first few years.
+>
+> I do spend some time trying to teach students the "lexicon of R" as this makes communication about specific functions easier. ?For example, my students will know about constructor and extractor functions, named and positional arguments, objects, assignment operators, vectors, data.frames, etc. ?This has been a "cost" of using R in the sense that it does take time and, thus, "something else" had to go from my curriculum.
+>
+> I also think that R is especially beneficial for my biometry course which focuses on regression (simple, multiple, and indicator variable), anova (one- and two-way), and logistic regression because the vast majority of these topics use a common set of functions -- lm(), anova(), summary(), confint(), etc. ?In addition, I have added a few functions (in my NCStats function) to make fitted line plots, residual plots, and to compare all slopes. ?Thus, students can learn a vast number of topics with very few commands in R. ?The same can be said in the intro class for t.test() (one-sample, two-sample, matched-pairs) and chisq.test() (goodness-of-fit and general chi-square). ?This efficiency is very convenient and powerful.
+>
+> Finally, I have found R to be useful because students "like" free software, open-source concepts (at least at my environmental liberal arts college), and being on the "cutting edge." ?The more students like in your class the more likely they are to learn.
+
+I agree with what Derek, my neighbor to the north, has said.
+
+I teach introductory engineering statistics using R and have done so
+for several years, although I am never completely satisfied with how R
+blends with the text in such a course.  I have tried using a standard
+introductory engineering text, specifically Devore's "Probability and
+Statistics for Engineering and the Sciences", supplemented with
+material on R (see the Devore6 package on CRAN which John Verzani
+updated for the 7th edition to Devore7), Peter Dalgaard's
+"Introductory Statistics with R" and now Cohen and Cohen's "Statistics
+and Data with R".  I have also looked at "Probability and Statistics
+with R" by Ugarte et al.
+
+With the exception of Peter's book I found myself fighting the text.
+That is, I found myself saying "the text presents this material this
+way but it is unnecessary and confusing.  Do things this other way."
+
+In the case of Peter's book I could agree with his presentation but
+the book is clearly oriented toward biostatistics and has little
+coverage of probability.  It came about as a supplement to another
+text used in a course and reads like that so it has to be supplemented
+extensively, especially if your audience is not from medical fields.
+
+I would dearly love to see an approach to teaching statistics that
+takes advantage of the graphical and computational capabilities of R
+to remove redundant topics from the typical introductory course.
+Sadly the last two texts I list (Cohen and Cohen, 2008;  Ugarte et al,
+2008) do exactly the opposite.  Instead of using R to simplify an
+approach to statistics they complicate an introductory course by
+adding page after page of confusing R code.
+
+What do I mean by simplify?  There are many topics in an introductory
+statistics course that are ingrained in the curriculum but really are
+there for the sake of approximation or computational simplification.
+How many introductory texts still describe how to approximate a
+"difficult" distribution by a "simpler" distribution (hypergeometric
+by binomial, binomial by Poisson or Gaussian, etc.)?  When you can
+calculate the exact probability why do you want to waste time teaching
+an approximation and rules like "when np > 5 ..."?  Even a basic
+graphical presentation, the histogram, is outmoded.  The purpose of
+the histogram is to give us a picture of the density.  Why not use a
+density plot for this?  There is a great advantage in that you can
+easily overlay density plots from different groups, not to mention the
+fact that it shows a smooth approximation to the density.  In the past
+we used histograms because it was comparatively simple to choose bins
+and count the observations in the bins then produce a bar chart.  We
+can do better than that now.
+
+Think carefully about the graphics.  Deepayan Sarkar (lattice) and
+Hadley Wickham (ggplot2) have provided powerful techniques for
+exploring data.  Students should benefit from that if they can do so
+without needing to learn many, many details of the language.
+
+When teaching the principles of hypothesis testing I describe a
+p-value as "the probability of seeing the data that we did or
+something more unusual when the null hypothesis (usually meaning "no
+change") is true".  The closer that probability is to "impossible",
+the stronger the evidence against the null hypothesis in favor of the
+alternative.  The point is that we should go directly to the p-value.
+All the confusing material about picking a level and calculating the
+rejection region is there because we couldn't calculate that
+probability when I took an introductory course more than 40 years ago.
+ All we had then were slide rules, pencil and paper, and a few tables
+in a book.  We can do better than that now.
+
+Do we need to describe computational formulas in a text book?  It
+turns out that just about every formula in an introductory text,
+beyond the calculation of the sample mean, is not really the way that
+the calculation is done.  Most of us know that the "short cut" formula
+for the sample variance has bad numerical properties and a few might
+know that regression coefficients are not really evaluated by
+inverting X'X.  Why teach a formula that is only good for a simplified
+situation, like a simple linear regression model?  Why not say that we
+minimize the residual sum of squares and leave it at that?  Pay more
+attention to model building and examining residuals.
+
+In teaching I think it is important to strive for simplicity and
+consistency in the use of R.  Keep the R code as concise as possible.
+
+I prefer to teach lattice graphics because I think the graphics are
+informative and because all the lattice functions can be called with a
+formula/data pair of arguments, just as t.test, aov, lm, glm, nls,
+etc. can be called with formula/data.  I use Sweave and the beamer
+LaTeX class to generate the slides for my classes so that I can
+extract the R code and make that available on the course web site.
+The slides and class presentations describe the graphics calls
+succinctly, if at all, but the detailed code is available for
+examination if the students want to delve deeper.
+
+In short, the worst way to use R in an introductory course is to teach
+the same-old-same-old material augmented with page after page of
+confusing R code.  Try to use the power of the computer and the
+software to aid insight into data and to simplify the ideas of
+statistics.
+
+I have over the years produced slides for classes based first on
+Devore's books then on Peter's book and now on the Cohen and Cohen
+book.  I am willing to make these available, including the source
+code, so others can borrow code or presentation approaches if they
+wish.  I am not familiar with open documentation licenses like
+Creative Commons.  If it would help to stimulate discussion I will
+make them available without copyright.  I would be particularly
+interested in corresponding with potential text book authors on some
+of the techniques that I think can be used to simplify presentation of
+R code and graphics.  I don't have plans to embark on writing a text
+myself.
+
+
+
+From h.wickham at gmail.com  Tue Mar 31 00:29:23 2009
+From: h.wickham at gmail.com (hadley wickham)
+Date: Mon, 30 Mar 2009 17:29:23 -0500
+Subject: [R-sig-teaching] I need your thoughts on teaching with R
+In-Reply-To: <40e66e0b0903301412i275524d1g4df1e9925f2b3915@mail.gmail.com>
+References: <49B15D49.8030107@umn.edu>
+	<20090309210908.GG14522@laplace.reed.edu>
+	<D86C9EFF6AA3734193923FFA1EE4308B07D7DC65@nc-mail2.northland.edu>
+	<40e66e0b0903301412i275524d1g4df1e9925f2b3915@mail.gmail.com>
+Message-ID: <f8e6ff050903301529u20c2e480n4bce9d83c429a1ab@mail.gmail.com>
+
+> What do I mean by simplify? ?There are many topics in an introductory
+> statistics course that are ingrained in the curriculum but really are
+> there for the sake of approximation or computational simplification.
+> How many introductory texts still describe how to approximate a
+> "difficult" distribution by a "simpler" distribution (hypergeometric
+> by binomial, binomial by Poisson or Gaussian, etc.)? ?When you can
+> calculate the exact probability why do you want to waste time teaching
+> an approximation and rules like "when np > 5 ..."? ?Even a basic
+
+Even knowing how to look up numbers in a table is an outdated skill!
+
+> graphical presentation, the histogram, is outmoded. ?The purpose of
+> the histogram is to give us a picture of the density. ?Why not use a
+> density plot for this? ?There is a great advantage in that you can
+> easily overlay density plots from different groups, not to mention the
+> fact that it shows a smooth approximation to the density. ?In the past
+> we used histograms because it was comparatively simple to choose bins
+> and count the observations in the bins then produce a bar chart. ?We
+> can do better than that now.
+
+I agree 100% with your points apart from this one.  I'm not a big fan
+of density estimates because most real-life distributions are not
+smooth, continuous and unbounded, like most density estimators assume
+they are.  It's also much harder to understand how a density plot is
+made, and while I don't think students need to understand the
+motivations and theory for every tool they use, I think they should
+understand how their basic graphic tools work.  A happy intermediate
+is the frequency polygon, which has more favourable theoretical
+properties than the histogram, but is equally easy to understand (and
+you can overlay them like densities)
+
+> I have over the years produced slides for classes based first on
+> Devore's books then on Peter's book and now on the Cohen and Cohen
+> book. ?I am willing to make these available, including the source
+> code, so others can borrow code or presentation approaches if they
+> wish. ?I am not familiar with open documentation licenses like
+> Creative Commons. ?If it would help to stimulate discussion I will
+> make them available without copyright. ?I would be particularly
+> interested in corresponding with potential text book authors on some
+> of the techniques that I think can be used to simplify presentation of
+> R code and graphics. ?I don't have plans to embark on writing a text
+> myself.
+
+I would love to see these!
+
+Hadley
+
+-- 
+http://had.co.nz/
+
+
+
+From bates at stat.wisc.edu  Tue Mar 31 01:02:54 2009
+From: bates at stat.wisc.edu (Douglas Bates)
+Date: Mon, 30 Mar 2009 18:02:54 -0500
+Subject: [R-sig-teaching] I need your thoughts on teaching with R
+In-Reply-To: <f8e6ff050903301529u20c2e480n4bce9d83c429a1ab@mail.gmail.com>
+References: <49B15D49.8030107@umn.edu>
+	<20090309210908.GG14522@laplace.reed.edu>
+	<D86C9EFF6AA3734193923FFA1EE4308B07D7DC65@nc-mail2.northland.edu>
+	<40e66e0b0903301412i275524d1g4df1e9925f2b3915@mail.gmail.com>
+	<f8e6ff050903301529u20c2e480n4bce9d83c429a1ab@mail.gmail.com>
+Message-ID: <40e66e0b0903301602h7268dd02y82e1e7c454e9170b@mail.gmail.com>
+
+On Mon, Mar 30, 2009 at 5:29 PM, hadley wickham <h.wickham at gmail.com> wrote:
+>> What do I mean by simplify? ?There are many topics in an introductory
+>> statistics course that are ingrained in the curriculum but really are
+>> there for the sake of approximation or computational simplification.
+>> How many introductory texts still describe how to approximate a
+>> "difficult" distribution by a "simpler" distribution (hypergeometric
+>> by binomial, binomial by Poisson or Gaussian, etc.)? ?When you can
+>> calculate the exact probability why do you want to waste time teaching
+>> an approximation and rules like "when np > 5 ..."? ?Even a basic
+>
+> Even knowing how to look up numbers in a table is an outdated skill!
+>
+>> graphical presentation, the histogram, is outmoded. ?The purpose of
+>> the histogram is to give us a picture of the density. ?Why not use a
+>> density plot for this? ?There is a great advantage in that you can
+>> easily overlay density plots from different groups, not to mention the
+>> fact that it shows a smooth approximation to the density. ?In the past
+>> we used histograms because it was comparatively simple to choose bins
+>> and count the observations in the bins then produce a bar chart. ?We
+>> can do better than that now.
+
+> I agree 100% with your points apart from this one. ?I'm not a big fan
+> of density estimates because most real-life distributions are not
+> smooth, continuous and unbounded, like most density estimators assume
+> they are. ?It's also much harder to understand how a density plot is
+> made, and while I don't think students need to understand the
+> motivations and theory for every tool they use, I think they should
+> understand how their basic graphic tools work. ?A happy intermediate
+> is the frequency polygon, which has more favourable theoretical
+> properties than the histogram, but is equally easy to understand (and
+> you can overlay them like densities)
+
+Good point.  Density plots do have problems with smearing at the boundaries.
+
+>> I have over the years produced slides for classes based first on
+>> Devore's books then on Peter's book and now on the Cohen and Cohen
+>> book. ?I am willing to make these available, including the source
+>> code, so others can borrow code or presentation approaches if they
+>> wish. ?I am not familiar with open documentation licenses like
+>> Creative Commons. ?If it would help to stimulate discussion I will
+>> make them available without copyright. ?I would be particularly
+>> interested in corresponding with potential text book authors on some
+>> of the techniques that I think can be used to simplify presentation of
+>> R code and graphics. ?I don't have plans to embark on writing a text
+>> myself.
+>
+> I would love to see these!
+
+The source directory of my slides for Peter's book, "Introductory
+Statistics with R", is available as
+
+http://www.stat.wisc.edu/~bates/ISwR.zip
+
+(I'm sorry, Hadley, but I use lattice throughout.  I haven't taken the
+time to learn ggplot2.)
+
+
+
+From h.wickham at gmail.com  Tue Mar 31 02:54:37 2009
+From: h.wickham at gmail.com (hadley wickham)
+Date: Mon, 30 Mar 2009 19:54:37 -0500
+Subject: [R-sig-teaching] I need your thoughts on teaching with R
+In-Reply-To: <40e66e0b0903301602h7268dd02y82e1e7c454e9170b@mail.gmail.com>
+References: <49B15D49.8030107@umn.edu>
+	<20090309210908.GG14522@laplace.reed.edu>
+	<D86C9EFF6AA3734193923FFA1EE4308B07D7DC65@nc-mail2.northland.edu>
+	<40e66e0b0903301412i275524d1g4df1e9925f2b3915@mail.gmail.com>
+	<f8e6ff050903301529u20c2e480n4bce9d83c429a1ab@mail.gmail.com>
+	<40e66e0b0903301602h7268dd02y82e1e7c454e9170b@mail.gmail.com>
+Message-ID: <f8e6ff050903301754x34fa26earb7fd9f5d2506add7@mail.gmail.com>
+
+> The source directory of my slides for Peter's book, "Introductory
+> Statistics with R", is available as
+>
+> http://www.stat.wisc.edu/~bates/ISwR.zip
+
+Those are really nice.
+
+I see you still teach t-tests and the Wilcoxon signed-rank test - is
+this just an artefact of following Dalgaard, or do you have a
+preference for them over the (computational expensive but conceptually
+simpler) permutation tests?
+
+> (I'm sorry, Hadley, but I use lattice throughout. ?I haven't taken the
+> time to learn ggplot2.)
+
+No problems.  I don't think there's much difference in capabilities at
+this level.
+
+Hadley
+
+-- 
+http://had.co.nz/
+
+
+
+From bates at stat.wisc.edu  Tue Mar 31 15:41:58 2009
+From: bates at stat.wisc.edu (Douglas Bates)
+Date: Tue, 31 Mar 2009 08:41:58 -0500
+Subject: [R-sig-teaching] I need your thoughts on teaching with R
+In-Reply-To: <f8e6ff050903301754x34fa26earb7fd9f5d2506add7@mail.gmail.com>
+References: <49B15D49.8030107@umn.edu>
+	<20090309210908.GG14522@laplace.reed.edu>
+	<D86C9EFF6AA3734193923FFA1EE4308B07D7DC65@nc-mail2.northland.edu>
+	<40e66e0b0903301412i275524d1g4df1e9925f2b3915@mail.gmail.com>
+	<f8e6ff050903301529u20c2e480n4bce9d83c429a1ab@mail.gmail.com>
+	<40e66e0b0903301602h7268dd02y82e1e7c454e9170b@mail.gmail.com>
+	<f8e6ff050903301754x34fa26earb7fd9f5d2506add7@mail.gmail.com>
+Message-ID: <40e66e0b0903310641x7a1b29afo2cd31825191641b2@mail.gmail.com>
+
+On Mon, Mar 30, 2009 at 7:54 PM, hadley wickham <h.wickham at gmail.com> wrote:
+>> The source directory of my slides for Peter's book, "Introductory
+>> Statistics with R", is available as
+>>
+>> http://www.stat.wisc.edu/~bates/ISwR.zip
+
+> Those are really nice.
+
+Thanks.  I'll get the set for the Cohen and Cohen book up after I
+clear off some disk space.
+
+> I see you still teach t-tests and the Wilcoxon signed-rank test - is
+> this just an artefact of following Dalgaard, or do you have a
+> preference for them over the (computational expensive but conceptually
+> simpler) permutation tests?
+
+The nonparametric tests are there because they are described in
+Peter's text.  I skip them in my classes.
+
+I tend to use t-tests after examining normal probability plots and,
+possibly, considering transformation.  I believe they would be more
+powerful than permutation tests but that may be incorrect.  Can you
+describe situations in which you would prefer permutation tests to
+t-tests?
+
+>> (I'm sorry, Hadley, but I use lattice throughout. ?I haven't taken the
+>> time to learn ggplot2.)
+
+> No problems. ?I don't think there's much difference in capabilities at
+> this level.
+
+
+
+From h.wickham at gmail.com  Tue Mar 31 16:24:57 2009
+From: h.wickham at gmail.com (hadley wickham)
+Date: Tue, 31 Mar 2009 09:24:57 -0500
+Subject: [R-sig-teaching] I need your thoughts on teaching with R
+In-Reply-To: <40e66e0b0903310641x7a1b29afo2cd31825191641b2@mail.gmail.com>
+References: <49B15D49.8030107@umn.edu>
+	<20090309210908.GG14522@laplace.reed.edu>
+	<D86C9EFF6AA3734193923FFA1EE4308B07D7DC65@nc-mail2.northland.edu>
+	<40e66e0b0903301412i275524d1g4df1e9925f2b3915@mail.gmail.com>
+	<f8e6ff050903301529u20c2e480n4bce9d83c429a1ab@mail.gmail.com>
+	<40e66e0b0903301602h7268dd02y82e1e7c454e9170b@mail.gmail.com>
+	<f8e6ff050903301754x34fa26earb7fd9f5d2506add7@mail.gmail.com>
+	<40e66e0b0903310641x7a1b29afo2cd31825191641b2@mail.gmail.com>
+Message-ID: <f8e6ff050903310724j623763bdt3e3d9933e1954d42@mail.gmail.com>
+
+>> I see you still teach t-tests and the Wilcoxon signed-rank test - is
+>> this just an artefact of following Dalgaard, or do you have a
+>> preference for them over the (computational expensive but conceptually
+>> simpler) permutation tests?
+>
+> The nonparametric tests are there because they are described in
+> Peter's text. ?I skip them in my classes.
+>
+> I tend to use t-tests after examining normal probability plots and,
+> possibly, considering transformation. ?I believe they would be more
+> powerful than permutation tests but that may be incorrect. ?Can you
+> describe situations in which you would prefer permutation tests to
+> t-tests?
+
+The basic argument I'm most familiar with is presented in:
+http://repositories.cdlib.org/uclastat/cts/tise/vol1/iss1/art1/
+
+"My thesis is that both the content and the structure of our
+introductory curriculum are shaped by old history. What we teach was
+developed a little at a time, for reasons that had a lot to do with
+the need to use available theory to handle problems that were
+essentially computational. Almost one hundred years after Student
+published his 1908 paper on the t- test, we are still using 19th
+century analytical methods to solve what is essentially a technical
+problem ? computing a p-value or a 95% margin of error.
+Intellectually, we are asking our students to do the equivalent of
+working with one of those old 30-pound Burroughs electric calculators
+with the rows of little wheels that clicked and spun as they churned
+out sums of squares."
+
+
+Hadley
+
+
+-- 
+http://had.co.nz/
+
+
+
+From larget at stat.wisc.edu  Tue Mar 31 20:11:10 2009
+From: larget at stat.wisc.edu (Bret Larget)
+Date: Tue, 31 Mar 2009 13:11:10 -0500 (CDT)
+Subject: [R-sig-teaching] I need your thoughts on teaching with R
+Message-ID: <Pine.LNX.4.64.0903311303400.25499@cytosine.stat.wisc.edu>
+
+
+> I tend to use t-tests after examining normal probability plots and,
+> possibly, considering transformation.  I believe they would be more
+> powerful than permutation tests but that may be incorrect.  Can you
+> describe situations in which you would prefer permutation tests to
+> t-tests?
+
+Here is the reason I prefer permutation tests, besides the conceptual 
+simplicity.  T-tests are based on a normal sampling model, and my 
+perception is that very few data sets to which people apply t-tests 
+actually arise from random samples.  Here I mean specifically that the 
+person gathering data used a genuine random sampling method to select 
+observations from a population. Survey samples would be an exception.  I 
+think it is far more frequently the case that a study takes whatever 
+units/subjects are at hand and separates these into groups either through 
+random assignment or based on some categorical variable.  The permutation 
+test directly answers the question about how a measured difference between 
+group averages may have been different than if the groups had been formed 
+in a different way.  Then, instead of making the objectional argument that 
+"we will treat the data as if it were a representative sample from the 
+population of interest", and then using a t-test justified by a false 
+random sampling argument and making inferences to some larger population, 
+I find it much more justifiable to model the randomness that was truly 
+part of the data gathering (random assignment).  Any inference to other 
+populations is then justified on the basis of background information (the 
+groups I am interested in are similar to the groups in the study, so maybe 
+the results there apply here too) and not by random sampling.  It is 
+important to describe how the units/subjects were selected and let the 
+reader determine how applicable the results are to other populations.
+
+When data is not collected by a random sample, the t-test can still be 
+justified either as an approximation to the permutation test (but, as Doug 
+would say, why approximate when you can use the computer to do the real thing) 
+or if a normal model for the data is ASSUMED and not concluded in reference to 
+the central limit theorem and random sampling that did not occur.
+
+I would be very interested if readers of this message can send me specific 
+reference to the use of a t-test with real data in an introductory text 
+book for which the individual objects were genuinely sampled at random 
+from populations.
+
+-Bret
+
+
+

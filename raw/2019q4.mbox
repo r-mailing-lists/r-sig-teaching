@@ -1,0 +1,1747 @@
+From cdde@j@rd|n@ @end|ng |rom gm@||@com  Tue Dec  3 14:53:09 2019
+From: cdde@j@rd|n@ @end|ng |rom gm@||@com (Christopher David Desjardins)
+Date: Tue, 3 Dec 2019 08:53:09 -0500
+Subject: [R-sig-teaching] Using R in an introductory stats course for
+ non-stat/math majors using Lock5 text
+Message-ID: <CALrjt78FgpdVLwztp_zAVH+F_LbXftR4M+rr=OtyumMbvP=v6g@mail.gmail.com>
+
+Hi,
+
+I teach an introductory statistics course for non-stat/math majors that are
+primarily coming from the social sciences or business. I am using the Lock
+textbook, http://www.lock5stat.com/, and their software StatKey,
+http://www.lock5stat.com/StatKey/. I really like the way that StatKey does
+randomization tests and bootstrapping, however, I don't like that it's not
+possible to perform theory-based tests on their website (e.g., if I wanted
+my students to perform an independent samples t-test not by hand or run a
+simple linear regression).
+
+Ideally what I was hoping for was to use R in my introductory classes but
+to have some way to make it less intimidating. I want my students to be
+able to run descriptives and create basic graphics (including dot plots),
+randomization tests, bootstrapping, and run t-tests, chi-square, ANOVA, and
+regression.
+
+I tried using RStudio, but it is still overkill for what I want my students
+to be able to do. They don't need an IDE. Randall Pruim has kindly made a
+PDF for using R with Lock5, but that is too much for what I want my
+students need. Programming isn't a principal outcome of my course.
+
+I have looked in JASP and jamovi as well, but they don't fit my needs.
+
+The closest thing I have found to what I'm looking for is Rcmdr, but it
+freezes on my Mac periodically regardless of if I use it from the Terminal,
+the R GUI, or RStudio. Has anyone else encountered that issue? Rcmdr is
+great because it's GUI driven but also pastes the R code, which is nice for
+the more advanced students in the class.
+
+What I am wondering is.
+
+1. Is anyone using R with Lock5 and how do you use R to do it?
+2. Does anyone know of a Shiny app that does what StatKey does AND includes
+some options for descriptives and inference similar to Rcmdr? I am
+basically looking for a Shiny StatCrunch.
+
+I have thought about creating a Shiny app to do all of this, but if someone
+already has a wonderful solution, I don't want to reinvent the wheel. I
+created something very, very basic[1] for my students just to explore the
+Lock5 data and I just might need to expand on it to get what I want.
+
+Thanks for reading my long winded email,
+Chris
+
+[1]: https://cddesja.shinyapps.io/lock5explorer/
+
+	[[alternative HTML version deleted]]
+
+
+From m@p|no|@10 @end|ng |rom gm@||@com  Tue Dec  3 15:25:58 2019
+From: m@p|no|@10 @end|ng |rom gm@||@com (=?UTF-8?Q?Manuel_Sp=C3=ADnola?=)
+Date: Tue, 3 Dec 2019 08:25:58 -0600
+Subject: [R-sig-teaching] Using R in an introductory stats course for
+ non-stat/math majors using Lock5 text
+In-Reply-To: <CALrjt78FgpdVLwztp_zAVH+F_LbXftR4M+rr=OtyumMbvP=v6g@mail.gmail.com>
+References: <CALrjt78FgpdVLwztp_zAVH+F_LbXftR4M+rr=OtyumMbvP=v6g@mail.gmail.com>
+Message-ID: <CABkCotQGi0jtKE3Jp7LAhZhkH-QrSnDqkijsGXW-C91n0KD6QQ@mail.gmail.com>
+
+Dear Chris,
+
+How about Radiant?
+
+Manuel
+
+El mar., 3 dic. 2019 a las 7:53, Christopher David Desjardins (<
+cddesjardins at gmail.com>) escribi?:
+
+> Hi,
+>
+> I teach an introductory statistics course for non-stat/math majors that are
+> primarily coming from the social sciences or business. I am using the Lock
+> textbook, http://www.lock5stat.com/, and their software StatKey,
+> http://www.lock5stat.com/StatKey/. I really like the way that StatKey does
+> randomization tests and bootstrapping, however, I don't like that it's not
+> possible to perform theory-based tests on their website (e.g., if I wanted
+> my students to perform an independent samples t-test not by hand or run a
+> simple linear regression).
+>
+> Ideally what I was hoping for was to use R in my introductory classes but
+> to have some way to make it less intimidating. I want my students to be
+> able to run descriptives and create basic graphics (including dot plots),
+> randomization tests, bootstrapping, and run t-tests, chi-square, ANOVA, and
+> regression.
+>
+> I tried using RStudio, but it is still overkill for what I want my students
+> to be able to do. They don't need an IDE. Randall Pruim has kindly made a
+> PDF for using R with Lock5, but that is too much for what I want my
+> students need. Programming isn't a principal outcome of my course.
+>
+> I have looked in JASP and jamovi as well, but they don't fit my needs.
+>
+> The closest thing I have found to what I'm looking for is Rcmdr, but it
+> freezes on my Mac periodically regardless of if I use it from the Terminal,
+> the R GUI, or RStudio. Has anyone else encountered that issue? Rcmdr is
+> great because it's GUI driven but also pastes the R code, which is nice for
+> the more advanced students in the class.
+>
+> What I am wondering is.
+>
+> 1. Is anyone using R with Lock5 and how do you use R to do it?
+> 2. Does anyone know of a Shiny app that does what StatKey does AND includes
+> some options for descriptives and inference similar to Rcmdr? I am
+> basically looking for a Shiny StatCrunch.
+>
+> I have thought about creating a Shiny app to do all of this, but if someone
+> already has a wonderful solution, I don't want to reinvent the wheel. I
+> created something very, very basic[1] for my students just to explore the
+> Lock5 data and I just might need to expand on it to get what I want.
+>
+> Thanks for reading my long winded email,
+> Chris
+>
+> [1]: https://cddesja.shinyapps.io/lock5explorer/
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+-- 
+*Manuel Sp?nola, Ph.D.*
+Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre
+Universidad Nacional
+Apartado 1350-3000
+Heredia
+COSTA RICA
+mspinola at una.cr <mspinola at una.ac.cr>
+mspinola10 at gmail.com
+Tel?fono: (506) 8706 - 4662
+Personal website: Lobito de r?o <https://sites.google.com/site/lobitoderio/>
+Institutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>
+
+	[[alternative HTML version deleted]]
+
+
+From cdde@j@rd|n@ @end|ng |rom gm@||@com  Tue Dec  3 15:44:13 2019
+From: cdde@j@rd|n@ @end|ng |rom gm@||@com (Christopher David Desjardins)
+Date: Tue, 3 Dec 2019 09:44:13 -0500
+Subject: [R-sig-teaching] Using R in an introductory stats course for
+ non-stat/math majors using Lock5 text
+In-Reply-To: <CABkCotQGi0jtKE3Jp7LAhZhkH-QrSnDqkijsGXW-C91n0KD6QQ@mail.gmail.com>
+References: <CALrjt78FgpdVLwztp_zAVH+F_LbXftR4M+rr=OtyumMbvP=v6g@mail.gmail.com>
+ <CABkCotQGi0jtKE3Jp7LAhZhkH-QrSnDqkijsGXW-C91n0KD6QQ@mail.gmail.com>
+Message-ID: <CALrjt78cFnbf=uZtbCCO4DsDeN3DmNT5xFtLOmMYChMQq_cZAQ@mail.gmail.com>
+
+Dear Manuel,
+Thanks for the reply. Radiant looks quite interesting, but is a bit too
+complex for what I'm looking for. I fear my students would get lost in the
+interface. Additionally, as far as I can tell, it doesn't do bootstrapping
+or randomization tests.
+Best,
+Chris
+
+On Tue, Dec 3, 2019 at 9:26 AM Manuel Sp?nola <mspinola10 at gmail.com> wrote:
+
+> Dear Chris,
+>
+> How about Radiant?
+>
+> Manuel
+>
+> El mar., 3 dic. 2019 a las 7:53, Christopher David Desjardins (<
+> cddesjardins at gmail.com>) escribi?:
+>
+>> Hi,
+>>
+>> I teach an introductory statistics course for non-stat/math majors that
+>> are
+>> primarily coming from the social sciences or business. I am using the Lock
+>> textbook, http://www.lock5stat.com/, and their software StatKey,
+>> http://www.lock5stat.com/StatKey/. I really like the way that StatKey
+>> does
+>> randomization tests and bootstrapping, however, I don't like that it's not
+>> possible to perform theory-based tests on their website (e.g., if I wanted
+>> my students to perform an independent samples t-test not by hand or run a
+>> simple linear regression).
+>>
+>> Ideally what I was hoping for was to use R in my introductory classes but
+>> to have some way to make it less intimidating. I want my students to be
+>> able to run descriptives and create basic graphics (including dot plots),
+>> randomization tests, bootstrapping, and run t-tests, chi-square, ANOVA,
+>> and
+>> regression.
+>>
+>> I tried using RStudio, but it is still overkill for what I want my
+>> students
+>> to be able to do. They don't need an IDE. Randall Pruim has kindly made a
+>> PDF for using R with Lock5, but that is too much for what I want my
+>> students need. Programming isn't a principal outcome of my course.
+>>
+>> I have looked in JASP and jamovi as well, but they don't fit my needs.
+>>
+>> The closest thing I have found to what I'm looking for is Rcmdr, but it
+>> freezes on my Mac periodically regardless of if I use it from the
+>> Terminal,
+>> the R GUI, or RStudio. Has anyone else encountered that issue? Rcmdr is
+>> great because it's GUI driven but also pastes the R code, which is nice
+>> for
+>> the more advanced students in the class.
+>>
+>> What I am wondering is.
+>>
+>> 1. Is anyone using R with Lock5 and how do you use R to do it?
+>> 2. Does anyone know of a Shiny app that does what StatKey does AND
+>> includes
+>> some options for descriptives and inference similar to Rcmdr? I am
+>> basically looking for a Shiny StatCrunch.
+>>
+>> I have thought about creating a Shiny app to do all of this, but if
+>> someone
+>> already has a wonderful solution, I don't want to reinvent the wheel. I
+>> created something very, very basic[1] for my students just to explore the
+>> Lock5 data and I just might need to expand on it to get what I want.
+>>
+>> Thanks for reading my long winded email,
+>> Chris
+>>
+>> [1]: https://cddesja.shinyapps.io/lock5explorer/
+>>
+>>         [[alternative HTML version deleted]]
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>
+>
+> --
+> *Manuel Sp?nola, Ph.D.*
+> Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre
+> Universidad Nacional
+> Apartado 1350-3000
+> Heredia
+> COSTA RICA
+> mspinola at una.cr <mspinola at una.ac.cr>
+> mspinola10 at gmail.com
+> Tel?fono: (506) 8706 - 4662
+> Personal website: Lobito de r?o
+> <https://sites.google.com/site/lobitoderio/>
+> Institutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>
+>
+
+	[[alternative HTML version deleted]]
+
+
+From rpru|m @end|ng |rom c@|v|n@edu  Tue Dec  3 15:53:13 2019
+From: rpru|m @end|ng |rom c@|v|n@edu (Randall Pruim)
+Date: Tue, 3 Dec 2019 14:53:13 +0000
+Subject: [R-sig-teaching] Using R in an introductory stats course for
+ non-stat/math majors using Lock5 text
+In-Reply-To: <CABkCotQGi0jtKE3Jp7LAhZhkH-QrSnDqkijsGXW-C91n0KD6QQ@mail.gmail.com>
+References: <CALrjt78FgpdVLwztp_zAVH+F_LbXftR4M+rr=OtyumMbvP=v6g@mail.gmail.com>
+ <CABkCotQGi0jtKE3Jp7LAhZhkH-QrSnDqkijsGXW-C91n0KD6QQ@mail.gmail.com>
+Message-ID: <2BB29EA1-9EFB-4E46-AE7F-8637F2AB0BE1@calvin.edu>
+
+Chris,
+
+The Lock5withR package includes all the data sets (first edition at this point) with more traditional R encoding than the package provided by the authors.
+
+Soon (I hope ? it?s just pending a final review and polish), there will also be a companion volume as a bookdown document using R, mosaic, and ggformula to recreate all the examples.  An older version is available as a PDF here:
+
+http://www.lock5stat.com/other/Lock5withR.pdf
+
+
+For "StatCrunch in shiny", perhaps you can say a bit more about what you are looking for and how jamovi and JASP fall short.
+
+I hope you find a solutions that works well for you.
+
+?rjp
+
+
+
+
+On Dec 3, 2019, at 9:25 AM, Manuel Sp?nola <mspinola10 at gmail.com<mailto:mspinola10 at gmail.com>> wrote:
+
+Dear Chris,
+
+How about Radiant?
+
+Manuel
+
+El mar., 3 dic. 2019 a las 7:53, Christopher David Desjardins (<
+cddesjardins at gmail.com<mailto:cddesjardins at gmail.com>>) escribi?:
+
+Hi,
+
+I teach an introductory statistics course for non-stat/math majors that are
+primarily coming from the social sciences or business. I am using the Lock
+textbook, https://urldefense.proofpoint.com/v2/url?u=http-3A__www.lock5stat.com_&d=DwIFaQ&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=rvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec&s=qnNW5anVawrMQVNo45I1_4M8Tw3ljsmBYw4qusBVUxs&e= , and their software StatKey,
+https://urldefense.proofpoint.com/v2/url?u=http-3A__www.lock5stat.com_StatKey_&d=DwIFaQ&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=rvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec&s=N3nV9BtqXRK3zJlRPrEQoqs1wssIPU_MFhAB46Kgf8E&e= . I really like the way that StatKey does
+randomization tests and bootstrapping, however, I don't like that it's not
+possible to perform theory-based tests on their website (e.g., if I wanted
+my students to perform an independent samples t-test not by hand or run a
+simple linear regression).
+
+Ideally what I was hoping for was to use R in my introductory classes but
+to have some way to make it less intimidating. I want my students to be
+able to run descriptives and create basic graphics (including dot plots),
+randomization tests, bootstrapping, and run t-tests, chi-square, ANOVA, and
+regression.
+
+I tried using RStudio, but it is still overkill for what I want my students
+to be able to do. They don't need an IDE. Randall Pruim has kindly made a
+PDF for using R with Lock5, but that is too much for what I want my
+students need. Programming isn't a principal outcome of my course.
+
+I have looked in JASP and jamovi as well, but they don't fit my needs.
+
+The closest thing I have found to what I'm looking for is Rcmdr, but it
+freezes on my Mac periodically regardless of if I use it from the Terminal,
+the R GUI, or RStudio. Has anyone else encountered that issue? Rcmdr is
+great because it's GUI driven but also pastes the R code, which is nice for
+the more advanced students in the class.
+
+What I am wondering is.
+
+1. Is anyone using R with Lock5 and how do you use R to do it?
+2. Does anyone know of a Shiny app that does what StatKey does AND includes
+some options for descriptives and inference similar to Rcmdr? I am
+basically looking for a Shiny StatCrunch.
+
+I have thought about creating a Shiny app to do all of this, but if someone
+already has a wonderful solution, I don't want to reinvent the wheel. I
+created something very, very basic[1] for my students just to explore the
+Lock5 data and I just might need to expand on it to get what I want.
+
+Thanks for reading my long winded email,
+Chris
+
+[1]: https://urldefense.proofpoint.com/v2/url?u=https-3A__cddesja.shinyapps.io_lock5explorer_&d=DwIFaQ&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=rvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec&s=ngdgop1Zp6IG6qxQPENeSz7lk7jGaKc413s_nBuJ7C4&e=
+
+       [[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org<mailto:R-sig-teaching at r-project.org> mailing list
+https://urldefense.proofpoint.com/v2/url?u=https-3A__stat.ethz.ch_mailman_listinfo_r-2Dsig-2Dteaching&d=DwIFaQ&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=rvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec&s=FBH1JXCQ8weBt8iLEG2ak-fyZrbrbhQIUcUNrVdVYP8&e=
+
+
+
+--
+*Manuel Sp?nola, Ph.D.*
+Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre
+Universidad Nacional
+Apartado 1350-3000
+Heredia
+COSTA RICA
+mspinola at una.cr<mailto:mspinola at una.cr> <mspinola at una.ac.cr<mailto:mspinola at una.ac.cr>>
+mspinola10 at gmail.com<mailto:mspinola10 at gmail.com>
+Tel?fono: (506) 8706 - 4662
+Personal website: Lobito de r?o <https://urldefense.proofpoint.com/v2/url?u=https-3A__sites.google.com_site_lobitoderio_&d=DwIFaQ&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=rvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec&s=VkPHGc5PzRnq4g6kLOx9L_P-9OFvx_cw-CY3jWCceuM&e= >
+Institutional website: ICOMVIS <https://urldefense.proofpoint.com/v2/url?u=http-3A__www.icomvis.una.ac.cr_&d=DwIFaQ&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=rvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec&s=pc08BWmjY5nHD_C3vT6RKjEKnpX5-BOMoK22JYTX9AA&e= >
+
+[[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://urldefense.proofpoint.com/v2/url?u=https-3A__stat.ethz.ch_mailman_listinfo_r-2Dsig-2Dteaching&d=DwIFaQ&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=rvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec&s=FBH1JXCQ8weBt8iLEG2ak-fyZrbrbhQIUcUNrVdVYP8&e=
+
+
+	[[alternative HTML version deleted]]
+
+
+From cdde@j@rd|n@ @end|ng |rom gm@||@com  Tue Dec  3 18:07:11 2019
+From: cdde@j@rd|n@ @end|ng |rom gm@||@com (Christopher David Desjardins)
+Date: Tue, 3 Dec 2019 12:07:11 -0500
+Subject: [R-sig-teaching] Using R in an introductory stats course for
+ non-stat/math majors using Lock5 text
+In-Reply-To: <2BB29EA1-9EFB-4E46-AE7F-8637F2AB0BE1@calvin.edu>
+References: <CALrjt78FgpdVLwztp_zAVH+F_LbXftR4M+rr=OtyumMbvP=v6g@mail.gmail.com>
+ <CABkCotQGi0jtKE3Jp7LAhZhkH-QrSnDqkijsGXW-C91n0KD6QQ@mail.gmail.com>
+ <2BB29EA1-9EFB-4E46-AE7F-8637F2AB0BE1@calvin.edu>
+Message-ID: <CALrjt79roOvw1WKbPAWaWEm4t7+5J-aOaq0CH5XTMP+rd=gPCA@mail.gmail.com>
+
+Hi Randall,
+
+Thanks for the email.
+
+I was indeed quite happy to see your PDF on the Lock website when I began
+teaching the course. The last time I looked at your PDF, it it looked like
+it was mostly code to do replicate their examples in R, which while
+helpful, isn't quite what I'm looking for. I'd love for them to learn R in
+that manner, but I think it's slightly beyond their skill set.
+
+Ideally here's what I'd like.
+
+I would have the StatKey interface for bootstrapping and randomization
+tests written in Shiny (or a similar toolkit with R as the backend) such
+that there is a main plot that shows the bootstrap or randomization
+distributions (with an option to set the seed) and two side plots to show
+the original sample and the current bootstrap/randomization sample. If
+possible, I'd like the "current" sample plot to be updated based on the
+statistic that is hovered over in the main plot (probably this could be
+done with ggplot2 and an additional package or d3.js). As far as I can tell
+nothing like this exists for R or Shiny (I'd love to be wrong, though). So,
+basically a one-to-one port of StatKey to R.
+
+It would be great to see this functionality packaged in a Shiny app under a
+tab called "Inference via Simulation". Another tab might be called
+"Theory-based Inference" (or some better name), that provided a drop down
+menu to select a test (binomial, t-test, regression, ANOVA, chi-square), an
+option to calculate an arbitrary CI, a plot of the data for assumption
+checking, model output printed, and a plot showing the p-value all within
+that tab. This could be broken up to make it a little less busy. Finally
+there might be another tab for just "Exploring the Data" both numerically
+or graphically (essentially a tab for EDA). Additionally, there might be
+the option to show/hide the R code. I would like students to be able to
+upload the data as a CSV to the app.
+
+I've got quite a bit of experience making Shiny apps, but don't want to
+create one if someone has already made something similar to this that I
+could either fork or just use.
+
+Regarding JASP and jamovi, I found their language to be weird and creating
+confidence intervals cumbersome. E.g., creating a confidence interval for a
+mean, as far as I could tell, requires running a one sample t-test, making
+sure H_0 the Test Value(?) is set to 0 otherwise the CI won't make sense,
+clicking location parameter, and then setting the confidence interval and
+hoping the students don't select effect size instead, which they do. In
+JASP, you can't edit data directly but must edit it in Excel. and you can
+edit directly in Rcmdr. JASP's focus on Bayesian is also confusing for my
+non-Bayesian course as students select the wrong tests very easily. I do
+love that they have the ability to export to LaTeX tables by default, very
+nice. Also, in JASP you can't get dot plots, which I think are very helpful
+for teaching. Neither software is capable of bootstrapping and
+randomization tests as far as I know.
+
+Chris
+
+
+
+
+
+
+On Tue, Dec 3, 2019 at 9:53 AM Randall Pruim <rpruim at calvin.edu> wrote:
+
+> Chris,
+>
+> The Lock5withR package includes all the data sets (first edition at this
+> point) with more traditional R encoding than the package provided by the
+> authors.
+>
+> Soon (I hope ? it?s just pending a final review and polish), there will
+> also be a companion volume as a bookdown document using R, mosaic, and
+> ggformula to recreate all the examples.  An older version is available as a
+> PDF here:
+>
+> http://www.lock5stat.com/other/Lock5withR.pdf
+>
+>
+> For "StatCrunch in shiny", perhaps you can say a bit more about what you
+> are looking for and how jamovi and JASP fall short.
+>
+> I hope you find a solutions that works well for you.
+>
+> ?rjp
+>
+>
+>
+>
+> On Dec 3, 2019, at 9:25 AM, Manuel Sp?nola <mspinola10 at gmail.com> wrote:
+>
+> Dear Chris,
+>
+> How about Radiant?
+>
+> Manuel
+>
+> El mar., 3 dic. 2019 a las 7:53, Christopher David Desjardins (<
+> cddesjardins at gmail.com>) escribi?:
+>
+> Hi,
+>
+> I teach an introductory statistics course for non-stat/math majors that are
+> primarily coming from the social sciences or business. I am using the Lock
+> textbook,
+> https://urldefense.proofpoint.com/v2/url?u=http-3A__www.lock5stat.com_&d=DwIFaQ&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=rvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec&s=qnNW5anVawrMQVNo45I1_4M8Tw3ljsmBYw4qusBVUxs&e=
+> , and their software StatKey,
+>
+> https://urldefense.proofpoint.com/v2/url?u=http-3A__www.lock5stat.com_StatKey_&d=DwIFaQ&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=rvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec&s=N3nV9BtqXRK3zJlRPrEQoqs1wssIPU_MFhAB46Kgf8E&e=
+> . I really like the way that StatKey does
+> randomization tests and bootstrapping, however, I don't like that it's not
+> possible to perform theory-based tests on their website (e.g., if I wanted
+> my students to perform an independent samples t-test not by hand or run a
+> simple linear regression).
+>
+> Ideally what I was hoping for was to use R in my introductory classes but
+> to have some way to make it less intimidating. I want my students to be
+> able to run descriptives and create basic graphics (including dot plots),
+> randomization tests, bootstrapping, and run t-tests, chi-square, ANOVA, and
+> regression.
+>
+> I tried using RStudio, but it is still overkill for what I want my students
+> to be able to do. They don't need an IDE. Randall Pruim has kindly made a
+> PDF for using R with Lock5, but that is too much for what I want my
+> students need. Programming isn't a principal outcome of my course.
+>
+> I have looked in JASP and jamovi as well, but they don't fit my needs.
+>
+> The closest thing I have found to what I'm looking for is Rcmdr, but it
+> freezes on my Mac periodically regardless of if I use it from the Terminal,
+> the R GUI, or RStudio. Has anyone else encountered that issue? Rcmdr is
+> great because it's GUI driven but also pastes the R code, which is nice for
+> the more advanced students in the class.
+>
+> What I am wondering is.
+>
+> 1. Is anyone using R with Lock5 and how do you use R to do it?
+> 2. Does anyone know of a Shiny app that does what StatKey does AND includes
+> some options for descriptives and inference similar to Rcmdr? I am
+> basically looking for a Shiny StatCrunch.
+>
+> I have thought about creating a Shiny app to do all of this, but if someone
+> already has a wonderful solution, I don't want to reinvent the wheel. I
+> created something very, very basic[1] for my students just to explore the
+> Lock5 data and I just might need to expand on it to get what I want.
+>
+> Thanks for reading my long winded email,
+> Chris
+>
+> [1]:
+> https://urldefense.proofpoint.com/v2/url?u=https-3A__cddesja.shinyapps.io_lock5explorer_&d=DwIFaQ&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=rvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec&s=ngdgop1Zp6IG6qxQPENeSz7lk7jGaKc413s_nBuJ7C4&e=
+>
+>        [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+>
+> https://urldefense.proofpoint.com/v2/url?u=https-3A__stat.ethz.ch_mailman_listinfo_r-2Dsig-2Dteaching&d=DwIFaQ&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=rvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec&s=FBH1JXCQ8weBt8iLEG2ak-fyZrbrbhQIUcUNrVdVYP8&e=
+>
+>
+>
+> --
+> *Manuel Sp?nola, Ph.D.*
+> Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre
+> Universidad Nacional
+> Apartado 1350-3000
+> Heredia
+> COSTA RICA
+> mspinola at una.cr <mspinola at una.ac.cr>
+> mspinola10 at gmail.com
+> Tel?fono: (506) 8706 - 4662
+> Personal website: Lobito de r?o <
+> https://urldefense.proofpoint.com/v2/url?u=https-3A__sites.google.com_site_lobitoderio_&d=DwIFaQ&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=rvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec&s=VkPHGc5PzRnq4g6kLOx9L_P-9OFvx_cw-CY3jWCceuM&e=
+> >
+> Institutional website: ICOMVIS <
+> https://urldefense.proofpoint.com/v2/url?u=http-3A__www.icomvis.una.ac.cr_&d=DwIFaQ&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=rvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec&s=pc08BWmjY5nHD_C3vT6RKjEKnpX5-BOMoK22JYTX9AA&e=
+> >
+>
+> [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+>
+> https://urldefense.proofpoint.com/v2/url?u=https-3A__stat.ethz.ch_mailman_listinfo_r-2Dsig-2Dteaching&d=DwIFaQ&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=rvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec&s=FBH1JXCQ8weBt8iLEG2ak-fyZrbrbhQIUcUNrVdVYP8&e=
+>
+>
+>
+
+	[[alternative HTML version deleted]]
+
+
+From cdde@j@rd|n@ @end|ng |rom gm@||@com  Tue Dec  3 18:10:31 2019
+From: cdde@j@rd|n@ @end|ng |rom gm@||@com (Christopher David Desjardins)
+Date: Tue, 3 Dec 2019 12:10:31 -0500
+Subject: [R-sig-teaching] Using R in an introductory stats course for
+ non-stat/math majors using Lock5 text
+In-Reply-To: <CALrjt79roOvw1WKbPAWaWEm4t7+5J-aOaq0CH5XTMP+rd=gPCA@mail.gmail.com>
+References: <CALrjt78FgpdVLwztp_zAVH+F_LbXftR4M+rr=OtyumMbvP=v6g@mail.gmail.com>
+ <CABkCotQGi0jtKE3Jp7LAhZhkH-QrSnDqkijsGXW-C91n0KD6QQ@mail.gmail.com>
+ <2BB29EA1-9EFB-4E46-AE7F-8637F2AB0BE1@calvin.edu>
+ <CALrjt79roOvw1WKbPAWaWEm4t7+5J-aOaq0CH5XTMP+rd=gPCA@mail.gmail.com>
+Message-ID: <CALrjt7_NcN-oy_uWF3nOWQjRZ-UoD=mDq3ZyPV9tAWcwP4TxXQ@mail.gmail.com>
+
+Also, I am not wedded to a GUI, I'd be happy to just use R but I want to
+make sure the code doesn't get interfere with learning the methods and
+concepts, which I think at their level is more important.
+
+Chris
+
+On Tue, Dec 3, 2019 at 12:07 PM Christopher David Desjardins <
+cddesjardins at gmail.com> wrote:
+
+> Hi Randall,
+>
+> Thanks for the email.
+>
+> I was indeed quite happy to see your PDF on the Lock website when I began
+> teaching the course. The last time I looked at your PDF, it it looked like
+> it was mostly code to do replicate their examples in R, which while
+> helpful, isn't quite what I'm looking for. I'd love for them to learn R in
+> that manner, but I think it's slightly beyond their skill set.
+>
+> Ideally here's what I'd like.
+>
+> I would have the StatKey interface for bootstrapping and randomization
+> tests written in Shiny (or a similar toolkit with R as the backend) such
+> that there is a main plot that shows the bootstrap or randomization
+> distributions (with an option to set the seed) and two side plots to show
+> the original sample and the current bootstrap/randomization sample. If
+> possible, I'd like the "current" sample plot to be updated based on the
+> statistic that is hovered over in the main plot (probably this could be
+> done with ggplot2 and an additional package or d3.js). As far as I can tell
+> nothing like this exists for R or Shiny (I'd love to be wrong, though). So,
+> basically a one-to-one port of StatKey to R.
+>
+> It would be great to see this functionality packaged in a Shiny app under
+> a tab called "Inference via Simulation". Another tab might be called
+> "Theory-based Inference" (or some better name), that provided a drop down
+> menu to select a test (binomial, t-test, regression, ANOVA, chi-square), an
+> option to calculate an arbitrary CI, a plot of the data for assumption
+> checking, model output printed, and a plot showing the p-value all within
+> that tab. This could be broken up to make it a little less busy. Finally
+> there might be another tab for just "Exploring the Data" both numerically
+> or graphically (essentially a tab for EDA). Additionally, there might be
+> the option to show/hide the R code. I would like students to be able to
+> upload the data as a CSV to the app.
+>
+> I've got quite a bit of experience making Shiny apps, but don't want to
+> create one if someone has already made something similar to this that I
+> could either fork or just use.
+>
+> Regarding JASP and jamovi, I found their language to be weird and creating
+> confidence intervals cumbersome. E.g., creating a confidence interval for a
+> mean, as far as I could tell, requires running a one sample t-test, making
+> sure H_0 the Test Value(?) is set to 0 otherwise the CI won't make sense,
+> clicking location parameter, and then setting the confidence interval and
+> hoping the students don't select effect size instead, which they do. In
+> JASP, you can't edit data directly but must edit it in Excel. and you can
+> edit directly in Rcmdr. JASP's focus on Bayesian is also confusing for my
+> non-Bayesian course as students select the wrong tests very easily. I do
+> love that they have the ability to export to LaTeX tables by default, very
+> nice. Also, in JASP you can't get dot plots, which I think are very helpful
+> for teaching. Neither software is capable of bootstrapping and
+> randomization tests as far as I know.
+>
+> Chris
+>
+>
+>
+>
+>
+>
+> On Tue, Dec 3, 2019 at 9:53 AM Randall Pruim <rpruim at calvin.edu> wrote:
+>
+>> Chris,
+>>
+>> The Lock5withR package includes all the data sets (first edition at this
+>> point) with more traditional R encoding than the package provided by the
+>> authors.
+>>
+>> Soon (I hope ? it?s just pending a final review and polish), there will
+>> also be a companion volume as a bookdown document using R, mosaic, and
+>> ggformula to recreate all the examples.  An older version is available as a
+>> PDF here:
+>>
+>> http://www.lock5stat.com/other/Lock5withR.pdf
+>>
+>>
+>> For "StatCrunch in shiny", perhaps you can say a bit more about what you
+>> are looking for and how jamovi and JASP fall short.
+>>
+>> I hope you find a solutions that works well for you.
+>>
+>> ?rjp
+>>
+>>
+>>
+>>
+>> On Dec 3, 2019, at 9:25 AM, Manuel Sp?nola <mspinola10 at gmail.com> wrote:
+>>
+>> Dear Chris,
+>>
+>> How about Radiant?
+>>
+>> Manuel
+>>
+>> El mar., 3 dic. 2019 a las 7:53, Christopher David Desjardins (<
+>> cddesjardins at gmail.com>) escribi?:
+>>
+>> Hi,
+>>
+>> I teach an introductory statistics course for non-stat/math majors that
+>> are
+>> primarily coming from the social sciences or business. I am using the Lock
+>> textbook,
+>> https://urldefense.proofpoint.com/v2/url?u=http-3A__www.lock5stat.com_&d=DwIFaQ&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=rvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec&s=qnNW5anVawrMQVNo45I1_4M8Tw3ljsmBYw4qusBVUxs&e=
+>> , and their software StatKey,
+>>
+>> https://urldefense.proofpoint.com/v2/url?u=http-3A__www.lock5stat.com_StatKey_&d=DwIFaQ&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=rvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec&s=N3nV9BtqXRK3zJlRPrEQoqs1wssIPU_MFhAB46Kgf8E&e=
+>> . I really like the way that StatKey does
+>> randomization tests and bootstrapping, however, I don't like that it's not
+>> possible to perform theory-based tests on their website (e.g., if I wanted
+>> my students to perform an independent samples t-test not by hand or run a
+>> simple linear regression).
+>>
+>> Ideally what I was hoping for was to use R in my introductory classes but
+>> to have some way to make it less intimidating. I want my students to be
+>> able to run descriptives and create basic graphics (including dot plots),
+>> randomization tests, bootstrapping, and run t-tests, chi-square, ANOVA,
+>> and
+>> regression.
+>>
+>> I tried using RStudio, but it is still overkill for what I want my
+>> students
+>> to be able to do. They don't need an IDE. Randall Pruim has kindly made a
+>> PDF for using R with Lock5, but that is too much for what I want my
+>> students need. Programming isn't a principal outcome of my course.
+>>
+>> I have looked in JASP and jamovi as well, but they don't fit my needs.
+>>
+>> The closest thing I have found to what I'm looking for is Rcmdr, but it
+>> freezes on my Mac periodically regardless of if I use it from the
+>> Terminal,
+>> the R GUI, or RStudio. Has anyone else encountered that issue? Rcmdr is
+>> great because it's GUI driven but also pastes the R code, which is nice
+>> for
+>> the more advanced students in the class.
+>>
+>> What I am wondering is.
+>>
+>> 1. Is anyone using R with Lock5 and how do you use R to do it?
+>> 2. Does anyone know of a Shiny app that does what StatKey does AND
+>> includes
+>> some options for descriptives and inference similar to Rcmdr? I am
+>> basically looking for a Shiny StatCrunch.
+>>
+>> I have thought about creating a Shiny app to do all of this, but if
+>> someone
+>> already has a wonderful solution, I don't want to reinvent the wheel. I
+>> created something very, very basic[1] for my students just to explore the
+>> Lock5 data and I just might need to expand on it to get what I want.
+>>
+>> Thanks for reading my long winded email,
+>> Chris
+>>
+>> [1]:
+>> https://urldefense.proofpoint.com/v2/url?u=https-3A__cddesja.shinyapps.io_lock5explorer_&d=DwIFaQ&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=rvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec&s=ngdgop1Zp6IG6qxQPENeSz7lk7jGaKc413s_nBuJ7C4&e=
+>>
+>>        [[alternative HTML version deleted]]
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>>
+>> https://urldefense.proofpoint.com/v2/url?u=https-3A__stat.ethz.ch_mailman_listinfo_r-2Dsig-2Dteaching&d=DwIFaQ&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=rvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec&s=FBH1JXCQ8weBt8iLEG2ak-fyZrbrbhQIUcUNrVdVYP8&e=
+>>
+>>
+>>
+>> --
+>> *Manuel Sp?nola, Ph.D.*
+>> Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre
+>> Universidad Nacional
+>> Apartado 1350-3000
+>> Heredia
+>> COSTA RICA
+>> mspinola at una.cr <mspinola at una.ac.cr>
+>> mspinola10 at gmail.com
+>> Tel?fono: (506) 8706 - 4662
+>> Personal website: Lobito de r?o <
+>> https://urldefense.proofpoint.com/v2/url?u=https-3A__sites.google.com_site_lobitoderio_&d=DwIFaQ&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=rvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec&s=VkPHGc5PzRnq4g6kLOx9L_P-9OFvx_cw-CY3jWCceuM&e=
+>> >
+>> Institutional website: ICOMVIS <
+>> https://urldefense.proofpoint.com/v2/url?u=http-3A__www.icomvis.una.ac.cr_&d=DwIFaQ&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=rvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec&s=pc08BWmjY5nHD_C3vT6RKjEKnpX5-BOMoK22JYTX9AA&e=
+>> >
+>>
+>> [[alternative HTML version deleted]]
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>>
+>> https://urldefense.proofpoint.com/v2/url?u=https-3A__stat.ethz.ch_mailman_listinfo_r-2Dsig-2Dteaching&d=DwIFaQ&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=rvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec&s=FBH1JXCQ8weBt8iLEG2ak-fyZrbrbhQIUcUNrVdVYP8&e=
+>>
+>>
+>>
+
+	[[alternative HTML version deleted]]
+
+
+From M|ch@e|@Gr@n@@@ @end|ng |rom u@d@edu  Tue Dec  3 18:31:28 2019
+From: M|ch@e|@Gr@n@@@ @end|ng |rom u@d@edu (Granaas, Michael)
+Date: Tue, 3 Dec 2019 17:31:28 +0000
+Subject: [R-sig-teaching] Using R in an introductory stats course for
+ non-stat/math majors using Lock5 text
+In-Reply-To: <CALrjt79roOvw1WKbPAWaWEm4t7+5J-aOaq0CH5XTMP+rd=gPCA@mail.gmail.com>
+References: <CALrjt78FgpdVLwztp_zAVH+F_LbXftR4M+rr=OtyumMbvP=v6g@mail.gmail.com>
+ <CABkCotQGi0jtKE3Jp7LAhZhkH-QrSnDqkijsGXW-C91n0KD6QQ@mail.gmail.com>
+ <2BB29EA1-9EFB-4E46-AE7F-8637F2AB0BE1@calvin.edu>,
+ <CALrjt79roOvw1WKbPAWaWEm4t7+5J-aOaq0CH5XTMP+rd=gPCA@mail.gmail.com>
+Message-ID: <SN6PR08MB5104D084B258E4B6DA40CAD7E2420@SN6PR08MB5104.namprd08.prod.outlook.com>
+
+
+Some folks at Penn State have developed a bunch of shiny apps for intro stats.
+
+https://shinyapps.science.psu.edu/
+
+They are not Lock5 specific, but there might be some you can use.
+BOAST | Book Of Apps for Statistics Teaching<https://shinyapps.science.psu.edu/>
+The apps in this collection are the work of undergraduate students majoring in Statistics at Penn State University. These students took part in the BOAST program in 2017, 2018, and 2019. (BOAST = Book Of Apps for Statistics Teaching).
+shinyapps.science.psu.edu
+
+Michael
+__________________________________________________________
+Michael Granaas                                           mgranaas at usd.edu<mailto:mgranaas at usd.edu>
+Department of Psychology                           SL: VRprofessor Resident
+University of South Dakota
+414 E. Clark St                                             Phone: 605 658-3700
+Vermillion, SD  57069                                 FAX: 605 658-3355
+____________________________________________________________
+My Personal Pet Project: http://maps.secondlife.com/secondlife/Chieut/20/252/88
+Free classrooms for educators exploring Second Life
+
+________________________________
+From: R-sig-teaching <r-sig-teaching-bounces at r-project.org> on behalf of Christopher David Desjardins <cddesjardins at gmail.com>
+Sent: Tuesday, December 3, 2019 11:07 AM
+To: Randall Pruim <rpruim at calvin.edu>
+Cc: r-sig-teaching at r-project.org <r-sig-teaching at r-project.org>; Stacy De Ruiter <sld33 at calvin.edu>
+Subject: Re: [R-sig-teaching] Using R in an introductory stats course for non-stat/math majors using Lock5 text
+
+Hi Randall,
+
+Thanks for the email.
+
+I was indeed quite happy to see your PDF on the Lock website when I began
+teaching the course. The last time I looked at your PDF, it it looked like
+it was mostly code to do replicate their examples in R, which while
+helpful, isn't quite what I'm looking for. I'd love for them to learn R in
+that manner, but I think it's slightly beyond their skill set.
+
+Ideally here's what I'd like.
+
+I would have the StatKey interface for bootstrapping and randomization
+tests written in Shiny (or a similar toolkit with R as the backend) such
+that there is a main plot that shows the bootstrap or randomization
+distributions (with an option to set the seed) and two side plots to show
+the original sample and the current bootstrap/randomization sample. If
+possible, I'd like the "current" sample plot to be updated based on the
+statistic that is hovered over in the main plot (probably this could be
+done with ggplot2 and an additional package or d3.js). As far as I can tell
+nothing like this exists for R or Shiny (I'd love to be wrong, though). So,
+basically a one-to-one port of StatKey to R.
+
+It would be great to see this functionality packaged in a Shiny app under a
+tab called "Inference via Simulation". Another tab might be called
+"Theory-based Inference" (or some better name), that provided a drop down
+menu to select a test (binomial, t-test, regression, ANOVA, chi-square), an
+option to calculate an arbitrary CI, a plot of the data for assumption
+checking, model output printed, and a plot showing the p-value all within
+that tab. This could be broken up to make it a little less busy. Finally
+there might be another tab for just "Exploring the Data" both numerically
+or graphically (essentially a tab for EDA). Additionally, there might be
+the option to show/hide the R code. I would like students to be able to
+upload the data as a CSV to the app.
+
+I've got quite a bit of experience making Shiny apps, but don't want to
+create one if someone has already made something similar to this that I
+could either fork or just use.
+
+Regarding JASP and jamovi, I found their language to be weird and creating
+confidence intervals cumbersome. E.g., creating a confidence interval for a
+mean, as far as I could tell, requires running a one sample t-test, making
+sure H_0 the Test Value(?) is set to 0 otherwise the CI won't make sense,
+clicking location parameter, and then setting the confidence interval and
+hoping the students don't select effect size instead, which they do. In
+JASP, you can't edit data directly but must edit it in Excel. and you can
+edit directly in Rcmdr. JASP's focus on Bayesian is also confusing for my
+non-Bayesian course as students select the wrong tests very easily. I do
+love that they have the ability to export to LaTeX tables by default, very
+nice. Also, in JASP you can't get dot plots, which I think are very helpful
+for teaching. Neither software is capable of bootstrapping and
+randomization tests as far as I know.
+
+Chris
+
+
+
+
+
+
+On Tue, Dec 3, 2019 at 9:53 AM Randall Pruim <rpruim at calvin.edu> wrote:
+
+> Chris,
+>
+> The Lock5withR package includes all the data sets (first edition at this
+> point) with more traditional R encoding than the package provided by the
+> authors.
+>
+> Soon (I hope ? it?s just pending a final review and polish), there will
+> also be a companion volume as a bookdown document using R, mosaic, and
+> ggformula to recreate all the examples.  An older version is available as a
+> PDF here:
+>
+> https://nam03.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.lock5stat.com%2Fother%2FLock5withR.pdf&amp;data=02%7C01%7Cmichael.granaas%40usd.edu%7C206c405765e3484c480408d778134dcf%7C9c36a7d0bf7b49919b78be91a52f0226%7C0%7C1%7C637109896632356242&amp;sdata=HgVlFBS2QTgfBXZyO7ae9Ctb6RSwKtv9nEiFN4u9uFk%3D&amp;reserved=0
+>
+>
+> For "StatCrunch in shiny", perhaps you can say a bit more about what you
+> are looking for and how jamovi and JASP fall short.
+>
+> I hope you find a solutions that works well for you.
+>
+> ?rjp
+>
+>
+>
+>
+> On Dec 3, 2019, at 9:25 AM, Manuel Sp?nola <mspinola10 at gmail.com> wrote:
+>
+> Dear Chris,
+>
+> How about Radiant?
+>
+> Manuel
+>
+> El mar., 3 dic. 2019 a las 7:53, Christopher David Desjardins (<
+> cddesjardins at gmail.com>) escribi?:
+>
+> Hi,
+>
+> I teach an introductory statistics course for non-stat/math majors that are
+> primarily coming from the social sciences or business. I am using the Lock
+> textbook,
+> https://nam03.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.proofpoint.com%2Fv2%2Furl%3Fu%3Dhttp-3A__www.lock5stat.com_%26d%3DDwIFaQ%26c%3D4rZ6NPIETe-LE5i2KBR4rw%26r%3DS6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00%26m%3DrvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec%26s%3DqnNW5anVawrMQVNo45I1_4M8Tw3ljsmBYw4qusBVUxs%26e&amp;data=02%7C01%7Cmichael.granaas%40usd.edu%7C206c405765e3484c480408d778134dcf%7C9c36a7d0bf7b49919b78be91a52f0226%7C0%7C0%7C637109896632356242&amp;sdata=llBl8sJo%2BURw%2BGN%2FzYi%2FidH9LX9HXjWNLMBxH%2B3bB88%3D&amp;reserved=0=
+> , and their software StatKey,
+>
+> https://nam03.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.proofpoint.com%2Fv2%2Furl%3Fu%3Dhttp-3A__www.lock5stat.com_StatKey_%26d%3DDwIFaQ%26c%3D4rZ6NPIETe-LE5i2KBR4rw%26r%3DS6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00%26m%3DrvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec%26s%3DN3nV9BtqXRK3zJlRPrEQoqs1wssIPU_MFhAB46Kgf8E%26e&amp;data=02%7C01%7Cmichael.granaas%40usd.edu%7C206c405765e3484c480408d778134dcf%7C9c36a7d0bf7b49919b78be91a52f0226%7C0%7C0%7C637109896632366242&amp;sdata=5QjLfNyQJLNAO6ybr7LXcsRjwefEb1Wi5tN1t3bxG3U%3D&amp;reserved=0=
+> . I really like the way that StatKey does
+> randomization tests and bootstrapping, however, I don't like that it's not
+> possible to perform theory-based tests on their website (e.g., if I wanted
+> my students to perform an independent samples t-test not by hand or run a
+> simple linear regression).
+>
+> Ideally what I was hoping for was to use R in my introductory classes but
+> to have some way to make it less intimidating. I want my students to be
+> able to run descriptives and create basic graphics (including dot plots),
+> randomization tests, bootstrapping, and run t-tests, chi-square, ANOVA, and
+> regression.
+>
+> I tried using RStudio, but it is still overkill for what I want my students
+> to be able to do. They don't need an IDE. Randall Pruim has kindly made a
+> PDF for using R with Lock5, but that is too much for what I want my
+> students need. Programming isn't a principal outcome of my course.
+>
+> I have looked in JASP and jamovi as well, but they don't fit my needs.
+>
+> The closest thing I have found to what I'm looking for is Rcmdr, but it
+> freezes on my Mac periodically regardless of if I use it from the Terminal,
+> the R GUI, or RStudio. Has anyone else encountered that issue? Rcmdr is
+> great because it's GUI driven but also pastes the R code, which is nice for
+> the more advanced students in the class.
+>
+> What I am wondering is.
+>
+> 1. Is anyone using R with Lock5 and how do you use R to do it?
+> 2. Does anyone know of a Shiny app that does what StatKey does AND includes
+> some options for descriptives and inference similar to Rcmdr? I am
+> basically looking for a Shiny StatCrunch.
+>
+> I have thought about creating a Shiny app to do all of this, but if someone
+> already has a wonderful solution, I don't want to reinvent the wheel. I
+> created something very, very basic[1] for my students just to explore the
+> Lock5 data and I just might need to expand on it to get what I want.
+>
+> Thanks for reading my long winded email,
+> Chris
+>
+> [1]:
+> https://nam03.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.proofpoint.com%2Fv2%2Furl%3Fu%3Dhttps-3A__cddesja.shinyapps.io_lock5explorer_%26d%3DDwIFaQ%26c%3D4rZ6NPIETe-LE5i2KBR4rw%26r%3DS6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00%26m%3DrvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec%26s%3Dngdgop1Zp6IG6qxQPENeSz7lk7jGaKc413s_nBuJ7C4%26e&amp;data=02%7C01%7Cmichael.granaas%40usd.edu%7C206c405765e3484c480408d778134dcf%7C9c36a7d0bf7b49919b78be91a52f0226%7C0%7C0%7C637109896632366242&amp;sdata=TjPWKO8Up3Q6ifAHwj3rMkKa%2FNLWvFJP5u17Ew1sqYg%3D&amp;reserved=0=
+>
+>        [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+>
+> https://nam03.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.proofpoint.com%2Fv2%2Furl%3Fu%3Dhttps-3A__stat.ethz.ch_mailman_listinfo_r-2Dsig-2Dteaching%26d%3DDwIFaQ%26c%3D4rZ6NPIETe-LE5i2KBR4rw%26r%3DS6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00%26m%3DrvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec%26s%3DFBH1JXCQ8weBt8iLEG2ak-fyZrbrbhQIUcUNrVdVYP8%26e&amp;data=02%7C01%7Cmichael.granaas%40usd.edu%7C206c405765e3484c480408d778134dcf%7C9c36a7d0bf7b49919b78be91a52f0226%7C0%7C0%7C637109896632366242&amp;sdata=vSGCY52JLNFec5qk7zLGFrQbTFkfKW4VxH9C44Nwqo0%3D&amp;reserved=0=
+>
+>
+>
+> --
+> *Manuel Sp?nola, Ph.D.*
+> Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre
+> Universidad Nacional
+> Apartado 1350-3000
+> Heredia
+> COSTA RICA
+> mspinola at una.cr <mspinola at una.ac.cr>
+> mspinola10 at gmail.com
+> Tel?fono: (506) 8706 - 4662
+> Personal website: Lobito de r?o <
+> https://nam03.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.proofpoint.com%2Fv2%2Furl%3Fu%3Dhttps-3A__sites.google.com_site_lobitoderio_%26d%3DDwIFaQ%26c%3D4rZ6NPIETe-LE5i2KBR4rw%26r%3DS6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00%26m%3DrvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec%26s%3DVkPHGc5PzRnq4g6kLOx9L_P-9OFvx_cw-CY3jWCceuM%26e&amp;data=02%7C01%7Cmichael.granaas%40usd.edu%7C206c405765e3484c480408d778134dcf%7C9c36a7d0bf7b49919b78be91a52f0226%7C0%7C0%7C637109896632366242&amp;sdata=jqgVzQvXWao1fe4vtwf3LTXNFZCFifVZJhQNQhGhBkU%3D&amp;reserved=0=
+> >
+> Institutional website: ICOMVIS <
+> https://nam03.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.proofpoint.com%2Fv2%2Furl%3Fu%3Dhttp-3A__www.icomvis.una.ac.cr_%26d%3DDwIFaQ%26c%3D4rZ6NPIETe-LE5i2KBR4rw%26r%3DS6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00%26m%3DrvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec%26s%3Dpc08BWmjY5nHD_C3vT6RKjEKnpX5-BOMoK22JYTX9AA%26e&amp;data=02%7C01%7Cmichael.granaas%40usd.edu%7C206c405765e3484c480408d778134dcf%7C9c36a7d0bf7b49919b78be91a52f0226%7C0%7C0%7C637109896632366242&amp;sdata=gaTJDPfQqX8pe6dGusg%2BJzkwjXCoXVbTSyHYa3vvzyo%3D&amp;reserved=0=
+> >
+>
+> [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+>
+> https://nam03.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.proofpoint.com%2Fv2%2Furl%3Fu%3Dhttps-3A__stat.ethz.ch_mailman_listinfo_r-2Dsig-2Dteaching%26d%3DDwIFaQ%26c%3D4rZ6NPIETe-LE5i2KBR4rw%26r%3DS6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00%26m%3DrvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec%26s%3DFBH1JXCQ8weBt8iLEG2ak-fyZrbrbhQIUcUNrVdVYP8%26e&amp;data=02%7C01%7Cmichael.granaas%40usd.edu%7C206c405765e3484c480408d778134dcf%7C9c36a7d0bf7b49919b78be91a52f0226%7C0%7C0%7C637109896632366242&amp;sdata=vSGCY52JLNFec5qk7zLGFrQbTFkfKW4VxH9C44Nwqo0%3D&amp;reserved=0=
+>
+>
+>
+
+        [[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://nam03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fstat.ethz.ch%2Fmailman%2Flistinfo%2Fr-sig-teaching&amp;data=02%7C01%7Cmichael.granaas%40usd.edu%7C206c405765e3484c480408d778134dcf%7C9c36a7d0bf7b49919b78be91a52f0226%7C0%7C1%7C637109896632366242&amp;sdata=6W0EDFMJUh9elemv2EliCUHKs7mbG3tKBLxhyMuis%2Fo%3D&amp;reserved=0
+
+	[[alternative HTML version deleted]]
+
+
+From cdde@j@rd|n@ @end|ng |rom gm@||@com  Tue Dec  3 19:55:41 2019
+From: cdde@j@rd|n@ @end|ng |rom gm@||@com (Christopher David Desjardins)
+Date: Tue, 3 Dec 2019 13:55:41 -0500
+Subject: [R-sig-teaching] Using R in an introductory stats course for
+ non-stat/math majors using Lock5 text
+In-Reply-To: <SN6PR08MB5104D084B258E4B6DA40CAD7E2420@SN6PR08MB5104.namprd08.prod.outlook.com>
+References: <CALrjt78FgpdVLwztp_zAVH+F_LbXftR4M+rr=OtyumMbvP=v6g@mail.gmail.com>
+ <CABkCotQGi0jtKE3Jp7LAhZhkH-QrSnDqkijsGXW-C91n0KD6QQ@mail.gmail.com>
+ <2BB29EA1-9EFB-4E46-AE7F-8637F2AB0BE1@calvin.edu>
+ <CALrjt79roOvw1WKbPAWaWEm4t7+5J-aOaq0CH5XTMP+rd=gPCA@mail.gmail.com>
+ <SN6PR08MB5104D084B258E4B6DA40CAD7E2420@SN6PR08MB5104.namprd08.prod.outlook.com>
+Message-ID: <CALrjt7_16mP6akcUgZV8oBRGr2ATqQvhpVQ0sckYqOHLzVAVFg@mail.gmail.com>
+
+Hi Michael,
+Thanks for sharing that. It looks like a really nice collection of Shiny
+apps.
+Chris
+
+On Tue, Dec 3, 2019 at 12:37 PM Granaas, Michael <Michael.Granaas at usd.edu>
+wrote:
+
+>
+> Some folks at Penn State have developed a bunch of shiny apps for intro
+> stats.
+>
+> https://shinyapps.science.psu.edu/
+>
+> They are not Lock5 specific, but there might be some you can use.
+> BOAST | Book Of Apps for Statistics Teaching<
+> https://shinyapps.science.psu.edu/>
+> The apps in this collection are the work of undergraduate students
+> majoring in Statistics at Penn State University. These students took part
+> in the BOAST program in 2017, 2018, and 2019. (BOAST = Book Of Apps for
+> Statistics Teaching).
+> shinyapps.science.psu.edu
+>
+> Michael
+> __________________________________________________________
+> Michael Granaas                                           mgranaas at usd.edu
+> <mailto:mgranaas at usd.edu>
+> Department of Psychology                           SL: VRprofessor Resident
+> University of South Dakota
+> 414 E. Clark St                                             Phone: 605
+> 658-3700
+> Vermillion, SD  57069                                 FAX: 605 658-3355
+> ____________________________________________________________
+> My Personal Pet Project:
+> http://maps.secondlife.com/secondlife/Chieut/20/252/88
+> Free classrooms for educators exploring Second Life
+>
+> ________________________________
+> From: R-sig-teaching <r-sig-teaching-bounces at r-project.org> on behalf of
+> Christopher David Desjardins <cddesjardins at gmail.com>
+> Sent: Tuesday, December 3, 2019 11:07 AM
+> To: Randall Pruim <rpruim at calvin.edu>
+> Cc: r-sig-teaching at r-project.org <r-sig-teaching at r-project.org>; Stacy De
+> Ruiter <sld33 at calvin.edu>
+> Subject: Re: [R-sig-teaching] Using R in an introductory stats course for
+> non-stat/math majors using Lock5 text
+>
+> Hi Randall,
+>
+> Thanks for the email.
+>
+> I was indeed quite happy to see your PDF on the Lock website when I began
+> teaching the course. The last time I looked at your PDF, it it looked like
+> it was mostly code to do replicate their examples in R, which while
+> helpful, isn't quite what I'm looking for. I'd love for them to learn R in
+> that manner, but I think it's slightly beyond their skill set.
+>
+> Ideally here's what I'd like.
+>
+> I would have the StatKey interface for bootstrapping and randomization
+> tests written in Shiny (or a similar toolkit with R as the backend) such
+> that there is a main plot that shows the bootstrap or randomization
+> distributions (with an option to set the seed) and two side plots to show
+> the original sample and the current bootstrap/randomization sample. If
+> possible, I'd like the "current" sample plot to be updated based on the
+> statistic that is hovered over in the main plot (probably this could be
+> done with ggplot2 and an additional package or d3.js). As far as I can tell
+> nothing like this exists for R or Shiny (I'd love to be wrong, though). So,
+> basically a one-to-one port of StatKey to R.
+>
+> It would be great to see this functionality packaged in a Shiny app under a
+> tab called "Inference via Simulation". Another tab might be called
+> "Theory-based Inference" (or some better name), that provided a drop down
+> menu to select a test (binomial, t-test, regression, ANOVA, chi-square), an
+> option to calculate an arbitrary CI, a plot of the data for assumption
+> checking, model output printed, and a plot showing the p-value all within
+> that tab. This could be broken up to make it a little less busy. Finally
+> there might be another tab for just "Exploring the Data" both numerically
+> or graphically (essentially a tab for EDA). Additionally, there might be
+> the option to show/hide the R code. I would like students to be able to
+> upload the data as a CSV to the app.
+>
+> I've got quite a bit of experience making Shiny apps, but don't want to
+> create one if someone has already made something similar to this that I
+> could either fork or just use.
+>
+> Regarding JASP and jamovi, I found their language to be weird and creating
+> confidence intervals cumbersome. E.g., creating a confidence interval for a
+> mean, as far as I could tell, requires running a one sample t-test, making
+> sure H_0 the Test Value(?) is set to 0 otherwise the CI won't make sense,
+> clicking location parameter, and then setting the confidence interval and
+> hoping the students don't select effect size instead, which they do. In
+> JASP, you can't edit data directly but must edit it in Excel. and you can
+> edit directly in Rcmdr. JASP's focus on Bayesian is also confusing for my
+> non-Bayesian course as students select the wrong tests very easily. I do
+> love that they have the ability to export to LaTeX tables by default, very
+> nice. Also, in JASP you can't get dot plots, which I think are very helpful
+> for teaching. Neither software is capable of bootstrapping and
+> randomization tests as far as I know.
+>
+> Chris
+>
+>
+>
+>
+>
+>
+> On Tue, Dec 3, 2019 at 9:53 AM Randall Pruim <rpruim at calvin.edu> wrote:
+>
+> > Chris,
+> >
+> > The Lock5withR package includes all the data sets (first edition at this
+> > point) with more traditional R encoding than the package provided by the
+> > authors.
+> >
+> > Soon (I hope ? it?s just pending a final review and polish), there will
+> > also be a companion volume as a bookdown document using R, mosaic, and
+> > ggformula to recreate all the examples.  An older version is available
+> as a
+> > PDF here:
+> >
+> >
+> https://nam03.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.lock5stat.com%2Fother%2FLock5withR.pdf&amp;data=02%7C01%7Cmichael.granaas%40usd.edu%7C206c405765e3484c480408d778134dcf%7C9c36a7d0bf7b49919b78be91a52f0226%7C0%7C1%7C637109896632356242&amp;sdata=HgVlFBS2QTgfBXZyO7ae9Ctb6RSwKtv9nEiFN4u9uFk%3D&amp;reserved=0
+> >
+> >
+> > For "StatCrunch in shiny", perhaps you can say a bit more about what you
+> > are looking for and how jamovi and JASP fall short.
+> >
+> > I hope you find a solutions that works well for you.
+> >
+> > ?rjp
+> >
+> >
+> >
+> >
+> > On Dec 3, 2019, at 9:25 AM, Manuel Sp?nola <mspinola10 at gmail.com> wrote:
+> >
+> > Dear Chris,
+> >
+> > How about Radiant?
+> >
+> > Manuel
+> >
+> > El mar., 3 dic. 2019 a las 7:53, Christopher David Desjardins (<
+> > cddesjardins at gmail.com>) escribi?:
+> >
+> > Hi,
+> >
+> > I teach an introductory statistics course for non-stat/math majors that
+> are
+> > primarily coming from the social sciences or business. I am using the
+> Lock
+> > textbook,
+> >
+> https://nam03.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.proofpoint.com%2Fv2%2Furl%3Fu%3Dhttp-3A__www.lock5stat.com_%26d%3DDwIFaQ%26c%3D4rZ6NPIETe-LE5i2KBR4rw%26r%3DS6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00%26m%3DrvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec%26s%3DqnNW5anVawrMQVNo45I1_4M8Tw3ljsmBYw4qusBVUxs%26e&amp;data=02%7C01%7Cmichael.granaas%40usd.edu%7C206c405765e3484c480408d778134dcf%7C9c36a7d0bf7b49919b78be91a52f0226%7C0%7C0%7C637109896632356242&amp;sdata=llBl8sJo%2BURw%2BGN%2FzYi%2FidH9LX9HXjWNLMBxH%2B3bB88%3D&amp;reserved=0=
+> > , and their software StatKey,
+> >
+> >
+> https://nam03.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.proofpoint.com%2Fv2%2Furl%3Fu%3Dhttp-3A__www.lock5stat.com_StatKey_%26d%3DDwIFaQ%26c%3D4rZ6NPIETe-LE5i2KBR4rw%26r%3DS6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00%26m%3DrvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec%26s%3DN3nV9BtqXRK3zJlRPrEQoqs1wssIPU_MFhAB46Kgf8E%26e&amp;data=02%7C01%7Cmichael.granaas%40usd.edu%7C206c405765e3484c480408d778134dcf%7C9c36a7d0bf7b49919b78be91a52f0226%7C0%7C0%7C637109896632366242&amp;sdata=5QjLfNyQJLNAO6ybr7LXcsRjwefEb1Wi5tN1t3bxG3U%3D&amp;reserved=0=
+> > . I really like the way that StatKey does
+> > randomization tests and bootstrapping, however, I don't like that it's
+> not
+> > possible to perform theory-based tests on their website (e.g., if I
+> wanted
+> > my students to perform an independent samples t-test not by hand or run a
+> > simple linear regression).
+> >
+> > Ideally what I was hoping for was to use R in my introductory classes but
+> > to have some way to make it less intimidating. I want my students to be
+> > able to run descriptives and create basic graphics (including dot plots),
+> > randomization tests, bootstrapping, and run t-tests, chi-square, ANOVA,
+> and
+> > regression.
+> >
+> > I tried using RStudio, but it is still overkill for what I want my
+> students
+> > to be able to do. They don't need an IDE. Randall Pruim has kindly made a
+> > PDF for using R with Lock5, but that is too much for what I want my
+> > students need. Programming isn't a principal outcome of my course.
+> >
+> > I have looked in JASP and jamovi as well, but they don't fit my needs.
+> >
+> > The closest thing I have found to what I'm looking for is Rcmdr, but it
+> > freezes on my Mac periodically regardless of if I use it from the
+> Terminal,
+> > the R GUI, or RStudio. Has anyone else encountered that issue? Rcmdr is
+> > great because it's GUI driven but also pastes the R code, which is nice
+> for
+> > the more advanced students in the class.
+> >
+> > What I am wondering is.
+> >
+> > 1. Is anyone using R with Lock5 and how do you use R to do it?
+> > 2. Does anyone know of a Shiny app that does what StatKey does AND
+> includes
+> > some options for descriptives and inference similar to Rcmdr? I am
+> > basically looking for a Shiny StatCrunch.
+> >
+> > I have thought about creating a Shiny app to do all of this, but if
+> someone
+> > already has a wonderful solution, I don't want to reinvent the wheel. I
+> > created something very, very basic[1] for my students just to explore the
+> > Lock5 data and I just might need to expand on it to get what I want.
+> >
+> > Thanks for reading my long winded email,
+> > Chris
+> >
+> > [1]:
+> >
+> https://nam03.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.proofpoint.com%2Fv2%2Furl%3Fu%3Dhttps-3A__cddesja.shinyapps.io_lock5explorer_%26d%3DDwIFaQ%26c%3D4rZ6NPIETe-LE5i2KBR4rw%26r%3DS6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00%26m%3DrvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec%26s%3Dngdgop1Zp6IG6qxQPENeSz7lk7jGaKc413s_nBuJ7C4%26e&amp;data=02%7C01%7Cmichael.granaas%40usd.edu%7C206c405765e3484c480408d778134dcf%7C9c36a7d0bf7b49919b78be91a52f0226%7C0%7C0%7C637109896632366242&amp;sdata=TjPWKO8Up3Q6ifAHwj3rMkKa%2FNLWvFJP5u17Ew1sqYg%3D&amp;reserved=0=
+> >
+> >        [[alternative HTML version deleted]]
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> >
+> >
+> https://nam03.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.proofpoint.com%2Fv2%2Furl%3Fu%3Dhttps-3A__stat.ethz.ch_mailman_listinfo_r-2Dsig-2Dteaching%26d%3DDwIFaQ%26c%3D4rZ6NPIETe-LE5i2KBR4rw%26r%3DS6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00%26m%3DrvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec%26s%3DFBH1JXCQ8weBt8iLEG2ak-fyZrbrbhQIUcUNrVdVYP8%26e&amp;data=02%7C01%7Cmichael.granaas%40usd.edu%7C206c405765e3484c480408d778134dcf%7C9c36a7d0bf7b49919b78be91a52f0226%7C0%7C0%7C637109896632366242&amp;sdata=vSGCY52JLNFec5qk7zLGFrQbTFkfKW4VxH9C44Nwqo0%3D&amp;reserved=0=
+> >
+> >
+> >
+> > --
+> > *Manuel Sp?nola, Ph.D.*
+> > Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre
+> > Universidad Nacional
+> > Apartado 1350-3000
+> > Heredia
+> > COSTA RICA
+> > mspinola at una.cr <mspinola at una.ac.cr>
+> > mspinola10 at gmail.com
+> > Tel?fono: (506) 8706 - 4662
+> > Personal website: Lobito de r?o <
+> >
+> https://nam03.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.proofpoint.com%2Fv2%2Furl%3Fu%3Dhttps-3A__sites.google.com_site_lobitoderio_%26d%3DDwIFaQ%26c%3D4rZ6NPIETe-LE5i2KBR4rw%26r%3DS6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00%26m%3DrvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec%26s%3DVkPHGc5PzRnq4g6kLOx9L_P-9OFvx_cw-CY3jWCceuM%26e&amp;data=02%7C01%7Cmichael.granaas%40usd.edu%7C206c405765e3484c480408d778134dcf%7C9c36a7d0bf7b49919b78be91a52f0226%7C0%7C0%7C637109896632366242&amp;sdata=jqgVzQvXWao1fe4vtwf3LTXNFZCFifVZJhQNQhGhBkU%3D&amp;reserved=0=
+> > >
+> > Institutional website: ICOMVIS <
+> >
+> https://nam03.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.proofpoint.com%2Fv2%2Furl%3Fu%3Dhttp-3A__www.icomvis.una.ac.cr_%26d%3DDwIFaQ%26c%3D4rZ6NPIETe-LE5i2KBR4rw%26r%3DS6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00%26m%3DrvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec%26s%3Dpc08BWmjY5nHD_C3vT6RKjEKnpX5-BOMoK22JYTX9AA%26e&amp;data=02%7C01%7Cmichael.granaas%40usd.edu%7C206c405765e3484c480408d778134dcf%7C9c36a7d0bf7b49919b78be91a52f0226%7C0%7C0%7C637109896632366242&amp;sdata=gaTJDPfQqX8pe6dGusg%2BJzkwjXCoXVbTSyHYa3vvzyo%3D&amp;reserved=0=
+> > >
+> >
+> > [[alternative HTML version deleted]]
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> >
+> >
+> https://nam03.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.proofpoint.com%2Fv2%2Furl%3Fu%3Dhttps-3A__stat.ethz.ch_mailman_listinfo_r-2Dsig-2Dteaching%26d%3DDwIFaQ%26c%3D4rZ6NPIETe-LE5i2KBR4rw%26r%3DS6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00%26m%3DrvRMe6UbaU3kDRIQHpLP_3zbje0eW1UBt3Fp6o9KSec%26s%3DFBH1JXCQ8weBt8iLEG2ak-fyZrbrbhQIUcUNrVdVYP8%26e&amp;data=02%7C01%7Cmichael.granaas%40usd.edu%7C206c405765e3484c480408d778134dcf%7C9c36a7d0bf7b49919b78be91a52f0226%7C0%7C0%7C637109896632366242&amp;sdata=vSGCY52JLNFec5qk7zLGFrQbTFkfKW4VxH9C44Nwqo0%3D&amp;reserved=0=
+> >
+> >
+> >
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+>
+> https://nam03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fstat.ethz.ch%2Fmailman%2Flistinfo%2Fr-sig-teaching&amp;data=02%7C01%7Cmichael.granaas%40usd.edu%7C206c405765e3484c480408d778134dcf%7C9c36a7d0bf7b49919b78be91a52f0226%7C0%7C1%7C637109896632366242&amp;sdata=6W0EDFMJUh9elemv2EliCUHKs7mbG3tKBLxhyMuis%2Fo%3D&amp;reserved=0
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+	[[alternative HTML version deleted]]
+
+
+From bob @end|ng |rom @t@t|@nd@org  Tue Dec  3 21:23:05 2019
+From: bob @end|ng |rom @t@t|@nd@org (User Hayden)
+Date: Tue, 3 Dec 2019 15:23:05 -0500
+Subject: [R-sig-teaching] [cddesjardins@gmail.com: Using R in an
+ introductory stats course for non-stat/math majors using Lock5 text]
+Message-ID: <20191203202305.GA47129@lilly.csoft.net>
+
+
+I may get bumped off the list for expressing heretical opinions but I
+would not use R with that audience.  Stat Key is fine for what it
+does, and Stats Homework
+
+https://sites.berry.edu/vbissonnette/index/stats-homework/
+
+is a free Java program that does all the traditional stuff plus
+permutation tests.  It does not do bootstrapping, but I am not a fan
+of simple versions of the bootstrap anyway.
+
+https://tandfonline.com/doi/full/10.1080/10691898.2019.1669507
+
+
+
+
+----- Forwarded message from Christopher David Desjardins <cddesjardins at gmail.com> -----
+
+Date: Tue, 3 Dec 2019 08:53:09 -0500
+From: Christopher David Desjardins <cddesjardins at gmail.com>
+To: r-sig-teaching at r-project.org
+Subject: [R-sig-teaching] Using R in an introductory stats course for
+	non-stat/math majors using Lock5 text
+
+Hi,
+
+I teach an introductory statistics course for non-stat/math majors that are
+primarily coming from the social sciences or business. I am using the Lock
+textbook, http://www.lock5stat.com/, and their software StatKey,
+http://www.lock5stat.com/StatKey/. I really like the way that StatKey does
+randomization tests and bootstrapping, however, I don't like that it's not
+possible to perform theory-based tests on their website (e.g., if I wanted
+my students to perform an independent samples t-test not by hand or run a
+simple linear regression).
+
+Ideally what I was hoping for was to use R in my introductory classes but
+to have some way to make it less intimidating. I want my students to be
+able to run descriptives and create basic graphics (including dot plots),
+randomization tests, bootstrapping, and run t-tests, chi-square, ANOVA, and
+regression.
+
+I tried using RStudio, but it is still overkill for what I want my students
+to be able to do. They don't need an IDE. Randall Pruim has kindly made a
+PDF for using R with Lock5, but that is too much for what I want my
+students need. Programming isn't a principal outcome of my course.
+
+I have looked in JASP and jamovi as well, but they don't fit my needs.
+
+The closest thing I have found to what I'm looking for is Rcmdr, but it
+freezes on my Mac periodically regardless of if I use it from the Terminal,
+the R GUI, or RStudio. Has anyone else encountered that issue? Rcmdr is
+great because it's GUI driven but also pastes the R code, which is nice for
+the more advanced students in the class.
+
+What I am wondering is.
+
+1. Is anyone using R with Lock5 and how do you use R to do it?
+2. Does anyone know of a Shiny app that does what StatKey does AND includes
+some options for descriptives and inference similar to Rcmdr? I am
+basically looking for a Shiny StatCrunch.
+
+I have thought about creating a Shiny app to do all of this, but if someone
+already has a wonderful solution, I don't want to reinvent the wheel. I
+created something very, very basic[1] for my students just to explore the
+Lock5 data and I just might need to expand on it to get what I want.
+
+Thanks for reading my long winded email,
+Chris
+
+[1]: https://cddesja.shinyapps.io/lock5explorer/
+
+	[[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+----- End forwarded message -----
+
+-- 
+
+      _
+     | |          Robert W. Hayden
+     | |          5 Howard Street, Apartment 206
+    /  |          Wilton, New Hampshire 03086  USA
+   |   |          
+   |   |          email: bob@ the site below
+  /    |          website: http://statland.org
+ |   x /          
+ ''''''
+
+
+From m@p|no|@10 @end|ng |rom gm@||@com  Tue Dec 17 17:08:34 2019
+From: m@p|no|@10 @end|ng |rom gm@||@com (=?UTF-8?Q?Manuel_Sp=C3=ADnola?=)
+Date: Tue, 17 Dec 2019 10:08:34 -0600
+Subject: [R-sig-teaching] Making teaching material, html, pdf or powerpoint
+Message-ID: <CABkCotR357KJWFunG4KCbYXaLFBFc_vjexVgLT=6iMB1gWrjRg@mail.gmail.com>
+
+I am planning to make teaching material for data analysis in R.  I am
+trying to decide which output will be better. Html, pdf or powepoint.
+
+I found that flexdashboard could have the potential to make the material in
+html output which could include interactive graphs and tables.
+
+Any insight on this?
+
+Best,
+
+-- 
+*Manuel Sp?nola, Ph.D.*
+Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre
+Universidad Nacional
+Apartado 1350-3000
+Heredia
+COSTA RICA
+mspinola at una.cr <mspinola at una.ac.cr>
+mspinola10 at gmail.com
+Tel?fono: (506) 8706 - 4662
+Personal website: Lobito de r?o <https://sites.google.com/site/lobitoderio/>
+Institutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>
+
+	[[alternative HTML version deleted]]
+
+
+From M@rce|o@C@j|@@ @end|ng |rom p@tr|z|@@@g  Tue Dec 17 17:12:53 2019
+From: M@rce|o@C@j|@@ @end|ng |rom p@tr|z|@@@g (Cajias Marcelo)
+Date: Tue, 17 Dec 2019 16:12:53 +0000
+Subject: [R-sig-teaching] 
+ Making teaching material, html, pdf or powerpoint
+In-Reply-To: <CABkCotR357KJWFunG4KCbYXaLFBFc_vjexVgLT=6iMB1gWrjRg@mail.gmail.com>
+References: <CABkCotR357KJWFunG4KCbYXaLFBFc_vjexVgLT=6iMB1gWrjRg@mail.gmail.com>
+Message-ID: <7bd0af0370994962ac9b998c9f59fbdd@patrizia.ag>
+
+Dear Manuel,
+
+I teach 3 courses at the university and recommend strongly Rmarkdown into pdf/html. This is the most dynamic and modern way to teach, in my opinion. The students love.  
+
+The only disadvantage is that you can create in ppt graphs or "forms" quicker than in markdown. 
+
+Best
+
+Marcelo 
+
+-----Urspr?ngliche Nachricht-----
+Von: R-sig-teaching <r-sig-teaching-bounces at r-project.org> Im Auftrag von Manuel Sp?nola
+Gesendet: Dienstag, 17. Dezember 2019 17:09
+An: r-sig-teaching at r-project.org
+Betreff: [R-sig-teaching] Making teaching material, html, pdf or powerpoint
+
+I am planning to make teaching material for data analysis in R.  I am trying to decide which output will be better. Html, pdf or powepoint.
+
+I found that flexdashboard could have the potential to make the material in html output which could include interactive graphs and tables.
+
+Any insight on this?
+
+Best,
+
+--
+*Manuel Sp?nola, Ph.D.*
+Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre Universidad Nacional Apartado 1350-3000 Heredia COSTA RICA mspinola at una.cr <mspinola at una.ac.cr> mspinola10 at gmail.com
+Tel?fono: (506) 8706 - 4662
+Personal website: Lobito de r?o <https://sites.google.com/site/lobitoderio/>
+Institutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>
+
+	[[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From bret@|@rget @end|ng |rom w|@c@edu  Tue Dec 17 17:15:58 2019
+From: bret@|@rget @end|ng |rom w|@c@edu (BRET R LARGET)
+Date: Tue, 17 Dec 2019 16:15:58 +0000
+Subject: [R-sig-teaching] 
+ Making teaching material, html, pdf or powerpoint
+In-Reply-To: <CABkCotR357KJWFunG4KCbYXaLFBFc_vjexVgLT=6iMB1gWrjRg@mail.gmail.com>
+References: <CABkCotR357KJWFunG4KCbYXaLFBFc_vjexVgLT=6iMB1gWrjRg@mail.gmail.com>
+Message-ID: <DM5PR06MB2810240B0FB7711A301EE23288500@DM5PR06MB2810.namprd06.prod.outlook.com>
+
+I usually make HTML and post the notes and use the notes for lecture presentation. I scroll through the HTML rather than show static slides. HTML is better now than it used to be to show mathematical notation well. I used to use PDF. It is easier for students to knit a document into HTML than into PDF (because the latter requires installing LaTeX), so this is what I ask them to do.
+
+-Bret
+
+________________________________
+From: R-sig-teaching <r-sig-teaching-bounces at r-project.org> on behalf of Manuel Sp?nola <mspinola10 at gmail.com>
+Sent: Tuesday, December 17, 2019 10:08 AM
+To: r-sig-teaching at r-project.org <r-sig-teaching at r-project.org>
+Subject: [R-sig-teaching] Making teaching material, html, pdf or powerpoint
+
+I am planning to make teaching material for data analysis in R.  I am
+trying to decide which output will be better. Html, pdf or powepoint.
+
+I found that flexdashboard could have the potential to make the material in
+html output which could include interactive graphs and tables.
+
+Any insight on this?
+
+Best,
+
+--
+*Manuel Sp?nola, Ph.D.*
+Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre
+Universidad Nacional
+Apartado 1350-3000
+Heredia
+COSTA RICA
+mspinola at una.cr <mspinola at una.ac.cr>
+mspinola10 at gmail.com
+Tel?fono: (506) 8706 - 4662
+Personal website: Lobito de r?o <https://sites.google.com/site/lobitoderio/>
+Institutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>
+
+        [[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+	[[alternative HTML version deleted]]
+
+
+From rdon@te||o @end|ng |rom c@uch|co@edu  Tue Dec 17 19:14:12 2019
+From: rdon@te||o @end|ng |rom c@uch|co@edu (Robin A Donatello)
+Date: Tue, 17 Dec 2019 18:14:12 +0000
+Subject: [R-sig-teaching] 
+ Making teaching material, html, pdf or powerpoint
+In-Reply-To: <CABkCotR357KJWFunG4KCbYXaLFBFc_vjexVgLT=6iMB1gWrjRg@mail.gmail.com>
+References: <CABkCotR357KJWFunG4KCbYXaLFBFc_vjexVgLT=6iMB1gWrjRg@mail.gmail.com>
+Message-ID: <BYAPR13MB23598CA4B287E01C7AC0F089A3500@BYAPR13MB2359.namprd13.prod.outlook.com>
+
+I concur with what others have said, use a RMarkdown file and create both HTML to present in class/on the web and a PDF for those that want to print a hard copy.
+You can also look into the bookdown package 
+
+Here are some of my examples of lecture notes using bookdown https://norcalbiostat.github.io/AppliedStatistics_notes/  and individual assignments that are available as HTML and pdf. https://norcalbiostat.github.io/MATH130/notes/07_factors.html  
+
+-Robin
+
+-----Original Message-----
+From: R-sig-teaching <r-sig-teaching-bounces at r-project.org> On Behalf Of Manuel Sp?nola
+Sent: Tuesday, December 17, 2019 8:09 AM
+To: r-sig-teaching at r-project.org
+Subject: [R-sig-teaching] Making teaching material, html, pdf or powerpoint
+
+I am planning to make teaching material for data analysis in R.  I am trying to decide which output will be better. Html, pdf or powepoint.
+
+I found that flexdashboard could have the potential to make the material in html output which could include interactive graphs and tables.
+
+Any insight on this?
+
+Best,
+
+--
+*Manuel Sp?nola, Ph.D.*
+Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre Universidad Nacional Apartado 1350-3000 Heredia COSTA RICA mspinola at una.cr <mspinola at una.ac.cr> mspinola10 at gmail.com
+Tel?fono: (506) 8706 - 4662
+Personal website: Lobito de r?o <https://sites.google.com/site/lobitoderio/>
+Institutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>
+
+	[[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+From bob @end|ng |rom @t@t|@nd@org  Tue Dec 17 21:20:26 2019
+From: bob @end|ng |rom @t@t|@nd@org (User Hayden)
+Date: Tue, 17 Dec 2019 15:20:26 -0500
+Subject: [R-sig-teaching] [bret.larget@wisc.edu: Re: Making teaching
+ material, html, pdf or powerpoint]
+Message-ID: <20191217202026.GA18995@lilly.csoft.net>
+
+
+Bret's comments prompted some thought, though I think a full answer
+depends on context.  For example, Bret raises a point about what will
+be easy for students.  I agree that installing TeX can be pretty
+painful, but was the OP about use by students or only about use by the
+teacher?
+
+To be a bit more specific about equations in HTML, you can get a few
+lines of code from the MathJax site that you add to the header of an
+HTML document.  Then you can insert TeX into the document for any
+mathematics you want to include.  There are some minor adjustments you
+have to make because the two languages have different syntax -- see
+the MathJax site. I create the equations in LyX so I do not even need
+to know TeX -- just install it.  
+
+
+----- Forwarded message from BRET R LARGET <bret.larget at wisc.edu> -----
+
+Date: Tue, 17 Dec 2019 16:15:58 +0000
+From: BRET R LARGET <bret.larget at wisc.edu>
+To: Manuel Sp?nola <mspinola10 at gmail.com>, "r-sig-teaching at r-project.org"
+	<r-sig-teaching at r-project.org>
+Subject: Re: [R-sig-teaching]  Making teaching material, html, pdf or
+	powerpoint
+
+I usually make HTML and post the notes and use the notes for lecture presentation. I scroll through the HTML rather than show static slides. HTML is better now than it used to be to show mathematical notation well. I used to use PDF. It is easier for students to knit a document into HTML than into PDF (because the latter requires installing LaTeX), so this is what I ask them to do.
+
+-Bret
+
+________________________________
+From: R-sig-teaching <r-sig-teaching-bounces at r-project.org> on behalf of Manuel Sp?nola <mspinola10 at gmail.com>
+Sent: Tuesday, December 17, 2019 10:08 AM
+To: r-sig-teaching at r-project.org <r-sig-teaching at r-project.org>
+Subject: [R-sig-teaching] Making teaching material, html, pdf or powerpoint
+
+I am planning to make teaching material for data analysis in R.  I am
+trying to decide which output will be better. Html, pdf or powepoint.
+
+I found that flexdashboard could have the potential to make the material in
+html output which could include interactive graphs and tables.
+
+Any insight on this?
+
+Best,
+
+--
+*Manuel Sp?nola, Ph.D.*
+Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre
+Universidad Nacional
+Apartado 1350-3000
+Heredia
+COSTA RICA
+mspinola at una.cr <mspinola at una.ac.cr>
+mspinola10 at gmail.com
+Tel?fono: (506) 8706 - 4662
+Personal website: Lobito de r?o <https://sites.google.com/site/lobitoderio/>
+Institutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>
+
+        [[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+	[[alternative HTML version deleted]]
+
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+----- End forwarded message -----
+
+-- 
+
+      _
+     | |          Robert W. Hayden
+     | |          5 Howard Street, Apartment 206
+    /  |          Wilton, New Hampshire 03086  USA
+   |   |          
+   |   |          email: bob@ the site below
+  /    |          website: http://statland.org
+ |   x /          
+ ''''''
+
+
+From m@p|no|@10 @end|ng |rom gm@||@com  Fri Dec 20 16:04:31 2019
+From: m@p|no|@10 @end|ng |rom gm@||@com (=?UTF-8?Q?Manuel_Sp=C3=ADnola?=)
+Date: Fri, 20 Dec 2019 09:04:31 -0600
+Subject: [R-sig-teaching] 
+ Making teaching material, html, pdf or powerpoint
+In-Reply-To: <BYAPR13MB23598CA4B287E01C7AC0F089A3500@BYAPR13MB2359.namprd13.prod.outlook.com>
+References: <CABkCotR357KJWFunG4KCbYXaLFBFc_vjexVgLT=6iMB1gWrjRg@mail.gmail.com>
+ <BYAPR13MB23598CA4B287E01C7AC0F089A3500@BYAPR13MB2359.namprd13.prod.outlook.com>
+Message-ID: <CABkCotQG2WTpX3Sd-dvdpudPA_c+OzS3oTJkzJ-xjQfEmdKBmg@mail.gmail.com>
+
+Thank you very much to all for the answers.
+
+Manuel
+
+El mar., 17 dic. 2019 a las 12:14, Robin A Donatello (<
+rdonatello at csuchico.edu>) escribi?:
+
+> I concur with what others have said, use a RMarkdown file and create both
+> HTML to present in class/on the web and a PDF for those that want to print
+> a hard copy.
+> You can also look into the bookdown package
+>
+> Here are some of my examples of lecture notes using bookdown
+> https://norcalbiostat.github.io/AppliedStatistics_notes/  and individual
+> assignments that are available as HTML and pdf.
+> https://norcalbiostat.github.io/MATH130/notes/07_factors.html
+>
+> -Robin
+>
+> -----Original Message-----
+> From: R-sig-teaching <r-sig-teaching-bounces at r-project.org> On Behalf Of
+> Manuel Sp?nola
+> Sent: Tuesday, December 17, 2019 8:09 AM
+> To: r-sig-teaching at r-project.org
+> Subject: [R-sig-teaching] Making teaching material, html, pdf or powerpoint
+>
+> I am planning to make teaching material for data analysis in R.  I am
+> trying to decide which output will be better. Html, pdf or powepoint.
+>
+> I found that flexdashboard could have the potential to make the material
+> in html output which could include interactive graphs and tables.
+>
+> Any insight on this?
+>
+> Best,
+>
+> --
+> *Manuel Sp?nola, Ph.D.*
+> Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre
+> Universidad Nacional Apartado 1350-3000 Heredia COSTA RICA mspinola at una.cr
+> <mspinola at una.ac.cr> mspinola10 at gmail.com
+> Tel?fono: (506) 8706 - 4662
+> Personal website: Lobito de r?o <
+> https://sites.google.com/site/lobitoderio/>
+> Institutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+-- 
+*Manuel Sp?nola, Ph.D.*
+Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre
+Universidad Nacional
+Apartado 1350-3000
+Heredia
+COSTA RICA
+mspinola at una.cr <mspinola at una.ac.cr>
+mspinola10 at gmail.com
+Tel?fono: (506) 8706 - 4662
+Personal website: Lobito de r?o <https://sites.google.com/site/lobitoderio/>
+Institutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>
+
+	[[alternative HTML version deleted]]
+
+

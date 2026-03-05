@@ -1,0 +1,1027 @@
+From gps at asu.edu  Mon Oct  2 20:03:33 2017
+From: gps at asu.edu (Geoffrey Smith)
+Date: Mon, 2 Oct 2017 18:03:33 +0000
+Subject: [R-sig-teaching] Undergraduate finance
+Message-ID: <BN6PR06MB2610FD0E1208A60CD1EF116FA37E0@BN6PR06MB2610.namprd06.prod.outlook.com>
+
+Hello,
+
+
+I am teaching an undergraduate course in Investments next semester and I would like to incorporate a little R programming into it. Does anyone have any teaching tips or textbook suggestions?
+
+
+Thank you.
+
+
+Geoff
+
+
+Geoffrey Smith
+
+Clinical Associate Professor of Finance
+
+WP Carey School of Business
+
+Arizona State University
+
+	[[alternative HTML version deleted]]
+
+
+From dr.of.chaos at gmail.com  Tue Nov 14 21:49:15 2017
+From: dr.of.chaos at gmail.com (Brian Dennis)
+Date: Tue, 14 Nov 2017 12:49:15 -0800
+Subject: [R-sig-teaching] R-sig-teaching Digest, Vol 97, Issue 1
+In-Reply-To: <mailman.27.1507024802.28956.r-sig-teaching@r-project.org>
+References: <mailman.27.1507024802.28956.r-sig-teaching@r-project.org>
+Message-ID: <CAEZOd2A8bScipPBpmBoTD6po-dojx-c_r-Q51-YQuVZvp7=svA@mail.gmail.com>
+
+My book, "The R Student Companion" (CRC Press), has a number of financial
+examples throughout (such as exponential growth, monthly loan payment,
+simulation of stochastic investment return).  It is one of the more
+elementary books on R available and is designed for high school or college
+science and math classes. Its premise is that R is way more than a
+statistics package; it is a comprehensive tool for scientific calculations,
+modeling, and graphing.
+
+One R to rule them all!
+
+Brian Dennis
+University of Idaho
+
+On Tue, Oct 3, 2017 at 3:00 AM, <r-sig-teaching-request at r-project.org>
+wrote:
+
+> Send R-sig-teaching mailing list submissions to
+>         r-sig-teaching at r-project.org
+>
+> To subscribe or unsubscribe via the World Wide Web, visit
+>         https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> or, via email, send a message with subject or body 'help' to
+>         r-sig-teaching-request at r-project.org
+>
+> You can reach the person managing the list at
+>         r-sig-teaching-owner at r-project.org
+>
+> When replying, please edit your Subject line so it is more specific
+> than "Re: Contents of R-sig-teaching digest..."
+>
+>
+> Today's Topics:
+>
+>    1. Undergraduate finance (Geoffrey Smith)
+>
+>
+> ----------------------------------------------------------------------
+>
+> Message: 1
+> Date: Mon, 2 Oct 2017 18:03:33 +0000
+> From: Geoffrey Smith <gps at asu.edu>
+> To: "r-sig-teaching at r-project.org" <r-sig-teaching at r-project.org>
+> Subject: [R-sig-teaching] Undergraduate finance
+> Message-ID:
+>         <BN6PR06MB2610FD0E1208A60CD1EF116FA37E0 at BN6PR06MB2610.
+> namprd06.prod.outlook.com>
+>
+> Content-Type: text/plain; charset="UTF-8"
+>
+> Hello,
+>
+>
+> I am teaching an undergraduate course in Investments next semester and I
+> would like to incorporate a little R programming into it. Does anyone have
+> any teaching tips or textbook suggestions?
+>
+>
+> Thank you.
+>
+>
+> Geoff
+>
+>
+> Geoffrey Smith
+>
+> Clinical Associate Professor of Finance
+>
+> WP Carey School of Business
+>
+> Arizona State University
+>
+>         [[alternative HTML version deleted]]
+>
+>
+>
+> ------------------------------
+>
+> Subject: Digest Footer
+>
+> _______________________________________________
+> R-sig-teaching mailing list
+> R-sig-teaching at r-project.org
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+> ------------------------------
+>
+> End of R-sig-teaching Digest, Vol 97, Issue 1
+> *********************************************
+>
+
+	[[alternative HTML version deleted]]
+
+
+From rpruim at calvin.edu  Wed Nov 15 02:19:05 2017
+From: rpruim at calvin.edu (Randall Pruim)
+Date: Wed, 15 Nov 2017 01:19:05 +0000
+Subject: [R-sig-teaching] Undergraduate finance
+In-Reply-To: <BN6PR06MB2610FD0E1208A60CD1EF116FA37E0@BN6PR06MB2610.namprd06.prod.outlook.com>
+References: <BN6PR06MB2610FD0E1208A60CD1EF116FA37E0@BN6PR06MB2610.namprd06.prod.outlook.com>
+Message-ID: <337E460F-FCE7-4291-AC5A-9E3A4C5AE834@calvin.edu>
+
+
+Here are my main suggestions:
+
+  1. Less Volume, More Creativity!
+  2. Use RStudio Server if you can.
+  3. Take advantage of (or create) learnr tutorials
+
+Here?s a bit more detail.
+
+There are lot of packages/authors/functions/etc out there.  You need to be selective in what you choose.  It is not enough to get R to do what you want done, you need the suite of tools you introduce to students to play well together.  The less you use R in the course, the more important this is.  The particular suite you choose will depend on the goals you have for your course and your students, the availability of functions/packages to support those goals, and your personal preferences (regarding things like style of API).
+
+I?ve given numerous presentations with the Less Volume, More Creativity theme (example: http://cvc.mosaic-web.org/Summer2017/Learn/LessVolume/LessVolume.html) ? but not always with the same underlying set of commands.  Here are some suites that I think work well together.
+
+* mosaic package + lattice graphics  (I now prefer ggformula graphics)
+* mosaic package + ggformula graphics
+* tidyverse (dplyr, readr, tidyr, etc.)
+
+If you make it your goal to keep the set of R commands you teach as lean and consistent as possible, while still capable of doing what you need, then are heading in the right direction.  I would start with the things you are quite sure you will need/want to use (For me this was formulas, since I knew I would need them for models.  That moved me to lattice graphics originally, and ggformula graphics now and led us to include many things in the mosaic package to make numerical summaries follow that same basic template.)  Work your way out from there ? always asking ?do I really need this? and does this play well with the other things on my list?
+
+Using an RStudio server means that (a) your students don?t have to install anything and (b) you can ensure everyone has the same working environment (installed packages, etc.)  It also safeguards against things like computer failure.  (If you have enough students, someone will fall asleep in the top bunk sending their laptop crashing to the floor?)
+
+learnr tutorials are very easy to write and provide a great way to demonstrate to your students how the things you have chosen work.  Interactive R sessions, and quizzes can be embedded in the tutorials.  Here?s an example:  http://rsconnect.calvin.edu/ggformula/introduction/.  I expect more of these will become available as more people see how easy they are to construct and how helpful they can be.
+
+?rjp
+
+
+
+
+
+On Oct 2, 2017, at 2:03 PM, Geoffrey Smith <gps at asu.edu<mailto:gps at asu.edu>> wrote:
+
+Hello,
+
+
+I am teaching an undergraduate course in Investments next semester and I would like to incorporate a little R programming into it. Does anyone have any teaching tips or textbook suggestions?
+
+
+Thank you.
+
+
+Geoff
+
+
+Geoffrey Smith
+
+Clinical Associate Professor of Finance
+
+WP Carey School of Business
+
+Arizona State University
+
+[[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org<mailto:R-sig-teaching at r-project.org> mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+	[[alternative HTML version deleted]]
+
+
+From nick at datacamp.com  Wed Nov 15 21:01:24 2017
+From: nick at datacamp.com (Nick Carchedi)
+Date: Wed, 15 Nov 2017 21:01:24 +0100
+Subject: [R-sig-teaching] Undergraduate finance
+In-Reply-To: <337E460F-FCE7-4291-AC5A-9E3A4C5AE834@calvin.edu>
+References: <BN6PR06MB2610FD0E1208A60CD1EF116FA37E0@BN6PR06MB2610.namprd06.prod.outlook.com>
+ <337E460F-FCE7-4291-AC5A-9E3A4C5AE834@calvin.edu>
+Message-ID: <CAGSSkmhikf_Av50S2riX6TsScLmS+kh2LfX-e_bB2B7RfUnNDg@mail.gmail.com>
+
+Hi Geoff, we've got a number of finance and time series related R courses
+on DataCamp, taught by some great people like Jeff Ryan and Rob Hyndman.
+We've made DataCamp free for use in classrooms, so it won't cost you or
+your students anything. More info if you're interested:
+
+* https://www.datacamp.com/groups/education
+* https://www.datacamp.com/tracks/quantitative-analyst-with-r
+
+Feel free to shoot me an email if you have any questions. Hope this helps!
+
+-- 
+Nick Carchedi
+Director of Content
+nick at datacamp.com
+617-775-9373
+
+On November 14, 2017 at 8:19:18 PM, Randall Pruim (rpruim at calvin.edu) wrote:
+
+
+Here are my main suggestions:
+
+1. Less Volume, More Creativity!
+2. Use RStudio Server if you can.
+3. Take advantage of (or create) learnr tutorials
+
+Here?s a bit more detail.
+
+There are lot of packages/authors/functions/etc out there. You need to be
+selective in what you choose. It is not enough to get R to do what you want
+done, you need the suite of tools you introduce to students to play well
+together. The less you use R in the course, the more important this is. The
+particular suite you choose will depend on the goals you have for your
+course and your students, the availability of functions/packages to support
+those goals, and your personal preferences (regarding things like style of
+API).
+
+I?ve given numerous presentations with the Less Volume, More Creativity
+theme (example:
+http://cvc.mosaic-web.org/Summer2017/Learn/LessVolume/LessVolume.html) ?
+but not always with the same underlying set of commands. Here are some
+suites that I think work well together.
+
+* mosaic package + lattice graphics (I now prefer ggformula graphics)
+* mosaic package + ggformula graphics
+* tidyverse (dplyr, readr, tidyr, etc.)
+
+If you make it your goal to keep the set of R commands you teach as lean
+and consistent as possible, while still capable of doing what you need,
+then are heading in the right direction. I would start with the things you
+are quite sure you will need/want to use (For me this was formulas, since I
+knew I would need them for models. That moved me to lattice graphics
+originally, and ggformula graphics now and led us to include many things in
+the mosaic package to make numerical summaries follow that same basic
+template.) Work your way out from there ? always asking ?do I really need
+this? and does this play well with the other things on my list?
+
+Using an RStudio server means that (a) your students don?t have to install
+anything and (b) you can ensure everyone has the same working environment
+(installed packages, etc.) It also safeguards against things like computer
+failure. (If you have enough students, someone will fall asleep in the top
+bunk sending their laptop crashing to the floor?)
+
+learnr tutorials are very easy to write and provide a great way to
+demonstrate to your students how the things you have chosen work.
+Interactive R sessions, and quizzes can be embedded in the tutorials.
+Here?s an example: http://rsconnect.calvin.edu/ggformula/introduction/. I
+expect more of these will become available as more people see how easy they
+are to construct and how helpful they can be.
+
+?rjp
+
+
+
+
+
+On Oct 2, 2017, at 2:03 PM, Geoffrey Smith <gps at asu.edu<mailto:gps at asu.edu>>
+wrote:
+
+Hello,
+
+
+I am teaching an undergraduate course in Investments next semester and I
+would like to incorporate a little R programming into it. Does anyone have
+any teaching tips or textbook suggestions?
+
+
+Thank you.
+
+
+Geoff
+
+
+Geoffrey Smith
+
+Clinical Associate Professor of Finance
+
+WP Carey School of Business
+
+Arizona State University
+
+[[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org<mailto:R-sig-teaching at r-project.org> mailing
+list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+[[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+	[[alternative HTML version deleted]]
+
+
+From abouelmakarim1962 at gmail.com  Wed Dec  6 14:57:00 2017
+From: abouelmakarim1962 at gmail.com (AbouEl-Makarim Aboueissa)
+Date: Wed, 6 Dec 2017 08:57:00 -0500
+Subject: [R-sig-teaching] Data Science Materials
+Message-ID: <CAE9stmff4jfSQECFW2L4+NSs8V9PX08TLUtqmN5rX=GTy9hQOw@mail.gmail.com>
+
+Dear All: good morning
+
+
+I am planning to teach a course in practical data science using R, may be
+in Fall 2018. I am wondering if someone have some materials on data science
+such as notes, R codes, and etc.
+
+It will be highly appreciated if they are willing to share such materials
+with others.
+
+
+with many thanks
+abou
+______________________
+
+
+*AbouEl-Makarim Aboueissa, PhD*
+
+*Professor of Statistics*
+
+*Department of Mathematics and Statistics*
+*University of Southern Maine*
+
+	[[alternative HTML version deleted]]
+
+
+From sander1981 at gmail.com  Wed Dec  6 15:33:21 2017
+From: sander1981 at gmail.com (Sander)
+Date: Wed, 6 Dec 2017 15:33:21 +0100
+Subject: [R-sig-teaching] Data Science Materials
+In-Reply-To: <CAE9stmff4jfSQECFW2L4+NSs8V9PX08TLUtqmN5rX=GTy9hQOw@mail.gmail.com>
+References: <CAE9stmff4jfSQECFW2L4+NSs8V9PX08TLUtqmN5rX=GTy9hQOw@mail.gmail.com>
+Message-ID: <CAHtLaM92U+MGgH6R-eVwZXdpEhYoMb13Pvq4uLMeHw-WUP35dw@mail.gmail.com>
+
+Dear Abou,
+
+Do you have a list of topics you'd like to discuss?
+
+Kind regards,
+Sander
+
+On Wed, Dec 6, 2017 at 2:57 PM, AbouEl-Makarim Aboueissa <
+abouelmakarim1962 at gmail.com> wrote:
+
+> Dear All: good morning
+>
+>
+> I am planning to teach a course in practical data science using R, may be
+> in Fall 2018. I am wondering if someone have some materials on data science
+> such as notes, R codes, and etc.
+>
+> It will be highly appreciated if they are willing to share such materials
+> with others.
+>
+>
+> with many thanks
+> abou
+> ______________________
+>
+>
+> *AbouEl-Makarim Aboueissa, PhD*
+>
+> *Professor of Statistics*
+>
+> *Department of Mathematics and Statistics*
+> *University of Southern Maine*
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+	[[alternative HTML version deleted]]
+
+
+From jleinaweaver at gmail.com  Wed Dec  6 15:36:34 2017
+From: jleinaweaver at gmail.com (Justin Leinaweaver)
+Date: Wed, 6 Dec 2017 08:36:34 -0600
+Subject: [R-sig-teaching] Data Science Materials
+In-Reply-To: <CAHtLaM92U+MGgH6R-eVwZXdpEhYoMb13Pvq4uLMeHw-WUP35dw@mail.gmail.com>
+References: <CAE9stmff4jfSQECFW2L4+NSs8V9PX08TLUtqmN5rX=GTy9hQOw@mail.gmail.com>
+ <CAHtLaM92U+MGgH6R-eVwZXdpEhYoMb13Pvq4uLMeHw-WUP35dw@mail.gmail.com>
+Message-ID: <CABre-Aq_ivG0Tewd-GZmKEOkyJKyiz4NssLa7S+1N8b89p3mYg@mail.gmail.com>
+
+You may also find the similar discussions on the R Studio community forum
+helpful.
+
+https://community.rstudio.com/tags/teaching
+
+Justin
+
+
+
+On Dec 6, 2017 8:33 AM, "Sander" <sander1981 at gmail.com> wrote:
+
+> Dear Abou,
+>
+> Do you have a list of topics you'd like to discuss?
+>
+> Kind regards,
+> Sander
+>
+> On Wed, Dec 6, 2017 at 2:57 PM, AbouEl-Makarim Aboueissa <
+> abouelmakarim1962 at gmail.com> wrote:
+>
+> > Dear All: good morning
+> >
+> >
+> > I am planning to teach a course in practical data science using R, may be
+> > in Fall 2018. I am wondering if someone have some materials on data
+> science
+> > such as notes, R codes, and etc.
+> >
+> > It will be highly appreciated if they are willing to share such materials
+> > with others.
+> >
+> >
+> > with many thanks
+> > abou
+> > ______________________
+> >
+> >
+> > *AbouEl-Makarim Aboueissa, PhD*
+> >
+> > *Professor of Statistics*
+> >
+> > *Department of Mathematics and Statistics*
+> > *University of Southern Maine*
+> >
+> >         [[alternative HTML version deleted]]
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+	[[alternative HTML version deleted]]
+
+
+From jorismeys at gmail.com  Wed Dec  6 15:53:14 2017
+From: jorismeys at gmail.com (Joris Meys)
+Date: Wed, 6 Dec 2017 15:53:14 +0100
+Subject: [R-sig-teaching] Data Science Materials
+In-Reply-To: <CABre-Aq_ivG0Tewd-GZmKEOkyJKyiz4NssLa7S+1N8b89p3mYg@mail.gmail.com>
+References: <CAE9stmff4jfSQECFW2L4+NSs8V9PX08TLUtqmN5rX=GTy9hQOw@mail.gmail.com>
+ <CAHtLaM92U+MGgH6R-eVwZXdpEhYoMb13Pvq4uLMeHw-WUP35dw@mail.gmail.com>
+ <CABre-Aq_ivG0Tewd-GZmKEOkyJKyiz4NssLa7S+1N8b89p3mYg@mail.gmail.com>
+Message-ID: <CAO1zAVbt0-wt3w4EhsbHXgE3UaLpGha4v-itKGBUxQr8BbB+xw@mail.gmail.com>
+
+For the practical side, you have the book of Hadley Wickham : R for Data
+Science. You can read this online here : http://r4ds.had.co.nz/
+
+This however doesn't cover the theoretical aspects, so much depends on what
+you want to teach. Also keep in mind that you might want to consider first
+whether you want to use R just for data preparation and exploration, or
+whether you want to teach programming in R. Both require a different
+approach. The book of Hadley Wickham is especially suited for the former. I
+can recommend the book Andrie and I wrote for the programming aspect. It's
+called "R for Dummies". But you can find that information also in different
+online sources for free.
+
+Cheers
+Joris
+
+On Wed, Dec 6, 2017 at 3:36 PM, Justin Leinaweaver <jleinaweaver at gmail.com>
+wrote:
+
+> You may also find the similar discussions on the R Studio community forum
+> helpful.
+>
+> https://community.rstudio.com/tags/teaching
+>
+> Justin
+>
+>
+>
+> On Dec 6, 2017 8:33 AM, "Sander" <sander1981 at gmail.com> wrote:
+>
+> > Dear Abou,
+> >
+> > Do you have a list of topics you'd like to discuss?
+> >
+> > Kind regards,
+> > Sander
+> >
+> > On Wed, Dec 6, 2017 at 2:57 PM, AbouEl-Makarim Aboueissa <
+> > abouelmakarim1962 at gmail.com> wrote:
+> >
+> > > Dear All: good morning
+> > >
+> > >
+> > > I am planning to teach a course in practical data science using R, may
+> be
+> > > in Fall 2018. I am wondering if someone have some materials on data
+> > science
+> > > such as notes, R codes, and etc.
+> > >
+> > > It will be highly appreciated if they are willing to share such
+> materials
+> > > with others.
+> > >
+> > >
+> > > with many thanks
+> > > abou
+> > > ______________________
+> > >
+> > >
+> > > *AbouEl-Makarim Aboueissa, PhD*
+> > >
+> > > *Professor of Statistics*
+> > >
+> > > *Department of Mathematics and Statistics*
+> > > *University of Southern Maine*
+> > >
+> > >         [[alternative HTML version deleted]]
+> > >
+> > > _______________________________________________
+> > > R-sig-teaching at r-project.org mailing list
+> > > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> > >
+> >
+> >         [[alternative HTML version deleted]]
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+-- 
+-----------
+
+Biowiskundedagen 2017-2018
+http://www.biowiskundedagen.ugent.be/
+
+-----------
+
+Joris Meys
+Statistical consultant
+
+Ghent University
+Faculty of Bioscience Engineering
+Department of Mathematical Modelling, Statistics and Bio-Informatics
+
+tel :  +32 (0)9 264 61 79
+Joris.Meys at Ugent.be
+-------------------------------
+Disclaimer : http://helpdesk.ugent.be/e-maildisclaimer.php
+
+	[[alternative HTML version deleted]]
+
+
+From abouelmakarim1962 at gmail.com  Wed Dec  6 16:55:23 2017
+From: abouelmakarim1962 at gmail.com (AbouEl-Makarim Aboueissa)
+Date: Wed, 6 Dec 2017 10:55:23 -0500
+Subject: [R-sig-teaching] Data Science Materials
+In-Reply-To: <CAHtLaM92U+MGgH6R-eVwZXdpEhYoMb13Pvq4uLMeHw-WUP35dw@mail.gmail.com>
+References: <CAE9stmff4jfSQECFW2L4+NSs8V9PX08TLUtqmN5rX=GTy9hQOw@mail.gmail.com>
+ <CAHtLaM92U+MGgH6R-eVwZXdpEhYoMb13Pvq4uLMeHw-WUP35dw@mail.gmail.com>
+Message-ID: <CAE9stmcFzi-5uA0hX0fPcdHa4CV8y12tKAAX-Ti1F8NtgPqOJA@mail.gmail.com>
+
+Dear Sander:
+
+
+This course will be a mixed of introduction to data science and introduction
+to statistical machine learning.
+
+
+
+*Topics to be covered (tentative)*
+
+
+-Data preparation
+
+-Exploratory data analysis and visualization
+
+-Cluster and classification (Supervised and unsupervised learning algorithms
+)
+
+-Principal component
+
+-Factor analysis
+
+-Logistic regression
+
+-Decision trees
+
+-Association rules
+
+-Model assessment
+
+-Classification
+
+-Bootstrap aggregation
+
+-Shrinkage regression
+
+
+
+with many thanks
+abou
+
+______________________
+
+
+*AbouEl-Makarim Aboueissa, PhD*
+
+*Professor of Statistics*
+
+*Department of Mathematics and Statistics*
+*University of Southern Maine*
+
+
+On Wed, Dec 6, 2017 at 9:33 AM, Sander <sander1981 at gmail.com> wrote:
+
+> Dear Abou,
+>
+> Do you have a list of topics you'd like to discuss?
+>
+> Kind regards,
+> Sander
+>
+> On Wed, Dec 6, 2017 at 2:57 PM, AbouEl-Makarim Aboueissa <
+> abouelmakarim1962 at gmail.com> wrote:
+>
+>> Dear All: good morning
+>>
+>>
+>> I am planning to teach a course in practical data science using R, may be
+>> in Fall 2018. I am wondering if someone have some materials on data
+>> science
+>> such as notes, R codes, and etc.
+>>
+>> It will be highly appreciated if they are willing to share such materials
+>> with others.
+>>
+>>
+>> with many thanks
+>> abou
+>> ______________________
+>>
+>>
+>> *AbouEl-Makarim Aboueissa, PhD*
+>>
+>> *Professor of Statistics*
+>>
+>> *Department of Mathematics and Statistics*
+>> *University of Southern Maine*
+>>
+>>         [[alternative HTML version deleted]]
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>
+>
+
+	[[alternative HTML version deleted]]
+
+
+From bob at statland.org  Wed Dec  6 19:58:37 2017
+From: bob at statland.org (User Hayden)
+Date: Wed, 6 Dec 2017 13:58:37 -0500
+Subject: [R-sig-teaching] Data Science Materials]
+Message-ID: <20171206185837.GA6778@lilly.csoft.net>
+
+
+Joris is much too modest.  His book is well worth buying.
+
+
+----- Forwarded message from Joris Meys <jorismeys at gmail.com> -----
+
+Date: Wed, 6 Dec 2017 15:53:14 +0100
+From: Joris Meys <jorismeys at gmail.com>
+To: R-sig-teaching <r-sig-teaching at r-project.org>
+Subject: Re: [R-sig-teaching] Data Science Materials
+
+For the practical side, you have the book of Hadley Wickham : R for Data
+Science. You can read this online here : http://r4ds.had.co.nz/
+
+This however doesn't cover the theoretical aspects, so much depends on what
+you want to teach. Also keep in mind that you might want to consider first
+whether you want to use R just for data preparation and exploration, or
+whether you want to teach programming in R. Both require a different
+approach. The book of Hadley Wickham is especially suited for the former. I
+can recommend the book Andrie and I wrote for the programming aspect. It's
+called "R for Dummies". But you can find that information also in different
+online sources for free.
+
+Cheers
+Joris
+
+On Wed, Dec 6, 2017 at 3:36 PM, Justin Leinaweaver <jleinaweaver at gmail.com>
+wrote:
+
+> You may also find the similar discussions on the R Studio community forum
+> helpful.
+>
+> https://community.rstudio.com/tags/teaching
+>
+> Justin
+>
+>
+>
+> On Dec 6, 2017 8:33 AM, "Sander" <sander1981 at gmail.com> wrote:
+>
+> > Dear Abou,
+> >
+> > Do you have a list of topics you'd like to discuss?
+> >
+> > Kind regards,
+> > Sander
+> >
+> > On Wed, Dec 6, 2017 at 2:57 PM, AbouEl-Makarim Aboueissa <
+> > abouelmakarim1962 at gmail.com> wrote:
+> >
+> > > Dear All: good morning
+> > >
+> > >
+> > > I am planning to teach a course in practical data science using R, may
+> be
+> > > in Fall 2018. I am wondering if someone have some materials on data
+> > science
+> > > such as notes, R codes, and etc.
+> > >
+> > > It will be highly appreciated if they are willing to share such
+> materials
+> > > with others.
+> > >
+> > >
+> > > with many thanks
+> > > abou
+> > > ______________________
+> > >
+> > >
+> > > *AbouEl-Makarim Aboueissa, PhD*
+> > >
+> > > *Professor of Statistics*
+> > >
+> > > *Department of Mathematics and Statistics*
+> > > *University of Southern Maine*
+> > >
+> > >         [[alternative HTML version deleted]]
+> > >
+> > > _______________________________________________
+> > > R-sig-teaching at r-project.org mailing list
+> > > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> > >
+> >
+> >         [[alternative HTML version deleted]]
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> >
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+-- 
+-----------
+
+Biowiskundedagen 2017-2018
+http://www.biowiskundedagen.ugent.be/
+
+-----------
+
+Joris Meys
+Statistical consultant
+
+Ghent University
+Faculty of Bioscience Engineering
+Department of Mathematical Modelling, Statistics and Bio-Informatics
+
+tel :  +32 (0)9 264 61 79
+Joris.Meys at Ugent.be
+-------------------------------
+Disclaimer : http://helpdesk.ugent.be/e-maildisclaimer.php
+
+	[[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+----- End forwarded message -----
+
+-- 
+
+      _
+     | |          Robert W. Hayden
+     | |          5 Howard Street, Apartment 206
+    /  |          Wilton, New Hampshire 03086  USA
+   |   |          
+   |   |          email: bob@ the site below
+  /    |          website: http://statland.org
+ |   x /          
+ ''''''
+
+
+From mspinola10 at gmail.com  Sat Dec  9 16:59:53 2017
+From: mspinola10 at gmail.com (=?UTF-8?Q?Manuel_Sp=C3=ADnola?=)
+Date: Sat, 9 Dec 2017 09:59:53 -0600
+Subject: [R-sig-teaching] learnr o similar package to make questions
+Message-ID: <CABkCotQbrSOXPA51=VbXJ7fAaiTOaFkmeb2V2gQqKg-PvK5yNg@mail.gmail.com>
+
+Dear list members,
+
+I would like to use learnr o a similar package to make questions but
+without to set the correct answer.  Apparently, in learnr you need to set a
+correct answer, but the downside is that the user can see the right answer
+to the question.
+
+Is there any alternative to this problem?
+
+Manuel
+
+-- 
+*Manuel Sp?nola, Ph.D.*
+Instituto Internacional en Conservaci?n y Manejo de Vida Silvestre
+Universidad Nacional
+Apartado 1350-3000
+Heredia
+COSTA RICA
+mspinola at una.cr <mspinola at una.ac.cr>
+mspinola10 at gmail.com
+Tel?fono: (506) 8706 - 4662
+Personal website: Lobito de r?o <https://sites.google.com/site/lobitoderio/>
+Institutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>
+
+	[[alternative HTML version deleted]]
+
+
+From lchihara at carleton.edu  Tue Dec 12 16:30:12 2017
+From: lchihara at carleton.edu (Laura Chihara)
+Date: Tue, 12 Dec 2017 09:30:12 -0600
+Subject: [R-sig-teaching] Data Science Materials
+In-Reply-To: <CAE9stmff4jfSQECFW2L4+NSs8V9PX08TLUtqmN5rX=GTy9hQOw@mail.gmail.com>
+References: <CAE9stmff4jfSQECFW2L4+NSs8V9PX08TLUtqmN5rX=GTy9hQOw@mail.gmail.com>
+Message-ID: <7a0cc765-4851-9496-ab83-4c9ebfd68055@carleton.edu>
+
+There are some R Tutorials in Data Science that were developed by Adam 
+Loy (Carleton), Shonda Kuiper (Grinnell) and me (Laura Chihara, Carleton 
+College) for an ACM grant.
+
+http://web.grinnell.edu/individuals/kuipers/stat2labs/RTutorials.html
+
+-Laura
+
+On 12/6/2017 7:57 AM, AbouEl-Makarim Aboueissa wrote:
+> Dear All: good morning
+>
+>
+> I am planning to teach a course in practical data science using R, may be
+> in Fall 2018. I am wondering if someone have some materials on data science
+> such as notes, R codes, and etc.
+>
+> It will be highly appreciated if they are willing to share such materials
+> with others.
+>
+>
+> with many thanks
+> abou
+> ______________________
+>
+>
+> *AbouEl-Makarim Aboueissa, PhD*
+>
+> *Professor of Statistics*
+>
+> *Department of Mathematics and Statistics*
+> *University of Southern Maine*
+>
+> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+**************************************
+Laura Chihara
+Professor of Mathematics and Statistics
+Department of Mathematics and Statistics
+Carleton College
+Northfield MN 55057
+507-222-4065
+
+
+From abouelmakarim1962 at gmail.com  Tue Dec 12 16:42:12 2017
+From: abouelmakarim1962 at gmail.com (AbouEl-Makarim Aboueissa)
+Date: Tue, 12 Dec 2017 10:42:12 -0500
+Subject: [R-sig-teaching] Data Science Materials
+In-Reply-To: <7a0cc765-4851-9496-ab83-4c9ebfd68055@carleton.edu>
+References: <CAE9stmff4jfSQECFW2L4+NSs8V9PX08TLUtqmN5rX=GTy9hQOw@mail.gmail.com>
+ <7a0cc765-4851-9496-ab83-4c9ebfd68055@carleton.edu>
+Message-ID: <CAE9stmc_yQh+zjhGPP-1HML2g83-EXzDO2jUuAqyz+VJ2arMSQ@mail.gmail.com>
+
+Dear Laura:
+
+Thank you very much. It will help a lot.
+
+with thanks
+abou
+
+______________________
+
+
+*AbouEl-Makarim Aboueissa, PhD*
+
+*Professor of Statistics*
+
+*Department of Mathematics and Statistics*
+*University of Southern Maine*
+
+
+On Tue, Dec 12, 2017 at 10:30 AM, Laura Chihara <lchihara at carleton.edu>
+wrote:
+
+> There are some R Tutorials in Data Science that were developed by Adam Loy
+> (Carleton), Shonda Kuiper (Grinnell) and me (Laura Chihara, Carleton
+> College) for an ACM grant.
+>
+> http://web.grinnell.edu/individuals/kuipers/stat2labs/RTutorials.html
+>
+> -Laura
+>
+> On 12/6/2017 7:57 AM, AbouEl-Makarim Aboueissa wrote:
+>
+>> Dear All: good morning
+>>
+>>
+>> I am planning to teach a course in practical data science using R, may be
+>> in Fall 2018. I am wondering if someone have some materials on data
+>> science
+>> such as notes, R codes, and etc.
+>>
+>> It will be highly appreciated if they are willing to share such materials
+>> with others.
+>>
+>>
+>> with many thanks
+>> abou
+>> ______________________
+>>
+>>
+>> *AbouEl-Makarim Aboueissa, PhD*
+>>
+>> *Professor of Statistics*
+>>
+>> *Department of Mathematics and Statistics*
+>> *University of Southern Maine*
+>>
+>>         [[alternative HTML version deleted]]
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>
+> **************************************
+> Laura Chihara
+> Professor of Mathematics and Statistics
+> Department of Mathematics and Statistics
+> Carleton College
+> Northfield MN 55057
+> 507-222-4065
+>
+>
+
+	[[alternative HTML version deleted]]
+
+

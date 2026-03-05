@@ -1,0 +1,55 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2016-11",
+  "messages": [
+    {
+      "id": "msg-5e15bc728f1b",
+      "message_id": "<CAP5kizQsZYn2G+-2ApGWK1mH1hLivsigar61SumEae=T4BGEJw@mail.gmail.com>",
+      "from_name": "Stratford, Jeff",
+      "from_email_hash": "54a361a3085cf16d612db11bff2149a694d760276d6d033e04083d257b039ce0",
+      "date": "2016-11-29T09:56:55-05:00",
+      "subject": "[R-sig-teaching] population models for undergraduates",
+      "subject_clean": "population models for undergraduates",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi everyone,\n\nI'm using R to make graphs for lecture notes and I hope to get to the point\nwhere students are reproducing graphs in lab.\n\nI can do very simple logistic growth models (example below) but can anyone\nshare more complicated models with lags etc?\n\nVery much appreciated,\n\nJeff\n\n\n#### pop size over time  ###\n\nr <- 0.033\nK <- 100\nt <- 1:250\nN0 <- 10\nN0\npoplog <- (K-N0)/N0\nNt  <- K/(1+(poplog)*exp(-r*t))\nNt\nplot(t, Nt, type=\"l\", lwd=3, cex.lab=1.5, cex.axis=1.5)\n\n\n********************************************************\nJeffrey A. Stratford, PhD\nDepartment of Biology and Health Sciences &\nDirector of Study Abroad\nOffice: Cohen Science Center 210\nAddress: 84 W South Street\nWilkes University, PA 18766 USA\n570-332-2942\nhttps://sites.google.com/a/wilkes.edu/stratford/home\nBlog http://concreteornithology.blogspot.com/\n********************************************************\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi everyone,\n\nI'm using R to make graphs for lecture notes and I hope to get to the point\nwhere students are reproducing graphs in lab.\n\nI can do very simple logistic growth models (example below) but",
+      "thread_id": "thread-5e15bc728f1b",
+      "thread_depth": 0,
+      "month": "2016-11"
+    },
+    {
+      "id": "msg-f93c180bf253",
+      "message_id": "<CANV9buRjSfmhJOaLHQyK=hcW=hXhZ-iQitwxUe2ipN52BxJMHQ@mail.gmail.com>",
+      "from_name": "Jeff Laux",
+      "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
+      "date": "2016-11-29T10:08:49-05:00",
+      "subject": "[R-sig-teaching] population models for undergraduates",
+      "subject_clean": "population models for undergraduates",
+      "in_reply_to": "<CAP5kizQsZYn2G+-2ApGWK1mH1hLivsigar61SumEae=T4BGEJw@mail.gmail.com>",
+      "references": [
+        "<CAP5kizQsZYn2G+-2ApGWK1mH1hLivsigar61SumEae=T4BGEJw@mail.gmail.com>"
+      ],
+      "body_plain": "Can you describe the \"more complicated model with lags\" that you are\ninterested in?  Can you write it out mathematically?\n\n\nOn Tue, Nov 29, 2016 at 9:56 AM, Stratford, Jeff <\njeffrey.stratford at wilkes.edu> wrote:\n\n> Hi everyone,\n>\n> I'm using R to make graphs for lecture notes and I hope to get to the point\n> where students are reproducing graphs in lab.\n>\n> I can do very simple logistic growth models (example below) but can anyone\n> share more complicated models with lags etc?\n>\n> Very much appreciated,\n>\n> Jeff\n>\n>\n> #### pop size over time  ###\n>\n> r <- 0.033\n> K <- 100\n> t <- 1:250\n> N0 <- 10\n> N0\n> poplog <- (K-N0)/N0\n> Nt  <- K/(1+(poplog)*exp(-r*t))\n> Nt\n> plot(t, Nt, type=\"l\", lwd=3, cex.lab=1.5, cex.axis=1.5)\n>\n>\n> ********************************************************\n> Jeffrey A. Stratford, PhD\n> Department of Biology and Health Sciences &\n> Director of Study Abroad\n> Office: Cohen Science Center 210\n> Address: 84 W South Street\n> Wilkes University, PA 18766 USA\n> 570-332-2942\n> https://sites.google.com/a/wilkes.edu/stratford/home\n> Blog http://concreteornithology.blogspot.com/\n> ********************************************************\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Can you describe the \"more complicated model with lags\" that you are\ninterested in?  Can you write it out mathematically?\n\n\nOn Tue, Nov 29, 2016 at 9:56 AM, Stratford, Jeff <\njeffrey.stratford at wilk",
+      "thread_id": "thread-5e15bc728f1b",
+      "thread_depth": 1,
+      "month": "2016-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-5e15bc728f1b",
+      "subject": "population models for undergraduates",
+      "message_count": 2,
+      "participants": [
+        "Jeff Laux",
+        "Stratford, Jeff"
+      ],
+      "started": "2016-11-29T09:56:55-05:00",
+      "last_reply": "2016-11-29T10:08:49-05:00",
+      "root_message_id": "msg-5e15bc728f1b"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2010-04",
+  "messages": [
+    {
+      "id": "msg-7ce87a78fd39",
+      "message_id": "<l2u4358fd1a1004222123r98f91258o925175b000e89855@mail.gmail.com>",
+      "from_name": "Daniel",
+      "from_email_hash": "b4984bc654c24fcfff736423605a340e37eb4c1871d0f82374415a09f4f2ec55",
+      "date": "2010-04-23T01:23:26-03:00",
+      "subject": "[R-sig-teaching] Vote concentration Equation",
+      "subject_clean": "Vote concentration Equation",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100423/5587875c/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100423/5587875c/attachment.pl>",
+      "thread_id": "thread-7ce87a78fd39",
+      "thread_depth": 0,
+      "month": "2010-04"
+    },
+    {
+      "id": "msg-11fc4ba37050",
+      "message_id": "<COL114-W3F6E17D1728DC02823802EF070@phx.gbl>",
+      "from_name": "Emilia Olofsson",
+      "from_email_hash": "bafae630e382157a99b98194c22006232bd3f31e4bb8641720251541a3816d21",
+      "date": "2010-04-23T21:25:24+02:00",
+      "subject": "[R-sig-teaching] Hi there!",
+      "subject_clean": "Hi there!",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100423/0a5d1d6d/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100423/0a5d1d6d/attachment.pl>",
+      "thread_id": "thread-11fc4ba37050",
+      "thread_depth": 0,
+      "month": "2010-04"
+    },
+    {
+      "id": "msg-ff3370a5fb1d",
+      "message_id": "<4BD8610C020000A600072017@uct5.uct.usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2010-04-28T16:23:40-04:00",
+      "subject": "[R-sig-teaching] Help with Goodness of Fit Test",
+      "subject_clean": "Help with Goodness of Fit Test",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100428/97fc4adf/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100428/97fc4adf/attachment.pl>",
+      "thread_id": "thread-ff3370a5fb1d",
+      "thread_depth": 0,
+      "month": "2010-04"
+    },
+    {
+      "id": "msg-ca965d9d0478",
+      "message_id": "<4BD9A14C.80006@gmail.com>",
+      "from_name": "Chi Ming Yau",
+      "from_email_hash": "bebd9dbec8b0e26195894f1251e76a74ec65d4731b29857dacc78afe28d31923",
+      "date": "2010-04-29T08:10:04-07:00",
+      "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 30, Issue 3",
+      "subject_clean": "R-sig-teaching Digest, Vol 30, Issue 3",
+      "in_reply_to": "<mailman.9.1272535203.4095.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.9.1272535203.4095.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": "Here's a good exposition on the topics:\n\nhttp://cran.r-project.org/doc/contrib/Ricci-distributions-en.pdf\n\nHope it helps.\n\nRegards,\n\nChi Yau\nhttp://r-tutor.com\n\n\n\nr-sig-teaching-request at r-project.org wrote:\n> Send R-sig-teaching mailing list submissions to\n> \tr-sig-teaching at r-project.org\n>\n> To subscribe or unsubscribe via the World Wide Web, visit\n> \thttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> or, via email, send a message with subject or body 'help' to\n> \tr-sig-teaching-request at r-project.org\n>\n> You can reach the person managing the list at\n> \tr-sig-teaching-owner at r-project.org\n>\n> When replying, please edit your Subject line so it is more specific\n> than \"Re: Contents of R-sig-teaching digest...\"\n>\n>\n> Today's Topics:\n>\n>    1. Help with Goodness of Fit Test (AbouEl-Makarim Aboueissa)\n>\n>\n> ----------------------------------------------------------------------\n>\n> Message: 1\n> Date: Wed, 28 Apr 2010 16:23:40 -0400\n> From: \"AbouEl-Makarim Aboueissa\" <aaboueissa at usm.maine.edu>\n> To: <R-sig-teaching at r-project.org>\n> Subject: [R-sig-teaching] Help with Goodness of Fit Test\n> Message-ID: <4BD8610C020000A600072017 at uct5.uct.usm.maine.edu>\n> Content-Type: text/plain\n>\n> Dear All:\n>  \n> Can someone help me how to conduct a Chi-square goodness of fit test in R. Also how to use for both discrete and continuous data.\n>  \n> For examples: how to test that the underlying distribution is Weibull or Poisson or Binomial, etc...\n>  \n> Whoever willing to help, please use any artificial data sets.\n>  \n> With many thanks\n> Abou\n>  \n>  \n>  \n> ==========================\n> AbouEl-Makarim Aboueissa, Ph.D.\n> Assistant Professor of Statistics\n> Department of Mathematics & Statistics\n> University of Southern Maine\n> 96 Falmouth Street\n> P.O. Box 9300\n> Portland, ME 04104-9300\n> USA\n>  \n>\n> Tel: (207) 228-8389\n> Fax: (207) 780-5607\n> Email: aaboueissa at usm.maine.edu\n>           aboueiss at yahoo.com\n>  \n> Web address:  http://www.usm.maine.edu/~aaboueissa/\n>  \n> Office: 301C Payson Smith\n>  \n>\n> \t[[alternative HTML version deleted]]\n>\n>\n>\n> ------------------------------\n>\n> _______________________________________________\n> R-sig-teaching mailing list\n> R-sig-teaching at r-project.org\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n> End of R-sig-teaching Digest, Vol 30, Issue 3\n> *********************************************\n>",
+      "body_snippet": "Here's a good exposition on the topics:\n\nhttp://cran.r-project.org/doc/contrib/Ricci-distributions-en.pdf\n\nHope it helps.\n\nRegards,\n\nChi Yau\nhttp://r-tutor.com\n\n\n\nr-sig-teaching-request at r-project.o",
+      "thread_id": "thread-ca965d9d0478",
+      "thread_depth": 0,
+      "month": "2010-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-7ce87a78fd39",
+      "subject": "Vote concentration Equation",
+      "message_count": 1,
+      "participants": [
+        "Daniel"
+      ],
+      "started": "2010-04-23T01:23:26-03:00",
+      "last_reply": "2010-04-23T01:23:26-03:00",
+      "root_message_id": "msg-7ce87a78fd39"
+    },
+    {
+      "id": "thread-11fc4ba37050",
+      "subject": "Hi there!",
+      "message_count": 1,
+      "participants": [
+        "Emilia Olofsson"
+      ],
+      "started": "2010-04-23T21:25:24+02:00",
+      "last_reply": "2010-04-23T21:25:24+02:00",
+      "root_message_id": "msg-11fc4ba37050"
+    },
+    {
+      "id": "thread-ff3370a5fb1d",
+      "subject": "Help with Goodness of Fit Test",
+      "message_count": 1,
+      "participants": [
+        "AbouEl-Makarim Aboueissa"
+      ],
+      "started": "2010-04-28T16:23:40-04:00",
+      "last_reply": "2010-04-28T16:23:40-04:00",
+      "root_message_id": "msg-ff3370a5fb1d"
+    },
+    {
+      "id": "thread-ca965d9d0478",
+      "subject": "R-sig-teaching Digest, Vol 30, Issue 3",
+      "message_count": 1,
+      "participants": [
+        "Chi Ming Yau"
+      ],
+      "started": "2010-04-29T08:10:04-07:00",
+      "last_reply": "2010-04-29T08:10:04-07:00",
+      "root_message_id": "msg-ca965d9d0478"
+    }
+  ]
+}

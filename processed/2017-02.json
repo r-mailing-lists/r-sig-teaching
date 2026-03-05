@@ -1,0 +1,141 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2017-02",
+  "messages": [
+    {
+      "id": "msg-1816bd7b8c3e",
+      "message_id": "<CAHDp66DA=XRApwKneJ97KCf8dgNjZodf0TOgm_9yOO65DuLokw@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2017-02-09T12:58:23-05:00",
+      "subject": "[R-sig-teaching] Cronbach's Alpha Values",
+      "subject_clean": "Cronbach's Alpha Values",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\n\n\nhow to interpret the negative values of Cronbach's Alpha.\n\n*e.g.*,  alpha  = -0.229974  ,  alpha   = -0.172835\n\n\nthank you very much for your help.\n\n\nwith thanks\nsteve\n\n-- \nSteven M. Stoline\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\n\nhow to interpret the negative values of Cronbach's Alpha.\n\n*e.g.*,  alpha  = -0.229974  ,  alpha   = -0.172835\n\n\nthank you very much for your help.\n\n\nwith thanks\nsteve\n\n-- \nSteven M. Stoli",
+      "thread_id": "thread-1816bd7b8c3e",
+      "thread_depth": 0,
+      "month": "2017-02"
+    },
+    {
+      "id": "msg-75fe9eeb6340",
+      "message_id": "<CAMtGSx=kN15Q8eOODw=Gbszp+-yUWa7naBReJ1JfTLma8ig=kw@mail.gmail.com>",
+      "from_name": "Jeremy Miles",
+      "from_email_hash": "93779f83eef35a3e3c59beb0b3ec2e98cf0fe3b039837c0f5058d9d98cda88d7",
+      "date": "2017-02-09T18:37:34Z",
+      "subject": "[R-sig-teaching] Cronbach's Alpha Values",
+      "subject_clean": "Cronbach's Alpha Values",
+      "in_reply_to": "<CAHDp66DA=XRApwKneJ97KCf8dgNjZodf0TOgm_9yOO65DuLokw@mail.gmail.com>",
+      "references": [
+        "<CAHDp66DA=XRApwKneJ97KCf8dgNjZodf0TOgm_9yOO65DuLokw@mail.gmail.com>"
+      ],
+      "body_plain": "Almost always that you've made a mistake and haven't reversed some items\nthat should have been reversed. (Some software will do that automatically).\n\nUse check.keys=TRUE, and the alpha function (in the psych package) will\nautomatically reverse items if that needs to be done.\n\nJ\n\nOn Thu, 9 Feb 2017 at 09:58 Steven Stoline <sstoline at gmail.com> wrote:\n\n> Dear All:\n>\n>\n> how to interpret the negative values of Cronbach's Alpha.\n>\n> *e.g.*,  alpha  = -0.229974  ,  alpha   = -0.172835\n>\n>\n> thank you very much for your help.\n>\n>\n> with thanks\n> steve\n>\n> --\n> Steven M. Stoline\n> sstoline at gmail.com\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Almost always that you've made a mistake and haven't reversed some items\nthat should have been reversed. (Some software will do that automatically).\n\nUse check.keys=TRUE, and the alpha function (in th",
+      "thread_id": "thread-1816bd7b8c3e",
+      "thread_depth": 1,
+      "month": "2017-02"
+    },
+    {
+      "id": "msg-1049c171cac4",
+      "message_id": "<CANV9buQZptECnutASza57tvHWSUhDyTW3+ao-gNVxgR7ki=oEw@mail.gmail.com>",
+      "from_name": "Jeff Laux",
+      "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
+      "date": "2017-02-09T14:28:20-05:00",
+      "subject": "[R-sig-teaching] Cronbach's Alpha Values",
+      "subject_clean": "Cronbach's Alpha Values",
+      "in_reply_to": "<CAMtGSx=kN15Q8eOODw=Gbszp+-yUWa7naBReJ1JfTLma8ig=kw@mail.gmail.com>",
+      "references": [
+        "<CAHDp66DA=XRApwKneJ97KCf8dgNjZodf0TOgm_9yOO65DuLokw@mail.gmail.com>",
+        "<CAMtGSx=kN15Q8eOODw=Gbszp+-yUWa7naBReJ1JfTLma8ig=kw@mail.gmail.com>"
+      ],
+      "body_plain": "This isn't about how to use R to teach statistics, so it should go to the\nmain r-help listserv, not this SIG. Also, you should include some data and\ncode for people to run to get the output you got (since here you probably\nmade an innocent mistake).\n\n\nOn Thu, Feb 9, 2017 at 1:37 PM, Jeremy Miles <jeremy.miles at gmail.com> wrote:\n\n> Almost always that you've made a mistake and haven't reversed some items\n> that should have been reversed. (Some software will do that automatically).\n>\n> Use check.keys=TRUE, and the alpha function (in the psych package) will\n> automatically reverse items if that needs to be done.\n>\n> J\n>\n> On Thu, 9 Feb 2017 at 09:58 Steven Stoline <sstoline at gmail.com> wrote:\n>\n> > Dear All:\n> >\n> >\n> > how to interpret the negative values of Cronbach's Alpha.\n> >\n> > *e.g.*,  alpha  = -0.229974  ,  alpha   = -0.172835\n> >\n> >\n> > thank you very much for your help.\n> >\n> >\n> > with thanks\n> > steve\n> >\n> > --\n> > Steven M. Stoline\n> > sstoline at gmail.com\n> >\n> >         [[alternative HTML version deleted]]\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "This isn't about how to use R to teach statistics, so it should go to the\nmain r-help listserv, not this SIG. Also, you should include some data and\ncode for people to run to get the output you got (s",
+      "thread_id": "thread-1816bd7b8c3e",
+      "thread_depth": 2,
+      "month": "2017-02"
+    },
+    {
+      "id": "msg-42dc714d4685",
+      "message_id": "<CAHDp66B0WjH+LpPmAji4PjFsMmrnLmey_p8uq_sR++vNviwaYA@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2017-02-21T09:54:52-05:00",
+      "subject": "[R-sig-teaching] Cronbach's Alpha Values",
+      "subject_clean": "Cronbach's Alpha Values",
+      "in_reply_to": "<CAMtGSx=kN15Q8eOODw=Gbszp+-yUWa7naBReJ1JfTLma8ig=kw@mail.gmail.com>",
+      "references": [
+        "<CAHDp66DA=XRApwKneJ97KCf8dgNjZodf0TOgm_9yOO65DuLokw@mail.gmail.com>",
+        "<CAMtGSx=kN15Q8eOODw=Gbszp+-yUWa7naBReJ1JfTLma8ig=kw@mail.gmail.com>"
+      ],
+      "body_plain": "Dear All:\n\n\nI am using *alpha(data, **check.keys=TRUE) *to compute the Cronbach's\nAlpha. I am using  *check.keys=TRUE*  to automatically reverse items.\n\n\n*My question is: *how can I get the correlation tables (matrix) of the\nreversed items as part of the R output.\n\n\n\nthank you\nsteve\n\nOn Thu, Feb 9, 2017 at 1:37 PM, Jeremy Miles <jeremy.miles at gmail.com> wrote:\n\n>\n> Almost always that you've made a mistake and haven't reversed some items\n> that should have been reversed. (Some software will do that automatically).\n>\n> Use check.keys=TRUE, and the alpha function (in the psych package) will\n> automatically reverse items if that needs to be done.\n>\n> J\n>\n> On Thu, 9 Feb 2017 at 09:58 Steven Stoline <sstoline at gmail.com> wrote:\n>\n>> Dear All:\n>>\n>>\n>> how to interpret the negative values of Cronbach's Alpha.\n>>\n>> *e.g.*,  alpha  = -0.229974  ,  alpha   = -0.172835\n>>\n>>\n>> thank you very much for your help.\n>>\n>>\n>> with thanks\n>> steve\n>>\n>> --\n>> Steven M. Stoline\n>> sstoline at gmail.com\n>>\n>>         [[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>\n\n\n-- \nSteven M. Stoline\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\n\nI am using *alpha(data, **check.keys=TRUE) *to compute the Cronbach's\nAlpha. I am using  *check.keys=TRUE*  to automatically reverse items.\n\n\n*My question is: *how can I get the correlatio",
+      "thread_id": "thread-1816bd7b8c3e",
+      "thread_depth": 2,
+      "month": "2017-02"
+    },
+    {
+      "id": "msg-b8e3748d56f8",
+      "message_id": "<CANV9buT5Jrk9JMifP3RwkSRJniPJWK5Henv+RBdxSkn76+TJ8g@mail.gmail.com>",
+      "from_name": "Jeff Laux",
+      "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
+      "date": "2017-02-21T10:04:12-05:00",
+      "subject": "[R-sig-teaching] Cronbach's Alpha Values",
+      "subject_clean": "Cronbach's Alpha Values",
+      "in_reply_to": "<CAHDp66B0WjH+LpPmAji4PjFsMmrnLmey_p8uq_sR++vNviwaYA@mail.gmail.com>",
+      "references": [
+        "<CAHDp66DA=XRApwKneJ97KCf8dgNjZodf0TOgm_9yOO65DuLokw@mail.gmail.com>",
+        "<CAMtGSx=kN15Q8eOODw=Gbszp+-yUWa7naBReJ1JfTLma8ig=kw@mail.gmail.com>",
+        "<CAHDp66B0WjH+LpPmAji4PjFsMmrnLmey_p8uq_sR++vNviwaYA@mail.gmail.com>"
+      ],
+      "body_plain": "What does this have to do with discussions of the use of R in teaching\nstatistics?  This should go to the main r-help listserv, not this SIG.\nAlso, when you post this there, you should include some data for people to\nrun.  Please stop posting general R questions to this SIG.\n\n\nOn Tue, Feb 21, 2017 at 9:54 AM, Steven Stoline <sstoline at gmail.com> wrote:\n\n> Dear All:\n>\n>\n> I am using *alpha(data, **check.keys=TRUE) *to compute the Cronbach's\n> Alpha. I am using  *check.keys=TRUE*  to automatically reverse items.\n>\n>\n> *My question is: *how can I get the correlation tables (matrix) of the\n> reversed items as part of the R output.\n>\n>\n>\n> thank you\n> steve\n>\n> On Thu, Feb 9, 2017 at 1:37 PM, Jeremy Miles <jeremy.miles at gmail.com>\n> wrote:\n>\n> >\n> > Almost always that you've made a mistake and haven't reversed some items\n> > that should have been reversed. (Some software will do that\n> automatically).\n> >\n> > Use check.keys=TRUE, and the alpha function (in the psych package) will\n> > automatically reverse items if that needs to be done.\n> >\n> > J\n> >\n> > On Thu, 9 Feb 2017 at 09:58 Steven Stoline <sstoline at gmail.com> wrote:\n> >\n> >> Dear All:\n> >>\n> >>\n> >> how to interpret the negative values of Cronbach's Alpha.\n> >>\n> >> *e.g.*,  alpha  = -0.229974  ,  alpha   = -0.172835\n> >>\n> >>\n> >> thank you very much for your help.\n> >>\n> >>\n> >> with thanks\n> >> steve\n> >>\n> >> --\n> >> Steven M. Stoline\n> >> sstoline at gmail.com\n> >>\n> >>         [[alternative HTML version deleted]]\n> >>\n> >> _______________________________________________\n> >> R-sig-teaching at r-project.org mailing list\n> >> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >>\n> >\n>\n>\n> --\n> Steven M. Stoline\n> sstoline at gmail.com\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "What does this have to do with discussions of the use of R in teaching\nstatistics?  This should go to the main r-help listserv, not this SIG.\nAlso, when you post this there, you should include some da",
+      "thread_id": "thread-1816bd7b8c3e",
+      "thread_depth": 3,
+      "month": "2017-02"
+    },
+    {
+      "id": "msg-17a883f73c4f",
+      "message_id": "<CAE9stmew26BcO28jnGDozU+DWiOkczZKqovtdLBHw_CAGtHGhg@mail.gmail.com>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "57ed60c71c38f5aa7111618f7d433e719fa232f0704722ddb27973d2f4c216c5",
+      "date": "2017-02-24T12:13:39-05:00",
+      "subject": "[R-sig-teaching] Introduction to Modern Nonparametric Statistics",
+      "subject_clean": "Introduction to Modern Nonparametric Statistics",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\n\n\nI am teaching a nonparametric class (in fact it is half of the course). I\nam using the textbook titled \"Introduction to Modern Nonparametric\nStatistics\" by Higgins.\n\n\nI am wondering if someone has R  functions / codes based on the tests and\nexamples discussed in this book.\n\n\nThank you very much for your helps.\n\nwith many thanks\nabou\n______________________\nAbouEl-Makarim Aboueissa, PhD\nUniversity of Southern Maine\nDepartment of Mathematics and Statistics\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\n\nI am teaching a nonparametric class (in fact it is half of the course). I\nam using the textbook titled \"Introduction to Modern Nonparametric\nStatistics\" by Higgins.\n\n\nI am wondering if som",
+      "thread_id": "thread-17a883f73c4f",
+      "thread_depth": 0,
+      "month": "2017-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-1816bd7b8c3e",
+      "subject": "Cronbach's Alpha Values",
+      "message_count": 5,
+      "participants": [
+        "Jeff Laux",
+        "Jeremy Miles",
+        "Steven Stoline"
+      ],
+      "started": "2017-02-09T12:58:23-05:00",
+      "last_reply": "2017-02-21T10:04:12-05:00",
+      "root_message_id": "msg-1816bd7b8c3e"
+    },
+    {
+      "id": "thread-17a883f73c4f",
+      "subject": "Introduction to Modern Nonparametric Statistics",
+      "message_count": 1,
+      "participants": [
+        "AbouEl-Makarim Aboueissa"
+      ],
+      "started": "2017-02-24T12:13:39-05:00",
+      "last_reply": "2017-02-24T12:13:39-05:00",
+      "root_message_id": "msg-17a883f73c4f"
+    }
+  ]
+}

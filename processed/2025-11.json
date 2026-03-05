@@ -1,0 +1,36 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2025-11",
+  "messages": [
+    {
+      "id": "msg-c06d1643d75d",
+      "message_id": "<53cd9a1f1661f346807039ee3f7df217@transmittingscience.com>",
+      "from_name": "Soledad De Esteban-Trivigno",
+      "from_email_hash": "8f86d344535c2d752798833f8aa7b9b289c3f06b2847533734edeade3b9f0d42",
+      "date": "2025-11-21T18:51:00Z",
+      "subject": "[R-sig-teaching] Online course: Introduction to R: starting from scratch",
+      "subject_clean": "Online course: Introduction to R: starting from scratch",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear colleagues,\n\nTransmitting Science is offering a new edition of the course \n\"Introduction to R: starting from scratch\"\n\nCourse webpage: \nhttps://www.transmittingscience.com/courses/statistics-and-bioinformatics/introduction-r/\n\nDates and schedule: online live sessions on December 1st to 5th, 2025.\n\nThis course aims to give an introduction to R addressed to people who \nhave never used R.\n\nBy the end of the course, students will be able to:\n\n  \t* Understand R syntax and navigate RStudio software sufficiently to \nauthor (or identify, evaluate, and apply) code specific to their \nindividual research fields\n  \t* Identify and apply code and workflow strategies that promote \nreproducibility, efficiency, and collaboration\n  \t* Confidently anticipate and troubleshoot common errors and gain help \nfrom the R user community\n\nInstruction via lecture and live-coding will be followed by exercises \nand multiple-choice questions to practice and evaluate skills.  Students \nwill have the option to perform exercises with class data or their own \ndata.\n\nFor any questions, please write to courses at transmittingscience.com\n\nBest regards\n\nSole\n\n-- \nSoledad De Esteban-Trivigno, PhD\nDirector\nTransmitting Science\nwww.transmittingscience.com/courses\n\nBluesky @soledeesteban.bsky.social\nX @SoleDeEsteban\nOrcid: https://orcid.org/0000-0002-2049-0890\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear colleagues,\n\nTransmitting Science is offering a new edition of the course \n\"Introduction to R: starting from scratch\"\n\nCourse webpage: \nhttps://www.transmittingscience.com/courses/statistics-and-",
+      "thread_id": "thread-c06d1643d75d",
+      "thread_depth": 0,
+      "month": "2025-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-c06d1643d75d",
+      "subject": "Online course: Introduction to R: starting from scratch",
+      "message_count": 1,
+      "participants": [
+        "Soledad De Esteban-Trivigno"
+      ],
+      "started": "2025-11-21T18:51:00+00:00",
+      "last_reply": "2025-11-21T18:51:00+00:00",
+      "root_message_id": "msg-c06d1643d75d"
+    }
+  ]
+}

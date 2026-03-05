@@ -1,0 +1,596 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2009-03",
+  "messages": [
+    {
+      "id": "msg-4a651b044e57",
+      "message_id": "<f55e7cf50903011851w3d5eb203s669e4a597958f20f@mail.gmail.com>",
+      "from_name": "Ista Zahn",
+      "from_email_hash": "2e4c8f48786fb76b910812e6407745b24d3e39c79018966c1f928657fc9989f2",
+      "date": "2009-03-01T21:51:27-05:00",
+      "subject": "[R-sig-teaching] Unbalanced factorial designs",
+      "subject_clean": "Unbalanced factorial designs",
+      "in_reply_to": "<f55e7cf50902280658y463179fj1786b835717b6690@mail.gmail.com>",
+      "references": [
+        "<f55e7cf50902271653l78534df0lf08f3e0254cdfc40@mail.gmail.com>",
+        "<f55e7cf50902271701m1912b0a8obd0edb0c268466d5@mail.gmail.com>",
+        "<p06240828c5ce5fa20333@192.168.1.108>",
+        "<a695148b0902272134v40d38579r1bd97a89cf197c3d@mail.gmail.com>",
+        "<f55e7cf50902280658y463179fj1786b835717b6690@mail.gmail.com>"
+      ],
+      "body_plain": "Hi everyone,\nThanks for the helpful feedback on this paper!\n\nAn updated version of the paper can be downloaded from\nhttp://realpsychresearch.org/sites/default/files/InteractionsAndTypesOfSS.pdf.\nThe source file is at\nhttp://realpsychresearch.org/sites/default/files/InteractionsAndTypesOfSS.Rnw.\n\nPlease feel free to use/modify/distribute it (I'm releasing it under a\ncreative commons license).\n\n-Ista",
+      "body_snippet": "Hi everyone,\nThanks for the helpful feedback on this paper!\n\nAn updated version of the paper can be downloaded from\nhttp://realpsychresearch.org/sites/default/files/InteractionsAndTypesOfSS.pdf.\nThe s",
+      "thread_id": "thread-4a651b044e57",
+      "thread_depth": 0,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-77d532abd22e",
+      "message_id": "<20090309210908.GG14522@laplace.reed.edu>",
+      "from_name": "Albyn Jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2009-03-09T14:09:08-07:00",
+      "subject": "[R-sig-teaching] I need your thoughts on teaching with R",
+      "subject_clean": "I need your thoughts on teaching with R",
+      "in_reply_to": "<49B15D49.8030107@umn.edu>",
+      "references": [
+        "<49B15D49.8030107@umn.edu>"
+      ],
+      "body_plain": "I should have noted this at the beginning of the thread rather than\nnow, but forthe record, there is an R special-interest-group mailing\nlist called R-sig-teaching where this might also be of interest.\n\nalbyn\n\nOn Fri, Mar 06, 2009 at 11:28:41AM -0600, Andrew Zieffler wrote:\n> \n> Hello Everyone,\n> \n> I hope this email finds you all well. I have been asked to write a paper \n> that discusses some suggested practices based on learning theory and \n> cognition research for using R in teaching statistics. In thinking about \n> framing this paper I have been considering all of the instructional \n> choices that have to be made. For example, should one use the base \n> graphics, lattice, ggplots, etc? Should there be instructional sessions \n> just devoted to R or should it be completely integrated and students \n> introduced to functions and the like as they need it? What additional \n> supplemental materials should be made available to students to help them \n> learn R? And there are many more of these types of questions and \n> decisions that need to be made.\n> \n> As I have looked at many of the texts that have incorporated R they all \n> seem to have a similar approach of introducing simple operators such as \n> addition, subtraction, etc Then moving to assignment; the idea of \n> vectors; functions etc. It is unclear to me if there is a reason for \n> this pattern or if it is based on tradition? Maybe this lends itself to \n> developing better skills for students who will go on and do more \n> programming in R, but --- at least in our courses --- there are also a \n> host of students who will only ever use R as a data analysis tool.\n> \n> All of this is a very long-winded way of asking for your help. I would \n> love to hear your thoughts on the following:\n> \n> 1) What are the instructional decisions that a person needs to make if \n> they are going to be teaching statistics using R?\n> 2) What decisions have you yourself made and what were your reasons?\n> 3) How do you teach with R? Do you have sessions on R and other sessions \n> where content is taught? Is the computing fully integrated with the \n> content? Or some combination?\n> 4) If you have the heterogeneous group of students (some going on to \n> program in R, others just trying to get through, etc.) how do we deal \n> with this? Do we need to have different types of assignments and \n> materials for the different students?\n> \n> Thank you in advance.\n> Andy\n> \n> \n> -- \n> Andrew Zieffler, Ph.D.\n> Educational Psychology\n> University of Minnesota\n> 167 Educational Sciences Building\n> 56 East River Road\n> Minneapolis, MN 55455\n> Email: zief0002 at umn.edu\n> http://www.tc.umn.edu/~zief0002\n> \n> \n> --~--~---------~--~----~------------~-------~--~----~\n> You received this message because you are subscribed to the Google Groups \"Workshop on Integrating Computing into the Statistics Curricula\" group.\n> To post to this group, send email to computing-statistics-curricula at googlegroups.com\n> To unsubscribe from this group, send email to computing-statistics-curricula+unsubscribe at googlegroups.com\n> For more options, visit this group at http://groups.google.com/group/computing-statistics-curricula?hl=en\n> -~----------~----~----~----~------~----~------~--~---\n> \n>",
+      "body_snippet": "I should have noted this at the beginning of the thread rather than\nnow, but forthe record, there is an R special-interest-group mailing\nlist called R-sig-teaching where this might also be of interest",
+      "thread_id": "thread-77d532abd22e",
+      "thread_depth": 0,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-0a75ab9d0f85",
+      "message_id": "<49B61FAE.9010106@tu-bs.de>",
+      "from_name": "markus kossner",
+      "from_email_hash": "d5ad76e2340ca0bc8f14c27b0c921dbe89ef11d23d73a41ccec8c52835640fb7",
+      "date": "2009-03-10T09:07:10+01:00",
+      "subject": "[R-sig-teaching] I need your thoughts on teaching with R",
+      "subject_clean": "I need your thoughts on teaching with R",
+      "in_reply_to": "<20090309210908.GG14522@laplace.reed.edu>",
+      "references": [
+        "<49B15D49.8030107@umn.edu>",
+        "<20090309210908.GG14522@laplace.reed.edu>"
+      ],
+      "body_plain": "Albyn Jones wrote:\n> I should have noted this at the beginning of the thread rather than\n> now, but forthe record, there is an R special-interest-group mailing\n> list called R-sig-teaching where this might also be of interest.\n>\n> albyn\n>\n> On Fri, Mar 06, 2009 at 11:28:41AM -0600, Andrew Zieffler wrote:\n>   \n>> Hello Everyone,\n>>\n>> I hope this email finds you all well. I have been asked to write a paper \n>> that discusses some suggested practices based on learning theory and \n>> cognition research for using R in teaching statistics. In thinking about \n>> framing this paper I have been considering all of the instructional \n>> choices that have to be made. For example, should one use the base \n>> graphics, lattice, ggplots, etc? Should there be instructional sessions \n>> just devoted to R or should it be completely integrated and students \n>> introduced to functions and the like as they need it? What additional \n>> supplemental materials should be made available to students to help them \n>> learn R? And there are many more of these types of questions and \n>> decisions that need to be made.\n>>\n>> As I have looked at many of the texts that have incorporated R they all \n>> seem to have a similar approach of introducing simple operators such as \n>> addition, subtraction, etc Then moving to assignment; the idea of \n>> vectors; functions etc. It is unclear to me if there is a reason for \n>> this pattern or if it is based on tradition? Maybe this lends itself to \n>> developing better skills for students who will go on and do more \n>> programming in R, but --- at least in our courses --- there are also a \n>> host of students who will only ever use R as a data analysis tool.\n>>\n>> All of this is a very long-winded way of asking for your help. I would \n>> love to hear your thoughts on the following:\n>>\n>> 1) What are the instructional decisions that a person needs to make if \n>> they are going to be teaching statistics using R?\n>> 2) What decisions have you yourself made and what were your reasons?\n>> 3) How do you teach with R? Do you have sessions on R and other sessions \n>> where content is taught? Is the computing fully integrated with the \n>> content? Or some combination?\n>> 4) If you have the heterogeneous group of students (some going on to \n>> program in R, others just trying to get through, etc.) how do we deal \n>> with this? Do we need to have different types of assignments and \n>> materials for the different students?\n>>\n>> Thank you in advance.\n>> Andy\n>>\n>>\n>> -- \n>> Andrew Zieffler, Ph.D.\n>> Educational Psychology\n>> University of Minnesota\n>> 167 Educational Sciences Building\n>> 56 East River Road\n>> Minneapolis, MN 55455\n>> Email: zief0002 at umn.edu\n>> http://www.tc.umn.edu/~zief0002\n>>\n>>\n>> --~--~---------~--~----~------------~-------~--~----~\n>> You received this message because you are subscribed to the Google Groups \"Workshop on Integrating Computing into the Statistics Curricula\" group.\n>> To post to this group, send email to computing-statistics-curricula at googlegroups.com\n>> To unsubscribe from this group, send email to computing-statistics-curricula+unsubscribe at googlegroups.com\n>> For more options, visit this group at http://groups.google.com/group/computing-statistics-curricula?hl=en\n>> -~----------~----~----~----~------~----~------~--~---\n>>\n>>\n>>     \n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>   \nDear Andrew,\nas it seams to me that you will be interested in teaching data analysis \nand/or Resgression analysis let me point you at\nJulian Faraway's excellent and free book  'Practical Regression and \nANOVA using R' .\nFaraway uses defined examples for using the various data analysis tools \nwithin R and comments on their use, rather than\ntalking too much about variables, functions...\nThat might be a good start for you. There's also a package 'faraway' \nthat includes the examples... very great work!\nYou can find all that directly in the CRAN or just google 'faraway book'\n\nCheers Markus",
+      "body_snippet": "Albyn Jones wrote:\n> I should have noted this at the beginning of the thread rather than\n> now, but forthe record, there is an R special-interest-group mailing\n> list called R-sig-teaching where this ",
+      "thread_id": "thread-77d532abd22e",
+      "thread_depth": 1,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-edce1f4f4fd4",
+      "message_id": "<63566160FBD1BE43873B5A100A4222DF0A19BC69@mailbe17.email.Vanderbilt.edu>",
+      "from_name": "Brown, Tony Nicholas",
+      "from_email_hash": "aa79a822cbfc04046a2861b871a9154b573cdf086dd6794fc64918d661e8cae6",
+      "date": "2009-03-11T18:25:35-05:00",
+      "subject": "[R-sig-teaching] I need your thoughts on teaching with R",
+      "subject_clean": "I need your thoughts on teaching with R",
+      "in_reply_to": "<mailman.5.1236682803.21030.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.5.1236682803.21030.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": "Andrew,\n\nI teach a two-course statistics sequence in sociology using R. Here are\nmy responses to your four questions:\n\nQ1. and Q2. The tough part is how to integrate teaching statistics\n(i.e., theory) with learning R (i.e., practice). I solved this dilemma\nby providing all R code from my lectures beforehand and by doing R\ndemonstrations during lecture and by hosting a weekly one hour R lab.\nYou must choose the right textbook. Most R textbooks assume either\nfacility with programming schema or statistics. Usually, students I\nteach bring neither. I chose Verzani's \"Using R for Introductory\nStatistics\" and supplement it with advanced R textbooks, websites,\njournal articles, etc. You must decide whether you will (or expect\nstudents to) write functions vs. use functions included in the base\ninstallation. You need to decide what set of add-on packages students in\nyour discipline should be familiar with, if any. I try to use functions\nfrom the base installation as much as possible and then introduce a few\npackages that are absolutely necessary. You must decide whether you want\nstudents to use a GUI (e.g., R Commander, SciViews-R) or type commands.\nYou must decide whether you want them to use a command/text editor\n(e.g., TinnR, RWinEdt). I decided against both using a GUI and\ncommand/text editor--these are skills students can learn on their own.\n\nQ3. I use a combination of both approaches and actually encourage\nstudents to share R code that they have written. Sometimes we all learn\nabout a useful function and maybe a way to write better R code. I find\nthat the theory and practice have to be combined because some students\nhave little interest in quantitative methods but have to take the\nsequence because it is required.\n\nQ4. I allow students to collaborate on graded assignments in small\ngroups (n=3). These graded assignments must be turned in and completed\nas independent work but each student typically feels more or less\ncomfortable with certain topics. And as a small group they can rely on\neach other for support and encouragement. Those students who just want\nto pass the courses sometimes appreciate statistics or R more because of\nthe enthusiasm of another student. And students who get it learn to how\nexplain what they know to someone who may be struggling.\n\nCheers,\nTony\n\n------------------------------------------------------------------\nTony N. Brown, Ph.D.\nAssociate Professor of Sociology\nFaculty Head of Hank Ingram House, The Commons\nResearch Fellow, Vanderbilt Center for Nashville Studies\nVanderbilt University\n(615) 322-7518\n(615) 322-7505 fax\ntony.n.brown at vanderbilt.edu",
+      "body_snippet": "Andrew,\n\nI teach a two-course statistics sequence in sociology using R. Here are\nmy responses to your four questions:\n\nQ1. and Q2. The tough part is how to integrate teaching statistics\n(i.e., theory)",
+      "thread_id": "thread-edce1f4f4fd4",
+      "thread_depth": 0,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-fc4dd9e40d63",
+      "message_id": "<D86C9EFF6AA3734193923FFA1EE4308B07D7DC65@nc-mail2.northland.edu>",
+      "from_name": "Derek Ogle",
+      "from_email_hash": "d8ab15f0ac0477824b0baa65b33adead59b0eceb86ebb5176308d5f8cceaa2ec",
+      "date": "2009-03-11T21:52:10-05:00",
+      "subject": "[R-sig-teaching] I need your thoughts on teaching with R",
+      "subject_clean": "I need your thoughts on teaching with R",
+      "in_reply_to": "<20090309210908.GG14522@laplace.reed.edu>",
+      "references": [
+        "<49B15D49.8030107@umn.edu>",
+        "<20090309210908.GG14522@laplace.reed.edu>"
+      ],
+      "body_plain": "Andrew,\n\nI teach a intro statistics course to \"science\" students and some \"general education\" students and a \"biometry\" course to \"natural resources\" and a handful of other students at Northland College.  I have been using R in both of these statistics course, and in my fisheries science course, for four or five years now.  Below are my answers to your questions.  I would be happy to expand on these if you needed me to (though now coming back to re-read I see that I have typed quite a bit).\n\n\n> 1) What are the instructional decisions that a person needs to make if they are going to be teaching statistics using R?\n\nIn general, I don't really think that these decisions are unique to R.  No matter the software I believe that an instructor, especially of an introductory class, has to make a decision of whether learning the software is one of the outcomes of the course or not.  When I taught with other software (Minitab) I chose not to have learning the software as an outcome.  However, when I began using R I decided that at least some understanding of the software should be an outcome because I felt that knowing R was adding value to the student.  I believe that this added value was especially important in my upper-level courses so it became important to me to make sure that students in the intro class were gaining some knowledge of the software (R).\n\nOnce an instructor chooses to use R, I believe they must decide whether to use one of the GUIs, whether to use an external editor, which \"graphics system\" (base, ggplot2, lattice) to use, or whether to use package-specific or base functions.\n\n\n> 2) What decisions have you yourself made and what were your reasons?\n\nOf the latter items mentioned above I chose NOT to use a GUI.  I am familiar with RCMDR, for example, but, personally, I think the power of R rests in the command line.  I do use TINN-R as an external editor because I like the ability for students to save their commands and recycle them for future problems.  I have not seen any \"cost\" to the student of using TINN-R (it is simple to learn).  I chose to use base graphics because of the simplicity (in my mind) of their functions (for doing the basic graphics needed in most intro classes).\n\nI have also written a package of R functions that streamlines some of the base R functions.  For example, I have written a Subset() function that combines the base subset() and drop.levels() so that I don't have to explain to students the subtleties of why subset() does not drop the level from the list of possible levels for a factor variable after subsetting.  I have also written a function that can be used to provide a graphical display of probability calculations on a suite of probability distributions (motivated by a post by Dr. Bates on this list last year).  I did not want to create a large number of special purpose functions so I attempted to judiciously choose functions that simplified complexities or subtleties that I did not want students to be concerned with or that provided specific pedagogical advantages.  <BTW, my package is surely not up to the standards of other package developers but if anyone is interested it is available at www.rforge.net/NCStats.  A newer version using namespace will be up there when my semester is over in April.>  I also use some of the functions in the TeachingDemos package.\n\nFinally, I made the conscious decision of not using the phrases \"R programming\" or \"R coding.\"  It is my experience that many students do not consider themselves capable of \"computer programming.\"  I explain that the functions are simply replacements for menu'd commands but that they can be saved and reproduced.  At most, I refer to \"R scripts\" but never \"R programs.\"\n\n\n> 3) How do you teach with R? Do you have sessions on R and other sessions where content is taught? Is the computing fully integrated with the content? Or some combinationn?\n\nAt Northland, I teach two 2-hour sessions a week for the intro class.  Generally, I use some portion of this time for a traditional lecture, some portion to teach \"doing statistics with R\", and then some time for the students to work independently with R and ask me questions.  The traditional lecture and the \"doing statistics with R\" sections follow each other closely so I would consider them to be \"integrated.\"  In the \"doing statistics with R\" section I have found it better to provide students with a handout (easily accomplished by the instructor with Sweave()) rather than demonstrating with the computer or letting them type commands into the computer.  The two main advantages to this are that it is easier to keep students in roughly the same spot (if they are typing things in themselves then invariably someone forgot a comma, or misspelled, etc, and you spend all of your time troubleshooting individual students while others sit there or start surfing the net) and it lets the students see a correct set of commands on which they can take detailed notes (if they are typing in commands themselves they are just typing and not thinking and not taking notes that they can return to).\n\nIn the upper-level course, I fully integrate R into the notes and lecture.\n\nYou can seen what I do, if interested, because all of my class materials (\"book\", handouts, lecture slides) are available at www.ncfaculty.net/dogle/ and then follow the intro stats, biometry, or fisheries science \"buttons.\"\n\n\n> 4) If you have the heterogeneous group of students (some going on to program in R, others just trying to get through, etc.) how do we deal with this? Do we need to have different types of assignments and materials for the different students?\nAgain, I don't see this as a specific issue with using R -- i.e., even if we did all calculations by hand there would be heterogeneity amongst those that will continue with other statistics courses and those \"just trying to get through.\"\n\n\n> 5) A few more comments.\nWhen I first started teaching with R I was just learning the program myself.  I was terrible at teaching with it (and the students hated it) but I believed that it was the correct software to use.  Now, five years later, I am a much better teacher of statistics and R and, most of my students either \"enjoy\" R (I have seen students become more accepting of typing in a command line rather than a GUI -- I believe that this is due to the amount of texting and chatting that they do relative to students from just a few years ago) or are, at least, accepting of the idea of \"R\".  I even more firmly believe that this is the proper software for students to learn.  Be firm in your commitment to R if you choose to teach with it but also be patient with yourself and your students during the first few years.\n\nI do spend some time trying to teach students the \"lexicon of R\" as this makes communication about specific functions easier.  For example, my students will know about constructor and extractor functions, named and positional arguments, objects, assignment operators, vectors, data.frames, etc.  This has been a \"cost\" of using R in the sense that it does take time and, thus, \"something else\" had to go from my curriculum.\n\nI also think that R is especially beneficial for my biometry course which focuses on regression (simple, multiple, and indicator variable), anova (one- and two-way), and logistic regression because the vast majority of these topics use a common set of functions -- lm(), anova(), summary(), confint(), etc.  In addition, I have added a few functions (in my NCStats function) to make fitted line plots, residual plots, and to compare all slopes.  Thus, students can learn a vast number of topics with very few commands in R.  The same can be said in the intro class for t.test() (one-sample, two-sample, matched-pairs) and chisq.test() (goodness-of-fit and general chi-square).  This efficiency is very convenient and powerful.\n\nFinally, I have found R to be useful because students \"like\" free software, open-source concepts (at least at my environmental liberal arts college), and being on the \"cutting edge.\"  The more students like in your class the more likely they are to learn.\n\n\n\nDr. Derek H. Ogle\nAssociate Professor of Mathematical Sciences and Natural Resources\nNorthland College\n1411 Ellis Avenue\nBox?112\nAshland, WI \n715.682.1300\nwww.ncfaculty.net/dogle/\n\nPlease consider the environment before printing this email.",
+      "body_snippet": "Andrew,\n\nI teach a intro statistics course to \"science\" students and some \"general education\" students and a \"biometry\" course to \"natural resources\" and a handful of other students at Northland Colle",
+      "thread_id": "thread-77d532abd22e",
+      "thread_depth": 1,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-82f5c0c18fea",
+      "message_id": "<49B9228B.70002@usask.ca>",
+      "from_name": "Eric Lamb",
+      "from_email_hash": "52b848cbf4492040396c521f32ce6e3fbf252d0085ef98898950b41ff2e02a64",
+      "date": "2009-03-12T08:56:11-06:00",
+      "subject": "[R-sig-teaching] thoughts on teaching with R",
+      "subject_clean": "thoughts on teaching with R",
+      "in_reply_to": "<mailman.9.1236855612.24346.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.9.1236855612.24346.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": "Andrew,\nI am just finishing my first year teaching a graduate level stats course \nto Agriculture and other life sciences students. The course is \npractically oriented, and most of the students have taken 1 \nundergraduate course previous to mine.\n\n1) What are the instructional decisions that a person needs to make if \nthey are going to be teaching statistics using R?\n\nI think that the biggest decision is whether we are going to teach a lot \nof calculations by hand, or whether we are going to \"black box\" a lot of \nthe mathematics and teach the process of data analysis.\n\n2) What decisions have you yourself made and what were your reasons?\n\nI have chosen to focus on data analysis as a process. I think for the \naverage MSc. student it is most important that they be able to choose an \nappropriate method and apply it correctly than to understand the theory \nof statistics. I have chosen to use R rather than a program like SAS \nbecause it is so much more useful to the students.\n\nMost of my students will be going to work for small companies after \ngraduation that do not have the resources to purchase something like \nSAS. There was a bit of pushback from faculty who didn't like the idea \nthat the students were leaning a program other than their favorite one, \nbut they fully accepted the value of wider availability.\n\n\n\n3) How do you teach with R? Do you have sessions on R and other sessions \nwhere content is taught? Is the computing fully integrated with the \ncontent? Or some combinationn?\n\nMore than anything I like running examples \"live\" in class using R. I \nnotice a real difference in my students between a segment of powerpoint \n(passive, unresponsive...) to when I am running examples (engaged, \nsuggesting ideas on how an anlysis should proceed...). I provide them \nwith all of the scripts developed in and for class so they can re-run \nanalyses later on their own.\n\nThe students have weekly assignments where they are expected to apply \nthe tests they have seen in class to new datasets. I find the process of \nhaving them see an example and then figure out how to apply it in a new \nsituation to be very effective.\n\nI use Crawley's \"The R Book\" extensively. I like the books approach, \nintegrating both theory and practice. The examples are also very \nsuitable to my agriculture / life sciences students.\n\n4) If you have the heterogeneous group of students (some going on to \nprogram in R, others just trying to get through, etc.) how do we deal \nwith this? Do we need to have different types of assignments and \nmaterials for the different students?\n\nEveryone has to do the same assignments. Different groups have different \nchallenges, however. I have some students with an engineering background \nthat are very comfortable with the idea of coding but have no background \nin things such as experimental design and messy data. Oh the other hand \nI have ag students who found the idea of telling a computer what to do \nby typing very intimidating. Within 4 weeks of hands on practice I found \nmost students to be very comfortable with using the command line \ninterfaces, and since then almost all discusson and questions have \nfocussed on the use and interpretation of statistics.\n\nI hope this helps. In general I have found R to be rewarding to work \nwith, and the students have in general responded very well to it.\n\nCheers, Eric\n-- \nEric Lamb\nAssistant Professor, Plant Ecology and Biostatistics\nDept. of Plant Sciences, University of Saskatchewan\nhttp://homepage.usask.ca/egl388/index.html\n\n4D68 Agriculture Building\n306-966-1799\neric.lamb at usask.ca",
+      "body_snippet": "Andrew,\nI am just finishing my first year teaching a graduate level stats course \nto Agriculture and other life sciences students. The course is \npractically oriented, and most of the students have ta",
+      "thread_id": "thread-82f5c0c18fea",
+      "thread_depth": 0,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-c3a5e4f76bbf",
+      "message_id": "<20090324200414.GA10953@pitt.edu>",
+      "from_name": "Scott F. Kiesling",
+      "from_email_hash": "35ac5a6a61dc387002d73a38b852cb72a285cd752f907f6596af6902723a183f",
+      "date": "2009-03-24T16:04:14-04:00",
+      "subject": "[R-sig-teaching] Creating data",
+      "subject_clean": "Creating data",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi everyone-\n\nI'm currently teaching a graduate course in statistics for linguistics\nusing R. I have used up most of the 'authentic' data I have been able\nto collect for homework and demonstrations. I can think of plenty more\npossible data sets, but I am finding the creation of them challenging,\nand my creations are often somewhat unlealistic (generally, too\n'neat' and obvious). \n\nSo, I was wondering if anyone had any tips on creating 'realistic'\ndata sets, or links/books that describe it.\n\nFor a simple example, let's say I want to create a dataset with\nstudents from different countries and academic departments who took an\nEnglish test. I want to make some differences (significant and not)\nand possibly even interactions among the scores by country and\ndepartment. I have been doing this through various iterations of\nsample() and rnorm(), and jitter() to get some randomness, but things\nare still coming out pretty neatly.  Is this the right (or a good)\nmethod? Advice?\n\nThanks in advance-\n\nSFK\n\n-- \nScott F. Kiesling, PhD\n\nAssociate Professor \nDepartment Chair\n\nDepartment of Linguistics\nUniversity of Pittsburgh, 2816 CL\nPittsburgh, PA 15260\nhttp://www.linguistics.pitt.edu\nOffice: +1 412-624-5916",
+      "body_snippet": "Hi everyone-\n\nI'm currently teaching a graduate course in statistics for linguistics\nusing R. I have used up most of the 'authentic' data I have been able\nto collect for homework and demonstrations. I",
+      "thread_id": "thread-c3a5e4f76bbf",
+      "thread_depth": 0,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-506b6da461f2",
+      "message_id": "<49C93F52.5010704@u-paris10.fr>",
+      "from_name": "Christophe Genolini",
+      "from_email_hash": "188243ef6b743b8d3cdd972d5ac76d36899f18656fb52ce7f6a8f452409f5017",
+      "date": "2009-03-24T21:15:14+01:00",
+      "subject": "[R-sig-teaching] Creating data",
+      "subject_clean": "Creating data",
+      "in_reply_to": "<20090324200414.GA10953@pitt.edu>",
+      "references": [
+        "<20090324200414.GA10953@pitt.edu>"
+      ],
+      "body_plain": "Hi Scott\n\nWhen I create artificial data, I try to \"copy\" some real. So I mesure \nthe real data with as much parameters than I can (mean, var, cov, but \nalso percent of NA, outlier), then I generate the artificial one. It is \nalso possible to generate several sets that I finaly mixe (lika one set \nfor men, one set for women. Then I remove the variable \"gender\", I merge \nthe two set and I shuffle the resulting set.\n\n\nChristophe\n> Hi everyone-\n>\n> I'm currently teaching a graduate course in statistics for linguistics\n> using R. I have used up most of the 'authentic' data I have been able\n> to collect for homework and demonstrations. I can think of plenty more\n> possible data sets, but I am finding the creation of them challenging,\n> and my creations are often somewhat unlealistic (generally, too\n> 'neat' and obvious). \n>\n> So, I was wondering if anyone had any tips on creating 'realistic'\n> data sets, or links/books that describe it.\n>\n> For a simple example, let's say I want to create a dataset with\n> students from different countries and academic departments who took an\n> English test. I want to make some differences (significant and not)\n> and possibly even interactions among the scores by country and\n> department. I have been doing this through various iterations of\n> sample() and rnorm(), and jitter() to get some randomness, but things\n> are still coming out pretty neatly.  Is this the right (or a good)\n> method? Advice?\n>\n> Thanks in advance-\n>\n> SFK\n>\n>",
+      "body_snippet": "Hi Scott\n\nWhen I create artificial data, I try to \"copy\" some real. So I mesure \nthe real data with as much parameters than I can (mean, var, cov, but \nalso percent of NA, outlier), then I generate th",
+      "thread_id": "thread-c3a5e4f76bbf",
+      "thread_depth": 1,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-2d82b4574ec7",
+      "message_id": "<20090324205744.GC10953@pitt.edu>",
+      "from_name": "Scott F. Kiesling",
+      "from_email_hash": "35ac5a6a61dc387002d73a38b852cb72a285cd752f907f6596af6902723a183f",
+      "date": "2009-03-24T16:57:44-04:00",
+      "subject": "[R-sig-teaching] Creating data",
+      "subject_clean": "Creating data",
+      "in_reply_to": "<49C9439E.1000401@stats.waikato.ac.nz>",
+      "references": [
+        "<20090324200414.GA10953@pitt.edu>",
+        "<49C9439E.1000401@stats.waikato.ac.nz>"
+      ],
+      "body_plain": "Thanks-\nYes I'm using that as a text. I'm trying to have something fresh so\nthat I can add an example to demonstrations or give assessments with\nnew data.\n\nI'm also using Keith Johnson's text. \n\nSFK\n\nOn Wed, Mar 25, 2009 at 09:33:34AM +1300, Murray Jorgensen wrote:\n> From: Murray Jorgensen <maj at stats.waikato.ac.nz>\n> Date: Wed, 25 Mar 2009 09:33:34 +1300\n> To: \"Scott F. Kiesling\" <kiesling at pitt.edu>\n> Cc: r-sig-teaching at r-project.org\n> Subject: Re: [R-sig-teaching] Creating data\n\n> I take it you have looked at the data sets in Baayen's book\n> \"Analyzing linguistic data. A practical introduction to statistics\"  ?\n>\n> www.ualberta.ca/~baayen/publications/baayenCUPstats.pdf\n>\n> Cheers,  Murray Jorgensen\n>\n> Scott F. Kiesling wrote:\n>> Hi everyone-\n\n>> I'm currently teaching a graduate course in statistics for linguistics\n>> using R. I have used up most of the 'authentic' data I have been able\n>> to collect for homework and demonstrations. I can think of plenty more\n>> possible data sets, but I am finding the creation of them challenging,\n>> and my creations are often somewhat unlealistic (generally, too\n>> 'neat' and obvious). \n\n>> So, I was wondering if anyone had any tips on creating 'realistic'\n>> data sets, or links/books that describe it.\n\n>> For a simple example, let's say I want to create a dataset with\n>> students from different countries and academic departments who took an\n>> English test. I want to make some differences (significant and not)\n>> and possibly even interactions among the scores by country and\n>> department. I have been doing this through various iterations of\n>> sample() and rnorm(), and jitter() to get some randomness, but things\n>> are still coming out pretty neatly.  Is this the right (or a good)\n>> method? Advice?\n\n>> Thanks in advance-\n\n>> SFK\n-- \nScott F. Kiesling, PhD\n\nAssociate Professor \nDepartment Chair\n\nDepartment of Linguistics\nUniversity of Pittsburgh, 2816 CL\nPittsburgh, PA 15260\nhttp://www.linguistics.pitt.edu\nOffice: +1 412-624-5916",
+      "body_snippet": "Thanks-\nYes I'm using that as a text. I'm trying to have something fresh so\nthat I can add an example to demonstrations or give assessments with\nnew data.\n\nI'm also using Keith Johnson's text. \n\nSFK\n\n",
+      "thread_id": "thread-2d82b4574ec7",
+      "thread_depth": 0,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-0de39bebccb1",
+      "message_id": "<alpine.OSX.1.00.0903241748480.48092@SPHBSTR3083-2.local>",
+      "from_name": "Jacob Wegelin",
+      "from_email_hash": "1c54ec40e7a2b78db8a243e97a4352a9a1cee798da7db2cd033f2dfa317aa156",
+      "date": "2009-03-24T17:51:22-04:00",
+      "subject": "[R-sig-teaching] Creating data",
+      "subject_clean": "Creating data",
+      "in_reply_to": "<20090324200414.GA10953@pitt.edu>",
+      "references": [
+        "<20090324200414.GA10953@pitt.edu>"
+      ],
+      "body_plain": "Scott,\n\nHave you considered looking at phonetics data?  I refer for instance to f0 (fundamental pitch) as a time series, based on recordings of speech. I think I heard that (for instance) data from recordings of native Unangax speakers (Unangan/Unangas, also called Aleut) are posted on the Web somewhere.\n\nJake\n\nJacob A. Wegelin\nAssistant Professor\nDepartment of Biostatistics\nVirginia Commonwealth University\n730 East Broad Street Room 3006\nP. O. Box 980032\nRichmond VA 23298-0032\nU.S.A. \nE-mail: jwegelin at vcu.edu \nURL: http://www.people.vcu.edu/~jwegelin\n\nOn Tue, 24 Mar 2009, Scott F. Kiesling wrote:\n\n> Hi everyone-\n>\n> I'm currently teaching a graduate course in statistics for linguistics\n> using R. I have used up most of the 'authentic' data I have been able\n> to collect for homework and demonstrations. I can think of plenty more\n> possible data sets, but I am finding the creation of them challenging,\n> and my creations are often somewhat unlealistic (generally, too\n> 'neat' and obvious).\n>\n> So, I was wondering if anyone had any tips on creating 'realistic'\n> data sets, or links/books that describe it.\n>\n> For a simple example, let's say I want to create a dataset with\n> students from different countries and academic departments who took an\n> English test. I want to make some differences (significant and not)\n> and possibly even interactions among the scores by country and\n> department. I have been doing this through various iterations of\n> sample() and rnorm(), and jitter() to get some randomness, but things\n> are still coming out pretty neatly.  Is this the right (or a good)\n> method? Advice?\n>\n> Thanks in advance-\n>\n> SFK\n>\n> --\n> Scott F. Kiesling, PhD\n>\n> Associate Professor\n> Department Chair\n>\n> Department of Linguistics\n> University of Pittsburgh, 2816 CL\n> Pittsburgh, PA 15260\n> http://www.linguistics.pitt.edu\n> Office: +1 412-624-5916\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_snippet": "Scott,\n\nHave you considered looking at phonetics data?  I refer for instance to f0 (fundamental pitch) as a time series, based on recordings of speech. I think I heard that (for instance) data from re",
+      "thread_id": "thread-c3a5e4f76bbf",
+      "thread_depth": 1,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-134a7fd85ae2",
+      "message_id": "<008f01c9acd5$a6e61d80$f4b25880$@ca>",
+      "from_name": "John Fox",
+      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
+      "date": "2009-03-24T19:09:56-04:00",
+      "subject": "[R-sig-teaching] Creating data",
+      "subject_clean": "Creating data",
+      "in_reply_to": "<20090324200414.GA10953@pitt.edu>",
+      "references": [
+        "<20090324200414.GA10953@pitt.edu>"
+      ],
+      "body_plain": "Dear Scott,\n\nI have a strong preference for using real data. That said, one strategy for\nmanufacturing data is to simulate a statistical model, either the same model\nthat will be used to analyze the data (in which case the latter is the \"true\nmodel\") or a different model. For example, if you want some terms in the\nmodel to be \"non-significant,\" you'll get that with high probability if\nthese are omitted from the model used to generate the data. Similarly, you\ncan generate outliers by sampling errors from a heavy-tailed or suitable\nmixture distribution.\n\nI hope this helps,\n John \n\n\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org\n[mailto:r-sig-teaching-bounces at r-\n> project.org] On Behalf Of Scott F. Kiesling\n> Sent: March-24-09 4:04 PM\n> To: r-sig-teaching at r-project.org\n> Subject: [R-sig-teaching] Creating data\n> \n> Hi everyone-\n> \n> I'm currently teaching a graduate course in statistics for linguistics\n> using R. I have used up most of the 'authentic' data I have been able\n> to collect for homework and demonstrations. I can think of plenty more\n> possible data sets, but I am finding the creation of them challenging,\n> and my creations are often somewhat unlealistic (generally, too\n> 'neat' and obvious).\n> \n> So, I was wondering if anyone had any tips on creating 'realistic'\n> data sets, or links/books that describe it.\n> \n> For a simple example, let's say I want to create a dataset with\n> students from different countries and academic departments who took an\n> English test. I want to make some differences (significant and not)\n> and possibly even interactions among the scores by country and\n> department. I have been doing this through various iterations of\n> sample() and rnorm(), and jitter() to get some randomness, but things\n> are still coming out pretty neatly.  Is this the right (or a good)\n> method? Advice?\n> \n> Thanks in advance-\n> \n> SFK\n> \n> --\n> Scott F. Kiesling, PhD\n> \n> Associate Professor\n> Department Chair\n> \n> Department of Linguistics\n> University of Pittsburgh, 2816 CL\n> Pittsburgh, PA 15260\n> http://www.linguistics.pitt.edu\n> Office: +1 412-624-5916\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Dear Scott,\n\nI have a strong preference for using real data. That said, one strategy for\nmanufacturing data is to simulate a statistical model, either the same model\nthat will be used to analyze the d",
+      "thread_id": "thread-c3a5e4f76bbf",
+      "thread_depth": 1,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-a676a047303e",
+      "message_id": "<f8e6ff050903241817i6affed6cnd699650976d99d20@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2009-03-24T20:17:34-05:00",
+      "subject": "[R-sig-teaching] Creating data",
+      "subject_clean": "Creating data",
+      "in_reply_to": "<20090324200414.GA10953@pitt.edu>",
+      "references": [
+        "<20090324200414.GA10953@pitt.edu>"
+      ],
+      "body_plain": "> I'm currently teaching a graduate course in statistics for linguistics\n> using R. I have used up most of the 'authentic' data I have been able\n> to collect for homework and demonstrations. I can think of plenty more\n> possible data sets, but I am finding the creation of them challenging,\n> and my creations are often somewhat unlealistic (generally, too\n> 'neat' and obvious).\n\nWhy don't you give us some parameters of the types of data you are\nlooking for and we can suggest possible sources of new data.  You can\nsee a few links I've collected at http://delicious.com/hadley/data.\n\nIf you want something really big, there's also the data expo\nchallenge: http://stat-computing.org/dataexpo/2009/\n\nRegards,\n\nHadley\n\n-- \nhttp://had.co.nz/",
+      "body_snippet": "> I'm currently teaching a graduate course in statistics for linguistics\n> using R. I have used up most of the 'authentic' data I have been able\n> to collect for homework and demonstrations. I can thi",
+      "thread_id": "thread-c3a5e4f76bbf",
+      "thread_depth": 1,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-0976ac149566",
+      "message_id": "<a695148b0903251146h49580c56y7caac64a225f112e@mail.gmail.com>",
+      "from_name": "G. Jay Kerns",
+      "from_email_hash": "50e93b09ae5eba7f3237d0e4291e3a6b8825a6fb21853bb3678551306330b319",
+      "date": "2009-03-25T14:46:39-04:00",
+      "subject": "[R-sig-teaching] Creating data",
+      "subject_clean": "Creating data",
+      "in_reply_to": "<20090324200414.GA10953@pitt.edu>",
+      "references": [
+        "<20090324200414.GA10953@pitt.edu>"
+      ],
+      "body_plain": "Dear Scott,\n\nOn Tue, Mar 24, 2009 at 4:04 PM, Scott F. Kiesling <kiesling+ at pitt.edu> wrote:\n\n>\n> For a simple example, let's say I want to create a dataset with\n> students from different countries and academic departments who took an\n> English test. I want to make some differences (significant and not)\n> and possibly even interactions among the scores by country and\n> department.\n\n\nI've been meaning to do this for a while (for quizzes, demos, etc) but\ndidn't yet have the chance.  Below is something I quickly put\ntogether; I am sure that it can be improved.\n\nYou seemed to be looking for only one dependent variable but in my\ncase I am looking for several.\n\n\nDep. vars:  y1 - y4 (correlated)\nFixed effects: dept (4 levels) and region (3 levels).\nCovariate:  x_cov\n\nThe model is Y = X*B + Eps:\n\nX is the model matrix:  ~ x_cov + region + dept + region:dept\nB is the parameter matrix\nEps ~ multivariate normal (or t), mean 0, variance/covariance Sigma\n\nI used deviation contrasts; it would be easy to use treatment contrasts, too.\n\nIf multicollinearity is desired, the same trick as for Eps can be used\nto generate multiple correlated x-variables.\n\nI didn't spend time thinking about the parameters - clearly the most\nimportant part (after all, there are 50+ of them in a bloated model\nlike this). They are randomly generated which means that they will\ndisplay *radically* different behavior, even on different runs.  In\npractice, one would want to choose a parameter matrix thoughtfully and\nstick with it.\n\nEverything is in BigData, at the end.\n\nCheers,\nJay\n\n\n\n\n##################################\n# need pkgs corpcor, sfsmisc, mvtnorm\n\n\nset.seed(1)\nn <- 500   # sample size\n\n##################################\n# generate indep. vars\n\n# covariate\nx_cov <- rnorm(n, mean = 37, sd = 15)\n\n# fixed effects\nregion <- sample(c(\"Amer\", \"Euro\", \"Asia\"), size = n, prob = c(7,9,4),\nreplace = TRUE)\ndept <- sample(LETTERS[1:4], size = n, prob = c(2,3,3,4), replace = TRUE)\nregion <- factor(region)\ndept <- factor(dept)\n\nD <- data.frame(x_cov = x_cov, region = region, dept = dept)\n\nhead(D)  # the data\n\n\n##################################\n# model matrix\n\nX <- model.matrix( ~ x_cov + (region + dept)^2,\n                   data = D,\n                   contrasts = list( region=\"contr.sum\", dept=\"contr.sum\"))\n\nhead(X)  # the model matrix\n\n\n# num of parameters, for each dep variable\nk <- dim(X)[2]\n\n\n##################################\n# specify parameters\n# should think about these\n\nb1 <- rnorm(k, sd = 6)\nb2 <- rcauchy(k, scale = 9)\nb3 <- rnorm(k, sd = 12)\nb4 <- rcauchy(k, scale = 15)\n\nB <- matrix( c(b1, b2, b3, b4), ncol = 4)\n\nB   # the parameter matrix\n\n##################################\n# generate error\n\n# a correlation matrix\nr1 <- c(  1.0,  0.4, -0.5,  0.7 )\nr2 <- c(  0.4,  1.0,  0.2, -0.1 )\nr3 <- c( -0.5,  0.2,  1.0,  0.0 )\nr4 <- c(  0.7, -0.1,  0.0,  1.0 )\n\nCorr <- matrix( c(r1, r2, r3, r4), ncol = 4)\nlibrary(sfsmisc)\nCorr <- posdefify(Corr)\n\n# variances\n# tune Y correlation with the 1750\neps_sigma <- 1750*c(15, 2, 21, 5)\n\nlibrary(corpcor)\nSigma <- rebuild.cov(r = Corr, v = eps_sigma)\n\nlibrary(mvtnorm)\nEps <- rmvnorm(n, sigma = Sigma)\n#Eps <- rmvt(n, df = 2, sigma = Sigma)\n\n\n\n##################################\n# put it all together\n\nY <- data.frame( X %*% B + Eps )\nnames(Y) <- c(\"y1\", \"y2\", \"y3\", \"y4\")\n\n\nBigData <- cbind(Y,D)\n\nhead(BigData)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n***************************************************\nG. Jay Kerns, Ph.D.\nAssociate Professor\nDepartment of Mathematics & Statistics\nYoungstown State University\nYoungstown, OH 44555-0002 USA\nOffice: 1035 Cushwa Hall\nPhone: (330) 941-3310 Office (voice mail)\n-3302 Department\n-3170 FAX\nE-mail: gkerns at ysu.edu\nhttp://www.cc.ysu.edu/~gjkerns/",
+      "body_snippet": "Dear Scott,\n\nOn Tue, Mar 24, 2009 at 4:04 PM, Scott F. Kiesling <kiesling+ at pitt.edu> wrote:\n\n>\n> For a simple example, let's say I want to create a dataset with\n> students from different countries ",
+      "thread_id": "thread-c3a5e4f76bbf",
+      "thread_depth": 1,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-d43e28468918",
+      "message_id": "<40e66e0b0903251224w7378b232x61bcb8eb585429eb@mail.gmail.com>",
+      "from_name": "Douglas Bates",
+      "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
+      "date": "2009-03-25T14:24:53-05:00",
+      "subject": "[R-sig-teaching] Creating data",
+      "subject_clean": "Creating data",
+      "in_reply_to": "<a695148b0903251146h49580c56y7caac64a225f112e@mail.gmail.com>",
+      "references": [
+        "<20090324200414.GA10953@pitt.edu>",
+        "<a695148b0903251146h49580c56y7caac64a225f112e@mail.gmail.com>"
+      ],
+      "body_plain": "On Wed, Mar 25, 2009 at 1:46 PM, G. Jay Kerns <gkerns at ysu.edu> wrote:\n> Dear Scott,\n\n> On Tue, Mar 24, 2009 at 4:04 PM, Scott F. Kiesling <kiesling+ at pitt.edu> wrote:\n\n>>\n>> For a simple example, let's say I want to create a dataset with\n>> students from different countries and academic departments who took an\n>> English test. I want to make some differences (significant and not)\n>> and possibly even interactions among the scores by country and\n>> department.\n>\n>\n> I've been meaning to do this for a while (for quizzes, demos, etc) but\n> didn't yet have the chance. ?Below is something I quickly put\n> together; I am sure that it can be improved.\n>\n> You seemed to be looking for only one dependent variable but in my\n> case I am looking for several.\n>\n>\n> Dep. vars: ?y1 - y4 (correlated)\n> Fixed effects: dept (4 levels) and region (3 levels).\n> Covariate: ?x_cov\n>\n> The model is Y = X*B + Eps:\n>\n> X is the model matrix: ?~ x_cov + region + dept + region:dept\n> B is the parameter matrix\n> Eps ~ multivariate normal (or t), mean 0, variance/covariance Sigma\n>\n> I used deviation contrasts; it would be easy to use treatment contrasts, too.\n>\n> If multicollinearity is desired, the same trick as for Eps can be used\n> to generate multiple correlated x-variables.\n>\n> I didn't spend time thinking about the parameters - clearly the most\n> important part (after all, there are 50+ of them in a bloated model\n> like this). They are randomly generated which means that they will\n> display *radically* different behavior, even on different runs. ?In\n> practice, one would want to choose a parameter matrix thoughtfully and\n> stick with it.\n>\n> Everything is in BigData, at the end.\n\nSlightly off-topic but you may want to look at the 'exams' package by\nAchim Zeileis and Bettina Gruen\n\nhttp://cran.r-project.org/web/packages/exams/\n\nThe vignette for the package gives examples of incorporating the data\nset generating process into the document that will generate the exam\nquestions.  Even if you do not choose to use LaTeX to generate the\nexam it is still helpful to encapsulate the data generation process in\nsomething beyond an R script with some comments.  I know for myself\nthat even with comments in a script I soon forget exactly what is\nbeing simulated in a script with a name like 'simulate.R'.\n\n> ##################################\n> # need pkgs corpcor, sfsmisc, mvtnorm\n>\n>\n> set.seed(1)\n> n <- 500 ? # sample size\n>\n> ##################################\n> # generate indep. vars\n>\n> # covariate\n> x_cov <- rnorm(n, mean = 37, sd = 15)\n>\n> # fixed effects\n> region <- sample(c(\"Amer\", \"Euro\", \"Asia\"), size = n, prob = c(7,9,4),\n> replace = TRUE)\n> dept <- sample(LETTERS[1:4], size = n, prob = c(2,3,3,4), replace = TRUE)\n> region <- factor(region)\n> dept <- factor(dept)\n>\n> D <- data.frame(x_cov = x_cov, region = region, dept = dept)\n>\n> head(D) ?# the data\n>\n>\n> ##################################\n> # model matrix\n>\n> X <- model.matrix( ~ x_cov + (region + dept)^2,\n> ? ? ? ? ? ? ? ? ? data = D,\n> ? ? ? ? ? ? ? ? ? contrasts = list( region=\"contr.sum\", dept=\"contr.sum\"))\n>\n> head(X) ?# the model matrix\n>\n>\n> # num of parameters, for each dep variable\n> k <- dim(X)[2]\n>\n>\n> ##################################\n> # specify parameters\n> # should think about these\n>\n> b1 <- rnorm(k, sd = 6)\n> b2 <- rcauchy(k, scale = 9)\n> b3 <- rnorm(k, sd = 12)\n> b4 <- rcauchy(k, scale = 15)\n>\n> B <- matrix( c(b1, b2, b3, b4), ncol = 4)\n>\n> B ? # the parameter matrix\n>\n> ##################################\n> # generate error\n>\n> # a correlation matrix\n> r1 <- c( ?1.0, ?0.4, -0.5, ?0.7 )\n> r2 <- c( ?0.4, ?1.0, ?0.2, -0.1 )\n> r3 <- c( -0.5, ?0.2, ?1.0, ?0.0 )\n> r4 <- c( ?0.7, -0.1, ?0.0, ?1.0 )\n>\n> Corr <- matrix( c(r1, r2, r3, r4), ncol = 4)\n> library(sfsmisc)\n> Corr <- posdefify(Corr)\n>\n> # variances\n> # tune Y correlation with the 1750\n> eps_sigma <- 1750*c(15, 2, 21, 5)\n>\n> library(corpcor)\n> Sigma <- rebuild.cov(r = Corr, v = eps_sigma)\n>\n> library(mvtnorm)\n> Eps <- rmvnorm(n, sigma = Sigma)\n> #Eps <- rmvt(n, df = 2, sigma = Sigma)\n>\n>\n>\n> ##################################\n> # put it all together\n>\n> Y <- data.frame( X %*% B + Eps )\n> names(Y) <- c(\"y1\", \"y2\", \"y3\", \"y4\")\n>\n>\n> BigData <- cbind(Y,D)\n>\n> head(BigData)\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n> ***************************************************\n> G. Jay Kerns, Ph.D.\n> Associate Professor\n> Department of Mathematics & Statistics\n> Youngstown State University\n> Youngstown, OH 44555-0002 USA\n> Office: 1035 Cushwa Hall\n> Phone: (330) 941-3310 Office (voice mail)\n> -3302 Department\n> -3170 FAX\n> E-mail: gkerns at ysu.edu\n> http://www.cc.ysu.edu/~gjkerns/\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_snippet": "On Wed, Mar 25, 2009 at 1:46 PM, G. Jay Kerns <gkerns at ysu.edu> wrote:\n> Dear Scott,\n\n> On Tue, Mar 24, 2009 at 4:04 PM, Scott F. Kiesling <kiesling+ at pitt.edu> wrote:\n\n>>\n>> For a simple example,",
+      "thread_id": "thread-c3a5e4f76bbf",
+      "thread_depth": 2,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-eddf49758dd3",
+      "message_id": "<1238009985.2291.3.camel@localhost>",
+      "from_name": "Kenneth Roy Cabrera Torres",
+      "from_email_hash": "fcdb9f96c41977c27293aaf52be4b91e90128edb9c7f55167248d732fb0254f1",
+      "date": "2009-03-25T14:39:45-05:00",
+      "subject": "[R-sig-teaching] Statistics for transportation",
+      "subject_clean": "Statistics for transportation",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi R teachers:\n\nI want to know if anybody had have a\nexperience teaching statistics for\ntransportation engineers.\n\nThank you for any sugestion or help.\n\nKenneth",
+      "body_snippet": "Hi R teachers:\n\nI want to know if anybody had have a\nexperience teaching statistics for\ntransportation engineers.\n\nThank you for any sugestion or help.\n\nKenneth",
+      "thread_id": "thread-eddf49758dd3",
+      "thread_depth": 0,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-d36b02977d64",
+      "message_id": "<a695148b0903251615v5fd44b88k190e2b00cf2a5d72@mail.gmail.com>",
+      "from_name": "G. Jay Kerns",
+      "from_email_hash": "50e93b09ae5eba7f3237d0e4291e3a6b8825a6fb21853bb3678551306330b319",
+      "date": "2009-03-25T19:15:38-04:00",
+      "subject": "[R-sig-teaching] Creating data",
+      "subject_clean": "Creating data",
+      "in_reply_to": "<Pine.LNX.4.64.0903252327200.3712@paninaro.stat-math.wu-wien.ac.at>",
+      "references": [
+        "<20090324200414.GA10953@pitt.edu>",
+        "<a695148b0903251146h49580c56y7caac64a225f112e@mail.gmail.com>",
+        "<40e66e0b0903251224w7378b232x61bcb8eb585429eb@mail.gmail.com>",
+        "<Pine.LNX.4.64.0903252327200.3712@paninaro.stat-math.wu-wien.ac.at>"
+      ],
+      "body_plain": "Dear Doug and Achim,\n\n\nOn 3/25/09, Achim Zeileis <Achim.Zeileis at wu-wien.ac.at> wrote:\n>\n> Thanks for including us and advertising our package, Doug!\n>\n> Actually, we use our \"exams\" package to generate simple two-way ANOVA\n> examples in our stats exams at WU Wien. The approach is very similar to\n> the one previously suggested: generate some random regressors, compute the\n> model matrix, draw random coefficients, set certain coefficients to zero\n> (if there should be only some main effects) and then simulate the final\n> data.\n>\n> For a one-way ANOVA, there is an example in the package, see\n>    library(\"exams\")\n>    exams(\"anova\")\n> and see the underlying code in ~/inst/exercises/anova.Rnw.\n>\n> hth,\n> Z\n>\n\n\nThanks for the pointer to and example from the exams package.  I had\nheard about the package and flipped through the vignette, but didn't\nappreciate just how powerful this package could be.  Very, very cool.\n\nRegards,\nJay",
+      "body_snippet": "Dear Doug and Achim,\n\n\nOn 3/25/09, Achim Zeileis <Achim.Zeileis at wu-wien.ac.at> wrote:\n>\n> Thanks for including us and advertising our package, Doug!\n>\n> Actually, we use our \"exams\" package to gene",
+      "thread_id": "thread-d36b02977d64",
+      "thread_depth": 0,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-efa06cd8468d",
+      "message_id": "<20090326135219.GB13024@pitt.edu>",
+      "from_name": "Scott F. Kiesling",
+      "from_email_hash": "35ac5a6a61dc387002d73a38b852cb72a285cd752f907f6596af6902723a183f",
+      "date": "2009-03-26T09:52:19-04:00",
+      "subject": "[R-sig-teaching] Creating data",
+      "subject_clean": "Creating data",
+      "in_reply_to": "<Pine.LNX.4.64.0903252327200.3712@paninaro.stat-math.wu-wien.ac.at>",
+      "references": [
+        "<20090324200414.GA10953@pitt.edu>",
+        "<a695148b0903251146h49580c56y7caac64a225f112e@mail.gmail.com>",
+        "<40e66e0b0903251224w7378b232x61bcb8eb585429eb@mail.gmail.com>",
+        "<Pine.LNX.4.64.0903252327200.3712@paninaro.stat-math.wu-wien.ac.at>"
+      ],
+      "body_plain": "Everyone, thanks for your help! I'm going to work on this more over\nthe weekend.\n\nSFK\n\nOn Wed, Mar 25, 2009 at 11:34:38PM +0100, Achim Zeileis wrote:\n> From: Achim Zeileis <Achim.Zeileis at wu-wien.ac.at>\n> Date: Wed, 25 Mar 2009 23:34:38 +0100 (CET)\n> To: Douglas Bates <bates at stat.wisc.edu>\n> Cc: \"G. Jay Kerns\" <gkerns at ysu.edu>,\n> \t\"Scott F. Kiesling\" <kiesling at pitt.edu>,\n> \tr-sig-teaching at r-project.org,\n> \tBettina Gruen <Bettina.Gruen at wu-wien.ac.at>\n> Subject: Re: [R-sig-teaching] Creating data\n\n> On Wed, 25 Mar 2009, Douglas Bates wrote:\n>\n>> On Wed, Mar 25, 2009 at 1:46 PM, G. Jay Kerns <gkerns at ysu.edu> wrote:\n>>> Dear Scott,\n\n>>> On Tue, Mar 24, 2009 at 4:04 PM, Scott F. Kiesling <kiesling+ at pitt.edu> wrote:\n\n\n>>>> For a simple example, let's say I want to create a dataset with\n>>>> students from different countries and academic departments who took an\n>>>> English test. I want to make some differences (significant and not)\n>>>> and possibly even interactions among the scores by country and\n>>>> department.\n\n\n>>> I've been meaning to do this for a while (for quizzes, demos, etc) but\n>>> didn't yet have the chance. ?Below is something I quickly put\n>>> together; I am sure that it can be improved.\n\n>>> You seemed to be looking for only one dependent variable but in my\n>>> case I am looking for several.\n\n\n>>> Dep. vars: ?y1 - y4 (correlated)\n>>> Fixed effects: dept (4 levels) and region (3 levels).\n>>> Covariate: ?x_cov\n\n>>> The model is Y = X*B + Eps:\n\n>>> X is the model matrix: ?~ x_cov + region + dept + region:dept\n>>> B is the parameter matrix\n>>> Eps ~ multivariate normal (or t), mean 0, variance/covariance Sigma\n\n>>> I used deviation contrasts; it would be easy to use treatment contrasts, too.\n\n>>> If multicollinearity is desired, the same trick as for Eps can be used\n>>> to generate multiple correlated x-variables.\n\n>>> I didn't spend time thinking about the parameters - clearly the most\n>>> important part (after all, there are 50+ of them in a bloated model\n>>> like this). They are randomly generated which means that they will\n>>> display *radically* different behavior, even on different runs. ?In\n>>> practice, one would want to choose a parameter matrix thoughtfully and\n>>> stick with it.\n\n>>> Everything is in BigData, at the end.\n\n>> Slightly off-topic but you may want to look at the 'exams' package by\n>> Achim Zeileis and Bettina Gruen\n\n>> http://cran.r-project.org/web/packages/exams/\n\n>> The vignette for the package gives examples of incorporating the data\n>> set generating process into the document that will generate the exam\n>> questions.  Even if you do not choose to use LaTeX to generate the\n>> exam it is still helpful to encapsulate the data generation process in\n>> something beyond an R script with some comments.  I know for myself\n>> that even with comments in a script I soon forget exactly what is\n>> being simulated in a script with a name like 'simulate.R'.\n>\n> Thanks for including us and advertising our package, Doug!\n>\n> Actually, we use our \"exams\" package to generate simple two-way ANOVA  \n> examples in our stats exams at WU Wien. The approach is very similar to  \n> the one previously suggested: generate some random regressors, compute \n> the model matrix, draw random coefficients, set certain coefficients to \n> zero (if there should be only some main effects) and then simulate the \n> final data.\n>\n> For a one-way ANOVA, there is an example in the package, see\n>   library(\"exams\")\n>   exams(\"anova\")\n> and see the underlying code in ~/inst/exercises/anova.Rnw.\n>\n> hth,\n> Z\n>\n\n>>> # need pkgs corpcor, sfsmisc, mvtnorm\n\n\n>>> set.seed(1)\n>>> n <- 500 ? # sample size\n\n\n>>> # generate indep. vars\n\n>>> # covariate\n>>> x_cov <- rnorm(n, mean = 37, sd = 15)\n\n>>> # fixed effects\n>>> region <- sample(c(\"Amer\", \"Euro\", \"Asia\"), size = n, prob = c(7,9,4),\n>>> replace = TRUE)\n>>> dept <- sample(LETTERS[1:4], size = n, prob = c(2,3,3,4), replace = TRUE)\n>>> region <- factor(region)\n>>> dept <- factor(dept)\n\n>>> D <- data.frame(x_cov = x_cov, region = region, dept = dept)\n\n>>> head(D) ?# the data\n\n\n\n>>> # model matrix\n\n>>> X <- model.matrix( ~ x_cov + (region + dept)^2,\n>>> ? ? ? ? ? ? ? ? ? data = D,\n>>> ? ? ? ? ? ? ? ? ? contrasts = list( region=\"contr.sum\", dept=\"contr.sum\"))\n\n>>> head(X) ?# the model matrix\n\n\n>>> # num of parameters, for each dep variable\n>>> k <- dim(X)[2]\n\n\n\n>>> # specify parameters\n>>> # should think about these\n\n>>> b1 <- rnorm(k, sd = 6)\n>>> b2 <- rcauchy(k, scale = 9)\n>>> b3 <- rnorm(k, sd = 12)\n>>> b4 <- rcauchy(k, scale = 15)\n\n>>> B <- matrix( c(b1, b2, b3, b4), ncol = 4)\n\n>>> B ? # the parameter matrix\n\n\n>>> # generate error\n\n>>> # a correlation matrix\n>>> r1 <- c( ?1.0, ?0.4, -0.5, ?0.7 )\n>>> r2 <- c( ?0.4, ?1.0, ?0.2, -0.1 )\n>>> r3 <- c( -0.5, ?0.2, ?1.0, ?0.0 )\n>>> r4 <- c( ?0.7, -0.1, ?0.0, ?1.0 )\n\n>>> Corr <- matrix( c(r1, r2, r3, r4), ncol = 4)\n>>> library(sfsmisc)\n>>> Corr <- posdefify(Corr)\n\n>>> # variances\n>>> # tune Y correlation with the 1750\n>>> eps_sigma <- 1750*c(15, 2, 21, 5)\n\n>>> library(corpcor)\n>>> Sigma <- rebuild.cov(r = Corr, v = eps_sigma)\n\n>>> library(mvtnorm)\n>>> Eps <- rmvnorm(n, sigma = Sigma)\n>>> #Eps <- rmvt(n, df = 2, sigma = Sigma)\n\n\n\n\n>>> # put it all together\n\n>>> Y <- data.frame( X %*% B + Eps )\n>>> names(Y) <- c(\"y1\", \"y2\", \"y3\", \"y4\")\n\n\n>>> BigData <- cbind(Y,D)\n\n>>> head(BigData)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n>>> ***************************************************\n>>> G. Jay Kerns, Ph.D.\n>>> Associate Professor\n>>> Department of Mathematics & Statistics\n>>> Youngstown State University\n>>> Youngstown, OH 44555-0002 USA\n>>> Office: 1035 Cushwa Hall\n>>> Phone: (330) 941-3310 Office (voice mail)\n>>> -3302 Department\n>>> -3170 FAX\n>>> E-mail: gkerns at ysu.edu\n>>> http://www.cc.ysu.edu/~gjkerns/\n\n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\n\n\n\n-- \nScott F. Kiesling, PhD\n\nAssociate Professor \nDepartment Chair\n\nDepartment of Linguistics\nUniversity of Pittsburgh, 2816 CL\nPittsburgh, PA 15260\nhttp://www.linguistics.pitt.edu\nOffice: +1 412-624-5916",
+      "body_snippet": "Everyone, thanks for your help! I'm going to work on this more over\nthe weekend.\n\nSFK\n\nOn Wed, Mar 25, 2009 at 11:34:38PM +0100, Achim Zeileis wrote:\n> From: Achim Zeileis <Achim.Zeileis at wu-wien.ac",
+      "thread_id": "thread-efa06cd8468d",
+      "thread_depth": 0,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-efdc1b806773",
+      "message_id": "<40e66e0b0903301412i275524d1g4df1e9925f2b3915@mail.gmail.com>",
+      "from_name": "Douglas Bates",
+      "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
+      "date": "2009-03-30T16:12:17-05:00",
+      "subject": "[R-sig-teaching] I need your thoughts on teaching with R",
+      "subject_clean": "I need your thoughts on teaching with R",
+      "in_reply_to": "<D86C9EFF6AA3734193923FFA1EE4308B07D7DC65@nc-mail2.northland.edu>",
+      "references": [
+        "<49B15D49.8030107@umn.edu>",
+        "<20090309210908.GG14522@laplace.reed.edu>",
+        "<D86C9EFF6AA3734193923FFA1EE4308B07D7DC65@nc-mail2.northland.edu>"
+      ],
+      "body_plain": "On Wed, Mar 11, 2009 at 9:52 PM, Derek Ogle <DOgle at northland.edu> wrote:\n> Andrew,\n>\n> I teach a intro statistics course to \"science\" students and some \"general education\" students and a \"biometry\" course to \"natural resources\" and a handful of other students at Northland College. ?I have been using R in both of these statistics course, and in my fisheries science course, for four or five years now. ?Below are my answers to your questions. ?I would be happy to expand on these if you needed me to (though now coming back to re-read I see that I have typed quite a bit).\n>\n>\n>> 1) What are the instructional decisions that a person needs to make if they are going to be teaching statistics using R?\n>\n> In general, I don't really think that these decisions are unique to R. ?No matter the software I believe that an instructor, especially of an introductory class, has to make a decision of whether learning the software is one of the outcomes of the course or not. ?When I taught with other software (Minitab) I chose not to have learning the software as an outcome. ?However, when I began using R I decided that at least some understanding of the software should be an outcome because I felt that knowing R was adding value to the student. ?I believe that this added value was especially important in my upper-level courses so it became important to me to make sure that students in the intro class were gaining some knowledge of the software (R).\n>\n> Once an instructor chooses to use R, I believe they must decide whether to use one of the GUIs, whether to use an external editor, which \"graphics system\" (base, ggplot2, lattice) to use, or whether to use package-specific or base functions.\n>\n>\n>> 2) What decisions have you yourself made and what were your reasons?\n>\n> Of the latter items mentioned above I chose NOT to use a GUI. ?I am familiar with RCMDR, for example, but, personally, I think the power of R rests in the command line. ?I do use TINN-R as an external editor because I like the ability for students to save their commands and recycle them for future problems. ?I have not seen any \"cost\" to the student of using TINN-R (it is simple to learn). ?I chose to use base graphics because of the simplicity (in my mind) of their functions (for doing the basic graphics needed in most intro classes).\n>\n> I have also written a package of R functions that streamlines some of the base R functions. ?For example, I have written a Subset() function that combines the base subset() and drop.levels() so that I don't have to explain to students the subtleties of why subset() does not drop the level from the list of possible levels for a factor variable after subsetting. ?I have also written a function that can be used to provide a graphical display of probability calculations on a suite of probability distributions (motivated by a post by Dr. Bates on this list last year). ?I did not want to create a large number of special purpose functions so I attempted to judiciously choose functions that simplified complexities or subtleties that I did not want students to be concerned with or that provided specific pedagogical advantages. ?<BTW, my package is surely not up to the standards of other package developers but if anyone is interested it is available at www.rforge.net/NCStats. ?A newer version using namespace will be up there when my semester is over in April.> ?I also use some of the functions in the TeachingDemos package.\n>\n> Finally, I made the conscious decision of not using the phrases \"R programming\" or \"R coding.\" ?It is my experience that many students do not consider themselves capable of \"computer programming.\" ?I explain that the functions are simply replacements for menu'd commands but that they can be saved and reproduced. ?At most, I refer to \"R scripts\" but never \"R programs.\"\n>\n>\n>> 3) How do you teach with R? Do you have sessions on R and other sessions where content is taught? Is the computing fully integrated with the content? Or some combinationn?\n>\n> At Northland, I teach two 2-hour sessions a week for the intro class. ?Generally, I use some portion of this time for a traditional lecture, some portion to teach \"doing statistics with R\", and then some time for the students to work independently with R and ask me questions. ?The traditional lecture and the \"doing statistics with R\" sections follow each other closely so I would consider them to be \"integrated.\" ?In the \"doing statistics with R\" section I have found it better to provide students with a handout (easily accomplished by the instructor with Sweave()) rather than demonstrating with the computer or letting them type commands into the computer. ?The two main advantages to this are that it is easier to keep students in roughly the same spot (if they are typing things in themselves then invariably someone forgot a comma, or misspelled, etc, and you spend all of your time troubleshooting individual students while others sit there or start surfing the net) and it lets the students see a correct set of commands on which they can take detailed notes (if they are typing in commands themselves they are just typing and not thinking and not taking notes that they can return to).\n>\n> In the upper-level course, I fully integrate R into the notes and lecture.\n>\n> You can seen what I do, if interested, because all of my class materials (\"book\", handouts, lecture slides) are available at www.ncfaculty.net/dogle/ and then follow the intro stats, biometry, or fisheries science \"buttons.\"\n>\n>\n>> 4) If you have the heterogeneous group of students (some going on to program in R, others just trying to get through, etc.) how do we deal with this? Do we need to have different types of assignments and materials for the different students?\n> Again, I don't see this as a specific issue with using R -- i.e., even if we did all calculations by hand there would be heterogeneity amongst those that will continue with other statistics courses and those \"just trying to get through.\"\n>\n>\n>> 5) A few more comments.\n> When I first started teaching with R I was just learning the program myself. ?I was terrible at teaching with it (and the students hated it) but I believed that it was the correct software to use. ?Now, five years later, I am a much better teacher of statistics and R and, most of my students either \"enjoy\" R (I have seen students become more accepting of typing in a command line rather than a GUI -- I believe that this is due to the amount of texting and chatting that they do relative to students from just a few years ago) or are, at least, accepting of the idea of \"R\". ?I even more firmly believe that this is the proper software for students to learn. ?Be firm in your commitment to R if you choose to teach with it but also be patient with yourself and your students during the first few years.\n>\n> I do spend some time trying to teach students the \"lexicon of R\" as this makes communication about specific functions easier. ?For example, my students will know about constructor and extractor functions, named and positional arguments, objects, assignment operators, vectors, data.frames, etc. ?This has been a \"cost\" of using R in the sense that it does take time and, thus, \"something else\" had to go from my curriculum.\n>\n> I also think that R is especially beneficial for my biometry course which focuses on regression (simple, multiple, and indicator variable), anova (one- and two-way), and logistic regression because the vast majority of these topics use a common set of functions -- lm(), anova(), summary(), confint(), etc. ?In addition, I have added a few functions (in my NCStats function) to make fitted line plots, residual plots, and to compare all slopes. ?Thus, students can learn a vast number of topics with very few commands in R. ?The same can be said in the intro class for t.test() (one-sample, two-sample, matched-pairs) and chisq.test() (goodness-of-fit and general chi-square). ?This efficiency is very convenient and powerful.\n>\n> Finally, I have found R to be useful because students \"like\" free software, open-source concepts (at least at my environmental liberal arts college), and being on the \"cutting edge.\" ?The more students like in your class the more likely they are to learn.\n\nI agree with what Derek, my neighbor to the north, has said.\n\nI teach introductory engineering statistics using R and have done so\nfor several years, although I am never completely satisfied with how R\nblends with the text in such a course.  I have tried using a standard\nintroductory engineering text, specifically Devore's \"Probability and\nStatistics for Engineering and the Sciences\", supplemented with\nmaterial on R (see the Devore6 package on CRAN which John Verzani\nupdated for the 7th edition to Devore7), Peter Dalgaard's\n\"Introductory Statistics with R\" and now Cohen and Cohen's \"Statistics\nand Data with R\".  I have also looked at \"Probability and Statistics\nwith R\" by Ugarte et al.\n\nWith the exception of Peter's book I found myself fighting the text.\nThat is, I found myself saying \"the text presents this material this\nway but it is unnecessary and confusing.  Do things this other way.\"\n\nIn the case of Peter's book I could agree with his presentation but\nthe book is clearly oriented toward biostatistics and has little\ncoverage of probability.  It came about as a supplement to another\ntext used in a course and reads like that so it has to be supplemented\nextensively, especially if your audience is not from medical fields.\n\nI would dearly love to see an approach to teaching statistics that\ntakes advantage of the graphical and computational capabilities of R\nto remove redundant topics from the typical introductory course.\nSadly the last two texts I list (Cohen and Cohen, 2008;  Ugarte et al,\n2008) do exactly the opposite.  Instead of using R to simplify an\napproach to statistics they complicate an introductory course by\nadding page after page of confusing R code.\n\nWhat do I mean by simplify?  There are many topics in an introductory\nstatistics course that are ingrained in the curriculum but really are\nthere for the sake of approximation or computational simplification.\nHow many introductory texts still describe how to approximate a\n\"difficult\" distribution by a \"simpler\" distribution (hypergeometric\nby binomial, binomial by Poisson or Gaussian, etc.)?  When you can\ncalculate the exact probability why do you want to waste time teaching\nan approximation and rules like \"when np > 5 ...\"?  Even a basic\ngraphical presentation, the histogram, is outmoded.  The purpose of\nthe histogram is to give us a picture of the density.  Why not use a\ndensity plot for this?  There is a great advantage in that you can\neasily overlay density plots from different groups, not to mention the\nfact that it shows a smooth approximation to the density.  In the past\nwe used histograms because it was comparatively simple to choose bins\nand count the observations in the bins then produce a bar chart.  We\ncan do better than that now.\n\nThink carefully about the graphics.  Deepayan Sarkar (lattice) and\nHadley Wickham (ggplot2) have provided powerful techniques for\nexploring data.  Students should benefit from that if they can do so\nwithout needing to learn many, many details of the language.\n\nWhen teaching the principles of hypothesis testing I describe a\np-value as \"the probability of seeing the data that we did or\nsomething more unusual when the null hypothesis (usually meaning \"no\nchange\") is true\".  The closer that probability is to \"impossible\",\nthe stronger the evidence against the null hypothesis in favor of the\nalternative.  The point is that we should go directly to the p-value.\nAll the confusing material about picking a level and calculating the\nrejection region is there because we couldn't calculate that\nprobability when I took an introductory course more than 40 years ago.\n All we had then were slide rules, pencil and paper, and a few tables\nin a book.  We can do better than that now.\n\nDo we need to describe computational formulas in a text book?  It\nturns out that just about every formula in an introductory text,\nbeyond the calculation of the sample mean, is not really the way that\nthe calculation is done.  Most of us know that the \"short cut\" formula\nfor the sample variance has bad numerical properties and a few might\nknow that regression coefficients are not really evaluated by\ninverting X'X.  Why teach a formula that is only good for a simplified\nsituation, like a simple linear regression model?  Why not say that we\nminimize the residual sum of squares and leave it at that?  Pay more\nattention to model building and examining residuals.\n\nIn teaching I think it is important to strive for simplicity and\nconsistency in the use of R.  Keep the R code as concise as possible.\n\nI prefer to teach lattice graphics because I think the graphics are\ninformative and because all the lattice functions can be called with a\nformula/data pair of arguments, just as t.test, aov, lm, glm, nls,\netc. can be called with formula/data.  I use Sweave and the beamer\nLaTeX class to generate the slides for my classes so that I can\nextract the R code and make that available on the course web site.\nThe slides and class presentations describe the graphics calls\nsuccinctly, if at all, but the detailed code is available for\nexamination if the students want to delve deeper.\n\nIn short, the worst way to use R in an introductory course is to teach\nthe same-old-same-old material augmented with page after page of\nconfusing R code.  Try to use the power of the computer and the\nsoftware to aid insight into data and to simplify the ideas of\nstatistics.\n\nI have over the years produced slides for classes based first on\nDevore's books then on Peter's book and now on the Cohen and Cohen\nbook.  I am willing to make these available, including the source\ncode, so others can borrow code or presentation approaches if they\nwish.  I am not familiar with open documentation licenses like\nCreative Commons.  If it would help to stimulate discussion I will\nmake them available without copyright.  I would be particularly\ninterested in corresponding with potential text book authors on some\nof the techniques that I think can be used to simplify presentation of\nR code and graphics.  I don't have plans to embark on writing a text\nmyself.",
+      "body_snippet": "On Wed, Mar 11, 2009 at 9:52 PM, Derek Ogle <DOgle at northland.edu> wrote:\n> Andrew,\n>\n> I teach a intro statistics course to \"science\" students and some \"general education\" students and a \"biometry\"",
+      "thread_id": "thread-77d532abd22e",
+      "thread_depth": 2,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-ed787b465ef6",
+      "message_id": "<f8e6ff050903301529u20c2e480n4bce9d83c429a1ab@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2009-03-30T17:29:23-05:00",
+      "subject": "[R-sig-teaching] I need your thoughts on teaching with R",
+      "subject_clean": "I need your thoughts on teaching with R",
+      "in_reply_to": "<40e66e0b0903301412i275524d1g4df1e9925f2b3915@mail.gmail.com>",
+      "references": [
+        "<49B15D49.8030107@umn.edu>",
+        "<20090309210908.GG14522@laplace.reed.edu>",
+        "<D86C9EFF6AA3734193923FFA1EE4308B07D7DC65@nc-mail2.northland.edu>",
+        "<40e66e0b0903301412i275524d1g4df1e9925f2b3915@mail.gmail.com>"
+      ],
+      "body_plain": "> What do I mean by simplify? ?There are many topics in an introductory\n> statistics course that are ingrained in the curriculum but really are\n> there for the sake of approximation or computational simplification.\n> How many introductory texts still describe how to approximate a\n> \"difficult\" distribution by a \"simpler\" distribution (hypergeometric\n> by binomial, binomial by Poisson or Gaussian, etc.)? ?When you can\n> calculate the exact probability why do you want to waste time teaching\n> an approximation and rules like \"when np > 5 ...\"? ?Even a basic\n\nEven knowing how to look up numbers in a table is an outdated skill!\n\n> graphical presentation, the histogram, is outmoded. ?The purpose of\n> the histogram is to give us a picture of the density. ?Why not use a\n> density plot for this? ?There is a great advantage in that you can\n> easily overlay density plots from different groups, not to mention the\n> fact that it shows a smooth approximation to the density. ?In the past\n> we used histograms because it was comparatively simple to choose bins\n> and count the observations in the bins then produce a bar chart. ?We\n> can do better than that now.\n\nI agree 100% with your points apart from this one.  I'm not a big fan\nof density estimates because most real-life distributions are not\nsmooth, continuous and unbounded, like most density estimators assume\nthey are.  It's also much harder to understand how a density plot is\nmade, and while I don't think students need to understand the\nmotivations and theory for every tool they use, I think they should\nunderstand how their basic graphic tools work.  A happy intermediate\nis the frequency polygon, which has more favourable theoretical\nproperties than the histogram, but is equally easy to understand (and\nyou can overlay them like densities)\n\n> I have over the years produced slides for classes based first on\n> Devore's books then on Peter's book and now on the Cohen and Cohen\n> book. ?I am willing to make these available, including the source\n> code, so others can borrow code or presentation approaches if they\n> wish. ?I am not familiar with open documentation licenses like\n> Creative Commons. ?If it would help to stimulate discussion I will\n> make them available without copyright. ?I would be particularly\n> interested in corresponding with potential text book authors on some\n> of the techniques that I think can be used to simplify presentation of\n> R code and graphics. ?I don't have plans to embark on writing a text\n> myself.\n\nI would love to see these!\n\nHadley\n\n-- \nhttp://had.co.nz/",
+      "body_snippet": "> What do I mean by simplify? ?There are many topics in an introductory\n> statistics course that are ingrained in the curriculum but really are\n> there for the sake of approximation or computational s",
+      "thread_id": "thread-77d532abd22e",
+      "thread_depth": 3,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-6db42e7d386a",
+      "message_id": "<40e66e0b0903301602h7268dd02y82e1e7c454e9170b@mail.gmail.com>",
+      "from_name": "Douglas Bates",
+      "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
+      "date": "2009-03-30T18:02:54-05:00",
+      "subject": "[R-sig-teaching] I need your thoughts on teaching with R",
+      "subject_clean": "I need your thoughts on teaching with R",
+      "in_reply_to": "<f8e6ff050903301529u20c2e480n4bce9d83c429a1ab@mail.gmail.com>",
+      "references": [
+        "<49B15D49.8030107@umn.edu>",
+        "<20090309210908.GG14522@laplace.reed.edu>",
+        "<D86C9EFF6AA3734193923FFA1EE4308B07D7DC65@nc-mail2.northland.edu>",
+        "<40e66e0b0903301412i275524d1g4df1e9925f2b3915@mail.gmail.com>",
+        "<f8e6ff050903301529u20c2e480n4bce9d83c429a1ab@mail.gmail.com>"
+      ],
+      "body_plain": "On Mon, Mar 30, 2009 at 5:29 PM, hadley wickham <h.wickham at gmail.com> wrote:\n>> What do I mean by simplify? ?There are many topics in an introductory\n>> statistics course that are ingrained in the curriculum but really are\n>> there for the sake of approximation or computational simplification.\n>> How many introductory texts still describe how to approximate a\n>> \"difficult\" distribution by a \"simpler\" distribution (hypergeometric\n>> by binomial, binomial by Poisson or Gaussian, etc.)? ?When you can\n>> calculate the exact probability why do you want to waste time teaching\n>> an approximation and rules like \"when np > 5 ...\"? ?Even a basic\n>\n> Even knowing how to look up numbers in a table is an outdated skill!\n>\n>> graphical presentation, the histogram, is outmoded. ?The purpose of\n>> the histogram is to give us a picture of the density. ?Why not use a\n>> density plot for this? ?There is a great advantage in that you can\n>> easily overlay density plots from different groups, not to mention the\n>> fact that it shows a smooth approximation to the density. ?In the past\n>> we used histograms because it was comparatively simple to choose bins\n>> and count the observations in the bins then produce a bar chart. ?We\n>> can do better than that now.\n\n> I agree 100% with your points apart from this one. ?I'm not a big fan\n> of density estimates because most real-life distributions are not\n> smooth, continuous and unbounded, like most density estimators assume\n> they are. ?It's also much harder to understand how a density plot is\n> made, and while I don't think students need to understand the\n> motivations and theory for every tool they use, I think they should\n> understand how their basic graphic tools work. ?A happy intermediate\n> is the frequency polygon, which has more favourable theoretical\n> properties than the histogram, but is equally easy to understand (and\n> you can overlay them like densities)\n\nGood point.  Density plots do have problems with smearing at the boundaries.\n\n>> I have over the years produced slides for classes based first on\n>> Devore's books then on Peter's book and now on the Cohen and Cohen\n>> book. ?I am willing to make these available, including the source\n>> code, so others can borrow code or presentation approaches if they\n>> wish. ?I am not familiar with open documentation licenses like\n>> Creative Commons. ?If it would help to stimulate discussion I will\n>> make them available without copyright. ?I would be particularly\n>> interested in corresponding with potential text book authors on some\n>> of the techniques that I think can be used to simplify presentation of\n>> R code and graphics. ?I don't have plans to embark on writing a text\n>> myself.\n>\n> I would love to see these!\n\nThe source directory of my slides for Peter's book, \"Introductory\nStatistics with R\", is available as\n\nhttp://www.stat.wisc.edu/~bates/ISwR.zip\n\n(I'm sorry, Hadley, but I use lattice throughout.  I haven't taken the\ntime to learn ggplot2.)",
+      "body_snippet": "On Mon, Mar 30, 2009 at 5:29 PM, hadley wickham <h.wickham at gmail.com> wrote:\n>> What do I mean by simplify? ?There are many topics in an introductory\n>> statistics course that are ingrained in the ",
+      "thread_id": "thread-77d532abd22e",
+      "thread_depth": 4,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-7a4a6a236e47",
+      "message_id": "<f8e6ff050903301754x34fa26earb7fd9f5d2506add7@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2009-03-30T19:54:37-05:00",
+      "subject": "[R-sig-teaching] I need your thoughts on teaching with R",
+      "subject_clean": "I need your thoughts on teaching with R",
+      "in_reply_to": "<40e66e0b0903301602h7268dd02y82e1e7c454e9170b@mail.gmail.com>",
+      "references": [
+        "<49B15D49.8030107@umn.edu>",
+        "<20090309210908.GG14522@laplace.reed.edu>",
+        "<D86C9EFF6AA3734193923FFA1EE4308B07D7DC65@nc-mail2.northland.edu>",
+        "<40e66e0b0903301412i275524d1g4df1e9925f2b3915@mail.gmail.com>",
+        "<f8e6ff050903301529u20c2e480n4bce9d83c429a1ab@mail.gmail.com>",
+        "<40e66e0b0903301602h7268dd02y82e1e7c454e9170b@mail.gmail.com>"
+      ],
+      "body_plain": "> The source directory of my slides for Peter's book, \"Introductory\n> Statistics with R\", is available as\n>\n> http://www.stat.wisc.edu/~bates/ISwR.zip\n\nThose are really nice.\n\nI see you still teach t-tests and the Wilcoxon signed-rank test - is\nthis just an artefact of following Dalgaard, or do you have a\npreference for them over the (computational expensive but conceptually\nsimpler) permutation tests?\n\n> (I'm sorry, Hadley, but I use lattice throughout. ?I haven't taken the\n> time to learn ggplot2.)\n\nNo problems.  I don't think there's much difference in capabilities at\nthis level.\n\nHadley\n\n-- \nhttp://had.co.nz/",
+      "body_snippet": "> The source directory of my slides for Peter's book, \"Introductory\n> Statistics with R\", is available as\n>\n> http://www.stat.wisc.edu/~bates/ISwR.zip\n\nThose are really nice.\n\nI see you still teach t-",
+      "thread_id": "thread-77d532abd22e",
+      "thread_depth": 5,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-3d6af3b03e85",
+      "message_id": "<40e66e0b0903310641x7a1b29afo2cd31825191641b2@mail.gmail.com>",
+      "from_name": "Douglas Bates",
+      "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
+      "date": "2009-03-31T08:41:58-05:00",
+      "subject": "[R-sig-teaching] I need your thoughts on teaching with R",
+      "subject_clean": "I need your thoughts on teaching with R",
+      "in_reply_to": "<f8e6ff050903301754x34fa26earb7fd9f5d2506add7@mail.gmail.com>",
+      "references": [
+        "<49B15D49.8030107@umn.edu>",
+        "<20090309210908.GG14522@laplace.reed.edu>",
+        "<D86C9EFF6AA3734193923FFA1EE4308B07D7DC65@nc-mail2.northland.edu>",
+        "<40e66e0b0903301412i275524d1g4df1e9925f2b3915@mail.gmail.com>",
+        "<f8e6ff050903301529u20c2e480n4bce9d83c429a1ab@mail.gmail.com>",
+        "<40e66e0b0903301602h7268dd02y82e1e7c454e9170b@mail.gmail.com>",
+        "<f8e6ff050903301754x34fa26earb7fd9f5d2506add7@mail.gmail.com>"
+      ],
+      "body_plain": "On Mon, Mar 30, 2009 at 7:54 PM, hadley wickham <h.wickham at gmail.com> wrote:\n>> The source directory of my slides for Peter's book, \"Introductory\n>> Statistics with R\", is available as\n>>\n>> http://www.stat.wisc.edu/~bates/ISwR.zip\n\n> Those are really nice.\n\nThanks.  I'll get the set for the Cohen and Cohen book up after I\nclear off some disk space.\n\n> I see you still teach t-tests and the Wilcoxon signed-rank test - is\n> this just an artefact of following Dalgaard, or do you have a\n> preference for them over the (computational expensive but conceptually\n> simpler) permutation tests?\n\nThe nonparametric tests are there because they are described in\nPeter's text.  I skip them in my classes.\n\nI tend to use t-tests after examining normal probability plots and,\npossibly, considering transformation.  I believe they would be more\npowerful than permutation tests but that may be incorrect.  Can you\ndescribe situations in which you would prefer permutation tests to\nt-tests?\n\n>> (I'm sorry, Hadley, but I use lattice throughout. ?I haven't taken the\n>> time to learn ggplot2.)\n\n> No problems. ?I don't think there's much difference in capabilities at\n> this level.",
+      "body_snippet": "On Mon, Mar 30, 2009 at 7:54 PM, hadley wickham <h.wickham at gmail.com> wrote:\n>> The source directory of my slides for Peter's book, \"Introductory\n>> Statistics with R\", is available as\n>>\n>> http:/",
+      "thread_id": "thread-77d532abd22e",
+      "thread_depth": 6,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-f201b09e4f76",
+      "message_id": "<f8e6ff050903310724j623763bdt3e3d9933e1954d42@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2009-03-31T09:24:57-05:00",
+      "subject": "[R-sig-teaching] I need your thoughts on teaching with R",
+      "subject_clean": "I need your thoughts on teaching with R",
+      "in_reply_to": "<40e66e0b0903310641x7a1b29afo2cd31825191641b2@mail.gmail.com>",
+      "references": [
+        "<49B15D49.8030107@umn.edu>",
+        "<20090309210908.GG14522@laplace.reed.edu>",
+        "<D86C9EFF6AA3734193923FFA1EE4308B07D7DC65@nc-mail2.northland.edu>",
+        "<40e66e0b0903301412i275524d1g4df1e9925f2b3915@mail.gmail.com>",
+        "<f8e6ff050903301529u20c2e480n4bce9d83c429a1ab@mail.gmail.com>",
+        "<40e66e0b0903301602h7268dd02y82e1e7c454e9170b@mail.gmail.com>",
+        "<f8e6ff050903301754x34fa26earb7fd9f5d2506add7@mail.gmail.com>",
+        "<40e66e0b0903310641x7a1b29afo2cd31825191641b2@mail.gmail.com>"
+      ],
+      "body_plain": ">> I see you still teach t-tests and the Wilcoxon signed-rank test - is\n>> this just an artefact of following Dalgaard, or do you have a\n>> preference for them over the (computational expensive but conceptually\n>> simpler) permutation tests?\n>\n> The nonparametric tests are there because they are described in\n> Peter's text. ?I skip them in my classes.\n>\n> I tend to use t-tests after examining normal probability plots and,\n> possibly, considering transformation. ?I believe they would be more\n> powerful than permutation tests but that may be incorrect. ?Can you\n> describe situations in which you would prefer permutation tests to\n> t-tests?\n\nThe basic argument I'm most familiar with is presented in:\nhttp://repositories.cdlib.org/uclastat/cts/tise/vol1/iss1/art1/\n\n\"My thesis is that both the content and the structure of our\nintroductory curriculum are shaped by old history. What we teach was\ndeveloped a little at a time, for reasons that had a lot to do with\nthe need to use available theory to handle problems that were\nessentially computational. Almost one hundred years after Student\npublished his 1908 paper on the t- test, we are still using 19th\ncentury analytical methods to solve what is essentially a technical\nproblem ? computing a p-value or a 95% margin of error.\nIntellectually, we are asking our students to do the equivalent of\nworking with one of those old 30-pound Burroughs electric calculators\nwith the rows of little wheels that clicked and spun as they churned\nout sums of squares.\"\n\n\nHadley\n\n\n-- \nhttp://had.co.nz/",
+      "body_snippet": ">> I see you still teach t-tests and the Wilcoxon signed-rank test - is\n>> this just an artefact of following Dalgaard, or do you have a\n>> preference for them over the (computational expensive but co",
+      "thread_id": "thread-77d532abd22e",
+      "thread_depth": 7,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-6f93b8472ce9",
+      "message_id": "<Pine.LNX.4.64.0903311303400.25499@cytosine.stat.wisc.edu>",
+      "from_name": "Bret Larget",
+      "from_email_hash": "054bbb385b958339ed26f82d993cd5fd0d1e661bb569ad3b65d2889a125e1e7d",
+      "date": "2009-03-31T13:11:10-05:00",
+      "subject": "[R-sig-teaching] I need your thoughts on teaching with R",
+      "subject_clean": "I need your thoughts on teaching with R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "> I tend to use t-tests after examining normal probability plots and,\n> possibly, considering transformation.  I believe they would be more\n> powerful than permutation tests but that may be incorrect.  Can you\n> describe situations in which you would prefer permutation tests to\n> t-tests?\n\nHere is the reason I prefer permutation tests, besides the conceptual \nsimplicity.  T-tests are based on a normal sampling model, and my \nperception is that very few data sets to which people apply t-tests \nactually arise from random samples.  Here I mean specifically that the \nperson gathering data used a genuine random sampling method to select \nobservations from a population. Survey samples would be an exception.  I \nthink it is far more frequently the case that a study takes whatever \nunits/subjects are at hand and separates these into groups either through \nrandom assignment or based on some categorical variable.  The permutation \ntest directly answers the question about how a measured difference between \ngroup averages may have been different than if the groups had been formed \nin a different way.  Then, instead of making the objectional argument that \n\"we will treat the data as if it were a representative sample from the \npopulation of interest\", and then using a t-test justified by a false \nrandom sampling argument and making inferences to some larger population, \nI find it much more justifiable to model the randomness that was truly \npart of the data gathering (random assignment).  Any inference to other \npopulations is then justified on the basis of background information (the \ngroups I am interested in are similar to the groups in the study, so maybe \nthe results there apply here too) and not by random sampling.  It is \nimportant to describe how the units/subjects were selected and let the \nreader determine how applicable the results are to other populations.\n\nWhen data is not collected by a random sample, the t-test can still be \njustified either as an approximation to the permutation test (but, as Doug \nwould say, why approximate when you can use the computer to do the real thing) \nor if a normal model for the data is ASSUMED and not concluded in reference to \nthe central limit theorem and random sampling that did not occur.\n\nI would be very interested if readers of this message can send me specific \nreference to the use of a t-test with real data in an introductory text \nbook for which the individual objects were genuinely sampled at random \nfrom populations.\n\n-Bret",
+      "body_snippet": "> I tend to use t-tests after examining normal probability plots and,\n> possibly, considering transformation.  I believe they would be more\n> powerful than permutation tests but that may be incorrect.",
+      "thread_id": "thread-6f93b8472ce9",
+      "thread_depth": 0,
+      "month": "2009-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-4a651b044e57",
+      "subject": "Unbalanced factorial designs",
+      "message_count": 1,
+      "participants": [
+        "Ista Zahn"
+      ],
+      "started": "2009-03-01T21:51:27-05:00",
+      "last_reply": "2009-03-01T21:51:27-05:00",
+      "root_message_id": "msg-4a651b044e57"
+    },
+    {
+      "id": "thread-77d532abd22e",
+      "subject": "I need your thoughts on teaching with R",
+      "message_count": 9,
+      "participants": [
+        "Albyn Jones",
+        "Derek Ogle",
+        "Douglas Bates",
+        "hadley wickham",
+        "markus kossner"
+      ],
+      "started": "2009-03-09T14:09:08-07:00",
+      "last_reply": "2009-03-31T09:24:57-05:00",
+      "root_message_id": "msg-77d532abd22e"
+    },
+    {
+      "id": "thread-edce1f4f4fd4",
+      "subject": "I need your thoughts on teaching with R",
+      "message_count": 1,
+      "participants": [
+        "Brown, Tony Nicholas"
+      ],
+      "started": "2009-03-11T18:25:35-05:00",
+      "last_reply": "2009-03-11T18:25:35-05:00",
+      "root_message_id": "msg-edce1f4f4fd4"
+    },
+    {
+      "id": "thread-82f5c0c18fea",
+      "subject": "thoughts on teaching with R",
+      "message_count": 1,
+      "participants": [
+        "Eric Lamb"
+      ],
+      "started": "2009-03-12T08:56:11-06:00",
+      "last_reply": "2009-03-12T08:56:11-06:00",
+      "root_message_id": "msg-82f5c0c18fea"
+    },
+    {
+      "id": "thread-c3a5e4f76bbf",
+      "subject": "Creating data",
+      "message_count": 7,
+      "participants": [
+        "Christophe Genolini",
+        "Douglas Bates",
+        "G. Jay Kerns",
+        "Jacob Wegelin",
+        "John Fox",
+        "Scott F. Kiesling",
+        "hadley wickham"
+      ],
+      "started": "2009-03-24T16:04:14-04:00",
+      "last_reply": "2009-03-25T14:24:53-05:00",
+      "root_message_id": "msg-c3a5e4f76bbf"
+    },
+    {
+      "id": "thread-2d82b4574ec7",
+      "subject": "Creating data",
+      "message_count": 1,
+      "participants": [
+        "Scott F. Kiesling"
+      ],
+      "started": "2009-03-24T16:57:44-04:00",
+      "last_reply": "2009-03-24T16:57:44-04:00",
+      "root_message_id": "msg-2d82b4574ec7"
+    },
+    {
+      "id": "thread-eddf49758dd3",
+      "subject": "Statistics for transportation",
+      "message_count": 1,
+      "participants": [
+        "Kenneth Roy Cabrera Torres"
+      ],
+      "started": "2009-03-25T14:39:45-05:00",
+      "last_reply": "2009-03-25T14:39:45-05:00",
+      "root_message_id": "msg-eddf49758dd3"
+    },
+    {
+      "id": "thread-d36b02977d64",
+      "subject": "Creating data",
+      "message_count": 1,
+      "participants": [
+        "G. Jay Kerns"
+      ],
+      "started": "2009-03-25T19:15:38-04:00",
+      "last_reply": "2009-03-25T19:15:38-04:00",
+      "root_message_id": "msg-d36b02977d64"
+    },
+    {
+      "id": "thread-efa06cd8468d",
+      "subject": "Creating data",
+      "message_count": 1,
+      "participants": [
+        "Scott F. Kiesling"
+      ],
+      "started": "2009-03-26T09:52:19-04:00",
+      "last_reply": "2009-03-26T09:52:19-04:00",
+      "root_message_id": "msg-efa06cd8468d"
+    },
+    {
+      "id": "thread-6f93b8472ce9",
+      "subject": "I need your thoughts on teaching with R",
+      "message_count": 1,
+      "participants": [
+        "Bret Larget"
+      ],
+      "started": "2009-03-31T13:11:10-05:00",
+      "last_reply": "2009-03-31T13:11:10-05:00",
+      "root_message_id": "msg-6f93b8472ce9"
+    }
+  ]
+}

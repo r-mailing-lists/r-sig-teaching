@@ -1,0 +1,103 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2020-08",
+  "messages": [
+    {
+      "id": "msg-241384879653",
+      "message_id": "<3a1aa0c6498ed0d49577b91c78f5a2ca@disroot.org>",
+      "from_name": "citc m@iii@g oii disroot@org",
+      "from_email_hash": "8a737ff3c9fdda8f9c41419d5bb0b937d099aea802b1ff2d48f49ee48804ef51",
+      "date": "2020-08-03T09:55:58Z",
+      "subject": "[R-sig-teaching] school level introduction to and use of R",
+      "subject_clean": "school level introduction to and use of R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Readers,\n\nIs it possible to install R on a server and allow school children (e.g. 15 years) to be given simple scripts to plot a graph, then save as svg or png format for use in other documents?\n\nTried to search RWeb but that long since gone.\n\n__________________________\nhttps://chemistryinthecity.neocities.org",
+      "body_snippet": "Readers,\n\nIs it possible to install R on a server and allow school children (e.g. 15 years) to be given simple scripts to plot a graph, then save as svg or png format for use in other documents?\n\nTrie",
+      "thread_id": "thread-241384879653",
+      "thread_depth": 0,
+      "month": "2020-08"
+    },
+    {
+      "id": "msg-f820d682625b",
+      "message_id": "<1870930c-3ccb-49d4-936c-0f0f3b39c8b1@Spark>",
+      "from_name": "Mine Çetinkaya-Rundel",
+      "from_email_hash": "7fbc83e7c0315ce1d152d99403056a43f6e0e2a7f464843246392f221e1c9131",
+      "date": "2020-08-03T11:39:37+01:00",
+      "subject": "[R-sig-teaching] school level introduction to and use of R",
+      "subject_clean": "school level introduction to and use of R",
+      "in_reply_to": "<3a1aa0c6498ed0d49577b91c78f5a2ca@disroot.org>",
+      "references": [
+        "<3a1aa0c6498ed0d49577b91c78f5a2ca@disroot.org>"
+      ],
+      "body_plain": "Hello,\n\nYes, this is possible, and there are a few approaches you might use. Note that this is not an exhaustive list, there may be other approaches I?m unaware of / can?t think of at the moment.\n\n? RStudio:\n    ? RStudio Cloud:?https://rstudio.cloud/. Depending on student numbers / how you structure access, could be free or require a premium plan.?https://rstudio.cloud/learn/guide?has information on getting started.\n    ? RStudio Server Pro: See?https://rstudio.com/pricing/academic-pricing/?for Academic Pricing, the software is free for teaching purposes, but needs more setup than RStudio Cloud.?https://docs.rstudio.com/ide/server-pro/?has information on getting started.\n? Binder:\n    ? You can use Jupyter+R or RStudio with Binder,?https://github.com/binder-examples/r?has some examples for this.\n    ? An alternative approach is using the holepunch package:?https://karthik.github.io/holepunch/index.html\n? Depending on how simple the script is (e.g. do you need external data?),?https://rdrr.io/snippets/?might be an option.\n? I?ve recently come across COCALC (https://cocalc.com/doc/r-statistical-software.html) which seems to have offer a Jupyter interface to R. It appears to have a free tier but I?m not 100% sure how it works.\n\nBest,\nMine\n\n\n--\n\nMine ?etinkaya-Rundel\n? mine-cr.com\n?? citizen-statistician.org\n? @minebocek\n? she/her\n\nOn 3 Aug 2020, 10:56 +0100, citc at disroot.org, wrote:\n> Readers,\n>\n> Is it possible to install R on a server and allow school children (e.g. 15 years) to be given simple scripts to plot a graph, then save as svg or png format for use in other documents?\n>\n> Tried to search RWeb but that long since gone.\n>\n> __________________________\n> https://chemistryinthecity.neocities.org\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello,\n\nYes, this is possible, and there are a few approaches you might use. Note that this is not an exhaustive list, there may be other approaches I?m unaware of / can?t think of at the moment.\n\n? R",
+      "thread_id": "thread-241384879653",
+      "thread_depth": 1,
+      "month": "2020-08"
+    },
+    {
+      "id": "msg-5f4010b26803",
+      "message_id": "<9e14c348-ed2e-fa01-4cf2-f9b6cfa3d054@csun.edu>",
+      "from_name": "Wayne Smith",
+      "from_email_hash": "3707cd936ee9ef7e9ac84e4ecefa13a9beea2808e31f69098a4d10dbba9498b3",
+      "date": "2020-08-03T09:40:17-07:00",
+      "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 113, Issue 1",
+      "subject_clean": "R-sig-teaching Digest, Vol 113, Issue 1",
+      "in_reply_to": "<mailman.859.9.1596449171.31464.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.859.9.1596449171.31464.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": "CITC,\n\nIt might be possible to use a free Rstudio Cloud account for this task.\n\n ??? https://rstudio.cloud/\n\nBest,\n\nWayne\n\nOn 8/3/2020 3:06 AM, r-sig-teaching-request at r-project.org wrote:\n> Send R-sig-teaching mailing list submissions to\n> \tr-sig-teaching at r-project.org\n>\n> To subscribe or unsubscribe via the World Wide Web, visit\n> \thttps://urldefense.proofpoint.com/v2/url?u=https-3A__stat.ethz.ch_mailman_listinfo_r-2Dsig-2Dteaching&d=DwICAg&c=Oo8bPJf7k7r_cPTz1JF7vEiFxvFRfQtp-j14fFwh71U&r=arUOXBJV185ReiAVcorpVCJACrg7Z_StHteKeAMMoBM&m=2dSIKomBOhBA_GuuXs7vVjKjN378h-IQA2AqondqEpI&s=CdNhpEgSxNxI9jcMsyU018EWaNmeOgtmqIOuRbe8C0c&e=\n> or, via email, send a message with subject or body 'help' to\n> \tr-sig-teaching-request at r-project.org\n>\n> You can reach the person managing the list at\n> \tr-sig-teaching-owner at r-project.org\n>\n> When replying, please edit your Subject line so it is more specific\n> than \"Re: Contents of R-sig-teaching digest...\"\n>\n>\n> Today's Topics:\n>\n>     1. school level introduction to and use of R (citc at disroot.org)\n>\n> ----------------------------------------------------------------------\n>\n> Message: 1\n> Date: Mon, 03 Aug 2020 09:55:58 +0000\n> From: citc at disroot.org\n> To: r-sig-teaching at r-project.org\n> Subject: [R-sig-teaching] school level introduction to and use of R\n> Message-ID: <3a1aa0c6498ed0d49577b91c78f5a2ca at disroot.org>\n> Content-Type: text/plain; charset=\"utf-8\"\n>\n> Readers,\n>\n> Is it possible to install R on a server and allow school children (e.g. 15 years) to be given simple scripts to plot a graph, then save as svg or png format for use in other documents?\n>\n> Tried to search RWeb but that long since gone.\n>\n> __________________________\n> https://urldefense.proofpoint.com/v2/url?u=https-3A__chemistryinthecity.neocities.org&d=DwICAg&c=Oo8bPJf7k7r_cPTz1JF7vEiFxvFRfQtp-j14fFwh71U&r=arUOXBJV185ReiAVcorpVCJACrg7Z_StHteKeAMMoBM&m=2dSIKomBOhBA_GuuXs7vVjKjN378h-IQA2AqondqEpI&s=NptfRnjd-A_uaihKNVIOmOxN7KYIrK3Blo-k4lawWhk&e=\n>\n>\n>\n>\n> ------------------------------\n>\n> Subject: Digest Footer\n>\n> _______________________________________________\n> R-sig-teaching mailing list\n> R-sig-teaching at r-project.org\n> https://urldefense.proofpoint.com/v2/url?u=https-3A__stat.ethz.ch_mailman_listinfo_r-2Dsig-2Dteaching&d=DwICAg&c=Oo8bPJf7k7r_cPTz1JF7vEiFxvFRfQtp-j14fFwh71U&r=arUOXBJV185ReiAVcorpVCJACrg7Z_StHteKeAMMoBM&m=2dSIKomBOhBA_GuuXs7vVjKjN378h-IQA2AqondqEpI&s=CdNhpEgSxNxI9jcMsyU018EWaNmeOgtmqIOuRbe8C0c&e=\n>\n>\n> ------------------------------\n>\n> End of R-sig-teaching Digest, Vol 113, Issue 1\n> **********************************************",
+      "body_snippet": "CITC,\n\nIt might be possible to use a free Rstudio Cloud account for this task.\n\n ??? https://rstudio.cloud/\n\nBest,\n\nWayne\n\nOn 8/3/2020 3:06 AM, r-sig-teaching-request at r-project.org wrote:\n> Send R-",
+      "thread_id": "thread-5f4010b26803",
+      "thread_depth": 0,
+      "month": "2020-08"
+    },
+    {
+      "id": "msg-7f0692234155",
+      "message_id": "<aa768215f2f5ca887df34f14529777da@disroot.org>",
+      "from_name": "citc m@iii@g oii disroot@org",
+      "from_email_hash": "8a737ff3c9fdda8f9c41419d5bb0b937d099aea802b1ff2d48f49ee48804ef51",
+      "date": "2020-08-04T09:57:50Z",
+      "subject": "[R-sig-teaching] school level introduction to and use of R",
+      "subject_clean": "school level introduction to and use of R",
+      "in_reply_to": "<1870930c-3ccb-49d4-936c-0f0f3b39c8b1@Spark>",
+      "references": [
+        "<1870930c-3ccb-49d4-936c-0f0f3b39c8b1@Spark>",
+        "<3a1aa0c6498ed0d49577b91c78f5a2ca@disroot.org>"
+      ],
+      "body_plain": "August 3, 2020 11:39 AM, \"Mine ?etinkaya-Rundel\" <cetinkaya.mine at gmail.com> wrote:\n\n> * Binder:\n> * You can use Jupyter+R or RStudio with Binder, https://github.com/binder-examples/r has some\n> examples for this.\n\nThanks, gave it a try using their web site:\nhttps://jupyter.org/try\n\nIt would be preferable if gitlab could be used and google avoided (mailing list, web site visit surveillance, scripts, etc..)\n\n> \n> * Depending on how simple the script is (e.g. do you need external data?),\n> https://rdrr.io/snippets/ might be an option.\n\nThis is also useful to be aware; again, thank you. The usage is that school students would have experimental data (e.g. measure amount of mass lost during chemical reaction), plot data, save graph as a png/svg image, insert graphical data into a document such as a experiment report.",
+      "body_snippet": "August 3, 2020 11:39 AM, \"Mine ?etinkaya-Rundel\" <cetinkaya.mine at gmail.com> wrote:\n\n> * Binder:\n> * You can use Jupyter+R or RStudio with Binder, https://github.com/binder-examples/r has some\n> exa",
+      "thread_id": "thread-241384879653",
+      "thread_depth": 2,
+      "month": "2020-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-5f4010b26803",
+      "subject": "R-sig-teaching Digest, Vol 113, Issue 1",
+      "message_count": 1,
+      "participants": [
+        "Wayne Smith"
+      ],
+      "started": "2020-08-03T09:40:17-07:00",
+      "last_reply": "2020-08-03T09:40:17-07:00",
+      "root_message_id": "msg-5f4010b26803"
+    },
+    {
+      "id": "thread-241384879653",
+      "subject": "school level introduction to and use of R",
+      "message_count": 3,
+      "participants": [
+        "Mine Çetinkaya-Rundel",
+        "citc m@iii@g oii disroot@org"
+      ],
+      "started": "2020-08-03T09:55:58+00:00",
+      "last_reply": "2020-08-04T09:57:50+00:00",
+      "root_message_id": "msg-241384879653"
+    }
+  ]
+}

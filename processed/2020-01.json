@@ -1,0 +1,184 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2020-01",
+  "messages": [
+    {
+      "id": "msg-054df3bb3c1b",
+      "message_id": "<CAJXDcw3dsYNUUotztSKY0v4eMAm07t0g7gn2UEpg8Ef73SM3sw@mail.gmail.com>",
+      "from_name": "Juan Telleria Ruiz de Aguirre",
+      "from_email_hash": "ca943e3695085a5a91fba8eb0ad6514f2b71dfb8a79f78d8505b0c8c23d2d07b",
+      "date": "2020-01-03T11:10:00+01:00",
+      "subject": "[R-sig-teaching] Useful Resources for Teaching R & Basic Statistics",
+      "subject_clean": "Useful Resources for Teaching R & Basic Statistics",
+      "in_reply_to": "<CAJXDcw0oeGjhuAW_YDhq96OXPJQE4vV6a52uebimXhWFJrGMnw@mail.gmail.com>",
+      "references": [
+        "<CAJXDcw0oeGjhuAW_YDhq96OXPJQE4vV6a52uebimXhWFJrGMnw@mail.gmail.com>"
+      ],
+      "body_plain": "Dear R Teaching Mailing List,\n\nI would like to share 2 useful Resources for Teaching both R and\nStatistical Concepts Essentials.\n\nR Cookbook Second Edition: Freely Available\nhttps://rc2e.com/\n\nStatistics from A to Z (Wiley):\n\nhttps://books.google.es/books?id=_mT_DAAAQBAJ&printsec=\nfrontcover&dq=statistical+concepts+from+A+to+Z+wiley&hl=es&sa=X&ved=\n0ahUKEwjC2pOOkufmAhVJAWMBHYyiAdgQ6AEIKzAA#v=onepage&q&f=false\n\nThis last book puts emphasis on the statistical concepts from a\n\"high-level\" perspective, rather than on the mathematical definition or\ntheorem calculation.\n\nHope you find them useful.\n\nKind regards,\nJuan\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R Teaching Mailing List,\n\nI would like to share 2 useful Resources for Teaching both R and\nStatistical Concepts Essentials.\n\nR Cookbook Second Edition: Freely Available\nhttps://rc2e.com/\n\nStatist",
+      "thread_id": "thread-054df3bb3c1b",
+      "thread_depth": 0,
+      "month": "2020-01"
+    },
+    {
+      "id": "msg-ddc26d8e8974",
+      "message_id": "<CAJXDcw0nS2u-LwXvE+_h_7uBOjA8rzr_qo+fSJQ3DBz39JgfjQ@mail.gmail.com>",
+      "from_name": "Juan Telleria Ruiz de Aguirre",
+      "from_email_hash": "ca943e3695085a5a91fba8eb0ad6514f2b71dfb8a79f78d8505b0c8c23d2d07b",
+      "date": "2020-01-03T11:12:11+01:00",
+      "subject": "[R-sig-teaching]  Useful Resources for Teaching R & Basic Statistics",
+      "subject_clean": "Useful Resources for Teaching R & Basic Statistics",
+      "in_reply_to": "<CAJXDcw3dsYNUUotztSKY0v4eMAm07t0g7gn2UEpg8Ef73SM3sw@mail.gmail.com>",
+      "references": [
+        "<CAJXDcw0oeGjhuAW_YDhq96OXPJQE4vV6a52uebimXhWFJrGMnw@mail.gmail.com>",
+        "<CAJXDcw3dsYNUUotztSKY0v4eMAm07t0g7gn2UEpg8Ef73SM3sw@mail.gmail.com>"
+      ],
+      "body_plain": "Dear R Teaching Mailing List,\n\nI would like to share 2 useful Resources for Teaching both R and\nStatistical Concepts Essentials.\n\nR Cookbook Second Edition: Freely Available\nhttps://rc2e.com/\n\nStatistics from A to Z (Wiley):\n\nhttps://books.google.es/books?id=_mT_DAAAQBAJ&printsec=frontcover&dq=statistical+concepts+from+A+to+Z+wiley&hl=es&sa=X&ved=0ahUKEwjC2pOOkufmAhVJAWMBHYyiAdgQ6AEIKzAA#v=onepage&q&f=false\n\nThis last book puts emphasis on the statistical concepts from a\n\"high-level\" perspective, rather than on the mathematical definition or\ntheorem calculation.\n\nHope you find them useful.\n\nKind regards,\nJuan\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R Teaching Mailing List,\n\nI would like to share 2 useful Resources for Teaching both R and\nStatistical Concepts Essentials.\n\nR Cookbook Second Edition: Freely Available\nhttps://rc2e.com/\n\nStatist",
+      "thread_id": "thread-054df3bb3c1b",
+      "thread_depth": 1,
+      "month": "2020-01"
+    },
+    {
+      "id": "msg-b7d2061ed918",
+      "message_id": "<CAJXDcw3G5H1FCBTxrj5NTfsw+92=nci659fz7uq-DyJMg28jwQ@mail.gmail.com>",
+      "from_name": "Juan Telleria Ruiz de Aguirre",
+      "from_email_hash": "ca943e3695085a5a91fba8eb0ad6514f2b71dfb8a79f78d8505b0c8c23d2d07b",
+      "date": "2020-01-03T11:16:43+01:00",
+      "subject": "[R-sig-teaching] Teaching GIT Version Control Essentials: IDE & Command Line",
+      "subject_clean": "Teaching GIT Version Control Essentials: IDE & Command Line",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R Teaching Mailing List,\n\nI would like to share a few resources I find useful for teaching GIT\nVersion Control, in order to be able to collaborate in R Package\nDevelopment through GitHub:\n\nGIT Client IDE:\n\nhttps://www.gitkraken.com/download\n\nFreely Available for Open Source Development, this IDE allows you to handle\nall your GitHub repository entirely though a visual interface: Squashing\ncommits, Merging Locally, Generating a Branch in any Commit at any point in\nthe History, ...\n\nGIT Essential Commands Cheatsheet:\n\nhttps://www.google.com/url?sa=t&source=web&rct=j&url=https://about.gitlab.com/images/press/git-cheat-sheet.pdf&ved=2ahUKEwiOk9_flOfmAhVD8eAKHY-ZA6wQFjAAegQIBRAB&usg=AOvVaw2aQ2fhWOuLJ1WkQ6bZGjQu\n\nGIT MIT Presentation:\n\nhttps://www.google.com/url?sa=t&source=web&rct=j&url=http://6.470.scripts.mit.edu/2014/slides/git.pdf&ved=2ahUKEwiHrLPPlefmAhWLsRQKHXj0BPMQFjAAegQIBhAC&usg=AOvVaw1LbyRChTCGLyh_C9dV38Dt\n\nHope you find it useful.\n\nKind regards,\nJuan\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R Teaching Mailing List,\n\nI would like to share a few resources I find useful for teaching GIT\nVersion Control, in order to be able to collaborate in R Package\nDevelopment through GitHub:\n\nGIT Cl",
+      "thread_id": "thread-b7d2061ed918",
+      "thread_depth": 0,
+      "month": "2020-01"
+    },
+    {
+      "id": "msg-f9e9b86efa1a",
+      "message_id": "<CAJXDcw1=-sXhLt++9KRw5901oWmHL4Ec0oN=DjqwiihXEpv02Q@mail.gmail.com>",
+      "from_name": "Juan Telleria Ruiz de Aguirre",
+      "from_email_hash": "ca943e3695085a5a91fba8eb0ad6514f2b71dfb8a79f78d8505b0c8c23d2d07b",
+      "date": "2020-01-03T11:21:33+01:00",
+      "subject": "[R-sig-teaching] Resources for Teaching R Programming & Basic Statistical Concepts from a Business Perspective",
+      "subject_clean": "Resources for Teaching R Programming & Basic Statistical Concepts from a Business Perspective",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R Teaching Mailing List,\n\nI would like to share 2 useful Resources for Teaching both R and\nStatistical Concepts Essentials.\n\nR Cookbook Second Edition: Freely Available\nhttps://rc2e.com/\n\nStatistics from A to Z (Wiley):\n\nhttps://books.google.es/books?id=_mT_DAAAQBAJ&printsec=frontcover&dq=statistical+concepts+from+A+to+Z+wiley&hl=es&sa=X&ved=0ahUKEwjC2pOOkufmAhVJAWMBHYyiAdgQ6AEIKzAA#v=onepage&q&f=false\n\nThis last book puts emphasis on the statistical concepts from a\n\"high-level\" perspective, rather than on the mathematical definition or\ntheorem calculation.\n\nHope you find them useful.\n\nKind regards,\nJuan\n\n*P.D: E-mail resent due to a e-mail formatting error (Not Plain Text).\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R Teaching Mailing List,\n\nI would like to share 2 useful Resources for Teaching both R and\nStatistical Concepts Essentials.\n\nR Cookbook Second Edition: Freely Available\nhttps://rc2e.com/\n\nStatist",
+      "thread_id": "thread-f9e9b86efa1a",
+      "thread_depth": 0,
+      "month": "2020-01"
+    },
+    {
+      "id": "msg-aa6dcadf24d4",
+      "message_id": "<CAEZOd2Aq523K6TZaVvpJ+gGw9YFCNa54D7s7R0mjtExgr6b5=Q@mail.gmail.com>",
+      "from_name": "Brian Dennis",
+      "from_email_hash": "6e85c62f37f8ddec5f3492a2c409c87e4dd03ceffb9bd5cac7a035c9db61d226",
+      "date": "2020-01-04T10:16:19-08:00",
+      "subject": "[R-sig-teaching] R book for teaching math & science in high school",
+      "subject_clean": "R book for teaching math & science in high school",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Here is a book that introduces R programming for use in high school or\ncollege math and science courses:\n\nhttps://www.crcpress.com/The-R-Student-Companion/Dennis/p/book/9781439875407\n\nThe book is written for absolute beginners in programming concepts and is\none of the most elementary books about R available.  The focus of the book\nis not statistics per se but rather scientific graphing, calculation,\nmodeling, and simulation.  Collected reviews of the book can be found here:\n\nhttps://webpages.uidaho.edu/~brian/reviews_of_RSC.pdf\n\nThe topics are very vanilla R, no RStudio, no ggplot, no dplyr, etc.  The\nchoice of topics was deliberate so as not to overwhelm students.  The math\nlevel is high school algebra.  The scientific examples treated are quite\nreal and engaging.\n\nWith the move in education toward trying to teach \"coding\" in schools, one\nmight ask why not use Python, Java, C+, etc.  The answer is clear:\nstudents can do more cool stuff with R with much less code and computer\nscience overhead.  As well, the supporting online instructional\nenvironment, with zillions of websites, tutorials, and videos, is hard to\nbeat.  For future STEM workers, R is the ideal gateway drug!\n\nI have even taught graphing and calculating in R to elementary school\nstudents.  They are eager and enthusiastic and take to it as fast as the\nolder students.\n\nReadin', Ritin', Rithmetic, and R!\n\nBrian Dennis, Professor\nUniversity of Idaho USA\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Here is a book that introduces R programming for use in high school or\ncollege math and science courses:\n\nhttps://www.crcpress.com/The-R-Student-Companion/Dennis/p/book/9781439875407\n\nThe book is writ",
+      "thread_id": "thread-aa6dcadf24d4",
+      "thread_depth": 0,
+      "month": "2020-01"
+    },
+    {
+      "id": "msg-4fb5d2a4c1fd",
+      "message_id": "<5afa596f-ac84-2ece-afa1-4b0fcb5dfe13@binghamton.edu>",
+      "from_name": "Christopher W. Ryan",
+      "from_email_hash": "1713305274d2c1816a07f0aa50c9577759f9e9c6829b63a608da0a2c0dd2c647",
+      "date": "2020-01-04T13:57:32-05:00",
+      "subject": "[R-sig-teaching] [External Email] R book for teaching math & science in high school",
+      "subject_clean": "[External Email] R book for teaching math & science in high school",
+      "in_reply_to": "<CAEZOd2Aq523K6TZaVvpJ+gGw9YFCNa54D7s7R0mjtExgr6b5=Q@mail.gmail.com>",
+      "references": [
+        "<CAEZOd2Aq523K6TZaVvpJ+gGw9YFCNa54D7s7R0mjtExgr6b5=Q@mail.gmail.com>"
+      ],
+      "body_plain": "Brian--\n\nI would heartily endorse your recommendation for teaching R to younger\nfolk. 4-5 years ago I did a 5-hour workshop introducing R to about 20\nstudents in grades 10-12. I think it was quite successful--at least they\ninvited me back to do another one the following year!\n\nI wish I had had your book!\n\n--Chris Ryan\nSUNY Upstate Medical University\nand\nBinghamton University\n\nBrian Dennis wrote:\n> Here is a book that introduces R programming for use in high school or\n> college math and science courses:\n> \n> https://www.crcpress.com/The-R-Student-Companion/Dennis/p/book/9781439875407\n> \n> The book is written for absolute beginners in programming concepts and is\n> one of the most elementary books about R available.  The focus of the book\n> is not statistics per se but rather scientific graphing, calculation,\n> modeling, and simulation.  Collected reviews of the book can be found here:\n> \n> https://webpages.uidaho.edu/~brian/reviews_of_RSC.pdf\n> \n> The topics are very vanilla R, no RStudio, no ggplot, no dplyr, etc.  The\n> choice of topics was deliberate so as not to overwhelm students.  The math\n> level is high school algebra.  The scientific examples treated are quite\n> real and engaging.\n> \n> With the move in education toward trying to teach \"coding\" in schools, one\n> might ask why not use Python, Java, C+, etc.  The answer is clear:\n> students can do more cool stuff with R with much less code and computer\n> science overhead.  As well, the supporting online instructional\n> environment, with zillions of websites, tutorials, and videos, is hard to\n> beat.  For future STEM workers, R is the ideal gateway drug!\n> \n> I have even taught graphing and calculating in R to elementary school\n> students.  They are eager and enthusiastic and take to it as fast as the\n> older students.\n> \n> Readin', Ritin', Rithmetic, and R!\n> \n> Brian Dennis, Professor\n> University of Idaho USA\n> \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_snippet": "Brian--\n\nI would heartily endorse your recommendation for teaching R to younger\nfolk. 4-5 years ago I did a 5-hour workshop introducing R to about 20\nstudents in grades 10-12. I think it was quite suc",
+      "thread_id": "thread-aa6dcadf24d4",
+      "thread_depth": 1,
+      "month": "2020-01"
+    },
+    {
+      "id": "msg-fa7145ed6480",
+      "message_id": "<20200105132247.GA14531@lilly.csoft.net>",
+      "from_name": "User Hayden",
+      "from_email_hash": "22fa6821856532bb7d9c9c13cdaaf0d35038a9d7b8e0daf14cf332c3a081f6c6",
+      "date": "2020-01-05T08:22:47-05:00",
+      "subject": "[R-sig-teaching] [dr.of.chaos@gmail.com: R book for teaching math & science in high school]",
+      "subject_clean": "[dr.of.chaos@gmail.com: R book for teaching math & science in high school]",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Thanks for reminding me of this book.  I especially appreciate the\nfact that it does not assume you have loaded innumerable libraries.  I\nhave found that just installing R can be a challenge for many\nstudents, and adding libraries even more so.  First, it requires a\npersistent Internet connection, whereas base R can be installed from a\nthumb drive or optical disk.  Then there is dependency hell, from\nwhich the R developers try to shield us, not always successfully.  I\ncan remember trying to install a package that makes R more friendly for\nbeginners.  It had a long list of dependencies, each with its own\ndependencies.  I think there were 147 in all.  Of course, one failed\nto load, and so the original package could not be installed.  I\nthought a good homework problem would be to determine what the\nprobability of one package loading would have to be in order for the\nprobability of 147 loading to be > 50%.    \n\nThis book would be a natural for the newish AP Computer Science\nPrinciples course.\n\nhttps://apstudents.collegeboard.org/courses/ap-computer-science-principles/about\n\nIt's obviously relevant to AP Statistics, though teachers there are\nwedded to graphing calculators, which is encouraged by same being\n\"expected\" on the official exam.  However, a few AP Stats. teachers do\nuse R, and I have taken the liberty of quoting this message in the AP\nStatistics online community.  FWIW though I think the review by\nMatloff will offend that audience.  While I share his views on the\nweaknesses of AP Statistics, those weaknesses are shared by a great\nmany college intro. stats. courses.  In addition, citing the fact that\nR is free and graphing calculators cost $100 or so, shows lack of\nappreciation of the situation on the ground in many high schools.\nWhile R itself is free, you have to have a computer to run it on and a\nreadily accessible lab where students can access said computers. Those\nare NOT free.  Students also have access to their calculators at home,\nwhich may not be the case for R.  \n\n----- Forwarded message from Brian Dennis\n<dr.of.chaos at gmail.com> -----\n\nDate: Sat, 4 Jan 2020 10:16:19 -0800\nFrom: Brian Dennis <dr.of.chaos at gmail.com>\nTo: r-sig-teaching at r-project.org\nSubject: [R-sig-teaching] R book for teaching math & science in high school\n\nHere is a book that introduces R programming for use in high school or\ncollege math and science courses:\n\nhttps://www.crcpress.com/The-R-Student-Companion/Dennis/p/book/9781439875407\n\nThe book is written for absolute beginners in programming concepts and is\none of the most elementary books about R available.  The focus of the book\nis not statistics per se but rather scientific graphing, calculation,\nmodeling, and simulation.  Collected reviews of the book can be found here:\n\nhttps://webpages.uidaho.edu/~brian/reviews_of_RSC.pdf\n\nThe topics are very vanilla R, no RStudio, no ggplot, no dplyr, etc.  The\nchoice of topics was deliberate so as not to overwhelm students.  The math\nlevel is high school algebra.  The scientific examples treated are quite\nreal and engaging.\n\nWith the move in education toward trying to teach \"coding\" in schools, one\nmight ask why not use Python, Java, C+, etc.  The answer is clear:\nstudents can do more cool stuff with R with much less code and computer\nscience overhead.  As well, the supporting online instructional\nenvironment, with zillions of websites, tutorials, and videos, is hard to\nbeat.  For future STEM workers, R is the ideal gateway drug!\n\nI have even taught graphing and calculating in R to elementary school\nstudents.  They are eager and enthusiastic and take to it as fast as the\nolder students.\n\nReadin', Ritin', Rithmetic, and R!\n\nBrian Dennis, Professor\nUniversity of Idaho USA\n\n\t[[alternative HTML version deleted]]\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n----- End forwarded message -----\n\n-- \n\n      _\n     | |          Robert W. Hayden\n     | |          5 Howard Street, Apartment 206\n    /  |          Wilton, New Hampshire 03086  USA\n   |   |          \n   |   |          email: bob@ the site below\n  /    |          website: http://statland.org\n |   x /          \n ''''''",
+      "body_snippet": "Thanks for reminding me of this book.  I especially appreciate the\nfact that it does not assume you have loaded innumerable libraries.  I\nhave found that just installing R can be a challenge for many\n",
+      "thread_id": "thread-fa7145ed6480",
+      "thread_depth": 0,
+      "month": "2020-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-054df3bb3c1b",
+      "subject": "Useful Resources for Teaching R & Basic Statistics",
+      "message_count": 2,
+      "participants": [
+        "Juan Telleria Ruiz de Aguirre"
+      ],
+      "started": "2020-01-03T11:10:00+01:00",
+      "last_reply": "2020-01-03T11:12:11+01:00",
+      "root_message_id": "msg-054df3bb3c1b"
+    },
+    {
+      "id": "thread-b7d2061ed918",
+      "subject": "Teaching GIT Version Control Essentials: IDE & Command Line",
+      "message_count": 1,
+      "participants": [
+        "Juan Telleria Ruiz de Aguirre"
+      ],
+      "started": "2020-01-03T11:16:43+01:00",
+      "last_reply": "2020-01-03T11:16:43+01:00",
+      "root_message_id": "msg-b7d2061ed918"
+    },
+    {
+      "id": "thread-f9e9b86efa1a",
+      "subject": "Resources for Teaching R Programming & Basic Statistical Concepts from a Business Perspective",
+      "message_count": 1,
+      "participants": [
+        "Juan Telleria Ruiz de Aguirre"
+      ],
+      "started": "2020-01-03T11:21:33+01:00",
+      "last_reply": "2020-01-03T11:21:33+01:00",
+      "root_message_id": "msg-f9e9b86efa1a"
+    },
+    {
+      "id": "thread-aa6dcadf24d4",
+      "subject": "R book for teaching math & science in high school",
+      "message_count": 2,
+      "participants": [
+        "Brian Dennis",
+        "Christopher W. Ryan"
+      ],
+      "started": "2020-01-04T10:16:19-08:00",
+      "last_reply": "2020-01-04T13:57:32-05:00",
+      "root_message_id": "msg-aa6dcadf24d4"
+    },
+    {
+      "id": "thread-fa7145ed6480",
+      "subject": "[dr.of.chaos@gmail.com: R book for teaching math & science in high school]",
+      "message_count": 1,
+      "participants": [
+        "User Hayden"
+      ],
+      "started": "2020-01-05T08:22:47-05:00",
+      "last_reply": "2020-01-05T08:22:47-05:00",
+      "root_message_id": "msg-fa7145ed6480"
+    }
+  ]
+}

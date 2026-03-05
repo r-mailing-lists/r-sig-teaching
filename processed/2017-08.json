@@ -1,0 +1,36 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2017-08",
+  "messages": [
+    {
+      "id": "msg-806ec354c40c",
+      "message_id": "<CABkCotSV-3r_CJH2C_fGxbPH1KvdsGsQ0MJPK+yktUBpTuzCjw@mail.gmail.com>",
+      "from_name": "Manuel Spínola",
+      "from_email_hash": "c67b4a8f4e027cf75cc3544d4e04791324bee3c4417f2f5edf4561a1da2f995b",
+      "date": "2017-08-26T15:17:53-06:00",
+      "subject": "[R-sig-teaching] R packages for create interactive homeworks in R",
+      "subject_clean": "R packages for create interactive homeworks in R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear list members,\n\nI am looking for a way to create homeworks and grade them in an interactive\nway.  I am looking into the learnr package but the student can see the\nanswer in the Rmd file if the homework is multiple choice.\n\nIs there any package to create homeworks or exams in an interactive way in\nR?\n\nManuel\n\n-- \n*Manuel Sp?nola, Ph.D.*\nInstituto Internacional en Conservaci?n y Manejo de Vida Silvestre\nUniversidad Nacional\nApartado 1350-3000\nHeredia\nCOSTA RICA\nmspinola at una.cr <mspinola at una.ac.cr>\nmspinola10 at gmail.com\nTel?fono: (506) 8706 - 4662\nPersonal website: Lobito de r?o <https://sites.google.com/site/lobitoderio/>\nInstitutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear list members,\n\nI am looking for a way to create homeworks and grade them in an interactive\nway.  I am looking into the learnr package but the student can see the\nanswer in the Rmd file if the hom",
+      "thread_id": "thread-806ec354c40c",
+      "thread_depth": 0,
+      "month": "2017-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-806ec354c40c",
+      "subject": "R packages for create interactive homeworks in R",
+      "message_count": 1,
+      "participants": [
+        "Manuel Spínola"
+      ],
+      "started": "2017-08-26T15:17:53-06:00",
+      "last_reply": "2017-08-26T15:17:53-06:00",
+      "root_message_id": "msg-806ec354c40c"
+    }
+  ]
+}

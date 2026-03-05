@@ -1,0 +1,182 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2006-10",
+  "messages": [
+    {
+      "id": "msg-7efebafb4e53",
+      "message_id": "<20061027001656.GQ10158@laplace.reed.edu>",
+      "from_name": "Albyn Jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2006-10-26T17:16:56-07:00",
+      "subject": "[R-sig-teaching] R-sig-teaching mailing list",
+      "subject_clean": "R-sig-teaching mailing list",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Discussions held on the Isolated Statistics mailing list about the\nuse R in teaching introductory statistics courses led to the creation\nof a new R SIG: R-sig-teaching.\n\nThe SIG description:\nSpecial Interest Group (SIG) on teaching statistics with R. The\nprimary purpose of the group is to provide a forum where instructors\nusing R in their statistics courses can share ideas, teaching\nmaterials, and experiences.  One particular focus of the SIG is to\nprovide helpful support to instructors new to R who are teaching\nintroductory statistics courses populated with students with little\nexperience in statistics, statistical software, and command line\ninterfaces.\n\nAdministrators:\n               Albyn Jones <jones at reed.edu>\n               Bret Larget <brlarget at wisc.edu>\n\n\nPosting to the list is restricted to subscribers.  To post to the\nlist, send the email to r-sig-teaching at r-project.org.\n\nTo get help about using it, send a message with just the word `help'\nas subject or in the body, to:\n\n    r-sig-teaching-request at hypatia.math.ethz.ch\n\nThe easiest way to subscribe is to go to the web interface at\nhttp://www.r-project.org/, and follow the link to Mailing Lists.\n\nAlbyn",
+      "body_snippet": "Discussions held on the Isolated Statistics mailing list about the\nuse R in teaching introductory statistics courses led to the creation\nof a new R SIG: R-sig-teaching.\n\nThe SIG description:\nSpecial I",
+      "thread_id": "thread-7efebafb4e53",
+      "thread_depth": 0,
+      "month": "2006-10"
+    },
+    {
+      "id": "msg-558c29cf5ba9",
+      "message_id": "<20061027111752.29521.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2006-10-27T07:17:51-04:00",
+      "subject": "[R-sig-teaching] resource text",
+      "subject_clean": "resource text",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The most understandable reference on R I have found is\n \n _Using R for Introductory Statistics_ by John Verzani, Chapman & Hall, 2005.\n\n\n\n _______\n|   ^  | \t\t    \n|     /  \t\t    Robert W. Hayden\n|    |   \t\t    in the old library\n|    |   \t\t    212 Main Street\n|   /    \t            P. O. Box 450\n|  |     \t\t  ^ North Troy, VT 05859\nL__L\t\t\t    (802) 988-2587\n                            http://statland.org/      \nMap of VT                   bob at statland.org\n\nCommunications sent to Plymouth State will not reach me.",
+      "body_snippet": "The most understandable reference on R I have found is\n \n _Using R for Introductory Statistics_ by John Verzani, Chapman & Hall, 2005.\n\n\n\n _______\n|   ^  | \t\t    \n|     /  \t\t    Robert W. Hayden\n|    ",
+      "thread_id": "thread-558c29cf5ba9",
+      "thread_depth": 0,
+      "month": "2006-10"
+    },
+    {
+      "id": "msg-42f5b4658c22",
+      "message_id": "<20061027112857.32123.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2006-10-27T07:28:57-04:00",
+      "subject": "[R-sig-teaching] resources",
+      "subject_clean": "resources",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "This link\n\n     http://www.statland.org/R/WhyR.htm\n\ngoes to a page that lists some of the advantages and disadvantages of\nusing R in an introductroy course.  From there you can link to the 11\nhandouts I used for a course I have taught online.  These might need\nto be localized to your situation.  R was not the main software for\nthe course but an option for those planning to take further coures\nwhere R WAS the official software.  So, I do not really know if anyone\never used these pages.  If you find any errors or gltches, please let\nme know.\n\n _______\n|   ^  | \t\t    \n|     /  \t\t    Robert W. Hayden\n|    |   \t\t    in the old library\n|    |   \t\t    212 Main Street\n|   /    \t            P. O. Box 450\n|  |     \t\t  ^ North Troy, VT 05859\nL__L\t\t\t    (802) 988-2587\n                            http://statland.org/      \nMap of VT                   bob at statland.org\n\nCommunications sent to Plymouth State will not reach me.",
+      "body_snippet": "This link\n\n     http://www.statland.org/R/WhyR.htm\n\ngoes to a page that lists some of the advantages and disadvantages of\nusing R in an introductroy course.  From there you can link to the 11\nhandouts",
+      "thread_id": "thread-42f5b4658c22",
+      "thread_depth": 0,
+      "month": "2006-10"
+    },
+    {
+      "id": "msg-15bcb59cc1a5",
+      "message_id": "<20061027131009.36783.qmail@web53307.mail.yahoo.com>",
+      "from_name": "Nicholas Horton",
+      "from_email_hash": "9e44a5ab3434adb176b17e0e24804f1ac2dc82061d5d92983e9e78e4057e0d0c",
+      "date": "2006-10-27T06:10:08-07:00",
+      "subject": "[R-sig-teaching] query about how to organize an intro to R",
+      "subject_clean": "query about how to organize an intro to R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I'm planning to utilize R for my intermediate stats\ncourse in the spring.  I'd be most interested in\nhearing summaries and/or receiving materials that\nfolks have used to introduce students to R, and guided\nthem through the mechanics of using the command\nlanguage, running scripts, etc.\n\nThanks in advance for any examples or suggestions.\n\nNick Horton\nDepartment of Mathematics and Statistics\nSmith College",
+      "body_snippet": "I'm planning to utilize R for my intermediate stats\ncourse in the spring.  I'd be most interested in\nhearing summaries and/or receiving materials that\nfolks have used to introduce students to R, and g",
+      "thread_id": "thread-15bcb59cc1a5",
+      "thread_depth": 0,
+      "month": "2006-10"
+    },
+    {
+      "id": "msg-46e4394cd2d2",
+      "message_id": "<4542087C.40705@carleton.edu>",
+      "from_name": "Bob Dobrow",
+      "from_email_hash": "c33452efce92c3343866d83ef5746b58a42298b457360e27ecaa4c83cb977b88",
+      "date": "2006-10-27T08:24:12-05:00",
+      "subject": "[R-sig-teaching] R in intro stats",
+      "subject_clean": "R in intro stats",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I'm glad to see this sig list up and running.\n\nI'm planning to use R for my *intro* stats class in the Winter. This is \nan experiment,\nas our intro stats classes all use SPSS. So I'm using R for this one \nsection (out of about 8 sections\na year).  I want to see (1) how easy/hard it is for\nstudents to work in a command line environment and (2) whether there is some\npedagogical advantage to working with command lines rather than just \npoint-and-click.\n\nWe've taken our GUI-based SPSS lab manual and rewritten it for R. If \nanyone would like to see it I can make it available. I'll probably need \nto supplement it with some very basic intro tutorials or\nworksheets giving basic introduction. I do not intend to have these \nstudents (mostly poli sci,\necon and bio) writing scripts. But I do intend to use R lots in-class \nsimulations and\npresentations. If anyone has used R in the intro class I'd be interested \nin hearing your experiences.\n\nBob Dobrow\nCarleton College",
+      "body_snippet": "I'm glad to see this sig list up and running.\n\nI'm planning to use R for my *intro* stats class in the Winter. This is \nan experiment,\nas our intro stats classes all use SPSS. So I'm using R for this ",
+      "thread_id": "thread-46e4394cd2d2",
+      "thread_depth": 0,
+      "month": "2006-10"
+    },
+    {
+      "id": "msg-9453a4b63d65",
+      "message_id": "<17730.4504.701051.477946@stat.math.ethz.ch>",
+      "from_name": "Martin Maechler",
+      "from_email_hash": "c2c86f22f78a4ecfe6d0e6b4e2be505a3f5beb0470ea88c903688ac536018a98",
+      "date": "2006-10-27T16:03:04+02:00",
+      "subject": "[R-sig-teaching] R in intro stats",
+      "subject_clean": "R in intro stats",
+      "in_reply_to": "<4542087C.40705@carleton.edu>",
+      "references": [
+        "<4542087C.40705@carleton.edu>"
+      ],
+      "body_plain": "I may state the obvious, but just in case it ain't.. :\n\nWe have been using R for intro stats courses here at ETH only\nfor engineer- or math- like students (and continue to do so),\nbut not for e.g., biology or environmental science students.\n\nHowever, starting this fall, we (well, most of our faculty) are\nusing or plan to use  Professor John Fox'  \"RCmdr\" ('R\nCommander')  instead of the GUI stats package ('SyStat' I believe). \nOne nice goal of the RCmdr is to give students a simple GUI but\nsimultaneously expose them to the language (which is visibly\nproduced by GUI clicking) such that they learn part of it \"by\nthe way\", and are lured into using it for things that go beyond\nthe GUI. \n\nI could also envisage to use the R Cmdr for the first half of\nclass and then to switch almost completely to \"command line\"\ni.e., rather an R-aware smart editor such as Tinn-R, Emacs,\nWinEdt, Kate, or the one that comes with R for MacOS X.\n\nMartin Maechler, \nETH Zurich\n\n>>>>> \"Bob\" == Bob Dobrow <rdobrow at carleton.edu>\n>>>>>     on Fri, 27 Oct 2006 08:24:12 -0500 writes:\n\n    Bob> I'm glad to see this sig list up and running.\n    Bob> I'm planning to use R for my *intro* stats class in the Winter. This is \n    Bob> an experiment,\n    Bob> as our intro stats classes all use SPSS. So I'm using R for this one \n    Bob> section (out of about 8 sections\n    Bob> a year).  I want to see (1) how easy/hard it is for\n    Bob> students to work in a command line environment and (2) whether there is some\n    Bob> pedagogical advantage to working with command lines rather than just \n    Bob> point-and-click.\n\n    Bob> We've taken our GUI-based SPSS lab manual and rewritten it for R. If \n    Bob> anyone would like to see it I can make it available. I'll probably need \n    Bob> to supplement it with some very basic intro tutorials or\n    Bob> worksheets giving basic introduction. I do not intend to have these \n    Bob> students (mostly poli sci,\n    Bob> econ and bio) writing scripts. But I do intend to use R lots in-class \n    Bob> simulations and\n    Bob> presentations. If anyone has used R in the intro class I'd be interested \n    Bob> in hearing your experiences.\n\n    Bob> Bob Dobrow\n    Bob> Carleton College",
+      "body_snippet": "I may state the obvious, but just in case it ain't.. :\n\nWe have been using R for intro stats courses here at ETH only\nfor engineer- or math- like students (and continue to do so),\nbut not for e.g., bi",
+      "thread_id": "thread-46e4394cd2d2",
+      "thread_depth": 1,
+      "month": "2006-10"
+    },
+    {
+      "id": "msg-0db6157820b2",
+      "message_id": "<20061027183742.GE17604@laplace.reed.edu>",
+      "from_name": "Albyn Jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2006-10-27T11:37:42-07:00",
+      "subject": "[R-sig-teaching] R in intro stats",
+      "subject_clean": "R in intro stats",
+      "in_reply_to": "<4542087C.40705@carleton.edu>",
+      "references": [
+        "<4542087C.40705@carleton.edu>"
+      ],
+      "body_plain": "I have been using R (and Splus before that, and old S before that) in\nmy intro course for a long time.  Most of the students in the course\nhave never used a command line interface before.  They come from many\ndisciplines (Bio, Econ, Soc, Poli Sci, History, etc...). \n\nI see advantages and disadvantages: you certainly have to spend more\ntime on learning the software.  The simple fact that spelling and\ncapitalization (X vs x) cause trouble takes some time.  The payoff I\nsee is substantial; the flexibility of the graphics facilities are a\nrevelation for students who have used other statistical software.\nSome students get interested in R as a language.  The ease of doing\nsimulations has great value.  The price is right: many students\ninstall R on their own personal machines, and some even continue to\nuse it after the course ends.\n\nI use R for in-class demos, as well as having a 1 hour lab session every \nweek.  I have written online lab notes for each lab meeting, though I am\nconstantly rethinking and revising them.  \n\nalbyn \n\nOn Fri, Oct 27, 2006 at 08:24:12AM -0500, Bob Dobrow wrote:\n> I'm glad to see this sig list up and running.\n> \n> I'm planning to use R for my *intro* stats class in the Winter. This is \n> an experiment,\n> as our intro stats classes all use SPSS. So I'm using R for this one \n> section (out of about 8 sections\n> a year).  I want to see (1) how easy/hard it is for\n> students to work in a command line environment and (2) whether there is some\n> pedagogical advantage to working with command lines rather than just \n> point-and-click.\n> \n> We've taken our GUI-based SPSS lab manual and rewritten it for R. If \n> anyone would like to see it I can make it available. I'll probably need \n> to supplement it with some very basic intro tutorials or\n> worksheets giving basic introduction. I do not intend to have these \n> students (mostly poli sci,\n> econ and bio) writing scripts. But I do intend to use R lots in-class \n> simulations and\n> presentations. If anyone has used R in the intro class I'd be interested \n> in hearing your experiences.\n> \n> Bob Dobrow\n> Carleton College\n> \n> \n\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "I have been using R (and Splus before that, and old S before that) in\nmy intro course for a long time.  Most of the students in the course\nhave never used a command line interface before.  They come f",
+      "thread_id": "thread-46e4394cd2d2",
+      "thread_depth": 1,
+      "month": "2006-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-7efebafb4e53",
+      "subject": "R-sig-teaching mailing list",
+      "message_count": 1,
+      "participants": [
+        "Albyn Jones"
+      ],
+      "started": "2006-10-26T17:16:56-07:00",
+      "last_reply": "2006-10-26T17:16:56-07:00",
+      "root_message_id": "msg-7efebafb4e53"
+    },
+    {
+      "id": "thread-15bcb59cc1a5",
+      "subject": "query about how to organize an intro to R",
+      "message_count": 1,
+      "participants": [
+        "Nicholas Horton"
+      ],
+      "started": "2006-10-27T06:10:08-07:00",
+      "last_reply": "2006-10-27T06:10:08-07:00",
+      "root_message_id": "msg-15bcb59cc1a5"
+    },
+    {
+      "id": "thread-558c29cf5ba9",
+      "subject": "resource text",
+      "message_count": 1,
+      "participants": [
+        "Robert W. Hayden"
+      ],
+      "started": "2006-10-27T07:17:51-04:00",
+      "last_reply": "2006-10-27T07:17:51-04:00",
+      "root_message_id": "msg-558c29cf5ba9"
+    },
+    {
+      "id": "thread-42f5b4658c22",
+      "subject": "resources",
+      "message_count": 1,
+      "participants": [
+        "Robert W. Hayden"
+      ],
+      "started": "2006-10-27T07:28:57-04:00",
+      "last_reply": "2006-10-27T07:28:57-04:00",
+      "root_message_id": "msg-42f5b4658c22"
+    },
+    {
+      "id": "thread-46e4394cd2d2",
+      "subject": "R in intro stats",
+      "message_count": 3,
+      "participants": [
+        "Albyn Jones",
+        "Bob Dobrow",
+        "Martin Maechler"
+      ],
+      "started": "2006-10-27T08:24:12-05:00",
+      "last_reply": "2006-10-27T11:37:42-07:00",
+      "root_message_id": "msg-46e4394cd2d2"
+    }
+  ]
+}

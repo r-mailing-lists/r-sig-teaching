@@ -1,0 +1,102 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2026-01",
+  "messages": [
+    {
+      "id": "msg-d4970157dcce",
+      "message_id": "<774b090eb48abf7f33f00c550a7369e0@transmittingscience.com>",
+      "from_name": "Soledad De Esteban-Trivigno",
+      "from_email_hash": "8f86d344535c2d752798833f8aa7b9b289c3f06b2847533734edeade3b9f0d42",
+      "date": "2026-01-27T07:50:40Z",
+      "subject": "[R-sig-teaching] Live online course Introduction to Bayesian Analysis with R",
+      "subject_clean": "Live online course Introduction to Bayesian Analysis with R",
+      "in_reply_to": "<c92dc3d6497a9ac3915e369ce7da8a18@transmittingscience.com>",
+      "references": [
+        "<55098deaad0949bf1c6b83aacf3c6ff6@transmittingscience.com>",
+        "<e6cbec8718296ccbb730b083e5cd8210@transmittingscience.com>",
+        "<d062c5be897eae0b85da020e8154da80@transmittingscience.com>",
+        "<99e6028a8e2aaa1bf54ad203977b8bb7@transmittingscience.com>",
+        "<9717809065fa934e7bbd8f2c75daa8ce@transmittingscience.com>",
+        "<38b381399c9994bb67c07bf0a8087cc7@transmittingscience.com>",
+        "<817804114fdef0670b36fbc3497f49f9@transmittingscience.com>",
+        "<7463b7ccc740531b5f0fb705365e1b47@transmittingscience.com>",
+        "<c92dc3d6497a9ac3915e369ce7da8a18@transmittingscience.com>"
+      ],
+      "body_plain": "Dear colleagues,\n\nTransmitting Science is offering the course \"Introduction to Bayesian \nInference in Practice\".\n\nCourse webpage: \nhttps://www.transmittingscience.com/courses/statistics-and-bioinformatics/introduction-bayesian-inference-practice/\n\nInstructors: Dr. Daniele Silvestro [1] (ETH Z?rich, Switzerland) and Dr. \nTobias Andermann [2] (University of Uppsala, Sweden)\n\nCourse overview:\n\nOn this course, we will outline the relevant concepts and basic theory \nof Bayesian methods, but the focus of the course will be to learn how to \nperform Bayesian inference in practice. We will demonstrate how to \nimplement the most common algorithms to estimate parameters based on \nposterior probabilities, such as Markov Chain Monte Carlo samplers, and \nhow to build hierarchical models. We will also touch upon hypothesis \ntesting using Bayes factors and Bayesian variable selection.\n\nThe course will take a learn-by-doing approach, in which participants \nwill implement their own MCMCs using R or Python (templates for both \nlanguages will be provided).\n\nAfter completion of the course, the participants will have gained a \nbetter understanding of how the main Bayesian methods implemented in \nmany programs used in biological research work. Participants will also \nlearn how to model at least basic problems using Bayesian statistics and \nhow to implement the necessary algorithms to solve them. The aim is \nthat, by the end of the course, each participant will have written their \nown MCMC - from scratch!\n\nFor more information, please contact us at \ncourses at transmittingscience.com\n\nBest wishes\n\nSole\n\n-- \nSoledad De Esteban-Trivigno, PhD\nDirector\nTransmitting Science\nwww.transmittingscience.com/courses\n\nBluesky @soledeesteban.bsky.social\nX @SoleDeEsteban\nOrcid: https://orcid.org/0000-0002-2049-0890\n\n\n\nLinks:\n------\n[1] https://www.transmittingscience.com/instructors/daniele-silvestro/\n[2] https://www.transmittingscience.com/instructors/tobias-andermann/\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear colleagues,\n\nTransmitting Science is offering the course \"Introduction to Bayesian \nInference in Practice\".\n\nCourse webpage: \nhttps://www.transmittingscience.com/courses/statistics-and-bioinforma",
+      "thread_id": "thread-d4970157dcce",
+      "thread_depth": 0,
+      "month": "2026-01"
+    },
+    {
+      "id": "msg-2d6cee62ec92",
+      "message_id": "<CAKe6t22F1QZJGcrxPUDMGQabZ=MUzGNLKo5_+114nWWgpe-W-g@mail.gmail.com>",
+      "from_name": "Timothy Bates",
+      "from_email_hash": "ffb123f9baccaf6b74db0bf4d17706dacb07ea25d79b547c8886dc6864d3054d",
+      "date": "2026-01-27T21:26:08+13:00",
+      "subject": "[R-sig-teaching] Live online course Introduction to Bayesian Analysis with R",
+      "subject_clean": "Live online course Introduction to Bayesian Analysis with R",
+      "in_reply_to": "<774b090eb48abf7f33f00c550a7369e0@transmittingscience.com>",
+      "references": [
+        "<55098deaad0949bf1c6b83aacf3c6ff6@transmittingscience.com>",
+        "<e6cbec8718296ccbb730b083e5cd8210@transmittingscience.com>",
+        "<d062c5be897eae0b85da020e8154da80@transmittingscience.com>",
+        "<99e6028a8e2aaa1bf54ad203977b8bb7@transmittingscience.com>",
+        "<9717809065fa934e7bbd8f2c75daa8ce@transmittingscience.com>",
+        "<38b381399c9994bb67c07bf0a8087cc7@transmittingscience.com>",
+        "<817804114fdef0670b36fbc3497f49f9@transmittingscience.com>",
+        "<7463b7ccc740531b5f0fb705365e1b47@transmittingscience.com>",
+        "<c92dc3d6497a9ac3915e369ce7da8a18@transmittingscience.com>",
+        "<774b090eb48abf7f33f00c550a7369e0@transmittingscience.com>"
+      ],
+      "body_plain": "Can admin ban these advertisers or do we all need to leave the list?\nT\n\nOn Tue, Jan 27, 2026 at 8:53?PM Soledad De Esteban-Trivigno <\nsoledad.esteban at transmittingscience.com> wrote:\n\n> Dear colleagues,\n>\n> Transmitting Science is offering the course \"Introduction to Bayesian\n> Inference in Practice\".\n>\n> Course webpage:\n>\n> https://www.transmittingscience.com/courses/statistics-and-bioinformatics/introduction-bayesian-inference-practice/\n>\n> Instructors: Dr. Daniele Silvestro [1] (ETH Z?rich, Switzerland) and Dr.\n> Tobias Andermann [2] (University of Uppsala, Sweden)\n>\n> Course overview:\n>\n> On this course, we will outline the relevant concepts and basic theory\n> of Bayesian methods, but the focus of the course will be to learn how to\n> perform Bayesian inference in practice. We will demonstrate how to\n> implement the most common algorithms to estimate parameters based on\n> posterior probabilities, such as Markov Chain Monte Carlo samplers, and\n> how to build hierarchical models. We will also touch upon hypothesis\n> testing using Bayes factors and Bayesian variable selection.\n>\n> The course will take a learn-by-doing approach, in which participants\n> will implement their own MCMCs using R or Python (templates for both\n> languages will be provided).\n>\n> After completion of the course, the participants will have gained a\n> better understanding of how the main Bayesian methods implemented in\n> many programs used in biological research work. Participants will also\n> learn how to model at least basic problems using Bayesian statistics and\n> how to implement the necessary algorithms to solve them. The aim is\n> that, by the end of the course, each participant will have written their\n> own MCMC - from scratch!\n>\n> For more information, please contact us at\n> courses at transmittingscience.com\n>\n> Best wishes\n>\n> Sole\n>\n> --\n> Soledad De Esteban-Trivigno, PhD\n> Director\n> Transmitting Science\n> www.transmittingscience.com/courses\n>\n> Bluesky @soledeesteban.bsky.social\n> X @SoleDeEsteban\n> Orcid: https://orcid.org/0000-0002-2049-0890\n>\n>\n>\n> Links:\n> ------\n> [1] https://www.transmittingscience.com/instructors/daniele-silvestro/\n> [2] https://www.transmittingscience.com/instructors/tobias-andermann/\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Can admin ban these advertisers or do we all need to leave the list?\nT\n\nOn Tue, Jan 27, 2026 at 8:53?PM Soledad De Esteban-Trivigno <\nsoledad.esteban at transmittingscience.com> wrote:\n\n> Dear colleag",
+      "thread_id": "thread-d4970157dcce",
+      "thread_depth": 1,
+      "month": "2026-01"
+    },
+    {
+      "id": "msg-35577a6f556e",
+      "message_id": "<3daad6ec8620b4b162c28a1fafa5cade@transmittingscience.com>",
+      "from_name": "Soledad De Esteban-Trivigno",
+      "from_email_hash": "8f86d344535c2d752798833f8aa7b9b289c3f06b2847533734edeade3b9f0d42",
+      "date": "2026-01-27T08:27:37Z",
+      "subject": "[R-sig-teaching] Live online course Introduction to Bayesian Analysis with R",
+      "subject_clean": "Live online course Introduction to Bayesian Analysis with R",
+      "in_reply_to": "<CAKe6t22F1QZJGcrxPUDMGQabZ=MUzGNLKo5_+114nWWgpe-W-g@mail.gmail.com>",
+      "references": [
+        "<55098deaad0949bf1c6b83aacf3c6ff6@transmittingscience.com>",
+        "<e6cbec8718296ccbb730b083e5cd8210@transmittingscience.com>",
+        "<d062c5be897eae0b85da020e8154da80@transmittingscience.com>",
+        "<99e6028a8e2aaa1bf54ad203977b8bb7@transmittingscience.com>",
+        "<9717809065fa934e7bbd8f2c75daa8ce@transmittingscience.com>",
+        "<38b381399c9994bb67c07bf0a8087cc7@transmittingscience.com>",
+        "<817804114fdef0670b36fbc3497f49f9@transmittingscience.com>",
+        "<7463b7ccc740531b5f0fb705365e1b47@transmittingscience.com>",
+        "<c92dc3d6497a9ac3915e369ce7da8a18@transmittingscience.com>",
+        "<774b090eb48abf7f33f00c550a7369e0@transmittingscience.com>",
+        "<CAKe6t22F1QZJGcrxPUDMGQabZ=MUzGNLKo5_+114nWWgpe-W-g@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Tim,\n\nDo not worry, we will not post any advertisement again.\n\nApologies for the inconvenience.\n\nSole\n\n---\nSoledad De Esteban-Trivigno, PhD\nDirector\nTransmitting Science\nwww.transmittingscience.com/courses\n\nBluesky @soledeesteban.bsky.social\nX @SoleDeEsteban\nOrcid: https://orcid.org/0000-0002-2049-0890\n\nUnder the provisions of current regulations on the protection of \npersonal data, Regulation (EU) 2016/679 of 27 April 2016 (GDPR), we \ninform you that personal data and email address, collected from the data \nsubject will be used by TRANSMITTING SCIENCE SL to manage communications \nthrough email and properly manage the professional relationship with \nyou. The data are obtained based on a contractual relationship or the \nlegitimate interest of the Responsible, likewise the data will be kept \nas long as there is a mutual interest for it. The data will not be \ncommunicated to third parties, except for legal obligations. We inform \nyou that you can request detailed information on the processing as well \nas exercise your rights of access, rectification, portability and \ndeletion of your data and those of limitation and opposition to its \ntreatment by contacting Calle Gardenia, 2 Urb. Can Claramunt de Piera \nCP: 08784 (Barcelona) or sending an email to \ninfo at transmittingscience.com or \nhttp://transmittingscience.com/additional-terms. If you consider that \nthe processing does not comply with current legislation, you can \ncomplain with the supervisory authority at www. aepd.es .\nConfidentiality. - The content of this communication, as well as that of \nall the attached documentation, is confidential and is addressed to the \naddressee. If you are not the recipient, we request that you indicate \nthis to us and do not communicate its contents to third parties, \nproceeding to its destruction.\n  Disclaimer of liability. - The sending of this communication does not \nimply any obligation on the part of the sender to control the absence of \nviruses, worms, Trojan horses and/or any other harmful computer program, \nand it corresponds to the recipient to have the necessary hardware and \nsoftware tools to guarantee both the security of its information system \nand the detection and elimination of harmful computer programs. \nTRANSMITTING SCIENCE SL shall not be liable.\n\nOn 2026-01-27 08:26, Timothy Bates wrote:\n\n> Can admin ban these advertisers or do we all need to leave the list?\n> T\n> \n> On Tue, Jan 27, 2026 at 8:53?PM Soledad De Esteban-Trivigno \n> <soledad.esteban at transmittingscience.com> wrote:\n> \n>> Dear colleagues,\n>> \n>> Transmitting Science is offering the course \"Introduction to Bayesian\n>> Inference in Practice\".\n>> \n>> Course webpage:\n>> https://www.transmittingscience.com/courses/statistics-and-bioinformatics/introduction-bayesian-inference-practice/\n>> \n>> Instructors: Dr. Daniele Silvestro [1] (ETH Z?rich, Switzerland) and \n>> Dr.\n>> Tobias Andermann [2] (University of Uppsala, Sweden)\n>> \n>> Course overview:\n>> \n>> On this course, we will outline the relevant concepts and basic theory\n>> of Bayesian methods, but the focus of the course will be to learn how \n>> to\n>> perform Bayesian inference in practice. We will demonstrate how to\n>> implement the most common algorithms to estimate parameters based on\n>> posterior probabilities, such as Markov Chain Monte Carlo samplers, \n>> and\n>> how to build hierarchical models. We will also touch upon hypothesis\n>> testing using Bayes factors and Bayesian variable selection.\n>> \n>> The course will take a learn-by-doing approach, in which participants\n>> will implement their own MCMCs using R or Python (templates for both\n>> languages will be provided).\n>> \n>> After completion of the course, the participants will have gained a\n>> better understanding of how the main Bayesian methods implemented in\n>> many programs used in biological research work. Participants will also\n>> learn how to model at least basic problems using Bayesian statistics \n>> and\n>> how to implement the necessary algorithms to solve them. The aim is\n>> that, by the end of the course, each participant will have written \n>> their\n>> own MCMC - from scratch!\n>> \n>> For more information, please contact us at\n>> courses at transmittingscience.com\n>> \n>> Best wishes\n>> \n>> Sole\n>> \n>> --\n>> Soledad De Esteban-Trivigno, PhD\n>> Director\n>> Transmitting Science\n>> www.transmittingscience.com/courses [1]\n>> \n>> Bluesky @soledeesteban.bsky.social\n>> X @SoleDeEsteban\n>> Orcid: https://orcid.org/0000-0002-2049-0890\n>> \n>> Links:\n>> ------\n>> [1] https://www.transmittingscience.com/instructors/daniele-silvestro/\n>> [2] https://www.transmittingscience.com/instructors/tobias-andermann/\n>> [[alternative HTML version deleted]]\n>> \n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\nLinks:\n------\n[1] http://www.transmittingscience.com/courses\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear Tim,\n\nDo not worry, we will not post any advertisement again.\n\nApologies for the inconvenience.\n\nSole\n\n---\nSoledad De Esteban-Trivigno, PhD\nDirector\nTransmitting Science\nwww.transmittingscience.c",
+      "thread_id": "thread-d4970157dcce",
+      "thread_depth": 2,
+      "month": "2026-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-d4970157dcce",
+      "subject": "Live online course Introduction to Bayesian Analysis with R",
+      "message_count": 3,
+      "participants": [
+        "Soledad De Esteban-Trivigno",
+        "Timothy Bates"
+      ],
+      "started": "2026-01-27T07:50:40+00:00",
+      "last_reply": "2026-01-27T08:27:37+00:00",
+      "root_message_id": "msg-d4970157dcce"
+    }
+  ]
+}

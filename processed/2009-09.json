@@ -1,0 +1,235 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2009-09",
+  "messages": [
+    {
+      "id": "msg-551f9755e1c2",
+      "message_id": "<31932.1251801575@maps>",
+      "from_name": "Stephen Eglen",
+      "from_email_hash": "5a7334007cf151111cfb34118f7d7b7dae52f6bac7a6b6c6eac0b8cd5c757984",
+      "date": "2009-09-01T11:39:35+01:00",
+      "subject": "[R-sig-teaching] Article on teaching R",
+      "subject_clean": "Article on teaching R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I've written a short article on my experiences with teaching R to\ncomputational biology graduate students:\n\nhttp://www.ploscompbiol.org/doi/pcbi.1000482\n\nMy lecture notes are available as supplementary material, along with the\nbeamer/latex sources (from my web page: \nhttp://www.damtp.cam.ac.uk/user/sje30/downloads.html)\n\nStephen\n-- \nStephen Eglen, DAMTP, Centre for Mathematical Sciences\nWilberforce Road, Cambridge CB3 0WA, U.K.\nTel +44 (0)1223 765 761               S.J.Eglen at damtp.cam.ac.uk\nFax +44 (0)1223 760 419   http://www.damtp.cam.ac.uk/user/eglen",
+      "body_snippet": "I've written a short article on my experiences with teaching R to\ncomputational biology graduate students:\n\nhttp://www.ploscompbiol.org/doi/pcbi.1000482\n\nMy lecture notes are available as supplementar",
+      "thread_id": "thread-551f9755e1c2",
+      "thread_depth": 0,
+      "month": "2009-09"
+    },
+    {
+      "id": "msg-59ed545f52e8",
+      "message_id": "<19BF51D76F8B489E827B60AD18784058@NEUTRINO>",
+      "from_name": "Chi Ming Yau",
+      "from_email_hash": "bebd9dbec8b0e26195894f1251e76a74ec65d4731b29857dacc78afe28d31923",
+      "date": "2009-09-02T11:52:08-07:00",
+      "subject": "[R-sig-teaching] R website for college students (Chi Yau)",
+      "subject_clean": "R website for college students (Chi Yau)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090902/8ff5dd60/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090902/8ff5dd60/attachment.pl>",
+      "thread_id": "thread-59ed545f52e8",
+      "thread_depth": 0,
+      "month": "2009-09"
+    },
+    {
+      "id": "msg-dc0d565d4618",
+      "message_id": "<95B5CF39-2F85-4015-82EE-FF9602DB2F2B@anu.edu.au>",
+      "from_name": "John Maindonald",
+      "from_email_hash": "2de8ee602ec487e8ae8c715c88cb2320b0ddc4a3428764e445cf26eb69ef92c5",
+      "date": "2009-09-11T16:47:01+10:00",
+      "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 17, Issue 7",
+      "subject_clean": "R-sig-teaching Digest, Vol 17, Issue 7",
+      "in_reply_to": "<mailman.3.1227438001.10657.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.3.1227438001.10657.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": "I am looking for information on experimentation with the use\nof R in the teaching of statistics and science in schools.  Any\nleads would be very welcome.\nJohn.\n\nJohn Maindonald             email: john.maindonald at anu.edu.au\nphone : +61 2 (6125)3473    fax  : +61 2(6125)5549\nCentre for Mathematics & Its Applications, Room 1194,\nJohn Dedman Mathematical Sciences Building (Building 27)\nAustralian National University, Canberra ACT 0200.",
+      "body_snippet": "I am looking for information on experimentation with the use\nof R in the teaching of statistics and science in schools.  Any\nleads would be very welcome.\nJohn.\n\nJohn Maindonald             email: john",
+      "thread_id": "thread-dc0d565d4618",
+      "thread_depth": 0,
+      "month": "2009-09"
+    },
+    {
+      "id": "msg-fbf694bc7f56",
+      "message_id": "<C949C220-9301-4399-91DB-4F90C91A16FE@anu.edu.au>",
+      "from_name": "John Maindonald",
+      "from_email_hash": "2de8ee602ec487e8ae8c715c88cb2320b0ddc4a3428764e445cf26eb69ef92c5",
+      "date": "2009-09-19T17:50:16+10:00",
+      "subject": "[R-sig-teaching] Use of R in Schools",
+      "subject_clean": "Use of R in Schools",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I am looking for information on experimentation with the use\nof R in the teaching of statistics and science in schools.  Any\nleads would be very welcome.  I am certain that there is such\nexperimentation.\n\nI sent this to the list a few days ago with, as I now discover,\nan unfortunate subject line!\n\nJohn.\n\nJohn Maindonald             email: john.maindonald at anu.edu.au\nphone : +61 2 (6125)3473    fax  : +61 2(6125)5549\nCentre for Mathematics & Its Applications, Room 1194,\nJohn Dedman Mathematical Sciences Building (Building 27)\nAustralian National University, Canberra ACT 0200.",
+      "body_snippet": "I am looking for information on experimentation with the use\nof R in the teaching of statistics and science in schools.  Any\nleads would be very welcome.  I am certain that there is such\nexperimentati",
+      "thread_id": "thread-fbf694bc7f56",
+      "thread_depth": 0,
+      "month": "2009-09"
+    },
+    {
+      "id": "msg-bb9f3f0d878d",
+      "message_id": "<896718040909190554s62151c76ge3411f100697de62@mail.gmail.com>",
+      "from_name": "sanket deshmukh",
+      "from_email_hash": "87c179c993b109098143357ee6605108aec888cefab30e62920ba991eb9b2bd0",
+      "date": "2009-09-19T18:24:04+05:30",
+      "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 25, Issue 5",
+      "subject_clean": "R-sig-teaching Digest, Vol 25, Issue 5",
+      "in_reply_to": "<mailman.9.1253354403.17640.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.9.1253354403.17640.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090919/c4bb1407/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090919/c4bb1407/attachment.pl>",
+      "thread_id": "thread-bb9f3f0d878d",
+      "thread_depth": 0,
+      "month": "2009-09"
+    },
+    {
+      "id": "msg-552a240f7a7c",
+      "message_id": "<p06002020c6dad71db12b@[192.168.1.18]>",
+      "from_name": "Jean lobry",
+      "from_email_hash": "92f00cec5507fc339b350dc5deec32274bd68ad5ea0338971fee7b289106e82d",
+      "date": "2009-09-19T20:51:56+02:00",
+      "subject": "[R-sig-teaching] Use of R in Schools (John Maindonald)",
+      "subject_clean": "Use of R in Schools (John Maindonald)",
+      "in_reply_to": "<mailman.9.1253354403.17640.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.9.1253354403.17640.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": "John,\n\n>I am looking for information on experimentation with the use\n>of R in the teaching of statistics and science in schools.  Any\n>leads would be very welcome.  I am certain that there is such\n>experimentation.\n\nWhat do you mean exactly by \"schools\", this is a rather polysemic\nword all around the world. How old are the students in the schools\nyou are interested in? I'm asking just to make your question more\nclear.\n\nBest,\n\nJean\n\n-- \nJean R. Lobry            (lobry at biomserv.univ-lyon1.fr)\nLaboratoire BBE-CNRS-UMR-5558, Univ. C. Bernard - LYON I,\n43 Bd 11/11/1918, F-69622 VILLEURBANNE CEDEX, FRANCE\nallo  : +33 472 43 27 56     fax    : +33 472 43 13 88\nhttp://pbil.univ-lyon1.fr/members/lobry/",
+      "body_snippet": "John,\n\n>I am looking for information on experimentation with the use\n>of R in the teaching of statistics and science in schools.  Any\n>leads would be very welcome.  I am certain that there is such\n>ex",
+      "thread_id": "thread-552a240f7a7c",
+      "thread_depth": 0,
+      "month": "2009-09"
+    },
+    {
+      "id": "msg-3ee032898f3f",
+      "message_id": "<1B8F956C-9D23-49AC-BE39-11E9248F580C@anu.edu.au>",
+      "from_name": "John Maindonald",
+      "from_email_hash": "2de8ee602ec487e8ae8c715c88cb2320b0ddc4a3428764e445cf26eb69ef92c5",
+      "date": "2009-09-20T20:43:17+10:00",
+      "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 25, Issue 6",
+      "subject_clean": "R-sig-teaching Digest, Vol 25, Issue 6",
+      "in_reply_to": "<mailman.5.1253440802.11141.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.5.1253440802.11141.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": "By \"school\", I mean pre-University.  Here in Australia, maybe\nyears 11 and 12, perhaps age 10.  Most pupils start at age 5.\nJohn.\n\nJohn Maindonald             email: john.maindonald at anu.edu.au\nphone : +61 2 (6125)3473    fax  : +61 2(6125)5549\nCentre for Mathematics & Its Applications, Room 1194,\nJohn Dedman Mathematical Sciences Building (Building 27)\nAustralian National University, Canberra ACT 0200.\n\n\nOn 20/09/2009, at 8:00 PM, r-sig-teaching-request at r-project.org wrote:\n\n> Send R-sig-teaching mailing list submissions to\n> \tr-sig-teaching at r-project.org\n>\n> To subscribe or unsubscribe via the World Wide Web, visit\n> \thttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> or, via email, send a message with subject or body 'help' to\n> \tr-sig-teaching-request at r-project.org\n>\n> You can reach the person managing the list at\n> \tr-sig-teaching-owner at r-project.org\n>\n> When replying, please edit your Subject line so it is more specific\n> than \"Re: Contents of R-sig-teaching digest...\"\n>\n>\n> Today's Topics:\n>\n>  1. Re: R-sig-teaching Digest, Vol 25, Issue 5 (sanket deshmukh)\n>  2. Re: Use of R in Schools (John Maindonald) (Jean lobry)\n>\n>\n> ----------------------------------------------------------------------\n>\n> Message: 1\n> Date: Sat, 19 Sep 2009 18:24:04 +0530\n> From: sanket deshmukh <sanketrdeshmukh at gmail.com>\n> Subject: Re: [R-sig-teaching] R-sig-teaching Digest, Vol 25, Issue 5\n> To: r-sig-teaching at r-project.org\n> Message-ID:\n> \t<896718040909190554s62151c76ge3411f100697de62 at mail.gmail.com>\n> Content-Type: text/plain\n>\n> pls give me a project to do plssssssssssss\n>\n> \t[[alternative HTML version deleted]]\n>\n>\n>\n> ------------------------------\n>\n> Message: 2\n> Date: Sat, 19 Sep 2009 20:51:56 +0200\n> From: Jean lobry <lobry at biomserv.univ-lyon1.fr>\n> Subject: Re: [R-sig-teaching] Use of R in Schools (John Maindonald)\n> To: r-sig-teaching at r-project.org\n> Cc: John Maindonald <john.maindonald at anu.edu.au>\n> Message-ID: <p06002020c6dad71db12b@[192.168.1.18]>\n> Content-Type: text/plain; charset=\"us-ascii\" ; format=\"flowed\"\n>\n> John,\n>\n>> I am looking for information on experimentation with the use\n>> of R in the teaching of statistics and science in schools.  Any\n>> leads would be very welcome.  I am certain that there is such\n>> experimentation.\n>\n> What do you mean exactly by \"schools\", this is a rather polysemic\n> word all around the world. How old are the students in the schools\n> you are interested in? I'm asking just to make your question more\n> clear.\n>\n> Best,\n>\n> Jean\n>\n> -- \n> Jean R. Lobry            (lobry at biomserv.univ-lyon1.fr)\n> Laboratoire BBE-CNRS-UMR-5558, Univ. C. Bernard - LYON I,\n> 43 Bd 11/11/1918, F-69622 VILLEURBANNE CEDEX, FRANCE\n> allo  : +33 472 43 27 56     fax    : +33 472 43 13 88\n> http://pbil.univ-lyon1.fr/members/lobry/\n>\n>\n>\n> ------------------------------\n>\n> _______________________________________________\n> R-sig-teaching mailing list\n> R-sig-teaching at r-project.org\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n> End of R-sig-teaching Digest, Vol 25, Issue 6\n> *********************************************",
+      "body_snippet": "By \"school\", I mean pre-University.  Here in Australia, maybe\nyears 11 and 12, perhaps age 10.  Most pupils start at age 5.\nJohn.\n\nJohn Maindonald             email: john.maindonald at anu.edu.au\nphon",
+      "thread_id": "thread-3ee032898f3f",
+      "thread_depth": 0,
+      "month": "2009-09"
+    },
+    {
+      "id": "msg-057672cfc8ce",
+      "message_id": "<p06002000c6de8494954b@[134.214.233.12]>",
+      "from_name": "Jean lobry",
+      "from_email_hash": "92f00cec5507fc339b350dc5deec32274bd68ad5ea0338971fee7b289106e82d",
+      "date": "2009-09-22T15:43:47+02:00",
+      "subject": "[R-sig-teaching] Use of R in Schools (John Maindonald)",
+      "subject_clean": "Use of R in Schools (John Maindonald)",
+      "in_reply_to": "<mailman.5.1253527202.27834.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.5.1253527202.27834.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": ">By \"school\", I mean pre-University.  Here in Australia, maybe\n>years 11 and 12, perhaps age 10.  Most pupils start at age 5.\n>John.\n\nOK, so I'm of no help there. The only pre-University level\nexemple I was aware of in France was for 15-18 years old kids.\n\nBest,\n\nJean\n-- \nJean R. Lobry            (lobry at biomserv.univ-lyon1.fr)\nLaboratoire BBE-CNRS-UMR-5558, Univ. C. Bernard - LYON I,\n43 Bd 11/11/1918, F-69622 VILLEURBANNE CEDEX, FRANCE\nallo  : +33 472 43 27 56     fax    : +33 472 43 13 88\nhttp://pbil.univ-lyon1.fr/members/lobry/",
+      "body_snippet": ">By \"school\", I mean pre-University.  Here in Australia, maybe\n>years 11 and 12, perhaps age 10.  Most pupils start at age 5.\n>John.\n\nOK, so I'm of no help there. The only pre-University level\nexemple",
+      "thread_id": "thread-057672cfc8ce",
+      "thread_depth": 0,
+      "month": "2009-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-551f9755e1c2",
+      "subject": "Article on teaching R",
+      "message_count": 1,
+      "participants": [
+        "Stephen Eglen"
+      ],
+      "started": "2009-09-01T11:39:35+01:00",
+      "last_reply": "2009-09-01T11:39:35+01:00",
+      "root_message_id": "msg-551f9755e1c2"
+    },
+    {
+      "id": "thread-59ed545f52e8",
+      "subject": "R website for college students (Chi Yau)",
+      "message_count": 1,
+      "participants": [
+        "Chi Ming Yau"
+      ],
+      "started": "2009-09-02T11:52:08-07:00",
+      "last_reply": "2009-09-02T11:52:08-07:00",
+      "root_message_id": "msg-59ed545f52e8"
+    },
+    {
+      "id": "thread-dc0d565d4618",
+      "subject": "R-sig-teaching Digest, Vol 17, Issue 7",
+      "message_count": 1,
+      "participants": [
+        "John Maindonald"
+      ],
+      "started": "2009-09-11T16:47:01+10:00",
+      "last_reply": "2009-09-11T16:47:01+10:00",
+      "root_message_id": "msg-dc0d565d4618"
+    },
+    {
+      "id": "thread-fbf694bc7f56",
+      "subject": "Use of R in Schools",
+      "message_count": 1,
+      "participants": [
+        "John Maindonald"
+      ],
+      "started": "2009-09-19T17:50:16+10:00",
+      "last_reply": "2009-09-19T17:50:16+10:00",
+      "root_message_id": "msg-fbf694bc7f56"
+    },
+    {
+      "id": "thread-bb9f3f0d878d",
+      "subject": "R-sig-teaching Digest, Vol 25, Issue 5",
+      "message_count": 1,
+      "participants": [
+        "sanket deshmukh"
+      ],
+      "started": "2009-09-19T18:24:04+05:30",
+      "last_reply": "2009-09-19T18:24:04+05:30",
+      "root_message_id": "msg-bb9f3f0d878d"
+    },
+    {
+      "id": "thread-552a240f7a7c",
+      "subject": "Use of R in Schools (John Maindonald)",
+      "message_count": 1,
+      "participants": [
+        "Jean lobry"
+      ],
+      "started": "2009-09-19T20:51:56+02:00",
+      "last_reply": "2009-09-19T20:51:56+02:00",
+      "root_message_id": "msg-552a240f7a7c"
+    },
+    {
+      "id": "thread-3ee032898f3f",
+      "subject": "R-sig-teaching Digest, Vol 25, Issue 6",
+      "message_count": 1,
+      "participants": [
+        "John Maindonald"
+      ],
+      "started": "2009-09-20T20:43:17+10:00",
+      "last_reply": "2009-09-20T20:43:17+10:00",
+      "root_message_id": "msg-3ee032898f3f"
+    },
+    {
+      "id": "thread-057672cfc8ce",
+      "subject": "Use of R in Schools (John Maindonald)",
+      "message_count": 1,
+      "participants": [
+        "Jean lobry"
+      ],
+      "started": "2009-09-22T15:43:47+02:00",
+      "last_reply": "2009-09-22T15:43:47+02:00",
+      "root_message_id": "msg-057672cfc8ce"
+    }
+  ]
+}

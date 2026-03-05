@@ -1,0 +1,646 @@
+From zanaty2005 at yahoo.com  Sat Apr  2 23:12:05 2011
+From: zanaty2005 at yahoo.com (Ali Zanaty)
+Date: Sat, 2 Apr 2011 14:12:05 -0700 (PDT)
+Subject: [R-sig-teaching] Plotting the P value
+Message-ID: <940519.9371.qm@web59511.mail.ac4.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110402/1c46020e/attachment.pl>
+
+From pauljohn32 at gmail.com  Sat Apr  2 23:55:15 2011
+From: pauljohn32 at gmail.com (Paul Johnson)
+Date: Sat, 2 Apr 2011 16:55:15 -0500
+Subject: [R-sig-teaching] Plotting the P value
+In-Reply-To: <940519.9371.qm@web59511.mail.ac4.yahoo.com>
+References: <940519.9371.qm@web59511.mail.ac4.yahoo.com>
+Message-ID: <BANLkTi=mB9n8W2tAiTxeDratHzWRBQzZBg@mail.gmail.com>
+
+Run this:
+
+http://pj.freefaculty.org/R/WorkingExamples/Normal1_2009_plotmathExample.R
+
+Your eyes will dance with joy! As I demonstrate:
+
+http://pj.freefaculty.org/R/WorkingExamples/Normal-2009.pdf
+
+I've got a few handy examples in that same folder, browse all you want.
+
+pj
+
+On Sat, Apr 2, 2011 at 4:12 PM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:
+> Dear? All R users:
+>
+>
+>
+> Can someone help me with the plotting the p-values under the normal curve (say).
+>
+>
+>
+> Thank you so much.
+>
+>
+>
+> Ali
+>
+>
+>
+>
+>
+>
+> ? ? ? ?[[alternative HTML version deleted]]
+>
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+
+
+
+-- 
+Paul E. Johnson
+Professor, Political Science
+1541 Lilac Lane, Room 504
+University of Kansas
+
+
+
+From DOgle at northland.edu  Sun Apr  3 00:05:55 2011
+From: DOgle at northland.edu (Derek Ogle)
+Date: Sat, 2 Apr 2011 17:05:55 -0500
+Subject: [R-sig-teaching] Plotting the P value
+In-Reply-To: <940519.9371.qm@web59511.mail.ac4.yahoo.com>
+References: <940519.9371.qm@web59511.mail.ac4.yahoo.com>
+Message-ID: <42367154246C08458DDA1F9A7AD483468B71AB35@nc-mail.northland.edu>
+
+Ali,
+
+I'm not completely sure of your purpose but I have my students use plot.htest() in my NCStats package (available at rforge.net/NCStats) to plot the p-value following the results of z.test() (from TeachingDemos package), t.test(), or chisq.test().  You might also consider distrib() in NCStats (it is more general and is simply a wrapper to pnorm(), qnorm(), etc. and won't, for example, show a two-tailed alternative).  Examples of both are in the help pages -- ?plot.htest or ?distrib.
+
+
+
+> -----Original Message-----
+> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-
+> bounces at r-project.org] On Behalf Of Ali Zanaty
+> Sent: Saturday, April 02, 2011 4:12 PM
+> To: r-sig-teaching at r-project.org
+> Subject: [R-sig-teaching] Plotting the P value
+> 
+> Dear? All R users:
+> 
+> 
+> 
+> Can someone help me with the plotting the p-values under the normal curve
+> (say).
+> 
+> 
+> 
+> Thank you so much.
+> 
+> 
+> 
+> Ali
+> 
+> 
+> 
+> 
+> 
+> 
+> 	[[alternative HTML version deleted]]
+
+
+
+From Greg.Snow at imail.org  Sun Apr  3 04:47:59 2011
+From: Greg.Snow at imail.org (Greg Snow)
+Date: Sat, 2 Apr 2011 20:47:59 -0600
+Subject: [R-sig-teaching] Plotting the P value
+In-Reply-To: <940519.9371.qm@web59511.mail.ac4.yahoo.com>
+References: <940519.9371.qm@web59511.mail.ac4.yahoo.com>
+Message-ID: <B37C0A15B8FB3C468B5BC7EBC7DA14CC63456B7B28@LP-EXMBVS10.CO.IHC.COM>
+
+Look at the power.examp function in the TeachingDemos function.  It may be what you want, or you could take some of the code from it to do what you want.
+
+The function Pvalue.norm.sim (also in TeachingDemos) may also be of interest.
+
+-- 
+Gregory (Greg) L. Snow Ph.D.
+Statistical Data Center
+Intermountain Healthcare
+greg.snow at imail.org
+801.408.8111
+
+
+> -----Original Message-----
+> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-
+> bounces at r-project.org] On Behalf Of Ali Zanaty
+> Sent: Saturday, April 02, 2011 3:12 PM
+> To: r-sig-teaching at r-project.org
+> Subject: [R-sig-teaching] Plotting the P value
+> 
+> Dear? All R users:
+> 
+> 
+> 
+> Can someone help me with the plotting the p-values under the normal
+> curve (say).
+> 
+> 
+> 
+> Thank you so much.
+> 
+> 
+> 
+> Ali
+> 
+> 
+> 
+> 
+> 
+> 
+> 	[[alternative HTML version deleted]]
+
+
+
+From jwiley.psych at gmail.com  Sun Apr  3 05:09:05 2011
+From: jwiley.psych at gmail.com (Joshua Wiley)
+Date: Sat, 2 Apr 2011 20:09:05 -0700
+Subject: [R-sig-teaching] Plotting the P value
+In-Reply-To: <BANLkTi=mB9n8W2tAiTxeDratHzWRBQzZBg@mail.gmail.com>
+References: <940519.9371.qm@web59511.mail.ac4.yahoo.com>
+	<BANLkTi=mB9n8W2tAiTxeDratHzWRBQzZBg@mail.gmail.com>
+Message-ID: <BANLkTikCZktSXmjCumuGX4QVEyO5Veh8eQ@mail.gmail.com>
+
+Hi Ali,
+
+This is along the lines of Paul Johnson's plot, but more functiony and
+sans fancy labels.  I just wrote this to speed up including some
+examples of the shapes of different distributions and the effects on
+"critical" regions in the tails for introductory psychology students
+so it does not cover too many distributions.  But it is easy to use
+and quickly outputs to PDF for easy inclusion in TeX documents.  With
+a bit of tweaking, you could make the fill transparent and plot
+several overlapping distributions on the same graph (e.g., for power
+or ....)
+
+HTH,
+
+Josh
+
+PlotDist <- function (alpha, from = -5, to = 5, n = 1000, filename = NULL,
+    alternative = c("two.tailed", "greater", "lesser"), distribution =
+c("normal",
+        "t", "F", "chisq", "binomial"), colour = "black", fill = "skyblue2",
+    ...)
+{
+    alternative <- match.arg(alternative)
+    alt.alpha <- switch(alternative, two.tailed = alpha/2, greater = alpha,
+        lesser = alpha)
+    MyDen <- switch(distribution, normal = dnorm, t = dt, F = df,
+        chisq = dchisq, binomial = dbinom)
+    MyDist <- switch(distribution, normal = qnorm, t = qt, F = qf,
+        chisq = qchisq, binomial = qbinom)
+    crit.lower <- MyDist(p = alt.alpha, lower.tail = TRUE, ...)
+    crit.upper <- MyDist(p = alt.alpha, lower.tail = FALSE, ...)
+    cord.x1 <- c(from, seq(from = from, to = crit.lower, length.out = 100),
+        crit.lower)
+    cord.y1 <- c(0, MyDen(x = seq(from = from, to = crit.lower,
+        length.out = 100), ...), 0)
+    cord.x2 <- c(crit.upper, seq(from = crit.upper, to = to,
+        length.out = 100), to)
+    cord.y2 <- c(0, MyDen(x = seq(from = crit.upper, to = to,
+        length.out = 100), ...), 0)
+    if (!is.null(filename)) pdf(file = filename)
+    curve(MyDen(x, ...), from = from, to = to, n = n, col = colour,
+        lty = 1, lwd = 2, ylab = "Density", xlab = "Values")
+    if (!identical(alternative, "greater")) {
+        polygon(x = cord.x1, y = cord.y1, col = fill)
+    }
+    if (!identical(alternative, "lesser")) {
+        polygon(x = cord.x2, y = cord.y2, col = fill)
+    }
+    if (!is.null(filename)) dev.off()
+}
+
+On Sat, Apr 2, 2011 at 2:55 PM, Paul Johnson <pauljohn32 at gmail.com> wrote:
+> Run this:
+>
+> http://pj.freefaculty.org/R/WorkingExamples/Normal1_2009_plotmathExample.R
+>
+> Your eyes will dance with joy! As I demonstrate:
+>
+> http://pj.freefaculty.org/R/WorkingExamples/Normal-2009.pdf
+>
+> I've got a few handy examples in that same folder, browse all you want.
+>
+> pj
+>
+> On Sat, Apr 2, 2011 at 4:12 PM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:
+>> Dear? All R users:
+>>
+>>
+>>
+>> Can someone help me with the plotting the p-values under the normal curve (say).
+>>
+>>
+>>
+>> Thank you so much.
+>>
+>>
+>>
+>> Ali
+>>
+>>
+>>
+>>
+>>
+>>
+>> ? ? ? ?[[alternative HTML version deleted]]
+>>
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>>
+>
+>
+>
+> --
+> Paul E. Johnson
+> Professor, Political Science
+> 1541 Lilac Lane, Room 504
+> University of Kansas
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+-- 
+Joshua Wiley
+Ph.D. Student, Health Psychology
+University of California, Los Angeles
+http://www.joshuawiley.com/
+
+
+
+From landronimirc at gmail.com  Mon Apr  4 16:43:23 2011
+From: landronimirc at gmail.com (Liviu Andronic)
+Date: Mon, 4 Apr 2011 16:43:23 +0200
+Subject: [R-sig-teaching] Plotting the P value
+In-Reply-To: <940519.9371.qm@web59511.mail.ac4.yahoo.com>
+References: <940519.9371.qm@web59511.mail.ac4.yahoo.com>
+Message-ID: <BANLkTi=ywLx-5DJeti=zTBeoj-iBU_E=-A@mail.gmail.com>
+
+On Sat, Apr 2, 2011 at 11:12 PM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:
+> Can someone help me with the plotting the p-values under the normal curve (say).
+>
+See this thread [1] for additional pointers on doing this. Regards
+Liviu
+
+[1] http://www.mail-archive.com/r-sig-teaching at r-project.org/msg00278.html
+
+
+
+From jlaurentum at yahoo.com  Tue Apr  5 15:12:08 2011
+From: jlaurentum at yahoo.com (jose romero)
+Date: Tue, 5 Apr 2011 06:12:08 -0700 (PDT)
+Subject: [R-sig-teaching] load an image file using an Rweb server
+Message-ID: <480810.35423.qm@web30601.mail.mud.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110405/eacfccc7/attachment.pl>
+
+From zanaty2005 at yahoo.com  Mon Apr 18 19:12:24 2011
+From: zanaty2005 at yahoo.com (Ali Zanaty)
+Date: Mon, 18 Apr 2011 10:12:24 -0700 (PDT)
+Subject: [R-sig-teaching] Rejection region for F test
+Message-ID: <687457.72545.qm@web59516.mail.ac4.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110418/f4df140c/attachment.pl>
+
+From jwiley.psych at gmail.com  Mon Apr 18 19:21:12 2011
+From: jwiley.psych at gmail.com (Joshua Wiley)
+Date: Mon, 18 Apr 2011 10:21:12 -0700
+Subject: [R-sig-teaching] Rejection region for F test
+In-Reply-To: <687457.72545.qm@web59516.mail.ac4.yahoo.com>
+References: <687457.72545.qm@web59516.mail.ac4.yahoo.com>
+Message-ID: <BANLkTi=6TdRL-Lc_knaJuJby2BupnyM47g@mail.gmail.com>
+
+Hi Ali,
+
+The same mechanisms that shade the area of a distribution for
+different p-values will also work for the rejection region, so see the
+suggestions from your previous email.  If you need to find the values,
+look at ?qf
+
+Cheers,
+
+Josh
+
+On Mon, Apr 18, 2011 at 10:12 AM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:
+> Dear R users:
+>
+> I need some helps with graphing and shading the rejection region for the F test
+> (say ANOVA test).
+>
+> With many thanks
+> Ali
+> ? ? ? ?[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+-- 
+Joshua Wiley
+Ph.D. Student, Health Psychology
+University of California, Los Angeles
+http://www.joshuawiley.com/
+
+
+
+From zanaty2005 at yahoo.com  Fri May 20 22:56:52 2011
+From: zanaty2005 at yahoo.com (Ali Zanaty)
+Date: Fri, 20 May 2011 13:56:52 -0700 (PDT)
+Subject: [R-sig-teaching] Power Analysis
+Message-ID: <281329.77573.qm@web59504.mail.ac4.yahoo.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110520/cb2970ee/attachment.pl>
+
+From Greg.Snow at imail.org  Fri May 20 23:13:26 2011
+From: Greg.Snow at imail.org (Greg Snow)
+Date: Fri, 20 May 2011 15:13:26 -0600
+Subject: [R-sig-teaching] Power Analysis
+In-Reply-To: <281329.77573.qm@web59504.mail.ac4.yahoo.com>
+References: <281329.77573.qm@web59504.mail.ac4.yahoo.com>
+Message-ID: <B37C0A15B8FB3C468B5BC7EBC7DA14CC63478F28AD@LP-EXMBVS10.CO.IHC.COM>
+
+Look at the pwr package.
+
+-- 
+Gregory (Greg) L. Snow Ph.D.
+Statistical Data Center
+Intermountain Healthcare
+greg.snow at imail.org
+801.408.8111
+
+
+> -----Original Message-----
+> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-
+> bounces at r-project.org] On Behalf Of Ali Zanaty
+> Sent: Friday, May 20, 2011 2:57 PM
+> To: r-sig-teaching at r-project.org
+> Subject: [R-sig-teaching] Power Analysis
+> 
+> Dear All:
+> 
+> 
+> I need some help with the Power analysis and sample size determination
+> for the
+> Chi-Square and Fisher Exact tests.
+> 
+> Any helps will be appreciated.
+> 
+> With many thanks
+> Ali
+> 
+> 	[[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+
+From zanaty2005 at yahoo.com  Sun Jun  5 15:23:29 2011
+From: zanaty2005 at yahoo.com (Ali Zanaty)
+Date: Sun, 5 Jun 2011 06:23:29 -0700 (PDT)
+Subject: [R-sig-teaching] help is needed
+Message-ID: <483594.44936.qm@web59502.mail.ac4.yahoo.com>
+
+Dear All R users:
+
+I am teaching a statistical class. Can someone help me to create the attached 
+graph in R. I have other graphs, but once I know how to create this one, I will 
+be able to do other ones.
+
+With many thanks
+Ali
+
+From izahn at psych.rochester.edu  Sun Jun  5 17:55:52 2011
+From: izahn at psych.rochester.edu (Ista Zahn)
+Date: Sun, 5 Jun 2011 11:55:52 -0400
+Subject: [R-sig-teaching] help is needed
+In-Reply-To: <483594.44936.qm@web59502.mail.ac4.yahoo.com>
+References: <483594.44936.qm@web59502.mail.ac4.yahoo.com>
+Message-ID: <BANLkTindt7fuR66W-wbYnQ=9Mb7NuCHzCQ@mail.gmail.com>
+
+The link did not make it through the mailing list. Can you post it on
+the web and give us the link?
+
+Best,
+Ista
+
+On Sun, Jun 5, 2011 at 9:23 AM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:
+> Dear All R users:
+>
+> I am teaching a statistical class. Can someone help me to create the attached
+> graph in R. I have other graphs, but once I know how to create this one, I will
+> be able to do other ones.
+>
+> With many thanks
+> Ali
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+
+
+
+-- 
+Ista Zahn
+Graduate student
+University of Rochester
+Department of Clinical and Social Psychology
+http://yourpsyche.org
+
+
+From smartfra at msu.edu  Sun Jun 26 05:00:52 2011
+From: smartfra at msu.edu (Francis Smart)
+Date: Sat, 25 Jun 2011 23:00:52 -0400
+Subject: [R-sig-teaching] Message displayed when opening RData file
+Message-ID: <BANLkTik84NAx51P7Jbz85boookq1y9h3sA@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110625/66df0377/attachment.pl>
+
+From jwiley.psych at gmail.com  Sun Jun 26 07:16:46 2011
+From: jwiley.psych at gmail.com (Joshua Wiley)
+Date: Sat, 25 Jun 2011 22:16:46 -0700
+Subject: [R-sig-teaching] Message displayed when opening RData file
+In-Reply-To: <BANLkTik84NAx51P7Jbz85boookq1y9h3sA@mail.gmail.com>
+References: <BANLkTik84NAx51P7Jbz85boookq1y9h3sA@mail.gmail.com>
+Message-ID: <BANLkTikXuVRG9Jtisu1BhZdtjP1voKTucQ@mail.gmail.com>
+
+Hi Francis,
+
+If you are able to edit the previous workspace, what about adding a
+local .Rprofile file?  In that file you could put something like:
+
+cat("To see data, input: \n  > data \nin the console. \nTo see data
+variable descriptions, input:\n  >desc \nin the console.\n")
+
+in the .Rprofile file
+
+Cheers,
+
+Josh
+
+On Sat, Jun 25, 2011 at 8:00 PM, Francis Smart <smartfra at msu.edu> wrote:
+> Hello,
+>
+> I am wondering if there is any way to display a message automatically when a
+> workspace is restored and to have that message saved as part of the
+> workspace.
+>
+> I would like R to say after
+> [Previously saved workspace restored]
+>
+> To see data input >data in the console
+> To see data variable descriptions input >desc in the console
+>
+> Thank you for your help,
+> Francis
+>
+> --
+> Francis Smart
+> --------------------
+> PhD Student - Michigan State University
+> Agricultural, Food, and Resource Economics (AFRE)
+> Measurement and Quantitative Methods (MQM)
+>
+> Cell: (406) 223-8108
+>
+> ? ? ? ?[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+-- 
+Joshua Wiley
+Ph.D. Student, Health Psychology
+University of California, Los Angeles
+http://www.joshuawiley.com/
+
+
+From matt.curcio.ri at gmail.com  Wed Jun 29 19:48:29 2011
+From: matt.curcio.ri at gmail.com (Matt Curcio)
+Date: Wed, 29 Jun 2011 13:48:29 -0400
+Subject: [R-sig-teaching] Lists of R packages
+Message-ID: <BANLkTim7BLKUaYpwcsDaupK50b0X63HfGA@mail.gmail.com>
+
+Greetings All,
+I would like to find out which R packages I have on my machine and
+transfer that set of packages to a new machine.  I have investigated
+the command 'installed.packages' and got a partial list but this is
+not comprehensive. (!?!)  The partial list does not include the
+libraries that I do not normally load on start-up.
+Any suggestions?
+
+Conversely, once I have found the complete list can I use
+'install.package' to batch install all the packages to another
+computer?
+Cheers,
+M
+
+-- 
+
+
+Matt Curcio
+M: 401-316-5358
+E: matt.curcio.ri at gmail.com
+
+
+From philippe.preux at univ-lille3.fr  Wed Jun 29 20:05:33 2011
+From: philippe.preux at univ-lille3.fr (philippe preux)
+Date: Wed, 29 Jun 2011 20:05:33 +0200
+Subject: [R-sig-teaching] Lists of R packages
+In-Reply-To: <BANLkTim7BLKUaYpwcsDaupK50b0X63HfGA@mail.gmail.com>
+References: <BANLkTim7BLKUaYpwcsDaupK50b0X63HfGA@mail.gmail.com>
+Message-ID: <4E0B696D.50809@univ-lille3.fr>
+
+Hi Matt,
+maybe the library() command would solve your problem.
+
+However, I take this opportunity to ask an other question related to 
+installed packages:
+some packages are installed because I install.package'd them; however, I 
+usually add the dep = TRUE option, so that some other packages are 
+installed because of the dependencies. Once installed, I do not know of 
+any way to distinguish the former from the latter; is there one?
+Now, moving my R installation to a new machine, I would like to 
+re-install only those packages I installed by install.package(), with 
+the dep = TRUE option. I feel, and fear, that if I install all the 
+packages returned by library() with dep =TRUE option, packages that 
+depend on those installed because they depend on those I installed by 
+giving their name to install.package() will also be installed.
+
+Now, my workaround is to keep the history of the install.package() 
+command I invoked. Defining a function that does the same thing as 
+install.packages(), while logging the information in some file does the 
+thing.
+
+Hope that helps,
+
+Philippe
+
+On 29/06/2011 19:48, Matt Curcio wrote:
+> Greetings All,
+> I would like to find out which R packages I have on my machine and
+> transfer that set of packages to a new machine.  I have investigated
+> the command 'installed.packages' and got a partial list but this is
+> not comprehensive. (!?!)  The partial list does not include the
+> libraries that I do not normally load on start-up.
+> Any suggestions?
+>
+> Conversely, once I have found the complete list can I use
+> 'install.package' to batch install all the packages to another
+> computer?
+> Cheers,
+> M
+>
+>
+
+
+From r.m.krug at gmail.com  Thu Jun 30 07:59:46 2011
+From: r.m.krug at gmail.com (Rainer M Krug)
+Date: Thu, 30 Jun 2011 07:59:46 +0200
+Subject: [R-sig-teaching] Lists of R packages
+In-Reply-To: <4E0B696D.50809@univ-lille3.fr>
+References: <BANLkTim7BLKUaYpwcsDaupK50b0X63HfGA@mail.gmail.com>
+	<4E0B696D.50809@univ-lille3.fr>
+Message-ID: <BANLkTincgZ+6GM+GokN1VEx8yNunew_V+QXddsoV-GjVAcZ7cw@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110630/5b6a5a05/attachment.pl>
+

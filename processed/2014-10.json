@@ -1,0 +1,202 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2014-10",
+  "messages": [
+    {
+      "id": "msg-a7be5c77cd39",
+      "message_id": "<CAHDp66Dy9x_OGU6e2J_UDUmFJzijoHC=Rvh+cEnO6bQGi_nHcA@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2014-10-12T10:31:07-04:00",
+      "subject": "[R-sig-teaching] R codes for numerical analysis methods",
+      "subject_clean": "R codes for numerical analysis methods",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\n\nI am wondering if I can find R codes (functions) for numerical analysis\nmethods, linear algebra, and differential equations available somewhere.\n\nmany thanks\nsteve\n\n------------------------\nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\nI am wondering if I can find R codes (functions) for numerical analysis\nmethods, linear algebra, and differential equations available somewhere.\n\nmany thanks\nsteve\n\n------------------------",
+      "thread_id": "thread-a7be5c77cd39",
+      "thread_depth": 0,
+      "month": "2014-10"
+    },
+    {
+      "id": "msg-b4136d3eeb71",
+      "message_id": "<CADv2QyEVGXZtMbNjX-UVSAHLWGssC3Q5V0K8nZNOq3oHNSxK_w@mail.gmail.com>",
+      "from_name": "Dennis Murphy",
+      "from_email_hash": "e4a5a8dffeb093c4485cbdaf24417516db9183251269103e90963889fce45f74",
+      "date": "2014-10-12T12:53:53-07:00",
+      "subject": "[R-sig-teaching] R codes for numerical analysis methods",
+      "subject_clean": "R codes for numerical analysis methods",
+      "in_reply_to": "<CAHDp66Dy9x_OGU6e2J_UDUmFJzijoHC=Rvh+cEnO6bQGi_nHcA@mail.gmail.com>",
+      "references": [
+        "<CAHDp66Dy9x_OGU6e2J_UDUmFJzijoHC=Rvh+cEnO6bQGi_nHcA@mail.gmail.com>"
+      ],
+      "body_plain": "Hi:\n\n1. Victor Bloomfield's book \"Using R for Numerical Analysis in Science\nand Engineering\", published by CRC Press/Chapman and Hall. Links to\nthe code found at the book's web site:\nhttp://www.crcpress.com/product/isbn/9781439884485\nThis book covers optimization and diff eqs in some detail.\n\n2. John Monahan's book \"Numerical Methods of Statistics\" (Cambridge).\nR code for the second edition can be found at the author's web site:\nhttp://www4.stat.ncsu.edu/~monahan/nmos2/toc.html\n\n3. Several good courses re statistical computing in R exist on-line.\nMonahan has one; two others that come to mind are Galin Jones' course\nat the University of Minnesota (STAT 8701) and Robert Gray's course at\nHarvard (BIO 248).\nhttp://biowww.dfci.harvard.edu/~gray/248-02/Welcome.html\nGray's course used S-PLUS (it was in 2002) but most of the code should\nbe translatable to R.\n\n I am certain to have missed several good stat computing courses;\nperhaps others can chime in with suggestions. Google should be a\nfriend here.\n\n4. Soetaert et al.'s book \"Solving Differential Equations in R\" (Springer):\nhttp://www.springer.com/statistics/computational+statistics/book/978-3-642-28069-6\nand a paper of the same name in the R Journal:\nhttp://journal.r-project.org/archive/2010-2/RJournal_2010-2_Soetaert~et~al.pdf\nThe book code is accessible by clicking the box labeled\n\"Extras:Springer.com\" under the tabl \"Additional Information\".\n\n5. The Matrix package should be helpful in concert with notes/text on\nnumerical linear algebra if the above sources are insufficient. See\nthe vignette for its capabilities.\n\nHopefully that should be sufficient to get you started...this is by no\nmeans a comprehensive list.\n\nDennis\n\nOn Sun, Oct 12, 2014 at 7:31 AM, Steven Stoline <sstoline at gmail.com> wrote:\n> Dear All:\n>\n> I am wondering if I can find R codes (functions) for numerical analysis\n> methods, linear algebra, and differential equations available somewhere.\n>\n> many thanks\n> steve\n>\n> ------------------------\n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Hi:\n\n1. Victor Bloomfield's book \"Using R for Numerical Analysis in Science\nand Engineering\", published by CRC Press/Chapman and Hall. Links to\nthe code found at the book's web site:\nhttp://www.crcpre",
+      "thread_id": "thread-a7be5c77cd39",
+      "thread_depth": 1,
+      "month": "2014-10"
+    },
+    {
+      "id": "msg-307b17a50109",
+      "message_id": "<543BFA47.4010601@udec.cl>",
+      "from_name": "Mauricio Zambrano-Bigiarini",
+      "from_email_hash": "a08ad7298dcb993697dca9abb8bfd52e44e677abefaae19233021ecf00838e5d",
+      "date": "2014-10-13T13:13:59-03:00",
+      "subject": "[R-sig-teaching] R codes for numerical analysis methods",
+      "subject_clean": "R codes for numerical analysis methods",
+      "in_reply_to": "<CAHDp66Dy9x_OGU6e2J_UDUmFJzijoHC=Rvh+cEnO6bQGi_nHcA@mail.gmail.com>",
+      "references": [
+        "<CAHDp66Dy9x_OGU6e2J_UDUmFJzijoHC=Rvh+cEnO6bQGi_nHcA@mail.gmail.com>"
+      ],
+      "body_plain": "On 12/10/14 11:31, Steven Stoline wrote:\n> Dear All:\n>\n> I am wondering if I can find R codes (functions) for numerical analysis\n> methods, linear algebra, and differential equations available somewhere.\n>\n> many thanks\n> steve\n>\n> ------------------------\n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com\n>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\nHi Steve,\n\nRegarding differential equations, and in addition to all the material \nlisted by Dennis, I would start looking at the CRAN Task View: \nDifferential Equations:\n\nhttp://cran.r-project.org/web/views/DifferentialEquations.html\n\nIHTH,\n\nMauricio Zambrano-Bigiarini, PhD\n\n-- \n======================================\nAssistant Professor,\nFaculty of Environmental Sciences\nand EULA-Chile Centre. University of\nConcepcion, Concepcion, Chile\n======================================\n\"Have the courage to follow your heart and\nintuition. They somehow already know what\nyou truly want to become. Everything else\nis secondary\" (Steve Jobs)\n======================================\nLinux user #454569 -- Linux Mint user",
+      "body_snippet": "On 12/10/14 11:31, Steven Stoline wrote:\n> Dear All:\n>\n> I am wondering if I can find R codes (functions) for numerical analysis\n> methods, linear algebra, and differential equations available somewhe",
+      "thread_id": "thread-a7be5c77cd39",
+      "thread_depth": 1,
+      "month": "2014-10"
+    },
+    {
+      "id": "msg-8939b5e65e51",
+      "message_id": "<CAHDp66A_7S0xs3eW1behT1gZv-6OdX+JN_PD4NqK6y+j_x1NTw@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2014-10-20T04:47:13-04:00",
+      "subject": "[R-sig-teaching] plot an angle of 450 degrees and adding a circular arrow to it",
+      "subject_clean": "plot an angle of 450 degrees and adding a circular arrow to it",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\n\nI am wondering if someone can show me how to plot an angles around the\ncenter of a unit circle with x-y vertices added to it.\n\nAlso how to add arrows showing the size and the direction of angle(s).\n\nExamples: 135 degrees and 450 degrees angles.\n\nwith many thanks\nSteven\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\nI am wondering if someone can show me how to plot an angles around the\ncenter of a unit circle with x-y vertices added to it.\n\nAlso how to add arrows showing the size and the direction of a",
+      "thread_id": "thread-8939b5e65e51",
+      "thread_depth": 0,
+      "month": "2014-10"
+    },
+    {
+      "id": "msg-1ef901798820",
+      "message_id": "<CA+3jU8GS0NLhCSVaPqjKi06Lnf0qgq_vJ3xypWZfZz4abxCyAQ@mail.gmail.com>",
+      "from_name": "Albyn Jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2014-10-20T08:17:52-07:00",
+      "subject": "[R-sig-teaching] plot an angle of 450 degrees and adding a circular arrow to it",
+      "subject_clean": "plot an angle of 450 degrees and adding a circular arrow to it",
+      "in_reply_to": "<CAHDp66A_7S0xs3eW1behT1gZv-6OdX+JN_PD4NqK6y+j_x1NTw@mail.gmail.com>",
+      "references": [
+        "<CAHDp66A_7S0xs3eW1behT1gZv-6OdX+JN_PD4NqK6y+j_x1NTw@mail.gmail.com>"
+      ],
+      "body_plain": "Here is a quickly written and barely tested function.  You might want to\nadd a final position vector,\ncolor, lwd, lty, etc.  It assumes the angle is given in degrees, and checks\nthe sign of the angle to draw\nin the correct direction.\n\nalbyn\n=====================================================================\n\nDrawAngle  <- function(theta,r=1){\n    # assumes angles given in degrees, not radians\n    theta <- 2*pi*theta/360\n    plot(0,0, xlim=c(-2,2),ylim=c(-2,2))\n    abline(h=0)\n    abline(v=0)\n    sgn <- 1\n    if(theta <0) {\n        sgn  <- -1\n        theta <- -theta\n        }\n    Theta <-  sgn*seq(0,theta,.01)\n    if(theta > 2*pi) r <- seq(1,1.1,along.with=Theta)\n    x <- r*cos(Theta)\n    y <- r*sin(Theta)\n    lines(x,y)\n    n <- length(x)\n    arrows(x[n-1],y[n-1],x[n],y[n])\n}\n\nOn Mon, Oct 20, 2014 at 1:47 AM, Steven Stoline <sstoline at gmail.com> wrote:\n\n> Dear All:\n>\n> I am wondering if someone can show me how to plot an angles around the\n> center of a unit circle with x-y vertices added to it.\n>\n> Also how to add arrows showing the size and the direction of angle(s).\n>\n> Examples: 135 degrees and 450 degrees angles.\n>\n> with many thanks\n> Steven\n>\n> --\n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Here is a quickly written and barely tested function.  You might want to\nadd a final position vector,\ncolor, lwd, lty, etc.  It assumes the angle is given in degrees, and checks\nthe sign of the angle ",
+      "thread_id": "thread-8939b5e65e51",
+      "thread_depth": 1,
+      "month": "2014-10"
+    },
+    {
+      "id": "msg-35412d16a44f",
+      "message_id": "<CAHDp66BX8hZzTfTeoHP9TMvRaK5OfG8dtEyOShQVt8wT_U-QGw@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2014-10-20T13:08:42-04:00",
+      "subject": "[R-sig-teaching] plot an angle of 450 degrees and adding a circular arrow to it",
+      "subject_clean": "plot an angle of 450 degrees and adding a circular arrow to it",
+      "in_reply_to": "<CA+3jU8GS0NLhCSVaPqjKi06Lnf0qgq_vJ3xypWZfZz4abxCyAQ@mail.gmail.com>",
+      "references": [
+        "<CAHDp66A_7S0xs3eW1behT1gZv-6OdX+JN_PD4NqK6y+j_x1NTw@mail.gmail.com>",
+        "<CA+3jU8GS0NLhCSVaPqjKi06Lnf0qgq_vJ3xypWZfZz4abxCyAQ@mail.gmail.com>"
+      ],
+      "body_plain": "Many thanks\n\nit works\n\nSteven\n\nOn Mon, Oct 20, 2014 at 11:17 AM, Albyn Jones <jones at reed.edu> wrote:\n\n> Here is a quickly written and barely tested function.  You might want to\n> add a final position vector,\n> color, lwd, lty, etc.  It assumes the angle is given in degrees, and\n> checks the sign of the angle to draw\n> in the correct direction.\n>\n> albyn\n> =====================================================================\n>\n> DrawAngle  <- function(theta,r=1){\n>     # assumes angles given in degrees, not radians\n>     theta <- 2*pi*theta/360\n>     plot(0,0, xlim=c(-2,2),ylim=c(-2,2))\n>     abline(h=0)\n>     abline(v=0)\n>     sgn <- 1\n>     if(theta <0) {\n>         sgn  <- -1\n>         theta <- -theta\n>         }\n>     Theta <-  sgn*seq(0,theta,.01)\n>     if(theta > 2*pi) r <- seq(1,1.1,along.with=Theta)\n>     x <- r*cos(Theta)\n>     y <- r*sin(Theta)\n>     lines(x,y)\n>     n <- length(x)\n>     arrows(x[n-1],y[n-1],x[n],y[n])\n> }\n>\n> On Mon, Oct 20, 2014 at 1:47 AM, Steven Stoline <sstoline at gmail.com>\n> wrote:\n>\n>> Dear All:\n>>\n>> I am wondering if someone can show me how to plot an angles around the\n>> center of a unit circle with x-y vertices added to it.\n>>\n>> Also how to add arrows showing the size and the direction of angle(s).\n>>\n>> Examples: 135 degrees and 450 degrees angles.\n>>\n>> with many thanks\n>> Steven\n>>\n>> --\n>> Steven M. Stoline\n>> 1123 Forest Avenue\n>> Portland, ME 04112\n>> sstoline at gmail.com\n>>\n>>         [[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>\n>\n\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Many thanks\n\nit works\n\nSteven\n\nOn Mon, Oct 20, 2014 at 11:17 AM, Albyn Jones <jones at reed.edu> wrote:\n\n> Here is a quickly written and barely tested function.  You might want to\n> add a final positi",
+      "thread_id": "thread-8939b5e65e51",
+      "thread_depth": 2,
+      "month": "2014-10"
+    },
+    {
+      "id": "msg-a4245f55ba84",
+      "message_id": "<CAHDp66ABi27o1Mz6mNXHe9+uNeSFagbrcJ_D6hpy1Rf_f-u8tQ@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2014-10-21T14:30:12-04:00",
+      "subject": "[R-sig-teaching] plot an angle of 450 degrees and adding a circular arrow to it",
+      "subject_clean": "plot an angle of 450 degrees and adding a circular arrow to it",
+      "in_reply_to": "<CAHDp66BX8hZzTfTeoHP9TMvRaK5OfG8dtEyOShQVt8wT_U-QGw@mail.gmail.com>",
+      "references": [
+        "<CAHDp66A_7S0xs3eW1behT1gZv-6OdX+JN_PD4NqK6y+j_x1NTw@mail.gmail.com>",
+        "<CA+3jU8GS0NLhCSVaPqjKi06Lnf0qgq_vJ3xypWZfZz4abxCyAQ@mail.gmail.com>",
+        "<CAHDp66BX8hZzTfTeoHP9TMvRaK5OfG8dtEyOShQVt8wT_U-QGw@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Jones:\n\nCould you please look to this R code. I am trying to graph both sin(x+pi/6)\nand sin(x) in the same plot to show the shift. I used abline to graph the\nsin(x), but it looked like same as the x-axis.\n\n\nx<-seq(-2.2*pi,2*pi,0.01)\ny<-sin(x+pi/6)\n\n\n#### To draw a box of the graph:\n#### ==========================\n\nplot(0:10, 0:10, type = \"n\", xaxt = \"n\", yaxs = \"i\", xaxs = \"i\", yaxt =\n\"n\", xlab = \"\", ylab = \"\")\n\nplot(x, y, type='l', lwd = 3,  col=\"red\", xaxt = \"n\", xlab=\"\", ylab=\"\")\n\n\n\n#### abline(v=c(-4*pi,-(7*pi)/2,-3*pi,-(5*pi)/2,-2*pi,-(3*pi)/2,-pi,-pi/2,\n0,pi/2,pi,(3*pi)/2,2*pi,(5*pi)/2,3*pi,(7*pi)/2,4*pi),col=\"blue\")\n\n\nabline(h=0, lwd=3)\nabline(v=0, lwd=3)\n\n\nx1<-seq(0,2*pi,0.01)\ny1<-sin(x1)\nabline(x1,y1, lwd = 3)\n\n\nthank you very much\nSteven\n\n\nOn Mon, Oct 20, 2014 at 1:08 PM, Steven Stoline <sstoline at gmail.com> wrote:\n\n> Many thanks\n>\n> it works\n>\n> Steven\n>\n> On Mon, Oct 20, 2014 at 11:17 AM, Albyn Jones <jones at reed.edu> wrote:\n>\n>> Here is a quickly written and barely tested function.  You might want to\n>> add a final position vector,\n>> color, lwd, lty, etc.  It assumes the angle is given in degrees, and\n>> checks the sign of the angle to draw\n>> in the correct direction.\n>>\n>> albyn\n>> =====================================================================\n>>\n>> DrawAngle  <- function(theta,r=1){\n>>     # assumes angles given in degrees, not radians\n>>     theta <- 2*pi*theta/360\n>>     plot(0,0, xlim=c(-2,2),ylim=c(-2,2))\n>>     abline(h=0)\n>>     abline(v=0)\n>>     sgn <- 1\n>>     if(theta <0) {\n>>         sgn  <- -1\n>>         theta <- -theta\n>>         }\n>>     Theta <-  sgn*seq(0,theta,.01)\n>>     if(theta > 2*pi) r <- seq(1,1.1,along.with=Theta)\n>>     x <- r*cos(Theta)\n>>     y <- r*sin(Theta)\n>>     lines(x,y)\n>>     n <- length(x)\n>>     arrows(x[n-1],y[n-1],x[n],y[n])\n>> }\n>>\n>> On Mon, Oct 20, 2014 at 1:47 AM, Steven Stoline <sstoline at gmail.com>\n>> wrote:\n>>\n>>> Dear All:\n>>>\n>>> I am wondering if someone can show me how to plot an angles around the\n>>> center of a unit circle with x-y vertices added to it.\n>>>\n>>> Also how to add arrows showing the size and the direction of angle(s).\n>>>\n>>> Examples: 135 degrees and 450 degrees angles.\n>>>\n>>> with many thanks\n>>> Steven\n>>>\n>>> --\n>>> Steven M. Stoline\n>>> 1123 Forest Avenue\n>>> Portland, ME 04112\n>>> sstoline at gmail.com\n>>>\n>>>         [[alternative HTML version deleted]]\n>>>\n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>>\n>>\n>>\n>\n>\n> --\n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com\n>\n\n\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear Jones:\n\nCould you please look to this R code. I am trying to graph both sin(x+pi/6)\nand sin(x) in the same plot to show the shift. I used abline to graph the\nsin(x), but it looked like same as th",
+      "thread_id": "thread-8939b5e65e51",
+      "thread_depth": 3,
+      "month": "2014-10"
+    },
+    {
+      "id": "msg-6e189dbbd217",
+      "message_id": "<CA+3jU8Eub_tKVx4pS0N2jOsuT-_FLkLsvjP8+ge5wBjgdite-w@mail.gmail.com>",
+      "from_name": "Albyn Jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2014-10-21T11:44:19-07:00",
+      "subject": "[R-sig-teaching] plot an angle of 450 degrees and adding a circular arrow to it",
+      "subject_clean": "plot an angle of 450 degrees and adding a circular arrow to it",
+      "in_reply_to": "<CAHDp66ABi27o1Mz6mNXHe9+uNeSFagbrcJ_D6hpy1Rf_f-u8tQ@mail.gmail.com>",
+      "references": [
+        "<CAHDp66A_7S0xs3eW1behT1gZv-6OdX+JN_PD4NqK6y+j_x1NTw@mail.gmail.com>",
+        "<CA+3jU8GS0NLhCSVaPqjKi06Lnf0qgq_vJ3xypWZfZz4abxCyAQ@mail.gmail.com>",
+        "<CAHDp66BX8hZzTfTeoHP9TMvRaK5OfG8dtEyOShQVt8wT_U-QGw@mail.gmail.com>",
+        "<CAHDp66ABi27o1Mz6mNXHe9+uNeSFagbrcJ_D6hpy1Rf_f-u8tQ@mail.gmail.com>"
+      ],
+      "body_plain": "you want the lines() function, not abline()\n\nalbyn\n\nOn Tue, Oct 21, 2014 at 11:30 AM, Steven Stoline <sstoline at gmail.com> wrote:\n\n> Dear Jones:\n>\n> Could you please look to this R code. I am trying to graph both\n> sin(x+pi/6) and sin(x) in the same plot to show the shift. I used abline to\n> graph the sin(x), but it looked like same as the x-axis.\n>\n>\n> x<-seq(-2.2*pi,2*pi,0.01)\n> y<-sin(x+pi/6)\n>\n>\n> #### To draw a box of the graph:\n> #### ==========================\n>\n> plot(0:10, 0:10, type = \"n\", xaxt = \"n\", yaxs = \"i\", xaxs = \"i\", yaxt =\n> \"n\", xlab = \"\", ylab = \"\")\n>\n> plot(x, y, type='l', lwd = 3,  col=\"red\", xaxt = \"n\", xlab=\"\", ylab=\"\")\n>\n>\n>\n> #### abline(v=c(-4*pi,-(7*pi)/2,-3*pi,-(5*pi)/2,-2*pi,-(3*pi)/2,-pi,-pi/2,\n> 0,pi/2,pi,(3*pi)/2,2*pi,(5*pi)/2,3*pi,(7*pi)/2,4*pi),col=\"blue\")\n>\n>\n> abline(h=0, lwd=3)\n> abline(v=0, lwd=3)\n>\n>\n> x1<-seq(0,2*pi,0.01)\n> y1<-sin(x1)\n> abline(x1,y1, lwd = 3)\n>\n>\n> thank you very much\n> Steven\n>\n>\n> On Mon, Oct 20, 2014 at 1:08 PM, Steven Stoline <sstoline at gmail.com>\n> wrote:\n>\n>> Many thanks\n>>\n>> it works\n>>\n>> Steven\n>>\n>> On Mon, Oct 20, 2014 at 11:17 AM, Albyn Jones <jones at reed.edu> wrote:\n>>\n>>> Here is a quickly written and barely tested function.  You might want to\n>>> add a final position vector,\n>>> color, lwd, lty, etc.  It assumes the angle is given in degrees, and\n>>> checks the sign of the angle to draw\n>>> in the correct direction.\n>>>\n>>> albyn\n>>> =====================================================================\n>>>\n>>> DrawAngle  <- function(theta,r=1){\n>>>     # assumes angles given in degrees, not radians\n>>>     theta <- 2*pi*theta/360\n>>>     plot(0,0, xlim=c(-2,2),ylim=c(-2,2))\n>>>     abline(h=0)\n>>>     abline(v=0)\n>>>     sgn <- 1\n>>>     if(theta <0) {\n>>>         sgn  <- -1\n>>>         theta <- -theta\n>>>         }\n>>>     Theta <-  sgn*seq(0,theta,.01)\n>>>     if(theta > 2*pi) r <- seq(1,1.1,along.with=Theta)\n>>>     x <- r*cos(Theta)\n>>>     y <- r*sin(Theta)\n>>>     lines(x,y)\n>>>     n <- length(x)\n>>>     arrows(x[n-1],y[n-1],x[n],y[n])\n>>> }\n>>>\n>>> On Mon, Oct 20, 2014 at 1:47 AM, Steven Stoline <sstoline at gmail.com>\n>>> wrote:\n>>>\n>>>> Dear All:\n>>>>\n>>>> I am wondering if someone can show me how to plot an angles around the\n>>>> center of a unit circle with x-y vertices added to it.\n>>>>\n>>>> Also how to add arrows showing the size and the direction of angle(s).\n>>>>\n>>>> Examples: 135 degrees and 450 degrees angles.\n>>>>\n>>>> with many thanks\n>>>> Steven\n>>>>\n>>>> --\n>>>> Steven M. Stoline\n>>>> 1123 Forest Avenue\n>>>> Portland, ME 04112\n>>>> sstoline at gmail.com\n>>>>\n>>>>         [[alternative HTML version deleted]]\n>>>>\n>>>> _______________________________________________\n>>>> R-sig-teaching at r-project.org mailing list\n>>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>>>\n>>>\n>>>\n>>\n>>\n>> --\n>> Steven M. Stoline\n>> 1123 Forest Avenue\n>> Portland, ME 04112\n>> sstoline at gmail.com\n>>\n>\n>\n>\n> --\n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "you want the lines() function, not abline()\n\nalbyn\n\nOn Tue, Oct 21, 2014 at 11:30 AM, Steven Stoline <sstoline at gmail.com> wrote:\n\n> Dear Jones:\n>\n> Could you please look to this R code. I am trying",
+      "thread_id": "thread-8939b5e65e51",
+      "thread_depth": 4,
+      "month": "2014-10"
+    },
+    {
+      "id": "msg-272955fd508d",
+      "message_id": "<F0CFBA30-7975-489D-8F84-9E75073C2647@joelschwartz.com>",
+      "from_name": "Joel Schwartz",
+      "from_email_hash": "c0ae5a3e9c619e01102404769ffc380b8804be776bffd93f2f71cf012d12b506",
+      "date": "2014-10-21T18:44:58Z",
+      "subject": "[R-sig-teaching] plot an angle of 450 degrees and adding a circular arrow to it",
+      "subject_clean": "plot an angle of 450 degrees and adding a circular arrow to it",
+      "in_reply_to": "<CAHDp66ABi27o1Mz6mNXHe9+uNeSFagbrcJ_D6hpy1Rf_f-u8tQ@mail.gmail.com>",
+      "references": [
+        "<CAHDp66A_7S0xs3eW1behT1gZv-6OdX+JN_PD4NqK6y+j_x1NTw@mail.gmail.com>",
+        "<CA+3jU8GS0NLhCSVaPqjKi06Lnf0qgq_vJ3xypWZfZz4abxCyAQ@mail.gmail.com>",
+        "<CAHDp66BX8hZzTfTeoHP9TMvRaK5OfG8dtEyOShQVt8wT_U-QGw@mail.gmail.com>",
+        "<CAHDp66ABi27o1Mz6mNXHe9+uNeSFagbrcJ_D6hpy1Rf_f-u8tQ@mail.gmail.com>"
+      ],
+      "body_plain": "Steven,\n\nChange\n\nabline(x1,y1, lwd = 3) to lines(x1,y1, lwd = 3) and you'll get the line you're looking for. abline is just for drawing a line with a given slope and intercept. lines is more general.\n\nAlso, c(-4*pi,-(7*pi)/2,-3*pi,-(5*pi)/2,-2*pi,-(3*pi)/2,-pi,-pi/2, 0,pi/2,pi,(3*pi)/2,2*pi,(5*pi)/2,3*pi,(7*pi)/2,4*pi)\ncan be done with a call to seq instead. For example:\nseq(-4*pi, 4*pi, pi/2)\n\nBest Wishes,\nJoel\n\n\nOn Oct 21, 2014, at 11:30 AM, Steven Stoline <sstoline at gmail.com> wrote:\n\n> Dear Jones:\n> \n> Could you please look to this R code. I am trying to graph both sin(x+pi/6)\n> and sin(x) in the same plot to show the shift. I used abline to graph the\n> sin(x), but it looked like same as the x-axis.\n> \n> \n> x<-seq(-2.2*pi,2*pi,0.01)\n> y<-sin(x+pi/6)\n> \n> \n> #### To draw a box of the graph:\n> #### ==========================\n> \n> plot(0:10, 0:10, type = \"n\", xaxt = \"n\", yaxs = \"i\", xaxs = \"i\", yaxt =\n> \"n\", xlab = \"\", ylab = \"\")\n> \n> plot(x, y, type='l', lwd = 3,  col=\"red\", xaxt = \"n\", xlab=\"\", ylab=\"\")\n> \n> \n> \n> #### abline(v=c(-4*pi,-(7*pi)/2,-3*pi,-(5*pi)/2,-2*pi,-(3*pi)/2,-pi,-pi/2,\n> 0,pi/2,pi,(3*pi)/2,2*pi,(5*pi)/2,3*pi,(7*pi)/2,4*pi),col=\"blue\")\n> \n> \n> abline(h=0, lwd=3)\n> abline(v=0, lwd=3)\n> \n> \n> x1<-seq(0,2*pi,0.01)\n> y1<-sin(x1)\n> abline(x1,y1, lwd = 3)\n> \n> \n> thank you very much\n> Steven\n> \n> \n> On Mon, Oct 20, 2014 at 1:08 PM, Steven Stoline <sstoline at gmail.com> wrote:\n> \n>> Many thanks\n>> \n>> it works\n>> \n>> Steven\n>> \n>> On Mon, Oct 20, 2014 at 11:17 AM, Albyn Jones <jones at reed.edu> wrote:\n>> \n>>> Here is a quickly written and barely tested function.  You might want to\n>>> add a final position vector,\n>>> color, lwd, lty, etc.  It assumes the angle is given in degrees, and\n>>> checks the sign of the angle to draw\n>>> in the correct direction.\n>>> \n>>> albyn\n>>> =====================================================================\n>>> \n>>> DrawAngle  <- function(theta,r=1){\n>>>    # assumes angles given in degrees, not radians\n>>>    theta <- 2*pi*theta/360\n>>>    plot(0,0, xlim=c(-2,2),ylim=c(-2,2))\n>>>    abline(h=0)\n>>>    abline(v=0)\n>>>    sgn <- 1\n>>>    if(theta <0) {\n>>>        sgn  <- -1\n>>>        theta <- -theta\n>>>        }\n>>>    Theta <-  sgn*seq(0,theta,.01)\n>>>    if(theta > 2*pi) r <- seq(1,1.1,along.with=Theta)\n>>>    x <- r*cos(Theta)\n>>>    y <- r*sin(Theta)\n>>>    lines(x,y)\n>>>    n <- length(x)\n>>>    arrows(x[n-1],y[n-1],x[n],y[n])\n>>> }\n>>> \n>>> On Mon, Oct 20, 2014 at 1:47 AM, Steven Stoline <sstoline at gmail.com>\n>>> wrote:\n>>> \n>>>> Dear All:\n>>>> \n>>>> I am wondering if someone can show me how to plot an angles around the\n>>>> center of a unit circle with x-y vertices added to it.\n>>>> \n>>>> Also how to add arrows showing the size and the direction of angle(s).\n>>>> \n>>>> Examples: 135 degrees and 450 degrees angles.\n>>>> \n>>>> with many thanks\n>>>> Steven\n>>>> \n>>>> --\n>>>> Steven M. Stoline\n>>>> 1123 Forest Avenue\n>>>> Portland, ME 04112\n>>>> sstoline at gmail.com\n>>>> \n>>>>        [[alternative HTML version deleted]]\n>>>> \n>>>> _______________________________________________\n>>>> R-sig-teaching at r-project.org mailing list\n>>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>>> \n>>> \n>>> \n>> \n>> \n>> --\n>> Steven M. Stoline\n>> 1123 Forest Avenue\n>> Portland, ME 04112\n>> sstoline at gmail.com\n>> \n> \n> \n> \n> -- \n> Steven M. Stoline\n> 1123 Forest Avenue\n> Portland, ME 04112\n> sstoline at gmail.com\n> \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Steven,\n\nChange\n\nabline(x1,y1, lwd = 3) to lines(x1,y1, lwd = 3) and you'll get the line you're looking for. abline is just for drawing a line with a given slope and intercept. lines is more general.\n",
+      "thread_id": "thread-8939b5e65e51",
+      "thread_depth": 4,
+      "month": "2014-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-a7be5c77cd39",
+      "subject": "R codes for numerical analysis methods",
+      "message_count": 3,
+      "participants": [
+        "Dennis Murphy",
+        "Mauricio Zambrano-Bigiarini",
+        "Steven Stoline"
+      ],
+      "started": "2014-10-12T10:31:07-04:00",
+      "last_reply": "2014-10-13T13:13:59-03:00",
+      "root_message_id": "msg-a7be5c77cd39"
+    },
+    {
+      "id": "thread-8939b5e65e51",
+      "subject": "plot an angle of 450 degrees and adding a circular arrow to it",
+      "message_count": 6,
+      "participants": [
+        "Albyn Jones",
+        "Joel Schwartz",
+        "Steven Stoline"
+      ],
+      "started": "2014-10-20T04:47:13-04:00",
+      "last_reply": "2014-10-21T18:44:58+00:00",
+      "root_message_id": "msg-8939b5e65e51"
+    }
+  ]
+}

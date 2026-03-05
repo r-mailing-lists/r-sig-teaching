@@ -1,0 +1,65 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2012-09",
+  "messages": [
+    {
+      "id": "msg-f5114e917115",
+      "message_id": "<ECDB974D-2C2A-4B99-B5DF-F8FF6D562664@smith.edu>",
+      "from_name": "Nicholas Horton",
+      "from_email_hash": "cf176a29de4abfc7da13c6fc418c20e19771b5741537f75c9aee351ac098ab29",
+      "date": "2012-09-15T16:45:12-04:00",
+      "subject": "[R-sig-teaching] update on Illustrating the case studies in the \"Statistical Sleuth\" using R",
+      "subject_clean": "update on Illustrating the case studies in the \"Statistical Sleuth\" using R",
+      "in_reply_to": "<6C5EFA68-2F3C-4051-BEB4-B799037A9E1C@smith.edu>",
+      "references": [
+        "<6C5EFA68-2F3C-4051-BEB4-B799037A9E1C@smith.edu>"
+      ],
+      "body_plain": "I wanted to share some updates on my prior email about illustrated examples of how to fit the case studies from the Second Edition of the \"Statistical Sleuth\" within R.  If you are using this book, or would like to see straightforward ways to undertake analyses in R for intro and intermediate statistics courses, these may be of interest.\n\n(1) A third edition of the book is now available (http://www.amazon.com/The-Statistical-Sleuth-Methods-Analysis/dp/1133490670).  \n\n(2) We now reference the excellent \"Sleuth2\" package, which includes the datasets in an easy to use and nicer form: note also that the \"Sleuth3\" package is available).\n\n(3) New features within the \"mosaic\" package (prediction bands for linear models, additional features for histogram() and a vignette describing a handout detailing a minimal set of necessary R commands) are now described.\n\n(4) Chapters 1-13 are now available\n\n(5) Minor errors have been fixed.\n\nPDF and knitr (reproducible analysis source) files can be downloaded from http://www.math.smith.edu/~nhorton/sleuth\n\nBest wishes to all for the semester!\n\nNick\n\n\nOn Aug 9, 2012, at 8:22 PM, Nicholas Horton <nhorton at smith.edu> wrote:\n\n> My summer students and I have created a series of files to help describe how to undertake analyses introduced as examples in the Second Edition of the Statistical Sleuth: A Course in Methods of Data Analysis (2002), the excellent text by Fred Ramsey and Dan Schafer.  If you are using this book, or would like to see straightforward ways to undertake analyses in R for intro and intermediate statistics courses, these may be of interest.\n> \n> These files can be found at http://www.math.smith.edu/~nhorton/sleuth\n> \n> We have include both formatted pdf files as well as the original knitr files which were used to generate the output. Knitr is an elegant, flexible and fast means to undertake reproducible analysis and dynamic report generation within R and RStudio.  \n> \n> This work leverages efforts undertaken by Project MOSAIC, an NSF-funded initiative to improve the teaching of statistics, calculus, science and computing in the undergraduate curriculum. In particular, we utilize the mosaic package, which was written to simplify the use of R for introductory statistics courses. More information can be found at http://www.mosaic-web.org.\n> \n> We've generated these illustrated analyses for chapters 1-6 plus 9-11 and 13, with more chapters to come.  Comments, suggestions and corrections welcomed.\n> \n> Best wishes for the balance of the summer,\n> \n> Nick\n\n\nNicholas Horton \nDepartment of Mathematics and Statistics, Smith College\nClark Science Center, Northampton, MA 01063-0001\nhttp://www.math.smith.edu/~nhorton",
+      "body_snippet": "I wanted to share some updates on my prior email about illustrated examples of how to fit the case studies from the Second Edition of the \"Statistical Sleuth\" within R.  If you are using this book, or",
+      "thread_id": "thread-f5114e917115",
+      "thread_depth": 0,
+      "month": "2012-09"
+    },
+    {
+      "id": "msg-260195ece7c1",
+      "message_id": "<CAGx1TMACcUJauJ=82b44GZ_XBT6P3RrWBAMd84P5xA5ZhUDDUA@mail.gmail.com>",
+      "from_name": "Richard M. Heiberger",
+      "from_email_hash": "4ce810eab8587777db353ea9d997b9e94d9e73af018121f9a3424238038952df",
+      "date": "2012-09-15T19:59:10-04:00",
+      "subject": "[R-sig-teaching] Data and example R code for Statistical Analysis and Data Display",
+      "subject_clean": "Data and example R code for Statistical Analysis and Data Display",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120915/b4dbb88e/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120915/b4dbb88e/attachment.pl>",
+      "thread_id": "thread-260195ece7c1",
+      "thread_depth": 0,
+      "month": "2012-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-f5114e917115",
+      "subject": "update on Illustrating the case studies in the \"Statistical Sleuth\" using R",
+      "message_count": 1,
+      "participants": [
+        "Nicholas Horton"
+      ],
+      "started": "2012-09-15T16:45:12-04:00",
+      "last_reply": "2012-09-15T16:45:12-04:00",
+      "root_message_id": "msg-f5114e917115"
+    },
+    {
+      "id": "thread-260195ece7c1",
+      "subject": "Data and example R code for Statistical Analysis and Data Display",
+      "message_count": 1,
+      "participants": [
+        "Richard M. Heiberger"
+      ],
+      "started": "2012-09-15T19:59:10-04:00",
+      "last_reply": "2012-09-15T19:59:10-04:00",
+      "root_message_id": "msg-260195ece7c1"
+    }
+  ]
+}

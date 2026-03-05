@@ -1,0 +1,561 @@
+From abouelmakarim1962 at gmail.com  Tue Apr 18 12:52:11 2017
+From: abouelmakarim1962 at gmail.com (AbouEl-Makarim Aboueissa)
+Date: Tue, 18 Apr 2017 06:52:11 -0400
+Subject: [R-sig-teaching] Laplace Distribution
+Message-ID: <CAE9stmfZVM7mZpokrM-DW2F9k4M2di8uqVt8yj8U2B3LYbqU1g@mail.gmail.com>
+
+Dear All: good morning
+
+
+Suppose X has a Laplace distribution with mean 105 and variance 100.
+
+
+*How to compute the probability P(X > 100) using R.*
+
+
+Any help will be highly appreciated.
+
+
+with thanks
+abou
+______________________
+AbouEl-Makarim Aboueissa, PhD
+Department of Mathematics and Statistics
+University of Southern Maine
+
+	[[alternative HTML version deleted]]
+
+
+From maechler at stat.math.ethz.ch  Tue Apr 18 14:38:08 2017
+From: maechler at stat.math.ethz.ch (Martin Maechler)
+Date: Tue, 18 Apr 2017 14:38:08 +0200
+Subject: [R-sig-teaching] Laplace Distribution
+In-Reply-To: <CAE9stmfZVM7mZpokrM-DW2F9k4M2di8uqVt8yj8U2B3LYbqU1g@mail.gmail.com>
+References: <CAE9stmfZVM7mZpokrM-DW2F9k4M2di8uqVt8yj8U2B3LYbqU1g@mail.gmail.com>
+Message-ID: <22774.2224.740787.520131@stat.math.ethz.ch>
+
+>>>>> AbouEl-Makarim Aboueissa <abouelmakarim1962 at gmail.com>
+>>>>>     on Tue, 18 Apr 2017 06:52:11 -0400 writes:
+
+    > Dear All: good morning Suppose X has a Laplace
+    > distribution with mean 105 and variance 100.
+
+
+    > *How to compute the probability P(X > 100) using R.*
+
+what has this to do with "teaching R / teaching statistics using R"?
+
+It looks like a basic question about R or the availability of R
+packages for "the" Laplace distribution.
+...
+which could also be answered by reading the Wikipedia page about
+the Laplace distrib...
+
+Martin
+
+
+From abouelmakarim1962 at gmail.com  Tue Apr 18 14:40:51 2017
+From: abouelmakarim1962 at gmail.com (AbouEl-Makarim Aboueissa)
+Date: Tue, 18 Apr 2017 08:40:51 -0400
+Subject: [R-sig-teaching] Laplace Distribution
+In-Reply-To: <22774.2224.740787.520131@stat.math.ethz.ch>
+References: <CAE9stmfZVM7mZpokrM-DW2F9k4M2di8uqVt8yj8U2B3LYbqU1g@mail.gmail.com>
+ <22774.2224.740787.520131@stat.math.ethz.ch>
+Message-ID: <CAE9stmeZA8mKMwLj7Ba+ru0MwwNsTMwi6bGZ=TyS3tVXkLR3Jg@mail.gmail.com>
+
+Dear All:
+
+I am teaching a nonparametric course, and want to compute the power of the
+sign test assuming that the x's has laplace distribution under Ha.
+
+what is wrong with that.
+
+any way thank you very much
+
+
+with thanks
+abou
+
+On Tue, Apr 18, 2017 at 8:38 AM, Martin Maechler <maechler at stat.math.ethz.ch
+> wrote:
+
+> >>>>> AbouEl-Makarim Aboueissa <abouelmakarim1962 at gmail.com>
+> >>>>>     on Tue, 18 Apr 2017 06:52:11 -0400 writes:
+>
+>     > Dear All: good morning Suppose X has a Laplace
+>     > distribution with mean 105 and variance 100.
+>
+>
+>     > *How to compute the probability P(X > 100) using R.*
+>
+> what has this to do with "teaching R / teaching statistics using R"?
+>
+> It looks like a basic question about R or the availability of R
+> packages for "the" Laplace distribution.
+> ...
+> which could also be answered by reading the Wikipedia page about
+> the Laplace distrib...
+>
+> Martin
+>
+
+
+
+-- 
+______________________
+AbouEl-Makarim Aboueissa, PhD
+Department of Mathematics and Statistics
+University of Southern Maine
+
+	[[alternative HTML version deleted]]
+
+
+From bob at statland.org  Tue Apr 18 14:56:34 2017
+From: bob at statland.org (User Hayden)
+Date: Tue, 18 Apr 2017 08:56:34 -0400
+Subject: [R-sig-teaching] [abouelmakarim1962@gmail.com: Re: Laplace
+ Distribution]
+Message-ID: <20170418125634.GA37997@lilly.csoft.net>
+
+
+There is nothing wrong with doing that but this list is not for how-to
+questions about how to get R to do something.  It is about educational
+uses of R.  For example, one might ask about which R interface or
+graphics package seems easiest for students to use, or what tutorials
+are available for beginners.  However, we actually get more how-to
+questions than questions about using R as a teaching tool, so people
+get tired of off-topic questions and complain about them when they
+appear.
+
+
+----- Forwarded message from AbouEl-Makarim Aboueissa <abouelmakarim1962 at gmail.com> -----
+
+Date: Tue, 18 Apr 2017 08:40:51 -0400
+From: AbouEl-Makarim Aboueissa <abouelmakarim1962 at gmail.com>
+To: Martin Maechler <maechler at stat.math.ethz.ch>
+Cc: r-sig-teaching at r-project.org
+Subject: Re: [R-sig-teaching] Laplace Distribution
+
+Dear All:
+
+I am teaching a nonparametric course, and want to compute the power of the
+sign test assuming that the x's has laplace distribution under Ha.
+
+what is wrong with that.
+
+any way thank you very much
+
+
+with thanks
+abou
+
+On Tue, Apr 18, 2017 at 8:38 AM, Martin Maechler <maechler at stat.math.ethz.ch
+> wrote:
+
+> >>>>> AbouEl-Makarim Aboueissa <abouelmakarim1962 at gmail.com>
+> >>>>>     on Tue, 18 Apr 2017 06:52:11 -0400 writes:
+>
+>     > Dear All: good morning Suppose X has a Laplace
+>     > distribution with mean 105 and variance 100.
+>
+>
+>     > *How to compute the probability P(X > 100) using R.*
+>
+> what has this to do with "teaching R / teaching statistics using R"?
+>
+> It looks like a basic question about R or the availability of R
+> packages for "the" Laplace distribution.
+> ...
+> which could also be answered by reading the Wikipedia page about
+> the Laplace distrib...
+>
+> Martin
+>
+
+
+
+-- 
+______________________
+AbouEl-Makarim Aboueissa, PhD
+Department of Mathematics and Statistics
+University of Southern Maine
+
+	[[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+----- End forwarded message -----
+
+-- 
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+      _
+     | |          Robert W. Hayden
+     | |          5 Howard Street, Apartment 206
+    /  |          Wilton, New Hampshire 03086  USA
+   |   |          
+   |   |          email: bob@ the site below
+  /  x |          website: http://statland.org
+ |     /          
+ ''''''
+
+
+From jefflaux at gmail.com  Tue Apr 18 16:48:26 2017
+From: jefflaux at gmail.com (Jeff Laux)
+Date: Tue, 18 Apr 2017 10:48:26 -0400
+Subject: [R-sig-teaching] Laplace Distribution
+In-Reply-To: <CAE9stmeZA8mKMwLj7Ba+ru0MwwNsTMwi6bGZ=TyS3tVXkLR3Jg@mail.gmail.com>
+References: <CAE9stmfZVM7mZpokrM-DW2F9k4M2di8uqVt8yj8U2B3LYbqU1g@mail.gmail.com>
+ <22774.2224.740787.520131@stat.math.ethz.ch>
+ <CAE9stmeZA8mKMwLj7Ba+ru0MwwNsTMwi6bGZ=TyS3tVXkLR3Jg@mail.gmail.com>
+Message-ID: <CANV9buRkWEWVZxG2ec=dnFUyqOvpvZ24uTCoLW18sJZgSWijPQ@mail.gmail.com>
+
+I think it's fine to teach a nonparametric statistics course, and it's fine
+to compute the power of the sign test.  However, your question is not about
+using R in teaching.  It is just about using R to compute probabilities
+under a Laplace distribution.  Your question does not belong on this
+listserv; it should go to the main r-help listserv instead.  This has been
+pointed out to you several times and yet you keep doing this, which I
+suspect annoys people.
+
+As far as your substantive question goes, did you try Googling "r laplace
+distribution"?  I get a number of useful hits.
+
+On Tue, Apr 18, 2017 at 8:40 AM, AbouEl-Makarim Aboueissa <
+abouelmakarim1962 at gmail.com> wrote:
+
+> Dear All:
+>
+> I am teaching a nonparametric course, and want to compute the power of the
+> sign test assuming that the x's has laplace distribution under Ha.
+>
+> what is wrong with that.
+>
+> any way thank you very much
+>
+>
+> with thanks
+> abou
+>
+> On Tue, Apr 18, 2017 at 8:38 AM, Martin Maechler <
+> maechler at stat.math.ethz.ch
+> > wrote:
+>
+> > >>>>> AbouEl-Makarim Aboueissa <abouelmakarim1962 at gmail.com>
+> > >>>>>     on Tue, 18 Apr 2017 06:52:11 -0400 writes:
+> >
+> >     > Dear All: good morning Suppose X has a Laplace
+> >     > distribution with mean 105 and variance 100.
+> >
+> >
+> >     > *How to compute the probability P(X > 100) using R.*
+> >
+> > what has this to do with "teaching R / teaching statistics using R"?
+> >
+> > It looks like a basic question about R or the availability of R
+> > packages for "the" Laplace distribution.
+> > ...
+> > which could also be answered by reading the Wikipedia page about
+> > the Laplace distrib...
+> >
+> > Martin
+> >
+>
+>
+>
+> --
+> ______________________
+> AbouEl-Makarim Aboueissa, PhD
+> Department of Mathematics and Statistics
+> University of Southern Maine
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+	[[alternative HTML version deleted]]
+
+
+From dmonterde at me.com  Thu Apr 20 17:07:45 2017
+From: dmonterde at me.com (David Monterde)
+Date: Thu, 20 Apr 2017 17:07:45 +0200
+Subject: [R-sig-teaching] About the standard gaussian distribution
+Message-ID: <33B63E65-E776-4605-8814-18682BE0AC92@me.com>
+
+First of all I have to apologize because my english is horrible. 
+
+I am working in a basic and practical statistic course. 
+
+I will speak about confidence intervals, of course. 
+
+But when I was preparing this chapter I had a doubt: I wonder if it has sence today to explain the confidence intervals for a mean in terms of the standard normal distribution. 
+
+If we show that the mean follows a normal distribution with variance/n then it is easy to explain (and to understand) that the confidence interval is due to two percentiles, the percentile alpha/2 and the percentile 1-alpha/2 from a normal distribution with the sample mean and the sample variance/n. 
+
+I think that the standard gaussian distribution was usefull when we had to calculate CI in the past. 
+That is, it was a simple way to have all possibilities in a single table (in paper). 
+
+But now, we have R functions that let us to obtain the exact values for any normal distribution. 
+
+I think that is not necessary to explain how to work with transformations if we can explain that a CI is simply to identify percentiles. 
+
+What do you think?
+
+Thanks
+
+PD I know that the normal distribution for CI need some hipothesis. But I have focused the question
+
+_________________________
+
+David Monterde
+
+Lo dif?cil se hace. 
+Lo imposible se intenta. 
+_________________________
+	[[alternative HTML version deleted]]
+
+
+From bob at statland.org  Thu Apr 20 17:30:04 2017
+From: bob at statland.org (User Hayden)
+Date: Thu, 20 Apr 2017 11:30:04 -0400
+Subject: [R-sig-teaching] [dmonterde@me.com: About the standard gaussian
+ distribution]
+Message-ID: <20170420153003.GA53198@lilly.csoft.net>
+
+
+Your English is better than that of many of my born-in-USA students;-)
+
+I work regularly with high school teachers of AP Statistics -- a
+program that allows high school students to get college credit for
+college courses taken in high school -- in this case, an introductory
+statistics course.  If I understand you then this is a question that
+comes up regularly in AP Stats. (where the students use graphing
+calculators with many statistical functions).
+
+Should we work with the given units and technology that has normal
+tables for any mu and sigma OR should we standardize everything?  When
+we have the option, using the given units seems more natural.  OTOH,
+standardizing provides review and practice of an important idea.  In
+addition, if we introduce the t distrtibutin later, we will have to do
+a kind of standardization there, so doing things different ways in
+different chapters hides the essential difference behind a surface
+difference. If we standardize in both cases students see that the
+difference is whether we know sigma, not whether we standarize or
+not. 
+
+
+----- Forwarded message from David Monterde <dmonterde at me.com> -----
+
+Date: Thu, 20 Apr 2017 17:07:45 +0200
+From: David Monterde <dmonterde at me.com>
+To: r-sig-teaching at r-project.org
+Subject: [R-sig-teaching] About the standard gaussian distribution
+X-Mailer: iPhone Mail (14E304)
+
+First of all I have to apologize because my english is horrible. 
+
+I am working in a basic and practical statistic course. 
+
+I will speak about confidence intervals, of course. 
+
+But when I was preparing this chapter I had a doubt: I wonder if it has sence today to explain the confidence intervals for a mean in terms of the standard normal distribution. 
+
+If we show that the mean follows a normal distribution with variance/n then it is easy to explain (and to understand) that the confidence interval is due to two percentiles, the percentile alpha/2 and the percentile 1-alpha/2 from a normal distribution with the sample mean and the sample variance/n. 
+
+I think that the standard gaussian distribution was usefull when we had to calculate CI in the past. 
+That is, it was a simple way to have all possibilities in a single table (in paper). 
+
+But now, we have R functions that let us to obtain the exact values for any normal distribution. 
+
+I think that is not necessary to explain how to work with transformations if we can explain that a CI is simply to identify percentiles. 
+
+What do you think?
+
+Thanks
+
+PD I know that the normal distribution for CI need some hipothesis. But I have focused the question
+
+_________________________
+
+David Monterde
+
+Lo dif??cil se hace. 
+Lo imposible se intenta. 
+_________________________
+	[[alternative HTML version deleted]]
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+----- End forwarded message -----
+
+-- 
+
+------->  First-time AP Stats. teacher?  Help is on the way! See
+http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html
+      _
+     | |          Robert W. Hayden
+     | |          5 Howard Street, Apartment 206
+    /  |          Wilton, New Hampshire 03086  USA
+   |   |          
+   |   |          email: bob@ the site below
+  /  x |          website: http://statland.org
+ |     /          
+ ''''''
+
+
+From michael.weylandt at gmail.com  Thu Apr 20 17:46:34 2017
+From: michael.weylandt at gmail.com (Michael Weylandt)
+Date: Thu, 20 Apr 2017 10:46:34 -0500
+Subject: [R-sig-teaching] About the standard gaussian distribution
+In-Reply-To: <33B63E65-E776-4605-8814-18682BE0AC92@me.com>
+References: <33B63E65-E776-4605-8814-18682BE0AC92@me.com>
+Message-ID: <CAAmySGPG5L5W=VHrG+btm8QacMbgZK2orRBCDBHF581cYiOR+Q@mail.gmail.com>
+
+I agree that, for an intro class, working with the z-score + standard
+normal is probably unnecessary.
+
+If your students go further, it's a useful example of the idea of a
+pivot, but you can probably explain that when they get there.
+
+On Thu, Apr 20, 2017 at 10:07 AM, David Monterde <dmonterde at me.com> wrote:
+> First of all I have to apologize because my english is horrible.
+>
+> I am working in a basic and practical statistic course.
+>
+> I will speak about confidence intervals, of course.
+>
+> But when I was preparing this chapter I had a doubt: I wonder if it has sence today to explain the confidence intervals for a mean in terms of the standard normal distribution.
+>
+> If we show that the mean follows a normal distribution with variance/n then it is easy to explain (and to understand) that the confidence interval is due to two percentiles, the percentile alpha/2 and the percentile 1-alpha/2 from a normal distribution with the sample mean and the sample variance/n.
+>
+> I think that the standard gaussian distribution was usefull when we had to calculate CI in the past.
+> That is, it was a simple way to have all possibilities in a single table (in paper).
+>
+> But now, we have R functions that let us to obtain the exact values for any normal distribution.
+>
+> I think that is not necessary to explain how to work with transformations if we can explain that a CI is simply to identify percentiles.
+>
+> What do you think?
+>
+> Thanks
+>
+> PD I know that the normal distribution for CI need some hipothesis. But I have focused the question
+>
+> _________________________
+>
+> David Monterde
+>
+> Lo dif?cil se hace.
+> Lo imposible se intenta.
+> _________________________
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From rmh at temple.edu  Thu Apr 20 19:40:28 2017
+From: rmh at temple.edu (Richard M. Heiberger)
+Date: Thu, 20 Apr 2017 13:40:28 -0400
+Subject: [R-sig-teaching] About the standard gaussian distribution
+In-Reply-To: <33B63E65-E776-4605-8814-18682BE0AC92@me.com>
+References: <33B63E65-E776-4605-8814-18682BE0AC92@me.com>
+Message-ID: <CAGx1TMBN3h=+9v7UUn7_T7FmEi2GRi2bR6gaApOn11bJqyQD+Q@mail.gmail.com>
+
+Let me suggest the interactive graphic NTplot in the HH package.
+
+## install.packages("HH") ## if you don't have it yet.
+library(HH)
+NTplot(shiny=TRUE)
+
+[to exit a shiny app, use C-c C-c in the R window in Macintosh, and
+<esc> in the R window in Windows]
+
+This single display covers about 60% of the introductory course.
+See ?NTplot for additional examples.
+Be sure to read the Details section and the examples.
+
+On Thu, Apr 20, 2017 at 11:07 AM, David Monterde <dmonterde at me.com> wrote:
+> First of all I have to apologize because my english is horrible.
+>
+> I am working in a basic and practical statistic course.
+>
+> I will speak about confidence intervals, of course.
+>
+> But when I was preparing this chapter I had a doubt: I wonder if it has sence today to explain the confidence intervals for a mean in terms of the standard normal distribution.
+>
+> If we show that the mean follows a normal distribution with variance/n then it is easy to explain (and to understand) that the confidence interval is due to two percentiles, the percentile alpha/2 and the percentile 1-alpha/2 from a normal distribution with the sample mean and the sample variance/n.
+>
+> I think that the standard gaussian distribution was usefull when we had to calculate CI in the past.
+> That is, it was a simple way to have all possibilities in a single table (in paper).
+>
+> But now, we have R functions that let us to obtain the exact values for any normal distribution.
+>
+> I think that is not necessary to explain how to work with transformations if we can explain that a CI is simply to identify percentiles.
+>
+> What do you think?
+>
+> Thanks
+>
+> PD I know that the normal distribution for CI need some hipothesis. But I have focused the question
+>
+> _________________________
+>
+> David Monterde
+>
+> Lo dif?cil se hace.
+> Lo imposible se intenta.
+> _________________________
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From mbrigida at clarion.edu  Mon Jun  5 18:51:39 2017
+From: mbrigida at clarion.edu (Matt Brigida)
+Date: Mon, 5 Jun 2017 12:51:39 -0400
+Subject: [R-sig-teaching] Interactive Teaching Materials: 5MinuteFinance
+Message-ID: <20170605165139.GB4669@archbox.localdomain>
+
+Dear R-SIG-Teaching,
+
+I am posting to let you know about a project (titled 5MinuteFinance) to create freely-available teaching and study materials for finance/economics/econometrics. The materials are created in R/Shiny, and use github for author coordination.  Webhosting (shinyapps.io) is supported by the Milken Institute.  The project is here: https://github.com/FinancialMarkets/5MinuteFinance
+
+The goal of the presentations is to make finance interactive.  Instead of students looking at a static chart, they now can change the parameters and see the chart react. Further, the presentations give the students access to the massive amounts of financial data generated every day.  The amazing work on R, htmlwidgets, and shiny provide outstanding tools to create interactive applications.
+
+We are also trying to improve how finance materials are created. Instead of each instructor creating their own from scratch, we can coordinate a central set of materials under git version control.  This usually draws comparisons with Wikipedia, however git/github has unique features.  Instructors can fork the main set, change/add to the materials, and use this as their own personal version.  So the materials become a universal starting point---you can simply use them as is, or use them as the starting point of your own materials.  Of course, pull requests are always welcome, and 'git blame' ensures you get credit.  I have even found students like to create their own fork in which to take notes.
+
+If this project interests you we could use your help.  If you are familiar with the topics and courses, you can add to the content.  However, here are a couple ways in which you could contribute without knowing any finance or econ:
+
+-  Add and improve interactive applications. We have had a couple of people with data viz backgrounds (and no finance) add great visualizations. 
+
+-  Grammar fixes are always welcome. 
+
+-  Let us know what you think of the project, and how it may be improved.
+
+-  Let other people know about the project (GitHub stars never hurt).
+
+I hope you may find the 5MinuteFinance project useful!
+
+Best regards,
+
+Matt Brigida
+
+-- 
+Matthew Brigida, Ph.D.
+Associate Professor of Finance
+Clarion University of Pennsylvania
+http://complete-markets.com
+
+

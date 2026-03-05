@@ -1,0 +1,36 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2017-06",
+  "messages": [
+    {
+      "id": "msg-973ece8fb19d",
+      "message_id": "<20170605165139.GB4669@archbox.localdomain>",
+      "from_name": "Matt Brigida",
+      "from_email_hash": "41ad4e3f41f58ec0ac3ec0940c4a6d99cbdcfe025313c136f97e2528f8ed9f4f",
+      "date": "2017-06-05T12:51:39-04:00",
+      "subject": "[R-sig-teaching] Interactive Teaching Materials: 5MinuteFinance",
+      "subject_clean": "Interactive Teaching Materials: 5MinuteFinance",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear R-SIG-Teaching,\n\nI am posting to let you know about a project (titled 5MinuteFinance) to create freely-available teaching and study materials for finance/economics/econometrics. The materials are created in R/Shiny, and use github for author coordination.  Webhosting (shinyapps.io) is supported by the Milken Institute.  The project is here: https://github.com/FinancialMarkets/5MinuteFinance\n\nThe goal of the presentations is to make finance interactive.  Instead of students looking at a static chart, they now can change the parameters and see the chart react. Further, the presentations give the students access to the massive amounts of financial data generated every day.  The amazing work on R, htmlwidgets, and shiny provide outstanding tools to create interactive applications.\n\nWe are also trying to improve how finance materials are created. Instead of each instructor creating their own from scratch, we can coordinate a central set of materials under git version control.  This usually draws comparisons with Wikipedia, however git/github has unique features.  Instructors can fork the main set, change/add to the materials, and use this as their own personal version.  So the materials become a universal starting point---you can simply use them as is, or use them as the starting point of your own materials.  Of course, pull requests are always welcome, and 'git blame' ensures you get credit.  I have even found students like to create their own fork in which to take notes.\n\nIf this project interests you we could use your help.  If you are familiar with the topics and courses, you can add to the content.  However, here are a couple ways in which you could contribute without knowing any finance or econ:\n\n-  Add and improve interactive applications. We have had a couple of people with data viz backgrounds (and no finance) add great visualizations. \n\n-  Grammar fixes are always welcome. \n\n-  Let us know what you think of the project, and how it may be improved.\n\n-  Let other people know about the project (GitHub stars never hurt).\n\nI hope you may find the 5MinuteFinance project useful!\n\nBest regards,\n\nMatt Brigida\n\n-- \nMatthew Brigida, Ph.D.\nAssociate Professor of Finance\nClarion University of Pennsylvania\nhttp://complete-markets.com",
+      "body_snippet": "Dear R-SIG-Teaching,\n\nI am posting to let you know about a project (titled 5MinuteFinance) to create freely-available teaching and study materials for finance/economics/econometrics. The materials are",
+      "thread_id": "thread-973ece8fb19d",
+      "thread_depth": 0,
+      "month": "2017-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-973ece8fb19d",
+      "subject": "Interactive Teaching Materials: 5MinuteFinance",
+      "message_count": 1,
+      "participants": [
+        "Matt Brigida"
+      ],
+      "started": "2017-06-05T12:51:39-04:00",
+      "last_reply": "2017-06-05T12:51:39-04:00",
+      "root_message_id": "msg-973ece8fb19d"
+    }
+  ]
+}

@@ -1,0 +1,461 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2010-11",
+  "messages": [
+    {
+      "id": "msg-40f0b7beefdf",
+      "message_id": "<4CCF31DE.7010306@carleton.edu>",
+      "from_name": "Laura Chihara",
+      "from_email_hash": "bf38fe4d1a78c3a1e5a1c7942e55291ae947a968d4544d52590d5c796db45253",
+      "date": "2010-11-01T16:32:14-05:00",
+      "subject": "[R-sig-teaching] workspace management",
+      "subject_clean": "workspace management",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "hello!\n\nI'm wondering how you have your students\nhandle workspaces in R. Do you have students\ncreate their own R folder (on their home drive),\nand then load from within R? Or do you\nhave them create an R shortcut and then\ntype the path in the \"Start In\" field (Windows)?\n\nI've been teaching the latter method, but am\nwondering if loading from within R is easier?\n\nThanks for ideas.\n\n--Laura\n\n*******************************************\nLaura Chihara\nProfessor of Mathematics   507-222-4065 (office)\nDept of Mathematics        507-222-4312 (fax)\nCarleton College\n1 North College Street\nNorthfield MN 55057",
+      "body_snippet": "hello!\n\nI'm wondering how you have your students\nhandle workspaces in R. Do you have students\ncreate their own R folder (on their home drive),\nand then load from within R? Or do you\nhave them create a",
+      "thread_id": "thread-40f0b7beefdf",
+      "thread_depth": 0,
+      "month": "2010-11"
+    },
+    {
+      "id": "msg-2ca82a8aa6e9",
+      "message_id": "<4CCF64E2.6050107@waikato.ac.nz>",
+      "from_name": "Murray Jorgensen",
+      "from_email_hash": "8e2ba5706dbbcc74561b819a2eba19d1d3d7cf60d5f0b85161a3f897f4206f3a",
+      "date": "2010-11-02T14:09:54+13:00",
+      "subject": "[R-sig-teaching] workspace management",
+      "subject_clean": "workspace management",
+      "in_reply_to": "<4CCF31DE.7010306@carleton.edu>",
+      "references": [
+        "<4CCF31DE.7010306@carleton.edu>"
+      ],
+      "body_plain": "I think that folders should be organized by topic and not by the \nsoftware that might use the files. After all you might want to use \nseveral different applications of files in a folder.\n\nI teach doing something like this at the start of an R script:\n\n > wdir <- choose.dir()\n > wdir\n[1] \"C:\\\\Files\\\\Teaching\\\\STAT321\\\\2008\"\n > setwd(wdir)\n\nLater you can edit this to\n\nwdir <- # choose.dir()\n        \"C:\\\\Files\\\\Teaching\\\\STAT321\\\\2008\"\nsetwd(wdir)\n\nto avoid repeating the dialog boxes.\n\nMurray\n\n\nOn 2/11/2010 10:32 a.m., Laura Chihara wrote:\n> hello!\n>\n> I'm wondering how you have your students\n> handle workspaces in R. Do you have students\n> create their own R folder (on their home drive),\n> and then load from within R? Or do you\n> have them create an R shortcut and then\n> type the path in the \"Start In\" field (Windows)?\n>\n> I've been teaching the latter method, but am\n> wondering if loading from within R is easier?\n>\n> Thanks for ideas.\n>\n> --Laura\n>\n> *******************************************\n> Laura Chihara\n> Professor of Mathematics 507-222-4065 (office)\n> Dept of Mathematics 507-222-4312 (fax)\n> Carleton College\n> 1 North College Street\n> Northfield MN 55057\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n-- \nDr Murray Jorgensen      http://www.stats.waikato.ac.nz/Staff/maj.html\nDepartment of Statistics, University of Waikato, Hamilton, New Zealand\nEmail: maj at waikato.ac.nz                                Fax 7 838 4155\nPhone  +64 7 838 4773 wk    Home +64 7 825 0441   Mobile 021 0200 8350",
+      "body_snippet": "I think that folders should be organized by topic and not by the \nsoftware that might use the files. After all you might want to use \nseveral different applications of files in a folder.\n\nI teach doin",
+      "thread_id": "thread-40f0b7beefdf",
+      "thread_depth": 1,
+      "month": "2010-11"
+    },
+    {
+      "id": "msg-d58e4b57dd73",
+      "message_id": "<AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>",
+      "from_name": "Ralph O'Brien, PhD",
+      "from_email_hash": "b130a5a0d521b68ae30b5e6f64ca799ce8345d72ca13a6628f755e22cc52c169",
+      "date": "2010-11-02T12:51:57-04:00",
+      "subject": "[R-sig-teaching] workspace management",
+      "subject_clean": "workspace management",
+      "in_reply_to": "<4CCF64E2.6050107@waikato.ac.nz>",
+      "references": [
+        "<4CCF31DE.7010306@carleton.edu>",
+        "<4CCF64E2.6050107@waikato.ac.nz>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101102/fff3ac9b/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101102/fff3ac9b/attachment.pl>",
+      "thread_id": "thread-40f0b7beefdf",
+      "thread_depth": 2,
+      "month": "2010-11"
+    },
+    {
+      "id": "msg-fc10d97b6abd",
+      "message_id": "<AANLkTimOJDCd7cWOAqtM6y3KKecBLfeKE-9WTX-qUExX@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2010-11-02T13:24:44-04:00",
+      "subject": "[R-sig-teaching] workspace management",
+      "subject_clean": "workspace management",
+      "in_reply_to": "<AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>",
+      "references": [
+        "<4CCF31DE.7010306@carleton.edu>",
+        "<4CCF64E2.6050107@waikato.ac.nz>",
+        "<AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>"
+      ],
+      "body_plain": "On Tue, Nov 2, 2010 at 12:51 PM, Ralph O'Brien, PhD\n<obrienralph at gmail.com> wrote:\n> A huge plus for R is that it runs nearly identically on all three major\n> platforms. There is every reason to make our teaching as\n> platform-independent as we can.\n>\n> The choose.dir() function is not found on the Mac release (I'm still at v.\n> 2.11.1), so I would advise against using it, especially since it is trivial\n> to teach and use code that is \"plain vanilla.\"\n>\n> My scripts to students begin with something like:\n>\n> # Uncomment one of these path2data statements and\n> # insert your appropriate path specification.\n> # path2data <- \"C:/EPBI431/datasets\" ? # Windows (convert to forward\n> slashes)\n> ?# path2data <- \"/Users/ralphobrien/AllDocs/teaching/EPBI431/datasets\" ? #\n> Mac OS\n> setwd(path2data)\n>\n> Later, I might simply give them:\n>\n> # setwd(\"C:/EPBI431/datasets\") ?# Windows (convert to forward slashes)\n> # setwd(\"/Users/ralphobrien/AllDocs/teaching/EPBI431/datasets\") ?# Mac OS\n>\n> Some students have never encountered path specifications, so when I\n> introduce this, I show them how to use \"Properties\" (Windows XP) and \"Get\n> Info\" (Mac OS) to copy-paste what is needed, converting the back slashes to\n> forward slashes for Windows.\n\nIf you have a path with backslashes in the Windows clipboard you can\njust do this:\n\nmyPath <- readClipboard()\nsetwd(myPath)\n\nwhich eliminates the need for any conversion.\n\n\n-- \nStatistics & Software Consulting\nGKX Group, GKX Associates Inc.\ntel: 1-877-GKX-GROUP\nemail: ggrothendieck at gmail.com",
+      "body_snippet": "On Tue, Nov 2, 2010 at 12:51 PM, Ralph O'Brien, PhD\n<obrienralph at gmail.com> wrote:\n> A huge plus for R is that it runs nearly identically on all three major\n> platforms. There is every reason to ma",
+      "thread_id": "thread-40f0b7beefdf",
+      "thread_depth": 3,
+      "month": "2010-11"
+    },
+    {
+      "id": "msg-052bedfbff53",
+      "message_id": "<AANLkTikBhvm+00Ep0Q2U8hk8rA3ya7c_f6LMK8NyJ3UO@mail.gmail.com>",
+      "from_name": "Ralph O'Brien, PhD",
+      "from_email_hash": "b130a5a0d521b68ae30b5e6f64ca799ce8345d72ca13a6628f755e22cc52c169",
+      "date": "2010-11-02T13:44:49-04:00",
+      "subject": "[R-sig-teaching] workspace management",
+      "subject_clean": "workspace management",
+      "in_reply_to": "<AANLkTimOJDCd7cWOAqtM6y3KKecBLfeKE-9WTX-qUExX@mail.gmail.com>",
+      "references": [
+        "<4CCF31DE.7010306@carleton.edu>",
+        "<4CCF64E2.6050107@waikato.ac.nz>",
+        "<AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>",
+        "<AANLkTimOJDCd7cWOAqtM6y3KKecBLfeKE-9WTX-qUExX@mail.gmail.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101102/da075f82/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101102/da075f82/attachment.pl>",
+      "thread_id": "thread-40f0b7beefdf",
+      "thread_depth": 4,
+      "month": "2010-11"
+    },
+    {
+      "id": "msg-4bf868034e41",
+      "message_id": "<AANLkTikMOUHissgJWK74s9RayRYqZPkEE4CG3zjsc9EV@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2010-11-02T13:52:28-04:00",
+      "subject": "[R-sig-teaching] workspace management",
+      "subject_clean": "workspace management",
+      "in_reply_to": "<AANLkTikBhvm+00Ep0Q2U8hk8rA3ya7c_f6LMK8NyJ3UO@mail.gmail.com>",
+      "references": [
+        "<4CCF31DE.7010306@carleton.edu>",
+        "<4CCF64E2.6050107@waikato.ac.nz>",
+        "<AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>",
+        "<AANLkTimOJDCd7cWOAqtM6y3KKecBLfeKE-9WTX-qUExX@mail.gmail.com>",
+        "<AANLkTikBhvm+00Ep0Q2U8hk8rA3ya7c_f6LMK8NyJ3UO@mail.gmail.com>"
+      ],
+      "body_plain": "On Tue, Nov 2, 2010 at 1:44 PM, Ralph O'Brien, PhD\n<obrienralph at gmail.com> wrote:\n> ========================\n> If you have a path with backslashes in the Windows clipboard you can\n> just do this:\n>\n> myPath <- readClipboard()\n> setwd(myPath)\n>\n> which eliminates the need for any conversion.\n> ========================\n>\n> But this is still Windows-centric functionality (not platform independent)\n> and it hides what dataset was in play (not a good programming practice in\n> the real world).\n\nYou are already converting backslashes to forward slashes which is\nonly needed for Windows; however, we can make this completely generic\nby using:\n\nmyPath <- readLines(\"clipboard\")\n\nwhich works on Windows and Linux and maybe Mac (I don't have one).  If\nyou don't have a newline in your clipboard it will give a warning on\nWindows but you can ignore that as it will still work.\n\n\n\n>\n> On Tue, Nov 2, 2010 at 1:24 PM, Gabor Grothendieck <ggrothendieck at gmail.com>\n> wrote:\n>>\n>> On Tue, Nov 2, 2010 at 12:51 PM, Ralph O'Brien, PhD\n>> <obrienralph at gmail.com> wrote:\n>> > A huge plus for R is that it runs nearly identically on all three major\n>> > platforms. There is every reason to make our teaching as\n>> > platform-independent as we can.\n>> >\n>> > The choose.dir() function is not found on the Mac release (I'm still at\n>> > v.\n>> > 2.11.1), so I would advise against using it, especially since it is\n>> > trivial\n>> > to teach and use code that is \"plain vanilla.\"\n>> >\n>> > My scripts to students begin with something like:\n>> >\n>> > # Uncomment one of these path2data statements and\n>> > # insert your appropriate path specification.\n>> > # path2data <- \"C:/EPBI431/datasets\" ? # Windows (convert to forward\n>> > slashes)\n>> > ?# path2data <- \"/Users/ralphobrien/AllDocs/teaching/EPBI431/datasets\"\n>> > #\n>> > Mac OS\n>> > setwd(path2data)\n>> >\n>> > Later, I might simply give them:\n>> >\n>> > # setwd(\"C:/EPBI431/datasets\") ?# Windows (convert to forward slashes)\n>> > # setwd(\"/Users/ralphobrien/AllDocs/teaching/EPBI431/datasets\") ?# Mac\n>> > OS\n>> >\n>> > Some students have never encountered path specifications, so when I\n>> > introduce this, I show them how to use \"Properties\" (Windows XP) and\n>> > \"Get\n>> > Info\" (Mac OS) to copy-paste what is needed, converting the back slashes\n>> > to\n>> > forward slashes for Windows.\n>>\n>> If you have a path with backslashes in the Windows clipboard you can\n>> just do this:\n>>\n>> myPath <- readClipboard()\n>> setwd(myPath)\n>>\n>> which eliminates the need for any conversion.\n>>\n>>\n>> --\n>> Statistics & Software Consulting\n>> GKX Group, GKX Associates Inc.\n>> tel: 1-877-GKX-GROUP\n>> email: ggrothendieck at gmail.com\n>\n>\n>\n> --\n> Ralph O'Brien, PhD\n> Professor, Dept of Epidemiology and Biostatistics\n> Case Western Reserve University\n> Office: 216.368.1927\n> Cell: 216.312.3203\n>\n\n\n\n-- \nStatistics & Software Consulting\nGKX Group, GKX Associates Inc.\ntel: 1-877-GKX-GROUP\nemail: ggrothendieck at gmail.com",
+      "body_snippet": "On Tue, Nov 2, 2010 at 1:44 PM, Ralph O'Brien, PhD\n<obrienralph at gmail.com> wrote:\n> ========================\n> If you have a path with backslashes in the Windows clipboard you can\n> just do this:\n>",
+      "thread_id": "thread-40f0b7beefdf",
+      "thread_depth": 5,
+      "month": "2010-11"
+    },
+    {
+      "id": "msg-4739fc44266e",
+      "message_id": "<AANLkTing0GXPDMkQTStmTAaV=VP8Q5O6nvZxfa=Y3zx5@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2010-11-02T18:23:02Z",
+      "subject": "[R-sig-teaching] workspace management",
+      "subject_clean": "workspace management",
+      "in_reply_to": "<AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>",
+      "references": [
+        "<4CCF31DE.7010306@carleton.edu>",
+        "<4CCF64E2.6050107@waikato.ac.nz>",
+        "<AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>"
+      ],
+      "body_plain": "> In the real world, there are also strong programming integrity reasons to\n> hard code paths directly into our scripts. This leaves no doubt about what\n> dataset was being analyzed, etc.\n\nThe whole point of using a working directory is so that you _don't_\nhave to do that.  Any hard coded path makes reproduction on another\ncomputer a real pain - you should always rely on the analyst setting\nthe working directory from outside of the script, otherwise you lose\nmost of the advantages of a working directory.\n\nHadley\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "> In the real world, there are also strong programming integrity reasons to\n> hard code paths directly into our scripts. This leaves no doubt about what\n> dataset was being analyzed, etc.\n\nThe whole p",
+      "thread_id": "thread-40f0b7beefdf",
+      "thread_depth": 3,
+      "month": "2010-11"
+    },
+    {
+      "id": "msg-aad2ef799414",
+      "message_id": "<p06240860c8f619ce449d@[165.124.161.180]>",
+      "from_name": "William Revelle",
+      "from_email_hash": "17775642d38a89586519cdb4da8b9881c3da6cb4b5abf51dc2b37a23be377688",
+      "date": "2010-11-02T14:45:26-05:00",
+      "subject": "[R-sig-teaching] workspace management",
+      "subject_clean": "workspace management",
+      "in_reply_to": "<AANLkTikBhvm+00Ep0Q2U8hk8rA3ya7c_f6LMK8NyJ3UO@mail.gmail.com>",
+      "references": [
+        "<4CCF31DE.7010306@carleton.edu>",
+        "<4CCF64E2.6050107@waikato.ac.nz>",
+        "<AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>",
+        "<AANLkTimOJDCd7cWOAqtM6y3KKecBLfeKE-9WTX-qUExX@mail.gmail.com>",
+        "<AANLkTikBhvm+00Ep0Q2U8hk8rA3ya7c_f6LMK8NyJ3UO@mail.gmail.com>"
+      ],
+      "body_plain": "My solution is a bit different.\n\nMost student oriented files are relatively small (less than 1 MB) and \ncan just be copied to the clipboard from their editor/spreadsheet \nprogam.\n\nMost students know how to open excel or text files.  I have them do \nthat and then just copy the data to the clipboard (from Excel or \nOpenOffice or Word or their favorite text editor)\n\nthen,\nmy.data <- read.clipboard()   #from the psych package\n\nand their data are in a suitable format.\nIf they are copying from excel,\nmy.data <- read.clipboard.tab()  #will read directly from an Excel file\nmy.data <- read.clipboard.csv()  # will read from a file in comma \ndelimited form.\netc.\n\nThe one problem I have had doing this is some student's do not know \nwhat the clipboard is!\n\nBill\n\n\nAt 1:44 PM -0400 11/2/10, Ralph O'Brien, PhD wrote:\n>========================\n>If you have a path with backslashes in the Windows clipboard you can\n>just do this:\n>\n>myPath <- readClipboard()\n>setwd(myPath)\n>\n>which eliminates the need for any conversion.\n>========================\n>\n>But this is still Windows-centric functionality (not platform independent)\n>and it hides what dataset was in play (not a good programming practice in\n>the real world).\n>\n>On Tue, Nov 2, 2010 at 1:24 PM, Gabor Grothendieck\n><ggrothendieck at gmail.com>wrote:\n>\n>>  On Tue, Nov 2, 2010 at 12:51 PM, Ralph O'Brien, PhD\n>>  <obrienralph at gmail.com> wrote:\n>>  > A huge plus for R is that it runs nearly identically on all three major\n>>  > platforms. There is every reason to make our teaching as\n>>  > platform-independent as we can.\n>>  >\n>>  > The choose.dir() function is not found on the Mac release (I'm still at\n>>  v.\n>>  > 2.11.1), so I would advise against using it, especially since it is\n>>  trivial\n>>  > to teach and use code that is \"plain vanilla.\"\n>>  >\n>>  > My scripts to students begin with something like:\n>>  >\n>>  > # Uncomment one of these path2data statements and\n>>  > # insert your appropriate path specification.\n>>  > # path2data <- \"C:/EPBI431/datasets\"   # Windows (convert to forward\n>>  > slashes)\n>>  >  # path2data <- \"/Users/ralphobrien/AllDocs/teaching/EPBI431/datasets\"\n>>  #\n>>  > Mac OS\n>>  > setwd(path2data)\n>>  >\n>>  > Later, I might simply give them:\n>>  >\n>>  > # setwd(\"C:/EPBI431/datasets\")  # Windows (convert to forward slashes)\n>>  > # setwd(\"/Users/ralphobrien/AllDocs/teaching/EPBI431/datasets\")  # Mac OS\n>>  >\n>>  > Some students have never encountered path specifications, so when I\n>>  > introduce this, I show them how to use \"Properties\" (Windows XP) and \"Get\n>>  > Info\" (Mac OS) to copy-paste what is needed, converting the back slashes\n>>  to\n>>  > forward slashes for Windows.\n>>\n>>  If you have a path with backslashes in the Windows clipboard you can\n>>  just do this:\n>>\n>>  myPath <- readClipboard()\n>>  setwd(myPath)\n>>\n>>  which eliminates the need for any conversion.\n>>\n>>\n>>  --\n>>  Statistics & Software Consulting\n>>  GKX Group, GKX Associates Inc.\n>>  tel: 1-877-GKX-GROUP\n>>  email: ggrothendieck at gmail.com\n>>\n>\n>\n>\n>--\n>Ralph O'Brien, PhD\n>Professor, Dept of Epidemiology and Biostatistics\n>Case Western Reserve University\n>Office: 216.368.1927\n>Cell: 216.312.3203\n>\n>\t[[alternative HTML version deleted]]\n>\n>_______________________________________________\n>R-sig-teaching at r-project.org mailing list\n>https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "My solution is a bit different.\n\nMost student oriented files are relatively small (less than 1 MB) and \ncan just be copied to the clipboard from their editor/spreadsheet \nprogam.\n\nMost students know h",
+      "thread_id": "thread-40f0b7beefdf",
+      "thread_depth": 5,
+      "month": "2010-11"
+    },
+    {
+      "id": "msg-330ccc1af2ae",
+      "message_id": "<4CD08B29.6060101@waikato.ac.nz>",
+      "from_name": "Murray Jorgensen",
+      "from_email_hash": "8e2ba5706dbbcc74561b819a2eba19d1d3d7cf60d5f0b85161a3f897f4206f3a",
+      "date": "2010-11-03T11:05:29+13:00",
+      "subject": "[R-sig-teaching] workspace management",
+      "subject_clean": "workspace management",
+      "in_reply_to": "<AANLkTing0GXPDMkQTStmTAaV=VP8Q5O6nvZxfa=Y3zx5@mail.gmail.com>",
+      "references": [
+        "<4CCF31DE.7010306@carleton.edu>",
+        "<4CCF64E2.6050107@waikato.ac.nz>",
+        "<AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>",
+        "<AANLkTing0GXPDMkQTStmTAaV=VP8Q5O6nvZxfa=Y3zx5@mail.gmail.com>"
+      ],
+      "body_plain": "Actually I find a hard-coded path *especially* useful when I'm using \nmore than one computer as it reminds me of what directory I'm suppose to \nbe working in.\n\nI write code like\n\nwbf =  #\"C:\\\\Files\\\\Consulting\\\\Cilla\\\\Wetaboxes 1.7.09.csv\"\n   \"C:\\\\Users\\\\maj\\\\Documents\\\\Consulting\\\\Cilla\\\\Wetaboxes 1.7.09.csv\"\nlongterm = read.csv(wbf,header=TRUE)\n\nand move the # around depending on what computer I'm on.\n\nMurray\n\nOn 3/11/2010 7:23 a.m., Hadley Wickham wrote:\n>> In the real world, there are also strong programming integrity reasons to\n>> hard code paths directly into our scripts. This leaves no doubt about what\n>> dataset was being analyzed, etc.\n>\n> The whole point of using a working directory is so that you _don't_\n> have to do that.  Any hard coded path makes reproduction on another\n> computer a real pain - you should always rely on the analyst setting\n> the working directory from outside of the script, otherwise you lose\n> most of the advantages of a working directory.\n>\n> Hadley\n>\n\n-- \nDr Murray Jorgensen      http://www.stats.waikato.ac.nz/Staff/maj.html\nDepartment of Statistics, University of Waikato, Hamilton, New Zealand\nEmail: maj at waikato.ac.nz                                Fax 7 838 4155\nPhone  +64 7 838 4773 wk    Home +64 7 825 0441   Mobile 021 0200 8350",
+      "body_snippet": "Actually I find a hard-coded path *especially* useful when I'm using \nmore than one computer as it reminds me of what directory I'm suppose to \nbe working in.\n\nI write code like\n\nwbf =  #\"C:\\\\Files\\\\C",
+      "thread_id": "thread-40f0b7beefdf",
+      "thread_depth": 4,
+      "month": "2010-11"
+    },
+    {
+      "id": "msg-61e2fdf70271",
+      "message_id": "<AANLkTimDDAKHyc-O0A7NfMQ9G_zvY9uLgbDqmzkARmh=@mail.gmail.com>",
+      "from_name": "Hadley Wickham",
+      "from_email_hash": "120ce28c6315dd0de419ddf6ddfe63d332d6337a253745ec7f27d22f63f0b7c5",
+      "date": "2010-11-02T22:13:12Z",
+      "subject": "[R-sig-teaching] workspace management",
+      "subject_clean": "workspace management",
+      "in_reply_to": "<4CD08B29.6060101@waikato.ac.nz>",
+      "references": [
+        "<4CCF31DE.7010306@carleton.edu>",
+        "<4CCF64E2.6050107@waikato.ac.nz>",
+        "<AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>",
+        "<AANLkTing0GXPDMkQTStmTAaV=VP8Q5O6nvZxfa=Y3zx5@mail.gmail.com>",
+        "<4CD08B29.6060101@waikato.ac.nz>"
+      ],
+      "body_plain": "> Actually I find a hard-coded path *especially* useful when I'm using more\n> than one computer as it reminds me of what directory I'm suppose to be\n> working in.\n>\n> I write code like\n>\n> wbf = ?#\"C:\\\\Files\\\\Consulting\\\\Cilla\\\\Wetaboxes 1.7.09.csv\"\n> ?\"C:\\\\Users\\\\maj\\\\Documents\\\\Consulting\\\\Cilla\\\\Wetaboxes 1.7.09.csv\"\n> longterm = read.csv(wbf,header=TRUE)\n>\n> and move the # around depending on what computer I'm on.\n\nBut that's exactly what the idea of a working directory is to avoid.\nJust set all paths relative to the R file, and then set the working\ndirectory (or use source + chdir = T) and you're golden.  Admittedly\nthis works best from the command line, where the directory you start R\nfrom becomes the working directory.\n\nHadley\n\n-- \nAssistant Professor / Dobelman Family Junior Chair\nDepartment of Statistics / Rice University\nhttp://had.co.nz/",
+      "body_snippet": "> Actually I find a hard-coded path *especially* useful when I'm using more\n> than one computer as it reminds me of what directory I'm suppose to be\n> working in.\n>\n> I write code like\n>\n> wbf = ?#\"C:",
+      "thread_id": "thread-40f0b7beefdf",
+      "thread_depth": 5,
+      "month": "2010-11"
+    },
+    {
+      "id": "msg-28d23cf4560a",
+      "message_id": "<4CD89505020000B10006DAC8@GW.muhlenberg.edu>",
+      "from_name": "Byungchul Cha",
+      "from_email_hash": "563df5eaf37a7efb67321eb1053291ba07c8e2710999dbd6d7eb5bc6b526d545",
+      "date": "2010-11-09T00:25:41-05:00",
+      "subject": "[R-sig-teaching] t.test from summary of data",
+      "subject_clean": "t.test from summary of data",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I am using R in my intro stat course, and, I myself is a R novice.\n\nWe use \"Intro to the practice of statistics\" by Moore, McCabe, Craig as textbook. Is there an option for the command \"t.test\" so that it can perform t-test from the summary of sample data (that is, sample mean, sample sd, and sample size), instead of the (raw) sample data? I've been looking to find a way to do so, but, I couldn't. \n\nI believe it is possible to write codes to do this for my own use, but, I am just curious. Is there a pedagogical reason not to do so? This is a bit annoying when all the exercises problems in the book needs such a functionality, and I can't figure out how to do it in R, especially when many other major stat packages (including TI calculators) have that capability. What am I missing here?\n\n--\nByungchul Cha\nMuhlenberg College",
+      "body_snippet": "I am using R in my intro stat course, and, I myself is a R novice.\n\nWe use \"Intro to the practice of statistics\" by Moore, McCabe, Craig as textbook. Is there an option for the command \"t.test\" so tha",
+      "thread_id": "thread-28d23cf4560a",
+      "thread_depth": 0,
+      "month": "2010-11"
+    },
+    {
+      "id": "msg-40d16740640d",
+      "message_id": "<AANLkTiktOy02vA5eQ1UpY7fu2Q8vErN2zPSo9BLgaq-V@mail.gmail.com>",
+      "from_name": "Joshua Wiley",
+      "from_email_hash": "c7f07c588294f110fffa28fa75e197f5a9d40a76afe0853fbdeb1992dab12a4a",
+      "date": "2010-11-08T21:57:12-08:00",
+      "subject": "[R-sig-teaching] t.test from summary of data",
+      "subject_clean": "t.test from summary of data",
+      "in_reply_to": "<4CD89505020000B10006DAC8@GW.muhlenberg.edu>",
+      "references": [
+        "<4CD89505020000B10006DAC8@GW.muhlenberg.edu>"
+      ],
+      "body_plain": "Dear Byungchul,\n\nTo my knowledge there is no built in functionality to calculate just\nthe t statistic using pre-calculated means and standard deviations.\n\nRegarding teaching, I would flip your question around a bit, \"is there\na pedagogical reason to have students who are using computers for the\ncalculations not use raw data?\".  Personally, if you are going to let\nthem use a computer, let students practice on real data.  My guess is\nthe book author intended students to use the formula and practice \"by\nhand\".\n\nThe functionality is essentially built in if not wrapped up in a\npretty function, a short version is: mean/(sd/sqrt(n))  .  A (ever so\nslightly) fancier version is:\n\nsummary.t.test <- function(mean, sd, n, mu = 0, two.tailed = TRUE) {\n  statistic <- (mean - mu) / (sd/sqrt(n))\n  p <- pt(q = statistic, df = n - 1, lower.tail = FALSE)\n  if(two.tailed) {p <- p * 2}\n  output <- list(\"t\" = statistic, \"df\" = n - 1, \"p\" = p)\n  return(output)\n}\n\nAfter becoming quite tired of doing it by hand myself, I wrote a\nfunction to calculate contrast ts.  With lambdas (contrasts) +1 and\n-1, this should be equivalent to a two-sample t-test.  I was a very\nnew user of R when I wrote it so the implementation is crude as I\nrecall, but perhaps you will find some part beneficial, and you should\neven be able to source() the function straight into R if your computer\nhas internet access:   http://joshuawiley.com/R/contrast_t.R\n\nBest Regards,\n\nJosh\n\n\nOn Mon, Nov 8, 2010 at 9:25 PM, Byungchul Cha <cha at muhlenberg.edu> wrote:\n> I am using R in my intro stat course, and, I myself is a R novice.\n>\n> We use \"Intro to the practice of statistics\" by Moore, McCabe, Craig as textbook. Is there an option for the command \"t.test\" so that it can perform t-test from the summary of sample data (that is, sample mean, sample sd, and sample size), instead of the (raw) sample data? I've been looking to find a way to do so, but, I couldn't.\n>\n> I believe it is possible to write codes to do this for my own use, but, I am just curious. Is there a pedagogical reason not to do so? This is a bit annoying when all the exercises problems in the book needs such a functionality, and I can't figure out how to do it in R, especially when many other major stat packages (including TI calculators) have that capability. What am I missing here?\n>\n> --\n> Byungchul Cha\n> Muhlenberg College\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \nJoshua Wiley\nPh.D. Student, Health Psychology\nUniversity of California, Los Angeles\nhttp://www.joshuawiley.com/",
+      "body_snippet": "Dear Byungchul,\n\nTo my knowledge there is no built in functionality to calculate just\nthe t statistic using pre-calculated means and standard deviations.\n\nRegarding teaching, I would flip your questio",
+      "thread_id": "thread-28d23cf4560a",
+      "thread_depth": 1,
+      "month": "2010-11"
+    },
+    {
+      "id": "msg-3b5380ad9401",
+      "message_id": "<AANLkTikP_VurkugGhsZFuHg83GhUKkUcwKiFGRK1GSno@mail.gmail.com>",
+      "from_name": "RICHARD M. HEIBERGER",
+      "from_email_hash": "4ce810eab8587777db353ea9d997b9e94d9e73af018121f9a3424238038952df",
+      "date": "2010-11-09T00:58:40-05:00",
+      "subject": "[R-sig-teaching] t.test from summary of data",
+      "subject_clean": "t.test from summary of data",
+      "in_reply_to": "<4CD89505020000B10006DAC8@GW.muhlenberg.edu>",
+      "references": [
+        "<4CD89505020000B10006DAC8@GW.muhlenberg.edu>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101109/b3dbc488/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101109/b3dbc488/attachment.pl>",
+      "thread_id": "thread-28d23cf4560a",
+      "thread_depth": 1,
+      "month": "2010-11"
+    },
+    {
+      "id": "msg-f927192b91fb",
+      "message_id": "<20101109124339.29548.qmail@mv.mv.com>",
+      "from_name": "Robert W. Hayden",
+      "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
+      "date": "2010-11-09T07:43:39-05:00",
+      "subject": "[R-sig-teaching]  t.test from summary of data",
+      "subject_clean": "t.test from summary of data",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Forwarded message:\n> From: \"Byungchul Cha\" <cha at muhlenberg.edu>\n \n> We use \"Intro to the practice of statistics\" by Moore, McCabe, Craig\n  as textbook. Is there an option for the command \"t.test\" so that it\n  can perform t-test from the summary of sample data (that is, sample\n  mean, sample sd, and sample size), instead of the (raw) sample data?\n  I've been looking to find a way to do so, but, I couldn't.  I\n  believe it is possible to write codes to do this for my own use,\n  but, I am just curious. Is there a pedagogical reason not to do so?\n\nYES!\n\nOne of the reasons to use statistical software in a first course is so\nthat students can work with real, raw data.  For example, it is nearly\nimnpossible to check assumptions if you do not have the data.\nHowever, publishers want to sell books to EVERYONE, including those\nwho do not have or do not use any technology beyond a $2 calculator.\nSo the homework problems are driven by this least common denominator.  \n\nThese data-free homework problems provide practice in plugging numbers\ninto formulae, an Algebra I or even junior high school skill, and a\npretty minor skill for doing statistics in the real world.  So I would\nsuggest not assigning these and replacing them with problems that\ninvolve real data, and asking students to LOOK AT THE DATA to check\nassumptions and look for gross errors. I think you can find many real\ndata sets on the CD that comes with this text, and many are included\nwith R as well. Other sources include DASL and the _Journal of\nStatitics Education_.\n\n------->  First-time AP Stats. teacher?  Help is on the way! See\n\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n         \nRobert W. Hayden, P.O Box 450, North Troy, VT 05859 \nphone (802) 988-2587  web site http://statland.org/      \nemail  bob statland.org  (add your own \"@\" and save me some spam)",
+      "body_snippet": "Forwarded message:\n> From: \"Byungchul Cha\" <cha at muhlenberg.edu>\n \n> We use \"Intro to the practice of statistics\" by Moore, McCabe, Craig\n  as textbook. Is there an option for the command \"t.test\" s",
+      "thread_id": "thread-f927192b91fb",
+      "thread_depth": 0,
+      "month": "2010-11"
+    },
+    {
+      "id": "msg-42e2a39896d2",
+      "message_id": "<AANLkTinfLmrq1dXacHBZcX6SO0H47kaJJi8BhMD7YA1R@mail.gmail.com>",
+      "from_name": "Douglas Bates",
+      "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
+      "date": "2010-11-09T08:17:51-06:00",
+      "subject": "[R-sig-teaching] t.test from summary of data",
+      "subject_clean": "t.test from summary of data",
+      "in_reply_to": "<20101109124339.29548.qmail@mv.mv.com>",
+      "references": [
+        "<20101109124339.29548.qmail@mv.mv.com>"
+      ],
+      "body_plain": "On Tue, Nov 9, 2010 at 6:43 AM, Robert W. Hayden <hayden at mv.mv.com> wrote:\n> Forwarded message:\n>> From: \"Byungchul Cha\" <cha at muhlenberg.edu>\n>\n>> We use \"Intro to the practice of statistics\" by Moore, McCabe, Craig\n> ?as textbook. Is there an option for the command \"t.test\" so that it\n> ?can perform t-test from the summary of sample data (that is, sample\n> ?mean, sample sd, and sample size), instead of the (raw) sample data?\n> ?I've been looking to find a way to do so, but, I couldn't. ?I\n> ?believe it is possible to write codes to do this for my own use,\n> ?but, I am just curious. Is there a pedagogical reason not to do so?\n>\n> YES!\n>\n> One of the reasons to use statistical software in a first course is so\n> that students can work with real, raw data. ?For example, it is nearly\n> imnpossible to check assumptions if you do not have the data.\n> However, publishers want to sell books to EVERYONE, including those\n> who do not have or do not use any technology beyond a $2 calculator.\n> So the homework problems are driven by this least common denominator.\n>\n> These data-free homework problems provide practice in plugging numbers\n> into formulae, an Algebra I or even junior high school skill, and a\n> pretty minor skill for doing statistics in the real world. ?So I would\n> suggest not assigning these and replacing them with problems that\n> involve real data, and asking students to LOOK AT THE DATA to check\n> assumptions and look for gross errors. I think you can find many real\n> data sets on the CD that comes with this text, and many are included\n> with R as well. Other sources include DASL and the _Journal of\n> Statitics Education_.\n\nI completely agree that the practice of teaching statistics as a\ncollection of plug-in formulas, without any indication that you might,\nsay, plot the data to see if it close to the form assumed in the\nformula, is quite outmoded.  I took a first course in statistics over\nforty years ago when our calculation capabilities were limited to\npencil and paper or slide rules.  Naturally we needed to use any\ncomputational short cut we could find and we wouldn't be able to\ncalculate quantities related to distributions without access to\ntables.   This led to many approximations (normal or Poisson\napproximation to the binomial, binomial instead of hypergeometric,\nnormal approximation to Poisson, normal approximation to t when\ndegrees of freedom exceeded 30, etc.)\n\nThings have advanced a lot since then.  Lectures can be presented\nusing slides on a laptop hooked to a projector and the students often\nfollow along with copies of the slides on their own laptops or perhaps\non tablet computers or even smart phones.  The fact that we teach the\nsame approach of plugging numbers into simplistic formulas and using\napproximations so that students can get the answers by looking up\nnumbers in tables is absurd, yet we do so.  One reason is inertia.  If\nmy introductory course in statistics was taught this way then I should\nteach all subsequent introductory courses  this way.  Inertial is\nencouraged by the textbook industry who concentrate on providing new\neditions of existing texts, not because the content is new or\nproviding greater insight into data but because the problems have\ndifferent numbers and students must buy new books instead of used\nbooks.\n\nAlso, statisticians should recognize that the majority of introductory\nstatistics courses are taught in mathematics departments at two-year\nor four-year colleges, which means that the instructor is often a\nperson whose training is in some area of mathematics not related to\nstatistics and who was unlucky enough to draw the short straw.  Not\nsurprisingly such an instructor feels more comfortable teach formula\nderivations than teaching exploration of data, assessment of\nassumptions, and how to use software to do so.\n\nSaying we can't teach data exploration, etc. because students have\nlimited computational capabilities is an argument that gets weaker and\nweaker every year.  The cost of inexpensive computers like netbooks is\napproaching the cost of one or two textbooks, not to mention other\ncomputing devices like smart phones.  I think it is just too easy to\nkeep doing what we have been doing.  It's difficult to write about or\nto teach how to use software because the software keeps changing.  It\nis much easier to present the same old formulas with a couple of new,\nusually artificial, examples thrown in to make things look new.\n\n> -------> ?First-time AP Stats. teacher? ?Help is on the way! See\n>\n> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n>\n> Robert W. Hayden, P.O Box 450, North Troy, VT 05859\n> phone (802) 988-2587 ?web site http://statland.org/\n> email ?bob statland.org ?(add your own \"@\" and save me some spam)\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_snippet": "On Tue, Nov 9, 2010 at 6:43 AM, Robert W. Hayden <hayden at mv.mv.com> wrote:\n> Forwarded message:\n>> From: \"Byungchul Cha\" <cha at muhlenberg.edu>\n>\n>> We use \"Intro to the practice of statistics\" by",
+      "thread_id": "thread-f927192b91fb",
+      "thread_depth": 1,
+      "month": "2010-11"
+    },
+    {
+      "id": "msg-ffaeab2ac3f3",
+      "message_id": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC633ED72C0B@LP-EXMBVS10.CO.IHC.COM>",
+      "from_name": "Greg Snow",
+      "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
+      "date": "2010-11-09T10:05:28-07:00",
+      "subject": "[R-sig-teaching] t.test from summary of data",
+      "subject_clean": "t.test from summary of data",
+      "in_reply_to": "<4CD89505020000B10006DAC8@GW.muhlenberg.edu>",
+      "references": [
+        "<4CD89505020000B10006DAC8@GW.muhlenberg.edu>"
+      ],
+      "body_plain": "Are you interested in this only for simple one sample t-tests? Or do you need something for the more complicated cases (which lead to discussions about approximations to degrees of freedom, etc.)?\n\nFor the simple one sample, the test can be done as a one liner:\n\n> pt( mean/(sd/sqrt(n)), n-1 )\n\nWhich is not that much more complicated than a modified t-test function would be:\n\n> t.test.summary( mean, sd, n )\n\nUsing the pt function would then force the students to think about which tail they are computing the area for and whether the p-value needs to be multiplied by 2 (rather than just specifying an argument).\n\nFor the 2 sample case, I have in the past just simulated a dataset with the same means and standard deviations, then used this in place of the raw data, the mvrnorm function in the MASS package has an option to generate normal data with the exact mean and variance specified.\n\n-- \nGregory (Greg) L. Snow Ph.D.\nStatistical Data Center\nIntermountain Healthcare\ngreg.snow at imail.org\n801.408.8111\n\n\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-\n> bounces at r-project.org] On Behalf Of Byungchul Cha\n> Sent: Monday, November 08, 2010 10:26 PM\n> To: r-sig-teaching at r-project.org\n> Subject: [R-sig-teaching] t.test from summary of data\n> \n> I am using R in my intro stat course, and, I myself is a R novice.\n> \n> We use \"Intro to the practice of statistics\" by Moore, McCabe, Craig as\n> textbook. Is there an option for the command \"t.test\" so that it can\n> perform t-test from the summary of sample data (that is, sample mean,\n> sample sd, and sample size), instead of the (raw) sample data? I've\n> been looking to find a way to do so, but, I couldn't.\n> \n> I believe it is possible to write codes to do this for my own use, but,\n> I am just curious. Is there a pedagogical reason not to do so? This is\n> a bit annoying when all the exercises problems in the book needs such a\n> functionality, and I can't figure out how to do it in R, especially\n> when many other major stat packages (including TI calculators) have\n> that capability. What am I missing here?\n> \n> --\n> Byungchul Cha\n> Muhlenberg College\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Are you interested in this only for simple one sample t-tests? Or do you need something for the more complicated cases (which lead to discussions about approximations to degrees of freedom, etc.)?\n\nFo",
+      "thread_id": "thread-28d23cf4560a",
+      "thread_depth": 1,
+      "month": "2010-11"
+    },
+    {
+      "id": "msg-b637f78fec9a",
+      "message_id": "<603399.57154.qm@web59514.mail.ac4.yahoo.com>",
+      "from_name": "Ali Zanaty",
+      "from_email_hash": "65acd645f9ed74fc7721f9ea58469b32335ac44f193ffbf59b7c89913407d9ac",
+      "date": "2010-11-13T06:02:02-08:00",
+      "subject": "[R-sig-teaching] Installing R into my computer",
+      "subject_clean": "Installing R into my computer",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101113/f1d9a4be/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101113/f1d9a4be/attachment.pl>",
+      "thread_id": "thread-b637f78fec9a",
+      "thread_depth": 0,
+      "month": "2010-11"
+    },
+    {
+      "id": "msg-30b04b837bc1",
+      "message_id": "<AANLkTikMHYUXnmuzKv=yF6LYXcx9C57BBK2BnUmuJFez@mail.gmail.com>",
+      "from_name": "Jan Vandermeer",
+      "from_email_hash": "65b2bed4af24f2268054b4cb336acfe7f7edef556572120e7a97e791bec4c479",
+      "date": "2010-11-13T09:50:05-05:00",
+      "subject": "[R-sig-teaching] Installing R into my computer",
+      "subject_clean": "Installing R into my computer",
+      "in_reply_to": "<603399.57154.qm@web59514.mail.ac4.yahoo.com>",
+      "references": [
+        "<603399.57154.qm@web59514.mail.ac4.yahoo.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101113/b8425af0/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101113/b8425af0/attachment.pl>",
+      "thread_id": "thread-b637f78fec9a",
+      "thread_depth": 1,
+      "month": "2010-11"
+    },
+    {
+      "id": "msg-d8a168ee32f7",
+      "message_id": "<000101cb834b$38255e30$a8701a90$@ca>",
+      "from_name": "John Fox",
+      "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
+      "date": "2010-11-13T10:55:39-05:00",
+      "subject": "[R-sig-teaching] Installing R into my computer",
+      "subject_clean": "Installing R into my computer",
+      "in_reply_to": "<AANLkTikMHYUXnmuzKv=yF6LYXcx9C57BBK2BnUmuJFez@mail.gmail.com>",
+      "references": [
+        "<603399.57154.qm@web59514.mail.ac4.yahoo.com>",
+        "<AANLkTikMHYUXnmuzKv=yF6LYXcx9C57BBK2BnUmuJFez@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Jan and Ali,\n\nI haven't followed this thread, so I apologize if my information is off-base\nor redundant.\n\nI expect that Ali simply wants to install R on a Windows machine, in which\ncase he would be well advised to download and use the Windows installer for\nR rather than download the source distribution of R. The installer is\navailable on CRAN at <http://cran.r-project.org/bin/windows/base/> or,\nbetter, at the analogous location on a nearby mirror site.\n\nI hope this helps,\n John\n\n--------------------------------\nJohn Fox\nSenator William McMaster \n  Professor of Social Statistics\nDepartment of Sociology\nMcMaster University\nHamilton, Ontario, Canada\nweb: socserv.mcmaster.ca/jfox\n\n\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org\n[mailto:r-sig-teaching-bounces at r-\n> project.org] On Behalf Of Jan Vandermeer\n> Sent: November-13-10 9:50 AM\n> To: Ali Zanaty\n> Cc: r-sig-teaching at r-project.org\n> Subject: Re: [R-sig-teaching] Installing R into my computer\n> \n> Hi Ali;\n> \n> You need to install a program like 7Zip <http://www.7-zip.org/> which will\n> allow you to untar and install the *.tar file.\n> \n> 7Zip unpacks tars, rars, zips and their own proprietary 7z compaction\n> methods.\n> \n> *7-Zip* is *open source* software. Most of the source code is under the\n*GNU\n> LGPL* license. The unRAR code is under a mixed license: GNU LGPL + unRAR\n> restrictions. Check license information here: 7-Zip\n> license<http://www.7-zip.org/license.txt>\n> .\n> \n> You can use 7-Zip on any computer, including a computer in a commercial\n> organization. You don't need to register or pay for 7-Zip.\n> \n> Just as R is open source and under a similar license.\n> \n> \n> Jan\n> \n> \n> On Sat, Nov 13, 2010 at 9:02 AM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:\n> \n> > Dear All R Users:\n> >\n> > I am trying to install R into my computer. I downloaded R-2.12.0.tar and\n> > the old\n> > version R-2.6.2.tar. But when I tried to double click on the the file(s)\nit\n> > did\n> > not install the program, it says Windows cannot open this file:\n> >\n> > File: R-2.12.0.tar.gz\n> >\n> > To open this file, windows needs to know what progrm created it, ....\n> >\n> > What do you want to do?\n> >\n> > Use the Web sercvice to find the approperiate program\n> > Select the program from a list.\n> >\n> > I think I  am missing something, but I do not know what it is?\n> >\n> > Thanks for your helps.\n> >\n> > Ali\n> >\n> >\n> >\n> >        [[alternative HTML version deleted]]\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >\n> \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Dear Jan and Ali,\n\nI haven't followed this thread, so I apologize if my information is off-base\nor redundant.\n\nI expect that Ali simply wants to install R on a Windows machine, in which\ncase he would ",
+      "thread_id": "thread-b637f78fec9a",
+      "thread_depth": 2,
+      "month": "2010-11"
+    },
+    {
+      "id": "msg-ac6636be39ac",
+      "message_id": "<AANLkTi=B538tKK48oFBqPCoXNUSDgwjVNKyic0xuENCj@mail.gmail.com>",
+      "from_name": "Jan Vandermeer",
+      "from_email_hash": "65b2bed4af24f2268054b4cb336acfe7f7edef556572120e7a97e791bec4c479",
+      "date": "2010-11-13T11:52:15-05:00",
+      "subject": "[R-sig-teaching] Installing R into my computer",
+      "subject_clean": "Installing R into my computer",
+      "in_reply_to": "<000101cb834b$38255e30$a8701a90$@ca>",
+      "references": [
+        "<603399.57154.qm@web59514.mail.ac4.yahoo.com>",
+        "<AANLkTikMHYUXnmuzKv=yF6LYXcx9C57BBK2BnUmuJFez@mail.gmail.com>",
+        "<000101cb834b$38255e30$a8701a90$@ca>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101113/c36a40ab/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101113/c36a40ab/attachment.pl>",
+      "thread_id": "thread-b637f78fec9a",
+      "thread_depth": 3,
+      "month": "2010-11"
+    },
+    {
+      "id": "msg-4cdf278879d6",
+      "message_id": "<1291049509.25769.42.camel@prometheus.geog.ucl.ac.uk>",
+      "from_name": "Gavin Simpson",
+      "from_email_hash": "de29578fbbb79e6883c8203a1faebef3fddd10c08cc122f35e5ad109dc250099",
+      "date": "2010-11-29T16:51:49Z",
+      "subject": "[R-sig-teaching] Installing R into my computer",
+      "subject_clean": "Installing R into my computer",
+      "in_reply_to": "<603399.57154.qm@web59514.mail.ac4.yahoo.com>",
+      "references": [
+        "<603399.57154.qm@web59514.mail.ac4.yahoo.com>"
+      ],
+      "body_plain": "On Sat, 2010-11-13 at 06:02 -0800, Ali Zanaty wrote:\n> Dear All R Users:\n\nThis is not a suitable question for this particular R list. The R-Help\nlist would be appropriate. This list is for discussions regarding the\nuse of R in teaching, not teaching people how to use R.\n\nHopefully John's suggestion has solved this particular problem for you.\n\nG\n\n> I am trying to install R into my computer. I downloaded R-2.12.0.tar and the old \n> version R-2.6.2.tar. But when I tried to double click on the the file(s) it did \n> not install the program, it says Windows cannot open this file:\n> \n> File: R-2.12.0.tar.gz\n> \n> To open this file, windows needs to know what progrm created it, ....\n> \n> What do you want to do?\n> \n> Use the Web sercvice to find the approperiate program\n> Select the program from a list.\n> \n> I think I  am missing something, but I do not know what it is?\n> \n> Thanks for your helps.\n> \n> Ali\n> \n> \n>       \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n-- \n%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%\n Dr. Gavin Simpson             [t] +44 (0)20 7679 0522\n ECRC, UCL Geography,          [f] +44 (0)20 7679 0565\n Pearson Building,             [e] gavin.simpsonATNOSPAMucl.ac.uk\n Gower Street, London          [w] http://www.ucl.ac.uk/~ucfagls/\n UK. WC1E 6BT.                 [w] http://www.freshwaters.org.uk\n%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%",
+      "body_snippet": "On Sat, 2010-11-13 at 06:02 -0800, Ali Zanaty wrote:\n> Dear All R Users:\n\nThis is not a suitable question for this particular R list. The R-Help\nlist would be appropriate. This list is for discussions",
+      "thread_id": "thread-b637f78fec9a",
+      "thread_depth": 1,
+      "month": "2010-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-40f0b7beefdf",
+      "subject": "workspace management",
+      "message_count": 10,
+      "participants": [
+        "Gabor Grothendieck",
+        "Hadley Wickham",
+        "Laura Chihara",
+        "Murray Jorgensen",
+        "Ralph O'Brien, PhD",
+        "William Revelle"
+      ],
+      "started": "2010-11-01T16:32:14-05:00",
+      "last_reply": "2010-11-02T22:13:12+00:00",
+      "root_message_id": "msg-40f0b7beefdf"
+    },
+    {
+      "id": "thread-28d23cf4560a",
+      "subject": "t.test from summary of data",
+      "message_count": 4,
+      "participants": [
+        "Byungchul Cha",
+        "Greg Snow",
+        "Joshua Wiley",
+        "RICHARD M. HEIBERGER"
+      ],
+      "started": "2010-11-09T00:25:41-05:00",
+      "last_reply": "2010-11-09T10:05:28-07:00",
+      "root_message_id": "msg-28d23cf4560a"
+    },
+    {
+      "id": "thread-f927192b91fb",
+      "subject": "t.test from summary of data",
+      "message_count": 2,
+      "participants": [
+        "Douglas Bates",
+        "Robert W. Hayden"
+      ],
+      "started": "2010-11-09T07:43:39-05:00",
+      "last_reply": "2010-11-09T08:17:51-06:00",
+      "root_message_id": "msg-f927192b91fb"
+    },
+    {
+      "id": "thread-b637f78fec9a",
+      "subject": "Installing R into my computer",
+      "message_count": 5,
+      "participants": [
+        "Ali Zanaty",
+        "Gavin Simpson",
+        "Jan Vandermeer",
+        "John Fox"
+      ],
+      "started": "2010-11-13T06:02:02-08:00",
+      "last_reply": "2010-11-29T16:51:49+00:00",
+      "root_message_id": "msg-b637f78fec9a"
+    }
+  ]
+}

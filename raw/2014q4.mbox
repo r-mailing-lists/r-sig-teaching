@@ -1,0 +1,2191 @@
+From sstoline at gmail.com  Sun Oct 12 16:31:07 2014
+From: sstoline at gmail.com (Steven Stoline)
+Date: Sun, 12 Oct 2014 10:31:07 -0400
+Subject: [R-sig-teaching] R codes for numerical analysis methods
+Message-ID: <CAHDp66Dy9x_OGU6e2J_UDUmFJzijoHC=Rvh+cEnO6bQGi_nHcA@mail.gmail.com>
+
+Dear All:
+
+I am wondering if I can find R codes (functions) for numerical analysis
+methods, linear algebra, and differential equations available somewhere.
+
+many thanks
+steve
+
+------------------------
+Steven M. Stoline
+1123 Forest Avenue
+Portland, ME 04112
+sstoline at gmail.com
+
+	[[alternative HTML version deleted]]
+
+
+From djmuser at gmail.com  Sun Oct 12 21:53:53 2014
+From: djmuser at gmail.com (Dennis Murphy)
+Date: Sun, 12 Oct 2014 12:53:53 -0700
+Subject: [R-sig-teaching] R codes for numerical analysis methods
+In-Reply-To: <CAHDp66Dy9x_OGU6e2J_UDUmFJzijoHC=Rvh+cEnO6bQGi_nHcA@mail.gmail.com>
+References: <CAHDp66Dy9x_OGU6e2J_UDUmFJzijoHC=Rvh+cEnO6bQGi_nHcA@mail.gmail.com>
+Message-ID: <CADv2QyEVGXZtMbNjX-UVSAHLWGssC3Q5V0K8nZNOq3oHNSxK_w@mail.gmail.com>
+
+Hi:
+
+1. Victor Bloomfield's book "Using R for Numerical Analysis in Science
+and Engineering", published by CRC Press/Chapman and Hall. Links to
+the code found at the book's web site:
+http://www.crcpress.com/product/isbn/9781439884485
+This book covers optimization and diff eqs in some detail.
+
+2. John Monahan's book "Numerical Methods of Statistics" (Cambridge).
+R code for the second edition can be found at the author's web site:
+http://www4.stat.ncsu.edu/~monahan/nmos2/toc.html
+
+3. Several good courses re statistical computing in R exist on-line.
+Monahan has one; two others that come to mind are Galin Jones' course
+at the University of Minnesota (STAT 8701) and Robert Gray's course at
+Harvard (BIO 248).
+http://biowww.dfci.harvard.edu/~gray/248-02/Welcome.html
+Gray's course used S-PLUS (it was in 2002) but most of the code should
+be translatable to R.
+
+ I am certain to have missed several good stat computing courses;
+perhaps others can chime in with suggestions. Google should be a
+friend here.
+
+4. Soetaert et al.'s book "Solving Differential Equations in R" (Springer):
+http://www.springer.com/statistics/computational+statistics/book/978-3-642-28069-6
+and a paper of the same name in the R Journal:
+http://journal.r-project.org/archive/2010-2/RJournal_2010-2_Soetaert~et~al.pdf
+The book code is accessible by clicking the box labeled
+"Extras:Springer.com" under the tabl "Additional Information".
+
+5. The Matrix package should be helpful in concert with notes/text on
+numerical linear algebra if the above sources are insufficient. See
+the vignette for its capabilities.
+
+Hopefully that should be sufficient to get you started...this is by no
+means a comprehensive list.
+
+Dennis
+
+On Sun, Oct 12, 2014 at 7:31 AM, Steven Stoline <sstoline at gmail.com> wrote:
+> Dear All:
+>
+> I am wondering if I can find R codes (functions) for numerical analysis
+> methods, linear algebra, and differential equations available somewhere.
+>
+> many thanks
+> steve
+>
+> ------------------------
+> Steven M. Stoline
+> 1123 Forest Avenue
+> Portland, ME 04112
+> sstoline at gmail.com
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From mauricio.zambrano at udec.cl  Mon Oct 13 18:13:59 2014
+From: mauricio.zambrano at udec.cl (Mauricio Zambrano-Bigiarini)
+Date: Mon, 13 Oct 2014 13:13:59 -0300
+Subject: [R-sig-teaching] R codes for numerical analysis methods
+In-Reply-To: <CAHDp66Dy9x_OGU6e2J_UDUmFJzijoHC=Rvh+cEnO6bQGi_nHcA@mail.gmail.com>
+References: <CAHDp66Dy9x_OGU6e2J_UDUmFJzijoHC=Rvh+cEnO6bQGi_nHcA@mail.gmail.com>
+Message-ID: <543BFA47.4010601@udec.cl>
+
+
+
+On 12/10/14 11:31, Steven Stoline wrote:
+> Dear All:
+>
+> I am wondering if I can find R codes (functions) for numerical analysis
+> methods, linear algebra, and differential equations available somewhere.
+>
+> many thanks
+> steve
+>
+> ------------------------
+> Steven M. Stoline
+> 1123 Forest Avenue
+> Portland, ME 04112
+> sstoline at gmail.com
+>
+> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+Hi Steve,
+
+Regarding differential equations, and in addition to all the material 
+listed by Dennis, I would start looking at the CRAN Task View: 
+Differential Equations:
+
+http://cran.r-project.org/web/views/DifferentialEquations.html
+
+IHTH,
+
+Mauricio Zambrano-Bigiarini, PhD
+
+-- 
+======================================
+Assistant Professor,
+Faculty of Environmental Sciences
+and EULA-Chile Centre. University of
+Concepcion, Concepcion, Chile
+======================================
+"Have the courage to follow your heart and
+intuition. They somehow already know what
+you truly want to become. Everything else
+is secondary" (Steve Jobs)
+======================================
+Linux user #454569 -- Linux Mint user
+
+
+
+
+From sstoline at gmail.com  Mon Oct 20 10:47:13 2014
+From: sstoline at gmail.com (Steven Stoline)
+Date: Mon, 20 Oct 2014 04:47:13 -0400
+Subject: [R-sig-teaching] plot an angle of 450 degrees and adding a circular
+	arrow to it
+Message-ID: <CAHDp66A_7S0xs3eW1behT1gZv-6OdX+JN_PD4NqK6y+j_x1NTw@mail.gmail.com>
+
+Dear All:
+
+I am wondering if someone can show me how to plot an angles around the
+center of a unit circle with x-y vertices added to it.
+
+Also how to add arrows showing the size and the direction of angle(s).
+
+Examples: 135 degrees and 450 degrees angles.
+
+with many thanks
+Steven
+
+-- 
+Steven M. Stoline
+1123 Forest Avenue
+Portland, ME 04112
+sstoline at gmail.com
+
+	[[alternative HTML version deleted]]
+
+
+From jones at reed.edu  Mon Oct 20 17:17:52 2014
+From: jones at reed.edu (Albyn Jones)
+Date: Mon, 20 Oct 2014 08:17:52 -0700
+Subject: [R-sig-teaching] plot an angle of 450 degrees and adding a
+ circular arrow to it
+In-Reply-To: <CAHDp66A_7S0xs3eW1behT1gZv-6OdX+JN_PD4NqK6y+j_x1NTw@mail.gmail.com>
+References: <CAHDp66A_7S0xs3eW1behT1gZv-6OdX+JN_PD4NqK6y+j_x1NTw@mail.gmail.com>
+Message-ID: <CA+3jU8GS0NLhCSVaPqjKi06Lnf0qgq_vJ3xypWZfZz4abxCyAQ@mail.gmail.com>
+
+Here is a quickly written and barely tested function.  You might want to
+add a final position vector,
+color, lwd, lty, etc.  It assumes the angle is given in degrees, and checks
+the sign of the angle to draw
+in the correct direction.
+
+albyn
+=====================================================================
+
+DrawAngle  <- function(theta,r=1){
+    # assumes angles given in degrees, not radians
+    theta <- 2*pi*theta/360
+    plot(0,0, xlim=c(-2,2),ylim=c(-2,2))
+    abline(h=0)
+    abline(v=0)
+    sgn <- 1
+    if(theta <0) {
+        sgn  <- -1
+        theta <- -theta
+        }
+    Theta <-  sgn*seq(0,theta,.01)
+    if(theta > 2*pi) r <- seq(1,1.1,along.with=Theta)
+    x <- r*cos(Theta)
+    y <- r*sin(Theta)
+    lines(x,y)
+    n <- length(x)
+    arrows(x[n-1],y[n-1],x[n],y[n])
+}
+
+On Mon, Oct 20, 2014 at 1:47 AM, Steven Stoline <sstoline at gmail.com> wrote:
+
+> Dear All:
+>
+> I am wondering if someone can show me how to plot an angles around the
+> center of a unit circle with x-y vertices added to it.
+>
+> Also how to add arrows showing the size and the direction of angle(s).
+>
+> Examples: 135 degrees and 450 degrees angles.
+>
+> with many thanks
+> Steven
+>
+> --
+> Steven M. Stoline
+> 1123 Forest Avenue
+> Portland, ME 04112
+> sstoline at gmail.com
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+	[[alternative HTML version deleted]]
+
+
+From sstoline at gmail.com  Mon Oct 20 19:08:42 2014
+From: sstoline at gmail.com (Steven Stoline)
+Date: Mon, 20 Oct 2014 13:08:42 -0400
+Subject: [R-sig-teaching] plot an angle of 450 degrees and adding a
+ circular arrow to it
+In-Reply-To: <CA+3jU8GS0NLhCSVaPqjKi06Lnf0qgq_vJ3xypWZfZz4abxCyAQ@mail.gmail.com>
+References: <CAHDp66A_7S0xs3eW1behT1gZv-6OdX+JN_PD4NqK6y+j_x1NTw@mail.gmail.com>
+	<CA+3jU8GS0NLhCSVaPqjKi06Lnf0qgq_vJ3xypWZfZz4abxCyAQ@mail.gmail.com>
+Message-ID: <CAHDp66BX8hZzTfTeoHP9TMvRaK5OfG8dtEyOShQVt8wT_U-QGw@mail.gmail.com>
+
+Many thanks
+
+it works
+
+Steven
+
+On Mon, Oct 20, 2014 at 11:17 AM, Albyn Jones <jones at reed.edu> wrote:
+
+> Here is a quickly written and barely tested function.  You might want to
+> add a final position vector,
+> color, lwd, lty, etc.  It assumes the angle is given in degrees, and
+> checks the sign of the angle to draw
+> in the correct direction.
+>
+> albyn
+> =====================================================================
+>
+> DrawAngle  <- function(theta,r=1){
+>     # assumes angles given in degrees, not radians
+>     theta <- 2*pi*theta/360
+>     plot(0,0, xlim=c(-2,2),ylim=c(-2,2))
+>     abline(h=0)
+>     abline(v=0)
+>     sgn <- 1
+>     if(theta <0) {
+>         sgn  <- -1
+>         theta <- -theta
+>         }
+>     Theta <-  sgn*seq(0,theta,.01)
+>     if(theta > 2*pi) r <- seq(1,1.1,along.with=Theta)
+>     x <- r*cos(Theta)
+>     y <- r*sin(Theta)
+>     lines(x,y)
+>     n <- length(x)
+>     arrows(x[n-1],y[n-1],x[n],y[n])
+> }
+>
+> On Mon, Oct 20, 2014 at 1:47 AM, Steven Stoline <sstoline at gmail.com>
+> wrote:
+>
+>> Dear All:
+>>
+>> I am wondering if someone can show me how to plot an angles around the
+>> center of a unit circle with x-y vertices added to it.
+>>
+>> Also how to add arrows showing the size and the direction of angle(s).
+>>
+>> Examples: 135 degrees and 450 degrees angles.
+>>
+>> with many thanks
+>> Steven
+>>
+>> --
+>> Steven M. Stoline
+>> 1123 Forest Avenue
+>> Portland, ME 04112
+>> sstoline at gmail.com
+>>
+>>         [[alternative HTML version deleted]]
+>>
+>> _______________________________________________
+>> R-sig-teaching at r-project.org mailing list
+>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>
+>
+
+
+-- 
+Steven M. Stoline
+1123 Forest Avenue
+Portland, ME 04112
+sstoline at gmail.com
+
+	[[alternative HTML version deleted]]
+
+
+From sstoline at gmail.com  Tue Oct 21 20:30:12 2014
+From: sstoline at gmail.com (Steven Stoline)
+Date: Tue, 21 Oct 2014 14:30:12 -0400
+Subject: [R-sig-teaching] plot an angle of 450 degrees and adding a
+ circular arrow to it
+In-Reply-To: <CAHDp66BX8hZzTfTeoHP9TMvRaK5OfG8dtEyOShQVt8wT_U-QGw@mail.gmail.com>
+References: <CAHDp66A_7S0xs3eW1behT1gZv-6OdX+JN_PD4NqK6y+j_x1NTw@mail.gmail.com>
+	<CA+3jU8GS0NLhCSVaPqjKi06Lnf0qgq_vJ3xypWZfZz4abxCyAQ@mail.gmail.com>
+	<CAHDp66BX8hZzTfTeoHP9TMvRaK5OfG8dtEyOShQVt8wT_U-QGw@mail.gmail.com>
+Message-ID: <CAHDp66ABi27o1Mz6mNXHe9+uNeSFagbrcJ_D6hpy1Rf_f-u8tQ@mail.gmail.com>
+
+Dear Jones:
+
+Could you please look to this R code. I am trying to graph both sin(x+pi/6)
+and sin(x) in the same plot to show the shift. I used abline to graph the
+sin(x), but it looked like same as the x-axis.
+
+
+x<-seq(-2.2*pi,2*pi,0.01)
+y<-sin(x+pi/6)
+
+
+#### To draw a box of the graph:
+#### ==========================
+
+plot(0:10, 0:10, type = "n", xaxt = "n", yaxs = "i", xaxs = "i", yaxt =
+"n", xlab = "", ylab = "")
+
+plot(x, y, type='l', lwd = 3,  col="red", xaxt = "n", xlab="", ylab="")
+
+
+
+#### abline(v=c(-4*pi,-(7*pi)/2,-3*pi,-(5*pi)/2,-2*pi,-(3*pi)/2,-pi,-pi/2,
+0,pi/2,pi,(3*pi)/2,2*pi,(5*pi)/2,3*pi,(7*pi)/2,4*pi),col="blue")
+
+
+abline(h=0, lwd=3)
+abline(v=0, lwd=3)
+
+
+x1<-seq(0,2*pi,0.01)
+y1<-sin(x1)
+abline(x1,y1, lwd = 3)
+
+
+thank you very much
+Steven
+
+
+On Mon, Oct 20, 2014 at 1:08 PM, Steven Stoline <sstoline at gmail.com> wrote:
+
+> Many thanks
+>
+> it works
+>
+> Steven
+>
+> On Mon, Oct 20, 2014 at 11:17 AM, Albyn Jones <jones at reed.edu> wrote:
+>
+>> Here is a quickly written and barely tested function.  You might want to
+>> add a final position vector,
+>> color, lwd, lty, etc.  It assumes the angle is given in degrees, and
+>> checks the sign of the angle to draw
+>> in the correct direction.
+>>
+>> albyn
+>> =====================================================================
+>>
+>> DrawAngle  <- function(theta,r=1){
+>>     # assumes angles given in degrees, not radians
+>>     theta <- 2*pi*theta/360
+>>     plot(0,0, xlim=c(-2,2),ylim=c(-2,2))
+>>     abline(h=0)
+>>     abline(v=0)
+>>     sgn <- 1
+>>     if(theta <0) {
+>>         sgn  <- -1
+>>         theta <- -theta
+>>         }
+>>     Theta <-  sgn*seq(0,theta,.01)
+>>     if(theta > 2*pi) r <- seq(1,1.1,along.with=Theta)
+>>     x <- r*cos(Theta)
+>>     y <- r*sin(Theta)
+>>     lines(x,y)
+>>     n <- length(x)
+>>     arrows(x[n-1],y[n-1],x[n],y[n])
+>> }
+>>
+>> On Mon, Oct 20, 2014 at 1:47 AM, Steven Stoline <sstoline at gmail.com>
+>> wrote:
+>>
+>>> Dear All:
+>>>
+>>> I am wondering if someone can show me how to plot an angles around the
+>>> center of a unit circle with x-y vertices added to it.
+>>>
+>>> Also how to add arrows showing the size and the direction of angle(s).
+>>>
+>>> Examples: 135 degrees and 450 degrees angles.
+>>>
+>>> with many thanks
+>>> Steven
+>>>
+>>> --
+>>> Steven M. Stoline
+>>> 1123 Forest Avenue
+>>> Portland, ME 04112
+>>> sstoline at gmail.com
+>>>
+>>>         [[alternative HTML version deleted]]
+>>>
+>>> _______________________________________________
+>>> R-sig-teaching at r-project.org mailing list
+>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>>
+>>
+>>
+>
+>
+> --
+> Steven M. Stoline
+> 1123 Forest Avenue
+> Portland, ME 04112
+> sstoline at gmail.com
+>
+
+
+
+-- 
+Steven M. Stoline
+1123 Forest Avenue
+Portland, ME 04112
+sstoline at gmail.com
+
+	[[alternative HTML version deleted]]
+
+
+From jones at reed.edu  Tue Oct 21 20:44:19 2014
+From: jones at reed.edu (Albyn Jones)
+Date: Tue, 21 Oct 2014 11:44:19 -0700
+Subject: [R-sig-teaching] plot an angle of 450 degrees and adding a
+ circular arrow to it
+In-Reply-To: <CAHDp66ABi27o1Mz6mNXHe9+uNeSFagbrcJ_D6hpy1Rf_f-u8tQ@mail.gmail.com>
+References: <CAHDp66A_7S0xs3eW1behT1gZv-6OdX+JN_PD4NqK6y+j_x1NTw@mail.gmail.com>
+	<CA+3jU8GS0NLhCSVaPqjKi06Lnf0qgq_vJ3xypWZfZz4abxCyAQ@mail.gmail.com>
+	<CAHDp66BX8hZzTfTeoHP9TMvRaK5OfG8dtEyOShQVt8wT_U-QGw@mail.gmail.com>
+	<CAHDp66ABi27o1Mz6mNXHe9+uNeSFagbrcJ_D6hpy1Rf_f-u8tQ@mail.gmail.com>
+Message-ID: <CA+3jU8Eub_tKVx4pS0N2jOsuT-_FLkLsvjP8+ge5wBjgdite-w@mail.gmail.com>
+
+you want the lines() function, not abline()
+
+albyn
+
+On Tue, Oct 21, 2014 at 11:30 AM, Steven Stoline <sstoline at gmail.com> wrote:
+
+> Dear Jones:
+>
+> Could you please look to this R code. I am trying to graph both
+> sin(x+pi/6) and sin(x) in the same plot to show the shift. I used abline to
+> graph the sin(x), but it looked like same as the x-axis.
+>
+>
+> x<-seq(-2.2*pi,2*pi,0.01)
+> y<-sin(x+pi/6)
+>
+>
+> #### To draw a box of the graph:
+> #### ==========================
+>
+> plot(0:10, 0:10, type = "n", xaxt = "n", yaxs = "i", xaxs = "i", yaxt =
+> "n", xlab = "", ylab = "")
+>
+> plot(x, y, type='l', lwd = 3,  col="red", xaxt = "n", xlab="", ylab="")
+>
+>
+>
+> #### abline(v=c(-4*pi,-(7*pi)/2,-3*pi,-(5*pi)/2,-2*pi,-(3*pi)/2,-pi,-pi/2,
+> 0,pi/2,pi,(3*pi)/2,2*pi,(5*pi)/2,3*pi,(7*pi)/2,4*pi),col="blue")
+>
+>
+> abline(h=0, lwd=3)
+> abline(v=0, lwd=3)
+>
+>
+> x1<-seq(0,2*pi,0.01)
+> y1<-sin(x1)
+> abline(x1,y1, lwd = 3)
+>
+>
+> thank you very much
+> Steven
+>
+>
+> On Mon, Oct 20, 2014 at 1:08 PM, Steven Stoline <sstoline at gmail.com>
+> wrote:
+>
+>> Many thanks
+>>
+>> it works
+>>
+>> Steven
+>>
+>> On Mon, Oct 20, 2014 at 11:17 AM, Albyn Jones <jones at reed.edu> wrote:
+>>
+>>> Here is a quickly written and barely tested function.  You might want to
+>>> add a final position vector,
+>>> color, lwd, lty, etc.  It assumes the angle is given in degrees, and
+>>> checks the sign of the angle to draw
+>>> in the correct direction.
+>>>
+>>> albyn
+>>> =====================================================================
+>>>
+>>> DrawAngle  <- function(theta,r=1){
+>>>     # assumes angles given in degrees, not radians
+>>>     theta <- 2*pi*theta/360
+>>>     plot(0,0, xlim=c(-2,2),ylim=c(-2,2))
+>>>     abline(h=0)
+>>>     abline(v=0)
+>>>     sgn <- 1
+>>>     if(theta <0) {
+>>>         sgn  <- -1
+>>>         theta <- -theta
+>>>         }
+>>>     Theta <-  sgn*seq(0,theta,.01)
+>>>     if(theta > 2*pi) r <- seq(1,1.1,along.with=Theta)
+>>>     x <- r*cos(Theta)
+>>>     y <- r*sin(Theta)
+>>>     lines(x,y)
+>>>     n <- length(x)
+>>>     arrows(x[n-1],y[n-1],x[n],y[n])
+>>> }
+>>>
+>>> On Mon, Oct 20, 2014 at 1:47 AM, Steven Stoline <sstoline at gmail.com>
+>>> wrote:
+>>>
+>>>> Dear All:
+>>>>
+>>>> I am wondering if someone can show me how to plot an angles around the
+>>>> center of a unit circle with x-y vertices added to it.
+>>>>
+>>>> Also how to add arrows showing the size and the direction of angle(s).
+>>>>
+>>>> Examples: 135 degrees and 450 degrees angles.
+>>>>
+>>>> with many thanks
+>>>> Steven
+>>>>
+>>>> --
+>>>> Steven M. Stoline
+>>>> 1123 Forest Avenue
+>>>> Portland, ME 04112
+>>>> sstoline at gmail.com
+>>>>
+>>>>         [[alternative HTML version deleted]]
+>>>>
+>>>> _______________________________________________
+>>>> R-sig-teaching at r-project.org mailing list
+>>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>>>
+>>>
+>>>
+>>
+>>
+>> --
+>> Steven M. Stoline
+>> 1123 Forest Avenue
+>> Portland, ME 04112
+>> sstoline at gmail.com
+>>
+>
+>
+>
+> --
+> Steven M. Stoline
+> 1123 Forest Avenue
+> Portland, ME 04112
+> sstoline at gmail.com
+>
+
+	[[alternative HTML version deleted]]
+
+
+From joel at joelschwartz.com  Tue Oct 21 20:44:58 2014
+From: joel at joelschwartz.com (Joel Schwartz)
+Date: Tue, 21 Oct 2014 18:44:58 +0000
+Subject: [R-sig-teaching] plot an angle of 450 degrees and adding a
+	circular arrow to it
+In-Reply-To: <CAHDp66ABi27o1Mz6mNXHe9+uNeSFagbrcJ_D6hpy1Rf_f-u8tQ@mail.gmail.com>
+References: <CAHDp66A_7S0xs3eW1behT1gZv-6OdX+JN_PD4NqK6y+j_x1NTw@mail.gmail.com>
+	<CA+3jU8GS0NLhCSVaPqjKi06Lnf0qgq_vJ3xypWZfZz4abxCyAQ@mail.gmail.com>
+	<CAHDp66BX8hZzTfTeoHP9TMvRaK5OfG8dtEyOShQVt8wT_U-QGw@mail.gmail.com>
+	<CAHDp66ABi27o1Mz6mNXHe9+uNeSFagbrcJ_D6hpy1Rf_f-u8tQ@mail.gmail.com>
+Message-ID: <F0CFBA30-7975-489D-8F84-9E75073C2647@joelschwartz.com>
+
+Steven,
+
+Change
+
+abline(x1,y1, lwd = 3) to lines(x1,y1, lwd = 3) and you'll get the line you're looking for. abline is just for drawing a line with a given slope and intercept. lines is more general.
+
+Also, c(-4*pi,-(7*pi)/2,-3*pi,-(5*pi)/2,-2*pi,-(3*pi)/2,-pi,-pi/2, 0,pi/2,pi,(3*pi)/2,2*pi,(5*pi)/2,3*pi,(7*pi)/2,4*pi)
+can be done with a call to seq instead. For example:
+seq(-4*pi, 4*pi, pi/2)
+
+Best Wishes,
+Joel
+
+
+On Oct 21, 2014, at 11:30 AM, Steven Stoline <sstoline at gmail.com> wrote:
+
+> Dear Jones:
+> 
+> Could you please look to this R code. I am trying to graph both sin(x+pi/6)
+> and sin(x) in the same plot to show the shift. I used abline to graph the
+> sin(x), but it looked like same as the x-axis.
+> 
+> 
+> x<-seq(-2.2*pi,2*pi,0.01)
+> y<-sin(x+pi/6)
+> 
+> 
+> #### To draw a box of the graph:
+> #### ==========================
+> 
+> plot(0:10, 0:10, type = "n", xaxt = "n", yaxs = "i", xaxs = "i", yaxt =
+> "n", xlab = "", ylab = "")
+> 
+> plot(x, y, type='l', lwd = 3,  col="red", xaxt = "n", xlab="", ylab="")
+> 
+> 
+> 
+> #### abline(v=c(-4*pi,-(7*pi)/2,-3*pi,-(5*pi)/2,-2*pi,-(3*pi)/2,-pi,-pi/2,
+> 0,pi/2,pi,(3*pi)/2,2*pi,(5*pi)/2,3*pi,(7*pi)/2,4*pi),col="blue")
+> 
+> 
+> abline(h=0, lwd=3)
+> abline(v=0, lwd=3)
+> 
+> 
+> x1<-seq(0,2*pi,0.01)
+> y1<-sin(x1)
+> abline(x1,y1, lwd = 3)
+> 
+> 
+> thank you very much
+> Steven
+> 
+> 
+> On Mon, Oct 20, 2014 at 1:08 PM, Steven Stoline <sstoline at gmail.com> wrote:
+> 
+>> Many thanks
+>> 
+>> it works
+>> 
+>> Steven
+>> 
+>> On Mon, Oct 20, 2014 at 11:17 AM, Albyn Jones <jones at reed.edu> wrote:
+>> 
+>>> Here is a quickly written and barely tested function.  You might want to
+>>> add a final position vector,
+>>> color, lwd, lty, etc.  It assumes the angle is given in degrees, and
+>>> checks the sign of the angle to draw
+>>> in the correct direction.
+>>> 
+>>> albyn
+>>> =====================================================================
+>>> 
+>>> DrawAngle  <- function(theta,r=1){
+>>>    # assumes angles given in degrees, not radians
+>>>    theta <- 2*pi*theta/360
+>>>    plot(0,0, xlim=c(-2,2),ylim=c(-2,2))
+>>>    abline(h=0)
+>>>    abline(v=0)
+>>>    sgn <- 1
+>>>    if(theta <0) {
+>>>        sgn  <- -1
+>>>        theta <- -theta
+>>>        }
+>>>    Theta <-  sgn*seq(0,theta,.01)
+>>>    if(theta > 2*pi) r <- seq(1,1.1,along.with=Theta)
+>>>    x <- r*cos(Theta)
+>>>    y <- r*sin(Theta)
+>>>    lines(x,y)
+>>>    n <- length(x)
+>>>    arrows(x[n-1],y[n-1],x[n],y[n])
+>>> }
+>>> 
+>>> On Mon, Oct 20, 2014 at 1:47 AM, Steven Stoline <sstoline at gmail.com>
+>>> wrote:
+>>> 
+>>>> Dear All:
+>>>> 
+>>>> I am wondering if someone can show me how to plot an angles around the
+>>>> center of a unit circle with x-y vertices added to it.
+>>>> 
+>>>> Also how to add arrows showing the size and the direction of angle(s).
+>>>> 
+>>>> Examples: 135 degrees and 450 degrees angles.
+>>>> 
+>>>> with many thanks
+>>>> Steven
+>>>> 
+>>>> --
+>>>> Steven M. Stoline
+>>>> 1123 Forest Avenue
+>>>> Portland, ME 04112
+>>>> sstoline at gmail.com
+>>>> 
+>>>>        [[alternative HTML version deleted]]
+>>>> 
+>>>> _______________________________________________
+>>>> R-sig-teaching at r-project.org mailing list
+>>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>>> 
+>>> 
+>>> 
+>> 
+>> 
+>> --
+>> Steven M. Stoline
+>> 1123 Forest Avenue
+>> Portland, ME 04112
+>> sstoline at gmail.com
+>> 
+> 
+> 
+> 
+> -- 
+> Steven M. Stoline
+> 1123 Forest Avenue
+> Portland, ME 04112
+> sstoline at gmail.com
+> 
+> 	[[alternative HTML version deleted]]
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From aboueiss at yahoo.com  Mon Dec 22 00:45:51 2014
+From: aboueiss at yahoo.com (Yahoo!)
+Date: Sun, 21 Dec 2014 23:45:51 +0000 (UTC)
+Subject: [R-sig-teaching] lmer
+Message-ID: <1465014430.128236.1419205551395.JavaMail.yahoo@jws10034.mail.ne1.yahoo.com>
+
+Dear All:
+I am trying to run a random effect model in R, but when I used "lmer" I got the following errors: Please see below.
+library(lme4)
+batchlevel <- c(1,1,1,2,2,2,3,3,3,4,4,4,5,5,5)
+
+batch <- as.character(batchlevel)
+yield <- c(74,76,75,68,71,72,75,77,77,72,74,73,79,81,79)
+dataaov <- data.frame(batch,yield)
+raneff <- lmer(yield~1+(1|batch),data=dataaov)
+
+Error in get(name, envir = asNamespace(pkg), inherits = FALSE) :?? object '.setDummyField' not found
+summary(raneff)
+
+?Error in summary(raneff) :?? error in evaluating the argument 'object' in selecting a method for function 'summary': Error: object 'raneff' not found
+
+Any help will be highly appreciated.
+many thanksabou
+
+========================
+AbouEl-Makarim Aboueissa
+Sozan Elsalakawy
+Mohamed Agamia
+
+246 Auburn Street, #158
+Portland, ME 04103
+USA
+
+Tel: (207) 797-2724
+Email: aboueiss at yahoo.com
+	[[alternative HTML version deleted]]
+
+
+From aboueiss at yahoo.com  Mon Dec 22 00:45:51 2014
+From: aboueiss at yahoo.com (Yahoo!)
+Date: Sun, 21 Dec 2014 23:45:51 +0000 (UTC)
+Subject: [R-sig-teaching] lmer
+Message-ID: <1465014430.128236.1419205551395.JavaMail.yahoo@jws10034.mail.ne1.yahoo.com>
+
+Dear All:
+I am trying to run a random effect model in R, but when I used "lmer" I got the following errors: Please see below.
+library(lme4)
+batchlevel <- c(1,1,1,2,2,2,3,3,3,4,4,4,5,5,5)
+
+batch <- as.character(batchlevel)
+yield <- c(74,76,75,68,71,72,75,77,77,72,74,73,79,81,79)
+dataaov <- data.frame(batch,yield)
+raneff <- lmer(yield~1+(1|batch),data=dataaov)
+
+Error in get(name, envir = asNamespace(pkg), inherits = FALSE) :?? object '.setDummyField' not found
+summary(raneff)
+
+?Error in summary(raneff) :?? error in evaluating the argument 'object' in selecting a method for function 'summary': Error: object 'raneff' not found
+
+Any help will be highly appreciated.
+many thanksabou
+
+========================
+AbouEl-Makarim Aboueissa
+Sozan Elsalakawy
+Mohamed Agamia
+
+246 Auburn Street, #158
+Portland, ME 04103
+USA
+
+Tel: (207) 797-2724
+Email: aboueiss at yahoo.com
+	[[alternative HTML version deleted]]
+
+
+From aboueiss at yahoo.com  Mon Dec 22 14:26:00 2014
+From: aboueiss at yahoo.com (Yahoo!)
+Date: Mon, 22 Dec 2014 13:26:00 +0000 (UTC)
+Subject: [R-sig-teaching] random effect model in R---- lmer
+Message-ID: <2025461787.93798.1419254760717.JavaMail.yahoo@jws100129.mail.ne1.yahoo.com>
+
+Dear All:
+
+
+?
+I am trying to run arandom effect model in R, but when I used "lmer" I got the followingerrors: Please see below.
+
+
+?
+library(lme4)
+
+
+?
+batchlevel <-c(1,1,1,2,2,2,3,3,3,4,4,4,5,5,5)
+
+
+?
+batch <-as.character(batchlevel)
+
+
+?
+yield <-c(74,76,75,68,71,72,75,77,77,72,74,73,79,81,79)
+
+
+?
+dataaov <-data.frame(batch,yield)
+
+
+?
+raneff <-lmer(yield~1+(1|batch),data=dataaov)
+
+
+?
+Error in get(name,envir = asNamespace(pkg), inherits = FALSE) :?
+
+? object'.setDummyField' not found
+
+
+?
+summary(raneff)
+
+
+?
+
+?
+?Error insummary(raneff) :?
+
+? error inevaluating the argument 'object' in selecting a method for function 'summary':Error: object 'raneff' not found
+
+
+?
+
+?
+Any help will be highlyappreciated.
+
+
+?
+many thanks
+
+abou
+
+?========================
+AbouEl-Makarim Aboueissa
+Sozan Elsalakawy
+Mohamed Agamia
+
+246 Auburn Street, #158
+Portland, ME 04103
+USA
+
+Tel: (207) 797-2724
+Email: aboueiss at yahoo.com
+	[[alternative HTML version deleted]]
+
+
+From aboueiss at yahoo.com  Mon Dec 22 14:26:00 2014
+From: aboueiss at yahoo.com (Yahoo!)
+Date: Mon, 22 Dec 2014 13:26:00 +0000 (UTC)
+Subject: [R-sig-teaching] random effect model in R---- lmer
+Message-ID: <2025461787.93798.1419254760717.JavaMail.yahoo@jws100129.mail.ne1.yahoo.com>
+
+Dear All:
+
+
+?
+I am trying to run arandom effect model in R, but when I used "lmer" I got the followingerrors: Please see below.
+
+
+?
+library(lme4)
+
+
+?
+batchlevel <-c(1,1,1,2,2,2,3,3,3,4,4,4,5,5,5)
+
+
+?
+batch <-as.character(batchlevel)
+
+
+?
+yield <-c(74,76,75,68,71,72,75,77,77,72,74,73,79,81,79)
+
+
+?
+dataaov <-data.frame(batch,yield)
+
+
+?
+raneff <-lmer(yield~1+(1|batch),data=dataaov)
+
+
+?
+Error in get(name,envir = asNamespace(pkg), inherits = FALSE) :?
+
+? object'.setDummyField' not found
+
+
+?
+summary(raneff)
+
+
+?
+
+?
+?Error insummary(raneff) :?
+
+? error inevaluating the argument 'object' in selecting a method for function 'summary':Error: object 'raneff' not found
+
+
+?
+
+?
+Any help will be highlyappreciated.
+
+
+?
+many thanks
+
+abou
+
+?========================
+AbouEl-Makarim Aboueissa
+Sozan Elsalakawy
+Mohamed Agamia
+
+246 Auburn Street, #158
+Portland, ME 04103
+USA
+
+Tel: (207) 797-2724
+Email: aboueiss at yahoo.com
+	[[alternative HTML version deleted]]
+
+
+From maechler at stat.math.ethz.ch  Mon Dec 22 14:42:52 2014
+From: maechler at stat.math.ethz.ch (Martin Maechler)
+Date: Mon, 22 Dec 2014 14:42:52 +0100
+Subject: [R-sig-teaching] random effect model in R---- lmer
+In-Reply-To: <2025461787.93798.1419254760717.JavaMail.yahoo@jws100129.mail.ne1.yahoo.com>
+References: <2025461787.93798.1419254760717.JavaMail.yahoo@jws100129.mail.ne1.yahoo.com>
+Message-ID: <21656.8156.145896.833982@stat.math.ethz.ch>
+
+Can you please send this to the R-SIG mailing list about mixed
+models??
+
+This has *NOTHING* to do with using R for and in teaching!
+
+
+>>>>> Yahoo!  <aboueiss at yahoo.com>
+>>>>>     on Mon, 22 Dec 2014 13:26:00 +0000 writes:
+
+    > Dear All: ? I am trying to run arandom effect model in R,
+    > but when I used "lmer" I got the followingerrors: Please
+    > see below.
+
+
+    > ? library(lme4)
+    ......................
+
+    > _______________________________________________
+    > R-sig-teaching at r-project.org mailing list
+    > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From sstoline at gmail.com  Mon Dec 29 00:35:57 2014
+From: sstoline at gmail.com (Steven Stoline)
+Date: Sun, 28 Dec 2014 18:35:57 -0500
+Subject: [R-sig-teaching] Problem with "attach"
+Message-ID: <CAHDp66A867ObWPZboEOJAnBStWGsj=H432NQoT27LfukXGd2fA@mail.gmail.com>
+
+Dear All:
+
+I do have problem with attach. I believe that I am doing the data.frame
+correctly. But it seems that I do have problem with the "attach" statement.
+
+here is what I am doing:
+
+
+contributions<-c(1000,1500,1200,1800,1600,1100,1000,1250,1500,1800,2000,1200,2000,1700,1800,1900,900,1000,1200,1500,1200,1550,1000,1100)
+contributions
+
+### approach<-c(rep(1,8), rep(2,8), rep(3,8))
+
+approach<-c(1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3)
+approach
+
+n<-length(contributions)
+
+donations <- data.frame(approach=approach,contributions=contributions)
+donations
+
+
+attach(donations)
+
+
+
+the code "*plot(approach~contributions)* " should yield the box-plots, but
+it does not.
+
+
+
+
+
+This what I got from R:
+================
+
+> attach(donations)
+The following objects are masked _by_ .GlobalEnv:
+
+    approach, contributions
+The following objects are masked from donations (position 3):
+
+    approach, contributions
+The following objects are masked from donations (position 5):
+
+    approach, contributions
+The following objects are masked from donations (position 6):
+
+    approach, contributions
+The following objects are masked from donations (position 8):
+
+    approach, contributions
+The following objects are masked from donations (position 10):
+
+    approach, contributions
+The following objects are masked from donations (position 12):
+
+    approach, contributions
+The following objects are masked from donations (position 13):
+
+    approach, contributions
+The following objects are masked from donations (position 14):
+
+    approach, contributions
+The following objects are masked from donations (position 15):
+
+    approach, contributions
+The following objects are masked from donations (position 16):
+
+    approach, contributions
+
+
+
+Any help will be highly appreciated.
+with many thanks
+Steve
+
+
+
+-- 
+Steven M. Stoline
+1123 Forest Avenue
+Portland, ME 04112
+sstoline at gmail.com
+
+	[[alternative HTML version deleted]]
+
+
+From rmh at temple.edu  Mon Dec 29 01:10:26 2014
+From: rmh at temple.edu (Richard M. Heiberger)
+Date: Sun, 28 Dec 2014 19:10:26 -0500
+Subject: [R-sig-teaching] Problem with "attach"
+In-Reply-To: <CAHDp66A867ObWPZboEOJAnBStWGsj=H432NQoT27LfukXGd2fA@mail.gmail.com>
+References: <CAHDp66A867ObWPZboEOJAnBStWGsj=H432NQoT27LfukXGd2fA@mail.gmail.com>
+Message-ID: <CAGx1TMA-Rhsa_AALDHzt7=tzQkCRgZH5g2AgAPVobOwVYVkLzA@mail.gmail.com>
+
+Steven,
+
+It is strongly recommended that you don't use attach.
+Use the data= argument.  This works.
+
+my.data <- data.frame(contributions=c(
+                        1000,1500,1200,1800,1600,1100,1000,1250,
+                        1500,1800,2000,1200,2000,1700,1800,1900,
+                        0900,1000,1200,1500,1200,1550,1000,1100),
+                      approach=factor(c(
+                        1,1,1,1,1,1,1,1,
+                        2,2,2,2,2,2,2,2,
+                        3,3,3,3,3,3,3,3)))
+
+bwplot(contributions ~ approach, data=my.data) ## lattice graphics
+
+plot(contributions ~ approach, data=my.data)   ## base graphics
+
+Rich
+
+On Sun, Dec 28, 2014 at 6:35 PM, Steven Stoline <sstoline at gmail.com> wrote:
+> Dear All:
+>
+> I do have problem with attach. I believe that I am doing the data.frame
+> correctly. But it seems that I do have problem with the "attach" statement.
+>
+> here is what I am doing:
+>
+>
+> contributions<-c(1000,1500,1200,1800,1600,1100,1000,1250,1500,1800,2000,1200,2000,1700,1800,1900,900,1000,1200,1500,1200,1550,1000,1100)
+> contributions
+>
+> ### approach<-c(rep(1,8), rep(2,8), rep(3,8))
+>
+> approach<-c(1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3)
+> approach
+>
+> n<-length(contributions)
+>
+> donations <- data.frame(approach=approach,contributions=contributions)
+> donations
+>
+>
+> attach(donations)
+>
+>
+>
+> the code "*plot(approach~contributions)* " should yield the box-plots, but
+> it does not.
+>
+>
+>
+>
+>
+> This what I got from R:
+> ================
+>
+>> attach(donations)
+> The following objects are masked _by_ .GlobalEnv:
+>
+>     approach, contributions
+> The following objects are masked from donations (position 3):
+>
+>     approach, contributions
+> The following objects are masked from donations (position 5):
+>
+>     approach, contributions
+> The following objects are masked from donations (position 6):
+>
+>     approach, contributions
+> The following objects are masked from donations (position 8):
+>
+>     approach, contributions
+> The following objects are masked from donations (position 10):
+>
+>     approach, contributions
+> The following objects are masked from donations (position 12):
+>
+>     approach, contributions
+> The following objects are masked from donations (position 13):
+>
+>     approach, contributions
+> The following objects are masked from donations (position 14):
+>
+>     approach, contributions
+> The following objects are masked from donations (position 15):
+>
+>     approach, contributions
+> The following objects are masked from donations (position 16):
+>
+>     approach, contributions
+>
+>
+>
+> Any help will be highly appreciated.
+> with many thanks
+> Steve
+>
+>
+>
+> --
+> Steven M. Stoline
+> 1123 Forest Avenue
+> Portland, ME 04112
+> sstoline at gmail.com
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From sstoline at gmail.com  Mon Dec 29 01:27:42 2014
+From: sstoline at gmail.com (Steven Stoline)
+Date: Sun, 28 Dec 2014 19:27:42 -0500
+Subject: [R-sig-teaching] Problem with "attach"
+In-Reply-To: <CAGx1TMA-Rhsa_AALDHzt7=tzQkCRgZH5g2AgAPVobOwVYVkLzA@mail.gmail.com>
+References: <CAHDp66A867ObWPZboEOJAnBStWGsj=H432NQoT27LfukXGd2fA@mail.gmail.com>
+	<CAGx1TMA-Rhsa_AALDHzt7=tzQkCRgZH5g2AgAPVobOwVYVkLzA@mail.gmail.com>
+Message-ID: <CAHDp66BCtPgJXZxP0c5BDBqY_BD8rYw49+yBHndNX44jaKBf2g@mail.gmail.com>
+
+Dear Rich:
+
+Thank you very much. it works
+
+Steve
+
+
+On Sun, Dec 28, 2014 at 7:10 PM, Richard M. Heiberger <rmh at temple.edu>
+wrote:
+
+> Steven,
+>
+> It is strongly recommended that you don't use attach.
+> Use the data= argument.  This works.
+>
+> my.data <- data.frame(contributions=c(
+>                         1000,1500,1200,1800,1600,1100,1000,1250,
+>                         1500,1800,2000,1200,2000,1700,1800,1900,
+>                         0900,1000,1200,1500,1200,1550,1000,1100),
+>                       approach=factor(c(
+>                         1,1,1,1,1,1,1,1,
+>                         2,2,2,2,2,2,2,2,
+>                         3,3,3,3,3,3,3,3)))
+>
+> bwplot(contributions ~ approach, data=my.data) ## lattice graphics
+>
+> plot(contributions ~ approach, data=my.data)   ## base graphics
+>
+> Rich
+>
+> On Sun, Dec 28, 2014 at 6:35 PM, Steven Stoline <sstoline at gmail.com>
+> wrote:
+> > Dear All:
+> >
+> > I do have problem with attach. I believe that I am doing the data.frame
+> > correctly. But it seems that I do have problem with the "attach"
+> statement.
+> >
+> > here is what I am doing:
+> >
+> >
+> >
+> contributions<-c(1000,1500,1200,1800,1600,1100,1000,1250,1500,1800,2000,1200,2000,1700,1800,1900,900,1000,1200,1500,1200,1550,1000,1100)
+> > contributions
+> >
+> > ### approach<-c(rep(1,8), rep(2,8), rep(3,8))
+> >
+> > approach<-c(1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3)
+> > approach
+> >
+> > n<-length(contributions)
+> >
+> > donations <- data.frame(approach=approach,contributions=contributions)
+> > donations
+> >
+> >
+> > attach(donations)
+> >
+> >
+> >
+> > the code "*plot(approach~contributions)* " should yield the box-plots,
+> but
+> > it does not.
+> >
+> >
+> >
+> >
+> >
+> > This what I got from R:
+> > ================
+> >
+> >> attach(donations)
+> > The following objects are masked _by_ .GlobalEnv:
+> >
+> >     approach, contributions
+> > The following objects are masked from donations (position 3):
+> >
+> >     approach, contributions
+> > The following objects are masked from donations (position 5):
+> >
+> >     approach, contributions
+> > The following objects are masked from donations (position 6):
+> >
+> >     approach, contributions
+> > The following objects are masked from donations (position 8):
+> >
+> >     approach, contributions
+> > The following objects are masked from donations (position 10):
+> >
+> >     approach, contributions
+> > The following objects are masked from donations (position 12):
+> >
+> >     approach, contributions
+> > The following objects are masked from donations (position 13):
+> >
+> >     approach, contributions
+> > The following objects are masked from donations (position 14):
+> >
+> >     approach, contributions
+> > The following objects are masked from donations (position 15):
+> >
+> >     approach, contributions
+> > The following objects are masked from donations (position 16):
+> >
+> >     approach, contributions
+> >
+> >
+> >
+> > Any help will be highly appreciated.
+> > with many thanks
+> > Steve
+> >
+> >
+> >
+> > --
+> > Steven M. Stoline
+> > 1123 Forest Avenue
+> > Portland, ME 04112
+> > sstoline at gmail.com
+> >
+> >         [[alternative HTML version deleted]]
+> >
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+-- 
+Steven M. Stoline
+1123 Forest Avenue
+Portland, ME 04112
+sstoline at gmail.com
+
+	[[alternative HTML version deleted]]
+
+
+From lebatsnok at gmail.com  Tue Dec 30 09:45:39 2014
+From: lebatsnok at gmail.com (Kenn Konstabel)
+Date: Tue, 30 Dec 2014 10:45:39 +0200
+Subject: [R-sig-teaching] Problem with "attach"
+In-Reply-To: <CAHDp66BCtPgJXZxP0c5BDBqY_BD8rYw49+yBHndNX44jaKBf2g@mail.gmail.com>
+References: <CAHDp66A867ObWPZboEOJAnBStWGsj=H432NQoT27LfukXGd2fA@mail.gmail.com>
+	<CAGx1TMA-Rhsa_AALDHzt7=tzQkCRgZH5g2AgAPVobOwVYVkLzA@mail.gmail.com>
+	<CAHDp66BCtPgJXZxP0c5BDBqY_BD8rYw49+yBHndNX44jaKBf2g@mail.gmail.com>
+Message-ID: <CAH7sKSNEfn54rxRidQh2-nGzDmkos6fVPUemzTaAcCi8rXEZkg@mail.gmail.com>
+
+It may also useful to get some understanding about how attach actually
+works -- then you can use in the (possibly rare) cases when it is
+convenient and useful, without being worried that it is "strongly not
+recommended".
+
+Look at what R told you -- quoted below in full but the first line
+was: "The following objects are masked _by_ .GlobalEnv:     approach,
+contributions"
+
+The important point to notice here is that  `attach`  attach'es an
+environment to the search path (try: search() ), which contains the
+various packages that you have loaded, the base package, etc, and the
+global environment is always on top. In other words, if you have
+variable x in the global environment and you attach a data frame
+containing a variable named x, then, by typing x, you will get the
+value from the global environment.
+
+Try this:
+
+x <- "bla bla"
+df <- data.frame(x=1:5, y=2:6)
+print(df)
+#     x y
+# 1 1 2
+# 2 2 3
+# 3 3 4
+# 4 4 5
+# 5 5 6
+attach(df)
+# The following object is masked _by_ .GlobalEnv:
+#
+#   x
+x
+# [1] "bla bla"
+
+But after that you had a lot of other messages:     "The following
+objects are masked from donations (position 5):     approach,
+contributions"
+
+This probably means that you had attached a number of different copies
+of the same data frame. This is almost never a good idea -- use detach
+before attach'ing a data frame again (presumably after you've made
+changes in it) and use search() to check what you have attached.
+
+When you have a number of possibly different data frames attached, the
+result becomes difficult to predict and depends on the order in which
+the different copies were attached. Try this:
+
+
+### copy-paste from here
+df1 <- data.frame(x=2:6, y=3:7, z=4:8)
+attach(df1)
+df2 <- data.frame(x=1:5, y=2:6)
+attach(df2)
+x
+y
+z
+#### end
+
+##### output
+>df1 <- data.frame(x=2:6, y=3:7, z=4:8)
+> attach(df1)
+The following object is masked _by_ .GlobalEnv:
+
+    x
+> df2 <- data.frame(x=1:5, y=2:6)
+> attach(df2)
+The following object is masked _by_ .GlobalEnv:
+
+    x
+The following objects are masked from df1:
+
+    x, y
+> x
+[1] "bla bla"
+> y
+[1] 2 3 4 5 6
+> z
+[1] 4 5 6 7 8
+##### end of output
+
+So in this example, x is taken from global environment, y from df2 and
+z from df1 (because there is no z in df2 or global environment). The
+environments in the search path are looked at in the order they're
+shown in `search()`, for example:
+
+> search()
+ [1] ".GlobalEnv"        "df2"               "df1"
+ [4] "package:stats"     "package:graphics"  "package:grDevices"
+ [7] "package:utils"     "package:datasets"  "package:methods"
+[10] "Autoloads"         "package:base"
+
+So you can overwrite any (almost any) function in base packages but
+this only has an effect until you have these variables in the global
+environment:
+
+### commented output
+> c(1,9, 3)   # make a vector with c()
+[1] 1 9 3
+> c <- "blah"  # assign  a stupid value to "c"
+> c(1,9, 3)   # but it still works - the first function named "c" in the search path is still base::c
+[1] 1 9 3
+> c <- function(...) "blah"   # now we overwrite the previous stupid value with a new function which always returns "blah"
+> c(1,9, 3)     # and it works
+[1] "blah"
+> base::c(1,9,3)  # but we can still use the function in base package using :: operator
+[1] 1 9 3
+> rm(c)    # now we delete "c" from global env to restore the normal state of affairs
+> c(1,9, 3)
+[1] 1 9 3
+####
+
+If you understand all of the above (or most of it) then you can use
+attach more or less safely. Of course, people who do not recommend
+using attach are, in most cases, right -- too many things can go wrong
+too easily -- but if you can avoid all the traps, attach can be a
+useful tool. But I think it is definitely not useful for beginners --
+and when you understand the basics of environments and search paths
+and stuff, then you're not a complete beginner any more. These things
+are, however, useful to understand even if you're not going to use
+attach.
+
+Best regards,
+
+Kenn
+
+
+
+
+*****
+> attach(donations)
+The following objects are masked _by_ .GlobalEnv:
+
+    approach, contributions
+The following objects are masked from donations (position 3):
+
+    approach, contributions
+The following objects are masked from donations (position 5):
+
+    approach, contributions
+The following objects are masked from donations (position 6):
+
+    approach, contributions
+The following objects are masked from donations (position 8):
+
+    approach, contributions
+The following objects are masked from donations (position 10):
+
+    approach, contributions
+The following objects are masked from donations (position 12):
+
+    approach, contributions
+The following objects are masked from donations (position 13):
+
+    approach, contributions
+The following objects are masked from donations (position 14):
+
+    approach, contributions
+The following objects are masked from donations (position 15):
+
+    approach, contributions
+The following objects are masked from donations (position 16):
+
+    approach, contributions
+
+On Mon, Dec 29, 2014 at 2:27 AM, Steven Stoline <sstoline at gmail.com> wrote:
+> Dear Rich:
+>
+> Thank you very much. it works
+>
+> Steve
+>
+>
+> On Sun, Dec 28, 2014 at 7:10 PM, Richard M. Heiberger <rmh at temple.edu>
+> wrote:
+>
+>> Steven,
+>>
+>> It is strongly recommended that you don't use attach.
+>> Use the data= argument.  This works.
+>>
+>> my.data <- data.frame(contributions=c(
+>>                         1000,1500,1200,1800,1600,1100,1000,1250,
+>>                         1500,1800,2000,1200,2000,1700,1800,1900,
+>>                         0900,1000,1200,1500,1200,1550,1000,1100),
+>>                       approach=factor(c(
+>>                         1,1,1,1,1,1,1,1,
+>>                         2,2,2,2,2,2,2,2,
+>>                         3,3,3,3,3,3,3,3)))
+>>
+>> bwplot(contributions ~ approach, data=my.data) ## lattice graphics
+>>
+>> plot(contributions ~ approach, data=my.data)   ## base graphics
+>>
+>> Rich
+>>
+>> On Sun, Dec 28, 2014 at 6:35 PM, Steven Stoline <sstoline at gmail.com>
+>> wrote:
+>> > Dear All:
+>> >
+>> > I do have problem with attach. I believe that I am doing the data.frame
+>> > correctly. But it seems that I do have problem with the "attach"
+>> statement.
+>> >
+>> > here is what I am doing:
+>> >
+>> >
+>> >
+>> contributions<-c(1000,1500,1200,1800,1600,1100,1000,1250,1500,1800,2000,1200,2000,1700,1800,1900,900,1000,1200,1500,1200,1550,1000,1100)
+>> > contributions
+>> >
+>> > ### approach<-c(rep(1,8), rep(2,8), rep(3,8))
+>> >
+>> > approach<-c(1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3)
+>> > approach
+>> >
+>> > n<-length(contributions)
+>> >
+>> > donations <- data.frame(approach=approach,contributions=contributions)
+>> > donations
+>> >
+>> >
+>> > attach(donations)
+>> >
+>> >
+>> >
+>> > the code "*plot(approach~contributions)* " should yield the box-plots,
+>> but
+>> > it does not.
+>> >
+>> >
+>> >
+>> >
+>> >
+>> > This what I got from R:
+>> > ================
+>> >
+>> >> attach(donations)
+>> > The following objects are masked _by_ .GlobalEnv:
+>> >
+>> >     approach, contributions
+>> > The following objects are masked from donations (position 3):
+>> >
+>> >     approach, contributions
+>> > The following objects are masked from donations (position 5):
+>> >
+>> >     approach, contributions
+>> > The following objects are masked from donations (position 6):
+>> >
+>> >     approach, contributions
+>> > The following objects are masked from donations (position 8):
+>> >
+>> >     approach, contributions
+>> > The following objects are masked from donations (position 10):
+>> >
+>> >     approach, contributions
+>> > The following objects are masked from donations (position 12):
+>> >
+>> >     approach, contributions
+>> > The following objects are masked from donations (position 13):
+>> >
+>> >     approach, contributions
+>> > The following objects are masked from donations (position 14):
+>> >
+>> >     approach, contributions
+>> > The following objects are masked from donations (position 15):
+>> >
+>> >     approach, contributions
+>> > The following objects are masked from donations (position 16):
+>> >
+>> >     approach, contributions
+>> >
+>> >
+>> >
+>> > Any help will be highly appreciated.
+>> > with many thanks
+>> > Steve
+>> >
+>> >
+>> >
+>> > --
+>> > Steven M. Stoline
+>> > 1123 Forest Avenue
+>> > Portland, ME 04112
+>> > sstoline at gmail.com
+>> >
+>> >         [[alternative HTML version deleted]]
+>> >
+>> > _______________________________________________
+>> > R-sig-teaching at r-project.org mailing list
+>> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>>
+>
+>
+>
+> --
+> Steven M. Stoline
+> 1123 Forest Avenue
+> Portland, ME 04112
+> sstoline at gmail.com
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From Stan.Warford at pepperdine.edu  Tue Dec 30 23:49:04 2014
+From: Stan.Warford at pepperdine.edu (Warford, Stan)
+Date: Tue, 30 Dec 2014 14:49:04 -0800
+Subject: [R-sig-teaching] Legend for curve fit plot
+Message-ID: <03EC1874-08A1-4208-A75C-BB0C130640E9@pepperdine.edu>
+
+Hello all,
+
+I provide a function for my students to do two curve fits with a single set of data:
+
+# Performs two curve fits, quadratic and n lg n, with a plot of the data and the two curves
+# First parameter: A data frame
+# Second parameter: Name of the independent (x) variable
+# Third parameter: Name of the dependent (y) variable
+# Fourth parameter: The label for the x-axis
+# Fifth parameter: The label for the y-axis
+dp4dsFit <- function(dataFrame, indepVarName, depVarName, xLabel, yLabel) {
+  library(ggplot2)
+  library(labeling)
+  dp4dsQuadraticFit <- lm(dataFrame[,depVarName] ~ poly(dataFrame[,indepVarName],2))
+  write("=============\r",file="")
+  write("Quadratic fit\r",file="")
+  write("=============\r",file="")
+  print(summary(dp4dsQuadraticFit))
+  dp4dsNlogNFit <- lm(dataFrame[,depVarName] ~ dataFrame[,indepVarName]:log(dataFrame[,indepVarName]) + dataFrame[,indepVarName])
+  write("==========\r",file="")
+  write("n lg n fit\r",file="")
+  write("==========\r",file="")
+  print(summary(dp4dsNlogNFit))
+  ggplot() +
+    geom_point(data = dataFrame, aes_string(x = indepVarName, y = depVarName), size = 3) +
+    geom_smooth(data = dataFrame, aes_string(x = indepVarName, y = depVarName),
+                method = "lm", se = FALSE, colour = "RED", formula = y ~ poly(x,2)) +
+    geom_smooth(data = dataFrame, aes_string(x = indepVarName, y = depVarName),
+                method = "lm", se = FALSE, colour = "BLUE", formula = y ~ x:log(x) + x) +
+    xlab(label = xLabel) +
+    ylab(label = yLabel)
+}
+
+
+I use ggplot to produce the plot, but I cannot figure out how to produce the legend. Every example I have seen assumes a separate entry in the legend for each set of data. The problem is I have a single set of data with two different curve fits. How do I make a legend with red for the quadratic curve fit and blue for the n lg n curve fit?
+
+Another minor question. Are the above write statements the best way to echo a message to the console?
+
+Thanks,
+Stan
+
+J. Stanley Warford
+Professor of Computer Science
+Pepperdine University
+Malibu, CA 90263
+Stan.Warford at pepperdine.edu<mailto:Stan.Warford at pepperdine.edu>
+310-506-4332
+
+
+	[[alternative HTML version deleted]]
+
+
+From istazahn at gmail.com  Wed Dec 31 02:58:26 2014
+From: istazahn at gmail.com (Ista Zahn)
+Date: Tue, 30 Dec 2014 20:58:26 -0500
+Subject: [R-sig-teaching] Legend for curve fit plot
+In-Reply-To: <03EC1874-08A1-4208-A75C-BB0C130640E9@pepperdine.edu>
+References: <03EC1874-08A1-4208-A75C-BB0C130640E9@pepperdine.edu>
+Message-ID: <CA+vqiLGCr94PSY6kMoKuF5txyzJXbD9ej0xY1XJVmsKe=bEXcA@mail.gmail.com>
+
+Hi Stan,
+
+Here is one way to get the legend (I've also cleaned up the write statements):
+
+dp4dsFit <- function(dataFrame,
+                     indepVarName,
+                     depVarName,
+                     xLabel = indepVarName,
+                     yLabel = depVarName) {
+  library(ggplot2)
+  library(labeling)
+  dp4dsQuadraticFit <- lm(dataFrame[,depVarName] ~
+poly(dataFrame[,indepVarName],2))
+  cat(
+"=============\r
+Quadratic fit\r
+=============\r")
+  print(summary(dp4dsQuadraticFit))
+  dp4dsNlogNFit <- lm(dataFrame[,depVarName] ~
+dataFrame[,indepVarName]:log(dataFrame[,indepVarName]) +
+dataFrame[,indepVarName])
+  cat(
+"==========\r
+n lg n fit\r
+==========\r")
+  print(summary(dp4dsNlogNFit))
+  dataFrame <- rbind(data.frame(dataFrame,
+                                predicted = predict(dp4dsQuadraticFit),
+                                model = "Quadratic"),
+                     data.frame(dataFrame,
+                                predicted = predict(dp4dsNlogNFit),
+                                model = "n lg n"))
+  ggplot() +
+    geom_point(data = subset(dataFrame, model = "Quadratic"),
+               aes_string(x = indepVarName, y = depVarName),
+               size = 3) +
+    geom_line(data = dataFrame,
+                aes_string(x = indepVarName, y = "predicted", color =
+"model")) +
+    xlab(label = xLabel) +
+    ylab(label = yLabel)
+}
+
+
+But this is not the R way(tm). The R way is to give your user control
+over the output by returning values from your functions, and writing
+print or summary methods. Here is how I would go about it:
+
+dp4dsFit <- function(dataFrame,
+                     indepVarName,
+                     depVarName) {
+  dp4dsQuadraticFit <- lm(dataFrame[,depVarName] ~
+poly(dataFrame[,indepVarName],2))
+  dp4dsNlogNFit <- lm(dataFrame[,depVarName] ~
+dataFrame[,indepVarName]:log(dataFrame[,indepVarName]) +
+dataFrame[,indepVarName])
+  dataFrame <- rbind(data.frame(dataFrame,
+                                predicted = predict(dp4dsQuadraticFit),
+                                model = "Quadratic"),
+                     data.frame(dataFrame,
+                                predicted = predict(dp4dsNlogNFit),
+                                model = "n lg n"))
+  R <- list(dp4dsQuadraticFit = dp4dsQuadraticFit,
+            dp4dsNlogNFit = dp4dsNlogNFit,
+            dataFrame = dataFrame,
+            indepVarName = indepVarName,
+            depVarName = depVarName)
+  class(R) <- c("dp4dsFit", class(R))
+  return(R)
+}
+
+print.dp4dsFit <- function(x) {
+  cat(
+"=============\r
+Quadratic fit\r
+=============\r")
+  print(x$dp4dsQuadraticFit)
+  cat(
+"==========\r
+n lg n fit\r
+==========\r")
+  print(x$dp4dsNlogNFit)
+}
+
+summary.dp4dsFit <- function(x, plot = FALSE) {
+  R <- sapply(x[1:2],
+              summary,
+              simplify=FALSE)
+  if(plot) print(plot(x))
+  class(R) <- c("dp4dsFit", class(R))
+  return(R)
+}
+
+plot.dp4dsFit <- function(x, xLabel = x$indepVarName, yLabel = x$depVarName) {
+  library(ggplot2)
+  ggplot() +
+    geom_point(data = subset(x$dataFrame, model == "Quadratic"),
+               aes_string(x = x$indepVarName, y = x$depVarName),
+               size = 3) +
+    geom_line(data = x$dataFrame,
+              aes_string(x = x$indepVarName, y = "predicted", color =
+"model")) +
+    xlab(label = xLabel) +
+    ylab(label = yLabel)
+}
+
+## now you can do it all in one:
+models <- dp4dsFit(mtcars, "mpg", "hp")
+summary(models, plot=TRUE)
+## or just plot it
+plot(models)
+## or just look at the model summaries
+summary(models)
+## or do something else entirely:
+par( mfcol = c(2, 1))
+plot(models[[1]], which = 1)
+plot(models[[2]], which = 1)
+
+Best,
+Ista
+
+On Tue, Dec 30, 2014 at 5:49 PM, Warford, Stan
+<Stan.Warford at pepperdine.edu> wrote:
+> Hello all,
+>
+> I provide a function for my students to do two curve fits with a single set of data:
+>
+> # Performs two curve fits, quadratic and n lg n, with a plot of the data and the two curves
+> # First parameter: A data frame
+> # Second parameter: Name of the independent (x) variable
+> # Third parameter: Name of the dependent (y) variable
+> # Fourth parameter: The label for the x-axis
+> # Fifth parameter: The label for the y-axis
+> dp4dsFit <- function(dataFrame, indepVarName, depVarName, xLabel, yLabel) {
+>   library(ggplot2)
+>   library(labeling)
+>   dp4dsQuadraticFit <- lm(dataFrame[,depVarName] ~ poly(dataFrame[,indepVarName],2))
+>   write("=============\r",file="")
+>   write("Quadratic fit\r",file="")
+>   write("=============\r",file="")
+>   print(summary(dp4dsQuadraticFit))
+>   dp4dsNlogNFit <- lm(dataFrame[,depVarName] ~ dataFrame[,indepVarName]:log(dataFrame[,indepVarName]) + dataFrame[,indepVarName])
+>   write("==========\r",file="")
+>   write("n lg n fit\r",file="")
+>   write("==========\r",file="")
+>   print(summary(dp4dsNlogNFit))
+>   ggplot() +
+>     geom_point(data = dataFrame, aes_string(x = indepVarName, y = depVarName), size = 3) +
+>     geom_smooth(data = dataFrame, aes_string(x = indepVarName, y = depVarName),
+>                 method = "lm", se = FALSE, colour = "RED", formula = y ~ poly(x,2)) +
+>     geom_smooth(data = dataFrame, aes_string(x = indepVarName, y = depVarName),
+>                 method = "lm", se = FALSE, colour = "BLUE", formula = y ~ x:log(x) + x) +
+>     xlab(label = xLabel) +
+>     ylab(label = yLabel)
+> }
+>
+>
+> I use ggplot to produce the plot, but I cannot figure out how to produce the legend. Every example I have seen assumes a separate entry in the legend for each set of data. The problem is I have a single set of data with two different curve fits. How do I make a legend with red for the quadratic curve fit and blue for the n lg n curve fit?
+>
+> Another minor question. Are the above write statements the best way to echo a message to the console?
+>
+> Thanks,
+> Stan
+>
+> J. Stanley Warford
+> Professor of Computer Science
+> Pepperdine University
+> Malibu, CA 90263
+> Stan.Warford at pepperdine.edu<mailto:Stan.Warford at pepperdine.edu>
+> 310-506-4332
+>
+>
+>         [[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+From Stan.Warford at pepperdine.edu  Wed Dec 31 06:49:41 2014
+From: Stan.Warford at pepperdine.edu (Warford, Stan)
+Date: Tue, 30 Dec 2014 21:49:41 -0800
+Subject: [R-sig-teaching] Legend for curve fit plot
+In-Reply-To: <CA+vqiLGCr94PSY6kMoKuF5txyzJXbD9ej0xY1XJVmsKe=bEXcA@mail.gmail.com>
+References: <03EC1874-08A1-4208-A75C-BB0C130640E9@pepperdine.edu>
+	<CA+vqiLGCr94PSY6kMoKuF5txyzJXbD9ej0xY1XJVmsKe=bEXcA@mail.gmail.com>
+Message-ID: <FCC5C26F-0193-4E77-889C-6DD041771CED@pepperdine.edu>
+
+Thanks for the prompt responses. What a great list!
+
+I am going with Ista?s solution. I appreciate the R way, but the whole point of this script is to shield students from having to know R as much as possible. I don?t want to give them any choices. In fact, last year I had them use Deducer thinking that point and click would be easy and they could experiment to their hearts content, but that was a complete disaster. This year using these pre-written scripts with RStudio was much better. Even I have only learned enough R to show students how to do a curve fit. I am a complete novice.
+
+Dennis questioned the model.
+
+Q: Do you want x:log(x) or x * log(x) in the second geom_smooth() formula?
+
+I hope I am doing this correctly. Computer science theory predicts n lg n behavior for some data sets and quadratic for others. I hope I am fitting to 
+
+A * n * log(n) + B * n + C
+
+where * in the above expression represents multiplication. I was under the impression that : in the model formula was multiplication. Can someone verify that.
+
+Thanks,
+Stan
+
+J. Stanley Warford
+Professor of Computer Science
+Pepperdine University
+Malibu, CA 90263
+Stan.Warford at pepperdine.edu
+310-506-4332
+
+
+From rpruim at calvin.edu  Wed Dec 31 18:16:01 2014
+From: rpruim at calvin.edu (Randall Pruim)
+Date: Wed, 31 Dec 2014 17:16:01 +0000
+Subject: [R-sig-teaching] Legend for curve fit plot
+In-Reply-To: <FCC5C26F-0193-4E77-889C-6DD041771CED@pepperdine.edu>
+References: <03EC1874-08A1-4208-A75C-BB0C130640E9@pepperdine.edu>
+	<CA+vqiLGCr94PSY6kMoKuF5txyzJXbD9ej0xY1XJVmsKe=bEXcA@mail.gmail.com>
+	<FCC5C26F-0193-4E77-889C-6DD041771CED@pepperdine.edu>
+Message-ID: <6E6ED682-B998-4E3B-A973-259089A4C5EF@calvin.edu>
+
+A few more things for you to consider:
+
+1) ?formula will tell you all about the formula syntax in R.  a * b expands to a +  b + a:b, and a:b is an ?interaction term? which is basically multiplication.  You can also use the I() function to inhibit the formula from treating things like + and * in formula-special ways.
+
+2) I think you should modify your approach to R slightly.  You are correct that beginners are not well served by having too much thrown at them.  But I think they are also poorly served by being fed lots of specialized functions that do 1 highly specific task in an idiosyncratic way.  So...
+
+2a) If you are providing them scripts, make sure that they ?play well together? and represent a coherent system.  Doing things ?the R way? is part of this, but there are actually multiple R ways (and also many things that are definitely not an R way). So...
+
+2b) Begin by determining which standard tools and packages you want to use and make the rest of what you give them fit into that system.  This reduces the cognitive load for your students and allows them to do more with less.
+
+2c) In fact, I recommend that you make a list of all the code you used in your most recent course. Then arrange the code into things that you find essential and nonessential.  Also mark the things your students found easy and hard.  Now try to get rid of as much as you can without losing things students can do.  This may require replacing some old favorites with some new favorites.  You will know you are succeeding if when you introduce something new, your students can pretty much guess how it works before you show them.
+
+3) The mosaic package (I am the maintainer) provides one particular way of doing this.  It begins by assuming you will want to show students the modeling language (to use things like lm()), so it emphasizes using formulas.  For this reason, the primary graphics system chosen is lattice rather than ggplot2.  (There are a few things that support ggplot2 users as well, and you might take a look at mplot(), in particular.)  We have also added functions that provide formula interfaces to many numerical summaries, including our favorite:
+
+> favstats( disp ~ cyl, data=mtcars )
+  .group   min     Q1 median     Q3   max     mean       sd  n missing
+1      4  71.1  78.85  108.0 120.65 146.7 105.1364 26.87159 11       0
+2      6 145.0 160.00  167.6 196.30 258.0 183.3143 41.56246  7       0
+3      8 275.8 301.75  350.5 390.00 472.0 353.1000 67.77132 14       0
+
+In the end, most of what beginners need to do can be done with a single template:
+
+goal( formula, data = mydata )
+
+where formula is one of
+
+y ~ x
+y ~ x | z
+          ~ x
+  ~ x | z
+
+For data manipulation (if that is important to you), we are moving to using the dplyr and tidyr packages.
+
+4) The internals of your functions are less important (for student use) than the API, so choose your API and variable names very carefully.  For example, nearly all R functions that receive data call the variable ?data?, not ?dataFrame?.  Why have your function be different from all the rest? That makes students need to remember when to use ?data? and when to use ?dataFrame?.  Compare your functions to the functions in your list in 2c.
+
+5) The mosaic package also provides functions called makeFun() and plotFun() that make it easy to extract from a model a functional representation of the fit and to plot that function on top of a scatter plot.  Try example(makeFun).
+
+6) I?m including below another version of your function that provides a formula interface:
+
+models <- dp4dsFit(mpg ~ hp, data = mtcars)
+
+It also rearranges the data a bit to be less wasteful of space (at the cost of some slightly trickier ggplot2 code).  These plots could be done in lattice as well, if you decided to go that route.  I?ve not done any serious debugging or tried to make other improvements, I just wanted to demonstrate how to write something with a formula interface, in case you decide to go more in that direction.
+
+Enjoy!
+
+?rjp
+
+dp4dsFit <- function(formula, data = parent.frame())
+{
+  # code below presumes formula has y ~ x shape.  Fancier code
+  # could check this and throw an error when badly shaped formulas
+  # are attempted.
+  # The code could be made more beautiful using mosaic::lhs() and
+  # mosaic::rhs() to extract left and right sides of formula.
+  yName = paste(deparse(formula[[3]]), collapse="")
+  xName = paste(deparse(formula[[2]]), collapse="")
+  quadraticFormula <-
+    substitute(y ~ poly(x, 2),
+               list(y = formula[[2]], x = formula[[3]]))
+  nlognFormula <-
+    substitute(y ~ x + x : log(x),
+               list(y = formula[[2]], x = formula[[3]]))
+
+  dp4dsQuadraticFit <- eval(
+    substitute( lm(f, data=data), list(f=quadraticFormula))
+    )
+  dp4dsNlogNFit <- eval(
+    substitute(lm(f, data=data), list(f=nlognFormula))
+  )
+
+  # could also use dplyr::mutate() to add in extra variables
+  data <- transform(
+    data,
+    predicted_quad = predict(dp4dsQuadraticFit),
+    predicted_nlogn = predict(dp4dsNlogNFit)
+  )
+  R <- list(dp4dsQuadraticFit = dp4dsQuadraticFit,
+            dp4dsNlogNFit = dp4dsNlogNFit,
+            data = data,
+            yName = yName,
+            xName = xName)
+  class(R) <- c("dp4dsFit", class(R))
+  return(R)
+}
+
+print.dp4dsFit <- function(x) {
+  cat(
+"=============\r
+Quadratic fit\r
+=============\r")
+  print(x$dp4dsQuadraticFit)
+  cat(
+"==========\r
+n lg n fit\r
+==========\r")
+  print(x$dp4dsNlogNFit)
+}
+
+summary.dp4dsFit <- function(object, plot = FALSE, ...) {
+  R <- sapply(object[1:2],
+              summary,
+              simplify=FALSE)
+  if(plot) print(plot(object))
+  class(R) <- c("dp4dsFit", class(R))
+  return(R)
+}
+
+aes_c <- function( ... ) {
+  res <- c( ... )
+  class(res) <- "uneval"
+  res
+}
+
+plot.dp4dsFit <- function(x, y, xLabel = x$yName, yLabel = x$xName, ...) {
+  library(ggplot2)
+  ggplot() +
+    geom_point(data = x$data,
+               aes_string(x = x$yName, y = x$xName),
+               size = 3) +
+    geom_line(data = x$data,
+              aes_c(
+                aes_string(x = x$yName),
+                aes(y = predicted_quad, colour = "quadratic"))) +
+    geom_line(data = x$data,
+              aes_c(
+                aes_string(x = x$yName),
+                aes(y = predicted_nlogn, colour = "n log n"))) +
+    xlab(label = xLabel) +
+    ylab(label = yLabel) +
+    guides(colour = guide_legend(title="model"))
+}
+
+## now you can do it all in one:
+models <- dp4dsFit(mpg ~ hp, data = mtcars)
+summary(models, plot=TRUE)
+## or just plot it
+plot(models)
+## or just look at the model summaries
+summary(models)
+## or do something else entirely:
+plot(models[[1]], which = 1)
+mosaic::mplot(models[[2]], which = 1, system="gg")
+
+
+On Dec 31, 2014, at 12:49 AM, Warford, Stan <Stan.Warford at pepperdine.edu<mailto:Stan.Warford at pepperdine.edu>> wrote:
+
+Thanks for the prompt responses. What a great list!
+
+I am going with Ista?s solution. I appreciate the R way, but the whole point of this script is to shield students from having to know R as much as possible. I don?t want to give them any choices. In fact, last year I had them use Deducer thinking that point and click would be easy and they could experiment to their hearts content, but that was a complete disaster. This year using these pre-written scripts with RStudio was much better. Even I have only learned enough R to show students how to do a curve fit. I am a complete novice.
+
+Dennis questioned the model.
+
+Q: Do you want x:log(x) or x * log(x) in the second geom_smooth() formula?
+
+I hope I am doing this correctly. Computer science theory predicts n lg n behavior for some data sets and quadratic for others. I hope I am fitting to
+
+A * n * log(n) + B * n + C
+
+where * in the above expression represents multiplication. I was under the impression that : in the model formula was multiplication. Can someone verify that.
+
+Thanks,
+Stan
+
+J. Stanley Warford
+Professor of Computer Science
+Pepperdine University
+Malibu, CA 90263
+Stan.Warford at pepperdine.edu<mailto:Stan.Warford at pepperdine.edu>
+310-506-4332
+
+_______________________________________________
+R-sig-teaching at r-project.org mailing list
+https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+
+
+	[[alternative HTML version deleted]]
+
+

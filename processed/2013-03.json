@@ -1,0 +1,65 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2013-03",
+  "messages": [
+    {
+      "id": "msg-f3539ceb4354",
+      "message_id": "<9D1E512A-C1B7-4C61-8ADE-A40FC09DF693@smith.edu>",
+      "from_name": "Nicholas Horton",
+      "from_email_hash": "cf176a29de4abfc7da13c6fc418c20e19771b5741537f75c9aee351ac098ab29",
+      "date": "2013-03-10T08:53:39-04:00",
+      "subject": "[R-sig-teaching] Updates on \"How to Do it in R\" for the \"Statistical Sleuth\" and \"Introduction to the Practice of Statistics\"",
+      "subject_clean": "Updates on \"How to Do it in R\" for the \"Statistical Sleuth\" and \"Introduction to the Practice of Statistics\"",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "A group of students and faculty at Smith College have created a series of files to help describe how to undertake analyses using R that are introduced as examples in two excellent textbooks: the Second and Third editions of the Statistical Sleuth: A Course in Methods of Data Analysis (2002, Fred Ramsey and Dan Schafer) and the Sixth edition of Introduction to the Practice of Statistics (2009, David S. Moore, George P. McCabe and Bruce A. Craig).  If you are using either of these books, or would like to see straightforward ways to undertake analyses in R for ue in intro and intermediate statistics courses, these may be of interest.\n\nThe files can be found at http://www.math.smith.edu/~nhorton/sleuth and http://www.math.smith.edu/~nhorton/ips6e, respectively. We have include both formatted pdf files as well as the original knitr files which were used to generate the output. Knitr is an elegant, flexible and fast means to undertake reproducible analysis and dynamic report generation within R and RStudio.  \n\nThis work leverages efforts undertaken by Project MOSAIC, an NSF-funded initiative to improve the teaching of statistics, calculus, science and computing in the undergraduate curriculum. In particular, we utilize the mosaic package, which was written to simplify the use of R for introductory statistics courses. More information can be found at http://www.mosaic-web.org.\n\nWe've generated these illustrated analyses for Sleuth chapters 1-13, and IPS chapters 1-6 plus 11, with more chapters to come. Comments, suggestions and corrections welcomed.\n\nBest wishes for the balance of the semester,\n\nNick\n\nNicholas Horton \nDepartment of Mathematics and Statistics, Smith College\nClark Science Center, Northampton, MA 01063-0001\nhttp://www.math.smith.edu/~nhorton",
+      "body_snippet": "A group of students and faculty at Smith College have created a series of files to help describe how to undertake analyses using R that are introduced as examples in two excellent textbooks: the Secon",
+      "thread_id": "thread-f3539ceb4354",
+      "thread_depth": 0,
+      "month": "2013-03"
+    },
+    {
+      "id": "msg-b9577afa0694",
+      "message_id": "<513E09AA.6090306@csun.edu>",
+      "from_name": "Wayne Smith",
+      "from_email_hash": "abb1d287609a9e2b13b674a9b9d3f2fbfc47c1f3fe788b1552b4cd800ab687e3",
+      "date": "2013-03-11T09:43:22-07:00",
+      "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 61, Issue 1",
+      "subject_clean": "R-sig-teaching Digest, Vol 61, Issue 1",
+      "in_reply_to": "<mailman.9.1362999603.23330.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.9.1362999603.23330.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": "On 3/11/2013 4:00 AM, r-sig-teaching-request at r-project.org wrote:\n> From: Nicholas Horton <nhorton at smith.edu>\n> To: \"r-sig-teaching at r-project.org\" <r-sig-teaching at r-project.org>\n> Cc: Nicholas Horton <nhorton at smith.edu>\n> Subject: [R-sig-teaching] Updates on \"How to Do it in R\" for the\n> \t\"Statistical Sleuth\" and \"Introduction to the Practice of\tStatistics\"\n> Message-ID: <9D1E512A-C1B7-4C61-8ADE-A40FC09DF693 at smith.edu>\n> Content-Type: text/plain; charset=us-ascii\n>\n> A group of students and faculty at Smith College have created a series of files to help describe how to undertake analyses using R that are introduced as examples in two excellent textbooks: the Second and Third editions of the Statistical Sleuth: A Course in Methods of Data Analysis (2002, Fred Ramsey and Dan Schafer) and the Sixth edition of Introduction to the Practice of Statistics (2009, David S. Moore, George P. McCabe and Bruce A. Craig).  If you are using either of these books, or would like to see straightforward ways to undertake analyses in R for ue in intro and intermediate statistics courses, these may be of interest.\n\n\t...[snip]...\n\n\tExcellent, excellent work.  Professor Horton, please extend\n\tmy best to your students.\n\n\tWayne Smith, Ph.D.\n\tDepartment of Management\n\tCalifornia State University, Northridge\n\n\t...[snip]...",
+      "body_snippet": "On 3/11/2013 4:00 AM, r-sig-teaching-request at r-project.org wrote:\n> From: Nicholas Horton <nhorton at smith.edu>\n> To: \"r-sig-teaching at r-project.org\" <r-sig-teaching at r-project.org>\n> Cc: Nich",
+      "thread_id": "thread-b9577afa0694",
+      "thread_depth": 0,
+      "month": "2013-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-f3539ceb4354",
+      "subject": "Updates on \"How to Do it in R\" for the \"Statistical Sleuth\" and \"Introduction to the Practice of Statistics\"",
+      "message_count": 1,
+      "participants": [
+        "Nicholas Horton"
+      ],
+      "started": "2013-03-10T08:53:39-04:00",
+      "last_reply": "2013-03-10T08:53:39-04:00",
+      "root_message_id": "msg-f3539ceb4354"
+    },
+    {
+      "id": "thread-b9577afa0694",
+      "subject": "R-sig-teaching Digest, Vol 61, Issue 1",
+      "message_count": 1,
+      "participants": [
+        "Wayne Smith"
+      ],
+      "started": "2013-03-11T09:43:22-07:00",
+      "last_reply": "2013-03-11T09:43:22-07:00",
+      "root_message_id": "msg-b9577afa0694"
+    }
+  ]
+}

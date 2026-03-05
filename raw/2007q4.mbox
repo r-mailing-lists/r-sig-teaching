@@ -1,0 +1,693 @@
+From bates at stat.wisc.edu  Mon Oct  8 21:35:06 2007
+From: bates at stat.wisc.edu (Douglas Bates)
+Date: Mon, 8 Oct 2007 14:35:06 -0500
+Subject: [R-sig-teaching] Online resources for teaching intro stats using R
+Message-ID: <40e66e0b0710081235k492c16e1r4f5722e940a3638d@mail.gmail.com>
+
+As a long-time user and developer of S then R, I am committed to
+having students, even introductory students, use R in my courses.  I
+primarily teach introductory statistics for engineering students I
+think that using R to remove the computational burden (except, of
+course, for the need to learn to use R to some extent) is a remarkable
+enhancement to any intro stats course.
+
+I also see R as a way of removing some of the material in our courses
+that is no longer necessary.  I tell students that the textbook in the
+introductory engineering statistics course that I took in Spring
+semester of 1969 has essentially the same table of contents as many
+current texts for such a course, despite all the changes in computing
+technology.  In 1969 you could easily tell who the engineering
+students were because we all carried slide rules everywhere.  I don't
+see a lot of slide rules around campus today.
+
+The inertia regarding topics in an intro course results in students
+still being taught
+ - the normal approximation to a binomial distribution
+ - the Poisson approximation to a binomial distribution
+ - the concept of "sampling with replacement" to motivate a binomial
+approximation to a hypergeometric distribution
+ - histograms but not empirical density plots
+ - hypothesis tests with a fixed level and a rejection region for the
+test statistic, rather than evaluation of a p-value
+ - "large-sample" z-tests or intervals versus "small-sample" t-tests
+or intervals
+We really do owe it to ourselves as a profession to ask ourselves why
+we continue to teach such topics.
+
+If you stop and think for a moment, none of the approximations of
+distributions that we teach in intro courses are needed.  If you are
+modeling drawing a random sample from a population of size 18,000,000
+and a hypergeometric distribution is appropriate then you can and
+should use a hypergeometric.
+
+Over the last several years I often found myself in the position of
+opposing the text book in my courses.  I would say that the text
+describes this awkward way of doing things (transform to a standard
+normal, juggle around the "less than" and "greater than" signs until
+you can evaluate a probability from a table in the text) but you, the
+student, should ignore that and do things the much easier way of
+simply evaluating the probability that you want to evaluate.  This is
+a burden on students.  Even though we would like to think of our
+brilliant lectures are the main font of wisdom for students in our
+courses, a substantial portion of them learn most of the material from
+the text. When the text and the instructor disagree, confusion ensues.
+
+I have reached the point where I can tell in a few seconds if I want
+to consider a text.  If I open it up and see probability tables in an
+appendix I reject it.
+
+One approach is to change to a text that does use R, such as the books
+by Peter Dalgaard or John Verzani or Michael Crawley.  In fact I am
+using Peter's book but it is difficult to use as a stand-alone text if
+one is also expected to cover some probability.
+
+I am supplementing Peter's book with slides and other PDF documents
+created from Sweave sources.  As seems to happen in courses that I
+teach, these are "just in time" documents (and, on occasion, "just a
+little too late").
+
+It is always difficult to create a textbook using a system like R
+because the software changes so rapidly relative to the time scale for
+writing and publishing texts.  A five-year old book like Peter's is a
+recent book.  A five-year-old version of R is ancient.  I'm back at my
+old tricks of disagreeing with the text even on Peter's book because I
+think that Peter does a wonderful job of explaining traditional
+graphics in R but students should forgo that and learn lattice right
+from the start.  In the five years since Peter's book was published
+(which means six or seven years since he wrote various sections of it)
+lattice has matured tremendously and is now documented in Paul
+Murrell's book on R Graphics and in Deepayan's forthcoming book on
+Lattice (which is "insanely great", by the way).
+
+Many publishers (but, thankfully, not Peter's publisher) would like to
+be able to control all aspects of the course presentation.  It is
+natural to them that if there is to be electronic material, such as
+data sets and sample analyses, associated with the text then they
+should publish it as a CD-ROM to be included with the text.  We all
+know that doesn't work because the CD-ROM is going to be exactly as
+old as the text but the material on the CD-ROM should have changed
+much more rapidly.
+
+I am becoming convinced that all the supplemental materials should be
+available on the web.  CRAN packages provide one very useful way of
+disseminating the supplemental material but other forms, perhaps a
+wiki, may also be useful.  There is a need for practice material and
+worked-out examples and reference sheets for basic definitions and
+facts about distributions, for example, that go beyond what would
+traditionally be part of a CRAN package.
+
+Some materials on general topics such as various probability
+distributions or data graphics or classical tests in R could be useful
+without reference to a particular book.  I am thinking of the sort of
+"Schaum's Outline" supplement where basic properties and definitions
+are presented and a number of worked-out examples are given.  Another
+useful resource for intro teaching would be a repository of test
+questions although that may perhaps be too instructor-dependent.
+
+I don't know the best way to collaborate on building such resources.
+I would consider something like a series of vignettes so the R code
+could be available as well as a printable file and probably the
+sources.  Others may find a wiki to be more natural although I am
+still trying to decide what a wiki is (remember - I was taking intro
+stats in 1969).  One possible collaborative mechanism it the
+R-forge.R-project.org site where we could start a project and
+contribute to it.  It has the advantage of a stable and relatively
+easy to remember URL for referring students.
+
+I welcome private replies and comments or, preferably, a discussion on
+this list.
+
+
+
+From hayden at mv.mv.com  Tue Oct  9 01:46:49 2007
+From: hayden at mv.mv.com (Robert W. Hayden)
+Date: Mon, 8 Oct 2007 19:46:49 -0400 (EDT)
+Subject: [R-sig-teaching] Online resources for teaching intro stats using R
+Message-ID: <20071008234649.92295.qmail@mv.mv.com>
+
+Forwarded message: From: "Douglas Bates" <bates at stat.wisc.edu>
+> 
+> I also see R as a way of removing some of the material in our courses
+> that is no longer necessary.
+
+I have worked with textbook publishers and I think the catch here is
+that they want to include as large a market as possible.  So if you
+write a text integrating R, it won't sell to those using SPSS.  The
+net effect is that texts are stuck at the NO-technology level, afraid
+to adopt anything.  I like to teach statistics by bringing a data set
+to class and providing an analysis there.  The useful stuff that
+appears in textbooks is then footnotes along the way.  I'd like to
+write a textbook that works this way, but it would have to use some
+specific software, and publishers don't want that.  I have thought of
+creating something and just putting it on the WWW, in the manner of
+Jim Hefferon's linear algebra textbook:
+
+    http://joshua.smcvt.edu/linearalgebra/
+
+just down the road from me.
+
+
+ _______
+|   ^  | 		    
+|     /  		    Robert W. Hayden
+|    |   		    in the old library
+|    |   		    212 Main Street
+|   /    	            P. O. Box 450
+|  |     		  ^ North Troy, VT 05859
+L__L			    (802) 988-2587
+                            http://statland.org/      
+Map of VT                   bob at statland.org
+
+Communications sent to Plymouth State will not reach me.
+
+
+
+From jones at reed.edu  Tue Oct  9 02:23:20 2007
+From: jones at reed.edu (Albyn Jones)
+Date: Mon, 8 Oct 2007 17:23:20 -0700
+Subject: [R-sig-teaching] Online resources for teaching intro
+	stats	using R
+In-Reply-To: <20071008234649.92295.qmail@mv.mv.com>
+References: <20071008234649.92295.qmail@mv.mv.com>
+Message-ID: <20071009002320.GI2833@laplace.reed.edu>
+
+"just putting on the WWW":  go Open Source!  The Grinstead and Snell
+probability text is an example.  
+
+Doug's post is pretty meaty, I plan to read it over carefully and respond
+Sometime Real Soon, but don't have time at the moment.  Thanks for
+starting the conversation!
+
+albyn
+
+
+On Mon, Oct 08, 2007 at 07:46:49PM -0400, Robert W. Hayden wrote:
+> Forwarded message: From: "Douglas Bates" <bates at stat.wisc.edu>
+> > 
+> > I also see R as a way of removing some of the material in our courses
+> > that is no longer necessary.
+> 
+> I have worked with textbook publishers and I think the catch here is
+> that they want to include as large a market as possible.  So if you
+> write a text integrating R, it won't sell to those using SPSS.  The
+> net effect is that texts are stuck at the NO-technology level, afraid
+> to adopt anything.  I like to teach statistics by bringing a data set
+> to class and providing an analysis there.  The useful stuff that
+> appears in textbooks is then footnotes along the way.  I'd like to
+> write a textbook that works this way, but it would have to use some
+> specific software, and publishers don't want that.  I have thought of
+> creating something and just putting it on the WWW, in the manner of
+> Jim Hefferon's linear algebra textbook:
+> 
+>     http://joshua.smcvt.edu/linearalgebra/
+> 
+> just down the road from me.
+> 
+> 
+>  _______
+> |   ^  | 		    
+> |     /  		    Robert W. Hayden
+> |    |   		    in the old library
+> |    |   		    212 Main Street
+> |   /    	            P. O. Box 450
+> |  |     		  ^ North Troy, VT 05859
+> L__L			    (802) 988-2587
+>                             http://statland.org/      
+> Map of VT                   bob at statland.org
+> 
+> Communications sent to Plymouth State will not reach me.
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+From bates at stat.wisc.edu  Tue Oct  9 17:14:20 2007
+From: bates at stat.wisc.edu (Douglas Bates)
+Date: Tue, 9 Oct 2007 10:14:20 -0500
+Subject: [R-sig-teaching] Online resources for teaching intro stats
+	using R
+In-Reply-To: <20071008234649.92295.qmail@mv.mv.com>
+References: <20071008234649.92295.qmail@mv.mv.com>
+Message-ID: <40e66e0b0710090814m2bad3746v9fb11cce7b84e81a@mail.gmail.com>
+
+On 10/8/07, Robert W. Hayden <hayden at mv.mv.com> wrote:
+> Forwarded message: From: "Douglas Bates" <bates at stat.wisc.edu>
+> >
+> > I also see R as a way of removing some of the material in our courses
+> > that is no longer necessary.
+>
+> I have worked with textbook publishers and I think the catch here is
+> that they want to include as large a market as possible.  So if you
+> write a text integrating R, it won't sell to those using SPSS.  The
+> net effect is that texts are stuck at the NO-technology level, afraid
+> to adopt anything.
+
+That wasn't my point.  I really don't care what textbook publishers
+think or do.  If the Department of Commerce had a list of endangered
+industries, like the EPA's list of endangered species, textbook
+publishers would rank just behind the recording industry.  They have
+behaved arrogantly and avariciously (one of the main commentaries on
+the production and marketing of textbooks is called "Ripoff 101" -
+just Google for the title) and their industry is based on the
+assumption that they will continue to make money delivering
+intellectual content in a physical form to a captive audience.  Sound
+familiar?  Their main enhancement of late is the idea that they will
+include CD's as supplements to the books they sell to students.  Wow!
+Selling CD's to students - now there's a growth market for you!
+
+The other idea that textbook publishers seem to have is that they will
+provide online course management systems tied to their textbooks.
+Again, they miss the point.  My university provides me with a very
+nice course management system (admittedly, I work at a research
+university which would be expected to be an early adopter of such
+technologies but more widespread use of this technology is just a
+matter of time) and I don't need the publishers' course management
+systems.  The publishers feel that they have experience in managing
+content and that is all that is needed.  Managing content is the easy
+part - managing access is the tricky part and my university does that
+very well for me because they have the class registration records.
+
+I am saying that as instructors we should examine carefully what we
+teach and how we teach it.  We don't want to blindly follow every
+passing fad but it is equally true that we are doomed if we assume
+that everything will stay exactly the same as it was when I took an
+intro stats course and, obviously, there is no need to adapt.
+
+We are holding this discussion on the R-SIG-Teaching list.  The R
+Project has created a fundamental change in the way that statistics
+software is created and distributed and, to me at least, that has been
+an incredibly positive change.  The R Project is a self-organizing
+community.  There is no "R, Inc." (there is the R Foundation but that
+was created primarily so that there is a legal entity to be the
+copyright holder).  The content creators also control the
+dissemination system.
+
+This self-organizing aspect is a sea change in the way we do things.
+For example, Di Cook and others are Iowa State did a wonderful job of
+organizing the useR!2007 conference last August and did it without any
+parent or umbrella organization.  They just created the conference.
+There were sponsors but they came after the conference organization
+was underway, not before.   I characterized the organizational
+structure as "Hey, kids, let's hold a conference - we could use that
+old barn over there."
+
+What I am asking people to think about is what is the equivalent of
+the R Project for online resources in teaching intro stats?  Is it
+like wikipedia?  Is it more top-down than bottom-up?  Will it be a
+free-for-all like "the blogosphere" as a new form of journalism? Is
+there a chance for a self-organizing community to spring up and, if
+so, how can it be nurtured?  Do people know of such initiatives in
+other disciplines?  Are online journals a model?
+
+Discuss.
+
+
+> I like to teach statistics by bringing a data set
+> to class and providing an analysis there.  The useful stuff that
+> appears in textbooks is then footnotes along the way.  I'd like to
+> write a textbook that works this way, but it would have to use some
+> specific software, and publishers don't want that.  I have thought of
+> creating something and just putting it on the WWW, in the manner of
+> Jim Hefferon's linear algebra textbook:
+>
+>     http://joshua.smcvt.edu/linearalgebra/
+>
+> just down the road from me.
+>
+>
+>  _______
+> |   ^  |
+> |     /                     Robert W. Hayden
+> |    |                      in the old library
+> |    |                      212 Main Street
+> |   /                       P. O. Box 450
+> |  |                      ^ North Troy, VT 05859
+> L__L                        (802) 988-2587
+>                             http://statland.org/
+> Map of VT                   bob at statland.org
+>
+> Communications sent to Plymouth State will not reach me.
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+From mablan at ula.ve  Fri Oct 12 15:19:47 2007
+From: mablan at ula.ve (Magdiel Ablan-Bortone)
+Date: Fri, 12 Oct 2007 09:19:47 -0400
+Subject: [R-sig-teaching] Online resources for teaching intro stats
+ using R
+In-Reply-To: <40e66e0b0710081235k492c16e1r4f5722e940a3638d@mail.gmail.com>
+References: <40e66e0b0710081235k492c16e1r4f5722e940a3638d@mail.gmail.com>
+Message-ID: <470F7473.7000901@ula.ve>
+
+Not being myself a statistician,  I often shy away of opposing the text 
+book. However, I could not agree more with your statement. Thanks very 
+much for spelling it out so clear.  I do believe that we can and should 
+do something about it, we just need to think what is
+the best mechanism. There was an experience in the GIS community, the 
+Core Curriculum in GIScience (http://www.ncgia.ucsb.edu/giscc/), that 
+was trying to achieve something similar to what you propose in that 
+field but it is outdated now. There are some lesson there about what to 
+do and not to do for the development of the class material...
+
+Magdiel
+
+
+
+
+Douglas Bates escribi?:
+> As a long-time user and developer of S then R, I am committed to
+> having students, even introductory students, use R in my courses.  I
+> primarily teach introductory statistics for engineering students I
+> think that using R to remove the computational burden (except, of
+> course, for the need to learn to use R to some extent) is a remarkable
+> enhancement to any intro stats course.
+> 
+> I also see R as a way of removing some of the material in our courses
+> that is no longer necessary.  I tell students that the textbook in the
+> introductory engineering statistics course that I took in Spring
+> semester of 1969 has essentially the same table of contents as many
+> current texts for such a course, despite all the changes in computing
+> technology.  In 1969 you could easily tell who the engineering
+> students were because we all carried slide rules everywhere.  I don't
+> see a lot of slide rules around campus today.
+> 
+> The inertia regarding topics in an intro course results in students
+> still being taught
+>  - the normal approximation to a binomial distribution
+>  - the Poisson approximation to a binomial distribution
+>  - the concept of "sampling with replacement" to motivate a binomial
+> approximation to a hypergeometric distribution
+>  - histograms but not empirical density plots
+>  - hypothesis tests with a fixed level and a rejection region for the
+> test statistic, rather than evaluation of a p-value
+>  - "large-sample" z-tests or intervals versus "small-sample" t-tests
+> or intervals
+> We really do owe it to ourselves as a profession to ask ourselves why
+> we continue to teach such topics.
+> 
+> If you stop and think for a moment, none of the approximations of
+> distributions that we teach in intro courses are needed.  If you are
+> modeling drawing a random sample from a population of size 18,000,000
+> and a hypergeometric distribution is appropriate then you can and
+> should use a hypergeometric.
+> 
+> Over the last several years I often found myself in the position of
+> opposing the text book in my courses.  I would say that the text
+> describes this awkward way of doing things (transform to a standard
+> normal, juggle around the "less than" and "greater than" signs until
+> you can evaluate a probability from a table in the text) but you, the
+> student, should ignore that and do things the much easier way of
+> simply evaluating the probability that you want to evaluate.  This is
+> a burden on students.  Even though we would like to think of our
+> brilliant lectures are the main font of wisdom for students in our
+> courses, a substantial portion of them learn most of the material from
+> the text. When the text and the instructor disagree, confusion ensues.
+> 
+> I have reached the point where I can tell in a few seconds if I want
+> to consider a text.  If I open it up and see probability tables in an
+> appendix I reject it.
+> 
+> One approach is to change to a text that does use R, such as the books
+> by Peter Dalgaard or John Verzani or Michael Crawley.  In fact I am
+> using Peter's book but it is difficult to use as a stand-alone text if
+> one is also expected to cover some probability.
+> 
+> I am supplementing Peter's book with slides and other PDF documents
+> created from Sweave sources.  As seems to happen in courses that I
+> teach, these are "just in time" documents (and, on occasion, "just a
+> little too late").
+> 
+> It is always difficult to create a textbook using a system like R
+> because the software changes so rapidly relative to the time scale for
+> writing and publishing texts.  A five-year old book like Peter's is a
+> recent book.  A five-year-old version of R is ancient.  I'm back at my
+> old tricks of disagreeing with the text even on Peter's book because I
+> think that Peter does a wonderful job of explaining traditional
+> graphics in R but students should forgo that and learn lattice right
+> from the start.  In the five years since Peter's book was published
+> (which means six or seven years since he wrote various sections of it)
+> lattice has matured tremendously and is now documented in Paul
+> Murrell's book on R Graphics and in Deepayan's forthcoming book on
+> Lattice (which is "insanely great", by the way).
+> 
+> Many publishers (but, thankfully, not Peter's publisher) would like to
+> be able to control all aspects of the course presentation.  It is
+> natural to them that if there is to be electronic material, such as
+> data sets and sample analyses, associated with the text then they
+> should publish it as a CD-ROM to be included with the text.  We all
+> know that doesn't work because the CD-ROM is going to be exactly as
+> old as the text but the material on the CD-ROM should have changed
+> much more rapidly.
+> 
+> I am becoming convinced that all the supplemental materials should be
+> available on the web.  CRAN packages provide one very useful way of
+> disseminating the supplemental material but other forms, perhaps a
+> wiki, may also be useful.  There is a need for practice material and
+> worked-out examples and reference sheets for basic definitions and
+> facts about distributions, for example, that go beyond what would
+> traditionally be part of a CRAN package.
+> 
+> Some materials on general topics such as various probability
+> distributions or data graphics or classical tests in R could be useful
+> without reference to a particular book.  I am thinking of the sort of
+> "Schaum's Outline" supplement where basic properties and definitions
+> are presented and a number of worked-out examples are given.  Another
+> useful resource for intro teaching would be a repository of test
+> questions although that may perhaps be too instructor-dependent.
+> 
+> I don't know the best way to collaborate on building such resources.
+> I would consider something like a series of vignettes so the R code
+> could be available as well as a printable file and probably the
+> sources.  Others may find a wiki to be more natural although I am
+> still trying to decide what a wiki is (remember - I was taking intro
+> stats in 1969).  One possible collaborative mechanism it the
+> R-forge.R-project.org site where we could start a project and
+> contribute to it.  It has the advantage of a stable and relatively
+> easy to remember URL for referring students.
+> 
+> I welcome private replies and comments or, preferably, a discussion on
+> this list.
+> 
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+
+
+
+From istazahn at gmail.com  Thu Nov  1 19:15:57 2007
+From: istazahn at gmail.com (Ista Zahn)
+Date: Thu, 01 Nov 2007 14:15:57 -0400
+Subject: [R-sig-teaching] Free textbook
+Message-ID: <1193940958.9052.10.camel@izahn-desktop>
+
+Hi,
+Sometime ago I found an online (pdf) text about introductory statistics,
+which focused on simulations and examples. It was a fairly complete
+textbook, but was free to download and use. I wanted to use the text as
+a in a course I'm planing on teaching this summer. Unfortunately my
+computer was recently stolen, and I didn't have a backup of the pdf. I
+know this isn't a very detailed description, but does this ring a bell
+for anyone?
+
+Thanks,
+Ista
+
+
+
+From ambertk at ohsu.edu  Thu Nov  1 19:41:26 2007
+From: ambertk at ohsu.edu (Kyle.)
+Date: Thu, 1 Nov 2007 11:41:26 -0700
+Subject: [R-sig-teaching] Free textbook
+In-Reply-To: <1193940958.9052.10.camel@izahn-desktop>
+References: <1193940958.9052.10.camel@izahn-desktop>
+Message-ID: <D8DD9F04-618C-4F20-AFF0-7513DFE4E717@ohsu.edu>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20071101/6a4440f8/attachment.pl>
+
+From istazahn at gmail.com  Thu Nov  1 20:15:48 2007
+From: istazahn at gmail.com (Ista Zahn)
+Date: Thu, 01 Nov 2007 15:15:48 -0400
+Subject: [R-sig-teaching] Free textbook
+In-Reply-To: <D8DD9F04-618C-4F20-AFF0-7513DFE4E717@ohsu.edu>
+References: <1193940958.9052.10.camel@izahn-desktop>
+	<D8DD9F04-618C-4F20-AFF0-7513DFE4E717@ohsu.edu>
+Message-ID: <1193944548.9052.18.camel@izahn-desktop>
+
+Thanks for the link to Bolker's book! It looks very interesting. The one
+I had in mind was "The foundations of statistics: A simulation-based
+approach" by Shravan Vasishth, available here:
+http://www.ling.uni-potsdam.de/~vasishth/SFLS.html
+What I really like about Vasishth's work is the relatively informal and
+straightforward style, which I think will be appealing to my students.
+Bolker's text looks like something I would want to read, but I'm not
+sure my students are ready for it.
+
+Thanks again,
+Ista
+On Thu, 2007-11-01 at 11:41 -0700, Kyle. wrote:
+> Was it Ben Bolker's book "Ecological Models and Data in R"?  He has it
+> available for free on his website
+> [ http://www.zoo.ufl.edu/bolker/emdbook/index.html ] while he's in the
+> progress of finishing it.  It's a fantastic reference, and I highly
+> recommend it.  Sorry about your computer!
+> 
+> 
+> 
+> 
+> Kyle H. Ambert
+> Graduate Student, Dept. Behavioral Neuroscience
+> Oregon Health & Science University
+> ambertk at ohsu.edu
+> 
+> 
+> 
+> On Nov 1, 2007, at 11:15 AM, Ista Zahn wrote:
+> 
+> > Hi,
+> > Sometime ago I found an online (pdf) text about introductory
+> > statistics,
+> > which focused on simulations and examples. It was a fairly complete
+> > textbook, but was free to download and use. I wanted to use the text
+> > as
+> > a in a course I'm planing on teaching this summer. Unfortunately my
+> > computer was recently stolen, and I didn't have a backup of the pdf.
+> > I
+> > know this isn't a very detailed description, but does this ring a
+> > bell
+> > for anyone?
+> > 
+> > 
+> > Thanks,
+> > Ista
+> > 
+> > 
+> > _______________________________________________
+> > R-sig-teaching at r-project.org mailing list
+> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+> > 
+> > 
+> 
+>
+
+
+
+From ramos.grad.student at gmail.com  Tue Nov  6 09:35:32 2007
+From: ramos.grad.student at gmail.com (Antonio P. Ramos)
+Date: Tue, 6 Nov 2007 04:35:32 -0400
+Subject: [R-sig-teaching] R code to perform OLS by hand
+Message-ID: <191577b80711060035r1766530dk2bc9ecdc3981334d@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20071106/ea263476/attachment.pl>
+
+From germano.rossi at gmail.com  Tue Nov  6 11:06:28 2007
+From: germano.rossi at gmail.com (Germano Rossi)
+Date: Tue, 6 Nov 2007 11:06:28 +0100
+Subject: [R-sig-teaching] R code to perform OLS by hand
+In-Reply-To: <191577b80711060035r1766530dk2bc9ecdc3981334d@mail.gmail.com>
+References: <191577b80711060035r1766530dk2bc9ecdc3981334d@mail.gmail.com>
+Message-ID: <666529580711060206i73552736ud10a2b3ec19cfc08@mail.gmail.com>
+
+An embedded and charset-unspecified text was scrubbed...
+Name: not available
+URL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20071106/48270b70/attachment.pl>
+
+From bates at stat.wisc.edu  Tue Nov  6 15:29:21 2007
+From: bates at stat.wisc.edu (Douglas Bates)
+Date: Tue, 6 Nov 2007 08:29:21 -0600
+Subject: [R-sig-teaching] R code to perform OLS by hand
+In-Reply-To: <191577b80711060035r1766530dk2bc9ecdc3981334d@mail.gmail.com>
+References: <191577b80711060035r1766530dk2bc9ecdc3981334d@mail.gmail.com>
+Message-ID: <40e66e0b0711060629v76888873x75f89de5bc593beb@mail.gmail.com>
+
+On 11/6/07, Antonio P. Ramos <ramos.grad.student at gmail.com> wrote:
+> Hi all.
+
+> Does anyone have a "smart" code for performing bi and mult-ivariable
+> regression in R by hand? This is suppose to help students without a sound
+> knowledge of R to understand what the computer is doing when we write
+> lm(x~y).
+
+Why not approach the explanation the other way and describe what R did
+to get the results?  There are many extractor functions that can be
+used to "deconstruct" a fitted model.  You can use these to show
+exactly what calculations were performed to fit the model.
+
+Running
+
+example(trees)
+
+provides several plots of the data on the volume of timber in a sample
+of 31 felled black cherry trees as a function of the girth (the
+circumference of the tree at a specified distance from the ground) and
+the overall height of the tree.  It also provides two fitted models,
+fm1 and fm2.  Try some of the following
+
+formula(fm1)
+model.matrix(fm1)
+model.frame(fm1)
+model.response(model.frame(fm1))
+fitted(fm1)
+resid(fm1)
+all.equal(model.response(model.frame(fm1) - fitted(fm1), resid(fm1))
+coef(fm1)
+
+I personally am loathe to present the famous formula
+$\hat{\beta}=(X'X)^{-1}X'y$ because I know that the calculation is
+never done that way.  However, I do want to show an equivalent
+relationship, that the residual at the parameter estimates is
+orthogonal to the columns of the model matrix.  That is,
+
+t(model.matrix(fm1)) %*% resid(fm1)
+
+should be very close to zero.
+
+Repeat this for fm2.
+
+
+
+From cparker at pdx.edu  Tue Nov  6 15:31:24 2007
+From: cparker at pdx.edu (Christian A. Parker)
+Date: Tue, 06 Nov 2007 06:31:24 -0800
+Subject: [R-sig-teaching] R code to perform OLS by hand
+In-Reply-To: <191577b80711060035r1766530dk2bc9ecdc3981334d@mail.gmail.com>
+References: <191577b80711060035r1766530dk2bc9ecdc3981334d@mail.gmail.com>
+Message-ID: <47307ABC.9070006@pdx.edu>
+
+http://web.pdx.edu/~cparker/scripts/byhand.r
+
+
+Antonio P. Ramos wrote:
+> Hi all.
+>
+> Does anyone have a "smart" code for performing bi and mult-ivariable
+> regression in R by hand? This is suppose to help students without a sound
+> knowledge of R to understand what the computer is doing when we write
+> lm(x~y).
+>
+> Thanks in advance,
+>
+> Antonio.
+>
+> 	[[alternative HTML version deleted]]
+>
+> _______________________________________________
+> R-sig-teaching at r-project.org mailing list
+> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching
+>
+>
+
+
+

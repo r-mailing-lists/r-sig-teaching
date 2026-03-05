@@ -1,0 +1,66 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2019-03",
+  "messages": [
+    {
+      "id": "msg-e72ab544f262",
+      "message_id": "<LNXP123MB265239CF3386DA4C62B6831D8D710@LNXP123MB2652.GBRP123.PROD.OUTLOOK.COM>",
+      "from_name": "Cave, Mark R.",
+      "from_email_hash": "619da0ab10cd23a07812b9ae438908005f476723092bd616a77a21e4a10774ca",
+      "date": "2019-03-04T13:02:49Z",
+      "subject": "[R-sig-teaching] Simple Bayes example",
+      "subject_clean": "Simple Bayes example",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I am teaching a basic statistics course and I would like to include some simple examples of the Bayesian approach. Has anybody got any ideas/examples?\n\nThanks\n\nMark Cave\n\nDr Mark Cave\nMedical Geology\nGroundwater\nBritish Geological Survey\nKeyworth\nNottingham\nNG12 5GG\nUK\nE-mail: mrca at bgs.ac.uk<mailto:mrca at bgs.ac.uk>\nTel direct: 0115 9363526\nTel switchboard: 0115 9363100\n\nMark Cave Google Scholar<https://scholar.google.co.uk/citations?hl=en&user=2mXB2ywAAAAJ&view_op=list_works&sortby=pubdate>\n\n\n\n\n\n\n\nThis email and any attachments are intended solely for the use of the named recipients. If you are not the intended recipient you must not use, disclose, copy or distribute this email or any of its attachments and should notify the sender immediately and delete this email from your system.\nUK Research and Innovation has taken every reasonable precaution to minimise risk of this email or any attachments containing viruses or malware but the recipient should carry out its own virus and malware checks before opening the attachments. UK Research and Innovation does not accept any liability for any losses or damages which the recipient may sustain due to presence of any viruses.\nOpinions, conclusions or other information in this message and attachments that are not related directly to UK Research and Innovation business are solely those of the author and do not represent the views of UK Research and Innovation.\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I am teaching a basic statistics course and I would like to include some simple examples of the Bayesian approach. Has anybody got any ideas/examples?\n\nThanks\n\nMark Cave\n\nDr Mark Cave\nMedical Geology\n",
+      "thread_id": "thread-e72ab544f262",
+      "thread_depth": 0,
+      "month": "2019-03"
+    },
+    {
+      "id": "msg-d6208332eb37",
+      "message_id": "<CAH-EiE5Udj10P62st8_Eabua=Mu3mZkT26Zf6d8PLGE8_u2ipQ@mail.gmail.com>",
+      "from_name": "Mine Cetinkaya-Rundel",
+      "from_email_hash": "7fbc83e7c0315ce1d152d99403056a43f6e0e2a7f464843246392f221e1c9131",
+      "date": "2019-03-12T12:47:00Z",
+      "subject": "[R-sig-teaching] Fw: Simple Bayes example",
+      "subject_clean": "Simple Bayes example",
+      "in_reply_to": "<MWHPR05MB343720F3AEA20B6A9345A71283490@MWHPR05MB3437.namprd05.prod.outlook.com>",
+      "references": [
+        "<LNXP123MB265239CF3386DA4C62B6831D8D710@LNXP123MB2652.GBRP123.PROD.OUTLOOK.COM>",
+        "<MWHPR05MB343720F3AEA20B6A9345A71283490@MWHPR05MB3437.namprd05.prod.outlook.com>"
+      ],
+      "body_plain": "Hi Mark,\n\nI do a simple introduction to Bayesian inference in my intro stat/data\nscience courses with a discrete example -- these courses don't have a\ncalculus prerequisite so we don't go into the continuous examples.\n\n\n   - Dice game: Guess which hand I'm holding the good die -- slides that\n   walk through the game are at\n   https://www2.stat.duke.edu/courses/Fall18/sta112.01/slides/u3_d03-bayes-inf/u3_d03-bayes-inf.html#9\n   .\n   - Breast cancer screening: In the same lecture I also do a more\n   traditional cancer screening example -- slides that walk through that are\n   at\n   https://www2.stat.duke.edu/courses/Fall18/sta112.01/slides/u3_d03-bayes-inf/u3_d03-bayes-inf.html#38\n   .\n   - We have a Bayesian Statistics MOOC, and the materials in the first\n   week of that course are simple examples as well:\n   https://www.coursera.org/learn/bayesian?specialization=statistics. You\n   should be able to view the videos for free, though Coursera sometimes makes\n   this awfully difficult. I believe you're supposed to click on \"Audit the\n   course\" to view the videos for free. R labs that accompany this course can\n   be found at https://github.com/StatsWithR/labs (labs that start with\n   4.*). The first lab should be a simple example as well. It features a Shiny\n   app that demonstrates the process.\n\nBest,\nMine\n\n\n>\n> ________________________________________\n> From: R-sig-teaching <r-sig-teaching-bounces at r-project.org> on behalf of\n> Cave, Mark R. <mrca at bgs.ac.uk>\n> Sent: Monday, March 4, 2019 8:02 AM\n> To: R-sig-teaching at r-project.org\n> Subject: [R-sig-teaching] Simple Bayes example\n>\n> I am teaching a basic statistics course and I would like to include some\n> simple examples of the Bayesian approach. Has anybody got any\n> ideas/examples?\n>\n> Thanks\n>\n> Mark Cave\n>\n> Dr Mark Cave\n> Medical Geology\n> Groundwater\n> British Geological Survey\n> Keyworth\n> Nottingham\n> NG12 5GG\n> UK\n> E-mail: mrca at bgs.ac.uk<mailto:mrca at bgs.ac.uk <mrca at bgs.ac.uk>>\n> Tel direct: 0115 9363526\n> Tel switchboard: 0115 9363100\n>\n> Mark Cave Google Scholar<\n> https://urldefense.proofpoint.com/v2/url?u=https-3A__scholar.google.co.uk_citations-3Fhl-3Den-26user-3D2mXB2ywAAAAJ-26view-5Fop-3Dlist-5Fworks-26sortby-3Dpubdate&d=DwICAg&c=imBPVzF25OnBgGmVOlcsiEgHoG1i6YHLR0Sj_gZ4adc&r=VMaFnDxOO7DFh_jmcYrq6Oi2_V_d1YoR6dsQ-kCSJjw&m=5EA9TG8J0yXkE-uIF0x9QvcuobqV3ef5nlZXifadt2I&s=zrQ9XZnxh8j6OawmQK6iedn5tyZCNjjxf63qVMSX2GQ&e=\n> >\n>\n>\n>\n>\n>\n>\n>\n> This email and any attachments are intended solely for the use of the\n> named recipients. If you are not the intended recipient you must not use,\n> disclose, copy or distribute this email or any of its attachments and\n> should notify the sender immediately and delete this email from your system.\n> UK Research and Innovation has taken every reasonable precaution to\n> minimise risk of this email or any attachments containing viruses or\n> malware but the recipient should carry out its own virus and malware checks\n> before opening the attachments. UK Research and Innovation does not accept\n> any liability for any losses or damages which the recipient may sustain due\n> to presence of any viruses.\n> Opinions, conclusions or other information in this message and attachments\n> that are not related directly to UK Research and Innovation business are\n> solely those of the author and do not represent the views of UK Research\n> and Innovation.\n>\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n>\n> https://urldefense.proofpoint.com/v2/url?u=https-3A__stat.ethz.ch_mailman_listinfo_r-2Dsig-2Dteaching&d=DwICAg&c=imBPVzF25OnBgGmVOlcsiEgHoG1i6YHLR0Sj_gZ4adc&r=VMaFnDxOO7DFh_jmcYrq6Oi2_V_d1YoR6dsQ-kCSJjw&m=5EA9TG8J0yXkE-uIF0x9QvcuobqV3ef5nlZXifadt2I&s=trbb_mUJ_y6mcv8w-kwYpTuucTAxVks2UN88qTN07Ao&e=\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi Mark,\n\nI do a simple introduction to Bayesian inference in my intro stat/data\nscience courses with a discrete example -- these courses don't have a\ncalculus prerequisite so we don't go into the con",
+      "thread_id": "thread-d6208332eb37",
+      "thread_depth": 0,
+      "month": "2019-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-e72ab544f262",
+      "subject": "Simple Bayes example",
+      "message_count": 1,
+      "participants": [
+        "Cave, Mark R."
+      ],
+      "started": "2019-03-04T13:02:49+00:00",
+      "last_reply": "2019-03-04T13:02:49+00:00",
+      "root_message_id": "msg-e72ab544f262"
+    },
+    {
+      "id": "thread-d6208332eb37",
+      "subject": "Simple Bayes example",
+      "message_count": 1,
+      "participants": [
+        "Mine Cetinkaya-Rundel"
+      ],
+      "started": "2019-03-12T12:47:00+00:00",
+      "last_reply": "2019-03-12T12:47:00+00:00",
+      "root_message_id": "msg-d6208332eb37"
+    }
+  ]
+}

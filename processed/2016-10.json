@@ -1,0 +1,55 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2016-10",
+  "messages": [
+    {
+      "id": "msg-adb559737df3",
+      "message_id": "<CAHDp66ADm5jHL1pwMm4EaCk1AJjBxvRHkH2qHdgGaxyb8Ls-nA@mail.gmail.com>",
+      "from_name": "Steven Stoline",
+      "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
+      "date": "2016-10-08T12:50:39-04:00",
+      "subject": "[R-sig-teaching] Log-Rank Test",
+      "subject_clean": "Log-Rank Test",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\n\n\nI do need your help with Log-Rank Test to compare the average score for the\ntwo groups (1 and 2). Any help will be appreciated.\n\nscore    groups\n4    1\n1    1\n4    1\n2    1\n0    1\n2    1\n4    1\n1    1\n2    1\n3    1\n1    1\n1    1\n3    1\n1    1\n1    1\n2    1\n0    1\n2    1\n2    1\n1    2\n3    2\n4    2\n2    2\n2    2\n3    2\n1    2\n3    2\n2    2\n1    2\n4    2\n2    2\n2    2\n1    2\n3    2\n\n\n\nwith many thanks\nsteve\n---------------------------\nSteven M. Stoline\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\n\nI do need your help with Log-Rank Test to compare the average score for the\ntwo groups (1 and 2). Any help will be appreciated.\n\nscore    groups\n4    1\n1    1\n4    1\n2    1\n0    1\n2    1\n4",
+      "thread_id": "thread-adb559737df3",
+      "thread_depth": 0,
+      "month": "2016-10"
+    },
+    {
+      "id": "msg-d6f0ae6919ae",
+      "message_id": "<783ca163-41b1-36ec-3d5b-f00ee0183a53@gmail.com>",
+      "from_name": "Jeff laux",
+      "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
+      "date": "2016-10-08T13:08:22-04:00",
+      "subject": "[R-sig-teaching] Log-Rank Test",
+      "subject_clean": "Log-Rank Test",
+      "in_reply_to": "<CAHDp66ADm5jHL1pwMm4EaCk1AJjBxvRHkH2qHdgGaxyb8Ls-nA@mail.gmail.com>",
+      "references": [
+        "<CAHDp66ADm5jHL1pwMm4EaCk1AJjBxvRHkH2qHdgGaxyb8Ls-nA@mail.gmail.com>"
+      ],
+      "body_plain": "This isn't about discussing the use of R in teaching statistics. It \ndoesn't belong in this SIG; it should go to the main r-help listserv.\n\n\nOn 10/8/2016 12:50 PM, Steven Stoline wrote:\n> Dear All:\n>\n>\n> I do need your help with Log-Rank Test to compare the average score for the\n> two groups (1 and 2). Any help will be appreciated.\n>\n> score    groups\n> 4    1\n> 1    1\n> 4    1\n> 2    1\n> 0    1\n> 2    1\n> 4    1\n> 1    1\n> 2    1\n> 3    1\n> 1    1\n> 1    1\n> 3    1\n> 1    1\n> 1    1\n> 2    1\n> 0    1\n> 2    1\n> 2    1\n> 1    2\n> 3    2\n> 4    2\n> 2    2\n> 2    2\n> 3    2\n> 1    2\n> 3    2\n> 2    2\n> 1    2\n> 4    2\n> 2    2\n> 2    2\n> 1    2\n> 3    2\n>\n>\n>\n> with many thanks\n> steve\n> ---------------------------\n> Steven M. Stoline\n> sstoline at gmail.com\n>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "This isn't about discussing the use of R in teaching statistics. It \ndoesn't belong in this SIG; it should go to the main r-help listserv.\n\n\nOn 10/8/2016 12:50 PM, Steven Stoline wrote:\n> Dear All:\n>\n",
+      "thread_id": "thread-adb559737df3",
+      "thread_depth": 1,
+      "month": "2016-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-adb559737df3",
+      "subject": "Log-Rank Test",
+      "message_count": 2,
+      "participants": [
+        "Jeff laux",
+        "Steven Stoline"
+      ],
+      "started": "2016-10-08T12:50:39-04:00",
+      "last_reply": "2016-10-08T13:08:22-04:00",
+      "root_message_id": "msg-adb559737df3"
+    }
+  ]
+}

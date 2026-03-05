@@ -1,0 +1,94 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2011-11",
+  "messages": [
+    {
+      "id": "msg-38c785691409",
+      "message_id": "<CAErODj9JtdzR=_OfxqkM3Ui4vkjEdVhGr0=EpdF48W8Mc5AF0w@mail.gmail.com>",
+      "from_name": "Paul Johnson",
+      "from_email_hash": "b96b8a38c7fef12892ac8cae395028a3b39f3acce423d9c564ab27dc864c47b3",
+      "date": "2011-11-22T14:19:54-06:00",
+      "subject": "[R-sig-teaching] Regression textbooks",
+      "subject_clean": "Regression textbooks",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "What regression textbooks are you using in stat courses that introduce\nregression?  I'm looking for something with approximately the same\nintended scope as Cohen, Cohen, West and Aiken, Applied Multiple\nRegression.  That presents OLS, interactions, categorical variables,\nand elementary GLM (logit, poisson).    In our second regression\ncourse, we work in more detail with John Fox's Applied Regression and\nthe Companion book.  Leading up to that, I need some book that is a\nbit more applied in nature, with examples from various fields of\nstudy. Something about 200 pages long that ends with a chapter on\nlogistic regression would be fine.  There was a book called Regression\nAnalysis By Example, by Samprit Chatterjee, Ali S. Hadi and Bertram\nPrice, was headed in the right direction, but it seems not to be in\ndevelopment any more.\n\nIf it has R example code for certain basic analysis, it would be perfect.\n\nSuggestions?\n\n-- \nPaul E. Johnson\nProfessor, Political Science\n1541 Lilac Lane, Room 504\nUniversity of Kansas",
+      "body_snippet": "What regression textbooks are you using in stat courses that introduce\nregression?  I'm looking for something with approximately the same\nintended scope as Cohen, Cohen, West and Aiken, Applied Multip",
+      "thread_id": "thread-38c785691409",
+      "thread_depth": 0,
+      "month": "2011-11"
+    },
+    {
+      "id": "msg-e774b1ca173e",
+      "message_id": "<CAGx1TMCVMuT62ZvEZEhAEzOAA1jQq=B_k-LGcfuNJcQp=2NtTA@mail.gmail.com>",
+      "from_name": "Richard M. Heiberger",
+      "from_email_hash": "4ce810eab8587777db353ea9d997b9e94d9e73af018121f9a3424238038952df",
+      "date": "2011-11-22T15:38:06-05:00",
+      "subject": "[R-sig-teaching] Regression textbooks",
+      "subject_clean": "Regression textbooks",
+      "in_reply_to": "<CAErODj9JtdzR=_OfxqkM3Ui4vkjEdVhGr0=EpdF48W8Mc5AF0w@mail.gmail.com>",
+      "references": [
+        "<CAErODj9JtdzR=_OfxqkM3Ui4vkjEdVhGr0=EpdF48W8Mc5AF0w@mail.gmail.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20111122/fe97609c/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20111122/fe97609c/attachment.pl>",
+      "thread_id": "thread-38c785691409",
+      "thread_depth": 1,
+      "month": "2011-11"
+    },
+    {
+      "id": "msg-68cb292d6070",
+      "message_id": "<CAHawB9srNu_f28OsFghF+ryHUf2CaXD058zUOKOQuXOKYWZjwg@mail.gmail.com>",
+      "from_name": "Antonio P. Ramos",
+      "from_email_hash": "e95bafded85d24babdc99d611a276bf89a00bac76499acc1f1f445f966b0e617",
+      "date": "2011-11-22T13:07:51-08:00",
+      "subject": "[R-sig-teaching] Regression textbooks",
+      "subject_clean": "Regression textbooks",
+      "in_reply_to": "<CAGx1TMCVMuT62ZvEZEhAEzOAA1jQq=B_k-LGcfuNJcQp=2NtTA@mail.gmail.com>",
+      "references": [
+        "<CAErODj9JtdzR=_OfxqkM3Ui4vkjEdVhGr0=EpdF48W8Mc5AF0w@mail.gmail.com>",
+        "<CAGx1TMCVMuT62ZvEZEhAEzOAA1jQq=B_k-LGcfuNJcQp=2NtTA@mail.gmail.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20111122/6e2e7c22/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20111122/6e2e7c22/attachment.pl>",
+      "thread_id": "thread-38c785691409",
+      "thread_depth": 2,
+      "month": "2011-11"
+    },
+    {
+      "id": "msg-4efe616e40eb",
+      "message_id": "<9064522880125945B98983BBAECBA1CC02C9CC2E@exchsrv001.ebs.local>",
+      "from_name": "Adams, Zeno",
+      "from_email_hash": "048089c8b19ceb4b811b8f1dce71539c6059bef3abd322b112c05f02d424e2a0",
+      "date": "2011-11-23T09:56:01+01:00",
+      "subject": "[R-sig-teaching] Regression textbooks",
+      "subject_clean": "Regression textbooks",
+      "in_reply_to": "<CAErODj9JtdzR=_OfxqkM3Ui4vkjEdVhGr0=EpdF48W8Mc5AF0w@mail.gmail.com>",
+      "references": [
+        "<CAErODj9JtdzR=_OfxqkM3Ui4vkjEdVhGr0=EpdF48W8Mc5AF0w@mail.gmail.com>"
+      ],
+      "body_plain": "In my view there is no better book for regression (including\ninteractions, categorical variables, and elementary GLMs) than Jeffrey\nWooldridge (2008), Introductory Econometrics: A Modern Approach, 4th ed.\n\nWhere I work this book is sort of the bible for Econometrics.\n\nZeno\n\n-----Original Message-----\nFrom: r-sig-teaching-bounces at r-project.org\n[mailto:r-sig-teaching-bounces at r-project.org] On Behalf Of Paul Johnson\nSent: Dienstag, 22. November 2011 21:20\nTo: r-sig-teaching at r-project.org\nSubject: [R-sig-teaching] Regression textbooks\n\nWhat regression textbooks are you using in stat courses that introduce\nregression?  I'm looking for something with approximately the same\nintended scope as Cohen, Cohen, West and Aiken, Applied Multiple\nRegression.  That presents OLS, interactions, categorical variables,\nand elementary GLM (logit, poisson).    In our second regression\ncourse, we work in more detail with John Fox's Applied Regression and\nthe Companion book.  Leading up to that, I need some book that is a\nbit more applied in nature, with examples from various fields of\nstudy. Something about 200 pages long that ends with a chapter on\nlogistic regression would be fine.  There was a book called Regression\nAnalysis By Example, by Samprit Chatterjee, Ali S. Hadi and Bertram\nPrice, was headed in the right direction, but it seems not to be in\ndevelopment any more.\n\nIf it has R example code for certain basic analysis, it would be\nperfect.\n\nSuggestions?\n\n-- \nPaul E. Johnson\nProfessor, Political Science\n1541 Lilac Lane, Room 504\nUniversity of Kansas\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n-------------- next part --------------\nEBS European Business School gemeinnuetzige GmbH, Amtsgericht Wiesbaden HRB 19951; Universitaet fuer Wirtschaft und Recht, Umsatzsteuer-ID DE 113891213; Aufsichtsrat: Dr. Hellmut K. Albrecht, Vorsitzender; Geschaeftsfuehrung: Professor Dr. Rolf D. Cremer, Pr?sident; Professor Dr. Rolf Tilmes, Dekan EBS Business School; Professor Dr. Dr. Gerrick Frhr. v. Hoyningen-Huene, Dekan EBS Law School; Georg Nikolaus Garlichs, Kanzler",
+      "body_snippet": "In my view there is no better book for regression (including\ninteractions, categorical variables, and elementary GLMs) than Jeffrey\nWooldridge (2008), Introductory Econometrics: A Modern Approach, 4th",
+      "thread_id": "thread-38c785691409",
+      "thread_depth": 1,
+      "month": "2011-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-38c785691409",
+      "subject": "Regression textbooks",
+      "message_count": 4,
+      "participants": [
+        "Adams, Zeno",
+        "Antonio P. Ramos",
+        "Paul Johnson",
+        "Richard M. Heiberger"
+      ],
+      "started": "2011-11-22T14:19:54-06:00",
+      "last_reply": "2011-11-23T09:56:01+01:00",
+      "root_message_id": "msg-38c785691409"
+    }
+  ]
+}

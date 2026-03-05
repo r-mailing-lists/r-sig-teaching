@@ -1,0 +1,124 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2018-02",
+  "messages": [
+    {
+      "id": "msg-86fa33d5e247",
+      "message_id": "<DM5PR06MB326015D74C96C1771FE7D83888CF0@DM5PR06MB3260.namprd06.prod.outlook.com>",
+      "from_name": "BRET R LARGET",
+      "from_email_hash": "ce6f2aba03e1f039f378e6ec71f5fddc402ee5bbf324b1e1c178e1529f83f4f7",
+      "date": "2018-02-20T23:17:16Z",
+      "subject": "[R-sig-teaching] Fw: Questions on interactively teaching R",
+      "subject_clean": "Questions on interactively teaching R",
+      "in_reply_to": "<2e30b4a0-fad4-c8ce-74c1-5c98d18701bb@gmail.com>",
+      "references": [
+        "<mailman.791.884.1519152898.1673.r-sig-teaching@r-project.org>",
+        "<2e30b4a0-fad4-c8ce-74c1-5c98d18701bb@gmail.com>"
+      ],
+      "body_plain": "A message on behalf of Bjoern Fisseler.\n\n\n-Bret Larget",
+      "body_snippet": "A message on behalf of Bjoern Fisseler.\n\n\n-Bret Larget",
+      "thread_id": "thread-86fa33d5e247",
+      "thread_depth": 0,
+      "month": "2018-02"
+    },
+    {
+      "id": "msg-fdd4ccd4b239",
+      "message_id": "<DM5PR06MB32607DDCAF837708DECB1C4A88CE0@DM5PR06MB3260.namprd06.prod.outlook.com>",
+      "from_name": "BRET R LARGET",
+      "from_email_hash": "ce6f2aba03e1f039f378e6ec71f5fddc402ee5bbf324b1e1c178e1529f83f4f7",
+      "date": "2018-02-21T02:40:25Z",
+      "subject": "[R-sig-teaching] A second try...",
+      "subject_clean": "A second try...",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Forwarded message:\n\n\n------------------------------------------------------------------------------\n\nDear list,\n\nI'm currently thinking about possible ways how to interactively teach R\nto psychology students. I'm working with R myself, but am currently\nemployed as an e-learning specialist at my university\n\nDoing some research I came across DataCamp, which could be a solution,\nif it wasn't a commercial vendor. Also using DataCamp Light would not be\npossible, because of the strict privacy policy of my institution.\n\nMy idea is to create some kind of interactive workshop, a combination of\nvideo lecture, additional text/instructions, and an interactive R\nconsole similar to Swirl. Currently the students can only view a video\nas sort of \"tutorial\", and then have to do some exercises using R or\nRStudio. My imagination goes a little further:\n\n   * The students click on the video and start the tutorial. The lecturer\n     explains something, and the video stops at the first exercise.\n   * That's when the students have to do something using the interactive\n     R console. The enter some code and run it. Depending on the type of\n     exercise, they get feedback through the system in form of additional\n     text etc.\n   * All this is combined in one package, which is ideally fully usable\n     via Moodle.\n\nDoes anyone know if something like this is available as a free solution?\nOr how could such a thing be tackled technically?\n\nI'm thankful for any clues.\n\nKind regards\n\n          Bjoern\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Forwarded message:\n\n\n------------------------------------------------------------------------------\n\nDear list,\n\nI'm currently thinking about possible ways how to interactively teach R\nto psychology s",
+      "thread_id": "thread-fdd4ccd4b239",
+      "thread_depth": 0,
+      "month": "2018-02"
+    },
+    {
+      "id": "msg-61d385cbba89",
+      "message_id": "<52FA8054-156B-470F-8AB4-BCF56554E3F7@calvin.edu>",
+      "from_name": "Randall Pruim",
+      "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
+      "date": "2018-02-21T02:52:11Z",
+      "subject": "[R-sig-teaching] A second try...",
+      "subject_clean": "A second try...",
+      "in_reply_to": "<DM5PR06MB32607DDCAF837708DECB1C4A88CE0@DM5PR06MB3260.namprd06.prod.outlook.com>",
+      "references": [
+        "<DM5PR06MB32607DDCAF837708DECB1C4A88CE0@DM5PR06MB3260.namprd06.prod.outlook.com>"
+      ],
+      "body_plain": "Are you familiar with the learnr package for creating tutorials?  That might do much of what you want.  Also, checkr (by Danny Kaplan) is in development and will provide a way for you to check work and give feedback.\n\n?rjp\n\n> On Feb 20, 2018, at 9:40 PM, BRET R LARGET <bret.larget at wisc.edu> wrote:\n> \n> Forwarded message:\n> \n> \n> ------------------------------------------------------------------------------\n> \n> Dear list,\n> \n> I'm currently thinking about possible ways how to interactively teach R\n> to psychology students. I'm working with R myself, but am currently\n> employed as an e-learning specialist at my university\n> \n> Doing some research I came across DataCamp, which could be a solution,\n> if it wasn't a commercial vendor. Also using DataCamp Light would not be\n> possible, because of the strict privacy policy of my institution.\n> \n> My idea is to create some kind of interactive workshop, a combination of\n> video lecture, additional text/instructions, and an interactive R\n> console similar to Swirl. Currently the students can only view a video\n> as sort of \"tutorial\", and then have to do some exercises using R or\n> RStudio. My imagination goes a little further:\n> \n>   * The students click on the video and start the tutorial. The lecturer\n>     explains something, and the video stops at the first exercise.\n>   * That's when the students have to do something using the interactive\n>     R console. The enter some code and run it. Depending on the type of\n>     exercise, they get feedback through the system in form of additional\n>     text etc.\n>   * All this is combined in one package, which is ideally fully usable\n>     via Moodle.\n> \n> Does anyone know if something like this is available as a free solution?\n> Or how could such a thing be tackled technically?\n> \n> I'm thankful for any clues.\n> \n> Kind regards\n> \n>          Bjoern\n> \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://urldefense.proofpoint.com/v2/url?u=https-3A__stat.ethz.ch_mailman_listinfo_r-2Dsig-2Dteaching&d=DwICAg&c=4rZ6NPIETe-LE5i2KBR4rw&r=S6U-baLhvGcJ7iUQX_KZ6K2om1TTOeUI_-mjRpTrm00&m=vY7prIe1UzFu2JcgL5eEb8-Wxcthysvzd9Fb46qM9SE&s=iMp1i3o5xxovmQTCWWLKpKq4eYbwbCXWRrMXQtdr2fk&e=",
+      "body_snippet": "Are you familiar with the learnr package for creating tutorials?  That might do much of what you want.  Also, checkr (by Danny Kaplan) is in development and will provide a way for you to check work an",
+      "thread_id": "thread-fdd4ccd4b239",
+      "thread_depth": 1,
+      "month": "2018-02"
+    },
+    {
+      "id": "msg-598cf6dede14",
+      "message_id": "<A3C2D8BF-5435-4025-9685-976B3A12C09C@gmail.com>",
+      "from_name": "Retzer Joe",
+      "from_email_hash": "47cd75b41ef1b93378f05491d80f087673d347400d01afcb82657e6104ab4e40",
+      "date": "2018-02-20T20:56:13-06:00",
+      "subject": "[R-sig-teaching] A second try...",
+      "subject_clean": "A second try...",
+      "in_reply_to": "<DM5PR06MB32607DDCAF837708DECB1C4A88CE0@DM5PR06MB3260.namprd06.prod.outlook.com>",
+      "references": [
+        "<DM5PR06MB32607DDCAF837708DECB1C4A88CE0@DM5PR06MB3260.namprd06.prod.outlook.com>"
+      ],
+      "body_plain": "DataCamp offers a free subscription to classes with appropriate academic credentials.\nBest,\nJoe\n\nSent from my iPhone\n\n> On Feb 20, 2018, at 8:40 PM, BRET R LARGET <bret.larget at wisc.edu> wrote:\n> \n> Forwarded message:\n> \n> \n> ------------------------------------------------------------------------------\n> \n> Dear list,\n> \n> I'm currently thinking about possible ways how to interactively teach R\n> to psychology students. I'm working with R myself, but am currently\n> employed as an e-learning specialist at my university\n> \n> Doing some research I came across DataCamp, which could be a solution,\n> if it wasn't a commercial vendor. Also using DataCamp Light would not be\n> possible, because of the strict privacy policy of my institution.\n> \n> My idea is to create some kind of interactive workshop, a combination of\n> video lecture, additional text/instructions, and an interactive R\n> console similar to Swirl. Currently the students can only view a video\n> as sort of \"tutorial\", and then have to do some exercises using R or\n> RStudio. My imagination goes a little further:\n> \n>   * The students click on the video and start the tutorial. The lecturer\n>     explains something, and the video stops at the first exercise.\n>   * That's when the students have to do something using the interactive\n>     R console. The enter some code and run it. Depending on the type of\n>     exercise, they get feedback through the system in form of additional\n>     text etc.\n>   * All this is combined in one package, which is ideally fully usable\n>     via Moodle.\n> \n> Does anyone know if something like this is available as a free solution?\n> Or how could such a thing be tackled technically?\n> \n> I'm thankful for any clues.\n> \n> Kind regards\n> \n>          Bjoern\n> \n>    [[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "DataCamp offers a free subscription to classes with appropriate academic credentials.\nBest,\nJoe\n\nSent from my iPhone\n\n> On Feb 20, 2018, at 8:40 PM, BRET R LARGET <bret.larget at wisc.edu> wrote:\n> \n>",
+      "thread_id": "thread-fdd4ccd4b239",
+      "thread_depth": 1,
+      "month": "2018-02"
+    },
+    {
+      "id": "msg-213a2d4cce84",
+      "message_id": "<MWHPR05MB332707FA49034F81DF995D29A3CE0@MWHPR05MB3327.namprd05.prod.outlook.com>",
+      "from_name": "Robin A Donatello",
+      "from_email_hash": "6d632464c3f5e70299181ff2e7d9e3e096831604ee7ba680ccd9c304896556dd",
+      "date": "2018-02-21T04:01:06Z",
+      "subject": "[R-sig-teaching] A second try...",
+      "subject_clean": "A second try...",
+      "in_reply_to": "<A3C2D8BF-5435-4025-9685-976B3A12C09C@gmail.com>",
+      "references": [
+        "<DM5PR06MB32607DDCAF837708DECB1C4A88CE0@DM5PR06MB3260.namprd06.prod.outlook.com>",
+        "<A3C2D8BF-5435-4025-9685-976B3A12C09C@gmail.com>"
+      ],
+      "body_plain": "Agree with Joe - Create an educational \"classroom\" group in Data Camp. Once they confirm you're a valid instructor you can add students and they get all Data Camp courses for free for the duration of the course. Typically 4-6 months or so? I use it quite frequently as a primer to R before the class, as a continuing education tool, and as lesson enhancement tool throughout the semester.\n\n\n-Robin\n\n________________________________\nFrom: R-sig-teaching <r-sig-teaching-bounces at r-project.org> on behalf of Retzer Joe <retzerjj at gmail.com>\nSent: Tuesday, February 20, 2018 6:56:13 PM\nTo: BRET R LARGET\nCc: R-sig-teaching\nSubject: Re: [R-sig-teaching] A second try...\n\nDataCamp offers a free subscription to classes with appropriate academic credentials.\nBest,\nJoe\n\nSent from my iPhone\n\n> On Feb 20, 2018, at 8:40 PM, BRET R LARGET <bret.larget at wisc.edu> wrote:\n>\n> Forwarded message:\n>\n>\n> ------------------------------------------------------------------------------\n>\n> Dear list,\n>\n> I'm currently thinking about possible ways how to interactively teach R\n> to psychology students. I'm working with R myself, but am currently\n> employed as an e-learning specialist at my university\n>\n> Doing some research I came across DataCamp, which could be a solution,\n> if it wasn't a commercial vendor. Also using DataCamp Light would not be\n> possible, because of the strict privacy policy of my institution.\n>\n> My idea is to create some kind of interactive workshop, a combination of\n> video lecture, additional text/instructions, and an interactive R\n> console similar to Swirl. Currently the students can only view a video\n> as sort of \"tutorial\", and then have to do some exercises using R or\n> RStudio. My imagination goes a little further:\n>\n>   * The students click on the video and start the tutorial. The lecturer\n>     explains something, and the video stops at the first exercise.\n>   * That's when the students have to do something using the interactive\n>     R console. The enter some code and run it. Depending on the type of\n>     exercise, they get feedback through the system in form of additional\n>     text etc.\n>   * All this is combined in one package, which is ideally fully usable\n>     via Moodle.\n>\n> Does anyone know if something like this is available as a free solution?\n> Or how could such a thing be tackled technically?\n>\n> I'm thankful for any clues.\n>\n> Kind regards\n>\n>          Bjoern\n>\n>    [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Agree with Joe - Create an educational \"classroom\" group in Data Camp. Once they confirm you're a valid instructor you can add students and they get all Data Camp courses for free for the duration of ",
+      "thread_id": "thread-fdd4ccd4b239",
+      "thread_depth": 2,
+      "month": "2018-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-86fa33d5e247",
+      "subject": "Questions on interactively teaching R",
+      "message_count": 1,
+      "participants": [
+        "BRET R LARGET"
+      ],
+      "started": "2018-02-20T23:17:16+00:00",
+      "last_reply": "2018-02-20T23:17:16+00:00",
+      "root_message_id": "msg-86fa33d5e247"
+    },
+    {
+      "id": "thread-fdd4ccd4b239",
+      "subject": "A second try...",
+      "message_count": 4,
+      "participants": [
+        "BRET R LARGET",
+        "Randall Pruim",
+        "Retzer Joe",
+        "Robin A Donatello"
+      ],
+      "started": "2018-02-21T02:40:25+00:00",
+      "last_reply": "2018-02-21T04:01:06+00:00",
+      "root_message_id": "msg-fdd4ccd4b239"
+    }
+  ]
+}

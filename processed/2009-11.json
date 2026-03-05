@@ -1,0 +1,113 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2009-11",
+  "messages": [
+    {
+      "id": "msg-56f9fc6745e9",
+      "message_id": "<4AFD7A70020000A60005FBAE@uct5.uct.usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2009-11-13T15:25:36-05:00",
+      "subject": "[R-sig-teaching] R Exercises with solutions",
+      "subject_clean": "R Exercises with solutions",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091113/45d34e27/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091113/45d34e27/attachment.pl>",
+      "thread_id": "thread-56f9fc6745e9",
+      "thread_depth": 0,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-dd6d6b45a451",
+      "message_id": "<f8e6ff050911131245w15a8282dxf137ab37e8534258@mail.gmail.com>",
+      "from_name": "hadley wickham",
+      "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
+      "date": "2009-11-13T14:45:58-06:00",
+      "subject": "[R-sig-teaching] R Exercises with solutions",
+      "subject_clean": "R Exercises with solutions",
+      "in_reply_to": "<4AFD7A70020000A60005FBAE@uct5.uct.usm.maine.edu>",
+      "references": [
+        "<4AFD7A70020000A60005FBAE@uct5.uct.usm.maine.edu>"
+      ],
+      "body_plain": "See drills under http://had.co.nz/stat405.\n\nHadley\n\nOn Fri, Nov 13, 2009 at 2:25 PM, AbouEl-Makarim Aboueissa\n<aaboueissa at usm.maine.edu> wrote:\n> Dear R Users:\n>\n> I am teaching a computational statistics class SAS and R. I am going to teach R introductory for 3 weeks.\n>\n> I am looking for some handouts and exercises with solutions.\n>\n> Can someone send me some.\n>\n> With many thanks\n>\n>\n> Abou\n>\n>\n>\n>\n> ==========================\n> AbouEl-Makarim Aboueissa, Ph.D.\n> Assistant Professor of Statistics\n> Department of Mathematics & Statistics\n> University of Southern Maine\n> 96 Falmouth Street\n> P.O. Box 9300\n> Portland, ME 04104-9300\n> USA\n>\n>\n> Tel: (207) 228-8389\n> Fax: (207) 780-5607\n> Email: aaboueissa at usm.maine.edu\n> ? ? ? ? ?aboueiss at yahoo.com\n>\n> Web address: ?http://www.usm.maine.edu/~aaboueissa/\n>\n> Office: 301C Payson Smith\n>\n>\n> ? ? ? ?[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \nhttp://had.co.nz/",
+      "body_snippet": "See drills under http://had.co.nz/stat405.\n\nHadley\n\nOn Fri, Nov 13, 2009 at 2:25 PM, AbouEl-Makarim Aboueissa\n<aaboueissa at usm.maine.edu> wrote:\n> Dear R Users:\n>\n> I am teaching a computational sta",
+      "thread_id": "thread-56f9fc6745e9",
+      "thread_depth": 1,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-87a6e44b731a",
+      "message_id": "<5048645D-5B95-48EC-A39E-8748BE0BE50D@anu.edu.au>",
+      "from_name": "John Maindonald",
+      "from_email_hash": "2de8ee602ec487e8ae8c715c88cb2320b0ddc4a3428764e445cf26eb69ef92c5",
+      "date": "2009-11-15T09:58:10+11:00",
+      "subject": "[R-sig-teaching] R-sig-teaching] R Exercises with solutions",
+      "subject_clean": "R-sig-teaching] R Exercises with solutions",
+      "in_reply_to": "<mailman.7.1258196403.909.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.7.1258196403.909.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": "There is an extensive collection of exercises + solutions on my  \nwebsite, at:\nhttp://www.maths.anu.edu.au/%7Ejohnm/r-book/2edn/exercises/\nThese are a selection from the exercises in our Data Analysis and\nGraphics Using R book. (Maindonald & Braun, 2nd edn, CUP 2007)\n\nJohn Maindonald             email: john.maindonald at anu.edu.au\nphone : +61 2 (6125)3473    fax  : +61 2(6125)5549\nCentre for Mathematics & Its Applications, Room 1194,\nJohn Dedman Mathematical Sciences Building (Building 27)\nAustralian National University, Canberra ACT 0200.\nhttp://www.maths.anu.edu.au/%7Ejohnm\n\nOn 14/11/2009, at 10:00 PM, r-sig-teaching-request at r-project.org wrote:\n\n> Message: 1\n> Date: Fri, 13 Nov 2009 15:25:36 -0500\n> From: \"AbouEl-Makarim Aboueissa\" <aaboueissa at usm.maine.edu>\n> Subject: [R-sig-teaching] R Exercises with solutions\n> To: <r-sig-teaching at r-project.org>\n> Message-ID: <4AFD7A70020000A60005FBAE at uct5.uct.usm.maine.edu>\n> Content-Type: text/plain\n>\n> Dear R Users:\n>\n> I am teaching a computational statistics class SAS and R. I am going  \n> to teach R introductory for 3 weeks.\n>\n> I am looking for some handouts and exercises with solutions.\n>\n> Can someone send me some.\n>\n> With many thanks\n>\n>\n> Abou\n>\n>\n>\n>\n> ==========================\n> AbouEl-Makarim Aboueissa, Ph.D.\n> Assistant Professor of Statistics\n> Department of Mathematics & Statistics\n> University of Southern Maine\n> 96 Falmouth Street\n> P.O. Box 9300\n> Portland, ME 04104-9300\n> USA\n>\n>\n> Tel: (207) 228-8389\n> Fax: (207) 780-5607\n> Email: aaboueissa at usm.maine.edu\n>         aboueiss at yahoo.com\n>\n> Web address:  http://www.usm.maine.edu/~aaboueissa/\n>\n> Office: 301C Payson Smith\n>\n>\n> \t[[alternative HTML version deleted]]",
+      "body_snippet": "There is an extensive collection of exercises + solutions on my  \nwebsite, at:\nhttp://www.maths.anu.edu.au/%7Ejohnm/r-book/2edn/exercises/\nThese are a selection from the exercises in our Data Analysis",
+      "thread_id": "thread-87a6e44b731a",
+      "thread_depth": 0,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-062ce2edb347",
+      "message_id": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC62F544F9D6@LP-EXMBVS10.CO.IHC.COM>",
+      "from_name": "Greg Snow",
+      "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
+      "date": "2009-11-14T18:42:21-07:00",
+      "subject": "[R-sig-teaching] Markov chain Monte Carlo",
+      "subject_clean": "Markov chain Monte Carlo",
+      "in_reply_to": "<200910072240.n97MeE3X017302@definetti.ddns.uark.edu>",
+      "references": [
+        "<200910072240.n97MeE3X017302@definetti.ddns.uark.edu>"
+      ],
+      "body_plain": "I have not seen any responses to this yet.  I don't know of an existing matrix that is freely available, but you can construct one by doing something like:\n\ncon <- url('http://www.gutenberg.org/dirs/2/6/0/2600/2600.txt')\nwp <- readLines(con)\nwp <- tolower(paste(wp, collapse=' '))\n\nlet <- unlist(strsplit(wp, ''))\nlet2 <- embed(let, 2)\n\nmy.table <- table( let2[,2], let2[,1] )\nmy.table2 <- sweep( my.table, 1, rowSums(my.table), FUN='/')\n\nOf course you could do additional editing if you feel it is needed.\n\nHope this helps,\n\n-- \nGregory (Greg) L. Snow Ph.D.\nStatistical Data Center\nIntermountain Healthcare\ngreg.snow at imail.org\n801.408.8111\n\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-\n> bounces at r-project.org] On Behalf Of Giovanni Petris\n> Sent: Wednesday, October 07, 2009 4:40 PM\n> To: r-sig-teaching at r-project.org\n> Subject: [R-sig-teaching] Markov chain Monte Carlo\n> \n> \n> Hello all,\n> \n> In a recent issue of the Bulletin of the American Mathematical\n> Society, Persi Diaconis opens a review/discussion paper on MCMC with a\n> nice application to cryptography and message decoding. The article is\n> available online at\n> \n> http://www.ams.org/bull/2009-46-02/S0273-0979-08-01238-X/S0273-0979-08-\n> 01238-X.pdf\n> \n> I liked the example and wanted to do something similar in my\n> classes. Does any body have any suggestions? I can make up my own\n> coded message, but in order to decode it I will need a matrix of first\n> order transition probabilities for letters in standard English: is\n> there anything like that available on line?\n> \n> Thank you in advance.\n> \n> Best,\n> Giovanni Petris\n> \n> --\n> \n> Giovanni Petris  <GPetris at uark.edu>\n> Associate Professor\n> Department of Mathematical Sciences\n> University of Arkansas - Fayetteville, AR 72701\n> Ph: (479) 575-6324, 575-8630 (fax)\n> http://definetti.uark.edu/~gpetris/\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "I have not seen any responses to this yet.  I don't know of an existing matrix that is freely available, but you can construct one by doing something like:\n\ncon <- url('http://www.gutenberg.org/dirs/2",
+      "thread_id": "thread-062ce2edb347",
+      "thread_depth": 0,
+      "month": "2009-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-56f9fc6745e9",
+      "subject": "R Exercises with solutions",
+      "message_count": 2,
+      "participants": [
+        "AbouEl-Makarim Aboueissa",
+        "hadley wickham"
+      ],
+      "started": "2009-11-13T15:25:36-05:00",
+      "last_reply": "2009-11-13T14:45:58-06:00",
+      "root_message_id": "msg-56f9fc6745e9"
+    },
+    {
+      "id": "thread-062ce2edb347",
+      "subject": "Markov chain Monte Carlo",
+      "message_count": 1,
+      "participants": [
+        "Greg Snow"
+      ],
+      "started": "2009-11-14T18:42:21-07:00",
+      "last_reply": "2009-11-14T18:42:21-07:00",
+      "root_message_id": "msg-062ce2edb347"
+    },
+    {
+      "id": "thread-87a6e44b731a",
+      "subject": "R-sig-teaching] R Exercises with solutions",
+      "message_count": 1,
+      "participants": [
+        "John Maindonald"
+      ],
+      "started": "2009-11-15T09:58:10+11:00",
+      "last_reply": "2009-11-15T09:58:10+11:00",
+      "root_message_id": "msg-87a6e44b731a"
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2016-12",
+  "messages": [
+    {
+      "id": "msg-126817e1960d",
+      "message_id": "<AM3PR06MB1156C534D894D76BDAFB6FB78D9B0@AM3PR06MB1156.eurprd06.prod.outlook.com>",
+      "from_name": "Cave, Mark R.",
+      "from_email_hash": "09a1ec86c57d1c40f06012d913ed9af4ded4a384910d1e225a25906526f19b53",
+      "date": "2016-12-13T09:56:44Z",
+      "subject": "[R-sig-teaching] R example applications",
+      "subject_clean": "R example applications",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I am going to be teaching an R course for beginners (for geoscience professionals)  and I would like to start with some really interesting  and visual applications to get their attention and show them the power of R before getting down to the some R basics. Any good ideas?\n\nMark Cave\n\n\nDr Mark Cave\nMedical Geology\nLand, Soil and Coast\nBritish Geological Survey\nKeyworth\nNottingham\nNG12 5GG\nUK\nE-mail: mrca at bgs.ac.uk<mailto:mrca at bgs.ac.uk>\nTel direct: 0115 9363526\nTel switchboard: 0115 9363100\n\n\n\n\n  ________________________________\nThis message (and any attachments) is for the recipient ...{{dropped:10}}",
+      "body_snippet": "I am going to be teaching an R course for beginners (for geoscience professionals)  and I would like to start with some really interesting  and visual applications to get their attention and show them",
+      "thread_id": "thread-126817e1960d",
+      "thread_depth": 0,
+      "month": "2016-12"
+    },
+    {
+      "id": "msg-ebd43a91f87e",
+      "message_id": "<1a5cdd36-9d28-7492-efff-16613b36595f@u-paris10.fr>",
+      "from_name": "Christophe Genolini",
+      "from_email_hash": "188243ef6b743b8d3cdd972d5ac76d36899f18656fb52ce7f6a8f452409f5017",
+      "date": "2016-12-13T11:20:12+01:00",
+      "subject": "[R-sig-teaching] R example applications",
+      "subject_clean": "R example applications",
+      "in_reply_to": "<AM3PR06MB1156C534D894D76BDAFB6FB78D9B0@AM3PR06MB1156.eurprd06.prod.outlook.com>",
+      "references": [
+        "<AM3PR06MB1156C534D894D76BDAFB6FB78D9B0@AM3PR06MB1156.eurprd06.prod.outlook.com>"
+      ],
+      "body_plain": "The package misc3d gives an example of a 3D representation of a volcano, then it includes it as a \ndynamic graph in a pdf file. \"Dynamic graph\" means that you can \"turn\" the graphe in the pdf and \nchange the point of view. It exists for several years now, but since nobody knows it, it is still  \nquite impressive.\n\nChristophe\n\n\nLe 13/12/2016 ? 10:56, Cave, Mark R. a ?crit :\n> I am going to be teaching an R course for beginners (for geoscience professionals)  and I would like to start with some really interesting  and visual applications to get their attention and show them the power of R before getting down to the some R basics. Any good ideas?\n>\n> Mark Cave\n>\n>\n> Dr Mark Cave\n> Medical Geology\n> Land, Soil and Coast\n> British Geological Survey\n> Keyworth\n> Nottingham\n> NG12 5GG\n> UK\n> E-mail: mrca at bgs.ac.uk<mailto:mrca at bgs.ac.uk>\n> Tel direct: 0115 9363526\n> Tel switchboard: 0115 9363100\n>\n>\n>\n>\n>    ________________________________\n> This message (and any attachments) is for the recipien...{{dropped:8}}",
+      "body_snippet": "The package misc3d gives an example of a 3D representation of a volcano, then it includes it as a \ndynamic graph in a pdf file. \"Dynamic graph\" means that you can \"turn\" the graphe in the pdf and \ncha",
+      "thread_id": "thread-126817e1960d",
+      "thread_depth": 1,
+      "month": "2016-12"
+    },
+    {
+      "id": "msg-3378cc279ef4",
+      "message_id": "<CAGSSkmi7AF4wyq=T+r1j+D0Z1swawuDUfDeZCu3FHfOPAALaWQ@mail.gmail.com>",
+      "from_name": "Nick Carchedi",
+      "from_email_hash": "ea4b840fddb83aa5f0c581d1a1ef33a753cf350acc1601834035a8171815900c",
+      "date": "2016-12-13T18:32:52-05:00",
+      "subject": "[R-sig-teaching] R example applications",
+      "subject_clean": "R example applications",
+      "in_reply_to": "<AM3PR06MB1156C534D894D76BDAFB6FB78D9B0@AM3PR06MB1156.eurprd06.prod.outlook.com>",
+      "references": [
+        "<AM3PR06MB1156C534D894D76BDAFB6FB78D9B0@AM3PR06MB1156.eurprd06.prod.outlook.com>"
+      ],
+      "body_plain": "Hi Mark, Charlotte Wickham recently built a course with us on Working with\nGeospatial Data in R. It contains tons of cool examples/visualizations that\nmay appeal to this crowd. Happy to get you and your students set up with a\nfree subscription if helpful.\n\nShe's also created a data (R) package containing all of the datasets used\nin the course: https://github.com/cwickham/geospatial\n\nCheers,\nNick\n\n-- \nNick Carchedi\nDirector of Course Development | DataCamp\n\n\nOn Tue, Dec 13, 2016 at 4:56 AM, Cave, Mark R. <mrca at bgs.ac.uk> wrote:\n\n> I am going to be teaching an R course for beginners (for geoscience\n> professionals)  and I would like to start with some really interesting  and\n> visual applications to get their attention and show them the power of R\n> before getting down to the some R basics. Any good ideas?\n>\n> Mark Cave\n>\n>\n> Dr Mark Cave\n> Medical Geology\n> Land, Soil and Coast\n> British Geological Survey\n> Keyworth\n> Nottingham\n> NG12 5GG\n> UK\n> E-mail: mrca at bgs.ac.uk<mailto:mrca at bgs.ac.uk>\n> Tel direct: 0115 9363526\n> Tel switchboard: 0115 9363100\n>\n>\n>\n>\n>   ________________________________\n> This message (and any attachments) is for the recipien...{{dropped:10}}",
+      "body_snippet": "Hi Mark, Charlotte Wickham recently built a course with us on Working with\nGeospatial Data in R. It contains tons of cool examples/visualizations that\nmay appeal to this crowd. Happy to get you and yo",
+      "thread_id": "thread-126817e1960d",
+      "thread_depth": 1,
+      "month": "2016-12"
+    },
+    {
+      "id": "msg-8747d8d820cc",
+      "message_id": "<CAE9stmfdgZsX0hhyGqKfkTyq5KacE-NRYsNsAbrqJQMYxJQUOQ@mail.gmail.com>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "57ed60c71c38f5aa7111618f7d433e719fa232f0704722ddb27973d2f4c216c5",
+      "date": "2016-12-14T11:18:02-05:00",
+      "subject": "[R-sig-teaching] Waiting to confirm page change...",
+      "subject_clean": "Waiting to confirm page change...",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\n\nI am trying to create a histogram for the variable \"sr\" in the R data\nset LifeCycleSavings$sr. But after I submit the hist code, it took long\ntime. I had to stop R session. It says \"Waiting to confirm page change...\".\n\nI have no idea what is this about?\n\nany ideas will help.\n\nwith thanks\nabou\n_____________________\nAbouEl-Makarim Aboueissa, PhD\nUniversity of Southern Maine\nDepartment of Mathematics and Statistics\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\nI am trying to create a histogram for the variable \"sr\" in the R data\nset LifeCycleSavings$sr. But after I submit the hist code, it took long\ntime. I had to stop R session. It says \"Waiting",
+      "thread_id": "thread-8747d8d820cc",
+      "thread_depth": 0,
+      "month": "2016-12"
+    },
+    {
+      "id": "msg-f7926d9c9d8f",
+      "message_id": "<CANV9buQ3Ux-d9XzPULbM26psfAbkmKTe3MV1C6t-ATFRX9OqNg@mail.gmail.com>",
+      "from_name": "Jeff Laux",
+      "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
+      "date": "2016-12-14T11:54:55-05:00",
+      "subject": "[R-sig-teaching] Waiting to confirm page change...",
+      "subject_clean": "Waiting to confirm page change...",
+      "in_reply_to": "<CAE9stmfdgZsX0hhyGqKfkTyq5KacE-NRYsNsAbrqJQMYxJQUOQ@mail.gmail.com>",
+      "references": [
+        "<CAE9stmfdgZsX0hhyGqKfkTyq5KacE-NRYsNsAbrqJQMYxJQUOQ@mail.gmail.com>"
+      ],
+      "body_plain": "This doesn't have anything to do with how to use R to teach statistics, so\nit should go to the main r-help mailing list, not the special interest\ngroup for teaching.  In addition, it will be hard for people to diagnose\nwithout a reproducible example.  When you email the main list, include code\nthat will make this happen reliably so people can work with it and figure\nout what the problem is.\n\n\nOn Wed, Dec 14, 2016 at 11:18 AM, AbouEl-Makarim Aboueissa <\nabouelmakarim1962 at gmail.com> wrote:\n\n> Dear All:\n>\n> I am trying to create a histogram for the variable \"sr\" in the R data\n> set LifeCycleSavings$sr. But after I submit the hist code, it took long\n> time. I had to stop R session. It says \"Waiting to confirm page change...\".\n>\n> I have no idea what is this about?\n>\n> any ideas will help.\n>\n> with thanks\n> abou\n> _____________________\n> AbouEl-Makarim Aboueissa, PhD\n> University of Southern Maine\n> Department of Mathematics and Statistics\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "This doesn't have anything to do with how to use R to teach statistics, so\nit should go to the main r-help mailing list, not the special interest\ngroup for teaching.  In addition, it will be hard for ",
+      "thread_id": "thread-8747d8d820cc",
+      "thread_depth": 1,
+      "month": "2016-12"
+    },
+    {
+      "id": "msg-e3864978aa69",
+      "message_id": "<CAE9stmcwkYkqz2x7mzeD4i3Ms0qUtiRD+2vAePMGoEMHxSSbDQ@mail.gmail.com>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "57ed60c71c38f5aa7111618f7d433e719fa232f0704722ddb27973d2f4c216c5",
+      "date": "2016-12-14T12:02:56-05:00",
+      "subject": "[R-sig-teaching] Waiting to confirm page change...",
+      "subject_clean": "Waiting to confirm page change...",
+      "in_reply_to": "<CANV9buQ3Ux-d9XzPULbM26psfAbkmKTe3MV1C6t-ATFRX9OqNg@mail.gmail.com>",
+      "references": [
+        "<CAE9stmfdgZsX0hhyGqKfkTyq5KacE-NRYsNsAbrqJQMYxJQUOQ@mail.gmail.com>",
+        "<CANV9buQ3Ux-d9XzPULbM26psfAbkmKTe3MV1C6t-ATFRX9OqNg@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Jeff:\n\nThank you very much.\n\nCould you please let me know what kind of questions should someone uses R\nto teach statistics ask and post in the r-sig-teaching list? This would be\nvery helpful in the future.\n\nI am using this list all the times long time ago.\n\nOnce again, thank you very much for your help.\n\nwith thanks\nabou\n\n\nOn Wed, Dec 14, 2016 at 11:54 AM, Jeff Laux <jefflaux at gmail.com> wrote:\n\n> This doesn't have anything to do with how to use R to teach statistics, so\n> it should go to the main r-help mailing list, not the special interest\n> group for teaching.  In addition, it will be hard for people to diagnose\n> without a reproducible example.  When you email the main list, include code\n> that will make this happen reliably so people can work with it and figure\n> out what the problem is.\n>\n>\n> On Wed, Dec 14, 2016 at 11:18 AM, AbouEl-Makarim Aboueissa <\n> abouelmakarim1962 at gmail.com> wrote:\n>\n>> Dear All:\n>>\n>> I am trying to create a histogram for the variable \"sr\" in the R data\n>> set LifeCycleSavings$sr. But after I submit the hist code, it took long\n>> time. I had to stop R session. It says \"Waiting to confirm page\n>> change...\".\n>>\n>> I have no idea what is this about?\n>>\n>> any ideas will help.\n>>\n>> with thanks\n>> abou\n>> _____________________\n>> AbouEl-Makarim Aboueissa, PhD\n>> University of Southern Maine\n>> Department of Mathematics and Statistics\n>>\n>>         [[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>\n>\n\n\n-- \n______________________\nAbouEl-Makarim Aboueissa, PhD\nUniversity of Southern Maine\nDepartment of Mathematics and Statistics\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear Jeff:\n\nThank you very much.\n\nCould you please let me know what kind of questions should someone uses R\nto teach statistics ask and post in the r-sig-teaching list? This would be\nvery helpful in t",
+      "thread_id": "thread-8747d8d820cc",
+      "thread_depth": 2,
+      "month": "2016-12"
+    },
+    {
+      "id": "msg-05e0b08887b1",
+      "message_id": "<CANV9buTvv7v9MRwzuurbXWUFsd8hEvdRYo2tZe_mT2_tKjZFvQ@mail.gmail.com>",
+      "from_name": "Jeff Laux",
+      "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
+      "date": "2016-12-14T12:26:12-05:00",
+      "subject": "[R-sig-teaching] Waiting to confirm page change...",
+      "subject_clean": "Waiting to confirm page change...",
+      "in_reply_to": "<CAE9stmcwkYkqz2x7mzeD4i3Ms0qUtiRD+2vAePMGoEMHxSSbDQ@mail.gmail.com>",
+      "references": [
+        "<CAE9stmfdgZsX0hhyGqKfkTyq5KacE-NRYsNsAbrqJQMYxJQUOQ@mail.gmail.com>",
+        "<CANV9buQ3Ux-d9XzPULbM26psfAbkmKTe3MV1C6t-ATFRX9OqNg@mail.gmail.com>",
+        "<CAE9stmcwkYkqz2x7mzeD4i3Ms0qUtiRD+2vAePMGoEMHxSSbDQ@mail.gmail.com>"
+      ],
+      "body_plain": "I would think the recent email to the list \"R example applications\" would\nbe a great example of what this list is for.\n\nOn Wed, Dec 14, 2016 at 12:02 PM, AbouEl-Makarim Aboueissa <\nabouelmakarim1962 at gmail.com> wrote:\n\n> Dear Jeff:\n>\n> Thank you very much.\n>\n> Could you please let me know what kind of questions should someone uses R\n> to teach statistics ask and post in the r-sig-teaching list? This would be\n> very helpful in the future.\n>\n> I am using this list all the times long time ago.\n>\n> Once again, thank you very much for your help.\n>\n> with thanks\n> abou\n>\n>\n> On Wed, Dec 14, 2016 at 11:54 AM, Jeff Laux <jefflaux at gmail.com> wrote:\n>\n>> This doesn't have anything to do with how to use R to teach statistics,\n>> so it should go to the main r-help mailing list, not the special interest\n>> group for teaching.  In addition, it will be hard for people to diagnose\n>> without a reproducible example.  When you email the main list, include code\n>> that will make this happen reliably so people can work with it and figure\n>> out what the problem is.\n>>\n>>\n>> On Wed, Dec 14, 2016 at 11:18 AM, AbouEl-Makarim Aboueissa <\n>> abouelmakarim1962 at gmail.com> wrote:\n>>\n>>> Dear All:\n>>>\n>>> I am trying to create a histogram for the variable \"sr\" in the R data\n>>> set LifeCycleSavings$sr. But after I submit the hist code, it took long\n>>> time. I had to stop R session. It says \"Waiting to confirm page\n>>> change...\".\n>>>\n>>> I have no idea what is this about?\n>>>\n>>> any ideas will help.\n>>>\n>>> with thanks\n>>> abou\n>>> _____________________\n>>> AbouEl-Makarim Aboueissa, PhD\n>>> University of Southern Maine\n>>> Department of Mathematics and Statistics\n>>>\n>>>         [[alternative HTML version deleted]]\n>>>\n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>>\n>>\n>>\n>\n>\n> --\n> ______________________\n> AbouEl-Makarim Aboueissa, PhD\n> University of Southern Maine\n> Department of Mathematics and Statistics\n>\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I would think the recent email to the list \"R example applications\" would\nbe a great example of what this list is for.\n\nOn Wed, Dec 14, 2016 at 12:02 PM, AbouEl-Makarim Aboueissa <\nabouelmakarim1962 a",
+      "thread_id": "thread-8747d8d820cc",
+      "thread_depth": 3,
+      "month": "2016-12"
+    },
+    {
+      "id": "msg-14adbc87858a",
+      "message_id": "<CA+3jU8HXYxEXaA0=DSi20ZhbsM5fg5xOME5yB3pXajgBaNw_dw@mail.gmail.com>",
+      "from_name": "Albyn Jones",
+      "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
+      "date": "2016-12-14T09:27:22-08:00",
+      "subject": "[R-sig-teaching] Waiting to confirm page change...",
+      "subject_clean": "Waiting to confirm page change...",
+      "in_reply_to": "<CAE9stmcwkYkqz2x7mzeD4i3Ms0qUtiRD+2vAePMGoEMHxSSbDQ@mail.gmail.com>",
+      "references": [
+        "<CAE9stmfdgZsX0hhyGqKfkTyq5KacE-NRYsNsAbrqJQMYxJQUOQ@mail.gmail.com>",
+        "<CANV9buQ3Ux-d9XzPULbM26psfAbkmKTe3MV1C6t-ATFRX9OqNg@mail.gmail.com>",
+        "<CAE9stmcwkYkqz2x7mzeD4i3Ms0qUtiRD+2vAePMGoEMHxSSbDQ@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Abou\n\nquestions like yours are suitable for the R-help list.  For this list,\nquestions about teaching, like \"what experiences have people had teaching\nwith the mosaic package\"?  or a recent one asking for suggestions about\nteaching geoscientists to use R, good datasets and examples to use, etc.\n\nregards,\n\nalbyn\n\nOn Wed, Dec 14, 2016 at 9:02 AM, AbouEl-Makarim Aboueissa <\nabouelmakarim1962 at gmail.com> wrote:\n\n> Dear Jeff:\n>\n> Thank you very much.\n>\n> Could you please let me know what kind of questions should someone uses R\n> to teach statistics ask and post in the r-sig-teaching list? This would be\n> very helpful in the future.\n>\n> I am using this list all the times long time ago.\n>\n> Once again, thank you very much for your help.\n>\n> with thanks\n> abou\n>\n>\n> On Wed, Dec 14, 2016 at 11:54 AM, Jeff Laux <jefflaux at gmail.com> wrote:\n>\n> > This doesn't have anything to do with how to use R to teach statistics,\n> so\n> > it should go to the main r-help mailing list, not the special interest\n> > group for teaching.  In addition, it will be hard for people to diagnose\n> > without a reproducible example.  When you email the main list, include\n> code\n> > that will make this happen reliably so people can work with it and figure\n> > out what the problem is.\n> >\n> >\n> > On Wed, Dec 14, 2016 at 11:18 AM, AbouEl-Makarim Aboueissa <\n> > abouelmakarim1962 at gmail.com> wrote:\n> >\n> >> Dear All:\n> >>\n> >> I am trying to create a histogram for the variable \"sr\" in the R data\n> >> set LifeCycleSavings$sr. But after I submit the hist code, it took long\n> >> time. I had to stop R session. It says \"Waiting to confirm page\n> >> change...\".\n> >>\n> >> I have no idea what is this about?\n> >>\n> >> any ideas will help.\n> >>\n> >> with thanks\n> >> abou\n> >> _____________________\n> >> AbouEl-Makarim Aboueissa, PhD\n> >> University of Southern Maine\n> >> Department of Mathematics and Statistics\n> >>\n> >>         [[alternative HTML version deleted]]\n> >>\n> >> _______________________________________________\n> >> R-sig-teaching at r-project.org mailing list\n> >> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >>\n> >\n> >\n>\n>\n> --\n> ______________________\n> AbouEl-Makarim Aboueissa, PhD\n> University of Southern Maine\n> Department of Mathematics and Statistics\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear Abou\n\nquestions like yours are suitable for the R-help list.  For this list,\nquestions about teaching, like \"what experiences have people had teaching\nwith the mosaic package\"?  or a recent one a",
+      "thread_id": "thread-8747d8d820cc",
+      "thread_depth": 3,
+      "month": "2016-12"
+    },
+    {
+      "id": "msg-90b9bccc4a37",
+      "message_id": "<7E097D20-512E-4B4D-A980-11E6ED6651E7@temple.edu>",
+      "from_name": "RICHARD M. HEIBERGER",
+      "from_email_hash": "4ce810eab8587777db353ea9d997b9e94d9e73af018121f9a3424238038952df",
+      "date": "2016-12-14T13:07:57-05:00",
+      "subject": "[R-sig-teaching] Waiting to confirm page change...",
+      "subject_clean": "Waiting to confirm page change...",
+      "in_reply_to": "<CAE9stmfdgZsX0hhyGqKfkTyq5KacE-NRYsNsAbrqJQMYxJQUOQ@mail.gmail.com>",
+      "references": [
+        "<CAE9stmfdgZsX0hhyGqKfkTyq5KacE-NRYsNsAbrqJQMYxJQUOQ@mail.gmail.com>"
+      ],
+      "body_plain": "It means you have inadvertently told R to check with you before clearing the previous graph.  See\n?devAskNewPage\n\nClick the graph window or enter return in the console.\n\nSent from my iPhone\n\n> On Dec 14, 2016, at 11:18, AbouEl-Makarim Aboueissa <abouelmakarim1962 at gmail.com> wrote:\n> \n> Dear All:\n> \n> I am trying to create a histogram for the variable \"sr\" in the R data\n> set LifeCycleSavings$sr. But after I submit the hist code, it took long\n> time. I had to stop R session. It says \"Waiting to confirm page change...\".\n> \n> I have no idea what is this about?\n> \n> any ideas will help.\n> \n> with thanks\n> abou\n> _____________________\n> AbouEl-Makarim Aboueissa, PhD\n> University of Southern Maine\n> Department of Mathematics and Statistics\n> \n>    [[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "It means you have inadvertently told R to check with you before clearing the previous graph.  See\n?devAskNewPage\n\nClick the graph window or enter return in the console.\n\nSent from my iPhone\n\n> On Dec ",
+      "thread_id": "thread-8747d8d820cc",
+      "thread_depth": 1,
+      "month": "2016-12"
+    },
+    {
+      "id": "msg-85565af7e80b",
+      "message_id": "<ea90d25d497e4af785b9f7962e89ba7a@PRDMAIL02.gvrd.bc.ca>",
+      "from_name": "Rudy Pante",
+      "from_email_hash": "1c68be0a0ceff7ecb8856158486cb361a6285e3dc7ae8260f2377ec46b58d730",
+      "date": "2016-12-14T22:55:11Z",
+      "subject": "[R-sig-teaching] Waiting to confirm page change...",
+      "subject_clean": "Waiting to confirm page change...",
+      "in_reply_to": "<7E097D20-512E-4B4D-A980-11E6ED6651E7@temple.edu>",
+      "references": [
+        "<CAE9stmfdgZsX0hhyGqKfkTyq5KacE-NRYsNsAbrqJQMYxJQUOQ@mail.gmail.com>",
+        "<7E097D20-512E-4B4D-A980-11E6ED6651E7@temple.edu>"
+      ],
+      "body_plain": "Please unsubscribe me from this group\n\n-----Original Message-----\nFrom: R-sig-teaching [mailto:r-sig-teaching-bounces at r-project.org] On Behalf Of RICHARD M. HEIBERGER\nSent: Wednesday, December 14, 2016 10:08 AM\nTo: AbouEl-Makarim Aboueissa\nCc: r-sig-teaching at r-project.org\nSubject: Re: [R-sig-teaching] Waiting to confirm page change...\n\nIt means you have inadvertently told R to check with you before clearing the previous graph.  See\n?devAskNewPage\n\nClick the graph window or enter return in the console.\n\nSent from my iPhone\n\n> On Dec 14, 2016, at 11:18, AbouEl-Makarim Aboueissa <abouelmakarim1962 at gmail.com> wrote:\n> \n> Dear All:\n> \n> I am trying to create a histogram for the variable \"sr\" in the R data\n> set LifeCycleSavings$sr. But after I submit the hist code, it took long\n> time. I had to stop R session. It says \"Waiting to confirm page change...\".\n> \n> I have no idea what is this about?\n> \n> any ideas will help.\n> \n> with thanks\n> abou\n> _____________________\n> AbouEl-Makarim Aboueissa, PhD\n> University of Southern Maine\n> Department of Mathematics and Statistics\n> \n>    [[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Please unsubscribe me from this group\n\n-----Original Message-----\nFrom: R-sig-teaching [mailto:r-sig-teaching-bounces at r-project.org] On Behalf Of RICHARD M. HEIBERGER\nSent: Wednesday, December 14, ",
+      "thread_id": "thread-8747d8d820cc",
+      "thread_depth": 2,
+      "month": "2016-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-126817e1960d",
+      "subject": "R example applications",
+      "message_count": 3,
+      "participants": [
+        "Cave, Mark R.",
+        "Christophe Genolini",
+        "Nick Carchedi"
+      ],
+      "started": "2016-12-13T09:56:44+00:00",
+      "last_reply": "2016-12-13T18:32:52-05:00",
+      "root_message_id": "msg-126817e1960d"
+    },
+    {
+      "id": "thread-8747d8d820cc",
+      "subject": "Waiting to confirm page change...",
+      "message_count": 7,
+      "participants": [
+        "AbouEl-Makarim Aboueissa",
+        "Albyn Jones",
+        "Jeff Laux",
+        "RICHARD M. HEIBERGER",
+        "Rudy Pante"
+      ],
+      "started": "2016-12-14T11:18:02-05:00",
+      "last_reply": "2016-12-14T22:55:11+00:00",
+      "root_message_id": "msg-8747d8d820cc"
+    }
+  ]
+}
