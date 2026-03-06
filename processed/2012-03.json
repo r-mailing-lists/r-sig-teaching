@@ -4,6 +4,363 @@
   "month": "2012-03",
   "messages": [
     {
+      "id": "msg-3a9b743cd977",
+      "message_id": "<CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>",
+      "from_name": "Dagfinn Rime",
+      "from_email_hash": "ed72405fb8d516fff88446b28a10f40a335a1f6ad951172fc70bd17cfb6ed2f3",
+      "date": "2012-03-15T14:13:13+01:00",
+      "subject": "[R-sig-teaching] Books on R-programming for newbies",
+      "subject_clean": "Books on R-programming for newbies",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nI'm new to R and need to learn how to program R, and would appreciate\nsuggestions for e.g. two books in order to get going.\n\nWhat type of books? Well, if I were to suggest books for a newcomer to\nLaTeX I would say that \"all\" you need is Lamport's book and \"The LaTeX\nCompanion\" (2nd ed). Is there something similar for R? A not-too long\nintroductory book and one more comprehensive \"reference\"-like book?\n\nMy level?\n* Statistics? I have a PhD in finance and know \"applied statistics/econometrics\"\n* Programming? I currently do all my analysis via programming\n(\"scripting\") in SAS or Eviews.\n\nThe R-project page mention 115 books? I made notice of the following:\n1. Paul Teetor. R Cookbook. O'Reilly, first edition, 2011\n2. Rob Kabacoff. R in Action. Manning, 2010.\n3. David Ruppert. Statistics and Data Analysis for Financial\nEngineering. Use R! Springer, 2010\n4. Alain F. Zuur, Elena N. Ieno, and Erik Meesters. A Beginner's Guide\nto R. Use R. Springer, 2009\n\n>From Amazon the following caught my attention:\n1. R in a Nutshell (In a Nutshell (O'Reilly))\n2. The R Book by Michael J. Crawley\n\nI have probably missed some (many), and there are probably lots of\ndifferent views. But I would appreciate any guidance and views.\n\nThanks in advance,\nDagfinn Rime\nResearch department, Norges Bank\nwww.norges-bank.no/research/rime/",
+      "body_snippet": "Dear all,\n\nI'm new to R and need to learn how to program R, and would appreciate\nsuggestions for e.g. two books in order to get going.\n\nWhat type of books? Well, if I were to suggest books for a newco",
+      "thread_id": "thread-3a9b743cd977",
+      "thread_depth": 0,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-5d90968f8b9e",
+      "message_id": "<CABkCotTrL-3-LNTOU9FJnfsqAPxXqqVvmyVf0BeqVx+UjhHJRA@mail.gmail.com>",
+      "from_name": "Manuel Spínola",
+      "from_email_hash": "c67b4a8f4e027cf75cc3544d4e04791324bee3c4417f2f5edf4561a1da2f995b",
+      "date": "2012-03-15T07:24:26-06:00",
+      "subject": "[R-sig-teaching] Books on R-programming for newbies",
+      "subject_clean": "Books on R-programming for newbies",
+      "in_reply_to": "<CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>",
+      "references": [
+        "<CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120315/9b901772/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120315/9b901772/attachment.pl>",
+      "thread_id": "thread-3a9b743cd977",
+      "thread_depth": 1,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-433474e4d47e",
+      "message_id": "<CAAmySGPkYsK33MU36-QZLxHY+QjGipm-4Lptddcd6WZ7XmNhBA@mail.gmail.com>",
+      "from_name": "R. Michael Weylandt",
+      "from_email_hash": "44e8775a589b9ef81880469e200f3cce307c7180b4289ca1696a578afb772b3a",
+      "date": "2012-03-15T09:26:36-04:00",
+      "subject": "[R-sig-teaching] Books on R-programming for newbies",
+      "subject_clean": "Books on R-programming for newbies",
+      "in_reply_to": "<CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>",
+      "references": [
+        "<CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>"
+      ],
+      "body_plain": "Hmmm, others will have their own suggestions, but here are three of\nthe big ones as far as I'm concerned:\n\nBurns -- R Inferno (free online), Intermediate Level that has an\n(almost comprehensive) review of little tricks and quirks\nChambers -- Software for Data Analysis (real book), more high-level by\nthe father of S/R but definitely gets you over the hump to \"true\nenlightenment\"\nVenables & Ripley -- S Programming [S is more or less R, but don't\nworry about that for now] (real book), by two of the \"big dogs\" of the\nS/R world, though a little old at this point, really gets you to the\ndetails of things\n\nAn intro book is a little harder to find: I've heard good things about\nMatloff's Art of R programming for someone who wants to understand R\nas a language (rather than a statistical tool if that makes sense) --\nI think most of the other intro books will spend more time teaching\nbasic stats than you'd be interested in. \"R in action\" is also pretty\nwell received and I think it's in the same vein as Matloff. No\npromises about either of these: I've only seen them in their\nproto-forms (both were web presences made into books) and haven't used\nthem myself.\n\nOf the other books you note,  O'Reily books are pretty uniformly good.\nSome people like Crawley but the \"official\" review on Crawley was\npretty scathing; it is big though...\n\nThere's also copious free documentation online (including the\nprepackaged intro material, but that's a hair terse) so don't feel\npressure to buy a \"real\" book -- GNU and all that jazz. You'll get a\nlot from reading the R-Help and R-SIG-*** [Finance I'd guess] groups\n(both actively and in archive) but sometimes they can be a little\nobscure: just note things that catch your interest.\n\nHope that helps,\n\nMichael\n\nOn Thu, Mar 15, 2012 at 9:13 AM, Dagfinn Rime <dagfinn.rime at gmail.com> wrote:\n> Dear all,\n>\n> I'm new to R and need to learn how to program R, and would appreciate\n> suggestions for e.g. two books in order to get going.\n>\n> What type of books? Well, if I were to suggest books for a newcomer to\n> LaTeX I would say that \"all\" you need is Lamport's book and \"The LaTeX\n> Companion\" (2nd ed). Is there something similar for R? A not-too long\n> introductory book and one more comprehensive \"reference\"-like book?\n>\n> My level?\n> * Statistics? I have a PhD in finance and know \"applied statistics/econometrics\"\n> * Programming? I currently do all my analysis via programming\n> (\"scripting\") in SAS or Eviews.\n>\n> The R-project page mention 115 books? I made notice of the following:\n> 1. Paul Teetor. R Cookbook. O'Reilly, first edition, 2011\n> 2. Rob Kabacoff. R in Action. Manning, 2010.\n> 3. David Ruppert. Statistics and Data Analysis for Financial\n> Engineering. Use R! Springer, 2010\n> 4. Alain F. Zuur, Elena N. Ieno, and Erik Meesters. A Beginner's Guide\n> to R. Use R. Springer, 2009\n>\n> >From Amazon the following caught my attention:\n> 1. R in a Nutshell (In a Nutshell (O'Reilly))\n> 2. The R Book by Michael J. Crawley\n>\n> I have probably missed some (many), and there are probably lots of\n> different views. But I would appreciate any guidance and views.\n>\n> Thanks in advance,\n> Dagfinn Rime\n> Research department, Norges Bank\n> www.norges-bank.no/research/rime/\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "Hmmm, others will have their own suggestions, but here are three of\nthe big ones as far as I'm concerned:\n\nBurns -- R Inferno (free online), Intermediate Level that has an\n(almost comprehensive) revie",
+      "thread_id": "thread-3a9b743cd977",
+      "thread_depth": 1,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-d1b979ddc6d3",
+      "message_id": "<6144_1331818522_4F61F01A_6144_11338_4_OF725DF196.AB9FA47D-ONC12579C2.004A4DAF-C12579C2.004AA5B7@actelion.com>",
+      "from_name": "axel.klenk at actelion.com",
+      "from_email_hash": "7038402354e1f6478ce75c14df07e008f816c9e7d8a3bc6519e4f945c6b259c7",
+      "date": "2012-03-15T14:34:28+01:00",
+      "subject": "[R-sig-teaching] Books on R-programming for newbies",
+      "subject_clean": "Books on R-programming for newbies",
+      "in_reply_to": "<CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>",
+      "references": [
+        "<CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Dagfinn, \n\nsince you know SAS, Bob Munchen's \"R for SAS and SPSS Users\" may be \nuseful.\n\nCheers, \n\n - axel\n\n\nAxel Klenk\nResearch Informatician\nActelion Pharmaceuticals Ltd / Gewerbestrasse 16 / CH-4123 Allschwil / \nSwitzerland\n\n\n\n\nFrom:\nDagfinn Rime <dagfinn.rime at gmail.com>\nTo:\nr-sig-teaching at r-project.org\nDate:\n15.03.2012 14:12\nSubject:\n[R-sig-teaching] Books on R-programming for newbies\nSent by:\nr-sig-teaching-bounces at r-project.org\n\n\n\nDear all,\n\nI'm new to R and need to learn how to program R, and would appreciate\nsuggestions for e.g. two books in order to get going.\n\nWhat type of books? Well, if I were to suggest books for a newcomer to\nLaTeX I would say that \"all\" you need is Lamport's book and \"The LaTeX\nCompanion\" (2nd ed). Is there something similar for R? A not-too long\nintroductory book and one more comprehensive \"reference\"-like book?\n\nMy level?\n* Statistics? I have a PhD in finance and know \"applied \nstatistics/econometrics\"\n* Programming? I currently do all my analysis via programming\n(\"scripting\") in SAS or Eviews.\n\nThe R-project page mention 115 books? I made notice of the following:\n1. Paul Teetor. R Cookbook. O'Reilly, first edition, 2011\n2. Rob Kabacoff. R in Action. Manning, 2010.\n3. David Ruppert. Statistics and Data Analysis for Financial\nEngineering. Use R! Springer, 2010\n4. Alain F. Zuur, Elena N. Ieno, and Erik Meesters. A Beginner's Guide\nto R. Use R. Springer, 2009\n\n>From Amazon the following caught my attention:\n1. R in a Nutshell (In a Nutshell (O'Reilly))\n2. The R Book by Michael J. Crawley\n\nI have probably missed some (many), and there are probably lots of\ndifferent views. But I would appreciate any guidance and views.\n\nThanks in advance,\nDagfinn Rime\nResearch department, Norges Bank\nwww.norges-bank.no/research/rime/\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\n\n\nThe information of this email and in any file transmitted with it is strictly confidential and may be legally privileged.\nIt is intended solely for the addressee. If you are not the intended recipient, any copying, distribution or any other use of this email is prohibited and may be unlawful. In such case, you should please notify the sender immediately and destroy this email.\nThe content of this email is not legally binding unless confirmed by letter.\nAny views expressed in this message are those of the individual sender, except where the message states otherwise and the sender is authorised to state them to be the views of the sender's company. For further information about Actelion please see our website at http://www.actelion.com",
+      "body_snippet": "Dear Dagfinn, \n\nsince you know SAS, Bob Munchen's \"R for SAS and SPSS Users\" may be \nuseful.\n\nCheers, \n\n - axel\n\n\nAxel Klenk\nResearch Informatician\nActelion Pharmaceuticals Ltd / Gewerbestrasse 16 / C",
+      "thread_id": "thread-3a9b743cd977",
+      "thread_depth": 1,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-e65299c663ae",
+      "message_id": "<4F61F942.5020206@gmail.com>",
+      "from_name": "Tim Appelhans",
+      "from_email_hash": "002be206cab7c08f8dfb7e8c235f1ee230151bbc86acacc0fdef4c4e6fd98dfe",
+      "date": "2012-03-15T15:14:26+01:00",
+      "subject": "[R-sig-teaching] Books on R-programming for newbies",
+      "subject_clean": "Books on R-programming for newbies",
+      "in_reply_to": "<CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>",
+      "references": [
+        "<CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>"
+      ],
+      "body_plain": "Hello Dagfinn,\nI am teaching R for porgramming purposes to Geography bachelor students. \nIn our course we use Norman Matloff's 'The art of R programming'.\nBoth myself and the students (as far as I know) rate it very highly as \nit really is an easy read and best of all, it does not confuse the not \nso statistically inclined as it really focusses on software design \nrather than statistical scripting.\n\nHope that helps,\n\nTim\n\nOn 15/3/2012 14:13, Dagfinn Rime wrote:\n> Dear all,\n>\n> I'm new to R and need to learn how to program R, and would appreciate\n> suggestions for e.g. two books in order to get going.\n>\n> What type of books? Well, if I were to suggest books for a newcomer to\n> LaTeX I would say that \"all\" you need is Lamport's book and \"The LaTeX\n> Companion\" (2nd ed). Is there something similar for R? A not-too long\n> introductory book and one more comprehensive \"reference\"-like book?\n>\n> My level?\n> * Statistics? I have a PhD in finance and know \"applied statistics/econometrics\"\n> * Programming? I currently do all my analysis via programming\n> (\"scripting\") in SAS or Eviews.\n>\n> The R-project page mention 115 books? I made notice of the following:\n> 1. Paul Teetor. R Cookbook. O'Reilly, first edition, 2011\n> 2. Rob Kabacoff. R in Action. Manning, 2010.\n> 3. David Ruppert. Statistics and Data Analysis for Financial\n> Engineering. Use R! Springer, 2010\n> 4. Alain F. Zuur, Elena N. Ieno, and Erik Meesters. A Beginner's Guide\n> to R. Use R. Springer, 2009\n>\n> > From Amazon the following caught my attention:\n> 1. R in a Nutshell (In a Nutshell (O'Reilly))\n> 2. The R Book by Michael J. Crawley\n>\n> I have probably missed some (many), and there are probably lots of\n> different views. But I would appreciate any guidance and views.\n>\n> Thanks in advance,\n> Dagfinn Rime\n> Research department, Norges Bank\n> www.norges-bank.no/research/rime/\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n-- \n#####################################\nTim Appelhans\nDepartment of Geography\nEnvironmental Computer Sciences\nPhilipps Universit?t Marburg\nDeutschhausstra?e 12\n35032 Marburg (Paketpost: 35037 Marburg)\nGermany\n\nTel +49 (0) 6421 28-25957",
+      "body_snippet": "Hello Dagfinn,\nI am teaching R for porgramming purposes to Geography bachelor students. \nIn our course we use Norman Matloff's 'The art of R programming'.\nBoth myself and the students (as far as I kno",
+      "thread_id": "thread-3a9b743cd977",
+      "thread_depth": 1,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-e0e956f44d5c",
+      "message_id": "<946A1D96-B39C-4145-B14A-DC572851D8DE@joelschwartz.com>",
+      "from_name": "Joel Schwartz",
+      "from_email_hash": "c0ae5a3e9c619e01102404769ffc380b8804be776bffd93f2f71cf012d12b506",
+      "date": "2012-03-15T08:42:16-07:00",
+      "subject": "[R-sig-teaching] Books on R-programming for newbies",
+      "subject_clean": "Books on R-programming for newbies",
+      "in_reply_to": "<CABkCotTrL-3-LNTOU9FJnfsqAPxXqqVvmyVf0BeqVx+UjhHJRA@mail.gmail.com>",
+      "references": [
+        "<CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>",
+        "<CABkCotTrL-3-LNTOU9FJnfsqAPxXqqVvmyVf0BeqVx+UjhHJRA@mail.gmail.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120315/ece939ec/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120315/ece939ec/attachment.pl>",
+      "thread_id": "thread-3a9b743cd977",
+      "thread_depth": 2,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-febb16ce5aa8",
+      "message_id": "<93F3D6B7-8B77-4A67-8101-AB311D37492B@joelschwartz.com>",
+      "from_name": "Joel Schwartz",
+      "from_email_hash": "c0ae5a3e9c619e01102404769ffc380b8804be776bffd93f2f71cf012d12b506",
+      "date": "2012-03-15T08:42:19-07:00",
+      "subject": "[R-sig-teaching] Books on R-programming for newbies",
+      "subject_clean": "Books on R-programming for newbies",
+      "in_reply_to": "<CABkCotTrL-3-LNTOU9FJnfsqAPxXqqVvmyVf0BeqVx+UjhHJRA@mail.gmail.com>",
+      "references": [
+        "<CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>",
+        "<CABkCotTrL-3-LNTOU9FJnfsqAPxXqqVvmyVf0BeqVx+UjhHJRA@mail.gmail.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120315/e1527352/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120315/e1527352/attachment.pl>",
+      "thread_id": "thread-3a9b743cd977",
+      "thread_depth": 2,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-ab3581744ce5",
+      "message_id": "<4F664144020000A6000BEE9E@uct5.uct.usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2012-03-18T20:10:44-04:00",
+      "subject": "[R-sig-teaching] Raw Data used in Biostatistical Analysis by Zar",
+      "subject_clean": "Raw Data used in Biostatistical Analysis by Zar",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120318/7d9a3061/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120318/7d9a3061/attachment.pl>",
+      "thread_id": "thread-ab3581744ce5",
+      "thread_depth": 0,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-16d862e53815",
+      "message_id": "<4F678E77020000A6000BF0BB@uct5.uct.usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2012-03-19T19:52:23-04:00",
+      "subject": "[R-sig-teaching] scatter plot of grouping data",
+      "subject_clean": "scatter plot of grouping data",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120319/5f359401/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120319/5f359401/attachment.pl>",
+      "thread_id": "thread-16d862e53815",
+      "thread_depth": 0,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-b082f7c1a021",
+      "message_id": "<4F67CE47020000A6000BF0CD@uct5.uct.usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2012-03-20T00:24:39-04:00",
+      "subject": "[R-sig-teaching] Create new variables",
+      "subject_clean": "Create new variables",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120320/a188f1fd/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120320/a188f1fd/attachment.pl>",
+      "thread_id": "thread-b082f7c1a021",
+      "thread_depth": 0,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-2a239354a4e2",
+      "message_id": "<Pine.SOC.4.64.1203200831350.11497@solcom.hrz.uni-giessen.de>",
+      "from_name": "Gerrit Eichner",
+      "from_email_hash": "cdef7a656b475d89123a9cb4a4342d0858e21a584f2da8bbc8dacc4fde4a736a",
+      "date": "2012-03-20T08:34:38+01:00",
+      "subject": "[R-sig-teaching] Create new variables",
+      "subject_clean": "Create new variables",
+      "in_reply_to": "<4F67CE47020000A6000BF0CD@uct5.uct.usm.maine.edu>",
+      "references": [
+        "<4F67CE47020000A6000BF0CD@uct5.uct.usm.maine.edu>"
+      ],
+      "body_plain": "Hello, Abou,\n\ntry\n\ndatatest1$z <- 1- datatest1$type\ndatatest1$xz <- datatest1$x * datatest$z\n\nand try reading an introductory manual/book on R.\n\n  Hth  --  Gerrit\n\n---------------------------------------------------------------------\nDr. Gerrit Eichner                   Mathematical Institute, Room 212\ngerrit.eichner at math.uni-giessen.de   Justus-Liebig-University Giessen\nTel: +49-(0)641-99-32104          Arndtstr. 2, 35392 Giessen, Germany\nFax: +49-(0)641-99-32109        http://www.uni-giessen.de/cms/eichner\n---------------------------------------------------------------------\n\nOn Tue, 20 Mar 2012, AbouEl-Makarim Aboueissa wrote:\n\n> Dear All:\n>\n> I need to create new variables based on the old data set:\n>\n>\n> old data:\n> ===================\n>\n> type      x     y\n> 0          3     4\n> 0          2     2\n> 0          4     55\n> 0          3     4\n> 1          2     3\n> 1         11    22\n> 1         2      33\n> 0         34     11\n> 1         2       6\n> 0         35     77\n> 1         64     8\n> 0         32     12\n> 0         12     40\n> 0         67     30\n> 0         3       43\n> 1         4       23\n> 1         2       15\n> 1         5       51\n> 0         8       6\n> 0         9       23\n> 1         56     16\n> 1         43     27\n> 1         21     17\n> 0         12     27\n> 0         34     47\n>\n>\n>\n>\n> datatest<-read.table(file=\"F:\\\\00 - Spring 2012\\\\STA 591\\\\notes\\\\Module 2 - Linear Regression and Correlation\\\\Zar chapters 17-20\\\\olddata.txt\",head=TRUE)\n>\n> ##### datatest\n>\n> datatest1<-data.frame(type =datatest[,1], x = datatest[,2], y = datatest[,3])\n>\n> ##### datatest1\n>\n>\n> I want to get:\n> ===============\n>\n> Create a new variable z as follows:\n>\n> if type =0 then z=1   and if type = 1 then z=0\n>\n> then create one more variable called xz = x*z\n>\n>\n> new data should look like this one\n> ===============================\n>\n>\n> type     x     y      z      xz\n> 0         3     4      1      3\n> 0         2     2      1      2\n> 0         4     55    1      4\n> 0         3     4      1      3\n> 1         2     3      0      0\n> 1        11    22     0      0\n> 1         2     33     0      0\n> 0        34    11     1      34\n> 1        2      6       0      0\n> 0        35     77    1      35\n> 1        64     8      0      0\n> 0        32     12    1      32\n> 0        12     40    1      12\n> 0        67     30    1      67\n> 0        3       43    1      3\n> 1        4       23    0      0\n> 1        2       15    0      0\n> 1        5       51    0      0\n> 0        8       6      1      8\n> 0        9       23    1      9\n> 1        56     16    0      0\n> 1        43     27    0      0\n> 1        21     17    0      0\n> 0        12     27    1      12\n> 0        34     47    1      34\n>\n>\n>\n> Thank you very much\n> abou\n>\n>\n>\n>\n>\n> ==========================\n> AbouEl-Makarim Aboueissa, Ph.D.\n> Associate Professor of Statistics\n> Graduate Program Coordinator\n> Department of Mathematics & Statistics\n> University of Southern Maine\n> 96 Falmouth Street\n> P.O. Box 9300\n> Portland, ME 04104-9300\n> USA\n>\n>\n> Tel: (207) 228-8389\n> Fax: (207) 780-5607\n> Email: aaboueissa at usm.maine.edu\n>          aboueiss at yahoo.com\n>\n> Office: 301C Payson Smith\n>\n>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_snippet": "Hello, Abou,\n\ntry\n\ndatatest1$z <- 1- datatest1$type\ndatatest1$xz <- datatest1$x * datatest$z\n\nand try reading an introductory manual/book on R.\n\n  Hth  --  Gerrit\n\n------------------------------------",
+      "thread_id": "thread-b082f7c1a021",
+      "thread_depth": 1,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-0e5140c0b9f6",
+      "message_id": "<CAPvvxJWjZN-Ee-ULugLLZhApH_e6JAgcqbDVt8_SjbCUUyFiuw@mail.gmail.com>",
+      "from_name": "Daróczi Gergely",
+      "from_email_hash": "aeb0eac648d0cb52335f455be8c326aa06393bf8216b42a7fd58422b3c41a818",
+      "date": "2012-03-20T10:27:35+01:00",
+      "subject": "[R-sig-teaching] scatter plot of grouping data",
+      "subject_clean": "scatter plot of grouping data",
+      "in_reply_to": "<4F678E77020000A6000BF0BB@uct5.uct.usm.maine.edu>",
+      "references": [
+        "<4F678E77020000A6000BF0BB@uct5.uct.usm.maine.edu>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120320/18450460/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120320/18450460/attachment.pl>",
+      "thread_id": "thread-16d862e53815",
+      "thread_depth": 1,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-d985322c4ac5",
+      "message_id": "<1332320392.26075.YahooMailNeo@web120603.mail.ne1.yahoo.com>",
+      "from_name": "Iasonas Lamprianou",
+      "from_email_hash": "adc4000e6b6f587081cbb01b701b71b0f2e10f18fd9bd7b9d65e3cde6312df9f",
+      "date": "2012-03-21T01:59:52-07:00",
+      "subject": "[R-sig-teaching] regerssion issues",
+      "subject_clean": "regerssion issues",
+      "in_reply_to": "<mailman.7.1331895602.13961.r-sig-teaching@r-project.org>",
+      "references": [
+        "<mailman.7.1331895602.13961.r-sig-teaching@r-project.org>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120321/33d34d4c/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120321/33d34d4c/attachment.pl>",
+      "thread_id": "thread-d985322c4ac5",
+      "thread_depth": 0,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-aea149ecd243",
+      "message_id": "<CAHhr5TWEQaLOi1On8Cc47DdUZVFa4f0zTd=6K136bMcUQvxoig@mail.gmail.com>",
+      "from_name": "Donald Pianto",
+      "from_email_hash": "11075fbf674bae591e763266fadd4713593395669dec485e8abd857520fc93f6",
+      "date": "2012-03-21T11:50:49-03:00",
+      "subject": "[R-sig-teaching] regerssion issues",
+      "subject_clean": "regerssion issues",
+      "in_reply_to": "<1332320392.26075.YahooMailNeo@web120603.mail.ne1.yahoo.com>",
+      "references": [
+        "<mailman.7.1331895602.13961.r-sig-teaching@r-project.org>",
+        "<1332320392.26075.YahooMailNeo@web120603.mail.ne1.yahoo.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120321/d90b0ce3/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120321/d90b0ce3/attachment.pl>",
+      "thread_id": "thread-d985322c4ac5",
+      "thread_depth": 1,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-49e44019e995",
+      "message_id": "<4F69EDC3.8040607@gmail.com>",
+      "from_name": "Jeff Laux",
+      "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
+      "date": "2012-03-21T11:03:31-04:00",
+      "subject": "[R-sig-teaching] regerssion issues",
+      "subject_clean": "regerssion issues",
+      "in_reply_to": "<1332320392.26075.YahooMailNeo@web120603.mail.ne1.yahoo.com>",
+      "references": [
+        "<mailman.7.1331895602.13961.r-sig-teaching@r-project.org>",
+        "<1332320392.26075.YahooMailNeo@web120603.mail.ne1.yahoo.com>"
+      ],
+      "body_plain": "Q1:  Using many independent variables does not *cause* \nmulticollinearity.  These are simply different issues.  It would lead to \nthe problem of multiple comparisons, however, with 50k cases, it's hard \nto see that as a likely issue here.  Given the number of cases, this \nmust be observational research with archival data.  That can lead to a \nnumber of issues if the researcher is trying to make causal claims.  \nSome good background books for addressing such issues would be:\n     - Shadish, Cook & Campbell, \"Experimental & Quasi-experimental Designs\"\n     - Rosenbaum, \"Observational Studies\"\n     - Pearl, \"Causality\"\n     - Rothman, et al., \"Modern Epidemiology\"\n\nQ2:  It is quite reasonable to imagine that variables are often, in \nreality, related to each other in some way, and all significance tests \ndo is assess the power of your study.  With 2k cases, I would suspect \nthat the estimate of the association may be fairly accurate (although \nthis could depend of various factors regarding how the data were \nhandled).  The question of practical significance is an important one.  \nAn easy first step is to look at Kirk's famous paper, Kirk, \"Practical \nsignificance; An idea whose time has come\", a google scholar search \ncould tell you about subsequent papers that cited that, and give you a \nstart through the related literature.\n\nBest,\nJeff\n\n\nOn 3/21/2012 4:59 AM, Iasonas Lamprianou wrote:\n> Dear all,\n> I have a question which can be expanded to the geeneral context of regression\n> modelling in general. If you feel that this question is beyond the scope of this list, please say so and I will apologize. However, this has to do with teaching.\n>\n>\n> Question 1:  I am revieweing a paper and the author uses a sample size of around 50,000 cases to run a logistic regression. He is using 22 independent\n> variables. Using too many independent variables may cause collinearity\n> problems. Beyond this, however, I am not aware of any other problems caused by\n> using too many variables in a model. However, this is also related to the problem of massively throwing tens of variables in amodel and then waiting for statistically significant results. Can anyone suggest relevant literature to give to my students to read?\n>\n>\n> Question 2: Some coefficients of a diffrent logistic model in the same paper are marginally significant e.g. b=-0.18 and se=0.08. The only reason this is signficant is because the researcher used in this model a large sample size (around two thousand cases N=2000). The lower bound of the confidence interval is almost zero. Can anyone suggest a good reference to say that in such a case we should also check the \"practical significance\" and since the lower bound is so close to zero, we should be careful on what we claim about the effect?\n>\n> Thank you for your time\n> Jason \n>\n>\n>   \n> Dr. Iasonas Lamprianou\n> Department of Social and Political Sciences\n> University of Cyprus\n>\n>\n>\n>\n>    \n>>      \n> \t[[alternative HTML version deleted]]\n>\n>\n> -----\n> No virus found in this message.\n> Checked by AVG - www.avg.com\n> Version: 2012.0.1913 / Virus Database: 2114/4882 - Release Date: 03/20/12\n>    \n>\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n> -----\n> No virus found in this message.\n> Checked by AVG - www.avg.com\n> Version: 2012.0.1913 / Virus Database: 2114/4882 - Release Date: 03/20/12",
+      "body_snippet": "Q1:  Using many independent variables does not *cause* \nmulticollinearity.  These are simply different issues.  It would lead to \nthe problem of multiple comparisons, however, with 50k cases, it's har",
+      "thread_id": "thread-d985322c4ac5",
+      "thread_depth": 1,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-bcbcab2a8cc8",
+      "message_id": "<1332399195.44770.YahooMailNeo@web120601.mail.ne1.yahoo.com>",
+      "from_name": "Iasonas Lamprianou",
+      "from_email_hash": "adc4000e6b6f587081cbb01b701b71b0f2e10f18fd9bd7b9d65e3cde6312df9f",
+      "date": "2012-03-21T23:53:15-07:00",
+      "subject": "[R-sig-teaching] regerssion issues",
+      "subject_clean": "regerssion issues",
+      "in_reply_to": "<CAHhr5TWEQaLOi1On8Cc47DdUZVFa4f0zTd=6K136bMcUQvxoig@mail.gmail.com>",
+      "references": [
+        "<mailman.7.1331895602.13961.r-sig-teaching@r-project.org>",
+        "<1332320392.26075.YahooMailNeo@web120603.mail.ne1.yahoo.com>",
+        "<CAHhr5TWEQaLOi1On8Cc47DdUZVFa4f0zTd=6K136bMcUQvxoig@mail.gmail.com>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120321/e1c022b5/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120321/e1c022b5/attachment.pl>",
+      "thread_id": "thread-d985322c4ac5",
+      "thread_depth": 2,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-93a6bfcd8f17",
+      "message_id": "<4F6EDE82020000A6000BFAB1@uct5.uct.usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2012-03-25T08:59:46-04:00",
+      "subject": "[R-sig-teaching] graphing circles",
+      "subject_clean": "graphing circles",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120325/3547488a/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120325/3547488a/attachment.pl>",
+      "thread_id": "thread-93a6bfcd8f17",
+      "thread_depth": 0,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-6d2116c60abc",
+      "message_id": "<4F6F1DD5.7070406@gmail.com>",
+      "from_name": "Jeff Laux",
+      "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
+      "date": "2012-03-25T09:29:57-04:00",
+      "subject": "[R-sig-teaching] graphing circles",
+      "subject_clean": "graphing circles",
+      "in_reply_to": "<4F6EDE82020000A6000BFAB1@uct5.uct.usm.maine.edu>",
+      "references": [
+        "<4F6EDE82020000A6000BFAB1@uct5.uct.usm.maine.edu>"
+      ],
+      "body_plain": "It doesn't seem silly to me; this is a standard figure/metaphor for \nteaching reliability & validity.  You could make such a figure in R, but \nI would probably just use a drawing program (e.g., Serif, which can be \ndownloaded for free).  Alternatively, you could just search the internet \nfor one, as I've seen several versions of this before.  -Jeff\n\n\nOn 3/25/2012 8:59 AM, AbouEl-Makarim Aboueissa wrote:\n> Dear R users:\n>\n> It may be a silly question. I am trying to create a target diagram of 4 circles inside each other and adding some dots to describe different situations of validity and reliability. I need three of them.\n>\n> one with all dots around the target.\n> one with all dots in about one place, but far from the target.\n> one with randomly scattered dots.\n>\n>   I tried my best, but could not succeed. Can someone help me with creating such graph.\n>\n> Thank you very much\n> abou\n>\n>\n>\n> ==========================\n> AbouEl-Makarim Aboueissa, Ph.D.\n> Associate Professor of Statistics\n> Graduate Program Coordinator\n> Department of Mathematics&  Statistics\n> University of Southern Maine\n> 96 Falmouth Street\n> P.O. Box 9300\n> Portland, ME 04104-9300\n> USA\n>\n>\n> Tel: (207) 228-8389\n> Fax: (207) 780-5607\n> Email: aaboueissa at usm.maine.edu\n>            aboueiss at yahoo.com\n>\n> Office: 301C Payson Smith\n>\n>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n> -----\n> No virus found in this message.\n> Checked by AVG - www.avg.com\n> Version: 2012.0.1913 / Virus Database: 2114/4891 - Release Date: 03/24/12\n>\n>",
+      "body_snippet": "It doesn't seem silly to me; this is a standard figure/metaphor for \nteaching reliability & validity.  You could make such a figure in R, but \nI would probably just use a drawing program (e.g., Serif,",
+      "thread_id": "thread-93a6bfcd8f17",
+      "thread_depth": 1,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-fbc44cd31589",
+      "message_id": "<BA1F4E74-C4E6-4F64-9CCB-A4A8C3E6465D@revelle.net>",
+      "from_name": "William Revelle",
+      "from_email_hash": "17775642d38a89586519cdb4da8b9881c3da6cb4b5abf51dc2b37a23be377688",
+      "date": "2012-03-25T22:55:58-05:00",
+      "subject": "[R-sig-teaching] graphing circles",
+      "subject_clean": "graphing circles",
+      "in_reply_to": "<4F6F1DD5.7070406@gmail.com>",
+      "references": [
+        "<4F6EDE82020000A6000BFAB1@uct5.uct.usm.maine.edu>",
+        "<4F6F1DD5.7070406@gmail.com>"
+      ],
+      "body_plain": "Perhaps I have too much time on my hands as I try to not think about my psychometrics course tomorrow:\n\nlibrary(psych)    #needed for the dia.ellipse function\n#create a new function\n\n\"bullseye\" <- function(x,y,n) {\nfor(i in 1:n) {dia.ellipse(x,y,e.size=i)}}\n\nplot(NA,xlim=c(0,10),ylim=c(0,10),axes=FALSE,xlab=\"\",ylab=\"\")   #make a frame for the pictures\n\n#Reliable and vallid\nx=3\ny=3\nn=5\nlim<-c(-.2,.2)\nbullseye(x,y,4)\npoints(x+runif(n,lim[1],lim[2]),y+runif(n,lim[1],lim[2]),pch=16)\n\n#reliable and invalid\nx=7\ny=3\nbullseye(x,y,4)\npoints(x+1+runif(n,lim[1],lim[2]),y+1+runif(n,lim[1],lim[2]),pch=16)\n\n#unreliable, but valid\nx=5\ny=8\nn=5\nlim<-c(-1,1)\nbullseye(x,y,4)\npoints(x+runif(n,lim[1],lim[2]),y+runif(n,lim[1],lim[2]),pch=16)\n\n\nBill\n\n\n\nOn Mar 25, 2012, at 8:29 AM, Jeff Laux wrote:\n\n> It doesn't seem silly to me; this is a standard figure/metaphor for teaching reliability & validity.  You could make such a figure in R, but I would probably just use a drawing program (e.g., Serif, which can be downloaded for free).  Alternatively, you could just search the internet for one, as I've seen several versions of this before.  -Jeff\n> \n> \n> On 3/25/2012 8:59 AM, AbouEl-Makarim Aboueissa wrote:\n>> Dear R users:\n>> \n>> It may be a silly question. I am trying to create a target diagram of 4 circles inside each other and adding some dots to describe different situations of validity and reliability. I need three of them.\n>> \n>> one with all dots around the target.\n>> one with all dots in about one place, but far from the target.\n>> one with randomly scattered dots.\n>> \n>>  I tried my best, but could not succeed. Can someone help me with creating such graph.\n>> \n>> Thank you very much\n>> abou\n>> \n>> \n>> \n>> ==========================\n>> AbouEl-Makarim Aboueissa, Ph.D.\n>> Associate Professor of Statistics\n>> Graduate Program Coordinator\n>> Department of Mathematics&  Statistics\n>> University of Southern Maine\n>> 96 Falmouth Street\n>> P.O. Box 9300\n>> Portland, ME 04104-9300\n>> USA\n>> \n>> \n>> Tel: (207) 228-8389\n>> Fax: (207) 780-5607\n>> Email: aaboueissa at usm.maine.edu\n>>           aboueiss at yahoo.com\n>> \n>> Office: 301C Payson Smith\n>> \n>> \n>> \t[[alternative HTML version deleted]]\n>> \n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>> \n>> -----\n>> No virus found in this message.\n>> Checked by AVG - www.avg.com\n>> Version: 2012.0.1913 / Virus Database: 2114/4891 - Release Date: 03/24/12\n>> \n>> \n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n\nWilliam Revelle\t\t           http://personality-project.org/revelle.html\nProfessor\t\t\t           http://personality-project.org\nDepartment of Psychology   http://www.wcas.northwestern.edu/psych/\nNorthwestern University\t   http://www.northwestern.edu/\nUse R for psychology             http://personality-project.org/r\nIt is 5 minutes to midnight\t   http://www.thebulletin.org",
+      "body_snippet": "Perhaps I have too much time on my hands as I try to not think about my psychometrics course tomorrow:\n\nlibrary(psych)    #needed for the dia.ellipse function\n#create a new function\n\n\"bullseye\" <- fun",
+      "thread_id": "thread-93a6bfcd8f17",
+      "thread_depth": 2,
+      "month": "2012-03"
+    },
+    {
+      "id": "msg-3f1d95e0674b",
+      "message_id": "<1332766955.4988.12.camel@prometheus.geog.ucl.ac.uk>",
+      "from_name": "Gavin Simpson",
+      "from_email_hash": "de29578fbbb79e6883c8203a1faebef3fddd10c08cc122f35e5ad109dc250099",
+      "date": "2012-03-26T14:02:35+01:00",
+      "subject": "[R-sig-teaching] graphing circles",
+      "subject_clean": "graphing circles",
+      "in_reply_to": "<4F6EDE82020000A6000BFAB1@uct5.uct.usm.maine.edu>",
+      "references": [
+        "<4F6EDE82020000A6000BFAB1@uct5.uct.usm.maine.edu>"
+      ],
+      "body_plain": "Please can you use the **correct** list for your questions regarding R!?\nThis is a list for a \"Special Interest Group (SIG) on teaching\nstatistics with R\". Your questions are suitable for the general R-Help\nmailing list or the [r] tag on StackOverflow:\n\nhttp://stackoverflow.com/questions/tagged/r\n\nG\n\nOn Sun, 2012-03-25 at 08:59 -0400, AbouEl-Makarim Aboueissa wrote:\n> Dear R users:\n>  \n> It may be a silly question. I am trying to create a target diagram of 4 circles inside each other and adding some dots to describe different situations of validity and reliability. I need three of them.\n>  \n> one with all dots around the target.\n> one with all dots in about one place, but far from the target.\n> one with randomly scattered dots.\n>  \n>  I tried my best, but could not succeed. Can someone help me with creating such graph.\n>  \n> Thank you very much\n> abou\n>  \n> \n> \n> ==========================\n> AbouEl-Makarim Aboueissa, Ph.D.\n> Associate Professor of Statistics\n> Graduate Program Coordinator\n> Department of Mathematics & Statistics\n> University of Southern Maine\n> 96 Falmouth Street\n> P.O. Box 9300\n> Portland, ME 04104-9300\n> USA\n>  \n> \n> Tel: (207) 228-8389\n> Fax: (207) 780-5607\n> Email: aaboueissa at usm.maine.edu\n>           aboueiss at yahoo.com\n>  \n> Office: 301C Payson Smith\n>  \n> \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n\n-- \n%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%\n Dr. Gavin Simpson             [t] +44 (0)20 7679 0522\n ECRC, UCL Geography,          [f] +44 (0)20 7679 0565\n Pearson Building,             [e] gavin.simpsonATNOSPAMucl.ac.uk\n Gower Street, London          [w] http://www.ucl.ac.uk/~ucfagls/\n UK. WC1E 6BT.                 [w] http://www.freshwaters.org.uk\n%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%",
+      "body_snippet": "Please can you use the **correct** list for your questions regarding R!?\nThis is a list for a \"Special Interest Group (SIG) on teaching\nstatistics with R\". Your questions are suitable for the general ",
+      "thread_id": "thread-93a6bfcd8f17",
+      "thread_depth": 1,
+      "month": "2012-03"
+    },
+    {
       "id": "msg-b8488599c701",
       "message_id": "<4F776335020000A6000C06CD@uct5.uct.usm.maine.edu>",
       "from_name": "AbouEl-Makarim Aboueissa",
@@ -80,6 +437,84 @@
     }
   ],
   "threads": [
+    {
+      "id": "thread-3a9b743cd977",
+      "subject": "Books on R-programming for newbies",
+      "message_count": 7,
+      "participants": [
+        "Dagfinn Rime",
+        "Joel Schwartz",
+        "Manuel Spínola",
+        "R. Michael Weylandt",
+        "Tim Appelhans",
+        "axel.klenk at actelion.com"
+      ],
+      "started": "2012-03-15T14:13:13+01:00",
+      "last_reply": "2012-03-15T08:42:19-07:00",
+      "root_message_id": "msg-3a9b743cd977"
+    },
+    {
+      "id": "thread-ab3581744ce5",
+      "subject": "Raw Data used in Biostatistical Analysis by Zar",
+      "message_count": 1,
+      "participants": [
+        "AbouEl-Makarim Aboueissa"
+      ],
+      "started": "2012-03-18T20:10:44-04:00",
+      "last_reply": "2012-03-18T20:10:44-04:00",
+      "root_message_id": "msg-ab3581744ce5"
+    },
+    {
+      "id": "thread-16d862e53815",
+      "subject": "scatter plot of grouping data",
+      "message_count": 2,
+      "participants": [
+        "AbouEl-Makarim Aboueissa",
+        "Daróczi Gergely"
+      ],
+      "started": "2012-03-19T19:52:23-04:00",
+      "last_reply": "2012-03-20T10:27:35+01:00",
+      "root_message_id": "msg-16d862e53815"
+    },
+    {
+      "id": "thread-b082f7c1a021",
+      "subject": "Create new variables",
+      "message_count": 2,
+      "participants": [
+        "AbouEl-Makarim Aboueissa",
+        "Gerrit Eichner"
+      ],
+      "started": "2012-03-20T00:24:39-04:00",
+      "last_reply": "2012-03-20T08:34:38+01:00",
+      "root_message_id": "msg-b082f7c1a021"
+    },
+    {
+      "id": "thread-d985322c4ac5",
+      "subject": "regerssion issues",
+      "message_count": 4,
+      "participants": [
+        "Donald Pianto",
+        "Iasonas Lamprianou",
+        "Jeff Laux"
+      ],
+      "started": "2012-03-21T01:59:52-07:00",
+      "last_reply": "2012-03-21T23:53:15-07:00",
+      "root_message_id": "msg-d985322c4ac5"
+    },
+    {
+      "id": "thread-93a6bfcd8f17",
+      "subject": "graphing circles",
+      "message_count": 4,
+      "participants": [
+        "AbouEl-Makarim Aboueissa",
+        "Gavin Simpson",
+        "Jeff Laux",
+        "William Revelle"
+      ],
+      "started": "2012-03-25T08:59:46-04:00",
+      "last_reply": "2012-03-26T14:02:35+01:00",
+      "root_message_id": "msg-93a6bfcd8f17"
+    },
     {
       "id": "thread-b8488599c701",
       "subject": "Comparing Points on Two Regression Lines",
