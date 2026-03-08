@@ -20,6 +20,38 @@
       "month": "2014-12"
     },
     {
+      "id": "msg-2e0178efcf81",
+      "message_id": "<1465014430.128236.1419205551395.JavaMail.yahoo@jws10034.mail.ne1.yahoo.com>",
+      "from_name": "Yahoo!",
+      "from_email_hash": "22385bbcf078dc17ff188e29e3a1eaf01aad381796219c59b64e7bb0baec2847",
+      "date": "2014-12-21T23:45:51Z",
+      "subject": "[R-sig-teaching] lmer",
+      "subject_clean": "lmer",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\nI am trying to run a random effect model in R, but when I used \"lmer\" I got the following errors: Please see below.\nlibrary(lme4)\nbatchlevel <- c(1,1,1,2,2,2,3,3,3,4,4,4,5,5,5)\n\nbatch <- as.character(batchlevel)\nyield <- c(74,76,75,68,71,72,75,77,77,72,74,73,79,81,79)\ndataaov <- data.frame(batch,yield)\nraneff <- lmer(yield~1+(1|batch),data=dataaov)\n\nError in get(name, envir = asNamespace(pkg), inherits = FALSE) :?? object '.setDummyField' not found\nsummary(raneff)\n\n?Error in summary(raneff) :?? error in evaluating the argument 'object' in selecting a method for function 'summary': Error: object 'raneff' not found\n\nAny help will be highly appreciated.\nmany thanksabou\n\n========================\nAbouEl-Makarim Aboueissa\nSozan Elsalakawy\nMohamed Agamia\n\n246 Auburn Street, #158\nPortland, ME 04103\nUSA\n\nTel: (207) 797-2724\nEmail: aboueiss at yahoo.com\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\nI am trying to run a random effect model in R, but when I used \"lmer\" I got the following errors: Please see below.\nlibrary(lme4)\nbatchlevel <- c(1,1,1,2,2,2,3,3,3,4,4,4,5,5,5)\n\nbatch <- as.",
+      "thread_id": "thread-2e0178efcf81",
+      "thread_depth": 0,
+      "month": "2014-12"
+    },
+    {
+      "id": "msg-1847189a2002",
+      "message_id": "<2025461787.93798.1419254760717.JavaMail.yahoo@jws100129.mail.ne1.yahoo.com>",
+      "from_name": "Yahoo!",
+      "from_email_hash": "22385bbcf078dc17ff188e29e3a1eaf01aad381796219c59b64e7bb0baec2847",
+      "date": "2014-12-22T13:26:00Z",
+      "subject": "[R-sig-teaching] random effect model in R---- lmer",
+      "subject_clean": "random effect model in R---- lmer",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\n\n\n?\nI am trying to run arandom effect model in R, but when I used \"lmer\" I got the followingerrors: Please see below.\n\n\n?\nlibrary(lme4)\n\n\n?\nbatchlevel <-c(1,1,1,2,2,2,3,3,3,4,4,4,5,5,5)\n\n\n?\nbatch <-as.character(batchlevel)\n\n\n?\nyield <-c(74,76,75,68,71,72,75,77,77,72,74,73,79,81,79)\n\n\n?\ndataaov <-data.frame(batch,yield)\n\n\n?\nraneff <-lmer(yield~1+(1|batch),data=dataaov)\n\n\n?\nError in get(name,envir = asNamespace(pkg), inherits = FALSE) :?\n\n? object'.setDummyField' not found\n\n\n?\nsummary(raneff)\n\n\n?\n\n?\n?Error insummary(raneff) :?\n\n? error inevaluating the argument 'object' in selecting a method for function 'summary':Error: object 'raneff' not found\n\n\n?\n\n?\nAny help will be highlyappreciated.\n\n\n?\nmany thanks\n\nabou\n\n?========================\nAbouEl-Makarim Aboueissa\nSozan Elsalakawy\nMohamed Agamia\n\n246 Auburn Street, #158\nPortland, ME 04103\nUSA\n\nTel: (207) 797-2724\nEmail: aboueiss at yahoo.com\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\n\n?\nI am trying to run arandom effect model in R, but when I used \"lmer\" I got the followingerrors: Please see below.\n\n\n?\nlibrary(lme4)\n\n\n?\nbatchlevel <-c(1,1,1,2,2,2,3,3,3,4,4,4,5,5,5)\n\n\n?\n",
+      "thread_id": "thread-1847189a2002",
+      "thread_depth": 0,
+      "month": "2014-12"
+    },
+    {
       "id": "msg-1847189a2002",
       "message_id": "<2025461787.93798.1419254760717.JavaMail.yahoo@jws100129.mail.ne1.yahoo.com>",
       "from_name": "Yahoo!",
@@ -211,6 +243,28 @@
       "started": "2014-12-21T23:45:51+00:00",
       "last_reply": "2014-12-21T23:45:51+00:00",
       "root_message_id": "msg-2e0178efcf81"
+    },
+    {
+      "id": "thread-2e0178efcf81",
+      "subject": "lmer",
+      "message_count": 1,
+      "participants": [
+        "Yahoo!"
+      ],
+      "started": "2014-12-21T23:45:51+00:00",
+      "last_reply": "2014-12-21T23:45:51+00:00",
+      "root_message_id": "msg-2e0178efcf81"
+    },
+    {
+      "id": "thread-1847189a2002",
+      "subject": "random effect model in R---- lmer",
+      "message_count": 1,
+      "participants": [
+        "Yahoo!"
+      ],
+      "started": "2014-12-22T13:26:00+00:00",
+      "last_reply": "2014-12-22T13:26:00+00:00",
+      "root_message_id": "msg-1847189a2002"
     },
     {
       "id": "thread-1847189a2002",
