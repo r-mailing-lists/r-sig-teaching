@@ -4,6 +4,398 @@
   "month": "2010-09",
   "messages": [
     {
+      "id": "msg-ab2ae0a592bb",
+      "message_id": "<4C8B8F4F020000A60008014B@uct5.uct.usm.maine.edu>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
+      "date": "2010-09-11T14:16:47-04:00",
+      "subject": "[R-sig-teaching] Lecture Slides (Power Point)",
+      "subject_clean": "Lecture Slides (Power Point)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100911/5254d942/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100911/5254d942/attachment.pl>",
+      "thread_id": "thread-ab2ae0a592bb",
+      "thread_depth": 0,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-416ad00c7615",
+      "message_id": "<AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>",
+      "from_name": "Joshua Wiley",
+      "from_email_hash": "c7f07c588294f110fffa28fa75e197f5a9d40a76afe0853fbdeb1992dab12a4a",
+      "date": "2010-09-21T21:34:59-07:00",
+      "subject": "[R-sig-teaching] pros/cons of teaching attach()",
+      "subject_clean": "pros/cons of teaching attach()",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\nI am wondering if anyone teaches the attach function to new students\nand if so, why?\n\n\nI have never taught a class using R, but in small tutorials and\nproviding direct help, I have run across this issue several times.  I\nhave always avoided it, but a couple of times, students had learned to\nuse it in a class (though without much detail) and were rather grumpy\nwith me for using full variable names or with().  New converts,\nparticularly from GUIs like SPSS, already tend to be leery of R, and I\nhate to make working at the command line more onerous since any typing\nis more than they are used to, but at the same time a discussion of\nenvironments, which I think is necessary to avoid trouble with attach,\ndoes not seem like beginner material either.\n\nI have wondered about this many times, but was just reminded again by\nan R-help post.\n\nThanks,\n\nJosh\n\n-- \nJoshua Wiley\nPh.D. Student, Health Psychology\nUniversity of California, Los Angeles\nhttp://www.joshuawiley.com/",
+      "body_snippet": "Hi all,\n\nI am wondering if anyone teaches the attach function to new students\nand if so, why?\n\n\nI have never taught a class using R, but in small tutorials and\nproviding direct help, I have run across",
+      "thread_id": "thread-416ad00c7615",
+      "thread_depth": 0,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-f86d3e153b4c",
+      "message_id": "<4C998E28.5030503@waikato.ac.nz>",
+      "from_name": "Murray Jorgensen",
+      "from_email_hash": "8e2ba5706dbbcc74561b819a2eba19d1d3d7cf60d5f0b85161a3f897f4206f3a",
+      "date": "2010-09-22T17:03:36+12:00",
+      "subject": "[R-sig-teaching] pros/cons of teaching attach()",
+      "subject_clean": "pros/cons of teaching attach()",
+      "in_reply_to": "<AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>",
+      "references": [
+        "<AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>"
+      ],
+      "body_plain": "Hi Joshua,\n\nI do teach R to my students and face each time what to do about attach() \n.  I can't really add to your clear statement of the main reasons for \nand against teaching attach() and I tend sometimes to go one way and \nsometimes the other.\n\nRegards,  Murray\n\nOn 22/09/2010 4:34 p.m., Joshua Wiley wrote:\n> Hi all,\n>\n> I am wondering if anyone teaches the attach function to new students\n> and if so, why?\n>\n>\n> I have never taught a class using R, but in small tutorials and\n> providing direct help, I have run across this issue several times.  I\n> have always avoided it, but a couple of times, students had learned to\n> use it in a class (though without much detail) and were rather grumpy\n> with me for using full variable names or with().  New converts,\n> particularly from GUIs like SPSS, already tend to be leery of R, and I\n> hate to make working at the command line more onerous since any typing\n> is more than they are used to, but at the same time a discussion of\n> environments, which I think is necessary to avoid trouble with attach,\n> does not seem like beginner material either.\n>\n> I have wondered about this many times, but was just reminded again by\n> an R-help post.\n>\n> Thanks,\n>\n> Josh\n>\n\n\n-- \nDr Murray Jorgensen      http://www.stats.waikato.ac.nz/Staff/maj.html\nDepartment of Statistics, University of Waikato, Hamilton, New Zealand\nEmail: maj at waikato.ac.nz    majorgensen at ihug.co.nz      Fax 7 838 4155\nPhone  +64 7 838 4773 wk    Home +64 7 825 0441   Mobile 021 0200 8350",
+      "body_snippet": "Hi Joshua,\n\nI do teach R to my students and face each time what to do about attach() \n.  I can't really add to your clear statement of the main reasons for \nand against teaching attach() and I tend so",
+      "thread_id": "thread-416ad00c7615",
+      "thread_depth": 1,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-db0cd06ed25f",
+      "message_id": "<AANLkTinJVVhYaQZ9bGQ=Kjw9f5Ye6XO5he79xuhNG3PY@mail.gmail.com>",
+      "from_name": "Graham Smith",
+      "from_email_hash": "ac1c7855ebbb565cf36e8205a6ce07dfb894db98f8221917c5b19b5cc16941ec",
+      "date": "2010-09-22T07:17:39+01:00",
+      "subject": "[R-sig-teaching] pros/cons of teaching attach()",
+      "subject_clean": "pros/cons of teaching attach()",
+      "in_reply_to": "<AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>",
+      "references": [
+        "<AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>"
+      ],
+      "body_plain": "Josh\n\n> I am wondering if anyone teaches the attach function to new students\n> and if so, why?\n\nI'm not sure whether my approach is the best or worst of both worlds.\n\nI use attach() at the beginning with warnings of it being bad practice\nand explain why. But also explain why on occasions, it can make life\neasier. Such as your first few lessons in R.\n\nLater we subset the data and then use the data$variable approach and I\nremind them of my earlier explanation of attach() and why we are now\nusing a different approach.\n\nGraham",
+      "body_snippet": "Josh\n\n> I am wondering if anyone teaches the attach function to new students\n> and if so, why?\n\nI'm not sure whether my approach is the best or worst of both worlds.\n\nI use attach() at the beginning w",
+      "thread_id": "thread-416ad00c7615",
+      "thread_depth": 1,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-ea1485565b15",
+      "message_id": "<1285144561.2812.12.camel@desktop.localdomain>",
+      "from_name": "Gavin Simpson",
+      "from_email_hash": "de29578fbbb79e6883c8203a1faebef3fddd10c08cc122f35e5ad109dc250099",
+      "date": "2010-09-22T09:36:01+01:00",
+      "subject": "[R-sig-teaching] pros/cons of teaching attach()",
+      "subject_clean": "pros/cons of teaching attach()",
+      "in_reply_to": "<AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>",
+      "references": [
+        "<AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>"
+      ],
+      "body_plain": "On Tue, 2010-09-21 at 21:34 -0700, Joshua Wiley wrote:\n> Hi all,\n> \n> I am wondering if anyone teaches the attach function to new students\n> and if so, why?\n\nI don't use attach() at all; too easy to make mistakes that are\ndifficult to track down. I tend not to use $ either as that encourages\npeople to use it to go fiddling in the bowels of other lists (objects);\nmodel$residuals might be OK for lm() models (though not if you've used\nna.exclude for example) but students might be surprised with what they\nget with more complex modelling functions with different residuals.\n\nIf I was really teaching R, I would mention attach() and then show why\nit is bad so I've dealt with the issue on my terms.\n\nG\n\n> I have never taught a class using R, but in small tutorials and\n> providing direct help, I have run across this issue several times.  I\n> have always avoided it, but a couple of times, students had learned to\n> use it in a class (though without much detail) and were rather grumpy\n> with me for using full variable names or with().  New converts,\n> particularly from GUIs like SPSS, already tend to be leery of R, and I\n> hate to make working at the command line more onerous since any typing\n> is more than they are used to, but at the same time a discussion of\n> environments, which I think is necessary to avoid trouble with attach,\n> does not seem like beginner material either.\n> \n> I have wondered about this many times, but was just reminded again by\n> an R-help post.\n> \n> Thanks,\n> \n> Josh\n> \n\n-- \n%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%\n Dr. Gavin Simpson             [t] +44 (0)20 7679 0522\n ECRC, UCL Geography,          [f] +44 (0)20 7679 0565\n Pearson Building,             [e] gavin.simpsonATNOSPAMucl.ac.uk\n Gower Street, London          [w] http://www.ucl.ac.uk/~ucfagls/\n UK. WC1E 6BT.                 [w] http://www.freshwaters.org.uk\n%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%",
+      "body_snippet": "On Tue, 2010-09-21 at 21:34 -0700, Joshua Wiley wrote:\n> Hi all,\n> \n> I am wondering if anyone teaches the attach function to new students\n> and if so, why?\n\nI don't use attach() at all; too easy to m",
+      "thread_id": "thread-416ad00c7615",
+      "thread_depth": 1,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-0d74a1be4d48",
+      "message_id": "<AANLkTinG2L-Qqg2hsDtN1Ry0kxWi80PjoHr+uRrTGK0p@mail.gmail.com>",
+      "from_name": "Jonathan Rosenblatt",
+      "from_email_hash": "7a0bbe195bd7449e6fa63fecc8f6a75e1920f399f4cc1b6d6642f9211ef45127",
+      "date": "2010-09-22T10:41:12+02:00",
+      "subject": "[R-sig-teaching] pros/cons of teaching attach()",
+      "subject_clean": "pros/cons of teaching attach()",
+      "in_reply_to": "<1285144561.2812.12.camel@desktop.localdomain>",
+      "references": [
+        "<AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>",
+        "<1285144561.2812.12.camel@desktop.localdomain>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100922/381d78a2/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100922/381d78a2/attachment.pl>",
+      "thread_id": "thread-416ad00c7615",
+      "thread_depth": 2,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-8b018c755e2a",
+      "message_id": "<AANLkTi=HaOQQw2WtkwsJcXtPRT3oxsuwMZBNy=yPUh62@mail.gmail.com>",
+      "from_name": "Joshua Wiley",
+      "from_email_hash": "c7f07c588294f110fffa28fa75e197f5a9d40a76afe0853fbdeb1992dab12a4a",
+      "date": "2010-09-22T02:04:50-07:00",
+      "subject": "[R-sig-teaching] pros/cons of teaching attach()",
+      "subject_clean": "pros/cons of teaching attach()",
+      "in_reply_to": "<AANLkTinG2L-Qqg2hsDtN1Ry0kxWi80PjoHr+uRrTGK0p@mail.gmail.com>",
+      "references": [
+        "<AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>",
+        "<1285144561.2812.12.camel@desktop.localdomain>",
+        "<AANLkTinG2L-Qqg2hsDtN1Ry0kxWi80PjoHr+uRrTGK0p@mail.gmail.com>"
+      ],
+      "body_plain": "Thanks to everyone for your thoughtful replies.  I think I am inclined\nnot to use attach, but to bring it up and briefly mention some of the\nmistakes that are easy to make.  If students already know/use attach,\nit will at least be clear why I do not use it, and for students\nunfamiliar with it, they should not be tempted to start.\n\nThanks again for all the responses!\n\nJosh\n\n-- \nJoshua Wiley\nPh.D. Student, Health Psychology\nUniversity of California, Los Angeles\nhttp://www.joshuawiley.com/",
+      "body_snippet": "Thanks to everyone for your thoughtful replies.  I think I am inclined\nnot to use attach, but to bring it up and briefly mention some of the\nmistakes that are easy to make.  If students already know/u",
+      "thread_id": "thread-416ad00c7615",
+      "thread_depth": 3,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-ff17e583bd06",
+      "message_id": "<AANLkTinVUxRe_qiFWcAs6msEN+0bERqBwsQp-R2wgyvn@mail.gmail.com>",
+      "from_name": "Douglas Bates",
+      "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
+      "date": "2010-09-22T07:10:14-05:00",
+      "subject": "[R-sig-teaching] pros/cons of teaching attach()",
+      "subject_clean": "pros/cons of teaching attach()",
+      "in_reply_to": "<AANLkTi=HaOQQw2WtkwsJcXtPRT3oxsuwMZBNy=yPUh62@mail.gmail.com>",
+      "references": [
+        "<AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>",
+        "<1285144561.2812.12.camel@desktop.localdomain>",
+        "<AANLkTinG2L-Qqg2hsDtN1Ry0kxWi80PjoHr+uRrTGK0p@mail.gmail.com>",
+        "<AANLkTi=HaOQQw2WtkwsJcXtPRT3oxsuwMZBNy=yPUh62@mail.gmail.com>"
+      ],
+      "body_plain": "On Wed, Sep 22, 2010 at 4:04 AM, Joshua Wiley <jwiley.psych at gmail.com> wrote:\n> Thanks to everyone for your thoughtful replies. ?I think I am inclined\n> not to use attach, but to bring it up and briefly mention some of the\n> mistakes that are easy to make. ?If students already know/use attach,\n> it will at least be clear why I do not use it, and for students\n> unfamiliar with it, they should not be tempted to start.\n>\n> Thanks again for all the responses!\n\nI avoid teaching attach() and discourage its use if the students have\nalready seen it.  I do teach both with and within (with provides\nread-only access, within provides read-write access to the variable\nnames in a data frame or a list).  As mentioned in an earlier reply in\nthis thread, the use of extractor functions, like residuals() or\nfitted() or coef(), should be preferred to reaching inside a data\nobject and grabbing a component that may or may not continue to be\ndefined in future versions,\n\nThe supplementary material on R that I use in a first-year grad course\non applied statistics is available, for this semester, at\nwww.stat.wisc.edu/~st849-1/Rnotes  My approach to data organization is\nshown in the \"Introduction to R\".",
+      "body_snippet": "On Wed, Sep 22, 2010 at 4:04 AM, Joshua Wiley <jwiley.psych at gmail.com> wrote:\n> Thanks to everyone for your thoughtful replies. ?I think I am inclined\n> not to use attach, but to bring it up and br",
+      "thread_id": "thread-416ad00c7615",
+      "thread_depth": 4,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-d584cb0c622e",
+      "message_id": "<73B50E06-B734-4560-A366-4B3DDF6455DD@stat.ucla.edu>",
+      "from_name": "Ian Fellows",
+      "from_email_hash": "aa2c780fbe5343d29316529dbad2b61e2a8735d64e323f572a06de636ac36465",
+      "date": "2010-09-22T08:56:07-07:00",
+      "subject": "[R-sig-teaching] pros/cons of teaching attach()",
+      "subject_clean": "pros/cons of teaching attach()",
+      "in_reply_to": null,
+      "references": [
+        "<A3C9773B-3BEC-495A-87B9-7EBB22FB3B6E@stat.ucla.edu>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100922/477c537e/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100922/477c537e/attachment.pl>",
+      "thread_id": "thread-d584cb0c622e",
+      "thread_depth": 0,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-703a0ab12ebf",
+      "message_id": "<4C9B4DC8.9030205@carleton.edu>",
+      "from_name": "Laura Chihara",
+      "from_email_hash": "bf38fe4d1a78c3a1e5a1c7942e55291ae947a968d4544d52590d5c796db45253",
+      "date": "2010-09-23T07:53:28-05:00",
+      "subject": "[R-sig-teaching] pros/cons of teaching attach()",
+      "subject_clean": "pros/cons of teaching attach()",
+      "in_reply_to": "<AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>",
+      "references": [
+        "<AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>"
+      ],
+      "body_plain": "This thread is interesting. For those who use the\nsubset command, when you extract a variable from a\ndata frame, do you give it the same name as in the data set?\n\nFor instance,\n\nmy.data with variables trout, whale\n\ntrout <- subset(my.data, select=trout, drop=T)\n\nI guess if you never attach, then you don't have to\nworry about masking in the future.\n\nThanks\n\n-Laura\nOn 9/21/2010 11:34 PM, Joshua Wiley wrote:\n> Hi all,\n>\n> I am wondering if anyone teaches the attach function to new students\n> and if so, why?\n>\n>\n> I have never taught a class using R, but in small tutorials and\n> providing direct help, I have run across this issue several times.  I\n> have always avoided it, but a couple of times, students had learned to\n> use it in a class (though without much detail) and were rather grumpy\n> with me for using full variable names or with().  New converts,\n> particularly from GUIs like SPSS, already tend to be leery of R, and I\n> hate to make working at the command line more onerous since any typing\n> is more than they are used to, but at the same time a discussion of\n> environments, which I think is necessary to avoid trouble with attach,\n> does not seem like beginner material either.\n>\n> I have wondered about this many times, but was just reminded again by\n> an R-help post.\n>\n> Thanks,\n>\n> Josh\n>\n\n-- \n************************************************\nLaura Chihara\nProfessor of Mathematics  507-222-4065 (office)\nDept of Mathematics       507-222-4312 (fax)\nCarleton College\n1 North College Street\nNorthfield MN 55057",
+      "body_snippet": "This thread is interesting. For those who use the\nsubset command, when you extract a variable from a\ndata frame, do you give it the same name as in the data set?\n\nFor instance,\n\nmy.data with variables",
+      "thread_id": "thread-416ad00c7615",
+      "thread_depth": 1,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-2937d03e879b",
+      "message_id": "<AANLkTik21fZfibL_+oPwegaDy3z==tW7ipygUNbDwATy@mail.gmail.com>",
+      "from_name": "Joshua Wiley",
+      "from_email_hash": "c7f07c588294f110fffa28fa75e197f5a9d40a76afe0853fbdeb1992dab12a4a",
+      "date": "2010-09-23T08:09:07-07:00",
+      "subject": "[R-sig-teaching] pros/cons of teaching attach()",
+      "subject_clean": "pros/cons of teaching attach()",
+      "in_reply_to": "<4C9B4DC8.9030205@carleton.edu>",
+      "references": [
+        "<AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>",
+        "<4C9B4DC8.9030205@carleton.edu>"
+      ],
+      "body_plain": "On Thu, Sep 23, 2010 at 5:53 AM, Laura Chihara <lchihara at carleton.edu> wrote:\n> This thread is interesting. For those who use the\n> subset command, when you extract a variable from a\n> data frame, do you give it the same name as in the data set?\n\nFor me this would depend on whether I would be merging the data back\nin and/or whether I would be using the data set (and original\nvariable) again.  For example,\n\nconc <- subset(DNase, select = \"conc\")\n# now forget about DNase\n# various operations with conc\n--but--\nconc.tmp <- subset(DNase, select = \"conc\") # I often add .tmp or 2 or something\n# do some stuff (data cleaning, transformations, whatever)\nDNase[ , \"conc\"] <- conc.tmp\n# on to model fitting or whatever with full data\n\nThat said unless there is reason to be doing alot of work with only\none variable from the data set or to assign changes you may want to\nreverse, my preference would always be to leave it in the data set (it\nwas in there for a reason, after all).\n\n>\n> For instance,\n>\n> my.data with variables trout, whale\n>\n> trout <- subset(my.data, select=trout, drop=T)\n\nIf I was only selecting entire variables, I would just use one of the\nextraction operators, e.g., my.data[, \"trout\"]\n\n>\n> I guess if you never attach, then you don't have to\n> worry about masking in the future.\n>\n> Thanks\n>\n> -Laura\n> On 9/21/2010 11:34 PM, Joshua Wiley wrote:\n>>\n>> Hi all,\n>>\n>> I am wondering if anyone teaches the attach function to new students\n>> and if so, why?\n>>\n>>\n>> I have never taught a class using R, but in small tutorials and\n>> providing direct help, I have run across this issue several times. ?I\n>> have always avoided it, but a couple of times, students had learned to\n>> use it in a class (though without much detail) and were rather grumpy\n>> with me for using full variable names or with(). ?New converts,\n>> particularly from GUIs like SPSS, already tend to be leery of R, and I\n>> hate to make working at the command line more onerous since any typing\n>> is more than they are used to, but at the same time a discussion of\n>> environments, which I think is necessary to avoid trouble with attach,\n>> does not seem like beginner material either.\n>>\n>> I have wondered about this many times, but was just reminded again by\n>> an R-help post.\n>>\n>> Thanks,\n>>\n>> Josh\n>>\n>\n> --\n> ************************************************\n> Laura Chihara\n> Professor of Mathematics ?507-222-4065 (office)\n> Dept of Mathematics ? ? ? 507-222-4312 (fax)\n> Carleton College\n> 1 North College Street\n> Northfield MN 55057\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \nJoshua Wiley\nPh.D. Student, Health Psychology\nUniversity of California, Los Angeles\nhttp://www.joshuawiley.com/",
+      "body_snippet": "On Thu, Sep 23, 2010 at 5:53 AM, Laura Chihara <lchihara at carleton.edu> wrote:\n> This thread is interesting. For those who use the\n> subset command, when you extract a variable from a\n> data frame, ",
+      "thread_id": "thread-416ad00c7615",
+      "thread_depth": 2,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-ff386cfc29ad",
+      "message_id": "<19611.44928.634078.810193@deb1.math.ethz.ch>",
+      "from_name": "Martin Maechler",
+      "from_email_hash": "c2c86f22f78a4ecfe6d0e6b4e2be505a3f5beb0470ea88c903688ac536018a98",
+      "date": "2010-09-23T21:50:24+02:00",
+      "subject": "[R-sig-teaching] pros/cons of teaching attach()",
+      "subject_clean": "pros/cons of teaching attach()",
+      "in_reply_to": "<AANLkTinVUxRe_qiFWcAs6msEN+0bERqBwsQp-R2wgyvn@mail.gmail.com>",
+      "references": [
+        "<AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>",
+        "<1285144561.2812.12.camel@desktop.localdomain>",
+        "<AANLkTinG2L-Qqg2hsDtN1Ry0kxWi80PjoHr+uRrTGK0p@mail.gmail.com>",
+        "<AANLkTi=HaOQQw2WtkwsJcXtPRT3oxsuwMZBNy=yPUh62@mail.gmail.com>",
+        "<AANLkTinVUxRe_qiFWcAs6msEN+0bERqBwsQp-R2wgyvn@mail.gmail.com>"
+      ],
+      "body_plain": ">>>>> Douglas Bates <bates at stat.wisc.edu>\n>>>>>     on Wed, 22 Sep 2010 07:10:14 -0500 writes:\n\n    > On Wed, Sep 22, 2010 at 4:04 AM, Joshua Wiley\n    > <jwiley.psych at gmail.com> wrote:\n    >> Thanks to everyone for your thoughtful replies. ?I think\n    >> I am inclined not to use attach, but to bring it up and\n    >> briefly mention some of the mistakes that are easy to\n    >> make. ?If students already know/use attach, it will at\n    >> least be clear why I do not use it, and for students\n    >> unfamiliar with it, they should not be tempted to start.\n    >> \n    >> Thanks again for all the responses!\n\n    > I avoid teaching attach() and discourage its use if the\n    > students have already seen it.  I do teach both with and\n    > within (with provides read-only access, within provides\n    > read-write access to the variable names in a data frame or\n    > a list).  As mentioned in an earlier reply in this thread,\n    > the use of extractor functions, like residuals() or\n    > fitted() or coef(), should be preferred to reaching inside\n    > a data object and grabbing a component that may or may not\n    > continue to be defined in future versions,\n\n    > The supplementary material on R that I use in a first-year\n    > grad course on applied statistics is available, for this\n    > semester, at www.stat.wisc.edu/~st849-1/Rnotes My approach\n    > to data organization is shown in the \"Introduction to R\".\n\nI agree entirely with Doug and Gavin(mostly) and Jonathan.\n\nHowever,  there's one remark about attach() that \"everyone\" seems to\nforget (AFAIR even Doug ;-):\n\nDo consider (and teach!) using  attach(\"foobar.rda\") for *.rda files\nwhich I often find quite preferable to load().\nI forgot who (from R-core) introduced this idea,\nbut I do like it:  It rehabilitates attach() into a \"decent R\nfunction\" :-)\n\nMartin",
+      "body_snippet": ">>>>> Douglas Bates <bates at stat.wisc.edu>\n>>>>>     on Wed, 22 Sep 2010 07:10:14 -0500 writes:\n\n    > On Wed, Sep 22, 2010 at 4:04 AM, Joshua Wiley\n    > <jwiley.psych at gmail.com> wrote:\n    >> T",
+      "thread_id": "thread-416ad00c7615",
+      "thread_depth": 5,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-c450fa98ab67",
+      "message_id": "<AANLkTi=8HQA9yOj7q+shFXrmNAGapjFsfaW8_StddZmZ@mail.gmail.com>",
+      "from_name": "Joshua Wiley",
+      "from_email_hash": "c7f07c588294f110fffa28fa75e197f5a9d40a76afe0853fbdeb1992dab12a4a",
+      "date": "2010-09-23T13:14:50-07:00",
+      "subject": "[R-sig-teaching] pros/cons of teaching attach()",
+      "subject_clean": "pros/cons of teaching attach()",
+      "in_reply_to": "<19611.44928.634078.810193@deb1.math.ethz.ch>",
+      "references": [
+        "<AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>",
+        "<1285144561.2812.12.camel@desktop.localdomain>",
+        "<AANLkTinG2L-Qqg2hsDtN1Ry0kxWi80PjoHr+uRrTGK0p@mail.gmail.com>",
+        "<AANLkTi=HaOQQw2WtkwsJcXtPRT3oxsuwMZBNy=yPUh62@mail.gmail.com>",
+        "<AANLkTinVUxRe_qiFWcAs6msEN+0bERqBwsQp-R2wgyvn@mail.gmail.com>",
+        "<19611.44928.634078.810193@deb1.math.ethz.ch>"
+      ],
+      "body_plain": "On Thu, Sep 23, 2010 at 12:50 PM, Martin Maechler\n<maechler at stat.math.ethz.ch> wrote:\n[snip]\n> Do consider (and teach!) using ?attach(\"foobar.rda\") for *.rda files\n> which I often find quite preferable to load().\n> I forgot who (from R-core) introduced this idea,\n> but I do like it: ?It rehabilitates attach() into a \"decent R\n> function\" :-)\n\nThis is amazing.  In two sentences, you made working with *.rda files\ncontaining multiple objects easier (which makes save.image suddenly\nseem much more useful) and provided a good answer to, \"why was it\nwritten if it should be avoided?\"\n\n--Josh\n>\n> Martin\n>",
+      "body_snippet": "On Thu, Sep 23, 2010 at 12:50 PM, Martin Maechler\n<maechler at stat.math.ethz.ch> wrote:\n[snip]\n> Do consider (and teach!) using ?attach(\"foobar.rda\") for *.rda files\n> which I often find quite prefer",
+      "thread_id": "thread-416ad00c7615",
+      "thread_depth": 6,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-12a517a1c5e5",
+      "message_id": "<4C9BBD2D.3060807@eku.edu>",
+      "from_name": "Tyler Smith",
+      "from_email_hash": "12de33670560962de9c025736c2ea1be1a4bdfe43bafdadf790e6d51a3ca32df",
+      "date": "2010-09-23T16:48:45-04:00",
+      "subject": "[R-sig-teaching] pros/cons of teaching attach()",
+      "subject_clean": "pros/cons of teaching attach()",
+      "in_reply_to": "<1285144561.2812.12.camel@desktop.localdomain>",
+      "references": [
+        "<AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>",
+        "<1285144561.2812.12.camel@desktop.localdomain>"
+      ],
+      "body_plain": "On 09/22/2010 04:36 AM, Gavin Simpson wrote:\n>\n> I don't use attach() at all; too easy to make mistakes that are\n> difficult to track down. I tend not to use $ either as that encourages\n> people to use it to go fiddling in the bowels of other lists (objects);\n> model$residuals might be OK for lm() models (though not if you've used\n> na.exclude for example) but students might be surprised with what they\n> get with more complex modelling functions with different residuals.\n>\nThis is going to be a dumb question, but what do you use instead of $ \nfor accessing variables in a list? [[]] allows for the same fiddling.\n\nThanks,\n\nTyler",
+      "body_snippet": "On 09/22/2010 04:36 AM, Gavin Simpson wrote:\n>\n> I don't use attach() at all; too easy to make mistakes that are\n> difficult to track down. I tend not to use $ either as that encourages\n> people to us",
+      "thread_id": "thread-416ad00c7615",
+      "thread_depth": 2,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-d02279b386f0",
+      "message_id": "<AANLkTimWbY4HRW=oAWe+L5tSynYnUEy5pTXpXA0R9_eD@mail.gmail.com>",
+      "from_name": "Douglas Bates",
+      "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
+      "date": "2010-09-23T16:20:38-05:00",
+      "subject": "[R-sig-teaching] pros/cons of teaching attach()",
+      "subject_clean": "pros/cons of teaching attach()",
+      "in_reply_to": "<4C9BBD2D.3060807@eku.edu>",
+      "references": [
+        "<AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>",
+        "<1285144561.2812.12.camel@desktop.localdomain>",
+        "<4C9BBD2D.3060807@eku.edu>"
+      ],
+      "body_plain": "On Thu, Sep 23, 2010 at 3:48 PM, Tyler Smith <tyler.smith at eku.edu> wrote:\n> ?On 09/22/2010 04:36 AM, Gavin Simpson wrote:\n>>\n>> I don't use attach() at all; too easy to make mistakes that are\n>> difficult to track down. I tend not to use $ either as that encourages\n>> people to use it to go fiddling in the bowels of other lists (objects);\n>> model$residuals might be OK for lm() models (though not if you've used\n>> na.exclude for example) but students might be surprised with what they\n>> get with more complex modelling functions with different residuals.\n>>\n> This is going to be a dumb question, but what do you use instead of $ for\n> accessing variables in a list? [[]] allows for the same fiddling.\n\nMost people prefer the $ operator because it is easier to type and you\ndon't need to quote the name.  The expression\n\nfr$x\n\nis simpler to type and probably to understand than is\n\nfr[[\"x\"]]\n\nHowever, it is good to know that \"[[]]\" can be used because it is the\nanswer to a frequent question from beginners, which is \"How do I pass\nthe name of the variable into a function?\".  They will often try\n\nmeanMed <- function(frm, nm) c(mean=mean(frm$nm), median=median(frm$nm))\n\nand are frustrated that it doesn't work as intended.  If you want to\nuse the value of the argument called nm as the name of the variable to\nextract you must use frm[[nm]]",
+      "body_snippet": "On Thu, Sep 23, 2010 at 3:48 PM, Tyler Smith <tyler.smith at eku.edu> wrote:\n> ?On 09/22/2010 04:36 AM, Gavin Simpson wrote:\n>>\n>> I don't use attach() at all; too easy to make mistakes that are\n>> di",
+      "thread_id": "thread-416ad00c7615",
+      "thread_depth": 3,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-a87eb708ac36",
+      "message_id": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC633CA5BBC8@LP-EXMBVS10.CO.IHC.COM>",
+      "from_name": "Greg Snow",
+      "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
+      "date": "2010-09-24T14:16:37-06:00",
+      "subject": "[R-sig-teaching] pros/cons of teaching attach()",
+      "subject_clean": "pros/cons of teaching attach()",
+      "in_reply_to": "<4C9BBD2D.3060807@eku.edu>",
+      "references": [
+        "<AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>",
+        "<1285144561.2812.12.camel@desktop.localdomain>",
+        "<4C9BBD2D.3060807@eku.edu>"
+      ],
+      "body_plain": "I think that the reference to not using $ or [[ was meant for cases where there is a proper extraction function, residuals being the example used.\n\nIf \"fit\" is an lm object then I could plot the fitted vs. residuals plot like this:\n\n> plot( fit$fitted, fit$residuals )\n\nOr like this:\n\n> plot( fitted(fit), resid(fit) )\n\nThe second one is preferred as it properly extracts the information without needing to know the exact contents of fit (and the axis limits look a little nicer). \n\nWith an lm object the 2 plots will be essentially the same, but what if fit is a glm object?  Then fit$residuals does give something that fits the definition of residuals, but of the different types of residuals available for glm fits, this gives the one that is least interesting/interpretable to humans (they were useful to the program for getting the fit).  Here the resid (or residuals) function defaults to a more meaningful set of residuals and gives options for other types.\n\nIf we have arbitrary objects without extractor functions then we need to use $ or [[ to extract the individual elements, but when working with fitted objects it is much better to teach students to use the proper extractor functions rather than directly working with elements of the object itself.\n\n-- \nGregory (Greg) L. Snow Ph.D.\nStatistical Data Center\nIntermountain Healthcare\ngreg.snow at imail.org\n801.408.8111\n\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-\n> bounces at r-project.org] On Behalf Of Tyler Smith\n> Sent: Thursday, September 23, 2010 2:49 PM\n> To: r-sig-teaching at r-project.org\n> Subject: Re: [R-sig-teaching] pros/cons of teaching attach()\n> \n>   On 09/22/2010 04:36 AM, Gavin Simpson wrote:\n> >\n> > I don't use attach() at all; too easy to make mistakes that are\n> > difficult to track down. I tend not to use $ either as that\n> encourages\n> > people to use it to go fiddling in the bowels of other lists\n> (objects);\n> > model$residuals might be OK for lm() models (though not if you've\n> used\n> > na.exclude for example) but students might be surprised with what\n> they\n> > get with more complex modelling functions with different residuals.\n> >\n> This is going to be a dumb question, but what do you use instead of $\n> for accessing variables in a list? [[]] allows for the same fiddling.\n> \n> Thanks,\n> \n> Tyler\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "I think that the reference to not using $ or [[ was meant for cases where there is a proper extraction function, residuals being the example used.\n\nIf \"fit\" is an lm object then I could plot the fitte",
+      "thread_id": "thread-416ad00c7615",
+      "thread_depth": 3,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-dd4fca3d0321",
+      "message_id": "<4C9D23C2.1080200@waikato.ac.nz>",
+      "from_name": "Murray Jorgensen",
+      "from_email_hash": "8e2ba5706dbbcc74561b819a2eba19d1d3d7cf60d5f0b85161a3f897f4206f3a",
+      "date": "2010-09-25T10:18:42+12:00",
+      "subject": "[R-sig-teaching] pros/cons of teaching attach()",
+      "subject_clean": "pros/cons of teaching attach()",
+      "in_reply_to": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC633CA5BBC8@LP-EXMBVS10.CO.IHC.COM>",
+      "references": [
+        "<AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>",
+        "<1285144561.2812.12.camel@desktop.localdomain>",
+        "<4C9BBD2D.3060807@eku.edu>",
+        "<B37C0A15B8FB3C468B5BC7EBC7DA14CC633CA5BBC8@LP-EXMBVS10.CO.IHC.COM>"
+      ],
+      "body_plain": "I think what Greg say here is the \"official wisdom\" and it leads to more \nfuture-proof code as the structure of various objects can change in new \nversions of R.\n\nOTOH the structure of a kind of object can always be explored with str() \nbut it may not be easy to find out what extractor functions are \navailable for the object.\n\nMurray\n\nOn 25/09/2010 8:16 a.m., Greg Snow wrote:\n> I think that the reference to not using $ or [[ was meant for cases where there is a proper extraction function, residuals being the example used.\n>\n> If \"fit\" is an lm object then I could plot the fitted vs. residuals plot like this:\n>\n>> plot( fit$fitted, fit$residuals )\n>\n> Or like this:\n>\n>> plot( fitted(fit), resid(fit) )\n>\n> The second one is preferred as it properly extracts the information without needing to know the exact contents of fit (and the axis limits look a little nicer).\n>\n> With an lm object the 2 plots will be essentially the same, but what if fit is a glm object?  Then fit$residuals does give something that fits the definition of residuals, but of the different types of residuals available for glm fits, this gives the one that is least interesting/interpretable to humans (they were useful to the program for getting the fit).  Here the resid (or residuals) function defaults to a more meaningful set of residuals and gives options for other types.\n>\n> If we have arbitrary objects without extractor functions then we need to use $ or [[ to extract the individual elements, but when working with fitted objects it is much better to teach students to use the proper extractor functions rather than directly working with elements of the object itself.\n>\n\n\n-- \nDr Murray Jorgensen      http://www.stats.waikato.ac.nz/Staff/maj.html\nDepartment of Statistics, University of Waikato, Hamilton, New Zealand\nEmail: maj at waikato.ac.nz    majorgensen at ihug.co.nz      Fax 7 838 4155\nPhone  +64 7 838 4773 wk    Home +64 7 825 0441   Mobile 021 0200 8350",
+      "body_snippet": "I think what Greg say here is the \"official wisdom\" and it leads to more \nfuture-proof code as the structure of various objects can change in new \nversions of R.\n\nOTOH the structure of a kind of objec",
+      "thread_id": "thread-416ad00c7615",
+      "thread_depth": 4,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-304aaf0a7415",
+      "message_id": "<4C9D255E.1090709@waikato.ac.nz>",
+      "from_name": "Murray Jorgensen",
+      "from_email_hash": "8e2ba5706dbbcc74561b819a2eba19d1d3d7cf60d5f0b85161a3f897f4206f3a",
+      "date": "2010-09-25T10:25:34+12:00",
+      "subject": "[R-sig-teaching] pros/cons of teaching attach()",
+      "subject_clean": "pros/cons of teaching attach()",
+      "in_reply_to": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC633CA5BBC8@LP-EXMBVS10.CO.IHC.COM>",
+      "references": [
+        "<AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>",
+        "<1285144561.2812.12.camel@desktop.localdomain>",
+        "<4C9BBD2D.3060807@eku.edu>",
+        "<B37C0A15B8FB3C468B5BC7EBC7DA14CC633CA5BBC8@LP-EXMBVS10.CO.IHC.COM>"
+      ],
+      "body_plain": "When will I ever learn to proof-read my emails?!\n=============\nI think what Greg sayS here is the \"official wisdom\" and it leads to \nmore future-proofED code as the structure of various objects can change \nin new versions of R.\n\nOTOH the structure of a kind of object can always be explored with \nstr(), but it may not be easy to find out what extractor functions are \navailable for the object.\n\nMurray\n\nOn 25/09/2010 8:16 a.m., Greg Snow wrote:\n> I think that the reference to not using $ or [[ was meant for cases where there is a proper extraction function, residuals being the example used.\n>\n> If \"fit\" is an lm object then I could plot the fitted vs. residuals plot like this:\n>\n>> plot( fit$fitted, fit$residuals )\n>\n> Or like this:\n>\n>> plot( fitted(fit), resid(fit) )\n>\n> The second one is preferred as it properly extracts the information without needing to know the exact contents of fit (and the axis limits look a little nicer).\n>\n> With an lm object the 2 plots will be essentially the same, but what if fit is a glm object?  Then fit$residuals does give something that fits the definition of residuals, but of the different types of residuals available for glm fits, this gives the one that is least interesting/interpretable to humans (they were useful to the program for getting the fit).  Here the resid (or residuals) function defaults to a more meaningful set of residuals and gives options for other types.\n>\n> If we have arbitrary objects without extractor functions then we need to use $ or [[ to extract the individual elements, but when working with fitted objects it is much better to teach students to use the proper extractor functions rather than directly working with elements of the object itself.\n>\n\n\n-- \nDr Murray Jorgensen      http://www.stats.waikato.ac.nz/Staff/maj.html\nDepartment of Statistics, University of Waikato, Hamilton, New Zealand\nEmail: maj at waikato.ac.nz    majorgensen at ihug.co.nz      Fax 7 838 4155\nPhone  +64 7 838 4773 wk    Home +64 7 825 0441   Mobile 021 0200 8350\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_snippet": "When will I ever learn to proof-read my emails?!\n=============\nI think what Greg sayS here is the \"official wisdom\" and it leads to \nmore future-proofED code as the structure of various objects can ch",
+      "thread_id": "thread-416ad00c7615",
+      "thread_depth": 4,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-94b36391122e",
+      "message_id": "<AANLkTin2-2RSop4NkLBFWE_TvouOOUpqHsTpFUvGbXbk@mail.gmail.com>",
+      "from_name": "Gabor Grothendieck",
+      "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
+      "date": "2010-09-24T19:07:08-04:00",
+      "subject": "[R-sig-teaching] pros/cons of teaching attach()",
+      "subject_clean": "pros/cons of teaching attach()",
+      "in_reply_to": "<4C9D255E.1090709@waikato.ac.nz>",
+      "references": [
+        "<AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>",
+        "<1285144561.2812.12.camel@desktop.localdomain>",
+        "<4C9BBD2D.3060807@eku.edu>",
+        "<B37C0A15B8FB3C468B5BC7EBC7DA14CC633CA5BBC8@LP-EXMBVS10.CO.IHC.COM>",
+        "<4C9D255E.1090709@waikato.ac.nz>"
+      ],
+      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100924/fbf3b323/attachment.pl>",
+      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100924/fbf3b323/attachment.pl>",
+      "thread_id": "thread-416ad00c7615",
+      "thread_depth": 5,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-f148998b4d40",
+      "message_id": "<4C9D380D.2080709@waikato.ac.nz>",
+      "from_name": "Murray Jorgensen",
+      "from_email_hash": "8e2ba5706dbbcc74561b819a2eba19d1d3d7cf60d5f0b85161a3f897f4206f3a",
+      "date": "2010-09-25T11:45:17+12:00",
+      "subject": "[R-sig-teaching] pros/cons of teaching attach()",
+      "subject_clean": "pros/cons of teaching attach()",
+      "in_reply_to": "<AANLkTin2-2RSop4NkLBFWE_TvouOOUpqHsTpFUvGbXbk@mail.gmail.com>",
+      "references": [
+        "<AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>",
+        "<1285144561.2812.12.camel@desktop.localdomain>",
+        "<4C9BBD2D.3060807@eku.edu>",
+        "<B37C0A15B8FB3C468B5BC7EBC7DA14CC633CA5BBC8@LP-EXMBVS10.CO.IHC.COM>",
+        "<4C9D255E.1090709@waikato.ac.nz>",
+        "<AANLkTin2-2RSop4NkLBFWE_TvouOOUpqHsTpFUvGbXbk@mail.gmail.com>"
+      ],
+      "body_plain": "This may not always be useful when we venture too far from the cosy \nworld of lm().\n\nFor example I have just been looking at the function flexmixedruns()\nfrom package fpc, and the object  fr  that is its value in the examples \nfor that function.\n\n > methods(class=class(fr))\n\njust produces the standard list methods because fr is defined as a list. \nTo get stuff out you need $.\n\nStill I like Gabor's suggestion and I will use it when a function \nreturns an object of an unusual class.\n\nMurray\n\n\nOn 25/09/2010 11:07 a.m., Gabor Grothendieck wrote:\n>\n>\n> On Fri, Sep 24, 2010 at 6:25 PM, Murray Jorgensen <maj at waikato.ac.nz\n> <mailto:maj at waikato.ac.nz>> wrote:\n>\n>     When will I ever learn to proof-read my emails?!\n>     =============\n>     I think what Greg sayS here is the \"official wisdom\" and it leads to\n>     more future-proofED code as the structure of various objects can\n>     change in new versions of R.\n>\n>\n>     OTOH the structure of a kind of object can always be explored with\n>     str(), but it may not be easy to find out what extractor functions\n>     are available for the object.\n>\n> Try this using builtin data.frame, BOD, to find methods can be applied\n> to fm:\n>\n> fm <- lm(demand ~ Time, BOD)\n> methods(class = class(fm))\n>\n> --\n> Statistics & Software Consulting\n> GKX Group, GKX Associates Inc.\n> tel: 1-877-GKX-GROUP\n> email: ggrothendieck at gmail.com <http://gmail.com>\n>\n\n\n-- \nDr Murray Jorgensen      http://www.stats.waikato.ac.nz/Staff/maj.html\nDepartment of Statistics, University of Waikato, Hamilton, New Zealand\nEmail: maj at waikato.ac.nz    majorgensen at ihug.co.nz      Fax 7 838 4155\nPhone  +64 7 838 4773 wk    Home +64 7 825 0441   Mobile 021 0200 8350",
+      "body_snippet": "This may not always be useful when we venture too far from the cosy \nworld of lm().\n\nFor example I have just been looking at the function flexmixedruns()\nfrom package fpc, and the object  fr  that is ",
+      "thread_id": "thread-416ad00c7615",
+      "thread_depth": 6,
+      "month": "2010-09"
+    },
+    {
       "id": "msg-fb6fb5db19ed",
       "message_id": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC633E40FA23@LP-EXMBVS10.CO.IHC.COM>",
       "from_name": "Greg Snow",
@@ -23,6 +415,49 @@
     }
   ],
   "threads": [
+    {
+      "id": "thread-ab2ae0a592bb",
+      "subject": "Lecture Slides (Power Point)",
+      "message_count": 1,
+      "participants": [
+        "AbouEl-Makarim Aboueissa"
+      ],
+      "started": "2010-09-11T14:16:47-04:00",
+      "last_reply": "2010-09-11T14:16:47-04:00",
+      "root_message_id": "msg-ab2ae0a592bb"
+    },
+    {
+      "id": "thread-416ad00c7615",
+      "subject": "pros/cons of teaching attach()",
+      "message_count": 18,
+      "participants": [
+        "Douglas Bates",
+        "Gabor Grothendieck",
+        "Gavin Simpson",
+        "Graham Smith",
+        "Greg Snow",
+        "Jonathan Rosenblatt",
+        "Joshua Wiley",
+        "Laura Chihara",
+        "Martin Maechler",
+        "Murray Jorgensen",
+        "Tyler Smith"
+      ],
+      "started": "2010-09-21T21:34:59-07:00",
+      "last_reply": "2010-09-25T11:45:17+12:00",
+      "root_message_id": "msg-416ad00c7615"
+    },
+    {
+      "id": "thread-d584cb0c622e",
+      "subject": "pros/cons of teaching attach()",
+      "message_count": 1,
+      "participants": [
+        "Ian Fellows"
+      ],
+      "started": "2010-09-22T08:56:07-07:00",
+      "last_reply": "2010-09-22T08:56:07-07:00",
+      "root_message_id": "msg-d584cb0c622e"
+    },
     {
       "id": "thread-fb6fb5db19ed",
       "subject": "plotting hypothesis of correlation t-test",
