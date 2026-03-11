@@ -8,7 +8,7 @@
       "message_id": "<CAHDp66CWXiWXubdUC-7N8OP3pX3VGbTZ+BFU=PVo73VaX+jQ3Q@mail.gmail.com>",
       "from_name": "Steven Stoline",
       "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
-      "date": "2017-01-24T14:59:06-05:00",
+      "date": "2017-01-24T19:59:06Z",
       "subject": "[R-sig-teaching] Simulated Two Independent Log-normal Distributions",
       "subject_clean": "Simulated Two Independent Log-normal Distributions",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<CAHDp66At3n-qCLNDkh4wuGDjd=zAFPZM7CFdm2CMGRxuPBBb5Q@mail.gmail.com>",
       "from_name": "Steven Stoline",
       "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
-      "date": "2017-01-24T15:15:53-05:00",
+      "date": "2017-01-24T20:15:53Z",
       "subject": "[R-sig-teaching] Simulated Two Independent Log-normal Distributions",
       "subject_clean": "Simulated Two Independent Log-normal Distributions",
       "in_reply_to": "<F9520D63-F1F9-4680-B295-D99E00F66012@calvin.edu>",
@@ -43,7 +43,7 @@
       "message_id": "<CANV9buRcC84hyEBTQiy885Xz=SnP13+-7XxrXWbJjt_09DJ7yQ@mail.gmail.com>",
       "from_name": "Jeff Laux",
       "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
-      "date": "2017-01-24T15:57:40-05:00",
+      "date": "2017-01-24T20:57:40Z",
       "subject": "[R-sig-teaching] Simulated Two Independent Log-normal Distributions",
       "subject_clean": "Simulated Two Independent Log-normal Distributions",
       "in_reply_to": "<CAHDp66CWXiWXubdUC-7N8OP3pX3VGbTZ+BFU=PVo73VaX+jQ3Q@mail.gmail.com>",
@@ -61,7 +61,7 @@
       "message_id": "<CA+3jU8FnPPD_aEY0ZqcmkFU7eF8BPyP=JpEBVEj0S8eXQ+4Fyw@mail.gmail.com>",
       "from_name": "Albyn Jones",
       "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
-      "date": "2017-01-24T12:59:56-08:00",
+      "date": "2017-01-24T20:59:56Z",
       "subject": "[R-sig-teaching] Simulated Two Independent Log-normal Distributions",
       "subject_clean": "Simulated Two Independent Log-normal Distributions",
       "in_reply_to": "<CANV9buRcC84hyEBTQiy885Xz=SnP13+-7XxrXWbJjt_09DJ7yQ@mail.gmail.com>",
@@ -80,7 +80,7 @@
       "message_id": "<CAHDp66Dsc5qmVX_YpRqAae_MMGLv6WzeXLK76OY_D_4kkrDWLA@mail.gmail.com>",
       "from_name": "Steven Stoline",
       "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
-      "date": "2017-01-24T16:28:57-05:00",
+      "date": "2017-01-24T21:28:57Z",
       "subject": "[R-sig-teaching] Simulated Two Independent Log-normal Distributions",
       "subject_clean": "Simulated Two Independent Log-normal Distributions",
       "in_reply_to": "<CA+3jU8FnPPD_aEY0ZqcmkFU7eF8BPyP=JpEBVEj0S8eXQ+4Fyw@mail.gmail.com>",
@@ -100,7 +100,7 @@
       "message_id": "<CAHtLaM8VXVRkL7_vP_+f=kOn0keXo4MRbqnHijOEgVEPwd3PLA@mail.gmail.com>",
       "from_name": "Sander",
       "from_email_hash": "996aeb7e730335223e65c8b3fd324eecc35df22e9b832cc70d926d5307233b54",
-      "date": "2017-01-24T22:33:51+01:00",
+      "date": "2017-01-24T21:33:51Z",
       "subject": "[R-sig-teaching] Simulated Two Independent Log-normal Distributions",
       "subject_clean": "Simulated Two Independent Log-normal Distributions",
       "in_reply_to": "<CAHDp66Dsc5qmVX_YpRqAae_MMGLv6WzeXLK76OY_D_4kkrDWLA@mail.gmail.com>",
@@ -128,8 +128,8 @@
         "Sander",
         "Steven Stoline"
       ],
-      "started": "2017-01-24T14:59:06-05:00",
-      "last_reply": "2017-01-24T22:33:51+01:00",
+      "started": "2017-01-24T19:59:06Z",
+      "last_reply": "2017-01-24T21:33:51Z",
       "root_message_id": "msg-410f1df05c9d"
     },
     {
@@ -139,8 +139,8 @@
       "participants": [
         "Steven Stoline"
       ],
-      "started": "2017-01-24T15:15:53-05:00",
-      "last_reply": "2017-01-24T15:15:53-05:00",
+      "started": "2017-01-24T20:15:53Z",
+      "last_reply": "2017-01-24T20:15:53Z",
       "root_message_id": "msg-0c00ceca359e"
     }
   ]

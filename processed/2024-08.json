@@ -8,7 +8,7 @@
       "message_id": "<CAFEsyOyTvP2O5+xe++8kjpC1_qdgfY-L6z+6S9xD=Z=u8ntJTA@mail.gmail.com>",
       "from_name": "Michael Zyphur",
       "from_email_hash": "4dc29dcc548743fbd3ded062200e46898609bf4c30557092653ca3be7f834901",
-      "date": "2024-08-06T17:59:27+10:00",
+      "date": "2024-08-06T07:59:27Z",
       "subject": "[R-sig-teaching] Passion-Driven Statistics: Project Based Teaching Techniques - livestream seminar",
       "subject_clean": "Passion-Driven Statistics: Project Based Teaching Techniques - livestream seminar",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<66B1F48B020000830006F3C6@s05gw01.im.jku.at>",
       "from_name": "Gerhard Wührer",
       "from_email_hash": "cfa8e5b0490a7f1c4ab53b66e16a00460222a1e66f1a9f332b0e515ebe6f832a",
-      "date": "2024-08-06T12:01:47+02:00",
+      "date": "2024-08-06T10:01:47Z",
       "subject": "[R-sig-teaching] Antw: R-sig-teaching Digest, Vol 120, Issue 1 (out of country/bin außerhalb des Landes)",
       "subject_clean": "Antw: R-sig-teaching Digest, Vol 120, Issue 1 (out of country/bin außerhalb des Landes)",
       "in_reply_to": "<7091113C0200004501F56C9B@s05gw01.im.jku.at>",
@@ -42,7 +42,7 @@
       "message_id": "<CAFEsyOyuR4XH51uOZV-bxahKjHgbAE_0oYLzKB7sJEXdTQMJzQ@mail.gmail.com>",
       "from_name": "Michael Zyphur",
       "from_email_hash": "4dc29dcc548743fbd3ded062200e46898609bf4c30557092653ca3be7f834901",
-      "date": "2024-08-08T22:32:19+10:00",
+      "date": "2024-08-08T12:32:19Z",
       "subject": "[R-sig-teaching]  Passion-Driven Statistics: Project Based Teaching Techniques - livestream seminar",
       "subject_clean": "Passion-Driven Statistics: Project Based Teaching Techniques - livestream seminar",
       "in_reply_to": "<CAFEsyOyTvP2O5+xe++8kjpC1_qdgfY-L6z+6S9xD=Z=u8ntJTA@mail.gmail.com>",
@@ -58,26 +58,26 @@
   ],
   "threads": [
     {
-      "id": "thread-a44f7ef794ff",
-      "subject": "Antw: R-sig-teaching Digest, Vol 120, Issue 1 (out of country/bin außerhalb des Landes)",
-      "message_count": 1,
-      "participants": [
-        "Gerhard Wührer"
-      ],
-      "started": "2024-08-06T12:01:47+02:00",
-      "last_reply": "2024-08-06T12:01:47+02:00",
-      "root_message_id": "msg-a44f7ef794ff"
-    },
-    {
       "id": "thread-000266c25e2f",
       "subject": "Passion-Driven Statistics: Project Based Teaching Techniques - livestream seminar",
       "message_count": 2,
       "participants": [
         "Michael Zyphur"
       ],
-      "started": "2024-08-06T17:59:27+10:00",
-      "last_reply": "2024-08-08T22:32:19+10:00",
+      "started": "2024-08-06T07:59:27Z",
+      "last_reply": "2024-08-08T12:32:19Z",
       "root_message_id": "msg-000266c25e2f"
+    },
+    {
+      "id": "thread-a44f7ef794ff",
+      "subject": "Antw: R-sig-teaching Digest, Vol 120, Issue 1 (out of country/bin außerhalb des Landes)",
+      "message_count": 1,
+      "participants": [
+        "Gerhard Wührer"
+      ],
+      "started": "2024-08-06T10:01:47Z",
+      "last_reply": "2024-08-06T10:01:47Z",
+      "root_message_id": "msg-a44f7ef794ff"
     }
   ]
 }

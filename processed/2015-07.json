@@ -8,7 +8,7 @@
       "message_id": "<CAHDp66DmKXYCx0QTxsvi-VKM6xSGQwcsqygrD8NKC0vbxpk0bQ@mail.gmail.com>",
       "from_name": "Steven Stoline",
       "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
-      "date": "2015-07-12T19:40:16-04:00",
+      "date": "2015-07-12T23:40:16Z",
       "subject": "[R-sig-teaching] Sample from Log-Normal Distribution",
       "subject_clean": "Sample from Log-Normal Distribution",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<D8E8362F-D630-477F-8AAA-62B54E34BED6@gmail.com>",
       "from_name": "Michael Weylandt",
       "from_email_hash": "44e8775a589b9ef81880469e200f3cce307c7180b4289ca1696a578afb772b3a",
-      "date": "2015-07-12T23:15:07-04:00",
+      "date": "2015-07-13T03:15:07Z",
       "subject": "[R-sig-teaching] Sample from Log-Normal Distribution",
       "subject_clean": "Sample from Log-Normal Distribution",
       "in_reply_to": "<CAHDp66DmKXYCx0QTxsvi-VKM6xSGQwcsqygrD8NKC0vbxpk0bQ@mail.gmail.com>",
@@ -42,7 +42,7 @@
       "message_id": "<CAHDp66DKj+Lnzx-dn4fxRePOSbnw48udamiQ+2Mh3YmN-eNAsQ@mail.gmail.com>",
       "from_name": "Steven Stoline",
       "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
-      "date": "2015-07-13T13:11:28-04:00",
+      "date": "2015-07-13T17:11:28Z",
       "subject": "[R-sig-teaching] Sample from Log-Normal Distribution",
       "subject_clean": "Sample from Log-Normal Distribution",
       "in_reply_to": "<D8E8362F-D630-477F-8AAA-62B54E34BED6@gmail.com>",
@@ -66,8 +66,8 @@
         "Michael Weylandt",
         "Steven Stoline"
       ],
-      "started": "2015-07-12T19:40:16-04:00",
-      "last_reply": "2015-07-13T13:11:28-04:00",
+      "started": "2015-07-12T23:40:16Z",
+      "last_reply": "2015-07-13T17:11:28Z",
       "root_message_id": "msg-b3764d1647e9"
     }
   ]

@@ -8,7 +8,7 @@
       "message_id": "<CAErODj9JtdzR=_OfxqkM3Ui4vkjEdVhGr0=EpdF48W8Mc5AF0w@mail.gmail.com>",
       "from_name": "Paul Johnson",
       "from_email_hash": "b96b8a38c7fef12892ac8cae395028a3b39f3acce423d9c564ab27dc864c47b3",
-      "date": "2011-11-22T14:19:54-06:00",
+      "date": "2011-11-22T20:19:54Z",
       "subject": "[R-sig-teaching] Regression textbooks",
       "subject_clean": "Regression textbooks",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<CAGx1TMCVMuT62ZvEZEhAEzOAA1jQq=B_k-LGcfuNJcQp=2NtTA@mail.gmail.com>",
       "from_name": "Richard M. Heiberger",
       "from_email_hash": "4ce810eab8587777db353ea9d997b9e94d9e73af018121f9a3424238038952df",
-      "date": "2011-11-22T15:38:06-05:00",
+      "date": "2011-11-22T20:38:06Z",
       "subject": "[R-sig-teaching] Regression textbooks",
       "subject_clean": "Regression textbooks",
       "in_reply_to": "<CAErODj9JtdzR=_OfxqkM3Ui4vkjEdVhGr0=EpdF48W8Mc5AF0w@mail.gmail.com>",
@@ -42,7 +42,7 @@
       "message_id": "<CAHawB9srNu_f28OsFghF+ryHUf2CaXD058zUOKOQuXOKYWZjwg@mail.gmail.com>",
       "from_name": "Antonio P. Ramos",
       "from_email_hash": "e95bafded85d24babdc99d611a276bf89a00bac76499acc1f1f445f966b0e617",
-      "date": "2011-11-22T13:07:51-08:00",
+      "date": "2011-11-22T21:07:51Z",
       "subject": "[R-sig-teaching] Regression textbooks",
       "subject_clean": "Regression textbooks",
       "in_reply_to": "<CAGx1TMCVMuT62ZvEZEhAEzOAA1jQq=B_k-LGcfuNJcQp=2NtTA@mail.gmail.com>",
@@ -61,7 +61,7 @@
       "message_id": "<9064522880125945B98983BBAECBA1CC02C9CC2E@exchsrv001.ebs.local>",
       "from_name": "Adams, Zeno",
       "from_email_hash": "048089c8b19ceb4b811b8f1dce71539c6059bef3abd322b112c05f02d424e2a0",
-      "date": "2011-11-23T09:56:01+01:00",
+      "date": "2011-11-23T08:56:01Z",
       "subject": "[R-sig-teaching] Regression textbooks",
       "subject_clean": "Regression textbooks",
       "in_reply_to": "<CAErODj9JtdzR=_OfxqkM3Ui4vkjEdVhGr0=EpdF48W8Mc5AF0w@mail.gmail.com>",
@@ -86,8 +86,8 @@
         "Paul Johnson",
         "Richard M. Heiberger"
       ],
-      "started": "2011-11-22T14:19:54-06:00",
-      "last_reply": "2011-11-23T09:56:01+01:00",
+      "started": "2011-11-22T20:19:54Z",
+      "last_reply": "2011-11-23T08:56:01Z",
       "root_message_id": "msg-38c785691409"
     }
   ]

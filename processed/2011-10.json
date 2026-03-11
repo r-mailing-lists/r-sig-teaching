@@ -8,7 +8,7 @@
       "message_id": "<1319977690.47335.YahooMailClassic@web162203.mail.bf1.yahoo.com>",
       "from_name": "Ali Zanaty",
       "from_email_hash": "65acd645f9ed74fc7721f9ea58469b32335ac44f193ffbf59b7c89913407d9ac",
-      "date": "2011-10-30T05:28:10-07:00",
+      "date": "2011-10-30T12:28:10Z",
       "subject": "[R-sig-teaching] Comparing two regression lines",
       "subject_clean": "Comparing two regression lines",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<1319981477.54624.YahooMailClassic@web162218.mail.bf1.yahoo.com>",
       "from_name": "Ali Zanaty",
       "from_email_hash": "65acd645f9ed74fc7721f9ea58469b32335ac44f193ffbf59b7c89913407d9ac",
-      "date": "2011-10-30T06:31:17-07:00",
+      "date": "2011-10-30T13:31:17Z",
       "subject": "[R-sig-teaching] Comparing two Regression Lines (Clarify)",
       "subject_clean": "Comparing two Regression Lines (Clarify)",
       "in_reply_to": null,
@@ -60,8 +60,8 @@
       "participants": [
         "Ali Zanaty"
       ],
-      "started": "2011-10-30T05:28:10-07:00",
-      "last_reply": "2011-10-30T05:28:10-07:00",
+      "started": "2011-10-30T12:28:10Z",
+      "last_reply": "2011-10-30T12:28:10Z",
       "root_message_id": "msg-c182191eaae1"
     },
     {
@@ -71,8 +71,8 @@
       "participants": [
         "Ali Zanaty"
       ],
-      "started": "2011-10-30T06:31:17-07:00",
-      "last_reply": "2011-10-30T06:31:17-07:00",
+      "started": "2011-10-30T13:31:17Z",
+      "last_reply": "2011-10-30T13:31:17Z",
       "root_message_id": "msg-0a87db1abcdf"
     },
     {
@@ -82,8 +82,8 @@
       "participants": [
         "Nagle, Nicholas"
       ],
-      "started": "2011-10-31T12:43:30+00:00",
-      "last_reply": "2011-10-31T12:43:30+00:00",
+      "started": "2011-10-31T12:43:30Z",
+      "last_reply": "2011-10-31T12:43:30Z",
       "root_message_id": "msg-492c696ee4d0"
     }
   ]

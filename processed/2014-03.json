@@ -8,7 +8,7 @@
       "message_id": "<462926173.56795186.1395422649199.JavaMail.root@carleton.edu>",
       "from_name": "Bob Dobrow",
       "from_email_hash": "c33452efce92c3343866d83ef5746b58a42298b457360e27ecaa4c83cb977b88",
-      "date": "2014-03-21T12:24:09-05:00",
+      "date": "2014-03-21T17:24:09Z",
       "subject": "[R-sig-teaching] New Probability textbook with R",
       "subject_clean": "New Probability textbook with R",
       "in_reply_to": null,
@@ -28,8 +28,8 @@
       "participants": [
         "Bob Dobrow"
       ],
-      "started": "2014-03-21T12:24:09-05:00",
-      "last_reply": "2014-03-21T12:24:09-05:00",
+      "started": "2014-03-21T17:24:09Z",
+      "last_reply": "2014-03-21T17:24:09Z",
       "root_message_id": "msg-fbe562891327"
     }
   ]

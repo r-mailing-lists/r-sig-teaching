@@ -8,7 +8,7 @@
       "message_id": "<9D1E512A-C1B7-4C61-8ADE-A40FC09DF693@smith.edu>",
       "from_name": "Nicholas Horton",
       "from_email_hash": "cf176a29de4abfc7da13c6fc418c20e19771b5741537f75c9aee351ac098ab29",
-      "date": "2013-03-10T08:53:39-04:00",
+      "date": "2013-03-10T12:53:39Z",
       "subject": "[R-sig-teaching] Updates on \"How to Do it in R\" for the \"Statistical Sleuth\" and \"Introduction to the Practice of Statistics\"",
       "subject_clean": "Updates on \"How to Do it in R\" for the \"Statistical Sleuth\" and \"Introduction to the Practice of Statistics\"",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<513E09AA.6090306@csun.edu>",
       "from_name": "Wayne Smith",
       "from_email_hash": "abb1d287609a9e2b13b674a9b9d3f2fbfc47c1f3fe788b1552b4cd800ab687e3",
-      "date": "2013-03-11T09:43:22-07:00",
+      "date": "2013-03-11T16:43:22Z",
       "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 61, Issue 1",
       "subject_clean": "R-sig-teaching Digest, Vol 61, Issue 1",
       "in_reply_to": "<mailman.9.1362999603.23330.r-sig-teaching@r-project.org>",
@@ -46,8 +46,8 @@
       "participants": [
         "Nicholas Horton"
       ],
-      "started": "2013-03-10T08:53:39-04:00",
-      "last_reply": "2013-03-10T08:53:39-04:00",
+      "started": "2013-03-10T12:53:39Z",
+      "last_reply": "2013-03-10T12:53:39Z",
       "root_message_id": "msg-f3539ceb4354"
     },
     {
@@ -57,8 +57,8 @@
       "participants": [
         "Wayne Smith"
       ],
-      "started": "2013-03-11T09:43:22-07:00",
-      "last_reply": "2013-03-11T09:43:22-07:00",
+      "started": "2013-03-11T16:43:22Z",
+      "last_reply": "2013-03-11T16:43:22Z",
       "root_message_id": "msg-b9577afa0694"
     }
   ]

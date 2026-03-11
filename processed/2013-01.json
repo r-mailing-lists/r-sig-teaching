@@ -8,7 +8,7 @@
       "message_id": "<50E28BA4.1050901@binghamton.edu>",
       "from_name": "Christopher W. Ryan",
       "from_email_hash": "1b29f9cec300eaee17dfd69d1f61fa0ef3e03d1c3e99be2390ec65184340c413",
-      "date": "2013-01-01T02:09:24-05:00",
+      "date": "2013-01-01T07:09:24Z",
       "subject": "[R-sig-teaching] follow-up on teaching R to high school students",
       "subject_clean": "follow-up on teaching R to high school students",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<50E35120.9050605@atsu.edu>",
       "from_name": "Robert Baer",
       "from_email_hash": "ddd5677bd41ce9ccb8239fe4a8cc1ce533091d0e3a66b906fbf82801b2b76509",
-      "date": "2013-01-01T15:12:00-06:00",
+      "date": "2013-01-01T21:12:00Z",
       "subject": "[R-sig-teaching] follow-up on teaching R to high school students",
       "subject_clean": "follow-up on teaching R to high school students",
       "in_reply_to": "<50E28BA4.1050901@binghamton.edu>",
@@ -77,7 +77,7 @@
       "message_id": "<8738ycasi0.wl%rdiaz02@gmail.com>",
       "from_name": "Ramon Diaz-Uriarte",
       "from_email_hash": "633eb05920d53e5a830a8910e9d03c82c5ec23dabba76361dd72a360253a993b",
-      "date": "2013-01-08T11:17:27+01:00",
+      "date": "2013-01-08T10:17:27Z",
       "subject": "[R-sig-teaching] follow-up on teaching R to high school students",
       "subject_clean": "follow-up on teaching R to high school students",
       "in_reply_to": "<50E28BA4.1050901@binghamton.edu>",
@@ -95,7 +95,7 @@
       "message_id": "<50EC24BA.1040200@sophie.unam.mx>",
       "from_name": "Ulises M. Alvarez",
       "from_email_hash": "c142c9a5237d6aecb24642bba0445ab5f4f9ba6899ca4a9979cc4530ba348004",
-      "date": "2013-01-08T07:52:58-06:00",
+      "date": "2013-01-08T13:52:58Z",
       "subject": "[R-sig-teaching] follow-up on teaching R to high school students",
       "subject_clean": "follow-up on teaching R to high school students",
       "in_reply_to": "<8738ycasi0.wl%rdiaz02@gmail.com>",
@@ -114,7 +114,7 @@
       "message_id": "<CAM+rpYmvtsqwSY0FX31eyqW10-0y2g+crcPGgRbxpc-U3+q8KQ@mail.gmail.com>",
       "from_name": "Christopher W Ryan",
       "from_email_hash": "1b29f9cec300eaee17dfd69d1f61fa0ef3e03d1c3e99be2390ec65184340c413",
-      "date": "2013-01-08T09:35:06-05:00",
+      "date": "2013-01-08T14:35:06Z",
       "subject": "[R-sig-teaching] follow-up on teaching R to high school students",
       "subject_clean": "follow-up on teaching R to high school students",
       "in_reply_to": "<50EC24BA.1040200@sophie.unam.mx>",
@@ -134,7 +134,7 @@
       "message_id": "<CAEM0C4ys58ANTDcCAHxQmQoXU=0zpng1PXedJKuqvwWVf-ynMQ@mail.gmail.com>",
       "from_name": "gaurav singh",
       "from_email_hash": "7158e63b8868cf1572261d4c4a8996cb09a752ecc21714506bcfaabec7902581",
-      "date": "2013-01-18T15:53:18+01:00",
+      "date": "2013-01-18T14:53:18Z",
       "subject": "[R-sig-teaching] importing and processing large datasets in R",
       "subject_clean": "importing and processing large datasets in R",
       "in_reply_to": "<CAEM0C4zoxrTwY1TOS8N_F8JGexmCgF0oU80Eu1qmYHZ1XTek6g@mail.gmail.com>",
@@ -152,7 +152,7 @@
       "message_id": "<71FAD2C9-B7E0-4664-A243-8DBE11B4B6AB@calvin.edu>",
       "from_name": "Randall Pruim",
       "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
-      "date": "2013-01-18T10:11:09-05:00",
+      "date": "2013-01-18T15:11:09Z",
       "subject": "[R-sig-teaching] importing and processing large datasets in R",
       "subject_clean": "importing and processing large datasets in R",
       "in_reply_to": "<CAEM0C4ys58ANTDcCAHxQmQoXU=0zpng1PXedJKuqvwWVf-ynMQ@mail.gmail.com>",
@@ -171,7 +171,7 @@
       "message_id": "<20130118151215.506DC71989A5@mail89.csoft.net>",
       "from_name": "Bob",
       "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
-      "date": "2013-01-18T10:12:15-05:00",
+      "date": "2013-01-18T15:12:15Z",
       "subject": "[R-sig-teaching] importing and processing large datasets in R (fwd)",
       "subject_clean": "importing and processing large datasets in R (fwd)",
       "in_reply_to": null,
@@ -187,7 +187,7 @@
       "message_id": "<CAEM0C4yW_ycvtK4PMqUnf1nPfCoVjWUSZ=11KefwG=DGmw==dA@mail.gmail.com>",
       "from_name": "gaurav singh",
       "from_email_hash": "7158e63b8868cf1572261d4c4a8996cb09a752ecc21714506bcfaabec7902581",
-      "date": "2013-01-18T16:20:24+01:00",
+      "date": "2013-01-18T15:20:24Z",
       "subject": "[R-sig-teaching] importing and processing large datasets in R (fwd)",
       "subject_clean": "importing and processing large datasets in R (fwd)",
       "in_reply_to": "<20130118151215.506DC71989A5@mail89.csoft.net>",
@@ -225,7 +225,7 @@
       "message_id": "<CAC6CacjZX=krOTcdi16EVwDD-uCvy3jqr5aN-YucGnj7f+2k_Q@mail.gmail.com>",
       "from_name": "Monte Milanuk",
       "from_email_hash": "99462acb9165af5084f859ea58c118613a701a901202576d78e11baaf29c7f7f",
-      "date": "2013-01-18T07:32:59-08:00",
+      "date": "2013-01-18T15:32:59Z",
       "subject": "[R-sig-teaching] importing and processing large datasets in R (fwd)",
       "subject_clean": "importing and processing large datasets in R (fwd)",
       "in_reply_to": "<20130118151215.506DC71989A5@mail89.csoft.net>",
@@ -243,7 +243,7 @@
       "message_id": "<CA+srNj7rq9xppAENm6+nEfKRJ91cFtx_TJQP_xZ-KwbtDGnmRw@mail.gmail.com>",
       "from_name": "Paula Grafton Young",
       "from_email_hash": "57a4fb9a604414e5df5b5d7d1cb70d0b433edcc8c45b386950fd1ca7926d8a28",
-      "date": "2013-01-18T10:44:22-05:00",
+      "date": "2013-01-18T15:44:22Z",
       "subject": "[R-sig-teaching] Convincing other colleagues to use R in the classroom",
       "subject_clean": "Convincing other colleagues to use R in the classroom",
       "in_reply_to": null,
@@ -296,7 +296,7 @@
       "message_id": "<50F97200.4000907@binghamton.edu>",
       "from_name": "Christopher W. Ryan",
       "from_email_hash": "1b29f9cec300eaee17dfd69d1f61fa0ef3e03d1c3e99be2390ec65184340c413",
-      "date": "2013-01-18T11:02:08-05:00",
+      "date": "2013-01-18T16:02:08Z",
       "subject": "[R-sig-teaching] Convincing other colleagues to use R in the classroom",
       "subject_clean": "Convincing other colleagues to use R in the classroom",
       "in_reply_to": "<CA+srNj7rq9xppAENm6+nEfKRJ91cFtx_TJQP_xZ-KwbtDGnmRw@mail.gmail.com>",
@@ -314,7 +314,7 @@
       "message_id": "<411cee45bf4f8d06b248d7665878c3c6@reed.edu>",
       "from_name": "Albyn Jones",
       "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
-      "date": "2013-01-18T08:03:13-08:00",
+      "date": "2013-01-18T16:03:13Z",
       "subject": "[R-sig-teaching] Convincing other colleagues to use R in the classroom",
       "subject_clean": "Convincing other colleagues to use R in the classroom",
       "in_reply_to": "<CA+srNj7rq9xppAENm6+nEfKRJ91cFtx_TJQP_xZ-KwbtDGnmRw@mail.gmail.com>",
@@ -353,7 +353,7 @@
       "message_id": "<50F97371.6030005@binghamton.edu>",
       "from_name": "Christopher W. Ryan",
       "from_email_hash": "1b29f9cec300eaee17dfd69d1f61fa0ef3e03d1c3e99be2390ec65184340c413",
-      "date": "2013-01-18T11:08:17-05:00",
+      "date": "2013-01-18T16:08:17Z",
       "subject": "[R-sig-teaching] importing and processing large datasets in R (fwd)",
       "subject_clean": "importing and processing large datasets in R (fwd)",
       "in_reply_to": "<CAAmySGNxJ0sv0Brw0t1V__qs97tQ8uCiB-PSSuA5MGwka4vxng@mail.gmail.com>",
@@ -373,7 +373,7 @@
       "message_id": "<50F976D1.2090907@gmail.com>",
       "from_name": "Jeff Laux",
       "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
-      "date": "2013-01-18T11:22:41-05:00",
+      "date": "2013-01-18T16:22:41Z",
       "subject": "[R-sig-teaching] importing and processing large datasets in R (fwd)",
       "subject_clean": "importing and processing large datasets in R (fwd)",
       "in_reply_to": "<50F97371.6030005@binghamton.edu>",
@@ -410,7 +410,7 @@
       "message_id": "<CAOnqpJiDTr4AtDKd+xGjLJ+dduNH9DfiJJexV8rYo+GRiJTZeg@mail.gmail.com>",
       "from_name": "Whitt Kilburn",
       "from_email_hash": "fe27a8f95571ad5642f70c01918746226e6fa4fada0c412d554147ec71848ae8",
-      "date": "2013-01-18T11:29:04-05:00",
+      "date": "2013-01-18T16:29:04Z",
       "subject": "[R-sig-teaching] Convincing other colleagues to use R in the classroom",
       "subject_clean": "Convincing other colleagues to use R in the classroom",
       "in_reply_to": "<411cee45bf4f8d06b248d7665878c3c6@reed.edu>",
@@ -429,7 +429,7 @@
       "message_id": "<9CC4C303-839F-409D-A79E-AF9BF7B1F4A6@calvin.edu>",
       "from_name": "Randall Pruim",
       "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
-      "date": "2013-01-18T11:42:05-05:00",
+      "date": "2013-01-18T16:42:05Z",
       "subject": "[R-sig-teaching] large data, purpose of the SIG, teaching with R",
       "subject_clean": "large data, purpose of the SIG, teaching with R",
       "in_reply_to": "<CAEM0C4yW_ycvtK4PMqUnf1nPfCoVjWUSZ=11KefwG=DGmw==dA@mail.gmail.com>",
@@ -448,7 +448,7 @@
       "message_id": "<CAC6Caci=XNvLmUMOtF-nUWahRAyQ==5zKO+ZM+=sxW+RRAE+OQ@mail.gmail.com>",
       "from_name": "Monte Milanuk",
       "from_email_hash": "99462acb9165af5084f859ea58c118613a701a901202576d78e11baaf29c7f7f",
-      "date": "2013-01-18T08:47:50-08:00",
+      "date": "2013-01-18T16:47:50Z",
       "subject": "[R-sig-teaching] importing and processing large datasets in R (fwd)",
       "subject_clean": "importing and processing large datasets in R (fwd)",
       "in_reply_to": "<50F976D1.2090907@gmail.com>",
@@ -470,7 +470,7 @@
       "message_id": "<4A755E84-FE97-477D-9F0F-44A2C09B20BD@calvin.edu>",
       "from_name": "Randall Pruim",
       "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
-      "date": "2013-01-18T12:01:59-05:00",
+      "date": "2013-01-18T17:01:59Z",
       "subject": "[R-sig-teaching] Convincing other colleagues to use R in the\tclassroom",
       "subject_clean": "Convincing other colleagues to use R in the\tclassroom",
       "in_reply_to": "<hi1gkqcu2jnxl0epyw9ttxva.1358526463712@email.android.com>",
@@ -488,7 +488,7 @@
       "message_id": "<20130118173452.24B577198947@mail89.csoft.net>",
       "from_name": "Bob",
       "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
-      "date": "2013-01-18T12:34:52-05:00",
+      "date": "2013-01-18T17:34:52Z",
       "subject": "[R-sig-teaching] Convincing other colleagues to use R",
       "subject_clean": "Convincing other colleagues to use R",
       "in_reply_to": null,
@@ -520,7 +520,7 @@
       "message_id": "<20130121021006.0C74471989AE@mail89.csoft.net>",
       "from_name": "Bob",
       "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
-      "date": "2013-01-20T21:10:06-05:00",
+      "date": "2013-01-21T02:10:06Z",
       "subject": "[R-sig-teaching] importing and processing large datasets in R",
       "subject_clean": "importing and processing large datasets in R",
       "in_reply_to": null,
@@ -536,7 +536,7 @@
       "message_id": "<5100CAFC.1020908@uhb.fr>",
       "from_name": "Yvonnick Noel",
       "from_email_hash": "6b0c1beb7700ad7ed9305cad83d011377781980ebe20349aefdf56be0114ff43",
-      "date": "2013-01-24T06:47:40+01:00",
+      "date": "2013-01-24T05:47:40Z",
       "subject": "[R-sig-teaching] New book: Statistical Psychology with R [in French]",
       "subject_clean": "New book: Statistical Psychology with R [in French]",
       "in_reply_to": null,
@@ -552,7 +552,7 @@
       "message_id": "<605A9F6F-466F-46CA-8104-3D094B4206C6@gmail.com>",
       "from_name": "Allen Cornelius",
       "from_email_hash": "6f2a0ae927d5ca668ae578a3928c385938ac57ae99cb16a298e126746b4bcd4d",
-      "date": "2013-01-29T13:38:28-07:00",
+      "date": "2013-01-29T20:38:28Z",
       "subject": "[R-sig-teaching] Data sets for teaching advanced stats with R",
       "subject_clean": "Data sets for teaching advanced stats with R",
       "in_reply_to": null,
@@ -568,7 +568,7 @@
       "message_id": "<510838FD.1050000@waikato.ac.nz>",
       "from_name": "Murray Jorgensen",
       "from_email_hash": "8e2ba5706dbbcc74561b819a2eba19d1d3d7cf60d5f0b85161a3f897f4206f3a",
-      "date": "2013-01-30T10:02:53+13:00",
+      "date": "2013-01-29T21:02:53Z",
       "subject": "[R-sig-teaching] Data sets for teaching advanced stats with R",
       "subject_clean": "Data sets for teaching advanced stats with R",
       "in_reply_to": "<605A9F6F-466F-46CA-8104-3D094B4206C6@gmail.com>",
@@ -586,7 +586,7 @@
       "message_id": "<CAFEqCdwdmKF-04pphAwXVr_RBk=x0ZNam8FygMSXvRsHgUyNOw@mail.gmail.com>",
       "from_name": "Greg Snow",
       "from_email_hash": "7e8b90198d8dda6d8bbc636598f3105b18d65713fa78fc3e88cbec77163d50cf",
-      "date": "2013-01-29T15:30:49-07:00",
+      "date": "2013-01-29T22:30:49Z",
       "subject": "[R-sig-teaching] Data sets for teaching advanced stats with R",
       "subject_clean": "Data sets for teaching advanced stats with R",
       "in_reply_to": "<605A9F6F-466F-46CA-8104-3D094B4206C6@gmail.com>",
@@ -604,7 +604,7 @@
       "message_id": "<CAFEqCdwJdNQ2Agnvr+JxOWd79GKdHb60P6Jr33gwV=qgW-Sycw@mail.gmail.com>",
       "from_name": "Greg Snow",
       "from_email_hash": "7e8b90198d8dda6d8bbc636598f3105b18d65713fa78fc3e88cbec77163d50cf",
-      "date": "2013-01-30T14:44:26-07:00",
+      "date": "2013-01-30T21:44:26Z",
       "subject": "[R-sig-teaching] Data sets for teaching advanced stats with R",
       "subject_clean": "Data sets for teaching advanced stats with R",
       "in_reply_to": "<CAFEqCdwdmKF-04pphAwXVr_RBk=x0ZNam8FygMSXvRsHgUyNOw@mail.gmail.com>",
@@ -623,7 +623,7 @@
       "message_id": "<CAHu4znCUzp-nuvaNG3vQ+S4D1q9WOgUmcf0BLPwTY37cn5qvvQ@mail.gmail.com>",
       "from_name": "Vincent Nijs",
       "from_email_hash": "e58b7f7a4c5e9dc626baa84af2bd58212a91255c6156a0d04d20a96cda7b192b",
-      "date": "2013-01-30T14:26:52-08:00",
+      "date": "2013-01-30T22:26:52Z",
       "subject": "[R-sig-teaching] using R for a stats or marketing research class with a 'Shiny' gui",
       "subject_clean": "using R for a stats or marketing research class with a 'Shiny' gui",
       "in_reply_to": null,
@@ -639,7 +639,7 @@
       "message_id": "<20130130234801.9BAF471989D5@mail89.csoft.net>",
       "from_name": "Bob",
       "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
-      "date": "2013-01-30T18:48:01-05:00",
+      "date": "2013-01-30T23:48:01Z",
       "subject": "[R-sig-teaching] Handbook of Small Datasets",
       "subject_clean": "Handbook of Small Datasets",
       "in_reply_to": null,
@@ -655,7 +655,7 @@
       "message_id": "<5109EADE.7080205@gmail.com>",
       "from_name": "Jeff Laux",
       "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
-      "date": "2013-01-30T22:54:06-05:00",
+      "date": "2013-01-31T03:54:06Z",
       "subject": "[R-sig-teaching] Handbook of Small Datasets",
       "subject_clean": "Handbook of Small Datasets",
       "in_reply_to": "<20130130234801.9BAF471989D5@mail89.csoft.net>",
@@ -673,7 +673,7 @@
       "message_id": "<CADv2QyGSqGVrJSET-Qah2AdagLWiOpy3h5=r_OWKeSPu-Ft6_A@mail.gmail.com>",
       "from_name": "Dennis Murphy",
       "from_email_hash": "e4a5a8dffeb093c4485cbdaf24417516db9183251269103e90963889fce45f74",
-      "date": "2013-01-31T01:58:54-08:00",
+      "date": "2013-01-31T09:58:54Z",
       "subject": "[R-sig-teaching] Handbook of Small Datasets",
       "subject_clean": "Handbook of Small Datasets",
       "in_reply_to": "<5109EADE.7080205@gmail.com>",
@@ -692,7 +692,7 @@
       "message_id": "<20130131112602.A470671989A5@mail89.csoft.net>",
       "from_name": "Bob",
       "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
-      "date": "2013-01-31T06:26:02-05:00",
+      "date": "2013-01-31T11:26:02Z",
       "subject": "[R-sig-teaching] Handbook of Small Datasets",
       "subject_clean": "Handbook of Small Datasets",
       "in_reply_to": null,
@@ -708,7 +708,7 @@
       "message_id": "<20130131125750.0035B7198838@mail89.csoft.net>",
       "from_name": "Bob",
       "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
-      "date": "2013-01-31T07:57:49-05:00",
+      "date": "2013-01-31T12:57:49Z",
       "subject": "[R-sig-teaching] Handbook of Small Datasets",
       "subject_clean": "Handbook of Small Datasets",
       "in_reply_to": null,
@@ -732,8 +732,8 @@
         "Robert Baer",
         "Ulises M. Alvarez"
       ],
-      "started": "2013-01-01T02:09:24-05:00",
-      "last_reply": "2013-01-08T09:35:06-05:00",
+      "started": "2013-01-01T07:09:24Z",
+      "last_reply": "2013-01-08T14:35:06Z",
       "root_message_id": "msg-d82173715662"
     },
     {
@@ -743,8 +743,8 @@
       "participants": [
         "Phill Clarke"
       ],
-      "started": "2013-01-07T22:03:14+00:00",
-      "last_reply": "2013-01-07T22:03:14+00:00",
+      "started": "2013-01-07T22:03:14Z",
+      "last_reply": "2013-01-07T22:03:14Z",
       "root_message_id": "msg-1436520a2254"
     },
     {
@@ -754,9 +754,22 @@
       "participants": [
         "Phill Clarke"
       ],
-      "started": "2013-01-08T00:55:51+00:00",
-      "last_reply": "2013-01-08T00:55:51+00:00",
+      "started": "2013-01-08T00:55:51Z",
+      "last_reply": "2013-01-08T00:55:51Z",
       "root_message_id": "msg-404b90d0135f"
+    },
+    {
+      "id": "thread-4c31cda2ba6e",
+      "subject": "importing and processing large datasets in R",
+      "message_count": 4,
+      "participants": [
+        "Amul Badjatya",
+        "Randall Pruim",
+        "gaurav singh"
+      ],
+      "started": "2013-01-18T14:53:18Z",
+      "last_reply": "2013-01-18T16:05:09Z",
+      "root_message_id": "msg-4c31cda2ba6e"
     },
     {
       "id": "thread-f076232a6744",
@@ -771,8 +784,8 @@
         "Randall Pruim",
         "gaurav singh"
       ],
-      "started": "2013-01-18T10:12:15-05:00",
-      "last_reply": "2013-01-18T08:47:50-08:00",
+      "started": "2013-01-18T15:12:15Z",
+      "last_reply": "2013-01-18T16:47:50Z",
       "root_message_id": "msg-f076232a6744"
     },
     {
@@ -786,33 +799,9 @@
         "Paula Grafton Young",
         "Whitt Kilburn"
       ],
-      "started": "2013-01-18T10:44:22-05:00",
-      "last_reply": "2013-01-18T11:29:04-05:00",
+      "started": "2013-01-18T15:44:22Z",
+      "last_reply": "2013-01-18T16:29:04Z",
       "root_message_id": "msg-f322660a00e5"
-    },
-    {
-      "id": "thread-6e947f1d9517",
-      "subject": "Convincing other colleagues to use R",
-      "message_count": 1,
-      "participants": [
-        "Bob"
-      ],
-      "started": "2013-01-18T12:34:52-05:00",
-      "last_reply": "2013-01-18T12:34:52-05:00",
-      "root_message_id": "msg-6e947f1d9517"
-    },
-    {
-      "id": "thread-4c31cda2ba6e",
-      "subject": "importing and processing large datasets in R",
-      "message_count": 4,
-      "participants": [
-        "Amul Badjatya",
-        "Randall Pruim",
-        "gaurav singh"
-      ],
-      "started": "2013-01-18T15:53:18+01:00",
-      "last_reply": "2013-01-18T16:05:09+00:00",
-      "root_message_id": "msg-4c31cda2ba6e"
     },
     {
       "id": "thread-348db4f5c72b",
@@ -822,9 +811,20 @@
         "Grant, Robert",
         "Randall Pruim"
       ],
-      "started": "2013-01-18T16:27:50+00:00",
-      "last_reply": "2013-01-18T12:01:59-05:00",
+      "started": "2013-01-18T16:27:50Z",
+      "last_reply": "2013-01-18T17:01:59Z",
       "root_message_id": "msg-348db4f5c72b"
+    },
+    {
+      "id": "thread-6e947f1d9517",
+      "subject": "Convincing other colleagues to use R",
+      "message_count": 1,
+      "participants": [
+        "Bob"
+      ],
+      "started": "2013-01-18T17:34:52Z",
+      "last_reply": "2013-01-18T17:34:52Z",
+      "root_message_id": "msg-6e947f1d9517"
     },
     {
       "id": "thread-cba51ed0b01d",
@@ -833,8 +833,8 @@
       "participants": [
         "Holliday, Ian E"
       ],
-      "started": "2013-01-19T16:37:24+00:00",
-      "last_reply": "2013-01-19T16:37:24+00:00",
+      "started": "2013-01-19T16:37:24Z",
+      "last_reply": "2013-01-19T16:37:24Z",
       "root_message_id": "msg-cba51ed0b01d"
     },
     {
@@ -844,8 +844,8 @@
       "participants": [
         "Bob"
       ],
-      "started": "2013-01-20T21:10:06-05:00",
-      "last_reply": "2013-01-20T21:10:06-05:00",
+      "started": "2013-01-21T02:10:06Z",
+      "last_reply": "2013-01-21T02:10:06Z",
       "root_message_id": "msg-0627eeb568f9"
     },
     {
@@ -855,8 +855,8 @@
       "participants": [
         "Yvonnick Noel"
       ],
-      "started": "2013-01-24T06:47:40+01:00",
-      "last_reply": "2013-01-24T06:47:40+01:00",
+      "started": "2013-01-24T05:47:40Z",
+      "last_reply": "2013-01-24T05:47:40Z",
       "root_message_id": "msg-5dfae0214c72"
     },
     {
@@ -868,8 +868,8 @@
         "Greg Snow",
         "Murray Jorgensen"
       ],
-      "started": "2013-01-29T13:38:28-07:00",
-      "last_reply": "2013-01-30T14:44:26-07:00",
+      "started": "2013-01-29T20:38:28Z",
+      "last_reply": "2013-01-30T21:44:26Z",
       "root_message_id": "msg-3616aaca5eab"
     },
     {
@@ -879,8 +879,8 @@
       "participants": [
         "Vincent Nijs"
       ],
-      "started": "2013-01-30T14:26:52-08:00",
-      "last_reply": "2013-01-30T14:26:52-08:00",
+      "started": "2013-01-30T22:26:52Z",
+      "last_reply": "2013-01-30T22:26:52Z",
       "root_message_id": "msg-2570910eea3b"
     },
     {
@@ -892,8 +892,8 @@
         "Dennis Murphy",
         "Jeff Laux"
       ],
-      "started": "2013-01-30T18:48:01-05:00",
-      "last_reply": "2013-01-31T01:58:54-08:00",
+      "started": "2013-01-30T23:48:01Z",
+      "last_reply": "2013-01-31T09:58:54Z",
       "root_message_id": "msg-13632e4928d4"
     },
     {
@@ -903,8 +903,8 @@
       "participants": [
         "Bob"
       ],
-      "started": "2013-01-31T06:26:02-05:00",
-      "last_reply": "2013-01-31T06:26:02-05:00",
+      "started": "2013-01-31T11:26:02Z",
+      "last_reply": "2013-01-31T11:26:02Z",
       "root_message_id": "msg-c3d27d850f82"
     },
     {
@@ -914,8 +914,8 @@
       "participants": [
         "Bob"
       ],
-      "started": "2013-01-31T07:57:49-05:00",
-      "last_reply": "2013-01-31T07:57:49-05:00",
+      "started": "2013-01-31T12:57:49Z",
+      "last_reply": "2013-01-31T12:57:49Z",
       "root_message_id": "msg-e1a2d1d56d38"
     }
   ]

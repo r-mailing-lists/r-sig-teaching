@@ -8,7 +8,7 @@
       "message_id": "<20190916183228.GA90517@lilly.csoft.net>",
       "from_name": "User Hayden",
       "from_email_hash": "22fa6821856532bb7d9c9c13cdaaf0d35038a9d7b8e0daf14cf332c3a081f6c6",
-      "date": "2019-09-16T14:32:28-04:00",
+      "date": "2019-09-16T18:32:28Z",
       "subject": "[R-sig-teaching] R teaching task view",
       "subject_clean": "R teaching task view",
       "in_reply_to": null,
@@ -28,8 +28,8 @@
       "participants": [
         "User Hayden"
       ],
-      "started": "2019-09-16T14:32:28-04:00",
-      "last_reply": "2019-09-16T14:32:28-04:00",
+      "started": "2019-09-16T18:32:28Z",
+      "last_reply": "2019-09-16T18:32:28Z",
       "root_message_id": "msg-5ca0149b9062"
     }
   ]

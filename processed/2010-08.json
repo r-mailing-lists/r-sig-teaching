@@ -8,7 +8,7 @@
       "message_id": "<868749225.220762.1280694602620.JavaMail.root@erie.cs.uoguelph.ca>",
       "from_name": "Scott Colwell",
       "from_email_hash": "ed4ea20fb71dac5f8d07d1b0852464207293155771ae11d26aa35224716e520b",
-      "date": "2010-08-01T16:30:02-04:00",
+      "date": "2010-08-01T20:30:02Z",
       "subject": "[R-sig-teaching] Looking for code for population and sample curve",
       "subject_clean": "Looking for code for population and sample curve",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC633A72DF7F@LP-EXMBVS10.CO.IHC.COM>",
       "from_name": "Greg Snow",
       "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
-      "date": "2010-08-03T14:19:32-06:00",
+      "date": "2010-08-03T20:19:32Z",
       "subject": "[R-sig-teaching] Looking for code for population and sample curve",
       "subject_clean": "Looking for code for population and sample curve",
       "in_reply_to": "<868749225.220762.1280694602620.JavaMail.root@erie.cs.uoguelph.ca>",
@@ -42,7 +42,7 @@
       "message_id": "<4C59296E.7080904@inseed.org>",
       "from_name": "INSEED workshops",
       "from_email_hash": "a7199273dd9d48639fb9926dfb7ace8f1fdde3ae8f2ab9e4951be717f732a325",
-      "date": "2010-08-04T11:48:46+03:00",
+      "date": "2010-08-04T08:48:46Z",
       "subject": "[R-sig-teaching] Short courses in statistics",
       "subject_clean": "Short courses in statistics",
       "in_reply_to": null,
@@ -58,7 +58,7 @@
       "message_id": "<706237.65863.qm@web50806.mail.re2.yahoo.com>",
       "from_name": "solafah bh",
       "from_email_hash": "44ac136083444abfb43f969ca7a693201070b287b2e8c825823b493117cca96b",
-      "date": "2010-08-19T16:33:34-07:00",
+      "date": "2010-08-19T23:33:34Z",
       "subject": "[R-sig-teaching] question",
       "subject_clean": "question",
       "in_reply_to": null,
@@ -74,7 +74,7 @@
       "message_id": "<20100820001801.GF2201@reed.edu>",
       "from_name": "Albyn Jones",
       "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
-      "date": "2010-08-19T17:18:01-07:00",
+      "date": "2010-08-20T00:18:01Z",
       "subject": "[R-sig-teaching] question",
       "subject_clean": "question",
       "in_reply_to": "<706237.65863.qm@web50806.mail.re2.yahoo.com>",
@@ -110,7 +110,7 @@
       "message_id": "<1282300776.2349.120.camel@desktop.localdomain>",
       "from_name": "Gavin Simpson",
       "from_email_hash": "de29578fbbb79e6883c8203a1faebef3fddd10c08cc122f35e5ad109dc250099",
-      "date": "2010-08-20T11:39:36+01:00",
+      "date": "2010-08-20T10:39:36Z",
       "subject": "[R-sig-teaching] Entering Data into R and running a bootstrap",
       "subject_clean": "Entering Data into R and running a bootstrap",
       "in_reply_to": "<BLU136-W31B5B718893BCA2D5845A3CF9F0@phx.gbl>",
@@ -134,8 +134,8 @@
         "Greg Snow",
         "Scott Colwell"
       ],
-      "started": "2010-08-01T16:30:02-04:00",
-      "last_reply": "2010-08-03T14:19:32-06:00",
+      "started": "2010-08-01T20:30:02Z",
+      "last_reply": "2010-08-03T20:19:32Z",
       "root_message_id": "msg-7435590cdd3f"
     },
     {
@@ -145,8 +145,8 @@
       "participants": [
         "INSEED workshops"
       ],
-      "started": "2010-08-04T11:48:46+03:00",
-      "last_reply": "2010-08-04T11:48:46+03:00",
+      "started": "2010-08-04T08:48:46Z",
+      "last_reply": "2010-08-04T08:48:46Z",
       "root_message_id": "msg-017e4f90a68a"
     },
     {
@@ -157,8 +157,8 @@
         "Albyn Jones",
         "solafah bh"
       ],
-      "started": "2010-08-19T16:33:34-07:00",
-      "last_reply": "2010-08-19T17:18:01-07:00",
+      "started": "2010-08-19T23:33:34Z",
+      "last_reply": "2010-08-20T00:18:01Z",
       "root_message_id": "msg-6564b7a46b04"
     },
     {
@@ -169,8 +169,8 @@
         "Gavin Simpson",
         "Yemitan Raphael"
       ],
-      "started": "2010-08-20T10:31:16+00:00",
-      "last_reply": "2010-08-20T11:39:36+01:00",
+      "started": "2010-08-20T10:31:16Z",
+      "last_reply": "2010-08-20T10:39:36Z",
       "root_message_id": "msg-81468493f86d"
     }
   ]

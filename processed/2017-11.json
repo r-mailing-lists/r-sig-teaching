@@ -8,7 +8,7 @@
       "message_id": "<CAEZOd2A8bScipPBpmBoTD6po-dojx-c_r-Q51-YQuVZvp7=svA@mail.gmail.com>",
       "from_name": "Brian Dennis",
       "from_email_hash": "701fff3e21682d3a2a0e00efd4388e8490784b003ba99bbdf245d085ed1f529d",
-      "date": "2017-11-14T12:49:15-08:00",
+      "date": "2017-11-14T20:49:15Z",
       "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 97, Issue 1",
       "subject_clean": "R-sig-teaching Digest, Vol 97, Issue 1",
       "in_reply_to": "<mailman.27.1507024802.28956.r-sig-teaching@r-project.org>",
@@ -44,7 +44,7 @@
       "message_id": "<CAGSSkmhikf_Av50S2riX6TsScLmS+kh2LfX-e_bB2B7RfUnNDg@mail.gmail.com>",
       "from_name": "Nick Carchedi",
       "from_email_hash": "ea4b840fddb83aa5f0c581d1a1ef33a753cf350acc1601834035a8171815900c",
-      "date": "2017-11-15T21:01:24+01:00",
+      "date": "2017-11-15T20:01:24Z",
       "subject": "[R-sig-teaching] Undergraduate finance",
       "subject_clean": "Undergraduate finance",
       "in_reply_to": "<337E460F-FCE7-4291-AC5A-9E3A4C5AE834@calvin.edu>",
@@ -67,8 +67,8 @@
       "participants": [
         "Brian Dennis"
       ],
-      "started": "2017-11-14T12:49:15-08:00",
-      "last_reply": "2017-11-14T12:49:15-08:00",
+      "started": "2017-11-14T20:49:15Z",
+      "last_reply": "2017-11-14T20:49:15Z",
       "root_message_id": "msg-6d630c57b354"
     },
     {
@@ -79,8 +79,8 @@
         "Nick Carchedi",
         "Randall Pruim"
       ],
-      "started": "2017-11-15T01:19:05+00:00",
-      "last_reply": "2017-11-15T21:01:24+01:00",
+      "started": "2017-11-15T01:19:05Z",
+      "last_reply": "2017-11-15T20:01:24Z",
       "root_message_id": "msg-40afc11b8c25"
     }
   ]

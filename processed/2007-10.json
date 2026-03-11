@@ -8,7 +8,7 @@
       "message_id": "<40e66e0b0710081235k492c16e1r4f5722e940a3638d@mail.gmail.com>",
       "from_name": "Douglas Bates",
       "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
-      "date": "2007-10-08T14:35:06-05:00",
+      "date": "2007-10-08T19:35:06Z",
       "subject": "[R-sig-teaching] Online resources for teaching intro stats using R",
       "subject_clean": "Online resources for teaching intro stats using R",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<20071008234649.92295.qmail@mv.mv.com>",
       "from_name": "Robert W. Hayden",
       "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
-      "date": "2007-10-08T19:46:49-04:00",
+      "date": "2007-10-08T23:46:49Z",
       "subject": "[R-sig-teaching] Online resources for teaching intro stats using R",
       "subject_clean": "Online resources for teaching intro stats using R",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<20071009002320.GI2833@laplace.reed.edu>",
       "from_name": "Albyn Jones",
       "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
-      "date": "2007-10-08T17:23:20-07:00",
+      "date": "2007-10-09T00:23:20Z",
       "subject": "[R-sig-teaching] Online resources for teaching intro stats\tusing R",
       "subject_clean": "Online resources for teaching intro stats\tusing R",
       "in_reply_to": "<20071008234649.92295.qmail@mv.mv.com>",
@@ -58,7 +58,7 @@
       "message_id": "<40e66e0b0710090814m2bad3746v9fb11cce7b84e81a@mail.gmail.com>",
       "from_name": "Douglas Bates",
       "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
-      "date": "2007-10-09T10:14:20-05:00",
+      "date": "2007-10-09T15:14:20Z",
       "subject": "[R-sig-teaching] Online resources for teaching intro stats using R",
       "subject_clean": "Online resources for teaching intro stats using R",
       "in_reply_to": "<20071008234649.92295.qmail@mv.mv.com>",
@@ -76,7 +76,7 @@
       "message_id": "<470F7473.7000901@ula.ve>",
       "from_name": "Magdiel Ablan-Bortone",
       "from_email_hash": "359e8697ea907cd9f4dbd3fbb96c190a71e9e97ec7f5ce35ecad70358a1be6e7",
-      "date": "2007-10-12T09:19:47-04:00",
+      "date": "2007-10-12T13:19:47Z",
       "subject": "[R-sig-teaching] Online resources for teaching intro stats using R",
       "subject_clean": "Online resources for teaching intro stats using R",
       "in_reply_to": "<40e66e0b0710081235k492c16e1r4f5722e940a3638d@mail.gmail.com>",
@@ -99,8 +99,8 @@
         "Douglas Bates",
         "Magdiel Ablan-Bortone"
       ],
-      "started": "2007-10-08T14:35:06-05:00",
-      "last_reply": "2007-10-12T09:19:47-04:00",
+      "started": "2007-10-08T19:35:06Z",
+      "last_reply": "2007-10-12T13:19:47Z",
       "root_message_id": "msg-c9c26dc01ab8"
     },
     {
@@ -112,8 +112,8 @@
         "Douglas Bates",
         "Robert W. Hayden"
       ],
-      "started": "2007-10-08T19:46:49-04:00",
-      "last_reply": "2007-10-09T10:14:20-05:00",
+      "started": "2007-10-08T23:46:49Z",
+      "last_reply": "2007-10-09T15:14:20Z",
       "root_message_id": "msg-7c898bf8dc16"
     }
   ]

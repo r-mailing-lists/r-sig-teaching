@@ -8,7 +8,7 @@
       "message_id": "<20061027001656.GQ10158@laplace.reed.edu>",
       "from_name": "Albyn Jones",
       "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
-      "date": "2006-10-26T17:16:56-07:00",
+      "date": "2006-10-27T00:16:56Z",
       "subject": "[R-sig-teaching] R-sig-teaching mailing list",
       "subject_clean": "R-sig-teaching mailing list",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<20061027111752.29521.qmail@mv.mv.com>",
       "from_name": "Robert W. Hayden",
       "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
-      "date": "2006-10-27T07:17:51-04:00",
+      "date": "2006-10-27T11:17:51Z",
       "subject": "[R-sig-teaching] resource text",
       "subject_clean": "resource text",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<20061027112857.32123.qmail@mv.mv.com>",
       "from_name": "Robert W. Hayden",
       "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
-      "date": "2006-10-27T07:28:57-04:00",
+      "date": "2006-10-27T11:28:57Z",
       "subject": "[R-sig-teaching] resources",
       "subject_clean": "resources",
       "in_reply_to": null,
@@ -56,7 +56,7 @@
       "message_id": "<20061027131009.36783.qmail@web53307.mail.yahoo.com>",
       "from_name": "Nicholas Horton",
       "from_email_hash": "9e44a5ab3434adb176b17e0e24804f1ac2dc82061d5d92983e9e78e4057e0d0c",
-      "date": "2006-10-27T06:10:08-07:00",
+      "date": "2006-10-27T13:10:08Z",
       "subject": "[R-sig-teaching] query about how to organize an intro to R",
       "subject_clean": "query about how to organize an intro to R",
       "in_reply_to": null,
@@ -72,7 +72,7 @@
       "message_id": "<4542087C.40705@carleton.edu>",
       "from_name": "Bob Dobrow",
       "from_email_hash": "c33452efce92c3343866d83ef5746b58a42298b457360e27ecaa4c83cb977b88",
-      "date": "2006-10-27T08:24:12-05:00",
+      "date": "2006-10-27T13:24:12Z",
       "subject": "[R-sig-teaching] R in intro stats",
       "subject_clean": "R in intro stats",
       "in_reply_to": null,
@@ -88,7 +88,7 @@
       "message_id": "<17730.4504.701051.477946@stat.math.ethz.ch>",
       "from_name": "Martin Maechler",
       "from_email_hash": "c2c86f22f78a4ecfe6d0e6b4e2be505a3f5beb0470ea88c903688ac536018a98",
-      "date": "2006-10-27T16:03:04+02:00",
+      "date": "2006-10-27T14:03:04Z",
       "subject": "[R-sig-teaching] R in intro stats",
       "subject_clean": "R in intro stats",
       "in_reply_to": "<4542087C.40705@carleton.edu>",
@@ -106,7 +106,7 @@
       "message_id": "<20061027183742.GE17604@laplace.reed.edu>",
       "from_name": "Albyn Jones",
       "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
-      "date": "2006-10-27T11:37:42-07:00",
+      "date": "2006-10-27T18:37:42Z",
       "subject": "[R-sig-teaching] R in intro stats",
       "subject_clean": "R in intro stats",
       "in_reply_to": "<4542087C.40705@carleton.edu>",
@@ -128,20 +128,9 @@
       "participants": [
         "Albyn Jones"
       ],
-      "started": "2006-10-26T17:16:56-07:00",
-      "last_reply": "2006-10-26T17:16:56-07:00",
+      "started": "2006-10-27T00:16:56Z",
+      "last_reply": "2006-10-27T00:16:56Z",
       "root_message_id": "msg-7efebafb4e53"
-    },
-    {
-      "id": "thread-15bcb59cc1a5",
-      "subject": "query about how to organize an intro to R",
-      "message_count": 1,
-      "participants": [
-        "Nicholas Horton"
-      ],
-      "started": "2006-10-27T06:10:08-07:00",
-      "last_reply": "2006-10-27T06:10:08-07:00",
-      "root_message_id": "msg-15bcb59cc1a5"
     },
     {
       "id": "thread-558c29cf5ba9",
@@ -150,8 +139,8 @@
       "participants": [
         "Robert W. Hayden"
       ],
-      "started": "2006-10-27T07:17:51-04:00",
-      "last_reply": "2006-10-27T07:17:51-04:00",
+      "started": "2006-10-27T11:17:51Z",
+      "last_reply": "2006-10-27T11:17:51Z",
       "root_message_id": "msg-558c29cf5ba9"
     },
     {
@@ -161,9 +150,20 @@
       "participants": [
         "Robert W. Hayden"
       ],
-      "started": "2006-10-27T07:28:57-04:00",
-      "last_reply": "2006-10-27T07:28:57-04:00",
+      "started": "2006-10-27T11:28:57Z",
+      "last_reply": "2006-10-27T11:28:57Z",
       "root_message_id": "msg-42f5b4658c22"
+    },
+    {
+      "id": "thread-15bcb59cc1a5",
+      "subject": "query about how to organize an intro to R",
+      "message_count": 1,
+      "participants": [
+        "Nicholas Horton"
+      ],
+      "started": "2006-10-27T13:10:08Z",
+      "last_reply": "2006-10-27T13:10:08Z",
+      "root_message_id": "msg-15bcb59cc1a5"
     },
     {
       "id": "thread-46e4394cd2d2",
@@ -174,8 +174,8 @@
         "Bob Dobrow",
         "Martin Maechler"
       ],
-      "started": "2006-10-27T08:24:12-05:00",
-      "last_reply": "2006-10-27T11:37:42-07:00",
+      "started": "2006-10-27T13:24:12Z",
+      "last_reply": "2006-10-27T18:37:42Z",
       "root_message_id": "msg-46e4394cd2d2"
     }
   ]

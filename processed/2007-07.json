@@ -8,7 +8,7 @@
       "message_id": "<468A68BE.7090207@unimi.it>",
       "from_name": "Simone Negri",
       "from_email_hash": "64eb97bc6e7f99fcecd7b390d139aa0cbf4e7ba167ef7c4ee561d41027a391c3",
-      "date": "2007-07-03T17:18:22+02:00",
+      "date": "2007-07-03T15:18:22Z",
       "subject": "[R-sig-teaching] what test?",
       "subject_clean": "what test?",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<20070703165843.GA14850@laplace.reed.edu>",
       "from_name": "Albyn Jones",
       "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
-      "date": "2007-07-03T09:58:43-07:00",
+      "date": "2007-07-03T16:58:43Z",
       "subject": "[R-sig-teaching] what test?",
       "subject_clean": "what test?",
       "in_reply_to": "<468A68BE.7090207@unimi.it>",
@@ -47,8 +47,8 @@
         "Albyn Jones",
         "Simone Negri"
       ],
-      "started": "2007-07-03T17:18:22+02:00",
-      "last_reply": "2007-07-03T09:58:43-07:00",
+      "started": "2007-07-03T15:18:22Z",
+      "last_reply": "2007-07-03T16:58:43Z",
       "root_message_id": "msg-7825d53e4e59"
     }
   ]

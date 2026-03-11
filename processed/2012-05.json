@@ -8,7 +8,7 @@
       "message_id": "<CABxs9VmA-jeK1EZpXFjWWv_fai0+o3AMjBQT62bCL12ezCm=9A@mail.gmail.com>",
       "from_name": "Liviu Andronic",
       "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
-      "date": "2012-05-06T10:03:14+02:00",
+      "date": "2012-05-06T08:03:14Z",
       "subject": "[R-sig-teaching] introducing R to high school students",
       "subject_clean": "introducing R to high school students",
       "in_reply_to": "<CAM+rpYkV1R=TCMz_tMhp0qg1uU6O9A2ModvxoAa2D-njbyJUbw@mail.gmail.com>",
@@ -26,7 +26,7 @@
       "message_id": "<CABkCotTjMihkW9udxC+J3sMbyvPeu-pYWxSZpgqrb2x8S6vWCg@mail.gmail.com>",
       "from_name": "Manuel Spínola",
       "from_email_hash": "c67b4a8f4e027cf75cc3544d4e04791324bee3c4417f2f5edf4561a1da2f995b",
-      "date": "2012-05-06T06:57:12-06:00",
+      "date": "2012-05-06T12:57:12Z",
       "subject": "[R-sig-teaching] Teaching R online",
       "subject_clean": "Teaching R online",
       "in_reply_to": null,
@@ -42,7 +42,7 @@
       "message_id": "<CAB9YQzO1MZ1yhuj+y-gj9qoTv3RJuu9rT8t=DffGFRm-RowbOA@mail.gmail.com>",
       "from_name": "Sam Lin",
       "from_email_hash": "795698da8b6949ad7d75088138df11471c7783cd9153ac7dcebd44d81a1a92ea",
-      "date": "2012-05-07T23:07:50+12:00",
+      "date": "2012-05-07T11:07:50Z",
       "subject": "[R-sig-teaching] Teaching R online",
       "subject_clean": "Teaching R online",
       "in_reply_to": null,
@@ -72,37 +72,26 @@
   ],
   "threads": [
     {
-      "id": "thread-b56f7f36ed1e",
-      "subject": "Teaching R online",
-      "message_count": 1,
-      "participants": [
-        "Manuel Spínola"
-      ],
-      "started": "2012-05-06T06:57:12-06:00",
-      "last_reply": "2012-05-06T06:57:12-06:00",
-      "root_message_id": "msg-b56f7f36ed1e"
-    },
-    {
       "id": "thread-2ae9808dc938",
       "subject": "introducing R to high school students",
       "message_count": 1,
       "participants": [
         "Liviu Andronic"
       ],
-      "started": "2012-05-06T10:03:14+02:00",
-      "last_reply": "2012-05-06T10:03:14+02:00",
+      "started": "2012-05-06T08:03:14Z",
+      "last_reply": "2012-05-06T08:03:14Z",
       "root_message_id": "msg-2ae9808dc938"
     },
     {
-      "id": "thread-5cd54eba2a9f",
+      "id": "thread-b56f7f36ed1e",
       "subject": "Teaching R online",
       "message_count": 1,
       "participants": [
-        "Holliday, Ian E"
+        "Manuel Spínola"
       ],
-      "started": "2012-05-07T11:23:16+00:00",
-      "last_reply": "2012-05-07T11:23:16+00:00",
-      "root_message_id": "msg-5cd54eba2a9f"
+      "started": "2012-05-06T12:57:12Z",
+      "last_reply": "2012-05-06T12:57:12Z",
+      "root_message_id": "msg-b56f7f36ed1e"
     },
     {
       "id": "thread-50268c990c75",
@@ -111,9 +100,20 @@
       "participants": [
         "Sam Lin"
       ],
-      "started": "2012-05-07T23:07:50+12:00",
-      "last_reply": "2012-05-07T23:07:50+12:00",
+      "started": "2012-05-07T11:07:50Z",
+      "last_reply": "2012-05-07T11:07:50Z",
       "root_message_id": "msg-50268c990c75"
+    },
+    {
+      "id": "thread-5cd54eba2a9f",
+      "subject": "Teaching R online",
+      "message_count": 1,
+      "participants": [
+        "Holliday, Ian E"
+      ],
+      "started": "2012-05-07T11:23:16Z",
+      "last_reply": "2012-05-07T11:23:16Z",
+      "root_message_id": "msg-5cd54eba2a9f"
     }
   ]
 }

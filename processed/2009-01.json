@@ -8,7 +8,7 @@
       "message_id": "<a17f8fd00901311155p7923794dp14dec34724b0f43@mail.gmail.com>",
       "from_name": "Anna Supady",
       "from_email_hash": "57520d684ebd1473e30ddc0ca310dae58807500071ecdd96d6983dd9df24b818",
-      "date": "2009-01-31T13:55:43-06:00",
+      "date": "2009-01-31T19:55:43Z",
       "subject": "[R-sig-teaching] issues with importing",
       "subject_clean": "issues with importing",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<644e1f320901311158u7b94ff3br67c2d582827b635f@mail.gmail.com>",
       "from_name": "jim holtman",
       "from_email_hash": "46f979d1a5bf6fa8b5559d3a049add9a0eb45fffc6a219e7401d97ba07ef9a0f",
-      "date": "2009-01-31T14:58:56-05:00",
+      "date": "2009-01-31T19:58:56Z",
       "subject": "[R-sig-teaching] issues with importing",
       "subject_clean": "issues with importing",
       "in_reply_to": "<a17f8fd00901311155p7923794dp14dec34724b0f43@mail.gmail.com>",
@@ -42,7 +42,7 @@
       "message_id": "<p23osgex4ohjx0d0g0iu3bur.1233432518075@email.android.com>",
       "from_name": "Christopher Desjardins",
       "from_email_hash": "5e9cf370aebe8caaff5b6676dd20b7212df81a6db7d85f7227f201abf7ba409f",
-      "date": "2009-01-31T14:08:37-06:00",
+      "date": "2009-01-31T20:08:37Z",
       "subject": "[R-sig-teaching] issues with importing",
       "subject_clean": "issues with importing",
       "in_reply_to": null,
@@ -58,7 +58,7 @@
       "message_id": "<20090131220859.GA16884@laplace.reed.edu>",
       "from_name": "Albyn Jones",
       "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
-      "date": "2009-01-31T14:08:59-08:00",
+      "date": "2009-01-31T22:08:59Z",
       "subject": "[R-sig-teaching] issues with importing",
       "subject_clean": "issues with importing",
       "in_reply_to": "<a17f8fd00901311155p7923794dp14dec34724b0f43@mail.gmail.com>",
@@ -76,7 +76,7 @@
       "message_id": "<20090131221738.95319.qmail@mv.mv.com>",
       "from_name": "Robert W. Hayden",
       "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
-      "date": "2009-01-31T17:17:38-05:00",
+      "date": "2009-01-31T22:17:38Z",
       "subject": "[R-sig-teaching] issues with importing",
       "subject_clean": "issues with importing",
       "in_reply_to": "<a17f8fd00901311155p7923794dp14dec34724b0f43@mail.gmail.com> from \"Anna Supady\" at Jan 31, 2009 01:55:43 PM",
@@ -92,7 +92,7 @@
       "message_id": "<20090131224727.1924.qmail@mv.mv.com>",
       "from_name": "Robert W. Hayden",
       "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
-      "date": "2009-01-31T17:47:27-05:00",
+      "date": "2009-01-31T22:47:27Z",
       "subject": "[R-sig-teaching] Who is the list for?",
       "subject_clean": "Who is the list for?",
       "in_reply_to": null,
@@ -108,7 +108,7 @@
       "message_id": "<20090131234616.GA18179@laplace.reed.edu>",
       "from_name": "Albyn Jones",
       "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
-      "date": "2009-01-31T15:46:16-08:00",
+      "date": "2009-01-31T23:46:16Z",
       "subject": "[R-sig-teaching] [jones@reed.edu: Re:  Who is the list for?]",
       "subject_clean": "[jones@reed.edu: Re:  Who is the list for?]",
       "in_reply_to": null,
@@ -124,7 +124,7 @@
       "message_id": "<986176.94759.qm@web34807.mail.mud.yahoo.com>",
       "from_name": "Rebecca Le",
       "from_email_hash": "b5a6837a30cb1cf4e318d6cd6e0de2b9f56802d70e9746e2663111fb793e527f",
-      "date": "2009-01-31T16:38:03-08:00",
+      "date": "2009-02-01T00:38:03Z",
       "subject": "[R-sig-teaching] [Re:  Who is the list for?]",
       "subject_clean": "[Re:  Who is the list for?]",
       "in_reply_to": "<20090131234616.GA18179@laplace.reed.edu>",
@@ -146,8 +146,8 @@
         "Anna Supady",
         "jim holtman"
       ],
-      "started": "2009-01-31T13:55:43-06:00",
-      "last_reply": "2009-01-31T14:08:59-08:00",
+      "started": "2009-01-31T19:55:43Z",
+      "last_reply": "2009-01-31T22:08:59Z",
       "root_message_id": "msg-5e71eca11e15"
     },
     {
@@ -157,21 +157,9 @@
       "participants": [
         "Christopher Desjardins"
       ],
-      "started": "2009-01-31T14:08:37-06:00",
-      "last_reply": "2009-01-31T14:08:37-06:00",
+      "started": "2009-01-31T20:08:37Z",
+      "last_reply": "2009-01-31T20:08:37Z",
       "root_message_id": "msg-7ed038d58c4a"
-    },
-    {
-      "id": "thread-b7bb25460029",
-      "subject": "[jones@reed.edu: Re:  Who is the list for?]",
-      "message_count": 2,
-      "participants": [
-        "Albyn Jones",
-        "Rebecca Le"
-      ],
-      "started": "2009-01-31T15:46:16-08:00",
-      "last_reply": "2009-01-31T16:38:03-08:00",
-      "root_message_id": "msg-b7bb25460029"
     },
     {
       "id": "thread-e9daad097c73",
@@ -180,8 +168,8 @@
       "participants": [
         "Robert W. Hayden"
       ],
-      "started": "2009-01-31T17:17:38-05:00",
-      "last_reply": "2009-01-31T17:17:38-05:00",
+      "started": "2009-01-31T22:17:38Z",
+      "last_reply": "2009-01-31T22:17:38Z",
       "root_message_id": "msg-e9daad097c73"
     },
     {
@@ -191,9 +179,21 @@
       "participants": [
         "Robert W. Hayden"
       ],
-      "started": "2009-01-31T17:47:27-05:00",
-      "last_reply": "2009-01-31T17:47:27-05:00",
+      "started": "2009-01-31T22:47:27Z",
+      "last_reply": "2009-01-31T22:47:27Z",
       "root_message_id": "msg-f7980245f260"
+    },
+    {
+      "id": "thread-b7bb25460029",
+      "subject": "[jones@reed.edu: Re:  Who is the list for?]",
+      "message_count": 2,
+      "participants": [
+        "Albyn Jones",
+        "Rebecca Le"
+      ],
+      "started": "2009-01-31T23:46:16Z",
+      "last_reply": "2009-02-01T00:38:03Z",
+      "root_message_id": "msg-b7bb25460029"
     }
   ]
 }

@@ -8,7 +8,7 @@
       "message_id": "<1C11B3DE-B7D5-403D-A44D-DD1EDAD15A94@gmail.com>",
       "from_name": "Nicholas Horton",
       "from_email_hash": "21da3a972921daf9ba71fb679ab28915dacafd25739ef53c53ec32f5fba516f7",
-      "date": "2018-01-09T06:14:00-05:00",
+      "date": "2018-01-09T11:14:00Z",
       "subject": "[R-sig-teaching] Electronic Conference on Teaching Statistics call for proposals",
       "subject_clean": "Electronic Conference on Teaching Statistics call for proposals",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<20180110095315.Horde.J7t4sf_MCdacAXlMnhBydg1@webmail.rice.edu>",
       "from_name": "Brown, Tony N",
       "from_email_hash": "0aef8314b2a0122a8b21e86d134e9eaf3f45a0a146b415e42ba3ae49b3be7ca8",
-      "date": "2018-01-10T09:53:15-06:00",
+      "date": "2018-01-10T15:53:15Z",
       "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 99, Issue 3",
       "subject_clean": "R-sig-teaching Digest, Vol 99, Issue 3",
       "in_reply_to": "<mailman.25.1513162802.23193.r-sig-teaching@r-project.org>",
@@ -46,8 +46,8 @@
       "participants": [
         "Nicholas Horton"
       ],
-      "started": "2018-01-09T06:14:00-05:00",
-      "last_reply": "2018-01-09T06:14:00-05:00",
+      "started": "2018-01-09T11:14:00Z",
+      "last_reply": "2018-01-09T11:14:00Z",
       "root_message_id": "msg-4ce69aa8cbad"
     },
     {
@@ -57,8 +57,8 @@
       "participants": [
         "Brown, Tony N"
       ],
-      "started": "2018-01-10T09:53:15-06:00",
-      "last_reply": "2018-01-10T09:53:15-06:00",
+      "started": "2018-01-10T15:53:15Z",
+      "last_reply": "2018-01-10T15:53:15Z",
       "root_message_id": "msg-1b2a6b13384f"
     }
   ]

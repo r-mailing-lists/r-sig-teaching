@@ -8,7 +8,7 @@
       "message_id": "<f95c22480803091310y15e904e2l446f6d42df4403c3@mail.gmail.com>",
       "from_name": "Lawrence Hanser",
       "from_email_hash": "0c534bf7bc2a896ef7c11746db5f69efd714e80ff5ba3d8f6b89033973e380fd",
-      "date": "2008-03-09T13:10:33-07:00",
+      "date": "2008-03-09T20:10:33Z",
       "subject": "[R-sig-teaching] student guide developed for installation?",
       "subject_clean": "student guide developed for installation?",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<6B9725F27A9E9C652EF01FB4@cas-browntn.vanderbilt.edu>",
       "from_name": "Tony N. Brown",
       "from_email_hash": "c3ccb62a1d917975463c21e5854ee1571423db961aa1965220b34226ec09cc6e",
-      "date": "2008-03-10T16:07:05-05:00",
+      "date": "2008-03-10T21:07:05Z",
       "subject": "[R-sig-teaching] student guide developed for installation?",
       "subject_clean": "student guide developed for installation?",
       "in_reply_to": "<mailman.5.1205146801.22205.r-sig-teaching@r-project.org>",
@@ -46,8 +46,8 @@
       "participants": [
         "Lawrence Hanser"
       ],
-      "started": "2008-03-09T13:10:33-07:00",
-      "last_reply": "2008-03-09T13:10:33-07:00",
+      "started": "2008-03-09T20:10:33Z",
+      "last_reply": "2008-03-09T20:10:33Z",
       "root_message_id": "msg-105f0cbf6d75"
     },
     {
@@ -57,8 +57,8 @@
       "participants": [
         "Tony N. Brown"
       ],
-      "started": "2008-03-10T16:07:05-05:00",
-      "last_reply": "2008-03-10T16:07:05-05:00",
+      "started": "2008-03-10T21:07:05Z",
+      "last_reply": "2008-03-10T21:07:05Z",
       "root_message_id": "msg-96060c787b8c"
     }
   ]

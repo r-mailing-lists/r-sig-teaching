@@ -8,7 +8,7 @@
       "message_id": "<068e102d-b913-35cd-12e2-21cde61b6cf7@effectivedefense.org>",
       "from_name": "Spencer Graves",
       "from_email_hash": "6f4fcfd993c553672fdb3851315d4aa66695050817dc265276b19803a73bd0ef",
-      "date": "2016-05-02T08:07:26-05:00",
+      "date": "2016-05-02T13:07:26Z",
       "subject": "[R-sig-teaching] Uses of Normal Probability Plots",
       "subject_clean": "Uses of Normal Probability Plots",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<CAHDp66DzBWQpwjFrg01KuN-xgckjb9_=j+pwh8bbJXCZ-Mw7zg@mail.gmail.com>",
       "from_name": "Steven Stoline",
       "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
-      "date": "2016-05-17T08:44:33-04:00",
+      "date": "2016-05-17T12:44:33Z",
       "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
       "subject_clean": "Plot f(x) = x^(1/5)",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<327a5b07-46d9-9b0c-5627-388434e64db0@purdue.edu>",
       "from_name": "Mark Daniel Ward",
       "from_email_hash": "9660c15b92052c1ae502524414654a6571d365b2d3e5844d0a72a5172a130df6",
-      "date": "2016-05-17T08:51:50-04:00",
+      "date": "2016-05-17T12:51:50Z",
       "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
       "subject_clean": "Plot f(x) = x^(1/5)",
       "in_reply_to": "<CAHDp66DzBWQpwjFrg01KuN-xgckjb9_=j+pwh8bbJXCZ-Mw7zg@mail.gmail.com>",
@@ -58,7 +58,7 @@
       "message_id": "<CAAxdm-6h74YAyffQG3snjbDfv1fBDDzxrJYb0cX59S8A8eDKsQ@mail.gmail.com>",
       "from_name": "jim holtman",
       "from_email_hash": "46f979d1a5bf6fa8b5559d3a049add9a0eb45fffc6a219e7401d97ba07ef9a0f",
-      "date": "2016-05-17T08:52:35-04:00",
+      "date": "2016-05-17T12:52:35Z",
       "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
       "subject_clean": "Plot f(x) = x^(1/5)",
       "in_reply_to": "<CAHDp66DzBWQpwjFrg01KuN-xgckjb9_=j+pwh8bbJXCZ-Mw7zg@mail.gmail.com>",
@@ -76,7 +76,7 @@
       "message_id": "<CAHDp66CnLBuse-CXMz1esrkHMm_KgfuJQhXeoFU=3uY7HHKzPw@mail.gmail.com>",
       "from_name": "Steven Stoline",
       "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
-      "date": "2016-05-17T09:06:45-04:00",
+      "date": "2016-05-17T13:06:45Z",
       "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
       "subject_clean": "Plot f(x) = x^(1/5)",
       "in_reply_to": "<CAAxdm-6h74YAyffQG3snjbDfv1fBDDzxrJYb0cX59S8A8eDKsQ@mail.gmail.com>",
@@ -95,7 +95,7 @@
       "message_id": "<CAP01uRnZ7gX_m8EtsguxfK9qRX=x2x_Rb4wHm60ye=rAXSrPBQ@mail.gmail.com>",
       "from_name": "Gabor Grothendieck",
       "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
-      "date": "2016-05-17T09:07:38-04:00",
+      "date": "2016-05-17T13:07:38Z",
       "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
       "subject_clean": "Plot f(x) = x^(1/5)",
       "in_reply_to": "<CAHDp66DzBWQpwjFrg01KuN-xgckjb9_=j+pwh8bbJXCZ-Mw7zg@mail.gmail.com>",
@@ -133,7 +133,7 @@
       "message_id": "<CAHDp66AV6HXf=v-mZq5h9V=V5Ktn1cAjeiBcRJs4eHB2TmZabQ@mail.gmail.com>",
       "from_name": "Steven Stoline",
       "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
-      "date": "2016-05-17T09:12:25-04:00",
+      "date": "2016-05-17T13:12:25Z",
       "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
       "subject_clean": "Plot f(x) = x^(1/5)",
       "in_reply_to": "<CAP01uRnZ7gX_m8EtsguxfK9qRX=x2x_Rb4wHm60ye=rAXSrPBQ@mail.gmail.com>",
@@ -152,7 +152,7 @@
       "message_id": "<CAAxdm-7jdNN_eubS7AE78-0FOVYc6V-ZTs5DkU7OsxT_rtd0EQ@mail.gmail.com>",
       "from_name": "jim holtman",
       "from_email_hash": "46f979d1a5bf6fa8b5559d3a049add9a0eb45fffc6a219e7401d97ba07ef9a0f",
-      "date": "2016-05-17T09:51:26-04:00",
+      "date": "2016-05-17T13:51:26Z",
       "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
       "subject_clean": "Plot f(x) = x^(1/5)",
       "in_reply_to": "<a5a7d3b74fc147e0b0a5be55d1cc8c1b@WSR-MAILBOX-104.mrc-hnr.cam.ac.local>",
@@ -173,7 +173,7 @@
       "message_id": "<20160517142338.73677E23F30B@lilly.csoft.net>",
       "from_name": "bob at statland.org",
       "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
-      "date": "2016-05-17T10:23:38-04:00",
+      "date": "2016-05-17T14:23:38Z",
       "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
       "subject_clean": "Plot f(x) = x^(1/5)",
       "in_reply_to": null,
@@ -189,7 +189,7 @@
       "message_id": "<CAGx1TMDfNu6THF60iTQExd7yMHky5Wn_9MOMn4pB-jkNZJGiGA@mail.gmail.com>",
       "from_name": "Richard M. Heiberger",
       "from_email_hash": "4ce810eab8587777db353ea9d997b9e94d9e73af018121f9a3424238038952df",
-      "date": "2016-05-17T11:10:21-04:00",
+      "date": "2016-05-17T15:10:21Z",
       "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
       "subject_clean": "Plot f(x) = x^(1/5)",
       "in_reply_to": "<20160517142338.73677E23F30B@lilly.csoft.net>",
@@ -207,7 +207,7 @@
       "message_id": "<CA+3jU8EKbVUORNG2GRHKVbz1eDopSYEbF1ievZUAtxxYT-wzBw@mail.gmail.com>",
       "from_name": "Albyn Jones",
       "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
-      "date": "2016-05-17T08:55:45-07:00",
+      "date": "2016-05-17T15:55:45Z",
       "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
       "subject_clean": "Plot f(x) = x^(1/5)",
       "in_reply_to": "<CAGx1TMDfNu6THF60iTQExd7yMHky5Wn_9MOMn4pB-jkNZJGiGA@mail.gmail.com>",
@@ -226,7 +226,7 @@
       "message_id": "<2eb95916-7b10-d306-e356-069b110bfcc6@upc.edu>",
       "from_name": "Klaus Langohr",
       "from_email_hash": "d0a96138bee0f24f9821aef18f3d6a95f030b4b945a242a15936d947cb301fd1",
-      "date": "2016-05-17T18:10:13+02:00",
+      "date": "2016-05-17T16:10:13Z",
       "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
       "subject_clean": "Plot f(x) = x^(1/5)",
       "in_reply_to": "<CA+3jU8EKbVUORNG2GRHKVbz1eDopSYEbF1ievZUAtxxYT-wzBw@mail.gmail.com>",
@@ -246,7 +246,7 @@
       "message_id": "<CAEZOd2A_eDsCS5Aio=FPpqWVSb6ErU=yzV9nbdmcxQXkNueheg@mail.gmail.com>",
       "from_name": "Brian Dennis",
       "from_email_hash": "701fff3e21682d3a2a0e00efd4388e8490784b003ba99bbdf245d085ed1f529d",
-      "date": "2016-05-17T14:45:30-07:00",
+      "date": "2016-05-17T21:45:30Z",
       "subject": "[R-sig-teaching] Teaching R in high school and college science and math courses",
       "subject_clean": "Teaching R in high school and college science and math courses",
       "in_reply_to": null,
@@ -262,7 +262,7 @@
       "message_id": "<2c26d5ad-b393-e5f3-c80e-d37e3cf1a8ef@purdue.edu>",
       "from_name": "Mark Daniel Ward",
       "from_email_hash": "9660c15b92052c1ae502524414654a6571d365b2d3e5844d0a72a5172a130df6",
-      "date": "2016-05-17T18:01:57-04:00",
+      "date": "2016-05-17T22:01:57Z",
       "subject": "[R-sig-teaching] Teaching R in high school and college science and math courses",
       "subject_clean": "Teaching R in high school and college science and math courses",
       "in_reply_to": "<CAEZOd2A_eDsCS5Aio=FPpqWVSb6ErU=yzV9nbdmcxQXkNueheg@mail.gmail.com>",
@@ -280,7 +280,7 @@
       "message_id": "<20160517221750.GA50218@lilly.csoft.net>",
       "from_name": "User Hayden",
       "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
-      "date": "2016-05-17T18:17:50-04:00",
+      "date": "2016-05-17T22:17:50Z",
       "subject": "[R-sig-teaching] [dr.of.chaos@gmail.com: Teaching R in high school and college science and math courses]",
       "subject_clean": "[dr.of.chaos@gmail.com: Teaching R in high school and college science and math courses]",
       "in_reply_to": null,
@@ -296,7 +296,7 @@
       "message_id": "<20160517222313.GB50218@lilly.csoft.net>",
       "from_name": "User Hayden",
       "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
-      "date": "2016-05-17T18:23:13-04:00",
+      "date": "2016-05-17T22:23:13Z",
       "subject": "[R-sig-teaching] [mdw@purdue.edu: Re: Teaching R in high school and college science and math courses]",
       "subject_clean": "[mdw@purdue.edu: Re: Teaching R in high school and college science and math courses]",
       "in_reply_to": null,
@@ -312,7 +312,7 @@
       "message_id": "<CAM+rpYkW+frze61KjvUO7MO9=OuAG2rnST+f10j0cjm7kC5hYA@mail.gmail.com>",
       "from_name": "Christopher W Ryan",
       "from_email_hash": "1b29f9cec300eaee17dfd69d1f61fa0ef3e03d1c3e99be2390ec65184340c413",
-      "date": "2016-05-17T23:13:07-04:00",
+      "date": "2016-05-18T03:13:07Z",
       "subject": "[R-sig-teaching] Teaching R in high school and college science and math courses",
       "subject_clean": "Teaching R in high school and college science and math courses",
       "in_reply_to": "<2c26d5ad-b393-e5f3-c80e-d37e3cf1a8ef@purdue.edu>",
@@ -331,7 +331,7 @@
       "message_id": "<22332.4586.814782.827451@stat.math.ethz.ch>",
       "from_name": "Martin Maechler",
       "from_email_hash": "c2c86f22f78a4ecfe6d0e6b4e2be505a3f5beb0470ea88c903688ac536018a98",
-      "date": "2016-05-18T08:55:38+02:00",
+      "date": "2016-05-18T06:55:38Z",
       "subject": "[R-sig-teaching] Teaching R in high school and college science and math courses",
       "subject_clean": "Teaching R in high school and college science and math courses",
       "in_reply_to": "<20160517221750.GA50218@lilly.csoft.net>",
@@ -349,7 +349,7 @@
       "message_id": "<CABdHhvG9ZpxW3ObKXJ=HfWC846RzTHTJHF5LsD1wqLmoc0H1Mw@mail.gmail.com>",
       "from_name": "Hadley Wickham",
       "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
-      "date": "2016-05-18T12:41:15+02:00",
+      "date": "2016-05-18T10:41:15Z",
       "subject": "[R-sig-teaching] Teaching R in high school and college science and math courses",
       "subject_clean": "Teaching R in high school and college science and math courses",
       "in_reply_to": "<22332.4586.814782.827451@stat.math.ethz.ch>",
@@ -368,7 +368,7 @@
       "message_id": "<20160518115737.GA508@lilly.csoft.net>",
       "from_name": "User Hayden",
       "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
-      "date": "2016-05-18T07:57:37-04:00",
+      "date": "2016-05-18T11:57:37Z",
       "subject": "[R-sig-teaching] [h.wickham@gmail.com: Re: Teaching R in high school and college science and math courses]",
       "subject_clean": "[h.wickham@gmail.com: Re: Teaching R in high school and college science and math courses]",
       "in_reply_to": null,
@@ -384,7 +384,7 @@
       "message_id": "<CACHJnQDeusfjJgwHfDADhX_dBOsXxN4o25TOe9sDaqy0dKYR+Q@mail.gmail.com>",
       "from_name": "Stas Kolenikov",
       "from_email_hash": "fec250298b598169001d8be1d8803c49c95d5d639526133ee765175f46ff5d8a",
-      "date": "2016-05-18T10:33:49-05:00",
+      "date": "2016-05-18T15:33:49Z",
       "subject": "[R-sig-teaching] Teaching R in high school and college science and math courses",
       "subject_clean": "Teaching R in high school and college science and math courses",
       "in_reply_to": "<CABdHhvG9ZpxW3ObKXJ=HfWC846RzTHTJHF5LsD1wqLmoc0H1Mw@mail.gmail.com>",
@@ -404,7 +404,7 @@
       "message_id": "<20160518183132.BD868E23F30B@lilly.csoft.net>",
       "from_name": "bob at statland.org",
       "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
-      "date": "2016-05-18T14:31:32-04:00",
+      "date": "2016-05-18T18:31:32Z",
       "subject": "[R-sig-teaching] Teaching R in high school and college science (fwd)",
       "subject_clean": "Teaching R in high school and college science (fwd)",
       "in_reply_to": null,
@@ -420,7 +420,7 @@
       "message_id": "<CAHDp66BbhQ8_v0hkzkvjkn19UKQPxzXtjZFqdBhqL=jDv4Z_jA@mail.gmail.com>",
       "from_name": "Steven Stoline",
       "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
-      "date": "2016-05-18T14:58:14-04:00",
+      "date": "2016-05-18T18:58:14Z",
       "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
       "subject_clean": "Plot f(x) = x^(1/5)",
       "in_reply_to": "<CAP01uRnZ7gX_m8EtsguxfK9qRX=x2x_Rb4wHm60ye=rAXSrPBQ@mail.gmail.com>",
@@ -439,7 +439,7 @@
       "message_id": "<CAHDp66AHhJ+L42p8+ogMxAQqgNQC1_HJh5m1JAxekonPgPajBQ@mail.gmail.com>",
       "from_name": "Steven Stoline",
       "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
-      "date": "2016-05-18T15:00:21-04:00",
+      "date": "2016-05-18T19:00:21Z",
       "subject": "[R-sig-teaching] Folium of Descrates",
       "subject_clean": "Folium of Descrates",
       "in_reply_to": null,
@@ -455,7 +455,7 @@
       "message_id": "<CAAmySGPDqPdYr9T8vHO6L_=+SbEqMT4tuMfHNC-AsS2yKxoiMA@mail.gmail.com>",
       "from_name": "Michael Weylandt",
       "from_email_hash": "44e8775a589b9ef81880469e200f3cce307c7180b4289ca1696a578afb772b3a",
-      "date": "2016-05-18T14:12:13-05:00",
+      "date": "2016-05-18T19:12:13Z",
       "subject": "[R-sig-teaching] Plot f(x) = x^(1/5)",
       "subject_clean": "Plot f(x) = x^(1/5)",
       "in_reply_to": "<CAHDp66BbhQ8_v0hkzkvjkn19UKQPxzXtjZFqdBhqL=jDv4Z_jA@mail.gmail.com>",
@@ -475,7 +475,7 @@
       "message_id": "<CAAmySGOmJCmEpRuwstNTNs1J=_OcfiMyi+dK1uxnnUzoYM-hqQ@mail.gmail.com>",
       "from_name": "Michael Weylandt",
       "from_email_hash": "44e8775a589b9ef81880469e200f3cce307c7180b4289ca1696a578afb772b3a",
-      "date": "2016-05-18T14:13:26-05:00",
+      "date": "2016-05-18T19:13:26Z",
       "subject": "[R-sig-teaching] Folium of Descrates",
       "subject_clean": "Folium of Descrates",
       "in_reply_to": "<CAHDp66AHhJ+L42p8+ogMxAQqgNQC1_HJh5m1JAxekonPgPajBQ@mail.gmail.com>",
@@ -493,7 +493,7 @@
       "message_id": "<20160518191358.31012E23F30B@lilly.csoft.net>",
       "from_name": "bob at statland.org",
       "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
-      "date": "2016-05-18T15:13:58-04:00",
+      "date": "2016-05-18T19:13:58Z",
       "subject": "[R-sig-teaching] Plot f(x) = x^(1/5) (fwd)",
       "subject_clean": "Plot f(x) = x^(1/5) (fwd)",
       "in_reply_to": null,
@@ -509,7 +509,7 @@
       "message_id": "<22333.26077.910778.214732@stat.math.ethz.ch>",
       "from_name": "Martin Maechler",
       "from_email_hash": "c2c86f22f78a4ecfe6d0e6b4e2be505a3f5beb0470ea88c903688ac536018a98",
-      "date": "2016-05-19T09:06:05+02:00",
+      "date": "2016-05-19T07:06:05Z",
       "subject": "[R-sig-teaching] [h.wickham@gmail.com: Re: Teaching R in high school and college science and math courses]",
       "subject_clean": "[h.wickham@gmail.com: Re: Teaching R in high school and college science and math courses]",
       "in_reply_to": "<20160518115737.GA508@lilly.csoft.net>",
@@ -527,7 +527,7 @@
       "message_id": "<CAGSSkmjNeioSM9NoaBZ0_6Wr4n462wmagv601PX8NuLF-o4S+w@mail.gmail.com>",
       "from_name": "Nick Carchedi",
       "from_email_hash": "ea4b840fddb83aa5f0c581d1a1ef33a753cf350acc1601834035a8171815900c",
-      "date": "2016-05-19T11:27:40-04:00",
+      "date": "2016-05-19T15:27:40Z",
       "subject": "[R-sig-teaching] Teaching R in high school and college science and math courses",
       "subject_clean": "Teaching R in high school and college science and math courses",
       "in_reply_to": null,
@@ -543,7 +543,7 @@
       "message_id": "<20160519195901.B42D6E23F30B@lilly.csoft.net>",
       "from_name": "bob at statland.org",
       "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
-      "date": "2016-05-19T15:59:01-04:00",
+      "date": "2016-05-19T19:59:01Z",
       "subject": "[R-sig-teaching] Teaching R in high school and college science (fwd)",
       "subject_clean": "Teaching R in high school and college science (fwd)",
       "in_reply_to": null,
@@ -559,7 +559,7 @@
       "message_id": "<20160519231148.1CD79E23F30B@lilly.csoft.net>",
       "from_name": "bob at statland.org",
       "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
-      "date": "2016-05-19T19:11:48-04:00",
+      "date": "2016-05-19T23:11:48Z",
       "subject": "[R-sig-teaching] sample AP Statistics exams",
       "subject_clean": "sample AP Statistics exams",
       "in_reply_to": null,
@@ -575,7 +575,7 @@
       "message_id": "<87iny1m9m4.fsf@cam.ac.uk>",
       "from_name": "Laurent Gatto",
       "from_email_hash": "7c62b970736166c1100da366a34679b3dd2d7d4e29899058dafa5b78b60c2d3a",
-      "date": "2016-05-26T10:50:11+01:00",
+      "date": "2016-05-26T09:50:11Z",
       "subject": "[R-sig-teaching] R Software Carpentry Instructor training",
       "subject_clean": "R Software Carpentry Instructor training",
       "in_reply_to": null,
@@ -595,8 +595,8 @@
       "participants": [
         "Spencer Graves"
       ],
-      "started": "2016-05-02T08:07:26-05:00",
-      "last_reply": "2016-05-02T08:07:26-05:00",
+      "started": "2016-05-02T13:07:26Z",
+      "last_reply": "2016-05-02T13:07:26Z",
       "root_message_id": "msg-293499da636e"
     },
     {
@@ -611,8 +611,8 @@
         "Steven Stoline",
         "jim holtman"
       ],
-      "started": "2016-05-17T08:44:33-04:00",
-      "last_reply": "2016-05-18T14:12:13-05:00",
+      "started": "2016-05-17T12:44:33Z",
+      "last_reply": "2016-05-18T19:12:13Z",
       "root_message_id": "msg-b2c583c04eb4"
     },
     {
@@ -625,8 +625,8 @@
         "Richard M. Heiberger",
         "bob at statland.org"
       ],
-      "started": "2016-05-17T10:23:38-04:00",
-      "last_reply": "2016-05-17T18:10:13+02:00",
+      "started": "2016-05-17T14:23:38Z",
+      "last_reply": "2016-05-17T16:10:13Z",
       "root_message_id": "msg-d9717cb13c11"
     },
     {
@@ -638,8 +638,8 @@
         "Christopher W Ryan",
         "Mark Daniel Ward"
       ],
-      "started": "2016-05-17T14:45:30-07:00",
-      "last_reply": "2016-05-17T23:13:07-04:00",
+      "started": "2016-05-17T21:45:30Z",
+      "last_reply": "2016-05-18T03:13:07Z",
       "root_message_id": "msg-688559af7602"
     },
     {
@@ -652,8 +652,8 @@
         "Stas Kolenikov",
         "User Hayden"
       ],
-      "started": "2016-05-17T18:17:50-04:00",
-      "last_reply": "2016-05-18T10:33:49-05:00",
+      "started": "2016-05-17T22:17:50Z",
+      "last_reply": "2016-05-18T15:33:49Z",
       "root_message_id": "msg-d79844a864cd"
     },
     {
@@ -663,8 +663,8 @@
       "participants": [
         "User Hayden"
       ],
-      "started": "2016-05-17T18:23:13-04:00",
-      "last_reply": "2016-05-17T18:23:13-04:00",
+      "started": "2016-05-17T22:23:13Z",
+      "last_reply": "2016-05-17T22:23:13Z",
       "root_message_id": "msg-472c6827cd5f"
     },
     {
@@ -675,8 +675,8 @@
         "Martin Maechler",
         "User Hayden"
       ],
-      "started": "2016-05-18T07:57:37-04:00",
-      "last_reply": "2016-05-19T09:06:05+02:00",
+      "started": "2016-05-18T11:57:37Z",
+      "last_reply": "2016-05-19T07:06:05Z",
       "root_message_id": "msg-2639fadc403f"
     },
     {
@@ -686,8 +686,8 @@
       "participants": [
         "bob at statland.org"
       ],
-      "started": "2016-05-18T14:31:32-04:00",
-      "last_reply": "2016-05-18T14:31:32-04:00",
+      "started": "2016-05-18T18:31:32Z",
+      "last_reply": "2016-05-18T18:31:32Z",
       "root_message_id": "msg-cabd7ab28cd6"
     },
     {
@@ -698,8 +698,8 @@
         "Michael Weylandt",
         "Steven Stoline"
       ],
-      "started": "2016-05-18T15:00:21-04:00",
-      "last_reply": "2016-05-18T14:13:26-05:00",
+      "started": "2016-05-18T19:00:21Z",
+      "last_reply": "2016-05-18T19:13:26Z",
       "root_message_id": "msg-f92cd852bf3c"
     },
     {
@@ -709,8 +709,8 @@
       "participants": [
         "bob at statland.org"
       ],
-      "started": "2016-05-18T15:13:58-04:00",
-      "last_reply": "2016-05-18T15:13:58-04:00",
+      "started": "2016-05-18T19:13:58Z",
+      "last_reply": "2016-05-18T19:13:58Z",
       "root_message_id": "msg-71786e02711a"
     },
     {
@@ -720,8 +720,8 @@
       "participants": [
         "Nick Carchedi"
       ],
-      "started": "2016-05-19T11:27:40-04:00",
-      "last_reply": "2016-05-19T11:27:40-04:00",
+      "started": "2016-05-19T15:27:40Z",
+      "last_reply": "2016-05-19T15:27:40Z",
       "root_message_id": "msg-e620dc2eff27"
     },
     {
@@ -731,8 +731,8 @@
       "participants": [
         "bob at statland.org"
       ],
-      "started": "2016-05-19T15:59:01-04:00",
-      "last_reply": "2016-05-19T15:59:01-04:00",
+      "started": "2016-05-19T19:59:01Z",
+      "last_reply": "2016-05-19T19:59:01Z",
       "root_message_id": "msg-04fed9a5c9e8"
     },
     {
@@ -742,8 +742,8 @@
       "participants": [
         "bob at statland.org"
       ],
-      "started": "2016-05-19T19:11:48-04:00",
-      "last_reply": "2016-05-19T19:11:48-04:00",
+      "started": "2016-05-19T23:11:48Z",
+      "last_reply": "2016-05-19T23:11:48Z",
       "root_message_id": "msg-26b744367a55"
     },
     {
@@ -753,8 +753,8 @@
       "participants": [
         "Laurent Gatto"
       ],
-      "started": "2016-05-26T10:50:11+01:00",
-      "last_reply": "2016-05-26T10:50:11+01:00",
+      "started": "2016-05-26T09:50:11Z",
+      "last_reply": "2016-05-26T09:50:11Z",
       "root_message_id": "msg-9d84bf3d8389"
     }
   ]

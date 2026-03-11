@@ -8,7 +8,7 @@
       "message_id": "<ECDB974D-2C2A-4B99-B5DF-F8FF6D562664@smith.edu>",
       "from_name": "Nicholas Horton",
       "from_email_hash": "cf176a29de4abfc7da13c6fc418c20e19771b5741537f75c9aee351ac098ab29",
-      "date": "2012-09-15T16:45:12-04:00",
+      "date": "2012-09-15T20:45:12Z",
       "subject": "[R-sig-teaching] update on Illustrating the case studies in the \"Statistical Sleuth\" using R",
       "subject_clean": "update on Illustrating the case studies in the \"Statistical Sleuth\" using R",
       "in_reply_to": "<6C5EFA68-2F3C-4051-BEB4-B799037A9E1C@smith.edu>",
@@ -26,7 +26,7 @@
       "message_id": "<CAGx1TMACcUJauJ=82b44GZ_XBT6P3RrWBAMd84P5xA5ZhUDDUA@mail.gmail.com>",
       "from_name": "Richard M. Heiberger",
       "from_email_hash": "4ce810eab8587777db353ea9d997b9e94d9e73af018121f9a3424238038952df",
-      "date": "2012-09-15T19:59:10-04:00",
+      "date": "2012-09-15T23:59:10Z",
       "subject": "[R-sig-teaching] Data and example R code for Statistical Analysis and Data Display",
       "subject_clean": "Data and example R code for Statistical Analysis and Data Display",
       "in_reply_to": null,
@@ -46,8 +46,8 @@
       "participants": [
         "Nicholas Horton"
       ],
-      "started": "2012-09-15T16:45:12-04:00",
-      "last_reply": "2012-09-15T16:45:12-04:00",
+      "started": "2012-09-15T20:45:12Z",
+      "last_reply": "2012-09-15T20:45:12Z",
       "root_message_id": "msg-f5114e917115"
     },
     {
@@ -57,8 +57,8 @@
       "participants": [
         "Richard M. Heiberger"
       ],
-      "started": "2012-09-15T19:59:10-04:00",
-      "last_reply": "2012-09-15T19:59:10-04:00",
+      "started": "2012-09-15T23:59:10Z",
+      "last_reply": "2012-09-15T23:59:10Z",
       "root_message_id": "msg-260195ece7c1"
     }
   ]

@@ -8,7 +8,7 @@
       "message_id": "<CAE9stmcZBj=LJPr=weMQyL66S3q3M3z0C20tVTDuK4W5DcYCJg@mail.gmail.com>",
       "from_name": "AbouEl-Makarim Aboueissa",
       "from_email_hash": "0e2534724001ad358ea9a9a5e54bf3c5e424d8ab415891faf701f24510d27d97",
-      "date": "2021-08-30T05:31:25-04:00",
+      "date": "2021-08-30T09:31:25Z",
       "subject": "[R-sig-teaching] R codes/functions for test procedures",
       "subject_clean": "R codes/functions for test procedures",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<CANV9buQv4y25x03AtL9ZEEnwXthzqkr10jguqgaFC7x=nBLtPw@mail.gmail.com>",
       "from_name": "Jeff Laux",
       "from_email_hash": "99d9cc6aa59169825cbb38f392641cc09c45119381b1e7c1a01245f518510b4c",
-      "date": "2021-08-30T07:38:54-04:00",
+      "date": "2021-08-30T11:38:54Z",
       "subject": "[R-sig-teaching] R codes/functions for test procedures",
       "subject_clean": "R codes/functions for test procedures",
       "in_reply_to": "<CAE9stmcZBj=LJPr=weMQyL66S3q3M3z0C20tVTDuK4W5DcYCJg@mail.gmail.com>",
@@ -42,7 +42,7 @@
       "message_id": "<CAE9stmez4vVMJ1seeh5bwyDUjhAm9wLMt0nuXOYnkzp3iGk1wQ@mail.gmail.com>",
       "from_name": "AbouEl-Makarim Aboueissa",
       "from_email_hash": "0e2534724001ad358ea9a9a5e54bf3c5e424d8ab415891faf701f24510d27d97",
-      "date": "2021-08-30T07:57:59-04:00",
+      "date": "2021-08-30T11:57:59Z",
       "subject": "[R-sig-teaching] R codes/functions for test procedures",
       "subject_clean": "R codes/functions for test procedures",
       "in_reply_to": "<CANV9buQv4y25x03AtL9ZEEnwXthzqkr10jguqgaFC7x=nBLtPw@mail.gmail.com>",
@@ -61,7 +61,7 @@
       "message_id": "<24878.18857.469806.395768@stat.math.ethz.ch>",
       "from_name": "Martin Maechler",
       "from_email_hash": "a92f4a07d4e3cad5fba985e30db2b0fff598d5ddfbadbb2e91ffe91636400c62",
-      "date": "2021-08-31T17:24:25+02:00",
+      "date": "2021-08-31T15:24:25Z",
       "subject": "[R-sig-teaching] R codes/functions for test procedures",
       "subject_clean": "R codes/functions for test procedures",
       "in_reply_to": "<CANV9buQv4y25x03AtL9ZEEnwXthzqkr10jguqgaFC7x=nBLtPw-6465@mail.gmail.com>",
@@ -85,8 +85,8 @@
         "AbouEl-Makarim Aboueissa",
         "Jeff Laux"
       ],
-      "started": "2021-08-30T05:31:25-04:00",
-      "last_reply": "2021-08-30T07:57:59-04:00",
+      "started": "2021-08-30T09:31:25Z",
+      "last_reply": "2021-08-30T11:57:59Z",
       "root_message_id": "msg-eb5f81839e86"
     },
     {
@@ -96,8 +96,8 @@
       "participants": [
         "Martin Maechler"
       ],
-      "started": "2021-08-31T17:24:25+02:00",
-      "last_reply": "2021-08-31T17:24:25+02:00",
+      "started": "2021-08-31T15:24:25Z",
+      "last_reply": "2021-08-31T15:24:25Z",
       "root_message_id": "msg-7c76af8bf8ee"
     }
   ]

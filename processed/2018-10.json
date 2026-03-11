@@ -8,7 +8,7 @@
       "message_id": "<485396B7-761E-499D-B580-BF7D3E912354@me.com>",
       "from_name": "R. Mark Sharp",
       "from_email_hash": "79556d4ed13e811e6d296b34f2d9c8cedf04c3a27ab97501ddf1c1c1016701db",
-      "date": "2018-10-02T10:54:36-05:00",
+      "date": "2018-10-02T15:54:36Z",
       "subject": "[R-sig-teaching] demonstration of weaknesses in stepwise variable selection",
       "subject_clean": "demonstration of weaknesses in stepwise variable selection",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<5BB42A4D.8090008@gmail.com>",
       "from_name": "Jeff Laux",
       "from_email_hash": "5d94199113972395f0b96c883a1d282be4c0f3e734839a180082695d8c422fea",
-      "date": "2018-10-02T22:32:45-04:00",
+      "date": "2018-10-03T02:32:45Z",
       "subject": "[R-sig-teaching]  demonstration of weaknesses in stepwise variable selection",
       "subject_clean": "demonstration of weaknesses in stepwise variable selection",
       "in_reply_to": "<485396B7-761E-499D-B580-BF7D3E912354@me.com>",
@@ -42,7 +42,7 @@
       "message_id": "<CADop7+jwQ9SqLpbqsyED4tcu7fjL6aohVJQdmN73hSJZWj6uVg@mail.gmail.com>",
       "from_name": "K Imran M",
       "from_email_hash": "2660850bcc67c6ce59d9a36c8822d627c3f59f4ff6965a40377531f4bd17bfac",
-      "date": "2018-10-03T11:13:32+08:00",
+      "date": "2018-10-03T03:13:32Z",
       "subject": "[R-sig-teaching]  demonstration of weaknesses in stepwise variable selection",
       "subject_clean": "demonstration of weaknesses in stepwise variable selection",
       "in_reply_to": "<5BB42A4D.8090008@gmail.com>",
@@ -61,7 +61,7 @@
       "message_id": "<CAHtLaM-n=wT_JU14QBCLOcrZxdRDUXp7cSV6VWV2iZQdj6NfOA@mail.gmail.com>",
       "from_name": "Sander",
       "from_email_hash": "9129a88e04b100b0209727197eb2857c292e07f3c8d7d727eb08b7e0f2d486a4",
-      "date": "2018-10-03T11:36:29+02:00",
+      "date": "2018-10-03T09:36:29Z",
       "subject": "[R-sig-teaching]  demonstration of weaknesses in stepwise variable selection",
       "subject_clean": "demonstration of weaknesses in stepwise variable selection",
       "in_reply_to": "<485396B7-761E-499D-B580-BF7D3E912354@me.com>",
@@ -104,8 +104,8 @@
         "R. Mark Sharp",
         "Sander"
       ],
-      "started": "2018-10-02T10:54:36-05:00",
-      "last_reply": "2018-10-03T11:36:29+02:00",
+      "started": "2018-10-02T15:54:36Z",
+      "last_reply": "2018-10-03T09:36:29Z",
       "root_message_id": "msg-4cb0a479ecf9"
     },
     {
@@ -115,8 +115,8 @@
       "participants": [
         "John Maindonald"
       ],
-      "started": "2018-10-03T20:18:30+00:00",
-      "last_reply": "2018-10-03T20:18:30+00:00",
+      "started": "2018-10-03T20:18:30Z",
+      "last_reply": "2018-10-03T20:18:30Z",
       "root_message_id": "msg-9c1a44945ee9"
     }
   ]

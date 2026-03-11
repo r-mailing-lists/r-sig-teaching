@@ -8,7 +8,7 @@
       "message_id": "<4260.82.123.187.151.1174683813.squirrel@keo.limsi.fr>",
       "from_name": "sloiseau at limsi.fr",
       "from_email_hash": "3c3f3197df21193c63bebac058810ddd5b98576b1cb9dc719d4bf60a8a120aed",
-      "date": "2007-03-23T22:03:33+01:00",
+      "date": "2007-03-23T21:03:33Z",
       "subject": "[R-sig-teaching] Graphical of vector, matrice, list, etc.",
       "subject_clean": "Graphical of vector, matrice, list, etc.",
       "in_reply_to": null,
@@ -28,8 +28,8 @@
       "participants": [
         "sloiseau at limsi.fr"
       ],
-      "started": "2007-03-23T22:03:33+01:00",
-      "last_reply": "2007-03-23T22:03:33+01:00",
+      "started": "2007-03-23T21:03:33Z",
+      "last_reply": "2007-03-23T21:03:33Z",
       "root_message_id": "msg-e44d342a5ebf"
     }
   ]

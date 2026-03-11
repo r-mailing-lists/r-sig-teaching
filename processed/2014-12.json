@@ -40,7 +40,7 @@
       "message_id": "<21656.8156.145896.833982@stat.math.ethz.ch>",
       "from_name": "Martin Maechler",
       "from_email_hash": "c2c86f22f78a4ecfe6d0e6b4e2be505a3f5beb0470ea88c903688ac536018a98",
-      "date": "2014-12-22T14:42:52+01:00",
+      "date": "2014-12-22T13:42:52Z",
       "subject": "[R-sig-teaching] random effect model in R---- lmer",
       "subject_clean": "random effect model in R---- lmer",
       "in_reply_to": "<2025461787.93798.1419254760717.JavaMail.yahoo@jws100129.mail.ne1.yahoo.com>",
@@ -58,7 +58,7 @@
       "message_id": "<CAHDp66A867ObWPZboEOJAnBStWGsj=H432NQoT27LfukXGd2fA@mail.gmail.com>",
       "from_name": "Steven Stoline",
       "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
-      "date": "2014-12-28T18:35:57-05:00",
+      "date": "2014-12-28T23:35:57Z",
       "subject": "[R-sig-teaching] Problem with \"attach\"",
       "subject_clean": "Problem with \"attach\"",
       "in_reply_to": null,
@@ -74,7 +74,7 @@
       "message_id": "<CAGx1TMA-Rhsa_AALDHzt7=tzQkCRgZH5g2AgAPVobOwVYVkLzA@mail.gmail.com>",
       "from_name": "Richard M. Heiberger",
       "from_email_hash": "4ce810eab8587777db353ea9d997b9e94d9e73af018121f9a3424238038952df",
-      "date": "2014-12-28T19:10:26-05:00",
+      "date": "2014-12-29T00:10:26Z",
       "subject": "[R-sig-teaching] Problem with \"attach\"",
       "subject_clean": "Problem with \"attach\"",
       "in_reply_to": "<CAHDp66A867ObWPZboEOJAnBStWGsj=H432NQoT27LfukXGd2fA@mail.gmail.com>",
@@ -92,7 +92,7 @@
       "message_id": "<CAHDp66BCtPgJXZxP0c5BDBqY_BD8rYw49+yBHndNX44jaKBf2g@mail.gmail.com>",
       "from_name": "Steven Stoline",
       "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
-      "date": "2014-12-28T19:27:42-05:00",
+      "date": "2014-12-29T00:27:42Z",
       "subject": "[R-sig-teaching] Problem with \"attach\"",
       "subject_clean": "Problem with \"attach\"",
       "in_reply_to": "<CAGx1TMA-Rhsa_AALDHzt7=tzQkCRgZH5g2AgAPVobOwVYVkLzA@mail.gmail.com>",
@@ -111,7 +111,7 @@
       "message_id": "<CAH7sKSNEfn54rxRidQh2-nGzDmkos6fVPUemzTaAcCi8rXEZkg@mail.gmail.com>",
       "from_name": "Kenn Konstabel",
       "from_email_hash": "4367d6fc39ba53e70ea484f984561a98934fe9281202be0725fb246aa50a244a",
-      "date": "2014-12-30T10:45:39+02:00",
+      "date": "2014-12-30T08:45:39Z",
       "subject": "[R-sig-teaching] Problem with \"attach\"",
       "subject_clean": "Problem with \"attach\"",
       "in_reply_to": "<CAHDp66BCtPgJXZxP0c5BDBqY_BD8rYw49+yBHndNX44jaKBf2g@mail.gmail.com>",
@@ -131,7 +131,7 @@
       "message_id": "<03EC1874-08A1-4208-A75C-BB0C130640E9@pepperdine.edu>",
       "from_name": "Warford, Stan",
       "from_email_hash": "ae192b89aa7d7f34d237b6becb127786abf8a5ee39276893b6ce49d8e8bcfed4",
-      "date": "2014-12-30T14:49:04-08:00",
+      "date": "2014-12-30T22:49:04Z",
       "subject": "[R-sig-teaching] Legend for curve fit plot",
       "subject_clean": "Legend for curve fit plot",
       "in_reply_to": null,
@@ -147,7 +147,7 @@
       "message_id": "<CA+vqiLGCr94PSY6kMoKuF5txyzJXbD9ej0xY1XJVmsKe=bEXcA@mail.gmail.com>",
       "from_name": "Ista Zahn",
       "from_email_hash": "098a31f0cc45d6b90198bf3b75e03deed7c570292be352a10b98aeee4bf7012e",
-      "date": "2014-12-30T20:58:26-05:00",
+      "date": "2014-12-31T01:58:26Z",
       "subject": "[R-sig-teaching] Legend for curve fit plot",
       "subject_clean": "Legend for curve fit plot",
       "in_reply_to": "<03EC1874-08A1-4208-A75C-BB0C130640E9@pepperdine.edu>",
@@ -165,7 +165,7 @@
       "message_id": "<FCC5C26F-0193-4E77-889C-6DD041771CED@pepperdine.edu>",
       "from_name": "Warford, Stan",
       "from_email_hash": "ae192b89aa7d7f34d237b6becb127786abf8a5ee39276893b6ce49d8e8bcfed4",
-      "date": "2014-12-30T21:49:41-08:00",
+      "date": "2014-12-31T05:49:41Z",
       "subject": "[R-sig-teaching] Legend for curve fit plot",
       "subject_clean": "Legend for curve fit plot",
       "in_reply_to": "<CA+vqiLGCr94PSY6kMoKuF5txyzJXbD9ej0xY1XJVmsKe=bEXcA@mail.gmail.com>",
@@ -208,8 +208,8 @@
       "participants": [
         "Yahoo!"
       ],
-      "started": "2014-12-21T23:45:51+00:00",
-      "last_reply": "2014-12-21T23:45:51+00:00",
+      "started": "2014-12-21T23:45:51Z",
+      "last_reply": "2014-12-21T23:45:51Z",
       "root_message_id": "msg-2e0178efcf81"
     },
     {
@@ -220,8 +220,8 @@
         "Martin Maechler",
         "Yahoo!"
       ],
-      "started": "2014-12-22T13:26:00+00:00",
-      "last_reply": "2014-12-22T14:42:52+01:00",
+      "started": "2014-12-22T13:26:00Z",
+      "last_reply": "2014-12-22T13:42:52Z",
       "root_message_id": "msg-1847189a2002"
     },
     {
@@ -233,8 +233,8 @@
         "Richard M. Heiberger",
         "Steven Stoline"
       ],
-      "started": "2014-12-28T18:35:57-05:00",
-      "last_reply": "2014-12-30T10:45:39+02:00",
+      "started": "2014-12-28T23:35:57Z",
+      "last_reply": "2014-12-30T08:45:39Z",
       "root_message_id": "msg-a68e1f21d67a"
     },
     {
@@ -246,8 +246,8 @@
         "Randall Pruim",
         "Warford, Stan"
       ],
-      "started": "2014-12-30T14:49:04-08:00",
-      "last_reply": "2014-12-31T17:16:01+00:00",
+      "started": "2014-12-30T22:49:04Z",
+      "last_reply": "2014-12-31T17:16:01Z",
       "root_message_id": "msg-339ff6a6eb33"
     }
   ]

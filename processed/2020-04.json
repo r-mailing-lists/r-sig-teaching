@@ -8,7 +8,7 @@
       "message_id": "<CABkCotQw=LzvERshM+OXr=MTO2zWdWf7w6EX_qd5mmcP28X9fg@mail.gmail.com>",
       "from_name": "Manuel Spínola",
       "from_email_hash": "bd9f95c558444b18cc0bdb5b953c6863ec4a10dad5e1f84321cbae40474081ca",
-      "date": "2020-04-09T15:32:24-06:00",
+      "date": "2020-04-09T21:32:24Z",
       "subject": "[R-sig-teaching] Text to speech resources in R for Rstudio Notebooks",
       "subject_clean": "Text to speech resources in R for Rstudio Notebooks",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<CAJXDcw1X0q_M+6Xu5SXQ=bMi4tDgGRGgOz0EA4sCSKWV4emyHQ@mail.gmail.com>",
       "from_name": "Juan Telleria Ruiz de Aguirre",
       "from_email_hash": "ca943e3695085a5a91fba8eb0ad6514f2b71dfb8a79f78d8505b0c8c23d2d07b",
-      "date": "2020-04-12T16:56:09+02:00",
+      "date": "2020-04-12T14:56:09Z",
       "subject": "[R-sig-teaching] Text to speech resources in R for Rstudio Notebooks",
       "subject_clean": "Text to speech resources in R for Rstudio Notebooks",
       "in_reply_to": "<CABkCotQw=LzvERshM+OXr=MTO2zWdWf7w6EX_qd5mmcP28X9fg@mail.gmail.com>",
@@ -42,7 +42,7 @@
       "message_id": "<d424cc9f-60f7-4046-a046-4a9de28b55bd@Spark>",
       "from_name": "Mine Çetinkaya-Rundel",
       "from_email_hash": "7fbc83e7c0315ce1d152d99403056a43f6e0e2a7f464843246392f221e1c9131",
-      "date": "2020-04-12T19:47:08+01:00",
+      "date": "2020-04-12T18:47:08Z",
       "subject": "[R-sig-teaching] Text to speech resources in R for Rstudio Notebooks",
       "subject_clean": "Text to speech resources in R for Rstudio Notebooks",
       "in_reply_to": "<CAJXDcw1X0q_M+6Xu5SXQ=bMi4tDgGRGgOz0EA4sCSKWV4emyHQ@mail.gmail.com>",
@@ -61,7 +61,7 @@
       "message_id": "<CAJXDcw1Vn31iuA+JCMW6FPRLhZKaRgseB+YzE1U77g05+cAdSw@mail.gmail.com>",
       "from_name": "Juan Telleria Ruiz de Aguirre",
       "from_email_hash": "ca943e3695085a5a91fba8eb0ad6514f2b71dfb8a79f78d8505b0c8c23d2d07b",
-      "date": "2020-04-12T23:57:16+02:00",
+      "date": "2020-04-12T21:57:16Z",
       "subject": "[R-sig-teaching] Text to speech resources in R for Rstudio Notebooks",
       "subject_clean": "Text to speech resources in R for Rstudio Notebooks",
       "in_reply_to": "<d424cc9f-60f7-4046-a046-4a9de28b55bd@Spark>",
@@ -81,7 +81,7 @@
       "message_id": "<CABkCotR3nmxXnesgmGKgQ2E7_3QGpWxDoE4NhXwSWOjxveuOwA@mail.gmail.com>",
       "from_name": "Manuel Spínola",
       "from_email_hash": "bd9f95c558444b18cc0bdb5b953c6863ec4a10dad5e1f84321cbae40474081ca",
-      "date": "2020-04-13T09:29:30-06:00",
+      "date": "2020-04-13T15:29:30Z",
       "subject": "[R-sig-teaching] Text to speech resources in R for Rstudio Notebooks",
       "subject_clean": "Text to speech resources in R for Rstudio Notebooks",
       "in_reply_to": "<BL0PR0102MB339496EF3EDD9C7469E8AFB8F3DD0@BL0PR0102MB3394.prod.exchangelabs.com>",
@@ -124,8 +124,8 @@
         "Manuel Spínola",
         "Mine Çetinkaya-Rundel"
       ],
-      "started": "2020-04-09T15:32:24-06:00",
-      "last_reply": "2020-04-12T23:57:16+02:00",
+      "started": "2020-04-09T21:32:24Z",
+      "last_reply": "2020-04-12T21:57:16Z",
       "root_message_id": "msg-40240675e6d4"
     },
     {
@@ -135,8 +135,8 @@
       "participants": [
         "Manuel Spínola"
       ],
-      "started": "2020-04-13T09:29:30-06:00",
-      "last_reply": "2020-04-13T09:29:30-06:00",
+      "started": "2020-04-13T15:29:30Z",
+      "last_reply": "2020-04-13T15:29:30Z",
       "root_message_id": "msg-cae8e2367b1c"
     },
     {
@@ -146,8 +146,8 @@
       "participants": [
         "Amoakoh Gyasi-Agyei"
       ],
-      "started": "2020-04-24T04:50:19+00:00",
-      "last_reply": "2020-04-24T04:50:19+00:00",
+      "started": "2020-04-24T04:50:19Z",
+      "last_reply": "2020-04-24T04:50:19Z",
       "root_message_id": "msg-8c7b7dcf516d"
     }
   ]

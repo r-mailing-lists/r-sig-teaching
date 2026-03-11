@@ -8,7 +8,7 @@
       "message_id": "<4AFD7A70020000A60005FBAE@uct5.uct.usm.maine.edu>",
       "from_name": "AbouEl-Makarim Aboueissa",
       "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
-      "date": "2009-11-13T15:25:36-05:00",
+      "date": "2009-11-13T20:25:36Z",
       "subject": "[R-sig-teaching] R Exercises with solutions",
       "subject_clean": "R Exercises with solutions",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<f8e6ff050911131245w15a8282dxf137ab37e8534258@mail.gmail.com>",
       "from_name": "hadley wickham",
       "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
-      "date": "2009-11-13T14:45:58-06:00",
+      "date": "2009-11-13T20:45:58Z",
       "subject": "[R-sig-teaching] R Exercises with solutions",
       "subject_clean": "R Exercises with solutions",
       "in_reply_to": "<4AFD7A70020000A60005FBAE@uct5.uct.usm.maine.edu>",
@@ -42,7 +42,7 @@
       "message_id": "<5048645D-5B95-48EC-A39E-8748BE0BE50D@anu.edu.au>",
       "from_name": "John Maindonald",
       "from_email_hash": "2de8ee602ec487e8ae8c715c88cb2320b0ddc4a3428764e445cf26eb69ef92c5",
-      "date": "2009-11-15T09:58:10+11:00",
+      "date": "2009-11-14T22:58:10Z",
       "subject": "[R-sig-teaching] R-sig-teaching] R Exercises with solutions",
       "subject_clean": "R-sig-teaching] R Exercises with solutions",
       "in_reply_to": "<mailman.7.1258196403.909.r-sig-teaching@r-project.org>",
@@ -60,7 +60,7 @@
       "message_id": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC62F544F9D6@LP-EXMBVS10.CO.IHC.COM>",
       "from_name": "Greg Snow",
       "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
-      "date": "2009-11-14T18:42:21-07:00",
+      "date": "2009-11-15T01:42:21Z",
       "subject": "[R-sig-teaching] Markov chain Monte Carlo",
       "subject_clean": "Markov chain Monte Carlo",
       "in_reply_to": "<200910072240.n97MeE3X017302@definetti.ddns.uark.edu>",
@@ -83,20 +83,9 @@
         "AbouEl-Makarim Aboueissa",
         "hadley wickham"
       ],
-      "started": "2009-11-13T15:25:36-05:00",
-      "last_reply": "2009-11-13T14:45:58-06:00",
+      "started": "2009-11-13T20:25:36Z",
+      "last_reply": "2009-11-13T20:45:58Z",
       "root_message_id": "msg-56f9fc6745e9"
-    },
-    {
-      "id": "thread-062ce2edb347",
-      "subject": "Markov chain Monte Carlo",
-      "message_count": 1,
-      "participants": [
-        "Greg Snow"
-      ],
-      "started": "2009-11-14T18:42:21-07:00",
-      "last_reply": "2009-11-14T18:42:21-07:00",
-      "root_message_id": "msg-062ce2edb347"
     },
     {
       "id": "thread-87a6e44b731a",
@@ -105,9 +94,20 @@
       "participants": [
         "John Maindonald"
       ],
-      "started": "2009-11-15T09:58:10+11:00",
-      "last_reply": "2009-11-15T09:58:10+11:00",
+      "started": "2009-11-14T22:58:10Z",
+      "last_reply": "2009-11-14T22:58:10Z",
       "root_message_id": "msg-87a6e44b731a"
+    },
+    {
+      "id": "thread-062ce2edb347",
+      "subject": "Markov chain Monte Carlo",
+      "message_count": 1,
+      "participants": [
+        "Greg Snow"
+      ],
+      "started": "2009-11-15T01:42:21Z",
+      "last_reply": "2009-11-15T01:42:21Z",
+      "root_message_id": "msg-062ce2edb347"
     }
   ]
 }

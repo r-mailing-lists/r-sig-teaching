@@ -8,7 +8,7 @@
       "message_id": "<CABkCotS=4Zo3MU2GTV6wFFQyDK0=B6safsserTD-0XaDJGW-xA@mail.gmail.com>",
       "from_name": "Manuel Spínola",
       "from_email_hash": "bd9f95c558444b18cc0bdb5b953c6863ec4a10dad5e1f84321cbae40474081ca",
-      "date": "2020-03-29T07:42:33-06:00",
+      "date": "2020-03-29T13:42:33Z",
       "subject": "[R-sig-teaching] R packages to make interactive homeworks or exams that you can grade",
       "subject_clean": "R packages to make interactive homeworks or exams that you can grade",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<CADcAK00aWjTAj1W6x8WCT0FUFdgeVxOCkPX9N8B5ZJ-0nnm_QA@mail.gmail.com>",
       "from_name": "Arthur Charpentier",
       "from_email_hash": "ded1a4f360b8097023ab5cf9226b490cfb0153dbd17373860fd5bd5ffd534156",
-      "date": "2020-03-29T09:57:09-04:00",
+      "date": "2020-03-29T13:57:09Z",
       "subject": "[R-sig-teaching]  R packages to make interactive homeworks or exams that you can grade",
       "subject_clean": "R packages to make interactive homeworks or exams that you can grade",
       "in_reply_to": "<CABkCotS=4Zo3MU2GTV6wFFQyDK0=B6safsserTD-0XaDJGW-xA@mail.gmail.com>",
@@ -42,7 +42,7 @@
       "message_id": "<CABkCotSoOLGQTKUiu7-hrkFXEtk26axwfUy8cT3MZ_oMDBXZFA@mail.gmail.com>",
       "from_name": "Manuel Spínola",
       "from_email_hash": "bd9f95c558444b18cc0bdb5b953c6863ec4a10dad5e1f84321cbae40474081ca",
-      "date": "2020-03-29T08:04:12-06:00",
+      "date": "2020-03-29T14:04:12Z",
       "subject": "[R-sig-teaching]  R packages to make interactive homeworks or exams that you can grade",
       "subject_clean": "R packages to make interactive homeworks or exams that you can grade",
       "in_reply_to": "<CADcAK00aWjTAj1W6x8WCT0FUFdgeVxOCkPX9N8B5ZJ-0nnm_QA@mail.gmail.com>",
@@ -66,8 +66,8 @@
         "Arthur Charpentier",
         "Manuel Spínola"
       ],
-      "started": "2020-03-29T07:42:33-06:00",
-      "last_reply": "2020-03-29T08:04:12-06:00",
+      "started": "2020-03-29T13:42:33Z",
+      "last_reply": "2020-03-29T14:04:12Z",
       "root_message_id": "msg-72e0c16ad673"
     }
   ]

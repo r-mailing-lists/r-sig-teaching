@@ -8,7 +8,7 @@
       "message_id": "<1199851144.47844688c03a1@webmail.ksu.edu>",
       "from_name": "Karen A. Garrett",
       "from_email_hash": "f58f0d43eaf963f61015c2bcd2e6396e8ebebf6aaba122ed94b6662156697591",
-      "date": "2008-01-08T21:59:04-06:00",
+      "date": "2008-01-09T03:59:04Z",
       "subject": "[R-sig-teaching] Open-access teaching modules for using R in ecology/epidemiology",
       "subject_clean": "Open-access teaching modules for using R in ecology/epidemiology",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<a695148b0801100440o4b4d8166y8c5a0fb03fa52587@mail.gmail.com>",
       "from_name": "G. Jay Kerns",
       "from_email_hash": "50e93b09ae5eba7f3237d0e4291e3a6b8825a6fb21853bb3678551306330b319",
-      "date": "2008-01-10T07:40:46-05:00",
+      "date": "2008-01-10T12:40:46Z",
       "subject": "[R-sig-teaching] prob package: elementary probability on finite sample spaces",
       "subject_clean": "prob package: elementary probability on finite sample spaces",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<79610.19780.qm@web94404.mail.in2.yahoo.com>",
       "from_name": "kasturi bardhan",
       "from_email_hash": "5ad7206cf167a9a6a38676aea707992376c6656494e42e4d320c006b0092970b",
-      "date": "2008-01-26T16:40:07+05:30",
+      "date": "2008-01-26T11:10:07Z",
       "subject": "[R-sig-teaching] How to import a minitab data file into R",
       "subject_clean": "How to import a minitab data file into R",
       "in_reply_to": null,
@@ -56,7 +56,7 @@
       "message_id": "<479B5A7F.60904@pdx.edu>",
       "from_name": "Christian A. Parker",
       "from_email_hash": "2027c0f71786e7cc3b3177f36c97181dd7990668efc9f7519b8ff86ce3eed8da",
-      "date": "2008-01-26T08:06:23-08:00",
+      "date": "2008-01-26T16:06:23Z",
       "subject": "[R-sig-teaching] How to import a minitab data file into R",
       "subject_clean": "How to import a minitab data file into R",
       "in_reply_to": "<79610.19780.qm@web94404.mail.in2.yahoo.com>",
@@ -74,7 +74,7 @@
       "message_id": "<326401.32883.qm@web94405.mail.in2.yahoo.com>",
       "from_name": "kasturi bardhan",
       "from_email_hash": "5ad7206cf167a9a6a38676aea707992376c6656494e42e4d320c006b0092970b",
-      "date": "2008-01-27T01:48:01+05:30",
+      "date": "2008-01-26T20:18:01Z",
       "subject": "[R-sig-teaching] How to import a minitab data file into R",
       "subject_clean": "How to import a minitab data file into R",
       "in_reply_to": null,
@@ -94,8 +94,8 @@
       "participants": [
         "Karen A. Garrett"
       ],
-      "started": "2008-01-08T21:59:04-06:00",
-      "last_reply": "2008-01-08T21:59:04-06:00",
+      "started": "2008-01-09T03:59:04Z",
+      "last_reply": "2008-01-09T03:59:04Z",
       "root_message_id": "msg-5aef153a6a95"
     },
     {
@@ -105,8 +105,8 @@
       "participants": [
         "G. Jay Kerns"
       ],
-      "started": "2008-01-10T07:40:46-05:00",
-      "last_reply": "2008-01-10T07:40:46-05:00",
+      "started": "2008-01-10T12:40:46Z",
+      "last_reply": "2008-01-10T12:40:46Z",
       "root_message_id": "msg-252a0c389613"
     },
     {
@@ -117,8 +117,8 @@
         "Christian A. Parker",
         "kasturi bardhan"
       ],
-      "started": "2008-01-26T16:40:07+05:30",
-      "last_reply": "2008-01-26T08:06:23-08:00",
+      "started": "2008-01-26T11:10:07Z",
+      "last_reply": "2008-01-26T16:06:23Z",
       "root_message_id": "msg-9462a6ea6367"
     },
     {
@@ -128,8 +128,8 @@
       "participants": [
         "kasturi bardhan"
       ],
-      "started": "2008-01-27T01:48:01+05:30",
-      "last_reply": "2008-01-27T01:48:01+05:30",
+      "started": "2008-01-26T20:18:01Z",
+      "last_reply": "2008-01-26T20:18:01Z",
       "root_message_id": "msg-119fc4167a16"
     }
   ]

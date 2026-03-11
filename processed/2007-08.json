@@ -8,7 +8,7 @@
       "message_id": "<61fg7n$4ud9a6@ipmail02.adl2.internode.on.net>",
       "from_name": "Arthur Georges",
       "from_email_hash": "caa4ba070ee3472271df668ecfd84c225319436b6abd000a5bd4b2fac0fd6988",
-      "date": "2007-08-11T06:40:36+10:00",
+      "date": "2007-08-10T20:40:36Z",
       "subject": "[R-sig-teaching] Teaching R to Environmental Scientists",
       "subject_clean": "Teaching R to Environmental Scientists",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<61fg7n$4ue8cp@ipmail02.adl2.internode.on.net>",
       "from_name": "Arthur Georges",
       "from_email_hash": "caa4ba070ee3472271df668ecfd84c225319436b6abd000a5bd4b2fac0fd6988",
-      "date": "2007-08-11T09:03:02+10:00",
+      "date": "2007-08-10T23:03:02Z",
       "subject": "[R-sig-teaching] Teaching R to Environmental Scientists",
       "subject_clean": "Teaching R to Environmental Scientists",
       "in_reply_to": "<20070810215139.42194.qmail@mv.mv.com>",
@@ -43,7 +43,7 @@
       "message_id": "<61fg7n$4ue9c2@ipmail02.adl2.internode.on.net>",
       "from_name": "Arthur Georges",
       "from_email_hash": "caa4ba070ee3472271df668ecfd84c225319436b6abd000a5bd4b2fac0fd6988",
-      "date": "2007-08-11T09:08:15+10:00",
+      "date": "2007-08-10T23:08:15Z",
       "subject": "[R-sig-teaching] Teaching R to Environmental Scientists",
       "subject_clean": "Teaching R to Environmental Scientists",
       "in_reply_to": "<20070810225617.GN18793@laplace.reed.edu>",
@@ -62,7 +62,7 @@
       "message_id": "<61fg7n$4uhjhq@ipmail02.adl2.internode.on.net>",
       "from_name": "Arthur Georges",
       "from_email_hash": "caa4ba070ee3472271df668ecfd84c225319436b6abd000a5bd4b2fac0fd6988",
-      "date": "2007-08-11T15:58:17+10:00",
+      "date": "2007-08-11T05:58:17Z",
       "subject": "[R-sig-teaching] Teaching R to Environmental Scientists",
       "subject_clean": "Teaching R to Environmental Scientists",
       "in_reply_to": "<20070810232341.79550.qmail@mv.mv.com>",
@@ -81,7 +81,7 @@
       "message_id": "<61fg7n$4uonai@ipmail02.adl2.internode.on.net>",
       "from_name": "Arthur Georges",
       "from_email_hash": "caa4ba070ee3472271df668ecfd84c225319436b6abd000a5bd4b2fac0fd6988",
-      "date": "2007-08-12T06:56:12+10:00",
+      "date": "2007-08-11T20:56:12Z",
       "subject": "[R-sig-teaching] Teaching R to Environmental Scientists",
       "subject_clean": "Teaching R to Environmental Scientists",
       "in_reply_to": "<p06240800c2e3b742cf27@[192.168.0.2]>",
@@ -100,7 +100,7 @@
       "message_id": "<61fg7n$4uoo5d@ipmail02.adl2.internode.on.net>",
       "from_name": "Arthur Georges",
       "from_email_hash": "caa4ba070ee3472271df668ecfd84c225319436b6abd000a5bd4b2fac0fd6988",
-      "date": "2007-08-12T06:59:48+10:00",
+      "date": "2007-08-11T20:59:48Z",
       "subject": "[R-sig-teaching] Teaching R to Environmental Scientists",
       "subject_clean": "Teaching R to Environmental Scientists",
       "in_reply_to": "<20070811141635.74164.qmail@mv.mv.com>",
@@ -123,8 +123,8 @@
       "participants": [
         "Arthur Georges"
       ],
-      "started": "2007-08-11T06:40:36+10:00",
-      "last_reply": "2007-08-11T06:40:36+10:00",
+      "started": "2007-08-10T20:40:36Z",
+      "last_reply": "2007-08-10T20:40:36Z",
       "root_message_id": "msg-23056deb66ec"
     },
     {
@@ -134,8 +134,8 @@
       "participants": [
         "Arthur Georges"
       ],
-      "started": "2007-08-11T09:03:02+10:00",
-      "last_reply": "2007-08-11T09:03:02+10:00",
+      "started": "2007-08-10T23:03:02Z",
+      "last_reply": "2007-08-10T23:03:02Z",
       "root_message_id": "msg-e6a5b13efcbc"
     },
     {
@@ -145,8 +145,8 @@
       "participants": [
         "Arthur Georges"
       ],
-      "started": "2007-08-11T09:08:15+10:00",
-      "last_reply": "2007-08-11T09:08:15+10:00",
+      "started": "2007-08-10T23:08:15Z",
+      "last_reply": "2007-08-10T23:08:15Z",
       "root_message_id": "msg-8be0a37cc5f0"
     },
     {
@@ -156,8 +156,8 @@
       "participants": [
         "Arthur Georges"
       ],
-      "started": "2007-08-11T15:58:17+10:00",
-      "last_reply": "2007-08-11T15:58:17+10:00",
+      "started": "2007-08-11T05:58:17Z",
+      "last_reply": "2007-08-11T05:58:17Z",
       "root_message_id": "msg-1ca109e4deba"
     },
     {
@@ -167,8 +167,8 @@
       "participants": [
         "Arthur Georges"
       ],
-      "started": "2007-08-12T06:56:12+10:00",
-      "last_reply": "2007-08-12T06:56:12+10:00",
+      "started": "2007-08-11T20:56:12Z",
+      "last_reply": "2007-08-11T20:56:12Z",
       "root_message_id": "msg-18239948e0bc"
     },
     {
@@ -178,8 +178,8 @@
       "participants": [
         "Arthur Georges"
       ],
-      "started": "2007-08-12T06:59:48+10:00",
-      "last_reply": "2007-08-12T06:59:48+10:00",
+      "started": "2007-08-11T20:59:48Z",
+      "last_reply": "2007-08-11T20:59:48Z",
       "root_message_id": "msg-fa2cf0707327"
     }
   ]

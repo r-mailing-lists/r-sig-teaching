@@ -8,7 +8,7 @@
       "message_id": "<55F93172.1040205@pocock.pro>",
       "from_name": "Daniel Pocock",
       "from_email_hash": "efc2d94506ba5bbd6f43e7a7d8e6df6877bb7bef4882718d0ec9a0d8d6d53df8",
-      "date": "2015-09-16T11:08:02+02:00",
+      "date": "2015-09-16T09:08:02Z",
       "subject": "[R-sig-teaching] self-taught routes to a degree with R?",
       "subject_clean": "self-taught routes to a degree with R?",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<CAHDp66Af44H=PVAC5vbaq-R5pEmzp7UqKhSKjbEJm7vnWyUk=w@mail.gmail.com>",
       "from_name": "Steven Stoline",
       "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
-      "date": "2015-09-23T10:02:49-04:00",
+      "date": "2015-09-23T14:02:49Z",
       "subject": "[R-sig-teaching] Read *.xlsx data file into R",
       "subject_clean": "Read *.xlsx data file into R",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<5602B323.6060006@binghamton.edu>",
       "from_name": "Christopher W. Ryan",
       "from_email_hash": "1b29f9cec300eaee17dfd69d1f61fa0ef3e03d1c3e99be2390ec65184340c413",
-      "date": "2015-09-23T10:11:47-04:00",
+      "date": "2015-09-23T14:11:47Z",
       "subject": "[R-sig-teaching] Read *.xlsx data file into R",
       "subject_clean": "Read *.xlsx data file into R",
       "in_reply_to": "<CAHDp66Af44H=PVAC5vbaq-R5pEmzp7UqKhSKjbEJm7vnWyUk=w@mail.gmail.com>",
@@ -95,7 +95,7 @@
       "message_id": "<B946CDB5-9615-4998-A436-DA7119020531@gmail.com>",
       "from_name": "Tim Bates",
       "from_email_hash": "906d407a729647cc91c4e43ce28d4fcaa3d8c31102184befaff986e86fb70998",
-      "date": "2015-09-23T15:22:28+01:00",
+      "date": "2015-09-23T14:22:28Z",
       "subject": "[R-sig-teaching] Read *.xlsx data file into R",
       "subject_clean": "Read *.xlsx data file into R",
       "in_reply_to": "<d39a0e7f8c874b198519f250625faa92@WSR-MAILBOX-104.mrc-hnr.cam.ac.local>",
@@ -135,7 +135,7 @@
       "message_id": "<CA+srNj4MqAqx743tYAHrZh1aiaxPj_Vc-B81BbEt8TWyY+9mng@mail.gmail.com>",
       "from_name": "Paula Grafton Young",
       "from_email_hash": "57a4fb9a604414e5df5b5d7d1cb70d0b433edcc8c45b386950fd1ca7926d8a28",
-      "date": "2015-09-23T10:30:19-04:00",
+      "date": "2015-09-23T14:30:19Z",
       "subject": "[R-sig-teaching] Read *.xlsx data file into R",
       "subject_clean": "Read *.xlsx data file into R",
       "in_reply_to": "<CAHDp66Af44H=PVAC5vbaq-R5pEmzp7UqKhSKjbEJm7vnWyUk=w@mail.gmail.com>",
@@ -153,7 +153,7 @@
       "message_id": "<CABdHhvEyn8ML+iQZ+ZLoGniBgBiPhrdRQPRAup2HZSp+W1c76w@mail.gmail.com>",
       "from_name": "Hadley Wickham",
       "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
-      "date": "2015-09-23T12:27:57-05:00",
+      "date": "2015-09-23T17:27:57Z",
       "subject": "[R-sig-teaching] Read *.xlsx data file into R",
       "subject_clean": "Read *.xlsx data file into R",
       "in_reply_to": "<B946CDB5-9615-4998-A436-DA7119020531@gmail.com>",
@@ -178,8 +178,8 @@
       "participants": [
         "Daniel Pocock"
       ],
-      "started": "2015-09-16T11:08:02+02:00",
-      "last_reply": "2015-09-16T11:08:02+02:00",
+      "started": "2015-09-16T09:08:02Z",
+      "last_reply": "2015-09-16T09:08:02Z",
       "root_message_id": "msg-c47dbb3a13c7"
     },
     {
@@ -195,8 +195,8 @@
         "Steven Stoline",
         "Tim Bates"
       ],
-      "started": "2015-09-23T10:02:49-04:00",
-      "last_reply": "2015-09-23T12:27:57-05:00",
+      "started": "2015-09-23T14:02:49Z",
+      "last_reply": "2015-09-23T17:27:57Z",
       "root_message_id": "msg-a22cf6183d13"
     }
   ]

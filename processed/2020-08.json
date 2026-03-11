@@ -24,7 +24,7 @@
       "message_id": "<1870930c-3ccb-49d4-936c-0f0f3b39c8b1@Spark>",
       "from_name": "Mine Çetinkaya-Rundel",
       "from_email_hash": "7fbc83e7c0315ce1d152d99403056a43f6e0e2a7f464843246392f221e1c9131",
-      "date": "2020-08-03T11:39:37+01:00",
+      "date": "2020-08-03T10:39:37Z",
       "subject": "[R-sig-teaching] school level introduction to and use of R",
       "subject_clean": "school level introduction to and use of R",
       "in_reply_to": "<3a1aa0c6498ed0d49577b91c78f5a2ca@disroot.org>",
@@ -42,7 +42,7 @@
       "message_id": "<9e14c348-ed2e-fa01-4cf2-f9b6cfa3d054@csun.edu>",
       "from_name": "Wayne Smith",
       "from_email_hash": "3707cd936ee9ef7e9ac84e4ecefa13a9beea2808e31f69098a4d10dbba9498b3",
-      "date": "2020-08-03T09:40:17-07:00",
+      "date": "2020-08-03T16:40:17Z",
       "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 113, Issue 1",
       "subject_clean": "R-sig-teaching Digest, Vol 113, Issue 1",
       "in_reply_to": "<mailman.859.9.1596449171.31464.r-sig-teaching@r-project.org>",
@@ -77,17 +77,6 @@
   ],
   "threads": [
     {
-      "id": "thread-5f4010b26803",
-      "subject": "R-sig-teaching Digest, Vol 113, Issue 1",
-      "message_count": 1,
-      "participants": [
-        "Wayne Smith"
-      ],
-      "started": "2020-08-03T09:40:17-07:00",
-      "last_reply": "2020-08-03T09:40:17-07:00",
-      "root_message_id": "msg-5f4010b26803"
-    },
-    {
       "id": "thread-241384879653",
       "subject": "school level introduction to and use of R",
       "message_count": 3,
@@ -95,9 +84,20 @@
         "Mine Çetinkaya-Rundel",
         "citc m@iii@g oii disroot@org"
       ],
-      "started": "2020-08-03T09:55:58+00:00",
-      "last_reply": "2020-08-04T09:57:50+00:00",
+      "started": "2020-08-03T09:55:58Z",
+      "last_reply": "2020-08-04T09:57:50Z",
       "root_message_id": "msg-241384879653"
+    },
+    {
+      "id": "thread-5f4010b26803",
+      "subject": "R-sig-teaching Digest, Vol 113, Issue 1",
+      "message_count": 1,
+      "participants": [
+        "Wayne Smith"
+      ],
+      "started": "2020-08-03T16:40:17Z",
+      "last_reply": "2020-08-03T16:40:17Z",
+      "root_message_id": "msg-5f4010b26803"
     }
   ]
 }

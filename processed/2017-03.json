@@ -8,7 +8,7 @@
       "message_id": "<CAE9stmdCppUwpnSKiTpJP+55UXJAOwLgM6HuP274Gxb7sggkWQ@mail.gmail.com>",
       "from_name": "AbouEl-Makarim Aboueissa",
       "from_email_hash": "57ed60c71c38f5aa7111618f7d433e719fa232f0704722ddb27973d2f4c216c5",
-      "date": "2017-03-01T13:08:58-05:00",
+      "date": "2017-03-01T18:08:58Z",
       "subject": "[R-sig-teaching] Coefficient of Partial Determination",
       "subject_clean": "Coefficient of Partial Determination",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<CAE9stmcJ0VW=4QOZWbF89v_qJu8tkkM+DEK1VZKFOeAjfzCCGw@mail.gmail.com>",
       "from_name": "AbouEl-Makarim Aboueissa",
       "from_email_hash": "57ed60c71c38f5aa7111618f7d433e719fa232f0704722ddb27973d2f4c216c5",
-      "date": "2017-03-08T11:34:14-05:00",
+      "date": "2017-03-08T16:34:14Z",
       "subject": "[R-sig-teaching] Reverse the scoring of some Columns of a Data Set",
       "subject_clean": "Reverse the scoring of some Columns of a Data Set",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<05A396B0-2AD4-4AD1-A27A-A9F9730BFC59@joelschwartz.com>",
       "from_name": "Joel Schwartz",
       "from_email_hash": "c0ae5a3e9c619e01102404769ffc380b8804be776bffd93f2f71cf012d12b506",
-      "date": "2017-03-08T09:02:55-08:00",
+      "date": "2017-03-08T17:02:55Z",
       "subject": "[R-sig-teaching] Reverse the scoring of some Columns of a Data Set",
       "subject_clean": "Reverse the scoring of some Columns of a Data Set",
       "in_reply_to": "<CAE9stmcJ0VW=4QOZWbF89v_qJu8tkkM+DEK1VZKFOeAjfzCCGw@mail.gmail.com>",
@@ -58,7 +58,7 @@
       "message_id": "<D60C8978-A61B-4C62-9459-43F458FC343C@yahoo.com>",
       "from_name": "Nicholas Horton",
       "from_email_hash": "9e44a5ab3434adb176b17e0e24804f1ac2dc82061d5d92983e9e78e4057e0d0c",
-      "date": "2017-03-16T10:04:46-04:00",
+      "date": "2017-03-16T14:04:46Z",
       "subject": "[R-sig-teaching] reversing the scoring of some columns",
       "subject_clean": "reversing the scoring of some columns",
       "in_reply_to": null,
@@ -74,7 +74,7 @@
       "message_id": "<48480198-a66a-73c8-c7e2-62ba31cc14b0@atsu.edu>",
       "from_name": "Robert Baer",
       "from_email_hash": "ddd5677bd41ce9ccb8239fe4a8cc1ce533091d0e3a66b906fbf82801b2b76509",
-      "date": "2017-03-16T10:07:09-05:00",
+      "date": "2017-03-16T15:07:09Z",
       "subject": "[R-sig-teaching] reversing the scoring of some columns",
       "subject_clean": "reversing the scoring of some columns",
       "in_reply_to": "<D60C8978-A61B-4C62-9459-43F458FC343C@yahoo.com>",
@@ -96,8 +96,8 @@
       "participants": [
         "AbouEl-Makarim Aboueissa"
       ],
-      "started": "2017-03-01T13:08:58-05:00",
-      "last_reply": "2017-03-01T13:08:58-05:00",
+      "started": "2017-03-01T18:08:58Z",
+      "last_reply": "2017-03-01T18:08:58Z",
       "root_message_id": "msg-ea90241c9d29"
     },
     {
@@ -108,8 +108,8 @@
         "AbouEl-Makarim Aboueissa",
         "Joel Schwartz"
       ],
-      "started": "2017-03-08T11:34:14-05:00",
-      "last_reply": "2017-03-08T09:02:55-08:00",
+      "started": "2017-03-08T16:34:14Z",
+      "last_reply": "2017-03-08T17:02:55Z",
       "root_message_id": "msg-f61c8008f957"
     },
     {
@@ -120,8 +120,8 @@
         "Nicholas Horton",
         "Robert Baer"
       ],
-      "started": "2017-03-16T10:04:46-04:00",
-      "last_reply": "2017-03-16T10:07:09-05:00",
+      "started": "2017-03-16T14:04:46Z",
+      "last_reply": "2017-03-16T15:07:09Z",
       "root_message_id": "msg-e32ae12d530c"
     }
   ]

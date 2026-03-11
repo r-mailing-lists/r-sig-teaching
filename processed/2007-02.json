@@ -8,7 +8,7 @@
       "message_id": "<20070209175016.46275.qmail@mv.mv.com>",
       "from_name": "Robert W. Hayden",
       "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
-      "date": "2007-02-09T12:50:16-05:00",
+      "date": "2007-02-09T17:50:16Z",
       "subject": "[R-sig-teaching] Rcmdr",
       "subject_clean": "Rcmdr",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<web-161573863@cgpsrv2.cis.mcmaster.ca>",
       "from_name": "John Fox",
       "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
-      "date": "2007-02-09T20:27:01-05:00",
+      "date": "2007-02-10T01:27:01Z",
       "subject": "[R-sig-teaching] Rcmdr",
       "subject_clean": "Rcmdr",
       "in_reply_to": "<20070209175016.46275.qmail@mv.mv.com>",
@@ -40,7 +40,7 @@
       "message_id": "<20070210014949.3096.qmail@mv.mv.com>",
       "from_name": "Robert W. Hayden",
       "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
-      "date": "2007-02-09T20:49:49-05:00",
+      "date": "2007-02-10T01:49:49Z",
       "subject": "[R-sig-teaching] Rcmdr",
       "subject_clean": "Rcmdr",
       "in_reply_to": null,
@@ -56,7 +56,7 @@
       "message_id": "<web-161576872@cgpsrv2.cis.mcmaster.ca>",
       "from_name": "John Fox",
       "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
-      "date": "2007-02-09T21:08:47-05:00",
+      "date": "2007-02-10T02:08:47Z",
       "subject": "[R-sig-teaching] Rcmdr",
       "subject_clean": "Rcmdr",
       "in_reply_to": "<20070210014949.3096.qmail@mv.mv.com>",
@@ -77,8 +77,8 @@
         "John Fox",
         "Robert W. Hayden"
       ],
-      "started": "2007-02-09T12:50:16-05:00",
-      "last_reply": "2007-02-09T20:27:01-05:00",
+      "started": "2007-02-09T17:50:16Z",
+      "last_reply": "2007-02-10T01:27:01Z",
       "root_message_id": "msg-ac8f04647194"
     },
     {
@@ -89,8 +89,8 @@
         "John Fox",
         "Robert W. Hayden"
       ],
-      "started": "2007-02-09T20:49:49-05:00",
-      "last_reply": "2007-02-09T21:08:47-05:00",
+      "started": "2007-02-10T01:49:49Z",
+      "last_reply": "2007-02-10T02:08:47Z",
       "root_message_id": "msg-16070f033ef3"
     }
   ]

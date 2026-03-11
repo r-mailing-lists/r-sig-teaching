@@ -61,7 +61,7 @@
       "message_id": "<A3C2D8BF-5435-4025-9685-976B3A12C09C@gmail.com>",
       "from_name": "Retzer Joe",
       "from_email_hash": "47cd75b41ef1b93378f05491d80f087673d347400d01afcb82657e6104ab4e40",
-      "date": "2018-02-20T20:56:13-06:00",
+      "date": "2018-02-21T02:56:13Z",
       "subject": "[R-sig-teaching] A second try...",
       "subject_clean": "A second try...",
       "in_reply_to": "<DM5PR06MB32607DDCAF837708DECB1C4A88CE0@DM5PR06MB3260.namprd06.prod.outlook.com>",
@@ -102,8 +102,8 @@
       "participants": [
         "BRET R LARGET"
       ],
-      "started": "2018-02-20T23:17:16+00:00",
-      "last_reply": "2018-02-20T23:17:16+00:00",
+      "started": "2018-02-20T23:17:16Z",
+      "last_reply": "2018-02-20T23:17:16Z",
       "root_message_id": "msg-86fa33d5e247"
     },
     {
@@ -116,8 +116,8 @@
         "Retzer Joe",
         "Robin A Donatello"
       ],
-      "started": "2018-02-21T02:40:25+00:00",
-      "last_reply": "2018-02-21T04:01:06+00:00",
+      "started": "2018-02-21T02:40:25Z",
+      "last_reply": "2018-02-21T04:01:06Z",
       "root_message_id": "msg-fdd4ccd4b239"
     }
   ]

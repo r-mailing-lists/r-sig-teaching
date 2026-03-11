@@ -8,7 +8,7 @@
       "message_id": "<1349297868.27844.YahooMailNeo@web125804.mail.ne1.yahoo.com>",
       "from_name": "Ali Zanaty",
       "from_email_hash": "65acd645f9ed74fc7721f9ea58469b32335ac44f193ffbf59b7c89913407d9ac",
-      "date": "2012-10-03T13:57:48-07:00",
+      "date": "2012-10-03T20:57:48Z",
       "subject": "[R-sig-teaching] Interpreting the results",
       "subject_clean": "Interpreting the results",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<CANV9buQymauEb6FYukcFemDXWpuyi-8PEqTxFdkn1rhyJA8o6g@mail.gmail.com>",
       "from_name": "Jeff Laux",
       "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
-      "date": "2012-10-03T17:36:52-04:00",
+      "date": "2012-10-03T21:36:52Z",
       "subject": "[R-sig-teaching] Interpreting the results",
       "subject_clean": "Interpreting the results",
       "in_reply_to": "<1349297868.27844.YahooMailNeo@web125804.mail.ne1.yahoo.com>",
@@ -42,7 +42,7 @@
       "message_id": "<CAErODj-rnHDHBXOmRKOb6_SA1G8AQzj2GFijkRrm9nyfB6Ys1Q@mail.gmail.com>",
       "from_name": "Paul Johnson",
       "from_email_hash": "b96b8a38c7fef12892ac8cae395028a3b39f3acce423d9c564ab27dc864c47b3",
-      "date": "2012-10-03T21:44:48-05:00",
+      "date": "2012-10-04T02:44:48Z",
       "subject": "[R-sig-teaching] Interpreting the results",
       "subject_clean": "Interpreting the results",
       "in_reply_to": "<1349297868.27844.YahooMailNeo@web125804.mail.ne1.yahoo.com>",
@@ -60,7 +60,7 @@
       "message_id": "<1349342460.35324.YahooMailNeo@web125806.mail.ne1.yahoo.com>",
       "from_name": "Ali Zanaty",
       "from_email_hash": "65acd645f9ed74fc7721f9ea58469b32335ac44f193ffbf59b7c89913407d9ac",
-      "date": "2012-10-04T02:21:00-07:00",
+      "date": "2012-10-04T09:21:00Z",
       "subject": "[R-sig-teaching] Fw: Interpreting the results",
       "subject_clean": "Interpreting the results",
       "in_reply_to": "<1349297868.27844.YahooMailNeo@web125804.mail.ne1.yahoo.com>",
@@ -78,7 +78,7 @@
       "message_id": "<07851CEA-E1E9-4A30-83EC-DFBAEE39454C@gmail.com>",
       "from_name": "Timothy Bates",
       "from_email_hash": "906d407a729647cc91c4e43ce28d4fcaa3d8c31102184befaff986e86fb70998",
-      "date": "2012-10-04T16:54:35+01:00",
+      "date": "2012-10-04T15:54:35Z",
       "subject": "[R-sig-teaching] Fw: Interpreting the results",
       "subject_clean": "Interpreting the results",
       "in_reply_to": "<1349342460.35324.YahooMailNeo@web125806.mail.ne1.yahoo.com>",
@@ -97,7 +97,7 @@
       "message_id": "<CAGRravawKsAZ7EZTAVJE4VE2A3M7ziUvRMSnAzm3HdWrMahokA@mail.gmail.com>",
       "from_name": "Geoffrey Smith",
       "from_email_hash": "6c829f2d25848af1d52a90e4b27006b9ac3763c053bf3aaf885fb0f7ceb0b753",
-      "date": "2012-10-09T11:54:40-05:00",
+      "date": "2012-10-09T16:54:40Z",
       "subject": "[R-sig-teaching] teaching corp risk management",
       "subject_clean": "teaching corp risk management",
       "in_reply_to": null,
@@ -113,7 +113,7 @@
       "message_id": "<1351182729.48217.YahooMailClassic@web120606.mail.ne1.yahoo.com>",
       "from_name": "Yahoo! Mail Classic",
       "from_email_hash": "22385bbcf078dc17ff188e29e3a1eaf01aad381796219c59b64e7bb0baec2847",
-      "date": "2012-10-25T09:32:09-07:00",
+      "date": "2012-10-25T16:32:09Z",
       "subject": "[R-sig-teaching] season package for time series plots",
       "subject_clean": "season package for time series plots",
       "in_reply_to": null,
@@ -129,7 +129,7 @@
       "message_id": "<50896D01.8090508@balcarce.inta.gov.ar>",
       "from_name": "Gabriela Cendoya",
       "from_email_hash": "77293f29b8552115e2fd6df44458b48e69a2eb3337dd1869e973167ca1cb8397",
-      "date": "2012-10-25T13:46:57-03:00",
+      "date": "2012-10-25T16:46:57Z",
       "subject": "[R-sig-teaching] season package for time series plots",
       "subject_clean": "season package for time series plots",
       "in_reply_to": "<1351182729.48217.YahooMailClassic@web120606.mail.ne1.yahoo.com>",
@@ -154,8 +154,8 @@
         "Paul Johnson",
         "Timothy Bates"
       ],
-      "started": "2012-10-03T13:57:48-07:00",
-      "last_reply": "2012-10-04T16:54:35+01:00",
+      "started": "2012-10-03T20:57:48Z",
+      "last_reply": "2012-10-04T15:54:35Z",
       "root_message_id": "msg-ae8e074762e3"
     },
     {
@@ -165,8 +165,8 @@
       "participants": [
         "Geoffrey Smith"
       ],
-      "started": "2012-10-09T11:54:40-05:00",
-      "last_reply": "2012-10-09T11:54:40-05:00",
+      "started": "2012-10-09T16:54:40Z",
+      "last_reply": "2012-10-09T16:54:40Z",
       "root_message_id": "msg-4022936979c7"
     },
     {
@@ -177,8 +177,8 @@
         "Gabriela Cendoya",
         "Yahoo! Mail Classic"
       ],
-      "started": "2012-10-25T09:32:09-07:00",
-      "last_reply": "2012-10-25T13:46:57-03:00",
+      "started": "2012-10-25T16:32:09Z",
+      "last_reply": "2012-10-25T16:46:57Z",
       "root_message_id": "msg-1939b87b1c8f"
     }
   ]

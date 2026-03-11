@@ -8,7 +8,7 @@
       "message_id": "<4D76393E.6050700@patfiza.net>",
       "from_name": "Zhan Chubukou",
       "from_email_hash": "fe21b0d73e7511a47e2419992184449f8a86e0ff7a70241ff6bf72c7db5ae9a9",
-      "date": "2011-03-08T16:12:14+02:00",
+      "date": "2011-03-08T14:12:14Z",
       "subject": "[R-sig-teaching] embed an R console into a web-page?",
       "subject_clean": "embed an R console into a web-page?",
       "in_reply_to": "<4D65249D.9080604@patfiza.net>",
@@ -27,7 +27,7 @@
       "message_id": "<817300.77052.qm@web30601.mail.mud.yahoo.com>",
       "from_name": "jose romero",
       "from_email_hash": "a239d2abfd6000b3143932058ce49c6bcae353eae79bc898cb147e87d639754c",
-      "date": "2011-03-08T09:35:24-08:00",
+      "date": "2011-03-08T17:35:24Z",
       "subject": "[R-sig-teaching] embed an R console into a web-page?",
       "subject_clean": "embed an R console into a web-page?",
       "in_reply_to": "<mailman.9.1298458803.32410.r-sig-teaching@r-project.org>",
@@ -43,7 +43,7 @@
       "message_id": "<AANLkTimGP_=i4vs8CwP7=ZKk_HAReYFB-WpFG9jNTvT5@mail.gmail.com>",
       "from_name": "Gabor Grothendieck",
       "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
-      "date": "2011-03-08T12:51:22-05:00",
+      "date": "2011-03-08T17:51:22Z",
       "subject": "[R-sig-teaching] embed an R console into a web-page?",
       "subject_clean": "embed an R console into a web-page?",
       "in_reply_to": "<817300.77052.qm@web30601.mail.mud.yahoo.com>",
@@ -62,7 +62,7 @@
       "message_id": "<AANLkTinrntNMjC9j1aUY5bMwTZykrvpqwyid+pEBDA+f@mail.gmail.com>",
       "from_name": "G. Jay Kerns",
       "from_email_hash": "ad83289c1ea8001776b4a92be9b5d571c4a1a4d9f964cc52380fe565be90da90",
-      "date": "2011-03-19T01:54:33-04:00",
+      "date": "2011-03-19T05:54:33Z",
       "subject": "[R-sig-teaching] Org-mode example for writing quizzes/exams",
       "subject_clean": "Org-mode example for writing quizzes/exams",
       "in_reply_to": null,
@@ -78,7 +78,7 @@
       "message_id": "<AANLkTik5YBNG+70hu_4YtRLT8O5arbGsqz4NL9TSc06n@mail.gmail.com>",
       "from_name": "Liviu Andronic",
       "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
-      "date": "2011-03-19T09:09:49+01:00",
+      "date": "2011-03-19T08:09:49Z",
       "subject": "[R-sig-teaching] Org-mode example for writing quizzes/exams",
       "subject_clean": "Org-mode example for writing quizzes/exams",
       "in_reply_to": "<AANLkTinrntNMjC9j1aUY5bMwTZykrvpqwyid+pEBDA+f@mail.gmail.com>",
@@ -96,7 +96,7 @@
       "message_id": "<AANLkTim-5DcvRrR2BPv=_1y8PkUqKtmQM_SzGrMjZsQv@mail.gmail.com>",
       "from_name": "G. Jay Kerns",
       "from_email_hash": "ad83289c1ea8001776b4a92be9b5d571c4a1a4d9f964cc52380fe565be90da90",
-      "date": "2011-03-19T13:50:20-04:00",
+      "date": "2011-03-19T17:50:20Z",
       "subject": "[R-sig-teaching] Org-mode example for writing quizzes/exams",
       "subject_clean": "Org-mode example for writing quizzes/exams",
       "in_reply_to": "<AANLkTik5YBNG+70hu_4YtRLT8O5arbGsqz4NL9TSc06n@mail.gmail.com>",
@@ -113,6 +113,17 @@
   ],
   "threads": [
     {
+      "id": "thread-9e4f5d135902",
+      "subject": "embed an R console into a web-page?",
+      "message_count": 1,
+      "participants": [
+        "Zhan Chubukou"
+      ],
+      "started": "2011-03-08T14:12:14Z",
+      "last_reply": "2011-03-08T14:12:14Z",
+      "root_message_id": "msg-9e4f5d135902"
+    },
+    {
       "id": "thread-308235385218",
       "subject": "embed an R console into a web-page?",
       "message_count": 2,
@@ -120,20 +131,9 @@
         "Gabor Grothendieck",
         "jose romero"
       ],
-      "started": "2011-03-08T09:35:24-08:00",
-      "last_reply": "2011-03-08T12:51:22-05:00",
+      "started": "2011-03-08T17:35:24Z",
+      "last_reply": "2011-03-08T17:51:22Z",
       "root_message_id": "msg-308235385218"
-    },
-    {
-      "id": "thread-9e4f5d135902",
-      "subject": "embed an R console into a web-page?",
-      "message_count": 1,
-      "participants": [
-        "Zhan Chubukou"
-      ],
-      "started": "2011-03-08T16:12:14+02:00",
-      "last_reply": "2011-03-08T16:12:14+02:00",
-      "root_message_id": "msg-9e4f5d135902"
     },
     {
       "id": "thread-157430b5a196",
@@ -143,8 +143,8 @@
         "G. Jay Kerns",
         "Liviu Andronic"
       ],
-      "started": "2011-03-19T01:54:33-04:00",
-      "last_reply": "2011-03-19T13:50:20-04:00",
+      "started": "2011-03-19T05:54:33Z",
+      "last_reply": "2011-03-19T17:50:20Z",
       "root_message_id": "msg-157430b5a196"
     }
   ]

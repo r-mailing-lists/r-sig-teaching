@@ -8,7 +8,7 @@
       "message_id": "<3ab4ea10-57c8-6f21-f2fb-fb26d170ce41@binghamton.edu>",
       "from_name": "Christopher W. Ryan",
       "from_email_hash": "51d88c96d7b47672f8ce485ca9465c4fe4687413183f23fc449a38371065f36e",
-      "date": "2018-08-01T14:01:42-04:00",
+      "date": "2018-08-01T18:01:42Z",
       "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 102, Issue 3",
       "subject_clean": "R-sig-teaching Digest, Vol 102, Issue 3",
       "in_reply_to": "<CAP3zPTM+BdBUzA0ZKr59PbaC5=ARHyN2xzFMrbkRM7Hsp4Tm4A@mail.gmail.com>",
@@ -27,7 +27,7 @@
       "message_id": "<CAP3zPTPX-FjKHM8ept91DppF+K7u7wAvtq5013c02Pms1734sA@mail.gmail.com>",
       "from_name": "Jose Arturo Farfan",
       "from_email_hash": "d686440bdf608904caa7b03861d0258cf1f72198dd56195144b6d01e31e23e19",
-      "date": "2018-08-04T13:41:12-05:00",
+      "date": "2018-08-04T18:41:12Z",
       "subject": "[R-sig-teaching] Good source of data for clases",
       "subject_clean": "Good source of data for clases",
       "in_reply_to": null,
@@ -43,7 +43,7 @@
       "message_id": "<CAP3zPTM8JvsT75b2EvywH8DiBHFU=7PnPfuPW6wL7-cxGe8zgw@mail.gmail.com>",
       "from_name": "Jose Arturo Farfan",
       "from_email_hash": "d686440bdf608904caa7b03861d0258cf1f72198dd56195144b6d01e31e23e19",
-      "date": "2018-08-13T19:10:19-05:00",
+      "date": "2018-08-14T00:10:19Z",
       "subject": "[R-sig-teaching] References",
       "subject_clean": "References",
       "in_reply_to": null,
@@ -63,8 +63,8 @@
       "participants": [
         "Christopher W. Ryan"
       ],
-      "started": "2018-08-01T14:01:42-04:00",
-      "last_reply": "2018-08-01T14:01:42-04:00",
+      "started": "2018-08-01T18:01:42Z",
+      "last_reply": "2018-08-01T18:01:42Z",
       "root_message_id": "msg-001b916ace41"
     },
     {
@@ -74,8 +74,8 @@
       "participants": [
         "Jose Arturo Farfan"
       ],
-      "started": "2018-08-04T13:41:12-05:00",
-      "last_reply": "2018-08-04T13:41:12-05:00",
+      "started": "2018-08-04T18:41:12Z",
+      "last_reply": "2018-08-04T18:41:12Z",
       "root_message_id": "msg-5860d172230b"
     },
     {
@@ -85,8 +85,8 @@
       "participants": [
         "Jose Arturo Farfan"
       ],
-      "started": "2018-08-13T19:10:19-05:00",
-      "last_reply": "2018-08-13T19:10:19-05:00",
+      "started": "2018-08-14T00:10:19Z",
+      "last_reply": "2018-08-14T00:10:19Z",
       "root_message_id": "msg-72d350e2cc69"
     }
   ]

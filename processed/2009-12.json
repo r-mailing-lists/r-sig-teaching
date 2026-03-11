@@ -8,7 +8,7 @@
       "message_id": "<206a64110912021246q12e82811u7b65f71f6de23e14@mail.gmail.com>",
       "from_name": "Stuart Wagenius",
       "from_email_hash": "9e390402f6105330e7db0565b33d7f6d40e396385267e4e2afc6d946a367105f",
-      "date": "2009-12-02T14:46:44-06:00",
+      "date": "2009-12-02T20:46:44Z",
       "subject": "[R-sig-teaching] text editor for teaching R",
       "subject_clean": "text editor for teaching R",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC62F710A278@LP-EXMBVS10.CO.IHC.COM>",
       "from_name": "Greg Snow",
       "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
-      "date": "2009-12-02T14:10:03-07:00",
+      "date": "2009-12-02T21:10:03Z",
       "subject": "[R-sig-teaching] text editor for teaching R",
       "subject_clean": "text editor for teaching R",
       "in_reply_to": "<206a64110912021246q12e82811u7b65f71f6de23e14@mail.gmail.com>",
@@ -42,7 +42,7 @@
       "message_id": "<a695148b0912021322i447db340qa227d519bfc275b5@mail.gmail.com>",
       "from_name": "G. Jay Kerns",
       "from_email_hash": "50e93b09ae5eba7f3237d0e4291e3a6b8825a6fb21853bb3678551306330b319",
-      "date": "2009-12-02T16:22:10-05:00",
+      "date": "2009-12-02T21:22:10Z",
       "subject": "[R-sig-teaching] text editor for teaching R",
       "subject_clean": "text editor for teaching R",
       "in_reply_to": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC62F710A278@LP-EXMBVS10.CO.IHC.COM>",
@@ -61,7 +61,7 @@
       "message_id": "<206a64110912021347m54606956u67037f2d7fe76bc7@mail.gmail.com>",
       "from_name": "Stuart Wagenius",
       "from_email_hash": "9e390402f6105330e7db0565b33d7f6d40e396385267e4e2afc6d946a367105f",
-      "date": "2009-12-02T15:47:53-06:00",
+      "date": "2009-12-02T21:47:53Z",
       "subject": "[R-sig-teaching] text editor for teaching R",
       "subject_clean": "text editor for teaching R",
       "in_reply_to": "<a695148b0912021322i447db340qa227d519bfc275b5@mail.gmail.com>",
@@ -81,7 +81,7 @@
       "message_id": "<C8F304C52E72EF4EBD6CBEF0A2DE1BAA08DC4B9C7B@MBX2.AD.UCSD.EDU>",
       "from_name": "Fellows, Ian",
       "from_email_hash": "d12bb521d01a14c5c9364007086c61200d7898178507ef5d276c14223c822c6b",
-      "date": "2009-12-02T14:13:37-08:00",
+      "date": "2009-12-02T22:13:37Z",
       "subject": "[R-sig-teaching] text editor for teaching R",
       "subject_clean": "text editor for teaching R",
       "in_reply_to": "<206a64110912021347m54606956u67037f2d7fe76bc7@mail.gmail.com>",
@@ -102,7 +102,7 @@
       "message_id": "<e38ad0b30912021425m7c6ebb8eyaca258f55ce95604@mail.gmail.com>",
       "from_name": "Ralph O'Brien, PhD",
       "from_email_hash": "b130a5a0d521b68ae30b5e6f64ca799ce8345d72ca13a6628f755e22cc52c169",
-      "date": "2009-12-02T17:25:53-05:00",
+      "date": "2009-12-02T22:25:53Z",
       "subject": "[R-sig-teaching] text editor for teaching R",
       "subject_clean": "text editor for teaching R",
       "in_reply_to": "<206a64110912021246q12e82811u7b65f71f6de23e14@mail.gmail.com>",
@@ -120,7 +120,7 @@
       "message_id": "<20091202233948.59705.qmail@mv.mv.com>",
       "from_name": "Robert W. Hayden",
       "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
-      "date": "2009-12-02T18:39:48-05:00",
+      "date": "2009-12-02T23:39:48Z",
       "subject": "[R-sig-teaching]  text editor for teaching R",
       "subject_clean": "text editor for teaching R",
       "in_reply_to": null,
@@ -154,7 +154,7 @@
       "message_id": "<4B17B637.1000908@sciviews.org>",
       "from_name": "Philippe Grosjean",
       "from_email_hash": "71b9dd5d435dd797c88b6e8e80adcc63b4c2764c443f0ceca36f80f3ecda8d9a",
-      "date": "2009-12-03T13:59:35+01:00",
+      "date": "2009-12-03T12:59:35Z",
       "subject": "[R-sig-teaching] text editor for teaching R",
       "subject_clean": "text editor for teaching R",
       "in_reply_to": "<206a64110912021347m54606956u67037f2d7fe76bc7@mail.gmail.com>",
@@ -175,7 +175,7 @@
       "message_id": "<a695148b0912100643j6f80ff4at326828e687f5a546@mail.gmail.com>",
       "from_name": "G. Jay Kerns",
       "from_email_hash": "50e93b09ae5eba7f3237d0e4291e3a6b8825a6fb21853bb3678551306330b319",
-      "date": "2009-12-10T09:43:28-05:00",
+      "date": "2009-12-10T14:43:28Z",
       "subject": "[R-sig-teaching] flowchart for reporting R bugs",
       "subject_clean": "flowchart for reporting R bugs",
       "in_reply_to": null,
@@ -201,8 +201,8 @@
         "Ralph O'Brien, PhD",
         "Stuart Wagenius"
       ],
-      "started": "2009-12-02T14:46:44-06:00",
-      "last_reply": "2009-12-03T13:59:35+01:00",
+      "started": "2009-12-02T20:46:44Z",
+      "last_reply": "2009-12-03T12:59:35Z",
       "root_message_id": "msg-1e08af39fd59"
     },
     {
@@ -212,8 +212,8 @@
       "participants": [
         "Robert W. Hayden"
       ],
-      "started": "2009-12-02T18:39:48-05:00",
-      "last_reply": "2009-12-02T18:39:48-05:00",
+      "started": "2009-12-02T23:39:48Z",
+      "last_reply": "2009-12-02T23:39:48Z",
       "root_message_id": "msg-660416ef7818"
     },
     {
@@ -223,8 +223,8 @@
       "participants": [
         "G. Jay Kerns"
       ],
-      "started": "2009-12-10T09:43:28-05:00",
-      "last_reply": "2009-12-10T09:43:28-05:00",
+      "started": "2009-12-10T14:43:28Z",
+      "last_reply": "2009-12-10T14:43:28Z",
       "root_message_id": "msg-3967ec4df9d5"
     }
   ]

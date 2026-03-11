@@ -8,7 +8,7 @@
       "message_id": "<940519.9371.qm@web59511.mail.ac4.yahoo.com>",
       "from_name": "Ali Zanaty",
       "from_email_hash": "65acd645f9ed74fc7721f9ea58469b32335ac44f193ffbf59b7c89913407d9ac",
-      "date": "2011-04-02T14:12:05-07:00",
+      "date": "2011-04-02T21:12:05Z",
       "subject": "[R-sig-teaching] Plotting the P value",
       "subject_clean": "Plotting the P value",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<BANLkTi=mB9n8W2tAiTxeDratHzWRBQzZBg@mail.gmail.com>",
       "from_name": "Paul Johnson",
       "from_email_hash": "b96b8a38c7fef12892ac8cae395028a3b39f3acce423d9c564ab27dc864c47b3",
-      "date": "2011-04-02T16:55:15-05:00",
+      "date": "2011-04-02T21:55:15Z",
       "subject": "[R-sig-teaching] Plotting the P value",
       "subject_clean": "Plotting the P value",
       "in_reply_to": "<940519.9371.qm@web59511.mail.ac4.yahoo.com>",
@@ -42,7 +42,7 @@
       "message_id": "<42367154246C08458DDA1F9A7AD483468B71AB35@nc-mail.northland.edu>",
       "from_name": "Derek Ogle",
       "from_email_hash": "d8ab15f0ac0477824b0baa65b33adead59b0eceb86ebb5176308d5f8cceaa2ec",
-      "date": "2011-04-02T17:05:55-05:00",
+      "date": "2011-04-02T22:05:55Z",
       "subject": "[R-sig-teaching] Plotting the P value",
       "subject_clean": "Plotting the P value",
       "in_reply_to": "<940519.9371.qm@web59511.mail.ac4.yahoo.com>",
@@ -60,7 +60,7 @@
       "message_id": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC63456B7B28@LP-EXMBVS10.CO.IHC.COM>",
       "from_name": "Greg Snow",
       "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
-      "date": "2011-04-02T20:47:59-06:00",
+      "date": "2011-04-03T02:47:59Z",
       "subject": "[R-sig-teaching] Plotting the P value",
       "subject_clean": "Plotting the P value",
       "in_reply_to": "<940519.9371.qm@web59511.mail.ac4.yahoo.com>",
@@ -78,7 +78,7 @@
       "message_id": "<BANLkTikCZktSXmjCumuGX4QVEyO5Veh8eQ@mail.gmail.com>",
       "from_name": "Joshua Wiley",
       "from_email_hash": "c7f07c588294f110fffa28fa75e197f5a9d40a76afe0853fbdeb1992dab12a4a",
-      "date": "2011-04-02T20:09:05-07:00",
+      "date": "2011-04-03T03:09:05Z",
       "subject": "[R-sig-teaching] Plotting the P value",
       "subject_clean": "Plotting the P value",
       "in_reply_to": "<BANLkTi=mB9n8W2tAiTxeDratHzWRBQzZBg@mail.gmail.com>",
@@ -97,7 +97,7 @@
       "message_id": "<BANLkTi=ywLx-5DJeti=zTBeoj-iBU_E=-A@mail.gmail.com>",
       "from_name": "Liviu Andronic",
       "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
-      "date": "2011-04-04T16:43:23+02:00",
+      "date": "2011-04-04T14:43:23Z",
       "subject": "[R-sig-teaching] Plotting the P value",
       "subject_clean": "Plotting the P value",
       "in_reply_to": "<940519.9371.qm@web59511.mail.ac4.yahoo.com>",
@@ -115,7 +115,7 @@
       "message_id": "<480810.35423.qm@web30601.mail.mud.yahoo.com>",
       "from_name": "jose romero",
       "from_email_hash": "a239d2abfd6000b3143932058ce49c6bcae353eae79bc898cb147e87d639754c",
-      "date": "2011-04-05T06:12:08-07:00",
+      "date": "2011-04-05T13:12:08Z",
       "subject": "[R-sig-teaching] load an image file using an Rweb server",
       "subject_clean": "load an image file using an Rweb server",
       "in_reply_to": null,
@@ -131,7 +131,7 @@
       "message_id": "<687457.72545.qm@web59516.mail.ac4.yahoo.com>",
       "from_name": "Ali Zanaty",
       "from_email_hash": "65acd645f9ed74fc7721f9ea58469b32335ac44f193ffbf59b7c89913407d9ac",
-      "date": "2011-04-18T10:12:24-07:00",
+      "date": "2011-04-18T17:12:24Z",
       "subject": "[R-sig-teaching] Rejection region for F test",
       "subject_clean": "Rejection region for F test",
       "in_reply_to": null,
@@ -147,7 +147,7 @@
       "message_id": "<BANLkTi=6TdRL-Lc_knaJuJby2BupnyM47g@mail.gmail.com>",
       "from_name": "Joshua Wiley",
       "from_email_hash": "c7f07c588294f110fffa28fa75e197f5a9d40a76afe0853fbdeb1992dab12a4a",
-      "date": "2011-04-18T10:21:12-07:00",
+      "date": "2011-04-18T17:21:12Z",
       "subject": "[R-sig-teaching] Rejection region for F test",
       "subject_clean": "Rejection region for F test",
       "in_reply_to": "<687457.72545.qm@web59516.mail.ac4.yahoo.com>",
@@ -174,8 +174,8 @@
         "Liviu Andronic",
         "Paul Johnson"
       ],
-      "started": "2011-04-02T14:12:05-07:00",
-      "last_reply": "2011-04-04T16:43:23+02:00",
+      "started": "2011-04-02T21:12:05Z",
+      "last_reply": "2011-04-04T14:43:23Z",
       "root_message_id": "msg-0fc81b0c2843"
     },
     {
@@ -185,8 +185,8 @@
       "participants": [
         "jose romero"
       ],
-      "started": "2011-04-05T06:12:08-07:00",
-      "last_reply": "2011-04-05T06:12:08-07:00",
+      "started": "2011-04-05T13:12:08Z",
+      "last_reply": "2011-04-05T13:12:08Z",
       "root_message_id": "msg-8ecb16a4c9d2"
     },
     {
@@ -197,8 +197,8 @@
         "Ali Zanaty",
         "Joshua Wiley"
       ],
-      "started": "2011-04-18T10:12:24-07:00",
-      "last_reply": "2011-04-18T10:21:12-07:00",
+      "started": "2011-04-18T17:12:24Z",
+      "last_reply": "2011-04-18T17:21:12Z",
       "root_message_id": "msg-8c7d57fe6d15"
     }
   ]

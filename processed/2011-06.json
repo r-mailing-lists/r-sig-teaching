@@ -8,7 +8,7 @@
       "message_id": "<483594.44936.qm@web59502.mail.ac4.yahoo.com>",
       "from_name": "Ali Zanaty",
       "from_email_hash": "65acd645f9ed74fc7721f9ea58469b32335ac44f193ffbf59b7c89913407d9ac",
-      "date": "2011-06-05T06:23:29-07:00",
+      "date": "2011-06-05T13:23:29Z",
       "subject": "[R-sig-teaching] help is needed",
       "subject_clean": "help is needed",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<BANLkTindt7fuR66W-wbYnQ=9Mb7NuCHzCQ@mail.gmail.com>",
       "from_name": "Ista Zahn",
       "from_email_hash": "2e4c8f48786fb76b910812e6407745b24d3e39c79018966c1f928657fc9989f2",
-      "date": "2011-06-05T11:55:52-04:00",
+      "date": "2011-06-05T15:55:52Z",
       "subject": "[R-sig-teaching] help is needed",
       "subject_clean": "help is needed",
       "in_reply_to": "<483594.44936.qm@web59502.mail.ac4.yahoo.com>",
@@ -42,7 +42,7 @@
       "message_id": "<BANLkTik84NAx51P7Jbz85boookq1y9h3sA@mail.gmail.com>",
       "from_name": "Francis Smart",
       "from_email_hash": "5a2da553b30e8ef1821e6c30b7216e643d3c97437776f69600c8ef061eb8f1a4",
-      "date": "2011-06-25T23:00:52-04:00",
+      "date": "2011-06-26T03:00:52Z",
       "subject": "[R-sig-teaching] Message displayed when opening RData file",
       "subject_clean": "Message displayed when opening RData file",
       "in_reply_to": null,
@@ -58,7 +58,7 @@
       "message_id": "<BANLkTikXuVRG9Jtisu1BhZdtjP1voKTucQ@mail.gmail.com>",
       "from_name": "Joshua Wiley",
       "from_email_hash": "c7f07c588294f110fffa28fa75e197f5a9d40a76afe0853fbdeb1992dab12a4a",
-      "date": "2011-06-25T22:16:46-07:00",
+      "date": "2011-06-26T05:16:46Z",
       "subject": "[R-sig-teaching] Message displayed when opening RData file",
       "subject_clean": "Message displayed when opening RData file",
       "in_reply_to": "<BANLkTik84NAx51P7Jbz85boookq1y9h3sA@mail.gmail.com>",
@@ -76,7 +76,7 @@
       "message_id": "<BANLkTim7BLKUaYpwcsDaupK50b0X63HfGA@mail.gmail.com>",
       "from_name": "Matt Curcio",
       "from_email_hash": "895b5f26d539c8af4778c1b9571c09008b44ca7aebdfef086ac7b9b295fdefc3",
-      "date": "2011-06-29T13:48:29-04:00",
+      "date": "2011-06-29T17:48:29Z",
       "subject": "[R-sig-teaching] Lists of R packages",
       "subject_clean": "Lists of R packages",
       "in_reply_to": null,
@@ -92,7 +92,7 @@
       "message_id": "<4E0B696D.50809@univ-lille3.fr>",
       "from_name": "philippe preux",
       "from_email_hash": "66354c570a95f779f047493a7e0330a91f22d9ffe5ba7aa6ceb257a40d74b575",
-      "date": "2011-06-29T20:05:33+02:00",
+      "date": "2011-06-29T18:05:33Z",
       "subject": "[R-sig-teaching] Lists of R packages",
       "subject_clean": "Lists of R packages",
       "in_reply_to": "<BANLkTim7BLKUaYpwcsDaupK50b0X63HfGA@mail.gmail.com>",
@@ -110,7 +110,7 @@
       "message_id": "<BANLkTincgZ+6GM+GokN1VEx8yNunew_V+QXddsoV-GjVAcZ7cw@mail.gmail.com>",
       "from_name": "Rainer M Krug",
       "from_email_hash": "e11b90edace280d0de30dfc4fa9de87a9a079d3f2c2f179123fa9e4ae628223d",
-      "date": "2011-06-30T07:59:46+02:00",
+      "date": "2011-06-30T05:59:46Z",
       "subject": "[R-sig-teaching] Lists of R packages",
       "subject_clean": "Lists of R packages",
       "in_reply_to": "<4E0B696D.50809@univ-lille3.fr>",
@@ -134,8 +134,8 @@
         "Ali Zanaty",
         "Ista Zahn"
       ],
-      "started": "2011-06-05T06:23:29-07:00",
-      "last_reply": "2011-06-05T11:55:52-04:00",
+      "started": "2011-06-05T13:23:29Z",
+      "last_reply": "2011-06-05T15:55:52Z",
       "root_message_id": "msg-9e77040dd45f"
     },
     {
@@ -146,8 +146,8 @@
         "Francis Smart",
         "Joshua Wiley"
       ],
-      "started": "2011-06-25T23:00:52-04:00",
-      "last_reply": "2011-06-25T22:16:46-07:00",
+      "started": "2011-06-26T03:00:52Z",
+      "last_reply": "2011-06-26T05:16:46Z",
       "root_message_id": "msg-cee098ad3f70"
     },
     {
@@ -159,8 +159,8 @@
         "Rainer M Krug",
         "philippe preux"
       ],
-      "started": "2011-06-29T13:48:29-04:00",
-      "last_reply": "2011-06-30T07:59:46+02:00",
+      "started": "2011-06-29T17:48:29Z",
+      "last_reply": "2011-06-30T05:59:46Z",
       "root_message_id": "msg-d12d2a0415ef"
     }
   ]

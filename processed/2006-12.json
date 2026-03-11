@@ -8,7 +8,7 @@
       "message_id": "<4573764A.7000005@buseco.monash.edu.au>",
       "from_name": "Yeasmin Khandakar",
       "from_email_hash": "8850046ca1f500c4ed987e720b81fe3c714ea5cade90a6d9fb1e8bf0374fa987",
-      "date": "2006-12-04T12:13:46+11:00",
+      "date": "2006-12-04T01:13:46Z",
       "subject": "[R-sig-teaching] checking even/odd in R",
       "subject_clean": "checking even/odd in R",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<20061204012413.59973.qmail@mv.mv.com>",
       "from_name": "Robert W. Hayden",
       "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
-      "date": "2006-12-03T20:24:13-05:00",
+      "date": "2006-12-04T01:24:13Z",
       "subject": "[R-sig-teaching] checking even/odd in R",
       "subject_clean": "checking even/odd in R",
       "in_reply_to": "<4573764A.7000005@buseco.monash.edu.au> from \"Yeasmin Khandakar\" at Dec 04, 2006 12:13:46 PM",
@@ -40,7 +40,7 @@
       "message_id": "<20061204021604.HTZA8030.tomts22-srv.bellnexxia.net@JohnDesktop8300>",
       "from_name": "John Fox",
       "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
-      "date": "2006-12-03T21:16:06-05:00",
+      "date": "2006-12-04T02:16:06Z",
       "subject": "[R-sig-teaching] checking even/odd in R",
       "subject_clean": "checking even/odd in R",
       "in_reply_to": "<20061204012413.59973.qmail@mv.mv.com>",
@@ -56,7 +56,7 @@
       "message_id": "<20061203184201.q34sk1smn8ckkscs@webmail.reed.edu>",
       "from_name": "Albyn Jones",
       "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
-      "date": "2006-12-03T18:42:01-08:00",
+      "date": "2006-12-04T02:42:01Z",
       "subject": "[R-sig-teaching] checking even/odd in R",
       "subject_clean": "checking even/odd in R",
       "in_reply_to": "<20061204021604.HTZA8030.tomts22-srv.bellnexxia.net@JohnDesktop8300>",
@@ -74,7 +74,7 @@
       "message_id": "<20061204132930.KCYG8030.tomts22-srv.bellnexxia.net@JohnDesktop8300>",
       "from_name": "John Fox",
       "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
-      "date": "2006-12-04T08:29:33-05:00",
+      "date": "2006-12-04T13:29:33Z",
       "subject": "[R-sig-teaching] checking even/odd in R",
       "subject_clean": "checking even/odd in R",
       "in_reply_to": "<20061203184201.q34sk1smn8ckkscs@webmail.reed.edu>",
@@ -90,7 +90,7 @@
       "message_id": "<20061204094330.1sr7lfoonv8cw8o8@webmail.reed.edu>",
       "from_name": "Albyn Jones",
       "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
-      "date": "2006-12-04T09:43:30-08:00",
+      "date": "2006-12-04T17:43:30Z",
       "subject": "[R-sig-teaching] checking even/odd in R",
       "subject_clean": "checking even/odd in R",
       "in_reply_to": "<20061204132930.KCYG8030.tomts22-srv.bellnexxia.net@JohnDesktop8300>",
@@ -106,6 +106,17 @@
   ],
   "threads": [
     {
+      "id": "thread-4457f4ace56a",
+      "subject": "checking even/odd in R",
+      "message_count": 1,
+      "participants": [
+        "Yeasmin Khandakar"
+      ],
+      "started": "2006-12-04T01:13:46Z",
+      "last_reply": "2006-12-04T01:13:46Z",
+      "root_message_id": "msg-4457f4ace56a"
+    },
+    {
       "id": "thread-f43f9278448e",
       "subject": "checking even/odd in R",
       "message_count": 5,
@@ -114,20 +125,9 @@
         "John Fox",
         "Robert W. Hayden"
       ],
-      "started": "2006-12-03T20:24:13-05:00",
-      "last_reply": "2006-12-04T09:43:30-08:00",
+      "started": "2006-12-04T01:24:13Z",
+      "last_reply": "2006-12-04T17:43:30Z",
       "root_message_id": "msg-f43f9278448e"
-    },
-    {
-      "id": "thread-4457f4ace56a",
-      "subject": "checking even/odd in R",
-      "message_count": 1,
-      "participants": [
-        "Yeasmin Khandakar"
-      ],
-      "started": "2006-12-04T12:13:46+11:00",
-      "last_reply": "2006-12-04T12:13:46+11:00",
-      "root_message_id": "msg-4457f4ace56a"
     }
   ]
 }

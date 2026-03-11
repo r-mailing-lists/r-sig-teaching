@@ -8,7 +8,7 @@
       "message_id": "<CABvvk7Xz0nRhk30nLhTxoUsxMy8+6yqqrxbgqesRyXHGt95yfA@mail.gmail.com>",
       "from_name": "Nguyen C.",
       "from_email_hash": "0b9c2dbe22f7b38ecd8096e7f002f66f867bc7c415b18294d5c9b6db7f43a084",
-      "date": "2015-06-23T00:40:58+07:00",
+      "date": "2015-06-22T17:40:58Z",
       "subject": "[R-sig-teaching] Help on packages working with excell files",
       "subject_clean": "Help on packages working with excell files",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<CA+vqiLHLF+OKYqSSopHjN1kRXdK=kgJg0mkvj_JsgZFX55FeHQ@mail.gmail.com>",
       "from_name": "Ista Zahn",
       "from_email_hash": "098a31f0cc45d6b90198bf3b75e03deed7c570292be352a10b98aeee4bf7012e",
-      "date": "2015-06-22T14:31:08-04:00",
+      "date": "2015-06-22T18:31:08Z",
       "subject": "[R-sig-teaching] Help on packages working with excell files",
       "subject_clean": "Help on packages working with excell files",
       "in_reply_to": "<CABvvk7Xz0nRhk30nLhTxoUsxMy8+6yqqrxbgqesRyXHGt95yfA@mail.gmail.com>",
@@ -42,7 +42,7 @@
       "message_id": "<wtks4pv7mktwoa8hy9dnx368.1434999483647@email.android.com>",
       "from_name": "Peter Meißner",
       "from_email_hash": "82f2856eb7b63dd5ae611f001d6da3f63179b5487f28e2f0bcfff29b5d71086c",
-      "date": "2015-06-22T20:58:03+02:00",
+      "date": "2015-06-22T18:58:03Z",
       "subject": "[R-sig-teaching] Help on packages working with excell files",
       "subject_clean": "Help on packages working with excell files",
       "in_reply_to": null,
@@ -56,17 +56,6 @@
   ],
   "threads": [
     {
-      "id": "thread-cb890e4eeb02",
-      "subject": "Help on packages working with excell files",
-      "message_count": 1,
-      "participants": [
-        "Peter Meißner"
-      ],
-      "started": "2015-06-22T20:58:03+02:00",
-      "last_reply": "2015-06-22T20:58:03+02:00",
-      "root_message_id": "msg-cb890e4eeb02"
-    },
-    {
       "id": "thread-ea8e20eebafb",
       "subject": "Help on packages working with excell files",
       "message_count": 2,
@@ -74,9 +63,20 @@
         "Ista Zahn",
         "Nguyen C."
       ],
-      "started": "2015-06-23T00:40:58+07:00",
-      "last_reply": "2015-06-22T14:31:08-04:00",
+      "started": "2015-06-22T17:40:58Z",
+      "last_reply": "2015-06-22T18:31:08Z",
       "root_message_id": "msg-ea8e20eebafb"
+    },
+    {
+      "id": "thread-cb890e4eeb02",
+      "subject": "Help on packages working with excell files",
+      "message_count": 1,
+      "participants": [
+        "Peter Meißner"
+      ],
+      "started": "2015-06-22T18:58:03Z",
+      "last_reply": "2015-06-22T18:58:03Z",
+      "root_message_id": "msg-cb890e4eeb02"
     }
   ]
 }

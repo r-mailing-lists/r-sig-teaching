@@ -8,7 +8,7 @@
       "message_id": "<CAO1zAVbM2PuMvGMaTefvS05CZhRn_4Dp14ipRoTh=m2D3MSy4w@mail.gmail.com>",
       "from_name": "Joris Meys",
       "from_email_hash": "2ae053aae1b18d0dc4c7426e097ece939c7ea0f1b1106347ba0f5de841edd357",
-      "date": "2017-09-28T14:48:19+02:00",
+      "date": "2017-09-28T12:48:19Z",
       "subject": "[R-sig-teaching] R packages for create interactive homeworks in R",
       "subject_clean": "R packages for create interactive homeworks in R",
       "in_reply_to": "<CABkCotSV-3r_CJH2C_fGxbPH1KvdsGsQ0MJPK+yktUBpTuzCjw@mail.gmail.com>",
@@ -26,7 +26,7 @@
       "message_id": "<CABkCotRfLa2OW_7yrcCt2kokz0Aeu0r=xVUW+5737+B1hcXViA@mail.gmail.com>",
       "from_name": "Manuel Spínola",
       "from_email_hash": "c67b4a8f4e027cf75cc3544d4e04791324bee3c4417f2f5edf4561a1da2f995b",
-      "date": "2017-09-28T09:00:12-06:00",
+      "date": "2017-09-28T15:00:12Z",
       "subject": "[R-sig-teaching] R packages for create interactive homeworks in R",
       "subject_clean": "R packages for create interactive homeworks in R",
       "in_reply_to": "<CAO1zAVbM2PuMvGMaTefvS05CZhRn_4Dp14ipRoTh=m2D3MSy4w@mail.gmail.com>",
@@ -50,8 +50,8 @@
         "Joris Meys",
         "Manuel Spínola"
       ],
-      "started": "2017-09-28T14:48:19+02:00",
-      "last_reply": "2017-09-28T09:00:12-06:00",
+      "started": "2017-09-28T12:48:19Z",
+      "last_reply": "2017-09-28T15:00:12Z",
       "root_message_id": "msg-c379dac93c2f"
     }
   ]

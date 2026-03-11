@@ -8,7 +8,7 @@
       "message_id": "<281329.77573.qm@web59504.mail.ac4.yahoo.com>",
       "from_name": "Ali Zanaty",
       "from_email_hash": "65acd645f9ed74fc7721f9ea58469b32335ac44f193ffbf59b7c89913407d9ac",
-      "date": "2011-05-20T13:56:52-07:00",
+      "date": "2011-05-20T20:56:52Z",
       "subject": "[R-sig-teaching] Power Analysis",
       "subject_clean": "Power Analysis",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC63478F28AD@LP-EXMBVS10.CO.IHC.COM>",
       "from_name": "Greg Snow",
       "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
-      "date": "2011-05-20T15:13:26-06:00",
+      "date": "2011-05-20T21:13:26Z",
       "subject": "[R-sig-teaching] Power Analysis",
       "subject_clean": "Power Analysis",
       "in_reply_to": "<281329.77573.qm@web59504.mail.ac4.yahoo.com>",
@@ -47,8 +47,8 @@
         "Ali Zanaty",
         "Greg Snow"
       ],
-      "started": "2011-05-20T13:56:52-07:00",
-      "last_reply": "2011-05-20T15:13:26-06:00",
+      "started": "2011-05-20T20:56:52Z",
+      "last_reply": "2011-05-20T21:13:26Z",
       "root_message_id": "msg-bc3b1d52616b"
     }
   ]

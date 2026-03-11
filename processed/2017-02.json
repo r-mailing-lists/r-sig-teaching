@@ -8,7 +8,7 @@
       "message_id": "<CAHDp66DA=XRApwKneJ97KCf8dgNjZodf0TOgm_9yOO65DuLokw@mail.gmail.com>",
       "from_name": "Steven Stoline",
       "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
-      "date": "2017-02-09T12:58:23-05:00",
+      "date": "2017-02-09T17:58:23Z",
       "subject": "[R-sig-teaching] Cronbach's Alpha Values",
       "subject_clean": "Cronbach's Alpha Values",
       "in_reply_to": null,
@@ -42,7 +42,7 @@
       "message_id": "<CANV9buQZptECnutASza57tvHWSUhDyTW3+ao-gNVxgR7ki=oEw@mail.gmail.com>",
       "from_name": "Jeff Laux",
       "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
-      "date": "2017-02-09T14:28:20-05:00",
+      "date": "2017-02-09T19:28:20Z",
       "subject": "[R-sig-teaching] Cronbach's Alpha Values",
       "subject_clean": "Cronbach's Alpha Values",
       "in_reply_to": "<CAMtGSx=kN15Q8eOODw=Gbszp+-yUWa7naBReJ1JfTLma8ig=kw@mail.gmail.com>",
@@ -61,7 +61,7 @@
       "message_id": "<CAHDp66B0WjH+LpPmAji4PjFsMmrnLmey_p8uq_sR++vNviwaYA@mail.gmail.com>",
       "from_name": "Steven Stoline",
       "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
-      "date": "2017-02-21T09:54:52-05:00",
+      "date": "2017-02-21T14:54:52Z",
       "subject": "[R-sig-teaching] Cronbach's Alpha Values",
       "subject_clean": "Cronbach's Alpha Values",
       "in_reply_to": "<CAMtGSx=kN15Q8eOODw=Gbszp+-yUWa7naBReJ1JfTLma8ig=kw@mail.gmail.com>",
@@ -80,7 +80,7 @@
       "message_id": "<CANV9buT5Jrk9JMifP3RwkSRJniPJWK5Henv+RBdxSkn76+TJ8g@mail.gmail.com>",
       "from_name": "Jeff Laux",
       "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
-      "date": "2017-02-21T10:04:12-05:00",
+      "date": "2017-02-21T15:04:12Z",
       "subject": "[R-sig-teaching] Cronbach's Alpha Values",
       "subject_clean": "Cronbach's Alpha Values",
       "in_reply_to": "<CAHDp66B0WjH+LpPmAji4PjFsMmrnLmey_p8uq_sR++vNviwaYA@mail.gmail.com>",
@@ -100,7 +100,7 @@
       "message_id": "<CAE9stmew26BcO28jnGDozU+DWiOkczZKqovtdLBHw_CAGtHGhg@mail.gmail.com>",
       "from_name": "AbouEl-Makarim Aboueissa",
       "from_email_hash": "57ed60c71c38f5aa7111618f7d433e719fa232f0704722ddb27973d2f4c216c5",
-      "date": "2017-02-24T12:13:39-05:00",
+      "date": "2017-02-24T17:13:39Z",
       "subject": "[R-sig-teaching] Introduction to Modern Nonparametric Statistics",
       "subject_clean": "Introduction to Modern Nonparametric Statistics",
       "in_reply_to": null,
@@ -122,8 +122,8 @@
         "Jeremy Miles",
         "Steven Stoline"
       ],
-      "started": "2017-02-09T12:58:23-05:00",
-      "last_reply": "2017-02-21T10:04:12-05:00",
+      "started": "2017-02-09T17:58:23Z",
+      "last_reply": "2017-02-21T15:04:12Z",
       "root_message_id": "msg-1816bd7b8c3e"
     },
     {
@@ -133,8 +133,8 @@
       "participants": [
         "AbouEl-Makarim Aboueissa"
       ],
-      "started": "2017-02-24T12:13:39-05:00",
-      "last_reply": "2017-02-24T12:13:39-05:00",
+      "started": "2017-02-24T17:13:39Z",
+      "last_reply": "2017-02-24T17:13:39Z",
       "root_message_id": "msg-17a883f73c4f"
     }
   ]

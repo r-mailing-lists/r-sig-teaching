@@ -8,7 +8,7 @@
       "message_id": "<CAE9stmfmLfDkbHfYjTjaAjecR9niV6NZ=ySOF=tT0TjhYM4-+w@mail.gmail.com>",
       "from_name": "AbouEl-Makarim Aboueissa",
       "from_email_hash": "0e2534724001ad358ea9a9a5e54bf3c5e424d8ab415891faf701f24510d27d97",
-      "date": "2022-06-23T10:41:05-04:00",
+      "date": "2022-06-23T14:41:05Z",
       "subject": "[R-sig-teaching] R for Linear Algebra",
       "subject_clean": "R for Linear Algebra",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<a30d4fe2-cce2-46c7-6004-2043fc542889@csun.edu>",
       "from_name": "Wayne Smith",
       "from_email_hash": "3707cd936ee9ef7e9ac84e4ecefa13a9beea2808e31f69098a4d10dbba9498b3",
-      "date": "2022-06-24T17:03:34-07:00",
+      "date": "2022-06-25T00:03:34Z",
       "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 118, Issue 1",
       "subject_clean": "R-sig-teaching Digest, Vol 118, Issue 1",
       "in_reply_to": "<mailman.869.13.1656064802.10513.r-sig-teaching@r-project.org>",
@@ -60,7 +60,7 @@
       "message_id": "<CAPCa8=HHjHHGtpQ4W8OAwxWfYe_y-BNE1mvHzKxKVP-Nvis7QA@mail.gmail.com>",
       "from_name": "J. Marius RAKOTONDRAMANGA",
       "from_email_hash": "811403bef92b387b0f90bea3c701bab3815e60585e73ecf2cb4e25a23c104eca",
-      "date": "2022-06-27T09:04:30+03:00",
+      "date": "2022-06-27T06:04:30Z",
       "subject": "[R-sig-teaching] [External] R for Linear Algebra",
       "subject_clean": "[External] R for Linear Algebra",
       "in_reply_to": "<BL1PR11MB5239267CBB1F9E713D3ECAB7D2B79@BL1PR11MB5239.namprd11.prod.outlook.com>",
@@ -85,8 +85,8 @@
         "J. Marius RAKOTONDRAMANGA",
         "Richard M. Heiberger"
       ],
-      "started": "2022-06-23T10:41:05-04:00",
-      "last_reply": "2022-06-27T09:04:30+03:00",
+      "started": "2022-06-23T14:41:05Z",
+      "last_reply": "2022-06-27T06:04:30Z",
       "root_message_id": "msg-dfd502b59827"
     },
     {
@@ -96,8 +96,8 @@
       "participants": [
         "Wayne Smith"
       ],
-      "started": "2022-06-24T17:03:34-07:00",
-      "last_reply": "2022-06-24T17:03:34-07:00",
+      "started": "2022-06-25T00:03:34Z",
+      "last_reply": "2022-06-25T00:03:34Z",
       "root_message_id": "msg-2f9275063037"
     }
   ]

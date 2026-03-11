@@ -8,7 +8,7 @@
       "message_id": "<20061104154622.93109.qmail@mv.mv.com>",
       "from_name": "Robert W. Hayden",
       "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
-      "date": "2006-11-04T10:46:22-05:00",
+      "date": "2006-11-04T15:46:22Z",
       "subject": "[R-sig-teaching]  R in intro stats",
       "subject_clean": "R in intro stats",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<p06230934c1728238c524@[165.124.165.58]>",
       "from_name": "William Revelle",
       "from_email_hash": "17775642d38a89586519cdb4da8b9881c3da6cb4b5abf51dc2b37a23be377688",
-      "date": "2006-11-04T11:49:49-06:00",
+      "date": "2006-11-04T17:49:49Z",
       "subject": "[R-sig-teaching] R in intro stats",
       "subject_clean": "R in intro stats",
       "in_reply_to": "<20061104154622.93109.qmail@mv.mv.com>",
@@ -47,8 +47,8 @@
         "Robert W. Hayden",
         "William Revelle"
       ],
-      "started": "2006-11-04T10:46:22-05:00",
-      "last_reply": "2006-11-04T11:49:49-06:00",
+      "started": "2006-11-04T15:46:22Z",
+      "last_reply": "2006-11-04T17:49:49Z",
       "root_message_id": "msg-9e02bd597d20"
     }
   ]

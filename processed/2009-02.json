@@ -8,7 +8,7 @@
       "message_id": "<68b1e2610902010050k63e92abdhcea4f95445951453@mail.gmail.com>",
       "from_name": "Liviu Andronic",
       "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
-      "date": "2009-02-01T09:50:39+01:00",
+      "date": "2009-02-01T08:50:39Z",
       "subject": "[R-sig-teaching] issues with importing",
       "subject_clean": "issues with importing",
       "in_reply_to": "<20090131221738.95319.qmail@mv.mv.com>",
@@ -27,7 +27,7 @@
       "message_id": "<18831.60164.66667.730827@stat.math.ethz.ch>",
       "from_name": "Martin Maechler",
       "from_email_hash": "c2c86f22f78a4ecfe6d0e6b4e2be505a3f5beb0470ea88c903688ac536018a98",
-      "date": "2009-02-09T09:36:20+01:00",
+      "date": "2009-02-09T08:36:20Z",
       "subject": "[R-sig-teaching] Who is the list for?",
       "subject_clean": "Who is the list for?",
       "in_reply_to": "<20090131224727.1924.qmail@mv.mv.com>",
@@ -45,7 +45,7 @@
       "message_id": "<20090215022415.92847.qmail@mv.mv.com>",
       "from_name": "Robert W. Hayden",
       "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
-      "date": "2009-02-14T21:24:15-05:00",
+      "date": "2009-02-15T02:24:15Z",
       "subject": "[R-sig-teaching] installing Rcmdr",
       "subject_clean": "installing Rcmdr",
       "in_reply_to": null,
@@ -61,7 +61,7 @@
       "message_id": "<a695148b0902141854r78c33b35vf2d1207ec71f02e7@mail.gmail.com>",
       "from_name": "G. Jay Kerns",
       "from_email_hash": "50e93b09ae5eba7f3237d0e4291e3a6b8825a6fb21853bb3678551306330b319",
-      "date": "2009-02-14T21:54:32-05:00",
+      "date": "2009-02-15T02:54:32Z",
       "subject": "[R-sig-teaching] installing Rcmdr",
       "subject_clean": "installing Rcmdr",
       "in_reply_to": "<20090215022415.92847.qmail@mv.mv.com>",
@@ -79,7 +79,7 @@
       "message_id": "<f55e7cf50902142011h45090480v1c6ac5b8f2380bf3@mail.gmail.com>",
       "from_name": "Ista Zahn",
       "from_email_hash": "098a31f0cc45d6b90198bf3b75e03deed7c570292be352a10b98aeee4bf7012e",
-      "date": "2009-02-14T23:11:45-05:00",
+      "date": "2009-02-15T04:11:45Z",
       "subject": "[R-sig-teaching] installing Rcmdr",
       "subject_clean": "installing Rcmdr",
       "in_reply_to": "<20090215022415.92847.qmail@mv.mv.com>",
@@ -97,7 +97,7 @@
       "message_id": "<001b01c98f7e$58cbc3d0$0a634b70$@ca>",
       "from_name": "John Fox",
       "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
-      "date": "2009-02-15T10:01:57-05:00",
+      "date": "2009-02-15T15:01:57Z",
       "subject": "[R-sig-teaching] installing Rcmdr",
       "subject_clean": "installing Rcmdr",
       "in_reply_to": "<a695148b0902141854r78c33b35vf2d1207ec71f02e7@mail.gmail.com>",
@@ -116,7 +116,7 @@
       "message_id": "<f55e7cf50902150803n59416b23y2cbe01b797588beb@mail.gmail.com>",
       "from_name": "Ista Zahn",
       "from_email_hash": "098a31f0cc45d6b90198bf3b75e03deed7c570292be352a10b98aeee4bf7012e",
-      "date": "2009-02-15T11:03:10-05:00",
+      "date": "2009-02-15T16:03:10Z",
       "subject": "[R-sig-teaching] installing Rcmdr",
       "subject_clean": "installing Rcmdr",
       "in_reply_to": "<001b01c98f7e$58cbc3d0$0a634b70$@ca>",
@@ -136,7 +136,7 @@
       "message_id": "<87zlgnbsbk.fsf@blackbart.sedgenet>",
       "from_name": "tyler",
       "from_email_hash": "5175000895736522a94b46846e1b695cdc12921b61083ab626f75efaaf595f24",
-      "date": "2009-02-15T12:03:43-04:00",
+      "date": "2009-02-15T16:03:43Z",
       "subject": "[R-sig-teaching] installing Rcmdr",
       "subject_clean": "installing Rcmdr",
       "in_reply_to": null,
@@ -155,7 +155,7 @@
       "message_id": "<de8c7cb40902150840s74803be7w6634611bdd3ffdd8@mail.gmail.com>",
       "from_name": "Prasenjit Kapat",
       "from_email_hash": "1aaabed538e5f2d629b33e919b31b5e2c9c13b131ce8e84f1b00776b280c06e6",
-      "date": "2009-02-15T11:40:56-05:00",
+      "date": "2009-02-15T16:40:56Z",
       "subject": "[R-sig-teaching] installing Rcmdr",
       "subject_clean": "installing Rcmdr",
       "in_reply_to": "<87zlgnbsbk.fsf@blackbart.sedgenet>",
@@ -175,7 +175,7 @@
       "message_id": "<002101c98f8f$edf32500$c9d96f00$@ca>",
       "from_name": "John Fox",
       "from_email_hash": "26b3c2bfbc5587a1119fc93e98ed6834f6847804a317ae5707e7442251474735",
-      "date": "2009-02-15T12:07:48-05:00",
+      "date": "2009-02-15T17:07:48Z",
       "subject": "[R-sig-teaching] installing Rcmdr",
       "subject_clean": "installing Rcmdr",
       "in_reply_to": "<f55e7cf50902150803n59416b23y2cbe01b797588beb@mail.gmail.com>",
@@ -196,7 +196,7 @@
       "message_id": "<20090215173013.70223.qmail@mv.mv.com>",
       "from_name": "Robert W. Hayden",
       "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
-      "date": "2009-02-15T12:30:13-05:00",
+      "date": "2009-02-15T17:30:13Z",
       "subject": "[R-sig-teaching] installing Rcmdr",
       "subject_clean": "installing Rcmdr",
       "in_reply_to": null,
@@ -212,7 +212,7 @@
       "message_id": "<40e66e0b0902150949j3459c003u206e4aea82ba9583@mail.gmail.com>",
       "from_name": "Douglas Bates",
       "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
-      "date": "2009-02-15T11:49:26-06:00",
+      "date": "2009-02-15T17:49:26Z",
       "subject": "[R-sig-teaching] installing Rcmdr",
       "subject_clean": "installing Rcmdr",
       "in_reply_to": "<87zlgnbsbk.fsf@blackbart.sedgenet>",
@@ -232,7 +232,7 @@
       "message_id": "<878wo7inx2.fsf@blackbart.sedgenet>",
       "from_name": "tyler",
       "from_email_hash": "5175000895736522a94b46846e1b695cdc12921b61083ab626f75efaaf595f24",
-      "date": "2009-02-15T13:56:57-04:00",
+      "date": "2009-02-15T17:56:57Z",
       "subject": "[R-sig-teaching] installing Rcmdr",
       "subject_clean": "installing Rcmdr",
       "in_reply_to": null,
@@ -253,7 +253,7 @@
       "message_id": "<f55e7cf50902271701m1912b0a8obd0edb0c268466d5@mail.gmail.com>",
       "from_name": "Ista Zahn",
       "from_email_hash": "2e4c8f48786fb76b910812e6407745b24d3e39c79018966c1f928657fc9989f2",
-      "date": "2009-02-27T20:01:43-05:00",
+      "date": "2009-02-28T01:01:43Z",
       "subject": "[R-sig-teaching] Unbalanced factorial designs",
       "subject_clean": "Unbalanced factorial designs",
       "in_reply_to": "<f55e7cf50902271653l78534df0lf08f3e0254cdfc40@mail.gmail.com>",
@@ -271,7 +271,7 @@
       "message_id": "<p06240828c5ce5fa20333@[192.168.1.108]>",
       "from_name": "William Revelle",
       "from_email_hash": "17775642d38a89586519cdb4da8b9881c3da6cb4b5abf51dc2b37a23be377688",
-      "date": "2009-02-27T21:29:44-06:00",
+      "date": "2009-02-28T03:29:44Z",
       "subject": "[R-sig-teaching] Unbalanced factorial designs",
       "subject_clean": "Unbalanced factorial designs",
       "in_reply_to": "<f55e7cf50902271701m1912b0a8obd0edb0c268466d5@mail.gmail.com>",
@@ -290,7 +290,7 @@
       "message_id": "<a695148b0902272134v40d38579r1bd97a89cf197c3d@mail.gmail.com>",
       "from_name": "G. Jay Kerns",
       "from_email_hash": "50e93b09ae5eba7f3237d0e4291e3a6b8825a6fb21853bb3678551306330b319",
-      "date": "2009-02-28T00:34:27-05:00",
+      "date": "2009-02-28T05:34:27Z",
       "subject": "[R-sig-teaching] Unbalanced factorial designs",
       "subject_clean": "Unbalanced factorial designs",
       "in_reply_to": "<p06240828c5ce5fa20333@192.168.1.108>",
@@ -310,7 +310,7 @@
       "message_id": "<f55e7cf50902280653x58035fb5u31439be332295995@mail.gmail.com>",
       "from_name": "Ista Zahn",
       "from_email_hash": "2e4c8f48786fb76b910812e6407745b24d3e39c79018966c1f928657fc9989f2",
-      "date": "2009-02-28T09:53:47-05:00",
+      "date": "2009-02-28T14:53:47Z",
       "subject": "[R-sig-teaching] Unbalanced factorial designs",
       "subject_clean": "Unbalanced factorial designs",
       "in_reply_to": "<p06240828c5ce5fa20333@192.168.1.108>",
@@ -330,7 +330,7 @@
       "message_id": "<f55e7cf50902280658y463179fj1786b835717b6690@mail.gmail.com>",
       "from_name": "Ista Zahn",
       "from_email_hash": "2e4c8f48786fb76b910812e6407745b24d3e39c79018966c1f928657fc9989f2",
-      "date": "2009-02-28T09:58:57-05:00",
+      "date": "2009-02-28T14:58:57Z",
       "subject": "[R-sig-teaching] Unbalanced factorial designs",
       "subject_clean": "Unbalanced factorial designs",
       "in_reply_to": "<a695148b0902272134v40d38579r1bd97a89cf197c3d@mail.gmail.com>",
@@ -355,8 +355,8 @@
       "participants": [
         "Liviu Andronic"
       ],
-      "started": "2009-02-01T09:50:39+01:00",
-      "last_reply": "2009-02-01T09:50:39+01:00",
+      "started": "2009-02-01T08:50:39Z",
+      "last_reply": "2009-02-01T08:50:39Z",
       "root_message_id": "msg-99c7b4f4f6ce"
     },
     {
@@ -366,8 +366,8 @@
       "participants": [
         "Martin Maechler"
       ],
-      "started": "2009-02-09T09:36:20+01:00",
-      "last_reply": "2009-02-09T09:36:20+01:00",
+      "started": "2009-02-09T08:36:20Z",
+      "last_reply": "2009-02-09T08:36:20Z",
       "root_message_id": "msg-711d565b1825"
     },
     {
@@ -383,8 +383,8 @@
         "Robert W. Hayden",
         "tyler"
       ],
-      "started": "2009-02-14T21:24:15-05:00",
-      "last_reply": "2009-02-15T13:56:57-04:00",
+      "started": "2009-02-15T02:24:15Z",
+      "last_reply": "2009-02-15T17:56:57Z",
       "root_message_id": "msg-dd0e09ea8971"
     },
     {
@@ -394,8 +394,8 @@
       "participants": [
         "Robert W. Hayden"
       ],
-      "started": "2009-02-15T12:30:13-05:00",
-      "last_reply": "2009-02-15T12:30:13-05:00",
+      "started": "2009-02-15T17:30:13Z",
+      "last_reply": "2009-02-15T17:30:13Z",
       "root_message_id": "msg-2eae1e9add8f"
     },
     {
@@ -406,8 +406,8 @@
         "Ista Zahn",
         "William Revelle"
       ],
-      "started": "2009-02-27T20:01:43-05:00",
-      "last_reply": "2009-02-27T21:29:44-06:00",
+      "started": "2009-02-28T01:01:43Z",
+      "last_reply": "2009-02-28T03:29:44Z",
       "root_message_id": "msg-e2f70d9723be"
     },
     {
@@ -418,8 +418,8 @@
         "G. Jay Kerns",
         "Ista Zahn"
       ],
-      "started": "2009-02-28T00:34:27-05:00",
-      "last_reply": "2009-02-28T09:58:57-05:00",
+      "started": "2009-02-28T05:34:27Z",
+      "last_reply": "2009-02-28T14:58:57Z",
       "root_message_id": "msg-504b44428580"
     },
     {
@@ -429,8 +429,8 @@
       "participants": [
         "Ista Zahn"
       ],
-      "started": "2009-02-28T09:53:47-05:00",
-      "last_reply": "2009-02-28T09:53:47-05:00",
+      "started": "2009-02-28T14:53:47Z",
+      "last_reply": "2009-02-28T14:53:47Z",
       "root_message_id": "msg-1f9b684e1d80"
     }
   ]

@@ -8,7 +8,7 @@
       "message_id": "<p06002007c53b3e8c50e7@[134.214.233.74]>",
       "from_name": "Jean lobry",
       "from_email_hash": "92f00cec5507fc339b350dc5deec32274bd68ad5ea0338971fee7b289106e82d",
-      "date": "2008-11-08T14:12:16+01:00",
+      "date": "2008-11-08T13:12:16Z",
       "subject": "[R-sig-teaching] Dartboard",
       "subject_clean": "Dartboard",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<D1B8B0AC6612B944BEEF511B4C8BB14B1B452DC9A2@CETO.ttu.edu>",
       "from_name": "Richardson, Paul",
       "from_email_hash": "f2029c33681396cd094cc98eb2b276f45eaf384d977a06f96d98311edfca6721",
-      "date": "2008-11-13T17:18:24-06:00",
+      "date": "2008-11-13T23:18:24Z",
       "subject": "[R-sig-teaching] R Equivalent of SPSS \"Split File\" and \"AutoRecode\"",
       "subject_clean": "R Equivalent of SPSS \"Split File\" and \"AutoRecode\"",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<20081113233155.GG21149@laplace.reed.edu>",
       "from_name": "Albyn Jones",
       "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
-      "date": "2008-11-13T15:31:55-08:00",
+      "date": "2008-11-13T23:31:55Z",
       "subject": "[R-sig-teaching] R Equivalent of SPSS \"Split File\" and\t\"AutoRecode\"",
       "subject_clean": "R Equivalent of SPSS \"Split File\" and\t\"AutoRecode\"",
       "in_reply_to": "<D1B8B0AC6612B944BEEF511B4C8BB14B1B452DC9A2@CETO.ttu.edu>",
@@ -58,7 +58,7 @@
       "message_id": "<89b6b8c90811132029l24fed6d1k5a7729195106e4db@mail.gmail.com>",
       "from_name": "Yihui Xie",
       "from_email_hash": "b3263763e2f29b4337c33c6161e214c6eb958c6be1faf4a346f202512cc0dcae",
-      "date": "2008-11-14T12:29:32+08:00",
+      "date": "2008-11-14T04:29:32Z",
       "subject": "[R-sig-teaching] R Equivalent of SPSS \"Split File\" and \"AutoRecode\"",
       "subject_clean": "R Equivalent of SPSS \"Split File\" and \"AutoRecode\"",
       "in_reply_to": "<20081113233155.GG21149@laplace.reed.edu>",
@@ -77,7 +77,7 @@
       "message_id": "<f55e7cf50811132135w557689daoe75f0c51502b7b33@mail.gmail.com>",
       "from_name": "Ista Zahn",
       "from_email_hash": "2e4c8f48786fb76b910812e6407745b24d3e39c79018966c1f928657fc9989f2",
-      "date": "2008-11-14T00:35:26-05:00",
+      "date": "2008-11-14T05:35:26Z",
       "subject": "[R-sig-teaching] R Equivalent of SPSS \"Split File\" and \"AutoRecode\"",
       "subject_clean": "R Equivalent of SPSS \"Split File\" and \"AutoRecode\"",
       "in_reply_to": "<89b6b8c90811132029l24fed6d1k5a7729195106e4db@mail.gmail.com>",
@@ -97,7 +97,7 @@
       "message_id": "<40e66e0b0811140752vadc9d40w9a99083fa42c0cee@mail.gmail.com>",
       "from_name": "Douglas Bates",
       "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
-      "date": "2008-11-14T09:52:50-06:00",
+      "date": "2008-11-14T15:52:50Z",
       "subject": "[R-sig-teaching] R Equivalent of SPSS \"Split File\" and \"AutoRecode\"",
       "subject_clean": "R Equivalent of SPSS \"Split File\" and \"AutoRecode\"",
       "in_reply_to": "<20081113233155.GG21149@laplace.reed.edu>",
@@ -116,7 +116,7 @@
       "message_id": "<20081114172651.GA3693@laplace.reed.edu>",
       "from_name": "Albyn Jones",
       "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
-      "date": "2008-11-14T09:26:51-08:00",
+      "date": "2008-11-14T17:26:51Z",
       "subject": "[R-sig-teaching] R Equivalent of SPSS \"Split File\" and\t\"AutoRecode\"",
       "subject_clean": "R Equivalent of SPSS \"Split File\" and\t\"AutoRecode\"",
       "in_reply_to": "<40e66e0b0811140752vadc9d40w9a99083fa42c0cee@mail.gmail.com>",
@@ -136,7 +136,7 @@
       "message_id": "<4923CC0B.5040206@tu-bs.de>",
       "from_name": "markus",
       "from_email_hash": "d5ad76e2340ca0bc8f14c27b0c921dbe89ef11d23d73a41ccec8c52835640fb7",
-      "date": "2008-11-19T09:19:23+01:00",
+      "date": "2008-11-19T08:19:23Z",
       "subject": "[R-sig-teaching] Simulating Data with predefined reg-coefficients and R2",
       "subject_clean": "Simulating Data with predefined reg-coefficients and R2",
       "in_reply_to": null,
@@ -152,7 +152,7 @@
       "message_id": "<40e66e0b0811190625o75a24847s3526c9ead5573647@mail.gmail.com>",
       "from_name": "Douglas Bates",
       "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
-      "date": "2008-11-19T08:25:32-06:00",
+      "date": "2008-11-19T14:25:32Z",
       "subject": "[R-sig-teaching] Simulating Data with predefined reg-coefficients and R2",
       "subject_clean": "Simulating Data with predefined reg-coefficients and R2",
       "in_reply_to": "<4923CC0B.5040206@tu-bs.de>",
@@ -170,7 +170,7 @@
       "message_id": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC61C136847B@LP-EXMBVS10.CO.IHC.COM>",
       "from_name": "Greg Snow",
       "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
-      "date": "2008-11-19T09:29:39-07:00",
+      "date": "2008-11-19T16:29:39Z",
       "subject": "[R-sig-teaching] Simulating Data with predefined reg-coefficients\tand R2",
       "subject_clean": "Simulating Data with predefined reg-coefficients\tand R2",
       "in_reply_to": "<4923CC0B.5040206@tu-bs.de>",
@@ -188,7 +188,7 @@
       "message_id": "<20081119174722.GC21011@laplace.reed.edu>",
       "from_name": "Albyn Jones",
       "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
-      "date": "2008-11-19T09:47:22-08:00",
+      "date": "2008-11-19T17:47:22Z",
       "subject": "[R-sig-teaching] [harriet.baulcombe@sagepub.co.uk: R-sig-teaching]",
       "subject_clean": "[harriet.baulcombe@sagepub.co.uk: R-sig-teaching]",
       "in_reply_to": null,
@@ -204,7 +204,7 @@
       "message_id": "<09BFA95A-4EAD-4C4A-80F6-9F2CDFDD2466@pngp.it>",
       "from_name": "Achaz von Hardenberg",
       "from_email_hash": "0b72214cc9fde5e24cc096f7db641ed40125688676dc264b483e2a501abf6921",
-      "date": "2008-11-21T01:01:17+01:00",
+      "date": "2008-11-21T00:01:17Z",
       "subject": "[R-sig-teaching] Simulating Data with predefined reg-coefficients\tand R2",
       "subject_clean": "Simulating Data with predefined reg-coefficients\tand R2",
       "in_reply_to": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC61C136847B@LP-EXMBVS10.CO.IHC.COM>",
@@ -223,7 +223,7 @@
       "message_id": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC61C23B5743@LP-EXMBVS10.CO.IHC.COM>",
       "from_name": "Greg Snow",
       "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
-      "date": "2008-11-22T08:42:15-07:00",
+      "date": "2008-11-22T15:42:15Z",
       "subject": "[R-sig-teaching] Simulating Data with predefined\treg-coefficients\tand R2",
       "subject_clean": "Simulating Data with predefined\treg-coefficients\tand R2",
       "in_reply_to": "<09BFA95A-4EAD-4C4A-80F6-9F2CDFDD2466@pngp.it>",
@@ -247,8 +247,8 @@
       "participants": [
         "Jean lobry"
       ],
-      "started": "2008-11-08T14:12:16+01:00",
-      "last_reply": "2008-11-08T14:12:16+01:00",
+      "started": "2008-11-08T13:12:16Z",
+      "last_reply": "2008-11-08T13:12:16Z",
       "root_message_id": "msg-767a7257713d"
     },
     {
@@ -262,8 +262,8 @@
         "Richardson, Paul",
         "Yihui Xie"
       ],
-      "started": "2008-11-13T17:18:24-06:00",
-      "last_reply": "2008-11-14T09:26:51-08:00",
+      "started": "2008-11-13T23:18:24Z",
+      "last_reply": "2008-11-14T17:26:51Z",
       "root_message_id": "msg-3a0c9988b65f"
     },
     {
@@ -276,8 +276,8 @@
         "Greg Snow",
         "markus"
       ],
-      "started": "2008-11-19T09:19:23+01:00",
-      "last_reply": "2008-11-22T08:42:15-07:00",
+      "started": "2008-11-19T08:19:23Z",
+      "last_reply": "2008-11-22T15:42:15Z",
       "root_message_id": "msg-9f87531b862f"
     },
     {
@@ -287,8 +287,8 @@
       "participants": [
         "Albyn Jones"
       ],
-      "started": "2008-11-19T09:47:22-08:00",
-      "last_reply": "2008-11-19T09:47:22-08:00",
+      "started": "2008-11-19T17:47:22Z",
+      "last_reply": "2008-11-19T17:47:22Z",
       "root_message_id": "msg-c30700e941a5"
     }
   ]

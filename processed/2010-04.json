@@ -8,7 +8,7 @@
       "message_id": "<l2u4358fd1a1004222123r98f91258o925175b000e89855@mail.gmail.com>",
       "from_name": "Daniel",
       "from_email_hash": "b4984bc654c24fcfff736423605a340e37eb4c1871d0f82374415a09f4f2ec55",
-      "date": "2010-04-23T01:23:26-03:00",
+      "date": "2010-04-23T04:23:26Z",
       "subject": "[R-sig-teaching] Vote concentration Equation",
       "subject_clean": "Vote concentration Equation",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<COL114-W3F6E17D1728DC02823802EF070@phx.gbl>",
       "from_name": "Emilia Olofsson",
       "from_email_hash": "bafae630e382157a99b98194c22006232bd3f31e4bb8641720251541a3816d21",
-      "date": "2010-04-23T21:25:24+02:00",
+      "date": "2010-04-23T19:25:24Z",
       "subject": "[R-sig-teaching] Hi there!",
       "subject_clean": "Hi there!",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<4BD8610C020000A600072017@uct5.uct.usm.maine.edu>",
       "from_name": "AbouEl-Makarim Aboueissa",
       "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
-      "date": "2010-04-28T16:23:40-04:00",
+      "date": "2010-04-28T20:23:40Z",
       "subject": "[R-sig-teaching] Help with Goodness of Fit Test",
       "subject_clean": "Help with Goodness of Fit Test",
       "in_reply_to": null,
@@ -56,7 +56,7 @@
       "message_id": "<4BD9A14C.80006@gmail.com>",
       "from_name": "Chi Ming Yau",
       "from_email_hash": "bebd9dbec8b0e26195894f1251e76a74ec65d4731b29857dacc78afe28d31923",
-      "date": "2010-04-29T08:10:04-07:00",
+      "date": "2010-04-29T15:10:04Z",
       "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 30, Issue 3",
       "subject_clean": "R-sig-teaching Digest, Vol 30, Issue 3",
       "in_reply_to": "<mailman.9.1272535203.4095.r-sig-teaching@r-project.org>",
@@ -78,8 +78,8 @@
       "participants": [
         "Daniel"
       ],
-      "started": "2010-04-23T01:23:26-03:00",
-      "last_reply": "2010-04-23T01:23:26-03:00",
+      "started": "2010-04-23T04:23:26Z",
+      "last_reply": "2010-04-23T04:23:26Z",
       "root_message_id": "msg-7ce87a78fd39"
     },
     {
@@ -89,8 +89,8 @@
       "participants": [
         "Emilia Olofsson"
       ],
-      "started": "2010-04-23T21:25:24+02:00",
-      "last_reply": "2010-04-23T21:25:24+02:00",
+      "started": "2010-04-23T19:25:24Z",
+      "last_reply": "2010-04-23T19:25:24Z",
       "root_message_id": "msg-11fc4ba37050"
     },
     {
@@ -100,8 +100,8 @@
       "participants": [
         "AbouEl-Makarim Aboueissa"
       ],
-      "started": "2010-04-28T16:23:40-04:00",
-      "last_reply": "2010-04-28T16:23:40-04:00",
+      "started": "2010-04-28T20:23:40Z",
+      "last_reply": "2010-04-28T20:23:40Z",
       "root_message_id": "msg-ff3370a5fb1d"
     },
     {
@@ -111,8 +111,8 @@
       "participants": [
         "Chi Ming Yau"
       ],
-      "started": "2010-04-29T08:10:04-07:00",
-      "last_reply": "2010-04-29T08:10:04-07:00",
+      "started": "2010-04-29T15:10:04Z",
+      "last_reply": "2010-04-29T15:10:04Z",
       "root_message_id": "msg-ca965d9d0478"
     }
   ]

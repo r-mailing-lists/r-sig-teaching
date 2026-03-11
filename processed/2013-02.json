@@ -8,7 +8,7 @@
       "message_id": "<CADv2QyHcpaONnd9kdLKxcDf+CJnxXsGhqs63deUidgpKWi=dWQ@mail.gmail.com>",
       "from_name": "Dennis Murphy",
       "from_email_hash": "e4a5a8dffeb093c4485cbdaf24417516db9183251269103e90963889fce45f74",
-      "date": "2013-02-06T17:27:08-08:00",
+      "date": "2013-02-07T01:27:08Z",
       "subject": "[R-sig-teaching] Handbook of Small Datasets",
       "subject_clean": "Handbook of Small Datasets",
       "in_reply_to": "<CADv2QyGSqGVrJSET-Qah2AdagLWiOpy3h5=r_OWKeSPu-Ft6_A@mail.gmail.com>",
@@ -28,7 +28,7 @@
       "message_id": "<73262E30-3677-40A0-A0DF-403323D9A030@yahoo.com>",
       "from_name": "Nicholas Horton",
       "from_email_hash": "9e44a5ab3434adb176b17e0e24804f1ac2dc82061d5d92983e9e78e4057e0d0c",
-      "date": "2013-02-07T08:43:26-05:00",
+      "date": "2013-02-07T13:43:26Z",
       "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 59, Issue 9",
       "subject_clean": "R-sig-teaching Digest, Vol 59, Issue 9",
       "in_reply_to": "<mailman.7.1359543603.2231.r-sig-teaching@r-project.org>",
@@ -46,7 +46,7 @@
       "message_id": "<1360329622.33358.YahooMailNeo@web125806.mail.ne1.yahoo.com>",
       "from_name": "Ali Zanaty",
       "from_email_hash": "65acd645f9ed74fc7721f9ea58469b32335ac44f193ffbf59b7c89913407d9ac",
-      "date": "2013-02-08T05:20:22-08:00",
+      "date": "2013-02-08T13:20:22Z",
       "subject": "[R-sig-teaching] R for Numercal Analysis",
       "subject_clean": "R for Numercal Analysis",
       "in_reply_to": null,
@@ -66,8 +66,8 @@
       "participants": [
         "Dennis Murphy"
       ],
-      "started": "2013-02-06T17:27:08-08:00",
-      "last_reply": "2013-02-06T17:27:08-08:00",
+      "started": "2013-02-07T01:27:08Z",
+      "last_reply": "2013-02-07T01:27:08Z",
       "root_message_id": "msg-13c085f18d14"
     },
     {
@@ -77,8 +77,8 @@
       "participants": [
         "Nicholas Horton"
       ],
-      "started": "2013-02-07T08:43:26-05:00",
-      "last_reply": "2013-02-07T08:43:26-05:00",
+      "started": "2013-02-07T13:43:26Z",
+      "last_reply": "2013-02-07T13:43:26Z",
       "root_message_id": "msg-0a40e4086272"
     },
     {
@@ -88,8 +88,8 @@
       "participants": [
         "Ali Zanaty"
       ],
-      "started": "2013-02-08T05:20:22-08:00",
-      "last_reply": "2013-02-08T05:20:22-08:00",
+      "started": "2013-02-08T13:20:22Z",
+      "last_reply": "2013-02-08T13:20:22Z",
       "root_message_id": "msg-4bab483d345c"
     }
   ]

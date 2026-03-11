@@ -8,7 +8,7 @@
       "message_id": "<51B3160D020000A6000E96D3@uct5.uct.usm.maine.edu>",
       "from_name": "AbouEl-Makarim Aboueissa",
       "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
-      "date": "2013-06-08T11:31:25-04:00",
+      "date": "2013-06-08T15:31:25Z",
       "subject": "[R-sig-teaching] Help with Complex Survey Analysis -- with strata and weight",
       "subject_clean": "Help with Complex Survey Analysis -- with strata and weight",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<CAHDp66Am0Mb_g7mvcGgO84-5yrQQbsy5Fd0PBv3NwNNnVcxU_Q@mail.gmail.com>",
       "from_name": "Steven Stoline",
       "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
-      "date": "2013-06-15T15:13:08-04:00",
+      "date": "2013-06-15T19:13:08Z",
       "subject": "[R-sig-teaching] Papers on consistency results of MLE under fixed left-censoring",
       "subject_clean": "Papers on consistency results of MLE under fixed left-censoring",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<1371324560.42007.YahooMailClassic@web120602.mail.ne1.yahoo.com>",
       "from_name": "Yahoo!",
       "from_email_hash": "22385bbcf078dc17ff188e29e3a1eaf01aad381796219c59b64e7bb0baec2847",
-      "date": "2013-06-15T12:29:20-07:00",
+      "date": "2013-06-15T19:29:20Z",
       "subject": "[R-sig-teaching] Papers on consistency results of MLE under fixed left-censoring",
       "subject_clean": "Papers on consistency results of MLE under fixed left-censoring",
       "in_reply_to": "<CAHDp66Am0Mb_g7mvcGgO84-5yrQQbsy5Fd0PBv3NwNNnVcxU_Q@mail.gmail.com>",
@@ -56,7 +56,7 @@
       "message_id": "<CAHDp66A22CFdeLTKO3AK5HTFUct=rj4LMmBsQo4=WFKMme58gQ@mail.gmail.com>",
       "from_name": "Steven Stoline",
       "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
-      "date": "2013-06-26T09:52:22-04:00",
+      "date": "2013-06-26T13:52:22Z",
       "subject": "[R-sig-teaching] Consistency of asymptotic variances of MLEs under fixed left-censoring",
       "subject_clean": "Consistency of asymptotic variances of MLEs under fixed left-censoring",
       "in_reply_to": null,
@@ -76,8 +76,8 @@
       "participants": [
         "AbouEl-Makarim Aboueissa"
       ],
-      "started": "2013-06-08T11:31:25-04:00",
-      "last_reply": "2013-06-08T11:31:25-04:00",
+      "started": "2013-06-08T15:31:25Z",
+      "last_reply": "2013-06-08T15:31:25Z",
       "root_message_id": "msg-1bc8d0435f29"
     },
     {
@@ -88,8 +88,8 @@
         "Steven Stoline",
         "Yahoo!"
       ],
-      "started": "2013-06-15T15:13:08-04:00",
-      "last_reply": "2013-06-15T12:29:20-07:00",
+      "started": "2013-06-15T19:13:08Z",
+      "last_reply": "2013-06-15T19:29:20Z",
       "root_message_id": "msg-8c3eed41247b"
     },
     {
@@ -99,8 +99,8 @@
       "participants": [
         "Steven Stoline"
       ],
-      "started": "2013-06-26T09:52:22-04:00",
-      "last_reply": "2013-06-26T09:52:22-04:00",
+      "started": "2013-06-26T13:52:22Z",
+      "last_reply": "2013-06-26T13:52:22Z",
       "root_message_id": "msg-d7e47e78f0e9"
     }
   ]

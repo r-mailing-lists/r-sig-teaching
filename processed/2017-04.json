@@ -8,7 +8,7 @@
       "message_id": "<CAE9stmfZVM7mZpokrM-DW2F9k4M2di8uqVt8yj8U2B3LYbqU1g@mail.gmail.com>",
       "from_name": "AbouEl-Makarim Aboueissa",
       "from_email_hash": "57ed60c71c38f5aa7111618f7d433e719fa232f0704722ddb27973d2f4c216c5",
-      "date": "2017-04-18T06:52:11-04:00",
+      "date": "2017-04-18T10:52:11Z",
       "subject": "[R-sig-teaching] Laplace Distribution",
       "subject_clean": "Laplace Distribution",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<22774.2224.740787.520131@stat.math.ethz.ch>",
       "from_name": "Martin Maechler",
       "from_email_hash": "c2c86f22f78a4ecfe6d0e6b4e2be505a3f5beb0470ea88c903688ac536018a98",
-      "date": "2017-04-18T14:38:08+02:00",
+      "date": "2017-04-18T12:38:08Z",
       "subject": "[R-sig-teaching] Laplace Distribution",
       "subject_clean": "Laplace Distribution",
       "in_reply_to": "<CAE9stmfZVM7mZpokrM-DW2F9k4M2di8uqVt8yj8U2B3LYbqU1g@mail.gmail.com>",
@@ -42,7 +42,7 @@
       "message_id": "<CAE9stmeZA8mKMwLj7Ba+ru0MwwNsTMwi6bGZ=TyS3tVXkLR3Jg@mail.gmail.com>",
       "from_name": "AbouEl-Makarim Aboueissa",
       "from_email_hash": "57ed60c71c38f5aa7111618f7d433e719fa232f0704722ddb27973d2f4c216c5",
-      "date": "2017-04-18T08:40:51-04:00",
+      "date": "2017-04-18T12:40:51Z",
       "subject": "[R-sig-teaching] Laplace Distribution",
       "subject_clean": "Laplace Distribution",
       "in_reply_to": "<22774.2224.740787.520131@stat.math.ethz.ch>",
@@ -61,7 +61,7 @@
       "message_id": "<20170418125634.GA37997@lilly.csoft.net>",
       "from_name": "User Hayden",
       "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
-      "date": "2017-04-18T08:56:34-04:00",
+      "date": "2017-04-18T12:56:34Z",
       "subject": "[R-sig-teaching] [abouelmakarim1962@gmail.com: Re: Laplace Distribution]",
       "subject_clean": "[abouelmakarim1962@gmail.com: Re: Laplace Distribution]",
       "in_reply_to": null,
@@ -77,7 +77,7 @@
       "message_id": "<CANV9buRkWEWVZxG2ec=dnFUyqOvpvZ24uTCoLW18sJZgSWijPQ@mail.gmail.com>",
       "from_name": "Jeff Laux",
       "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
-      "date": "2017-04-18T10:48:26-04:00",
+      "date": "2017-04-18T14:48:26Z",
       "subject": "[R-sig-teaching] Laplace Distribution",
       "subject_clean": "Laplace Distribution",
       "in_reply_to": "<CAE9stmeZA8mKMwLj7Ba+ru0MwwNsTMwi6bGZ=TyS3tVXkLR3Jg@mail.gmail.com>",
@@ -97,7 +97,7 @@
       "message_id": "<33B63E65-E776-4605-8814-18682BE0AC92@me.com>",
       "from_name": "David Monterde",
       "from_email_hash": "565d148f4db44410d5ccd479b1716d59d4c142f8f4e572e587770e78f70686ba",
-      "date": "2017-04-20T17:07:45+02:00",
+      "date": "2017-04-20T15:07:45Z",
       "subject": "[R-sig-teaching] About the standard gaussian distribution",
       "subject_clean": "About the standard gaussian distribution",
       "in_reply_to": null,
@@ -113,7 +113,7 @@
       "message_id": "<20170420153003.GA53198@lilly.csoft.net>",
       "from_name": "User Hayden",
       "from_email_hash": "d4fd3d66628f1221886237c1c297ac32719b498d720c76fbaa9bd3545a7a28da",
-      "date": "2017-04-20T11:30:04-04:00",
+      "date": "2017-04-20T15:30:04Z",
       "subject": "[R-sig-teaching] [dmonterde@me.com: About the standard gaussian distribution]",
       "subject_clean": "[dmonterde@me.com: About the standard gaussian distribution]",
       "in_reply_to": null,
@@ -129,7 +129,7 @@
       "message_id": "<CAAmySGPG5L5W=VHrG+btm8QacMbgZK2orRBCDBHF581cYiOR+Q@mail.gmail.com>",
       "from_name": "Michael Weylandt",
       "from_email_hash": "44e8775a589b9ef81880469e200f3cce307c7180b4289ca1696a578afb772b3a",
-      "date": "2017-04-20T10:46:34-05:00",
+      "date": "2017-04-20T15:46:34Z",
       "subject": "[R-sig-teaching] About the standard gaussian distribution",
       "subject_clean": "About the standard gaussian distribution",
       "in_reply_to": "<33B63E65-E776-4605-8814-18682BE0AC92@me.com>",
@@ -147,7 +147,7 @@
       "message_id": "<CAGx1TMBN3h=+9v7UUn7_T7FmEi2GRi2bR6gaApOn11bJqyQD+Q@mail.gmail.com>",
       "from_name": "Richard M. Heiberger",
       "from_email_hash": "4ce810eab8587777db353ea9d997b9e94d9e73af018121f9a3424238038952df",
-      "date": "2017-04-20T13:40:28-04:00",
+      "date": "2017-04-20T17:40:28Z",
       "subject": "[R-sig-teaching] About the standard gaussian distribution",
       "subject_clean": "About the standard gaussian distribution",
       "in_reply_to": "<33B63E65-E776-4605-8814-18682BE0AC92@me.com>",
@@ -171,8 +171,8 @@
         "Jeff Laux",
         "Martin Maechler"
       ],
-      "started": "2017-04-18T06:52:11-04:00",
-      "last_reply": "2017-04-18T10:48:26-04:00",
+      "started": "2017-04-18T10:52:11Z",
+      "last_reply": "2017-04-18T14:48:26Z",
       "root_message_id": "msg-4b810bf7c132"
     },
     {
@@ -182,20 +182,9 @@
       "participants": [
         "User Hayden"
       ],
-      "started": "2017-04-18T08:56:34-04:00",
-      "last_reply": "2017-04-18T08:56:34-04:00",
+      "started": "2017-04-18T12:56:34Z",
+      "last_reply": "2017-04-18T12:56:34Z",
       "root_message_id": "msg-b50a83dabf5f"
-    },
-    {
-      "id": "thread-4b2bcf7b1805",
-      "subject": "[dmonterde@me.com: About the standard gaussian distribution]",
-      "message_count": 1,
-      "participants": [
-        "User Hayden"
-      ],
-      "started": "2017-04-20T11:30:04-04:00",
-      "last_reply": "2017-04-20T11:30:04-04:00",
-      "root_message_id": "msg-4b2bcf7b1805"
     },
     {
       "id": "thread-6b654ebed158",
@@ -206,9 +195,20 @@
         "Michael Weylandt",
         "Richard M. Heiberger"
       ],
-      "started": "2017-04-20T17:07:45+02:00",
-      "last_reply": "2017-04-20T13:40:28-04:00",
+      "started": "2017-04-20T15:07:45Z",
+      "last_reply": "2017-04-20T17:40:28Z",
       "root_message_id": "msg-6b654ebed158"
+    },
+    {
+      "id": "thread-4b2bcf7b1805",
+      "subject": "[dmonterde@me.com: About the standard gaussian distribution]",
+      "message_count": 1,
+      "participants": [
+        "User Hayden"
+      ],
+      "started": "2017-04-20T15:30:04Z",
+      "last_reply": "2017-04-20T15:30:04Z",
+      "root_message_id": "msg-4b2bcf7b1805"
     }
   ]
 }

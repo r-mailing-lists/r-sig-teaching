@@ -8,7 +8,7 @@
       "message_id": "<4BE156E1.B080.00B1.0@gw.muhlenberg.edu>",
       "from_name": "Byungchul Cha",
       "from_email_hash": "563df5eaf37a7efb67321eb1053291ba07c8e2710999dbd6d7eb5bc6b526d545",
-      "date": "2010-05-05T11:30:43-04:00",
+      "date": "2010-05-05T15:30:43Z",
       "subject": "[R-sig-teaching] Creating table from data.frame",
       "subject_clean": "Creating table from data.frame",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<x2m40e66e0b1005050912o56caf28fp1e6608635d7c6ca2@mail.gmail.com>",
       "from_name": "Douglas Bates",
       "from_email_hash": "c908588836123be177df15f4b3132be3a2b4b95c4eaeddcc72b433a3981bb1b3",
-      "date": "2010-05-05T11:12:14-05:00",
+      "date": "2010-05-05T16:12:14Z",
       "subject": "[R-sig-teaching] Creating table from data.frame",
       "subject_clean": "Creating table from data.frame",
       "in_reply_to": "<4BE156E1.B080.00B1.0@gw.muhlenberg.edu>",
@@ -42,7 +42,7 @@
       "message_id": "<q2j4b5c27441005051027x571972f3je100a2e76fed5047@mail.gmail.com>",
       "from_name": "Geoffrey Smith",
       "from_email_hash": "6c829f2d25848af1d52a90e4b27006b9ac3763c053bf3aaf885fb0f7ceb0b753",
-      "date": "2010-05-05T10:27:10-07:00",
+      "date": "2010-05-05T17:27:10Z",
       "subject": "[R-sig-teaching] Creating table from data.frame",
       "subject_clean": "Creating table from data.frame",
       "in_reply_to": "<x2m40e66e0b1005050912o56caf28fp1e6608635d7c6ca2@mail.gmail.com>",
@@ -61,7 +61,7 @@
       "message_id": "<4BE1C8DF.9030401@sciviews.org>",
       "from_name": "Philippe Grosjean",
       "from_email_hash": "71b9dd5d435dd797c88b6e8e80adcc63b4c2764c443f0ceca36f80f3ecda8d9a",
-      "date": "2010-05-05T21:37:03+02:00",
+      "date": "2010-05-05T19:37:03Z",
       "subject": "[R-sig-teaching] Creating table from data.frame",
       "subject_clean": "Creating table from data.frame",
       "in_reply_to": "<4BE156E1.B080.00B1.0@gw.muhlenberg.edu>",
@@ -86,8 +86,8 @@
         "Geoffrey Smith",
         "Philippe Grosjean"
       ],
-      "started": "2010-05-05T11:30:43-04:00",
-      "last_reply": "2010-05-05T21:37:03+02:00",
+      "started": "2010-05-05T15:30:43Z",
+      "last_reply": "2010-05-05T19:37:03Z",
       "root_message_id": "msg-56a6bf4bfd9e"
     }
   ]

@@ -34,7 +34,7 @@
       "message_id": "<CAKe6t22F1QZJGcrxPUDMGQabZ=MUzGNLKo5_+114nWWgpe-W-g@mail.gmail.com>",
       "from_name": "Timothy Bates",
       "from_email_hash": "ffb123f9baccaf6b74db0bf4d17706dacb07ea25d79b547c8886dc6864d3054d",
-      "date": "2026-01-27T21:26:08+13:00",
+      "date": "2026-01-27T08:26:08Z",
       "subject": "[R-sig-teaching] Live online course Introduction to Bayesian Analysis with R",
       "subject_clean": "Live online course Introduction to Bayesian Analysis with R",
       "in_reply_to": "<774b090eb48abf7f33f00c550a7369e0@transmittingscience.com>",
@@ -94,8 +94,8 @@
         "Soledad De Esteban-Trivigno",
         "Timothy Bates"
       ],
-      "started": "2026-01-27T07:50:40+00:00",
-      "last_reply": "2026-01-27T08:27:37+00:00",
+      "started": "2026-01-27T07:50:40Z",
+      "last_reply": "2026-01-27T08:27:37Z",
       "root_message_id": "msg-d4970157dcce"
     }
   ]

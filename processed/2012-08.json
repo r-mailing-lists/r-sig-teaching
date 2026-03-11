@@ -8,7 +8,7 @@
       "message_id": "<7E318EDE-61AF-49D0-8CD7-1EC576B336D0@ppetto.com>",
       "from_name": "Peter Petto",
       "from_email_hash": "d47e836e7ca884c98cf9f5611c9298e833b1a500c501a46a3d2d6c0e29b6555e",
-      "date": "2012-08-07T12:35:50-04:00",
+      "date": "2012-08-07T16:35:50Z",
       "subject": "[R-sig-teaching] looking for accessibility help (blind student)",
       "subject_clean": "looking for accessibility help (blind student)",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<CAFEqCdzOJZoN2QhTtiDqi-R3BRi8D+jjf_TMTtYy3P=w4Khd2A@mail.gmail.com>",
       "from_name": "Greg Snow",
       "from_email_hash": "7e8b90198d8dda6d8bbc636598f3105b18d65713fa78fc3e88cbec77163d50cf",
-      "date": "2012-08-07T12:21:45-06:00",
+      "date": "2012-08-07T18:21:45Z",
       "subject": "[R-sig-teaching] looking for accessibility help (blind student)",
       "subject_clean": "looking for accessibility help (blind student)",
       "in_reply_to": "<7E318EDE-61AF-49D0-8CD7-1EC576B336D0@ppetto.com>",
@@ -42,7 +42,7 @@
       "message_id": "<6C5EFA68-2F3C-4051-BEB4-B799037A9E1C@smith.edu>",
       "from_name": "Nicholas Horton",
       "from_email_hash": "cf176a29de4abfc7da13c6fc418c20e19771b5741537f75c9aee351ac098ab29",
-      "date": "2012-08-09T20:22:29-04:00",
+      "date": "2012-08-10T00:22:29Z",
       "subject": "[R-sig-teaching] Illustrating the case studies in the \"Statistical Sleuth\" using R",
       "subject_clean": "Illustrating the case studies in the \"Statistical Sleuth\" using R",
       "in_reply_to": null,
@@ -58,7 +58,7 @@
       "message_id": "<CABkCotRLL8C54GDkrrz8yvcxgNbZcUz+vjJNPopaZGoJS61V-g@mail.gmail.com>",
       "from_name": "Manuel Spínola",
       "from_email_hash": "c67b4a8f4e027cf75cc3544d4e04791324bee3c4417f2f5edf4561a1da2f995b",
-      "date": "2012-08-12T09:58:06-06:00",
+      "date": "2012-08-12T15:58:06Z",
       "subject": "[R-sig-teaching] Illustrating the case studies in the \"Statistical Sleuth\" using R",
       "subject_clean": "Illustrating the case studies in the \"Statistical Sleuth\" using R",
       "in_reply_to": "<6C5EFA68-2F3C-4051-BEB4-B799037A9E1C@smith.edu>",
@@ -76,7 +76,7 @@
       "message_id": "<50293004.80705@csun.edu>",
       "from_name": "Wayne Smith",
       "from_email_hash": "abb1d287609a9e2b13b674a9b9d3f2fbfc47c1f3fe788b1552b4cd800ab687e3",
-      "date": "2012-08-13T09:49:08-07:00",
+      "date": "2012-08-13T16:49:08Z",
       "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 54, Issue 3",
       "subject_clean": "R-sig-teaching Digest, Vol 54, Issue 3",
       "in_reply_to": "<mailman.9.1344852002.17381.r-sig-teaching@r-project.org>",
@@ -94,7 +94,7 @@
       "message_id": "<20120817052335.2104108etmurxls7@antigowebmail.usp.br>",
       "from_name": "nndsilva at usp.br",
       "from_email_hash": "27c5a2573dad661c96edd4a2b6e869443c32c2577f32667a7e5998b669f4ab32",
-      "date": "2012-08-17T05:23:35-03:00",
+      "date": "2012-08-17T08:23:35Z",
       "subject": "[R-sig-teaching] tank you",
       "subject_clean": "tank you",
       "in_reply_to": null,
@@ -128,7 +128,7 @@
       "message_id": "<50326643.7050004@atsu.edu>",
       "from_name": "Robert Baer",
       "from_email_hash": "ddd5677bd41ce9ccb8239fe4a8cc1ce533091d0e3a66b906fbf82801b2b76509",
-      "date": "2012-08-20T11:30:59-05:00",
+      "date": "2012-08-20T16:30:59Z",
       "subject": "[R-sig-teaching] R exercices",
       "subject_clean": "R exercices",
       "in_reply_to": "<loom.20120818T224548-355@post.gmane.org>",
@@ -147,7 +147,7 @@
       "message_id": "<503267E6.50202@gmail.com>",
       "from_name": "Jeff Laux",
       "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
-      "date": "2012-08-20T12:37:58-04:00",
+      "date": "2012-08-20T16:37:58Z",
       "subject": "[R-sig-teaching] R exercices",
       "subject_clean": "R exercices",
       "in_reply_to": "<50326643.7050004@atsu.edu>",
@@ -167,7 +167,7 @@
       "message_id": "<50326B5F.5040300@atsu.edu>",
       "from_name": "Robert Baer",
       "from_email_hash": "ddd5677bd41ce9ccb8239fe4a8cc1ce533091d0e3a66b906fbf82801b2b76509",
-      "date": "2012-08-20T11:52:47-05:00",
+      "date": "2012-08-20T16:52:47Z",
       "subject": "[R-sig-teaching] R exercices",
       "subject_clean": "R exercices",
       "in_reply_to": "<503267E6.50202@gmail.com>",
@@ -188,7 +188,7 @@
       "message_id": "<50326F70.1030702@gmail.com>",
       "from_name": "Jeff Laux",
       "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
-      "date": "2012-08-20T13:10:08-04:00",
+      "date": "2012-08-20T17:10:08Z",
       "subject": "[R-sig-teaching] R exercices",
       "subject_clean": "R exercices",
       "in_reply_to": "<50326B5F.5040300@atsu.edu>",
@@ -210,7 +210,7 @@
       "message_id": "<CAP01uR=RnCZrq4njS9n0o8cQ8h+qeYScccw5o+Rnoeg2aUkcFQ@mail.gmail.com>",
       "from_name": "Gabor Grothendieck",
       "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
-      "date": "2012-08-20T13:28:54-04:00",
+      "date": "2012-08-20T17:28:54Z",
       "subject": "[R-sig-teaching] R exercices",
       "subject_clean": "R exercices",
       "in_reply_to": "<50326F70.1030702@gmail.com>",
@@ -233,7 +233,7 @@
       "message_id": "<503276C7.4080904@gmail.com>",
       "from_name": "Jeff Laux",
       "from_email_hash": "307dcd48ae31317d01f247414ef2e07966979c1fab21892d5d24bde12b0eb7e2",
-      "date": "2012-08-20T13:41:27-04:00",
+      "date": "2012-08-20T17:41:27Z",
       "subject": "[R-sig-teaching] R exercices",
       "subject_clean": "R exercices",
       "in_reply_to": "<CAP01uR=RnCZrq4njS9n0o8cQ8h+qeYScccw5o+Rnoeg2aUkcFQ@mail.gmail.com>",
@@ -257,7 +257,7 @@
       "message_id": "<BLU0-SMTP131E5B0445ED1FEDA447483ADA00@phx.gbl>",
       "from_name": "Jonathan Cornelissen",
       "from_email_hash": "e9f597a2eeea6b0f17c00463eafe950dca01c55fd724190562df11261f2b1fae",
-      "date": "2012-08-29T14:52:03-05:00",
+      "date": "2012-08-29T19:52:03Z",
       "subject": "[R-sig-teaching] How do you learn/teach R?",
       "subject_clean": "How do you learn/teach R?",
       "in_reply_to": null,
@@ -278,8 +278,8 @@
         "Greg Snow",
         "Peter Petto"
       ],
-      "started": "2012-08-07T12:35:50-04:00",
-      "last_reply": "2012-08-07T12:21:45-06:00",
+      "started": "2012-08-07T16:35:50Z",
+      "last_reply": "2012-08-07T18:21:45Z",
       "root_message_id": "msg-55f3213d74ee"
     },
     {
@@ -290,8 +290,8 @@
         "Manuel Spínola",
         "Nicholas Horton"
       ],
-      "started": "2012-08-09T20:22:29-04:00",
-      "last_reply": "2012-08-12T09:58:06-06:00",
+      "started": "2012-08-10T00:22:29Z",
+      "last_reply": "2012-08-12T15:58:06Z",
       "root_message_id": "msg-e27dfc44cb09"
     },
     {
@@ -301,8 +301,8 @@
       "participants": [
         "Wayne Smith"
       ],
-      "started": "2012-08-13T09:49:08-07:00",
-      "last_reply": "2012-08-13T09:49:08-07:00",
+      "started": "2012-08-13T16:49:08Z",
+      "last_reply": "2012-08-13T16:49:08Z",
       "root_message_id": "msg-e870a636391d"
     },
     {
@@ -312,8 +312,8 @@
       "participants": [
         "nndsilva at usp.br"
       ],
-      "started": "2012-08-17T05:23:35-03:00",
-      "last_reply": "2012-08-17T05:23:35-03:00",
+      "started": "2012-08-17T08:23:35Z",
+      "last_reply": "2012-08-17T08:23:35Z",
       "root_message_id": "msg-1e3087f1f0f5"
     },
     {
@@ -326,8 +326,8 @@
         "Robert Baer",
         "nf grinberg"
       ],
-      "started": "2012-08-18T20:47:07+00:00",
-      "last_reply": "2012-08-20T13:41:27-04:00",
+      "started": "2012-08-18T20:47:07Z",
+      "last_reply": "2012-08-20T17:41:27Z",
       "root_message_id": "msg-b3874bb0f50b"
     },
     {
@@ -337,8 +337,8 @@
       "participants": [
         "Jonathan Cornelissen"
       ],
-      "started": "2012-08-29T14:52:03-05:00",
-      "last_reply": "2012-08-29T14:52:03-05:00",
+      "started": "2012-08-29T19:52:03Z",
+      "last_reply": "2012-08-29T19:52:03Z",
       "root_message_id": "msg-12814146f471"
     }
   ]

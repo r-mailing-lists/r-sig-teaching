@@ -8,7 +8,7 @@
       "message_id": "<83D9E3C5-899E-4C88-9D38-DDA64D6704FA@rpi.edu>",
       "from_name": "Wayne Gray",
       "from_email_hash": "c502d0239ab5838aba32a65811a6cab97a5cb80d1236067ff61a6f750d569e9b",
-      "date": "2011-07-02T15:12:20-04:00",
+      "date": "2011-07-02T19:12:20Z",
       "subject": "[R-sig-teaching] ANOVA questions",
       "subject_clean": "ANOVA questions",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<BFE5F5F2-F2C9-4259-86B0-F45DA58B5ED9@virginia.edu>",
       "from_name": "Michael Kubovy",
       "from_email_hash": "0b15dcc4e4b904d416328a67647d112f774ed7d978d8a8b1619fc1530daca2f6",
-      "date": "2011-07-03T12:34:07-04:00",
+      "date": "2011-07-03T16:34:07Z",
       "subject": "[R-sig-teaching] ANOVA questions",
       "subject_clean": "ANOVA questions",
       "in_reply_to": "<83D9E3C5-899E-4C88-9D38-DDA64D6704FA@rpi.edu>",
@@ -42,7 +42,7 @@
       "message_id": "<CAKuPk6DUN_aR7o2OiJaXdWNDYZxv5rRR5GkTyB8U6-K9Dzwuxg@mail.gmail.com>",
       "from_name": "Manoj Aravind",
       "from_email_hash": "4a14117e0fc3efdb60249fc758beee7fb1417a2747ae8248229e943fbc41b5a8",
-      "date": "2011-07-06T12:49:50+05:30",
+      "date": "2011-07-06T07:19:50Z",
       "subject": "[R-sig-teaching] Odds Ratio for evaluating Diagnostic tests",
       "subject_clean": "Odds Ratio for evaluating Diagnostic tests",
       "in_reply_to": null,
@@ -58,7 +58,7 @@
       "message_id": "<489E61E6-361E-43C8-B578-83B453DD5267@calvin.edu>",
       "from_name": "Randall Pruim",
       "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
-      "date": "2011-07-09T15:26:45-04:00",
+      "date": "2011-07-09T19:26:45Z",
       "subject": "[R-sig-teaching] Plotting the p-value",
       "subject_clean": "Plotting the p-value",
       "in_reply_to": null,
@@ -81,8 +81,8 @@
         "Michael Kubovy",
         "Wayne Gray"
       ],
-      "started": "2011-07-02T15:12:20-04:00",
-      "last_reply": "2011-07-03T12:34:07-04:00",
+      "started": "2011-07-02T19:12:20Z",
+      "last_reply": "2011-07-03T16:34:07Z",
       "root_message_id": "msg-8ddbc1bd7b27"
     },
     {
@@ -92,8 +92,8 @@
       "participants": [
         "Manoj Aravind"
       ],
-      "started": "2011-07-06T12:49:50+05:30",
-      "last_reply": "2011-07-06T12:49:50+05:30",
+      "started": "2011-07-06T07:19:50Z",
+      "last_reply": "2011-07-06T07:19:50Z",
       "root_message_id": "msg-6af72857aba5"
     },
     {
@@ -103,8 +103,8 @@
       "participants": [
         "Randall Pruim"
       ],
-      "started": "2011-07-09T15:26:45-04:00",
-      "last_reply": "2011-07-09T15:26:45-04:00",
+      "started": "2011-07-09T19:26:45Z",
+      "last_reply": "2011-07-09T19:26:45Z",
       "root_message_id": "msg-20a8f59e8c1a"
     }
   ]

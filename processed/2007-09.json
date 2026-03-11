@@ -8,7 +8,7 @@
       "message_id": "<46F0ED24.9040408@gmx.de>",
       "from_name": "Robert Glaß",
       "from_email_hash": "c0441bd25f0ff1a8e179cbdd22118b18b3c1999b43165fd65a4e9323050c9bd4",
-      "date": "2007-09-19T11:34:28+02:00",
+      "date": "2007-09-19T09:34:28Z",
       "subject": "[R-sig-teaching] multinomial logit models",
       "subject_clean": "multinomial logit models",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<20070919150455.31200.qmail@mv.mv.com>",
       "from_name": "Robert W. Hayden",
       "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
-      "date": "2007-09-19T11:04:55-04:00",
+      "date": "2007-09-19T15:04:55Z",
       "subject": "[R-sig-teaching]  multinomial logit models (fwd)",
       "subject_clean": "multinomial logit models (fwd)",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<20070919150840.33177.qmail@mv.mv.com>",
       "from_name": "Robert W. Hayden",
       "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
-      "date": "2007-09-19T11:08:40-04:00",
+      "date": "2007-09-19T15:08:40Z",
       "subject": "[R-sig-teaching] S-Plus?",
       "subject_clean": "S-Plus?",
       "in_reply_to": null,
@@ -56,7 +56,7 @@
       "message_id": "<20070919164057.GC17838@laplace.reed.edu>",
       "from_name": "Albyn Jones",
       "from_email_hash": "7a545d8d4b5cc2d4d525e32a9fc02a59785b3598d84f4a4dd8a14c39328d7073",
-      "date": "2007-09-19T09:40:57-07:00",
+      "date": "2007-09-19T16:40:57Z",
       "subject": "[R-sig-teaching] S-Plus?",
       "subject_clean": "S-Plus?",
       "in_reply_to": "<20070919150840.33177.qmail@mv.mv.com>",
@@ -72,14 +72,25 @@
   ],
   "threads": [
     {
+      "id": "thread-1433c534ae19",
+      "subject": "multinomial logit models",
+      "message_count": 1,
+      "participants": [
+        "Robert Glaß"
+      ],
+      "started": "2007-09-19T09:34:28Z",
+      "last_reply": "2007-09-19T09:34:28Z",
+      "root_message_id": "msg-1433c534ae19"
+    },
+    {
       "id": "thread-a4d157264a16",
       "subject": "multinomial logit models (fwd)",
       "message_count": 1,
       "participants": [
         "Robert W. Hayden"
       ],
-      "started": "2007-09-19T11:04:55-04:00",
-      "last_reply": "2007-09-19T11:04:55-04:00",
+      "started": "2007-09-19T15:04:55Z",
+      "last_reply": "2007-09-19T15:04:55Z",
       "root_message_id": "msg-a4d157264a16"
     },
     {
@@ -90,20 +101,9 @@
         "Albyn Jones",
         "Robert W. Hayden"
       ],
-      "started": "2007-09-19T11:08:40-04:00",
-      "last_reply": "2007-09-19T09:40:57-07:00",
+      "started": "2007-09-19T15:08:40Z",
+      "last_reply": "2007-09-19T16:40:57Z",
       "root_message_id": "msg-3645f11307d7"
-    },
-    {
-      "id": "thread-1433c534ae19",
-      "subject": "multinomial logit models",
-      "message_count": 1,
-      "participants": [
-        "Robert Glaß"
-      ],
-      "started": "2007-09-19T11:34:28+02:00",
-      "last_reply": "2007-09-19T11:34:28+02:00",
-      "root_message_id": "msg-1433c534ae19"
     }
   ]
 }

@@ -8,7 +8,7 @@
       "message_id": "<4A01C815.01BB.00A6.1@usm.maine.edu>",
       "from_name": "AbouEl-Makarim Aboueissa",
       "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
-      "date": "2009-05-06T17:25:42-04:00",
+      "date": "2009-05-06T21:25:42Z",
       "subject": "[R-sig-teaching] Help wanted with R",
       "subject_clean": "Help wanted with R",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<644e1f320905061820w4df08f5ax8c10bb697138c6c4@mail.gmail.com>",
       "from_name": "jim holtman",
       "from_email_hash": "46f979d1a5bf6fa8b5559d3a049add9a0eb45fffc6a219e7401d97ba07ef9a0f",
-      "date": "2009-05-06T21:20:12-04:00",
+      "date": "2009-05-07T01:20:12Z",
       "subject": "[R-sig-teaching] Help wanted with R",
       "subject_clean": "Help wanted with R",
       "in_reply_to": "<4A01C815.01BB.00A6.1@usm.maine.edu>",
@@ -42,7 +42,7 @@
       "message_id": "<AE48B961-35D1-4F47-B77D-EF20103B51DF@gmail.com>",
       "from_name": "Retzer Joe",
       "from_email_hash": "47cd75b41ef1b93378f05491d80f087673d347400d01afcb82657e6104ab4e40",
-      "date": "2009-05-07T19:41:32-05:00",
+      "date": "2009-05-08T00:41:32Z",
       "subject": "[R-sig-teaching] Simple practice problems for R tutorial",
       "subject_clean": "Simple practice problems for R tutorial",
       "in_reply_to": "<f8e6ff050903310724j623763bdt3e3d9933e1954d42@mail.gmail.com>",
@@ -68,7 +68,7 @@
       "message_id": "<9410b37b0905071937o7cec6febw628f75446f413c03@mail.gmail.com>",
       "from_name": "Richard Graham",
       "from_email_hash": "923996662858e617d8ccbd12c8967d63056d77c466dc1b261afcc2cf40e9b55e",
-      "date": "2009-05-07T22:37:30-04:00",
+      "date": "2009-05-08T02:37:30Z",
       "subject": "[R-sig-teaching] Simple practice problems for R tutorial",
       "subject_clean": "Simple practice problems for R tutorial",
       "in_reply_to": "<AE48B961-35D1-4F47-B77D-EF20103B51DF@gmail.com>",
@@ -95,7 +95,7 @@
       "message_id": "<f8e6ff050905072023t6fdb85b1k2811e0b9efaa55fc@mail.gmail.com>",
       "from_name": "hadley wickham",
       "from_email_hash": "78ed178a2a834406115d2917490a5d6eb6217493116357bc9bb8ae3e96968152",
-      "date": "2009-05-07T22:23:44-05:00",
+      "date": "2009-05-08T03:23:44Z",
       "subject": "[R-sig-teaching] Simple practice problems for R tutorial",
       "subject_clean": "Simple practice problems for R tutorial",
       "in_reply_to": "<AE48B961-35D1-4F47-B77D-EF20103B51DF@gmail.com>",
@@ -122,7 +122,7 @@
       "message_id": "<877i0rrbss.fsf@jonasstein.de>",
       "from_name": "Jonas Stein",
       "from_email_hash": "0a6644a809a2f4383b1421fe4dfc123bfeeef567ae971f9ac65a0526e993e49a",
-      "date": "2009-05-08T14:58:43+02:00",
+      "date": "2009-05-08T12:58:43Z",
       "subject": "[R-sig-teaching] R in physics",
       "subject_clean": "R in physics",
       "in_reply_to": null,
@@ -138,7 +138,7 @@
       "message_id": "<68b1e2610905080653j63cd2c02j475cb301b3fa882b@mail.gmail.com>",
       "from_name": "Liviu Andronic",
       "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
-      "date": "2009-05-08T15:53:08+02:00",
+      "date": "2009-05-08T13:53:08Z",
       "subject": "[R-sig-teaching] R in physics",
       "subject_clean": "R in physics",
       "in_reply_to": "<877i0rrbss.fsf@jonasstein.de>",
@@ -156,7 +156,7 @@
       "message_id": "<4A086BAF.01BB.00A6.1@usm.maine.edu>",
       "from_name": "AbouEl-Makarim Aboueissa",
       "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
-      "date": "2009-05-11T18:17:20-04:00",
+      "date": "2009-05-11T22:17:20Z",
       "subject": "[R-sig-teaching] Comparing points on the same regression line",
       "subject_clean": "Comparing points on the same regression line",
       "in_reply_to": null,
@@ -172,7 +172,7 @@
       "message_id": "<4A101355.8020508@ulb.ac.be>",
       "from_name": "mboutsen",
       "from_email_hash": "5e9d5daff9e5b6beeb2a5e32a204eaab396ef28931b9f5dd2321f3594ee6d801",
-      "date": "2009-05-17T15:38:29+02:00",
+      "date": "2009-05-17T13:38:29Z",
       "subject": "[R-sig-teaching] discrepancies between R and stata",
       "subject_clean": "discrepancies between R and stata",
       "in_reply_to": null,
@@ -188,7 +188,7 @@
       "message_id": "<a473abdb0905212233l687a3861w26cfc5f428f191b1@mail.gmail.com>",
       "from_name": "prasun kumar",
       "from_email_hash": "d4f754369fbdd57e7ee8afa2f24fcdee4e6fb6e7e82dd078bc816ecdcf4545c0",
-      "date": "2009-05-21T22:33:22-07:00",
+      "date": "2009-05-22T05:33:22Z",
       "subject": "[R-sig-teaching] regarding PCA",
       "subject_clean": "regarding PCA",
       "in_reply_to": null,
@@ -204,7 +204,7 @@
       "message_id": "<f55e7cf50905220638t17f5930cqd462fe8f211d95ef@mail.gmail.com>",
       "from_name": "Ista Zahn",
       "from_email_hash": "098a31f0cc45d6b90198bf3b75e03deed7c570292be352a10b98aeee4bf7012e",
-      "date": "2009-05-22T09:38:03-04:00",
+      "date": "2009-05-22T13:38:03Z",
       "subject": "[R-sig-teaching] regarding PCA",
       "subject_clean": "regarding PCA",
       "in_reply_to": "<a473abdb0905212233l687a3861w26cfc5f428f191b1@mail.gmail.com>",
@@ -227,8 +227,8 @@
         "AbouEl-Makarim Aboueissa",
         "jim holtman"
       ],
-      "started": "2009-05-06T17:25:42-04:00",
-      "last_reply": "2009-05-06T21:20:12-04:00",
+      "started": "2009-05-06T21:25:42Z",
+      "last_reply": "2009-05-07T01:20:12Z",
       "root_message_id": "msg-00abdfb31692"
     },
     {
@@ -240,8 +240,8 @@
         "Richard Graham",
         "hadley wickham"
       ],
-      "started": "2009-05-07T19:41:32-05:00",
-      "last_reply": "2009-05-07T22:23:44-05:00",
+      "started": "2009-05-08T00:41:32Z",
+      "last_reply": "2009-05-08T03:23:44Z",
       "root_message_id": "msg-dc6fb1da9e31"
     },
     {
@@ -252,8 +252,8 @@
         "Jonas Stein",
         "Liviu Andronic"
       ],
-      "started": "2009-05-08T14:58:43+02:00",
-      "last_reply": "2009-05-08T15:53:08+02:00",
+      "started": "2009-05-08T12:58:43Z",
+      "last_reply": "2009-05-08T13:53:08Z",
       "root_message_id": "msg-d8521e9a6064"
     },
     {
@@ -263,8 +263,8 @@
       "participants": [
         "AbouEl-Makarim Aboueissa"
       ],
-      "started": "2009-05-11T18:17:20-04:00",
-      "last_reply": "2009-05-11T18:17:20-04:00",
+      "started": "2009-05-11T22:17:20Z",
+      "last_reply": "2009-05-11T22:17:20Z",
       "root_message_id": "msg-61464efcde3e"
     },
     {
@@ -274,8 +274,8 @@
       "participants": [
         "mboutsen"
       ],
-      "started": "2009-05-17T15:38:29+02:00",
-      "last_reply": "2009-05-17T15:38:29+02:00",
+      "started": "2009-05-17T13:38:29Z",
+      "last_reply": "2009-05-17T13:38:29Z",
       "root_message_id": "msg-84efdaf387be"
     },
     {
@@ -286,8 +286,8 @@
         "Ista Zahn",
         "prasun kumar"
       ],
-      "started": "2009-05-21T22:33:22-07:00",
-      "last_reply": "2009-05-22T09:38:03-04:00",
+      "started": "2009-05-22T05:33:22Z",
+      "last_reply": "2009-05-22T13:38:03Z",
       "root_message_id": "msg-9df94153f03b"
     }
   ]

@@ -8,7 +8,7 @@
       "message_id": "<CAJXDcw3dsYNUUotztSKY0v4eMAm07t0g7gn2UEpg8Ef73SM3sw@mail.gmail.com>",
       "from_name": "Juan Telleria Ruiz de Aguirre",
       "from_email_hash": "ca943e3695085a5a91fba8eb0ad6514f2b71dfb8a79f78d8505b0c8c23d2d07b",
-      "date": "2020-01-03T11:10:00+01:00",
+      "date": "2020-01-03T10:10:00Z",
       "subject": "[R-sig-teaching] Useful Resources for Teaching R & Basic Statistics",
       "subject_clean": "Useful Resources for Teaching R & Basic Statistics",
       "in_reply_to": "<CAJXDcw0oeGjhuAW_YDhq96OXPJQE4vV6a52uebimXhWFJrGMnw@mail.gmail.com>",
@@ -26,7 +26,7 @@
       "message_id": "<CAJXDcw0nS2u-LwXvE+_h_7uBOjA8rzr_qo+fSJQ3DBz39JgfjQ@mail.gmail.com>",
       "from_name": "Juan Telleria Ruiz de Aguirre",
       "from_email_hash": "ca943e3695085a5a91fba8eb0ad6514f2b71dfb8a79f78d8505b0c8c23d2d07b",
-      "date": "2020-01-03T11:12:11+01:00",
+      "date": "2020-01-03T10:12:11Z",
       "subject": "[R-sig-teaching]  Useful Resources for Teaching R & Basic Statistics",
       "subject_clean": "Useful Resources for Teaching R & Basic Statistics",
       "in_reply_to": "<CAJXDcw3dsYNUUotztSKY0v4eMAm07t0g7gn2UEpg8Ef73SM3sw@mail.gmail.com>",
@@ -45,7 +45,7 @@
       "message_id": "<CAJXDcw3G5H1FCBTxrj5NTfsw+92=nci659fz7uq-DyJMg28jwQ@mail.gmail.com>",
       "from_name": "Juan Telleria Ruiz de Aguirre",
       "from_email_hash": "ca943e3695085a5a91fba8eb0ad6514f2b71dfb8a79f78d8505b0c8c23d2d07b",
-      "date": "2020-01-03T11:16:43+01:00",
+      "date": "2020-01-03T10:16:43Z",
       "subject": "[R-sig-teaching] Teaching GIT Version Control Essentials: IDE & Command Line",
       "subject_clean": "Teaching GIT Version Control Essentials: IDE & Command Line",
       "in_reply_to": null,
@@ -61,7 +61,7 @@
       "message_id": "<CAJXDcw1=-sXhLt++9KRw5901oWmHL4Ec0oN=DjqwiihXEpv02Q@mail.gmail.com>",
       "from_name": "Juan Telleria Ruiz de Aguirre",
       "from_email_hash": "ca943e3695085a5a91fba8eb0ad6514f2b71dfb8a79f78d8505b0c8c23d2d07b",
-      "date": "2020-01-03T11:21:33+01:00",
+      "date": "2020-01-03T10:21:33Z",
       "subject": "[R-sig-teaching] Resources for Teaching R Programming & Basic Statistical Concepts from a Business Perspective",
       "subject_clean": "Resources for Teaching R Programming & Basic Statistical Concepts from a Business Perspective",
       "in_reply_to": null,
@@ -77,7 +77,7 @@
       "message_id": "<CAEZOd2Aq523K6TZaVvpJ+gGw9YFCNa54D7s7R0mjtExgr6b5=Q@mail.gmail.com>",
       "from_name": "Brian Dennis",
       "from_email_hash": "6e85c62f37f8ddec5f3492a2c409c87e4dd03ceffb9bd5cac7a035c9db61d226",
-      "date": "2020-01-04T10:16:19-08:00",
+      "date": "2020-01-04T18:16:19Z",
       "subject": "[R-sig-teaching] R book for teaching math & science in high school",
       "subject_clean": "R book for teaching math & science in high school",
       "in_reply_to": null,
@@ -93,7 +93,7 @@
       "message_id": "<5afa596f-ac84-2ece-afa1-4b0fcb5dfe13@binghamton.edu>",
       "from_name": "Christopher W. Ryan",
       "from_email_hash": "1713305274d2c1816a07f0aa50c9577759f9e9c6829b63a608da0a2c0dd2c647",
-      "date": "2020-01-04T13:57:32-05:00",
+      "date": "2020-01-04T18:57:32Z",
       "subject": "[R-sig-teaching] [External Email] R book for teaching math & science in high school",
       "subject_clean": "[External Email] R book for teaching math & science in high school",
       "in_reply_to": "<CAEZOd2Aq523K6TZaVvpJ+gGw9YFCNa54D7s7R0mjtExgr6b5=Q@mail.gmail.com>",
@@ -111,7 +111,7 @@
       "message_id": "<20200105132247.GA14531@lilly.csoft.net>",
       "from_name": "User Hayden",
       "from_email_hash": "22fa6821856532bb7d9c9c13cdaaf0d35038a9d7b8e0daf14cf332c3a081f6c6",
-      "date": "2020-01-05T08:22:47-05:00",
+      "date": "2020-01-05T13:22:47Z",
       "subject": "[R-sig-teaching] [dr.of.chaos@gmail.com: R book for teaching math & science in high school]",
       "subject_clean": "[dr.of.chaos@gmail.com: R book for teaching math & science in high school]",
       "in_reply_to": null,
@@ -131,8 +131,8 @@
       "participants": [
         "Juan Telleria Ruiz de Aguirre"
       ],
-      "started": "2020-01-03T11:10:00+01:00",
-      "last_reply": "2020-01-03T11:12:11+01:00",
+      "started": "2020-01-03T10:10:00Z",
+      "last_reply": "2020-01-03T10:12:11Z",
       "root_message_id": "msg-054df3bb3c1b"
     },
     {
@@ -142,8 +142,8 @@
       "participants": [
         "Juan Telleria Ruiz de Aguirre"
       ],
-      "started": "2020-01-03T11:16:43+01:00",
-      "last_reply": "2020-01-03T11:16:43+01:00",
+      "started": "2020-01-03T10:16:43Z",
+      "last_reply": "2020-01-03T10:16:43Z",
       "root_message_id": "msg-b7d2061ed918"
     },
     {
@@ -153,8 +153,8 @@
       "participants": [
         "Juan Telleria Ruiz de Aguirre"
       ],
-      "started": "2020-01-03T11:21:33+01:00",
-      "last_reply": "2020-01-03T11:21:33+01:00",
+      "started": "2020-01-03T10:21:33Z",
+      "last_reply": "2020-01-03T10:21:33Z",
       "root_message_id": "msg-f9e9b86efa1a"
     },
     {
@@ -165,8 +165,8 @@
         "Brian Dennis",
         "Christopher W. Ryan"
       ],
-      "started": "2020-01-04T10:16:19-08:00",
-      "last_reply": "2020-01-04T13:57:32-05:00",
+      "started": "2020-01-04T18:16:19Z",
+      "last_reply": "2020-01-04T18:57:32Z",
       "root_message_id": "msg-aa6dcadf24d4"
     },
     {
@@ -176,8 +176,8 @@
       "participants": [
         "User Hayden"
       ],
-      "started": "2020-01-05T08:22:47-05:00",
-      "last_reply": "2020-01-05T08:22:47-05:00",
+      "started": "2020-01-05T13:22:47Z",
+      "last_reply": "2020-01-05T13:22:47Z",
       "root_message_id": "msg-fa7145ed6480"
     }
   ]

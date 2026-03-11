@@ -8,7 +8,7 @@
       "message_id": "<20090702140358.65223.qmail@mv.mv.com>",
       "from_name": "Robert W. Hayden",
       "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
-      "date": "2009-07-02T10:03:58-04:00",
+      "date": "2009-07-02T14:03:58Z",
       "subject": "[R-sig-teaching] purpose of list",
       "subject_clean": "purpose of list",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<20090702141957.69578.qmail@mv.mv.com>",
       "from_name": "Robert W. Hayden",
       "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
-      "date": "2009-07-02T10:19:57-04:00",
+      "date": "2009-07-02T14:19:57Z",
       "subject": "[R-sig-teaching]  Teaching with R website",
       "subject_clean": "Teaching with R website",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<a7d6d2740907020758o5942d8ceq2a5c921fac06e946@mail.gmail.com>",
       "from_name": "Ana Nelson",
       "from_email_hash": "26d41e673f79acb5a7e073c372f90688d1db0b51caa7b275134b04d105980dd4",
-      "date": "2009-07-02T15:58:43+01:00",
+      "date": "2009-07-02T14:58:43Z",
       "subject": "[R-sig-teaching] Teaching with R website",
       "subject_clean": "Teaching with R website",
       "in_reply_to": "<20090702141957.69578.qmail@mv.mv.com>",
@@ -58,7 +58,7 @@
       "message_id": "<4A4CDB5B.7090004@u-paris10.fr>",
       "from_name": "Christophe Genolini",
       "from_email_hash": "188243ef6b743b8d3cdd972d5ac76d36899f18656fb52ce7f6a8f452409f5017",
-      "date": "2009-07-02T18:07:55+02:00",
+      "date": "2009-07-02T16:07:55Z",
       "subject": "[R-sig-teaching] purpose of list",
       "subject_clean": "purpose of list",
       "in_reply_to": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC62126E9E3F@LP-EXMBVS10.CO.IHC.COM>",
@@ -78,7 +78,7 @@
       "message_id": "<20090702212751.1653.qmail@mv.mv.com>",
       "from_name": "Robert W. Hayden",
       "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
-      "date": "2009-07-02T17:27:51-04:00",
+      "date": "2009-07-02T21:27:51Z",
       "subject": "[R-sig-teaching] purpose of list",
       "subject_clean": "purpose of list",
       "in_reply_to": null,
@@ -94,7 +94,7 @@
       "message_id": "<191577b80907021507j63e0d4b1x32da985e261e582e@mail.gmail.com>",
       "from_name": "Antonio P. Ramos",
       "from_email_hash": "e95bafded85d24babdc99d611a276bf89a00bac76499acc1f1f445f966b0e617",
-      "date": "2009-07-02T15:07:33-07:00",
+      "date": "2009-07-02T22:07:33Z",
       "subject": "[R-sig-teaching] purpose of list",
       "subject_clean": "purpose of list",
       "in_reply_to": "<20090702212751.1653.qmail@mv.mv.com>",
@@ -112,7 +112,7 @@
       "message_id": "<68b1e2610907021726t54e75ae5v42af41e02d9e9495@mail.gmail.com>",
       "from_name": "Liviu Andronic",
       "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
-      "date": "2009-07-03T02:26:40+02:00",
+      "date": "2009-07-03T00:26:40Z",
       "subject": "[R-sig-teaching] purpose of list",
       "subject_clean": "purpose of list",
       "in_reply_to": "<191577b80907021507j63e0d4b1x32da985e261e582e@mail.gmail.com>",
@@ -131,7 +131,7 @@
       "message_id": "<4A5B285E.01BB.00A6.1@usm.maine.edu>",
       "from_name": "AbouEl-Makarim Aboueissa",
       "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
-      "date": "2009-07-13T12:28:14-04:00",
+      "date": "2009-07-13T16:28:14Z",
       "subject": "[R-sig-teaching] X-Y charts with gridlines in R",
       "subject_clean": "X-Y charts with gridlines in R",
       "in_reply_to": null,
@@ -147,7 +147,7 @@
       "message_id": "<4A5B8306.01BB.00A6.1@usm.maine.edu>",
       "from_name": "AbouEl-Makarim Aboueissa",
       "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
-      "date": "2009-07-13T18:55:03-04:00",
+      "date": "2009-07-13T22:55:03Z",
       "subject": "[R-sig-teaching] X-Y charts with gridlines in R",
       "subject_clean": "X-Y charts with gridlines in R",
       "in_reply_to": "<644e1f320907131540g53af39feq8e43f62e0aab682b@mail.gmail.com>",
@@ -166,7 +166,7 @@
       "message_id": "<p06002017c68223f2e36e@[192.168.1.11]>",
       "from_name": "Jean lobry",
       "from_email_hash": "92f00cec5507fc339b350dc5deec32274bd68ad5ea0338971fee7b289106e82d",
-      "date": "2009-07-14T14:03:39+02:00",
+      "date": "2009-07-14T12:03:39Z",
       "subject": "[R-sig-teaching] X-Y charts with gridlines in R",
       "subject_clean": "X-Y charts with gridlines in R",
       "in_reply_to": "<mailman.5.1247565603.18918.r-sig-teaching@r-project.org>",
@@ -184,7 +184,7 @@
       "message_id": "<4A714826.1010409@inseed.org>",
       "from_name": "INSEED workshops",
       "from_email_hash": "a7199273dd9d48639fb9926dfb7ace8f1fdde3ae8f2ab9e4951be717f732a325",
-      "date": "2009-07-30T10:13:42+03:00",
+      "date": "2009-07-30T07:13:42Z",
       "subject": "[R-sig-teaching] Workshop on Statistical methods in Epidemiology - November 2009",
       "subject_clean": "Workshop on Statistical methods in Epidemiology - November 2009",
       "in_reply_to": null,
@@ -204,8 +204,8 @@
       "participants": [
         "Robert W. Hayden"
       ],
-      "started": "2009-07-02T10:03:58-04:00",
-      "last_reply": "2009-07-02T10:03:58-04:00",
+      "started": "2009-07-02T14:03:58Z",
+      "last_reply": "2009-07-02T14:03:58Z",
       "root_message_id": "msg-6f6abc9b8d14"
     },
     {
@@ -216,9 +216,20 @@
         "Ana Nelson",
         "Robert W. Hayden"
       ],
-      "started": "2009-07-02T10:19:57-04:00",
-      "last_reply": "2009-07-02T15:58:43+01:00",
+      "started": "2009-07-02T14:19:57Z",
+      "last_reply": "2009-07-02T14:58:43Z",
       "root_message_id": "msg-014ee8e5bf2e"
+    },
+    {
+      "id": "thread-180d06cb8d14",
+      "subject": "purpose of list",
+      "message_count": 1,
+      "participants": [
+        "Christophe Genolini"
+      ],
+      "started": "2009-07-02T16:07:55Z",
+      "last_reply": "2009-07-02T16:07:55Z",
+      "root_message_id": "msg-180d06cb8d14"
     },
     {
       "id": "thread-a2ee9366604a",
@@ -229,20 +240,9 @@
         "Liviu Andronic",
         "Robert W. Hayden"
       ],
-      "started": "2009-07-02T17:27:51-04:00",
-      "last_reply": "2009-07-03T02:26:40+02:00",
+      "started": "2009-07-02T21:27:51Z",
+      "last_reply": "2009-07-03T00:26:40Z",
       "root_message_id": "msg-a2ee9366604a"
-    },
-    {
-      "id": "thread-180d06cb8d14",
-      "subject": "purpose of list",
-      "message_count": 1,
-      "participants": [
-        "Christophe Genolini"
-      ],
-      "started": "2009-07-02T18:07:55+02:00",
-      "last_reply": "2009-07-02T18:07:55+02:00",
-      "root_message_id": "msg-180d06cb8d14"
     },
     {
       "id": "thread-bb6c6df39bbc",
@@ -251,8 +251,8 @@
       "participants": [
         "AbouEl-Makarim Aboueissa"
       ],
-      "started": "2009-07-13T12:28:14-04:00",
-      "last_reply": "2009-07-13T12:28:14-04:00",
+      "started": "2009-07-13T16:28:14Z",
+      "last_reply": "2009-07-13T16:28:14Z",
       "root_message_id": "msg-bb6c6df39bbc"
     },
     {
@@ -262,8 +262,8 @@
       "participants": [
         "AbouEl-Makarim Aboueissa"
       ],
-      "started": "2009-07-13T18:55:03-04:00",
-      "last_reply": "2009-07-13T18:55:03-04:00",
+      "started": "2009-07-13T22:55:03Z",
+      "last_reply": "2009-07-13T22:55:03Z",
       "root_message_id": "msg-651530a4cfc4"
     },
     {
@@ -273,8 +273,8 @@
       "participants": [
         "Jean lobry"
       ],
-      "started": "2009-07-14T14:03:39+02:00",
-      "last_reply": "2009-07-14T14:03:39+02:00",
+      "started": "2009-07-14T12:03:39Z",
+      "last_reply": "2009-07-14T12:03:39Z",
       "root_message_id": "msg-67281139f7ad"
     },
     {
@@ -284,8 +284,8 @@
       "participants": [
         "INSEED workshops"
       ],
-      "started": "2009-07-30T10:13:42+03:00",
-      "last_reply": "2009-07-30T10:13:42+03:00",
+      "started": "2009-07-30T07:13:42Z",
+      "last_reply": "2009-07-30T07:13:42Z",
       "root_message_id": "msg-db74b95c807a"
     }
   ]

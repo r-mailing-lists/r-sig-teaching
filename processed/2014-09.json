@@ -8,7 +8,7 @@
       "message_id": "<CAHDp66AS9PE8t1pSWW2ihwchPuj0wh8usajNbKZv3qLOok8WhQ@mail.gmail.com>",
       "from_name": "Steven Stoline",
       "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
-      "date": "2014-09-09T23:12:21-04:00",
+      "date": "2014-09-10T03:12:21Z",
       "subject": "[R-sig-teaching] length of vectors with tapply",
       "subject_clean": "length of vectors with tapply",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<540FC287.8040203@purdue.edu>",
       "from_name": "Mark Daniel Ward",
       "from_email_hash": "9660c15b92052c1ae502524414654a6571d365b2d3e5844d0a72a5172a130df6",
-      "date": "2014-09-09T23:16:23-04:00",
+      "date": "2014-09-10T03:16:23Z",
       "subject": "[R-sig-teaching] length of vectors with tapply",
       "subject_clean": "length of vectors with tapply",
       "in_reply_to": "<CAHDp66AS9PE8t1pSWW2ihwchPuj0wh8usajNbKZv3qLOok8WhQ@mail.gmail.com>",
@@ -42,7 +42,7 @@
       "message_id": "<CAHDp66CaU3GSKDK4o2o3Y+tjEK5Jt19vKfieVfdJsBFfHPSq6g@mail.gmail.com>",
       "from_name": "Steven Stoline",
       "from_email_hash": "d8cff0543ba4eac7d04448a3e1bd8576c4cda696a5b8cafca4c50fc3bd9174e3",
-      "date": "2014-09-09T23:24:15-04:00",
+      "date": "2014-09-10T03:24:15Z",
       "subject": "[R-sig-teaching] length of vectors with tapply",
       "subject_clean": "length of vectors with tapply",
       "in_reply_to": "<540FC287.8040203@purdue.edu>",
@@ -66,8 +66,8 @@
         "Mark Daniel Ward",
         "Steven Stoline"
       ],
-      "started": "2014-09-09T23:12:21-04:00",
-      "last_reply": "2014-09-09T23:24:15-04:00",
+      "started": "2014-09-10T03:12:21Z",
+      "last_reply": "2014-09-10T03:24:15Z",
       "root_message_id": "msg-6cc56c4fc794"
     }
   ]

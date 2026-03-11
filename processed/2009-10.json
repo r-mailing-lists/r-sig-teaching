@@ -8,7 +8,7 @@
       "message_id": "<4AC72F81.9060209@u-paris10.fr>",
       "from_name": "Christophe Genolini",
       "from_email_hash": "188243ef6b743b8d3cdd972d5ac76d36899f18656fb52ce7f6a8f452409f5017",
-      "date": "2009-10-03T13:03:29+02:00",
+      "date": "2009-10-03T11:03:29Z",
       "subject": "[R-sig-teaching] Rlight, a simplified version of R for very basic tools",
       "subject_clean": "Rlight, a simplified version of R for very basic tools",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<200910072240.n97MeE3X017302@definetti.ddns.uark.edu>",
       "from_name": "Giovanni Petris",
       "from_email_hash": "a8d6ee6436f2dfc5e32ffa3fbe802e40ef839cfd54608c07550b54289ed80d58",
-      "date": "2009-10-07T17:40:14-05:00",
+      "date": "2009-10-07T22:40:14Z",
       "subject": "[R-sig-teaching] Markov chain Monte Carlo",
       "subject_clean": "Markov chain Monte Carlo",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<B37C0A15B8FB3C468B5BC7EBC7DA14CC6218ACC184@LP-EXMBVS10.CO.IHC.COM>",
       "from_name": "Greg Snow",
       "from_email_hash": "d2f9bb4886b25a9f732759fe05a19061c499befbba553fe79bba4cc9f00cec28",
-      "date": "2009-10-12T11:42:50-06:00",
+      "date": "2009-10-12T17:42:50Z",
       "subject": "[R-sig-teaching] Rlight, a simplified version of R for very basic tools",
       "subject_clean": "Rlight, a simplified version of R for very basic tools",
       "in_reply_to": "<4AC72F81.9060209@u-paris10.fr>",
@@ -58,7 +58,7 @@
       "message_id": "<5bfb4a970910161236j2e3f23b1nd3276e87f38886f1@mail.gmail.com>",
       "from_name": "Gautier RENAULT",
       "from_email_hash": "7a0696fb101cdc494455e26736082606b01e6e9f74a3a2f26cb206da074798e9",
-      "date": "2009-10-16T21:36:47+02:00",
+      "date": "2009-10-16T19:36:47Z",
       "subject": "[R-sig-teaching] Breusch-pagan and white test - check homoscedasticity",
       "subject_clean": "Breusch-pagan and white test - check homoscedasticity",
       "in_reply_to": null,
@@ -74,7 +74,7 @@
       "message_id": "<340939.20873.qm@web58904.mail.re1.yahoo.com>",
       "from_name": "Iasonas Lamprianou",
       "from_email_hash": "adc4000e6b6f587081cbb01b701b71b0f2e10f18fd9bd7b9d65e3cde6312df9f",
-      "date": "2009-10-23T00:03:46-07:00",
+      "date": "2009-10-23T07:03:46Z",
       "subject": "[R-sig-teaching] introducing R",
       "subject_clean": "introducing R",
       "in_reply_to": "<mailman.11.1255773602.15803.r-sig-teaching@r-project.org>",
@@ -90,7 +90,7 @@
       "message_id": "<68b1e2610910230135k6822cbfep96632c5fae185d9d@mail.gmail.com>",
       "from_name": "Liviu Andronic",
       "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
-      "date": "2009-10-23T09:35:00+01:00",
+      "date": "2009-10-23T08:35:00Z",
       "subject": "[R-sig-teaching] introducing R",
       "subject_clean": "introducing R",
       "in_reply_to": "<340939.20873.qm@web58904.mail.re1.yahoo.com>",
@@ -109,7 +109,7 @@
       "message_id": "<4AE1EFE4.2020005@usask.ca>",
       "from_name": "Eric Lamb",
       "from_email_hash": "52b848cbf4492040396c521f32ce6e3fbf252d0085ef98898950b41ff2e02a64",
-      "date": "2009-10-23T12:03:16-06:00",
+      "date": "2009-10-23T18:03:16Z",
       "subject": "[R-sig-teaching] introducing R",
       "subject_clean": "introducing R",
       "in_reply_to": "<mailman.11.1256292003.13242.r-sig-teaching@r-project.org>",
@@ -127,7 +127,7 @@
       "message_id": "<971536df0910232041n5154ec29ra5288c5009574e6@mail.gmail.com>",
       "from_name": "Gabor Grothendieck",
       "from_email_hash": "2252aad0894f89a900da56345b1c4e0414e3b441d448c40b473f7149e06e5a05",
-      "date": "2009-10-23T23:41:25-04:00",
+      "date": "2009-10-24T03:41:25Z",
       "subject": "[R-sig-teaching] introducing R",
       "subject_clean": "introducing R",
       "in_reply_to": "<340939.20873.qm@web58904.mail.re1.yahoo.com>",
@@ -146,7 +146,7 @@
       "message_id": "<COL102-W379101E963ED4F9EB790D8CFBC0@phx.gbl>",
       "from_name": "柯洁",
       "from_email_hash": "3a72c308ca4fe14e066abb1f373500f8f7f026720914990a1def38f9a1948bb8",
-      "date": "2009-10-24T23:20:34+08:00",
+      "date": "2009-10-24T15:20:34Z",
       "subject": "[R-sig-teaching] bagging",
       "subject_clean": "bagging",
       "in_reply_to": null,
@@ -162,7 +162,7 @@
       "message_id": "<775826.45781.qm@web58902.mail.re1.yahoo.com>",
       "from_name": "Iasonas Lamprianou",
       "from_email_hash": "adc4000e6b6f587081cbb01b701b71b0f2e10f18fd9bd7b9d65e3cde6312df9f",
-      "date": "2009-10-24T09:15:23-07:00",
+      "date": "2009-10-24T16:15:23Z",
       "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 26, Issue 6",
       "subject_clean": "R-sig-teaching Digest, Vol 26, Issue 6",
       "in_reply_to": "<mailman.9.1256378403.26717.r-sig-teaching@r-project.org>",
@@ -178,7 +178,7 @@
       "message_id": "<68b1e2610910241103v7ac4aea8wc10339f644b22ac2@mail.gmail.com>",
       "from_name": "Liviu Andronic",
       "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
-      "date": "2009-10-24T19:03:51+01:00",
+      "date": "2009-10-24T18:03:51Z",
       "subject": "[R-sig-teaching] bagging",
       "subject_clean": "bagging",
       "in_reply_to": "<COL102-W379101E963ED4F9EB790D8CFBC0@phx.gbl>",
@@ -196,7 +196,7 @@
       "message_id": "<636937452.12522141256523134133.JavaMail.root@huron.cs.uoguelph.ca>",
       "from_name": "Luca Borger",
       "from_email_hash": "c5ae7db59c3ef56e6943cd5b6a477003c6694dec840957f5b8e088688be17d1b",
-      "date": "2009-10-25T22:12:14-04:00",
+      "date": "2009-10-26T02:12:14Z",
       "subject": "[R-sig-teaching] bagging",
       "subject_clean": "bagging",
       "in_reply_to": "<831253314.12521941256523110525.JavaMail.root@huron.cs.uoguelph.ca>",
@@ -217,8 +217,8 @@
         "Christophe Genolini",
         "Greg Snow"
       ],
-      "started": "2009-10-03T13:03:29+02:00",
-      "last_reply": "2009-10-12T11:42:50-06:00",
+      "started": "2009-10-03T11:03:29Z",
+      "last_reply": "2009-10-12T17:42:50Z",
       "root_message_id": "msg-d6eaa2579664"
     },
     {
@@ -228,8 +228,8 @@
       "participants": [
         "Giovanni Petris"
       ],
-      "started": "2009-10-07T17:40:14-05:00",
-      "last_reply": "2009-10-07T17:40:14-05:00",
+      "started": "2009-10-07T22:40:14Z",
+      "last_reply": "2009-10-07T22:40:14Z",
       "root_message_id": "msg-35f7ef64e90e"
     },
     {
@@ -239,8 +239,8 @@
       "participants": [
         "Gautier RENAULT"
       ],
-      "started": "2009-10-16T21:36:47+02:00",
-      "last_reply": "2009-10-16T21:36:47+02:00",
+      "started": "2009-10-16T19:36:47Z",
+      "last_reply": "2009-10-16T19:36:47Z",
       "root_message_id": "msg-d14f01520474"
     },
     {
@@ -252,8 +252,8 @@
         "Iasonas Lamprianou",
         "Liviu Andronic"
       ],
-      "started": "2009-10-23T00:03:46-07:00",
-      "last_reply": "2009-10-23T23:41:25-04:00",
+      "started": "2009-10-23T07:03:46Z",
+      "last_reply": "2009-10-24T03:41:25Z",
       "root_message_id": "msg-b28d6975a6ad"
     },
     {
@@ -263,20 +263,9 @@
       "participants": [
         "Eric Lamb"
       ],
-      "started": "2009-10-23T12:03:16-06:00",
-      "last_reply": "2009-10-23T12:03:16-06:00",
+      "started": "2009-10-23T18:03:16Z",
+      "last_reply": "2009-10-23T18:03:16Z",
       "root_message_id": "msg-617380673901"
-    },
-    {
-      "id": "thread-049baf08df67",
-      "subject": "R-sig-teaching Digest, Vol 26, Issue 6",
-      "message_count": 1,
-      "participants": [
-        "Iasonas Lamprianou"
-      ],
-      "started": "2009-10-24T09:15:23-07:00",
-      "last_reply": "2009-10-24T09:15:23-07:00",
-      "root_message_id": "msg-049baf08df67"
     },
     {
       "id": "thread-6a3fa3080158",
@@ -286,9 +275,20 @@
         "Liviu Andronic",
         "柯洁"
       ],
-      "started": "2009-10-24T23:20:34+08:00",
-      "last_reply": "2009-10-24T19:03:51+01:00",
+      "started": "2009-10-24T15:20:34Z",
+      "last_reply": "2009-10-24T18:03:51Z",
       "root_message_id": "msg-6a3fa3080158"
+    },
+    {
+      "id": "thread-049baf08df67",
+      "subject": "R-sig-teaching Digest, Vol 26, Issue 6",
+      "message_count": 1,
+      "participants": [
+        "Iasonas Lamprianou"
+      ],
+      "started": "2009-10-24T16:15:23Z",
+      "last_reply": "2009-10-24T16:15:23Z",
+      "root_message_id": "msg-049baf08df67"
     },
     {
       "id": "thread-3829a060cc2b",
@@ -297,8 +297,8 @@
       "participants": [
         "Luca Borger"
       ],
-      "started": "2009-10-25T22:12:14-04:00",
-      "last_reply": "2009-10-25T22:12:14-04:00",
+      "started": "2009-10-26T02:12:14Z",
+      "last_reply": "2009-10-26T02:12:14Z",
       "root_message_id": "msg-3829a060cc2b"
     }
   ]

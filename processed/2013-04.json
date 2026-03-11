@@ -8,7 +8,7 @@
       "message_id": "<1365764589.10240.YahooMailNeo@web125806.mail.ne1.yahoo.com>",
       "from_name": "Ali Zanaty",
       "from_email_hash": "65acd645f9ed74fc7721f9ea58469b32335ac44f193ffbf59b7c89913407d9ac",
-      "date": "2013-04-12T04:03:09-07:00",
+      "date": "2013-04-12T11:03:09Z",
       "subject": "[R-sig-teaching] wielbili",
       "subject_clean": "wielbili",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<1365956750.6656.YahooMailClassic@web120605.mail.ne1.yahoo.com>",
       "from_name": "Yahoo!",
       "from_email_hash": "22385bbcf078dc17ff188e29e3a1eaf01aad381796219c59b64e7bb0baec2847",
-      "date": "2013-04-14T09:25:50-07:00",
+      "date": "2013-04-14T16:25:50Z",
       "subject": "[R-sig-teaching] Create and graph a negative skewed distribution (curve)",
       "subject_clean": "Create and graph a negative skewed distribution (curve)",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<CADv2QyGHF5ftT5bXoawJsH=i8+1QwOH3jC=Boqft3aQ2qfjeDg@mail.gmail.com>",
       "from_name": "Dennis Murphy",
       "from_email_hash": "e4a5a8dffeb093c4485cbdaf24417516db9183251269103e90963889fce45f74",
-      "date": "2013-04-14T13:22:34-07:00",
+      "date": "2013-04-14T20:22:34Z",
       "subject": "[R-sig-teaching] Create and graph a negative skewed distribution (curve)",
       "subject_clean": "Create and graph a negative skewed distribution (curve)",
       "in_reply_to": "<1365956750.6656.YahooMailClassic@web120605.mail.ne1.yahoo.com>",
@@ -58,7 +58,7 @@
       "message_id": "<1365972735.46948.YahooMailClassic@web120602.mail.ne1.yahoo.com>",
       "from_name": "Yahoo!",
       "from_email_hash": "22385bbcf078dc17ff188e29e3a1eaf01aad381796219c59b64e7bb0baec2847",
-      "date": "2013-04-14T13:52:15-07:00",
+      "date": "2013-04-14T20:52:15Z",
       "subject": "[R-sig-teaching] create a negative skewed plot (density)",
       "subject_clean": "create a negative skewed plot (density)",
       "in_reply_to": null,
@@ -74,7 +74,7 @@
       "message_id": "<D1ECE5AA-438C-46E3-B8CB-FDD9BC29CEB8@gmail.com>",
       "from_name": "michael.weylandt at gmail.com (R. Michael Weylandt",
       "from_email_hash": "302378f35d16399c7239457e040a11ee7483a70b012a7a6bc3d0de49cf0a2b8a",
-      "date": "2013-04-14T17:02:17-04:00",
+      "date": "2013-04-14T21:02:17Z",
       "subject": "[R-sig-teaching] create a negative skewed plot (density)",
       "subject_clean": "create a negative skewed plot (density)",
       "in_reply_to": "<1365972735.46948.YahooMailClassic@web120602.mail.ne1.yahoo.com>",
@@ -96,8 +96,8 @@
       "participants": [
         "Ali Zanaty"
       ],
-      "started": "2013-04-12T04:03:09-07:00",
-      "last_reply": "2013-04-12T04:03:09-07:00",
+      "started": "2013-04-12T11:03:09Z",
+      "last_reply": "2013-04-12T11:03:09Z",
       "root_message_id": "msg-9073e580f353"
     },
     {
@@ -108,8 +108,8 @@
         "Dennis Murphy",
         "Yahoo!"
       ],
-      "started": "2013-04-14T09:25:50-07:00",
-      "last_reply": "2013-04-14T13:22:34-07:00",
+      "started": "2013-04-14T16:25:50Z",
+      "last_reply": "2013-04-14T20:22:34Z",
       "root_message_id": "msg-d20addc8f044"
     },
     {
@@ -120,8 +120,8 @@
         "Yahoo!",
         "michael.weylandt at gmail.com (R. Michael Weylandt"
       ],
-      "started": "2013-04-14T13:52:15-07:00",
-      "last_reply": "2013-04-14T17:02:17-04:00",
+      "started": "2013-04-14T20:52:15Z",
+      "last_reply": "2013-04-14T21:02:17Z",
       "root_message_id": "msg-48a030e515bf"
     }
   ]

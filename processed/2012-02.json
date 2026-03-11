@@ -8,7 +8,7 @@
       "message_id": "<4F3C2E34020000A6000BB68A@uct5.uct.usm.maine.edu>",
       "from_name": "AbouEl-Makarim Aboueissa",
       "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
-      "date": "2012-02-15T22:14:12-05:00",
+      "date": "2012-02-16T03:14:12Z",
       "subject": "[R-sig-teaching] Shading the solution of quadratic inequality",
       "subject_clean": "Shading the solution of quadratic inequality",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<4F3CC8A3020000A6000BB722@uct5.uct.usm.maine.edu>",
       "from_name": "AbouEl-Makarim Aboueissa",
       "from_email_hash": "305469dce69cddfd2d1f91e664cd14b77519594f4d8893e95ea9fe27082dec95",
-      "date": "2012-02-16T09:13:07-05:00",
+      "date": "2012-02-16T14:13:07Z",
       "subject": "[R-sig-teaching] Shading the solution of quadratic inequality",
       "subject_clean": "Shading the solution of quadratic inequality",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<CAAmySGP--RSpRoXkUKGXJ4bK3_uPz8FJHC6CbU_op4XsWP45pg@mail.gmail.com>",
       "from_name": "R. Michael Weylandt",
       "from_email_hash": "44e8775a589b9ef81880469e200f3cce307c7180b4289ca1696a578afb772b3a",
-      "date": "2012-02-16T09:42:18-05:00",
+      "date": "2012-02-16T14:42:18Z",
       "subject": "[R-sig-teaching] Shading the solution of quadratic inequality",
       "subject_clean": "Shading the solution of quadratic inequality",
       "in_reply_to": "<4F3CC8A3020000A6000BB722@uct5.uct.usm.maine.edu>",
@@ -58,7 +58,7 @@
       "message_id": "<050AD3B5-A863-4951-B83C-6077F5A246A3@calvin.edu>",
       "from_name": "Randall Pruim",
       "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
-      "date": "2012-02-16T10:07:33-05:00",
+      "date": "2012-02-16T15:07:33Z",
       "subject": "[R-sig-teaching] Shading the solution of quadratic inequality",
       "subject_clean": "Shading the solution of quadratic inequality",
       "in_reply_to": "<CAAmySGP--RSpRoXkUKGXJ4bK3_uPz8FJHC6CbU_op4XsWP45pg@mail.gmail.com>",
@@ -77,7 +77,7 @@
       "message_id": "<6E34E3C2-5AAA-44CD-BEE0-9C5BA95BB6AB@calvin.edu>",
       "from_name": "Randall Pruim",
       "from_email_hash": "9b15214c24322683cba4dabdbc9a25158cdce5b2b00fd680a7cc72a557a02673",
-      "date": "2012-02-16T10:11:12-05:00",
+      "date": "2012-02-16T15:11:12Z",
       "subject": "[R-sig-teaching] Shading the solution of quadratic inequality",
       "subject_clean": "Shading the solution of quadratic inequality",
       "in_reply_to": "<050AD3B5-A863-4951-B83C-6077F5A246A3@calvin.edu>",
@@ -101,8 +101,8 @@
       "participants": [
         "AbouEl-Makarim Aboueissa"
       ],
-      "started": "2012-02-15T22:14:12-05:00",
-      "last_reply": "2012-02-15T22:14:12-05:00",
+      "started": "2012-02-16T03:14:12Z",
+      "last_reply": "2012-02-16T03:14:12Z",
       "root_message_id": "msg-386f944dedea"
     },
     {
@@ -114,8 +114,8 @@
         "R. Michael Weylandt",
         "Randall Pruim"
       ],
-      "started": "2012-02-16T09:13:07-05:00",
-      "last_reply": "2012-02-16T10:11:12-05:00",
+      "started": "2012-02-16T14:13:07Z",
+      "last_reply": "2012-02-16T15:11:12Z",
       "root_message_id": "msg-701ec2cfb580"
     }
   ]

@@ -8,7 +8,7 @@
       "message_id": "<db544d280802110019p10a53762ofd37d0c945761a@mail.gmail.com>",
       "from_name": "Amir Sadoddin",
       "from_email_hash": "1bf07ad921c907075306efaf595dff9934d3aec4d0ed57a27eb01337b40e3785",
-      "date": "2008-02-11T11:49:16+03:30",
+      "date": "2008-02-11T08:19:16Z",
       "subject": "[R-sig-teaching] help!",
       "subject_clean": "help!",
       "in_reply_to": null,
@@ -24,7 +24,7 @@
       "message_id": "<20080211161837.59107.qmail@mv.mv.com>",
       "from_name": "Robert W. Hayden",
       "from_email_hash": "7260bbfddc33dc15ee3386c134e437f2ef142bf77ea6db99da27a75d6c2115a1",
-      "date": "2008-02-11T11:18:37-05:00",
+      "date": "2008-02-11T16:18:37Z",
       "subject": "[R-sig-teaching]  help!",
       "subject_clean": "help!",
       "in_reply_to": null,
@@ -40,7 +40,7 @@
       "message_id": "<636F02E33D0C03321E2C53F5@[192.168.0.102]>",
       "from_name": "Tony N. Brown",
       "from_email_hash": "c3ccb62a1d917975463c21e5854ee1571423db961aa1965220b34226ec09cc6e",
-      "date": "2008-02-12T07:30:08-06:00",
+      "date": "2008-02-12T13:30:08Z",
       "subject": "[R-sig-teaching] R-sig-teaching Digest, Vol 13, Issue 2",
       "subject_clean": "R-sig-teaching Digest, Vol 13, Issue 2",
       "in_reply_to": "<mailman.5.1202814001.27804.r-sig-teaching@r-project.org>",
@@ -56,26 +56,26 @@
   ],
   "threads": [
     {
-      "id": "thread-802358585f95",
-      "subject": "help!",
-      "message_count": 1,
-      "participants": [
-        "Robert W. Hayden"
-      ],
-      "started": "2008-02-11T11:18:37-05:00",
-      "last_reply": "2008-02-11T11:18:37-05:00",
-      "root_message_id": "msg-802358585f95"
-    },
-    {
       "id": "thread-716e1d637786",
       "subject": "help!",
       "message_count": 1,
       "participants": [
         "Amir Sadoddin"
       ],
-      "started": "2008-02-11T11:49:16+03:30",
-      "last_reply": "2008-02-11T11:49:16+03:30",
+      "started": "2008-02-11T08:19:16Z",
+      "last_reply": "2008-02-11T08:19:16Z",
       "root_message_id": "msg-716e1d637786"
+    },
+    {
+      "id": "thread-802358585f95",
+      "subject": "help!",
+      "message_count": 1,
+      "participants": [
+        "Robert W. Hayden"
+      ],
+      "started": "2008-02-11T16:18:37Z",
+      "last_reply": "2008-02-11T16:18:37Z",
+      "root_message_id": "msg-802358585f95"
     },
     {
       "id": "thread-be560cda40fb",
@@ -84,8 +84,8 @@
       "participants": [
         "Tony N. Brown"
       ],
-      "started": "2008-02-12T07:30:08-06:00",
-      "last_reply": "2008-02-12T07:30:08-06:00",
+      "started": "2008-02-12T13:30:08Z",
+      "last_reply": "2008-02-12T13:30:08Z",
       "root_message_id": "msg-be560cda40fb"
     }
   ]
