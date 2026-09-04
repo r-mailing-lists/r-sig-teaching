@@ -1,0 +1,36 @@
+{
+  "list": "r-sig-teaching",
+  "description": "",
+  "month": "2026-09",
+  "messages": [
+    {
+      "id": "msg-6428e188f0fa",
+      "message_id": "<CAE9stmfG1ULJdPfckVAxMoFW0KB31pia3kmx0Y+SpP_GLHjj-w@mail.gmail.com>",
+      "from_name": "AbouEl-Makarim Aboueissa",
+      "from_email_hash": "0e2534724001ad358ea9a9a5e54bf3c5e424d8ab415891faf701f24510d27d97",
+      "date": "2026-09-03T11:40:20Z",
+      "subject": "[R-sig-teaching] R companion to Sampling 3rd Ed by STEVEN K. THOMPSON",
+      "subject_clean": "R companion to Sampling 3rd Ed by STEVEN K. THOMPSON",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear All:\n\n\nI am teaching Sampling Methods course this Fall 2026 semester. I am using\nthe textbook\n\n\nSampling 3rd ed by STEVEN K. THOMPSON.\n\n\nI am wondering if someone knows if there exists an R companion to this\ntextbook.\n\n\nIf there is no R companion for this book, does someone have R\ncodes/functions written specifically for this textbook? It would be highly\nappreciated if you send me a copy of these R codes/functions.\n\n\n\nThank you very much for your attention to this matter.\n\n\nWith many thanks\n\nAbou\n\n\n______________________\nAbouEl-Makarim Aboueissa,  PhD\n\nProfessor, Mathematics and Statistics\n\nUniversity of Southern Maine\n\n\n______________________\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\n\nI am teaching Sampling Methods course this Fall 2026 semester. I am using\nthe textbook\n\n\nSampling 3rd ed by STEVEN K. THOMPSON.\n\n\nI am wondering if someone knows if there exists an R compa",
+      "thread_id": "thread-6428e188f0fa",
+      "thread_depth": 0,
+      "month": "2026-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-6428e188f0fa",
+      "subject": "R companion to Sampling 3rd Ed by STEVEN K. THOMPSON",
+      "message_count": 1,
+      "participants": [
+        "AbouEl-Makarim Aboueissa"
+      ],
+      "started": "2026-09-03T11:40:20Z",
+      "last_reply": "2026-09-03T11:40:20Z",
+      "root_message_id": "msg-6428e188f0fa"
+    }
+  ]
+}
