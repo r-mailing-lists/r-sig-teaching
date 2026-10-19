@@ -65,11 +65,14 @@
       "references": [
         "<6C5EFA68-2F3C-4051-BEB4-B799037A9E1C@smith.edu>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120812/77ee6232/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120812/77ee6232/attachment.pl>",
+      "body_plain": "Very useful. Nice work.\n\nBest,\n\nManuel\n\n2012/8/9 Nicholas Horton <nhorton at smith.edu>\n\n> My summer students and I have created a series of files to help describe\n> how to undertake analyses introduced as examples in the Second Edition of\n> the Statistical Sleuth: A Course in Methods of Data Analysis (2002), the\n> excellent text by Fred Ramsey and Dan Schafer.  If you are using this book,\n> or would like to see straightforward ways to undertake analyses in R for\n> intro and intermediate statistics courses, these may be of interest.\n>\n> These files can be found at http://www.math.smith.edu/~nhorton/sleuth\n>\n> We have include both formatted pdf files as well as the original knitr\n> files which were used to generate the output. Knitr is an elegant, flexible\n> and fast means to undertake reproducible analysis and dynamic report\n> generation within R and RStudio.\n>\n> This work leverages efforts undertaken by Project MOSAIC, an NSF-funded\n> initiative to improve the teaching of statistics, calculus, science and\n> computing in the undergraduate curriculum. In particular, we utilize the\n> mosaic package, which was written to simplify the use of R for introductory\n> statistics courses. More information can be found at\n> http://www.mosaic-web.org.\n>\n> We've generated these illustrated analyses for chapters 1-6 plus 9-11 and\n> 13, with more chapters to come.  Comments, suggestions and corrections\n> welcomed.\n>\n> Best wishes for the balance of the summer,\n>\n> Nick\n>\n> Nicholas Horton\n> Department of Mathematics and Statistics, Smith College\n> Clark Science Center, Northampton, MA 01063-0001\n> http://www.math.smith.edu/~nhorton\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \n*Manuel Spínola, Ph.D.*\nInstituto Internacional en Conservación y Manejo de Vida Silvestre\nUniversidad Nacional\nApartado 1350-3000\nHeredia\nCOSTA RICA\nmspinola at una.ac.cr\nmspinola10 at gmail.com\nTeléfono: (506) 2277-3598\nFax: (506) 2237-7036\nPersonal website: Lobito de río <https://sites.google.com/site/lobitoderio/>\nInstitutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Very useful. Nice work.\n\nBest,\n\nManuel\n\n2012/8/9 Nicholas Horton <nhorton at smith.edu>\n\n> My summer students and I have created a series of files to help describe\n> how to undertake analyses introduc",
       "thread_id": "thread-e27dfc44cb09",
       "thread_depth": 1,
-      "month": "2012-08"
+      "month": "2012-08",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120812/77ee6232/attachment.pl"
+      ]
     },
     {
       "id": "msg-e870a636391d",
@@ -262,11 +265,14 @@
       "subject_clean": "How do you learn/teach R?",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120829/be13929b/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120829/be13929b/attachment.pl>",
+      "body_plain": "Hi, \n\nI am conducting a survey on how people learn and teach R. I think the results of the survey could lead to interesting insights that could benefit the R community, and the educational practices in specific. The data and the results of the survey will be shared with everyone.\n\nPlease help us and fill out the survey on http://www.Rcademy.org. It takes less than 5 minutes.\n\nThank you, \n\nJonathan Cornelissen\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi, \n\nI am conducting a survey on how people learn and teach R. I think the results of the survey could lead to interesting insights that could benefit the R community, and the educational practices i",
       "thread_id": "thread-12814146f471",
       "thread_depth": 0,
-      "month": "2012-08"
+      "month": "2012-08",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120829/be13929b/attachment.pl"
+      ]
     }
   ],
   "threads": [

@@ -13,11 +13,14 @@
       "subject_clean": "Power Analysis",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110520/cb2970ee/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110520/cb2970ee/attachment.pl>",
+      "body_plain": "Dear All:\n\n\nI need some help with the Power analysis and sample size determination for the \nChi-Square and Fisher Exact tests.\n \nAny helps will be appreciated.\n\nWith many thanks\nAli\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\n\nI need some help with the Power analysis and sample size determination for the \nChi-Square and Fisher Exact tests.\n \nAny helps will be appreciated.\n\nWith many thanks\nAli\n\n\t[[alternative HT",
       "thread_id": "thread-bc3b1d52616b",
       "thread_depth": 0,
-      "month": "2011-05"
+      "month": "2011-05",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110520/cb2970ee/attachment.pl"
+      ]
     },
     {
       "id": "msg-fcdbbffc92e1",

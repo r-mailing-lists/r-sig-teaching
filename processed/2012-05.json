@@ -31,11 +31,14 @@
       "subject_clean": "Teaching R online",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120506/5a7d4837/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120506/5a7d4837/attachment.pl>",
+      "body_plain": "Dear list members,\n\nIs there any advice on how to teach R online?\n\nIs there a way to work simultaneously on R remotely?\n\nThank you very much in advance.\n\nBest,\n\nManuel\n\n-- \n*Manuel Spínola, Ph.D.*\nInstituto Internacional en Conservación y Manejo de Vida Silvestre\nUniversidad Nacional\nApartado 1350-3000\nHeredia\nCOSTA RICA\nmspinola at una.ac.cr\nmspinola10 at gmail.com\nTeléfono: (506) 2277-3598\nFax: (506) 2237-7036\nPersonal website: Lobito de río <https://sites.google.com/site/lobitoderio/>\nInstitutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear list members,\n\nIs there any advice on how to teach R online?\n\nIs there a way to work simultaneously on R remotely?\n\nThank you very much in advance.\n\nBest,\n\nManuel\n\n-- \n*Manuel Spínola, Ph.D.*\nIns",
       "thread_id": "thread-b56f7f36ed1e",
       "thread_depth": 0,
-      "month": "2012-05"
+      "month": "2012-05",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120506/5a7d4837/attachment.pl"
+      ]
     },
     {
       "id": "msg-50268c990c75",
@@ -47,11 +50,14 @@
       "subject_clean": "Teaching R online",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120507/6c57d944/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120507/6c57d944/attachment.pl>",
+      "body_plain": "Hi Manuel,\n\nYou might want to try out Moodle for this.\n\nRegards,\nSam\n\nOn 7 May 2012 22:00, <r-sig-teaching-request at r-project.org> wrote:\n\n>\n>\n> Message: 1\n> Date: Sun, 6 May 2012 06:57:12 -0600\n> From: Manuel Sp?nola <mspinola10 at gmail.com>\n> To: r-sig-teaching at r-project.org\n> Subject: [R-sig-teaching] Teaching R online\n> Message-ID:\n>        <CABkCotTjMihkW9udxC+J3sMbyvPeu-pYWxSZpgqrb2x8S6vWCg at mail.gmail.com\n> >\n> Content-Type: text/plain\n>\n> Dear list members,\n>\n> Is there any advice on how to teach R online?\n>\n> Is there a way to work simultaneously on R remotely?\n>\n> Thank you very much in advance.\n>\n> Best,\n>\n> Manuel\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi Manuel,\n\nYou might want to try out Moodle for this.\n\nRegards,\nSam\n\nOn 7 May 2012 22:00, <r-sig-teaching-request at r-project.org> wrote:\n\n>\n>\n> Message: 1\n> Date: Sun, 6 May 2012 06:57:12 -0600\n> F",
       "thread_id": "thread-50268c990c75",
       "thread_depth": 0,
-      "month": "2012-05"
+      "month": "2012-05",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120507/6c57d944/attachment.pl"
+      ]
     },
     {
       "id": "msg-5cd54eba2a9f",

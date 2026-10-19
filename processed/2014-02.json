@@ -13,11 +13,14 @@
       "subject_clean": "R codes for Sampling Techniques, 3rd Ed., by William Cochran",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20140218/fba5dd91/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20140218/fba5dd91/attachment.pl>",
+      "body_plain": "Dear All:\n \n \nI am going to teach Sampling Methods course in Fall 2014. I am going to use the book by William Cochran, Sampling Techniques, 3rd Ed.\n \n \nI am wondering if someone have R codes for examples and selected problems given in this textbook.\n \n \nThank you very much in advance.\n \nAbou\n \n \n \n \n==========================\nAbouEl-Makarim Aboueissa, Ph.D.\nAssociate Professor of Statistics\nGraduate Program Coordinator\nDepartment of Mathematics & Statistics\nUniversity of Southern Maine\n96 Falmouth Street\nP.O. Box 9300\nPortland, ME 04104-9300\nUSA\n \n\nTel: (207) 228-8389\nFax: (207) 780-5607\nEmail: aaboueissa at usm.maine.edu\n          aboueiss at yahoo.com\n \nOffice: 301C Payson Smith\n \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n \n \nI am going to teach Sampling Methods course in Fall 2014. I am going to use the book by William Cochran, Sampling Techniques, 3rd Ed.\n \n \nI am wondering if someone have R codes for examp",
       "thread_id": "thread-89b05f9853f6",
       "thread_depth": 0,
-      "month": "2014-02"
+      "month": "2014-02",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20140218/fba5dd91/attachment.pl"
+      ]
     }
   ],
   "threads": [

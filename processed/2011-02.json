@@ -13,11 +13,14 @@
       "subject_clean": "embed an R console into a web-page?",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110222/e0413589/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110222/e0413589/attachment.pl>",
+      "body_plain": "Hello list:\n\nPerhaps this is not the appropriate mailing list for this question...\nI would like to encourage the use R in my statistic courses in an open university (distance learning).  In my webpage, I have written instructions on how to download and install R, how to download the semester's project data file, some basic commands on the console to get certain things done (descriptive statistics, linear regression, anova, etc.).  However, I find that some of my students get all tangled up in the process of setting up R and reading in the data files.  So my question is:\n\nIs there a way to \"embed\" an R console into a webpage, where the user can type in the commands and get instant results?  \n\nThanks and Regards,\n\njose romero\n\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello list:\n\nPerhaps this is not the appropriate mailing list for this question...\nI would like to encourage the use R in my statistic courses in an open university (distance learning).  In my webpage",
       "thread_id": "thread-eff0465d3a47",
       "thread_depth": 0,
-      "month": "2011-02"
+      "month": "2011-02",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110222/e0413589/attachment.pl"
+      ]
     },
     {
       "id": "msg-bad180ad9a30",

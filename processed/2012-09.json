@@ -31,11 +31,14 @@
       "subject_clean": "Data and example R code for Statistical Analysis and Data Display",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120915/b4dbb88e/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120915/b4dbb88e/attachment.pl>",
+      "body_plain": "I would like to share with you changes in the R package HH for use with\nmy book with Burt Holland, Statistical Analysis and Data Display\n(Springer, ISBN 0-387-40270-5).  The current version HH_2.3-18 has two\nmajor changes.  All datasets in the book (for both examples and\nexercises) are now available using the R convention data(datasetname).\nAll R code for all examples in the book are now accessible in the HH\npackage in files named scripts/Chxx-R.r\n\nThe data in earlier versions of the HH package used a different\nconvention (described in the book's appendix).  Previously the R code\nwas available only in a downloaded file independent of the R package.\n\nHere is the description of the package:\n\nDescription: Support software for Statistical Analysis and Data\n        Display (Springer, ISBN 0-387-40270-5).  This contemporary\n        presentation of statistical methods features extensive use of\n        graphical displays for exploring data and for displaying the\n        analysis. The authors demonstrate how to analyze data---showing\n        code, graphics, and accompanying computer listings---for all the\n        methods they cover. They emphasize how to construct and\n        interpret graphs, discuss principles of graphical design, and\n        show how accompanying traditional tabular results are used to\n        confirm the visual impressions derived directly from the\n        graphs. Many of the graphical formats are novel and appear\n        here for the first time in print. All chapters have exercises.\n\nRichard M. Heiberger\nProfessor of Statistics\nTemple University\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I would like to share with you changes in the R package HH for use with\nmy book with Burt Holland, Statistical Analysis and Data Display\n(Springer, ISBN 0-387-40270-5).  The current version HH_2.3-18 ",
       "thread_id": "thread-260195ece7c1",
       "thread_depth": 0,
-      "month": "2012-09"
+      "month": "2012-09",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120915/b4dbb88e/attachment.pl"
+      ]
     }
   ],
   "threads": [

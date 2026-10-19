@@ -13,11 +13,14 @@
       "subject_clean": "Lecture Slides (Power Point)",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100911/5254d942/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100911/5254d942/attachment.pl>",
+      "body_plain": "Dear R Users:\n \nI am going to teach two courses: Probability (Fall 2010) and Statistics (Spring 2011). I am using the textbook \"Mathematical Statistics with Applications\" 7th edition by Dennis Wackerly, William Mendenhall and Richard Scheaffer. I am wondering if someone has Lecture Slides (Power Point slides) based on this textbook.\n \nThank you all so much for your attention to this matter.\n \nWith best regards,\n \nAbou\n \n \n \n \n==========================\nAbouEl-Makarim Aboueissa, Ph.D.\nAssistant Professor of Statistics\nGraduate Program Director (Coordinator)\nDepartment of Mathematics & Statistics\nUniversity of Southern Maine\n96 Falmouth Street\nP.O. Box 9300\nPortland, ME 04104-9300\nUSA\n \n\nTel: (207) 228-8389\nFax: (207) 780-5607\nEmail: aaboueissa at usm.maine.edu\n          aboueiss at yahoo.com\n \nWeb address:  http://www.usm.maine.edu/~aaboueissa/\n \nOffice: 301C Payson Smith\n \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R Users:\n \nI am going to teach two courses: Probability (Fall 2010) and Statistics (Spring 2011). I am using the textbook \"Mathematical Statistics with Applications\" 7th edition by Dennis Wackerl",
       "thread_id": "thread-ab2ae0a592bb",
       "thread_depth": 0,
-      "month": "2010-09"
+      "month": "2010-09",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100911/5254d942/attachment.pl"
+      ]
     },
     {
       "id": "msg-416ad00c7615",
@@ -102,11 +105,14 @@
         "<AANLkTi=uNjT+8AHrzXVreT1b-VDQ-J3QMVu4eApVEA9n@mail.gmail.com>",
         "<1285144561.2812.12.camel@desktop.localdomain>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100922/381d78a2/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100922/381d78a2/attachment.pl>",
+      "body_plain": "For my personal programming, I find using with( ) is safer then attach( )\nand quicker then $.\nFor my teaching, I usually try my students to be capable of doing things\n\"the hard way\" so they understand what's under the hood, and only then\nintroduce then to the shortcuts. Thus, I recommend introducing with( ) after\nthey are familiar with $ or [[ ]], but avoid attach( ).\n\nJonathan\n\n\n-- \nJonathan Rosenblatt\nwww.john-ros.com\n\nOn Wed, Sep 22, 2010 at 10:36 AM, Gavin Simpson <gavin.simpson at ucl.ac.uk>wrote:\n\n> On Tue, 2010-09-21 at 21:34 -0700, Joshua Wiley wrote:\n> > Hi all,\n> >\n> > I am wondering if anyone teaches the attach function to new students\n> > and if so, why?\n>\n> I don't use attach() at all; too easy to make mistakes that are\n> difficult to track down. I tend not to use $ either as that encourages\n> people to use it to go fiddling in the bowels of other lists (objects);\n> model$residuals might be OK for lm() models (though not if you've used\n> na.exclude for example) but students might be surprised with what they\n> get with more complex modelling functions with different residuals.\n>\n> If I was really teaching R, I would mention attach() and then show why\n> it is bad so I've dealt with the issue on my terms.\n>\n> G\n>\n> > I have never taught a class using R, but in small tutorials and\n> > providing direct help, I have run across this issue several times.  I\n> > have always avoided it, but a couple of times, students had learned to\n> > use it in a class (though without much detail) and were rather grumpy\n> > with me for using full variable names or with().  New converts,\n> > particularly from GUIs like SPSS, already tend to be leery of R, and I\n> > hate to make working at the command line more onerous since any typing\n> > is more than they are used to, but at the same time a discussion of\n> > environments, which I think is necessary to avoid trouble with attach,\n> > does not seem like beginner material either.\n> >\n> > I have wondered about this many times, but was just reminded again by\n> > an R-help post.\n> >\n> > Thanks,\n> >\n> > Josh\n> >\n>\n> --\n> %~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%\n>  Dr. Gavin Simpson             [t] +44 (0)20 7679 0522\n>  ECRC, UCL Geography,          [f] +44 (0)20 7679 0565\n>  Pearson Building,             [e] gavin.simpsonATNOSPAMucl.ac.uk\n>  Gower Street, London          [w] http://www.ucl.ac.uk/~ucfagls/\n>  UK. WC1E 6BT.                 [w] http://www.freshwaters.org.uk\n> %~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "For my personal programming, I find using with( ) is safer then attach( )\nand quicker then $.\nFor my teaching, I usually try my students to be capable of doing things\n\"the hard way\" so they understand",
       "thread_id": "thread-416ad00c7615",
       "thread_depth": 2,
-      "month": "2010-09"
+      "month": "2010-09",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100922/381d78a2/attachment.pl"
+      ]
     },
     {
       "id": "msg-8b018c755e2a",
@@ -161,11 +167,14 @@
       "references": [
         "<A3C9773B-3BEC-495A-87B9-7EBB22FB3B6E@stat.ucla.edu>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100922/477c537e/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100922/477c537e/attachment.pl>",
+      "body_plain": "You may also want to consider using Deducer ( http://www.deducer.org ). In addition to the GUI, it contains a series of wrapper functions in which variable names can be written directly. For example:\n\nCorrelation Matrix:\ncor.matrix(variables=d(mpg,cyl,disp,hp), data=mtcars)\n\nWelch ANOVA:\nk.sample.test(formula=d(mpg,disp) ~ cyl,data=mtcars,test=oneway.test)\n\nContingency table:\ncontingency.tables(cyl,am,stratum.var=vs,data=mtcars)\n\n\nIan\n\nBegin forwarded message:\n\n> From: Ian Fellows <ian.fellows at stat.ucla.edu>\n> Date: September 22, 2010 8:12:13 AM PDT\n> To: Douglas Bates <bates at stat.wisc.edu>\n> Subject: Re: [R-sig-teaching] pros/cons of teaching attach()\n> \n> You may also want to consider using Deducer ( http://www.deducer.org ). In addition to the GUI, it contains a series of wrapper functions in which variable names can be written directly. For example:\n> \n> Correlation Matrix:\n> cor.matrix(variables=d(mpg,cyl,disp,hp), data=mtcars)\n> \n> Welch ANOVA:\n> k.sample.test(formula=d(mpg,disp) ~ cyl,data=mtcars,test=oneway.test)\n> \n> Contingency table:\n> contingency.tables(cyl,am,stratum.var=vs,data=mtcars)\n> \n> \n> Ian\n> \n> \n> On Sep 22, 2010, at 5:10 AM, Douglas Bates wrote:\n> \n>> On Wed, Sep 22, 2010 at 4:04 AM, Joshua Wiley <jwiley.psych at gmail.com> wrote:\n>>> Thanks to everyone for your thoughtful replies.  I think I am inclined\n>>> not to use attach, but to bring it up and briefly mention some of the\n>>> mistakes that are easy to make.  If students already know/use attach,\n>>> it will at least be clear why I do not use it, and for students\n>>> unfamiliar with it, they should not be tempted to start.\n>>> \n>>> Thanks again for all the responses!\n>> \n>> I avoid teaching attach() and discourage its use if the students have\n>> already seen it.  I do teach both with and within (with provides\n>> read-only access, within provides read-write access to the variable\n>> names in a data frame or a list).  As mentioned in an earlier reply in\n>> this thread, the use of extractor functions, like residuals() or\n>> fitted() or coef(), should be preferred to reaching inside a data\n>> object and grabbing a component that may or may not continue to be\n>> defined in future versions,\n>> \n>> The supplementary material on R that I use in a first-year grad course\n>> on applied statistics is available, for this semester, at\n>> www.stat.wisc.edu/~st849-1/Rnotes  My approach to data organization is\n>> shown in the \"Introduction to R\".\n>> \n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>> \n> \n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "You may also want to consider using Deducer ( http://www.deducer.org ). In addition to the GUI, it contains a series of wrapper functions in which variable names can be written directly. For example:\n",
       "thread_id": "thread-d584cb0c622e",
       "thread_depth": 0,
-      "month": "2010-09"
+      "month": "2010-09",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100922/477c537e/attachment.pl"
+      ]
     },
     {
       "id": "msg-703a0ab12ebf",
@@ -366,11 +375,14 @@
         "<B37C0A15B8FB3C468B5BC7EBC7DA14CC633CA5BBC8@LP-EXMBVS10.CO.IHC.COM>",
         "<4C9D255E.1090709@waikato.ac.nz>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100924/fbf3b323/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100924/fbf3b323/attachment.pl>",
+      "body_plain": "On Fri, Sep 24, 2010 at 6:25 PM, Murray Jorgensen <maj at waikato.ac.nz> wrote:\n\n> When will I ever learn to proof-read my emails?!\n> =============\n> I think what Greg sayS here is the \"official wisdom\" and it leads to more\n> future-proofED code as the structure of various objects can change in new\n> versions of R.\n>\n>\n> OTOH the structure of a kind of object can always be explored with str(),\n> but it may not be easy to find out what extractor functions are available\n> for the object.\n>\n>\nTry this using builtin data.frame, BOD, to find methods can be applied to\nfm:\n\nfm <- lm(demand ~ Time, BOD)\nmethods(class = class(fm))\n\n-- \nStatistics & Software Consulting\nGKX Group, GKX Associates Inc.\ntel: 1-877-GKX-GROUP\nemail: ggrothendieck at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "On Fri, Sep 24, 2010 at 6:25 PM, Murray Jorgensen <maj at waikato.ac.nz> wrote:\n\n> When will I ever learn to proof-read my emails?!\n> =============\n> I think what Greg sayS here is the \"official wisdo",
       "thread_id": "thread-416ad00c7615",
       "thread_depth": 5,
-      "month": "2010-09"
+      "month": "2010-09",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100924/fbf3b323/attachment.pl"
+      ]
     },
     {
       "id": "msg-f148998b4d40",

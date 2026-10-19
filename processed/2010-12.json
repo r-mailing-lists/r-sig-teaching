@@ -20,11 +20,14 @@
         "<4CD08B29.6060101@waikato.ac.nz>",
         "<AANLkTimDDAKHyc-O0A7NfMQ9G_zvY9uLgbDqmzkARmh=@mail.gmail.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101206/546d0b45/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101206/546d0b45/attachment.pl>",
+      "body_plain": "I use the select.list when I have welldefined the paths and the fix function when not\nI start idetifyind the unit, and then the rest of the path:\n\n   unit   <- select.list(paste(letters,\":/\",sep=\"\"))\n   paths <- c(\"Projects/Data/\", \"MyPenDrive/Projects/Data\")\n   path  <- select.list(paths)\n   path  <- paste(unit,path,sep=\"\")\n\nSo I can work with the same program in any computer using my pendrive, or in my computer using my own path.\n\nIf there is not a fixed path:\n\n   path <- \"c:/new path/\"\n   fix(path)\n\nYou can use the select-list function to choose between different platforms, (Linux, Mac, Windows):\n\n   OS   <- select.list(\"Lunix,\"Mac\",\"Windows\")\n   if (OS==\"Linux\") then { # use the select.list function with paths in Linux format (//users//) }\n   if (OS==\"Windows\") then { # use the select.list function with paths in Linux format (c:/) }\n\nSorry by my english,\n\ndavid\n \nEl 02/11/2010, a las 23:13, Hadley Wickham escribió:\n\n>> Actually I find a hard-coded path *especially* useful when I'm using more\n>> than one computer as it reminds me of what directory I'm suppose to be\n>> working in.\n>> \n>> I write code like\n>> \n>> wbf =  #\"C:\\\\Files\\\\Consulting\\\\Cilla\\\\Wetaboxes 1.7.09.csv\"\n>>  \"C:\\\\Users\\\\maj\\\\Documents\\\\Consulting\\\\Cilla\\\\Wetaboxes 1.7.09.csv\"\n>> longterm = read.csv(wbf,header=TRUE)\n>> \n>> and move the # around depending on what computer I'm on.\n> \n> But that's exactly what the idea of a working directory is to avoid.\n> Just set all paths relative to the R file, and then set the working\n> directory (or use source + chdir = T) and you're golden.  Admittedly\n> this works best from the command line, where the directory you start R\n> from becomes the working directory.\n> \n> Hadley\n> \n> -- \n> Assistant Professor / Dobelman Family Junior Chair\n> Department of Statistics / Rice University\n> http://had.co.nz/\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\n\ndavid monterde > 678 374 830 > dmonterde at me.com\nLo difícil se hace. Lo imposible se intenta\n\n\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I use the select.list when I have welldefined the paths and the fix function when not\nI start idetifyind the unit, and then the rest of the path:\n\n   unit   <- select.list(paste(letters,\":/\",sep=\"\"))\n",
       "thread_id": "thread-d562510cbd11",
       "thread_depth": 0,
-      "month": "2010-12"
+      "month": "2010-12",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101206/546d0b45/attachment.pl"
+      ]
     },
     {
       "id": "msg-3fc533ebb87d",
@@ -60,11 +63,14 @@
       "subject_clean": "adding plus/minus 1 standard devaition into each bar in cluster bar chart",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101211/75436d6e/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101211/75436d6e/attachment.pl>",
+      "body_plain": "Dear All R users:\n \nI hope that this message finds all of you well.\n \nCurrently, I am teaching an undergraduate course in statistics. \n \nIf possible, Could you please help me out how to add plus/minus 1 standard \ndeviation added to each bar into R cluster bar chart.\n \nYou can use the following artificial data. \n \ndata cat 1 cat 2\n23     1      1\n45     1      1\n34     1      1\n5      1      1\n32     1      1\n44     1      1\n3      2      1\n1      2      1\n2      2      1\n3      2      1\n4      2      1\n5      1      2\n6      1      2\n7      1      2\n8      1      2\n544    2      2\n78     2      2\n543    2      2\n34     2      2\n89     2      2\n9      1      3\n43     1      3\n23     1      3\n45     1      3\n7      1      3\n5      1      3\n7      1      3\n6      2      3\n867    2      3\n3      2      3\n4      2      3\n5      2      3\n6      2      3\n7      2      3\n8      2      3\n9      2      3\n \nI need to create a bar chart for the mean of data column for each category. I \nknow how to create the cluster bar chart. But I need your help with how to add \nplus/minus 1 standard deviation into each bar.\n \nThank you so much for your helps and for your attention to this matter, and I \nlook forward to hearing from you.\n \n \nRegards,\n \nzanaty\n\n\n      \n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All R users:\n \nI hope that this message finds all of you well.\n \nCurrently, I am teaching an undergraduate course in statistics. \n \nIf possible, Could you please help me out how to add plus/minus",
       "thread_id": "thread-55406f52a4ee",
       "thread_depth": 0,
-      "month": "2010-12"
+      "month": "2010-12",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101211/75436d6e/attachment.pl"
+      ]
     },
     {
       "id": "msg-fae0e90614e1",
@@ -78,11 +84,14 @@
       "references": [
         "<323228.98484.qm@web59516.mail.ac4.yahoo.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101213/62d87d9a/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101213/62d87d9a/attachment.pl>",
+      "body_plain": "In Michael Crawley's \"The R Book\" (which I can highly recommend for teaching undergraduate statistics) the author proposes a function that adds the standard errors with the line function. The function has three arguments: The means, the standard errors, and the bar labels. For a reproducible dataset such as:\n\ndat1 <- data.frame(income = c((2000 + 500*rnorm(10)),(2500 + 500*rnorm(10))), gender = rep(c(\"m\",\"f\"),c(10,10)))\n\nwith\n\nybar <- tapply(dat1$income, dat1$gender, mean)\nse <- tapply(dat1$income, dat1$gender, sd)/10\nlabels <- as.character(levels(dat1$gender))\n\nas the means, se, and labels, respectively\n\nthe function is:\n\nerror.bars<-function(yv,z,nn) {\nxv<-\nbarplot(yv,ylim=c(0,(max(yv)+max(z))),names=nn,ylab=deparse(substitute(yv)\n))\ng=(max(xv)-min(xv))/50\nfor (i in 1:length(xv)) {\nlines(c(xv[i],xv[i]),c(yv[i]+z[i],yv[i]-z[i]))\nlines(c(xv[i]-g,xv[i]+g),c(yv[i]+z[i], yv[i]+z[i]))\nlines(c(xv[i]-g,xv[i]+g),c(yv[i]-z[i], yv[i]-z[i]))\n}}\n\nwhich can be used after plotting the data:\n\nbarplot(ybar)\nerror.bars(ybar, se, labels)\n\n\nZeno\n\n\n-----Original Message-----\nFrom: r-sig-teaching-bounces at r-project.org on behalf of Ali Zanaty\nSent: Sat 12/11/2010 3:43 PM\nTo: r-sig-teaching at r-project.org\nSubject: [R-sig-teaching] adding plus/minus 1 standard devaition into eachbar in cluster bar chart\n \nDear All R users:\n \nI hope that this message finds all of you well.\n \nCurrently, I am teaching an undergraduate course in statistics. \n \nIf possible, Could you please help me out how to add plus/minus 1 standard \ndeviation added to each bar into R cluster bar chart.\n \nYou can use the following artificial data. \n \ndata cat 1 cat 2\n23     1      1\n45     1      1\n34     1      1\n5      1      1\n32     1      1\n44     1      1\n3      2      1\n1      2      1\n2      2      1\n3      2      1\n4      2      1\n5      1      2\n6      1      2\n7      1      2\n8      1      2\n544    2      2\n78     2      2\n543    2      2\n34     2      2\n89     2      2\n9      1      3\n43     1      3\n23     1      3\n45     1      3\n7      1      3\n5      1      3\n7      1      3\n6      2      3\n867    2      3\n3      2      3\n4      2      3\n5      2      3\n6      2      3\n7      2      3\n8      2      3\n9      2      3\n \nI need to create a bar chart for the mean of data column for each category. I \nknow how to create the cluster bar chart. But I need your help with how to add \nplus/minus 1 standard deviation into each bar.\n \nThank you so much for your helps and for your attention to this matter, and I \nlook forward to hearing from you.\n \n \nRegards,\n \nzanaty\n\n\n      \n\t[[alternative HTML version deleted]]\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\n\nEBS European Business School gemeinnuetzige GmbH, Universitaet fuer Wirtschaft und Recht i.Gr. - Amtsgericht Wiesbaden HRB 19951 - Umsatzsteuer-ID DE 113891213 Geschaeftsfuehrung: Prof. Dr. Christopher Jahns,  President; Prof. Dr. Rolf Tilmes, Dean Business School; Sabine Fuchs, CMO; Prof. Dr. Dr. Gerrick Frhr. v. Hoyningen-Huene, Dean Law School; Aufsichtsrat: Dr. Hellmut K. Albrecht, Vorsitzender\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "In Michael Crawley's \"The R Book\" (which I can highly recommend for teaching undergraduate statistics) the author proposes a function that adds the standard errors with the line function. The function",
       "thread_id": "thread-55406f52a4ee",
       "thread_depth": 1,
-      "month": "2010-12"
+      "month": "2010-12",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101213/62d87d9a/attachment.pl"
+      ]
     },
     {
       "id": "msg-c3b1dc4db1e1",
@@ -152,11 +161,14 @@
         "<323228.98484.qm@web59516.mail.ac4.yahoo.com>",
         "<AANLkTimzC4=7Uw6+aZXBcvEWYZPETBoswyf=LnHhe=VM@mail.gmail.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101214/181887bf/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101214/181887bf/attachment.pl>",
+      "body_plain": "Hadley, Thanks for the recommended reading. Is there R code to make\nrecommended plots?\n\nStuart\n\nOn Mon, Dec 13, 2010 at 5:22 PM, Hadley Wickham <hadley at rice.edu> wrote:\n\n> Before doing that, I'd highly recommend reading\n> http://biostat.mc.vanderbilt.edu/twiki/pub/Main/TatsukiRcode/Poster3.pdf\n>\n> Hadley\n>\n> On Sat, Dec 11, 2010 at 8:43 AM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:\n> > Dear All R users:\n> >\n> > I hope that this message finds all of you well.\n> >\n> > Currently, I am teaching an undergraduate course in statistics.\n> >\n> > If possible, Could you please help me out how to add plus/minus 1\n> standard\n> > deviation added to each bar into R cluster bar chart.\n> >\n> > You can use the following artificial data.\n> >\n> > data cat 1 cat 2\n> > 23     1      1\n> > 45     1      1\n> > 34     1      1\n> > 5      1      1\n> > 32     1      1\n> > 44     1      1\n> > 3      2      1\n> > 1      2      1\n> > 2      2      1\n> > 3      2      1\n> > 4      2      1\n> > 5      1      2\n> > 6      1      2\n> > 7      1      2\n> > 8      1      2\n> > 544    2      2\n> > 78     2      2\n> > 543    2      2\n> > 34     2      2\n> > 89     2      2\n> > 9      1      3\n> > 43     1      3\n> > 23     1      3\n> > 45     1      3\n> > 7      1      3\n> > 5      1      3\n> > 7      1      3\n> > 6      2      3\n> > 867    2      3\n> > 3      2      3\n> > 4      2      3\n> > 5      2      3\n> > 6      2      3\n> > 7      2      3\n> > 8      2      3\n> > 9      2      3\n> >\n> > I need to create a bar chart for the mean of data column for each\n> category. I\n> > know how to create the cluster bar chart. But I need your help with how\n> to add\n> > plus/minus 1 standard deviation into each bar.\n> >\n> > Thank you so much for your helps and for your attention to this matter,\n> and I\n> > look forward to hearing from you.\n> >\n> >\n> > Regards,\n> >\n> > zanaty\n> >\n> >\n> >\n> >        [[alternative HTML version deleted]]\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >\n>\n>\n>\n> --\n> Assistant Professor / Dobelman Family Junior Chair\n> Department of Statistics / Rice University\n> http://had.co.nz/\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hadley, Thanks for the recommended reading. Is there R code to make\nrecommended plots?\n\nStuart\n\nOn Mon, Dec 13, 2010 at 5:22 PM, Hadley Wickham <hadley at rice.edu> wrote:\n\n> Before doing that, I'd hi",
       "thread_id": "thread-55406f52a4ee",
       "thread_depth": 2,
-      "month": "2010-12"
+      "month": "2010-12",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101214/181887bf/attachment.pl"
+      ]
     },
     {
       "id": "msg-83c719abccd7",

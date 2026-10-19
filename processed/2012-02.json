@@ -13,11 +13,14 @@
       "subject_clean": "Shading the solution of quadratic inequality",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120215/881f3fd5/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120215/881f3fd5/attachment.pl>",
+      "body_plain": "Dear all R Users:\n \nHow can I shade the solution (-Inf,-2) or (2,Inf) of the inequality -x^2+4<0 within the curve of -x^2+4=0.\n \nand \n \nthe solution (-Inf,-2)or(2,Inf) of the inequality x^2-4>0 within the curve of \nx^2-4=0.\n \n \nwith many thanks\n \nabou\n \n \n \n==========================\nAbouEl-Makarim Aboueissa, Ph.D.\nAssociate Professor of Statistics\nGraduate Program Coordinator\nDepartment of Mathematics & Statistics\nUniversity of Southern Maine\n96 Falmouth Street\nP.O. Box 9300\nPortland, ME 04104-9300\nUSA\n \n\nTel: (207) 228-8389\nFax: (207) 780-5607\nEmail: aaboueissa at usm.maine.edu\n          aboueiss at yahoo.com\n \nOffice: 301C Payson Smith\n \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all R Users:\n \nHow can I shade the solution (-Inf,-2) or (2,Inf) of the inequality -x^2+4<0 within the curve of -x^2+4=0.\n \nand \n \nthe solution (-Inf,-2)or(2,Inf) of the inequality x^2-4>0 within",
       "thread_id": "thread-386f944dedea",
       "thread_depth": 0,
-      "month": "2012-02"
+      "month": "2012-02",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120215/881f3fd5/attachment.pl"
+      ]
     },
     {
       "id": "msg-701ec2cfb580",
@@ -29,11 +32,14 @@
       "subject_clean": "Shading the solution of quadratic inequality",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120216/1845e1e2/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120216/1845e1e2/attachment.pl>",
+      "body_plain": "Dear all R Users:\n \nHow can I shade the solution (-Inf,-2) or (2,Inf) of the inequality -x^2+4<0 within the curve of f(x)=-x^2+4.\n \nand \n \nthe solution (-Inf,-2)or(2,Inf) of the inequality x^2-4>0 within the curve of \nf(x)=x^2-4.\n \n \nwith many thanks\n \nabou\n \n \n==========================\nAbouEl-Makarim Aboueissa, Ph.D.\nAssociate Professor of Statistics\nGraduate Program Coordinator\nDepartment of Mathematics & Statistics\nUniversity of Southern Maine\n96 Falmouth Street\nP.O. Box 9300\nPortland, ME 04104-9300\nUSA\n \n\nTel: (207) 228-8389\nFax: (207) 780-5607\nEmail: aaboueissa at usm.maine.edu\n          aboueiss at yahoo.com\n \nOffice: 301C Payson Smith\n \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all R Users:\n \nHow can I shade the solution (-Inf,-2) or (2,Inf) of the inequality -x^2+4<0 within the curve of f(x)=-x^2+4.\n \nand \n \nthe solution (-Inf,-2)or(2,Inf) of the inequality x^2-4>0 wit",
       "thread_id": "thread-701ec2cfb580",
       "thread_depth": 0,
-      "month": "2012-02"
+      "month": "2012-02",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120216/1845e1e2/attachment.pl"
+      ]
     },
     {
       "id": "msg-616ca79239df",

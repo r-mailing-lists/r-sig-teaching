@@ -13,11 +13,14 @@
       "subject_clean": "Help for Beginners",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121202/79c5c883/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121202/79c5c883/attachment.pl>",
+      "body_plain": "I teach several sections of introductory social science statistics each year.  I have recently started to implement R using the R Commander GUI for use in my class and will soon integrate it into my classes to replace SPSS as the statistics package that I teach to students.  This is an undergraduate introductory course so we do not use the command interface in SPSS.  The R Commander is a viable alternative to the SPSS package.  For true beginners with R and R commander I have finished a tutorial paper on getting started and using the Commander GUI in social science statistics courses.  I will be submitting the paper for publication but would be glad to share copies with interested colleagues.  Email me at the address below and I will email you a copy of the paper.  I am also working on tutorials for Deducer and RKWard which are also very nice GUI's for the R implementation as it applies to social science statistics\n\nDouglas M. Wiig\nProfessor of Political Studies\nGrand View University\ndwiig at grandview.edu\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I teach several sections of introductory social science statistics each year.  I have recently started to implement R using the R Commander GUI for use in my class and will soon integrate it into my c",
       "thread_id": "thread-c79bb4eda6e1",
       "thread_depth": 0,
-      "month": "2012-12"
+      "month": "2012-12",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121202/79c5c883/attachment.pl"
+      ]
     },
     {
       "id": "msg-b053ba8d1c60",
@@ -31,11 +34,14 @@
       "references": [
         "<27FF0C39AF481348BDC4A4767452D15D8055128B@EX2.ad.gvc>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121203/284c218b/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121203/284c218b/attachment.pl>",
+      "body_plain": "Dear friends,\nAfter posting my question about teaching with R, I have got many precious\nanwsers and and enthusiam helps  from many of members form the forum. I am\nmoved with your kindness. I am learning nowaday things from  your advices\nand I decide will use R in teaching statistics next month.\nI hope evrything is going well with me.\nI am writing this letter to thank all of members who helped me and wish all\nof members in the forum a happy time.\nNguyen\n\nOn Sun, Dec 2, 2012 at 11:49 AM, Doug Wiig <dwiig at grandview.edu> wrote:\n\n> I teach several sections of introductory social science statistics each\n> year.  I have recently started to implement R using the R Commander GUI for\n> use in my class and will soon integrate it into my classes to replace SPSS\n> as the statistics package that I teach to students.  This is an\n> undergraduate introductory course so we do not use the command interface in\n> SPSS.  The R Commander is a viable alternative to the SPSS package.  For\n> true beginners with R and R commander I have finished a tutorial paper on\n> getting started and using the Commander GUI in social science statistics\n> courses.  I will be submitting the paper for publication but would be glad\n> to share copies with interested colleagues.  Email me at the address below\n> and I will email you a copy of the paper.  I am also working on tutorials\n> for Deducer and RKWard which are also very nice GUI's for the R\n> implementation as it applies to social science statistics\n>\n> Douglas M. Wiig\n> Professor of Political Studies\n> Grand View University\n> dwiig at grandview.edu\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear friends,\nAfter posting my question about teaching with R, I have got many precious\nanwsers and and enthusiam helps  from many of members form the forum. I am\nmoved with your kindness. I am learni",
       "thread_id": "thread-c79bb4eda6e1",
       "thread_depth": 1,
-      "month": "2012-12"
+      "month": "2012-12",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121203/284c218b/attachment.pl"
+      ]
     }
   ],
   "threads": [

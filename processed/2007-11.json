@@ -31,11 +31,14 @@
       "references": [
         "<1193940958.9052.10.camel@izahn-desktop>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20071101/6a4440f8/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20071101/6a4440f8/attachment.pl>",
+      "body_plain": "Was it Ben Bolker's book \"Ecological Models and Data in R\"?  He has  \nit available for free on his website [ http://www.zoo.ufl.edu/bolker/ \nemdbook/index.html ] while he's in the progress of finishing it.   \nIt's a fantastic reference, and I highly recommend it.  Sorry about  \nyour computer!\n\n\nKyle H. Ambert\nGraduate Student, Dept. Behavioral Neuroscience\nOregon Health & Science University\nambertk at ohsu.edu\n\n\nOn Nov 1, 2007, at 11:15 AM, Ista Zahn wrote:\n\n> Hi,\n> Sometime ago I found an online (pdf) text about introductory  \n> statistics,\n> which focused on simulations and examples. It was a fairly complete\n> textbook, but was free to download and use. I wanted to use the  \n> text as\n> a in a course I'm planing on teaching this summer. Unfortunately my\n> computer was recently stolen, and I didn't have a backup of the pdf. I\n> know this isn't a very detailed description, but does this ring a bell\n> for anyone?\n>\n> Thanks,\n> Ista\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Was it Ben Bolker's book \"Ecological Models and Data in R\"?  He has  \nit available for free on his website [ http://www.zoo.ufl.edu/bolker/ \nemdbook/index.html ] while he's in the progress of finishin",
       "thread_id": "thread-b52983a72250",
       "thread_depth": 1,
-      "month": "2007-11"
+      "month": "2007-11",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20071101/6a4440f8/attachment.pl"
+      ]
     },
     {
       "id": "msg-6ee836e32511",
@@ -66,11 +69,14 @@
       "subject_clean": "R code to perform OLS by hand",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20071106/ea263476/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20071106/ea263476/attachment.pl>",
+      "body_plain": "Hi all.\n\nDoes anyone have a \"smart\" code for performing bi and mult-ivariable\nregression in R by hand? This is suppose to help students without a sound\nknowledge of R to understand what the computer is doing when we write\nlm(x~y).\n\nThanks in advance,\n\nAntonio.\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi all.\n\nDoes anyone have a \"smart\" code for performing bi and mult-ivariable\nregression in R by hand? This is suppose to help students without a sound\nknowledge of R to understand what the computer i",
       "thread_id": "thread-4ce1d2117dfa",
       "thread_depth": 0,
-      "month": "2007-11"
+      "month": "2007-11",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20071106/ea263476/attachment.pl"
+      ]
     },
     {
       "id": "msg-a1efc170058e",
@@ -84,11 +90,14 @@
       "references": [
         "<191577b80711060035r1766530dk2bc9ecdc3981334d@mail.gmail.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20071106/48270b70/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20071106/48270b70/attachment.pl>",
+      "body_plain": "2007/11/6, Antonio P. Ramos <ramos.grad.student at gmail.com>:\n>\n> Does anyone have a \"smart\" code for performing bi and mult-ivariable\n> regression in R by hand? This is suppose to help students without a sound\n> knowledge of R to understand what the computer is doing when we write\n> lm(x~y).\n>\n>\nHi,\nMay be I don't correctly understandood your question. Assuming  yes:\n\ny=matrix(c(2,3,2,2,4,10,12,8,3,14),ncol=1)\nx1=matrix(c(1,2,3,4,5,6,6,7,9,9),ncol=1)\nx2=matrix(c(1,6,3,2,2,5,9,4,1,7),ncol=1)\nX=matrix(c(rep(1,10),x1,x2),ncol=3)\nsolve(t(X)%*%X)%*%(t(X)%*%y)\n\n-- \n==================\nGermano Rossi, Dipartimento di Psicologia\nUniversita' degli Studi di Milano Bicocca\nPiazza dell'Ateneo Nuovo, 1- 20126 Milano - Italy\ntel. +39 02 6448 3740    fax:+39 02 6448 3706\nProfessore associato di Psicometria\nDocente di Statistica per la ricerca sociale e di Psicometria\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "2007/11/6, Antonio P. Ramos <ramos.grad.student at gmail.com>:\n>\n> Does anyone have a \"smart\" code for performing bi and mult-ivariable\n> regression in R by hand? This is suppose to help students with",
       "thread_id": "thread-4ce1d2117dfa",
       "thread_depth": 1,
-      "month": "2007-11"
+      "month": "2007-11",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20071106/48270b70/attachment.pl"
+      ]
     },
     {
       "id": "msg-b4f126937385",

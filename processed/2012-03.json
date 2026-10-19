@@ -31,11 +31,14 @@
       "references": [
         "<CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120315/9b901772/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120315/9b901772/attachment.pl>",
+      "body_plain": "Hi Dagfinn,\n\nI suggest:   Rob Kabacoff. R in Action. Manning, 2010.\n\nBest,\n\nManuel\n\n2012/3/15 Dagfinn Rime <dagfinn.rime at gmail.com>\n\n> Dear all,\n>\n> I'm new to R and need to learn how to program R, and would appreciate\n> suggestions for e.g. two books in order to get going.\n>\n> What type of books? Well, if I were to suggest books for a newcomer to\n> LaTeX I would say that \"all\" you need is Lamport's book and \"The LaTeX\n> Companion\" (2nd ed). Is there something similar for R? A not-too long\n> introductory book and one more comprehensive \"reference\"-like book?\n>\n> My level?\n> * Statistics? I have a PhD in finance and know \"applied\n> statistics/econometrics\"\n> * Programming? I currently do all my analysis via programming\n> (\"scripting\") in SAS or Eviews.\n>\n> The R-project page mention 115 books? I made notice of the following:\n> 1. Paul Teetor. R Cookbook. O'Reilly, first edition, 2011\n> 2. Rob Kabacoff. R in Action. Manning, 2010.\n> 3. David Ruppert. Statistics and Data Analysis for Financial\n> Engineering. Use R! Springer, 2010\n> 4. Alain F. Zuur, Elena N. Ieno, and Erik Meesters. A Beginner's Guide\n> to R. Use R. Springer, 2009\n>\n> >From Amazon the following caught my attention:\n> 1. R in a Nutshell (In a Nutshell (O'Reilly))\n> 2. The R Book by Michael J. Crawley\n>\n> I have probably missed some (many), and there are probably lots of\n> different views. But I would appreciate any guidance and views.\n>\n> Thanks in advance,\n> Dagfinn Rime\n> Research department, Norges Bank\n> www.norges-bank.no/research/rime/\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \n*Manuel Spínola, Ph.D.*\nInstituto Internacional en Conservación y Manejo de Vida Silvestre\nUniversidad Nacional\nApartado 1350-3000\nHeredia\nCOSTA RICA\nmspinola at una.ac.cr\nmspinola10 at gmail.com\nTeléfono: (506) 2277-3598\nFax: (506) 2237-7036\nPersonal website: Lobito de río <https://sites.google.com/site/lobitoderio/>\nInstitutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi Dagfinn,\n\nI suggest:   Rob Kabacoff. R in Action. Manning, 2010.\n\nBest,\n\nManuel\n\n2012/3/15 Dagfinn Rime <dagfinn.rime at gmail.com>\n\n> Dear all,\n>\n> I'm new to R and need to learn how to program R,",
       "thread_id": "thread-3a9b743cd977",
       "thread_depth": 1,
-      "month": "2012-03"
+      "month": "2012-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120315/9b901772/attachment.pl"
+      ]
     },
     {
       "id": "msg-433474e4d47e",
@@ -104,11 +107,14 @@
         "<CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>",
         "<CABkCotTrL-3-LNTOU9FJnfsqAPxXqqVvmyVf0BeqVx+UjhHJRA@mail.gmail.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120315/ece939ec/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120315/ece939ec/attachment.pl>",
+      "body_plain": "My two cents:\n\nFor the very basics of programming in R, work through a couple of the free \"getting started\" online books here:\nhttp://www.r-project.org/other-docs.html\n\nTo get to more practical \"production level\" R, since you're a SAS programmer you might like Muenchen's \"R for SAS and SPSS users,\" 2nd ed. I found this book very helpful even though I don't know SAS or SPSS, because it operates at a very sophisticated level. I found that many other \"intro to R\" books assume you're relatively new to both programming and data analysi. This books assumes you already know a fair bit about both and just want to learn how to do it in R. \n\nThere are some good web sites for learning R as well. A few that I go back to regularly are:\nQuick-R: Home Page\nLearning R\nR Tutorial Series\nR Programming - Wikibooks, open books for an open world\n\nMatloff's \"Art of R Programming\", which I've just started reading, seems like a good book for getting to the \"next level\" in R programming--how to write integrated scripts, rather than just figuring out how to do lots of individual tasks.\n\nThere are many other choices, but these will probably get you started on the right track. Once you start feeling comfortable with the basics, R-help and Stackoverflow.com are good places to go when you're trying to figure out how to do something or other and need some help. And since so many people blog about R these days, Google-ing is very helpful as well.\n\nHope that helps.\n\nJoel\n\n.......................................................................\nJoel Schwartz\nSenior Consultant\nBlue Sky Consulting Group\nwww.blueskyconsultinggroup.com\n916.203.6309\n\n\nOn Mar 15, 2012, at 6:24 AM, Manuel Spínola wrote:\n\n> Hi Dagfinn,\n> \n> I suggest:   Rob Kabacoff. R in Action. Manning, 2010.\n> \n> Best,\n> \n> Manuel\n> \n> 2012/3/15 Dagfinn Rime <dagfinn.rime at gmail.com>\n> \n>> Dear all,\n>> \n>> I'm new to R and need to learn how to program R, and would appreciate\n>> suggestions for e.g. two books in order to get going.\n>> \n>> What type of books? Well, if I were to suggest books for a newcomer to\n>> LaTeX I would say that \"all\" you need is Lamport's book and \"The LaTeX\n>> Companion\" (2nd ed). Is there something similar for R? A not-too long\n>> introductory book and one more comprehensive \"reference\"-like book?\n>> \n>> My level?\n>> * Statistics? I have a PhD in finance and know \"applied\n>> statistics/econometrics\"\n>> * Programming? I currently do all my analysis via programming\n>> (\"scripting\") in SAS or Eviews.\n>> \n>> The R-project page mention 115 books? I made notice of the following:\n>> 1. Paul Teetor. R Cookbook. O'Reilly, first edition, 2011\n>> 2. Rob Kabacoff. R in Action. Manning, 2010.\n>> 3. David Ruppert. Statistics and Data Analysis for Financial\n>> Engineering. Use R! Springer, 2010\n>> 4. Alain F. Zuur, Elena N. Ieno, and Erik Meesters. A Beginner's Guide\n>> to R. Use R. Springer, 2009\n>> \n>>> From Amazon the following caught my attention:\n>> 1. R in a Nutshell (In a Nutshell (O'Reilly))\n>> 2. The R Book by Michael J. Crawley\n>> \n>> I have probably missed some (many), and there are probably lots of\n>> different views. But I would appreciate any guidance and views.\n>> \n>> Thanks in advance,\n>> Dagfinn Rime\n>> Research department, Norges Bank\n>> www.norges-bank.no/research/rime/\n>> \n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>> \n> \n> \n> \n> -- \n> *Manuel Spínola, Ph.D.*\n> Instituto Internacional en Conservación y Manejo de Vida Silvestre\n> Universidad Nacional\n> Apartado 1350-3000\n> Heredia\n> COSTA RICA\n> mspinola at una.ac.cr\n> mspinola10 at gmail.com\n> Teléfono: (506) 2277-3598\n> Fax: (506) 2237-7036\n> Personal website: Lobito de río <https://sites.google.com/site/lobitoderio/>\n> Institutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>\n> \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "My two cents:\n\nFor the very basics of programming in R, work through a couple of the free \"getting started\" online books here:\nhttp://www.r-project.org/other-docs.html\n\nTo get to more practical \"produ",
       "thread_id": "thread-3a9b743cd977",
       "thread_depth": 2,
-      "month": "2012-03"
+      "month": "2012-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120315/ece939ec/attachment.pl"
+      ]
     },
     {
       "id": "msg-febb16ce5aa8",
@@ -123,11 +129,14 @@
         "<CAArkqNeeMCYNDfU92xz1aPSzAPCzRN2ELNaU_HEqFsSivMp+CQ@mail.gmail.com>",
         "<CABkCotTrL-3-LNTOU9FJnfsqAPxXqqVvmyVf0BeqVx+UjhHJRA@mail.gmail.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120315/e1527352/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120315/e1527352/attachment.pl>",
+      "body_plain": "My two cents:\n\nFor the very basics of programming in R, work through a couple of the free \"getting started\" online books here:\nhttp://www.r-project.org/other-docs.html\n\nTo get to more practical \"production level\" R, since you're a SAS programmer you might like Muenchen's \"R for SAS and SPSS users,\" 2nd ed. I found this book very helpful even though I don't know SAS or SPSS, because it operates at a very sophisticated level. I found that many other \"intro to R\" books assume you're relatively new to both programming and data analysi. This books assumes you already know a fair bit about both and just want to learn how to do it in R. \n\nThere are some good web sites for learning R as well. A few that I go back to regularly are:\nQuick-R: Home Page\nLearning R\nR Tutorial Series\nR Programming - Wikibooks, open books for an open world\n\nMatloff's \"Art of R Programming\", which I've just started reading, seems like a good book for getting to the \"next level\" in R programming--how to write integrated scripts, rather than just figuring out how to do lots of individual tasks.\n\nThere are many other choices, but these will probably get you started on the right track. Once you start feeling comfortable with the basics, R-help and Stackoverflow.com are good places to go when you're trying to figure out how to do something or other and need some help. And since so many people blog about R these days, Google-ing is very helpful as well.\n\nHope that helps.\n\nJoel\n\n.......................................................................\nJoel Schwartz\nSenior Consultant\nBlue Sky Consulting Group\nwww.blueskyconsultinggroup.com\n916.203.6309\n\n\nOn Mar 15, 2012, at 6:24 AM, Manuel Spínola wrote:\n\n> Hi Dagfinn,\n> \n> I suggest:   Rob Kabacoff. R in Action. Manning, 2010.\n> \n> Best,\n> \n> Manuel\n> \n> 2012/3/15 Dagfinn Rime <dagfinn.rime at gmail.com>\n> \n>> Dear all,\n>> \n>> I'm new to R and need to learn how to program R, and would appreciate\n>> suggestions for e.g. two books in order to get going.\n>> \n>> What type of books? Well, if I were to suggest books for a newcomer to\n>> LaTeX I would say that \"all\" you need is Lamport's book and \"The LaTeX\n>> Companion\" (2nd ed). Is there something similar for R? A not-too long\n>> introductory book and one more comprehensive \"reference\"-like book?\n>> \n>> My level?\n>> * Statistics? I have a PhD in finance and know \"applied\n>> statistics/econometrics\"\n>> * Programming? I currently do all my analysis via programming\n>> (\"scripting\") in SAS or Eviews.\n>> \n>> The R-project page mention 115 books? I made notice of the following:\n>> 1. Paul Teetor. R Cookbook. O'Reilly, first edition, 2011\n>> 2. Rob Kabacoff. R in Action. Manning, 2010.\n>> 3. David Ruppert. Statistics and Data Analysis for Financial\n>> Engineering. Use R! Springer, 2010\n>> 4. Alain F. Zuur, Elena N. Ieno, and Erik Meesters. A Beginner's Guide\n>> to R. Use R. Springer, 2009\n>> \n>>> From Amazon the following caught my attention:\n>> 1. R in a Nutshell (In a Nutshell (O'Reilly))\n>> 2. The R Book by Michael J. Crawley\n>> \n>> I have probably missed some (many), and there are probably lots of\n>> different views. But I would appreciate any guidance and views.\n>> \n>> Thanks in advance,\n>> Dagfinn Rime\n>> Research department, Norges Bank\n>> www.norges-bank.no/research/rime/\n>> \n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>> \n> \n> \n> \n> -- \n> *Manuel Spínola, Ph.D.*\n> Instituto Internacional en Conservación y Manejo de Vida Silvestre\n> Universidad Nacional\n> Apartado 1350-3000\n> Heredia\n> COSTA RICA\n> mspinola at una.ac.cr\n> mspinola10 at gmail.com\n> Teléfono: (506) 2277-3598\n> Fax: (506) 2237-7036\n> Personal website: Lobito de río <https://sites.google.com/site/lobitoderio/>\n> Institutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>\n> \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "My two cents:\n\nFor the very basics of programming in R, work through a couple of the free \"getting started\" online books here:\nhttp://www.r-project.org/other-docs.html\n\nTo get to more practical \"produ",
       "thread_id": "thread-3a9b743cd977",
       "thread_depth": 2,
-      "month": "2012-03"
+      "month": "2012-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120315/e1527352/attachment.pl"
+      ]
     },
     {
       "id": "msg-ab3581744ce5",
@@ -139,11 +148,14 @@
       "subject_clean": "Raw Data used in Biostatistical Analysis by Zar",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120318/7d9a3061/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120318/7d9a3061/attachment.pl>",
+      "body_plain": "Dear All:\n \nI am wondering if someone have the raw data (with R codes if possible) used in Biostatistical Analysis, fifth edition, by Zar or know where I can find it. If so, could you please email it to me or let me know from where I can get it.\n \nThank you very much\nabou\n \n \n \n==========================\nAbouEl-Makarim Aboueissa, Ph.D.\nAssociate Professor of Statistics\nGraduate Program Coordinator\nDepartment of Mathematics & Statistics\nUniversity of Southern Maine\n96 Falmouth Street\nP.O. Box 9300\nPortland, ME 04104-9300\nUSA\n \n\nTel: (207) 228-8389\nFax: (207) 780-5607\nEmail: aaboueissa at usm.maine.edu\n          aboueiss at yahoo.com\n \nOffice: 301C Payson Smith\n \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n \nI am wondering if someone have the raw data (with R codes if possible) used in Biostatistical Analysis, fifth edition, by Zar or know where I can find it. If so, could you please email it ",
       "thread_id": "thread-ab3581744ce5",
       "thread_depth": 0,
-      "month": "2012-03"
+      "month": "2012-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120318/7d9a3061/attachment.pl"
+      ]
     },
     {
       "id": "msg-16d862e53815",
@@ -155,11 +167,14 @@
       "subject_clean": "scatter plot of grouping data",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120319/5f359401/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120319/5f359401/attachment.pl>",
+      "body_plain": "Dear All:\n \nI want to create a scatter plot of grouping data. I have the variable x and y and the grouping variable type (1=group 1, 2=group 2) in the same plot. \n \nAlso I need to add the fitted regression lines to the same plot.\n \nAlso, how I can change (or adjust the dots for each type). for example use the square for one type and triangle for the other type.\n \nyou can use the following data:\n \ntype x y\n1 3 4\n1 2 2\n1 4 55\n1 3 4\n1 2 3\n2 11 22\n1 2 33\n2 34 11\n2 2 6\n2 35 77\n2 64 8\n1 32 12\n1 12 40\n2 67 30\n2 3 43\n2 4 23\n1 2 15\n1 5 51\n1 8 6\n2 9 23\n2 56 16\n1 43 27\n2 21 17\n1 12 27\n1 34 47\n1 2 25\n2 5 24\n2 6 15\n2 7 16\n1 8 34\n1 9 7\n2 4 89\n1 22 32\n2 3 4\n1 11 33\n1 45 55\n2 2 76\n1 1 32\n2 45 12\n1 1 45\n2 3 32\n1 2 78\n1 4 5\n1 5 4\n1 6 23\n2 7 45\n1 9 32\n2 7 78\n2 1 45\n2 20 22\n \n \n \nThank you very much\nabou\n \n \n \n==========================\nAbouEl-Makarim Aboueissa, Ph.D.\nAssociate Professor of Statistics\nGraduate Program Coordinator\nDepartment of Mathematics & Statistics\nUniversity of Southern Maine\n96 Falmouth Street\nP.O. Box 9300\nPortland, ME 04104-9300\nUSA\n \n\nTel: (207) 228-8389\nFax: (207) 780-5607\nEmail: aaboueissa at usm.maine.edu\n          aboueiss at yahoo.com\n \nOffice: 301C Payson Smith\n \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n \nI want to create a scatter plot of grouping data. I have the variable x and y and the grouping variable type (1=group 1, 2=group 2) in the same plot. \n \nAlso I need to add the fitted regre",
       "thread_id": "thread-16d862e53815",
       "thread_depth": 0,
-      "month": "2012-03"
+      "month": "2012-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120319/5f359401/attachment.pl"
+      ]
     },
     {
       "id": "msg-b082f7c1a021",
@@ -171,11 +186,14 @@
       "subject_clean": "Create new variables",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120320/a188f1fd/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120320/a188f1fd/attachment.pl>",
+      "body_plain": "Dear All:\n \nI need to create new variables based on the old data set:\n \n \nold data:\n===================\n \ntype      x     y\n0          3     4\n0          2     2\n0          4     55\n0          3     4\n1          2     3\n1         11    22\n1         2      33\n0         34     11\n1         2       6\n0         35     77\n1         64     8\n0         32     12\n0         12     40\n0         67     30\n0         3       43\n1         4       23\n1         2       15\n1         5       51\n0         8       6\n0         9       23\n1         56     16\n1         43     27\n1         21     17\n0         12     27\n0         34     47\n \n \n \n\ndatatest<-read.table(file=\"F:\\\\00 - Spring 2012\\\\STA 591\\\\notes\\\\Module 2 - Linear Regression and Correlation\\\\Zar chapters 17-20\\\\olddata.txt\",head=TRUE)\n\n##### datatest\n\ndatatest1<-data.frame(type =datatest[,1], x = datatest[,2], y = datatest[,3])\n \n##### datatest1\n \n\nI want to get:\n===============\n \nCreate a new variable z as follows:\n \nif type =0 then z=1   and if type = 1 then z=0\n \nthen create one more variable called xz = x*z\n \n \nnew data should look like this one\n===============================\n \n\ntype     x     y      z      xz\n0         3     4      1      3\n0         2     2      1      2\n0         4     55    1      4\n0         3     4      1      3\n1         2     3      0      0\n1        11    22     0      0\n1         2     33     0      0\n0        34    11     1      34\n1        2      6       0      0\n0        35     77    1      35\n1        64     8      0      0\n0        32     12    1      32\n0        12     40    1      12\n0        67     30    1      67\n0        3       43    1      3\n1        4       23    0      0\n1        2       15    0      0\n1        5       51    0      0\n0        8       6      1      8\n0        9       23    1      9\n1        56     16    0      0\n1        43     27    0      0\n1        21     17    0      0\n0        12     27    1      12\n0        34     47    1      34\n \n \n \nThank you very much\nabou\n \n \n \n \n \n==========================\nAbouEl-Makarim Aboueissa, Ph.D.\nAssociate Professor of Statistics\nGraduate Program Coordinator\nDepartment of Mathematics & Statistics\nUniversity of Southern Maine\n96 Falmouth Street\nP.O. Box 9300\nPortland, ME 04104-9300\nUSA\n \n\nTel: (207) 228-8389\nFax: (207) 780-5607\nEmail: aaboueissa at usm.maine.edu\n          aboueiss at yahoo.com\n \nOffice: 301C Payson Smith\n \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n \nI need to create new variables based on the old data set:\n \n \nold data:\n===================\n \ntype      x     y\n0          3     4\n0          2     2\n0          4     55\n0          3     4",
       "thread_id": "thread-b082f7c1a021",
       "thread_depth": 0,
-      "month": "2012-03"
+      "month": "2012-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120320/a188f1fd/attachment.pl"
+      ]
     },
     {
       "id": "msg-2a239354a4e2",
@@ -207,11 +225,14 @@
       "references": [
         "<4F678E77020000A6000BF0BB@uct5.uct.usm.maine.edu>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120320/18450460/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120320/18450460/attachment.pl>",
+      "body_plain": "If you have that dataset loaded to e.g. \"df\", you could try (and modify to\nyour needs) the following:\n\nwith(df, {plot(x~y, pch = type); abline(lm(x ~ y))})\n\n\nThe example shows hot to plot different symbols, like:\n\nplot(df$x ~ df$y, pch = type)\n\n\nAnd how to add the (total) regression line:\n\nabline(lm(df$x ~ df$y))\n\n\nBest,\nGergely\n\nOn Tue, Mar 20, 2012 at 00:52, AbouEl-Makarim Aboueissa <\naaboueissa at usm.maine.edu> wrote:\n\n> Dear All:\n>\n> I want to create a scatter plot of grouping data. I have the variable x\n> and y and the grouping variable type (1=group 1, 2=group 2) in the same\n> plot.\n>\n> Also I need to add the fitted regression lines to the same plot.\n>\n> Also, how I can change (or adjust the dots for each type). for example use\n> the square for one type and triangle for the other type.\n>\n> you can use the following data:\n>\n> type x y\n> 1 3 4\n> 1 2 2\n> 1 4 55\n> 1 3 4\n> 1 2 3\n> 2 11 22\n> 1 2 33\n> 2 34 11\n> 2 2 6\n> 2 35 77\n> 2 64 8\n> 1 32 12\n> 1 12 40\n> 2 67 30\n> 2 3 43\n> 2 4 23\n> 1 2 15\n> 1 5 51\n> 1 8 6\n> 2 9 23\n> 2 56 16\n> 1 43 27\n> 2 21 17\n> 1 12 27\n> 1 34 47\n> 1 2 25\n> 2 5 24\n> 2 6 15\n> 2 7 16\n> 1 8 34\n> 1 9 7\n> 2 4 89\n> 1 22 32\n> 2 3 4\n> 1 11 33\n> 1 45 55\n> 2 2 76\n> 1 1 32\n> 2 45 12\n> 1 1 45\n> 2 3 32\n> 1 2 78\n> 1 4 5\n> 1 5 4\n> 1 6 23\n> 2 7 45\n> 1 9 32\n> 2 7 78\n> 2 1 45\n> 2 20 22\n>\n>\n>\n> Thank you very much\n> abou\n>\n>\n>\n> ==========================\n> AbouEl-Makarim Aboueissa, Ph.D.\n> Associate Professor of Statistics\n> Graduate Program Coordinator\n> Department of Mathematics & Statistics\n> University of Southern Maine\n> 96 Falmouth Street\n> P.O. Box 9300\n> Portland, ME 04104-9300\n> USA\n>\n>\n> Tel: (207) 228-8389\n> Fax: (207) 780-5607\n> Email: aaboueissa at usm.maine.edu\n>          aboueiss at yahoo.com\n>\n> Office: 301C Payson Smith\n>\n>\n>        [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "If you have that dataset loaded to e.g. \"df\", you could try (and modify to\nyour needs) the following:\n\nwith(df, {plot(x~y, pch = type); abline(lm(x ~ y))})\n\n\nThe example shows hot to plot different sy",
       "thread_id": "thread-16d862e53815",
       "thread_depth": 1,
-      "month": "2012-03"
+      "month": "2012-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120320/18450460/attachment.pl"
+      ]
     },
     {
       "id": "msg-d985322c4ac5",
@@ -225,11 +246,14 @@
       "references": [
         "<mailman.7.1331895602.13961.r-sig-teaching@r-project.org>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120321/33d34d4c/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120321/33d34d4c/attachment.pl>",
+      "body_plain": "Dear all,\nI have a question which can be expanded to the geeneral context of regression \nmodelling in general. If you feel that this question is beyond the scope of this list, please say so and I will apologize. However, this has to do with teaching. \n\n\nQuestion 1:  I am revieweing a paper and the author uses a sample size of around 50,000 cases to run a logistic regression. He is using 22 independent \nvariables. Using too many independent variables may cause collinearity \nproblems. Beyond this, however, I am not aware of any other problems caused by \nusing too many variables in a model. However, this is also related to the problem of massively throwing tens of variables in amodel and then waiting for statistically significant results. Can anyone suggest relevant literature to give to my students to read?\n\n\nQuestion 2: Some coefficients of a diffrent logistic model in the same paper are marginally significant e.g. b=-0.18 and se=0.08. The only reason this is signficant is because the researcher used in this model a large sample size (around two thousand cases N=2000). The lower bound of the confidence interval is almost zero. Can anyone suggest a good reference to say that in such a case we should also check the \"practical significance\" and since the lower bound is so close to zero, we should be careful on what we claim about the effect?\n\nThank you for your time\nJason  \n\n\n \nDr. Iasonas Lamprianou\nDepartment of Social and Political Sciences\nUniversity of Cyprus\n\n\n\n\n>\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all,\nI have a question which can be expanded to the geeneral context of regression \nmodelling in general. If you feel that this question is beyond the scope of this list, please say so and I will",
       "thread_id": "thread-d985322c4ac5",
       "thread_depth": 0,
-      "month": "2012-03"
+      "month": "2012-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120321/33d34d4c/attachment.pl"
+      ]
     },
     {
       "id": "msg-aea149ecd243",
@@ -244,11 +268,14 @@
         "<mailman.7.1331895602.13961.r-sig-teaching@r-project.org>",
         "<1332320392.26075.YahooMailNeo@web120603.mail.ne1.yahoo.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120321/d90b0ce3/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120321/d90b0ce3/attachment.pl>",
+      "body_plain": "Dear Jason,\n\nIn relation to question 1, I believe that what is critical is the final use\nof the regression. If one is making causal claims, then it is very\nimportant to understand the causal structure since conditioning on\ninappropriate variables can lead to nonsense results. If the use of the\nregression is purely descriptive then collinearity may be the only problem,\nbut one must be careful not to make causal interpretations. The book\n\"Causality: Models, Reasoning and Inference\" by Judea Pearl discusses the\ncausal question and is full of references.\n\nIn relation to question 2, I've seen mention of this question in many\nbooks. In Wooldridge's Introductory Econometrics book he draws the\ndistinction between statistical and economic significance, however I don't\nknow if he cites any particular paper on the subject.\n\nGood teaching,\nDonald Pianto\nDepartment of Statistics\nUniversity of Brasília\n\nOn Wed, Mar 21, 2012 at 5:59 AM, Iasonas Lamprianou <lamprianou at yahoo.com>wrote:\n\n> Dear all,\n> I have a question which can be expanded to the geeneral context of\n> regression\n> modelling in general. If you feel that this question is beyond the scope\n> of this list, please say so and I will apologize. However, this has to do\n> with teaching.\n>\n>\n> Question 1:  I am revieweing a paper and the author uses a sample size of\n> around 50,000 cases to run a logistic regression. He is using 22 independent\n> variables. Using too many independent variables may cause collinearity\n> problems. Beyond this, however, I am not aware of any other problems\n> caused by\n> using too many variables in a model. However, this is also related to the\n> problem of massively throwing tens of variables in amodel and then waiting\n> for statistically significant results. Can anyone suggest relevant\n> literature to give to my students to read?\n>\n>\n> Question 2: Some coefficients of a diffrent logistic model in the same\n> paper are marginally significant e.g. b=-0.18 and se=0.08. The only reason\n> this is signficant is because the researcher used in this model a large\n> sample size (around two thousand cases N=2000). The lower bound of the\n> confidence interval is almost zero. Can anyone suggest a good reference to\n> say that in such a case we should also check the \"practical significance\"\n> and since the lower bound is so close to zero, we should be careful on what\n> we claim about the effect?\n>\n> Thank you for your time\n> Jason\n>\n>\n>\n> Dr. Iasonas Lamprianou\n> Department of Social and Political Sciences\n> University of Cyprus\n>\n>\n>\n>\n> >\n>        [[alternative HTML version deleted]]\n>\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear Jason,\n\nIn relation to question 1, I believe that what is critical is the final use\nof the regression. If one is making causal claims, then it is very\nimportant to understand the causal structure",
       "thread_id": "thread-d985322c4ac5",
       "thread_depth": 1,
-      "month": "2012-03"
+      "month": "2012-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120321/d90b0ce3/attachment.pl"
+      ]
     },
     {
       "id": "msg-49e44019e995",
@@ -283,11 +310,14 @@
         "<1332320392.26075.YahooMailNeo@web120603.mail.ne1.yahoo.com>",
         "<CAHhr5TWEQaLOi1On8Cc47DdUZVFa4f0zTd=6K136bMcUQvxoig@mail.gmail.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120321/e1c022b5/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120321/e1c022b5/attachment.pl>",
+      "body_plain": "Thanks, I will have a look. Judea Pearl's book seems to be famous!\n\n \nDr. Iasonas Lamprianou\nDepartment of Social and Political Sciences\nUniversity of Cyprus\n\n\n>________________________________\n> From: Donald Pianto <dpianto at gmail.com>\n>To: Iasonas Lamprianou <lamprianou at yahoo.com> \n>Cc: \"r-sig-teaching at r-project.org\" <r-sig-teaching at r-project.org> \n>Sent: Wednesday, 21 March 2012, 16:50\n>Subject: Re: [R-sig-teaching] regerssion issues\n> \n>\n>Dear Jason,\n>\n>\n>In relation to question 1, I believe that what is critical is the final use of the regression. If one is making causal claims, then it is very important to understand the causal structure since conditioning on inappropriate variables can lead to nonsense results. If the use of the regression is purely descriptive then collinearity may be the only problem, but one must be careful not to make causal interpretations. The book \"Causality: Models, Reasoning and Inference\" by Judea Pearl discusses the causal question and is full of references.\n>\n>\n>In relation to question 2, I've seen mention of this question in many books. In Wooldridge's Introductory Econometrics book he draws the distinction between statistical and economic significance, however I don't know if he cites any particular paper on the subject.\n>\n>\n>Good teaching,\n>Donald Pianto\n>Department of Statistics\n>University of Brasília\n>\n>\n>On Wed, Mar 21, 2012 at 5:59 AM, Iasonas Lamprianou <lamprianou at yahoo.com> wrote:\n>\n>Dear all,\n>>I have a question which can be expanded to the geeneral context of regression\n>>modelling in general. If you feel that this question is beyond the scope of this list, please say so and I will apologize. However, this has to do with teaching.\n>>\n>>\n>>Question 1:  I am revieweing a paper and the author uses a sample size of around 50,000 cases to run a logistic regression. He is using 22 independent\n>>variables. Using too many independent variables may cause collinearity\n>>problems. Beyond this, however, I am not aware of any other problems caused by\n>>using too many variables in a model. However, this is also related to the problem of massively throwing tens of variables in amodel and then waiting for statistically significant results. Can anyone suggest relevant literature to give to my students to read?\n>>\n>>\n>>Question 2: Some coefficients of a diffrent logistic model in the same paper are marginally significant e.g. b=-0.18 and se=0.08. The only reason this is signficant is because the researcher used in this model a large sample size (around two thousand cases N=2000). The lower bound of the confidence interval is almost zero. Can anyone suggest a good reference to say that in such a case we should also check the \"practical significance\" and since the lower bound is so close to zero, we should be careful on what we claim about the effect?\n>>\n>>Thank you for your time\n>>Jason \n>>\n>>\n>> \n>>Dr. Iasonas Lamprianou\n>>Department of Social and Political Sciences\n>>University of Cyprus\n>>\n>>\n>>\n>>\n>>>\n>>       [[alternative HTML version deleted]]\n>>\n>>\n>>_______________________________________________\n>>R-sig-teaching at r-project.org mailing list\n>>https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>>\n>\n>\n>\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Thanks, I will have a look. Judea Pearl's book seems to be famous!\n\n \nDr. Iasonas Lamprianou\nDepartment of Social and Political Sciences\nUniversity of Cyprus\n\n\n>________________________________\n> From",
       "thread_id": "thread-d985322c4ac5",
       "thread_depth": 2,
-      "month": "2012-03"
+      "month": "2012-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120321/e1c022b5/attachment.pl"
+      ]
     },
     {
       "id": "msg-93a6bfcd8f17",
@@ -299,11 +329,14 @@
       "subject_clean": "graphing circles",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120325/3547488a/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120325/3547488a/attachment.pl>",
+      "body_plain": "Dear R users:\n \nIt may be a silly question. I am trying to create a target diagram of 4 circles inside each other and adding some dots to describe different situations of validity and reliability. I need three of them.\n \none with all dots around the target.\none with all dots in about one place, but far from the target.\none with randomly scattered dots.\n \n I tried my best, but could not succeed. Can someone help me with creating such graph.\n \nThank you very much\nabou\n \n \n \n==========================\nAbouEl-Makarim Aboueissa, Ph.D.\nAssociate Professor of Statistics\nGraduate Program Coordinator\nDepartment of Mathematics & Statistics\nUniversity of Southern Maine\n96 Falmouth Street\nP.O. Box 9300\nPortland, ME 04104-9300\nUSA\n \n\nTel: (207) 228-8389\nFax: (207) 780-5607\nEmail: aaboueissa at usm.maine.edu\n          aboueiss at yahoo.com\n \nOffice: 301C Payson Smith\n \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users:\n \nIt may be a silly question. I am trying to create a target diagram of 4 circles inside each other and adding some dots to describe different situations of validity and reliability. I n",
       "thread_id": "thread-93a6bfcd8f17",
       "thread_depth": 0,
-      "month": "2012-03"
+      "month": "2012-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120325/3547488a/attachment.pl"
+      ]
     },
     {
       "id": "msg-6d2116c60abc",
@@ -370,11 +403,14 @@
       "subject_clean": "Comparing Points on Two Regression Lines",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120331/8e484ede/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120331/8e484ede/attachment.pl>",
+      "body_plain": "Dear All:\n \nI am trying to compare points on two regression lines given some specific values of X. I am not sure how to do it in R and/or in SAS. Can someone help me, and show me how to conduct such test in R.\n \n \nYou can use the following data for both lines.\n \n### data for line 1:\n### =========\n \nx1<-c(0.0,0.25,2.5,25.0,50.0)\ny1<-c(100.0,79.0,74.0,36.0,8.0)\n \n \n \n### data for line 2:\n### =========\n\nx2<-c(0.0,0.25,2.5,25.0,50.0)\ny2<-c(100.0,79.0,55.0,18.0,2.0)\n \n \n### these are the given values of X:\n###  ===================\n\nx<-c(0.10,0.20,2.0,15.0,35.0)\n \n \nthank you very much in advance\nabou\n \n \n \n \n \n \n \n \n==========================\nAbouEl-Makarim Aboueissa, Ph.D.\nAssociate Professor of Statistics\nGraduate Program Coordinator\nDepartment of Mathematics & Statistics\nUniversity of Southern Maine\n96 Falmouth Street\nP.O. Box 9300\nPortland, ME 04104-9300\nUSA\n \n\nTel: (207) 228-8389\nFax: (207) 780-5607\nEmail: aaboueissa at usm.maine.edu\n          aboueiss at yahoo.com\n \nOffice: 301C Payson Smith\n \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n \nI am trying to compare points on two regression lines given some specific values of X. I am not sure how to do it in R and/or in SAS. Can someone help me, and show me how to conduct such t",
       "thread_id": "thread-b8488599c701",
       "thread_depth": 0,
-      "month": "2012-03"
+      "month": "2012-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120331/8e484ede/attachment.pl"
+      ]
     },
     {
       "id": "msg-11aa042e5cb7",
@@ -429,11 +465,14 @@
         "<4F7766DA020000A6000C06D3@uct5.uct.usm.maine.edu>",
         "<CAAmySGP12Ao3zghdFrF5swPV6JSsg_5CVautqzYLWZUJxQbv_w@mail.gmail.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120331/9f8ad71f/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120331/9f8ad71f/attachment.pl>",
+      "body_plain": "What I need is to compare these predicted values on both lines:\n \n> predict(m1, newdata = data.frame(x = x))\n       1        2        3        4        5 \n84.42477 84.26280 81.34729 60.29085 27.89632 \n \n\n> predict(m2, newdata = data.frame(x = x))\n       1        2        3        4        5 \n76.86037 76.69170 73.65554 51.72772 17.99261 \n> \n \nfor example: compare 84.42477  versus 76.86037 , and   84.26280  versus  76.69170  and so on.\n \n \n \n \nwith many thanks\nabou\n\n\n \n \n==========================\nAbouEl-Makarim Aboueissa, Ph.D.\nAssociate Professor of Statistics\nGraduate Program Coordinator\nDepartment of Mathematics & Statistics\nUniversity of Southern Maine\n96 Falmouth Street\nP.O. Box 9300\nPortland, ME 04104-9300\nUSA\n \n\nTel: (207) 228-8389\nFax: (207) 780-5607\nEmail: aaboueissa at usm.maine.edu\n          aboueiss at yahoo.com\n \nOffice: 301C Payson Smith\n \n>>> \"R. Michael Weylandt\" <michael.weylandt at gmail.com> 3/31/2012 9:13 PM >>>\nAgain, you need to clarify what you mean by compare, but here's a\nbetter way to do predict from a linear model -- my first guess was\nsimple interpolation (not very good):\n\nm1 <- lm(y ~ x, data = data.frame(y = y1, x = x1))\nm2 <- lm(y ~ x, data = data.frame(y = y2, x = x2))\n\npredict(m1, newdata = data.frame(x = x))\npredict(m2, newdata = data.frame(x = x))\n\nPerhaps you want an ANOVA (?anova) test to compare the models: if you\nwant to compare the predicted values at x directly, you could use\ninterval=\"predict\" for the different models and see if they overlap at\na given confidence level.\n\nMichael\n\nPS -- Please do cc the list: I'm not a statistics expert by any means\nand I'd hate for what I say to go unreviewed by actual experts.\n\nOn Sat, Mar 31, 2012 at 8:19 PM, AbouEl-Makarim Aboueissa\n<aaboueissa at usm.maine.edu> wrote:\n> I need to compare the value of y1-hat versus y2-hat corresponding to these\n> values of x<-c(0.10,0.20,2.0,15.0,35.0)\n> e.g. for x=0.10 compare y1-hat(x=0.10) versus y2-hat(x=0.10) and so on.\n>\n> thanks\n> abou\n>\n>\n>>>> \"R. Michael Weylandt\" <michael.weylandt at gmail.com> 3/31/2012 8:10 PM >>>\n> ? approxfun\n>\n> f1 <- approxfun(x1,y1)\n> f2 <- approxfun(x2,y2)\n>\n> f1(x) - f2(x)\n>\n> But I'm not sure what you mean be compare...do you have a particular\n> test in mind?\n>\n> Michael\n>\n> On Sat, Mar 31, 2012 at 8:04 PM, AbouEl-Makarim Aboueissa\n> <aaboueissa at usm.maine.edu> wrote:\n>> Dear All:\n>>\n>> I am trying to compare points on two regression lines given some specific\n>> values of X. I am not sure how to do it in R and/or in SAS. Can someone help\n>> me, and show me how to conduct such test in R.\n>>\n>>\n>> You can use the following data for both lines.\n>>\n>> ### data for line 1:\n>> ### =========\n>>\n>> x1<-c(0.0,0.25,2.5,25.0,50.0)\n>> y1<-c(100.0,79.0,74.0,36.0,8.0)\n>>\n>>\n>>\n>> ### data for line 2:\n>> ### =========\n>>\n>> x2<-c(0.0,0.25,2.5,25.0,50.0)\n>> y2<-c(100.0,79.0,55.0,18.0,2.0)\n>>\n>>\n>> ### these are the given values of X:\n>> ###  ===================\n>>\n>> x<-c(0.10,0.20,2.0,15.0,35.0)\n>>\n>>\n>> thank you very much in advance\n>> abou\n>>\n>>\n>>\n>>\n>>\n>>\n>>\n>>\n>> ==========================\n>> AbouEl-Makarim Aboueissa, Ph.D.\n>> Associate Professor of Statistics\n>> Graduate Program Coordinator\n>> Department of Mathematics & Statistics\n>> University of Southern Maine\n>> 96 Falmouth Street\n>> P.O. Box 9300\n>> Portland, ME 04104-9300\n>> USA\n>>\n>>\n>> Tel: (207) 228-8389\n>> Fax: (207) 780-5607\n>> Email: aaboueissa at usm.maine.edu\n>>          aboueiss at yahoo.com\n>>\n>> Office: 301C Payson Smith\n>>\n>>\n>>        [[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "What I need is to compare these predicted values on both lines:\n \n> predict(m1, newdata = data.frame(x = x))\n       1        2        3        4        5 \n84.42477 84.26280 81.34729 60.29085 27.89632 ",
       "thread_id": "thread-7fed30591e2e",
       "thread_depth": 1,
-      "month": "2012-03"
+      "month": "2012-03",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120331/9f8ad71f/attachment.pl"
+      ]
     }
   ],
   "threads": [

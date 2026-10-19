@@ -31,11 +31,14 @@
       "references": [
         "<CAErODj9JtdzR=_OfxqkM3Ui4vkjEdVhGr0=EpdF48W8Mc5AF0w@mail.gmail.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20111122/fe97609c/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20111122/fe97609c/attachment.pl>",
+      "body_plain": "Paul,\n\nI recommend my book.\n\n Statistical Analysis and Data Display\nAn Intermediate Course with Examples in S-PLUS, R, and SAS\n\nSeries: Springer Texts in Statistics <http://www.springer.com/series/417>\n\n*Heiberger*, Richard M., *Holland*, Burt\n\n2004, XXIV, 730 p. 200 illus.\n\nhttp://springeronline.com/0-387-40270-5\n\nhttp://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=978-0-387-40270-3&x=0&y=0\nIt comes with the HH package for R and S-Plus, and code for all the\nexamples in R and S-Plus and for many of the examples in SAS.\n\nRich\n\n\nOn Tue, Nov 22, 2011 at 3:19 PM, Paul Johnson <pauljohn32 at gmail.com> wrote:\n\n> What regression textbooks are you using in stat courses that introduce\n> regression?  I'm looking for something with approximately the same\n> intended scope as Cohen, Cohen, West and Aiken, Applied Multiple\n> Regression.  That presents OLS, interactions, categorical variables,\n> and elementary GLM (logit, poisson).    In our second regression\n> course, we work in more detail with John Fox's Applied Regression and\n> the Companion book.  Leading up to that, I need some book that is a\n> bit more applied in nature, with examples from various fields of\n> study. Something about 200 pages long that ends with a chapter on\n> logistic regression would be fine.  There was a book called Regression\n> Analysis By Example, by Samprit Chatterjee, Ali S. Hadi and Bertram\n> Price, was headed in the right direction, but it seems not to be in\n> development any more.\n>\n> If it has R example code for certain basic analysis, it would be perfect.\n>\n> Suggestions?\n>\n> --\n> Paul E. Johnson\n> Professor, Political Science\n> 1541 Lilac Lane, Room 504\n> University of Kansas\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Paul,\n\nI recommend my book.\n\n Statistical Analysis and Data Display\nAn Intermediate Course with Examples in S-PLUS, R, and SAS\n\nSeries: Springer Texts in Statistics <http://www.springer.com/series/417",
       "thread_id": "thread-38c785691409",
       "thread_depth": 1,
-      "month": "2011-11"
+      "month": "2011-11",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20111122/fe97609c/attachment.pl"
+      ]
     },
     {
       "id": "msg-68cb292d6070",
@@ -50,11 +53,14 @@
         "<CAErODj9JtdzR=_OfxqkM3Ui4vkjEdVhGr0=EpdF48W8Mc5AF0w@mail.gmail.com>",
         "<CAGx1TMCVMuT62ZvEZEhAEzOAA1jQq=B_k-LGcfuNJcQp=2NtTA@mail.gmail.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20111122/6e2e7c22/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20111122/6e2e7c22/attachment.pl>",
+      "body_plain": "Hi,\n\nI highly recommend the first chapters of Gelman and Hill (2004). I think it\nhas everything you want - including R code -  and much more, without being\ntoo advanced. As a PhD student in a quantitative social science this book\nwas a wonderful resource for me to understand how serious statistical\nanalysis should be carried out in practice.\n\nBest,\n\nAntonio.\n\nOn Tue, Nov 22, 2011 at 12:38 PM, Richard M. Heiberger <rmh at temple.edu>wrote:\n\n> Paul,\n>\n> I recommend my book.\n>\n>  Statistical Analysis and Data Display\n> An Intermediate Course with Examples in S-PLUS, R, and SAS\n>\n> Series: Springer Texts in Statistics <http://www.springer.com/series/417>\n>\n> *Heiberger*, Richard M., *Holland*, Burt\n>\n> 2004, XXIV, 730 p. 200 illus.\n>\n> http://springeronline.com/0-387-40270-5\n>\n>\n> http://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=978-0-387-40270-3&x=0&y=0\n> It comes with the HH package for R and S-Plus, and code for all the\n> examples in R and S-Plus and for many of the examples in SAS.\n>\n> Rich\n>\n>\n> On Tue, Nov 22, 2011 at 3:19 PM, Paul Johnson <pauljohn32 at gmail.com>\n> wrote:\n>\n> > What regression textbooks are you using in stat courses that introduce\n> > regression?  I'm looking for something with approximately the same\n> > intended scope as Cohen, Cohen, West and Aiken, Applied Multiple\n> > Regression.  That presents OLS, interactions, categorical variables,\n> > and elementary GLM (logit, poisson).    In our second regression\n> > course, we work in more detail with John Fox's Applied Regression and\n> > the Companion book.  Leading up to that, I need some book that is a\n> > bit more applied in nature, with examples from various fields of\n> > study. Something about 200 pages long that ends with a chapter on\n> > logistic regression would be fine.  There was a book called Regression\n> > Analysis By Example, by Samprit Chatterjee, Ali S. Hadi and Bertram\n> > Price, was headed in the right direction, but it seems not to be in\n> > development any more.\n> >\n> > If it has R example code for certain basic analysis, it would be perfect.\n> >\n> > Suggestions?\n> >\n> > --\n> > Paul E. Johnson\n> > Professor, Political Science\n> > 1541 Lilac Lane, Room 504\n> > University of Kansas\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >\n>\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi,\n\nI highly recommend the first chapters of Gelman and Hill (2004). I think it\nhas everything you want - including R code -  and much more, without being\ntoo advanced. As a PhD student in a quantita",
       "thread_id": "thread-38c785691409",
       "thread_depth": 2,
-      "month": "2011-11"
+      "month": "2011-11",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20111122/6e2e7c22/attachment.pl"
+      ]
     },
     {
       "id": "msg-4efe616e40eb",

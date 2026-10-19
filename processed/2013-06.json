@@ -13,11 +13,14 @@
       "subject_clean": "Help with Complex Survey Analysis -- with strata and weight",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130608/7ff3b25c/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130608/7ff3b25c/attachment.pl>",
+      "body_plain": "Dear All:\n\nI was and I am teaching sampling techniques class. I do need some help with complex survey analysis.\n\nVariables:\n\nstratum1 (1,2)\nmonths (0,1,2)\nx1 (1=yes, 2=no) ---- categorical\nx2 --- continuous\nweight1 ---- the weight variable used in the analysis\n\n\n\nI  need help with how to:\n\n\n(1) get estimates for the mean for each month (0,1,2) --- the variable X2 \n\n(2) get estimates for the proportion of ones for each month (0,1,2) --- the variable X1 \n\n(3) do ANOVA test and multiple comparison test on means month0, month1, and month2\n\n(4) perform chi-squares test for the equality of proportions in the 3 months.\n\n(5) test for trend (increasing or decreasing of proportions and means over months)\n\nBelow is the data set (part of the data set). If you like me to send you the whole data set, please let me know, and I will send it by email. It is small file. the full data has 11 months (0,1,2,...,10).\n\nI really thank you all very much for your helps\n\nAbou\n\nData (this is just part of the data)\n========================\n\nX2    X1    stratum1    months    weight1\n29.4822    2    2    0    16.61921705\n33.2849    2    2    0    16.61921705\n16.9370    1    1    0    2.09612124\n19.0055    1    1    0    2.09612124\n21.1151    1    2    0    16.61921705\n25.4055    2    2    0    16.61921705\n24.4164    1    1    0    1.56167161\n19.0767    1    1    0    1.56167161\n23.1562    2    1    0    2.09612124\n23.3479    1    1    0    2.09612124\n21.7370    1    1    0    2.09612124\n24.9726    2    2    0    16.61921705\n20.3836    1    2    0    16.61921705\n20.0575    1    2    0    20.88637405\n17.6603    1    2    0    16.61921705\n25.2274    2    2    0    16.61921705\n20.9644    1    1    0    2.09612124\n32.8055    2    2    0    14.51497509\n39.5233    2    1    0    1.56167161\n17.7288    1    1    1    2.09612124\n18.3096    1    2    1    16.61921705\n25.8055    2    2    1    16.61921705\n30.0904    1    2    1    16.61921705\n27.8082    2    1    1    2.09612124\n37.3863    2    1    1    2.09612124\n26.2548    2    1    1    2.09612124\n17.8795    1    2    1    20.88637405\n19.8000    1    2    1    16.61921705\n28.6932    2    1    1    1.56167161\n27.1041    2    2    1    16.61921705\n36.1836    2    2    1    16.61921705\n19.8192    1    1    1    2.09612124\n31.9644    2    2    1    20.88637405\n27.0740    1    1    1    2.09612124\n23.5288    2    1    1    2.09612124\n21.9068    1    2    1    14.51497509\n20.3534    1    2    1    16.61921705\n29.4767    2    2    1    14.51497509\n22.8274    1    2    1    16.61921705\n21.2685    1    2    1    20.88637405\n31.8932    1    1    1    1.56167161\n31.8795    2    1    1    2.09612124\n21.2630    2    1    1    2.09612124\n18.7562    2    1    1    2.09612124\n16.8822    1    2    1    20.88637405\n22.0164    2    2    2    20.88637405\n27.4959    2    1    2    2.09612124\n27.4904    2    1    2    1.56167161\n2.7096    2    2    2    14.51497509\n23.0027    1    2    2    16.61921705\n19.2767    1    2    2    16.61921705\n30.4466    1    2    2    16.61921705\n36.5425    2    2    2    16.61921705\n32.2521    2    1    2    1.56167161\n36.9534    1    2    2    14.51497509\n30.4164    2    2    2    14.51497509\n20.2767    2    1    2    2.09612124\n17.2356    1    2    2    20.88637405\n20.8247    2    2    2    16.61921705\n20.8795    1    2    2    16.61921705\n27.5260        2    2    16.61921705\n19.2493    1    2    2    16.61921705\n17.8521    1    2    2    16.61921705\n19.6822    1    2    2    16.61921705\n36.8356    2    1    2    1.5616716\n \n===============\n\nwith many thanks\nabou\n \n \n \n==========================\nAbouEl-Makarim Aboueissa, Ph.D.\nAssociate Professor of Statistics\nGraduate Program Coordinator\nDepartment of Mathematics & Statistics\nUniversity of Southern Maine\n96 Falmouth Street\nP.O. Box 9300\nPortland, ME 04104-9300\nUSA\n \n\nTel: (207) 228-8389\nFax: (207) 780-5607\nEmail: aaboueissa at usm.maine.edu\n          aboueiss at yahoo.com\n \nOffice: 301C Payson Smith\n \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\nI was and I am teaching sampling techniques class. I do need some help with complex survey analysis.\n\nVariables:\n\nstratum1 (1,2)\nmonths (0,1,2)\nx1 (1=yes, 2=no) ---- categorical\nx2 --- cont",
       "thread_id": "thread-1bc8d0435f29",
       "thread_depth": 0,
-      "month": "2013-06"
+      "month": "2013-06",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130608/7ff3b25c/attachment.pl"
+      ]
     },
     {
       "id": "msg-8c3eed41247b",
@@ -29,11 +32,14 @@
       "subject_clean": "Papers on consistency results of MLE under fixed left-censoring",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130615/4fe21011/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130615/4fe21011/attachment.pl>",
+      "body_plain": "Dear R Users:\n\nMy request may be not related, but I thought to ask it here. I am looking\nfor some references (papers) on consistency results of MLE under fixed\nleft-censoring. Can someone help me with this.\n\nthanks\nSteven\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R Users:\n\nMy request may be not related, but I thought to ask it here. I am looking\nfor some references (papers) on consistency results of MLE under fixed\nleft-censoring. Can someone help me with",
       "thread_id": "thread-8c3eed41247b",
       "thread_depth": 0,
-      "month": "2013-06"
+      "month": "2013-06",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130615/4fe21011/attachment.pl"
+      ]
     },
     {
       "id": "msg-68316cbb9586",
@@ -45,11 +51,14 @@
       "subject_clean": "Papers on consistency results of MLE under fixed left-censoring",
       "in_reply_to": "<CAHDp66Am0Mb_g7mvcGgO84-5yrQQbsy5Fd0PBv3NwNNnVcxU_Q@mail.gmail.com>",
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130615/7514928b/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130615/7514928b/attachment.pl>",
+      "body_plain": "Hi Steven:\n\nI do not believe it. I am looking for almost the same thing. I hope that someone can help both of us.\n\ngood luck\naboueissa\n\n========================\n\nAbouEl-Makarim Aboueissa\n\nSozan Elsalakawy\n\nMohamed Agamia\n\n\n\n246 Auburn Street, #158\n\nPortland, ME 04103\n\nUSA\n\n\n\nTel: (207) 797-2724\n\nEmail: aboueiss at yahoo.com\n\n--- On Sat, 6/15/13, Steven Stoline <sstoline at gmail.com> wrote:\n\nFrom: Steven Stoline <sstoline at gmail.com>\nSubject: [R-sig-teaching] Papers on consistency results of MLE under fixed left-censoring\nTo: r-sig-teaching at r-project.org\nDate: Saturday, June 15, 2013, 3:13 PM\n\nDear R Users:\n\nMy request may be not related, but I thought to ask it here. I am looking\nfor some references (papers) on consistency results of MLE under fixed\nleft-censoring. Can someone help me with this.\n\nthanks\nSteven\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n    [[alternative HTML version deleted]]\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi Steven:\n\nI do not believe it. I am looking for almost the same thing. I hope that someone can help both of us.\n\ngood luck\naboueissa\n\n========================\n\nAbouEl-Makarim Aboueissa\n\nSozan Elsala",
       "thread_id": "thread-8c3eed41247b",
       "thread_depth": 1,
-      "month": "2013-06"
+      "month": "2013-06",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130615/7514928b/attachment.pl"
+      ]
     },
     {
       "id": "msg-d7e47e78f0e9",
@@ -61,11 +70,14 @@
       "subject_clean": "Consistency of asymptotic variances of MLEs under fixed left-censoring",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130626/3501c847/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130626/3501c847/attachment.pl>",
+      "body_plain": "Dera R users: I know it is not related, but hopefully someone can help.\n\nI am looking for some references (papers or books) on the conistency\nresults of maximim likelihood estimators under fixed left-censoring.\n\nmany thanks\nSteven\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dera R users: I know it is not related, but hopefully someone can help.\n\nI am looking for some references (papers or books) on the conistency\nresults of maximim likelihood estimators under fixed left-",
       "thread_id": "thread-d7e47e78f0e9",
       "thread_depth": 0,
-      "month": "2013-06"
+      "month": "2013-06",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130626/3501c847/attachment.pl"
+      ]
     }
   ],
   "threads": [

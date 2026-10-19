@@ -13,11 +13,14 @@
       "subject_clean": "graphing inequalities (intervals) in one varible",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130508/6bf8dc07/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130508/6bf8dc07/attachment.pl>",
+      "body_plain": "Dear All:\n\nIt seems a very silly question. But I never tried it before. I am teaching a college algebra class this summer. \n\nI need some help with graphing intervals on the real line. For examples:\n\n{x | -7<= x < 5 and x > 7}\n\n{x | x > 3}\n\netc...\n\n\nthank you very much\nabou\n\n========================\n\nAbouEl-Makarim Aboueissa\n\nSozan Elsalakawy\n\nMohamed Agamia\n\n\n\n246 Auburn Street, #158\n\nPortland, ME 04103\n\nUSA\n\n\n\nTel: (207) 797-2724\n\nEmail: aboueiss at yahoo.com\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n\nIt seems a very silly question. But I never tried it before. I am teaching a college algebra class this summer. \n\nI need some help with graphing intervals on the real line. For examples:\n\n{",
       "thread_id": "thread-65cf4ad64b5b",
       "thread_depth": 0,
-      "month": "2013-05"
+      "month": "2013-05",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130508/6bf8dc07/attachment.pl"
+      ]
     },
     {
       "id": "msg-3840d2fae4b0",
@@ -65,11 +68,14 @@
       "subject_clean": "graphing inequalities (intervals) in one varible",
       "in_reply_to": "<CAAmySGN_gjugskBKvEQJePKm+W02UXreYUZ34_Oxx-aFngL74w@mail.gmail.com>",
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130509/de9fae0e/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130509/de9fae0e/attachment.pl>",
+      "body_plain": "Dear Michael:\n\nThank you very much.\n\nI am still not able to make it works.\n\n\nthanks\nabou\n\n========================\n\nAbouEl-Makarim Aboueissa\n\nSozan Elsalakawy\n\nMohamed Agamia\n\n\n\n246 Auburn Street, #158\n\nPortland, ME 04103\n\nUSA\n\n\n\nTel: (207) 797-2724\n\nEmail: aboueiss at yahoo.com\n\n--- On Thu, 5/9/13, R. Michael Weylandt <michael.weylandt at gmail.com> wrote:\n\nFrom: R. Michael Weylandt <michael.weylandt at gmail.com>\nSubject: Re: [R-sig-teaching] graphing inequalities (intervals) in one varible\nTo: \"Yahoo!\" <aboueiss at yahoo.com>\nCc: \"R-sig-teaching\" <r-sig-teaching at r-project.org>\nDate: Thursday, May 9, 2013, 6:49 AM\n\nHere's the start of a function. I'll leave it to you to do it better\n(it should probably also use S4 methods, but that's another project):\n\ninterval <- function(lower = -Inf, upper = Inf, lower_closed = FALSE,\nupper_closed = FALSE){\n  structure(.Data = NULL, lower = lower, upper = upper, lower_closed =\nlower_closed, upper_closed = upper_closed, class = 'interval')\n}\n\nplot.interval <- function(x){\n l <- attr(x, \"lower\")\n u <- attr(x, \"upper\")\n\n r <- c(l, u) * c(if(l > 0) 0.7 else 1.2, if(u > 0) 1.2 else 0.7)\n plot(r, c(0,1), main = '', bty = 'n', xlab = '', ylab = '', yaxt =\n'n', type = 'n', xaxt = 'n')\n\n axis(1, at = seq(r[1], r[2], length.out = 10))\n\n lines(c(l, u), c(0.5, 0.5), col = 2, lwd = 2)\n\n lc <- attr(x, 'lower_closed')\n uc <- attr(x, 'upper_closed')\n\n\n points(c(l, u), c(0.5, 0.5), pch = c(1, 19)[c(lc, uc) + 1], col = 2, cex = 2)\n\n}\n\nOn Wed, May 8, 2013 at 12:10 PM, Yahoo! <aboueiss at yahoo.com> wrote:\n> Dear All:\n>\n> It seems a very silly question. But I never tried it before. I am teaching a college algebra class this summer.\n>\n> I need some help with graphing intervals on the real line. For examples:\n>\n> {x | -7<= x < 5 and x > 7}\n>\n> {x | x > 3}\n>\n> etc...\n>\n>\n> thank you very much\n> abou\n>\n> ========================\n>\n> AbouEl-Makarim Aboueissa\n>\n> Sozan Elsalakawy\n>\n> Mohamed Agamia\n>\n>\n>\n> 246 Auburn Street, #158\n>\n> Portland, ME 04103\n>\n> USA\n>\n>\n>\n> Tel: (207) 797-2724\n>\n> Email: aboueiss at yahoo.com\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear Michael:\n\nThank you very much.\n\nI am still not able to make it works.\n\n\nthanks\nabou\n\n========================\n\nAbouEl-Makarim Aboueissa\n\nSozan Elsalakawy\n\nMohamed Agamia\n\n\n\n246 Auburn Street, #15",
       "thread_id": "thread-65cf4ad64b5b",
       "thread_depth": 2,
-      "month": "2013-05"
+      "month": "2013-05",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130509/de9fae0e/attachment.pl"
+      ]
     },
     {
       "id": "msg-e12146cdd2c1",
@@ -83,11 +89,14 @@
       "references": [
         "<1368099202.83784.YahooMailClassic@web120604.mail.ne1.yahoo.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130509/500e8748/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130509/500e8748/attachment.pl>",
+      "body_plain": "Something like this might get you at least part of the way there:\n\nconst = function(x) {x*0}\nplot(c(-100,100), c(0,0), col=\"gray60\", lty=3, lwd=2, yaxt=\"n\",\n     xlim=c(-10,10), type=\"l\",\n     xlab=\"\", ylab=\"\")\ncurve(const, 3, 8, lwd=4, add=TRUE)\npoints(3, 0, pch=16, cex=1.5)\n\nThen you can fiddle with the axis() command to get the x-axis looking how you want it. Or you can turn off the x-axis and add axis-like annotations right beneath the plotted interval.\n\nYou can also package the code above into a function for plotting any interval(s) entered by the user.\n\nHTH,\nJoel\n\nOn May 9, 2013, at 4:33 AM, Yahoo! wrote:\n\n> Dear Michael:\n> \n> Thank you very much.\n> \n> I am still not able to make it works.\n> \n> \n> thanks\n> abou\n> \n> ========================\n> \n> AbouEl-Makarim Aboueissa\n> \n> Sozan Elsalakawy\n> \n> Mohamed Agamia\n> \n> \n> \n> 246 Auburn Street, #158\n> \n> Portland, ME 04103\n> \n> USA\n> \n> \n> \n> Tel: (207) 797-2724\n> \n> Email: aboueiss at yahoo.com\n> \n> --- On Thu, 5/9/13, R. Michael Weylandt <michael.weylandt at gmail.com> wrote:\n> \n> From: R. Michael Weylandt <michael.weylandt at gmail.com>\n> Subject: Re: [R-sig-teaching] graphing inequalities (intervals) in one varible\n> To: \"Yahoo!\" <aboueiss at yahoo.com>\n> Cc: \"R-sig-teaching\" <r-sig-teaching at r-project.org>\n> Date: Thursday, May 9, 2013, 6:49 AM\n> \n> Here's the start of a function. I'll leave it to you to do it better\n> (it should probably also use S4 methods, but that's another project):\n> \n> interval <- function(lower = -Inf, upper = Inf, lower_closed = FALSE,\n> upper_closed = FALSE){\n>   structure(.Data = NULL, lower = lower, upper = upper, lower_closed =\n> lower_closed, upper_closed = upper_closed, class = 'interval')\n> }\n> \n> plot.interval <- function(x){\n> l <- attr(x, \"lower\")\n> u <- attr(x, \"upper\")\n> \n> r <- c(l, u) * c(if(l > 0) 0.7 else 1.2, if(u > 0) 1.2 else 0.7)\n> plot(r, c(0,1), main = '', bty = 'n', xlab = '', ylab = '', yaxt =\n> 'n', type = 'n', xaxt = 'n')\n> \n> axis(1, at = seq(r[1], r[2], length.out = 10))\n> \n> lines(c(l, u), c(0.5, 0.5), col = 2, lwd = 2)\n> \n> lc <- attr(x, 'lower_closed')\n> uc <- attr(x, 'upper_closed')\n> \n> \n> points(c(l, u), c(0.5, 0.5), pch = c(1, 19)[c(lc, uc) + 1], col = 2, cex = 2)\n> \n> }\n> \n> On Wed, May 8, 2013 at 12:10 PM, Yahoo! <aboueiss at yahoo.com> wrote:\n>> Dear All:\n>> \n>> It seems a very silly question. But I never tried it before. I am teaching a college algebra class this summer.\n>> \n>> I need some help with graphing intervals on the real line. For examples:\n>> \n>> {x | -7<= x < 5 and x > 7}\n>> \n>> {x | x > 3}\n>> \n>> etc...\n>> \n>> \n>> thank you very much\n>> abou\n>> \n>> ========================\n>> \n>> AbouEl-Makarim Aboueissa\n>> \n>> Sozan Elsalakawy\n>> \n>> Mohamed Agamia\n>> \n>> \n>> \n>> 246 Auburn Street, #158\n>> \n>> Portland, ME 04103\n>> \n>> USA\n>> \n>> \n>> \n>> Tel: (207) 797-2724\n>> \n>> Email: aboueiss at yahoo.com\n>>          [[alternative HTML version deleted]]\n>> \n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n> \t[[alternative HTML version deleted]]\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Something like this might get you at least part of the way there:\n\nconst = function(x) {x*0}\nplot(c(-100,100), c(0,0), col=\"gray60\", lty=3, lwd=2, yaxt=\"n\",\n     xlim=c(-10,10), type=\"l\",\n     xlab=\"\"",
       "thread_id": "thread-65cf4ad64b5b",
       "thread_depth": 3,
-      "month": "2013-05"
+      "month": "2013-05",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130509/500e8748/attachment.pl"
+      ]
     },
     {
       "id": "msg-35d6299a7c6c",
@@ -119,11 +128,14 @@
       "references": [
         "<1368099202.83784.YahooMailClassic@web120604.mail.ne1.yahoo.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130509/b44c9097/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130509/b44c9097/attachment.pl>",
+      "body_plain": "You could perhaps say what you tried....\n\nMichael\n\nOn May 9, 2013, at 12:33, Yahoo! <aboueiss at yahoo.com> wrote:\n\n> \n> Dear Michael:\n> \n> Thank you very much.\n> \n> I am still not able to make it works.\n> \n> \n> thanks\n> abou\n> \n> ========================\n> AbouEl-Makarim Aboueissa\n> Sozan Elsalakawy\n> Mohamed Agamia\n> \n> 246 Auburn Street, #158\n> Portland, ME 04103\n> USA\n> \n> Tel: (207) 797-2724\n> Email: aboueiss at yahoo.com\n> \n> --- On Thu, 5/9/13, R. Michael Weylandt <michael.weylandt at gmail.com> wrote:\n> \n> From: R. Michael Weylandt <michael.weylandt at gmail.com>\n> Subject: Re: [R-sig-teaching] graphing inequalities (intervals) in one varible\n> To: \"Yahoo!\" <aboueiss at yahoo.com>\n> Cc: \"R-sig-teaching\" <r-sig-teaching at r-project.org>\n> Date: Thursday, May 9, 2013, 6:49 AM\n> \n> Here's the start of a function. I'll leave it to you to do it better\n> (it should probably also use S4 methods, but that's another project):\n> \n> interval <- function(lower = -Inf, upper = Inf, lower_closed = FALSE,\n> upper_closed = FALSE){\n>   structure(.Data = NULL, lower = lower, upper = upper, lower_closed =\n> lower_closed, upper_closed = upper_closed, class = 'interval')\n> }\n> \n> plot.interval <- function(x){\n> l <- attr(x, \"lower\")\n> u <- attr(x, \"upper\")\n> \n> r <- c(l, u) * c(if(l > 0) 0.7 else 1.2, if(u > 0) 1.2 else 0.7)\n> plot(r, c(0,1), main = '', bty = 'n', xlab = '', ylab = '', yaxt =\n> 'n', type = 'n', xaxt = 'n')\n> \n> axis(1, at = seq(r[1], r[2], length.out = 10))\n> \n> lines(c(l, u), c(0.5, 0.5), col = 2, lwd = 2)\n> \n> lc <- attr(x, 'lower_closed')\n> uc <- attr(x, 'upper_closed')\n> \n> \n> points(c(l, u), c(0.5, 0.5), pch = c(1, 19)[c(lc, uc) + 1], col = 2, cex = 2)\n> \n> }\n> \n> On Wed, May 8, 2013 at 12:10 PM, Yahoo! <aboueiss at yahoo.com> wrote:\n> > Dear All:\n> >\n> > It seems a very silly question. But I never tried it before. I am teaching a college algebra class this summer.\n> >\n> > I need some help with graphing intervals on the real line. For examples:\n> >\n> > {x | -7<= x < 5 and x > 7}\n> >\n> > {x | x > 3}\n> >\n> > etc...\n> >\n> >\n> > thank you very much\n> > abou\n> >\n> > ========================\n> >\n> > AbouEl-Makarim Aboueissa\n> >\n> > Sozan Elsalakawy\n> >\n> > Mohamed Agamia\n> >\n> >\n> >\n> > 246 Auburn Street, #158\n> >\n> > Portland, ME 04103\n> >\n> > USA\n> >\n> >\n> >\n> > Tel: (207) 797-2724\n> >\n> > Email: aboueiss at yahoo.com\n> >         [[alternative HTML version deleted]]\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "You could perhaps say what you tried....\n\nMichael\n\nOn May 9, 2013, at 12:33, Yahoo! <aboueiss at yahoo.com> wrote:\n\n> \n> Dear Michael:\n> \n> Thank you very much.\n> \n> I am still not able to make it wor",
       "thread_id": "thread-65cf4ad64b5b",
       "thread_depth": 3,
-      "month": "2013-05"
+      "month": "2013-05",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130509/b44c9097/attachment.pl"
+      ]
     }
   ],
   "threads": [

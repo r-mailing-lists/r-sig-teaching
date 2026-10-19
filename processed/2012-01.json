@@ -29,11 +29,14 @@
       "subject_clean": "Example(s) of Biomodal distributions",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120115/b715d489/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120115/b715d489/attachment.pl>",
+      "body_plain": "Dear R users:\n \nI am currently teaching a course in Statistics. Can someone give an R code(s) to create a biomodal curve(s) with shaded area of 90% and with 5% in each tail\n \nWith many thanks\nabou\n \n \n \n==========================\nAbouEl-Makarim Aboueissa, Ph.D.\nAssociate Professor of Statistics\nGraduate Program Coordinator\nDepartment of Mathematics & Statistics\nUniversity of Southern Maine\n96 Falmouth Street\nP.O. Box 9300\nPortland, ME 04104-9300\nUSA\n \n\nTel: (207) 228-8389\nFax: (207) 780-5607\nEmail: aaboueissa at usm.maine.edu\n          aboueiss at yahoo.com\n \nOffice: 301C Payson Smith\n \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users:\n \nI am currently teaching a course in Statistics. Can someone give an R code(s) to create a biomodal curve(s) with shaded area of 90% and with 5% in each tail\n \nWith many thanks\nabou\n \n ",
       "thread_id": "thread-d10c89ee287c",
       "thread_depth": 0,
-      "month": "2012-01"
+      "month": "2012-01",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120115/b715d489/attachment.pl"
+      ]
     },
     {
       "id": "msg-ea253ab57e6d",
@@ -101,11 +104,14 @@
       "references": [
         "<4F12E599020000A6000B7FA6@uct5.uct.usm.maine.edu>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120116/dd6642da/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120116/dd6642da/attachment.pl>",
+      "body_plain": "I have modified the distPlot() function in the mosaic package so that  \nthe following makes the desired plot (as a density histogram):\n\ndistPlot( \"binom\", params=list(35,.25), groups= y <  \ndbinom(qbinom(0.05, 35, .25), 35,.25), kind='hist')\n\nThe groups argument is used to get the desired shading of tail  \nprobabilities.  (Technically, it is not shading 5% in each tail, but  \nit is doing one of the reasonable approximations to that).\n\nI expect this feature will show up on github sometime Monday (along  \nwith some other updates scheduled for release) and on CRAN in the near  \nfuture.\n\nIf you are really anxious, you can get it from my personal repository  \nusing\n\n\tinstall.packages('mosaic', repos='http://www.calvin.edu/~rpruim/R',  \ntype='source')\n\nSince images don't go through on the mailing list, I've placed a few  \nhere:\n\n\thttp://www.calvin.edu/~rpruim/R/distPlot.pdf\n\n---rjp\n\n\nOn Jan 15, 2012, at 2:41 PM, AbouEl-Makarim Aboueissa wrote:\n\n> Dear R users:\n>\n> I am currently teaching a course in Statistics. Can someone give an  \n> R code(s) to create a biomodal curve(s) with shaded area of 90% and  \n> with 5% in each tail\n>\n> With many thanks\n> abou\n>\n>\n>\n> ==========================\n> AbouEl-Makarim Aboueissa, Ph.D.\n> Associate Professor of Statistics\n> Graduate Program Coordinator\n> Department of Mathematics & Statistics\n> University of Southern Maine\n> 96 Falmouth Street\n> P.O. Box 9300\n> Portland, ME 04104-9300\n> USA\n>\n>\n> Tel: (207) 228-8389\n> Fax: (207) 780-5607\n> Email: aaboueissa at usm.maine.edu\n>          aboueiss at yahoo.com\n>\n> Office: 301C Payson Smith\n>\n>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I have modified the distPlot() function in the mosaic package so that  \nthe following makes the desired plot (as a density histogram):\n\ndistPlot( \"binom\", params=list(35,.25), groups= y <  \ndbinom(qbi",
       "thread_id": "thread-d10c89ee287c",
       "thread_depth": 1,
-      "month": "2012-01"
+      "month": "2012-01",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120116/dd6642da/attachment.pl"
+      ]
     },
     {
       "id": "msg-b725d4528b93",

@@ -47,11 +47,14 @@
       "references": [
         "<20090702141957.69578.qmail@mv.mv.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090702/b8e11068/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090702/b8e11068/attachment.pl>",
+      "body_plain": "I have been working on some easy-to-use open source tools specifically\ngeared to help with documenting R, and would be very interested in\nhelping/suggesting a good set of tools to make it easy to create and\nmaintain a website like this.\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I have been working on some easy-to-use open source tools specifically\ngeared to help with documenting R, and would be very interested in\nhelping/suggesting a good set of tools to make it easy to crea",
       "thread_id": "thread-014ee8e5bf2e",
       "thread_depth": 1,
-      "month": "2009-07"
+      "month": "2009-07",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090702/b8e11068/attachment.pl"
+      ]
     },
     {
       "id": "msg-180d06cb8d14",
@@ -101,11 +104,14 @@
       "references": [
         "<20090702212751.1653.qmail@mv.mv.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090702/05cd88a0/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090702/05cd88a0/attachment.pl>",
+      "body_plain": "On Thu, Jul 2, 2009 at 2:27 PM, Robert W. Hayden <hayden at mv.mv.com> wrote:\n\n>\n> Right now I am trying to remember how to get a scatterplot with\n> boxplots of x and y separately in the margin.  I think I need one of\n> the packages but I don't know which.\n>\n\ncar library by John Fox has a function that does that: I guess is\nscatterplot() or something like that\n\n\nalternatively, you can program your own function instead :)\n\nBest,\n\nAntonio.\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "On Thu, Jul 2, 2009 at 2:27 PM, Robert W. Hayden <hayden at mv.mv.com> wrote:\n\n>\n> Right now I am trying to remember how to get a scatterplot with\n> boxplots of x and y separately in the margin.  I th",
       "thread_id": "thread-a2ee9366604a",
       "thread_depth": 1,
-      "month": "2009-07"
+      "month": "2009-07",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090702/05cd88a0/attachment.pl"
+      ]
     },
     {
       "id": "msg-31c0e519dfa2",
@@ -136,11 +142,14 @@
       "subject_clean": "X-Y charts with gridlines in R",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090713/2d9e20b8/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090713/2d9e20b8/attachment.pl>",
+      "body_plain": "Dear All R users:\n \nCould you please help me out how to get such graphs in R.\n \nPlease click on this link to see the graphs. The file called graphs_one.\n \nhttp://www.usm.maine.edu/~aaboueissa/Rhelps/Rhelps.html \n \n \nWith many thanks\n \nAbou\n \n \n \n \n==========================\nAbouEl-Makarim Aboueissa, Ph.D.\nAssistant Professor of Statistics\nDepartment of Mathematics & Statistics\nUniversity of Southern Maine\n96 Falmouth Street\nP.O. Box 9300\nPortland, ME 04104-9300\nUSA\n \n\nTel: (207) 228-8389\nFax: (207) 780-5607\nEmail: aaboueissa at usm.maine.edu\n          aboueiss at yahoo.com\n \nWeb address:  http://www.usm.maine.edu/~aaboueissa/\n \nOffice: 301C Payson Smith\n \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All R users:\n \nCould you please help me out how to get such graphs in R.\n \nPlease click on this link to see the graphs. The file called graphs_one.\n \nhttp://www.usm.maine.edu/~aaboueissa/Rhelps/R",
       "thread_id": "thread-bb6c6df39bbc",
       "thread_depth": 0,
-      "month": "2009-07"
+      "month": "2009-07",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090713/2d9e20b8/attachment.pl"
+      ]
     },
     {
       "id": "msg-651530a4cfc4",
@@ -155,11 +164,14 @@
         "<4A5B285E.01BB.00A6.1@usm.maine.edu>",
         "<644e1f320907131540g53af39feq8e43f62e0aab682b@mail.gmail.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090713/c35a37a4/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090713/c35a37a4/attachment.pl>",
+      "body_plain": "Dear Jim:\n \nHere it is.\n \nhttp://www.usm.maine.edu/~aaboueissa/Rhelps/graphs_one.pdf \n \nWith many thanks.\n \nAbou\n \n \n==========================\nAbouEl-Makarim Aboueissa, Ph.D.\nAssistant Professor of Statistics\nDepartment of Mathematics & Statistics\nUniversity of Southern Maine\n96 Falmouth Street\nP.O. Box 9300\nPortland, ME 04104-9300\nUSA\n \n\nTel: (207) 228-8389\nFax: (207) 780-5607\nEmail: aaboueissa at usm.maine.edu\n          aboueiss at yahoo.com\n \nWeb address:  http://www.usm.maine.edu/~aaboueissa/\n \nOffice: 301C Payson Smith\n \n\n\n>>> jim holtman <jholtman at gmail.com> 7/13/2009 6:40 PM >>>\nPut it out as a PDF file or some picture.  People are reluctant to\nopen .doc files\n\nOn Mon, Jul 13, 2009 at 12:28 PM, AbouEl-Makarim\nAboueissa<aaboueissa at usm.maine.edu> wrote:\n> Dear All R users:\n>\n> Could you please help me out how to get such graphs in R.\n>\n> Please click on this link to see the graphs. The file called graphs_one.\n>\n> http://www.usm.maine.edu/~aaboueissa/Rhelps/Rhelps.html \n>\n>\n> With many thanks\n>\n> Abou\n>\n>\n>\n>\n> ==========================\n> AbouEl-Makarim Aboueissa, Ph.D.\n> Assistant Professor of Statistics\n> Department of Mathematics & Statistics\n> University of Southern Maine\n> 96 Falmouth Street\n> P.O. Box 9300\n> Portland, ME 04104-9300\n> USA\n>\n>\n> Tel: (207) 228-8389\n> Fax: (207) 780-5607\n> Email: aaboueissa at usm.maine.edu \n>          aboueiss at yahoo.com \n>\n> Web address:  http://www.usm.maine.edu/~aaboueissa/ \n>\n> Office: 301C Payson Smith\n>\n>\n>        [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching \n>\n\n\n\n-- \nJim Holtman\nCincinnati, OH\n+1 513 646 9390\n\nWhat is the problem that you are trying to solve?\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear Jim:\n \nHere it is.\n \nhttp://www.usm.maine.edu/~aaboueissa/Rhelps/graphs_one.pdf \n \nWith many thanks.\n \nAbou\n \n \n==========================\nAbouEl-Makarim Aboueissa, Ph.D.\nAssistant Professor of S",
       "thread_id": "thread-651530a4cfc4",
       "thread_depth": 0,
-      "month": "2009-07"
+      "month": "2009-07",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090713/c35a37a4/attachment.pl"
+      ]
     },
     {
       "id": "msg-67281139f7ad",

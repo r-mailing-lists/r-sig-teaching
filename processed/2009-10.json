@@ -13,11 +13,14 @@
       "subject_clean": "Rlight, a simplified version of R for very basic tools",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091003/de8ca35d/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091003/de8ca35d/attachment.pl>",
+      "body_plain": "Hi the list,\n\n_**** In short ****__* *_\nR is too complex for basic level non statistician students especially \nwhen they compare it to the %$*#& Excel. It could be interesting to \ncreate a package that would propose the very basic tools with a very \nsimplified structure.\n\n\n_**** More precisely ****__* *_\nReading this list, I have the feeling that R is less and less for \nspecialist, more and more for occasional users. On my side, I am \nteaching R to sports student... Statistics is definitely NOT their \nfavorite topic. They just need to be basic user: they need to know how \nto compute a mean, median, some basic test (parametric or not), some \nregression. They also need to be able to deal with real data with \nmissing value.\nTo their point of vu (point of vu that I share most of the time), one \nmajor difficulty in R is the \"non uniformity\" of syntaxes:\n\n- Why does median not work on ordered factor?\n- Why does cor(age,size,na.rm=TRUE) not work?\n- Why does summary report the quartiles but not the standard deviation?\n- Why is it t.test(age~groupe) and cor.test(age,size)?\n- Why is it boxplot(age) and barplot(table(age))?\n- Why is it as.numeric but ordered?\n- Sir, we hate changing the working directory and using the %$*#& \nfunction \"read.csv\". Why not stopping working on R and start using Excel \nagain, like in all other classes with all the other teachers? (I do NOT \nshare this one :-) )\n- ...\n\nThe calculation of a statistics relatively to a specific modality (like \ncalculation of the mean(size) but only for men then for women) is also a \nbasic needs, one of the first things they want to do. But unfortunately, \nit is very complicated: it needs the introduction of vector, logical \noperator, lines selection using a logical vector. And every syntax \nmistake is fatal. Under Excel, you need to know how to sort the data, \nthen use the function \"=mean\"...\n\nIt is why I start to create a package (called \"R light\" but that can \nchange) that would propose a simplified and more uniform version of the \ntool that low levels user need (call the \"light tools\"?). The syntax \ncould be very simple but should suffer NO exception:\n \nfunction(variable) : works on a variable\nfunction(variable~groups): works on a variable relatively to each group \nmodality.\nThen Lmean will compute the mean, Lvar will compute the variance, \nLmedian the median and so on.\n \n*_*** Examples *** _*\n>  age <- c(15,16,18,15,16,12)\n>  groups <- c(\"M\",\"F\",\"M\",\"F\",\"M\",\"F\")\n \n>  Lmean(age)\n[1] 15.33333\nLmean(age~groups)\n       F        M\n14.33333 16.33333\n \n>  Lvar(age)\n [1] 3.866667\n \n>  Lvar(age~groups)\n       F        M\n4.333333 2.333333\n \n>  marks <- ordered(\"A\",\"B\",\"A\",\"C\",\"B\",\"C\",levels=c(\"C\",\"B\",\"A\"))\n>  Lmedian(marks)\n[1] B\nLevels: C < B < A\n>  Lmedian(marks~groups)\nF M\nC A\nLevels: C < B < A\n \n\nThat way, R would be simpler than Excel...\n \n \n*_*** What next? *** _*\nSo I start to create the package but it takes me a lot of time (like \nalways when creating a package). Since this can be useful for a lot of R \nteacher, I think that some people might be interested in collaborating \non this project. Several needs:\n \n- Brain storming on what should be in Rlight: What are the tools those \nbasic users that know nothing on computing and not that much on \nstatistics do need?\n- Brain storming on the syntax: I define \"function(variable)\" and \n\"function(variable~groups)\", some other syntax might be interesting \nspecially for more advance concept.\n- Writing documentation: well you guess it by reading this email, I am \nNOT a native English speaker...\n- Writing some L function.\n \nYou will find the code that already exists and some tests here:\nhttp://christophe.genolini.free.fr/aTelecharger/Rlight.r\n \n\n\nChristophe Genolini\n\nAssociate professor\n      University of Paris X\n      INSERM U699\nR package maintainer:\n     - r2lUniv\n     - kml\nR Tutorial (on CRAN):\n     - A (Not So) Short Introduction to S4\n     - Petit Manuel de S4\n     - Lire; Compter ; Tester... avec R\n     - Construire un Package\n     - R, bonnes pratiques\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi the list,\n\n_**** In short ****__* *_\nR is too complex for basic level non statistician students especially \nwhen they compare it to the %$*#& Excel. It could be interesting to \ncreate a package tha",
       "thread_id": "thread-d6eaa2579664",
       "thread_depth": 0,
-      "month": "2009-10"
+      "month": "2009-10",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091003/de8ca35d/attachment.pl"
+      ]
     },
     {
       "id": "msg-35f7ef64e90e",
@@ -63,11 +66,14 @@
       "subject_clean": "Breusch-pagan and white test - check homoscedasticity",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091016/90aef92c/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091016/90aef92c/attachment.pl>",
+      "body_plain": "Hi r-programmers,\n\nI performe Breusch-Pagan tests (bptest in package lmtest) to check the\nhomoscedasticity of the residuals from a linear model and I carry out carry\nout White's test via\nbptest (formula, ~ x * z + I(x^2) + I(z^2)) include all regressors and the\nsquares/cross-products in the auxiliary regression.\n\nBut what can I do if I want find coefficient and p-values of variables x, z,\nx*z, I(x^2), I(z^2) ? **I wish find out which is responsible of\nheteroscedasticity...\n\nCan anyone help?\n\nthanking you in advance,\n\nGautier RENAULT\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi r-programmers,\n\nI performe Breusch-Pagan tests (bptest in package lmtest) to check the\nhomoscedasticity of the residuals from a linear model and I carry out carry\nout White's test via\nbptest (formu",
       "thread_id": "thread-d14f01520474",
       "thread_depth": 0,
-      "month": "2009-10"
+      "month": "2009-10",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091016/90aef92c/attachment.pl"
+      ]
     },
     {
       "id": "msg-b28d6975a6ad",
@@ -151,11 +157,14 @@
       "subject_clean": "bagging",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091024/a5504c02/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091024/a5504c02/attachment.pl>",
+      "body_plain": "Dear sir,\nI have a data set which name is \"c78p\",now I want to deal with it with bagging.% of data from c78p as training set is 50%,and number of bootstrap random samples with replacement from c78p is 5,use SVM in each run,can you help me to write the code?\nThanks! \t\t \t   \t\t  \n_________________________________________________________________\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear sir,\nI have a data set which name is \"c78p\",now I want to deal with it with bagging.% of data from c78p as training set is 50%,and number of bootstrap random samples with replacement from c78p is",
       "thread_id": "thread-6a3fa3080158",
       "thread_depth": 0,
-      "month": "2009-10"
+      "month": "2009-10",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091024/a5504c02/attachment.pl"
+      ]
     },
     {
       "id": "msg-049baf08df67",

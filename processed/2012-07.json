@@ -29,11 +29,14 @@
       "subject_clean": "Applied Linear Regression",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120718/ba6ceab9/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120718/ba6ceab9/attachment.pl>",
+      "body_plain": "Dear All:\n \nI am going to teach Applied Regression course (undergraduate/graduate) level(s). I will use the Applied Linear Statistical Models by Kutner and etal 5th edition. I am planning to use R as the main statistical package. If someone have power points with R codes, R codes for the examples and some of the exercises of this book and willing to share, it will be appreciated.\n \nwith many thanks\nabou\n \n \n \n \n \n \n==========================\nAbouEl-Makarim Aboueissa, Ph.D.\nAssociate Professor of Statistics\nGraduate Program Coordinator\nDepartment of Mathematics & Statistics\nUniversity of Southern Maine\n96 Falmouth Street\nP.O. Box 9300\nPortland, ME 04104-9300\nUSA\n \n\nTel: (207) 228-8389\nFax: (207) 780-5607\nEmail: aaboueissa at usm.maine.edu\n          aboueiss at yahoo.com\n \nOffice: 301C Payson Smith\n \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n \nI am going to teach Applied Regression course (undergraduate/graduate) level(s). I will use the Applied Linear Statistical Models by Kutner and etal 5th edition. I am planning to use R as ",
       "thread_id": "thread-d1168067ffe0",
       "thread_depth": 0,
-      "month": "2012-07"
+      "month": "2012-07",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120718/ba6ceab9/attachment.pl"
+      ]
     }
   ],
   "threads": [

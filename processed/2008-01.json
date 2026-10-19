@@ -45,11 +45,14 @@
       "subject_clean": "How to import a minitab data file into R",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080126/c534b15d/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080126/c534b15d/attachment.pl>",
+      "body_plain": "Hello everyone,\nI am a new member of this gorup & have started learning R from a couple of days ago.\nI am facing a problem in importing a minitab data file to R.\n.\nI used the command read.mtp(file=\"central\").But it returned with the error message could not find function \"read.mtp\"\nPlease help me in this regard mentioning the proper code to be used & with your valuable comments.\n\nThanks in advance\n\n\n      Forgot the famous last words? Access your message archive online at http://in.messenger.yahoo.com/webmessengerpromo.php\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello everyone,\nI am a new member of this gorup & have started learning R from a couple of days ago.\nI am facing a problem in importing a minitab data file to R.\n.\nI used the command read.mtp(file=\"ce",
       "thread_id": "thread-9462a6ea6367",
       "thread_depth": 0,
-      "month": "2008-01"
+      "month": "2008-01",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080126/c534b15d/attachment.pl"
+      ]
     },
     {
       "id": "msg-7397a161159c",
@@ -79,11 +82,14 @@
       "subject_clean": "How to import a minitab data file into R",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080127/37cdfb15/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080127/37cdfb15/attachment.pl>",
+      "body_plain": "Thank u all for your valuable efforts........now finally I've managed to import a minitab file into R.\nAccordinng to me the problem was that minitab saves a project as filename.MPJ......so this path was not valid for reading it into R.......so I had to save it as filename.MTP format.......& everything is going ok\n\n\n----- Original Message ----\nFrom: Christian A. Parker <cparker at pdx.edu>\nTo: kasturi bardhan <kasturibardhan at yahoo.co.in>\nSent: Saturday, 26 January, 2008 11:49:59 PM\nSubject: Re: [R-sig-teaching] How to import a minitab data file into R\n\nI can only assume that its not in the current working directory. to \ncheck this just use:\n\ndir()\n\nto get a list of all the files in the current working directory/folder. \nMake sure your file is in this list and make sure that you have it \nspelled correctly, R is case sensitive.\n\nkasturi bardhan wrote:\n> First of all thanks for your reply\n> I used the commands as written below\n> library(foreign)\n> > read.mtp(\"SSR set1.mtp\")\n> and it returns with the following error message\n> Error in read.mtp(\"SSR set1.mtp\") :\n>  unable to open file 'SSR set1.mtp' for reading\n>\n> Whereas I can see the file does exist in the home directory of R also\n> So what is your suggestion in this regard....please let me know\n>\n> ----- Original Message ----\n> From: Christian A. Parker <cparker at pdx.edu>\n> To: kasturi bardhan <kasturibardhan at yahoo.co.in>\n> Cc: R-sig-teaching at r-project.org\n> Sent: Saturday, 26 January, 2008 9:36:23 PM\n> Subject: Re: [R-sig-teaching] How to import a minitab data file into R\n>\n> Without seeing all of your code its difficult to diagnose but based on\n> what you sent and the error message I am going to guess that you forgot\n> to load the foreign package. Also it looks like you dont have the file\n> extension in the path, but thats not where your error is from. Your code\n> should look like this (potentially):\n>\n> library(foreign)\n> tbl<-read.mtp(file='central.mtp')\n>\n> -Chris\n>\n> kasturi bardhan wrote:\n> > Hello everyone,\n> > I am a new member of this gorup & have started learning R from a \n> couple of days ago.\n> > I am facing a problem in importing a minitab data file to R.\n> > .\n> > I used the command read.mtp(file=\"central\").But it returned with the \n> error message could not find function \"read.mtp\"\n> > Please help me in this regard mentioning the proper code to be used \n> & with your valuable comments.\n> >\n> > Thanks in advance\n> >\n> >\n> >      Forgot the famous last words? Access your message archive \n\n> >    [[alternative HTML version deleted]]\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org <mailto:R-sig-teaching at r-project.org> \n> mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> >\n> > \n>\n>\n>\n> ------------------------------------------------------------------------\n> Explore your hobbies and interests. Click here to begin. \n> <http://in.rd.yahoo.com/tagline_groups_6/*http://in.promos.yahoo.com/groups>\n\n\n      Chat on a cool, new interface. No download required. Go to http://in.messenger.yahoo.com/webmessengerpromo.php\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Thank u all for your valuable efforts........now finally I've managed to import a minitab file into R.\nAccordinng to me the problem was that minitab saves a project as filename.MPJ......so this path w",
       "thread_id": "thread-119fc4167a16",
       "thread_depth": 0,
-      "month": "2008-01"
+      "month": "2008-01",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080127/37cdfb15/attachment.pl"
+      ]
     }
   ],
   "threads": [

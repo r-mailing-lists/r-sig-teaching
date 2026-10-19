@@ -13,11 +13,14 @@
       "subject_clean": "Open access to R",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120607/a44f1e6b/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120607/a44f1e6b/attachment.pl>",
+      "body_plain": "We want to help our higher ed colleagues assess R as an alternative to\nincreasingly expensive stat packages.  To that end, I’m looking for a\nhandful of R experienced instructors who would be able and willing to\nassess an installation of R in a virtual computing environment.   Based on\nfeedback, we will enhance the installed image with additional resources,\ndocumentation, use cases and other information useful to those using R.\nWe will provide free access to several instances of R running on Linux to\nsupport this assessment phase.\n\n\n\nWe ultimately will provide a low-cost service for institutions wishing to\nuse R regularly in teaching and research.\n\n\n\nLongsight provides open source services to higher education.    Our new *Open\nvLAB *service (http://www.longsight.com/files/vlab.pdf) uses the Apache\nVirtual Computing Lab software to allow faculty and students to access\napplications such as R from any location at any time using standard remote\ndesktop protocols.\n\n\n\nPlease contact us as vclsupport at longsight.com or reply to me if you are\nwilling to help.   Thank you very much.\n\n\n\n                Scott\n\n______________________________\nScott Siddall, Partner\nThe Longsight Group LLC\nVoice: 740-599-5005 x801\nhttp://longsight.com\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "We want to help our higher ed colleagues assess R as an alternative to\nincreasingly expensive stat packages.  To that end, I’m looking for a\nhandful of R experienced instructors who would be able and ",
       "thread_id": "thread-2b80c024cf8a",
       "thread_depth": 0,
-      "month": "2012-06"
+      "month": "2012-06",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120607/a44f1e6b/attachment.pl"
+      ]
     }
   ],
   "threads": [

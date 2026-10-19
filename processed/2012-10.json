@@ -13,11 +13,14 @@
       "subject_clean": "Interpreting the results",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121003/ae97dfe0/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121003/ae97dfe0/attachment.pl>",
+      "body_plain": "Dear All:\nI have two variables:\nX (nominal categorical) has 9 categories.\nY(ordinal categorical) has 4 categories.\n \n1-I fit a logistic regression using Y as\nthe response variable and X as the independent variable. The P VALUE was\n0.2373. This tells me that the independent variable X is NOT significant\npredictor.\n \n \n2- I run a\nchi-square test to test if there is a relationship (association ship) between\nboth X and Y variables. The P VALUE was 0.0013. That is there is statistical\nevidence of association between the two variables.\n \n3- I collapsed the 4 categories of the Y-variable into 2 categories. I run a\nchi-square test to test if there is a difference(s) among proportions of the X-variable (the equality of the 9 proportions). The P VALUE was 0.0037. That is there is statistical\nevidence of differences among the 9 proportions.\n\nHow\nI can explain results of one versustwo, and one versus three. I am not sure if there is a contradiction among these results.\n many\nthanks\nAli\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\nI have two variables:\nX (nominal categorical) has 9 categories.\nY(ordinal categorical) has 4 categories.\n \n1-I fit a logistic regression using Y as\nthe response variable and X as the indepen",
       "thread_id": "thread-ae8e074762e3",
       "thread_depth": 0,
-      "month": "2012-10"
+      "month": "2012-10",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121003/ae97dfe0/attachment.pl"
+      ]
     },
     {
       "id": "msg-2d73dc712b77",
@@ -31,11 +34,14 @@
       "references": [
         "<1349297868.27844.YahooMailNeo@web125804.mail.ne1.yahoo.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121003/66daece1/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121003/66daece1/attachment.pl>",
+      "body_plain": "Hi Ali,\n\nI don't quite follow what you did here, so it may be helpful to provide\nmore details (especially about step 1--e.g., was it ordinal logistic\nregression?).\n\nHowever, this is not the list for this question.  This list is for asking\nabout using R for teaching statistics.  So you'll have to ask this question\nelsewhere to get an answer.  Since it's not clear to me that your question\nis even about a difficulty using R, I'm not sure that the regular R-help\nlist is appropriate either.  You might try something like talkstats or\ncross validated.\n\nBest of luck, Jeff\n\n\nOn Wed, Oct 3, 2012 at 4:57 PM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:\n\n> Dear All:\n> I have two variables:\n> X (nominal categorical) has 9 categories.\n> Y(ordinal categorical) has 4 categories.\n>\n> 1-I fit a logistic regression using Y as\n> the response variable and X as the independent variable. The P VALUE was\n> 0.2373. This tells me that the independent variable X is NOT significant\n> predictor.\n>\n>\n> 2- I run a\n> chi-square test to test if there is a relationship (association ship)\n> between\n> both X and Y variables. The P VALUE was 0.0013. That is there is\n> statistical\n> evidence of association between the two variables.\n>\n> 3- I collapsed the 4 categories of the Y-variable into 2 categories. I run\n> a\n> chi-square test to test if there is a difference(s) among proportions of\n> the X-variable (the equality of the 9 proportions). The P VALUE was 0.0037.\n> That is there is statistical\n> evidence of differences among the 9 proportions.\n>\n> How\n> I can explain results of one versustwo, and one versus three. I am not\n> sure if there is a contradiction among these results.\n>  many\n> thanks\n> Ali\n>         [[alternative HTML version deleted]]\n>\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi Ali,\n\nI don't quite follow what you did here, so it may be helpful to provide\nmore details (especially about step 1--e.g., was it ordinal logistic\nregression?).\n\nHowever, this is not the list for t",
       "thread_id": "thread-ae8e074762e3",
       "thread_depth": 1,
-      "month": "2012-10"
+      "month": "2012-10",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121003/66daece1/attachment.pl"
+      ]
     },
     {
       "id": "msg-a04aff4bd2be",
@@ -67,11 +73,14 @@
       "references": [
         "<1349297868.27844.YahooMailNeo@web125804.mail.ne1.yahoo.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121004/aae1f1aa/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121004/aae1f1aa/attachment.pl>",
+      "body_plain": "Here are the data:(any help will be appreciated).I am not sure if I did it right.\n\n \nX Y \n020300 0 \n020300 0 \n020900 0 \n020500 0 \n020800 0 \n020800 0 \n020300 0 \n020800 0 \n020900 0 \n020900 0 \n020800 0 \n020800 0 \n020800 0 \n020200 0 \n020800 0 \n020800 0 \n020200 0 \n020700 0 \n020900 0 \n020300 0 \n020800 0 \n020500 0 \n020100 0 \n020800 0 \n020900 0 \n020400 0 \n020700 0 \n020800 0 \n020600 0 \n020800 0 \n020700 0 \n020700 0 \n020700 0 \n020900 0 \n020500 0 \n020700 0 \n020600 0 \n020700 0 \n020500 0 \n020800 0 \n020300 0 \n020900 0 \n020700 0 \n020800 0 \n020900 0 \n020300 0 \n020700 0 \n020500 0 \n020400 0 \n020700 0 \n020600 0 \n020700 0 \n020800 0 \n020800 0 \n020400 0 \n020800 0 \n020700 0 \n020600 0 \n020300 0 \n020900 0 \n020700 0 \n020800 0 \n020800 0 \n020800 0 \n020600 0 \n020600 0 \n020300 0 \n020500 0 \n020900 0 \n020400 0 \n020600 0 \n020700 0 \n020300 0 \n020500 0 \n020700 0 \n020500 0 \n020900 0 \n020500 0 \n020700 0 \n020700 0 \n020300 0 \n020900 0 \n020700 0 \n020900 0 \n020700 0 \n020700 0 \n020800 0 \n020500 0 \n020300 0 \n020700 0 \n020500 0 \n020300 0 \n020500 0 \n020600 0 \n020300 0 \n020700 0 \n020700 0 \n020800 0 \n020900 0 \n020800 0 \n020800 0 \n020600 0 \n020800 0 \n020900 0 \n020500 0 \n020700 0 \n020600 0 \n020300 0 \n020400 0 \n020800 0 \n020400 0 \n020500 0 \n020700 0 \n020500 0 \n020900 0 \n020700 0 \n020100 0 \n020500 0 \n020400 0 \n020600 0 \n020100 0 \n020500 0 \n020900 0 \n020900 0 \n020800 0 \n020900 0 \n020800 0 \n020800 0 \n020200 0 \n020500 0 \n020300 0 \n020900 0 \n020500 0 \n020600 0 \n020800 0 \n020900 0 \n020800 0 \n020700 0 \n020900 0 \n020300 0 \n020800 0 \n020700 0 \n020900 0 \n020700 0 \n020800 0 \n020800 0 \n020500 0 \n020800 0 \n020800 0 \n020700 0 \n020800 0 \n020900 0 \n020300 0 \n020400 0 \n020300 0 \n020800 0 \n020700 0 \n020800 0 \n020600 0 \n020700 0 \n020900 0 \n020200 0 \n020700 0 \n020900 0 \n020700 0 \n020300 0 \n020700 0 \n020800 0 \n020800 0 \n020900 0 \n020700 0 \n020800 0 \n020800 0 \n020500 0 \n020800 0 \n020300 0 \n020300 0 \n020700 0 \n020500 0 \n020800 0 \n020800 0 \n020800 0 \n020700 0 \n020700 0 \n020700 0 \n020500 0 \n020700 0 \n020700 0 \n020400 0 \n020800 0 \n020600 0 \n020300 0 \n020800 0 \n020500 0 \n020500 0 \n020800 0 \n020700 0 \n020900 0 \n020300 0 \n020700 0 \n020700 0 \n020700 0 \n020500 0 \n020600 0 \n020800 0 \n020300 0 \n020700 0 \n020300 0 \n020100 0 \n020800 0 \n020500 0 \n020700 0 \n020700 0 \n020600 0 \n020800 0 \n020500 0 \n020600 0 \n020600 0 \n020800 0 \n020300 0 \n020600 0 \n020800 0 \n020700 0 \n020500 0 \n020900 0 \n020500 0 \n020800 0 \n020300 0 \n020800 0 \n020900 0 \n020700 0 \n020400 0 \n020300 0 \n020900 0 \n020800 0 \n020600 0 \n020500 0 \n020900 0 \n020300 0 \n020300 0 \n020900 0 \n020500 0 \n020600 0 \n020800 0 \n020400 2 \n020700 2 \n020500 2 \n020900 2 \n020400 2 \n020700 2 \n020500 2 \n020500 2 \n020300 2 \n020700 2 \n020100 2 \n020300 2 \n020300 2 \n020500 2 \n020800 2 \n020600 2 \n020100 2 \n020300 2 \n020900 2 \n020700 2 \n020600 2 \n020800 2 \n020300 2 \n020600 1 \n020300 1 \n020300 1 \n020500 1 \n020700 1 \n020700 1 \n020400 1 \n020300 1 \n020400 1 \n020300 1 \n020800 1 \n020600 1 \n020800 1 \n020800 1 \n020600 1 \n020700 1 \n020700 1 \n020700 1 \n020500 1 \n020400 1 \n020500 1 \n020600 1 \n020300 1 \n020100 1 \n020600 1 \n020700 1 \n020900 1 \n020900 1 \n020900 1 \n020500 1 \n020700 1 \n020700 1 \n020300 1 \n020800 1 \n020200 1 \n020700 1 \n020500 1 \n020200 1 \n020700 1 \n020300 1 \n020800 1 \n020400 1 \n020700 1 \n020600 3 \n020800 3 \n020300 3 \n020900 3 \n020800 3 \n020500 3 \n020800 3 \n020800 3 \n020300 3 \n020100 3 \n020300 3 \n020500 3 \n020800 3 \n020800 3 \n020300 3 \n020700 3 \n\n----- Forwarded Message -----\nFrom: Ali Zanaty <zanaty2005 at yahoo.com>\nTo: \"r-sig-teaching at r-project.org\" <r-sig-teaching at r-project.org> \nSent: Wednesday, October 3, 2012 4:57 PM\nSubject: Interpreting the results\n \n\nDear All:\nI have two variables:\nX (nominal categorical) has 9 categories.\nY(ordinal categorical) has 4 categories.\n \n1-I fit a logistic regression using Y as\nthe response variable and X as the independent variable. The P VALUE was\n0.2373. This tells me that the independent variable X is NOT significant\npredictor.\n \n \n2- I run a\nchi-square test to test if there is a relationship (association ship) between\nboth X and Y variables. The P VALUE was 0.0013. That is there is statistical\nevidence of association between the two variables.\n \n3- I collapsed the 4 categories of the Y-variable into 2 categories. I run a\nchi-square test to test if there is a difference(s) among proportions of the X-variable (the equality of the 9 proportions). The P VALUE was 0.0037. That is there is statistical\nevidence of differences among the 9 proportions.\n\nHow\nI can explain results of one versustwo, and one versus three. I am not sure if there is a contradiction among these results.\n many\nthanks\nAli\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Here are the data:(any help will be appreciated).I am not sure if I did it right.\n\n \nX Y \n020300 0 \n020300 0 \n020900 0 \n020500 0 \n020800 0 \n020800 0 \n020300 0 \n020800 0 \n020900 0 \n020900 0 \n020800 0 \n",
       "thread_id": "thread-ae8e074762e3",
       "thread_depth": 1,
-      "month": "2012-10"
+      "month": "2012-10",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121004/aae1f1aa/attachment.pl"
+      ]
     },
     {
       "id": "msg-ff86827e4766",
@@ -86,11 +95,14 @@
         "<1349297868.27844.YahooMailNeo@web125804.mail.ne1.yahoo.com>",
         "<1349342460.35324.YahooMailNeo@web125806.mail.ne1.yahoo.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121004/ea5184a6/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121004/ea5184a6/attachment.pl>",
+      "body_plain": "Hi Ali, Is there really no order to the 9 X categories? What is X?\n\nBut anyway… the table looks like this:\n\ntable(df)\n       Y\nX        0  1  2  3\n  20100  4  1  2  1\n  20200  4  2  0  0\n  20300 30  7  5  4\n  20400 10  4  2  0\n  20500 32  5  4  2\n  20600 21  5  2  1\n  20700 51 11  4  1\n  20800 59  5  2  6\n  20900 33  3  2  1\nSo there are a lot more subjects with X codes above 20200, but there is no apparent effect of X-level on Y level: Y0 is common for all values of X, and Y3 less so… Hence:\n\nchisq.test(table(df)) X-squared = 25.7405, df = 24, p-value = 0.3665\n\nBest wishes,\n\ntim\n\n\nOn 4 Oct 2012, at 10:21 AM, Ali Zanaty zanaty2005 at yahoo.com wrote: Here are the data:(any help will be appreciated).I am not sure if I did it right. —– Forwarded Message —– Dear All: I have two variables: X (nominal categorical) has 9 categories. Y(ordinal categorical) has 4 categories.\n\n1-I fit a logistic regression using Y as the response variable and X as the independent variable. The P VALUE was 0.2373. This tells me that the independent variable X is NOT significant predictor.\n\n2- I run a chi-square test to test if there is a relationship (association ship) between both X and Y variables. The P VALUE was 0.0013. That is there is statistical evidence of association between the two variables.\n\n3- I collapsed the 4 categories of the Y-variable into 2 categories. I run a chi-square test to test if there is a difference(s) among proportions of the X-variable (the equality of the 9 proportions). The P VALUE was 0.0037. That is there is statistical evidence of differences among the 9 proportions.\n\nOn 4 Oct 2012, at 10:21 AM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:\n> Here are the data:(any help will be appreciated).I am not sure if I did it right.\n> ----- Forwarded Message -----\n> Dear All:\n> I have two variables:\n> X (nominal categorical) has 9 categories.\n> Y(ordinal categorical) has 4 categories.\n> \n> 1-I fit a logistic regression using Y as the response variable and X as the independent variable. The P VALUE was\n> 0.2373. This tells me that the independent variable X is NOT significant\n> predictor.\n> \n> 2- I run a chi-square test to test if there is a relationship (association ship) between\n> both X and Y variables. The P VALUE was 0.0013. That is there is statistical\n> evidence of association between the two variables.\n>  \n> 3- I collapsed the 4 categories of the Y-variable into 2 categories. I run a\n> chi-square test to test if there is a difference(s) among proportions of the X-variable (the equality of the 9 proportions). The P VALUE was 0.0037. That is there is statistical\n> evidence of differences among the 9 proportions.\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi Ali, Is there really no order to the 9 X categories? What is X?\n\nBut anyway… the table looks like this:\n\ntable(df)\n       Y\nX        0  1  2  3\n  20100  4  1  2  1\n  20200  4  2  0  0\n  20300 30  7",
       "thread_id": "thread-ae8e074762e3",
       "thread_depth": 2,
-      "month": "2012-10"
+      "month": "2012-10",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121004/ea5184a6/attachment.pl"
+      ]
     },
     {
       "id": "msg-4022936979c7",
@@ -118,11 +130,14 @@
       "subject_clean": "season package for time series plots",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121025/dc9900bd/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121025/dc9900bd/attachment.pl>",
+      "body_plain": "Dear R Users:\n\n\n\n\nI am teaching regression and forecasting class. I installed the season \npackage, and I am trying to use it to get a graph of some data, but it \nsays could not find function season\n \n\nAny helps that make it work will be appreciated.\n\nmany thanks\nabou\n\n\n\n========================\n\nAbouEl-Makarim Aboueissa\n\nSozan Elsalakawy\n\nMohamed Agamia\n\n\n\n246 Auburn Street, #158\n\nPortland, ME 04103\n\nUSA\n\n\n\nTel: (207) 797-2724\n\nEmail: aboueiss at yahoo.com\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R Users:\n\n\n\n\nI am teaching regression and forecasting class. I installed the season \npackage, and I am trying to use it to get a graph of some data, but it \nsays could not find function season\n \n",
       "thread_id": "thread-1939b87b1c8f",
       "thread_depth": 0,
-      "month": "2012-10"
+      "month": "2012-10",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121025/dc9900bd/attachment.pl"
+      ]
     },
     {
       "id": "msg-9f185ba7a752",

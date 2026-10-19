@@ -50,11 +50,14 @@
         "<4BE156E1.B080.00B1.0@gw.muhlenberg.edu>",
         "<x2m40e66e0b1005050912o56caf28fp1e6608635d7c6ca2@mail.gmail.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100505/62b128f8/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100505/62b128f8/attachment.pl>",
+      "body_plain": "I also think the table() function would be helpful.\n\nOn Wed, May 5, 2010 at 9:12 AM, Douglas Bates <bates at stat.wisc.edu> wrote:\n\n> On Wed, May 5, 2010 at 10:30 AM, Byungchul Cha <cha at muhlenberg.edu> wrote:\n>\n> > I am a relatively novice in R and I need some help.\n>\n> > I want to create a two-way table from a data given as a data.frame, which\n> looks like this:\n>\n> >> x\n> >   group status gender count\n> > 1      1     s1     g1   890\n> > 2      2     s1     g2   969\n> > 3      3     s2     g1   340\n> > 4      4     s2     g2   403\n> > 5      5     s3     g1  2897\n> > 6      6     s3     g2  3321\n> > 7      7     s4     g1   249\n> > 8      8     s4     g2   383\n> > 9      9     s5     g1   306\n> > 10    10     s5     g2   366\n> > 11    11     s6     g1   160\n> > 12    12     s6     g2   137\n> >\n> > I would like a two way table, which would look like\n> >\n> > status    men    women\n> > s1    890    969\n> > s2    340    403\n> > s3    2897    3321\n> > ...\n> >\n> > How do I do this in a relatively efficient way? Thanks.\n>\n> Look up the documentation for xtabs, say by typing\n>\n> ?xtabs\n>\n> in R.  What you want is\n>\n> xtabs(count ~ status + gender, x)\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \nGeoffrey Smith\nVisiting Assistant Professor\nDepartment of Finance\nW. P. Carey School of Business\nArizona State University\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I also think the table() function would be helpful.\n\nOn Wed, May 5, 2010 at 9:12 AM, Douglas Bates <bates at stat.wisc.edu> wrote:\n\n> On Wed, May 5, 2010 at 10:30 AM, Byungchul Cha <cha at muhlenberg.",
       "thread_id": "thread-56a6bf4bfd9e",
       "thread_depth": 2,
-      "month": "2010-05"
+      "month": "2010-05",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100505/62b128f8/attachment.pl"
+      ]
     },
     {
       "id": "msg-1250aa6b9f92",

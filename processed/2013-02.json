@@ -51,11 +51,14 @@
       "subject_clean": "R for Numercal Analysis",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130208/c4e59564/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130208/c4e59564/attachment.pl>",
+      "body_plain": "Dear All R users:\n\nI am going to teach a numerical analysis class (undergraduate level) in Summer 2013. I am wondering if someone have R notes used in the numerical analysis methods.\n\nthank you very much\n\nAli\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All R users:\n\nI am going to teach a numerical analysis class (undergraduate level) in Summer 2013. I am wondering if someone have R notes used in the numerical analysis methods.\n\nthank you very m",
       "thread_id": "thread-4bab483d345c",
       "thread_depth": 0,
-      "month": "2013-02"
+      "month": "2013-02",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130208/c4e59564/attachment.pl"
+      ]
     }
   ],
   "threads": [

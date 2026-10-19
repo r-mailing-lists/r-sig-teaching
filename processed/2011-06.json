@@ -47,11 +47,14 @@
       "subject_clean": "Message displayed when opening RData file",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110625/66df0377/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110625/66df0377/attachment.pl>",
+      "body_plain": "Hello,\n\nI am wondering if there is any way to display a message automatically when a\nworkspace is restored and to have that message saved as part of the\nworkspace.\n\nI would like R to say after\n[Previously saved workspace restored]\n\nTo see data input >data in the console\nTo see data variable descriptions input >desc in the console\n\nThank you for your help,\nFrancis\n\n-- \nFrancis Smart\n--------------------\nPhD Student - Michigan State University\nAgricultural, Food, and Resource Economics (AFRE)\nMeasurement and Quantitative Methods (MQM)\n\nCell: (406) 223-8108\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello,\n\nI am wondering if there is any way to display a message automatically when a\nworkspace is restored and to have that message saved as part of the\nworkspace.\n\nI would like R to say after\n[Previo",
       "thread_id": "thread-cee098ad3f70",
       "thread_depth": 0,
-      "month": "2011-06"
+      "month": "2011-06",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110625/66df0377/attachment.pl"
+      ]
     },
     {
       "id": "msg-a32dd2e4f91b",
@@ -118,11 +121,14 @@
         "<BANLkTim7BLKUaYpwcsDaupK50b0X63HfGA@mail.gmail.com>",
         "<4E0B696D.50809@univ-lille3.fr>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110630/5b6a5a05/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110630/5b6a5a05/attachment.pl>",
+      "body_plain": "On Wed, Jun 29, 2011 at 8:05 PM, philippe preux <\nphilippe.preux at univ-lille3.fr> wrote:\n\n> Hi Matt,\n> maybe the library() command would solve your problem.\n>\n> However, I take this opportunity to ask an other question related to\n> installed packages:\n> some packages are installed because I install.package'd them; however, I\n> usually add the dep = TRUE option, so that some other packages are installed\n> because of the dependencies. Once installed, I do not know of any way to\n> distinguish the former from the latter; is there one?\n> Now, moving my R installation to a new machine, I would like to re-install\n> only those packages I installed by install.package(), with the dep = TRUE\n> option. I feel, and fear, that if I install all the packages returned by\n> library() with dep =TRUE option, packages that depend on those installed\n> because they depend on those I installed by giving their name to\n> install.package() will also be installed.\n>\n\nMy guess is that if package A depends on B and B depends on C, that A and B\nwill be installed when install.package(\"A\"), as B has to be working as well\n- and it needs C to be working - so I would expect no difference in these\ntwo approaches - except if dependencies are dropped in a newer version.\n\nCheers,\n\nRainer\n\n>\n> Now, my workaround is to keep the history of the install.package() command\n> I invoked. Defining a function that does the same thing as\n> install.packages(), while logging the information in some file does the\n> thing.\n>\n> Hope that helps,\n>\n> Philippe\n>\n>\n> On 29/06/2011 19:48, Matt Curcio wrote:\n>\n>> Greetings All,\n>> I would like to find out which R packages I have on my machine and\n>> transfer that set of packages to a new machine.  I have investigated\n>> the command 'installed.packages' and got a partial list but this is\n>> not comprehensive. (!?!)  The partial list does not include the\n>> libraries that I do not normally load on start-up.\n>> Any suggestions?\n>>\n>> Conversely, once I have found the complete list can I use\n>> 'install.package' to batch install all the packages to another\n>> computer?\n>> Cheers,\n>> M\n>>\n>>\n>>\n> ______________________________**_________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/**listinfo/r-sig-teaching<https://stat.ethz.ch/mailman/listinfo/r-sig-teaching>\n>\n\n\n\n-- \nRainer M. Krug, PhD (Conservation Ecology, SUN), MSc (Conservation Biology,\nUCT), Dipl. Phys. (Germany)\n\nCentre of Excellence for Invasion Biology\nStellenbosch University\nSouth Africa\n\nTel :       +33 - (0)9 53 10 27 44\nCell:       +33 - (0)6 85 62 59 98\nFax (F):       +33 - (0)9 58 10 27 44\n\nFax (D):    +49 - (0)3 21 21 25 22 44\n\nemail:      Rainer at krugs.de\n\nSkype:      RMkrug\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "On Wed, Jun 29, 2011 at 8:05 PM, philippe preux <\nphilippe.preux at univ-lille3.fr> wrote:\n\n> Hi Matt,\n> maybe the library() command would solve your problem.\n>\n> However, I take this opportunity to a",
       "thread_id": "thread-d12d2a0415ef",
       "thread_depth": 2,
-      "month": "2011-06"
+      "month": "2011-06",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110630/5b6a5a05/attachment.pl"
+      ]
     }
   ],
   "threads": [

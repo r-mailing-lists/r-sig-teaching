@@ -13,11 +13,14 @@
       "subject_clean": "Help wanted with R",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090506/2f953794/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090506/2f953794/attachment.pl>",
+      "body_plain": "Dear All:\nHow I can get the following plots (these just examples, I still have more) in R. Please see plots at:  \n \nhttp://www.usm.maine.edu/~aaboueissa/Rhelps/plots_1.jpg \n \n \n \n \nWith many thanks.\n \n \nAbou\n \n ( http://www.usm.maine.edu/~aaboueissa/Rhelps/plots_1.jpg ) \n \n \n \n \n==========================\nAbouEl-Makarim Aboueissa, Ph.D.\nAssistant Professor of Statistics\nDepartment of Mathematics & Statistics\nUniversity of Southern Maine\n96 Falmouth Street\nP.O. Box 9300\nPortland, ME 04104-9300\n \n\nTel: (207) 228-8389\nFax: (207) 780-5607\nEmail: aaboueissa at usm.maine.edu \n          aboueiss at yahoo.com\n \n  http://www.usm.maine.edu/~aaboueissa/ \n\n \nOffice: 301C Payson Smith\n \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\nHow I can get the following plots (these just examples, I still have more) in R. Please see plots at:  \n \nhttp://www.usm.maine.edu/~aaboueissa/Rhelps/plots_1.jpg \n \n \n \n \nWith many thanks.\n ",
       "thread_id": "thread-00abdfb31692",
       "thread_depth": 0,
-      "month": "2009-05"
+      "month": "2009-05",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090506/2f953794/attachment.pl"
+      ]
     },
     {
       "id": "msg-514a6afed6ec",
@@ -31,11 +34,14 @@
       "references": [
         "<4A01C815.01BB.00A6.1@usm.maine.edu>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090506/1800f24d/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090506/1800f24d/attachment.pl>",
+      "body_plain": "Here is a way of drawing the first one.  Second can be done in a similar\nfashion.\n\nplot(0, type='n', xlim=c(0,5), ylim=c(0,5))\npolygon(c(0,3,5,2), c(0,4,4,0), col='red')\n\n\nOn Wed, May 6, 2009 at 5:25 PM, AbouEl-Makarim Aboueissa <\naaboueissa at usm.maine.edu> wrote:\n\n>\n> Dear All:\n> How I can get the following plots (these just examples, I still have more)\n> in R. Please see plots at:\n>\n> http://www.usm.maine.edu/~aaboueissa/Rhelps/plots_1.jpg\n>\n>\n>\n>\n> With many thanks.\n>\n>\n> Abou\n>\n>  ( http://www.usm.maine.edu/~aaboueissa/Rhelps/plots_1.jpg )\n>\n>\n>\n>\n> ==========================\n> AbouEl-Makarim Aboueissa, Ph.D.\n> Assistant Professor of Statistics\n> Department of Mathematics & Statistics\n> University of Southern Maine\n> 96 Falmouth Street\n> P.O. Box 9300\n> Portland, ME 04104-9300\n>\n>\n> Tel: (207) 228-8389\n> Fax: (207) 780-5607\n> Email: aaboueissa at usm.maine.edu\n>          aboueiss at yahoo.com\n>\n>  http://www.usm.maine.edu/~aaboueissa/\n>\n>\n> Office: 301C Payson Smith\n>\n>\n>        [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \nJim Holtman\nCincinnati, OH\n+1 513 646 9390\n\nWhat is the problem that you are trying to solve?\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Here is a way of drawing the first one.  Second can be done in a similar\nfashion.\n\nplot(0, type='n', xlim=c(0,5), ylim=c(0,5))\npolygon(c(0,3,5,2), c(0,4,4,0), col='red')\n\n\nOn Wed, May 6, 2009 at 5:25 ",
       "thread_id": "thread-00abdfb31692",
       "thread_depth": 1,
-      "month": "2009-05"
+      "month": "2009-05",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090506/1800f24d/attachment.pl"
+      ]
     },
     {
       "id": "msg-dc6fb1da9e31",
@@ -84,11 +90,14 @@
         "<f8e6ff050903310724j623763bdt3e3d9933e1954d42@mail.gmail.com>",
         "<AE48B961-35D1-4F47-B77D-EF20103B51DF@gmail.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090507/e9f70d74/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090507/e9f70d74/attachment.pl>",
+      "body_plain": "Hey Joe,\n\nhttp://cran.r-project.org/doc/manuals/R-intro.html#A-sample-session\n\n... may be a good start.\n\nRichard Graham\n\nOn Thu, May 7, 2009 at 8:41 PM, Retzer Joe <retzerjj at gmail.com> wrote:\n\n> I'm putting together an R tutorial and wanted to give a few, in class,\n> practice problems to the students. I'd like to have some very basic ones\n> (since they will be done in class) on things like:\n>\n> - read a data file\n> - do some simple manipulations / calculations\n> - do some sorting\n> - create a list\n> - load a library and run something from it\n> - draw some easy graphs (and make simple par changes)\n> - simple matrix manipulations\n>\n> etc.\n>\n> I was wondering if anyone had some of these or knew where I might find some\n> (url, text, etc.). I've been looking w/o success. Any help or advice would\n> really be appreciated.\n>\n> Many thanks,\n> Joe Retzer\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hey Joe,\n\nhttp://cran.r-project.org/doc/manuals/R-intro.html#A-sample-session\n\n... may be a good start.\n\nRichard Graham\n\nOn Thu, May 7, 2009 at 8:41 PM, Retzer Joe <retzerjj at gmail.com> wrote:\n\n> I'",
       "thread_id": "thread-dc6fb1da9e31",
       "thread_depth": 1,
-      "month": "2009-05"
+      "month": "2009-05",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090507/e9f70d74/attachment.pl"
+      ]
     },
     {
       "id": "msg-668ac7483a46",
@@ -161,11 +170,14 @@
       "subject_clean": "Comparing points on the same regression line",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090511/36d4f9a1/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090511/36d4f9a1/attachment.pl>",
+      "body_plain": "Dear All:\n \nAssume that we have the following (X,Y) data:\n \n(X,Y): (0,6) (0.25,6) (2.5,9) (5,13) (10,11) (25,11)\n \n \nX<-c(0,0.25,5,10,25)\nY<-c(6,6,9,13,11,11)\n \n \nHow I can compare two points on the same regression line. That is, How I can compare the Y-values with each other (Pairs by Pairs) statistically and using R. For example: how to compare the Y-value 13 corresponding the X-value 5 with the Y-value 9 corresponding to the X-value 2.5. \n \nWith many thanks.\n \nAbou\n \n \n \n==========================\nAbouEl-Makarim Aboueissa, Ph.D.\nAssistant Professor of Statistics\nDepartment of Mathematics & Statistics\nUniversity of Southern Maine\n96 Falmouth Street\nP.O. Box 9300\nPortland, ME 04104-9300\n \n\nTel: (207) 228-8389\nFax: (207) 780-5607\nEmail: aaboueissa at usm.maine.edu \n          aboueiss at yahoo.com\n \n  http://www.usm.maine.edu/~aaboueissa/ \n\n \nOffice: 301C Payson Smith\n \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n \nAssume that we have the following (X,Y) data:\n \n(X,Y): (0,6) (0.25,6) (2.5,9) (5,13) (10,11) (25,11)\n \n \nX<-c(0,0.25,5,10,25)\nY<-c(6,6,9,13,11,11)\n \n \nHow I can compare two points on the s",
       "thread_id": "thread-61464efcde3e",
       "thread_depth": 0,
-      "month": "2009-05"
+      "month": "2009-05",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090511/36d4f9a1/attachment.pl"
+      ]
     },
     {
       "id": "msg-84efdaf387be",
@@ -193,11 +205,14 @@
       "subject_clean": "regarding PCA",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090521/ab2a5d01/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090521/ab2a5d01/attachment.pl>",
+      "body_plain": "Dear all\n\nI am prasun kumar from SASTRA university  studying in final year\nbioinformatcis.\nI am new to R and want to do the PCA for my data. Idont know how to start.\n\nCan some one help me please in this.If any one is having any tutorial please\nsend me via mail my id is prasun30 at gmail.com\nwaitting for positive reply\nyours truly\nprasun\nPRASUN (ASHOKA)\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear all\n\nI am prasun kumar from SASTRA university  studying in final year\nbioinformatcis.\nI am new to R and want to do the PCA for my data. Idont know how to start.\n\nCan some one help me please in th",
       "thread_id": "thread-9df94153f03b",
       "thread_depth": 0,
-      "month": "2009-05"
+      "month": "2009-05",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090521/ab2a5d01/attachment.pl"
+      ]
     },
     {
       "id": "msg-2373612ce1a6",

@@ -13,11 +13,14 @@
       "subject_clean": "Plotting the P value",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110402/1c46020e/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110402/1c46020e/attachment.pl>",
+      "body_plain": "Dear  All R users:\n\n\n\nCan someone help me with the plotting the p-values under the normal curve (say).\n\n\n\nThank you so much.\n\n\n\nAli\n\n\n\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear  All R users:\n\n\n\nCan someone help me with the plotting the p-values under the normal curve (say).\n\n\n\nThank you so much.\n\n\n\nAli\n\n\n\n\n\n\n\t[[alternative HTML version deleted]]",
       "thread_id": "thread-0fc81b0c2843",
       "thread_depth": 0,
-      "month": "2011-04"
+      "month": "2011-04",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110402/1c46020e/attachment.pl"
+      ]
     },
     {
       "id": "msg-fa4626f6a0ca",
@@ -120,11 +123,14 @@
       "subject_clean": "load an image file using an Rweb server",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110405/eacfccc7/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110405/eacfccc7/attachment.pl>",
+      "body_plain": "Hello list:\n\nI submitted this question on R-help, but for some reason it did not get posted...\n\nI have some R code, class definitions, data, etc. thath i'd like my students to use, either in R installed on their own pc's or in an RWeb server.  I have saved the workspace image onto an R image file that i'm hosting on google Docs (https://).  So my questions are these:\n\n1) Can session files be loaded from an RWeb client?\n2) I have tried using the following:\ncon <- url(\"https:// ....\")\nload(con)\nclose(con)\nBut regular R does not allow con with url's from https sites, so, does anyone know of a site where i could post session files that is non-https?\n\nMy idea is to eventually turn this data/code into a package, but that would not suit my immediatesituation for the moment (mainly because i'd like students to be able to work via RWeb).\n\nAny suggestions?\n\nThanks in advance,\n\njose romero\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello list:\n\nI submitted this question on R-help, but for some reason it did not get posted...\n\nI have some R code, class definitions, data, etc. thath i'd like my students to use, either in R install",
       "thread_id": "thread-8ecb16a4c9d2",
       "thread_depth": 0,
-      "month": "2011-04"
+      "month": "2011-04",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110405/eacfccc7/attachment.pl"
+      ]
     },
     {
       "id": "msg-8c7d57fe6d15",
@@ -136,11 +142,14 @@
       "subject_clean": "Rejection region for F test",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110418/f4df140c/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110418/f4df140c/attachment.pl>",
+      "body_plain": "Dear R users:\n\nI need some helps with graphing and shading the rejection region for the F test \n(say ANOVA test).\n\nWith many thanks\nAli\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users:\n\nI need some helps with graphing and shading the rejection region for the F test \n(say ANOVA test).\n\nWith many thanks\nAli\n\t[[alternative HTML version deleted]]",
       "thread_id": "thread-8c7d57fe6d15",
       "thread_depth": 0,
-      "month": "2011-04"
+      "month": "2011-04",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110418/f4df140c/attachment.pl"
+      ]
     },
     {
       "id": "msg-25b05feb43f5",

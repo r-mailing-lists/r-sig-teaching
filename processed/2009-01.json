@@ -13,11 +13,14 @@
       "subject_clean": "issues with importing",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090131/e821f116/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090131/e821f116/attachment.pl>",
+      "body_plain": "Hello Everyone,\nI am a new R user. Not everything goes so easy. I have many questions. I\nbelieve that this is the place where one can discuss issue in R programing.\nI cannot get excel file open using file location. Only note pad works but\nsome data is in excel. How can I do that? Also, I need to create MATRIX OF\nDIMENSIONS nxn. I am not sure how to do that.\n\nThanks for help,\nAnia\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello Everyone,\nI am a new R user. Not everything goes so easy. I have many questions. I\nbelieve that this is the place where one can discuss issue in R programing.\nI cannot get excel file open using ",
       "thread_id": "thread-5e71eca11e15",
       "thread_depth": 0,
-      "month": "2009-01"
+      "month": "2009-01",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090131/e821f116/attachment.pl"
+      ]
     },
     {
       "id": "msg-e7c91d31768c",
@@ -129,11 +132,14 @@
       "subject_clean": "[Re:  Who is the list for?]",
       "in_reply_to": "<20090131234616.GA18179@laplace.reed.edu>",
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090131/16db7fb7/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090131/16db7fb7/attachment.pl>",
+      "body_plain": "Sorry for my late response as well. I'm here.\n\n--- On Sat, 1/31/09, Albyn Jones <jones at reed.edu> wrote:\n\nFrom: Albyn Jones <jones at reed.edu>\nSubject: [R-sig-teaching] [jones at reed.edu: Re: Who is the list for?]\nTo: \"r-sig-teaching list\" <r-sig-teaching at r-project.org>\nDate: Saturday, January 31, 2009, 3:46 PM\n\nOoops, I failed to respond to the list.  Here it is...\n\nalbyn\n\n----- Forwarded message from Albyn Jones <jones at reed.edu> -----\n\nHi Robert\n\nThat's a good question, and clearly the boundary is fuzzy.  \n\nI was inferring from the form of the question that the poster was a\nrandom person learning R, rather than someone using R to teach\ncourses.  I may have been in error, in which case I apologize to all\nfor jumping to a conclusion.\n\nI don't have a list of topics that are appropriate or inappropriate,\nrather a notion that this list is not the same as the R-help list,\nbut is for discussion of issues related to teaching R or with R.\n\nIn any case, anyone teaching with R should be aware of the R-help list.\n\nalbyn\n\n\n\nOn Sat, Jan 31, 2009 at 05:47:27PM -0500, Robert W. Hayden wrote:\n> Forwarded message:\n> > From: Albyn Jones <jones at reed.edu>\n> > \n> > You should post basic R questions to the R-help list;\n> > this list is intended for discussion of the use of R in\n> > teaching.\n> \n> Albyn, could you tell us more about what is on that list?\n> \n> Some time ago I raised the possibility of an email list for those who\n> want to use R in teaching introductory courses.  The idea was passed\n> on and within a couple days this list was born.  (I assumed causality,\n> but it may have been coincidence;-)  I would have made the list open to\n> any question from anyone using R in an introductory course.  Perhaps\n> there is a problem due to bimodality in the potential audience.  Some\n> are old hands at R and now want to use it in the classroom.  Others\n> may have never used it before and are now trying to teach with it.  I\n> am not on the R-help list but wonder how much of the content there\n> overlaps an introductory statistics course?  Or how much would be over\n> the head of a beginner?  (I think most of the R documentation is well\n> beyond the level of an introductory course, and pretty overwhelming\n> and incomprehensible to a beginner, so I am hoping there is SOME place\n> where beginners can get simple answers to simple questions without\n> becoming Unix gurus or programmers first.)\n> \n> For anyone wondering why a non-R-guru such as myself might be on this\n> list (or have suggested its creation)...  I teach online in a context\n> where we cannot buy a site license to provide each student with\n> software.  They have to either use whatever their employer provides\n> (if anything), or pay for software out of their own pocket, normally\n> at full single-copy prices.  R is attractive because it is free.  It\n> also makes sense because our introductory courses (at least\n> originally) only exist to prepare students for more advanced courses\n> where R is preferred for its power or programmability.  So, having\n> created the introductory courses themselves, I then created student\n> manuals for Minitab (because I already knew it), Data Desk (because it\n> comes with the textbook), and R (for reasons already given).  In\n> creating the R materials, I encountered others trying to get started\n> with R while using it in an introductory course, and hence this list.\n> \n> ------->  First-time AP Stats. teacher?  Help is on the way! See\n> \n> \nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n> \t    \n>   Robert W. Hayden in the old library at  212 Main Street (P. O. Box 450)\n>   North Troy, VT 05859  phone (802) 988-2587  web site\nhttp://statland.org/      \n>   email  bob statland.org  (add your own \"@\" and save me some\nspam)\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> \n\n----- End forwarded message -----\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\n\n      \n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Sorry for my late response as well. I'm here.\n\n--- On Sat, 1/31/09, Albyn Jones <jones at reed.edu> wrote:\n\nFrom: Albyn Jones <jones at reed.edu>\nSubject: [R-sig-teaching] [jones at reed.edu: Re: Who ",
       "thread_id": "thread-b7bb25460029",
       "thread_depth": 1,
-      "month": "2009-01"
+      "month": "2009-01",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090131/16db7fb7/attachment.pl"
+      ]
     }
   ],
   "threads": [

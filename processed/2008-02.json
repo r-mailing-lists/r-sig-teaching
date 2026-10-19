@@ -13,11 +13,14 @@
       "subject_clean": "help!",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080211/be3bbdf0/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080211/be3bbdf0/attachment.pl>",
+      "body_plain": "Hello, I was wondering how I can have outlier detection for hydrologic data\nin particular peak flow data in R.\n\nThanks.\n\nAmir Sadoddin\n-- \nPh.D., Watershed Modelling & Management\nGorgan University Of Agricultural Sci.& Natural Resources,\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello, I was wondering how I can have outlier detection for hydrologic data\nin particular peak flow data in R.\n\nThanks.\n\nAmir Sadoddin\n-- \nPh.D., Watershed Modelling & Management\nGorgan University Of ",
       "thread_id": "thread-716e1d637786",
       "thread_depth": 0,
-      "month": "2008-02"
+      "month": "2008-02",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080211/be3bbdf0/attachment.pl"
+      ]
     },
     {
       "id": "msg-802358585f95",

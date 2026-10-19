@@ -50,11 +50,14 @@
         "<AcoUXv+v/zyGlH+LRdy5BFwn1OKxIAAB090g>",
         "<508E815F27CD4EF5B7D61A82AB78AD74@gpbdmx>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090807/6c7fa4a1/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090807/6c7fa4a1/attachment.pl>",
+      "body_plain": "Hi,\n\nI tried to install Deducer on an Gentoo Linux AMD64 and received the\nfollowing error messages:\n\ninstall.packages(\"Deducer\",,\"http://cran.r-project.org\")\ntrying URL 'http://cran.r-project.org/src/contrib/Deducer_0.1-0.tar.gz'\nContent type 'application/x-gzip' length 2123646 bytes (2.0 Mb)\nopened URL\n==================================================\ndownloaded 2.0 Mb\n\n* Installing *source* package 'Deducer' ...\n** R\n** inst\n** preparing package for lazy loading\nLoading required package: proto\nLoading required package: grid\nLoading required package: reshape\nLoading required package: plyr\n\nAttaching package: 'ggplot2'\n\n\n        The following object(s) are masked from package:grid :\n\n         nullGrob\n\nError : package 'JGR' 1.7-0 was found, but < 1.7 is required by 'Deducer'\nERROR: lazy loading failed for package 'Deducer'\n* Removing '/usr/lib64/R/library/Deducer'\n\nThe downloaded packages are in\n        '/tmp/RtmpWnRZ0y/downloaded_packages'\nUpdating HTML index of packages in '.Library'\nWarning message:\nIn install.packages(\"Deducer\", , \"http://cran.r-project.org\") :\n  installation of package 'Deducer' had non-zero exit status\n\nJan Vandermeer\n\n\nOn Mon, Aug 3, 2009 at 2:21 PM, Ian Fellows <ifellows at ucsd.edu> wrote:\n\n> Hi All,\n>\n>   I am seeking comments, suggestions, bugs, and users for a data analysis\n> GUI that has just been released to CRAN. One of the first areas that I\n> think\n> that this GUI could be of use is in the classroom, so your comments would\n> be\n> very valuable to me. An online manual is available (though under\n> construction) here:\n>\n> http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual\n>\n>   I'd appreciate any feedback or bugs. I'm particularly interested in\n> experiences using it from within non-JGR GUI's, and under Linux. If any of\n> you teach introductory/intermediate statistics, I'd like to know how you\n> would feel about using it in the classroom.\n>\n> TIA,\n> Ian\n>\n>\n> p.s. Installation instructions:\n> install.packages(\"Deducer\",,\"http://cran.r-project.org\")\n>\n>\n>\n>\n> ---------------------------------------------------------------------------\n>\n>\n> Deducer 0.1 has been released to CRAN\n>\n> Deducer is designed to be a free, easy to use, alternative to proprietary\n> software such as SPSS, JMP, and Minitab. It has a menu system to do common\n> data manipulation and data analysis tasks, and an excel-like spreadsheet in\n> which to view and edit data frames. The goal of the project is to two fold.\n>\n>        1. Provide an intuitive interface so that non-technical users\n>           can learn and perform analyses without programming getting\n>           in their way.\n>        2. Increase the efficiency of expert R users when performing\n>         common tasks by replacing hundreds of keystrokes with a few\n>         mouse clicks. Also, as much as possible the GUI should not\n>         get in their way if they just want to do some programming.\n>\n> Deducer is integrated into the Windows RGui, and the cross-platform Java\n> console JGR, and is also usable and accessible from the command line.\n> Screen shots and examples can be viewed in the online wiki manual:\n>\n> http://www.deducer.org/pmwiki/pmwiki.php?n=Main.DeducerManual\n>\n> Comments and questions are more than welcome. A discussion group has been\n> created for any questions or recommendations.\n>\n> http://groups.google.com/group/deducer\n>\n> Deducer Features:\n>\n> Data manipulation:\n>        1. Factor editor\n>        2. Variable recoding\n>        3. data sorting\n>        4. data frame merging\n>        5. transposing a data frame\n>        6. subseting\n>\n> Analysis:\n>        1. Frequencies\n>        2. Descriptives\n>        3. Contingency tables\n>                a. Nicely formatted tables with optional\n>                        i. Percentages\n>                        ii. Expected counts\n>                        iii. Residuals\n>                b. Statistical tests\n>                        i. chi-squared\n>                        ii. likelihood ratio\n>                        iii. fisher's exact\n>                        iv. mantel haenszel\n>                        v. kendall's tau\n>                        vi. spearman's rho\n>                        vii. kruskal-wallis\n>                        viii. mid-p values for all exact/monte carlo tests\n>        4. One sample tests\n>                a. T-test\n>                b. Shapiro-wilk\n>                c. Histogram/box-plot summaries\n>        5. Two sample tests\n>                a. T-test (student and welch)\n>                b. Permutation test\n>                c. Wilcoxon\n>                d. Brunner-munzel\n>                e. Kolmogorov-smirnov\n>                f. Jitter/box-plot group comparison\n>        6. K-sample tests\n>                a. Anova (usual and welch)\n>                b. Kruskal-wallis\n>                c. Jitter/boxplot comparison\n>        7. Correlation\n>                a. Nicely formatted correlation matrices\n>                b. Pearson's\n>                c. Kendall's\n>                d. Spearman's\n>                e. Scatterplot paneled array\n>                f. Circle plot\n>                g. Full correlation matrix plot\n>        8.Generalized Linear Models\n>                a. Model preview\n>                b. Intuitive model builder\n>                c. diagnostic plots\n>                d. Component residual and added variable plots\n>                e. Anova (type II and III implementing LR, Wald and F tests)\n>                f. Parameter summary tables and parameter correlations\n>                g. Influence and colinearity diagnostics\n>                h. Post-hoc tests and confidence intervals\n>                   with (or without) adjustments for multiple testing.\n>                i. Custom linear hypothesis tests\n>                j. Effect mean summaries (with confidence intervals), and\n> plots\n>                k. Exports: Residuals, Standardized residuals, Studentized\n>                   residuals, Predicted Values (linear and link), Cooks\n>                   distance, DFBETA, DFFITS, hat values, and Cov Ratio\n>                l. Observation weights and subseting\n>        9. Logistic Regression\n>                a. All GLM features\n>                b. ROC Plot\n>        10. Linear Model\n>                a. All GLM features\n>        b. Heteroskedastic robust tests\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi,\n\nI tried to install Deducer on an Gentoo Linux AMD64 and received the\nfollowing error messages:\n\ninstall.packages(\"Deducer\",,\"http://cran.r-project.org\")\ntrying URL 'http://cran.r-project.org/src/",
       "thread_id": "thread-4c772528a3f1",
       "thread_depth": 1,
-      "month": "2009-08"
+      "month": "2009-08",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090807/6c7fa4a1/attachment.pl"
+      ]
     },
     {
       "id": "msg-0dd2c0b41606",
@@ -98,11 +101,14 @@
       "subject_clean": "Standardized canonical discriminant functions",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090820/c83d4183/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090820/c83d4183/attachment.pl>",
+      "body_plain": "Dear R users:\n \nCould you please help me out how to use R to get and interpret\nStandardized discriminant functions and structure coefficients for sex,\nDegree_Program, and Enrol_USM\n \nPlease find the data file at: \n \nhttp://www.usm.maine.edu/~aaboueissa/Rhelps/Rhelps.html\n \ndata files are (xls file: dataforRxls    or   txt file: dataforRtxt)\n \n \n \nOutput looks like this table.\n \n \nStandardized discriminant functions and structure coefficients for sex\n-----------------------------------------------------------------------------------------\nVariable (scale)                          Function 1                   \n                  Function 2\n                                        ------------------------------ \n          --------------------------------\n                                       Coef         rs      rs-square  \n          Coef         rs      rs-square\n----------------------------------------------------------------------------------------\nFAC1_OneComp\nFAC2_OneComp\nFAC3_OneComp\nFAC4_OneComp\nFAC5_OneComp\nFAC6_OneComp\n--------------------------------------------------------------------------------------------------\nWith the interpretation of the numbers.\n \n \n \n \n \nStandardized discriminant functions and structure coefficients for men\n-----------------------------------------------------------------------------------------\nVariable (scale)                          Function 1                   \n                  Function 2\n                                        ------------------------------ \n          --------------------------------\n                                       Coef         rs      rs-square  \n          Coef         rs      rs-square\n----------------------------------------------------------------------------------------\nFAC1_OneComp\nFAC2_OneComp\nFAC3_OneComp\nFAC4_OneComp\nFAC5_OneComp\nFAC6_OneComp\n--------------------------------------------------------------------------------------------------\nWith the interpretation of the numbers.\n \n \n \n \n \n \n \nand\n \nWilks’ lambda and canonical correlation for sex\n------------------------------------------------------------------------------------------------\nFunction 1            Wilks’ lambda        chi-square      df        p \n    Rc          Rc square\n---------------------------------------------------------------------------------------------------------\nStatistical anxiety      …..                       …..           …     \n..      ….           ……..\n \n------------------------------------------------------------------------------------------------\n \nWith the interpretation of the numbers.\n \n \nStatistical anxiety are: FAC1_OneComp, FAC2_OneComp, FAC3_OneComp,\nFAC4_OneComp, FAC5_OneComp, FAC6_OneComp.\n \nWith many thanks\n \nAbou\n \n \n \n==========================\nAbouEl-Makarim Aboueissa, Ph.D.\nAssistant Professor of Statistics\nDepartment of Mathematics & Statistics\nUniversity of Southern Maine\n96 Falmouth Street\nP.O. Box 9300\nPortland, ME 04104-9300\nUSA\n \n\nTel: (207) 228-8389\nFax: (207) 780-5607\nEmail: aaboueissa at usm.maine.edu\n          aboueiss at yahoo.com\n \nWeb address:  http://www.usm.maine.edu/~aaboueissa/\n \nOffice: 301C Payson Smith\n \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users:\n \nCould you please help me out how to use R to get and interpret\nStandardized discriminant functions and structure coefficients for sex,\nDegree_Program, and Enrol_USM\n \nPlease find the d",
       "thread_id": "thread-506288e950d8",
       "thread_depth": 0,
-      "month": "2009-08"
+      "month": "2009-08",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090820/c83d4183/attachment.pl"
+      ]
     },
     {
       "id": "msg-541e603a4437",
@@ -114,11 +120,14 @@
       "subject_clean": "Standardized canonical discriminant functions",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090820/a1f5a9f1/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090820/a1f5a9f1/attachment.pl>",
+      "body_plain": "Dear R users:\n \nI need some helps with discriminant function analysis.\n \nPlease see details at:\n \nhttp://www.usm.maine.edu/~aaboueissa/Rhelps/Rhelps.html    file name \"Discriminant Analysis\"\n \n \ndata file (xls) at:   http://www.usm.maine.edu/~aaboueissa/Rhelps/Rhelps.html  file name \"dataforRxls\"\n \n            (txt) at: http://www.usm.maine.edu/~aaboueissa/Rhelps/Rhelps.html        file name \"dataforRtxt\"\n \n \n \nWith many thanks\nAbou\n \n \n \n \n==========================\nAbouEl-Makarim Aboueissa, Ph.D.\nAssistant Professor of Statistics\nDepartment of Mathematics & Statistics\nUniversity of Southern Maine\n96 Falmouth Street\nP.O. Box 9300\nPortland, ME 04104-9300\nUSA\n \n\nTel: (207) 228-8389\nFax: (207) 780-5607\nEmail: aaboueissa at usm.maine.edu\n          aboueiss at yahoo.com\n \nWeb address:  http://www.usm.maine.edu/~aaboueissa/\n \nOffice: 301C Payson Smith\n \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear R users:\n \nI need some helps with discriminant function analysis.\n \nPlease see details at:\n \nhttp://www.usm.maine.edu/~aaboueissa/Rhelps/Rhelps.html    file name \"Discriminant Analysis\"\n \n \ndata ",
       "thread_id": "thread-541e603a4437",
       "thread_depth": 0,
-      "month": "2009-08"
+      "month": "2009-08",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090820/a1f5a9f1/attachment.pl"
+      ]
     },
     {
       "id": "msg-906958fa01cb",
@@ -130,11 +139,14 @@
       "subject_clean": "seeking tutor on statistical learning and data-mining",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090825/eec386ba/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090825/eec386ba/attachment.pl>",
+      "body_plain": "(posting for my friend)\n\nHi all,\n\nWe are looking for a tutor who could teach me statistical learning and\ndata-mining using the book:\n\nThe Elements of Statistical Learning: Data Mining, Inference, and Prediction\n\nPlease drop me a line if you are interested. Thank you!\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "(posting for my friend)\n\nHi all,\n\nWe are looking for a tutor who could teach me statistical learning and\ndata-mining using the book:\n\nThe Elements of Statistical Learning: Data Mining, Inference, and ",
       "thread_id": "thread-906958fa01cb",
       "thread_depth": 0,
-      "month": "2009-08"
+      "month": "2009-08",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090825/eec386ba/attachment.pl"
+      ]
     },
     {
       "id": "msg-1e63da5768d2",
@@ -146,11 +158,14 @@
       "subject_clean": "online classes or online eduction in statistics? esp. time series analysis and cointegration?",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090830/4cdca55b/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090830/4cdca55b/attachment.pl>",
+      "body_plain": "Hi all,\n\nI am looking for low cost online education in statistics. I am thinking of\ntaking online classes on time series analysis and cointegration, etc.\n\nOf course, if there are free video lectures, that would be great. However I\ncouldn't find any free video lectures at upper-undergraduate and graduate\nlevel which formally going through the whole timeseries education... That's\nwhy I would like to enroll in some sort of online degree classes. However, I\ndon't want to earn the certificate or the degree; I just want to audit the\nonline class specifically in time series analysis and cointegration. Could\nanybody recommend such online education in statistics esp. in time series\nand cointegration, at low cost? Hopefully it's not going to be like a few\nthousand dollars for one class.\n\nThanks a lot for your pointers in advance!\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi all,\n\nI am looking for low cost online education in statistics. I am thinking of\ntaking online classes on time series analysis and cointegration, etc.\n\nOf course, if there are free video lectures, ",
       "thread_id": "thread-1e63da5768d2",
       "thread_depth": 0,
-      "month": "2009-08"
+      "month": "2009-08",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090830/4cdca55b/attachment.pl"
+      ]
     },
     {
       "id": "msg-52ebc5124195",
@@ -165,11 +180,14 @@
         "<213fc0be0908302250r5ef94475ic50a25913587972c@mail.gmail.com>",
         "<0KP8007UC91DYJJ1@vms173017.mailsrvcs.net>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090830/3cf04a32/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090830/3cf04a32/attachment.pl>",
+      "body_plain": "What's their fee structures?\n\nThanks a lot Robert!\n\n2009/8/30 Robert A LaBudde <ral at lcfltd.com>\n\n> http://www.statistics.com/ for online courses without college credit,\n> taught by well known faculty typically using their own books.\n>\n>\n>\n>\n> At 01:50 AM 8/31/2009, Luna Laurent wrote:\n>\n>> Hi all,\n>>\n>> I am looking for low cost online education in statistics. I am thinking of\n>> taking online classes on time series analysis and cointegration, etc.\n>>\n>> Of course, if there are free video lectures, that would be great. However\n>> I\n>> couldn't find any free video lectures at upper-undergraduate and graduate\n>> level which formally going through the whole timeseries education...\n>> That's\n>> why I would like to enroll in some sort of online degree classes. However,\n>> I\n>> don't want to earn the certificate or the degree; I just want to audit the\n>> online class specifically in time series analysis and cointegration. Could\n>> anybody recommend such online education in statistics esp. in time series\n>> and cointegration, at low cost? Hopefully it's not going to be like a few\n>> thousand dollars for one class.\n>>\n>> Thanks a lot for your pointers in advance!\n>>\n>>        [[alternative HTML version deleted]]\n>>\n>> ______________________________________________\n>> R-help at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-help\n>> PLEASE do read the posting guide\n>> http://www.R-project.org/posting-guide.html\n>> and provide commented, minimal, self-contained, reproducible code.\n>>\n>\n> ================================================================\n> Robert A. LaBudde, PhD, PAS, Dpl. ACAFS  e-mail: ral at lcfltd.com\n> Least Cost Formulations, Ltd.            URL: http://lcfltd.com/\n> 824 Timberlake Drive                     Tel: 757-467-0954\n> Virginia Beach, VA 23464-3239            Fax: 757-467-2947\n>\n> \"Vere scire est per causas scire\"\n> ================================================================\n>\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "What's their fee structures?\n\nThanks a lot Robert!\n\n2009/8/30 Robert A LaBudde <ral at lcfltd.com>\n\n> http://www.statistics.com/ for online courses without college credit,\n> taught by well known facul",
       "thread_id": "thread-52ebc5124195",
       "thread_depth": 0,
-      "month": "2009-08"
+      "month": "2009-08",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090830/3cf04a32/attachment.pl"
+      ]
     },
     {
       "id": "msg-100cb5c57a96",
@@ -183,11 +201,14 @@
       "references": [
         "<mailman.7.1251712803.5605.r-sig-teaching@r-project.org>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090831/d1bdb534/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090831/d1bdb534/attachment.pl>",
+      "body_plain": "Hi all i am looking for a project in bio statistics this december for 1\nmonth could any body me find one any where in the world. Eagerly waiting for\nreply from many stat wizards.\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi all i am looking for a project in bio statistics this december for 1\nmonth could any body me find one any where in the world. Eagerly waiting for\nreply from many stat wizards.\n\n\t[[alternative HTML ",
       "thread_id": "thread-100cb5c57a96",
       "thread_depth": 0,
-      "month": "2009-08"
+      "month": "2009-08",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090831/d1bdb534/attachment.pl"
+      ]
     },
     {
       "id": "msg-41e0c1939a76",

@@ -29,11 +29,14 @@
       "subject_clean": "Interactive shiny apps for introductory statistics course",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20140429/74a88fbb/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20140429/74a88fbb/attachment.pl>",
+      "body_plain": "Hello,\n\nI developed this Spring semester for my introductory \nstatistics course interactive shiny applications that are available \nonline. \n\nFor now I have descriptive statistics, probability and \nsampling distribution and t and chi-square test (regression analysis \nwill come soon). I use task assignments for teams of three students to \nguide them through the applications and they have to write a report what\n they learn.\nThe advantage is that students can first experience \nstatistics before they have to do it on their own. They can also go back\n as often they need to. \nOverall students' feedback is positive.\n\nAccess to the applications is via my blog page: http://ankepi.wordpress.com/teaching/data-analysis/rstatlab/\n\nFeel \nfree to contact me if you are interested in the task assignments and I \nam also thankful for feedback how the apps can be improved.\n\nAnke Piepenbrink\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello,\n\nI developed this Spring semester for my introductory \nstatistics course interactive shiny applications that are available \nonline. \n\nFor now I have descriptive statistics, probability and \nsam",
       "thread_id": "thread-0fe729c8d541",
       "thread_depth": 0,
-      "month": "2014-04"
+      "month": "2014-04",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20140429/74a88fbb/attachment.pl"
+      ]
     }
   ],
   "threads": [

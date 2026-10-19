@@ -13,11 +13,14 @@
       "subject_clean": "Vote concentration Equation",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100423/5587875c/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100423/5587875c/attachment.pl>",
+      "body_plain": "Hello all,\nI'm just a beginner on R issue, but improving.\n\nDoes anyone knows how can I get vote concentration to each ID by city\n(CIDADE) considering each UF (State), because my data is long and has all\nstates together and IDs repeating across states.\nI also tried to get  totals and then apply for division, but R din't allow\nme to attach new column with less rows, of course.\nSo, someone have any light for me do that? Can I print values all without my\npain programing?\n\ntotal.UF <- tapply(senador$Votos, senador$UF, sum)\ntotal.MUN <- tapply(senador$Votos, senador$CODMUNIC09, sum)\n\nz <- cbind(senador, total.UF)\nError in data.frame(..., check.names = FALSE) :\n  arguments imply differing number of rows: 54861, 27\n\n========= my data look likes these ===========\n\n ID         UF     CIDADE       VOTOS\n1515      SP    São Paulo       15\n1515      SP    Campinas       100\n1515      SP    Santos             0\n1212      SP    São Paulo      1500\n1212      SP     Piracicaba      20\n1212     SP      Campinas      300\n1200     SP       Limeira          0\n1200      SP     São Paulo     2500\n1212      RJ    Rio de Janeiro 500\n1212      RJ      Niteroi           20\n1212     PR      Maringá       300\n1200     DF      Brasília          10\n1200     PR     Curitiba       2000\n\n-- \nDaniel Marcelino\n15° 48' 00\" S 47° 51' 50\" O\nhttp://ow.ly/FY8T\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello all,\nI'm just a beginner on R issue, but improving.\n\nDoes anyone knows how can I get vote concentration to each ID by city\n(CIDADE) considering each UF (State), because my data is long and has a",
       "thread_id": "thread-7ce87a78fd39",
       "thread_depth": 0,
-      "month": "2010-04"
+      "month": "2010-04",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100423/5587875c/attachment.pl"
+      ]
     },
     {
       "id": "msg-11fc4ba37050",
@@ -29,11 +32,14 @@
       "subject_clean": "Hi there!",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100423/0a5d1d6d/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100423/0a5d1d6d/attachment.pl>",
+      "body_plain": "Hello!\n\n \n\nI have questions about doing loglinear models in R. I'm trying to use the glm function with my quantitative response variable and my two explanational variables. And I keep getting the error message: \"In dpois(y, mu, log=TRUE) : non-integer x=561.2333 (or something else)\" like a hundred times for everytime I'm trying. \n\nHmm, I get a bit confused since I thought that it's possible to do glm's with a poisson distribution (log-link) for non-discrete data but I might be wrong... \n\nI would be very greatful for any ideas about this! \n\n \n\nRegards, \n\nEmilia \n \t\t \t   \t\t  \n_________________________________________________________________\nSurfa tryggt med Internet Explorer 8\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello!\n\n \n\nI have questions about doing loglinear models in R. I'm trying to use the glm function with my quantitative response variable and my two explanational variables. And I keep getting the erro",
       "thread_id": "thread-11fc4ba37050",
       "thread_depth": 0,
-      "month": "2010-04"
+      "month": "2010-04",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100423/0a5d1d6d/attachment.pl"
+      ]
     },
     {
       "id": "msg-ff3370a5fb1d",
@@ -45,11 +51,14 @@
       "subject_clean": "Help with Goodness of Fit Test",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100428/97fc4adf/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100428/97fc4adf/attachment.pl>",
+      "body_plain": "Dear All:\n \nCan someone help me how to conduct a Chi-square goodness of fit test in R. Also how to use for both discrete and continuous data.\n \nFor examples: how to test that the underlying distribution is Weibull or Poisson or Binomial, etc...\n \nWhoever willing to help, please use any artificial data sets.\n \nWith many thanks\nAbou\n \n \n \n==========================\nAbouEl-Makarim Aboueissa, Ph.D.\nAssistant Professor of Statistics\nDepartment of Mathematics & Statistics\nUniversity of Southern Maine\n96 Falmouth Street\nP.O. Box 9300\nPortland, ME 04104-9300\nUSA\n \n\nTel: (207) 228-8389\nFax: (207) 780-5607\nEmail: aaboueissa at usm.maine.edu\n          aboueiss at yahoo.com\n \nWeb address:  http://www.usm.maine.edu/~aaboueissa/\n \nOffice: 301C Payson Smith\n \n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All:\n \nCan someone help me how to conduct a Chi-square goodness of fit test in R. Also how to use for both discrete and continuous data.\n \nFor examples: how to test that the underlying distributi",
       "thread_id": "thread-ff3370a5fb1d",
       "thread_depth": 0,
-      "month": "2010-04"
+      "month": "2010-04",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100428/97fc4adf/attachment.pl"
+      ]
     },
     {
       "id": "msg-ca965d9d0478",

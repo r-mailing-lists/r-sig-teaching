@@ -63,11 +63,14 @@
       "subject_clean": "question",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100819/b32448b9/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100819/b32448b9/attachment.pl>",
+      "body_plain": "Hello\nI want to know how can i sampling from upper and lower tail of normal distribution, by R code?\n \nRegards\n\n\n      \n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello\nI want to know how can i sampling from upper and lower tail of normal distribution, by R code?\n \nRegards\n\n\n      \n\t[[alternative HTML version deleted]]",
       "thread_id": "thread-6564b7a46b04",
       "thread_depth": 0,
-      "month": "2010-08"
+      "month": "2010-08",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100819/b32448b9/attachment.pl"
+      ]
     },
     {
       "id": "msg-bb910e818696",
@@ -99,11 +102,14 @@
       "references": [
         "<mailman.9.1282298403.28650.r-sig-teaching@r-project.org>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100820/01af58df/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100820/01af58df/attachment.pl>",
+      "body_plain": "Hello,\n \nI want to know how to enter data into R, how to run a bootstrap regression and also how to test for serial correlation. \t\t \t   \t\t  \n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hello,\n \nI want to know how to enter data into R, how to run a bootstrap regression and also how to test for serial correlation. \t\t \t   \t\t  \n\t[[alternative HTML version deleted]]",
       "thread_id": "thread-81468493f86d",
       "thread_depth": 0,
-      "month": "2010-08"
+      "month": "2010-08",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100820/01af58df/attachment.pl"
+      ]
     },
     {
       "id": "msg-c0a7a95cf970",

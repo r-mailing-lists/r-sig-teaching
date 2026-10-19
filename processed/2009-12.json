@@ -109,11 +109,14 @@
       "references": [
         "<206a64110912021246q12e82811u7b65f71f6de23e14@mail.gmail.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091202/ceba7394/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091202/ceba7394/attachment.pl>",
+      "body_plain": "My students and I use JGR (Java GUI for R), because it runs almost\nidentically on Macs and Windows. One of my students also loaded it into\nLinux.\n\nFor relevant pages from Bob Muenchen's excellent book, *R for SAS and SPSS\nUsers*, see\nhttp://sites.google.com/site/ralphobriensteaching/home/installing-r-and-jgr/r-readings/MuenchenOnJGR.pdf?attredirects=0&d=1\n\nOn Wed, Dec 2, 2009 at 3:46 PM, Stuart Wagenius <s-wagenius at northwestern.edu\n> wrote:\n\n> Hi,\n>\n> I teach statistics using R in a classroom with Windows machines. For\n> class, I use Notepad and cut and paste to the console. For my own\n> work, I use a Mac or I use a PC with Tinn-R. The send-to-R feature is\n> great. I would like to have the students use Tinn-R because the\n> send-to-R feature is so nice, but recent versions of Tinn-R are too\n> complicated and quirky. I feel that trying to set-up Tinn-R on the\n> class computers would be a hassle and using it in class may be too\n> distracting.\n>\n> Can anyone recommend a text editor for teaching R on machines running\n> Windows Vista? Is there something simple to set up, stable to run, and\n> easy to use?\n>\n> Thanks,\n> Stuart\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\n\n-- \nRalph O'Brien, PhD\nProfessor, Dept of Epidemiology and Biostatistics\nCase Western Reserve University\nOffice: 216.368.1927\nCell: 216.312.3203\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "My students and I use JGR (Java GUI for R), because it runs almost\nidentically on Macs and Windows. One of my students also loaded it into\nLinux.\n\nFor relevant pages from Bob Muenchen's excellent book",
       "thread_id": "thread-1e08af39fd59",
       "thread_depth": 1,
-      "month": "2009-12"
+      "month": "2009-12",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091202/ceba7394/attachment.pl"
+      ]
     },
     {
       "id": "msg-660416ef7818",

@@ -50,11 +50,14 @@
         "<4CCF31DE.7010306@carleton.edu>",
         "<4CCF64E2.6050107@waikato.ac.nz>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101102/fff3ac9b/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101102/fff3ac9b/attachment.pl>",
+      "body_plain": "A huge plus for R is that it runs nearly identically on all three major\nplatforms. There is every reason to make our teaching as\nplatform-independent as we can.\n\nThe choose.dir() function is not found on the Mac release (I'm still at v.\n2.11.1), so I would advise against using it, especially since it is trivial\nto teach and use code that is \"plain vanilla.\"\n\nMy scripts to students begin with something like:\n\n# Uncomment one of these path2data statements and\n# insert your appropriate path specification.\n# path2data <- \"C:/EPBI431/datasets\"   # Windows (convert to forward\nslashes)\n # path2data <- \"/Users/ralphobrien/AllDocs/teaching/EPBI431/datasets\"   #\nMac OS\nsetwd(path2data)\n\nLater, I might simply give them:\n\n# setwd(\"C:/EPBI431/datasets\")  # Windows (convert to forward slashes)\n# setwd(\"/Users/ralphobrien/AllDocs/teaching/EPBI431/datasets\")  # Mac OS\n\nSome students have never encountered path specifications, so when I\nintroduce this, I show them how to use \"Properties\" (Windows XP) and \"Get\nInfo\" (Mac OS) to copy-paste what is needed, converting the back slashes to\nforward slashes for Windows.\n\nIn the real world, there are also strong programming integrity reasons to\nhard code paths directly into our scripts. This leaves no doubt about what\ndataset was being analyzed, etc.\n\n-- \nRalph O'Brien, PhD\nProfessor, Dept of Epidemiology and Biostatistics\nCase Western Reserve University\nOffice: 216.368.1927\nCell: 216.312.3203\n\n\n\n\nOn Mon, Nov 1, 2010 at 9:09 PM, Murray Jorgensen <maj at waikato.ac.nz> wrote:\n\n> I think that folders should be organized by topic and not by the software\n> that might use the files. After all you might want to use several different\n> applications of files in a folder.\n>\n> I teach doing something like this at the start of an R script:\n>\n> > wdir <- choose.dir()\n> > wdir\n> [1] \"C:\\\\Files\\\\Teaching\\\\STAT321\\\\2008\"\n> > setwd(wdir)\n>\n> Later you can edit this to\n>\n> wdir <- # choose.dir()\n>       \"C:\\\\Files\\\\Teaching\\\\STAT321\\\\2008\"\n> setwd(wdir)\n>\n> to avoid repeating the dialog boxes.\n>\n> Murray\n>\n>\n> On 2/11/2010 10:32 a.m., Laura Chihara wrote:\n>\n>> hello!\n>>\n>> I'm wondering how you have your students\n>> handle workspaces in R. Do you have students\n>> create their own R folder (on their home drive),\n>> and then load from within R? Or do you\n>> have them create an R shortcut and then\n>> type the path in the \"Start In\" field (Windows)?\n>>\n>> I've been teaching the latter method, but am\n>> wondering if loading from within R is easier?\n>>\n>> Thanks for ideas.\n>>\n>> --Laura\n>>\n>> *******************************************\n>> Laura Chihara\n>> Professor of Mathematics 507-222-4065 (office)\n>> Dept of Mathematics 507-222-4312 (fax)\n>> Carleton College\n>> 1 North College Street\n>> Northfield MN 55057\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>\n> --\n> Dr Murray Jorgensen      http://www.stats.waikato.ac.nz/Staff/maj.html\n> Department of Statistics, University of Waikato, Hamilton, New Zealand\n> Email: maj at waikato.ac.nz                                Fax 7 838 4155\n> Phone  +64 7 838 4773 wk    Home +64 7 825 0441   Mobile 021 0200 8350\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "A huge plus for R is that it runs nearly identically on all three major\nplatforms. There is every reason to make our teaching as\nplatform-independent as we can.\n\nThe choose.dir() function is not found",
       "thread_id": "thread-40f0b7beefdf",
       "thread_depth": 2,
-      "month": "2010-11"
+      "month": "2010-11",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101102/fff3ac9b/attachment.pl"
+      ]
     },
     {
       "id": "msg-fc10d97b6abd",
@@ -91,11 +94,14 @@
         "<AANLkTi=7JuacQEU2+GSex7ptknMrAsdGgcE9H3KkKNzU@mail.gmail.com>",
         "<AANLkTimOJDCd7cWOAqtM6y3KKecBLfeKE-9WTX-qUExX@mail.gmail.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101102/da075f82/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101102/da075f82/attachment.pl>",
+      "body_plain": "========================\nIf you have a path with backslashes in the Windows clipboard you can\njust do this:\n\nmyPath <- readClipboard()\nsetwd(myPath)\n\nwhich eliminates the need for any conversion.\n========================\n\nBut this is still Windows-centric functionality (not platform independent)\nand it hides what dataset was in play (not a good programming practice in\nthe real world).\n\nOn Tue, Nov 2, 2010 at 1:24 PM, Gabor Grothendieck\n<ggrothendieck at gmail.com>wrote:\n\n> On Tue, Nov 2, 2010 at 12:51 PM, Ralph O'Brien, PhD\n> <obrienralph at gmail.com> wrote:\n> > A huge plus for R is that it runs nearly identically on all three major\n> > platforms. There is every reason to make our teaching as\n> > platform-independent as we can.\n> >\n> > The choose.dir() function is not found on the Mac release (I'm still at\n> v.\n> > 2.11.1), so I would advise against using it, especially since it is\n> trivial\n> > to teach and use code that is \"plain vanilla.\"\n> >\n> > My scripts to students begin with something like:\n> >\n> > # Uncomment one of these path2data statements and\n> > # insert your appropriate path specification.\n> > # path2data <- \"C:/EPBI431/datasets\"   # Windows (convert to forward\n> > slashes)\n> >  # path2data <- \"/Users/ralphobrien/AllDocs/teaching/EPBI431/datasets\"\n> #\n> > Mac OS\n> > setwd(path2data)\n> >\n> > Later, I might simply give them:\n> >\n> > # setwd(\"C:/EPBI431/datasets\")  # Windows (convert to forward slashes)\n> > # setwd(\"/Users/ralphobrien/AllDocs/teaching/EPBI431/datasets\")  # Mac OS\n> >\n> > Some students have never encountered path specifications, so when I\n> > introduce this, I show them how to use \"Properties\" (Windows XP) and \"Get\n> > Info\" (Mac OS) to copy-paste what is needed, converting the back slashes\n> to\n> > forward slashes for Windows.\n>\n> If you have a path with backslashes in the Windows clipboard you can\n> just do this:\n>\n> myPath <- readClipboard()\n> setwd(myPath)\n>\n> which eliminates the need for any conversion.\n>\n>\n> --\n> Statistics & Software Consulting\n> GKX Group, GKX Associates Inc.\n> tel: 1-877-GKX-GROUP\n> email: ggrothendieck at gmail.com\n>\n\n\n\n-- \nRalph O'Brien, PhD\nProfessor, Dept of Epidemiology and Biostatistics\nCase Western Reserve University\nOffice: 216.368.1927\nCell: 216.312.3203\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "========================\nIf you have a path with backslashes in the Windows clipboard you can\njust do this:\n\nmyPath <- readClipboard()\nsetwd(myPath)\n\nwhich eliminates the need for any conversion.\n====",
       "thread_id": "thread-40f0b7beefdf",
       "thread_depth": 4,
-      "month": "2010-11"
+      "month": "2010-11",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101102/da075f82/attachment.pl"
+      ]
     },
     {
       "id": "msg-4bf868034e41",
@@ -250,11 +256,14 @@
       "references": [
         "<4CD89505020000B10006DAC8@GW.muhlenberg.edu>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101109/b3dbc488/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101109/b3dbc488/attachment.pl>",
+      "body_plain": "You can do this from the Rcmdr menu with RcmdrPlugin.HH installed.\n\ninstall.packages(\"RcmdrPlugin.HH\")\nlibrary(RcmdrPlugin.HH)\n\nThen click on\nDistributions > Continuous distributions > t distribution > Plot hypotheses\nor confidence intervals... (HH)\n\nFor more examples using Rcmdr please my recent book with Erich Neuwirth\nbegin_of_the_skype_highlighting     end_of_the_skype_highlighting,\n\"R through Excel\" http://www.springer.com/978-1-4419-0051-7\n\nRcmdr works on all platforms.\nIf you are working with R on Windows, then download and install the packages\nRthroughExcelWorkbooksInstaller\nand\nRExcelInstaller\n\n\nRich\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "You can do this from the Rcmdr menu with RcmdrPlugin.HH installed.\n\ninstall.packages(\"RcmdrPlugin.HH\")\nlibrary(RcmdrPlugin.HH)\n\nThen click on\nDistributions > Continuous distributions > t distribution ",
       "thread_id": "thread-28d23cf4560a",
       "thread_depth": 1,
-      "month": "2010-11"
+      "month": "2010-11",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101109/b3dbc488/attachment.pl"
+      ]
     },
     {
       "id": "msg-f927192b91fb",
@@ -318,11 +327,14 @@
       "subject_clean": "Installing R into my computer",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101113/f1d9a4be/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101113/f1d9a4be/attachment.pl>",
+      "body_plain": "Dear All R Users:\n\nI am trying to install R into my computer. I downloaded R-2.12.0.tar and the old \nversion R-2.6.2.tar. But when I tried to double click on the the file(s) it did \nnot install the program, it says Windows cannot open this file:\n\nFile: R-2.12.0.tar.gz\n\nTo open this file, windows needs to know what progrm created it, ....\n\nWhat do you want to do?\n\nUse the Web sercvice to find the approperiate program\nSelect the program from a list.\n\nI think I  am missing something, but I do not know what it is?\n\nThanks for your helps.\n\nAli\n\n\n      \n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Dear All R Users:\n\nI am trying to install R into my computer. I downloaded R-2.12.0.tar and the old \nversion R-2.6.2.tar. But when I tried to double click on the the file(s) it did \nnot install the pr",
       "thread_id": "thread-b637f78fec9a",
       "thread_depth": 0,
-      "month": "2010-11"
+      "month": "2010-11",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101113/f1d9a4be/attachment.pl"
+      ]
     },
     {
       "id": "msg-30b04b837bc1",
@@ -336,11 +348,14 @@
       "references": [
         "<603399.57154.qm@web59514.mail.ac4.yahoo.com>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101113/b8425af0/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101113/b8425af0/attachment.pl>",
+      "body_plain": "Hi Ali;\n\nYou need to install a program like 7Zip <http://www.7-zip.org/> which will\nallow you to untar and install the *.tar file.\n\n7Zip unpacks tars, rars, zips and their own proprietary 7z compaction\nmethods.\n\n*7-Zip* is *open source* software. Most of the source code is under the *GNU\nLGPL* license. The unRAR code is under a mixed license: GNU LGPL + unRAR\nrestrictions. Check license information here: 7-Zip\nlicense<http://www.7-zip.org/license.txt>\n.\n\nYou can use 7-Zip on any computer, including a computer in a commercial\norganization. You don't need to register or pay for 7-Zip.\n\nJust as R is open source and under a similar license.\n\n\nJan\n\n\nOn Sat, Nov 13, 2010 at 9:02 AM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:\n\n> Dear All R Users:\n>\n> I am trying to install R into my computer. I downloaded R-2.12.0.tar and\n> the old\n> version R-2.6.2.tar. But when I tried to double click on the the file(s) it\n> did\n> not install the program, it says Windows cannot open this file:\n>\n> File: R-2.12.0.tar.gz\n>\n> To open this file, windows needs to know what progrm created it, ....\n>\n> What do you want to do?\n>\n> Use the Web sercvice to find the approperiate program\n> Select the program from a list.\n>\n> I think I  am missing something, but I do not know what it is?\n>\n> Thanks for your helps.\n>\n> Ali\n>\n>\n>\n>        [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi Ali;\n\nYou need to install a program like 7Zip <http://www.7-zip.org/> which will\nallow you to untar and install the *.tar file.\n\n7Zip unpacks tars, rars, zips and their own proprietary 7z compactio",
       "thread_id": "thread-b637f78fec9a",
       "thread_depth": 1,
-      "month": "2010-11"
+      "month": "2010-11",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101113/b8425af0/attachment.pl"
+      ]
     },
     {
       "id": "msg-d8a168ee32f7",
@@ -375,11 +390,14 @@
         "<AANLkTikMHYUXnmuzKv=yF6LYXcx9C57BBK2BnUmuJFez@mail.gmail.com>",
         "<000101cb834b$38255e30$a8701a90$@ca>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101113/c36a40ab/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101113/c36a40ab/attachment.pl>",
+      "body_plain": "Hi John;\n\nYou are right. I was trying to answer the immediate question. I would\ndefinitely be simpler to use the install. I run R under Gentoo Linux and I\nguess we all get set in particular ways of doing things.,\n\nJan\n\nOn Sat, Nov 13, 2010 at 10:55 AM, John Fox <jfox at mcmaster.ca> wrote:\n\n> Dear Jan and Ali,\n>\n> I haven't followed this thread, so I apologize if my information is\n> off-base\n> or redundant.\n>\n> I expect that Ali simply wants to install R on a Windows machine, in which\n> case he would be well advised to download and use the Windows installer for\n> R rather than download the source distribution of R. The installer is\n> available on CRAN at <http://cran.r-project.org/bin/windows/base/> or,\n> better, at the analogous location on a nearby mirror site.\n>\n> I hope this helps,\n>  John\n>\n> --------------------------------\n> John Fox\n> Senator William McMaster\n>  Professor of Social Statistics\n> Department of Sociology\n> McMaster University\n> Hamilton, Ontario, Canada\n> web: socserv.mcmaster.ca/jfox\n>\n>\n> > -----Original Message-----\n> > From: r-sig-teaching-bounces at r-project.org\n> [mailto:r-sig-teaching-bounces at r-\n> > project.org] On Behalf Of Jan Vandermeer\n> > Sent: November-13-10 9:50 AM\n> > To: Ali Zanaty\n> > Cc: r-sig-teaching at r-project.org\n> > Subject: Re: [R-sig-teaching] Installing R into my computer\n> >\n> > Hi Ali;\n> >\n> > You need to install a program like 7Zip <http://www.7-zip.org/> which\n> will\n> > allow you to untar and install the *.tar file.\n> >\n> > 7Zip unpacks tars, rars, zips and their own proprietary 7z compaction\n> > methods.\n> >\n> > *7-Zip* is *open source* software. Most of the source code is under the\n> *GNU\n> > LGPL* license. The unRAR code is under a mixed license: GNU LGPL + unRAR\n> > restrictions. Check license information here: 7-Zip\n> > license<http://www.7-zip.org/license.txt>\n> > .\n> >\n> > You can use 7-Zip on any computer, including a computer in a commercial\n> > organization. You don't need to register or pay for 7-Zip.\n> >\n> > Just as R is open source and under a similar license.\n> >\n> >\n> > Jan\n> >\n> >\n> > On Sat, Nov 13, 2010 at 9:02 AM, Ali Zanaty <zanaty2005 at yahoo.com>\n> wrote:\n> >\n> > > Dear All R Users:\n> > >\n> > > I am trying to install R into my computer. I downloaded R-2.12.0.tar\n> and\n> > > the old\n> > > version R-2.6.2.tar. But when I tried to double click on the the\n> file(s)\n> it\n> > > did\n> > > not install the program, it says Windows cannot open this file:\n> > >\n> > > File: R-2.12.0.tar.gz\n> > >\n> > > To open this file, windows needs to know what progrm created it, ....\n> > >\n> > > What do you want to do?\n> > >\n> > > Use the Web sercvice to find the approperiate program\n> > > Select the program from a list.\n> > >\n> > > I think I  am missing something, but I do not know what it is?\n> > >\n> > > Thanks for your helps.\n> > >\n> > > Ali\n> > >\n> > >\n> > >\n> > >        [[alternative HTML version deleted]]\n> > >\n> > > _______________________________________________\n> > > R-sig-teaching at r-project.org mailing list\n> > > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n> > >\n> >\n> >       [[alternative HTML version deleted]]\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n>\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi John;\n\nYou are right. I was trying to answer the immediate question. I would\ndefinitely be simpler to use the install. I run R under Gentoo Linux and I\nguess we all get set in particular ways of do",
       "thread_id": "thread-b637f78fec9a",
       "thread_depth": 3,
-      "month": "2010-11"
+      "month": "2010-11",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101113/c36a40ab/attachment.pl"
+      ]
     },
     {
       "id": "msg-4cdf278879d6",

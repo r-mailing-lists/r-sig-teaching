@@ -29,11 +29,14 @@
       "subject_clean": "R website for college students (Chi Yau)",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090902/8ff5dd60/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090902/8ff5dd60/attachment.pl>",
+      "body_plain": "I have created a website on R tutorial for college level Statistics students.\n\n    http://r-tutor.com\n\nIt provides examples on how to do class homework in R, instead of using non-free software such as Excel. The data samples are mostly drawn from the MASS package.\n\nChi Yau\nchi.yau at r-tutor.com\n\n\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "I have created a website on R tutorial for college level Statistics students.\n\n    http://r-tutor.com\n\nIt provides examples on how to do class homework in R, instead of using non-free software such as",
       "thread_id": "thread-59ed545f52e8",
       "thread_depth": 0,
-      "month": "2009-09"
+      "month": "2009-09",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090902/8ff5dd60/attachment.pl"
+      ]
     },
     {
       "id": "msg-dc0d565d4618",
@@ -81,11 +84,14 @@
       "references": [
         "<mailman.9.1253354403.17640.r-sig-teaching@r-project.org>"
       ],
-      "body_plain": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090919/c4bb1407/attachment.pl>",
-      "body_snippet": "An embedded and charset-unspecified text was scrubbed...\nName: not available\nURL: <https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090919/c4bb1407/attachment.pl>",
+      "body_plain": "pls give me a project to do plssssssssssss\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "pls give me a project to do plssssssssssss\n\n\t[[alternative HTML version deleted]]",
       "thread_id": "thread-bb9f3f0d878d",
       "thread_depth": 0,
-      "month": "2009-09"
+      "month": "2009-09",
+      "restored_from": [
+        "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090919/c4bb1407/attachment.pl"
+      ]
     },
     {
       "id": "msg-552a240f7a7c",
