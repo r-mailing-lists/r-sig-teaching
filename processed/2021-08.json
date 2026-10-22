@@ -17,7 +17,8 @@
       "body_snippet": "Dear All:\n\n\nI am sending this request to this group too hoping that someone can help.\n\n\n\nI am wondering if someone have an R codes (R functions) to run the test\nprocedures described in the paper title",
       "thread_id": "thread-eb5f81839e86",
       "thread_depth": 0,
-      "month": "2021-08"
+      "month": "2021-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2021q3/000860.html"
     },
     {
       "id": "msg-0ff83ec4f7ac",
@@ -35,7 +36,8 @@
       "body_snippet": "This list is for discussions about using R in teaching statistics.  It\nisn't a help line where you ask people to write code for you.  You can ask\non the main list, or on stack overflow for help with c",
       "thread_id": "thread-eb5f81839e86",
       "thread_depth": 1,
-      "month": "2021-08"
+      "month": "2021-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2021q3/000861.html"
     },
     {
       "id": "msg-33d354b951a3",
@@ -54,7 +56,8 @@
       "body_snippet": "Dear Jeff: good morning\n\n\nI just thought that someone may know where I can find help in this matter,\nor maybe know where I can find this R code(s).\n\nAnyway, thank you very much for your message.\n\n\nwit",
       "thread_id": "thread-eb5f81839e86",
       "thread_depth": 2,
-      "month": "2021-08"
+      "month": "2021-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2021q3/000862.html"
     },
     {
       "id": "msg-7c76af8bf8ee",
@@ -73,7 +76,8 @@
       "body_snippet": ">>>>> Jeff Laux \n>>>>>     on Mon, 30 Aug 2021 07:38:54 -0400 writes:\n\n    > This list is for discussions about using R in teaching\n    > statistics.  It isn't a help line where you ask people to\n    ",
       "thread_id": "thread-7c76af8bf8ee",
       "thread_depth": 0,
-      "month": "2021-08"
+      "month": "2021-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2021q3/000863.html"
     }
   ],
   "threads": [

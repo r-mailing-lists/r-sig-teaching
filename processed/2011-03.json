@@ -20,7 +20,8 @@
       "body_snippet": "Collegues recommend interesting project called \"Rstudio\". Look at \nrstudio.org Don't blame me in spam!\nIt's really looks very nice! Thanks for developers. Sorry for my moonspeak.\n\n--\nBest regards,\nZha",
       "thread_id": "thread-9e4f5d135902",
       "thread_depth": 0,
-      "month": "2011-03"
+      "month": "2011-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q1/000357.html"
     },
     {
       "id": "msg-308235385218",
@@ -37,6 +38,7 @@
       "thread_id": "thread-308235385218",
       "thread_depth": 0,
       "month": "2011-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q1/000358.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110308/c5f37d86/attachment.pl"
       ]
@@ -58,7 +60,8 @@
       "body_snippet": "On Tue, Mar 8, 2011 at 12:35 PM, jose romero <jlaurentum at yahoo.com> wrote:\n> Right,\n>\n> I followed the suggestion for the correct address to the Rweb page console, which is:\n>\n> http://www.math.mon",
       "thread_id": "thread-308235385218",
       "thread_depth": 1,
-      "month": "2011-03"
+      "month": "2011-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q1/000359.html"
     },
     {
       "id": "msg-157430b5a196",
@@ -74,7 +77,8 @@
       "body_snippet": "The sample files are here:\n\nhttp://github.com/gjkerns/samplequiz\n\nIt took me a shamefully long time to get this just right, and it's\nstill not perfect (an extra space here and there, the indentation..",
       "thread_id": "thread-157430b5a196",
       "thread_depth": 0,
-      "month": "2011-03"
+      "month": "2011-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q1/000360.html"
     },
     {
       "id": "msg-9bdec4762f3e",
@@ -92,7 +96,8 @@
       "body_snippet": "Hello Jay\n\nOn Sat, Mar 19, 2011 at 6:54 AM, G. Jay Kerns <gjkerns at gmail.com> wrote:\n> The sample files are here:\n>\n> http://github.com/gjkerns/samplequiz\n>\n> It took me a shamefully long time to ge",
       "thread_id": "thread-157430b5a196",
       "thread_depth": 1,
-      "month": "2011-03"
+      "month": "2011-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q1/000361.html"
     },
     {
       "id": "msg-1afc46ae371f",
@@ -111,7 +116,8 @@
       "body_snippet": "Dear Liviu,\n\nOn Sat, Mar 19, 2011 at 4:09 AM, Liviu Andronic <landronimirc at gmail.com> wrote:\n> Hello Jay\n>\n>>\n> OT: Are you aware of working layout files for LyX, which would also\n> allow creating ",
       "thread_id": "thread-157430b5a196",
       "thread_depth": 2,
-      "month": "2011-03"
+      "month": "2011-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q1/000362.html"
     }
   ],
   "threads": [

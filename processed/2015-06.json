@@ -17,7 +17,8 @@
       "body_snippet": "Dear friends,\nI am trying to install and use xlsx package. After installeing xlsx and\nrJava successfully, I type >library(xlsx) then R said :\n\"library(xlsx)\nLoading required package: rJava\nError : .on",
       "thread_id": "thread-ea8e20eebafb",
       "thread_depth": 0,
-      "month": "2015-06"
+      "month": "2015-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2015q2/000619.html"
     },
     {
       "id": "msg-b7892623cc44",
@@ -35,7 +36,8 @@
       "body_snippet": "Hi Tu,\n\nYes, those Java dependencies suck. I recommend trying the readxl\npackage, it doesn't have any external dependencies and should be\neasier to get it working.\n\nBest,\nIsta\n\nOn Mon, Jun 22, 2015 at",
       "thread_id": "thread-ea8e20eebafb",
       "thread_depth": 1,
-      "month": "2015-06"
+      "month": "2015-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2015q2/000620.html"
     },
     {
       "id": "msg-cb890e4eeb02",
@@ -47,11 +49,12 @@
       "subject_clean": "Help on packages working with excell files",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Hi,\nIf you need xlsx package try installing both java versions on your PC. I often had 32 bit java installed but running R on 64 bit requires a 64 bit java installed and vice versa.?\nBest, peter\n\n\nVon meinem Samsung Ger?t gesendet.\n\n-------- Urspr?ngliche Nachricht --------\nVon: Ista Zahn <istazahn at gmail.com> \nDatum: 2015.06.22  20:31  (GMT+01:00) \nAn: \"Nguyen C.\" <nctu2006 at gmail.com> \nCc: \"R-sig-teaching at r-project.org\" <r-sig-teaching at r-project.org> \nBetreff: Re: [R-sig-teaching] Help on packages working with excell files \n\nHi Tu,\n\nYes, those Java dependencies suck. I recommend trying the readxl\npackage, it doesn't have any external dependencies and should be\neasier to get it working.\n\nBest,\nIsta\n\nOn Mon, Jun 22, 2015 at 1:40 PM, Nguyen C. <nctu2006 at gmail.com> wrote:\n> Dear friends,\n> I am trying to install and use xlsx package. After installeing xlsx and\n> rJava successfully, I type >library(xlsx) then R said :\n> \"library(xlsx)\n> Loading required package: rJava\n> Error : .onLoad failed in loadNamespace() for 'rJava', details:\n>?? call: fun(libname, pkgname)\n>?? error: No CurrentVersion entry in Software/JavaSoft registry! Try\n> re-installing Java and make sure R and Java have matching architectures.\n> Error: package ?rJava? could not be loaded\"\n> I did the same for gdata package,? after installing succesfully and calling\n> library(gdata), I did:\n>> myDf<-read.xls(\"levuan2kq.xls\",sheet=1,header=TRUE)\n> Error in findPerl(verbose = verbose) :\n>?? perl executable not found. Use perl= argument to specify the correct path.\n> Error in file.exists(tfn) : invalid 'file' argument\n>\n> Till now, I could not use any package to work with excel file.\n> Anyone can help me.\n> Thanks,\n> Tu\n>\n>???????? [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\t[[alternative HTML version deleted]]",
-      "body_snippet": "Hi,\nIf you need xlsx package try installing both java versions on your PC. I often had 32 bit java installed but running R on 64 bit requires a 64 bit java installed and vice versa.?\nBest, peter\n\n\nVon",
+      "body_plain": "Hi,\nIf you need xlsx package try installing both java versions on your PC. I often had 32 bit java installed but running R on 64 bit requires a 64 bit java installed and vice versa. \nBest, peter\n\n\nVon meinem Samsung Gerät gesendet.\n\n-------- Ursprüngliche Nachricht --------\nVon: Ista Zahn <istazahn at gmail.com> \nDatum: 2015.06.22  20:31  (GMT+01:00) \nAn: \"Nguyen C.\" <nctu2006 at gmail.com> \nCc: \"R-sig-teaching at r-project.org\" <r-sig-teaching at r-project.org> \nBetreff: Re: [R-sig-teaching] Help on packages working with excell files \n\nHi Tu,\n\nYes, those Java dependencies suck. I recommend trying the readxl\npackage, it doesn't have any external dependencies and should be\neasier to get it working.\n\nBest,\nIsta\n\nOn Mon, Jun 22, 2015 at 1:40 PM, Nguyen C. <nctu2006 at gmail.com> wrote:\n> Dear friends,\n> I am trying to install and use xlsx package. After installeing xlsx and\n> rJava successfully, I type >library(xlsx) then R said :\n> \"library(xlsx)\n> Loading required package: rJava\n> Error : .onLoad failed in loadNamespace() for 'rJava', details:\n>   call: fun(libname, pkgname)\n>   error: No CurrentVersion entry in Software/JavaSoft registry! Try\n> re-installing Java and make sure R and Java have matching architectures.\n> Error: package ‘rJava’ could not be loaded\"\n> I did the same for gdata package,  after installing succesfully and calling\n> library(gdata), I did:\n>> myDf<-read.xls(\"levuan2kq.xls\",sheet=1,header=TRUE)\n> Error in findPerl(verbose = verbose) :\n>   perl executable not found. Use perl= argument to specify the correct path.\n> Error in file.exists(tfn) : invalid 'file' argument\n>\n> Till now, I could not use any package to work with excel file.\n> Anyone can help me.\n> Thanks,\n> Tu\n>\n> ????    [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n_______________________________________________\nR-sig-teaching at r-project.org mailing list\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n\t[[alternative HTML version deleted]]",
+      "body_snippet": "Hi,\nIf you need xlsx package try installing both java versions on your PC. I often had 32 bit java installed but running R on 64 bit requires a 64 bit java installed and vice versa. \nBest, peter\n\n\nVon",
       "thread_id": "thread-cb890e4eeb02",
       "thread_depth": 0,
-      "month": "2015-06"
+      "month": "2015-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2015q2/000621.html"
     }
   ],
   "threads": [

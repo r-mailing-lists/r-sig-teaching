@@ -17,7 +17,8 @@
       "body_snippet": "I am finding many but not all menu choices greyed out in Rcmdr --\ntwo-sample t-test for independent samples, for example.  I can do the\ntest from the command line but do not understand why I can't do ",
       "thread_id": "thread-ac8f04647194",
       "thread_depth": 0,
-      "month": "2007-02"
+      "month": "2007-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2007q1/000015.html"
     },
     {
       "id": "msg-99e722d2fc3c",
@@ -33,7 +34,8 @@
       "body_snippet": "Dear Robert,\n\nThe Rcmdr only activates menu items that are applicable to the current\ndata set. In the case of a two-sample t-test, the data set must include\nat least one two-level factor and one numer",
       "thread_id": "thread-ac8f04647194",
       "thread_depth": 1,
-      "month": "2007-02"
+      "month": "2007-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2007q1/000016.html"
     },
     {
       "id": "msg-16070f033ef3",
@@ -49,7 +51,8 @@
       "body_snippet": "Thanks.  I guess what was missing was an indication of how Rcmdr\nwanted the data laid out.  Mine was in two columns, and R is perfectly\nhappy with this if I do \"t.test(col1,col2)\" so the test is certa",
       "thread_id": "thread-16070f033ef3",
       "thread_depth": 0,
-      "month": "2007-02"
+      "month": "2007-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2007q1/000017.html"
     },
     {
       "id": "msg-aac7c85d14e6",
@@ -65,7 +68,8 @@
       "body_snippet": "Dear Robert,\n\nOK -- I see the problem. As a general matter, the Rcmdr is structured\naround rectangular data sets. This format of the input for t.test()\nonly works with a rectangular data set if both g",
       "thread_id": "thread-16070f033ef3",
       "thread_depth": 1,
-      "month": "2007-02"
+      "month": "2007-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2007q1/000018.html"
     }
   ],
   "threads": [

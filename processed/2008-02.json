@@ -18,6 +18,7 @@
       "thread_id": "thread-716e1d637786",
       "thread_depth": 0,
       "month": "2008-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2008q1/000051.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080211/be3bbdf0/attachment.pl"
       ]
@@ -36,7 +37,8 @@
       "body_snippet": "Forwarded message: From: \"Amir Sadoddin\" <amir.sadoddin at gmail.com>\n> \n> Hello, I was wondering how I can have outlier detection for hydrologic data\n> in particular peak flow data in R.\n \n\nDear Dr. ",
       "thread_id": "thread-802358585f95",
       "thread_depth": 0,
-      "month": "2008-02"
+      "month": "2008-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2008q1/000052.html"
     },
     {
       "id": "msg-be560cda40fb",
@@ -54,7 +56,8 @@
       "body_snippet": "Amir,\n\nAlthough I am unfamiliar with \"hydrologic data in particular peak \nflow\", generally outliers can be visualized using ?boxplot(). Also \ntake a look at help(outlier.test, package=car).\n\nBest rega",
       "thread_id": "thread-be560cda40fb",
       "thread_depth": 0,
-      "month": "2008-02"
+      "month": "2008-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2008q1/000053.html"
     }
   ],
   "threads": [

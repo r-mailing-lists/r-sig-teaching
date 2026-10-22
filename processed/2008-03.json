@@ -17,7 +17,8 @@
       "body_snippet": "Dear Colleagues:\n\nI am going to be teaching a graduate statistics course as part of a\nmasters degree program in psychology beginning in April using the\nAgresti and Finlay text, \"Statistical Methods fo",
       "thread_id": "thread-105f0cbf6d75",
       "thread_depth": 0,
-      "month": "2008-03"
+      "month": "2008-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2008q1/000054.html"
     },
     {
       "id": "msg-96060c787b8c",
@@ -35,7 +36,8 @@
       "body_snippet": "Larry,\n\nThere are several step-by-step installation guides posted on the \nCRAN, under contributed documentation. Most documents there begin \nby describing how to download and install R.\n\nAnd yes, I us",
       "thread_id": "thread-96060c787b8c",
       "thread_depth": 0,
-      "month": "2008-03"
+      "month": "2008-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2008q1/000055.html"
     }
   ],
   "threads": [

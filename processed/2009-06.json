@@ -18,6 +18,7 @@
       "thread_id": "thread-9b7e548198a0",
       "thread_depth": 0,
       "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000141.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090604/376f6b2b/attachment.pl"
       ]
@@ -37,6 +38,7 @@
       "thread_id": "thread-a36c7ef6d87e",
       "thread_depth": 0,
       "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000142.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090604/7d69b266/attachment.pl"
       ]
@@ -53,11 +55,12 @@
       "references": [
         "<4A27CB17.01BB.00A6.1@usm.maine.edu>"
       ],
-      "body_plain": "I would do it in this way:\n\n###########################################################################\nu=seq(0.0001,1,0.1)\nv=u\nf=outer(u,v, function(u,v) 18*(u/v)*(1-u/v))\nf\nfor (i in 2:length(u)) {\n\tfor (j in 1:(i-1)) {\n\t\tf[i,j]=0\n\t}\n}\nf\n\npersp( u, v, f, phi=30, theta=-30,col='red')\n###########################################################################\n\nSurely you (or someone) have a better solution to share.\n\nSebasti?n.\n\n> Dear All: Please ignore my previous email. I fixed the joint pdf.\n>\n>\n> How I can get the graph of the joint pdf:\n>\n> f(u,v)=18 v (u/v) (1-(u/v))  for 0<u<v and 0<v<1, and 0 otherwise.\n>\n> With many thanks\n>\n> Abou\n>\n>\n> ==========================\n> AbouEl-Makarim Aboueissa, Ph.D.\n> Assistant Professor of Statistics\n> Department of Mathematics & Statistics\n> University of Southern Maine\n> 96 Falmouth Street\n> P.O. Box 9300\n> Portland, ME 04104-9300\n> USA\n>\n>\n> Tel: (207) 228-8389\n> Fax: (207) 780-5607\n> Email: aaboueissa at usm.maine.edu\n>           aboueiss at yahoo.com\n>\n>   http://www.usm.maine.edu/~aaboueissa/\n>\n>\n> Office: 301C Payson Smith\n>\n>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_plain": "I would do it in this way:\n\n###########################################################################\nu=seq(0.0001,1,0.1)\nv=u\nf=outer(u,v, function(u,v) 18*(u/v)*(1-u/v))\nf\nfor (i in 2:length(u)) {\n\tfor (j in 1:(i-1)) {\n\t\tf[i,j]=0\n\t}\n}\nf\n\npersp( u, v, f, phi=30, theta=-30,col='red')\n###########################################################################\n\nSurely you (or someone) have a better solution to share.\n\nSebastián.\n\n> Dear All: Please ignore my previous email. I fixed the joint pdf.\n>\n>\n> How I can get the graph of the joint pdf:\n>\n> f(u,v)=18 v (u/v) (1-(u/v))  for 0<u<v and 0<v<1, and 0 otherwise.\n>\n> With many thanks\n>\n> Abou\n>\n>\n> ==========================\n> AbouEl-Makarim Aboueissa, Ph.D.\n> Assistant Professor of Statistics\n> Department of Mathematics & Statistics\n> University of Southern Maine\n> 96 Falmouth Street\n> P.O. Box 9300\n> Portland, ME 04104-9300\n> USA\n>\n>\n> Tel: (207) 228-8389\n> Fax: (207) 780-5607\n> Email: aaboueissa at usm.maine.edu\n>           aboueiss at yahoo.com\n>\n>   http://www.usm.maine.edu/~aaboueissa/\n>\n>\n> Office: 301C Payson Smith\n>\n>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
       "body_snippet": "I would do it in this way:\n\n###########################################################################\nu=seq(0.0001,1,0.1)\nv=u\nf=outer(u,v, function(u,v) 18*(u/v)*(1-u/v))\nf\nfor (i in 2:length(u)) {\n",
       "thread_id": "thread-a36c7ef6d87e",
       "thread_depth": 1,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000143.html"
     },
     {
       "id": "msg-faa7bdc60dd9",
@@ -76,6 +79,7 @@
       "thread_id": "thread-faa7bdc60dd9",
       "thread_depth": 0,
       "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000144.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090605/d35fafeb/attachment.pl"
       ]
@@ -93,11 +97,12 @@
         "<4A27CB17.01BB.00A6.1@usm.maine.edu>",
         "<60be8d9a1998f2db15f8ac3e0f8883ea.squirrel@mail.ccee.edu.uy>"
       ],
-      "body_plain": "I've found a 'better' solution:\n\n###########################################################################\nu=seq(0.0001,1,0.05)\nv=u\nf=outer(u,v, function(u,v) 18*(u/v)*(1-u/v))*outer(u, v, function(u,v)(u<v))\npersp( u, v, f, phi=30, theta=-30,col='red')\n###########################################################################\n\nSebasti?n.\n\n\n\n\n\n\n> I would do it in this way:\n>\n> ###########################################################################\n> u=seq(0.0001,1,0.1)\n> v=u\n> f=outer(u,v, function(u,v) 18*(u/v)*(1-u/v))\n> f\n> for (i in 2:length(u)) {\n> \tfor (j in 1:(i-1)) {\n> \t\tf[i,j]=0\n> \t}\n> }\n> f\n>\n> persp( u, v, f, phi=30, theta=-30,col='red')\n> ###########################################################################\n>\n> Surely you (or someone) have a better solution to share.\n>\n> Sebasti?n.\n>\n>> Dear All: Please ignore my previous email. I fixed the joint pdf.\n>>\n>>\n>> How I can get the graph of the joint pdf:\n>>\n>> f(u,v)=18 v (u/v) (1-(u/v))  for 0<u<v and 0<v<1, and 0 otherwise.\n>>\n>> With many thanks\n>>\n>> Abou\n>>\n>>\n>> ==========================\n>> AbouEl-Makarim Aboueissa, Ph.D.\n>> Assistant Professor of Statistics\n>> Department of Mathematics & Statistics\n>> University of Southern Maine\n>> 96 Falmouth Street\n>> P.O. Box 9300\n>> Portland, ME 04104-9300\n>> USA\n>>\n>>\n>> Tel: (207) 228-8389\n>> Fax: (207) 780-5607\n>> Email: aaboueissa at usm.maine.edu\n>>           aboueiss at yahoo.com\n>>\n>>   http://www.usm.maine.edu/~aaboueissa/\n>>\n>>\n>> Office: 301C Payson Smith\n>>\n>>\n>> \t[[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_plain": "I've found a 'better' solution:\n\n###########################################################################\nu=seq(0.0001,1,0.05)\nv=u\nf=outer(u,v, function(u,v) 18*(u/v)*(1-u/v))*outer(u, v, function(u,v)(u<v))\npersp( u, v, f, phi=30, theta=-30,col='red')\n###########################################################################\n\nSebastián.\n\n\n\n\n\n\n> I would do it in this way:\n>\n> ###########################################################################\n> u=seq(0.0001,1,0.1)\n> v=u\n> f=outer(u,v, function(u,v) 18*(u/v)*(1-u/v))\n> f\n> for (i in 2:length(u)) {\n> \tfor (j in 1:(i-1)) {\n> \t\tf[i,j]=0\n> \t}\n> }\n> f\n>\n> persp( u, v, f, phi=30, theta=-30,col='red')\n> ###########################################################################\n>\n> Surely you (or someone) have a better solution to share.\n>\n> Sebastián.\n>\n>> Dear All: Please ignore my previous email. I fixed the joint pdf.\n>>\n>>\n>> How I can get the graph of the joint pdf:\n>>\n>> f(u,v)=18 v (u/v) (1-(u/v))  for 0<u<v and 0<v<1, and 0 otherwise.\n>>\n>> With many thanks\n>>\n>> Abou\n>>\n>>\n>> ==========================\n>> AbouEl-Makarim Aboueissa, Ph.D.\n>> Assistant Professor of Statistics\n>> Department of Mathematics & Statistics\n>> University of Southern Maine\n>> 96 Falmouth Street\n>> P.O. Box 9300\n>> Portland, ME 04104-9300\n>> USA\n>>\n>>\n>> Tel: (207) 228-8389\n>> Fax: (207) 780-5607\n>> Email: aaboueissa at usm.maine.edu\n>>           aboueiss at yahoo.com\n>>\n>>   http://www.usm.maine.edu/~aaboueissa/\n>>\n>>\n>> Office: 301C Payson Smith\n>>\n>>\n>> \t[[alternative HTML version deleted]]\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
       "body_snippet": "I've found a 'better' solution:\n\n###########################################################################\nu=seq(0.0001,1,0.05)\nv=u\nf=outer(u,v, function(u,v) 18*(u/v)*(1-u/v))*outer(u, v, function(",
       "thread_id": "thread-a36c7ef6d87e",
       "thread_depth": 2,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000145.html"
     },
     {
       "id": "msg-34340d0cca46",
@@ -113,7 +118,8 @@
       "body_snippet": "My university is encouraging the development of on-line course resources\nusing the open-source \"Moodle\" software. I think that it might be a good\nidea to provide some beginner support for R using Mood",
       "thread_id": "thread-34340d0cca46",
       "thread_depth": 0,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000146.html"
     },
     {
       "id": "msg-a45e20f424a9",
@@ -131,7 +137,8 @@
       "body_snippet": "Dear Dr. Jorgensen,\n\nI think I can be of some help.\n\nRegards,\nSam\n\n> ----------------------------------------------------------------------\n> \n> Message: 1\n> Date: Tue, 09 Jun 2009 12:01:48 +1200\n> Fr",
       "thread_id": "thread-a45e20f424a9",
       "thread_depth": 0,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000147.html"
     },
     {
       "id": "msg-ebbfcb3c26ee",
@@ -148,6 +155,7 @@
       "thread_id": "thread-ebbfcb3c26ee",
       "thread_depth": 0,
       "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000148.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090620/4b02c187/attachment.pl"
       ]
@@ -167,6 +175,7 @@
       "thread_id": "thread-f1c4a1e9fc72",
       "thread_depth": 0,
       "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000149.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090623/903ee5d9/attachment.pl"
       ]
@@ -187,7 +196,8 @@
       "body_snippet": "This probably should be a FAQ.\n\nYou will find an example (with code) here, along with a bazillion other\nexample of nifty R graphics.\n\nhttp://addictedtor.free.fr/graphiques/thumbs.php\nhttp://addictedto",
       "thread_id": "thread-f1c4a1e9fc72",
       "thread_depth": 1,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000150.html"
     },
     {
       "id": "msg-58e42bc205a6",
@@ -205,7 +215,8 @@
       "body_snippet": "I've seen quicker ways to do it, but I've been using ggplot2 for this.\nSee examples below.\n\nOn Tue, Jun 23, 2009 at 7:57 PM, AbouEl-Makarim\nAboueissa<aaboueissa at usm.maine.edu> wrote:\n> Dear All:\n>\n",
       "thread_id": "thread-f1c4a1e9fc72",
       "thread_depth": 1,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000151.html"
     },
     {
       "id": "msg-3e5b7e0059ee",
@@ -224,7 +235,8 @@
       "body_snippet": "On Tue, Jun 23, 2009 at 9:44 PM, Ista Zahn<istazahn at gmail.com> wrote:\n> I've seen quicker ways to do it, but I've been using ggplot2 for this.\n> See examples below.\n>\n> On Tue, Jun 23, 2009 at 7:57",
       "thread_id": "thread-f1c4a1e9fc72",
       "thread_depth": 2,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000152.html"
     },
     {
       "id": "msg-7efed8d5c3a2",
@@ -242,7 +254,8 @@
       "body_snippet": "Hello,\n\nOn 6/24/09, AbouEl-Makarim Aboueissa <aaboueissa at usm.maine.edu> wrote:\n>  I need some help with graphing the critical regions of hypothesis testing.\n>\nI may also do this with RcmdrPlugin.HH",
       "thread_id": "thread-f1c4a1e9fc72",
       "thread_depth": 1,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000153.html"
     },
     {
       "id": "msg-88c5b4aa2c50",
@@ -259,6 +272,7 @@
       "thread_id": "thread-88c5b4aa2c50",
       "thread_depth": 0,
       "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000154.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090629/ad2ae261/attachment.pl"
       ]
@@ -279,7 +293,8 @@
       "body_snippet": "Wrong Mailing List !!\n\nPlease use R-help  for R questions!\n\n------------------------------\n\n>>>>> \"AA\" == AbouEl-Makarim Aboueissa <aaboueissa at usm.maine.edu>\n>>>>>     on Mon, 29 Jun 2009 10:32:04 ",
       "thread_id": "thread-88c5b4aa2c50",
       "thread_depth": 1,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000155.html"
     },
     {
       "id": "msg-c4280a75b829",
@@ -298,7 +313,8 @@
       "body_snippet": "On 6/29/09, Martin Maechler <maechler at stat.math.ethz.ch> wrote:\n> Wrong Mailing List !!\n>\n>  Please use R-help  for R questions!\n>\n<skip>\n>     AA> Assume I have the following data sets:\n>\nAlso, pl",
       "thread_id": "thread-88c5b4aa2c50",
       "thread_depth": 2,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000156.html"
     },
     {
       "id": "msg-b10080e5ad7d",
@@ -314,7 +330,8 @@
       "body_snippet": "I had some minor role in the creation of this list.  At times I have\ncomplained that members have been too harsh in redirecting queries\nwhose proper home seemed to me debatable.  But as time has gone ",
       "thread_id": "thread-b10080e5ad7d",
       "thread_depth": 0,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000157.html"
     },
     {
       "id": "msg-0f531c99c5ba",
@@ -332,7 +349,8 @@
       "body_snippet": "Dear Bob,\n    Thank you for your question to the list.  I'm using R to teach \ncourses on Computing with Data.  I am in the Department of Statistics at \nPurdue University (in West Lafayette, Indiana, U",
       "thread_id": "thread-b10080e5ad7d",
       "thread_depth": 1,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000158.html"
     },
     {
       "id": "msg-27c5df3a20aa",
@@ -351,7 +369,8 @@
       "body_snippet": "Dear Robert,\n\nOn Tue, Jun 30, 2009 at 1:32 PM, Robert W. Hayden<hayden at mv.mv.com> wrote:\n> questions. ?How are people using R for educational purposes? ?What do\n> people think of the various GUI or",
       "thread_id": "thread-b10080e5ad7d",
       "thread_depth": 1,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000159.html"
     },
     {
       "id": "msg-2c39da267cea",
@@ -370,7 +389,8 @@
       "body_snippet": "Rob,\n\n> ?Is there anything that makes R as easy to use for\n> beginners as, say, Minitab?\n\nAs a casual observation I am now in my third year of teaching basic\nstatistics to biology/ecology students wit",
       "thread_id": "thread-b10080e5ad7d",
       "thread_depth": 1,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000160.html"
     },
     {
       "id": "msg-0dafc711ab44",
@@ -390,7 +410,8 @@
       "body_snippet": "> As a casual observation I am now in my third year of teaching basic\n> statistics to biology/ecology students with a mix of Minitab and R.\n> Outside the formal teaching, I have used R with selected s",
       "thread_id": "thread-b10080e5ad7d",
       "thread_depth": 2,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000161.html"
     },
     {
       "id": "msg-1f2dc992902c",
@@ -411,7 +432,8 @@
       "body_snippet": "I'll follow-up on Hadley's comment by noting that I always post the \ncomplete R transcript of our class session, so that the students can \ndownload it and use it.  I also add lots and lots of comments",
       "thread_id": "thread-b10080e5ad7d",
       "thread_depth": 3,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000162.html"
     },
     {
       "id": "msg-54b5368586b6",
@@ -433,7 +455,8 @@
       "body_snippet": "Hadley /Mark\n\nMark Daniel Ward wrote:\n> I'll follow-up on Hadley's comment by noting that I always post the complete\n> R transcript of our class session, so that the students can download it and\n> use",
       "thread_id": "thread-b10080e5ad7d",
       "thread_depth": 4,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000163.html"
     },
     {
       "id": "msg-f1a12e0fa69d",
@@ -455,7 +478,8 @@
       "body_snippet": "I used to do before I became depressed by the huge number of mistakes\nI made!  Now I tend to come up with the commented R code first, then\nbuild the lecture around that.  I'll still do some live explo",
       "thread_id": "thread-b10080e5ad7d",
       "thread_depth": 4,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000164.html"
     },
     {
       "id": "msg-e4eded4b64b7",
@@ -478,7 +502,8 @@
       "body_snippet": "Dear Hadley,\n    Yes, yes, I make lots and lots of mistakes too.  I do everything \n\"live\", in front of the students.  (I think that it makes them happy to \nsee the professor making some mistakes, beca",
       "thread_id": "thread-b10080e5ad7d",
       "thread_depth": 5,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000165.html"
     },
     {
       "id": "msg-13c8f2d419a0",
@@ -501,7 +526,8 @@
       "body_snippet": "Dear Graham,\n    Actually, I love to communicate with the students by email, but I \nfind it a nightmare when they email me any code!  Sometimes a 1-minute \nverbal explanation will take several paragra",
       "thread_id": "thread-b10080e5ad7d",
       "thread_depth": 5,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000166.html"
     },
     {
       "id": "msg-f2c640feb4ed",
@@ -525,7 +551,8 @@
       "body_snippet": "On Tue, Jun 30, 2009 at 02:29:35PM -0400, Mark Daniel Ward wrote:\n> Dear Hadley,\n>    Yes, yes, I make lots and lots of mistakes too.  I do everything \"live\", \n> in front of the students.  (I think th",
       "thread_id": "thread-b10080e5ad7d",
       "thread_depth": 6,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000167.html"
     },
     {
       "id": "msg-df7c35d726ff",
@@ -549,7 +576,8 @@
       "body_snippet": "I spent a lot of time focussing on code as communication to make\nelectronic interaction as easy as possible.  Personally, I think this\nis very important as the majority of my programming work is in\nco",
       "thread_id": "thread-b10080e5ad7d",
       "thread_depth": 6,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000168.html"
     },
     {
       "id": "msg-c3e80a3d5e42",
@@ -573,7 +601,8 @@
       "body_snippet": "Mark\n\n> ? Actually, I love to communicate with the students by email, but I find it\n> a nightmare when they email me any code! ?Sometimes a 1-minute verbal\n> explanation will take several paragraphs t",
       "thread_id": "thread-b10080e5ad7d",
       "thread_depth": 6,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000169.html"
     },
     {
       "id": "msg-e0355d4f4d01",
@@ -598,7 +627,8 @@
       "body_snippet": "I've seen Hadley's rubrics for his assignments.  They are really excellent!\nMark\n\n\n\nhadley wickham wrote:\n> I spent a lot of time focussing on code as communication to make\n> electronic interaction as",
       "thread_id": "thread-b10080e5ad7d",
       "thread_depth": 7,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000170.html"
     },
     {
       "id": "msg-e2355cc396bf",
@@ -614,7 +644,8 @@
       "body_snippet": "I was at the USCOTS conference in Ohio and found myself attending a\ndemonstration on the statcrunch software, which I hadn't seen until then. As far\nas it goes the software is fine, but what was very ",
       "thread_id": "thread-e2355cc396bf",
       "thread_depth": 0,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000171.html"
     },
     {
       "id": "msg-7f72a762da07",
@@ -632,7 +663,8 @@
       "body_snippet": "Dear John,\n    There are a handful of us who are thinking about such resources.  \nThere are many possibilities.  Yes, yes, I believe that such resources \nwould be very useful to people who are startin",
       "thread_id": "thread-e2355cc396bf",
       "thread_depth": 1,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000172.html"
     },
     {
       "id": "msg-f240f008a947",
@@ -651,7 +683,8 @@
       "body_snippet": "My teaching situation is a bit different from the others who have responded so far.  I do teach an occasional class at the university, but my main job is with a group of hospitals and doctors doing th",
       "thread_id": "thread-b10080e5ad7d",
       "thread_depth": 1,
-      "month": "2009-06"
+      "month": "2009-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000173.html"
     }
   ],
   "threads": [

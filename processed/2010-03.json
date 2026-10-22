@@ -17,7 +17,8 @@
       "body_snippet": "I am trying to understand the assumptions for a permutation test and\nfigure out how to explain those to beginning students.  (I am working\non a project to integrate resampling methods into the first c",
       "thread_id": "thread-7e771a50b0f4",
       "thread_depth": 0,
-      "month": "2010-03"
+      "month": "2010-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q1/000231.html"
     },
     {
       "id": "msg-7dea43c07682",
@@ -35,7 +36,8 @@
       "body_snippet": "On 2010-03-02, at 4:00 AM, r-sig-teaching-request at r-project.org wrote:\n\n> I am trying to understand the assumptions for a permutation test and\n> figure out how to explain those to beginning student",
       "thread_id": "thread-7dea43c07682",
       "thread_depth": 0,
-      "month": "2010-03"
+      "month": "2010-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q1/000232.html"
     }
   ],
   "threads": [

@@ -17,7 +17,8 @@
       "body_snippet": "Hi everyone,\n\nI'm using R to make graphs for lecture notes and I hope to get to the point\nwhere students are reproducing graphs in lab.\n\nI can do very simple logistic growth models (example below) but",
       "thread_id": "thread-5e15bc728f1b",
       "thread_depth": 0,
-      "month": "2016-11"
+      "month": "2016-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q4/000731.html"
     },
     {
       "id": "msg-f93c180bf253",
@@ -35,7 +36,8 @@
       "body_snippet": "Can you describe the \"more complicated model with lags\" that you are\ninterested in?  Can you write it out mathematically?\n\n\nOn Tue, Nov 29, 2016 at 9:56 AM, Stratford, Jeff <\njeffrey.stratford at wilk",
       "thread_id": "thread-5e15bc728f1b",
       "thread_depth": 1,
-      "month": "2016-11"
+      "month": "2016-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q4/000732.html"
     }
   ],
   "threads": [

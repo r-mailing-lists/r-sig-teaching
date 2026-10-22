@@ -17,7 +17,8 @@
       "body_snippet": "Discussions held on the Isolated Statistics mailing list about the\nuse R in teaching introductory statistics courses led to the creation\nof a new R SIG: R-sig-teaching.\n\nThe SIG description:\nSpecial I",
       "thread_id": "thread-7efebafb4e53",
       "thread_depth": 0,
-      "month": "2006-10"
+      "month": "2006-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2006q4/000000.html"
     },
     {
       "id": "msg-558c29cf5ba9",
@@ -33,7 +34,8 @@
       "body_snippet": "The most understandable reference on R I have found is\n \n _Using R for Introductory Statistics_ by John Verzani, Chapman & Hall, 2005.\n\n\n\n _______\n|   ^  | \t\t    \n|     /  \t\t    Robert W. Hayden\n|    ",
       "thread_id": "thread-558c29cf5ba9",
       "thread_depth": 0,
-      "month": "2006-10"
+      "month": "2006-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2006q4/000001.html"
     },
     {
       "id": "msg-42f5b4658c22",
@@ -49,7 +51,8 @@
       "body_snippet": "This link\n\n     http://www.statland.org/R/WhyR.htm\n\ngoes to a page that lists some of the advantages and disadvantages of\nusing R in an introductroy course.  From there you can link to the 11\nhandouts",
       "thread_id": "thread-42f5b4658c22",
       "thread_depth": 0,
-      "month": "2006-10"
+      "month": "2006-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2006q4/000002.html"
     },
     {
       "id": "msg-15bcb59cc1a5",
@@ -65,7 +68,8 @@
       "body_snippet": "I'm planning to utilize R for my intermediate stats\ncourse in the spring.  I'd be most interested in\nhearing summaries and/or receiving materials that\nfolks have used to introduce students to R, and g",
       "thread_id": "thread-15bcb59cc1a5",
       "thread_depth": 0,
-      "month": "2006-10"
+      "month": "2006-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2006q4/000003.html"
     },
     {
       "id": "msg-46e4394cd2d2",
@@ -81,7 +85,8 @@
       "body_snippet": "I'm glad to see this sig list up and running.\n\nI'm planning to use R for my *intro* stats class in the Winter. This is \nan experiment,\nas our intro stats classes all use SPSS. So I'm using R for this ",
       "thread_id": "thread-46e4394cd2d2",
       "thread_depth": 0,
-      "month": "2006-10"
+      "month": "2006-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2006q4/000004.html"
     },
     {
       "id": "msg-9453a4b63d65",
@@ -99,7 +104,8 @@
       "body_snippet": "I may state the obvious, but just in case it ain't.. :\n\nWe have been using R for intro stats courses here at ETH only\nfor engineer- or math- like students (and continue to do so),\nbut not for e.g., bi",
       "thread_id": "thread-46e4394cd2d2",
       "thread_depth": 1,
-      "month": "2006-10"
+      "month": "2006-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2006q4/000005.html"
     },
     {
       "id": "msg-0db6157820b2",
@@ -117,7 +123,8 @@
       "body_snippet": "I have been using R (and Splus before that, and old S before that) in\nmy intro course for a long time.  Most of the students in the course\nhave never used a command line interface before.  They come f",
       "thread_id": "thread-46e4394cd2d2",
       "thread_depth": 1,
-      "month": "2006-10"
+      "month": "2006-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2006q4/000006.html"
     }
   ],
   "threads": [

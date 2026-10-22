@@ -19,7 +19,8 @@
       "body_snippet": "Dear R Teaching Mailing List,\n\nI would like to share 2 useful Resources for Teaching both R and\nStatistical Concepts Essentials.\n\nR Cookbook Second Edition: Freely Available\nhttps://rc2e.com/\n\nStatist",
       "thread_id": "thread-054df3bb3c1b",
       "thread_depth": 0,
-      "month": "2020-01"
+      "month": "2020-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2020q1/000838.html"
     },
     {
       "id": "msg-ddc26d8e8974",
@@ -38,7 +39,8 @@
       "body_snippet": "Dear R Teaching Mailing List,\n\nI would like to share 2 useful Resources for Teaching both R and\nStatistical Concepts Essentials.\n\nR Cookbook Second Edition: Freely Available\nhttps://rc2e.com/\n\nStatist",
       "thread_id": "thread-054df3bb3c1b",
       "thread_depth": 1,
-      "month": "2020-01"
+      "month": "2020-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2020q1/000839.html"
     },
     {
       "id": "msg-b7d2061ed918",
@@ -54,7 +56,8 @@
       "body_snippet": "Dear R Teaching Mailing List,\n\nI would like to share a few resources I find useful for teaching GIT\nVersion Control, in order to be able to collaborate in R Package\nDevelopment through GitHub:\n\nGIT Cl",
       "thread_id": "thread-b7d2061ed918",
       "thread_depth": 0,
-      "month": "2020-01"
+      "month": "2020-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2020q1/000840.html"
     },
     {
       "id": "msg-f9e9b86efa1a",
@@ -70,7 +73,8 @@
       "body_snippet": "Dear R Teaching Mailing List,\n\nI would like to share 2 useful Resources for Teaching both R and\nStatistical Concepts Essentials.\n\nR Cookbook Second Edition: Freely Available\nhttps://rc2e.com/\n\nStatist",
       "thread_id": "thread-f9e9b86efa1a",
       "thread_depth": 0,
-      "month": "2020-01"
+      "month": "2020-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2020q1/000841.html"
     },
     {
       "id": "msg-aa6dcadf24d4",
@@ -86,7 +90,8 @@
       "body_snippet": "Here is a book that introduces R programming for use in high school or\ncollege math and science courses:\n\nhttps://www.crcpress.com/The-R-Student-Companion/Dennis/p/book/9781439875407\n\nThe book is writ",
       "thread_id": "thread-aa6dcadf24d4",
       "thread_depth": 0,
-      "month": "2020-01"
+      "month": "2020-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2020q1/000842.html"
     },
     {
       "id": "msg-4fb5d2a4c1fd",
@@ -104,7 +109,8 @@
       "body_snippet": "Brian--\n\nI would heartily endorse your recommendation for teaching R to younger\nfolk. 4-5 years ago I did a 5-hour workshop introducing R to about 20\nstudents in grades 10-12. I think it was quite suc",
       "thread_id": "thread-aa6dcadf24d4",
       "thread_depth": 1,
-      "month": "2020-01"
+      "month": "2020-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2020q1/000843.html"
     },
     {
       "id": "msg-fa7145ed6480",
@@ -120,7 +126,8 @@
       "body_snippet": "Thanks for reminding me of this book.  I especially appreciate the\nfact that it does not assume you have loaded innumerable libraries.  I\nhave found that just installing R can be a challenge for many\n",
       "thread_id": "thread-fa7145ed6480",
       "thread_depth": 0,
-      "month": "2020-01"
+      "month": "2020-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2020q1/000844.html"
     }
   ],
   "threads": [

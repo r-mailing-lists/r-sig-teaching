@@ -18,6 +18,7 @@
       "thread_id": "thread-56f9fc6745e9",
       "thread_depth": 0,
       "month": "2009-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000217.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091113/45d34e27/attachment.pl"
       ]
@@ -38,7 +39,8 @@
       "body_snippet": "See drills under http://had.co.nz/stat405.\n\nHadley\n\nOn Fri, Nov 13, 2009 at 2:25 PM, AbouEl-Makarim Aboueissa\n<aaboueissa at usm.maine.edu> wrote:\n> Dear R Users:\n>\n> I am teaching a computational sta",
       "thread_id": "thread-56f9fc6745e9",
       "thread_depth": 1,
-      "month": "2009-11"
+      "month": "2009-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000218.html"
     },
     {
       "id": "msg-87a6e44b731a",
@@ -56,7 +58,8 @@
       "body_snippet": "There is an extensive collection of exercises + solutions on my  \nwebsite, at:\nhttp://www.maths.anu.edu.au/%7Ejohnm/r-book/2edn/exercises/\nThese are a selection from the exercises in our Data Analysis",
       "thread_id": "thread-87a6e44b731a",
       "thread_depth": 0,
-      "month": "2009-11"
+      "month": "2009-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000219.html"
     },
     {
       "id": "msg-062ce2edb347",
@@ -74,7 +77,8 @@
       "body_snippet": "I have not seen any responses to this yet.  I don't know of an existing matrix that is freely available, but you can construct one by doing something like:\n\ncon <- url('http://www.gutenberg.org/dirs/2",
       "thread_id": "thread-062ce2edb347",
       "thread_depth": 0,
-      "month": "2009-11"
+      "month": "2009-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000220.html"
     }
   ],
   "threads": [

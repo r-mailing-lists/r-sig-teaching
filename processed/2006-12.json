@@ -17,7 +17,8 @@
       "body_snippet": "Dear all,\n\nI'm in search for a function which can be used to check whether a \nnumeriacl value (say, x) is even/odd.\nAny help is highly appreciated.\n\nThanks\nYeasmin",
       "thread_id": "thread-4457f4ace56a",
       "thread_depth": 0,
-      "month": "2006-12"
+      "month": "2006-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2006q4/000009.html"
     },
     {
       "id": "msg-f43f9278448e",
@@ -33,7 +34,8 @@
       "body_snippet": "I do not know of anything specific to r but standard programming\ntricks may do it.  For example, if the number is x, compute y=x/2,\nlet z be y rounded to the nearest whole number, and check if y=z.  I",
       "thread_id": "thread-f43f9278448e",
       "thread_depth": 0,
-      "month": "2006-12"
+      "month": "2006-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2006q4/000010.html"
     },
     {
       "id": "msg-38e7b1c6a23c",
@@ -49,7 +51,8 @@
       "body_snippet": "Dear Robert and Yeasmin,\n\nYou could test that the number mod 2 is 0; e.g.,\n\n> (1:10 %% 2) == 0\n [1] FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE  TRUE\n\nA potential problem is that testing exa",
       "thread_id": "thread-f43f9278448e",
       "thread_depth": 1,
-      "month": "2006-12"
+      "month": "2006-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2006q4/000011.html"
     },
     {
       "id": "msg-a4c514518f53",
@@ -67,7 +70,8 @@
       "body_snippet": "One solution for the exact equality problem is to start by rounding or\ntruncating to an integer, depending of course on what the origin of the \ndataset\nwas, and the point of the operation.  The sign d",
       "thread_id": "thread-f43f9278448e",
       "thread_depth": 2,
-      "month": "2006-12"
+      "month": "2006-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2006q4/000012.html"
     },
     {
       "id": "msg-f7117c0b041c",
@@ -83,7 +87,8 @@
       "body_snippet": "Dear Albyn,\n\nI thought about rounding but was concerned that the arithmetic would still\nbe performed on real numbers. This is true even if the left argument to %%\nis coerced to an integer. (round itse",
       "thread_id": "thread-f43f9278448e",
       "thread_depth": 3,
-      "month": "2006-12"
+      "month": "2006-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2006q4/000013.html"
     },
     {
       "id": "msg-d4c00c44bc35",
@@ -101,7 +106,8 @@
       "body_snippet": "Quoting John Fox <jfox at mcmaster.ca>:\n\n> Dear Albyn,\n>\n> I thought about rounding but was concerned that the arithmetic would still\n> be performed on real numbers. This is true even if the left argu",
       "thread_id": "thread-f43f9278448e",
       "thread_depth": 4,
-      "month": "2006-12"
+      "month": "2006-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2006q4/000014.html"
     }
   ],
   "threads": [

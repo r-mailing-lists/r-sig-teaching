@@ -17,7 +17,8 @@
       "body_snippet": "Hi,\nSometime ago I found an online (pdf) text about introductory statistics,\nwhich focused on simulations and examples. It was a fairly complete\ntextbook, but was free to download and use. I wanted to",
       "thread_id": "thread-b52983a72250",
       "thread_depth": 0,
-      "month": "2007-11"
+      "month": "2007-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2007q4/000039.html"
     },
     {
       "id": "msg-80df2990afe0",
@@ -36,6 +37,7 @@
       "thread_id": "thread-b52983a72250",
       "thread_depth": 1,
       "month": "2007-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2007q4/000040.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20071101/6a4440f8/attachment.pl"
       ]
@@ -57,7 +59,8 @@
       "body_snippet": "Thanks for the link to Bolker's book! It looks very interesting. The one\nI had in mind was \"The foundations of statistics: A simulation-based\napproach\" by Shravan Vasishth, available here:\nhttp://www.",
       "thread_id": "thread-b52983a72250",
       "thread_depth": 2,
-      "month": "2007-11"
+      "month": "2007-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2007q4/000041.html"
     },
     {
       "id": "msg-4ce1d2117dfa",
@@ -74,6 +77,7 @@
       "thread_id": "thread-4ce1d2117dfa",
       "thread_depth": 0,
       "month": "2007-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2007q4/000042.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20071106/ea263476/attachment.pl"
       ]
@@ -95,6 +99,7 @@
       "thread_id": "thread-4ce1d2117dfa",
       "thread_depth": 1,
       "month": "2007-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2007q4/000043.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20071106/48270b70/attachment.pl"
       ]
@@ -115,7 +120,8 @@
       "body_snippet": "On 11/6/07, Antonio P. Ramos <ramos.grad.student at gmail.com> wrote:\n> Hi all.\n\n> Does anyone have a \"smart\" code for performing bi and mult-ivariable\n> regression in R by hand? This is suppose to he",
       "thread_id": "thread-4ce1d2117dfa",
       "thread_depth": 1,
-      "month": "2007-11"
+      "month": "2007-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2007q4/000044.html"
     },
     {
       "id": "msg-5a653ff3f866",
@@ -133,7 +139,8 @@
       "body_snippet": "http://web.pdx.edu/~cparker/scripts/byhand.r\n\n\nAntonio P. Ramos wrote:\n> Hi all.\n>\n> Does anyone have a \"smart\" code for performing bi and mult-ivariable\n> regression in R by hand? This is suppose to ",
       "thread_id": "thread-4ce1d2117dfa",
       "thread_depth": 1,
-      "month": "2007-11"
+      "month": "2007-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2007q4/000045.html"
     }
   ],
   "threads": [

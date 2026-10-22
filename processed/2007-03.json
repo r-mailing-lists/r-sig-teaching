@@ -17,7 +17,8 @@
       "body_snippet": "Hi,\n\nTeaching the data structure of R, I often use graphical representation of\nstructure such as vector or matrice, with the index and the names along\nthe dimension, etc., in order to show graphically",
       "thread_id": "thread-e44d342a5ebf",
       "thread_depth": 0,
-      "month": "2007-03"
+      "month": "2007-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2007q1/000019.html"
     }
   ],
   "threads": [

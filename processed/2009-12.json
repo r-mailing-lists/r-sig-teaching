@@ -17,7 +17,8 @@
       "body_snippet": "Hi,\n\nI teach statistics using R in a classroom with Windows machines. For\nclass, I use Notepad and cut and paste to the console. For my own\nwork, I use a Mac or I use a PC with Tinn-R. The send-to-R f",
       "thread_id": "thread-1e08af39fd59",
       "thread_depth": 0,
-      "month": "2009-12"
+      "month": "2009-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000221.html"
     },
     {
       "id": "msg-3a3d39f72dbd",
@@ -35,7 +36,8 @@
       "body_snippet": "In windows, the simplest editor to use is the built in one in the R gui.  Just click on file, then New Script and it will open a blank editor (or use open script to read in a file).  This is a pretty ",
       "thread_id": "thread-1e08af39fd59",
       "thread_depth": 1,
-      "month": "2009-12"
+      "month": "2009-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000222.html"
     },
     {
       "id": "msg-bc57e67da7e5",
@@ -54,7 +56,8 @@
       "body_snippet": "Dear Stuart,\n\nOn Wed, Dec 2, 2009 at 4:10 PM, Greg Snow <Greg.Snow at imail.org> wrote:\n> In windows, the simplest editor to use is the built in one in the R gui. ?Just click on file, then New Script ",
       "thread_id": "thread-1e08af39fd59",
       "thread_depth": 2,
-      "month": "2009-12"
+      "month": "2009-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000223.html"
     },
     {
       "id": "msg-b0c379f594e1",
@@ -74,7 +77,8 @@
       "body_snippet": "Oh yes. Very nice. Thank you for your help!\n\nStuart\n\nOn Wed, Dec 2, 2009 at 3:22 PM, G. Jay Kerns <gkerns at ysu.edu> wrote:\n> Dear Stuart,\n>\n> On Wed, Dec 2, 2009 at 4:10 PM, Greg Snow <Greg.Snow at ",
       "thread_id": "thread-1e08af39fd59",
       "thread_depth": 3,
-      "month": "2009-12"
+      "month": "2009-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000224.html"
     },
     {
       "id": "msg-20d7f99eaf90",
@@ -95,7 +99,8 @@
       "body_snippet": "Also of note is JGR, which has syntax highlighting, paren matching. You  can also send to R via command-return. And if your students have mice for right hands as Jay put it, Deducer (shameless plug) h",
       "thread_id": "thread-1e08af39fd59",
       "thread_depth": 4,
-      "month": "2009-12"
+      "month": "2009-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000225.html"
     },
     {
       "id": "msg-d0d70a9eb0ac",
@@ -114,6 +119,7 @@
       "thread_id": "thread-1e08af39fd59",
       "thread_depth": 1,
       "month": "2009-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000226.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091202/ceba7394/attachment.pl"
       ]
@@ -132,7 +138,8 @@
       "body_snippet": "Forwarded message:\n> From: Stuart Wagenius <s-wagenius at northwestern.edu>\n \n> I teach statistics using R in a classroom with Windows machines. For\n> class, I use Notepad and cut and paste to the con",
       "thread_id": "thread-660416ef7818",
       "thread_depth": 0,
-      "month": "2009-12"
+      "month": "2009-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000227.html"
     },
     {
       "id": "msg-bb8b09f95cca",
@@ -150,7 +157,8 @@
       "body_snippet": "Hello\n\nOn 12/2/09, Stuart Wagenius <s-wagenius at northwestern.edu> wrote:\n>  Can anyone recommend a text editor for teaching R on machines running\n>  Windows Vista? Is there something simple to set u",
       "thread_id": "thread-1e08af39fd59",
       "thread_depth": 1,
-      "month": "2009-12"
+      "month": "2009-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000228.html"
     },
     {
       "id": "msg-7e00dba47faa",
@@ -171,7 +179,8 @@
       "body_snippet": "Hello,\n\nYou mention you want something simple, thus a lightweight text editor \nwith just the \"submit to R\" function (and perhaps, a little bit of \nsyntax highlighting). However, there are many more co",
       "thread_id": "thread-1e08af39fd59",
       "thread_depth": 4,
-      "month": "2009-12"
+      "month": "2009-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000229.html"
     },
     {
       "id": "msg-3967ec4df9d5",
@@ -187,7 +196,8 @@
       "body_snippet": "All in good fun.  I should have taken this closer to heart on a couple\nof occasions.\n\nJay\n\nP.S. You may need to resize the plot window.\n\n\n\n#############\nrequire(diagram)\n\nopenplotmat(main=\"Flowchart f",
       "thread_id": "thread-3967ec4df9d5",
       "thread_depth": 0,
-      "month": "2009-12"
+      "month": "2009-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000230.html"
     }
   ],
   "threads": [

@@ -17,7 +17,8 @@
       "body_snippet": "Dear All:\n\n\nhow to interpret the negative values of Cronbach's Alpha.\n\n*e.g.*,  alpha  = -0.229974  ,  alpha   = -0.172835\n\n\nthank you very much for your help.\n\n\nwith thanks\nsteve\n\n-- \nSteven M. Stoli",
       "thread_id": "thread-1816bd7b8c3e",
       "thread_depth": 0,
-      "month": "2017-02"
+      "month": "2017-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q1/000749.html"
     },
     {
       "id": "msg-75fe9eeb6340",
@@ -35,7 +36,8 @@
       "body_snippet": "Almost always that you've made a mistake and haven't reversed some items\nthat should have been reversed. (Some software will do that automatically).\n\nUse check.keys=TRUE, and the alpha function (in th",
       "thread_id": "thread-1816bd7b8c3e",
       "thread_depth": 1,
-      "month": "2017-02"
+      "month": "2017-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q1/000750.html"
     },
     {
       "id": "msg-1049c171cac4",
@@ -54,7 +56,8 @@
       "body_snippet": "This isn't about how to use R to teach statistics, so it should go to the\nmain r-help listserv, not this SIG. Also, you should include some data and\ncode for people to run to get the output you got (s",
       "thread_id": "thread-1816bd7b8c3e",
       "thread_depth": 2,
-      "month": "2017-02"
+      "month": "2017-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q1/000751.html"
     },
     {
       "id": "msg-42dc714d4685",
@@ -73,7 +76,8 @@
       "body_snippet": "Dear All:\n\n\nI am using *alpha(data, **check.keys=TRUE) *to compute the Cronbach's\nAlpha. I am using  *check.keys=TRUE*  to automatically reverse items.\n\n\n*My question is: *how can I get the correlatio",
       "thread_id": "thread-1816bd7b8c3e",
       "thread_depth": 2,
-      "month": "2017-02"
+      "month": "2017-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q1/000752.html"
     },
     {
       "id": "msg-b8e3748d56f8",
@@ -93,7 +97,8 @@
       "body_snippet": "What does this have to do with discussions of the use of R in teaching\nstatistics?  This should go to the main r-help listserv, not this SIG.\nAlso, when you post this there, you should include some da",
       "thread_id": "thread-1816bd7b8c3e",
       "thread_depth": 3,
-      "month": "2017-02"
+      "month": "2017-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q1/000753.html"
     },
     {
       "id": "msg-17a883f73c4f",
@@ -109,7 +114,8 @@
       "body_snippet": "Dear All:\n\n\nI am teaching a nonparametric class (in fact it is half of the course). I\nam using the textbook titled \"Introduction to Modern Nonparametric\nStatistics\" by Higgins.\n\n\nI am wondering if som",
       "thread_id": "thread-17a883f73c4f",
       "thread_depth": 0,
-      "month": "2017-02"
+      "month": "2017-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q1/000754.html"
     }
   ],
   "threads": [

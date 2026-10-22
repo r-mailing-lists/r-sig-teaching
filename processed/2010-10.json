@@ -17,7 +17,8 @@
       "body_snippet": "Dear all\nI'm not sure that this is an r-sig-teaching per se, but I need it for\nteaching so here I go.\n\nI need to plot the hypothesis of a correlation test. The only\nsemi-automated way I know to do thi",
       "thread_id": "thread-3568678adab6",
       "thread_depth": 0,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000288.html"
     },
     {
       "id": "msg-e95a975367a8",
@@ -37,7 +38,8 @@
       "body_snippet": "Hello\nThanks all for your input!\n\n\nOn Fri, Oct 1, 2010 at 3:55 AM, RICHARD M. HEIBERGER <rmh at temple.edu> wrote:\n> The t-value in the cor.test is already scaled for 30 df by the time it\n> is printed",
       "thread_id": "thread-e95a975367a8",
       "thread_depth": 0,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000290.html"
     },
     {
       "id": "msg-8fdfe37b4f1e",
@@ -54,6 +56,7 @@
       "thread_id": "thread-8fdfe37b4f1e",
       "thread_depth": 0,
       "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000291.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101001/61d87e52/attachment.pl"
       ]
@@ -74,7 +77,8 @@
       "body_snippet": "Hello\n\nOn Fri, Oct 1, 2010 at 11:52 AM, Partha Sinha <pnsinha68 at gmail.com> wrote:\n> Dear Sir\n> Is there a way I can download all the packages in one shot or I need to\n> download one by one and use ",
       "thread_id": "thread-8fdfe37b4f1e",
       "thread_depth": 1,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000292.html"
     },
     {
       "id": "msg-266067d8b6a2",
@@ -90,7 +94,8 @@
       "body_snippet": "Hi,\n\nI'll be teaching a grad course in multivariate stats for ecologists \n(ordination et al.) for the first time this coming spring. One thing \nI've discovered in my interactions with grad students is",
       "thread_id": "thread-266067d8b6a2",
       "thread_depth": 0,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000293.html"
     },
     {
       "id": "msg-7d0f53e95000",
@@ -108,7 +113,8 @@
       "body_snippet": "I would start here:\n\nhttp://www.burns-stat.com/pages/Tutor/spreadsheet_addiction.html\n\nThen point the students to a basic tutorial about databases (or at least MSaccess).\n\nOr you can have them enter t",
       "thread_id": "thread-266067d8b6a2",
       "thread_depth": 1,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000294.html"
     },
     {
       "id": "msg-c32ec23d958c",
@@ -126,7 +132,8 @@
       "body_snippet": "You might find Paul Murrell's text helpful:\nhttp://www.stat.auckland.ac.nz/~paul/ItDT/\n\n-Ista\n\nOn Fri, Oct 1, 2010 at 4:08 PM, Tyler Smith <tyler.smith at eku.edu> wrote:\n> ?Hi,\n>\n> I'll be teaching a",
       "thread_id": "thread-266067d8b6a2",
       "thread_depth": 1,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000295.html"
     },
     {
       "id": "msg-9e0fd685e204",
@@ -145,6 +152,7 @@
       "thread_id": "thread-3568678adab6",
       "thread_depth": 1,
       "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000296.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101001/4b210904/attachment.pl"
       ]
@@ -166,7 +174,8 @@
       "body_snippet": "On 10/01/2010 05:05 PM, Greg Snow wrote:\n> I would start here:\n>\n> http://www.burns-stat.com/pages/Tutor/spreadsheet_addiction.html\n>\n> Then point the students to a basic tutorial about databases (or ",
       "thread_id": "thread-266067d8b6a2",
       "thread_depth": 2,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000297.html"
     },
     {
       "id": "msg-de487b808536",
@@ -185,7 +194,8 @@
       "body_snippet": "On 10/01/2010 05:51 PM, Ista Zahn wrote:\n> You might find Paul Murrell's text helpful:\n> http://www.stat.auckland.ac.nz/~paul/ItDT/\n>\nThanks! That looks fantastic. It'll be a handy secondary resource ",
       "thread_id": "thread-266067d8b6a2",
       "thread_depth": 2,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000298.html"
     },
     {
       "id": "msg-7d689980bb88",
@@ -201,7 +211,8 @@
       "body_snippet": "Forwarded message:\n> From: Partha Sinha <pnsinha68 at gmail.com>\n> \n> Dear Sir\n> Is there a way I can download all the packages in one shot or I need to\n> download one by one and use them?\n\nThat sound",
       "thread_id": "thread-7d689980bb88",
       "thread_depth": 0,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000299.html"
     },
     {
       "id": "msg-6d4fd7f5d2b6",
@@ -219,7 +230,8 @@
       "body_snippet": "Within R you can set your mirror and your repositories then do:\n\n> install.packages(new.packages())\n\nThen go home for the weekend because it is going to take quite a while to download and install ever",
       "thread_id": "thread-7d689980bb88",
       "thread_depth": 1,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000300.html"
     },
     {
       "id": "msg-061c6ce078a0",
@@ -235,7 +247,8 @@
       "body_snippet": "Forwarded message:\n> From: Greg Snow <Greg.Snow at imail.org>\n> \n> Within R you can set your mirror and your repositories then do:\n> \n> > install.packages(new.packages())\n> \n> Then go home for the wee",
       "thread_id": "thread-061c6ce078a0",
       "thread_depth": 0,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000301.html"
     },
     {
       "id": "msg-cb4eff3efe80",
@@ -251,7 +264,8 @@
       "body_snippet": "Dear R-SIG-teaching,\n\nI have opened up guest access to the Moodle course for STAT 3743:\nProbability and Statistics.  The URL is\n\nhttp://www.moodle.ysumathstat.org/\n\nThere a person will (cumulatively) ",
       "thread_id": "thread-cb4eff3efe80",
       "thread_depth": 0,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000302.html"
     },
     {
       "id": "msg-51f211742aba",
@@ -267,7 +281,8 @@
       "body_snippet": "Hi,\n\nI have a question about prop.test in R:\n\nI teach students the score confidence\ninterval for proportions (also called\nWilson or Wilson score interval).\n\nprop.test(,..., correct=FALSE) gives this\ni",
       "thread_id": "thread-51f211742aba",
       "thread_depth": 0,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000303.html"
     },
     {
       "id": "msg-ab2add047eeb",
@@ -286,6 +301,7 @@
       "thread_id": "thread-51f211742aba",
       "thread_depth": 1,
       "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000304.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101025/082cebc8/attachment.pl"
       ]
@@ -307,7 +323,8 @@
       "body_snippet": "Yes, thank you for this reference. But according to\nthis article, the score is better than continuity\ncorrection, so why is continuity correction the default\nwith prop.test?\n\n-Laura\n\nOn 10/25/2010 4:0",
       "thread_id": "thread-51f211742aba",
       "thread_depth": 2,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000305.html"
     },
     {
       "id": "msg-d0a86e0418c1",
@@ -325,7 +342,8 @@
       "body_snippet": "Laura,\n\nI would make the argument that continuity correction should not be used in practice, or in the classroom. Continuity corrected intervals are, on average, to wide. This might be defensible if t",
       "thread_id": "thread-51f211742aba",
       "thread_depth": 1,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000306.html"
     },
     {
       "id": "msg-0509c5a7d399",
@@ -345,7 +363,8 @@
       "body_snippet": "I don't know, the help file is uninformative.  I'd guess the answer is\n\"the author wrote it that way\".  Other R functions like t.test include\nsimilar unfortunate (to me) default choices, in that case\n",
       "thread_id": "thread-51f211742aba",
       "thread_depth": 3,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000307.html"
     },
     {
       "id": "msg-de592cfca5e0",
@@ -366,7 +385,8 @@
       "body_snippet": "In the case of the t.test, having the default be var.equal=TRUE is the right way to go. There is little to no power lost by using the welch test, and the assumption of equal variance can be difficult ",
       "thread_id": "thread-51f211742aba",
       "thread_depth": 4,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000308.html"
     },
     {
       "id": "msg-124dc68a8949",
@@ -388,7 +408,8 @@
       "body_snippet": "Exactly - elementary texts and methods books recommend the welch test  \nfor the reason you mention.  Curiously, those same texts recommend  \nusing anova and regression without automatically correcting",
       "thread_id": "thread-51f211742aba",
       "thread_depth": 5,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000309.html"
     },
     {
       "id": "msg-5b15fc9c7377",
@@ -412,6 +433,7 @@
       "thread_id": "thread-51f211742aba",
       "thread_depth": 6,
       "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000310.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101026/85b1c39e/attachment.pl"
       ]
@@ -434,11 +456,12 @@
         "<20101025185126.1753346v5mzgdqn2@webmail.reed.edu>",
         "<9064522880125945B98983BBAECBA1CC0101BD32@exchsrv001.ebs.local>"
       ],
-      "body_plain": "On Tue, Oct 26, 2010 at 4:42 AM, Adams, Zeno <Zeno.Adams at ebs.edu> wrote:\n> This is an interesting discussion. Concerning the right choice and computation of t-tests there is still one point that is unclear to me: In the Welch t-test we have a difference in the numerator and a standard deviation of a difference in the denominator. Why then is the standard deviation of the difference not computed correctly, i.e. why is the covariance between X and Y not taken into account?\n>\n> For example using the sleep data:\n>\n> data(sleep)\n> means <- tapply(sleep$extra,sleep$group,mean) ; means\n> vars <- tapply(sleep$extra,sleep$group,var) ; vars\n>\n> sd.welch <- sqrt(vars[1]/10 + vars[2]/10) ; sd.welch\n> #in sd.welch the covariance is ignored\n>\n> t.welch <- (means[1]-means[2])/sd.welch ; t.welch\n>\n> #verify with R-built-in t.test function:\n> t.test(extra ~ group, data = sleep)\n>\n>\n> However, the correlation between sleep$extra[sleep$group == 1] and sleep$extra[sleep$group == 2] is relatively high:\n>\n> cor(sleep$extra[sleep$group == 1],sleep$extra[sleep$group == 2])\n>\n> Souldn?t the correct standard deviation be?\n>\n> sd.paired <- sqrt(vars[1]/10 + vars[2]/10\n> ? ? ? ?-2*cov(sleep$extra[sleep$group == 1],sleep$extra[sleep$group == 2])/10) ; sd.paired\n>\n> ?as in the paired t-test???\n\nOnly if the order of the observations in each sample is fixed.  I\ndon't want to sound facetious but the important characteristic of the\nsamples in a paired t-test is that they are paired.  The first\nobservation in sample 1 is associated in some way with the first\nobservation in sample 2, say because they are observations on the same\nsubject or at the same location or ...\n\nIf there is no pairing then one of the samples could be rearranged\nwithout changing the other, thereby changing the covariance.\n\nBecause of the pairing the sample sizes in a paired t-test must be\nequal.  But a t-test for independent samples can be used when the\nsample sizes are unequal.  So, no, the t-test for independent samples\nis not a special case of the paired t-test.\n\n> In other words, isn?t the Welch t-test a special case of the paired t-test with both samples assumed to be uncorrelated? And shouldn?t we then teach only the paired t-test as the most general test in class?\n>\n> Thanks!\n>\n> Zeno\n>\n>\n>\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org on behalf of Albyn Jones\n> Sent: Tue 10/26/2010 3:51 AM\n> To: Ian Fellows\n> Cc: r-sig-teaching at r-project.org\n> Subject: Re: [R-sig-teaching] prop.test in R\n>\n> Exactly - elementary texts and methods books recommend the welch test\n> for the reason you mention. ?Curiously, those same texts recommend\n> using anova and regression without automatically correcting for the\n> possibility of non-constant variance. ?Why is the case of comparing\n> two means different from 3? ?Those same books will tell you that anova\n> is pretty robust to non-constant variance. ?well, the two sample\n> t-test is anova.\n>\n> I don't use the welch test except as a conscious decision: ie I really\n> want to compare the means while suspecting that the variances differ.\n> Generally people are using the t test to certify that two populations\n> are different. ?If the variances are wildly different, that may be\n> much more important than a difference in means. ?in fact, to test for\n> a difference in means when the variances are wildly different is\n> almost always substantively silly. ? There was a great example a few\n> years ago from a psychiatric journal, comparing two medications, where\n> the investigators did a t-test for the means when one distribution was\n> unimodal and the other was bi-modal; there was no statistically\n> significant difference in the means, but there was a really important\n> difference in the distributions. ?The automatic use of the welch test\n> makes you feel that you are protected against Bad Things, when you\n> aren't.\n>\n> albyn\n>\n> Quoting Ian Fellows <ian.fellows at stat.ucla.edu>:\n>\n>> In the case of the t.test, having the default be var.equal=TRUE is\n>> the right way to go. There is little to no power lost by using the\n>> welch test, and the assumption of equal variance can be difficult to\n>> assess. For this reason, many introductory text books have now\n>> banished the equal variance t-test from their chapters (e.g. Moore's\n>> The Basic Practice of Statistics).\n>>\n>> Ian\n>>\n>>\n>> On Oct 25, 2010, at 4:05 PM, Albyn Jones wrote:\n>>\n>>> I don't know, the help file is uninformative. ?I'd guess the answer is\n>>> \"the author wrote it that way\". ?Other R functions like t.test include\n>>> similar unfortunate (to me) default choices, in that case\n>>> var.equal=FALSE (ie the Welch test) is the default.\n>>>\n>>> albyn\n>>>\n>>> On Mon, Oct 25, 2010 at 04:15:20PM -0500, Laura Chihara wrote:\n>>>> Yes, thank you for this reference. But according to\n>>>> this article, the score is better than continuity\n>>>> correction, so why is continuity correction the default\n>>>> with prop.test?\n>>>>\n>>>> -Laura\n>>>>\n>>>> On 10/25/2010 4:02 PM, Ralph O'Brien, PhD wrote:\n>>>>> I suggest:\n>>>>>\n>>>>> A. Agresti and B. A. Coull. Approximate is better than \"exact\" for\n>>>>> interval estimation of binomial proportions. The American Statistician,\n>>>>> 52(2):119-126, 1998.\n>>>>>\n>>>>>\n>>>>>\n>>>>>\n>>>>>\n>>>>>\n>>>>>\n>>>>> On Mon, Oct 25, 2010 at 4:38 PM, Laura Chihara <lchihara at carleton.edu\n>>>>> <mailto:lchihara at carleton.edu>> wrote:\n>>>>>\n>>>>> ? Hi,\n>>>>>\n>>>>> ? I have a question about prop.test in R:\n>>>>>\n>>>>> ? I teach students the score confidence\n>>>>> ? interval for proportions (also called\n>>>>> ? Wilson or Wilson score interval).\n>>>>>\n>>>>> ? prop.test(,..., correct=FALSE) gives this\n>>>>> ? interval.\n>>>>>\n>>>>> ? The default uses a continuity correction.\n>>>>> ? When should we use one over the other?\n>>>>> ? Is it worth going over this in class? Why\n>>>>> ? is correct=TRUE the default?\n>>>>>\n>>>>> ? Thanks for any pedagogical guidance here!\n>>>>>\n>>>>> ? -- Laura\n>>>>>\n>>>>> ? *******************************************\n>>>>> ? Laura Chihara\n>>>>> ? Professor of Mathematics ? 507-222-4065 (office)\n>>>>> ? Dept of Mathematics ? ? ? ?507-222-4312 (fax)\n>>>>> ? Carleton College\n>>>>> ? 1 North College Street\n>>>>> ? Northfield MN 55057\n>>>>>\n>>>>> ? _______________________________________________\n>>>>> ? R-sig-teaching at r-project.org <mailto:R-sig-teaching at r-project.org>\n>>>>> ? mailing list\n>>>>> ? https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>>>>\n>>>>>\n>>>>>\n>>>>>\n>>>>> --\n>>>>> Ralph O'Brien, PhD\n>>>>> Professor, Dept of Epidemiology and Biostatistics\n>>>>> Case Western Reserve University\n>>>>> Office: 216.368.1927\n>>>>> Cell: 216.312.3203\n>>>>\n>>>> --\n>>>> *******************************************\n>>>> Laura Chihara\n>>>> Professor of Mathematics ? 507-222-4065 (office)\n>>>> Dept of Mathematics ? ? ? ?507-222-4312 (fax)\n>>>> Carleton College\n>>>> 1 North College Street\n>>>> Northfield MN 55057\n>>>>\n>>>> _______________________________________________\n>>>> R-sig-teaching at r-project.org mailing list\n>>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>>>\n>>>\n>>> --\n>>> Albyn Jones\n>>> Reed College\n>>> jones at reed.edu\n>>>\n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>>\n>>\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n>\n> EBS European Business School gemeinnuetzige GmbH, Universitaet fuer Wirtschaft und Recht i.Gr. - Amtsgericht Wiesbaden HRB 19951 - Umsatzsteuer-ID DE 113891213 Geschaeftsfuehrung: Prof. Dr. Christopher Jahns, ?President; Prof. Dr. Rolf Tilmes, Dean Business School; Sabine Fuchs, CMO; Prof. Dr. Dr. Gerrick Frhr. v. Hoyningen-Huene, Dean Law School; Verwaltungsrat: Dr. Hellmut K. Albrecht, Vorsitzender\n> ? ? ? ?[[alternative HTML version deleted]]\n>\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>",
+      "body_plain": "On Tue, Oct 26, 2010 at 4:42 AM, Adams, Zeno <Zeno.Adams at ebs.edu> wrote:\n> This is an interesting discussion. Concerning the right choice and computation of t-tests there is still one point that is unclear to me: In the Welch t-test we have a difference in the numerator and a standard deviation of a difference in the denominator. Why then is the standard deviation of the difference not computed correctly, i.e. why is the covariance between X and Y not taken into account?\n>\n> For example using the sleep data:\n>\n> data(sleep)\n> means <- tapply(sleep$extra,sleep$group,mean) ; means\n> vars <- tapply(sleep$extra,sleep$group,var) ; vars\n>\n> sd.welch <- sqrt(vars[1]/10 + vars[2]/10) ; sd.welch\n> #in sd.welch the covariance is ignored\n>\n> t.welch <- (means[1]-means[2])/sd.welch ; t.welch\n>\n> #verify with R-built-in t.test function:\n> t.test(extra ~ group, data = sleep)\n>\n>\n> However, the correlation between sleep$extra[sleep$group == 1] and sleep$extra[sleep$group == 2] is relatively high:\n>\n> cor(sleep$extra[sleep$group == 1],sleep$extra[sleep$group == 2])\n>\n> Souldn’t the correct standard deviation be…\n>\n> sd.paired <- sqrt(vars[1]/10 + vars[2]/10\n>        -2*cov(sleep$extra[sleep$group == 1],sleep$extra[sleep$group == 2])/10) ; sd.paired\n>\n> …as in the paired t-test???\n\nOnly if the order of the observations in each sample is fixed.  I\ndon't want to sound facetious but the important characteristic of the\nsamples in a paired t-test is that they are paired.  The first\nobservation in sample 1 is associated in some way with the first\nobservation in sample 2, say because they are observations on the same\nsubject or at the same location or ...\n\nIf there is no pairing then one of the samples could be rearranged\nwithout changing the other, thereby changing the covariance.\n\nBecause of the pairing the sample sizes in a paired t-test must be\nequal.  But a t-test for independent samples can be used when the\nsample sizes are unequal.  So, no, the t-test for independent samples\nis not a special case of the paired t-test.\n\n> In other words, isn’t the Welch t-test a special case of the paired t-test with both samples assumed to be uncorrelated? And shouldn’t we then teach only the paired t-test as the most general test in class?\n>\n> Thanks!\n>\n> Zeno\n>\n>\n>\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org on behalf of Albyn Jones\n> Sent: Tue 10/26/2010 3:51 AM\n> To: Ian Fellows\n> Cc: r-sig-teaching at r-project.org\n> Subject: Re: [R-sig-teaching] prop.test in R\n>\n> Exactly - elementary texts and methods books recommend the welch test\n> for the reason you mention.  Curiously, those same texts recommend\n> using anova and regression without automatically correcting for the\n> possibility of non-constant variance.  Why is the case of comparing\n> two means different from 3?  Those same books will tell you that anova\n> is pretty robust to non-constant variance.  well, the two sample\n> t-test is anova.\n>\n> I don't use the welch test except as a conscious decision: ie I really\n> want to compare the means while suspecting that the variances differ.\n> Generally people are using the t test to certify that two populations\n> are different.  If the variances are wildly different, that may be\n> much more important than a difference in means.  in fact, to test for\n> a difference in means when the variances are wildly different is\n> almost always substantively silly.   There was a great example a few\n> years ago from a psychiatric journal, comparing two medications, where\n> the investigators did a t-test for the means when one distribution was\n> unimodal and the other was bi-modal; there was no statistically\n> significant difference in the means, but there was a really important\n> difference in the distributions.  The automatic use of the welch test\n> makes you feel that you are protected against Bad Things, when you\n> aren't.\n>\n> albyn\n>\n> Quoting Ian Fellows <ian.fellows at stat.ucla.edu>:\n>\n>> In the case of the t.test, having the default be var.equal=TRUE is\n>> the right way to go. There is little to no power lost by using the\n>> welch test, and the assumption of equal variance can be difficult to\n>> assess. For this reason, many introductory text books have now\n>> banished the equal variance t-test from their chapters (e.g. Moore's\n>> The Basic Practice of Statistics).\n>>\n>> Ian\n>>\n>>\n>> On Oct 25, 2010, at 4:05 PM, Albyn Jones wrote:\n>>\n>>> I don't know, the help file is uninformative.  I'd guess the answer is\n>>> \"the author wrote it that way\".  Other R functions like t.test include\n>>> similar unfortunate (to me) default choices, in that case\n>>> var.equal=FALSE (ie the Welch test) is the default.\n>>>\n>>> albyn\n>>>\n>>> On Mon, Oct 25, 2010 at 04:15:20PM -0500, Laura Chihara wrote:\n>>>> Yes, thank you for this reference. But according to\n>>>> this article, the score is better than continuity\n>>>> correction, so why is continuity correction the default\n>>>> with prop.test?\n>>>>\n>>>> -Laura\n>>>>\n>>>> On 10/25/2010 4:02 PM, Ralph O'Brien, PhD wrote:\n>>>>> I suggest:\n>>>>>\n>>>>> A. Agresti and B. A. Coull. Approximate is better than \"exact\" for\n>>>>> interval estimation of binomial proportions. The American Statistician,\n>>>>> 52(2):119-126, 1998.\n>>>>>\n>>>>>\n>>>>>\n>>>>>\n>>>>>\n>>>>>\n>>>>>\n>>>>> On Mon, Oct 25, 2010 at 4:38 PM, Laura Chihara <lchihara at carleton.edu\n>>>>> <mailto:lchihara at carleton.edu>> wrote:\n>>>>>\n>>>>>   Hi,\n>>>>>\n>>>>>   I have a question about prop.test in R:\n>>>>>\n>>>>>   I teach students the score confidence\n>>>>>   interval for proportions (also called\n>>>>>   Wilson or Wilson score interval).\n>>>>>\n>>>>>   prop.test(,..., correct=FALSE) gives this\n>>>>>   interval.\n>>>>>\n>>>>>   The default uses a continuity correction.\n>>>>>   When should we use one over the other?\n>>>>>   Is it worth going over this in class? Why\n>>>>>   is correct=TRUE the default?\n>>>>>\n>>>>>   Thanks for any pedagogical guidance here!\n>>>>>\n>>>>>   -- Laura\n>>>>>\n>>>>>   *******************************************\n>>>>>   Laura Chihara\n>>>>>   Professor of Mathematics   507-222-4065 (office)\n>>>>>   Dept of Mathematics        507-222-4312 (fax)\n>>>>>   Carleton College\n>>>>>   1 North College Street\n>>>>>   Northfield MN 55057\n>>>>>\n>>>>>   _______________________________________________\n>>>>>   R-sig-teaching at r-project.org <mailto:R-sig-teaching at r-project.org>\n>>>>>   mailing list\n>>>>>   https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>>>>\n>>>>>\n>>>>>\n>>>>>\n>>>>> --\n>>>>> Ralph O'Brien, PhD\n>>>>> Professor, Dept of Epidemiology and Biostatistics\n>>>>> Case Western Reserve University\n>>>>> Office: 216.368.1927\n>>>>> Cell: 216.312.3203\n>>>>\n>>>> --\n>>>> *******************************************\n>>>> Laura Chihara\n>>>> Professor of Mathematics   507-222-4065 (office)\n>>>> Dept of Mathematics        507-222-4312 (fax)\n>>>> Carleton College\n>>>> 1 North College Street\n>>>> Northfield MN 55057\n>>>>\n>>>> _______________________________________________\n>>>> R-sig-teaching at r-project.org mailing list\n>>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>>>\n>>>\n>>> --\n>>> Albyn Jones\n>>> Reed College\n>>> jones at reed.edu\n>>>\n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>>\n>>\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n>\n> EBS European Business School gemeinnuetzige GmbH, Universitaet fuer Wirtschaft und Recht i.Gr. - Amtsgericht Wiesbaden HRB 19951 - Umsatzsteuer-ID DE 113891213 Geschaeftsfuehrung: Prof. Dr. Christopher Jahns,  President; Prof. Dr. Rolf Tilmes, Dean Business School; Sabine Fuchs, CMO; Prof. Dr. Dr. Gerrick Frhr. v. Hoyningen-Huene, Dean Law School; Verwaltungsrat: Dr. Hellmut K. Albrecht, Vorsitzender\n>        [[alternative HTML version deleted]]\n>\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>",
       "body_snippet": "On Tue, Oct 26, 2010 at 4:42 AM, Adams, Zeno <Zeno.Adams at ebs.edu> wrote:\n> This is an interesting discussion. Concerning the right choice and computation of t-tests there is still one point that is",
       "thread_id": "thread-51f211742aba",
       "thread_depth": 7,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000311.html"
     },
     {
       "id": "msg-ca2405f6e0bf",
@@ -454,7 +477,8 @@
       "body_snippet": "Greetings all,\n\nin my own R code I have used various forms of the R assignment operator \nat different times in my life. There are arguments for and against each \nchoice.\n\nA question I would like this ",
       "thread_id": "thread-ca2405f6e0bf",
       "thread_depth": 0,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000312.html"
     },
     {
       "id": "msg-9b94ba284bc2",
@@ -472,7 +496,8 @@
       "body_snippet": "Arguments in favor of using \"=\" as the assignment operator:\n - it is familiar to any students who have studied compiled languages\nlike C++ or Java or interpreted languages like Matlab, Perl, Python,\n.",
       "thread_id": "thread-ca2405f6e0bf",
       "thread_depth": 1,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000313.html"
     },
     {
       "id": "msg-4d5f08cb578c",
@@ -488,7 +513,8 @@
       "body_snippet": "Forwarded message:\n> From: Murray Jorgensen <maj at waikato.ac.nz>\n> \n> in my own R code I have used various forms of the R assignment operator \n> at different times in my life. There are arguments fo",
       "thread_id": "thread-4d5f08cb578c",
       "thread_depth": 0,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000314.html"
     },
     {
       "id": "msg-e2b5970b382a",
@@ -506,7 +532,8 @@
       "body_snippet": "On Wed, 27 Oct 2010 08:10:41 +1300,\nMurray Jorgensen <maj at waikato.ac.nz> wrote:\n\n> Greetings all, in my own R code I have used various forms of the R\n> assignment operator at different times in my ",
       "thread_id": "thread-ca2405f6e0bf",
       "thread_depth": 1,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000315.html"
     },
     {
       "id": "msg-eb8002913408",
@@ -529,7 +556,8 @@
       "body_snippet": "> Exactly - elementary texts and methods books recommend the welch test\n> for the reason you mention.  Curiously, those same texts recommend\n> using anova and regression without automatically correcti",
       "thread_id": "thread-51f211742aba",
       "thread_depth": 6,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000316.html"
     },
     {
       "id": "msg-ba3299cb9ad0",
@@ -547,7 +575,8 @@
       "body_snippet": "On Tue, Oct 26, 2010 at 3:10 PM, Murray Jorgensen <maj at waikato.ac.nz> wrote:\n> Greetings all,\n>\n> in my own R code I have used various forms of the R assignment operator at\n> different times in my ",
       "thread_id": "thread-ca2405f6e0bf",
       "thread_depth": 1,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000317.html"
     },
     {
       "id": "msg-0638270ca8dc",
@@ -566,7 +595,8 @@
       "body_snippet": "I can see that I am going to have to set a little context because I \nwanted to anchor the discussion in the teaching of statistics, and not \nof R as a language. I think the issues are different in the",
       "thread_id": "thread-ca2405f6e0bf",
       "thread_depth": 2,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000318.html"
     },
     {
       "id": "msg-e0afab4ce621",
@@ -586,7 +616,8 @@
       "body_snippet": "I like the Venables and Ripley reasoning around the assignment \ncharacter: use different characters for assignment in different \nenvironments. So you have = for assignment inside function calls, <- fo",
       "thread_id": "thread-ca2405f6e0bf",
       "thread_depth": 3,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000319.html"
     },
     {
       "id": "msg-2e9a29580bb7",
@@ -606,7 +637,8 @@
       "body_snippet": "On Tue, Oct 26, 2010 at 8:41 PM, Murray Jorgensen <maj at waikato.ac.nz> wrote:\n> I can see that I am going to have to set a little context because I wanted\n> to anchor the discussion in the teaching ",
       "thread_id": "thread-ca2405f6e0bf",
       "thread_depth": 3,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000320.html"
     },
     {
       "id": "msg-56eb4aa8b2ac",
@@ -626,7 +658,8 @@
       "body_snippet": "Woops! I meant \"for not liking <-\"  !\n\nOn 27/10/2010 1:41 p.m., Murray Jorgensen wrote:\n\n[...]\n\n> I will come clean and admit that I have another reason for not liking R.\n[...]\n\nMurrar",
       "thread_id": "thread-ca2405f6e0bf",
       "thread_depth": 3,
-      "month": "2010-10"
+      "month": "2010-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000321.html"
     }
   ],
   "threads": [

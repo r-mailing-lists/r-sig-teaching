@@ -17,7 +17,8 @@
       "body_snippet": "Hi all,\n\nI'm busy writing a general introduction into programming with R, and I\nuse a lot of examples and tricks that are given in the help list. I\nhave a selection of threads in the help list to use ",
       "thread_id": "thread-4e8b6b918250",
       "thread_depth": 0,
-      "month": "2010-06"
+      "month": "2010-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q2/000241.html"
     },
     {
       "id": "msg-bad0f9cfdb1a",
@@ -33,7 +34,8 @@
       "body_snippet": "Hi all,\n\nfinger slipped on the tab button, so gmail decided to send an\nincomplete mail... This is the complete one, sorry for the\ninconvenience\n\nI'm busy writing a general introduction into programmin",
       "thread_id": "thread-bad0f9cfdb1a",
       "thread_depth": 0,
-      "month": "2010-06"
+      "month": "2010-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q2/000242.html"
     },
     {
       "id": "msg-9cb67208d59a",
@@ -50,6 +52,7 @@
       "thread_id": "thread-9cb67208d59a",
       "thread_depth": 0,
       "month": "2010-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q2/000243.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100608/da2e050a/attachment.pl"
       ]
@@ -69,6 +72,7 @@
       "thread_id": "thread-1a19e0d763f7",
       "thread_depth": 0,
       "month": "2010-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q2/000244.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100614/ff8eb3ce/attachment.pl"
       ]
@@ -89,7 +93,8 @@
       "body_snippet": "You are posting to the *wrong* list! Your question has nothing to do\nwith Teaching and R?\n\nPlease post on the main R-Help mailing list.\n\nG\n\nOn Mon, 2010-06-14 at 10:19 -0700, Ali Zanaty wrote:\n> Dear ",
       "thread_id": "thread-1a19e0d763f7",
       "thread_depth": 1,
-      "month": "2010-06"
+      "month": "2010-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q2/000245.html"
     },
     {
       "id": "msg-8b5032f31bcc",
@@ -106,6 +111,7 @@
       "thread_id": "thread-1a19e0d763f7",
       "thread_depth": 2,
       "month": "2010-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q2/000246.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100614/b7a81c7a/attachment.pl"
       ]
@@ -127,6 +133,7 @@
       "thread_id": "thread-1a19e0d763f7",
       "thread_depth": 3,
       "month": "2010-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q2/000248.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100614/1c339127/attachment.pl"
       ]
@@ -147,7 +154,8 @@
       "body_snippet": "Again, your question is OT for this forum! Regardless of *why* you want\nto know how to plot two ellipses, your question is not about teaching\nand R.\n\n\"Special Interest Group (SIG) on teaching statisti",
       "thread_id": "thread-1a19e0d763f7",
       "thread_depth": 3,
-      "month": "2010-06"
+      "month": "2010-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q2/000247.html"
     },
     {
       "id": "msg-35cf6efd95ea",
@@ -159,11 +167,12 @@
       "subject_clean": "Statistics are SO boring...",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Hi the list,\n\nAs a statistics teacher, I teach to NOT-scientists student, public that \nit is permanently necessary to motivate. I am thus in search of examples \nboth scientific and playful to illustrate my courses. It is not always \neasy to find. As other teacher might be in the same case, I say to \nmyself that we could maybe share our 'best' examples?\n\nSo I start: a social psychologist (Nicolas Gueguen, article here \nhttp://nicolas.gueguen.free.fr/index.html) has establishes that if we \napproach a perfect unknown lady on a beach and we ask for its phone \nnumber, we have 9 % of chance to obtain it. If we call her by touching \nher slightly on the front arm, we have 19 % (!!!) of chances to obtain \nit (test of chi2, p < 0.01). Surprising, isn't it?\n\nSo what are your 'best examples' ?\n\nChristophe Genolini\n\n-- \n-----------------------------------------\nChristophe Genolini\nMaitre de conf?rences\nINSERM U669, Equipe Biostatistiques\nUFR STAPS, Universit? de Paris Ouest-Nanterre-La D?fense\nWeb: http:\\\\christophe.genolini.free.fr",
+      "body_plain": "Hi the list,\n\nAs a statistics teacher, I teach to NOT-scientists student, public that \nit is permanently necessary to motivate. I am thus in search of examples \nboth scientific and playful to illustrate my courses. It is not always \neasy to find. As other teacher might be in the same case, I say to \nmyself that we could maybe share our 'best' examples?\n\nSo I start: a social psychologist (Nicolas Gueguen, article here \nhttp://nicolas.gueguen.free.fr/index.html) has establishes that if we \napproach a perfect unknown lady on a beach and we ask for its phone \nnumber, we have 9 % of chance to obtain it. If we call her by touching \nher slightly on the front arm, we have 19 % (!!!) of chances to obtain \nit (test of chi2, p < 0.01). Surprising, isn't it?\n\nSo what are your 'best examples' ?\n\nChristophe Genolini\n\n-- \n-----------------------------------------\nChristophe Genolini\nMaitre de conférences\nINSERM U669, Equipe Biostatistiques\nUFR STAPS, Université de Paris Ouest-Nanterre-La Défense\nWeb: http:\\\\christophe.genolini.free.fr",
       "body_snippet": "Hi the list,\n\nAs a statistics teacher, I teach to NOT-scientists student, public that \nit is permanently necessary to motivate. I am thus in search of examples \nboth scientific and playful to illustra",
       "thread_id": "thread-35cf6efd95ea",
       "thread_depth": 0,
-      "month": "2010-06"
+      "month": "2010-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q2/000249.html"
     },
     {
       "id": "msg-5fe995b645de",
@@ -182,6 +191,7 @@
       "thread_id": "thread-35cf6efd95ea",
       "thread_depth": 1,
       "month": "2010-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q2/000250.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100623/292926a7/attachment.pl"
       ]
@@ -199,11 +209,12 @@
         "<4C224DD2.60507@u-paris10.fr>",
         "<AANLkTimDMKJ9HE7TjpVThDVeEtvXTlSAdQJpqyWWjcvx@mail.gmail.com>"
       ],
-      "body_plain": "On Wed, Jun 23, 2010 at 8:59 PM, Geoffrey Smith <gps at asu.edu> wrote:\n> You might think about looking at stock returns and asking questions about\n> the probability of doubling your money or of getting a rate of return that\n> exceeds the historical mean. ?Geoff\n\nDoesn't always work though. Bio-engineers for example are typically\nless interested in gambling on the stockmarket... ;-)\n\nNow serious, one of the finest examples I met is the example about the\ndeath penalty in Florida, to be found in Agresti's book \"Categorical\nData Analysis\" on page 48 and further. It gives a very nice\nillustration of Simpson's paradox, applied to real data about a topic\nthat leaves few untouched. Basically Agresti shows there how one came\nto the conclusion that whites got more often the death penalty than\nblacks in Florida. If one didn't take the victim into account, that\nis. When looking at the victims, it was clear that the death penalty\nwas more often declared when the victim was white. It turned out that\nblacks mostly kill blacks, and whites mostly killed whites.\nConditional on the victim, the story turned around and blacks clearly\ngot the death penalty more often. The data goes from 1971 to 1987, so\nis fairly safe to use for educational purposes\n\nCheers\nJoris\n\n>\n> On Wed, Jun 23, 2010 at 11:09 AM, Christophe Genolini <cgenolin at u-paris10.fr\n>> wrote:\n>\n>> Hi the list,\n>>\n>> As a statistics teacher, I teach to NOT-scientists student, public that it\n>> is permanently necessary to motivate. I am thus in search of examples both\n>> scientific and playful to illustrate my courses. It is not always easy to\n>> find. As other teacher might be in the same case, I say to myself that we\n>> could maybe share our 'best' examples?\n>>\n>> So I start: a social psychologist (Nicolas Gueguen, article here\n>> http://nicolas.gueguen.free.fr/index.html) has establishes that if we\n>> approach a perfect unknown lady on a beach and we ask for its phone number,\n>> we have 9 % of chance to obtain it. If we call her by touching her slightly\n>> on the front arm, we have 19 % (!!!) of chances to obtain it (test of chi2,\n>> p < 0.01). Surprising, isn't it?\n>>\n>> So what are your 'best examples' ?\n>>\n>> Christophe Genolini\n>>\n>> --\n>> -----------------------------------------\n>> Christophe Genolini\n>> Maitre de conf?rences\n>> INSERM U669, Equipe Biostatistiques\n>> UFR STAPS, Universit? de Paris Ouest-Nanterre-La D?fense\n>> Web: http:\\\\christophe.genolini.free.fr\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>\n>\n>\n> --\n> Geoffrey Smith\n> Visiting Assistant Professor\n> Department of Finance\n> W. P. Carey School of Business\n> Arizona State University\n>\n> ? ? ? ?[[alternative HTML version deleted]]\n>\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n\n\n\n-- \nJoris Meys\nStatistical consultant\n\nGhent University\nFaculty of Bioscience Engineering\nDepartment of Applied mathematics, biometrics and process control\n\ntel : +32 9 264 59 87\nJoris.Meys at Ugent.be\n-------------------------------\nDisclaimer : http://helpdesk.ugent.be/e-maildisclaimer.php",
+      "body_plain": "On Wed, Jun 23, 2010 at 8:59 PM, Geoffrey Smith <gps at asu.edu> wrote:\n> You might think about looking at stock returns and asking questions about\n> the probability of doubling your money or of getting a rate of return that\n> exceeds the historical mean.  Geoff\n\nDoesn't always work though. Bio-engineers for example are typically\nless interested in gambling on the stockmarket... ;-)\n\nNow serious, one of the finest examples I met is the example about the\ndeath penalty in Florida, to be found in Agresti's book \"Categorical\nData Analysis\" on page 48 and further. It gives a very nice\nillustration of Simpson's paradox, applied to real data about a topic\nthat leaves few untouched. Basically Agresti shows there how one came\nto the conclusion that whites got more often the death penalty than\nblacks in Florida. If one didn't take the victim into account, that\nis. When looking at the victims, it was clear that the death penalty\nwas more often declared when the victim was white. It turned out that\nblacks mostly kill blacks, and whites mostly killed whites.\nConditional on the victim, the story turned around and blacks clearly\ngot the death penalty more often. The data goes from 1971 to 1987, so\nis fairly safe to use for educational purposes\n\nCheers\nJoris\n\n>\n> On Wed, Jun 23, 2010 at 11:09 AM, Christophe Genolini <cgenolin at u-paris10.fr\n>> wrote:\n>\n>> Hi the list,\n>>\n>> As a statistics teacher, I teach to NOT-scientists student, public that it\n>> is permanently necessary to motivate. I am thus in search of examples both\n>> scientific and playful to illustrate my courses. It is not always easy to\n>> find. As other teacher might be in the same case, I say to myself that we\n>> could maybe share our 'best' examples?\n>>\n>> So I start: a social psychologist (Nicolas Gueguen, article here\n>> http://nicolas.gueguen.free.fr/index.html) has establishes that if we\n>> approach a perfect unknown lady on a beach and we ask for its phone number,\n>> we have 9 % of chance to obtain it. If we call her by touching her slightly\n>> on the front arm, we have 19 % (!!!) of chances to obtain it (test of chi2,\n>> p < 0.01). Surprising, isn't it?\n>>\n>> So what are your 'best examples' ?\n>>\n>> Christophe Genolini\n>>\n>> --\n>> -----------------------------------------\n>> Christophe Genolini\n>> Maitre de conférences\n>> INSERM U669, Equipe Biostatistiques\n>> UFR STAPS, Université de Paris Ouest-Nanterre-La Défense\n>> Web: http:\\\\christophe.genolini.free.fr\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>\n>\n>\n> --\n> Geoffrey Smith\n> Visiting Assistant Professor\n> Department of Finance\n> W. P. Carey School of Business\n> Arizona State University\n>\n> ?      [[alternative HTML version deleted]]\n>\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n\n\n\n-- \nJoris Meys\nStatistical consultant\n\nGhent University\nFaculty of Bioscience Engineering\nDepartment of Applied mathematics, biometrics and process control\n\ntel : +32 9 264 59 87\nJoris.Meys at Ugent.be\n-------------------------------\nDisclaimer : http://helpdesk.ugent.be/e-maildisclaimer.php",
       "body_snippet": "On Wed, Jun 23, 2010 at 8:59 PM, Geoffrey Smith <gps at asu.edu> wrote:\n> You might think about looking at stock returns and asking questions about\n> the probability of doubling your money or of getti",
       "thread_id": "thread-35cf6efd95ea",
       "thread_depth": 2,
-      "month": "2010-06"
+      "month": "2010-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q2/000251.html"
     },
     {
       "id": "msg-9997f274103f",
@@ -219,11 +230,12 @@
         "<AANLkTimDMKJ9HE7TjpVThDVeEtvXTlSAdQJpqyWWjcvx@mail.gmail.com>",
         "<AANLkTin52hCxS7T51rFSgTaVk_hsQ3yhu02btAHMc8Hf@mail.gmail.com>"
       ],
-      "body_plain": "I'm in no way affiliated with the author, but this blog post struck  \nme as interesting and accessible:\n\nhttp://perfdynamics.blogspot.com/2010/06/linear-modeling-in-r-and- \nhubble-bubble.html\n\n\nOn Jun 23, 2010, at 1:13 PM, Joris Meys wrote:\n\n> On Wed, Jun 23, 2010 at 8:59 PM, Geoffrey Smith <gps at asu.edu> wrote:\n>> You might think about looking at stock returns and asking  \n>> questions about\n>> the probability of doubling your money or of getting a rate of  \n>> return that\n>> exceeds the historical mean.  Geoff\n>\n> Doesn't always work though. Bio-engineers for example are typically\n> less interested in gambling on the stockmarket... ;-)\n>\n> Now serious, one of the finest examples I met is the example about the\n> death penalty in Florida, to be found in Agresti's book \"Categorical\n> Data Analysis\" on page 48 and further. It gives a very nice\n> illustration of Simpson's paradox, applied to real data about a topic\n> that leaves few untouched. Basically Agresti shows there how one came\n> to the conclusion that whites got more often the death penalty than\n> blacks in Florida. If one didn't take the victim into account, that\n> is. When looking at the victims, it was clear that the death penalty\n> was more often declared when the victim was white. It turned out that\n> blacks mostly kill blacks, and whites mostly killed whites.\n> Conditional on the victim, the story turned around and blacks clearly\n> got the death penalty more often. The data goes from 1971 to 1987, so\n> is fairly safe to use for educational purposes\n>\n> Cheers\n> Joris\n>\n>>\n>> On Wed, Jun 23, 2010 at 11:09 AM, Christophe Genolini <cgenolin at u- \n>> paris10.fr\n>>> wrote:\n>>\n>>> Hi the list,\n>>>\n>>> As a statistics teacher, I teach to NOT-scientists student,  \n>>> public that it\n>>> is permanently necessary to motivate. I am thus in search of  \n>>> examples both\n>>> scientific and playful to illustrate my courses. It is not always  \n>>> easy to\n>>> find. As other teacher might be in the same case, I say to myself  \n>>> that we\n>>> could maybe share our 'best' examples?\n>>>\n>>> So I start: a social psychologist (Nicolas Gueguen, article here\n>>> http://nicolas.gueguen.free.fr/index.html) has establishes that  \n>>> if we\n>>> approach a perfect unknown lady on a beach and we ask for its  \n>>> phone number,\n>>> we have 9 % of chance to obtain it. If we call her by touching  \n>>> her slightly\n>>> on the front arm, we have 19 % (!!!) of chances to obtain it  \n>>> (test of chi2,\n>>> p < 0.01). Surprising, isn't it?\n>>>\n>>> So what are your 'best examples' ?\n>>>\n>>> Christophe Genolini\n>>>\n>>> --\n>>> -----------------------------------------\n>>> Christophe Genolini\n>>> Maitre de conf?rences\n>>> INSERM U669, Equipe Biostatistiques\n>>> UFR STAPS, Universit? de Paris Ouest-Nanterre-La D?fense\n>>> Web: http:\\\\christophe.genolini.free.fr\n>>>\n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>>\n>>\n>>\n>>\n>> --\n>> Geoffrey Smith\n>> Visiting Assistant Professor\n>> Department of Finance\n>> W. P. Carey School of Business\n>> Arizona State University\n>>\n>>        [[alternative HTML version deleted]]\n>>\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>>\n>\n>\n>\n> -- \n> Joris Meys\n> Statistical consultant\n>\n> Ghent University\n> Faculty of Bioscience Engineering\n> Department of Applied mathematics, biometrics and process control\n>\n> tel : +32 9 264 59 87\n> Joris.Meys at Ugent.be\n> -------------------------------\n> Disclaimer : http://helpdesk.ugent.be/e-maildisclaimer.php\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
+      "body_plain": "I'm in no way affiliated with the author, but this blog post struck  \nme as interesting and accessible:\n\nhttp://perfdynamics.blogspot.com/2010/06/linear-modeling-in-r-and- \nhubble-bubble.html\n\n\nOn Jun 23, 2010, at 1:13 PM, Joris Meys wrote:\n\n> On Wed, Jun 23, 2010 at 8:59 PM, Geoffrey Smith <gps at asu.edu> wrote:\n>> You might think about looking at stock returns and asking  \n>> questions about\n>> the probability of doubling your money or of getting a rate of  \n>> return that\n>> exceeds the historical mean.  Geoff\n>\n> Doesn't always work though. Bio-engineers for example are typically\n> less interested in gambling on the stockmarket... ;-)\n>\n> Now serious, one of the finest examples I met is the example about the\n> death penalty in Florida, to be found in Agresti's book \"Categorical\n> Data Analysis\" on page 48 and further. It gives a very nice\n> illustration of Simpson's paradox, applied to real data about a topic\n> that leaves few untouched. Basically Agresti shows there how one came\n> to the conclusion that whites got more often the death penalty than\n> blacks in Florida. If one didn't take the victim into account, that\n> is. When looking at the victims, it was clear that the death penalty\n> was more often declared when the victim was white. It turned out that\n> blacks mostly kill blacks, and whites mostly killed whites.\n> Conditional on the victim, the story turned around and blacks clearly\n> got the death penalty more often. The data goes from 1971 to 1987, so\n> is fairly safe to use for educational purposes\n>\n> Cheers\n> Joris\n>\n>>\n>> On Wed, Jun 23, 2010 at 11:09 AM, Christophe Genolini <cgenolin at u- \n>> paris10.fr\n>>> wrote:\n>>\n>>> Hi the list,\n>>>\n>>> As a statistics teacher, I teach to NOT-scientists student,  \n>>> public that it\n>>> is permanently necessary to motivate. I am thus in search of  \n>>> examples both\n>>> scientific and playful to illustrate my courses. It is not always  \n>>> easy to\n>>> find. As other teacher might be in the same case, I say to myself  \n>>> that we\n>>> could maybe share our 'best' examples?\n>>>\n>>> So I start: a social psychologist (Nicolas Gueguen, article here\n>>> http://nicolas.gueguen.free.fr/index.html) has establishes that  \n>>> if we\n>>> approach a perfect unknown lady on a beach and we ask for its  \n>>> phone number,\n>>> we have 9 % of chance to obtain it. If we call her by touching  \n>>> her slightly\n>>> on the front arm, we have 19 % (!!!) of chances to obtain it  \n>>> (test of chi2,\n>>> p < 0.01). Surprising, isn't it?\n>>>\n>>> So what are your 'best examples' ?\n>>>\n>>> Christophe Genolini\n>>>\n>>> --\n>>> -----------------------------------------\n>>> Christophe Genolini\n>>> Maitre de conférences\n>>> INSERM U669, Equipe Biostatistiques\n>>> UFR STAPS, Université de Paris Ouest-Nanterre-La Défense\n>>> Web: http:\\\\christophe.genolini.free.fr\n>>>\n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>>\n>>\n>>\n>>\n>> --\n>> Geoffrey Smith\n>> Visiting Assistant Professor\n>> Department of Finance\n>> W. P. Carey School of Business\n>> Arizona State University\n>>\n>>        [[alternative HTML version deleted]]\n>>\n>>\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n>>\n>\n>\n>\n> -- \n> Joris Meys\n> Statistical consultant\n>\n> Ghent University\n> Faculty of Bioscience Engineering\n> Department of Applied mathematics, biometrics and process control\n>\n> tel : +32 9 264 59 87\n> Joris.Meys at Ugent.be\n> -------------------------------\n> Disclaimer : http://helpdesk.ugent.be/e-maildisclaimer.php\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>",
       "body_snippet": "I'm in no way affiliated with the author, but this blog post struck  \nme as interesting and accessible:\n\nhttp://perfdynamics.blogspot.com/2010/06/linear-modeling-in-r-and- \nhubble-bubble.html\n\n\nOn Jun",
       "thread_id": "thread-35cf6efd95ea",
       "thread_depth": 3,
-      "month": "2010-06"
+      "month": "2010-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q2/000252.html"
     },
     {
       "id": "msg-def6c356e27c",
@@ -241,7 +253,8 @@
       "body_snippet": "Christophe,\n\nYou may already know it, but Gelman has a book on teaching statistics \nthat contains many good examples.  One that comes to mind (I think I \nfound it there, at least) involves conditional",
       "thread_id": "thread-def6c356e27c",
       "thread_depth": 0,
-      "month": "2010-06"
+      "month": "2010-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q2/000253.html"
     },
     {
       "id": "msg-91353b899df2",
@@ -260,7 +273,8 @@
       "body_snippet": "This is a great article about probability theory written by Steven \nStrogatz. His whole blog is good for non-mathematicians but this one has \na nice example about conditional probability.\n\nhttp://opin",
       "thread_id": "thread-def6c356e27c",
       "thread_depth": 1,
-      "month": "2010-06"
+      "month": "2010-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q2/000254.html"
     },
     {
       "id": "msg-cbfed7eec809",
@@ -274,11 +288,12 @@
       "references": [
         "<4C224DD2.60507@u-paris10.fr>"
       ],
-      "body_plain": "I use a card trick to teach hypothesis testing, I have 3 students each come and do a \"random\" draw from my deck of CArdboard Randomization Devices (CARDs) and they tend to be a little surprised when each draws the 6 of clubs (the deck is from a magic shop, I am not that good a magician).  I then ask if anyone believes that they just witnessed 3 completely random draws from a regular deck, generally nobody does (at least not the ones that were awake), then I ask why or why not, it usually takes a minute for someone to put their thoughts into words (but it is worth the awkward silence to force them to say it).  The response is usually something like \"that wouldn't happen by chance\", then I talk about the idea of chance vs. something else explaining what they see, build it into the whole hypothesis testing vocab etc.\n\nFor confidence intervals I often have students count the colors of M&M's candies and get proportions. The M&M website a while ago had the official proportions of the colors, so I tell them what the true proportion is for one of the colors and show how their counted percentages are close but not exactly the same, then show a computer simulation based on that truth and show how close/far the estimates are on average, then we choose a different color, look at one of the observed percentages and ask what the truth could be (with the 1st color most of the simulated values were within 15% of the truth, so we should expect the truth for this color to be within 15% of the observed), then once we have the basics for the confidence interval I tell them the true value and see if the interval contains that value (and show other simulated CIs).\n\nLook at the TeachingDemos package for simulations and interactive graphics to show various concepts (and let me know if you have additional ideas).\n\nThe chance news wiki (http://www.causeweb.org/wiki/chance/index.php/Main_Page) has many examples in the real world of statistics being used (correctly and incorrectly) or places where it should have been used.  Great place to find interesting examples.\n\n-- \nGregory (Greg) L. Snow Ph.D.\nStatistical Data Center\nIntermountain Healthcare\ngreg.snow at imail.org\n801.408.8111\n\n\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-\n> bounces at r-project.org] On Behalf Of Christophe Genolini\n> Sent: Wednesday, June 23, 2010 12:09 PM\n> To: r-sig-teaching at r-project.org\n> Subject: [R-sig-teaching] Statistics are SO boring...\n> \n> Hi the list,\n> \n> As a statistics teacher, I teach to NOT-scientists student, public that\n> it is permanently necessary to motivate. I am thus in search of\n> examples\n> both scientific and playful to illustrate my courses. It is not always\n> easy to find. As other teacher might be in the same case, I say to\n> myself that we could maybe share our 'best' examples?\n> \n> So I start: a social psychologist (Nicolas Gueguen, article here\n> http://nicolas.gueguen.free.fr/index.html) has establishes that if we\n> approach a perfect unknown lady on a beach and we ask for its phone\n> number, we have 9 % of chance to obtain it. If we call her by touching\n> her slightly on the front arm, we have 19 % (!!!) of chances to obtain\n> it (test of chi2, p < 0.01). Surprising, isn't it?\n> \n> So what are your 'best examples' ?\n> \n> Christophe Genolini\n> \n> --\n> -----------------------------------------\n> Christophe Genolini\n> Maitre de conf?rences\n> INSERM U669, Equipe Biostatistiques\n> UFR STAPS, Universit? de Paris Ouest-Nanterre-La D?fense\n> Web: http:\\\\christophe.genolini.free.fr\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_plain": "I use a card trick to teach hypothesis testing, I have 3 students each come and do a \"random\" draw from my deck of CArdboard Randomization Devices (CARDs) and they tend to be a little surprised when each draws the 6 of clubs (the deck is from a magic shop, I am not that good a magician).  I then ask if anyone believes that they just witnessed 3 completely random draws from a regular deck, generally nobody does (at least not the ones that were awake), then I ask why or why not, it usually takes a minute for someone to put their thoughts into words (but it is worth the awkward silence to force them to say it).  The response is usually something like \"that wouldn't happen by chance\", then I talk about the idea of chance vs. something else explaining what they see, build it into the whole hypothesis testing vocab etc.\n\nFor confidence intervals I often have students count the colors of M&M's candies and get proportions. The M&M website a while ago had the official proportions of the colors, so I tell them what the true proportion is for one of the colors and show how their counted percentages are close but not exactly the same, then show a computer simulation based on that truth and show how close/far the estimates are on average, then we choose a different color, look at one of the observed percentages and ask what the truth could be (with the 1st color most of the simulated values were within 15% of the truth, so we should expect the truth for this color to be within 15% of the observed), then once we have the basics for the confidence interval I tell them the true value and see if the interval contains that value (and show other simulated CIs).\n\nLook at the TeachingDemos package for simulations and interactive graphics to show various concepts (and let me know if you have additional ideas).\n\nThe chance news wiki (http://www.causeweb.org/wiki/chance/index.php/Main_Page) has many examples in the real world of statistics being used (correctly and incorrectly) or places where it should have been used.  Great place to find interesting examples.\n\n-- \nGregory (Greg) L. Snow Ph.D.\nStatistical Data Center\nIntermountain Healthcare\ngreg.snow at imail.org\n801.408.8111\n\n\n> -----Original Message-----\n> From: r-sig-teaching-bounces at r-project.org [mailto:r-sig-teaching-\n> bounces at r-project.org] On Behalf Of Christophe Genolini\n> Sent: Wednesday, June 23, 2010 12:09 PM\n> To: r-sig-teaching at r-project.org\n> Subject: [R-sig-teaching] Statistics are SO boring...\n> \n> Hi the list,\n> \n> As a statistics teacher, I teach to NOT-scientists student, public that\n> it is permanently necessary to motivate. I am thus in search of\n> examples\n> both scientific and playful to illustrate my courses. It is not always\n> easy to find. As other teacher might be in the same case, I say to\n> myself that we could maybe share our 'best' examples?\n> \n> So I start: a social psychologist (Nicolas Gueguen, article here\n> http://nicolas.gueguen.free.fr/index.html) has establishes that if we\n> approach a perfect unknown lady on a beach and we ask for its phone\n> number, we have 9 % of chance to obtain it. If we call her by touching\n> her slightly on the front arm, we have 19 % (!!!) of chances to obtain\n> it (test of chi2, p < 0.01). Surprising, isn't it?\n> \n> So what are your 'best examples' ?\n> \n> Christophe Genolini\n> \n> --\n> -----------------------------------------\n> Christophe Genolini\n> Maitre de conférences\n> INSERM U669, Equipe Biostatistiques\n> UFR STAPS, Université de Paris Ouest-Nanterre-La Défense\n> Web: http:\\\\christophe.genolini.free.fr\n> \n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
       "body_snippet": "I use a card trick to teach hypothesis testing, I have 3 students each come and do a \"random\" draw from my deck of CArdboard Randomization Devices (CARDs) and they tend to be a little surprised when e",
       "thread_id": "thread-35cf6efd95ea",
       "thread_depth": 1,
-      "month": "2010-06"
+      "month": "2010-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q2/000255.html"
     }
   ],
   "threads": [

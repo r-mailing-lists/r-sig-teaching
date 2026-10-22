@@ -17,7 +17,8 @@
       "body_snippet": "I will have a blind student in my AP Statistics class this year.\n\nI'm thinking about using R as his calculator. It seems like it's core text-in text-out nature may match screen reading software well. ",
       "thread_id": "thread-55f3213d74ee",
       "thread_depth": 0,
-      "month": "2012-08"
+      "month": "2012-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q3/000467.html"
     },
     {
       "id": "msg-f4941aca9004",
@@ -35,7 +36,8 @@
       "body_snippet": "There is a BrailleR package on CRAN that may be of use.  It looks like\nit is very much a work in progress but may be helpful.  You could also\ncontact the author of the package to see what they suggest",
       "thread_id": "thread-55f3213d74ee",
       "thread_depth": 1,
-      "month": "2012-08"
+      "month": "2012-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q3/000468.html"
     },
     {
       "id": "msg-e27dfc44cb09",
@@ -51,7 +53,8 @@
       "body_snippet": "My summer students and I have created a series of files to help describe how to undertake analyses introduced as examples in the Second Edition of the Statistical Sleuth: A Course in Methods of Data A",
       "thread_id": "thread-e27dfc44cb09",
       "thread_depth": 0,
-      "month": "2012-08"
+      "month": "2012-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q3/000469.html"
     },
     {
       "id": "msg-e7863bc11665",
@@ -70,6 +73,7 @@
       "thread_id": "thread-e27dfc44cb09",
       "thread_depth": 1,
       "month": "2012-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q3/000470.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120812/77ee6232/attachment.pl"
       ]
@@ -90,7 +94,8 @@
       "body_snippet": "+1\n\nWayne Smith, Ph.D.\nDepartment of Management\nCSU Northridge\n\nOn 8/13/2012 3:00 AM, r-sig-teaching-request at r-project.org wrote:\n> Send R-sig-teaching mailing list submissions to\n> \tr-sig-teaching",
       "thread_id": "thread-e870a636391d",
       "thread_depth": 0,
-      "month": "2012-08"
+      "month": "2012-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q3/000471.html"
     },
     {
       "id": "msg-1e3087f1f0f5",
@@ -106,7 +111,8 @@
       "body_snippet": "",
       "thread_id": "thread-1e3087f1f0f5",
       "thread_depth": 0,
-      "month": "2012-08"
+      "month": "2012-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q3/000472.html"
     },
     {
       "id": "msg-b3874bb0f50b",
@@ -124,7 +130,8 @@
       "body_snippet": "cgenolin <cgenolin <at> u-paris10.fr> writes:\n\n> \n> \n> Hi the list, \n> \n> I am looking for some exercices for a PhD student\n> that start to learn R. He already \"read\" some tutorial, but now he needs\n>",
       "thread_id": "thread-b3874bb0f50b",
       "thread_depth": 0,
-      "month": "2012-08"
+      "month": "2012-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q3/000473.html"
     },
     {
       "id": "msg-35ef9d13da0e",
@@ -143,7 +150,8 @@
       "body_snippet": "You could have him work through Norman Matloff's book, \"The Art of R \nProgramming\" which covers the things you list.\n\nRob\n\n\nOn 8/18/2012 3:47 PM, nf grinberg wrote:\n> cgenolin <cgenolin <at> u-paris10",
       "thread_id": "thread-b3874bb0f50b",
       "thread_depth": 1,
-      "month": "2012-08"
+      "month": "2012-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q3/000474.html"
     },
     {
       "id": "msg-b77cacd51917",
@@ -163,7 +171,8 @@
       "body_snippet": "Matloff's book is very good, but  a critical shortcoming is that it does \nnot include exercises, so it may not meet the stated requirements.\n\n\nOn 8/20/2012 12:30 PM, Robert Baer wrote:\n> You could hav",
       "thread_id": "thread-b3874bb0f50b",
       "thread_depth": 2,
-      "month": "2012-08"
+      "month": "2012-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q3/000475.html"
     },
     {
       "id": "msg-40bdaee57fb3",
@@ -184,7 +193,8 @@
       "body_snippet": "On 8/20/2012 11:37 AM, Jeff Laux wrote:\n> Matloff's book is very good, but  a critical shortcoming is that it \n> does not include exercises, so it may not meet the stated requirements.\nPoint well take",
       "thread_id": "thread-b3874bb0f50b",
       "thread_depth": 3,
-      "month": "2012-08"
+      "month": "2012-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q3/000476.html"
     },
     {
       "id": "msg-30c3a36c4f22",
@@ -206,7 +216,8 @@
       "body_snippet": "I agree with you, and I really don't want to get into an argument over \nthe email list, but note that it can be difficult to follow along with \nMatloff's examples because the data he's using aren't po",
       "thread_id": "thread-b3874bb0f50b",
       "thread_depth": 4,
-      "month": "2012-08"
+      "month": "2012-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q3/000477.html"
     },
     {
       "id": "msg-8b0c8d2d5f60",
@@ -229,7 +240,8 @@
       "body_snippet": "On Mon, Aug 20, 2012 at 1:10 PM, Jeff Laux <jefflaux at gmail.com> wrote:\n> I agree with you, and I really don't want to get into an argument over the\n> email list, but note that it can be difficult t",
       "thread_id": "thread-b3874bb0f50b",
       "thread_depth": 5,
-      "month": "2012-08"
+      "month": "2012-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q3/000478.html"
     },
     {
       "id": "msg-a541e6cb2c57",
@@ -253,7 +265,8 @@
       "body_snippet": "Thanks!  So they are \n(http://nostarch.com/download/code/artofr_data.zip).  In which case, the \nbook may be a better fit for this situation.\n\n\nOn 8/20/2012 1:28 PM, Gabor Grothendieck wrote:\n> On Mon,",
       "thread_id": "thread-b3874bb0f50b",
       "thread_depth": 6,
-      "month": "2012-08"
+      "month": "2012-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q3/000479.html"
     },
     {
       "id": "msg-12814146f471",
@@ -270,6 +283,7 @@
       "thread_id": "thread-12814146f471",
       "thread_depth": 0,
       "month": "2012-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q3/000480.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120829/be13929b/attachment.pl"
       ]

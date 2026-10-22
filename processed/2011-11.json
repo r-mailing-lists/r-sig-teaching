@@ -17,7 +17,8 @@
       "body_snippet": "What regression textbooks are you using in stat courses that introduce\nregression?  I'm looking for something with approximately the same\nintended scope as Cohen, Cohen, West and Aiken, Applied Multip",
       "thread_id": "thread-38c785691409",
       "thread_depth": 0,
-      "month": "2011-11"
+      "month": "2011-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q4/000388.html"
     },
     {
       "id": "msg-e774b1ca173e",
@@ -36,6 +37,7 @@
       "thread_id": "thread-38c785691409",
       "thread_depth": 1,
       "month": "2011-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q4/000389.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20111122/fe97609c/attachment.pl"
       ]
@@ -58,6 +60,7 @@
       "thread_id": "thread-38c785691409",
       "thread_depth": 2,
       "month": "2011-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q4/000390.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20111122/6e2e7c22/attachment.pl"
       ]
@@ -78,7 +81,8 @@
       "body_snippet": "In my view there is no better book for regression (including\ninteractions, categorical variables, and elementary GLMs) than Jeffrey\nWooldridge (2008), Introductory Econometrics: A Modern Approach, 4th",
       "thread_id": "thread-38c785691409",
       "thread_depth": 1,
-      "month": "2011-11"
+      "month": "2011-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q4/000391.html"
     }
   ],
   "threads": [

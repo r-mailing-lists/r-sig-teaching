@@ -18,6 +18,7 @@
       "thread_id": "thread-65cf4ad64b5b",
       "thread_depth": 0,
       "month": "2013-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q2/000554.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130508/6bf8dc07/attachment.pl"
       ]
@@ -38,7 +39,8 @@
       "body_snippet": "You may want to try the curve function.  For example:\n\ncurve(x^2,-1,1,xlim=c(-3,5),ylim=c(0,9))\n curve(x^2,2,3,add=TRUE)\n\nTodd Mattson\nDeVry University\n\n-----Original Message-----\nFrom: r-sig-teaching",
       "thread_id": "thread-65cf4ad64b5b",
       "thread_depth": 1,
-      "month": "2013-05"
+      "month": "2013-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q2/000555.html"
     },
     {
       "id": "msg-f1cdfbe74d8f",
@@ -56,7 +58,8 @@
       "body_snippet": "Here's the start of a function. I'll leave it to you to do it better\n(it should probably also use S4 methods, but that's another project):\n\ninterval <- function(lower = -Inf, upper = Inf, lower_closed",
       "thread_id": "thread-65cf4ad64b5b",
       "thread_depth": 1,
-      "month": "2013-05"
+      "month": "2013-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q2/000556.html"
     },
     {
       "id": "msg-50e0abd63340",
@@ -73,6 +76,7 @@
       "thread_id": "thread-65cf4ad64b5b",
       "thread_depth": 2,
       "month": "2013-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q2/000557.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130509/de9fae0e/attachment.pl"
       ]
@@ -94,6 +98,7 @@
       "thread_id": "thread-65cf4ad64b5b",
       "thread_depth": 3,
       "month": "2013-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q2/000558.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130509/500e8748/attachment.pl"
       ]
@@ -114,7 +119,8 @@
       "body_snippet": "On Wed, May 8, 2013 at 7:10 AM, Yahoo! <aboueiss at yahoo.com> wrote:\n> Dear All:\n>\n> It seems a very silly question. But I never tried it before. I am teaching a college algebra class this summer.\n>\n",
       "thread_id": "thread-65cf4ad64b5b",
       "thread_depth": 1,
-      "month": "2013-05"
+      "month": "2013-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q2/000559.html"
     },
     {
       "id": "msg-047c667fa82b",
@@ -133,6 +139,7 @@
       "thread_id": "thread-65cf4ad64b5b",
       "thread_depth": 3,
       "month": "2013-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q2/000560.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130509/b44c9097/attachment.pl"
       ]

@@ -19,7 +19,8 @@
       "body_snippet": "Hello\nA bit late to the party..\n\n\nOn Thu, Apr 19, 2012 at 4:47 AM, Christopher W Ryan\n<cryan at binghamton.edu> wrote:\n> Now I have to put my money where my mouth is. I've offered to visit a\n> high sc",
       "thread_id": "thread-2ae9808dc938",
       "thread_depth": 0,
-      "month": "2012-05"
+      "month": "2012-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000460.html"
     },
     {
       "id": "msg-b56f7f36ed1e",
@@ -36,6 +37,7 @@
       "thread_id": "thread-b56f7f36ed1e",
       "thread_depth": 0,
       "month": "2012-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000461.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120506/5a7d4837/attachment.pl"
       ]
@@ -55,6 +57,7 @@
       "thread_id": "thread-50268c990c75",
       "thread_depth": 0,
       "month": "2012-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000462.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120507/6c57d944/attachment.pl"
       ]
@@ -73,7 +76,8 @@
       "body_snippet": "Dear Manuel,\n\nI run an introductory stats course using R and online services using this:\nhttp://www.wessa.net/rfc.wasp\n\nMy whole course is managed within this interface.\n\nThe platform was developed by",
       "thread_id": "thread-5cd54eba2a9f",
       "thread_depth": 0,
-      "month": "2012-05"
+      "month": "2012-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000463.html"
     }
   ],
   "threads": [

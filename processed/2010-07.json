@@ -18,6 +18,7 @@
       "thread_id": "thread-f6d421e4a9f6",
       "thread_depth": 0,
       "month": "2010-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000256.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100713/0217d57a/attachment.pl"
       ]
@@ -38,7 +39,8 @@
       "body_snippet": "Well the correct answer from a frequentist perspective is that the probability is either 0 or 1, but there is not enough information to tell which one (actually for question 2 it is possible that the ",
       "thread_id": "thread-f6d421e4a9f6",
       "thread_depth": 1,
-      "month": "2010-07"
+      "month": "2010-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000257.html"
     },
     {
       "id": "msg-f71eb502dd71",
@@ -57,7 +59,8 @@
       "body_snippet": "I would go further and hypothesize that the exam writer (and  \ninstructor?) does not understand the interpretation of a p-value.  \nBoth questions are misleading and impossible to answer without  \nreje",
       "thread_id": "thread-f6d421e4a9f6",
       "thread_depth": 2,
-      "month": "2010-07"
+      "month": "2010-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000258.html"
     },
     {
       "id": "msg-1755d1e57f19",
@@ -75,7 +78,8 @@
       "body_snippet": "I hypothesize that the person who wrote question (1) expects the\nstudent to compute the sample mean (71.55) and se (2.06), assume that\nthe sample mean is normally distributed with that mean and sd, an",
       "thread_id": "thread-f6d421e4a9f6",
       "thread_depth": 1,
-      "month": "2010-07"
+      "month": "2010-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000259.html"
     },
     {
       "id": "msg-97552b198aee",
@@ -92,6 +96,7 @@
       "thread_id": "thread-97552b198aee",
       "thread_depth": 0,
       "month": "2010-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000260.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100716/060d0f9a/attachment.pl"
       ]

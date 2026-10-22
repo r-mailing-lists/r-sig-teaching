@@ -18,6 +18,7 @@
       "thread_id": "thread-00abdfb31692",
       "thread_depth": 0,
       "month": "2009-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000130.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090506/2f953794/attachment.pl"
       ]
@@ -39,6 +40,7 @@
       "thread_id": "thread-00abdfb31692",
       "thread_depth": 1,
       "month": "2009-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000131.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090506/1800f24d/attachment.pl"
       ]
@@ -67,7 +69,8 @@
       "body_snippet": "I'm putting together an R tutorial and wanted to give a few, in class,  \npractice problems to the students. I'd like to have some very basic  \nones (since they will be done in class) on things like:\n\n",
       "thread_id": "thread-dc6fb1da9e31",
       "thread_depth": 0,
-      "month": "2009-05"
+      "month": "2009-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000132.html"
     },
     {
       "id": "msg-c2857a74c16f",
@@ -95,6 +98,7 @@
       "thread_id": "thread-dc6fb1da9e31",
       "thread_depth": 1,
       "month": "2009-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000133.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090507/e9f70d74/attachment.pl"
       ]
@@ -124,7 +128,8 @@
       "body_snippet": "You might want to have a look at the slides from my stat computing and\ngraphics class - http://had.co.nz/stat405.  They are plenty of small\nexercises interleaved throughout the content.\n\nHadley\n\nOn Th",
       "thread_id": "thread-dc6fb1da9e31",
       "thread_depth": 1,
-      "month": "2009-05"
+      "month": "2009-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000134.html"
     },
     {
       "id": "msg-d8521e9a6064",
@@ -140,7 +145,8 @@
       "body_snippet": "Hi,\ni am looking for literature (ebook, howto, websites..) that explains how\nto make best effort out of R in physics.\n\nI found a lot of documentation about R in finance, and biology but the\ncommands o",
       "thread_id": "thread-d8521e9a6064",
       "thread_depth": 0,
-      "month": "2009-05"
+      "month": "2009-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000135.html"
     },
     {
       "id": "msg-140eb31057e5",
@@ -158,7 +164,8 @@
       "body_snippet": "Hello,\n\nOn Fri, May 8, 2009 at 2:58 PM, Jonas Stein <news at jonasstein.de> wrote:\n> i am looking for literature (ebook, howto, websites..) that explains how\n> to make best effort out of R in physics.",
       "thread_id": "thread-d8521e9a6064",
       "thread_depth": 1,
-      "month": "2009-05"
+      "month": "2009-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000136.html"
     },
     {
       "id": "msg-61464efcde3e",
@@ -175,6 +182,7 @@
       "thread_id": "thread-61464efcde3e",
       "thread_depth": 0,
       "month": "2009-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000137.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090511/36d4f9a1/attachment.pl"
       ]
@@ -193,7 +201,8 @@
       "body_snippet": "Hi\n\n\nI am trying R and more particulary the cox model\nWith the same data base, I get a hazard ratio (5.82) that is not the \nsame obtained with stata\n\nAttached the file leukemia.dta\n\nHere are the codes",
       "thread_id": "thread-84efdaf387be",
       "thread_depth": 0,
-      "month": "2009-05"
+      "month": "2009-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000138.html"
     },
     {
       "id": "msg-9df94153f03b",
@@ -210,6 +219,7 @@
       "thread_id": "thread-9df94153f03b",
       "thread_depth": 0,
       "month": "2009-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000139.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090521/ab2a5d01/attachment.pl"
       ]
@@ -230,7 +240,8 @@
       "body_snippet": "Hi Prasun,\nI wrote a short guide for my students that you can download from my\nwebsite at http://www.realpsychresearch.org/sites/default/files/PCwithR.pdf\n\nIt's a very rudimentary introduction, but it",
       "thread_id": "thread-9df94153f03b",
       "thread_depth": 1,
-      "month": "2009-05"
+      "month": "2009-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q2/000140.html"
     }
   ],
   "threads": [

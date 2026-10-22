@@ -17,7 +17,8 @@
       "body_snippet": "I've written a short article on my experiences with teaching R to\ncomputational biology graduate students:\n\nhttp://www.ploscompbiol.org/doi/pcbi.1000482\n\nMy lecture notes are available as supplementar",
       "thread_id": "thread-551f9755e1c2",
       "thread_depth": 0,
-      "month": "2009-09"
+      "month": "2009-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000197.html"
     },
     {
       "id": "msg-59ed545f52e8",
@@ -34,6 +35,7 @@
       "thread_id": "thread-59ed545f52e8",
       "thread_depth": 0,
       "month": "2009-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000198.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090902/8ff5dd60/attachment.pl"
       ]
@@ -54,7 +56,8 @@
       "body_snippet": "I am looking for information on experimentation with the use\nof R in the teaching of statistics and science in schools.  Any\nleads would be very welcome.\nJohn.\n\nJohn Maindonald             email: john",
       "thread_id": "thread-dc0d565d4618",
       "thread_depth": 0,
-      "month": "2009-09"
+      "month": "2009-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000199.html"
     },
     {
       "id": "msg-fbf694bc7f56",
@@ -70,7 +73,8 @@
       "body_snippet": "I am looking for information on experimentation with the use\nof R in the teaching of statistics and science in schools.  Any\nleads would be very welcome.  I am certain that there is such\nexperimentati",
       "thread_id": "thread-fbf694bc7f56",
       "thread_depth": 0,
-      "month": "2009-09"
+      "month": "2009-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000200.html"
     },
     {
       "id": "msg-bb9f3f0d878d",
@@ -89,6 +93,7 @@
       "thread_id": "thread-bb9f3f0d878d",
       "thread_depth": 0,
       "month": "2009-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000201.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090919/c4bb1407/attachment.pl"
       ]
@@ -109,7 +114,8 @@
       "body_snippet": "John,\n\n>I am looking for information on experimentation with the use\n>of R in the teaching of statistics and science in schools.  Any\n>leads would be very welcome.  I am certain that there is such\n>ex",
       "thread_id": "thread-552a240f7a7c",
       "thread_depth": 0,
-      "month": "2009-09"
+      "month": "2009-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000202.html"
     },
     {
       "id": "msg-3ee032898f3f",
@@ -127,7 +133,8 @@
       "body_snippet": "By \"school\", I mean pre-University.  Here in Australia, maybe\nyears 11 and 12, perhaps age 10.  Most pupils start at age 5.\nJohn.\n\nJohn Maindonald             email: john.maindonald at anu.edu.au\nphon",
       "thread_id": "thread-3ee032898f3f",
       "thread_depth": 0,
-      "month": "2009-09"
+      "month": "2009-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000203.html"
     },
     {
       "id": "msg-057672cfc8ce",
@@ -145,7 +152,8 @@
       "body_snippet": ">By \"school\", I mean pre-University.  Here in Australia, maybe\n>years 11 and 12, perhaps age 10.  Most pupils start at age 5.\n>John.\n\nOK, so I'm of no help there. The only pre-University level\nexemple",
       "thread_id": "thread-057672cfc8ce",
       "thread_depth": 0,
-      "month": "2009-09"
+      "month": "2009-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000204.html"
     }
   ],
   "threads": [

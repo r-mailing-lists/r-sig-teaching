@@ -17,7 +17,8 @@
       "body_snippet": "Dear All:\n\nI am teaching a regression class. I am wondering if the *Coefficient of\nPartial Determination* in multiple linear regression can be computed in R.\nIf so, could you please let me know how?\n\n",
       "thread_id": "thread-ea90241c9d29",
       "thread_depth": 0,
-      "month": "2017-03"
+      "month": "2017-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q1/000755.html"
     },
     {
       "id": "msg-f61c8008f957",
@@ -33,7 +34,8 @@
       "body_snippet": "Dear All: goods morning\n\nSorry if this topic does not match with the r-sig-teaching group.\n\n\nIs there is a way to reverse the scoring of the first three columns x1, x2,\nand x3 and keep the original sc",
       "thread_id": "thread-f61c8008f957",
       "thread_depth": 0,
-      "month": "2017-03"
+      "month": "2017-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q1/000756.html"
     },
     {
       "id": "msg-e8ebcc64b2b0",
@@ -51,7 +53,8 @@
       "body_snippet": "If your data frame is called df then you can reverse the scoring by doing df$x1 =  rev(df$x1).\n\nTo do multiple columns, you can do:\n\ndf[ , paste0(?x?,1:3)] = lapply(df[ , paste0(?x?,1:3)], rev)\n\n> On ",
       "thread_id": "thread-f61c8008f957",
       "thread_depth": 1,
-      "month": "2017-03"
+      "month": "2017-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q1/000757.html"
     },
     {
       "id": "msg-e32ae12d530c",
@@ -67,7 +70,8 @@
       "body_snippet": "Joel Schwartz wrote:\n\nCc: r-sig-teaching at r-project.org\nSubject: Re: [R-sig-teaching] Reverse the scoring of some Columns of a\n\tData\tSet\nMessage-ID: <05A396B0-2AD4-4AD1-A27A-A9F9730BFC59 at joelschw",
       "thread_id": "thread-e32ae12d530c",
       "thread_depth": 0,
-      "month": "2017-03"
+      "month": "2017-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q1/000758.html"
     },
     {
       "id": "msg-8b21de831e37",
@@ -85,7 +89,8 @@
       "body_snippet": "On 3/16/2017 9:04 AM, Nicholas Horton wrote:\n> Joel Schwartz wrote:\n>\n> Cc: r-sig-teaching at r-project.org\n> Subject: Re: [R-sig-teaching] Reverse the scoring of some Columns of a\n> \tData\tSet\n> Messa",
       "thread_id": "thread-e32ae12d530c",
       "thread_depth": 1,
-      "month": "2017-03"
+      "month": "2017-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q1/000759.html"
     }
   ],
   "threads": [

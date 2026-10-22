@@ -18,6 +18,7 @@
       "thread_id": "thread-7ce87a78fd39",
       "thread_depth": 0,
       "month": "2010-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q2/000233.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100423/5587875c/attachment.pl"
       ]
@@ -37,6 +38,7 @@
       "thread_id": "thread-11fc4ba37050",
       "thread_depth": 0,
       "month": "2010-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q2/000234.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100423/0a5d1d6d/attachment.pl"
       ]
@@ -56,6 +58,7 @@
       "thread_id": "thread-ff3370a5fb1d",
       "thread_depth": 0,
       "month": "2010-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q2/000235.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100428/97fc4adf/attachment.pl"
       ]
@@ -76,7 +79,8 @@
       "body_snippet": "Here's a good exposition on the topics:\n\nhttp://cran.r-project.org/doc/contrib/Ricci-distributions-en.pdf\n\nHope it helps.\n\nRegards,\n\nChi Yau\nhttp://r-tutor.com\n\n\n\nr-sig-teaching-request at r-project.o",
       "thread_id": "thread-ca965d9d0478",
       "thread_depth": 0,
-      "month": "2010-04"
+      "month": "2010-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q2/000236.html"
     }
   ],
   "threads": [

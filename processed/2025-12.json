@@ -29,7 +29,8 @@
       "body_snippet": "Dear colleagues,\n\nTransmitting Science is offering a new edition of the course \"Host and \nmanage your R projects with Git & GitHub\"\n\nCourse webpage: \nhttps://www.transmittingscience.com/courses/statis",
       "thread_id": "thread-57a193ff8bc3",
       "thread_depth": 0,
-      "month": "2025-12"
+      "month": "2025-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2025q4/000881.html"
     },
     {
       "id": "msg-919aa7725331",
@@ -55,7 +56,8 @@
       "body_snippet": "Dear colleagues,\n\nTransmitting Science is offering a new edition of the course \n\"Introduction to Machine Learning in R\".\n\nCourse webpage: \nhttps://www.transmittingscience.com/courses/statistics-and-bi",
       "thread_id": "thread-919aa7725331",
       "thread_depth": 0,
-      "month": "2025-12"
+      "month": "2025-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2025q4/000882.html"
     },
     {
       "id": "msg-5749b9f67f32",
@@ -75,7 +77,8 @@
       "body_snippet": "Dear colleagues,\n\nTransmitting Science is happy to announce a new edition of the course \n\"Statistical Analyses with R\".\n\nCourse webpage: \nhttps://www.transmittingscience.com/courses/statistics-and-bio",
       "thread_id": "thread-5749b9f67f32",
       "thread_depth": 0,
-      "month": "2025-12"
+      "month": "2025-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2025q4/000883.html"
     }
   ],
   "threads": [

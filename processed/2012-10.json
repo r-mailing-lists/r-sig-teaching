@@ -18,6 +18,7 @@
       "thread_id": "thread-ae8e074762e3",
       "thread_depth": 0,
       "month": "2012-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q4/000483.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121003/ae97dfe0/attachment.pl"
       ]
@@ -39,6 +40,7 @@
       "thread_id": "thread-ae8e074762e3",
       "thread_depth": 1,
       "month": "2012-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q4/000484.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121003/66daece1/attachment.pl"
       ]
@@ -59,7 +61,8 @@
       "body_snippet": "There appears to be a little mistake in your code\n\nOn Wed, Oct 3, 2012 at 3:57 PM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:\n> Dear All:\n> I have two variables:\n> X (nominal categorical) has 9 categ",
       "thread_id": "thread-ae8e074762e3",
       "thread_depth": 1,
-      "month": "2012-10"
+      "month": "2012-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q4/000485.html"
     },
     {
       "id": "msg-f099780a5694",
@@ -78,6 +81,7 @@
       "thread_id": "thread-ae8e074762e3",
       "thread_depth": 1,
       "month": "2012-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q4/000486.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121004/aae1f1aa/attachment.pl"
       ]
@@ -100,6 +104,7 @@
       "thread_id": "thread-ae8e074762e3",
       "thread_depth": 2,
       "month": "2012-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q4/000487.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121004/ea5184a6/attachment.pl"
       ]
@@ -118,7 +123,8 @@
       "body_snippet": "Hello, I am teaching a course called \"Corporate Risk Management\" next\nsemester for masters-level students (possibly executives).  It meets\nfor fours hours on Friday evenings and Saturday mornings...so",
       "thread_id": "thread-4022936979c7",
       "thread_depth": 0,
-      "month": "2012-10"
+      "month": "2012-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q4/000488.html"
     },
     {
       "id": "msg-1939b87b1c8f",
@@ -135,6 +141,7 @@
       "thread_id": "thread-1939b87b1c8f",
       "thread_depth": 0,
       "month": "2012-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q4/000489.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121025/dc9900bd/attachment.pl"
       ]
@@ -151,11 +158,12 @@
       "references": [
         "<1351182729.48217.YahooMailClassic@web120606.mail.ne1.yahoo.com>"
       ],
-      "body_plain": "did you load the package?\nlibrary(season)\n?season\nworks for me,\n\n\n_________________________________\nLic. Mar?a Gabriela Cendoya\nMg. Sc. Biometr?a\nProf. Adjunto\nC?tedra de Estad?stica y Dise?o\nFacultad de Ciencias Agrarias\nUNMdP - Argentina\n_________________________________\n\nEl 25/10/2012 01:32 p.m., Yahoo! Mail Classic escribi?:\n> Dear R Users:\n>\n>\n>\n>\n> I am teaching regression and forecasting class. I installed the season\n> package, and I am trying to use it to get a graph of some data, but it\n> says could not find function season\n>\n>\n> Any helps that make it work will be appreciated.\n>\n> many thanks\n> abou\n>\n>\n>\n> ========================\n>\n> AbouEl-Makarim Aboueissa\n>\n> Sozan Elsalakawy\n>\n> Mohamed Agamia\n>\n>\n>\n> 246 Auburn Street, #158\n>\n> Portland, ME 04103\n>\n> USA\n>\n>\n>\n> Tel: (207) 797-2724\n>\n> Email: aboueiss at yahoo.com\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n___________________________________________________________________________\n\nAviso:\n=====\n\nEl contenido del presente e-mail y sus posibles adjuntos pertenecen al INTA y pueden contener informaci?n confidencial. Si usted no es el destinatario original de este mensaje y por este medio pudo acceder a dicha informaci?n, por favor solicitamos contactar al remitente y eliminar el mensaje de inmediato. Se encuentra prohibida la divulgaci?n, copia, distribuci?n o cualquier otro uso de la informaci?n contenida en el presente e-mail por parte de personas distintas al destinatario. \n\n\nThis e-mail contents and its possible attachments belong to INTA and may contain confidential information. If this message was not originally addressed to you, but you have accessed to such information by this means, please contact the sender and eliminate this message immediately. Circulation, copy, distribution, or any other use of the information contained in this e-mail is not allowed on part of those different from the addressee.\n\n\nAntes de imprimir este mensaje, aseg?rese de que sea necesario. Proteger el medio ambiente est? tambi?n en su mano.",
-      "body_snippet": "did you load the package?\nlibrary(season)\n?season\nworks for me,\n\n\n_________________________________\nLic. Mar?a Gabriela Cendoya\nMg. Sc. Biometr?a\nProf. Adjunto\nC?tedra de Estad?stica y Dise?o\nFacultad",
+      "body_plain": "did you load the package?\nlibrary(season)\n?season\nworks for me,\n\n\n_________________________________\nLic. María Gabriela Cendoya\nMg. Sc. Biometría\nProf. Adjunto\nCátedra de Estadística y Diseño\nFacultad de Ciencias Agrarias\nUNMdP - Argentina\n_________________________________\n\nEl 25/10/2012 01:32 p.m., Yahoo! Mail Classic escribió:\n> Dear R Users:\n>\n>\n>\n>\n> I am teaching regression and forecasting class. I installed the season\n> package, and I am trying to use it to get a graph of some data, but it\n> says could not find function season\n>\n>\n> Any helps that make it work will be appreciated.\n>\n> many thanks\n> abou\n>\n>\n>\n> ========================\n>\n> AbouEl-Makarim Aboueissa\n>\n> Sozan Elsalakawy\n>\n> Mohamed Agamia\n>\n>\n>\n> 246 Auburn Street, #158\n>\n> Portland, ME 04103\n>\n> USA\n>\n>\n>\n> Tel: (207) 797-2724\n>\n> Email: aboueiss at yahoo.com\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n___________________________________________________________________________\n\nAviso:\n=====\n\nEl contenido del presente e-mail y sus posibles adjuntos pertenecen al INTA y pueden contener información confidencial. Si usted no es el destinatario original de este mensaje y por este medio pudo acceder a dicha información, por favor solicitamos contactar al remitente y eliminar el mensaje de inmediato. Se encuentra prohibida la divulgación, copia, distribución o cualquier otro uso de la información contenida en el presente e-mail por parte de personas distintas al destinatario. \n\n\nThis e-mail contents and its possible attachments belong to INTA and may contain confidential information. If this message was not originally addressed to you, but you have accessed to such information by this means, please contact the sender and eliminate this message immediately. Circulation, copy, distribution, or any other use of the information contained in this e-mail is not allowed on part of those different from the addressee.\n\n\nAntes de imprimir este mensaje, asegúrese de que sea necesario. Proteger el medio ambiente está también en su mano.",
+      "body_snippet": "did you load the package?\nlibrary(season)\n?season\nworks for me,\n\n\n_________________________________\nLic. María Gabriela Cendoya\nMg. Sc. Biometría\nProf. Adjunto\nCátedra de Estadística y Diseño\nFacultad",
       "thread_id": "thread-1939b87b1c8f",
       "thread_depth": 1,
-      "month": "2012-10"
+      "month": "2012-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q4/000490.html"
     }
   ],
   "threads": [

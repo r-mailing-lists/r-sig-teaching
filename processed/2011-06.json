@@ -17,7 +17,8 @@
       "body_snippet": "Dear All R users:\n\nI am teaching a statistical class. Can someone help me to create the attached \ngraph in R. I have other graphs, but once I know how to create this one, I will \nbe able to do other o",
       "thread_id": "thread-9e77040dd45f",
       "thread_depth": 0,
-      "month": "2011-06"
+      "month": "2011-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q2/000374.html"
     },
     {
       "id": "msg-85c4dc7f766f",
@@ -35,7 +36,8 @@
       "body_snippet": "The link did not make it through the mailing list. Can you post it on\nthe web and give us the link?\n\nBest,\nIsta\n\nOn Sun, Jun 5, 2011 at 9:23 AM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:\n> Dear All ",
       "thread_id": "thread-9e77040dd45f",
       "thread_depth": 1,
-      "month": "2011-06"
+      "month": "2011-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q2/000375.html"
     },
     {
       "id": "msg-cee098ad3f70",
@@ -52,6 +54,7 @@
       "thread_id": "thread-cee098ad3f70",
       "thread_depth": 0,
       "month": "2011-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q2/000376.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110625/66df0377/attachment.pl"
       ]
@@ -72,7 +75,8 @@
       "body_snippet": "Hi Francis,\n\nIf you are able to edit the previous workspace, what about adding a\nlocal .Rprofile file?  In that file you could put something like:\n\ncat(\"To see data, input: \\n  > data \\nin the console",
       "thread_id": "thread-cee098ad3f70",
       "thread_depth": 1,
-      "month": "2011-06"
+      "month": "2011-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q2/000377.html"
     },
     {
       "id": "msg-d12d2a0415ef",
@@ -88,7 +92,8 @@
       "body_snippet": "Greetings All,\nI would like to find out which R packages I have on my machine and\ntransfer that set of packages to a new machine.  I have investigated\nthe command 'installed.packages' and got a partia",
       "thread_id": "thread-d12d2a0415ef",
       "thread_depth": 0,
-      "month": "2011-06"
+      "month": "2011-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q2/000378.html"
     },
     {
       "id": "msg-4f0a20f4f821",
@@ -106,7 +111,8 @@
       "body_snippet": "Hi Matt,\nmaybe the library() command would solve your problem.\n\nHowever, I take this opportunity to ask an other question related to \ninstalled packages:\nsome packages are installed because I install.",
       "thread_id": "thread-d12d2a0415ef",
       "thread_depth": 1,
-      "month": "2011-06"
+      "month": "2011-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q2/000379.html"
     },
     {
       "id": "msg-cccaec18b2c5",
@@ -126,6 +132,7 @@
       "thread_id": "thread-d12d2a0415ef",
       "thread_depth": 2,
       "month": "2011-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q2/000380.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110630/5b6a5a05/attachment.pl"
       ]

@@ -19,7 +19,8 @@
       "body_snippet": "I wanted to share some updates on my prior email about illustrated examples of how to fit the case studies from the Second Edition of the \"Statistical Sleuth\" within R.  If you are using this book, or",
       "thread_id": "thread-f5114e917115",
       "thread_depth": 0,
-      "month": "2012-09"
+      "month": "2012-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q3/000481.html"
     },
     {
       "id": "msg-260195ece7c1",
@@ -36,6 +37,7 @@
       "thread_id": "thread-260195ece7c1",
       "thread_depth": 0,
       "month": "2012-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q3/000482.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120915/b4dbb88e/attachment.pl"
       ]

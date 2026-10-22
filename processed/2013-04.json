@@ -18,6 +18,7 @@
       "thread_id": "thread-9073e580f353",
       "thread_depth": 0,
       "month": "2013-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q2/000549.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130412/593f41db/attachment.pl"
       ]
@@ -37,6 +38,7 @@
       "thread_id": "thread-d20addc8f044",
       "thread_depth": 0,
       "month": "2013-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q2/000550.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130414/d2cecb39/attachment.pl"
       ]
@@ -57,7 +59,8 @@
       "body_snippet": "Pray tell, what is a \"negative distribution\"?\n\nTo be a little more helpful, consult the probability chapter in the\nIntroduction to R that comes with the software in both html and pdf\nform to learn whi",
       "thread_id": "thread-d20addc8f044",
       "thread_depth": 1,
-      "month": "2013-04"
+      "month": "2013-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q2/000551.html"
     },
     {
       "id": "msg-48a030e515bf",
@@ -74,6 +77,7 @@
       "thread_id": "thread-48a030e515bf",
       "thread_depth": 0,
       "month": "2013-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q2/000552.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130414/129a2254/attachment.pl"
       ]
@@ -94,7 +98,8 @@
       "body_snippet": "On Apr 14, 2013, at 4:52 PM, Yahoo! <aboueiss at yahoo.com> wrote:\n\n> \n> \n> Dear All: Just fix my previous email.\n> \n> \n> \n> I am trying to show the symmetric and skewed (both left and right) distribu",
       "thread_id": "thread-48a030e515bf",
       "thread_depth": 1,
-      "month": "2013-04"
+      "month": "2013-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q2/000553.html"
     }
   ],
   "threads": [

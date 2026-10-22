@@ -17,7 +17,8 @@
       "body_snippet": "Dear All:\n\nI am trying to solve an equation including an integral for unknown\nparameter.\n\n\nIs this can be done in R? if so, any helps will be highly appreciated\n\n\n\n### The following function is a func",
       "thread_id": "thread-8f2dd716a4f4",
       "thread_depth": 0,
-      "month": "2016-01"
+      "month": "2016-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q1/000684.html"
     }
   ],
   "threads": [

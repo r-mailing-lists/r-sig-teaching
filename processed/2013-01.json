@@ -17,7 +17,8 @@
       "body_snippet": "Some of you may recall that a few months ago I solicited advice and\nopinions on both R-help and R-sig-teaching about an \"introduction to R\"\nworkshop I intended to present to a class of high school stu",
       "thread_id": "thread-d82173715662",
       "thread_depth": 0,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000504.html"
     },
     {
       "id": "msg-8f453a547d91",
@@ -35,7 +36,8 @@
       "body_snippet": "On 1/1/2013 1:09 AM, Christopher W. Ryan wrote:\n>                  -- snip --\n> I conducted an (utterly arbitrary and unvalidated) online survey among\n> the students a couple weeks in advance, to gaug",
       "thread_id": "thread-d82173715662",
       "thread_depth": 1,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000505.html"
     },
     {
       "id": "msg-1436520a2254",
@@ -51,7 +53,8 @@
       "body_snippet": "Hello,\n\nMy first post to the list, and I hope I am not asking for something too cheeky!\n\nI am reasonably new to R, although do have some basic programming\nexperience from years past.\n\nCurrently I am u",
       "thread_id": "thread-1436520a2254",
       "thread_depth": 0,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000506.html"
     },
     {
       "id": "msg-404b90d0135f",
@@ -70,7 +73,8 @@
       "body_snippet": "Thank you for the responses, and apologies for posting to the wrong\nlist. I will reply individualy to those who have offered assistance.\n\nRegards,\nPhill\n\n\nOn 7 January 2013 23:04, James Howard <jh at ",
       "thread_id": "thread-404b90d0135f",
       "thread_depth": 0,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000507.html"
     },
     {
       "id": "msg-8c1bafb5fd43",
@@ -84,11 +88,12 @@
       "references": [
         "<50E28BA4.1050901@binghamton.edu>"
       ],
-      "body_plain": "Dear Chris,\n\nThanks a lot for the detailed report, which I'll keep for reference, and\nforward to a few colleagues. \n\nJust a question/request, for those of us from other countries: what were\nthe ages of the kids? (grades 10-12 does not mean a lot to me, though,\nyes, I could google for it).\n\n\nBest,\n\n\nR.\n\n\n\nOn Tue, 01 Jan 2013 02:09:24 -0500,\"Christopher W. Ryan\" <cryan at binghamton.edu> wrote:\n> Some of you may recall that a few months ago I solicited advice and\n> opinions on both R-help and R-sig-teaching about an \"introduction to R\"\n> workshop I intended to present to a class of high school students\n> enrolled in a 3-year longitudinal science research class.  Well, I did\n> it on 8 October, and thought I'd give some follow-up as to how it went,\n> in case anyone was interested.\n\n> The class consisted of about 20 kids, grades 10-12. Each was at a\n> computer with R installed. It wasn't clear that the students would be\n> able to install packages, given the school's network setup, so I\n> confined my plans to base R. We ran for 5 hours, with about a 40-minute\n> break for lunch. Their science teacher was present for the entire time,\n> and the school's IT person attended about half of it.  They were both\n> very helpful, both in preparation and in execution.\n\n> I conducted an (utterly arbitrary and unvalidated) online survey among\n> the students a couple weeks in advance, to gauge their familiarity with\n> what I called \"technical computing,\" i.e. anything beyond commonplace\n> word-processing, spreadsheets, web surfing, and social media. The\n> questions were:\n\n> 1. What operating systems do you know how to work in? Check all that apply.\n>    Windows 19\n>    Mac OS X 12\n>    Linux 2\n>    others 0\n\n> 2. Do you have a favorite text editor?\n>    Yes 5\n>    No 7\n>    I don't know what a text editor is 7\n\n> 3. Do you use a two-pane file manager?\n>    Yes 1\n>    No 6\n>    I don't know what a two-pane file manager is 12\n\n> 4. Have you written programs in any computer language?\n>    Yes 4\n>    No 11\n>    I don't know 4\n>    (the specific languages cited included Basic, Java, Javascript, Ruby,\n>  C++, Python, MS-DOS command prompt batch files.)\n\n> I had my \"lesson plan\" all laid out in an org-mode file, from which I\n> typed code into an R console projected on the screen. The students\n> followed my steps initially, and then broadened out to some\n> experimentation as the day went on. A couple students were quite skilled\n> at working ahead, while others struggled a bit, but everyone was\n> eventually able to get the desired results.  They were generally very\n> engaged, interactive, and enthusiastic. No one left, except for the odd\n> music lesson here and there.  Overall, we had a lot of fun.\n\n> I tried to go pretty slowly. I prepared much more that we had time to\n> cover. I emphasized graphics. I did not get into inferential statistics\n> or hypothesis testing at all, despite their eagerness to \"do a t-test\"\n> and such. Maybe that will come at a future session, if we do one.\n\n> In general, topics we covered included:\n\n> vectorized mathematics (what I called \"bulk math\")\n> generating sequences\n> (meant to do logical conditions here, but skipped it inadvertantly)\n> drawing random samples\n> different kinds of objects (we limited ourselves to scalars, vectors,\n> dataframes; character, numeric, and factor)\n> levels of measurement: nominal, ordinal, interval/ratio\n> exploring objects: str(), head(), tail(), class(), summary()\n> using in-built data sets provided with R\n> general principles of good data entry and storage, and the virtues of\n> plain text. Went over read.table (I meant to do more with reading data\n> into R, but ran out of time. I sent simple instructions for the foreign\n> package and read.spss() to their teacher after the fact, since up until\n> now they had been using SPSS a lot, and several of their data sets were\n> in that format.)\n> graphs: boxplots, scatterplots, stripcharts, scatterplot matrices, and\n> coplots (they liked that last one a lot).  Also some graphical\n> parameters: type=, main=, sub=, col=, xlim=, ylim=, and pch=\n\n> Comments to teacher over the subsequent couple of days included:\n> \"This should be taught in high school.\" \"I got to see data for the first\n> time in a different way.\" \"I had the most fun when I realized I could\n> play around with the program.\" (Of course, any less-than-positive\n> comments, the students (or their teacher) may have kept to themselves!)\n\n> --Chris Ryan\n> SUNY Upstate Medical University\n> Binghamton Clinical Campus\n\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n-- \nRamon Diaz-Uriarte\nDepartment of Biochemistry\nUniversidad Aut?noma de Madrid\t\nInstituto de Investigaciones Biom?dicas ?Alberto Sols? (UAM-CSIC)\nMadrid\nSpain\n\n\n\nDirecci?n - Address:\n\n  Laboratorio B-25\n  Departamento de Bioqu?mica\n  Facultad de Medicina \n  Universidad Aut?noma de Madrid \n  Arzobispo Morcillo, 4\n  28029 Madrid\n  Spain\n\n  Phone: +34-91-497-2412\n\n  Email: ramon.diaz at iib.uam.es\n         rdiaz02 at gmail.com\n  \t \n  http://ligarto.org/rdiaz",
+      "body_plain": "Dear Chris,\n\nThanks a lot for the detailed report, which I'll keep for reference, and\nforward to a few colleagues. \n\nJust a question/request, for those of us from other countries: what were\nthe ages of the kids? (grades 10-12 does not mean a lot to me, though,\nyes, I could google for it).\n\n\nBest,\n\n\nR.\n\n\n\nOn Tue, 01 Jan 2013 02:09:24 -0500,\"Christopher W. Ryan\" <cryan at binghamton.edu> wrote:\n> Some of you may recall that a few months ago I solicited advice and\n> opinions on both R-help and R-sig-teaching about an \"introduction to R\"\n> workshop I intended to present to a class of high school students\n> enrolled in a 3-year longitudinal science research class.  Well, I did\n> it on 8 October, and thought I'd give some follow-up as to how it went,\n> in case anyone was interested.\n\n> The class consisted of about 20 kids, grades 10-12. Each was at a\n> computer with R installed. It wasn't clear that the students would be\n> able to install packages, given the school's network setup, so I\n> confined my plans to base R. We ran for 5 hours, with about a 40-minute\n> break for lunch. Their science teacher was present for the entire time,\n> and the school's IT person attended about half of it.  They were both\n> very helpful, both in preparation and in execution.\n\n> I conducted an (utterly arbitrary and unvalidated) online survey among\n> the students a couple weeks in advance, to gauge their familiarity with\n> what I called \"technical computing,\" i.e. anything beyond commonplace\n> word-processing, spreadsheets, web surfing, and social media. The\n> questions were:\n\n> 1. What operating systems do you know how to work in? Check all that apply.\n>    Windows 19\n>    Mac OS X 12\n>    Linux 2\n>    others 0\n\n> 2. Do you have a favorite text editor?\n>    Yes 5\n>    No 7\n>    I don't know what a text editor is 7\n\n> 3. Do you use a two-pane file manager?\n>    Yes 1\n>    No 6\n>    I don't know what a two-pane file manager is 12\n\n> 4. Have you written programs in any computer language?\n>    Yes 4\n>    No 11\n>    I don't know 4\n>    (the specific languages cited included Basic, Java, Javascript, Ruby,\n>  C++, Python, MS-DOS command prompt batch files.)\n\n> I had my \"lesson plan\" all laid out in an org-mode file, from which I\n> typed code into an R console projected on the screen. The students\n> followed my steps initially, and then broadened out to some\n> experimentation as the day went on. A couple students were quite skilled\n> at working ahead, while others struggled a bit, but everyone was\n> eventually able to get the desired results.  They were generally very\n> engaged, interactive, and enthusiastic. No one left, except for the odd\n> music lesson here and there.  Overall, we had a lot of fun.\n\n> I tried to go pretty slowly. I prepared much more that we had time to\n> cover. I emphasized graphics. I did not get into inferential statistics\n> or hypothesis testing at all, despite their eagerness to \"do a t-test\"\n> and such. Maybe that will come at a future session, if we do one.\n\n> In general, topics we covered included:\n\n> vectorized mathematics (what I called \"bulk math\")\n> generating sequences\n> (meant to do logical conditions here, but skipped it inadvertantly)\n> drawing random samples\n> different kinds of objects (we limited ourselves to scalars, vectors,\n> dataframes; character, numeric, and factor)\n> levels of measurement: nominal, ordinal, interval/ratio\n> exploring objects: str(), head(), tail(), class(), summary()\n> using in-built data sets provided with R\n> general principles of good data entry and storage, and the virtues of\n> plain text. Went over read.table (I meant to do more with reading data\n> into R, but ran out of time. I sent simple instructions for the foreign\n> package and read.spss() to their teacher after the fact, since up until\n> now they had been using SPSS a lot, and several of their data sets were\n> in that format.)\n> graphs: boxplots, scatterplots, stripcharts, scatterplot matrices, and\n> coplots (they liked that last one a lot).  Also some graphical\n> parameters: type=, main=, sub=, col=, xlim=, ylim=, and pch=\n\n> Comments to teacher over the subsequent couple of days included:\n> \"This should be taught in high school.\" \"I got to see data for the first\n> time in a different way.\" \"I had the most fun when I realized I could\n> play around with the program.\" (Of course, any less-than-positive\n> comments, the students (or their teacher) may have kept to themselves!)\n\n> --Chris Ryan\n> SUNY Upstate Medical University\n> Binghamton Clinical Campus\n\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n-- \nRamon Diaz-Uriarte\nDepartment of Biochemistry\nUniversidad Autónoma de Madrid\t\nInstituto de Investigaciones Biomédicas “Alberto Sols” (UAM-CSIC)\nMadrid\nSpain\n\n\n\nDirección - Address:\n\n  Laboratorio B-25\n  Departamento de Bioquímica\n  Facultad de Medicina \n  Universidad Autónoma de Madrid \n  Arzobispo Morcillo, 4\n  28029 Madrid\n  Spain\n\n  Phone: +34-91-497-2412\n\n  Email: ramon.diaz at iib.uam.es\n         rdiaz02 at gmail.com\n  \t \n  http://ligarto.org/rdiaz",
       "body_snippet": "Dear Chris,\n\nThanks a lot for the detailed report, which I'll keep for reference, and\nforward to a few colleagues. \n\nJust a question/request, for those of us from other countries: what were\nthe ages o",
       "thread_id": "thread-d82173715662",
       "thread_depth": 1,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000508.html"
     },
     {
       "id": "msg-ae640d4a7ebc",
@@ -107,7 +112,8 @@
       "body_snippet": "On 01/08/2013 04:17 AM, Ramon Diaz-Uriarte wrote:\n> Just a question/request, for those of us from other countries: what\n> were the ages of the kids? (grades 10-12 does not mean a lot to me,\n> though, ",
       "thread_id": "thread-d82173715662",
       "thread_depth": 2,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000509.html"
     },
     {
       "id": "msg-3cdce2f24b53",
@@ -127,7 +133,8 @@
       "body_snippet": "Ramon--\n\ngood point, thanks for bringing it up.  And yes, Ulises's range would\nbe about right.\n\nBy the way, about 10 of the students have so far responded to my\npost-workshop survey. Again a very info",
       "thread_id": "thread-d82173715662",
       "thread_depth": 3,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000510.html"
     },
     {
       "id": "msg-4c31cda2ba6e",
@@ -146,6 +153,7 @@
       "thread_id": "thread-4c31cda2ba6e",
       "thread_depth": 0,
       "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000511.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130118/2163532c/attachment.pl"
       ]
@@ -168,6 +176,7 @@
       "thread_id": "thread-4c31cda2ba6e",
       "thread_depth": 1,
       "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000512.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130118/41ff9f6d/attachment.pl"
       ]
@@ -186,7 +195,8 @@
       "body_snippet": "I am one of the people who lobbied for the creation of this list long\nago.  I am not sure R is a great choice for a first course in\nstatistics, but I thought that if someone chose to use it, then they",
       "thread_id": "thread-f076232a6744",
       "thread_depth": 0,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000513.html"
     },
     {
       "id": "msg-a7bd61a5a912",
@@ -205,6 +215,7 @@
       "thread_id": "thread-f076232a6744",
       "thread_depth": 1,
       "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000514.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130118/bc5a23a4/attachment.pl"
       ]
@@ -228,6 +239,7 @@
       "thread_id": "thread-4c31cda2ba6e",
       "thread_depth": 2,
       "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000515.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130118/ef21dd9a/attachment.pl"
       ]
@@ -248,7 +260,8 @@
       "body_snippet": "Hello Bob,\n\nI'm one of those who follow the list mainly out of curiosity, not\nbecause I have any connection with teaching stats.  My goal was to\nkeep an eye out for some of the occasional posts where ",
       "thread_id": "thread-f076232a6744",
       "thread_depth": 1,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000516.html"
     },
     {
       "id": "msg-f322660a00e5",
@@ -265,6 +278,7 @@
       "thread_id": "thread-f322660a00e5",
       "thread_depth": 0,
       "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000517.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130118/37e0fcd8/attachment.pl"
       ]
@@ -286,7 +300,8 @@
       "body_snippet": "On Fri, Jan 18, 2013 at 3:32 PM, Monte Milanuk <memilanuk at gmail.com> wrote:\n> Hello Bob,\n>\n> I'm one of those who follow the list mainly out of curiosity, not\n> because I have any connection with t",
       "thread_id": "thread-f076232a6744",
       "thread_depth": 2,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000518.html"
     },
     {
       "id": "msg-17c11af4b17e",
@@ -304,7 +319,8 @@
       "body_snippet": "Hi Paula,\n\nI havent used R in any research, but I am currently using it in an analytics firm.\n\nThe way I perceive our analysis goes is:\n\nStep 1:Data Standardization:\n[Approx. 70% time invested]\n-Data ",
       "thread_id": "thread-f322660a00e5",
       "thread_depth": 1,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000519.html"
     },
     {
       "id": "msg-8ccf2ca32404",
@@ -322,7 +338,8 @@
       "body_snippet": "Great questions. There is a lot of inertia in switching software. And\nrightfully so, if you feel your current software is doing the job for you.\n\nI think what intimidates many people is writing code. ",
       "thread_id": "thread-f322660a00e5",
       "thread_depth": 1,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000520.html"
     },
     {
       "id": "msg-10e3c46dd09d",
@@ -340,7 +357,8 @@
       "body_snippet": "My experience has been that young faculty come in knowing about, and\noften using R.  Graduate programs in many disciplines (Poli Sci, \nLinguistics,\nBiology,...) are exposing their students to R.  Olde",
       "thread_id": "thread-f322660a00e5",
       "thread_depth": 1,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000521.html"
     },
     {
       "id": "msg-2380b7548f33",
@@ -362,6 +380,7 @@
       "thread_id": "thread-4c31cda2ba6e",
       "thread_depth": 3,
       "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000522.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130118/7e8db71c/attachment.pl"
       ]
@@ -384,7 +403,8 @@
       "body_snippet": "I'd participate actively in an \"R-tutor\" mailing list.\n\n--Chris\n\nChristopher W. Ryan, MD, MS\nSUNY Upstate Medical University Clinical Campus at Binghamton\n425 Robinson Street, Binghamton, NY  13904\ncr",
       "thread_id": "thread-f076232a6744",
       "thread_depth": 3,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000523.html"
     },
     {
       "id": "msg-34059ef362fb",
@@ -405,7 +425,8 @@
       "body_snippet": "I think the kinds of confusions that prompted this discussion are \nnormal, and may not be something to fret over.  That said, I support the \nidea of another appropriate SIG.  However, r-sig-teaching &",
       "thread_id": "thread-f076232a6744",
       "thread_depth": 4,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000524.html"
     },
     {
       "id": "msg-348db4f5c72b",
@@ -422,6 +443,7 @@
       "thread_id": "thread-348db4f5c72b",
       "thread_depth": 0,
       "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000525.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130118/e59b527f/attachment.pl"
       ]
@@ -444,6 +466,7 @@
       "thread_id": "thread-f322660a00e5",
       "thread_depth": 2,
       "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000526.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130118/159f036c/attachment.pl"
       ]
@@ -465,7 +488,8 @@
       "body_snippet": "I'm not sure I would call the list completely unsuitable for your question, but it is borderline.  My main point (also expressed in Bob's reply) is that you might get better answers elsewhere because ",
       "thread_id": "thread-f076232a6744",
       "thread_depth": 2,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000527.html"
     },
     {
       "id": "msg-6b19d544fbc2",
@@ -487,7 +511,8 @@
       "body_snippet": "How about 'r-sig-edu' for Education - should be obvious enough to\nfaculty, teaching staff, etc., and 'r-sig-novice' (or -tutor) which\nwould probably 'jump out' as the obvious choice to a new user tryi",
       "thread_id": "thread-f076232a6744",
       "thread_depth": 5,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000528.html"
     },
     {
       "id": "msg-e3dda2c08864",
@@ -505,7 +530,8 @@
       "body_snippet": "Robert's message provides a nice segue to my previously advertised post regarding the mosaic package.\n\nHere are three things that I think are important in getting R to have wider usage:\n\n1) Having a p",
       "thread_id": "thread-348db4f5c72b",
       "thread_depth": 1,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000529.html"
     },
     {
       "id": "msg-6e947f1d9517",
@@ -521,7 +547,8 @@
       "body_snippet": "I would not expect direct attempts at persuasion to do much but there\nare indirect routes that might work.  If any of these folks are doing\nresearch, they might learn of R if it is recommended by inte",
       "thread_id": "thread-6e947f1d9517",
       "thread_depth": 0,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000530.html"
     },
     {
       "id": "msg-cba51ed0b01d",
@@ -537,7 +564,8 @@
       "body_snippet": "Hello Everyone,\n\nPaula Grafton Young wrote:\n> So, what I would like to hear from some of you at other institutions is what\n> can I do to convince/encourage my colleagues in other departments to adopt\n",
       "thread_id": "thread-cba51ed0b01d",
       "thread_depth": 0,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000531.html"
     },
     {
       "id": "msg-0627eeb568f9",
@@ -553,7 +581,8 @@
       "body_snippet": "I did not choose the current name but I am not sure any of the\nalternatives would be any clearer.  I am also not sure how stray folks\nland here.  To me the page of SIG lists at CRAN seems pretty clear",
       "thread_id": "thread-0627eeb568f9",
       "thread_depth": 0,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000532.html"
     },
     {
       "id": "msg-5dfae0214c72",
@@ -569,7 +598,8 @@
       "body_snippet": "Dear members,\n\nFrench reading people among you might be interested by the following book:\n\nNoel, Y. (2013). Psychologie statistique avec R [Statistical psychology \nwith R, in French], coll. PratiqueR,",
       "thread_id": "thread-5dfae0214c72",
       "thread_depth": 0,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000533.html"
     },
     {
       "id": "msg-3616aaca5eab",
@@ -585,7 +615,8 @@
       "body_snippet": "Knowledgable group,\n\nI am in the process of designing an advanced statistics class for doctoral level clinical psychology students. Their background in basic statistical concepts is OK, but they have ",
       "thread_id": "thread-3616aaca5eab",
       "thread_depth": 0,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000534.html"
     },
     {
       "id": "msg-c0d2838c48a3",
@@ -603,7 +634,8 @@
       "body_snippet": "Brian Everitt's book\n\nAn R and S-Plus Companion to Multivariate Analysis\nhttp://www.springer.com/statistics/social+sciences+%26+law/book/978-1-85233-882-4\n\nhas a number of useful data sets.\n\nMurray\n\nO",
       "thread_id": "thread-3616aaca5eab",
       "thread_depth": 1,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000535.html"
     },
     {
       "id": "msg-97d58bb0db96",
@@ -622,6 +654,7 @@
       "thread_id": "thread-3616aaca5eab",
       "thread_depth": 1,
       "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000536.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130129/4076bb13/attachment.pl"
       ]
@@ -644,6 +677,7 @@
       "thread_id": "thread-3616aaca5eab",
       "thread_depth": 2,
       "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000537.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130130/b9ee567a/attachment.pl"
       ]
@@ -663,6 +697,7 @@
       "thread_id": "thread-2570910eea3b",
       "thread_depth": 0,
       "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000538.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130130/de31fe62/attachment.pl"
       ]
@@ -681,7 +716,8 @@
       "body_snippet": "Just saw a mention of _Handbook of Small Datasets_.  Does anyone know\nif the data files ever got cleaned up and posted on the Internet?  I\nbought this when I came out and the disk included files that ",
       "thread_id": "thread-13632e4928d4",
       "thread_depth": 0,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000539.html"
     },
     {
       "id": "msg-d7ddee19ffd5",
@@ -699,7 +735,8 @@
       "body_snippet": "Yes.  They can be found on NC State's Statistics department's website:\n\n      http://www.stat.ncsu.edu/working_groups/sas/sicl/data/\n\nHowever, the accompanying stories don't exist.  What is posted is ",
       "thread_id": "thread-13632e4928d4",
       "thread_depth": 1,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000540.html"
     },
     {
       "id": "msg-e3977c6fd659",
@@ -718,7 +755,8 @@
       "body_snippet": "That's what the book is for: its purpose is to describe the variables\nand context of each data set. The book 'Data' by Andrews and Herzberg\n(1985) is similar in that respect. As I mentioned to Bob pri",
       "thread_id": "thread-13632e4928d4",
       "thread_depth": 2,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000541.html"
     },
     {
       "id": "msg-c3d27d850f82",
@@ -734,7 +772,8 @@
       "body_snippet": "I just looked at a couple of files at NCSU and they looked like the\noriginal files on the disk supplied with the book.  Has anyone found\nones there that are NOT as originally supplied?  Here is an exa",
       "thread_id": "thread-c3d27d850f82",
       "thread_depth": 0,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000542.html"
     },
     {
       "id": "msg-e1a2d1d56d38",
@@ -750,7 +789,8 @@
       "body_snippet": "The datsets are also available on the publisher's website.  I just\ncompared several files among those, the versions at NCSU, and the\nversion that came on a floppy with the book when it first came out.",
       "thread_id": "thread-e1a2d1d56d38",
       "thread_depth": 0,
-      "month": "2013-01"
+      "month": "2013-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000543.html"
     }
   ],
   "threads": [

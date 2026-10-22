@@ -21,7 +21,8 @@
       "body_snippet": "Hi:\n\nAs promised, I have rolled up a few versions of the files in HDLMO and\nput them in my Dropbox.\n\n(1) Zipped csv form:\nhttps://dl.dropbox.com/u/57587928/csv.zip\n\n(2) Individual R binary objects in ",
       "thread_id": "thread-13c085f18d14",
       "thread_depth": 0,
-      "month": "2013-02"
+      "month": "2013-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000544.html"
     },
     {
       "id": "msg-0a40e4086272",
@@ -39,7 +40,8 @@
       "body_snippet": "> Date: Tue, 29 Jan 2013 13:38:28 -0700\n> From: Allen Cornelius <allencornelius at gmail.com>\n> To: \"r-sig-teaching at r-project.org\" <r-sig-teaching at r-project.org>\n> Subject: [R-sig-teaching] Data",
       "thread_id": "thread-0a40e4086272",
       "thread_depth": 0,
-      "month": "2013-02"
+      "month": "2013-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000545.html"
     },
     {
       "id": "msg-4bab483d345c",
@@ -56,6 +58,7 @@
       "thread_id": "thread-4bab483d345c",
       "thread_depth": 0,
       "month": "2013-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2013q1/000546.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20130208/c4e59564/attachment.pl"
       ]

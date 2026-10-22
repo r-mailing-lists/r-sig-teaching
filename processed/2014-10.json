@@ -17,7 +17,8 @@
       "body_snippet": "Dear All:\n\nI am wondering if I can find R codes (functions) for numerical analysis\nmethods, linear algebra, and differential equations available somewhere.\n\nmany thanks\nsteve\n\n------------------------",
       "thread_id": "thread-a7be5c77cd39",
       "thread_depth": 0,
-      "month": "2014-10"
+      "month": "2014-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2014q4/000574.html"
     },
     {
       "id": "msg-b4136d3eeb71",
@@ -35,7 +36,8 @@
       "body_snippet": "Hi:\n\n1. Victor Bloomfield's book \"Using R for Numerical Analysis in Science\nand Engineering\", published by CRC Press/Chapman and Hall. Links to\nthe code found at the book's web site:\nhttp://www.crcpre",
       "thread_id": "thread-a7be5c77cd39",
       "thread_depth": 1,
-      "month": "2014-10"
+      "month": "2014-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2014q4/000575.html"
     },
     {
       "id": "msg-307b17a50109",
@@ -53,7 +55,8 @@
       "body_snippet": "On 12/10/14 11:31, Steven Stoline wrote:\n> Dear All:\n>\n> I am wondering if I can find R codes (functions) for numerical analysis\n> methods, linear algebra, and differential equations available somewhe",
       "thread_id": "thread-a7be5c77cd39",
       "thread_depth": 1,
-      "month": "2014-10"
+      "month": "2014-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2014q4/000576.html"
     },
     {
       "id": "msg-8939b5e65e51",
@@ -69,7 +72,8 @@
       "body_snippet": "Dear All:\n\nI am wondering if someone can show me how to plot an angles around the\ncenter of a unit circle with x-y vertices added to it.\n\nAlso how to add arrows showing the size and the direction of a",
       "thread_id": "thread-8939b5e65e51",
       "thread_depth": 0,
-      "month": "2014-10"
+      "month": "2014-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2014q4/000577.html"
     },
     {
       "id": "msg-1ef901798820",
@@ -87,7 +91,8 @@
       "body_snippet": "Here is a quickly written and barely tested function.  You might want to\nadd a final position vector,\ncolor, lwd, lty, etc.  It assumes the angle is given in degrees, and checks\nthe sign of the angle ",
       "thread_id": "thread-8939b5e65e51",
       "thread_depth": 1,
-      "month": "2014-10"
+      "month": "2014-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2014q4/000578.html"
     },
     {
       "id": "msg-35412d16a44f",
@@ -106,7 +111,8 @@
       "body_snippet": "Many thanks\n\nit works\n\nSteven\n\nOn Mon, Oct 20, 2014 at 11:17 AM, Albyn Jones <jones at reed.edu> wrote:\n\n> Here is a quickly written and barely tested function.  You might want to\n> add a final positi",
       "thread_id": "thread-8939b5e65e51",
       "thread_depth": 2,
-      "month": "2014-10"
+      "month": "2014-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2014q4/000579.html"
     },
     {
       "id": "msg-a4245f55ba84",
@@ -126,7 +132,8 @@
       "body_snippet": "Dear Jones:\n\nCould you please look to this R code. I am trying to graph both sin(x+pi/6)\nand sin(x) in the same plot to show the shift. I used abline to graph the\nsin(x), but it looked like same as th",
       "thread_id": "thread-8939b5e65e51",
       "thread_depth": 3,
-      "month": "2014-10"
+      "month": "2014-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2014q4/000580.html"
     },
     {
       "id": "msg-6e189dbbd217",
@@ -147,7 +154,8 @@
       "body_snippet": "you want the lines() function, not abline()\n\nalbyn\n\nOn Tue, Oct 21, 2014 at 11:30 AM, Steven Stoline <sstoline at gmail.com> wrote:\n\n> Dear Jones:\n>\n> Could you please look to this R code. I am trying",
       "thread_id": "thread-8939b5e65e51",
       "thread_depth": 4,
-      "month": "2014-10"
+      "month": "2014-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2014q4/000581.html"
     },
     {
       "id": "msg-272955fd508d",
@@ -168,7 +176,8 @@
       "body_snippet": "Steven,\n\nChange\n\nabline(x1,y1, lwd = 3) to lines(x1,y1, lwd = 3) and you'll get the line you're looking for. abline is just for drawing a line with a given slope and intercept. lines is more general.\n",
       "thread_id": "thread-8939b5e65e51",
       "thread_depth": 4,
-      "month": "2014-10"
+      "month": "2014-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2014q4/000582.html"
     }
   ],
   "threads": [

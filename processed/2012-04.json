@@ -23,7 +23,8 @@
       "body_snippet": "Thread,\n\nWhen discussing statistical tests with my students, I emphasize clarity. \nI have noticed that once they clearly define what they mean by \n\"compare,\" the method becomes obvious to them.\n\nIn th",
       "thread_id": "thread-94707c34085c",
       "thread_depth": 0,
-      "month": "2012-04"
+      "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000430.html"
     },
     {
       "id": "msg-15bc7ea31ac2",
@@ -45,6 +46,7 @@
       "thread_id": "thread-15bc7ea31ac2",
       "thread_depth": 0,
       "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000431.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120401/f274d4ed/attachment.pl"
       ]
@@ -64,6 +66,7 @@
       "thread_id": "thread-a9e96f782f64",
       "thread_depth": 0,
       "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000432.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120403/89481ab3/attachment.pl"
       ]
@@ -83,6 +86,7 @@
       "thread_id": "thread-195d7b379ee7",
       "thread_depth": 0,
       "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000433.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120403/3053af47/attachment.pl"
       ]
@@ -103,7 +107,8 @@
       "body_snippet": "Hi,\n\nFor the correlations you just need to understand how matrix indecies work in R:\n\ncor(cbind(x1, x2, x3, y1, y2, y3))[4:6, 1:3]\n\nI'll leave it to you to figure out the p values part.\n\nBest,\nIsta\n\nO",
       "thread_id": "thread-195d7b379ee7",
       "thread_depth": 1,
-      "month": "2012-04"
+      "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000434.html"
     },
     {
       "id": "msg-968cb5ad0baf",
@@ -123,6 +128,7 @@
       "thread_id": "thread-195d7b379ee7",
       "thread_depth": 2,
       "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000435.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120403/e4ee1435/attachment.pl"
       ]
@@ -145,7 +151,8 @@
       "body_snippet": "On Tue, Apr 3, 2012 at 10:24 PM, AbouEl-Makarim Aboueissa\n<aaboueissa at usm.maine.edu> wrote:\n> Hi,\n>\n> I am able to get the correlations as:\n>\n> xxx<-cbind(x1,x2,x3)\n> yyy<-cbind(y1,y2,y3)\n> cor(xxx",
       "thread_id": "thread-195d7b379ee7",
       "thread_depth": 3,
-      "month": "2012-04"
+      "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000436.html"
     },
     {
       "id": "msg-06f3fa5c61bd",
@@ -166,7 +173,8 @@
       "body_snippet": "Dear AbouEl-Makarim Aboueissa,\n\nAs people have pointed out before, if you are interested in how to use R to teach statistics, this is the appropriate mailing list, if you want to learn how to use R, t",
       "thread_id": "thread-195d7b379ee7",
       "thread_depth": 4,
-      "month": "2012-04"
+      "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000437.html"
     },
     {
       "id": "msg-c198829df56e",
@@ -184,7 +192,8 @@
       "body_snippet": "That is really an r-help question, but easy, and I'm busy not\nwriting the lecture I should be writing:\n\nX <- cbind(x1,x2,x3,y1,y2,y3)\ncor(X)[1:3,4:6]\n\nalbyn\n\nOn 4/3/12 4:31 PM, AbouEl-Makarim Aboueiss",
       "thread_id": "thread-a9e96f782f64",
       "thread_depth": 1,
-      "month": "2012-04"
+      "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000438.html"
     },
     {
       "id": "msg-eb8d70c510f7",
@@ -202,7 +211,8 @@
       "body_snippet": "On Wed, Apr 4, 2012 at 1:31 AM, AbouEl-Makarim Aboueissa\n<aaboueissa at usm.maine.edu> wrote:\n> I have another silly question. How I can compute the correlations of two groups of variables. For exampl",
       "thread_id": "thread-a9e96f782f64",
       "thread_depth": 1,
-      "month": "2012-04"
+      "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000439.html"
     },
     {
       "id": "msg-e215f7b57678",
@@ -219,6 +229,7 @@
       "thread_id": "thread-e215f7b57678",
       "thread_depth": 0,
       "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000440.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120410/6f70ef31/attachment.pl"
       ]
@@ -238,6 +249,7 @@
       "thread_id": "thread-23dd97332913",
       "thread_depth": 0,
       "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000441.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120415/4e9a4b4d/attachment.pl"
       ]
@@ -256,7 +268,8 @@
       "body_snippet": "I use the package HH function norm.curve for this. \n\nBob Schumacher\n\n\n>>> Ali Zanaty  04/15/12 11:14 AM >>>\nDear All: \n\n  \n\n\n\nI need a quick help in R. How I can plot plot the distribution of the T te",
       "thread_id": "thread-f3eab08be5e2",
       "thread_depth": 0,
-      "month": "2012-04"
+      "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000442.html"
     },
     {
       "id": "msg-2b73fbc52e4b",
@@ -274,7 +287,8 @@
       "body_snippet": "On Sun, Apr 15, 2012 at 6:26 PM, Bob Schumacher <schumacr at cedarville.edu> wrote:\n> I use the package HH function norm.curve for this.\n>\nSee also the Rcmdr 'Distributions' menu.\n\nLiviu",
       "thread_id": "thread-f3eab08be5e2",
       "thread_depth": 1,
-      "month": "2012-04"
+      "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000443.html"
     },
     {
       "id": "msg-b297363df7e7",
@@ -293,6 +307,7 @@
       "thread_id": "thread-23dd97332913",
       "thread_depth": 1,
       "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000444.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120416/d73671eb/attachment.pl"
       ]
@@ -313,7 +328,8 @@
       "body_snippet": "The power.examp function in the TeachingDemos package compares normal\ndistributions from a null and alternative hypothesis (the\nrun.power.examp function provides a GUI for the function).  The\nnormals ",
       "thread_id": "thread-23dd97332913",
       "thread_depth": 1,
-      "month": "2012-04"
+      "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000445.html"
     },
     {
       "id": "msg-3d0b976e6bcc",
@@ -329,7 +345,8 @@
       "body_snippet": "After some interesting discussions on r-help list, the suggestion was\nmade that I could also probably gain some useful insights on this\nteaching listserve, a resource that I didn't know about previous",
       "thread_id": "thread-3d0b976e6bcc",
       "thread_depth": 0,
-      "month": "2012-04"
+      "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000446.html"
     },
     {
       "id": "msg-e613f541fac4",
@@ -348,6 +365,7 @@
       "thread_id": "thread-3d0b976e6bcc",
       "thread_depth": 1,
       "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000447.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120419/5d1d092a/attachment.pl"
       ]
@@ -369,7 +387,8 @@
       "body_snippet": "Dear Chris et al\n\nI would strictly control how much of the session looks at their own datasets. This is incredibly demanding on a teacher and your time will vanish before you know it! First, you need ",
       "thread_id": "thread-3d0b976e6bcc",
       "thread_depth": 2,
-      "month": "2012-04"
+      "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000448.html"
     },
     {
       "id": "msg-64de7a859f0e",
@@ -385,7 +404,8 @@
       "body_snippet": "I know one high school teacher who used R in her AP Statistics\nclass.  I just dropped her a note to see if she is willing to provide\nany links to her work or an email address.  I have also used R as o",
       "thread_id": "thread-64de7a859f0e",
       "thread_depth": 0,
-      "month": "2012-04"
+      "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000449.html"
     },
     {
       "id": "msg-ef7d9a397037",
@@ -402,6 +422,7 @@
       "thread_id": "thread-ef7d9a397037",
       "thread_depth": 0,
       "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000450.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120420/44cc2840/attachment.pl"
       ]
@@ -422,7 +443,8 @@
       "body_snippet": "Are you familiar with R Inferno?  This is a programming-oriented \ntutorial for R by the statistician Patric Burns.  He has generously \nplaced it as a pdf online for free \n(http://www.burns-stat.com/pa",
       "thread_id": "thread-ef7d9a397037",
       "thread_depth": 1,
-      "month": "2012-04"
+      "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000451.html"
     },
     {
       "id": "msg-51fd2567d5d4",
@@ -442,6 +464,7 @@
       "thread_id": "thread-ef7d9a397037",
       "thread_depth": 2,
       "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000452.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120420/0e38f2bd/attachment.pl"
       ]
@@ -463,7 +486,8 @@
       "body_snippet": "Thanks for your answer.\n\nYes, it is quite different from what I am looking for which will be \nmore\nsomething like :\n\n--- 8< -----\n\nExercice 1: wrote a function that compute the surface of a rectangle\n",
       "thread_id": "thread-ef7d9a397037",
       "thread_depth": 2,
-      "month": "2012-04"
+      "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000453.html"
     },
     {
       "id": "msg-a6d9507ddfcf",
@@ -483,7 +507,8 @@
       "body_snippet": "R is in the broad family of functional languages -- if your student is\non board with the statistical capabilities of R, he might benefit from\nlooking at one of the classic tutorials for those while do",
       "thread_id": "thread-ef7d9a397037",
       "thread_depth": 3,
-      "month": "2012-04"
+      "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000454.html"
     },
     {
       "id": "msg-b034bae86c55",
@@ -504,7 +529,8 @@
       "body_snippet": "Sorry typo -- lapply(1:n, function(x) cat(rep(\"*\",x),\"\\n\"))\n\n\nM\n\n\nOn Fri, Apr 20, 2012 at 10:45 AM, R. Michael Weylandt\n<michael.weylandt at gmail.com> wrote:\n> R is in the broad family of functional ",
       "thread_id": "thread-ef7d9a397037",
       "thread_depth": 4,
-      "month": "2012-04"
+      "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000455.html"
     },
     {
       "id": "msg-2e0f0d4002fd",
@@ -524,7 +550,8 @@
       "body_snippet": "I work with High School students, and while they are certainly capable, your time constraints and the class size may be the hardest thing to work around. I would second Robert's advice on starting wit",
       "thread_id": "thread-3d0b976e6bcc",
       "thread_depth": 3,
-      "month": "2012-04"
+      "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000456.html"
     },
     {
       "id": "msg-e828a1958eeb",
@@ -541,6 +568,7 @@
       "thread_id": "thread-e828a1958eeb",
       "thread_depth": 0,
       "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000457.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120422/06cb802d/attachment.pl"
       ]
@@ -564,6 +592,7 @@
       "thread_id": "thread-ef7d9a397037",
       "thread_depth": 3,
       "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000458.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120422/ef8054c7/attachment.pl"
       ]
@@ -588,6 +617,7 @@
       "thread_id": "thread-ef7d9a397037",
       "thread_depth": 4,
       "month": "2012-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q2/000459.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120422/ddcf84f6/attachment.pl"
       ]

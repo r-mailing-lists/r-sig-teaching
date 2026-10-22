@@ -23,7 +23,8 @@
       "body_snippet": "Hi everyone,\nThanks for the helpful feedback on this paper!\n\nAn updated version of the paper can be downloaded from\nhttp://realpsychresearch.org/sites/default/files/InteractionsAndTypesOfSS.pdf.\nThe s",
       "thread_id": "thread-4a651b044e57",
       "thread_depth": 0,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000106.html"
     },
     {
       "id": "msg-77d532abd22e",
@@ -41,7 +42,8 @@
       "body_snippet": "I should have noted this at the beginning of the thread rather than\nnow, but forthe record, there is an R special-interest-group mailing\nlist called R-sig-teaching where this might also be of interest",
       "thread_id": "thread-77d532abd22e",
       "thread_depth": 0,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000107.html"
     },
     {
       "id": "msg-0a75ab9d0f85",
@@ -60,7 +62,8 @@
       "body_snippet": "Albyn Jones wrote:\n> I should have noted this at the beginning of the thread rather than\n> now, but forthe record, there is an R special-interest-group mailing\n> list called R-sig-teaching where this ",
       "thread_id": "thread-77d532abd22e",
       "thread_depth": 1,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000108.html"
     },
     {
       "id": "msg-edce1f4f4fd4",
@@ -78,7 +81,8 @@
       "body_snippet": "Andrew,\n\nI teach a two-course statistics sequence in sociology using R. Here are\nmy responses to your four questions:\n\nQ1. and Q2. The tough part is how to integrate teaching statistics\n(i.e., theory)",
       "thread_id": "thread-edce1f4f4fd4",
       "thread_depth": 0,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000109.html"
     },
     {
       "id": "msg-fc4dd9e40d63",
@@ -97,7 +101,8 @@
       "body_snippet": "Andrew,\n\nI teach a intro statistics course to \"science\" students and some \"general education\" students and a \"biometry\" course to \"natural resources\" and a handful of other students at Northland Colle",
       "thread_id": "thread-77d532abd22e",
       "thread_depth": 1,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000110.html"
     },
     {
       "id": "msg-82f5c0c18fea",
@@ -115,7 +120,8 @@
       "body_snippet": "Andrew,\nI am just finishing my first year teaching a graduate level stats course \nto Agriculture and other life sciences students. The course is \npractically oriented, and most of the students have ta",
       "thread_id": "thread-82f5c0c18fea",
       "thread_depth": 0,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000111.html"
     },
     {
       "id": "msg-c3a5e4f76bbf",
@@ -131,7 +137,8 @@
       "body_snippet": "Hi everyone-\n\nI'm currently teaching a graduate course in statistics for linguistics\nusing R. I have used up most of the 'authentic' data I have been able\nto collect for homework and demonstrations. I",
       "thread_id": "thread-c3a5e4f76bbf",
       "thread_depth": 0,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000112.html"
     },
     {
       "id": "msg-506b6da461f2",
@@ -149,7 +156,8 @@
       "body_snippet": "Hi Scott\n\nWhen I create artificial data, I try to \"copy\" some real. So I mesure \nthe real data with as much parameters than I can (mean, var, cov, but \nalso percent of NA, outlier), then I generate th",
       "thread_id": "thread-c3a5e4f76bbf",
       "thread_depth": 1,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000113.html"
     },
     {
       "id": "msg-2d82b4574ec7",
@@ -168,7 +176,8 @@
       "body_snippet": "Thanks-\nYes I'm using that as a text. I'm trying to have something fresh so\nthat I can add an example to demonstrations or give assessments with\nnew data.\n\nI'm also using Keith Johnson's text. \n\nSFK\n\n",
       "thread_id": "thread-2d82b4574ec7",
       "thread_depth": 0,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000114.html"
     },
     {
       "id": "msg-0de39bebccb1",
@@ -186,7 +195,8 @@
       "body_snippet": "Scott,\n\nHave you considered looking at phonetics data?  I refer for instance to f0 (fundamental pitch) as a time series, based on recordings of speech. I think I heard that (for instance) data from re",
       "thread_id": "thread-c3a5e4f76bbf",
       "thread_depth": 1,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000115.html"
     },
     {
       "id": "msg-134a7fd85ae2",
@@ -204,7 +214,8 @@
       "body_snippet": "Dear Scott,\n\nI have a strong preference for using real data. That said, one strategy for\nmanufacturing data is to simulate a statistical model, either the same model\nthat will be used to analyze the d",
       "thread_id": "thread-c3a5e4f76bbf",
       "thread_depth": 1,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000116.html"
     },
     {
       "id": "msg-a676a047303e",
@@ -222,7 +233,8 @@
       "body_snippet": "> I'm currently teaching a graduate course in statistics for linguistics\n> using R. I have used up most of the 'authentic' data I have been able\n> to collect for homework and demonstrations. I can thi",
       "thread_id": "thread-c3a5e4f76bbf",
       "thread_depth": 1,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000117.html"
     },
     {
       "id": "msg-0976ac149566",
@@ -240,7 +252,8 @@
       "body_snippet": "Dear Scott,\n\nOn Tue, Mar 24, 2009 at 4:04 PM, Scott F. Kiesling <kiesling+ at pitt.edu> wrote:\n\n>\n> For a simple example, let's say I want to create a dataset with\n> students from different countries ",
       "thread_id": "thread-c3a5e4f76bbf",
       "thread_depth": 1,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000118.html"
     },
     {
       "id": "msg-d43e28468918",
@@ -259,7 +272,8 @@
       "body_snippet": "On Wed, Mar 25, 2009 at 1:46 PM, G. Jay Kerns <gkerns at ysu.edu> wrote:\n> Dear Scott,\n\n> On Tue, Mar 24, 2009 at 4:04 PM, Scott F. Kiesling <kiesling+ at pitt.edu> wrote:\n\n>>\n>> For a simple example,",
       "thread_id": "thread-c3a5e4f76bbf",
       "thread_depth": 2,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000119.html"
     },
     {
       "id": "msg-eddf49758dd3",
@@ -275,7 +289,8 @@
       "body_snippet": "Hi R teachers:\n\nI want to know if anybody had have a\nexperience teaching statistics for\ntransportation engineers.\n\nThank you for any sugestion or help.\n\nKenneth",
       "thread_id": "thread-eddf49758dd3",
       "thread_depth": 0,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000120.html"
     },
     {
       "id": "msg-d36b02977d64",
@@ -296,7 +311,8 @@
       "body_snippet": "Dear Doug and Achim,\n\n\nOn 3/25/09, Achim Zeileis <Achim.Zeileis at wu-wien.ac.at> wrote:\n>\n> Thanks for including us and advertising our package, Doug!\n>\n> Actually, we use our \"exams\" package to gene",
       "thread_id": "thread-d36b02977d64",
       "thread_depth": 0,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000121.html"
     },
     {
       "id": "msg-efa06cd8468d",
@@ -317,7 +333,8 @@
       "body_snippet": "Everyone, thanks for your help! I'm going to work on this more over\nthe weekend.\n\nSFK\n\nOn Wed, Mar 25, 2009 at 11:34:38PM +0100, Achim Zeileis wrote:\n> From: Achim Zeileis <Achim.Zeileis at wu-wien.ac",
       "thread_id": "thread-efa06cd8468d",
       "thread_depth": 0,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000122.html"
     },
     {
       "id": "msg-efdc1b806773",
@@ -337,7 +354,8 @@
       "body_snippet": "On Wed, Mar 11, 2009 at 9:52 PM, Derek Ogle <DOgle at northland.edu> wrote:\n> Andrew,\n>\n> I teach a intro statistics course to \"science\" students and some \"general education\" students and a \"biometry\"",
       "thread_id": "thread-77d532abd22e",
       "thread_depth": 2,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000123.html"
     },
     {
       "id": "msg-ed787b465ef6",
@@ -358,7 +376,8 @@
       "body_snippet": "> What do I mean by simplify? ?There are many topics in an introductory\n> statistics course that are ingrained in the curriculum but really are\n> there for the sake of approximation or computational s",
       "thread_id": "thread-77d532abd22e",
       "thread_depth": 3,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000124.html"
     },
     {
       "id": "msg-6db42e7d386a",
@@ -380,7 +399,8 @@
       "body_snippet": "On Mon, Mar 30, 2009 at 5:29 PM, hadley wickham <h.wickham at gmail.com> wrote:\n>> What do I mean by simplify? ?There are many topics in an introductory\n>> statistics course that are ingrained in the ",
       "thread_id": "thread-77d532abd22e",
       "thread_depth": 4,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000125.html"
     },
     {
       "id": "msg-7a4a6a236e47",
@@ -403,7 +423,8 @@
       "body_snippet": "> The source directory of my slides for Peter's book, \"Introductory\n> Statistics with R\", is available as\n>\n> http://www.stat.wisc.edu/~bates/ISwR.zip\n\nThose are really nice.\n\nI see you still teach t-",
       "thread_id": "thread-77d532abd22e",
       "thread_depth": 5,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000126.html"
     },
     {
       "id": "msg-3d6af3b03e85",
@@ -427,7 +448,8 @@
       "body_snippet": "On Mon, Mar 30, 2009 at 7:54 PM, hadley wickham <h.wickham at gmail.com> wrote:\n>> The source directory of my slides for Peter's book, \"Introductory\n>> Statistics with R\", is available as\n>>\n>> http:/",
       "thread_id": "thread-77d532abd22e",
       "thread_depth": 6,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000127.html"
     },
     {
       "id": "msg-f201b09e4f76",
@@ -452,7 +474,8 @@
       "body_snippet": ">> I see you still teach t-tests and the Wilcoxon signed-rank test - is\n>> this just an artefact of following Dalgaard, or do you have a\n>> preference for them over the (computational expensive but co",
       "thread_id": "thread-77d532abd22e",
       "thread_depth": 7,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000128.html"
     },
     {
       "id": "msg-6f93b8472ce9",
@@ -468,7 +491,8 @@
       "body_snippet": "> I tend to use t-tests after examining normal probability plots and,\n> possibly, considering transformation.  I believe they would be more\n> powerful than permutation tests but that may be incorrect.",
       "thread_id": "thread-6f93b8472ce9",
       "thread_depth": 0,
-      "month": "2009-03"
+      "month": "2009-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000129.html"
     }
   ],
   "threads": [

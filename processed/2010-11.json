@@ -17,7 +17,8 @@
       "body_snippet": "hello!\n\nI'm wondering how you have your students\nhandle workspaces in R. Do you have students\ncreate their own R folder (on their home drive),\nand then load from within R? Or do you\nhave them create a",
       "thread_id": "thread-40f0b7beefdf",
       "thread_depth": 0,
-      "month": "2010-11"
+      "month": "2010-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000322.html"
     },
     {
       "id": "msg-2ca82a8aa6e9",
@@ -35,7 +36,8 @@
       "body_snippet": "I think that folders should be organized by topic and not by the \nsoftware that might use the files. After all you might want to use \nseveral different applications of files in a folder.\n\nI teach doin",
       "thread_id": "thread-40f0b7beefdf",
       "thread_depth": 1,
-      "month": "2010-11"
+      "month": "2010-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000323.html"
     },
     {
       "id": "msg-d58e4b57dd73",
@@ -55,6 +57,7 @@
       "thread_id": "thread-40f0b7beefdf",
       "thread_depth": 2,
       "month": "2010-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000324.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101102/fff3ac9b/attachment.pl"
       ]
@@ -77,7 +80,8 @@
       "body_snippet": "On Tue, Nov 2, 2010 at 12:51 PM, Ralph O'Brien, PhD\n<obrienralph at gmail.com> wrote:\n> A huge plus for R is that it runs nearly identically on all three major\n> platforms. There is every reason to ma",
       "thread_id": "thread-40f0b7beefdf",
       "thread_depth": 3,
-      "month": "2010-11"
+      "month": "2010-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000325.html"
     },
     {
       "id": "msg-052bedfbff53",
@@ -99,6 +103,7 @@
       "thread_id": "thread-40f0b7beefdf",
       "thread_depth": 4,
       "month": "2010-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000326.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101102/da075f82/attachment.pl"
       ]
@@ -123,7 +128,8 @@
       "body_snippet": "On Tue, Nov 2, 2010 at 1:44 PM, Ralph O'Brien, PhD\n<obrienralph at gmail.com> wrote:\n> ========================\n> If you have a path with backslashes in the Windows clipboard you can\n> just do this:\n>",
       "thread_id": "thread-40f0b7beefdf",
       "thread_depth": 5,
-      "month": "2010-11"
+      "month": "2010-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000327.html"
     },
     {
       "id": "msg-4739fc44266e",
@@ -143,7 +149,8 @@
       "body_snippet": "> In the real world, there are also strong programming integrity reasons to\n> hard code paths directly into our scripts. This leaves no doubt about what\n> dataset was being analyzed, etc.\n\nThe whole p",
       "thread_id": "thread-40f0b7beefdf",
       "thread_depth": 3,
-      "month": "2010-11"
+      "month": "2010-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000328.html"
     },
     {
       "id": "msg-aad2ef799414",
@@ -165,7 +172,8 @@
       "body_snippet": "My solution is a bit different.\n\nMost student oriented files are relatively small (less than 1 MB) and \ncan just be copied to the clipboard from their editor/spreadsheet \nprogam.\n\nMost students know h",
       "thread_id": "thread-40f0b7beefdf",
       "thread_depth": 5,
-      "month": "2010-11"
+      "month": "2010-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000329.html"
     },
     {
       "id": "msg-330ccc1af2ae",
@@ -186,7 +194,8 @@
       "body_snippet": "Actually I find a hard-coded path *especially* useful when I'm using \nmore than one computer as it reminds me of what directory I'm suppose to \nbe working in.\n\nI write code like\n\nwbf =  #\"C:\\\\Files\\\\C",
       "thread_id": "thread-40f0b7beefdf",
       "thread_depth": 4,
-      "month": "2010-11"
+      "month": "2010-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000330.html"
     },
     {
       "id": "msg-61e2fdf70271",
@@ -208,7 +217,8 @@
       "body_snippet": "> Actually I find a hard-coded path *especially* useful when I'm using more\n> than one computer as it reminds me of what directory I'm suppose to be\n> working in.\n>\n> I write code like\n>\n> wbf = ?#\"C:",
       "thread_id": "thread-40f0b7beefdf",
       "thread_depth": 5,
-      "month": "2010-11"
+      "month": "2010-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000331.html"
     },
     {
       "id": "msg-28d23cf4560a",
@@ -224,7 +234,8 @@
       "body_snippet": "I am using R in my intro stat course, and, I myself is a R novice.\n\nWe use \"Intro to the practice of statistics\" by Moore, McCabe, Craig as textbook. Is there an option for the command \"t.test\" so tha",
       "thread_id": "thread-28d23cf4560a",
       "thread_depth": 0,
-      "month": "2010-11"
+      "month": "2010-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000332.html"
     },
     {
       "id": "msg-40d16740640d",
@@ -242,7 +253,8 @@
       "body_snippet": "Dear Byungchul,\n\nTo my knowledge there is no built in functionality to calculate just\nthe t statistic using pre-calculated means and standard deviations.\n\nRegarding teaching, I would flip your questio",
       "thread_id": "thread-28d23cf4560a",
       "thread_depth": 1,
-      "month": "2010-11"
+      "month": "2010-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000333.html"
     },
     {
       "id": "msg-3b5380ad9401",
@@ -261,6 +273,7 @@
       "thread_id": "thread-28d23cf4560a",
       "thread_depth": 1,
       "month": "2010-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000334.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101109/b3dbc488/attachment.pl"
       ]
@@ -279,7 +292,8 @@
       "body_snippet": "Forwarded message:\n> From: \"Byungchul Cha\" <cha at muhlenberg.edu>\n \n> We use \"Intro to the practice of statistics\" by Moore, McCabe, Craig\n  as textbook. Is there an option for the command \"t.test\" s",
       "thread_id": "thread-f927192b91fb",
       "thread_depth": 0,
-      "month": "2010-11"
+      "month": "2010-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000335.html"
     },
     {
       "id": "msg-42e2a39896d2",
@@ -297,7 +311,8 @@
       "body_snippet": "On Tue, Nov 9, 2010 at 6:43 AM, Robert W. Hayden <hayden at mv.mv.com> wrote:\n> Forwarded message:\n>> From: \"Byungchul Cha\" <cha at muhlenberg.edu>\n>\n>> We use \"Intro to the practice of statistics\" by",
       "thread_id": "thread-f927192b91fb",
       "thread_depth": 1,
-      "month": "2010-11"
+      "month": "2010-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000336.html"
     },
     {
       "id": "msg-ffaeab2ac3f3",
@@ -315,7 +330,8 @@
       "body_snippet": "Are you interested in this only for simple one sample t-tests? Or do you need something for the more complicated cases (which lead to discussions about approximations to degrees of freedom, etc.)?\n\nFo",
       "thread_id": "thread-28d23cf4560a",
       "thread_depth": 1,
-      "month": "2010-11"
+      "month": "2010-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000337.html"
     },
     {
       "id": "msg-b637f78fec9a",
@@ -332,6 +348,7 @@
       "thread_id": "thread-b637f78fec9a",
       "thread_depth": 0,
       "month": "2010-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000338.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101113/f1d9a4be/attachment.pl"
       ]
@@ -353,6 +370,7 @@
       "thread_id": "thread-b637f78fec9a",
       "thread_depth": 1,
       "month": "2010-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000339.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101113/b8425af0/attachment.pl"
       ]
@@ -374,7 +392,8 @@
       "body_snippet": "Dear Jan and Ali,\n\nI haven't followed this thread, so I apologize if my information is off-base\nor redundant.\n\nI expect that Ali simply wants to install R on a Windows machine, in which\ncase he would ",
       "thread_id": "thread-b637f78fec9a",
       "thread_depth": 2,
-      "month": "2010-11"
+      "month": "2010-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000340.html"
     },
     {
       "id": "msg-ac6636be39ac",
@@ -395,6 +414,7 @@
       "thread_id": "thread-b637f78fec9a",
       "thread_depth": 3,
       "month": "2010-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000341.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101113/c36a40ab/attachment.pl"
       ]
@@ -415,7 +435,8 @@
       "body_snippet": "On Sat, 2010-11-13 at 06:02 -0800, Ali Zanaty wrote:\n> Dear All R Users:\n\nThis is not a suitable question for this particular R list. The R-Help\nlist would be appropriate. This list is for discussions",
       "thread_id": "thread-b637f78fec9a",
       "thread_depth": 1,
-      "month": "2010-11"
+      "month": "2010-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000342.html"
     }
   ],
   "threads": [

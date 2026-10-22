@@ -25,6 +25,7 @@
       "thread_id": "thread-d562510cbd11",
       "thread_depth": 0,
       "month": "2010-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000343.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101206/546d0b45/attachment.pl"
       ]
@@ -51,7 +52,8 @@
       "body_snippet": "On Mon, Dec 6, 2010 at 6:27 AM, david monterde <dmonterde at me.com> wrote:\n> I use the select.list when I have welldefined the paths and the fix function when not\n> I start idetifyind the unit, and t",
       "thread_id": "thread-d562510cbd11",
       "thread_depth": 1,
-      "month": "2010-12"
+      "month": "2010-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000344.html"
     },
     {
       "id": "msg-55406f52a4ee",
@@ -68,6 +70,7 @@
       "thread_id": "thread-55406f52a4ee",
       "thread_depth": 0,
       "month": "2010-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000345.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101211/75436d6e/attachment.pl"
       ]
@@ -89,6 +92,7 @@
       "thread_id": "thread-55406f52a4ee",
       "thread_depth": 1,
       "month": "2010-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000346.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101213/62d87d9a/attachment.pl"
       ]
@@ -110,7 +114,8 @@
       "body_snippet": "Another error.bars function is found in the psych package.\n\nFor zanaty's data, a log transform makes more sense:\n\npackage(psych)\nerror.bars.by(my.data$data,my.data$cat2,by.var=TRUE,bars=TRUE,sd=TRUE) ",
       "thread_id": "thread-55406f52a4ee",
       "thread_depth": 2,
-      "month": "2010-12"
+      "month": "2010-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000347.html"
     },
     {
       "id": "msg-0388bc035beb",
@@ -128,7 +133,8 @@
       "body_snippet": "Hi Ali,\n\nHere is another suggestion.  What I really like about using ggplot2 is\nthe graphs are elegant (at least to my eye), and extremely flexible.\nFor instance, using the method I show below, suppos",
       "thread_id": "thread-55406f52a4ee",
       "thread_depth": 1,
-      "month": "2010-12"
+      "month": "2010-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000348.html"
     },
     {
       "id": "msg-0f76c1fc2676",
@@ -146,7 +152,8 @@
       "body_snippet": "Before doing that, I'd highly recommend reading\nhttp://biostat.mc.vanderbilt.edu/twiki/pub/Main/TatsukiRcode/Poster3.pdf\n\nHadley\n\nOn Sat, Dec 11, 2010 at 8:43 AM, Ali Zanaty <zanaty2005 at yahoo.com> ",
       "thread_id": "thread-55406f52a4ee",
       "thread_depth": 1,
-      "month": "2010-12"
+      "month": "2010-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000349.html"
     },
     {
       "id": "msg-a7d83b858ac9",
@@ -166,6 +173,7 @@
       "thread_id": "thread-55406f52a4ee",
       "thread_depth": 2,
       "month": "2010-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000350.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20101214/181887bf/attachment.pl"
       ]
@@ -188,7 +196,8 @@
       "body_snippet": "Superior plots can be made pretty easily in ggplot2\nlibrary(ggplot2)\nggplot() +\n\tstat_boxplot(aes(y = mpg,x = factor(gear)),data=mtcars,width = 0.5) +\n\tgeom_point(aes(x = factor(gear),y = mpg),data=mt",
       "thread_id": "thread-55406f52a4ee",
       "thread_depth": 3,
-      "month": "2010-12"
+      "month": "2010-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000351.html"
     }
   ],
   "threads": [

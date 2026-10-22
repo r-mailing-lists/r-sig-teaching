@@ -17,7 +17,8 @@
       "body_snippet": "Dear All: good morning\n\n\nI am planning to teach a course in practical data science using R, may be\nin Fall 2018. I am wondering if someone have some materials on data science\nsuch as notes, R codes, a",
       "thread_id": "thread-61229027d666",
       "thread_depth": 0,
-      "month": "2017-12"
+      "month": "2017-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q4/000777.html"
     },
     {
       "id": "msg-2ed415c1d6be",
@@ -35,7 +36,8 @@
       "body_snippet": "Dear Abou,\n\nDo you have a list of topics you'd like to discuss?\n\nKind regards,\nSander\n\nOn Wed, Dec 6, 2017 at 2:57 PM, AbouEl-Makarim Aboueissa <\nabouelmakarim1962 at gmail.com> wrote:\n\n> Dear All: go",
       "thread_id": "thread-61229027d666",
       "thread_depth": 1,
-      "month": "2017-12"
+      "month": "2017-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q4/000778.html"
     },
     {
       "id": "msg-b734f7c22099",
@@ -54,7 +56,8 @@
       "body_snippet": "You may also find the similar discussions on the R Studio community forum\nhelpful.\n\nhttps://community.rstudio.com/tags/teaching\n\nJustin\n\n\n\nOn Dec 6, 2017 8:33 AM, \"Sander\" <sander1981 at gmail.com> wr",
       "thread_id": "thread-61229027d666",
       "thread_depth": 2,
-      "month": "2017-12"
+      "month": "2017-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q4/000779.html"
     },
     {
       "id": "msg-b611f25023bc",
@@ -74,7 +77,8 @@
       "body_snippet": "For the practical side, you have the book of Hadley Wickham : R for Data\nScience. You can read this online here : http://r4ds.had.co.nz/\n\nThis however doesn't cover the theoretical aspects, so much de",
       "thread_id": "thread-61229027d666",
       "thread_depth": 3,
-      "month": "2017-12"
+      "month": "2017-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q4/000780.html"
     },
     {
       "id": "msg-13f27c6eba26",
@@ -93,7 +97,8 @@
       "body_snippet": "Dear Sander:\n\n\nThis course will be a mixed of introduction to data science and introduction\nto statistical machine learning.\n\n\n\n*Topics to be covered (tentative)*\n\n\n-Data preparation\n\n-Exploratory dat",
       "thread_id": "thread-61229027d666",
       "thread_depth": 2,
-      "month": "2017-12"
+      "month": "2017-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q4/000781.html"
     },
     {
       "id": "msg-26eb61a05a98",
@@ -109,7 +114,8 @@
       "body_snippet": "Joris is much too modest.  His book is well worth buying.\n\n\n----- Forwarded message from Joris Meys <jorismeys at gmail.com> -----\n\nDate: Wed, 6 Dec 2017 15:53:14 +0100\nFrom: Joris Meys <jorismeys at ",
       "thread_id": "thread-26eb61a05a98",
       "thread_depth": 0,
-      "month": "2017-12"
+      "month": "2017-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q4/000782.html"
     },
     {
       "id": "msg-50a7eb36b910",
@@ -121,11 +127,12 @@
       "subject_clean": "learnr o similar package to make questions",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear list members,\n\nI would like to use learnr o a similar package to make questions but\nwithout to set the correct answer.  Apparently, in learnr you need to set a\ncorrect answer, but the downside is that the user can see the right answer\nto the question.\n\nIs there any alternative to this problem?\n\nManuel\n\n-- \n*Manuel Sp?nola, Ph.D.*\nInstituto Internacional en Conservaci?n y Manejo de Vida Silvestre\nUniversidad Nacional\nApartado 1350-3000\nHeredia\nCOSTA RICA\nmspinola at una.cr <mspinola at una.ac.cr>\nmspinola10 at gmail.com\nTel?fono: (506) 8706 - 4662\nPersonal website: Lobito de r?o <https://sites.google.com/site/lobitoderio/>\nInstitutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>\n\n\t[[alternative HTML version deleted]]",
+      "body_plain": "Dear list members,\n\nI would like to use learnr o a similar package to make questions but\nwithout to set the correct answer.  Apparently, in learnr you need to set a\ncorrect answer, but the downside is that the user can see the right answer\nto the question.\n\nIs there any alternative to this problem?\n\nManuel\n\n-- \n*Manuel Spínola, Ph.D.*\nInstituto Internacional en Conservación y Manejo de Vida Silvestre\nUniversidad Nacional\nApartado 1350-3000\nHeredia\nCOSTA RICA\nmspinola at una.cr <mspinola at una.ac.cr>\nmspinola10 at gmail.com\nTeléfono: (506) 8706 - 4662\nPersonal website: Lobito de río <https://sites.google.com/site/lobitoderio/>\nInstitutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>\n\n\t[[alternative HTML version deleted]]",
       "body_snippet": "Dear list members,\n\nI would like to use learnr o a similar package to make questions but\nwithout to set the correct answer.  Apparently, in learnr you need to set a\ncorrect answer, but the downside is",
       "thread_id": "thread-50a7eb36b910",
       "thread_depth": 0,
-      "month": "2017-12"
+      "month": "2017-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q4/000783.html"
     },
     {
       "id": "msg-5d2fb9c5c7b1",
@@ -143,7 +150,8 @@
       "body_snippet": "There are some R Tutorials in Data Science that were developed by Adam \nLoy (Carleton), Shonda Kuiper (Grinnell) and me (Laura Chihara, Carleton \nCollege) for an ACM grant.\n\nhttp://web.grinnell.edu/in",
       "thread_id": "thread-61229027d666",
       "thread_depth": 1,
-      "month": "2017-12"
+      "month": "2017-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q4/000784.html"
     },
     {
       "id": "msg-280c2a10a084",
@@ -162,7 +170,8 @@
       "body_snippet": "Dear Laura:\n\nThank you very much. It will help a lot.\n\nwith thanks\nabou\n\n______________________\n\n\n*AbouEl-Makarim Aboueissa, PhD*\n\n*Professor of Statistics*\n\n*Department of Mathematics and Statistics*",
       "thread_id": "thread-61229027d666",
       "thread_depth": 2,
-      "month": "2017-12"
+      "month": "2017-12",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q4/000785.html"
     }
   ],
   "threads": [

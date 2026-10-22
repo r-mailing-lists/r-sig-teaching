@@ -18,6 +18,7 @@
       "thread_id": "thread-ab2ae0a592bb",
       "thread_depth": 0,
       "month": "2010-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000268.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100911/5254d942/attachment.pl"
       ]
@@ -36,7 +37,8 @@
       "body_snippet": "Hi all,\n\nI am wondering if anyone teaches the attach function to new students\nand if so, why?\n\n\nI have never taught a class using R, but in small tutorials and\nproviding direct help, I have run across",
       "thread_id": "thread-416ad00c7615",
       "thread_depth": 0,
-      "month": "2010-09"
+      "month": "2010-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000269.html"
     },
     {
       "id": "msg-f86d3e153b4c",
@@ -54,7 +56,8 @@
       "body_snippet": "Hi Joshua,\n\nI do teach R to my students and face each time what to do about attach() \n.  I can't really add to your clear statement of the main reasons for \nand against teaching attach() and I tend so",
       "thread_id": "thread-416ad00c7615",
       "thread_depth": 1,
-      "month": "2010-09"
+      "month": "2010-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000270.html"
     },
     {
       "id": "msg-db0cd06ed25f",
@@ -72,7 +75,8 @@
       "body_snippet": "Josh\n\n> I am wondering if anyone teaches the attach function to new students\n> and if so, why?\n\nI'm not sure whether my approach is the best or worst of both worlds.\n\nI use attach() at the beginning w",
       "thread_id": "thread-416ad00c7615",
       "thread_depth": 1,
-      "month": "2010-09"
+      "month": "2010-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000271.html"
     },
     {
       "id": "msg-ea1485565b15",
@@ -90,7 +94,8 @@
       "body_snippet": "On Tue, 2010-09-21 at 21:34 -0700, Joshua Wiley wrote:\n> Hi all,\n> \n> I am wondering if anyone teaches the attach function to new students\n> and if so, why?\n\nI don't use attach() at all; too easy to m",
       "thread_id": "thread-416ad00c7615",
       "thread_depth": 1,
-      "month": "2010-09"
+      "month": "2010-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000272.html"
     },
     {
       "id": "msg-0d74a1be4d48",
@@ -110,6 +115,7 @@
       "thread_id": "thread-416ad00c7615",
       "thread_depth": 2,
       "month": "2010-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000273.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100922/381d78a2/attachment.pl"
       ]
@@ -132,7 +138,8 @@
       "body_snippet": "Thanks to everyone for your thoughtful replies.  I think I am inclined\nnot to use attach, but to bring it up and briefly mention some of the\nmistakes that are easy to make.  If students already know/u",
       "thread_id": "thread-416ad00c7615",
       "thread_depth": 3,
-      "month": "2010-09"
+      "month": "2010-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000274.html"
     },
     {
       "id": "msg-ff17e583bd06",
@@ -153,7 +160,8 @@
       "body_snippet": "On Wed, Sep 22, 2010 at 4:04 AM, Joshua Wiley <jwiley.psych at gmail.com> wrote:\n> Thanks to everyone for your thoughtful replies. ?I think I am inclined\n> not to use attach, but to bring it up and br",
       "thread_id": "thread-416ad00c7615",
       "thread_depth": 4,
-      "month": "2010-09"
+      "month": "2010-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000275.html"
     },
     {
       "id": "msg-d584cb0c622e",
@@ -172,6 +180,7 @@
       "thread_id": "thread-d584cb0c622e",
       "thread_depth": 0,
       "month": "2010-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000276.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100922/477c537e/attachment.pl"
       ]
@@ -192,7 +201,8 @@
       "body_snippet": "This thread is interesting. For those who use the\nsubset command, when you extract a variable from a\ndata frame, do you give it the same name as in the data set?\n\nFor instance,\n\nmy.data with variables",
       "thread_id": "thread-416ad00c7615",
       "thread_depth": 1,
-      "month": "2010-09"
+      "month": "2010-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000277.html"
     },
     {
       "id": "msg-2937d03e879b",
@@ -211,7 +221,8 @@
       "body_snippet": "On Thu, Sep 23, 2010 at 5:53 AM, Laura Chihara <lchihara at carleton.edu> wrote:\n> This thread is interesting. For those who use the\n> subset command, when you extract a variable from a\n> data frame, ",
       "thread_id": "thread-416ad00c7615",
       "thread_depth": 2,
-      "month": "2010-09"
+      "month": "2010-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000278.html"
     },
     {
       "id": "msg-ff386cfc29ad",
@@ -233,7 +244,8 @@
       "body_snippet": ">>>>> Douglas Bates <bates at stat.wisc.edu>\n>>>>>     on Wed, 22 Sep 2010 07:10:14 -0500 writes:\n\n    > On Wed, Sep 22, 2010 at 4:04 AM, Joshua Wiley\n    > <jwiley.psych at gmail.com> wrote:\n    >> T",
       "thread_id": "thread-416ad00c7615",
       "thread_depth": 5,
-      "month": "2010-09"
+      "month": "2010-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000279.html"
     },
     {
       "id": "msg-c450fa98ab67",
@@ -256,7 +268,8 @@
       "body_snippet": "On Thu, Sep 23, 2010 at 12:50 PM, Martin Maechler\n<maechler at stat.math.ethz.ch> wrote:\n[snip]\n> Do consider (and teach!) using ?attach(\"foobar.rda\") for *.rda files\n> which I often find quite prefer",
       "thread_id": "thread-416ad00c7615",
       "thread_depth": 6,
-      "month": "2010-09"
+      "month": "2010-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000280.html"
     },
     {
       "id": "msg-12a517a1c5e5",
@@ -275,7 +288,8 @@
       "body_snippet": "On 09/22/2010 04:36 AM, Gavin Simpson wrote:\n>\n> I don't use attach() at all; too easy to make mistakes that are\n> difficult to track down. I tend not to use $ either as that encourages\n> people to us",
       "thread_id": "thread-416ad00c7615",
       "thread_depth": 2,
-      "month": "2010-09"
+      "month": "2010-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000281.html"
     },
     {
       "id": "msg-d02279b386f0",
@@ -295,7 +309,8 @@
       "body_snippet": "On Thu, Sep 23, 2010 at 3:48 PM, Tyler Smith <tyler.smith at eku.edu> wrote:\n> ?On 09/22/2010 04:36 AM, Gavin Simpson wrote:\n>>\n>> I don't use attach() at all; too easy to make mistakes that are\n>> di",
       "thread_id": "thread-416ad00c7615",
       "thread_depth": 3,
-      "month": "2010-09"
+      "month": "2010-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000282.html"
     },
     {
       "id": "msg-a87eb708ac36",
@@ -315,7 +330,8 @@
       "body_snippet": "I think that the reference to not using $ or [[ was meant for cases where there is a proper extraction function, residuals being the example used.\n\nIf \"fit\" is an lm object then I could plot the fitte",
       "thread_id": "thread-416ad00c7615",
       "thread_depth": 3,
-      "month": "2010-09"
+      "month": "2010-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000283.html"
     },
     {
       "id": "msg-dd4fca3d0321",
@@ -336,7 +352,8 @@
       "body_snippet": "I think what Greg say here is the \"official wisdom\" and it leads to more \nfuture-proof code as the structure of various objects can change in new \nversions of R.\n\nOTOH the structure of a kind of objec",
       "thread_id": "thread-416ad00c7615",
       "thread_depth": 4,
-      "month": "2010-09"
+      "month": "2010-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000284.html"
     },
     {
       "id": "msg-304aaf0a7415",
@@ -357,7 +374,8 @@
       "body_snippet": "When will I ever learn to proof-read my emails?!\n=============\nI think what Greg sayS here is the \"official wisdom\" and it leads to \nmore future-proofED code as the structure of various objects can ch",
       "thread_id": "thread-416ad00c7615",
       "thread_depth": 4,
-      "month": "2010-09"
+      "month": "2010-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000285.html"
     },
     {
       "id": "msg-94b36391122e",
@@ -380,6 +398,7 @@
       "thread_id": "thread-416ad00c7615",
       "thread_depth": 5,
       "month": "2010-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000286.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100924/fbf3b323/attachment.pl"
       ]
@@ -405,7 +424,8 @@
       "body_snippet": "This may not always be useful when we venture too far from the cosy \nworld of lm().\n\nFor example I have just been looking at the function flexmixedruns()\nfrom package fpc, and the object  fr  that is ",
       "thread_id": "thread-416ad00c7615",
       "thread_depth": 6,
-      "month": "2010-09"
+      "month": "2010-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000287.html"
     },
     {
       "id": "msg-fb6fb5db19ed",
@@ -423,7 +443,8 @@
       "body_snippet": "It looks like the -0.361 is qt(0.025, 30) * 0.177 where 0.177 is the standard error of the mean.  And 31.481 is approximately (possible rounding error from limited reporting) 5.565/0.177, so those are",
       "thread_id": "thread-fb6fb5db19ed",
       "thread_depth": 0,
-      "month": "2010-09"
+      "month": "2010-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q4/000289.html"
     }
   ],
   "threads": [

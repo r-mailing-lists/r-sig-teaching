@@ -17,7 +17,8 @@
       "body_snippet": "I am a relatively novice in R and I need some help. \n\nI want to create a two-way table from a data given as a data.frame, which looks like this:\n\n> x\n   group status gender count\n1      1     s1     g",
       "thread_id": "thread-56a6bf4bfd9e",
       "thread_depth": 0,
-      "month": "2010-05"
+      "month": "2010-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q2/000237.html"
     },
     {
       "id": "msg-276112212314",
@@ -35,7 +36,8 @@
       "body_snippet": "On Wed, May 5, 2010 at 10:30 AM, Byungchul Cha <cha at muhlenberg.edu> wrote:\n\n> I am a relatively novice in R and I need some help.\n\n> I want to create a two-way table from a data given as a data.fra",
       "thread_id": "thread-56a6bf4bfd9e",
       "thread_depth": 1,
-      "month": "2010-05"
+      "month": "2010-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q2/000238.html"
     },
     {
       "id": "msg-b1e296df80e3",
@@ -55,6 +57,7 @@
       "thread_id": "thread-56a6bf4bfd9e",
       "thread_depth": 2,
       "month": "2010-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q2/000239.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100505/62b128f8/attachment.pl"
       ]
@@ -75,7 +78,8 @@
       "body_snippet": "This is easy:\n\n# Recode gender\nlevels(x$gender) <- c(\"men\", \"women\")\n# Build the two-way table (and print it)\n(x.Table <- xtabs(count ~ status + gender, data = x))\n\nBest,\n\nPhG\n\n.......................",
       "thread_id": "thread-56a6bf4bfd9e",
       "thread_depth": 1,
-      "month": "2010-05"
+      "month": "2010-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q2/000240.html"
     }
   ],
   "threads": [

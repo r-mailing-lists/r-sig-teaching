@@ -17,7 +17,8 @@
       "body_snippet": "Dear colleagues,\n\nI plan to give a short online course for several friends covering the beginnings of R and multivariate statistics. Could you recommend any suitable (webinar) service? I don't intend ",
       "thread_id": "thread-737b0a89eb82",
       "thread_depth": 0,
-      "month": "2014-04"
+      "month": "2014-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2014q2/000567.html"
     },
     {
       "id": "msg-0fe729c8d541",
@@ -34,6 +35,7 @@
       "thread_id": "thread-0fe729c8d541",
       "thread_depth": 0,
       "month": "2014-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2014q2/000568.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20140429/74a88fbb/attachment.pl"
       ]

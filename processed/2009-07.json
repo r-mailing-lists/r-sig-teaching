@@ -17,7 +17,8 @@
       "body_snippet": "Forwarded message:\n> From: hadley wickham <h.wickham at gmail.com>\n> >\n> > In all three years, unprompted by me, I have had between five and\n> > seven students come to me after the R sessions asking w",
       "thread_id": "thread-6f6abc9b8d14",
       "thread_depth": 0,
-      "month": "2009-07"
+      "month": "2009-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000174.html"
     },
     {
       "id": "msg-014ee8e5bf2e",
@@ -33,7 +34,8 @@
       "body_snippet": "I think such a website would be a real asset.  It would be most useful\nif it either were restricted to intro. stats. OR organized so that\nmaterials for real beginners were easy to extract from all the",
       "thread_id": "thread-014ee8e5bf2e",
       "thread_depth": 0,
-      "month": "2009-07"
+      "month": "2009-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000175.html"
     },
     {
       "id": "msg-5c54f61d5a02",
@@ -52,6 +54,7 @@
       "thread_id": "thread-014ee8e5bf2e",
       "thread_depth": 1,
       "month": "2009-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000176.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090702/b8e11068/attachment.pl"
       ]
@@ -74,7 +77,8 @@
       "body_snippet": "Hi all\n\nI am teaching statistics to Students in Physical Activity. They do not \ncare that much about the math formula, they are focused... well, they \nare not that much focused, but the few that are f",
       "thread_id": "thread-180d06cb8d14",
       "thread_depth": 0,
-      "month": "2009-07"
+      "month": "2009-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000177.html"
     },
     {
       "id": "msg-a2ee9366604a",
@@ -90,7 +94,8 @@
       "body_snippet": "Right now I am trying to remember how to get a scatterplot with\nboxplots of x and y separately in the margin.  I think I need one of\nthe packages but I don't know which.\n\nThe above is a real call for ",
       "thread_id": "thread-a2ee9366604a",
       "thread_depth": 0,
-      "month": "2009-07"
+      "month": "2009-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000178.html"
     },
     {
       "id": "msg-5b00399a2c2d",
@@ -109,6 +114,7 @@
       "thread_id": "thread-a2ee9366604a",
       "thread_depth": 1,
       "month": "2009-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000179.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090702/05cd88a0/attachment.pl"
       ]
@@ -130,7 +136,8 @@
       "body_snippet": "On Fri, Jul 3, 2009 at 12:07 AM, Antonio P.\nRamos<ramos.grad.student at gmail.com> wrote:\n> On Thu, Jul 2, 2009 at 2:27 PM, Robert W. Hayden <hayden at mv.mv.com> wrote:\n>> Right now I am trying to re",
       "thread_id": "thread-a2ee9366604a",
       "thread_depth": 2,
-      "month": "2009-07"
+      "month": "2009-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000180.html"
     },
     {
       "id": "msg-bb6c6df39bbc",
@@ -147,6 +154,7 @@
       "thread_id": "thread-bb6c6df39bbc",
       "thread_depth": 0,
       "month": "2009-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000181.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090713/2d9e20b8/attachment.pl"
       ]
@@ -169,6 +177,7 @@
       "thread_id": "thread-651530a4cfc4",
       "thread_depth": 0,
       "month": "2009-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000182.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090713/c35a37a4/attachment.pl"
       ]
@@ -189,7 +198,8 @@
       "body_snippet": ">Could you please help me out how to get such graphs in R.\n\nTry:\n\npar(mar = rep(1.5, 4))\nplot(-7:7, -7:7, type = \"n\", xaxt = \"n\", yaxs = \"i\", xaxs = \"i\", yaxt = \"n\",\nbty = \"n\", xlab = \"\", ylab = \"\")\ns",
       "thread_id": "thread-67281139f7ad",
       "thread_depth": 0,
-      "month": "2009-07"
+      "month": "2009-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000183.html"
     },
     {
       "id": "msg-db74b95c807a",
@@ -205,7 +215,8 @@
       "body_snippet": "INSEED is happy to announce an international workshop with three\nmodules, viz.\n\n* 16-18 November, 2009: Statistical methods in Epidemiology\n* 19-21 November, 2009: Sample size consideration in Epidemi",
       "thread_id": "thread-db74b95c807a",
       "thread_depth": 0,
-      "month": "2009-07"
+      "month": "2009-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000184.html"
     }
   ],
   "threads": [

@@ -17,7 +17,8 @@
       "body_snippet": "Hello:\n\n\n\n       Does anyone have a good reference on the uses of normal \nprobability plots?\n\n\n\n       The Wikipedia article on \"Normal probability plot\" includes \nhistograms with normal plots of norm",
       "thread_id": "thread-293499da636e",
       "thread_depth": 0,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000687.html"
     },
     {
       "id": "msg-b2c583c04eb4",
@@ -33,7 +34,8 @@
       "body_snippet": "Dear All:\n\n\nI am trying to plot the function f(x) = x^(1/5) for x=seq(-2,2,0.01). It\ngive me only the plot of f(x) for the positive part of x. I checked the\nvalues of f(x), it is NaN for all negative ",
       "thread_id": "thread-b2c583c04eb4",
       "thread_depth": 0,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000688.html"
     },
     {
       "id": "msg-f35fe12d8664",
@@ -51,7 +53,8 @@
       "body_snippet": "Dear Steven,\n\nWell, the values x^(1/5) are complex-valued (not real-valued) when x is \nnegative.\n\nDid you want to plot the absolute value of x^(1/5) instead?\n\nMark\n\nMark Daniel Ward, Ph.D.\nAssociate P",
       "thread_id": "thread-b2c583c04eb4",
       "thread_depth": 1,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000689.html"
     },
     {
       "id": "msg-2fdf3fabb044",
@@ -69,7 +72,8 @@
       "body_snippet": "System is working correctly.  A negative number cannot be raised to a\nfractional power:\n\n> (-2)^(1/5)\n[1] NaN\n\n\n\n\nJim Holtman\nData Munger Guru\n\nWhat is the problem that you are trying to solve?\nTell m",
       "thread_id": "thread-b2c583c04eb4",
       "thread_depth": 1,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000690.html"
     },
     {
       "id": "msg-6351eeed6f53",
@@ -88,7 +92,8 @@
       "body_snippet": "Dear All:\n\nin my TI-Calculator (-0.5)^(1/5) = -0.8705, but in R  (-0.5)^(1/5) = NaN.\n\n\nwith thanks\nsteve\n\nOn Tue, May 17, 2016 at 8:52 AM, jim holtman <jholtman at gmail.com> wrote:\n\n> System is worki",
       "thread_id": "thread-b2c583c04eb4",
       "thread_depth": 2,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000691.html"
     },
     {
       "id": "msg-6d0fd18e86f2",
@@ -106,7 +111,8 @@
       "body_snippet": "Try this:\n\n y <- sign(x) * abs(x)^(1/5)\n\nOn Tue, May 17, 2016 at 8:44 AM, Steven Stoline <sstoline at gmail.com> wrote:\n> Dear All:\n>\n>\n> I am trying to plot the function f(x) = x^(1/5) for x=seq(-2,2",
       "thread_id": "thread-b2c583c04eb4",
       "thread_depth": 1,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000692.html"
     },
     {
       "id": "msg-973740cbe5f8",
@@ -126,7 +132,8 @@
       "body_snippet": "Try :\n\n-0.5^(1/5)\n[1] -0.8705506\n\nDavid\n\n-----Original Message-----\nFrom: R-sig-teaching [mailto:r-sig-teaching-bounces at r-project.org] On Behalf Of Steven Stoline\nSent: 17 May 2016 14:07\nTo: jim ho",
       "thread_id": "thread-b2c583c04eb4",
       "thread_depth": 3,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000693.html"
     },
     {
       "id": "msg-6dd266ce6257",
@@ -145,7 +152,8 @@
       "body_snippet": "Dear Gabor:\n\nmany thanks,makes it.\n\nsteve\n\nOn Tue, May 17, 2016 at 9:07 AM, Gabor Grothendieck <ggrothendieck at gmail.com\n> wrote:\n\n> Try this:\n>\n>  y <- sign(x) * abs(x)^(1/5)\n>\n> On Tue, May 17, 20",
       "thread_id": "thread-b2c583c04eb4",
       "thread_depth": 2,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000694.html"
     },
     {
       "id": "msg-d3e2dd311add",
@@ -166,7 +174,8 @@
       "body_snippet": "this is where you should be using parenthesis to make sure you have the\ncorrect precedence of operations:\n\n> -0.5^(1/5)\n[1] -0.8705506\n> (-0.5)^(1/5)\n[1] NaN\n>\n> x <- -0.5\n> x^(1/5)\n[1] NaN\n>\n\n\n\nJim H",
       "thread_id": "thread-b2c583c04eb4",
       "thread_depth": 4,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000695.html"
     },
     {
       "id": "msg-d9717cb13c11",
@@ -182,7 +191,8 @@
       "body_snippet": "Forwarded message:\n> >\n> > > System is working correctly. A negative number cannot be raised to a\n> > > fractional power:\n> > >\n> > > > (-2)^(1/5)\n> > > [1] NaN\n\nWell, maybe we should say that _R_ can",
       "thread_id": "thread-d9717cb13c11",
       "thread_depth": 0,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000696.html"
     },
     {
       "id": "msg-36451ac59e66",
@@ -200,7 +210,8 @@
       "body_snippet": "This problem is an example of FAQ 7.31.  Floating point numbers\ninside the computer can not represent odd fractions exactly.\n\n> seq(1, 15, 2)\n[1]  1  3  5  7  9 11 13 15\n> 1/seq(1, 15, 2)\n[1] 1.000000",
       "thread_id": "thread-d9717cb13c11",
       "thread_depth": 1,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000697.html"
     },
     {
       "id": "msg-232beac1e24f",
@@ -219,7 +230,8 @@
       "body_snippet": "I think R is doing just what it should do, and the TI has been hacked to\nmake HS teachers happy :-)\n\n> log(as.complex(-2))/5\n[1] 0.1386294+0.6283185i\n> a <- log(as.complex(-2))/5\n> exp(a)^5\n[1] -2-0i\n",
       "thread_id": "thread-d9717cb13c11",
       "thread_depth": 2,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000698.html"
     },
     {
       "id": "msg-061cae2cfc1f",
@@ -235,11 +247,12 @@
         "<CAGx1TMDfNu6THF60iTQExd7yMHky5Wn_9MOMn4pB-jkNZJGiGA@mail.gmail.com>",
         "<CA+3jU8EKbVUORNG2GRHKVbz1eDopSYEbF1ievZUAtxxYT-wzBw@mail.gmail.com>"
       ],
-      "body_plain": "Hi,\n\nThe powerplus package does raise a negative number to a fractional \npower. Try:\n\nlibrary(powerplus)\nexplus(-.5, 1/5)\n\nKlaus.\n\n\nOn 17/05/2016 17:55, Albyn Jones wrote:\n> I think R is doing just what it should do, and the TI has been hacked to\n> make HS teachers happy :-)\n>\n>> log(as.complex(-2))/5\n> [1] 0.1386294+0.6283185i\n>> a <- log(as.complex(-2))/5\n>> exp(a)^5\n> [1] -2-0i\n>\n>> exp(a)\n> [1] 0.9293165+0.675188i\n>> (as.complex(-2))^(1/5)\n> [1] 0.9293165+0.675188i\n>> 2^(1/5)*cos(pi/5)\n> [1] 0.9293165\n>> 2^(1/5)*sin(pi/5)\n> [1] 0.675188\n>\n> albyn\n>\n>\n> On Tue, May 17, 2016 at 8:10 AM, Richard M. Heiberger <rmh at temple.edu>\n> wrote:\n>\n>> This problem is an example of FAQ 7.31.  Floating point numbers\n>> inside the computer can not represent odd fractions exactly.\n>>\n>>> seq(1, 15, 2)\n>> [1]  1  3  5  7  9 11 13 15\n>>> 1/seq(1, 15, 2)\n>> [1] 1.00000000 0.33333333 0.20000000 0.14285714 0.11111111 0.09090909\n>> 0.07692308\n>> [8] 0.06666667\n>>> print(1/seq(1, 15, 2), digits=18)\n>> [1] 1.0000000000000000000 0.3333333333333333148 0.2000000000000000111\n>> [4] 0.1428571428571428492 0.1111111111111111049 0.0909090909090909116\n>> [7] 0.0769230769230769273 0.0666666666666666657\n>>> ## except for 1, none of these odd fractions is exactly represented\n>> inside the computer.\n>>> ## therefore the power requested is not the exact fraction, and the\n>> result is not capable of calculation\n>>> (-2)^(1/seq(1, 15, 2))\n>> [1]  -2 NaN NaN NaN NaN NaN NaN NaN\n>> Rich\n>>\n>> On Tue, May 17, 2016 at 10:23 AM, bob at statland.org <bob at statland.org>\n>> wrote:\n>>> Forwarded message:\n>>>>>> System is working correctly. A negative number cannot be raised to a\n>>>>>> fractional power:\n>>>>>>\n>>>>>>> (-2)^(1/5)\n>>>>>> [1] NaN\n>>> Well, maybe we should say that _R_ can't raise a negative number to a\n>>> fractional power.  Neither I nor the TI calculators have any trouble\n>>> doing it;-) I'd say R is funtioning as designed, but it was designed\n>>> to respond INcorrectly;-)\n>>>\n>>> This R exchange\n>>>\n>>>> (-2)^5\n>>> [1] -32\n>>>\n>>> shows that -2 is a fifth root of -32 while this exchange\n>>>\n>>>> (-32)^(1/5)\n>>> [1] NaN\n>>>\n>>> shows that R cannot find that root.  The various suggestions for\n>>> dealing with this amount to asking R a different question which we\n>>> know has the same answer as the intended question (which R won't\n>>> answer).\n>>>\n>>> On one level you could view this as a coding/implementation issue.  I\n>>> have not looked at R's code, but the usual computer way to handle\n>>> exponents involves taking the log of the argument.  This does not\n>>> return the correct answer when the argument is negative.  That's\n>>> annoying.  The TI graphing calculators were developed with an\n>>> incredible amount of input from secondary math. teachers.  They\n>>> complained loudly about calculators returning wrong answers or\n>>> non-answers to problems to which students knew the right answers.  TI\n>>> did a LOT of work on this.  I wish R (and lots of scientific software)\n>>> would do likewise.\n>>>\n>>> On another level, involving exponentiation is not entirely avoidable.\n>>> For rational numbers like 1/5 we can (and usually do) interpret\n>>> (-32)^(1/5) as a name for a real number that when raised to the fifth\n>>> power gives -32.  Another name for one such number is -2.  But if we want\n>>> to use an irrational exponent, say (-32)^pi we can't interpret it that\n>>> way.  (How do we multiply pi numbers together?)  So eventually we have\n>>> to either exponentiate or have a funciton that is undefined at many\n>>> points.  At lesat in theory.  As far as computers and calculators are\n>>> concerned, they cannot represent irrational numbers anyway --\n>>> eveything is a rational approximation.\n>>>\n>>> So I think the defect is in R, not in the original posted question.\n>>>\n>>> ------->  First-time AP Stats. teacher?  Help is on the way! See\n>>>\n>> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n>>>        _\n>>>       | |          Robert W. Hayden\n>>>       | |          614 Nashua Street #119\n>>>      /  |          Milford, New Hampshire 03055  USA\n>>>     |   |\n>>>     |   |          email: bob@ the site below\n>>>    /  x |          website: http://statland.org\n>>>   |     /\n>>>   ''''''\n>>>\n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n-- \n----------------------------------------------------\n  Klaus Langohr\n  Departament d'Estad?stica i Investigaci? Operativa\n  Universitat Polit?cnica de Catalunya\n  Edifici C5 (Campus Nord)\n  C/ Jordi Girona, 1-3\n  E-08034 Barcelona\n  Tel: (+34) 934 017 034\n  Fax: (+34) 934 015 855\n----------------------------------------------------\n\n\n\t[[alternative HTML version deleted]]",
+      "body_plain": "Hi,\n\nThe powerplus package does raise a negative number to a fractional \npower. Try:\n\nlibrary(powerplus)\nexplus(-.5, 1/5)\n\nKlaus.\n\n\nOn 17/05/2016 17:55, Albyn Jones wrote:\n> I think R is doing just what it should do, and the TI has been hacked to\n> make HS teachers happy :-)\n>\n>> log(as.complex(-2))/5\n> [1] 0.1386294+0.6283185i\n>> a <- log(as.complex(-2))/5\n>> exp(a)^5\n> [1] -2-0i\n>\n>> exp(a)\n> [1] 0.9293165+0.675188i\n>> (as.complex(-2))^(1/5)\n> [1] 0.9293165+0.675188i\n>> 2^(1/5)*cos(pi/5)\n> [1] 0.9293165\n>> 2^(1/5)*sin(pi/5)\n> [1] 0.675188\n>\n> albyn\n>\n>\n> On Tue, May 17, 2016 at 8:10 AM, Richard M. Heiberger <rmh at temple.edu>\n> wrote:\n>\n>> This problem is an example of FAQ 7.31.  Floating point numbers\n>> inside the computer can not represent odd fractions exactly.\n>>\n>>> seq(1, 15, 2)\n>> [1]  1  3  5  7  9 11 13 15\n>>> 1/seq(1, 15, 2)\n>> [1] 1.00000000 0.33333333 0.20000000 0.14285714 0.11111111 0.09090909\n>> 0.07692308\n>> [8] 0.06666667\n>>> print(1/seq(1, 15, 2), digits=18)\n>> [1] 1.0000000000000000000 0.3333333333333333148 0.2000000000000000111\n>> [4] 0.1428571428571428492 0.1111111111111111049 0.0909090909090909116\n>> [7] 0.0769230769230769273 0.0666666666666666657\n>>> ## except for 1, none of these odd fractions is exactly represented\n>> inside the computer.\n>>> ## therefore the power requested is not the exact fraction, and the\n>> result is not capable of calculation\n>>> (-2)^(1/seq(1, 15, 2))\n>> [1]  -2 NaN NaN NaN NaN NaN NaN NaN\n>> Rich\n>>\n>> On Tue, May 17, 2016 at 10:23 AM, bob at statland.org <bob at statland.org>\n>> wrote:\n>>> Forwarded message:\n>>>>>> System is working correctly. A negative number cannot be raised to a\n>>>>>> fractional power:\n>>>>>>\n>>>>>>> (-2)^(1/5)\n>>>>>> [1] NaN\n>>> Well, maybe we should say that _R_ can't raise a negative number to a\n>>> fractional power.  Neither I nor the TI calculators have any trouble\n>>> doing it;-) I'd say R is funtioning as designed, but it was designed\n>>> to respond INcorrectly;-)\n>>>\n>>> This R exchange\n>>>\n>>>> (-2)^5\n>>> [1] -32\n>>>\n>>> shows that -2 is a fifth root of -32 while this exchange\n>>>\n>>>> (-32)^(1/5)\n>>> [1] NaN\n>>>\n>>> shows that R cannot find that root.  The various suggestions for\n>>> dealing with this amount to asking R a different question which we\n>>> know has the same answer as the intended question (which R won't\n>>> answer).\n>>>\n>>> On one level you could view this as a coding/implementation issue.  I\n>>> have not looked at R's code, but the usual computer way to handle\n>>> exponents involves taking the log of the argument.  This does not\n>>> return the correct answer when the argument is negative.  That's\n>>> annoying.  The TI graphing calculators were developed with an\n>>> incredible amount of input from secondary math. teachers.  They\n>>> complained loudly about calculators returning wrong answers or\n>>> non-answers to problems to which students knew the right answers.  TI\n>>> did a LOT of work on this.  I wish R (and lots of scientific software)\n>>> would do likewise.\n>>>\n>>> On another level, involving exponentiation is not entirely avoidable.\n>>> For rational numbers like 1/5 we can (and usually do) interpret\n>>> (-32)^(1/5) as a name for a real number that when raised to the fifth\n>>> power gives -32.  Another name for one such number is -2.  But if we want\n>>> to use an irrational exponent, say (-32)^pi we can't interpret it that\n>>> way.  (How do we multiply pi numbers together?)  So eventually we have\n>>> to either exponentiate or have a funciton that is undefined at many\n>>> points.  At lesat in theory.  As far as computers and calculators are\n>>> concerned, they cannot represent irrational numbers anyway --\n>>> eveything is a rational approximation.\n>>>\n>>> So I think the defect is in R, not in the original posted question.\n>>>\n>>> ------->  First-time AP Stats. teacher?  Help is on the way! See\n>>>\n>> http://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20Hayden/Relief.html\n>>>        _\n>>>       | |          Robert W. Hayden\n>>>       | |          614 Nashua Street #119\n>>>      /  |          Milford, New Hampshire 03055  USA\n>>>     |   |\n>>>     |   |          email: bob@ the site below\n>>>    /  x |          website: http://statland.org\n>>>   |     /\n>>>   ''''''\n>>>\n>>> _______________________________________________\n>>> R-sig-teaching at r-project.org mailing list\n>>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>> _______________________________________________\n>> R-sig-teaching at r-project.org mailing list\n>> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>>\n> \t[[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n\n-- \n----------------------------------------------------\n  Klaus Langohr\n  Departament d'Estadística i Investigació Operativa\n  Universitat Politècnica de Catalunya\n  Edifici C5 (Campus Nord)\n  C/ Jordi Girona, 1-3\n  E-08034 Barcelona\n  Tel: (+34) 934 017 034\n  Fax: (+34) 934 015 855\n----------------------------------------------------\n\n\n\t[[alternative HTML version deleted]]",
       "body_snippet": "Hi,\n\nThe powerplus package does raise a negative number to a fractional \npower. Try:\n\nlibrary(powerplus)\nexplus(-.5, 1/5)\n\nKlaus.\n\n\nOn 17/05/2016 17:55, Albyn Jones wrote:\n> I think R is doing just wh",
       "thread_id": "thread-d9717cb13c11",
       "thread_depth": 3,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000699.html"
     },
     {
       "id": "msg-688559af7602",
@@ -255,7 +268,8 @@
       "body_snippet": "Hi fellow R-philes,\n\nMy contention is that R is not just for statistics.  Rather, R can be used\nin math and science classes in colleges, community colleges, and even high\nschools, to replace most uses",
       "thread_id": "thread-688559af7602",
       "thread_depth": 0,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000700.html"
     },
     {
       "id": "msg-237cbf55c5dc",
@@ -273,7 +287,8 @@
       "body_snippet": "Dear Brian,\n\nI firmly agree with you.  Indeed, I'm working with some colleagues at \nthe ASA (American Statistical Association) on trying to really broaden \nthe groups that are impacted by the use of R",
       "thread_id": "thread-688559af7602",
       "thread_depth": 1,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000701.html"
     },
     {
       "id": "msg-d79844a864cd",
@@ -289,7 +304,8 @@
       "body_snippet": "I applaud your goals and what I can see on Amazon looks good.  In\naddition to inertia and addiction to graphing calculators, high shcool\nteachers (I've worked with them in AP Stats. for 20 years or so",
       "thread_id": "thread-d79844a864cd",
       "thread_depth": 0,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000702.html"
     },
     {
       "id": "msg-472c6827cd5f",
@@ -305,7 +321,8 @@
       "body_snippet": "I would be very interested in being involved.  I am an ASA member.  I\nthink the AP Stats. teachers already using R would be terrific\nresources.  I am not sure we need to start a new list -- there is\nl",
       "thread_id": "thread-472c6827cd5f",
       "thread_depth": 0,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000703.html"
     },
     {
       "id": "msg-e93d7d2e1fa6",
@@ -324,7 +341,8 @@
       "body_snippet": "I think R is an outstanding tool for high schoolers.  Might as well\nteach good data habits from the get-go, rather than spend the first\ntwo (or more) years of college un-teaching bad ones.\n\nBack aroun",
       "thread_id": "thread-688559af7602",
       "thread_depth": 2,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000705.html"
     },
     {
       "id": "msg-c91e699e37ca",
@@ -342,7 +360,8 @@
       "body_snippet": ">>>>> User Hayden <bob at statland.org>\n>>>>>     on Tue, 17 May 2016 18:17:50 -0400 writes:\n\n    > I applaud your goals and what I can see on Amazon looks\n    > good.  In addition to inertia and addi",
       "thread_id": "thread-d79844a864cd",
       "thread_depth": 1,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000704.html"
     },
     {
       "id": "msg-a3d2e3bfd89a",
@@ -361,7 +380,8 @@
       "body_snippet": "> I agree that R-SIG-Teaching is an appropriate place to keep this\n> topic going.  To us non-Americans, can you explain \"AP\n> Statistics\" to us and possibly use URLs when you mention\n> websites?\n\nAP =",
       "thread_id": "thread-d79844a864cd",
       "thread_depth": 2,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000706.html"
     },
     {
       "id": "msg-2639fadc403f",
@@ -377,7 +397,8 @@
       "body_snippet": "Martin, I'm not sure what URL was missing.  Here is a list of AP\ncourses.\n\nhttps://apstudent.collegeboard.org/apcourse\n\nThe program is not just for the US.  Discussion of the current exam is\nbanned un",
       "thread_id": "thread-2639fadc403f",
       "thread_depth": 0,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000707.html"
     },
     {
       "id": "msg-203cbc0341de",
@@ -397,7 +418,8 @@
       "body_snippet": "AP Statistics course URL :\nhttp://apcentral.collegeboard.com/apstatistics. AP courses will rarely\nprovide a credit (i.e., the grade that the university will put on\ntheir transcript), but they can be u",
       "thread_id": "thread-d79844a864cd",
       "thread_depth": 3,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000708.html"
     },
     {
       "id": "msg-cabd7ab28cd6",
@@ -413,7 +435,8 @@
       "body_snippet": "I often agree with the identification of issues below, and sometimes\nwith the opinions, but I think there are some factual errors and\nomissions.  Details within...\n\n\n\nForwarded message:\n> From: Stas K",
       "thread_id": "thread-cabd7ab28cd6",
       "thread_depth": 0,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000709.html"
     },
     {
       "id": "msg-b210461a69e2",
@@ -432,7 +455,8 @@
       "body_snippet": "Dear All:\n\n\ncan someone please help me to plot the *Folium of Descrates:**  x^3+y^3=3xy\nfor x<-seq(-5,5,0.010) and **y<-seq(-5,5,0.010) *\n<https://www.google.com/search?biw=1155&bih=597&q=R:+Folium+of",
       "thread_id": "thread-b2c583c04eb4",
       "thread_depth": 2,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000710.html"
     },
     {
       "id": "msg-f92cd852bf3c",
@@ -448,7 +472,8 @@
       "body_snippet": "Dear All:\n\n\ncan someone please help me to plot the *Folium of Descrates:**  x^3+y^3=3xy\nfor x<-seq(-5,5,0.010) and **y<-seq(-5,5,0.010) *\n\n\nwith thanks\nsteve\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\n",
       "thread_id": "thread-f92cd852bf3c",
       "thread_depth": 0,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000711.html"
     },
     {
       "id": "msg-bc47a10e711d",
@@ -468,7 +493,8 @@
       "body_snippet": "Use the t-parametrized form from e.g.,\nhttp://mathworld.wolfram.com/FoliumofDescartes.html\n\nt <- seq(-50, 50, by=0.01)\nx <- 3*t/(1+t^3)\ny <- 3*t^2/(1+t^3)\nplot(x, y, xlim=c(-5, 5), ylim=c(-5, 5), type",
       "thread_id": "thread-b2c583c04eb4",
       "thread_depth": 3,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000712.html"
     },
     {
       "id": "msg-2de2da106fa7",
@@ -486,7 +512,8 @@
       "body_snippet": "Use the t-parametrized form from e.g.,\nhttp://mathworld.wolfram.com/FoliumofDescartes.html\n\nt <- seq(-50, 50, by=0.01)\nx <- 3*t/(1+t^3)\ny <- 3*t^2/(1+t^3)\nplot(x, y, xlim=c(-5, 5), ylim=c(-5, 5), type",
       "thread_id": "thread-f92cd852bf3c",
       "thread_depth": 1,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000713.html"
     },
     {
       "id": "msg-71786e02711a",
@@ -502,7 +529,8 @@
       "body_snippet": "Is this a STATISTICAL problem?  In this and the earleir post I think\nyou may be using R for a purpose for which it was not intended.  \n\nThat said, you might find something useful here:\n\nhttp://stackov",
       "thread_id": "thread-71786e02711a",
       "thread_depth": 0,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000714.html"
     },
     {
       "id": "msg-f401ee01eeb6",
@@ -520,7 +548,8 @@
       "body_snippet": ">>>>> User Hayden <bob at statland.org>\n>>>>>     on Wed, 18 May 2016 07:57:37 -0400 writes:\n\n    > Martin, I'm not sure what URL was missing.  \n\nnever mind.. others have provided more context, includ",
       "thread_id": "thread-2639fadc403f",
       "thread_depth": 1,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000715.html"
     },
     {
       "id": "msg-e620dc2eff27",
@@ -536,7 +565,8 @@
       "body_snippet": "Dear fellow R fanatics:\n\nThanks to all of you for posting on this topic, especially to Brian\nDennis for kicking things off. Teaching R and stats to young people is\nsomething that is near and dear to m",
       "thread_id": "thread-e620dc2eff27",
       "thread_depth": 0,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000716.html"
     },
     {
       "id": "msg-04fed9a5c9e8",
@@ -552,7 +582,8 @@
       "body_snippet": "Forwarded message:\n> From: Nick Carchedi <nick at datacamp.com>\n \n> I'll focus on AP Statistics for a moment, since for young people in\n> the US, it's often the first (and unfortunately for many, thei",
       "thread_id": "thread-04fed9a5c9e8",
       "thread_depth": 0,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000717.html"
     },
     {
       "id": "msg-26b744367a55",
@@ -568,7 +599,8 @@
       "body_snippet": "http://apcentral.collegeboard.com/apc/members/exam/exam_information/8357.html\n\n------->  First-time AP Stats. teacher?  Help is on the way! See\nhttp://courses.ncssm.edu/math/Stat_Inst/Stats2007/Bob%20",
       "thread_id": "thread-26b744367a55",
       "thread_depth": 0,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000718.html"
     },
     {
       "id": "msg-9d84bf3d8389",
@@ -584,7 +616,8 @@
       "body_snippet": "Dear all,\n\nI hope it is fine to advertise this event here.\n\nThanks to generous sponsorship from the R Consortium, Software Carpentry\nis running a two-day R instructor training class in Cambridge, UK, ",
       "thread_id": "thread-9d84bf3d8389",
       "thread_depth": 0,
-      "month": "2016-05"
+      "month": "2016-05",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000719.html"
     }
   ],
   "threads": [

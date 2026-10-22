@@ -20,7 +20,8 @@
       "body_snippet": "A message on behalf of Bjoern Fisseler.\n\n\n-Bret Larget",
       "thread_id": "thread-86fa33d5e247",
       "thread_depth": 0,
-      "month": "2018-02"
+      "month": "2018-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2018q1/000788.html"
     },
     {
       "id": "msg-fdd4ccd4b239",
@@ -36,7 +37,8 @@
       "body_snippet": "Forwarded message:\n\n\n------------------------------------------------------------------------------\n\nDear list,\n\nI'm currently thinking about possible ways how to interactively teach R\nto psychology s",
       "thread_id": "thread-fdd4ccd4b239",
       "thread_depth": 0,
-      "month": "2018-02"
+      "month": "2018-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2018q1/000789.html"
     },
     {
       "id": "msg-61d385cbba89",
@@ -54,7 +56,8 @@
       "body_snippet": "Are you familiar with the learnr package for creating tutorials?  That might do much of what you want.  Also, checkr (by Danny Kaplan) is in development and will provide a way for you to check work an",
       "thread_id": "thread-fdd4ccd4b239",
       "thread_depth": 1,
-      "month": "2018-02"
+      "month": "2018-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2018q1/000790.html"
     },
     {
       "id": "msg-598cf6dede14",
@@ -72,7 +75,8 @@
       "body_snippet": "DataCamp offers a free subscription to classes with appropriate academic credentials.\nBest,\nJoe\n\nSent from my iPhone\n\n> On Feb 20, 2018, at 8:40 PM, BRET R LARGET <bret.larget at wisc.edu> wrote:\n> \n>",
       "thread_id": "thread-fdd4ccd4b239",
       "thread_depth": 1,
-      "month": "2018-02"
+      "month": "2018-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2018q1/000791.html"
     },
     {
       "id": "msg-213a2d4cce84",
@@ -91,7 +95,8 @@
       "body_snippet": "Agree with Joe - Create an educational \"classroom\" group in Data Camp. Once they confirm you're a valid instructor you can add students and they get all Data Camp courses for free for the duration of ",
       "thread_id": "thread-fdd4ccd4b239",
       "thread_depth": 2,
-      "month": "2018-02"
+      "month": "2018-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2018q1/000792.html"
     }
   ],
   "threads": [

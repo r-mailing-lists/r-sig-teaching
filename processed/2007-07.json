@@ -17,7 +17,8 @@
       "body_snippet": "I have to compare several proteomic expression data of four different \ncultivar collected in two different year (4 x 2). what sort of \nstatistical analysis have I to perform in your opinion?",
       "thread_id": "thread-7825d53e4e59",
       "thread_depth": 0,
-      "month": "2007-07"
+      "month": "2007-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2007q3/000022.html"
     },
     {
       "id": "msg-55762f185184",
@@ -35,7 +36,8 @@
       "body_snippet": "On Tue, Jul 03, 2007 at 05:18:22PM +0200, Simone Negri wrote:\n> I have to compare several proteomic expression data of four different \n> cultivar collected in two different year (4 x 2). what sort of ",
       "thread_id": "thread-7825d53e4e59",
       "thread_depth": 1,
-      "month": "2007-07"
+      "month": "2007-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2007q3/000023.html"
     }
   ],
   "threads": [

@@ -17,7 +17,8 @@
       "body_snippet": "Dear All:\n\n\nI want to simulate two independent log-normal distributions 10,000 times\n(say)\n\n*Log-normal 1: *  -10 <= mu1 <=100 and  0< sigma1 <=25   (say)\n\n*Log-normal 2: *  5 <= mu2 <=50  and  0< sig",
       "thread_id": "thread-410f1df05c9d",
       "thread_depth": 0,
-      "month": "2017-01"
+      "month": "2017-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q1/000743.html"
     },
     {
       "id": "msg-0c00ceca359e",
@@ -32,11 +33,12 @@
         "<CAHDp66CWXiWXubdUC-7N8OP3pX3VGbTZ+BFU=PVo73VaX+jQ3Q@mail.gmail.com>",
         "<F9520D63-F1F9-4680-B295-D99E00F66012@calvin.edu>"
       ],
-      "body_plain": "Dear Randall:\n\n\nI do need to simulate two independent log-normal distributions (say 10,000\ntimes) with the following specifications\n\nlog-normal dist. 1:  the mean mu1 and st.dev1. falls in the ranges   -100\n<= mu1 <=100 and 0< sigma1 <=25.\n\nlog-normal dist. 2:  the mean mu2 and st.dev2. falls in the ranges   -10 <=\nmu2 <=50 and 0< sigma1 <=10.\n\nI am not sure how to assure independency.\n\n\nwith thanks\nsteve\n\nOn Tue, Jan 24, 2017 at 3:06 PM, Randall Pruim <rpruim at calvin.edu> wrote:\n\n> I?m not sure exactly what you want, but I suggest starting with\n>\n> ?rlnorm\n>\n> ?rjp\n>\n> > On Jan 24, 2017, at 2:59 PM, Steven Stoline <sstoline at gmail.com> wrote:\n> >\n> > Dear All:\n> >\n> >\n> > I want to simulate two independent log-normal distributions 10,000 times\n> > (say)\n> >\n> > *Log-normal 1: *  -10 <= mu1 <=100 and  0< sigma1 <=25   (say)\n> >\n> > *Log-normal 2: *  5 <= mu2 <=50  and  0< sigma2 <=10    (say)\n> >\n> >\n> > Your help will be highly appreciated.\n> >\n> >\n> >\n> > Thank you very much for your support and help.\n> >\n> >\n> > with thanks\n> > steve\n> >\n> > --\n> > Steven M. Stoline\n> > sstoline at gmail.com\n> >\n> >       [[alternative HTML version deleted]]\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
+      "body_plain": "Dear Randall:\n\n\nI do need to simulate two independent log-normal distributions (say 10,000\ntimes) with the following specifications\n\nlog-normal dist. 1:  the mean mu1 and st.dev1. falls in the ranges   -100\n<= mu1 <=100 and 0< sigma1 <=25.\n\nlog-normal dist. 2:  the mean mu2 and st.dev2. falls in the ranges   -10 <=\nmu2 <=50 and 0< sigma1 <=10.\n\nI am not sure how to assure independency.\n\n\nwith thanks\nsteve\n\nOn Tue, Jan 24, 2017 at 3:06 PM, Randall Pruim <rpruim at calvin.edu> wrote:\n\n> I’m not sure exactly what you want, but I suggest starting with\n>\n> ?rlnorm\n>\n> —rjp\n>\n> > On Jan 24, 2017, at 2:59 PM, Steven Stoline <sstoline at gmail.com> wrote:\n> >\n> > Dear All:\n> >\n> >\n> > I want to simulate two independent log-normal distributions 10,000 times\n> > (say)\n> >\n> > *Log-normal 1: *  -10 <= mu1 <=100 and  0< sigma1 <=25   (say)\n> >\n> > *Log-normal 2: *  5 <= mu2 <=50  and  0< sigma2 <=10    (say)\n> >\n> >\n> > Your help will be highly appreciated.\n> >\n> >\n> >\n> > Thank you very much for your support and help.\n> >\n> >\n> > with thanks\n> > steve\n> >\n> > --\n> > Steven M. Stoline\n> > sstoline at gmail.com\n> >\n> >       [[alternative HTML version deleted]]\n> >\n> > _______________________________________________\n> > R-sig-teaching at r-project.org mailing list\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-teaching\n>\n>\n\n\n-- \nSteven M. Stoline\n1123 Forest Avenue\nPortland, ME 04112\nsstoline at gmail.com\n\n\t[[alternative HTML version deleted]]",
       "body_snippet": "Dear Randall:\n\n\nI do need to simulate two independent log-normal distributions (say 10,000\ntimes) with the following specifications\n\nlog-normal dist. 1:  the mean mu1 and st.dev1. falls in the ranges ",
       "thread_id": "thread-0c00ceca359e",
       "thread_depth": 0,
-      "month": "2017-01"
+      "month": "2017-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q1/000744.html"
     },
     {
       "id": "msg-ba12cb99d597",
@@ -54,7 +56,8 @@
       "body_snippet": "This doesn't really make sense.  I can't figure out what you mean by having\nthe parameters \"fall in the range\".  Do you want to do a Bayesian\nsimulation where the prior is a uniform on those ranges?  ",
       "thread_id": "thread-410f1df05c9d",
       "thread_depth": 1,
-      "month": "2017-01"
+      "month": "2017-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q1/000745.html"
     },
     {
       "id": "msg-6f00683d702b",
@@ -73,7 +76,8 @@
       "body_snippet": "\"I also don't see what this has to do with how to use R to teach\nstatistics.\"  me neither.\nit looks like a question for the r-help list.\n\nOn Tue, Jan 24, 2017 at 12:57 PM, Jeff Laux <jefflaux at gmail",
       "thread_id": "thread-410f1df05c9d",
       "thread_depth": 2,
-      "month": "2017-01"
+      "month": "2017-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q1/000746.html"
     },
     {
       "id": "msg-7c2574635d78",
@@ -93,7 +97,8 @@
       "body_snippet": "Dear All:\n\n\nI did mean how to conduct such simulation in R.\n\nLet me make it more simple.\n\nWant to simulate two independent log-normal distributions with parameters:\n\nLog-normal Distribution 1: mu1 = 5",
       "thread_id": "thread-410f1df05c9d",
       "thread_depth": 3,
-      "month": "2017-01"
+      "month": "2017-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q1/000747.html"
     },
     {
       "id": "msg-ef26f169de2f",
@@ -114,7 +119,8 @@
       "body_snippet": "As someone replied before, perhaps you could use rlnorm. Type ?rlnorm for\nmore information.\n\nd1 <- (10000, meanlog = 10, sdlog = 10)\nd2 <- (10000, meanlog = 25, sdlog = 5)\n\nWould that do the trick?\n\nK",
       "thread_id": "thread-410f1df05c9d",
       "thread_depth": 4,
-      "month": "2017-01"
+      "month": "2017-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q1/000748.html"
     }
   ],
   "threads": [

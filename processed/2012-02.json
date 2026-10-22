@@ -18,6 +18,7 @@
       "thread_id": "thread-386f944dedea",
       "thread_depth": 0,
       "month": "2012-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q1/000401.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120215/881f3fd5/attachment.pl"
       ]
@@ -37,6 +38,7 @@
       "thread_id": "thread-701ec2cfb580",
       "thread_depth": 0,
       "month": "2012-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q1/000402.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120216/1845e1e2/attachment.pl"
       ]
@@ -57,7 +59,8 @@
       "body_snippet": "You should probably say more about which graphics engine you are\nusing, but here's a start:\n\ncurve(x^2-4, from = -3, to = 3)\nx <- seq(-3, 3, length.out = 200)\npolygon(c(x, rev(x)), c(x^2-4, rep(Inf, l",
       "thread_id": "thread-701ec2cfb580",
       "thread_depth": 1,
-      "month": "2012-02"
+      "month": "2012-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q1/000403.html"
     },
     {
       "id": "msg-3bd9a3892333",
@@ -76,7 +79,8 @@
       "body_snippet": "I'm not sure exactly what sort of plot was desired, but I'll offer 1.5  \npossibilities.\n\nCurrently you can do something like this:\n\nrequire(mosaic)\nplotFun( x^2 - 4 ~ x , xlim=c(-6,6), col='blue' )\npl",
       "thread_id": "thread-701ec2cfb580",
       "thread_depth": 2,
-      "month": "2012-02"
+      "month": "2012-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q1/000404.html"
     },
     {
       "id": "msg-70680c8e0d82",
@@ -96,7 +100,8 @@
       "body_snippet": "The xlim=c(-6,-2) is extraneous in the code below.  It snuck in from  \nsomething else I was doing.  It doesn't hurt any, but it doesn't do  \nanything either since the plotting limits are inferred from",
       "thread_id": "thread-701ec2cfb580",
       "thread_depth": 3,
-      "month": "2012-02"
+      "month": "2012-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q1/000405.html"
     }
   ],
   "threads": [

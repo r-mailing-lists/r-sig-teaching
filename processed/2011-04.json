@@ -18,6 +18,7 @@
       "thread_id": "thread-0fc81b0c2843",
       "thread_depth": 0,
       "month": "2011-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q2/000363.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110402/1c46020e/attachment.pl"
       ]
@@ -38,7 +39,8 @@
       "body_snippet": "Run this:\n\nhttp://pj.freefaculty.org/R/WorkingExamples/Normal1_2009_plotmathExample.R\n\nYour eyes will dance with joy! As I demonstrate:\n\nhttp://pj.freefaculty.org/R/WorkingExamples/Normal-2009.pdf\n\nI'",
       "thread_id": "thread-0fc81b0c2843",
       "thread_depth": 1,
-      "month": "2011-04"
+      "month": "2011-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q2/000364.html"
     },
     {
       "id": "msg-eaff38470497",
@@ -56,7 +58,8 @@
       "body_snippet": "Ali,\n\nI'm not completely sure of your purpose but I have my students use plot.htest() in my NCStats package (available at rforge.net/NCStats) to plot the p-value following the results of z.test() (fro",
       "thread_id": "thread-0fc81b0c2843",
       "thread_depth": 1,
-      "month": "2011-04"
+      "month": "2011-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q2/000365.html"
     },
     {
       "id": "msg-e2eb413a99e4",
@@ -74,7 +77,8 @@
       "body_snippet": "Look at the power.examp function in the TeachingDemos function.  It may be what you want, or you could take some of the code from it to do what you want.\n\nThe function Pvalue.norm.sim (also in Teachin",
       "thread_id": "thread-0fc81b0c2843",
       "thread_depth": 1,
-      "month": "2011-04"
+      "month": "2011-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q2/000366.html"
     },
     {
       "id": "msg-992cbae6ef1b",
@@ -93,7 +97,8 @@
       "body_snippet": "Hi Ali,\n\nThis is along the lines of Paul Johnson's plot, but more functiony and\nsans fancy labels.  I just wrote this to speed up including some\nexamples of the shapes of different distributions and t",
       "thread_id": "thread-0fc81b0c2843",
       "thread_depth": 2,
-      "month": "2011-04"
+      "month": "2011-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q2/000367.html"
     },
     {
       "id": "msg-01b5bb33133a",
@@ -111,7 +116,8 @@
       "body_snippet": "On Sat, Apr 2, 2011 at 11:12 PM, Ali Zanaty <zanaty2005 at yahoo.com> wrote:\n> Can someone help me with the plotting the p-values under the normal curve (say).\n>\nSee this thread [1] for additional poi",
       "thread_id": "thread-0fc81b0c2843",
       "thread_depth": 1,
-      "month": "2011-04"
+      "month": "2011-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q2/000368.html"
     },
     {
       "id": "msg-8ecb16a4c9d2",
@@ -128,6 +134,7 @@
       "thread_id": "thread-8ecb16a4c9d2",
       "thread_depth": 0,
       "month": "2011-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q2/000369.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110405/eacfccc7/attachment.pl"
       ]
@@ -147,6 +154,7 @@
       "thread_id": "thread-8c7d57fe6d15",
       "thread_depth": 0,
       "month": "2011-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q2/000370.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110418/f4df140c/attachment.pl"
       ]
@@ -167,7 +175,8 @@
       "body_snippet": "Hi Ali,\n\nThe same mechanisms that shade the area of a distribution for\ndifferent p-values will also work for the rejection region, so see the\nsuggestions from your previous email.  If you need to find",
       "thread_id": "thread-8c7d57fe6d15",
       "thread_depth": 1,
-      "month": "2011-04"
+      "month": "2011-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q2/000371.html"
     }
   ],
   "threads": [

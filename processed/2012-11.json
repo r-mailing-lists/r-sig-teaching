@@ -18,6 +18,7 @@
       "thread_id": "thread-77744d7ea066",
       "thread_depth": 0,
       "month": "2012-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q4/000491.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121119/8a25e3d5/attachment.pl"
       ]
@@ -38,7 +39,8 @@
       "body_snippet": "Have you looked at the teaching resources on the CRAN website?\nIf not, take a look at the \"Contributed\" link under Documentation.\nThere are also numerous published texts that you might find helpful,\ne",
       "thread_id": "thread-77744d7ea066",
       "thread_depth": 1,
-      "month": "2012-11"
+      "month": "2012-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q4/000492.html"
     },
     {
       "id": "msg-bf277527fad5",
@@ -54,7 +56,8 @@
       "body_snippet": "Hi\nThere are few things that you can do,\n\n\n1. Install the package \"TeachingDemos\" by Greg Snow,\n\n2. Visit the Rwiki page, http://rwiki.sciviews.org/doku.php\n\n3. May visit the page http://www.cyclismo.",
       "thread_id": "thread-77744d7ea066",
       "thread_depth": 2,
-      "month": "2012-11"
+      "month": "2012-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q4/000493.html"
     },
     {
       "id": "msg-ace8caf4102e",
@@ -72,7 +75,8 @@
       "body_snippet": "I haven't taught from that book in a while, but here are some tips:\n\n1) If the 7th edition is still current, grab the Devore7 package which contains many of the data sets (sometimes awkwardly formatte",
       "thread_id": "thread-77744d7ea066",
       "thread_depth": 1,
-      "month": "2012-11"
+      "month": "2012-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q4/000494.html"
     },
     {
       "id": "msg-2ccd78d666f4",
@@ -88,7 +92,8 @@
       "body_snippet": "Dear All\nI am a stats newbie and have a basic stats question;\ni have y as dependent variable and x1 to x5 as dependent variable.\nI need to know which variables x1 to x5 are actually affecting y. How\nd",
       "thread_id": "thread-2ccd78d666f4",
       "thread_depth": 0,
-      "month": "2012-11"
+      "month": "2012-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q4/000495.html"
     },
     {
       "id": "msg-73ccbf88899a",
@@ -106,7 +111,8 @@
       "body_snippet": "Dear Parth\n\nThis is a forum for the discussion of the use of R in teaching\nstatistics, not for giving statistical advice.  \n\nIt sounds like you need to take a statistics course.\n\nalbyn\n\nOn Mon, Nov 19",
       "thread_id": "thread-2ccd78d666f4",
       "thread_depth": 1,
-      "month": "2012-11"
+      "month": "2012-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q4/000496.html"
     },
     {
       "id": "msg-de94be80346b",
@@ -122,7 +128,8 @@
       "body_snippet": "Almost all the R documentation seems to me to be written for\nstatistician/programmers and is way over the heads of most students.\nFor that reason I made my own materials for my online classes and they",
       "thread_id": "thread-de94be80346b",
       "thread_depth": 0,
-      "month": "2012-11"
+      "month": "2012-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q4/000497.html"
     },
     {
       "id": "msg-ab32319b6bf8",
@@ -141,6 +148,7 @@
       "thread_id": "thread-ab32319b6bf8",
       "thread_depth": 0,
       "month": "2012-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q4/000498.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20121119/01702534/attachment.pl"
       ]
@@ -198,7 +206,8 @@
       "body_snippet": "On 11/18/2012 8:09 PM, Nguyen Chanh Tu wrote:\n> Dear all,\n> I am going to teach Probability and Statistics for engineering students. I\n> probably use the book \"Probability and Statistics for engineeri",
       "thread_id": "thread-77744d7ea066",
       "thread_depth": 1,
-      "month": "2012-11"
+      "month": "2012-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q4/000501.html"
     }
   ],
   "threads": [

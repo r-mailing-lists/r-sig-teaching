@@ -17,7 +17,8 @@
       "body_snippet": "Dear All: good morning\n\n\nSuppose X has a Laplace distribution with mean 105 and variance 100.\n\n\n*How to compute the probability P(X > 100) using R.*\n\n\nAny help will be highly appreciated.\n\n\nwith thank",
       "thread_id": "thread-4b810bf7c132",
       "thread_depth": 0,
-      "month": "2017-04"
+      "month": "2017-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q2/000760.html"
     },
     {
       "id": "msg-620c106c807a",
@@ -35,7 +36,8 @@
       "body_snippet": ">>>>> AbouEl-Makarim Aboueissa <abouelmakarim1962 at gmail.com>\n>>>>>     on Tue, 18 Apr 2017 06:52:11 -0400 writes:\n\n    > Dear All: good morning Suppose X has a Laplace\n    > distribution with mean ",
       "thread_id": "thread-4b810bf7c132",
       "thread_depth": 1,
-      "month": "2017-04"
+      "month": "2017-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q2/000761.html"
     },
     {
       "id": "msg-ca2b9790c492",
@@ -54,7 +56,8 @@
       "body_snippet": "Dear All:\n\nI am teaching a nonparametric course, and want to compute the power of the\nsign test assuming that the x's has laplace distribution under Ha.\n\nwhat is wrong with that.\n\nany way thank you ve",
       "thread_id": "thread-4b810bf7c132",
       "thread_depth": 2,
-      "month": "2017-04"
+      "month": "2017-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q2/000762.html"
     },
     {
       "id": "msg-b50a83dabf5f",
@@ -70,7 +73,8 @@
       "body_snippet": "There is nothing wrong with doing that but this list is not for how-to\nquestions about how to get R to do something.  It is about educational\nuses of R.  For example, one might ask about which R inter",
       "thread_id": "thread-b50a83dabf5f",
       "thread_depth": 0,
-      "month": "2017-04"
+      "month": "2017-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q2/000763.html"
     },
     {
       "id": "msg-4990b3f3eec0",
@@ -90,7 +94,8 @@
       "body_snippet": "I think it's fine to teach a nonparametric statistics course, and it's fine\nto compute the power of the sign test.  However, your question is not about\nusing R in teaching.  It is just about using R t",
       "thread_id": "thread-4b810bf7c132",
       "thread_depth": 3,
-      "month": "2017-04"
+      "month": "2017-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q2/000764.html"
     },
     {
       "id": "msg-6b654ebed158",
@@ -102,11 +107,12 @@
       "subject_clean": "About the standard gaussian distribution",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "First of all I have to apologize because my english is horrible. \n\nI am working in a basic and practical statistic course. \n\nI will speak about confidence intervals, of course. \n\nBut when I was preparing this chapter I had a doubt: I wonder if it has sence today to explain the confidence intervals for a mean in terms of the standard normal distribution. \n\nIf we show that the mean follows a normal distribution with variance/n then it is easy to explain (and to understand) that the confidence interval is due to two percentiles, the percentile alpha/2 and the percentile 1-alpha/2 from a normal distribution with the sample mean and the sample variance/n. \n\nI think that the standard gaussian distribution was usefull when we had to calculate CI in the past. \nThat is, it was a simple way to have all possibilities in a single table (in paper). \n\nBut now, we have R functions that let us to obtain the exact values for any normal distribution. \n\nI think that is not necessary to explain how to work with transformations if we can explain that a CI is simply to identify percentiles. \n\nWhat do you think?\n\nThanks\n\nPD I know that the normal distribution for CI need some hipothesis. But I have focused the question\n\n_________________________\n\nDavid Monterde\n\nLo dif?cil se hace. \nLo imposible se intenta. \n_________________________\n\t[[alternative HTML version deleted]]",
+      "body_plain": "First of all I have to apologize because my english is horrible. \n\nI am working in a basic and practical statistic course. \n\nI will speak about confidence intervals, of course. \n\nBut when I was preparing this chapter I had a doubt: I wonder if it has sence today to explain the confidence intervals for a mean in terms of the standard normal distribution. \n\nIf we show that the mean follows a normal distribution with variance/n then it is easy to explain (and to understand) that the confidence interval is due to two percentiles, the percentile alpha/2 and the percentile 1-alpha/2 from a normal distribution with the sample mean and the sample variance/n. \n\nI think that the standard gaussian distribution was usefull when we had to calculate CI in the past. \nThat is, it was a simple way to have all possibilities in a single table (in paper). \n\nBut now, we have R functions that let us to obtain the exact values for any normal distribution. \n\nI think that is not necessary to explain how to work with transformations if we can explain that a CI is simply to identify percentiles. \n\nWhat do you think?\n\nThanks\n\nPD I know that the normal distribution for CI need some hipothesis. But I have focused the question\n\n_________________________\n\nDavid Monterde\n\nLo difícil se hace. \nLo imposible se intenta. \n_________________________\n\t[[alternative HTML version deleted]]",
       "body_snippet": "First of all I have to apologize because my english is horrible. \n\nI am working in a basic and practical statistic course. \n\nI will speak about confidence intervals, of course. \n\nBut when I was prepar",
       "thread_id": "thread-6b654ebed158",
       "thread_depth": 0,
-      "month": "2017-04"
+      "month": "2017-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q2/000765.html"
     },
     {
       "id": "msg-4b2bcf7b1805",
@@ -122,7 +128,8 @@
       "body_snippet": "Your English is better than that of many of my born-in-USA students;-)\n\nI work regularly with high school teachers of AP Statistics -- a\nprogram that allows high school students to get college credit ",
       "thread_id": "thread-4b2bcf7b1805",
       "thread_depth": 0,
-      "month": "2017-04"
+      "month": "2017-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q2/000766.html"
     },
     {
       "id": "msg-1d62b454a399",
@@ -136,11 +143,12 @@
       "references": [
         "<33B63E65-E776-4605-8814-18682BE0AC92@me.com>"
       ],
-      "body_plain": "I agree that, for an intro class, working with the z-score + standard\nnormal is probably unnecessary.\n\nIf your students go further, it's a useful example of the idea of a\npivot, but you can probably explain that when they get there.\n\nOn Thu, Apr 20, 2017 at 10:07 AM, David Monterde <dmonterde at me.com> wrote:\n> First of all I have to apologize because my english is horrible.\n>\n> I am working in a basic and practical statistic course.\n>\n> I will speak about confidence intervals, of course.\n>\n> But when I was preparing this chapter I had a doubt: I wonder if it has sence today to explain the confidence intervals for a mean in terms of the standard normal distribution.\n>\n> If we show that the mean follows a normal distribution with variance/n then it is easy to explain (and to understand) that the confidence interval is due to two percentiles, the percentile alpha/2 and the percentile 1-alpha/2 from a normal distribution with the sample mean and the sample variance/n.\n>\n> I think that the standard gaussian distribution was usefull when we had to calculate CI in the past.\n> That is, it was a simple way to have all possibilities in a single table (in paper).\n>\n> But now, we have R functions that let us to obtain the exact values for any normal distribution.\n>\n> I think that is not necessary to explain how to work with transformations if we can explain that a CI is simply to identify percentiles.\n>\n> What do you think?\n>\n> Thanks\n>\n> PD I know that the normal distribution for CI need some hipothesis. But I have focused the question\n>\n> _________________________\n>\n> David Monterde\n>\n> Lo dif?cil se hace.\n> Lo imposible se intenta.\n> _________________________\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_plain": "I agree that, for an intro class, working with the z-score + standard\nnormal is probably unnecessary.\n\nIf your students go further, it's a useful example of the idea of a\npivot, but you can probably explain that when they get there.\n\nOn Thu, Apr 20, 2017 at 10:07 AM, David Monterde <dmonterde at me.com> wrote:\n> First of all I have to apologize because my english is horrible.\n>\n> I am working in a basic and practical statistic course.\n>\n> I will speak about confidence intervals, of course.\n>\n> But when I was preparing this chapter I had a doubt: I wonder if it has sence today to explain the confidence intervals for a mean in terms of the standard normal distribution.\n>\n> If we show that the mean follows a normal distribution with variance/n then it is easy to explain (and to understand) that the confidence interval is due to two percentiles, the percentile alpha/2 and the percentile 1-alpha/2 from a normal distribution with the sample mean and the sample variance/n.\n>\n> I think that the standard gaussian distribution was usefull when we had to calculate CI in the past.\n> That is, it was a simple way to have all possibilities in a single table (in paper).\n>\n> But now, we have R functions that let us to obtain the exact values for any normal distribution.\n>\n> I think that is not necessary to explain how to work with transformations if we can explain that a CI is simply to identify percentiles.\n>\n> What do you think?\n>\n> Thanks\n>\n> PD I know that the normal distribution for CI need some hipothesis. But I have focused the question\n>\n> _________________________\n>\n> David Monterde\n>\n> Lo difícil se hace.\n> Lo imposible se intenta.\n> _________________________\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
       "body_snippet": "I agree that, for an intro class, working with the z-score + standard\nnormal is probably unnecessary.\n\nIf your students go further, it's a useful example of the idea of a\npivot, but you can probably e",
       "thread_id": "thread-6b654ebed158",
       "thread_depth": 1,
-      "month": "2017-04"
+      "month": "2017-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q2/000767.html"
     },
     {
       "id": "msg-1c3d9e6a439e",
@@ -154,11 +162,12 @@
       "references": [
         "<33B63E65-E776-4605-8814-18682BE0AC92@me.com>"
       ],
-      "body_plain": "Let me suggest the interactive graphic NTplot in the HH package.\n\n## install.packages(\"HH\") ## if you don't have it yet.\nlibrary(HH)\nNTplot(shiny=TRUE)\n\n[to exit a shiny app, use C-c C-c in the R window in Macintosh, and\n<esc> in the R window in Windows]\n\nThis single display covers about 60% of the introductory course.\nSee ?NTplot for additional examples.\nBe sure to read the Details section and the examples.\n\nOn Thu, Apr 20, 2017 at 11:07 AM, David Monterde <dmonterde at me.com> wrote:\n> First of all I have to apologize because my english is horrible.\n>\n> I am working in a basic and practical statistic course.\n>\n> I will speak about confidence intervals, of course.\n>\n> But when I was preparing this chapter I had a doubt: I wonder if it has sence today to explain the confidence intervals for a mean in terms of the standard normal distribution.\n>\n> If we show that the mean follows a normal distribution with variance/n then it is easy to explain (and to understand) that the confidence interval is due to two percentiles, the percentile alpha/2 and the percentile 1-alpha/2 from a normal distribution with the sample mean and the sample variance/n.\n>\n> I think that the standard gaussian distribution was usefull when we had to calculate CI in the past.\n> That is, it was a simple way to have all possibilities in a single table (in paper).\n>\n> But now, we have R functions that let us to obtain the exact values for any normal distribution.\n>\n> I think that is not necessary to explain how to work with transformations if we can explain that a CI is simply to identify percentiles.\n>\n> What do you think?\n>\n> Thanks\n>\n> PD I know that the normal distribution for CI need some hipothesis. But I have focused the question\n>\n> _________________________\n>\n> David Monterde\n>\n> Lo dif?cil se hace.\n> Lo imposible se intenta.\n> _________________________\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
+      "body_plain": "Let me suggest the interactive graphic NTplot in the HH package.\n\n## install.packages(\"HH\") ## if you don't have it yet.\nlibrary(HH)\nNTplot(shiny=TRUE)\n\n[to exit a shiny app, use C-c C-c in the R window in Macintosh, and\n<esc> in the R window in Windows]\n\nThis single display covers about 60% of the introductory course.\nSee ?NTplot for additional examples.\nBe sure to read the Details section and the examples.\n\nOn Thu, Apr 20, 2017 at 11:07 AM, David Monterde <dmonterde at me.com> wrote:\n> First of all I have to apologize because my english is horrible.\n>\n> I am working in a basic and practical statistic course.\n>\n> I will speak about confidence intervals, of course.\n>\n> But when I was preparing this chapter I had a doubt: I wonder if it has sence today to explain the confidence intervals for a mean in terms of the standard normal distribution.\n>\n> If we show that the mean follows a normal distribution with variance/n then it is easy to explain (and to understand) that the confidence interval is due to two percentiles, the percentile alpha/2 and the percentile 1-alpha/2 from a normal distribution with the sample mean and the sample variance/n.\n>\n> I think that the standard gaussian distribution was usefull when we had to calculate CI in the past.\n> That is, it was a simple way to have all possibilities in a single table (in paper).\n>\n> But now, we have R functions that let us to obtain the exact values for any normal distribution.\n>\n> I think that is not necessary to explain how to work with transformations if we can explain that a CI is simply to identify percentiles.\n>\n> What do you think?\n>\n> Thanks\n>\n> PD I know that the normal distribution for CI need some hipothesis. But I have focused the question\n>\n> _________________________\n>\n> David Monterde\n>\n> Lo difícil se hace.\n> Lo imposible se intenta.\n> _________________________\n>         [[alternative HTML version deleted]]\n>\n> _______________________________________________\n> R-sig-teaching at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-sig-teaching",
       "body_snippet": "Let me suggest the interactive graphic NTplot in the HH package.\n\n## install.packages(\"HH\") ## if you don't have it yet.\nlibrary(HH)\nNTplot(shiny=TRUE)\n\n[to exit a shiny app, use C-c C-c in the R wind",
       "thread_id": "thread-6b654ebed158",
       "thread_depth": 1,
-      "month": "2017-04"
+      "month": "2017-04",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q2/000768.html"
     }
   ],
   "threads": [

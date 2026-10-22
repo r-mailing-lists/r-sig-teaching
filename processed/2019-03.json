@@ -17,7 +17,8 @@
       "body_snippet": "I am teaching a basic statistics course and I would like to include some simple examples of the Bayesian approach. Has anybody got any ideas/examples?\n\nThanks\n\nMark Cave\n\nDr Mark Cave\nMedical Geology\n",
       "thread_id": "thread-e72ab544f262",
       "thread_depth": 0,
-      "month": "2019-03"
+      "month": "2019-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2019q1/000814.html"
     },
     {
       "id": "msg-d6208332eb37",
@@ -36,7 +37,8 @@
       "body_snippet": "Hi Mark,\n\nI do a simple introduction to Bayesian inference in my intro stat/data\nscience courses with a discrete example -- these courses don't have a\ncalculus prerequisite so we don't go into the con",
       "thread_id": "thread-d6208332eb37",
       "thread_depth": 0,
-      "month": "2019-03"
+      "month": "2019-03",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2019q1/000815.html"
     }
   ],
   "threads": [

@@ -13,11 +13,12 @@
       "subject_clean": "R packages for create interactive homeworks in R",
       "in_reply_to": null,
       "references": [],
-      "body_plain": "Dear list members,\n\nI am looking for a way to create homeworks and grade them in an interactive\nway.  I am looking into the learnr package but the student can see the\nanswer in the Rmd file if the homework is multiple choice.\n\nIs there any package to create homeworks or exams in an interactive way in\nR?\n\nManuel\n\n-- \n*Manuel Sp?nola, Ph.D.*\nInstituto Internacional en Conservaci?n y Manejo de Vida Silvestre\nUniversidad Nacional\nApartado 1350-3000\nHeredia\nCOSTA RICA\nmspinola at una.cr <mspinola at una.ac.cr>\nmspinola10 at gmail.com\nTel?fono: (506) 8706 - 4662\nPersonal website: Lobito de r?o <https://sites.google.com/site/lobitoderio/>\nInstitutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>\n\n\t[[alternative HTML version deleted]]",
+      "body_plain": "Dear list members,\n\nI am looking for a way to create homeworks and grade them in an interactive\nway.  I am looking into the learnr package but the student can see the\nanswer in the Rmd file if the homework is multiple choice.\n\nIs there any package to create homeworks or exams in an interactive way in\nR?\n\nManuel\n\n-- \n*Manuel Spínola, Ph.D.*\nInstituto Internacional en Conservación y Manejo de Vida Silvestre\nUniversidad Nacional\nApartado 1350-3000\nHeredia\nCOSTA RICA\nmspinola at una.cr <mspinola at una.ac.cr>\nmspinola10 at gmail.com\nTeléfono: (506) 8706 - 4662\nPersonal website: Lobito de río <https://sites.google.com/site/lobitoderio/>\nInstitutional website: ICOMVIS <http://www.icomvis.una.ac.cr/>\n\n\t[[alternative HTML version deleted]]",
       "body_snippet": "Dear list members,\n\nI am looking for a way to create homeworks and grade them in an interactive\nway.  I am looking into the learnr package but the student can see the\nanswer in the Rmd file if the hom",
       "thread_id": "thread-806ec354c40c",
       "thread_depth": 0,
-      "month": "2017-08"
+      "month": "2017-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2017q3/000770.html"
     }
   ],
   "threads": [

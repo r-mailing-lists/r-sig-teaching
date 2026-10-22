@@ -17,7 +17,8 @@
       "body_snippet": "A new set of teaching modules for using the R programming environment in\necology and epidemiology is available through the open-access on-line\npeer-reviewed journal The Plant Health Instructor (PHI).\n",
       "thread_id": "thread-5aef153a6a95",
       "thread_depth": 0,
-      "month": "2008-01"
+      "month": "2008-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2008q1/000046.html"
     },
     {
       "id": "msg-252a0c389613",
@@ -33,7 +34,8 @@
       "body_snippet": "Dear R Community,\n\nI am pleased to announce the beta-release of the prob package.  The\nsource code is now on CRAN, and binaries should be generated there\nbefore long. In the meantime, you can get it w",
       "thread_id": "thread-252a0c389613",
       "thread_depth": 0,
-      "month": "2008-01"
+      "month": "2008-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2008q1/000047.html"
     },
     {
       "id": "msg-9462a6ea6367",
@@ -50,6 +52,7 @@
       "thread_id": "thread-9462a6ea6367",
       "thread_depth": 0,
       "month": "2008-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2008q1/000048.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080126/c534b15d/attachment.pl"
       ]
@@ -70,7 +73,8 @@
       "body_snippet": "Without seeing all of your code its difficult to diagnose but based on \nwhat you sent and the error message I am going to guess that you forgot \nto load the foreign package. Also it looks like you don",
       "thread_id": "thread-9462a6ea6367",
       "thread_depth": 1,
-      "month": "2008-01"
+      "month": "2008-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2008q1/000049.html"
     },
     {
       "id": "msg-119fc4167a16",
@@ -87,6 +91,7 @@
       "thread_id": "thread-119fc4167a16",
       "thread_depth": 0,
       "month": "2008-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2008q1/000050.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20080127/37cdfb15/attachment.pl"
       ]

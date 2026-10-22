@@ -17,7 +17,8 @@
       "body_snippet": "Dear R-Sig-teaching users,\nI am an intermediate level R user.\n\nI am performing the power calculations for the Binomial proportions (2\nsided).\nI want to find the Power using the Exact test for the Equi",
       "thread_id": "thread-d8ddbc087ac9",
       "thread_depth": 0,
-      "month": "2016-06"
+      "month": "2016-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000720.html"
     },
     {
       "id": "msg-1151bb8be51b",
@@ -35,7 +36,8 @@
       "body_snippet": "This list is for discussing the use of R in teaching.  Your question would\nbe more appropriate on the R-help list.\n\nalbyn\n\n\nOn Tue, Jun 7, 2016 at 8:55 AM, Munjal Patel <munjalpatel85 at gmail.com>\nwr",
       "thread_id": "thread-d8ddbc087ac9",
       "thread_depth": 1,
-      "month": "2016-06"
+      "month": "2016-06",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2016q2/000721.html"
     }
   ],
   "threads": [

@@ -18,6 +18,7 @@
       "thread_id": "thread-5e71eca11e15",
       "thread_depth": 0,
       "month": "2009-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000080.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090131/e821f116/attachment.pl"
       ]
@@ -38,7 +39,8 @@
       "body_snippet": "What exactly are you trying to do with Excel?  Have you tried\nexporting as CSV and then using 'read.csv' in R?  Exactly what error\nmessage are you getting and what statements were you executing.\n\nTo c",
       "thread_id": "thread-5e71eca11e15",
       "thread_depth": 1,
-      "month": "2009-01"
+      "month": "2009-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000081.html"
     },
     {
       "id": "msg-7ed038d58c4a",
@@ -54,7 +56,8 @@
       "body_snippet": "I believe you can import excel files via the foreign package. As was suggested saving the file as .csv would allow you to import directly via read.csv. If you're new to R you should read the docs on c",
       "thread_id": "thread-7ed038d58c4a",
       "thread_depth": 0,
-      "month": "2009-01"
+      "month": "2009-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000082.html"
     },
     {
       "id": "msg-c075ec3265cb",
@@ -72,7 +75,8 @@
       "body_snippet": "You should post basic R questions to the R-help list;\nthis list is intended for discussion of the use of R in\nteaching.\n\nalbyn\n\nOn Sat, Jan 31, 2009 at 01:55:43PM -0600, Anna Supady wrote:\n> Hello Eve",
       "thread_id": "thread-5e71eca11e15",
       "thread_depth": 1,
-      "month": "2009-01"
+      "month": "2009-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000083.html"
     },
     {
       "id": "msg-e9daad097c73",
@@ -88,7 +92,8 @@
       "body_snippet": "> \n> Hello Everyone,\n> I am a new R user. Not everything goes so easy. I have many questions. I\n> believe that this is the place where one can discuss issue in R programing.\n> I cannot get excel file ",
       "thread_id": "thread-e9daad097c73",
       "thread_depth": 0,
-      "month": "2009-01"
+      "month": "2009-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000084.html"
     },
     {
       "id": "msg-f7980245f260",
@@ -104,7 +109,8 @@
       "body_snippet": "Forwarded message:\n> From: Albyn Jones <jones at reed.edu>\n> \n> You should post basic R questions to the R-help list;\n> this list is intended for discussion of the use of R in\n> teaching.\n\nAlbyn, coul",
       "thread_id": "thread-f7980245f260",
       "thread_depth": 0,
-      "month": "2009-01"
+      "month": "2009-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000085.html"
     },
     {
       "id": "msg-b7bb25460029",
@@ -120,7 +126,8 @@
       "body_snippet": "Ooops, I failed to respond to the list.  Here it is...\n\nalbyn\n\n----- Forwarded message from Albyn Jones <jones at reed.edu> -----\n\nHi Robert\n\nThat's a good question, and clearly the boundary is fuzzy.",
       "thread_id": "thread-b7bb25460029",
       "thread_depth": 0,
-      "month": "2009-01"
+      "month": "2009-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000086.html"
     },
     {
       "id": "msg-81aa004e8c44",
@@ -137,6 +144,7 @@
       "thread_id": "thread-b7bb25460029",
       "thread_depth": 1,
       "month": "2009-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000087.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090131/16db7fb7/attachment.pl"
       ]

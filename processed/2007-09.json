@@ -17,7 +17,8 @@
       "body_snippet": "Dear R community,\n\nIs anybody aware of how to do diagnostics for multinomial logit models?\nIn the binomial case (for GLM's), I have already used the functions \nprovided by J. Fox in his car package.\nI",
       "thread_id": "thread-1433c534ae19",
       "thread_depth": 0,
-      "month": "2007-09"
+      "month": "2007-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2007q3/000030.html"
     },
     {
       "id": "msg-a4d157264a16",
@@ -33,7 +34,8 @@
       "body_snippet": "Dunno but this list is for people using R to teach INTRODUCTORY\nstatistics courses.  There are other lists more appropraite for a\nquestion at this level.\n\n(Sorry for a second irrelevant message to the",
       "thread_id": "thread-a4d157264a16",
       "thread_depth": 0,
-      "month": "2007-09"
+      "month": "2007-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2007q3/000031.html"
     },
     {
       "id": "msg-3645f11307d7",
@@ -49,7 +51,8 @@
       "body_snippet": "Not meaning to start a religious war but what are people's feelings\nabout using S-Plus with beginners?  I see it as a possible alternative\nto one of the GUI interfaces for R.  It might be easy for beg",
       "thread_id": "thread-3645f11307d7",
       "thread_depth": 0,
-      "month": "2007-09"
+      "month": "2007-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2007q3/000032.html"
     },
     {
       "id": "msg-c5b6dfa543d8",
@@ -67,7 +70,8 @@
       "body_snippet": "I am not familiar with any user interfaces for S-Plus.  I looked at the\ninsightful website and noted the existence of a student version, but\nit appears to be limited to Windows.  That would rule it ou",
       "thread_id": "thread-3645f11307d7",
       "thread_depth": 1,
-      "month": "2007-09"
+      "month": "2007-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2007q3/000033.html"
     }
   ],
   "threads": [

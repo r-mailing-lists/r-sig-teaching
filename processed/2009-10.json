@@ -18,6 +18,7 @@
       "thread_id": "thread-d6eaa2579664",
       "thread_depth": 0,
       "month": "2009-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000205.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091003/de8ca35d/attachment.pl"
       ]
@@ -36,7 +37,8 @@
       "body_snippet": "Hello all,\n\nIn a recent issue of the Bulletin of the American Mathematical\nSociety, Persi Diaconis opens a review/discussion paper on MCMC with a\nnice application to cryptography and message decoding.",
       "thread_id": "thread-35f7ef64e90e",
       "thread_depth": 0,
-      "month": "2009-10"
+      "month": "2009-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000206.html"
     },
     {
       "id": "msg-855cfaedda9a",
@@ -54,7 +56,8 @@
       "body_snippet": "Have you looked at the Rexcel functionality (this allows access to R from within Excel, less learning curve for people enamored with Excel).  There is also Rcmdr which  is a GUI version (also availabl",
       "thread_id": "thread-d6eaa2579664",
       "thread_depth": 1,
-      "month": "2009-10"
+      "month": "2009-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000207.html"
     },
     {
       "id": "msg-d14f01520474",
@@ -71,6 +74,7 @@
       "thread_id": "thread-d14f01520474",
       "thread_depth": 0,
       "month": "2009-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000208.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091016/90aef92c/attachment.pl"
       ]
@@ -89,7 +93,8 @@
       "body_snippet": "Dear friends, \nI want to start using the R package for my postgraduate students in Research Methods courses and also in Quantitative Methods courses. I am also considering using it for my undergrads a",
       "thread_id": "thread-b28d6975a6ad",
       "thread_depth": 0,
-      "month": "2009-10"
+      "month": "2009-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000209.html"
     },
     {
       "id": "msg-92f2f2bbaa41",
@@ -108,7 +113,8 @@
       "body_snippet": "Hello\n\nOn 10/23/09, Iasonas Lamprianou <lamprianou at yahoo.com> wrote:\n>  Please, do you have bright examples of how it is used in other Universities (in English or in Greek) with undergrads or postg",
       "thread_id": "thread-b28d6975a6ad",
       "thread_depth": 1,
-      "month": "2009-10"
+      "month": "2009-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000210.html"
     },
     {
       "id": "msg-617380673901",
@@ -126,7 +132,8 @@
       "body_snippet": "I also have recieved a fair amount of pushback from collegues who would \nprefer their favorite program to be taught to graduate students.\n\nWhen it comes to presuading people to embrace R I have found ",
       "thread_id": "thread-617380673901",
       "thread_depth": 0,
-      "month": "2009-10"
+      "month": "2009-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000211.html"
     },
     {
       "id": "msg-33f378d61cc8",
@@ -145,7 +152,8 @@
       "body_snippet": "On Fri, Oct 23, 2009 at 3:03 AM, Iasonas Lamprianou\n<lamprianou at yahoo.com> wrote:\n>  What is more, I need material in Greek.\n\nThere is a Greek intro here:\n\nhttp://stat-athens.aueb.gr/~grstats/notes",
       "thread_id": "thread-b28d6975a6ad",
       "thread_depth": 1,
-      "month": "2009-10"
+      "month": "2009-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000212.html"
     },
     {
       "id": "msg-6a3fa3080158",
@@ -162,6 +170,7 @@
       "thread_id": "thread-6a3fa3080158",
       "thread_depth": 0,
       "month": "2009-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000213.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20091024/a5504c02/attachment.pl"
       ]
@@ -180,7 +189,8 @@
       "body_snippet": "thanks to all for your comments\n\njason\n\nDr. Iasonas Lamprianou\n\n\nAssistant Professor (Educational Research and Evaluation)\nDepartment of Education Sciences\nEuropean University-Cyprus\nP.O. Box 22006\n15",
       "thread_id": "thread-049baf08df67",
       "thread_depth": 0,
-      "month": "2009-10"
+      "month": "2009-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000214.html"
     },
     {
       "id": "msg-bbd907dd38c0",
@@ -198,7 +208,8 @@
       "body_snippet": "Hello\n\nOn 10/24/09, ?? <kejiefinance at hotmail.com> wrote:\n>  I have a data set which name is \"c78p\",now I want to deal with it with bagging.% of data from c78p as training set is 50%,and number of b",
       "thread_id": "thread-6a3fa3080158",
       "thread_depth": 1,
-      "month": "2009-10"
+      "month": "2009-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000215.html"
     },
     {
       "id": "msg-3829a060cc2b",
@@ -214,7 +225,8 @@
       "body_snippet": "Hello,\n\nI'd suggest also to get a copy of:\n\nThe Elements of Statistical Learning: Data Mining, Inference, and Prediction.\nSecond Edition\nFebruary 2009\nTrevor Hastie, Robert Tibshirani, Jerome Friedman",
       "thread_id": "thread-3829a060cc2b",
       "thread_depth": 0,
-      "month": "2009-10"
+      "month": "2009-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q4/000216.html"
     }
   ],
   "threads": [

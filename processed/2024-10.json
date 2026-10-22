@@ -17,7 +17,8 @@
       "body_snippet": "Hi everyone\n\nInstats is offering a 4-day workshop on Statistics in R with Tidyverse <https://instats.org/seminar/statistics-using-the-tidyverse-in-r2?utm_source=r-sig-ecology> with professor Chester I",
       "thread_id": "thread-66adbf497b49",
       "thread_depth": 0,
-      "month": "2024-10"
+      "month": "2024-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2024q4/000873.html"
     },
     {
       "id": "msg-bea66349eb7a",
@@ -33,7 +34,8 @@
       "body_snippet": "Hi everyone\n\nInstats is offering a 2-day seminar From Basic to Advanced Network Analysis in R <https://instats.org/seminar/from-basic-to-advanced-network-analysis-6>, running Oct 17 - 18 by professor ",
       "thread_id": "thread-bea66349eb7a",
       "thread_depth": 0,
-      "month": "2024-10"
+      "month": "2024-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2024q4/000874.html"
     },
     {
       "id": "msg-aa896aad68a8",
@@ -49,7 +51,8 @@
       "body_snippet": "Hi everyone\n\nLast chance to register for our 2-day workshops on Using ChatGPT for Advanced Data Analysis 3.0 <https://instats.org/seminar/using-chatgpt-for-advanced-data-analysis10-2> on October 19 an",
       "thread_id": "thread-aa896aad68a8",
       "thread_depth": 0,
-      "month": "2024-10"
+      "month": "2024-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2024q4/000875.html"
     },
     {
       "id": "msg-5156dc5650df",
@@ -67,7 +70,8 @@
       "body_snippet": "This SIG is supposed to be for people discussing the use of R in teaching\nstatistics, not for advertising your business.\n\n\nOn Mon, Oct 14, 2024 at 6:30?AM Michael Zyphur via R-sig-teaching <\nr-sig-tea",
       "thread_id": "thread-aa896aad68a8",
       "thread_depth": 1,
-      "month": "2024-10"
+      "month": "2024-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2024q4/000876.html"
     },
     {
       "id": "msg-bfa005133330",
@@ -86,7 +90,8 @@
       "body_snippet": "Hi Jeff\n\nThanks for getting in touch. As academics ourselves, we're hosting this\nseminar as part of our efforts to reduce barriers to stats education. By\nallowing participants to focus on statistical ",
       "thread_id": "thread-aa896aad68a8",
       "thread_depth": 2,
-      "month": "2024-10"
+      "month": "2024-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2024q4/000877.html"
     },
     {
       "id": "msg-5c094cdd4862",
@@ -106,7 +111,8 @@
       "body_snippet": ">>>>> Michael Zyphur via R-sig-teaching \n>>>>>     on Mon, 14 Oct 2024 22:41:43 +1100 writes:\n\n    > Hi Jeff Thanks for getting in touch. As academics\n    > ourselves, we're hosting this seminar as pa",
       "thread_id": "thread-aa896aad68a8",
       "thread_depth": 3,
-      "month": "2024-10"
+      "month": "2024-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2024q4/000878.html"
     }
   ],
   "threads": [

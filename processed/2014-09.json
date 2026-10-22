@@ -17,7 +17,8 @@
       "body_snippet": "Dear All:\n\nI was trying to get the lengths of vectors using \"length\" in tapply as\nfollows:\n\nni<-tapply(data[,2], data[,2], length, na.rm=TRUE)\n\nbut it did not work for me. I am not sure what I am doin",
       "thread_id": "thread-6cc56c4fc794",
       "thread_depth": 0,
-      "month": "2014-09"
+      "month": "2014-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2014q3/000571.html"
     },
     {
       "id": "msg-75800d000e8c",
@@ -35,7 +36,8 @@
       "body_snippet": "Dear Steven,\n\nIf you remove the parameter:\nna.rm=TRUE\nthen your example seems to work fine for me.  Good luck!\n\nBest wishes,\nMark\n\nMark Daniel Ward, Ph.D.\nAssociate Professor and Undergraduate Chair\nD",
       "thread_id": "thread-6cc56c4fc794",
       "thread_depth": 1,
-      "month": "2014-09"
+      "month": "2014-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2014q3/000572.html"
     },
     {
       "id": "msg-45eb3451b924",
@@ -54,7 +56,8 @@
       "body_snippet": "got it\n\nmany thanks\n\nSteven\n\nOn Tue, Sep 9, 2014 at 11:16 PM, Mark Daniel Ward <mdw at purdue.edu> wrote:\n\n> Dear Steven,\n>\n> If you remove the parameter:\n> na.rm=TRUE\n> then your example seems to wor",
       "thread_id": "thread-6cc56c4fc794",
       "thread_depth": 2,
-      "month": "2014-09"
+      "month": "2014-09",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2014q3/000573.html"
     }
   ],
   "threads": [

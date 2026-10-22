@@ -17,7 +17,8 @@
       "body_snippet": "I am developing a short presentation for people with applied statistical backgrounds who have used backward stepwise variable selection where they remove variables based on small coefficient values, c",
       "thread_id": "thread-4cb0a479ecf9",
       "thread_depth": 0,
-      "month": "2018-10"
+      "month": "2018-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2018q4/000809.html"
     },
     {
       "id": "msg-aaba28fe2c7f",
@@ -35,7 +36,8 @@
       "body_snippet": "Although no code is given, it can be inferred from this:\n      https://stats.stackexchange.com/a/179945/\nBest, Jeff\n\n\nOn 10/2/2018 11:54 AM, R. Mark Sharp wrote:\n> I am developing a short presentation",
       "thread_id": "thread-4cb0a479ecf9",
       "thread_depth": 1,
-      "month": "2018-10"
+      "month": "2018-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2018q4/000810.html"
     },
     {
       "id": "msg-a6232c380c90",
@@ -54,7 +56,8 @@
       "body_snippet": "Looking forward to it ...\n\nKIM\nMalaysia\n\nOn Wed, Oct 3, 2018 at 10:32 AM Jeff Laux <jefflaux at gmail.com> wrote:\n\n> Although no code is given, it can be inferred from this:\n>       https://stats.stac",
       "thread_id": "thread-4cb0a479ecf9",
       "thread_depth": 2,
-      "month": "2018-10"
+      "month": "2018-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2018q4/000811.html"
     },
     {
       "id": "msg-ddb43b12df9a",
@@ -72,7 +75,8 @@
       "body_snippet": "Perhaps it is much easier to show by means of a simulation that using\np-value based selection causes upward bias in regression coefficient\nestimates as the ones that are relatively low are less likely",
       "thread_id": "thread-4cb0a479ecf9",
       "thread_depth": 1,
-      "month": "2018-10"
+      "month": "2018-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2018q4/000812.html"
     },
     {
       "id": "msg-9c1a44945ee9",
@@ -90,7 +94,8 @@
       "body_snippet": "The functions bsnVaryNvar() and bestsetNoise() in the DAAG package\nhave been designed to highlight the opportunities that conventional\nvariable selection methods offer for generating ?significant? eff",
       "thread_id": "thread-9c1a44945ee9",
       "thread_depth": 0,
-      "month": "2018-10"
+      "month": "2018-10",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2018q4/000813.html"
     }
   ],
   "threads": [

@@ -17,7 +17,8 @@
       "body_snippet": "Greetings.\n\nI am not totally sure where to post this query so forgive me if this is the wrong SIG. However, I do teach stats in conjunction with experimental design and the question is one that is of ",
       "thread_id": "thread-8ddbc1bd7b27",
       "thread_depth": 0,
-      "month": "2011-07"
+      "month": "2011-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q3/000381.html"
     },
     {
       "id": "msg-e234644040f8",
@@ -36,6 +37,7 @@
       "thread_id": "thread-8ddbc1bd7b27",
       "thread_depth": 1,
       "month": "2011-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q3/000382.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110703/acaf3d09/attachment.pl"
       ]
@@ -55,6 +57,7 @@
       "thread_id": "thread-6af72857aba5",
       "thread_depth": 0,
       "month": "2011-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q3/000383.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110706/40e2339c/attachment.pl"
       ]
@@ -76,6 +79,7 @@
       "thread_id": "thread-20a8f59e8c1a",
       "thread_depth": 0,
       "month": "2011-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2011q3/000384.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20110709/407d96e2/attachment.pl"
       ]

@@ -20,7 +20,8 @@
       "body_snippet": "On 1/31/09, Robert W. Hayden <hayden at mv.mv.com> wrote:\n>  where you can look at R-(D)COM Server or\n>\nYes, a good idea is to use RExcel, or a GUI such as Rcmdr.\n\n\n> R Gnumeric which turn the\n>  prob",
       "thread_id": "thread-99c7b4f4f6ce",
       "thread_depth": 0,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000088.html"
     },
     {
       "id": "msg-711d565b1825",
@@ -38,7 +39,8 @@
       "body_snippet": ">>>>> \"RWH\" == Robert W Hayden <hayden at mv.mv.com>\n>>>>>     on Sat, 31 Jan 2009 17:47:27 -0500 (EST) writes:\n\n    RWH> Forwarded message:\n    >> From: Albyn Jones <jones at reed.edu>\n    >> \n    >>",
       "thread_id": "thread-711d565b1825",
       "thread_depth": 0,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000089.html"
     },
     {
       "id": "msg-dd0e09ea8971",
@@ -54,7 +56,8 @@
       "body_snippet": "Last weekend I visited my sister and her husband and installed R on\ntheir Ubuntu 8.04 machine and tried to add Rcmdr.  I had endless\ntrouble most of which seemed to be because R (or Rcmdr) seemed to w",
       "thread_id": "thread-dd0e09ea8971",
       "thread_depth": 0,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000090.html"
     },
     {
       "id": "msg-2fa169d4933e",
@@ -72,7 +75,8 @@
       "body_snippet": "Dear Robert,\n\n\nOn Sat, Feb 14, 2009 at 9:24 PM, Robert W. Hayden <hayden at mv.mv.com> wrote:\n>\n> Last weekend I visited my sister and her husband and installed R on\n> their Ubuntu 8.04 machine and tr",
       "thread_id": "thread-dd0e09ea8971",
       "thread_depth": 1,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000091.html"
     },
     {
       "id": "msg-bab59d79e2a0",
@@ -90,7 +94,8 @@
       "body_snippet": "I've found the version of R in the Ubuntu repository is almost always\nout of date. Here is the process I follow:\n\n1) Add the R repository (see http://cran.r-project.org/bin/linux/ubuntu/).\n2) Install ",
       "thread_id": "thread-dd0e09ea8971",
       "thread_depth": 1,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000092.html"
     },
     {
       "id": "msg-4273695e0872",
@@ -109,7 +114,8 @@
       "body_snippet": "Dear Jay, Bob, Ista,\n\nI, too, have installed Rcmdr on Ubuntu systems several times with no\nproblems. I suspect that r-base-dev wasn't installed and that Ista's\nprocedure will produce the desired resul",
       "thread_id": "thread-dd0e09ea8971",
       "thread_depth": 2,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000093.html"
     },
     {
       "id": "msg-eaf3f6e5614e",
@@ -129,7 +135,8 @@
       "body_snippet": "Hi John,\nYes, please feel free to use my suggestions in any way you wish, with\nany modifications you want. The procedure is designed to be sufficient\nrather than necessary, and you are correct that so",
       "thread_id": "thread-dd0e09ea8971",
       "thread_depth": 3,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000094.html"
     },
     {
       "id": "msg-db3fe2d3d8bd",
@@ -148,7 +155,8 @@
       "body_snippet": "Ista Zahn <istazahn at gmail.com> writes:\n\n> I've found the version of R in the Ubuntu repository is almost always\n> out of date. Here is the process I follow:\n>\n> 4) Start R from the command line as ",
       "thread_id": "thread-dd0e09ea8971",
       "thread_depth": 2,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000095.html"
     },
     {
       "id": "msg-abfc0bb026c3",
@@ -168,7 +176,8 @@
       "body_snippet": "On Sun, Feb 15, 2009 at 11:03 AM, tyler <tyler.smith at mail.mcgill.ca> wrote:\n> Ista Zahn <istazahn at gmail.com> writes:\n>\n>> I've found the version of R in the Ubuntu repository is almost always\n>>",
       "thread_id": "thread-dd0e09ea8971",
       "thread_depth": 3,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000096.html"
     },
     {
       "id": "msg-b24654aa7667",
@@ -189,7 +198,8 @@
       "body_snippet": "Dear Ista,\n\nI've updated the Rcmdr installation notes at\n<http://socserv.mcmaster.ca/jfox/Misc/Rcmdr/installation-notes.html> with\nspecific instructions for Ubuntu.\n\nThanks,\n John\n\n> -----Original Mes",
       "thread_id": "thread-dd0e09ea8971",
       "thread_depth": 4,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000097.html"
     },
     {
       "id": "msg-2eae1e9add8f",
@@ -205,7 +215,8 @@
       "body_snippet": "Forwarded message:\n> From jfox at mcmaster.ca Sun Feb 15 17:08:45 2009 +0000\n\nThis (from John's web site)\n\n\"Linux/Unix systems typically have all of the software required for\nbuilding packages already",
       "thread_id": "thread-2eae1e9add8f",
       "thread_depth": 0,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000098.html"
     },
     {
       "id": "msg-326b10ead259",
@@ -225,7 +236,8 @@
       "body_snippet": "On Sun, Feb 15, 2009 at 10:03 AM, tyler <tyler.smith at mail.mcgill.ca> wrote:\n> Ista Zahn <istazahn at gmail.com> writes:\n>\n>> I've found the version of R in the Ubuntu repository is almost always\n>>",
       "thread_id": "thread-dd0e09ea8971",
       "thread_depth": 3,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000099.html"
     },
     {
       "id": "msg-1b4fc4bf06c9",
@@ -246,7 +258,8 @@
       "body_snippet": "Prasenjit Kapat <kapatp at gmail.com> writes:\n\n> On Sun, Feb 15, 2009 at 11:03 AM, tyler <tyler.smith at mail.mcgill.ca> wrote:\n>> Ista Zahn <istazahn at gmail.com> writes:\n>>\n>>> I've found the versi",
       "thread_id": "thread-dd0e09ea8971",
       "thread_depth": 4,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000100.html"
     },
     {
       "id": "msg-e2f70d9723be",
@@ -264,7 +277,8 @@
       "body_snippet": "I see that the email has not gone through because of the attachment.\nThe file can be downloaded from\nhttp://prometheus.scp.rochester.edu/zlab/sites/default/files/InteractionsAndTypesOfSS.pdf\n\n-Ista\n\nO",
       "thread_id": "thread-e2f70d9723be",
       "thread_depth": 0,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000101.html"
     },
     {
       "id": "msg-1191a2a662ff",
@@ -283,7 +297,8 @@
       "body_snippet": "Ista,\n\n\nAt 8:01 PM -0500 2/27/09, Ista Zahn wrote:\n>I see that the email has not gone through because of the attachment.\n>The file can be downloaded from\n>http://prometheus.scp.rochester.edu/zlab/site",
       "thread_id": "thread-e2f70d9723be",
       "thread_depth": 1,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000102.html"
     },
     {
       "id": "msg-504b44428580",
@@ -303,7 +318,8 @@
       "body_snippet": "Dear Ista,\n\n> creating those ?lovely tables.) ?Nice job.\n>\n> Bill\n>\n\nI agree, nice job.  :-)  It is great that you are writing about these\nissues, and even better that you are sharing it.\n\nIn my class",
       "thread_id": "thread-504b44428580",
       "thread_depth": 0,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000103.html"
     },
     {
       "id": "msg-1f9b684e1d80",
@@ -323,7 +339,8 @@
       "body_snippet": "On Fri, Feb 27, 2009 at 10:29 PM, William Revelle <lists at revelle.net> wrote:\n> Ista,\n>\n>\n> At 8:01 PM -0500 2/27/09, Ista Zahn wrote:\n>>\n>> I see that the email has not gone through because of the ",
       "thread_id": "thread-1f9b684e1d80",
       "thread_depth": 0,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000104.html"
     },
     {
       "id": "msg-0f84f4db59cf",
@@ -344,7 +361,8 @@
       "body_snippet": "On Sat, Feb 28, 2009 at 12:34 AM, G. Jay Kerns <gkerns at ysu.edu> wrote:\n> Dear Ista,\n>\n>> creating those  lovely tables.)  Nice job.\n>>\n>> Bill\n>>\n>\n> I agree, nice job.  :-)  It is great that you a",
       "thread_id": "thread-504b44428580",
       "thread_depth": 1,
-      "month": "2009-02"
+      "month": "2009-02",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q1/000105.html"
     }
   ],
   "threads": [

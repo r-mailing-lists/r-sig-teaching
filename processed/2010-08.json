@@ -17,7 +17,8 @@
       "body_snippet": "Hello,\n\nI am looking for code to create normal distribution plots of a population and 5 samples of the population all on one graph.  I can plot all 6 together, but can't seem to adjust the height of t",
       "thread_id": "thread-7435590cdd3f",
       "thread_depth": 0,
-      "month": "2010-08"
+      "month": "2010-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000261.html"
     },
     {
       "id": "msg-bfb82a1f3c1a",
@@ -35,7 +36,8 @@
       "body_snippet": "What types of plots are you trying to get?  Qq-plots? Histograms of samples compared to a line showing the population?  Density estimates?\n\n-- \nGregory (Greg) L. Snow Ph.D.\nStatistical Data Center\nInt",
       "thread_id": "thread-7435590cdd3f",
       "thread_depth": 1,
-      "month": "2010-08"
+      "month": "2010-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000262.html"
     },
     {
       "id": "msg-017e4f90a68a",
@@ -51,7 +53,8 @@
       "body_snippet": "Dear friends,\n\nINSEED is happy to announce two short courses, viz.\n\n* 10-14 November, 2010: Statistical methods in Epidemiology (using R), \nAnand, Gujarat\n\n* 22-26 November, 2010: Bayesian computation",
       "thread_id": "thread-017e4f90a68a",
       "thread_depth": 0,
-      "month": "2010-08"
+      "month": "2010-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000263.html"
     },
     {
       "id": "msg-6564b7a46b04",
@@ -68,6 +71,7 @@
       "thread_id": "thread-6564b7a46b04",
       "thread_depth": 0,
       "month": "2010-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000264.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100819/b32448b9/attachment.pl"
       ]
@@ -88,7 +92,8 @@
       "body_snippet": "Dear solafah\n\nThis is a list for discussion of use of R in teaching.\n\nYour question would be more appropriate for the r-help list, assuming\nit's not a homework assignment.  It is an amusing question t",
       "thread_id": "thread-6564b7a46b04",
       "thread_depth": 1,
-      "month": "2010-08"
+      "month": "2010-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000265.html"
     },
     {
       "id": "msg-81468493f86d",
@@ -107,6 +112,7 @@
       "thread_id": "thread-81468493f86d",
       "thread_depth": 0,
       "month": "2010-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000266.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20100820/01af58df/attachment.pl"
       ]
@@ -128,7 +134,8 @@
       "body_snippet": "On Fri, 2010-08-20 at 10:31 +0000, Yemitan Raphael wrote:\n> Hello,\n>  \n> I want to know how to enter data into R, how to run a bootstrap\n> regression and also how to test for serial correlation.\n\nWron",
       "thread_id": "thread-81468493f86d",
       "thread_depth": 1,
-      "month": "2010-08"
+      "month": "2010-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2010q3/000267.html"
     }
   ],
   "threads": [

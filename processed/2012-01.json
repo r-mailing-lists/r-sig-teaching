@@ -17,7 +17,8 @@
       "body_snippet": ">From time to time I have posted a link to the materials on R that I\ndeveloped for my online courses.  Their only claim to fame is that\nthey are way below the level of all the R documentation I have s",
       "thread_id": "thread-6ec86f53c58f",
       "thread_depth": 0,
-      "month": "2012-01"
+      "month": "2012-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q1/000392.html"
     },
     {
       "id": "msg-d10c89ee287c",
@@ -34,6 +35,7 @@
       "thread_id": "thread-d10c89ee287c",
       "thread_depth": 0,
       "month": "2012-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q1/000393.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120115/b715d489/attachment.pl"
       ]
@@ -54,7 +56,8 @@
       "body_snippet": "Would this work?\n\nm1 <- 3.5\nm2 <- 6.5\ns1 <- 0.8\ns2 <- 0.8\ndist1 <- dnorm(x, mean=m1, sd=s1)\ndist2 <- dnorm(x, mean=m2, sd=s2)\nbiModalDist <- dist1 + dist2\n\nq <- qnorm(.9,0,1)\nz1 <- q*s1\nz2 <- q*s2\nzLo",
       "thread_id": "thread-d10c89ee287c",
       "thread_depth": 1,
-      "month": "2012-01"
+      "month": "2012-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q1/000394.html"
     },
     {
       "id": "msg-2c2d937f00aa",
@@ -72,7 +75,8 @@
       "body_snippet": "x didn't make it through the cut-and-paste, it should be:\n\nx <- seq(0, 10, 0.1)\n\nalso zUp has a typo, it should be:\n\nzUp <- m2 + z2\n\nThat should work now.\n\n\nOn 1/15/2012 2:41 PM, AbouEl-Makarim Abouei",
       "thread_id": "thread-d10c89ee287c",
       "thread_depth": 1,
-      "month": "2012-01"
+      "month": "2012-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q1/000395.html"
     },
     {
       "id": "msg-72fc9e59dd4e",
@@ -90,7 +94,8 @@
       "body_snippet": "I recently wrote a function for the mosaic package that makes it easy  \nto generate various kinds of plots of distributions.  For example, to  \nplot a Binom(30,.35) distribution, you just use:\n\ndistPl",
       "thread_id": "thread-d10c89ee287c",
       "thread_depth": 1,
-      "month": "2012-01"
+      "month": "2012-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q1/000396.html"
     },
     {
       "id": "msg-8b1344024fc0",
@@ -109,6 +114,7 @@
       "thread_id": "thread-d10c89ee287c",
       "thread_depth": 1,
       "month": "2012-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q1/000397.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120116/dd6642da/attachment.pl"
       ]
@@ -129,7 +135,8 @@
       "body_snippet": "Just noticing that I read the post below too quickly and thought it  \nsaid \"binomial\" rather than \"bimodal\".  But my solution works all the  \nsame, you just need to provide a bimodal distribution as t",
       "thread_id": "thread-d10c89ee287c",
       "thread_depth": 1,
-      "month": "2012-01"
+      "month": "2012-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q1/000398.html"
     },
     {
       "id": "msg-ec2d130c0874",
@@ -148,7 +155,8 @@
       "body_snippet": "I think AbouEl-Makarim means \"bimodal distribution\" here is my solve \n(sorry for primitive example)\n\nm1<-0;\nsd1<-1;\nm2<-4;\nsd2<-1;\nbimodal<-curve(dnorm(x,m1,sd1)+dnorm(x,m2,sd2), \nfrom=min(c(m1,m2))-3",
       "thread_id": "thread-d10c89ee287c",
       "thread_depth": 2,
-      "month": "2012-01"
+      "month": "2012-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q1/000399.html"
     },
     {
       "id": "msg-24671ce38396",
@@ -164,7 +172,8 @@
       "body_snippet": "Dear Abou,\nI think Your trouble can be solved like there \nhttp://www.talkstats.com/showthread.php/11746-Problem-with-plotting-in-R\n\n---\nZhan Chubukou\nChair of Pathological Physiology magistrant\nGomel ",
       "thread_id": "thread-24671ce38396",
       "thread_depth": 0,
-      "month": "2012-01"
+      "month": "2012-01",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q1/000400.html"
     }
   ],
   "threads": [

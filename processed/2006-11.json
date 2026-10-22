@@ -17,7 +17,8 @@
       "body_snippet": "Forwarded message: From: Bob Dobrow <rdobrow at carleton.edu>\n> \n> We've taken our GUI-based SPSS lab manual and rewritten it for R. If \n> anyone would like to see it I can make it available. I'll pro",
       "thread_id": "thread-9e02bd597d20",
       "thread_depth": 0,
-      "month": "2006-11"
+      "month": "2006-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2006q4/000007.html"
     },
     {
       "id": "msg-de08574d64ea",
@@ -35,7 +36,8 @@
       "body_snippet": "Although not used in intro stats, I have developed 2 tutorials for \nusing R in psychology  for advanced undergraduates.\nThe first is a research methods course where they are expected to \nanalyze some ",
       "thread_id": "thread-9e02bd597d20",
       "thread_depth": 1,
-      "month": "2006-11"
+      "month": "2006-11",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2006q4/000008.html"
     }
   ],
   "threads": [

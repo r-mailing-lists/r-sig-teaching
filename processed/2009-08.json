@@ -17,7 +17,8 @@
       "body_snippet": "Hi All,\n\n   I am seeking comments, suggestions, bugs, and users for a data analysis\nGUI that has just been released to CRAN. One of the first areas that I think\nthat this GUI could be of use is in the",
       "thread_id": "thread-4c772528a3f1",
       "thread_depth": 0,
-      "month": "2009-08"
+      "month": "2009-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000185.html"
     },
     {
       "id": "msg-980d0f78f4dd",
@@ -35,7 +36,8 @@
       "body_snippet": "Hello,\n\nI tried Deducer earlier in the week (on Ubuntu Linux) and encountered\nsome hiccups, but I suspected that it had something to do with the\nidiosyncrasies of my machine rather than the Deducer pa",
       "thread_id": "thread-4c772528a3f1",
       "thread_depth": 1,
-      "month": "2009-08"
+      "month": "2009-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000186.html"
     },
     {
       "id": "msg-251b8c362a92",
@@ -55,6 +57,7 @@
       "thread_id": "thread-4c772528a3f1",
       "thread_depth": 1,
       "month": "2009-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000187.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090807/6c7fa4a1/attachment.pl"
       ]
@@ -73,7 +76,8 @@
       "body_snippet": "Hi Jan,\n\nIt looks like you have the unstable version of JGR installed. you will\nneed version 1.6-7 available on CRAN. simply run\n\ninstall.packages(\"JGR\")\n\n\n\nIan\n\n______________________________________",
       "thread_id": "thread-4c772528a3f1",
       "thread_depth": 2,
-      "month": "2009-08"
+      "month": "2009-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000188.html"
     },
     {
       "id": "msg-69078c514988",
@@ -89,7 +93,8 @@
       "body_snippet": "I posted a question about cartograms in R on the R-sig-Geo list 10 days \nago and didn't get any responses....  but it is also relevant to \nteaching with R, so I'll post it here now.\n\nI installed libff",
       "thread_id": "thread-69078c514988",
       "thread_depth": 0,
-      "month": "2009-08"
+      "month": "2009-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000189.html"
     },
     {
       "id": "msg-506288e950d8",
@@ -106,6 +111,7 @@
       "thread_id": "thread-506288e950d8",
       "thread_depth": 0,
       "month": "2009-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000190.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090820/c83d4183/attachment.pl"
       ]
@@ -125,6 +131,7 @@
       "thread_id": "thread-541e603a4437",
       "thread_depth": 0,
       "month": "2009-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000191.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090820/a1f5a9f1/attachment.pl"
       ]
@@ -144,6 +151,7 @@
       "thread_id": "thread-906958fa01cb",
       "thread_depth": 0,
       "month": "2009-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000192.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090825/eec386ba/attachment.pl"
       ]
@@ -163,6 +171,7 @@
       "thread_id": "thread-1e63da5768d2",
       "thread_depth": 0,
       "month": "2009-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000193.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090830/4cdca55b/attachment.pl"
       ]
@@ -185,6 +194,7 @@
       "thread_id": "thread-52ebc5124195",
       "thread_depth": 0,
       "month": "2009-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000194.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090830/3cf04a32/attachment.pl"
       ]
@@ -206,6 +216,7 @@
       "thread_id": "thread-100cb5c57a96",
       "thread_depth": 0,
       "month": "2009-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000195.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20090831/d1bdb534/attachment.pl"
       ]
@@ -224,7 +235,8 @@
       "body_snippet": "Forwarded message:\n> From: Luna Laurent <luna.laurent.ucb at gmail.com>\n> \n> What's their fee structures?\n\nFor the forecasting course\n\nRegister Online - $469\nRegister Online (academic) - $369 (you mus",
       "thread_id": "thread-41e0c1939a76",
       "thread_depth": 0,
-      "month": "2009-08"
+      "month": "2009-08",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2009q3/000196.html"
     }
   ],
   "threads": [

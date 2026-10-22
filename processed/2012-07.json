@@ -17,7 +17,8 @@
       "body_snippet": "Colleagues,\n\nFor the last year, I've been working with Randy Pruim and Danny Kaplan on the \"mosaic\" package for R and RStudio to provide a more concise and expressive way for introductory students to ",
       "thread_id": "thread-3699702ffc5f",
       "thread_depth": 0,
-      "month": "2012-07"
+      "month": "2012-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q3/000465.html"
     },
     {
       "id": "msg-d1168067ffe0",
@@ -34,6 +35,7 @@
       "thread_id": "thread-d1168067ffe0",
       "thread_depth": 0,
       "month": "2012-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2012q3/000466.html",
       "restored_from": [
         "https://stat.ethz.ch/pipermail/r-sig-teaching/attachments/20120718/ba6ceab9/attachment.pl"
       ]

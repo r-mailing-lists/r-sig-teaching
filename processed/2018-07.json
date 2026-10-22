@@ -17,7 +17,8 @@
       "body_snippet": "I'll be teaching intro epidemiology in a new MPH program, starting this\nfall. Weekly sessions, each 3 hours long. Expecting 12-20 students. I\nplan to try to make it fairly interactive, with a \"compute",
       "thread_id": "thread-c86f1b8ff089",
       "thread_depth": 0,
-      "month": "2018-07"
+      "month": "2018-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2018q3/000793.html"
     },
     {
       "id": "msg-35c344ed5de9",
@@ -35,7 +36,8 @@
       "body_snippet": "Christopher,\n\nIt sounds to me like you are the right track to answering your own question.  There are certainly packages that make some things much easier (like the tidyverse suite you mention), and i",
       "thread_id": "thread-c86f1b8ff089",
       "thread_depth": 1,
-      "month": "2018-07"
+      "month": "2018-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2018q3/000794.html"
     },
     {
       "id": "msg-c9a1a4dfd860",
@@ -53,7 +55,8 @@
       "body_snippet": "David Robinson has a nice blog post on the subject:\nhttp://varianceexplained.org/r/teach-tidyverse/\nHadley\n\nOn Mon, Jul 2, 2018 at 3:30 PM, Christopher W. Ryan\n<cryan at binghamton.edu> wrote:\n> I'll ",
       "thread_id": "thread-c86f1b8ff089",
       "thread_depth": 1,
-      "month": "2018-07"
+      "month": "2018-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2018q3/000795.html"
     },
     {
       "id": "msg-1851a4479e42",
@@ -71,7 +74,8 @@
       "body_snippet": "Chris,\n\nI introduced R to our DrPH students like 3 or 4 years ago. All of our\nDrPH students come from MD background with very little or no\nprogramming background. I started teaching them with base R a",
       "thread_id": "thread-c86f1b8ff089",
       "thread_depth": 1,
-      "month": "2018-07"
+      "month": "2018-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2018q3/000796.html"
     },
     {
       "id": "msg-76f4d9e70dfc",
@@ -90,7 +94,8 @@
       "body_snippet": "I'd say stick to base R wherever possible.\n\nWe added tidyverse in post graduate lectures this year.In practice, it was\njust a user-preference generating a lot more non-statistics to learn,\ndistracting",
       "thread_id": "thread-c86f1b8ff089",
       "thread_depth": 2,
-      "month": "2018-07"
+      "month": "2018-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2018q3/000797.html"
     },
     {
       "id": "msg-4ea4457165c6",
@@ -109,7 +114,8 @@
       "body_snippet": "Randall Pruim is spot on--there is no single right answer--except, maybe, RStudio, which I strongly recommend in addition to base R.\n\nAdding packages isn't a big deal--as long as they are relevant for",
       "thread_id": "thread-c86f1b8ff089",
       "thread_depth": 2,
-      "month": "2018-07"
+      "month": "2018-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2018q3/000798.html"
     },
     {
       "id": "msg-984b25b2153f",
@@ -125,7 +131,8 @@
       "body_snippet": "Many moons ago, the US CDC came out with DoEpi, which was computer-based\ninstruction in outbreak investigation, using the CDC's Epi Info software.\n\nI recall two instructionally useful cases in DoEpi: ",
       "thread_id": "thread-984b25b2153f",
       "thread_depth": 0,
-      "month": "2018-07"
+      "month": "2018-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2018q3/000799.html"
     },
     {
       "id": "msg-c8093c3bd508",
@@ -143,7 +150,8 @@
       "body_snippet": "Google points me to\n\nNew England Journal of Medicine\n<https://www.researchgate.net/journal/0028-4793_New_England_Journal_of_Medicine>\n324(2):104-9 ? February 1991.\n\nand\n\nhttps://www.nejm.org/doi/full/",
       "thread_id": "thread-984b25b2153f",
       "thread_depth": 1,
-      "month": "2018-07"
+      "month": "2018-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2018q3/000800.html"
     },
     {
       "id": "msg-a67e659273a9",
@@ -162,7 +170,8 @@
       "body_snippet": "Thanks. I'm looking for raw anonymous data, e.g. a csv file of a line\nlisting.\n\n--Chris\n\nAlbyn Jones wrote:\n> Google points me to\n> \n> New England Journal of Medicine\n> <https://www.researchgate.net/j",
       "thread_id": "thread-984b25b2153f",
       "thread_depth": 2,
-      "month": "2018-07"
+      "month": "2018-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2018q3/000801.html"
     },
     {
       "id": "msg-8fbbbae4af3e",
@@ -180,7 +189,8 @@
       "body_snippet": "Hi Chris,\n\nMy sugestion is to download the epi info version3..5.4 from\n\nhttps://www.cdc.gov/epiinfo/support/downloads/prevversions.html\n\nInstall that version, and get the data files, and also the old\n",
       "thread_id": "thread-8fbbbae4af3e",
       "thread_depth": 0,
-      "month": "2018-07"
+      "month": "2018-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2018q3/000802.html"
     },
     {
       "id": "msg-ffab70736e4e",
@@ -196,7 +206,8 @@
       "body_snippet": "The book \"Introduction to Statistical Learning\" gives R scripts for its\nlabs. I found a script for ridge regression that works on the dataset the\nbook uses but is unusable on other datasets I own unle",
       "thread_id": "thread-ffab70736e4e",
       "thread_depth": 0,
-      "month": "2018-07"
+      "month": "2018-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2018q3/000803.html"
     },
     {
       "id": "msg-67742f0d6f0d",
@@ -214,7 +225,8 @@
       "body_snippet": "Is this a question about using R to teach statistical learning, or a\nquestion for r-help, or homework?\n\nOn Sat, Jul 28, 2018 at 7:46 AM, Baojun Sun <bsun1 at students.towson.edu>\nwrote:\n\n> The book \"I",
       "thread_id": "thread-ffab70736e4e",
       "thread_depth": 1,
-      "month": "2018-07"
+      "month": "2018-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2018q3/000804.html"
     },
     {
       "id": "msg-41143fd26aff",
@@ -230,7 +242,8 @@
       "body_snippet": "To be specific, this list is about using R for teaching.  Appropriate\ncontent might include things like sharing R tutorials for beginners,\nideas for assignments or grading policies, educational simula",
       "thread_id": "thread-41143fd26aff",
       "thread_depth": 0,
-      "month": "2018-07"
+      "month": "2018-07",
+      "source_url": "https://stat.ethz.ch/pipermail/r-sig-teaching/2018q3/000805.html"
     }
   ],
   "threads": [
